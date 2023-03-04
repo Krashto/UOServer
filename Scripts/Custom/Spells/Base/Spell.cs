@@ -1,0 +1,1053 @@
+using System;
+using Server.Items;
+using Server.Network;
+using Server.Targeting;
+using Server.Mobiles;
+using Server.Custom.Classes;
+using Server.Custom;
+using Server.Spells.OldSpells;
+using Server.Custom.Spells.Divins.Pretre;
+using Server.Custom.Aptitudes;
+
+namespace Server.Spells
+{
+	public abstract class Spell : ISpell
+	{
+        public static bool CheckTransformation(Mobile Caster, Mobile m)
+        {
+            if (!m.CanBeginAction(typeof(IncognitoSpell)))
+            {
+                Caster.SendMessage(m.Name + " est déjà affecté par Incognito.");
+                return false;
+            }
+            //else if (!m.CanBeginAction(typeof(MetamorphoseSpell)) || !m.CanBeginAction(typeof(MutationSpell)) || !m.CanBeginAction(typeof(AlterationSpell)) || !m.CanBeginAction(typeof(SubterfugeSpell)) || !m.CanBeginAction(typeof(ChimereSpell)) || !m.CanBeginAction(typeof(TransmutationSpell)))
+            //{
+            //    Caster.SendMessage(m.Name + " est déjà transformé.");
+            //    return false;
+            //}
+            //else if (!m.CanBeginAction(typeof(BaseMorphPotion)))
+            //{
+            //    Caster.SendMessage(m.Name + " est déjà transformé.");
+            //    return false;
+            //}
+            //else if (!m.CanBeginAction(typeof(InstinctCharnelSpell)))
+            //{
+            //    Caster.SendMessage(m.Name + " est déjà transformé.");
+            //    return false;
+            //}
+			//else if (!m.CanBeginAction(typeof(ChauveSouris)))
+			//{
+			//    Caster.SendMessage(m.Name + " est sous la forme d'une chauve-souris.");
+			//    return false;
+			//}
+			//else if (!m.CanBeginAction(typeof(BaseMorphPotion)))
+			//{
+			//    Caster.SendMessage(m.Name + " est déjà transformé.");
+			//    return false;
+			//}
+			else if (m.BodyMod == 183 || m.BodyMod == 184)
+			{
+				Caster.SendLocalizedMessage(1042512); // You cannot polymorph while wearing body paint
+				return false;
+			}
+			else if (m.Blessed)
+            {
+                Caster.SendMessage(m.Name + " ne peut être la cible de sorts changeant l'apparence.");
+                return false;
+            }
+
+            return true;
+        }
+
+		public Mobile m_Caster;
+		public Item m_Scroll;
+		private SpellInfo m_Info;
+		public SpellState m_State;
+		public DateTime m_StartCastTime;
+
+		public SpellState State{ get{ return m_State; } set{ m_State = value; } }
+		public Mobile Caster{ get{ return m_Caster; } }
+		public SpellInfo Info{ get{ return m_Info; } }
+		public string Name{ get{ return m_Info.Name; } }
+		public string Mantra{ get{ return m_Info.Mantra; } }
+		public SpellCircle Circle{ get{ return m_Info.Circle; } }
+		public Type[] Reagents{ get{ return m_Info.Reagents; } }
+		public Item Scroll{ get{ return m_Scroll; } }
+
+		private static double NextSpellDelay = 2.0;
+		private static TimeSpan AnimateDelay = TimeSpan.FromSeconds( 1.5 );
+
+		public virtual SkillName CastSkill{ get{ return SkillName.Magery; } }
+		public virtual SkillName DamageSkill{ get{ return SkillName.EvalInt; } }
+
+		public virtual bool RevealOnCast{ get{ return true; } }
+		public virtual bool ClearHandsOnCast{ get{ return true; } }
+
+		public virtual bool DelayedDamage{ get{ return false; } }
+
+        public virtual bool AnimateOnCast { get { return true; } }
+        public virtual bool CheckHurt { get { return true; } }
+
+		public Spell( Mobile caster, Item scroll, SpellInfo info )
+		{
+			m_Caster = caster;
+			m_Scroll = scroll;
+			m_Info = info;
+		}
+
+        public virtual int GetNewAosDamage( Mobile target, int bonus, int dice, int sides, bool playerVsPlayer )
+		{
+			int damage = Utility.Dice( dice, sides, bonus ) * 100;
+			int damageBonus = 0;
+
+            double anatomySkill = Caster.Skills[SkillName.Anatomy].Value;
+            damageBonus += (int)(anatomySkill / 2.5);
+
+			int intBonus = Caster.Int / 2;
+			damageBonus += intBonus;
+
+            if (SoifDuCombatSpell.m_SoifDuCombatTable.Contains(Caster))
+            {
+                damageBonus += (int)(((double)SoifDuCombatSpell.m_SoifDuCombatTable[Caster] - 1) * 100);
+                Caster.FixedParticles(14170, 10, 15, 5013, 44, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+            }
+
+            int evalSkill = GetDamageFixed( m_Caster );
+            damageBonus += ((9 * evalSkill) / 100);
+
+			damage = AOS.Scale( damage, 100 + damageBonus );
+
+            //if (AOS.Testing)
+            //    Caster.SendMessage("Spell - Damage : " + String.Format("{0:0.##}", (damage / 100)));
+
+            if (target is BaseCreature)
+                damage *= 4;
+
+            return damage / 100;
+		}
+
+		public virtual double GetAosDamage( int min, int random, double div )
+		{
+			double scale = 1.0;
+
+			scale += GetInscribeSkill( m_Caster ) * 0.001;
+
+			if ( Caster.Player )
+				scale += Caster.Int * 0.001;
+
+			int baseDamage = min + (int)(GetDamageSkill( m_Caster ) / div);
+
+			double damage = Utility.RandomMinMax( baseDamage, baseDamage + random );
+
+			return damage * scale;
+		}
+
+		public virtual bool IsCasting{ get{ return m_State == SpellState.Casting; } }
+
+        public virtual void OnCasterHurt()
+        {
+            if (CheckHurt)
+            {
+                CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
+                double chance = m_Caster.Skills[SkillName.Magery].Value / 333;
+                chance += m_Caster.Skills[SkillName.Wrestling].Value / 333;
+
+                //Protection Spell
+                object o = ProtectSpell.Registry[m_Caster];
+
+                if (o != null && o is double)
+                    chance = 1.0; //Cannot be disrupt
+
+                if (chance > Utility.RandomDouble())
+                    m_Caster.SendMessage("Vous réussissez à garder votre concentration.");
+                else
+                    Disturb(DisturbType.Hurt);
+            }
+        }
+
+		public virtual void OnCasterKilled()
+		{
+			Disturb( DisturbType.Kill );
+		}
+
+		public virtual void OnConnectionChanged()
+		{
+			FinishSequence();
+		}
+
+		public virtual bool OnCasterMoving( Direction d )
+		{
+			if ( IsCasting && BlocksMovement )
+			{
+				m_Caster.SendLocalizedMessage( 500111 ); // You are frozen and can not move.
+				return false;
+			}
+
+			return true;
+		}
+
+		public virtual bool OnCasterEquiping( Item item )
+		{
+			if ( IsCasting )
+				Disturb( DisturbType.EquipRequest );
+
+			return true;
+		}
+
+		public virtual bool OnCasterUsingObject( object o )
+		{
+			if ( m_State == SpellState.Sequencing )
+				Disturb( DisturbType.UseRequest );
+
+			return true;
+		}
+
+		public virtual bool OnCastInTown( Region r )
+		{
+			return m_Info.AllowTown;
+		}
+
+		public virtual bool ConsumeReagents()
+		{
+			if ( m_Scroll != null || !m_Caster.Player )
+				return true;
+
+			//if ( AosAttributes.GetValue( m_Caster, AosAttribute.LowerRegCost ) > Utility.Random( 100 ) )
+			//	return true;
+
+			Container pack = m_Caster.Backpack;
+
+			if ( pack == null )
+				return false;
+
+			if ( pack.ConsumeTotal( m_Info.Reagents, m_Info.Amounts ) == -1 )
+				return true;
+
+			return false;
+		}
+
+		public virtual bool CheckResisted( Mobile target )
+        {
+            //Modification majeure, voir AOS.cs
+            return false;
+
+            //if (target is CustomPlayerMobile)
+            //{
+            //    CustomPlayerMobile pm = (CustomPlayerMobile)target;
+
+            //    if (pm.CheckFatigue(4))
+            //        return false;
+            //}
+
+            double n = GetResistPercent( target );
+
+            n /= 100.0;
+
+            //if (target is CustomPlayerMobile)
+            //    n += ((CustomPlayerMobile)target).GetAttributValue(Attribut.Resistance) / 1000;
+
+            if ( n <= 0.0 )
+            	return false;
+
+            if ( n >= 1.0 )
+                return true;
+
+            int maxSkill = (1 + (int)Circle) * 10;
+            maxSkill += (1 + ((int)Circle / 6)) * 25;
+
+            if ( target.Skills[SkillName.MagicResist].Value < maxSkill )
+                target.CheckSkill( SkillName.MagicResist, 0.0, 120.0 );
+
+            return ( n >= Utility.RandomDouble() );
+		}
+
+		public virtual double GetInscribeSkill( Mobile m )
+		{
+			// There is no chance to gain
+			// m.CheckSkill( SkillName.Inscribe, 0.0, 120.0 );
+
+			return m.Skills[SkillName.Inscribe].Value;
+		}
+
+		public virtual int GetInscribeFixed( Mobile m )
+		{
+			// There is no chance to gain
+			// m.CheckSkill( SkillName.Inscribe, 0.0, 120.0 );
+
+			return m.Skills[SkillName.Inscribe].Fixed;
+		}
+
+		public virtual int GetDamageFixed( Mobile m )
+		{
+			m.CheckSkill( DamageSkill, 0.0, 120.0 );
+
+			return m.Skills[DamageSkill].Fixed;
+		}
+
+		public virtual double GetDamageSkill( Mobile m )
+		{
+			m.CheckSkill( DamageSkill, 0.0, 120.0 );
+
+			return m.Skills[DamageSkill].Value;
+		}
+
+		public virtual int GetResistFixed( Mobile m )
+		{
+			int maxSkill = (1 + (int)Circle) * 10;
+			maxSkill += (1 + ((int)Circle / 6)) * 25;
+
+			if ( m.Skills[SkillName.MagicResist].Value < maxSkill )
+				m.CheckSkill( SkillName.MagicResist, 0.0, 120.0 );
+
+			return m.Skills[SkillName.MagicResist].Fixed;
+		}
+
+		public virtual double GetResistSkill( Mobile m )
+		{
+			int maxSkill = (1 + (int)Circle) * 10;
+			maxSkill += (1 + ((int)Circle / 6)) * 25;
+
+			if ( m.Skills[SkillName.MagicResist].Value < maxSkill )
+				m.CheckSkill( SkillName.MagicResist, 0.0, 120.0 );
+
+			return m.Skills[SkillName.MagicResist].Value;
+		}
+
+		public virtual double GetResistPercentForCircle( Mobile target, SpellCircle circle )
+		{
+			double firstPercent = target.Skills[SkillName.MagicResist].Value / 5.0;
+			double secondPercent = target.Skills[SkillName.MagicResist].Value - (((m_Caster.Skills[CastSkill].Value - 20.0) / 5.0) + (1 + (int)circle) * 5.0);
+
+			return ( firstPercent > secondPercent ? firstPercent : secondPercent ) / 2.0; // Seems should be about half of what stratics says.
+		}
+
+		public virtual double GetResistPercent( Mobile target )
+		{
+			return GetResistPercentForCircle( target, m_Info.Circle );
+		}
+
+		public virtual double GetDamageScalar( Mobile target )
+		{
+			double casterEI = m_Caster.Skills[DamageSkill].Value;
+			double targetRS = target.Skills[SkillName.MagicResist].Value;
+			double scalar;
+
+			m_Caster.CheckSkill( DamageSkill, 0.0, 120.0 );
+
+			if ( casterEI > targetRS )
+				scalar = (1.0 + ((casterEI - targetRS) / 500.0));
+			else
+				scalar = (1.0 + ((casterEI - targetRS) / 200.0));
+
+			// magery damage bonus, -25% at 0 skill, +0% at 100 skill, +5% at 120 skill
+			scalar += ( m_Caster.Skills[CastSkill].Value - 100.0 ) / 400.0;
+
+			if ( target is BaseCreature )
+				scalar += 0.5; // Double magery damage to monsters/animals if not AOS
+
+			if ( target is BaseCreature )
+				((BaseCreature)target).AlterDamageScalarFrom( m_Caster, ref scalar );
+
+			if ( m_Caster is BaseCreature )
+				((BaseCreature)m_Caster).AlterDamageScalarTo( target, ref scalar );
+
+			target.Region.SpellDamageScalar( m_Caster, target, ref scalar );
+
+			return scalar;
+		}
+
+        public virtual TimeSpan GetDurationForSpell(double scale)
+        {
+            return GetDurationForSpell(5, scale);
+        }
+
+        public virtual TimeSpan GetDurationForSpell(double min, double scale)
+        {
+            double valeur = min + (double)Caster.Skills[CastSkill].Value * scale;
+            double valeurbonus = 1;
+
+            valeurbonus += (Caster.Skills[DamageSkill].Value - 50) / 150;
+
+            valeurbonus += Caster.Int / 2000;
+
+            valeur *= valeurbonus;
+
+            if(Caster is CustomPlayerMobile)
+            {
+                CustomPlayerMobile m = (CustomPlayerMobile)Caster;
+
+                //valeur = SpellHelper.AdjustValue(m, valeur, NAptitude.MagieProlongee);
+            }
+
+            if (valeur < 0.5)
+                return TimeSpan.FromSeconds(0.5);
+
+            return TimeSpan.FromSeconds(valeur);
+        }
+
+        public virtual TimeSpan GetDurationForSpellvortex(double scale)
+        {
+            return GetDurationForSpell(5, scale);
+        }
+
+        public virtual TimeSpan GetDurationForSpellvortex(double min, double scale)
+        {
+            double valeur = min + (double)Caster.Skills[CastSkill].Value * scale;
+            double valeurbonus = 1;
+
+            valeurbonus += (Caster.Skills[DamageSkill].Value - 50) / 150;
+
+            valeurbonus += Caster.Int / 2000;
+
+            valeur *= valeurbonus;
+
+            if (valeur < 0.5)
+                return TimeSpan.FromSeconds(0.5);
+
+            return TimeSpan.FromSeconds(valeur);
+        }
+
+		public virtual void DoFizzle()
+		{
+			m_Caster.LocalOverheadMessage( MessageType.Regular, 0x3B2, 502632 ); // The spell fizzles.
+
+			if ( m_Caster.Player )
+			{
+				m_Caster.FixedEffect( 0x3735, 6, 30 );
+				m_Caster.PlaySound( 0x5C );
+			}
+		}
+
+		public CastTimer m_CastTimer;
+		public AnimTimer m_AnimTimer;
+
+		public virtual bool CheckDisturb( DisturbType type )
+		{
+			return true;
+		}
+
+        public void Disturb(DisturbType type)
+        {
+            if (!CheckDisturb(type))
+                return;
+
+            if (m_State == SpellState.Casting)
+            {
+                m_State = SpellState.None;
+                m_Caster.Spell = null;
+
+                OnDisturb(type, true);
+
+                if (m_CastTimer != null)
+                    m_CastTimer.Stop();
+
+                if (m_AnimTimer != null)
+                    m_AnimTimer.Stop();
+
+                DoFizzle();
+
+                m_Caster.NextSpellTime = Core.TickCount + GetDisturbRecovery();
+            }
+            /*else if (m_State == SpellState.Sequencing)
+            {
+                m_State = SpellState.None;
+                m_Caster.Spell = null;
+
+                OnDisturb(type, true);
+
+                DoFizzle();
+
+                Targeting.Target.Cancel(m_Caster);
+            }*/
+        }
+
+		public virtual void DoHurtFizzle()
+		{
+			m_Caster.FixedEffect( 0x3735, 6, 30 );
+			m_Caster.PlaySound( 0x5C );
+		}
+
+		public virtual void OnDisturb( DisturbType type, bool message )
+		{
+			if ( message )
+				m_Caster.SendLocalizedMessage( 500641 ); // Your concentration is disturbed, thus ruining thy spell.
+		}
+
+		public virtual bool CheckCast()
+        {
+            CustomPlayerMobile caster = m_Caster as CustomPlayerMobile;
+
+            //if (caster != null && (caster.Squelched || caster.Aphonie))
+            //{
+            //    caster.SendMessage("Vous ne pouvez incanter si vous êtes muet.");
+            //    return false;
+            //}
+
+            BaseCreature bc = m_Caster as BaseCreature;
+
+            if (bc != null && (bc.Squelched/* || (bc != null && bc.Aphonie)*/))
+                return false;
+
+			return true;
+		}
+
+		public virtual void SayMantra()
+		{
+			if ( m_Info.Mantra != null && m_Info.Mantra.Length > 0 && m_Caster.Player )
+				m_Caster.PublicOverheadMessage( MessageType.Spell, m_Caster.SpeechHue, true, m_Info.Mantra, false );
+
+            //if (m_Info.Mantra != null && m_Info.Mantra.Length > 0 /*&& m_Caster.Player*/)
+            //{
+            //    //  m_Caster.PublicOverheadMessage(MessageType.Spell, m_Caster.SpeechHue, true, m_Info.Mantra, false);
+            //    string[] splitted = m_Info.Mantra.Trim().Split(' ');
+            //    TimeSpan castDelay = this.GetCastDelay();
+
+            //    Timer m_ParolesTimer = new ParolesTimer(Caster, castDelay, splitted);
+            //    m_ParolesTimer.Start();
+            //}
+		}
+
+        //public class ParolesTimer : Timer
+        //{
+        //    private int Count;
+        //    private Mobile m_Caster = null;
+        //    private string[] split = null;
+
+        //    public ParolesTimer(Mobile Caster, TimeSpan castDelay, string[] splitted)
+        //        : base(TimeSpan.Zero, TimeSpan.FromSeconds(castDelay.TotalSeconds / splitted.Length))
+        //    {
+        //        Count = 0;
+        //        m_Caster = Caster;
+        //        split = splitted;
+        //    }
+
+        //    protected override void OnTick()
+        //    {
+        //        if (m_Caster != null && split != null)
+        //        {
+        //            if (Count < split.Length)
+        //                m_Caster.Say(split[Count]);
+        //        }
+
+        //        Count++;
+        //    }
+        //}
+
+		public virtual bool BlockedByHorrificBeast{ get{ return false; } }
+		public virtual bool BlocksMovement{ get{ return true; } }
+
+		public virtual bool CheckNextSpellTime{ get{ return true; } }
+
+		public virtual bool Cast()
+        {
+            CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
+			m_StartCastTime = DateTime.Now;
+
+			if ( !m_Caster.CheckAlive() )
+			{
+				return false;
+			}
+			else if ( m_Caster.Spell != null && m_Caster.Spell.IsCasting )
+			{
+				m_Caster.SendLocalizedMessage( 502642 ); // You are already casting a spell.
+			}
+			//else if ( BlockedByHorrificBeast && TransformationSpell.UnderTransformation( m_Caster, typeof( HorrificBeastSpell ) ) )
+			//{
+			//	m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
+			//}
+			else if ( m_Caster.Frozen )
+			{
+				m_Caster.SendLocalizedMessage( 502643 ); // You can not cast a spell while frozen.
+			}
+			else if ( CheckNextSpellTime && Core.TickCount < m_Caster.NextSpellTime )
+			{
+				m_Caster.SendLocalizedMessage( 502644 ); // You must wait for that spell to have an effect.
+            }
+            //else if (this is ReligiousSpell && pm != null && pm.PouvoirDivinProcure < GetPdP())
+            //{
+            //    m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "Vous n'avez pas assez de pouvoir divin procuré.");
+            //}
+			else if ( m_Caster.Mana >= ScaleMana( GetMana() ) )
+			{
+				if (m_Caster.Spell == null && m_Caster.CheckSpellCast( this ) && CheckCast() && m_Caster.Region.OnBeginSpellCast( m_Caster, this ) )
+				{
+					m_State = SpellState.Casting;
+					m_Caster.Spell = this;
+
+					if ( RevealOnCast )
+						m_Caster.RevealingAction();
+
+					SayMantra();
+
+					TimeSpan castDelay = this.GetCastDelay();
+
+					if ( m_Caster.Body.IsHuman )
+					{
+						int count = (int)Math.Ceiling( castDelay.TotalSeconds / AnimateDelay.TotalSeconds );
+
+						if ( count != 0 && AnimateOnCast)
+						{
+							m_AnimTimer = new AnimTimer( this, count );
+							m_AnimTimer.Start();
+						}
+
+						if ( m_Info.LeftHandEffect > 0 )
+							Caster.FixedParticles( 0, 10, 5, m_Info.LeftHandEffect, EffectLayer.LeftHand );
+
+						if ( m_Info.RightHandEffect > 0 )
+							Caster.FixedParticles( 0, 10, 5, m_Info.RightHandEffect, EffectLayer.RightHand );
+					}
+
+					if ( CheckHands() )
+						m_Caster.ClearHands();
+
+					m_CastTimer = new CastTimer( this, castDelay );
+					m_CastTimer.Start();
+
+					OnBeginCast();
+
+					return true;
+				}
+				else
+				{
+					return false;
+				}
+			}
+			else
+			{
+				m_Caster.LocalOverheadMessage( MessageType.Regular, 0x22, 502625 ); // Insufficient mana
+			}
+
+			return false;
+		}
+
+        public bool CheckHands()
+        {
+            bool clear = ClearHandsOnCast;
+
+            if (Caster is CustomPlayerMobile && this is ReligiousSpell)
+            {
+                Classe classe = ((CustomPlayerMobile)Caster).Classe;
+
+                //Les paladins n'ont pas à se déprendre de leur arme durant un combat.
+                if ( classe == Classe.Templier || classe == Classe.Repurgateur || classe == Classe.Paladin)
+                    clear = false;
+            }
+
+            return clear;
+        }
+
+		public abstract void OnCast();
+
+		public virtual void OnBeginCast()
+		{
+            if (m_Caster is CustomPlayerMobile)
+            {
+                CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
+
+                //if (pm.IsPraying)
+                //    pm.BreakPraying();
+            }
+		}
+
+        public virtual void OnEndCast()
+        {
+        }
+
+		private const double ChanceOffset = 20.0, ChanceLength = 100.0 / 9.0;
+
+		public virtual void GetCastSkills( out double min, out double max )
+		{
+			int circle = (int)m_Info.Circle;
+
+			if ( m_Scroll != null )
+				circle -= 2;
+
+			double avg = ChanceLength * circle;
+
+			min = avg - ChanceOffset;
+            max = avg + ChanceOffset;
+
+            if (m_Caster is CustomPlayerMobile)
+            {
+                CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
+            }
+		}
+
+		public virtual bool CheckFizzle()
+		{
+			double minSkill, maxSkill;
+
+			GetCastSkills( out minSkill, out maxSkill );
+
+            if (m_Caster is CustomPlayerMobile && m_Caster.Mounted)
+            {
+                CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
+
+                if (pm.Classe != Classe.Repurgateur && pm.Classe != Classe.Templier && pm.Classe != Classe.Paladin && pm.AccessLevel == AccessLevel.Player)
+                {
+					int equitation = (int)pm.Skills[SkillName.Equitation].Value / 10;
+
+                    double chance = 100 - (equitation * 6);
+
+                    if (Utility.Random(0, 100) <= chance)
+                        return false;
+                }
+            }
+
+            Caster.CheckSkill(CastSkill, 0, 120);
+
+			return Caster.CheckSkill( CastSkill, minSkill, maxSkill );
+		}
+
+		public static int[] m_ManaTable = new int[]{ 8, 12, 16, 20, 25, 32, 45, 60 };
+
+		public virtual int GetMana()
+		{
+			return m_ManaTable[(int)Circle];
+        }
+
+        public static int[] m_PdPTable = new int[] { 10, 30, 60, 90, 125, 160, 185, 220 };
+
+        public virtual int GetPdP()
+        {
+            if (!(this is ReligiousSpell))
+                return 0;
+
+            try
+            {
+                return m_PdPTable[(int)Circle];
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+                return 10;
+            }
+        }
+
+        public virtual int GetAptitudeValue()
+        {
+            return RequiredAptitudeValue;
+        }
+
+        public virtual NAptitude[] GetAptitude()
+        {
+            return RequiredAptitude;
+        }
+
+        public virtual int RequiredAptitudeValue { get { return 99; } }
+        public virtual int RequiredMagicCapacity { get { return 99; } }
+        public virtual NAptitude[] RequiredAptitude { get { return new NAptitude[] { NAptitude.Arcanique }; } }
+
+		public virtual int ScaleMana( int mana )
+		{
+			double scalar = 1.0;
+
+            if (Caster is CustomPlayerMobile)
+            {
+                CustomPlayerMobile m = (CustomPlayerMobile)Caster;
+
+                //mana = (int)SpellHelper.AdjustValue(m, mana, NAptitude.ConnaissancesAccrues);
+
+                mana = (int)(mana * (1 - (Caster.Int * 0.003)));
+
+                if (Caster is CustomPlayerMobile)
+                {
+                    CustomPlayerMobile pm = (CustomPlayerMobile)Caster;
+
+                    ClasseInfo info = Classes.GetInfos(pm.Classe);
+
+                    if (info != null && info.ClasseBranche == ClasseBranche.Paladin)
+                        mana *= 2;
+                }
+            }
+
+            if (scalar < 1.0)
+                scalar = 1.0;
+
+			return (int)(mana * scalar);
+		}
+
+        public virtual int ScalePdp(int pdp)
+        {
+            double scalar = 1.0;
+
+            if (Caster is CustomPlayerMobile)
+            {
+                CustomPlayerMobile m = (CustomPlayerMobile)Caster;
+
+                pdp = (int)SpellHelper.AdjustValue(m, pdp, NAptitude.MagieAncestrale);
+            }
+
+            if (scalar < 1.0)
+                scalar = 1.0;
+
+            return (int)(pdp * scalar);
+        }
+
+		public virtual long GetDisturbRecovery()
+		{
+			double delay = 1.0 - Math.Sqrt( (DateTime.Now - m_StartCastTime).TotalSeconds / GetCastDelay().TotalSeconds );
+
+			if ( delay < 0.1 )
+				delay = 0.1;
+
+			return (long)(delay * 1000);
+		}
+
+        public virtual bool Invocation { get { return false; } }
+
+		public virtual int CastRecoveryBase{ get{ return 2; } }
+		public virtual int CastRecoveryCircleScalar{ get{ return 0; } }
+		public virtual int CastRecoveryFastScalar{ get{ return 0; } }
+		public virtual int CastRecoveryPerSecond{ get{ return 1; } }
+		public virtual int CastRecoveryMinimum{ get{ return 0; } }
+
+		public virtual long GetCastRecovery()
+		{
+            return CastRecoveryBase * 1000;
+		}
+
+		public virtual int CastDelayBase{ get{ return 1; } }
+		public virtual int CastDelayCircleScalar{ get{ return 1; } }
+		public virtual int CastDelayFastScalar{ get{ return 0; } }
+		public virtual int CastDelayPerSecond{ get{ return 1; } }
+		public virtual int CastDelayMinimum{ get{ return 1; } }
+
+		public virtual TimeSpan GetCastDelay()
+		{
+            int scalar = 2;
+
+            if (Invocation)
+                scalar = 1;
+
+            double value = (CastDelayBase + (CastDelayCircleScalar * (int)Circle / scalar)) / CastDelayPerSecond;
+
+			double bonus = 0; 
+
+            if (SoifDuCombatSpell.m_SoifDuCombatTable.Contains(Caster))
+            {
+                bonus -= ((double)SoifDuCombatSpell.m_SoifDuCombatTable[Caster] - 1);
+                Caster.FixedParticles(14170, 10, 15, 5013, 44, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+            }
+
+            value *= bonus;
+
+            if (value < CastDelayMinimum)
+                value = CastDelayMinimum;
+
+            return TimeSpan.FromSeconds(value);
+		}
+
+		public virtual void FinishSequence()
+		{
+			m_State = SpellState.None;
+
+			if ( m_Caster.Spell == this )
+				m_Caster.Spell = null;
+		}
+
+        public virtual bool VerifyConn(CustomPlayerMobile pm, NAptitude[] apt, int cValueRequis)
+        {
+            bool ok = false;
+
+            for (int i = 0; !ok && i < apt.Length; ++i)
+            {
+                NAptitude c = apt[i];
+
+                ok = (pm.GetAptitudeValue(c) >= cValueRequis);
+            }
+
+            return ok;
+        }
+
+        public virtual bool CheckSequence()
+		{
+            int mana = ScaleMana(GetMana());
+            int pdpRequis = ScalePdp(GetPdP());
+            int aptitudeValueRequis = GetAptitudeValue();
+            NAptitude[] aptitudeRequise = GetAptitude();
+
+            CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
+            
+            //if (pm != null)
+            //{
+            //    pm.CheckPraying();
+            //    pm.CheckEtude();
+            //}
+
+			if ( m_Caster.Deleted || !m_Caster.Alive || m_Caster.Spell != this || m_State != SpellState.Sequencing )
+            {
+				DoFizzle();
+			}
+			else if ( m_Scroll != null && !(m_Scroll is Runebook) && (m_Scroll.Amount <= 0 || m_Scroll.Deleted || m_Scroll.RootParent != m_Caster) )
+			{
+				DoFizzle();
+            }
+            else if (!ConsumeReagents())
+            {
+                m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, 502630); // More reagents are needed for this spell.
+            }
+			else if ( m_Caster.Mana < mana )
+			{
+				m_Caster.LocalOverheadMessage( MessageType.Regular, 0x22, 502625 ); // Insufficient mana for this spell.
+            }
+            //else if (this is ReligiousSpell && pm != null && pm.PouvoirDivinProcure < pdpRequis)
+            //{
+            //    m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "Vous n'avez pas assez de pouvoir divin procuré.");
+            //}
+            else if (pm != null && !VerifyConn(pm, aptitudeRequise, aptitudeValueRequis))
+            {
+                m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "La connaissance nécessaire pour ce sort n'est pas assez développée.");
+            }
+            else if (pm != null && !pm.CheckEquitation(EquitationType.CastAttacking))
+            {
+                DoFizzle();
+            }
+			else if ( CheckFizzle() )
+			{
+                m_Caster.Mana -= mana;
+
+                //if (pm != null)
+                //    pm.PouvoirDivinProcure -= pdpRequis;
+
+				if ( m_Scroll is SpellScroll )
+					m_Scroll.Consume();
+
+				if ( CheckHands() )
+					m_Caster.ClearHands();
+
+				return true;
+			}
+			else
+            {
+				DoFizzle();
+			}
+
+			return false;
+		}
+
+		public bool CheckBSequence( Mobile target )
+		{
+			return CheckBSequence( target, false );
+		}
+
+		public bool CheckBSequence( Mobile target, bool allowDead )
+		{
+			if ( !target.Alive && !allowDead )
+			{
+				m_Caster.SendLocalizedMessage( 501857 ); // This spell won't work on that!
+				return false;
+			}
+			else if ( Caster.CanBeBeneficial( target, true, allowDead ) && CheckSequence() )
+			{
+				Caster.DoBeneficial( target );
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		public bool CheckHSequence( Mobile target )
+		{
+			if ( !target.Alive )
+			{
+				m_Caster.SendLocalizedMessage( 501857 ); // This spell won't work on that!
+				return false;
+			}
+			else if ( Caster.CanBeHarmful( target ) && CheckSequence() )
+			{
+				Caster.DoHarmful( target );
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
+
+		public class AnimTimer : Timer
+		{
+			private Spell m_Spell;
+
+			public AnimTimer( Spell spell, int count ) : base( TimeSpan.Zero, AnimateDelay, count )
+			{
+				m_Spell = spell;
+
+				Priority = TimerPriority.FiftyMS;
+			}
+
+			protected override void OnTick()
+			{
+				if ( m_Spell.State != SpellState.Casting || m_Spell.m_Caster.Spell != m_Spell )
+				{
+					Stop();
+					return;
+				}
+
+				if ( !m_Spell.Caster.Mounted && m_Spell.Caster.Body.IsHuman && m_Spell.m_Info.Action >= 0 )
+					m_Spell.Caster.Animate( m_Spell.m_Info.Action, 7, 1, true, false, 0 );
+
+				if ( !Running )
+					m_Spell.m_AnimTimer = null;
+			}
+		}
+
+        public static void Disturb(Mobile m)
+        {
+            m.Paralyzed = false;
+        }
+
+		public bool CheckMovement(Mobile caster)
+		{
+			throw new NotImplementedException();
+		}
+
+		public class CastTimer : Timer
+		{
+			private Spell m_Spell;
+
+			public CastTimer( Spell spell, TimeSpan castDelay ) : base( castDelay )
+			{
+				m_Spell = spell;
+
+				Priority = TimerPriority.TwentyFiveMS;
+			}
+
+			protected override void OnTick()
+			{
+                try
+                {
+                    if (m_Spell != null && m_Spell.m_Caster != null && m_Spell.m_State == SpellState.Casting && m_Spell.m_Caster.Spell == m_Spell)
+                    {
+                        m_Spell.m_State = SpellState.Sequencing;
+                        m_Spell.m_CastTimer = null;
+                        m_Spell.m_Caster.OnSpellCast(m_Spell);
+                        m_Spell.m_Caster.Region.OnSpellCast(m_Spell.m_Caster, m_Spell);
+                        m_Spell.m_Caster.NextSpellTime = Core.TickCount + m_Spell.GetCastRecovery();// Spell.NextSpellDelay;
+
+                        Target originalTarget = m_Spell.m_Caster.Target;
+
+                        m_Spell.OnCast();
+
+                        if (m_Spell.m_Caster.Player && m_Spell.m_Caster.Target != originalTarget && m_Spell.Caster.Target != null)
+                            m_Spell.m_Caster.Target.BeginTimeout(m_Spell.m_Caster, TimeSpan.FromSeconds(30.0));
+
+                        m_Spell.m_CastTimer = null;
+
+                        m_Spell.OnEndCast();
+                    }
+                }
+                catch
+                {
+                    m_Spell.m_CastTimer = null;
+
+                    if (m_Spell != null && m_Spell.m_Caster != null)
+                        m_Spell.m_Caster.NextSpellTime = Core.TickCount;
+                }
+			}
+		}
+	}
+}

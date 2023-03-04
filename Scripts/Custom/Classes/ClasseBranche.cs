@@ -1,0 +1,39 @@
+﻿namespace Server.Custom.Classes
+{
+	public enum ClasseBranche
+	{
+		Aucune,
+		Acrobate,
+		Barde,
+		Agriculteur,
+		Alchimiste,
+		Bricoleur,
+		Cartographe,
+		Commercant,
+		Enchanteur,
+		Forgeron,
+		Savant,
+		Archer,
+		Barbare,
+		Chevaucheur,
+		FineLame,
+		Guerrier,
+		Protecteur,
+		Conjurateur,
+		Illusionniste,
+		Necromancien,
+		Sorcier,
+		Thaumaturge,
+		Druide,
+		Eleveur,
+		Rodeur,
+		Shaman,
+		Moine,
+		Paladin,
+		Pretre,
+		Assassin,
+		Brigand,
+		Espion,
+		Voleur
+	}
+}

@@ -1,0 +1,10 @@
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.csproj.AssemblyReference.cache
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.csproj.SuggestedBindingRedirects.cache
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.csproj.CoreCompileInputs.cache
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.csproj.CopyComplete
+C:\Kaldenia\Serveur\ServUO.exe.config
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.exe
+C:\Kaldenia\Serveur\Application\obj\Release\ServUO.pdb
+C:\Kaldenia\Serveur\ServUO.exe
+C:\Kaldenia\Serveur\ServUO.pdb
