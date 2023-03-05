@@ -34,3 +34,12 @@ C:\NewUoServer2023\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 C:\NewUoServer2023\Server\obj\Debug\Server.csproj.CopyComplete
 C:\NewUoServer2023\Server\obj\Debug\Server.dll
 C:\NewUoServer2023\Server\obj\Debug\Server.pdb
+D:\KaldeniaV31\Server\bin\Debug\Server.dll
+D:\KaldeniaV31\Server\bin\Debug\Server.pdb
+D:\KaldeniaV31\Server\bin\Debug\System.Drawing.Common.dll
+D:\KaldeniaV31\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\KaldeniaV31\Server\obj\Debug\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\KaldeniaV31\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\KaldeniaV31\Server\obj\Debug\Server.csproj.CopyComplete
+D:\KaldeniaV31\Server\obj\Debug\Server.dll
+D:\KaldeniaV31\Server\obj\Debug\Server.pdb
