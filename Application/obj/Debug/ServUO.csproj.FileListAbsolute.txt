@@ -38,3 +38,13 @@ C:\NewUoServer2023\Application\obj\Debug\ServUO.exe
 C:\NewUoServer2023\Application\obj\Debug\ServUO.pdb
 C:\NewUoServer2023\ServUO.exe
 C:\NewUoServer2023\ServUO.pdb
+D:\KaldeniaV31\Application\obj\Debug\ServUO.csproj.AssemblyReference.cache
+D:\KaldeniaV31\Application\obj\Debug\ServUO.csproj.SuggestedBindingRedirects.cache
+D:\KaldeniaV31\Application\obj\Debug\ServUO.GeneratedMSBuildEditorConfig.editorconfig
+D:\KaldeniaV31\Application\obj\Debug\ServUO.csproj.CoreCompileInputs.cache
+D:\KaldeniaV31\Application\obj\Debug\ServUO.csproj.CopyComplete
+D:\KaldeniaV31\ServUO.exe.config
+D:\KaldeniaV31\Application\obj\Debug\ServUO.exe
+D:\KaldeniaV31\Application\obj\Debug\ServUO.pdb
+D:\KaldeniaV31\ServUO.exe
+D:\KaldeniaV31\ServUO.pdb
