@@ -68,14 +68,6 @@
 		Druide,
 		ArchiDruide,
 
-		Repurgateur,
-		Templier,
-		Paladin,
-
-		Fervent,
-		MaitreDeCeremonie,
-		IntermediaireDivin,
-
 		Eclaireur,
 		Pisteur,
 		Rodeur,

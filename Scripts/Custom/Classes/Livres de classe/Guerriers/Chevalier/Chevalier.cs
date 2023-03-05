@@ -30,8 +30,6 @@ namespace Server
                 new CSkills(SkillName.Parry, 100),
                 new CSkills(SkillName.Healing, 70),
                 new CSkills(SkillName.ArmsLore, 70),
-                new CSkills(SkillName.AnimalLore, 50),
-                new CSkills(SkillName.Veterinary, 40)
             };
 
         public static ClasseInfo ClasseInfo = new ClasseInfo(

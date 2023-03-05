@@ -273,12 +273,12 @@ namespace Server.Items
         {
             if (m is DespiseCreature)
             {
-                return healer.Skills[SkillName.Healing].Value > healer.Skills[SkillName.Veterinary].Value ? SkillName.Healing : SkillName.Veterinary;
+                return /*healer.Skills[SkillName.Healing].Value > healer.Skills[SkillName.Veterinary].Value ? */SkillName.Healing /*: SkillName.Veterinary*/;
             }
 
             if (!m.Player && (m.Body.IsMonster || m.Body.IsAnimal))
             {
-                return SkillName.Veterinary;
+                return SkillName.Healing;
             }
             else
             {
@@ -290,12 +290,12 @@ namespace Server.Items
         {
             if (m is DespiseCreature)
             {
-                return healer.Skills[SkillName.Healing].Value > healer.Skills[SkillName.Veterinary].Value ? SkillName.Anatomy : SkillName.AnimalLore;
+                return /*healer.Skills[SkillName.Healing].Value > healer.Skills[SkillName.Veterinary].Value ?*/ SkillName.Anatomy/* : SkillName.AnimalLore*/;
             }
 
             if (!m.Player && (m.Body.IsMonster || m.Body.IsAnimal))
             {
-                return SkillName.AnimalLore;
+                return SkillName.Healing;
             }
             else
             {
@@ -643,11 +643,6 @@ namespace Server.Items
                 BuffInfo.RemoveBuff(m_Healer, BuffIcon.Healing);
             else
                 BuffInfo.RemoveBuff(m_Healer, BuffIcon.Veterinary);
-
-
-
-			
-
         }
 
         private class InternalTimer : Timer
@@ -783,10 +778,10 @@ namespace Server.Items
                 seconds = Math.Min(8, Math.Ceiling(11.0 - dex / 20));
                 seconds = Math.Max(seconds, 4);
             }
-            else if (skill == SkillName.Veterinary)
-            {
-                seconds = 2.0;
-            }
+            //else if (skill == SkillName.Veterinary)
+            //{
+            //    seconds = 2.0;
+            //}
             else
             {
                 seconds = Math.Ceiling((double)4 - dex / 60);

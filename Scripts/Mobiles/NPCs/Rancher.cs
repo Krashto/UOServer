@@ -9,10 +9,9 @@ namespace Server.Mobiles
         public Rancher()
             : base("Rancher")
         {
-            SetSkill(SkillName.AnimalLore, 55.0, 78.0);
             SetSkill(SkillName.AnimalTaming, 55.0, 78.0);
             SetSkill(SkillName.Herding, 64.0, 100.0);
-            SetSkill(SkillName.Veterinary, 60.0, 83.0);
+            SetSkill(SkillName.Healing, 60.0, 83.0);
         }
 
         public Rancher(Serial serial)

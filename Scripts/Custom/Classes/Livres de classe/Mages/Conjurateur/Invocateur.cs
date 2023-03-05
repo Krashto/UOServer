@@ -28,9 +28,8 @@ namespace Server
             {
                 new CSkills(SkillName.Magery, 65),
                 new CSkills(SkillName.Meditation, 60),
-                new CSkills(SkillName.Veterinary, 50),
+                new CSkills(SkillName.Healing, 50),
 		        new CSkills(SkillName.EvalInt, 50),
-		        new CSkills(SkillName.AnimalLore, 35),
                 new CSkills(SkillName.ItemID, 10),
 		        new CSkills(SkillName.Wrestling, 10)
             };

@@ -164,7 +164,7 @@ namespace Server.Items
 					FarmCow c = (FarmCow) targ;
 					if (c.Owner == from || c.Owner == null)
 					{
-						bool CanUse = from.CheckSkill( SkillName.AnimalLore, 20, 50 );
+						bool CanUse = from.CheckSkill( SkillName.AnimalTaming, 20, 50 );
 						if (CanUse)
 						{
 							if (c.Milk > 0)
@@ -209,7 +209,7 @@ namespace Server.Items
 					FarmSheep c = (FarmSheep) targ;
 					if (c.Owner == from || c.Owner == null)
 					{
-						bool CanUse = from.CheckSkill( SkillName.AnimalLore, 20, 50 );
+						bool CanUse = from.CheckSkill( SkillName.AnimalTaming, 20, 50 );
 						if (CanUse)
 						{
 							if (c.Milk > 0)
@@ -254,7 +254,7 @@ namespace Server.Items
 					FarmGoat c = (FarmGoat) targ;
 					if (c.Owner == from || c.Owner == null)
 					{
-						bool CanUse = from.CheckSkill( SkillName.AnimalLore, 20, 50 );
+						bool CanUse = from.CheckSkill( SkillName.AnimalTaming, 20, 50 );
 						if (CanUse)
 						{
 							if (c.Milk > 0)

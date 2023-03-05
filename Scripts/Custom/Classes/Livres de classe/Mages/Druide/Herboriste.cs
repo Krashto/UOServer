@@ -28,7 +28,6 @@ namespace Server
             {
                 new CSkills(SkillName.AnimalTaming, 35),
                 new CSkills(SkillName.Magery, 30),
-                new CSkills(SkillName.AnimalLore, 15),
             };
 
         public static ClasseInfo ClasseInfo = new ClasseInfo(

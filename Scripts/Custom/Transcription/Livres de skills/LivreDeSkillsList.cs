@@ -78,41 +78,41 @@ namespace Server.Items
         }
     }
 
-    [FlipableAttribute(0xFBE, 0xFBD)]
-    public class LivreSkillsAnimalLore : LivreSkills
-    {
-        [Constructable]
-        public LivreSkillsAnimalLore()
-            : this(SkillName.AnimalLore, 0.0, 0.0)
-        {
-        }
+    //[FlipableAttribute(0xFBE, 0xFBD)]
+    //public class LivreSkillsAnimalLore : LivreSkills
+    //{
+    //    [Constructable]
+    //    public LivreSkillsAnimalLore()
+    //        : this(SkillName.AnimalLore, 0.0, 0.0)
+    //    {
+    //    }
 
-        [Constructable]
-        public LivreSkillsAnimalLore(SkillName skill, double value, double growvalue)
-            : base(skill, value, growvalue)
-        {
-            Name = "Étude : Animal Lore";
-        }
+    //    [Constructable]
+    //    public LivreSkillsAnimalLore(SkillName skill, double value, double growvalue)
+    //        : base(skill, value, growvalue)
+    //    {
+    //        Name = "Étude : Animal Lore";
+    //    }
 
-        public LivreSkillsAnimalLore(Serial serial)
-            : base(serial)
-        {
-        }
+    //    public LivreSkillsAnimalLore(Serial serial)
+    //        : base(serial)
+    //    {
+    //    }
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+    //    public override void Serialize(GenericWriter writer)
+    //    {
+    //        base.Serialize(writer);
 
-            writer.Write((int)0); // version
-        }
+    //        writer.Write((int)0); // version
+    //    }
 
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
+    //    public override void Deserialize(GenericReader reader)
+    //    {
+    //        base.Deserialize(reader);
 
-            int version = reader.ReadInt();
-        }
-    }
+    //        int version = reader.ReadInt();
+    //    }
+    //}
 
     [FlipableAttribute(0xFBE, 0xFBD)]
     public class LivreSkillsItemID : LivreSkills
@@ -294,41 +294,41 @@ namespace Server.Items
         }
     }
 
-    [FlipableAttribute(0xFBE, 0xFBD)]
-    public class LivreSkillsFletching : LivreSkills
-    {
-        [Constructable]
-        public LivreSkillsFletching()
-            : this(SkillName.Fletching, 0.0, 0.0)
-        {
-        }
+    //[FlipableAttribute(0xFBE, 0xFBD)]
+    //public class LivreSkillsFletching : LivreSkills
+    //{
+    //    [Constructable]
+    //    public LivreSkillsFletching()
+    //        : this(SkillName.Fletching, 0.0, 0.0)
+    //    {
+    //    }
 
-        [Constructable]
-        public LivreSkillsFletching(SkillName skill, double value, double growvalue)
-            : base(skill, value, growvalue)
-        {
-            Name = "Étude : Fletching";
-        }
+    //    [Constructable]
+    //    public LivreSkillsFletching(SkillName skill, double value, double growvalue)
+    //        : base(skill, value, growvalue)
+    //    {
+    //        Name = "Étude : Fletching";
+    //    }
 
-        public LivreSkillsFletching(Serial serial)
-            : base(serial)
-        {
-        }
+    //    public LivreSkillsFletching(Serial serial)
+    //        : base(serial)
+    //    {
+    //    }
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+    //    public override void Serialize(GenericWriter writer)
+    //    {
+    //        base.Serialize(writer);
 
-            writer.Write((int)0); // version
-        }
+    //        writer.Write((int)0); // version
+    //    }
 
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
+    //    public override void Deserialize(GenericReader reader)
+    //    {
+    //        base.Deserialize(reader);
 
-            int version = reader.ReadInt();
-        }
-    }
+    //        int version = reader.ReadInt();
+    //    }
+    //}
 
     [FlipableAttribute(0xFBE, 0xFBD)]
     public class LivreSkillsPeacemaking : LivreSkills
@@ -1410,41 +1410,41 @@ namespace Server.Items
         }
     }
 
-    [FlipableAttribute(0xFBE, 0xFBD)]
-    public class LivreSkillsVeterinary : LivreSkills
-    {
-        [Constructable]
-        public LivreSkillsVeterinary()
-            : this(SkillName.Veterinary, 0.0, 0.0)
-        {
-        }
+    //[FlipableAttribute(0xFBE, 0xFBD)]
+    //public class LivreSkillsVeterinary : LivreSkills
+    //{
+    //    [Constructable]
+    //    public LivreSkillsVeterinary()
+    //        : this(SkillName.Veterinary, 0.0, 0.0)
+    //    {
+    //    }
 
-        [Constructable]
-        public LivreSkillsVeterinary(SkillName skill, double value, double growvalue)
-            : base(skill, value, growvalue)
-        {
-            Name = "Étude : Veterinary";
-        }
+    //    [Constructable]
+    //    public LivreSkillsVeterinary(SkillName skill, double value, double growvalue)
+    //        : base(skill, value, growvalue)
+    //    {
+    //        Name = "Étude : Veterinary";
+    //    }
 
-        public LivreSkillsVeterinary(Serial serial)
-            : base(serial)
-        {
-        }
+    //    public LivreSkillsVeterinary(Serial serial)
+    //        : base(serial)
+    //    {
+    //    }
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+    //    public override void Serialize(GenericWriter writer)
+    //    {
+    //        base.Serialize(writer);
 
-            writer.Write((int)0); // version
-        }
+    //        writer.Write((int)0); // version
+    //    }
 
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
+    //    public override void Deserialize(GenericReader reader)
+    //    {
+    //        base.Deserialize(reader);
 
-            int version = reader.ReadInt();
-        }
-    }
+    //        int version = reader.ReadInt();
+    //    }
+    //}
 
     [FlipableAttribute(0xFBE, 0xFBD)]
     public class LivreSkillsSwords : LivreSkills

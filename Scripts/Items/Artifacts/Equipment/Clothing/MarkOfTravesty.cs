@@ -19,7 +19,7 @@ namespace Server.Items
                     SkillBonuses.SetValues(1, SkillName.Magery, 10);
                     break;
                 case 1:
-                    SkillBonuses.SetValues(0, SkillName.AnimalLore, 10);
+                    //SkillBonuses.SetValues(0, SkillName.AnimalLore, 10);
                     SkillBonuses.SetValues(1, SkillName.AnimalTaming, 10);
                     break;
                 case 2:

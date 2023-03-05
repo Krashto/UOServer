@@ -1580,8 +1580,8 @@ namespace Server.SkillHandlers
                 SkillName.EvalInt,
                 SkillName.MagicResist,
                 SkillName.AnimalTaming,
-                SkillName.AnimalLore,
-                SkillName.Veterinary,
+                //SkillName.AnimalLore,
+                //SkillName.Veterinary,
                 SkillName.Musicianship,
                 SkillName.Provocation,
                 SkillName.Discordance,
@@ -1602,8 +1602,8 @@ namespace Server.SkillHandlers
         {
             new SkillName[] { SkillName.Fencing, SkillName.Macing, SkillName.Swords, SkillName.Musicianship, SkillName.Magery },
             new SkillName[] { SkillName.Wrestling, SkillName.AnimalTaming, SkillName.SpiritSpeak, SkillName.Tactics, SkillName.Provocation },
-            new SkillName[] { SkillName.Focus, SkillName.Parry, SkillName.Hiding, SkillName.Meditation, SkillName.AnimalLore, SkillName.Discordance },
-            new SkillName[] { SkillName.Mysticism, SkillName.Bushido, SkillName.Necromancy, SkillName.Veterinary, SkillName.Stealing, SkillName.EvalInt, SkillName.Anatomy },
+            new SkillName[] { SkillName.Focus, SkillName.Parry, SkillName.Hiding, SkillName.Meditation, /*SkillName.AnimalLore,*/ SkillName.Discordance },
+            new SkillName[] { SkillName.Mysticism, SkillName.Bushido, SkillName.Necromancy, /*SkillName.Veterinary,*/ SkillName.Stealing, SkillName.EvalInt, SkillName.Anatomy },
             new SkillName[] { SkillName.Peacemaking, SkillName.Ninjitsu, SkillName.Chivalry, SkillName.Archery, SkillName.MagicResist, SkillName.Healing, SkillName.Throwing }
         };
 

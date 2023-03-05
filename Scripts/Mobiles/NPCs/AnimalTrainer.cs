@@ -22,7 +22,7 @@ namespace Server.Mobiles
         {
             SetSkill(SkillName.AnimalLore, 64.0, 100.0);
             SetSkill(SkillName.AnimalTaming, 90.0, 100.0);
-            SetSkill(SkillName.Veterinary, 65.0, 88.0);
+            SetSkill(SkillName.Healing, 65.0, 88.0);
         }
 
         public AnimalTrainer(Serial serial)
@@ -137,8 +137,8 @@ namespace Server.Mobiles
         public static int GetMaxStabled(Mobile from)
         {
             double taming = from.Skills[SkillName.AnimalTaming].Value;
-            double anlore = from.Skills[SkillName.AnimalLore].Value;
-            double vetern = from.Skills[SkillName.Veterinary].Value;
+            double anlore = from.Skills[SkillName.AnimalTaming].Value;
+            double vetern = from.Skills[SkillName.Healing].Value;
             double sklsum = taming + anlore + vetern;
 
             int max = from is PlayerMobile ? ((PlayerMobile)from).RewardStableSlots : 0;

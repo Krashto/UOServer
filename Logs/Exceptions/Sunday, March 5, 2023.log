@@ -1,0 +1,166 @@
+##############################
+Exception log started on 3/5/2023 7:27:42 PM
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:42 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+##############################
+Exception log started on 3/5/2023 7:27:49 PM
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+
+Exception Caught: 3/5/2023 7:27:49 PM
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Server.CollectionItem..ctor(Type type, Int32 itemID, TextDefinition tooltip, Int32 hue, Double points, Boolean questitem) in C:\NewUoServer2023\Scripts\Services\CommunityCollections\CollectionItem.cs:line 33
+

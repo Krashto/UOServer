@@ -26,7 +26,7 @@ namespace Server.Items
             Attributes.BonusStam = 5;
             Attributes.RegenStam = 5;
 
-            SkillBonuses.SetValues(0, SkillName.AnimalLore, 5.0);
+            SkillBonuses.SetValues(0, SkillName.AnimalTaming, 5.0);
         }
 
         public AncientFarmersKasa(Serial serial)
@@ -58,7 +58,7 @@ namespace Server.Items
             }
 
             if (version == 0)
-                SkillBonuses.SetValues(0, SkillName.AnimalLore, 5.0);
+                SkillBonuses.SetValues(0, SkillName.AnimalTaming, 5.0);
         }
     }
 

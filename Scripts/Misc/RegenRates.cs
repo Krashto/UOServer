@@ -102,7 +102,6 @@ namespace Server.Misc
             double rate;
             double armorPenalty = GetArmorOffset(from);
 
-
             double med = from.Skills[SkillName.Meditation].Value;
             double focus = from.Skills[SkillName.Focus].Value;
 
@@ -149,10 +148,8 @@ namespace Server.Misc
             if (from is BaseCreature)
                 points += ((BaseCreature)from).DefaultHitsRegen;
 
-     //       if (from is PlayerMobile && from.Race == Race.Human)	//Is this affected by the cap?
-       //         points += 2;
 
-            if (points < 0)
+			if (points < 0)
                 points = 0;
 
             if (from is PlayerMobile)	//does racial bonus go before/after?
@@ -161,7 +158,11 @@ namespace Server.Misc
             if (CheckAnimal(from, typeof(Dog)) || CheckAnimal(from, typeof(Cat)))
                 points += from.Skills[SkillName.Magery].Fixed / 30;
 
-            points += BarrabHemolymphConcentrate.HPRegenBonus(from);
+			CheckBonusSkill(from, from.Hits, from.HitsMax, SkillName.Cooking);
+
+			points += from.Skills[SkillName.Cooking].Value / 30;
+
+			points += BarrabHemolymphConcentrate.HPRegenBonus(from);
 
             foreach (RegenBonusHandler handler in HitsBonusHandlers)
                 points += handler(from);

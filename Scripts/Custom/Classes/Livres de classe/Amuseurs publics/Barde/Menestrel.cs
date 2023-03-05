@@ -33,7 +33,6 @@ namespace Server
                 new CSkills(SkillName.Meditation, 50),
                 new CSkills(SkillName.Provocation, 40),
                 new CSkills(SkillName.AnimalTaming, 30),
-                new CSkills(SkillName.AnimalLore, 30),
                 new CSkills(SkillName.Discordance, 20),
                 new CSkills(SkillName.Tactics, 20)
             };

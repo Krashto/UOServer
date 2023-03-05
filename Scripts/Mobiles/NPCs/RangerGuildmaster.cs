@@ -6,7 +6,7 @@ namespace Server.Mobiles
         public RangerGuildmaster()
             : base("ranger")
         {
-            SetSkill(SkillName.AnimalLore, 64.0, 100.0);
+            SetSkill(SkillName.AnimalTaming, 64.0, 100.0);
             SetSkill(SkillName.Camping, 75.0, 98.0);
             SetSkill(SkillName.Hiding, 75.0, 98.0);
             SetSkill(SkillName.MagicResist, 75.0, 98.0);

@@ -1646,7 +1646,6 @@ namespace Server.Mobiles
 				Hidden = true;
 				return false;
 			}
-
 		}
 
 		public override void OnDeath(Container c)
@@ -1907,182 +1906,9 @@ namespace Server.Mobiles
 			return false;
 		}
 
-		#region Religion
-
-		private Cilias m_Cilias;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public Cilias Cilias
-		{
-			get { return m_Cilias; }
-			set { m_Cilias = value; }
-		}
-
-		private DateTime m_NextCiliasChange;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public DateTime NextCiliasChange
-		{
-			get { return m_NextCiliasChange; }
-			set { m_NextCiliasChange = value; }
-		}
-
-		private Point3D m_LastPrayerLocation;
-
-		public Point3D LastPrayerLocation
-		{
-			get { return m_LastPrayerLocation; }
-			set { m_LastPrayerLocation = value; }
-		}
-
-		private Timer m_TimerPraying;
-
-		public Timer TimerPraying
-		{
-			get { return m_TimerPraying; }
-			set { m_TimerPraying = value; }
-		}
-
-		private DateTime m_NextPrayingTime;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public DateTime NextPrayingTime
-		{
-			get { return m_NextPrayingTime; }
-			set { m_NextPrayingTime = value; }
-		}
-
-		private int m_PouvoirDivinProcure;
-		private Timer m_TimerPdp;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int PouvoirDivinProcure
-		{
-			get { return m_PouvoirDivinProcure; }
-			set
-			{
-				m_PouvoirDivinProcure = value;
-
-				int pdpMax = PdpMax;
-
-				if (m_PouvoirDivinProcure > pdpMax)
-					m_PouvoirDivinProcure = pdpMax;
-
-				if (m_PouvoirDivinProcure < 0)
-					m_PouvoirDivinProcure = 0;
-
-				if (m_PouvoirDivinProcure < pdpMax)
-				{
-					if (m_TimerPdp == null)
-						m_TimerPdp = new PdpTimer(this);
-
-					m_TimerPdp.Start();
-				}
-			}
-		}
-
-		public class PrayingTimer : Timer
-		{
-			private CustomPlayerMobile m_Owner;
-			private int m_Pdp;
-
-			public PrayingTimer(CustomPlayerMobile m, TimeSpan duration, int pdp) : base(duration)
-			{
-				m_Owner = m;
-				m_Pdp = pdp;
-			}
-
-			protected override void OnTick()
-			{
-				m_Owner.AddPdp(m_Pdp);
-				m_Owner.AddRelation(m_Pdp);
-
-				m_Owner.SendMessage("Vous terminez votre prière.");
-			}
-		}
-
-		private int m_Relation;
-
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int Relation
-		{
-			get { return m_Relation; }
-			set { m_Relation = value; }
-		}
-
-		public virtual void AddRelation(int pdp)
-		{
-			int amount = Utility.RandomMinMax(15, 25) * (1 + (pdp / 1000));
-
-			int disponible = 1000 - m_Relation;
-
-			if (disponible < amount)
-				amount = disponible;
-
-			m_Relation += amount;
-		}
-
-		public virtual void AddPdp(int amount)
-		{
-			int disponible = PdpMax - m_PouvoirDivinProcure;
-
-			if (disponible < amount)
-				amount = disponible;
-
-			m_PouvoirDivinProcure += amount;
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int PdpMax { get { return 4000; } }
-
-		public class PdpTimer : Timer
-		{
-			private CustomPlayerMobile m_Owner;
-
-			public PdpTimer(CustomPlayerMobile m) : base(m.GetPdpRegenRate(), m.GetPdpRegenRate())
-			{
-				m_Owner = m;
-			}
-
-			protected override void OnTick()
-			{
-				m_Owner.PouvoirDivinProcure++;
-
-				Delay = Interval = m_Owner.GetPdpRegenRate();
-			}
-		}
-
-		public virtual TimeSpan GetPdpRegenRate()
-		{
-			double spiritSpeak = Skills[SkillName.SpiritSpeak].Value;
-
-			double duration = (5 - ((spiritSpeak / 50) - 0.5));
-
-			if (duration < 0.50)
-				duration = 0.50;
-
-			if (duration > 3.0)
-				duration = 3.0;
-
-			return TimeSpan.FromSeconds(duration);
-		}
-
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public bool IsPraying
-		{
-			get
-			{
-				return m_NextPrayingTime > DateTime.Now;
-			}
-		}
-		#endregion
-
 		#region Leveling System
 		private int m_Niveau;
 		private int m_PADispo;
-		private int m_PCDispo;
 		private int m_PE;
 
 		private int m_PUDispo;
@@ -2172,11 +1998,6 @@ namespace Server.Mobiles
 		public virtual int GetBaseAptitudeValue(NAptitude aptitude)
 		{
 			return Classes.GetAptitudeValue(m_Classe, aptitude);
-		}
-
-		public int GetAptitudeValue(Aptitude aptitude)
-		{
-			return 0;
 		}
 
 		public virtual int GetAptitudeValue(NAptitude aptitude)

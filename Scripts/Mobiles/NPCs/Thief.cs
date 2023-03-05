@@ -14,7 +14,7 @@ namespace Server.Mobiles
             SetSkill(SkillName.Hiding, 45.0, 68.0);
             SetSkill(SkillName.Archery, 65.0, 88.0);
             SetSkill(SkillName.Tracking, 65.0, 88.0);
-            SetSkill(SkillName.Veterinary, 60.0, 83.0);
+            SetSkill(SkillName.Healing, 60.0, 83.0);
             SetSkill(SkillName.RemoveTrap, 75.0, 98.0);
         }
 

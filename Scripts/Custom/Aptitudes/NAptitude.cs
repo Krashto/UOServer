@@ -20,7 +20,6 @@
 		Medecine,
 		Defense,
 		Destruction,
-		MagieAncestrale,
 
 		Musique,
 

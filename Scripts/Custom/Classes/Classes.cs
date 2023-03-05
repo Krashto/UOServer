@@ -301,14 +301,6 @@ namespace Server.Custom.Classes
                 case Classe.Druide: info = DruideClasse.ClasseInfo; break;
                 case Classe.ArchiDruide: info = ArchiDruideClasse.ClasseInfo; break;
 
-                case Classe.Repurgateur: info = RepurgateurClasse.ClasseInfo; break;
-                case Classe.Templier: info = TemplierClasse.ClasseInfo; break;
-                case Classe.Paladin: info = PaladinClasse.ClasseInfo; break;
-
-                case Classe.Fervent: info = FerventClasse.ClasseInfo; break;
-                case Classe.MaitreDeCeremonie: info = MaitreDeCeremonieClasse.ClasseInfo; break;
-                case Classe.IntermediaireDivin: info = IntermediaireDivinClasse.ClasseInfo; break;
-
                 default: info = AucuneClasse.ClasseInfo; break;
             }
 

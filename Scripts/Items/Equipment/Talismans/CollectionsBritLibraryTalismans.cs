@@ -195,7 +195,7 @@ namespace Server.Items
             Blessed = GetRandomBlessed();
             Slayer = TalismanSlayerName.Bird;
             SkillBonuses.SetValues(0, SkillName.AnimalTaming, 5.0);
-            SkillBonuses.SetValues(1, SkillName.AnimalLore, 5.0);
+            //SkillBonuses.SetValues(1, SkillName.AnimalLore, 5.0);
             MaxChargeTime = 1800;
         }
 

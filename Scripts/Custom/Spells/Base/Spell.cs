@@ -6,7 +6,6 @@ using Server.Mobiles;
 using Server.Custom.Classes;
 using Server.Custom;
 using Server.Spells.OldSpells;
-using Server.Custom.Spells.Divins.Pretre;
 using Server.Custom.Aptitudes;
 
 namespace Server.Spells
@@ -106,12 +105,6 @@ namespace Server.Spells
 			int intBonus = Caster.Int / 2;
 			damageBonus += intBonus;
 
-            if (SoifDuCombatSpell.m_SoifDuCombatTable.Contains(Caster))
-            {
-                damageBonus += (int)(((double)SoifDuCombatSpell.m_SoifDuCombatTable[Caster] - 1) * 100);
-                Caster.FixedParticles(14170, 10, 15, 5013, 44, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-            }
-
             int evalSkill = GetDamageFixed( m_Caster );
             damageBonus += ((9 * evalSkill) / 100);
 
@@ -150,7 +143,7 @@ namespace Server.Spells
             {
                 CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
                 double chance = m_Caster.Skills[SkillName.Magery].Value / 333;
-                chance += m_Caster.Skills[SkillName.Wrestling].Value / 333;
+                chance += m_Caster.Skills[SkillName.EvalInt].Value / 333;
 
                 //Protection Spell
                 object o = ProtectSpell.Registry[m_Caster];
@@ -563,10 +556,6 @@ namespace Server.Spells
 			{
 				m_Caster.SendLocalizedMessage( 502644 ); // You must wait for that spell to have an effect.
             }
-            //else if (this is ReligiousSpell && pm != null && pm.PouvoirDivinProcure < GetPdP())
-            //{
-            //    m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "Vous n'avez pas assez de pouvoir divin procuré.");
-            //}
 			else if ( m_Caster.Mana >= ScaleMana( GetMana() ) )
 			{
 				if (m_Caster.Spell == null && m_Caster.CheckSpellCast( this ) && CheckCast() && m_Caster.Region.OnBeginSpellCast( m_Caster, this ) )
@@ -623,31 +612,17 @@ namespace Server.Spells
 
         public bool CheckHands()
         {
-            bool clear = ClearHandsOnCast;
+			return false;
 
-            if (Caster is CustomPlayerMobile && this is ReligiousSpell)
-            {
-                Classe classe = ((CustomPlayerMobile)Caster).Classe;
+            //bool clear = ClearHandsOnCast;
 
-                //Les paladins n'ont pas à se déprendre de leur arme durant un combat.
-                if ( classe == Classe.Templier || classe == Classe.Repurgateur || classe == Classe.Paladin)
-                    clear = false;
-            }
-
-            return clear;
+            //return clear;
         }
 
 		public abstract void OnCast();
 
 		public virtual void OnBeginCast()
 		{
-            if (m_Caster is CustomPlayerMobile)
-            {
-                CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
-
-                //if (pm.IsPraying)
-                //    pm.BreakPraying();
-            }
 		}
 
         public virtual void OnEndCast()
@@ -667,11 +642,6 @@ namespace Server.Spells
 
 			min = avg - ChanceOffset;
             max = avg + ChanceOffset;
-
-            if (m_Caster is CustomPlayerMobile)
-            {
-                CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
-            }
 		}
 
 		public virtual bool CheckFizzle()
@@ -680,20 +650,20 @@ namespace Server.Spells
 
 			GetCastSkills( out minSkill, out maxSkill );
 
-            if (m_Caster is CustomPlayerMobile && m_Caster.Mounted)
-            {
-                CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
+			//if (m_Caster is CustomPlayerMobile && m_Caster.Mounted)
+   //         {
+   //             CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
 
-                if (pm.Classe != Classe.Repurgateur && pm.Classe != Classe.Templier && pm.Classe != Classe.Paladin && pm.AccessLevel == AccessLevel.Player)
-                {
-					int equitation = (int)pm.Skills[SkillName.Equitation].Value / 10;
+   //             if (pm.Classe != Classe.Repurgateur && pm.Classe != Classe.Templier && pm.Classe != Classe.Paladin && pm.AccessLevel == AccessLevel.Player)
+   //             {
+			//		int equitation = (int)pm.Skills[SkillName.Equitation].Value / 10;
 
-                    double chance = 100 - (equitation * 6);
+   //                 double chance = 100 - (equitation * 6);
 
-                    if (Utility.Random(0, 100) <= chance)
-                        return false;
-                }
-            }
+   //                 if (Utility.Random(0, 100) <= chance)
+   //                     return false;
+   //             }
+   //         }
 
             Caster.CheckSkill(CastSkill, 0, 120);
 
@@ -705,24 +675,6 @@ namespace Server.Spells
 		public virtual int GetMana()
 		{
 			return m_ManaTable[(int)Circle];
-        }
-
-        public static int[] m_PdPTable = new int[] { 10, 30, 60, 90, 125, 160, 185, 220 };
-
-        public virtual int GetPdP()
-        {
-            if (!(this is ReligiousSpell))
-                return 0;
-
-            try
-            {
-                return m_PdPTable[(int)Circle];
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-                return 10;
-            }
         }
 
         public virtual int GetAptitudeValue()
@@ -768,23 +720,6 @@ namespace Server.Spells
 			return (int)(mana * scalar);
 		}
 
-        public virtual int ScalePdp(int pdp)
-        {
-            double scalar = 1.0;
-
-            if (Caster is CustomPlayerMobile)
-            {
-                CustomPlayerMobile m = (CustomPlayerMobile)Caster;
-
-                pdp = (int)SpellHelper.AdjustValue(m, pdp, NAptitude.MagieAncestrale);
-            }
-
-            if (scalar < 1.0)
-                scalar = 1.0;
-
-            return (int)(pdp * scalar);
-        }
-
 		public virtual long GetDisturbRecovery()
 		{
 			double delay = 1.0 - Math.Sqrt( (DateTime.Now - m_StartCastTime).TotalSeconds / GetCastDelay().TotalSeconds );
@@ -825,12 +760,6 @@ namespace Server.Spells
 
 			double bonus = 0; 
 
-            if (SoifDuCombatSpell.m_SoifDuCombatTable.Contains(Caster))
-            {
-                bonus -= ((double)SoifDuCombatSpell.m_SoifDuCombatTable[Caster] - 1);
-                Caster.FixedParticles(14170, 10, 15, 5013, 44, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-            }
-
             value *= bonus;
 
             if (value < CastDelayMinimum)
@@ -864,17 +793,10 @@ namespace Server.Spells
         public virtual bool CheckSequence()
 		{
             int mana = ScaleMana(GetMana());
-            int pdpRequis = ScalePdp(GetPdP());
             int aptitudeValueRequis = GetAptitudeValue();
             NAptitude[] aptitudeRequise = GetAptitude();
 
             CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
-            
-            //if (pm != null)
-            //{
-            //    pm.CheckPraying();
-            //    pm.CheckEtude();
-            //}
 
 			if ( m_Caster.Deleted || !m_Caster.Alive || m_Caster.Spell != this || m_State != SpellState.Sequencing )
             {
@@ -892,10 +814,6 @@ namespace Server.Spells
 			{
 				m_Caster.LocalOverheadMessage( MessageType.Regular, 0x22, 502625 ); // Insufficient mana for this spell.
             }
-            //else if (this is ReligiousSpell && pm != null && pm.PouvoirDivinProcure < pdpRequis)
-            //{
-            //    m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "Vous n'avez pas assez de pouvoir divin procuré.");
-            //}
             else if (pm != null && !VerifyConn(pm, aptitudeRequise, aptitudeValueRequis))
             {
                 m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "La connaissance nécessaire pour ce sort n'est pas assez développée.");
@@ -907,9 +825,6 @@ namespace Server.Spells
 			else if ( CheckFizzle() )
 			{
                 m_Caster.Mana -= mana;
-
-                //if (pm != null)
-                //    pm.PouvoirDivinProcure -= pdpRequis;
 
 				if ( m_Scroll is SpellScroll )
 					m_Scroll.Consume();

@@ -38,7 +38,7 @@ namespace Server.Spells
             value /= 1.5;
 
             if (m is BaseCreature)
-                value += Caster.Skills[SkillName.Veterinary].Value * 0.4;
+                value += Caster.Skills[SkillName.Healing].Value * 0.4;
 
             if (m is CustomPlayerMobile)
                 value += Caster.Skills[SkillName.Healing].Value * 0.4;

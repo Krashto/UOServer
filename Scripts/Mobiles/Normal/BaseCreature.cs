@@ -1817,7 +1817,7 @@ namespace Server.Mobiles
             }
 
             int taming = (int)((useBaseSkill ? m.Skills[SkillName.AnimalTaming].Base : m.Skills[SkillName.AnimalTaming].Value) * 10);
-            int lore = (int)((useBaseSkill ? m.Skills[SkillName.AnimalLore].Base : m.Skills[SkillName.AnimalLore].Value) * 10);
+            int lore = (int)((useBaseSkill ? m.Skills[SkillName.AnimalTaming].Base : m.Skills[SkillName.AnimalTaming].Value) * 10);
             int bonus = 0, chance = 700;
 
             int SkillBonus = taming - (int)(dMinTameSkill * 10);
@@ -2284,7 +2284,6 @@ namespace Server.Mobiles
             int meat = Meat;
             int hides = Hides;
 			int bones = Bones;
-         //   int scales = Scales;
             int dragonblood = DragonBlood;
             int fur = Fur;
 
@@ -2303,17 +2302,13 @@ namespace Server.Mobiles
             }
             else
             {
-               
+				var cookingBonus = from.Skills[SkillName.Cooking].Value / 30.0;
 
-                if (corpse.Map == Map.Felucca && !Siege.SiegeShard)
-                {
-                    feathers *= 1;
-                    wool *= 1;
-                    hides *= 1;
-                    fur *= 1;
-                    meat *= 1;
-                    bones *= 1;
-                }
+				feathers = (int)Math.Ceiling(feathers * cookingBonus);
+				wool = (int)Math.Ceiling(wool * cookingBonus);
+				hides = (int)Math.Ceiling(hides * cookingBonus);
+				meat = (int)Math.Ceiling(meat * cookingBonus);
+				bones = (int)Math.Ceiling(bones * cookingBonus);
 
                 if (special)
                 {
@@ -2443,8 +2438,6 @@ namespace Server.Mobiles
                     }
 				}
 
-
-
 				if (bones != 0)
 				{
 					Item bone = null;
@@ -2482,107 +2475,6 @@ namespace Server.Mobiles
 					}
 						corpse.AddCarvedItem(bone, from);				
 				}
-
-
-
-
-
-
-
-
-
-		/*		if (scales != 0)
-                {
-                    ScaleType sc = ScaleType;
-                    List<Item> list = new List<Item>();
-
-                    switch (sc)
-                    {
-                        default:
-                        case ScaleType.Red: list.Add(new RedScales(scales)); break;
-                        case ScaleType.Yellow: list.Add(new YellowScales(scales)); break;
-                        case ScaleType.Black: list.Add(new BlackScales(scales)); break;
-                        case ScaleType.Green: list.Add(new GreenScales(scales)); break;
-                        case ScaleType.White: list.Add(new WhiteScales(scales)); break;
-                        case ScaleType.Blue: list.Add(new BlueScales(scales)); break;
-                        case ScaleType.All:
-                            {
-                                list.Add(new RedScales(scales));
-                                list.Add(new YellowScales(scales));
-                                list.Add(new BlackScales(scales));
-                                list.Add(new GreenScales(scales));
-                                list.Add(new WhiteScales(scales));
-                                list.Add(new BlueScales(scales));
-                                break;
-                            }
-                    }
-
-                    if (special)
-                    {
-                        bool allPack = true;
-                        bool anyPack = false;
-
-                        foreach (Item s in list)
-                        {
-                            //corpse.AddCarvedItem(s, from);
-                            if (!from.PlaceInBackpack(s))
-                            {
-                                corpse.AddCarvedItem(s, from);
-                                allPack = false;
-                            }
-                            else if (!anyPack)
-                            {
-                                anyPack = true;
-                            }
-                        }
-
-                        if (anyPack)
-                            from.SendLocalizedMessage(1114098); // You cut away some scales and put them in your backpack.
-
-                        if (!allPack)
-                            from.SendLocalizedMessage(1079284); // You cut away some scales, but they remain on the corpse.
-                    }
-                    else
-                    {
-                        foreach (Item s in list)
-                        {
-                            corpse.AddCarvedItem(s, from);
-                        }
-
-                        from.SendLocalizedMessage(1079284); // You cut away some scales, but they remain on the corpse.
-                    }
-
-                    ColUtility.Free(list);
-                }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-				*/
-
-
-
 
                 if (dragonblood != 0)
                 {

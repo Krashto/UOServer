@@ -1,6 +1,5 @@
 using System;
 using Server;
-using Server.Custom.Spells.Divins.Pretre;
 using Server.Spells.OldSpells;
 
 namespace Server.Spells
@@ -239,108 +238,108 @@ namespace Server.Spells
             Register(710, typeof(StrangulaireSpell));
             Register(711, typeof(ReanimationSpell));
             Register(712, typeof(AppelDeLaLicheSpell));
-            //Register(713, typeof(InsurectionSpell));
+			//Register(713, typeof(InsurectionSpell));
 
-            //Register(1000, typeof(VisionDivineSpell));
-            Register(1001, typeof(PoingDeValeurSpell));
-            //Register(1002, typeof(EssouflementSpell));
-            //Register(1003, typeof(LumiereDivineSpell));
-            //Register(1004, typeof(GriffesSpell));
-            //Register(1005, typeof(ImbroglioSpell));
+			//Register(1000, typeof(VisionDivineSpell));
+			//Register(1001, typeof(PoingDeValeurSpell));
+			//Register(1002, typeof(EssouflementSpell));
+			//Register(1003, typeof(LumiereDivineSpell));
+			//Register(1004, typeof(GriffesSpell));
+			//Register(1005, typeof(ImbroglioSpell));
 
-            //Register(1006, typeof(RetablissementSpell));
-            //Register(1007, typeof(RegenerationSpell));
-            //Register(1008, typeof(BouclierSpell));
-            //Register(1009, typeof(AmuletteSpell));
-            //Register(1010, typeof(RefecteurSpell));
-            //Register(1011, typeof(MiracleSpell));
+			//Register(1006, typeof(RetablissementSpell));
+			//Register(1007, typeof(RegenerationSpell));
+			//Register(1008, typeof(BouclierSpell));
+			//Register(1009, typeof(AmuletteSpell));
+			//Register(1010, typeof(RefecteurSpell));
+			//Register(1011, typeof(MiracleSpell));
 
-            //Register(1012, typeof(RepartitionSpell));
-            //Register(1013, typeof(RenouvellementSpell));
-            Register(1014, typeof(PurificationSpell));
-            //Register(1015, typeof(PromptitudeSpell));
-            Register(1016, typeof(PassionSpell));
-            //Register(1017, typeof(RegenerescenceSpell));
+			//Register(1012, typeof(RepartitionSpell));
+			//Register(1013, typeof(RenouvellementSpell));
+			//Register(1014, typeof(PurificationSpell));
+			//Register(1015, typeof(PromptitudeSpell));
+			//Register(1016, typeof(PassionSpell));
+			//Register(1017, typeof(RegenerescenceSpell));
 
-            Register(1018, typeof(HautePrecisionSpell));
-            Register(1019, typeof(AgglomerationSpell));
-            //Register(1020, typeof(RudesseSpell));
-            Register(1021, typeof(ConsecrationSpell));
-            //Register(1022, typeof(ConfessionSpell));
-            //Register(1023, typeof(ForceDeLaFoiSpell));
+			//Register(1018, typeof(HautePrecisionSpell));
+			//Register(1019, typeof(AgglomerationSpell));
+			//Register(1020, typeof(RudesseSpell));
+			//Register(1021, typeof(ConsecrationSpell));
+			//Register(1022, typeof(ConfessionSpell));
+			//Register(1023, typeof(ForceDeLaFoiSpell));
 
-            //Register(1024, typeof(FamineSpell));
-            Register(1025, typeof(ErranceSpell));
-            //Register(1026, typeof(BetesSpell));
-            //Register(1027, typeof(HypnoseSpell));
-            //Register(1028, typeof(FetichismeSpell));
-            Register(1029, typeof(VoodooSpell));
+			//Register(1024, typeof(FamineSpell));
+			//Register(1025, typeof(ErranceSpell));
+			//Register(1026, typeof(BetesSpell));
+			//Register(1027, typeof(HypnoseSpell));
+			//Register(1028, typeof(FetichismeSpell));
+			//Register(1029, typeof(VoodooSpell));
 
-            Register(1030, typeof(PiedAncreSpell));
-            Register(1031, typeof(RobustesseSpell));
-            Register(1032, typeof(SouplesseSpell));
-            Register(1033, typeof(CorpsPurSpell));
-            //Register(1034, typeof(EternelleJeunesseSpell));
-            //Register(1035, typeof(ProuesseSpell));
+			//Register(1030, typeof(PiedAncreSpell));
+			//Register(1031, typeof(RobustesseSpell));
+			//Register(1032, typeof(SouplesseSpell));
+			//Register(1033, typeof(CorpsPurSpell));
+			//Register(1034, typeof(EternelleJeunesseSpell));
+			//Register(1035, typeof(ProuesseSpell));
 
-            //Register(1036, typeof(ConscienceSpell));
-            //Register(1037, typeof(AppelDeLaNatureSpell));
-            //Register(1038, typeof(AnimauxSpell));
-            //Register(1039, typeof(InstinctCharnelSpell));
-            //Register(1040, typeof(TransfertSpell));
-            //Register(1041, typeof(DominationSpell));
+			//Register(1036, typeof(ConscienceSpell));
+			//Register(1037, typeof(AppelDeLaNatureSpell));
+			//Register(1038, typeof(AnimauxSpell));
+			//Register(1039, typeof(InstinctCharnelSpell));
+			//Register(1040, typeof(TransfertSpell));
+			//Register(1041, typeof(DominationSpell));
 
-            //Register(1042, typeof(PlumeSpell));
-            //Register(1043, typeof(IntrinsequeSpell));
-            Register(1044, typeof(VoileSpell));
-            //Register(1045, typeof(EchoSpell));
-            //Register(1046, typeof(StupefactionSpell));
-            //Register(1047, typeof(DecheanceSpell));
+			//Register(1042, typeof(PlumeSpell));
+			//Register(1043, typeof(IntrinsequeSpell));
+			//Register(1044, typeof(VoileSpell));
+			//Register(1045, typeof(EchoSpell));
+			//Register(1046, typeof(StupefactionSpell));
+			//Register(1047, typeof(DecheanceSpell));
 
-            Register(1048, typeof(AuraDeFatigueSpell));
-            Register(1049, typeof(MortificationSpell));
-            //Register(1050, typeof(ExecrationSpell));
-            //Register(1051, typeof(HalenePutrideSpell));
-            //Register(1052, typeof(HorreurSpell));
-            Register(1053, typeof(PourrissementSpell));
+			//Register(1048, typeof(AuraDeFatigueSpell));
+			//Register(1049, typeof(MortificationSpell));
+			//Register(1050, typeof(ExecrationSpell));
+			//Register(1051, typeof(HalenePutrideSpell));
+			//Register(1052, typeof(HorreurSpell));
+			//Register(1053, typeof(PourrissementSpell));
 
-            //Register(1054, typeof(CourageSpell));
-            //Register(1055, typeof(SagesseSpell));
-            Register(1056, typeof(BerseckSpell));
-            //Register(1057, typeof(TranscendanceSpell));
-            Register(1058, typeof(SpiritualiteSpell));
-            Register(1059, typeof(SoifDuCombatSpell));
+			//Register(1054, typeof(CourageSpell));
+			//Register(1055, typeof(SagesseSpell));
+			//Register(1056, typeof(BerseckSpell));
+			//Register(1057, typeof(TranscendanceSpell));
+			//Register(1058, typeof(SpiritualiteSpell));
+			//Register(1059, typeof(SoifDuCombatSpell));
 
-            //Register(1060, typeof(SauvegardeSpell));
-            //Register(1061, typeof(ExaltationSpell));
-            Register(1062, typeof(LabyrintheSpell));
-            Register(1063, typeof(VisionReelleSpell));
-            Register(1064, typeof(AppuiSpell));
-            //Register(1065, typeof(PatronageSpell));
+			//Register(1060, typeof(SauvegardeSpell));
+			//Register(1061, typeof(ExaltationSpell));
+			//Register(1062, typeof(LabyrintheSpell));
+			//Register(1063, typeof(VisionReelleSpell));
+			//Register(1064, typeof(AppuiSpell));
+			//Register(1065, typeof(PatronageSpell));
 
-            Register(1066, typeof(TalismanSpell));
-            Register(1067, typeof(BarilDeBiereSpell));
-            //Register(1068, typeof(PointDeParesseSpell));
-            Register(1069, typeof(SoutienSpell));
-            Register(1070, typeof(DonDesRochersSpell));
-            //Register(1071, typeof(CouvertureSpell));
+			//Register(1066, typeof(TalismanSpell));
+			//Register(1067, typeof(BarilDeBiereSpell));
+			//Register(1068, typeof(PointDeParesseSpell));
+			//Register(1069, typeof(SoutienSpell));
+			//Register(1070, typeof(DonDesRochersSpell));
+			//Register(1071, typeof(CouvertureSpell));
 
-            //Register(1600, typeof(MelodieSpell));
-            //Register(1601, typeof(ChantSpell));
-            //Register(1602, typeof(MurmureSpell));
-            //Register(1603, typeof(ConteSpell));
-            //Register(1604, typeof(SonnetteSpell));
-            //Register(1605, typeof(HymneSpell));
-            //Register(1606, typeof(CompositionSpell));
+			//Register(1600, typeof(MelodieSpell));
+			//Register(1601, typeof(ChantSpell));
+			//Register(1602, typeof(MurmureSpell));
+			//Register(1603, typeof(ConteSpell));
+			//Register(1604, typeof(SonnetteSpell));
+			//Register(1605, typeof(HymneSpell));
+			//Register(1606, typeof(CompositionSpell));
 
-            //Register(1607, typeof(MarcheSpell));
-            //Register(1608, typeof(HarmonieSpell));
-            //Register(1609, typeof(CriDeGuerreSpell));
-            //Register(1610, typeof(FanfareSpell));
-            //Register(1611, typeof(SymphonieSpell));
-            //Register(1612, typeof(OrchestreSpell));
-            //Register(1613, typeof(BruitSpell));
-        }
+			//Register(1607, typeof(MarcheSpell));
+			//Register(1608, typeof(HarmonieSpell));
+			//Register(1609, typeof(CriDeGuerreSpell));
+			//Register(1610, typeof(FanfareSpell));
+			//Register(1611, typeof(SymphonieSpell));
+			//Register(1612, typeof(OrchestreSpell));
+			//Register(1613, typeof(BruitSpell));
+		}
 
 		public static void Register( int spellID, Type type )
 		{

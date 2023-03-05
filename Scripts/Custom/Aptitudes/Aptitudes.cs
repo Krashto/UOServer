@@ -118,13 +118,6 @@ namespace Server.Custom.Aptitudes
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int MagieAncestrale
-        {
-            get { return this[NAptitude.MagieAncestrale]; }
-            set { this[NAptitude.MagieAncestrale] = value; }
-        }
-
-        [CommandProperty(AccessLevel.GameMaster)]
         public int Musique
         {
             get { return this[NAptitude.Musique]; }
@@ -188,7 +181,6 @@ namespace Server.Custom.Aptitudes
 				new AptitudesEntry( NAptitude.Defense,                  "Défense",                  10, SkillName.Magery),
 				new AptitudesEntry( NAptitude.Destruction,              "Destruction",              10, SkillName.Magery),
 
-                new AptitudesEntry( NAptitude.MagieAncestrale,          "Magie Ancestrale",         10, SkillName.SpiritSpeak),
                 new AptitudesEntry( NAptitude.Musique,                  "Musique",                  10, SkillName.Musicianship),
 				new AptitudesEntry( NAptitude.Familier,                 "Familier",                 10, SkillName.AnimalTaming),
 				new AptitudesEntry( NAptitude.Piegeage,                 "Piègeage",                 10, SkillName.RemoveTrap),

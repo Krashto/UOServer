@@ -29,7 +29,6 @@ namespace Server
                 new CSkills(SkillName.Alchemy, 100),
                 new CSkills(SkillName.Anatomy, 80),
                 new CSkills(SkillName.ItemID, 60),
-                new CSkills(SkillName.AnimalLore, 60),
                 new CSkills(SkillName.ArmsLore, 60),
                 new CSkills(SkillName.EvalInt, 50),
                 new CSkills(SkillName.Healing, 40),

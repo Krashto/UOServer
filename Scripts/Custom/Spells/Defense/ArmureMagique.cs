@@ -33,7 +33,7 @@ namespace Server.Spells
             double value = 60 + Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.EvalInt].Value;
 
             if (m is BaseCreature)
-                value += Caster.Skills[SkillName.Veterinary].Value * 0.4;
+                value += Caster.Skills[SkillName.Healing].Value * 0.4;
 
             if (m is CustomPlayerMobile)
                 value += Caster.Skills[SkillName.Healing].Value * 0.4;

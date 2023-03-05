@@ -384,8 +384,8 @@ namespace Server.Mobiles
 
         private static readonly SkillName[] m_KeywordTable =
         {
-            SkillName.Parry, SkillName.Healing, SkillName.Hiding, SkillName.Stealing, SkillName.Alchemy, SkillName.AnimalLore,
-            SkillName.ItemID, SkillName.ArmsLore, SkillName.Begging, SkillName.Blacksmith, SkillName.Fletching,
+            SkillName.Parry, SkillName.Healing, SkillName.Hiding, SkillName.Stealing, SkillName.Alchemy, /*SkillName.AnimalLore,*/
+            SkillName.ItemID, SkillName.ArmsLore, SkillName.Begging, SkillName.Blacksmith, /*SkillName.Fletching,*/
             SkillName.Peacemaking, SkillName.Camping, SkillName.Carpentry, SkillName.Cartography, SkillName.Cooking,
             SkillName.DetectHidden, SkillName.Discordance, //??
 			SkillName.EvalInt, SkillName.Fishing, SkillName.Provocation, SkillName.Lockpicking, SkillName.Magery,

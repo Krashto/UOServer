@@ -256,6 +256,8 @@ namespace Server.Misc
             if (from is BaseCreature && ((BaseCreature)from).Controlled)
                 gc += gc * 1.00;
 
+			gc /= 1.25;
+
             if (gc > 1.00)
                 gc = 1.00;
 
@@ -309,17 +311,15 @@ namespace Server.Misc
 
         private static bool AllowGain(Mobile from, Skill skill, object obj)
         {
-			/*     if (Engines.VvV.ViceVsVirtueSystem.InSkillLoss(from)) //Changed some time between the introduction of AoS and SE.
-					 return false;
+			if (Engines.VvV.ViceVsVirtueSystem.InSkillLoss(from)) //Changed some time between the introduction of AoS and SE.
+				return false;
 
-				 if (from is PlayerMobile)
-				 {
-					 if (_AntiMacroCode && UseAntiMacro[skill.Info.SkillID])
-						 return ((PlayerMobile)from).AntiMacroCheck(skill, obj);
-				 }
-				 return true;*/
-
-			return false;
+			if (from is PlayerMobile)
+			{
+				if (_AntiMacroCode && UseAntiMacro[skill.Info.SkillID])
+					return ((PlayerMobile)from).AntiMacroCheck(skill, obj);
+			}
+			return true;
         }
 
         public enum Stat
@@ -349,25 +349,25 @@ namespace Server.Misc
             {
                 Skills skills = from.Skills;
 
-                if (from is PlayerMobile && Siege.SiegeShard)
-                {
-                    int minsPerGain = Siege.MinutesPerGain(from, skill);
+                //if (from is PlayerMobile && Siege.SiegeShard)
+                //{
+                //    int minsPerGain = Siege.MinutesPerGain(from, skill);
 
-                    if (minsPerGain > 0)
-                    {
-                        if (Siege.CheckSkillGain((PlayerMobile)from, minsPerGain, skill))
-                        {
-                            CheckReduceSkill(skills, toGain, skill);
+                //    if (minsPerGain > 0)
+                //    {
+                //        if (Siege.CheckSkillGain((PlayerMobile)from, minsPerGain, skill))
+                //        {
+                //            CheckReduceSkill(skills, toGain, skill);
 
-                            if (skills.Total + toGain <= skills.Cap)
-                            {
-                                skill.BaseFixedPoint += toGain;
-                            }
-                        }
+                //            if (skills.Total + toGain <= skills.Cap)
+                //            {
+                //                skill.BaseFixedPoint += toGain;
+                //            }
+                //        }
 
-                        return;
-                    }
-                }
+                //        return;
+                //    }
+                //}
 
                 if (toGain == 1 && skill.Base <= 10.0)
                     toGain = Utility.Random(4) + 1;
@@ -421,152 +421,148 @@ namespace Server.Misc
 
         private static void CheckReduceSkill(Skills skills, int toGain, Skill gainSKill)
         {
-         /*   if (skills.Total / skills.Cap >= Utility.RandomDouble())
-            {
-                foreach (Skill toLower in skills)
-                {
-                    if (toLower != gainSKill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
-                    {
-                        toLower.BaseFixedPoint -= toGain;
-                        break;
-                    }
-                }
-            }*/
-        }
+			if (skills.Total / skills.Cap >= Utility.RandomDouble())
+			{
+				foreach (Skill toLower in skills)
+				{
+					if (toLower != gainSKill && toLower.Lock == SkillLock.Down && toLower.BaseFixedPoint >= toGain)
+					{
+						toLower.BaseFixedPoint -= toGain;
+						break;
+					}
+				}
+			}
+		}
 
         public static void TryStatGain(SkillInfo info, Mobile from)
         {
-            // Chance roll
+			// Chance roll
+			double chance;
 
-			
+			if (from is BaseCreature && ((BaseCreature)from).Controlled)
+			{
+				chance = _PetChanceToGainStats / 100.0;
+			}
+			else
+			{
+				chance = _PlayerChanceToGainStats / 100.0;
+			}
 
+			if (Utility.RandomDouble() >= chance)
+			{
+				return;
+			}
 
-     /*       double chance;
+			// Selection
+			StatLockType primaryLock = StatLockType.Locked;
+			StatLockType secondaryLock = StatLockType.Locked;
 
-            if (from is BaseCreature && ((BaseCreature)from).Controlled)
-            {
-                chance = _PetChanceToGainStats / 100.0;
-            }
-            else
-            {
-                chance = _PlayerChanceToGainStats / 100.0;
-            }
+			switch (info.Primary)
+			{
+				case StatCode.Str:
+					primaryLock = from.StrLock;
+					break;
+				case StatCode.Dex:
+					primaryLock = from.DexLock;
+					break;
+				case StatCode.Int:
+					primaryLock = from.IntLock;
+					break;
+			}
 
-            if (Utility.RandomDouble() >= chance)
-            {
-                return;
-            }
+			switch (info.Secondary)
+			{
+				case StatCode.Str:
+					secondaryLock = from.StrLock;
+					break;
+				case StatCode.Dex:
+					secondaryLock = from.DexLock;
+					break;
+				case StatCode.Int:
+					secondaryLock = from.IntLock;
+					break;
+			}
 
-            // Selection
-            StatLockType primaryLock = StatLockType.Locked;
-            StatLockType secondaryLock = StatLockType.Locked;
-
-            switch (info.Primary)
-            {
-                case StatCode.Str:
-                    primaryLock = from.StrLock;
-                    break;
-                case StatCode.Dex:
-                    primaryLock = from.DexLock;
-                    break;
-                case StatCode.Int:
-                    primaryLock = from.IntLock;
-                    break;
-            }
-
-            switch (info.Secondary)
-            {
-                case StatCode.Str:
-                    secondaryLock = from.StrLock;
-                    break;
-                case StatCode.Dex:
-                    secondaryLock = from.DexLock;
-                    break;
-                case StatCode.Int:
-                    secondaryLock = from.IntLock;
-                    break;
-            }
-
-            // Gain
-            // Decision block of both are selected to gain
-            if (primaryLock == StatLockType.Up && secondaryLock == StatLockType.Up)
-            {
-                if (Utility.Random(4) == 0)
-                    GainStat(from, (Stat)info.Secondary);
-                else
-                    GainStat(from, (Stat)info.Primary);
-            }
-            else // Will not do anything if neither are selected to gain
-            {
-                if (primaryLock == StatLockType.Up)
-                    GainStat(from, (Stat)info.Primary);
-                else if (secondaryLock == StatLockType.Up)
-                    GainStat(from, (Stat)info.Secondary);
-            }*/
-        }
+			// Gain
+			// Decision block of both are selected to gain
+			if (primaryLock == StatLockType.Up && secondaryLock == StatLockType.Up)
+			{
+				if (Utility.Random(4) == 0)
+					GainStat(from, (Stat)info.Secondary);
+				else
+					GainStat(from, (Stat)info.Primary);
+			}
+			else // Will not do anything if neither are selected to gain
+			{
+				if (primaryLock == StatLockType.Up)
+					GainStat(from, (Stat)info.Primary);
+				else if (secondaryLock == StatLockType.Up)
+					GainStat(from, (Stat)info.Secondary);
+			}
+		}
 
         public static bool CanLower(Mobile from, Stat stat)
         {
-       /*     switch (stat)
-            {
-                case Stat.Str:
-                    return from.StrLock == StatLockType.Down && from.RawStr > 10;
+			switch (stat)
+			{
+				case Stat.Str:
+					return from.StrLock == StatLockType.Down && from.RawStr > 10;
 
-                case Stat.Dex:
-                    return from.DexLock == StatLockType.Down && from.RawDex > 10;
+				case Stat.Dex:
+					return from.DexLock == StatLockType.Down && from.RawDex > 10;
 
-                case Stat.Int:
-                    return from.IntLock == StatLockType.Down && from.RawInt > 10;
-            }*/
+				case Stat.Int:
+					return from.IntLock == StatLockType.Down && from.RawInt > 10;
+			}
 
-            return false;
+			return false;
         }
 
         public static bool CanRaise(Mobile from, Stat stat, bool atTotalCap)
         {
-          /*  switch (stat)
-            {
-                case Stat.Str:
-                    if (from.RawStr < from.StrCap)
-                    {
-                        if (atTotalCap && from is PlayerMobile)
-                        {
-                            return CanLower(from, Stat.Dex) || CanLower(from, Stat.Int);
-                        }
+			switch (stat)
+			{
+				case Stat.Str:
+					if (from.RawStr < from.StrCap)
+					{
+						if (atTotalCap && from is PlayerMobile)
+						{
+							return CanLower(from, Stat.Dex) || CanLower(from, Stat.Int);
+						}
 
-                        return true;
-                    }
+						return true;
+					}
 
-                    return false;
+					return false;
 
-                case Stat.Dex:
-                    if (from.RawDex < from.DexCap)
-                    {
-                        if (atTotalCap && from is PlayerMobile)
-                        {
-                            return CanLower(from, Stat.Str) || CanLower(from, Stat.Int);
-                        }
+				case Stat.Dex:
+					if (from.RawDex < from.DexCap)
+					{
+						if (atTotalCap && from is PlayerMobile)
+						{
+							return CanLower(from, Stat.Str) || CanLower(from, Stat.Int);
+						}
 
-                        return true;
-                    }
+						return true;
+					}
 
-                    return false;
+					return false;
 
-                case Stat.Int:
-                    if (from.RawInt < from.IntCap)
-                    {
-                        if (atTotalCap && from is PlayerMobile)
-                        {
-                            return CanLower(from, Stat.Str) || CanLower(from, Stat.Dex);
-                        }
+				case Stat.Int:
+					if (from.RawInt < from.IntCap)
+					{
+						if (atTotalCap && from is PlayerMobile)
+						{
+							return CanLower(from, Stat.Str) || CanLower(from, Stat.Dex);
+						}
 
-                        return true;
-                    }
+						return true;
+					}
 
-                    return false;
-            }
-		  */
-            return false;
+					return false;
+			}
+
+			return false;
         }
 
         public static void IncreaseStat(Mobile from, Stat stat)

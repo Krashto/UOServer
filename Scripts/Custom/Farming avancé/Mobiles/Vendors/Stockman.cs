@@ -31,7 +31,7 @@ namespace Server.Mobiles
         public Stockman() : base("the Stockman")
         {
             SetSkill(SkillName.Herding, 75.0, 100.0);
-            SetSkill(SkillName.AnimalLore, 75.0, 100.0);
+            SetSkill(SkillName.AnimalTaming, 75.0, 100.0);
 
             Hue = Utility.RandomSkinHue();
             Body = 0x190;

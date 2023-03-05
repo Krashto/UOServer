@@ -60,7 +60,7 @@ namespace Server.Spells
                 toHeal += Utility.Random(1, 3);
 
                 if (m is BaseCreature)
-                    toHeal += Caster.Skills[SkillName.Veterinary].Value * 0.15;
+                    toHeal += Caster.Skills[SkillName.Healing].Value * 0.15;
 
                 if(m is CustomPlayerMobile)
                     toHeal += Caster.Skills[SkillName.Healing].Value * 0.15;

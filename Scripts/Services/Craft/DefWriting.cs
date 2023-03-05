@@ -139,16 +139,6 @@ namespace Server.Services.Craft
 			index = AddCraft(typeof(LivreClasseThaumaturge), "Mages", "Thaumaturge - Thaumaturge", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			#endregion
 
-			#region Religion
-			index = AddCraft(typeof(LivreClasseRepurgateur), "Religion", "Paladin - Répurgateur", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseTemplier), "Religion", "Paladin - Templier", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClassePaladin), "Religion", "Paladin - Paladin", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-
-			index = AddCraft(typeof(LivreClasseFervent), "Religion", "Prêtre - Fervent", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseMaitreDeCeremonie), "Religion", "Prêtre - Maître de cérémonie", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseIntermediaireDivin), "Religion", "Prêtre - Intermédiaire Divin", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			#endregion
-
 			MarkOption = true;
 		}
 	}

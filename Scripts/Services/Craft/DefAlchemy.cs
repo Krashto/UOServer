@@ -190,32 +190,6 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(BlueCorn), 1156733, 5, 1044253);
    */         SetBeverageType(index, BeverageType.Wine);
            
-
-            // Toxic
-            index = AddCraft(typeof(LesserPoisonPotion), 1116350, 1044548, -5.0, 45.0, typeof(Nightshade), 1044358, 1, 1044366);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(PoisonPotion), 1116350, 1044549, 15.0, 65.0, typeof(Nightshade), 1044358, 2, 1044366);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(GreaterPoisonPotion), 1116350, 1044550, 55.0, 105.0, typeof(Nightshade), 1044358, 4, 1044366);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(DeadlyPoisonPotion), 1116350, 1044551, 90.0, 140.0, typeof(Nightshade), 1044358, 8, 1044366);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(ParasiticPotion), 1116350, 1072942, 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(NoxCrystal), "Nox Crystal", 5, "Pas assez de Nox Crystal");
-			AddRes(index, typeof(VeninAraigneeGeante), "Venin d'araignée géante", 1, "Vous n'avez pas suffisament de venin d'Araignée Géante");
-
-			index = AddCraft(typeof(DarkglowPotion), 1116350, 1072943, 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(NoxCrystal), "Nox Crystal", 5, "Pas assez de Nox Crystal");
-			AddRes(index, typeof(VeninAraigneeNoire), "Venin d'araignée noire", 1, "Vous n'avez pas suffisament de venin d'Araignée Noire");
-
-			index = AddCraft(typeof(ScouringToxin), 1116350, 1112292, 75.0, 100.0, typeof(NoxCrystal), "Nox Crystal", 1, "Pas assez de Nox Crystal");
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			AddRes(index, typeof(VeninTarenlune), "Venin de Tarenlune", 5, "Vous n'avez pas suffisament de venin de Tarenlune");
-
 			// Explosive
 			index = AddCraft(typeof(LesserExplosionPotion), 1116351, 1044555, 5.0, 55.0, typeof(SulfurousAsh), 1044359, 3, 1044367);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);

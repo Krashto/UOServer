@@ -32,7 +32,7 @@ namespace Server
                 new CSkills(SkillName.ArmsLore, 65),
                 new CSkills(SkillName.Lumberjacking, 60),
                 new CSkills(SkillName.Fencing, 60),
-                new CSkills(SkillName.Fletching, 50),
+                new CSkills(SkillName.Carpentry, 50),
                 new CSkills(SkillName.Tracking, 40),
                 new CSkills(SkillName.Hiding, 30),
                 new CSkills(SkillName.MagicResist, 20)

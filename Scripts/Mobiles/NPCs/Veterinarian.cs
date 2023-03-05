@@ -15,8 +15,8 @@ namespace Server.Mobiles
         public Veterinarian()
             : base("Vétérinaire")
         {
-            SetSkill(SkillName.AnimalLore, 85.0, 100.0);
-            SetSkill(SkillName.Veterinary, 90.0, 100.0);
+            SetSkill(SkillName.AnimalTaming, 85.0, 100.0);
+            SetSkill(SkillName.Healing, 90.0, 100.0);
         }
 
 		public override StatutSocialEnum MinBuyClasse => StatutSocialEnum.Civenien;
