@@ -340,10 +340,10 @@ namespace Server.Items
 
                 if (from is CustomPlayerMobile)
                 {
-                    m_Level = ((CustomPlayerMobile)from).GetAptitudeValue(NAptitude.Transcription) * 3;
-                    m_GrowValue = ((CustomPlayerMobile)from).GetAptitudeValue(NAptitude.Transcription) * 0.2;
+                    m_Level = ((CustomPlayerMobile)from).GetAptitudeValue(Aptitude.Transcription) * 3;
+                    m_GrowValue = ((CustomPlayerMobile)from).GetAptitudeValue(Aptitude.Transcription) * 0.2;
 
-                    double apti = ((CustomPlayerMobile)from).GetAptitudeValue(NAptitude.Transcription);
+                    double apti = ((CustomPlayerMobile)from).GetAptitudeValue(Aptitude.Transcription);
 
                     if (apti >= 12)
                         m_Max = 145;

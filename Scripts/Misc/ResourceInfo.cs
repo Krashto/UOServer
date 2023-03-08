@@ -39,9 +39,6 @@ namespace Server.Items
 		[Description("Ancien")]
 		AncienLeather,
 
-
-
-
 		RedScales = 201,
         YellowScales,
         BlackScales,

@@ -30,5 +30,8 @@
 
   <ItemGroup>
     <Folder Include="Custom\Capacites\" />
+    <Folder Include="Custom\Spells\NewSpells\Martial\" />
+    <Folder Include="Custom\Spells\NewSpells\Totemique\" />
+    <Folder Include="Custom\Spells\OldNewSpells\" />
   </ItemGroup>
 </Project>

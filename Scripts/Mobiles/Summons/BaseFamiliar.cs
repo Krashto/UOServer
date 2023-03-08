@@ -1,7 +1,7 @@
 #region References
 using Server.ContextMenus;
+using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Items;
-using Server.Spells;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Server.Mobiles
 {
-    public abstract class BaseFamiliar : BaseCreature
+	public abstract class BaseFamiliar : BaseCreature
     {
         private bool m_LastHidden;
         private long m_NextMove;

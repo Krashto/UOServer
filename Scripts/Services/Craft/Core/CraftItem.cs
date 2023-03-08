@@ -1373,6 +1373,8 @@ namespace Server.Engines.Craft
                 bonus += .3;
             }
 
+			bonus += from.Skills[SkillName.ArmsLore].Value / 4.8;
+
             switch (system.ECA)
             {
                 default:
@@ -1393,11 +1395,6 @@ namespace Server.Engines.Craft
 
 						break;
 					}
-					
-					
-
-
-
 					
 				case CraftECA.ChanceMinusSixtyToFourtyFive:
                     {
@@ -2103,9 +2100,7 @@ namespace Server.Engines.Craft
                         Caddellite.TryInfuse(from, item, craftSystem);
                     }
 
-
 					item.Createur = from;
-
 
                     if (tool is Item && ((Item)tool).Parent is Container)
                     {

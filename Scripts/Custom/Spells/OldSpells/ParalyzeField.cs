@@ -173,7 +173,7 @@ namespace Server.Spells.OldSpells
 
                     double duration = 5.0 + (m_Caster.Skills[SkillName.Magery].Value * 0.2);
 
-                    duration = SpellHelper.AdjustValue(m_Caster, duration, NAptitude.Arcanique);
+                    duration = SpellHelper.AdjustValue(m_Caster, duration, Aptitude.Aeromancie);
 
 					m.Paralyze( TimeSpan.FromSeconds( duration ) );
 

@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Items
 {
@@ -22,7 +23,7 @@ namespace Server.Items
 
 		public static bool IsImmune(Mobile m)
         {
-            return m_Table.Contains(m);
+            return m_Table.Contains(m) || FormeElectrisanteSpell.IsActive(m);
         }
 
         public static void BeginImmunity(Mobile m, TimeSpan duration)

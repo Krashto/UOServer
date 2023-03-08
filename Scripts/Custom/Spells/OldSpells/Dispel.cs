@@ -60,7 +60,7 @@ namespace Server.Spells.OldSpells
 				if ( bc != null )
 					dispelChance = (50.0 + ((100 * (Caster.Skills.Magery.Value - bc.DispelDifficulty)) / (bc.DispelFocus * 2))) / 120;
 
-                dispelChance = SpellHelper.AdjustValue(Caster, dispelChance, NAptitude.Arcanique);
+                dispelChance = SpellHelper.AdjustValue(Caster, dispelChance, Aptitude.Aeromancie);
 
 				if ( dispelChance > Utility.RandomDouble() )
 				{

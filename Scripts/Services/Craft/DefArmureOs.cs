@@ -96,40 +96,21 @@ namespace Server.Engines.Craft
         {
             int index = -1;
 
-
-
             #region Bone Armor
             index = AddCraft(typeof(BoneHelm), "Armure d'os", 1025206, 50, 80, typeof(Bone), "Os", 4, 1044463);
-
-
             index = AddCraft(typeof(BoneGloves), "Armure d'os", 1025205, 50, 80, typeof(Bone), "Os", 6, 1044463);
-
             index = AddCraft(typeof(BoneArms), "Armure d'os", 1025203, 50, 80, typeof(Bone), "Os", 8, 1044463);
-
 			index = AddCraft(typeof(BoneGorget), "Armure d'os", "Gorgerin d'os", 50, 80, typeof(Bone), "Os", 5, 1044463);
-
 			index = AddCraft(typeof(BoneLegs), "Armure d'os", 1025202, 50, 80, typeof(Bone), "Os", 10, 1044463);
-
             index = AddCraft(typeof(BoneChest), "Armure d'os", 1025199, 50, 80, typeof(Bone), "Os", 12, 1044463);
 
-            index = AddCraft(typeof(OrcHelm), "Armure d'os", 1027947, 90.0, 115.0, typeof(Bone), "Os", 6, 1044463);
-
-
-
-
-			index = AddCraft(typeof(CasqueOS), "Armure d'os", "Casque d'Os", 85.0, 110.0, typeof(Bone), "Os", 4, 1044463);
-
-			index = AddCraft(typeof(GantsOS), "Armure d'os", "Gants d'Os", 89.0, 114.0, typeof(Bone), "Os", 6, 1044463);
-
-			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassard d'Os", 92.0, 117.0, typeof(Bone), "Os", 8, 1044463);
-
-			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambiere d'Os", 95.0, 120.0, typeof(Bone), "Os", 10, 1044463);
-
-			index = AddCraft(typeof(BouclierOs), "Armure d'os", "Bouclier d'Os", 96.0, 121.0, typeof(Bone), "Os", 10, 1044463) ;
-
-			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 96.0, 121.0, typeof(Bone), "Os", 12, 1044463);
-
-
+            index = AddCraft(typeof(OrcHelm), "Armure d'os", 1027947, 80, 120, typeof(Bone), "Os", 6, 1044463);
+			index = AddCraft(typeof(CasqueOS), "Armure d'os", "Casque d'Os", 80, 120, typeof(Bone), "Os", 4, 1044463);
+			index = AddCraft(typeof(GantsOS), "Armure d'os", "Gants d'Os", 80, 120, typeof(Bone), "Os", 6, 1044463);
+			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassard d'Os", 80, 120, typeof(Bone), "Os", 8, 1044463);
+			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambiere d'Os", 80, 120, typeof(Bone), "Os", 10, 1044463);
+			index = AddCraft(typeof(BouclierOs), "Armure d'os", "Bouclier d'Os", 80, 120, typeof(Bone), "Os", 10, 1044463) ;
+			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 80, 120, typeof(Bone), "Os", 12, 1044463);
 			#endregion
 
 			// Set the overridable material

@@ -1,15 +1,15 @@
 using Server.Items;
 using Server.Mobiles;
-using Server.Spells;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Server.Misc;
 using Server.Network;
+using Server.Custom.Spells.NewSpells.Necromancie;
 
 namespace Server.Engines.JollyRoger
 {
-    public enum MasterTitle
+	public enum MasterTitle
     {
         Swordsman,
         Fencer,
@@ -505,9 +505,9 @@ namespace Server.Engines.JollyRoger
             }
             else if (_Specialty == MasterTitle.Sampire)
             {
-                if (0.1 > Utility.RandomDouble() && Weapon is BaseWeapon && !CalamiteSpell.IsCursed(this, (BaseWeapon)Weapon))
+                if (0.1 > Utility.RandomDouble() && Weapon is BaseWeapon)
                 {
-					CalamiteSpell spell = new CalamiteSpell(this, null);
+					AuraVampiriqueSpell spell = new AuraVampiriqueSpell(this, null);
                     spell.Cast();
                 }
             }

@@ -584,17 +584,25 @@ namespace Server.Spells
 			double value = caster.Skills[SkillName.Magery].Value * 1.8;
 
 			if (pm != null)
+			{
 				value *= 1 + pm.GetCapaciteValue(Custom.Classes.Capacite.Magie) * 0.1;
+				if (pm.ChosenSpellbook != null)
+					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
+			}
 
 			return TimeSpan.FromSeconds(value);
 		}
 
-        public static double AdjustValue(Mobile caster, double value, NAptitude aptitude)
+        public static double AdjustValue(Mobile caster, double value, Aptitude aptitude)
         {
 			CustomPlayerMobile pm = caster as CustomPlayerMobile;
 
 			if (pm != null)
+			{
 				value *= 1 + pm.GetCapaciteValue(Custom.Classes.Capacite.Magie) * 0.1;
+				if (pm.ChosenSpellbook != null)
+					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
+			}
 
 			return value;
 		}

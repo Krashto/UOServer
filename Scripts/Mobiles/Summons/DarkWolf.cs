@@ -1,10 +1,10 @@
 using System;
 using System.Linq;
-using Server.Spells;
+using Server.Custom.Spells.NewSpells.Pyromancie;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dark wolf corpse")]
+	[CorpseName("a dark wolf corpse")]
     public class DarkWolfFamiliar : BaseFamiliar
     {
         private DateTime m_NextRestore;

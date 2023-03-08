@@ -1,3 +1,5 @@
+using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Mobiles;
 using Server.Network;
 using System;
@@ -42,7 +44,13 @@ namespace Server.Items
                 }
             }
 
-            BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Bleed, 1075829, 1075830, TimeSpan.FromSeconds(10), m, string.Format("{0}\t{1}\t{2}", "1", "10", "2")));
+			if (AuraExsangueSpell.IsActive(m) || FormeEnsangleeSpell.IsActive(m))
+			{
+				from.SendMessage("La cible est immunisée aux saignements.");
+				return;
+			}
+
+			BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Bleed, 1075829, 1075830, TimeSpan.FromSeconds(10), m, string.Format("{0}\t{1}\t{2}", "1", "10", "2")));
 
             timer = new BleedTimer(from, m, CheckBloodDrink(from));
             m_BleedTable[m] = timer;

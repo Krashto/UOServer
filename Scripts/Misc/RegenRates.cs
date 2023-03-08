@@ -1,3 +1,5 @@
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Custom.Spells.NewSpells.Roublardise;
 using Server.Items;
 using Server.Mobiles;
 using Server.Spells;
@@ -108,7 +110,12 @@ namespace Server.Misc
             double focusBonus = focus / 200;
             double medBonus = 0;
 
-            CheckBonusSkill(from, from.Mana, from.ManaMax, SkillName.Focus);
+			double formeGlaceBonus = 0;
+
+			if (FormeLiquideSpell.IsActive(from))
+				formeGlaceBonus += 0.5;
+
+			CheckBonusSkill(from, from.Mana, from.ManaMax, SkillName.Focus);
 
             if (armorPenalty == 0)
             {
@@ -131,7 +138,7 @@ namespace Server.Misc
 
             double itemBonus = ((itemBase * intensityBonus) - (itemBase - 1)) / 10;
 
-            rate = 1.0 / (0.2 + focusBonus + medBonus + itemBonus);
+            rate = 1.0 / (0.2 + focusBonus + medBonus + itemBonus + formeGlaceBonus);
 
             if (double.IsNaN(rate))
             {
@@ -155,7 +162,10 @@ namespace Server.Misc
             if (from is PlayerMobile)	//does racial bonus go before/after?
                 points = Math.Min(points, 18);
 
-            if (CheckAnimal(from, typeof(Dog)) || CheckAnimal(from, typeof(Cat)))
+			if (FormeEnsangleeSpell.IsActive(from))
+				points += 10;
+
+			if (CheckAnimal(from, typeof(Dog)) || CheckAnimal(from, typeof(Cat)))
                 points += from.Skills[SkillName.Magery].Fixed / 30;
 
 			CheckBonusSkill(from, from.Hits, from.HitsMax, SkillName.Cooking);
@@ -183,7 +193,10 @@ namespace Server.Misc
             if (from is PlayerMobile)
                 points = Math.Min(points, 24);
 
-            if (points < -1)
+			if (AdrenalineSpell.IsActive(from))
+				points += 10;
+
+			if (points < -1)
                 points = -1;
 
             foreach (RegenBonusHandler handler in StamBonusHandlers)

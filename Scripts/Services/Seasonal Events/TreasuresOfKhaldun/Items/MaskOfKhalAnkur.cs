@@ -1,9 +1,10 @@
+using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Spells;
 using System;
 
 namespace Server.Items
 {
-    public class MaskOfKhalAnkur : BaseHat
+	public class MaskOfKhalAnkur : BaseHat
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1158701;  // Mask of Khal Ankur
@@ -62,7 +63,7 @@ namespace Server.Items
             }
             else if (SpellHelper.CheckTown(from.Location, from))
             {
-				MeteoresSpell spell = new MeteoresSpell(from, null);
+				EmpalementSpell spell = new EmpalementSpell(from, null);
                 spell.Cast();
             }
         }

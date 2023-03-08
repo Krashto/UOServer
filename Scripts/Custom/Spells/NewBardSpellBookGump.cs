@@ -21,17 +21,17 @@ namespace Server.Gumps
     {
         private string m_Nom;
         private int m_ImageID;
-        private NAptitude m_Aptitudes;
+        private Aptitude m_Aptitudes;
         private int m_SpellID;
         private BardType m_BardType; 
 
         public string Nom { get { return m_Nom; } }
         public int ImageID { get { return m_ImageID; } }
-        public NAptitude Aptitude { get { return m_Aptitudes; } }
+        public Aptitude Aptitude { get { return m_Aptitudes; } }
         public int SpellID { get { return m_SpellID; } }
         public BardType BardType { get { return m_BardType; } }
 
-        public BardSpellBookEntry(BardType bard, NAptitude aptitude, string nom, int imageid, int spellid)
+        public BardSpellBookEntry(BardType bard, Aptitude aptitude, string nom, int imageid, int spellid)
         {
             m_BardType = bard;
             m_Nom = nom;
@@ -45,21 +45,21 @@ namespace Server.Gumps
     {
         public static BardSpellBookEntry[] m_BardSpellBookEntry = new BardSpellBookEntry[]
         {
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Mélodie", 0x172,  1600),
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Chant", 0x16a, 1601),
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Murmure", 0x173,  1602),
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Conte", 0x16c,  1603),
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Sonnette", 0x178, 1604),
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Hymne", 0x170, 1605),
-            new BardSpellBookEntry( BardType.Barde, NAptitude.Musique, "Composition", 0x16b,  1606),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Mélodie", 0x172,  1600),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Chant", 0x16a, 1601),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Murmure", 0x173,  1602),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Conte", 0x16c,  1603),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Sonnette", 0x178, 1604),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Hymne", 0x170, 1605),
+            new BardSpellBookEntry( BardType.Barde, Aptitude.Musique, "Composition", 0x16b,  1606),
 
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Marche", 0x171,  1607),
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Harmonie", 0x16f,  1608),
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Cri De Guerre", 0x16d,  1609),
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Fanfare", 0x16e,  1610),
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Symphonie", 0x179,  1611),
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Orchestre", 0x176,  1612),
-            new BardSpellBookEntry( BardType.Danseur, NAptitude.Musique, "Bruit", 0x169,  1613)
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Marche", 0x171,  1607),
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Harmonie", 0x16f,  1608),
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Cri De Guerre", 0x16d,  1609),
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Fanfare", 0x16e,  1610),
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Symphonie", 0x179,  1611),
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Orchestre", 0x176,  1612),
+            new BardSpellBookEntry( BardType.Danseur, Aptitude.Musique, "Bruit", 0x169,  1613)
         };
 
         public bool HasSpell(Mobile from, int spellID)

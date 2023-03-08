@@ -14,9 +14,7 @@ namespace Server
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {
-		        new CAptitudes(NAptitude.Medecine, 2),
-                new CAptitudes(NAptitude.Defense, 2),
-                new CAptitudes(NAptitude.Arcanique, 1),
+                new CAptitudes(Aptitude.Aeromancie, 1),
             };
 
         private static CCapacites[] m_Capacites = new CCapacites[]

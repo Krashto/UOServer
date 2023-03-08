@@ -21,6 +21,8 @@ using Custom.Jerbal.Jako;
 using Server.Mobiles.AI;
 using Server.Spells.OldSpells;
 using static Server.HueData;
+using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Pyromancie;
 
 
 #endregion
@@ -28,11 +30,11 @@ using static Server.HueData;
 namespace Server.Mobiles
 
 {
-    #region Enums
-    /// <summary>
-    ///     Summary description for MobileAI.
-    /// </summary>
-    public enum FightMode
+	#region Enums
+	/// <summary>
+	///     Summary description for MobileAI.
+	/// </summary>
+	public enum FightMode
     {
         None, // Never focus on others
         Aggressor, // Only attack aggressors
@@ -757,13 +759,13 @@ namespace Server.Mobiles
 		#endregion
 
 
-		private bool m_CriDOurs;
+		private bool m_AsFastAsHorse;
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public bool CriDOurs
+		public bool AsFastAsHorse
 		{
-			get { return m_CriDOurs; }
-			set { m_CriDOurs = value; }
+			get { return m_AsFastAsHorse; }
+			set { m_AsFastAsHorse = value; }
 		}
 
 		public virtual double WeaponAbilityChance => 0.4;

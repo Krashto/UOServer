@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Items
 {
-    public class SlayerGroup
+	public class SlayerGroup
     {
         private static readonly SlayerEntry[] m_TotalEntries;
         private static readonly SlayerGroup[] m_Groups;
@@ -191,18 +191,16 @@ namespace Server.Items
                     typeof(LavaElemental), typeof(ToxicElemental),
                     typeof(AcidElemental), typeof(AcidElementalRenowned),
                     typeof(FireElementalRenowned), typeof(AgapiteElemental),
-                    typeof(AirElemental), typeof(SummonedAirElemental),
-                    typeof(BloodElemental), typeof(BronzeElemental),
+                    typeof(AirElemental), typeof(Efreet),
+					typeof(BloodElemental), typeof(BronzeElemental),
                     typeof(CopperElemental), typeof(CrystalElemental),
                     typeof(DullCopperElemental), typeof(EarthElemental),
-                    typeof(SummonedEarthElemental), typeof(Efreet),
-                    typeof(FireElemental), typeof(SummonedFireElemental),
-                    typeof(GoldenElemental), typeof(IceElemental),
+                    typeof(FireElemental), typeof(WaterElemental),
+					typeof(GoldenElemental), typeof(IceElemental),
                     typeof(KazeKemono), typeof(PoisonElemental),
                     typeof(RaiJu), typeof(SandVortex),
                     typeof(ShadowIronElemental), typeof(SnowElemental),
                     typeof(ValoriteElemental), typeof(VeriteElemental),
-                    typeof(WaterElemental), typeof(SummonedWaterElemental),
                     typeof(Flurry), typeof(Mistral),
                     typeof(Tempest), typeof(UnboundEnergyVortex),
                     typeof(ChaosVortex), typeof(WindElemental),
@@ -228,7 +226,7 @@ namespace Server.Items
 
                             typeof(AgapiteElemental),   typeof(BronzeElemental),
                             typeof(CopperElemental),    typeof(DullCopperElemental),
-                            typeof(EarthElemental),     typeof(SummonedEarthElemental),
+                            typeof(EarthElemental),
                             typeof(GoldenElemental),    typeof(ShadowIronElemental),
                             typeof(ValoriteElemental),  typeof(VeriteElemental),
                             typeof(QuartzElemental),    typeof(DemonKnight),
@@ -248,7 +246,7 @@ namespace Server.Items
                             SlayerName.FlameDousing,
 
                             typeof(FireElemental),          typeof(FireElementalRenowned),
-                            typeof(SummonedFireElemental),  typeof(FlameElemental),
+                            typeof(FlameElemental),
                             typeof(DemonKnight),            typeof(SearingElemental)
                         ),
 
@@ -264,7 +262,7 @@ namespace Server.Items
                         (
                             SlayerName.Vacuum,
 
-                            typeof(AirElemental),   typeof(SummonedAirElemental),
+                            typeof(AirElemental),
                             typeof(Flurry),         typeof(Mistral),
                             typeof(Tempest),        typeof(UnboundEnergyVortex),
                             typeof(ChaosVortex),    typeof(WindElemental),
@@ -275,7 +273,7 @@ namespace Server.Items
                         (
                             SlayerName.WaterDissipation,
 
-                            typeof(WaterElemental),     typeof(SummonedWaterElemental),
+                            typeof(WaterElemental),
                             typeof(DemonKnight),        typeof(CovetousWaterElemental)
                         )
                 };
@@ -299,7 +297,7 @@ namespace Server.Items
                     typeof(AbysmalHorror), typeof(AbyssalInfernal),
                     typeof(ArcaneDaemon), typeof(Balron),
                     typeof(BoneDemon), typeof(ChaosDaemon),
-                    typeof(Daemon), typeof(SummonedDaemon),
+                    typeof(Daemon),
                     typeof(DemonKnight), typeof(Devourer),
                     typeof(EnslavedGargoyle), typeof(FanDancer),
                     typeof(FireGargoyle), typeof(Gargoyle),

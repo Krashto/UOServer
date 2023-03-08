@@ -400,13 +400,13 @@ namespace Server.Engines.Craft
 			AddSpell(typeof(DonDesRochersScroll), "Don des rochers", 5);
 			AddSpell(typeof(CouvertureScroll), "Couverture", 6);
 
-			index = AddCraft(typeof(Runebook), "Autres", 1041267, 45.0, 95.0, typeof(BlankScroll), 1044377, 8, 1044378);
+			index = AddCraft(typeof(Runebook), "Magie", 1041267, 45.0, 95.0, typeof(BlankScroll), 1044377, 8, 1044378);
 			AddRes(index, typeof(RecallScroll), 1044445, 1, 1044253);
 			AddRes(index, typeof(GateTravelScroll), 1044446, 1, 1044253);
 
 			//index = AddCraft(typeof(BulkOrders.BulkOrderBook), "Autres", 1028793, 65.0, 115.0, typeof(BlankScroll), 1044377, 10, 1044378);
 
-			index = AddCraft(typeof(NewSpellbook), "Autres", "Livre de sort", 50.0, 126, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(NewSpellbook), "Magie", "Livre de sort", 50.0, 126, typeof(Leather), 1044377, 10, 1044378);
 
 			#region Skills
 			index = AddCraft(typeof(LivreSkillsAlchemy), "Livre d'étude (skills)", "Alchemy", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -556,9 +556,25 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(GemMiningBook), "Autres", "Connaissances Gems", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
 
-			
+			// Set the overridable material
+			SetSubRes(typeof(Leather), 1049150);
+
+			// Add every material you want the player to be able to choose from
+			// This will override the overridable material
+			AddSubRes(typeof(Leather), "Cuir", 0.0, 1049312);
+			AddSubRes(typeof(LupusLeather), "Lupus", 65.0, 1049312);
+			AddSubRes(typeof(ReptilienLeather), "Reptilien", 70.0, 1049312);
+			AddSubRes(typeof(GeantLeather), "Geant", 75.0, 1049312);
+			AddSubRes(typeof(OphidienLeather), "Ophidien", 80.0, 1049312);
+			AddSubRes(typeof(ArachnideLeather), "Arachnide", 85.0, 1049312);
+			AddSubRes(typeof(DragoniqueLeather), "Dragonique", 90.0, 1049312);
+			AddSubRes(typeof(DemoniaqueLeather), "Demoniaque", 95.0, 1049312);
+			AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
 
 			MarkOption = true;
-        }
+			Repair = true;
+			CanEnhance = true;
+			CanAlter = true;
+		}
     }
 }

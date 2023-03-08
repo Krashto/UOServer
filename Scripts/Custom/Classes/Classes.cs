@@ -6,13 +6,13 @@ namespace Server.Custom.Classes
 {
 	public class CAptitudes
     {
-        private NAptitude m_Aptitude;
+        private Aptitude m_Aptitude;
         private int m_Value;
 
-        public NAptitude Aptitude { get { return m_Aptitude; } }
+        public Aptitude Aptitude { get { return m_Aptitude; } }
         public int Value { get { return m_Value; } }
 
-        public CAptitudes(NAptitude aptitude, int value)
+        public CAptitudes(Aptitude aptitude, int value)
         {
             m_Aptitude = aptitude;
             m_Value = value;
@@ -129,7 +129,7 @@ namespace Server.Custom.Classes
             return info.ClasseAvant;
         }
 
-        public static int GetAptitudeValue(Classe classe, NAptitude aptitude)
+        public static int GetAptitudeValue(Classe classe, Aptitude aptitude)
         {
             ClasseInfo info = GetInfos(classe);
 

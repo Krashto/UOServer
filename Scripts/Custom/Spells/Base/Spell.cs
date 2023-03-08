@@ -7,6 +7,7 @@ using Server.Custom.Classes;
 using Server.Custom;
 using Server.Spells.OldSpells;
 using Server.Custom.Aptitudes;
+using Server.Custom.Spells.NewSpells.General;
 
 namespace Server.Spells
 {
@@ -207,6 +208,11 @@ namespace Server.Spells
 
 			//if ( AosAttributes.GetValue( m_Caster, AosAttribute.LowerRegCost ) > Utility.Random( 100 ) )
 			//	return true;
+
+			var pm = m_Caster as CustomPlayerMobile;
+
+			if (pm != null && pm.Aptitudes.Transcription * 10 > Utility.Random(100))
+				return true;
 
 			Container pack = m_Caster.Backpack;
 
@@ -470,15 +476,15 @@ namespace Server.Spells
         {
             CustomPlayerMobile caster = m_Caster as CustomPlayerMobile;
 
-            //if (caster != null && (caster.Squelched || caster.Aphonie))
-            //{
-            //    caster.SendMessage("Vous ne pouvez incanter si vous êtes muet.");
-            //    return false;
-            //}
+			if (caster != null && (caster.Squelched))
+			{
+				caster.SendMessage("Vous ne pouvez incanter si vous êtes muet.");
+				return false;
+			}
 
-            BaseCreature bc = m_Caster as BaseCreature;
+			BaseCreature bc = m_Caster as BaseCreature;
 
-            if (bc != null && (bc.Squelched/* || (bc != null && bc.Aphonie)*/))
+            if (bc != null && (bc.Squelched))
                 return false;
 
 			return true;
@@ -682,14 +688,14 @@ namespace Server.Spells
             return RequiredAptitudeValue;
         }
 
-        public virtual NAptitude[] GetAptitude()
+        public virtual Aptitude[] GetAptitude()
         {
             return RequiredAptitude;
         }
 
         public virtual int RequiredAptitudeValue { get { return 99; } }
         public virtual int RequiredMagicCapacity { get { return 99; } }
-        public virtual NAptitude[] RequiredAptitude { get { return new NAptitude[] { NAptitude.Arcanique }; } }
+        public virtual Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Aeromancie }; } }
 
 		public virtual int ScaleMana( int mana )
 		{
@@ -776,13 +782,13 @@ namespace Server.Spells
 				m_Caster.Spell = null;
 		}
 
-        public virtual bool VerifyConn(CustomPlayerMobile pm, NAptitude[] apt, int cValueRequis)
+        public virtual bool VerifyConn(CustomPlayerMobile pm, Aptitude[] apt, int cValueRequis)
         {
             bool ok = false;
 
             for (int i = 0; !ok && i < apt.Length; ++i)
             {
-                NAptitude c = apt[i];
+                Aptitude c = apt[i];
 
                 ok = (pm.GetAptitudeValue(c) >= cValueRequis);
             }
@@ -794,7 +800,7 @@ namespace Server.Spells
 		{
             int mana = ScaleMana(GetMana());
             int aptitudeValueRequis = GetAptitudeValue();
-            NAptitude[] aptitudeRequise = GetAptitude();
+            Aptitude[] aptitudeRequise = GetAptitude();
 
             CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
 

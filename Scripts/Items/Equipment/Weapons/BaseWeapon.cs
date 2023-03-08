@@ -13,6 +13,10 @@ using System.Linq;
 using Server.Spells.OldSpells;
 using Server.Custom.Classes;
 using Server.Custom.Weapons;
+using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Multis;
+
 #endregion
 
 namespace Server.Items
@@ -1784,7 +1788,19 @@ namespace Server.Items
                 }
             }
 
-            bool splintering = false;
+			if (FormeEmpoisonneeSpell.IsActive(attacker))
+				defender.ApplyPoison(attacker, Poison.Deadly);
+
+			//if (FormeCycloniqueSpell.IsActive(attacker))
+			//	defender. TODO: PUSH
+
+			if (FormeGivranteSpell.IsActive(attacker))
+			{
+				WeaponAbility.SetCurrentAbility(attacker, WeaponAbility.ParalyzingBlow);
+				attacker.SendMessage("Votre prochain coup paralysera votre cible.");
+			}
+
+			bool splintering = false;
 
             if (m_AosWeaponAttributes.SplinteringWeapon > 0 && m_AosWeaponAttributes.SplinteringWeapon > Utility.Random(100))
             {
@@ -2129,7 +2145,10 @@ namespace Server.Items
             lifeLeech = (int)(WeaponAttributes.HitLeechHits * propertyBonus);
             manaLeech = (int)(WeaponAttributes.HitLeechMana * propertyBonus);
 
-            int toHealCursedWeaponSpell = 0;
+			if (AuraVampiriqueSpell.IsActive(attacker))
+				lifeLeech += 25;
+
+			int toHealCursedWeaponSpell = 0;
 
             if (stamLeech != 0)
                 attacker.Stam += AOS.Scale(damageGiven, stamLeech);
@@ -2996,6 +3015,7 @@ namespace Server.Items
             double anatomyBonus = GetBonus(attacker.Skills[SkillName.Anatomy].Value, 0.500, 100.0, 5.00);
             double tacticsBonus = GetBonus(attacker.Skills[SkillName.Tactics].Value, 0.625, 100.0, 6.25);
             double capaciteBonus = 0;
+            double armsLoreBonus = GetBonus(attacker.Skills[SkillName.ArmsLore].Value, 0.250, 100.0, 2.5);
 
 			if (attacker is CustomPlayerMobile)
 			{
@@ -3019,7 +3039,7 @@ namespace Server.Items
                 damageBonus = 100;
             #endregion
 
-            double totalBonus = strengthBonus + anatomyBonus + tacticsBonus + capaciteBonus + (damageBonus / 100.0);
+            double totalBonus = strengthBonus + anatomyBonus + tacticsBonus + capaciteBonus + armsLoreBonus + (damageBonus / 100.0);
 
 			if (attacker is CustomPlayerMobile)
 				totalBonus *= 1.5;

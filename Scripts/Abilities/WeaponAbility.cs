@@ -357,11 +357,11 @@ namespace Server.Items
 
         public static bool SetCurrentAbility(Mobile m, WeaponAbility a)
         {
-            if (!IsWeaponAbility(m, a))
-            {
-                ClearCurrentAbility(m);
-                return false;
-            }
+            //if (!IsWeaponAbility(m, a))
+            //{
+            //    ClearCurrentAbility(m);
+            //    return false;
+            //}
 
             if (a != null && !a.Validate(m))
             {

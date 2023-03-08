@@ -14,7 +14,7 @@ namespace Server
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {
-                new CAptitudes(NAptitude.Chimie, 1)
+                new CAptitudes(Aptitude.Chimie, 1)
             };
 
         private static CCapacites[] m_Capacites = new CCapacites[]

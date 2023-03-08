@@ -14,7 +14,6 @@ namespace Server
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {
-                new CAptitudes(NAptitude.Familier, 4),
             };
 
         private static CCapacites[] m_Capacites = new CCapacites[]

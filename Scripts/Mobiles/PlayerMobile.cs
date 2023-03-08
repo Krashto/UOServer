@@ -23,7 +23,6 @@ using Server.Network;
 using Server.Regions;
 using Server.Services.Virtues;
 using Server.SkillHandlers;
-using Server.Spells;
 using Server.Targeting;
 using System;
 using System.Collections;
@@ -33,13 +32,14 @@ using Server.Engines.ArenaSystem;
 using Server.Poker; // Poker edit
 using RankDefinition = Server.Guilds.RankDefinition;
 using Server.Spells.OldSpells;
+using Server.Custom.Spells.NewSpells.Necromancie;
 #endregion
 
 namespace Server.Mobiles
 {
 
-    #region Enums
-    [Flags]
+	#region Enums
+	[Flags]
     public enum PlayerFlag
     {
         None = 0x00000000,
@@ -949,9 +949,9 @@ namespace Server.Mobiles
 				max += refineBonus;
 			}
 
-			if ((type == ResistanceType.Fire || type == ResistanceType.Poison) && PeauDeMortSpell.IsUnderEffects(this))
+			if ((type == ResistanceType.Fire || type == ResistanceType.Poison) && RegardNecrotiqueSpell.IsUnderEffects(this))
 			{
-				max = PeauDeMortSpell.GetResistMalus(this);
+				max = RegardNecrotiqueSpell.GetResistMalus(this);
 			}
 
 			return max;

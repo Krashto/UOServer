@@ -80,7 +80,7 @@ namespace Server.Spells.OldSpells
                             double chanceToCure = 10000 + (int)(Caster.Skills[SkillName.Magery].Value * 75) - ((poison.Level + 1) * 2500);
                             chanceToCure /= 100;
 
-                            chanceToCure = SpellHelper.AdjustValue(Caster, chanceToCure, NAptitude.Medecine);
+                            //chanceToCure = SpellHelper.AdjustValue(Caster, chanceToCure, Aptitude.Medecine);
 
 							if ( chanceToCure > Utility.Random( 100 ) && m.CurePoison( Caster ) )
 								++cured;

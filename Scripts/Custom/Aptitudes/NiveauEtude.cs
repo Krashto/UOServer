@@ -31,7 +31,7 @@ namespace Server.Scripts.Commands
                 {
                     from.SendMessage("Vous devez choisir un niveau en haut de 0.");
                 }
-                else if (value > from.GetAptitudeValue(NAptitude.Transcription) * 10)
+                else if (value > from.GetAptitudeValue(Aptitude.Transcription) * 10)
                 {
                     from.SendMessage("Vous n'avez pas assez dans l'aptitude Étude pour augmenter à la valeur désirée.");
                 }
@@ -57,7 +57,7 @@ namespace Server.Scripts.Commands
             {
                 bool success = false;
 
-                if (m_Value > m_From.GetAptitudeValue(NAptitude.Transcription) * 10)
+                if (m_Value > m_From.GetAptitudeValue(Aptitude.Transcription) * 10)
                 {
                     m_From.SendMessage("Vous n'avez pas assez dans l'aptitude Étude pour augmenter à la valeur désirée.");
                 }

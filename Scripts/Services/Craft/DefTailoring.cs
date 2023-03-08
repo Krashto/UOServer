@@ -336,11 +336,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CorsetSimple), "Hauts", "Corset Simple", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(CorsetTissus), "Hauts", "Corset de Tissus", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
 
-
-
-
-
-
 			index = AddCraft(typeof(Pantalon1), "Pantalons", "Pantalon Ample", 90.8,110.8, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Pantalon2), "Pantalons", "Pantalon à Motifs", 58.0,78.0, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Pantalon3), "Pantalons", "Pantalon à Fourrure", 92.6,112.6, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
@@ -364,7 +359,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(TuniqueCeinture), "Hauts", "Tunique à Ceinture", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ManteauDore), "Hauts", "Manteau Doré", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(HautLacet), "Hauts", "Haut Lacet", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-
 
 			index = AddCraft(typeof(Carquois), "Divers",  "Carquois", 60.6,80.6, typeof(Leather),"cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(fourreau), "Divers", "Fourreau épée longue", 80.7,100.7, typeof(Leather),"cuir", 10, "Vous n'avez pas assez de cuir.");

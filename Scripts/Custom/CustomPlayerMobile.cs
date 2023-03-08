@@ -10,9 +10,13 @@ using Server.Custom;
 using Server.Movement;
 using Server.Gumps;
 using Server.Custom.Classes;
-using Server.Spells;
 using Server.Custom.Aptitudes;
-using Server.Scripts.Commands;
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Chasseur;
+using Server.Custom.Spells.NewSpells.Aeromancie;
+using Server.Custom.Spells.NewSpells.Hydromancie;
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Custom.Spells.NewSpells.Roublardise;
 
 
 
@@ -260,7 +264,7 @@ namespace Server.Mobiles
 		public TribeRelation TribeRelation { get { return m_TribeRelation; } set { m_TribeRelation = value; } }
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public Item ChosenSpellbook { get; set; }
+		public NewSpellbook ChosenSpellbook { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int IdentiteID
@@ -325,7 +329,22 @@ namespace Server.Mobiles
 		}
 		public List<MissiveContent> MissiveEnAttente { get { return m_MissiveEnAttente; } set { m_MissiveEnAttente = value; } }
 
-		
+		public override double GetRacialSkillBonus(SkillName skill)
+		{
+			var value = 0;
+
+			switch (skill)
+			{
+				case SkillName.Alchemy: value = Aptitudes.Chimie * 4; break;
+				case SkillName.Tailoring: value = Aptitudes.Couture * 4; break;
+				case SkillName.Carpentry: value = Aptitudes.Ebenisterie * 4; break;
+				case SkillName.Tinkering: value = Aptitudes.Ingenierie * 4; break;
+				case SkillName.Blacksmith: value = Aptitudes.Metallurgie * 4; break;
+				case SkillName.Inscribe: value = Aptitudes.Transcription * 4; break;
+			}
+
+			return value;
+		}
 		public List<int> QuickSpells
 		{
 			get { return m_QuickSpells; }
@@ -443,26 +462,20 @@ namespace Server.Mobiles
 
 		}
 
-		private bool m_CriDOurs;
-		private bool m_ArmurePierre;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public bool ArmurePierre
-		{
-			get { return m_ArmurePierre; }
-			set { m_ArmurePierre = value; }
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public bool CriDOurs
-		{
-			get { return m_CriDOurs; }
-			set { m_CriDOurs = value; }
-		}
-
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
 		{
-			return ((int)poison.Level <= (int)Poison.Greater.Level && ArmurePierre);
+			return AuraDeRemedeSpell.IsActive(this) || FormeMetalliqueSpell.IsActive(this);
+		}
+
+		public override int ComputeMovementSpeed(Direction dir, bool checkTurning)
+		{
+			if (!FormeElectrisanteSpell.IsActive(this) && (CoupDansLeGenouSpell.IsActive(this) || BlizzardSpell.IsActive(this) || CoupureDesTendonsSpell.IsActive(this)))
+				return WalkFoot;
+
+			if (VentFavorableSpell.IsActive(this) && !Mounted)
+				return RunFoot;
+
+			return base.ComputeMovementSpeed(dir, checkTurning);
 		}
 
 		public bool AddEsclave(Mobile m)
@@ -1960,13 +1973,13 @@ namespace Server.Mobiles
 		//[CommandProperty(AccessLevel.GameMaster)]
 		//public Capacites Capacites { get { return m_Capacites; } set { } }
 
-		public virtual void OnAptitudesChange(NAptitude aptitude, int oldvalue, int newvalue)
+		public virtual void OnAptitudesChange(Aptitude aptitude, int oldvalue, int newvalue)
 		{
-			if (aptitude == NAptitude.Familier)
-			{
-				FollowersMax = 2 + GetAptitudeValue(NAptitude.Familier);
-				Delta(MobileDelta.Followers);
-			}
+			//if (aptitude == NAptitude.Familier)
+			//{
+			//	FollowersMax = 2 + GetAptitudeValue(NAptitude.Familier);
+			//	Delta(MobileDelta.Followers);
+			//}
 
 			CheckStatTimers();
 		}
@@ -1995,12 +2008,12 @@ namespace Server.Mobiles
 			base.OnSkillChange(skill, oldBase);
 		}
 
-		public virtual int GetBaseAptitudeValue(NAptitude aptitude)
+		public virtual int GetBaseAptitudeValue(Aptitude aptitude)
 		{
 			return Classes.GetAptitudeValue(m_Classe, aptitude);
 		}
 
-		public virtual int GetAptitudeValue(NAptitude aptitude)
+		public virtual int GetAptitudeValue(Aptitude aptitude)
 		{
 			return m_Aptitudes[aptitude] + GetBaseAptitudeValue(aptitude);
 		}
@@ -2049,7 +2062,7 @@ namespace Server.Mobiles
 				for (int i = 0; i < m_Aptitudes.m_Values.Length; ++i)
 				{
 					wasValid = true;
-					NAptitude aptitude = (NAptitude)i;
+					Aptitude aptitude = (Aptitude)i;
 
 					//while (!Aptitudes.IsValid(this, aptitude))
 					//{
@@ -2259,8 +2272,6 @@ namespace Server.Mobiles
 			{
 				case 30:
 					{
-						m_ArmurePierre = reader.ReadBool();
-
 						m_Classe = (Classe)reader.ReadInt();
 
 						goto case 29;
@@ -2406,7 +2417,7 @@ namespace Server.Mobiles
 					}
 				case 8:
 					{
-						ChosenSpellbook = reader.ReadItem();
+						ChosenSpellbook = (NewSpellbook)reader.ReadItem();
 						goto case 7;
 					}
 
@@ -2485,8 +2496,6 @@ namespace Server.Mobiles
             base.Serialize(writer);
 
             writer.Write(30); // version
-
-			writer.Write(m_ArmurePierre);
 
 			writer.Write((int)m_Classe);
 
