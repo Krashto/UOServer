@@ -68,3 +68,4 @@ Config/DataPath.cfg
 /.vs/ServUO/v17/.suo
 /Application/obj/Debug/ServUO.csproj.AssemblyReference.cache
 /Scripts/obj/Debug/Scripts.csproj.AssemblyReference.cache
+/Config/DataPath.cfg
