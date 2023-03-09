@@ -4,18 +4,14 @@
 	{
 		Aucune,
 
-		Acrobate,
-		LanceurDeCouteaux,
-		DanseurDeLames,
-
-		Troubadour,
-		Barde,
-		Menestrel,
-
 		Embouteilleur,
 		Alchimiste,
 		Apothicaire,
 
+		Styliste,
+		Modeleur,
+		Couturier,
+		
 		Bricoleur,
 		Ingenieur,
 		Inventeur,
@@ -28,52 +24,60 @@
 		Erudit,
 		Sage,
 
+		Combattant,
+		Mirmillon,
+		Champion,
+
 		Archer,
 		FrancTireur,
 		MaitreArcher,
 
-		Brute,
-		Barbare,
-		Berseker,
-
 		Ecuyer,
 		Jouteur,
-		Chevalier,
-
-		Combattant,
-		Mirmillon,
-		Champion,
+		Cavalier,
 
 		Defenseur,
 		Gardien,
 		Protecteur,
 
-		Prestidigitateur,
+		Pisteur,
+		Traqueur,
+		Rodeur,
+
+		Vagabond,
+		Voleur,
+		Roublard,
+
+		Multiforme,
+		Diversiforme,
+		Changeforme,
+
 		Invocateur,
 		Conjurateur,
+		Spiritualiste,
+
+		Troubadour,
+		Barde,
+		Menestrel,
+
+		Mage,
+		Magicien,
+		Hydromancien,
+
+		Incantateur,
+		Sorcier,
+		Pyromancien,
+
+		Naturaliste,
+		Druide,
+		Geomancien,
+
+		Apprenti,
+		Evocateur,
+		Aeromancien,
 
 		Thanathauste,
 		Necromage,
 		Necromancien,
-
-		Incantateur,
-		Sorcier,
-		Canalisateur,
-
-		Mage,
-		Magicien,
-		Thaumaturge,
-
-		Herboriste,
-		Druide,
-		ArchiDruide,
-
-		Eclaireur,
-		Pisteur,
-		Rodeur,
-
-		Maraudeur,
-		Pillard,
-		Voleur
 	}
 }

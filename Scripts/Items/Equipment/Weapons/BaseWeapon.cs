@@ -724,9 +724,9 @@ namespace Server.Items
 				Capacite capacite;
 
 				if (this is BaseRanged)
-					capacite = Custom.Classes.Capacite.ArmeDistance;
+					capacite = Custom.Classes.Capacite.ArmesDistance;
 				else
-					capacite = Custom.Classes.Capacite.Melee;
+					capacite = Custom.Classes.Capacite.ArmesMelee;
 
 				double value = pm.GetCapaciteValue(capacite);
 				ClasseInfo info = Classes.GetInfos(pm.Classe);
@@ -3022,9 +3022,9 @@ namespace Server.Items
 				var pm = attacker as CustomPlayerMobile;
 
 				if (this is BaseMeleeWeapon)
-					capaciteBonus = pm.GetCapaciteValue(Custom.Classes.Capacite.Melee) * 0.2;
+					capaciteBonus = pm.GetCapaciteValue(Custom.Classes.Capacite.ArmesMelee) * 0.2;
 				else if (this is BaseRanged)
-					capaciteBonus = pm.GetCapaciteValue(Custom.Classes.Capacite.ArmeDistance) * 0.2;
+					capaciteBonus = pm.GetCapaciteValue(Custom.Classes.Capacite.ArmesDistance) * 0.2;
 			}
 			#endregion
 

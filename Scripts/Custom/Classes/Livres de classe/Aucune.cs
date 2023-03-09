@@ -4,8 +4,9 @@ namespace Server
 {
     public class AucuneClasse
     {
+        private static string m_Name = "Aucune";
         private static Classe m_Classe = Classe.Aucune;
-        private static int m_Level = 0;
+		private static int m_Level = 0;
         private static ClasseMode m_ClasseMode = ClasseMode.Aucun;
         private static Classe m_ClasseAvant = Classe.Aucune;
         private static ClasseBranche m_ClasseBranche = ClasseBranche.Aucune;
@@ -31,7 +32,7 @@ namespace Server
                 m_Aptitudes,
                 m_Capacites,
                 m_Skills,
-				"Aucune",
+				m_Name,
 				m_ClasseBranche,
                 m_Active
             );

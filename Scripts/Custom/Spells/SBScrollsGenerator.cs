@@ -1,3 +1,6 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 using Server.Commands;
 
 namespace Server.Misc
@@ -28,61 +31,91 @@ namespace Server.Misc
         Description("Brings up the item script generator gump.")]
         private static void OnSBScrollGen(CommandEventArgs e)
         {
-            //string m_TotalTemplate = m_TemplatePrefix;
+			var template = new List<string>();
 
-            //for (int i = 0; i < NewBardSpellbook.m_DivineSpellBookEntry.Length; i++)
-            //{
-            //    DivineSpellBookEntry entry = (DivineSpellBookEntry)NewDivineSpellbookGump.m_DivineSpellBookEntry[i];
+			for(int i = 1; i < 120; i++)
+			{
+				var minute = i / 60;
+				var seconds = i - minute * 60;
+				var minuteMessage = minute > 0 ? $"{minute}m " : "";
 
-            //    if (entry != null && entry.ConnaissanceLevel <= 4)
-            //    {
-            //        int scrollappearance = m_CerclesID[entry.Cercle];
-            //        Spell spell = SpellRegistry.NewSpell(entry.SpellID, e.Mobile, null);
-            //        int price = entry.ConnaissanceLevel * 50;
-            //        int hue = 0;
-            //        string nom = entry.Nom;
+				template.Add($"<trigger triggertype=\"SysMessage\" duration=\"{i}\" triggertext=\"you must wait another {minuteMessage}{seconds}s before you may use this again while in combat.\" />");
+			}
 
-            //        if (spell != null)
-            //        {
-            //            Type spelltype = spell.GetType();
+			StreamWriter writer = null;
 
-            //            if (spelltype != null)//&& scrollappearance != 0
-            //            {
-            //                string final = m_Template;
+			string path = "TheBox\\" + DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString();
 
-            //                final = final.Replace("{spellid}", entry.SpellID.ToString());
-            //                final = final.Replace("{scrollappearance}", scrollappearance.ToString());
-            //                final = final.Replace("{spelltype}", spelltype.Name);
-            //                final = final.Replace("{price}", price.ToString());
-            //                final = final.Replace("{hue}", hue.ToString());
-            //                final = final.Replace("{nom}", nom);
-            //                final = final.Replace("{connlevel}", entry.ConnaissanceLevel.ToString());
+			if (!System.IO.Directory.Exists(path))
+			{
+				System.IO.Directory.CreateDirectory(path);
+			}
 
-            //                m_TotalTemplate = m_TotalTemplate + final;
-            //            }
-            //        }
-            //    }
-            //}
+			path = Path.Combine(path, string.Format(@"{0}.txt", "timers"));
+			writer = new StreamWriter(path, false);
+			foreach(var str in template)
+				writer.WriteLine(str);
 
-            //m_TotalTemplate = m_TotalTemplate + m_TemplateSuffixe;
+			e.Mobile.SendMessage(0x40, "timers" + " saved to {0}", path);
 
-            //StreamWriter writer = null;
+			if (writer != null)
+				writer.Close();
 
-            //string path = "TheBox\\" + DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString();
+			//string m_TotalTemplate = m_TemplatePrefix;
 
-            //if (!System.IO.Directory.Exists(path))
-            //{
-            //    System.IO.Directory.CreateDirectory(path);
-            //}
+			//for (int i = 0; i < NewBardSpellbook.m_DivineSpellBookEntry.Length; i++)
+			//{
+			//    DivineSpellBookEntry entry = (DivineSpellBookEntry)NewDivineSpellbookGump.m_DivineSpellBookEntry[i];
 
-            //path = Path.Combine(path, string.Format(@"{0}.cs", "SBScrollsa"));
-            //writer = new StreamWriter(path, false);
-            //writer.Write(m_TotalTemplate);
+			//    if (entry != null && entry.ConnaissanceLevel <= 4)
+			//    {
+			//        int scrollappearance = m_CerclesID[entry.Cercle];
+			//        Spell spell = SpellRegistry.NewSpell(entry.SpellID, e.Mobile, null);
+			//        int price = entry.ConnaissanceLevel * 50;
+			//        int hue = 0;
+			//        string nom = entry.Nom;
 
-            //e.Mobile.SendMessage(0x40, "SBScrolls" + " saved to {0}", path);
+			//        if (spell != null)
+			//        {
+			//            Type spelltype = spell.GetType();
 
-            //if (writer != null)
-            //    writer.Close();
-        }
-    }
+			//            if (spelltype != null)//&& scrollappearance != 0
+			//            {
+			//                string final = m_Template;
+
+			//                final = final.Replace("{spellid}", entry.SpellID.ToString());
+			//                final = final.Replace("{scrollappearance}", scrollappearance.ToString());
+			//                final = final.Replace("{spelltype}", spelltype.Name);
+			//                final = final.Replace("{price}", price.ToString());
+			//                final = final.Replace("{hue}", hue.ToString());
+			//                final = final.Replace("{nom}", nom);
+			//                final = final.Replace("{connlevel}", entry.ConnaissanceLevel.ToString());
+
+			//                m_TotalTemplate = m_TotalTemplate + final;
+			//            }
+			//        }
+			//    }
+			//}
+
+			//m_TotalTemplate = m_TotalTemplate + m_TemplateSuffixe;
+
+			//StreamWriter writer = null;
+
+			//string path = "TheBox\\" + DateTime.Now.Day.ToString() + "-" + DateTime.Now.Month.ToString();
+
+			//if (!System.IO.Directory.Exists(path))
+			//{
+			//    System.IO.Directory.CreateDirectory(path);
+			//}
+
+			//path = Path.Combine(path, string.Format(@"{0}.cs", "SBScrollsa"));
+			//writer = new StreamWriter(path, false);
+			//writer.Write(m_TotalTemplate);
+
+			//e.Mobile.SendMessage(0x40, "SBScrolls" + " saved to {0}", path);
+
+			//if (writer != null)
+			//    writer.Close();
+		}
+	}
 }

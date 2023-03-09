@@ -56,3 +56,48 @@
 3/5/2023 7:30:29 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'm tele'
 3/5/2023 7:39:13 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'go 5000 100'
 3/5/2023 7:39:30 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'm tele'
+3/8/2023 2:40:28 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'add newspellbookk'
+3/8/2023 2:40:30 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'add newspellbook'
+3/8/2023 2:40:31 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') building at (6129, 3195, 0) in Felucca: "newspellbook"
+3/8/2023 2:40:31 AM: 127.0.0.1: Serials: 0x40000016; 
+3/8/2023 2:40:52 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'allspells '
+3/8/2023 2:41:23 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'set rawint 100'
+3/8/2023 2:41:25 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'rawint' of 0x2 "Eowymos" ('Eowymos') to '100'
+3/8/2023 2:41:28 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'set mana 1000'
+3/8/2023 2:41:28 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'mana' of 0x2 "Eowymos" ('Eowymos') to '1000'
+3/8/2023 2:47:42 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'add newspellbook'
+3/8/2023 2:47:44 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') building at (6130, 3194, 0) in Felucca: "newspellbook"
+3/8/2023 2:47:44 AM: 127.0.0.1: Serials: 0x40000016; 
+3/8/2023 2:47:50 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'allspells '
+3/8/2023 2:47:54 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'save '
+3/8/2023 2:48:03 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'set rawind 100'
+3/8/2023 2:48:08 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'set rawint 100'
+3/8/2023 2:48:08 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'rawint' of 0x2 "Eowymos" ('Eowymos') to '100'
+3/8/2023 2:48:11 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'set mana 1000'
+3/8/2023 2:48:11 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'mana' of 0x2 "Eowymos" ('Eowymos') to '1000'
+3/8/2023 2:48:13 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'save '
+3/8/2023 3:00:05 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'add bagofr'
+3/8/2023 3:00:07 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') building at (6131, 3194, 0) in Felucca: "BagOfReagents"
+3/8/2023 3:00:07 AM: 127.0.0.1: Serials: 0x40000007; 
+3/8/2023 3:00:17 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'fiche '
+3/8/2023 3:00:24 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'props '
+3/8/2023 3:00:35 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'Aeromancie' of ... to '10'
+3/8/2023 3:00:48 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'skills '
+3/8/2023 3:01:09 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property '[Spirit Speak: 99].Base' of 0x2 "Eowymos" ('Eowymos') to '99'
+3/8/2023 3:01:28 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'set mana 1000'
+3/8/2023 3:01:29 AM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'mana' of 0x2 "Eowymos" ('Eowymos') to '1000'
+3/8/2023 4:14:14 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'sbscrollgen '
+3/8/2023 4:15:20 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'sbscrollgen '
+3/9/2023 1:48:17 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'add broadsword'
+3/9/2023 1:48:19 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') building at (6130, 3195, 0) in Felucca: "broadsword"
+3/9/2023 1:48:19 PM: 127.0.0.1: Serials: 0x40000007; 
+3/9/2023 1:49:50 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'add spellbook'
+3/9/2023 1:49:52 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') building at (6131, 3194, 0) in Felucca: "spellbook"
+3/9/2023 1:49:52 PM: 127.0.0.1: Serials: 0x40000007; 
+3/9/2023 1:51:06 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'props '
+3/9/2023 1:51:23 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'Resource' of 0x40000016 (NewSpellbook) to 'ArachnideLeather'
+3/9/2023 1:52:07 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'props '
+3/9/2023 1:52:10 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'Resource' of 0x40000016 (NewSpellbook) to 'LupusLeather'
+3/9/2023 1:53:39 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') used command 'props '
+3/9/2023 1:53:46 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'Resource' of 0x40000016 (NewSpellbook) to 'LupusLeather'
+3/9/2023 1:54:26 PM: 127.0.0.1: Owner 0x2 "Eowymos" ('Eowymos') set property 'Resource' of 0x40000016 (NewSpellbook) to 'ReptilienLeather'

@@ -4,7 +4,6 @@ using Server.Custom.Classes;
 using Server.Engines.Craft;
 using Server.Gumps;
 using Server.Mobiles;
-using Server.Services.Craft;
 
 namespace Server.Items
 {
@@ -178,8 +177,6 @@ namespace Server.Items
 					m_Marque = reader.ReadString();
 					
 					goto case 0;
-					
-                    break;
                 }
                 case 0:
                 {
@@ -195,12 +192,8 @@ namespace Server.Items
         #region ICraftable Members
 		public int OnCraft(int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, ITool tool, CraftItem craftItem, int resHue)
 		{
-			if (craftSystem is DefWriting && from is CustomPlayerMobile)
-			{
-				CustomPlayerMobile m = (CustomPlayerMobile)from;
-
-				m_Author = m;
-			}
+			if (craftSystem is DefInscription && from is CustomPlayerMobile)
+				m_Author = (CustomPlayerMobile)from;
 
 			return 1;
 		}

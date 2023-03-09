@@ -3,12 +3,9 @@
 	public enum ClasseMode
 	{
 		Aucun,
-		AmuseursPublics,
 		Artisans,
 		Guerriers,
 		Mages,
-		Nature,
-		Religion,
 		Roublards
 	}
 }

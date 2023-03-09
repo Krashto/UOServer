@@ -705,19 +705,7 @@ namespace Server.Spells
             {
                 CustomPlayerMobile m = (CustomPlayerMobile)Caster;
 
-                //mana = (int)SpellHelper.AdjustValue(m, mana, NAptitude.ConnaissancesAccrues);
-
                 mana = (int)(mana * (1 - (Caster.Int * 0.003)));
-
-                if (Caster is CustomPlayerMobile)
-                {
-                    CustomPlayerMobile pm = (CustomPlayerMobile)Caster;
-
-                    ClasseInfo info = Classes.GetInfos(pm.Classe);
-
-                    if (info != null && info.ClasseBranche == ClasseBranche.Paladin)
-                        mana *= 2;
-                }
             }
 
             if (scalar < 1.0)
@@ -923,7 +911,7 @@ namespace Server.Spells
 
 		public bool CheckMovement(Mobile caster)
 		{
-			throw new NotImplementedException();
+			return true;
 		}
 
 		public class CastTimer : Timer

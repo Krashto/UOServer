@@ -1957,21 +1957,17 @@ namespace Server.Mobiles
 
 		#region Aptitudes, Connaissances, Attributs
 
-		private Attributs m_Attributs;
-		private Aptitudes m_Aptitudes;
-		//private Capacites m_Capacites;
-
 		[CommandProperty(AccessLevel.GameMaster)]
 		public BAttributs BaseAttributs { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public Attributs Attributs { get { return m_Attributs; } set { } }
+		public Attributs Attributs { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public Aptitudes Aptitudes { get { return m_Aptitudes; } set { } }
+		public Aptitudes Aptitudes { get; set; }
 
 		//[CommandProperty(AccessLevel.GameMaster)]
-		//public Capacites Capacites { get { return m_Capacites; } set { } }
+		//public Capacites Capacites { get; set; }
 
 		public virtual void OnAptitudesChange(Aptitude aptitude, int oldvalue, int newvalue)
 		{
@@ -2015,12 +2011,12 @@ namespace Server.Mobiles
 
 		public virtual int GetAptitudeValue(Aptitude aptitude)
 		{
-			return m_Aptitudes[aptitude] + GetBaseAptitudeValue(aptitude);
+			return Aptitudes[aptitude] + GetBaseAptitudeValue(aptitude);
 		}
 
 		public int GetAttributValue(Attribut attribut)
 		{
-			return m_Attributs[attribut] + BaseAttributs[attribut];
+			return Attributs[attribut] + BaseAttributs[attribut];
 		}
 
 		public int GetCapaciteValue(Capacite capacite)
@@ -2049,7 +2045,7 @@ namespace Server.Mobiles
 			if (!CanBeginAction(typeof(ValidateType)))
 				return;
 
-			if (m_Aptitudes == null || Attributs == null/* || m_Capacites == null*/ || Skills == null)
+			if (Aptitudes == null || Attributs == null/* || m_Capacites == null*/ || Skills == null)
 				return;
 
 			BeginAction(typeof(ValidateType));
@@ -2059,7 +2055,7 @@ namespace Server.Mobiles
 				bool wasValid;
 				bool hasChange = false;
 
-				for (int i = 0; i < m_Aptitudes.m_Values.Length; ++i)
+				for (int i = 0; i < Aptitudes.m_Values.Length; ++i)
 				{
 					wasValid = true;
 					Aptitude aptitude = (Aptitude)i;
@@ -2085,7 +2081,7 @@ namespace Server.Mobiles
 
 					if (!wasValid)
 					{
-						OnAptitudesChange(aptitude, m_Aptitudes[aptitude] + 1, m_Aptitudes[aptitude]);
+						OnAptitudesChange(aptitude, Aptitudes[aptitude] + 1, Aptitudes[aptitude]);
 						SendMessage(String.Format("Vous n'aviez plus les prérequis pour l'aptitude {0}, sa valeur a donc été diminuée.", aptitude.ToString()));
 					}
 				}
@@ -2270,6 +2266,11 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
+				case 31:
+					{
+						Aptitudes = new Aptitudes(this, reader);
+						goto case 30;
+					}
 				case 30:
 					{
 						m_Classe = (Classe)reader.ReadInt();
@@ -2489,13 +2490,18 @@ namespace Server.Mobiles
 
 				}
 			}
+
+			if (version < 31)
+				Aptitudes = new Aptitudes(this);
 		}
 
 		public override void Serialize(GenericWriter writer)
         {        
             base.Serialize(writer);
 
-            writer.Write(30); // version
+            writer.Write(31); // version
+
+			Aptitudes.Serialize(writer);
 
 			writer.Write((int)m_Classe);
 

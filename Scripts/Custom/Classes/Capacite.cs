@@ -3,12 +3,14 @@
 	public enum Capacite
 	{
 		Armure,
-		Melee,
-		ArmeDistance,
+		ArmesMelee,
+		ArmesDistance,
 		Magie,
 		Bouclier,
 		Equitation,
 		Inspiration,
-		Expertise
+		Expertise,
+		Academique,
+		Sorcellerie,
 	}
 }

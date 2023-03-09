@@ -40,12 +40,15 @@ namespace Server.Items
 			Layer = Layer.OneHanded;
 		}
 
-		public override void AddNameProperty(ObjectPropertyList list)
+		public override void AddNameProperties(ObjectPropertyList list)
 		{
+			base.AddNameProperties(list);
+
 			string leatherType = string.Empty;
 
 			switch (m_Resource)
 			{
+				case CraftResource.LupusLeather: leatherType = "de lupus"; break;
 				case CraftResource.ReptilienLeather: leatherType = "reptilien"; break;
 				case CraftResource.GeantLeather: leatherType = "de geant"; break;
 				case CraftResource.OphidienLeather: leatherType = "d'ophidien"; break;
