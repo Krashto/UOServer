@@ -70,3 +70,20 @@ Config/DataPath.cfg
 /Application/obj/Debug/ServUO.csproj.AssemblyReference.cache
 /Scripts/obj/Debug/Scripts.csproj.AssemblyReference.cache
 /Config/DataPath.cfg
+/Saves/Mobiles/Mobiles.idx
+/Saves/Mobiles/Mobiles.bin
+/Saves/CustomPersistence.bin
+/Saves/Items/Items.tdb
+/Saves/Items/Items.idx
+/Saves/Items/Items.bin
+/Saves/Misc/Astronomy.bin
+/Saves/Accounts/accounts.xml
+/Logs/Commands/Player/admin.log
+/Backups/Automatic/Third Backup/Accounts/accounts.xml
+/Backups/Automatic/Third Backup/Items/Items.tdb
+/Backups/Automatic/Third Backup/Items/Items.idx
+/Backups/Automatic/Third Backup/Items/Items.bin
+/Backups/Automatic/Third Backup/Quests/MLQuests.bin
+/Backups/Automatic/Third Backup/Mobiles/Mobiles.tdb
+/Backups/Automatic/Second Backup/CustomPersistence.bin
+/Backups/Automatic/Second Backup/Misc/Astronomy.bin
