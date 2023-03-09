@@ -55,3 +55,13 @@
 # Exclude Data Files
 /Data/PVPTournamentSystemData
 Config/DataPath.cfg
+/Application/obj/ServUO.csproj.nuget.g.props
+/Application/obj/Debug/ServUO.pdb
+/Application/obj/Debug/ServUO.GeneratedMSBuildEditorConfig.editorconfig
+/Application/obj/Debug/ServUO.exe
+/Application/obj/Debug/ServUO.csproj.FileListAbsolute.txt
+/Application/obj/Debug/ServUO.csproj.CoreCompileInputs.cache
+/Application/obj/Debug/ServUO.csproj.AssemblyReference.cache
+/Application/obj/Debug/ServUO.assets.cache
+/Application/obj/project.assets.json
+/.vs/ServUO/v17/.suo

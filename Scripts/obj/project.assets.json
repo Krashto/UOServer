@@ -83,19 +83,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eowym\\.nuget\\packages\\": {}
+    "C:\\Users\\vince\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NewUoServer2023\\Scripts\\Scripts.csproj",
+      "projectUniqueName": "D:\\KaldeniaServer\\Scripts\\Scripts.csproj",
       "projectName": "Scripts",
-      "projectPath": "C:\\NewUoServer2023\\Scripts\\Scripts.csproj",
-      "packagesPath": "C:\\Users\\eowym\\.nuget\\packages\\",
-      "outputPath": "C:\\NewUoServer2023\\Scripts\\obj\\",
+      "projectPath": "D:\\KaldeniaServer\\Scripts\\Scripts.csproj",
+      "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
+      "outputPath": "D:\\KaldeniaServer\\Scripts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\eowym\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vince\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -109,8 +109,8 @@
         "net48": {
           "targetAlias": "net48",
           "projectReferences": {
-            "C:\\NewUoServer2023\\Server\\Server.csproj": {
-              "projectPath": "C:\\NewUoServer2023\\Server\\Server.csproj"
+            "D:\\KaldeniaServer\\Server\\Server.csproj": {
+              "projectPath": "D:\\KaldeniaServer\\Server\\Server.csproj"
             }
           }
         }
@@ -124,7 +124,7 @@
     "frameworks": {
       "net48": {
         "targetAlias": "net48",
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

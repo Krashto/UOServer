@@ -43,3 +43,12 @@ D:\KaldeniaV31\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
 D:\KaldeniaV31\Server\obj\Debug\Server.csproj.CopyComplete
 D:\KaldeniaV31\Server\obj\Debug\Server.dll
 D:\KaldeniaV31\Server\obj\Debug\Server.pdb
+D:\KaldeniaServer\Server\bin\Debug\Server.dll
+D:\KaldeniaServer\Server\bin\Debug\Server.pdb
+D:\KaldeniaServer\Server\bin\Debug\System.Drawing.Common.dll
+D:\KaldeniaServer\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+D:\KaldeniaServer\Server\obj\Debug\Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\KaldeniaServer\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\KaldeniaServer\Server\obj\Debug\Server.csproj.CopyComplete
+D:\KaldeniaServer\Server\obj\Debug\Server.dll
+D:\KaldeniaServer\Server\obj\Debug\Server.pdb
