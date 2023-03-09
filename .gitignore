@@ -65,3 +65,6 @@ Config/DataPath.cfg
 /Application/obj/Debug/ServUO.assets.cache
 /Application/obj/project.assets.json
 /.vs/ServUO/v17/.suo
+/.vs/ServUO/v17/.suo
+/Application/obj/Debug/ServUO.csproj.AssemblyReference.cache
+/Scripts/obj/Debug/Scripts.csproj.AssemblyReference.cache
