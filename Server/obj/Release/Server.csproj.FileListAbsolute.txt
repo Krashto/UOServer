@@ -1,8 +1,0 @@
-C:\Kaldenia\Serveur\Server\bin\Release\Server.dll
-C:\Kaldenia\Serveur\Server\bin\Release\Server.pdb
-C:\Kaldenia\Serveur\Server\bin\Release\System.Drawing.Common.dll
-C:\Kaldenia\Serveur\Server\obj\Release\Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Kaldenia\Serveur\Server\obj\Release\Server.csproj.CoreCompileInputs.cache
-C:\Kaldenia\Serveur\Server\obj\Release\Server.csproj.CopyComplete
-C:\Kaldenia\Serveur\Server\obj\Release\Server.dll
-C:\Kaldenia\Serveur\Server\obj\Release\Server.pdb
