@@ -1,6 +1,7 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -39,12 +40,20 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				Disturb(m);
 
-				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+				MovingSpells.PushMobileTo(Caster, Caster.Location, MovingSpells.GetOppositeDirection(Caster.Direction), 3);
 
-				m.ApplyPoison(Caster, Poison.GetPoison(0));
+				double damage = GetNewAosDamage(m, 6, 1, 2, false);
 
-				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
-				m.PlaySound(0x474);
+				if (CheckResisted(m))
+				{
+					damage *= 0.75;
+					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				}
+
+				Caster.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+				Caster.PlaySound(0x44B);
+
+				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 			}
 
 			FinishSequence();

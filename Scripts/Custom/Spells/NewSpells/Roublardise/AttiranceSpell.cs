@@ -35,13 +35,17 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (CheckHSequence(m))
 			{
-				SpellHelper.Turn(Caster, m);
-
 				Disturb(m);
 
+				SpellHelper.Turn(Caster, m);
+				SpellHelper.Turn(m, Caster);
+
+				MovingSpells.PushMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(Caster.Direction), (int)Caster.GetDistanceToSqrt(m));
+
+				m.Attack(Caster);
 				Caster.Attack(m);
 
-				m.MoveToWorld(Caster.Location, Caster.Map);
+				//m.MoveToWorld(Caster.Location, Caster.Map);
 
 				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
 				m.PlaySound(0x474);

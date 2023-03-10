@@ -26,6 +26,12 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 		public override void OnCast()
 		{
+			if (CheckSequence())
+			{
+				MovingSpells.PushMobileTo(Caster, Caster.Location, MovingSpells.GetOppositeDirection(Caster.Direction), 3);
+				Caster.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
+				Caster.PlaySound(0x474);
+			}
 
 			FinishSequence();
 		}

@@ -44,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 					Caster.BodyMod = 13;
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+					Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
 					m_Timers[Caster] = t;
 					t.Start();
 				}
@@ -80,13 +80,15 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public class InternalTimer : Timer
 		{
-			private Mobile m_Target;
+			private Mobile m_From;
+			private FormeCycloniqueSpell m_Owner;
 			private DateTime m_Endtime;
 
-			public InternalTimer(Mobile target, DateTime end)
+			public InternalTimer(Mobile from, FormeCycloniqueSpell owner, DateTime end)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
-				m_Target = target;
+				m_From = from;
+				m_Owner = owner;
 				m_Endtime = end;
 
 				Priority = TimerPriority.OneSecond;
@@ -94,19 +96,63 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 			protected override void OnTick()
 			{
-				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Target) || m_Target == null || m_Target.Deleted || !m_Target.Alive)
+				var targets = new ArrayList();
+
+				var map = m_From.Map;
+
+				if (map != null)
 				{
-					var t = m_Timers[m_Target] as Timer;
+					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, 2);
+
+					foreach (Mobile m in eable)
+						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
+							targets.Add(m);
+
+					eable.Free();
+				}
+
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var m = (Mobile)targets[i];
+
+						var source = m_From;
+
+						Disturb(m);
+
+						double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
+
+						if (m_Owner.CheckResisted(m))
+							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+						else
+						{
+							SpellHelper.Turn(m, source);
+
+							MovingSpells.PushMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 2);
+
+							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+							source.PlaySound(0x44B);
+							damage *= 0.75;
+						}
+
+						SpellHelper.Damage(m_Owner, m, damage, 0, 100, 0, 0, 0);
+					}
+				}
+
+				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_From) || m_From == null || m_From.Deleted || !m_From.Alive)
+				{
+					var t = m_Timers[m_From] as Timer;
 
 					if (t != null)
 					{
 						t.Stop();
-						m_Timers.Remove(m_Target);
+						m_Timers.Remove(m_From);
 
-						m_Target.BodyMod = 0;
+						m_From.BodyMod = 0;
 
-						m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-						m_Target.PlaySound(508);
+						m_From.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+						m_From.PlaySound(508);
 					}
 
 					Stop();

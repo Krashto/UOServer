@@ -1,8 +1,5 @@
 using System;
 using System.Collections;
-using Server.Targeting;
-using Server.Misc;
-using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
@@ -10,6 +7,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
 	public class TornadoSpell : Spell
 	{
+		private static Hashtable m_Timers = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Tornado", "Evo Wis An Por Grav",
 				SpellCircle.Third,
@@ -33,285 +32,117 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
-			Caster.Target = new InternalTarget(this);
-		}
+			var duration = GetDurationForSpell(30, 1.8);
 
-		public void Target(IPoint3D p)
-		{
-			if (!Caster.CanSee(p))
-				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (SpellHelper.CheckTown(p, Caster) && CheckSequence())
-			{
-				SpellHelper.Turn(Caster, p);
+			Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
+			m_Timers[Caster] = t;
+			t.Start();
 
-				SpellHelper.GetSurfaceTop(ref p);
-
-				Effects.PlaySound(p, Caster.Map, 0x20C);
-
-				var itemID = 0x3709;
-
-				var duration = GetDurationForSpell(0.7);
-
-				var loc = new Point3D(p.X, p.Y, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X, p.Y - 1, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X, p.Y + 1, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X + 1, p.Y, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X + 1, p.Y - 1, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X + 1, p.Y + 1, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X - 1, p.Y, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X - 1, p.Y - 1, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-
-				loc = new Point3D(p.X - 1, p.Y + 1, p.Z);
-				new InternalItem(itemID, loc, Caster, Caster.Map, duration, 1);
-			}
+			Caster.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+			Caster.PlaySound(508);
 
 			FinishSequence();
 		}
 
-		[DispellableField]
-		public class InternalItem : Item
+		public static bool IsActive(Mobile m)
 		{
-			private Timer m_Timer;
-			private DateTime m_End;
-			private Mobile m_Caster;
+			return m_Timers.ContainsKey(m);
+		}
+		public void StopTimer(Mobile m)
+		{
+			var t = m_Timers[m] as Timer;
 
-			public override bool BlocksFit { get { return true; } }
-
-			public InternalItem(int itemID, Point3D loc, Mobile caster, Map map, TimeSpan duration, int val)
-				: base(itemID)
+			if (t != null)
 			{
-				var canFit = SpellHelper.AdjustField(ref loc, map, 12, false);
+				t.Stop();
+				m_Timers.Remove(m);
 
-				Hue = 0x895;
-				Visible = false;
-				Movable = false;
+				Caster.BodyMod = 0;
 
-				MoveToWorld(loc, map);
-
-				if (caster.InLOS(this))
-					Visible = true;
-				else
-					Delete();
-
-				if (!Deleted && VerifyOtherFields(caster))
-					Delete();
-
-				if (Deleted)
-					return;
-
-				m_Caster = caster;
-
-				m_End = DateTime.Now + duration;
-
-				m_Timer = new InternalTimer(this, TimeSpan.FromSeconds(Math.Abs(val) * 0.2), caster.InLOS(this), canFit);
-				m_Timer.Start();
-			}
-
-			public bool VerifyOtherFields(Mobile caster)
-			{
-				var map = Map;
-
-				var test = false;
-
-				IPooledEnumerable eable = map.GetItemsInRange(Location, 0);
-
-				if (Deleted)
-					return false;
-
-				foreach (Item item in eable)
-				{
-					if (item != null && this == item)
-						continue;
-
-					if (item != null && (item is InternalItem))
-					{
-						caster.SendMessage("Vous ne pouvez pas lancer un tornado au même endroit qu'un autre mur.");
-						test = true;
-					}
-				}
-
-				return test;
-			}
-
-			public override void OnAfterDelete()
-			{
-				base.OnAfterDelete();
-
-				if (m_Timer != null)
-					m_Timer.Stop();
-			}
-
-			public InternalItem(Serial serial) : base(serial)
-			{
-			}
-
-			public override void Serialize(GenericWriter writer)
-			{
-				base.Serialize(writer);
-
-				writer.Write(1); // version
-
-				writer.Write(m_Caster);
-				writer.WriteDeltaTime(m_End);
-			}
-
-			public override void Deserialize(GenericReader reader)
-			{
-				base.Deserialize(reader);
-
-				var version = reader.ReadInt();
-
-				switch (version)
-				{
-					case 1:
-						{
-							m_Caster = reader.ReadMobile();
-
-							goto case 0;
-						}
-					case 0:
-						{
-							m_End = reader.ReadDeltaTime();
-
-							m_Timer = new InternalTimer(this, TimeSpan.Zero, true, true);
-							m_Timer.Start();
-
-							break;
-						}
-				}
-			}
-
-			public override bool OnMoveOver(Mobile m)
-			{
-				if (Visible && m_Caster != null && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false))
-				{
-					m_Caster.DoHarmful(m);
-
-					var damage = Utility.Random(20, 30);
-
-					damage = (int)SpellHelper.AdjustValue(m_Caster, damage, Aptitude.Aeromancie);
-
-					AOS.Damage(m, m_Caster, damage, 0, 0, 100, 0, 0);
-					m.PlaySound(0x208);
-					Delete();
-				}
-
-				return true;
-			}
-
-			private class InternalTimer : Timer
-			{
-				private InternalItem m_Item;
-				private bool m_InLOS, m_CanFit;
-
-				private static Queue m_Queue = new Queue();
-
-				public InternalTimer(InternalItem item, TimeSpan delay, bool inLOS, bool canFit) : base(delay, TimeSpan.FromSeconds(1.0))
-				{
-					m_Item = item;
-					m_InLOS = inLOS;
-					m_CanFit = canFit;
-
-					Priority = TimerPriority.TwoFiftyMS;
-				}
-
-				protected override void OnTick()
-				{
-					if (m_Item.Deleted)
-						return;
-
-					if (!m_Item.Visible)
-					{
-						if (m_InLOS && m_CanFit)
-							m_Item.Visible = true;
-						else
-							m_Item.Delete();
-
-						if (!m_Item.Deleted)
-						{
-							m_Item.ProcessDelta();
-							Effects.SendLocationParticles(EffectItem.Create(m_Item.Location, m_Item.Map, EffectItem.DefaultDuration), 0x376A, 9, 10, 5029);
-						}
-					}
-					else if (DateTime.Now > m_Item.m_End)
-					{
-						m_Item.Delete();
-						Stop();
-					}
-					else
-					{
-						var map = m_Item.Map;
-						var caster = m_Item.m_Caster;
-
-						if (map != null && caster != null)
-						{
-							foreach (var m in m_Item.GetMobilesInRange(0))
-								if (m.Z + 16 > m_Item.Z && m_Item.Z + 12 > m.Z && SpellHelper.ValidIndirectTarget(caster, m) && caster.CanBeHarmful(m, false))
-									m_Queue.Enqueue(m);
-
-							var todelete = false;
-
-							while (m_Queue.Count > 0)
-							{
-								var m = (Mobile)m_Queue.Dequeue();
-
-								caster.DoHarmful(m);
-
-								var damage = Utility.Random(20, 30);
-
-								damage = (int)SpellHelper.AdjustValue(caster, damage, Aptitude.Aeromancie);
-
-								AOS.Damage(m, caster, damage, 0, 0, 100, 0, 0);
-								m.PlaySound(0x208);
-
-								todelete = true;
-							}
-
-							if (todelete)
-							{
-								m_Item.Delete();
-								Stop();
-							}
-						}
-					}
-				}
+				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+				m.PlaySound(508);
 			}
 		}
 
-		private class InternalTarget : Target
+		public class InternalTimer : Timer
 		{
+			private Mobile m_From;
 			private TornadoSpell m_Owner;
+			private DateTime m_Endtime;
 
-			public InternalTarget(TornadoSpell owner)
-				: base(12, true, TargetFlags.Harmful)
+			public InternalTimer(Mobile from, TornadoSpell owner, DateTime end)
+				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
+				m_From = from;
 				m_Owner = owner;
+				m_Endtime = end;
+
+				Priority = TimerPriority.OneSecond;
 			}
 
-			protected override void OnTarget(Mobile from, object o)
+			protected override void OnTick()
 			{
-				if (o is IPoint3D)
-					m_Owner.Target((IPoint3D)o);
-			}
+				var targets = new ArrayList();
 
-			protected override void OnTargetFinish(Mobile from)
-			{
-				m_Owner.FinishSequence();
+				var map = m_From.Map;
+
+				if (map != null)
+				{
+					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, 2);
+
+					foreach (Mobile m in eable)
+						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
+							targets.Add(m);
+
+					eable.Free();
+				}
+
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var m = (Mobile)targets[i];
+
+						var source = m_From;
+
+						Disturb(m);
+
+						double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
+
+						if (m_Owner.CheckResisted(m))
+							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+						else
+						{
+							SpellHelper.Turn(m, source);
+
+							MovingSpells.PushMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 2);
+
+							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+							source.PlaySound(0x44B);
+							damage *= 0.75;
+						}
+
+						SpellHelper.Damage(m_Owner, m, damage, 0, 100, 0, 0, 0);
+					}
+				}
+
+				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_From) || m_From == null || m_From.Deleted || !m_From.Alive)
+				{
+					var t = m_Timers[m_From] as Timer;
+
+					if (t != null)
+					{
+						t.Stop();
+						m_Timers.Remove(m_From);
+
+						m_From.BodyMod = 0;
+
+						m_From.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+						m_From.PlaySound(508);
+					}
+
+					Stop();
+				}
 			}
 		}
 	}
