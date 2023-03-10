@@ -18,8 +18,8 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				Reagent.GraveDust
 			);
 
-		public override int RequiredAptitudeValue { get { return 8; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
+		public override int RequiredAptitudeValue { get { return 99; } }
+		//public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
 
 		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.Forensics; } }

@@ -33,15 +33,26 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
+			{
 				StopTimer(Caster);
+			}
+			else
+			{
+				if (Caster.BodyMod == 0)
+				{
+					var duration = GetDurationForSpell(30, 1.8);
 
-			var duration = GetDurationForSpell(30, 1.8);
+					Caster.BodyMod = 13;
 
-			Caster.BodyMod = 13;
-
-			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
+					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+					m_Timers[Caster] = t;
+					t.Start();
+				}
+				else
+				{
+					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
+				}
+			}
 
 			FinishSequence();
 		}
@@ -60,7 +71,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				t.Stop();
 				m_Timers.Remove(m);
 
-				Caster.BodyMod = -1;
+				Caster.BodyMod = 0;
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -92,7 +103,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 						t.Stop();
 						m_Timers.Remove(m_Target);
 
-						m_Target.BodyMod = -1;
+						m_Target.BodyMod = 0;
 
 						m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 						m_Target.PlaySound(508);

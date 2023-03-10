@@ -211,7 +211,6 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						m_Timers.Remove(m_Target);
 
 						m_Target.CantWalk = false;
-						m_Target.BodyMod = -1;
 
 						m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 						m_Target.PlaySound(508);

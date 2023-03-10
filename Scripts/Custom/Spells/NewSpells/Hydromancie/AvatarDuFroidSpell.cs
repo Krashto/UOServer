@@ -2,6 +2,7 @@ using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System;
+using System.Web.UI.WebControls;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -30,14 +31,19 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override void OnCast()
 		{
-			var duration = GetDurationForSpell(0.1);
+			if (IsActive(Caster))
+				StopTimer(Caster);
+			else
+			{
+				var duration = GetDurationForSpell(0.1);
 
-			Caster.Freeze(duration);
-			Caster.Blessed = true;
+				Caster.Freeze(duration);
+				Caster.Blessed = true;
 
-			Timer t = new InternalTimer(Caster, duration);
-			m_Timers[Caster] = t;
-			t.Start();
+				Timer t = new InternalTimer(Caster, duration);
+				m_Timers[Caster] = t;
+				t.Start();
+			}
 
 			FinishSequence();
 		}
@@ -45,6 +51,20 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		public static bool IsActive(Mobile m)
 		{
 			return m_Timers.ContainsKey(m);
+		}
+
+		public void StopTimer(Mobile m)
+		{
+			var t = m_Timers[m] as Timer;
+
+			if (t != null)
+			{
+				t.Stop();
+				m_Timers.Remove(m);
+
+				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+				m.PlaySound(508);
+			}
 		}
 
 		public class InternalTimer : Timer

@@ -22,8 +22,6 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 		public override int RequiredAptitudeValue { get { return 99; } }
 		//public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Invocation }; } }
 
-		public override bool Invocation { get { return true; } }
-
 		public CreatureSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}

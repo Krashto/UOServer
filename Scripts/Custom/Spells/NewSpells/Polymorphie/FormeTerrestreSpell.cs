@@ -34,31 +34,42 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
+			{
 				StopTimer(Caster);
+			}
+			else
+			{
+				if (Caster.BodyMod == 0)
+				{
+					var duration = GetDurationForSpell(30, 1.8);
 
-			var duration = GetDurationForSpell(30, 1.8);
+					Caster.BodyMod = 14;
 
-			Caster.BodyMod = 14;
+					var value = SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 10, Aptitude.Polymorphie);
 
-			var value = SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 10, Aptitude.Polymorphie);
-
-			var mods = new ResistanceMod[5]
-					{
+					var mods = new ResistanceMod[5]
+							{
 						new ResistanceMod( ResistanceType.Physical, (int)value),
 						new ResistanceMod( ResistanceType.Fire, (int)value ),
 						new ResistanceMod( ResistanceType.Cold, (int)value ),
 						new ResistanceMod( ResistanceType.Poison, (int)value ),
 						new ResistanceMod( ResistanceType.Energy, (int)value ),
-					};
+							};
 
-			m_Table[Caster] = mods;
+					m_Table[Caster] = mods;
 
-			foreach(var mod in mods)
-				Caster.AddResistanceMod(mod);
+					foreach (var mod in mods)
+						Caster.AddResistanceMod(mod);
 
-			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
+					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+					m_Timers[Caster] = t;
+					t.Start();
+				}
+				else
+				{
+					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
+				}
+			}
 
 			FinishSequence();
 		}
@@ -79,7 +90,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				Caster.BodyMod = -1;
+				Caster.BodyMod = 0;
 
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
@@ -116,7 +127,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 						m_Timers.Remove(m_Target);
 						m_Table.Remove(m_Target);
 
-						m_Target.BodyMod = -1;
+						m_Target.BodyMod = 0;
 
 						foreach (var mod in mods)
 							m_Target.RemoveResistanceMod(mod);

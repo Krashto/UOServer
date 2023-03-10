@@ -87,9 +87,14 @@ namespace Server.Custom.Weapons
 		public static string GetWeaponAbilityNamesByWeaponType(IWeapon weapon)
 		{
 			if (weapon == null)
-				return null;
+				return String.Empty;
 
-			return AddSpacesToSentence(GetWeaponAbilityIndexByWeaponType(weapon).Name, true);
+			var wa = GetWeaponAbilityIndexByWeaponType(weapon);
+
+			if (wa == null)
+				return String.Empty;
+
+			return AddSpacesToSentence(wa.Name, true);
 		}
 
 		public static string AddSpacesToSentence(string text, bool preserveAcronyms)

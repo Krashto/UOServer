@@ -3,7 +3,6 @@ using Server.Items;
 using Server.Network;
 using Server.Targeting;
 using Server.Mobiles;
-using Server.Custom.Classes;
 using Server.Custom;
 using Server.Spells.OldSpells;
 using Server.Custom.Aptitudes;
@@ -724,8 +723,6 @@ namespace Server.Spells
 			return (long)(delay * 1000);
 		}
 
-        public virtual bool Invocation { get { return false; } }
-
 		public virtual int CastRecoveryBase{ get{ return 2; } }
 		public virtual int CastRecoveryCircleScalar{ get{ return 0; } }
 		public virtual int CastRecoveryFastScalar{ get{ return 0; } }
@@ -747,14 +744,7 @@ namespace Server.Spells
 		{
             int scalar = 2;
 
-            if (Invocation)
-                scalar = 1;
-
             double value = (CastDelayBase + (CastDelayCircleScalar * (int)Circle / scalar)) / CastDelayPerSecond;
-
-			double bonus = 0; 
-
-            value *= bonus;
 
             if (value < CastDelayMinimum)
                 value = CastDelayMinimum;

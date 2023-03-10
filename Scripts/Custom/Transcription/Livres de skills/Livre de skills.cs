@@ -412,7 +412,7 @@ namespace Server.Items
                     case "Lumberjacking": m_Skill = SkillName.Lumberjacking; break;
                     case "Mining": m_Skill = SkillName.Mining; break;
                     case "Meditation": m_Skill = SkillName.Meditation; break;
-                    case "Equitation": m_Skill = SkillName.Stealth; break;
+                    case "Stealth": m_Skill = SkillName.Stealth; break;
                     case "RemoveTrap": m_Skill = SkillName.RemoveTrap; break;
                 }
             }

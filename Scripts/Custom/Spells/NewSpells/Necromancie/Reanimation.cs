@@ -26,8 +26,6 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public override bool Invocation { get { return true; } }
-
 		public ReanimationSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}

@@ -58,6 +58,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				var toHeal = SpellHelper.AdjustValue(Caster, Utility.Random(min, max), Aptitude.Necromancie);
 				Caster.Heal((int)toHeal);
 
+				Caster.Emote("Absorbe la cible.");
+
 				c.TurnToBones();
 			}
 			else

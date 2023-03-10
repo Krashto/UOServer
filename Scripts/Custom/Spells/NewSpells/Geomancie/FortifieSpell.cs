@@ -36,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 			var duration = GetDurationForSpell(0.15);
 
-			var value = 1 + (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 600;
+			var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
 
 			ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
 
@@ -58,7 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			return m_Table.ContainsKey(m);
 		}
 
-		public void StopTimer(Mobile m)
+		public static void StopTimer(Mobile m)
 		{
 			var t = m_Timers[m] as Timer;
 			var mod = m_Table[m] as ResistanceMod;

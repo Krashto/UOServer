@@ -33,8 +33,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			Caster.Target = new InternalTarget(this);
 		}
 
-		public override bool DelayedDamage { get { return true; } }
-
 		public void Target(IPoint3D p)
 		{
 			if (!Caster.CanSee(p))
@@ -47,6 +45,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					p = ((Item)p).GetWorldLocation();
 
 				var targets = new ArrayList();
+
+				targets.Add(Caster);
 
 				var map = Caster.Map;
 

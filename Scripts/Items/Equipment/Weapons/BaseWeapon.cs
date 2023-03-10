@@ -1789,7 +1789,10 @@ namespace Server.Items
             }
 
 			if (FormeEmpoisonneeSpell.IsActive(attacker))
-				defender.ApplyPoison(attacker, Poison.Deadly);
+			{
+				WeaponAbility.SetCurrentAbility(attacker, WeaponAbility.InfectiousStrike);
+				attacker.SendMessage("Votre prochain coup empoisonnera votre cible.");
+			}
 
 			//if (FormeCycloniqueSpell.IsActive(attacker))
 			//	defender. TODO: PUSH
@@ -2148,43 +2151,23 @@ namespace Server.Items
 			if (AuraVampiriqueSpell.IsActive(attacker))
 				lifeLeech += 25;
 
-			int toHealCursedWeaponSpell = 0;
-
-            if (stamLeech != 0)
-                attacker.Stam += AOS.Scale(damageGiven, stamLeech);
-
             if (lifeLeech != 0)
             {
-                int toHeal = Utility.RandomMinMax(0, (int)(AOS.Scale(damageGiven, lifeLeech) * 0.3));
-
-                if (defender is BaseCreature && ((BaseCreature)defender).TaintedLifeAura)
-                {
-                    AOS.Damage(attacker, defender, toHeal, false, 0, 0, 0, 0, 0, 0, 100, false, false, false);
-                    attacker.SendLocalizedMessage(1116778); //The tainted life force energy damages you as your body tries to absorb it.
-                }
-                else
-                {
-                    attacker.Hits += toHeal;
-                }
+                int toHeal = AOS.Scale(damageGiven, lifeLeech);
+				attacker.Hits += toHeal;
 
                 Effects.SendPacket(defender.Location, defender.Map, new ParticleEffect(EffectType.FixedFrom, defender.Serial, Serial.Zero, 0x377A, defender.Location, defender.Location, 1, 15, false, false, 1926, 0, 0, 9502, 1, defender.Serial, 16, 0));
                 Effects.SendPacket(defender.Location, defender.Map, new ParticleEffect(EffectType.FixedFrom, defender.Serial, Serial.Zero, 0x3728, defender.Location, defender.Location, 1, 12, false, false, 1963, 0, 0, 9042, 1, defender.Serial, 16, 0));
             }
 
-            if (toHealCursedWeaponSpell != 0 && !(defender is BaseCreature && ((BaseCreature)defender).TaintedLifeAura))
-            {
-                attacker.Hits += toHealCursedWeaponSpell;
-            }
+			if (stamLeech != 0)
+				attacker.Stam += AOS.Scale(damageGiven, stamLeech);
 
-            if (manaLeech != 0)
-            {
+			if (manaLeech != 0)
                 attacker.Mana += Utility.RandomMinMax(0, (int)(AOS.Scale(damageGiven, manaLeech) * 0.4));
-            }
 
-            if (lifeLeech != 0 || stamLeech != 0 || manaLeech != 0 || toHealCursedWeaponSpell != 0)
-            {
+            if (lifeLeech != 0 || stamLeech != 0 || manaLeech != 0)
                 attacker.PlaySound(0x44D);
-            }
 
             if (attacker is VampireBatFamiliar || attacker is VampireBat)
             {

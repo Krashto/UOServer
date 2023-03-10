@@ -33,15 +33,26 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
+			{
 				StopTimer(Caster);
+			}
+			else
+			{
+				if (Caster.BodyMod == 0)
+				{
+					var duration = GetDurationForSpell(30, 1.8);
 
-			var duration = GetDurationForSpell(30, 1.8);
+					Caster.BodyMod = 15;
 
-			Caster.BodyMod = 15;
-
-			Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
+					Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
+					m_Timers[Caster] = t;
+					t.Start();
+				}
+				else
+				{
+					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
+				}
+			}
 
 			FinishSequence();
 		}
@@ -60,7 +71,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				t.Stop();
 				m_Timers.Remove(m);
 
-				Caster.BodyMod = -1;
+				Caster.BodyMod = 0;
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -69,14 +80,15 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public class InternalTimer : Timer
 		{
-			private Mobile m_Target;
+			private Mobile m_From;
 			FormeEnflammeeSpell m_Owner;
 			private DateTime m_Endtime;
 
-			public InternalTimer(Mobile target, FormeEnflammeeSpell owner, DateTime end)
+			public InternalTimer(Mobile from, FormeEnflammeeSpell owner, DateTime end)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
-				m_Target = target;
+				m_From = from;
+				m_Owner = owner;
 				m_Endtime = end;
 
 				Priority = TimerPriority.OneSecond;
@@ -86,14 +98,14 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 			{
 				var targets = new ArrayList();
 
-				var map = m_Target.Map;
+				var map = m_From.Map;
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(m_Target.Location, 2);
+					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, 2);
 
 					foreach (Mobile m in eable)
-						if (m_Target != m && SpellHelper.ValidIndirectTarget(m_Target, m) && m_Target.CanBeHarmful(m, false))
+						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
 							targets.Add(m);
 
 					eable.Free();
@@ -105,7 +117,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 					{
 						var m = (Mobile)targets[i];
 
-						var source = m_Target;
+						var source = m_From;
 
 						SpellHelper.Turn(source, m);
 
@@ -116,7 +128,6 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 						if (m_Owner.CheckResisted(m))
 						{
 							damage *= 0.75;
-
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
@@ -127,19 +138,19 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 					}
 				}
 
-				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Target) || m_Target == null || m_Target.Deleted || !m_Target.Alive)
+				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_From) || m_From == null || m_From.Deleted || !m_From.Alive)
 				{
-					var t = m_Timers[m_Target] as Timer;
+					var t = m_Timers[m_From] as Timer;
 
 					if (t != null)
 					{
 						t.Stop();
-						m_Timers.Remove(m_Target);
+						m_Timers.Remove(m_From);
 
-						m_Target.BodyMod = -1;
+						m_From.BodyMod = 0;
 
-						m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-						m_Target.PlaySound(508);
+						m_From.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+						m_From.PlaySound(508);
 					}
 
 					Stop();

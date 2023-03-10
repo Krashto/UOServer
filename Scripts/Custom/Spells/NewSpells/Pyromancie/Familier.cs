@@ -20,13 +20,11 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				Reagent.DaemonBlood
 			);
 
-		public override int RequiredAptitudeValue { get { return 1; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
+		public override int RequiredAptitudeValue { get { return 99; } }
+		//public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
 
 		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.Forensics; } }
-
-		public override bool Invocation { get { return true; } }
 
 		public FamilierSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)

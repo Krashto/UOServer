@@ -83,7 +83,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			return m_Table.ContainsKey(m);
 		}
 
-		public void StopTimer(Mobile m)
+		public static void StopTimer(Mobile m)
 		{
 			var t = (Timer)m_Timers[m];
 			var mod = (ResistanceMod)m_Table[m];

@@ -5,7 +5,6 @@ using Server.Misc;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.Custom.Spells.NewSpells.Chasseur;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {

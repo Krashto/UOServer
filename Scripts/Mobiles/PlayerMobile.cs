@@ -949,10 +949,8 @@ namespace Server.Mobiles
 				max += refineBonus;
 			}
 
-			if ((type == ResistanceType.Fire || type == ResistanceType.Poison) && RegardNecrotiqueSpell.IsUnderEffects(this))
-			{
+			if (type == ResistanceType.Physical && RegardNecrotiqueSpell.IsUnderEffects(this))
 				max = RegardNecrotiqueSpell.GetResistMalus(this);
-			}
 
 			return max;
 		}

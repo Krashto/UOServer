@@ -18,7 +18,6 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		public override int RequiredAptitudeValue { get { return 9; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
-		public override bool Invocation { get { return true; } }
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 

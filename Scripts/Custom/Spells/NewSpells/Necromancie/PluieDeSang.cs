@@ -1,8 +1,4 @@
-using System;
 using System.Collections;
-using Server.Targeting;
-using Server.Network;
-using Server.Mobiles;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
@@ -21,7 +17,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Reagent.Bloodmoss
 			);
 
-		public override int RequiredAptitudeValue { get { return 11; } }
+		public override int RequiredAptitudeValue { get { return 10; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
