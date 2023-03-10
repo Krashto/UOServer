@@ -703,52 +703,52 @@ namespace Server.Items
             return bonus;
         }
 
-		private int m_Capacite;
+		//private int m_Capacite;
 
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int Capacite
-		{
-			get { return m_Capacite; }
-			set { m_Capacite = value; OnCapaciteChange(); InvalidateProperties(); }
-		}
-		public virtual void OnCapaciteChange()
-		{
-		}
+		//[CommandProperty(AccessLevel.GameMaster)]
+		//public int Capacite
+		//{
+		//	get { return m_Capacite; }
+		//	set { m_Capacite = value; OnCapaciteChange(); InvalidateProperties(); }
+		//}
+		//public virtual void OnCapaciteChange()
+		//{
+		//}
 
-		public virtual bool CheckCapacite(Mobile from)
-		{
-			if (from is CustomPlayerMobile)
-			{
-				CustomPlayerMobile pm = (CustomPlayerMobile)from;
+		//public virtual bool CheckCapacite(Mobile from)
+		//{
+		//	if (from is CustomPlayerMobile)
+		//	{
+		//		CustomPlayerMobile pm = (CustomPlayerMobile)from;
 
-				Capacite capacite;
+		//		Capacite capacite;
 
-				if (this is BaseRanged)
-					capacite = Custom.Classes.Capacite.ArmesDistance;
-				else
-					capacite = Custom.Classes.Capacite.ArmesMelee;
+		//		if (this is BaseRanged)
+		//			capacite = Custom.Classes.Capacite.ArmesDistance;
+		//		else
+		//			capacite = Custom.Classes.Capacite.ArmesMelee;
 
-				double value = pm.GetCapaciteValue(capacite);
-				ClasseInfo info = Classes.GetInfos(pm.Classe);
+		//		double value = pm.GetCapaciteValue(capacite);
+		//		ClasseInfo info = Classes.GetInfos(pm.Classe);
 
-				if (value < Capacite)
-					return false;
+		//		if (value < Capacite)
+		//			return false;
 
-				if (from.Str < 50 && Capacite > 1)
-				{
-					pm.SendMessage("Vous ne pouvez pas porter cet item avec une force plus petite que 50.");
-					return false;
-				}
+		//		if (from.Str < 50 && Capacite > 1)
+		//		{
+		//			pm.SendMessage("Vous ne pouvez pas porter cet item avec une force plus petite que 50.");
+		//			return false;
+		//		}
 
-				if (from.Str <= 0)
-				{
-					pm.SendMessage("Vous ne pouvez pas porter cet item avec aucune force.");
-					return false;
-				}
-			}
+		//		if (from.Str <= 0)
+		//		{
+		//			pm.SendMessage("Vous ne pouvez pas porter cet item avec aucune force.");
+		//			return false;
+		//		}
+		//	}
 
-			return true;
-		}
+		//	return true;
+		//}
 
 		public int GetLowerStatReq()
         {
@@ -1442,7 +1442,7 @@ namespace Server.Items
 				if (defender is CustomPlayerMobile)
 				{
 					var pm = defender as CustomPlayerMobile;
-					chance += pm.GetCapaciteValue(Custom.Classes.Capacite.Bouclier) * 0.05;
+					chance += pm.GetCapaciteValue(Capacite.Bouclier) * 0.05;
 				}
 
 				// Low dexterity lowers the chance.
@@ -3022,9 +3022,9 @@ namespace Server.Items
 				var pm = attacker as CustomPlayerMobile;
 
 				if (this is BaseMeleeWeapon)
-					capaciteBonus = pm.GetCapaciteValue(Custom.Classes.Capacite.ArmesMelee) * 0.2;
+					capaciteBonus = pm.GetCapaciteValue(Capacite.ArmesMelee) * 0.2;
 				else if (this is BaseRanged)
-					capaciteBonus = pm.GetCapaciteValue(Custom.Classes.Capacite.ArmesDistance) * 0.2;
+					capaciteBonus = pm.GetCapaciteValue(Capacite.ArmesDistance) * 0.2;
 			}
 			#endregion
 
@@ -3122,10 +3122,7 @@ namespace Server.Items
         {
             base.Serialize(writer);
 
-            writer.Write(23); // version
-
-			//Version 23
-			writer.Write(m_Capacite);
+            writer.Write(22); // version
 
 			//Version 22
 
@@ -3512,11 +3509,6 @@ namespace Server.Items
 
             switch (version)
             {
-				case 23:
-					{
-						m_Capacite = reader.ReadInt();
-						goto case 22;
-					}
 				case 22:
 				case 21:
                 case 20: // Removed Eras

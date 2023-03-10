@@ -197,17 +197,17 @@ namespace Server.Custom.Classes
             ClasseInfo info = GetInfos(classe);
 
             if (info == null)
-                return 0;
+                return 2;
 
             for (int i = 0; i < info.Capacites.Length; ++i)
             {
                 CCapacites cap = info.Capacites[i];
 
                 if (cap.Capacite == capacite)
-                    return cap.Value;
+                    return cap.Value + 2;
             }
 
-            return 0;
+            return 2;
         }
 
         public static bool IsValid(CustomPlayerMobile m, Classe classe)

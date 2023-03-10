@@ -31,7 +31,7 @@ namespace Server.Items
             SkillName.Focus,
             SkillName.Necromancy,
             SkillName.Stealing,
-            SkillName.Equitation,
+            SkillName.Stealth,
             SkillName.SpiritSpeak,
             SkillName.Bushido,
             SkillName.Ninjitsu

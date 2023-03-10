@@ -164,7 +164,7 @@ namespace Server.Items
             {
                 case RefinementCraftType.Blacksmith: break;
                 case RefinementCraftType.Tailor: check = SkillName.Tailoring; break;
-                case RefinementCraftType.Carpenter: check = SkillName.Carpentry; break;
+                case RefinementCraftType.Carpenter: check = SkillName.Tinkering; break;
             }
 
             return from.Skills[check].Value >= 100;
@@ -416,7 +416,7 @@ namespace Server.Items
             {
                 case RefinementCraftType.Blacksmith: break;
                 case RefinementCraftType.Tailor: check = SkillName.Tailoring; break;
-                case RefinementCraftType.Carpenter: check = SkillName.Carpentry; break;
+                case RefinementCraftType.Carpenter: check = SkillName.Tinkering; break;
             }
 
             return from.Skills[check].Value >= 100;

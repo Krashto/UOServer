@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public Bowyer()
             : base("Archer")
         {
-            SetSkill(SkillName.Carpentry, 80.0, 100.0);
+            SetSkill(SkillName.Tinkering, 80.0, 100.0);
             SetSkill(SkillName.Archery, 80.0, 100.0);
         }
 

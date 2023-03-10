@@ -337,7 +337,6 @@ namespace Server.Mobiles
 			{
 				case SkillName.Alchemy: value = Aptitudes.Chimie * 4; break;
 				case SkillName.Tailoring: value = Aptitudes.Couture * 4; break;
-				case SkillName.Carpentry: value = Aptitudes.Ebenisterie * 4; break;
 				case SkillName.Tinkering: value = Aptitudes.Ingenierie * 4; break;
 				case SkillName.Blacksmith: value = Aptitudes.Metallurgie * 4; break;
 				case SkillName.Inscribe: value = Aptitudes.Transcription * 4; break;
@@ -410,6 +409,7 @@ namespace Server.Mobiles
 		{
 			MagicAfinity = new AffinityDictionary(this);
 			TribeRelation = new TribeRelation(this);
+			Aptitudes = new Aptitudes(this);
 		}
 
 		public override void GetProperties(ObjectPropertyList list)
@@ -929,13 +929,13 @@ namespace Server.Mobiles
 		}
 
 		public int TileToDontFall { get; set; }
-																// 0    1    2    3    4    5    6    7    8    9    10 
-		private static int[] m_RunningTable = new int[]			{ 100, 100, 100, 050, 025, 000, 000, 000, 000, 000, 000 };
-		private static int[] m_BeingAttackedTable = new int[]	{ 100, 100, 100, 100, 100, 100, 100, 100, 075, 050, 005 };
-		private static int[] m_MeleeAttackingTable = new int[]	{ 100, 100, 100, 100, 100, 075, 050, 025, 005, 000, 000 };
-		private static int[] m_CastAttackingTable = new int[]	{ 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100 };
-		private static int[] m_RangedAttackingTable = new int[] { 100, 100, 100, 100, 100, 075, 050, 025, 005, 000, 000 };
-		private static int[] m_DismountTable = new int[]		{ 100, 100, 100, 090, 080, 075, 070, 065, 060, 055, 050 };
+																// 0    1    2    3    4    5 
+		private static int[] m_RunningTable = new int[]			{ 100, 100, 025, 000, 000, 000 };
+		private static int[] m_BeingAttackedTable = new int[]	{ 100, 100, 100, 100, 075, 005 };
+		private static int[] m_MeleeAttackingTable = new int[]	{ 100, 100, 100, 050, 005, 000 };
+		private static int[] m_CastAttackingTable = new int[]	{ 100, 100, 100, 100, 100, 100 };
+		private static int[] m_RangedAttackingTable = new int[] { 100, 100, 100, 050, 005, 000 };
+		private static int[] m_DismountTable = new int[]		{ 100, 100, 080, 070, 060, 050 };
 
 		public virtual bool CheckEquitation(EquitationType type, Point3D oldLocation)
 		{
@@ -944,7 +944,7 @@ namespace Server.Mobiles
 			if (!Mounted)
 				return true;
 
-			if (Mount is Server.Multis.RowBoat)
+			if (Mount is Multis.RowBoat)
 				return true;
 
 			if (AccessLevel >= AccessLevel.GameMaster)
@@ -954,13 +954,13 @@ namespace Server.Mobiles
 				return true;
 
 			int chanceToFall = 0;
-			int equitation = (int)(Skills[SkillName.Equitation].Value / 10);
+			int equitation = GetCapaciteValue(Capacite.Equitation);
 
 			if (equitation < 0)
 				equitation = 0;
 
-			if (equitation > 10)
-				equitation = 10;
+			if (equitation > 5)
+				equitation = 5;
 
 			switch (type)
 			{
@@ -996,7 +996,7 @@ namespace Server.Mobiles
 			Timer.DelayCall(TimeSpan.FromSeconds(0.3), new TimerStateCallback(Equitation_Callback), mount);
 
 			BeginAction(typeof(BaseMount));
-			double seconds = 12.0 - (Skills[SkillName.Equitation].Value / 10);
+			double seconds = 12.0 - equitation;
 
 			SetMountBlock(BlockMountType.DismountRecovery, TimeSpan.FromSeconds(seconds), false);
 
@@ -2009,7 +2009,7 @@ namespace Server.Mobiles
 			return Classes.GetAptitudeValue(m_Classe, aptitude);
 		}
 
-		public virtual int GetAptitudeValue(Aptitude aptitude)
+		public virtual int GetTotalAptitudeValue(Aptitude aptitude)
 		{
 			return Aptitudes[aptitude] + GetBaseAptitudeValue(aptitude);
 		}
@@ -2022,7 +2022,7 @@ namespace Server.Mobiles
 		public int GetCapaciteValue(Capacite capacite)
 		{
 			if (AccessLevel > AccessLevel.Player)
-				return 10;
+				return 5;
 
 			return Classes.GetCapaciteValue(capacite, m_Classe);
 		}
@@ -2060,24 +2060,24 @@ namespace Server.Mobiles
 					wasValid = true;
 					Aptitude aptitude = (Aptitude)i;
 
-					//while (!Aptitudes.IsValid(this, aptitude))
-					//{
-					//	if (!Aptitudes.CanLower(this, aptitude))
-					//	{
-					//		//Console.WriteLine(String.Format("Bug dans la vérification de l'aptitude [{0}] [{1}]", aptitude.ToString(), this));
-					//		break;
-					//	}
-					//	else
-					//	{
-					//		m_Aptitudes.SetValue(aptitude, m_Aptitudes[aptitude] - 1);
+					while (!Aptitudes.IsValid(this, aptitude))
+					{
+						if (!Aptitudes.CanLower(this, aptitude))
+						{
+							//Console.WriteLine(String.Format("Bug dans la vérification de l'aptitude [{0}] [{1}]", aptitude.ToString(), this));
+							break;
+						}
+						else
+						{
+							Aptitudes.SetValue(aptitude, Aptitudes[aptitude] - 1);
 
-					//		if (wasValid)
-					//			wasValid = false;
+							if (wasValid)
+								wasValid = false;
 
-					//		if (!hasChange)
-					//			hasChange = true;
-					//	}
-					//}
+							if (!hasChange)
+								hasChange = true;
+						}
+					}
 
 					if (!wasValid)
 					{
@@ -2113,28 +2113,28 @@ namespace Server.Mobiles
 
 			if (type == ValidateType.Capacites || type == ValidateType.All)
 			{
-				for (int i = 0; i < Items.Count; ++i)
-				{
-					Item item = (Item)Items[i];
+				//for (int i = 0; i < Items.Count; ++i)
+				//{
+				//	Item item = (Item)Items[i];
 
-					if (item is BaseWeapon)
-					{
-						BaseWeapon weapon = item as BaseWeapon;
+				//	if (item is BaseWeapon)
+				//	{
+				//		BaseWeapon weapon = item as BaseWeapon;
 
-						if (!weapon.CheckCapacite(this))
-						{
-							AddToBackpack(weapon);
-							SendMessage("Vous n'aviez plus les capacités nécessaires pour porter cet arme.");
-						}
-					}
-					else if (item is BaseArmor)
-					{
-						BaseArmor armor = item as BaseArmor;
+				//		if (!weapon.CheckCapacite(this))
+				//		{
+				//			AddToBackpack(weapon);
+				//			SendMessage("Vous n'aviez plus les capacités nécessaires pour porter cet arme.");
+				//		}
+				//	}
+				//	else if (item is BaseArmor)
+				//	{
+				//		BaseArmor armor = item as BaseArmor;
 
-						if (!armor.CheckCapacite(this))
-							AddToBackpack(armor);
-					}
-				}
+				//		if (!armor.CheckCapacite(this))
+				//			AddToBackpack(armor);
+				//	}
+				//}
 			}
 
 			if (type == ValidateType.Skills || type == ValidateType.All)

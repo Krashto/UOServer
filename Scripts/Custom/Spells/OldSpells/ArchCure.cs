@@ -1,5 +1,4 @@
 using System.Collections;
-using Server.Custom.Aptitudes;
 using Server.Targeting;
 
 namespace Server.Spells.OldSpells
@@ -18,7 +17,7 @@ namespace Server.Spells.OldSpells
 
         public override int RequiredAptitudeValue { get { return 60; } }
         public override int RequiredMagicCapacity { get { return 6; } }
-        ////public override NAptitude[] RequiredAptitude { get { return new NAptitude[] { NAptitude.SortsNonUtilises }; } }
+        //public override NAptitude[] RequiredAptitude { get { return new NAptitude[] { NAptitude.SortsNonUtilises }; } }
 
         public ArchCureSpell( Mobile caster, Item scroll ) : base( caster, scroll, m_Info )
 		{

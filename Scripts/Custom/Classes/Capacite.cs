@@ -8,9 +8,6 @@
 		Magie,
 		Bouclier,
 		Equitation,
-		Inspiration,
-		Expertise,
-		Academique,
-		Sorcellerie,
+		Expertise
 	}
 }

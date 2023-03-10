@@ -4,7 +4,6 @@
 	{
 		Chimie = 0,
 		Couture,
-		Ebenisterie,
 		Ingenierie,
 		Metallurgie,
 		Transcription,

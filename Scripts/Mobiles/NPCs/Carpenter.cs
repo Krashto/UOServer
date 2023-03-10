@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public Carpenter()
             : base("Charpentier")
         {
-            SetSkill(SkillName.Carpentry, 85.0, 100.0);
+            SetSkill(SkillName.Tinkering, 85.0, 100.0);
             SetSkill(SkillName.Lumberjacking, 60.0, 83.0);
         }
 

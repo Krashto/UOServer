@@ -1,61 +1,60 @@
 using Server.ContextMenus;
 using Server.Engines.Craft;
 using Server.Network;
-using Server.Misc;
 using AMA = Server.Items.ArmorMeditationAllowance;
 using AMT = Server.Items.ArmorMaterialType;
-using Server.Mobiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using Server.Custom.Classes;
+using Server.Mobiles;
 
 namespace Server.Items
 {
 	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality
     {
-		private int m_Capacite;
+		//private int m_Capacite;
 
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int Capacite
-		{
-			get { return m_Capacite; }
-			set { m_Capacite = value; OnCapaciteChange(); InvalidateProperties(); }
-		}
+		//[CommandProperty(AccessLevel.GameMaster)]
+		//public int Capacite
+		//{
+		//	get { return m_Capacite; }
+		//	set { m_Capacite = value; OnCapaciteChange(); InvalidateProperties(); }
+		//}
 
-		public void OnCapaciteChange()
-		{
-		}
+		//public void OnCapaciteChange()
+		//{
+		//}
 
-		public virtual bool CheckCapacite(Mobile from)
-		{
-			if (from is CustomPlayerMobile)
-			{
-				CustomPlayerMobile pm = (CustomPlayerMobile)from;
+		//public virtual bool CheckCapacite(Mobile from)
+		//{
+		//	if (from is CustomPlayerMobile)
+		//	{
+		//		CustomPlayerMobile pm = (CustomPlayerMobile)from;
 
-				Capacite capacite = Custom.Classes.Capacite.Armure;
+		//		Capacite capacite = Custom.Classes.Capacite.Armure;
 
-				if (pm.GetCapaciteValue(capacite) < Capacite)
-				{
-					pm.SendMessage("Vous n'avez pas assez dans la capacité pour porter cet armure.");
-					return false;
-				}
+		//		if (pm.GetCapaciteValue(capacite) < Capacite)
+		//		{
+		//			pm.SendMessage("Vous n'avez pas assez dans la capacité pour porter cet armure.");
+		//			return false;
+		//		}
 
-				if (from.Str < 50 && Capacite > 1)
-				{
-					pm.SendMessage("Vous ne pouvez pas porter cet item avec une force plus petite que 50.");
-					return false;
-				}
+		//		if (from.Str < 50 && Capacite > 1)
+		//		{
+		//			pm.SendMessage("Vous ne pouvez pas porter cet item avec une force plus petite que 50.");
+		//			return false;
+		//		}
 
-				if (from.Str <= 0)
-				{
-					pm.SendMessage("Vous ne pouvez pas porter cet item avec aucune force.");
-					return false;
-				}
-			}
+		//		if (from.Str <= 0)
+		//		{
+		//			pm.SendMessage("Vous ne pouvez pas porter cet item avec aucune force.");
+		//			return false;
+		//		}
+		//	}
 
-			return true;
-		}
+		//	return true;
+		//}
 
 		private string _EngravedText;
 
@@ -362,7 +361,15 @@ namespace Server.Items
 						break;
 				}
 
-                ar += -8 + (8 * (int)m_Quality);
+				var capaciteBonus = 0;
+
+				if (Parent is CustomPlayerMobile)
+				{
+					var pm = Parent as CustomPlayerMobile;
+					capaciteBonus = (int)(ar * (pm.GetCapaciteValue(Capacite.Armure) * 0.15));
+				}
+
+				ar += -8 + (8 * (int)m_Quality);
                 return ScaleArmorByDurability(ar);
             }
         }

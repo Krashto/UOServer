@@ -40,7 +40,7 @@ namespace Server.Items
             {
                 from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
             }
-            else if (from.Skills[SkillName.Carpentry].Base < 90.0)
+            else if (from.Skills[SkillName.Tinkering].Base < 90.0)
             {
                 from.SendLocalizedMessage(1042594); // You do not understand how to use this.
             }
@@ -152,7 +152,7 @@ namespace Server.Items
                 {
                     from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
                 }
-                else if (from.Skills[SkillName.Carpentry].Base < 90.0)
+                else if (from.Skills[SkillName.Tinkering].Base < 90.0)
                 {
                     from.SendLocalizedMessage(1042603); // You would not understand how to use the kit.
                 }

@@ -6,7 +6,7 @@ namespace Server.Engines.Craft
 {
 	public class DefFenceCrafting : CraftSystem
 	{
-        public override SkillName MainSkill { get { return SkillName.Carpentry; } }
+        public override SkillName MainSkill { get { return SkillName.Tinkering; } }
 
 	//	public override int GumpTitleNumber { get { return 0; } }
 

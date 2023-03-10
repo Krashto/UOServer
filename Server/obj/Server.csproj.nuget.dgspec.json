@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KaldeniaServer\\Server\\Server.csproj": {}
+    "C:\\LeRefugeUoServer\\Server\\Server.csproj": {}
   },
   "projects": {
-    "D:\\KaldeniaServer\\Server\\Server.csproj": {
+    "C:\\LeRefugeUoServer\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KaldeniaServer\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\LeRefugeUoServer\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "D:\\KaldeniaServer\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\vince\\.nuget\\packages\\",
-        "outputPath": "D:\\KaldeniaServer\\Server\\obj\\",
+        "projectPath": "C:\\LeRefugeUoServer\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\eowym\\.nuget\\packages\\",
+        "outputPath": "C:\\LeRefugeUoServer\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vince\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eowym\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,7 +45,7 @@
               "version": "[4.7.0, )"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -16,7 +16,6 @@ namespace Server
 		private static CAptitudes[] m_Aptitudes = new CAptitudes[]
 			{
 				new CAptitudes(Aptitude.Ingenierie, 10),
-				new CAptitudes(Aptitude.Ebenisterie, 10),
             };
 
         private static CCapacites[] m_Capacites = new CCapacites[]
@@ -28,7 +27,6 @@ namespace Server
         private static CSkills[] m_Skills = new CSkills[]
             {
                 new CSkills(SkillName.Tailoring, 100),
-                new CSkills(SkillName.Carpentry, 100),
                 new CSkills(SkillName.Tinkering, 100),
                 new CSkills(SkillName.Lumberjacking, 75),
                 new CSkills(SkillName.Mining, 75),

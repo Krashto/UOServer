@@ -36,5 +36,5 @@ namespace Server.Engines.Craft
         public object Message => m_Message;
 
         public double RequiredSkill => m_ReqSkill;
-    }
+	}
 }

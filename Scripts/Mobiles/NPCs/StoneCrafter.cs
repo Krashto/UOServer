@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public StoneCrafter()
             : base("Tailleur de pierre")
         {
-            SetSkill(SkillName.Carpentry, 85.0, 100.0);
+            SetSkill(SkillName.Tinkering, 85.0, 100.0);
         }
 
         public StoneCrafter(Serial serial)

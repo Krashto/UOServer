@@ -31,7 +31,6 @@ namespace Server
                 new CSkills(SkillName.Archery, 100),
 		        new CSkills(SkillName.AnimalTaming, 70),
                 new CSkills(SkillName.Tactics, 50),
-		        new CSkills(SkillName.Carpentry, 40),
 		        new CSkills(SkillName.Camping, 20),
 		        new CSkills(SkillName.Cartography, 20),
 		        new CSkills(SkillName.Healing, 20)

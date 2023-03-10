@@ -298,7 +298,7 @@ namespace Server.Items
         {
             if (m.InRange(GetWorldLocation(), 2))
             {
-                if (m.Skills[SkillName.Carpentry].Value >= 100)
+                if (m.Skills[SkillName.Tinkering].Value >= 100)
                 {
                     Gump g = new Gump(100, 100);
                     g.AddBackground(0, 0, 454, 400, 0x24A4);

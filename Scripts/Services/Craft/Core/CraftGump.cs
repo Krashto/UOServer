@@ -1,5 +1,6 @@
 using Server.Gumps;
 using Server.Items;
+using Server.Mobiles;
 using Server.Network;
 using System;
 using System.Collections.Generic;
@@ -694,7 +695,11 @@ namespace Server.Engines.Craft
 
                             CraftSubRes res = system.CraftSubRes.GetAt(index);
 
-                            if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill)
+							var pm = m_From as CustomPlayerMobile;
+							var resource = CraftResources.GetFromType(res.ItemType);
+							var level = CraftResources.GetLevel(resource);
+
+							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill) || (pm != null && pm.GetCapaciteValue(Custom.Classes.Capacite.Expertise) < level))
                             {
                                 m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
                             }

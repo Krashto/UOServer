@@ -776,28 +776,23 @@ namespace Server.Items
 
     public class CraftResourceInfo
     {
-        private readonly int m_Hue;
-        private readonly int m_Number;
-        private readonly string m_Name;
-        private readonly CraftAttributeInfo m_AttributeInfo;
-        private readonly CraftResource m_Resource;
-        private readonly Type[] m_ResourceTypes;
+        public int Hue { get; set; }
+        public int Number { get; set; }
+		public string Name { get; set; }
+        public int Level { get; set; }
+		public CraftAttributeInfo AttributeInfo { get; set; }
+		public CraftResource Resource { get; set; }
+		public Type[] ResourceTypes { get; set; }
 
-        public int Hue => m_Hue;
-        public int Number => m_Number;
-        public string Name => m_Name;
-        public CraftAttributeInfo AttributeInfo => m_AttributeInfo;
-        public CraftResource Resource => m_Resource;
-        public Type[] ResourceTypes => m_ResourceTypes;
-
-        public CraftResourceInfo(int hue, int number, string name, CraftAttributeInfo attributeInfo, CraftResource resource, params Type[] resourceTypes)
+		public CraftResourceInfo(int hue, int number, string name, int level, CraftAttributeInfo attributeInfo, CraftResource resource, params Type[] resourceTypes)
         {
-            m_Hue = hue;
-            m_Number = number;
-            m_Name = name;
-            m_AttributeInfo = attributeInfo;
-            m_Resource = resource;
-            m_ResourceTypes = resourceTypes;
+            Hue = hue;
+            Number = number;
+            Name = name;
+			Level = level;
+            AttributeInfo = attributeInfo;
+            Resource = resource;
+            ResourceTypes = resourceTypes;
 
             for (int i = 0; i < resourceTypes.Length; ++i)
                 CraftResources.RegisterType(resourceTypes[i], resource);
@@ -808,68 +803,75 @@ namespace Server.Items
     {
         private static readonly CraftResourceInfo[] m_MetalInfo = new[]
         {
-            new CraftResourceInfo(0x000, 1053109, "Iron", CraftAttributeInfo.Blank, CraftResource.Iron, typeof(IronIngot), typeof(IronOre), typeof(Granite)),
-            new CraftResourceInfo(0x973, 1053108, "Dull Copper",    CraftAttributeInfo.DullCopper,  CraftResource.DullCopper, typeof(DullCopperIngot),  typeof(DullCopperOre),  typeof(DullCopperGranite)),
-            new CraftResourceInfo(0x966, 1053107, "Shadow Iron",    CraftAttributeInfo.ShadowIron,  CraftResource.ShadowIron, typeof(ShadowIronIngot),  typeof(ShadowIronOre),  typeof(ShadowIronGranite)),
-            new CraftResourceInfo(0x96D, 1053106, "Copper", CraftAttributeInfo.Copper, CraftResource.Copper, typeof(CopperIngot), typeof(CopperOre), typeof(CopperGranite)),
-            new CraftResourceInfo(0x972, 1053105, "Bronze", CraftAttributeInfo.Bronze, CraftResource.Bronze, typeof(BronzeIngot), typeof(BronzeOre), typeof(BronzeGranite)),
-            new CraftResourceInfo(2843, 1053104, "Gold", CraftAttributeInfo.Golden, CraftResource.Gold, typeof(GoldIngot), typeof(GoldOre), typeof(GoldGranite)),
-            new CraftResourceInfo(1980, 1053103, "Agapite", CraftAttributeInfo.Agapite, CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
-            new CraftResourceInfo(2841, 1053102, "Verite", CraftAttributeInfo.Verite, CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
-            new CraftResourceInfo(2867, 1053101, "Valorite", CraftAttributeInfo.Valorite,  CraftResource.Valorite, typeof(ValoriteIngot),  typeof(ValoriteOre), typeof(ValoriteGranite)),
-			new CraftResourceInfo(1342, 0, "Mytheril", CraftAttributeInfo.Mytheril,  CraftResource.Mytheril, typeof(MytherilIngot),  typeof(MytherilOre), typeof(VeriteGranite)),
+            new CraftResourceInfo(0x000, 1053109, "Iron",			1, CraftAttributeInfo.Blank, CraftResource.Iron, typeof(IronIngot), typeof(IronOre), typeof(Granite)),
+            new CraftResourceInfo(0x973, 1053108, "Dull Copper",	1, CraftAttributeInfo.DullCopper,  CraftResource.DullCopper, typeof(DullCopperIngot),  typeof(DullCopperOre),  typeof(DullCopperGranite)),
+            new CraftResourceInfo(0x966, 1053107, "Shadow Iron",	2, CraftAttributeInfo.ShadowIron,  CraftResource.ShadowIron, typeof(ShadowIronIngot),  typeof(ShadowIronOre),  typeof(ShadowIronGranite)),
+            new CraftResourceInfo(0x96D, 1053106, "Copper",			2, CraftAttributeInfo.Copper, CraftResource.Copper, typeof(CopperIngot), typeof(CopperOre), typeof(CopperGranite)),
+            new CraftResourceInfo(0x972, 1053105, "Bronze",			3, CraftAttributeInfo.Bronze, CraftResource.Bronze, typeof(BronzeIngot), typeof(BronzeOre), typeof(BronzeGranite)),
+            new CraftResourceInfo(2843,  1053104, "Gold",			3, CraftAttributeInfo.Golden, CraftResource.Gold, typeof(GoldIngot), typeof(GoldOre), typeof(GoldGranite)),
+            new CraftResourceInfo(1980,  1053103, "Agapite",		4, CraftAttributeInfo.Agapite, CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
+            new CraftResourceInfo(2841,  1053102, "Verite",			4, CraftAttributeInfo.Verite, CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
+            new CraftResourceInfo(2867,  1053101, "Valorite",		5, CraftAttributeInfo.Valorite,  CraftResource.Valorite, typeof(ValoriteIngot),  typeof(ValoriteOre), typeof(ValoriteGranite)),
+			new CraftResourceInfo(1342,  0,		  "Mytheril",		5, CraftAttributeInfo.Mytheril,  CraftResource.Mytheril, typeof(MytherilIngot),  typeof(MytherilOre), typeof(VeriteGranite)),
 		};
 
         private static readonly CraftResourceInfo[] m_ScaleInfo = new[]
         {
-            new CraftResourceInfo(0x66D, 1053129, "Red Scales", CraftAttributeInfo.RedScales, CraftResource.RedScales, typeof(RedScales)),
-            new CraftResourceInfo(0x8A8, 1053130, "Yellow Scales",  CraftAttributeInfo.YellowScales,    CraftResource.YellowScales, typeof(YellowScales)),
-            new CraftResourceInfo(0x455, 1053131, "Black Scales",   CraftAttributeInfo.BlackScales, CraftResource.BlackScales, typeof(BlackScales)),
-            new CraftResourceInfo(0x851, 1053132, "Green Scales",   CraftAttributeInfo.GreenScales, CraftResource.GreenScales, typeof(GreenScales)),
-            new CraftResourceInfo(0x8FD, 1053133, "White Scales",   CraftAttributeInfo.WhiteScales, CraftResource.WhiteScales, typeof(WhiteScales)),
-            new CraftResourceInfo(0x8B0, 1053134, "Blue Scales",    CraftAttributeInfo.BlueScales, CraftResource.BlueScales, typeof(BlueScales)),
+            new CraftResourceInfo(0x66D, 1053129, "Red Scales",		1, CraftAttributeInfo.RedScales, CraftResource.RedScales, typeof(RedScales)),
+            new CraftResourceInfo(0x8A8, 1053130, "Yellow Scales",  1, CraftAttributeInfo.YellowScales,    CraftResource.YellowScales, typeof(YellowScales)),
+            new CraftResourceInfo(0x455, 1053131, "Black Scales",   2, CraftAttributeInfo.BlackScales, CraftResource.BlackScales, typeof(BlackScales)),
+            new CraftResourceInfo(0x851, 1053132, "Green Scales",   3, CraftAttributeInfo.GreenScales, CraftResource.GreenScales, typeof(GreenScales)),
+            new CraftResourceInfo(0x8FD, 1053133, "White Scales",   4, CraftAttributeInfo.WhiteScales, CraftResource.WhiteScales, typeof(WhiteScales)),
+            new CraftResourceInfo(0x8B0, 1053134, "Blue Scales",    5, CraftAttributeInfo.BlueScales, CraftResource.BlueScales, typeof(BlueScales)),
         };
 
         private static readonly CraftResourceInfo[] m_AOSLeatherInfo = new[]
         {
-            new CraftResourceInfo(0x000, 1049353, "Normal", CraftAttributeInfo.Blank, CraftResource.RegularLeather, typeof(Leather), typeof(Hides)),
-			new CraftResourceInfo( 1106, 1049356, "Lupus", CraftAttributeInfo.LupusLeather,            CraftResource.LupusLeather,     typeof( LupusLeather ),     typeof( LupusHides ) ),
-			new CraftResourceInfo( 1438, 1049354, "Reptilien", CraftAttributeInfo.ReptilienLeather,      CraftResource.ReptilienLeather, typeof( ReptilienLeather ), typeof( ReptilienHides ) ),
-			new CraftResourceInfo( 1711, 1049356, "Geant", CraftAttributeInfo.GeantLeather,          CraftResource.GeantLeather,     typeof( GeantLeather ),     typeof( GeantHides ) ),
-			new CraftResourceInfo( 1635, 1049356, "Ophidien", CraftAttributeInfo.OphidienLeather,       CraftResource.OphidienLeather,  typeof( OphidienLeather ),  typeof( OphidienHides ) ),
-			new CraftResourceInfo( 2128, 1049356, "Arachnide", CraftAttributeInfo.ArachnideLeather,      CraftResource.ArachnideLeather, typeof( ArachnideLeather ), typeof( ArachnideHides ) ),
-			new CraftResourceInfo( 2174, 1049356, "Dragonique", CraftAttributeInfo.DragoniqueLeather,     CraftResource.DragoniqueLeather,typeof( DragoniqueLeather ),typeof( DragoniqueHides ) ),
-			new CraftResourceInfo( 2118, 1049356, "Demoniaque", CraftAttributeInfo.DemoniaqueLeather,     CraftResource.DemoniaqueLeather,typeof( DemoniaqueLeather ),typeof( DemoniaqueHides ) ),
-			new CraftResourceInfo( 1940, 1049356, "Ancien", CraftAttributeInfo.AncienLeather,         CraftResource.AncienLeather,    typeof( AncienLeather ),    typeof( AncienHides ) ),
+            new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.RegularLeather, typeof(Leather), typeof(Hides)),
+			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusLeather,            CraftResource.LupusLeather,     typeof( LupusLeather ),     typeof( LupusHides ) ),
+			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienLeather,      CraftResource.ReptilienLeather, typeof( ReptilienLeather ), typeof( ReptilienHides ) ),
+			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantLeather,          CraftResource.GeantLeather,     typeof( GeantLeather ),     typeof( GeantHides ) ),
+			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienLeather,       CraftResource.OphidienLeather,  typeof( OphidienLeather ),  typeof( OphidienHides ) ),
+			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideLeather,      CraftResource.ArachnideLeather, typeof( ArachnideLeather ), typeof( ArachnideHides ) ),
+			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueLeather,     CraftResource.DragoniqueLeather,typeof( DragoniqueLeather ),typeof( DragoniqueHides ) ),
+			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueLeather,     CraftResource.DemoniaqueLeather,typeof( DemoniaqueLeather ),typeof( DemoniaqueHides ) ),
+			new CraftResourceInfo(1940, 1049356, "Ancien",		5, CraftAttributeInfo.AncienLeather,         CraftResource.AncienLeather,    typeof( AncienLeather ),    typeof( AncienHides ) ),
 
 
 		};
 
 		private static readonly CraftResourceInfo[] m_BoneInfo = new[]
 	   {
-			new CraftResourceInfo(0x000, 1049353, "Normal", CraftAttributeInfo.Blank, CraftResource.RegularBone, typeof(Bone)),
-			new CraftResourceInfo( 1106, 1049356, "Lupus", CraftAttributeInfo.LupusBone,            CraftResource.LupusBone,     typeof( LupusBone )),
-			new CraftResourceInfo( 1438, 1049354, "Reptilien", CraftAttributeInfo.ReptilienBone,      CraftResource.ReptilienBone, typeof( ReptilienBone ) ),
-			new CraftResourceInfo( 1711, 1049356, "Geant", CraftAttributeInfo.GeantBone,          CraftResource.GeantBone,     typeof( GeantBone ) ),
-			new CraftResourceInfo( 1635, 1049356, "Ophidien", CraftAttributeInfo.OphidienBone,       CraftResource.OphidienBone,  typeof( OphidienBone ) ),
-			new CraftResourceInfo( 2128, 1049356, "Arachnide", CraftAttributeInfo.ArachnideBone,      CraftResource.ArachnideBone, typeof( ArachnideBone ) ),
-			new CraftResourceInfo( 2174, 1049356, "Dragonique", CraftAttributeInfo.DragoniqueBone,     CraftResource.DragoniqueBone,typeof( DragoniqueBone ) ),
-			new CraftResourceInfo( 2118, 1049356, "Demoniaque", CraftAttributeInfo.DemoniaqueBone,     CraftResource.DemoniaqueBone,typeof( DemoniaqueBone ) ),
-			new CraftResourceInfo( 1940, 1049356, "Ancien", CraftAttributeInfo.AncienBone,         CraftResource.AncienBone,    typeof( AncienBone )),
+			new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.RegularBone, typeof(Bone)),
+			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusBone,            CraftResource.LupusBone,     typeof( LupusBone )),
+			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienBone,      CraftResource.ReptilienBone, typeof( ReptilienBone ) ),
+			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantBone,          CraftResource.GeantBone,     typeof( GeantBone ) ),
+			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienBone,       CraftResource.OphidienBone,  typeof( OphidienBone ) ),
+			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideBone,      CraftResource.ArachnideBone, typeof( ArachnideBone ) ),
+			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueBone,     CraftResource.DragoniqueBone,typeof( DragoniqueBone ) ),
+			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueBone,     CraftResource.DemoniaqueBone,typeof( DemoniaqueBone ) ),
+			new CraftResourceInfo(1940, 1049356, "Ancien",		5, CraftAttributeInfo.AncienBone,         CraftResource.AncienBone,    typeof( AncienBone )),
 
 
 		};
 
 		private static readonly CraftResourceInfo[] m_WoodInfo = new[]
         {
-            new CraftResourceInfo(0x000, 1011542, "Normal", CraftAttributeInfo.Blank, CraftResource.RegularWood,    typeof(Log), typeof(Board)),
-            new CraftResourceInfo(0x7DA, 1072533, "Oak", CraftAttributeInfo.OakWood, CraftResource.OakWood, typeof(OakLog), typeof(OakBoard)),
-            new CraftResourceInfo(0x4A7, 1072534, "Ash", CraftAttributeInfo.AshWood, CraftResource.AshWood, typeof(AshLog), typeof(AshBoard)),
-            new CraftResourceInfo(0x4A8, 1072535, "Yew", CraftAttributeInfo.YewWood, CraftResource.YewWood, typeof(YewLog), typeof(YewBoard)),
-            new CraftResourceInfo(0x4A9, 1072536, "Heartwood", CraftAttributeInfo.Heartwood,    CraftResource.Heartwood,    typeof(HeartwoodLog),   typeof(HeartwoodBoard)),
-            new CraftResourceInfo(0x4AA, 1072538, "Bloodwood", CraftAttributeInfo.Bloodwood,    CraftResource.Bloodwood,    typeof(BloodwoodLog),   typeof(BloodwoodBoard)),
-            new CraftResourceInfo(0x47F, 1072539, "Frostwood", CraftAttributeInfo.Frostwood,    CraftResource.Frostwood,    typeof(FrostwoodLog),   typeof(FrostwoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.RegularWood,    typeof(Log), typeof(Board)),
+            new CraftResourceInfo(0x7DA, 1072533, "Oak",		1, CraftAttributeInfo.OakWood, CraftResource.OakWood, typeof(OakLog), typeof(OakBoard)),
+            new CraftResourceInfo(0x4A7, 1072534, "Ash",		2, CraftAttributeInfo.AshWood, CraftResource.AshWood, typeof(AshLog), typeof(AshBoard)),
+            new CraftResourceInfo(0x4A8, 1072535, "Yew",		2, CraftAttributeInfo.YewWood, CraftResource.YewWood, typeof(YewLog), typeof(YewBoard)),
+            new CraftResourceInfo(0x4A9, 1072536, "Heartwood",	3, CraftAttributeInfo.Heartwood,    CraftResource.Heartwood,    typeof(HeartwoodLog),   typeof(HeartwoodBoard)),
+            new CraftResourceInfo(0x4AA, 1072538, "Bloodwood",	4, CraftAttributeInfo.Bloodwood,    CraftResource.Bloodwood,    typeof(BloodwoodLog),   typeof(BloodwoodBoard)),
+            new CraftResourceInfo(0x47F, 1072539, "Frostwood",	5, CraftAttributeInfo.Frostwood,    CraftResource.Frostwood,    typeof(FrostwoodLog),   typeof(FrostwoodBoard)),
         };
+
+		public static int GetLevel(CraftResource resource)
+		{
+			CraftResourceInfo info = GetInfo(resource);
+
+			return info != null ? info.Level : 5;
+		}
 
         /// <summary>
         /// Returns true if '<paramref name="resource"/>' is None, Iron, RegularLeather or RegularWood. False if otherwise.

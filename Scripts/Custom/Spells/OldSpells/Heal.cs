@@ -17,7 +17,7 @@ namespace Server.Spells.OldSpells
             );
 
         public override int RequiredAptitudeValue { get { return 30; } }
-        public override int RequiredMagicCapacity { get { return 3; } }
+        public override int RequiredMagicCapacity { get { return 1; } }
         ////public override NConnaissances[] RequiredAptitude { get { return new NConnaissances[] { NConnaissances.Destruction, NConnaissances.Destruction }; } }
 
         public HealSpell( Mobile caster, Item scroll ) : base( caster, scroll, m_Info )

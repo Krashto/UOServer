@@ -1477,7 +1477,7 @@ namespace Server.Items
                 default:
                 case SkillName.Alchemy: return TalismanSkill.Alchemy;
                 case SkillName.Blacksmith: return TalismanSkill.Blacksmithy;
-                case SkillName.Carpentry: return TalismanSkill.Carpentry;
+                //case SkillName.Carpentry: return TalismanSkill.Carpentry;
                 case SkillName.Cartography: return TalismanSkill.Cartography;
                 case SkillName.Cooking: return TalismanSkill.Cooking;
                 //case SkillName.Fletching: return TalismanSkill.Fletching;
@@ -1495,7 +1495,7 @@ namespace Server.Items
                 case TalismanSkill.Alchemy: return SkillName.Alchemy;
                 case TalismanSkill.Blacksmithy: return SkillName.Blacksmith;
                 //case TalismanSkill.Fletching: return SkillName.Fletching;
-                case TalismanSkill.Carpentry: return SkillName.Carpentry;
+                //case TalismanSkill.Carpentry: return SkillName.Carpentry;
                 case TalismanSkill.Cartography: return SkillName.Cartography;
                 case TalismanSkill.Cooking: return SkillName.Cooking;
                 case TalismanSkill.Glassblowing: return SkillName.Alchemy;

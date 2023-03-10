@@ -298,10 +298,10 @@ namespace Server.Engines.BulkOrders
                 case BODType.Inscription: return SkillName.Inscribe;
                 case BODType.Tinkering: return SkillName.Tinkering;
                 case BODType.Cooking: return SkillName.Cooking;
-                //case BODType.Fletching: return SkillName.Fletching;
-                case BODType.Carpentry: return SkillName.Carpentry;
-            }
-        }
+				case BODType.Fletching: return SkillName.Tinkering;
+				case BODType.Carpentry: return SkillName.Tinkering;
+			}
+		}
 
         public static int GetBodHue(BODType type)
         {

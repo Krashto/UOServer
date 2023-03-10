@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public BoatPainter()
             : base("the boat painter")
         {
-            SetSkill(SkillName.Carpentry, 36.0, 68.0);
+            SetSkill(SkillName.Tinkering, 36.0, 68.0);
         }
 
         public override void InitSBInfo()

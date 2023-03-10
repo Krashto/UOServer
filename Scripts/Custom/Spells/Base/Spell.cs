@@ -778,7 +778,7 @@ namespace Server.Spells
             {
                 Aptitude c = apt[i];
 
-                ok = (pm.GetAptitudeValue(c) >= cValueRequis);
+                ok = (pm.GetTotalAptitudeValue(c) >= cValueRequis);
             }
 
             return ok;

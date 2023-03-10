@@ -340,10 +340,10 @@ namespace Server.Items
 
                 if (from is CustomPlayerMobile)
                 {
-                    m_Level = ((CustomPlayerMobile)from).GetAptitudeValue(Aptitude.Transcription) * 3;
-                    m_GrowValue = ((CustomPlayerMobile)from).GetAptitudeValue(Aptitude.Transcription) * 0.2;
+                    m_Level = ((CustomPlayerMobile)from).GetTotalAptitudeValue(Aptitude.Transcription) * 3;
+                    m_GrowValue = ((CustomPlayerMobile)from).GetTotalAptitudeValue(Aptitude.Transcription) * 0.2;
 
-                    double apti = ((CustomPlayerMobile)from).GetAptitudeValue(Aptitude.Transcription);
+                    double apti = ((CustomPlayerMobile)from).GetTotalAptitudeValue(Aptitude.Transcription);
 
                     if (apti >= 12)
                         m_Max = 145;
@@ -376,7 +376,7 @@ namespace Server.Items
                     //case "Fletching": m_Skill = SkillName.Fletching; break;
                     case "Peacemaking": m_Skill = SkillName.Peacemaking; break;
                     case "Camping": m_Skill = SkillName.Camping; break;
-                    case "Carpentry": m_Skill = SkillName.Carpentry; break;
+                    //case "Carpentry": m_Skill = SkillName.Carpentry; break;
                     case "Cartography": m_Skill = SkillName.Cartography; break;
                     case "Cooking": m_Skill = SkillName.Cooking; break;
                     case "DetectHidden": m_Skill = SkillName.DetectHidden; break;
@@ -412,7 +412,7 @@ namespace Server.Items
                     case "Lumberjacking": m_Skill = SkillName.Lumberjacking; break;
                     case "Mining": m_Skill = SkillName.Mining; break;
                     case "Meditation": m_Skill = SkillName.Meditation; break;
-                    case "Equitation": m_Skill = SkillName.Equitation; break;
+                    case "Equitation": m_Skill = SkillName.Stealth; break;
                     case "RemoveTrap": m_Skill = SkillName.RemoveTrap; break;
                 }
             }

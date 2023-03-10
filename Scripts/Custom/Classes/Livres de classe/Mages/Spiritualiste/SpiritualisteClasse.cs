@@ -20,7 +20,7 @@ namespace Server
 
 		private static CCapacites[] m_Capacites = new CCapacites[]
             {
-                new CCapacites(Capacite.Academique, 3),
+                new CCapacites(Capacite.Magie, 3),
                 new CCapacites(Capacite.ArmesDistance, 3),
             };
 

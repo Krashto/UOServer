@@ -1350,6 +1350,12 @@ namespace Server.Engines.Craft
             }
 
             double bonus = 0.0;
+			
+			if (from is CustomPlayerMobile)
+			{
+				var pm = from as CustomPlayerMobile;
+				bonus += pm.GetCapaciteValue(Custom.Classes.Capacite.Expertise) / 10;
+			}
 
             if (from.Talisman is BaseTalisman)
             {

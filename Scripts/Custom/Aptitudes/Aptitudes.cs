@@ -1,4 +1,5 @@
 using System;
+using Server.Custom.Classes;
 using Server.Mobiles;
 
 namespace Server.Custom.Aptitudes
@@ -17,13 +18,6 @@ namespace Server.Custom.Aptitudes
         {
             get { return this[Aptitude.Couture]; }
             set { this[Aptitude.Couture] = value; }
-        }
-
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Ebenisterie
-        {
-            get { return this[Aptitude.Ebenisterie]; }
-            set { this[Aptitude.Ebenisterie] = value; }
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -150,7 +144,6 @@ namespace Server.Custom.Aptitudes
 			{
 				new AptitudesEntry( Aptitude.Chimie,		"Chimie",           10, SkillName.Alchemy),
 				new AptitudesEntry( Aptitude.Couture,		"Couture",          10, SkillName.Tailoring),
-				new AptitudesEntry( Aptitude.Ebenisterie,	"Ébénisterie",      10, SkillName.Carpentry),
 				new AptitudesEntry( Aptitude.Ingenierie,	"Ingénierie",       10, SkillName.Tinkering),
 				new AptitudesEntry( Aptitude.Metallurgie,	"Métallurgie",      10, SkillName.Blacksmith),
 				new AptitudesEntry( Aptitude.Transcription,	"Transcription",    10, SkillName.Inscribe),
@@ -218,7 +211,39 @@ namespace Server.Custom.Aptitudes
             return from.GetBaseAptitudeValue(aptitude);
         }
 
-        public static bool CanRaise(CustomPlayerMobile from, Aptitude aptitude)
+		public static int GetSkillRequirement(int level)
+		{
+			return 30 + level * 7;
+		}
+
+		public static bool IsValid(CustomPlayerMobile from, Aptitude aptitude)
+		{
+			int index = (int)aptitude;
+
+			if (index >= 0 && index < m_AptitudeEntries.Length)
+			{
+				AptitudesEntry entry = m_AptitudeEntries[index];
+
+				int max = entry.Max;
+				int value = from.GetTotalAptitudeValue(aptitude);
+
+				if (value > max)
+					return false;
+
+				double skill = from.Skills[entry.Skill].Base;
+				int addedvalue = GetValue(from, aptitude);
+				double skillRequirement = GetSkillRequirement(addedvalue);
+
+				if (addedvalue == 0)
+					return true;
+
+				return skill > skillRequirement;
+			}
+
+			return false;
+		}
+
+		public static bool CanRaise(CustomPlayerMobile from, Aptitude aptitude)
         {
             int requiredPA = GetRequiredPA(from, aptitude);
             int dispoPA = GetDisponiblePA(from);
@@ -232,13 +257,13 @@ namespace Server.Custom.Aptitudes
                     AptitudesEntry entry = m_AptitudeEntries[index];
 
                     int max = entry.Max;
-                    int value = from.GetAptitudeValue(aptitude);
+                    int value = from.GetTotalAptitudeValue(aptitude);
 
                     if (value >= max)
                         return false;
 
                     double skill = from.Skills[entry.Skill].Base;
-                    int requiredSkill = GetValue(from, aptitude) * 7 + 30;
+                    int requiredSkill = GetSkillRequirement(GetValue(from, aptitude));
 
 					if (skill > requiredSkill)
 						return true;
@@ -352,7 +377,7 @@ namespace Server.Custom.Aptitudes
             for (int i = 0; i < m_Values.Length; i++)
             {
                 m_Values[i] = 0;
-                m_Owner.OnAptitudesChange((Aptitude)i, Owner.GetAptitudeValue((Aptitude)i) + 1, Owner.GetAptitudeValue((Aptitude)i));
+                m_Owner.OnAptitudesChange((Aptitude)i, Owner.GetTotalAptitudeValue((Aptitude)i) + 1, Owner.GetTotalAptitudeValue((Aptitude)i));
             }
 
             Owner.PADispo = 30 + Owner.Niveau;
