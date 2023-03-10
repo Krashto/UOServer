@@ -74,7 +74,7 @@ namespace Server
 		Lumberjacking = 44,
 		Mining = 45,
 		Meditation = 46,
-		Equitation = 47,
+		Stealth = 47,
 		RemoveTrap = 48,
 		Necromancy = 49,
 		Focus = 50,
@@ -801,7 +801,7 @@ namespace Server
 		public Skill Meditation { get => this[SkillName.Meditation]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
-		public Skill Equitation { get => this[SkillName.Equitation]; set { } }
+		public Skill Equitation { get => this[SkillName.Stealth]; set { } }
 
 		[CommandProperty(AccessLevel.Counselor)]
 		public Skill RemoveTrap { get => this[SkillName.RemoveTrap]; set { } }
