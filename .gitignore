@@ -58,3 +58,5 @@
 /Scripts/obj/Debug/Scripts.GeneratedMSBuildEditorConfig.editorconfig
 /Scripts/obj/Debug/Scripts.csproj.AssemblyReference.cache
 /Scripts/obj/Debug/Scripts.assets.cache
+/Server/bin/Debug/Server.dll
+/Server/bin/Debug/Server.pdb
