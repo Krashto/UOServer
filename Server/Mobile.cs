@@ -3211,7 +3211,7 @@ namespace Server
 
 				if (m_Paralyzed || m_Frozen || (m_Spell != null && !m_Spell.CheckMovement(this)))
 				{
-					SendLocalizedMessage(500111); // You are frozen and can not move.
+					SendMessage("Vous ne pouvez pas vous déplacer en canalisant un sort."); // You are frozen and can not move.
 
 					return false;
 				}

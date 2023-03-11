@@ -170,9 +170,24 @@ namespace Server.Spells
 
 		public virtual bool OnCasterMoving( Direction d )
 		{
-			if ( IsCasting && BlocksMovement )
+			if (IsCasting && BlocksMovement && (!(m_Caster is BaseCreature) || ((BaseCreature)m_Caster).FreezeOnCast))
 			{
-				m_Caster.SendLocalizedMessage( 500111 ); // You are frozen and can not move.
+				m_Caster.SendMessage("Vous ne pouvez pas vous déplacer en canalisant un sort."); // You are frozen and can not move.
+				return false;
+			}
+
+			return true;
+		}
+
+		/// <summary>
+		/// Post ML code where player is frozen in place while casting.
+		/// </summary>
+		/// <param name="caster"></param>
+		/// <returns></returns>
+		public virtual bool CheckMovement(Mobile caster)
+		{
+			if (IsCasting && BlocksMovement && (!(m_Caster is BaseCreature) || ((BaseCreature)m_Caster).FreezeOnCast))
+			{
 				return false;
 			}
 
@@ -902,11 +917,6 @@ namespace Server.Spells
         {
             m.Paralyzed = false;
         }
-
-		public bool CheckMovement(Mobile caster)
-		{
-			return true;
-		}
 
 		public class CastTimer : Timer
 		{
