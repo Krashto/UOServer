@@ -45,7 +45,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				StopTimer(m);
 
-				var duration = GetDurationForSpell(0.15);
+				var duration = GetDurationForSpell(30, 1);
 
 				Timer t = new InternalTimer(m, DateTime.Now + duration);
 				m_Timers[m] = t;

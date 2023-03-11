@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Mobiles;
 
 namespace Server.Items
 {
@@ -102,7 +103,7 @@ namespace Server.Items
             // Treat it as paralyze not as freeze, effect must be removed when damaged.
             defender.Paralyze(duration);
 
-            BeginImmunity(defender, duration + FreezeDelayDuration);
+			BeginImmunity(defender, duration + FreezeDelayDuration);
         }
 
         private class InternalTimer : Timer

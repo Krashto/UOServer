@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 using Server.Items;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -48,7 +49,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				var duration = TimeSpan.FromSeconds(0.5) + GetDurationForSpell(0.1);
 
-				m.CantWalk = true;
 				m.Paralyze(duration);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);

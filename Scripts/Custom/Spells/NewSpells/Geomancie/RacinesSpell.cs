@@ -58,6 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					new InternalItem(0x1AA0, loc, Caster, m.Map, duration);
 
 					m.CantWalk = true;
+					BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, Caster));
 
 					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 					m_Timers[Caster] = t;
@@ -211,6 +212,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						m_Timers.Remove(m_Target);
 
 						m_Target.CantWalk = false;
+						BuffInfo.RemoveBuff(m_Target, BuffIcon.Paralyze);
 
 						m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 						m_Target.PlaySound(508);

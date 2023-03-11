@@ -25,8 +25,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public FormeCycloniqueSpell(Mobile caster, Item scroll)
-			: base(caster, scroll, m_Info)
+		public FormeCycloniqueSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 
@@ -121,8 +120,6 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 						Disturb(m);
 
-						double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
-
 						if (m_Owner.CheckResisted(m))
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						else
@@ -133,10 +130,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 							source.PlaySound(0x44B);
-							damage *= 0.75;
 						}
-
-						SpellHelper.Damage(m_Owner, m, damage, 0, 100, 0, 0, 0);
 					}
 				}
 

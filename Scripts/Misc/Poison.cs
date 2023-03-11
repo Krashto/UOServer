@@ -162,19 +162,19 @@ namespace Server
                     m_Mobile.LocalOverheadMessage(MessageType.Regular, 0x3F, 1053093); // * The strength of the poison overcomes your resistance! *
                 }
 
-                if ((m_Poison.RealLevel < 4) ||
-                    (m_Poison.RealLevel <= 3 && usingPetals))
-                {
-                    if (m_Mobile.CurePoison(m_Mobile))
-                    {
-                        m_Mobile.LocalOverheadMessage(MessageType.Emote, 0x3F, 1053092); // * You feel yourself resisting the effects of the poison *
+                //if ((m_Poison.RealLevel < 4) ||
+                //    (m_Poison.RealLevel <= 3 && usingPetals))
+                //{
+                //    if (m_Mobile.CurePoison(m_Mobile))
+                //    {
+                //        m_Mobile.LocalOverheadMessage(MessageType.Emote, 0x3F, 1053092); // * You feel yourself resisting the effects of the poison *
 
-                        m_Mobile.NonlocalOverheadMessage(MessageType.Emote, 0x3F, 1114442, m_Mobile.Name); // * ~1_NAME~ seems resistant to the poison *
+                //        m_Mobile.NonlocalOverheadMessage(MessageType.Emote, 0x3F, 1114442, m_Mobile.Name); // * ~1_NAME~ seems resistant to the poison *
 
-                        Stop();
-                        return;
-                    }
-                }
+                //        Stop();
+                //        return;
+                //    }
+                //}
 
                 if (m_Index++ == m_Poison.m_Count)
                 {

@@ -56,6 +56,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				m_Timers[m] = t;
 				t.Start();
 
+				m.Emote($"Est aveuglé{(m.Female ? "e" : "")}");
+
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
 			}

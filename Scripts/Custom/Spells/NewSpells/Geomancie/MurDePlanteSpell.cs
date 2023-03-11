@@ -70,7 +70,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				{
 					var loc = new Point3D(eastToWest ? p.X + i : p.X, eastToWest ? p.Y : p.Y + i, p.Z);
 
-					new InternalItem(Utility.Random(0x0D3F, 1), loc, Caster, Caster.Map, duration, i);
+					new InternalItem(Utility.Random(0x0DB8, 1), loc, Caster, Caster.Map, duration, i);
 				}
 			}
 

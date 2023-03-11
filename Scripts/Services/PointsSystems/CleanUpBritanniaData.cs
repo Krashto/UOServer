@@ -108,9 +108,9 @@ namespace Server.Engines.Points
 
                     points = sot.Value / 0.1 * 2;
                 }
-                else if (item is Baits)
+                else if (item is Bait)
                 {
-                    Baits Baits = (Baits)item;
+					Bait Baits = (Bait)item;
 
                     points = 10 * Baits.UsesRemaining;
                 }

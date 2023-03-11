@@ -24,8 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AuraFortifianteSpell(Mobile caster, Item scroll)
-			: base(caster, scroll, m_Info)
+		public AuraFortifianteSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 

@@ -1,14 +1,13 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
 	public class SautAggressifSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Saut aggressif", "Nox",
+				"Saut aggressif", "Ju",
 				SpellCircle.First,
 				203,
 				9051,

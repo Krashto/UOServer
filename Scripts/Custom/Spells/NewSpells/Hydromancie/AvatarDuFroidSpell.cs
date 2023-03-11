@@ -3,6 +3,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System;
 using System.Web.UI.WebControls;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -37,8 +38,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				var duration = GetDurationForSpell(0.1);
 
-				Caster.Freeze(duration);
-				Caster.Blessed = true;
+				Caster.CantWalk = true;
+
+				BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, Caster));
 
 				Timer t = new InternalTimer(Caster, duration);
 				m_Timers[Caster] = t;
@@ -61,6 +63,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				BuffInfo.RemoveBuff(m, BuffIcon.Paralyze);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -82,8 +85,10 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				if (m_Timers.ContainsKey(m_Mobile))
 					m_Timers.Remove(m_Mobile);
-				m_Mobile.Frozen = false;
-				m_Mobile.Blessed = false;
+
+				m_Mobile.CantWalk = false;
+
+				Stop();
 			}
 		}
 	}

@@ -10,7 +10,8 @@
 			{
 				var x = origin.X + GetOrientation(d).X;
 				var y = origin.Y + GetOrientation(d).Y;
-				var z = m.Map.GetAverageZ(x, y);
+				var tile = m.Map.Tiles.GetLandTile(x, y);
+				var z = tile.Z;
 				Point3D newpoint = new Point3D(x, y, z);
 				bool canfit = m.Map.CanSpawnMobile(newpoint);
 				if (canfit)

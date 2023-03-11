@@ -80,7 +80,7 @@ namespace Server.Spells
 		public virtual SkillName DamageSkill{ get{ return SkillName.EvalInt; } }
 
 		public virtual bool RevealOnCast{ get{ return true; } }
-		public virtual bool ClearHandsOnCast{ get{ return true; } }
+		public virtual bool ClearHandsOnCast{ get{ return false; } }
 
 		public virtual bool DelayedDamage{ get{ return false; } }
 
@@ -553,9 +553,13 @@ namespace Server.Spells
 			//{
 			//	m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
 			//}
+			else if (m_Caster.Paralyzed)
+			{
+				m_Caster.SendMessage($"Vous ne pouvez pas envoyer de sort lorsque vous êtes paralysé{(m_Caster.Female ? "e" : "")}.");
+			}
 			else if ( m_Caster.Frozen )
 			{
-				m_Caster.SendLocalizedMessage( 502643 ); // You can not cast a spell while frozen.
+				m_Caster.SendMessage($"Vous ne pouvez pas envoyer de sort lorsque vous êtes endormi{(m_Caster.Female ? "e" : "")}");
 			}
 			else if ( CheckNextSpellTime && Core.TickCount < m_Caster.NextSpellTime )
 			{
@@ -575,7 +579,7 @@ namespace Server.Spells
 
 					TimeSpan castDelay = this.GetCastDelay();
 
-					if ( m_Caster.Body.IsHuman )
+					if (m_Caster.Body.IsHuman || (m_Caster.Player && m_Caster.Body.IsMonster))
 					{
 						int count = (int)Math.Ceiling( castDelay.TotalSeconds / AnimateDelay.TotalSeconds );
 

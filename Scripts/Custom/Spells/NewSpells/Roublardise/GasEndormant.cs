@@ -71,6 +71,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 						m.Freeze(duration);
 						m.Emote("S'endort");
+						//BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Sleep, 1080139, 1080140, duration, m));
 
 						m.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
 						m.PlaySound(0x1E0);

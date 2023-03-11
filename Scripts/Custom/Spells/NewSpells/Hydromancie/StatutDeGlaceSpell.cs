@@ -4,6 +4,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {

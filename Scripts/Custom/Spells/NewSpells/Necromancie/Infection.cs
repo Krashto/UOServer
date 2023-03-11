@@ -3,6 +3,7 @@ using System.Collections;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -61,6 +62,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 			new InternalTimer(m, duration).Start();
 
+			BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Curse, 1075835, 1075836, duration, m));
+
 			if (m.Spell != null)
 				m.Spell.OnCasterHurt();
 
@@ -72,21 +75,23 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		private class InternalTimer : Timer
 		{
-			private Mobile target;
+			private Mobile m_Mobile;
 
 			public InternalTimer(Mobile targ, TimeSpan duration)
 				: base(duration)
 			{
-				target = targ;
+				m_Mobile = targ;
 			}
 
 			protected override void OnTick()
 			{
-				if (target == null || target.Deleted)
+				if (m_Mobile == null || m_Mobile.Deleted)
 					return;
 
-				target.PlaySound(0x1ED);
-				target.FixedParticles(0x375A, 10, 15, 5037, EffectLayer.Waist);
+				BuffInfo.RemoveBuff(m_Mobile, BuffIcon.Curse);
+
+				m_Mobile.PlaySound(0x1ED);
+				m_Mobile.FixedParticles(0x375A, 10, 15, 5037, EffectLayer.Waist);
 			}
 		}
 

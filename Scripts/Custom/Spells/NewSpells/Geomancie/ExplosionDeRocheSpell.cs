@@ -77,11 +77,21 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 						SpellHelper.CheckReflect((int)Circle, ref source, ref m);
 
-						AuraFortifianteSpell.StopTimer(m);
-						FortifieSpell.StopTimer(m);
+						var scalar = 1.0;
 
+						if (AuraFortifianteSpell.IsActive(Caster))
+						{
+							scalar += 0.5;
+							AuraFortifianteSpell.StopTimer(Caster);
+						}
 
-						double damage = GetNewAosDamage(m, 8, 1, 6, true);
+						if (FortifieSpell.IsActive(Caster))
+						{
+							scalar += 0.5;
+							FortifieSpell.StopTimer(Caster);
+						}
+
+						double damage = GetNewAosDamage(m, (int)(4 * scalar), 1, 6, true);
 
 						if (CheckResisted(m))
 						{

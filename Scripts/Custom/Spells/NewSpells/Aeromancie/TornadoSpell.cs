@@ -32,6 +32,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
+			if (IsActive(Caster))
+				StopTimer(Caster);
+
 			var duration = GetDurationForSpell(30, 1.8);
 
 			Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
@@ -40,7 +43,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			Caster.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 			Caster.PlaySound(508);
-
+			
 			FinishSequence();
 		}
 
