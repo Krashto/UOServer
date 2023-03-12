@@ -4,6 +4,8 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 using System;
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Network;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -49,20 +51,32 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				if (IsActive(m))
 					StopTimer(m);
 
-				Disturb(m);
+				if (!FormeElectrisanteSpell.IsActive(m))
+				{
+					Disturb(m);
 
-				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				m.PlaySound(22);
-				m.FixedEffect(0x923, 3, 30);
+					m.PlaySound(22);
+					m.FixedEffect(0x923, 3, 30);
 
-				BleedAttack.BeginBleed(m, Caster, true);
+					BleedAttack.BeginBleed(m, Caster, true);
 
-				var duration = GetDurationForSpell(4, 1.8);
+					var duration = GetDurationForSpell(4, 1.8);
 
-				Timer t = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers[m] = t;
-				t.Start();
+					Timer t = new InternalTimer(m, DateTime.Now + duration);
+					m_Timers[m] = t;
+					t.Start();
+
+					m.SendSpeedControl(SpeedControlType.WalkSpeed);
+
+					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+					m.PlaySound(508);
+				}
+				else
+				{
+					Caster.SendMessage("Votre cible est immunisée aux ralentissements.");
+				}
 			}
 
 			FinishSequence();
@@ -81,6 +95,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m.SendSpeedControl(SpeedControlType.Disable);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -89,13 +104,13 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		public class InternalTimer : Timer
 		{
-			private Mobile m_Target;
+			private Mobile m_Mobile;
 			private DateTime m_Endtime;
 
 			public InternalTimer(Mobile target, DateTime end)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
-				m_Target = target;
+				m_Mobile = target;
 				m_Endtime = end;
 
 				Priority = TimerPriority.OneSecond;
@@ -103,17 +118,18 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 			protected override void OnTick()
 			{
-				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Target) || m_Target == null || m_Target.Deleted || !m_Target.Alive)
+				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
-					var t = m_Timers[m_Target] as Timer;
+					var t = m_Timers[m_Mobile] as Timer;
 
 					if (t != null)
 					{
 						t.Stop();
-						m_Timers.Remove(m_Target);
+						m_Timers.Remove(m_Mobile);
+						m_Mobile.SendSpeedControl(SpeedControlType.Disable);
 
-						m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-						m_Target.PlaySound(508);
+						m_Mobile.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+						m_Mobile.PlaySound(508);
 					}
 
 					Stop();

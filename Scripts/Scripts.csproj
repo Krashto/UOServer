@@ -29,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Custom\Services\" />
     <Folder Include="Custom\Spells\NewSpells\Martial\" />
     <Folder Include="Custom\Spells\NewSpells\Totemique\" />
     <Folder Include="Custom\Spells\OldNewSpells\" />

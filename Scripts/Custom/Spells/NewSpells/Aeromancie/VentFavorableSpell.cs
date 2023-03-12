@@ -3,6 +3,7 @@ using Server.Mobiles;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
+using Server.Network;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -35,11 +36,14 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			if (CheckSequence())
 			{
-				var duration = GetDurationForSpell(0.8);
+				var duration = GetDurationForSpell(10, 1.8);
 
 				var endtime = DateTime.Now + duration;
 
-				new VentFavorableTimer((CustomPlayerMobile)Caster, endtime).Start();
+				Timer t = new VentFavorableTimer(Caster, endtime);
+				t.Start();
+
+				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
 				Caster.PlaySound(163);
 			}
@@ -54,13 +58,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		private class VentFavorableTimer : Timer
 		{
-			private CustomPlayerMobile m_Target;
+			private Mobile m_Mobile;
 			private DateTime m_End;
 
-			public VentFavorableTimer(CustomPlayerMobile target, DateTime endTime)
-				: base(TimeSpan.Zero, TimeSpan.FromSeconds(3))
+			public VentFavorableTimer(Mobile target, DateTime endTime)
+				: base(TimeSpan.Zero, TimeSpan.FromSeconds(1))
 			{
-				m_Target = target;
+				m_Mobile = target;
 				m_End = endTime;
 				target.PlaySound(99);
 
@@ -69,18 +73,19 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			protected override void OnTick()
 			{
-				if (m_Target == null)
+				if (m_Mobile == null)
 				{
 					Stop();
 					return;
 				}
-				else if (m_Target != null && (!m_Target.Alive || DateTime.Now >= m_End))
+				else if (m_Mobile != null && (!m_Mobile.Alive || DateTime.Now >= m_End))
 				{
+					m_Mobile.SendSpeedControl(SpeedControlType.Disable);
 					Stop();
 				}
 
-				if (m_Target != null)
-					m_Target.FixedParticles(0x3779, 5, 10, 5052, EffectLayer.LeftFoot);
+				if (m_Mobile != null)
+					m_Mobile.FixedParticles(0x3779, 5, 10, 5052, EffectLayer.LeftFoot);
 			}
 		}
 

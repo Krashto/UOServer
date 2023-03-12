@@ -3,6 +3,8 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using System.Collections;
 using Server.Spells;
+using Server.Network;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -43,16 +45,25 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			{
 				SpellHelper.Turn(Caster, m);
 
-				StopTimer(m);
+				if (!FormeElectrisanteSpell.IsActive(m))
+				{
+					StopTimer(m);
 
-				var duration = GetDurationForSpell(0.15);
+					var duration = GetDurationForSpell(5, 1.8);
 
-				Timer t = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers[m] = t;
-				t.Start();
+					Timer t = new InternalTimer(m, DateTime.Now + duration);
+					m_Timers[m] = t;
+					t.Start();
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+					Caster.SendSpeedControl(SpeedControlType.WalkSpeed);
+
+					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+					m.PlaySound(508);
+				}
+				else
+				{
+					Caster.SendMessage("Votre cible est immunisée aux ralentissements.");
+				}
 			}
 
 			FinishSequence();

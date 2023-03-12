@@ -49,11 +49,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				StopTimer(m);
 
-				Timer m_Timer = new InternalTimer(endtime, m);
+				Timer t = new InternalTimer(endtime, m);
 
-				m_Timers[m] = m_Timer;
+				m_Timers[m] = t;
 
-				m_Timer.Start();
+				t.Start();
 
 				m.Squelched = true;
 			}

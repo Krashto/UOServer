@@ -467,17 +467,6 @@ namespace Server.Mobiles
 			return AuraDeRemedeSpell.IsActive(this) || FormeMetalliqueSpell.IsActive(this);
 		}
 
-		public override int ComputeMovementSpeed(Direction dir, bool checkTurning)
-		{
-			if (!FormeElectrisanteSpell.IsActive(this) && (CoupDansLeGenouSpell.IsActive(this) || BlizzardSpell.IsActive(this) || CoupureDesTendonsSpell.IsActive(this)))
-				return WalkFoot;
-
-			if (VentFavorableSpell.IsActive(this) && !Mounted)
-				return RunFoot;
-
-			return base.ComputeMovementSpeed(dir, checkTurning);
-		}
-
 		public bool AddEsclave(Mobile m)
 		{
 			if (RoomForSlave())

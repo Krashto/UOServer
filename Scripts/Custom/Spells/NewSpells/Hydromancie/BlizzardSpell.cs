@@ -3,6 +3,8 @@ using System.Collections;
 using Server.Mobiles;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Network;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -59,6 +61,14 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 						Timer t = new InternalTimer(Caster, m);
 						m_Timers[m] = t;
 						t.Start();
+
+						if (!FormeElectrisanteSpell.IsActive(m))
+						{
+							m.SendSpeedControl(SpeedControlType.WalkSpeed);
+
+							m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
+							m.PlaySound(508);
+						}
 					}
 				}
 			}
@@ -90,23 +100,17 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 			protected override void OnTick()
 			{
-				if (!m_Mobile.Alive || m_Mobile.Deleted)
+				if (!m_Mobile.Alive || m_Mobile.Deleted || ++m_Count == m_MaxCount)
 				{
 					if (m_Timers.ContainsKey(m_Mobile))
 						m_Timers.Remove(m_Mobile);
+					m_Mobile.SendSpeedControl(SpeedControlType.Disable);
 					Stop();
 				}
 				else
 				{
 					m_Mobile.Stam -= 5;
 					m_Mobile.Hits -= 1;
-
-					if (++m_Count == m_MaxCount)
-					{
-						if (m_Timers.ContainsKey(m_Mobile))
-							m_Timers.Remove(m_Mobile);
-						Stop();
-					}
 				}
 			}
 		}
