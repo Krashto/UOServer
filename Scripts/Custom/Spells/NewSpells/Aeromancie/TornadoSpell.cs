@@ -90,6 +90,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				var range = 1;
 
+				ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range);
+
 				if (map != null)
 				{
 					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
@@ -115,7 +117,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 						{
 							SpellHelper.Turn(m, source);
 
-							ExplodeFX.Tornado.CreateInstance(source, source.Map, range);
 
 							Disturb(m);
 

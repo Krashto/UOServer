@@ -49,13 +49,13 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				{
 					StopTimer(m);
 
-					var duration = GetDurationForSpell(5, 1.8);
+					var duration = GetDurationForSpell(5, 0.05);
 
 					Timer t = new InternalTimer(m, DateTime.Now + duration);
 					m_Timers[m] = t;
 					t.Start();
 
-					Caster.SendSpeedControl(SpeedControlType.WalkSpeed);
+					m.SendSpeedControl(SpeedControlType.WalkSpeed);
 
 					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 					m.PlaySound(508);
@@ -82,6 +82,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m.SendSpeedControl(SpeedControlType.Disable);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -107,6 +108,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Target) || m_Target == null || m_Target.Deleted || !m_Target.Alive)
 				{
 					m_Timers.Remove(m_Target);
+					m_Target.SendSpeedControl(SpeedControlType.Disable);
 
 					m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 					m_Target.PlaySound(508);

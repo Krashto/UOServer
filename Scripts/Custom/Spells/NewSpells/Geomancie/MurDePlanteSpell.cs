@@ -175,7 +175,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 			public override bool OnMoveOver(Mobile m)
 			{
-				if (Visible && m_Caster != null && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false))
+				if (Visible && m_Caster != null && m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false))
 				{
 					m_Caster.DoHarmful(m);
 
@@ -245,10 +245,13 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							{
 								var m = (Mobile)m_Queue.Dequeue();
 
-								caster.DoHarmful(m);
+								if (m != m_Item.m_Caster)
+								{
+									caster.DoHarmful(m);
 
-								m_Item.ApplyPoisonTo(m);
-								m.PlaySound(0x474);
+									m_Item.ApplyPoisonTo(m);
+									m.PlaySound(0x474);
+								}
 							}
 						}
 					}

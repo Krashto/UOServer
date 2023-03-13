@@ -4,7 +4,6 @@ using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
-using System.Web.UI.WebControls;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {

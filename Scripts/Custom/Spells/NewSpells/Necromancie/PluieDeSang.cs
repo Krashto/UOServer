@@ -38,7 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				if (map != null)
 				{
-					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 5, Aptitude.Necromancie);
+					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value, Aptitude.Necromancie);
 
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), range);
 
