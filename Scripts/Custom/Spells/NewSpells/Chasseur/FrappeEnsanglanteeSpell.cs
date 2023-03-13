@@ -3,6 +3,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -44,6 +45,8 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellHelper.Turn(Caster, m);
 
 				Disturb(m);
+
+				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 1);
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 

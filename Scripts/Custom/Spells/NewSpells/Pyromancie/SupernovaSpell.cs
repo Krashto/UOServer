@@ -5,10 +5,10 @@ using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
-	public class ExplosionDeRocheSpell : Spell
+	public class SupernovaSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Explosion De Roche", "Vas Kal Des Ylem",
+				"Supernova", "Vas Kal Des Flam",
 				SpellCircle.Eighth,
 				233,
 				9042,
@@ -18,12 +18,12 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Reagent.SulfurousAsh
 			);
 
-		public override int RequiredAptitudeValue { get { return 7; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
-		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
+		public override int RequiredAptitudeValue { get { return 4; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
+		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public ExplosionDeRocheSpell(Mobile caster, Item scroll)
+		public SupernovaSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, range);
 
-					ExplodeFX.Earth.CreateInstance(Caster.Location, Caster.Map, range);
+					ExplodeFX.Fire.CreateInstance(Caster.Location, Caster.Map, range);
 
 					foreach (Mobile m in eable)
 						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false))
@@ -88,7 +88,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
-						source.MovingParticles(m, 0x11B6, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+						source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 						source.PlaySound(0x44B);
 
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);

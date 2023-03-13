@@ -1,3 +1,4 @@
+using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Engines.CityLoyalty;
 using Server.Engines.SphynxFortune;
 using Server.Items;
@@ -144,8 +145,6 @@ namespace Server
 				quiver = from.FindItemOnLayer(Layer.Cloak) as BaseQuiver;
 			}
 
-           
-
             int totalDamage;
 
             if (!ignoreArmor)
@@ -212,11 +211,63 @@ namespace Server
                 return damageable.Damage(totalDamage, from);
             }
 
-            var fromCreature = from as BaseCreature;
-            var toCreature = m as BaseCreature;
+			#region Evil Omen, Blood Oath and reflect physical
+			//if (EvilOmenSpell.TryEndEffect(m))
+			//{
+			//	totalDamage = (int)(totalDamage * 1.25);
+			//}
 
-            //SHould this go in after or before dragon barding absorb?
-            if (ignoreArmor)
+			var fromCreature = from as BaseCreature;
+			var toCreature = m as BaseCreature;
+
+			if (from != null && !from.Deleted && from.Alive && !from.IsDeadBondedPet)
+			{
+				Mobile oath = ArmureOsSpell.GetBloodOath(from);
+
+				/* Per EA's UO Herald Pub48 (ML):
+                * ((resist spellsx10)/20 + 10=percentage of damage resisted)
+                * 
+                * Tested 12/29/2017-
+                * No cap, also, above forumula is only in effect vs. creatures
+                */
+
+				if (oath == m)
+				{
+					int originalDamage = totalDamage;
+					totalDamage = (int)(totalDamage * 1.2);
+
+					if (toCreature != null)
+					{
+						from.Damage((int)(originalDamage * (1 - (((from.Skills.MagicResist.Value * .5) + 10) / 100))), m);
+					}
+					else
+					{
+						from.Damage(originalDamage, m);
+					}
+				}
+				else if (!ignoreArmor && from != m)
+				{
+					int reflectPhys = Math.Min(105, AosAttributes.GetValue(m, AosAttribute.ReflectPhysical));
+
+					if (reflectPhys != 0)
+					{
+						if (from is ExodusMinion && ((ExodusMinion)from).FieldActive || from is ExodusOverseer && ((ExodusOverseer)from).FieldActive)
+						{
+							from.FixedParticles(0x376A, 20, 10, 0x2530, EffectLayer.Waist);
+							from.PlaySound(0x2F4);
+							m.SendAsciiMessage("Your weapon cannot penetrate the creature's magical barrier");
+						}
+						else
+						{
+							from.Damage(Scale((damage * phys * (100 - (ignoreArmor ? 0 : m.PhysicalResistance))) / 10000, reflectPhys), m);
+						}
+					}
+				}
+			}
+			#endregion
+
+			//Should this go in after or before dragon barding absorb?
+			if (ignoreArmor)
                 DamageEaterContext.CheckDamage(m, totalDamage, 0, 0, 0, 0, 0, 100);
             else
                 DamageEaterContext.CheckDamage(m, totalDamage, phys, fire, cold, pois, nrgy, direct);

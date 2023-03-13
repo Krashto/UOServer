@@ -3,6 +3,7 @@ using System.Collections;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -37,14 +38,14 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 2, Aptitude.Aeromancie);
 			Caster.SendLocalizedMessage(502730); // You begin to move quietly.
 
+			ExplodeFX.Smoke.CreateInstance(Caster, Caster.Map, 1);
+
 			RemoveTimer(Caster);
 
-			var duration = GetDurationForSpell(30, 3);
+			var duration = GetDurationForSpell(30, 2);
 
 			Timer t = new InternalTimer(Caster, duration);
-
 			m_Table[Caster] = t;
-
 			t.Start();
 
 			FinishSequence();

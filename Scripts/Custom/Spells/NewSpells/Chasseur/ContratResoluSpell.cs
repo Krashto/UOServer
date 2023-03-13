@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Custom.Spells.NewSpells.Chasseur;
 using Server.Items;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -46,6 +47,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				{
 					Caster.MoveToWorld(m.Location, m.Map);
 					m.Damage(100);
+
+					ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 5);
 
 					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 					m.PlaySound(508);

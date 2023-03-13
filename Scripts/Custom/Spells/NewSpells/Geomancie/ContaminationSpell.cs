@@ -1,6 +1,7 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -44,22 +45,20 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				int level;
 
-				var total = Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.Poisoning].Value;
+				var total = Caster.Skills[SkillName.MagicResist].Value + Caster.Skills[SkillName.EvalInt].Value;
 
-				if (total >= 200.0 && 3 > Utility.Random(10))
-					level = 3;
-				else if (total > 140.0)
-					level = 2;
+				if (total > 150.0)
+					level = 1;
 				else
-					level = 1;
+					level = 0;
 
-				if (level > 1 && CheckResisted(m))
-				{
-					level = 1;
+				if (CheckResisted(m))
 					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				else
+				{
+					m.ApplyPoison(Caster, Poison.GetPoison(level));
+					ExplodeFX.Poison.CreateInstance(m, m.Map, 0);
 				}
-
-				m.ApplyPoison(Caster, Poison.GetPoison(level));
 
 				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
 				m.PlaySound(0x474);

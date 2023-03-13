@@ -1,6 +1,7 @@
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -62,6 +63,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 					m.MeleeDamageAbsorb = (int)value;
 					m.MagicDamageAbsorb = (int)value;
+
+					SpecialFX.GreyShield.CreateInstance(m, m.Map, 0);
 
 					m.FixedParticles(0x376A, 9, 32, 5008, EffectLayer.Waist);
 					m.PlaySound(0x1F2);

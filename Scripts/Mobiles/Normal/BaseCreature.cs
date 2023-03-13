@@ -1897,10 +1897,10 @@ namespace Server.Mobiles
                     return false;
                 }
 
-                if (m_ControlMaster != null && FamilierSpell.Table.Contains(m_ControlMaster))
-                {
-                    return FamilierSpell.Table[m_ControlMaster] == this;
-                }
+                //if (m_ControlMaster != null && FamilierSpell.Table.Contains(m_ControlMaster))
+                //{
+                //    return FamilierSpell.Table[m_ControlMaster] == this;
+                //}
 
                 return false;
             }
@@ -5813,13 +5813,13 @@ namespace Server.Mobiles
 
             if (DeathAdderCharmable && from.CanBeHarmful(this, false))
             {
-                DeathAdder da = FamilierSpell.Table[from] as DeathAdder;
+                //DeathAdder da = FamilierSpell.Table[from] as DeathAdder;
 
-                if (da != null && !da.Deleted)
-                {
-                    from.SendAsciiMessage("You charm the snake.  Select a target to attack.");
-                    from.Target = new DeathAdderCharmTarget(this);
-                }
+                //if (da != null && !da.Deleted)
+                //{
+                //    from.SendAsciiMessage("You charm the snake.  Select a target to attack.");
+                //    from.Target = new DeathAdderCharmTarget(this);
+                //}
             }
 
             base.OnDoubleClick(from);
@@ -5842,11 +5842,11 @@ namespace Server.Mobiles
                     return;
                 }
 
-                DeathAdder da = FamilierSpell.Table[from] as DeathAdder;
-                if (da == null || da.Deleted)
-                {
-                    return;
-                }
+                //DeathAdder da = FamilierSpell.Table[from] as DeathAdder;
+                //if (da == null || da.Deleted)
+                //{
+                //    return;
+                //}
 
                 Mobile targ = targeted as Mobile;
                 if (targ == null || !from.CanBeHarmful(targ, false))

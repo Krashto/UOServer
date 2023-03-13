@@ -4,6 +4,7 @@ using Server.Targeting;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -51,8 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public static void ToogleInvisibility(Spell spell, Mobile caster, Mobile m)
 		{
-			Effects.SendLocationParticles(EffectItem.Create(new Point3D(m.X, m.Y, m.Z + 16), caster.Map, EffectItem.DefaultDuration), 0x376A, 10, 15, 5045);
-			m.PlaySound(0x3C4);
+			ExplodeFX.Smoke.CreateInstance(m, m.Map, 1);
 
 			m.Hidden = true;
 			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[SkillName.Magery].Value / 2, Aptitude.Aeromancie);

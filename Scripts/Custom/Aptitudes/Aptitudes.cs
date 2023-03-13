@@ -1,5 +1,4 @@
 using System;
-using Server.Custom.Classes;
 using Server.Mobiles;
 
 namespace Server.Custom.Aptitudes
@@ -381,6 +380,8 @@ namespace Server.Custom.Aptitudes
             }
 
             Owner.PADispo = 30 + Owner.Niveau;
-        }
+
+			Classes.Classes.SetBaseAndCapSkills(Owner);
+		}
     }
 }

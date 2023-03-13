@@ -417,7 +417,7 @@ namespace VitaNex.FX
 				{
 					new EffectInfo(null, null, -1, 0, 10, 20),
 					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Normal, TimeSpan.FromMilliseconds(300)),
-					new EffectInfo(null, null, 14120, 0, 10, 20, EffectRender.Normal, TimeSpan.FromMilliseconds(1000))
+					new EffectInfo(null, null, 14120, 0, 10, 20, EffectRender.Normal, TimeSpan.FromMilliseconds(500))
 				};
 			}
 		}

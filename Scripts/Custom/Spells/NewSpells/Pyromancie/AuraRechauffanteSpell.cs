@@ -5,13 +5,13 @@ using System;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
-	public class AuraFortifianteSpell : Spell
+	public class AuraRechauffanteSpell : Spell
 	{
 		private static Hashtable m_Table = new Hashtable();
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura Fortifiante", "Uus Mani",
+				"Force", "Uus Mani",
 				SpellCircle.First,
 				212,
 				9061,
@@ -19,12 +19,12 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Reagent.Nightshade
 			);
 
-		public override int RequiredAptitudeValue { get { return 5; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Magery; } }
+		public override int RequiredAptitudeValue { get { return 3; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
+		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AuraFortifianteSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public AuraRechauffanteSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 
@@ -60,7 +60,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 					var value = 1 + (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 600;
 
-					ResistanceMod mod = new ResistanceMod(ResistanceType.Fire, (int)value);
+					ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
 					m_Table[m] = mod;
 					m.AddResistanceMod(mod);
 

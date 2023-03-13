@@ -1,5 +1,6 @@
 using System.Collections;
 using Server.Custom.Aptitudes;
+using VitaNex.FX;
 
 namespace Server.Spells
 {
@@ -35,7 +36,11 @@ namespace Server.Spells
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 5, Aptitude.Necromancie));
+					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 5, Aptitude.Geomancie);
+
+					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), range);
+
+					ExplodeFX.Poison.CreateInstance(Caster, Caster.Map, range);
 
 					foreach (Mobile m in eable)
 					{

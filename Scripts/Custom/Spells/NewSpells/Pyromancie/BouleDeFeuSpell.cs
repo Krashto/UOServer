@@ -1,27 +1,28 @@
+using Server.Items;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Roublardise
 {
-	public class RocheSpell : Spell
+	public class BouleDeFeuSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Roche", "Vas Roc",
-				SpellCircle.Second,
+				"Boule de feu", "Vas Flam",
+				SpellCircle.Fourth,
 				203,
-				9041,
-				Reagent.BlackPearl,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh
+				9031,
+				Reagent.NoxCrystal,
+				Reagent.SulfurousAsh,
+				Reagent.BlackPearl
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
-		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
+		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public RocheSpell(Mobile caster, Item scroll)
+		public BouleDeFeuSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -30,8 +31,6 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 		{
 			Caster.Target = new InternalTarget(this);
 		}
-
-		public override bool DelayedDamage { get { return true; } }
 
 		public void Target(Mobile m)
 		{
@@ -45,6 +44,9 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				Disturb(m);
 
+				m.PlaySound(22);
+				m.FixedEffect(0x923, 3, 30);
+
 				SpellHelper.CheckReflect((int)Circle, ref source, ref m);
 
 				double damage = GetNewAosDamage(m, 6, 1, 2, false);
@@ -56,10 +58,13 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 				}
 
-				source.MovingParticles(m, 0x11B6, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
-				source.PlaySound(0x44B);
+				source.MovingParticles(m, 0x36D4, 7, 0, false, true, 9502, 4019, 0x160);
+				source.PlaySound(0x15E);
 
-				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
+				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
+
+				if (Utility.RandomDouble() < 0.25)
+					BleedAttack.BeginBleed(m, Caster, true);
 			}
 
 			FinishSequence();
@@ -67,9 +72,9 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 		private class InternalTarget : Target
 		{
-			private RocheSpell m_Owner;
+			private BouleDeFeuSpell m_Owner;
 
-			public InternalTarget(RocheSpell owner)
+			public InternalTarget(BouleDeFeuSpell owner)
 				: base(12, false, TargetFlags.Harmful)
 			{
 				m_Owner = owner;

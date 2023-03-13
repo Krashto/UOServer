@@ -159,7 +159,7 @@ namespace Server.Spells
             Register(634, typeof(AuraEvasiveSpell));
 			Register(635, typeof(ExTeleportationSpell));
 			Register(636, typeof(ProtectSpell));
-            Register(637, typeof(SecoursSpell));
+            //Register(637, typeof(SecoursSpell));
             Register(638, typeof(ToucheAbsorbantSpell));
             Register(639, typeof(StatutDeGlaceSpell));
 
@@ -191,7 +191,7 @@ namespace Server.Spells
             Register(662, typeof(EmpalementSpell));
             Register(663, typeof(VortexSpell));
 
-            Register(664, typeof(CreatureSpell));
+            Register(664, typeof(BouclierDeFeuSpell));
             Register(665, typeof(FormeTerrestreSpell));
             Register(666, typeof(FormeEnsangleeSpell));
             Register(667, typeof(FormeEnflammeeSpell));
@@ -242,9 +242,9 @@ namespace Server.Spells
 			Register(706, typeof(ArmureOsSpell));
             Register(707, typeof(SommeilSpell));
 
-            Register(708, typeof(FamilierSpell));
+            //Register(708, typeof(FamilierSpell));
             //Register(709, typeof(DefraicheurSpell));
-            Register(710, typeof(StrangulaireSpell));
+            //Register(710, typeof(StrangulaireSpell));
             Register(711, typeof(ReanimationSpell));
             Register(712, typeof(AppelDuSangSpell));
 			//Register(713, typeof(InsurectionSpell));

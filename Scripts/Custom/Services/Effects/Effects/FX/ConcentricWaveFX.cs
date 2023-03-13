@@ -35,6 +35,7 @@ namespace VitaNex.FX
 		Energy,
 		Poison,
 		Tornado,
+		SmallTornado,
         Brambles,
         SpiderWeb,
         Blood,
@@ -133,7 +134,9 @@ namespace VitaNex.FX
 					return new PoisonConcentricWaveEffect(start, map, d, range, repeat, interval, effectHandler, callback);
 				case ConcentricWaveFX.Tornado:
 					return new TornadoConcentricEffect(start, map, d, range, repeat, interval, effectHandler, callback);
-                case ConcentricWaveFX.Brambles:
+				case ConcentricWaveFX.SmallTornado:
+					return new SmallTornadoConcentricEffect(start, map, d, range, repeat, interval, effectHandler, callback);
+				case ConcentricWaveFX.Brambles:
                     return new BramblesConcentricWaveEffect(start, map, d, range, repeat, interval, effectHandler, callback);
                 case ConcentricWaveFX.SpiderWeb:
                     return new SpiderWebConcentricWaveEffect(start, map, d, range, repeat, interval, effectHandler, callback);
@@ -615,7 +618,7 @@ namespace VitaNex.FX
 
             Size = 5;
             Climb = 5;
-            Height = 80;
+            Height = 60;
 
             CanMove = true;
         }
@@ -701,7 +704,125 @@ namespace VitaNex.FX
         }
     }
 
-    public class BramblesConcentricWaveEffect : BaseConcentricWaveEffect
+	public class SmallTornadoConcentricEffect : BaseConcentricWaveEffect
+	{
+		public static EffectInfo[] Info
+		{
+			get { return new[] { new EffectInfo(null, null, 14284, 899, 10, 10, EffectRender.ShadowOutline) }; }
+		}
+
+		private readonly EffectInfo[] _Effects = Info;
+
+		public override EffectInfo[] Effects { get { return _Effects; } }
+
+		public int Size { get; set; }
+		public int Climb { get; set; }
+		public int Height { get; set; }
+
+		public bool CanMove { get; set; }
+
+		public SmallTornadoConcentricEffect(
+			IPoint3D start,
+			Map map,
+			Direction d,
+			int range = 10,
+			int repeat = 0,
+			TimeSpan? interval = null,
+			Action<EffectInfo> effectHandler = null,
+			Action callback = null)
+			: base(start, map, d, range, repeat, interval, effectHandler, callback)
+		{
+			EnableMutate = true;
+
+			Size = 3;
+			Climb = 3;
+			Height = 30;
+
+			CanMove = true;
+		}
+
+		protected override bool ExcludePoint(Point3D p, int range, Direction fromCenter)
+		{
+			return false;
+		}
+
+		public override void MutateEffect(EffectInfo e)
+		{
+			base.MutateEffect(e);
+
+			e.Duration = 7 + (int)(Interval.TotalMilliseconds / 100.0);
+
+			switch (Utility.Random(3))
+			{
+				case 0:
+					e.Render = EffectRender.Darken;
+					break;
+				case 1:
+					e.Render = EffectRender.SemiTransparent;
+					break;
+				case 2:
+					e.Render = EffectRender.ShadowOutline;
+					break;
+			}
+		}
+
+		public override Point3D[][] GetTargetPoints(int count)
+		{
+			var start = Start.Clone3D();
+
+			int x = 0, y = 0;
+
+			if (CanMove)
+			{
+				Movement.Offset(Direction, ref x, ref y);
+			}
+
+			var end = start.Clone3D(Range * x, Range * y);
+
+			if (AverageZ)
+			{
+				start = start.GetWorldTop(Map);
+				end = end.GetWorldTop(Map);
+			}
+
+			var path = CanMove ? start.GetLine3D(end, Map, AverageZ) : new[] { start };
+			var points = new List<Point3D>[path.Length];
+
+			points.SetAll(i => new List<Point3D>());
+
+			var climb = Climb;
+			var size = Size;
+			double height = Height;
+
+			Action<int> a = i =>
+			{
+				var step = path[i];
+
+				for (var z = 0; z < height; z += climb)
+				{
+					var mm = (int)Math.Max(0, size * (z / height));
+
+					points[i].AddRange(step.ScanRangeGet(Map, mm, mm, ComputePoint, false).Combine().Select(p => p.Clone3D(0, 0, z)));
+				}
+			};
+
+			if (path.Length < 10)
+			{
+				for (var i = 0; i < path.Length; i++)
+				{
+					a(i);
+				}
+			}
+			else
+			{
+				Parallel.For(0, path.Length, a);
+			}
+
+			return points.FreeToMultiArray(true);
+		}
+	}
+
+	public class BramblesConcentricWaveEffect : BaseConcentricWaveEffect
     {
         public static bool DisplayElemental = true;
 

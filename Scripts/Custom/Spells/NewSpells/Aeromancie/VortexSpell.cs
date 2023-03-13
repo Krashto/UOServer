@@ -4,6 +4,7 @@ using Server.Targeting;
 using Server.Mobiles;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -64,17 +65,17 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		private class VortexTimer : Timer
 		{
-			private Mobile m_caster;
-			private DateTime ending;
-			private IPoint3D loc;
+			private Mobile m_Caster;
+			private DateTime m_EndTime;
+			private IPoint3D m_Loc;
 			private Timer m_Timer;
 			private Spell m_Spell;
 
 			public VortexTimer(Mobile caster, DateTime endtime, IPoint3D p, Timer timer, Spell spell) : base(TimeSpan.Zero, TimeSpan.FromSeconds(1))
 			{
-				m_caster = caster;
-				ending = endtime;
-				loc = p;
+				m_Caster = caster;
+				m_EndTime = endtime;
+				m_Loc = p;
 				m_Timer = timer;
 				m_Spell = spell;
 
@@ -83,25 +84,29 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			protected override void OnTick()
 			{
-				if (DateTime.Now >= ending)
+				if (DateTime.Now >= m_EndTime)
 					Stop();
-				else if (!m_caster.Alive)
+				else if (!m_Caster.Alive)
 					Stop();
 				else
 				{
-					if (loc is Item)
-						loc = ((Item)loc).GetWorldLocation();
+					if (m_Loc is Item)
+						m_Loc = ((Item)m_Loc).GetWorldLocation();
 
 					var targets = new ArrayList();
 
-					var map = m_caster.Map;
+					var map = m_Caster.Map;
 
 					if (map != null)
 					{
-						IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(loc), (int)SpellHelper.AdjustValue(m_caster, 1 + m_caster.Skills[SkillName.Magery].Base / 25, Aptitude.Aeromancie));
+						var range = (int)SpellHelper.AdjustValue(m_Caster, 1 + m_Caster.Skills[SkillName.Magery].Base / 25, Aptitude.Aeromancie);
+
+						IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(m_Loc), range);
+
+						ExplodeFX.Air.CreateInstance(m_Loc, m_Caster.Map, range);
 
 						foreach (Mobile m in eable)
-							if (m_caster != m && SpellHelper.ValidIndirectTarget(m_caster, m, true) && m_caster.CanBeHarmful(m, false) && m_caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_caster, m))
+							if (m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m, true) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 								targets.Add(m);
 
 						eable.Free();
@@ -109,7 +114,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 					if (targets.Count > 0)
 					{
-						m_caster.PlaySound(0x29);
+						m_Caster.PlaySound(0x29);
 
 						for (var i = 0; i < targets.Count; ++i)
 						{
@@ -121,13 +126,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 							{
 								Disturb(m);
 
-								double damage = new VortexSpell(m_caster, null).GetNewAosDamage(null, 6, 4, 6, true);
+								double damage = new VortexSpell(m_Caster, null).GetNewAosDamage(null, 6, 4, 6, true);
 
-								damage = (int)SpellHelper.AdjustValue(m_caster, damage, Aptitude.Aeromancie);
+								damage = (int)SpellHelper.AdjustValue(m_Caster, damage, Aptitude.Aeromancie);
 
-								m_caster.DoHarmful(m);
+								m_Caster.DoHarmful(m);
 
-								AOS.Damage(m, m_caster, (int)damage, 0, 0, 0, 0, 100);
+								AOS.Damage(m, m_Caster, (int)damage, 0, 0, 0, 0, 100);
 
 								m.BoltEffect(0);
 							}

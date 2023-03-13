@@ -2,6 +2,7 @@ using Server.Targeting;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -66,23 +67,21 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				SpellHelper.Turn(Caster, orig);
 
-				var m = Caster;
-
-				var from = m.Location;
+				var from = Caster.Location;
 				var to = new Point3D(p);
 
-				m.Location = to;
-				m.ProcessDelta();
+				Caster.Location = to;
+				Caster.ProcessDelta();
 
-				if (m.Player)
+				if (Caster.Player)
 				{
-					Effects.SendLocationParticles(EffectItem.Create(from, m.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 2023);
-					Effects.SendLocationParticles(EffectItem.Create(to, m.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 5023);
+					ExplodeFX.Smoke.CreateInstance(from, map, 1);
+					ExplodeFX.Smoke.CreateInstance(to, map, 1);
 				}
 				else
-					m.FixedParticles(0x376A, 9, 32, 0x13AF, EffectLayer.Waist);
+					Caster.FixedParticles(0x376A, 9, 32, 0x13AF, EffectLayer.Waist);
 
-				m.PlaySound(0x1FE);
+				Caster.PlaySound(0x1FE);
 			}
 
 			FinishSequence();

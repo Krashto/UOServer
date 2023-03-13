@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using System.Collections;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -49,13 +50,20 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				if (!FormeMetalliqueSpell.IsActive(m))
 				{
 					var duration = TimeSpan.FromSeconds(0.5) + GetDurationForSpell(0.1);
+					SpellHelper.Turn(Caster, m);
+
+					ConcentricWaveFX.Brambles.CreateInstance(Caster, Caster.Map, Caster.Direction, (int)Caster.GetDistanceToSqrt(m.Location));
 
 					var loc = new Point3D(m.X + 1, m.Y, m.Z);
-					new InternalItem(0x1A9E, loc, Caster, m.Map, duration);
+					new InternalItem(0x0D3F, loc, Caster, m.Map, duration);
 					loc = new Point3D(m.X + 1, m.Y + 1, m.Z);
-					new InternalItem(0x1A9F, loc, Caster, m.Map, duration);
+					new InternalItem(0x0D40, loc, Caster, m.Map, duration);
 					loc = new Point3D(m.X, m.Y + 1, m.Z);
-					new InternalItem(0x1AA0, loc, Caster, m.Map, duration);
+					new InternalItem(0x3020, loc, Caster, m.Map, duration);
+					loc = new Point3D(m.X, m.Y - 1, m.Z);
+					new InternalItem(0x3022, loc, Caster, m.Map, duration);
+					loc = new Point3D(m.X - 1, m.Y, m.Z);
+					new InternalItem(0x3023, loc, Caster, m.Map, duration);
 
 					m.CantWalk = true;
 					BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, Caster));

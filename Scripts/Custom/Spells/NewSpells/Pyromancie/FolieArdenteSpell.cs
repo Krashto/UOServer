@@ -1,32 +1,32 @@
 using System;
-using System.Collections;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
+using System.Collections;
 
-namespace Server.Custom.Spells.NewSpells.Aeromancie
+namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
-	public class AveuglementSpell : Spell
+	public class FolieArdenteSpell : Spell
 	{
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aveuglement", "An Tyr Mani",
-				SpellCircle.Eighth,
-				212,
-				9041,
+				"Folie Ardente", "In Vas Jux Flam",
+				SpellCircle.Seventh,
+				Core.AOS ? 239 : 215,
+				9011,
 				Reagent.Garlic,
 				Reagent.MandrakeRoot,
 				Reagent.SulfurousAsh
 			);
 
-		public override int RequiredAptitudeValue { get { return 1; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Aeromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.SpiritSpeak; } }
+		public override int RequiredAptitudeValue { get { return 7; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
+		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AveuglementSpell(Mobile caster, Item scroll)
+		public FolieArdenteSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				if (IsActive(m))
 					StopTimer(m);
 
-				var duration = GetDurationForSpell(0.15);
+				var duration = GetDurationForSpell(5, 2);
 
 				Timer t = new InternalTimer(m, DateTime.Now + duration);
 				m_Timers[m] = t;
@@ -55,7 +55,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				ConcentricWaveFX.SmallTornado.CreateInstance(m, m.Map, 0);
 
-				m.Emote($"Est aveuglé{(m.Female ? "e" : "")}");
+				m.Emote($"Est désorienté{(m.Female ? "e" : "")}");
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -113,9 +113,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		private class InternalTarget : Target
 		{
-			private AveuglementSpell m_Owner;
+			private FolieArdenteSpell m_Owner;
 
-			public InternalTarget(AveuglementSpell owner)
+			public InternalTarget(FolieArdenteSpell owner)
 				: base(12, false, TargetFlags.Beneficial)
 			{
 				m_Owner = owner;

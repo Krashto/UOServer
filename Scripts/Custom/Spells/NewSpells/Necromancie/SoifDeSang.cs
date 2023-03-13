@@ -2,6 +2,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -43,6 +44,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellHelper.Turn(source, m);
 
 				Disturb(m);
+
+				ExplodeFX.Blood.CreateInstance(m, m.Map, 1);
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 

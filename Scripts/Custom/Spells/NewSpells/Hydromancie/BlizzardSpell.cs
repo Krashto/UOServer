@@ -5,6 +5,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Network;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -45,8 +46,12 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				var map = Caster.Map;
 
+				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 15, Aptitude.Hydromancie);
+
+				ExplodeFX.Snow.CreateInstance(Caster, Caster.Map, range);
+
 				if (map != null)
-					foreach (var m in Caster.GetMobilesInRange((int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 15, Aptitude.Hydromancie)))
+					foreach (var m in Caster.GetMobilesInRange(range))
 						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && (!Core.AOS || Caster.InLOS(m)) && !CustomPlayerMobile.IsInEquipe(Caster, m))
 							m_target.Add(m);
 
@@ -89,13 +94,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			private readonly int m_MaxCount;
 
 			public InternalTimer(Mobile from, Mobile m)
-				: base(TimeSpan.FromSeconds(1.0), TimeSpan.FromSeconds(1.0))
+				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2.0))
 			{
 				m_From = from;
 				m_Mobile = m;
 				Priority = TimerPriority.TwoFiftyMS;
 
-				m_MaxCount = 10;
+				m_MaxCount = 5;
 			}
 
 			protected override void OnTick()
@@ -109,6 +114,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				}
 				else
 				{
+					ExplodeFX.Snow.CreateInstance(m_Mobile, m_Mobile.Map, 2);
 					m_Mobile.Stam -= 5;
 					m_Mobile.Hits -= 1;
 				}

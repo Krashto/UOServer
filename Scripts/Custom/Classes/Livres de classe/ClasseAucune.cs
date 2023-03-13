@@ -2,7 +2,7 @@ using Server.Custom.Classes;
 
 namespace Server
 {
-    public class AucuneClasse
+    public class ClasseAucune
     {
         private static string m_Name = "Aucune";
         private static Classe m_Classe = Classe.Aucune;

@@ -4874,20 +4874,8 @@ namespace Server.Mobiles
 				VisibilityList = list;
 			}
 
-
-
-
-
-
-
-
-
-
-
 			if (InvisibilityPotion.HasTimer(this))
-            {
                 InvisibilityPotion.Iterrupt(this);
-            }
 
             return base.OnMove(d);
         }

@@ -2,6 +2,7 @@ using System.Collections;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -37,7 +38,11 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 5, Aptitude.Necromancie));
+					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 5, Aptitude.Necromancie);
+
+					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), range);
+
+					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, range);
 
 					foreach (Mobile m in eable)
 						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m != Caster && Caster.InLOS(m))
@@ -50,9 +55,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 					for (var i = 0; i < targets.Count; ++i)
 					{
 						var m = (Mobile)targets[i];
-
 						BleedAttack.BeginBleed(m, Caster, true);
-
 						InfectionSpell.ToogleCurse(this, Caster, m);
 					}
 			}

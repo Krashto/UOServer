@@ -35,6 +35,9 @@ namespace VitaNex.FX
 		Bee,
 		Blood,
 		Bone,
+		Tornado,
+		Snow,
+		BloodRain,
 	}
 
 	public static class ExplodeEffects
@@ -162,6 +165,12 @@ namespace VitaNex.FX
 					return new BloodExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
 				case ExplodeFX.Bone:
 					return new BoneExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
+				case ExplodeFX.Tornado:
+					return new TornadoExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
+				case ExplodeFX.Snow:
+					return new SnowExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
+				case ExplodeFX.BloodRain:
+					return new BloodRainExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
 				default:
 					{
 						var rfx = (ExplodeFX[])Enum.GetValues(typeof(ExplodeFX));
@@ -352,7 +361,7 @@ namespace VitaNex.FX
 				return new[]
 				{
 					new EffectInfo(null, null, -1, 0, 10, 20),
-					new EffectInfo(null, null, 14120, 0, 10, 20, EffectRender.Normal, TimeSpan.FromMilliseconds(400))
+					//new EffectInfo(null, null, 14120, 0, 10, 20, EffectRender.Normal, TimeSpan.FromMilliseconds(400))
 				};
 			}
 		}
@@ -634,6 +643,137 @@ namespace VitaNex.FX
 
 			var idList = new int[] { Utility.RandomMinMax(0x0ECA, 0x0ED2) };
 			e.EffectID = Utility.RandomList(idList);
+			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
+		}
+	}
+
+	public class TornadoExplodeEffect : BaseExplodeEffect
+	{
+		public static EffectInfo[] Info
+		{
+			get { return new[] { new EffectInfo(null, null, 14284, 899, 10, 10, EffectRender.ShadowOutline) }; }
+		}
+
+		private readonly EffectInfo[] _Effects = Info;
+
+		public override EffectInfo[] Effects { get { return _Effects; } }
+
+		public TornadoExplodeEffect(
+			IPoint3D start,
+			Map map,
+			int range = 5,
+			int repeat = 0,
+			TimeSpan? interval = null,
+			Action<EffectInfo> effectHandler = null,
+			Action callback = null)
+			: base(start, map, range, repeat, interval, effectHandler, callback)
+		{
+			EnableMutate = true;
+		}
+
+		public override void MutateEffect(EffectInfo e)
+		{
+			base.MutateEffect(e);
+
+			if (e == null || e.EffectID != -1)
+			{
+				return;
+			}
+		}
+	}
+
+	public class SnowExplodeEffect : BaseExplodeEffect
+	{
+		public static EffectInfo[] Info
+		{
+			get
+			{
+				return new[]
+				{
+					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Normal),
+					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Darken, TimeSpan.FromMilliseconds(100)),
+					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Lighten, TimeSpan.FromMilliseconds(100))
+				};
+			}
+		}
+
+		private readonly EffectInfo[] _Effects = Info;
+
+		public override EffectInfo[] Effects { get { return _Effects; } }
+
+		public SnowExplodeEffect(
+			IPoint3D start,
+			Map map,
+			int range = 5,
+			int repeat = 0,
+			TimeSpan? interval = null,
+			Action<EffectInfo> effectHandler = null,
+			Action callback = null)
+			: base(start, map, range, repeat, interval, effectHandler, callback)
+		{
+			EnableMutate = true;
+		}
+
+		public override void MutateEffect(EffectInfo e)
+		{
+			base.MutateEffect(e);
+
+			if (e == null || e.EffectID != -1)
+			{
+				return;
+			}
+
+			var idList = new int[] { Utility.RandomMinMax(0x1153, 0x115D) };
+			e.EffectID = Utility.RandomList(idList);
+			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
+		}
+	}
+
+	public class BloodRainExplodeEffect : BaseExplodeEffect
+	{
+		public static EffectInfo[] Info
+		{
+			get
+			{
+				return new[]
+				{
+					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Normal),
+					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Darken, TimeSpan.FromMilliseconds(100)),
+					new EffectInfo(null, null, -1, 0, 10, 20, EffectRender.Lighten, TimeSpan.FromMilliseconds(100))
+				};
+			}
+		}
+
+		private readonly EffectInfo[] _Effects = Info;
+
+		public override EffectInfo[] Effects { get { return _Effects; } }
+		public override bool Reversed { get { return true; } }
+
+		public BloodRainExplodeEffect(
+			IPoint3D start,
+			Map map,
+			int range = 5,
+			int repeat = 0,
+			TimeSpan? interval = null,
+			Action<EffectInfo> effectHandler = null,
+			Action callback = null)
+			: base(start, map, range, repeat, interval, effectHandler, callback)
+		{
+			EnableMutate = true;
+		}
+
+		public override void MutateEffect(EffectInfo e)
+		{
+			base.MutateEffect(e);
+
+			if (e == null || e.EffectID != -1)
+			{
+				return;
+			}
+
+			var idList = new int[] { Utility.RandomMinMax(0x1153, 0x115D) };
+			e.EffectID = Utility.RandomList(idList);
+			e.Hue = 33;
 			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
 		}
 	}

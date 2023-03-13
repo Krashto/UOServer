@@ -4,6 +4,7 @@ using Server.Mobiles;
 using Server.Network;
 using System;
 using System.Collections.Generic;
+using VitaNex.FX;
 
 namespace Server.Items
 {
@@ -85,13 +86,9 @@ namespace Server.Items
                     from.Heal(damage);
                 }
 
-                Blood blood = new Blood
-                {
-                    ItemID = Utility.Random(0x122A, 5)
-                };
-                blood.MoveToWorld(m.Location, m.Map);
-            }
-            else
+				ExplodeFX.Blood.CreateInstance(m, m.Map, 1);
+			}
+			else
             {
                 EndBleed(m, false);
             }

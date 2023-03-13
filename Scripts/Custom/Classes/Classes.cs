@@ -192,6 +192,43 @@ namespace Server.Custom.Classes
             return info.ClasseMode;
         }
 
+		public static void SetBaseAndCapSkills(CustomPlayerMobile pm)
+		{
+			if (pm is null)
+				return;
+
+			foreach (var skill in pm.Skills)
+				skill.Cap = 50 + pm.Niveau;
+
+			pm.SkillMods.Clear();
+
+			if (pm.Aptitudes.Chimie > 0)
+			{
+				var mod = new DefaultSkillMod(SkillName.Alchemy, true, pm.Aptitudes.Chimie * 5.0);
+				pm.SkillMods.Add(mod);
+			}
+			if (pm.Aptitudes.Couture > 0)
+			{
+				var mod = new DefaultSkillMod(SkillName.Tailoring, true, pm.Aptitudes.Couture * 5.0);
+				pm.SkillMods.Add(mod);
+			}
+			if (pm.Aptitudes.Ingenierie > 0)
+			{
+				var mod = new DefaultSkillMod(SkillName.Tinkering, true, pm.Aptitudes.Ingenierie * 5.0);
+				pm.SkillMods.Add(mod);
+			}
+			if (pm.Aptitudes.Metallurgie > 0)
+			{
+				var mod = new DefaultSkillMod(SkillName.Blacksmith, true, pm.Aptitudes.Metallurgie * 5.0);
+				pm.SkillMods.Add(mod);
+			}
+			if (pm.Aptitudes.Transcription > 0)
+			{
+				var mod = new DefaultSkillMod(SkillName.Inscribe, true, pm.Aptitudes.Transcription * 5.0);
+				pm.SkillMods.Add(mod);
+			}
+		}
+
         public static int GetCapaciteValue(Capacite capacite, Classe classe)
         {
             ClasseInfo info = GetInfos(classe);
@@ -309,7 +346,7 @@ namespace Server.Custom.Classes
                 case Classe.Necromage: info = NecromageClasse.ClasseInfo; break;
                 case Classe.Necromancien: info = NecromancienClasse.ClasseInfo; break;
 
-                default: info = AucuneClasse.ClasseInfo; break;
+                default: info = ClasseAucune.ClasseInfo; break;
             }
 
             return info;

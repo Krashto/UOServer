@@ -232,20 +232,20 @@ namespace Server.Mobiles
 
         public static void OnHit(Mobile attacker, IDamageable defender)
         {
-            BaseCreature check = (BaseCreature)FamilierSpell.Table[attacker];
+            //BaseCreature check = (BaseCreature)FamilierSpell.Table[attacker];
 
-            if (check != null && check is BaseFamiliar && check.Weapon != null && check.InRange(defender.Location, check.Weapon.MaxRange))
-            {
-                check.Weapon.OnSwing(check, defender);
-            }
+            //if (check != null && check is BaseFamiliar && check.Weapon != null && check.InRange(defender.Location, check.Weapon.MaxRange))
+            //{
+            //    check.Weapon.OnSwing(check, defender);
+            //}
 
-            if (attacker is PlayerMobile)
-            {
-                foreach (Mobile ts in ((PlayerMobile)attacker).AllFollowers.Where(m => m is BaseTalismanSummon && m.InRange(defender.Location, m.Weapon.MaxRange)))
-                {
-                    ts.Weapon.OnSwing(ts, defender);
-                }
-            }
+            //if (attacker is PlayerMobile)
+            //{
+            //    foreach (Mobile ts in ((PlayerMobile)attacker).AllFollowers.Where(m => m is BaseTalismanSummon && m.InRange(defender.Location, m.Weapon.MaxRange)))
+            //    {
+            //        ts.Weapon.OnSwing(ts, defender);
+            //    }
+            //}
         }
 
         public static void OnLogout(PlayerMobile pm)
@@ -253,10 +253,10 @@ namespace Server.Mobiles
             if (pm == null)
                 return;
 
-            BaseCreature check = (BaseCreature)FamilierSpell.Table[pm];
+            //BaseCreature check = (BaseCreature)FamilierSpell.Table[pm];
 
-            if (check != null)
-                check.Delete();
+            //if (check != null)
+            //    check.Delete();
         }
 
         public override void Serialize(GenericWriter writer)

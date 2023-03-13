@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Mobiles;
 using Server.Spells;
 using Server.Targeting;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -68,8 +69,12 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Caster.FixedParticles(0x375A, 1, 17, 9919, 33, 7, EffectLayer.Waist);
 				Caster.FixedParticles(0x3728, 1, 13, 9502, 33, 7, (EffectLayer)255);
 
+				ExplodeFX.Bone.CreateInstance(Caster, Caster.Map, 1);
+
 				m.FixedParticles(0x375A, 1, 17, 9919, 33, 7, EffectLayer.Waist);
 				m.FixedParticles(0x3728, 1, 13, 9502, 33, 7, (EffectLayer)255);
+
+				ExplodeFX.Bone.CreateInstance(m, m.Map, 1);
 
 				var duration = GetDurationForSpell(0.2);
 
@@ -100,7 +105,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			private Mobile m_Target;
 			private DateTime m_End;
 
-			public ExpireTimer(Mobile caster, Mobile target, TimeSpan delay) : base(TimeSpan.FromSeconds(1.0), TimeSpan.FromSeconds(1.0))
+			public ExpireTimer(Mobile caster, Mobile target, TimeSpan delay) : base(TimeSpan.FromSeconds(2.0), TimeSpan.FromSeconds(2.0))
 			{
 				m_Caster = caster;
 				m_Target = target;
@@ -111,6 +116,12 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 			protected override void OnTick()
 			{
+				if (m_Caster != null)
+					ExplodeFX.Bone.CreateInstance(m_Caster, m_Caster.Map, 1);
+
+				if (m_Target != null)
+					ExplodeFX.Bone.CreateInstance(m_Target, m_Target.Map, 1);
+
 				if (m_Caster.Deleted || m_Target.Deleted || !m_Caster.Alive || !m_Target.Alive || DateTime.Now >= m_End)
 				{
 					m_Caster.SendLocalizedMessage(1061620); // Your Blood Oath has been broken.

@@ -12,13 +12,10 @@ using Server.Gumps;
 using Server.Custom.Classes;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Geomancie;
-using Server.Custom.Spells.NewSpells.Chasseur;
-using Server.Custom.Spells.NewSpells.Aeromancie;
-using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
-using Server.Custom.Spells.NewSpells.Roublardise;
-
-
+using Server.Custom.Spells;
+using Server.Custom.Spells.NewSpells.Hydromancie;
+using Server.Multis;
 
 #endregion
 
@@ -350,6 +347,16 @@ namespace Server.Mobiles
 			set { m_QuickSpells = value; }
 		}
 
+		public new static void Initialize()
+		{
+			EventSink.Login += new LoginEventHandler(OnLogin);
+		}
+
+		private static void OnLogin(LoginEventArgs e)
+		{
+			Classes.SetBaseAndCapSkills(e.Mobile as CustomPlayerMobile);
+		}
+
 		public List<Mobile> Esclaves { get { return m_Esclaves; } set { m_Esclaves = value; } }
 
 		[CommandProperty(AccessLevel.Owner)]
@@ -457,9 +464,25 @@ namespace Server.Mobiles
 
 		#endregion
 
-		private static void OnLogin(LoginEventArgs e)
+		protected override bool OnMove(Direction d)
 		{
+			if (FolieArdenteSpell.IsActive(this))
+			{
+				try
+				{
+					Direction = MovingSpells.GetOppositeDirection(d);
+					NetState.BlockAllPackets = true;
+					Move(Direction);
+					NetState.BlockAllPackets = false;
+					ProcessDelta();
+				}
+				catch (Exception e)
+				{
+					Diagnostics.ExceptionLogging.LogException(e);
+				}
+			}
 
+			return base.OnMove(d);
 		}
 
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
@@ -1960,12 +1983,7 @@ namespace Server.Mobiles
 
 		public virtual void OnAptitudesChange(Aptitude aptitude, int oldvalue, int newvalue)
 		{
-			//if (aptitude == NAptitude.Familier)
-			//{
-			//	FollowersMax = 2 + GetAptitudeValue(NAptitude.Familier);
-			//	Delta(MobileDelta.Followers);
-			//}
-
+			Classes.SetBaseAndCapSkills(this);
 			CheckStatTimers();
 		}
 
@@ -2098,6 +2116,8 @@ namespace Server.Mobiles
 					if (!wasValid)
 						SendMessage("Vous n'aviez plus les prérequis pour votre classe");
 				}
+
+				Classes.SetBaseAndCapSkills(this);
 			}
 
 			if (type == ValidateType.Capacites || type == ValidateType.All)

@@ -1,5 +1,6 @@
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -47,6 +48,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				var duration = GetDurationForSpell(30, 1.2);
 
 				SpellHelper.Summon(new SummonedBloodElemental(), Caster, 0x217, duration, false, false);
+
+				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 5);
 			}
 
 			FinishSequence();

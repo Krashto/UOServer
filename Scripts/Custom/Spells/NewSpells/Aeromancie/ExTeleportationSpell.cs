@@ -2,6 +2,7 @@ using Server.Targeting;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -64,8 +65,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				m.Location = from;
 				m.Frozen = false;
 
-				Effects.SendLocationParticles(EffectItem.Create(from, m.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 2023);
-				Effects.SendLocationParticles(EffectItem.Create(to, m.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 5023);
+				ExplodeFX.Smoke.CreateInstance(from, map, 1);
+				ExplodeFX.Smoke.CreateInstance(to, map, 1);
 
 				m.PlaySound(0x1FE);
 			}

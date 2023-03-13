@@ -120,6 +120,10 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 					m.Location = to;
 					m.ProcessDelta();
 
+					Caster.Hidden = true;
+					Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 2, Aptitude.Roublardise);
+					Caster.SendLocalizedMessage(502730); // You begin to move quietly.
+
 					if (m.Player)
 					{
 						Effects.SendLocationParticles(EffectItem.Create(from, m.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 2023);

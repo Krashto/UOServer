@@ -16,6 +16,8 @@ using Server.Custom.Weapons;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Multis;
+using Server.Custom.Spells.NewSpells.Aeromancie;
+
 
 #endregion
 
@@ -1280,11 +1282,12 @@ namespace Server.Items
             int bonus = AosAttributes.GetValue(m, AosAttribute.WeaponSpeed);
 
             if (bonus > 60)
-            {
                 bonus = 60;
-            }
 
-            double ticks;
+			if (CeleriteSpell.IsActive(m))
+				bonus += 25;
+
+			double ticks;
 
             int stamTicks = m.Stam / 30;
 

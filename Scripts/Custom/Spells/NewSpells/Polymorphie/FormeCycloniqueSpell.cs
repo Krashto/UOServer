@@ -2,6 +2,8 @@ using System;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
+using Server.Items;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Polymorphie
 {
@@ -101,7 +103,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, 2);
+					var range = 1;
+					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
+					ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range);
 
 					foreach (Mobile m in eable)
 						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))

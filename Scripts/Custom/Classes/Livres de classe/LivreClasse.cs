@@ -60,12 +60,13 @@ namespace Server.Items
 
         public LivreClasse(Classe classe) : base(0xFBE)
         {
-            m_Classe = classe;
-            Name = "livre de classe";
+            Name = "Livre de classe";
             Weight = 2.0;
-        }
 
-        public LivreClasse(Serial serial) : base(serial)
+			m_Classe = classe;
+		}
+
+		public LivreClasse(Serial serial) : base(serial)
         {
         }
 
@@ -145,8 +146,10 @@ namespace Server.Items
                         puEnAttente = 10;
 
                     pm.PUDispo += puEnAttente;
-                }
-            }
+
+					Classes.SetBaseAndCapSkills(pm);
+				}
+			}
         }
 
 		public override void Serialize( GenericWriter writer )

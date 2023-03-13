@@ -3,6 +3,7 @@ using Server.Mobiles;
 using Server.Network;
 using System.Collections.Generic;
 using Server.Accounting;
+using Server.Custom.Classes;
 
 namespace Server.Gumps
 {
@@ -46,18 +47,19 @@ namespace Server.Gumps
         }
         public override void OnResponse(NetState sender, RelayInfo info)
         {
-			CustomPlayerMobile from = (CustomPlayerMobile)sender.Mobile;
+			CustomPlayerMobile pm = (CustomPlayerMobile)sender.Mobile;
 
             if (info.ButtonID == 1)
             {
                 m_Creation.Valide();
-            }
+				Classes.SetBaseAndCapSkills(pm);
+			}
             else if (info.ButtonID == 1000 || info.ButtonID == 0)
             {
-				Account acc = (Account)from.Account;
+				Account acc = (Account)pm.Account;
 
 				if (acc.Reroll.Count > 0)
-					from.SendGump(new CreationRerollGump(from, m_Creation));
+					pm.SendGump(new CreationRerollGump(pm, m_Creation));
 				else
 					m_from.SendGump(new CreationGodGump(m_from, m_Creation));
 			}

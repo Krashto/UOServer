@@ -118,7 +118,7 @@ namespace Server.Misc
 
 			newChar.Body = 0x3A;
 
-			newChar.MoveToWorld(new Point3D(6135,3200,55), Map.Felucca);
+			newChar.MoveToWorld(new Point3D(846, 2773, 0), Map.TerMur);
 			newChar.Blessed = true;
 
 			Utility.PushColor(ConsoleColor.Green);

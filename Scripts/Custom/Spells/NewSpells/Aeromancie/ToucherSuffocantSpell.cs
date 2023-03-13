@@ -3,6 +3,8 @@ using Server.Targeting;
 using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
+using System.Web.UI.WebControls;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -47,18 +49,24 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				StopTimer(m);
+				ExplodeFX.Air.CreateInstance(m, m.Map, 0);
+
+				if (IsActive(m))
+					StopTimer(m);
 
 				Timer t = new InternalTimer(endtime, m);
-
 				m_Timers[m] = t;
-
 				t.Start();
 
 				m.Squelched = true;
 			}
 
 			FinishSequence();
+		}
+
+		public static bool IsActive(Mobile attacker)
+		{
+			return m_Timers.ContainsKey(attacker);
 		}
 
 		public static bool StopTimer(Mobile m)

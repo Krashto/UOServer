@@ -1,6 +1,7 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -39,8 +40,11 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if (m.Hits < m.HitsMax * 0.2)
+				if (m.Hits <= m.HitsMax * 0.2)
+				{
+					ExplodeFX.Blood.CreateInstance(m, m.Map, 5);
 					m.Kill();
+				}
 				else
 					Caster.SendMessage("La cible doit avoir moins de 20% de sa vie pour être exécutée.");
 			}

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -35,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			if (IsActive(Caster))
 				StopTimer(Caster);
 
-			var duration = GetDurationForSpell(30, 1.8);
+			var duration = GetDurationForSpell(5, 1.8);
 
 			Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
 			m_Timers[Caster] = t;
@@ -59,8 +60,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-
-				Caster.BodyMod = 0;
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -89,9 +88,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				var map = m_From.Map;
 
+				var range = 1;
+
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, 2);
+					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
 
 					foreach (Mobile m in eable)
 						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
@@ -107,6 +108,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 						var m = (Mobile)targets[i];
 
 						var source = m_From;
+
+						ExplodeFX.Tornado.CreateInstance(source, source.Map, range);
 
 						Disturb(m);
 
@@ -137,8 +140,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 					{
 						t.Stop();
 						m_Timers.Remove(m_From);
-
-						m_From.BodyMod = 0;
 
 						m_From.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 						m_From.PlaySound(508);

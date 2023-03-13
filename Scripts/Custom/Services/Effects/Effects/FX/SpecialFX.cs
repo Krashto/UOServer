@@ -30,6 +30,7 @@ namespace VitaNex.FX
 
 		FirePentagram,
 		BloodPentagram,
+		GreyShield,
 	}
 
 	public static class SpecialEffects
@@ -141,6 +142,8 @@ namespace VitaNex.FX
 					return new FirePentagramEffect(start, map, range, repeat, interval, effectHandler, callback);
 				case SpecialFX.BloodPentagram:
 					return new BloodPentagramEffect(start, map, range, repeat, interval, effectHandler, callback);
+				case SpecialFX.GreyShield:
+					return new GreyShieldEffect(start, map, range, repeat, interval, effectHandler, callback);
 				default:
 					{
 						var rfx = (SpecialFX[])Enum.GetValues(typeof(SpecialFX));
@@ -315,6 +318,50 @@ namespace VitaNex.FX
 				});
 
 			return points.ToMultiArray();
+		}
+	}
+	public class GreyShieldEffect : BaseSpecialEffect
+	{
+		public static EffectInfo[] Info
+		{
+			get
+			{
+				return new[]
+				{
+					new EffectInfo(null, null, -1, 0, 10, 5, EffectRender.SemiTransparent),
+				};
+			}
+		}
+
+		private readonly EffectInfo[] _Effects = Info;
+
+		public override EffectInfo[] Effects { get { return _Effects; } }
+
+		public GreyShieldEffect(
+			IPoint3D start,
+			Map map,
+			int range = 5,
+			int repeat = 0,
+			TimeSpan? interval = null,
+			Action<EffectInfo> effectHandler = null,
+			Action callback = null)
+			: base(start, map, range, repeat, interval, effectHandler, callback)
+		{ 
+			EnableMutate = true;
+		}
+
+		public override void MutateEffect(EffectInfo e)
+		{
+			base.MutateEffect(e);
+
+			if (e == null || e.EffectID != -1)
+			{
+				return;
+			}
+
+			e.EffectID = 0x3660;
+			e.Hue = 2219;
+			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
 		}
 	}
 }

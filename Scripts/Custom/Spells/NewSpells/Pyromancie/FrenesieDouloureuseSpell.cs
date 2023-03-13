@@ -1,13 +1,14 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
-	public class AttiranceSpell : Spell
+	public class FrenesieDouloureuseSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Attirance", "Pas Tym An Sanct",
+				"Frénésie Douloureuse", "Pas Tym An Flam",
 				SpellCircle.Fifth,
 				203,
 				9031,
@@ -16,11 +17,11 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Roublardise }; } }
-		public override SkillName CastSkill { get { return SkillName.Hiding; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
+		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AttiranceSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public FrenesieDouloureuseSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 
@@ -45,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				m.Attack(Caster);
 				Caster.Attack(m);
 
-				//m.MoveToWorld(Caster.Location, Caster.Map);
+				BleedAttack.BeginBleed(m, Caster, true);
 
 				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
 				m.PlaySound(0x474);
@@ -56,9 +57,9 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		private class InternalTarget : Target
 		{
-			private AttiranceSpell m_Owner;
+			private FrenesieDouloureuseSpell m_Owner;
 
-			public InternalTarget(AttiranceSpell owner)
+			public InternalTarget(FrenesieDouloureuseSpell owner)
 				: base(12, false, TargetFlags.Harmful)
 			{
 				m_Owner = owner;
