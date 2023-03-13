@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <places>
 <parent name="Interne">
-			<child name="Zone de création" x="-845" y="2773" z="0" />
+			<child name="Zone de création" x="846" y="2773" z="0" />
 		 </parent>
 
 	<parent name="Ter Mur">
