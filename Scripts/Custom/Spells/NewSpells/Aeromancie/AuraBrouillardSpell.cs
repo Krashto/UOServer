@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using Server.Targeting;
-using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
@@ -43,8 +42,17 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				SpellHelper.Turn(Caster, m);
 
+				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 20, Aptitude.Aeromancie);
+
+				IPooledEnumerable eable = Caster.Map.GetMobilesInRange(new Point3D(Caster.Location), range);
+
 				ToogleInvisibility(this, Caster, Caster);
-				ToogleInvisibility(this, Caster, m);
+
+				foreach (Mobile target in eable)
+				{
+					if (Caster.CanBeBeneficial(target, false))
+						ToogleInvisibility(this, Caster, target);
+				}
 			}
 
 			FinishSequence();
@@ -60,12 +68,10 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			RemoveTimer(m);
 
-			var duration = spell.GetDurationForSpell(30, 3);
+			var duration = spell.GetDurationForSpell(30, 1);
 
 			Timer t = new InternalTimer(m, duration);
-
 			m_Table[m] = t;
-
 			t.Start();
 		}
 

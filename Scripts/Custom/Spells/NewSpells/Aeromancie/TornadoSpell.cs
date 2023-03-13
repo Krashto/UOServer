@@ -36,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			if (IsActive(Caster))
 				StopTimer(Caster);
 
-			var duration = GetDurationForSpell(5, 1.8);
+			var duration = GetDurationForSpell(2, 0.05);
 
 			Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
 			m_Timers[Caster] = t;
@@ -109,26 +109,25 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 						var source = m_From;
 
-						ExplodeFX.Tornado.CreateInstance(source, source.Map, range);
-
-						Disturb(m);
-
-						double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
-
 						if (m_Owner.CheckResisted(m))
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						else
 						{
 							SpellHelper.Turn(m, source);
 
+							ExplodeFX.Tornado.CreateInstance(source, source.Map, range);
+
+							Disturb(m);
+
+							double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
+
 							MovingSpells.PushMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 2);
 
 							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 							source.PlaySound(0x44B);
-							damage *= 0.75;
-						}
 
-						SpellHelper.Damage(m_Owner, m, damage, 0, 100, 0, 0, 0);
+							SpellHelper.Damage(m_Owner, m, damage, 0, 100, 0, 0, 0);
+						}
 					}
 				}
 

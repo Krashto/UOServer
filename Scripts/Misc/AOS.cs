@@ -351,6 +351,9 @@ namespace Server
             }
 
             totalDamage = m.Damage(totalDamage, from, true, false);
+			m.Frozen = false;
+			m.Paralyzed = false;
+			m.CantWalk = false;
 
             ExplodingTarPotion.RemoveEffects(m);
 

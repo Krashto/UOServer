@@ -29,6 +29,7 @@ namespace VitaNex.FX
 		Water,
 		Fire,
 		Earth,
+		Ice,
 		Air,
 		Energy,
 		Poison,
@@ -153,6 +154,8 @@ namespace VitaNex.FX
 					return new FireExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
 				case ExplodeFX.Earth:
 					return new EarthExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
+				case ExplodeFX.Ice:
+					return new IceExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
 				case ExplodeFX.Air:
 					return new AirExplodeEffect(start, map, range, repeat, interval, effectHandler, callback);
 				case ExplodeFX.Energy:
@@ -395,6 +398,54 @@ namespace VitaNex.FX
 			var list = new int[] { 0x1771, 0x1773, 0x1774, 0x1775, 0x1776, 0x1777, 0x1778, 0x1779, 0x177B, 0x177C };
 			e.EffectID = Utility.RandomList(list);
 			e.Hue = Utility.RandomMinMax(2107, 2112);
+			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
+		}
+	}
+
+
+	public class IceExplodeEffect : BaseExplodeEffect
+	{
+		public static EffectInfo[] Info
+		{
+			get
+			{
+				return new[]
+				{
+					new EffectInfo(null, null, -1, 0, 10, 20),
+					//new EffectInfo(null, null, 14120, 0, 10, 20, EffectRender.Normal, TimeSpan.FromMilliseconds(400))
+				};
+			}
+		}
+
+		private readonly EffectInfo[] _Effects = Info;
+
+		public override EffectInfo[] Effects { get { return _Effects; } }
+
+		public IceExplodeEffect(
+			IPoint3D start,
+			Map map,
+			int range = 5,
+			int repeat = 0,
+			TimeSpan? interval = null,
+			Action<EffectInfo> effectHandler = null,
+			Action callback = null)
+			: base(start, map, range, repeat, interval, effectHandler, callback)
+		{
+			EnableMutate = true;
+		}
+
+		public override void MutateEffect(EffectInfo e)
+		{
+			base.MutateEffect(e);
+
+			if (e == null || e.EffectID != -1)
+			{
+				return;
+			}
+
+			var list = new int[] { 0x1771, 0x1773, 0x1774, 0x1775, 0x1776, 0x1777, 0x1778, 0x1779, 0x177B, 0x177C };
+			e.EffectID = Utility.RandomList(list);
+			e.Hue = Utility.RandomMinMax(1361, 1366);
 			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
 		}
 	}

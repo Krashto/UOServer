@@ -4,6 +4,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -50,27 +51,34 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		public static void ToogleCurse(Spell spell, Mobile Caster, Mobile m)
 		{
-			SpellHelper.Turn(Caster, m);
+			if(!FormeLiquideSpell.IsActive(m))
+			{
+				SpellHelper.Turn(Caster, m);
 
-			SpellHelper.CheckReflect((int)spell.Circle, Caster, ref m);
+				SpellHelper.CheckReflect((int)spell.Circle, Caster, ref m);
 
-			var duration = spell.GetDurationForSpell(1);
+				var duration = spell.GetDurationForSpell(1);
 
-			SpellHelper.AddStatCurse(Caster, m, StatType.Str, duration); SpellHelper.DisableSkillCheck = true;
-			SpellHelper.AddStatCurse(Caster, m, StatType.Dex, duration);
-			SpellHelper.AddStatCurse(Caster, m, StatType.Int, duration); SpellHelper.DisableSkillCheck = false;
+				SpellHelper.AddStatCurse(Caster, m, StatType.Str, duration); SpellHelper.DisableSkillCheck = true;
+				SpellHelper.AddStatCurse(Caster, m, StatType.Dex, duration);
+				SpellHelper.AddStatCurse(Caster, m, StatType.Int, duration); SpellHelper.DisableSkillCheck = false;
 
-			new InternalTimer(m, duration).Start();
+				new InternalTimer(m, duration).Start();
 
-			BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Curse, 1075835, 1075836, duration, m));
+				BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Curse, 1075835, 1075836, duration, m));
 
-			if (m.Spell != null)
-				m.Spell.OnCasterHurt();
+				if (m.Spell != null)
+					m.Spell.OnCasterHurt();
 
-			m.Paralyzed = false;
+				Caster.DoHarmful(m);
 
-			m.FixedParticles(0x374A, 10, 15, 5028, EffectLayer.Waist);
-			m.PlaySound(0x1EA);
+				m.FixedParticles(0x374A, 10, 15, 5028, EffectLayer.Waist);
+				m.PlaySound(0x1EA);
+			}
+			else
+			{
+				Caster.SendMessage("La cible est immunisée aux infections.");
+			}
 		}
 
 		private class InternalTimer : Timer

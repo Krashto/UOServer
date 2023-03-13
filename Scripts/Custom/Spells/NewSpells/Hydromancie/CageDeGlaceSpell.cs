@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				var duration = TimeSpan.FromSeconds(0.5) + GetDurationForSpell(0.1);
+				var duration = GetDurationForSpell(2, 0.05);
 
 				m.Paralyze(duration);
 

@@ -45,8 +45,6 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				m.Attack(Caster);
 				Caster.Attack(m);
 
-				//m.MoveToWorld(Caster.Location, Caster.Map);
-
 				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
 				m.PlaySound(0x474);
 			}

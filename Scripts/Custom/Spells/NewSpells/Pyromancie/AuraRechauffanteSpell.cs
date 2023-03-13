@@ -21,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
-		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
+		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public AuraRechauffanteSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)

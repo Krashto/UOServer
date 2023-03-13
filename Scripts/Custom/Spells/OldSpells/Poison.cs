@@ -40,40 +40,36 @@ namespace Server.Spells.OldSpells
 				if ( m.Spell != null )
 					m.Spell.OnCasterHurt();
 
+				m.Frozen = false;
 				m.Paralyzed = false;
+				m.CantWalk = false;
 
-                /*if (CheckResisted(m))
+				/*if (CheckResisted(m))
                 {
                     m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
                 }
                 else
                 {*/
-                    int level;
+				int level;
 
-                    double total = (Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.Poisoning].Value);
+                double total = (Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.Poisoning].Value);
 
-                    //double dist = Caster.GetDistanceToSqrt(m);
+                if (total >= 200.0 && 3 > Utility.Random(10))
+                    level = 3;
+                else if (total > 140.0)
+                    level = 2;
+                else if (total > 90.0)
+                    level = 1;
+                else
+                    level = 0;
 
-                    //if (dist >= 3.0)
-                    //    total -= (dist - 3.0) * 10.0;
+                if (level > 0 && CheckResisted(m))
+                {
+                    level = 0;
+                    m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+                }
 
-                    if (total >= 200.0 && 3 > Utility.Random(10))
-                        level = 3;
-                    else if (total > 140.0)
-                        level = 2;
-                    else if (total > 90.0)
-                        level = 1;
-                    else
-                        level = 0;
-
-                    if (level > 0 && CheckResisted(m))
-                    {
-                        level = 0;
-                        m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
-                    }
-
-                    m.ApplyPoison(Caster, Poison.GetPoison(level));
-                //}
+                m.ApplyPoison(Caster, Poison.GetPoison(level));
 
 				m.FixedParticles( 0x374A, 10, 15, 5021, EffectLayer.Waist );
 				m.PlaySound( 0x474 );

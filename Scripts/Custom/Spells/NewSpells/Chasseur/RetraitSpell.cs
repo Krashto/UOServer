@@ -3,10 +3,10 @@ using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
-	public class RetraitSpell : Spell
+	public class SoinAnimalierSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Explosions", "Vas Ort Flam",
+				"Soin animalier", "Vas Ort Flam",
 				SpellCircle.Fourth,
 				230,
 				9041,
@@ -20,7 +20,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public RetraitSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public SoinAnimalierSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 

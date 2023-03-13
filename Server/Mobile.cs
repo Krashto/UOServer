@@ -7852,6 +7852,8 @@ namespace Server
 			if (target is Mobile harmed)
 			{
 				harmed.Region.OnGotHarmful(this, harmed);
+				harmed.Paralyzed = false;
+				harmed.Frozen = false;
 			}
 			else if (target is Item)
 			{

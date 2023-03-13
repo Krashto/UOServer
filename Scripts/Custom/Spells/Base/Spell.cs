@@ -915,8 +915,10 @@ namespace Server.Spells
 
         public static void Disturb(Mobile m)
         {
-            m.Paralyzed = false;
-        }
+			m.Frozen = false;
+			m.Paralyzed = false;
+			m.CantWalk = false;
+		}
 
 		public class CastTimer : Timer
 		{

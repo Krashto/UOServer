@@ -1,4 +1,6 @@
-﻿namespace Server.Custom.Spells
+﻿using Server.Spells;
+
+namespace Server.Custom.Spells
 {
 	public class MovingSpells
 	{
@@ -10,10 +12,11 @@
 			{
 				var x = origin.X + GetOrientation(d).X;
 				var y = origin.Y + GetOrientation(d).Y;
-				var tile = m.Map.Tiles.GetLandTile(x, y);
-				var z = tile.Z;
-				Point3D newpoint = new Point3D(x, y, z);
-				bool canfit = m.Map.CanSpawnMobile(newpoint);
+				Point3D newpoint = new Point3D(x, y, origin.Z);
+				var p = (IPoint3D)newpoint;
+				SpellHelper.GetSurfaceTop(ref p);
+
+				bool canfit = m.Map.CanSpawnMobile((Point3D)p);
 				if (canfit)
 					m.MoveToWorld(newpoint, m.Map);
 				else

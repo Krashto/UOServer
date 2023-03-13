@@ -34,18 +34,25 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
-			if (CheckSequence())
+			if (IsActive(Caster))
 			{
-				var duration = GetDurationForSpell(10, 1.8);
+				m_Table.Remove(Caster);
+			}
+			else
+			{
+				if (CheckSequence())
+				{
+					var duration = GetDurationForSpell(10, 1.8);
 
-				var endtime = DateTime.Now + duration;
+					var endtime = DateTime.Now + duration;
 
-				Timer t = new VentFavorableTimer(Caster, endtime);
-				t.Start();
+					Timer t = new VentFavorableTimer(Caster, endtime);
+					t.Start();
 
-				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
+					Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
-				Caster.PlaySound(163);
+					Caster.PlaySound(163);
+				}
 			}
 
 			FinishSequence();

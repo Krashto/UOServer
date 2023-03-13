@@ -36,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				StopTimer(Caster);
 			else
 			{
-				var duration = GetDurationForSpell(0.1);
+				var duration = GetDurationForSpell(10, 0.05);
 
 				Caster.CantWalk = true;
 
@@ -63,6 +63,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				Caster.CantWalk = true;
 				BuffInfo.RemoveBuff(m, BuffIcon.Paralyze);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
@@ -87,6 +88,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					m_Timers.Remove(m_Mobile);
 
 				m_Mobile.CantWalk = false;
+				BuffInfo.RemoveBuff(m_Mobile, BuffIcon.Paralyze);
 
 				Stop();
 			}

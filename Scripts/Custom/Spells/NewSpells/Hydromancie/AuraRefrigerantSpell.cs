@@ -6,10 +6,10 @@ using System;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
-	public class AuraRefrigerantSpell : Spell
+	public class AuraRefrigeranteSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura réfrégirant", "Vas Ort Grav",
+				"Aura réfrégirante", "Vas Ort Grav",
 				SpellCircle.Seventh,
 				209,
 				9022,
@@ -24,7 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		public override SkillName CastSkill { get { return SkillName.Healing; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AuraRefrigerantSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public AuraRefrigeranteSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 
@@ -76,9 +76,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		private class InternalTarget : Target
 		{
-			private AuraRefrigerantSpell m_Owner;
+			private AuraRefrigeranteSpell m_Owner;
 
-			public InternalTarget(AuraRefrigerantSpell owner)
+			public InternalTarget(AuraRefrigeranteSpell owner)
 				: base(12, true, TargetFlags.None)
 			{
 				m_Owner = owner;

@@ -1,14 +1,13 @@
-using System;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
-	public class CibleEnVueSpell : Spell
+	public class RugissementSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Cible En Vue", "Ort Por Ylem",
+				"Rugissement", "Ort Por Ylem",
 				SpellCircle.Second,
 				203,
 				9031,
@@ -33,7 +32,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		public override int CastRecoveryPerSecond { get { return 1; } }
 		public override int CastRecoveryMinimum { get { return 0; } }
 
-		public CibleEnVueSpell(Mobile caster, Item scroll)
+		public RugissementSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}

@@ -43,7 +43,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if (BleedAttack.IsBleeding(m) && m.Frozen && MarquerSpell.IsActive(m))
+				if (BleedAttack.IsBleeding(m) && (m.Frozen && m.CantWalk && m.Paralyzed) && MarquerSpell.IsActive(m))
 				{
 					Caster.MoveToWorld(m.Location, m.Map);
 					m.Damage(100);

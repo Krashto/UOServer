@@ -17,6 +17,7 @@ using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Multis;
 using Server.Custom.Spells.NewSpells.Aeromancie;
+using Server.Custom.Spells.NewSpells.Chasseur;
 
 
 #endregion
@@ -1286,6 +1287,9 @@ namespace Server.Items
 
 			if (CeleriteSpell.IsActive(m))
 				bonus += 25;
+
+			if (MarquerSpell.IsActive(m))
+				bonus += 15;
 
 			double ticks;
 
@@ -3027,10 +3031,10 @@ namespace Server.Items
 
             double totalBonus = strengthBonus + anatomyBonus + tacticsBonus + capaciteBonus + armsLoreBonus + (damageBonus / 100.0);
 
-			if (attacker is CustomPlayerMobile)
-				totalBonus *= 1.5;
-			else if (attacker is BaseCreature)
-				totalBonus *= 0.5;
+			//if (attacker is CustomPlayerMobile)
+			//	totalBonus *= 1.5;
+			//else if (attacker is BaseCreature)
+			//	totalBonus *= 0.5;
 
             return damage + (int)(damage * totalBonus);
         }

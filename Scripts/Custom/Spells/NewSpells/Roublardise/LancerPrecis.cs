@@ -52,6 +52,8 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				m.FixedEffect(0x923, 3, 30);
 
 				BleedAttack.BeginBleed(m, Caster, true);
+
+				SpellHelper.Damage(this, m, 5, 0, 100, 0, 0, 0);
 			}
 
 			FinishSequence();

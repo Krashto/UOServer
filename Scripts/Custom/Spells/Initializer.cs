@@ -151,7 +151,7 @@ namespace Server.Spells
 
             Register(628, typeof(AntidoteSpell));
             Register(629, typeof(GuerisonSpell));
-            Register(630, typeof(GasEndormant));
+            Register(630, typeof(GazEndormant));
             Register(631, typeof(GuerisonMajeureSpell));
             Register(632, typeof(RestaurationSpell));
             Register(633, typeof(NResurrectionSpell));
@@ -161,7 +161,7 @@ namespace Server.Spells
 			Register(636, typeof(ProtectSpell));
             //Register(637, typeof(SecoursSpell));
             Register(638, typeof(ToucheAbsorbantSpell));
-            Register(639, typeof(StatutDeGlaceSpell));
+            Register(639, typeof(ExplosionDeGlaceSpell));
 
             Register(640, typeof(SautAggressifSpell));
             Register(641, typeof(ContaminationSpell));
@@ -185,9 +185,9 @@ namespace Server.Spells
             Register(657, typeof(CoupDansLeGenouSpell));
 
             Register(658, typeof(FleauTerrestreSpell));
-            Register(659, typeof(RetraitSpell));
+            Register(659, typeof(SoinAnimalierSpell));
             Register(660, typeof(BlizzardSpell));
-            Register(661, typeof(AuraRefrigerantSpell));
+            Register(661, typeof(AuraRefrigeranteSpell));
             Register(662, typeof(EmpalementSpell));
             Register(663, typeof(VortexSpell));
 
@@ -207,7 +207,7 @@ namespace Server.Spells
 
 			//Register(676, typeof(PourritureDEspritSpell));
 			//Register(677, typeof(DrainDeManaSpell));
-			Register(678, typeof(CibleEnVueSpell));
+			Register(678, typeof(RugissementSpell));
 			Register(679, typeof(AdrenalineSpell));
             Register(680, typeof(MainBlesseeSpell));
             Register(681, typeof(ChasseurDePrimeSpell));

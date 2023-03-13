@@ -5,10 +5,10 @@ using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
-	public class GasEndormant : Spell
+	public class GazEndormant : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Gas endormant", "Vas An Nox",
+				"Gaz endormant", "Vas An Nox",
 				SpellCircle.Fourth,
 				215,
 				9061,
@@ -22,7 +22,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 		public override SkillName CastSkill { get { return SkillName.Hiding; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public GasEndormant(Mobile caster, Item scroll)
+		public GazEndormant(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -67,10 +67,10 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 						Caster.CanBeHarmful(m);
 
-						var duration = GetDurationForSpell(2, 1.8);
+						var duration = GetDurationForSpell(2, 0.05);
 
 						m.Freeze(duration);
-						m.Emote("S'endort");
+						m.Emote("*S'endort*");
 						//BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Sleep, 1080139, 1080140, duration, m));
 
 						m.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
@@ -84,9 +84,9 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		private class InternalTarget : Target
 		{
-			private GasEndormant m_Owner;
+			private GazEndormant m_Owner;
 
-			public InternalTarget(GasEndormant owner)
+			public InternalTarget(GazEndormant owner)
 				: base(12, true, TargetFlags.Beneficial)
 			{
 				m_Owner = owner;

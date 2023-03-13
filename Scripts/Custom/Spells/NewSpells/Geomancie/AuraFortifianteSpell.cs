@@ -58,7 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 					var duration = GetDurationForSpell(0.15);
 
-					var value = 1 + (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 600;
+					var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
 
 					ResistanceMod mod = new ResistanceMod(ResistanceType.Fire, (int)value);
 					m_Table[m] = mod;

@@ -45,34 +45,37 @@ namespace Server.Items
 
         public virtual bool RequiresSecondarySkill(Mobile from)
         {
-            return true;
+            return false;
         }
 
         public virtual double GetRequiredSkill(Mobile from)
         {
-            BaseWeapon weapon = from.Weapon as BaseWeapon;
+			return 0;
 
-            if (weapon != null && (weapon.PrimaryAbility == this || weapon.PrimaryAbility == Bladeweave))
-                return 70.0;
-            else if (weapon != null && (weapon.SecondaryAbility == this || weapon.SecondaryAbility == Bladeweave))
-                return 90.0;
+            //BaseWeapon weapon = from.Weapon as BaseWeapon;
 
-            return 200.0;
+            //if (weapon != null && (weapon.PrimaryAbility == this || weapon.PrimaryAbility == Bladeweave))
+            //    return 70.0;
+            //else if (weapon != null && (weapon.SecondaryAbility == this || weapon.SecondaryAbility == Bladeweave))
+            //    return 90.0;
+
+            //return 200.0;
         }
 
         public virtual double GetRequiredSecondarySkill(Mobile from)
         {
-            if (!RequiresSecondarySkill(from))
-                return 0.0;
+			return 0;
+            //if (!RequiresSecondarySkill(from))
+            //    return 0.0;
 
-            BaseWeapon weapon = from.Weapon as BaseWeapon;
+            //BaseWeapon weapon = from.Weapon as BaseWeapon;
 
-            if (weapon != null && (weapon.PrimaryAbility == this || weapon.PrimaryAbility == Bladeweave))
-                return 30.0;
-            else if (weapon != null && (weapon.SecondaryAbility == this || weapon.SecondaryAbility == Bladeweave))
-                return 60.0;
+            //if (weapon != null && (weapon.PrimaryAbility == this || weapon.PrimaryAbility == Bladeweave))
+            //    return 30.0;
+            //else if (weapon != null && (weapon.SecondaryAbility == this || weapon.SecondaryAbility == Bladeweave))
+            //    return 60.0;
 
-            return 200.0;
+            //return 200.0;
         }
 
         public virtual SkillName GetSecondarySkill(Mobile from)
@@ -110,38 +113,40 @@ namespace Server.Items
 
         public virtual bool CheckWeaponSkill(Mobile from)
         {
-            BaseWeapon weapon = from.Weapon as BaseWeapon;
+			return true;
 
-            if (weapon == null)
-                return false;
+   //         BaseWeapon weapon = from.Weapon as BaseWeapon;
 
-            Skill skill = from.Skills[weapon.Skill];
+   //         if (weapon == null)
+   //             return false;
 
-            double reqSkill = GetRequiredSkill(from);
-            double reqSecondarySkill = GetRequiredSecondarySkill(from);
-            SkillName secondarySkill = GetSecondarySkill(from);
+   //         Skill skill = from.Skills[weapon.Skill];
 
-            if (from.Skills[secondarySkill].Base < reqSecondarySkill)
-            {
-				from.SendMessage($"Vous devez avoir {reqSecondarySkill.ToString()} {secondarySkill.ToString()}.");
+   //         double reqSkill = GetRequiredSkill(from);
+   //         double reqSecondarySkill = GetRequiredSecondarySkill(from);
+   //         SkillName secondarySkill = GetSecondarySkill(from);
 
-                return false;
-            }
+   //         if (from.Skills[secondarySkill].Base < reqSecondarySkill)
+   //         {
+			//	from.SendMessage($"Vous devez avoir {reqSecondarySkill.ToString()} {secondarySkill.ToString()}.");
 
-            if (skill != null && skill.Base >= reqSkill)
-                return true;
+   //             return false;
+   //         }
 
-            /* <UBWS> */
-            if (weapon.WeaponAttributes.UseBestSkill > 0 && (from.Skills[SkillName.Swords].Base >= reqSkill || from.Skills[SkillName.Macing].Base >= reqSkill || from.Skills[SkillName.Fencing].Base >= reqSkill))
-                return true;
-			/* </UBWS> */
+   //         if (skill != null && skill.Base >= reqSkill)
+   //             return true;
+
+   //         /* <UBWS> */
+   //         if (weapon.WeaponAttributes.UseBestSkill > 0 && (from.Skills[SkillName.Swords].Base >= reqSkill || from.Skills[SkillName.Macing].Base >= reqSkill || from.Skills[SkillName.Fencing].Base >= reqSkill))
+   //             return true;
+			///* </UBWS> */
 
 
-			from.SendMessage($"Vous devez avoir {reqSkill.ToString()} {skill.ToString()}.");
+			//from.SendMessage($"Vous devez avoir {reqSkill.ToString()} {skill.ToString()}.");
 
-			//    from.SendLocalizedMessage(1060182, reqSkill.ToString()); // You need ~1_SKILL_REQUIREMENT~ weapon skill to perform that attack
+			////    from.SendLocalizedMessage(1060182, reqSkill.ToString()); // You need ~1_SKILL_REQUIREMENT~ weapon skill to perform that attack
 
-			return false;
+			//return false;
         }
 
         private int GetSkillLocalization(SkillName skill)
@@ -213,31 +218,33 @@ namespace Server.Items
 
         public virtual bool Validate(Mobile from)
         {
-            if (!from.Player && CheckMana(from, false))
-                return true;
+			return CheckMana(from, false);
 
-			if (from.Player)
-			{
-				if (!NewWeaponInfo.CanActivateWeaponAbility(from.Weapon, this))
-				{
-					from.SendMessage("Vous ne pouvez pas activer cette attaque avec votre type d'arme.");
-					return false;
-				}
-			}
+			//if (!from.Player && CheckMana(from, false))
+			//    return true;
 
-			NetState state = from.NetState;
+			//if (from.Player)
+			//{
+			//	if (!NewWeaponInfo.CanActivateWeaponAbility(from.Weapon, this))
+			//	{
+			//		from.SendMessage("Vous ne pouvez pas activer cette attaque avec votre type d'arme.");
+			//		return false;
+			//	}
+			//}
 
-            if (state == null)
-                return false;
+			//NetState state = from.NetState;
 
-            if (from.Spell != null)
-            {
-                from.SendLocalizedMessage(1063024); // You cannot perform this special move right now.
-                return false;
-            }
+			//if (state == null)
+			//	return false;
 
-            return CheckSkills(from) && CheckMana(from, false);
-        }
+			//if (from.Spell != null)
+			//{
+			//	from.SendLocalizedMessage(1063024); // You cannot perform this special move right now.
+			//	return false;
+			//}
+
+			//return CheckSkills(from) && CheckMana(from, false);
+		}
 
         private static readonly WeaponAbility[] m_Abilities = new WeaponAbility[34]
         {

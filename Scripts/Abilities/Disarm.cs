@@ -18,15 +18,15 @@ namespace Server.Items
 		public override string Name => "Désarmer";
 		public override int Id => 5;
 
-		public override bool RequiresSecondarySkill(Mobile from)
-        {
-            BaseWeapon weapon = from.Weapon as BaseWeapon;
+		//public override bool RequiresSecondarySkill(Mobile from)
+  //      {
+  //          BaseWeapon weapon = from.Weapon as BaseWeapon;
 
-            if (weapon == null)
-                return false;
+  //          if (weapon == null)
+  //              return false;
 
-            return weapon.Skill != SkillName.Wrestling;
-        }
+  //          return weapon.Skill != SkillName.Wrestling;
+  //      }
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {

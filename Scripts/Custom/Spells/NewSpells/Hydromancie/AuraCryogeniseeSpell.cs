@@ -60,7 +60,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					var duration = GetDurationForSpell(0.15);
 
-					var value = 1 + (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 600;
+					var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
 
 					ResistanceMod mod = new ResistanceMod(ResistanceType.Cold, (int)value);
 					m_Table[m] = mod;
@@ -77,7 +77,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 			FinishSequence();
 		}
-
 
 		public static bool IsActive(Mobile attacker)
 		{
