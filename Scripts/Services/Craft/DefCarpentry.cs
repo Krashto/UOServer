@@ -469,7 +469,7 @@ namespace Server.Engines.Craft
 			ForceNonExceptional(index);
 
 			// Grands outils
-			index = AddCraft(typeof(MachineCoudre), "Grands outils", "Machine à Coudre", 90.0, 115.0, typeof(Board), 1044041, 30, 1044351);
+			index = AddCraft(typeof(SewingMachineDeed), "Grands outils", "Machine à Coudre", 90.0, 115.0, typeof(Board), 1044041, 30, 1044351);
 			AddRes(index, typeof(IronIngot), 1044036, 15, 1044037);
 			index = AddCraft(typeof(SpinningwheelEastDeed), "Grands outils", "Rouet (E)", 73.6, 98.6, typeof(Board), 1044041, 75, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 70.0);
