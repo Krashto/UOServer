@@ -188,10 +188,10 @@ namespace Server.Engines.Craft
 			int index = -1;
 
 			#region Outils
-			index = AddCraft(typeof(Recycleur), "Outils", "Le Recycleur", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			//index = AddCraft(typeof(Recycleur), "Outils", "Le Recycleur", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Scissors), "Outils", "Ciseaux", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(KitTatou), "Outils", "Kit à Tatouages", 5.0, 55.0, typeof(KitTatou), 1044036, 2, 1044037);
-			index = AddCraft(typeof(TatouDye), "Outils", "Teinture à Tatouages", 5.0, 55.0, typeof(KitTatou), 1044036, 2, 1044037);
+			//index = AddCraft(typeof(KitTatou), "Outils", "Kit à Tatouages", 5.0, 55.0, typeof(KitTatou), 1044036, 2, 1044037);
+			//index = AddCraft(typeof(TatouDye), "Outils", "Teinture à Tatouages", 5.0, 55.0, typeof(KitTatou), 1044036, 2, 1044037);
 			index = AddCraft(typeof(EmptyAleBottle), "Outils", "Bouteille de Bière Vide", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(SewingKit), "Outils", "Kit de couture", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(BoneSewingKit), "Outils", "Kit de couture (Os)", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
@@ -216,9 +216,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(FlourSifter), "Outils", "Tamis à farine", 50.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Froe), "Outils", "Froe", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(MortarPestle), "Outils", "Mortier et pilon", 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(WaxCraftingPot), "Outils", "Fabrication Cire", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+			//index = AddCraft(typeof(WaxCraftingPot), "Outils", "Fabrication Cire", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(FletcherTools), "Outils", "Outil fabrication d'arc", 35.0, 85.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(MapmakersPen), "Outils", "Plume cartographe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
+			//index = AddCraft(typeof(MapmakersPen), "Outils", "Plume cartographe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(ScribesPen), "Outils", "Plume scribe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(Lockpick), "Outils", "Crochets", 45.0, 95.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(Blowpipe), "Outils", "Pipe à Verre", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
@@ -230,16 +230,16 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(BeerBreweringTools), "Outils", "Outil fabrication de bière", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(BrewersTools), "Outils", "Outil Brasseur", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(BreweryLabelMaker), "Outils", "Marqueur de bière", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(FarmLabelMaker), "Outils", "Farm Label Maker", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(FarmLabelMaker), "Outils", "Farm Label Maker", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(GrapevinePlacementTool), "Outils", "Outil placement de vignes", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(GrinderExp), "Outils", "Broyeur à café", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(JuicersTools), "Outils", "Fabrication de Jus", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(VinyardLabelMaker), "Outils", "Marqueur de vin", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(WinecraftersTools), "Outils", "Outil fabrication de vin", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(WitchsBookofFoodCrafts), "Outils", "Livre de recette enchantées", 30.0, 70.0, typeof(Board), 1044041, 5, 1044351);
+			//index = AddCraft(typeof(WitchsBookofFoodCrafts), "Outils", "Livre de recette enchantées", 30.0, 70.0, typeof(Board), 1044041, 5, 1044351);
 			index = AddCraft(typeof(TaxidermyKit), "Outils", "Outil de Taxidermie", 80.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
 
-			index = AddCraft(typeof(RuneChisel), "Outils", "Ciseau runique", 85.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
+		//	index = AddCraft(typeof(RuneChisel), "Outils", "Ciseau runique", 85.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
 
 
 
@@ -250,9 +250,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(GoldRing), "Bijoux", "Anneau", 65.0, 100.0, typeof(GoldIngot), 1044036, 3, 1044037);
 			   index = AddCraft(typeof(GoldBracelet), "Bijoux", "Bracelet", 55.0, 100.0, typeof(GoldIngot), 1044036, 3, 1044037);
 			  index = AddCraft(typeof(Necklace), "Bijoux", "Collier à perles", 60.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
-			  index = AddCraft(typeof(BaseBracelet), "Bijoux", "Bracelet simple", 55.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
-			         index = AddCraft(typeof(BaseRing), "Bijoux", "Anneau simple", 65.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
-			       index = AddCraft(typeof(Earrings), "Bijoux", "Boucles d'oreille", 55.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
+			  
 
 			AddJewelrySet(GemType.StarSapphire, typeof(StarSapphire));
 			AddJewelrySet(GemType.Emerald, typeof(Emerald));
@@ -264,9 +262,7 @@ namespace Server.Engines.Craft
 			AddJewelrySet(GemType.Amber, typeof(Amber));
 			AddJewelrySet(GemType.Diamond, typeof(Diamond));
 
-			/*         index = index = AddCraft(typeof(KrampusMinionEarrings), "Bijoux", 1125645, 100.0, 500.0, typeof(IronIngot), 1044036, 3, 1044037);
-					 AddRecipe(index, (int)TinkerRecipes.KrampusMinionEarrings);
-			*/
+	
 			index = AddCraft(typeof(Collier), "Bijoux", "Collier massif doré", 49.2, 69.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
 			index = AddCraft(typeof(Collier2), "Bijoux", "Collier croix Ânkh", 49.8, 69.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
 			index = AddCraft(typeof(Collier3), "Bijoux", "Collier bolo doré", 74.6, 94.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
@@ -287,18 +283,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Ceinture10), "Bijoux", "Ceinture de feuilles dorées", 72.5, 92.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
 			index = AddCraft(typeof(DiademeFeuilleOr), "Bijoux", "Collier doré avec pendentif", 85.0, 105.5, typeof(GoldIngot), "lingots d'or", 3, "Vous n'avez pas assez de lingots.");
 			index = AddCraft(typeof(EpauletteDoree), "Bijoux", "Grand collier Usekh", 85.0, 105.5, typeof(GoldIngot), "lingots d'or", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(MenotteDoree), "Bijoux", "Menotte dorée", 85.0, 105.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+		//	index = AddCraft(typeof(MenotteDoree), "Bijoux", "Menotte dorée", 85.0, 105.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
 			#endregion
 
-			#region Canons
-			index = AddCraft(typeof(Ramrod), "Canons", "Baguette", 0.0, 50.0, typeof(Board), 1044041, 5, 1044253);
-			index = AddCraft(typeof(FuseCord), "Canons", "Mèche", 0.0, 50.0, typeof(Cloth), 1044455, 1, 1044253);
-			index = AddCraft(typeof(PowderCharge), "Canons", "Charge de poudre", 0.0, 50.0, typeof(Cloth), 1044455, 1, 1044253);
-			AddRes(index, typeof(BlackPowder), 1095826, 1, 1044253);
-			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Swab), "Canons", "Écouvillon", 0.0, 50.0, typeof(Cloth), 1044286, 1, 1044253);
-			AddRes(index, typeof(Board), 1044041, 4, 1044253);
-			#endregion
+			
 
 			#region Paniers et boîtes
 			index = AddCraft(typeof(RoundBasket), "Paniers et boîtes", "Panier rond", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
@@ -486,32 +474,24 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Tray), "Ustensiles", "Plateau", 25.0, 75.0, typeof(Board), 1044041, 2, 1044351);
 			index = AddCraft(typeof(Silverware), "Ustensiles", "Coutellerie", 25.0, 75.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(FoodPlate), "Ustensiles", "Assiette de Nourriture", 25.0, 75.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(Bock), "Ustensiles", "Bock de Bière", 25.0, 75.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(CoupeMain), "Ustensiles", "Une Coupe", 25.0, 75.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(PoissonMain), "Ustensiles", "Poisson", 25.0, 75.0, typeof(FishSteak), 1044036, 5, 1044037);
-			index = AddCraft(typeof(CorneBoire), "Ustensiles", "Corne à boire", 25.0, 75.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(Eventail), "Ustensiles", "Eventail", 25.0, 75.0, typeof(Board), 1044041, 2, 1044351);
-			SetUseSubRes2(index, true);
-			index = AddCraft(typeof(HagCauldronDeed), "Ustensiles", "Chaudron", 50.0, 100.0, typeof(IronIngot), 1044036, 10, 1044253);
-			index = AddCraft(typeof(AssietteMosaique), "Ustensiles", "Une assiette Mosaique", 50.0, 100.0, typeof(IronIngot), 1044036, 10, 1044253);
+		
 			#endregion
 
 			#region Luminaires et décorations
 			index = AddCraft(typeof(Torch), "Luminaires et décorations", "Torche", 0.0, 50.0, typeof(Board), 1044041, 2, 1044253);
-			index = AddCraft(typeof(AvisRecherche), "Luminaires et décorations", "Avis de Recherche", 0.0, 50.0, typeof(Board), 1044041, 3, 1044253);
+		//	index = AddCraft(typeof(AvisRecherche), "Luminaires et décorations", "Avis de Recherche", 0.0, 50.0, typeof(Board), 1044041, 3, 1044253);
 			index = AddCraft(typeof(CandleLarge), "Luminaires et décorations", "Chandelier Simple", 45.0, 105.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Candelabra), "Luminaires et décorations", "Chandelier", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(CandelabraStand), "Luminaires et décorations", "Grand Chandelier", 65.0, 105.0, typeof(IronIngot), 1044036, 8, 1044037);
 			index = AddCraft(typeof(WallSconce), "Luminaires et décorations", "Chandelle Murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(WallTorch), "Luminaires et décorations", "Torche murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(LanterneMurale), "Luminaires et décorations", "Lanterne Murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
+		//	index = AddCraft(typeof(LanterneMurale), "Luminaires et décorations", "Lanterne Murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
 
-			index = AddCraft(typeof(DecoSoleil), "Luminaires et décorations", "Torche murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
+		//	index = AddCraft(typeof(DecoSoleil), "Luminaires et décorations", "Torche murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Lantern), "Luminaires et décorations", "Lanterne", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(HeatingStand), "Luminaires et décorations", "Support chauffant", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(ShojiLantern), "Luminaires et décorations", "Lanterne sophistiquée", 65.0, 115.0, typeof(IronIngot), 1044036, 10, 1044037);
 			AddRes(index, typeof(Board), 1044041, 5, 1044351);
-			index = AddCraft(typeof(RewardBrazier), "Luminaires et décorations", "Brasero court", 25.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(Brazier), "Luminaires et décorations", "Brasero", 45.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(BrazierTall), "Luminaires et décorations", "Brasero Long", 65.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(DragonBrazier), "Luminaires et décorations", "Brasero Cage", 85.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
@@ -521,72 +501,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(RoundPaperLantern), "Luminaires et décorations", "Lanterne en papier ronde", 65.0, 115.0, typeof(IronIngot), 1044036, 10, 1044037);
 			AddRes(index, typeof(Board), 1044041, 5, 1044351);
 			index = AddCraft(typeof(WindChimes), "Luminaires et décorations", "Carillons éoliens", 80.0, 130.0, typeof(IronIngot), 1044036, 15, 1044037);
-			index = AddCraft(typeof(AnkhKershe), "Luminaires et décorations", "Ankh Kershe", 80.0, 130.0, typeof(IronIngot), 1044036, 15, 1044037);
-			index = AddCraft(typeof(PetiteAnkhKershe), "Luminaires et décorations", "PetiteAnkhKershe", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-			index = AddCraft(typeof(BouteilleBateau), "Luminaires et décorations", "Bateau dans une Bouteille", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-
-			index = AddCraft(typeof(AltarBlanc), "Luminaires et décorations", "Altar Blanc", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-			index = AddCraft(typeof(PentacleMural), "Luminaires et décorations", "Pentacle Murale", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-			index = AddCraft(typeof(RackPelle), "Luminaires et décorations", "Rack à Pelles", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-			index = AddCraft(typeof(FauconDore), "Luminaires et décorations", "Faucon Doré", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-			index = AddCraft(typeof(JackalDore), "Luminaires et décorations", "Jackal Doré", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-			index = AddCraft(typeof(Orbe), "Luminaires et décorations", "Orbe", 80.0, 130.0, typeof(IronIngot), 1044036, 10, 1044037);
-
-
-
 			index = AddCraft(typeof(FancyWindChimes), "Luminaires et décorations", "Carillons", 80.0, 130.0, typeof(IronIngot), 1044036, 15, 1044037);
 			index = AddCraft(typeof(MiniCherryTree1), "Luminaires et décorations", "Arbre en Pot", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(Orchid1), "Luminaires et décorations", "Orchidée", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(Orchid2), "Luminaires et décorations", "Orchidée", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlantePiquante), "Luminaires et décorations", "Plante Piquante", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
+		
 
-			index = AddCraft(typeof(Monstera), "Luminaires et décorations", "Monstera", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurVide1), "Luminaires et décorations", "Bac Fleur Vide 1", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurVide2), "Luminaires et décorations", "Bac Fleur Vide 2", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurArbre), "Luminaires et décorations", "Bac Fleur Arbre", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurCactus1), "Luminaires et décorations", "Bac Fleur Cactus 1", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurCactus2), "Luminaires et décorations", "Bac Fleur Cactus 2", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurCactus3), "Luminaires et décorations", "Bac Fleur Cactus 3", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurCactus4), "Luminaires et décorations", "Bac Fleur Cactus 4", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurCactus5), "Luminaires et décorations", "Bac Fleur Cactus 5", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacFleurCactus6), "Luminaires et décorations", "Bac Fleur Cactus 6", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre1), "Luminaires et décorations", "Bac Arbustre 1", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre2), "Luminaires et décorations", "Bac Arbustre 2", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre3), "Luminaires et décorations", "Bac Arbustre 3", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre4), "Luminaires et décorations", "Bac Arbustre 4", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre5), "Luminaires et décorations", "Bac Arbustre 5", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre6), "Luminaires et décorations", "Bac Arbustre 6", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(BacArbustre7), "Luminaires et décorations", "Bac Arbustre 7", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(CrochetAPlante1), "Luminaires et décorations", "Crochet A Plante 1", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(CrochetAPlante2), "Luminaires et décorations", "Crochet A Plante 2", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu1), "Luminaires et décorations", "Plante Suspendue 1", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu2), "Luminaires et décorations", "Plante Suspendue 2", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu3), "Luminaires et décorations", "Plante Suspendue 3", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu4), "Luminaires et décorations", "Plante Suspendue 4", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu5), "Luminaires et décorations", "Plante Suspendue 5", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu6), "Luminaires et décorations", "Plante Suspendue 6", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu7), "Luminaires et décorations", "Plante Suspendue 7", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu8), "Luminaires et décorations", "Plante Suspendue 8", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteSuspendu9), "Luminaires et décorations", "Plante Suspendue 9", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase1), "Luminaires et décorations", "Plante Vase 1", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase2), "Luminaires et décorations", "Plante Vase 2", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase3), "Luminaires et décorations", "Plante Vase 3", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase4), "Luminaires et décorations", "Plante Vase 4", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase5), "Luminaires et décorations", "Plante Vase 5", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase6), "Luminaires et décorations", "Plante Vase 6", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase7), "Luminaires et décorations", "Plante Vase 7", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase8), "Luminaires et décorations", "Plante Vase 8", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase9), "Luminaires et décorations", "Plante Vase 9", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase10), "Luminaires et décorations", "Plante Vase 10", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-			index = AddCraft(typeof(PlanteVase11), "Luminaires et décorations", "Plante Vase 11", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
-
-				index = AddCraft(typeof(BouquetFleurBlanche), "Luminaires et décorations", "Bouquet de Fleurs Blanches", 65.0, 115.0, typeof(FertileDirt), "Terre", 5, "Vous n'avez pas suffisament de terre");
-				AddRes(index, typeof(WhiteRose2), "Rose Blanche", 5, "Besoin de Rose Blanche");
-				index = AddCraft(typeof(BouquetFleurRouge), "Luminaires et décorations", "Bouquet de Fleurs Rouges", 65.0, 115.0, typeof(FertileDirt), "Terre", 5, "Vous n'avez pas suffisament de terre");
-				AddRes(index, typeof(RedRose), "Rose Rouge", 5, "Besoin de Rose Rouge");
-			index = AddCraft(typeof(BouquetFleur), "Luminaires et décorations", "Bouquet de Fleurs Rouges", 65.0, 115.0, typeof(FertileDirt), "Terre", 5, "Vous n'avez pas suffisament de terre");
-				AddRes(index, typeof(RedRose), "Rose Rouge", 5, "Besoin de Rose Rouge");
-				AddRes(index, typeof(WhiteRose2), "Rose Blanche", 5, "Besoin de Rose Blanche");
 
 			#endregion
 
@@ -594,14 +512,14 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(KeyRing), "Divers", "Anneau à clés", 10.0, 60.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Key), "Divers", "Clé", 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(DyeTub), "Divers", "Bac de Teinture", 35.0, 65.0, typeof(Board), 1044041, 5, 1044351);
-			index = AddCraft(typeof(RecallRune), "Divers", "Rune Vierge", 35.0, 65.0, typeof(Board), 1044041, 1, 1044351);
+			//index = AddCraft(typeof(RecallRune), "Divers", "Rune Vierge", 35.0, 65.0, typeof(Board), 1044041, 1, 1044351);
 			index = AddCraft(typeof(Scales), "Divers", "Balance", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Globe), "Divers", "Globe terrestre", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Spyglass), "Divers", "Longue vue", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Fouet4), "Divers", "Fouet 4 mètres", 50.0, 70.0, typeof(Leather), 1044462, 3, 1044463);
 			index = AddCraft(typeof(Fouet6), "Divers", "Fouet 6 mètres", 65.0, 85.0, typeof(Leather), 1044462, 4, 1044463);
 			index = AddCraft(typeof(Fouet8), "Divers", "Fouet 8 mètres", 85.0, 105.0, typeof(Leather), 1044462, 5, 1044463);
-			index = AddCraft(typeof(ToileVierge), "Divers", "Toile Vierge", 30.0, 50.0, typeof(Board), 1044041, 5, 1044351);
+			//index = AddCraft(typeof(ToileVierge), "Divers", "Toile Vierge", 30.0, 50.0, typeof(Board), 1044041, 5, 1044351);
 			index = AddCraft(typeof(CopperWire), "Divers", "Fil de fer", 30.0, 60.0, typeof(IronIngot), "Lingot de fer", 2, 1044037);
 			index = AddCraft(typeof(CopperWire), "Divers", "Fil de cuivre", 30.0, 60.0, typeof(CopperIngot), "Lingot de cuivre", 2, 1044037);
 			index = AddCraft(typeof(SilverWire), "Divers", "Fil d'argent", 50.0, 90.0, typeof(IronIngot), "Lingot de fer", 2, 1044037);
@@ -727,19 +645,19 @@ namespace Server.Engines.Craft
 		*/
 			#endregion
 
-			#region Traps
-			// Dart Trap
-			index = index = AddCraft(typeof(DartTrapCraft), 1044052, 1024396, 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
-			AddRes(index, typeof(Bolt), 1044570, 1, 1044253);
+	//		#region Traps
+	//		// Dart Trap
+	//		index = index = AddCraft(typeof(DartTrapCraft), 1044052, 1024396, 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
+	//		AddRes(index, typeof(Bolt), 1044570, 1, 1044253);
 
-			// Poison Trap
-			index = index = AddCraft(typeof(PoisonTrapCraft), 1044052, 1044593, 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
-			AddRes(index, typeof(BasePoisonPotion), 1044571, 1, 1044253);
+	//		// Poison Trap
+	//		index = index = AddCraft(typeof(PoisonTrapCraft), 1044052, 1044593, 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
+	//		AddRes(index, typeof(BasePoisonPotion), 1044571, 1, 1044253);
 
 			// Explosion Trap
-			index = index = AddCraft(typeof(ExplosionTrapCraft), 1044052, 1044597, 55.0, 105.0, typeof(IronIngot), 1044036, 1, 1044037);
-			AddRes(index, typeof(BaseExplosionPotion), 1044569, 1, 1044253);
-			#endregion
+	//		index = index = AddCraft(typeof(ExplosionTrapCraft), 1044052, 1044597, 55.0, 105.0, typeof(IronIngot), 1044036, 1, 1044037);
+	//		AddRes(index, typeof(BaseExplosionPotion), 1044569, 1, 1044253);
+	//		#endregion
 
 			/*      #region Magic Jewlery
 				  index = index = AddCraft(typeof(BrilliantAmberBracelet), 1073107, 1073453, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
