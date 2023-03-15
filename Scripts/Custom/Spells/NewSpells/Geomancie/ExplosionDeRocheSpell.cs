@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, range);
 
-					ExplodeFX.Earth.CreateInstance(Caster.Location, Caster.Map, range);
+					ExplodeFX.Earth.CreateInstance(Caster.Location, Caster.Map, range).Send();
 
 					foreach (Mobile m in eable)
 						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false))

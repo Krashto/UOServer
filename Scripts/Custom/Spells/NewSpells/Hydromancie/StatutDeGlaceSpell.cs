@@ -54,7 +54,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					IPooledEnumerable eable = map.GetMobilesInRange(target.Location, range);
 
-					ExplodeFX.Earth.CreateInstance(target.Location, target.Map, range);
+					ExplodeFX.Earth.CreateInstance(target.Location, target.Map, range).Send();
 
 					foreach (Mobile m in eable)
 					{

@@ -48,7 +48,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				ExplodeFX.Air.CreateInstance(m, m.Map, 0);
+				ExplodeFX.Air.CreateInstance(m, m.Map, 0).Send();
 
 				if (IsActive(m))
 					StopTimer(m);

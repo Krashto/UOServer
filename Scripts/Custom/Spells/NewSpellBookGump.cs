@@ -5,12 +5,13 @@ using Server.Mobiles;
 using Server.Network; 
 using Server.Spells; 
 using Server.Custom.Aptitudes;
+using System.Web.UI;
 
 namespace Server.Gumps
 {
     public class SpellBookEntry
     {
-        private int m_ConnaissanceLevel;
+        private int m_AptitudeLevel;
         private string m_Nom;
         private Type[] m_Reagents;
         private int m_ImageID;
@@ -18,17 +19,17 @@ namespace Server.Gumps
         private Aptitude m_Aptitude;
         private int m_SpellID;
 
-        public int ConnaissanceLevel { get { return m_ConnaissanceLevel; } }
+        public int AptitudeLevel { get { return m_AptitudeLevel; } }
         public string Nom { get { return m_Nom; } }
         public Type[] Reagents { get { return m_Reagents; } }
         public int ImageID { get { return m_ImageID; } }
         public int Cercle { get { return m_Cercle; } }
-        public Aptitude Connaissance { get { return m_Aptitude; } }
+        public Aptitude Aptitude { get { return m_Aptitude; } }
         public int SpellID { get { return m_SpellID; } }
 
         public SpellBookEntry(int conn, Aptitude connaissance, string nom, Type[] regs, int imageid, int cercle, int spellid)
         {
-            m_ConnaissanceLevel = conn;
+            m_AptitudeLevel = conn;
             m_Nom = nom;
             m_Reagents = regs;
             m_ImageID = imageid;
@@ -53,17 +54,6 @@ namespace Server.Gumps
 			new SpellBookEntry( 9, Aptitude.Aeromancie, "Vent favorable", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(Garlic) }, 0x59e4, 7, 649),
 			new SpellBookEntry( 10, Aptitude.Aeromancie, "Vortex", new Type[] { typeof(Nightshade), typeof(Garlic), typeof(Bloodmoss) }, 0x148, 8, 663),
 
-			new SpellBookEntry( 1, Aptitude.Geomancie, "Fortifié", new Type[] { typeof(Bloodmoss), typeof(MandrakeRoot) }, 0x8c8, 1, 608),
-			new SpellBookEntry( 2, Aptitude.Geomancie, "Roche", new Type[] { typeof(BlackPearl), typeof(Garlic), typeof(SulfurousAsh) }, 0x8d1, 2, 652),
-			new SpellBookEntry( 3, Aptitude.Geomancie, "Contamination", new Type[] { typeof(NoxCrystal), typeof(Nightshade), typeof(SulfurousAsh) }, 0x8d3, 3, 641),
-            new SpellBookEntry( 4, Aptitude.Geomancie, "Empalement", new Type[] { typeof(SulfurousAsh), typeof(SulfurousAsh), typeof(SulfurousAsh) }, 0x8f6, 3, 662),
-			new SpellBookEntry( 5, Aptitude.Geomancie, "Aura Fortifiante", new Type[] { typeof(MandrakeRoot), typeof(Nightshade)  }, 0x8cf, 4, 607),
-			new SpellBookEntry( 6, Aptitude.Geomancie, "Mur de plante", new Type[] { typeof(Garlic), typeof(Nightshade), typeof(NoxCrystal) }, 0x8e6, 4, 643),
-			new SpellBookEntry( 7, Aptitude.Geomancie, "Explosion de roche", new Type[] { typeof(Garlic), typeof(MandrakeRoot) }, 0x8d0, 5, 613),
-			new SpellBookEntry( 8, Aptitude.Geomancie, "Aura de remède", new Type[] { typeof(MandrakeRoot), typeof(Nightshade) }, 0x8c9, 6, 611),
-			new SpellBookEntry( 9, Aptitude.Geomancie, "Racines", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x122, 7, 646),
-			new SpellBookEntry( 10, Aptitude.Geomancie, "Fléau terrestre", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SulfurousAsh) }, 0x8f8, 8, 658),
-
             new SpellBookEntry( 1, Aptitude.Chasseur, "Antidote", new Type[] { typeof(Garlic), typeof(Ginseng) }, 0x8ca, 1, 628),
 			new SpellBookEntry( 2, Aptitude.Chasseur, "Marquer", new Type[] { typeof(Nightshade), typeof(BlackPearl), typeof(Garlic) }, 0x8e9, 2, 655),
 			new SpellBookEntry( 3, Aptitude.Chasseur, "Ricochet", new Type[] { typeof(BlackPearl), typeof(MandrakeRoot), typeof(SulfurousAsh) }, 0x8dd, 3, 653),
@@ -74,6 +64,17 @@ namespace Server.Gumps
 			new SpellBookEntry( 8, Aptitude.Chasseur, "Coup dans le genou", new Type[] { typeof(MandrakeRoot), typeof(SulfurousAsh), typeof(Ginseng) }, 0x126, 6, 657),
 			new SpellBookEntry( 9, Aptitude.Chasseur, "Chasseur de prime", new Type[] { typeof(SulfurousAsh), typeof(Ginseng), typeof(MandrakeRoot) }, 0x8e5, 7, 681),
             new SpellBookEntry( 10, Aptitude.Chasseur, "Contrat résolu", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(Garlic) }, 0x5323, 8, 682),
+
+			new SpellBookEntry( 1, Aptitude.Geomancie, "Fortifié", new Type[] { typeof(Bloodmoss), typeof(MandrakeRoot) }, 0x8c8, 1, 608),
+			new SpellBookEntry( 2, Aptitude.Geomancie, "Roche", new Type[] { typeof(BlackPearl), typeof(Garlic), typeof(SulfurousAsh) }, 0x8d1, 2, 652),
+			new SpellBookEntry( 3, Aptitude.Geomancie, "Contamination", new Type[] { typeof(NoxCrystal), typeof(Nightshade), typeof(SulfurousAsh) }, 0x8d3, 3, 641),
+			new SpellBookEntry( 4, Aptitude.Geomancie, "Empalement", new Type[] { typeof(SulfurousAsh), typeof(SulfurousAsh), typeof(SulfurousAsh) }, 0x8f6, 3, 662),
+			new SpellBookEntry( 5, Aptitude.Geomancie, "Aura Fortifiante", new Type[] { typeof(MandrakeRoot), typeof(Nightshade)  }, 0x8cf, 4, 607),
+			new SpellBookEntry( 6, Aptitude.Geomancie, "Mur de plante", new Type[] { typeof(Garlic), typeof(Nightshade), typeof(NoxCrystal) }, 0x8e6, 4, 643),
+			new SpellBookEntry( 7, Aptitude.Geomancie, "Explosion de roche", new Type[] { typeof(Garlic), typeof(MandrakeRoot) }, 0x8d0, 5, 613),
+			new SpellBookEntry( 8, Aptitude.Geomancie, "Aura de remède", new Type[] { typeof(MandrakeRoot), typeof(Nightshade) }, 0x8c9, 6, 611),
+			new SpellBookEntry( 9, Aptitude.Geomancie, "Racines", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x122, 7, 646),
+			new SpellBookEntry( 10, Aptitude.Geomancie, "Fléau terrestre", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SulfurousAsh) }, 0x8f8, 8, 658),
 
 			new SpellBookEntry( 1, Aptitude.Hydromancie, "Armure de glace", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x11a, 1, 624),
 			new SpellBookEntry( 2, Aptitude.Hydromancie, "Restauration", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SulfurousAsh) }, 0x14a, 2, 632),
@@ -193,14 +194,14 @@ namespace Server.Gumps
             //new SpellBookEntry( 6, NAptitude.Transformation, "Mutation", new Type[] { typeof(SulfurousAsh), typeof(SulfurousAsh), typeof(SulfurousAsh) }, 0x59df, 8, 701),
         };
 
-        public bool HasSpell(Mobile from, int spellID)
+        public bool HasSpell(int spellID)
         {
-            return (m_Book.HasSpell(spellID));
+            return m_Book.HasSpell(spellID);
         }
         
         #region tableaux
         //Liste des magies du spellbook et leur couleur
-        public Aptitude[] m_ConnaissanceList = new Aptitude[] {
+        public Aptitude[] m_AptitudeList = new Aptitude[] {
 			Aptitude.Martial,
 			Aptitude.Chasseur,
 			Aptitude.Roublardise,
@@ -219,17 +220,17 @@ namespace Server.Gumps
 
         public void InitializeHashtable()
         {
-            m_NameColors[Aptitude.Martial] = 498;
+            m_NameColors[Aptitude.Martial] = 1105;
             m_NameColors[Aptitude.Chasseur] = 1050;
-            m_NameColors[Aptitude.Roublardise] = 12;
-            m_NameColors[Aptitude.Polymorphie] = 12;
-            m_NameColors[Aptitude.Totemique] = 12;
-            m_NameColors[Aptitude.Musique] = 12;
-            m_NameColors[Aptitude.Hydromancie] = 12;
-            m_NameColors[Aptitude.Pyromancie] = 12;
-            m_NameColors[Aptitude.Geomancie] = 12;
-            m_NameColors[Aptitude.Aeromancie] = 12;
-            m_NameColors[Aptitude.Necromancie] = 12;
+            m_NameColors[Aptitude.Roublardise] = 1109;
+            m_NameColors[Aptitude.Polymorphie] = 1129;
+            m_NameColors[Aptitude.Totemique] = 1139;
+            m_NameColors[Aptitude.Musique] = 1250;
+            m_NameColors[Aptitude.Hydromancie] = 1264;
+            m_NameColors[Aptitude.Pyromancie] = 1258;
+            m_NameColors[Aptitude.Geomancie] = 1190;
+            m_NameColors[Aptitude.Aeromancie] = 1153;
+            m_NameColors[Aptitude.Necromancie] = 2006;
 
             m_Names[Aptitude.Martial] = "Martial";
             m_Names[Aptitude.Chasseur] = "Chasseur";
@@ -246,14 +247,16 @@ namespace Server.Gumps
         #endregion
 
         private NewSpellbook m_Book;
+        private int m_Page;
+		private const int EntriesPerPage = 20;
 
-        public NewSpellbookGump(Mobile from, NewSpellbook book) : base(150, 200)
+		public NewSpellbookGump(Mobile from, NewSpellbook book, int page) : base(150, 200)
         {
             InitializeHashtable();
 
             m_Book = book;
+			m_Page = page;
             int vindex = 0;
-            int totpage = 0;
             int hindex = 0;
 
             if (!(from is CustomPlayerMobile))
@@ -261,138 +264,186 @@ namespace Server.Gumps
 
             CustomPlayerMobile m = (CustomPlayerMobile)from;
 
-            AddPage(0);
             AddImage(100, 10, 2201);
 
-            int oldconnaissance = -1;
-            int newconnaissance = -1;
+			//On ajoute les boutons de changement de page
+			if (m_Page < (m_SpellBookEntry.Length / 20))
+				AddButton(396, 14, 0x89E, 0x89E, 18, GumpButtonType.Reply, 0);
+			if (m_Page > 0)
+				AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Reply, 0);
 
-            int value = 0;
+			//Pour tous les sorts
+			for (int i = m_Page * EntriesPerPage, count = 0; count < EntriesPerPage && i < m_SpellBookEntry.Length; ++i, count++)
+			{
+				var entry = m_SpellBookEntry[i];
 
-            //Pour tous les sorts
-            for (int i = 0; i < m_SpellBookEntry.Length; i++)
-            {
-                SpellBookEntry info = (SpellBookEntry)m_SpellBookEntry[i];
+				if (count % EntriesPerPage == 0)
+				{
+					AddPage(count / EntriesPerPage);
+					
+					vindex = 0;
+					hindex = 0;
+					AddLabel(160 + hindex * 145, 25, (int)m_NameColors[entry.Aptitude] - 1, (string)m_Names[entry.Aptitude]);
+				}
 
-                //on assigne la nouvelle connaissance
-                newconnaissance = (int)info.Connaissance;
+				if (count % (EntriesPerPage / 2) == 0 && count % EntriesPerPage != 0)
+				{
+					vindex = 0;
+					hindex = 1;
+					AddLabel(160 + hindex * 145, 25, (int)m_NameColors[entry.Aptitude] - 1, (string)m_Names[entry.Aptitude]);
+				}
 
-                //on fait la comparaison des Aptitude pour savoir si on a changé de connaissance
-                if (newconnaissance != -1 && newconnaissance != oldconnaissance)
-                {
-                    totpage++;
-                    AddPage(totpage);
-                    hindex = 0;
+				//on assigne la nouvelle connaissance
+				var newconnaissance = (int)entry.Aptitude;
+				
+				// Séparateurs
+				AddImageTiled(130 + hindex * 165, 40, 130, 10, 0x3A);
 
-                    //On ajoute le nom de la connaissance
-                    AddLabel(160 + hindex * 145, 25, (int)m_NameColors[info.Connaissance], (string)m_Names[info.Connaissance]);
+				//Si le livre possède le sort
+				if (HasSpell(entry.SpellID) && ArrayContains(m_AptitudeList, entry.Aptitude))
+				{
+					int buttonID = 2224;
 
-                    // Séparateurs
-                    AddImageTiled(130 + hindex * 165, 40, 130, 10, 0x3A);
+					if (m.QuickSpells.Contains(entry.SpellID))
+						buttonID = 2223;
 
-                    //On remet à 0 pour la nouvelle page
-                    vindex = 0;
+					//On ajoute l'information et les boutons
+					AddLabel(162 + hindex * 160, 54 + (vindex * 15), 0, entry.Nom);
+					AddButton(127 + hindex * 160, 59 + (vindex * 15), 2103, 2104, entry.SpellID, GumpButtonType.Reply, 0); //Cast
+					AddButton(140 + hindex * 160, 58 + (vindex * 15), buttonID, buttonID, entry.SpellID + 200, GumpButtonType.Reply, 0); //AddQSL
+					vindex++;
+				}
+			}
 
-                    //On ajoute les boutons de changement de page
-                    AddButton(396, 14, 0x89E, 0x89E, 18, GumpButtonType.Page, totpage + 1);
-                    AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Page, totpage - 1);
-                }
 
-                //Si le livre possède le sort
-                if (HasSpell(from, info.SpellID) && ArrayContains(m_ConnaissanceList, info.Connaissance))
-                {
-                    int buttonID = 2224;
 
-                    if (m.QuickSpells.Contains(info.SpellID))
-                        buttonID = 2223;
+			//int oldconnaissance = -1;
 
-                    //On ajoute l'information et les boutons
-                    AddLabel(162 + hindex * 160, 54 + (vindex * 17), 0, info.Nom);
-                    AddButton(127 + hindex * 160, 59 + (vindex * 17), 2103, 2104, info.SpellID, GumpButtonType.Reply, 0);
-                    AddButton(140 + hindex * 160, 58 + (vindex * 17), buttonID, buttonID, info.SpellID + 200, GumpButtonType.Reply, 0);
-                    vindex++;
+			////Pour tous les sorts
+			//for (int i = 0; i < m_SpellBookEntry.Length; i++)
+   //         {
+   //             SpellBookEntry info = m_SpellBookEntry[i];
 
-                    if (vindex >= 9)
-                    {
-                        vindex = 0;
-                        hindex = 1;
-                    }
-                }
+			//	//on assigne la nouvelle connaissance
+			//	var newconnaissance = (int)info.Aptitude;
 
-                oldconnaissance = (int)info.Connaissance;
-             }
+			//	//on fait la comparaison des Aptitude pour savoir si on a changé de connaissance
+			//	if (newconnaissance != -1 && newconnaissance != oldconnaissance)
+   //             {
+   //                 totpage++;
+   //                 AddPage(totpage);
+					
+   //                 hindex = 0;
 
-            value = 0;
+   //                 //On ajoute le nom de la connaissance
+   //                 AddLabel(160 + hindex * 145, 25, (int)m_NameColors[info.Aptitude], (string)m_Names[info.Aptitude]);
 
-            //Pour tous les sorts
-            for (int i = 0; i < m_SpellBookEntry.Length; i++)
-            {
-                SpellBookEntry info = (SpellBookEntry)m_SpellBookEntry[i];
+   //                 // Séparateurs
+   //                 AddImageTiled(130 + hindex * 165, 40, 130, 10, 0x3A);
 
-                //Si le livre possède le sort
-                if (this.HasSpell(from, info.SpellID) && ArrayContains(m_ConnaissanceList, info.Connaissance))
-                {
-                    //Si le # du sort est pair...
-                    if (value % 2 == 0)
-                    {
-                        //On fait une page
-                        totpage++;
-                        AddPage(totpage);
-                        hindex = 0;
+   //                 //On remet à 0 pour la nouvelle page
+   //                 vindex = 0;
 
-                        //On ajoute les boutons de pages
-                        AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Page, totpage - 1);
-                        AddButton(396, 14, 0x89E, 0x89E, 18, GumpButtonType.Page, totpage + 1);
-                    }
-                    else
-                        hindex = 1;
+   //                 //On ajoute les boutons de changement de page
+   //                 AddButton(396, 14, 0x89E, 0x89E, 18, GumpButtonType.Page, totpage + 1);
+   //                 AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Page, totpage - 1);
+   //             }
 
-                    int namecolor = 0;
-                    string name = "...";
+   //             //Si le livre possède le sort
+   //             if (HasSpell(info.SpellID) && ArrayContains(m_AptitudeList, info.Aptitude))
+   //             {
+   //                 int buttonID = 2224;
 
-                    if (m_NameColors.Contains(info.Connaissance))
-                        namecolor = (int)m_NameColors[info.Connaissance];
+   //                 if (m.QuickSpells.Contains(info.SpellID))
+   //                     buttonID = 2223;
 
-                    if (m_Names.Contains(info.Connaissance))
-                        name = (string)m_Names[info.Connaissance];
+   //                 //On ajoute l'information et les boutons
+   //                 AddLabel(162 + hindex * 160, 54 + (vindex * 17), 0, info.Nom);
+   //                 AddButton(127 + hindex * 160, 59 + (vindex * 17), 2103, 2104, info.SpellID, GumpButtonType.Reply, 0); //Cast
+   //                 AddButton(140 + hindex * 160, 58 + (vindex * 17), buttonID, buttonID, info.SpellID + 200, GumpButtonType.Reply, 0); //AddQSL
+   //                 vindex++;
 
-                    //On ajoute le nom
-                    AddLabel(130 + hindex * 165, 45, namecolor, info.Nom);
+   //                 if (vindex >= 9)
+   //                 {
+   //                     vindex = 0;
+   //                     hindex = 1;
+   //                 }
+   //             }
 
-                    //On ajoute les séparateurs
-                    AddImageTiled(130 + hindex * 165, 60, 130, 10, 0x3A);
+   //             oldconnaissance = (int)info.Aptitude;
+   //          }
 
-                    //On ajoute l'icone en tant que bouton pour lancer le sort
-                    AddButton(140 + hindex * 165, 75, info.ImageID, info.ImageID, info.SpellID, GumpButtonType.Reply, 0);
-                    AddLabel(190 + hindex * 165, 78, namecolor, "Cercle : " + info.Cercle.ToString());
+			//var value = 0;
 
-                    int buttonID = 2224;
+			////Pour tous les sorts
+			//for (int i = 0; i < m_SpellBookEntry.Length; i++)
+   //         {
+   //             SpellBookEntry info = (SpellBookEntry)m_SpellBookEntry[i];
 
-                    if (m.QuickSpells.Contains(info.SpellID))
-                        buttonID = 2223;
+   //             //Si le livre possède le sort
+   //             if (this.HasSpell(info.SpellID) && ArrayContains(m_AptitudeList, info.Aptitude))
+   //             {
+   //                 //Si le # du sort est pair...
+   //                 if (value % 2 == 0)
+   //                 {
+   //                     //On fait une page
+   //                     totpage++;
+   //                     AddPage(totpage);
+   //                     hindex = 0;
 
-                    //On ajoute les boutons pour le lancement rapide
-                    AddLabel(210 + hindex * 165, 98, 0, "Rapide");
-                    AddButton(190 + hindex * 165, 101, buttonID, buttonID, info.SpellID + 200, GumpButtonType.Reply, 0);
+   //                     //On ajoute les boutons de pages
+   //                     AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Page, totpage - 1);
+   //                     AddButton(396, 14, 0x89E, 0x89E, 18, GumpButtonType.Page, totpage + 1);
+   //                 }
+   //                 else
+   //                     hindex = 1;
 
-                    //On ajoute les infos diverses
-                    AddLabel(130 + hindex * 165, 120, 567, "Reagents:");
-                    for (int j = 0; j < info.Reagents.Length; j++)
-                    {
-                        Type type = (Type)info.Reagents[j];
-                        AddLabel(130 + hindex * 165, 138 + j * 18, 0, type.Name);
-                    }
+   //                 int namecolor = 0;
+   //                 string name = "...";
 
-                    AddLabel(130 + hindex * 165, 192, namecolor, name + " " + info.ConnaissanceLevel);
+   //                 if (m_NameColors.Contains(info.Aptitude))
+   //                     namecolor = (int)m_NameColors[info.Aptitude];
 
-                    //On augmente le nombre de sort de 1 pour le prochain sort.
-                    value++;
-                }
-            }
+   //                 if (m_Names.Contains(info.Aptitude))
+   //                     name = (string)m_Names[info.Aptitude];
 
-            totpage++;
-            AddPage(totpage);
-            AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Page, totpage - 1);
+   //                 //On ajoute le nom
+   //                 AddLabel(130 + hindex * 165, 45, namecolor, info.Nom);
+
+   //                 //On ajoute les séparateurs
+   //                 AddImageTiled(130 + hindex * 165, 60, 130, 10, 0x3A);
+
+   //                 //On ajoute l'icone en tant que bouton pour lancer le sort
+   //                 AddButton(140 + hindex * 165, 75, info.ImageID, info.ImageID, info.SpellID, GumpButtonType.Reply, 0);
+   //                 AddLabel(190 + hindex * 165, 78, namecolor, "Cercle : " + info.Cercle.ToString());
+
+   //                 int buttonID = 2224;
+
+   //                 if (m.QuickSpells.Contains(info.SpellID))
+   //                     buttonID = 2223;
+
+   //                 //On ajoute les boutons pour le lancement rapide
+   //                 AddLabel(210 + hindex * 165, 98, 0, "Rapide");
+   //                 AddButton(190 + hindex * 165, 101, buttonID, buttonID, info.SpellID + 200, GumpButtonType.Reply, 0);
+
+   //                 //On ajoute les infos diverses
+   //                 AddLabel(130 + hindex * 165, 120, 567, "Reagents:");
+   //                 for (int j = 0; j < info.Reagents.Length; j++)
+   //                 {
+   //                     Type type = (Type)info.Reagents[j];
+   //                     AddLabel(130 + hindex * 165, 138 + j * 18, 0, type.Name);
+   //                 }
+
+   //                 AddLabel(130 + hindex * 165, 192, namecolor, name + " " + info.AptitudeLevel);
+
+   //                 //On augmente le nombre de sort de 1 pour le prochain sort.
+   //                 value++;
+   //             }
+   //         }
+
+   //         totpage++;
+   //         AddPage(totpage);
+   //         AddButton(123, 15, 0x89D, 0x89D, 19, GumpButtonType.Page, totpage - 1);
         }
 
         public bool ArrayContains(Aptitude[] conn, Aptitude wanted)
@@ -436,34 +487,38 @@ namespace Server.Gumps
 
             if (from is CustomPlayerMobile)
             {
-                CustomPlayerMobile m = (CustomPlayerMobile)from;
+                CustomPlayerMobile pm = (CustomPlayerMobile)from;
 
-                if (info.ButtonID >= 600 && info.ButtonID < 800)
+				if (info.ButtonID == 18 && m_Page < (m_SpellBookEntry.Length / 20))
+                    pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page + 1));
+				else if (info.ButtonID == 19 && m_Page > 0)
+					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page - 1));
+				else if (info.ButtonID >= 600 && info.ButtonID < 800)
                 {
-                    Spell spell = SpellRegistry.NewSpell(info.ButtonID, m, null);
+                    Spell spell = SpellRegistry.NewSpell(info.ButtonID, pm, null);
 
                     if (spell != null)
                         spell.Cast();
 
-                    m.SendGump(new NewSpellbookGump(m, m_Book));
+                    pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page));
                 }
                 else if (info.ButtonID >= 800 && info.ButtonID < 1000)
                 {
-                    if (m.QuickSpells == null)
+                    if (pm.QuickSpells == null)
                         return;
 
-                    if (m.QuickSpells.Contains((int)(info.ButtonID - 200)))
+                    if (pm.QuickSpells.Contains((int)(info.ButtonID - 200)))
                     {
-                        m.SendMessage("Le sort a été retiré de votre liste de lancement rapide.");
-                        m.QuickSpells.Remove((int)(info.ButtonID - 200));
+                        pm.SendMessage("Le sort a été retiré de votre liste de lancement rapide.");
+                        pm.QuickSpells.Remove((int)(info.ButtonID - 200));
                     }
                     else
                     {
-                        m.SendMessage("Le sort a été ajouté à votre liste de lancement rapide.");
-                        m.QuickSpells.Add((int)(info.ButtonID - 200));
+                        pm.SendMessage("Le sort a été ajouté à votre liste de lancement rapide.");
+                        pm.QuickSpells.Add((int)(info.ButtonID - 200));
                     }
 
-                    m.SendGump(new NewSpellbookGump(m, m_Book));
+                    pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page));
                 }
             }
         }

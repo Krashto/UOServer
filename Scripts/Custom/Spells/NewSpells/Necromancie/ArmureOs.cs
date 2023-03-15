@@ -69,12 +69,12 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Caster.FixedParticles(0x375A, 1, 17, 9919, 33, 7, EffectLayer.Waist);
 				Caster.FixedParticles(0x3728, 1, 13, 9502, 33, 7, (EffectLayer)255);
 
-				ExplodeFX.Bone.CreateInstance(Caster, Caster.Map, 1);
+				ExplodeFX.Bone.CreateInstance(Caster, Caster.Map, 1).Send();
 
 				m.FixedParticles(0x375A, 1, 17, 9919, 33, 7, EffectLayer.Waist);
 				m.FixedParticles(0x3728, 1, 13, 9502, 33, 7, (EffectLayer)255);
 
-				ExplodeFX.Bone.CreateInstance(m, m.Map, 1);
+				ExplodeFX.Bone.CreateInstance(m, m.Map, 1).Send();
 
 				var duration = GetDurationForSpell(0.2);
 
@@ -117,10 +117,10 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			protected override void OnTick()
 			{
 				if (m_Caster != null)
-					ExplodeFX.Bone.CreateInstance(m_Caster, m_Caster.Map, 1);
+					ExplodeFX.Bone.CreateInstance(m_Caster, m_Caster.Map, 1).Send();
 
 				if (m_Target != null)
-					ExplodeFX.Bone.CreateInstance(m_Target, m_Target.Map, 1);
+					ExplodeFX.Bone.CreateInstance(m_Target, m_Target.Map, 1).Send();
 
 				if (m_Caster.Deleted || m_Target.Deleted || !m_Caster.Alive || !m_Target.Alive || DateTime.Now >= m_End)
 				{

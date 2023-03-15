@@ -40,7 +40,7 @@ namespace Server.Spells
 
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), range);
 
-					ExplodeFX.Poison.CreateInstance(Caster, Caster.Map, range);
+					ExplodeFX.Poison.CreateInstance(Caster, Caster.Map, range).Send();
 
 					foreach (Mobile m in eable)
 					{

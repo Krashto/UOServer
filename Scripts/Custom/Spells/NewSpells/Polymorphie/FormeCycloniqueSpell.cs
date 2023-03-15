@@ -105,7 +105,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				{
 					var range = 1;
 					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
-					ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range);
+
+					ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range).Send();
 
 					foreach (Mobile m in eable)
 						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))

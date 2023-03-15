@@ -75,8 +75,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				if (Caster.Player)
 				{
-					ExplodeFX.Smoke.CreateInstance(from, map, 1);
-					ExplodeFX.Smoke.CreateInstance(to, map, 1);
+					ExplodeFX.Smoke.CreateInstance(from, map, 1).Send();
+					ExplodeFX.Smoke.CreateInstance(to, map, 1).Send();
 				}
 				else
 					Caster.FixedParticles(0x376A, 9, 32, 0x13AF, EffectLayer.Waist);

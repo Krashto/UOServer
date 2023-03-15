@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 				if (m.Hits <= m.HitsMax * 0.2)
 				{
-					ExplodeFX.Blood.CreateInstance(m, m.Map, 5);
+					ExplodeFX.Blood.CreateInstance(m, m.Map, 5).Send();
 					m.Kill();
 				}
 				else

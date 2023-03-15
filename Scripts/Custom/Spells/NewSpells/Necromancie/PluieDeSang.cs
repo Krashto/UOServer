@@ -38,26 +38,30 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				if (map != null)
 				{
-					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value, Aptitude.Necromancie);
+					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Necromancie);
+
+					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, range).Send();
 
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), range);
 
-					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, range);
-
 					foreach (Mobile m in eable)
+					{
 						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m != Caster && Caster.InLOS(m))
 							targets.Add(m);
+					}
 
 					eable.Free();
 				}
 
 				if (targets.Count > 0)
+				{
 					for (var i = 0; i < targets.Count; ++i)
 					{
 						var m = (Mobile)targets[i];
 						BleedAttack.BeginBleed(m, Caster, true);
 						InfectionSpell.ToogleCurse(this, Caster, m);
 					}
+				}
 			}
 
 			FinishSequence();

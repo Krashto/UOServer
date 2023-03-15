@@ -60,7 +60,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public static void ToogleInvisibility(Spell spell, Mobile caster, Mobile m)
 		{
-			ExplodeFX.Smoke.CreateInstance(m, m.Map, 1);
+			ExplodeFX.Smoke.CreateInstance(m, m.Map, 1).Send();
 
 			m.Hidden = true;
 			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[SkillName.Magery].Value / 2, Aptitude.Aeromancie);

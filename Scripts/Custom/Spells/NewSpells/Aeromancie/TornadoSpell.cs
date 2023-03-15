@@ -90,7 +90,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				var range = 1;
 
-				ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range);
+				ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range).Send();
 
 				if (map != null)
 				{

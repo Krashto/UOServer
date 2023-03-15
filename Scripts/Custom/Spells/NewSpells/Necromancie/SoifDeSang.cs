@@ -45,7 +45,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				Disturb(m);
 
-				ExplodeFX.Blood.CreateInstance(m, m.Map, 1);
+				ExplodeFX.Blood.CreateInstance(m, m.Map, 1).Send();
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 

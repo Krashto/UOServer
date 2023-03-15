@@ -57,7 +57,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				else
 				{
 					m.ApplyPoison(Caster, Poison.GetPoison(level));
-					ExplodeFX.Poison.CreateInstance(m, m.Map, 0);
+					ExplodeFX.Poison.CreateInstance(m, m.Map, 0).Send();
 				}
 
 				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);

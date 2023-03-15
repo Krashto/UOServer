@@ -48,7 +48,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 15, Aptitude.Hydromancie);
 
-				ExplodeFX.Snow.CreateInstance(Caster, Caster.Map, range);
+				ExplodeFX.Snow.CreateInstance(Caster, Caster.Map, range).Send();
 
 				if (map != null)
 					foreach (var m in Caster.GetMobilesInRange(range))
@@ -114,7 +114,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				}
 				else
 				{
-					ExplodeFX.Snow.CreateInstance(m_Mobile, m_Mobile.Map, 2);
+					ExplodeFX.Snow.CreateInstance(m_Mobile, m_Mobile.Map, 2).Send();
 					m_Mobile.Stam -= 5;
 					m_Mobile.Hits -= 1;
 				}

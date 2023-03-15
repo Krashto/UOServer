@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				Disturb(m);
 
-				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 1);
+				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 1).Send();
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 

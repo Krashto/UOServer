@@ -86,7 +86,7 @@ namespace Server.Items
                     from.Heal(damage);
                 }
 
-				ExplodeFX.Blood.CreateInstance(m, m.Map, 1);
+				ExplodeFX.Blood.CreateInstance(m, m.Map, 1).Send();
 			}
 			else
             {

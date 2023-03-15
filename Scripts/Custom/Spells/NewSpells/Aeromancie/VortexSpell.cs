@@ -103,7 +103,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 						IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(m_Loc), range);
 
-						ExplodeFX.Air.CreateInstance(m_Loc, m_Caster.Map, range);
+						ExplodeFX.Air.CreateInstance(m_Loc, m_Caster.Map, range).Send();
 
 						foreach (Mobile m in eable)
 							if (m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m, true) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))

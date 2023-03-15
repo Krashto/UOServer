@@ -49,7 +49,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				SpellHelper.Summon(new SummonedBloodElemental(), Caster, 0x217, duration, false, false);
 
-				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 5);
+				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 5).Send();
 			}
 
 			FinishSequence();

@@ -69,7 +69,7 @@ namespace Server.Items
 			if ( Parent == from || (pack != null && Parent == pack))
 			{
 				from.CloseGump( typeof( NewSpellbookGump ) );
-				from.SendGump( new NewSpellbookGump( from, this ) );
+				from.SendGump( new NewSpellbookGump( from, this, 0 ) );
 			}
 			else
 			{
