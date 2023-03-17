@@ -8,7 +8,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             Name = "a ghoul";
-            Body = 153;
+            Body = 748;
             BaseSoundID = 0x482;
 
             SetStr(76, 100);
