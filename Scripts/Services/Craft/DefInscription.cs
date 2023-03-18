@@ -191,7 +191,7 @@ namespace Server.Engines.Craft
 
 		private string GetCircle(int circle)
 		{
-			if (circle >= 0 && circle <= 7)
+			if (circle >= 0 && circle <= 10)
 				return m_GetCircle[circle];
 
 			return "";
@@ -206,6 +206,10 @@ namespace Server.Engines.Craft
 				"Niveau 4",
 				"Niveau 5",
 				"Niveau 6",
+				"Niveau 7",
+				"Niveau 8",
+				"Niveau 9",
+				"Niveau 10",
 			};
 
 		public override void InitCraftList()

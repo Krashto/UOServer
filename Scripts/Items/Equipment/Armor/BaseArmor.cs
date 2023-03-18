@@ -2349,8 +2349,6 @@ namespace Server.Items
 
 			list.Add("Ressource: " + CraftResources.GetDescription(Resource));
 
-
-
 			if (m_GorgonLenseCharges > 0)
                 list.Add(1112590, m_GorgonLenseCharges.ToString()); //Gorgon Lens Charges: ~1_val~         
 

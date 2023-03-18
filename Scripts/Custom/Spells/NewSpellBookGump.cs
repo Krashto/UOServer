@@ -6,6 +6,7 @@ using Server.Network;
 using Server.Spells; 
 using Server.Custom.Aptitudes;
 using System.Web.UI;
+using System.Runtime.InteropServices;
 
 namespace Server.Gumps
 {
@@ -120,27 +121,27 @@ namespace Server.Gumps
 			new SpellBookEntry( 9, Aptitude.Martial, "Présence inspirante", new Type[] { typeof(Bloodmoss), typeof(SulfurousAsh) }, 0x8ef, 1, 668),
 			new SpellBookEntry( 10, Aptitude.Martial, "Ange gardien", new Type[] { typeof(SulfurousAsh), typeof(Bloodmoss), typeof(Bloodmoss) }, 0x13d, 5, 669),
 
-			new SpellBookEntry( 1, Aptitude.Hydromancie, "Armure de glace", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x11a, 1, 670),
-			new SpellBookEntry( 2, Aptitude.Hydromancie, "Restauration", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SulfurousAsh) }, 0x14a, 2, 671),
-			new SpellBookEntry( 3, Aptitude.Hydromancie, "Soin préventif", new Type[] { typeof(SulfurousAsh), typeof(SpidersSilk) }, 0x8c5, 3, 672),
-			new SpellBookEntry( 4, Aptitude.Hydromancie, "Cage de glace", new Type[] { typeof(SulfurousAsh), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x8c4, 4, 673),
-			new SpellBookEntry( 5, Aptitude.Hydromancie, "Aura cryogénisée", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(MandrakeRoot) }, 0x8c1, 4, 674),
-			new SpellBookEntry( 6, Aptitude.Hydromancie, "Explosion de glace", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(BlackPearl) }, 0x12e, 5, 675),
-			new SpellBookEntry( 7, Aptitude.Hydromancie, "Cerveau gelé", new Type[] { typeof(BlackPearl), typeof(Ginseng), typeof(Garlic) }, 0x127, 5, 676),
-			new SpellBookEntry( 8, Aptitude.Hydromancie, "Aura réfrigérante", new Type[] { typeof(BlackPearl), typeof(Bloodmoss), typeof(MandrakeRoot) }, 0x8f0, 6, 677),
-			new SpellBookEntry( 9, Aptitude.Hydromancie, "Avatar du froid", new Type[] { typeof(Bloodmoss), typeof(SulfurousAsh) }, 0x8ef, 1, 678),
-			new SpellBookEntry( 10, Aptitude.Hydromancie, "Blizzard", new Type[] { typeof(SulfurousAsh), typeof(Bloodmoss), typeof(Bloodmoss) }, 0x13d, 5, 679),
+			new SpellBookEntry( 1, Aptitude.Musique, "Diversion", new Type[] { typeof(BlackPearl), typeof(Bloodmoss), typeof(Garlic) }, 0x135, 1, 670),
+			new SpellBookEntry( 2, Aptitude.Musique, "Calme toi!", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(SpidersSilk) }, 0x8dc, 2, 671),
+			new SpellBookEntry( 3, Aptitude.Musique, "Désorienté", new Type[] { typeof(Nightshade), typeof(Garlic), typeof(SulfurousAsh) }, 0x8da, 3, 672),
+			new SpellBookEntry( 4, Aptitude.Musique, "Défi", new Type[] { typeof(DaemonBlood), typeof(Garlic) }, 0x5001, 3, 673),
+			new SpellBookEntry( 5, Aptitude.Musique, "Descescendo Maniaque", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SpidersSilk) }, 0x59e0, 4, 674),
+			new SpellBookEntry( 6, Aptitude.Musique, "Inspiration élémentaire", new Type[] { typeof(GraveDust), typeof(DaemonBlood), typeof(DaemonBlood) }, 0x147, 4, 675),
+			new SpellBookEntry( 7, Aptitude.Musique, "Absorbation sonore", new Type[] { typeof(BatWing), typeof(GraveDust) }, 0x167, 5, 676),
+			new SpellBookEntry( 8, Aptitude.Musique, "Parfaite aspiration", new Type[] { typeof(PigIron) }, 0x5003, 6, 677),
+			new SpellBookEntry( 9, Aptitude.Musique, "Révélation discordance", new Type[] { typeof(GraveDust), typeof(DaemonBlood), typeof(PigIron) }, 0x168, 7, 678),
+			new SpellBookEntry( 10, Aptitude.Musique, "Havre de paix", new Type[] { typeof(Nightshade), typeof(Bloodmoss), typeof(NoxCrystal) }, 0x59e5, 8, 679),
 
-			new SpellBookEntry( 1, Aptitude.Musique, "Diversion", new Type[] { typeof(BlackPearl), typeof(Bloodmoss), typeof(Garlic) }, 0x135, 1, 680),
-			new SpellBookEntry( 2, Aptitude.Musique, "Calme toi!", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(SpidersSilk) }, 0x8dc, 2, 681),
-			new SpellBookEntry( 3, Aptitude.Musique, "Désorienté", new Type[] { typeof(Nightshade), typeof(Garlic), typeof(SulfurousAsh) }, 0x8da, 3, 682),
-			new SpellBookEntry( 4, Aptitude.Musique, "Défi", new Type[] { typeof(DaemonBlood), typeof(Garlic) }, 0x5001, 3, 683),
-			new SpellBookEntry( 5, Aptitude.Musique, "Descescendo Maniaque", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SpidersSilk) }, 0x59e0, 4, 684),
-			new SpellBookEntry( 6, Aptitude.Musique, "Inspiration élémentaire", new Type[] { typeof(GraveDust), typeof(DaemonBlood), typeof(DaemonBlood) }, 0x147, 4, 685),
-			new SpellBookEntry( 7, Aptitude.Musique, "Absorbation sonore", new Type[] { typeof(BatWing), typeof(GraveDust) }, 0x167, 5, 686),
-			new SpellBookEntry( 8, Aptitude.Musique, "Parfaite aspiration", new Type[] { typeof(PigIron) }, 0x5003, 6, 687),
-			new SpellBookEntry( 9, Aptitude.Musique, "Révélation discordance", new Type[] { typeof(GraveDust), typeof(DaemonBlood), typeof(PigIron) }, 0x168, 7, 688),
-			new SpellBookEntry( 10, Aptitude.Musique, "Havre de paix", new Type[] { typeof(Nightshade), typeof(Bloodmoss), typeof(NoxCrystal) }, 0x59e5, 8, 689),
+			new SpellBookEntry( 1, Aptitude.Necromancie, "Soif de sang", new Type[] { typeof(BlackPearl), typeof(Bloodmoss), typeof(Garlic) }, 0x135, 1, 680),
+			new SpellBookEntry( 2, Aptitude.Necromancie, "Touché absorbant", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(SpidersSilk) }, 0x8dc, 2, 681),
+			new SpellBookEntry( 3, Aptitude.Necromancie, "Infection", new Type[] { typeof(Nightshade), typeof(Garlic), typeof(SulfurousAsh) }, 0x8da, 3, 682),
+			new SpellBookEntry( 4, Aptitude.Necromancie, "Armure d'os", new Type[] { typeof(DaemonBlood), typeof(Garlic) }, 0x5001, 3, 683),
+			new SpellBookEntry( 5, Aptitude.Necromancie, "Familier morbide", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SpidersSilk) }, 0x59e0, 4, 684),
+			new SpellBookEntry( 6, Aptitude.Necromancie, "Réanimation", new Type[] { typeof(GraveDust), typeof(DaemonBlood), typeof(DaemonBlood) }, 0x147, 4, 685),
+			new SpellBookEntry( 7, Aptitude.Necromancie, "Consommation mortelle", new Type[] { typeof(BatWing), typeof(GraveDust) }, 0x167, 5, 686),
+			new SpellBookEntry( 8, Aptitude.Necromancie, "Aura vampirique", new Type[] { typeof(PigIron) }, 0x5003, 6, 687),
+			new SpellBookEntry( 9, Aptitude.Necromancie, "Appel du sang", new Type[] { typeof(GraveDust), typeof(DaemonBlood), typeof(PigIron) }, 0x168, 7, 688),
+			new SpellBookEntry( 10, Aptitude.Necromancie, "Pluie de sang", new Type[] { typeof(Nightshade), typeof(Bloodmoss), typeof(NoxCrystal) }, 0x59e5, 8, 689),
 
 			new SpellBookEntry( 1, Aptitude.Polymorphie, "Forme cyclonique", new Type[] { typeof(Bloodmoss), typeof(MandrakeRoot), typeof(BlackPearl) }, 0x8fd, 8, 690),
 			new SpellBookEntry( 2, Aptitude.Polymorphie, "Forme métallique", new Type[] { typeof(Bloodmoss), typeof(Bloodmoss), typeof(Bloodmoss) }, 0x5322, 8, 691),
@@ -195,6 +196,8 @@ namespace Server.Gumps
 			Aptitude.Geomancie,
 			Aptitude.Aeromancie,
 			Aptitude.Necromancie,
+			Aptitude.Defenseur,
+			Aptitude.Guerison,
 		};
 
         public Hashtable m_NameColors = new Hashtable();
@@ -213,6 +216,8 @@ namespace Server.Gumps
             m_NameColors[Aptitude.Geomancie] = 1190;
             m_NameColors[Aptitude.Aeromancie] = 1153;
             m_NameColors[Aptitude.Necromancie] = 2006;
+            m_NameColors[Aptitude.Defenseur] = 2006;
+            m_NameColors[Aptitude.Guerison] = 2006;
 
             m_Names[Aptitude.Martial] = "Martial";
             m_Names[Aptitude.Chasseur] = "Chasseur";
@@ -225,6 +230,8 @@ namespace Server.Gumps
             m_Names[Aptitude.Geomancie] = "Géomancie";
             m_Names[Aptitude.Aeromancie] = "Aéromancie";
             m_Names[Aptitude.Necromancie] = "Nécromancie";
+            m_Names[Aptitude.Defenseur] = "Défenseur";
+            m_Names[Aptitude.Guerison] = "Guérison";
         }
         #endregion
 
