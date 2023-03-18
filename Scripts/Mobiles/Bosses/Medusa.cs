@@ -26,33 +26,38 @@ namespace Server.Mobiles
             Name = "Medusa";
             Body = 728;
 
-            SetStr(1235, 1391);
-            SetDex(128, 139);
-            SetInt(537, 664);
+			SetStr(199, 355);
+			SetDex(132, 220);
+			SetInt(110, 177);
 
-            SetHits(60000);
+			SetHits(4770, 7249);
 
-            SetDamage(21, 28);
+			SetDamage(26, 45);
 
-            SetDamageType(ResistanceType.Physical, 60);
-            SetDamageType(ResistanceType.Fire, 20);
-            SetDamageType(ResistanceType.Energy, 20);
+			SetDamageType(ResistanceType.Physical, 40);
+			SetDamageType(ResistanceType.Fire, 60);
 
-            SetResistance(ResistanceType.Physical, 55, 65);
-            SetResistance(ResistanceType.Fire, 55, 65);
-            SetResistance(ResistanceType.Cold, 55, 65);
-            SetResistance(ResistanceType.Poison, 80, 90);
-            SetResistance(ResistanceType.Energy, 60, 75);
+			SetResistance(ResistanceType.Physical, 60, 70);
+			SetResistance(ResistanceType.Fire, 60, 70);
+			SetResistance(ResistanceType.Cold, 60, 70);
+			SetResistance(ResistanceType.Poison, 60, 70);
+			SetResistance(ResistanceType.Energy, 60, 70);
 
-            SetSkill(SkillName.Anatomy, 110.6, 116.1);
-            SetSkill(SkillName.EvalInt, 100.0, 114.4);
-            SetSkill(SkillName.Magery, 100.0);
-            SetSkill(SkillName.Meditation, 118.2, 127.8);
-            SetSkill(SkillName.MagicResist, 120.0);
-            SetSkill(SkillName.Tactics, 111.9, 134.5);
-            SetSkill(SkillName.Wrestling, 119.7, 128.9);
 
-            Fame = 22000;
+			         SetSkill(SkillName.EvalInt, 55.1, 65.0);
+
+			SetSkill(SkillName.Magery, 55.1, 65.0);
+			SetSkill(SkillName.Meditation, 55.1, 65.0); 
+
+
+			SetSkill(SkillName.MagicResist, 45.1, 60.0);
+			SetSkill(SkillName.Tactics, 55.1, 65.0);
+			SetSkill(SkillName.Wrestling, 55.1, 65.0);
+
+
+
+
+			Fame = 22000;
             Karma = -22000;
 
             IronwoodCompositeBow Bow = new IronwoodCompositeBow

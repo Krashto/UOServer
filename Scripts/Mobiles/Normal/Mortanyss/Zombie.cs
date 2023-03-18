@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Zombie")]
@@ -10,31 +12,42 @@ namespace Server.Mobiles
             Body = 3;
             BaseSoundID = 471;
 
-            SetStr(46, 70);
-            SetDex(31, 50);
-            SetInt(26, 40);
+			SetStr(63, 98);
+			SetDex(42, 70);
+			SetInt(35, 56);
 
-            SetHits(28, 42);
+			SetHits(70, 91);
 
-            SetDamage(3, 7);
+			SetDamage(9, 14);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 50);
+			SetDamageType(ResistanceType.Cold, 50);
 
-            SetResistance(ResistanceType.Physical, 15, 20);
-            SetResistance(ResistanceType.Cold, 20, 30);
-            SetResistance(ResistanceType.Poison, 5, 10);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 15.1, 40.0);
-            SetSkill(SkillName.Tactics, 35.1, 50.0);
-            SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-            Fame = 600;
-            Karma = -600;
+			          SetSkill(SkillName.EvalInt, 35.1, 50.0);
 
-			
-        }
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0); 
 
-        public Zombie(Serial serial)
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+			//       Fame = 600;
+			//       Karma = -600;
+
+
+		}
+
+		public Zombie(Serial serial)
             : base(serial)
         {
         }
@@ -54,6 +67,8 @@ namespace Server.Mobiles
 			AddLoot(LootPack.BodyParts, Utility.RandomMinMax(3, 5));
 
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
+
+			PackGold(5, 11);
 
 		}
 

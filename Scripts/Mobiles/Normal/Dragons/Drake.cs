@@ -13,28 +13,36 @@ namespace Server.Mobiles
             Body = Utility.RandomList(60, 61);
             BaseSoundID = 362;
 
-            SetStr(401, 430);
-            SetDex(133, 152);
-            SetInt(101, 140);
+			SetStr(263, 469);
+			SetDex(174, 290);
+			SetInt(144, 234);
 
-            SetHits(241, 258);
+			SetHits(452, 687);
 
-            SetDamage(11, 17);
+			SetDamage(34, 58);
 
-            SetDamageType(ResistanceType.Physical, 80);
-            SetDamageType(ResistanceType.Fire, 20);
+			SetDamageType(ResistanceType.Physical, 50);
+			SetDamageType(ResistanceType.Energy, 50);
 
-            SetResistance(ResistanceType.Physical, 45, 50);
-            SetResistance(ResistanceType.Fire, 50, 60);
-            SetResistance(ResistanceType.Cold, 40, 50);
-            SetResistance(ResistanceType.Poison, 20, 30);
-            SetResistance(ResistanceType.Energy, 30, 40);
+			SetResistance(ResistanceType.Physical, 50, 60);
+			SetResistance(ResistanceType.Fire, 50, 60);
+			SetResistance(ResistanceType.Cold, 50, 60);
+			SetResistance(ResistanceType.Poison, 50, 60);
+			SetResistance(ResistanceType.Energy, 50, 60);
 
-            SetSkill(SkillName.MagicResist, 65.1, 80.0);
-            SetSkill(SkillName.Tactics, 65.1, 90.0);
-            SetSkill(SkillName.Wrestling, 65.1, 80.0);
 
-            Fame = 5500;
+			SetSkill(SkillName.EvalInt, 45.1, 50.0);
+
+			SetSkill(SkillName.Magery, 45.1, 50.0);
+			SetSkill(SkillName.Meditation, 45.1, 50.0); 
+
+
+			SetSkill(SkillName.MagicResist, 25.1, 50.0);
+			SetSkill(SkillName.Tactics, 45.1, 50.0);
+			SetSkill(SkillName.Wrestling, 45.1, 50.0);
+
+
+			Fame = 5500;
             Karma = -5500;
 
             Tamable = true;

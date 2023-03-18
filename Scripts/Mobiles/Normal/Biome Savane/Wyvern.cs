@@ -13,33 +13,37 @@ namespace Server.Mobiles
             Body = 62;
             BaseSoundID = 362;
 
-            SetStr(202, 240);
-            SetDex(153, 172);
-            SetInt(51, 90);
+			SetStr(199, 355);
+			SetDex(132, 220);
+			SetInt(110, 177);
 
-            SetHits(125, 141);
+			SetHits(231, 351);
 
-            SetDamage(8, 19);
+			SetDamage(26, 45);
 
-            SetDamageType(ResistanceType.Physical, 50);
-            SetDamageType(ResistanceType.Poison, 50);
+			SetDamageType(ResistanceType.Physical, 50);
+			SetDamageType(ResistanceType.Energy, 50);
 
-            SetResistance(ResistanceType.Physical, 35, 45);
-            SetResistance(ResistanceType.Fire, 30, 40);
-            SetResistance(ResistanceType.Cold, 20, 30);
-            SetResistance(ResistanceType.Poison, 90, 100);
-            SetResistance(ResistanceType.Energy, 30, 40);
+			SetResistance(ResistanceType.Physical, 50, 60);
+			SetResistance(ResistanceType.Fire, 50, 60);
+			SetResistance(ResistanceType.Cold, 50, 60);
+			SetResistance(ResistanceType.Poison, 50, 60);
+			SetResistance(ResistanceType.Energy, 50, 60);
 
-            SetSkill(SkillName.Poisoning, 60.1, 80.0);
-            SetSkill(SkillName.MagicResist, 65.1, 80.0);
-            SetSkill(SkillName.Tactics, 65.1, 90.0);
-            SetSkill(SkillName.Wrestling, 65.1, 80.0);
 
-            Fame = 4000;
-            Karma = -4000;
-        }
+			SetSkill(SkillName.EvalInt, 45.1, 50.0);
 
-        public Wyvern(Serial serial)
+			SetSkill(SkillName.Magery, 45.1, 50.0);
+			SetSkill(SkillName.Meditation, 45.1, 50.0); 
+
+
+			SetSkill(SkillName.MagicResist, 25.1, 50.0);
+			SetSkill(SkillName.Tactics, 45.1, 50.0);
+			SetSkill(SkillName.Wrestling, 45.1, 50.0);
+
+		}
+
+		public Wyvern(Serial serial)
             : base(serial)
         {
         }
