@@ -3,12 +3,12 @@ using Server.Targeting;
 using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
 	public class ChasseurDePrimeSpell : Spell
 	{
+		private static Hashtable m_Table = new Hashtable();
 		public static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
@@ -44,11 +44,27 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if (BleedAttack.IsBleeding(m) || m.Paralyzed || MarquerSpell.IsActive(m))
+				if (MarquerSpell.IsActive(m))
 				{
 					StopTimer(m);
 
-					var duration = GetDurationForSpell(0.15);
+					var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Chasseur);
+
+					var mods = new ResistanceMod[5]
+							{
+						new ResistanceMod( ResistanceType.Physical, -(int)value),
+						new ResistanceMod( ResistanceType.Fire, -(int)value ),
+						new ResistanceMod( ResistanceType.Cold, -(int)value ),
+						new ResistanceMod( ResistanceType.Poison, -(int)value ),
+						new ResistanceMod( ResistanceType.Energy, -(int)value ),
+							};
+
+					m_Table[m] = mods;
+
+					foreach (var mod in mods)
+						m.AddResistanceMod(mod);
+
+					var duration = GetDurationForSpell(10, 0.1);
 
 					Timer t = new InternalTimer(m, DateTime.Now + duration);
 					m_Timers[m] = t;
@@ -68,17 +84,22 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 		public static bool IsActive(Mobile m)
 		{
-			return m_Timers.ContainsKey(m);
+			return m_Table.ContainsKey(m);
 		}
 
 		public void StopTimer(Mobile m)
 		{
-			var t = (Timer)m_Timers[m];
+			var t = m_Timers[m] as Timer;
+			var mods = m_Table[m] as ResistanceMod[];
 
-			if (t != null)
+			if (t != null && mods != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m_Table.Remove(m);
+
+				foreach (var mod in mods)
+					m.RemoveResistanceMod(mod);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);

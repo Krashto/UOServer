@@ -1,3 +1,4 @@
+using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Engines.Despise;
 using Server.Gumps;
 using Server.Mobiles;
@@ -341,7 +342,6 @@ namespace Server.Items
             }
         }
 
-
 		public bool CheckCorpse()
 		{
 			if (m_Patient.Corpse != null)
@@ -353,9 +353,6 @@ namespace Server.Items
 				return true;
 			}		
 		}
-
-
-
 
         public void EndHeal()
         {
@@ -463,27 +460,18 @@ namespace Server.Items
 							{
 								CustomPlayerMobile cm = (CustomPlayerMobile)m_Patient;
 
-
 								cm.MoveToWorld(cm.Corpse.Location, cm.Corpse.Map);
-
-
 
 								cm.PlaySound(0x214);
 								cm.FixedEffect(0x376A, 10, 16);
 
 								cm.Resurrect();
-
-
 							}
 							else
 							{
 								m_Patient.CloseGump(typeof(ResurrectGump));
 								m_Patient.SendGump(new ResurrectGump(m_Patient, m_Healer));
 							}
-
-
-
-                          
                         }
                     }
                 }
@@ -585,7 +573,9 @@ namespace Server.Items
 
                     toHeal -= toHeal * m_Slips * 0.35; // TODO: Verify algorithm
 
-                    if (Engines.CityLoyalty.CityLoyaltySystem.HasTradeDeal(m_Healer, Engines.CityLoyalty.TradeDeal.GuildOfHealers))
+					toHeal += FormeLiquideSpell.GetValue(m_Healer);
+
+					if (Engines.CityLoyalty.CityLoyaltySystem.HasTradeDeal(m_Healer, Engines.CityLoyalty.TradeDeal.GuildOfHealers))
                         toHeal += (int)Math.Ceiling(toHeal * 0.05);
 
                     if (m_HealedPoisonOrBleed > 0)

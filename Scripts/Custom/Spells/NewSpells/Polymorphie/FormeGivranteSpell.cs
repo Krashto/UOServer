@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Reagent.BlackPearl
 			);
 
-		public override int RequiredAptitudeValue { get { return 9; } }
+		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Polymorphie }; } }
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -31,28 +31,26 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				StopTimer(Caster);
-			}
+			else if (Caster.BodyMod != 0)
+				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				if (Caster.BodyMod == 0)
-				{
-					var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30, 1.8);
 
-					Caster.BodyMod = 163;
+				Caster.BodyMod = 163;
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
-				}
-				else
-				{
-					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-				}
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 			}
 
 			FinishSequence();
+		}
+
+		public static int GetValue(Mobile m)
+		{
+			return IsActive(m) ? (int)m.Skills[SkillName.Anatomy].Value / 20 + (int)m.Skills[SkillName.EvalInt].Value / 20 : 0;
 		}
 
 		public static bool IsActive(Mobile m)

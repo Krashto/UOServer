@@ -143,7 +143,7 @@ namespace Server.Items
         {
             get
             {
-                return CraftResource.RegularLeather;
+                return CraftResource.PlainoisLeather;
             }
         }
 

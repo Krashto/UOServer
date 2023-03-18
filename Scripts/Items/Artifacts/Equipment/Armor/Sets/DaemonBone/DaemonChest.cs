@@ -28,7 +28,7 @@ namespace Server.Items
         public override int InitMaxHits => 255;
         public override int StrReq => 60;
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
         public override int LabelNumber => 1041372;// daemon bone armor
         public override void Serialize(GenericWriter writer)
         {

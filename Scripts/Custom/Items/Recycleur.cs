@@ -106,17 +106,17 @@ namespace Server.Items
 					case CraftResource.Valorite:		    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
 					case CraftResource.Mytheril:		    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
 
-                    case CraftResource.LupusLeather:     m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.ReptilienLeather:	        m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.GeantLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.OphidienLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.ArachnideLeather:         m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.DragoniqueLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.DemoniaqueLeather:      m_CraftSystem = DefTailoring.CraftSystem; break;
+                    case CraftResource.ForestierLeather:     m_CraftSystem = DefTailoring.CraftSystem; break;
+					case CraftResource.DesertiqueLeather:	        m_CraftSystem = DefTailoring.CraftSystem; break;
+					case CraftResource.TaigoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
+					case CraftResource.SavanoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
+                    case CraftResource.ToundroisLeather:         m_CraftSystem = DefTailoring.CraftSystem; break;
+                    case CraftResource.TropicauxLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
+                    case CraftResource.MontagnardLeather:      m_CraftSystem = DefTailoring.CraftSystem; break;
                     case CraftResource.AncienLeather:        m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.RegularLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
+                    case CraftResource.PlainoisLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
 
-                    case CraftResource.RegularBone:        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
+                    case CraftResource.PlainoisBone:        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
 					case CraftResource.LupusBone:	            m_CraftSystem = DefBoneTailoring.CraftSystem; break;
 					case CraftResource.ReptilienBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
 					case CraftResource.GeantBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
@@ -169,15 +169,15 @@ namespace Server.Items
 						case CraftResource.Valorite: m_CraftSystem = DefTinkering.CraftSystem; break;
 						case CraftResource.Mytheril: m_CraftSystem = DefTinkering.CraftSystem; break;
 
-						case CraftResource.LupusLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.ReptilienLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.GeantLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.OphidienLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.ArachnideLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.DragoniqueLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.DemoniaqueLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.ForestierLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.DesertiqueLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.TaigoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.SavanoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.ToundroisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.TropicauxLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.MontagnardLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
 						case CraftResource.AncienLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.RegularLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.PlainoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
 
 
 
@@ -244,7 +244,7 @@ namespace Server.Items
                 {
                     switch (resource)
                     {
-                        case CraftResource.RegularBone:  resItem = new Bone(); break;
+                        case CraftResource.PlainoisBone:  resItem = new Bone(); break;
                         case CraftResource.LupusBone:       resItem = new LupusBone(); break;
                         case CraftResource.ReptilienBone:     resItem = new ReptilienBone(); break;
                         case CraftResource.GeantBone:   resItem = new GeantBone(); break;
@@ -260,14 +260,14 @@ namespace Server.Items
                 {
                     switch (resource)
                     {
-                        case CraftResource.RegularLeather:  resItem = new Leather(); break;
-                        case CraftResource.LupusLeather:       resItem = new LupusLeather(); break;
-                        case CraftResource.ReptilienLeather:     resItem = new ReptilienLeather(); break;
-                        case CraftResource.GeantLeather:   resItem = new GeantLeather(); break;
-                        case CraftResource.OphidienLeather:      resItem = new OphidienLeather(); break;
-                        case CraftResource.ArachnideLeather:    resItem = new ArachnideLeather(); break;
-                        case CraftResource.DragoniqueLeather:   resItem = new DragoniqueLeather(); break;
-                        case CraftResource.DemoniaqueLeather:     resItem = new DemoniaqueLeather(); break;
+                        case CraftResource.PlainoisLeather:  resItem = new Leather(); break;
+                        case CraftResource.ForestierLeather:       resItem = new LupusLeather(); break;
+                        case CraftResource.DesertiqueLeather:     resItem = new ReptilienLeather(); break;
+                        case CraftResource.TaigoisLeather:   resItem = new GeantLeather(); break;
+                        case CraftResource.SavanoisLeather:      resItem = new OphidienLeather(); break;
+                        case CraftResource.ToundroisLeather:    resItem = new ArachnideLeather(); break;
+                        case CraftResource.TropicauxLeather:   resItem = new DragoniqueLeather(); break;
+                        case CraftResource.MontagnardLeather:     resItem = new DemoniaqueLeather(); break;
                         case CraftResource.AncienLeather:    resItem = new AncienLeather(); break;
                     }
                 }

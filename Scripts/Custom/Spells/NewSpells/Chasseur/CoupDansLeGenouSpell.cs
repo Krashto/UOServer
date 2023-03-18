@@ -45,7 +45,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if (!FormeElectrisanteSpell.IsActive(m))
+				if (!IndomptableSpell.IsActive(m))
 				{
 					StopTimer(m);
 

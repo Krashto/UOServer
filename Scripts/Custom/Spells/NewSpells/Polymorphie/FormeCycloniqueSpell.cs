@@ -2,17 +2,16 @@ using System;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
-using Server.Items;
-using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Polymorphie
 {
 	public class FormeCycloniqueSpell : Spell
 	{
 		private static Hashtable m_Timers = new Hashtable();
+		private static Hashtable m_Table = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Forme cyclonique", "In Jux Hur Ylem",
+				"Forme cyclonique", "Forme cyclonique",
 				SpellCircle.Fifth,
 				266,
 				9040,
@@ -22,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Reagent.Nightshade
 			);
 
-		public override int RequiredAptitudeValue { get { return 7; } }
+		public override int RequiredAptitudeValue { get { return 1; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Polymorphie }; } }
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -34,25 +33,25 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				StopTimer(Caster);
-			}
+			else if (Caster.BodyMod != 0)
+				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				if (Caster.BodyMod == 0)
-				{
-					var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30, 1.8);
 
-					Caster.BodyMod = 13;
+				Caster.BodyMod = 13;
 
-					Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
-				}
-				else
+				var mod = new DefaultSkillMod(SkillName.Stealth, true, 20.0)
 				{
-					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-				}
+					ObeyCap = false
+				};
+				Caster.AddSkillMod(mod);
+				m_Table[Caster] = mod;
+
+				Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 			}
 
 			FinishSequence();
@@ -66,11 +65,13 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public void StopTimer(Mobile m)
 		{
 			var t = m_Timers[m] as Timer;
+			var mod = m_Table[m] as SkillMod;
 
-			if (t != null)
+			if (t != null && mod != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				Caster.RemoveSkillMod(mod);
 
 				Caster.BodyMod = 0;
 
@@ -97,56 +98,16 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 			protected override void OnTick()
 			{
-				var targets = new ArrayList();
-
-				var map = m_From.Map;
-
-				if (map != null)
-				{
-					var range = 1;
-					IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
-
-					ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range).Send();
-
-					foreach (Mobile m in eable)
-						if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
-							targets.Add(m);
-
-					eable.Free();
-				}
-
-				if (targets.Count > 0)
-				{
-					for (var i = 0; i < targets.Count; ++i)
-					{
-						var m = (Mobile)targets[i];
-
-						var source = m_From;
-
-						Disturb(m);
-
-						if (m_Owner.CheckResisted(m))
-							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
-						else
-						{
-							SpellHelper.Turn(m, source);
-
-							MovingSpells.PushMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 2);
-
-							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
-							source.PlaySound(0x44B);
-						}
-					}
-				}
-
 				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_From) || m_From == null || m_From.Deleted || !m_From.Alive)
 				{
 					var t = m_Timers[m_From] as Timer;
+					var mod = m_Table[m_From] as SkillMod;
 
-					if (t != null)
+					if (t != null && mod != null)
 					{
 						t.Stop();
 						m_Timers.Remove(m_From);
+						m_From.RemoveSkillMod(mod);
 
 						m_From.BodyMod = 0;
 

@@ -31,8 +31,6 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			Caster.Target = new InternalTarget(this);
 		}
 
-		public override bool DelayedDamage { get { return true; } }
-
 		public void Target(Mobile m)
 		{
 			if (!Caster.CanSee(m))

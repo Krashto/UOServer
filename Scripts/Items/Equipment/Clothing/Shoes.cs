@@ -110,7 +110,7 @@ namespace Server.Items
     [Flipable(0x170b, 0x170c)]
     public class Boots : BaseShoes
     {
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         [Constructable]
         public Boots()
@@ -217,7 +217,7 @@ namespace Server.Items
 
         #endregion
 
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         [Constructable]
         public ThighBoots()
@@ -292,7 +292,7 @@ namespace Server.Items
     [Flipable(0x170f, 0x1710)]
     public class Shoes : BaseShoes
     {
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         [Constructable]
         public Shoes()
@@ -332,7 +332,7 @@ namespace Server.Items
     [Flipable(0x170d, 0x170e)]
     public class Sandals : BaseShoes
     {
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         [Constructable]
         public Sandals()
@@ -483,7 +483,7 @@ namespace Server.Items
     [Flipable(0x2FC4, 0x317A)]
     public class ElvenBoots : BaseShoes
     {
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         [Constructable]
         public ElvenBoots()

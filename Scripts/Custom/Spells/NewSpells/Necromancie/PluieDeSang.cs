@@ -3,13 +3,14 @@ using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
-	public class PluieAcideSpell : Spell
+	public class PluieDeSangSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Pluie Acide", "Kal Nox Corp Grav",
+				"Pluie de sang", "Pluie de sang",
 				SpellCircle.Seventh,
 				236,
 				9011,
@@ -23,7 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public PluieAcideSpell(Mobile caster, Item scroll)
+		public PluieDeSangSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -58,8 +59,13 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 					for (var i = 0; i < targets.Count; ++i)
 					{
 						var m = (Mobile)targets[i];
-						BleedAttack.BeginBleed(m, Caster, true);
-						InfectionSpell.ToogleCurse(this, Caster, m);
+						if (!InsensibleSpell.IsActive(m))
+						{
+							BleedAttack.BeginBleed(m, Caster, true);
+							InfectionSpell.ToogleCurse(this, Caster, m);
+						}
+						else
+							Caster.SendMessage($"{m.Name} est immunisé{(m.Female ? "e" : "")} aux saignements.");
 					}
 				}
 			}

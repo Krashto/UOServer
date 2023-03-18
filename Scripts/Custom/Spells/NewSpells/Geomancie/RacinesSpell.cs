@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				if (!FormeMetalliqueSpell.IsActive(m))
+				if (!IndomptableSpell.IsActive(m))
 				{
 					var duration = TimeSpan.FromSeconds(0.5) + GetDurationForSpell(0.1);
 					SpellHelper.Turn(Caster, m);

@@ -3,6 +3,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
 using VitaNex.FX;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -43,16 +44,21 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				SpellHelper.Turn(source, m);
 
-				Disturb(m);
+				if (!InsensibleSpell.IsActive(m))
+				{
+					Disturb(m);
 
-				ExplodeFX.Blood.CreateInstance(m, m.Map, 1).Send();
+					ExplodeFX.Blood.CreateInstance(m, m.Map, 1).Send();
 
-				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				m.PlaySound(22);
-				m.FixedEffect(0x923, 3, 30);
+					m.PlaySound(22);
+					m.FixedEffect(0x923, 3, 30);
 
-				BleedAttack.BeginBleed(m, Caster, true);
+					BleedAttack.BeginBleed(m, Caster, true);
+				}
+				else
+					Caster.SendMessage($"{m.Name} est immunisé{(m.Female ? "e" : "")} aux saignements.");
 			}
 
 			FinishSequence();

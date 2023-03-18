@@ -1,14 +1,15 @@
 using System;
-using Server;
 using Server.Custom.Spells.NewSpells.Aeromancie;
 using Server.Custom.Spells.NewSpells.Chasseur;
-using Server.Custom.Spells.NewSpells.General;
+using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Hydromancie;
+using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Custom.Spells.NewSpells.Roublardise;
+using Server.Custom.Spells.NewSpells.Totemique;
 using Server.Spells.OldSpells;
 
 namespace Server.Spells
@@ -117,137 +118,161 @@ namespace Server.Spells
 
             //Register(400, typeof(AttaquesSpell));
 
-            //Magie arcanique custom
-            Register(600, typeof(AuraCryogeniseeSpell));
-            Register(601, typeof(SoinPreventifSpell));
-            Register(602, typeof(CageDeGlaceSpell));
-            //Register(603, typeof(BlessureSpell));
-            //Register(604, typeof(PieuxDeTerreSpell));
-            //Register(606, typeof(TelekinesieSpell));
+            //Aeromancie
+            Register(600, typeof(AveuglementSpell));
+            Register(601, typeof(BrouillardSpell));
+            Register(602, typeof(TeleportationSpell));
+            Register(603, typeof(TornadoSpell));
+            Register(604, typeof(AuraEvasiveSpell));
+            Register(605, typeof(ExTeleportationSpell));
+            Register(606, typeof(ToucherSuffocantSpell));
+            Register(607, typeof(AuraDeBrouillardSpell));
+            Register(608, typeof(VentFavorableSpell));
+            Register(609, typeof(VortexSpell));
 
-            Register(607, typeof(AuraFortifianteSpell));
-            Register(608, typeof(FortifieSpell));
-            //Register(609, typeof(FaiblesseSpell));
-            //Register(610, typeof(MaladresseSpell));
-            Register(611, typeof(AuraDeRemedeSpell));
-            //Register(612, typeof(StupiditeSpell));
-            Register(613, typeof(ExplosionDeRocheSpell));
-            Register(614, typeof(InfectionSpell));
-            //Register(615, typeof(ReversSpell));
+			//Chasseur
+			Register(610, typeof(AntidoteSpell));
+			Register(611, typeof(MarquerSpell));
+			Register(612, typeof(CompagnonAnimalSpell));
+			Register(613, typeof(SoinAnimalierSpell));
+			Register(614, typeof(RugissementSpell));
+			Register(615, typeof(FrappeEnsanglanteeSpell));
+			Register(616, typeof(SautAggressifSpell));
+			Register(617, typeof(CoupDansLeGenouSpell));
+			Register(618, typeof(ChasseurDePrimeSpell));
+			Register(619, typeof(ContratResoluSpell));
 
-            //Register(616, typeof(MurDeHaieSpell));
-            //Register(617, typeof(MurDePierreSpell));
-            Register(618, typeof(TornadoSpell));
-			//Register(619, typeof(MurDeFeuSpell));
-			//Register(620, typeof(MurDEnergieSpell));
-			Register(621, typeof(AuraBrouillardSpell));
+			//Defenseur
+			Register(620, typeof(CoupDeBouclierSpell));
+			Register(621, typeof(BravadeSpell));
+			Register(622, typeof(DevotionSpell));
+			Register(623, typeof(MutinerieSpell));
+			Register(624, typeof(MentorSpell));
+            Register(625, typeof(LienDeVieSpell));
+            Register(626, typeof(MiracleSpell));
+			Register(627, typeof(IndomptableSpell));
+            Register(628, typeof(InsensibleSpell));
+            Register(629, typeof(PiedsAuSolSpell));
 
-			Register(622, typeof(AvatarDuFroidSpell));
-			Register(623, typeof(ToucherSuffocantSpell));
-			Register(624, typeof(ArmureGlaceSpell));
-            Register(625, typeof(CoupureDesTendonsSpell));
-            Register(626, typeof(CoupMortelSpell));
-			Register(627, typeof(AveuglementSpell));
+			//Geomancie
+			Register(630, typeof(FortifieSpell));
+			Register(631, typeof(RocheSpell));
+			Register(632, typeof(ContaminationSpell));
+			Register(633, typeof(EmpalementSpell));
+			Register(634, typeof(AuraFortifianteSpell));
+			Register(635, typeof(MurDePlanteSpell));
+			Register(636, typeof(ExplosionDeRocheSpell));
+			Register(637, typeof(AuraPreservationManiaqueSpell));
+			Register(638, typeof(RacinesSpell));
+			Register(639, typeof(FleauTerrestreSpell));
 
-            Register(628, typeof(AntidoteSpell));
-            Register(629, typeof(GuerisonSpell));
-            Register(630, typeof(GazEndormant));
-            Register(631, typeof(GuerisonMajeureSpell));
-            Register(632, typeof(RestaurationSpell));
-            Register(633, typeof(NResurrectionSpell));
+			//Guerison
+			//Register(640, typeof(MainCicatrisanteSpell));
+			//Register(641, typeof(RemèdeSpell));
+			//Register(642, typeof(MurDePierreSpell));
+			//Register(643, typeof(RayonCelesteSpell));
+			//Register(644, typeof(LumiereSacreeSpell));
+			//Register(645, typeof(FrayeurSpell));
+			//Register(646, typeof(FerveurDivineSpell));
+			//Register(647, typeof(InquisitionSpell));
+			//Register(648, typeof(MurDeLumiereSpell));
+			//Register(649, typeof(DonDeLaVieSpell));
 
-            Register(634, typeof(AuraEvasiveSpell));
-			Register(635, typeof(ExTeleportationSpell));
-			Register(636, typeof(ProtectSpell));
-            //Register(637, typeof(SecoursSpell));
-            Register(638, typeof(ToucheAbsorbantSpell));
-            Register(639, typeof(ExplosionDeGlaceSpell));
+			//Hydromancie
+			Register(650, typeof(ArmureDeGlaceSpell));
+            Register(651, typeof(RestaurationSpell));
+            Register(652, typeof(SoinPreventifSpell));
+            Register(653, typeof(CageDeGlaceSpell));
+            Register(654, typeof(AuraCryogeniseeSpell));
+            Register(655, typeof(PieuxDeGlaceSpell));
+            Register(656, typeof(CerveauGeleSpell));
+            Register(657, typeof(AuraRefrigeranteSpell));
+            Register(658, typeof(AvatarDuFroidSpell));
+            Register(659, typeof(BlizzardSpell));
 
-            Register(640, typeof(SautAggressifSpell));
-            Register(641, typeof(ContaminationSpell));
-            Register(642, typeof(LancerPrecisSpell));
-            Register(643, typeof(MurDePlanteSpell));
-            Register(644, typeof(PluieAcideSpell));
-            Register(645, typeof(CoupArriereSpell));
+			//Martial
+            Register(660, typeof(SecondSouffleSpell));
+            Register(661, typeof(ProvocationSpell));
+            Register(662, typeof(SautDevastateurSpell));
+            Register(663, typeof(DuelSpell));
+            Register(664, typeof(ChargeFurieuseSpell));
+            Register(665, typeof(EnrageSpell));
+            Register(666, typeof(BouclierMagiqueSpell));
+            Register(667, typeof(CommandementSpell));
+            Register(668, typeof(PresenceInspiranteSpell));
+            Register(669, typeof(AngeGardienSpell));
 
-            Register(646, typeof(RacinesSpell));
-            Register(647, typeof(SoifDeSangSpell));
-            //Register(648, typeof(EpinesSpell));
-            Register(649, typeof(VentFavorableSpell));
-            Register(650, typeof(AuraExsangueSpell));
-            //Register(651, typeof(JetDEpinesSpell));
+			//Musique
+            //Register(670, typeof(DiversionSpell));
+            Register(671, typeof(CalmeToiSpell));
+            Register(672, typeof(DesorienterSpell));
+            Register(673, typeof(DefiSpell));
+            Register(674, typeof(DecrescendoManiaqueSpell));
+			//Register(675, typeof(InspirationElementaireSpell));
+			//Register(676, typeof(AbsorbationSonoreSpell));
+			Register(677, typeof(ParfaiteAspirationSpell));
+			Register(678, typeof(RevelationDiscordanteSpell));
+			Register(679, typeof(HavreDePaixSpell));
 
-            Register(652, typeof(RocheSpell));
-            Register(653, typeof(RicochetSpell));
-            Register(654, typeof(CerveauGeleSpell));
-            Register(655, typeof(MarquerSpell));
-            Register(656, typeof(FrappeEnsanglanteeSpell));
-            Register(657, typeof(CoupDansLeGenouSpell));
+			//Necromancie
+            Register(680, typeof(SoifDeSangSpell));
+            Register(681, typeof(ToucheAbsorbantSpell));
+			Register(682, typeof(InfectionSpell));
+			Register(683, typeof(ArmureOsSpell));
+            Register(684, typeof(FamilierMorbideSpell));
+            Register(685, typeof(ReanimationSpell));
+            Register(686, typeof(ConsommationMortelleSpell));
+            Register(687, typeof(AuraVampiriqueSpell));
+            Register(688, typeof(AppelDuSangSpell));
+            Register(689, typeof(PluieDeSangSpell));
 
-            Register(658, typeof(FleauTerrestreSpell));
-            Register(659, typeof(SoinAnimalierSpell));
-            Register(660, typeof(BlizzardSpell));
-            Register(661, typeof(AuraRefrigeranteSpell));
-            Register(662, typeof(EmpalementSpell));
-            Register(663, typeof(VortexSpell));
+			//Polymorphie
+            Register(690, typeof(FormeCycloniqueSpell));
+            Register(691, typeof(FormeMetalliqueSpell));
+            Register(692, typeof(FormeTerrestreSpell));
+            Register(693, typeof(FormeEmpoisonneeSpell));
+            Register(694, typeof(FormeGivranteSpell));
+            Register(695, typeof(FormeLiquideSpell));
+            Register(696, typeof(FormeCristallineSpell));
+            Register(697, typeof(FormeElectrisanteSpell));
+            Register(698, typeof(FormeEnflammeeSpell));
+            Register(699, typeof(FormeEnsangleeSpell));
 
-            Register(664, typeof(BouclierDeFeuSpell));
-            Register(665, typeof(FormeTerrestreSpell));
-            Register(666, typeof(FormeEnsangleeSpell));
-            Register(667, typeof(FormeEnflammeeSpell));
-            Register(668, typeof(FormeEmpoisonneeSpell));
-            Register(669, typeof(FormeCristallineSpell));
+			//Pyromancie
+            Register(700, typeof(BouclierDeFeuSpell));
+            Register(701, typeof(BouleDeFeuSpell));
+            Register(702, typeof(CeleriteSpell));
+            Register(703, typeof(SupernovaSpell));
+            Register(704, typeof(AuraRechauffanteSpell));
+			Register(705, typeof(FrenesieDouloureuseSpell));
+			Register(706, typeof(FolieArdenteSpell));
+            Register(707, typeof(AuraExaltationSpell));
+            Register(708, typeof(CageDeFeuSpell));
+            Register(709, typeof(PassionArdenteSpell));
 
-            Register(670, typeof(FormeGivranteSpell));
-            Register(671, typeof(FormeCycloniqueSpell));
-            Register(672, typeof(FormeElectrisanteSpell));
-            Register(673, typeof(FormeLiquideSpell));
-            Register(674, typeof(FormeMetalliqueSpell));
-			//Register(675, typeof(EspritVengeurSpell));
+			//Roublardise
+            Register(710, typeof(AdrenalineSpell));
+            Register(711, typeof(SommeilSpell));
+            Register(712, typeof(LancerPrecisSpell));
+			Register(713, typeof(CoupArriereSpell));
+			Register(714, typeof(EvasionSpell));
+			Register(715, typeof(AttiranceSpell));
+			Register(716, typeof(MainBlesseeSpell));
+			Register(717, typeof(CoupureDesTendonsSpell));
+			Register(718, typeof(GazEndormantSpell));
+			Register(719, typeof(CoupMortelSpell));
 
-			//Register(676, typeof(PourritureDEspritSpell));
-			//Register(677, typeof(DrainDeManaSpell));
-			Register(678, typeof(RugissementSpell));
-			Register(679, typeof(AdrenalineSpell));
-            Register(680, typeof(MainBlesseeSpell));
-            Register(681, typeof(ChasseurDePrimeSpell));
-
-			Register(682, typeof(ContratResoluSpell));
-			Register(683, typeof(TeleportationSpell));
-            Register(684, typeof(RappelSpell));
-            Register(685, typeof(EvasionSpell));
-            Register(686, typeof(TrouDeVerSpell));
-            Register(687, typeof(MarquageSpell));
-
-            //Register(688, typeof(PiegeSpell));
-            //Register(689, typeof(DesamorcageSpell));
-            //Register(690, typeof(SerrureSpell));
-            //Register(691, typeof(CrochetageSpell));
-            Register(692, typeof(IncognitoSpell));
-            Register(693, typeof(BrouillardSpell));
-            //Register(694, typeof(HallucinationsSpell));
-            //Register(695, typeof(DisparitionSpell));
-
-            //Register(696, typeof(AlterationSpell));
-            //Register(697, typeof(SubterfugeSpell));
-            //Register(698, typeof(ChimereSpell));
-            //Register(699, typeof(TransmutationSpell));
-            //Register(700, typeof(MetamorphoseSpell));
-            //Register(701, typeof(MutationSpell));
-
-            Register(702, typeof(AuraVampiriqueSpell));
-            Register(703, typeof(RegardNecrotiqueSpell));
-            Register(704, typeof(AttiranceSpell));
-			//Register(705, typeof(LanceOsSpell));
-			Register(706, typeof(ArmureOsSpell));
-            Register(707, typeof(SommeilSpell));
-
-            //Register(708, typeof(FamilierSpell));
-            //Register(709, typeof(DefraicheurSpell));
-            //Register(710, typeof(StrangulaireSpell));
-            Register(711, typeof(ReanimationSpell));
-            Register(712, typeof(AppelDuSangSpell));
-			//Register(713, typeof(InsurectionSpell));
+			//Totemique
+			Register(720, typeof(TotemDuFeuSpell));
+			Register(721, typeof(TotemDeauSpell));
+			Register(722, typeof(TotemDeTerreSpell));
+			Register(723, typeof(TotemDuVentSpell));
+			Register(724, typeof(AbsorbationSpell));
+			Register(725, typeof(LierParEspritSpell));
+			Register(726, typeof(SuperChargerSpell));
+			Register(727, typeof(MurTotemiqueSpell));
+			Register(728, typeof(AppelSpirituelSpell));
+			Register(729, typeof(MarcheAsuivreSpell));
 		}
 
 		public static void Register( int spellID, Type type )

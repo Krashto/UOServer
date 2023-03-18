@@ -13,7 +13,7 @@ namespace Server.Items
 		public override int InitMaxHits => 30;
 		public override int StrReq => 55;
 		public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-		public override CraftResource DefaultResource => CraftResource.RegularLeather;
+		public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
 		public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
 
@@ -54,7 +54,7 @@ namespace Server.Items
 		public override int InitMaxHits => 30;
 		public override int StrReq => 20;
 		public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-		public override CraftResource DefaultResource => CraftResource.RegularBone;
+		public override CraftResource DefaultResource => CraftResource.PlainoisBone;
 		public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
 
 		[Constructable]
@@ -94,7 +94,7 @@ namespace Server.Items
 		public override int InitMaxHits => 30;
 		public override int StrReq => 55;
 		public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-		public override CraftResource DefaultResource => CraftResource.RegularBone;
+		public override CraftResource DefaultResource => CraftResource.PlainoisBone;
 
 		public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
 
@@ -135,7 +135,7 @@ namespace Server.Items
 		public override int InitMaxHits => 30;
 		public override int StrReq => 55;
 		public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-		public override CraftResource DefaultResource => CraftResource.RegularBone;
+		public override CraftResource DefaultResource => CraftResource.PlainoisBone;
 
 		public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
 
@@ -175,7 +175,7 @@ namespace Server.Items
 		public override int InitMaxHits => 30;
 		public override int StrReq => 55;
 		public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-		public override CraftResource DefaultResource => CraftResource.RegularBone;
+		public override CraftResource DefaultResource => CraftResource.PlainoisBone;
 
 		public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
 
@@ -215,7 +215,7 @@ namespace Server.Items
 		public override int InitMaxHits => 30;
 		public override int StrReq => 60;
 		public override ArmorMaterialType MaterialType => ArmorMaterialType.Bone;
-		public override CraftResource DefaultResource => CraftResource.RegularBone;
+		public override CraftResource DefaultResource => CraftResource.PlainoisBone;
 
 		public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.Half;
 

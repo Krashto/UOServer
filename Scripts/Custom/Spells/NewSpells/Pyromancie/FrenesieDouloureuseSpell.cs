@@ -41,15 +41,31 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellHelper.Turn(Caster, m);
 				SpellHelper.Turn(m, Caster);
 
-				MovingSpells.PushMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(m.Direction), (int)Caster.GetDistanceToSqrt(m));
+				MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(m.Direction), (int)Caster.GetDistanceToSqrt(m));
 
 				m.Attack(Caster);
 				Caster.Attack(m);
 
-				BleedAttack.BeginBleed(m, Caster, true);
+				m.PlaySound(22);
+				m.FixedEffect(0x923, 3, 30);
 
-				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
-				m.PlaySound(0x474);
+				var source = Caster;
+
+				SpellHelper.CheckReflect((int)Circle, ref source, ref m);
+
+				double damage = GetNewAosDamage(m, 12, 1, 2, false);
+
+				if (CheckResisted(m))
+				{
+					damage *= 0.75;
+
+					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				}
+
+				source.MovingParticles(m, 0x36D4, 7, 0, false, true, 9502, 4019, 0x160);
+				source.PlaySound(0x15E);
+
+				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 			}
 
 			FinishSequence();

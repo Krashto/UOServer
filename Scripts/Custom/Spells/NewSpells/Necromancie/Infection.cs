@@ -51,7 +51,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		public static void ToogleCurse(Spell spell, Mobile Caster, Mobile m)
 		{
-			if(!FormeLiquideSpell.IsActive(m))
+			if(!InsensibleSpell.IsActive(m))
 			{
 				SpellHelper.Turn(Caster, m);
 

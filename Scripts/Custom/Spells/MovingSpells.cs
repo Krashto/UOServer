@@ -1,10 +1,11 @@
-﻿using Server.Spells;
+﻿using System.Collections;
+using Server.Spells;
 
 namespace Server.Custom.Spells
 {
 	public class MovingSpells
 	{
-		public static void PushMobileTo(Mobile m, Point3D origin, Direction d, int tiles)
+		public static void MoveMobileTo(Mobile m, Point3D origin, Direction d, int tiles)
 		{
 			int count = 0;
 
@@ -58,5 +59,47 @@ namespace Server.Custom.Spells
 
 			return d;
 		}
+
+		//var targets = new ArrayList();
+
+		//var map = m_From.Map;
+
+		//if (map != null)
+		//{
+		//	var range = 1;
+		//	IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
+
+		//	ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range).Send();
+
+		//	foreach (Mobile m in eable)
+		//		if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
+		//			targets.Add(m);
+
+		//	eable.Free();
+		//}
+
+		//if (targets.Count > 0)
+		//{
+		//	for (var i = 0; i < targets.Count; ++i)
+		//	{
+		//		var m = (Mobile)targets[i];
+
+		//		var source = m_From;
+
+		//		Disturb(m);
+
+		//		if (m_Owner.CheckResisted(m))
+		//			m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+		//		else
+		//		{
+		//			SpellHelper.Turn(m, source);
+
+		//			MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 2);
+
+		//			source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+		//			source.PlaySound(0x44B);
+		//		}
+		//	}
+		//}
 	}
 }

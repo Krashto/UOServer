@@ -20,7 +20,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Reagent.Bloodmoss
 			);
 
-		public override int RequiredAptitudeValue { get { return 2; } }
+		public override int RequiredAptitudeValue { get { return 6; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Polymorphie }; } }
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -33,28 +33,26 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				StopTimer(Caster);
-			}
+			else if (Caster.BodyMod != 0)
+				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				if (Caster.BodyMod == 0)
-				{
-					var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30, 1.8);
 
-					Caster.BodyMod = 16;
+				Caster.BodyMod = 16;
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
-				}
-				else
-				{
-					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-				}
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 			}
 
 			FinishSequence();
+		}
+
+		public static int GetValue(Mobile m)
+		{
+			return IsActive(m) ? (int)m.Skills[SkillName.Anatomy].Value / 5 + (int)m.Skills[SkillName.EvalInt].Value / 5 : 0;
 		}
 
 		public static bool IsActive(Mobile m)

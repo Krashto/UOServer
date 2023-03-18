@@ -949,9 +949,6 @@ namespace Server.Mobiles
 				max += refineBonus;
 			}
 
-			if (type == ResistanceType.Physical && RegardNecrotiqueSpell.IsUnderEffects(this))
-				max = RegardNecrotiqueSpell.GetResistMalus(this);
-
 			return max;
 		}
 
@@ -1789,34 +1786,6 @@ namespace Server.Mobiles
 				CheckLightLevels(false);
 			}
 		}
-
-		#region [Stats]Max
-		[CommandProperty(AccessLevel.GameMaster)]
-		public override int HitsMax
-		{
-			get
-			{
-				int strBase;
-				int strOffs = GetStatOffset(StatType.Str);
-
-				strBase = Str; //Str already includes GetStatOffset/str
-				strOffs = AosAttributes.GetValue(this, AosAttribute.BonusHits);
-
-				if (strOffs > 25 && IsPlayer())
-				{
-					strOffs = 25;
-				}
-
-				return (strBase / 2) + 50 + strOffs;
-			}
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public override int StamMax => base.StamMax + AosAttributes.GetValue(this, AosAttribute.BonusStam);
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public override int ManaMax => base.ManaMax + AosAttributes.GetValue(this, AosAttribute.BonusMana) + UraliTranceTonic.GetManaBuff(this);
-		#endregion
 
 		#region Stat Getters/Setters
 		[CommandProperty(AccessLevel.GameMaster)]

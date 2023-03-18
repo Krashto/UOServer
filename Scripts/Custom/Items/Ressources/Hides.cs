@@ -4,7 +4,7 @@ namespace Server.Items
 {
     public abstract class BaseHides : Item/*, ICommodity*/
     {
-        protected virtual CraftResource DefaultResource => CraftResource.RegularLeather;
+        protected virtual CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         private CraftResource m_Resource;
         public BaseHides(CraftResource resource)
@@ -135,7 +135,7 @@ namespace Server.Items
 
         [Constructable]
         public Hides(int amount)
-            : base(CraftResource.RegularLeather, amount)
+            : base(CraftResource.PlainoisLeather, amount)
         {
         }
 
@@ -177,7 +177,7 @@ namespace Server.Items
     [Flipable(0x1079, 0x1078)]
     public class LupusHides : BaseHides, IScissorable
     {
-        protected override CraftResource DefaultResource => CraftResource.LupusLeather;
+        protected override CraftResource DefaultResource => CraftResource.ForestierLeather;
 
         [Constructable]
         public LupusHides()
@@ -187,7 +187,7 @@ namespace Server.Items
 
         [Constructable]
         public LupusHides(int amount)
-            : base(CraftResource.LupusLeather, amount)
+            : base(CraftResource.ForestierLeather, amount)
         {
         }
 
@@ -230,7 +230,7 @@ namespace Server.Items
     [Flipable(0x1079, 0x1078)]
     public class ReptilienHides : BaseHides, IScissorable
     {
-        protected override CraftResource DefaultResource => CraftResource.ReptilienLeather;
+        protected override CraftResource DefaultResource => CraftResource.DesertiqueLeather;
 
         [Constructable]
         public ReptilienHides()
@@ -240,7 +240,7 @@ namespace Server.Items
 
         [Constructable]
         public ReptilienHides(int amount)
-            : base(CraftResource.ReptilienLeather, amount)
+            : base(CraftResource.DesertiqueLeather, amount)
         {
         }
 
@@ -283,7 +283,7 @@ namespace Server.Items
     [Flipable(0x1079, 0x1078)]
     public class GeantHides : BaseHides, IScissorable
     {
-        protected override CraftResource DefaultResource => CraftResource.GeantLeather;
+        protected override CraftResource DefaultResource => CraftResource.TaigoisLeather;
 
         [Constructable]
         public GeantHides()
@@ -293,7 +293,7 @@ namespace Server.Items
 
         [Constructable]
         public GeantHides(int amount)
-            : base(CraftResource.GeantLeather, amount)
+            : base(CraftResource.TaigoisLeather, amount)
         {
         }
 
@@ -336,7 +336,7 @@ namespace Server.Items
 	[Flipable(0x1079, 0x1078)]
 	public class OphidienHides : BaseHides, IScissorable
 	{
-		protected override CraftResource DefaultResource => CraftResource.OphidienLeather;
+		protected override CraftResource DefaultResource => CraftResource.SavanoisLeather;
 
 		[Constructable]
 		public OphidienHides()
@@ -346,7 +346,7 @@ namespace Server.Items
 
 		[Constructable]
 		public OphidienHides(int amount)
-			: base(CraftResource.OphidienLeather, amount)
+			: base(CraftResource.SavanoisLeather, amount)
 		{
 		}
 
@@ -388,7 +388,7 @@ namespace Server.Items
 	[Flipable(0x1079, 0x1078)]
 	public class ArachnideHides : BaseHides, IScissorable
 	{
-		protected override CraftResource DefaultResource => CraftResource.ArachnideLeather;
+		protected override CraftResource DefaultResource => CraftResource.ToundroisLeather;
 
 		[Constructable]
 		public ArachnideHides()
@@ -398,7 +398,7 @@ namespace Server.Items
 
 		[Constructable]
 		public ArachnideHides(int amount)
-			: base(CraftResource.ArachnideLeather, amount)
+			: base(CraftResource.ToundroisLeather, amount)
 		{
 		}
 
@@ -441,7 +441,7 @@ namespace Server.Items
 	[Flipable(0x1079, 0x1078)]
 	public class DragoniqueHides : BaseHides, IScissorable
 	{
-		protected override CraftResource DefaultResource => CraftResource.DragoniqueLeather;
+		protected override CraftResource DefaultResource => CraftResource.TropicauxLeather;
 
 		[Constructable]
 		public DragoniqueHides()
@@ -451,7 +451,7 @@ namespace Server.Items
 
 		[Constructable]
 		public DragoniqueHides(int amount)
-			: base(CraftResource.DragoniqueLeather, amount)
+			: base(CraftResource.TropicauxLeather, amount)
 		{
 		}
 
@@ -494,7 +494,7 @@ namespace Server.Items
 	[Flipable(0x1079, 0x1078)]
 	public class DemoniaqueHides : BaseHides, IScissorable
 	{
-		protected override CraftResource DefaultResource => CraftResource.DemoniaqueLeather;
+		protected override CraftResource DefaultResource => CraftResource.MontagnardLeather;
 
 		[Constructable]
 		public DemoniaqueHides()
@@ -504,7 +504,7 @@ namespace Server.Items
 
 		[Constructable]
 		public DemoniaqueHides(int amount)
-			: base(CraftResource.DemoniaqueLeather, amount)
+			: base(CraftResource.MontagnardLeather, amount)
 		{
 		}
 

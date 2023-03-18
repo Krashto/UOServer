@@ -2,8 +2,6 @@ using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System;
-using System.Web.UI.WebControls;
-using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -22,7 +20,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override int RequiredAptitudeValue { get { return 9; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Healing; } }
+		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public AvatarDuFroidSpell(Mobile caster, Item scroll)

@@ -23,8 +23,6 @@ using Server.Spells.OldSpells;
 using static Server.HueData;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Pyromancie;
-
-
 #endregion
 
 namespace Server.Mobiles

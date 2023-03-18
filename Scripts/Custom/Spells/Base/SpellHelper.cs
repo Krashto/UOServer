@@ -13,6 +13,7 @@ using Server.Misc;
 using System.Collections.Generic;
 using System.Linq;
 using Server.Custom.Aptitudes;
+using Server.Custom.Spells.NewSpells.Martial;
 
 namespace Server
 {
@@ -931,22 +932,17 @@ namespace Server.Spells
 			CheckReflect( circle, ref caster, ref target );
 		}
 
-        public static void CheckReflect(int circle, ref Mobile caster, ref Mobile target)
+        public static void CheckReflect( int circle, ref Mobile caster, ref Mobile target)
         {
-            //if (ReflectionSpell.Registry.Contains(target))
-            //{
-            //    int chance = (int)ReflectionSpell.Registry[target] - (int)(circle * 1.5);
+			if (BouclierMagiqueSpell.IsActive(target))
+			{
+				target.FixedEffect(0x37B9, 10, 5);
 
-            //    if (Utility.Random(0, 100) < chance)
-            //    {
-            //        target.FixedEffect(0x37B9, 10, 5);
-
-            //        Mobile temp = caster;
-            //        caster = target;
-            //        target = temp;
-            //    }
-            //}
-        }
+				Mobile temp = caster;
+				caster = target;
+				target = temp;
+			}
+		}
 
 		public static void Damage( Spell spell, Mobile target, double damage )
 		{

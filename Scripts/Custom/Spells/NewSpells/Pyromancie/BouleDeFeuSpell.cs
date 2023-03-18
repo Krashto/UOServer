@@ -62,9 +62,6 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				source.PlaySound(0x15E);
 
 				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
-
-				if (Utility.RandomDouble() < 0.25)
-					BleedAttack.BeginBleed(m, Caster, true);
 			}
 
 			FinishSequence();

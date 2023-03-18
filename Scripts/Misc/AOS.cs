@@ -1,3 +1,4 @@
+using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Engines.CityLoyalty;
 using Server.Engines.SphynxFortune;
@@ -107,7 +108,10 @@ namespace Server
                 });
             }
 
-            Fix(ref phys);
+			if (from is BaseCreature)
+				damage = (int)(damage * 0.5);
+
+			Fix(ref phys);
             Fix(ref fire);
             Fix(ref cold);
             Fix(ref pois);
@@ -149,14 +153,14 @@ namespace Server
 
             if (!ignoreArmor)
             {
-                int physDamage = damage * phys * (100 - damageable.PhysicalResistance);
-                int fireDamage = damage * fire * (100 - damageable.FireResistance);
-                int coldDamage = damage * cold * (100 - damageable.ColdResistance);
-                int poisonDamage = damage * pois * (100 - damageable.PoisonResistance);
-                int energyDamage = damage * nrgy * (100 - damageable.EnergyResistance);
+                int physDamage = damage * phys * (200 - damageable.PhysicalResistance);
+                int fireDamage = damage * fire * (200 - damageable.FireResistance);
+                int coldDamage = damage * cold * (200 - damageable.ColdResistance);
+                int poisonDamage = damage * pois * (200 - damageable.PoisonResistance);
+                int energyDamage = damage * nrgy * (200 - damageable.EnergyResistance);
 
                 totalDamage = physDamage + fireDamage + coldDamage + poisonDamage + energyDamage;
-                totalDamage /= 10000;
+                totalDamage /= 40000;
 
                 totalDamage += damage * direct / 100;
 
@@ -350,7 +354,20 @@ namespace Server
                 return 0;
             }
 
-            totalDamage = m.Damage(totalDamage, from, true, false);
+			if (LienDeVieSpell.IsActive(m))
+			{
+				var protector = LienDeVieSpell.GetProtector(m);
+				if (protector != null && protector.Alive)
+				{
+					totalDamage /= 2;
+					m.Damage(totalDamage, from, true, false);
+				}
+			}
+
+			if (PiedsAuSolSpell.IsActive(m))
+				totalDamage /= 4;
+
+			totalDamage = m.Damage(totalDamage, from, true, false);
 			m.Frozen = false;
 			m.Paralyzed = false;
 			m.CantWalk = false;

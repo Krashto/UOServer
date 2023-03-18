@@ -764,13 +764,13 @@ namespace Server.Items
                 case CraftResource.Verite: return Utility.RandomMinMax(3, 4);
                 case CraftResource.Valorite: return 5;
 
-                case CraftResource.LupusLeather:
-                case CraftResource.ReptilienLeather: return Utility.RandomMinMax(1, 2);
-                case CraftResource.GeantLeather: return Utility.RandomMinMax(2, 3);
-                case CraftResource.OphidienLeather:
-                case CraftResource.ArachnideLeather: return 3;
-                case CraftResource.DragoniqueLeather:
-                case CraftResource.DemoniaqueLeather: return Utility.RandomMinMax(3, 4);
+                case CraftResource.ForestierLeather:
+                case CraftResource.DesertiqueLeather: return Utility.RandomMinMax(1, 2);
+                case CraftResource.TaigoisLeather: return Utility.RandomMinMax(2, 3);
+                case CraftResource.SavanoisLeather:
+                case CraftResource.ToundroisLeather: return 3;
+                case CraftResource.TropicauxLeather:
+                case CraftResource.MontagnardLeather: return Utility.RandomMinMax(3, 4);
                 case CraftResource.AncienLeather: return 5;
 
                 case CraftResource.OakWood: return Utility.RandomMinMax(1, 2);

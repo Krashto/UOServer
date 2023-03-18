@@ -5,6 +5,7 @@ using Server.Network;
 using Server.Misc;
 using Server.Mobiles;
 using Server.Custom.Aptitudes;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Spells.OldSpells
 {
@@ -169,16 +170,21 @@ namespace Server.Spells.OldSpells
 			{
 				if ( Visible && m_Caster != null && SpellHelper.ValidIndirectTarget( m_Caster, m ) && m_Caster.CanBeHarmful( m, false ) )
 				{
-					m_Caster.DoHarmful( m );
+					if (!IndomptableSpell.IsActive(m))
+					{
+						m_Caster.DoHarmful(m);
 
-                    double duration = 5.0 + (m_Caster.Skills[SkillName.Magery].Value * 0.2);
+						double duration = 5.0 + (m_Caster.Skills[SkillName.Magery].Value * 0.2);
 
-                    duration = SpellHelper.AdjustValue(m_Caster, duration, Aptitude.Aeromancie);
+						duration = SpellHelper.AdjustValue(m_Caster, duration, Aptitude.Aeromancie);
 
-					m.Paralyze( TimeSpan.FromSeconds( duration ) );
+						m.Paralyze(TimeSpan.FromSeconds(duration));
 
-					m.PlaySound( 0x204 );
-					m.FixedEffect( 0x376A, 10, 16 );
+						m.PlaySound(0x204);
+						m.FixedEffect(0x376A, 10, 16);
+					}
+					else
+						Caster.SendMessage("La cible est immunisée à la paralysie.");
 				}
 
 				return true;

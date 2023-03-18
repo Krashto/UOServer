@@ -1,4 +1,5 @@
 using System;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Targeting;
 
 namespace Server.Spells.OldSpells
@@ -36,22 +37,27 @@ namespace Server.Spells.OldSpells
 			}
             else if (CheckHSequence(m))
             {
-                SpellHelper.Turn(Caster, m);
+				if (!IndomptableSpell.IsActive(m))
+				{
+					SpellHelper.Turn(Caster, m);
 
-                SpellHelper.CheckReflect((int)this.Circle, Caster, ref m);
+					SpellHelper.CheckReflect((int)this.Circle, Caster, ref m);
 
-                double duration = 5.0 + (Caster.Skills[SkillName.Magery].Value * 0.2);
+					double duration = 5.0 + (Caster.Skills[SkillName.Magery].Value * 0.2);
 
-                //duration = SpellHelper.AdjustValue(Caster, duration, NAptitude.MagieProlongee);
+					//duration = SpellHelper.AdjustValue(Caster, duration, NAptitude.MagieProlongee);
 
-                if (CheckResisted(m))
-                    duration *= 0.75;
+					if (CheckResisted(m))
+						duration *= 0.75;
 
-                m.Paralyze(TimeSpan.FromSeconds(duration));
+					m.Paralyze(TimeSpan.FromSeconds(duration));
 
-                m.PlaySound(0x204);
-                m.FixedEffect(0x376A, 6, 1);
-            }
+					m.PlaySound(0x204);
+					m.FixedEffect(0x376A, 6, 1);
+				}
+				else
+					Caster.SendMessage("La cible est immunisée à la paralysie.");
+			}
 
 			FinishSequence();
 		}

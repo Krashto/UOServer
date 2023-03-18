@@ -13,49 +13,6 @@ namespace Server.Items
 {
 	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality
     {
-		//private int m_Capacite;
-
-		//[CommandProperty(AccessLevel.GameMaster)]
-		//public int Capacite
-		//{
-		//	get { return m_Capacite; }
-		//	set { m_Capacite = value; OnCapaciteChange(); InvalidateProperties(); }
-		//}
-
-		//public void OnCapaciteChange()
-		//{
-		//}
-
-		//public virtual bool CheckCapacite(Mobile from)
-		//{
-		//	if (from is CustomPlayerMobile)
-		//	{
-		//		CustomPlayerMobile pm = (CustomPlayerMobile)from;
-
-		//		Capacite capacite = Custom.Classes.Capacite.Armure;
-
-		//		if (pm.GetCapaciteValue(capacite) < Capacite)
-		//		{
-		//			pm.SendMessage("Vous n'avez pas assez dans la capacité pour porter cet armure.");
-		//			return false;
-		//		}
-
-		//		if (from.Str < 50 && Capacite > 1)
-		//		{
-		//			pm.SendMessage("Vous ne pouvez pas porter cet item avec une force plus petite que 50.");
-		//			return false;
-		//		}
-
-		//		if (from.Str <= 0)
-		//		{
-		//			pm.SendMessage("Vous ne pouvez pas porter cet item avec aucune force.");
-		//			return false;
-		//		}
-		//	}
-
-		//	return true;
-		//}
-
 		private string _EngravedText;
 
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -335,25 +292,25 @@ namespace Server.Items
 					case CraftResource.Valorite:
                         ar += 16;
                         break;
-					case CraftResource.LupusLeather:
+					case CraftResource.ForestierLeather:
 						ar += 2;
 						break;
-					case CraftResource.ReptilienLeather:
+					case CraftResource.DesertiqueLeather:
 						ar += 4;
 						break;
-					case CraftResource.GeantLeather:
+					case CraftResource.TaigoisLeather:
 						ar += 6;
 						break;
-					case CraftResource.OphidienLeather:
+					case CraftResource.SavanoisLeather:
 						ar += 8;
 						break;
-					case CraftResource.ArachnideLeather:
+					case CraftResource.ToundroisLeather:
 						ar += 10;
 						break;
-					case CraftResource.DragoniqueLeather:
+					case CraftResource.TropicauxLeather:
 						ar += 12;
 						break;
-					case CraftResource.DemoniaqueLeather:
+					case CraftResource.MontagnardLeather:
 						ar += 14;
 						break;
 					case CraftResource.AncienLeather:
@@ -1085,11 +1042,42 @@ namespace Server.Items
         public virtual int BasePoisonResistance => 0;
         public virtual int BaseEnergyResistance => 0;
 
-        public override int PhysicalResistance => BasePhysicalResistance + m_PhysicalBonus;
-        public override int FireResistance => BaseFireResistance + m_FireBonus;
-        public override int ColdResistance => BaseColdResistance + m_ColdBonus;
-        public override int PoisonResistance => BasePoisonResistance + m_PoisonBonus;
-        public override int EnergyResistance => BaseEnergyResistance + m_EnergyBonus;
+        public override int PhysicalResistance => GetBasePhysicalResistance() /*BasePhysicalResistance*/ + m_PhysicalBonus;
+        public override int FireResistance => BaseFireResistance + m_FireBonus + GetBonusByQuality();
+        public override int ColdResistance => BaseColdResistance + m_ColdBonus + GetBonusByQuality();
+        public override int PoisonResistance => BasePoisonResistance + m_PoisonBonus + GetBonusByQuality();
+        public override int EnergyResistance => BaseEnergyResistance + m_EnergyBonus + GetBonusByQuality();
+
+		public int GetBasePhysicalResistance()
+		{
+			var resist = GetBonusByQuality();
+
+			switch (MaterialType)
+			{
+				case AMT.Leather:	resist += 5; break;
+				case AMT.Studded:	resist += 6; break;
+				case AMT.Bone:		resist += 7; break;
+				case AMT.Ringmail:	resist += 8; break;
+				case AMT.Chainmail: resist += 9; break;
+				case AMT.Plate:		resist += 11; break;
+			}
+
+
+
+			return resist;
+		}
+
+		public int GetBonusByQuality()
+		{
+			switch (Quality)
+			{
+				case ItemQuality.Low: return -1;
+				case ItemQuality.Normal: return 0;
+				case ItemQuality.Exceptional: return 1;
+			}
+
+			return 0;
+		}
 
         public virtual int InitMinHits => 0;
         public virtual int InitMaxHits => 0;
@@ -2088,7 +2076,22 @@ namespace Server.Items
             return false;
         }
 
-        public override bool OnEquip(Mobile from)
+		public override void OnDoubleClick(Mobile from)
+		{
+			var oldItem = from.FindItemOnLayer(this.Layer);
+
+			if (oldItem == this)
+				return;
+
+			if (oldItem != null)
+				from.PlaceInBackpack(oldItem);
+
+			from.EquipItem(this);
+
+			base.OnDoubleClick(from);
+		}
+
+		public override bool OnEquip(Mobile from)
         {
             from.CheckStatTimers();
 
@@ -2689,28 +2692,28 @@ namespace Server.Items
 				case CraftResource.Valorite:
 					Mod += 3;
 					break;
-				case CraftResource.RegularLeather:
+				case CraftResource.PlainoisLeather:
 					Mod += 1;
 					break;
-				case CraftResource.LupusLeather:
+				case CraftResource.ForestierLeather:
 					Mod += 1;
 					break;
-				case CraftResource.ReptilienLeather:
+				case CraftResource.DesertiqueLeather:
 					Mod += 1;
 					break;
-				case CraftResource.GeantLeather:
+				case CraftResource.TaigoisLeather:
 					Mod += 2;
 					break;
-				case CraftResource.OphidienLeather:
+				case CraftResource.SavanoisLeather:
 					Mod += 2;
 					break;
-				case CraftResource.ArachnideLeather:
+				case CraftResource.ToundroisLeather:
 					Mod += 2;
 					break;
-				case CraftResource.DragoniqueLeather:
+				case CraftResource.TropicauxLeather:
 					Mod += 2;
 					break;
-				case CraftResource.DemoniaqueLeather:
+				case CraftResource.MontagnardLeather:
 					Mod += 2;
 					break;
 				case CraftResource.AncienLeather:
@@ -2742,7 +2745,7 @@ namespace Server.Items
 					break;
 				case CraftResource.Frostwood:
 					break;
-				case CraftResource.RegularBone:
+				case CraftResource.PlainoisBone:
 					Mod += 1;
 					break;
 				case CraftResource.LupusBone:

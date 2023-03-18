@@ -24,7 +24,7 @@ namespace Server.Items
 
 		public static bool IsImmune(Mobile m)
         {
-            return m_Table.Contains(m) || FormeElectrisanteSpell.IsActive(m);
+            return m_Table.Contains(m) || IndomptableSpell.IsActive(m);
         }
 
         public static void BeginImmunity(Mobile m, TimeSpan duration)

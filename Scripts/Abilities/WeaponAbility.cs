@@ -1,3 +1,4 @@
+using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Weapons;
 using Server.Mobiles;
 using Server.Network;
@@ -100,6 +101,9 @@ namespace Server.Items
             int lmc = Math.Min(AosAttributes.GetValue(from, AosAttribute.LowerManaCost), 40);
 
             lmc += BaseArmor.GetInherentLowerManaCost(from);
+
+			if (DecrescendoManiaqueSpell.IsActive(from))
+				lmc += 20;
 
             scalar -= (double)lmc / 100;
             mana = (int)(mana * scalar);

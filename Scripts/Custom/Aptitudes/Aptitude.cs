@@ -19,5 +19,7 @@
 		Geomancie,
 		Aeromancie,
 		Necromancie,
+		Defenseur,
+		Guerison,
 	}
 }

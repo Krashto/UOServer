@@ -784,7 +784,7 @@ namespace Server.Engines.BulkOrders
         private static Item CreateRunicKit(int type)
         {
             if (type >= 1 && type <= 3)
-                return new RunicSewingKit(CraftResource.RegularLeather + type, 60 - (type * 15));
+                return new RunicSewingKit(CraftResource.PlainoisLeather + type, 60 - (type * 15));
 
             throw new InvalidOperationException();
         }

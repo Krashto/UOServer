@@ -21,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Reagent.BlackPearl
 			);
 
-		public override int RequiredAptitudeValue { get { return 1; } }
+		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Polymorphie }; } }
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -34,41 +34,32 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				StopTimer(Caster);
-			}
+			else if (Caster.BodyMod != 0)
+				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				if (Caster.BodyMod == 0)
+				var duration = GetDurationForSpell(30, 1.8);
+
+				Caster.BodyMod = 14;
+
+				var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Polymorphie);
+
+				var mods = new ResistanceMod[]
 				{
-					var duration = GetDurationForSpell(30, 1.8);
+					new ResistanceMod( ResistanceType.Physical, (int)value),
+					new ResistanceMod( ResistanceType.Fire, -(int)(value / 2) ),
+					new ResistanceMod( ResistanceType.Energy, -(int)(value / 2) )
+				};
 
-					Caster.BodyMod = 14;
+				m_Table[Caster] = mods;
 
-					var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Polymorphie);
+				foreach (var mod in mods)
+					Caster.AddResistanceMod(mod);
 
-					var mods = new ResistanceMod[5]
-							{
-						new ResistanceMod( ResistanceType.Physical, (int)value),
-						new ResistanceMod( ResistanceType.Fire, (int)value ),
-						new ResistanceMod( ResistanceType.Cold, (int)value ),
-						new ResistanceMod( ResistanceType.Poison, (int)value ),
-						new ResistanceMod( ResistanceType.Energy, (int)value ),
-							};
-
-					m_Table[Caster] = mods;
-
-					foreach (var mod in mods)
-						Caster.AddResistanceMod(mod);
-
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
-				}
-				else
-				{
-					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-				}
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 			}
 
 			FinishSequence();

@@ -117,6 +117,20 @@ namespace Server.Custom.Aptitudes
 			set { this[Aptitude.Necromancie] = value; }
 		}
 
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Defenseur
+		{
+			get { return this[Aptitude.Defenseur]; }
+			set { this[Aptitude.Defenseur] = value; }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Guerison
+		{
+			get { return this[Aptitude.Guerison]; }
+			set { this[Aptitude.Guerison] = value; }
+		}
+
 		#region AptitudesEntry
 		public class AptitudesEntry
         {

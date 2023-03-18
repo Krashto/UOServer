@@ -3,8 +3,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
-using Server.Items;
-using Server.Mobiles;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -24,7 +23,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override int RequiredAptitudeValue { get { return 4; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Healing; } }
+		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public CageDeGlaceSpell(Mobile caster, Item scroll)
@@ -45,25 +44,30 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+				if (!IndomptableSpell.IsActive(m))
+				{
+					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				var duration = GetDurationForSpell(2, 0.05);
+					var duration = GetDurationForSpell(2, 0.05);
 
-				m.Paralyze(duration);
+					m.Paralyze(duration);
 
-				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-				m_Timers[Caster] = t;
-				t.Start();
+					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+					m_Timers[Caster] = t;
+					t.Start();
 
-				var loc = new Point3D(m.X + 1, m.Y, m.Z);
-				new InternalItem(0x9CB8, loc, Caster, m.Map, duration);
-				loc = new Point3D(m.X + 1, m.Y + 1, m.Z);
-				new InternalItem(0x9CB5, loc, Caster, m.Map, duration);
-				loc = new Point3D(m.X, m.Y + 1, m.Z);
-				new InternalItem(0x9CB7, loc, Caster, m.Map, duration);
+					var loc = new Point3D(m.X + 1, m.Y, m.Z);
+					new InternalItem(0x9CB8, loc, Caster, m.Map, duration);
+					loc = new Point3D(m.X + 1, m.Y + 1, m.Z);
+					new InternalItem(0x9CB5, loc, Caster, m.Map, duration);
+					loc = new Point3D(m.X, m.Y + 1, m.Z);
+					new InternalItem(0x9CB7, loc, Caster, m.Map, duration);
 
-				m.PlaySound(0x204);
-				m.FixedEffect(0x376A, 6, 1);
+					m.PlaySound(0x204);
+					m.FixedEffect(0x376A, 6, 1);
+				}
+				else
+					Caster.SendMessage("La cible est immunisée à la paralysie.");
 			}
 
 			FinishSequence();

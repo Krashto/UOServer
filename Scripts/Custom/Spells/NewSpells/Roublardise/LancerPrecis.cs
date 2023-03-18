@@ -2,6 +2,7 @@ using Server.Items;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -48,12 +49,17 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				m.PlaySound(22);
-				m.FixedEffect(0x923, 3, 30);
-
-				BleedAttack.BeginBleed(m, Caster, true);
-
 				SpellHelper.Damage(this, m, 5, 0, 100, 0, 0, 0);
+
+				if (!InsensibleSpell.IsActive(m))
+				{
+					m.PlaySound(22);
+					m.FixedEffect(0x923, 3, 30);
+
+					BleedAttack.BeginBleed(m, Caster, true);
+				}
+				else
+					Caster.SendMessage("Votre cible est immunisée aux saignements.");
 			}
 
 			FinishSequence();

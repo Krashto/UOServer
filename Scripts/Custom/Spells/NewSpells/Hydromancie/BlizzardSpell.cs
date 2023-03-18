@@ -26,7 +26,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Healing; } }
+		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public BlizzardSpell(Mobile caster, Item scroll)
@@ -67,7 +67,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 						m_Timers[m] = t;
 						t.Start();
 
-						if (!FormeElectrisanteSpell.IsActive(m))
+						if (!IndomptableSpell.IsActive(m))
 						{
 							m.SendSpeedControl(SpeedControlType.WalkSpeed);
 

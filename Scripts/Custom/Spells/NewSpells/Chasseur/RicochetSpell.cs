@@ -4,10 +4,10 @@ using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
-	public class RicochetSpell : Spell
+	public class CompagnonAnimalSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Ricochet", "Por Ort Grav",
+				"Compagnon animal", "Compagnon animal",
 				SpellCircle.Fourth,
 				239,
 				9021,
@@ -21,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public RicochetSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public CompagnonAnimalSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 

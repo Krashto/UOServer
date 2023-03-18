@@ -954,11 +954,11 @@ namespace Server
 			UpdateResistances();
 		}
 
-		private static int m_MinPlayerResistance = -70;
+		private static int m_MinPlayerResistance = 0;
 
 		public static int MinPlayerResistance { get => m_MinPlayerResistance; set => m_MinPlayerResistance = value; }
 
-		private static int m_MaxPlayerResistance = 70;
+		private static int m_MaxPlayerResistance = 140;
 
 		public static int MaxPlayerResistance { get => m_MaxPlayerResistance; set => m_MaxPlayerResistance = value; }
 
@@ -1047,11 +1047,9 @@ namespace Server
 		public virtual int GetMaxResistance(ResistanceType type)
 		{
 			if (m_Player)
-			{
 				return m_MaxPlayerResistance;
-			}
 
-			return 100;
+			return 200;
 		}
 
 		public int GetAOSStatus(int index)

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Items
 {
@@ -29,6 +30,9 @@ namespace Server.Items
 
         public static void BeginWound(Mobile m, TimeSpan duration)
         {
+			if (InsensibleSpell.IsActive(m))
+				return;
+
             Timer t;
 
             if (m_Table.ContainsKey(m))

@@ -3,6 +3,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -19,7 +20,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Reagent.SulfurousAsh
 			);
 
-		public override int RequiredAptitudeValue { get { return 10; } }
+		public override int RequiredAptitudeValue { get { return 4; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
 		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -70,14 +71,19 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					{
 						var m = (Mobile)targets[i];
 
-						Disturb(m);
+						if (!InsensibleSpell.IsActive(m))
+						{
+							Disturb(m);
 
-						if (!CheckResisted(m))
-							BleedAttack.BeginBleed(m, Caster, true); 
+							if (!CheckResisted(m))
+								BleedAttack.BeginBleed(m, Caster, true);
+							else
+								m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+
+							Caster.MovingParticles(m, 0x36D4, 7, 0, false, true, 9501, 1, 0, 0x100);
+						}
 						else
-							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
-
-						Caster.MovingParticles(m, 0x36D4, 7, 0, false, true, 9501, 1, 0, 0x100);
+							Caster.SendMessage($"{m.Name} est immunisé{(m.Female ? "e" : "")} aux saignements.");
 					}
 				}
 			}

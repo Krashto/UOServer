@@ -48,13 +48,13 @@ namespace Server.Items
 
 			switch (m_Resource)
 			{
-				case CraftResource.LupusLeather: leatherType = "de lupus"; break;
-				case CraftResource.ReptilienLeather: leatherType = "reptilien"; break;
-				case CraftResource.GeantLeather: leatherType = "de geant"; break;
-				case CraftResource.OphidienLeather: leatherType = "d'ophidien"; break;
-				case CraftResource.ArachnideLeather: leatherType = "d'arachnide"; break;
-				case CraftResource.DragoniqueLeather: leatherType = "de dragonique"; break;
-				case CraftResource.DemoniaqueLeather: leatherType = "de demoniaque"; break;
+				case CraftResource.ForestierLeather: leatherType = "de lupus"; break;
+				case CraftResource.DesertiqueLeather: leatherType = "reptilien"; break;
+				case CraftResource.TaigoisLeather: leatherType = "de geant"; break;
+				case CraftResource.SavanoisLeather: leatherType = "d'ophidien"; break;
+				case CraftResource.ToundroisLeather: leatherType = "d'arachnide"; break;
+				case CraftResource.TropicauxLeather: leatherType = "de dragonique"; break;
+				case CraftResource.MontagnardLeather: leatherType = "de demoniaque"; break;
 				case CraftResource.AncienLeather: leatherType = "ancien"; break;
 			}
 

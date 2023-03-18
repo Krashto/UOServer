@@ -2,6 +2,7 @@ using System;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Polymorphie
 {
@@ -10,7 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Forme metallique", "Kal Vas Xen Corp",
+				"Forme metallique", "Forme metallique",
 				SpellCircle.Eighth,
 				269,
 				9050,
@@ -20,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Reagent.SpidersSilk
 			);
 
-		public override int RequiredAptitudeValue { get { return 4; } }
+		public override int RequiredAptitudeValue { get { return 2; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Polymorphie }; } }
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -33,28 +34,26 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				StopTimer(Caster);
-			}
+			else if (Caster.BodyMod != 0)
+				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				if (Caster.BodyMod == 0)
-				{
-					var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30, 1.8);
 
-					Caster.BodyMod = 111;
+				Caster.BodyMod = 111;
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
-				}
-				else
-				{
-					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-				}
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 			}
 
 			FinishSequence();
+		}
+
+		public static int GetValue(Mobile m)
+		{
+			return IsActive(m) ? (int)m.Skills[SkillName.Anatomy].Value / 30 + (int)m.Skills[SkillName.EvalInt].Value / 30 : 0;
 		}
 
 		public static bool IsActive(Mobile m)

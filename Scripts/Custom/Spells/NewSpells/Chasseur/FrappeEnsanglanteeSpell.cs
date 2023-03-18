@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
 using VitaNex.FX;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -44,18 +45,22 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			{
 				SpellHelper.Turn(Caster, m);
 
-				Disturb(m);
+				if (!InsensibleSpell.IsActive(m))
+				{
+					Disturb(m);
 
-				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 1).Send();
+					ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 1).Send();
 
-				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				BleedAttack.BeginBleed(m, Caster, true);
+					MortalStrike.BeginWound(m, TimeSpan.FromSeconds(6.0));
+					BleedAttack.BeginBleed(m, Caster, true);
 
-				MortalStrike.BeginWound(m, TimeSpan.FromSeconds(6.0));
-
-				m.FixedParticles(0x3709, 10, 30, 5052, EffectLayer.LeftFoot);
-				m.PlaySound(0x208);
+					m.FixedParticles(0x3709, 10, 30, 5052, EffectLayer.LeftFoot);
+					m.PlaySound(0x208);
+				}
+				else
+					Caster.SendMessage("La cible est immunisée aux saignements.");
 			}
 
 			FinishSequence();

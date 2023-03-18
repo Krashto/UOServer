@@ -1,3 +1,5 @@
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Custom.Spells.NewSpells.Roublardise;
 using Server.Items;
@@ -56,16 +58,6 @@ namespace Server.Misc
             m.CheckSkill(skill, n);
         }
 
-        public static bool CheckTransform(Mobile m, Type type)
-        {
-			return false;// TransformationSpellHelper.UnderTransformation(m, type);
-        }
-
-        public static bool CheckAnimal(Mobile m, Type type)
-        {
-			return false; // AnimalForm.UnderTransformation(m, type);
-        }
-
         private static TimeSpan Mobile_HitsRegenRate(Mobile from)
         {
             return TimeSpan.FromSeconds(1.0 / (0.1 * (1 + HitPointRegen(from))));
@@ -112,8 +104,8 @@ namespace Server.Misc
 
 			double formeGlaceBonus = 0;
 
-			if (FormeLiquideSpell.IsActive(from))
-				formeGlaceBonus += 0.5;
+			//if (LicheFormSpell.IsActive(from))
+			//	formeGlaceBonus += 0.5;
 
 			CheckBonusSkill(from, from.Mana, from.ManaMax, SkillName.Focus);
 
@@ -132,9 +124,6 @@ namespace Server.Misc
 
             double itemBase = ((((med / 2) + (focus / 4)) / 90) * .65) + 2.35;
             double intensityBonus = Math.Sqrt(ManaRegen(from));
-
-            if (intensityBonus > 5.5)
-                intensityBonus = 5.5;
 
             double itemBonus = ((itemBase * intensityBonus) - (itemBase - 1)) / 10;
 
@@ -155,18 +144,12 @@ namespace Server.Misc
             if (from is BaseCreature)
                 points += ((BaseCreature)from).DefaultHitsRegen;
 
+			points += FormeGivranteSpell.GetValue(from);
 
-			if (points < 0)
-                points = 0;
+			points += SecondSouffleSpell.GetValue(from);
 
-            if (from is PlayerMobile)	//does racial bonus go before/after?
-                points = Math.Min(points, 18);
-
-			if (FormeEnsangleeSpell.IsActive(from))
+			if (CommandementSpell.IsActive(from))
 				points += 10;
-
-			if (CheckAnimal(from, typeof(Dog)) || CheckAnimal(from, typeof(Cat)))
-                points += from.Skills[SkillName.Magery].Fixed / 30;
 
 			CheckBonusSkill(from, from.Hits, from.HitsMax, SkillName.Cooking);
 
@@ -177,7 +160,10 @@ namespace Server.Misc
             foreach (RegenBonusHandler handler in HitsBonusHandlers)
                 points += handler(from);
 
-            return points;
+			if (points < 0)
+				points = 0;
+
+			return points;
         }
 
         public static double StamRegen(Mobile from)
@@ -187,14 +173,8 @@ namespace Server.Misc
             if (from is BaseCreature)
                 points += ((BaseCreature)from).DefaultStamRegen;
 
-            if (CheckAnimal(from, typeof(Kirin)))
-                points += 20;
-
-            if (from is PlayerMobile)
-                points = Math.Min(points, 24);
-
-			if (AdrenalineSpell.IsActive(from))
-				points += 10;
+			if (FormeEnsangleeSpell.IsActive(from))
+                points += 15;
 
 			if (points < -1)
                 points = -1;
@@ -212,7 +192,18 @@ namespace Server.Misc
             if (from is BaseCreature)
                 points += ((BaseCreature)from).DefaultManaRegen;
 
-            foreach (RegenBonusHandler handler in ManaBonusHandlers)
+			points += FormeMetalliqueSpell.GetValue(from);
+
+			if (AdrenalineSpell.IsActive(from))
+				points += 10;
+
+			if (FormeCristallineSpell.IsActive(from))
+				points += 15;
+
+			if (FormeEnsangleeSpell.IsActive(from))
+				points += 3;
+
+			foreach (RegenBonusHandler handler in ManaBonusHandlers)
                 points += handler(from);
 
             return points;

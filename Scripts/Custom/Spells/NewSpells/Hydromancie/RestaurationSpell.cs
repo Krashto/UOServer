@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override int RequiredAptitudeValue { get { return 2; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Healing; } }
+		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public RestaurationSpell(Mobile caster, Item scroll)

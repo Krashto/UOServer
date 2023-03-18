@@ -21,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Reagent.NoxCrystal
 			);
 
-		public override int RequiredAptitudeValue { get { return 4; } }
+		public override int RequiredAptitudeValue { get { return 6; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
 		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

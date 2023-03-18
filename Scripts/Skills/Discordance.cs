@@ -291,7 +291,7 @@ namespace Server.SkillHandlers
             }
         }
 
-        private class DiscordanceInfo
+        public class DiscordanceInfo
         {
             public readonly Mobile m_From;
             public readonly Mobile m_Target;

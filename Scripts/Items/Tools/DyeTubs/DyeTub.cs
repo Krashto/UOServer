@@ -343,7 +343,7 @@ namespace Server.Items
 
 						if ((armor != null && (armor.MaterialType == ArmorMaterialType.Leather ||
 							armor.MaterialType == ArmorMaterialType.Studded)) ||
-							(clothing != null && (clothing.DefaultResource == CraftResource.RegularLeather)) ||
+							(clothing != null && (clothing.DefaultResource == CraftResource.PlainoisLeather)) ||
 							m_Tub.CanForceDye(item))
 						{
 							if (!from.InRange(m_Tub.GetWorldLocation(), 1) || !from.InRange(item.GetWorldLocation(), 1))

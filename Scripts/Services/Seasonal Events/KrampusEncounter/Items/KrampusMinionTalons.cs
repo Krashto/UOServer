@@ -22,7 +22,7 @@ namespace Server.Items
         {
         }
 
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         public override void Serialize(GenericWriter writer)
         {

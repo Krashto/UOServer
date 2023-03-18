@@ -7,10 +7,10 @@ using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
-	public class AuraBrouillardSpell : Spell
+	public class AuraDeBrouillardSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura de brouillard", "An Lor Xen",
+				"Aura de brouillard", "Aura de brouillard",
 				SpellCircle.Fifth,
 				206,
 				9002,
@@ -24,7 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		public override SkillName CastSkill { get { return SkillName.SpiritSpeak; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AuraBrouillardSpell(Mobile caster, Item scroll)
+		public AuraDeBrouillardSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -112,9 +112,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public class InternalTarget : Target
 		{
-			private AuraBrouillardSpell m_Owner;
+			private AuraDeBrouillardSpell m_Owner;
 
-			public InternalTarget(AuraBrouillardSpell owner)
+			public InternalTarget(AuraDeBrouillardSpell owner)
 				: base(12, false, TargetFlags.Beneficial)
 			{
 				m_Owner = owner;

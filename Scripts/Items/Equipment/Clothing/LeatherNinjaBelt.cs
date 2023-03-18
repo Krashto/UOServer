@@ -25,7 +25,7 @@ namespace Server.Items
         {
         }
 
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
         public virtual int WrongAmmoMessage => 1063301;//You can only place shuriken in a ninja belt.
         public virtual int NoFreeHandMessage => 1063299;//You must have a free hand to throw shuriken.
         public virtual int EmptyWeaponMessage => 1063297;//You have no shuriken in your ninja belt!

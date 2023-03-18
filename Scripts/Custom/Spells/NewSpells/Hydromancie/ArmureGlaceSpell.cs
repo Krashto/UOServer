@@ -5,13 +5,13 @@ using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
-	public class ArmureGlaceSpell : Spell
+	public class ArmureDeGlaceSpell : Spell
 	{
 		private static Hashtable m_Table = new Hashtable();
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Armure de glace", "In Jux Sanct",
+				"Armure de glace", "Armure de glace",
 				SpellCircle.Seventh,
 				242,
 				9012,
@@ -22,10 +22,10 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override int RequiredAptitudeValue { get { return 1; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Healing; } }
+		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public ArmureGlaceSpell(Mobile caster, Item scroll)
+		public ArmureDeGlaceSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}

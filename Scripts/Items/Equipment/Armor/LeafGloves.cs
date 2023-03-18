@@ -15,7 +15,7 @@ namespace Server.Items
         public override int StrReq => 10;
 
         public override ArmorMaterialType MaterialType => ArmorMaterialType.Leather;
-        public override CraftResource DefaultResource => CraftResource.RegularLeather;
+        public override CraftResource DefaultResource => CraftResource.PlainoisLeather;
 
         public override ArmorMeditationAllowance DefMedAllowance => ArmorMeditationAllowance.All;
 

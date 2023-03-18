@@ -63,7 +63,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				Caster.Location = to;
 				m.Location = from;
-				m.Frozen = false;
 
 				ExplodeFX.Smoke.CreateInstance(from, map, 1).Send();
 				ExplodeFX.Smoke.CreateInstance(to, map, 1).Send();

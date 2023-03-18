@@ -51,32 +51,33 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				if (IsActive(m))
 					StopTimer(m);
 
-				if (!FormeElectrisanteSpell.IsActive(m))
+				Disturb(m);
+
+				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+
+				if (!InsensibleSpell.IsActive(m))
 				{
-					Disturb(m);
-
-					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
-
 					m.PlaySound(22);
 					m.FixedEffect(0x923, 3, 30);
-
 					BleedAttack.BeginBleed(m, Caster, true);
+				}
+				else
+					Caster.SendMessage("Votre cible est immunisée aux saignements.");
 
-					var duration = GetDurationForSpell(4, 1.8);
+				var duration = GetDurationForSpell(4, 1.8);
 
-					Timer t = new InternalTimer(m, DateTime.Now + duration);
-					m_Timers[m] = t;
-					t.Start();
+				Timer t = new InternalTimer(m, DateTime.Now + duration);
+				m_Timers[m] = t;
+				t.Start();
 
+				if (!IndomptableSpell.IsActive(m))
+				{
 					m.SendSpeedControl(SpeedControlType.WalkSpeed);
-
 					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 					m.PlaySound(508);
 				}
 				else
-				{
 					Caster.SendMessage("Votre cible est immunisée aux ralentissements.");
-				}
 			}
 
 			FinishSequence();

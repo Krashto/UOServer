@@ -18,7 +18,9 @@ using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Multis;
 using Server.Custom.Spells.NewSpells.Aeromancie;
 using Server.Custom.Spells.NewSpells.Chasseur;
-
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.SkillHandlers;
+using Server.Custom.Spells.NewSpells.Martial;
 
 #endregion
 
@@ -30,8 +32,7 @@ namespace Server.Items
         SlayerName Slayer2 { get; set; }
     }
 
-    public 
-        class BaseWeapon : Item, IWeapon, IUsesRemaining, ICraftable, ISlayer, IDurability, ISetItem, IVvVItem, IOwnerRestricted, IResource, IArtifact, ICombatEquipment, IEngravable, IQuality
+    public class BaseWeapon : Item, IWeapon, IUsesRemaining, ICraftable, ISlayer, IDurability, ISetItem, IVvVItem, IOwnerRestricted, IResource, IArtifact, ICombatEquipment, IEngravable, IQuality
     {
         private string m_EngravedText;
 
@@ -892,7 +893,22 @@ namespace Server.Items
             }
         }
 
-        public override bool OnEquip(Mobile from)
+		public override void OnDoubleClick(Mobile from)
+		{
+			var oldItem = from.FindItemOnLayer(this.Layer);
+
+			if (oldItem == this)
+				return;
+
+			if (oldItem != null)
+				from.PlaceInBackpack(oldItem);
+
+			from.EquipItem(this);
+
+			base.OnDoubleClick(from);
+		}
+
+		public override bool OnEquip(Mobile from)
         {
             int strBonus = m_AosAttributes.BonusStr;
             int dexBonus = m_AosAttributes.BonusDex;
@@ -1173,7 +1189,10 @@ namespace Server.Items
 
             bonus += AosAttributes.GetValue(attacker, AosAttribute.AttackChance);
 
-            if (attacker is BaseCreature bc && !bc.Controlled && defender is BaseCreature bc2 && bc2.Controlled)
+			if (FormeElectrisanteSpell.IsActive(attacker))
+				bonus += 20;
+
+			if (attacker is BaseCreature bc && !bc.Controlled && defender is BaseCreature bc2 && bc2.Controlled)
             {
                 bonus = Math.Max(bonus, 45);
             }
@@ -1286,6 +1305,9 @@ namespace Server.Items
                 bonus = 60;
 
 			if (CeleriteSpell.IsActive(m))
+				bonus += 25;
+
+			if (AuraExaltationSpell.IsActive(m))
 				bonus += 25;
 
 			if (MarquerSpell.IsActive(m))
@@ -1795,21 +1817,6 @@ namespace Server.Items
                 }
             }
 
-			if (FormeEmpoisonneeSpell.IsActive(attacker))
-			{
-				WeaponAbility.SetCurrentAbility(attacker, WeaponAbility.InfectiousStrike);
-				attacker.SendMessage("Votre prochain coup empoisonnera votre cible.");
-			}
-
-			//if (FormeCycloniqueSpell.IsActive(attacker))
-			//	defender. TODO: PUSH
-
-			if (FormeGivranteSpell.IsActive(attacker))
-			{
-				WeaponAbility.SetCurrentAbility(attacker, WeaponAbility.ParalyzingBlow);
-				attacker.SendMessage("Votre prochain coup paralysera votre cible.");
-			}
-
 			bool splintering = false;
 
             if (m_AosWeaponAttributes.SplinteringWeapon > 0 && m_AosWeaponAttributes.SplinteringWeapon > Utility.Random(100))
@@ -1843,13 +1850,9 @@ namespace Server.Items
                         if (m_Hits >= 1)
                         {
                             if (splintering)
-                            {
                                 HitPoints = Math.Max(0, HitPoints - 10);
-                            }
                             else
-                            {
                                 HitPoints--;
-                            }
                         }
                         else if (m_MaxHits > 0)
                         {
@@ -1885,24 +1888,24 @@ namespace Server.Items
                 WeaponAbility.ClearCurrentAbility(attacker);
 
                 if (WeaponAttributes.HitLeechHits > 0)
-                {
                     attacker.SendLocalizedMessage(1152566); // You fail to leech life from your target!
-                }
 
                 return;
             }
 
-            #region Damage Multipliers
-            /*
+			#region Damage Multipliers
+			/*
             * The following damage bonuses multiply damage by a factor.
             * Capped at x3 (300%).
             */
-            int percentageBonus = 0;
+			
+			int percentageBonus = 0;
 
-            if (a != null)
-            {
+			if (FormeGivranteSpell.IsActive(attacker))
+				percentageBonus += 30;
+
+			if (a != null)
                 percentageBonus += (int)(a.DamageScalar * 100) - 100;
-            }
 
             percentageBonus += (int)(ForceOfNature.GetDamageScalar(attacker, defender) * 100) - 100;
 
@@ -1914,9 +1917,7 @@ namespace Server.Items
             CheckSlayerResult tal = CheckTalismanSlayer(attacker, defender);
 
             if (cs1 == CheckSlayerResult.None && cs2 == CheckSlayerResult.None)
-            {
                 cs1 = CheckSlayers(attacker, defender, SlayerSocket.GetSlayer(this));
-            }
 
             if (cs1 != CheckSlayerResult.None)
             {
@@ -1935,14 +1936,10 @@ namespace Server.Items
             }
 
             if (suit != CheckSlayerResult.None)
-            {
                 percentageBonus += 100;
-            }
 
             if (tal != CheckSlayerResult.None)
-            {
                 percentageBonus += 100;
-            }
 
             if (CheckSlayerOpposition(attacker, defender) != CheckSlayerResult.None)
             {
@@ -1950,21 +1947,24 @@ namespace Server.Items
                 defender.FixedEffect(0x37B9, 10, 5);
             }
             else if (cs1 != CheckSlayerResult.None || cs2 != CheckSlayerResult.None || suit != CheckSlayerResult.None || tal != CheckSlayerResult.None)
-            {
                 defender.FixedEffect(0x37B9, 10, 5);
-            }
 
-            int packInstinctBonus = GetPackInstinctBonus(attacker, defender);
+			if (DuelSpell.IsActive(attacker) && defender.GetType() == DuelSpell.GetEnemyType(defender))
+				percentageBonus += 100;
+
+			if (EnrageSpell.IsActive(attacker))
+				percentageBonus += 100;
+
+			if (CommandementSpell.IsActive(attacker))
+				percentageBonus += 100;
+
+			int packInstinctBonus = GetPackInstinctBonus(attacker, defender);
 
             if (packInstinctBonus != 0)
-            {
                 percentageBonus += packInstinctBonus;
-            }
 
             if (m_InDoubleStrike)
-            {
                 percentageBonus -= 10;
-            }
 
             if ((m_Slayer == SlayerName.Silver || m_Slayer2 == SlayerName.Silver || SetHelper.GetSetSlayer(attacker) == SlayerName.Silver)
                 && (defender is BaseCreature && (defender.Body == 747 || defender.Body == 748 || defender.Body == 749 || defender.Hue == 0x847E)))
@@ -1978,14 +1978,10 @@ namespace Server.Items
                 PlayerMobile pmAttacker = (PlayerMobile)attacker;
 
                 if (pmAttacker.HonorActive && pmAttacker.InRange(defender, 1))
-                {
                     percentageBonus += 25;
-                }
 
                 if (pmAttacker.SentHonorContext != null && pmAttacker.SentHonorContext.Target == defender)
-                {
                     percentageBonus += pmAttacker.SentHonorContext.PerfectionDamageBonus;
-                }
             }
 
             percentageBonus -= Block.GetMeleeReduction(defender);
@@ -2022,9 +2018,7 @@ namespace Server.Items
             if (m_ExtendedWeaponAttributes.AssassinHoned > 0 && GetOppositeDir(attacker.Direction) == defender.Direction)
             {
                 if (!ranged || 0.5 > Utility.RandomDouble())
-                {
                     percentageBonus += (int)(146.0 / Speed);
-                }
             }
 
             if (m_ExtendedWeaponAttributes.Focus > 0)
@@ -2156,9 +2150,12 @@ namespace Server.Items
             manaLeech = (int)(WeaponAttributes.HitLeechMana * propertyBonus);
 
 			if (AuraVampiriqueSpell.IsActive(attacker))
-				lifeLeech += 25;
+				lifeLeech += 15;
 
-            if (lifeLeech != 0)
+			if (FormeEnsangleeSpell.IsActive(attacker))
+				lifeLeech += 30;
+
+			if (lifeLeech != 0)
             {
                 int toHeal = AOS.Scale(damageGiven, lifeLeech);
 				attacker.Hits += toHeal;
@@ -2346,9 +2343,12 @@ namespace Server.Items
             if (defender is IHonorTarget && ((IHonorTarget)defender).ReceivedHonorContext != null)
             {
                 ((IHonorTarget)defender).ReceivedHonorContext.OnTargetHit(attacker);
-            }
+			}
 
-            BaseFamiliar.OnHit(attacker, damageable);
+			if (!ranged && FormeEmpoisonneeSpell.IsActive(attacker))
+				attacker.ApplyPoison(defender, Poison.Regular);
+
+			BaseFamiliar.OnHit(attacker, damageable);
         }
 
         public Direction GetOppositeDir(Direction d)
@@ -3031,12 +3031,12 @@ namespace Server.Items
 
             double totalBonus = strengthBonus + anatomyBonus + tacticsBonus + capaciteBonus + armsLoreBonus + (damageBonus / 100.0);
 
-			//if (attacker is CustomPlayerMobile)
-			//	totalBonus *= 1.5;
-			//else if (attacker is BaseCreature)
-			//	totalBonus *= 0.5;
+			damage *= (1 + totalBonus);
 
-            return damage + (int)(damage * totalBonus);
+			if (attacker is BaseCreature)
+				damage *= 0.5;
+
+            return damage;
         }
 
         public virtual int ComputeDamageAOS(Mobile attacker, Mobile defender)

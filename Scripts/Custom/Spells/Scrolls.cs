@@ -3,21 +3,20 @@ using Server;
 
 namespace Server.Items
 {
-	[FlipableAttribute( 8003, 8004 )]
-	public class NourritureScroll : SpellScroll
+	public class AveuglementScroll : SpellScroll
 	{
 		[Constructable]
-		public NourritureScroll() : this( 1 )
+		public AveuglementScroll() : this( 1 )
 		{
 		}
 
 		[Constructable]
-		public NourritureScroll( int amount ) : base( 600, 8003, amount )
+		public AveuglementScroll( int amount ) : base( 600, 0x2260, amount )
 		{
-			Name = "Nourriture";
+			Name = "Aveuglement";
 		}
 
-		public NourritureScroll( Serial serial ) : base( serial )
+		public AveuglementScroll( Serial serial ) : base( serial )
 		{
 		}
 
@@ -35,3708 +34,4003 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class VisionDeNuitScroll : SpellScroll
+	public class BrouillardScroll : SpellScroll
 	{
 		[Constructable]
-		public VisionDeNuitScroll() : this( 1 )
+		public BrouillardScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public VisionDeNuitScroll( int amount ) : base( 601, 8003, amount )
+		public BrouillardScroll(int amount) : base(601, 0x2260, amount)
 		{
-			Name = "Vision de nuit";
+			Name = "Brouillard";
 		}
 
-		public VisionDeNuitScroll( Serial serial ) : base( serial )
+		public BrouillardScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class FlecheMagiqueScroll : SpellScroll
+	public class TeleportationScroll : SpellScroll
 	{
 		[Constructable]
-		public FlecheMagiqueScroll() : this( 1 )
+		public TeleportationScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public FlecheMagiqueScroll( int amount ) : base( 602, 8003, amount )
+		public TeleportationScroll(int amount) : base(602, 0x2260, amount)
 		{
-			Name = "Flèche magique";
+			Name = "Teleportation";
 		}
 
-		public FlecheMagiqueScroll( Serial serial ) : base( serial )
+		public TeleportationScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class BlessureScroll : SpellScroll
+	public class TornadoScroll : SpellScroll
 	{
 		[Constructable]
-		public BlessureScroll() : this( 1 )
+		public TornadoScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public BlessureScroll( int amount ) : base( 603, 8001, amount )
+		public TornadoScroll(int amount) : base(603, 0x2260, amount)
 		{
-			Name = "Blessure";
+			Name = "Tornado";
 		}
 
-		public BlessureScroll( Serial serial ) : base( serial )
+		public TornadoScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class PieuxDeTerreScroll : SpellScroll
+	public class AuraEvasiveScroll : SpellScroll
 	{
 		[Constructable]
-		public PieuxDeTerreScroll() : this( 1 )
+		public AuraEvasiveScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public PieuxDeTerreScroll( int amount ) : base( 604, 8001, amount )
+		public AuraEvasiveScroll(int amount) : base(604, 0x2260, amount)
 		{
-			Name = "Pieux de terre";
+			Name = "AuraEvasive";
 		}
 
-		public PieuxDeTerreScroll( Serial serial ) : base( serial )
+		public AuraEvasiveScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class TelekinesieScroll : SpellScroll
+	public class ExTeleportationScroll : SpellScroll
 	{
 		[Constructable]
-		public TelekinesieScroll() : this( 1 )
+		public ExTeleportationScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public TelekinesieScroll( int amount ) : base( 606, 8001, amount )
+		public ExTeleportationScroll(int amount) : base(605, 0x2260, amount)
 		{
-			Name = "Télékinésie";
+			Name = "ExTeleportation";
 		}
 
-		public TelekinesieScroll( Serial serial ) : base( serial )
+		public ExTeleportationScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class ForceScroll : SpellScroll
+	public class ToucherSuffosantScroll : SpellScroll
 	{
 		[Constructable]
-		public ForceScroll() : this( 1 )
+		public ToucherSuffosantScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ForceScroll( int amount ) : base( 607, 8003, amount )
+		public ToucherSuffosantScroll(int amount) : base(606, 0x2260, amount)
 		{
-			Name = "Force";
+			Name = "ToucherSuffosant";
 		}
 
-		public ForceScroll( Serial serial ) : base( serial )
+		public ToucherSuffosantScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class AgiliteScroll : SpellScroll
+	public class AuraDeBrouillardScroll : SpellScroll
 	{
 		[Constructable]
-		public AgiliteScroll() : this( 1 )
+		public AuraDeBrouillardScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public AgiliteScroll( int amount ) : base( 608, 8003, amount )
+		public AuraDeBrouillardScroll(int amount) : base(607, 0x2260, amount)
 		{
-			Name = "Agilite";
+			Name = "AuraDeBrouillard";
 		}
 
-		public AgiliteScroll( Serial serial ) : base( serial )
+		public AuraDeBrouillardScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class FaiblesseScroll : SpellScroll
+	public class VentFavorableScroll : SpellScroll
 	{
 		[Constructable]
-		public FaiblesseScroll() : this( 1 )
+		public VentFavorableScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public FaiblesseScroll( int amount ) : base( 609, 8003, amount )
+		public VentFavorableScroll(int amount) : base(608, 0x2260, amount)
 		{
-			Name = "Faiblesse";
+			Name = "VentFavorable";
 		}
 
-		public FaiblesseScroll( Serial serial ) : base( serial )
+		public VentFavorableScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class MaladresseScroll : SpellScroll
-	{
-		[Constructable]
-		public MaladresseScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MaladresseScroll( int amount ) : base( 610, 8003, amount )
-		{
-			Name = "Maladresse";
-		}
-
-		public MaladresseScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class IntelligenceScroll : SpellScroll
-	{
-		[Constructable]
-		public IntelligenceScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public IntelligenceScroll( int amount ) : base( 611, 8001, amount )
-		{
-			Name = "Intelligence";
-		}
-
-		public IntelligenceScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class StupiditeScroll : SpellScroll
-	{
-		[Constructable]
-		public StupiditeScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public StupiditeScroll( int amount ) : base( 612, 8001, amount )
-		{
-			Name = "Stupidité";
-		}
-
-		public StupiditeScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class BenedictionScroll : SpellScroll
-	{
-		[Constructable]
-		public BenedictionScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public BenedictionScroll( int amount ) : base( 613, 7997, amount )
-		{
-			Name = "Bénédiction";
-		}
-
-		public BenedictionScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class MaledictionScroll : SpellScroll
-	{
-		[Constructable]
-		public MaledictionScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MaledictionScroll( int amount ) : base( 614, 7993, amount )
-		{
-			Name = "Malédiction";
-		}
-
-		public MaledictionScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class ReversScroll : SpellScroll
-	{
-		[Constructable]
-		public ReversScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ReversScroll( int amount ) : base( 615, 7989, amount )
-		{
-			Name = "Revers";
-		}
-
-        public ReversScroll(Serial serial)
-            : base(serial)
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class MurDeHaieScroll : SpellScroll
-	{
-		[Constructable]
-		public MurDeHaieScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MurDeHaieScroll( int amount ) : base( 616, 8003, amount )
-		{
-			Name = "Mur de haies";
-		}
-
-		public MurDeHaieScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class MurDePierreScroll : SpellScroll
-	{
-		[Constructable]
-		public MurDePierreScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MurDePierreScroll( int amount ) : base( 617, 8001, amount )
-		{
-			Name = "Mur de pierre";
-		}
-
-		public MurDePierreScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class GeyserScroll : SpellScroll
-	{
-		[Constructable]
-		public GeyserScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public GeyserScroll( int amount ) : base( 618, 7999, amount )
-		{
-			Name = "Geyser";
-		}
-
-		public GeyserScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class MurDeFeuScroll : SpellScroll
-	{
-		[Constructable]
-		public MurDeFeuScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MurDeFeuScroll( int amount ) : base( 619, 7993, amount )
-		{
-			Name = "Mur de feu";
-		}
-
-		public MurDeFeuScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class MurDEnergieScroll : SpellScroll
-	{
-		[Constructable]
-		public MurDEnergieScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MurDEnergieScroll( int amount ) : base( 620, 7987, amount )
-		{
-			Name = "Mur d'énergie";
-		}
-
-		public MurDEnergieScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class MurDeParalysieScroll : SpellScroll
-	{
-		[Constructable]
-		public MurDeParalysieScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MurDeParalysieScroll( int amount ) : base( 621, 7989, amount )
-		{
-			Name = "Mur de paralysie";
-		}
-
-		public MurDeParalysieScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class RevelationScroll : SpellScroll
-	{
-		[Constructable]
-		public RevelationScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public RevelationScroll( int amount ) : base( 622, 8003, amount )
-		{
-			Name = "Révélation";
-		}
-
-		public RevelationScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class DissipationScroll : SpellScroll
-	{
-		[Constructable]
-		public DissipationScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public DissipationScroll( int amount ) : base( 623, 7999, amount )
-		{
-			Name = "Dissipation";
-		}
-
-		public DissipationScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class ArmureMagiqueScroll : SpellScroll
-	{
-		[Constructable]
-		public ArmureMagiqueScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ArmureMagiqueScroll( int amount ) : base( 624, 7989, amount )
-		{
-			Name = "Armure magique";
-		}
-
-		public ArmureMagiqueScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-    [FlipableAttribute(7993, 7994)]
-	public class DissipationDeMurScroll : SpellScroll
-	{
-		[Constructable]
-		public DissipationDeMurScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public DissipationDeMurScroll( int amount ) : base( 625, 7993, amount )
-		{
-			Name = "Dissipation de mur";
-		}
-
-		public DissipationDeMurScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class DissipationDeMasseScroll : SpellScroll
-	{
-		[Constructable]
-		public DissipationDeMasseScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public DissipationDeMasseScroll( int amount ) : base( 626, 7987, amount )
-		{
-			Name = "Dissipation massive";
-		}
-
-		public DissipationDeMasseScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class DerobadeScroll : SpellScroll
-	{
-		[Constructable]
-		public DerobadeScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public DerobadeScroll( int amount ) : base( 627, 7985, amount )
-		{
-			Name = "Derobade";
-		}
-
-        public DerobadeScroll(Serial serial)
-            : base(serial)
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class AntidoteScroll : SpellScroll
-	{
-		[Constructable]
-		public AntidoteScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public AntidoteScroll( int amount ) : base( 628, 8003, amount )
-		{
-			Name = "Antidote";
-		}
-
-		public AntidoteScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class GuerisonScroll : SpellScroll
-	{
-		[Constructable]
-		public GuerisonScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public GuerisonScroll( int amount ) : base( 629, 8001, amount )
-		{
-			Name = "Guérison";
-		}
-
-		public GuerisonScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class AntidoteDeMasseScroll : SpellScroll
-	{
-		[Constructable]
-		public AntidoteDeMasseScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public AntidoteDeMasseScroll( int amount ) : base( 630, 7997, amount )
-		{
-			Name = "Antidote massif";
-		}
-
-		public AntidoteDeMasseScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class GuerisonMajeureScroll : SpellScroll
-	{
-		[Constructable]
-		public GuerisonMajeureScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public GuerisonMajeureScroll( int amount ) : base( 631, 7987, amount )
-		{
-			Name = "Guérison majeure";
-		}
-
-		public GuerisonMajeureScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class ZoneDeGuerisonScroll : SpellScroll
-	{
-		[Constructable]
-		public ZoneDeGuerisonScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ZoneDeGuerisonScroll( int amount ) : base( 632, 7989, amount )
-		{
-			Name = "Zone de guérison";
-		}
-
-		public ZoneDeGuerisonScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class NResurrectionScroll : SpellScroll
-	{
-		[Constructable]
-		public NResurrectionScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public NResurrectionScroll( int amount ) : base( 633, 7985, amount )
-		{
-			Name = "Résurrection";
-		}
-
-		public NResurrectionScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-    [FlipableAttribute(7985, 7986)]
-	public class ArmureScroll : SpellScroll
-	{
-		[Constructable]
-		public ArmureScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ArmureScroll( int amount ) : base( 634, 7985, amount )
-		{
-			Name = "Armure";
-		}
-
-		public ArmureScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class ReflectionScroll : SpellScroll
-	{
-		[Constructable]
-		public ReflectionScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ReflectionScroll( int amount ) : base( 635, 8001, amount )
-		{
-			Name = "Réflection";
-		}
-
-		public ReflectionScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-    [FlipableAttribute(8003, 8004)]
-	public class ProtectScroll : SpellScroll
-	{
-		[Constructable]
-		public ProtectScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ProtectScroll( int amount ) : base( 636, 8003, amount )
-		{
-			Name = "Protection";
-		}
-
-		public ProtectScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-    [FlipableAttribute(7997, 7998)]
-	public class SecoursScroll : SpellScroll
-	{
-		[Constructable]
-		public SecoursScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public SecoursScroll( int amount ) : base( 637, 7997, amount )
-		{
-			Name = "Secours";
-		}
-
-        public SecoursScroll(Serial serial)
-            : base(serial)
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-    [FlipableAttribute(7989, 7990)]
-	public class CopieScroll : SpellScroll
-	{
-		[Constructable]
-		public CopieScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public CopieScroll( int amount ) : base( 638, 7989, amount )
-		{
-			Name = "Copie";
-		}
-
-        public CopieScroll(Serial serial)
-            : base(serial)
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-    [FlipableAttribute(7987, 7988)]
-	public class ChampDeStaseScroll : SpellScroll
-	{
-		[Constructable]
-		public ChampDeStaseScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ChampDeStaseScroll( int amount ) : base( 639, 7987, amount )
-		{
-			Name = "Champ de stase";
-		}
-
-        public ChampDeStaseScroll(Serial serial)
-            : base(serial)
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class PoisonMineurScroll : SpellScroll
-	{
-		[Constructable]
-		public PoisonMineurScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public PoisonMineurScroll( int amount ) : base( 640, 8003, amount )
-		{
-			Name = "Poison mineur";
-		}
-
-		public PoisonMineurScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class NPoisonScroll : SpellScroll
-	{
-		[Constructable]
-		public NPoisonScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public NPoisonScroll( int amount ) : base( 641, 7999, amount )
-		{
-			Name = "Poison";
-		}
-
-        public NPoisonScroll(Serial serial)
-            : base(serial)
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class JetDePoisonScroll : SpellScroll
-	{
-		[Constructable]
-		public JetDePoisonScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public JetDePoisonScroll( int amount ) : base( 642, 7997, amount )
-		{
-			Name = "Jet de poison";
-		}
-
-		public JetDePoisonScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class MurDePoisonScroll : SpellScroll
-	{
-		[Constructable]
-		public MurDePoisonScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MurDePoisonScroll( int amount ) : base( 643, 7987, amount )
-		{
-			Name = "Mur de poison";
-		}
-
-		public MurDePoisonScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class PluieAcideScroll : SpellScroll
-	{
-		[Constructable]
-		public PluieAcideScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public PluieAcideScroll( int amount ) : base( 644, 7989, amount )
-		{
-			Name = "Pluie acide";
-		}
-
-		public PluieAcideScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class PinceeAcideScroll : SpellScroll
-	{
-		[Constructable]
-		public PinceeAcideScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public PinceeAcideScroll( int amount ) : base( 645, 8003, amount )
-		{
-			Name = "Pincée acide";
-		}
-
-		public PinceeAcideScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class RacinesScroll : SpellScroll
-	{
-		[Constructable]
-		public RacinesScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public RacinesScroll( int amount ) : base( 646, 8003, amount )
-		{
-			Name = "Racines";
-		}
-
-		public RacinesScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class AbeillesScroll : SpellScroll
-	{
-		[Constructable]
-		public AbeillesScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public AbeillesScroll( int amount ) : base( 647, 8001, amount )
-		{
-			Name = "Abeilles";
-		}
-
-		public AbeillesScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class EpinesScroll : SpellScroll
-	{
-		[Constructable]
-		public EpinesScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public EpinesScroll( int amount ) : base( 648, 7999, amount )
-		{
-			Name = "Épines";
-		}
-
-		public EpinesScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class CriDOursScroll : SpellScroll
-	{
-		[Constructable]
-		public CriDOursScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public CriDOursScroll( int amount ) : base( 649, 7993, amount )
-		{
-			Name = "Cri d'ours";
-		}
-
-		public CriDOursScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class ArmurePierreScroll : SpellScroll
-	{
-		[Constructable]
-		public ArmurePierreScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ArmurePierreScroll( int amount ) : base( 650, 7987, amount )
-		{
-			Name = "Armure de pierre";
-		}
-
-		public ArmurePierreScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class JetDEpinesScroll : SpellScroll
-	{
-		[Constructable]
-		public JetDEpinesScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public JetDEpinesScroll( int amount ) : base( 651, 7989, amount )
-		{
-			Name = "Jet d'épines";
-		}
-
-		public JetDEpinesScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class BouleDeFeuScroll : SpellScroll
-	{
-		[Constructable]
-		public BouleDeFeuScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public BouleDeFeuScroll( int amount ) : base( 652, 8001, amount )
-		{
-			Name = "Boule de feu";
-		}
-
-		public BouleDeFeuScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class EclairScroll : SpellScroll
-	{
-		[Constructable]
-		public EclairScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public EclairScroll( int amount ) : base( 653, 7997, amount )
-		{
-			Name = "Éclair";
-		}
-
-		public EclairScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class BouleDeGlaceScroll : SpellScroll
-	{
-		[Constructable]
-		public BouleDeGlaceScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public BouleDeGlaceScroll( int amount ) : base( 654, 7993, amount )
-		{
-			Name = "Boule de glace";
-		}
-
-		public BouleDeGlaceScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class BouleDEnergieScroll : SpellScroll
-	{
-		[Constructable]
-		public BouleDEnergieScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public BouleDEnergieScroll( int amount ) : base( 655, 7987, amount )
-		{
-			Name = "Boule d'énergie";
-		}
-
-		public BouleDEnergieScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class JetDeFeuScroll : SpellScroll
-	{
-		[Constructable]
-		public JetDeFeuScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public JetDeFeuScroll( int amount ) : base( 656, 7989, amount )
-		{
-			Name = "Jet de feu";
-		}
-
-		public JetDeFeuScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class FulgurationScroll : SpellScroll
-	{
-		[Constructable]
-		public FulgurationScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public FulgurationScroll( int amount ) : base( 657, 7985, amount )
-		{
-			Name = "Fulguration";
-		}
-
-		public FulgurationScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class TremblementsScroll : SpellScroll
-	{
-		[Constructable]
-		public TremblementsScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public TremblementsScroll( int amount ) : base( 658, 7999, amount )
-		{
-			Name = "Tremblements";
-		}
-
-		public TremblementsScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class ExplosionsScroll : SpellScroll
-	{
-		[Constructable]
-		public ExplosionsScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public ExplosionsScroll( int amount ) : base( 659, 7997, amount )
-		{
-			Name = "Explosion";
-		}
-
-		public ExplosionsScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class SeismeScroll : SpellScroll
-	{
-		[Constructable]
-		public SeismeScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public SeismeScroll( int amount ) : base( 660, 7993, amount )
-		{
-			Name = "Séisme";
-		}
-
-		public SeismeScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class EclairEnChaineScroll : SpellScroll
-	{
-		[Constructable]
-		public EclairEnChaineScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public EclairEnChaineScroll( int amount ) : base( 661, 7989, amount )
-		{
-			Name = "Éclair en chaîne";
-		}
-
-		public EclairEnChaineScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class MeteoresScroll : SpellScroll
-	{
-		[Constructable]
-		public MeteoresScroll() : this( 1 )
-		{
-		}
-
-		[Constructable]
-		public MeteoresScroll( int amount ) : base( 662, 7985, amount )
-		{
-			Name = "Météores";
-		}
-
-		public MeteoresScroll( Serial serial ) : base( serial )
-		{
-		}
-
-		public override void Serialize( GenericWriter writer )
-		{
-			base.Serialize( writer );
-
-			writer.Write( (int) 0 ); // version
-		}
-
-		public override void Deserialize( GenericReader reader )
-		{
-			base.Deserialize( reader );
-
-			int version = reader.ReadInt();
-		}
-	}
-
-	[FlipableAttribute( 7985, 7986 )]
 	public class VortexScroll : SpellScroll
 	{
 		[Constructable]
-		public VortexScroll() : this( 1 )
+		public VortexScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public VortexScroll( int amount ) : base( 663, 7985, amount )
+		public VortexScroll(int amount) : base(609, 0x2260, amount)
 		{
 			Name = "Vortex";
 		}
 
-		public VortexScroll( Serial serial ) : base( serial )
+		public VortexScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class CreatureScroll : SpellScroll
+	public class AntidoteScroll : SpellScroll
 	{
 		[Constructable]
-		public CreatureScroll() : this( 1 )
+		public AntidoteScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public CreatureScroll( int amount ) : base( 664, 8003, amount )
+		public AntidoteScroll(int amount) : base(610, 0x2262, amount)
 		{
-			Name = "Créatures";
+			Name = "Antidote";
 		}
 
-		public CreatureScroll( Serial serial ) : base( serial )
+		public AntidoteScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class ElementaireTerreScroll : SpellScroll
+	public class MarquerScroll : SpellScroll
 	{
 		[Constructable]
-		public ElementaireTerreScroll() : this( 1 )
+		public MarquerScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ElementaireTerreScroll( int amount ) : base( 665, 7999, amount )
+		public MarquerScroll(int amount) : base(611, 0x2262, amount)
 		{
-			Name = "Élém. : Terre";
+			Name = "Marquer";
 		}
 
-		public ElementaireTerreScroll( Serial serial ) : base( serial )
+		public MarquerScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class ElementaireAirScroll : SpellScroll
+	public class CompagnonAnimalScroll : SpellScroll
 	{
 		[Constructable]
-		public ElementaireAirScroll() : this( 1 )
+		public CompagnonAnimalScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ElementaireAirScroll( int amount ) : base( 666, 7997, amount )
+		public CompagnonAnimalScroll(int amount) : base(612, 0x2262, amount)
 		{
-			Name = "Élém. : Air";
+			Name = "CompagnonAnimal";
 		}
 
-		public ElementaireAirScroll( Serial serial ) : base( serial )
+		public CompagnonAnimalScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class ElementaireFeuScroll : SpellScroll
+	public class SoinAnimalierScroll : SpellScroll
 	{
 		[Constructable]
-		public ElementaireFeuScroll() : this( 1 )
+		public SoinAnimalierScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ElementaireFeuScroll( int amount ) : base( 667, 7987, amount )
+		public SoinAnimalierScroll(int amount) : base(613, 0x2262, amount)
 		{
-			Name = "Élém. : Feu";
+			Name = "SoinAnimalier";
 		}
 
-		public ElementaireFeuScroll( Serial serial ) : base( serial )
+		public SoinAnimalierScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class ElementaireEauScroll : SpellScroll
+	public class RugissementScroll : SpellScroll
 	{
 		[Constructable]
-		public ElementaireEauScroll() : this( 1 )
+		public RugissementScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ElementaireEauScroll( int amount ) : base( 668, 7989, amount )
+		public RugissementScroll(int amount) : base(614, 0x2262, amount)
 		{
-			Name = "Élém. : Eau";
+			Name = "Rugissement";
 		}
 
-		public ElementaireEauScroll( Serial serial ) : base( serial )
+		public RugissementScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class ElementaireCristalScroll : SpellScroll
+	public class FrappeEnsanglanteeScroll : SpellScroll
 	{
 		[Constructable]
-		public ElementaireCristalScroll() : this( 1 )
+		public FrappeEnsanglanteeScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ElementaireCristalScroll( int amount ) : base( 669, 7985, amount )
+		public FrappeEnsanglanteeScroll(int amount) : base(615, 0x2262, amount)
 		{
-			Name = "Élém. : Cristal";
+			Name = "FrappeEnsanglantee";
 		}
 
-		public ElementaireCristalScroll( Serial serial ) : base( serial )
+		public FrappeEnsanglanteeScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class EspritAnimalScroll : SpellScroll
+	public class SautAggressifScroll : SpellScroll
 	{
 		[Constructable]
-		public EspritAnimalScroll() : this( 1 )
+		public SautAggressifScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EspritAnimalScroll( int amount ) : base( 670, 7999, amount )
+		public SautAggressifScroll(int amount) : base(616, 0x2262, amount)
 		{
-			Name = "Esprit animal";
+			Name = "SautAggressif";
 		}
 
-		public EspritAnimalScroll( Serial serial ) : base( serial )
+		public SautAggressifScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class EspritDeLamesScroll : SpellScroll
+	public class CoupDansLeGenouScroll : SpellScroll
 	{
 		[Constructable]
-		public EspritDeLamesScroll() : this( 1 )
+		public CoupDansLeGenouScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EspritDeLamesScroll( int amount ) : base( 671, 7993, amount )
+		public CoupDansLeGenouScroll(int amount) : base(617, 0x2262, amount)
 		{
-			Name = "Esprit de lames";
+			Name = "CoupDansLeGenou";
 		}
 
-		public EspritDeLamesScroll( Serial serial ) : base( serial )
+		public CoupDansLeGenouScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class EspritDEnergieScroll : SpellScroll
+	public class ChasseurDePrimeScroll : SpellScroll
 	{
 		[Constructable]
-		public EspritDEnergieScroll() : this( 1 )
+		public ChasseurDePrimeScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EspritDEnergieScroll( int amount ) : base( 672, 7987, amount )
+		public ChasseurDePrimeScroll(int amount) : base(618, 0x2262, amount)
 		{
-			Name = "Esprit d'énergie";
+			Name = "ChasseurDePrime";
 		}
 
-		public EspritDEnergieScroll( Serial serial ) : base( serial )
+		public ChasseurDePrimeScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class DragonScroll : SpellScroll
+	public class ContratResoluScroll : SpellScroll
 	{
 		[Constructable]
-		public DragonScroll() : this( 1 )
+		public ContratResoluScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DragonScroll( int amount ) : base( 673, 7989, amount )
+		public ContratResoluScroll(int amount) : base(619, 0x2262, amount)
 		{
-			Name = "Esprit du dragon";
+			Name = "ContratResolu";
 		}
 
-		public DragonScroll( Serial serial ) : base( serial )
+		public ContratResoluScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class DemonScroll : SpellScroll
+	public class CoupDeBouclierScroll : SpellScroll
 	{
 		[Constructable]
-		public DemonScroll() : this( 1 )
+		public CoupDeBouclierScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DemonScroll( int amount ) : base( 674, 7985, amount )
+		public CoupDeBouclierScroll(int amount) : base(620, 0x2264, amount)
 		{
-			Name = "Démon";
+			Name = "CoupDeBouclier";
 		}
 
-		public DemonScroll( Serial serial ) : base( serial )
+		public CoupDeBouclierScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class EspritVengeurScroll : SpellScroll
+	public class BravadeScroll : SpellScroll
 	{
 		[Constructable]
-		public EspritVengeurScroll() : this( 1 )
+		public BravadeScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EspritVengeurScroll( int amount ) : base( 675, 7985, amount )
+		public BravadeScroll(int amount) : base(621, 0x2264, amount)
 		{
-			Name = "Esprit vengeur";
+			Name = "Bravade";
 		}
 
-		public EspritVengeurScroll( Serial serial ) : base( serial )
+		public BravadeScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class PourritureDEspritScroll : SpellScroll
+	public class DevotionScroll : SpellScroll
 	{
 		[Constructable]
-		public PourritureDEspritScroll() : this( 1 )
+		public DevotionScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public PourritureDEspritScroll( int amount ) : base( 676, 8003, amount )
+		public DevotionScroll(int amount) : base(622, 0x2264, amount)
 		{
-			Name = "Pourriture d'esprit";
+			Name = "Devotion";
 		}
 
-		public PourritureDEspritScroll( Serial serial ) : base( serial )
+		public DevotionScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class DrainDeManaScroll : SpellScroll
+	public class MutinerieScroll : SpellScroll
 	{
 		[Constructable]
-		public DrainDeManaScroll() : this( 1 )
+		public MutinerieScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DrainDeManaScroll( int amount ) : base( 677, 8001, amount )
+		public MutinerieScroll(int amount) : base(623, 0x2264, amount)
 		{
-			Name = "Drain de mana";
+			Name = "Mutinerie";
 		}
 
-		public DrainDeManaScroll( Serial serial ) : base( serial )
+		public MutinerieScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class MalaiseScroll : SpellScroll
+	public class MentorScroll : SpellScroll
 	{
 		[Constructable]
-		public MalaiseScroll() : this( 1 )
+		public MentorScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public MalaiseScroll( int amount ) : base( 678, 7997, amount )
+		public MentorScroll(int amount) : base(624, 0x2264, amount)
 		{
-			Name = "Malaise";
+			Name = "Mentor";
 		}
 
-		public MalaiseScroll( Serial serial ) : base( serial )
+		public MentorScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class SouffleDEspritScroll : SpellScroll
+	public class LienDeVieScroll : SpellScroll
 	{
 		[Constructable]
-		public SouffleDEspritScroll() : this( 1 )
+		public LienDeVieScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SouffleDEspritScroll( int amount ) : base( 679, 7993, amount )
+		public LienDeVieScroll(int amount) : base(625, 0x2264, amount)
 		{
-			Name = "Souffle d'esprit";
+			Name = "LienDeVie";
 		}
 
-		public SouffleDEspritScroll( Serial serial ) : base( serial )
+		public LienDeVieScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class DrainVampiriqueScroll : SpellScroll
+	public class MiracleScroll : SpellScroll
 	{
 		[Constructable]
-		public DrainVampiriqueScroll() : this( 1 )
+		public MiracleScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DrainVampiriqueScroll( int amount ) : base( 680, 7987, amount )
+		public MiracleScroll(int amount) : base(626, 0x2264, amount)
 		{
-			Name = "Drain vampirique";
+			Name = "Miracle";
 		}
 
-		public DrainVampiriqueScroll( Serial serial ) : base( serial )
+		public MiracleScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class EtouffementsScroll : SpellScroll
+	public class IndomptableScroll : SpellScroll
 	{
 		[Constructable]
-		public EtouffementsScroll() : this( 1 )
+		public IndomptableScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EtouffementsScroll( int amount ) : base( 681, 7989, amount )
+		public IndomptableScroll(int amount) : base(627, 0x2264, amount)
 		{
-			Name = "Étouffements";
+			Name = "Indomptable";
 		}
 
-		public EtouffementsScroll( Serial serial ) : base( serial )
+		public IndomptableScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class EnduranceScroll : SpellScroll
+	public class InsensibleScroll : SpellScroll
 	{
 		[Constructable]
-		public EnduranceScroll() : this( 1 )
+		public InsensibleScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EnduranceScroll( int amount ) : base( 682, 8001, amount )
+		public InsensibleScroll(int amount) : base(628, 0x2264, amount)
 		{
-			Name = "Endurance";
+			Name = "Insensible";
 		}
 
-		public EnduranceScroll( Serial serial ) : base( serial )
+		public InsensibleScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class TeleportationScroll : SpellScroll
+	public class PiedsAuSolScroll : SpellScroll
 	{
 		[Constructable]
-		public TeleportationScroll() : this( 1 )
+		public PiedsAuSolScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public TeleportationScroll( int amount ) : base( 683, 7999, amount )
+		public PiedsAuSolScroll(int amount) : base(629, 0x2264, amount)
 		{
-			Name = "Téléportation";
+			Name = "PiedsAuSol";
 		}
 
-		public TeleportationScroll( Serial serial ) : base( serial )
+		public PiedsAuSolScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class RappelScroll : SpellScroll
+	public class FortifieScroll : SpellScroll
 	{
 		[Constructable]
-		public RappelScroll() : this( 1 )
+		public FortifieScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public RappelScroll( int amount ) : base( 684, 7993, amount )
+		public FortifieScroll(int amount) : base(630, 0x2266, amount)
 		{
-			Name = "Rappel";
+			Name = "Fortifie";
 		}
 
-		public RappelScroll( Serial serial ) : base( serial )
+		public FortifieScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class EvasionScroll : SpellScroll
+	public class RocheScroll : SpellScroll
 	{
 		[Constructable]
-		public EvasionScroll() : this( 1 )
+		public RocheScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public EvasionScroll( int amount ) : base( 685, 8003, amount )
+		public RocheScroll(int amount) : base(631, 0x2266, amount)
 		{
-			Name = "Évasion";
+			Name = "Roche";
 		}
 
-		public EvasionScroll( Serial serial ) : base( serial )
+		public RocheScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class TrouDeVerScroll : SpellScroll
+	public class ContaminationScroll : SpellScroll
 	{
 		[Constructable]
-		public TrouDeVerScroll() : this( 1 )
+		public ContaminationScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public TrouDeVerScroll( int amount ) : base( 686, 7989, amount )
+		public ContaminationScroll(int amount) : base(632, 0x2266, amount)
 		{
-			Name = "Trou de ver";
+			Name = "Contamination";
 		}
 
-		public TrouDeVerScroll( Serial serial ) : base( serial )
+		public ContaminationScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class MarquageScroll : SpellScroll
+	public class EmpalementScroll : SpellScroll
 	{
 		[Constructable]
-		public MarquageScroll() : this( 1 )
+		public EmpalementScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public MarquageScroll( int amount ) : base( 687, 7985, amount )
+		public EmpalementScroll(int amount) : base(633, 0x2266, amount)
 		{
-			Name = "Marquage";
+			Name = "Empalement";
 		}
 
-		public MarquageScroll( Serial serial ) : base( serial )
+		public EmpalementScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class PiegeScroll : SpellScroll
+	public class AuraFortifianteScroll : SpellScroll
 	{
 		[Constructable]
-		public PiegeScroll() : this( 1 )
+		public AuraFortifianteScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public PiegeScroll( int amount ) : base( 688, 8001, amount )
+		public AuraFortifianteScroll(int amount) : base(634, 0x2266, amount)
 		{
-			Name = "Piège";
+			Name = "AuraFortifiante";
 		}
 
-		public PiegeScroll( Serial serial ) : base( serial )
+		public AuraFortifianteScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class DesamorcageScroll : SpellScroll
+	public class MurDePlanteScroll : SpellScroll
 	{
 		[Constructable]
-		public DesamorcageScroll() : this( 1 )
+		public MurDePlanteScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DesamorcageScroll( int amount ) : base( 689, 8001, amount )
+		public MurDePlanteScroll(int amount) : base(635, 0x2266, amount)
 		{
-			Name = "Désamorçage";
+			Name = "MurDePlante";
 		}
 
-		public DesamorcageScroll( Serial serial ) : base( serial )
+		public MurDePlanteScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class SerrureScroll : SpellScroll
+	public class ExplosionDeRocheScroll : SpellScroll
 	{
 		[Constructable]
-		public SerrureScroll() : this( 1 )
+		public ExplosionDeRocheScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SerrureScroll( int amount ) : base( 690, 7999, amount )
+		public ExplosionDeRocheScroll(int amount) : base(636, 0x2266, amount)
 		{
-			Name = "Serrure";
+			Name = "ExplosionDeRoche";
 		}
 
-		public SerrureScroll( Serial serial ) : base( serial )
+		public ExplosionDeRocheScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class CrochetageScroll : SpellScroll
+	public class AuraPreservationManiaqueScroll : SpellScroll
 	{
 		[Constructable]
-		public CrochetageScroll() : this( 1 )
+		public AuraPreservationManiaqueScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public CrochetageScroll( int amount ) : base( 691, 7999, amount )
+		public AuraPreservationManiaqueScroll(int amount) : base(637, 0x2266, amount)
 		{
-			Name = "Crochetage";
+			Name = "AuraPreservationManiaque";
 		}
 
-		public CrochetageScroll( Serial serial ) : base( serial )
+		public AuraPreservationManiaqueScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class NIncognitoScroll : SpellScroll
+	public class RacinesScroll : SpellScroll
 	{
 		[Constructable]
-		public NIncognitoScroll() : this( 1 )
+		public RacinesScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public NIncognitoScroll( int amount ) : base( 692, 7997, amount )
+		public RacinesScroll(int amount) : base(638, 0x2266, amount)
 		{
-			Name = "Incognito";
+			Name = "Racines";
 		}
 
-        public NIncognitoScroll(Serial serial)
-            : base(serial)
+		public RacinesScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class InvisibiliteScroll : SpellScroll
+	public class FleauTerrestreScroll : SpellScroll
 	{
 		[Constructable]
-		public InvisibiliteScroll() : this( 1 )
+		public FleauTerrestreScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public InvisibiliteScroll( int amount ) : base( 693, 7993, amount )
+		public FleauTerrestreScroll(int amount) : base(639, 0x2266, amount)
 		{
-			Name = "Invisibilité";
+			Name = "FleauTerrestre";
 		}
 
-		public InvisibiliteScroll( Serial serial ) : base( serial )
+		public FleauTerrestreScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class HallucinationsScroll : SpellScroll
+	public class MainCicatrisanteScroll : SpellScroll
 	{
 		[Constructable]
-		public HallucinationsScroll() : this( 1 )
+		public MainCicatrisanteScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public HallucinationsScroll( int amount ) : base( 694, 7987, amount )
+		public MainCicatrisanteScroll(int amount) : base(640, 0x2268, amount)
 		{
-			Name = "Hallucinations";
+			Name = "MainCicatrisante";
 		}
 
-		public HallucinationsScroll( Serial serial ) : base( serial )
+		public MainCicatrisanteScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class DisparitionScroll : SpellScroll
+	public class RemedeScroll : SpellScroll
 	{
 		[Constructable]
-		public DisparitionScroll() : this( 1 )
+		public RemedeScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DisparitionScroll( int amount ) : base( 695, 7989, amount )
+		public RemedeScroll(int amount) : base(641, 0x2268, amount)
 		{
-			Name = "Disparition";
+			Name = "Remede";
 		}
 
-		public DisparitionScroll( Serial serial ) : base( serial )
+		public RemedeScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8003, 8004 )]
-	public class AlterationScroll : SpellScroll
+	public class MurDePierreScroll : SpellScroll
 	{
 		[Constructable]
-		public AlterationScroll() : this( 1 )
+		public MurDePierreScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public AlterationScroll( int amount ) : base( 696, 8003, amount )
+		public MurDePierreScroll(int amount) : base(642, 0x2268, amount)
 		{
-			Name = "Altération";
+			Name = "MurDePierre";
 		}
 
-		public AlterationScroll( Serial serial ) : base( serial )
+		public MurDePierreScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class SubterfugeScroll : SpellScroll
+	public class RayonCelesteScroll : SpellScroll
 	{
 		[Constructable]
-		public SubterfugeScroll() : this( 1 )
+		public RayonCelesteScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SubterfugeScroll( int amount ) : base( 697, 8001, amount )
+		public RayonCelesteScroll(int amount) : base(643, 0x2268, amount)
 		{
-			Name = "Subterfuge";
+			Name = "RayonCeleste";
 		}
 
-        public SubterfugeScroll(Serial serial)
-            : base(serial)
+		public RayonCelesteScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class ChimereScroll : SpellScroll
+	public class LumiereSacreeScroll : SpellScroll
 	{
 		[Constructable]
-		public ChimereScroll() : this( 1 )
+		public LumiereSacreeScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ChimereScroll( int amount ) : base( 698, 7997, amount )
+		public LumiereSacreeScroll(int amount) : base(644, 0x2268, amount)
 		{
-			Name = "Chimère";
+			Name = "LumiereSacree";
 		}
 
-        public ChimereScroll(Serial serial)
-            : base(serial)
+		public LumiereSacreeScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class TransmutationScroll : SpellScroll
+	public class FrayeurScroll : SpellScroll
 	{
 		[Constructable]
-		public TransmutationScroll() : this( 1 )
+		public FrayeurScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public TransmutationScroll( int amount ) : base( 699, 7993, amount )
+		public FrayeurScroll(int amount) : base(645, 0x2268, amount)
 		{
-			Name = "Transmutation";
+			Name = "Frayeur";
 		}
 
-        public TransmutationScroll(Serial serial)
-            : base(serial)
+		public FrayeurScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class MetamorphoseScroll : SpellScroll
+	public class FerveurDivineScroll : SpellScroll
 	{
 		[Constructable]
-		public MetamorphoseScroll() : this( 1 )
+		public FerveurDivineScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public MetamorphoseScroll( int amount ) : base( 700, 7989, amount )
+		public FerveurDivineScroll(int amount) : base(646, 0x2268, amount)
 		{
-			Name = "Métamorphose";
+			Name = "FerveurDivine";
 		}
 
-		public MetamorphoseScroll( Serial serial ) : base( serial )
+		public FerveurDivineScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class MutationScroll : SpellScroll
+	public class InquisitionScroll : SpellScroll
 	{
 		[Constructable]
-		public MutationScroll() : this( 1 )
+		public InquisitionScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public MutationScroll( int amount ) : base( 701, 7985, amount )
+		public InquisitionScroll(int amount) : base(647, 0x2268, amount)
 		{
-			Name = "Mutation";
+			Name = "Inquisition";
 		}
 
-		public MutationScroll( Serial serial ) : base( serial )
+		public InquisitionScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class CalamiteScroll : SpellScroll
+	public class MurDeLumiereScroll : SpellScroll
 	{
 		[Constructable]
-		public CalamiteScroll() : this( 1 )
+		public MurDeLumiereScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public CalamiteScroll( int amount ) : base( 702, 8001, amount )
+		public MurDeLumiereScroll(int amount) : base(648, 0x2268, amount)
 		{
-			Name = "Calamité";
+			Name = "MurDeLumiere";
 		}
 
-		public CalamiteScroll( Serial serial ) : base( serial )
+		public MurDeLumiereScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7997, 7998 )]
-	public class PeauDeMortScroll : SpellScroll
+	public class DonDeLaVieScroll : SpellScroll
 	{
 		[Constructable]
-		public PeauDeMortScroll() : this( 1 )
+		public DonDeLaVieScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public PeauDeMortScroll( int amount ) : base( 703, 7997, amount )
+		public DonDeLaVieScroll(int amount) : base(649, 0x2268, amount)
 		{
-			Name = "Peau des morts";
+			Name = "DonDeLaVie";
 		}
 
-		public PeauDeMortScroll( Serial serial ) : base( serial )
+		public DonDeLaVieScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class MauvaisPresageScroll : SpellScroll
+	public class ArmureDeGlaceScroll : SpellScroll
 	{
 		[Constructable]
-		public MauvaisPresageScroll() : this( 1 )
+		public ArmureDeGlaceScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public MauvaisPresageScroll( int amount ) : base( 704, 7993, amount )
+		public ArmureDeGlaceScroll(int amount) : base(650, 0x226A, amount)
 		{
-			Name = "Mauvais présage";
+			Name = "ArmureDeGlace";
 		}
 
-		public MauvaisPresageScroll( Serial serial ) : base( serial )
+		public ArmureDeGlaceScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7987, 7988 )]
-	public class LanceOsScroll : SpellScroll
+	public class RestaurationScroll : SpellScroll
 	{
 		[Constructable]
-		public LanceOsScroll() : this( 1 )
+		public RestaurationScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public LanceOsScroll( int amount ) : base( 705, 7987, amount )
+		public RestaurationScroll(int amount) : base(651, 0x226A, amount)
 		{
-			Name = "Lance d'os";
+			Name = "Restauration";
 		}
 
-		public LanceOsScroll( Serial serial ) : base( serial )
+		public RestaurationScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7989, 7990 )]
-	public class SermentDeSangScroll : SpellScroll
+	public class SoinPreventifScroll : SpellScroll
 	{
 		[Constructable]
-		public SermentDeSangScroll() : this( 1 )
+		public SoinPreventifScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SermentDeSangScroll( int amount ) : base( 706, 7989, amount )
+		public SoinPreventifScroll(int amount) : base(652, 0x226A, amount)
 		{
-			Name = "Serment de sang";
+			Name = "SoinPreventif";
 		}
 
-		public SermentDeSangScroll( Serial serial ) : base( serial )
+		public SoinPreventifScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class JetDeDouleurScroll : SpellScroll
+	public class CageDeGlaceScroll : SpellScroll
 	{
 		[Constructable]
-		public JetDeDouleurScroll() : this( 1 )
+		public CageDeGlaceScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public JetDeDouleurScroll( int amount ) : base( 707, 7985, amount )
+		public CageDeGlaceScroll(int amount) : base(653, 0x226A, amount)
 		{
-			Name = "Jet de douleur";
+			Name = "CageDeGlace";
 		}
 
-		public JetDeDouleurScroll( Serial serial ) : base( serial )
+		public CageDeGlaceScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 8001, 8002 )]
-	public class FamilierScroll : SpellScroll
+	public class AuraCryogeniseeScroll : SpellScroll
 	{
 		[Constructable]
-		public FamilierScroll() : this( 1 )
+		public AuraCryogeniseeScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public FamilierScroll( int amount ) : base( 708, 8001, amount )
+		public AuraCryogeniseeScroll(int amount) : base(654, 0x226A, amount)
 		{
-			Name = "Familier";
+			Name = "AuraCryogenisee";
 		}
 
-		public FamilierScroll( Serial serial ) : base( serial )
+		public AuraCryogeniseeScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7999, 8000 )]
-	public class DefraicheurScroll : SpellScroll
+	public class PieuxDeGlaceScroll : SpellScroll
 	{
 		[Constructable]
-		public DefraicheurScroll() : this( 1 )
+		public PieuxDeGlaceScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DefraicheurScroll( int amount ) : base( 709, 7999, amount )
+		public PieuxDeGlaceScroll(int amount) : base(655, 0x226A, amount)
 		{
-			Name = "Défraîcheur";
+			Name = "PieuxDeGlace";
 		}
 
-		public DefraicheurScroll( Serial serial ) : base( serial )
+		public PieuxDeGlaceScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7993, 7994 )]
-	public class StrangulaireScroll : SpellScroll
+	public class CerveauGeleScroll : SpellScroll
 	{
 		[Constructable]
-		public StrangulaireScroll() : this( 1 )
+		public CerveauGeleScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public StrangulaireScroll( int amount ) : base( 710, 7993, amount )
+		public CerveauGeleScroll(int amount) : base(656, 0x226A, amount)
 		{
-			Name = "Strangulaire";
+			Name = "CerveauGele";
 		}
 
-		public StrangulaireScroll( Serial serial ) : base( serial )
+		public CerveauGeleScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
+	public class AuraRefrigeranteScroll : SpellScroll
+	{
+		[Constructable]
+		public AuraRefrigeranteScroll() : this(1)
+		{
+		}
 
-	[FlipableAttribute( 7987, 7988 )]
+		[Constructable]
+		public AuraRefrigeranteScroll(int amount) : base(657, 0x226A, amount)
+		{
+			Name = "AuraRefrigerante";
+		}
+
+		public AuraRefrigeranteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AvatarDuFroidScroll : SpellScroll
+	{
+		[Constructable]
+		public AvatarDuFroidScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AvatarDuFroidScroll(int amount) : base(658, 0x226A, amount)
+		{
+			Name = "AvatarDuFroid";
+		}
+
+		public AvatarDuFroidScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BlizzardScroll : SpellScroll
+	{
+		[Constructable]
+		public BlizzardScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public BlizzardScroll(int amount) : base(659, 0x226A, amount)
+		{
+			Name = "Blizzard";
+		}
+
+		public BlizzardScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SecondSouffleScroll : SpellScroll
+	{
+		[Constructable]
+		public SecondSouffleScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SecondSouffleScroll(int amount) : base(660, 0x226C, amount)
+		{
+			Name = "SecondSouffle";
+		}
+
+		public SecondSouffleScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class ProvocationScroll : SpellScroll
+	{
+		[Constructable]
+		public ProvocationScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public ProvocationScroll(int amount) : base(661, 0x226C, amount)
+		{
+			Name = "Provocation";
+		}
+
+		public ProvocationScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SautDevastateurScroll : SpellScroll
+	{
+		[Constructable]
+		public SautDevastateurScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SautDevastateurScroll(int amount) : base(662, 0x226C, amount)
+		{
+			Name = "SautDevastateur";
+		}
+
+		public SautDevastateurScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class DuelScroll : SpellScroll
+	{
+		[Constructable]
+		public DuelScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public DuelScroll(int amount) : base(663, 0x226C, amount)
+		{
+			Name = "Duel";
+		}
+
+		public DuelScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class ChargeFurieuseScroll : SpellScroll
+	{
+		[Constructable]
+		public ChargeFurieuseScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public ChargeFurieuseScroll(int amount) : base(664, 0x226C, amount)
+		{
+			Name = "ChargeFurieuse";
+		}
+
+		public ChargeFurieuseScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class EnrageScroll : SpellScroll
+	{
+		[Constructable]
+		public EnrageScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public EnrageScroll(int amount) : base(665, 0x226C, amount)
+		{
+			Name = "Enrage";
+		}
+
+		public EnrageScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BouclierMagiqueScroll : SpellScroll
+	{
+		[Constructable]
+		public BouclierMagiqueScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public BouclierMagiqueScroll(int amount) : base(666, 0x226C, amount)
+		{
+			Name = "BouclierMagique";
+		}
+
+		public BouclierMagiqueScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CommandementScroll : SpellScroll
+	{
+		[Constructable]
+		public CommandementScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CommandementScroll(int amount) : base(667, 0x226C, amount)
+		{
+			Name = "Commandement";
+		}
+
+		public CommandementScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class PresenceInspiranteScroll : SpellScroll
+	{
+		[Constructable]
+		public PresenceInspiranteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public PresenceInspiranteScroll(int amount) : base(668, 0x226C, amount)
+		{
+			Name = "PresenceInspirante";
+		}
+
+		public PresenceInspiranteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AngeGardienScroll : SpellScroll
+	{
+		[Constructable]
+		public AngeGardienScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AngeGardienScroll(int amount) : base(669, 0x226C, amount)
+		{
+			Name = "AngeGardien";
+		}
+
+		public AngeGardienScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class DiversionScroll : SpellScroll
+	{
+		[Constructable]
+		public DiversionScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public DiversionScroll(int amount) : base(670, 0x226E, amount)
+		{
+			Name = "Diversion";
+		}
+
+		public DiversionScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CalmeToiScroll : SpellScroll
+	{
+		[Constructable]
+		public CalmeToiScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CalmeToiScroll(int amount) : base(671, 0x226E, amount)
+		{
+			Name = "CalmeToi";
+		}
+
+		public CalmeToiScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class DesorienterScroll : SpellScroll
+	{
+		[Constructable]
+		public DesorienterScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public DesorienterScroll(int amount) : base(672, 0x226E, amount)
+		{
+			Name = "Desorienter";
+		}
+
+		public DesorienterScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	
+	public class DefiScroll : SpellScroll
+	{
+		[Constructable]
+		public DefiScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public DefiScroll(int amount) : base(673, 0x226E, amount)
+		{
+			Name = "Defi";
+		}
+
+		public DefiScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class DecrescendoManiaqueScroll : SpellScroll
+	{
+		[Constructable]
+		public DecrescendoManiaqueScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public DecrescendoManiaqueScroll(int amount) : base(674, 0x226E, amount)
+		{
+			Name = "DecrescendoManiaque";
+		}
+
+		public DecrescendoManiaqueScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class InspirationElementaireScroll : SpellScroll
+	{
+		[Constructable]
+		public InspirationElementaireScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public InspirationElementaireScroll(int amount) : base(675, 0x226E, amount)
+		{
+			Name = "InspirationElementaire";
+		}
+
+		public InspirationElementaireScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AbsorbationSonoreScroll : SpellScroll
+	{
+		[Constructable]
+		public AbsorbationSonoreScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AbsorbationSonoreScroll(int amount) : base(676, 0x226E, amount)
+		{
+			Name = "AbsorbationSonore";
+		}
+
+		public AbsorbationSonoreScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class ParfaiteAspirationScroll : SpellScroll
+	{
+		[Constructable]
+		public ParfaiteAspirationScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public ParfaiteAspirationScroll(int amount) : base(677, 0x226E, amount)
+		{
+			Name = "ParfaiteAspiration";
+		}
+
+		public ParfaiteAspirationScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class RevelationDiscordanteScroll : SpellScroll
+	{
+		[Constructable]
+		public RevelationDiscordanteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public RevelationDiscordanteScroll(int amount) : base(678, 0x226E, amount)
+		{
+			Name = "RevelationDiscordante";
+		}
+
+		public RevelationDiscordanteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class HavreDePaixScroll : SpellScroll
+	{
+		[Constructable]
+		public HavreDePaixScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public HavreDePaixScroll(int amount) : base(679, 0x226E, amount)
+		{
+			Name = "HavreDePaix";
+		}
+
+		public HavreDePaixScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SoifDeSangScroll : SpellScroll
+	{
+		[Constructable]
+		public SoifDeSangScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SoifDeSangScroll(int amount) : base(680, 0x2270, amount)
+		{
+			Name = "SoifDeSang";
+		}
+
+		public SoifDeSangScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class ToucheAbsorbantScroll : SpellScroll
+	{
+		[Constructable]
+		public ToucheAbsorbantScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public ToucheAbsorbantScroll(int amount) : base(681, 0x2270, amount)
+		{
+			Name = "ToucheAbsorbant";
+		}
+
+		public ToucheAbsorbantScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class InfectionScroll : SpellScroll
+	{
+		[Constructable]
+		public InfectionScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public InfectionScroll(int amount) : base(682, 0x2270, amount)
+		{
+			Name = "Infection";
+		}
+
+		public InfectionScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class ArmureOsScroll : SpellScroll
+	{
+		[Constructable]
+		public ArmureOsScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public ArmureOsScroll(int amount) : base(683, 0x2270, amount)
+		{
+			Name = "ArmureOs";
+		}
+
+		public ArmureOsScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FamilierMorbideScroll : SpellScroll
+	{
+		[Constructable]
+		public FamilierMorbideScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FamilierMorbideScroll(int amount) : base(684, 0x2270, amount)
+		{
+			Name = "FamilierMorbide";
+		}
+
+		public FamilierMorbideScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
 	public class ReanimationScroll : SpellScroll
 	{
 		[Constructable]
-		public ReanimationScroll() : this( 1 )
+		public ReanimationScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ReanimationScroll( int amount ) : base( 711, 7987, amount )
+		public ReanimationScroll(int amount) : base(685, 0x2270, amount)
 		{
-			Name = "Réanimation";
+			Name = "Reanimation";
 		}
 
-		public ReanimationScroll( Serial serial ) : base( serial )
+		public ReanimationScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class AppelDeLaLicheScroll : SpellScroll
+	public class ConsommationMortelleScroll : SpellScroll
 	{
 		[Constructable]
-		public AppelDeLaLicheScroll() : this( 1 )
+		public ConsommationMortelleScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public AppelDeLaLicheScroll( int amount ) : base( 712, 7985, amount )
+		public ConsommationMortelleScroll(int amount) : base(686, 0x2270, amount)
 		{
-			Name = "Appel de la liche";
+			Name = "ConsommationMortelle";
 		}
 
-		public AppelDeLaLicheScroll( Serial serial ) : base( serial )
+		public ConsommationMortelleScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}
 	}
-
-	[FlipableAttribute( 7985, 7986 )]
-	public class InsurectionScroll : SpellScroll
+	public class AuraVampiriqueScroll : SpellScroll
 	{
 		[Constructable]
-		public InsurectionScroll() : this( 1 )
+		public AuraVampiriqueScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public InsurectionScroll( int amount ) : base( 713, 7985, amount )
+		public AuraVampiriqueScroll(int amount) : base(687, 0x2270, amount)
 		{
-			Name = "Insurrection";
+			Name = "AuraVampirique";
 		}
 
-		public InsurectionScroll( Serial serial ) : base( serial )
+		public AuraVampiriqueScroll(Serial serial) : base(serial)
 		{
 		}
 
-		public override void Serialize( GenericWriter writer )
+		public override void Serialize(GenericWriter writer)
 		{
-			base.Serialize( writer );
+			base.Serialize(writer);
 
-			writer.Write( (int) 0 ); // version
+			writer.Write((int)0); // version
 		}
 
-		public override void Deserialize( GenericReader reader )
+		public override void Deserialize(GenericReader reader)
 		{
-			base.Deserialize( reader );
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AppelDuSangScroll : SpellScroll
+	{
+		[Constructable]
+		public AppelDuSangScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AppelDuSangScroll(int amount) : base(688, 0x2270, amount)
+		{
+			Name = "AppelDuSang";
+		}
+
+		public AppelDuSangScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class PluieDeSangScroll : SpellScroll
+	{
+		[Constructable]
+		public PluieDeSangScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public PluieDeSangScroll(int amount) : base(689, 0x2270, amount)
+		{
+			Name = "PluieDeSang";
+		}
+
+		public PluieDeSangScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeCycloniqueScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeCycloniqueScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeCycloniqueScroll(int amount) : base(690, 0x2272, amount)
+		{
+			Name = "FormeCyclonique";
+		}
+
+		public FormeCycloniqueScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeMetalliqueScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeMetalliqueScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeMetalliqueScroll(int amount) : base(691, 0x2272, amount)
+		{
+			Name = "FormeMetallique";
+		}
+
+		public FormeMetalliqueScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeTerrestreScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeTerrestreScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeTerrestreScroll(int amount) : base(692, 0x2272, amount)
+		{
+			Name = "FormeTerrestre";
+		}
+
+		public FormeTerrestreScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeEmpoisonneeScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeEmpoisonneeScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeEmpoisonneeScroll(int amount) : base(693, 0x2272, amount)
+		{
+			Name = "FormeEmpoisonnee";
+		}
+
+		public FormeEmpoisonneeScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeGivranteScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeGivranteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeGivranteScroll(int amount) : base(694, 0x2272, amount)
+		{
+			Name = "FormeGivrante";
+		}
+
+		public FormeGivranteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeLiquideScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeLiquideScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeLiquideScroll(int amount) : base(695, 0x2272, amount)
+		{
+			Name = "FormeLiquide";
+		}
+
+		public FormeLiquideScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeCristallineScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeCristallineScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeCristallineScroll(int amount) : base(696, 0x2272, amount)
+		{
+			Name = "FormeCristalline";
+		}
+
+		public FormeCristallineScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeElectrisanteScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeElectrisanteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeElectrisanteScroll(int amount) : base(697, 0x2272, amount)
+		{
+			Name = "FormeElectrisante";
+		}
+
+		public FormeElectrisanteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeEnflammeeScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeEnflammeeScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeEnflammeeScroll(int amount) : base(698, 0x2272, amount)
+		{
+			Name = "FormeEnflammee";
+		}
+
+		public FormeEnflammeeScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FormeEnsanglanteeScroll : SpellScroll
+	{
+		[Constructable]
+		public FormeEnsanglanteeScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FormeEnsanglanteeScroll(int amount) : base(699, 0x2272, amount)
+		{
+			Name = "FormeEnsanglantee";
+		}
+
+		public FormeEnsanglanteeScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	
+	public class BouclierDeFeuScroll : SpellScroll
+	{
+		[Constructable]
+		public BouclierDeFeuScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public BouclierDeFeuScroll(int amount) : base(700, 0x2274, amount)
+		{
+			Name = "BouclierDeFeu";
+		}
+
+		public BouclierDeFeuScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BouleDeFeuScroll : SpellScroll
+	{
+		[Constructable]
+		public BouleDeFeuScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public BouleDeFeuScroll(int amount) : base(701, 0x2274, amount)
+		{
+			Name = "BouleDeFeu";
+		}
+
+		public BouleDeFeuScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CeleriteScroll : SpellScroll
+	{
+		[Constructable]
+		public CeleriteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CeleriteScroll(int amount) : base(702, 0x2274, amount)
+		{
+			Name = "Celerite";
+		}
+
+		public CeleriteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SupernovaScroll : SpellScroll
+	{
+		[Constructable]
+		public SupernovaScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SupernovaScroll(int amount) : base(703, 0x2274, amount)
+		{
+			Name = "Supernova";
+		}
+
+		public SupernovaScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AuraRechauffanteScroll : SpellScroll
+	{
+		[Constructable]
+		public AuraRechauffanteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AuraRechauffanteScroll(int amount) : base(704, 0x2274, amount)
+		{
+			Name = "AuraRechauffante";
+		}
+
+		public AuraRechauffanteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FrenesieDouloureuseScroll : SpellScroll
+	{
+		[Constructable]
+		public FrenesieDouloureuseScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FrenesieDouloureuseScroll(int amount) : base(705, 0x2274, amount)
+		{
+			Name = "FrenesieDouloureuse";
+		}
+
+		public FrenesieDouloureuseScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class FolieArdenteScroll : SpellScroll
+	{
+		[Constructable]
+		public FolieArdenteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public FolieArdenteScroll(int amount) : base(706, 0x2274, amount)
+		{
+			Name = "FolieArdente";
+		}
+
+		public FolieArdenteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AuraExaltationScroll : SpellScroll
+	{
+		[Constructable]
+		public AuraExaltationScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AuraExaltationScroll(int amount) : base(707, 0x2274, amount)
+		{
+			Name = "AuraExaltation";
+		}
+
+		public AuraExaltationScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CageDeFeuScroll : SpellScroll
+	{
+		[Constructable]
+		public CageDeFeuScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CageDeFeuScroll(int amount) : base(708, 0x2274, amount)
+		{
+			Name = "CageDeFeu";
+		}
+
+		public CageDeFeuScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class PassionArdenteScroll : SpellScroll
+	{
+		[Constructable]
+		public PassionArdenteScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public PassionArdenteScroll(int amount) : base(709, 0x2274, amount)
+		{
+			Name = "PassionArdente";
+		}
+
+		public PassionArdenteScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AdrenalineScroll : SpellScroll
+	{
+		[Constructable]
+		public AdrenalineScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AdrenalineScroll(int amount) : base(710, 0x2276, amount)
+		{
+			Name = "Adrenaline";
+		}
+
+		public AdrenalineScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SommeilScroll : SpellScroll
+	{
+		[Constructable]
+		public SommeilScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SommeilScroll(int amount) : base(711, 0x2276, amount)
+		{
+			Name = "Sommeil";
+		}
+
+		public SommeilScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class LancerPrecisScroll : SpellScroll
+	{
+		[Constructable]
+		public LancerPrecisScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public LancerPrecisScroll(int amount) : base(712, 0x2276, amount)
+		{
+			Name = "LancerPrecis";
+		}
+
+		public LancerPrecisScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CoupArriereScroll : SpellScroll
+	{
+		[Constructable]
+		public CoupArriereScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CoupArriereScroll(int amount) : base(713, 0x2276, amount)
+		{
+			Name = "CoupArriere";
+		}
+
+		public CoupArriereScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class EvasionScroll : SpellScroll
+	{
+		[Constructable]
+		public EvasionScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public EvasionScroll(int amount) : base(714, 0x2276, amount)
+		{
+			Name = "Evasion";
+		}
+
+		public EvasionScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AttiranceScroll : SpellScroll
+	{
+		[Constructable]
+		public AttiranceScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AttiranceScroll(int amount) : base(715, 0x2276, amount)
+		{
+			Name = "Attirance";
+		}
+
+		public AttiranceScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class MainBlesseeScroll : SpellScroll
+	{
+		[Constructable]
+		public MainBlesseeScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public MainBlesseeScroll(int amount) : base(716, 0x2276, amount)
+		{
+			Name = "MainBlessee";
+		}
+
+		public MainBlesseeScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CoupureDesTendonsScroll : SpellScroll
+	{
+		[Constructable]
+		public CoupureDesTendonsScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CoupureDesTendonsScroll(int amount) : base(717, 0x2276, amount)
+		{
+			Name = "CoupureDesTendons";
+		}
+
+		public CoupureDesTendonsScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class GazEndormantScroll : SpellScroll
+	{
+		[Constructable]
+		public GazEndormantScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public GazEndormantScroll(int amount) : base(718, 0x2276, amount)
+		{
+			Name = "GazEndormant";
+		}
+
+		public GazEndormantScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class CoupMortelScroll : SpellScroll
+	{
+		[Constructable]
+		public CoupMortelScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public CoupMortelScroll(int amount) : base(719, 0x2276, amount)
+		{
+			Name = "CoupMortel";
+		}
+
+		public CoupMortelScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class TotemDeFeuScroll : SpellScroll
+	{
+		[Constructable]
+		public TotemDeFeuScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public TotemDeFeuScroll(int amount) : base(720, 0x2278, amount)
+		{
+			Name = "TotemDeFeu";
+		}
+
+		public TotemDeFeuScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class TotemDeauScroll : SpellScroll
+	{
+		[Constructable]
+		public TotemDeauScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public TotemDeauScroll(int amount) : base(721, 0x2276, amount)
+		{
+			Name = "TotemDeau";
+		}
+
+		public TotemDeauScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class TotemDeTerreScroll : SpellScroll
+	{
+		[Constructable]
+		public TotemDeTerreScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public TotemDeTerreScroll(int amount) : base(722, 0x2276, amount)
+		{
+			Name = "TotemDeTerre";
+		}
+
+		public TotemDeTerreScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class TotemDeVentScroll : SpellScroll
+	{
+		[Constructable]
+		public TotemDeVentScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public TotemDeVentScroll(int amount) : base(723, 0x2276, amount)
+		{
+			Name = "TotemDeVent";
+		}
+
+		public TotemDeVentScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AbsorbationScroll : SpellScroll
+	{
+		[Constructable]
+		public AbsorbationScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AbsorbationScroll(int amount) : base(724, 0x2276, amount)
+		{
+			Name = "Absorbation";
+		}
+
+		public AbsorbationScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class LierParEspritScroll : SpellScroll
+	{
+		[Constructable]
+		public LierParEspritScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public LierParEspritScroll(int amount) : base(725, 0x2276, amount)
+		{
+			Name = "LierParEsprit";
+		}
+
+		public LierParEspritScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class SuperChargeurScroll : SpellScroll
+	{
+		[Constructable]
+		public SuperChargeurScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public SuperChargeurScroll(int amount) : base(726, 0x2276, amount)
+		{
+			Name = "SuperChargeur";
+		}
+
+		public SuperChargeurScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class MurTotemiqueScroll : SpellScroll
+	{
+		[Constructable]
+		public MurTotemiqueScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public MurTotemiqueScroll(int amount) : base(727, 0x2276, amount)
+		{
+			Name = "MurTotemique";
+		}
+
+		public MurTotemiqueScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class AppelSpirituelScroll : SpellScroll
+	{
+		[Constructable]
+		public AppelSpirituelScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public AppelSpirituelScroll(int amount) : base(728, 0x2276, amount)
+		{
+			Name = "AppelSpirituel";
+		}
+
+		public AppelSpirituelScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class MarcheAsuivreScroll : SpellScroll
+	{
+		[Constructable]
+		public MarcheAsuivreScroll() : this(1)
+		{
+		}
+
+		[Constructable]
+		public MarcheAsuivreScroll(int amount) : base(729, 0x2276, amount)
+		{
+			Name = "MarcheAsuivre";
+		}
+
+		public MarcheAsuivreScroll(Serial serial) : base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
 
 			int version = reader.ReadInt();
 		}

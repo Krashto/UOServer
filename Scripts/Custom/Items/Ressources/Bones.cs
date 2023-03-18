@@ -5,7 +5,7 @@ namespace Server.Items
 {
     public abstract class BaseBone : Item
     {
-        protected virtual CraftResource DefaultResource => CraftResource.RegularBone;
+        protected virtual CraftResource DefaultResource => CraftResource.PlainoisBone;
 
         private CraftResource m_Resource;
         public BaseBone(CraftResource resource)
@@ -140,7 +140,7 @@ namespace Server.Items
 
         [Constructable]
         public Bone(int amount)
-            : base(CraftResource.RegularBone, amount)
+            : base(CraftResource.PlainoisBone, amount)
         {
         }
 

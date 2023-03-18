@@ -8,6 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 	public class FormeEnsangleeSpell : Spell
 	{
 		private static Hashtable m_Timers = new Hashtable();
+		private static Hashtable m_Table = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
 				"Forme ensanglantée", "Kal Vas Xen Hur",
@@ -20,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Reagent.Nightshade
 			);
 
-		public override int RequiredAptitudeValue { get { return 6; } }
+		public override int RequiredAptitudeValue { get { return 10; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Polymorphie }; } }
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -32,25 +33,25 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				StopTimer(Caster);
-			}
+			else if (Caster.BodyMod != 0)
+				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				if (Caster.BodyMod == 0)
-				{
-					var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30, 1.8);
 
-					Caster.BodyMod = 159;
+				Caster.BodyMod = 159;
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
-				}
-				else
-				{
-					Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-				}
+				var value = 40 - SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Polymorphie);
+
+				var mod = new ResistanceMod(ResistanceType.Fire, -(int)value);
+
+				m_Table[Caster] = mod;
+				Caster.AddResistanceMod(mod);
+
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 			}
 
 			FinishSequence();
@@ -58,7 +59,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public static bool IsActive(Mobile m)
 		{
-			return m_Timers.ContainsKey(m);
+			return m_Table.ContainsKey(m);
 		}
 
 		public void StopTimer(Mobile m)

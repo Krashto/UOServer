@@ -21,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
-		public override SkillName CastSkill { get { return SkillName.Healing; } }
+		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public CerveauGeleSpell(Mobile caster, Item scroll)
@@ -48,7 +48,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				Disturb(m);
 
-				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m) || ExplosionDeGlaceSpell.IsActive(m)))
+				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m) || PieuxDeGlaceSpell.IsActive(m)))
 					m.Damage(m.Hits - m.HitsMax / 2);
 
 				source.MovingParticles(m, 0x36D4, 7, 0, false, true, 1941, 0, 9502, 4019, 0x160, 0);

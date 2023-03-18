@@ -6,7 +6,8 @@ using Server.Mobiles;
 using Server.Custom;
 using Server.Spells.OldSpells;
 using Server.Custom.Aptitudes;
-using Server.Custom.Spells.NewSpells.General;
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Defenseur;
 
 namespace Server.Spells
 {
@@ -144,12 +145,6 @@ namespace Server.Spells
                 CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
                 double chance = m_Caster.Skills[SkillName.Magery].Value / 333;
                 chance += m_Caster.Skills[SkillName.EvalInt].Value / 333;
-
-                //Protection Spell
-                object o = ProtectSpell.Registry[m_Caster];
-
-                if (o != null && o is double)
-                    chance = 1.0; //Cannot be disrupt
 
                 if (chance > Utility.RandomDouble())
                     m_Caster.SendMessage("Vous réussissez à garder votre concentration.");
@@ -434,12 +429,15 @@ namespace Server.Spells
 		public CastTimer m_CastTimer;
 		public AnimTimer m_AnimTimer;
 
-		public virtual bool CheckDisturb( DisturbType type )
+		public virtual bool CheckDisturb(DisturbType type)
 		{
+			if (ParfaiteAspirationSpell.IsActive(m_Caster))
+				return false;
+
 			return true;
 		}
 
-        public void Disturb(DisturbType type)
+		public void Disturb(DisturbType type)
         {
             if (!CheckDisturb(type))
                 return;
@@ -674,22 +672,17 @@ namespace Server.Spells
 
 			GetCastSkills( out minSkill, out maxSkill );
 
-			//if (m_Caster is CustomPlayerMobile && m_Caster.Mounted)
-   //         {
-   //             CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
+			if (m_Caster is CustomPlayerMobile && m_Caster.Mounted)
+			{
+				CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
 
-   //             if (pm.Classe != Classe.Repurgateur && pm.Classe != Classe.Templier && pm.Classe != Classe.Paladin && pm.AccessLevel == AccessLevel.Player)
-   //             {
-			//		int equitation = (int)pm.Skills[SkillName.Equitation].Value / 10;
+				double chance = 100 - (pm.GetCapaciteValue(Custom.Classes.Capacite.Equitation) * 6);
 
-   //                 double chance = 100 - (equitation * 6);
+				if (Utility.Random(0, 100) <= chance)
+					return false;
+			}
 
-   //                 if (Utility.Random(0, 100) <= chance)
-   //                     return false;
-   //             }
-   //         }
-
-            Caster.CheckSkill(CastSkill, 0, 120);
+			Caster.CheckSkill(CastSkill, 0, 120);
 
 			return Caster.CheckSkill( CastSkill, minSkill, maxSkill );
 		}
@@ -719,15 +712,17 @@ namespace Server.Spells
 		{
 			double scalar = 1.0;
 
-            if (Caster is CustomPlayerMobile)
-            {
-                CustomPlayerMobile m = (CustomPlayerMobile)Caster;
-
+            if (Caster.IsPlayer())
                 mana = (int)(mana * (1 - (Caster.Int * 0.003)));
-            }
 
-            if (scalar < 1.0)
-                scalar = 1.0;
+			scalar -= DecrescendoManiaqueSpell.GetValue(Caster) / 100;
+
+			scalar -= AuraPreservationManiaqueSpell.GetValue(Caster) / 100;
+
+			scalar -= MentorSpell.GetValue(Caster) / 100;
+
+			if (scalar < 0)
+				scalar = 0;
 
 			return (int)(mana * scalar);
 		}
@@ -834,6 +829,8 @@ namespace Server.Spells
 
 				if ( CheckHands() )
 					m_Caster.ClearHands();
+
+				MentorSpell.Desactivate(m_Caster);
 
 				return true;
 			}

@@ -16,6 +16,8 @@ using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Custom.Spells;
 using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Multis;
+using Server.Custom.Spells.NewSpells.Defenseur;
+
 
 #endregion
 
@@ -487,7 +489,7 @@ namespace Server.Mobiles
 
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
 		{
-			return AuraDeRemedeSpell.IsActive(this) || FormeMetalliqueSpell.IsActive(this);
+			return InsensibleSpell.IsActive(this) || FormeEnsangleeSpell.IsActive(this);
 		}
 
 		public bool AddEsclave(Mobile m)
@@ -2174,6 +2176,17 @@ namespace Server.Mobiles
 
 			return false;
 		}
+
+		#region [Stats]Max
+		[CommandProperty(AccessLevel.GameMaster)]
+		public override int HitsMax => 50 + (Str / 2) + AosAttributes.GetValue(this, AosAttribute.BonusHits) + DevotionSpell.GetValue(this) + FormeElectrisanteSpell.GetValue(this);
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public override int StamMax => base.StamMax + AosAttributes.GetValue(this, AosAttribute.BonusStam);
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public override int ManaMax => base.ManaMax + AosAttributes.GetValue(this, AosAttribute.BonusMana) + UraliTranceTonic.GetManaBuff(this);
+		#endregion
 
 		public static Hashtable m_SpellTransformation = new Hashtable();
 		public static Hashtable m_SpellName = new Hashtable();

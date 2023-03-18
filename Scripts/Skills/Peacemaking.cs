@@ -12,7 +12,7 @@ namespace Server.SkillHandlers
     {
         public static void Initialize()
         {
-            SkillInfo.Table[(int)SkillName.Peacemaking].Callback = OnUse;
+            //SkillInfo.Table[(int)SkillName.Peacemaking].Callback = OnUse;
         }
 
         public static TimeSpan OnUse(Mobile m)
