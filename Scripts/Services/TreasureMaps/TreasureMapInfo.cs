@@ -545,7 +545,7 @@ namespace Server.Items
 
         public static Type[][] _MaterialTable = new Type[][]
         {
-            new Type[] {  typeof(OakBoard), typeof(AshBoard), typeof(DullCopperIngot), typeof(ShadowIronIngot), typeof(CopperIngot), typeof(ForestierLeather), typeof(DesertiqueLeather), typeof(TaigoisLeather) },
+            new Type[] {  typeof(OakBoard), typeof(AshBoard), typeof(DullCopperIngot), typeof(ShadowIronIngot), typeof(CopperIngot), typeof(ForestierLeather), typeof(DesertiqueLeather), typeof(CollinoisLeather) },
             new Type[] { typeof(YewBoard), typeof(HeartwoodBoard), typeof(BronzeIngot), typeof(GoldIngot), typeof(AgapiteIngot), typeof(SavanoisLeather), typeof(ToundroisLeather), typeof(TropicauxLeather) },
             new Type[] {  typeof(BloodwoodBoard), typeof(FrostwoodBoard), typeof(ValoriteIngot), typeof(VeriteIngot), typeof(MontagnardLeather), typeof(AncienLeather) }
         };

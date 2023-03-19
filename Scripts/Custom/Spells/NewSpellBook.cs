@@ -50,7 +50,7 @@ namespace Server.Items
 			{
 				case CraftResource.ForestierLeather: leatherType = "de lupus"; break;
 				case CraftResource.DesertiqueLeather: leatherType = "reptilien"; break;
-				case CraftResource.TaigoisLeather: leatherType = "de geant"; break;
+				case CraftResource.CollinoisLeather: leatherType = "de geant"; break;
 				case CraftResource.SavanoisLeather: leatherType = "d'ophidien"; break;
 				case CraftResource.ToundroisLeather: leatherType = "d'arachnide"; break;
 				case CraftResource.TropicauxLeather: leatherType = "de dragonique"; break;

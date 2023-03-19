@@ -53,7 +53,7 @@ namespace Server.Items
             Infos.Add(new CoverInfo(CoverType.Valorite, 1071115, CraftResources.GetHue(CraftResource.Valorite)));
             Infos.Add(new CoverInfo(CoverType.Tailoring, 1071098, CraftResources.GetHue(CraftResource.ForestierLeather)));
             Infos.Add(new CoverInfo(CoverType.Tailoring, 1071099, CraftResources.GetHue(CraftResource.DesertiqueLeather)));
-            Infos.Add(new CoverInfo(CoverType.Tailoring, 1071100, CraftResources.GetHue(CraftResource.TaigoisLeather)));
+            Infos.Add(new CoverInfo(CoverType.Tailoring, 1071100, CraftResources.GetHue(CraftResource.CollinoisLeather)));
             Infos.Add(new CoverInfo(CoverType.Oak, 1071410, CraftResources.GetHue(CraftResource.OakWood)));
             Infos.Add(new CoverInfo(CoverType.Ash, 1071411, CraftResources.GetHue(CraftResource.AshWood)));
             Infos.Add(new CoverInfo(CoverType.Yew, 1071412, CraftResources.GetHue(CraftResource.YewWood)));

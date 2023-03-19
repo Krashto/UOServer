@@ -776,7 +776,7 @@ namespace Server.Engines.Craft
             AddSubRes(typeof(PlainoisLeather), "Cuir", 0.0, 1049312);
 			AddSubRes(typeof(ForestierLeather), "Lupus", 65.0, 1049312);
 			AddSubRes(typeof(DesertiqueLeather), "Reptilien", 70.0, 1049312);
-			AddSubRes(typeof(TaigoisLeather), "Geant", 75.0, 1049312);
+			AddSubRes(typeof(CollinoisLeather), "Geant", 75.0, 1049312);
 			AddSubRes(typeof(SavanoisLeather), "Ophidien", 80.0, 1049312);
 			AddSubRes(typeof(ToundroisLeather), "Arachnide", 85.0, 1049312);
 			AddSubRes(typeof(TropicauxLeather), "Dragonique", 90.0, 1049312);

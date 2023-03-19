@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Custom.Classes;
 using Server.Mobiles;
+using System.Security.Cryptography;
 
 namespace Server.Items
 {
@@ -298,7 +299,7 @@ namespace Server.Items
 					case CraftResource.DesertiqueLeather:
 						ar += 4;
 						break;
-					case CraftResource.TaigoisLeather:
+					case CraftResource.CollinoisLeather:
 						ar += 6;
 						break;
 					case CraftResource.SavanoisLeather:
@@ -323,10 +324,10 @@ namespace Server.Items
 				if (Parent is CustomPlayerMobile)
 				{
 					var pm = Parent as CustomPlayerMobile;
-					capaciteBonus = (int)(ar * (pm.GetCapaciteValue(Capacite.Armure) * 0.15));
+					capaciteBonus = (int)(ar * (pm.GetCapaciteValue(Capacite.Armure) * 0.10));
 				}
 
-				ar += -8 + (8 * (int)m_Quality);
+				ar += -8 + (8 * (int)m_Quality) + capaciteBonus;
                 return ScaleArmorByDurability(ar);
             }
         }
@@ -958,12 +959,12 @@ namespace Server.Items
 
         public int ComputeStatBonus(StatType type)
         {
-            if (type == StatType.Str)
-                return StrBonus + Attributes.BonusStr;
+			if (type == StatType.Str)
+				return StrBonus + Attributes.BonusStr + GetBaseBonusStr();
             else if (type == StatType.Dex)
-                return DexBonus + Attributes.BonusDex;
+                return DexBonus + Attributes.BonusDex + GetBaseBonusDex();
             else
-                return IntBonus + Attributes.BonusInt;
+                return IntBonus + Attributes.BonusInt + GetBaseBonusInt();
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -1054,17 +1055,91 @@ namespace Server.Items
 
 			switch (MaterialType)
 			{
-				case AMT.Leather:	resist += 5; break;
-				case AMT.Studded:	resist += 6; break;
-				case AMT.Bone:		resist += 7; break;
-				case AMT.Ringmail:	resist += 8; break;
-				case AMT.Chainmail: resist += 9; break;
-				case AMT.Plate:		resist += 11; break;
+				case AMT.Leather:	resist += 1; break;
+				case AMT.Studded:	resist += 2; break;
+				case AMT.Bone:		resist += 3; break;
+				case AMT.Ringmail:	resist += 4; break;
+				case AMT.Chainmail: resist += 5; break;
+				case AMT.Plate:		resist += 7; break;
 			}
 
-
+			if (Parent is CustomPlayerMobile)
+			{
+				var pm = Parent as CustomPlayerMobile;
+				resist += (int)(resist * (pm.GetCapaciteValue(Capacite.Armure) * 0.10));
+			}
 
 			return resist;
+		}
+
+		
+		public int GetBaseBonusStr()
+		{
+			var offset = 0;
+
+			if (MaterialType == AMT.Bone)
+				offset += CraftResources.GetLevel(Resource);
+			else if (MaterialType == AMT.Plate)
+			{
+				switch (CraftResources.GetLevel(Resource))
+				{
+					default:
+					case 1: offset -= 3; break;
+					case 2: offset -= 3; break;
+					case 3: offset -= 2; break;
+					case 4: offset -= 2; break;
+					case 5: offset -= 1; break;
+					case 6: offset -= 0; break;
+				}
+			}
+
+			return offset;
+		}
+
+		public int GetBaseBonusDex()
+		{
+			var offset = 0;
+
+			if (MaterialType == AMT.Studded)
+				offset += CraftResources.GetLevel(Resource);
+			else if (MaterialType == AMT.Chainmail)
+			{
+				switch (CraftResources.GetLevel(Resource))
+				{
+					default:
+					case 1: offset -= 3; break;
+					case 2: offset -= 3; break;
+					case 3: offset -= 2; break;
+					case 4: offset -= 2; break;
+					case 5: offset -= 1; break;
+					case 6: offset -= 0; break;
+				}
+			}
+
+			return offset;
+		}
+
+		public int GetBaseBonusInt()
+		{
+			var offset = 0;
+
+			if (MaterialType == AMT.Leather)
+				offset += CraftResources.GetLevel(Resource);
+			else if (MaterialType == AMT.Ringmail)
+			{
+				switch(CraftResources.GetLevel(Resource))
+				{
+					default:
+					case 1: offset -= 3; break;
+					case 2: offset -= 3; break; 
+					case 3: offset -= 2; break; 
+					case 4: offset -= 2; break; 
+					case 5: offset -= 1; break; 
+					case 6: offset -= 0; break;
+				}
+			}
+
+			return offset;
 		}
 
 		public int GetBonusByQuality()
@@ -1079,7 +1154,7 @@ namespace Server.Items
 			return 0;
 		}
 
-        public virtual int InitMinHits => 0;
+		public virtual int InitMinHits => 0;
         public virtual int InitMaxHits => 0;
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -2699,7 +2774,7 @@ namespace Server.Items
 				case CraftResource.DesertiqueLeather:
 					Mod += 1;
 					break;
-				case CraftResource.TaigoisLeather:
+				case CraftResource.CollinoisLeather:
 					Mod += 2;
 					break;
 				case CraftResource.SavanoisLeather:
@@ -2752,7 +2827,7 @@ namespace Server.Items
 				case CraftResource.DesertiqueBone:
 					Mod += 1;
 					break;
-				case CraftResource.TaigoisBone:
+				case CraftResource.CollinoisBone:
 					Mod += 2;
 					break;
 				case CraftResource.SavanoisBone:

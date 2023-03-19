@@ -281,23 +281,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1079, 0x1078)]
-    public class TaigoisHides : BaseHides, IScissorable
+    public class CollinoisHides : BaseHides, IScissorable
     {
-        protected override CraftResource DefaultResource => CraftResource.TaigoisLeather;
+        protected override CraftResource DefaultResource => CraftResource.CollinoisLeather;
 
         [Constructable]
-        public TaigoisHides()
+        public CollinoisHides()
             : this(1)
         {
         }
 
         [Constructable]
-        public TaigoisHides(int amount)
-            : base(CraftResource.TaigoisLeather, amount)
+        public CollinoisHides(int amount)
+            : base(CraftResource.CollinoisLeather, amount)
         {
         }
 
-        public TaigoisHides(Serial serial)
+        public CollinoisHides(Serial serial)
             : base(serial)
         {
         }
@@ -327,7 +327,7 @@ namespace Server.Items
                 return false;
             }
 
-            base.ScissorHelper(from, new TaigoisLeather(), 1);
+            base.ScissorHelper(from, new CollinoisLeather(), 1);
 
             return true;
         }
@@ -385,6 +385,7 @@ namespace Server.Items
 			return true;
 		}
 	}
+
 	[Flipable(0x1079, 0x1078)]
 	public class ToundroisHides : BaseHides, IScissorable
 	{
@@ -433,6 +434,58 @@ namespace Server.Items
 			}
 
 			base.ScissorHelper(from, new ToundroisLeather(), 1);
+
+			return true;
+		}
+	}
+	[Flipable(0x1079, 0x1078)]
+	public class VolcaniqueHides : BaseHides, IScissorable
+	{
+		protected override CraftResource DefaultResource => CraftResource.VolcaniqueLeather;
+
+		[Constructable]
+		public VolcaniqueHides()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public VolcaniqueHides(int amount)
+			: base(CraftResource.ToundroisLeather, amount)
+		{
+		}
+
+		public VolcaniqueHides(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+
+		public bool Scissor(Mobile from, Scissors scissors)
+		{
+			if (Deleted || !from.CanSee(this))
+				return false;
+
+			if (!IsChildOf(from.Backpack))
+			{
+				from.SendLocalizedMessage(502437); // Items you wish to cut must be in your backpack
+				return false;
+			}
+
+			base.ScissorHelper(from, new VolcaniqueLeather(), 1);
 
 			return true;
 		}

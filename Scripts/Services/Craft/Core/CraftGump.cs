@@ -326,7 +326,7 @@ namespace Server.Engines.Craft
             new Type[]{ typeof( PlainoisLeather ), typeof( PlainoisHides ) },
             new Type[]{ typeof( ForestierLeather ), typeof(ForestierHides) },
             new Type[]{ typeof(DesertiqueLeather), typeof(DesertiqueHides) },
-            new Type[]{ typeof(TaigoisLeather), typeof(TaigoisHides) },
+            new Type[]{ typeof(CollinoisLeather), typeof(CollinoisHides) },
 			new Type[]{ typeof(SavanoisLeather), typeof(SavanoisHides) },
 			new Type[]{ typeof(ToundroisLeather), typeof(ToundroisHides) },
 			new Type[]{ typeof(TropicauxLeather), typeof(TropicauxHides) },

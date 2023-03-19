@@ -108,7 +108,7 @@ namespace Server.Items
 
                     case CraftResource.ForestierLeather:     m_CraftSystem = DefTailoring.CraftSystem; break;
 					case CraftResource.DesertiqueLeather:	        m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.TaigoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
+					case CraftResource.CollinoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
 					case CraftResource.SavanoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
                     case CraftResource.ToundroisLeather:         m_CraftSystem = DefTailoring.CraftSystem; break;
                     case CraftResource.TropicauxLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
@@ -119,7 +119,7 @@ namespace Server.Items
                     case CraftResource.PlainoisBone:        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
 					case CraftResource.ForestierBone:	            m_CraftSystem = DefBoneTailoring.CraftSystem; break;
 					case CraftResource.DesertiqueBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-					case CraftResource.TaigoisBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
+					case CraftResource.CollinoisBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
                     case CraftResource.SavanoisBone:            m_CraftSystem = DefBoneTailoring.CraftSystem; break;
                     case CraftResource.ToundroisBone:          m_CraftSystem = DefBoneTailoring.CraftSystem; break;
                     case CraftResource.TropicauxBone:         m_CraftSystem = DefBoneTailoring.CraftSystem; break;
@@ -171,7 +171,7 @@ namespace Server.Items
 
 						case CraftResource.ForestierLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
 						case CraftResource.DesertiqueLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.TaigoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.CollinoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
 						case CraftResource.SavanoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
 						case CraftResource.ToundroisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
 						case CraftResource.TropicauxLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
@@ -247,7 +247,7 @@ namespace Server.Items
                         case CraftResource.PlainoisBone:  resItem = new PlainoisBone(); break;
                         case CraftResource.ForestierBone:       resItem = new LupusBone(); break;
                         case CraftResource.DesertiqueBone:     resItem = new DesertiqueBone(); break;
-                        case CraftResource.TaigoisBone:   resItem = new TaigoisBone(); break;
+                        case CraftResource.CollinoisBone:   resItem = new CollinoisBone(); break;
                         case CraftResource.SavanoisBone:      resItem = new SavanoisBone(); break;
                         case CraftResource.ToundroisBone:    resItem = new ToundroisBone(); break;
                         case CraftResource.TropicauxBone:   resItem = new TropicauxBone(); break;
@@ -263,7 +263,7 @@ namespace Server.Items
                         case CraftResource.PlainoisLeather:  resItem = new PlainoisLeather(); break;
                         case CraftResource.ForestierLeather:       resItem = new ForestierLeather(); break;
                         case CraftResource.DesertiqueLeather:     resItem = new DesertiqueLeather(); break;
-                        case CraftResource.TaigoisLeather:   resItem = new TaigoisLeather(); break;
+                        case CraftResource.CollinoisLeather:   resItem = new CollinoisLeather(); break;
                         case CraftResource.SavanoisLeather:      resItem = new SavanoisLeather(); break;
                         case CraftResource.ToundroisLeather:    resItem = new ToundroisLeather(); break;
                         case CraftResource.TropicauxLeather:   resItem = new TropicauxLeather(); break;

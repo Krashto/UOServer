@@ -538,16 +538,34 @@ namespace Server.Engines.Craft
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(IronIngot), 1044022, 00.0, 1044036, 1044269);
-			AddSubRes(typeof(DullCopperIngot), 1044023, 50.0, 1044036, 1044269);
-			AddSubRes(typeof(ShadowIronIngot), 1044024, 55.0, 1044036, 1044269);
-			AddSubRes(typeof(CopperIngot), 1044025, 60.0, 1044036, 1044269);
-			AddSubRes(typeof(BronzeIngot), 1044026, 65.0, 1044036, 1044269);
-			AddSubRes(typeof(GoldIngot), 1044027, 70.0, 1044036, 1044269);
-			AddSubRes(typeof(AgapiteIngot), 1044028, 75.0, 1044036, 1044269);
-			AddSubRes(typeof(VeriteIngot), 1044029, 80.0, 1044036, 1044269);
-			AddSubRes(typeof(ValoriteIngot), 1044030, 90.0, 1044036, 1044269);
-			AddSubRes(typeof(MytherilIngot), "Mytheril", 90.0, 1044269);
+			AddSubRes(typeof(IronIngot), "Fer", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BronzeIngot), "Bronze", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(CopperIngot), "Copper", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(SonneIngot), "Sonne", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ArgentIngot), "Argent", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BorealeIngot), "Boréale", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ChrysteliarIngot), "Chrysteliar", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GlaciasIngot), "Glacias", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LithiarIngot), "Lithiar", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AcierIngot), "Acier", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DurianIngot), "Durian", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(EquilibrumIngot), "Équilibrum", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GoldIngot), "Or", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JolinarIngot), "Jolinar", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JusticiumIngot), "Justicium", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AbyssiumIngot), "Abyssium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BloodiriumIngot), "Bloodirium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(HerbrositeIngot), "Herbrosite", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(KhandariumIngot), "Khandarium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(MytherilIngot), "Mytheril", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(SombralirIngot), "Sombralir", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DraconyrIngot), "Draconyr", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(HeptazionIngot), "Heptazion", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(OceanisIngot), "Océanis", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BraziumIngot), "Brazium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LuneriumIngot), "Lunerium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(MarinarIngot), "Marinar", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 100, "Vous n'avez pas les compétences requises pour forger ce métal.");
 
 			Resmelt = true;
 			Repair = true;

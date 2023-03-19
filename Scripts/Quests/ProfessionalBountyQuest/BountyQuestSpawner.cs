@@ -622,9 +622,9 @@ namespace Server.Engines.Quests
                         break;
                     case 3:
                         if (Utility.RandomBool())
-                            hold.DropItem(new TaigoisLeather(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new CollinoisLeather(Utility.RandomMinMax(20, 40)));
                         else
-                            hold.DropItem(new TaigoisHides(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new CollinoisHides(Utility.RandomMinMax(20, 40)));
                         break;
                 }
 

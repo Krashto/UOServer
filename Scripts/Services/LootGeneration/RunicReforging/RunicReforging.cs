@@ -766,7 +766,7 @@ namespace Server.Items
 
                 case CraftResource.ForestierLeather:
                 case CraftResource.DesertiqueLeather: return Utility.RandomMinMax(1, 2);
-                case CraftResource.TaigoisLeather: return Utility.RandomMinMax(2, 3);
+                case CraftResource.CollinoisLeather: return Utility.RandomMinMax(2, 3);
                 case CraftResource.SavanoisLeather:
                 case CraftResource.ToundroisLeather: return 3;
                 case CraftResource.TropicauxLeather:

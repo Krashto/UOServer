@@ -13,11 +13,9 @@ namespace Server.Items
 		DullCopper,
 		[Description("Fer de l'ombre")]
 		ShadowIron,
-		[Description("Cuivre")]
-        Copper,
+        //Copper,
 		//Bronze,
-		[Description("Or")]
-        Gold,
+        //Gold,
 		[Description("Agapite")]
         Agapite,
 		[Description("Vérite")]
@@ -29,7 +27,7 @@ namespace Server.Items
 		[Description("Bronze")]
 		Bronze = 101,
 		[Description("Cuivre")]
-		Cuivre,
+		Copper,
 		[Description("Sonne")]
 		Sonne,
 		[Description("Argent")]
@@ -49,7 +47,7 @@ namespace Server.Items
 		[Description("Equilibrum")]
 		Equilibrum,
 		[Description("Or")]
-		Or,
+		Gold,
 		[Description("Jolinar")]
 		Jolinar,
 		[Description("Justicium")]
@@ -85,20 +83,20 @@ namespace Server.Items
 		PlainoisLeather = 201,
 		[Description("Forestier")]
 		ForestierLeather,
+		[Description("Collinois")]
+		CollinoisLeather,
 		[Description("Désertique")]
 		DesertiqueLeather,
-		[Description("Taïgois")]
-		TaigoisLeather,
 		[Description("Savanois")]
 		SavanoisLeather,
-		[Description("Toundrois")]
-		ToundroisLeather,
-		[Description("Tropicaux")]
-		TropicauxLeather,
 		[Description("Montagnard")]
 		MontagnardLeather,
 		[Description("Volcanique")]
 		VolcaniqueLeather,
+		[Description("Toundrois")]
+		ToundroisLeather,
+		[Description("Tropicaux")]
+		TropicauxLeather,
 		[Description("Ancien")]
 		AncienLeather,
 
@@ -123,8 +121,8 @@ namespace Server.Items
 		ForestierBone,
 		[Description("Désertique")]
 		DesertiqueBone,
-		[Description("Taïgois")]
-		TaigoisBone,
+		[Description("Collinois")]
+		CollinoisBone,
 		[Description("Savanois")]
 		SavanoisBone,
 		[Description("Toundrois")]
@@ -264,13 +262,13 @@ namespace Server.Items
         public int RunicMaxIntensity { get { return m_RunicMaxIntensity; } set { m_RunicMaxIntensity = value; } }
 
         public static readonly CraftAttributeInfo Blank;
-        public static readonly CraftAttributeInfo DullCopper, ShadowIron, Copper, /*Bronze, */Golden, Agapite, Verite, Valorite/*, Mytheril*/;
+        public static readonly CraftAttributeInfo DullCopper, ShadowIron, /*Copper, Bronze, Golden, */Agapite, Verite, Valorite/*, Mytheril*/;
 		public static readonly CraftAttributeInfo Bronze, Cuivre, Sonne, Argent, Boreale, Chrysteliar, Glacias, Lithiar, Acier, Durian, Equilibrum, Or, Jolinar, Justicium, Abyssium;
 		public static readonly CraftAttributeInfo Bloodirium, Herbrosite, Khandarium, Mytheril, Sombralir, Draconyr, Heptazion, Oceanis, Brazium, Lunerium, Marinar, Nostalgium;
-		public static readonly CraftAttributeInfo LupusLeather, ReptilienLeather, GeantLeather, OphidienLeather, ArachnideLeather, DragoniqueLeather, DemoniaqueLeather, AncienLeather;
+		public static readonly CraftAttributeInfo PlainoisLeather, ForestierLeather, DesertiqueLeather, CollinoisLeather, SavanoisLeather, ToundroisLeather, TropicauxLeather, MontagnardLeather, VolcaniqueLeather, AncienLeather;
         public static readonly CraftAttributeInfo RedScales, YellowScales, BlackScales, GreenScales, WhiteScales, BlueScales;
         public static readonly CraftAttributeInfo OakWood, AshWood, YewWood, Heartwood, Bloodwood, Frostwood;
-		public static readonly CraftAttributeInfo LupusBone, ReptilienBone, GeantBone, OphidienBone, ArachnideBone, DragoniqueBone, DemoniaqueBone, AncienBone;
+		public static readonly CraftAttributeInfo PlainoisBone, ForestierBone, DesertiqueBone, CollinoisBone, SavanoisBone, ToundroisBone, VolcaniqueBone, TropicauxBone, MontagnardBone, AncienBone;
 
 		static CraftAttributeInfo()
         {
@@ -305,19 +303,19 @@ namespace Server.Items
             shadowIron.RunicMinIntensity = 45;
             shadowIron.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo copper = Copper = new CraftAttributeInfo();
+            //CraftAttributeInfo copper = Copper = new CraftAttributeInfo();
 
-            copper.ArmorPhysicalResist = 0;
-            copper.ArmorFireResist = 2;
-            copper.ArmorPoisonResist = 7;
-            copper.ArmorEnergyResist = 2;
-            copper.WeaponPoisonDamage = 10;
-            copper.WeaponEnergyDamage = 20;
-            copper.RunicMinAttributes = 2;
-            copper.RunicMaxAttributes = 3;
+            //copper.ArmorPhysicalResist = 0;
+            //copper.ArmorFireResist = 2;
+            //copper.ArmorPoisonResist = 7;
+            //copper.ArmorEnergyResist = 2;
+            //copper.WeaponPoisonDamage = 10;
+            //copper.WeaponEnergyDamage = 20;
+            //copper.RunicMinAttributes = 2;
+            //copper.RunicMaxAttributes = 3;
 
-            copper.RunicMinIntensity = 50;
-            copper.RunicMaxIntensity = 100;
+            //copper.RunicMinIntensity = 50;
+            //copper.RunicMaxIntensity = 100;
 
             //CraftAttributeInfo bronze = Bronze = new CraftAttributeInfo();
 
@@ -332,21 +330,21 @@ namespace Server.Items
             //bronze.RunicMinIntensity = 55;
             //bronze.RunicMaxIntensity = 100;
 
-            CraftAttributeInfo golden = Golden = new CraftAttributeInfo();
+            //CraftAttributeInfo golden = Golden = new CraftAttributeInfo();
 
-            golden.ArmorPhysicalResist = 0;
-            golden.ArmorFireResist = 2;
-            golden.ArmorColdResist = 2;
-            golden.ArmorEnergyResist = 3;
-            golden.ArmorLuck = 40;
-            golden.ArmorLowerRequirements = 30;
-            golden.WeaponLuck = 40;
-            golden.WeaponLowerRequirements = 50;
-            golden.RunicMinAttributes = 3;
-            golden.RunicMaxAttributes = 4;
+            //golden.ArmorPhysicalResist = 0;
+            //golden.ArmorFireResist = 2;
+            //golden.ArmorColdResist = 2;
+            //golden.ArmorEnergyResist = 3;
+            //golden.ArmorLuck = 40;
+            //golden.ArmorLowerRequirements = 30;
+            //golden.WeaponLuck = 40;
+            //golden.WeaponLowerRequirements = 50;
+            //golden.RunicMinAttributes = 3;
+            //golden.RunicMaxAttributes = 4;
 
-            golden.RunicMinIntensity = 60;
-            golden.RunicMaxIntensity = 100;
+            //golden.RunicMinIntensity = 60;
+            //golden.RunicMaxIntensity = 100;
 
             CraftAttributeInfo agapite = Agapite = new CraftAttributeInfo();
 
@@ -568,253 +566,134 @@ namespace Server.Items
 			marinar.ArmorPoisonResist = 5;
 			marinar.ArmorEnergyResist = 5;
 
-			CraftAttributeInfo continuum = Nostalgium = new CraftAttributeInfo();
+			CraftAttributeInfo nostalgium = Nostalgium = new CraftAttributeInfo();
 
-			continuum.ArmorPhysicalResist = 5;
-			continuum.ArmorPoisonResist = 5;
-			continuum.ArmorEnergyResist = 5;
+			nostalgium.ArmorPhysicalResist = 5;
+			nostalgium.ArmorPoisonResist = 5;
+			nostalgium.ArmorEnergyResist = 5;
 
 			// Cuir
 
-			CraftAttributeInfo lupusLeather = LupusLeather = new CraftAttributeInfo();
+			CraftAttributeInfo plainoisLeather = PlainoisLeather = new CraftAttributeInfo();
 
-			lupusLeather.ArmorPhysicalResist = 0;
-			lupusLeather.ArmorDurability = 50;
-			lupusLeather.ArmorLowerRequirements = 20;
-			lupusLeather.WeaponDurability = 100;
-			lupusLeather.WeaponLowerRequirements = 50;
-			lupusLeather.RunicMinAttributes = 1;
-			lupusLeather.RunicMaxAttributes = 2;
+			plainoisLeather.ArmorPhysicalResist = 1;
 
-			lupusLeather.RunicMinIntensity = 40;
-			lupusLeather.RunicMaxIntensity = 100;
+			CraftAttributeInfo forestierLeather = ForestierLeather = new CraftAttributeInfo();
 
-			CraftAttributeInfo reptilienLeather = ReptilienLeather = new CraftAttributeInfo();
+			forestierLeather.ArmorPhysicalResist = 2;
+			forestierLeather.ArmorPoisonResist = 2;
+			forestierLeather.ArmorColdResist = 2;
 
-			reptilienLeather.ArmorPhysicalResist = 0;
-			reptilienLeather.ArmorFireResist = 2;
-			reptilienLeather.ArmorEnergyResist = 7;
-			reptilienLeather.ArmorDurability = 100;
+			CraftAttributeInfo collinoisLeather = CollinoisLeather = new CraftAttributeInfo();
 
-			reptilienLeather.WeaponColdDamage = 20;
-			reptilienLeather.WeaponDurability = 50;
+			collinoisLeather.ArmorPhysicalResist = 2;
+			collinoisLeather.ArmorColdResist = 2;
+			collinoisLeather.ArmorEnergyResist = 2;
 
-			reptilienLeather.RunicMinAttributes = 2;
-			reptilienLeather.RunicMaxAttributes = 2;
+			CraftAttributeInfo desertiqueLeather = DesertiqueLeather = new CraftAttributeInfo();
 
-			reptilienLeather.RunicMinIntensity = 45;
-			reptilienLeather.RunicMaxIntensity = 100;
+			desertiqueLeather.ArmorPhysicalResist = 3;
+			desertiqueLeather.ArmorFireResist = 3;
+			desertiqueLeather.ArmorPoisonResist = 3;
 
-			CraftAttributeInfo geantLeather = GeantLeather = new CraftAttributeInfo();
+			CraftAttributeInfo savanoisLeather = SavanoisLeather = new CraftAttributeInfo();
 
-			geantLeather.ArmorPhysicalResist = 0;
-			geantLeather.ArmorFireResist = 2;
-			geantLeather.ArmorPoisonResist = 7;
-			geantLeather.ArmorEnergyResist = 2;
-			geantLeather.WeaponPoisonDamage = 10;
-			geantLeather.WeaponEnergyDamage = 20;
-			geantLeather.RunicMinAttributes = 2;
-			geantLeather.RunicMaxAttributes = 3;
+			savanoisLeather.ArmorPhysicalResist = 3;
+			savanoisLeather.ArmorFireResist = 3;
+			savanoisLeather.ArmorEnergyResist = 3;
 
-			geantLeather.RunicMinIntensity = 50;
-			geantLeather.RunicMaxIntensity = 100;
+			CraftAttributeInfo toundroisLeather = ToundroisLeather = new CraftAttributeInfo();
 
-			CraftAttributeInfo ophidienLeather = OphidienLeather = new CraftAttributeInfo();
+			toundroisLeather.ArmorPhysicalResist = 4;
+			toundroisLeather.ArmorPoisonResist = 4;
+			toundroisLeather.ArmorColdResist = 4;
 
-			ophidienLeather.ArmorPhysicalResist = 0;
-			ophidienLeather.ArmorColdResist = 7;
-			ophidienLeather.ArmorPoisonResist = 2;
-			ophidienLeather.ArmorEnergyResist = 2;
-			ophidienLeather.WeaponFireDamage = 40;
-			ophidienLeather.RunicMinAttributes = 3;
-			ophidienLeather.RunicMaxAttributes = 3;
+			CraftAttributeInfo tropicauxLeather = TropicauxLeather = new CraftAttributeInfo();
 
-			ophidienLeather.RunicMinIntensity = 55;
-			ophidienLeather.RunicMaxIntensity = 100;
+			tropicauxLeather.ArmorPhysicalResist = 4;
+			tropicauxLeather.ArmorFireResist = 4;
+			tropicauxLeather.ArmorEnergyResist = 4;
 
-			CraftAttributeInfo arachnideLeather = ArachnideLeather = new CraftAttributeInfo();
+			CraftAttributeInfo montagnardLeather = MontagnardLeather = new CraftAttributeInfo();
 
-			arachnideLeather.ArmorPhysicalResist = 0;
-			arachnideLeather.ArmorFireResist = 2;
-			arachnideLeather.ArmorColdResist = 2;
-			arachnideLeather.ArmorEnergyResist = 3;
-			arachnideLeather.ArmorLuck = 40;
-			arachnideLeather.ArmorLowerRequirements = 30;
-			arachnideLeather.WeaponLuck = 40;
-			arachnideLeather.WeaponLowerRequirements = 50;
-			arachnideLeather.RunicMinAttributes = 3;
-			arachnideLeather.RunicMaxAttributes = 4;
+			montagnardLeather.ArmorPhysicalResist = 5;
+			montagnardLeather.ArmorColdResist = 5;
+			montagnardLeather.ArmorPoisonResist = 5;
 
-			arachnideLeather.RunicMinIntensity = 60;
-			arachnideLeather.RunicMaxIntensity = 100;
+			CraftAttributeInfo volcaniqueLeather = VolcaniqueLeather = new CraftAttributeInfo();
 
-			CraftAttributeInfo dragoniqueLeather = DragoniqueLeather = new CraftAttributeInfo();
-
-			dragoniqueLeather.ArmorPhysicalResist = 1;
-			dragoniqueLeather.ArmorFireResist = 7;
-			dragoniqueLeather.ArmorColdResist = 2;
-			dragoniqueLeather.ArmorPoisonResist = 2;
-			dragoniqueLeather.ArmorEnergyResist = 2;
-			dragoniqueLeather.WeaponColdDamage = 30;
-			dragoniqueLeather.WeaponEnergyDamage = 20;
-			dragoniqueLeather.RunicMinAttributes = 4;
-			dragoniqueLeather.RunicMaxAttributes = 4;
-
-			dragoniqueLeather.RunicMinIntensity = 65;
-			dragoniqueLeather.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo demoniaqueLeather = DemoniaqueLeather = new CraftAttributeInfo();
-
-			demoniaqueLeather.ArmorPhysicalResist = 1;
-			demoniaqueLeather.ArmorFireResist = 4;
-			demoniaqueLeather.ArmorColdResist = 3;
-			demoniaqueLeather.ArmorPoisonResist = 4;
-			demoniaqueLeather.ArmorEnergyResist = 1;
-			demoniaqueLeather.WeaponPoisonDamage = 40;
-			demoniaqueLeather.WeaponEnergyDamage = 20;
-			demoniaqueLeather.RunicMinAttributes = 4;
-			demoniaqueLeather.RunicMaxAttributes = 5;
-
-			demoniaqueLeather.RunicMinIntensity = 70;
-			demoniaqueLeather.RunicMaxIntensity = 100;
+			volcaniqueLeather.ArmorPhysicalResist = 5;
+			volcaniqueLeather.ArmorFireResist = 5;
+			volcaniqueLeather.ArmorEnergyResist = 5;
 
 			CraftAttributeInfo ancienLeather = AncienLeather = new CraftAttributeInfo();
 
-			ancienLeather.ArmorPhysicalResist = 1;
-			ancienLeather.ArmorColdResist = 4;
-			ancienLeather.ArmorPoisonResist = 4;
-			ancienLeather.ArmorEnergyResist = 4;
-			ancienLeather.ArmorDurability = 50;
-			ancienLeather.WeaponFireDamage = 10;
-			ancienLeather.WeaponColdDamage = 20;
-			ancienLeather.WeaponPoisonDamage = 10;
-			ancienLeather.WeaponEnergyDamage = 20;
-			ancienLeather.RunicMinAttributes = 5;
-			ancienLeather.RunicMaxAttributes = 5;
-
-			ancienLeather.RunicMinIntensity = 85;
-			ancienLeather.RunicMaxIntensity = 100;
+			ancienLeather.ArmorPhysicalResist = 6;
+			ancienLeather.ArmorFireResist = 6;
+			ancienLeather.ArmorColdResist = 6;
+			ancienLeather.ArmorPoisonResist = 6;
+			ancienLeather.ArmorEnergyResist = 6;
 
 			// Os
+			CraftAttributeInfo plainoisBone = PlainoisBone = new CraftAttributeInfo();
 
-			CraftAttributeInfo lupusBone = LupusBone = new CraftAttributeInfo();
+			plainoisBone.ArmorPhysicalResist = 1;
 
-			lupusBone.ArmorPhysicalResist = 1;
-			lupusBone.ArmorDurability = 50;
-			lupusBone.ArmorLowerRequirements = 20;
-			lupusBone.WeaponDurability = 100;
-			lupusBone.WeaponLowerRequirements = 50;
-			lupusBone.RunicMinAttributes = 1;
-			lupusBone.RunicMaxAttributes = 2;
+			CraftAttributeInfo forestierBone = ForestierBone = new CraftAttributeInfo();
 
-			lupusBone.RunicMinIntensity = 40;
-			lupusBone.RunicMaxIntensity = 100;
+			forestierBone.ArmorPhysicalResist = 2;
+			forestierBone.ArmorPoisonResist = 2;
+			forestierBone.ArmorColdResist = 2;
 
-			CraftAttributeInfo reptilienBone = ReptilienBone = new CraftAttributeInfo();
+			CraftAttributeInfo collinoisBone = CollinoisBone = new CraftAttributeInfo();
 
-			reptilienBone.ArmorPhysicalResist = 3;
-			reptilienBone.ArmorFireResist = 2;
-			reptilienBone.ArmorEnergyResist = 7;
-			reptilienBone.ArmorDurability = 100;
+			collinoisBone.ArmorPhysicalResist = 2;
+			collinoisBone.ArmorColdResist = 2;
+			collinoisBone.ArmorEnergyResist = 2;
 
-			reptilienBone.WeaponColdDamage = 20;
-			reptilienBone.WeaponDurability = 50;
+			CraftAttributeInfo desertiqueBone = DesertiqueBone = new CraftAttributeInfo();
 
-			reptilienBone.RunicMinAttributes = 2;
-			reptilienBone.RunicMaxAttributes = 2;
+			desertiqueBone.ArmorPhysicalResist = 3;
+			desertiqueBone.ArmorFireResist = 3;
+			desertiqueBone.ArmorPoisonResist = 3;
 
-			reptilienBone.RunicMinIntensity = 45;
-			reptilienBone.RunicMaxIntensity = 100;
+			CraftAttributeInfo savanoisBone = SavanoisBone = new CraftAttributeInfo();
 
-			CraftAttributeInfo geantBone = GeantBone = new CraftAttributeInfo();
+			savanoisBone.ArmorPhysicalResist = 3;
+			savanoisBone.ArmorFireResist = 3;
+			savanoisBone.ArmorEnergyResist = 3;
 
-			geantBone.ArmorPhysicalResist = 2;
-			geantBone.ArmorFireResist = 2;
-			geantBone.ArmorPoisonResist = 7;
-			geantBone.ArmorEnergyResist = 2;
-			geantBone.WeaponPoisonDamage = 10;
-			geantBone.WeaponEnergyDamage = 20;
-			geantBone.RunicMinAttributes = 2;
-			geantBone.RunicMaxAttributes = 3;
+			CraftAttributeInfo toundroisBone = ToundroisBone = new CraftAttributeInfo();
 
-			geantBone.RunicMinIntensity = 50;
-			geantBone.RunicMaxIntensity = 100;
+			toundroisBone.ArmorPhysicalResist = 4;
+			toundroisBone.ArmorPoisonResist = 4;
+			toundroisBone.ArmorColdResist = 4;
 
-			CraftAttributeInfo ophidienBone = OphidienBone = new CraftAttributeInfo();
+			CraftAttributeInfo tropicauxBone = TropicauxBone = new CraftAttributeInfo();
 
-			ophidienBone.ArmorPhysicalResist = 3;
-			ophidienBone.ArmorColdResist = 7;
-			ophidienBone.ArmorPoisonResist = 2;
-			ophidienBone.ArmorEnergyResist = 2;
-			ophidienBone.WeaponFireDamage = 40;
-			ophidienBone.RunicMinAttributes = 3;
-			ophidienBone.RunicMaxAttributes = 3;
+			tropicauxBone.ArmorPhysicalResist = 4;
+			tropicauxBone.ArmorFireResist = 4;
+			tropicauxBone.ArmorEnergyResist = 4;
 
-			ophidienBone.RunicMinIntensity = 55;
-			ophidienBone.RunicMaxIntensity = 100;
+			CraftAttributeInfo montagnardBone = MontagnardBone = new CraftAttributeInfo();
 
-			CraftAttributeInfo arachnideBone = ArachnideBone = new CraftAttributeInfo();
+			montagnardBone.ArmorPhysicalResist = 5;
+			montagnardBone.ArmorColdResist = 5;
+			montagnardBone.ArmorPoisonResist = 5;
 
-			arachnideBone.ArmorPhysicalResist = 2;
-			arachnideBone.ArmorFireResist = 2;
-			arachnideBone.ArmorColdResist = 2;
-			arachnideBone.ArmorEnergyResist = 3;
-			arachnideBone.ArmorLuck = 40;
-			arachnideBone.ArmorLowerRequirements = 30;
-			arachnideBone.WeaponLuck = 40;
-			arachnideBone.WeaponLowerRequirements = 50;
-			arachnideBone.RunicMinAttributes = 3;
-			arachnideBone.RunicMaxAttributes = 4;
+			CraftAttributeInfo volcaniqueBone = VolcaniqueBone = new CraftAttributeInfo();
 
-			arachnideBone.RunicMinIntensity = 60;
-			arachnideBone.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo dragoniqueBone = DragoniqueBone = new CraftAttributeInfo();
-
-			dragoniqueBone.ArmorPhysicalResist = 2;
-			dragoniqueBone.ArmorFireResist = 7;
-			dragoniqueBone.ArmorColdResist = 2;
-			dragoniqueBone.ArmorPoisonResist = 2;
-			dragoniqueBone.ArmorEnergyResist = 2;
-			dragoniqueBone.WeaponColdDamage = 30;
-			dragoniqueBone.WeaponEnergyDamage = 20;
-			dragoniqueBone.RunicMinAttributes = 4;
-			dragoniqueBone.RunicMaxAttributes = 4;
-
-			dragoniqueBone.RunicMinIntensity = 65;
-			dragoniqueBone.RunicMaxIntensity = 100;
-
-			CraftAttributeInfo demoniaqueBone = DemoniaqueBone = new CraftAttributeInfo();
-
-			demoniaqueBone.ArmorPhysicalResist = 4;
-			demoniaqueBone.ArmorFireResist = 4;
-			demoniaqueBone.ArmorColdResist = 3;
-			demoniaqueBone.ArmorPoisonResist = 4;
-			demoniaqueBone.ArmorEnergyResist = 1;
-			demoniaqueBone.WeaponPoisonDamage = 40;
-			demoniaqueBone.WeaponEnergyDamage = 20;
-			demoniaqueBone.RunicMinAttributes = 4;
-			demoniaqueBone.RunicMaxAttributes = 5;
-
-			demoniaqueBone.RunicMinIntensity = 70;
-			demoniaqueBone.RunicMaxIntensity = 100;
+			volcaniqueBone.ArmorPhysicalResist = 5;
+			volcaniqueBone.ArmorFireResist = 5;
+			volcaniqueBone.ArmorEnergyResist = 5;
 
 			CraftAttributeInfo ancienBone = AncienBone = new CraftAttributeInfo();
 
-			ancienBone.ArmorPhysicalResist = 5;
-			ancienBone.ArmorColdResist = 4;
-			ancienBone.ArmorPoisonResist = 4;
-			ancienBone.ArmorEnergyResist = 4;
-			ancienBone.ArmorDurability = 50;
-			ancienBone.WeaponFireDamage = 10;
-			ancienBone.WeaponColdDamage = 20;
-			ancienBone.WeaponPoisonDamage = 10;
-			ancienBone.WeaponEnergyDamage = 20;
-			ancienBone.RunicMinAttributes = 5;
-			ancienBone.RunicMaxAttributes = 5;
-
-			ancienBone.RunicMinIntensity = 85;
-			ancienBone.RunicMaxIntensity = 100;
+			ancienBone.ArmorPhysicalResist = 6;
+			ancienBone.ArmorFireResist = 6;
+			ancienBone.ArmorColdResist = 6;
+			ancienBone.ArmorPoisonResist = 6;
+			ancienBone.ArmorEnergyResist = 6;
 
 
 			CraftAttributeInfo red = RedScales = new CraftAttributeInfo();
@@ -1033,74 +912,98 @@ namespace Server.Items
     {
         private static readonly CraftResourceInfo[] m_MetalInfo = new[]
         {
-            new CraftResourceInfo(0x000, 1053109, "Iron",			1, CraftAttributeInfo.Blank, CraftResource.Iron, typeof(IronIngot), typeof(IronOre), typeof(Granite)),
-            new CraftResourceInfo(0x973, 1053108, "Dull Copper",	1, CraftAttributeInfo.DullCopper,  CraftResource.DullCopper, typeof(DullCopperIngot),  typeof(DullCopperOre),  typeof(DullCopperGranite)),
-            new CraftResourceInfo(0x966, 1053107, "Shadow Iron",	2, CraftAttributeInfo.ShadowIron,  CraftResource.ShadowIron, typeof(ShadowIronIngot),  typeof(ShadowIronOre),  typeof(ShadowIronGranite)),
-            new CraftResourceInfo(0x96D, 1053106, "Copper",			2, CraftAttributeInfo.Copper, CraftResource.Copper, typeof(CopperIngot), typeof(CopperOre), typeof(CopperGranite)),
-            new CraftResourceInfo(0x972, 1053105, "Bronze",			3, CraftAttributeInfo.Bronze, CraftResource.Bronze, typeof(BronzeIngot), typeof(BronzeOre), typeof(BronzeGranite)),
-            new CraftResourceInfo(2843,  1053104, "Gold",			3, CraftAttributeInfo.Golden, CraftResource.Gold, typeof(GoldIngot), typeof(GoldOre), typeof(GoldGranite)),
-            new CraftResourceInfo(1980,  1053103, "Agapite",		4, CraftAttributeInfo.Agapite, CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
-            new CraftResourceInfo(2841,  1053102, "Verite",			4, CraftAttributeInfo.Verite, CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
-            new CraftResourceInfo(2867,  1053101, "Valorite",		5, CraftAttributeInfo.Valorite,  CraftResource.Valorite, typeof(ValoriteIngot),  typeof(ValoriteOre), typeof(ValoriteGranite)),
-			new CraftResourceInfo(1342,  0,		  "Mytheril",		5, CraftAttributeInfo.Mytheril,  CraftResource.Mytheril, typeof(MytherilIngot),  typeof(MytherilOre), typeof(VeriteGranite)),
+            new CraftResourceInfo(0x000,	0, "Iron",			1, CraftAttributeInfo.Blank,		CraftResource.Iron,			typeof( IronIngot ),		typeof( IronOre ) ),
+			new CraftResourceInfo(0x972,	0, "Bronze",		1, CraftAttributeInfo.Bronze,		CraftResource.Bronze,		typeof( BronzeIngot ),		typeof( BronzeOre ) ),
+			new CraftResourceInfo(0x96D,	0, "Cuivre",		1, CraftAttributeInfo.Cuivre,		CraftResource.Copper,       typeof( CopperIngot ),      typeof( CopperOre ) ),
+			new CraftResourceInfo( 1527,	0, "Sonne",			2, CraftAttributeInfo.Sonne,		CraftResource.Sonne,        typeof( SonneIngot ),       typeof( SonneOre ) ),
+			new CraftResourceInfo( 2052,	0, "Argent",		2, CraftAttributeInfo.Argent,		CraftResource.Argent,       typeof( ArgentIngot ),      typeof( ArgentOre ) ),
+			new CraftResourceInfo( 0516,	0, "Boréale",		2, CraftAttributeInfo.Boreale,		CraftResource.Boreale,      typeof( BorealeIngot ),     typeof( BorealeOre ) ),
+			new CraftResourceInfo( 2126,	0, "Chrysteliar",	2, CraftAttributeInfo.Chrysteliar,  CraftResource.Chrysteliar,  typeof( ChrysteliarIngot ), typeof( ChrysteliarOre ) ),
+			new CraftResourceInfo( 2049,	0, "Glacias",		2, CraftAttributeInfo.Glacias,		CraftResource.Glacias,      typeof( GlaciasIngot ),     typeof( GlaciasOre ) ),
+			new CraftResourceInfo( 1043,	0, "Lithiar",		2, CraftAttributeInfo.Lithiar,		CraftResource.Lithiar,      typeof( LithiarIngot ),     typeof( LithiarOre ) ),
+			new CraftResourceInfo( 2262,	0, "Acier",			3, CraftAttributeInfo.Acier,		CraftResource.Acier,        typeof( AcierIngot ),       typeof( AcierOre ) ),
+			new CraftResourceInfo( 2240,	0, "Durian",		3, CraftAttributeInfo.Durian,		CraftResource.Durian,       typeof( DurianIngot ),      typeof( DurianOre ) ),
+			new CraftResourceInfo( 2003,	0, "Equilibrum",	3, CraftAttributeInfo.Equilibrum,   CraftResource.Equilibrum,   typeof( EquilibrumIngot ),  typeof( EquilibrumOre ) ),
+			new CraftResourceInfo( 2843,	0, "Or",			3, CraftAttributeInfo.Or,			CraftResource.Gold,			typeof( GoldIngot ),		typeof( GoldOre ) ),
+			new CraftResourceInfo( 2187,	0, "Jolinar",		3, CraftAttributeInfo.Jolinar,		CraftResource.Jolinar,      typeof( JolinarIngot ),     typeof( JolinarOre ) ),
+			new CraftResourceInfo( 0x8AB,	0, "Justicium",		3, CraftAttributeInfo.Justicium,    CraftResource.Justicium,    typeof( JusticiumIngot ),   typeof( JusticiumOre ) ),
+			new CraftResourceInfo( 1940,	0, "Abyssium",		4, CraftAttributeInfo.Abyssium,		CraftResource.Abyssium,     typeof( AbyssiumIngot ),    typeof( AbyssiumOre ) ),
+			new CraftResourceInfo( 2072,	0, "Bloodirium",	4, CraftAttributeInfo.Bloodirium,	CraftResource.Bloodirium,   typeof( BloodiriumIngot ),  typeof( BloodiriumOre ) ),
+			new CraftResourceInfo( 2006,	0, "Herbrosite",	4, CraftAttributeInfo.Herbrosite,	CraftResource.Herbrosite,   typeof( HerbrositeIngot ),  typeof( HerbrositeOre ) ),
+			new CraftResourceInfo( 2107,	0, "Khandarium",	4, CraftAttributeInfo.Khandarium,	CraftResource.Khandarium,   typeof( KhandariumIngot ),  typeof( KhandariumOre ) ),
+			new CraftResourceInfo(1342,		0, "Mytheril",		4, CraftAttributeInfo.Mytheril,		CraftResource.Mytheril,		typeof( MytherilIngot ),	typeof( MytherilOre ) ),
+			new CraftResourceInfo( 2041,	0, "Sombralir",		4, CraftAttributeInfo.Sombralir,	CraftResource.Sombralir,	typeof( SombralirIngot ),   typeof( SombralirOre ) ),
+			new CraftResourceInfo( 2174,	0, "Draconyr",		5, CraftAttributeInfo.Draconyr,		CraftResource.Draconyr,		typeof( DraconyrIngot ),    typeof( DraconyrOre ) ),
+			new CraftResourceInfo( 2062,	0, "Heptazion",		5, CraftAttributeInfo.Heptazion,    CraftResource.Heptazion,	typeof( HeptazionIngot ),   typeof( HeptazionOre ) ),
+			new CraftResourceInfo( 2045,	0, "Oceanis",		5, CraftAttributeInfo.Oceanis,		CraftResource.Oceanis,		typeof( OceanisIngot ),     typeof( OceanisOre ) ),
+			new CraftResourceInfo( 2160,	0, "Brazium",		5, CraftAttributeInfo.Brazium,		CraftResource.Brazium,		typeof( BraziumIngot ),     typeof( BraziumOre ) ),
+			new CraftResourceInfo( 1944,	0, "Lunerium",		5, CraftAttributeInfo.Lunerium,		CraftResource.Lunerium,		typeof( LuneriumIngot ),    typeof( LuneriumOre ) ),
+			new CraftResourceInfo( 2235,	0, "Marinar",		5, CraftAttributeInfo.Marinar,		CraftResource.Marinar,		typeof( MarinarIngot ),     typeof( MarinarOre ) ),
+			new CraftResourceInfo( 2153,	0, "Nostalgium",	6, CraftAttributeInfo.Nostalgium,	CraftResource.Nostalgium,   typeof( NostalgiumIngot ),  typeof( NostalgiumOre ) ),
+
+			new CraftResourceInfo(0x973, 1053108, "Dull Copper",    1, CraftAttributeInfo.DullCopper,	CraftResource.DullCopper, typeof(DullCopperIngot),  typeof(DullCopperOre),  typeof(DullCopperGranite)),
+			new CraftResourceInfo(0x966, 1053107, "Shadow Iron",    1, CraftAttributeInfo.ShadowIron,	CraftResource.ShadowIron, typeof(ShadowIronIngot),  typeof(ShadowIronOre),  typeof(ShadowIronGranite)),
+			new CraftResourceInfo(1980,  1053103, "Agapite",        1, CraftAttributeInfo.Agapite,		CraftResource.Agapite, typeof(AgapiteIngot), typeof(AgapiteOre), typeof(AgapiteGranite)),
+			new CraftResourceInfo(2841,  1053102, "Verite",         1, CraftAttributeInfo.Verite,		CraftResource.Verite, typeof(VeriteIngot), typeof(VeriteOre), typeof(VeriteGranite)),
+			new CraftResourceInfo(2867,  1053101, "Valorite",       1, CraftAttributeInfo.Valorite,		CraftResource.Valorite, typeof(ValoriteIngot),  typeof(ValoriteOre), typeof(ValoriteGranite)),
 		};
 
         private static readonly CraftResourceInfo[] m_ScaleInfo = new[]
         {
             new CraftResourceInfo(0x66D, 1053129, "Red Scales",		1, CraftAttributeInfo.RedScales, CraftResource.RedScales, typeof(RedScales)),
-            new CraftResourceInfo(0x8A8, 1053130, "Yellow Scales",  1, CraftAttributeInfo.YellowScales,    CraftResource.YellowScales, typeof(YellowScales)),
-            new CraftResourceInfo(0x455, 1053131, "Black Scales",   2, CraftAttributeInfo.BlackScales, CraftResource.BlackScales, typeof(BlackScales)),
-            new CraftResourceInfo(0x851, 1053132, "Green Scales",   3, CraftAttributeInfo.GreenScales, CraftResource.GreenScales, typeof(GreenScales)),
-            new CraftResourceInfo(0x8FD, 1053133, "White Scales",   4, CraftAttributeInfo.WhiteScales, CraftResource.WhiteScales, typeof(WhiteScales)),
-            new CraftResourceInfo(0x8B0, 1053134, "Blue Scales",    5, CraftAttributeInfo.BlueScales, CraftResource.BlueScales, typeof(BlueScales)),
+            new CraftResourceInfo(0x8A8, 1053130, "Yellow Scales",  2, CraftAttributeInfo.YellowScales,    CraftResource.YellowScales, typeof(YellowScales)),
+            new CraftResourceInfo(0x455, 1053131, "Black Scales",   3, CraftAttributeInfo.BlackScales, CraftResource.BlackScales, typeof(BlackScales)),
+            new CraftResourceInfo(0x851, 1053132, "Green Scales",   4, CraftAttributeInfo.GreenScales, CraftResource.GreenScales, typeof(GreenScales)),
+            new CraftResourceInfo(0x8FD, 1053133, "White Scales",   5, CraftAttributeInfo.WhiteScales, CraftResource.WhiteScales, typeof(WhiteScales)),
+            new CraftResourceInfo(0x8B0, 1053134, "Blue Scales",    6, CraftAttributeInfo.BlueScales, CraftResource.BlueScales, typeof(BlueScales)),
         };
 
         private static readonly CraftResourceInfo[] m_AOSLeatherInfo = new[]
         {
-            new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.PlainoisLeather, typeof(PlainoisLeather), typeof(PlainoisHides)),
-			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusLeather,            CraftResource.ForestierLeather,     typeof( ForestierLeather ),     typeof( ForestierHides ) ),
-			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienLeather,      CraftResource.DesertiqueLeather, typeof( DesertiqueLeather ), typeof( DesertiqueHides ) ),
-			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantLeather,          CraftResource.TaigoisLeather,     typeof( TaigoisLeather ),     typeof( TaigoisHides ) ),
-			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienLeather,       CraftResource.SavanoisLeather,  typeof( SavanoisLeather ),  typeof( SavanoisHides ) ),
-			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideLeather,      CraftResource.ToundroisLeather, typeof( ToundroisLeather ), typeof( ToundroisHides ) ),
-			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueLeather,     CraftResource.TropicauxLeather,typeof( TropicauxLeather ),typeof( TropicauxHides ) ),
-			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueLeather,     CraftResource.MontagnardLeather,typeof( MontagnardLeather ),typeof( MontagnardHides ) ),
-			new CraftResourceInfo(1940, 1049356, "Ancien",		5, CraftAttributeInfo.AncienLeather,         CraftResource.AncienLeather,    typeof( AncienLeather ),    typeof( AncienHides ) ),
+            new CraftResourceInfo(0x00, 1049353, "Plainois",	1, CraftAttributeInfo.Blank,				CraftResource.PlainoisLeather,		typeof( PlainoisLeather ),		typeof( PlainoisHides ) ),
+			new CraftResourceInfo(1106, 1049356, "Forestier",	2, CraftAttributeInfo.ForestierLeather,     CraftResource.ForestierLeather,     typeof( ForestierLeather ),     typeof( ForestierHides ) ),
+			new CraftResourceInfo(1711, 1049356, "Collinois",	2, CraftAttributeInfo.CollinoisLeather,		CraftResource.CollinoisLeather,     typeof( CollinoisLeather ),		typeof( CollinoisHides ) ),
+			new CraftResourceInfo(1438, 1049354, "Désertique",	3, CraftAttributeInfo.DesertiqueLeather,	CraftResource.DesertiqueLeather,	typeof( DesertiqueLeather ),	typeof( DesertiqueHides ) ),
+			new CraftResourceInfo(1635, 1049356, "Savanois",	3, CraftAttributeInfo.SavanoisLeather,		CraftResource.SavanoisLeather,		typeof( SavanoisLeather ),		typeof( SavanoisHides ) ),
+			new CraftResourceInfo(2118, 1049356, "Montagnard",	4, CraftAttributeInfo.MontagnardLeather,	CraftResource.MontagnardLeather,	typeof( MontagnardLeather ),	typeof( MontagnardHides ) ),
+			new CraftResourceInfo(2128, 1049356, "Volcanique",	4, CraftAttributeInfo.VolcaniqueLeather,	CraftResource.VolcaniqueLeather,	typeof( ToundroisLeather ),		typeof( ToundroisHides ) ),
+			new CraftResourceInfo(2128, 1049356, "Toundrois",	5, CraftAttributeInfo.ToundroisLeather,     CraftResource.ToundroisLeather,		typeof( VolcaniqueLeather ),	typeof( VolcaniqueHides ) ),
+			new CraftResourceInfo(2174, 1049356, "Tropicaux",	5, CraftAttributeInfo.TropicauxLeather,		CraftResource.TropicauxLeather,		typeof( TropicauxLeather ),		typeof( TropicauxHides ) ),
+			new CraftResourceInfo(1940, 1049356, "Ancien",		6, CraftAttributeInfo.AncienLeather,		CraftResource.AncienLeather,		typeof( AncienLeather ),		typeof( AncienHides ) ),
 
 
 		};
 
 		private static readonly CraftResourceInfo[] m_BoneInfo = new[]
 	   {
-			new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.PlainoisBone, typeof(PlainoisBone)),
-			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusBone,            CraftResource.ForestierBone,     typeof( LupusBone )),
-			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienBone,      CraftResource.DesertiqueBone, typeof( DesertiqueBone ) ),
-			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantBone,          CraftResource.TaigoisBone,     typeof( TaigoisBone ) ),
-			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienBone,       CraftResource.SavanoisBone,  typeof( SavanoisBone ) ),
-			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideBone,      CraftResource.ToundroisBone, typeof( ToundroisBone ) ),
-			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueBone,     CraftResource.TropicauxBone,typeof( TropicauxBone ) ),
-			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueBone,     CraftResource.MontagnardBone,typeof( MontagnardBone ) ),
-			new CraftResourceInfo(1940, 1049356, "Ancien",		5, CraftAttributeInfo.AncienBone,         CraftResource.AncienBone,    typeof( AncienBone )),
-
-
+			new CraftResourceInfo(0x00, 1049353, "Plainois",	1, CraftAttributeInfo.Blank,			CraftResource.PlainoisBone,		typeof( PlainoisBone ) ),
+			new CraftResourceInfo(1106, 1049356, "Forestier",	2, CraftAttributeInfo.ForestierBone,    CraftResource.ForestierBone,    typeof( LupusBone ) ),
+			new CraftResourceInfo(1711, 1049356, "Collinois",	2, CraftAttributeInfo.CollinoisBone,	CraftResource.CollinoisBone,    typeof( CollinoisBone ) ),
+			new CraftResourceInfo(1438, 1049354, "Désertique",	3, CraftAttributeInfo.DesertiqueBone,	CraftResource.DesertiqueBone,	typeof( DesertiqueBone ) ),
+			new CraftResourceInfo(2118, 1049356, "Savanois",	3, CraftAttributeInfo.MontagnardBone,	CraftResource.MontagnardBone,	typeof( MontagnardBone ) ),
+			new CraftResourceInfo(1635, 1049356, "Montagnard",	4, CraftAttributeInfo.SavanoisBone,		CraftResource.SavanoisBone,		typeof( SavanoisBone ) ),
+			new CraftResourceInfo(1635, 1049356, "Volcanique",	4, CraftAttributeInfo.VolcaniqueBone,	CraftResource.VolcaniqueBone,	typeof( VolcaniqueBone ) ),
+			new CraftResourceInfo(2128, 1049356, "Toundrois",	5, CraftAttributeInfo.ToundroisBone,	CraftResource.ToundroisBone,	typeof( ToundroisBone ) ),
+			new CraftResourceInfo(2174, 1049356, "Tropicaux",	5, CraftAttributeInfo.TropicauxBone,	CraftResource.TropicauxBone,	typeof( TropicauxBone ) ),
+			new CraftResourceInfo(1940, 1049356, "Ancien",		6, CraftAttributeInfo.AncienBone,		CraftResource.AncienBone,		typeof( AncienBone ) ),
 		};
 
 		private static readonly CraftResourceInfo[] m_WoodInfo = new[]
         {
-            new CraftResourceInfo(0x000, 1011542, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.RegularWood,    typeof(Log), typeof(Board)),
-            new CraftResourceInfo(0x7DA, 1072533, "Oak",		1, CraftAttributeInfo.OakWood, CraftResource.OakWood, typeof(OakLog), typeof(OakBoard)),
-            new CraftResourceInfo(0x4A7, 1072534, "Ash",		2, CraftAttributeInfo.AshWood, CraftResource.AshWood, typeof(AshLog), typeof(AshBoard)),
-            new CraftResourceInfo(0x4A8, 1072535, "Yew",		2, CraftAttributeInfo.YewWood, CraftResource.YewWood, typeof(YewLog), typeof(YewBoard)),
-            new CraftResourceInfo(0x4A9, 1072536, "Heartwood",	3, CraftAttributeInfo.Heartwood,    CraftResource.Heartwood,    typeof(HeartwoodLog),   typeof(HeartwoodBoard)),
-            new CraftResourceInfo(0x4AA, 1072538, "Bloodwood",	4, CraftAttributeInfo.Bloodwood,    CraftResource.Bloodwood,    typeof(BloodwoodLog),   typeof(BloodwoodBoard)),
-            new CraftResourceInfo(0x47F, 1072539, "Frostwood",	5, CraftAttributeInfo.Frostwood,    CraftResource.Frostwood,    typeof(FrostwoodLog),   typeof(FrostwoodBoard)),
+            new CraftResourceInfo(0x000, 1011542, "Normal",		1, CraftAttributeInfo.Blank,		CraftResource.RegularWood,  typeof(Log),			typeof(Board)),
+            new CraftResourceInfo(0x7DA, 1072533, "Oak",		2, CraftAttributeInfo.OakWood,		CraftResource.OakWood,		typeof(OakLog),			typeof(OakBoard)),
+            new CraftResourceInfo(0x4A7, 1072534, "Ash",		3, CraftAttributeInfo.AshWood,		CraftResource.AshWood,		typeof(AshLog),			typeof(AshBoard)),
+            new CraftResourceInfo(0x4A8, 1072535, "Yew",		4, CraftAttributeInfo.YewWood,		CraftResource.YewWood,		typeof(YewLog),			typeof(YewBoard)),
+            new CraftResourceInfo(0x4A9, 1072536, "Heartwood",	5, CraftAttributeInfo.Heartwood,    CraftResource.Heartwood,    typeof(HeartwoodLog),   typeof(HeartwoodBoard)),
+            new CraftResourceInfo(0x4AA, 1072538, "Bloodwood",	6, CraftAttributeInfo.Bloodwood,    CraftResource.Bloodwood,    typeof(BloodwoodLog),   typeof(BloodwoodBoard)),
+            new CraftResourceInfo(0x47F, 1072539, "Frostwood",	6, CraftAttributeInfo.Frostwood,    CraftResource.Frostwood,    typeof(FrostwoodLog),   typeof(FrostwoodBoard)),
         };
 
 		public static int GetLevel(CraftResource resource)
 		{
 			CraftResourceInfo info = GetInfo(resource);
 
-			return info != null ? info.Level : 5;
+			return info != null ? info.Level : 1;
 		}
 
         /// <summary>
@@ -1285,7 +1188,7 @@ namespace Server.Items
             else if (info.Name.IndexOf("Reptilien") >= 0)
                 return CraftResource.DesertiqueLeather;
             else if (info.Name.IndexOf("Geant") >= 0)
-                return CraftResource.TaigoisLeather;
+                return CraftResource.CollinoisLeather;
 
 			else if (info.Name.IndexOf("Ophidien") >= 0)
 				return CraftResource.SavanoisLeather;
@@ -1340,7 +1243,7 @@ namespace Server.Items
                 else if (info.Level == 2)
                     return CraftResource.DesertiqueLeather;
                 else if (info.Level == 3)
-                    return CraftResource.TaigoisLeather;
+                    return CraftResource.CollinoisLeather;
 				else if (info.Level == 4)
 					return CraftResource.SavanoisLeather;
 				else if (info.Level == 5)

@@ -234,23 +234,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class TaigoisLeather : BaseLeather
+    public class CollinoisLeather : BaseLeather
     {
-        protected override CraftResource DefaultResource => CraftResource.TaigoisLeather;
+        protected override CraftResource DefaultResource => CraftResource.CollinoisLeather;
 
         [Constructable]
-        public TaigoisLeather()
+        public CollinoisLeather()
             : this(1)
         {
         }
 
         [Constructable]
-        public TaigoisLeather(int amount)
-            : base(CraftResource.TaigoisLeather, amount)
+        public CollinoisLeather(int amount)
+            : base(CraftResource.CollinoisLeather, amount)
         {
         }
 
-        public TaigoisLeather(Serial serial)
+        public CollinoisLeather(Serial serial)
             : base(serial)
         {
         }
@@ -325,6 +325,42 @@ namespace Server.Items
 		}
 
 		public ToundroisLeather(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	[Flipable(0x1081, 0x1082)]
+	public class VolcaniqueLeather : BaseLeather
+	{
+		protected override CraftResource DefaultResource => CraftResource.VolcaniqueLeather;
+
+		[Constructable]
+		public VolcaniqueLeather()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public VolcaniqueLeather(int amount)
+			: base(CraftResource.ToundroisLeather, amount)
+		{
+		}
+
+		public VolcaniqueLeather(Serial serial)
 			: base(serial)
 		{
 		}

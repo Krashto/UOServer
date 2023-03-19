@@ -239,23 +239,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class TaigoisBone : BaseBone
+    public class CollinoisBone : BaseBone
     {
-        protected override CraftResource DefaultResource => CraftResource.TaigoisBone;
+        protected override CraftResource DefaultResource => CraftResource.CollinoisBone;
 
         [Constructable]
-        public TaigoisBone()
+        public CollinoisBone()
             : this(1)
         {
         }
 
         [Constructable]
-        public TaigoisBone(int amount)
-            : base(CraftResource.TaigoisBone, amount)
+        public CollinoisBone(int amount)
+            : base(CraftResource.CollinoisBone, amount)
         {
         }
 
-        public TaigoisBone(Serial serial)
+        public CollinoisBone(Serial serial)
             : base(serial)
         {
         }
@@ -311,6 +311,44 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
+
+	[Flipable(0x1081, 0x1082)]
+	public class VolcaniqueBone : BaseBone
+	{
+		protected override CraftResource DefaultResource => CraftResource.VolcaniqueBone;
+
+		[Constructable]
+		public VolcaniqueBone()
+			: this(1)
+		{
+		}
+
+		[Constructable]
+		public VolcaniqueBone(int amount)
+			: base(CraftResource.SavanoisBone, amount)
+		{
+		}
+
+		public VolcaniqueBone(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+
 
 	[Flipable(0x1081, 0x1082)]
 	public class ToundroisBone : BaseBone

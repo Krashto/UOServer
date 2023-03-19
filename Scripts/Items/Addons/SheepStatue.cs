@@ -118,7 +118,7 @@ namespace Server.Items
                         case 1: res = new PlainoisLeather(); break;
                         case 2: res = new ForestierLeather(); break;
                         case 3: res = new DesertiqueLeather(); break;
-                        case 4: res = new TaigoisLeather(); break;
+                        case 4: res = new CollinoisLeather(); break;
                     }
 
                     int amount = Math.Min(10, m_ResourceCount);

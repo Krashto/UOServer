@@ -2397,8 +2397,8 @@ namespace Server.Mobiles
 							else leather = new DesertiqueHides(hides);
 							break;
 						case HideType.Geant:
-							if (cutHides) leather = new TaigoisLeather(hides);
-							else leather = new TaigoisHides(hides);
+							if (cutHides) leather = new CollinoisLeather(hides);
+							else leather = new CollinoisHides(hides);
 							break;
 						case HideType.Ophidien:
 							if (cutHides) leather = new SavanoisLeather(hides);
@@ -2451,7 +2451,7 @@ namespace Server.Mobiles
 							 bone = new DesertiqueBone(bones);
 							break;
 						case BoneType.Geant:
-							 bone = new TaigoisBone(bones);
+							 bone = new CollinoisBone(bones);
 							break;
 						case BoneType.Ophidien:
 							bone = new SavanoisBone(bones);
