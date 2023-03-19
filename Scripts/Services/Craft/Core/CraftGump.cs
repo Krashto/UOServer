@@ -323,14 +323,14 @@ namespace Server.Engines.Craft
             new Type[]{ typeof( OakLog ), typeof( OakBoard ) },
             new Type[]{ typeof( AshLog ), typeof( AshBoard ) },
             new Type[]{ typeof( YewLog ), typeof( YewBoard ) },
-            new Type[]{ typeof( Leather ), typeof( Hides ) },
-            new Type[]{ typeof( LupusLeather ), typeof(LupusHides) },
-            new Type[]{ typeof(ReptilienLeather), typeof(ReptilienHides) },
-            new Type[]{ typeof(GeantLeather), typeof(GeantHides) },
-			new Type[]{ typeof(OphidienLeather), typeof(OphidienHides) },
-			new Type[]{ typeof(ArachnideLeather), typeof(ArachnideHides) },
-			new Type[]{ typeof(DragoniqueLeather), typeof(DragoniqueHides) },
-			new Type[]{ typeof(DemoniaqueLeather), typeof(DemoniaqueHides) },
+            new Type[]{ typeof( PlainoisLeather ), typeof( PlainoisHides ) },
+            new Type[]{ typeof( ForestierLeather ), typeof(ForestierHides) },
+            new Type[]{ typeof(DesertiqueLeather), typeof(DesertiqueHides) },
+            new Type[]{ typeof(TaigoisLeather), typeof(TaigoisHides) },
+			new Type[]{ typeof(SavanoisLeather), typeof(SavanoisHides) },
+			new Type[]{ typeof(ToundroisLeather), typeof(ToundroisHides) },
+			new Type[]{ typeof(TropicauxLeather), typeof(TropicauxHides) },
+			new Type[]{ typeof(MontagnardLeather), typeof(MontagnardHides) },
 			new Type[]{ typeof(AncienLeather), typeof(AncienHides) }
 		};
 

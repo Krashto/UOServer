@@ -604,27 +604,27 @@ namespace Server.Engines.Quests
                 {
                     case 0:
                         if (Utility.RandomBool())
-                            hold.DropItem(new Leather(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new PlainoisLeather(Utility.RandomMinMax(20, 40)));
                         else
-                            hold.DropItem(new Hides(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new PlainoisHides(Utility.RandomMinMax(20, 40)));
                         break;
                     case 1:
                         if (Utility.RandomBool())
-                            hold.DropItem(new LupusLeather(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new ForestierLeather(Utility.RandomMinMax(20, 40)));
                         else
-                            hold.DropItem(new LupusHides(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new ForestierHides(Utility.RandomMinMax(20, 40)));
                         break;
                     case 2:
                         if (Utility.RandomBool())
-                            hold.DropItem(new ReptilienLeather(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new DesertiqueLeather(Utility.RandomMinMax(20, 40)));
                         else
-                            hold.DropItem(new ReptilienHides(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new DesertiqueHides(Utility.RandomMinMax(20, 40)));
                         break;
                     case 3:
                         if (Utility.RandomBool())
-                            hold.DropItem(new GeantLeather(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new TaigoisLeather(Utility.RandomMinMax(20, 40)));
                         else
-                            hold.DropItem(new GeantHides(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new TaigoisHides(Utility.RandomMinMax(20, 40)));
                         break;
                 }
 

@@ -357,7 +357,7 @@ namespace Server.Misc
 /*            PlaceItemIn(bag, 92, 59, new BarbedLeather(5000));
             PlaceItemIn(bag, 92, 68, new HornedLeather(5000));
             PlaceItemIn(bag, 92, 76, new SpinedLeather(5000));*/
-            PlaceItemIn(bag, 92, 84, new Leather(5000));
+            PlaceItemIn(bag, 92, 84, new PlainoisLeather(5000));
 
             PlaceItemIn(bag, 30, 118, new Cloth(5000));
             PlaceItemIn(bag, 30, 84, new Board(5000));

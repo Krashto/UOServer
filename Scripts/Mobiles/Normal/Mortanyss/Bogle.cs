@@ -44,7 +44,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Meager);
-            AddLoot(LootPack.LootItem<Bone>());
+            AddLoot(LootPack.LootItem<PlainoisBone>());
         }
 
         public override void Serialize(GenericWriter writer)

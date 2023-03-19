@@ -447,7 +447,7 @@ namespace Server
 
         public static readonly LootPackItem[] MysticRegItems = new[]
         {
-            new LootPackItem(typeof(Bone), 1),
+            new LootPackItem(typeof(PlainoisBone), 1),
             new LootPackItem(typeof(DragonBlood), 1),
             new LootPackItem(typeof(FertileDirt), 1),
             new LootPackItem(typeof(DaemonBone), 1)
@@ -479,7 +479,7 @@ namespace Server
 
         public static readonly LootPackItem[] LootBones = new[]
         {
-            new LootPackItem(typeof(Bone), 1), new LootPackItem(typeof(RibCage), 2),
+            new LootPackItem(typeof(PlainoisBone), 1), new LootPackItem(typeof(RibCage), 2),
             new LootPackItem(typeof(BonePile), 3)
         };
 
@@ -487,7 +487,7 @@ namespace Server
         {
             new LootPackItem(typeof(LeftArm), 1), new LootPackItem(typeof(RightArm), 1),
             new LootPackItem(typeof(Torso), 1), new LootPackItem(typeof(RightLeg), 1),
-            new LootPackItem(typeof(LeftLeg), 1), new LootPackItem(typeof(Bone), 1),
+            new LootPackItem(typeof(LeftLeg), 1), new LootPackItem(typeof(PlainoisBone), 1),
             new LootPackItem(typeof(RibCage), 1), new LootPackItem(typeof(BonePile), 1)
         };
 
@@ -512,9 +512,9 @@ namespace Server
 		{
 				new LootPackItem( typeof( Bandage ), 3 ),
 				new LootPackItem( typeof( Bottle ), 1 ),
-				new LootPackItem( typeof( Hides ), 1 ),
+				new LootPackItem( typeof( PlainoisHides ), 1 ),
 				new LootPackItem( typeof( Torch ), 1 ),
-				new LootPackItem( typeof( Bone ), 2 ),
+				new LootPackItem( typeof( PlainoisBone ), 2 ),
 				new LootPackItem( typeof(Bag), 1 ),
 				new LootPackItem( typeof(Pouch), 1 ),
 				new LootPackItem( typeof(Bedroll), 1 ),

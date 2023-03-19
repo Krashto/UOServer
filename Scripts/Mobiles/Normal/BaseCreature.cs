@@ -2389,32 +2389,32 @@ namespace Server.Mobiles
 					switch (HideType)
 					{
 						case HideType.Lupus:
-							if (cutHides) leather = new LupusLeather(hides);
-							else leather = new LupusHides(hides);
+							if (cutHides) leather = new ForestierLeather(hides);
+							else leather = new ForestierHides(hides);
 							break;
 						case HideType.Reptilien:
-							if (cutHides) leather = new ReptilienLeather(hides);
-							else leather = new ReptilienHides(hides);
+							if (cutHides) leather = new DesertiqueLeather(hides);
+							else leather = new DesertiqueHides(hides);
 							break;
 						case HideType.Geant:
-							if (cutHides) leather = new GeantLeather(hides);
-							else leather = new GeantHides(hides);
+							if (cutHides) leather = new TaigoisLeather(hides);
+							else leather = new TaigoisHides(hides);
 							break;
 						case HideType.Ophidien:
-							if (cutHides) leather = new OphidienLeather(hides);
-							else leather = new OphidienHides(hides);
+							if (cutHides) leather = new SavanoisLeather(hides);
+							else leather = new SavanoisHides(hides);
 							break;
 						case HideType.Arachnide:
-							if (cutHides) leather = new ArachnideLeather(hides);
-							else leather = new ArachnideHides(hides);
+							if (cutHides) leather = new ToundroisLeather(hides);
+							else leather = new ToundroisHides(hides);
 							break;
 						case HideType.Dragonique:
-							if (cutHides) leather = new DragoniqueLeather(hides);
-							else leather = new DragoniqueHides(hides);
+							if (cutHides) leather = new TropicauxLeather(hides);
+							else leather = new TropicauxHides(hides);
 							break;
 						case HideType.Demoniaque:
-							if (cutHides) leather = new DemoniaqueLeather(hides);
-							else leather = new DemoniaqueHides(hides);
+							if (cutHides) leather = new MontagnardLeather(hides);
+							else leather = new MontagnardHides(hides);
 							break;
 						case HideType.Ancien:
 							if (cutHides) leather = new AncienLeather(hides);
@@ -2422,8 +2422,8 @@ namespace Server.Mobiles
 							break;
 						default:
 						case HideType.Regular:
-							if (cutHides) leather = new Leather(hides);
-							else leather = new Hides(hides);
+							if (cutHides) leather = new PlainoisLeather(hides);
+							else leather = new PlainoisHides(hides);
 							break;
 					}
 
@@ -2448,29 +2448,29 @@ namespace Server.Mobiles
 							 bone = new LupusBone(bones);
 							break;
 						case BoneType.Reptilien:
-							 bone = new ReptilienBone(bones);
+							 bone = new DesertiqueBone(bones);
 							break;
 						case BoneType.Geant:
-							 bone = new GeantBone(bones);
+							 bone = new TaigoisBone(bones);
 							break;
 						case BoneType.Ophidien:
-							bone = new OphidienBone(bones);
+							bone = new SavanoisBone(bones);
 							break;
 						case BoneType.Arachnide:
-							bone = new ArachnideBone(bones);
+							bone = new ToundroisBone(bones);
 							break;
 						case BoneType.Dragonique:
-							bone = new DragoniqueBone(bones);
+							bone = new TropicauxBone(bones);
 							break;
 						case BoneType.Demoniaque:
-							bone = new DemoniaqueBone(bones);
+							bone = new MontagnardBone(bones);
 							break;
 						case BoneType.Ancien:
 							bone = new AncienBone(bones);
 							break;
 						default:
 						case BoneType.Regular:
-							bone = new Bone(bones);
+							bone = new PlainoisBone(bones);
 							break;
 					}
 						corpse.AddCarvedItem(bone, from);				

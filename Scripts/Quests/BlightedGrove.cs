@@ -145,7 +145,7 @@ namespace Server.Engines.Quests
         public AlreadyDeadQuest()
             : base()
         {
-            AddObjective(new ObtainObjective(typeof(Bone), "workable samples", 10));
+            AddObjective(new ObtainObjective(typeof(PlainoisBone), "workable samples", 10));
 
             AddReward(new BaseReward(1074962)); // A step closer to entering Blighted Grove.
         }

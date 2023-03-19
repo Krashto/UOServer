@@ -1103,7 +1103,7 @@ namespace Server.Items
                 new FillableEntry(1, typeof(LightYarnUnraveled)),
                 new FillableEntry(1, typeof(SpoolOfThread)),
                 new FillableEntry(1, typeof(Dyes)),
-                new FillableEntry(2, typeof(Leather))
+                new FillableEntry(2, typeof(PlainoisLeather))
             });
         public static FillableContent Cobbler = new FillableContent(
             1,
@@ -1486,7 +1486,7 @@ namespace Server.Items
                 new FillableEntry(2, typeof(LeatherChest)),
                 new FillableEntry(2, typeof(LeatherGloves)),
                 new FillableEntry(1, typeof(LeatherGorget)),
-                new FillableEntry(2, typeof(Leather))
+                new FillableEntry(2, typeof(PlainoisLeather))
             });
         public static FillableContent Tavern = new FillableContent(
             1,

@@ -2746,25 +2746,25 @@ namespace Server.Items
 				case CraftResource.PlainoisBone:
 					Mod += 1;
 					break;
-				case CraftResource.LupusBone:
+				case CraftResource.ForestierBone:
 					Mod += 1;
 					break;
-				case CraftResource.ReptilienBone:
+				case CraftResource.DesertiqueBone:
 					Mod += 1;
 					break;
-				case CraftResource.GeantBone:
+				case CraftResource.TaigoisBone:
 					Mod += 2;
 					break;
-				case CraftResource.OphidienBone:
+				case CraftResource.SavanoisBone:
 					Mod += 2;
 					break;
-				case CraftResource.ArachnideBone:
+				case CraftResource.ToundroisBone:
 					Mod += 2;
 					break;
-				case CraftResource.DragoniqueBone:
+				case CraftResource.TropicauxBone:
 					Mod += 2;
 					break;
-				case CraftResource.DemoniaqueBone:
+				case CraftResource.MontagnardBone:
 					Mod += 2;
 					break;
 				case CraftResource.AncienBone:

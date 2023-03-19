@@ -62,7 +62,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich, 3);
             AddLoot(LootPack.Gems, 2);
-            AddLoot(LootPack.LootItem<Bone>(false, true));
+            AddLoot(LootPack.LootItem<PlainoisBone>(false, true));
         }
 
         public override void OnDeath(Container c)

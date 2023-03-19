@@ -56,7 +56,7 @@ namespace Server.Mobiles
             AddLoot(LootPack.Potions);
             AddLoot(LootPack.MageryRegs, 3);
             AddLoot(LootPack.NecroRegs, 3, 10);
-            AddLoot(LootPack.LootItem<Bone>());
+            AddLoot(LootPack.LootItem<PlainoisBone>());
         }
 
         public override void Serialize(GenericWriter writer)

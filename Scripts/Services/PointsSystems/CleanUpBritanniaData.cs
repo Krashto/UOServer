@@ -229,7 +229,7 @@ namespace Server.Engines.Points
             Entries[typeof(Bolt)] = 0.05;
 
             //Tailoring
-            Entries[typeof(Leather)] = 0.10;
+            Entries[typeof(PlainoisLeather)] = 0.10;
 /*            Entries[typeof(SpinedLeather)] = 0.50;
             Entries[typeof(HornedLeather)] = 1.0;
             Entries[typeof(BarbedLeather)] = 2.0;*/

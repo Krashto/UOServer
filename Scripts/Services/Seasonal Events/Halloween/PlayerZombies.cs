@@ -249,7 +249,7 @@ namespace Server.Engines.Events
                     PackItem(new Torso());
                     break;
                 case 3:
-                    PackItem(new Bone());
+                    PackItem(new PlainoisBone());
                     break;
                 case 4:
                     PackItem(new RibCage());
@@ -287,7 +287,7 @@ namespace Server.Engines.Events
                 case 2:
                     return new Torso();
                 case 3:
-                    return new Bone();
+                    return new PlainoisBone();
                 case 4:
                     return new RibCage();
                 default:

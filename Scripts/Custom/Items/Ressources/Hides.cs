@@ -125,21 +125,21 @@ namespace Server.Items
 	}
 
     [Flipable(0x1079, 0x1078)]
-    public class Hides : BaseHides, IScissorable
+    public class PlainoisHides : BaseHides, IScissorable
     {
         [Constructable]
-        public Hides()
+        public PlainoisHides()
             : this(1)
         {
         }
 
         [Constructable]
-        public Hides(int amount)
+        public PlainoisHides(int amount)
             : base(CraftResource.PlainoisLeather, amount)
         {
         }
 
-        public Hides(Serial serial)
+        public PlainoisHides(Serial serial)
             : base(serial)
         {
         }
@@ -168,30 +168,30 @@ namespace Server.Items
                 from.SendLocalizedMessage(502437); // Items you wish to cut must be in your backpack
                 return false;
             }
-            base.ScissorHelper(from, new Leather(), 1);
+            base.ScissorHelper(from, new PlainoisLeather(), 1);
 
             return true;
         }
     }
 
     [Flipable(0x1079, 0x1078)]
-    public class LupusHides : BaseHides, IScissorable
+    public class ForestierHides : BaseHides, IScissorable
     {
         protected override CraftResource DefaultResource => CraftResource.ForestierLeather;
 
         [Constructable]
-        public LupusHides()
+        public ForestierHides()
             : this(1)
         {
         }
 
         [Constructable]
-        public LupusHides(int amount)
+        public ForestierHides(int amount)
             : base(CraftResource.ForestierLeather, amount)
         {
         }
 
-        public LupusHides(Serial serial)
+        public ForestierHides(Serial serial)
             : base(serial)
         {
         }
@@ -221,30 +221,30 @@ namespace Server.Items
                 return false;
             }
 
-            base.ScissorHelper(from, new LupusLeather(), 1);
+            base.ScissorHelper(from, new ForestierLeather(), 1);
 
             return true;
         }
     }
 
     [Flipable(0x1079, 0x1078)]
-    public class ReptilienHides : BaseHides, IScissorable
+    public class DesertiqueHides : BaseHides, IScissorable
     {
         protected override CraftResource DefaultResource => CraftResource.DesertiqueLeather;
 
         [Constructable]
-        public ReptilienHides()
+        public DesertiqueHides()
             : this(1)
         {
         }
 
         [Constructable]
-        public ReptilienHides(int amount)
+        public DesertiqueHides(int amount)
             : base(CraftResource.DesertiqueLeather, amount)
         {
         }
 
-        public ReptilienHides(Serial serial)
+        public DesertiqueHides(Serial serial)
             : base(serial)
         {
         }
@@ -274,30 +274,30 @@ namespace Server.Items
                 return false;
             }
 
-            base.ScissorHelper(from, new ReptilienLeather(), 1);
+            base.ScissorHelper(from, new DesertiqueLeather(), 1);
 
             return true;
         }
     }
 
     [Flipable(0x1079, 0x1078)]
-    public class GeantHides : BaseHides, IScissorable
+    public class TaigoisHides : BaseHides, IScissorable
     {
         protected override CraftResource DefaultResource => CraftResource.TaigoisLeather;
 
         [Constructable]
-        public GeantHides()
+        public TaigoisHides()
             : this(1)
         {
         }
 
         [Constructable]
-        public GeantHides(int amount)
+        public TaigoisHides(int amount)
             : base(CraftResource.TaigoisLeather, amount)
         {
         }
 
-        public GeantHides(Serial serial)
+        public TaigoisHides(Serial serial)
             : base(serial)
         {
         }
@@ -327,30 +327,30 @@ namespace Server.Items
                 return false;
             }
 
-            base.ScissorHelper(from, new GeantLeather(), 1);
+            base.ScissorHelper(from, new TaigoisLeather(), 1);
 
             return true;
         }
     }
 
 	[Flipable(0x1079, 0x1078)]
-	public class OphidienHides : BaseHides, IScissorable
+	public class SavanoisHides : BaseHides, IScissorable
 	{
 		protected override CraftResource DefaultResource => CraftResource.SavanoisLeather;
 
 		[Constructable]
-		public OphidienHides()
+		public SavanoisHides()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public OphidienHides(int amount)
+		public SavanoisHides(int amount)
 			: base(CraftResource.SavanoisLeather, amount)
 		{
 		}
 
-		public OphidienHides(Serial serial)
+		public SavanoisHides(Serial serial)
 			: base(serial)
 		{
 		}
@@ -380,29 +380,29 @@ namespace Server.Items
 				return false;
 			}
 
-			base.ScissorHelper(from, new OphidienLeather(), 1);
+			base.ScissorHelper(from, new SavanoisLeather(), 1);
 
 			return true;
 		}
 	}
 	[Flipable(0x1079, 0x1078)]
-	public class ArachnideHides : BaseHides, IScissorable
+	public class ToundroisHides : BaseHides, IScissorable
 	{
 		protected override CraftResource DefaultResource => CraftResource.ToundroisLeather;
 
 		[Constructable]
-		public ArachnideHides()
+		public ToundroisHides()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public ArachnideHides(int amount)
+		public ToundroisHides(int amount)
 			: base(CraftResource.ToundroisLeather, amount)
 		{
 		}
 
-		public ArachnideHides(Serial serial)
+		public ToundroisHides(Serial serial)
 			: base(serial)
 		{
 		}
@@ -432,30 +432,30 @@ namespace Server.Items
 				return false;
 			}
 
-			base.ScissorHelper(from, new ArachnideLeather(), 1);
+			base.ScissorHelper(from, new ToundroisLeather(), 1);
 
 			return true;
 		}
 	}
 
 	[Flipable(0x1079, 0x1078)]
-	public class DragoniqueHides : BaseHides, IScissorable
+	public class TropicauxHides : BaseHides, IScissorable
 	{
 		protected override CraftResource DefaultResource => CraftResource.TropicauxLeather;
 
 		[Constructable]
-		public DragoniqueHides()
+		public TropicauxHides()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public DragoniqueHides(int amount)
+		public TropicauxHides(int amount)
 			: base(CraftResource.TropicauxLeather, amount)
 		{
 		}
 
-		public DragoniqueHides(Serial serial)
+		public TropicauxHides(Serial serial)
 			: base(serial)
 		{
 		}
@@ -485,30 +485,30 @@ namespace Server.Items
 				return false;
 			}
 
-			base.ScissorHelper(from, new DragoniqueLeather(), 1);
+			base.ScissorHelper(from, new TropicauxLeather(), 1);
 
 			return true;
 		}
 	}
 
 	[Flipable(0x1079, 0x1078)]
-	public class DemoniaqueHides : BaseHides, IScissorable
+	public class MontagnardHides : BaseHides, IScissorable
 	{
 		protected override CraftResource DefaultResource => CraftResource.MontagnardLeather;
 
 		[Constructable]
-		public DemoniaqueHides()
+		public MontagnardHides()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public DemoniaqueHides(int amount)
+		public MontagnardHides(int amount)
 			: base(CraftResource.MontagnardLeather, amount)
 		{
 		}
 
-		public DemoniaqueHides(Serial serial)
+		public MontagnardHides(Serial serial)
 			: base(serial)
 		{
 		}
@@ -538,7 +538,7 @@ namespace Server.Items
 				return false;
 			}
 
-			base.ScissorHelper(from, new DemoniaqueLeather(), 1);
+			base.ScissorHelper(from, new MontagnardLeather(), 1);
 
 			return true;
 		}
@@ -596,5 +596,4 @@ namespace Server.Items
 			return true;
 		}
 	}
-
 }

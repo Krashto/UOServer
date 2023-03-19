@@ -45,7 +45,7 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(SpidersSilk), 3, 20, 0xF8D, 0));
 
 
-                Add(new GenericBuyInfo(typeof(Bone), 3, 20, 0xf7e, 0));
+                Add(new GenericBuyInfo(typeof(PlainoisBone), 3, 20, 0xf7e, 0));
                 Add(new GenericBuyInfo(typeof(FertileDirt), 3, 20, 0xF81, 0));
 				//Add(new GenericBuyInfo(typeof(NetherBoltScroll), 8, 20, 0x2D9E, 0));
 				//Add(new GenericBuyInfo(typeof(HealingStoneScroll), 13, 20, 0x2D9F, 0));

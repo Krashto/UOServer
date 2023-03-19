@@ -125,21 +125,21 @@ namespace Server.Items
 	}
 
     [Flipable(0x1081, 0x1082)]
-    public class Leather : BaseLeather
+    public class PlainoisLeather : BaseLeather
     {
         [Constructable]
-        public Leather()
+        public PlainoisLeather()
             : this(1)
         {
         }
 
         [Constructable]
-        public Leather(int amount)
+        public PlainoisLeather(int amount)
             : base(CraftResource.PlainoisLeather, amount)
         {
         }
 
-        public Leather(Serial serial)
+        public PlainoisLeather(Serial serial)
             : base(serial)
         {
         }
@@ -160,23 +160,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class LupusLeather : BaseLeather
+    public class ForestierLeather : BaseLeather
     {
         protected override CraftResource DefaultResource => CraftResource.ForestierLeather;
 
         [Constructable]
-        public LupusLeather()
+        public ForestierLeather()
             : this(1)
         {
         }
 
         [Constructable]
-        public LupusLeather(int amount)
+        public ForestierLeather(int amount)
             : base(CraftResource.ForestierLeather, amount)
         {
         }
 
-        public LupusLeather(Serial serial)
+        public ForestierLeather(Serial serial)
             : base(serial)
         {
         }
@@ -197,23 +197,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class ReptilienLeather : BaseLeather
+    public class DesertiqueLeather : BaseLeather
     {
         protected override CraftResource DefaultResource => CraftResource.DesertiqueLeather;
 
         [Constructable]
-        public ReptilienLeather()
+        public DesertiqueLeather()
             : this(1)
         {
         }
 
         [Constructable]
-        public ReptilienLeather(int amount)
+        public DesertiqueLeather(int amount)
             : base(CraftResource.DesertiqueLeather, amount)
         {
         }
 
-        public ReptilienLeather(Serial serial)
+        public DesertiqueLeather(Serial serial)
             : base(serial)
         {
         }
@@ -234,23 +234,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class GeantLeather : BaseLeather
+    public class TaigoisLeather : BaseLeather
     {
         protected override CraftResource DefaultResource => CraftResource.TaigoisLeather;
 
         [Constructable]
-        public GeantLeather()
+        public TaigoisLeather()
             : this(1)
         {
         }
 
         [Constructable]
-        public GeantLeather(int amount)
+        public TaigoisLeather(int amount)
             : base(CraftResource.TaigoisLeather, amount)
         {
         }
 
-        public GeantLeather(Serial serial)
+        public TaigoisLeather(Serial serial)
             : base(serial)
         {
         }
@@ -271,23 +271,23 @@ namespace Server.Items
     }
 
 	[Flipable(0x1081, 0x1082)]
-	public class OphidienLeather : BaseLeather
+	public class SavanoisLeather : BaseLeather
 	{
 		protected override CraftResource DefaultResource => CraftResource.SavanoisLeather;
 
 		[Constructable]
-		public OphidienLeather()
+		public SavanoisLeather()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public OphidienLeather(int amount)
+		public SavanoisLeather(int amount)
 			: base(CraftResource.SavanoisLeather, amount)
 		{
 		}
 
-		public OphidienLeather(Serial serial)
+		public SavanoisLeather(Serial serial)
 			: base(serial)
 		{
 		}
@@ -308,23 +308,23 @@ namespace Server.Items
 	}
 
 	[Flipable(0x1081, 0x1082)]
-	public class ArachnideLeather : BaseLeather
+	public class ToundroisLeather : BaseLeather
 	{
 		protected override CraftResource DefaultResource => CraftResource.ToundroisLeather;
 
 		[Constructable]
-		public ArachnideLeather()
+		public ToundroisLeather()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public ArachnideLeather(int amount)
+		public ToundroisLeather(int amount)
 			: base(CraftResource.ToundroisLeather, amount)
 		{
 		}
 
-		public ArachnideLeather(Serial serial)
+		public ToundroisLeather(Serial serial)
 			: base(serial)
 		{
 		}
@@ -345,23 +345,23 @@ namespace Server.Items
 	}
 
 	[Flipable(0x1081, 0x1082)]
-	public class DragoniqueLeather : BaseLeather
+	public class TropicauxLeather : BaseLeather
 	{
 		protected override CraftResource DefaultResource => CraftResource.TropicauxLeather;
 
 		[Constructable]
-		public DragoniqueLeather()
+		public TropicauxLeather()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public DragoniqueLeather(int amount)
+		public TropicauxLeather(int amount)
 			: base(CraftResource.TropicauxLeather, amount)
 		{
 		}
 
-		public DragoniqueLeather(Serial serial)
+		public TropicauxLeather(Serial serial)
 			: base(serial)
 		{
 		}
@@ -382,23 +382,23 @@ namespace Server.Items
 	}
 
 	[Flipable(0x1081, 0x1082)]
-	public class DemoniaqueLeather : BaseLeather
+	public class MontagnardLeather : BaseLeather
 	{
 		protected override CraftResource DefaultResource => CraftResource.MontagnardLeather;
 
 		[Constructable]
-		public DemoniaqueLeather()
+		public MontagnardLeather()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public DemoniaqueLeather(int amount)
+		public MontagnardLeather(int amount)
 			: base(CraftResource.MontagnardLeather, amount)
 		{
 		}
 
-		public DemoniaqueLeather(Serial serial)
+		public MontagnardLeather(Serial serial)
 			: base(serial)
 		{
 		}
@@ -454,7 +454,4 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-
-
-
 }

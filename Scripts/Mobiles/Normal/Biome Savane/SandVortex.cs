@@ -48,7 +48,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Meager, 2);
-            AddLoot(LootPack.LootItem<Bone>());
+            AddLoot(LootPack.LootItem<PlainoisBone>());
         }
 
         public override void OnActionCombat()

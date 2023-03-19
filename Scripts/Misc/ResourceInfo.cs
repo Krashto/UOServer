@@ -7,43 +7,78 @@ namespace Server.Items
     public enum CraftResource
     {
         None = 0,
+		[Description("Fer")]
         Iron = 1,
+		[Description("Cuivre mat")]
 		DullCopper,
+		[Description("Fer de l'ombre")]
 		ShadowIron,
+		[Description("Cuivre")]
         Copper,
-        //Bronze,
+		//Bronze,
+		[Description("Or")]
         Gold,
+		[Description("Agapite")]
         Agapite,
+		[Description("Vérite")]
         Verite,
+		[Description("Valorite")]
         Valorite,
 		//Mytheril,
 
+		[Description("Bronze")]
 		Bronze = 101,
+		[Description("Cuivre")]
 		Cuivre,
+		[Description("Sonne")]
 		Sonne,
+		[Description("Argent")]
 		Argent,
+		[Description("Boréale")]
 		Boreale,
+		[Description("Chrysteliar")]
 		Chrysteliar,
+		[Description("Glacias")]
 		Glacias,
+		[Description("Lithiar")]
 		Lithiar,
+		[Description("Acier")]
 		Acier,
+		[Description("Durian")]
 		Durian,
+		[Description("Equilibrum")]
 		Equilibrum,
+		[Description("Or")]
 		Or,
+		[Description("Jolinar")]
 		Jolinar,
+		[Description("Justicium")]
 		Justicium,
+		[Description("Abyssium")]
 		Abyssium,
+		[Description("Bloodirium")]
 		Bloodirium,
+		[Description("Herbrosite")]
 		Herbrosite,
+		[Description("Khandarium")]
 		Khandarium,
+		[Description("Mytheril")]
 		Mytheril,
+		[Description("Sombralir")]
 		Sombralir,
+		[Description("Draconyr")]
 		Draconyr,
+		[Description("Heptazion")]
 		Heptazion,
+		[Description("Oceanis")]
 		Oceanis,
+		[Description("Brazium")]
 		Brazium,
+		[Description("Lunerium")]
 		Lunerium,
+		[Description("Marinar")]
 		Marinar,
+		[Description("Nostalgium")]
 		Nostalgium,
 
 		[Description("Plainois")]
@@ -85,19 +120,19 @@ namespace Server.Items
 		[Description("Plainois")]
 		PlainoisBone = 501,
 		[Description("Forestier")]
-		LupusBone,
+		ForestierBone,
 		[Description("Désertique")]
-		ReptilienBone,
+		DesertiqueBone,
 		[Description("Taïgois")]
-		GeantBone,
+		TaigoisBone,
 		[Description("Savanois")]
-		OphidienBone,
+		SavanoisBone,
 		[Description("Toundrois")]
-		ArachnideBone,
+		ToundroisBone,
 		[Description("Tropicaux")]
-		DragoniqueBone,
+		TropicauxBone,
 		[Description("Montagnard")]
-		DemoniaqueBone,
+		MontagnardBone,
 		[Description("Volcanique")]
 		VolcaniqueBone,
 		[Description("Ancien")]
@@ -1022,14 +1057,14 @@ namespace Server.Items
 
         private static readonly CraftResourceInfo[] m_AOSLeatherInfo = new[]
         {
-            new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.PlainoisLeather, typeof(Leather), typeof(Hides)),
-			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusLeather,            CraftResource.ForestierLeather,     typeof( LupusLeather ),     typeof( LupusHides ) ),
-			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienLeather,      CraftResource.DesertiqueLeather, typeof( ReptilienLeather ), typeof( ReptilienHides ) ),
-			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantLeather,          CraftResource.TaigoisLeather,     typeof( GeantLeather ),     typeof( GeantHides ) ),
-			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienLeather,       CraftResource.SavanoisLeather,  typeof( OphidienLeather ),  typeof( OphidienHides ) ),
-			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideLeather,      CraftResource.ToundroisLeather, typeof( ArachnideLeather ), typeof( ArachnideHides ) ),
-			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueLeather,     CraftResource.TropicauxLeather,typeof( DragoniqueLeather ),typeof( DragoniqueHides ) ),
-			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueLeather,     CraftResource.MontagnardLeather,typeof( DemoniaqueLeather ),typeof( DemoniaqueHides ) ),
+            new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.PlainoisLeather, typeof(PlainoisLeather), typeof(PlainoisHides)),
+			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusLeather,            CraftResource.ForestierLeather,     typeof( ForestierLeather ),     typeof( ForestierHides ) ),
+			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienLeather,      CraftResource.DesertiqueLeather, typeof( DesertiqueLeather ), typeof( DesertiqueHides ) ),
+			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantLeather,          CraftResource.TaigoisLeather,     typeof( TaigoisLeather ),     typeof( TaigoisHides ) ),
+			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienLeather,       CraftResource.SavanoisLeather,  typeof( SavanoisLeather ),  typeof( SavanoisHides ) ),
+			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideLeather,      CraftResource.ToundroisLeather, typeof( ToundroisLeather ), typeof( ToundroisHides ) ),
+			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueLeather,     CraftResource.TropicauxLeather,typeof( TropicauxLeather ),typeof( TropicauxHides ) ),
+			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueLeather,     CraftResource.MontagnardLeather,typeof( MontagnardLeather ),typeof( MontagnardHides ) ),
 			new CraftResourceInfo(1940, 1049356, "Ancien",		5, CraftAttributeInfo.AncienLeather,         CraftResource.AncienLeather,    typeof( AncienLeather ),    typeof( AncienHides ) ),
 
 
@@ -1037,14 +1072,14 @@ namespace Server.Items
 
 		private static readonly CraftResourceInfo[] m_BoneInfo = new[]
 	   {
-			new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.PlainoisBone, typeof(Bone)),
-			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusBone,            CraftResource.LupusBone,     typeof( LupusBone )),
-			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienBone,      CraftResource.ReptilienBone, typeof( ReptilienBone ) ),
-			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantBone,          CraftResource.GeantBone,     typeof( GeantBone ) ),
-			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienBone,       CraftResource.OphidienBone,  typeof( OphidienBone ) ),
-			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideBone,      CraftResource.ArachnideBone, typeof( ArachnideBone ) ),
-			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueBone,     CraftResource.DragoniqueBone,typeof( DragoniqueBone ) ),
-			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueBone,     CraftResource.DemoniaqueBone,typeof( DemoniaqueBone ) ),
+			new CraftResourceInfo(0x00, 1049353, "Normal",		1, CraftAttributeInfo.Blank, CraftResource.PlainoisBone, typeof(PlainoisBone)),
+			new CraftResourceInfo(1106, 1049356, "Lupus",		1, CraftAttributeInfo.LupusBone,            CraftResource.ForestierBone,     typeof( LupusBone )),
+			new CraftResourceInfo(1438, 1049354, "Reptilien",	2, CraftAttributeInfo.ReptilienBone,      CraftResource.DesertiqueBone, typeof( DesertiqueBone ) ),
+			new CraftResourceInfo(1711, 1049356, "Geant",		2, CraftAttributeInfo.GeantBone,          CraftResource.TaigoisBone,     typeof( TaigoisBone ) ),
+			new CraftResourceInfo(1635, 1049356, "Ophidien",	3, CraftAttributeInfo.OphidienBone,       CraftResource.SavanoisBone,  typeof( SavanoisBone ) ),
+			new CraftResourceInfo(2128, 1049356, "Arachnide",	3, CraftAttributeInfo.ArachnideBone,      CraftResource.ToundroisBone, typeof( ToundroisBone ) ),
+			new CraftResourceInfo(2174, 1049356, "Dragonique",	4, CraftAttributeInfo.DragoniqueBone,     CraftResource.TropicauxBone,typeof( TropicauxBone ) ),
+			new CraftResourceInfo(2118, 1049356, "Demoniaque",	4, CraftAttributeInfo.DemoniaqueBone,     CraftResource.MontagnardBone,typeof( MontagnardBone ) ),
 			new CraftResourceInfo(1940, 1049356, "Ancien",		5, CraftAttributeInfo.AncienBone,         CraftResource.AncienBone,    typeof( AncienBone )),
 
 

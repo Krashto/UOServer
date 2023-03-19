@@ -19,7 +19,7 @@ namespace Server.Items
             DropItem(new Nightshade(amount));
             DropItem(new SulfurousAsh(amount));
             DropItem(new SpidersSilk(amount));
-            DropItem(new Bone(amount));
+            DropItem(new PlainoisBone(amount));
             DropItem(new DragonBlood(amount));
             DropItem(new FertileDirt(amount));
             DropItem(new DaemonBone(amount));

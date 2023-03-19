@@ -115,10 +115,10 @@ namespace Server.Items
                     switch (Utility.Random(5))
                     {
                         case 0: res = new Wool(); break;
-                        case 1: res = new Leather(); break;
-                        case 2: res = new LupusLeather(); break;
-                        case 3: res = new ReptilienLeather(); break;
-                        case 4: res = new GeantLeather(); break;
+                        case 1: res = new PlainoisLeather(); break;
+                        case 2: res = new ForestierLeather(); break;
+                        case 3: res = new DesertiqueLeather(); break;
+                        case 4: res = new TaigoisLeather(); break;
                     }
 
                     int amount = Math.Min(10, m_ResourceCount);

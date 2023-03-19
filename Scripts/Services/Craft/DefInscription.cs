@@ -1,4 +1,5 @@
-﻿using Server.Items;
+﻿using Server.Custom.Aptitudes;
+using Server.Items;
 using System;
 
 namespace Server.Engines.Craft
@@ -138,7 +139,7 @@ namespace Server.Engines.Craft
             typeof( DaemonBlood ),
             typeof( NoxCrystal ),
             typeof( PigIron ),
-            typeof( Bone ),
+            typeof( PlainoisBone ),
             typeof( DragonBlood ),
             typeof( FertileDirt ),
             typeof( DaemonBone )
@@ -171,22 +172,26 @@ namespace Server.Engines.Craft
 
 		private int index;
 
-		private void AddSpell(Type type, string name, int level)
+		private void AddSpell(string aptitude, Type type, string name, int level)
 		{
 			double minSkill, maxSkill;
 
 			switch (level)
 			{
 				default:
-				case 1: minSkill = 30; maxSkill = 50; break;
-				case 2: minSkill = 40; maxSkill = 60; break;
-				case 3: minSkill = 50; maxSkill = 75; break;
-				case 4: minSkill = 60; maxSkill = 90; break;
-				case 5: minSkill = 70; maxSkill = 100; break;
-				case 6: minSkill = 80; maxSkill = 110.0; break;
+				case 1: minSkill = 0; maxSkill = 30; break;
+				case 2: minSkill = 10; maxSkill = 40; break;
+				case 3: minSkill = 20; maxSkill = 50; break;
+				case 4: minSkill = 30; maxSkill = 60; break;
+				case 5: minSkill = 40; maxSkill = 70; break;
+				case 6: minSkill = 50; maxSkill = 80; break;
+				case 7: minSkill = 60; maxSkill = 90; break;
+				case 8: minSkill = 70; maxSkill = 100; break;
+				case 9: minSkill = 80; maxSkill = 110; break;
+				case 10: minSkill = 90; maxSkill = 120; break;
 			}
 
-			index = AddCraft(type, GetCircle(level), name, minSkill, maxSkill, typeof(BlankScroll), "Blank scroll", 1, "You do not have enough blank scrolls to make that.");
+			index = AddCraft(type, aptitude, name, minSkill, maxSkill, typeof(BlankScroll), "Blank scroll", 1, "You do not have enough blank scrolls to make that.");
 		}
 
 		private string GetCircle(int circle)
@@ -214,169 +219,157 @@ namespace Server.Engines.Craft
 
 		public override void InitCraftList()
         {
-			//Aeromancie
-			AddSpell(typeof(AveuglementScroll), "AveuglementScroll", 1);
-			AddSpell(typeof(BrouillardScroll), "BrouillardScroll", 2);
-			AddSpell(typeof(TeleportationScroll), "TeleportationScroll", 3);
-			AddSpell(typeof(TornadoScroll), "TornadoScroll", 4);
-			AddSpell(typeof(AuraEvasiveScroll), "AuraEvasiveScroll", 5);
-			AddSpell(typeof(ExTeleportationScroll), "ExTeleportationScroll", 6);
-			AddSpell(typeof(ToucherSuffosantScroll), "ToucherSuffosantScroll", 7);
-			AddSpell(typeof(AuraDeBrouillardScroll), "AuraDeBrouillardScroll", 8);
-			AddSpell(typeof(VentFavorableScroll), "VentFavorableScroll", 9);
-			AddSpell(typeof(VortexScroll), "VortexScroll", 10);
+			AddSpell("Aéromancie", typeof(AveuglementScroll), "Aveuglement", 1);
+			AddSpell("Aéromancie", typeof(BrouillardScroll), "Brouillard", 2);
+			AddSpell("Aéromancie", typeof(TeleportationScroll), "Téleportation", 3);
+			AddSpell("Aéromancie", typeof(TornadoScroll), "Tornado", 4);
+			AddSpell("Aéromancie", typeof(AuraEvasiveScroll), "Aura évasive", 5);
+			AddSpell("Aéromancie", typeof(ExTeleportationScroll), "Ex-téleportation", 6);
+			AddSpell("Aéromancie", typeof(ToucheSuffosantScroll), "Touché suffosant", 7);
+			AddSpell("Aéromancie", typeof(AuraDeBrouillardScroll), "Aura de brouillard", 8);
+			AddSpell("Aéromancie", typeof(VentFavorableScroll), "Vent favorable", 9);
+			AddSpell("Aéromancie", typeof(VortexScroll), "Vortex", 10);
 
-			//Chasseur
-			AddSpell(typeof(AntidoteScroll), "AntidoteScroll", 1);
-			AddSpell(typeof(MarquerScroll), "MarquerScroll", 2);
-			AddSpell(typeof(CompagnonAnimalScroll), "CompagnonAnimalScroll", 3);
-			AddSpell(typeof(SoinAnimalierScroll), "SoinAnimalierScroll", 4);
-			AddSpell(typeof(RugissementScroll), "RugissementScroll", 5);
-			AddSpell(typeof(FrappeEnsanglanteeScroll), "FrappeEnsanglanteeScroll", 6);
-			AddSpell(typeof(SautAggressifScroll), "SautAggressifScroll", 7);
-			AddSpell(typeof(CoupDansLeGenouScroll), "CoupDansLeGenouScroll", 8);
-			AddSpell(typeof(ChasseurDePrimeScroll), "ChasseurDePrimeScroll", 9);
-			AddSpell(typeof(ContratResoluScroll), "ContratResoluScroll", 10);
+			AddSpell("Chasseur", typeof(AntidoteScroll), "Antidote", 1);
+			AddSpell("Chasseur", typeof(MarquerScroll), "Marquer", 2);
+			AddSpell("Chasseur", typeof(CompagnonAnimalScroll), "Compagnon animal", 3);
+			AddSpell("Chasseur", typeof(SoinAnimalierScroll), "Soin animalier", 4);
+			AddSpell("Chasseur", typeof(RugissementScroll), "Rugissement", 5);
+			AddSpell("Chasseur", typeof(FrappeEnsanglanteeScroll), "Frappe ensanglantee", 6);
+			AddSpell("Chasseur", typeof(SautAggressifScroll), "Saut aggressif", 7);
+			AddSpell("Chasseur", typeof(CoupDansLeGenouScroll), "Coup dans le genou", 8);
+			AddSpell("Chasseur", typeof(ChasseurDePrimeScroll), "Chasseur de prime", 9);
+			AddSpell("Chasseur", typeof(ContratResoluScroll), "Contrat résolu", 10);
 
-			//Defenseur
-			AddSpell(typeof(CoupDeBouclierScroll), "CoupDeBouclierScroll", 1);
-			AddSpell(typeof(BravadeScroll), "BravadeScroll", 2);
-			AddSpell(typeof(DevotionScroll), "DevotionScroll", 3);
-			AddSpell(typeof(MutinerieScroll), "MutinerieScroll", 4);
-			AddSpell(typeof(MentorScroll), "MentorScroll", 5);
-			AddSpell(typeof(LienDeVieScroll), "LienDeVieScroll", 6);
-			AddSpell(typeof(MiracleScroll), "MiracleScroll", 7);
-			AddSpell(typeof(IndomptableScroll), "IndomptableScroll", 8);
-			AddSpell(typeof(InsensibleScroll), "InsensibleScroll", 9);
-			AddSpell(typeof(PiedsAuSolScroll), "PiedsAuSolScroll", 10);
+			AddSpell("Défenseur", typeof(CoupDeBouclierScroll), "Coup de bouclier", 1);
+			AddSpell("Défenseur", typeof(BravadeScroll), "Bravade", 2);
+			AddSpell("Défenseur", typeof(DevotionScroll), "Dévotion", 3);
+			AddSpell("Défenseur", typeof(MutinerieScroll), "Mutinerie", 4);
+			AddSpell("Défenseur", typeof(MentorScroll), "Mentor", 5);
+			AddSpell("Défenseur", typeof(LienDeVieScroll), "Lien de vie", 6);
+			AddSpell("Défenseur", typeof(MiracleScroll), "Miracle", 7);
+			AddSpell("Défenseur", typeof(IndomptableScroll), "Indomptable", 8);
+			AddSpell("Défenseur", typeof(InsensibleScroll), "Insensible", 9);
+			AddSpell("Défenseur", typeof(PiedsAuSolScroll), "Pieds su sol", 10);
 
-			//Geomancie
-			AddSpell(typeof(FortifieScroll), "FortifieScroll", 1);
-			AddSpell(typeof(RocheScroll), "RocheScroll", 2);
-			AddSpell(typeof(ContaminationScroll), "ContaminationScroll", 3);
-			AddSpell(typeof(EmpalementScroll), "EmpalementScroll", 4);
-			AddSpell(typeof(AuraFortifianteScroll), "AuraFortifianteScroll", 5);
-			AddSpell(typeof(MurDePlanteScroll), "MurDePlanteScroll", 6);
-			AddSpell(typeof(ExplosionDeRocheScroll), "ExplosionDeRocheScroll", 7);
-			AddSpell(typeof(AuraPreservationManiaqueScroll), "AuraPreservationManiaqueScroll", 8);
-			AddSpell(typeof(RacinesScroll), "RacinesScroll", 9);
-			AddSpell(typeof(FleauTerrestreScroll), "FleauTerrestreScroll", 10);
+			AddSpell("Géomancie", typeof(FortifieScroll), "Fortifié", 1);
+			AddSpell("Géomancie", typeof(RocheScroll), "Roche", 2);
+			AddSpell("Géomancie", typeof(ContaminationScroll), "Contamination", 3);
+			AddSpell("Géomancie", typeof(EmpalementScroll), "Empalement", 4);
+			AddSpell("Géomancie", typeof(AuraFortifianteScroll), "Aura fortifiante", 5);
+			AddSpell("Géomancie", typeof(MurDePlanteScroll), "Mur de plante", 6);
+			AddSpell("Géomancie", typeof(ExplosionDeRocheScroll), "Explosion de roche", 7);
+			AddSpell("Géomancie", typeof(AuraPreservationManiaqueScroll), "Aura préservation maniaque", 8);
+			AddSpell("Géomancie", typeof(RacinesScroll), "Racines", 9);
+			AddSpell("Géomancie", typeof(FleauTerrestreScroll), "Fléau terrestre", 10);
 
-			//Guerison
-			AddSpell(typeof(MainCicatrisanteScroll), "MainCicatrisanteScroll", 1);
-			AddSpell(typeof(RemedeScroll), "RemedeScroll", 2);
-			AddSpell(typeof(MurDePierreScroll), "MurDePierreScroll", 3);
-			AddSpell(typeof(RayonCelesteScroll), "RayonCelesteScroll", 4);
-			AddSpell(typeof(LumiereSacreeScroll), "LumiereSacreeScroll", 5);
-			AddSpell(typeof(FrayeurScroll), "FrayeurScroll", 6);
-			AddSpell(typeof(FerveurDivineScroll), "FerveurDivineScroll", 7);
-			AddSpell(typeof(InquisitionScroll), "InquisitionScroll", 8);
-			AddSpell(typeof(MurDeLumiereScroll), "MurDeLumiereScroll", 9);
-			AddSpell(typeof(DonDeLaVieScroll), "DonDeLaVieScroll", 10);
+			AddSpell("Guérison", typeof(MainCicatrisanteScroll), "Main cicatrisante", 1);
+			AddSpell("Guérison", typeof(RemedeScroll), "Remède", 2);
+			AddSpell("Guérison", typeof(MurDePierreScroll), "Mur de pierre", 3);
+			AddSpell("Guérison", typeof(RayonCelesteScroll), "Rayon céleste", 4);
+			AddSpell("Guérison", typeof(LumiereSacreeScroll), "Lumière sacrée", 5);
+			AddSpell("Guérison", typeof(FrayeurScroll), "Frayeur", 6);
+			AddSpell("Guérison", typeof(FerveurDivineScroll), "Ferveur divine", 7);
+			AddSpell("Guérison", typeof(InquisitionScroll), "Inquisition", 8);
+			AddSpell("Guérison", typeof(MurDeLumiereScroll), "Mur de lumière", 9);
+			AddSpell("Guérison", typeof(DonDeLaVieScroll), "Don de la vie", 10);
 
-			//Hydromancie
-			AddSpell(typeof(ArmureDeGlaceScroll), "ArmureDeGlaceScroll", 1);
-			AddSpell(typeof(RestaurationScroll), "RestaurationScroll", 2);
-			AddSpell(typeof(SoinPreventifScroll), "SoinPreventifScroll", 3);
-			AddSpell(typeof(CageDeGlaceScroll), "CageDeGlaceScroll", 4);
-			AddSpell(typeof(AuraCryogeniseeScroll), "AuraCryogeniseeScroll", 5);
-			AddSpell(typeof(PieuxDeGlaceScroll), "PieuxDeGlaceScroll", 6);
-			AddSpell(typeof(CerveauGeleScroll), "CerveauGeleScroll", 7);
-			AddSpell(typeof(AuraRefrigeranteScroll), "AuraRefrigeranteScroll", 8);
-			AddSpell(typeof(AvatarDuFroidScroll), "AvatarDuFroidScroll", 9);
-			AddSpell(typeof(BlizzardScroll), "BlizzardScroll", 10);
+			AddSpell("Hydromancie", typeof(ArmureDeGlaceScroll), "Armure de glace", 1);
+			AddSpell("Hydromancie", typeof(RestaurationScroll), "Restauration", 2);
+			AddSpell("Hydromancie", typeof(SoinPreventifScroll), "Soin préventif", 3);
+			AddSpell("Hydromancie", typeof(CageDeGlaceScroll), "Cage de glace", 4);
+			AddSpell("Hydromancie", typeof(AuraCryogeniseeScroll), "Aura cryogenisée", 5);
+			AddSpell("Hydromancie", typeof(PieuxDeGlaceScroll), "Pieux de glace", 6);
+			AddSpell("Hydromancie", typeof(CerveauGeleScroll), "Cerveau gelé", 7);
+			AddSpell("Hydromancie", typeof(AuraRefrigeranteScroll), "Aura réfrigerante", 8);
+			AddSpell("Hydromancie", typeof(AvatarDuFroidScroll), "Avatar de froid", 9);
+			AddSpell("Hydromancie", typeof(BlizzardScroll), "Blizzard", 10);
 
-			//Martial
-			AddSpell(typeof(SecondSouffleScroll), "SecondSouffleScroll", 1);
-			AddSpell(typeof(ProvocationScroll), "ProvocationScroll", 2);
-			AddSpell(typeof(SautDevastateurScroll), "SautDevastateurScroll", 3);
-			AddSpell(typeof(DuelScroll), "DuelScroll", 4);
-			AddSpell(typeof(ChargeFurieuseScroll), "ChargeFurieuseScroll", 5);
-			AddSpell(typeof(EnrageScroll), "EnrageScroll", 6);
-			AddSpell(typeof(BouclierMagiqueScroll), "BouclierMagiqueScroll", 7);
-			AddSpell(typeof(CommandementScroll), "CommandementScroll", 8);
-			AddSpell(typeof(PresenceInspiranteScroll), "PresenceInspiranteScroll", 9);
-			AddSpell(typeof(AngeGardienScroll), "AngeGardienScroll", 10);
+			AddSpell("Martial", typeof(SecondSouffleScroll), "Second souffle", 1);
+			AddSpell("Martial", typeof(ProvocationScroll), "Provocation", 2);
+			AddSpell("Martial", typeof(SautDevastateurScroll), "Saut dévastateur", 3);
+			AddSpell("Martial", typeof(DuelScroll), "Duel", 4);
+			AddSpell("Martial", typeof(ChargeFurieuseScroll), "Charge furieuse", 5);
+			AddSpell("Martial", typeof(EnrageScroll), "Enragé", 6);
+			AddSpell("Martial", typeof(BouclierMagiqueScroll), "Bouclier magique", 7);
+			AddSpell("Martial", typeof(CommandementScroll), "Commandement", 8);
+			AddSpell("Martial", typeof(PresenceInspiranteScroll), "Présence inspirante", 9);
+			AddSpell("Martial", typeof(AngeGardienScroll), "Ange gardien", 10);
 
-			//Musique
-			AddSpell(typeof(DiversionScroll), "DiversionScroll", 1);
-			AddSpell(typeof(CalmeToiScroll), "CalmeToiScroll", 2);
-			AddSpell(typeof(DesorienterScroll), "DesorienterScroll", 3);
-			AddSpell(typeof(DefiScroll), "DefiScroll", 4);
-			AddSpell(typeof(DecrescendoManiaqueScroll), "DecrescendoManiaqueScroll", 5);
-			AddSpell(typeof(InspirationElementaireScroll), "InspirationElementaireScroll", 6);
-			AddSpell(typeof(AbsorbationSonoreScroll), "AbsorbationSonoreScroll", 7);
-			AddSpell(typeof(ParfaiteAspirationScroll), "ParfaiteAspirationScroll", 8);
-			AddSpell(typeof(RevelationDiscordanteScroll), "RevelationDiscordanteScroll", 9);
-			AddSpell(typeof(HavreDePaixScroll), "HavreDePaixScroll", 10);
+			AddSpell("Musique", typeof(DiversionScroll), "Diversion", 1);
+			AddSpell("Musique", typeof(CalmeToiScroll), "Calme toi!", 2);
+			AddSpell("Musique", typeof(DesorienterScroll), "Désorienter", 3);
+			AddSpell("Musique", typeof(DefiScroll), "Defi", 4);
+			AddSpell("Musique", typeof(DecrescendoManiaqueScroll), "Decrescendo maniaque", 5);
+			AddSpell("Musique", typeof(InspirationElementaireScroll), "Inspiration élémentaire", 6);
+			AddSpell("Musique", typeof(AbsorbationSonoreScroll), "Absorbation sonore", 7);
+			AddSpell("Musique", typeof(ParfaiteAspirationScroll), "Parfaite aspiration", 8);
+			AddSpell("Musique", typeof(RevelationDiscordanteScroll), "Révelation discordante", 9);
+			AddSpell("Musique", typeof(HavreDePaixScroll), "Havre de paix", 10);
 
-			//Necromancie
-			AddSpell(typeof(SoifDeSangScroll), "SoifDeSangScroll", 1);
-			AddSpell(typeof(ToucheAbsorbantScroll), "ToucheAbsorbantScroll", 2);
-			AddSpell(typeof(InfectionScroll), "InfectionScroll", 3);
-			AddSpell(typeof(ArmureOsScroll), "ArmureOsScroll", 4);
-			AddSpell(typeof(FamilierMorbideScroll), "FamilierMorbideScroll", 5);
-			AddSpell(typeof(ReanimationScroll), "ReanimationScroll", 6);
-			AddSpell(typeof(ConsommationMortelleScroll), "ConsommationMortelleScroll", 7);
-			AddSpell(typeof(AuraVampiriqueScroll), "AuraVampiriqueScroll", 8);
-			AddSpell(typeof(AppelDuSangScroll), "AppelDuSangScroll", 9);
-			AddSpell(typeof(PluieDeSangScroll), "PluieDeSangScroll", 10);
+			AddSpell("Nécromancie", typeof(SoifDeSangScroll), "Soif de sang", 1);
+			AddSpell("Nécromancie", typeof(ToucheAbsorbantScroll), "Touché absorbant", 2);
+			AddSpell("Nécromancie", typeof(InfectionScroll), "Infection", 3);
+			AddSpell("Nécromancie", typeof(ArmureOsScroll), "Armure d'os", 4);
+			AddSpell("Nécromancie", typeof(FamilierMorbideScroll), "Familier morbide", 5);
+			AddSpell("Nécromancie", typeof(ReanimationScroll), "Réanimation", 6);
+			AddSpell("Nécromancie", typeof(ConsommationMortelleScroll), "Consommation mortelle", 7);
+			AddSpell("Nécromancie", typeof(AuraVampiriqueScroll), "Aura vampirique", 8);
+			AddSpell("Nécromancie", typeof(AppelDuSangScroll), "Appel du sang", 9);
+			AddSpell("Nécromancie", typeof(PluieDeSangScroll), "Pluie de sang", 10);
 
-			//Polymorphie
-			AddSpell(typeof(FormeCycloniqueScroll), "FormeCycloniqueScroll", 1);
-			AddSpell(typeof(FormeMetalliqueScroll), "FormeMetalliqueScroll", 2);
-			AddSpell(typeof(FormeTerrestreScroll), "FormeTerrestreScroll", 3);
-			AddSpell(typeof(FormeEmpoisonneeScroll), "FormeEmpoisonneeScroll", 4);
-			AddSpell(typeof(FormeGivranteScroll), "FormeGivranteScroll", 5);
-			AddSpell(typeof(FormeLiquideScroll), "FormeLiquideScroll", 6);
-			AddSpell(typeof(FormeCristallineScroll), "FormeCristallineScroll", 7);
-			AddSpell(typeof(FormeElectrisanteScroll), "FormeElectrisanteScroll", 8);
-			AddSpell(typeof(FormeEnflammeeScroll), "FormeEnflammeeScroll", 9);
-			AddSpell(typeof(FormeEnsanglanteeScroll), "FormeEnsanglanteeScroll", 10);
+			AddSpell("Polymorphie", typeof(FormeCycloniqueScroll), "Forme cyclonique", 1);
+			AddSpell("Polymorphie", typeof(FormeMetalliqueScroll), "Forme métallique", 2);
+			AddSpell("Polymorphie", typeof(FormeTerrestreScroll), "Forme terrestre", 3);
+			AddSpell("Polymorphie", typeof(FormeEmpoisonneeScroll), "Forme empoisonnée", 4);
+			AddSpell("Polymorphie", typeof(FormeGivranteScroll), "Forme givrante", 5);
+			AddSpell("Polymorphie", typeof(FormeLiquideScroll), "Forme liquide", 6);
+			AddSpell("Polymorphie", typeof(FormeCristallineScroll), "Forme cristalline", 7);
+			AddSpell("Polymorphie", typeof(FormeElectrisanteScroll), "Forme électrisante", 8);
+			AddSpell("Polymorphie", typeof(FormeEnflammeeScroll), "Forme enflammée", 9);
+			AddSpell("Polymorphie", typeof(FormeEnsanglanteeScroll), "Forme ensanglantée", 10);
 
-			//Pyromancie
-			AddSpell(typeof(BouclierDeFeuScroll), "BouclierDeFeuScroll", 1);
-			AddSpell(typeof(BouleDeFeuScroll), "BouleDeFeuScroll", 2);
-			AddSpell(typeof(CeleriteScroll), "CeleriteScroll", 3);
-			AddSpell(typeof(SupernovaScroll), "SupernovaScroll", 4);
-			AddSpell(typeof(AuraRechauffanteScroll), "AuraRechauffanteScroll", 5);
-			AddSpell(typeof(FrenesieDouloureuseScroll), "FrenesieDouloureuseScroll", 6);
-			AddSpell(typeof(FolieArdenteScroll), "FolieArdenteScroll", 7);
-			AddSpell(typeof(AuraExaltationScroll), "AuraExaltationScroll", 8);
-			AddSpell(typeof(CageDeFeuScroll), "CageDeFeuScroll", 9);
-			AddSpell(typeof(PassionArdenteScroll), "PassionArdenteScroll", 10);
+			AddSpell("Pyromancie", typeof(BouclierDeFeuScroll), "Bouclier de feu", 1);
+			AddSpell("Pyromancie", typeof(BouleDeFeuScroll), "Boule de feu", 2);
+			AddSpell("Pyromancie", typeof(CeleriteScroll), "Célérité", 3);
+			AddSpell("Pyromancie", typeof(SupernovaScroll), "Supernova", 4);
+			AddSpell("Pyromancie", typeof(AuraRechauffanteScroll), "Aura réchauffante", 5);
+			AddSpell("Pyromancie", typeof(FrenesieDouloureuseScroll), "Frénésie douloureuse", 6);
+			AddSpell("Pyromancie", typeof(FolieArdenteScroll), "Folie ardente", 7);
+			AddSpell("Pyromancie", typeof(AuraExaltationScroll), "Aura d'exaltation", 8);
+			AddSpell("Pyromancie", typeof(CageDeFeuScroll), "Cage de feu", 9);
+			AddSpell("Pyromancie", typeof(PassionArdenteScroll), "Passion ardente", 10);
 
-			//Roublardise
-			AddSpell(typeof(AdrenalineScroll), "AdrenalineScroll", 1);
-			AddSpell(typeof(SommeilScroll), "SommeilScroll", 2);
-			AddSpell(typeof(LancerPrecisScroll), "LancerPrecisScroll", 3);
-			AddSpell(typeof(CoupArriereScroll), "CoupArriereScroll", 4);
-			AddSpell(typeof(EvasionScroll), "EvasionScroll", 5);
-			AddSpell(typeof(AttiranceScroll), "AttiranceScroll", 6);
-			AddSpell(typeof(MainBlesseeScroll), "MainBlesseeScroll", 7);
-			AddSpell(typeof(CoupureDesTendonsScroll), "CoupureDesTendonsScroll", 8);
-			AddSpell(typeof(GazEndormantScroll), "GazEndormantScroll", 9);
-			AddSpell(typeof(CoupMortelScroll), "CoupMortelScroll", 10);
+			AddSpell("Roublardise", typeof(AdrenalineScroll), "Adrénaline", 1);
+			AddSpell("Roublardise", typeof(SommeilScroll), "Sommeil", 2);
+			AddSpell("Roublardise", typeof(LancerPrecisScroll), "Lancer précis", 3);
+			AddSpell("Roublardise", typeof(CoupArriereScroll), "Coup arrière", 4);
+			AddSpell("Roublardise", typeof(EvasionScroll), "Évasion", 5);
+			AddSpell("Roublardise", typeof(AttiranceScroll), "Attirance", 6);
+			AddSpell("Roublardise", typeof(MainBlesseeScroll), "Main blessée", 7);
+			AddSpell("Roublardise", typeof(CoupureDesTendonsScroll), "Coupure des tendons", 8);
+			AddSpell("Roublardise", typeof(GazEndormantScroll), "Gaz endormant", 9);
+			AddSpell("Roublardise", typeof(CoupMortelScroll), "Coup mortel", 10);
 
-			//Totemique
-			AddSpell(typeof(TotemDeFeuScroll), "TotemDeFeuScroll", 1);
-			AddSpell(typeof(TotemDeauScroll), "TotemDeauScroll", 2);
-			AddSpell(typeof(TotemDeTerreScroll), "TotemDeTerreScroll", 3);
-			AddSpell(typeof(TotemDeVentScroll), "TotemDeVentScroll", 4);
-			AddSpell(typeof(AbsorbationScroll), "AbsorbationScroll", 5);
-			AddSpell(typeof(LierParEspritScroll), "LierParEspritScroll", 6);
-			AddSpell(typeof(SuperChargeurScroll), "SuperChargeurScroll", 7);
-			AddSpell(typeof(MurTotemiqueScroll), "MurTotemiqueScroll", 8);
-			AddSpell(typeof(AppelSpirituelScroll), "AppelSpirituelScroll", 9);
-			AddSpell(typeof(MarcheAsuivreScroll), "MarcheAsuivreScroll", 10);
+			AddSpell("Totémique", typeof(TotemDeFeuScroll), "Totem de feu", 1);
+			AddSpell("Totémique", typeof(TotemDeauScroll), "Totem d'eau", 2);
+			AddSpell("Totémique", typeof(TotemDeTerreScroll), "Totem de terre", 3);
+			AddSpell("Totémique", typeof(TotemDeVentScroll), "Totem de vent", 4);
+			AddSpell("Totémique", typeof(AbsorbationScroll), "Absorbation", 5);
+			AddSpell("Totémique", typeof(LierParEspritScroll), "Lier par l'esprit", 6);
+			AddSpell("Totémique", typeof(SuperChargeurScroll), "Super chargeur", 7);
+			AddSpell("Totémique", typeof(MurTotemiqueScroll), "Mur totémique", 8);
+			AddSpell("Totémique", typeof(AppelSpirituelScroll), "Appel spirituel", 9);
+			AddSpell("Totémique", typeof(MarcheAsuivreScroll), "Marche à suivre", 10);
 
-			index = AddCraft(typeof(Runebook), "Magie", 1041267, 45.0, 95.0, typeof(BlankScroll), 1044377, 8, 1044378);
-			AddRes(index, typeof(RecallScroll), 1044445, 1, 1044253);
-			AddRes(index, typeof(GateTravelScroll), 1044446, 1, 1044253);
+			//index = AddCraft(typeof(Runebook), "Magie", 1041267, 45.0, 95.0, typeof(BlankScroll), 1044377, 8, 1044378);
+			//AddRes(index, typeof(RecallScroll), 1044445, 1, 1044253);
+			//AddRes(index, typeof(GateTravelScroll), 1044446, 1, 1044253);
 
 			//index = AddCraft(typeof(BulkOrders.BulkOrderBook), "Autres", 1028793, 65.0, 115.0, typeof(BlankScroll), 1044377, 10, 1044378);
 
-			index = AddCraft(typeof(NewSpellbook), "Magie", "Livre de sort", 50.0, 126, typeof(Leather), 1044377, 10, 1044378);
+			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Livre de sort", 50.0, 126, typeof(PlainoisLeather), 1044377, 10, 1044378);
+			index = AddCraft(typeof(LivreClasseAucune), "Magie/Classes", "Livre d'oubli de classe", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
 			#region Skills
 			index = AddCraft(typeof(LivreSkillsAlchemy), "Livre d'étude (skills)", "Alchemy", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -429,8 +422,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreSkillsWrestling), "Livre d'étude (skills)", "Wrestling", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsLumberjacking), "Livre d'étude (skills)", "Lumberjacking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			#endregion
-
-			index = AddCraft(typeof(LivreClasseAucune), "Classes", "Livre d'oubli de classe", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
 			#region Artisans
 			index = AddCraft(typeof(LivreClasseEmbouteilleur), "Artisans", "Alchimiste - Embouteilleur", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -536,18 +527,18 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(GemMiningBook), "Autres", "Connaissances Gems", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
 
 			// Set the overridable material
-			SetSubRes(typeof(Leather), 1049150);
+			SetSubRes(typeof(PlainoisLeather), 1049150);
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(Leather), "Cuir", 0.0, 1049312);
-			AddSubRes(typeof(LupusLeather), "Lupus", 65.0, 1049312);
-			AddSubRes(typeof(ReptilienLeather), "Reptilien", 70.0, 1049312);
-			AddSubRes(typeof(GeantLeather), "Geant", 75.0, 1049312);
-			AddSubRes(typeof(OphidienLeather), "Ophidien", 80.0, 1049312);
-			AddSubRes(typeof(ArachnideLeather), "Arachnide", 85.0, 1049312);
-			AddSubRes(typeof(DragoniqueLeather), "Dragonique", 90.0, 1049312);
-			AddSubRes(typeof(DemoniaqueLeather), "Demoniaque", 95.0, 1049312);
+			AddSubRes(typeof(PlainoisLeather), "Cuir", 0.0, 1049312);
+			AddSubRes(typeof(ForestierLeather), "Lupus", 65.0, 1049312);
+			AddSubRes(typeof(DesertiqueLeather), "Reptilien", 70.0, 1049312);
+			AddSubRes(typeof(TaigoisLeather), "Geant", 75.0, 1049312);
+			AddSubRes(typeof(SavanoisLeather), "Ophidien", 80.0, 1049312);
+			AddSubRes(typeof(ToundroisLeather), "Arachnide", 85.0, 1049312);
+			AddSubRes(typeof(TropicauxLeather), "Dragonique", 90.0, 1049312);
+			AddSubRes(typeof(MontagnardLeather), "Demoniaque", 95.0, 1049312);
 			AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
 
 			MarkOption = true;

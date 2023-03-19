@@ -19,7 +19,7 @@ namespace Server.Engines.Quests
         public Curiosities() : base()
         {
             AddObjective(new ObtainObjective(typeof(FertileDirt), "Fertil Dirt", 3, 0xF81));
-            AddObjective(new ObtainObjective(typeof(Bone), "Bone", 3, 0xF7e));
+            AddObjective(new ObtainObjective(typeof(PlainoisBone), "Bone", 3, 0xF7e));
 
             AddReward(new BaseReward(typeof(ExplodingTarPotion), "Exploding Tar Potion"));
         }

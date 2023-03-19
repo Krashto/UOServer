@@ -165,16 +165,16 @@ namespace Server.Gumps
 			new SpellBookEntry( 9, Aptitude.Roublardise, "Gas endormant", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(MandrakeRoot) }, 0x8d8, 7, 708),
 			new SpellBookEntry( 10, Aptitude.Roublardise, "Coup mortel", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(BlackPearl) }, 0x8f5, 6, 709),
 
-			new SpellBookEntry( 1, Aptitude.Roublardise, "Totem de feu", new Type[] { typeof(BlackPearl), typeof(MandrakeRoot), typeof(Garlic) }, 0x8e4, 1, 710),
-			new SpellBookEntry( 2, Aptitude.Roublardise, "Totem de l'eau", new Type[] { typeof(GraveDust), typeof(PigIron), typeof(BatWing) }, 0x164, 2, 711),
-			new SpellBookEntry( 3, Aptitude.Roublardise, "Totem de terre", new Type[] { typeof(NoxCrystal), typeof(Nightshade), typeof(BlackPearl) }, 0x137, 3, 712),
-			new SpellBookEntry( 4, Aptitude.Roublardise, "Totem de vent", new Type[] { typeof(Nightshade), typeof(NoxCrystal), typeof(BlackPearl) }, 0x133, 3, 713),
-			new SpellBookEntry( 5, Aptitude.Roublardise, "Absorbation", new Type[] { typeof(BlackPearl) }, 0x5326, 4, 714),
-			new SpellBookEntry( 6, Aptitude.Roublardise, "Lier par l'esprit", new Type[] { typeof(BatWing), typeof(NoxCrystal) }, 0x161, 4, 715),
-			new SpellBookEntry( 7, Aptitude.Roublardise, "Supercharger", new Type[] { typeof(Bloodmoss), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x8f4, 5, 716),
-			new SpellBookEntry( 8, Aptitude.Roublardise, "Mur totémique", new Type[] { typeof(BlackPearl), typeof(SpidersSilk), typeof(Garlic) }, 0x8e1, 6, 717),
-			new SpellBookEntry( 9, Aptitude.Roublardise, "Appel spirituel", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(MandrakeRoot) }, 0x8d8, 7, 718),
-			new SpellBookEntry( 10, Aptitude.Roublardise, "Marche à suivre", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(BlackPearl) }, 0x8f5, 6, 719),
+			new SpellBookEntry( 1, Aptitude.Totemique, "Totem de feu", new Type[] { typeof(BlackPearl), typeof(MandrakeRoot), typeof(Garlic) }, 0x8e4, 1, 710),
+			new SpellBookEntry( 2, Aptitude.Totemique, "Totem de l'eau", new Type[] { typeof(GraveDust), typeof(PigIron), typeof(BatWing) }, 0x164, 2, 711),
+			new SpellBookEntry( 3, Aptitude.Totemique, "Totem de terre", new Type[] { typeof(NoxCrystal), typeof(Nightshade), typeof(BlackPearl) }, 0x137, 3, 712),
+			new SpellBookEntry( 4, Aptitude.Totemique, "Totem de vent", new Type[] { typeof(Nightshade), typeof(NoxCrystal), typeof(BlackPearl) }, 0x133, 3, 713),
+			new SpellBookEntry( 5, Aptitude.Totemique, "Absorbation", new Type[] { typeof(BlackPearl) }, 0x5326, 4, 714),
+			new SpellBookEntry( 6, Aptitude.Totemique, "Lier par l'esprit", new Type[] { typeof(BatWing), typeof(NoxCrystal) }, 0x161, 4, 715),
+			new SpellBookEntry( 7, Aptitude.Totemique, "Supercharger", new Type[] { typeof(Bloodmoss), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x8f4, 5, 716),
+			new SpellBookEntry( 8, Aptitude.Totemique, "Mur totémique", new Type[] { typeof(BlackPearl), typeof(SpidersSilk), typeof(Garlic) }, 0x8e1, 6, 717),
+			new SpellBookEntry( 9, Aptitude.Totemique, "Appel spirituel", new Type[] { typeof(Garlic), typeof(Ginseng), typeof(MandrakeRoot) }, 0x8d8, 7, 718),
+			new SpellBookEntry( 10, Aptitude.Totemique, "Marche à suivre", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(BlackPearl) }, 0x8f5, 6, 719),
         };
 
         public bool HasSpell(int spellID)

@@ -387,7 +387,7 @@ namespace Server.Engines.Craft
 			SetUseSubRes2(index, true);
 			index = AddCraft(typeof(Sextant), "Assemblages", "Sextant", 0.0, 0.0, typeof(SextantParts), "Pièces de sextant", 1, 1044253);
 			index = AddCraft(typeof(Bola), "Assemblages", "Bola", 60.0, 80.0, typeof(BolaBall), "Balle de bola", 4, 1042613);
-			AddRes(index, typeof(Leather), 1044462, 3, 1044463);
+			AddRes(index, typeof(PlainoisLeather), 1044462, 3, 1044463);
 			index = AddCraft(typeof(PotionKeg), "Assemblages", "Tonnelet de potion", 75.0, 100.0, typeof(Keg), "Tonnelet", 1, 1044253);
 			AddRes(index, typeof(Bottle), 1044250, 10, 1044253);
 			AddRes(index, typeof(BarrelLid), "Couvercle de baril", 1, 1044253);
@@ -516,9 +516,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Scales), "Divers", "Balance", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Globe), "Divers", "Globe terrestre", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Spyglass), "Divers", "Longue vue", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(Fouet4), "Divers", "Fouet 4 mètres", 50.0, 70.0, typeof(Leather), 1044462, 3, 1044463);
-			index = AddCraft(typeof(Fouet6), "Divers", "Fouet 6 mètres", 65.0, 85.0, typeof(Leather), 1044462, 4, 1044463);
-			index = AddCraft(typeof(Fouet8), "Divers", "Fouet 8 mètres", 85.0, 105.0, typeof(Leather), 1044462, 5, 1044463);
+			index = AddCraft(typeof(Fouet4), "Divers", "Fouet 4 mètres", 50.0, 70.0, typeof(PlainoisLeather), 1044462, 3, 1044463);
+			index = AddCraft(typeof(Fouet6), "Divers", "Fouet 6 mètres", 65.0, 85.0, typeof(PlainoisLeather), 1044462, 4, 1044463);
+			index = AddCraft(typeof(Fouet8), "Divers", "Fouet 8 mètres", 85.0, 105.0, typeof(PlainoisLeather), 1044462, 5, 1044463);
 			//index = AddCraft(typeof(ToileVierge), "Divers", "Toile Vierge", 30.0, 50.0, typeof(Board), 1044041, 5, 1044351);
 			index = AddCraft(typeof(CopperWire), "Divers", "Fil de fer", 30.0, 60.0, typeof(IronIngot), "Lingot de fer", 2, 1044037);
 			index = AddCraft(typeof(CopperWire), "Divers", "Fil de cuivre", 30.0, 60.0, typeof(CopperIngot), "Lingot de cuivre", 2, 1044037);

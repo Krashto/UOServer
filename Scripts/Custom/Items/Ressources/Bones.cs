@@ -130,21 +130,21 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class Bone : BaseBone
+    public class PlainoisBone : BaseBone
     {
         [Constructable]
-        public Bone()
+        public PlainoisBone()
             : this(1)
         {
         }
 
         [Constructable]
-        public Bone(int amount)
+        public PlainoisBone(int amount)
             : base(CraftResource.PlainoisBone, amount)
         {
         }
 
-        public Bone(Serial serial)
+        public PlainoisBone(Serial serial)
             : base(serial)
         {
         }
@@ -167,7 +167,7 @@ namespace Server.Items
     [Flipable(0x1081, 0x1082)]
     public class LupusBone : BaseBone
     {
-        protected override CraftResource DefaultResource => CraftResource.LupusBone;
+        protected override CraftResource DefaultResource => CraftResource.ForestierBone;
 
         [Constructable]
         public LupusBone()
@@ -177,7 +177,7 @@ namespace Server.Items
 
         [Constructable]
         public LupusBone(int amount)
-            : base(CraftResource.LupusBone, amount)
+            : base(CraftResource.ForestierBone, amount)
         {
         }
 
@@ -202,23 +202,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class ReptilienBone : BaseBone
+    public class DesertiqueBone : BaseBone
     {
-        protected override CraftResource DefaultResource => CraftResource.ReptilienBone;
+        protected override CraftResource DefaultResource => CraftResource.DesertiqueBone;
 
         [Constructable]
-        public ReptilienBone()
+        public DesertiqueBone()
             : this(1)
         {
         }
 
         [Constructable]
-        public ReptilienBone(int amount)
-            : base(CraftResource.ReptilienBone, amount)
+        public DesertiqueBone(int amount)
+            : base(CraftResource.DesertiqueBone, amount)
         {
         }
 
-        public ReptilienBone(Serial serial)
+        public DesertiqueBone(Serial serial)
             : base(serial)
         {
         }
@@ -239,23 +239,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class GeantBone : BaseBone
+    public class TaigoisBone : BaseBone
     {
-        protected override CraftResource DefaultResource => CraftResource.GeantBone;
+        protected override CraftResource DefaultResource => CraftResource.TaigoisBone;
 
         [Constructable]
-        public GeantBone()
+        public TaigoisBone()
             : this(1)
         {
         }
 
         [Constructable]
-        public GeantBone(int amount)
-            : base(CraftResource.GeantBone, amount)
+        public TaigoisBone(int amount)
+            : base(CraftResource.TaigoisBone, amount)
         {
         }
 
-        public GeantBone(Serial serial)
+        public TaigoisBone(Serial serial)
             : base(serial)
         {
         }
@@ -276,23 +276,23 @@ namespace Server.Items
     }
 
 	[Flipable(0x1081, 0x1082)]
-	public class OphidienBone : BaseBone
+	public class SavanoisBone : BaseBone
 	{
-		protected override CraftResource DefaultResource => CraftResource.OphidienBone;
+		protected override CraftResource DefaultResource => CraftResource.SavanoisBone;
 
 		[Constructable]
-		public OphidienBone()
+		public SavanoisBone()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public OphidienBone(int amount)
-			: base(CraftResource.OphidienBone, amount)
+		public SavanoisBone(int amount)
+			: base(CraftResource.SavanoisBone, amount)
 		{
 		}
 
-		public OphidienBone(Serial serial)
+		public SavanoisBone(Serial serial)
 			: base(serial)
 		{
 		}
@@ -313,23 +313,23 @@ namespace Server.Items
 	}
 
 	[Flipable(0x1081, 0x1082)]
-	public class ArachnideBone : BaseBone
+	public class ToundroisBone : BaseBone
 	{
-		protected override CraftResource DefaultResource => CraftResource.ArachnideBone;
+		protected override CraftResource DefaultResource => CraftResource.ToundroisBone;
 
 		[Constructable]
-		public ArachnideBone()
+		public ToundroisBone()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public ArachnideBone(int amount)
-			: base(CraftResource.ArachnideBone, amount)
+		public ToundroisBone(int amount)
+			: base(CraftResource.ToundroisBone, amount)
 		{
 		}
 
-		public ArachnideBone(Serial serial)
+		public ToundroisBone(Serial serial)
 			: base(serial)
 		{
 		}
@@ -350,23 +350,23 @@ namespace Server.Items
 	}
 
 	[Flipable(0x1081, 0x1082)]
-	public class DragoniqueBone : BaseBone
+	public class TropicauxBone : BaseBone
 	{
-		protected override CraftResource DefaultResource => CraftResource.DragoniqueBone;
+		protected override CraftResource DefaultResource => CraftResource.TropicauxBone;
 
 		[Constructable]
-		public DragoniqueBone()
+		public TropicauxBone()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public DragoniqueBone(int amount)
-			: base(CraftResource.DragoniqueBone, amount)
+		public TropicauxBone(int amount)
+			: base(CraftResource.TropicauxBone, amount)
 		{
 		}
 
-		public DragoniqueBone(Serial serial)
+		public TropicauxBone(Serial serial)
 			: base(serial)
 		{
 		}
@@ -387,23 +387,23 @@ namespace Server.Items
 	}
 
 	[Flipable(0x1081, 0x1082)]
-	public class DemoniaqueBone : BaseBone
+	public class MontagnardBone : BaseBone
 	{
-		protected override CraftResource DefaultResource => CraftResource.DemoniaqueBone;
+		protected override CraftResource DefaultResource => CraftResource.MontagnardBone;
 
 		[Constructable]
-		public DemoniaqueBone()
+		public MontagnardBone()
 			: this(1)
 		{
 		}
 
 		[Constructable]
-		public DemoniaqueBone(int amount)
-			: base(CraftResource.DemoniaqueBone, amount)
+		public MontagnardBone(int amount)
+			: base(CraftResource.MontagnardBone, amount)
 		{
 		}
 
-		public DemoniaqueBone(Serial serial)
+		public MontagnardBone(Serial serial)
 			: base(serial)
 		{
 		}
@@ -459,7 +459,4 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-
-
-
 }

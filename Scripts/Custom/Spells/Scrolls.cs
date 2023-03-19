@@ -189,20 +189,20 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class ToucherSuffosantScroll : SpellScroll
+	public class ToucheSuffosantScroll : SpellScroll
 	{
 		[Constructable]
-		public ToucherSuffosantScroll() : this(1)
+		public ToucheSuffosantScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ToucherSuffosantScroll(int amount) : base(606, 0x2260, amount)
+		public ToucheSuffosantScroll(int amount) : base(606, 0x2260, amount)
 		{
-			Name = "ToucherSuffosant";
+			Name = "Touché suffosant";
 		}
 
-		public ToucherSuffosantScroll(Serial serial) : base(serial)
+		public ToucheSuffosantScroll(Serial serial) : base(serial)
 		{
 		}
 

@@ -71,7 +71,7 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
         {
     //        AddLoot(LootPack.Average);
-            AddLoot(LootPack.LootItem<Bone>());
+            AddLoot(LootPack.LootItem<PlainoisBone>());
 			AddLoot(LootPack.LootItem<OeufSerpent>());
 			AddLoot(LootPack.LootItem<EcaillesSerpentGeant>());
 

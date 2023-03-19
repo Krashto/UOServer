@@ -97,35 +97,35 @@ namespace Server.Engines.Craft
             int index = -1;
 
             #region Bone Armor
-            index = AddCraft(typeof(BoneHelm), "Armure d'os", 1025206, 50, 80, typeof(Bone), "Os", 4, 1044463);
-            index = AddCraft(typeof(BoneGloves), "Armure d'os", 1025205, 50, 80, typeof(Bone), "Os", 6, 1044463);
-            index = AddCraft(typeof(BoneArms), "Armure d'os", 1025203, 50, 80, typeof(Bone), "Os", 8, 1044463);
-			index = AddCraft(typeof(BoneGorget), "Armure d'os", "Gorgerin d'os", 50, 80, typeof(Bone), "Os", 5, 1044463);
-			index = AddCraft(typeof(BoneLegs), "Armure d'os", 1025202, 50, 80, typeof(Bone), "Os", 10, 1044463);
-            index = AddCraft(typeof(BoneChest), "Armure d'os", 1025199, 50, 80, typeof(Bone), "Os", 12, 1044463);
+            index = AddCraft(typeof(BoneHelm), "Armure d'os", 1025206, 50, 80, typeof(PlainoisBone), "Os", 4, 1044463);
+            index = AddCraft(typeof(BoneGloves), "Armure d'os", 1025205, 50, 80, typeof(PlainoisBone), "Os", 6, 1044463);
+            index = AddCraft(typeof(BoneArms), "Armure d'os", 1025203, 50, 80, typeof(PlainoisBone), "Os", 8, 1044463);
+			index = AddCraft(typeof(BoneGorget), "Armure d'os", "Gorgerin d'os", 50, 80, typeof(PlainoisBone), "Os", 5, 1044463);
+			index = AddCraft(typeof(BoneLegs), "Armure d'os", 1025202, 50, 80, typeof(PlainoisBone), "Os", 10, 1044463);
+            index = AddCraft(typeof(BoneChest), "Armure d'os", 1025199, 50, 80, typeof(PlainoisBone), "Os", 12, 1044463);
 
-            index = AddCraft(typeof(OrcHelm), "Armure d'os", 1027947, 80, 120, typeof(Bone), "Os", 6, 1044463);
-			index = AddCraft(typeof(CasqueOS), "Armure d'os", "Casque d'Os", 80, 120, typeof(Bone), "Os", 4, 1044463);
-			index = AddCraft(typeof(GantsOS), "Armure d'os", "Gants d'Os", 80, 120, typeof(Bone), "Os", 6, 1044463);
-			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassard d'Os", 80, 120, typeof(Bone), "Os", 8, 1044463);
-			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambiere d'Os", 80, 120, typeof(Bone), "Os", 10, 1044463);
-			index = AddCraft(typeof(BouclierOs), "Armure d'os", "Bouclier d'Os", 80, 120, typeof(Bone), "Os", 10, 1044463) ;
-			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 80, 120, typeof(Bone), "Os", 12, 1044463);
+            index = AddCraft(typeof(OrcHelm), "Armure d'os", 1027947, 80, 120, typeof(PlainoisBone), "Os", 6, 1044463);
+			index = AddCraft(typeof(CasqueOS), "Armure d'os", "Casque d'Os", 80, 120, typeof(PlainoisBone), "Os", 4, 1044463);
+			index = AddCraft(typeof(GantsOS), "Armure d'os", "Gants d'Os", 80, 120, typeof(PlainoisBone), "Os", 6, 1044463);
+			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassard d'Os", 80, 120, typeof(PlainoisBone), "Os", 8, 1044463);
+			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambiere d'Os", 80, 120, typeof(PlainoisBone), "Os", 10, 1044463);
+			index = AddCraft(typeof(BouclierOs), "Armure d'os", "Bouclier d'Os", 80, 120, typeof(PlainoisBone), "Os", 10, 1044463) ;
+			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 80, 120, typeof(PlainoisBone), "Os", 12, 1044463);
 			#endregion
 
 			// Set the overridable material
-			SetSubRes(typeof(Bone), "Os");
+			SetSubRes(typeof(PlainoisBone), "Os");
 
             // Add every material you want the player to be able to choose from
             // This will override the overridable material
-            AddSubRes(typeof(Bone), "Os", 0.0, 1049312);
+            AddSubRes(typeof(PlainoisBone), "Os", 0.0, 1049312);
 			AddSubRes(typeof(LupusBone), "Lupus", 65.0, 1049312);
-			AddSubRes(typeof(ReptilienBone), "Reptilien", 70.0, 1049312);
-			AddSubRes(typeof(GeantBone), "Geant", 75.0, 1049312);
-			AddSubRes(typeof(OphidienBone), "Ophidien", 80.0, 1049312);
-			AddSubRes(typeof(ArachnideBone), "Arachnide", 85.0, 1049312);
-			AddSubRes(typeof(DragoniqueBone), "Dragonique", 90.0, 1049312);
-			AddSubRes(typeof(DemoniaqueBone), "Demoniaque", 95.0, 1049312);
+			AddSubRes(typeof(DesertiqueBone), "Reptilien", 70.0, 1049312);
+			AddSubRes(typeof(TaigoisBone), "Geant", 75.0, 1049312);
+			AddSubRes(typeof(SavanoisBone), "Ophidien", 80.0, 1049312);
+			AddSubRes(typeof(ToundroisBone), "Arachnide", 85.0, 1049312);
+			AddSubRes(typeof(TropicauxBone), "Dragonique", 90.0, 1049312);
+			AddSubRes(typeof(MontagnardBone), "Demoniaque", 95.0, 1049312);
 			AddSubRes(typeof(AncienBone), "Ancien", 99.0, 1049312);
 
             MarkOption = true;

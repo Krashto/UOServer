@@ -62,7 +62,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.Average);
             AddLoot(LootPack.LootItem<SulfurousAsh>(100.0, 1, false, true));
-            AddLoot(LootPack.LootItem<Bone>(100.0, 1, false, true));
+            AddLoot(LootPack.LootItem<PlainoisBone>(100.0, 1, false, true));
             AddLoot(LootPack.BodyParts);
         }
 

@@ -38,7 +38,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.LootItem<Bone>(3));
+            AddLoot(LootPack.LootItem<PlainoisBone>(3));
         }
 
         public HordeMinion(Serial serial)

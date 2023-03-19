@@ -209,7 +209,7 @@ namespace Server
         private static readonly Type[] m_NecroRegTypes = new[] { typeof(BatWing), typeof(GraveDust), typeof(DaemonBlood), typeof(NoxCrystal), typeof(PigIron) };
 
         public static Type[] MysticRegTypes => m_MysticRegTypes;
-        private static readonly Type[] m_MysticRegTypes = new[] { typeof(Bone), typeof(DragonBlood), typeof(FertileDirt), typeof(DaemonBone) };
+        private static readonly Type[] m_MysticRegTypes = new[] { typeof(PlainoisBone), typeof(DragonBlood), typeof(FertileDirt), typeof(DaemonBone) };
 
         private static readonly Type[] m_PotionTypes = new[]
         {
