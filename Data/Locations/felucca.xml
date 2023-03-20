@@ -8,11 +8,10 @@
 			<child name="Green Acres" x="2261" y="101" z="0" />
 		 </parent>
 
-			<parent name="Mines">
 
-			<child name="Mine Fer Colognan" x="1008" y="1414" z="-22" />
 
-			</parent>
+
+	
 
 
 		<parent name="Villes">
@@ -21,11 +20,41 @@
 			<child name="Ville déchue" x="481" y="945" z="5" />
 			<child name="Villa du gouverneur" x="1322" y="1520" z="0" />
 			
-			</parent>
+	</parent>
+			<parent name="Mines">
 
-
-		<parent name="Dongeons">
+			<child name="Fer/Cuivre/Bronze" x="1008" y="1414" z="-22" />
+			<child name="Lithiar/Argent" x="1216" y="1429" z="1" />
+			<child name="Herborite" x="744" y="1474" z="1" />
+			<child name="Equilbrium/Etheryl/Or" x="566" y="1255" z="0" />
+			<child name="Phlogopite" x="816" y="786" z="0" />
+			<child name="Acier/Agapite/Durian" x="562" y="787" z="0" />
+			<child name="Abyssium" x="685" y="553" z="0" />
+			<child name="Sombralir" x="1030" y="620" z="-20" />
+			<child name="Muscovite" x="1081" y="250" z="0" />
+			<child name="Mytheril" x="1656" y="565" z="0" />
+			<child name="Glacias/Chrysteliar/Boreal" x="1485" y="863" z="0" />
+			<child name="Maritium" x="1522" y="911" z="0" />
+			<child name="Bloodirium" x="1335" y="915" z="-11" />
+			<child name="Sonne/Volcanium" x="1148" y="968" z="0" />
+			<child name="Jolinar/Justicium/Zirconium" x="1362" y="1165" z="0" />
+			<child name="Khandarium" x="1411" y="1265" z="4" />
+</parent>
+			<parent name="Dongeons">
 			<child name="Dongeon Mortanyss" x="1119" y="1331" z="1" />
+			<child name="Dongeon Leviathan" x="1766" y="1126" z="-1" />
+			<child name="Tombeau de Malik" x="1442" y="1188" z="28" />
+			<child name="Coeur de la Terre" x="1334" y="916" z="-11" />
+			<child name="Mont Idyr" x="1481" y="620" z="-1" />
+			<child name="Pic Glacé" x="987" y="227" z="1" />
+			<child name="Les Vestiges" x="898" y="313" z="0" />
+			<child name="Le Temple Oublié" x="527" y="486" z="0" />
+			<child name="Cratère Fulminant" x="985" y="552" z="-14" />
+			<child name="Foyer Corrompu" x="993" y="854" z="12" />
+			<child name="Le repaire arachnique" x="557" y="845" z="1" />
+			<child name="La Tanière des Sky'vens" x="819" y="1041" z="1" />
+			<child name="Le Berceau d'Ishana" x="367" y="1447" z="0" />
+
 			
 			</parent>
 			
