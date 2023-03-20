@@ -56,7 +56,24 @@
 			<child name="Le Berceau d'Ishana" x="367" y="1447" z="0" />
 
 			
-			</parent>
+	</parent>
+
+	<parent name="Campements de Brigands">
+			<child name="Brigand 1" x="1098" y="1006" z="-1" />
+			<child name="Brigand 2" x="1275" y="1130" z="1" />
+	
+	</parent>
+
+	
+
+	<parent name="Campements Orcs">
+			<child name="Orc 1" x="1579" y="929" z="1" />
+			<child name="Orc 2" x="793" y="1457" z="0" />
+	
+			
+
+			
+	</parent>
 			
 </parent>				
 </places>
