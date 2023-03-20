@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Custom.Classes;
 using Server.Mobiles;
-using System.Security.Cryptography;
 
 namespace Server.Items
 {
@@ -1697,10 +1696,6 @@ namespace Server.Items
 
             int version = reader.ReadInt();
 
-
-
-
-
             switch (version)
             {
 				case 18:
@@ -1919,7 +1914,10 @@ namespace Server.Items
                         if (m_Resource == CraftResource.None)
                             m_Resource = DefaultResource;
 
-                        if (GetSaveFlag(flags, SaveFlag.BaseArmor))
+						if ((int)m_Resource > 1 && (int)m_Resource < 100)
+							m_Resource = DefaultResource;
+
+						if (GetSaveFlag(flags, SaveFlag.BaseArmor))
                             m_ArmorBase = reader.ReadEncodedInt();
                         else
                             m_ArmorBase = -1;
@@ -2020,8 +2018,6 @@ namespace Server.Items
 			{
 				Hue = CraftResources.GetHue(m_Resource); 
 			}
-
-
         }
 
         public virtual CraftResource DefaultResource => CraftResource.Iron;

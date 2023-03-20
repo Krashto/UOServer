@@ -7,8 +7,6 @@ namespace Server.Items
     public enum CraftResource
     {
         None = 0,
-		[Description("Fer")]
-        Iron = 1,
 		[Description("Cuivre mat")]
 		DullCopper,
 		[Description("Fer de l'ombre")]
@@ -24,8 +22,10 @@ namespace Server.Items
         Valorite,
 		//Mytheril,
 
+		[Description("Fer")]
+		Iron = 101,
 		[Description("Bronze")]
-		Bronze = 101,
+		Bronze,
 		[Description("Cuivre")]
 		Copper,
 		[Description("Sonne")]
@@ -1085,7 +1085,7 @@ namespace Server.Items
         /// </summary>
         public static CraftResourceType GetType(CraftResource resource)
         {
-            if (resource >= CraftResource.Iron && resource <= CraftResource.Mytheril)
+            if (resource >= CraftResource.Iron && resource <= CraftResource.Nostalgium)
                 return CraftResourceType.Metal;
 
             if (resource >= CraftResource.PlainoisLeather && resource <= CraftResource.AncienLeather)
