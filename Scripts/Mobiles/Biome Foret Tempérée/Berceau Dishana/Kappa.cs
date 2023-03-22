@@ -3,42 +3,44 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a kappa corpse")]
+    [CorpseName("Le Corps d'un Kappa")]
     public class Kappa : BaseCreature
     {
         [Constructable]
         public Kappa()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a kappa";
+            Name = "Un Kappa";
             Body = 240;
 
-            SetStr(186, 230);
-            SetDex(51, 75);
-            SetInt(41, 55);
+			SetStr(173, 269);
+			SetDex(115, 192);
+			SetInt(96, 154);
 
-            SetMana(30);
+			SetHits(165, 251);
 
-            SetHits(151, 180);
+			SetDamage(23, 39);
 
-            SetDamage(6, 12);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 35, 50);
-            SetResistance(ResistanceType.Fire, 35, 50);
-            SetResistance(ResistanceType.Cold, 25, 50);
-            SetResistance(ResistanceType.Poison, 35, 50);
-            SetResistance(ResistanceType.Energy, 20, 30);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-            SetSkill(SkillName.MagicResist, 60.1, 70.0);
-            SetSkill(SkillName.Tactics, 79.1, 89.0);
-            SetSkill(SkillName.Wrestling, 60.1, 70.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 1700;
-            Karma = -1700;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-            SetSpecialAbility(SpecialAbility.LifeLeech);
+
+			SetSpecialAbility(SpecialAbility.LifeLeech);
         }
 
         public Kappa(Serial serial)

@@ -4,41 +4,44 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a glowing ratman corpse")]
+    [CorpseName("Le Corps d'un Homme Rat Mage")]
     public class RatmanMage : BaseCreature
     {
         [Constructable]
         public RatmanMage()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("ratman");
+            Name = "Un Homme Rat Mage";
             Body = 0x8F;
             BaseSoundID = 437;
 
-            SetStr(146, 180);
-            SetDex(101, 130);
-            SetInt(186, 210);
+			SetStr(173, 269);
+			SetDex(115, 192);
+			SetInt(96, 154);
 
-            SetHits(88, 108);
+			SetHits(165, 251);
 
-            SetDamage(7, 14);
+			SetDamage(23, 39);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 40, 45);
-            SetResistance(ResistanceType.Fire, 10, 20);
-            SetResistance(ResistanceType.Cold, 10, 20);
-            SetResistance(ResistanceType.Poison, 10, 20);
-            SetResistance(ResistanceType.Energy, 10, 20);
 
-            SetSkill(SkillName.EvalInt, 70.1, 80.0);
-            SetSkill(SkillName.Magery, 70.1, 80.0);
-            SetSkill(SkillName.MagicResist, 65.1, 90.0);
-            SetSkill(SkillName.Tactics, 50.1, 75.0);
-            SetSkill(SkillName.Wrestling, 50.1, 75.0);
+			SetResistance(ResistanceType.Physical, 75, 75);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 25, 25);
+			SetResistance(ResistanceType.Poison, 25, 25);
+			SetResistance(ResistanceType.Energy, 25, 25);
 
-            Fame = 7500;
-            Karma = -7500;
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+		//	Fame = 7500;
+        //    Karma = -7500;
         }
 
         public RatmanMage(Serial serial)

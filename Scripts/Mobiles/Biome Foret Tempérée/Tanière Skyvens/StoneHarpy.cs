@@ -2,41 +2,46 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a stone harpy corpse")]
+    [CorpseName("Le Corps d'une Harpie")]
     public class StoneHarpy : Harpy
 	{
         [Constructable]
         public StoneHarpy()
             : base()
         {
-            Name = "a stone harpy";
+            Name = "Une Harpie de Pierre";
             Body = 73;
             BaseSoundID = 402;
 
-            SetStr(296, 320);
-            SetDex(86, 110);
-            SetInt(51, 75);
+			SetStr(199, 355);
+			SetDex(132, 220);
+			SetInt(110, 177);
 
-            SetHits(178, 192);
-            SetMana(0);
+			SetHits(231, 351);
 
-            SetDamage(8, 16);
+			SetDamage(26, 45);
 
-            SetDamageType(ResistanceType.Physical, 75);
-            SetDamageType(ResistanceType.Poison, 25);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 45, 55);
-            SetResistance(ResistanceType.Fire, 20, 30);
-            SetResistance(ResistanceType.Cold, 10, 20);
-            SetResistance(ResistanceType.Poison, 30, 40);
-            SetResistance(ResistanceType.Energy, 30, 40);
 
-            SetSkill(SkillName.MagicResist, 50.1, 65.0);
-            SetSkill(SkillName.Tactics, 70.1, 100.0);
-            SetSkill(SkillName.Wrestling, 70.1, 100.0);
+			SetResistance(ResistanceType.Physical, 75, 75);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 25, 25);
+			SetResistance(ResistanceType.Poison, 25, 25);
+			SetResistance(ResistanceType.Energy, 25, 25);
 
-            Fame = 4500;
-            Karma = -4500;
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
+
+
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
+
+
+		//	Fame = 4500;
+        //    Karma = -4500;
         }
 
         public StoneHarpy(Serial serial)

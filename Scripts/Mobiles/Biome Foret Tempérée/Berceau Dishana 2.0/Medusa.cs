@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a medusa corpse")]
+    [CorpseName("Le Corps de Medusa")]
     public class Medusa : BaseSABoss, ICarvable
     {
         private readonly List<Mobile> m_TurnedToStone = new List<Mobile>();
@@ -30,35 +30,35 @@ namespace Server.Mobiles
 			SetDex(132, 220);
 			SetInt(110, 177);
 
-			SetHits(4770, 7249);
+			SetHits(5008, 7611);
 
 			SetDamage(26, 45);
 
-			SetDamageType(ResistanceType.Physical, 40);
-			SetDamageType(ResistanceType.Fire, 60);
-
-			SetResistance(ResistanceType.Physical, 60, 70);
-			SetResistance(ResistanceType.Fire, 60, 70);
-			SetResistance(ResistanceType.Cold, 60, 70);
-			SetResistance(ResistanceType.Poison, 60, 70);
-			SetResistance(ResistanceType.Energy, 60, 70);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
 
-			         SetSkill(SkillName.EvalInt, 55.1, 65.0);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-			SetSkill(SkillName.Magery, 55.1, 65.0);
-			SetSkill(SkillName.Meditation, 55.1, 65.0); 
+			SetSkill(SkillName.EvalInt, 75.1, 100.0);
+			SetSkill(SkillName.Magery, 75.1, 100.0);
+			SetSkill(SkillName.Meditation, 75.1, 100.0);
 
-
-			SetSkill(SkillName.MagicResist, 45.1, 60.0);
-			SetSkill(SkillName.Tactics, 55.1, 65.0);
-			SetSkill(SkillName.Wrestling, 55.1, 65.0);
+			SetSkill(SkillName.MagicResist, 75.1, 100.0);
+			SetSkill(SkillName.Tactics, 75.1, 100.0);
+			SetSkill(SkillName.Wrestling, 75.1, 100.0);
 
 
 
 
-			Fame = 22000;
-            Karma = -22000;
+
+
+		//	Fame = 22000;
+        //    Karma = -22000;
 
             IronwoodCompositeBow Bow = new IronwoodCompositeBow
             {

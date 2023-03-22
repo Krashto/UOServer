@@ -1,37 +1,44 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a giant rat corpse")]
+    [CorpseName("Le Corps d'un Rat Geant")]
     public class GiantRat : BaseCreature
     {
         [Constructable]
         public GiantRat()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant rat";
+            Name = "Un Rat Geant";
             Body = 0xD7;
             BaseSoundID = 0x188;
 
-            SetStr(32, 74);
-            SetDex(46, 65);
-            SetInt(16, 30);
+			SetStr(45, 70);
+			SetDex(30, 50);
+			SetInt(25, 40);
 
-            SetHits(26, 39);
-            SetMana(0);
+			SetHits(50, 65);
 
-            SetDamage(4, 8);
+			SetDamage(6, 10);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 15, 20);
-            SetResistance(ResistanceType.Fire, 5, 10);
-            SetResistance(ResistanceType.Poison, 25, 35);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 25.1, 30.0);
-            SetSkill(SkillName.Tactics, 29.3, 44.0);
-            SetSkill(SkillName.Wrestling, 29.3, 44.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 300;
-            Karma = -300;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+		//	Fame = 300;
+         //   Karma = -300;
 
             Tamable = true;
             ControlSlots = 1;

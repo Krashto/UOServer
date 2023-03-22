@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an turkey corpse")]
+    [CorpseName("Le Corps d'une Dinde")]
     public class Turkey : BaseCreature
     {
         [Constructable]
@@ -13,29 +13,37 @@ namespace Server.Mobiles
         [Constructable]
         public Turkey(bool tamable) : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a turkey";
+            Name = "Une Dinde";
             Body = 95;
             BaseSoundID = 0x66A;
 
-            SetStr(5);
-            SetDex(15);
-            SetInt(5);
+			SetStr(63, 98);
+			SetDex(42, 70);
+			SetInt(35, 56);
 
-            SetHits(75);
-            SetMana(0);
+			SetHits(70, 91);
 
-            SetDamage(5);
+			SetDamage(9, 14);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+		
 
-            SetResistance(ResistanceType.Physical, 1, 5);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 4.0);
-            SetSkill(SkillName.Tactics, 5.0);
-            SetSkill(SkillName.Wrestling, 5.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 150;
-            Karma = 0;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+	//		Fame = 150;
+   //         Karma = 0;
 
             Tamable = tamable;
             ControlSlots = 1;

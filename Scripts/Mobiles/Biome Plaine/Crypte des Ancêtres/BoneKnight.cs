@@ -11,6 +11,15 @@ namespace Server.Mobiles
             Body = 57;
             BaseSoundID = 451;
 
+			SetStr(63, 98);
+			SetDex(42, 70);
+			SetInt(35, 56);
+
+			SetHits(70, 91);
+
+			SetDamage(9, 14);
+
+
 			SetDamageType(ResistanceType.Poison, 50);
 			SetDamageType(ResistanceType.Cold, 50);
 

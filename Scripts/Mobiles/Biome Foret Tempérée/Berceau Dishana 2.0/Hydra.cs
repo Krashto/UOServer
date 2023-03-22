@@ -2,44 +2,47 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a hydra corpse")]
+    [CorpseName("Le Corps d'une Hydre")]
     public class Hydra : BaseCreature
     {
         [Constructable]
         public Hydra()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a hydra";
+            Name = "Une Hydre";
             Body = 0x109;
             BaseSoundID = 0x16A;
 
-            SetStr(801, 828);
-            SetDex(105, 118);
-            SetInt(102, 120);
+			SetStr(199, 355);
+			SetDex(132, 220);
+			SetInt(110, 177);
 
-            SetHits(1484, 1500);
+			SetHits(1738, 2642);
 
-            SetDamage(21, 26);
+			SetDamage(26, 45);
 
-            SetDamageType(ResistanceType.Physical, 60);
-            SetDamageType(ResistanceType.Fire, 10);
-            SetDamageType(ResistanceType.Cold, 10);
-            SetDamageType(ResistanceType.Poison, 10);
-            SetDamageType(ResistanceType.Energy, 10);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetResistance(ResistanceType.Physical, 65, 75);
-            SetResistance(ResistanceType.Fire, 70, 81);
-            SetResistance(ResistanceType.Cold, 25, 35);
-            SetResistance(ResistanceType.Poison, 35, 43);
-            SetResistance(ResistanceType.Energy, 36, 45);
 
-            SetSkill(SkillName.Wrestling, 103.5, 117.4);
-            SetSkill(SkillName.Tactics, 100.1, 109.8);
-            SetSkill(SkillName.MagicResist, 85.5, 96.4);
-            SetSkill(SkillName.Anatomy, 75.4, 79.8);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-            Fame = 22000;
-            Karma = -22000;
+			SetSkill(SkillName.EvalInt, 55.1, 65.0);
+			SetSkill(SkillName.Magery, 55.1, 65.0);
+			SetSkill(SkillName.Meditation, 55.1, 65.0);
+
+
+			SetSkill(SkillName.MagicResist, 45.1, 60.0);
+			SetSkill(SkillName.Tactics, 55.1, 65.0);
+			SetSkill(SkillName.Wrestling, 55.1, 65.0);
+
+
+		//	Fame = 22000;
+        //    Karma = -22000;
 
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }

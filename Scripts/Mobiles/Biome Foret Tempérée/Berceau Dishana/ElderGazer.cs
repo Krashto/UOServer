@@ -1,42 +1,36 @@
 namespace Server.Mobiles
 {
-    [CorpseName("an elder gazer corpse")]
+    [CorpseName("Le Corps d'un Gazer Ancien")]
     public class ElderGazer : BaseCreature
     {
         [Constructable]
         public ElderGazer()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an elder gazer";
+            Name = "Un Gazer Ancien";
             Body = 22;
             BaseSoundID = 377;
 
-            SetStr(296, 325);
-            SetDex(86, 105);
-            SetInt(291, 385);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetHits(178, 195);
 
-            SetDamage(8, 19);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-            SetDamageType(ResistanceType.Physical, 50);
-            SetDamageType(ResistanceType.Energy, 50);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            SetResistance(ResistanceType.Physical, 45, 55);
-            SetResistance(ResistanceType.Fire, 60, 70);
-            SetResistance(ResistanceType.Cold, 40, 50);
-            SetResistance(ResistanceType.Poison, 40, 50);
-            SetResistance(ResistanceType.Energy, 40, 50);
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-            SetSkill(SkillName.Anatomy, 62.0, 100.0);
-            SetSkill(SkillName.EvalInt, 90.1, 100.0);
-            SetSkill(SkillName.Magery, 90.1, 100.0);
-            SetSkill(SkillName.MagicResist, 115.1, 130.0);
-            SetSkill(SkillName.Tactics, 80.1, 100.0);
-            SetSkill(SkillName.Wrestling, 80.1, 100.0);
-
-            Fame = 12500;
-            Karma = -12500;
+		//	Fame = 12500;
+        //    Karma = -12500;
         }
 
         public ElderGazer(Serial serial)
