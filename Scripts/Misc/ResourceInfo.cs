@@ -107,8 +107,29 @@ namespace Server.Items
         WhiteScales,
         BlueScales,
 
+		[Description("Régulier")]
         RegularWood = 401,
-        OakWood,
+		[Description("Plainois")]
+		PlainoisWood,
+		[Description("Forestier")]
+		ForestierWood,
+		[Description("Désertique")]
+		DesertiqueWood,
+		[Description("Collinois")]
+		CollinoisWood,
+		[Description("Savanois")]
+		SavanoisWood,
+		[Description("Toundrois")]
+		ToundroisWood,
+		[Description("Tropicaux")]
+		TropicauxWood,
+		[Description("Montagnard")]
+		MontagnardWood,
+		[Description("Volcanique")]
+		VolcaniqueWood,
+		[Description("Ancien")]
+		AncienWood,
+		OakWood,
         AshWood,
         YewWood,
         Heartwood,
@@ -268,6 +289,7 @@ namespace Server.Items
 		public static readonly CraftAttributeInfo PlainoisLeather, ForestierLeather, DesertiqueLeather, CollinoisLeather, SavanoisLeather, ToundroisLeather, TropicauxLeather, MontagnardLeather, VolcaniqueLeather, AncienLeather;
         public static readonly CraftAttributeInfo RedScales, YellowScales, BlackScales, GreenScales, WhiteScales, BlueScales;
         public static readonly CraftAttributeInfo OakWood, AshWood, YewWood, Heartwood, Bloodwood, Frostwood;
+		public static readonly CraftAttributeInfo PlainoisWood, ForestierWood, DesertiqueWood, CollinoisWood, SavanoisWood, ToundroisWood, VolcaniqueWood, TropicauxWood, MontagnardWood, AncienWood;
 		public static readonly CraftAttributeInfo PlainoisBone, ForestierBone, DesertiqueBone, CollinoisBone, SavanoisBone, ToundroisBone, VolcaniqueBone, TropicauxBone, MontagnardBone, AncienBone;
 
 		static CraftAttributeInfo()
@@ -960,44 +982,53 @@ namespace Server.Items
 
         private static readonly CraftResourceInfo[] m_AOSLeatherInfo = new[]
         {
-            new CraftResourceInfo(0x00, 1049353, "Plainois",	1, CraftAttributeInfo.Blank,				CraftResource.PlainoisLeather,		typeof( PlainoisLeather ),		typeof( PlainoisHides ) ),
-			new CraftResourceInfo(1106, 1049356, "Forestier",	2, CraftAttributeInfo.ForestierLeather,     CraftResource.ForestierLeather,     typeof( ForestierLeather ),     typeof( ForestierHides ) ),
-			new CraftResourceInfo(1711, 1049356, "Collinois",	2, CraftAttributeInfo.CollinoisLeather,		CraftResource.CollinoisLeather,     typeof( CollinoisLeather ),		typeof( CollinoisHides ) ),
-			new CraftResourceInfo(1438, 1049354, "Désertique",	3, CraftAttributeInfo.DesertiqueLeather,	CraftResource.DesertiqueLeather,	typeof( DesertiqueLeather ),	typeof( DesertiqueHides ) ),
-			new CraftResourceInfo(1635, 1049356, "Savanois",	3, CraftAttributeInfo.SavanoisLeather,		CraftResource.SavanoisLeather,		typeof( SavanoisLeather ),		typeof( SavanoisHides ) ),
-			new CraftResourceInfo(2118, 1049356, "Montagnard",	4, CraftAttributeInfo.MontagnardLeather,	CraftResource.MontagnardLeather,	typeof( MontagnardLeather ),	typeof( MontagnardHides ) ),
-			new CraftResourceInfo(2128, 1049356, "Volcanique",	4, CraftAttributeInfo.VolcaniqueLeather,	CraftResource.VolcaniqueLeather,	typeof( ToundroisLeather ),		typeof( ToundroisHides ) ),
-			new CraftResourceInfo(2128, 1049356, "Toundrois",	5, CraftAttributeInfo.ToundroisLeather,     CraftResource.ToundroisLeather,		typeof( VolcaniqueLeather ),	typeof( VolcaniqueHides ) ),
-			new CraftResourceInfo(2174, 1049356, "Tropicaux",	5, CraftAttributeInfo.TropicauxLeather,		CraftResource.TropicauxLeather,		typeof( TropicauxLeather ),		typeof( TropicauxHides ) ),
-			new CraftResourceInfo(1940, 1049356, "Ancien",		6, CraftAttributeInfo.AncienLeather,		CraftResource.AncienLeather,		typeof( AncienLeather ),		typeof( AncienHides ) ),
-
-
+            new CraftResourceInfo(1355, 1049353, "Plainois",	1, CraftAttributeInfo.Blank,				CraftResource.PlainoisLeather,		typeof( PlainoisLeather ),		typeof( PlainoisHides ) ),
+			new CraftResourceInfo(1411, 1049356, "Forestier",	2, CraftAttributeInfo.ForestierLeather,     CraftResource.ForestierLeather,     typeof( ForestierLeather ),     typeof( ForestierHides ) ),
+			new CraftResourceInfo(1191, 1049356, "Collinois",	2, CraftAttributeInfo.CollinoisLeather,		CraftResource.CollinoisLeather,     typeof( CollinoisLeather ),		typeof( CollinoisHides ) ),
+			new CraftResourceInfo(1126, 1049354, "Désertique",	3, CraftAttributeInfo.DesertiqueLeather,	CraftResource.DesertiqueLeather,	typeof( DesertiqueLeather ),	typeof( DesertiqueHides ) ),
+			new CraftResourceInfo(1008, 1049356, "Savanois",	3, CraftAttributeInfo.SavanoisLeather,		CraftResource.SavanoisLeather,		typeof( SavanoisLeather ),		typeof( SavanoisHides ) ),
+			new CraftResourceInfo(2219, 1049356, "Montagnard",	4, CraftAttributeInfo.MontagnardLeather,	CraftResource.MontagnardLeather,	typeof( MontagnardLeather ),	typeof( MontagnardHides ) ),
+			new CraftResourceInfo(2206, 1049356, "Volcanique",	4, CraftAttributeInfo.VolcaniqueLeather,	CraftResource.VolcaniqueLeather,	typeof( VolcaniqueLeather ),	typeof( VolcaniqueHides ) ),
+			new CraftResourceInfo(2500, 1049356, "Toundrois",	5, CraftAttributeInfo.ToundroisLeather,     CraftResource.ToundroisLeather,		typeof( ToundroisLeather ),		typeof( ToundroisHides ) ),
+			new CraftResourceInfo(2210, 1049356, "Tropicaux",	5, CraftAttributeInfo.TropicauxLeather,		CraftResource.TropicauxLeather,		typeof( TropicauxLeather ),		typeof( TropicauxHides ) ),
+			new CraftResourceInfo(1779, 1049356, "Ancien",		6, CraftAttributeInfo.AncienLeather,		CraftResource.AncienLeather,		typeof( AncienLeather ),		typeof( AncienHides ) ),
 		};
 
 		private static readonly CraftResourceInfo[] m_BoneInfo = new[]
-	   {
-			new CraftResourceInfo(0x00, 1049353, "Plainois",	1, CraftAttributeInfo.Blank,			CraftResource.PlainoisBone,		typeof( PlainoisBone ) ),
-			new CraftResourceInfo(1106, 1049356, "Forestier",	2, CraftAttributeInfo.ForestierBone,    CraftResource.ForestierBone,    typeof( LupusBone ) ),
-			new CraftResourceInfo(1711, 1049356, "Collinois",	2, CraftAttributeInfo.CollinoisBone,	CraftResource.CollinoisBone,    typeof( CollinoisBone ) ),
-			new CraftResourceInfo(1438, 1049354, "Désertique",	3, CraftAttributeInfo.DesertiqueBone,	CraftResource.DesertiqueBone,	typeof( DesertiqueBone ) ),
-			new CraftResourceInfo(2118, 1049356, "Savanois",	3, CraftAttributeInfo.MontagnardBone,	CraftResource.MontagnardBone,	typeof( MontagnardBone ) ),
-			new CraftResourceInfo(1635, 1049356, "Montagnard",	4, CraftAttributeInfo.SavanoisBone,		CraftResource.SavanoisBone,		typeof( SavanoisBone ) ),
-			new CraftResourceInfo(1635, 1049356, "Volcanique",	4, CraftAttributeInfo.VolcaniqueBone,	CraftResource.VolcaniqueBone,	typeof( VolcaniqueBone ) ),
-			new CraftResourceInfo(2128, 1049356, "Toundrois",	5, CraftAttributeInfo.ToundroisBone,	CraftResource.ToundroisBone,	typeof( ToundroisBone ) ),
-			new CraftResourceInfo(2174, 1049356, "Tropicaux",	5, CraftAttributeInfo.TropicauxBone,	CraftResource.TropicauxBone,	typeof( TropicauxBone ) ),
-			new CraftResourceInfo(1940, 1049356, "Ancien",		6, CraftAttributeInfo.AncienBone,		CraftResource.AncienBone,		typeof( AncienBone ) ),
+		{
+			new CraftResourceInfo(1355, 1049353, "Plainois",	1, CraftAttributeInfo.Blank,			CraftResource.PlainoisBone,		typeof( PlainoisBone ) ),
+			new CraftResourceInfo(1411, 1049356, "Forestier",	2, CraftAttributeInfo.ForestierBone,    CraftResource.ForestierBone,    typeof( ForestierBone ) ),
+			new CraftResourceInfo(1191, 1049356, "Collinois",	2, CraftAttributeInfo.CollinoisBone,	CraftResource.CollinoisBone,    typeof( CollinoisBone ) ),
+			new CraftResourceInfo(1126, 1049354, "Désertique",	3, CraftAttributeInfo.DesertiqueBone,	CraftResource.DesertiqueBone,	typeof( DesertiqueBone ) ),
+			new CraftResourceInfo(1008, 1049356, "Savanois",	3, CraftAttributeInfo.MontagnardBone,	CraftResource.MontagnardBone,	typeof( SavanoisBone ) ),
+			new CraftResourceInfo(2219, 1049356, "Montagnard",	4, CraftAttributeInfo.SavanoisBone,		CraftResource.SavanoisBone,		typeof( MontagnardBone ) ),
+			new CraftResourceInfo(2206, 1049356, "Volcanique",	4, CraftAttributeInfo.VolcaniqueBone,	CraftResource.VolcaniqueBone,	typeof( VolcaniqueBone ) ),
+			new CraftResourceInfo(2500, 1049356, "Toundrois",	5, CraftAttributeInfo.ToundroisBone,	CraftResource.ToundroisBone,	typeof( ToundroisBone ) ),
+			new CraftResourceInfo(2210, 1049356, "Tropicaux",	5, CraftAttributeInfo.TropicauxBone,	CraftResource.TropicauxBone,	typeof( TropicauxBone ) ),
+			new CraftResourceInfo(1779, 1049356, "Ancien",		6, CraftAttributeInfo.AncienBone,		CraftResource.AncienBone,		typeof( AncienBone ) ),
 		};
 
 		private static readonly CraftResourceInfo[] m_WoodInfo = new[]
         {
-            new CraftResourceInfo(0x000, 1011542, "Normal",		1, CraftAttributeInfo.Blank,		CraftResource.RegularWood,  typeof(Log),			typeof(Board)),
-            new CraftResourceInfo(0x7DA, 1072533, "Oak",		2, CraftAttributeInfo.OakWood,		CraftResource.OakWood,		typeof(OakLog),			typeof(OakBoard)),
-            new CraftResourceInfo(0x4A7, 1072534, "Ash",		3, CraftAttributeInfo.AshWood,		CraftResource.AshWood,		typeof(AshLog),			typeof(AshBoard)),
-            new CraftResourceInfo(0x4A8, 1072535, "Yew",		4, CraftAttributeInfo.YewWood,		CraftResource.YewWood,		typeof(YewLog),			typeof(YewBoard)),
-            new CraftResourceInfo(0x4A9, 1072536, "Heartwood",	5, CraftAttributeInfo.Heartwood,    CraftResource.Heartwood,    typeof(HeartwoodLog),   typeof(HeartwoodBoard)),
-            new CraftResourceInfo(0x4AA, 1072538, "Bloodwood",	6, CraftAttributeInfo.Bloodwood,    CraftResource.Bloodwood,    typeof(BloodwoodLog),   typeof(BloodwoodBoard)),
-            new CraftResourceInfo(0x47F, 1072539, "Frostwood",	6, CraftAttributeInfo.Frostwood,    CraftResource.Frostwood,    typeof(FrostwoodLog),   typeof(FrostwoodBoard)),
-        };
+            new CraftResourceInfo(1355, 1011542, "Normal",		1, CraftAttributeInfo.Blank,			CraftResource.RegularWood,		typeof( RegularLog ),		typeof(RegularBoard)),
+            new CraftResourceInfo(1355, 1011542, "Plainois",	1, CraftAttributeInfo.PlainoisWood,		CraftResource.PlainoisWood,		typeof( RegularLog ),		typeof(RegularBoard)),
+			new CraftResourceInfo(1411, 1049356, "Forestier",   2, CraftAttributeInfo.ForestierWood,    CraftResource.ForestierWood,    typeof( ForestierLog ),		typeof(ForestierBoard)),
+			new CraftResourceInfo(1191, 1049356, "Collinois",   2, CraftAttributeInfo.CollinoisWood,    CraftResource.CollinoisWood,    typeof( CollinoisLog ),		typeof(CollinoisBoard)),
+			new CraftResourceInfo(1126, 1049354, "Désertique",  3, CraftAttributeInfo.DesertiqueWood,   CraftResource.DesertiqueWood,   typeof( DesertiqueLog ),	typeof(DesertiqueBoard)),
+			new CraftResourceInfo(1008, 1049356, "Savanois",    3, CraftAttributeInfo.MontagnardWood,   CraftResource.MontagnardWood,   typeof( MontagnardLog ),	typeof(MontagnardBoard)),
+			new CraftResourceInfo(2219, 1049356, "Montagnard",  4, CraftAttributeInfo.SavanoisWood,     CraftResource.SavanoisWood,     typeof( SavanoisLog ),		typeof(SavanoisBoard)),
+			new CraftResourceInfo(2206, 1049356, "Volcanique",  4, CraftAttributeInfo.VolcaniqueWood,   CraftResource.VolcaniqueWood,   typeof( VolcaniqueLog ),	typeof(VolcaniqueBoard)),
+			new CraftResourceInfo(2500, 1049356, "Toundrois",   5, CraftAttributeInfo.ToundroisWood,    CraftResource.ToundroisWood,    typeof( ToundroisLog ),		typeof(ToundroisBoard)),
+			new CraftResourceInfo(2210, 1049356, "Tropicaux",   5, CraftAttributeInfo.TropicauxWood,    CraftResource.TropicauxWood,    typeof( TropicauxLog ),		typeof(TropicauxBoard)),
+			new CraftResourceInfo(1779, 1049356, "Ancien",      6, CraftAttributeInfo.AncienWood,       CraftResource.AncienWood,       typeof( AncienLog ),		typeof(AncienBoard)),
+
+			new CraftResourceInfo(0x7DA, 1072533, "Oak",        2, CraftAttributeInfo.OakWood,      CraftResource.OakWood,      typeof(OakLog),         typeof(OakBoard)),
+			new CraftResourceInfo(0x4A7, 1072534, "Ash",        3, CraftAttributeInfo.AshWood,      CraftResource.AshWood,      typeof(AshLog),         typeof(AshBoard)),
+			new CraftResourceInfo(0x4A8, 1072535, "Yew",        4, CraftAttributeInfo.YewWood,      CraftResource.YewWood,      typeof(YewLog),         typeof(YewBoard)),
+			new CraftResourceInfo(0x4A9, 1072536, "Heartwood",  5, CraftAttributeInfo.Heartwood,    CraftResource.Heartwood,    typeof(HeartwoodLog),   typeof(HeartwoodBoard)),
+			new CraftResourceInfo(0x4AA, 1072538, "Bloodwood",  6, CraftAttributeInfo.Bloodwood,    CraftResource.Bloodwood,    typeof(BloodwoodLog),   typeof(BloodwoodBoard)),
+			new CraftResourceInfo(0x47F, 1072539, "Frostwood",  6, CraftAttributeInfo.Frostwood,    CraftResource.Frostwood,    typeof(FrostwoodLog),   typeof(FrostwoodBoard)),
+		};
 
 		public static int GetLevel(CraftResource resource)
 		{

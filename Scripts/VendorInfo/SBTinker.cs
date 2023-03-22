@@ -40,7 +40,7 @@ namespace Server.Mobiles
 				this.Add(new GenericBuyInfo(typeof(DisguiseKit), 500, 10, 0xE05, 0));
 
 				Add(new GenericBuyInfo(typeof(TinkersTools), 7, 20, 0x1EBC, 0));
-                Add(new GenericBuyInfo(typeof(Board), 3, 20, 0x1BD7, 0, true));
+                Add(new GenericBuyInfo(typeof(RegularBoard), 3, 20, 0x1BD7, 0, true));
                 Add(new GenericBuyInfo(typeof(IronIngot), 5, 16, 0x1BF2, 0, true));
                 Add(new GenericBuyInfo(typeof(SewingKit), 3, 20, 0xF9D, 0));
 				Add(new GenericBuyInfo(typeof(BoneSewingKit), 3, 20, 0xF9D, 1109));

@@ -415,16 +415,6 @@ namespace Server.Mobiles
                                     vendor.Say(500378);
                                     break;
                                 }
-								else if (e.Mobile is CustomPlayerMobile)
-								{
-									CustomPlayerMobile cm = (CustomPlayerMobile)e.Mobile;
-
-									if (cm.StatutSocial < MinBankClasse)
-									{						
-										vendor.Say("Seul les " + MinBankClasse + "s et les classes supérieurs peuvent avoir une banque ici");
-										break;
-									}								
-								}
 
                                 e.Mobile.BankBox.Open();
                             }
@@ -499,39 +489,22 @@ namespace Server.Mobiles
             }
         }
 
-        public override void AddCustomContextEntries(Mobile from, List<ContextMenuEntry> list)
-        {
-            if (from.Alive)
-            {
-				bool AcessBank = true;
-
-
-			   if (from is CustomPlayerMobile)
+		public override void AddCustomContextEntries(Mobile from, List<ContextMenuEntry> list)
+		{
+			if (from.Alive)
+			{
+				OpenBankEntry entry = new OpenBankEntry(this)
 				{
-					CustomPlayerMobile cm = (CustomPlayerMobile)from;
+					Enabled = from.Map.Rules == MapRules.FeluccaRules || CheckVendorAccess(from)
+				};
 
-					if (cm.StatutSocial < MinBankClasse)
-					{
+				list.Add(entry);
+			}
 
-						AcessBank = false;
-					}
-				}
+			base.AddCustomContextEntries(from, list);
+		}
 
-				if (AcessBank)
-				{
-					OpenBankEntry entry = new OpenBankEntry(this)
-					{
-						Enabled = from.Map.Rules == MapRules.FeluccaRules || CheckVendorAccess(from)
-					};
-
-					list.Add(entry);
-				}				
-            }
-
-            base.AddCustomContextEntries(from, list);
-        }
-
-        public override void Serialize(GenericWriter writer)
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 

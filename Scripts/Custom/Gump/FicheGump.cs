@@ -150,17 +150,6 @@ namespace Server.Gumps
 
 				line++;
 			}
-
-			line = 0;
-
-			AddSection(x + 241, y + 453, 359, 210, "Dévotions");
-
-			foreach (KeyValuePair<MagieType, int> item in m_From.MagicAfinity)
-			{
-				AddHtmlTexte(x + 261, y + 493 + line * 25, 150, item.Key.ToString() );
-				AddLabel(x + 525, y + 493 + line * 25, 150, item.Value.ToString());
-				line++;
-			}
 		}
 
 		public override void OnResponse(NetState sender, RelayInfo info)

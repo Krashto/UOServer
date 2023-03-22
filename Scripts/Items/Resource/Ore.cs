@@ -98,15 +98,15 @@ namespace Server.Items
 
         private static int RandomSize()
         {
-            double rand = Utility.RandomDouble();
+            //double rand = Utility.RandomDouble();
 
-            if (rand < 0.12)
-                return 0x19B7;
-            else if (rand < 0.18)
-                return 0x19B8;
-            else if (rand < 0.25)
-                return 0x19BA;
-            else
+            //if (rand < 0.12)
+            //    return 0x19B7;
+            //else if (rand < 0.18)
+            //    return 0x19B8;
+            //else if (rand < 0.25)
+            //    return 0x19BA;
+            //else
                 return 0x19B9;
         }
 
@@ -143,14 +143,7 @@ namespace Server.Items
             base.GetProperties(list);
 
             if (!CraftResources.IsStandard(m_Resource))
-            {
-                int num = CraftResources.GetLocalizationNumber(m_Resource);
-
-                if (num > 0)
-                    list.Add(num);
-                else
-                    list.Add(CraftResources.GetName(m_Resource));
-            }
+                list.Add(CraftResources.GetName(m_Resource));
         }
 
         public override int LabelNumber

@@ -52,9 +52,7 @@ namespace Server.Gumps
 
             if (info.ButtonID == 1)
             {
-
 				from.Backpack.Delete();
-
 
 				var holding = from.Holding;
 
@@ -62,15 +60,11 @@ namespace Server.Gumps
 				{
 					from.Holding.Delete();
 					from.Holding = null;
-
 				}
 
 				CharacterCreation.AddBackpack(from);
 
-				if (m_from.StatutSocial != StatutSocialEnum.Dechet)
-				{
-					from.AddToBackpack(new Gold(500));
-				}		
+				from.AddToBackpack(new Gold(500));
 
 				Point3D p = new Point3D();
 
@@ -110,21 +104,14 @@ namespace Server.Gumps
 				{
 					from.Holding.Delete();
 					from.Holding = null;
-
 				}
 
 				from.EquipItem(new Backpack());
 				from.Thirst = 20;
 				from.Hunger = 20;
 
-
-
-
-
 				from.MoveToWorld(new Point3D(6135, 3200, 55), Map.Felucca);
 			}
-
 		}
-
 	}
 }

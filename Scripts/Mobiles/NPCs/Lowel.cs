@@ -103,7 +103,7 @@ namespace Server.Engines.Quests
         {
             Hue = BaseReward.SatchelHue();
 
-            AddItem(new Board(10));
+            AddItem(new RegularBoard(10));
             AddItem(new DovetailSaw());
         }
 

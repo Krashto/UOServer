@@ -192,14 +192,25 @@ namespace Server.Custom.Classes
             return info.ClasseMode;
         }
 
+		public static bool IsCraftingSkills(SkillName skill)
+		{
+			return skill == SkillName.Alchemy || skill == SkillName.Tailoring || skill == SkillName.Tinkering
+				 || skill == SkillName.Blacksmith || skill == SkillName.Inscribe;
+		}
+
 		public static void SetBaseAndCapSkills(CustomPlayerMobile pm, int level)
 		{
 			if (pm is null)
 				return;
 
 			foreach (var skill in pm.Skills)
-				skill.Cap = 50 + level;
-
+			{
+				if (IsCraftingSkills(skill.SkillName))
+					skill.Cap = 25 + level / 2;
+				else
+					skill.Cap = 50 + level;
+			}
+				
 			pm.SkillMods.Clear();
 
 			if (pm.Aptitudes.Chimie > 0)

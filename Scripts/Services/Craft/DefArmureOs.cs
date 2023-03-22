@@ -119,7 +119,7 @@ namespace Server.Engines.Craft
             // Add every material you want the player to be able to choose from
             // This will override the overridable material
             AddSubRes(typeof(PlainoisBone), "Os", 0.0, 1049312);
-			AddSubRes(typeof(LupusBone), "Lupus", 65.0, 1049312);
+			AddSubRes(typeof(ForestierBone), "Lupus", 65.0, 1049312);
 			AddSubRes(typeof(DesertiqueBone), "Reptilien", 70.0, 1049312);
 			AddSubRes(typeof(CollinoisBone), "Geant", 75.0, 1049312);
 			AddSubRes(typeof(SavanoisBone), "Ophidien", 80.0, 1049312);

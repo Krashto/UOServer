@@ -213,27 +213,13 @@ namespace Server.Commands
 			from.Thirst = 20;
 			from.Hunger = 20;
 
-
-			if (target is BaseHire bh && from is CustomPlayerMobile cp1)
-			{
-				cp1.Beaute = bh.Beaute;
-				cp1.Grosseur = bh.Grosseur;
-				cp1.Grandeur = bh.Grandeur;
-			}
-
-
-
-
-
 			target.Internalize();
 			playerClone.Internalize();
-
 		}
-		
 
 		private static void ChangeControl( Mobile target, ControlItem controlItem, bool stats, bool skills, bool items )
 		{
-			Mobile from							= controlItem.Owner;
+			Mobile from						= controlItem.Owner;
 			CustomPlayerMobile oldPlayer 	= controlItem.Player;
 			Mobile oldNPC 				 	= controlItem.NPC;
 			

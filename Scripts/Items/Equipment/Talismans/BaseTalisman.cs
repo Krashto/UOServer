@@ -653,7 +653,7 @@ namespace Server.Items
                                 item = Activator.CreateInstance(type) as Item;
                         }
 
-                        if (item is Board)
+                        if (item is RegularBoard)
                             from.SendLocalizedMessage(1075000); // You have been given some wooden boards.
                         else if (item is IronIngot)
                             from.SendLocalizedMessage(1075001); // You have been given some ingots.
@@ -1253,7 +1253,7 @@ namespace Server.Items
             typeof(SummonedWailingBanshee),
             typeof(SummonedChicken),
             typeof(SummonedVorpalBunny),
-            typeof(Board),
+            typeof(RegularBoard),
             typeof(IronIngot),
             typeof(Bandage),
         };

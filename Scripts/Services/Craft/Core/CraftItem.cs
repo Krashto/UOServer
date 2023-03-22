@@ -396,7 +396,7 @@ namespace Server.Engines.Craft
 
         private static readonly Type[][] ItemTypesTable =
         {
-            new[] {typeof(Board), typeof(Log)},
+            new[] {typeof(RegularBoard), typeof(RegularLog)},
             new[] {typeof(HeartwoodBoard), typeof(HeartwoodLog)},
             new[] {typeof(BloodwoodBoard), typeof(BloodwoodLog)},
             new[] {typeof(FrostwoodBoard), typeof(FrostwoodLog)},
@@ -444,7 +444,7 @@ namespace Server.Engines.Craft
 
         private static readonly Type[] m_ColoredResourceTable =
         {
-            typeof(Board), typeof(Log),
+            typeof(RegularBoard), typeof(RegularLog),
             typeof(BaseIngot), typeof(BaseOre), typeof(BaseLeather), typeof(BaseHides), typeof(AbyssalCloth), typeof(UncutCloth), typeof(Cloth),
             typeof(BaseGranite), typeof(BaseScales), typeof(PlantClippings), typeof(DryReeds), typeof(SoftenedReeds),
             typeof(PlantPigment), typeof(BaseContainer),
@@ -475,7 +475,7 @@ namespace Server.Engines.Craft
 
         private static readonly Dictionary<Type, Type> m_ResourceConversionTable = new Dictionary<Type, Type>()
         {
-            { typeof(Board), typeof(Log) },
+            { typeof(RegularBoard), typeof(RegularLog) },
             { typeof(HeartwoodBoard), typeof(HeartwoodLog) },
             { typeof(BloodwoodBoard), typeof(BloodwoodLog) },
             { typeof(FrostwoodBoard), typeof(FrostwoodLog) },
@@ -1984,7 +1984,7 @@ namespace Server.Engines.Craft
 
                 if (item != null)
                 {
-                    if (item is Board)
+                    if (item is RegularBoard)
                     {
                         Type resourceType = typeRes;
 
@@ -2017,7 +2017,7 @@ namespace Server.Engines.Craft
                                 item = new FrostwoodBoard();
                                 break;
                             default:
-                                item = new Board();
+                                item = new RegularBoard();
                                 break;
                         }
 

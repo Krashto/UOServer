@@ -316,7 +316,7 @@ namespace Server.Engines.Craft
 
         private readonly Type[][] m_TypesTable = new Type[][]
         {
-            new Type[]{ typeof( Log ), typeof( Board ) },
+            new Type[]{ typeof( RegularLog ), typeof( RegularBoard ) },
             new Type[]{ typeof( HeartwoodLog ), typeof( HeartwoodBoard ) },
             new Type[]{ typeof( BloodwoodLog ), typeof( BloodwoodBoard ) },
             new Type[]{ typeof( FrostwoodLog ), typeof( FrostwoodBoard ) },

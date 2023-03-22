@@ -227,7 +227,7 @@ namespace Server.Items.Crops
 						Lime fruit = new Lime( Utility.Random( m_yield +2 ) );
 						from.AddToBackpack( fruit );
 						int cnt = Utility.Random( 20 ) + 1;
-						Log logs = new Log( cnt );
+						RegularLog logs = new RegularLog( cnt );
 						from.AddToBackpack( logs );
 					}
 						this.Delete();

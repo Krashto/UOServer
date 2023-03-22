@@ -96,7 +96,7 @@ namespace Server.Engines.Quests
         public MakingContributionSanctuaryQuest()
             : base()
         {
-            AddObjective(new ObtainObjective(typeof(Board), "boards", 250, 0x1BD7));
+            AddObjective(new ObtainObjective(typeof(RegularBoard), "boards", 250, 0x1BD7));
 
             AddReward(new BaseReward(1074872)); // The opportunity to learn the ways of the Arcanist.
         }

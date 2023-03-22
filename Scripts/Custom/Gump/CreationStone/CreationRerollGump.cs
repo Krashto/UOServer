@@ -1,13 +1,5 @@
-using System;
-using Server;
-using Server.Gumps;
 using Server.Mobiles;
-using Server.Items;
 using Server.Network;
-using System.Reflection;
-using Server.HuePickers;
-using System.Collections.Generic;
-using Server.Engines.Craft;
 using Server.Accounting;
 
 namespace Server.Gumps
@@ -78,7 +70,7 @@ namespace Server.Gumps
             }
             else if (info.ButtonID == 1000 || info.ButtonID == 0)
             {
-                from.SendGump(new CreationGodGump(from, m_Creation));
+                //from.SendGump(new CreationGodGump(from, m_Creation));
             }
         }
     }

@@ -1,5 +1,4 @@
-﻿using System.Drawing;
-using Server.Engines.Harvest;
+﻿using Server.Engines.Harvest;
 
 namespace Server.Items
 {

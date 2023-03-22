@@ -1,8 +1,6 @@
 ﻿using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.SkillHandlers;
-using Server.Items;
 using Server.Mobiles;
 using System;
 

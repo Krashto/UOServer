@@ -14,7 +14,7 @@ namespace Server
 	[Parsable]
 	public abstract class BaseRace : Race
 	{
-		public virtual string Background => "à venir.";
+		public virtual string Background => "À venir.";
 
 		public virtual AppearanceEnum AppearanceMin => AppearanceEnum.Monstrueux; // Pour NPC
 		public virtual AppearanceEnum AppearanceMax => AppearanceEnum.Angelique; // Pour NPC
@@ -56,20 +56,15 @@ namespace Server
         public override void AddRace(Mobile m, int hue)
         {
             m.Hue = hue;
-
           
-                    BaseRaceGumps skin = GetCorps(hue);
+            BaseRaceGumps skin = GetCorps(hue);
 
-                    Item Present = m.FindItemOnLayer(skin.Layer);
+            Item Present = m.FindItemOnLayer(skin.Layer);
 
-                    if (Present != null)
-                    {
-                        m.AddToBackpack(Present);
-                    }
+            if (Present != null)
+                m.AddToBackpack(Present);
 
-                    m.EquipItem(skin);
-                
-            
+            m.EquipItem(skin);
         }
 
 		public virtual BaseRaceGumps GetCorps(Mobile m)
@@ -95,19 +90,17 @@ namespace Server
 
 		public override void RemoveRace(Mobile m)
         {
-                    BaseRaceGumps baseGump = GetCorps(m);
+            BaseRaceGumps baseGump = GetCorps(m);
 
-                    Item itemEquip = m.FindItemOnLayer(baseGump.Layer);
+            Item itemEquip = m.FindItemOnLayer(baseGump.Layer);
 
-                    if (itemEquip != null)
-                    {
-                        if (itemEquip.GetType() == baseGump.GetType())
-                        {
-                            itemEquip.Delete();
-                        }
+            if (itemEquip != null)
+            {
+                if (itemEquip.GetType() == baseGump.GetType())
+                    itemEquip.Delete();
 
-                        baseGump.Delete();
-                    }          
+                baseGump.Delete();
+            }          
         }
 
         public virtual int GetGump(bool female, int hue)
@@ -115,33 +108,24 @@ namespace Server
 			int gumpid = 52090;
 
 			if (female)
-			{
 				gumpid += 10000;
-			}
 
             return gumpid;
         }
 
         public override void CheckGump(Mobile m)
         {       
-                    BaseRaceGumps baseGump = GetCorps(m);
+            BaseRaceGumps baseGump = GetCorps(m);
 
-                    if (m.FindItemOnLayer(baseGump.Layer).GetType() == baseGump.GetType())
-                    {
+            if (m.FindItemOnLayer(baseGump.Layer).GetType() != baseGump.GetType())
+                m.EquipItem(baseGump);
 
-                    }
-                    else
-                    {
-                        m.EquipItem(baseGump);
-                    }
-
-                    baseGump.Delete();
+            baseGump.Delete();
         }
 
         public override int ClipSkinHue(int hue)
         {
 			return RandomSkinHue();
-		//    throw new NotImplementedException();
 		}
 
 		public override bool ValidateHair(bool female, int itemID)
@@ -264,17 +248,7 @@ namespace Server
 
 		public string RandomName(bool Female = false)
         {
-            string nameReturn = "";
-
-            if (Female)
-            {
-                nameReturn = NomFeminin[Utility.Random(NomFeminin.Count)];
-            }
-            else
-            {
-                nameReturn = NomMasculin[Utility.Random(NomMasculin.Count)];
-            }
-            return nameReturn;
+            return Female ? NomFeminin[Utility.Random(NomFeminin.Count)] : NomMasculin[Utility.Random(NomMasculin.Count)];
         }
     }
 }

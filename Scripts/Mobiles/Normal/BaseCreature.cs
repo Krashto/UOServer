@@ -1652,112 +1652,96 @@ namespace Server.Mobiles
 
         public virtual bool IsEnemy(Mobile m)
         {
-            if (m is BaseGuard)
-            {
-                return false;
-            }
-
-            if (Combatant != m)
-            {
-                if (m is PlayerMobile && ((PlayerMobile)m).HonorActive)
-                {
-                    return false;
-                }
-            }
-
-			if (m is BaseCreature bc && bc.Tribe == Tribe)
+			if (m is BaseGuard)
 			{
 				return false;
+			}
+
+			if (Combatant != m)
+			{
+				if (m is PlayerMobile && ((PlayerMobile)m).HonorActive)
+				{
+					return false;
+				}
 			}
 
 			if (Tribe != TribeType.None && IsTribeEnemy(m))
 			{
 				return true;
 			}
-			else if (Tribe != TribeType.None && m is CustomPlayerMobile cp)
+
+			BaseCreature c = m as BaseCreature;
+
+			// Are we a non-aggressive FightMode or are they an uncontrolled Summon?
+			if (FightMode == FightMode.Aggressor || FightMode == FightMode.Evil || FightMode == FightMode.Good ||
+				(c != null && c.m_bSummoned && !c.m_bControlled && c.SummonMaster != null))
 			{
-				if (cp.GetTribeValue(Tribe) >= 75)
+				// Negative Karma are my enemies
+				if (FightMode == FightMode.Evil)
 				{
-					return false;
+					if (c != null && c.GetMaster() != null)
+					{
+						return (c.GetMaster().Karma < 0);
+					}
+
+					return (m.Karma < 0);
 				}
-				else
+
+				// Positive Karma are my enemies
+				if (FightMode == FightMode.Good)
+				{
+					if (c != null && c.GetMaster() != null)
+					{
+						return (c.GetMaster().Karma > 0);
+					}
+
+					return (m.Karma > 0);
+				}
+
+				// Others are not my enemies
+				return false;
+			}
+
+			if (c == null)
+			{
+				return true;
+			}
+			else
+			{
+				Mobile master = c.GetMaster();
+
+				if (master != null && !(master is BaseCreature))
 				{
 					return true;
 				}
 			}
 
-            BaseCreature c = m as BaseCreature;
+			BaseCreature t = this;
 
-            // Are we a non-aggressive FightMode or are they an uncontrolled Summon?
-            if (FightMode == FightMode.Aggressor || FightMode == FightMode.Evil || FightMode == FightMode.Good ||
-                (c != null && c.m_bSummoned && !c.m_bControlled && c.SummonMaster != null))
-            {
-                // Negative Karma are my enemies
-                if (FightMode == FightMode.Evil)
-                {
-                    if (c != null && c.GetMaster() != null)
-                    {
-                        return (c.GetMaster().Karma < 0);
-                    }
+			// Summons should have same rules as their master
+			if (c.m_bSummoned && c.SummonMaster != null && c.SummonMaster is BaseCreature)
+			{
+				c = c.SummonMaster as BaseCreature;
+			}
 
-                    return (m.Karma < 0);
-                }
+			// Summons should have same rules as their master
+			if (t.m_bSummoned && t.SummonMaster != null && t.SummonMaster is BaseCreature)
+			{
+				t = t.SummonMaster as BaseCreature;
+			}
 
-                // Positive Karma are my enemies
-                if (FightMode == FightMode.Good)
-                {
-                    if (c != null && c.GetMaster() != null)
-                    {
-                        return (c.GetMaster().Karma > 0);
-                    }
+			// Creatures on other teams are my enemies
+			if (t.m_iTeam != c.m_iTeam)
+			{
+				return true;
+			}
 
-                    return (m.Karma > 0);
-                }
-
-                // Others are not my enemies
-                return false;
-            }
-
-            if (c == null)
-            {
-                return true;
-            }
-            else
-            {
-                Mobile master = c.GetMaster();
-
-                if (master != null && !(master is BaseCreature))
-                {
-                    return true;
-                }
-            }
-
-            BaseCreature t = this;
-
-            // Summons should have same rules as their master
-            if (c.m_bSummoned && c.SummonMaster != null && c.SummonMaster is BaseCreature)
-            {
-                c = c.SummonMaster as BaseCreature;
-            }
-
-            // Summons should have same rules as their master
-            if (t.m_bSummoned && t.SummonMaster != null && t.SummonMaster is BaseCreature)
-            {
-                t = t.SummonMaster as BaseCreature;
-            }
-
-            // Creatures on other teams are my enemies
-            if (t.m_iTeam != c.m_iTeam)
-            {
-                return true;
-            }
-
-            // If I'm summoned/controlled and they aren't summoned/controlled, they are my enemy
-            // If I'm not summoned/controlled and they are summoned/controlled, they are my enemy
-            // Summoned creatures must have masters to count as summoned here
-            return (((t.m_bSummoned && t.SummonMaster != null) || t.m_bControlled) !=
-                ((c.m_bSummoned && c.SummonMaster != null) || c.m_bControlled));
-        }
+			// If I'm summoned/controlled and they aren't summoned/controlled, they are my enemy
+			// If I'm not summoned/controlled and they are summoned/controlled, they are my enemy
+			// Summoned creatures must have masters to count as summoned here
+			return (((t.m_bSummoned && t.SummonMaster != null) || t.m_bControlled) !=
+				((c.m_bSummoned && c.SummonMaster != null) || c.m_bControlled));
+		}
 
         public override string ApplyNameSuffix(string suffix)
         {
@@ -2445,7 +2429,7 @@ namespace Server.Mobiles
 					switch (BoneType)
 					{
 						case BoneType.Lupus:
-							 bone = new LupusBone(bones);
+							 bone = new ForestierBone(bones);
 							break;
 						case BoneType.Reptilien:
 							 bone = new DesertiqueBone(bones);
@@ -6419,88 +6403,54 @@ namespace Server.Mobiles
 
                         if (GivesFameAndKarmaAward)
                         {
-                            Party party = Engines.PartySystem.Party.Get(ds.m_Mobile);
+							Party party = Engines.PartySystem.Party.Get(ds.m_Mobile);
 
-                            if (party != null)
-                            {
-                                int divedFame = totalFame / party.Members.Count;
-                                int divedKarma = totalKarma / party.Members.Count;
+							if (party != null)
+							{
+								int divedFame = totalFame / party.Members.Count;
+								int divedKarma = totalKarma / party.Members.Count;
 
-                                for (int j = 0; j < party.Members.Count; ++j)
-                                {
-                                    PartyMemberInfo info = party.Members[j];
+								for (int j = 0; j < party.Members.Count; ++j)
+								{
+									PartyMemberInfo info = party.Members[j];
 
-                                    if (info != null && info.Mobile != null)
-                                    {
-                                        int index = titles.IndexOf(info.Mobile);
-
-                                        if (index == -1)
-                                        {
-                                            titles.Add(info.Mobile);
-                                            fame.Add(divedFame);
-                                            karma.Add(divedKarma);
-                                        }
-                                        else
-                                        {
-                                            fame[index] += divedFame;
-                                            karma[index] += divedKarma;
-                                        }
-
-										if (Tribe != TribeType.None && info.Mobile is CustomPlayerMobile cp)
-										{
-
-											foreach (TribeType item in GetEnemy(Tribe))
-											{
-												cp.ChangeTribeValue(item, 1);
-											}
-
-											cp.ChangeTribeValue(Tribe, -2);
-
-										}
-
-
-
-
-
-
-
-
-									}
-                                }
-                            }
-                            else
-                            {
-                                if (ds.m_Mobile is PlayerMobile)
-                                {
-                                    foreach (Mobile pet in ((PlayerMobile)ds.m_Mobile).AllFollowers.Where(p => DamageEntries.Any(de => de.Damager == p)))
-                                    {
-                                        titles.Add(pet);
-                                        fame.Add(totalFame);
-                                        karma.Add(totalKarma);
-                                    }
-
-									if (Tribe != TribeType.None && ds.m_Mobile is CustomPlayerMobile cp)
+									if (info != null && info.Mobile != null)
 									{
+										int index = titles.IndexOf(info.Mobile);
 
-										foreach (TribeType item in GetEnemy(Tribe))
+										if (index == -1)
 										{
-											cp.ChangeTribeValue(item, 1);
+											titles.Add(info.Mobile);
+											fame.Add(divedFame);
+											karma.Add(divedKarma);
 										}
-
-										cp.ChangeTribeValue(Tribe, -2);
+										else
+										{
+											fame[index] += divedFame;
+											karma[index] += divedKarma;
+										}
+									}
+								}
+							}
+							else
+							{
+								if (ds.m_Mobile is PlayerMobile)
+								{
+									foreach (Mobile pet in ((PlayerMobile)ds.m_Mobile).AllFollowers.Where(p => DamageEntries.Any(de => de.Damager == p)))
+									{
+										titles.Add(pet);
+										fame.Add(totalFame);
+										karma.Add(totalKarma);
 									}
 								}
 
-                                titles.Add(ds.m_Mobile);
-                                fame.Add(totalFame);
-                                karma.Add(totalKarma);
+								titles.Add(ds.m_Mobile);
+								fame.Add(totalFame);
+								karma.Add(totalKarma);
+							}
+						}
 
-								
-
-                            }
-                        }
-
-                        OnKilledBy(ds.m_Mobile);
+						OnKilledBy(ds.m_Mobile);
 
                         if (HumilityVirtue.IsInHunt(ds.m_Mobile) && Karma < 0)
                             HumilityVirtue.RegisterKill(ds.m_Mobile, this, list.Count);

@@ -74,7 +74,7 @@ namespace Server.Engines.Harvest
 
             res = new HarvestResource[]
             {
-                new HarvestResource(00.0, 00.0, 100.0, 1072540, typeof(Log)),
+                new HarvestResource(00.0, 00.0, 100.0, 1072540, typeof(RegularLog)),
                 new HarvestResource(65.0, 25.0, 105.0, 1072541, typeof(OakLog)),
                 new HarvestResource(80.0, 40.0, 120.0, 1072542, typeof(AshLog)),
                 new HarvestResource(95.0, 55.0, 135.0, 1072543, typeof(YewLog)),
@@ -122,8 +122,8 @@ namespace Server.Engines.Harvest
 
             if (tool is HarvestersAxe axe && axe.Charges > 0 /*|| tool is GargishHarvestersAxe gaxe && gaxe.Charges > 0*/)
             {
-                if (type == typeof(Log))
-                    newType = typeof(Board);
+                if (type == typeof(RegularLog))
+                    newType = typeof(RegularBoard);
                 else if (type == typeof(OakLog))
                     newType = typeof(OakBoard);
                 else if (type == typeof(AshLog))
@@ -277,8 +277,11 @@ namespace Server.Engines.Harvest
             0x4D97, 0x4D99, 0x4D9A, 0x4D9B, 0x4D9D, 0x4D9E, 0x4D9F, 0x4DA1,
             0x4DA2, 0x4DA3, 0x4DA5, 0x4DA6, 0x4DA7, 0x4DA9, 0x4DAA, 0x4DAB,
             0x52BE, 0x52BF, 0x52C0, 0x52C1, 0x52C2, 0x52C3, 0x52C4, 0x52C5,
-            0x52C6, 0x52C7
-        };
+            0x52C6, 0x52C7, 0x31C4, 0X31BE, 0X31CA, 0X31C2, 0x31C0, 0X31C8,
+			0X31C6, 0X0CD6, 0X0CD8, 0X144C, 0X1447, 0X152A, 0X1445, 0X1446, 
+			0X144B, 0X0C96, 0X144A, 0X155B, 0X309F, 0X309E, 0X31CE, 0X31CD, 
+			0X0CCA
+		};
         #endregion
     }
 }

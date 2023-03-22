@@ -165,23 +165,23 @@ namespace Server.Items
     }
 
     [Flipable(0x1081, 0x1082)]
-    public class LupusBone : BaseBone
+    public class ForestierBone : BaseBone
     {
         protected override CraftResource DefaultResource => CraftResource.ForestierBone;
 
         [Constructable]
-        public LupusBone()
+        public ForestierBone()
             : this(1)
         {
         }
 
         [Constructable]
-        public LupusBone(int amount)
+        public ForestierBone(int amount)
             : base(CraftResource.ForestierBone, amount)
         {
         }
 
-        public LupusBone(Serial serial)
+        public ForestierBone(Serial serial)
             : base(serial)
         {
         }

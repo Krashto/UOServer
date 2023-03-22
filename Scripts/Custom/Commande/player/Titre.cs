@@ -30,7 +30,7 @@ namespace Server.Scripts.Commands
 
                 pm.TitleCycle += 1;
 
-				if (pm.TitleCycle > 3)
+				if (pm.TitleCycle > 2)
                     pm.TitleCycle = 0;
 
                 switch (pm.TitleCycle)
@@ -42,18 +42,12 @@ namespace Server.Scripts.Commands
                             break;
                         }
 					case 1:
-						{
-							pm.Title = pm.StatutSocialString();
-							pm.SendMessage("Vous affichez désormais le titre de statut social : {0}", pm.StatutSocialString());
-							break;
-						}
-					case 2:
                         {
                             pm.Title = customTitle;
                             pm.SendMessage("Vous affichez désormais le titre personnalisé: {0}", customTitle);
                             break;
                         }
-					case 3:
+					case 2:
 						{
 							pm.Title = String.Empty;
 							pm.SendMessage("Vous affichez désormais aucun titre.");

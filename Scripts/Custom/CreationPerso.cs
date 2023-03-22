@@ -36,8 +36,6 @@ namespace Server
 		private Classe m_Classe = (Classe)(-1);
 		private Classe m_Metier = (Classe)(-1);
 
-		private God m_God = null;
-
 		public BaseRace Race
         {
             get => m_Race;
@@ -103,10 +101,6 @@ namespace Server
 		public string Name { get => m_Name; set => m_Name = value; }
 
 		public int Hue { get => m_Hue; set => m_Hue = value; }
-
-		public God God { get => m_God; set => m_God = value; }
-
-		public StatutSocialEnum Statut { get => m_Statut; set => m_Statut = value; }
 
 		public AppearanceEnum Appearance { get => m_Appearance; set => m_Appearance = value; }
 
@@ -236,21 +230,6 @@ namespace Server
 
 			m_Player.Classe = Classe.Aucune;
 
-			m_Player.God = God;
-
-			m_Player.StatutSocial = m_Statut;
-
-			//if (m_Reroll != null)
-			//{
-			//	m_Player.FE +=  (int)(Math.Round(m_Reroll.ExperienceRP * 0.50) + m_Reroll.ExperienceNormal);
-			//	m_Player.FENormalTotal += (int)m_Reroll.ExperienceNormal;
-			//	m_Player.FERPTotal += (int)Math.Round(m_Reroll.ExperienceRP * 0.5);
-
-			//	Account acc = (Account)m_Player.Account;
-
-			//	acc.RemoveReroll(m_Reroll);
-			//}
-
 			m_Player.AddToBackpack(new Gold(5000));
 
 			m_Player.MoveToWorld(new Point3D(1183, 3725, 37), Map.Felucca);
@@ -259,8 +238,5 @@ namespace Server
 
 			m_Player.AddItem(robe);
 		}
-
     }
-
-
 }

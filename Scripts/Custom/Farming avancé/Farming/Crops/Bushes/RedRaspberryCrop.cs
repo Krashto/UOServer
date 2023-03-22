@@ -223,7 +223,7 @@ namespace Server.Items.Crops
 					{
 						RedRaspberry fruit = new RedRaspberry( Utility.Random( m_yield +2 ) );
 						from.AddToBackpack( fruit );
-						if (Utility.RandomDouble() <= .1 ) { Log logs = new Log(Utility.Random(5) + 1 ); from.AddToBackpack( logs ); }
+						if (Utility.RandomDouble() <= .1 ) { RegularLog logs = new RegularLog(Utility.Random(5) + 1 ); from.AddToBackpack( logs ); }
 					}
 						this.Delete();
 						from.SendMessage( "Vous coupez le plant." );

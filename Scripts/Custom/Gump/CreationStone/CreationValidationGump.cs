@@ -17,7 +17,7 @@ namespace Server.Gumps
             int scale = 25;
             int space = 115;
 
-            string info = "<h3><basefont color=#FFFFFFF>Nom: " + m_Creation.Name + "\n\nRace: " + m_Creation.Race + "\nDivinité: " + m_Creation.God.Name + "\nSexe: " + (m_Creation.Female ? "Femme" : "Homme") + "\nApparence: " + m_Creation.GetApparence() + "\nGrandeur: " + m_Creation.GetGrandeur() + "\nGrosseur: " + m_Creation.GetGrosseur() + "\n\n<basefont></h3>";
+            string info = "<h3><basefont color=#FFFFFFF>Nom: " + m_Creation.Name + "\n\nRace: " + m_Creation.Race + "\nSexe: " + (m_Creation.Female ? "Femme" : "Homme") + "\nApparence: " + m_Creation.GetApparence() + "\nGrandeur: " + m_Creation.GetGrandeur() + "\nGrosseur: " + m_Creation.GetGrosseur() + "\n\n<basefont></h3>";
 
 			Dictionary<SkillName, int> Skill = new Dictionary<SkillName, int>();
 
@@ -61,7 +61,7 @@ namespace Server.Gumps
 				if (acc.Reroll.Count > 0)
 					pm.SendGump(new CreationRerollGump(pm, m_Creation));
 				else
-					m_from.SendGump(new CreationGodGump(m_from, m_Creation));
+					m_from.SendGump(new CreationStatistique(m_from, m_Creation));
 			}
         }
     }

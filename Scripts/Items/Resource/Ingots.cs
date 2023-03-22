@@ -55,8 +55,6 @@ namespace Server.Items
         TextDefinition ICommodity.Description => LabelNumber;
         bool ICommodity.IsDeedable => true;
 
-
-
 		public override void AddNameProperty(ObjectPropertyList list)
 		{
 			var name = CraftResources.GetName(m_Resource);
@@ -67,11 +65,13 @@ namespace Server.Items
 				list.Add(String.Format("{0}{1}{2}", "Lingot [", name, "]")); // ingots
 		}
 
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
 
-
-
-
-
+			if (!CraftResources.IsStandard(m_Resource))
+				list.Add(CraftResources.GetName(m_Resource));
+		}
 
 		public override void Serialize(GenericWriter writer)
         {
@@ -144,22 +144,6 @@ namespace Server.Items
                         break;
                     }
             }
-        }
-
-    
-        public override void GetProperties(ObjectPropertyList list)
-        {
-            base.GetProperties(list);
-
-       /*     if (!CraftResources.IsStandard(m_Resource))
-            {
-                int num = CraftResources.GetLocalizationNumber(m_Resource);
-
-                if (num > 0)
-                    list.Add(num);
-                else
-                    list.Add(CraftResources.GetName(m_Resource));
-            }*/
         }
     }
 

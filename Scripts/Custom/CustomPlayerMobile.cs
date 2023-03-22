@@ -30,34 +30,16 @@ namespace Server.Mobiles
 
 		private Classe m_Classe;
 
-		private List<Mobile> m_Esclaves = new List<Mobile>();
-		private CustomPlayerMobile m_Maitre;
-
-		private StatutSocialEnum m_StatutSocial = StatutSocialEnum.Aucun;
-
 		private Container m_Corps;
-		//private int m_StatAttente;
-		//private int m_fe;
-		//private int m_feAttente;
-		//private int m_TotalNormalFE;
-		//private int m_TotalRPFE;
 
 		private DateTime m_LastLoginTime;
-		//private TimeSpan m_nextFETime;
-		//private DateTime m_LastFERP;
 
 		private DateTime m_LastPay;
 		private int m_Salaire;
 
-
-		private God m_God = God.GetGod(-1);
-		private AffinityDictionary m_MagicAfinity;
 		private List<int> m_QuickSpells = new List<int>();
 
-
 		private int m_IdentiteId;
-
-		private TribeRelation m_TribeRelation;
 
 		private bool m_Masque = false;
 
@@ -165,20 +147,6 @@ namespace Server.Mobiles
 			return ((ClasseInfo)Classes.GetInfos(c)).Nom;
 		}
 
-		[CommandProperty(AccessLevel.Owner)]
-		public StatutSocialEnum StatutSocial
-		{
-			get => m_StatutSocial;
-			set
-			{
-				if (m_StatutSocial == StatutSocialEnum.Possession && value >= StatutSocialEnum.Peregrin && m_Maitre != null)
-				{
-					m_Maitre.RemoveEsclave(this, false);
-				}
-				m_StatutSocial = value;
-			}
-		}
-
 		[CommandProperty(AccessLevel.GameMaster)]
 		public DateTime LastLoginTime
 		{
@@ -199,23 +167,6 @@ namespace Server.Mobiles
 		public ExperienceSystem Experience { get; set; }
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Container Corps { get { return m_Corps; } set { m_Corps = value; } }
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public God God
-		{
-			get => m_God;
-			set
-			{
-				MagicAfinity.ChangeGod(value);
-				m_God = value;
-			}
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public AffinityDictionary MagicAfinity { get { return m_MagicAfinity; } set { m_MagicAfinity = value; } }
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public TribeRelation TribeRelation { get { return m_TribeRelation; } set { m_TribeRelation = value; } }
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public NewSpellbook ChosenSpellbook { get; set; }
@@ -316,11 +267,6 @@ namespace Server.Mobiles
 				Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
 		}
 
-		public List<Mobile> Esclaves { get { return m_Esclaves; } set { m_Esclaves = value; } }
-
-		[CommandProperty(AccessLevel.Owner)]
-		public CustomPlayerMobile Maitre { get { return m_Maitre; } set { m_Maitre = value; } }
-
 		[CommandProperty(AccessLevel.GameMaster)]
 		public DateTime JailTime { get; set; }
 
@@ -337,25 +283,17 @@ namespace Server.Mobiles
 		{
 			get
 			{
-
 				if (m_Jail && DateTime.Now >= JailTime)
-				{
 					JailRelease();
-				}
-
 
 				return m_Jail;
 			}
 			set
 			{
 				if (!m_Jail && value)
-				{
 					JailP(null,TimeSpan.FromDays(7));
-				}
 				else
-				{
 					JailRelease();
-				}
 
 				m_Jail = value;
 
@@ -373,8 +311,6 @@ namespace Server.Mobiles
 
 		public CustomPlayerMobile()
 		{
-			MagicAfinity = new AffinityDictionary(this);
-			TribeRelation = new TribeRelation(this);
 			Aptitudes = new Aptitudes(this);
 			Experience = new ExperienceSystem();
 			BaseAttributs = new BAttributs(this);
@@ -452,117 +388,12 @@ namespace Server.Mobiles
 			return InsensibleSpell.IsActive(this) || FormeEnsangleeSpell.IsActive(this);
 		}
 
-		public bool AddEsclave(Mobile m)
-		{
-			if (RoomForSlave())
-			{
-				if (m is CustomPlayerMobile cp)
-				{
-
-					cp.Maitre = this;
-					cp.StatutSocial = StatutSocialEnum.Possession;
-					m_Esclaves.Add(m);
-
-				}
-				else
-				{
-					m_Esclaves.Add(m);
-				}
-
-				return true;
-			}
-			else
-			{
-				SendMessage("Vous avez déjà atteint votre maximum d'esclaves.");
-				return false;
-			}
-		}
-
-		public void RemoveEsclave(Mobile m, bool affranchir = false)
-		{
-			if (m is CustomPlayerMobile cp)
-			{
-				if (affranchir)
-				{
-					cp.Maitre = null;
-					cp.StatutSocial = StatutSocialEnum.Peregrin;
-					cp.SendMessage("Vous êtes maintenenant un Pérégrin.");
-				}
-				else
-				{
-					cp.Maitre = null;
-					cp.StatutSocial = StatutSocialEnum.Dechet;
-					cp.SendMessage("Vous êtes maintenenant un Déchet.");
-				}
-			}
-
-			List<Mobile> newEsclave = new List<Mobile>();
-
-			foreach (Mobile item in m_Esclaves)
-			{
-				if (m != item)
-				{
-					newEsclave.Add(item);
-				}
-			}
-			m_Esclaves = newEsclave;
-
-		}
-
-		public bool RoomForSlave()
-		{
-			if (AccessLevel > AccessLevel.Player)
-			{
-				return true;
-			}
-			return MaxEsclave() >= m_Esclaves.Count + 1;
-		}
-
-		public int MaxEsclave()
-		{
-			if (AccessLevel > AccessLevel.Player)
-			{
-				return 1000;
-			}
-
-			switch (StatutSocial)
-			{
-				case StatutSocialEnum.Aucun:
-					return 0;
-
-				case StatutSocialEnum.Dechet:
-					return 0;
-				case StatutSocialEnum.Possession:
-					return 0;
-				case StatutSocialEnum.Peregrin:
-					return 0;
-				case StatutSocialEnum.Civenien:
-					return 2;
-				case StatutSocialEnum.Equite:
-					return 5;
-				case StatutSocialEnum.Patre:
-					return 10;
-				case StatutSocialEnum.Magistrat:
-					return 30;
-				case StatutSocialEnum.Empereur:
-					return 1000;
-				default:
-					return 0;
-			}
-
-
-		}
-
 		#region Hiding
 		public override void Reveal(Mobile m)
 		{
 			if (m is CustomPlayerMobile)
 			{
-				if (VisibilityList.Contains(m))
-				{
-
-				}
-				else
+				if (!VisibilityList.Contains(m))
 				{
 					VisibilityList.Add(m);
 					m.SendMessage("Vous avez detecté " + Name + ".");
@@ -592,16 +423,11 @@ namespace Server.Mobiles
 			}
 			else if (m is BaseCreature && ((BaseCreature)m).IsBonded) // Grosso modo ici, c'est pour permettre de detecter sans revealer avec les familiers, car certains on du DH.
 			{
-
 				BaseCreature sd = (BaseCreature)m;
 
 				Mobile cm = sd.ControlMaster;
 
-				if (VisibilityList.Contains(cm))
-				{
-
-				}
-				else
+				if (!VisibilityList.Contains(cm))
 				{
 					VisibilityList.Add(cm);
 					cm.SendMessage(sd.Name + " vous indique la présence de " + Name + ".");
@@ -638,9 +464,8 @@ namespace Server.Mobiles
 		public override void RevealingAction()
 		{
 			if (Hidden)
-			{
 				VisibilityList = new List<Mobile>();
-			}
+
 			base.RevealingAction();
 		}
 		
@@ -653,29 +478,18 @@ namespace Server.Mobiles
 			if (chance >= Utility.RandomDouble())
 				bonus -= 10;
 
-			int ar = Server.SkillHandlers.Hiding.GetArmorRating(this);
-
+			int ar = SkillHandlers.Hiding.GetArmorRating(this);
 
 			if (ar >= 90)
-			{
 				bonus -= 50;
-			}
 			else if (ar >= 75)
-			{
 				bonus -= 40;
-			}
 			else if (ar >= 60)
-			{
 				bonus -= 30;
-			}
 			else if (ar >= 40)
-			{
 				bonus -= 20;
-			}
 			else if (ar >= 20)
-			{
 				bonus -= 10;
-			}
 
 			return base.GetHideBonus() + bonus;
 		}
@@ -692,11 +506,8 @@ namespace Server.Mobiles
 
 				int lightLevel = global + personal;
 
-
 				if (lightLevel >= 20 && Light.Burning)
-				{
 					bonus += 10;
-				}
 			}
 
 			return base.GetDetectionBonus(mobile) + bonus;
@@ -711,8 +522,6 @@ namespace Server.Mobiles
 
 			if (pack != null)
 			{
-				//        int maxweight = WeightOverloading.GetMaxWeight(pm);
-
 				int maxweight = pm.MaxWeight;
 
 				double value = (pm.TotalWeight / maxweight) - 0.50;
@@ -729,25 +538,6 @@ namespace Server.Mobiles
 			return 0;
 		}
 
-		#endregion
-
-		#region Statut social	
-
-		public string StatutSocialString()
-		{
-			StatutSocialEnum statut = m_StatutSocial;
-
-			if (statut < 0)
-				statut = 0;
-			else if ((int)statut > 8)
-				statut = (StatutSocialEnum)8;
-
-			var type = typeof(StatutSocialEnum);
-			MemberInfo[] memberInfo = type.GetMember(statut.ToString());
-			Attribute attribute = memberInfo[0].GetCustomAttribute(typeof(AppearanceAttribute), false);
-			return (Female ? ((AppearanceAttribute)attribute).FemaleAdjective : ((AppearanceAttribute)attribute).MaleAdjective);
-		}
-
 		public int GainGold(int gold, bool bank = false)
 		{
 			int gainGold = gold;
@@ -755,42 +545,6 @@ namespace Server.Mobiles
 
 			if (Race.RaceID != 0)
 				taxesGold = (int)Math.Round((gainGold * 0.1), 0, MidpointRounding.AwayFromZero);
-
-			switch (m_StatutSocial)
-			{
-				case StatutSocialEnum.Aucun:
-					break;
-				case StatutSocialEnum.Dechet:
-					taxesGold = gainGold;
-					gainGold -= taxesGold;
-					break;
-				case StatutSocialEnum.Possession:
-					taxesGold += (int)Math.Round((gainGold * 0.5), 0, MidpointRounding.AwayFromZero);
-					gainGold -= taxesGold;
-					break;
-				case StatutSocialEnum.Peregrin:
-					taxesGold += (int)Math.Round((gainGold * 0.5), 0, MidpointRounding.AwayFromZero);
-					gainGold -= taxesGold;
-					break;
-				case StatutSocialEnum.Civenien:
-					taxesGold += (int)Math.Round((gainGold * 0.4), 0, MidpointRounding.AwayFromZero);
-					gainGold -= taxesGold;
-					break;
-				case StatutSocialEnum.Equite:
-					taxesGold += (int)Math.Round((gainGold * 0.25), 0, MidpointRounding.AwayFromZero);
-					gainGold -= taxesGold;
-					break;
-				case StatutSocialEnum.Patre:
-					taxesGold += (int)Math.Round((gainGold * 0.15), 0, MidpointRounding.AwayFromZero);
-					gainGold -= taxesGold;
-					break;
-				case StatutSocialEnum.Magistrat:
-					break;
-				case StatutSocialEnum.Empereur:
-					break;
-				default:
-					break;
-			}
 
 			if (bank)
 			{
@@ -839,6 +593,7 @@ namespace Server.Mobiles
 				Salaire = Payment;
 			}
 		}
+
 		#endregion
 
 		#region Apparence
@@ -885,8 +640,6 @@ namespace Server.Mobiles
 
 		public CustomPlayerMobile(Serial s) : base(s)
 		{
-			MagicAfinity = new AffinityDictionary(this);
-			TribeRelation = new TribeRelation(this);
 		}
 
 		public virtual void Tip(Mobile m, string tip)
@@ -988,22 +741,6 @@ namespace Server.Mobiles
 		}
 
 		#endregion
-
-		public int GetAffinityValue(MagieType affinity)
-		{
-			return MagicAfinity.GetValue(affinity);
-		}
-
-		public int GetTribeValue(TribeType tribe)
-		{
-			return TribeRelation.GetValue(tribe);
-		}
-
-		public void ChangeTribeValue(TribeType tribe, int value)
-		{
-
-			TribeRelation.SetValue(tribe, TribeRelation.GetValue(tribe) + value);
-		}
 
 		#region Stats
 
@@ -1230,9 +967,6 @@ namespace Server.Mobiles
 		public override void OnDelete()
 		{
 			Reroll(); // Ok, c'est un peu bizard de faire quand on delete le perso, que sa reroll automatique, mais ca facilite la pierre de reroll (fait juste deleter le personnage) et ca diminue aussi l'impacte d'un Rage Quit, puisque si le joueur a deleter son perso, il va automatiquement recevoir l'experience et va pouvoir revenir en rerollant.
-
-			if (Maitre != null)
-				Maitre.RemoveEsclave(this);
 
 			base.OnDelete();
 		}
@@ -1678,313 +1412,83 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
-				case 34:
+				case 0:
 					{
 						Experience = new ExperienceSystem(reader);
-						goto case 33;
-					}
-				case 33:
-					{
 						BaseAttributs = new BAttributs(this, reader);
 						Attributs = new Attributs(this, reader); 
-						goto case 32;
-					}
-				case 32:
-				case 31:
-					{
 						Aptitudes = new Aptitudes(this, reader);
-						goto case 30;
-					}
-				case 30:
-					{
 						m_Classe = (Classe)reader.ReadInt();
-						goto case 29;
-					}
-				case 29:
-					{
 						JailLocation = reader.ReadPoint3D();
 						JailMap =  reader.ReadMap();
 						JailTime = reader.ReadDateTime();
 						m_Jail =  reader.ReadBool();
 						JailBy =  reader.ReadMobile();
-
-						goto case 28;
-					}
-				case 28:
-				case 27:
-				case 26:
-					{
-						if (version < 32)
-							/*m_LastFERP = */reader.ReadDateTime();
-						goto case 24;
-					}
-				case 25:
-				case 24:
-					{
-						m_Maitre = (CustomPlayerMobile)reader.ReadMobile();
-						goto case 23;
-					}
-
-				case 23:
-					{
-						int count = reader.ReadInt();
-
-						for (int i = 0; i < count; i++)
-						{
-							m_Esclaves.Add(reader.ReadMobile());
-						}
-
-						goto case 22;
-					}
-				case 22:
-					{
-						if (version < 32)
-							/*m_TotalRPFE = */reader.ReadInt();
-
-						if (version >= 27)
-							goto case 20;
-						else
-							goto case 21;		
-					}
-				case 21:
-					{
-						reader.ReadTimeSpan();
-
-						goto case 20;
-					}
-				case 20:
-					{
 						m_Salaire = reader.ReadInt();
 						m_LastPay = reader.ReadDateTime();
-
-						goto case 19;
-					}
-				case 19:
-					{
 						m_IdentiteId = reader.ReadInt();
-
-						goto case 18;
-					}
-				case 18:
-					{
-						TribeRelation = new TribeRelation(this, reader);
-
-						goto case 17;
-					}
-				case 17:
-					{
 						NameMod = reader.ReadString();
-						goto case 16;
-					}
-				case 16:
-					{
 						m_Masque = reader.ReadBool();
-						goto case 15;
-					}
-				case 15:
-					{
-						StatutSocial = (StatutSocialEnum)reader.ReadInt();
-						goto case 14;
-					}
-				case 14:
-					{
+
 						MissiveEnAttente = new List<MissiveContent>();
 
 						int count = reader.ReadInt();
 
 						for (int i = 0; i < count; i++)
-						{
 							MissiveEnAttente.Add(MissiveContent.Deserialize(reader));
-						}
-						goto case 13;
-					}
-				case 13:
-					{
-						QuiOptions = (QuiOptions)reader.ReadInt();
 
-						goto case 12;
-					}
-				case 12:
-					{
+						QuiOptions = (QuiOptions)reader.ReadInt();
 						TitleCycle = reader.ReadInt();
 						CustomTitle = reader.ReadString();
-
-						goto case 11;
-					}
-				case 11:
-					{
 						m_BaseHue = reader.ReadInt();
-						goto case 10;
-
-					}
-				case 10:
-					{
 						m_BaseRace = Server.BaseRace.GetRace(reader.ReadInt());
 						m_BaseFemale = reader.ReadBool();
-
-						if (version <= 18)
-						{
-							goto case 9;
-						}
-						else
-						{
-							goto case 8;
-						}	
-					}
-				case 9:
-					{	
-						goto case 8;
-					}
-				case 8:
-					{
 						ChosenSpellbook = (NewSpellbook)reader.ReadItem();
-						goto case 7;
-					}
 
-				case 7:
-					{
 						QuickSpells = new List<int>();
-						int count = reader.ReadInt();
+						count = reader.ReadInt();
 						for (int i = 0; i < count; i++)
 							QuickSpells.Add(reader.ReadInt());
-						goto case 6;
-					}
-				case 6:
-					{
-						God = God.GetGod(reader.ReadInt());
-
-						MagicAfinity = new AffinityDictionary(this, reader);					
-						goto case 5;
-					}
-				case 5:
-					{
-						if (version < 32)
-							/*m_feAttente = */reader.ReadInt();
-
-						goto case 4;
-
-					}
-				case 4:
-					{
-						if (version < 32)
-							/*m_feAttente = */reader.ReadInt();
-
-						goto case 3;
-					}
-				case 3:
-					{
-						if (version < 32)
-							/*m_fe = */reader.ReadInt();
 						m_LastLoginTime = reader.ReadDateTime();
-						if (version < 32)
-							/*m_nextFETime = */reader.ReadTimeSpan();
-						if (version < 32)
-							/*m_TotalNormalFE = */reader.ReadInt();
-
-						goto case 2;
-					}
-				case 2:
-					{
-						
-						goto case 1;
-					}
-				case 1:
-					{
 						m_Grandeur = (GrandeurEnum)reader.ReadInt();
 						m_Corpulence = (CorpulenceEnum)reader.ReadInt();
 						m_Apparence = (AppearanceEnum)reader.ReadInt();
-						goto case 0;
-					}
-				case 0:
-                    {
-
                         break;
                     }
             }
-
-			if (version <= 27)
-			{
-				foreach (Mobile item in m_Esclaves)
-				{
-					if (item == null)
-					{
-						RemoveEsclave(item);
-					}
-
-				}
-			}
-
-			if (version < 31)
-				Aptitudes = new Aptitudes(this);
-
-			if (version < 33)
-			{
-				BaseAttributs = new BAttributs(this);
-				Attributs = new Attributs(this);
-			}
-
-			if (version < 34)
-				Experience = new ExperienceSystem();
 		}
 
 		public override void Serialize(GenericWriter writer)
         {        
             base.Serialize(writer);
 
-            writer.Write(34); // version
+            writer.Write(0); // version
 
-			//Version 34
+			//Version 0
 			Experience.Serialize(writer);
-
-			//Version 33
 			BaseAttributs.Serialize(writer);
 			Attributs.Serialize(writer);
-
-			//Version 31
 			Aptitudes.Serialize(writer);
-
 			writer.Write((int)m_Classe);
-
-			//Old Version
 			writer.Write(JailLocation);
 			writer.Write(JailMap);
 			writer.Write(JailTime);
 			writer.Write(m_Jail);
 			writer.Write(JailBy);
-		
-			writer.Write(m_Maitre);
-
-			writer.Write(m_Esclaves.Count);
-
-			foreach (Mobile item in m_Esclaves)
-				writer.Write(item);			
-
 			writer.Write(m_Salaire);
 			writer.Write(m_LastPay);
-
 			writer.Write(m_IdentiteId);
-
-			m_TribeRelation.Serialize(writer);
-
 			writer.Write(NameMod);
 			writer.Write(m_Masque);
-
-			writer.Write((int)m_StatutSocial);
-
 			writer.Write(MissiveEnAttente.Count);
 
 			foreach (MissiveContent item in MissiveEnAttente)
-			{
 				item.Serialize(writer);
-			}
 
 			writer.Write((int)QuiOptions);
-
 			writer.Write(TitleCycle);
 			writer.Write(CustomTitle);
-
 			m_BaseHue = Hue;
-
 			writer.Write(Hue);
 
 			if (m_BaseRace == null)
@@ -1994,19 +1498,13 @@ namespace Server.Mobiles
 
 			writer.Write(m_BaseRace.RaceID);
 			writer.Write(m_BaseFemale);
-
 			writer.Write(ChosenSpellbook);
 
 			writer.Write(QuickSpells.Count);
 			for (int i = 0; i < QuickSpells.Count; i++)
 				writer.Write((int)QuickSpells[i]);
 
-			writer.Write(God.GodID);
-
-			m_MagicAfinity.Serialize(writer);
-
 			writer.Write(m_LastLoginTime);
-
 			writer.Write((int)m_Grandeur);
 			writer.Write((int)m_Corpulence);
 			writer.Write((int)m_Apparence);

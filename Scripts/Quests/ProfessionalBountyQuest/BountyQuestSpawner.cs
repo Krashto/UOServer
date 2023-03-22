@@ -570,9 +570,9 @@ namespace Server.Engines.Quests
                 {
                     case 0:
                         if (Utility.RandomBool())
-                            hold.DropItem(new Board(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new RegularBoard(Utility.RandomMinMax(20, 40)));
                         else
-                            hold.DropItem(new Log(Utility.RandomMinMax(20, 40)));
+                            hold.DropItem(new RegularLog(Utility.RandomMinMax(20, 40)));
                         break;
                     case 1:
                         if (Utility.RandomBool())

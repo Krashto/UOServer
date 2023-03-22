@@ -360,7 +360,7 @@ namespace Server.Misc
             PlaceItemIn(bag, 92, 84, new PlainoisLeather(5000));
 
             PlaceItemIn(bag, 30, 118, new Cloth(5000));
-            PlaceItemIn(bag, 30, 84, new Board(5000));
+            PlaceItemIn(bag, 30, 84, new RegularBoard(5000));
             PlaceItemIn(bag, 57, 80, new BlankScroll(500));
 
             PlaceItemIn(bag, 30, 35, new DullCopperIngot(5000));
@@ -431,7 +431,7 @@ namespace Server.Misc
                 Hue = 1321
             };
 
-            bag.DropItem(new Board(5000));
+            bag.DropItem(new RegularBoard(5000));
             bag.DropItem(new OakBoard(5000));
             bag.DropItem(new AshBoard(5000));
             bag.DropItem(new YewBoard(5000));

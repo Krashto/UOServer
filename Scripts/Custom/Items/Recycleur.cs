@@ -230,7 +230,7 @@ namespace Server.Items
                 {
                     switch (resource)
                     {
-                        case CraftResource.RegularWood:      resItem = new Board(); break;
+                        case CraftResource.RegularWood:      resItem = new RegularBoard(); break;
                         case CraftResource.OakWood:       resItem = new OakBoard(); break;
                         case CraftResource.AshWood:    resItem = new AshBoard(); break;
                         case CraftResource.YewWood:       resItem = new YewBoard(); break;
@@ -245,7 +245,7 @@ namespace Server.Items
                     switch (resource)
                     {
                         case CraftResource.PlainoisBone:  resItem = new PlainoisBone(); break;
-                        case CraftResource.ForestierBone:       resItem = new LupusBone(); break;
+                        case CraftResource.ForestierBone:       resItem = new ForestierBone(); break;
                         case CraftResource.DesertiqueBone:     resItem = new DesertiqueBone(); break;
                         case CraftResource.CollinoisBone:   resItem = new CollinoisBone(); break;
                         case CraftResource.SavanoisBone:      resItem = new SavanoisBone(); break;

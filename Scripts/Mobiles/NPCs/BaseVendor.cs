@@ -889,18 +889,6 @@ namespace Server.Mobiles
                 Restock();
             }
 
-			if (from is CustomPlayerMobile)
-			{
-				CustomPlayerMobile cm = (CustomPlayerMobile)from;
-
-				if (cm.StatutSocial < MinBuyClasse && !m_Contrebandier)
-				{
-					Say("Seul les " + MinBuyClasse + "s et les classes supérieurs peuvent acheter ici");
-					return;
-				}
-			}
-
-
 			UpdateBuyInfo();
 
             int count = 0;

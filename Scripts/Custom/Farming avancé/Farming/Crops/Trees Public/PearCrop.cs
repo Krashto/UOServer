@@ -225,7 +225,7 @@ namespace Server.Items.Crops
 						from.AddToBackpack( fruit );
 
 						int cnt = Utility.Random( (int)( cookValue * 10 ) + 1 );
-						Log logs = new Log( cnt );
+						RegularLog logs = new RegularLog( cnt );
 						from.AddToBackpack( logs );
 
 						FruitTreeStump i_stump = new FruitTreeStump( typeof( PearTree ) );

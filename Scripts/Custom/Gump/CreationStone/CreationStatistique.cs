@@ -91,7 +91,7 @@ namespace Server.Gumps
 
 			else if (info.ButtonID == 1001)
             {
-				from.SendGump(new CreationClasseSocial(m_from, m_Creation));
+				from.SendGump(new CreationValidationGump(m_from, m_Creation));
 			}
             else if (info.ButtonID == 1000 || info.ButtonID == 0)
             {

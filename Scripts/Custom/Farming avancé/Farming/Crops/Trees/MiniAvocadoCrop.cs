@@ -224,7 +224,7 @@ namespace Server.Items.Crops
 						Avocado fruit = new Avocado( Utility.Random( m_yield +2 ) );
 						from.AddToBackpack( fruit );
 						int cnt = Utility.Random( 20 ) + 1;
-						Log logs = new Log( cnt );
+						RegularLog logs = new RegularLog( cnt );
 						from.AddToBackpack( logs );
 					}
 						this.Delete();

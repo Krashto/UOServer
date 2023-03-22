@@ -196,20 +196,20 @@ namespace Server.Custom.Aptitudes
             return value;
         }
 
-		public static int GetMaxPA(CustomPlayerMobile from, int level)
+		public static int GetMaxPA(int level)
 		{
-			return 30 + level;
+			return 50 + level * 4;
 		}
 
 		public static int GetRemainingPA(CustomPlayerMobile from, int level)
         {
-            int pa = GetMaxPA(from, level);
+            int pa = GetMaxPA(level);
             int added = 0;
 
 			for (int i = 0; i < m_AptitudeEntries.Length; i++)
 			{
-				AptitudesEntry entry = (AptitudesEntry)m_AptitudeEntries[i];
-				Aptitude aptitude = entry.Aptitude;
+				var entry = m_AptitudeEntries[i];
+				var aptitude = entry.Aptitude;
 				added += GetValue(from, aptitude) * 10;
 			}
 
@@ -228,7 +228,7 @@ namespace Server.Custom.Aptitudes
 
 		public static int GetSkillRequirement(int level)
 		{
-			return 30 + level * 7;
+			return 50 + level * 5;
 		}
 
 		public static bool IsValid(CustomPlayerMobile from, Aptitude aptitude)

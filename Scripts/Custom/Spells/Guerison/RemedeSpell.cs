@@ -2,12 +2,12 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
-namespace Server.Custom.Spells.NewSpells.Chasseur
+namespace Server.Custom.Spells.NewSpells.Guerison
 {
 	public class RemedeSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Remede", "Remede",
+				"Remede", "[Remede]",
 				SpellCircle.First,
 				212,
 				9061,
@@ -15,9 +15,9 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				Reagent.Ginseng
 			);
 
-		public override int RequiredAptitudeValue { get { return 1; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Chasseur }; } }
-		public override SkillName CastSkill { get { return SkillName.Tracking; } }
+		public override int RequiredAptitudeValue { get { return 2; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Guerison }; } }
+		public override SkillName CastSkill { get { return SkillName.Healing; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public RemedeSpell(Mobile caster, Item scroll)

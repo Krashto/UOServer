@@ -63,7 +63,7 @@ namespace Server.Mobiles
 
 			Tamable = true;
             ControlSlots = 1;
-            MinTameSkill = -6.9;
+            MinTameSkill = 0;
         }
 
         public Bird(Serial serial)
