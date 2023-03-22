@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a ferret corpse")]
+    [CorpseName("Le Corps d'un Furet")]
     public class Ferret : BaseCreature
     {
         private static readonly string[] m_Vocabulary =
@@ -18,30 +18,35 @@ namespace Server.Mobiles
         public Ferret()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a ferret";
+            Name = "Un Furet";
             Body = 0x117;
 
-            SetStr(41, 48);
-            SetDex(55);
-            SetInt(75);
+			SetStr(45, 70);
+			SetDex(30, 50);
+			SetInt(25, 40);
 
-            SetHits(45, 50);
+			SetHits(50, 65);
 
-            SetDamage(7, 9);
+			SetDamage(6, 10);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 45, 50);
-            SetResistance(ResistanceType.Fire, 10, 14);
-            SetResistance(ResistanceType.Cold, 30, 40);
-            SetResistance(ResistanceType.Poison, 21, 25);
-            SetResistance(ResistanceType.Energy, 20, 25);
 
-            SetSkill(SkillName.MagicResist, 4.0);
-            SetSkill(SkillName.Tactics, 4.0);
-            SetSkill(SkillName.Wrestling, 4.0);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            Tamable = true;
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+			Tamable = true;
             ControlSlots = 1;
             MinTameSkill = -21.3;
 

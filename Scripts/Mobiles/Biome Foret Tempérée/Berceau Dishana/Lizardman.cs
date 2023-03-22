@@ -3,38 +3,46 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a lizardman corpse")]
+    [CorpseName("Le Corps d'un Homme Lezard")]
     public class Lizardman : BaseCreature
     {
         [Constructable]
         public Lizardman()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("lizardman");
+            Name = "Un Homme Lezard";
             Body = Utility.RandomList(35, 36);
             BaseSoundID = 417;
 
-            SetStr(96, 120);
-            SetDex(86, 105);
-            SetInt(36, 60);
 
-            SetHits(58, 72);
+			SetStr(89, 137);
+			SetDex(59, 98);
+			SetInt(59, 79);
 
-            SetDamage(5, 7);
+			SetHits(84, 128);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamage(12, 20);
 
-            SetResistance(ResistanceType.Physical, 25, 30);
-            SetResistance(ResistanceType.Fire, 5, 10);
-            SetResistance(ResistanceType.Cold, 5, 10);
-            SetResistance(ResistanceType.Poison, 10, 20);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetSkill(SkillName.MagicResist, 35.1, 60.0);
-            SetSkill(SkillName.Tactics, 55.1, 80.0);
-            SetSkill(SkillName.Wrestling, 50.1, 70.0);
 
-            Fame = 1500;
-            Karma = -1500;
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
+
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+		//	Fame = 1500;
+         //   Karma = -1500;
         }
 
         public Lizardman(Serial serial)

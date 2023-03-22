@@ -7,7 +7,7 @@ namespace Server.Mobiles
 {
 
 
-    [CorpseName("Corps de Saliva")]
+    [CorpseName("Le Corps de Saliva")]
     public class Saliva : Harpy
     {
 		public DateTime DelayHurlement;
@@ -24,28 +24,35 @@ namespace Server.Mobiles
             Name = "Saliva";
             Hue = 0x11E;
 
-            SetStr(136, 206);
-            SetDex(123, 222);
-            SetInt(118, 127);
+			SetStr(229, 408);
+			SetDex(151, 253);
+			SetInt(126, 203);
 
-            SetHits(409, 842);
+			SetHits(452, 687);
 
-			SetDamage(19, 28);
+			SetDamage(34, 58);
 
 			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 46, 47);
-            SetResistance(ResistanceType.Fire, 32, 40);
-            SetResistance(ResistanceType.Cold, 34, 49);
-            SetResistance(ResistanceType.Poison, 40, 48);
-            SetResistance(ResistanceType.Energy, 35, 39);
 
-            SetSkill(SkillName.Wrestling, 106.4, 128.8);
-            SetSkill(SkillName.Tactics, 129.9, 141.0);
-            SetSkill(SkillName.MagicResist, 84.3, 90.1);
-        }
+			SetResistance(ResistanceType.Physical, 75, 75);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 25, 25);
+			SetResistance(ResistanceType.Poison, 25, 25);
+			SetResistance(ResistanceType.Energy, 25, 25);
 
-        public Saliva(Serial serial)
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
+
+
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
+
+		}
+
+		public Saliva(Serial serial)
             : base(serial)
         {
         }

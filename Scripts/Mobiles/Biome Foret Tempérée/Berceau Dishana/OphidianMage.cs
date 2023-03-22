@@ -2,13 +2,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an ophidian corpse")]
+    [CorpseName("Le Corps d'un Ophidien")]
     public class OphidianMage : BaseCreature
     {
         private static readonly string[] m_Names = new string[]
         {
-            "an ophidian apprentice mage",
-            "an ophidian shaman"
+            "Un Ophidien Mage",
+            "Un Ophidien Shaman"
         };
         [Constructable]
         public OphidianMage()
@@ -18,30 +18,34 @@ namespace Server.Mobiles
             Body = 85;
             BaseSoundID = 639;
 
-            SetStr(181, 205);
-            SetDex(191, 215);
-            SetInt(96, 120);
+			SetStr(124, 192);
+			SetDex(83, 137);
+			SetInt(69, 109);
 
-            SetHits(109, 123);
+			SetHits(118, 179);
 
-            SetDamage(5, 10);
+			SetDamage(17, 28);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetResistance(ResistanceType.Physical, 25, 35);
-            SetResistance(ResistanceType.Fire, 30, 40);
-            SetResistance(ResistanceType.Cold, 35, 45);
-            SetResistance(ResistanceType.Poison, 40, 50);
-            SetResistance(ResistanceType.Energy, 35, 45);
 
-            SetSkill(SkillName.EvalInt, 85.1, 100.0);
-            SetSkill(SkillName.Magery, 85.1, 100.0);
-            SetSkill(SkillName.MagicResist, 75.0, 97.5);
-            SetSkill(SkillName.Tactics, 65.0, 87.5);
-            SetSkill(SkillName.Wrestling, 20.2, 60.0);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-            Fame = 4000;
-            Karma = -4000;
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+		//	Fame = 4000;
+        //    Karma = -4000;
         }
 
         public OphidianMage(Serial serial)

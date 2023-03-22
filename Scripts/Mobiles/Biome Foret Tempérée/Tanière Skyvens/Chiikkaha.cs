@@ -1,37 +1,42 @@
 ﻿namespace Server.Mobiles
 {
-    [CorpseName("a Chiikkaha the Toothed corpse")]
+    [CorpseName("Le Corps de Chiikkaha l'edente")]
     public class Chiikkaha : RatmanMage
     {
         [Constructable]
         public Chiikkaha()
         {
-            Name = "Chiikkaha l'édenté";
+            Name = "Chiikkaha l'edente";
 
-            SetStr(450, 476);
-            SetDex(157, 179);
-            SetInt(251, 275);
+			SetStr(229, 408);
+			SetDex(151, 253);
+			SetInt(126, 203);
 
-            SetHits(400, 425);
+			SetHits(887, 1348);
 
-            SetDamage(10, 17);
+			SetDamage(45, 77);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 40, 45);
-            SetResistance(ResistanceType.Fire, 10, 20);
-            SetResistance(ResistanceType.Cold, 10, 20);
-            SetResistance(ResistanceType.Poison, 10, 20);
-            SetResistance(ResistanceType.Energy, 100);
 
-            SetSkill(SkillName.EvalInt, 70.1, 80.0);
-            SetSkill(SkillName.Magery, 70.1, 90.0);
-            SetSkill(SkillName.MagicResist, 65.1, 96.0);
-            SetSkill(SkillName.Tactics, 50.1, 75.0);
-            SetSkill(SkillName.Wrestling, 50.1, 75.0);
+			SetResistance(ResistanceType.Physical, 75, 75);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 25, 25);
+			SetResistance(ResistanceType.Poison, 25, 25);
+			SetResistance(ResistanceType.Energy, 25, 25);
 
-            Fame = 7500;
-            Karma = -7500;
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
+
+
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
+
+
+		//	Fame = 7500;
+        //    Karma = -7500;
         }
 
         public Chiikkaha(Serial serial)

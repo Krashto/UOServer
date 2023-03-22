@@ -2,35 +2,47 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a gazer larva corpse")]
+    [CorpseName("Le Corps d'un Gazer")]
     public class GazerLarva : BaseCreature
     {
         [Constructable]
         public GazerLarva()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a gazer larva";
+            Name = "Un Gazer Brule";
             Body = 778;
             BaseSoundID = 377;
 
-            SetStr(76, 100);
-            SetDex(51, 75);
-            SetInt(56, 80);
+			SetStr(229, 408);
+			SetDex(151, 253);
+			SetInt(126, 203);
 
-            SetHits(36, 47);
+			SetHits(323, 491);
 
-            SetDamage(2, 9);
+			SetDamage(30, 51);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetResistance(ResistanceType.Physical, 15, 25);
 
-            SetSkill(SkillName.MagicResist, 70.0);
-            SetSkill(SkillName.Tactics, 70.0);
-            SetSkill(SkillName.Wrestling, 70.0);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-            Fame = 900;
-            Karma = -900;
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
+
+
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
+
+
+		//	Fame = 900;
+        //    Karma = -900;
         }
 
         public GazerLarva(Serial serial)

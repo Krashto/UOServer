@@ -1,35 +1,42 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a deer corpse")]
+    [CorpseName("Le Corps d'une Biche")]
     public class Hind : BaseCreature
     {
         [Constructable]
         public Hind()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a hind";
+            Name = "Une Biche";
             Body = 0xED;
 
-            SetStr(21, 51);
-            SetDex(47, 77);
-            SetInt(17, 47);
+			SetStr(63, 98);
+			SetDex(42, 70);
+			SetInt(35, 56);
 
-            SetHits(15, 29);
-            SetMana(0);
+			SetHits(70, 91);
 
-            SetDamage(4);
+			SetDamage(9, 14);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 5, 15);
-            SetResistance(ResistanceType.Cold, 5);
 
-            SetSkill(SkillName.MagicResist, 15.0);
-            SetSkill(SkillName.Tactics, 19.0);
-            SetSkill(SkillName.Wrestling, 26.0);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            Fame = 300;
-            Karma = 0;
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+	//		Fame = 300;
+     //       Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;

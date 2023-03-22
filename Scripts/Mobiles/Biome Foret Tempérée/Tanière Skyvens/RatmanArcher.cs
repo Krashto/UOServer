@@ -3,41 +3,45 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a ratman archer corpse")]
+    [CorpseName("Le Corps d'un Homme Rat Archer")]
     public class RatmanArcher : BaseCreature
     {
         [Constructable]
         public RatmanArcher()
             : base(AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("ratman");
+            Name = "Un Homme Rat Archer";
             Body = 0x8E;
             BaseSoundID = 437;
 
-            SetStr(146, 180);
-            SetDex(101, 130);
-            SetInt(116, 140);
+			SetStr(173, 269);
+			SetDex(115, 192);
+			SetInt(96, 154);
 
-            SetHits(88, 108);
+			SetHits(165, 251);
 
-            SetDamage(4, 10);
+			SetDamage(23, 39);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetResistance(ResistanceType.Physical, 40, 55);
-            SetResistance(ResistanceType.Fire, 10, 20);
-            SetResistance(ResistanceType.Cold, 10, 20);
-            SetResistance(ResistanceType.Poison, 10, 20);
-            SetResistance(ResistanceType.Energy, 10, 20);
 
-            SetSkill(SkillName.Anatomy, 60.2, 100.0);
-            SetSkill(SkillName.Archery, 80.1, 90.0);
-            SetSkill(SkillName.MagicResist, 65.1, 90.0);
-            SetSkill(SkillName.Tactics, 50.1, 75.0);
-            SetSkill(SkillName.Wrestling, 50.1, 75.0);
+			SetResistance(ResistanceType.Physical, 75, 75);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 25, 25);
+			SetResistance(ResistanceType.Poison, 25, 25);
+			SetResistance(ResistanceType.Energy, 25, 25);
 
-            Fame = 6500;
-            Karma = -6500;
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
+
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+		//	Fame = 6500;
+        //    Karma = -6500;
 
             AddItem(new Bow());
         }

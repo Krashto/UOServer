@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dire wolf corpse")]
+    [CorpseName("Le Corps d'un Loup")]
     [TypeAlias("Server.Mobiles.Direwolf")]
     public class DireWolf : BaseCreature
     {
@@ -10,37 +10,41 @@ namespace Server.Mobiles
         public DireWolf()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a dire wolf";
+            Name = "Un Loup Sauvage";
             Body = 23;
             BaseSoundID = 0xE5;
 
-            SetStr(96, 120);
-            SetDex(81, 105);
-            SetInt(36, 60);
+			SetStr(124, 192);
+			SetDex(83, 137);
+			SetInt(69, 109);
 
-            SetHits(58, 72);
-            SetMana(0);
+			SetHits(118, 179);
 
-            SetDamage(11, 17);
+			SetDamage(17, 28);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 20, 25);
-            SetResistance(ResistanceType.Fire, 10, 20);
-            SetResistance(ResistanceType.Cold, 5, 10);
-            SetResistance(ResistanceType.Poison, 5, 10);
-            SetResistance(ResistanceType.Energy, 10, 15);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 57.6, 75.0);
-            SetSkill(SkillName.Tactics, 50.1, 70.0);
-            SetSkill(SkillName.Wrestling, 60.1, 80.0);
-            SetSkill(SkillName.Necromancy, 18.0);
-            SetSkill(SkillName.SpiritSpeak, 18.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 2500;
-            Karma = -2500;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-            Tamable = true;
+
+
+			//	Fame = 2500;
+			//    Karma = -2500;
+
+			Tamable = true;
             ControlSlots = 1;
             MinTameSkill = 83.1;
         }

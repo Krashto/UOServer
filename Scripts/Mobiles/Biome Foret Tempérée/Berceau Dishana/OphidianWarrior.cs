@@ -2,13 +2,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an ophidian corpse")]
+    [CorpseName("Le corps d'un Ophidien")]
     public class OphidianWarrior : BaseCreature
     {
         private static readonly string[] m_Names = new string[]
         {
-            "an ophidian warrior",
-            "an ophidian enforcer"
+            "Un Guerrier Ophidien",
+            "Un Ophidien"
         };
         [Constructable]
         public OphidianWarrior()
@@ -18,32 +18,38 @@ namespace Server.Mobiles
             Body = 86;
             BaseSoundID = 634;
 
-            SetStr(150, 320);
-            SetDex(94, 190);
-            SetInt(64, 160);
+			SetStr(124, 192);
+			SetDex(83, 137);
+			SetInt(69, 109);
 
-            SetHits(128, 155);
-            SetMana(0);
+			SetHits(118, 179);
 
-            SetDamage(5, 11);
+			SetDamage(17, 28);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Poison, 50);
 
-            SetResistance(ResistanceType.Physical, 35, 40);
-            SetResistance(ResistanceType.Fire, 20, 30);
-            SetResistance(ResistanceType.Cold, 25, 35);
-            SetResistance(ResistanceType.Poison, 30, 40);
-            SetResistance(ResistanceType.Energy, 25, 35);
 
-            SetSkill(SkillName.MagicResist, 70.1, 85.0);
-            SetSkill(SkillName.Swords, 60.1, 85.0);
-            SetSkill(SkillName.Tactics, 75.1, 90.0);
+			SetResistance(ResistanceType.Physical, 25, 25);
+			SetResistance(ResistanceType.Fire, 25, 25);
+			SetResistance(ResistanceType.Cold, 75, 75);
+			SetResistance(ResistanceType.Poison, 75, 75);
+			SetResistance(ResistanceType.Energy, 75, 75);
 
-            Fame = 4500;
-            Karma = -4500;
-        }
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-        public OphidianWarrior(Serial serial)
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+			//     Fame = 4500;
+			//     Karma = -4500;
+		}
+
+		public OphidianWarrior(Serial serial)
             : base(serial)
         {
         }
