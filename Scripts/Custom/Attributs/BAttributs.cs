@@ -1,5 +1,3 @@
-using System;
-using Server;
 using Server.Mobiles;
 
 namespace Server
@@ -45,24 +43,17 @@ namespace Server
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int Intuition
+        public int Sagesse
         {
-            get { return this[Attribut.Intuition]; }
-            set { this[Attribut.Intuition] = value; }
+            get { return this[Attribut.Sagesse]; }
+            set { this[Attribut.Sagesse] = value; }
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int Pouvoir
+        public int Endurance
         {
-            get { return this[Attribut.Pouvoir]; }
-            set { this[Attribut.Pouvoir] = value; }
-        }
-
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Resistance
-        {
-            get { return this[Attribut.Resistance]; }
-            set { this[Attribut.Resistance] = value; }
+            get { return this[Attribut.Endurance]; }
+            set { this[Attribut.Endurance] = value; }
         }
         #endregion
     }

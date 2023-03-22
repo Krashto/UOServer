@@ -29,11 +29,11 @@ namespace Server.Gumps
             return value;
         }
 
-        public static int GetRemainingPU(CustomPlayerMobile from)
+        public static int GetRemainingPU(CustomPlayerMobile from, int level)
         {
-            int totalValue = GetAddedValue(from, Attribut.Constitution) + GetAddedValue(from, Attribut.Intuition) + GetAddedValue(from, Attribut.Pouvoir) + GetAddedValue(from, Attribut.Resistance);
+            int totalValue = GetAddedValue(from, Attribut.Constitution) + GetAddedValue(from, Attribut.Sagesse) + GetAddedValue(from, Attribut.Endurance);
 
-            return (from.Niveau * 3) - totalValue;
+            return (level * 3) - totalValue;
         }
 
         public static int GetDisponiblePU(CustomPlayerMobile from)
@@ -93,7 +93,7 @@ namespace Server.Gumps
                 AddImage(485, 172, 10412);
 
                 AddLabel(259, 32, 2101, "Attributs");
-                AddLabel(139, 76, 2101, String.Format("Points d'attribut disponibles / en attente: {0} / {1}", GetDisponiblePU(m_From), GetRemainingPU(m_From) - GetDisponiblePU(m_From)));
+                AddLabel(139, 76, 2101, String.Format("Points d'attribut disponibles / en attente: {0} / {1}", GetDisponiblePU(m_From), GetRemainingPU(m_From, m_From.Experience.Niveau) - GetDisponiblePU(m_From)));
 
                 AddLabel(110, 109, 2101, "Constitution");
                 AddLabel(200, 109, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Constitution)));
@@ -104,32 +104,23 @@ namespace Server.Gumps
                 if (gm == null && CanRaise(m_From, Attribut.Constitution))
                     AddButton(259, 110, 5601, 5605, 1, GumpButtonType.Reply, 0);
 
-                AddLabel(110, 141, 2101, "Intuition");
-                AddLabel(200, 141, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Intuition)));
+                AddLabel(110, 141, 2101, "Sagesse");
+                AddLabel(200, 141, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Sagesse)));
 
-                if (gm == null && CanLower(m_From, Attribut.Intuition))
+                if (gm == null && CanLower(m_From, Attribut.Sagesse))
                     AddButton(235, 142, 5603, 5607, 6, GumpButtonType.Reply, 0);
 
-                if (gm == null && CanRaise(m_From, Attribut.Intuition))
+                if (gm == null && CanRaise(m_From, Attribut.Sagesse))
                     AddButton(259, 142, 5601, 5605, 2, GumpButtonType.Reply, 0);
 
-                AddLabel(311, 109, 2101, "Pouvoir");
-                AddLabel(401, 109, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Pouvoir)));
+                AddLabel(311, 109, 2101, "Endurance");
+                AddLabel(401, 109, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Endurance)));
 
-                if (gm == null && CanLower(m_From, Attribut.Pouvoir))
+                if (gm == null && CanLower(m_From, Attribut.Endurance))
                     AddButton(436, 110, 5603, 5607, 7, GumpButtonType.Reply, 0);
 
-                if (gm == null && CanRaise(m_From, Attribut.Pouvoir))
+                if (gm == null && CanRaise(m_From, Attribut.Endurance))
                     AddButton(460, 110, 5601, 5605, 3, GumpButtonType.Reply, 0);
-
-                AddLabel(311, 141, 2101, "Résistance");
-                AddLabel(401, 141, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Resistance)));
-
-                if (gm == null && CanLower(m_From, Attribut.Resistance))
-                    AddButton(436, 142, 5603, 5607, 8, GumpButtonType.Reply, 0);
-
-                if (gm == null && CanRaise(m_From, Attribut.Resistance))
-                    AddButton(460, 142, 5601, 5605, 4, GumpButtonType.Reply, 0);
             }
             catch (Exception ex)
             {

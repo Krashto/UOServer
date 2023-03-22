@@ -11,14 +11,11 @@ using Server.Movement;
 using Server.Gumps;
 using Server.Custom.Classes;
 using Server.Custom.Aptitudes;
-using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Custom.Spells;
 using Server.Custom.Spells.NewSpells.Hydromancie;
-using Server.Multis;
 using Server.Custom.Spells.NewSpells.Defenseur;
-
-
+using Server.CustomScripts.Systems.Experience;
 #endregion
 
 namespace Server.Mobiles
@@ -39,15 +36,15 @@ namespace Server.Mobiles
 		private StatutSocialEnum m_StatutSocial = StatutSocialEnum.Aucun;
 
 		private Container m_Corps;
-		private int m_StatAttente;
-		private int m_fe;
-		private int m_feAttente;
-		private int m_TotalNormalFE;
-		private int m_TotalRPFE;
+		//private int m_StatAttente;
+		//private int m_fe;
+		//private int m_feAttente;
+		//private int m_TotalNormalFE;
+		//private int m_TotalRPFE;
 
-		private DateTime m_lastLoginTime;
-		private TimeSpan m_nextFETime;
-		private DateTime m_LastFERP;
+		private DateTime m_LastLoginTime;
+		//private TimeSpan m_nextFETime;
+		//private DateTime m_LastFERP;
 
 		private DateTime m_LastPay;
 		private int m_Salaire;
@@ -185,8 +182,8 @@ namespace Server.Mobiles
 		[CommandProperty(AccessLevel.GameMaster)]
 		public DateTime LastLoginTime
 		{
-			get { return m_lastLoginTime; }
-			set { m_lastLoginTime = value; }
+			get { return m_LastLoginTime; }
+			set { m_LastLoginTime = value; }
 		}
 
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -199,44 +196,7 @@ namespace Server.Mobiles
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Salaire { get { return m_Salaire; } set { m_Salaire = value; } }
 
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int StatAttente { get { return m_StatAttente; } set { m_StatAttente = value; } }
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public TimeSpan NextFETime
-		{
-			get { return m_nextFETime; }
-			set { m_nextFETime = value; }
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public DateTime LastFERP
-		{
-			get { return m_LastFERP; }
-			set { m_LastFERP = value; }
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int FE { get { return m_fe; } set { m_fe = value; } }
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int FENormalTotal { get { return m_TotalNormalFE; } set { m_TotalNormalFE = value; } }
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int FERPTotal { get { return m_TotalRPFE; } set { m_TotalRPFE = value; } }
-
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int FETotal { get { return m_TotalNormalFE + m_TotalRPFE; } }
-
-
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int FEAttente { get { return m_feAttente; } set { m_feAttente = value; } }
-
-		//[CommandProperty(AccessLevel.GameMaster)]
-		//public int Armure { get => m_ClassePrimaire.Armor + m_ClasseSecondaire.Armor; }
-
+		public ExperienceSystem Experience { get; set; }
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Container Corps { get { return m_Corps; } set { m_Corps = value; } }
 
@@ -246,13 +206,8 @@ namespace Server.Mobiles
 			get => m_God;
 			set
 			{
-
 				MagicAfinity.ChangeGod(value);
-
-
-				m_God = value; // S'assurer que le metier, soit un metier...
-
-
+				m_God = value;
 			}
 		}
 
@@ -356,7 +311,9 @@ namespace Server.Mobiles
 
 		private static void OnLogin(LoginEventArgs e)
 		{
-			Classes.SetBaseAndCapSkills(e.Mobile as CustomPlayerMobile);
+			var pm = e.Mobile as CustomPlayerMobile;
+			if (pm != null)
+				Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
 		}
 
 		public List<Mobile> Esclaves { get { return m_Esclaves; } set { m_Esclaves = value; } }
@@ -419,6 +376,9 @@ namespace Server.Mobiles
 			MagicAfinity = new AffinityDictionary(this);
 			TribeRelation = new TribeRelation(this);
 			Aptitudes = new Aptitudes(this);
+			Experience = new ExperienceSystem();
+			BaseAttributs = new BAttributs(this);
+			Attributs = new Attributs(this);
 		}
 
 		public override void GetProperties(ObjectPropertyList list)
@@ -1029,31 +989,6 @@ namespace Server.Mobiles
 
 		#endregion
 
-		public HashSet<SkillName> SkillDisponible()
-		{
-			HashSet<SkillName> list = new HashSet<SkillName>();
-
-			//foreach (SkillName item in ClassePrimaire.Skill)
-			//{
-			//	list.Add(item);
-			//}
-
-			//foreach (SkillName item in ClasseSecondaire.Skill)
-			//{
-			//	list.Add(item);
-			//}
-			//foreach (SkillName item in Metier.Skill)
-			//{
-			//	list.Add(item);
-			//}
-
-			foreach (SkillName item in SkillGeneral)
-			{
-				list.Add(item);
-			}
-			return list;
-		}
-
 		public int GetAffinityValue(MagieType affinity)
 		{
 			return MagicAfinity.GetValue(affinity);
@@ -1070,447 +1005,30 @@ namespace Server.Mobiles
 			TribeRelation.SetValue(tribe, TribeRelation.GetValue(tribe) + value);
 		}
 
-		#region Classe
-
-		public bool ClassSkill(SkillName skills)
-		{
-			//foreach (SkillName item in ClassePrimaire.Skill)
-			//{
-			//	if (item == skills)
-			//	{
-			//		return true;
-			//	}
-			//}
-
-			//foreach (SkillName item in ClasseSecondaire.Skill)
-			//{
-			//	if (item == skills)
-			//	{
-			//		return true;
-			//	}
-			//}
-
-
-			//foreach (SkillName item in Metier.Skill)
-			//{
-			//	if (item == skills)
-			//	{
-			//		return true;
-			//	}
-			//}
-
-			foreach (SkillName item in SkillGeneral)
-			{
-				if (item == skills)
-				{
-					return true;
-				}
-			}
-
-			return false;
-
-		}
-
-		public bool CheckClassePrimaire(Classe cl)
-		{
-
-			//if (cl == Classe.GetClasse(-1))
-			//{
-			//	return true;
-			//}
-			//else if (cl == ClasseSecondaire)
-			//{
-
-			//	m_ClassePrimaire = cl;
-
-			//	foreach (SkillName item in cl.Skill)
-			//	{
-			//		Skills[item].Base += 20;
-
-			//		if (Skills[item].Base > 100)
-			//		{
-			//			m_feAttente += (int)Math.Round(Skills[item].Base) - 100;
-			//			Skills[item].Base = 100;
-			//		}
-			//	}
-
-			//	ClasseSecondaire = Classe.GetClasse(-1);
-			//	return false;
-			//}
-			//else if (cl == Metier)
-			//{
-			//	m_ClassePrimaire = cl;
-			//	Metier = Classe.GetClasse(-1);
-			//	return false;
-			//}
-
-			return true;
-		}
-
-		public bool CheckClasseSecondaire(Classe cl)
-		{
-			//if (cl == Classe.GetClasse(-1))
-			//{
-			//	return true;
-			//}
-			//else if (cl == ClassePrimaire)
-			//{
-			//	m_ClasseSecondaire = cl;
-
-			//	foreach (SkillName item in cl.Skill)
-			//	{
-			//		Skills[item].Base -= 20;
-			//	}
-
-			//	ClassePrimaire = Classe.GetClasse(-1);
-			//	return false;
-			//}
-			//else if (cl == Metier)
-			//{
-			//	m_ClasseSecondaire = cl;
-
-			//	Metier = Classe.GetClasse(-1);
-			//	return false;
-			//}
-
-			return true;
-		}
-
-		public bool CheckMetier(Classe cl)
-		{
-			//if (cl == Classe.GetClasse(-1))
-			//{
-			//	return true;
-			//}
-			//else if (cl == ClassePrimaire)
-			//{
-			//	m_Metier = cl;
-			//	ClassePrimaire = Classe.GetClasse(-1);
-			//	return false;
-			//}
-			//else if (cl == ClasseSecondaire)
-			//{
-			//	m_Metier = cl;
-
-			//	foreach (SkillName item in cl.Skill)
-			//	{
-			//		Skills[item].Base += 20;
-
-			//		if (Skills[item].Base > 100)
-			//		{
-			//			m_feAttente += (int)Math.Round(Skills[item].Base) - 100;
-			//			Skills[item].Base = 100;
-			//		}
-			//	}
-
-			//	ClasseSecondaire = Classe.GetClasse(-1);
-			//	return false;
-			//}
-
-			return true;
-		}
-
-		public void RecalculeClasse(Classe NewClass, int type)
-		{
-
-			//switch (type)
-			//{
-			//	case 1:
-			//		{
-			//			if (ClassePrimaire != null)
-			//			{
-			//				foreach (SkillName item in ClassePrimaire.Skill)
-			//				{
-			//					if (Metier.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (NewClass.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (ClasseSecondaire.ContainSkill(item))
-			//					{
-			//						// Secondaire a 30, et primaire à 50, donc perte de 20 de skills.
-			//						Skills[item].Base -= 20;
-			//					}
-			//					else
-			//					{
-			//						int Arecuperer = (int)(Skills[item].Base - 50);
-			//						Skills[item].Base = 0;
-			//						m_feAttente += Arecuperer;
-			//					}
-			//				}
-
-			//				foreach (SkillName item in NewClass.Skill)
-			//				{
-			//					if (Metier.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (ClassePrimaire.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (ClasseSecondaire.ContainSkill(item))
-			//					{
-			//						// Secondaire a 30, et primaire à 50, donc perte de 20 de skills.
-			//						Skills[item].Base += 20;
-
-			//						if (Skills[item].Base > 100)
-			//						{
-			//							m_feAttente += (int)Math.Round(Skills[item].Base) - 100;
-			//							Skills[item].Base = 100;
-			//						}
-			//					}
-			//					else
-			//					{
-			//						Skills[item].Base = 50;
-			//					}
-			//				}
-			//			}
-
-			//			// classe primaire
-
-			//			break;
-			//		}
-			//	case 2:
-			//		{
-			//			// Classe secondaire
-
-			//			if (ClasseSecondaire != null)
-			//			{
-			//				foreach (SkillName item in ClasseSecondaire.Skill)
-			//				{
-			//					if (ClassePrimaire.ContainSkill(item))
-			//					{
-			//						// rien a faire, classe primaire est plus elevés.
-			//					}
-			//					else if (NewClass.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 30...
-			//					}
-			//					else if (Metier.ContainSkill(item))
-			//					{
-			//						// rien a faire, metier à 50...
-			//					}
-			//					else
-			//					{
-			//						int Arecuperer = (int)(Skills[item].Value - 30);
-			//						Skills[item].Base = 0;
-			//						m_feAttente += Arecuperer;
-			//					}
-			//				}
-
-			//				foreach (SkillName item in NewClass.Skill)
-			//				{
-			//					if (ClassePrimaire.ContainSkill(item))
-			//					{
-			//						// rien a faire, classe primaire est plus elevés.
-			//					}
-			//					else if (ClasseSecondaire.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 30...
-			//					}
-			//					else if (Metier.ContainSkill(item))
-			//					{
-			//						// rien a faire, metier à 50...
-			//					}
-			//					else
-			//					{
-			//						Skills[item].Base = 30;
-			//					}
-			//				}
-			//			}
-
-
-			//			break;
-			//		}
-			//	case 3:
-			//		{
-			//			// Metier
-
-			//			if (Metier != null)
-			//			{
-			//				foreach (SkillName item in Metier.Skill)
-			//				{
-			//					if (ClassePrimaire.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (NewClass.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (ClasseSecondaire.ContainSkill(item))
-			//					{
-			//						// Secondaire a 30, et primaire à 50, donc perte de 20 de skills.
-			//						Skills[item].Base -= 20;
-			//					}
-			//					else
-			//					{
-			//						int Arecuperer = (int)(Skills[item].Base - 50);
-			//						Skills[item].Base = 0;
-			//						m_feAttente += Arecuperer;
-			//					}
-			//				}
-
-			//				foreach (SkillName item in NewClass.Skill)
-			//				{
-			//					if (ClassePrimaire.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (Metier.ContainSkill(item))
-			//					{
-			//						// rien a faire, tout deux a 50...
-			//					}
-			//					else if (ClasseSecondaire.ContainSkill(item))
-			//					{
-
-			//						Skills[item].Base += 20;
-
-
-			//						if (Skills[item].Base > 100)
-			//						{
-			//							m_feAttente += (int)Math.Round(Skills[item].Base) - 100;
-			//							Skills[item].Base = 100;
-			//						}
-
-
-
-			//					}
-			//					else
-			//					{
-			//						Skills[item].Base = 50;
-			//					}
-			//				}
-			//			}
-
-
-
-
-			//			break;
-			//		}
-
-			//	default:
-			//		break;
-			//}
-		}
-
-		public void SetClasseSkills(double skills)
-		{
-			double principal = skills < 50 ? 50 : skills;
-			double secondaire = skills < 30 ? 30 : skills;
-
-			//foreach (SkillName item in ClasseSecondaire.Skill)
-			//{
-			//	Skills[item].Base = secondaire;
-			//}
-
-			//foreach (SkillName item in ClassePrimaire.Skill)
-			//{
-			//	Skills[item].Base = principal;
-			//}
-
-			//foreach (SkillName item in Metier.Skill)
-			//{
-			//	Skills[item].Base = principal;
-			//}
-		}
-		#endregion
-
 		#region Stats
 
 		public bool CanDecreaseStat(StatType stats)
 		{
-			if (StatAttente >= 10)
-			{
-				return false;
-			}
-
 			switch (stats)
 			{
-				case StatType.Str:
-					if (RawStr == 25)
-					{
-						return false;
-					}
-					else
-					{
-						return true;
-					}
-				case StatType.Dex:
-					if (RawDex == 25)
-					{
-						return false;
-					}
-					else
-					{
-						return true;
-					}
-				case StatType.Int:
-					if (RawInt == 25)
-					{
-						return false;
-					}
-					else
-					{
-						return true;
-					}
-				default:
-					return false;
+				case StatType.Str: return RawStr > 25;
+				case StatType.Dex: return RawDex > 25;
+				case StatType.Int: return RawInt > 25;
+				default: return false;
 			}
 		}
 
 		public bool CanIncreaseStat(StatType stats)
 		{
-
-			if (RawDex + RawStr + RawInt + StatAttente >= 225)
-			{
+			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance>= 525)
 				return false;
-			}
-
 
 			switch (stats)
 			{
-				case StatType.Str:
-					{
-						if (RawStr == 100)
-						{
-							return false;
-						}
-						else
-						{
-							return true;
-						}
-					}
-				case StatType.Dex:
-					{
-						if (RawDex == 100)
-						{
-							return false;
-						}
-						else
-						{
-							return true;
-						}
-					}
-				case StatType.Int:
-					{
-						if (RawInt == 100)
-						{
-							return false;
-						}
-						else
-						{
-							return true;
-						}
-					}
-				case StatType.All:
-					return false;
-				default:
-					return false;
+				case StatType.Str: return RawStr < 125;
+				case StatType.Dex: return RawDex < 125;
+				case StatType.Int: return RawInt < 125;
+				default: return false;
 			}
 		}
 
@@ -1520,15 +1038,9 @@ namespace Server.Mobiles
 			{
 				switch (stats)
 				{
-					case StatType.Str:
-						RawStr++;
-						break;
-					case StatType.Dex:
-						RawDex++;
-						break;
-					case StatType.Int:
-						RawInt++;
-						break;
+					case StatType.Str: RawStr++; break;
+					case StatType.Dex: RawDex++; break;
+					case StatType.Int: RawInt++; break;
 				}
 			}
 		}
@@ -1539,104 +1051,12 @@ namespace Server.Mobiles
 			{
 				switch (stats)
 				{
-					case StatType.Str:
-						RawStr--;
-						m_StatAttente++;
-						break;
-					case StatType.Dex:
-						RawDex--;
-						m_StatAttente++;
-						break;
-					case StatType.Int:
-						RawInt--;
-						m_StatAttente++;
-						break;
+					case StatType.Str: RawStr--; break;
+					case StatType.Dex: RawDex--; break;
+					case StatType.Int: RawInt--; break;
 				}
 			}
 		}
-
-
-		#endregion
-
-		#region Skills
-		public bool CanIncreaseSkill(SkillName skills)
-		{
-			if (m_fe == 0)
-			{
-				return false;
-			}
-			else if (Skills[skills].Value == 100)
-			{
-				return false;
-			}
-			if (!ClassSkill(skills))
-			{
-				return false;
-			}
-			return true;
-		}
-
-		public void IncreaseSkills(SkillName skills)
-		{
-
-			if (CanIncreaseSkill(skills))
-			{
-				Skills[skills].Base += 1;
-				m_fe--;
-			}
-
-
-
-		}
-
-		public void DecreaseSkills(SkillName skills)
-		{
-			if (CanDecreaseSkill(skills))
-			{
-				Skills[skills].Base -= 1;
-				m_feAttente++;
-			}
-		}
-
-		public bool CanDecreaseSkill(SkillName skills)
-		{
-			if (Skills[skills].Base > 50) // sert à rien de calculer ca..
-			{
-				return true;
-			}
-			else if (Skills[skills].Base == 0) // sert à rien de calculer ca..
-			{
-				return false;
-			}
-
-			//foreach (SkillName item in ClassePrimaire.Skill)
-			//{
-			//	if (item == skills)
-			//		return false;
-			//}
-
-			//foreach (SkillName item in Metier.Skill)
-			//{
-			//	if (item == skills)
-			//		return false;
-			//}
-
-			//foreach (SkillName item in ClasseSecondaire.Skill)
-			//{
-			//	if (item == skills && Skills[skills].Base == 30)
-			//		return false;
-			//}
-
-			foreach (SkillName item in SkillGeneral)
-			{
-				if (item == skills && Skills[skills].Base == 30)
-				{
-					return false;
-				}
-			}
-			return true;
-		}
-
 		#endregion
 
 		#region Mort
@@ -1812,9 +1232,7 @@ namespace Server.Mobiles
 			Reroll(); // Ok, c'est un peu bizard de faire quand on delete le perso, que sa reroll automatique, mais ca facilite la pierre de reroll (fait juste deleter le personnage) et ca diminue aussi l'impacte d'un Rage Quit, puisque si le joueur a deleter son perso, il va automatiquement recevoir l'experience et va pouvoir revenir en rerollant.
 
 			if (Maitre != null)
-			{
 				Maitre.RemoveEsclave(this);
-			}
 
 			base.OnDelete();
 		}
@@ -1934,34 +1352,7 @@ namespace Server.Mobiles
 		}
 
 		#region Leveling System
-		private int m_Niveau;
-		private int m_PADispo;
-		private int m_PE;
-
 		private int m_PUDispo;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int Niveau
-		{
-			get { return m_Niveau; }
-			set { m_Niveau = value; }
-		}
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int PADispo
-		{
-			get { return m_PADispo; }
-			set { m_PADispo = value; }
-		}
-
-		//[CommandProperty(AccessLevel.GameMaster)]
-		public int PE
-		{
-			get { return m_PE; }
-			set { m_PE = value; }
-		}
-
-		//[CommandProperty(AccessLevel.GameMaster)]
 		public int PUDispo
 		{
 			get { return m_PUDispo; }
@@ -1985,7 +1376,7 @@ namespace Server.Mobiles
 
 		public virtual void OnAptitudesChange(Aptitude aptitude, int oldvalue, int newvalue)
 		{
-			Classes.SetBaseAndCapSkills(this);
+			Classes.SetBaseAndCapSkills(this, Experience.Niveau);
 			CheckStatTimers();
 		}
 
@@ -1994,7 +1385,7 @@ namespace Server.Mobiles
 			if (attribut == Attribut.Constitution)
 				Delta(MobileDelta.Hits);
 
-			if (attribut == Attribut.Pouvoir)
+			if (attribut == Attribut.Endurance)
 				Delta(MobileDelta.Mana);
 		}
 
@@ -2119,7 +1510,7 @@ namespace Server.Mobiles
 						SendMessage("Vous n'aviez plus les prérequis pour votre classe");
 				}
 
-				Classes.SetBaseAndCapSkills(this);
+				Classes.SetBaseAndCapSkills(this, Experience.Niveau);
 			}
 
 			if (type == ValidateType.Capacites || type == ValidateType.All)
@@ -2285,9 +1676,20 @@ namespace Server.Mobiles
 
             int version = reader.ReadInt();
 
-
 			switch (version)
 			{
+				case 34:
+					{
+						Experience = new ExperienceSystem(reader);
+						goto case 33;
+					}
+				case 33:
+					{
+						BaseAttributs = new BAttributs(this, reader);
+						Attributs = new Attributs(this, reader); 
+						goto case 32;
+					}
+				case 32:
 				case 31:
 					{
 						Aptitudes = new Aptitudes(this, reader);
@@ -2296,7 +1698,6 @@ namespace Server.Mobiles
 				case 30:
 					{
 						m_Classe = (Classe)reader.ReadInt();
-
 						goto case 29;
 					}
 				case 29:
@@ -2307,15 +1708,14 @@ namespace Server.Mobiles
 						m_Jail =  reader.ReadBool();
 						JailBy =  reader.ReadMobile();
 
-
 						goto case 28;
 					}
 				case 28:
 				case 27:
 				case 26:
 					{
-						m_LastFERP = reader.ReadDateTime();
-
+						if (version < 32)
+							/*m_LastFERP = */reader.ReadDateTime();
 						goto case 24;
 					}
 				case 25:
@@ -2338,16 +1738,13 @@ namespace Server.Mobiles
 					}
 				case 22:
 					{
-						m_TotalRPFE = reader.ReadInt();
+						if (version < 32)
+							/*m_TotalRPFE = */reader.ReadInt();
 
 						if (version >= 27)
-						{
 							goto case 20;
-						}
 						else
-						{
-							goto case 21;
-						}					
+							goto case 21;		
 					}
 				case 21:
 					{
@@ -2461,24 +1858,28 @@ namespace Server.Mobiles
 					}
 				case 5:
 					{
-						m_feAttente = reader.ReadInt();
+						if (version < 32)
+							/*m_feAttente = */reader.ReadInt();
 
 						goto case 4;
 
 					}
 				case 4:
 					{
-						m_feAttente = reader.ReadInt();
+						if (version < 32)
+							/*m_feAttente = */reader.ReadInt();
 
 						goto case 3;
 					}
 				case 3:
 					{
-						m_fe = reader.ReadInt();
-						m_lastLoginTime = reader.ReadDateTime();
-						m_nextFETime = reader.ReadTimeSpan();
-						m_TotalNormalFE = reader.ReadInt();
-
+						if (version < 32)
+							/*m_fe = */reader.ReadInt();
+						m_LastLoginTime = reader.ReadDateTime();
+						if (version < 32)
+							/*m_nextFETime = */reader.ReadTimeSpan();
+						if (version < 32)
+							/*m_TotalNormalFE = */reader.ReadInt();
 
 						goto case 2;
 					}
@@ -2515,42 +1916,51 @@ namespace Server.Mobiles
 
 			if (version < 31)
 				Aptitudes = new Aptitudes(this);
+
+			if (version < 33)
+			{
+				BaseAttributs = new BAttributs(this);
+				Attributs = new Attributs(this);
+			}
+
+			if (version < 34)
+				Experience = new ExperienceSystem();
 		}
 
 		public override void Serialize(GenericWriter writer)
         {        
             base.Serialize(writer);
 
-            writer.Write(31); // version
+            writer.Write(34); // version
 
+			//Version 34
+			Experience.Serialize(writer);
+
+			//Version 33
+			BaseAttributs.Serialize(writer);
+			Attributs.Serialize(writer);
+
+			//Version 31
 			Aptitudes.Serialize(writer);
 
 			writer.Write((int)m_Classe);
 
 			//Old Version
-
 			writer.Write(JailLocation);
 			writer.Write(JailMap);
 			writer.Write(JailTime);
 			writer.Write(m_Jail);
 			writer.Write(JailBy);
 		
-			writer.Write(LastFERP);
-
 			writer.Write(m_Maitre);
 
 			writer.Write(m_Esclaves.Count);
 
 			foreach (Mobile item in m_Esclaves)
-			{
 				writer.Write(item);			
-			}
-
-			writer.Write(m_TotalRPFE); 
 
 			writer.Write(m_Salaire);
 			writer.Write(m_LastPay);
-
 
 			writer.Write(m_IdentiteId);
 
@@ -2595,12 +2005,7 @@ namespace Server.Mobiles
 
 			m_MagicAfinity.Serialize(writer);
 
-			writer.Write(m_StatAttente);
-			writer.Write(m_feAttente);
-			writer.Write(m_fe);
-			writer.Write(m_lastLoginTime);
-			writer.Write(m_nextFETime);
-			writer.Write(m_TotalNormalFE);
+			writer.Write(m_LastLoginTime);
 
 			writer.Write((int)m_Grandeur);
 			writer.Write((int)m_Corpulence);

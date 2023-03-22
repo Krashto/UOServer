@@ -240,16 +240,16 @@ namespace Server
 
 			m_Player.StatutSocial = m_Statut;
 
-			if (m_Reroll != null)
-			{
-				m_Player.FE +=  (int)(Math.Round(m_Reroll.ExperienceRP * 0.50) + m_Reroll.ExperienceNormal);
-				m_Player.FENormalTotal += (int)m_Reroll.ExperienceNormal;
-				m_Player.FERPTotal += (int)Math.Round(m_Reroll.ExperienceRP * 0.5);
+			//if (m_Reroll != null)
+			//{
+			//	m_Player.FE +=  (int)(Math.Round(m_Reroll.ExperienceRP * 0.50) + m_Reroll.ExperienceNormal);
+			//	m_Player.FENormalTotal += (int)m_Reroll.ExperienceNormal;
+			//	m_Player.FERPTotal += (int)Math.Round(m_Reroll.ExperienceRP * 0.5);
 
-				Account acc = (Account)m_Player.Account;
+			//	Account acc = (Account)m_Player.Account;
 
-				acc.RemoveReroll(m_Reroll);
-			}
+			//	acc.RemoveReroll(m_Reroll);
+			//}
 
 			m_Player.AddToBackpack(new Gold(5000));
 

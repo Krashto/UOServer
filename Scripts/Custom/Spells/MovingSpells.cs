@@ -9,12 +9,18 @@ namespace Server.Custom.Spells
 		{
 			int count = 0;
 
+			var x = origin.X + GetOrientation(d).X;
+			var y = origin.Y + GetOrientation(d).Y;
+			Point3D newpoint = new Point3D(x, y, origin.Z);
+			var p = (IPoint3D)newpoint;
+			SpellHelper.GetSurfaceTop(ref p);
+
 			while (count < tiles)
 			{
-				var x = origin.X + GetOrientation(d).X;
-				var y = origin.Y + GetOrientation(d).Y;
-				Point3D newpoint = new Point3D(x, y, origin.Z);
-				var p = (IPoint3D)newpoint;
+				x = m.X + GetOrientation(d).X;
+				y = m.Y + GetOrientation(d).Y;
+				newpoint = new Point3D(x, y, m.Z);
+				p = (IPoint3D)newpoint;
 				SpellHelper.GetSurfaceTop(ref p);
 
 				bool canfit = m.Map.CanSpawnMobile((Point3D)p);

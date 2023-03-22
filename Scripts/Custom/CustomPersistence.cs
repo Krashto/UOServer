@@ -7,7 +7,7 @@ namespace Server.Custom
 {
     public static class CustomPersistence
     {
-        public static string FilePath = Path.Combine("Saves/", "CustomPersistence.bin");
+		public static string FilePath = Path.Combine("Saves/", "CustomPersistence.bin");
 
         public static DateTime Ouverture { get; set; }
 		public static int TaxesMoney { get; set; }
@@ -25,22 +25,13 @@ namespace Server.Custom
 		public static void AddSellItem(string items, double value)
 		{
 			if (SellItems.ContainsKey(items))
-			{
 				SellItems[items] += value;
-			}
 			else
-			{
 				SellItems.Add(items, value);
-			}
-
-
 		}
-
 
 		public static void SellingLog(CustomPlayerMobile player,bool contrebandier, string item, int amount, int pricebyitem)
 		{
-		
-
 			if (player != null && player.Account != null)
 			{
 				string path = "Logs/SellLog/";
@@ -53,17 +44,11 @@ namespace Server.Custom
 					using (StreamWriter sw = new StreamWriter(fileName, true))
 						sw.WriteLine("Date;Nom;Account;Contrebandier;Item;Prix;Qte;Total");  // CSV fIle type..
 				}
-					
 
 				using (StreamWriter sw = new StreamWriter(fileName, true))
 					sw.WriteLine(DateTime.Now.ToString() + ";" + player.GetBaseName() + ";" + player.Account.Username + ";" + contrebandier.ToString() + ";" + item + ";" + pricebyitem.ToString() + ";" + amount.ToString() + ";" + (amount * pricebyitem).ToString());  // CSV fIle type..
 			}
 		}
-
-
-
-
-
 
 		public static void Configure()
         {
@@ -74,7 +59,6 @@ namespace Server.Custom
 			ProchainePay = Ouverture.AddDays(7);
 			TaxesMoney = 0;
 			Salaire = 0;
-
 		}
 
         public static void OnSave(WorldSaveEventArgs e)
@@ -153,8 +137,6 @@ namespace Server.Custom
 								break;
 							}
 					}
-
-
 				});
         }
     }

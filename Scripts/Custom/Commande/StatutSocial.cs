@@ -14,7 +14,7 @@ namespace Server.Scripts.Commands
 	{
         public static void Initialize()
         {
-			CommandSystem.Register("StatutSociale", AccessLevel.GameMaster, new CommandEventHandler(StatutSociale_OnCommand));
+			CommandSystem.Register("StatutSociale", AccessLevel.Owner, new CommandEventHandler(StatutSociale_OnCommand));
 		}
 
 		[Usage("StatutSociale")]
@@ -27,10 +27,7 @@ namespace Server.Scripts.Commands
 				return;
 
 			if (from is CustomPlayerMobile cm)
-			{
 				from.SendGump(new StatutGump(cm, 0));
-
-			}
 		}
     }
 }

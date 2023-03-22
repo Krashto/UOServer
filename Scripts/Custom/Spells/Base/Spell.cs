@@ -393,28 +393,6 @@ namespace Server.Spells
             return TimeSpan.FromSeconds(valeur);
         }
 
-        public virtual TimeSpan GetDurationForSpellvortex(double scale)
-        {
-            return GetDurationForSpell(5, scale);
-        }
-
-        public virtual TimeSpan GetDurationForSpellvortex(double min, double scale)
-        {
-            double valeur = min + (double)Caster.Skills[CastSkill].Value * scale;
-            double valeurbonus = 1;
-
-            valeurbonus += (Caster.Skills[DamageSkill].Value - 50) / 150;
-
-            valeurbonus += Caster.Int / 2000;
-
-            valeur *= valeurbonus;
-
-            if (valeur < 0.5)
-                return TimeSpan.FromSeconds(0.5);
-
-            return TimeSpan.FromSeconds(valeur);
-        }
-
 		public virtual void DoFizzle()
 		{
 			m_Caster.LocalOverheadMessage( MessageType.Regular, 0x3B2, 502632 ); // The spell fizzles.
@@ -488,7 +466,7 @@ namespace Server.Spells
         {
             CustomPlayerMobile caster = m_Caster as CustomPlayerMobile;
 
-			if (caster != null && (caster.Squelched))
+			if (caster != null && caster.Squelched)
 			{
 				caster.SendMessage("Vous ne pouvez incanter si vous êtes muet.");
 				return false;
@@ -717,7 +695,7 @@ namespace Server.Spells
 
 			scalar -= DecrescendoManiaqueSpell.GetValue(Caster) / 100;
 
-			scalar -= AuraPreservationManiaqueSpell.GetValue(Caster) / 100;
+			scalar -= AuraPreservationManaiqueSpell.GetValue(Caster) / 100;
 
 			scalar -= MentorSpell.GetValue(Caster) / 100;
 
@@ -824,13 +802,13 @@ namespace Server.Spells
 			{
                 m_Caster.Mana -= mana;
 
+				MentorSpell.Deactivate(m_Caster);
+
 				if ( m_Scroll is SpellScroll )
 					m_Scroll.Consume();
 
 				if ( CheckHands() )
 					m_Caster.ClearHands();
-
-				MentorSpell.Desactivate(m_Caster);
 
 				return true;
 			}

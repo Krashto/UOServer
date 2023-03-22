@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using Server;
 using Server.Targeting;
 using Server.Mobiles;
 using Server.Gumps;
@@ -11,8 +8,7 @@ namespace Server.Commands
 	{
 		public static void Initialize()
 		{
-			CommandSystem.Register( "Familier", AccessLevel.Player, new CommandEventHandler( Familier ) );
-			
+			CommandSystem.Register( "Familier", AccessLevel.Owner, new CommandEventHandler( Familier ) );
 		}
 
 		[Usage( "Familier" )]
@@ -21,12 +17,9 @@ namespace Server.Commands
 		{
             arg.Mobile.Target = new FamiTarget();           
         }
-
-		
 	}
     public class FamiTarget : Target
     {
-        
         public FamiTarget () : base(-1, true, TargetFlags.None)
         {
            
@@ -34,32 +27,17 @@ namespace Server.Commands
 
         protected override void OnTarget(Mobile from, object o)
         {
-            
-
-
             if (o is BaseCreature)
             {
-
                 BaseCreature m = (BaseCreature)o;
 
                 if (from == m.ControlMaster || from.AccessLevel >= AccessLevel.GameMaster)
-                {
-
-
-
                     ((PlayerMobile)from).SendGump(new FamilierGump(from, m));
-                }
                 else
-                {
                     from.SendMessage("Vous devez avoir le contrôle de la créature ciblée.");
-                }             
             }
             else
-            {
                 from.SendMessage("Vous devez cibler une créature.");
-            }
-             
         }
     }
-   
 }

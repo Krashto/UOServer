@@ -941,6 +941,8 @@ namespace Server.Spells
 				Mobile temp = caster;
 				caster = target;
 				target = temp;
+
+				BouclierMagiqueSpell.Desactive(target);
 			}
 		}
 

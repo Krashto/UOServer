@@ -133,21 +133,16 @@ namespace Server.Items
                     pm.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
                     pm.PlaySound(0x28E);
 
-                    int paEnAttente = Aptitudes.GetRemainingPA(pm) - Aptitudes.GetDisponiblePA(pm);
+					pm.Aptitudes.Reset();
 
-                    if (paEnAttente > 5)
-                        paEnAttente = 5;
-
-                    pm.PADispo += paEnAttente;
-
-                    int puEnAttente = FicheAttributsGump.GetRemainingPU(pm) - FicheAttributsGump.GetDisponiblePU(pm);
+                    int puEnAttente = FicheAttributsGump.GetRemainingPU(pm, pm.Experience.Niveau) - FicheAttributsGump.GetDisponiblePU(pm);
 
                     if (puEnAttente > 10)
                         puEnAttente = 10;
 
                     pm.PUDispo += puEnAttente;
 
-					Classes.SetBaseAndCapSkills(pm);
+					Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
 				}
 			}
         }

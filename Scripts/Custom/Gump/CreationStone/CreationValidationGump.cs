@@ -34,7 +34,7 @@ namespace Server.Gumps
 
 			if (m_Creation.Reroll != null)
 			{
-				info = info + "\n\nTransfert: " + m_Creation.Reroll.Name + "\nExpériences: " + Math.Round(creationPerso.Reroll.ExperienceNormal  + creationPerso.Reroll.ExperienceRP * 0.5 );
+				info = info + "\n\nTransfert: " + m_Creation.Reroll.Name + "\nExpériences: " + creationPerso.Reroll.Experience;
 			}
 
 			AddSection(x - 10, y, 303, 508, "Information", info);
@@ -52,7 +52,7 @@ namespace Server.Gumps
             if (info.ButtonID == 1)
             {
                 m_Creation.Valide();
-				Classes.SetBaseAndCapSkills(pm);
+				Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
 			}
             else if (info.ButtonID == 1000 || info.ButtonID == 0)
             {

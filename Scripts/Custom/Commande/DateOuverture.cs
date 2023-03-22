@@ -1,6 +1,5 @@
 using Server.Commands;
 using Server.Gumps;
-using Server.Mobiles;
 
 namespace Server.Scripts.Commands
 {
@@ -8,7 +7,7 @@ namespace Server.Scripts.Commands
     {
         public static void Initialize()
         {
-            CommandSystem.Register("dateouverture", AccessLevel.Administrator, new CommandEventHandler(DateOuverture_OnCommand));
+            CommandSystem.Register("DateOuverture", AccessLevel.Administrator, new CommandEventHandler(DateOuverture_OnCommand));
         }
 
         [Usage("DateOuverture")]
@@ -16,16 +15,7 @@ namespace Server.Scripts.Commands
         public static void DateOuverture_OnCommand(CommandEventArgs e)
         {
             Mobile from = e.Mobile;
-
-            if (from is CustomPlayerMobile)
-            {
-
-
-				from.SendGump(new DateOuvertureGump((CustomPlayerMobile)from));
-
-			//	from.SendMessage(CustomPersistence.Ouverture.ToString());
-					
-            }
+			from.SendGump(new DateOuvertureGump());
         }
     }
 }

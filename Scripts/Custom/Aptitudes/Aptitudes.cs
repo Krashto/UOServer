@@ -167,11 +167,13 @@ namespace Server.Custom.Aptitudes
 				new AptitudesEntry( Aptitude.Polymorphie,   "Polymorphie",      10, SkillName.Anatomy),
 				new AptitudesEntry( Aptitude.Totemique,     "Totémique",        10, SkillName.AnimalTaming),
 				new AptitudesEntry( Aptitude.Musique,       "Musique",          10, SkillName.Musicianship),
-				new AptitudesEntry( Aptitude.Hydromancie,   "Hydromancie",      10, SkillName.Healing),
+				new AptitudesEntry( Aptitude.Hydromancie,   "Hydromancie",      10, SkillName.Meditation),
 				new AptitudesEntry( Aptitude.Pyromancie,    "Pyromancie",       10, SkillName.Magery),
 				new AptitudesEntry( Aptitude.Geomancie,     "Géomancie",        10, SkillName.MagicResist),
 				new AptitudesEntry( Aptitude.Aeromancie,    "Aéromancie",       10, SkillName.SpiritSpeak),
 				new AptitudesEntry( Aptitude.Necromancie,   "Nécromancie",      10, SkillName.Necromancy),
+				new AptitudesEntry( Aptitude.Defenseur,     "Défenseur",		10, SkillName.Parry),
+				new AptitudesEntry( Aptitude.Guerison,      "Guérison",			10, SkillName.Healing),
 			};
         #endregion
 
@@ -194,21 +196,21 @@ namespace Server.Custom.Aptitudes
             return value;
         }
 
-        public static int GetDisponiblePA(CustomPlayerMobile from)
-        {
-            return from.PADispo;
-        }
+		public static int GetMaxPA(CustomPlayerMobile from, int level)
+		{
+			return 30 + level;
+		}
 
-        public static int GetRemainingPA(CustomPlayerMobile from)
+		public static int GetRemainingPA(CustomPlayerMobile from, int level)
         {
-            int pa = 30 + from.Niveau;
+            int pa = GetMaxPA(from, level);
             int added = 0;
 
 			for (int i = 0; i < m_AptitudeEntries.Length; i++)
 			{
 				AptitudesEntry entry = (AptitudesEntry)m_AptitudeEntries[i];
 				Aptitude aptitude = entry.Aptitude;
-				added = GetValue(from, aptitude) * 10;
+				added += GetValue(from, aptitude) * 10;
 			}
 
 			return pa - added;
@@ -216,7 +218,7 @@ namespace Server.Custom.Aptitudes
 
         public static int GetRequiredPA(CustomPlayerMobile from, Aptitude aptitude)
         {
-            return GetValue(from, aptitude) * 10;
+            return 10;
         }
 
         public static int GetBaseValue(CustomPlayerMobile from, Aptitude aptitude)
@@ -259,7 +261,7 @@ namespace Server.Custom.Aptitudes
 		public static bool CanRaise(CustomPlayerMobile from, Aptitude aptitude)
         {
             int requiredPA = GetRequiredPA(from, aptitude);
-            int dispoPA = GetDisponiblePA(from);
+            int dispoPA = GetRemainingPA(from, from.Experience.Niveau);
 
             if (dispoPA >= requiredPA)
             {
@@ -393,9 +395,7 @@ namespace Server.Custom.Aptitudes
                 m_Owner.OnAptitudesChange((Aptitude)i, Owner.GetTotalAptitudeValue((Aptitude)i) + 1, Owner.GetTotalAptitudeValue((Aptitude)i));
             }
 
-            Owner.PADispo = 30 + Owner.Niveau;
-
-			Classes.Classes.SetBaseAndCapSkills(Owner);
+			Classes.Classes.SetBaseAndCapSkills(Owner, Owner.Experience.Niveau);
 		}
     }
 }

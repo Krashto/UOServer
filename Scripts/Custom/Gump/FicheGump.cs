@@ -1,81 +1,19 @@
 ﻿using System;
-using System.Collections;
-using Server;
 using Server.Network;
 using Server.Mobiles;
-using Server.Items;
-using Server.Misc;
 using System.Collections.Generic;
-using Server.Custom;
-
-
+using Server.Custom.Aptitudes;
+using Server.Custom.Classes;
+using Server.Items;
 
 namespace Server.Gumps
 {
     public class FicheGump : BaseProjectMGump
 	{
-    /*    private void CreateAptitudes(CustomPlayerMobile from)
-        {
-            Hashtable aptitudes = FicheAptitudesGump.GetPlayerAptitudes(from);
-            int index = 0;
-            int count = 0;
-
-            try
-            {
-                IDictionaryEnumerator en = aptitudes.GetEnumerator();
-
-                while (en.MoveNext() && count < 14)
-                {
-                    if (en.Key is NAptitude)
-                    {
-                        AddLabel(557, 78 + (index * 18), 2101, en.Value.ToString());
-                        AddLabel(675, 78 + (index * 18), 2101, String.Format(": {0}", from.GetAptitudeValue((NAptitude)en.Key)));
-
-                        ++index;
-                        count++;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
-
-        private void CreateConnaissances(CustomPlayerMobile from)
-        {
-            Hashtable conn = FicheConnaissancesGump.GetPlayerConnaissancesList(from);
-            int index = 0;
-            int count = 0;
-
-            try
-            {
-                IDictionaryEnumerator en = conn.GetEnumerator();
-
-                while (en.MoveNext() && count < 6)
-                {
-                    if (en.Key is NConnaissances)
-                    {
-                        AddLabel(362, 78 + (index * 18), 2101, en.Value.ToString());
-                        AddLabel(474, 78 + (index * 18), 2101, String.Format(": {0}", from.GetConnaissancesValue((NConnaissances)en.Key)));
-
-                        ++index;
-                        count++;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-            }
-        }
-	*/
-
         private CustomPlayerMobile m_From;
         private CustomPlayerMobile m_GM;
 
-        public FicheGump(CustomPlayerMobile from, CustomPlayerMobile gm)
-            : base("Fiche de personnage", 560, 622, false)
+        public FicheGump(CustomPlayerMobile from, CustomPlayerMobile gm) : base("Fiche de personnage", 560, 622, false)
         {
             m_From = from;
             m_GM = gm;
@@ -83,7 +21,6 @@ namespace Server.Gumps
 			int x = XBase;
 			int y = YBase;
 
-			//    m_From.Validate(ValidateType.All);
 			m_From.InvalidateProperties();
 
             Closable = true;
@@ -91,59 +28,47 @@ namespace Server.Gumps
             Dragable = true;
             Resizable = false;
 
-
 			AddSection(x - 10, y, 250, 180, "Informations");
 
-			AddHtmlTexte(x +10, y + 40, 100, "Nom:");
+			AddHtmlTexte(x +10, y + 40, 100, "Nom");
 			AddHtmlTexte(x + 125, y + 40, 150, from.GetBaseName());
 
-			AddHtmlTexte(x + 10, y + 60, 100, "Race:");
+			AddHtmlTexte(x + 10, y + 60, 100, "Race");
 			AddHtmlTexte(x + 125, y + 60, 150, from.Race.Name);
 
-			AddHtmlTexte(x + 10, y + 80, 100, "Statut Social:");
-			AddHtmlTexte(x + 125, y + 80, 150, from.StatutSocialString());
+			AddHtmlTexte(x + 10, y + 80, 100, "Apparence:");
+			AddHtmlTexte(x + 125, y + 80, 150, from.Apparence());
 
-			AddHtmlTexte(x + 10, y + 100, 100, "Apparence:");
-			AddHtmlTexte(x + 125, y + 100, 150, from.Apparence());
+			AddHtmlTexte(x + 10, y + 100, 100, "Grandeur:");
+			AddHtmlTexte(x + 125, y + 100, 150, from.GrandeurString());
 
-			AddHtmlTexte(x + 10, y + 120, 100, "Grandeur:");
-			AddHtmlTexte(x + 125, y + 120, 150, from.GrandeurString());
-
-			AddHtmlTexte(x + 10, y + 140, 100, "Grosseur:");
-			AddHtmlTexte(x + 125, y + 140, 150, from.CorpulenceString());
+			AddHtmlTexte(x + 10, y + 120, 100, "Grosseur:");
+			AddHtmlTexte(x + 125, y + 120, 150, from.CorpulenceString());
 
 			//201
-
 			AddSection(x - 10, y+ 181, 250, 135, "Classes");
 
-			AddHtmlTexte(x + 10, y + 220, 150, "Classe:");
+			AddHtmlTexte(x + 10, y + 220, 150, "Classe");
 			AddHtmlTexte(x + 125, y + 220, 100,  m_From.Classe.ToString());
+			var classeInfo = Classes.GetInfos(m_From.Classe);
+			AddHtmlTexte(x + 10, y + 240, 150, "Branche");
+			AddHtmlTexte(x + 125, y + 240, 100, classeInfo.ClasseMode.ToString());
+			AddHtmlTexte(x + 10, y + 260, 150, "Niveau");
+			AddHtmlTexte(x + 125, y + 260, 100, classeInfo.Level.ToString());
 
 			// 402
+			AddSection(x - 10, y + 317, 250, 135, "Expérience");
 
-			AddSection(x - 10, y + 317, 250, 135, "Expériences");
-
-			AddHtmlTexte(x + 10, y + 355, 150, "FE Disponible:");
-
-			int day = (int)(DateTime.Now - CustomPersistence.Ouverture).TotalDays + 1;
-
-			string couleur = "#FFFFFF";
-
-			if (day * 5 <= m_From.FENormalTotal)
-				couleur = "#336699";
-
-			AddHtmlTexte(x + 125, y + 355, 100, m_From.FE.ToString());
-
-			AddHtmlTexte(x + 10, y + 375, 150, "FE Attentes:");
-			AddHtmlTexte(x + 125, y + 375, 100, m_From.FEAttente.ToString());
-			AddHtmlTexte(x + 10, y + 395, 150, "FE Total:");
-			AddHtmlTexteColored(x + 125, y + 395, 100, m_From.FETotal.ToString(), couleur);
-			AddHtmlTexte(x + 10, y + 415, 150, "Heures jouées:");
+			AddHtmlTexte(x + 10, y + 355, 150, "Actuelle");
+			AddHtmlTexte(x + 125, y + 355, 100, m_From.Experience.Exp.ToString());
+			AddHtmlTexte(x + 10, y + 375, 150, "Restante");
+			AddHtmlTexte(x + 125, y + 375, 100, m_From.Experience.ExpToGainBank.ToString());
+			AddHtmlTexte(x + 10, y + 415, 150, "Heures jouées");
 			AddHtmlTexte(x + 125, y + 415, 100, Math.Round(m_From.Account.TotalGameTime.TotalHours, 2).ToString());
 
 			AddSection(x - 10, y + 453, 250, 210, "Statistique");
 
-			AddHtmlTexte(x + 10, y + 490, 150, "Force :");
+			AddHtmlTexte(x + 10, y + 490, 150, "Force");
 
 			if (m_From.CanDecreaseStat(StatType.Str))
 				AddButton(x + 100, y + 492, 5603, 5607, 300, GumpButtonType.Reply, 0);
@@ -153,7 +78,7 @@ namespace Server.Gumps
 
 			AddLabel(x + 130, y + 490, 150, m_From.Str.ToString());
 
-			AddHtmlTexte(x + 10, y + 510, 150, "Dextérité :");
+			AddHtmlTexte(x + 10, y + 510, 150, "Dextérité");
 
 			if (m_From.CanDecreaseStat(StatType.Dex))
 				AddButton(x + 100, y + 512, 5603, 5607, 302, GumpButtonType.Reply, 0);
@@ -163,7 +88,7 @@ namespace Server.Gumps
 			
 			AddLabel(x + 130, y + 510, 150, m_From.Dex.ToString());
 
-			AddHtmlTexte(x + 10, y + 530, 150, "Intelligence :");
+			AddHtmlTexte(x + 10, y + 530, 150, "Intelligence");
 		
 			if (m_From.CanDecreaseStat(StatType.Int))
 				AddButton(x + 100, y + 532, 5603, 5607, 304, GumpButtonType.Reply, 0);
@@ -173,34 +98,55 @@ namespace Server.Gumps
 
 			AddLabel(x + 130, y + 530, 150, m_From.Int.ToString());
 
-			AddHtmlTexte(x + 10, y + 550, 150, "à placer :");
-			AddLabel(x + 130, y + 550, 150, (225 - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.StatAttente).ToString());
+			AddHtmlTexte(x + 10, y + 550, 150, "Constitution");
 
-			AddHtmlTexte(x + 10, y + 570, 150, "En attente :");
-			AddLabel(x + 130, y + 570, 150, m_From.StatAttente.ToString());
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Constitution))
+				AddButton(x + 100, y + 552, 5603, 5607, 306, GumpButtonType.Reply, 0);
 
-			AddHtmlTexte(x + 10, y + 610, 150, "Faim :");
-			AddLabel(x + 130, y + 610, 150, m_From.Hunger * 5 + " / 100".ToString());
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Constitution))
+				AddButton(x + 160, y + 552, 5601, 5605, 307, GumpButtonType.Reply, 0);
 
-			AddHtmlTexte(x + 10, y + 630, 150, "Soif :");
-			AddLabel(x + 130, y + 630, 150, m_From.Thirst * 5 + " / 100".ToString());
+			AddLabel(x + 130, y + 550, 150, m_From.Attributs.Constitution.ToString());
+
+			AddHtmlTexte(x + 10, y + 570, 150, "Sagesse");
+
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Sagesse))
+				AddButton(x + 100, y + 572, 5603, 5607, 308, GumpButtonType.Reply, 0);
+
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Sagesse))
+				AddButton(x + 160, y + 572, 5601, 5605, 309, GumpButtonType.Reply, 0);
+
+			AddLabel(x + 130, y + 570, 150, m_From.Attributs.Sagesse.ToString());
+
+			AddHtmlTexte(x + 10, y + 590, 150, "Endurance");
+
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Endurance))
+				AddButton(x + 100, y + 592, 5603, 5607, 310, GumpButtonType.Reply, 0);
+
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Endurance))
+				AddButton(x + 160, y + 592, 5601, 5605, 311, GumpButtonType.Reply, 0);
+
+			AddLabel(x + 130, y + 590, 150, m_From.Attributs.Endurance.ToString());
+
+			AddHtmlTexte(x + 10, y + 610, 150, "À placer");
+			AddLabel(x + 130, y + 610, 150, (525 - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.Attributs.Constitution - m_From.Attributs.Sagesse - m_From.Attributs.Endurance).ToString());
 
 			AddSection(x + 241, y, 359, 452, "Talents");
 
 			int line = 0;
+			AddHtmlTexte(x + 261, y + 40 + line++ * 20, 300, "Disponible: " + Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau) + " / Max: " + Aptitudes.GetMaxPA(m_From, m_From.Experience.Niveau));
 
-			foreach (SkillName item in m_From.SkillDisponible())
+			foreach (Aptitude apt in Enum.GetValues(typeof(Aptitude)))
 			{
-				AddHtmlTexte(x + 261, y + 40 + line * 25, 150, item.ToString());
-				//	AddHtmlTexte(x + 525, y + 40 + line * 25, 150, m_From.Skills[item].Base.ToString("##0"));
+				AddHtmlTexte(x + 261, y + 40 + line * 20, 150, apt.ToString());
 
-				AddLabel(x + 525, y + 40 + line * 25, 150, m_From.Skills[item].Base.ToString());
+				AddLabel(x + 525, y + 40 + line * 20, 150, m_From.Aptitudes[apt].ToString());
 
-				if (m_From.CanDecreaseSkill(item))
-					AddButton(x + 500, y + 40 + line * 25, 5603, 5607, 100 + (int)item, GumpButtonType.Reply, 0);
+				if (Aptitudes.CanLower(m_From, apt))
+					AddButton(x + 500, y + 40 + line * 20, 5603, 5607, 100 + (int)apt, GumpButtonType.Reply, 0);
 
-				if (m_From.CanIncreaseSkill(item))
-					AddButton(x + 550, y + 40 + line * 25, 5601, 5605, 200 + (int)item, GumpButtonType.Reply, 0);
+				if (Aptitudes.CanRaise(m_From, apt))
+					AddButton(x + 550, y + 40 + line * 20, 5601, 5605, 200 + (int)apt, GumpButtonType.Reply, 0);
 
 				line++;
 			}
@@ -221,13 +167,23 @@ namespace Server.Gumps
         {
 			if (info.ButtonID >= 100 && info.ButtonID < 200)
 			{
-				m_From.DecreaseSkills((SkillName)info.ButtonID - 100);
+				var apt = (Aptitude)(info.ButtonID - 100);
+				if (Aptitudes.CanLower(m_From, apt))
+				{
+					m_From.Aptitudes[apt]--;
+					Classes.SetBaseAndCapSkills(m_From, m_From.Experience.Niveau);
+				}
 
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID >= 200 && info.ButtonID < 300)
 			{
-				m_From.IncreaseSkills((SkillName)info.ButtonID - 200);
+				var apt = (Aptitude)(info.ButtonID - 200);
+				if (Aptitudes.CanRaise(m_From, apt))
+				{
+					m_From.Aptitudes[apt]++;
+					Classes.SetBaseAndCapSkills(m_From, m_From.Experience.Niveau);
+				}
 
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -259,6 +215,36 @@ namespace Server.Gumps
 			else if (info.ButtonID == 305)
 			{
 				m_From.IncreaseStat(StatType.Int);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 306)
+			{
+				m_From.Attributs.DecreaseStat(Attribut.Constitution);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 307)
+			{
+				m_From.Attributs.IncreaseStat(Attribut.Constitution);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 308)
+			{
+				m_From.Attributs.DecreaseStat(Attribut.Sagesse);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 309)
+			{
+				m_From.Attributs.IncreaseStat(Attribut.Sagesse);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 310)
+			{
+				m_From.Attributs.DecreaseStat(Attribut.Endurance);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 311)
+			{
+				m_From.Attributs.IncreaseStat(Attribut.Endurance);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 		}

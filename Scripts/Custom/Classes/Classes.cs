@@ -192,13 +192,13 @@ namespace Server.Custom.Classes
             return info.ClasseMode;
         }
 
-		public static void SetBaseAndCapSkills(CustomPlayerMobile pm)
+		public static void SetBaseAndCapSkills(CustomPlayerMobile pm, int level)
 		{
 			if (pm is null)
 				return;
 
 			foreach (var skill in pm.Skills)
-				skill.Cap = 50 + pm.Niveau;
+				skill.Cap = 50 + level;
 
 			pm.SkillMods.Clear();
 

@@ -1,5 +1,3 @@
-using System;
-using Server;
 using Server.Mobiles;
 
 namespace Server
@@ -47,24 +45,17 @@ namespace Server
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int Intuition
+        public int Sagesse
         {
-            get { return this[Attribut.Intuition]; }
-            set { this[Attribut.Intuition] = value; }
+            get { return this[Attribut.Sagesse]; }
+            set { this[Attribut.Sagesse] = value; }
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int Pouvoir
+        public int Endurance
         {
-            get { return this[Attribut.Pouvoir]; }
-            set { this[Attribut.Pouvoir] = value; }
-        }
-
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Resistance
-        {
-            get { return this[Attribut.Resistance]; }
-            set { this[Attribut.Resistance] = value; }
+            get { return this[Attribut.Endurance]; }
+            set { this[Attribut.Endurance] = value; }
         }
         #endregion
     }
@@ -74,7 +65,7 @@ namespace Server
     {
         private CustomPlayerMobile m_Owner;
         public int[] m_Values;
-        private int[] m_Base = new int[4];
+        private int[] m_Base = new int[3];
 
         public CustomPlayerMobile Owner { get { return m_Owner; } }
 
@@ -141,42 +132,96 @@ namespace Server
             return index;
         }
 
-        public virtual void Reset()
+
+		public bool CanDecreaseStat(Attribut attr)
+		{
+			switch (attr)
+			{
+				case Attribut.Constitution: return Owner.Attributs[Attribut.Constitution] > 25;
+				case Attribut.Sagesse: return Owner.Attributs[Attribut.Sagesse] > 25;
+				case Attribut.Endurance: return Owner.Attributs[Attribut.Endurance] > 25;
+				default: return false;
+			}
+		}
+
+
+		public bool CanIncreaseStat(Attribut attr)
+		{
+			if (Owner.RawDex + Owner.RawStr + Owner.RawInt + Owner.Attributs[Attribut.Constitution] + Owner.Attributs[Attribut.Sagesse] + Owner.Attributs[Attribut.Endurance] >= 525)
+				return false;
+
+			switch (attr)
+			{
+				case Attribut.Constitution: return Owner.Attributs[Attribut.Constitution] < 125;
+				case Attribut.Sagesse: return Owner.Attributs[Attribut.Sagesse] < 125;
+				case Attribut.Endurance: return Owner.Attributs[Attribut.Endurance] < 125;
+				default: return false;
+			}
+		}
+
+		public void IncreaseStat(Attribut attr)
+		{
+			if (CanIncreaseStat(attr))
+			{
+				switch (attr)
+				{
+					case Attribut.Constitution: Owner.Attributs[Attribut.Constitution]++; break;
+					case Attribut.Sagesse: Owner.Attributs[Attribut.Sagesse]++; break;
+					case Attribut.Endurance: Owner.Attributs[Attribut.Endurance]++; break;
+				}
+			}
+		}
+
+		public void DecreaseStat(Attribut attr)
+		{
+			if (CanDecreaseStat(attr))
+			{
+				switch (attr)
+				{
+					case Attribut.Constitution: Owner.Attributs[Attribut.Constitution]--; break;
+					case Attribut.Sagesse: Owner.Attributs[Attribut.Sagesse]--; break;
+					case Attribut.Endurance: Owner.Attributs[Attribut.Endurance]--; break;
+				}
+			}
+		}
+
+		public virtual void Reset()
         {
             for (int i = 0; i < m_Values.Length; i++)
             {
                 m_Values[i] = 0;
             }
 
-            Owner.PUDispo = Owner.Niveau * 3;
+            Owner.PUDispo = Owner.Experience.Niveau * 3;
         }
     }
 }
 
-
 /*
+Force 
+- Permet de frapper plus fort (Arme de corps à corps et distance)
+- Supporter plus de poid (Stone)
 
-    1- Constitution :
+Dextérité 
+- Permet de frapper plus vite
+- Bonus Esquive
+- Bonus Parry
 
-      x Bonus sur le Maximum de Point de Vie.
-      x Offre une plus grande regénération de Point de Vie.
-      x Réduction de l'essouflement à la course.
+Intelligence
+- Bonus sur les dégats magique
+- Bonus sur la durée des buffs magique
+- Bonus sur l'efficacité des buff magique
 
-    2- Intuition :
+Sagesse
+- Augmente la Mana
+- Meilleur Regen de Mana
 
-      x Réduction de la perte de matériaux lorsque la tentative de fabrication d'un objet a échoué.
-      x La durabilité des outils diminue moins rapidement.
-      x Réduction du temps entre chaque création d'objet.
+Constitution
+- Augmente HP
+- Meilleur regen HP
 
-    3- Pouvoir :
+Endurance
+- Augmente la Stamina
+- Meilleur regen de Stamina
 
-      x Réduit vos chances de vous faire assassiner.
-      x Bonus sur le Maximum de Point de Mana.
-      x Offre une plus grande regénération de Mana.
-
-    4- Résistances :
-
-      x Offre un bonus de résistance à la Magie.
-      x Offre un bonus de résistance aux Coups Critiques.
-      x Offre un bonus de résistance au Poison. 
 */

@@ -162,7 +162,7 @@ namespace Server.Spells
 			Register(634, typeof(AuraFortifianteSpell));
 			Register(635, typeof(MurDePlanteSpell));
 			Register(636, typeof(ExplosionDeRocheSpell));
-			Register(637, typeof(AuraPreservationManiaqueSpell));
+			Register(637, typeof(AuraPreservationManaiqueSpell));
 			Register(638, typeof(RacinesSpell));
 			Register(639, typeof(FleauTerrestreSpell));
 

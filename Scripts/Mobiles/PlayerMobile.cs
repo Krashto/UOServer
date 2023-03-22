@@ -1094,17 +1094,8 @@ namespace Server.Mobiles
 				return MinPlayerResistance;
 			}
 
-			int magicResist = (int)(Skills[SkillName.MagicResist].Value * 10);
-			int min = int.MinValue;
-
-			if (magicResist >= 1000)
-			{
-				min = 40 + ((magicResist - 1000) / 50);
-			}
-			else if (magicResist >= 400)
-			{
-				min = (magicResist - 400) / 15;
-			}
+			int magicResist = (int)(Skills[SkillName.MagicResist].Value);
+			int min = (int)(magicResist * 0.75);
 
 			return Math.Max(MinPlayerResistance, Math.Min(MaxPlayerResistance, min));
 		}

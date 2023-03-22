@@ -14,31 +14,18 @@ namespace Server
     [Parsable]
     public class Reroll
     {
-		private int m_Id;
-        private string m_Name;
-        private double m_ExperienceNormal;
-		private double m_ExperienceRP;
-
-		public int Id { get => m_Id; set => m_Id = value; }
-
-		public string Name { get => m_Name; set => m_Name = value; }
-        public double ExperienceNormal { get => m_ExperienceNormal; set => m_ExperienceNormal = value; }
-		public double ExperienceRP { get => m_ExperienceRP; set => m_ExperienceRP = value; }
+		public int Id { get; set; }
+		public string Name { get; set; }
+		public double Experience { get; set; }
 
 		public Reroll()
         {
-
         }
 
-        public Reroll(CustomPlayerMobile sp)
+        public Reroll(CustomPlayerMobile pm)
         {
-
-			
-            Name = sp.Name;
-			ExperienceNormal = sp.FENormalTotal;
-			ExperienceRP = sp.FERPTotal;
+            Name = pm.Name;
+			Experience = pm.Experience.Exp;
         }
     }
-
-
 }

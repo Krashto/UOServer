@@ -44,7 +44,7 @@ namespace Server.Gumps
                     }
 
 					AddButtonHtlml(x + 5, y + 35 + SpaceRanger * Range, "Nom: " + rero.Name, 200, 25, Range + 100, hueText);
-					AddHtmlTexteColored(x + 23, y + 35 + Range * SpaceRanger + 20, 200,  "Expériences: " + Math.Round(rero.ExperienceNormal * 1 + rero.ExperienceRP / 2), hueText);
+					AddHtmlTexteColored(x + 23, y + 35 + Range * SpaceRanger + 20, 200,  "Expériences: " + rero.Experience, hueText);
 				}
 
                 Range += 1;
@@ -53,7 +53,7 @@ namespace Server.Gumps
             string TransfertSelect = "Aucun transfert";
 
             if (creationPerso.Reroll != null)
-                TransfertSelect = creationPerso.Reroll.Name + " \n\nExpériences: " + Math.Round(creationPerso.Reroll.ExperienceNormal + creationPerso.Reroll.ExperienceRP / 2) ;
+                TransfertSelect = creationPerso.Reroll.Name + " \n\nExpériences: " + creationPerso.Reroll.Experience;
 
             AddSection(x - 10, y + 471, 610, 135, "Informations", TransfertSelect);
         }

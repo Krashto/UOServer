@@ -1,9 +1,6 @@
-using System;
-using Server;
 using Server.Commands;
 using Server.Gumps;
 using Server.Mobiles;
-using Server.Targeting;
 
 namespace Server.Scripts.Commands
 {
@@ -12,7 +9,6 @@ namespace Server.Scripts.Commands
         public static void Initialize()
         {
             CommandSystem.Register("Fiche", AccessLevel.Player, new CommandEventHandler(Fiche_OnCommand));
-			CommandSystem.Register("Fe", AccessLevel.Player, new CommandEventHandler(Fe_OnCommand));
 		}
 
         [Usage("Fiche")]
@@ -24,22 +20,9 @@ namespace Server.Scripts.Commands
             if (from is CustomPlayerMobile)
             {
                 from.CloseGump(typeof(FicheGump));
-
-
                 from.SendGump(new FicheGump((CustomPlayerMobile)from, null));
             }
 		}
-
-
-		[Usage("Fe")]
-			[Description("Permet de voir le nombre de Fioles obtenues")]
-			public static void Fe_OnCommand(CommandEventArgs e)
-			{
-			CustomPlayerMobile from = (CustomPlayerMobile)e.Mobile;
-			
-				from.SendMessage("Vous avez " + from.FETotal + " Fioles d'Expériences.");
-
-			}
     }
 }
 

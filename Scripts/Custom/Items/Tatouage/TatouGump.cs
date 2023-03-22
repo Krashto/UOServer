@@ -491,17 +491,12 @@ namespace Server.Gumps
 		
         public override void OnResponse(NetState sender, RelayInfo info)
         {
-			bool Tatouage = (int)m_From.FETotal > 200;
+			bool Tatouage = true;
 			int buttonID = info.ButtonID;
 
 			int draked = 0;
 			int enough = 0;
-			int outop=0;
-						
-		//	if (Tatouage < tatou[buttonID,3])
-		//	{
-		//		enough = 1;
-		//	}
+			int outop = 0;
 
 			if (m_Where == 2 && enough == 0 && tatou[buttonID,4] == 0 && buttonID > 0  && draked == 0)
 			{
@@ -542,7 +537,6 @@ namespace Server.Gumps
 					item22 = m_M.FindItemOnLayer(Layer.Bracelet);
 					hue = item22.Hue;
 					item22.Delete();
-					
 				}
 				catch
 				{
@@ -558,7 +552,6 @@ namespace Server.Gumps
 					
 				}
 				
-		//		m_From.PlaySound(583);
 				m_Item.UsesRemaining = m_Item.UsesRemaining - 1;
 				if (m_Item.UsesRemaining < 1)
 				{
@@ -593,9 +586,6 @@ namespace Server.Gumps
 					SendTGump(m_From, m_M, TGumpPage.Page2,m_Where,m_Transid,m_Item);
 				}
 			}
-
         }
-		
-		
 	}	
 }

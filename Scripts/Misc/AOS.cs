@@ -354,13 +354,56 @@ namespace Server
                 return 0;
             }
 
+			if (fire > 0 || cold > 0 || nrgy > 0 || pois > 0)
+			{
+				if (m.MagicDamageAbsorb > 0)
+				{
+					int max = (int)(totalDamage * 0.60);
+
+					if (max >= m.MagicDamageAbsorb)
+					{
+						totalDamage -= m.MagicDamageAbsorb;
+						m.MagicDamageAbsorb = 0;
+					}
+					else
+					{
+						m.MagicDamageAbsorb -= max;
+						totalDamage -= max;
+					}
+				}
+
+				if (m.MagicDamageAbsorb <= 0)
+					m.MagicDamageAbsorb = 0;
+			}
+			else if (phys > 0)
+			{
+				if (m.MeleeDamageAbsorb > 0)
+				{
+					int max = (int)(totalDamage * 0.60);
+
+					if (max >= m.MeleeDamageAbsorb)
+					{
+						totalDamage -= m.MeleeDamageAbsorb;
+						m.MeleeDamageAbsorb = 0;
+					}
+					else
+					{
+						m.MeleeDamageAbsorb -= max;
+						totalDamage -= max;
+					}
+				}
+
+				if (m.MeleeDamageAbsorb <= 0)
+					m.MeleeDamageAbsorb = 0;
+			}
+
 			if (LienDeVieSpell.IsActive(m))
 			{
 				var protector = LienDeVieSpell.GetProtector(m);
 				if (protector != null && protector.Alive)
 				{
 					totalDamage /= 2;
-					m.Damage(totalDamage, from, true, false);
+					protector.Damage(totalDamage, from, true, false);
 				}
 			}
 
