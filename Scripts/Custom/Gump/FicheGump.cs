@@ -134,7 +134,7 @@ namespace Server.Gumps
 			AddSection(x + 241, y, 359, 452, "Talents");
 
 			int line = 0;
-			AddHtmlTexte(x + 261, y + 40 + line++ * 20, 300, "Disponible: " + Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau) + " / Max: " + Aptitudes.GetMaxPA(m_From, m_From.Experience.Niveau));
+			AddHtmlTexte(x + 261, y + 40 + line++ * 20, 300, "Disponible: " + Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau) + " / Max: " + Aptitudes.GetMaxPA(m_From.Experience.Niveau));
 
 			foreach (Aptitude apt in Enum.GetValues(typeof(Aptitude)))
 			{
