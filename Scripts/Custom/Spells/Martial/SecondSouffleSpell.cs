@@ -65,15 +65,11 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				return;
 
 			var t = m_Timers[m] as Timer;
-			var mod = m_Table[m] as ResistanceMod;
 
-			if (t != null && mod != null)
+			if (t != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m_Table.Remove(m);
-
-				m.RemoveResistanceMod(mod);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
