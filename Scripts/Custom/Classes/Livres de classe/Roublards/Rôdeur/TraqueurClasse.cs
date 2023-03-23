@@ -1,9 +1,10 @@
 using Server.Custom.Aptitudes;
+using Server.Custom.Capacites;
 using Server.Custom.Classes;
 
 namespace Server
 {
-    public class TraqueurClasse
+	public class TraqueurClasse
     {
         private static string m_Name = "Traqueur";
         private static Classe m_Classe = Classe.Traqueur;

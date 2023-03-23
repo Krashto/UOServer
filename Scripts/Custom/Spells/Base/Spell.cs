@@ -8,6 +8,7 @@ using Server.Spells.OldSpells;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
+using Server.Custom.Capacites;
 
 namespace Server.Spells
 {
@@ -654,7 +655,7 @@ namespace Server.Spells
 			{
 				CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
 
-				double chance = 100 - (pm.GetCapaciteValue(Custom.Classes.Capacite.Equitation) * 6);
+				double chance = 100 - (pm.GetCapaciteValue(Capacite.Equitation) * 6);
 
 				if (Utility.Random(0, 100) <= chance)
 					return false;

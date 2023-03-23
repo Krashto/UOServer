@@ -1,3 +1,4 @@
+using Server.Custom.Capacites;
 using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
@@ -7,7 +8,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Craft
 {
-    public class CraftGump : Gump
+	public class CraftGump : Gump
     {
         private readonly Mobile m_From;
         private readonly CraftSystem m_CraftSystem;
@@ -699,7 +700,7 @@ namespace Server.Engines.Craft
 							var resource = CraftResources.GetFromType(res.ItemType);
 							var level = CraftResources.GetLevel(resource);
 
-							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill) || (pm != null && pm.GetCapaciteValue(Custom.Classes.Capacite.Expertise) < level))
+							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill) || (pm != null && pm.GetCapaciteValue(Capacite.Expertise) < level))
                             {
                                 m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
                             }
@@ -716,8 +717,11 @@ namespace Server.Engines.Craft
                             int groupIndex = (context == null ? -1 : context.LastGroupIndex);
 
                             CraftSubRes res = system.CraftSubRes2.GetAt(index);
+							var pm = m_From as CustomPlayerMobile;
+							var resource = CraftResources.GetFromType(res.ItemType);
+							var level = CraftResources.GetLevel(resource);
 
-                            if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill)
+							if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill || (pm != null && pm.GetCapaciteValue(Capacite.Expertise) < level))
                             {
                                 m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
                             }

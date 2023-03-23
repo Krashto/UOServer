@@ -151,6 +151,9 @@ namespace Server.Misc
 			if (CommandementSpell.IsActive(from))
 				points += 10;
 
+			if (from is CustomPlayerMobile pm)
+				points += pm.Attributs.Constitution / 10;
+
 			CheckBonusSkill(from, from.Hits, from.HitsMax, SkillName.Cooking);
 
 			points += from.Skills[SkillName.Cooking].Value / 30;
@@ -175,6 +178,9 @@ namespace Server.Misc
 
 			if (FormeEnsangleeSpell.IsActive(from))
                 points += 15;
+
+			if (from is CustomPlayerMobile pm)
+				points += pm.Attributs.Endurance / 10;
 
 			if (points < -1)
                 points = -1;
@@ -202,6 +208,9 @@ namespace Server.Misc
 
 			if (FormeEnsangleeSpell.IsActive(from))
 				points += 3;
+
+			if (from is CustomPlayerMobile pm)
+				points += pm.Attributs.Sagesse / 10;
 
 			foreach (RegenBonusHandler handler in ManaBonusHandlers)
                 points += handler(from);

@@ -1,5 +1,6 @@
 using System.Collections;
 using Server.Custom.Aptitudes;
+using Server.Custom.Capacites;
 using Server.Mobiles;
 
 namespace Server.Custom.Classes

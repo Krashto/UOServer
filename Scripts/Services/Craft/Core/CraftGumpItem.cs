@@ -62,10 +62,7 @@ namespace Server.Engines.Craft
             AddHtmlLocalized(10, 217, 150, 22, 1044055, LabelColor, false, false); // <CENTER>MATERIALS</CENTER>
             AddHtmlLocalized(10, 302, 150, 22, 1044056, LabelColor, false, false); // <CENTER>OTHER</CENTER>
 
-     /*       if (craftSystem.GumpTitleNumber > 0)
-                AddHtmlLocalized(10, 12, 510, 20, craftSystem.GumpTitleNumber, LabelColor, false, false);
-            else*/
-                AddHtml(10, 12, 510, 20, "<h3><basefont color=#FFFFFF><center>" + craftSystem.GumpTitleString+ "</center><basefont></h3>", false, false);
+            AddHtml(10, 12, 510, 20, "<h3><basefont color=#FFFFFF><center>" + craftSystem.GumpTitleString+ "</center><basefont></h3>", false, false);
 
             bool needsRecipe = (craftItem.Recipe != null && from is PlayerMobile && !((PlayerMobile)from).HasRecipe(craftItem.Recipe));
 

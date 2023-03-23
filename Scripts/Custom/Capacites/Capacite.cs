@@ -1,4 +1,4 @@
-﻿namespace Server.Custom.Classes
+﻿namespace Server.Custom.Capacites
 {
 	public enum Capacite
 	{

@@ -11,7 +11,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Server.Spells.OldSpells;
-using Server.Custom.Classes;
 using Server.Custom.Weapons;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
@@ -21,6 +20,7 @@ using Server.Custom.Spells.NewSpells.Chasseur;
 using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.SkillHandlers;
 using Server.Custom.Spells.NewSpells.Martial;
+using Server.Custom.Capacites;
 
 #endregion
 
@@ -1315,10 +1315,10 @@ namespace Server.Items
 
 			double ticks;
 
-            int stamTicks = m.Stam / 30;
+            int dexTicks = m.Dex / 30;
 
             ticks = speed * 4;
-            ticks = Math.Floor((ticks - stamTicks) * (100.0 / (100 + bonus)));
+            ticks = Math.Floor((ticks - dexTicks) * (100.0 / (100 + bonus)));
 
             // Swing speed currently capped at one swing every 1.25 seconds (5 ticks).
             if (ticks < 5)
@@ -1458,15 +1458,7 @@ namespace Server.Items
                 // As per OSI, no negitive effect from the Racial stuffs, ie, 120 parry and '0' bushido with humans
 
                 if (chance < 0) // chance shouldn't go below 0
-                {
                     chance = defender.Player ? 0 : .1;
-                }
-
-                // Parry/Bushido over 100 grants a 5% bonus.
-                if (parry >= 100.0 || bushido >= 100.0)
-                {
-                    chance += 0.05;
-                }
 
 				if (defender is CustomPlayerMobile)
 				{
@@ -1474,11 +1466,8 @@ namespace Server.Items
 					chance += pm.GetCapaciteValue(Capacite.Bouclier) * 0.05;
 				}
 
-				// Low dexterity lowers the chance.
-				if (defender.Player && defender.Dex < 80)
-                {
-                    chance = chance * (20 + defender.Dex) / 100;
-                }
+				if (defender.Player)
+                    chance += defender.Dex / 25;
 
                 bool success = defender.CheckSkill(SkillName.Parry, chance);
 
@@ -1503,29 +1492,13 @@ namespace Server.Items
 
                 double aosChance = parry / 800.0;
 
-                // Parry or Bushido over 100 grant a 5% bonus.
-                if (parry >= 100.0)
-                {
-                    chance += 0.05;
-                    aosChance += 0.05;
-                }
-                else if (bushido >= 100.0)
-                {
-                    chance += 0.05;
-                }
+				if (defender.Player)
+					chance += defender.Dex / 25;
 
-                // Low dexterity lowers the chance.
-                if (defender.Dex < 80)
-                {
-                    chance = chance * (20 + defender.Dex) / 100;
-                }
-
-                bool success;
+				bool success;
 
                 if (chance > aosChance)
-                {
                     success = defender.CheckSkill(SkillName.Parry, chance);
-                }
                 else
                 {
                     success = (aosChance > Utility.RandomDouble());

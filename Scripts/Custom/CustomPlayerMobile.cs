@@ -16,6 +16,7 @@ using Server.Custom.Spells;
 using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.CustomScripts.Systems.Experience;
+using Server.Custom.Capacites;
 #endregion
 
 namespace Server.Mobiles
@@ -309,14 +310,7 @@ namespace Server.Mobiles
 
 		public DateTime NextFrapper { get; set; }
 
-		public CustomPlayerMobile()
-		{
-			Aptitudes = new Aptitudes(this);
-			Experience = new ExperienceSystem();
-			BaseAttributs = new BAttributs(this);
-			Attributs = new Attributs(this);
-		}
-
+		
 		public override void GetProperties(ObjectPropertyList list)
 		{
 			base.GetProperties(list);
@@ -638,8 +632,20 @@ namespace Server.Mobiles
 		}
 		#endregion
 
+		public CustomPlayerMobile()
+		{
+			Aptitudes = new Aptitudes(this);
+			Experience = new ExperienceSystem();
+			BaseAttributs = new BAttributs(this);
+			Attributs = new Attributs(this);
+		}
+
 		public CustomPlayerMobile(Serial s) : base(s)
 		{
+			Aptitudes = new Aptitudes(this);
+			Experience = new ExperienceSystem();
+			BaseAttributs = new BAttributs(this);
+			Attributs = new Attributs(this);
 		}
 
 		public virtual void Tip(Mobile m, string tip)
@@ -1304,13 +1310,13 @@ namespace Server.Mobiles
 
 		#region [Stats]Max
 		[CommandProperty(AccessLevel.GameMaster)]
-		public override int HitsMax => 50 + (Str / 2) + AosAttributes.GetValue(this, AosAttribute.BonusHits) + DevotionSpell.GetValue(this) + FormeElectrisanteSpell.GetValue(this);
+		public override int HitsMax => 30 + Attributs.Constitution + AosAttributes.GetValue(this, AosAttribute.BonusHits) + DevotionSpell.GetValue(this) + FormeElectrisanteSpell.GetValue(this);
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public override int StamMax => base.StamMax + AosAttributes.GetValue(this, AosAttribute.BonusStam);
+		public override int StamMax => 30 + Attributs.Endurance + AosAttributes.GetValue(this, AosAttribute.BonusStam);
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public override int ManaMax => base.ManaMax + AosAttributes.GetValue(this, AosAttribute.BonusMana) + UraliTranceTonic.GetManaBuff(this);
+		public override int ManaMax => 30 + Attributs.Sagesse + AosAttributes.GetValue(this, AosAttribute.BonusMana) + UraliTranceTonic.GetManaBuff(this);
 		#endregion
 
 		public static Hashtable m_SpellTransformation = new Hashtable();

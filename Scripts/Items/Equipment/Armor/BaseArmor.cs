@@ -6,12 +6,12 @@ using AMT = Server.Items.ArmorMaterialType;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Server.Custom.Classes;
 using Server.Mobiles;
+using Server.Custom.Capacites;
 
 namespace Server.Items
 {
-	public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality
+    public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality
     {
 		private string _EngravedText;
 

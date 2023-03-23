@@ -1,5 +1,6 @@
 using Server.Custom.Classes;
 using Server.Custom.Aptitudes;
+using Server.Custom.Capacites;
 
 namespace Server
 {

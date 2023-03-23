@@ -108,9 +108,6 @@ namespace Server
                 });
             }
 
-			if (from is BaseCreature)
-				damage = (int)(damage * 0.5);
-
 			Fix(ref phys);
             Fix(ref fire);
             Fix(ref cold);

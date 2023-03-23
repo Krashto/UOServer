@@ -273,7 +273,16 @@ namespace Server.Engines.Craft
         {
             CraftItem craftItem = new CraftItem(typeItem, group, name);
             craftItem.AddRes(typeRes, nameRes, amount, message);
-            craftItem.AddSkill(skillToMake, minSkill, maxSkill);
+
+			var offset = 0;
+			if (typeRes != null)
+			{
+				var resource = CraftResources.GetFromType(typeRes);
+				var level = CraftResources.GetLevel(resource);
+				offset = level * 10;
+			}
+
+			craftItem.AddSkill(skillToMake, minSkill + offset, maxSkill + offset);
 
             DoGroup(group, craftItem);
             return CraftItems.Add(craftItem);

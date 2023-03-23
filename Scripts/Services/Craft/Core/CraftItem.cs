@@ -1,5 +1,6 @@
 #region References
 using Server.Commands;
+using Server.Custom.Capacites;
 using Server.Engines.Plants;
 using Server.Engines.Quests;
 using Server.Items;
@@ -10,7 +11,7 @@ using System.Collections.Generic;
 
 namespace Server.Engines.Craft
 {
-    public enum ConsumeType
+	public enum ConsumeType
     {
         All,
         Half,
@@ -1020,7 +1021,11 @@ namespace Server.Engines.Craft
 
                     CraftSubRes subResource = resCol.SearchFor(baseType);
 
-                    if (subResource != null && from.Skills[craftSystem.MainSkill].Base < subResource.RequiredSkill)
+					var pm = from as CustomPlayerMobile;
+					var resource = CraftResources.GetFromType(subResource.ItemType);
+					var level = CraftResources.GetLevel(resource);
+
+					if (subResource != null && from.Skills[craftSystem.MainSkill].Base < subResource.RequiredSkill || (pm != null && pm.GetCapaciteValue(Capacite.Expertise) < level))
                     {
                         message = subResource.Message;
                         return false;
@@ -1354,7 +1359,7 @@ namespace Server.Engines.Craft
 			if (from is CustomPlayerMobile)
 			{
 				var pm = from as CustomPlayerMobile;
-				bonus += pm.GetCapaciteValue(Custom.Classes.Capacite.Expertise) / 10;
+				bonus += pm.GetCapaciteValue(Capacite.Expertise) / 10;
 			}
 
             if (from.Talisman is BaseTalisman)

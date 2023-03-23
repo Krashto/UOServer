@@ -28,43 +28,48 @@ namespace Server.Gumps
             Dragable = true;
             Resizable = false;
 
+			int line = 0;
+			int space = 20;
+
 			AddSection(x - 10, y, 250, 180, "Informations");
 
-			AddHtmlTexte(x +10, y + 40, 100, "Nom");
-			AddHtmlTexte(x + 125, y + 40, 150, from.GetBaseName());
+			AddHtmlTexte(x +10, y + space * line, 100, "Nom");
+			AddHtmlTexte(x + 125, y + space * line++, 150, from.GetBaseName());
 
-			AddHtmlTexte(x + 10, y + 60, 100, "Race");
-			AddHtmlTexte(x + 125, y + 60, 150, from.Race.Name);
+			AddHtmlTexte(x + 10, y + space * line, 100, "Race");
+			AddHtmlTexte(x + 125, y + space * line++, 150, from.Race.Name);
 
-			AddHtmlTexte(x + 10, y + 80, 100, "Apparence:");
-			AddHtmlTexte(x + 125, y + 80, 150, from.Apparence());
+			AddHtmlTexte(x + 10, y + space * line, 100, "Apparence:");
+			AddHtmlTexte(x + 125, y + space * line++, 150, from.Apparence());
 
-			AddHtmlTexte(x + 10, y + 100, 100, "Grandeur:");
-			AddHtmlTexte(x + 125, y + 100, 150, from.GrandeurString());
+			AddHtmlTexte(x + 10, y + space * line, 100, "Grandeur:");
+			AddHtmlTexte(x + 125, y + space * line++, 150, from.GrandeurString());
 
-			AddHtmlTexte(x + 10, y + 120, 100, "Grosseur:");
-			AddHtmlTexte(x + 125, y + 120, 150, from.CorpulenceString());
+			AddHtmlTexte(x + 10, y + space * line, 100, "Grosseur:");
+			AddHtmlTexte(x + 125, y + space * line++, 150, from.CorpulenceString());
 
+			line = 9;
 			//201
-			AddSection(x - 10, y+ 181, 250, 135, "Classes");
-
-			AddHtmlTexte(x + 10, y + 220, 150, "Classe");
-			AddHtmlTexte(x + 125, y + 220, 100,  m_From.Classe.ToString());
-			var classeInfo = Classes.GetInfos(m_From.Classe);
-			AddHtmlTexte(x + 10, y + 240, 150, "Branche");
-			AddHtmlTexte(x + 125, y + 240, 100, classeInfo.ClasseMode.ToString());
-			AddHtmlTexte(x + 10, y + 260, 150, "Niveau");
-			AddHtmlTexte(x + 125, y + 260, 100, classeInfo.Level.ToString());
+			AddSection(x - 10, y + space * line++ + 1, 250, 135, "Classes");
+			line++;
+			AddHtmlTexte(x + 10, y + space * line, 150, "Classe");
+			AddHtmlTexte(x + 125, y + space * line++, 100,  m_From.Classe.ToString());
+			var info = Classes.GetInfos(m_From.Classe);
+			AddHtmlTexte(x + 10, y + space * line++, 150, "Capacités");
+			foreach(var capacite in info.Capacites)
+				AddHtmlTexte(x + 125, y + space * line++, 100, capacite.Capacite.ToString());
 
 			// 402
 			AddSection(x - 10, y + 317, 250, 135, "Expérience");
 
 			AddHtmlTexte(x + 10, y + 355, 150, "Actuelle");
 			AddHtmlTexte(x + 125, y + 355, 100, m_From.Experience.Exp.ToString());
-			AddHtmlTexte(x + 10, y + 375, 150, "Restante");
-			AddHtmlTexte(x + 125, y + 375, 100, m_From.Experience.ExpToGainBank.ToString());
-			AddHtmlTexte(x + 10, y + 415, 150, "Heures jouées");
-			AddHtmlTexte(x + 125, y + 415, 100, Math.Round(m_From.Account.TotalGameTime.TotalHours, 2).ToString());
+			AddHtmlTexte(x + 10, y + 375, 150, "Actuelle");
+			AddHtmlTexte(x + 125, y + 375, 100, m_From.Experience.Exp.ToString());
+			AddHtmlTexte(x + 10, y + 395, 150, "Restante");
+			AddHtmlTexte(x + 125, y + 395, 100, m_From.Experience.ExpToGainBank.ToString());
+			AddHtmlTexte(x + 10, y + 435, 150, "Heures jouées");
+			AddHtmlTexte(x + 125, y + 435, 100, Math.Round(m_From.Account.TotalGameTime.TotalHours, 2).ToString());
 
 			AddSection(x - 10, y + 453, 250, 210, "Statistique");
 
@@ -133,7 +138,7 @@ namespace Server.Gumps
 
 			AddSection(x + 241, y, 359, 452, "Talents");
 
-			int line = 0;
+			line = 0;
 			AddHtmlTexte(x + 261, y + 40 + line++ * 20, 300, "Disponible: " + Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau) + " / Max: " + Aptitudes.GetMaxPA(m_From.Experience.Niveau));
 
 			foreach (Aptitude apt in Enum.GetValues(typeof(Aptitude)))

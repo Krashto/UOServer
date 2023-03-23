@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Martial;
+using Server.Custom.Capacites;
 
 namespace Server
 {
@@ -586,7 +587,7 @@ namespace Server.Spells
 
 			if (pm != null)
 			{
-				value *= 1 + pm.GetCapaciteValue(Custom.Classes.Capacite.Magie) * 0.1;
+				value *= 1 + pm.GetCapaciteValue(Capacite.Magie) * 0.1;
 				if (pm.ChosenSpellbook != null)
 					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
 			}
@@ -600,7 +601,7 @@ namespace Server.Spells
 
 			if (pm != null)
 			{
-				value *= 1 + pm.GetCapaciteValue(Custom.Classes.Capacite.Magie) * 0.1;
+				value *= 1 + pm.GetCapaciteValue(Capacite.Magie) * 0.1;
 				if (pm.ChosenSpellbook != null)
 					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
 			}
@@ -966,7 +967,7 @@ namespace Server.Spells
 			if (from is CustomPlayerMobile)
 			{
 				var pm = from as CustomPlayerMobile;
-				bonus = pm.GetCapaciteValue(Custom.Classes.Capacite.Magie) * 20;
+				bonus = pm.GetCapaciteValue(Capacite.Magie) * 20;
 			}
 
 			iDamage *= (1 + bonus / 100);
@@ -1024,7 +1025,7 @@ namespace Server.Spells
 			if (from is CustomPlayerMobile)
 			{
 				var pm = from as CustomPlayerMobile;
-				bonus = pm.GetCapaciteValue(Custom.Classes.Capacite.Magie) * 20;
+				bonus = pm.GetCapaciteValue(Capacite.Magie) * 20;
 			}
 
 			iDamage *= (1 + bonus / 100);

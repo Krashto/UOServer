@@ -187,6 +187,9 @@ namespace Server.Custom.Aptitudes
 
         public static int GetValue(CustomPlayerMobile m, Aptitude aptitude)
         {
+			if (m.AccessLevel > AccessLevel.Player)
+				return 10;
+
             Aptitudes apti = m.Aptitudes;
             int value = 0;
 

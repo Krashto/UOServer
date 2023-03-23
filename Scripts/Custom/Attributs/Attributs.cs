@@ -135,13 +135,7 @@ namespace Server
 
 		public bool CanDecreaseStat(Attribut attr)
 		{
-			switch (attr)
-			{
-				case Attribut.Constitution: return Owner.Attributs[Attribut.Constitution] > 25;
-				case Attribut.Sagesse: return Owner.Attributs[Attribut.Sagesse] > 25;
-				case Attribut.Endurance: return Owner.Attributs[Attribut.Endurance] > 25;
-				default: return false;
-			}
+			return Owner.Attributs[attr] > 25;
 		}
 
 
@@ -150,78 +144,27 @@ namespace Server
 			if (Owner.RawDex + Owner.RawStr + Owner.RawInt + Owner.Attributs[Attribut.Constitution] + Owner.Attributs[Attribut.Sagesse] + Owner.Attributs[Attribut.Endurance] >= 525)
 				return false;
 
-			switch (attr)
-			{
-				case Attribut.Constitution: return Owner.Attributs[Attribut.Constitution] < 125;
-				case Attribut.Sagesse: return Owner.Attributs[Attribut.Sagesse] < 125;
-				case Attribut.Endurance: return Owner.Attributs[Attribut.Endurance] < 125;
-				default: return false;
-			}
+			return Owner.Attributs[attr] < 125;
 		}
 
 		public void IncreaseStat(Attribut attr)
 		{
 			if (CanIncreaseStat(attr))
-			{
-				switch (attr)
-				{
-					case Attribut.Constitution: Owner.Attributs[Attribut.Constitution]++; break;
-					case Attribut.Sagesse: Owner.Attributs[Attribut.Sagesse]++; break;
-					case Attribut.Endurance: Owner.Attributs[Attribut.Endurance]++; break;
-				}
-			}
+				Owner.Attributs[attr]++;
 		}
 
 		public void DecreaseStat(Attribut attr)
 		{
 			if (CanDecreaseStat(attr))
-			{
-				switch (attr)
-				{
-					case Attribut.Constitution: Owner.Attributs[Attribut.Constitution]--; break;
-					case Attribut.Sagesse: Owner.Attributs[Attribut.Sagesse]--; break;
-					case Attribut.Endurance: Owner.Attributs[Attribut.Endurance]--; break;
-				}
-			}
+				Owner.Attributs[attr]--;
 		}
 
 		public virtual void Reset()
         {
             for (int i = 0; i < m_Values.Length; i++)
-            {
                 m_Values[i] = 0;
-            }
 
             Owner.PUDispo = Owner.Experience.Niveau * 3;
         }
     }
 }
-
-/*
-Force 
-- Permet de frapper plus fort (Arme de corps à corps et distance)
-- Supporter plus de poid (Stone)
-
-Dextérité 
-- Permet de frapper plus vite
-- Bonus Esquive
-- Bonus Parry
-
-Intelligence
-- Bonus sur les dégats magique
-- Bonus sur la durée des buffs magique
-- Bonus sur l'efficacité des buff magique
-
-Sagesse
-- Augmente la Mana
-- Meilleur Regen de Mana
-
-Constitution
-- Augmente HP
-- Meilleur regen HP
-
-Endurance
-- Augmente la Stamina
-- Meilleur regen de Stamina
-
-*/

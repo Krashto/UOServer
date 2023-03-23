@@ -1,9 +1,10 @@
 using Server.Custom.Aptitudes;
+using Server.Custom.Capacites;
 using Server.Custom.Classes;
 
 namespace Server
 {
-    public class RoublardClasse
+	public class RoublardClasse
     {
         private static string m_Name = "Roublard";
         private static Classe m_Classe = Classe.Roublard;

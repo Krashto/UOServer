@@ -1,12 +1,9 @@
 using Server.Items;
 using System.Collections.Generic;
-using System.Collections;
 using System;
 
 namespace Server.Mobiles
 {
-
-
     [CorpseName("Le Corps de Saliva")]
     public class Saliva : Harpy
     {
@@ -16,10 +13,8 @@ namespace Server.Mobiles
 		public DateTime TuerSummoneur;
 		private DateTime m_GlobalTimer;
 
-
 		[Constructable]
-        public Saliva()
-            : base()
+        public Saliva() : base()
         {
             Name = "Saliva";
             Hue = 0x11E;
@@ -33,7 +28,6 @@ namespace Server.Mobiles
 			SetDamage(34, 58);
 
 			SetDamageType(ResistanceType.Physical, 100);
-
 
 			SetResistance(ResistanceType.Physical, 75, 75);
 			SetResistance(ResistanceType.Fire, 25, 25);
@@ -49,7 +43,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 35.1, 55.0);
 			SetSkill(SkillName.Tactics, 50.1, 55.0);
 			SetSkill(SkillName.Wrestling, 50.1, 55.0);
-
 		}
 
 		public Saliva(Serial serial)
@@ -66,22 +59,16 @@ namespace Server.Mobiles
 			AddLoot(LootPack.RandomLootItem(new System.Type[] { typeof(SilverRing), typeof(Necklace), typeof(SilverNecklace), typeof(Collier), typeof(Collier2),  typeof(Collier3), typeof(Couronne3),  typeof(Collier4), typeof(Tiare), }, 10.0, 1, false, true));
 			AddLoot(LootPack.LootItem<Items.Gemme>(), (double) 5);
 			AddLoot(LootPack.LootItem<PlumesSaliva>(1, 5));
-
-
 		}
 
 		public override void OnThink()
 		{
-
-
-
 			base.OnThink();
 
 			if (Combatant != null)
 			{
 				if (m_GlobalTimer < DateTime.UtcNow)
 				{
-
 					if (!this.InRange(Combatant.Location,3))
 					{
 						switch (Utility.Random(3))
@@ -106,17 +93,11 @@ namespace Server.Mobiles
 
 					m_GlobalTimer = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(2, 5));
 				}
-			
-
 			}
 		}
 
-		
-
 		public void Hurlement()
 		{
-
-
 			if (DelayHurlement < DateTime.UtcNow)
 			{
 					int Range = 10;
@@ -128,8 +109,6 @@ namespace Server.Mobiles
 					{
 						if (this != m && !(m is Harpy) && !(m is StoneHarpy) && !m.IsStaff())
 						{
-
-
 							if (Core.AOS && !InLOS(m))
 								continue;
 
@@ -147,25 +126,17 @@ namespace Server.Mobiles
 
 					if (targets.Count > 0)
 					{
-
-			
-
-
-
 						for (int i = 0; i < targets.Count; ++i)
 						{
 							Mobile m = targets[i];
 
-
 							DoHarmful(m);
 
 							m.Paralyze(TimeSpan.FromSeconds(10));
-
 						}
 					}
 
 				DelayHurlement = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 50));
-
 			}
 		}
 
@@ -213,10 +184,6 @@ namespace Server.Mobiles
 
 				DelayCoupVent = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 60));
 			}
-
-
-
-
 		}
 
 		public void Attraction()
@@ -251,10 +218,7 @@ namespace Server.Mobiles
 
 				if (targets.Count > 0)
 				{
-
 					int dmg = 15;
-
-
 
 					for (int i = 0; i < targets.Count; ++i)
 					{
@@ -267,31 +231,20 @@ namespace Server.Mobiles
 						int Distance = 3;
 
 						if (m.GetDistanceToSqrt(this.Location) < Distance)
-						{
 							Distance = (int)m.GetDistanceToSqrt(this.Location);
-						}
-
 
 						KnockBack(this.Location, m, Distance * -1); // Si sur le centre de la tornade...
 					}
 				}
 
-
 				DelayAttraction = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(10, 120));
-
 			}
-
-			
 		}
 
 		public void KnockBack(Point3D destination, Mobile target, int Distance)
 		{
-
-
-
 			if (target.Alive)
 			{
-
 				int Distance2 = Distance;
 				int Neg = 1;
 
@@ -300,9 +253,6 @@ namespace Server.Mobiles
 					Distance2 = -Distance;   // Sert a faire en sorte, que si c'est négative, ca va avancer.
 					Neg = -1;
 				}
-
-
-
 
 				for (int i = 0; i < Distance2; i++)  // Le script valide toute les tiles jusqu'a la distance maximum. Si une d'entre elle est bloquer, il revient a la précédente (ou player location du départ) et stun la target.
 				{
@@ -322,16 +272,11 @@ namespace Server.Mobiles
 		}
 		public Point3D KnockBackCalculation(Point3D Loc, Mobile target, int Distance)
 		{
-
 			return KnockBackCalculation(Loc, new Point3D(target.Location), Distance);
-
-
-
 		}
 
 		public Point3D KnockBackCalculation(Point3D Loc, Point3D point, int Distance)
 		{
-
 			Direction d = Utility.GetDirection(point, Loc);
 
 			switch (d)
@@ -348,10 +293,6 @@ namespace Server.Mobiles
 			}
 			return point;
 		}
-
-
-
-
 
 		public override void Serialize(GenericWriter writer)
         {
