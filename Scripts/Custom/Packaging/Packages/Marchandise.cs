@@ -3,9 +3,9 @@
 	public  class Marchandise : Item
 	{
 		[Constructable]
-		public Marchandise() : base(0x9949)
+		public Marchandise() : base(0x1876)
 		{
-			Name = "Marchandises";
+			Name = "Materiaux";
 			Hue = 542;
 			Weight = 0.3;
 			Stackable = true;
