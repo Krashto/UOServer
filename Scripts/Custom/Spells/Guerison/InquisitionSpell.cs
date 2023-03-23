@@ -36,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				Deactivate(Caster);
 			else
 			{
-				var duration = GetDurationForSpell(0.15);
+				var duration = GetDurationForSpell(10);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

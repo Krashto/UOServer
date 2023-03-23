@@ -48,7 +48,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 50, Aptitude.Roublardise));
+					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 50, Aptitude.Roublardise));
 
 					foreach (Mobile m in eable)
 						if (Caster.CanBeHarmful(m, false))
@@ -71,7 +71,6 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 						m.Freeze(duration);
 						m.Emote("*S'endort*");
-						//BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.Sleep, 1080139, 1080140, duration, m));
 
 						m.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
 						m.PlaySound(0x1E0);

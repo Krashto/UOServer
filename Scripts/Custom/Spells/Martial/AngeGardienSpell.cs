@@ -38,7 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 			}
 			else
 			{
-				var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

@@ -12,7 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class FamilierMorbideSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Familier morbide", "Familier morbide",
+				"Familier morbide", "[Familier morbide]",
 				SpellCircle.Fourth,
 				203,
 				9051,

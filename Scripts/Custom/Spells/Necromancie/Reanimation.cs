@@ -12,7 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class ReanimationSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Reanimation", "Uus Corp",
+				"Reanimation", "[Reanimation]",
 				SpellCircle.Seventh,
 				203,
 				9031,

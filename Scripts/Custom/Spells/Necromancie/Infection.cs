@@ -15,7 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		public static Hashtable m_Table = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Infection", "Des Sanct",
+				"Infection", "[Infection]",
 				SpellCircle.Fifth,
 				227,
 				9031,
@@ -57,7 +57,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				SpellHelper.CheckReflect((int)spell.Circle, Caster, ref m);
 
-				var duration = spell.GetDurationForSpell(1);
+				var duration = spell.GetDurationForSpell(10);
 
 				SpellHelper.AddStatCurse(Caster, m, StatType.Str, duration); SpellHelper.DisableSkillCheck = true;
 				SpellHelper.AddStatCurse(Caster, m, StatType.Dex, duration);

@@ -5,13 +5,13 @@ using System;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
-	public class DecrescendoManiaqueSpell : Spell
+	public class DecrescendoManaiqueSpell : Spell
 	{
 		private static Hashtable m_Table = new Hashtable();
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Decrescendo maniaque", "[Decrescendo maniaque]",
+				"Decrescendo manaique", "[Decrescendo manaique]",
 				SpellCircle.First,
 				212,
 				9061,
@@ -24,7 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 		public override SkillName CastSkill { get { return SkillName.Musicianship; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public DecrescendoManiaqueSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public DecrescendoManaiqueSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 
@@ -56,7 +56,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					if (IsActive(m))
 						Deactivate(m);
 
-					var duration = GetDurationForSpell(30, 0.15);
+					var duration = GetDurationForSpell(15);
 
 					var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
 

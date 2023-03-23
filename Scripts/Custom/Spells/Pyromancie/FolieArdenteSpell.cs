@@ -2,7 +2,6 @@ using System;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using VitaNex.FX;
 using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
@@ -44,21 +43,29 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if (IsActive(m))
-					Deactivate(m);
+				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				var duration = GetDurationForSpell(5, 2);
+				double damage = Utility.RandomMinMax(47, 57);
 
-				Timer t = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers[m] = t;
+				if (CheckResisted(m))
+				{
+					damage *= 0.75;
+
+					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				}
+
+				damage *= GetDamageScalar(m);
+
+				m.FixedParticles(0x3709, 10, 30, 5052, EffectLayer.LeftFoot);
+				m.PlaySound(0x208);
+
+				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
+
+				var duration = GetDurationForSpell(2);
+
+				Timer t = new InternalTimer(this, Caster, m, damage * 0.5, DateTime.Now + duration);
+				m_Timers[Caster] = t;
 				t.Start();
-
-				ConcentricWaveFX.SmallTornado.CreateInstance(m, m.Map, 0);
-
-				m.Emote($"Est désorienté{(m.Female ? "e" : "")}");
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
 			}
 
 			FinishSequence();
@@ -89,11 +96,17 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		public class InternalTimer : Timer
 		{
 			private Mobile m_Mobile;
+			private Mobile m_Caster;
 			private DateTime m_EndTime;
+			private double m_Damage;
+			private Spell m_Owner;
 
-			public InternalTimer(Mobile m, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
+			public InternalTimer(Spell owner, Mobile caster, Mobile m, double damage, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
+				m_Owner = owner;
+				m_Caster = caster;
 				m_Mobile = m;
+				m_Damage = damage;
 				m_EndTime = endTime;
 
 				Priority = TimerPriority.OneSecond;
@@ -101,6 +114,20 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 			protected override void OnTick()
 			{
+				SpellHelper.CheckReflect((int)m_Owner.Circle, m_Caster, ref m_Mobile);
+
+				if (m_Owner.CheckResisted(m_Mobile))
+				{
+					m_Damage *= 0.75;
+
+					m_Mobile.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				}
+
+				m_Mobile.FixedParticles(0x3709, 10, 30, 5052, EffectLayer.LeftFoot);
+				m_Mobile.PlaySound(0x208);
+
+				SpellHelper.Damage(m_Owner, m_Mobile, m_Damage, 0, 100, 0, 0, 0);
+
 				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
 					Deactivate(m_Mobile);

@@ -55,7 +55,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 					if (IsActive(m))
 						Deactivate(m);
 
-					var duration = GetDurationForSpell(20, 0.5);
+					var duration = GetDurationForSpell(15);
 
 					Timer t = new InternalTimer(m, DateTime.Now + duration);
 					m_Timers[m] = t;

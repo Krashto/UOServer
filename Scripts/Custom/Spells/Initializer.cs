@@ -3,6 +3,7 @@ using Server.Custom.Spells.NewSpells.Aeromancie;
 using Server.Custom.Spells.NewSpells.Chasseur;
 using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Spells.NewSpells.Necromancie;
@@ -167,16 +168,16 @@ namespace Server.Spells
 			Register(639, typeof(FleauTerrestreSpell));
 
 			//Guerison
-			//Register(640, typeof(MainCicatrisanteSpell));
-			//Register(641, typeof(RemèdeSpell));
-			//Register(642, typeof(MurDePierreSpell));
-			//Register(643, typeof(RayonCelesteSpell));
-			//Register(644, typeof(LumiereSacreeSpell));
-			//Register(645, typeof(FrayeurSpell));
-			//Register(646, typeof(FerveurDivineSpell));
-			//Register(647, typeof(InquisitionSpell));
-			//Register(648, typeof(MurDeLumiereSpell));
-			//Register(649, typeof(DonDeLaVieSpell));
+			Register(640, typeof(MainCicatrisanteSpell));
+			Register(641, typeof(RemedeSpell));
+			Register(642, typeof(MurDePierreSpell));
+			Register(643, typeof(RayonCelesteSpell));
+			Register(644, typeof(LumiereSacreeSpell));
+			Register(645, typeof(FrayeurSpell));
+			Register(646, typeof(FerveurDivineSpell));
+			Register(647, typeof(InquisitionSpell));
+			Register(648, typeof(MurDeLumiereSpell));
+			Register(649, typeof(DonDeLaVieSpell));
 
 			//Hydromancie
 			Register(650, typeof(ArmureDeGlaceSpell));
@@ -207,7 +208,7 @@ namespace Server.Spells
             Register(671, typeof(CalmeToiSpell));
             Register(672, typeof(DesorienterSpell));
             Register(673, typeof(DefiSpell));
-            Register(674, typeof(DecrescendoManiaqueSpell));
+            Register(674, typeof(DecrescendoManaiqueSpell));
 			//Register(675, typeof(InspirationElementaireSpell));
 			//Register(676, typeof(AbsorbationSonoreSpell));
 			Register(677, typeof(ParfaiteAspirationSpell));

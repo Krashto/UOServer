@@ -56,7 +56,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					if (IsActive(m))
 						Deactivate(m);
 
-					var duration = GetDurationForSpell(30, 0.15);
+					var duration = GetDurationForSpell(15);
 
 					var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
 

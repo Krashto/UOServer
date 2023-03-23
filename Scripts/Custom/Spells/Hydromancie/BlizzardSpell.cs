@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				var map = Caster.Map;
 
-				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 15, Aptitude.Hydromancie);
+				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 15, Aptitude.Hydromancie);
 
 				ExplodeFX.Snow.CreateInstance(Caster, Caster.Map, range).Send();
 
@@ -63,7 +63,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					{
 						Caster.DoHarmful(m);
 
-						Timer t = new InternalTimer(Caster, m);
+						Timer t = new InternalTimer(m);
 						m_Timers[m] = t;
 						t.Start();
 
@@ -88,15 +88,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		private class InternalTimer : Timer
 		{
-			private readonly Mobile m_From;
 			private readonly Mobile m_Mobile;
 			private int m_Count;
 			private readonly int m_MaxCount;
 
-			public InternalTimer(Mobile from, Mobile m)
+			public InternalTimer(Mobile m)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2.0))
 			{
-				m_From = from;
 				m_Mobile = m;
 				Priority = TimerPriority.TwoFiftyMS;
 

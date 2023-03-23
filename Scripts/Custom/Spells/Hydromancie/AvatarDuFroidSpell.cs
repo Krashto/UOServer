@@ -34,7 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				Deactivate(Caster);
 			else
 			{
-				var duration = GetDurationForSpell(10, 0.05);
+				var duration = GetDurationForSpell(15);
 
 				Caster.CantWalk = true;
 

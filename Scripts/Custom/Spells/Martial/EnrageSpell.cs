@@ -39,8 +39,6 @@ namespace Server.Custom.Spells.NewSpells.Martial
 			}
 			else
 			{
-				var duration = GetDurationForSpell(30, 1.8);
-
 				var value = Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20;
 
 				var mods = new ResistanceMod[5]
@@ -56,6 +54,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				foreach (var mod in mods)
 					Caster.AddResistanceMod(mod);
+
+				var duration = GetDurationForSpell(20);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

@@ -77,7 +77,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 					if (SpellHelper.CheckWater(loc, Caster.Map) && SpellHelper.CheckField(loc, Caster.Map))
 					{
-						Item item = new InternalItem(loc, Caster.Map, Caster);
+						Item item = new InternalItem(loc, Caster.Map, Caster, this);
 						Effects.SendLocationParticles(item, 0x376A, 9, 10, 5025);
 					}
 				}
@@ -92,7 +92,8 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			private readonly Mobile m_Caster;
 			private Timer m_Timer;
 			private DateTime m_End;
-			public InternalItem(Point3D loc, Map map, Mobile caster)
+			private MurDePierreSpell m_Owner;
+			public InternalItem(Point3D loc, Map map, Mobile caster, MurDePierreSpell owner)
 				: base(0x82)
 			{
 				Movable = false;
@@ -100,16 +101,17 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				MoveToWorld(loc, map);
 
 				m_Caster = caster;
+				m_Owner = owner;
 
 				if (Deleted)
 					return;
 
-				var seconds = 10.0;
+				var duration = m_Owner.GetDurationForSpell(10);
 
 				if (InquisitionSpell.IsActive(m_Caster))
-					seconds *= 1.5;
+					duration = m_Owner.GetDurationForSpell(15);
 
-				m_Timer = new InternalTimer(this, TimeSpan.FromSeconds(seconds));
+				m_Timer = new InternalTimer(this, duration);
 				m_Timer.Start();
 
 				m_End = DateTime.UtcNow + TimeSpan.FromSeconds(10.0);

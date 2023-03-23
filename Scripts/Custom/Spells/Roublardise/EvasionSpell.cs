@@ -121,7 +121,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 					m.ProcessDelta();
 
 					Caster.Hidden = true;
-					Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 2, Aptitude.Roublardise);
+					Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 2, Aptitude.Roublardise);
 					Caster.SendLocalizedMessage(502730); // You begin to move quietly.
 
 					if (m.Player)

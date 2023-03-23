@@ -5,7 +5,6 @@ using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using System.Collections;
 using VitaNex.FX;
-using System.Web.UI.WebControls;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -50,7 +49,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				if (!IndomptableSpell.IsActive(m))
 				{
-					var duration = TimeSpan.FromSeconds(0.5) + GetDurationForSpell(0.1);
+					var duration = GetDurationForSpell(10);
 					SpellHelper.Turn(Caster, m);
 
 					ConcentricWaveFX.Brambles.CreateInstance(Caster, Caster.Map, Caster.Direction, (int)Caster.GetDistanceToSqrt(m.Location));

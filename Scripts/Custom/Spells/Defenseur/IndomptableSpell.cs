@@ -35,7 +35,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 			if (IsActive(Caster))
 				Deactivate(Caster);
 
-			var duration = GetDurationForSpell(15, 0.05);
+			var duration = GetDurationForSpell(15);
 
 			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 			m_Timers[Caster] = t;

@@ -2,7 +2,6 @@ using System;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.Custom.Spells.NewSpells.Totemique;
 using VitaNex.FX;
 using Server.Mobiles;
 
@@ -11,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class ConsommationMortelleSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura Exsangue", "Rel Sanct In Ylem",
+				"Aura Exsangue", "[Aura Exsangue]",
 				SpellCircle.Eighth,
 				212,
 				9041,

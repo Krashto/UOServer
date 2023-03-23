@@ -36,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				Deactivate(Caster);
 			else
 			{
-				var duration = GetDurationForSpell(0.15);
+				var duration = GetDurationForSpell(15);
 
 				var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
 

@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 20, Aptitude.Aeromancie);
+				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Aeromancie);
 
 				IPooledEnumerable eable = Caster.Map.GetMobilesInRange(new Point3D(Caster.Location), range);
 
@@ -63,13 +63,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			ExplodeFX.Smoke.CreateInstance(m, m.Map, 1).Send();
 
 			m.Hidden = true;
-			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[SkillName.Magery].Value / 2, Aptitude.Aeromancie);
+			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[spell.CastSkill].Value / 2, Aptitude.Aeromancie);
 			m.SendLocalizedMessage(502730); // You begin to move quietly.
 
 			if (IsActive(m))
 				Deactivate(m);
 
-			var duration = spell.GetDurationForSpell(30, 1);
+			var duration = spell.GetDurationForSpell(30, 2);
 
 			Timer t = new InternalTimer(m, DateTime.Now + duration);
 			m_Timers[m] = t;

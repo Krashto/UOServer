@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class SoifDeSangSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Soif de sang", "Bal Corp Hur Xen",
+				"Soif de sang", "[Soif de sang]",
 				SpellCircle.Second,
 				212,
 				9041,

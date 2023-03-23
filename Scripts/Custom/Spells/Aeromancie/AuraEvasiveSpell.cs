@@ -29,7 +29,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
-			var value = 10 + Caster.Skills[SkillName.Magery].Value / 3 + Caster.Skills[SkillName.EvalInt].Value / 3;
+			var value = 10 + Caster.Skills[CastSkill].Value / 3 + Caster.Skills[DamageSkill].Value / 3;
 
 			value = SpellHelper.AdjustValue(Caster, value, Aptitude.Aeromancie);
 
@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			if (map != null)
 			{
-				IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 20, Aptitude.Aeromancie));
+				IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Aeromancie));
 
 				foreach (Mobile m in eable)
 					if (Caster.CanBeBeneficial(m, false))

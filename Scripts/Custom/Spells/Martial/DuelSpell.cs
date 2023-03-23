@@ -52,7 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				m_Table[Caster] = m.GetType();
 
-				var duration = GetDurationForSpell(15, 0.05);
+				var duration = GetDurationForSpell(20);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

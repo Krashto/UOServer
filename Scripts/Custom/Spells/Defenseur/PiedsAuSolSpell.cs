@@ -45,7 +45,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				else
 					Caster.SendMessage($"Vous êtes immunisé{(Caster.Female ? "e" : "")} à la paralysie.");
 
-				var duration = GetDurationForSpell(5, 0.05);
+				var duration = GetDurationForSpell(10);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

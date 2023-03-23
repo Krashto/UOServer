@@ -5,7 +5,7 @@ using Server.Items;
 using Server.Mobiles;
 using System.Collections;
 
-namespace Server.Custom.Spells.NewSpells.Defenseur
+namespace Server.Custom.Spells.NewSpells.Guerison
 {
 	public class DonDeLaVieSpell : Spell
 	{
@@ -20,8 +20,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Defenseur }; } }
-		public override SkillName CastSkill { get { return SkillName.Parry; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Guerison }; } }
+		public override SkillName CastSkill { get { return SkillName.Healing; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public DonDeLaVieSpell(Mobile caster, Item scroll)

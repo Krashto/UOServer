@@ -51,7 +51,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 				m_Table[Caster] = value;
 
-				var duration = GetDurationForSpell(30, 0.25);
+				var duration = GetDurationForSpell(30);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

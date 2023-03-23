@@ -64,13 +64,13 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				Effects.PlaySound(p, Caster.Map, 0x20B);
 
-				var duration = GetDurationForSpell(0.1);
+				var duration = GetDurationForSpell(10);
 
 				for (var i = -3; i <= 3; ++i)
 				{
 					var loc = new Point3D(eastToWest ? p.X + i : p.X, eastToWest ? p.Y : p.Y + i, p.Z);
 
-					new InternalItem(Utility.Random(0x0DB8, 1), loc, Caster, Caster.Map, duration, i);
+					new InternalItem(Utility.Random(0x0DB8, 1), loc, Caster, Caster.Map, this, duration, i);
 				}
 			}
 
@@ -83,10 +83,11 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			private Timer m_Timer;
 			private DateTime m_End;
 			private Mobile m_Caster;
+			private MurDePlanteSpell m_Owner;
 
 			public override bool BlocksFit { get { return true; } }
 
-			public InternalItem(int itemID, Point3D loc, Mobile caster, Map map, TimeSpan duration, int val) : base(itemID)
+			public InternalItem(int itemID, Point3D loc, Mobile caster, Map map, MurDePlanteSpell owner, TimeSpan duration, int val) : base(itemID)
 			{
 				var canFit = SpellHelper.AdjustField(ref loc, map, 12, false);
 
@@ -97,6 +98,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				MoveToWorld(loc, map);
 
 				m_Caster = caster;
+				m_Owner = owner;
 
 				m_End = DateTime.Now + duration;
 
@@ -120,7 +122,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			{
 				base.Serialize(writer);
 
-				writer.Write(1); // version
+				writer.Write(0); // version
 
 				writer.Write(m_Caster);
 				writer.WriteDeltaTime(m_End);
@@ -134,14 +136,9 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				switch (version)
 				{
-					case 1:
-						{
-							m_Caster = reader.ReadMobile();
-
-							goto case 0;
-						}
 					case 0:
 						{
+							m_Caster = reader.ReadMobile();
 							m_End = reader.ReadDeltaTime();
 
 							m_Timer = new InternalTimer(this, TimeSpan.Zero, true, true);
@@ -159,7 +156,10 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				Poison p;
 
-				var total = m_Caster.Skills[SkillName.Magery].Value + m_Caster.Skills[SkillName.Poisoning].Value;
+				var total = 100.0;
+				
+				if (m_Owner != null)
+					total = m_Caster.Skills[m_Owner.CastSkill].Value + m_Caster.Skills[m_Owner.DamageSkill].Value;
 
 				if (total >= 175)
 					p = Poison.Deadly;

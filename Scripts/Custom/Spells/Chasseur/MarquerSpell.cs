@@ -45,7 +45,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				Deactivate(m);
 
-				var duration = GetDurationForSpell(30, 1);
+				var duration = GetDurationForSpell(10);
 
 				Timer t = new InternalTimer(m, DateTime.Now + duration);
 				m_Timers[m] = t;

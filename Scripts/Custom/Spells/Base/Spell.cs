@@ -9,6 +9,8 @@ using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.Custom.Capacites;
+using Server.Custom.Classes;
+using System.Linq;
 
 namespace Server.Spells
 {
@@ -365,33 +367,28 @@ namespace Server.Spells
 			return scalar;
 		}
 
-        public virtual TimeSpan GetDurationForSpell(double scale)
+        public virtual TimeSpan GetDurationForSpell(double min, double scale = 1.0)
         {
-            return GetDurationForSpell(5, scale);
-        }
+			
+            double bonus = 1;
 
-        public virtual TimeSpan GetDurationForSpell(double min, double scale)
-        {
-            double valeur = min + (double)Caster.Skills[CastSkill].Value * scale;
-            double valeurbonus = 1;
+			bonus += (Caster.Skills[CastSkill].Value - 50) / 150;
+			bonus += (Caster.Skills[DamageSkill].Value - 50) / 200;
 
-            valeurbonus += (Caster.Skills[DamageSkill].Value - 50) / 150;
+			bonus += Caster.Int / 2000;
 
-            valeurbonus += Caster.Int / 2000;
+			if (Caster is CustomPlayerMobile pm)
+			{
+				bonus += pm.GetCapaciteValue(Capacite.Magie) / 50;
+				bonus += pm.Aptitudes.GetValue(RequiredAptitude.First()) / 100;
+			}
 
-            valeur *= valeurbonus;
+			min *= bonus * scale;
 
-            if(Caster is CustomPlayerMobile)
-            {
-                CustomPlayerMobile m = (CustomPlayerMobile)Caster;
-
-                //valeur = SpellHelper.AdjustValue(m, valeur, NAptitude.MagieProlongee);
-            }
-
-            if (valeur < 0.5)
+			if (min < 0.5)
                 return TimeSpan.FromSeconds(0.5);
 
-            return TimeSpan.FromSeconds(valeur);
+            return TimeSpan.FromSeconds(min);
         }
 
 		public virtual void DoFizzle()
@@ -694,7 +691,7 @@ namespace Server.Spells
             if (Caster.IsPlayer())
                 mana = (int)(mana * (1 - (Caster.Int * 0.003)));
 
-			scalar -= DecrescendoManiaqueSpell.GetValue(Caster) / 100;
+			scalar -= DecrescendoManaiqueSpell.GetValue(Caster) / 100;
 
 			scalar -= AuraPreservationManaiqueSpell.GetValue(Caster) / 100;
 

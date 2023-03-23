@@ -37,7 +37,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Deactivate(Caster);
 			else
 			{
-				var duration = GetDurationForSpell(2, 0.05);
+				var duration = GetDurationForSpell(5);
 
 				Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
 				m_Timers[Caster] = t;

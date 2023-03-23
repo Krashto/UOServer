@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class PluieDeSangSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Pluie de sang", "Pluie de sang",
+				"Pluie de sang", "[Pluie de sang]",
 				SpellCircle.Seventh,
 				236,
 				9011,

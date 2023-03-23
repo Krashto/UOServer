@@ -64,7 +64,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 					foreach (var mod in mods)
 						m.AddResistanceMod(mod);
 
-					var duration = GetDurationForSpell(10, 0.05);
+					var duration = GetDurationForSpell(8);
 
 					Timer t = new InternalTimer(m, DateTime.Now + duration);
 					m_Timers[m] = t;

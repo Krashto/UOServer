@@ -58,7 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 					if (IsActive(m))
 						Deactivate(m);
 
-					var duration = GetDurationForSpell(0.15);
+					var duration = GetDurationForSpell(15);
 
 					Timer t = new InternalTimer(m, DateTime.Now + duration);
 					m_Timers[m] = t;

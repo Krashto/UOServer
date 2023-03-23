@@ -602,8 +602,10 @@ namespace Server.Spells
 			if (pm != null)
 			{
 				value *= 1 + pm.GetCapaciteValue(Capacite.Magie) * 0.1;
+				value *= 1 + pm.Aptitudes.GetValue(aptitude) * 0.1;
+
 				if (pm.ChosenSpellbook != null)
-					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
+					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.05;
 			}
 
 			return value;

@@ -35,7 +35,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			Caster.PlaySound(0x3C4);
 
 			Caster.Hidden = true;
-			Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[SkillName.Magery].Value / 2, Aptitude.Aeromancie);
+			Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 2, Aptitude.Aeromancie);
 			Caster.SendLocalizedMessage(502730); // You begin to move quietly.
 
 			ExplodeFX.Smoke.CreateInstance(Caster, Caster.Map, 1).Send();

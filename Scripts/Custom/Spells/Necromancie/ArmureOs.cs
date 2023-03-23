@@ -11,7 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class ArmureOsSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Armure d'os", "In Jux Mani Xen",
+				"Armure d'os", "[Armure d'os]",
 				SpellCircle.Seventh,
 				203,
 				9031,

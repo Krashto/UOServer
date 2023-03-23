@@ -359,20 +359,7 @@ namespace Server.Mobiles
 		protected override bool OnMove(Direction d)
 		{
 			if (FolieArdenteSpell.IsActive(this))
-			{
-				try
-				{
-					Direction = MovingSpells.GetOppositeDirection(d);
-					NetState.BlockAllPackets = true;
-					Move(Direction);
-					NetState.BlockAllPackets = false;
-					ProcessDelta();
-				}
-				catch (Exception e)
-				{
-					Diagnostics.ExceptionLogging.LogException(e);
-				}
-			}
+				return base.OnMove(MovingSpells.GetOppositeDirection(d));
 
 			return base.OnMove(d);
 		}

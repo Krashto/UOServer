@@ -77,6 +77,40 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, true);
 				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, true);
 				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
+
+
+
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 2, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 1, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 0, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 2, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 1, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 0, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 1, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 2, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+
+				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 2, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X - 1, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 0, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 1, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 2, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 2, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 1, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 0, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
 			}
 
 			FinishSequence();
@@ -95,7 +129,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			{
 				var canFit = SpellHelper.AdjustField(ref loc, map, 12, false);
 
-				Visible = false;
+				Visible = visible;
 				Movable = false;
 				Light = LightType.Circle300;
 

@@ -48,13 +48,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (SpellHelper.CheckTown(p, Caster) && CheckSequence())
 			{
-				var duration = GetDurationForSpell(5, 0.05);
+				var duration = GetDurationForSpell(3);
 
 				var endtime = DateTime.Now + duration;
 
-				Effects.SendLocationEffect(new Point3D(p), Caster.Map, 0x37CC, (int)(Caster.Skills[SkillName.Magery].Value * 1.5));
+				Effects.SendLocationEffect(new Point3D(p), Caster.Map, 0x37CC, (int)(Caster.Skills[CastSkill].Value * 1.5));
 
-				m_Timer = new VortexTimer(Caster, endtime, p);
+				m_Timer = new VortexTimer(Caster, this, endtime, p);
 				m_Timer.Start();
 			}
 
@@ -65,11 +65,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			private Mobile m_Caster;
 			private DateTime m_EndTime;
+			private VortexSpell m_Owner;
 			private IPoint3D m_Loc;
 
-			public VortexTimer(Mobile caster, DateTime endtime, IPoint3D p) : base(TimeSpan.Zero, TimeSpan.FromSeconds(1))
+			public VortexTimer(Mobile caster, VortexSpell owner, DateTime endtime, IPoint3D p) : base(TimeSpan.Zero, TimeSpan.FromSeconds(1))
 			{
 				m_Caster = caster;
+				m_Owner = owner;
 				m_EndTime = endtime;
 				m_Loc = p;
 
@@ -93,7 +95,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 					if (map != null)
 					{
-						var range = (int)SpellHelper.AdjustValue(m_Caster, 1 + m_Caster.Skills[SkillName.Magery].Base / 25, Aptitude.Aeromancie);
+						var range = (int)SpellHelper.AdjustValue(m_Caster, 1 + m_Caster.Skills[m_Owner.CastSkill].Base / 25, Aptitude.Aeromancie);
 
 						IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(m_Loc), range);
 

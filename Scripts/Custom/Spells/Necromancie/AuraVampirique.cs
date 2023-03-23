@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class AuraVampiriqueSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura vampirique", "An Sanct Gra Char",
+				"Aura vampirique", "[Aura vampirique]",
 				SpellCircle.Second,
 				203,
 				9031,
@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Caster.FixedParticles(0x37B9, 1, 14, 9502, 32, 5, (EffectLayer)255);
 				new SoundEffectTimer(Caster).Start();
 
-				var duration = TimeSpan.FromSeconds(Caster.Skills[SkillName.EvalInt].Value / 3.4 + 1.0);
+				var duration = GetDurationForSpell(15);
 
 				var t = new ExpireTimer(Caster, duration);
 

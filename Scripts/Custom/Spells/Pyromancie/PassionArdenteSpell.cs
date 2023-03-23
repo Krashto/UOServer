@@ -34,11 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				Deactivate(Caster);
 			else
 			{
-				var duration = GetDurationForSpell(10, 0.05);
-
-				Caster.CantWalk = true;
-
-				BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, Caster));
+				var duration = GetDurationForSpell(15);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

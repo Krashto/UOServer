@@ -3,7 +3,6 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 using System;
-using System.Web.UI.WebControls;
 
 namespace Server.Custom.Spells.NewSpells.Guerison
 {
@@ -43,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				SpellHelper.Turn(Caster, m);
 
-				var duration = GetDurationForSpell(3);
+				var duration = GetDurationForSpell(2);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
@@ -85,7 +84,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			private Mobile m_Mobile;
 			private DateTime m_EndTime;
 
-			public InternalTimer(Mobile m, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromMilliseconds(500))
+			public InternalTimer(Mobile m, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromMilliseconds(100))
 			{
 				m_Mobile = m;
 				m_EndTime = endTime;
@@ -95,9 +94,18 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 			protected override void OnTick()
 			{
-				m_Mobile.NetState.BlockAllPackets = true;
-				m_Mobile.Move((Direction)Utility.Random((int)Direction.North, (int)Direction.Up));
-				m_Mobile.NetState.BlockAllPackets = false;
+				try
+				{
+					m_Mobile.Direction = (Direction)Utility.Random((int)Direction.North, (int)Direction.Up);
+					m_Mobile.NetState.BlockAllPackets = true;
+					m_Mobile.Move(m_Mobile.Direction);
+					m_Mobile.NetState.BlockAllPackets = false;
+					m_Mobile.ProcessDelta();
+				}
+				catch (Exception e)
+				{
+					Diagnostics.ExceptionLogging.LogException(e);
+				}
 
 				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{

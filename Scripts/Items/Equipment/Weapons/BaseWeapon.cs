@@ -1189,6 +1189,9 @@ namespace Server.Items
 
             bonus += AosAttributes.GetValue(attacker, AosAttribute.AttackChance);
 
+			if (AveuglementSpell.IsActive(attacker))
+				bonus -= 20;
+
 			if (FormeElectrisanteSpell.IsActive(attacker))
 				bonus += 20;
 

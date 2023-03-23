@@ -66,7 +66,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				int itemID = eastToWest ? 0x3967 : 0x3979;
 
 				Point3D pnt = new Point3D(p);
-				TimeSpan duration = TimeSpan.FromSeconds(3.0 + (Caster.Skills[SkillName.Magery].Value / 3.0));
+				TimeSpan duration = GetDurationForSpell(15);
 
 				if (SpellHelper.CheckField(pnt, Caster.Map))
 					new InternalItem(itemID, pnt, Caster, Caster.Map, duration);
@@ -107,6 +107,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				Movable = false;
 				Light = LightType.Circle300;
+				Hue = 2125;
 
 				MoveToWorld(loc, map);
 				Effects.SendLocationParticles(EffectItem.Create(loc, map, EffectItem.DefaultDuration), 0x376A, 9, 10, 5048);

@@ -39,7 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
 			else
 			{
-				var duration = GetDurationForSpell(30, 1.8);
+				var duration = GetDurationForSpell(30, 2);
 
 				Caster.BodyMod = 15;
 

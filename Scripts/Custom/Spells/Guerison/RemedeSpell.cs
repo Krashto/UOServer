@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				if (p != null)
 				{
-					double chanceToCure = 10000 + (int)(Caster.Skills[SkillName.Magery].Value * 75) - (p.Level + 1) * 2500;
+					double chanceToCure = 10000 + (int)(Caster.Skills[CastSkill].Value * 75) - (p.Level + 1) * 2500;
 					chanceToCure /= 100;
 
 					chanceToCure = SpellHelper.AdjustValue(Caster, chanceToCure, Aptitude.Chasseur);

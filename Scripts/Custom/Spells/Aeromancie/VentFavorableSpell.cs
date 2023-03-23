@@ -40,7 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				if (CheckSequence())
 				{
-					var duration = GetDurationForSpell(10, 0.15);
+					var duration = GetDurationForSpell(5);
 
 					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 					t.Start();

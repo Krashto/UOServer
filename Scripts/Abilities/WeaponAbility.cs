@@ -102,7 +102,7 @@ namespace Server.Items
 
             lmc += BaseArmor.GetInherentLowerManaCost(from);
 
-			if (DecrescendoManiaqueSpell.IsActive(from))
+			if (DecrescendoManaiqueSpell.IsActive(from))
 				lmc += 20;
 
             scalar -= (double)lmc / 100;

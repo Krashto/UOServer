@@ -1,9 +1,6 @@
-﻿using System;
-using Server.Network;
-using Server.Mobiles;
+﻿using Server.Mobiles;
 using Server.Targeting;
 using Server.Items;
-using Server.Gumps;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
@@ -12,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class ToucheAbsorbantSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Touché Absorbant", "In Mani Corp",
+				"Touche Absorbant", "[Touche Absorbant]",
 				SpellCircle.Seventh,
 				203,
 				9031,

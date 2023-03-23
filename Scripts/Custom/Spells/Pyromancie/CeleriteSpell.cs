@@ -34,7 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			if (CheckSequence())
 			{
-				var duration = GetDurationForSpell(10, 1.8);
+				var duration = GetDurationForSpell(15);
 
 				var endtime = DateTime.Now + duration;
 

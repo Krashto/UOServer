@@ -1,3 +1,4 @@
+using System.Linq;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
@@ -45,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		{
 			if (CheckSequence())
 			{
-				var duration = GetDurationForSpell(30, 1.0);
+				var duration = GetDurationForSpell(30, 2);
 
 				SpellHelper.Summon(new SummonedBloodElemental(), Caster, 0x217, duration, false, false);
 

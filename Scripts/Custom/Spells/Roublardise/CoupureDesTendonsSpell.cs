@@ -64,7 +64,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				else
 					Caster.SendMessage("Votre cible est immunisée aux saignements.");
 
-				var duration = GetDurationForSpell(4, 1.8);
+				var duration = GetDurationForSpell(3);
 
 				Timer t = new InternalTimer(m, DateTime.Now + duration);
 				m_Timers[m] = t;

@@ -15,7 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Chasseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 

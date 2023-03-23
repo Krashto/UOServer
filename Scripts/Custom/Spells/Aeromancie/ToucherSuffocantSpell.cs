@@ -41,7 +41,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (CheckHSequence(m))
 			{
-				var duration = GetDurationForSpell(0.1);
+				var duration = GetDurationForSpell(4);
 
 				SpellHelper.Turn(Caster, m);
 
