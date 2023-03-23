@@ -1467,7 +1467,7 @@ namespace Server.Items
 				}
 
 				if (defender.Player)
-                    chance += defender.Dex / 25;
+                    chance += defender.Dex / 2500;
 
                 bool success = defender.CheckSkill(SkillName.Parry, chance);
 
@@ -1493,7 +1493,7 @@ namespace Server.Items
                 double aosChance = parry / 800.0;
 
 				if (defender.Player)
-					chance += defender.Dex / 25;
+					chance += defender.Dex / 2500;
 
 				bool success;
 

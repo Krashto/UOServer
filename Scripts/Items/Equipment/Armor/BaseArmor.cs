@@ -669,24 +669,8 @@ namespace Server.Items
             }
         }
 
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int StrRequirement
-        {
-            get
-            {
-                if (m_NegativeAttributes.Massive > 0)
-                {
-                    return 125;
-                }
-
-                return m_StrReq == -1 ? StrReq : m_StrReq;
-            }
-            set
-            {
-                m_StrReq = value;
-                InvalidateProperties();
-            }
-        }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int StrRequirement => 0;
 
         [CommandProperty(AccessLevel.GameMaster)]
         public int DexRequirement
