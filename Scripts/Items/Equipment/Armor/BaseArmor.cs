@@ -670,9 +670,20 @@ namespace Server.Items
         }
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public int StrRequirement => 0;
+		public int StrRequirement
+		{
+			get
+			{
+				return 0;
+			}
+			set
+			{
+				m_DexReq = value;
+				InvalidateProperties();
+			}
+		}
 
-        [CommandProperty(AccessLevel.GameMaster)]
+		[CommandProperty(AccessLevel.GameMaster)]
         public int DexRequirement
         {
             get
