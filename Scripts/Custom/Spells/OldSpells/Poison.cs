@@ -52,7 +52,7 @@ namespace Server.Spells.OldSpells
                 {*/
 				int level;
 
-                double total = (Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.Poisoning].Value);
+                double total = (Caster.Skills[SkillName.Magery].Value + Caster.Skills[SkillName.Magery].Value);
 
                 if (total >= 200.0 && 3 > Utility.Random(10))
                     level = 3;

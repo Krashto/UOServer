@@ -1,4 +1,7 @@
 #region References
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Hydromancie;
+using Server.Custom.Spells.NewSpells.Roublardise;
 using Server.Items;
 using Server.Spells;
 using Server.Spells.OldSpells;
@@ -815,17 +818,15 @@ namespace Server.Mobiles.AI
 			{
 				if (m_Mobile.Mana > 100)
 					select = Utility.RandomMinMax(1, 4);
-				else if (CheckCanCastMagery(7))
-					select = Utility.Random(5, 11);
 				else
 					select = Utility.Random(5, 8);
 
 				switch (select)
 				{
 					case 0:
-						return new FireballSpell(m_Mobile, null);
+						return new EnergyBoltSpell(m_Mobile, null);
 					case 1:
-						return new FireballSpell(m_Mobile, null);
+						return new FlameStrikeSpell(m_Mobile, null);
 					case 2:
 						return new EnergyBoltSpell(m_Mobile, null);
 					case 3:
@@ -840,10 +841,6 @@ namespace Server.Mobiles.AI
 						return new FireballSpell(m_Mobile, null);
 					case 8:
 						return new LightningSpell(m_Mobile, null);
-					case 9:
-					case 10:
-					case 11:
-						return new EnergyBoltSpell(m_Mobile, null);
 				}
 			}
 			else

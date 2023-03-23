@@ -41,8 +41,9 @@ namespace Server.Spells.OldSpells
                 SpellHelper.CheckReflect((int)this.Circle, Caster, ref m);
 
                 double damage = Utility.RandomMinMax(23, 37);
+				damage *= 2;
 
-                if (CheckResisted(m))
+				if (CheckResisted(m))
                 {
                     damage *= 0.75;
 

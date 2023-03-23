@@ -39,10 +39,9 @@ namespace Server.Spells.OldSpells
                 SpellHelper.CheckReflect((int)this.Circle, Caster, ref m);
 
                 double damage = Utility.RandomMinMax(14, 20);
+				damage *= 2;
 
-                //damage = SpellHelper.AdjustValue(Caster, damage, NAptitude.MagieDefensive);
-
-                if (CheckResisted(m))
+				if (CheckResisted(m))
                 {
                     damage *= 0.75;
 
