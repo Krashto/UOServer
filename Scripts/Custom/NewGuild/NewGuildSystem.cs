@@ -204,8 +204,6 @@ namespace Server.Custom.System
             {
                 if (m_NewGuildsList.Count > 0)
                 {
-                
-
                     foreach (GuildRecruter guild in m_NewGuildsList)
                     {
                         if (guild != null)
@@ -219,8 +217,6 @@ namespace Server.Custom.System
 							}
                         }
                     }
-
-
                 }
             }
         }
@@ -236,72 +232,20 @@ namespace Server.Custom.System
             {
                 string path = "Logs/PayLogs/";
 
-
 				string accountUsername = m.Account.Username;
 
-
-
 				if (accountUsername == "CON")
-				{
 					accountUsername = "CON1";
-				}
-
-
-
-
-
 
 				string fileName = path + accountUsername + ".csv";
 
                 if (!Directory.Exists(path))
                     Directory.CreateDirectory(path);
 
-
-
-
-
                 using (StreamWriter sw = new StreamWriter(fileName, true))
                     sw.WriteLine(DateTime.Now.ToString() + ","  + cgm.Mobile.GetBaseName() + "," + amount.ToString() + "\n");  // CSV fIle type..
             }
         }
-
-        /// <summary>
-        /// Retourne tous les titres que possèdent le mobile dans toutes les guildes
-        /// </summary>
-        /// <param name="m">Mobile dont on veut tous les titres</param>
-        /// <returns>Tableau de strings avec tous les titres à l'intérieur</returns>
-  /*      public static List<String> GetTitreList(Mobile from)
-        {
-            List<String> titlesTable = new List<String>();
-
-            foreach (GuildRecruter guild in m_NewGuildsList)
-            {
-                if (guild.m_RankMobiles.ContainsKey(from))
-                {
-                    titlesTable.Add(guild.GetTitleByRank((int)guild.m_RankMobiles[from].Rank));
-                }
-            }
-
-            return titlesTable;
-        }*/
-
-        /// <summary>
-        /// Retourne toutes les guildes du mobile
-        /// </summary>
-        /// <param name="m">Mobile dont on veut toutes les guildes</param>
-        /// <returns>Tableau de NewGuildHandler avec tous les NewGuildHandler à l'intérieur</returns>
- /*       public static List<GuildRecruter> GetGuilds(Mobile from)
-        {
-            List<GuildRecruter> guildTable = new List<GuildRecruter>();
-
-            foreach (GuildRecruter guild in m_NewGuildsList)
-            {
-                if (guild.m_RankMobiles.ContainsKey(from))
-                    guildTable.Add(guild);
-            }
-            return guildTable;
-        }
- */
         #endregion
 
         #region Actions
@@ -357,9 +301,7 @@ namespace Server.Custom.System
 			CustomGuildMember cgm = GeCustomPlayerMobileInfo(m);
 
             if (cgm != null)
-            {
 				cgm.IncreaseRank(this);
-            }
         }
 
         /// <summary>
@@ -371,20 +313,14 @@ namespace Server.Custom.System
 			CustomGuildMember cgm = GeCustomPlayerMobileInfo(m);
 
 			if (cgm != null)
-			{
 				cgm.DecreaseRank(this);
-			}
 		}
-
         #endregion
 
         #region Constructor
         [Constructable]
         public GuildRecruter() : base("Ressource Humaine")
         {
-           // Name = "Pierre de guilde";
-            //Movable = false;
-
             if (m_NewGuildsList == null)
                 m_NewGuildsList = new ArrayList();
 
@@ -448,9 +384,7 @@ namespace Server.Custom.System
             writer.Write(m_Members.Count);
 
             foreach (CustomGuildMember pair in m_Members)
-            {
 				pair.Serialize(writer);
-            }
 
             writer.Write(NewGuildTitle);
 
@@ -478,9 +412,7 @@ namespace Server.Custom.System
             int count = reader.ReadInt();
 
             for (int i = 0; i < count; ++i)
-            {
 				m_Members.Add(CustomGuildMember.Deserialize(reader));
-            }
 
             NewGuildTitle = reader.ReadString();
 

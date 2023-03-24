@@ -67,16 +67,13 @@ namespace Server.Gumps
                 AddButton(pagewidth - 185, y, 0x992, 0x993, i + 4000, GumpButtonType.Reply, 0);
             }
 
-            AddHtml(115, 435, 200, 20, String.Format(
-                @"<basefont color =  #478cf7 >Page: {0}/{1}"
-                , viewpage + 1, 3000 / maxItemsPerPage), ( bool ) false, ( bool ) false);
+            AddHtml(115, 435, 200, 20, String.Format(@"<BASEFONT COLOR=#FFFFFF>Page: {0}/{1}</BASEFONT>", viewpage + 1, 3000 / maxItemsPerPage), false, false);
             // page up and down buttons
             AddButton(95, 437, 0x15E0, 0x15E4, 13, GumpButtonType.Reply, 0);
             AddButton(80, 437, 0x15E2, 0x15E6, 12, GumpButtonType.Reply, 0);
 
-            AddHtml(75, 455, 160, 60,
-                @"<basefont color = #094175><center>Entrez le numéro du hue", false, false);
-         //   AddAlphaRegion(90, 480, 65, 20);
+            AddHtml(75, 455, 160, 60, @"<BASEFONT COLOR=#FFFFFF><center>Entrez le numéro du hue</BASEFONT>", false, false);
+			// AddAlphaRegion(90, 480, 65, 20);
             AddTextEntry(90, 480, 65, 20, 294, 14, @"1");
             // GoTo Hue Button
             AddButton(160, 485, 2224, 2224, 15, GumpButtonType.Reply, 0);

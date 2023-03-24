@@ -1338,12 +1338,20 @@ namespace Server.Engines.Craft
             return false;
         }
 
-        public double GetExceptionalChance(CraftSystem system, double chance, Mobile from)
+		public double GetLegendaryChance(CraftSystem system, double successChance, Mobile from)
+		{
+			return GetExceptionalChance(system, successChance, from) / 2000;
+		}
+
+		public double GetEpicChance(CraftSystem system, double successChance, Mobile from)
+		{
+			return GetExceptionalChance(system, successChance, from) / 20;
+		}
+
+		public double GetExceptionalChance(CraftSystem system, double successChance, Mobile from)
         {
-            if (ForceNonExceptional)
-            {
+            if (ForceNonExceptional || successChance <= 0)
                 return 0.0;
-            }
 
             if (ForceExceptional)
             {
@@ -1354,83 +1362,12 @@ namespace Server.Engines.Craft
                     return 100.0;
             }
 
-            double bonus = 0.0;
-			
-			if (from is CustomPlayerMobile)
-			{
-				var pm = from as CustomPlayerMobile;
-				bonus += pm.GetCapaciteValue(Capacite.Expertise) / 10;
-			}
+			var exceptionalChance = 0.0;
 
-            if (from.Talisman is BaseTalisman)
-            {
-                BaseTalisman talisman = (BaseTalisman)from.Talisman;
+			if (from is CustomPlayerMobile pm)
+				exceptionalChance = pm.GetCapaciteValue(Capacite.Expertise) * 4;
 
-                if (talisman.CheckSkill(system))
-                {
-                    bonus = talisman.ExceptionalBonus / 100.0;
-                }
-            }
-
-            MasterChefsApron apron = from.FindItemOnLayer(Layer.MiddleTorso) as MasterChefsApron;
-
-            if (apron != null)
-            {
-                bonus += apron.Bonus / 100.0;
-            }
-
-            if (WoodworkersBench.HasBonus(from, system.MainSkill))
-            {
-                bonus += .3;
-            }
-
-			bonus += from.Skills[SkillName.ArmsLore].Value / 4.8;
-
-            switch (system.ECA)
-            {
-                default:
-                case CraftECA.ChanceMinusSixty:
-                    chance -= 0.6;
-                    break;
-                case CraftECA.FiftyPercentChanceMinusTenPercent:
-                    chance = chance * 0.5 - 0.1;
-                    break;
-				case CraftECA.Chance3Max:
-					{
-						chance = chance * 0.5 - 0.1;
-
-						if (chance > 0.03)
-						{
-							chance = 0.03;
-						}
-
-						break;
-					}
-					
-				case CraftECA.ChanceMinusSixtyToFourtyFive:
-                    {
-                        double offset = 0.60 - ((from.Skills[system.MainSkill].Value - 95.0) * 0.03);
-
-                        if (offset < 0.45)
-                        {
-                            offset = 0.45;
-                        }
-                        else if (offset > 0.60)
-                        {
-                            offset = 0.60;
-                        }
-
-                        chance -= offset;
-                        break;
-                    }
-            }
-
-            if (chance > 0)
-            {
-                return chance + bonus;
-            }
-
-            return chance;
+            return exceptionalChance;
         }
 
         public bool CheckSkills(
@@ -1439,17 +1376,36 @@ namespace Server.Engines.Craft
             return CheckSkills(from, typeRes, craftSystem, ref quality, ref allRequiredSkills, true, maxAmount);
         }
 
-        public bool CheckSkills(
-            Mobile from, Type typeRes, CraftSystem craftSystem, ref int quality, ref bool allRequiredSkills, bool gainSkills, int maxAmount)
+		public ItemQuality GetQuality(CraftSystem system, double successChance, Mobile from, int expertise)
+		{
+			Random rand = new Random();
+			int chance = rand.Next(1, 100001);
+
+			double chanceLegendary = GetLegendaryChance(system, successChance, from) / 2000; // chance légendaire augmentée de 0.002% par point d'expertise, max de 0.01%
+			double chanceEpic = GetEpicChance(system, successChance, from) / 20; // chance épique augmentée de 0.2% par point d'expertise, max de 1%
+			double chanceExceptional = GetExceptionalChance(system, successChance, from); // chance exceptionnelle augmentée de 4% par point d'expertise, max de 20%
+
+			// multiplier par 1000 pour obtenir un chiffre entier (0.002 étant la plus petite valeur (4/2000))
+			if (chance <= chanceLegendary * 1000)
+				return ItemQuality.Legendary;
+			else if (chance <= chanceEpic * 1000)
+				return ItemQuality.Epic;
+			else if (chance <= chanceExceptional * 1000)
+				return ItemQuality.Exceptional;
+
+			return ItemQuality.Normal;
+		}
+
+        public bool CheckSkills(Mobile from, Type typeRes, CraftSystem craftSystem, ref int quality, ref bool allRequiredSkills, bool gainSkills, int maxAmount)
         {
             double chance = GetSuccessChance(from, typeRes, craftSystem, gainSkills, ref allRequiredSkills, maxAmount);
 
-            if (GetExceptionalChance(craftSystem, chance, from) > Utility.RandomDouble())
-            {
-                quality = 2;
-            }
+			quality = 1;
 
-            return (chance > Utility.RandomDouble());
+			if (from is CustomPlayerMobile pm)
+				quality = (int)GetQuality(craftSystem, chance, from, pm.GetCapaciteValue(Capacite.Expertise));
+
+            return chance > Utility.RandomDouble();
         }
 
 		private static Type[] m_UseLeathers = new Type[]

@@ -133,15 +133,11 @@ namespace Server.Custom.System
 					AddTextEntryBg(x, y + (space * line) - 9, 480, 70, 0, GetButtonID(9, 1), m_Guild.NewGuildDescription);
                     line += 4;
 
-					/* 
-					 line++;*/
-
 					AddSection(x - 20, y + (space * line) +2 , 259, 300, "Informations");
 					line += 2;
 					int line2 = line;
 
 					AddHtmlTexteColored(x, y + (space * line++), 300, "Nombre de membres: " + m_Guild.Members.Count, "#FFFFFF");
-			//		AddHtmlTexteColored(x, y + (space * line++), 100, "Nombre de membres: " + m_Guild.Getsal, "#FFFFFF");
 
 					AddSection(x + 241, y + (space * (line2 - 2)) +2, 260, 300, "Actions");
 					

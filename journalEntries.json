@@ -1,0 +1,34 @@
+[
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa5",
+    "Visible": true,
+    "WriterName": "Eowymos",
+    "Title": "1 entrée",
+    "Content": "Contenu de la première entrée",
+    "DateCreated": "2023-03-23T12:34:56.789Z"
+  },
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "Visible": true,
+    "WriterName": "Eowymos",
+    "Title": "2 entrée",
+    "Content": "Contenu de la première entrée",
+    "DateCreated": "2023-03-23T12:34:56.789Z"
+  },
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa7",
+    "Visible": true,
+    "WriterName": "Eowymos",
+    "Title": "3 entrée",
+    "Content": "Contenu de la première entrée",
+    "DateCreated": "2023-03-23T12:34:56.789Z"
+  },
+  {
+    "Id": "3fa85f64-5717-4562-b3fc-2c963f66afa8",
+    "Visible": false,
+    "WriterName": "Eowymos",
+    "Title": "4 entrée",
+    "Content": "Contenu de la première entrée",
+    "DateCreated": "2023-03-23T12:34:56.789Z"
+  }
+]

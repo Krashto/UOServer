@@ -72,7 +72,11 @@ namespace Server.Mobiles
 		#endregion
 
 		[CommandProperty(AccessLevel.GameMaster)]
+		public bool Journaliste { get; set; }
+
+		[CommandProperty(AccessLevel.GameMaster)]
 		public DateTime LastDeathTime { get; private set; }
+
 		public double DeathDuration => 1; //minutes
 
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -1405,6 +1409,11 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
+				case 1:
+					{
+						Journaliste = reader.ReadBool();
+						goto case 0;
+					}
 				case 0:
 					{
 						Experience = new ExperienceSystem(reader);
@@ -1455,7 +1464,10 @@ namespace Server.Mobiles
         {        
             base.Serialize(writer);
 
-            writer.Write(0); // version
+            writer.Write(1); // version
+
+			//Version 1
+			writer.Write(Journaliste);
 
 			//Version 0
 			Experience.Serialize(writer);

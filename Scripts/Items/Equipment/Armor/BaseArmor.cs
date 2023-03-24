@@ -864,24 +864,11 @@ namespace Server.Items
             }
             set
             {
-                UnscaleDurability();
+				m_Quality = value;
 
+				UnscaleDurability();
+				DistributeQualityBonuses();
 
-
-				if (m_Quality != ItemQuality.Exceptional && value == ItemQuality.Exceptional)
-				{
-					DistributeExceptionalBonuses(false);
-				}
-				else if (m_Quality == ItemQuality.Exceptional && value != ItemQuality.Exceptional)
-				{
-					DistributeExceptionalBonuses(true);
-				}
-
-
-
-
-
-                m_Quality = value;
                 Invalidate();
                 InvalidateProperties();
                 ScaleDurability();
@@ -2690,10 +2677,7 @@ namespace Server.Items
 
             PlayerConstructed = true;
 
-            if (Quality == ItemQuality.Exceptional && !craftItem.ForceNonExceptional)
-            {
-                DistributeExceptionalBonuses(false); // Not sure since when, but right now 15 points are added, not 14.
-            }
+			DistributeQualityBonuses();
 
             if (tool is BaseRunicTool && !craftItem.ForceNonExceptional)
                 ((BaseRunicTool)tool).ApplyAttributesTo(this);
@@ -2716,210 +2700,13 @@ namespace Server.Items
             return quality;
         }
 
-        public virtual void DistributeExceptionalBonuses(bool negatif)
+        public virtual void DistributeQualityBonuses()
         {
-
-			int Mod = 0;
-
-			switch (Resource)
-			{
-				case CraftResource.None:
-					Mod += 1;
-					break;
-				case CraftResource.Iron:
-					Mod += 1;
-					break;
-				case CraftResource.DullCopper:
-					Mod += 1;
-					break;
-				case CraftResource.ShadowIron:
-					Mod += 1;
-					break;
-				case CraftResource.Copper:
-					Mod += 2;
-					break;
-				case CraftResource.Bronze:
-					Mod += 2;
-					break;
-				case CraftResource.Gold:
-					Mod += 2;
-					break;
-				case CraftResource.Agapite:
-					Mod += 2;
-					break;
-				case CraftResource.Verite:
-					Mod += 2;
-					break;
-				case CraftResource.Mytheril:
-					Mod += 2;
-					break;
-				case CraftResource.Valorite:
-					Mod += 3;
-					break;
-				case CraftResource.PlainoisLeather:
-					Mod += 1;
-					break;
-				case CraftResource.ForestierLeather:
-					Mod += 1;
-					break;
-				case CraftResource.DesertiqueLeather:
-					Mod += 1;
-					break;
-				case CraftResource.CollinoisLeather:
-					Mod += 2;
-					break;
-				case CraftResource.SavanoisLeather:
-					Mod += 2;
-					break;
-				case CraftResource.ToundroisLeather:
-					Mod += 2;
-					break;
-				case CraftResource.TropicauxLeather:
-					Mod += 2;
-					break;
-				case CraftResource.MontagnardLeather:
-					Mod += 2;
-					break;
-				case CraftResource.AncienLeather:
-					Mod += 3;
-					break;
-				case CraftResource.RedScales:
-					break;
-				case CraftResource.YellowScales:
-					break;
-				case CraftResource.BlackScales:
-					break;
-				case CraftResource.GreenScales:
-					break;
-				case CraftResource.WhiteScales:
-					break;
-				case CraftResource.BlueScales:
-					break;
-				case CraftResource.RegularWood:
-					break;
-				case CraftResource.OakWood:
-					break;
-				case CraftResource.AshWood:
-					break;
-				case CraftResource.YewWood:
-					break;
-				case CraftResource.Heartwood:
-					break;
-				case CraftResource.Bloodwood:
-					break;
-				case CraftResource.Frostwood:
-					break;
-				case CraftResource.PlainoisBone:
-					Mod += 1;
-					break;
-				case CraftResource.ForestierBone:
-					Mod += 1;
-					break;
-				case CraftResource.DesertiqueBone:
-					Mod += 1;
-					break;
-				case CraftResource.CollinoisBone:
-					Mod += 2;
-					break;
-				case CraftResource.SavanoisBone:
-					Mod += 2;
-					break;
-				case CraftResource.ToundroisBone:
-					Mod += 2;
-					break;
-				case CraftResource.TropicauxBone:
-					Mod += 2;
-					break;
-				case CraftResource.MontagnardBone:
-					Mod += 2;
-					break;
-				case CraftResource.AncienBone:
-					Mod += 3;
-					break;
-				default:
-					break;
-			}
-
-
-
-			if (negatif)
-			{
-				m_PhysicalBonus -= Mod;
-			}
-			else
-			{
-				m_PhysicalBonus += Mod;
-			}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			/*          var anvilEntry = CraftContext.GetAnvilEntry(from, false);
-
-					  if (anvilEntry != null && anvilEntry.Ready)
-					  {
-						  var table = runic ? anvilEntry.Runic : anvilEntry.Exceptional;
-
-						  foreach (var kvp in table)
-						  {
-							  switch (kvp.Key)
-							  {
-								  case ResistanceType.Physical: m_PhysicalBonus += kvp.Value; break;
-								  case ResistanceType.Fire: m_FireBonus += kvp.Value; break;
-								  case ResistanceType.Cold: m_ColdBonus += kvp.Value; break;
-								  case ResistanceType.Poison: m_PoisonBonus += kvp.Value; break;
-								  case ResistanceType.Energy: m_EnergyBonus += kvp.Value; break;
-							  }
-						  }
-
-						  anvilEntry.Clear(from);
-					  }
-					  else
-					  {
-						  int amount = GetResistBonus(from, runic);
-
-						  // Exceptional Bonus
-						  for (int i = 0; i < amount; ++i)
-						  {
-							  switch (Utility.Random(5))
-							  {
-								  case 0: ++m_PhysicalBonus; break;
-								  case 1: ++m_FireBonus; break;
-								  case 2: ++m_ColdBonus; break;
-								  case 3: ++m_PoisonBonus; break;
-								  case 4: ++m_EnergyBonus; break;
-							  }
-						  }
-
-						  from.CheckSkill(SkillName.ArmsLore, 0, 100);
-					  }
-
-					  // Imbuing needs to keep track of what is natrual, what is imbued bonuses
-					  m_PhysNonImbuing = m_PhysicalBonus;
-					  m_FireNonImbuing = m_FireBonus;
-					  m_ColdNonImbuing = m_ColdBonus;
-					  m_PoisonNonImbuing = m_PoisonBonus;
-					  m_EnergyNonImbuing = m_EnergyBonus;
-
-					  // Gives MageArmor property for certain armor types
-					  if (m_AosArmorAttributes.MageArmor <= 0 && IsMageArmorType(this))
-					  {
-						  m_AosArmorAttributes.MageArmor = 1;
-					  }*/
+			m_PhysicalBonus = -1 + (int)m_Quality;
+			m_FireBonus = -1 + (int)m_Quality;
+			m_ColdBonus = -1 + (int)m_Quality;
+			m_PoisonBonus = -1 + (int)m_Quality;
+			m_EnergyBonus = -1 + (int)m_Quality;
 
 			InvalidateProperties();
         }

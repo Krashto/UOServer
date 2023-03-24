@@ -62,7 +62,9 @@ namespace Server.Items
     {
         Low,
         Normal,
-        Exceptional
+        Exceptional,
+		Epic,
+		Legendary
     }
 
     public enum DirectionType

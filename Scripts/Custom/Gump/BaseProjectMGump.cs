@@ -180,6 +180,13 @@ namespace Server.Gumps
 			AddBackground(x, y, largeur, hauteur, 9270);
 			AddTitle(x + largeur / 2 - 70, y + 13, titre);
 		}
+
+		public void AddParcheminSection(int x, int y, int largeur, int hauteur, string titre)
+		{
+			AddBackground(x, y, largeur, hauteur, 9300);
+			AddHtml(x, y + 1, largeur, 20, String.Concat("<h3><center><basefont color=#000000>", titre, "</basefont></center></h3>"), false, false);
+		}
+
 		public void AddSection(int x, int y, int largeur, int hauteur, string titre, string description)
 		{
 			AddBackground(x, y, largeur, hauteur, 9270);

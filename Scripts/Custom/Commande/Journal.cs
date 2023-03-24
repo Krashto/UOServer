@@ -3,140 +3,181 @@ using Server;
 using Server.Commands;
 using Server.Gumps;
 using System.Collections.Generic;
-using Server.Mobiles;
-using Server.Prompts;
 using System.IO;
+using Newtonsoft.Json;
+using System.Linq;
+using Server.Mobiles;
 
 namespace JournalCommand
 {
-	public class CJournalGump : Gump
+	public class CJournalGump : BaseProjectMGump
 	{
-		private Mobile m_From;
-		private List<JournalEntry> m_JournalEntries;
-		private List<JournalEntry> journalEntries;
+		private static string _Path => "journalEntries.json";
 
-		public CJournalGump(Mobile from, List<JournalEntry> journalEntries) : base(50, 50)
+		public static void Initialize()
+		{
+			CommandSystem.Register("Journal", AccessLevel.Player, new CommandEventHandler(OnJournalCommand));
+		}
+
+		[Usage("Journal")]
+		[Description("Ouvre le journal de la ville et permet de lire et d'ajouter des articles.")]
+		private static void OnJournalCommand(CommandEventArgs e)
+		{
+			var from = e.Mobile;
+			List<JournalEntry> journalEntries = new List<JournalEntry>();
+
+			// Charger les articles existants à partir du fichier JSON
+			string json = File.ReadAllText(_Path);
+			if (!string.IsNullOrEmpty(json))
+				journalEntries = JsonConvert.DeserializeObject<List<JournalEntry>>(json);
+
+			// Créer un nouveau gump pour afficher le journal
+			from.CloseGump(typeof(CJournalGump));
+			from.SendGump(new CJournalGump((CustomPlayerMobile)from, journalEntries, 0));
+		}
+
+		private CustomPlayerMobile m_From;
+		private List<JournalEntry> m_JournalEntries;
+		private int m_Page;
+		private int m_ArticlePerPage = 3;
+
+		public CJournalGump(CustomPlayerMobile from, List<JournalEntry> journalEntries, int page) : base("Journal de Colognan", 800, 720, false)
 		{
 			m_From = from;
 			m_JournalEntries = journalEntries;
-			Initialize();
-		}
+			m_Page = page;
 
-	//	public CJournalGump(List<JournalEntry> journalEntries) => this.journalEntries = journalEntries;
-
-		private void Initialize()
-		{
 			AddPage(0);
-			AddBackground(0, 0, 400, 400, 5054);
+			AddBackground(0, 0, 800, 800, 5054);
 
-			AddHtml(30, 20, 340, 20, "<CENTER><BIG>Journal de la ville</BIG></CENTER>", false, false);
+			var count = 0;
 
-			AddHtml(30, 50, 340, 300, GetJournalEntries(), true, true);
+			m_JournalEntries = m_JournalEntries.OrderByDescending(x => x.DateCreated).ToList();
 
-			AddButton(30, 360, 120, 40, 0, GumpButtonType.Reply, 0, "Ajouter un article");
-			AddButton(250, 360, 120, 40, 0, GumpButtonType.Reply, 0, "Fermer");
-		}
+			var tempVisible = m_JournalEntries.Where(x => x.Visible);
+			var temp = tempVisible.Skip(m_Page * m_ArticlePerPage).Take(m_ArticlePerPage).ToList();
 
-		private void AddButton(int v1, int v2, int v3, int v4, int v5, GumpButtonType reply, int v6, string v7)
-		{
-			throw new NotImplementedException();
-		}
-
-		private string GetJournalEntries()
-		{
-			string html = "";
-
-			foreach (JournalEntry entry in m_JournalEntries)
+			foreach (var entry in temp)
 			{
-				html += "<p>" + entry.Title + "<br>" + entry.Body + "<br><i>" + entry.Date.ToString() + "</i></p>";
+				AddParcheminSection(100, 80 + count * 200, 770, 180, $"{entry.Title}" );
+				if (m_From.Journaliste || m_From.AccessLevel > AccessLevel.Player)
+				{
+					var index = m_JournalEntries.IndexOf(entry);
+					AddButton(860, 80 + count * 200, 4017, 4018, 100 + index, GumpButtonType.Reply, 0);
+				}
+				AddHtml(120, 100 + count * 200, 730, 140, $"<CENTER> - {entry.DateCreated} -\n\r{entry.Content}</CENTER>", true, true);
+				count++;
 			}
 
-			return html;
-		}
+			if (m_Page > 0)
+				AddButton(400, 760, 4014, 4015, 2, GumpButtonType.Reply, 0);
+			var maxPage = Math.Ceiling((double)tempVisible.Count() / m_ArticlePerPage) - 1;
+			AddLabel(500, 760, 0x480, $"{m_Page + 1}/{maxPage + 1}");
+			if (m_Page < maxPage)
+				AddButton(600, 760, 4005, 4006, 3, GumpButtonType.Reply, 0);
 
+			if (m_From.Journaliste || m_From.AccessLevel > AccessLevel.Player)
+			{
+				AddButton(100, 780, 2117, 2118, 1, GumpButtonType.Reply, 0);
+				AddLabel(120, 780, 0x480, "Ajouter un article au journal");
+			}
+		}
+		
 		public override void OnResponse(Server.Network.NetState sender, RelayInfo info)
 		{
-			if (info.ButtonID == 0) // Ajouter un article
+			if (info.ButtonID == 1)
 			{
-				m_From.SendMessage("Entrez le titre de l'article :");
-				m_From.Prompt = new AddJournalEntryPrompt(m_JournalEntries);
+				if (m_From.Journaliste || m_From.AccessLevel > AccessLevel.Player)
+					m_From.SendGump(new CJournalAddArticleGump(m_From, m_JournalEntries, _Path));
+			}
+			else if (info.ButtonID == 2)
+			{
+				m_Page--;
+
+				if (m_Page < 0)
+					m_Page = 0;
+				m_From.SendGump(new CJournalGump(m_From, m_JournalEntries, m_Page));
+			}
+			else if (info.ButtonID == 3)
+			{
+				m_Page++;
+				var tempVisible = m_JournalEntries.Where(x => x.Visible);
+				var maxPage = Math.Ceiling((double)tempVisible.Count() / m_ArticlePerPage) - 1;
+				if (m_Page > maxPage)
+					m_Page = (int)maxPage;
+				m_From.SendGump(new CJournalGump(m_From, m_JournalEntries, m_Page));
+			}
+			else if (info.ButtonID >= 100)
+			{
+				if (m_From.Journaliste || m_From.AccessLevel > AccessLevel.Player)
+				{
+					m_JournalEntries[info.ButtonID - 100].Visible = false;
+					var json = JsonConvert.SerializeObject(m_JournalEntries, Formatting.Indented);
+					File.WriteAllText(_Path, json);
+					m_From.SendGump(new CJournalGump(m_From, m_JournalEntries, m_Page));
+				}
 			}
 		}
 	}
 
-	public class AddJournalEntryPrompt : Prompt
+	public class CJournalAddArticleGump : BaseProjectMGump
 	{
+		private string _Path;
+		private CustomPlayerMobile m_From;
 		private List<JournalEntry> m_JournalEntries;
 
-		public AddJournalEntryPrompt(List<JournalEntry> journalEntries)
+		public CJournalAddArticleGump(CustomPlayerMobile from, List<JournalEntry> journalEntries, string path) : base("Journal de Colognan", 400, 400, false)
 		{
+			m_From = from;
 			m_JournalEntries = journalEntries;
+			_Path = path;
+
+			AddPage(0);
+			AddBackground(0, 0, 400, 400, 5054);
+
+			AddHtml(30, 20, 340, 20, "<CENTER><BIG>Journal de Colognan</BIG></CENTER>", false, false);
+
+			AddTextEntry(100, 80, 350, 20, 33, 10, "Titre");
+			AddTextEntry(120, 100, 350, 300, 33, 11, "Corps de texte");
+
+			AddButton(100, 450, 2117, 2118, 1, GumpButtonType.Reply, 0);
+			AddLabel(120, 450, 0x480, "Ajouter l'article au journal");
 		}
 
-		public override void OnResponse(Mobile from, string text)
+		public override void OnResponse(Server.Network.NetState sender, RelayInfo info)
 		{
-			JournalEntry entry = new JournalEntry(text, DateTime.Now);
-
-			m_JournalEntries.Add(entry);
-
-			from.SendLocalizedMessage(501234); // "Votre article a été ajouté au journal."
-
-			if (from is PlayerMobile)
+			if (info.ButtonID == 1)
 			{
-				PlayerMobile pm = (PlayerMobile)from;
-				pm.CloseGump(typeof(CJournalGump));
-				pm.SendGump(new CJournalGump(pm, m_JournalEntries));
+				var title = info.GetTextEntry(10).Text;
+				var content = info.GetTextEntry(11).Text;
+				var newEntry = new JournalEntry(m_From.Name, title, content, DateTime.Now, true);
+
+				m_JournalEntries.Add(newEntry);
+				var json = JsonConvert.SerializeObject(m_JournalEntries, Formatting.Indented);
+				File.WriteAllText(_Path, json);
 			}
+
+			m_From.SendGump(new CJournalGump(m_From, m_JournalEntries, 0));
 		}
 	}
 
 	public class JournalEntry
 	{
-		private string text;
-		private DateTime now;
-
+		public Guid Id { get; set; }
+		public bool Visible { get; set; }
+		public string WriterName { get; set; }
 		public string Title { get; set; }
-		public string Body { get; set; }
-		public DateTime Date { get; set; }
+		public string Content { get; set; }
+		public DateTime DateCreated { get; set; }
 
-		public JournalEntry(string title, string body, DateTime date)
+		public JournalEntry(string writerName, string title, string content, DateTime dateCreated, bool visible)
 		{
+			Id = Guid.NewGuid();
+			WriterName = writerName;
 			Title = title;
-			Body = body;
-			Date = date;
-		}
-
-		public JournalEntry(string text, DateTime now)
-		{
-			this.text = text;
-			this.now = now;
-		}
-	}
-
-	public class JournalCommand
-	{
-		public static void Initialize()
-		{
-			CommandSystem.Register("journal", AccessLevel.Player, new CommandEventHandler(OnJournalCommand));
-		}
-
-		[Usage("journal")]
-		[Description("Ouvre le journal de la ville et permet de lire et d'ajouter des articles.")]
-		private static void OnJournalCommand(CommandEventArgs e)
-		{
-			List<JournalEntry> journalEntries = new List<JournalEntry>();
-
-			// Charger les articles existants à partir du fichier JSON
-			string json = File.ReadAllText("journal.json");
-			if (!string.IsNullOrEmpty(json))
-			{
-				//journalEntries = JsonConvert.DeserializeObject<List<JournalEntry>>(json);
-			}
-
-			// Créer un nouveau gump pour afficher le journal
-			e.Mobile.CloseGump(typeof(CJournalGump));
-	//		e.Mobile.SendGump(new CJournalGump(journalEntries));
+			Content = content;
+			DateCreated = dateCreated;
+			Visible = visible;
 		}
 	}
 }
-
