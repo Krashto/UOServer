@@ -154,6 +154,14 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(TeteTaureau), "Chapeaux", "Tete de Taureau", 89.3, 109.3, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			#endregion
 
+			#region Female Armor
+			AddCraft(typeof(LeatherShorts), "Armures de Cuir", 1027168, 62.2, 87.2, typeof(PlainoisLeather), 1044462, 8, 1044463);
+			AddCraft(typeof(LeatherSkirt), "Armures de Cuir", 1027176, 58.0, 83.0, typeof(PlainoisLeather), 1044462, 6, 1044463);
+			AddCraft(typeof(LeatherBustierArms), "Armures de Cuir", 1027178, 58.0, 83.0, typeof(PlainoisLeather), 1044462, 6, 1044463);
+			AddCraft(typeof(StuddedBustierArms), "Armures Cloutée", 1027180, 82.9, 107.9, typeof(PlainoisLeather), 1044462, 8, 1044463);
+			AddCraft(typeof(FemaleLeatherChest), "Armures de Cuir", 1027174, 62.2, 87.2, typeof(PlainoisLeather), 1044462, 8, 1044463);
+			AddCraft(typeof(FemaleStuddedChest), "Armures Cloutée", 1027170, 87.1, 112.1, typeof(PlainoisLeather), 1044462, 10, 1044463);
+			#endregion
 
 			#region Armure de Cuir
 			AddCraft(typeof(LeatherGorget), "Armures de Cuir", 1025063, 20, 40, typeof(PlainoisLeather), 1044462, 4, 1044463);
@@ -214,7 +222,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(fourreau3), "Divers", "Fourreau bandouillère", 66.9, 86.9, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(FourreauDore), "Divers", "Fourreau Doré", 66.9, 86.9, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 
-
+			AddCraft(typeof(BrownBearRugSouthDeed), "Decorations", "Peau Ours Sud", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
+			AddCraft(typeof(BrownBearRugEastDeed), "Decorations", "Peau Ours Est", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
+			AddCraft(typeof(PolarBearRugSouthDeed), "Decorations", "Peau Ours Polaire Sud", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
+			AddCraft(typeof(PolarBearRugEastDeed), "Decorations", "Peau Ours Polaire Est", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
 
 			index = AddCraft(typeof(Corde), "Divers", "Corde", 60.0, 75.0, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			#endregion

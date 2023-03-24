@@ -639,50 +639,40 @@ namespace Server.Engines.Craft
 
             #endregion
 
-            #region Female Armor
-            AddCraft(typeof(LeatherShorts), "Armures de Cuir", 1027168, 62.2, 87.2, typeof(PlainoisLeather), 1044462, 8, 1044463);
-            AddCraft(typeof(LeatherSkirt), "Armures de Cuir", 1027176, 58.0, 83.0, typeof(PlainoisLeather), 1044462, 6, 1044463);
-            AddCraft(typeof(LeatherBustierArms), "Armures de Cuir", 1027178, 58.0, 83.0, typeof(PlainoisLeather), 1044462, 6, 1044463);
-            AddCraft(typeof(StuddedBustierArms), "Armures Cloutée", 1027180, 82.9, 107.9, typeof(PlainoisLeather), 1044462, 8, 1044463);
-            AddCraft(typeof(FemaleLeatherChest), "Armures de Cuir", 1027174, 62.2, 87.2, typeof(PlainoisLeather), 1044462, 8, 1044463);
-            AddCraft(typeof(FemaleStuddedChest), "Armures Cloutée", 1027170, 87.1, 112.1, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			#endregion
+            
 
 			#region Rideaux
-			AddCraft(typeof(RideauBlanc), "Rideaux", "Rideaux Blanc (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(RideauRouge), "Rideaux", "Rideaux Rouge (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(Voilage), "Rideaux", "Voilage (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(RideauBlanc), "Tapis/Rideaux", "Rideaux Blanc (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(RideauRouge), "Tapis/Rideaux", "Rideaux Rouge (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(Voilage), "Tapis/Rideaux", "Voilage (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
 			#endregion
 
 			#region Tapis
-			AddCraft(typeof(BlueDecorativeRugDeed), "Tapis", "Tapis décoratif bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(BlueFancyRugDeed), "Tapis", "Tapis huppé bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(BluePlainRugDeed), "Tapis", "Tapis bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(CinnamonFancyRugDeed), "Tapis", "Tapis Cannelle", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(GoldenDecorativeRugDeed), "Tapis", "Tapis Doré", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(PinkFancyRugDeed), "Tapis", "Tapis Huppé Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(RedPlainRugDeed), "Tapis", "Tapis Rouge", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(RoseRugAddonDeed), "Tapis", "Tapis Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(BrownBearRugSouthDeed), "Tapis", "Peau Ours Sud", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			AddCraft(typeof(BrownBearRugEastDeed), "Tapis", "Peau Ours Est", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			AddCraft(typeof(PolarBearRugSouthDeed), "Tapis", "Peau Ours Polaire Sud", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			AddCraft(typeof(PolarBearRugEastDeed), "Tapis", "Peau Ours Polaire Est", 85.0, 115.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
+			AddCraft(typeof(BlueDecorativeRugDeed), "Tapis/Rideaux", "Tapis décoratif bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(BlueFancyRugDeed), "Tapis/Rideaux", "Tapis huppé bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(BluePlainRugDeed), "Tapis/Rideaux", "Tapis bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(CinnamonFancyRugDeed), "Tapis/Rideaux", "Tapis Cannelle", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(GoldenDecorativeRugDeed), "Tapis/Rideaux", "Tapis Doré", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(PinkFancyRugDeed), "Tapis/Rideaux", "Tapis Huppé Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(RedPlainRugDeed), "Tapis/Rideaux", "Tapis Rouge", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			AddCraft(typeof(RoseRugAddonDeed), "Tapis/Rideaux", "Tapis Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			
 			#endregion
 
 			// Set the overridable material
-			SetSubRes(typeof(PlainoisLeather), 1049150);
+			SetSubRes(typeof(Cloth), "Tissus");
 
             // Add every material you want the player to be able to choose from
             // This will override the overridable material
-            AddSubRes(typeof(PlainoisLeather), "Cuir", 0.0, 1049312);
-			AddSubRes(typeof(ForestierLeather), "Lupus", 65.0, 1049312);
-			AddSubRes(typeof(DesertiqueLeather), "Reptilien", 70.0, 1049312);
-			AddSubRes(typeof(CollinoisLeather), "Geant", 75.0, 1049312);
-			AddSubRes(typeof(SavanoisLeather), "Ophidien", 80.0, 1049312);
-			AddSubRes(typeof(ToundroisLeather), "Arachnide", 85.0, 1049312);
-			AddSubRes(typeof(TropicauxLeather), "Dragonique", 90.0, 1049312);
-			AddSubRes(typeof(MontagnardLeather), "Demoniaque", 95.0, 1049312);
-			AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
+   //         AddSubRes(typeof(PlainoisLeather), "Cuir", 0.0, 1049312);
+			//AddSubRes(typeof(ForestierLeather), "Lupus", 65.0, 1049312);
+			//AddSubRes(typeof(DesertiqueLeather), "Reptilien", 70.0, 1049312);
+			//AddSubRes(typeof(CollinoisLeather), "Geant", 75.0, 1049312);
+			//AddSubRes(typeof(SavanoisLeather), "Ophidien", 80.0, 1049312);
+			//AddSubRes(typeof(ToundroisLeather), "Arachnide", 85.0, 1049312);
+			//AddSubRes(typeof(TropicauxLeather), "Dragonique", 90.0, 1049312);
+			//AddSubRes(typeof(MontagnardLeather), "Demoniaque", 95.0, 1049312);
+			//AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
 
             MarkOption = true;
             Repair = true;
