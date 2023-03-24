@@ -6,7 +6,7 @@ using Server.Network;
 
 namespace BedrollTent
 {
-	public class BedrollTent : Item
+	public class BedrollTent : Item, IDyable
 	{
 		private int m_Hue;
 		private SmallTent m_Tent;
@@ -26,12 +26,21 @@ namespace BedrollTent
 			m_Hue = hue;
 			m_Tent = null;
 			Hue = hue;
+			
 		}
 
 		public BedrollTent(Serial serial) : base(serial)
 		{
 		}
+		public bool Dye(Mobile from, DyeTub sender)
+		{
+			if (Deleted)
+				return false;
 
+			Hue = sender.DyedHue;
+
+			return true;
+		}
 		public override void OnDoubleClick(Mobile from)
 		{
 			if (from.InRange(GetWorldLocation(), 1))
