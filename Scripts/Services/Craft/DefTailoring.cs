@@ -104,8 +104,6 @@ namespace Server.Engines.Craft
         #region Overrides
         public override SkillName MainSkill => SkillName.Tailoring;
 
-		//    public override int GumpTitleNumber => 1044005;
-
 		public override string GumpTitleString => "Couture";
 		public override CraftECA ECA => CraftECA.Chance3Max;
 
@@ -190,13 +188,14 @@ namespace Server.Engines.Craft
                     return 1044154; // You create the item.
             }
         }
+		#endregion
 
-        public override void InitCraftList()
+		public override void InitCraftList()
         {
             int index = -1;
 
-
-			index = AddCraft(typeof(Jupe), "Jupes",  "Jupe à Bande", 61.4, 81.4, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Skirt), "Jupes", "Jupe Simple", 29.0, 54.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Jupe), "Jupes", "Jupe à Bande", 61.4, 81.4, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Jupe2), "Jupes",  "Jupe Délicate", 83.8, 103.8, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Jupe3), "Jupes", "Jupe Droite", 73.1, 93.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Jupe4), "Jupes", "Jupe Artisane", 79.6, 99.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
@@ -217,33 +216,94 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(JupeLacee2), "Jupes", "Jupe Lacée Sombre", 72.1,92.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(JupeLacee3), "Jupes", "Jupe Lacée Droite", 62.1,82.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(JupeOndule2), "Jupes", "Jupe Ondulée froufrou", 62.1, 82.1, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Kilt3), "Pantalons", "Grand Kilt", 53.0,73.0, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Kilt2), "Pantalons", "Kilt à Bandouillère", 75.0,95.0, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Pareo), "Jupes",  "Jupe Ouverte", 52.3,72.3, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(PareoCourt), "Jupes",  "Paréo", 92.6,112.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Pareo), "Jupes", "Jupe Ouverte", 52.3, 72.3, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(PareoCourt), "Jupes", "Paréo", 92.6, 112.6, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Jupe11), "Jupes", "Jupe Sombre", 47.8, 67.8, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Jupe8), "Jupes", "Jupe Provocante à Volants", 52.1, 72.1, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Jupe9), "Jupes", "Jupe à Saccoche", 56.7, 76.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Jupe10), "Jupes", "Jupe à Jartelles", 83.1, 103.1, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+
+			index = AddCraft(typeof(JesterSuit), "Hauts", "Tunique de bouffon", 8.2, 33.2, typeof(Cloth), "Tissus", 24, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Shirt), "Hauts", "Camisole", 20.7, 45.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(FancyShirt), "Hauts", "Chandail de banquet", 24.8, 49.8, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunic), "Hauts", "Tunique", 00.0, 25.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Surcoat), "Hauts", "Tunique ajustée", 8.2, 33.2, typeof(Cloth), "Tissus", 14, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Chandail), "Hauts", "Chandail distingué", 77.9,97.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Camisole), "Hauts", "Chandail de travail", 77.5,97.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Chandail2), "Hauts", "Tunique ornée", 84.5,104.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Tunique), "Hauts", "Tunique en peaux", 67.0,87.0, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Chemise), "Hauts", "Chemise propre", 52.1,72.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			// index = AddCraft(typeof(DebardeurSangles), "Hauts", "Debardeur Sangles ", 52.1, 72.1, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-		//	index = AddCraft(typeof(BrassiereTissus), "Hauts", "Brassiere Tissus", 52.1, 72.1, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Robe2), "Robes", "Robe provocante", 63.7,83.7, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Tunique2), "Hauts", "Tunique bouffante", 73.8,93.8, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Uniforme), "Hauts", "Manteau d'uniforme", 56.6,76.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Bustier), "Hauts", "Bustier ailé", 49.9, 69.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Bustier2), "Hauts", "Bustier provocant", 88.6, 108.6, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Bustier3), "Hauts", "Bustier demi-manche", 81.4, 101.4, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar), "Hauts", "Tabar simple", 72.3, 92.3, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar1), "Hauts", "Tabar orné", 67.0, 87.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar3), "Hauts", "Tabar à cape", 47.0, 67.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar4), "Hauts", "Tabar sombre", 93.3, 113.3, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar5), "Hauts", "Tabar sombre à griffon", 56.9, 76.9, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar6), "Hauts", "Tabar à arbre", 61.6, 81.6, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar7), "Hauts", "Tabar doré", 66.4, 86.4, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar8), "Hauts", "Tabar doré capitoné", 58.8, 78.8, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar9), "Hauts", "Grand tabar ouvert", 50.5, 70.5, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar10), "Hauts", "Grand tabar de toile", 69.4, 89.4, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tabar11), "Hauts", "Grand tabar simple", 61.3, 81.3, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail3), "Hauts", "Corset Bouffant", 90.4, 110.4, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail4), "Hauts", "Chandail ample", 81.7, 101.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail5), "Hauts", "Chandail propre", 81.7, 101.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail6), "Hauts", "Doublet demi-manche", 78.7, 98.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail7), "Hauts", "Grand chandail", 73.0, 93.0, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail8), "Hauts", "Chandail Manche Longue", 96.6, 116.6, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail9), "Hauts", "Chandail bouffant", 85.2, 105.2, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chandail10), "Hauts", "Chandail manche ample", 63.7, 83.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chemise2), "Hauts", "Chemise noble", 53.2, 73.2, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chemise3), "Hauts", "Chemise longue lacée", 88.1, 108.1, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chemise4), "Hauts", "Chemise simple", 97.9, 117.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chemise5), "Hauts", "Chemise ajustée", 91.8, 111.8, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chemise6), "Hauts", "Chemise lacée", 65.4, 85.4, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chemise7), "Hauts", "Manteau élégant", 97.2, 117.2, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Doublet), "Hauts", "Doublet", 58.3, 78.3, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Doublet2), "Hauts", "Doublet à épaulette", 84.7, 104.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Doublet3), "Hauts", "Doublet lacé", 93.9, 113.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Doublet4), "Hauts", "Doublet lacé croisé", 69.9, 89.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Doublet5), "Hauts", "Doublet ajusté", 70.7, 90.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Doublet6), "Hauts", "Doublet à bouton", 56.5, 76.5, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique3), "Hauts", "Tunique à plis", 51.5, 71.5, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique4), "Hauts", "Tunique à cordon", 77.6, 97.6, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique5), "Hauts", "Tunique sans manche", 74.9, 94.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique6), "Hauts", "Tunique à voilant", 69.9, 89.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique7), "Hauts", "Tunique propre", 76.3, 96.3, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique8), "Hauts", "Tunique élégante", 88.5, 108.5, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique9), "Hauts", "Tunique sombre", 92.5, 112.5, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Tunique10), "Hauts", "Tunique à ceinture", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChemiseRiche), "Hauts", "Chemise Riche", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(VestonRiche), "Hauts", "Veston Riche", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChemiseCorset1), "Hauts", "Chemise à Corset 1", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChemiseCorset2), "Hauts", "Chemise à Corset 2", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CorsetCuir), "Hauts", "Corset de Cuir", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CorsetEpaule), "Hauts", "Corset Épaule", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CorsetSimple), "Hauts", "Corset Simple", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CorsetTissus), "Hauts", "Corset de Tissus", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Manteau), "Hauts", "Manteau orné", 66.5, 86.5, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Manteau2), "Hauts", "Manteau ample", 71.0, 91.0, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Veste), "Hauts", "Veste", 62.7, 82.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Veste2), "Hauts", "Veste manche courte", 82.6, 102.6, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Veste3), "Hauts", "Manteau Propre", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(TuniqueCeinture), "Hauts", "Tunique à Ceinture", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ManteauDore), "Hauts", "Manteau Doré", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(HautLacet), "Hauts", "Haut Lacet", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ElvenShirt), "Hauts", "Chemise ornée", 80.0, 105.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ElvenDarkShirt), "Hauts", "Chemise ornée sombre", 80.0, 105.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+
+			index = AddCraft(typeof(PlainDress), "Robes", "Robe Paysane", 12.4, 37.4, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(FancyDress), "Robes", "Robe élégante", 33.1, 58.1, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Robe2), "Robes", "Robe provocante", 63.7,83.7, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Robe19), "Robes", "Robe sans manche", 61.2,81.2, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeCourte), "Robes",  "Robe Courte", 82.1,102.1, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Robe3), "Robes", "Robe manches courtes", 94.7,114.7, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
-		//	index = AddCraft(typeof(Robe4), "Robes", "Robe ornée", 79.1,99.1, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeMoulante), "Robes", "Robe Moulante", 79.1, 99.1, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Jupe11), "Jupes", "Jupe Sombre", 47.8,67.8, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeProvocante), "Robes",  "Robe Sombre", 73.9,93.9, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Bustier), "Hauts", "Bustier ailé", 49.9,69.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Bustier2), "Hauts", "Bustier provocant", 88.6,108.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Bustier3), "Hauts", "Bustier demi-manche", 81.4,101.4, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Jupe8), "Jupes", "Jupe Provocante à Volants", 52.1,72.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Jupe9), "Jupes", "Jupe à Saccoche", 56.7,76.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Jupe10), "Jupes", "Jupe à Jartelles", 83.1,103.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Robe5), "Robes", "Robe artisane", 81.7,101.7, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Robe6), "Robes", "Robe à volants", 58.1,78.1, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Robe7), "Robes", "Robe Simple", 97.3,117.3, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
@@ -262,7 +322,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(RobeProvocante5), "Robes", "Robe provocante légère", 51.6,71.6, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeProvocante6), "Robes", "Robe dorée", 76.0,96.0, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Robe18), "Robes", "Robe à Col", 78.8,98.8, typeof(Cloth),"Tissus", 16, "Vous n'avez pas assez de tissus.");
-
 			index = AddCraft(typeof(RobeCourteLacet), "Robes", "Robe Courte Lacet", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeBleudecolte), "Robes", "Robe Bleue decoltée", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeLacetCuir), "Robes", "Robe Lacet Cuir", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
@@ -270,11 +329,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(RobeCorset), "Robes", "Robe Corset", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeNobleDecolte), "Robes", "Robe Noble Decoltée", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RobeDoree), "Robes", "Robe Dorée", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Drapee), "Robes", "Drapée", 83.2, 103.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(MaleElvenRobe), "Robes", "Robe à Capuchon", 80.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(FemaleElvenRobe), "Robes", "Grande Robe Toge", 80.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
 
-			//index = AddCraft(typeof(RobeBal1), "Robes", "Robe de Bal Style 1", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-			//index = AddCraft(typeof(RobeBal2), "Robes", "Robe de Bal Style 2", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-			//index = AddCraft(typeof(RobeBal3), "Robes", "Robe de Bal Style 3", 78.8, 98.8, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-
+			index = AddCraft(typeof(Robe), "Toges", "Toge Simple", 53.9, 78.9, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Toge), "Toges", "Toge Souple", 46.4,66.4, typeof(Cloth),"Tissus", 18, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Toge2), "Toges", "Toge Propre", 71.7,91.7, typeof(Cloth),"Tissus", 18, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Toge3), "Toges", "Toge à épaulettes", 46.4,66.4, typeof(Cloth),"Tissus", 18, "Vous n'avez pas assez de tissus.");
@@ -285,57 +344,12 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Toge8), "Toges", "Toge Sombre", 50.9,70.9, typeof(Cloth),"Tissus", 18, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(TogeKoraine), "Toges", "Toge Koraine", 50.9, 70.9, typeof(Cloth), "Tissus", 18, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(TogeSparte), "Toges", "Toge Sparte", 50.9, 70.9, typeof(Cloth), "Tissus", 18, "Vous n'avez pas assez de tissus.");
-			//index = AddCraft(typeof(Poncho), "Toges", "Poncho", 50.9, 70.9, typeof(Cloth), "Tissus", 18, "Vous n'avez pas assez de tissus.");
-			//index = AddCraft(typeof(TogePhilosophe), "Toges", "Toge Philosophe", 50.9, 70.9, typeof(Cloth), "Tissus", 18, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar), "Hauts", "Tabar simple", 72.3,92.3, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar1), "Hauts", "Tabar orné", 67.0,87.0, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar3), "Hauts", "Tabar à cape", 47.0,67.0, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar4), "Hauts", "Tabar sombre", 93.3,113.3, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar5), "Hauts", "Tabar sombre à griffon", 56.9,76.9, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar6), "Hauts", "Tabar à arbre", 61.6,81.6, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar7), "Hauts", "Tabar doré", 66.4,86.4, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar8), "Hauts", "Tabar doré capitoné", 58.8,78.8, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar9), "Hauts", "Grand tabar ouvert", 50.5,70.5, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar10), "Hauts", "Grand tabar de toile", 69.4,89.4, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tabar11), "Hauts", "Grand tabar simple", 61.3,81.3, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail3), "Hauts", "Corset Bouffant", 90.4,110.4, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail4), "Hauts", "Chandail ample", 81.7,101.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail5), "Hauts", "Chandail propre", 81.7,101.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail6), "Hauts", "Doublet demi-manche", 78.7,98.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail7), "Hauts", "Grand chandail", 73.0,93.0, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail8), "Hauts", "Chandail Manche Longue", 96.6,116.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail9), "Hauts", "Chandail bouffant", 85.2,105.2, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chandail10), "Hauts", "Chandail manche ample", 63.7,83.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chemise2), "Hauts", "Chemise noble", 53.2,73.2, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chemise3), "Hauts", "Chemise longue lacée", 88.1,108.1, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chemise4), "Hauts", "Chemise simple", 97.9,117.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chemise5), "Hauts", "Chemise ajustée", 91.8,111.8, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chemise6), "Hauts", "Chemise lacée", 65.4,85.4, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Chemise7), "Hauts", "Manteau élégant", 97.2,117.2, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Doublet), "Hauts", "Doublet", 58.3,78.3, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Doublet2), "Hauts", "Doublet à épaulette", 84.7,104.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Doublet3), "Hauts", "Doublet lacé", 93.9,113.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Doublet4), "Hauts", "Doublet lacé croisé", 69.9,89.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Doublet5), "Hauts", "Doublet ajusté", 70.7,90.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Doublet6), "Hauts", "Doublet à bouton", 56.5,76.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique3), "Hauts", "Tunique à plis", 51.5,71.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique4), "Hauts", "Tunique à cordon", 77.6,97.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique5), "Hauts", "Tunique sans manche", 74.9,94.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique6), "Hauts", "Tunique à voilant", 69.9,89.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique7), "Hauts", "Tunique propre", 76.3,96.3, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique8), "Hauts", "Tunique élégante", 88.5,108.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique9), "Hauts", "Tunique sombre", 92.5,112.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Tunique10), "Hauts", "Tunique à ceinture", 65.7,85.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
 
-			index = AddCraft(typeof(ChemiseRiche), "Hauts", "Chemise Riche", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(VestonRiche), "Hauts", "Veston Riche", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(ChemiseCorset1), "Hauts", "Chemise à Corset 1", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(ChemiseCorset2), "Hauts", "Chemise à Corset 2", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CorsetCuir), "Hauts", "Corset de Cuir", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CorsetEpaule), "Hauts", "Corset Épaule", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CorsetSimple), "Hauts", "Corset Simple", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CorsetTissus), "Hauts", "Corset de Tissus", 65.7, 85.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-
+			index = AddCraft(typeof(ShortPants), "Pantalons", "Short Taille Haute", 24.8, 49.8, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(LongPants), "Pantalons", "Pantalon Taille Haute", 24.8, 49.8, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Kilt), "Pantalons", "Kilt", 20.7, 45.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Kilt3), "Pantalons", "Grand Kilt", 53.0, 73.0, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Kilt2), "Pantalons", "Kilt à Bandouillère", 75.0, 95.0, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Pantalon1), "Pantalons", "Pantalon Ample", 90.8,110.8, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Pantalon2), "Pantalons", "Pantalon à Motifs", 58.0,78.0, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Pantalon3), "Pantalons", "Pantalon à Fourrure", 92.6,112.6, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
@@ -350,26 +364,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Pantalon12), "Pantalons", "Pantalon de Toile", 53.3,73.3, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Salopette), "Pantalons",  "Salopette", 81.3,101.3, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(CulotteLeopard), "Pantalons", "Pantalons Léopard", 81.3, 101.3, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Manteau), "Hauts", "Manteau orné", 66.5,86.5, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Manteau2), "Hauts", "Manteau ample", 71.0,91.0, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Veste), "Hauts",  "Veste", 62.7,82.7, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Veste2), "Hauts", "Veste manche courte", 82.6,102.6, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Veste3), "Hauts", "Manteau Propre", 48.9,68.9, typeof(Cloth),"Tissus", 8, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ElvenPants), "Pantalons", "Pantalon Moulant", 80.0, 105.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(WoodlandBelt), "Pantalons", "Pagne", 80.0, 105.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
 
-			index = AddCraft(typeof(TuniqueCeinture), "Hauts", "Tunique à Ceinture", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(ManteauDore), "Hauts", "Manteau Doré", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(HautLacet), "Hauts", "Haut Lacet", 48.9, 68.9, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-
-		
-			index = AddCraft(typeof(Foulard), "Divers",  "Foulard", 65.5,85.5, typeof(Cloth),"Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Foulard2), "Divers", "Foulard épaule", 57.2,77.2, typeof(Cloth),"Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Foulard4), "Divers", "Cache-Visage", 56.8,76.8, typeof(Cloth),"Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Cocarde), "Divers",  "Cocarde", 59.0,79.0, typeof(Cloth),"Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BandagesPieds), "Divers", "Bandages Pieds", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BandagesBras), "Divers", "Bandages Bras", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BandagesTaille), "Divers", "Bandages Taille", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Capuche), "Chapeaux", "Capuche", 55.3,75.3, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
-
 			index = AddCraft(typeof(CapucheToile), "Chapeaux", "Capuche à Toile", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ChapeauFoulard), "Chapeaux", "Chapeau Foulard", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ChapeauMousquetaire), "Chapeaux", "Chapeau Mousquetaire", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
@@ -377,19 +375,28 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CoiffeColore), "Chapeaux", "Coiffe Colorée", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ToqueBouffon), "Chapeaux", "Toque Bouffon", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(MasqueEpouvantail), "Chapeaux", "Masque Epouvantail", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-		
 			index = AddCraft(typeof(Capuche2), "Chapeaux", "Grande Capuche", 97.0,117.0, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
-			
 			index = AddCraft(typeof(Toque), "Chapeaux",  "Toque", 89.4,109.4, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Turban), "Chapeaux",  "Turban", 90.7,110.7, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(VoileTete), "Chapeaux", "Voile", 84.0,104.0, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(VoileTeteLong), "Chapeaux", "Long voile", 94.8,114.8, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChapeauPirate), "Chapeaux", "Chapeau de Pirate", 53.3, 73.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(SkullCap), "Chapeaux", "Bandana", 0.0, 25.0, typeof(Cloth), "Tissus", 2, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Bandana), "Chapeaux", "Bandeau", 0.0, 25.0, typeof(Cloth), "Tissus", 2, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(FloppyHat), "Chapeaux", "Chapeau", 6.2, 31.2, typeof(Cloth), "Tissus", 11, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Cap), "Chapeaux", "Petit Chapeau", 6.2, 31.2, typeof(Cloth), "Tissus", 11, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(WideBrimHat), "Chapeaux", "Petit chapeau de paille", 6.2, 31.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(StrawHat), "Chapeaux", "Chapeau de paille", 6.2, 31.2, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(TallStrawHat), "Chapeaux", "Grand chapeau de paille", 6.7, 31.7, typeof(Cloth), "Tissus", 13, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(WizardsHat), "Chapeaux", "Chapeau de sorcier", 7.2, 32.2, typeof(Cloth), "Tissus", 15, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Bonnet), "Chapeaux", "Bonnet", 6.2, 31.2, typeof(Cloth), "Tissus", 11, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(FeatheredHat), "Chapeaux", "Chapeau à plume", 6.2, 31.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(TricorneHat), "Chapeaux", "Chapeau Tricorne", 6.2, 31.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(JesterHat), "Chapeaux", "Chapeau de bouffon", 7.2, 32.2, typeof(Cloth), "Tissus", 15, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ClothNinjaHood), "Chapeaux", "Capuche de ninja", 80.0, 105.0, typeof(Cloth), "Tissus", 13, "Vous n'avez pas assez de tissus.");
+
+			index = AddCraft(typeof(Cloak), "Capes", "Cape Simple", 41.4, 66.4, typeof(Cloth), "Tissus", 14, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(VoileDos), "Capes", "Voile De Dos", 94.8, 114.8, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BourseCeinture), "Divers",  "Bourse de Ceinture", 53.4,73.4, typeof(Cloth),"Tissus", 10, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CacheOeil1), "Divers", "Cache Oeil Droit", 53.4, 73.4, typeof(Cloth), "Tissus", 3, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CacheOeil2), "Divers", "Cache Oeil Gauche", 53.4, 73.4, typeof(Cloth), "Tissus", 3, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CacheOeil3), "Divers", "Bandeau Oeil droit", 53.4, 73.4, typeof(Cloth), "Tissus", 3, "Vous n'avez pas assez de tissus.");
-			
 			index = AddCraft(typeof(Cape), "Capes", "Cape à Vollets",  51.9,71.9, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Cape2), "Capes", "Cape à plumes",  59.7,79.7, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Cape3), "Capes", "Cape à voiles",    98.5,118.5, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
@@ -401,118 +408,28 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Cape9), "Capes", "Demi cape Distinguée",    72.6,92.6, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Cape10), "Capes", "Demi cape en cuir",   49.1,69.1, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Cape11), "Capes", "Demi cape élégante",   83.2,103.2, typeof(Cloth),"Tissus", 12, "Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Drapee), "Robes", "Drapée", 83.2, 103.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(CapeBleu), "Capes", "Cape Bleue", 83.2, 103.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(CapePaon), "Capes", "Cape Paon", 83.2, 103.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
 
-			index = AddCraft(typeof(ChapeauPirate), "Chapeaux",  "Chapeau de Pirate", 53.3,73.3, typeof(Cloth),"Tissus", 6, "Vous n'avez pas assez de tissus.");
-		//	index = AddCraft(typeof(ChapeauPiratePlume), "Chapeaux", "Chapeau de Pirate à plume", 53.3, 73.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-
-			#region Materials
-		//	index = AddCraft(typeof(CutUpCloth), "Divers", "Bout de tissus", 0.0, 0.0, typeof(BoltOfCloth), 1044453, 1, 1044253);
-        //    AddCraftAction(index, CutUpCloth);
-
-            index = AddCraft(typeof(CombineCloth), "Divers", "Tissus Combiné", 0.0, 0.0, typeof(Cloth), "Tissus", 1, 1044253);
+			index = AddCraft(typeof(CombineCloth), "Divers", "Tissus Combiné", 0.0, 0.0, typeof(Cloth), "Tissus", 1, 1044253);
             AddCraftAction(index, CombineCloth);
-
-            
-
-            #endregion
-
-            #region Hats
-            AddCraft(typeof(SkullCap), "Chapeaux", "Bandana", 0.0, 25.0, typeof(Cloth), "Tissus", 2, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Bandana), "Chapeaux", "Bandeau", 0.0, 25.0, typeof(Cloth), "Tissus", 2, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(FloppyHat), "Chapeaux", "Chapeau", 6.2, 31.2, typeof(Cloth), "Tissus", 11, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Cap), "Chapeaux", "Petit Chapeau", 6.2, 31.2, typeof(Cloth), "Tissus", 11, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(WideBrimHat), "Chapeaux", "Petit chapeau de paille", 6.2, 31.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(StrawHat), "Chapeaux", "Chapeau de paille", 6.2, 31.2, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(TallStrawHat), "Chapeaux", "Grand chapeau de paille", 6.7, 31.7, typeof(Cloth), "Tissus", 13, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(WizardsHat), "Chapeaux", "Chapeau de sorcier", 7.2, 32.2, typeof(Cloth), "Tissus", 15, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Bonnet), "Chapeaux", "Bonnet", 6.2, 31.2, typeof(Cloth), "Tissus", 11, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(FeatheredHat), "Chapeaux", "Chapeau à plume", 6.2, 31.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(TricorneHat), "Chapeaux", "Chapeau Tricorne", 6.2, 31.2, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(JesterHat), "Chapeaux", "Chapeau de bouffon", 7.2, 32.2, typeof(Cloth), "Tissus", 15, "Vous n'avez pas assez de tissus.");
-
-      
-
-            AddCraft(typeof(ClothNinjaHood), "Chapeaux", "Capuche de ninja", 80.0, 105.0, typeof(Cloth), "Tissus", 13, "Vous n'avez pas assez de tissus.");
-
-     //       AddCraft(typeof(Kasa), "Chapeaux", 1030211, 60.0, 85.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-
-          
-
-            #endregion
-
-            #region Shirts/Pants
-          //  AddCraft(typeof(Doublet), "Hauts", 1028059, 0, 25.0, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Shirt), "Hauts", "Camisole", 20.7, 45.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(FancyShirt), "Hauts", "Chandail de banquet", 24.8, 49.8, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Tunic), "Hauts", "Tunique", 00.0, 25.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Surcoat), "Hauts", "Tunique ajustée", 8.2, 33.2, typeof(Cloth), "Tissus", 14, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(PlainDress), "Robes", "Robe Paysane", 12.4, 37.4, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(FancyDress), "Robes", "Robe élégante", 33.1, 58.1, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Cloak), "Capes", "Cape Simple", 41.4, 66.4, typeof(Cloth), "Tissus", 14, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Robe), "Toges", "Toge Simple", 53.9, 78.9, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(JesterSuit), "Hauts", "Tunique de bouffon", 8.2, 33.2, typeof(Cloth), "Tissus", 24, "Vous n'avez pas assez de tissus.");
-
-			//   AddCraft(typeof(FurCape), "Hauts", 1028969, 35.0, 60.0, typeof(Cloth), "Tissus", 13, "Vous n'avez pas assez de tissus.");  - Stock de Gargouille
-			//    AddCraft(typeof(GildedDress), "Hauts", 1028973, 37.5, 62.5, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus."); - Stock de Gargouille
-			//    AddCraft(typeof(FormalShirt), "Hauts", 1028975, 26.0, 51.0, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus."); - Stock de Gargouille
-
-		//	index = AddCraft(typeof(ClothNinjaJacket), "Hauts", 1030207, 75.0, 100.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-
-     //       index = AddCraft(typeof(Kamishimo), "Hauts", 1030212, 75.0, 100.0, typeof(Cloth), "Tissus", 15, "Vous n'avez pas assez de tissus.");
-
-    //        index = AddCraft(typeof(HakamaShita), "Hauts", 1030215, 40.0, 65.0, typeof(Cloth), "Tissus", 14, "Vous n'avez pas assez de tissus.");
-
-    //        index = AddCraft(typeof(MaleKimono), "Hauts", 1030189, 50.0, 75.0, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-
-      //      index = AddCraft(typeof(FemaleKimono), "Hauts", 1030190, 50.0, 75.0, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-
-      //      index = AddCraft(typeof(JinBaori), "Hauts", 1030220, 30.0, 55.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-
-            AddCraft(typeof(ShortPants), "Pantalons", "Short Taille Haute", 24.8, 49.8, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(LongPants), "Pantalons", "Pantalon Taille Haute", 24.8, 49.8, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Kilt), "Pantalons", "Kilt", 20.7, 45.7, typeof(Cloth), "Tissus", 8, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Skirt), "Jupes", "Jupe Simple", 29.0, 54.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-
-       //     AddCraft(typeof(FurSarong), "Hauts", 1028971, 35.0, 60.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-
-     //       index = AddCraft(typeof(Hakama), "Hauts", 1030213, 50.0, 75.0, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-
-      //      index = AddCraft(typeof(TattsukeHakama), "Pantalons", "Pantalon ample", 50.0, 75.0, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(ElvenShirt), "Hauts", "Chemise ornée", 80.0, 105.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(ElvenDarkShirt), "Hauts", "Chemise ornée sombre", 80.0, 105.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(ElvenPants), "Pantalons", "Pantalon Moulant", 80.0, 105.0, typeof(Cloth), "Tissus", 12, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(MaleElvenRobe), "Robes", "Robe à Capuchon", 80.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(FemaleElvenRobe), "Robes", "Grande Robe Toge", 80.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(WoodlandBelt), "Pantalons", "Pagne", 80.0, 105.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-
-            #endregion
-
-            #region Misc
-            AddCraft(typeof(BodySash), "Divers", "Ceinture de Corps", 4.1, 29.1, typeof(Cloth), "Tissus", 4, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(HalfApron), "Divers", "Demi-Tablier", 20.7, 45.7, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(FullApron), "Divers", "Tablier", 29.0, 54.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
-
-    //        AddCraft(typeof(Obi), "Divers", 1030219, 20.0, 45.0, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-
-            index = AddCraft(typeof(ElvenQuiver), "Divers", "Petit Carquois", 65.0, 115.0, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			
-
-			
-
-
-			AddCraft(typeof(GargoyleHalfApron), "Divers", "Demi trablié élégant", 20.7, 45.7, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
-            AddCraft(typeof(Sash), "Divers", "Cocarde élégant", 4.1, 29.1, typeof(Cloth), "Tissus", 4, "Vous n'avez pas assez de tissus.");
-
-		//	index = AddCraft(typeof(OilCloth), "Divers", 1041498, 74.6, 99.6, typeof(Cloth), "Tissus", 1, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Foulard), "Divers", "Foulard", 65.5, 85.5, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Foulard2), "Divers", "Foulard épaule", 57.2, 77.2, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Foulard4), "Divers", "Cache-Visage", 56.8, 76.8, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Cocarde), "Divers", "Cocarde", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BandagesPieds), "Divers", "Bandages Pieds", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BandagesBras), "Divers", "Bandages Bras", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BandagesTaille), "Divers", "Bandages Taille", 59.0, 79.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BourseCeinture), "Divers", "Bourse de Ceinture", 53.4, 73.4, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CacheOeil1), "Divers", "Cache Oeil Droit", 53.4, 73.4, typeof(Cloth), "Tissus", 3, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CacheOeil2), "Divers", "Cache Oeil Gauche", 53.4, 73.4, typeof(Cloth), "Tissus", 3, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CacheOeil3), "Divers", "Bandeau Oeil droit", 53.4, 73.4, typeof(Cloth), "Tissus", 3, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BodySash), "Divers", "Ceinture de Corps", 4.1, 29.1, typeof(Cloth), "Tissus", 4, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(HalfApron), "Divers", "Demi-Tablier", 20.7, 45.7, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(FullApron), "Divers", "Tablier", 29.0, 54.0, typeof(Cloth), "Tissus", 10, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ElvenQuiver), "Divers", "Petit Carquois", 65.0, 115.0, typeof(PlainoisLeather), 1044462, 12, 1044463);
+			index = AddCraft(typeof(GargoyleHalfApron), "Divers", "Demi trablié élégant", 20.7, 45.7, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Sash), "Divers", "Cocarde élégant", 4.1, 29.1, typeof(Cloth), "Tissus", 4, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(GozaMatEastDeed), "Divers", 1030404, 55.0, 80.0, typeof(Cloth), "Tissus", 25, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(GozaMatSouthDeed), "Divers", 1030405, 55.0, 80.0, typeof(Cloth), "Tissus", 25, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(SquareGozaMatDeed), "Divers", 1113621, 55.0, 80.0, typeof(Cloth), "Tissus", 25, "Vous n'avez pas assez de tissus.");
@@ -527,7 +444,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LargeSquarePillow), "Divers", "Coussin Carré", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ThrowPillow), "Divers", "Coussin à Motifs", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Draps), "Divers", "Draps", 90.0, 100.0, typeof(Cloth), "Tissus", 25, "Vous n'avez pas assez de tissus.");
-
 			index = AddCraft(typeof(Coussin1), "Divers", "Coussin", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Coussin2), "Divers", "Coussin", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Coussin3), "Divers", "Coussin", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
@@ -535,151 +451,23 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Coussin5), "Divers", "Coussin", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Coussin6), "Divers", "Coussin", 55.0, 80.0, typeof(Cloth), "Tissus", 20, "Vous n'avez pas assez de tissus.");
 
-
-			
-
-
-			#endregion
-
-			
-
-			
-
-			
-
-			
-
-
-
-
-			//AddCraft(typeof(BrassardCuirSombre), "Armures de Cuir", "Brassard de Cuir Sombre", 53.9, 78.9, typeof(PlainoisLeather), 1044462, 4, 1044463);
-			//AddCraft(typeof(JambiereCuirSombre), "Armures de Cuir", "Jambiere de Cuir Sombre", 66.3, 91.3, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			//AddCraft(typeof(PlastronCuirSombre), "Armures de Cuir", "Plastron de Cuir Sombre", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(BottesBarbare), "Armures de Cuir", "Bottes Barbare", 66.3, 91.3, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			//AddCraft(typeof(BrassardBarbare), "Armures de Cuir", "Brassard Barbare", 53.9, 78.9, typeof(PlainoisLeather), 1044462, 4, 1044463);
-			//AddCraft(typeof(BrassardBarbare2), "Armures de Cuir", "Brassard Barbare2", 53.9, 78.9, typeof(PlainoisLeather), 1044462, 4, 1044463);
-			//AddCraft(typeof(CasqueBarbare), "Armures de Cuir", "Casque Barbare", 6.2, 31.2, typeof(PlainoisLeather), 1044462, 2, 1044463);
-			//AddCraft(typeof(EpauliereBarbare), "Armures de Cuir", "Épaulière Barbare", 53.9, 78.9, typeof(PlainoisLeather), 1044462, 4, 1044463);
-			//AddCraft(typeof(GantsBarbare), "Armures de Cuir", "Gants Barbare", 51.8, 76.8, typeof(PlainoisLeather), 1044462, 3, 1044463);
-			//AddCraft(typeof(GorgetBarbare), "Armures de Cuir", "Gorget Barbare", 53.9, 78.9, typeof(PlainoisLeather), 1044462, 4, 1044463);
-			//AddCraft(typeof(JambiereBarbare), "Armures de Cuir", "Jambiere Barbare", 66.3, 91.3, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			//AddCraft(typeof(JambiereBarbare2), "Armures de Cuir", "Jambière Barbare2", 66.3, 91.3, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			//AddCraft(typeof(JambiereBarbare3), "Armures de Cuir", "Jambière Barbare3", 66.3, 91.3, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			//AddCraft(typeof(PlastronBarbare), "Armures de Cuir", "Plastron Barbare", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(PlastronBarbare2), "Armures de Cuir", "Plastron Barbare2", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(PlastronBarbare3), "Armures de Cuir", "Plastron Barbare3", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(PlastronBarbare4), "Armures de Cuir", "Plastron Barbare4", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(PlastronBarbare5), "Armures de Cuir", "Plastron Barbare5", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(PlastronBarbare6), "Armures de Cuir", "Plastron Barbare5", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-			//AddCraft(typeof(PlastronBarbare7), "Armures de Cuir", "Plastron Barbare7", 70.5, 95.5, typeof(PlainoisLeather), 1044462, 12, 1044463);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	//		index = AddCraft(typeof(LeatherJingasa), "Armures de Cuir", 1030177, 45.0, 70.0, typeof(Leather), 1044462, 4, 1044463);
-	
-    //        index = AddCraft(typeof(LeatherMempo), "Armures de Cuir", 1030181, 80.0, 105.0, typeof(Leather), 1044462, 8, 1044463);
-
-    //        index = AddCraft(typeof(LeatherDo), "Armures de Cuir", 1030182, 75.0, 100.0, typeof(Leather), 1044462, 12, 1044463);
-
-    //        index = AddCraft(typeof(LeatherHiroSode), "Armures de Cuir", 1030185, 55.0, 80.0, typeof(Leather), 1044462, 5, 1044463);
-
-    //        index = AddCraft(typeof(LeatherSuneate), "Armures de Cuir", 1030193, 68.0, 93.0, typeof(Leather), 1044462, 12, 1044463);
-
-     //       index = AddCraft(typeof(LeatherHaidate), "Armures de Cuir", 1030197, 68.0, 93.0, typeof(Leather), 1044462, 12, 1044463);
-
-      //      index = AddCraft(typeof(LeatherNinjaPants), "Armures de Cuir", 1030204, 80.0, 105.0, typeof(Leather), 1044462, 13, 1044463);
-
-      //      index = AddCraft(typeof(LeatherNinjaJacket), "Armures de Cuir", 1030206, 85.0, 110.0, typeof(Leather), 1044462, 13, 1044463);
-
-      //      index = AddCraft(typeof(LeatherNinjaBelt), "Armures de Cuir", 1030203, 50.0, 75.0, typeof(Leather), 1044462, 5, 1044463);
-
-      //      index = AddCraft(typeof(LeatherNinjaMitts), "Armures de Cuir", 1030205, 65.0, 90.0, typeof(Leather), 1044462, 12, 1044463);
-
-      //      index = AddCraft(typeof(LeatherNinjaHood), "Armures de Cuir", 1030201, 90.0, 115.0, typeof(Leather), 1044462, 14, 1044463);
-
-         
-
-    
-            #endregion
-
-            #region Cloth Armor
-         
-       
-            #endregion
-
-            #region Studded Armor
-            
-
-
-	//		index = AddCraft(typeof(StuddedMempo), "Armures Cloutée", 1030216, 80.0, 105.0, typeof(Leather), 1044462, 8, 1044463);
-
-      //      index = AddCraft(typeof(StuddedDo), "Armures Cloutée", 1030183, 95.0, 120.0, typeof(Leather), 1044462, 14, 1044463);
-
-       //     index = AddCraft(typeof(StuddedHiroSode), "Armures Cloutée", 1030186, 85.0, 110.0, typeof(Leather), 1044462, 8, 1044463);
-
-        //    index = AddCraft(typeof(StuddedSuneate), "Armures Cloutée", 1030194, 92.0, 117.0, typeof(Leather), 1044462, 14, 1044463);
-
-          //  index = AddCraft(typeof(StuddedHaidate), "Armures Cloutée", 1030198, 92.0, 117.0, typeof(Leather), 1044462, 14, 1044463);
-
-            
-
-            #endregion
-
-            
-
-			#region Rideaux
-			AddCraft(typeof(RideauBlanc), "Tapis/Rideaux", "Rideaux Blanc (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(RideauRouge), "Tapis/Rideaux", "Rideaux Rouge (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(Voilage), "Tapis/Rideaux", "Voilage (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
-			#endregion
-
-			#region Tapis
-			AddCraft(typeof(BlueDecorativeRugDeed), "Tapis/Rideaux", "Tapis décoratif bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(BlueFancyRugDeed), "Tapis/Rideaux", "Tapis huppé bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(BluePlainRugDeed), "Tapis/Rideaux", "Tapis bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(CinnamonFancyRugDeed), "Tapis/Rideaux", "Tapis Cannelle", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(GoldenDecorativeRugDeed), "Tapis/Rideaux", "Tapis Doré", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(PinkFancyRugDeed), "Tapis/Rideaux", "Tapis Huppé Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(RedPlainRugDeed), "Tapis/Rideaux", "Tapis Rouge", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			AddCraft(typeof(RoseRugAddonDeed), "Tapis/Rideaux", "Tapis Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-
-			#endregion
-
-			// Set the overridable material
-		//	SetSubRes(typeof(PlainoisLeather), "Plainois");
-
-			// Add every material you want the player to be able to choose from
-			// This will override the overridable material
-			//AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, 1049312);
-			//AddSubRes(typeof(ForestierLeather), "Lupus", 65.0, 1049312);
-			//AddSubRes(typeof(DesertiqueLeather), "Reptilien", 70.0, 1049312);
-			//AddSubRes(typeof(CollinoisLeather), "Geant", 75.0, 1049312);
-			//AddSubRes(typeof(SavanoisLeather), "Ophidien", 80.0, 1049312);
-			//AddSubRes(typeof(ToundroisLeather), "Arachnide", 85.0, 1049312);
-			//AddSubRes(typeof(TropicauxLeather), "Dragonique", 90.0, 1049312);
-			//AddSubRes(typeof(MontagnardLeather), "Demoniaque", 95.0, 1049312);
-			//AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
+			index = AddCraft(typeof(RideauBlanc), "Tapis/Rideaux", "Rideaux Blanc (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(RideauRouge), "Tapis/Rideaux", "Rideaux Rouge (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Voilage), "Tapis/Rideaux", "Voilage (flip)", 65.0, 105.0, typeof(Cloth), "Tissus", 30, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BlueDecorativeRugDeed), "Tapis/Rideaux", "Tapis décoratif bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BlueFancyRugDeed), "Tapis/Rideaux", "Tapis huppé bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BluePlainRugDeed), "Tapis/Rideaux", "Tapis bleu", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CinnamonFancyRugDeed), "Tapis/Rideaux", "Tapis Cannelle", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(GoldenDecorativeRugDeed), "Tapis/Rideaux", "Tapis Doré", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(PinkFancyRugDeed), "Tapis/Rideaux", "Tapis Huppé Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(RedPlainRugDeed), "Tapis/Rideaux", "Tapis Rouge", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(RoseRugAddonDeed), "Tapis/Rideaux", "Tapis Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
 
 			MarkOption = true;
             Repair = true;
             CanEnhance = true;
             CanAlter = true;
         } 
-       
 
         private void CutUpCloth(Mobile m, CraftItem craftItem, ITool tool)
         {
