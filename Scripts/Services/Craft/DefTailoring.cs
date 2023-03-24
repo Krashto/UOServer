@@ -656,15 +656,15 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(PinkFancyRugDeed), "Tapis/Rideaux", "Tapis Huppé Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
 			AddCraft(typeof(RedPlainRugDeed), "Tapis/Rideaux", "Tapis Rouge", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
 			AddCraft(typeof(RoseRugAddonDeed), "Tapis/Rideaux", "Tapis Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
-			
+
 			#endregion
 
 			// Set the overridable material
-			SetSubRes(typeof(Cloth), "Tissus");
+		//	SetSubRes(typeof(PlainoisLeather), "Plainois");
 
-            // Add every material you want the player to be able to choose from
-            // This will override the overridable material
-   //         AddSubRes(typeof(PlainoisLeather), "Cuir", 0.0, 1049312);
+			// Add every material you want the player to be able to choose from
+			// This will override the overridable material
+			//AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, 1049312);
 			//AddSubRes(typeof(ForestierLeather), "Lupus", 65.0, 1049312);
 			//AddSubRes(typeof(DesertiqueLeather), "Reptilien", 70.0, 1049312);
 			//AddSubRes(typeof(CollinoisLeather), "Geant", 75.0, 1049312);
@@ -674,7 +674,7 @@ namespace Server.Engines.Craft
 			//AddSubRes(typeof(MontagnardLeather), "Demoniaque", 95.0, 1049312);
 			//AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
 
-            MarkOption = true;
+			MarkOption = true;
             Repair = true;
             CanEnhance = true;
             CanAlter = true;
