@@ -292,51 +292,51 @@ namespace Server.Engines.Craft
             */
 
 			int index;
-			#region "Anneaux"
-			AddCraft(typeof(RingmailGloves), "Anneaux", "Gants d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RingmailGorget), "Anneaux", "Gorgerin d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(RingmailLegs), "Anneaux", "Jambes d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(RingmailArms), "Anneaux", "Brassard d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(RingmailChest), "Anneaux", "Torse d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronMaille2), "Anneaux", "Torse d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(JambiereMaille2), "Anneaux", "Jambière d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BrassardMaille), "Anneaux", "Brassard d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			#region "Armure Légère"
+			AddCraft(typeof(RingmailGloves), "Armure Légère", "Gants d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(RingmailGorget), "Armure Légère", "Gorgerin d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(RingmailLegs), "Armure Légère", "Jambes d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(RingmailArms), "Armure Légère", "Brassard d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(RingmailChest), "Armure Légère", "Torse d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
 			#endregion
 
-			#region "Mailles"
-			AddCraft(typeof(ChainCoif), "Mailles", "Coiffe de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(CasqueKorain), "Mailles", "Casque Korain", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ChainGorget), "Mailles", "Gorgerin de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(ChainmailArms), "Mailles", "Brassards de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(ChainLegs), "Mailles", "Jambes de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(ChainChest), "Mailles", "Tunique de maille", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
+			#region "Armure Intermédiaire"
+			AddCraft(typeof(ChainCoif), "Armure Intermédiaire", "Coiffe de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(ChainGorget), "Armure Intermédiaire", "Gorgerin de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(ChainmailArms), "Armure Intermédiaire", "Brassards de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(ChainLegs), "Armure Intermédiaire", "Jambes de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(ChainChest), "Armure Intermédiaire", "Tunique de maille", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
 
 
-			AddCraft(typeof(CasqueMaille), "Mailles", "Coiffe de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(GantsMaille), "Mailles", "Gants de mailles matelassées", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereMaille), "Mailles", "Jambière de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronMaille), "Mailles", "Tunique de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
 			#endregion
 
-			#region "Harnois"
-			AddCraft(typeof(PlateArms), "Harnois", "Brassards de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlateGloves), "Harnois", "Gants de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(PlateGorget), "Harnois", "Gorgerin de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(PlateLegs), "Harnois", "Jambières de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(PlateChest), "Harnois", "Torse de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(FemalePlateChest), "Harnois", "Torse de plaque femme", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(BrassardChaos), "Harnois", "Brassard du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronChaos), "Harnois", "Plastron du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(BrassardDecoratif), "Harnois", "Brassard Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(JambiereDecoratif), "Harnois", "Jambière Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(PlastronDecoratif), "Harnois", "Plastron Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(BottesElfique), "Harnois", "Bottes Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(GantsElfique), "Harnois", "Gants Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetElfique), "Harnois", "Gorget Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(PlastronElfique), "Harnois", "Plastron Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlastronPlaque), "Harnois", "Harnois", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlastronPlaqueDoree), "Harnois", "Plastron de plaque Dorée", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(DragonBardingDeed), "Harnois", "Dragon Barding Deed", 70.0, 122.5, typeof(IronIngot), 1044036, 750, 1044037);
+			#region "Armure Lourde"
+			AddCraft(typeof(PlateArms), "Armure Lourde", "Brassards de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlateGloves), "Armure Lourde", "Gants de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(PlateGorget), "Armure Lourde", "Gorgerin de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(PlateLegs), "Armure Lourde", "Jambières de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(PlateChest), "Armure Lourde", "Torse de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(FemalePlateChest), "Armure Lourde", "Torse de plaque femme", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(DragonBardingDeed), "Armure Lourde", "Dragon Barding Deed", 70.0, 122.5, typeof(IronIngot), 1044036, 750, 1044037);
 
 			#endregion
 
