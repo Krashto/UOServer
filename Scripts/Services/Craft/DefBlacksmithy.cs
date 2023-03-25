@@ -293,85 +293,84 @@ namespace Server.Engines.Craft
 
 			int index;
 			#region "Armure Légère"
-			AddCraft(typeof(RingmailGloves), "Armure Légère", "Gants d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RingmailGorget), "Armure Légère", "Gorgerin d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(RingmailLegs), "Armure Légère", "Jambes d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(RingmailArms), "Armure Légère", "Brassard d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(RingmailChest), "Armure Légère", "Torse d’anneaux", 30.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 30.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(RingmailGloves), "Armure Légère", "Gants d’anneaux", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(RingmailGorget), "Armure Légère", "Gorgerin d’anneaux", 22.0, 42.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(RingmailLegs), "Armure Légère", "Jambes d’anneaux", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(RingmailArms), "Armure Légère", "Brassard d’anneaux", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(RingmailChest), "Armure Légère", "Torse d’anneaux", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
 			#endregion
 
 			#region "Armure Intermédiaire"
-			AddCraft(typeof(ChainCoif), "Armure Intermédiaire", "Coiffe de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ChainGorget), "Armure Intermédiaire", "Gorgerin de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(ChainmailArms), "Armure Intermédiaire", "Brassards de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(ChainLegs), "Armure Intermédiaire", "Jambes de mailles", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(ChainChest), "Armure Intermédiaire", "Tunique de maille", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(ChainCoif), "Armure Intermédiaire", "Coiffe de mailles", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(ChainGorget), "Armure Intermédiaire", "Gorgerin de mailles", 42.0, 62.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(ChainmailArms), "Armure Intermédiaire", "Brassards de mailles", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(ChainLegs), "Armure Intermédiaire", "Jambes de mailles", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(ChainChest), "Armure Intermédiaire", "Tunique de maille", 50.0, 70.0, typeof(IronIngot), 1044036, 20, 1044037);
 
 
-			AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 43.0, 63.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 50.0, 70.0, typeof(IronIngot), 1044036, 20, 1044037);
 			#endregion
 
 			#region "Armure Lourde"
-			AddCraft(typeof(PlateArms), "Armure Lourde", "Brassards de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlateGloves), "Armure Lourde", "Gants de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(PlateGorget), "Armure Lourde", "Gorgerin de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(PlateLegs), "Armure Lourde", "Jambières de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(PlateChest), "Armure Lourde", "Torse de plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(FemalePlateChest), "Armure Lourde", "Torse de plaque femme", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 60.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(DragonBardingDeed), "Armure Lourde", "Dragon Barding Deed", 70.0, 122.5, typeof(IronIngot), 1044036, 750, 1044037);
+			AddCraft(typeof(PlateArms), "Armure Lourde", "Brassards de plaque", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlateGloves), "Armure Lourde", "Gants de plaque", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(PlateGorget), "Armure Lourde", "Gorgerin de plaque", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(PlateLegs), "Armure Lourde", "Jambières de plaque", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(PlateChest), "Armure Lourde", "Torse de plaque", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(FemalePlateChest), "Armure Lourde", "Torse de plaque femme", 51.0, 71.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 41.0, 61.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
 
 			#endregion
 
 			#region "Casques"
-			AddCraft(typeof(Bascinet), "Casques", "Bascinet", 30.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CloseHelm), "Casques", "Casque fermé", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(Helmet), "Casques", "Casque", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(NorseHelm), "Casques", "Haume Nordique", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlateHelm), "Casques", "Casque de Plaque", 60.0, 90.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CasqueChaos), "Casques", "Casque du Chaos", 60.0, 90.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CasqueDecoratif), "Casques", "Casque Décoratif", 60.0, 90.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CasqueElfique), "Casques", "Casque Elfique", 60.0, 90.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(Bascinet), "Casques", "Bascinet", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(CloseHelm), "Casques", "Casque fermé", 45.0, 65.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(Helmet), "Casques", "Casque", 35.0, 55.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(NorseHelm), "Casques", "Haume Nordique", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlateHelm), "Casques", "Casque de Plaque", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(CasqueChaos), "Casques", "Casque du Chaos", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(CasqueDecoratif), "Casques", "Casque Décoratif", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(CasqueElfique), "Casques", "Casque Elfique", 45.0, 65.0, typeof(IronIngot), 1044036, 15, 1044037);
 			#endregion
 
 			#region "Boucliers"
-			AddCraft(typeof(Buckler), "Boucliers", "Bouclier", 10.0, 50.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(MetalShield), "Boucliers", "Rampart", 15.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			index = AddCraft(typeof(SmallPlateShield), "Boucliers", "Targe", 15.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(WoodenKiteShield), "Boucliers", "La pointe", 20.0, 60.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(MediumPlateShield), "Boucliers", "Rondache", 20.0, 60.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(BronzeShield), "Boucliers", "Rondache résonnante", 25.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(EcuBois), "Boucliers", "Écu de bois", 25.0, 65.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(BouclierRond2), "Boucliers", "Bouclier Rond", 25.0, 65.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Targe3), "Boucliers", "Targe renforcé", 25.0, 65.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(Rondache), "Boucliers", "Rondache renforcée", 30.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(MetalKiteShield), "Boucliers", "Le blason", 30.0, 70.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BouclierRond), "Boucliers", "Bouclier Rond Renforcé", 30.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(ChaosShield), "Boucliers", "Targe décoré", 30.0, 70.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(HeaterShield), "Boucliers", "Muraille", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Pavois), "Boucliers", "Pavois", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Targe), "Boucliers", "Targe Bicolore", 40.0, 80.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(OrderShield), "Boucliers", "Égide", 40.0, 80.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(EcuLong), "Boucliers", "Écu Long", 50.0, 90.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Pavois2), "Boucliers", "Pavois Décoratif", 50.0, 90.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Targe2), "Boucliers", "Rondache Colimaçon", 50.0, 90.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Buckler), "Boucliers", "Bouclier", 32.0, 52.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(MetalShield), "Boucliers", "Rampart", 39.0, 59.0, typeof(IronIngot), 1044036, 14, 1044037);
+			index = AddCraft(typeof(SmallPlateShield), "Boucliers", "Targe", 32.0, 52.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(WoodenKiteShield), "Boucliers", "La pointe", 41.0, 61.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(MediumPlateShield), "Boucliers", "Rondache", 49.0, 69.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(BronzeShield), "Boucliers", "Rondache résonnante", 36.0, 56.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(EcuBois), "Boucliers", "Écu de bois", 32.0, 52.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(BouclierRond2), "Boucliers", "Bouclier Rond", 32.0, 52.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Targe3), "Boucliers", "Targe renforcé", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Rondache), "Boucliers", "Rondache renforcée", 41.0, 41.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(MetalKiteShield), "Boucliers", "Le blason", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(BouclierRond), "Boucliers", "Bouclier Rond Renforcé", 41.0, 61.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(ChaosShield), "Boucliers", "Targe décoré", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(HeaterShield), "Boucliers", "Muraille", 49.0, 49.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Pavois), "Boucliers", "Pavois", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Targe), "Boucliers", "Targe Bicolore", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(OrderShield), "Boucliers", "Égide", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(EcuLong), "Boucliers", "Écu Long", 41.0, 61.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(Pavois2), "Boucliers", "Pavois Décoratif", 41.0, 61.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Targe2), "Boucliers", "Rondache Colimaçon", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
 			#endregion
 
 			#region "Armes de poings"
@@ -387,150 +386,205 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region "Dagues"
-			AddCraft(typeof(Dagger), "Dagues", "Dague", 00.0, 40.0, typeof(IronIngot), 1044036, 3, 1044037);
-			AddCraft(typeof(ElvenSpellblade), "Dagues", "Égorgeuse", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(AssassinSpike), "Dagues", "Épineuse", 40.0, 80.0, typeof(IronIngot), 1044036, 9, 1044037);
-			AddCraft(typeof(Leafblade), "Dagues", "Coupe-gorge", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-
-			AddCraft(typeof(SkinningKnife), "Dagues", 1023781, 25.0, 75.0, typeof(IronIngot), 1044036, 2, 1044037);
-			AddCraft(typeof(Cleaver), "Dagues", 1097478, 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
-			AddCraft(typeof(ButcherKnife), "Dagues", 1097486, 25.0, 75.0, typeof(IronIngot), 1044036, 2, 1044037);
+			AddCraft(typeof(Dagger), "Dagues", "Dague", 0.0, 40.0, typeof(IronIngot), 1044036, 3, 1044037);
+			AddCraft(typeof(ElvenSpellblade), "Dagues", "Égorgeuse", 20.0, 40.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(AssassinSpike), "Dagues", "Épineuse", 25.0, 45.0, typeof(IronIngot), 1044036, 9, 1044037);
+			AddCraft(typeof(Leafblade), "Dagues", "Coupe-gorge", 30.0, 50.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(SkinningKnife), "Dagues", 1023781, 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
+			AddCraft(typeof(Cleaver), "Dagues", 1097478, 0.0, 20.0, typeof(IronIngot), 1044036, 3, 1044037);
+			AddCraft(typeof(ButcherKnife), "Dagues", 1097486, 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
 			#endregion
 
 			#region "Épées"
-			AddCraft(typeof(BoneHarvester), "Épées", "Serpe", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Broadsword), "Épées", "Épée courte", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Cutlass), "Épées", "Sabre Kroise", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(Katana), "Épées", "Katana", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(Longsword), "Épées", "Épée longue", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Scimitar), "Épées", "Cimeterre", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(VikingSword), "Épées", "Épée Kaloise", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeCourte), "Épées", "Épée Koraine", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(SabreLuxe), "Épées", "Sabre Kershe", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(EpeeBatardeLuxe), "Épées", "Épée bâtarde de luxe", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeDoubleTranchant), "Épées", "Épée à Double Tranchants", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeLongue), "Épées", "Épée Longue", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeBatarde), "Épées", "Épée bâtarde", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(EpeeDeuxMains), "Épées", "Épée Deux Mains", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Runire), "Épées", "Runire", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(NoDachi), "Épées", "Éclat solaire", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Wakizashi), "Épées", "Surineur", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(RadiantScimitar), "Épées", "Cimeterre infini", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(RuneBlade), "Épées", "Lame vorpal", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(ElvenMachete), "Épées", "Machette runique", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Runire), "Épées", "Runire", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(BoneHarvester), "Épées", "Serpe", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Broadsword), "Épées", "Épée courte", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Cutlass), "Épées", "Sabre Kroise", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(Katana), "Épées", "Katana", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(Longsword), "Épées", "Épée longue", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Scimitar), "Épées", "Cimeterre", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(VikingSword), "Épées", "Épée Kaloise", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(EpeeCourte), "Épées", "Épée Koraine", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(SabreLuxe), "Épées", "Sabre Kershe", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(EpeeBatardeLuxe), "Épées", "Épée bâtarde de luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(EpeeDoubleTranchant), "Épées", "Épée à Double Tranchants", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(EpeeLongue), "Épées", "Épée Longue", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(EpeeBatarde), "Épées", "Épée bâtarde", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(EpeeDeuxMains), "Épées", "Épée Deux Mains", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Runire), "Épées", "Runire", 45.0, 70.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(NoDachi), "Épées", "Éclat solaire", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Wakizashi), "Épées", "Surineur", 45.0, 70.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(RadiantScimitar), "Épées", "Cimeterre infini", 45.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(RuneBlade), "Épées", "Lame vorpal", 45.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(ElvenMachete), "Épées", "Machette runique", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 60.0, 85.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 60.0, 85.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 75.0, 105.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Runire), "Épées", "Runire", 75.0, 105.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 75.0, 105.0, typeof(IronIngot), 1044036, 15, 1044037);
 			#endregion
 
 			#region "Haches"
-			AddCraft(typeof(Axe), "Haches", "Hache simple", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(BattleAxe), "Haches", "Hache de guerre", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(DoubleAxe), "Haches", "Hache double", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ExecutionersAxe), "Haches", "Hachette", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(LargeBattleAxe), "Haches", "Hache de bataille", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(TwoHandedAxe), "Haches", "Hache à deux mains", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(WarAxe), "Haches", "Tranchar", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(GrandeHache), "Haches", "Éventreuse", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(GrandeHacheDouble), "Haches", "Francisque", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(HacheDouble), "Haches", "Trombe", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(DoubleAxe), "Haches", "Naga", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 40.0, 80.0, typeof(IronIngot), 1044036, 24, 1044037);
-			AddCraft(typeof(DoubleHachette), "Haches", "Double Hachette", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(Axe), "Haches", "Hache simple", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(BattleAxe), "Haches", "Hache de guerre", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(DoubleAxe), "Haches", "Hache double", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(ExecutionersAxe), "Haches", "Hachette", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(LargeBattleAxe), "Haches", "Hache de bataille", 30.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(TwoHandedAxe), "Haches", "Hache à deux mains", 30.0, 55.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(WarAxe), "Haches", "Tranchar", 30.0, 55.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(GrandeHache), "Haches", "Éventreuse", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(GrandeHacheDouble), "Haches", "Francisque", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(HacheDouble), "Haches", "Trombe", 45.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(DoubleAxe), "Haches", "Naga", 60.0, 85.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 75.0, 105.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 75.0, 105.0, typeof(IronIngot), 1044036, 24, 1044037);
+			AddCraft(typeof(DoubleHachette), "Haches", "Double Hachette", 75.0, 105.0, typeof(IronIngot), 1044036, 15, 1044037);
 
-			//        index = AddCraft(typeof(BattleAxe), "Haches", "Battle Axe", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			//    index = AddCraft(typeof(Axe), "Haches", "Axe", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-
+			
 			#endregion
 
 			#region Hallebarde
-			AddCraft(typeof(Bardiche), "Hallebardes", "Bardiche", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Hellebarde), "Hallebardes", "Hellebarde", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(BladedStaff), "Hallebardes", "BladedStaff", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(DoubleBladedStaff), "Hallebardes", "DoubleBladedStaff", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Halberd), "Hallebardes", "Hallebarde", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
-			#endregion
-
-			#region "Lancer"
-			AddCraft(typeof(Shuriken), "Lancer", "Shuriken", 40.0, 80.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddCraft(typeof(Boomerang), "Lancer", "Boomerang", 40.0, 80.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddCraft(typeof(Cyclone), "Lancer", "Cyclone", 40.0, 80.0, typeof(IronIngot), 1044036, 9, 1044037);
-			AddCraft(typeof(SoulGlaive), "Lancer", "Étoile", 40.0, 80.0, typeof(IronIngot), 1044036, 9, 1044037);
-
+			index = AddCraft(typeof(Pitchfork), "Hallebardes", "Pitchfork", 10.0, 35.0, typeof(IronIngot), "Iron ingot", 5, "You do not have enough iron ingots to make that.");
+			AddCraft(typeof(Bardiche), "Hallebardes", "Bardiche", 40.0, 60.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Hellebarde), "Hallebardes", "Hellebarde", 50.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(BladedStaff), "Hallebardes", "BladedStaff", 55.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(DoubleBladedStaff), "Hallebardes", "DoubleBladedStaff", 80.0, 100.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(Halberd), "Hallebardes", "Hallebarde", 85.0, 105.0, typeof(IronIngot), 1044036, 20, 1044037);
 			#endregion
 
 			#region "Lances"
-			AddCraft(typeof(Lance), "Lances", "Lance", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(Pike), "Lances", "Pique", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ShortSpear), "Lances", "Lance courte", 40.0, 80.0, typeof(IronIngot), 1044036, 6, 1044037);
-			AddCraft(typeof(Scythe), "Lances", "Scythe", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Spear), "Lances", "Lance de guerre", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Epieu), "Lances", "Épieu", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GrandeFourche), "Lances", "Fourche", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Luxe", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Trident), "Lances", "Trident", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Lance), "Lances", "Lance", 10.0, 35.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(Pike), "Lances", "Pique", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(ShortSpear), "Lances", "Lance courte", 20.0, 45.0, typeof(IronIngot), 1044036, 6, 1044037);
+			AddCraft(typeof(Scythe), "Lances", "Scythe", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(Spear), "Lances", "Lance de guerre", 35.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Epieu), "Lances", "Épieu", 40.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GrandeFourche), "Lances", "Fourche", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Luxe", 60.0, 85.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Trident), "Lances", "Trident", 65.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 70.0, 95.0, typeof(IronIngot), 1044036, 12, 1044037);
 			#endregion
 
 			#region "Masses et marteaux"
-			AddCraft(typeof(HammerPick), "Masses et marteaux", "Marteau à pointes", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Mace), "Masses et marteaux", "Masse", 40.0, 80.0, typeof(IronIngot), 1044036, 6, 1044037);
-			AddCraft(typeof(Maul), "Masses et marteaux", "Maul", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Scepter), "Masses et marteaux", "Sceptre", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(WarMace), "Masses et marteaux", "Masse de guerre", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(GrandeMasse), "Masses et marteaux", "Grande Masse", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MassuePointes), "Masses et marteaux", "Massue à Pointes", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Massue), "Masses et marteaux", "Massue", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MorgensternBoules), "Masses et marteaux", "Morgenstern à Boules", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MorgensternPointes), "Masses et marteaux", "Morgenstern à Pointes", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(WarHammer), "Masses et marteaux", "War Hammer", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 40.0, 80.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-		
-			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			AddCraft(typeof(DiscMace), "Masses et marteaux", "Massu cranelée", 40.0, 80.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(HammerPick), "Masses et marteaux", "Marteau à pointes", 10.0, 35.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(Mace), "Masses et marteaux", "Masse", 10.0, 35.0, typeof(IronIngot), 1044036, 6, 1044037);
+			AddCraft(typeof(Maul), "Masses et marteaux", "Maul", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Scepter), "Masses et marteaux", "Sceptre", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(WarMace), "Masses et marteaux", "Masse de guerre", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(GrandeMasse), "Masses et marteaux", "Grande Masse", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(MassuePointes), "Masses et marteaux", "Massue à Pointes", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(Massue), "Masses et marteaux", "Massue", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(MorgensternBoules), "Masses et marteaux", "Morgenstern à Boules", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(MorgensternPointes), "Masses et marteaux", "Morgenstern à Pointes", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(WarHammer), "Masses et marteaux", "War Hammer", 60.0, 85.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 60.0, 85.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 60.0, 85.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 75.0, 105.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 75.0, 105.0, typeof(IronIngot), 1044036, 10, 1044037);	
+			AddCraft(typeof(DiscMace), "Masses et marteaux", "Massu cranelée", 75.0, 105.0, typeof(IronIngot), 1044036, 20, 1044037);
 			#endregion
 
 			#region "Rapières et Estoc"
-			AddCraft(typeof(Rapiere), "Rapières et Estoc", "Rapière", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RapiereLuxe), "Rapières et Estoc", "Rapière de Luxe", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RapiereDecoree), "Rapières et Estoc", "Rapière Décorée", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 40.0, 80.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 40.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 40.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissants de lune", 80.0, 130.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Rapiere), "Rapières et Estoc", "Rapière", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(RapiereLuxe), "Rapières et Estoc", "Rapière de Luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(RapiereDecoree), "Rapières et Estoc", "Rapière Décorée", 45.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 45.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 60.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 60.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissants de lune", 60.0, 80.0, typeof(IronIngot), 1044036, 25, 1044037);
 			#endregion
 
 			#region "Divers"
-			AddCraft(typeof(Cannonball), "Divers", "Boulet de Canon", 10.0, 60.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddCraft(typeof(Grapeshot), "Divers", "Boulet Avancé", 15.0, 70.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddRes(index, typeof(Cloth), 1044286, 2, 1044287);
-			AddCraft(typeof(LightShipCannonDeed), "Divers", "Canon Léger", 75.0, 110.0, typeof(IronIngot), 1044036, 500, 1044037);
-			AddCraft(typeof(HeavyShipCannonDeed), "Divers", "Canon Lourd", 90.0, 110.0, typeof(IronIngot), 1044036, 800, 1044037);
-			AddCraft(typeof(Ancre), "Divers", "Ancre", 90.0, 110.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CoffreFort), "Divers", "Coffre Fort", 80.0, 115.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(CoffreMetalVisqueux), "Divers", "Coffre ornemanté", 90.0, 115.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(CoffreMetalRouille), "Divers", "Vieux coffre", 90.0, 115.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(CoffreMetalDore), "Divers", "Coffre doré", 90.0, 115.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PirateChest), "Divers", "Coffre de Pirate", 90.0, 115.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(AnvilEastDeed), "Divers", 1044333, 80.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
+			AddCraft(typeof(Ancre), "Divers", "Ancre", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(AnvilEastDeed), "Divers", 1044333, 52.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
 			AddRes(index, typeof(IronIngot), 1044036, 150, 1044037);
-			AddCraft(typeof(AnvilSouthDeed), "Divers", 1044334, 80.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
+			AddCraft(typeof(AnvilSouthDeed), "Divers", 1044334, 52.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
 			AddRes(index, typeof(IronIngot), 1044036, 150, 1044037);
-			AddCraft(typeof(Enclume), "Divers", 1044334, 80.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
+			AddCraft(typeof(Enclume), "Divers", 1044334, 52.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
 			AddRes(index, typeof(IronIngot), 1044036, 150, 1044037);
+			#endregion
+
+			#region Alliages
+		
+
+			index = AddCraft(typeof(DraconyrIngot), "Alliages", "Lingot de Draconyr (1)", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough copper ingot to make that.");
+			AddRes(index, typeof(GlaciasIngot), "Lingot de Glacias", 2, "You do not have enough glacias ingot to make that.");
+			AddRes(index, typeof(DurianIngot), "Lingot de Durian", 1, "You do not have enough durian ingot to make that.");
+			AddRes(index, typeof(JusticiumIngot), "Lingot de Justicium", 1, "You do not have enough justicium ingot to make that.");
+
+			index = AddCraft(typeof(DraconyrIngot), "Alliages", "Lingots de Draconyr (10)", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough copper ingot to make that.");
+			AddRes(index, typeof(GlaciasIngot), "Lingot de Glacias", 2, "You do not have enough glacias ingot to make that.");
+			AddRes(index, typeof(DurianIngot), "Lingot de Durian", 1, "You do not have enough durian ingot to make that.");
+			AddRes(index, typeof(JusticiumIngot), "Lingot de Justicium", 1, "You do not have enough justicium ingot to make that.");
+			SetUseAllRes(index, true);
+
+			index = AddCraft(typeof(HeptazionIngot), "Alliages", "Lingot d'Heptazion (1)", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
+			AddRes(index, typeof(LithiarIngot), "Lingot de Lithiar", 3, "You do not have enough lithiar ingot to make that.");
+			AddRes(index, typeof(ArgentIngot), "Lingot d'Argent", 2, "You do not have enough argent ingot to make that.");
+			AddRes(index, typeof(SombralirIngot), "Lingot de Sombralir", 1, "You do not have enough sombralir ingot to make that.");
+			AddRes(index, typeof(AcierIngot), "Lingot d'Acier", 1, "You do not have enough acier ingot to make that.");
+
+			index = AddCraft(typeof(HeptazionIngot), "Alliages", "Lingots d'Heptazion (10)", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
+			AddRes(index, typeof(LithiarIngot), "Lingot de Lithiar", 3, "You do not have enough lithiar ingot to make that.");
+			AddRes(index, typeof(ArgentIngot), "Lingot d'Argent", 2, "You do not have enough argent ingot to make that.");
+			AddRes(index, typeof(SombralirIngot), "Lingot de Sombralir", 1, "You do not have enough sombralir ingot to make that.");
+			AddRes(index, typeof(AcierIngot), "Lingot d'Acier", 1, "You do not have enough acier ingot to make that.");
+			SetUseAllRes(index, true);
+
+			index = AddCraft(typeof(OceanisIngot), "Alliages", "Lingot d'Océanis (1)", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough copper ingot to make that.");
+			AddRes(index, typeof(BorealeIngot), "Lingot de Boréale", 2, "You do not have enough boreale ingot to make that.");
+			AddRes(index, typeof(JolinarIngot), "Lingot de Jolinar", 1, "You do not have enough jolinar ingot to make that.");
+		
+
+			index = AddCraft(typeof(OceanisIngot), "Alliages", "Lingots d'Océanis (10)", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough copper ingot to make that.");
+			AddRes(index, typeof(BorealeIngot), "Lingot de Boréale", 2, "You do not have enough boreale ingot to make that.");
+			AddRes(index, typeof(JolinarIngot), "Lingot de Jolinar", 1, "You do not have enough jolinar ingot to make that.");
+			
+			SetUseAllRes(index, true);
+
+			
+
+			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingot de Brazium (1)", 80, 120, typeof(BloodiriumIngot), "Lingot de Bloodirium", 3, "You do not have enough bloodirium ingots to make that.");
+			
+
+			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingots de Brazium (10)", 80, 120, typeof(BloodiriumIngot), "Lingot de Bloodirium", 3, "You do not have enough bloodirium ingots to make that.");
+			SetUseAllRes(index, true);
+
+			index = AddCraft(typeof(LuneriumIngot), "Alliages", "Lingot de Lunérium (1)", 80, 120, typeof(HerbrositeIngot), "Lingot de Herbrosite", 3, "You do not have enough herbrosite ingots to make that.");
+			AddRes(index, typeof(HeptazionIngot), "Lingot d'Heptazion", 1, "You do not have enough heptazion ingot to make that.");
+
+			index = AddCraft(typeof(LuneriumIngot), "Alliages", "Lingots de Lunérium (10)", 80, 120, typeof(HerbrositeIngot), "Lingot de Herbrosite", 3, "You do not have enough herbrosite ingots to make that.");
+			AddRes(index, typeof(HeptazionIngot), "Lingot d'Heptazion", 1, "You do not have enough heptazion ingot to make that.");
+			SetUseAllRes(index, true);
+
+			index = AddCraft(typeof(MarinarIngot), "Alliages", "Lingot de Marinar (1)", 80, 120, typeof(IronIngot), "Lingot de Maritium", 3, "You do not have enough maritium ingots to make that.");
+			AddRes(index, typeof(MytherilIngot), "Lingot de Mytheril", 3, "You do not have enough mytheril ingot to make that.");
+			AddRes(index, typeof(DraconyrIngot), "Lingot de Draconyr", 1, "You do not have enough draconyr ingot to make that.");
+			AddRes(index, typeof(OceanisIngot), "Lingot d'Océanis", 1, "You do not have enough oceanis ingot to make that.");
+
+			index = AddCraft(typeof(MarinarIngot), "Alliages", "Lingots de Marinar (10)", 80, 120, typeof(IronIngot), "Lingot de Maritium", 3, "You do not have enough maritium ingots to make that.");
+			AddRes(index, typeof(MytherilIngot), "Lingot de Mytheril", 3, "You do not have enough mytheril ingot to make that.");
+			AddRes(index, typeof(DraconyrIngot), "Lingot de Draconyr", 1, "You do not have enough draconyr ingot to make that.");
+			AddRes(index, typeof(OceanisIngot), "Lingot d'Océanis", 1, "You do not have enough oceanis ingot to make that.");
+			SetUseAllRes(index, true);
+
+			index = AddCraft(typeof(NostalgiumIngot), "Alliages", "Lingot de Teilium (1)", 80, 130, typeof(BraziumIngot), "Lingot de Brazium", 3, "You do not have enough brazium ingots to make that.");
+			AddRes(index, typeof(LuneriumIngot), "Lingot de Lunérium", 3, "You do not have enough lunerium ingot to make that.");
+			AddRes(index, typeof(MarinarIngot), "Lingot de Marinar", 3, "You do not have enough marinar ingot to make that.");
+
+			index = AddCraft(typeof(NostalgiumIngot), "Alliages", "Lingots de Teilium (10)", 80, 130, typeof(BraziumIngot), "Lingot de Brazium", 3, "You do not have enough brazium ingots to make that.");
+			AddRes(index, typeof(LuneriumIngot), "Lingot de Lunérium", 3, "You do not have enough lunerium ingot to make that.");
+			AddRes(index, typeof(MarinarIngot), "Lingot de Marinar", 3, "You do not have enough marinar ingot to make that.");
+			SetUseAllRes(index, true);
 			#endregion
 
 			// Set the overridable material
