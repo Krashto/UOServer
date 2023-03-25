@@ -371,15 +371,15 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region "Armes de poings"
-			AddCraft(typeof(DoubleLames), "Armes de poings", "Double Lames de poing", 40.0, 80.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(Sai), "Armes de poings", "Sai", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Kama), "Armes de poings", "Kama", 40.0, 80.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Tekagi), "Armes de poings", "Griffes", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(AnneauxCombat), "Armes de poings", "Anneaux de Combat", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GriffesCombat), "Armes de poings", "Griffes de Combat", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(KamaKuya), "Armes de poings", "Kama Kuya", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(LameCirculaire), "Armes de poings", "Lames Circulaires", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Kama1), "Armes de poings", "Kama Bonga", 40.0, 80.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(DoubleLames), "Armes de poings", "Double Lames de poing", 0.0, 25.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(Sai), "Armes de poings", "Sai", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Kama), "Armes de poings", "Kama", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(Tekagi), "Armes de poings", "Griffes", 20.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(AnneauxCombat), "Armes de poings", "Anneaux de Combat", 20.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GriffesCombat), "Armes de poings", "Griffes de Combat", 35.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(KamaKuya), "Armes de poings", "Kama Kuya", 35.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(LameCirculaire), "Armes de poings", "Lames Circulaires", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Kama1), "Armes de poings", "Kama Bonga", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
 			#endregion
 
 			#region "Dagues"
