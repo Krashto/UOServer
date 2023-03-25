@@ -1010,17 +1010,17 @@ namespace Server.Items
 
 		private static readonly CraftResourceInfo[] m_WoodInfo = new[]
         {
-            new CraftResourceInfo(1355, 1011542, "Normal",		0, CraftAttributeInfo.Blank,			CraftResource.RegularWood,		typeof( RegularLog ),		typeof(RegularBoard)),
-            new CraftResourceInfo(1355, 1011542, "Plainois",	0, CraftAttributeInfo.PlainoisWood,		CraftResource.PlainoisWood,		typeof( RegularLog ),		typeof(RegularBoard)),
-			new CraftResourceInfo(1411, 1049356, "Forestier",   1, CraftAttributeInfo.ForestierWood,    CraftResource.ForestierWood,    typeof( ForestierLog ),		typeof(ForestierBoard)),
-			new CraftResourceInfo(1191, 1049356, "Collinois",   1, CraftAttributeInfo.CollinoisWood,    CraftResource.CollinoisWood,    typeof( CollinoisLog ),		typeof(CollinoisBoard)),
-			new CraftResourceInfo(1126, 1049354, "Désertique",  2, CraftAttributeInfo.DesertiqueWood,   CraftResource.DesertiqueWood,   typeof( DesertiqueLog ),	typeof(DesertiqueBoard)),
-			new CraftResourceInfo(1008, 1049356, "Savanois",    2, CraftAttributeInfo.MontagnardWood,   CraftResource.MontagnardWood,   typeof( MontagnardLog ),	typeof(MontagnardBoard)),
-			new CraftResourceInfo(2219, 1049356, "Montagnard",  3, CraftAttributeInfo.SavanoisWood,     CraftResource.SavanoisWood,     typeof( SavanoisLog ),		typeof(SavanoisBoard)),
-			new CraftResourceInfo(2206, 1049356, "Volcanique",  3, CraftAttributeInfo.VolcaniqueWood,   CraftResource.VolcaniqueWood,   typeof( VolcaniqueLog ),	typeof(VolcaniqueBoard)),
-			new CraftResourceInfo(2500, 1049356, "Toundrois",   4, CraftAttributeInfo.ToundroisWood,    CraftResource.ToundroisWood,    typeof( ToundroisLog ),		typeof(ToundroisBoard)),
-			new CraftResourceInfo(2210, 1049356, "Tropicaux",   4, CraftAttributeInfo.TropicauxWood,    CraftResource.TropicauxWood,    typeof( TropicauxLog ),		typeof(TropicauxBoard)),
-			new CraftResourceInfo(1779, 1049356, "Ancien",      5, CraftAttributeInfo.AncienWood,       CraftResource.AncienWood,       typeof( AncienLog ),		typeof(AncienBoard)),
+            new CraftResourceInfo(1355, 1011542, "Normal",		0, CraftAttributeInfo.Blank,			CraftResource.RegularWood,		typeof( RegularBoard ),		typeof(RegularLog)),
+            new CraftResourceInfo(1355, 1011542, "Plainois",	0, CraftAttributeInfo.PlainoisWood,		CraftResource.PlainoisWood,		typeof( RegularBoard ),		typeof(RegularLog)),
+			new CraftResourceInfo(1411, 1049356, "Forestier",   1, CraftAttributeInfo.ForestierWood,    CraftResource.ForestierWood,    typeof( ForestierBoard ),		typeof(ForestierLog)),
+			new CraftResourceInfo(1191, 1049356, "Collinois",   1, CraftAttributeInfo.CollinoisWood,    CraftResource.CollinoisWood,    typeof( CollinoisBoard ),		typeof(CollinoisLog)),
+			new CraftResourceInfo(1126, 1049354, "Désertique",  2, CraftAttributeInfo.DesertiqueWood,   CraftResource.DesertiqueWood,   typeof( DesertiqueBoard ),	typeof(DesertiqueLog)),
+			new CraftResourceInfo(1008, 1049356, "Savanois",    2, CraftAttributeInfo.MontagnardWood,   CraftResource.MontagnardWood,   typeof( MontagnardBoard ),	typeof(MontagnardLog)),
+			new CraftResourceInfo(2219, 1049356, "Montagnard",  3, CraftAttributeInfo.SavanoisWood,     CraftResource.SavanoisWood,     typeof( SavanoisBoard ),		typeof(SavanoisLog)),
+			new CraftResourceInfo(2206, 1049356, "Volcanique",  3, CraftAttributeInfo.VolcaniqueWood,   CraftResource.VolcaniqueWood,   typeof( VolcaniqueBoard ),	typeof(VolcaniqueLog)),
+			new CraftResourceInfo(2500, 1049356, "Toundrois",   4, CraftAttributeInfo.ToundroisWood,    CraftResource.ToundroisWood,    typeof( ToundroisBoard ),		typeof(ToundroisLog)),
+			new CraftResourceInfo(2210, 1049356, "Tropicaux",   4, CraftAttributeInfo.TropicauxWood,    CraftResource.TropicauxWood,    typeof( TropicauxBoard ),		typeof(TropicauxLog)),
+			new CraftResourceInfo(1779, 1049356, "Ancien",      5, CraftAttributeInfo.AncienWood,       CraftResource.AncienWood,       typeof( AncienBoard ),		typeof(AncienLog)),
 
 			new CraftResourceInfo(0x7DA, 1072533, "Oak",        99, CraftAttributeInfo.OakWood,      CraftResource.OakWood,      typeof(OakLog),         typeof(OakBoard)),
 			new CraftResourceInfo(0x4A7, 1072534, "Ash",        99, CraftAttributeInfo.AshWood,      CraftResource.AshWood,      typeof(AshLog),         typeof(AshBoard)),

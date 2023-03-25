@@ -154,27 +154,27 @@ namespace Server.Custom.Aptitudes
         }
 
         public static AptitudesEntry[] m_AptitudeEntries = new AptitudesEntry[]
-			{
-				new AptitudesEntry( Aptitude.Chimie,		"Chimie",           10, SkillName.Alchemy),
-				new AptitudesEntry( Aptitude.Couture,		"Couture",          10, SkillName.Tailoring),
-				new AptitudesEntry( Aptitude.Ingenierie,	"Ingénierie",       10, SkillName.Tinkering),
-				new AptitudesEntry( Aptitude.Metallurgie,	"Métallurgie",      10, SkillName.Blacksmith),
-				new AptitudesEntry( Aptitude.Transcription,	"Transcription",    10, SkillName.Inscribe),
+		{
+			new AptitudesEntry( Aptitude.Chimie,		"Chimie",           10, SkillName.Alchemy),
+			new AptitudesEntry( Aptitude.Couture,		"Couture",          10, SkillName.Tailoring),
+			new AptitudesEntry( Aptitude.Ingenierie,	"Ingénierie",       10, SkillName.Tinkering),
+			new AptitudesEntry( Aptitude.Metallurgie,	"Métallurgie",      10, SkillName.Blacksmith),
+			new AptitudesEntry( Aptitude.Transcription,	"Transcription",    10, SkillName.Inscribe),
 
-				new AptitudesEntry( Aptitude.Martial,		"Martial",          10, SkillName.Tactics),
-				new AptitudesEntry( Aptitude.Chasseur,      "Chasseur",         10, SkillName.Tracking),
-				new AptitudesEntry( Aptitude.Roublardise,   "Roublardise",		10, SkillName.Hiding),
-				new AptitudesEntry( Aptitude.Polymorphie,   "Polymorphie",      10, SkillName.Anatomy),
-				new AptitudesEntry( Aptitude.Totemique,     "Totémique",        10, SkillName.AnimalTaming),
-				new AptitudesEntry( Aptitude.Musique,       "Musique",          10, SkillName.Musicianship),
-				new AptitudesEntry( Aptitude.Hydromancie,   "Hydromancie",      10, SkillName.Meditation),
-				new AptitudesEntry( Aptitude.Pyromancie,    "Pyromancie",       10, SkillName.Magery),
-				new AptitudesEntry( Aptitude.Geomancie,     "Géomancie",        10, SkillName.MagicResist),
-				new AptitudesEntry( Aptitude.Aeromancie,    "Aéromancie",       10, SkillName.SpiritSpeak),
-				new AptitudesEntry( Aptitude.Necromancie,   "Nécromancie",      10, SkillName.Necromancy),
-				new AptitudesEntry( Aptitude.Defenseur,     "Défenseur",		10, SkillName.Parry),
-				new AptitudesEntry( Aptitude.Guerison,      "Guérison",			10, SkillName.Healing),
-			};
+			new AptitudesEntry( Aptitude.Martial,		"Martial",          10, SkillName.Tactics),
+			new AptitudesEntry( Aptitude.Chasseur,      "Chasseur",         10, SkillName.Tracking),
+			new AptitudesEntry( Aptitude.Roublardise,   "Roublardise",		10, SkillName.Hiding),
+			new AptitudesEntry( Aptitude.Polymorphie,   "Polymorphie",      10, SkillName.Anatomy),
+			new AptitudesEntry( Aptitude.Totemique,     "Totémique",        10, SkillName.AnimalTaming),
+			new AptitudesEntry( Aptitude.Musique,       "Musique",          10, SkillName.Musicianship),
+			new AptitudesEntry( Aptitude.Hydromancie,   "Hydromancie",      10, SkillName.Meditation),
+			new AptitudesEntry( Aptitude.Pyromancie,    "Pyromancie",       10, SkillName.Magery),
+			new AptitudesEntry( Aptitude.Geomancie,     "Géomancie",        10, SkillName.MagicResist),
+			new AptitudesEntry( Aptitude.Aeromancie,    "Aéromancie",       10, SkillName.SpiritSpeak),
+			new AptitudesEntry( Aptitude.Necromancie,   "Nécromancie",      10, SkillName.Necromancy),
+			new AptitudesEntry( Aptitude.Defenseur,     "Défenseur",		10, SkillName.Parry),
+			new AptitudesEntry( Aptitude.Guerison,      "Guérison",			10, SkillName.Healing),
+		};
         #endregion
 
         public Aptitudes(CustomPlayerMobile owner) : base(owner)

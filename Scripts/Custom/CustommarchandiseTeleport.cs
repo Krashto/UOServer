@@ -39,7 +39,7 @@ namespace Server.Items
 
 			if (from is CustomPlayerMobile cp)
 			{
-				Item marchandise = (Item)cp.Backpack.FindItemByType(typeof(Server.Custom.Packaging.Packages.Marchandise));
+				Item marchandise = (Item)cp.Backpack.FindItemByType(typeof(Server.Custom.Packaging.Packages.Materiaux));
 				
 
 				if (marchandise != null )

@@ -1,9 +1,9 @@
 ﻿namespace Server.Custom.Packaging.Packages
 {
-	public  class Marchandise : Item
+	public  class Materiaux : Item
 	{
 		[Constructable]
-		public Marchandise() : base(0x1876)
+		public Materiaux() : base(0x1876)
 		{
 			Name = "Materiaux";
 			Hue = 542;
@@ -11,7 +11,7 @@
 			Stackable = true;
 		}
 
-		public Marchandise(Serial serial)
+		public Materiaux(Serial serial)
 			: base(serial)
 		{
 		}

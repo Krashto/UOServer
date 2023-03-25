@@ -213,7 +213,7 @@ namespace Server
 
 
 
-		public static readonly LootPackItem[] Marchandise = new[] { new LootPackItem(typeof(Marchandise), 1) };
+		public static readonly LootPackItem[] Marchandise = new[] { new LootPackItem(typeof(Materiaux), 1) };
 		public static readonly LootPackItem[] Gold5 = new[] { new LootPackItem(typeof(Citrine), 1) };
 		       public static readonly LootPackItem[] Gold10 = new[] { new LootPackItem(typeof(Amber), 1) };
 		       public static readonly LootPackItem[] Gold25 = new[] { new LootPackItem(typeof(Tourmaline), 1) };

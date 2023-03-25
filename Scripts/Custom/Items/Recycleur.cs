@@ -1,8 +1,7 @@
 ﻿using System;
-using Server;
+using System.Collections.Generic;
 using Server.Engines.Craft;
 using Server.Targeting;
-using Server.CustomScripts;
 
 namespace Server.Items
 {
@@ -64,28 +63,16 @@ namespace Server.Items
 
             protected override void OnTarget(Mobile from, object targeted)
             {
-                CraftSystem m_CraftSystem = null;
-                CraftResource resource = CraftResource.None;
+				CraftResource resource = CraftResource.None;
 
-                if (targeted is BaseArmor)
-                {
-                    BaseArmor armor = (BaseArmor)targeted;
+                if (targeted is BaseArmor armor)
                     resource = armor.Resource;
-                }
-                else if (targeted is BaseWeapon)
-                {
-                    BaseWeapon weapon = (BaseWeapon)targeted;
+                else if (targeted is BaseWeapon weapon)
                     resource = weapon.Resource;
-                }
-                else if (targeted is BaseShoes)
-                {
-                    BaseShoes shoes = (BaseShoes)targeted;
+                else if (targeted is BaseShoes shoes)
                     resource = shoes.Resource;
-                }
                 else
-                {
                     from.SendMessage( "Cet article ne peut pas être recyclé.");
-                }
 
                 if (resource == CraftResource.None)
                 {
@@ -93,52 +80,84 @@ namespace Server.Items
                     return;
                 }
 
-                switch (resource)
+				var m_CraftSystem = new List<CraftSystem>();
+
+				switch (resource)
 				{
-                    case CraftResource.Iron:             m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-                    case CraftResource.DullCopper:                 m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-                    case CraftResource.ShadowIron:		        m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-                    case CraftResource.Copper:		        m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-					case CraftResource.Bronze:			        m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-					case CraftResource.Gold:			    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-					case CraftResource.Agapite:			    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-					case CraftResource.Verite:			    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-					case CraftResource.Valorite:		    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
-					case CraftResource.Mytheril:		    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
+					case CraftResource.DullCopper:
+					case CraftResource.ShadowIron:
+					case CraftResource.Agapite:
+					case CraftResource.Verite:
+					case CraftResource.Valorite:
+					case CraftResource.Iron:
+					case CraftResource.Bronze:
+					case CraftResource.Copper:
+					case CraftResource.Sonne:
+					case CraftResource.Argent:
+					case CraftResource.Boreale:
+					case CraftResource.Chrysteliar:
+					case CraftResource.Glacias:
+					case CraftResource.Lithiar:
+					case CraftResource.Acier:
+					case CraftResource.Durian:
+					case CraftResource.Equilibrum:
+					case CraftResource.Gold:
+					case CraftResource.Jolinar:
+					case CraftResource.Justicium:
+					case CraftResource.Abyssium:
+					case CraftResource.Bloodirium:
+					case CraftResource.Herbrosite:
+					case CraftResource.Khandarium:
+					case CraftResource.Mytheril:
+					case CraftResource.Sombralir:
+					case CraftResource.Draconyr:
+					case CraftResource.Heptazion:
+					case CraftResource.Oceanis:
+					case CraftResource.Brazium:
+					case CraftResource.Lunerium:
+					case CraftResource.Marinar:
+					case CraftResource.Nostalgium:			m_CraftSystem = new List<CraftSystem>() { DefBlacksmithy.CraftSystem, DefTinkering.CraftSystem }; break;
 
-                    case CraftResource.ForestierLeather:     m_CraftSystem = DefCuir.CraftSystem; break;
-					case CraftResource.DesertiqueLeather:	        m_CraftSystem = DefCuir.CraftSystem; break;
-					case CraftResource.CollinoisLeather:	    m_CraftSystem = DefCuir.CraftSystem; break;
-					case CraftResource.SavanoisLeather:	    m_CraftSystem = DefCuir.CraftSystem; break;
-                    case CraftResource.ToundroisLeather:         m_CraftSystem = DefCuir.CraftSystem; break;
-                    case CraftResource.TropicauxLeather:       m_CraftSystem = DefCuir.CraftSystem; break;
-                    case CraftResource.MontagnardLeather:      m_CraftSystem = DefCuir.CraftSystem; break;
-                    case CraftResource.AncienLeather:        m_CraftSystem = DefCuir.CraftSystem; break;
-                    case CraftResource.PlainoisLeather:       m_CraftSystem = DefCuir.CraftSystem; break;
+                    case CraftResource.ForestierLeather:    
+					case CraftResource.DesertiqueLeather:	
+					case CraftResource.CollinoisLeather:	
+					case CraftResource.SavanoisLeather:	    
+                    case CraftResource.ToundroisLeather:    
+                    case CraftResource.TropicauxLeather:    
+                    case CraftResource.MontagnardLeather:   
+                    case CraftResource.AncienLeather:       
+                    case CraftResource.PlainoisLeather:		m_CraftSystem = new List<CraftSystem>() { DefCuir.CraftSystem }; break;
 
-                    case CraftResource.PlainoisBone:        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-					case CraftResource.ForestierBone:	            m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-					case CraftResource.DesertiqueBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-					case CraftResource.CollinoisBone:	        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-                    case CraftResource.SavanoisBone:            m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-                    case CraftResource.ToundroisBone:          m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-                    case CraftResource.TropicauxBone:         m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-                    case CraftResource.MontagnardBone:           m_CraftSystem = DefBoneTailoring.CraftSystem; break;
-                    case CraftResource.AncienBone:          m_CraftSystem = DefBoneTailoring.CraftSystem; break;
+                    case CraftResource.PlainoisBone:        
+					case CraftResource.ForestierBone:	    
+					case CraftResource.DesertiqueBone:	    
+					case CraftResource.CollinoisBone:	    
+                    case CraftResource.SavanoisBone:        
+                    case CraftResource.ToundroisBone:       
+                    case CraftResource.TropicauxBone:       
+                    case CraftResource.MontagnardBone:      
+                    case CraftResource.AncienBone:			m_CraftSystem = new List<CraftSystem>() { DefBoneTailoring.CraftSystem }; break;
 
-                    case CraftResource.RegularWood:          m_CraftSystem = DefBowFletching.CraftSystem; break;
-					case CraftResource.OakWood:	        m_CraftSystem = DefBowFletching.CraftSystem; break;
-					case CraftResource.AshWood:	    m_CraftSystem = DefBowFletching.CraftSystem; break;
-                    case CraftResource.YewWood:           m_CraftSystem = DefBowFletching.CraftSystem; break;
-                    case CraftResource.Heartwood:        m_CraftSystem = DefBowFletching.CraftSystem; break;
-                    case CraftResource.Bloodwood:           m_CraftSystem = DefBowFletching.CraftSystem; break;
-                    case CraftResource.Frostwood:          m_CraftSystem = DefBowFletching.CraftSystem; break;
-              
-
-              
+					case CraftResource.RegularWood:
+					case CraftResource.PlainoisWood:
+					case CraftResource.ForestierWood:
+					case CraftResource.DesertiqueWood:
+					case CraftResource.CollinoisWood:
+					case CraftResource.SavanoisWood:
+					case CraftResource.ToundroisWood:
+					case CraftResource.TropicauxWood:
+					case CraftResource.MontagnardWood:
+					case CraftResource.VolcaniqueWood:
+					case CraftResource.AncienWood:
+					case CraftResource.OakWood:
+					case CraftResource.AshWood:
+					case CraftResource.YewWood:
+					case CraftResource.Heartwood:
+					case CraftResource.Bloodwood:
+					case CraftResource.Frostwood:			m_CraftSystem = new List<CraftSystem>() { DefBowFletching.CraftSystem, DefCarpentry.CraftSystem, DefTinkering.CraftSystem }; break;
 				}
 
-                if (m_CraftSystem == null)
+                if (m_CraftSystem == null || m_CraftSystem.Count <= 0)
                 {
                     from.SendMessage( "Vous ne pouvez pas recycler ceci. (Code: 0)");
                     return;
@@ -152,46 +171,18 @@ namespace Server.Items
                     return;
                 }
 
-                CraftItem craftItem = m_CraftSystem.CraftItems.SearchFor(targeted.GetType());
+				CraftItem craftItem = null;
 
-                if (craftItem == null || craftItem.Resources.Count == 0)
-                {
-                    switch (resource)
-				    {
-						case CraftResource.Iron: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.DullCopper: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.ShadowIron: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Copper: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Bronze: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Gold: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Agapite: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Verite: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Valorite: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Mytheril: m_CraftSystem = DefTinkering.CraftSystem; break;
+				foreach(var system in m_CraftSystem)
+				{
+					var found = system.CraftItems.SearchFor(targeted.GetType());
 
-						case CraftResource.ForestierLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.DesertiqueLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.CollinoisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.SavanoisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.ToundroisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.TropicauxLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.MontagnardLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.AncienLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-						case CraftResource.PlainoisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
-
-
-
-						case CraftResource.RegularWood: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.OakWood: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.AshWood: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.YewWood: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Heartwood: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Bloodwood: m_CraftSystem = DefTinkering.CraftSystem; break;
-						case CraftResource.Frostwood: m_CraftSystem = DefTinkering.CraftSystem; break;
+					if (found != null)
+					{
+						craftItem = found;
+						break;
 					}
-
-                    craftItem = m_CraftSystem.CraftItems.SearchFor(targeted.GetType());
-                }
+				}
 
                 if (craftItem == null || craftItem.Resources.Count == 0)
                 {
@@ -199,88 +190,34 @@ namespace Server.Items
                     return;
                 }
 
-                CraftRes craftResource = craftItem.Resources.GetAt(0);
+				var resourceReturned = false;
 
-                if (craftResource.Amount < 2)
-                {
+                foreach(CraftRes craftRes in craftItem.Resources)
+				{
+					if (craftRes.Amount <= 1)
+						continue;
+
+					Type resourceType = info.ResourceTypes[0];
+					Item resItem = (Item)Activator.CreateInstance(resourceType);
+
+					int newAmount = (int)(craftRes.Amount * 0.5);
+
+					if (newAmount < 1)
+						newAmount = 1;
+
+
+					resItem.Amount = newAmount;
+
+					from.AddToBackpack(resItem);
+
+					resourceReturned = true;
+				}
+
+				if (!resourceReturned)
+				{
                     from.SendMessage( "Cet objet ne contient pas suffisamment de ressources pour être recyclé.");
                     return;
                 }
-
-                Type resourceType = info.ResourceTypes[0];
-                Item resItem = (Item)Activator.CreateInstance(resourceType);
-
-                if (resItem is BaseIngot)
-                {
-                    switch (resource)
-                    {
-                        case CraftResource.Iron:         resItem = new IronIngot(); break;
-                        case CraftResource.Copper:      resItem = new CopperIngot(); break;
-                        case CraftResource.DullCopper:       resItem = new DullCopperIngot(); break;
-                        case CraftResource.ShadowIron:      resItem = new ShadowIronIngot(); break;
-						case CraftResource.Bronze:		resItem = new BronzeIngot(); break;
-						case CraftResource.Gold:          resItem = new GoldIngot(); break;
-                        case CraftResource.Agapite:     resItem = new AgapiteIngot(); break;
-                        case CraftResource.Verite:      resItem = new VeriteIngot(); break;
-                        case CraftResource.Valorite:    resItem = new ValoriteIngot(); break;
-                        case CraftResource.Mytheril:    resItem = new MytherilIngot(); break;
-                    }
-                }
-                else if (resItem is BaseLog)
-                {
-                    switch (resource)
-                    {
-                        case CraftResource.RegularWood:      resItem = new RegularBoard(); break;
-                        case CraftResource.OakWood:       resItem = new OakBoard(); break;
-                        case CraftResource.AshWood:    resItem = new AshBoard(); break;
-                        case CraftResource.YewWood:       resItem = new YewBoard(); break;
-                        case CraftResource.Heartwood:    resItem = new HeartwoodBoard(); break;
-                        case CraftResource.Bloodwood:       resItem = new BloodwoodBoard(); break;
-                        case CraftResource.Frostwood:      resItem = new FrostwoodBoard(); break;
-                      
-                    }
-                }
-                else if (resItem is BaseBone)
-                {
-                    switch (resource)
-                    {
-                        case CraftResource.PlainoisBone:  resItem = new PlainoisBone(); break;
-                        case CraftResource.ForestierBone:       resItem = new ForestierBone(); break;
-                        case CraftResource.DesertiqueBone:     resItem = new DesertiqueBone(); break;
-                        case CraftResource.CollinoisBone:   resItem = new CollinoisBone(); break;
-                        case CraftResource.SavanoisBone:      resItem = new SavanoisBone(); break;
-                        case CraftResource.ToundroisBone:    resItem = new ToundroisBone(); break;
-                        case CraftResource.TropicauxBone:   resItem = new TropicauxBone(); break;
-                        case CraftResource.MontagnardBone:     resItem = new MontagnardBone(); break;
-                        case CraftResource.AncienBone:    resItem = new AncienBone(); break;
-                    }
-                }
-                
-                else if (resItem is BaseHides)
-                {
-                    switch (resource)
-                    {
-                        case CraftResource.PlainoisLeather:  resItem = new PlainoisLeather(); break;
-                        case CraftResource.ForestierLeather:       resItem = new ForestierLeather(); break;
-                        case CraftResource.DesertiqueLeather:     resItem = new DesertiqueLeather(); break;
-                        case CraftResource.CollinoisLeather:   resItem = new CollinoisLeather(); break;
-                        case CraftResource.SavanoisLeather:      resItem = new SavanoisLeather(); break;
-                        case CraftResource.ToundroisLeather:    resItem = new ToundroisLeather(); break;
-                        case CraftResource.TropicauxLeather:   resItem = new TropicauxLeather(); break;
-                        case CraftResource.MontagnardLeather:     resItem = new MontagnardLeather(); break;
-                        case CraftResource.AncienLeather:    resItem = new AncienLeather(); break;
-                    }
-                }
-
-                int newAmount = (int)(craftResource.Amount * 0.5);
-                
-                if (newAmount < 1)
-                    newAmount = 1;
-
-				resItem.Amount = newAmount;
-
-
-                from.AddToBackpack(resItem);
 
                 ((Item)targeted).Delete();
                     

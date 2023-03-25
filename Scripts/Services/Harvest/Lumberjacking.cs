@@ -216,7 +216,7 @@ namespace Server.Engines.Harvest
                 CraftResourceInfo info = CraftResources.GetInfo(hmap.Resource);
 
                 if (info != null)
-                    return info.ResourceTypes[0];
+                    return info.ResourceTypes[1];
             }
             #endregion
 
