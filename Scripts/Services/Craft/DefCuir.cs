@@ -235,15 +235,15 @@ namespace Server.Engines.Craft
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, 1049312);
-			AddSubRes(typeof(ForestierLeather), "Forestier", 65.0, 1049312);
-			AddSubRes(typeof(DesertiqueLeather), "Desertique", 70.0, 1049312);
-			AddSubRes(typeof(CollinoisLeather), "Collinois", 75.0, 1049312);
-			AddSubRes(typeof(SavanoisLeather), "Savanois", 80.0, 1049312);
-			AddSubRes(typeof(ToundroisLeather), "Toundrois", 85.0, 1049312);
-			AddSubRes(typeof(TropicauxLeather), "Tropical", 90.0, 1049312);
-			AddSubRes(typeof(MontagnardLeather), "Montagnard", 95.0, 1049312);
-			AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
+			AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, "Vous ne savez pas travailler le cuir Plainois");
+			AddSubRes(typeof(ForestierLeather), "Forestier", 10.0, "Vous ne savez pas travailler le cuir Forestier");
+			AddSubRes(typeof(DesertiqueLeather), "Desertique", 20.0, "Vous ne savez pas travailler le cuir Desertique");
+			AddSubRes(typeof(CollinoisLeather), "Collinois", 30.0, "Vous ne savez pas travailler le cuir Collinois");
+			AddSubRes(typeof(SavanoisLeather), "Savanois", 40.0, "Vous ne savez pas travailler le cuir Savanois");
+			AddSubRes(typeof(ToundroisLeather), "Toundrois", 50.0, "Vous ne savez pas travailler le cuir Toundrois");
+			AddSubRes(typeof(TropicauxLeather), "Tropicaux", 60.0, "Vous ne savez pas travailler le cuir Tropicaux");
+			AddSubRes(typeof(MontagnardLeather), "Montagnard", 70.0, "Vous ne savez pas travailler le cuir Montagnard");
+			AddSubRes(typeof(AncienLeather), "Ancien", 80.0, "Vous ne savez pas travailler le cuir Ancien");
 
 			MarkOption = true;
             Repair = true;

@@ -106,15 +106,15 @@ namespace Server.Items
 					case CraftResource.Valorite:		    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
 					case CraftResource.Mytheril:		    m_CraftSystem = DefBlacksmithy.CraftSystem; break;
 
-                    case CraftResource.ForestierLeather:     m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.DesertiqueLeather:	        m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.CollinoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
-					case CraftResource.SavanoisLeather:	    m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.ToundroisLeather:         m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.TropicauxLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.MontagnardLeather:      m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.AncienLeather:        m_CraftSystem = DefTailoring.CraftSystem; break;
-                    case CraftResource.PlainoisLeather:       m_CraftSystem = DefTailoring.CraftSystem; break;
+                    case CraftResource.ForestierLeather:     m_CraftSystem = DefCuir.CraftSystem; break;
+					case CraftResource.DesertiqueLeather:	        m_CraftSystem = DefCuir.CraftSystem; break;
+					case CraftResource.CollinoisLeather:	    m_CraftSystem = DefCuir.CraftSystem; break;
+					case CraftResource.SavanoisLeather:	    m_CraftSystem = DefCuir.CraftSystem; break;
+                    case CraftResource.ToundroisLeather:         m_CraftSystem = DefCuir.CraftSystem; break;
+                    case CraftResource.TropicauxLeather:       m_CraftSystem = DefCuir.CraftSystem; break;
+                    case CraftResource.MontagnardLeather:      m_CraftSystem = DefCuir.CraftSystem; break;
+                    case CraftResource.AncienLeather:        m_CraftSystem = DefCuir.CraftSystem; break;
+                    case CraftResource.PlainoisLeather:       m_CraftSystem = DefCuir.CraftSystem; break;
 
                     case CraftResource.PlainoisBone:        m_CraftSystem = DefBoneTailoring.CraftSystem; break;
 					case CraftResource.ForestierBone:	            m_CraftSystem = DefBoneTailoring.CraftSystem; break;
@@ -169,15 +169,15 @@ namespace Server.Items
 						case CraftResource.Valorite: m_CraftSystem = DefTinkering.CraftSystem; break;
 						case CraftResource.Mytheril: m_CraftSystem = DefTinkering.CraftSystem; break;
 
-						case CraftResource.ForestierLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.DesertiqueLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.CollinoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.SavanoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.ToundroisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.TropicauxLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.MontagnardLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.AncienLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
-						case CraftResource.PlainoisLeather: m_CraftSystem = DefTailoring.CraftSystem; break;
+						case CraftResource.ForestierLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.DesertiqueLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.CollinoisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.SavanoisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.ToundroisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.TropicauxLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.MontagnardLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.AncienLeather: m_CraftSystem = DefCuir.CraftSystem; break;
+						case CraftResource.PlainoisLeather: m_CraftSystem = DefCuir.CraftSystem; break;
 
 
 

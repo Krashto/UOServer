@@ -12441,6 +12441,7 @@ namespace Server
 		public int StatTotal => Str + Dex + Int;
 
 		public long NextSpellTime { get; set; }
+		public int Weight { get; set; }
 
 		/// <summary>
 		///     Overridable. Virtual event invoked when the sector this Mobile is in gets <see cref="Sector.Activate">activated</see>.

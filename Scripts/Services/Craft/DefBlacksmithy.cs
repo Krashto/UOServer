@@ -539,20 +539,20 @@ namespace Server.Engines.Craft
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
 			AddSubRes(typeof(IronIngot), "Fer", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(BronzeIngot), "Bronze", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(CopperIngot), "Copper", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BronzeIngot), "Bronze", 15, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(CopperIngot), "Copper", 15, "Vous n'avez pas les compétences requises pour forger ce métal.");
 			AddSubRes(typeof(SonneIngot), "Sonne", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(ArgentIngot), "Argent", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(BorealeIngot), "Boréale", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(ChrysteliarIngot), "Chrysteliar", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(GlaciasIngot), "Glacias", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(LithiarIngot), "Lithiar", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(AcierIngot), "Acier", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(DurianIngot), "Durian", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(EquilibrumIngot), "Équilibrum", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(GoldIngot), "Or", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(JolinarIngot), "Jolinar", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(JusticiumIngot), "Justicium", 40, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ArgentIngot), "Argent", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BorealeIngot), "Boréale", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ChrysteliarIngot), "Chrysteliar", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GlaciasIngot), "Glacias", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LithiarIngot), "Lithiar", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AcierIngot), "Acier", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DurianIngot), "Durian", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(EquilibrumIngot), "Équilibrum", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GoldIngot), "Or", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JolinarIngot), "Jolinar", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JusticiumIngot), "Justicium", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
 			AddSubRes(typeof(AbyssiumIngot), "Abyssium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
 			AddSubRes(typeof(BloodiriumIngot), "Bloodirium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
 			AddSubRes(typeof(HerbrositeIngot), "Herbrosite", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
@@ -565,7 +565,7 @@ namespace Server.Engines.Craft
 			AddSubRes(typeof(BraziumIngot), "Brazium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
 			AddSubRes(typeof(LuneriumIngot), "Lunerium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
 			AddSubRes(typeof(MarinarIngot), "Marinar", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 100, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 90, "Vous n'avez pas les compétences requises pour forger ce métal.");
 
 			Resmelt = true;
 			Repair = true;

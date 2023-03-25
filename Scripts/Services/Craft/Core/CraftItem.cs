@@ -1409,7 +1409,7 @@ namespace Server.Engines.Craft
         }
 
 		private static Type[] m_UseLeathers = new Type[]
-		   {
+		  {
 				typeof(FemaleLeatherChest),
 				typeof(LeatherArms),
 				typeof(LeatherBustierArms),
@@ -1428,7 +1428,7 @@ namespace Server.Engines.Craft
 				typeof(StuddedGloves),
 				typeof(StuddedGorget),
 				typeof(StuddedLegs)
-		   };
+		  };
 
 		private static Type[] m_UseBones = new Type[]
 			{
@@ -1486,15 +1486,16 @@ namespace Server.Engines.Craft
 			{
 				switch (name)
 				{
-					case "Lupus": skill += 5.0; break;
-					case "Reptilien": skill += 10.0; break;
-					case "Geant": skill += 15.0; break;
-					case "Ophidien": skill += 20.0; break;
-					case "Arachnide": skill += 20.0; break;
-					case "Dragonique": skill += 25.0; break;
-					case "Demoniaque": skill += 30.0; break;
-					case "Ancien": skill += 35.0; break;
-					
+					case "PlainoisLeather": skill += 0.0; break;
+					case "ForestierLeather": skill += 10.0; break;
+					case "DesertiqueLeather": skill += 15.0; break;
+					case "CollinoisLeather": skill += 20.0; break;
+					case "SavanoisLeather": skill += 25.0; break;
+					case "ToundroisLeather": skill += 30.0; break;
+					case "TropicauxLeather": skill += 35.0; break;
+					case "MontagnardLeather": skill += 40.0; break;
+					case "AncienLeather": skill += 45.0; break;
+
 				}
 
 				return skill;
@@ -1509,14 +1510,15 @@ namespace Server.Engines.Craft
 			{
 				switch (name)
 				{
-					case "Lupus": skill += 5.0; break;
-					case "Reptilien": skill += 10.0; break;
-					case "Geant": skill += 15.0; break;
-					case "Ophidien": skill += 20.0; break;
-					case "Arachnide": skill += 20.0; break;
-					case "Dragonique": skill += 25.0; break;
-					case "Demoniaque": skill += 30.0; break;
-					case "Ancien": skill += 35.0; break;
+					case "PlainoisBone": skill += 0.0; break;
+					case "ForestierBone": skill += 10.0; break;
+					case "DesertiqueBone": skill += 15.0; break;
+					case "CollinoisBone": skill += 20.0; break;
+					case "SavanoisBone": skill += 25.0; break;
+					case "ToundroisBone": skill += 30.0; break;
+					case "TropicauxBone": skill += 35.0; break;
+					case "MontagnardBone": skill += 40.0; break;
+					case "AncienBone": skill += 45.0; break;
 					
 				}
 
@@ -1532,15 +1534,49 @@ namespace Server.Engines.Craft
 			{
 				switch (name)
 				{
-					case "DullCopper": skill += 5.0; break;
-					case "ShadowIron": skill += 10.0; break;
-					case "Copper": skill += 15.0; break;
-					case "Bronze": skill += 20.0; break;
-					case "Gold": skill += 20.0; break;
-					case "Agapite": skill += 25.0; break;
-					case "Verite": skill += 30.0; break;
-					case "Valorite": skill += 35.0; break;
+					case "IronIngot": skill += 0.0; break;
+					case "BronzeIngot": skill += 5.0; break;
+					case "CopperIngot": skill += 5.0; break;
+					case "SonneIngot": skill += 10.0; break;
+					case "ArgentIngot": skill += 10.0; break;
+					case "BorealeIngot": skill += 15.0; break;
+					case "ChrysteliarIngot": skill += 15.0; break;
+					case "GlaciasIngot": skill += 15.0; break;
+					case "LithiarIngot": skill += 25.0; break;
+					case "AcierIngot": skill += 25.0; break;
+					case "DurianIngot": skill += 25.0; break;
+					case "EquilibrumIngot": skill += 25.0; break;
+					case "GoldIngot": skill += 30.0; break;
+					case "JolinarIngot": skill += 30.0; break;
+					case "JusticiumIngot": skill += 30.0; break;
+					case "AbyssiumIngot": skill += 30.0; break;
+					case "BloodiriumIngot": skill += 30.0; break;
+					case "HerbrositeIngot": skill += 35.0; break;
+					case "KhandariumIngot": skill += 35.0; break;
+					case "MytherilIngot": skill += 35.0; break;
+					case "SombralirIngot": skill += 35.0; break;
+					case "DraconyrIngot": skill += 35.0; break;
+					case "HeptazionIngot": skill += 40.0; break;
+					case "OceanisIngot": skill += 40.0; break;
+					case "BraziumIngot": skill += 40.0; break;
+					case "LuneriumIngot": skill += 40.0; break;
+					case "MarinarIngot": skill += 40.0; break;
+					case "NostalgiumIngot": skill += 45.0; break;
 					
+					
+					//case "VolcaniumIngot": skill += 10.0; break;
+					//case "AgapiteIngot": skill += 17.0; break;					
+					//case "EtherylIngot": skill += 17.0; break;										
+					//case "ZirconiumIngot": skill += 17.0; break;					
+					//case "MaritiumIngot": skill += 25.0; break;
+					//case "MuscoviteIngot": skill += 25.0; break;
+					//case "PhlogopiteIngot": skill += 25.0; break;
+					//case "BiotiteIngot": skill += 35.0; break;
+					//case "HeliothropeIngot": skill += 35.0; break;
+					//case "PyroxeneIngot": skill += 35.0; break;
+					
+					
+
 				}
 
 				return skill;
@@ -1571,11 +1607,11 @@ namespace Server.Engines.Craft
             {
                 CraftSkill craftSkill = Skills.GetAt(i);
 
-                double minSkill = craftSkill.MinSkill - MinSkillOffset;
-                double maxSkill = craftSkill.MaxSkill;
-                double valSkill = from.Skills[craftSkill.SkillToMake].Value;
+				double minSkill = AdjustSkill(craftSkill.MinSkill, from, craftSystem);
+				double maxSkill = AdjustSkill(craftSkill.MaxSkill, from, craftSystem);
+				double valSkill = from.Skills[craftSkill.SkillToMake].Value;
 
-                if (valSkill < minSkill)
+				if (valSkill < minSkill)
                 {
                     allRequiredSkills = false;
                 }

@@ -3,6 +3,7 @@ using Server.Items;
 using Server.Mobiles;
 using Server.Network;
 using System;
+using System.Reflection;
 
 namespace Server.Engines.Craft
 {
@@ -184,14 +185,23 @@ namespace Server.Engines.Craft
         {
             for (int i = 0; i < m_CraftItem.Skills.Count; i++)
             {
-                CraftSkill skill = m_CraftItem.Skills.GetAt(i);
-                double minSkill = skill.MinSkill, maxSkill = skill.MaxSkill;
+				//   CraftSkill skill = m_CraftItem.Skills.GetAt(i);
+				//   double minSkill = skill.MinSkill, maxSkill = skill.MaxSkill;
 
-                if (minSkill < 0)
+				double skillValue = m_From.Skills[m_CraftItem.Skills.GetAt(i).SkillToMake].Value;
+				skillValue = Math.Round(skillValue, 1);
+				//AddLabel(378, (20 * i) + 132, LabelHue, skillValue.ToString());
+
+
+				CraftSkill skill = m_CraftItem.Skills.GetAt(i);
+				double minSkill = m_CraftItem.AdjustSkill(skill.MinSkill, m_From, m_CraftSystem), maxSkill = m_CraftItem.AdjustSkill(skill.MaxSkill, m_From, m_CraftSystem);
+
+
+				if (minSkill < 0)
                     minSkill = 0;
 
                 AddHtmlLocalized(170, 132 + (i * 20), 200, 18, AosSkillBonuses.GetLabel(skill.SkillToMake), LabelColor, false, false);
-                AddLabel(430, 132 + (i * 20), LabelHue, string.Format("{0:F1}", minSkill));
+               AddLabel(430, 132 + (i * 20), LabelHue, string.Format("{0:F1}", minSkill));
             }
 
             CraftSubResCol res = (m_CraftItem.UseSubRes2 ? m_CraftSystem.CraftSubRes2 : m_CraftSystem.CraftSubRes);

@@ -114,19 +114,19 @@ namespace Server.Engines.Craft
 			#endregion
 
 			// Set the overridable material
-			SetSubRes(typeof(PlainoisBone), "Os");
+			SetSubRes(typeof(PlainoisBone), "Plainois");
 
             // Add every material you want the player to be able to choose from
             // This will override the overridable material
-            AddSubRes(typeof(PlainoisBone), "Os", 0.0, 1049312);
-			AddSubRes(typeof(ForestierBone), "Lupus", 65.0, 1049312);
-			AddSubRes(typeof(DesertiqueBone), "Reptilien", 70.0, 1049312);
-			AddSubRes(typeof(CollinoisBone), "Geant", 75.0, 1049312);
-			AddSubRes(typeof(SavanoisBone), "Ophidien", 80.0, 1049312);
-			AddSubRes(typeof(ToundroisBone), "Arachnide", 85.0, 1049312);
-			AddSubRes(typeof(TropicauxBone), "Dragonique", 90.0, 1049312);
-			AddSubRes(typeof(MontagnardBone), "Demoniaque", 95.0, 1049312);
-			AddSubRes(typeof(AncienBone), "Ancien", 99.0, 1049312);
+            AddSubRes(typeof(PlainoisBone), "Plainois", 0.0, "Vous ne savez pas travailler les os Plainois");
+			AddSubRes(typeof(ForestierBone), "Forestier", 10.0, "Vous ne savez pas travailler les os Forestier");
+			AddSubRes(typeof(DesertiqueBone), "Desertique", 20.0, "Vous ne savez pas travailler les os Desertique");
+			AddSubRes(typeof(CollinoisBone), "Collinois", 30.0, "Vous ne savez pas travailler les os Collinois");
+			AddSubRes(typeof(SavanoisBone), "Savanois", 40.0, "Vous ne savez pas travailler les os Savanois");
+			AddSubRes(typeof(ToundroisBone), "Toundrois", 50.0, "Vous ne savez pas travailler les os Toundrois");
+			AddSubRes(typeof(TropicauxBone), "Tropicaux", 60.0, "Vous ne savez pas travailler les os Tropicaux");
+			AddSubRes(typeof(MontagnardBone), "Montagnard", 70.0, "Vous ne savez pas travailler les os Montagnard");
+			AddSubRes(typeof(AncienBone), "Ancien", 80.0, "Vous ne savez pas travailler les os Ancien");
 
             MarkOption = true;
             Repair = true;
