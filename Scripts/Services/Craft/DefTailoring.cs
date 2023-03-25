@@ -463,6 +463,24 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(RedPlainRugDeed), "Tapis/Rideaux", "Tapis Rouge", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RoseRugAddonDeed), "Tapis/Rideaux", "Tapis Rose", 65.0, 105.0, typeof(Cloth), "Tissus", 50, "Vous n'avez pas assez de tissus.");
 
+
+
+			// Set the overridable material
+			SetSubRes(typeof(PlainoisLeather), "Plainois");
+
+			// Add every material you want the player to be able to choose from
+			// This will override the overridable material
+			AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, 1049312);
+			AddSubRes(typeof(ForestierLeather), "Forestier", 65.0, 1049312);
+			AddSubRes(typeof(DesertiqueLeather), "Desertique", 70.0, 1049312);
+			AddSubRes(typeof(CollinoisLeather), "Collinois", 75.0, 1049312);
+			AddSubRes(typeof(SavanoisLeather), "Savanois", 80.0, 1049312);
+			AddSubRes(typeof(ToundroisLeather), "Toundrois", 85.0, 1049312);
+			AddSubRes(typeof(TropicauxLeather), "Tropical", 90.0, 1049312);
+			AddSubRes(typeof(MontagnardLeather), "Montagnard", 95.0, 1049312);
+			AddSubRes(typeof(AncienLeather), "Ancien", 99.0, 1049312);
+
+
 			MarkOption = true;
             Repair = true;
             CanEnhance = true;
