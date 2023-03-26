@@ -34,7 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
-			else
+			else if (CheckSequence())
 			{
 				var duration = GetDurationForSpell(10);
 

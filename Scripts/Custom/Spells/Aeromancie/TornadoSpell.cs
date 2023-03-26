@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 using VitaNex.FX;
 
@@ -35,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
-			else
+			else if (CheckSequence())
 			{
 				var duration = GetDurationForSpell(5);
 
@@ -73,13 +74,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public class InternalTimer : Timer
 		{
-			private Mobile m_Mobile;
+			private Mobile m_Caster;
 			private TornadoSpell m_Owner;
 			private DateTime m_EndTime;
 
 			public InternalTimer(Mobile m, TornadoSpell owner, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
-				m_Mobile = m;
+				m_Caster = m;
 				m_Owner = owner;
 				m_EndTime = endTime;
 
@@ -90,18 +91,18 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				var targets = new ArrayList();
 
-				var map = m_Mobile.Map;
+				var map = m_Caster.Map;
 
 				var range = 1;
 
-				ExplodeFX.Tornado.CreateInstance(m_Mobile, m_Mobile.Map, range).Send();
+				ExplodeFX.Tornado.CreateInstance(m_Caster, m_Caster.Map, range).Send();
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(m_Mobile.Location, range);
+					IPooledEnumerable eable = map.GetMobilesInRange(m_Caster.Location, range);
 
 					foreach (Mobile m in eable)
-						if (m_Mobile != m && SpellHelper.ValidIndirectTarget(m_Mobile, m) && m_Mobile.CanBeHarmful(m, false))
+						if (m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 							targets.Add(m);
 
 					eable.Free();
@@ -113,7 +114,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 					{
 						var m = (Mobile)targets[i];
 
-						var source = m_Mobile;
+						var source = m_Caster;
 
 						if (m_Owner.CheckResisted(m))
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
@@ -135,9 +136,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 					}
 				}
 
-				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
+				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Caster) || m_Caster == null || m_Caster.Deleted || !m_Caster.Alive)
 				{
-					Deactivate(m_Mobile);
+					Deactivate(m_Caster);
 					Stop();
 				}
 			}

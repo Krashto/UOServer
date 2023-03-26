@@ -1,3 +1,4 @@
+using System;
 using Server.Items;
 using Server.Mobiles;
 
@@ -48,6 +49,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnThink()
 		{
+			if (NextThinkingTime >= DateTime.Now)
+				return;
+
 			var mobiles = GetMobilesInRange(5);
 
 			foreach (var m in mobiles)
@@ -55,9 +59,17 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (m == ControlMaster)
 					continue;
 
+				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))
+					continue;
+
+				if (m is BaseCreature creature && creature.Controlled && CustomPlayerMobile.IsInEquipe(ControlMaster, creature.ControlMaster))
+					continue;
+
 				m.Combatant = this;
 				Combatant = m;
 			}
+
+			base.OnThink();
 		}
 
 		public override void OnDeath(Container c)

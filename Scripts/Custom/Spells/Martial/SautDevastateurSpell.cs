@@ -199,7 +199,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 			public override bool OnMoveOver(Mobile m)
 			{
-				if (Visible && m_Caster != null && m != m_Caster && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false))
+				if (Visible && m_Caster != null && m != m_Caster && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 				{
 					if (SpellHelper.CanRevealCaster(m))
 						m_Caster.RevealingAction();
@@ -256,7 +256,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 							foreach (Mobile m in eable)
 							{
-								if ((m.Z + 16) > m_Item.Z && (m_Item.Z + 12) > m.Z && m != caster && SpellHelper.ValidIndirectTarget(caster, m) && caster.CanBeHarmful(m, false))
+								if ((m.Z + 16) > m_Item.Z && (m_Item.Z + 12) > m.Z && m != caster && SpellHelper.ValidIndirectTarget(caster, m) && caster.CanBeHarmful(m, false) && caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(caster, m))
 									m_Queue.Enqueue(m);
 							}
 

@@ -40,8 +40,12 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		public override void OnCast()
 		{
-			WeaponAbility.SetCurrentAbility(Caster, WeaponAbility.Disarm);
-			Caster.SendMessage("Votre prochain coup désarmera votre cible.");
+			if (CheckSequence())
+			{
+				WeaponAbility.SetCurrentAbility(Caster, WeaponAbility.Disarm);
+				Caster.SendMessage("Votre prochain coup désarmera votre cible.");
+			}
+			
 			FinishSequence();
 		}
 	}

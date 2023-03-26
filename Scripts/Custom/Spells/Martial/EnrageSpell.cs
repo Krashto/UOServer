@@ -34,10 +34,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				Deactivate(Caster);
-			}
-			else
+			else if (CheckSequence())
 			{
 				var value = Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20;
 

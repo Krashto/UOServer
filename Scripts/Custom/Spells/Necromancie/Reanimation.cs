@@ -56,7 +56,6 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		public override void OnCast()
 		{
-
 			if (CheckSequence())
 				try
 				{

@@ -31,22 +31,25 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
-			Effects.SendLocationParticles(EffectItem.Create(new Point3D(Caster.X, Caster.Y, Caster.Z + 16), Caster.Map, EffectItem.DefaultDuration), 0x376A, 10, 15, 5045);
-			Caster.PlaySound(0x3C4);
+			if (CheckSequence())
+			{
+				Effects.SendLocationParticles(EffectItem.Create(new Point3D(Caster.X, Caster.Y, Caster.Z + 16), Caster.Map, EffectItem.DefaultDuration), 0x376A, 10, 15, 5045);
+				Caster.PlaySound(0x3C4);
 
-			Caster.Hidden = true;
-			Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 2, Aptitude.Aeromancie);
-			Caster.SendLocalizedMessage(502730); // You begin to move quietly.
+				Caster.Hidden = true;
+				Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 2, Aptitude.Aeromancie);
+				Caster.SendLocalizedMessage(502730); // You begin to move quietly.
 
-			ExplodeFX.Smoke.CreateInstance(Caster, Caster.Map, 1).Send();
+				ExplodeFX.Smoke.CreateInstance(Caster, Caster.Map, 1).Send();
 
-			Deactivate(Caster);
+				Deactivate(Caster);
 
-			var duration = GetDurationForSpell(30, 2);
+				var duration = GetDurationForSpell(30, 2);
 
-			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
+			}
 
 			FinishSequence();
 		}

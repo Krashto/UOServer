@@ -33,12 +33,14 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
+			else if (CheckSequence())
+			{
+				var duration = GetDurationForSpell(15);
 
-			var duration = GetDurationForSpell(15);
-
-			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
+			}
 
 			FinishSequence();
 		}

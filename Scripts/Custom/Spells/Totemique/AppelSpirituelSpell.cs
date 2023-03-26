@@ -1,6 +1,8 @@
 ﻿using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Items;
+using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -35,7 +37,9 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (CheckSequence())
 			{
-				
+				ExplodeFX.Smoke.CreateInstance(m, m.Map, 0).Send();
+				m.MoveToWorld(new Point3D(1120, 1407, 0), Map.Felucca);
+				ExplodeFX.Smoke.CreateInstance(m, m.Map, 0).Send();
 			}
 
 			FinishSequence();

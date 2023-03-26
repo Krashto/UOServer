@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
 using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -57,7 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)(1 + Caster.Skills[CastSkill].Value / 25));
 
 					foreach (Mobile m in eable)
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 							targets.Add(m);
 
 					eable.Free();

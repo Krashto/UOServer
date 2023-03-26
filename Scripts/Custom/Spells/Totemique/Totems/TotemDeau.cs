@@ -1,3 +1,4 @@
+using System;
 using Server.Items;
 using Server.Mobiles;
 
@@ -50,8 +51,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override double DispelFocus => 45.0;
 
+
 		public override void OnThink()
 		{
+			if (NextThinkingTime >= DateTime.Now)
+				return;
+
 			var mobiles = GetMobilesInRange(5);
 
 			foreach (var m in mobiles)
@@ -60,7 +65,11 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					continue;
 
 				ControlMaster.Heal(10 + (SuperCharged ? 10 : 0));
+				ControlMaster.FixedParticles(0x376A, 9, 32, 5005, EffectLayer.Waist);
+				ControlMaster.PlaySound(0x1F2);
 			}
+
+			base.OnThink();
 		}
 
 		public override void OnDeath(Container c)

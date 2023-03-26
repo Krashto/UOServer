@@ -34,10 +34,10 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 				foreach (var targ in targets)
 				{
-					if (targ is CustomPlayerMobile)
+					if (CustomPlayerMobile.IsInEquipe(Caster, targ))
 						continue;
 
-					if (targ is BaseCreature creature && creature.Controlled)
+					if (targ is BaseCreature creature && creature.Controlled && CustomPlayerMobile.IsInEquipe(Caster, creature.ControlMaster))
 						continue;
 
 					targ.Combatant = Caster;

@@ -33,10 +33,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 		public override void OnCast()
 		{
 			if (IsActive(Caster))
-			{
 				Deactivate(Caster);
-			}
-			else
+			else if (CheckSequence())
 			{
 				var duration = GetDurationForSpell(30);
 

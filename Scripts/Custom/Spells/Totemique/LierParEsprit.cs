@@ -27,17 +27,22 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnCast()
 		{
-			var mobiles = Caster.GetMobilesInRange(10);
-
-			foreach (var m in mobiles)
+			if (CheckSequence())
 			{
-				if (!(m is BaseTotem totem) || totem.ControlMaster != Caster)
-					continue;
+				var mobiles = Caster.GetMobilesInRange(10);
 
-				SpellHelper.Turn(totem, Caster);
-				ConcentricWaveFX.Water.CreateInstance(totem.Location, totem.Map, totem.Direction, (int)totem.GetDistanceToSqrt(Caster));
-				totem.MoveToWorld(Caster.Location, Caster.Map);
+				foreach (var m in mobiles)
+				{
+					if (!(m is BaseTotem totem) || totem.ControlMaster != Caster)
+						continue;
+
+					SpellHelper.Turn(totem, Caster);
+					ConcentricWaveFX.Water.CreateInstance(totem.Location, totem.Map, totem.Direction, (int)totem.GetDistanceToSqrt(Caster));
+					totem.MoveToWorld(Caster.Location, Caster.Map);
+				}
 			}
+
+			FinishSequence();
 		}
 	}
 }

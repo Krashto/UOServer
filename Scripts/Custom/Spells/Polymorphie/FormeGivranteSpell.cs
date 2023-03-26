@@ -34,7 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Deactivate(Caster);
 			else if (Caster.BodyMod != 0)
 				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-			else
+			else if (CheckSequence())
 			{
 				var duration = GetDurationForSpell(30, 2);
 

@@ -31,38 +31,41 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 		public override void OnCast()
 		{
-			var targets = new ArrayList();
-
-			var map = Caster.Map;
-
-			if (map != null)
+			if (CheckSequence())
 			{
-				IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
+				var targets = new ArrayList();
 
-				foreach (Mobile m in eable)
-					if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false))
-						targets.Add(m);
+				var map = Caster.Map;
 
-				eable.Free();
-			}
-
-			if (targets.Count > 0)
-			{
-				for (var i = 0; i < targets.Count; ++i)
+				if (map != null)
 				{
-					var m = (Mobile)targets[i];
+					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
 
-					SpellHelper.Turn(Caster, m);
+					foreach (Mobile m in eable)
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
+							targets.Add(m);
 
-					m.SendLocalizedMessage(500616); // You hear lovely music, and forget to continue battling!
-					m.Combatant = null;
-					m.Warmode = false;
+					eable.Free();
+				}
 
-					if (m is BaseCreature && !((BaseCreature)m).BardPacified)
-						((BaseCreature)m).Pacify(Caster, DateTime.UtcNow + TimeSpan.FromSeconds(30.0));
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var m = (Mobile)targets[i];
 
-					Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-					Caster.PlaySound(0x28E);
+						SpellHelper.Turn(Caster, m);
+
+						m.SendLocalizedMessage(500616); // You hear lovely music, and forget to continue battling!
+						m.Combatant = null;
+						m.Warmode = false;
+
+						if (m is BaseCreature && !((BaseCreature)m).BardPacified)
+							((BaseCreature)m).Pacify(Caster, DateTime.UtcNow + TimeSpan.FromSeconds(30.0));
+
+						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
+						Caster.PlaySound(0x28E);
+					}
 				}
 			}
 

@@ -61,7 +61,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 					eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 2 + Caster.Skills[CastSkill].Value / 50, Aptitude.Guerison));
 
 					foreach (Mobile m in eable)
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && (!Core.AOS || Caster.InLOS(m)) && !CustomPlayerMobile.IsInEquipe(Caster, m))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(Caster, m))
 							hTargets.Add(m);
 
 					eable.Free();

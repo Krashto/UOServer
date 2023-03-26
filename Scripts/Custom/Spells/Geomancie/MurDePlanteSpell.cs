@@ -5,6 +5,7 @@ using Server.Misc;
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -175,7 +176,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 			public override bool OnMoveOver(Mobile m)
 			{
-				if (Visible && m_Caster != null && m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false))
+				if (Visible && m_Caster != null && m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 				{
 					m_Caster.DoHarmful(m);
 
@@ -236,7 +237,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							IPooledEnumerable eable = map.GetMobilesInBounds(new Rectangle2D(m_Item.X - 2, m_Item.Y - 2, 4, 4));
 
 							foreach (Mobile m in eable)
-								if (m.Z + 16 > m_Item.Z && m_Item.Z + 12 > m.Z && SpellHelper.ValidIndirectTarget(caster, m) && caster.CanBeHarmful(m, false))
+								if (m.Z + 16 > m_Item.Z && m_Item.Z + 12 > m.Z && SpellHelper.ValidIndirectTarget(caster, m) && caster.CanBeHarmful(m, false) && caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(caster, m))
 									m_Queue.Enqueue(m);
 
 							eable.Free();

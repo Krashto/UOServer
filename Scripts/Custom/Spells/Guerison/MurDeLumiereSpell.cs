@@ -170,7 +170,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 			public override bool OnMoveOver(Mobile m)
 			{
-				if (Visible && m_Caster != null && m != m_Caster && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false))
+				if (Visible && m_Caster != null && m != m_Caster && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 				{
 					if (SpellHelper.CanRevealCaster(m))
 						m_Caster.RevealingAction();

@@ -4,6 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
 using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -47,7 +48,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 					foreach (Mobile m in eable)
 					{
-						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m != Caster && Caster.InLOS(m))
+						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m != Caster && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 							targets.Add(m);
 					}
 

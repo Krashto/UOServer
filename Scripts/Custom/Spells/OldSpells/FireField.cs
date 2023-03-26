@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using Server.Targeting;
-using Server.Network;
 using Server.Misc;
 using Server.Items;
 using Server.Mobiles;
@@ -170,7 +169,7 @@ namespace Server.Spells.OldSpells
 
 			public override bool OnMoveOver( Mobile m )
 			{
-				if ( Visible && m_Caster != null && SpellHelper.ValidIndirectTarget( m_Caster, m ) && m_Caster.CanBeHarmful( m, false ) )
+				if ( Visible && m_Caster != null && SpellHelper.ValidIndirectTarget( m_Caster, m ) && m_Caster.CanBeHarmful( m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 				{
 					m_Caster.DoHarmful( m );
 
@@ -241,7 +240,7 @@ namespace Server.Spells.OldSpells
 						{
 							foreach ( Mobile m in m_Item.GetMobilesInRange( 0 ) )
 							{
-								if ( (m.Z + 16) > m_Item.Z && (m_Item.Z + 12) > m.Z && SpellHelper.ValidIndirectTarget( caster, m ) && caster.CanBeHarmful( m, false ) )
+								if ( (m.Z + 16) > m_Item.Z && (m_Item.Z + 12) > m.Z && SpellHelper.ValidIndirectTarget( caster, m ) && caster.CanBeHarmful( m, false) && caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(caster, m))
 									m_Queue.Enqueue( m );
 							}
 

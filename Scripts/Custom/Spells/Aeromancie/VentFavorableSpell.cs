@@ -36,19 +36,16 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
-			else
+			else if(CheckSequence())
 			{
-				if (CheckSequence())
-				{
-					var duration = GetDurationForSpell(5);
+				var duration = GetDurationForSpell(5);
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					t.Start();
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				t.Start();
 
-					Caster.SendSpeedControl(SpeedControlType.MountSpeed);
+				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
-					Caster.PlaySound(163);
-				}
+				Caster.PlaySound(163);
 			}
 
 			FinishSequence();

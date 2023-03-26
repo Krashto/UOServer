@@ -52,7 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				if (map != null)
 					foreach (var m in Caster.GetMobilesInRange(range))
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && (!Core.AOS || Caster.InLOS(m)) && !CustomPlayerMobile.IsInEquipe(Caster, m))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(Caster, m))
 							m_target.Add(m);
 
 				for (var i = 0; i < m_target.Count; ++i)

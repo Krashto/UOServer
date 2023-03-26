@@ -1079,7 +1079,8 @@ namespace Server.Mobiles
 		}
 		public static bool IsInEquipe(Mobile source, Mobile target)
 		{
-			return false;
+			var party = Engines.PartySystem.Party.Get(source);
+			return party != null && party.Contains(target);
 		}
 
 		#region Leveling System
@@ -1152,9 +1153,6 @@ namespace Server.Mobiles
 
 		public int GetCapaciteValue(Capacite capacite)
 		{
-			if (AccessLevel > AccessLevel.Player)
-				return 5;
-
 			return Classes.GetCapaciteValue(capacite, m_Classe);
 		}
 

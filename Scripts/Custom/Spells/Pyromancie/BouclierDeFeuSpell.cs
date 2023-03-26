@@ -43,22 +43,24 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
+			else if (CheckSequence())
+			{
+				var duration = GetDurationForSpell(15);
 
-			var duration = GetDurationForSpell(15);
+				var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
 
-			var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
+				ResistanceMod mod = new ResistanceMod(ResistanceType.Fire, (int)value);
 
-			ResistanceMod mod = new ResistanceMod(ResistanceType.Fire, (int)value);
+				m_Table[Caster] = mod;
+				Caster.AddResistanceMod(mod);
 
-			m_Table[Caster] = mod;
-			Caster.AddResistanceMod(mod);
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 
-			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
-
-			Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-			Caster.PlaySound(0x28E);
+				Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
+				Caster.PlaySound(0x28E);
+			}
 
 			FinishSequence();
 		}

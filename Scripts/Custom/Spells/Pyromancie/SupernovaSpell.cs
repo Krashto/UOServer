@@ -1,5 +1,6 @@
 using System.Collections;
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 using VitaNex.FX;
 
@@ -45,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					ExplodeFX.Fire.CreateInstance(Caster.Location, Caster.Map, range).Send();
 
 					foreach (Mobile m in eable)
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 							targets.Add(m);
 
 					eable.Free();

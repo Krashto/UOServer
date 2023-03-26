@@ -33,18 +33,20 @@ namespace Server.Custom.Spells.NewSpells.Martial
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
+			else if (CheckSequence())
+			{
+				var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
+				m_Table[Caster] = value;
 
-			var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
-			m_Table[Caster] = value;
+				var duration = GetDurationForSpell(10);
 
-			var duration = GetDurationForSpell(10);
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
+				t.Start();
 
-			Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-			m_Timers[Caster] = t;
-			t.Start();
-
-			Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-			Caster.PlaySound(0x28E);
+				Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
+				Caster.PlaySound(0x28E);
+			}
 
 			FinishSequence();
 		}

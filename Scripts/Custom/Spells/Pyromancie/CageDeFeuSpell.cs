@@ -34,83 +34,81 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			Caster.Target = new InternalTarget(this);
 		}
 
-		public void Target(IPoint3D p)
+		public void Target(Mobile m)
 		{
-			if (!Caster.CanSee(p))
+			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckSequence())
+			else if (CheckHSequence(m))
 			{
-				SpellHelper.Turn(Caster, p);
-
-				SpellHelper.GetSurfaceTop(ref p);
+				SpellHelper.Turn(Caster, m);
 
 				var duration = GetDurationForSpell(5, 0.1);
 
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y - 2, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y - 1, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y + 0, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X - 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
 
-				new InternalItem(0x398C, new Point3D(p.X - 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X - 2, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X - 1, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 0, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 1, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 2, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X - 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X - 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 0, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
 
-				new InternalItem(0x398C, new Point3D(p.X - 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X - 2, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X - 1, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 0, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 1, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 2, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X - 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X - 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 0, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x398C, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
 
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y - 2, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y - 1, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 0, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, true);
+				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
 
 
 
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 2, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 1, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 0, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
 
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 2, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 1, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 0, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 1, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 2, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 0, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
 
-				new InternalItem(0x82, new Point3D(p.X - 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 2, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X - 1, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 0, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 1, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 2, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X - 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 0, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
 
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 3, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 2, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y - 1, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 0, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 1, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 2, p.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(p.X + 3, p.Y + 3, p.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, false);
+				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
 			}
 
 			FinishSequence();

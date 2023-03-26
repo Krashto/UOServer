@@ -30,48 +30,51 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 		public override void OnCast()
 		{
-			var targets = new ArrayList();
-
-			var map = Caster.Map;
-
-			if (map != null)
+			if (CheckSequence())
 			{
-				IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
+				var targets = new ArrayList();
 
-				targets.Add(Caster);
+				var map = Caster.Map;
 
-				foreach (Mobile m in eable)
+				if (map != null)
 				{
-					if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
-						targets.Add(m);
+					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
+
+					targets.Add(Caster);
+
+					foreach (Mobile m in eable)
+					{
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
+							targets.Add(m);
+					}
+
+					eable.Free();
 				}
 
-				eable.Free();
-			}
-
-			if (targets.Count > 0)
-			{
-				for (var i = 0; i < targets.Count; ++i)
+				if (targets.Count > 0)
 				{
-					var m = (Mobile)targets[i];
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var m = (Mobile)targets[i];
 
-					if (IsActive(m))
-						Deactivate(m);
+						if (IsActive(m))
+							Deactivate(m);
 
-					var duration = GetDurationForSpell(15);
+						var duration = GetDurationForSpell(15);
 
-					var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
+						var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
 
-					ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
-					m_Table[m] = mod;
-					m.AddResistanceMod(mod);
+						ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
+						m_Table[m] = mod;
+						m.AddResistanceMod(mod);
 
-					Timer t = new InternalTimer(m, DateTime.Now + duration);
-					m_Timers[m] = t;
-					t.Start();
+						Timer t = new InternalTimer(m, DateTime.Now + duration);
+						m_Timers[m] = t;
+						t.Start();
 
-					Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-					Caster.PlaySound(0x28E);
+						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
+						Caster.PlaySound(0x28E);
+					}
 				}
 			}
 

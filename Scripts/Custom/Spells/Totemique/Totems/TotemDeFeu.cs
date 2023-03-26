@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using Server.Items;
 using Server.Mobiles;
@@ -51,11 +52,20 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnThink()
 		{
+			if (NextThinkingTime >= DateTime.Now)
+				return;
+
 			var mobiles = GetMobilesInRange(5);
 
 			foreach (var m in mobiles)
 			{
-				if (m != ControlMaster)
+				if (m == ControlMaster)
+					continue;
+
+				if (m is BaseTotem totem && totem.ControlMaster == ControlMaster)
+					continue;
+
+				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))
 					continue;
 
 				if (CanSee(m))
@@ -78,6 +88,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					m.Damage((int)damage);
 				}
 			}
+
+			base.OnThink();
 		}
 
 		public override void OnDeath(Container c)

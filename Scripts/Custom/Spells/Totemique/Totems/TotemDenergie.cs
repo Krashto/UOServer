@@ -1,3 +1,4 @@
+using System;
 using Server.Items;
 using Server.Mobiles;
 
@@ -52,6 +53,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnThink()
 		{
+			if (NextThinkingTime >= DateTime.Now)
+				return;
+
 			var mobiles = GetMobilesInRange(5);
 
 			foreach (var m in mobiles)
@@ -61,6 +65,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 				ControlMaster.Heal(10 + (SuperCharged ? 10 : 0));
 			}
+
+			base.OnThink();
 		}
 
 		public override void OnDeath(Container c)

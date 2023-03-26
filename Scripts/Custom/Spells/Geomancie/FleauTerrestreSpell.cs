@@ -2,6 +2,7 @@ using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Items;
+using Server.Mobiles;
 using VitaNex.FX;
 
 namespace Server.Spells
@@ -46,7 +47,7 @@ namespace Server.Spells
 
 					foreach (Mobile m in eable)
 					{
-						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m != Caster && Caster.InLOS(m))
+						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m != Caster && Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 						{
 							targets.Add(m);
 						}

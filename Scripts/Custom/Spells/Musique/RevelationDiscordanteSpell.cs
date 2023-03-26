@@ -3,6 +3,7 @@ using Server.Spells;
 using System.Collections;
 using System;
 using Server.Items;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -31,58 +32,61 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 		public override void OnCast()
 		{
-			var targets = new ArrayList();
-
-			var map = Caster.Map;
-
-			if (map != null)
+			if (CheckSequence())
 			{
-				IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
+				var targets = new ArrayList();
 
-				foreach (Mobile m in eable)
-					if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false))
-						targets.Add(m);
+				var map = Caster.Map;
 
-				eable.Free();
-			}
-
-			if (targets.Count > 0)
-			{
-				for (var i = 0; i < targets.Count; ++i)
+				if (map != null)
 				{
-					var m = (Mobile)targets[i];
+					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
 
-					SpellHelper.Turn(Caster, m);
+					foreach (Mobile m in eable)
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
+							targets.Add(m);
 
-					m.RevealingAction();
+					eable.Free();
+				}
 
-					ArrayList mods = new ArrayList();
-
-					double discord = Caster.Skills[SkillName.Discordance].Value;
-
-					var effect = (int)Math.Max(-28.0, (discord / -4.0));
-
-					if (BaseInstrument.GetBaseDifficulty(m) >= 160.0)
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
 					{
-						effect /= 2;
+						var m = (Mobile)targets[i];
+
+						SpellHelper.Turn(Caster, m);
+
+						m.RevealingAction();
+
+						ArrayList mods = new ArrayList();
+
+						double discord = Caster.Skills[SkillName.Discordance].Value;
+
+						var effect = (int)Math.Max(-28.0, (discord / -4.0));
+
+						if (BaseInstrument.GetBaseDifficulty(m) >= 160.0)
+						{
+							effect /= 2;
+						}
+
+						var scalar = (double)effect / 100;
+
+						mods.Add(new ResistanceMod(ResistanceType.Physical, effect));
+						mods.Add(new ResistanceMod(ResistanceType.Fire, effect));
+						mods.Add(new ResistanceMod(ResistanceType.Cold, effect));
+						mods.Add(new ResistanceMod(ResistanceType.Poison, effect));
+						mods.Add(new ResistanceMod(ResistanceType.Energy, effect));
+
+						for (int j = 0; j < m.Skills.Length; ++j)
+						{
+							if (m.Skills[j].Value > 0)
+								mods.Add(new DefaultSkillMod((SkillName)j, true, m.Skills[j].Value * scalar));
+						}
+
+						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
+						Caster.PlaySound(0x28E);
 					}
-
-					var scalar = (double)effect / 100;
-
-					mods.Add(new ResistanceMod(ResistanceType.Physical, effect));
-					mods.Add(new ResistanceMod(ResistanceType.Fire, effect));
-					mods.Add(new ResistanceMod(ResistanceType.Cold, effect));
-					mods.Add(new ResistanceMod(ResistanceType.Poison, effect));
-					mods.Add(new ResistanceMod(ResistanceType.Energy, effect));
-
-					for (int j = 0; j < m.Skills.Length; ++j)
-					{
-						if (m.Skills[j].Value > 0)
-							mods.Add(new DefaultSkillMod((SkillName)j, true, m.Skills[j].Value * scalar));
-					}
-
-					Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-					Caster.PlaySound(0x28E);
 				}
 			}
 

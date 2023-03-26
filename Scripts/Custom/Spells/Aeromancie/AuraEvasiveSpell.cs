@@ -29,48 +29,51 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
-			var value = 10 + Caster.Skills[CastSkill].Value / 3 + Caster.Skills[DamageSkill].Value / 3;
-
-			value = SpellHelper.AdjustValue(Caster, value, Aptitude.Aeromancie);
-
-			if (value < 0)
-				value = 1;
-			else if (value > 100)
-				value = 100;
-
-			var map = Caster.Map;
-
-			var targets = new ArrayList();
-
-			targets.Add(Caster);
-
-			if (map != null)
+			if (CheckSequence())
 			{
-				IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Aeromancie));
+				var value = 10 + Caster.Skills[CastSkill].Value / 3 + Caster.Skills[DamageSkill].Value / 3;
 
-				foreach (Mobile m in eable)
-					if (Caster.CanBeBeneficial(m, false))
-						targets.Add(m);
+				value = SpellHelper.AdjustValue(Caster, value, Aptitude.Aeromancie);
 
-				eable.Free();
-			}
+				if (value < 0)
+					value = 1;
+				else if (value > 100)
+					value = 100;
 
-			if (targets.Count > 0)
-			{
-				for (var i = 0; i < targets.Count; ++i)
+				var map = Caster.Map;
+
+				var targets = new ArrayList();
+
+				targets.Add(Caster);
+
+				if (map != null)
 				{
-					var m = (Mobile)targets[i];
+					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Aeromancie));
 
-					m.MeleeDamageAbsorb = (int)value;
-					m.MagicDamageAbsorb = (int)value;
+					foreach (Mobile m in eable)
+						if (Caster.CanBeBeneficial(m, false))
+							targets.Add(m);
 
-					SpecialFX.GreyShield.CreateInstance(m, m.Map, 0);
-
-					m.FixedParticles(0x376A, 9, 32, 5008, EffectLayer.Waist);
-					m.PlaySound(0x1F2);
+					eable.Free();
 				}
 
-				Caster.PlaySound(163);
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var m = (Mobile)targets[i];
+
+						m.MeleeDamageAbsorb = (int)value;
+						m.MagicDamageAbsorb = (int)value;
+
+						SpecialFX.GreyShield.CreateInstance(m, m.Map, 0);
+
+						m.FixedParticles(0x376A, 9, 32, 5008, EffectLayer.Waist);
+						m.PlaySound(0x1F2);
+					}
+
+					Caster.PlaySound(163);
+				}
 			}
 
 			FinishSequence();

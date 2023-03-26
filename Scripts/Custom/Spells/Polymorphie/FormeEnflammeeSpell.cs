@@ -3,6 +3,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 using VitaNex.FX;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Polymorphie
 {
@@ -37,7 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Deactivate(Caster);
 			else if (Caster.BodyMod != 0)
 				Caster.SendMessage("Veuillez reprendre votre forme originelle avant de vous transformer à nouveau");
-			else
+			else if (CheckSequence())
 			{
 				var duration = GetDurationForSpell(30, 2);
 
@@ -74,14 +75,14 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public class InternalTimer : Timer
 		{
-			private Mobile m_Mobile;
+			private Mobile m_Caster;
 			FormeEnflammeeSpell m_Owner;
 			private DateTime m_EndTime;
 
 			public InternalTimer(Mobile from, FormeEnflammeeSpell owner, DateTime endTime)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
-				m_Mobile = from;
+				m_Caster = from;
 				m_Owner = owner;
 				m_EndTime = endTime;
 
@@ -92,18 +93,18 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 			{
 				var targets = new ArrayList();
 
-				var map = m_Mobile.Map;
+				var map = m_Caster.Map;
 
 				if (map != null)
 				{
 					var range = 2;
 
-					IPooledEnumerable eable = map.GetMobilesInRange(m_Mobile.Location, range);
+					IPooledEnumerable eable = map.GetMobilesInRange(m_Caster.Location, range);
 
-					ExplodeFX.Fire.CreateInstance(m_Mobile, m_Mobile.Map, range).Send();
+					ExplodeFX.Fire.CreateInstance(m_Caster, m_Caster.Map, range).Send();
 
 					foreach (Mobile m in eable)
-						if (m_Mobile != m && SpellHelper.ValidIndirectTarget(m_Mobile, m) && m_Mobile.CanBeHarmful(m, false))
+						if (m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 							targets.Add(m);
 
 					eable.Free();
@@ -115,7 +116,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 					{
 						var m = (Mobile)targets[i];
 
-						var source = m_Mobile;
+						var source = m_Caster;
 
 						SpellHelper.Turn(source, m);
 
@@ -136,9 +137,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 					}
 				}
 
-				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
+				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Caster) || m_Caster == null || m_Caster.Deleted || !m_Caster.Alive)
 				{
-					Deactivate(m_Mobile);
+					Deactivate(m_Caster);
 					Stop();
 				}
 			}

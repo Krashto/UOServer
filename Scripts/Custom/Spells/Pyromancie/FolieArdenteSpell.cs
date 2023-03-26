@@ -39,7 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		{
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckSequence())
+			else if (CheckHSequence(m))
 			{
 				SpellHelper.Turn(Caster, m);
 

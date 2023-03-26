@@ -67,7 +67,7 @@ namespace Server.CustomScripts.Systems.Experience
     {
         public const int ExpGainPerTick = 200;
         public const int MaxExpAllowedByDay = 1000;
-        public int MaxExpRetard = (CustomPersistence.Ouverture - DateTime.Now).Days * 1000;
+        public int MaxExpRetard => (DateTime.Now - CustomPersistence.Ouverture).Days * 1000;
 
         [CommandProperty(AccessLevel.GameMaster)]
         public int Exp { get; set; }

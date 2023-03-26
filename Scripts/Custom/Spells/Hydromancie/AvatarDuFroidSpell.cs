@@ -32,7 +32,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		{
 			if (IsActive(Caster))
 				Deactivate(Caster);
-			else
+			else if (CheckSequence())
 			{
 				var duration = GetDurationForSpell(15);
 

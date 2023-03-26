@@ -1,4 +1,3 @@
-using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
@@ -27,26 +26,29 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 		public override void OnCast()
 		{
-			var p = Caster.Poison;
-
-			if (p != null)
+			if (CheckSequence())
 			{
-				double chanceToCure = 10000 + (int)(Caster.Skills[CastSkill].Value * 75) - (p.Level + 1) * 2500;
-				chanceToCure /= 100;
+				var p = Caster.Poison;
 
-				chanceToCure = SpellHelper.AdjustValue(Caster, chanceToCure, Aptitude.Chasseur);
+				if (p != null)
+				{
+					double chanceToCure = 10000 + (int)(Caster.Skills[CastSkill].Value * 75) - (p.Level + 1) * 2500;
+					chanceToCure /= 100;
 
-				if ((int)chanceToCure > Utility.Random(100))
-					if (Caster.CurePoison(Caster))
-						Caster.SendLocalizedMessage(1010059); // You have been cured of all poisons.
-					else
-						Caster.SendLocalizedMessage(1010060); // You have failed to cure your target!
+					chanceToCure = SpellHelper.AdjustValue(Caster, chanceToCure, Aptitude.Chasseur);
 
-				Caster.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
-				Caster.PlaySound(0x1E0);
+					if ((int)chanceToCure > Utility.Random(100))
+						if (Caster.CurePoison(Caster))
+							Caster.SendLocalizedMessage(1010059); // You have been cured of all poisons.
+						else
+							Caster.SendLocalizedMessage(1010060); // You have failed to cure your target!
+
+					Caster.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
+					Caster.PlaySound(0x1E0);
+				}
+				else
+					Caster.SendMessage($"Vous n'êtes pas empoisonné{(Caster.Female ? "e" : "")}");
 			}
-			else
-				Caster.SendMessage($"Vous n'êtes pas empoisonné{(Caster.Female ? "e" : "")}");
 
 			FinishSequence();
 		}

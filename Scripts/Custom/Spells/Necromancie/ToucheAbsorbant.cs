@@ -34,33 +34,36 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		public void Target(Corpse c)
 		{
-			if (c != null && c.InBones)
-				Caster.SendMessage("Vous ne pouvez pas vous soigner à partir de ce corps.");
-			else if (c != null && c.Owner != null)
+			if (CheckSequence())
 			{
-				var min = 0;
-				var max = 0;
-
-				if (c.Owner is CustomPlayerMobile)
+				if (c != null && c.InBones)
+					Caster.SendMessage("Vous ne pouvez pas vous soigner à partir de ce corps.");
+				else if (c != null && c.Owner != null)
 				{
-					min = 10;
-					max = 15;
+					var min = 0;
+					var max = 0;
+
+					if (c.Owner is CustomPlayerMobile)
+					{
+						min = 10;
+						max = 15;
+					}
+					else if (c.Owner is BaseCreature)
+					{
+						min = 30;
+						max = 40;
+					}
+
+					var toHeal = SpellHelper.AdjustValue(Caster, Utility.Random(min, max), Aptitude.Necromancie);
+					Caster.Heal((int)toHeal);
+
+					Caster.Emote("Absorbe la cible.");
+
+					c.TurnToBones();
 				}
-				else if (c.Owner is BaseCreature)
-				{
-					min = 30;
-					max = 40;
-				}
-
-				var toHeal = SpellHelper.AdjustValue(Caster, Utility.Random(min, max), Aptitude.Necromancie);
-				Caster.Heal((int)toHeal);
-
-				Caster.Emote("Absorbe la cible.");
-
-				c.TurnToBones();
+				else
+					Caster.SendMessage("Le corps que vous ciblez ne peut être réanimé !");
 			}
-			else
-				Caster.SendMessage("Le corps que vous ciblez ne peut être réanimé !");
 
 			FinishSequence();
 		}

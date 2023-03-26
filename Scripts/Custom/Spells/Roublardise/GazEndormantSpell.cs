@@ -2,6 +2,7 @@ using System.Collections;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -51,7 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 50, Aptitude.Roublardise));
 
 					foreach (Mobile m in eable)
-						if (Caster.CanBeHarmful(m, false))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
 							targets.Add(m);
 
 					eable.Free();
