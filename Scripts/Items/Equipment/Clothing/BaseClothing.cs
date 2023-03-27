@@ -881,7 +881,13 @@ namespace Server.Items
             if (m_Quality == ItemQuality.Exceptional)
                 list.Add(1018303); // Exceptional
 
-            if (IsImbued == true)
+			if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique"); // Exceptional
+
+			if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire"); // Exceptional
+
+			if (IsImbued == true)
                 list.Add(1080418); // (Imbued)
 
             if (m_Altered)

@@ -1,4 +1,6 @@
-﻿using Server.Items;
+﻿using Server.Engines.Quests;
+using Server.Items;
+using Server.Mobiles;
 using System;
 
 namespace Server.Engines.Craft
@@ -111,6 +113,7 @@ namespace Server.Engines.Craft
 
 			// Munitions
 			index = AddCraft(typeof(Kindling), "Munitions", "Petit bois", 0.0, 00.0, typeof(RegularBoard), 1044041, 1, 1044351);
+			SetUseAllRes(index, true);
 			index = AddCraft(typeof(Shaft), "Munitions", "Fût", 0.0, 40.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
 			index = AddCraft(typeof(Arrow), "Munitions", "Flèche", 0.0, 40.0, typeof(Shaft), 1044560, 1, 1044561);
@@ -119,40 +122,69 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux", 0.0, 40.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			SetUseAllRes(index, true);
-			index = index = AddCraft(typeof(FukiyaDarts), "Munitions", 1030246, 50.0, 73.8, typeof(RegularBoard), 1044041, 1, 1044351);
-			SetUseAllRes(index, true);
-			
+
+
 			// Arcs
-			index = AddCraft(typeof(Bow), "Arcs", "Arc simple", 30.0, 70.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Legarc), "Arcs", "Legarc", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Tarkarc), "Arcs", "Arc court renforcit", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Souplecorde), "Arcs", "Souplecorde", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Sombrevent), "Arcs", "Sombrevent", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(CompositeBow), "Arcs", "Arc composite", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(MagicalShortbow), "Arcs", "Percecoeur", 60.0, 90.0, typeof(RegularBoard), 1044041, 15, 1044351);
-			index = AddCraft(typeof(Yumi), "Arcs longs", "Arc long", 60.0, 90.0, typeof(RegularBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(ElvenCompositeLongbow), "Arcs longs", "Arc long composite", 60.0, 90.0, typeof(RegularBoard), 1044041, 20, 1044351);
 
-			// Arbalètes
-			index = AddCraft(typeof(Crossbow), "Arbalètes", "Arbalète simple", 30.0, 70.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Percemurs), "Arbalètes", "Percemurs", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Arbavive), "Arbalètes", "Arbavive", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Lumitrait), "Arbalètes", "Lumitrait", 60.0, 90.0, typeof(RegularBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(ArbaletteChasse), "Arbalètes", "Arbalète de chasse", 60.0, 90.0, typeof(RegularBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(RepeatingCrossbow), "Arbalètes", "Arbalète à répétition", 60.0, 90.0, typeof(RegularBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(HeavyCrossbow), "Arbalètes lourdes", "Arbalète lourde", 60.0, 90.0, typeof(RegularBoard), 1044041, 10, 1044351);
 
-			SetSubRes(typeof(RegularBoard), 1072643);
+
+
+			index = AddCraft(typeof(Blancorde), "Arcs", "Blancorde", 10.0, 40.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Glaciale), "Arcs", "Glaciale", 10.0, 40.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Bow), "Arcs", "Arc simple", 10.0, 40.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Legarc), "Arcs", "Legarc", 15.0, 45.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Tarkarc), "Arcs", "Arc court renforcit", 15.0, 45.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Ebonie), "Arcs", "Ebonie", 15.0, 45.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Mirka), "Arcs", "Mirka", 20.0, 50.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Souplecorde), "Arcs", "Souplecorde", 20.0, 50.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Sombrevent), "Arcs", "Sombrevent", 20.0, 50.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(CompositeBow), "Arcs", "Arc composite", 30.0, 60.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(MagicalShortbow), "Arcs", "Percecoeur", 30.0, 60.0, typeof(PlainoisLog), 1044041, 15, 1044351);
+			index = AddCraft(typeof(Vigne), "Arcs", "Vigne", 30.0, 60.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Foudre), "Arcs", "Foudre", 40.0, 70.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Flamfleche), "Arcs", "Flamflèche", 40.0, 70.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Yumi), "Arcs", "Arc long", 40.0, 70.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Mirielle), "Arcs", "Mirielle", 50.0, 80.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(ElvenCompositeLongbow), "Arcs", "Arc long composite", 50.0, 80.0, typeof(PlainoisLog), 1044041, 20, 1044351);
+			index = AddCraft(typeof(Barbatrine), "Arcs", "Barbatrine", 60.0, 90.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Chantefleche), "Arcs", "Chantefleche", 60.0, 90.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Sifflecrin), "Arcs", "Sifflecrin", 60.0, 90.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Maegie), "Arcs", "Maegie", 70.0, 100.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Foliere), "Arcs", "Foliere", 70.0, 100.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Composite), "Arcs", "Composite", 90.0, 110.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Pieuse), "Arcs", "Pieuse", 90.0, 110.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+
+			// Arbalètes	
+
+
+			index = AddCraft(typeof(Crossbow), "Arbalètes", "Arbalète simple", 10.0, 40.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Arbalete), "Arbalètes", "Arbalète", 20.0, 50.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(ArbaletteChasse), "Arbalètes", "Arbalète de chasse", 30.0, 60.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(RepeatingCrossbow), "Arbalètes", "Arbalète à répétition", 40.0, 70.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(HeavyCrossbow), "Arbalètes", "Arbalète lourde", 50.0, 80.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(ArbalettePistolet), "Arbalètes", "Arbalète à Main", 60.0, 90.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(ArbaletteRepetition), "Arbalètes", "Arbalète à Répétition", 70.0, 100.0, typeof(PlainoisLog), 1044041, 8, 1044351);
+			index = AddCraft(typeof(ArbaletteLourde), "Arbalètes", "Arbalète à Méchanisme", 70.0, 100.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Percemurs), "Arbalètes", "Percemurs", 80.0, 110.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Arbavive), "Arbalètes", "Arbavive", 80.0, 110.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Lumitrait), "Arbalètes", "Lumitrait", 85.0, 115.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+
+
+
+
+					SetSubRes(typeof(PlainoisLog), "Plainois");
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(RegularBoard), 1072643, 0.0, 1044041, 1072653);
-			AddSubRes(typeof(OakBoard), 1072644, 65.0, 1044041, 1072653);
-			AddSubRes(typeof(AshBoard), 1072645, 75.0, 1044041, 1072653);
-			AddSubRes(typeof(YewBoard), 1072646, 85.0, 1044041, 1072653);
-			AddSubRes(typeof(HeartwoodBoard), 1072647, 95.0, 1044041, 1072653);
-			AddSubRes(typeof(BloodwoodBoard), 1072648, 95.0, 1044041, 1072653);
-			AddSubRes(typeof(FrostwoodBoard), 1072649, 95.0, 1044041, 1072653);
+			AddSubRes(typeof(PlainoisLog), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
+			AddSubRes(typeof(ForestierLog), "Forestier", 10.0, "Vous ne savez pas travailler le bois Forestier");
+			AddSubRes(typeof(DesertiqueLog), "Desertique", 20.0, "Vous ne savez pas travailler le bois Desertique");
+			AddSubRes(typeof(CollinoisLog), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
+			AddSubRes(typeof(SavanoisLog), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
+			AddSubRes(typeof(ToundroisLog), "Toundrois", 50.0, "Vous ne savez pas travailler le bois Toundrois");
+			AddSubRes(typeof(TropicauxLog), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
+			AddSubRes(typeof(MontagnardLog), "Montagnard", 70.0, "Vous ne savez pas travailler le bois Montagnard");
+			AddSubRes(typeof(AncienLog), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
 
 			Resmelt = true;
 			MarkOption = true;

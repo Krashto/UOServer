@@ -45,8 +45,32 @@ namespace Server.Items
         Shatter,
         FearEssence,
 		Experience,
-		UltimeCure
-    }
+		UltimeCure,
+		Mana,
+		TotalManaRefresh,
+		Stealth,
+		SuperStealth,
+		Resurrect,
+		PetResurrect,
+		CoronasHealing,
+		Repair,
+		SuperRepair,
+		SuperPotion,
+		Shrink,
+		WaterElemental,
+		FireElemental,
+		PoisonElemental,
+		BloodElemental,
+		EarthElemental,
+		ManaTotal,
+		Int,
+		IntGreater,
+		PetShrink,
+		PetHeal,
+		PetGreaterHeal,
+		PetCure,
+		PetGreaterCure
+	}
 
     public abstract class BasePotion : Item, ICraftable, ICommodity
     {

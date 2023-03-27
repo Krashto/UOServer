@@ -4324,10 +4324,18 @@ namespace Server.Items
 
             if (m_Quality == ItemQuality.Exceptional)
             {
-                list.Add(1060636); // Exceptional
+                list.Add("Exceptionnelle"); // Exceptional
             }
+			if (m_Quality == ItemQuality.Epic)
+			{
+				list.Add("épique"); // Exceptional
+			}
+			if (m_Quality == ItemQuality.Legendary)
+			{
+				list.Add("Légendaire"); // Exceptional
+			}
 
-            if (IsImbued)
+			if (IsImbued)
             {
                 list.Add(1080418); // (Imbued)
             }
