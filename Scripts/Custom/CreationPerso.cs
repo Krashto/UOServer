@@ -173,7 +173,14 @@ namespace Server
 			m_female = player.Female;
 			m_Name = player.Name;
 			m_Player = player;
-        }
+
+			foreach(var skill in m_Player.Skills)
+			{
+				skill.Base = 0;
+				skill.Cap = 50;
+				skill.SetLockNoRelay(SkillLock.Locked);
+			}
+		}
     
         public void ChangeRace()
         {
@@ -273,6 +280,12 @@ namespace Server
 			m_Player.Attributs[Attribut.Sagesse] = m_Sag;
 
 			m_Player.Classe = Classe.Aucune;
+
+			foreach (var skill in m_Player.Skills)
+			{
+				skill.Cap = 50;
+				skill.SetLockNoRelay(SkillLock.Locked);
+			}
 
 			m_Player.AddToBackpack(new Gold(1000));
 

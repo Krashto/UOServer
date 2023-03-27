@@ -1,3 +1,4 @@
+using System.Linq;
 using Server.Mobiles;
 using Server.Network;
 
@@ -21,7 +22,9 @@ namespace Server.Gumps
 
 			var count = 0;
 
-			foreach(var skill in from.Skills)
+			var skills = from.Skills.OrderBy(f => f.Name).ToList();
+
+			foreach(var skill in skills)
 			{
 				if (!IsIncluded(skill.SkillName))
 					continue;
@@ -69,7 +72,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID >= 200 && info.ButtonID < 300)
 			{
-				if (from.Skills[info.ButtonID - 200].Base < 50)
+				if (from.Skills[info.ButtonID - 200].Base < 50 && m_from.SkillsTotal < 1500) //En dixième de pourcent
 					from.Skills[info.ButtonID - 200].Base++;
 				from.SendGump(new CreationSkills(from, m_Creation));
 			}

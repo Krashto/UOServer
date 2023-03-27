@@ -1456,6 +1456,10 @@ namespace Server.Mobiles
                         break;
                     }
             }
+
+			Hits = HitsMax;
+			Stam = StamMax;
+			Mana = ManaMax;
 		}
 
 		public override void Serialize(GenericWriter writer)
