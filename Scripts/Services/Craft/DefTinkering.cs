@@ -174,58 +174,40 @@ namespace Server.Engines.Craft
 			int index = -1;
 
 			#region Outils
-			index = AddCraft(typeof(Scissors), "Outils", "Ciseaux", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(EmptyAleBottle), "Outils", "Bouteille de Bière Vide", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(SewingKit), "Outils", "Kit de couture", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(BoneSewingKit), "Outils", "Kit de couture (Os)", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(LeatherSewingKit), "Outils", "Kit de couture (Cuir)", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(Scissors), "Outils", "Ciseaux", 10.0, 30.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(EmptyAleBottle), "Outils", "Bouteille de Bière Vide", 10.0, 30.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(SewingKit), "Outils", "Kit de couture", 10.0, 30.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(BoneSewingKit), "Outils", "Kit de couture (Os)", 10.0, 30.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(LeatherSewingKit), "Outils", "Kit de couture (Cuir)", 10.0, 30.0, typeof(IronIngot), 1044036, 2, 1044037);
 
-		//	index = AddCraft(typeof(Pitchfork), "Outils", "Fourche", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(Hatchet), "Outils", "Hachette", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(Shovel), "Outils", "Pelle", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(Pickaxe), "Outils", "Pioche", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(TinkerTools), "Outils", "Trousse de Bricolage", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-		//	index = AddCraft(typeof(Tongs), "Outils", "Pince", 35.0, 85.0, typeof(IronIngot), 1044036, 1, 1044037);
-			index = AddCraft(typeof(SmithyHammer), "Outils", "Marteau de forgeron", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
-		//	index = AddCraft(typeof(SledgeHammerWeapon), "Outils", "Maillet de forgeron", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(Saw), "Outils", "Scie", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
-		//	index = AddCraft(typeof(Hammer), "Outils", "Marteau", 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
-		//	index = AddCraft(typeof(DovetailSaw), "Outils", "Scie dentelée", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
-		//	index = AddCraft(typeof(JointingPlane), "Outils", "Rabot joint", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
-		//	index = AddCraft(typeof(MouldingPlane), "Outils", "Rabot moulage", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
-		//	index = AddCraft(typeof(SmoothingPlane), "Outils", "Rabot lissage", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
-		//	index = AddCraft(typeof(Scorp), "Outils", "Scorp", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
-		//	index = AddCraft(typeof(DrawKnife), "Outils", "Couteau à bois", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(RollingPin), "Outils", "Rouleau à pâte", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
-			index = AddCraft(typeof(Skillet), "Outils", "Poêlon", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(FlourSifter), "Outils", "Tamis à farine", 50.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
-		//	index = AddCraft(typeof(Froe), "Outils", "Froe", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(MortarPestle), "Outils", "Mortier et pilon", 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
-			//index = AddCraft(typeof(WaxCraftingPot), "Outils", "Fabrication Cire", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(FletcherTools), "Outils", "Outil fabrication d'arc", 35.0, 85.0, typeof(IronIngot), 1044036, 3, 1044037);
-			//index = AddCraft(typeof(MapmakersPen), "Outils", "Plume cartographe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
-			index = AddCraft(typeof(ScribesPen), "Outils", "Plume scribe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
-			index = AddCraft(typeof(Lockpick), "Outils", "Crochets", 45.0, 95.0, typeof(IronIngot), 1044036, 1, 1044037);
-		//	index = AddCraft(typeof(Blowpipe), "Outils", "Pipe à Verre", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-		//	index = AddCraft(typeof(MalletAndChisel), "Outils", "Maillet", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-		//	index = AddCraft(typeof(Pinceaux), "Outils", "Pinceaux", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+		
+			index = AddCraft(typeof(Hatchet), "Outils", "Hachette", 20.0, 40.0, typeof(IronIngot), 1044036, 4, 1044037);
+			index = AddCraft(typeof(Shovel), "Outils", "Pelle", 20.0, 40.0, typeof(IronIngot), 1044036, 4, 1044037);
+			index = AddCraft(typeof(Pickaxe), "Outils", "Pioche", 20.0, 40.0, typeof(IronIngot), 1044036, 4, 1044037);
+			index = AddCraft(typeof(TinkerTools), "Outils", "Trousse de Bricolage", 15.0, 30.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(SmithyHammer), "Outils", "Marteau de forgeron", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
+			index = AddCraft(typeof(Saw), "Outils", "Scie", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
+	
+			index = AddCraft(typeof(RollingPin), "Outils", "Rouleau à pâte", 15.0, 35.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(Skillet), "Outils", "Poêlon", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
+			index = AddCraft(typeof(FlourSifter), "Outils", "Tamis à farine", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
+			index = AddCraft(typeof(MortarPestle), "Outils", "Mortier et pilon", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
+			index = AddCraft(typeof(FletcherTools), "Outils", "Outil fabrication d'arc", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
+			index = AddCraft(typeof(ScribesPen), "Outils", "Plume scribe", 15.0, 35.0, typeof(IronIngot), 1044036, 1, 1044037);
+			index = AddCraft(typeof(Lockpick), "Outils", "Crochets", 10.0, 30.0, typeof(IronIngot), 1044036, 1, 1044037);
+
 			index = AddCraft(typeof(BarberScissors), "Outils", "Ciseaux de Barbier", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(Ecraseur), "Outils", "Écraseur pour Coquillages", 10.0, 70.0, typeof(IronIngot), 1044036, 5, 1044037);
-			index = AddCraft(typeof(FoodPlate), "Outils", "Plat de Nourriture", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(BeerBreweringTools), "Outils", "Outil fabrication de bière", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(BrewersTools), "Outils", "Outil Brasseur", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(BreweryLabelMaker), "Outils", "Marqueur de bière", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-		//	index = AddCraft(typeof(FarmLabelMaker), "Outils", "Farm Label Maker", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(GrapevinePlacementTool), "Outils", "Outil placement de vignes", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(GrinderExp), "Outils", "Broyeur à café", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(JuicersTools), "Outils", "Fabrication de Jus", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(VinyardLabelMaker), "Outils", "Marqueur de vin", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(WinecraftersTools), "Outils", "Outil fabrication de vin", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			//index = AddCraft(typeof(WitchsBookofFoodCrafts), "Outils", "Livre de recette enchantées", 30.0, 70.0, typeof(Board), 1044041, 5, 1044351);
-			//index = AddCraft(typeof(TaxidermyKit), "Outils", "Outil de Taxidermie", 80.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
-
-			//	index = AddCraft(typeof(RuneChisel), "Outils", "Ciseau runique", 85.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
-
+			index = AddCraft(typeof(Ecraseur), "Outils", "Écraseur pour Coquillages", 15.0, 30.0, typeof(IronIngot), 1044036, 5, 1044037);
+			index = AddCraft(typeof(FoodPlate), "Outils", "Plat de Nourriture", 25.0, 45.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(BeerBreweringTools), "Outils", "Outil fabrication de bière", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(BrewersTools), "Outils", "Outil Brasseur", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(BreweryLabelMaker), "Outils", "Marqueur de bière", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(GrapevinePlacementTool), "Outils", "Outil placement de vignes", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(GrinderExp), "Outils", "Broyeur à café", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(JuicersTools), "Outils", "Fabrication de Jus", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(VinyardLabelMaker), "Outils", "Marqueur de vin", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+			index = AddCraft(typeof(WinecraftersTools), "Outils", "Outil fabrication de vin", 35.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
+		
 
 
 
@@ -394,47 +376,41 @@ namespace Server.Engines.Craft
 			
 
 			#region Paniers et boîtes
-			index = AddCraft(typeof(RoundBasket), "Paniers et boîtes", "Panier rond", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(RoundBasket), "Paniers et boîtes", "Panier rond", 10.0, 30.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
-			index = AddCraft(typeof(RoundBasketHandles), "Paniers et boîtes", "Panier rond avec poignées", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(RoundBasketHandles), "Paniers et boîtes", "Panier rond avec poignées", 10.0, 30.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
-			index = AddCraft(typeof(SmallBushel), "Paniers et boîtes", "Petit panier rond avec poignées", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(SmallBushel), "Paniers et boîtes", "Petit panier rond avec poignées", 10.0, 30.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(PicnicBasket2), "Paniers et boîtes", "Panier à pique-nique", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(PicnicBasket2), "Paniers et boîtes", "Panier à pique-nique", 25.0, 45.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(WinnowingBasket), "Paniers et boîtes", "Panier à vanner", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(WinnowingBasket), "Paniers et boîtes", "Panier à vanner", 25.0, 45.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
-			index = AddCraft(typeof(SquareBasket), "Paniers et boîtes", "Panier carré", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(SquareBasket), "Paniers et boîtes", "Panier carré", 25.0, 45.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
-			index = AddCraft(typeof(BasketCraftable), "Paniers et boîtes", "Panier tressé", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(BasketCraftable), "Paniers et boîtes", "Panier tressé", 35.0, 50.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
-			index = AddCraft(typeof(TallRoundBasket), "Paniers et boîtes", "Panier haut tressé", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(TallRoundBasket), "Paniers et boîtes", "Panier haut tressé", 35.0, 50.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 4, 1044351);
-			index = AddCraft(typeof(SmallSquareBasket), "Paniers et boîtes", "Petit panier carré", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(SmallSquareBasket), "Paniers et boîtes", "Petit panier carré", 35.0, 50.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(TallBasket), "Paniers et boîtes", "Grand panier tressé", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(TallBasket), "Paniers et boîtes", "Grand panier tressé", 45.0, 65.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 4, 1044351);
-			index = AddCraft(typeof(SmallRoundBasket), "Paniers et boîtes", "Panier tressé rond", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(SmallRoundBasket), "Paniers et boîtes", "Panier tressé rond", 45.0, 65.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(GiftBoxAngel), "Paniers et boîtes", "Boite Cadeau, Ange", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(GiftBoxAngel), "Paniers et boîtes", "Boite Cadeau, Ange", 45.0, 65.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(GiftBoxCube), "Paniers et boîtes", "Boite Cadeau, Carré", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(GiftBoxCube), "Paniers et boîtes", "Boite Cadeau, Carré", 55.0, 75.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(GiftBoxCylinder), "Paniers et boîtes", "Boite Cadeau, Cylindre", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(GiftBoxCylinder), "Paniers et boîtes", "Boite Cadeau, Cylindre", 55.0, 75.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(GiftBoxOctogon), "Paniers et boîtes", "Boite Cadeau, Octogone", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(GiftBoxOctogon), "Paniers et boîtes", "Boite Cadeau, Octogone", 55.0, 75.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(GiftBoxRectangle), "Paniers et boîtes", "Boite Cadeau, Rectangle", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(GiftBoxRectangle), "Paniers et boîtes", "Boite Cadeau, Rectangle", 55.0, 75.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
-			index = AddCraft(typeof(RedVelvetGiftBox), "Paniers et boîtes", "Boite Cadeau, Petite rouge", 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
+			index = AddCraft(typeof(RedVelvetGiftBox), "Paniers et boîtes", "Boite Cadeau, Petite rouge", 55.0, 75.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 2, 1044351);
 
-			/*        index = index = AddCraft(typeof(EnchantedPicnicBasket), 1044042, 1158333, 75.0, 100.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
-					AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
-					AddRecipe(index, (int)TinkerRecipes.EnchantedPicnicBasket);
-					SetRequireResTarget(index);
-					SetRequiresBasketWeaving(index);
-			*/
 			#endregion
 
 		
@@ -625,120 +601,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Lunettes2), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Lunettes3), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
 
-			/*         index = index = AddCraft(typeof(BroadcastCrystal), 1044050, 1153097, 80.0, 130.0, typeof(IronIngot), 1044036, 20, 1044037);
-					 AddRes(index, typeof(Emerald), 1062601, 10, 1044240);
-					 AddRes(index, typeof(Ruby), 1062603, 10, 1044240);
-					 AddRes(index, typeof(CopperWire), 1026265, 1, 1150700);
-			*/
-			/*        index = index = AddCraft(typeof(GorgonLense), 1044050, 1112625, 90.0, 120.0, typeof(MedusaDarkScales), 1112626, 2, 1053097);
-					AddRes(index, typeof(CrystalDust), 1112328, 3, 1044253);
-					ForceNonExceptional(index);
-					SetItemHue(index, 1266);
-
-					index = index = AddCraft(typeof(ScaleCollar), 1044050, 1112480, 50.0, 100.0, typeof(RedScales), 1112626, 4, 1053097);
-					AddRes(index, typeof(Scourge), 1032677, 1, 1044253);
-
-					index = index = AddCraft(typeof(DragonLamp), 1044050, 1098404, 75.0, 125.0, typeof(IronIngot), 1044036, 8, 1044253);
-					AddRes(index, typeof(Candelabra), 1011213, 1, 1154172);
-					AddRes(index, typeof(WorkableGlass), 1154170, 1, 1154171);
-
-					index = index = AddCraft(typeof(StainedGlassLamp), 1044050, 1098408, 75.0, 125.0, typeof(IronIngot), 1044036, 8, 1044253);
-					AddRes(index, typeof(Candelabra), 1011213, 1, 1154172);
-					AddRes(index, typeof(WorkableGlass), 1154170, 1, 1154171);
-
-					index = index = AddCraft(typeof(TallDoubleLamp), 1044050, 1098414, 75.0, 125.0, typeof(IronIngot), 1044036, 8, 1044253);
-					AddRes(index, typeof(Candelabra), 1011213, 1, 1154172);
-					AddRes(index, typeof(WorkableGlass), 1154170, 1, 1154171);
-
-					index = index = AddCraft(typeof(CraftableHouseItem), 1044050, 1155851, 40.0, 90.0, typeof(IronIngot), 1044036, 8, 1044253);
-					SetData(index, CraftableItemType.CurledMetalSignHanger);
-					SetDisplayID(index, 2971);
-
-					index = index = AddCraft(typeof(CraftableHouseItem), 1044050, 1155852, 40.0, 90.0, typeof(IronIngot), 1044036, 8, 1044253);
-					SetData(index, CraftableItemType.FlourishedMetalSignHanger);
-					SetDisplayID(index, 2973);
-
-					index = index = AddCraft(typeof(CraftableHouseItem), 1044050, 1155853, 40.0, 90.0, typeof(IronIngot), 1044036, 8, 1044253);
-					SetData(index, CraftableItemType.InwardCurledMetalSignHanger);
-					SetDisplayID(index, 2975);
-
-					index = index = AddCraft(typeof(CraftableHouseItem), 1044050, 1155854, 40.0, 90.0, typeof(IronIngot), 1044036, 8, 1044253);
-					SetData(index, CraftableItemType.EndCurledMetalSignHanger);
-					SetDisplayID(index, 2977);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156080, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.LeftMetalDoor_S_In);
-					SetDisplayID(index, 1653);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156081, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.RightMetalDoor_S_In);
-					SetDisplayID(index, 1659);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156082, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.LeftMetalDoor_E_Out);
-					SetDisplayID(index, 1660);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156083, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.RightMetalDoor_E_Out);
-					SetDisplayID(index, 1663);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(WallSafeDeed), 1044050, 1155860, 0.0, 0.0, typeof(IronIngot), 1044036, 20, 1044253);
-					ForceNonExceptional(index);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156352, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.LeftMetalDoor_E_In);
-					SetDisplayID(index, 1660);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156353, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.RightMetalDoor_E_In);
-					SetDisplayID(index, 1663);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156350, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.LeftMetalDoor_S_Out);
-					SetDisplayID(index, 1653);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-					index = index = AddCraft(typeof(CraftableMetalHouseDoor), 1044050, 1156351, 85.0, 135.0, typeof(IronIngot), 1044036, 50, 1044253);
-					SetData(index, DoorType.RightMetalDoor_S_Out);
-					SetDisplayID(index, 1659);
-					AddCreateItem(index, CraftableMetalHouseDoor.Create);
-
-			 /*       index = index = AddCraft(typeof(KotlPowerCore), 1044050, 1124179, 85.0, 135.0, typeof(WorkableGlass), 1154170, 5, 1154171);
-					AddRes(index, typeof(CopperWire), 1026265, 5, 1150700);
-					AddRes(index, typeof(IronIngot), 1044036, 100, 1044253);
-					AddRes(index, typeof(MoonstoneCrystalShard), 1124142, 5, 1156701);
-					AddRecipe(index, (int)TinkerRecipes.KotlPowerCore);
-
-					index = index = AddCraft(typeof(WeatheredBronzeGlobeSculptureDeed), 1044050, 1156881, 85.0, 135.0, typeof(BronzeIngot), 1038039, 200, 1044253);
-					AddRecipe(index, (int)TinkerRecipes.WeatheredBronzeGlobeSculpture);
-
-					index = index = AddCraft(typeof(WeatheredBronzeManOnABenchDeed), 1044050, 1156882, 85.0, 135.0, typeof(IronIngot), 1038039, 200, 1044253);
-					AddRecipe(index, (int)TinkerRecipes.WeatheredBronzeManOnABench);
-
-					index = index = AddCraft(typeof(WeatheredBronzeFairySculptureDeed), 1044050, 1156883, 85.0, 135.0, typeof(IronIngot), 1038039, 200, 1044253);
-					AddRecipe(index, (int)TinkerRecipes.WeatheredBronzeFairySculpture);
-
-					index = index = AddCraft(typeof(WeatheredBronzeArcherDeed), 1044050, 1156884, 85.0, 135.0, typeof(IronIngot), 1038039, 200, 1044253);
-					AddRecipe(index, (int)TinkerRecipes.WeatheredBronzeArcherSculpture);
-
-					index = index = AddCraft(typeof(BarbedWhip), 1044050, 1159281, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-					AddRes(index, typeof(Leather), 1044462, 10, 1044463);
-					AddRecipe(index, (int)TinkerRecipes.BarbedWhip);
-
-					index = index = AddCraft(typeof(SpikedWhip), 1044050, 1159282, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-					AddRes(index, typeof(Leather), 1044462, 10, 1044463);
-					AddRecipe(index, (int)TinkerRecipes.SpikedWhip);
-
-					index = index = AddCraft(typeof(BladedWhip), 1044050, 1159283, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-					AddRes(index, typeof(Leather), 1044462, 10, 1044463);
-					AddRecipe(index, (int)TinkerRecipes.BladedWhip);
-		*/
+			
 			#endregion
 
 	

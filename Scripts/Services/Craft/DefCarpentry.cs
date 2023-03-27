@@ -184,72 +184,59 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Lutrin), "Divers", "Un Lutrin", 70.5, 90.5, typeof(RegularBoard), "Planches", 15, "Vous n'avez pas assez de planche.");
 
 			// Armes et bouclier
-			index = AddCraft(typeof(ShepherdsCrook), "Armes et bouclier", "Bâton de berger", 78.9, 103.9, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(QuarterStaff), "Armes et bouclier", "Bâton", 73.6, 98.6, typeof(RegularBoard), 1044041, 6, 1044351);
-			index = AddCraft(typeof(GnarledStaff), "Armes et bouclier", "Bâton noueux", 78.9, 103.9, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Bokuto), "Armes et bouclier", "Bokuto", 70.0, 95.0, typeof(RegularBoard), 1044041, 6, 1044351);
-			index = AddCraft(typeof(Fukiya), "Armes et bouclier", "Bâton de frappe", 60.0, 85.0, typeof(RegularBoard), 1044041, 6, 1044351);
-			index = AddCraft(typeof(Tetsubo), "Armes et bouclier", "Longue massue", 80.0, 105.0, typeof(RegularBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(WildStaff), "Armes et bouclier", "Bâton sauvage", 63.8, 113.8, typeof(RegularBoard), 1044041, 16, 1044351);
-			//index = AddCraft(typeof(SerpentStoneStaff), "Armes et bouclier", "Bâton de pierre serpent", 63.8, 113.8, typeof(Board), 1044041, 16, 1044351);
-			//AddRes(index, typeof(EcruCitrine), 1026252, 1, 1053098);
-			index = AddCraft(typeof(Club), "Armes et bouclier", "Massue", 65.0, 90.0, typeof(RegularBoard), 1044041, 9, 1044351);
-			index = AddCraft(typeof(BlackStaff), "Armes et bouclier", "Bâton noir", 81.5, 106.5, typeof(RegularBoard), 1044041, 9, 1044351);
-			index = AddCraft(typeof(BatonNature), "Armes et bouclier", "Bâton de la Nature", 81.5, 106.5, typeof(RegularBoard), 1044041, 9, 1044351);
-			index = AddCraft(typeof(BatonDragonique), "Armes et bouclier", "Bâton Dragonique", 81.5, 106.5, typeof(RegularBoard), 1044041, 9, 1044351);
-			index = AddCraft(typeof(BatonErmite), "Armes et bouclier", "Bâton de l'Ermite", 78.9, 103.9, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Eterfer), "Armes et bouclier", "Eterfer", 73.6, 98.6, typeof(RegularBoard), 1044041, 6, 1044351);
-			index = AddCraft(typeof(CanneSapphire), "Armes et bouclier", "Canne Sapphire", 73.6, 98.6, typeof(RegularBoard), 1044041, 6, 1044351);
-			index = AddCraft(typeof(Crochire), "Armes et bouclier", "Crochire", 78.9, 103.9, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(BatonVagabond), "Armes et bouclier", "Bâton de vagabond", 78.9, 103.9, typeof(RegularBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(WoodenShield), "Armes et bouclier", "Bouclier en bois", 52.6, 77.6, typeof(RegularBoard), 1044041, 9, 1044351);
-			//index = AddCraft(typeof(Parchemin), "Autres", "Un parchemin", 52.6, 77.6, typeof(Board), 1044041, 2, 1044351);
+			index = AddCraft(typeof(ShepherdsCrook), "Armes et bouclier", "Bâton de berger", 25.0, 45.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(QuarterStaff), "Armes et bouclier", "Bâton", 25.0, 45.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(GnarledStaff), "Armes et bouclier", "Bâton noueux", 25.0, 45.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Bokuto), "Armes et bouclier", "Bokuto", 25.0, 45.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(Fukiya), "Armes et bouclier", "Bâton de frappe", 40.0, 60.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(Tetsubo), "Armes et bouclier", "Longue massue", 40.0, 60.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(WildStaff), "Armes et bouclier", "Bâton sauvage", 40.0, 60.0, typeof(RegularBoard), 1044041, 16, 1044351);
+			index = AddCraft(typeof(Club), "Armes et bouclier", "Massue", 40.0, 60.0, typeof(RegularBoard), 1044041, 9, 1044351);
+			index = AddCraft(typeof(BlackStaff), "Armes et bouclier", "Bâton noir", 40.0, 60.0, typeof(RegularBoard), 1044041, 9, 1044351);
+			index = AddCraft(typeof(BatonNature), "Armes et bouclier", "Bâton de la Nature", 40.0, 60.0, typeof(RegularBoard), 1044041, 9, 1044351);
+			index = AddCraft(typeof(BatonDragonique), "Armes et bouclier", "Bâton Dragonique", 40.0, 60.0, typeof(RegularBoard), 1044041, 9, 1044351);
+			index = AddCraft(typeof(BatonErmite), "Armes et bouclier", "Bâton de l'Ermite", 55.0, 80.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Eterfer), "Armes et bouclier", "Eterfer", 55.0, 80.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(CanneSapphire), "Armes et bouclier", "Canne Sapphire", 70.0, 90.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(Crochire), "Armes et bouclier", "Crochire", 70.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(BatonVagabond), "Armes et bouclier", "Bâton de vagabond", 70.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(WoodenShield), "Armes et bouclier", "Bouclier en bois", 70.0, 90.0, typeof(RegularBoard), 1044041, 9, 1044351);
 
 			// Instruments
-			index = AddCraft(typeof(LapHarp), "Instruments", "Petite harpe", 63.1, 88.1, typeof(RegularBoard), 1044041, 20, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(LapHarp), "Instruments", "Petite harpe", 35.0, 55.0, typeof(RegularBoard), 1044041, 20, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			index = AddCraft(typeof(RuneLute), "Instruments", "Luth fin", 55.0, 70.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(RuneLute), "Instruments", "Luth fin", 45.0, 75.0, typeof(RegularBoard), 1044041, 6, 1044351);
 			AddRes(index, typeof(Cloth), "Cloth", 6, "You do not have enough cloth to make that.");
-			index = AddCraft(typeof(Harp), "Instruments", "Harpe", 78.9, 103.9, typeof(RegularBoard), 1044041, 35, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(Harp), "Instruments", "Harpe", 45.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
-			index = AddCraft(typeof(Drums), "Instruments", "Tambour", 57.8, 82.8, typeof(RegularBoard), 1044041, 20, 1044351);
-		//	index = AddCraft(typeof(Guitare), "Instruments", "Guitare", 57.8, 82.8, typeof(Board), 1044041, 20, 1044351);
-		//	index = AddCraft(typeof(HarpeLongue), "Instruments", "Une harpe Longue", 57.8, 82.8, typeof(Board), 1044041, 20, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(Drums), "Instruments", "Tambour", 50.0, 70.0, typeof(RegularBoard), 1044041, 20, 1044351);
+	
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			index = AddCraft(typeof(Lute), "Instruments", "Luth", 68.4, 93.4, typeof(RegularBoard), 1044041, 25, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(Lute), "Instruments", "Luth", 55.0, 75.0, typeof(RegularBoard), 1044041, 25, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			index = AddCraft(typeof(Tambourine), "Instruments", "Tambourine", 57.8, 82.8, typeof(RegularBoard), 1044041, 15, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(Tambourine), "Instruments", "Tambourine", 60.0, 85.0, typeof(RegularBoard), 1044041, 15, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			index = AddCraft(typeof(TambourineTassel), "Instruments", "Tambourine décorée", 57.8, 82.8, typeof(RegularBoard), 1044041, 15, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(TambourineTassel), "Instruments", "Tambourine décorée", 75.0, 100.0, typeof(RegularBoard), 1044041, 15, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
-			index = AddCraft(typeof(BambooFlute), "Instruments", "Flûte de bambou", 80.0, 105.0, typeof(RegularBoard), 1044041, 15, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
-			index = AddCraft(typeof(AudChar), "Instruments", "Aude-Char", 78.9, 103.9, typeof(RegularBoard), 1044041, 35, 1044351);
-			// AddSkill(index, SkillName.Musicianship, 45.0, 50.0);
+			index = AddCraft(typeof(BambooFlute), "Instruments", "Flûte de bambou", 85.0, 100.0, typeof(RegularBoard), 1044041, 15, 1044351);
+			index = AddCraft(typeof(AudChar), "Instruments", "Aude-Char", 85.0, 100.0, typeof(RegularBoard), 1044041, 35, 1044351);
 			AddRes(index, typeof(Granite), 1044514, 3, 1044513);
 
 			// Caisses et coffres
-			index = AddCraft(typeof(WoodenBox), "Caisses et coffres", "Boîte en bois", 21.0, 46.0, typeof(RegularBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(SmallCrate), "Caisses et coffres", "Petite caisse", 10.0, 35.0, typeof(RegularBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(MediumCrate), "Caisses et coffres", "Moyenne caisse", 31.0, 56.0, typeof(RegularBoard), 1044041, 15, 1044351);
-			index = AddCraft(typeof(LargeCrate), "Caisses et coffres", "Grande caisse", 47.3, 72.3, typeof(RegularBoard), 1044041, 18, 1044351);
-			index = AddCraft(typeof(WoodenChest), "Caisses et coffres", "Coffre en bois", 73.6, 98.6, typeof(RegularBoard), 1044041, 20, 1044351);
-			index = AddCraft(typeof(PlainWoodenChest), "Caisses et coffres", "Grand coffre simple", 90.0, 115.0, typeof(RegularBoard), 1044041, 30, 1044351);
-			index = AddCraft(typeof(OrnateWoodenChest), "Caisses et coffres", "Grand coffre orné", 90.0, 115.0, typeof(RegularBoard), 1044041, 30, 1044351);
-			index = AddCraft(typeof(GildedWoodenChest), "Caisses et coffres", "Grand coffre renforcé", 90.0, 115.0, typeof(RegularBoard), 1044041, 30, 1044351);
-			index = AddCraft(typeof(WoodenFootLocker), "Caisses et coffres", "Coffre à chaussures", 90.0, 115.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(WoodenBox), "Caisses et coffres", "Boîte en bois", 20.0, 40.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(SmallCrate), "Caisses et coffres", "Petite caisse", 15.0, 35.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(MediumCrate), "Caisses et coffres", "Moyenne caisse", 20.0, 40.0, typeof(RegularBoard), 1044041, 15, 1044351);
+			index = AddCraft(typeof(LargeCrate), "Caisses et coffres", "Grande caisse", 30.0, 50.0, typeof(RegularBoard), 1044041, 18, 1044351);
+			index = AddCraft(typeof(WoodenChest), "Caisses et coffres", "Coffre en bois", 40, 70.0, typeof(RegularBoard), 1044041, 20, 1044351);
+			index = AddCraft(typeof(PlainWoodenChest), "Caisses et coffres", "Grand coffre simple", 50.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(OrnateWoodenChest), "Caisses et coffres", "Grand coffre orné", 50.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(GildedWoodenChest), "Caisses et coffres", "Grand coffre renforcé", 50.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(WoodenFootLocker), "Caisses et coffres", "Coffre à chaussures", 50.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
 			index = AddCraft(typeof(FinishedWoodenChest), "Caisses et coffres", "Grand coffre", 90.0, 115.0, typeof(RegularBoard), 1044041, 30, 1044351);
-			//index = AddCraft(typeof(MaritimeChest), "Caisses et coffres", "Cargo Maritime", 80.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-			//index = AddCraft(typeof(BarrildeVin), "Caisses et coffres", "Barril de Vin", 80.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-			index = AddCraft(typeof(OrnateElvenChestSouthDeed), "Caisses et coffres", 1072862, 94.7, 119.7, typeof(RegularBoard), 1044041, 40, 1044351);
+	
+			index = AddCraft(typeof(OrnateElvenChestSouthDeed), "Caisses et coffres", 1072862, 90.0, 115.0, typeof(RegularBoard), 1044041, 40, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(OrnateElvenChestEastDeed), "Caisses et coffres", 1073383, 94.7, 119.7, typeof(RegularBoard), 1044041, 40, 1044351);
+			index = AddCraft(typeof(OrnateElvenChestEastDeed), "Caisses et coffres", 1073383, 90.0, 115.0, typeof(RegularBoard), 1044041, 40, 1044351);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(RarewoodChest), "Caisses et coffres", 1073402, 80.0, 105.0, typeof(RegularBoard), 1044041, 30, 1044351);
 			index = AddCraft(typeof(DecorativeBox), "Caisses et coffres", 1073403, 80.0, 105.0, typeof(RegularBoard), 1044041, 25, 1044351);
@@ -258,20 +245,16 @@ namespace Server.Engines.Craft
 			// Chaises
 			index = AddCraft(typeof(FootStool), "Chaises", "Petit tabouret", 11.0, 36.0, typeof(RegularBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(Stool), "Chaises", "Tabouret", 11.0, 36.0, typeof(RegularBoard), 1044041, 9, 1044351);
-			//index = AddCraft(typeof(TabouretFeutre), "Chaises", "Tabouret Feutré", 11.0, 36.0, typeof(Board), 1044041, 9, 1044351);
+	
 
 			index = AddCraft(typeof(BambooChair), "Chaises", "Chaise rustique", 21.0, 46.0, typeof(RegularBoard), 1044041, 13, 1044351);
 			index = AddCraft(typeof(WoodenChair), "Chaises", "Chaise simple", 21.0, 46.0, typeof(RegularBoard), 1044041, 13, 1044351);
 			index = AddCraft(typeof(FancyWoodenChairCushion), "Chaises", "Chaise travaillée", 42.1, 67.1, typeof(RegularBoard), 1044041, 15, 1044351);
 			index = AddCraft(typeof(WoodenChairCushion), "Chaises", "Chaise avec coussin", 42.1, 67.1, typeof(RegularBoard), 1044041, 13, 1044351);
-			//index = AddCraft(typeof(WoodenBench), "Chaises", "Banc en bois", 52.6, 77.6, typeof(Board), 1044041, 17, 1044351);
-			//index = AddCraft(typeof(WoodenThrone), "Chaises", "Trône simple", 52.6, 77.6, typeof(Board), 1044041, 17, 1044351);
+		
 
 			index = AddCraft(typeof(ChaiseLuxe), "Chaises", "Chaise de Luxe", 52.6, 77.6, typeof(RegularBoard), 1044041, 17, 1044351);
-		//	index = AddCraft(typeof(BancGris), "Chaises", "Banc Gris", 52.6, 77.6, typeof(Board), 1044041, 17, 1044351);
-		//	index = AddCraft(typeof(BancFer), "Chaises", "Banc Fer", 52.6, 77.6, typeof(Board), 1044041, 17, 1044351);
-		//	index = AddCraft(typeof(ChaiseRembourer), "Chaises", "Chaise Rembourée", 52.6, 77.6, typeof(Board), 1044041, 17, 1044351);
-		//	index = AddCraft(typeof(ChaiseVerte), "Chaises", "Chaise Verte", 52.6, 77.6, typeof(Board), 1044041, 17, 1044351);
+
 
 			index = AddCraft(typeof(Throne), "Chaises", "Trône massif", 73.6, 98.6, typeof(RegularBoard), 1044041, 19, 1044351);
 			index = AddCraft(typeof(OrnateElvenChair), "Chaises", "Chaise sculptée", 80.0, 105.0, typeof(RegularBoard), 1044041, 30, 1044351);
@@ -285,13 +268,13 @@ namespace Server.Engines.Craft
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(RusticBenchSouthDeed), "Chaises", "Banc rustique (S)", 94.7, 119.8, typeof(RegularBoard), 1044041, 35, 1044351);
 			index = AddCraft(typeof(RusticBenchEastDeed), "Chaises", "Banc rustique (E)", 94.7, 119.8, typeof(RegularBoard), 1044041, 35, 1044351);
-		//	index = AddCraft(typeof(BancMachineCoudre), "Chaises", "Banc simple", 90.0, 115.0, typeof(Board), 1044041, 8, 1044351);
+		
 
 			// Tables
-			index = AddCraft(typeof(Nightstand), "Tables", "Petite table", 42.1, 67.1, typeof(RegularBoard), 1044041, 17, 1044351);
-			index = AddCraft(typeof(WritingTable), "Tables", "Bureau d'éctriture", 63.1, 88.1, typeof(RegularBoard), 1044041, 17, 1044351);
-			index = AddCraft(typeof(LargeTable), "Tables", "Table large", 84.2, 109.2, typeof(RegularBoard), 1044041, 27, 1044351);
-			index = AddCraft(typeof(YewWoodTable), "Tables", "Table arrondie", 63.1, 88.1, typeof(RegularBoard), 1044041, 23, 1044351);
+			index = AddCraft(typeof(Nightstand), "Tables", "Petite table", 20.0, 40.0, typeof(RegularBoard), 1044041, 17, 1044351);
+			index = AddCraft(typeof(WritingTable), "Tables", "Bureau d'éctriture", 35.0, 55.0, typeof(RegularBoard), 1044041, 17, 1044351);
+			index = AddCraft(typeof(LargeTable), "Tables", "Table large", 40.0, 60.0, typeof(RegularBoard), 1044041, 27, 1044351);
+			index = AddCraft(typeof(YewWoodTable), "Tables", "Table arrondie", 50.0, 60.0, typeof(RegularBoard), 1044041, 23, 1044351);
 			index = AddCraft(typeof(TableNappe), "Tables", "Table avec Nappe (Flip)", 73.1, 98.1, typeof(RegularBoard), 1044041, 23, 1044351);
 			index = AddCraft(typeof(TableNappe2), "Tables", "Table avec Nappe Érable (Flip)", 73.1, 98.1, typeof(RegularBoard), 1044041, 23, 1044351);
 			index = AddCraft(typeof(ComptoirNappe), "Tables", "Comptoir avec Nappe (Flip)", 83.1, 108.1, typeof(RegularBoard), 1044041, 23, 1044351);
@@ -318,25 +301,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(AlchemistTableEastDeed), "Tables", "Comptoir alchimique (E)", 85.0, 110.0, typeof(RegularBoard), 1044041, 70, 1044351);
 			SetDisplayID(index, 0x2DD3);
 			ForceNonExceptional(index);
-		//	index = AddCraft(typeof(TinkerTable), "Tables", "Table de bricoleur", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-		//	AddRes(index, typeof(IronIngot), 1044036, 15, 1044037);
-		//	index = AddCraft(typeof(RepairTable), "Tables", "Table de Travail", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-		//	AddRes(index, typeof(IronIngot), 1044036, 15, 1044037);
-		//	index = AddCraft(typeof(Tableronde1), "Tables", "Table ronde1", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-		//	index = AddCraft(typeof(TableRonde2), "Tables", "Table ronde2", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-		//	index = AddCraft(typeof(TableRonde3), "Tables", "Table ronde3", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-		//	index = AddCraft(typeof(TableGrise), "Tables", "Table Grise", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-
-//			index = AddCraft(typeof(TableApothicaire), "Tables", "Table de l'Apothicaire", 90.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-//			index = AddCraft(typeof(RangementAlchimie), "Tables", "Rangement alchimique", 90.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-//			index = AddCraft(typeof(ItemAlchimie), "Tables", "Nécessaire d'Alchimie", 90.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-//			index = AddCraft(typeof(TableBrasseur), "Tables", "Table Festive", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
 
 			// Armoires
 			index = AddCraft(typeof(EmptyBookcase), "Armoires", "Bibliothèque vide", 31.5, 56.5, typeof(RegularBoard), 1044041, 25, 1044351);
 			index = AddCraft(typeof(FullBookcase), "Armoires", "Bibliothèque", 31.5, 56.5, typeof(RegularBoard), 1044041, 25, 1044351);
-		//	index = AddCraft(typeof(BibliothequeLuxe), "Armoires", "Bibliothèque vitrée", 31.5, 56.5, typeof(Board), 1044041, 25, 1044351);
-		//	index = AddCraft(typeof(BibliothequeLuxe2), "Armoires", "Bibliothèque de luxe avec livres", 31.5, 56.5, typeof(Board), 1044041, 25, 1044351);
+
 			index = AddCraft(typeof(FancyArmoire), "Armoires", "Armoire travaillée", 84.2, 109.2, typeof(RegularBoard), 1044041, 35, 1044351);
 			index = AddCraft(typeof(Armoire), "Armoires", "Armoire", 84.2, 109.2, typeof(RegularBoard), 1044041, 35, 1044351);
 			index = AddCraft(typeof(TallCabinet), "Armoires", "Grande commode", 90.0, 115.0, typeof(RegularBoard), 1044041, 35, 1044351);
@@ -369,47 +338,28 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(TerMurDresserEastDeed), "Armoires", "Armoire élégante (E)", 90.0, 115.0, typeof(RegularBoard), 1044041, 60, 1044351);
 			index = AddCraft(typeof(TerMurDresserSouthDeed), "Armoires", "Armoire élégante (S)", 90.0, 115.0, typeof(RegularBoard), 1044041, 60, 1044351);
 			index = AddCraft(typeof(NormDresser), "Armoires", "Coiffeuse", 70.0, 115.0, typeof(RegularBoard), 1044041, 40, 1044351);
-			//index = AddCraft(typeof(CommodeFoncee), "Armoires", "Commode Foncée", 70.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-			//index = AddCraft(typeof(CommodeHaute), "Armoires", "Commode Haute", 70.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-			//index = AddCraft(typeof(GardeRobeFermer), "Armoires", "Garde Robe Fermée", 70.0, 115.0, typeof(Board), 1044041, 40, 1044351);
-			//index = AddCraft(typeof(GardeRobeOuvert), "Armoires", "Garde Robe Ouverte", 70.0, 115.0, typeof(Board), 1044041, 40, 1044351);
+		
 
 			// Lits
-			index = AddCraft(typeof(SmallBedSouthDeed), "Lits", "Petit lit (S)", 94.7, 119.8, typeof(RegularBoard), 1044041, 100, 1044351);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
+			index = AddCraft(typeof(SmallBedSouthDeed), "Lits", "Petit lit (S)", 60.0, 80.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 100, 1044287);
-			index = AddCraft(typeof(SmallBedEastDeed), "Lits", "Petit lit (E)", 94.7, 119.8, typeof(RegularBoard), 1044041, 100, 1044351);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
+			index = AddCraft(typeof(SmallBedEastDeed), "Lits", "Petit lit (E)", 60.0, 80.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 100, 1044287);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
-			index = AddCraft(typeof(LargeBedSouthDeed), "Lits", "Grand lit (S)", 94.7, 119.8, typeof(RegularBoard), 1044041, 150, 1044351);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
+			index = AddCraft(typeof(LargeBedSouthDeed), "Lits", "Grand lit (S)", 75.0, 95.0, typeof(RegularBoard), 1044041, 150, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 150, 1044287);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
-			index = AddCraft(typeof(LargeBedEastDeed), "Lits", "Grand lit (E)", 94.7, 119.8, typeof(RegularBoard), 1044041, 150, 1044351);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
+			index = AddCraft(typeof(LargeBedEastDeed), "Lits", "Grand lit (E)", 75.0, 95.0, typeof(RegularBoard), 1044041, 150, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 150, 1044287);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
 			index = AddCraft(typeof(TallElvenBedSouthDeed), "Lits", "Grand lit orné (S)", 94.7, 119.7, typeof(RegularBoard), 1044041, 200, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 100, 1044287);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(TallElvenBedEastDeed), "Lits", "Grand lit orné (E)", 94.7, 119.7, typeof(RegularBoard), 1044041, 200, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 100, 1044287);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(ElvenBedSouthDeed), "Lits", "Lit orné (S)", 94.7, 119.7, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 100, 1044287);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(ElvenBedEastDeed), "Lits", "Lit orné (E)", 94.7, 119.7, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 100, 1044287);
-			AddSkill(index, SkillName.Tailoring, 40.0, 50.0);
-			AddRes(index, typeof(Draps), "Draps", 1, "Vous avez besoin d'un ensemble de draps");
 			ForceNonExceptional(index);
 
 			// Décoration
@@ -417,18 +367,16 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(BlankScroll), 1044377, 10, 1044378);
 			index = AddCraft(typeof(WhiteHangingLantern), "Décorations", "Lanterne blanche suspendue", 65.0, 90.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			AddRes(index, typeof(BlankScroll), 1044377, 10, 1044378);
-			index = AddCraft(typeof(ShojiScreen), "Décorations", "Paravent léger", 80.0, 105.0, typeof(RegularBoard), 1044041, 75, 1044351);
-			AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
+			index = AddCraft(typeof(ShojiScreen), "Décorations", "Paravent léger", 60.0, 80.0, typeof(RegularBoard), 1044041, 75, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
 			index = index = AddCraft(typeof(BambooScreen), "Décorations", "Paravent simple", 80.0, 105.0, typeof(RegularBoard), 1044041, 75, 1044351);
-			AddSkill(index, SkillName.Tailoring, 50.0, 55.0);
 			AddRes(index, typeof(Cloth), 1044286, 60, 1044287);
-			index = AddCraft(typeof(Paravent), "Décorations", "Paravent de bois", 80.0, 105.0, typeof(RegularBoard), 1044041, 50, 1044351);
+			index = AddCraft(typeof(Paravent), "Décorations", "Paravent de bois", 60.0, 80.0, typeof(RegularBoard), 1044041, 50, 1044351);
 			index = AddCraft(typeof(Incubator), "Décorations", "Présentoir", 90.0, 115.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			index = AddCraft(typeof(ChickenCoop), "Décorations", "Poulailler", 90.0, 115.0, typeof(RegularBoard), 1044041, 150, 1044351);
 			index = AddCraft(typeof(ParrotPerchAddonDeed), "Décorations", "Perche perroquet", 50.0, 85.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(ArcaneCircleDeed), "Décorations", "Cercle arcanique", 94.7, 119.7, typeof(RegularBoard), 1044041, 100, 1044351);
+			index = AddCraft(typeof(ArcaneCircleDeed), "Décorations", "Cercle arcanique", 74.7, 119.7, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddRes(index, typeof(Diamond), 1026255, 2, 1053098);
 			AddRes(index, typeof(Emerald), 1026251, 2, 1053098);
 			AddRes(index, typeof(Ruby), 1026254, 2, 1053098);
@@ -439,30 +387,25 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(DartBoardEastDeed), "Décorations", "Jeu de dard (E)", 15.7, 40.7, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(BallotBoxDeed), "Décorations", "Urne sculptée", 47.3, 72.3, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(VanityDeed), "Décorations", "Vanité", 60.3, 95.0, typeof(RegularBoard), 1044041, 15, 1044351);
-			index = AddCraft(typeof(AbbatoirDeed), "Décorations", "Abattoir", 100.0, 125.0, typeof(RegularBoard), 1044041, 100, 1044351);
+			index = AddCraft(typeof(AbbatoirDeed), "Décorations", "Abattoir", 70.0, 125.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddRes(index, typeof(IronIngot), 1044036, 40, 1044037);
-			// index = AddCraft(typeof(FeedingThrough), "Décorations", "Mangeoir", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
-			// index = AddCraft(typeof(Puit), "Décorations", "Puit", 90.0, 115.0, typeof(Board), 1044041, 60, 1044351);
+
 			index = AddCraft(typeof(PoteauChaine), "Décorations", "Poteau avec Chaine", 90.0, 115.0, typeof(RegularBoard), 1044041, 10, 1044351);
 			AddRes(index, typeof(IronIngot), "Lingot de fer", 3, "Vous n'avez pas suffisament de lingot de fer");
-			//index = AddCraft(typeof(RackaVin), "Décorations", "Cellier", 90.0, 115.0, typeof(Board), 1044041, 20, 1044351);
-			//AddRes(index, typeof(BottleOfWine), "Bouteille de vin", 15, "Vous n'avez pas suffisament de bouteille de vin.");
-			//index = AddCraft(typeof(PresentoireVide), "Décorations", "Presentoir Vide", 90.0, 115.0, typeof(Board), 1044041, 20, 1044351);
-			//index = AddCraft(typeof(PresentoirePlein1), "Décorations", "Presentoir Plein 1", 90.0, 115.0, typeof(Board), 1044041, 20, 1044351);
-			//index = AddCraft(typeof(PresentoirePlein2), "Décorations", "Presentoir Plein 2", 90.0, 115.0, typeof(Board), 1044041, 20, 1044351);
+		
 
 			// Statues et trophés
 			index = AddCraft(typeof(ArcanistStatueSouthDeed), "Statues et trophés", "L'Arcaniste (S)", 0.0, 35.0, typeof(RegularBoard), 1044041, 250, 1044351);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(ArcanistStatueEastDeed), "Statues et trophés", "L'Arcaniste (E)", 0.0, 35.0, typeof(RegularBoard), 1044041, 250, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(WarriorStatueSouthDeed), "Statues et trophés", "Le Guerrier (S)", 0.0, 35.0, typeof(RegularBoard), 1044041, 250, 1044351);
+			index = AddCraft(typeof(WarriorStatueSouthDeed), "Statues et trophés", "Le Guerrier (S)", 30.0, 55.0, typeof(RegularBoard), 1044041, 250, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(WarriorStatueEastDeed), "Statues et trophés", "Le Guerrier (E)", 0.0, 35.0, typeof(RegularBoard), 1044041, 250, 1044351);
+			index = AddCraft(typeof(WarriorStatueEastDeed), "Statues et trophés", "Le Guerrier (E)", 30.0, 55.0, typeof(RegularBoard), 1044041, 250, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(SquirrelStatueSouthDeed), "Statues et trophés", "L'Écureuil (S)", 0.0, 35.0, typeof(RegularBoard), 1044041, 250, 1044351);
+			index = AddCraft(typeof(SquirrelStatueSouthDeed), "Statues et trophés", "L'Écureuil (S)", 50.0, 70.0, typeof(RegularBoard), 1044041, 250, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(SquirrelStatueEastDeed), "Statues et trophés", "L'Écureuil (E)", 0.0, 35.0, typeof(RegularBoard), 1044041, 250, 1044351);
+			index = AddCraft(typeof(SquirrelStatueEastDeed), "Statues et trophés", "L'Écureuil (E)", 50.0, 70.0, typeof(RegularBoard), 1044041, 250, 1044351);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(GiantReplicaAcorn), "Statues et trophés", "Gland géant sculpté", 80.0, 105.0, typeof(RegularBoard), 1044041, 35, 1044351);
 			index = AddCraft(typeof(MountedDreadHorn), "Statues et trophés", "Tête de licorne sculptée", 90.0, 115.0, typeof(RegularBoard), 1044041, 50, 1044351);
@@ -471,23 +414,23 @@ namespace Server.Engines.Craft
 			// Grands outils
 			index = AddCraft(typeof(SewingMachineDeed), "Grands outils", "Machine à Coudre", 90.0, 115.0, typeof(RegularBoard), 1044041, 30, 1044351);
 			AddRes(index, typeof(IronIngot), 1044036, 15, 1044037);
-			index = AddCraft(typeof(SpinningwheelEastDeed), "Grands outils", "Rouet (E)", 73.6, 98.6, typeof(RegularBoard), 1044041, 75, 1044351);
+			index = AddCraft(typeof(SpinningwheelEastDeed), "Grands outils", "Rouet (E)", 57.6, 98.6, typeof(RegularBoard), 1044041, 75, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 70.0);
 			AddRes(index, typeof(Cloth), 1044286, 25, 1044287);
-			index = AddCraft(typeof(SpinningwheelSouthDeed), "Grands outils", "Rouet (S)", 73.6, 98.6, typeof(RegularBoard), 1044041, 75, 1044351);
+			index = AddCraft(typeof(SpinningwheelSouthDeed), "Grands outils", "Rouet (S)", 57.6, 98.6, typeof(RegularBoard), 1044041, 75, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 70.0);
 			AddRes(index, typeof(Cloth), 1044286, 25, 1044287);
-			index = AddCraft(typeof(ElvenSpinningwheelEastDeed), "Grands outils", "Rouet élégant (E)", 75.0, 100.0, typeof(RegularBoard), 1044041, 60, 1044351);
+			index = AddCraft(typeof(ElvenSpinningwheelEastDeed), "Grands outils", "Rouet élégant (E)", 57.6, 98.6, typeof(RegularBoard), 1044041, 60, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 85.0);
 			AddRes(index, typeof(Cloth), 1044286, 40, 1044287);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(ElvenSpinningwheelSouthDeed), "Grands outils", "Rouet élégant (S)", 75.0, 100.0, typeof(RegularBoard), 1044041, 60, 1044351);
+			index = AddCraft(typeof(ElvenSpinningwheelSouthDeed), "Grands outils", "Rouet élégant (S)", 57.6, 98.6, typeof(RegularBoard), 1044041, 60, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 85.0);
 			AddRes(index, typeof(Cloth), 1044286, 40, 1044287);
-			index = AddCraft(typeof(LoomEastDeed), "Grands outils", "Métier à tisser (E)", 84.2, 109.2, typeof(RegularBoard), 1044041, 85, 1044351);
+			index = AddCraft(typeof(LoomEastDeed), "Grands outils", "Métier à tisser (E)", 54.2, 70.2, typeof(RegularBoard), 1044041, 85, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 70.0);
 			AddRes(index, typeof(Cloth), 1044286, 25, 1044287);
-			index = AddCraft(typeof(LoomSouthDeed), "Grands outils", "Métier à tisser (S)", 84.2, 109.2, typeof(RegularBoard), 1044041, 85, 1044351);
+			index = AddCraft(typeof(LoomSouthDeed), "Grands outils", "Métier à tisser (S)", 54.2, 70.2, typeof(RegularBoard), 1044041, 85, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 70.0);
 			AddRes(index, typeof(Cloth), 1044286, 25, 1044287);
 			index = AddCraft(typeof(DressformFront), "Grands outils", "Mannequin face", 63.1, 88.1, typeof(RegularBoard), 1044041, 25, 1044351);
@@ -496,14 +439,14 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(DressformSide), "Grands outils", "Mannequin côté", 63.1, 88.1, typeof(RegularBoard), 1044041, 25, 1044351);
 			AddSkill(index, SkillName.Tailoring, 65.0, 70.0);
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			index = AddCraft(typeof(FlourMillEastDeed), "Grands outils", "Moulin à farine (E)", 94.7, 119.7, typeof(RegularBoard), 1044041, 100, 1044351);
+			index = AddCraft(typeof(FlourMillEastDeed), "Grands outils", "Moulin à farine (E)", 80.0, 100.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddSkill(index, SkillName.Tinkering, 50.0, 55.0);
 			AddRes(index, typeof(IronIngot), 1044036, 50, 1044037);
-			index = AddCraft(typeof(FlourMillSouthDeed), "Grands outils", "Moulin à farine (S)", 94.7, 119.7, typeof(RegularBoard), 1044041, 100, 1044351);
+			index = AddCraft(typeof(FlourMillSouthDeed), "Grands outils", "Moulin à farine (S)", 80.0, 100.0, typeof(RegularBoard), 1044041, 100, 1044351);
 			AddSkill(index, SkillName.Tinkering, 50.0, 55.0);
 			AddRes(index, typeof(IronIngot), 1044036, 50, 1044037);
-			index = AddCraft(typeof(WaterTroughEastDeed), "Grands outils", "Abreuvoir (E)", 94.7, 119.7, typeof(RegularBoard), 1044041, 150, 1044351);
-			index = AddCraft(typeof(WaterTroughSouthDeed), "Grands outils", "Abreuvoir (S)", 94.7, 119.7, typeof(RegularBoard), 1044041, 150, 1044351);
+			index = AddCraft(typeof(WaterTroughEastDeed), "Grands outils", "Abreuvoir (E)", 50.0, 70.0, typeof(RegularBoard), 1044041, 150, 1044351);
+			index = AddCraft(typeof(WaterTroughSouthDeed), "Grands outils", "Abreuvoir (S)", 50.0, 70.0, typeof(RegularBoard), 1044041, 150, 1044351);
 
 
 			MarkOption = true;
@@ -515,13 +458,15 @@ namespace Server.Engines.Craft
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(RegularBoard), 1072643, 0.0, 1044041, 1072653);
-			AddSubRes(typeof(OakBoard), 1072644, 65.0, 1044041, 1072653);
-			AddSubRes(typeof(AshBoard), 1072645, 75.0, 1044041, 1072653);
-			AddSubRes(typeof(YewBoard), 1072646, 85.0, 1044041, 1072653);
-			AddSubRes(typeof(HeartwoodBoard), 1072647, 95.0, 1044041, 1072653);
-			AddSubRes(typeof(BloodwoodBoard), 1072648, 95.0, 1044041, 1072653);
-			AddSubRes(typeof(FrostwoodBoard), 1072649, 95.0, 1044041, 1072653);
+			AddSubRes(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
+			AddSubRes(typeof(ForestierBoard), "Forestier", 10.0, "Vous ne savez pas travailler le bois Forestier");
+			AddSubRes(typeof(DesertiqueBoard), "Desertique", 20.0, "Vous ne savez pas travailler le bois Desertique");
+			AddSubRes(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
+			AddSubRes(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
+			AddSubRes(typeof(ToundroisBoard), "Toundrois", 50.0, "Vous ne savez pas travailler le bois Toundrois");
+			AddSubRes(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
+			AddSubRes(typeof(MontagnardBoard), "Montagnard", 70.0, "Vous ne savez pas travailler le bois Montagnard");
+			AddSubRes(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
 		}
 	}
 }
