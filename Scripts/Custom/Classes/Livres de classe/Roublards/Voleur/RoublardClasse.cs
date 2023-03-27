@@ -27,13 +27,7 @@ namespace Server
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.Snooping, 100),
-                new CSkills(SkillName.Stealing, 100),
-                new CSkills(SkillName.Lockpicking, 100),
-		        new CSkills(SkillName.RemoveTrap, 90),
-                new CSkills(SkillName.Hiding, 70),
-		        new CSkills(SkillName.DetectHidden, 40),
-                new CSkills(SkillName.Tracking, 40)
+                new CSkills(SkillName.Hiding, 100),
             };
 
 		public static ClasseInfo ClasseInfo = new ClasseInfo(

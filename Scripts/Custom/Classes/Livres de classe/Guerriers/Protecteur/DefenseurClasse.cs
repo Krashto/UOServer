@@ -16,7 +16,7 @@ namespace Server
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {
-				new CAptitudes(Aptitude.Martial, 3),
+				new CAptitudes(Aptitude.Defenseur, 3),
             };
 
 		private static CCapacites[] m_Capacites = new CCapacites[]
@@ -27,10 +27,7 @@ namespace Server
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.MagicResist, 50),
-                new CSkills(SkillName.Healing, 45),
-                new CSkills(SkillName.Tactics, 35),
-		        new CSkills(SkillName.Parry, 35)
+		        new CSkills(SkillName.Parry, 50)
             };
 
 		public static ClasseInfo ClasseInfo = new ClasseInfo(

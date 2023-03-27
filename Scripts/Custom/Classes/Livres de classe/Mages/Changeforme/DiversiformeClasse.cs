@@ -27,16 +27,7 @@ namespace Server
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.Musicianship, 80),
-                new CSkills(SkillName.Peacemaking, 80),
-                new CSkills(SkillName.Magery, 65),
-                new CSkills(SkillName.Healing, 60),
-                new CSkills(SkillName.Anatomy, 40),
-                new CSkills(SkillName.Meditation, 30),
-                new CSkills(SkillName.Provocation, 20),
-                new CSkills(SkillName.AnimalTaming, 20),
-                new CSkills(SkillName.Discordance, 10),
-                new CSkills(SkillName.Tactics, 10)
+                new CSkills(SkillName.Anatomy, 75),
             };
 
 

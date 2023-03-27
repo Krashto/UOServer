@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using Server;
 using Server.Targeting;
 using Server.Mobiles;
 using Server.Network;
@@ -9,22 +7,12 @@ namespace Server.Gumps
 {
 	public class FamilierGump : Gump
 	{
-		public static void Initialize()
-		{
-			
-			
-		}
-
-
-
-        private Server.Mobiles.BaseCreature c;
+        private BaseCreature c;
         private Mobile m;
 
-
-        public FamilierGump (Mobile Mobile, Server.Mobiles.BaseCreature Creature)
+        public FamilierGump (Mobile Mobile, BaseCreature Creature)
 			: base( 0, 0 )
 		{
-
             c = Creature;
             m = Mobile;
 
@@ -80,26 +68,6 @@ namespace Server.Gumps
 
             this.AddButton(396, 405, 0xFA5, 0xFA7, 12, GumpButtonType.Reply, 0);
             AddHtml(430, 405, 90, 50, String.Format("<basefont color=#{0}>{1}", TextHue, "Action"), false, false);
-
-            //      public void AddTextEntry(int x, int y, int width, int height, int hue, int entryID, string initialText)
-
-
-            //	public void AddBackground( int x, int y, int width, int height, int gumpID )
-
-
-
-
-
-
-
-            // Emote
-            // talk
-
-
-
-
-
-
         }
 
 
@@ -109,29 +77,21 @@ namespace Server.Gumps
 
             if (c.Deleted)   // Mettre ici si la cible est morte.. dissiper ou autre
             {
-
                 from.SendMessage("Votre créature n'existe plus.");
                 return;
             }
-                
 
             TextRelay te = info.GetTextEntry(0);
             string msg;
 
             if (te == null)
-            {
                 msg = "";
-            }
             else
-            {
                 msg = te.Text;
-            }
-
 
             c.ControlOrder = OrderType.Stay;            // Pour le faire arreter ce qui fesait avant...
             c.ControlTarget = null;
             c.TargetLocation = null;
-
 
             switch (info.ButtonID)
             {
@@ -230,7 +190,6 @@ namespace Server.Gumps
                             ((PlayerMobile)from).SendGump(new FamilierGump(m, c));
                             break;
                         }
-
                     }
                 case 12:
                     {
@@ -247,32 +206,21 @@ namespace Server.Gumps
                             ((PlayerMobile)from).SendGump(new FamilierGump(m, c));
                             break;
                         }
-
                     }
-
-
-                default:
-                        break;
+                default: break;
             }
-
-
-
-           
         }
 
         public class Go : Target
         {
-            Server.Mobiles.BaseCreature cr;
-
-
-            public Go(Server.Mobiles.BaseCreature creature) : base(Core.ML ? 11 : 12, true, TargetFlags.None)
+            BaseCreature cr;
+            public Go(BaseCreature creature) : base(Core.ML ? 11 : 12, true, TargetFlags.None)
             {
                 cr = creature;
             }
 
             protected override void OnTarget(Mobile from, object targ)
             {
-
                 if (targ is IPoint2D)
                 {             
                         IPoint2D p = (IPoint2D)targ;
@@ -282,24 +230,15 @@ namespace Server.Gumps
 
                         cr.TargetLocation = p;
                         from.SendLocalizedMessage(502479); // The animal walks where it was instructed to.
-
-                    
                 }
-
-                
-                 // ((PlayerMobile)from).SendGump(new FamilierGump(cr));
             }
-
-
         }
 
         public class Ciblage : Target
         {
-            Server.Mobiles.BaseCreature cr;
+            BaseCreature cr;
             int ch;
-
-
-            public Ciblage (Server.Mobiles.BaseCreature creature, int Choix) : base(Core.ML ? 11 : 12, true, TargetFlags.None)
+            public Ciblage (BaseCreature creature, int Choix) : base(Core.ML ? 11 : 12, true, TargetFlags.None)
             {
                 cr = creature;
                 ch = Choix;
@@ -307,7 +246,6 @@ namespace Server.Gumps
 
             protected override void OnTarget(Mobile from, object targ)
             {
-
                 if (targ is Mobile)
                 {
                     Mobile m = (Mobile)targ;
@@ -328,41 +266,11 @@ namespace Server.Gumps
                                     cr.ControlTarget = m;
                                     break;
                                 }
-                            default:
-                                break;
+                            default:  break;
                         }
-
-
                     }
-                       
-                    
-
                 }
-
-
-                // ((PlayerMobile)from).SendGump(new FamilierGump(cr));
             }
-
-
         }
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
-
-
-
-
-
 }

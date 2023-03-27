@@ -5,95 +5,133 @@ namespace Server.Gumps
 {
   public class CreationStatistique : CreationBaseGump
     {
-        public CreationStatistique (CustomPlayerMobile from, CreationPerso creationPerso) : base(from, creationPerso, "Statistique",true, creationPerso.Statistique())
+        public CreationStatistique (CustomPlayerMobile from, CreationPerso creationPerso) : base(from, creationPerso, "Statistique",true, creationPerso.CheckStats())
         {
             int x = XBase;
             int y = YBase;
             int line = 0;
-            int scale = 20;   
-            int space = 115;
+            int lineSpace = 20;
 
-            AddSection(x - 10, y, 610, 150, "Sélection");
+            AddSection(x - 10, y + lineSpace * line++, 610, lineSpace * 10, "Sélection");
+			line++;
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Force");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 138, GumpButtonType.Reply, 0);
+			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Str.ToString());
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 139, GumpButtonType.Reply, 0);
 
-			AddLabel(x + 200, y + 43, 2101, "Force");
-			AddLabel(x + 279, y + 44, 2101, ":");
-			AddLabel(x + 308, y + 43, 2101, creationPerso.Str.ToString() );
-			AddButton(x + 348, y + 45, 5603, 5607, 138, GumpButtonType.Reply, 0);
-			AddButton(x + 369, y + 45, 5601, 5605, 139, GumpButtonType.Reply, 0);
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Dextérité");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 140, GumpButtonType.Reply, 0);
+			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Dex.ToString());
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 141, GumpButtonType.Reply, 0);
 
-			AddLabel(x + 200, y + 68, 2101, "Dextérité");
-			AddLabel(x + 279, y + 69, 2101, ":");
-			AddLabel(x + 308, y + 68, 2101, creationPerso.Dex.ToString());
-			AddButton(x + 348, y + 70, 5603, 5607, 140, GumpButtonType.Reply, 0);
-			AddButton(x + 369, y + 70, 5601, 5605, 141, GumpButtonType.Reply, 0);
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Intelligence");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 142, GumpButtonType.Reply, 0);
+			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Int.ToString());
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 143, GumpButtonType.Reply, 0);
 
-			AddLabel(x + 200, y + 93, 2101, "Intelligence");
-			AddLabel(x + 279, y + 94, 2101, ":");
-			AddLabel(x + 308, y + 93, 2101, creationPerso.Int.ToString());
-			AddButton(x + 348, y + 95, 5603, 5607, 142, GumpButtonType.Reply, 0);
-			AddButton(x + 369, y + 95, 5601, 5605, 143, GumpButtonType.Reply, 0);
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Constitution");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 144, GumpButtonType.Reply, 0);
+			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Const.ToString());
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 145, GumpButtonType.Reply, 0);
 
-			AddLabel(x + 200, y + 118, 2101, "Points restant");
-			AddLabel(x + 279, y + 119, 2101, ":");
-			AddLabel(x + 308, y + 118, 2101, creationPerso.GetPointsRestants().ToString());
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Endurance");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 146, GumpButtonType.Reply, 0);
+			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Endur.ToString());
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 147, GumpButtonType.Reply, 0);
 
-			string detail = "Force: \n  -Détermine les points de vie\n  -Détermine la quantité que peux porter un personnage\n  -Détermine les dégats au corps à corps\n  -Détermine si vous pouvez porter une armure \n\nDextérité:\n  -Aide au chance de parrer un coup\n  -Détermine le temps entre chaque bandage\n  -Détermine l'endurance\n\nIntelligence:\n  -Détermine la mana\n  -Influence la regénération de mana\n";
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Sagesse");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 148, GumpButtonType.Reply, 0);
+			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Sag.ToString());
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 149, GumpButtonType.Reply, 0);
 
-			AddSection(x - 10, y + 151, 610, 458, "Détail", detail);
+			AddLabel(x + 185, y + lineSpace * line, 2101, "Points restants");
+			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			var restants = creationPerso.GetPointsRestants();
+			AddLabel(x + 342 + (restants > 100 ? -5 : 0) , y + lineSpace * line++, 2101, restants.ToString());
+
+			string detail = "Force (Conseillée aux guerriers et récolteurs)\r\n-Permet de frapper plus fort avec une arme\r\n-Supporter plus de poids (Stone)\r\n\r\nDextérité (Conseillée aux guerriers)\r\n-Permet de frapper plus vite\r\n-Bonus de parade\r\n\r\nIntelligence (Conseillée aux magiciens)\r\n-Bonus sur les dégats magiques\r\n-Bonus sur la durée des buffs magiques\r\n-Bonus sur l'efficacité des buffs magiques\r\n\r\nConstitution (Conseillée à tous)\r\n-Augmente le nombre de points de vie\r\n-Meilleure regénération de points de vie\r\n\r\nEndurance (Conseillée à tous)\r\n-Augmente le nombre de points de stamina\r\n-Meilleure regénération de points de stamina\r\n\r\nSagesse (Conseillée à tous)\r\n-Augmente le nombre de points de mana\r\n-Meilleure regénération de points de mana";
+
+			AddSection(x - 10, y + lineSpace * 10 + 1, 610, lineSpace * 20 + 8, "Détails", detail);
 		}
 
 		public override void OnResponse(NetState sender, RelayInfo info)
         {
+			CustomPlayerMobile from = (CustomPlayerMobile)sender.Mobile;
 
-          CustomPlayerMobile from = (CustomPlayerMobile)sender.Mobile;
-
-          if (from.Deleted || !from.Alive)
-            return;
-
+			if (from.Deleted || !from.Alive)
+				return;
 
 			if (info.ButtonID == 138)
 			{
 				m_Creation.Str -= 5;
-
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 139)
 			{
 				m_Creation.Str += 5;
-
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
-
 			else if (info.ButtonID == 140)
 			{
 				m_Creation.Dex -= 5;
-
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 141)
 			{
 				m_Creation.Dex += 5;
-
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 142)
 			{
 				m_Creation.Int -= 5;
-
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 143)
 			{
 				m_Creation.Int += 5;
-
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
-
-			else if (info.ButtonID == 1001)
-            {
-				from.SendGump(new CreationValidationGump(m_from, m_Creation));
+			else if (info.ButtonID == 144)
+			{
+				m_Creation.Const -= 5;
+				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
-            else if (info.ButtonID == 1000 || info.ButtonID == 0)
+			else if (info.ButtonID == 145)
+			{
+				m_Creation.Const += 5;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 146)
+			{
+				m_Creation.Endur -= 5;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 147)
+			{
+				m_Creation.Endur += 5;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 148)
+			{
+				m_Creation.Sag -= 5;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 149)
+			{
+				m_Creation.Sag += 5;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 1001) //Next
+            {
+				from.SendGump(new CreationSkills(m_from, m_Creation));
+			}
+            else if (info.ButtonID == 1000 || info.ButtonID == 0) //Previous
             {
 				from.SendGump(new InfoGeneralGump(from, m_Creation));
 			}

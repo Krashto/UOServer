@@ -127,12 +127,11 @@ namespace Server.Gumps
 				m_Creation.Grosseur = (CorpulenceEnum)(info.ButtonID - 300);
 				from.SendGump(new InfoGeneralGump(from, m_Creation));
 			}
-
-			else if (info.ButtonID == 1001)
+			else if (info.ButtonID == 1001) //Next
             {
 				from.SendGump(new CreationStatistique(m_from, m_Creation));
             }
-            else if (info.ButtonID == 1000 || info.ButtonID == 0)
+            else if (info.ButtonID == 1000 || info.ButtonID == 0) //Previous
             {
                 from.SendGump(new CreationRaceGump(m_from, m_Creation));
             }

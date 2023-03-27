@@ -1,7 +1,5 @@
-﻿using System;
-using Server.Mobiles;
+﻿using Server.Mobiles;
 using Server.Network;
-using System.Collections.Generic;
 using Server.Accounting;
 using Server.Custom.Classes;
 
@@ -13,29 +11,26 @@ namespace Server.Gumps
         {
             int x = XBase;
             int y = YBase;
-            int line = 0;
-            int scale = 25;
-            int space = 115;
 
             string info = "<h3><basefont color=#FFFFFFF>Nom: " + m_Creation.Name + "\n\nRace: " + m_Creation.Race + "\nSexe: " + (m_Creation.Female ? "Femme" : "Homme") + "\nApparence: " + m_Creation.GetApparence() + "\nGrandeur: " + m_Creation.GetGrandeur() + "\nGrosseur: " + m_Creation.GetGrosseur() + "\n\n<basefont></h3>";
 
-			Dictionary<SkillName, int> Skill = new Dictionary<SkillName, int>();
+			info = info + "Skills: \n";
 
-			info = info + "Skills: \n\n";
-
-			foreach (KeyValuePair<SkillName,int> item in Skill)
-				info = info +"  -" + item.Key + ": " + item.Value + "\n";
-
-			info = info + "  -Mining: 30\n  -Fishing: 30\n  -Lumberjacking: 30\n  -MagicResist: 30\n";
+			foreach (var skill in from.Skills)
+			{
+				if (skill.Value > 0)
+					info = info + " -" + skill.Name + ": " + skill.Value + "\n";
+			}
 
 			info = info + "\n\nForce: " + creationPerso.Str;
 			info = info + "\nDextérité: " + creationPerso.Dex;
 			info = info + "\nIntelligence: " + creationPerso.Int;
+			info = info + "\nConstitution: " + creationPerso.Const;
+			info = info + "\nEndurance: " + creationPerso.Endur;
+			info = info + "\nSagesse: " + creationPerso.Sag;
 
 			if (m_Creation.Reroll != null)
-			{
 				info = info + "\n\nTransfert: " + m_Creation.Reroll.Name + "\nExpériences: " + creationPerso.Reroll.Experience;
-			}
 
 			AddSection(x - 10, y, 303, 508, "Information", info);
 
@@ -51,7 +46,7 @@ namespace Server.Gumps
 
             if (info.ButtonID == 1)
             {
-                m_Creation.Valide();
+                m_Creation.Validate();
 				Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
 			}
             else if (info.ButtonID == 1000 || info.ButtonID == 0)
@@ -61,7 +56,7 @@ namespace Server.Gumps
 				if (acc.Reroll.Count > 0)
 					pm.SendGump(new CreationRerollGump(pm, m_Creation));
 				else
-					m_from.SendGump(new CreationStatistique(m_from, m_Creation));
+					m_from.SendGump(new CreationSkills(m_from, m_Creation));
 			}
         }
     }

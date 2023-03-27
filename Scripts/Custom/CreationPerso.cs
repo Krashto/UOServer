@@ -7,6 +7,7 @@ using Server.Misc;
 using System.Collections.Generic;
 using Server.Accounting;
 using Server.Custom.Classes;
+using System.Linq;
 
 
 #endregion
@@ -20,11 +21,17 @@ namespace Server
         private int m_Hue;
         private bool m_female;
 		private string m_Name;
-		private StatutSocialEnum m_Statut = StatutSocialEnum.Peregrin;
 
 		private int m_Str = 25;
 		private int m_Dex = 25;
 		private int m_Int = 25;
+		private int m_Const = 25;
+		private int m_Endur = 25;
+		private int m_Sag = 25;
+
+		private int m_MaxStats = 525;
+		private int m_MinStat = 25;
+		private int m_MaxStat = 125;
 
 		private CustomPlayerMobile m_Player;
 
@@ -33,8 +40,6 @@ namespace Server
 		private AppearanceEnum m_Appearance = (AppearanceEnum)(-1);
 		private GrandeurEnum m_Grandeur = (GrandeurEnum)(-1);
 		private CorpulenceEnum m_Grosseur = (CorpulenceEnum)(-1);
-		private Classe m_Classe = (Classe)(-1);
-		private Classe m_Metier = (Classe)(-1);
 
 		public BaseRace Race
         {
@@ -42,12 +47,9 @@ namespace Server
             set
             {
                 if (m_Race != value)
-                {
                     ChangeRace();
-                }
                 m_Race = value;
             }
-             
         }
 
 		public int Str
@@ -55,12 +57,12 @@ namespace Server
 			get => m_Str;
 			set
 			{
-				if (value + m_Dex + m_Int > 225)
-					m_Str = 225 - m_Dex - m_Int;
-				else if (value < 25)
-					m_Str = 25;
-				else if (value > 100)
-					m_Str = 100;
+				if (value + m_Dex + m_Int + m_Const + m_Endur + m_Sag > m_MaxStats)
+					m_Str = m_MaxStats - (m_Dex + m_Int + m_Const + m_Endur + m_Sag);
+				else if (value < m_MinStat)
+					m_Str = m_MinStat;
+				else if (value > m_MaxStat)
+					m_Str = m_MaxStat;
 				else
 					m_Str = value;
 			}
@@ -71,12 +73,12 @@ namespace Server
 			get => m_Dex;
 			set
 			{
-				if (m_Str + value + m_Int > 225)
-					m_Dex = 225 - m_Str - m_Int;
-				else if (value < 25)
-					m_Dex = 25;
-				else if (value > 100)
-					m_Dex = 100;
+				if (value + m_Str + m_Int + m_Const + m_Endur + m_Sag > m_MaxStats)
+					m_Dex = m_MaxStats - (m_Str + m_Int + m_Const + m_Endur + m_Sag);
+				else if (value < m_MinStat)
+					m_Dex = m_MinStat;
+				else if (value > m_MaxStat)
+					m_Dex = m_MaxStat;
 				else
 					m_Dex = value;
 			}
@@ -87,25 +89,69 @@ namespace Server
 			get => m_Int;
 			set
 			{
-				if (m_Str + m_Dex + value > 225)
-					m_Int = 225 - m_Str - m_Dex;
-				else if (value < 25)
-					m_Int = 25;
-				else if (value > 100)
-					m_Int = 100;
+				if (value + m_Str + m_Dex + m_Const + m_Endur + m_Sag > m_MaxStats)
+					m_Int = m_MaxStats - (m_Str + m_Dex + m_Const + m_Endur + m_Sag);
+				else if (value < m_MinStat)
+					m_Int = m_MinStat;
+				else if (value > m_MaxStat)
+					m_Int = m_MaxStat;
 				else
 					m_Int = value;
 			}
 		}
 
+		public int Const
+		{
+			get => m_Const;
+			set
+			{
+				if (value + m_Str + m_Dex + m_Int + m_Endur + m_Sag > m_MaxStats)
+					m_Const = m_MaxStats - (m_Str + m_Dex + m_Int + m_Endur + m_Sag);
+				else if (value < m_MinStat)
+					m_Const = m_MinStat;
+				else if (value > m_MaxStat)
+					m_Const = m_MaxStat;
+				else
+					m_Const = value;
+			}
+		}
+
+		public int Endur
+		{
+			get => m_Endur;
+			set
+			{
+				if (value + m_Str + m_Dex + m_Int + m_Const + m_Sag > m_MaxStats)
+					m_Endur = m_MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Sag);
+				else if (value < m_MinStat)
+					m_Endur = m_MinStat;
+				else if (value > m_MaxStat)
+					m_Endur = m_MaxStat;
+				else
+					m_Endur = value;
+			}
+		}
+
+		public int Sag
+		{
+			get => m_Sag;
+			set
+			{
+				if (value + m_Str + m_Dex + m_Int + m_Const + m_Endur > m_MaxStats)
+					m_Sag = m_MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Endur);
+				else if (value < m_MinStat)
+					m_Sag = m_MinStat;
+				else if (value > m_MaxStat)
+					m_Sag = m_MaxStat;
+				else
+					m_Sag = value;
+			}
+		}
+
 		public string Name { get => m_Name; set => m_Name = value; }
-
 		public int Hue { get => m_Hue; set => m_Hue = value; }
-
 		public AppearanceEnum Appearance { get => m_Appearance; set => m_Appearance = value; }
-
 		public GrandeurEnum Grandeur { get => m_Grandeur; set => m_Grandeur = value; }
-
 		public CorpulenceEnum Grosseur { get => m_Grosseur; set => m_Grosseur = value; }
 
 		public bool Female
@@ -142,16 +188,6 @@ namespace Server
             
         }
 
-		public void ChangeClasse()
-		{		
-			m_Metier = (Classe)(-1);
-		}
-
-		public void ChangeMetier()
-		{
-		
-		}
-
 		public bool InfoGeneral()
 		{
 			if (m_Appearance == (AppearanceEnum)(-1) || m_Grandeur == (GrandeurEnum)(-1) || m_Grosseur == (CorpulenceEnum)(-1))
@@ -162,12 +198,17 @@ namespace Server
 				return true;
 		}
 
-		public bool Statistique()
+		public bool CheckStats()
 		{
-			if (m_Int + m_Dex + m_Str == 225)
+			if (m_Str + m_Dex + m_Int + m_Const + m_Endur + m_Sag == m_MaxStats)
 				return true;
 
 			return false;
+		}
+
+		public bool CheckSkills()
+		{
+			return m_Player.Skills.Sum(x => x.Value) == 150;
 		}
 
 		public string GetApparence()
@@ -211,10 +252,10 @@ namespace Server
 
 		public int GetPointsRestants()
 		{
-			return (225 - m_Str - m_Dex - m_Int);
+			return m_MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Endur + m_Sag);
 		}
 
-		public void Valide()
+		public void Validate()
         {
 			m_Player.BaseFemale = m_female;
 			m_Player.BaseRace = m_Race;
@@ -227,15 +268,18 @@ namespace Server
 			m_Player.BaseHue = m_Hue;
 
 			m_Player.InitStats(m_Str, m_Dex, m_Int);
+			m_Player.Attributs[Attribut.Constitution] = m_Const;
+			m_Player.Attributs[Attribut.Endurance] = m_Endur;
+			m_Player.Attributs[Attribut.Sagesse] = m_Sag;
 
 			m_Player.Classe = Classe.Aucune;
 
-			m_Player.AddToBackpack(new Gold(5000));
+			m_Player.AddToBackpack(new Gold(1000));
 
 			m_Player.MoveToWorld(new Point3D(1183, 3725, 37), Map.Felucca);
 			m_Player.Blessed = false;
-			Robe robe = new Robe();
 
+			Robe robe = new Robe();
 			m_Player.AddItem(robe);
 		}
     }

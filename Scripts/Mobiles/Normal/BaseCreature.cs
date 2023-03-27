@@ -7382,8 +7382,7 @@ namespace Server.Mobiles
         #region Detect Hidden
         private long _NextDetect;
 
-        public virtual bool CanDetectHidden => Controlled && Skills.DetectHidden.Value > 0;
-
+		public virtual bool CanDetectHidden => false; // Controlled && Skills.DetectHidden.Value > 0;
         public virtual int FindPlayerDelayBase => (15000 / Int);
         public virtual int FindPlayerDelayMax => 60;
         public virtual int FindPlayerDelayMin => 5;
@@ -7393,98 +7392,38 @@ namespace Server.Mobiles
 
 		public override int GetDetectionBonus(Mobile mobile)
 		{
-			int bonus = 0;
+			int bonus = base.GetDetectionBonus(mobile);
 
-			int tracking = base.GetDetectionBonus(mobile);
-			int Tactic = (int)Skills[SkillName.Tactics].Value;
+			double range = GetDistanceToSqrt(mobile.Location);
 
-			if (tracking > Tactic)
-			{
-				bonus = tracking;
-			}
-			else
-			{
-				bonus = Tactic;
-			}
-
-			double Range = GetDistanceToSqrt(mobile.Location);
-
-			if (Range >= 8)
-			{
+			if (range >= 8)
 				bonus -= 20;
-			}
-			else if (Range >= 6)
-			{
+			else if (range >= 6)
 				bonus -= 10;
-			}
-			else if (Range >= 4)
-			{
+			else if (range >= 4)
 				bonus += 5;
-			}
-			else if (Range >= 3)
-			{
-				bonus += 25;
-				
-			}
+			else if (range >= 2)
+				bonus += 10;
 
 			ComputeLightLevels(out int global, out int personal);
 
 			int lightLevel = global + personal;
 
 			if (lightLevel >= 20)
-			{
-				bonus -= 20;
-			}
-			else if (lightLevel >= 10)
-			{
-				//   bonus -= 0;
-			}
-			else
-			{
-				bonus += 20;
-			}
+				bonus -= 10;
+			else if (lightLevel < 10)
+				bonus += 10;
 
 			return bonus;
 		}
-
 
 		public override void Detection(Mobile mobile, int boni)
 		{
 			double Range = GetDistanceToSqrt(mobile.Location);
 
 			if (Range < 5)
-			{
 				base.Detection(mobile, boni);
-			}		
 		}
-
-
-		public virtual void TryFindPlayer()
-        {
-            if (Deleted || Map == null)
-            {
-                return;
-            }
-
-  /*          double srcSkill = Skills[SkillName.DetectHidden].Value;
-
-            if (srcSkill <= 0)
-            {
-                return;
-            }
-
-            DetectHidden.OnUse(this);
-
-            if (Target is DetectHidden.InternalTarget)
-            {
-                Target.Invoke(this, this);
-                DebugSay("Checking for hidden players");
-            }
-            else
-            {
-                DebugSay("Failed Checking for hidden players");
-            }*/
-        }
         #endregion
 
         public virtual void OnThink()
@@ -7571,8 +7510,6 @@ namespace Server.Mobiles
 
             if (CanDetectHidden && Core.TickCount >= _NextDetect)
             {
-                TryFindPlayer();
-
                 // Not exactly OSI style, approximation.
                 int delay = FindPlayerDelayBase;
 

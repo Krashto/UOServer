@@ -148,44 +148,16 @@ namespace Server.SkillHandlers
             if (ss <= 0)
                 return;
 
-          //  src.CheckSkill(SkillName.DetectHidden, 0); // Juste pour augmenter le skills - Va donc monter passivement a tout les 7 minutes.
+			src.CheckSkill(SkillName.Tracking, 0);
 
-            src.JetDetection(-10);
-
-            // Je laisse ca la, au cas ou... la detection d'items, j'ai retirer la dectection mobile, car elle va se faire autrement.
-
-            /*            IPooledEnumerable eable = src.Map.GeCustomPlayerMobilesInRange(src.Location, 4);
-
-                        if (eable == null)
-                            return;
-
-                        foreach (Mobile m in eable)
-                        {
-                            if (m == null || m == src || m is ShadowKnight || !CanDetect(src, m, false))
-                                continue;
-
-                            double ts = (m.Skills[SkillName.Hiding].Value + m.Skills[SkillName.Stealth].Value) / 2;
-
-                  /*          if (src.Race == Race.Elf)
-                                ss += 20;*/
-
-            /*             if (src.AccessLevel >= m.AccessLevel && Utility.Random(1000) < (ss - ts) + 1)
-                         {
-                             m.RevealingAction();
-                             m.SendLocalizedMessage(500814); // You have been revealed!
-                         }
-                     }
-
-                     eable.Free();*/
+			src.JetDetection(-10);
 
             IPooledEnumerable eable = src.Map.GetItemsInRange(src.Location, 8);
 
             foreach (Item item in eable)
             {
                 if (!item.Visible && item is IRevealableItem && ((IRevealableItem)item).CheckPassiveDetect(src))
-                {
                     src.SendLocalizedMessage(1153493); // Your keen senses detect something hidden in the area...
-                }
             }
 
             eable.Free();
@@ -193,43 +165,24 @@ namespace Server.SkillHandlers
 
         public static bool CanDetect(Mobile src, Mobile target, bool direct)
         {
-            if (src.Map == null || target.Map == null || !src.CanBeHarmful(target, false, false, true))
-            {
+            if (src.Map == null || target.Map == null || !src.CanBeHarmful(target, false, false, true) || CustomPlayerMobile.IsInEquipe(src, target))
                 return false;
-            }
 
-            // No invulnerable NPC's
             if (src.Blessed || (src is BaseCreature && ((BaseCreature)src).IsInvulnerable))
-            {
                 return false;
-            }
 
             if (target.Blessed || (target is BaseCreature && ((BaseCreature)target).IsInvulnerable))
-            {
                 return false;
-            }
-
-            //SpellHelper.CheckResponsible(ref src);
-            //SpellHelper.CheckResponsible(ref target);
-
-            //if (src.Map.Rules == MapRules.FeluccaRules && direct)
-            //{
-            //    return !SpellHelper.IsGuildAllyOrParty(src, target);
-            //}
 
             // pet owner, guild/alliance, party
             if (!SpellHelper.ValidIndirectTarget(target, src))
-            {
                 return false;
-            }
 
             // Checked aggressed/aggressors
-            if (src.Aggressed.Any(x => x.Defender == target) || src.Aggressors.Any(x => x.Attacker == target))
-            {
+            if (src.Aggressed.Any(x => x.Defender == target || x.Attacker == target))
                 return true;
-            }
 
-            return src.Map.Rules == MapRules.FeluccaRules;
+            return true;
         }
     }
 }

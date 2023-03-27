@@ -766,9 +766,7 @@ namespace Server
 			get
 			{
 				if (m_Race == null)
-				{
 					m_Race = Race.DefaultRace;
-				}
 
 				return m_Race;
 			}
@@ -779,23 +777,16 @@ namespace Server
 				m_Race = value;
 
 				if (m_Race == null)
-				{
 					m_Race = Race.DefaultRace;
-				}
-
-
 
 				Body = m_Race.Body(this);
 				UpdateResistances();
 
 				Delta(MobileDelta.Race);
 
-
-
 				oldRace.RemoveRace(this);
 
 				m_Race.AddRace(this);
-
 
 				OnRaceChange(oldRace);
 			}
@@ -847,9 +838,7 @@ namespace Server
 			ComputeBaseLightLevels(out global, out personal);
 
 			if (m_Region != null)
-			{
 				m_Region.AlterLightLevel(this, ref global, ref personal);
-			}
 		}
 
 		public virtual void ComputeBaseLightLevels(out int global, out int personal)
@@ -1031,9 +1020,7 @@ namespace Server
 		public virtual int GetMinResistance(ResistanceType type)
 		{
 			if (m_Player)
-			{
 				return m_MinPlayerResistance;
-			}
 
 			return -100;
 		}
@@ -1098,21 +1085,8 @@ namespace Server
 			var name = Name;
 
 			if (name == null)
-			{
 				name = String.Empty;
-			}
 
-			var prefix = ""; // still needs to be defined due to cliloc. Only defined in PlayerMobile. BaseCreature and BaseVendor require the suffix for the title and use the same cliloc.
-
-			var suffix = "";
-			/*
-						if (PropertyTitle && !String.IsNullOrEmpty(Title))
-						{
-							suffix = Title;
-						}
-
-						suffix = ApplyNameSuffix(suffix);
-			*/
 			list.Add(1050045, name); // ~1_PREFIX~~2_NAME~~3_SUFFIX~      
 		}
 
@@ -2875,18 +2849,7 @@ namespace Server
 		protected virtual bool OnMove(Direction d)
 		{
 			if (m_Hidden && m_AccessLevel == AccessLevel.Player)
-			{
 				JetDetection();
-
-			}
-
-			/*	if (m_Hidden && m_AccessLevel == AccessLevel.Player)
-				{
-					if (m_AllowedStealthSteps-- <= 0 || (d & Direction.Running) != 0 || Mounted)
-					{
-						RevealingAction();
-					}
-				}*/
 
 			return true;
 		}
@@ -2894,56 +2857,30 @@ namespace Server
 
 		public virtual void JetDetection(int bonus = 0)
 		{
-			foreach (Mobile m in this.GetMobilesInRange(10))
+			foreach (Mobile m in GetMobilesInRange(10))
 			{
 				bool cansee = m.CanSee(this);
 
 				if (m != this && m.AccessLevel == AccessLevel.Player && !cansee)
-				{
 					m.Detection(this, bonus);
-				}
-
-
 			}
-		}
-
-
-
-
-
-		public virtual void Detection(Mobile mobile)
-		{
-			Detection(mobile, 0);
 		}
 
 		public virtual void Detection(Mobile mobile, int boni)
 		{
 			int bonus = boni;  // donne 50% de chances de base a detecter la personne... le reste depends des bonus malus.
 
-
 			bonus += GetDetectionBonus(mobile);
 
 			bonus -= mobile.GetHideBonus();
 
-			int chance = Utility.Random(100);
-
-			if (bonus < 1)
-			{
-				bonus = 1;
-			}
-
-			if (chance < bonus)
-			{
+			if (Utility.Random(100) < bonus)
 				mobile.Reveal(this);
-			}
 		}
 
 		public virtual int GetHideBonus()
 		{
-			int bonus = (int)(Skills[SkillName.Hiding].Value);
-
-			return bonus;
-
+			return (int)Skills[SkillName.Hiding].Value;
 		}
 
 		public virtual int GetDetectionBonus(Mobile mobile)
@@ -2953,20 +2890,13 @@ namespace Server
 			double Range = GetDistanceToSqrt(mobile.Location);
 
 			if (Range >= 8)
-			{
 				bonus -= 20;
-			}
 			else if (Range >= 6)
-			{
 				bonus -= 10;
-			}
 			else if (Range >= 4)
-			{
 				bonus += 5;
-			}
 			else if (Range >= 3)
 			{
-			
 				Side side = GetSide(mobile);
 
 				switch (side)

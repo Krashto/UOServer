@@ -57,7 +57,7 @@ namespace Server
         {
             m.Hue = hue;
           
-            BaseRaceGumps skin = GetCorps(hue);
+            BaseRaceGumps skin = GetSkin(hue);
 
             Item Present = m.FindItemOnLayer(skin.Layer);
 
@@ -67,12 +67,12 @@ namespace Server
             m.EquipItem(skin);
         }
 
-		public virtual BaseRaceGumps GetCorps(Mobile m)
+		public virtual BaseRaceGumps GetSkin(Mobile m)
 		{
-			return GetCorps(m.Hue);
+			return GetSkin(m.Hue);
 		}
 
-		public virtual BaseRaceGumps GetCorps(int hue)
+		public virtual BaseRaceGumps GetSkin(int hue)
 		{
 			return (BaseRaceGumps)Activator.CreateInstance(typeof(BaseRaceGumps), 41509);
 		}
@@ -90,7 +90,7 @@ namespace Server
 
 		public override void RemoveRace(Mobile m)
         {
-            BaseRaceGumps baseGump = GetCorps(m);
+            BaseRaceGumps baseGump = GetSkin(m);
 
             Item itemEquip = m.FindItemOnLayer(baseGump.Layer);
 
@@ -103,7 +103,7 @@ namespace Server
             }          
         }
 
-        public virtual int GetGump(bool female, int hue)
+        public virtual int GetGumpId(bool female, int hue)
         {
 			int gumpid = 52090;
 
@@ -115,12 +115,13 @@ namespace Server
 
         public override void CheckGump(Mobile m)
         {       
-            BaseRaceGumps baseGump = GetCorps(m);
+            var bRaceGump = GetSkin(m);
+			var currentRaceGump = m.FindItemOnLayer(bRaceGump.Layer);
 
-            if (m.FindItemOnLayer(baseGump.Layer).GetType() != baseGump.GetType())
-                m.EquipItem(baseGump);
+			if (currentRaceGump.GetType() != bRaceGump.GetType())
+                m.EquipItem(bRaceGump);
 
-            baseGump.Delete();
+			currentRaceGump.Delete();
         }
 
         public override int ClipSkinHue(int hue)
@@ -149,24 +150,15 @@ namespace Server
 		{
 			switch (Utility.Random(9))
 			{
-				case 0:
-					return 0x203B;  //Short
-				case 1:
-					return 0x203C;  //Long
-				case 2:
-					return 0x203D;  //Pony Tail
-				case 3:
-					return 0x2044;  //Mohawk
-				case 4:
-					return 0x2045;  //Pageboy
-				case 5:
-					return 0x2047;  //Afro
-				case 6:
-					return 0x2049;  //Pig tails
-				case 7:
-					return 0x204A;  //Krisna
-				default:
-					return (female ? 0x2046 : 0x2048);  //Buns or Receeding Hair
+				case 0: return 0x203B;  //Short
+				case 1: return 0x203C;  //Long
+				case 2: return 0x203D;  //Pony Tail
+				case 3: return 0x2044;  //Mohawk
+				case 4: return 0x2045;  //Pageboy
+				case 5: return 0x2047;  //Afro
+				case 6: return 0x2049;  //Pig tails
+				case 7: return 0x204A;  //Krisna
+				default: return (female ? 0x2046 : 0x2048);  //Buns or Receeding Hair
 			}
 		}
 

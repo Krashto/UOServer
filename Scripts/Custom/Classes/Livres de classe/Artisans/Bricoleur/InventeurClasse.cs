@@ -27,14 +27,7 @@ namespace Server
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.Tailoring, 100),
                 new CSkills(SkillName.Tinkering, 100),
-                new CSkills(SkillName.Lumberjacking, 75),
-                new CSkills(SkillName.Mining, 75),
-                new CSkills(SkillName.ArmsLore, 40),
-                new CSkills(SkillName.Cooking, 40),
-                new CSkills(SkillName.Blacksmith, 40),
-                new CSkills(SkillName.ItemID, 30),
             };
 
 		public static ClasseInfo ClasseInfo = new ClasseInfo(

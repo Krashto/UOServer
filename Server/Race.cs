@@ -215,9 +215,7 @@ namespace Server
 			foreach (int item in SkinHues)
 			{
 				if (item == Hue)
-				{
 					break;
-				}
 
 				n++;
 			}
@@ -225,13 +223,9 @@ namespace Server
 			n++;
 
 			if (n >= SkinHues.Length)
-			{
 				n = 0;
-			}
 
 			return SkinHues[n];
-
-			// Sert principalement à rotater sur le hue.
 		}
 
 		public abstract int ClipSkinHue(int hue);
@@ -240,9 +234,7 @@ namespace Server
 			int hue = 1002;
 
 			if (SkinHues.Length > 0)
-			{
 				hue = SkinHues[Utility.Random(0, SkinHues.Length)];
-			}
 
 			return hue;
 		}
@@ -256,9 +248,7 @@ namespace Server
 		public virtual int Body(Mobile m)
 		{
 			if (m.Alive)
-			{
 				return AliveBody(m.Female);
-			}
 
 			return GhostBody(m.Female);
 		}
@@ -305,9 +295,6 @@ namespace Server
 
 		}
 
-
-
-
 		public int RaceID => m_RaceID;
 
 		public int RaceIndex => m_RaceIndex;
@@ -316,23 +303,12 @@ namespace Server
 
 		public string PluralName { get; set; }
 
-
-
 		public virtual int[] SkinHues => new int[] { 1023 };
-
-		//   public virtual Type Skin => null;
-
-	//	public virtual List<Type> RaceGump => new List<Type>();
 
 		public virtual bool StaticHue => false;
 
 		public virtual bool FemmeBarbe => false;
 
 		public virtual bool Barbe => true;
-
-		public static implicit operator Race(string v)
-		{
-			throw new NotImplementedException();
-		}
 	}
 }

@@ -27,9 +27,7 @@ namespace Server
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.Archery, 35),
-                new CSkills(SkillName.Tactics, 35),
-                new CSkills(SkillName.Anatomy, 10)
+                new CSkills(SkillName.Archery, 50),
             };
 
 		public static ClasseInfo ClasseInfo = new ClasseInfo(
