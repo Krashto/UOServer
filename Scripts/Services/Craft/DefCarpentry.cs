@@ -454,7 +454,7 @@ namespace Server.Engines.Craft
 			CanEnhance = true;
 			CanAlter = true;
 
-			SetSubRes(typeof(RegularBoard), 1072643);
+			SetSubRes(typeof(PlainoisBoard), "Plainois");
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
