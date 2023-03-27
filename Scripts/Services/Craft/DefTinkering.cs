@@ -4,6 +4,7 @@ using Server.Targeting;
 using System;
 using Server.Services.BasketWeaving.Baskets;
 using Xanthos.ShrinkSystem;
+using System.Security.Policy;
 
 namespace Server.Engines.Craft
 {
@@ -107,7 +108,7 @@ namespace Server.Engines.Craft
 			typeof(HeatingStand), typeof(BroadcastCrystal), typeof(TerMurStyleCandelabra),
 			typeof(GorgonLense), typeof(MedusaLightScales), typeof(MedusaDarkScales), typeof(RedScales),
 			typeof(BlueScales), typeof(BlackScales), typeof(GreenScales), typeof(YellowScales), typeof(WhiteScales),
-			typeof(PlantPigment), typeof(Kindling), typeof(DryReeds), typeof(PlantClippings), 
+			typeof(PlantPigment), typeof(Kindling), typeof(DryReeds), typeof(PlantClippings), typeof(Bracelet1), typeof(Earrings1), typeof(Ring1), typeof(Necklace1),
 
 			typeof(KotlAutomatonHead)
 		};
@@ -162,68 +163,52 @@ namespace Server.Engines.Craft
 			}
 		}
 
-		public void AddJewelrySet(GemType gemType, Type itemType)
-		{
-			int offset = (int)gemType - 1;
-
-			int index = index = AddCraft(typeof(GoldRing), "Bijoux", 1044176 + offset, 40.0, 90.0, typeof(GoldIngot), 1044036, 2, 1044037);
-			AddRes(index, itemType, 1044231 + offset, 1, 1044240);
-			index = index = AddCraft(typeof(SilverBeadNecklace), "Bijoux", 1044185 + offset, 40.0, 90.0, typeof(IronIngot), 1044036, 2, 1044037);
-			AddRes(index, itemType, 1044231 + offset, 1, 1044240);
-			index = index = AddCraft(typeof(GoldNecklace), "Bijoux", 1044194 + offset, 40.0, 90.0, typeof(GoldIngot), 1044036, 2, 1044037);
-			AddRes(index, itemType, 1044231 + offset, 1, 1044240);
-			index = index = AddCraft(typeof(GoldEarrings), "Bijoux", 1044203 + offset, 40.0, 90.0, typeof(GoldIngot), 1044036, 2, 1044037);
-			AddRes(index, itemType, 1044231 + offset, 1, 1044240);
-			index = index = AddCraft(typeof(GoldBeadNecklace), "Bijoux", 1044212 + offset, 40.0, 90.0, typeof(GoldIngot), 1044036, 2, 1044037);
-			AddRes(index, itemType, 1044231 + offset, 1, 1044240);
-			index = index = AddCraft(typeof(GoldBracelet), "Bijoux", 1044221 + offset, 40.0, 90.0, typeof(GoldIngot), 1044036, 2, 1044037);
-			AddRes(index, itemType, 1044231 + offset, 1, 1044240);
+		
 
 
 
-		}
+		
 
 		public override void InitCraftList()
 		{
 			int index = -1;
 
 			#region Outils
-			//index = AddCraft(typeof(Recycleur), "Outils", "Le Recycleur", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Scissors), "Outils", "Ciseaux", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
-			//index = AddCraft(typeof(KitTatou), "Outils", "Kit à Tatouages", 5.0, 55.0, typeof(KitTatou), 1044036, 2, 1044037);
-			//index = AddCraft(typeof(TatouDye), "Outils", "Teinture à Tatouages", 5.0, 55.0, typeof(KitTatou), 1044036, 2, 1044037);
 			index = AddCraft(typeof(EmptyAleBottle), "Outils", "Bouteille de Bière Vide", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(SewingKit), "Outils", "Kit de couture", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(BoneSewingKit), "Outils", "Kit de couture (Os)", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(Pitchfork), "Outils", "Fourche", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
+			index = AddCraft(typeof(LeatherSewingKit), "Outils", "Kit de couture (Cuir)", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+
+		//	index = AddCraft(typeof(Pitchfork), "Outils", "Fourche", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Hatchet), "Outils", "Hachette", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Shovel), "Outils", "Pelle", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Pickaxe), "Outils", "Pioche", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(TinkerTools), "Outils", "Trousse de Bricolage", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(Tongs), "Outils", "Pince", 35.0, 85.0, typeof(IronIngot), 1044036, 1, 1044037);
+		//	index = AddCraft(typeof(Tongs), "Outils", "Pince", 35.0, 85.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(SmithyHammer), "Outils", "Marteau de forgeron", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(SledgeHammerWeapon), "Outils", "Maillet de forgeron", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
+		//	index = AddCraft(typeof(SledgeHammerWeapon), "Outils", "Maillet de forgeron", 40.0, 90.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Saw), "Outils", "Scie", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(Hammer), "Outils", "Marteau", 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
-			index = AddCraft(typeof(DovetailSaw), "Outils", "Scie dentelée", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(JointingPlane), "Outils", "Rabot joint", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
-			index = AddCraft(typeof(MouldingPlane), "Outils", "Rabot moulage", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
-			index = AddCraft(typeof(SmoothingPlane), "Outils", "Rabot lissage", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
-			index = AddCraft(typeof(Scorp), "Outils", "Scorp", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(DrawKnife), "Outils", "Couteau à bois", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(Hammer), "Outils", "Marteau", 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
+		//	index = AddCraft(typeof(DovetailSaw), "Outils", "Scie dentelée", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
+		//	index = AddCraft(typeof(JointingPlane), "Outils", "Rabot joint", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
+		//	index = AddCraft(typeof(MouldingPlane), "Outils", "Rabot moulage", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
+		//	index = AddCraft(typeof(SmoothingPlane), "Outils", "Rabot lissage", 0.0, 50.0, typeof(RegularBoard), 1044041, 4, 1044351);
+		//	index = AddCraft(typeof(Scorp), "Outils", "Scorp", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(DrawKnife), "Outils", "Couteau à bois", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(RollingPin), "Outils", "Rouleau à pâte", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Skillet), "Outils", "Poêlon", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(FlourSifter), "Outils", "Tamis à farine", 50.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(Froe), "Outils", "Froe", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(Froe), "Outils", "Froe", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(MortarPestle), "Outils", "Mortier et pilon", 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
 			//index = AddCraft(typeof(WaxCraftingPot), "Outils", "Fabrication Cire", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(FletcherTools), "Outils", "Outil fabrication d'arc", 35.0, 85.0, typeof(IronIngot), 1044036, 3, 1044037);
 			//index = AddCraft(typeof(MapmakersPen), "Outils", "Plume cartographe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(ScribesPen), "Outils", "Plume scribe", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(Lockpick), "Outils", "Crochets", 45.0, 95.0, typeof(IronIngot), 1044036, 1, 1044037);
-			index = AddCraft(typeof(Blowpipe), "Outils", "Pipe à Verre", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(MalletAndChisel), "Outils", "Maillet", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(Pinceaux), "Outils", "Pinceaux", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(Blowpipe), "Outils", "Pipe à Verre", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(MalletAndChisel), "Outils", "Maillet", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
+		//	index = AddCraft(typeof(Pinceaux), "Outils", "Pinceaux", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(BarberScissors), "Outils", "Ciseaux de Barbier", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Ecraseur), "Outils", "Écraseur pour Coquillages", 10.0, 70.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(FoodPlate), "Outils", "Plat de Nourriture", 10.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
@@ -237,53 +222,173 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(VinyardLabelMaker), "Outils", "Marqueur de vin", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(WinecraftersTools), "Outils", "Outil fabrication de vin", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
 			//index = AddCraft(typeof(WitchsBookofFoodCrafts), "Outils", "Livre de recette enchantées", 30.0, 70.0, typeof(Board), 1044041, 5, 1044351);
-			index = AddCraft(typeof(TaxidermyKit), "Outils", "Outil de Taxidermie", 80.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
+			//index = AddCraft(typeof(TaxidermyKit), "Outils", "Outil de Taxidermie", 80.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
 
-		//	index = AddCraft(typeof(RuneChisel), "Outils", "Ciseau runique", 85.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
+			//	index = AddCraft(typeof(RuneChisel), "Outils", "Ciseau runique", 85.0, 110.0, typeof(IronIngot), 1044036, 5, 1044037);
 
 
 
 
 			#endregion
 
-			#region Jewelry
-			index = AddCraft(typeof(GoldRing), "Bijoux", "Anneau", 65.0, 100.0, typeof(GoldIngot), 1044036, 3, 1044037);
-			   index = AddCraft(typeof(GoldBracelet), "Bijoux", "Bracelet", 55.0, 100.0, typeof(GoldIngot), 1044036, 3, 1044037);
-			  index = AddCraft(typeof(Necklace), "Bijoux", "Collier à perles", 60.0, 100.0, typeof(IronIngot), 1044036, 3, 1044037);
-			  
-
-			AddJewelrySet(GemType.StarSapphire, typeof(StarSapphire));
-			AddJewelrySet(GemType.Emerald, typeof(Emerald));
-			AddJewelrySet(GemType.Sapphire, typeof(Sapphire));
-			AddJewelrySet(GemType.Ruby, typeof(Ruby));
-			AddJewelrySet(GemType.Citrine, typeof(Citrine));
-			AddJewelrySet(GemType.Amethyst, typeof(Amethyst));
-			AddJewelrySet(GemType.Tourmaline, typeof(Tourmaline));
-			AddJewelrySet(GemType.Amber, typeof(Amber));
-			AddJewelrySet(GemType.Diamond, typeof(Diamond));
-
 	
-			index = AddCraft(typeof(Collier), "Bijoux", "Collier massif doré", 49.2, 69.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier2), "Bijoux", "Collier croix Ânkh", 49.8, 69.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier3), "Bijoux", "Collier bolo doré", 74.6, 94.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier4), "Bijoux", "Grande chaîne dorée", 60.1, 80.1, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier5), "Bijoux", "Collier croix Ânkh doré", 63.4, 83.4, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier6), "Bijoux", "Petit collier Usekh", 81.2, 101.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier7), "Bijoux", "Petit collier doré", 90.2, 110.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier8), "Bijoux", "Collier de feuilles dorées", 68.8, 88.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier9), "Bijoux", "Collier de perle", 74.6, 94.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier10), "Bijoux", "Collier simple avec pendentif", 96.8, 116.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier11), "Bijoux", "Collier simple", 71.7, 91.7, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Collier12), "Bijoux", "Grand collier doré avec pendentif", 65.6, 85.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Couronne2), "Bijoux", "Petite couronne", 87.2, 107.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Couronne3), "Bijoux", "Diadème", 74.5, 94.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Couronne4), "Bijoux", "Grande couronne", 96.0, 116.0, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Lunettes), "Bijoux", "Lunette dorée", 86.9, 106.9, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Tiare), "Bijoux", "Tiare", 50.9, 70.9, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(Ceinture10), "Bijoux", "Ceinture de feuilles dorées", 72.5, 92.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(DiademeFeuilleOr), "Bijoux", "Collier doré avec pendentif", 85.0, 105.5, typeof(GoldIngot), "lingots d'or", 3, "Vous n'avez pas assez de lingots.");
-			index = AddCraft(typeof(EpauletteDoree), "Bijoux", "Grand collier Usekh", 85.0, 105.5, typeof(GoldIngot), "lingots d'or", 5, "Vous n'avez pas assez de lingots.");
-		//	index = AddCraft(typeof(MenotteDoree), "Bijoux", "Menotte dorée", 85.0, 105.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			#region Anneaux
+			AddCraft(typeof(Ring1), "Anneaux", "Anneau", 40.0, 55.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti d'ambre", 45.0, 60.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Amber), "Ambre", 1, "Vous n'avez pas assez d'ambre pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti de citrine", 47.0, 62.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Citrine), "Citrine", 1, "Vous n'avez pas assez de citrine pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti d'améthyste", 50.0, 65.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Amethyst), "Améthyste", 1, "Vous n'avez pas assez d'améthyste pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti de tourmaline", 55.0, 70.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Tourmaline), "Tourmaline", 1, "Vous n'avez pas assez de tourmaline pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti d'émeraude", 60.0, 75.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Emerald), "Émeraude", 1, "Vous n'avez pas assez d'émeraude pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti de saphir", 65.0, 80.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Sapphire), "Saphir", 1, "Vous n'avez pas assez de saphir pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti de rubis", 69.0, 84.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Ruby), "Rubis", 1, "Vous n'avez pas assez de rubis pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti de saphir étoilé", 72.0, 87.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(StarSapphire), "Saphir étoilé", 1, "Vous n'avez pas assez de saphir étoilé pour fabriquer cet anneau.");
+
+			index = AddCraft(typeof(Ring1), "Anneaux", "Anneau serti de diamant", 75.0, 90.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
+			AddRes(index, typeof(Diamond), "Diamant", 1, "Vous n'avez pas assez de diamant pour fabriquer cet anneau.");
+			#endregion
+
+			#region Colliers
+			AddCraft(typeof(Necklace1), "Colliers", "Collier", 50.0, 70.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti d'ambre", 55.0, 70.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Amber), "Ambre", 1, "Vous n'avez pas assez d'ambre pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti de citrine", 57.0, 72.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Citrine), "Citrine", 1, "Vous n'avez pas assez de citrine pour fabriquer ce collier.");
+
+		
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti d'améthyste", 61.0, 76.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Amethyst), "Améthyste", 1, "Vous n'avez pas assez d'améthyste pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti de tourmaline", 63.0, 78.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Tourmaline), "Tourmaline", 1, "Vous n'avez pas assez de tourmaline pour fabriquer ce collier.");
+
+			
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti d'émeraude", 66.0, 81.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Emerald), "Émeraude", 1, "Vous n'avez pas assez d'émeraude pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti de saphir", 69.0, 84.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Sapphire), "Saphir", 1, "Vous n'avez pas assez de saphir pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti de rubis", 71.0, 86.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Ruby), "Rubis", 1, "Vous n'avez pas assez de rubis pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti de saphir étoilé", 73.0, 88.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(StarSapphire), "Saphir étoilé", 1, "Vous n'avez pas assez de saphir étoilé pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Necklace1), "Colliers", "Collier serti de diamant", 75.0, 90.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce collier.");
+			AddRes(index, typeof(Diamond), "Diamant", 1, "Vous n'avez pas assez de diamant pour fabriquer ce collier.");
+
+			index = AddCraft(typeof(Collier), "Colliers", "Collier massif doré", 49.2, 69.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier2), "Colliers", "Collier croix Ânkh", 49.8, 69.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier3), "Colliers", "Collier bolo doré", 74.6, 94.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier4), "Colliers", "Grande chaîne dorée", 60.1, 80.1, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier5), "Colliers", "Collier croix Ânkh doré", 63.4, 83.4, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier6), "Colliers", "Petit collier Usekh", 81.2, 101.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier7), "Colliers", "Petit collier doré", 90.2, 110.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier8), "Colliers", "Collier de feuilles dorées", 68.8, 88.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier9), "Colliers", "Collier de perle", 74.6, 94.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier10), "Colliers", "Collier simple avec pendentif", 96.8, 116.8, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier11), "Colliers", "Collier simple", 71.7, 91.7, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Collier12), "Colliers", "Grand collier doré avec pendentif", 65.6, 85.6, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(DiademeFeuilleOr), "Colliers", "Collier doré avec pendentif", 85.0, 105.5, typeof(GoldIngot), "lingots d'or", 3, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(EpauletteDoree), "Colliers", "Grand collier Usekh", 85.0, 105.5, typeof(GoldIngot), "lingots d'or", 5, "Vous n'avez pas assez de lingots.");
+
+
+
+
+
+			#endregion
+
+			#region Bracelets
+			AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet", 45.0, 60.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti d'ambre", 50.0, 65.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Amber), "Ambre", 1, "Vous n'avez pas assez d'ambre pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti de citrine", 52.0, 67.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Citrine), "Citrine", 1, "Vous n'avez pas assez de citrine pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti d'améthyste", 55.0, 70.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Amethyst), "Améthyste", 1, "Vous n'avez pas assez d'améthyste pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti de tourmaline", 60.0, 75.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Tourmaline), "Tourmaline", 1, "Vous n'avez pas assez de tourmaline pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti d'émeraude", 63.0, 78.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Emerald), "Émeraude", 1, "Vous n'avez pas assez d'émeraude pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti de saphir", 66.0, 81.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Sapphire), "Saphir", 1, "Vous n'avez pas assez de saphir pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti de rubis", 69.0, 84.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Ruby), "Rubis", 1, "Vous n'avez pas assez de rubis pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti de saphir étoilé", 72.0, 87.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(StarSapphire), "Saphir étoilé", 1, "Vous n'avez pas assez de saphir étoilé pour fabriquer ce bracelet.");
+
+			index = AddCraft(typeof(Bracelet1), "Bracelets", "Bracelet serti de diamant", 75.0, 90.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ce bracelet.");
+			AddRes(index, typeof(Diamond), "Diamant", 1, "Vous n'avez pas assez de diamant pour fabriquer ce bracelet.");
+
+			
+			#endregion
+
+			#region Boucles d'oreilles
+			AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles", 50.0, 70.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti d'ambre", 55.0, 70.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Amber), "Ambre", 1, "Vous n'avez pas assez d'ambre pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti de citrine", 57.0, 72.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Citrine), "Citrine", 1, "Vous n'avez pas assez de citrine pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti d'améthyste", 60.0, 75.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Amethyst), "Améthyste", 1, "Vous n'avez pas assez d'améthyste pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti de tourmaline", 63.0, 78.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Tourmaline), "Tourmaline", 1, "Vous n'avez pas assez de tourmaline pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti d'émeraude", 66.0, 81.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Emerald), "Émeraude", 1, "Vous n'avez pas assez d'émeraude pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti de saphir", 69.0, 84.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Sapphire), "Saphir", 1, "Vous n'avez pas assez de saphir pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti de rubis", 71.0, 86.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Ruby), "Rubis", 1, "Vous n'avez pas assez de rubis pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti de saphir étoilé", 73.0, 88.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(StarSapphire), "Saphir étoilé", 1, "Vous n'avez pas assez de saphir étoilé pour fabriquer ces boucles d'oreilles.");
+
+			index = AddCraft(typeof(Earrings1), "Boucles d'oreilles", "Boucles d'oreilles serti de diamant", 75.0, 90.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer ces boucles d'oreilles.");
+			AddRes(index, typeof(Diamond), "Diamant", 1, "Vous n'avez pas assez de diamant pour fabriquer ces boucles d'oreilles.");
+
+			#endregion
+
+			#region Bijoux Divers
+			index = AddCraft(typeof(Couronne2), "Bijoux Divers", "Petite couronne", 87.2, 107.2, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Couronne3), "Bijoux Divers", "Diadème", 74.5, 94.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Couronne4), "Bijoux Divers", "Grande couronne", 96.0, 116.0, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Lunettes), "Bijoux Divers", "Lunette dorée", 86.9, 106.9, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Tiare), "Bijoux Divers", "Tiare", 50.9, 70.9, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(Ceinture10), "Bijoux Divers", "Ceinture de feuilles dorées", 72.5, 92.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
+			index = AddCraft(typeof(MenotteDoree), "Bijoux Divers", "Menotte dorée", 85.0, 105.5, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
 			#endregion
 
 			
@@ -332,10 +437,7 @@ namespace Server.Engines.Craft
 			*/
 			#endregion
 
-			//	index = AddCraft(typeof(RollingPinExp), "Outils", "Rouleau à pâte avancé", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-			//	index = AddCraft(typeof(SkilletExp), "Outils", "Poelon Avancé", 30.0, 70.0, typeof(IronIngot), 1044036, 2, 1044037);
-
-			//TODO: focus of theurgy - 20th Anniversary Event 
+		
 
 			#region Pièces d'assemblages
 			index = AddCraft(typeof(Gears), "Pièces d'assemblages", "Engrenages", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
@@ -350,11 +452,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(SextantParts), "Pièces d'assemblages", "Pièce de sextant", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(BarrelHoops), "Pièces d'assemblages", "Anneaux de baril", -15.0, 35.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Hinge), "Pièces d'assemblages", "Charnière", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(BolaBall), "Pièces d'assemblages", "Balle de Bola", 45.0, 95.0, typeof(IronIngot), 1044036, 10, 1044037);
 			index = AddCraft(typeof(Axle), "Pièces d'assemblages", "Essieu", -25.0, 25.0, typeof(RegularBoard), 1044041, 2, 1044351);
-			index = AddCraft(typeof(JeweledFiligree), "Pièces d'assemblages", "Engrenages", 70.0, 110.0, typeof(IronIngot), 1044036, 2, 1044037);
-			AddRes(index, typeof(StarSapphire), 1044231, 1, 1044253);
-			AddRes(index, typeof(Ruby), 1044234, 1, 1044253);
+		
 			#endregion
 
 			#region Assemblages
@@ -512,19 +611,16 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(KeyRing), "Divers", "Anneau à clés", 10.0, 60.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Key), "Divers", "Clé", 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(DyeTub), "Divers", "Bac de Teinture", 35.0, 65.0, typeof(RegularBoard), 1044041, 5, 1044351);
-			//index = AddCraft(typeof(RecallRune), "Divers", "Rune Vierge", 35.0, 65.0, typeof(Board), 1044041, 1, 1044351);
 			index = AddCraft(typeof(Scales), "Divers", "Balance", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Globe), "Divers", "Globe terrestre", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Spyglass), "Divers", "Longue vue", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Fouet4), "Divers", "Fouet 4 mètres", 50.0, 70.0, typeof(PlainoisLeather), 1044462, 3, 1044463);
 			index = AddCraft(typeof(Fouet6), "Divers", "Fouet 6 mètres", 65.0, 85.0, typeof(PlainoisLeather), 1044462, 4, 1044463);
 			index = AddCraft(typeof(Fouet8), "Divers", "Fouet 8 mètres", 85.0, 105.0, typeof(PlainoisLeather), 1044462, 5, 1044463);
-			//index = AddCraft(typeof(ToileVierge), "Divers", "Toile Vierge", 30.0, 50.0, typeof(Board), 1044041, 5, 1044351);
-			index = AddCraft(typeof(CopperWire), "Divers", "Fil de fer", 30.0, 60.0, typeof(IronIngot), "Lingot de fer", 2, 1044037);
+			index = AddCraft(typeof(IronWire), "Divers", "Fil de fer", 30.0, 60.0, typeof(IronIngot), "Lingot de fer", 2, 1044037);
 			index = AddCraft(typeof(CopperWire), "Divers", "Fil de cuivre", 30.0, 60.0, typeof(CopperIngot), "Lingot de cuivre", 2, 1044037);
 			index = AddCraft(typeof(SilverWire), "Divers", "Fil d'argent", 50.0, 90.0, typeof(IronIngot), "Lingot de fer", 2, 1044037);
 			index = AddCraft(typeof(GoldWire), "Divers", "Fil d'or", 70.0, 110.0, typeof(GoldIngot), "Lingot d'or", 2, 1044037);
-			index = AddCraft(typeof(MetalKeg), "Divers", "Tonnelet en métal", 85.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(Lunettes1), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Lunettes2), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Lunettes3), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
@@ -645,122 +741,56 @@ namespace Server.Engines.Craft
 		*/
 			#endregion
 
-	//		#region Traps
-	//		// Dart Trap
-	//		index = index = AddCraft(typeof(DartTrapCraft), 1044052, 1024396, 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
-	//		AddRes(index, typeof(Bolt), 1044570, 1, 1044253);
-
-	//		// Poison Trap
-	//		index = index = AddCraft(typeof(PoisonTrapCraft), 1044052, 1044593, 30.0, 80.0, typeof(IronIngot), 1044036, 1, 1044037);
-	//		AddRes(index, typeof(BasePoisonPotion), 1044571, 1, 1044253);
-
-			// Explosion Trap
-	//		index = index = AddCraft(typeof(ExplosionTrapCraft), 1044052, 1044597, 55.0, 105.0, typeof(IronIngot), 1044036, 1, 1044037);
-	//		AddRes(index, typeof(BaseExplosionPotion), 1044569, 1, 1044253);
-	//		#endregion
-
-			/*      #region Magic Jewlery
-				  index = index = AddCraft(typeof(BrilliantAmberBracelet), 1073107, 1073453, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Amber), 1062607, 20, 1044240);
-				  AddRes(index, typeof(BrilliantAmber), 1032697, 10, 1044240);
-
-				  index = index = AddCraft(typeof(FireRubyBracelet), 1073107, 1073454, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Ruby), 1062603, 20, 1044240);
-				  AddRes(index, typeof(FireRuby), 1032695, 10, 1044240);
-
-				  index = index = AddCraft(typeof(DarkSapphireBracelet), 1073107, 1073455, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Sapphire), 1062602, 20, 1044240);
-				  AddRes(index, typeof(DarkSapphire), 1032690, 10, 1044240);
-
-				  index = index = AddCraft(typeof(WhitePearlBracelet), 1073107, 1073456, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Tourmaline), 1062606, 20, 1044240);
-				  AddRes(index, typeof(WhitePearl), 1032694, 10, 1044240);
-
-				  index = index = AddCraft(typeof(EcruCitrineRing), 1073107, 1073457, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Citrine), 1062604, 20, 1044240);
-				  AddRes(index, typeof(EcruCitrine), 1032693, 10, 1044240);
-
-				  index = index = AddCraft(typeof(BlueDiamondRing), 1073107, 1073458, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Diamond), 1062608, 20, 1044240);
-				  AddRes(index, typeof(BlueDiamond), 1032696, 10, 1044240);
-
-				  index = index = AddCraft(typeof(PerfectEmeraldRing), 1073107, 1073459, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Emerald), 1062601, 20, 1044240);
-				  AddRes(index, typeof(PerfectEmerald), 1032692, 10, 1044240);
-
-				  index = index = AddCraft(typeof(TurqouiseRing), 1073107, 1073460, 75.0, 125.0, typeof(IronIngot), 1044036, 5, 1044037);
-				  AddRes(index, typeof(Amethyst), 1062605, 20, 1044240);
-				  AddRes(index, typeof(Turquoise), 1032691, 10, 1044240);
-
-				  index = index = AddCraft(typeof(ResilientBracer), 1073107, 1072933, 100.0, 125.0, typeof(IronIngot), 1044036, 2, 1044037);
-				  SetMinSkillOffset(index, 25.0);
-				  AddRes(index, typeof(CapturedEssence), 1032686, 1, 1044253);
-				  AddRes(index, typeof(BlueDiamond), 1032696, 10, 1044253);
-				  AddRes(index, typeof(Diamond), 1062608, 50, 1044253);
-				  AddRecipe(index, (int)TinkerRecipes.ResilientBracer);
-				  ForceNonExceptional(index);
-
-				  index = index = AddCraft(typeof(EssenceOfBattle), 1073107, 1072935, 100.0, 125.0, typeof(IronIngot), 1044036, 2, 1044037);
-				  SetMinSkillOffset(index, 25.0);
-				  AddRes(index, typeof(CapturedEssence), 1032686, 1, 1044253);
-				  AddRes(index, typeof(FireRuby), 1032695, 10, 1044253);
-				  AddRes(index, typeof(Ruby), 1062603, 50, 1044253);
-				  AddRecipe(index, (int)TinkerRecipes.EssenceOfBattle);
-				  ForceNonExceptional(index);
-
-
-				  index = index = AddCraft(typeof(PendantOfTheMagi), 1073107, 1072937, 100.0, 125.0, typeof(IronIngot), 1044036, 2, 1044037);
-				  SetMinSkillOffset(index, 25.0);
-				  AddRes(index, typeof(EyeOfTheTravesty), 1032685, 1, 1044253);
-				  AddRes(index, typeof(WhitePearl), 1032694, 5, 1044253);
-				  AddRes(index, typeof(StarSapphire), 1062600, 50, 1044253);
-				  AddRecipe(index, (int)TinkerRecipes.PendantOfTheMagi);
-				  ForceNonExceptional(index);
-
-				  index = index = AddCraft(typeof(DrSpectorsLenses), 1073107, 1156991, 100.0, 580.0, typeof(IronIngot), 1044036, 20, 1044037);
-				  SetMinSkillOffset(index, 25.0);
-				  AddRes(index, typeof(BlackrockMoonstone), 1156993, 1, 1156992);
-				  AddRes(index, typeof(HatOfTheMagi), 1061597, 1, 1044253);
-				  AddRecipe(index, (int)TinkerRecipes.DrSpectorLenses);
-				  ForceNonExceptional(index);
-
-				  index = index = AddCraft(typeof(BraceletOfPrimalConsumption), 1073107, 1157350, 100.0, 580.0, typeof(IronIngot), 1044036, 3, 1044037);
-				  SetMinSkillOffset(index, 25.0);
-				  AddRes(index, typeof(RingOfTheElements), 1061104, 1, 1044253);
-				  AddRes(index, typeof(BloodOfTheDarkFather), 1157343, 5, 1044253);
-				  AddRes(index, typeof(WhitePearl), 1032694, 4, 1044240);
-				  AddRecipe(index, (int)TinkerRecipes.BraceletOfPrimalConsumption);
-				  ForceNonExceptional(index);
-				  #endregion
-	  */
+	
+	  
 			// Set the overridable material
 			SetSubRes(typeof(IronIngot), 1044022);
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(IronIngot), 1044022, 00.0, 1044036, 1044269);
-			AddSubRes(typeof(DullCopperIngot), 1044023, 65.0, 1044036, 1044269);
-			AddSubRes(typeof(ShadowIronIngot), 1044024, 70.0, 1044036, 1044269);
-			AddSubRes(typeof(CopperIngot), 1044025, 75.0, 1044036, 1044269);
-			AddSubRes(typeof(BronzeIngot), 1044026, 80.0, 1044036, 1044269);
-			AddSubRes(typeof(GoldIngot), 1044027, 85.0, 1044036, 1044269);
-			AddSubRes(typeof(AgapiteIngot), 1044028, 90.0, 1044036, 1044269);
-			AddSubRes(typeof(VeriteIngot), 1044029, 95.0, 1044036, 1044269);
-			AddSubRes(typeof(ValoriteIngot), 1044030, 99.0, 1044036, 1044269);
-			AddSubRes(typeof(MytherilIngot), "Mytheril", 90.0, 1044269);
+			AddSubRes(typeof(IronIngot), "Fer", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BronzeIngot), "Bronze", 15, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(CopperIngot), "Copper", 15, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(SonneIngot), "Sonne", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ArgentIngot), "Argent", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BorealeIngot), "Boréale", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ChrysteliarIngot), "Chrysteliar", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GlaciasIngot), "Glacias", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LithiarIngot), "Lithiar", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AcierIngot), "Acier", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DurianIngot), "Durian", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(EquilibrumIngot), "Équilibrum", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GoldIngot), "Or", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JolinarIngot), "Jolinar", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JusticiumIngot), "Justicium", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AbyssiumIngot), "Abyssium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BloodiriumIngot), "Bloodirium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(HerbrositeIngot), "Herbrosite", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(KhandariumIngot), "Khandarium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(MytherilIngot), "Mytheril", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(SombralirIngot), "Sombralir", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DraconyrIngot), "Draconyr", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(HeptazionIngot), "Heptazion", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(OceanisIngot), "Océanis", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BraziumIngot), "Brazium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LuneriumIngot), "Lunerium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(MarinarIngot), "Marinar", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 90, "Vous n'avez pas les compétences requises pour forger ce métal.");
 
 
 			SetSubRes2(typeof(RegularBoard), 1072643);
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes2(typeof(RegularBoard), 1072643, 0.0, 1044041, 1072653);
-			AddSubRes2(typeof(OakBoard), 1072644, 65.0, 1044041, 1072653);
-			AddSubRes2(typeof(AshBoard), 1072645, 75.0, 1044041, 1072653);
-			AddSubRes2(typeof(YewBoard), 1072646, 85.0, 1044041, 1072653);
-			AddSubRes2(typeof(HeartwoodBoard), 1072647, 95.0, 1044041, 1072653);
-			AddSubRes2(typeof(BloodwoodBoard), 1072648, 95.0, 1044041, 1072653);
-			AddSubRes2(typeof(FrostwoodBoard), 1072649, 95.0, 1044041, 1072653);
+			AddSubRes2(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
+			AddSubRes2(typeof(ForestierBoard), "Forestier", 10.0, "Vous ne savez pas travailler le bois Forestier");
+			AddSubRes2(typeof(DesertiqueBoard), "Desertique", 20.0, "Vous ne savez pas travailler le bois Desertique");
+			AddSubRes2(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
+			AddSubRes2(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
+			AddSubRes2(typeof(ToundroisBoard), "Toundrois", 50.0, "Vous ne savez pas travailler le bois Toundrois");
+			AddSubRes2(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
+			AddSubRes2(typeof(MontagnardBoard), "Montagnard", 70.0, "Vous ne savez pas travailler le bois Montagnard");
+			AddSubRes2(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
 
 			MarkOption = true;
 			Repair = true;

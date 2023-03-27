@@ -498,16 +498,16 @@ namespace Server.Engines.Craft
 
 			#region "Divers"
 			
-			AddCraft(typeof(AnvilEastDeed), "Divers", "Enclume (Est)", 52.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddRes(index, typeof(IronIngot), 1044036, 200, 1044037);
-			AddCraft(typeof(AnvilSouthDeed), "Divers", "Enclume (Sud)", 52.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddRes(index, typeof(IronIngot), 1044036, 200, 1044037);
-			AddCraft(typeof(SmallForgeDeed), "Divers", "Petite Forge", 52.0, 100.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddRes(index, typeof(IronIngot), 1044036, 200, 1044037);
-			AddCraft(typeof(LargeForgeEastDeed), "Divers", "Grande Forge (Est)", 72.0, 120.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddRes(index, typeof(IronIngot), 1044036, 250, 1044037);
-			AddCraft(typeof(LargeForgeSouthDeed), "Divers", "Grande Forge (Sud)", 72.0, 120.0, typeof(IronIngot), 1044036, 5, 1044037);
-			AddRes(index, typeof(IronIngot), 1044036, 250, 1044037);
+			AddCraft(typeof(AnvilEastDeed), "Divers", "Enclume (Est)", 52.0, 100.0, typeof(IronIngot), 1044036, 150, 1044037);
+			
+			AddCraft(typeof(AnvilSouthDeed), "Divers", "Enclume (Sud)", 52.0, 100.0, typeof(IronIngot), 1044036, 150, 1044037);
+			
+			AddCraft(typeof(SmallForgeDeed), "Divers", "Petite Forge", 52.0, 100.0, typeof(IronIngot), 1044036, 150, 1044037);
+			
+			AddCraft(typeof(LargeForgeEastDeed), "Divers", "Grande Forge (Est)", 72.0, 120.0, typeof(IronIngot), 1044036, 200, 1044037);
+			
+			AddCraft(typeof(LargeForgeSouthDeed), "Divers", "Grande Forge (Sud)", 72.0, 120.0, typeof(IronIngot), 1044036, 200, 1044037);
+			
 			#endregion
 
 			#region Alliages
@@ -533,18 +533,17 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(BorealeIngot), "Lingot de Boréale", 2, "You do not have enough boreale ingot to make that.");
 			AddRes(index, typeof(JolinarIngot), "Lingot de Jolinar", 1, "You do not have enough jolinar ingot to make that.");
 		
-
-			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingot de Brazium", 80, 120, typeof(BloodiriumIngot), "Lingot de Bloodirium", 3, "You do not have enough bloodirium ingots to make that.");
+			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingot de Brazium", 80, 110, typeof(BloodiriumIngot), "Lingot de Bloodirium", 3, "You do not have enough bloodirium ingots to make that.");
 			
-			index = AddCraft(typeof(LuneriumIngot), "Alliages", "Lingot de Lunérium", 80, 120, typeof(HerbrositeIngot), "Lingot de Herbrosite", 3, "You do not have enough herbrosite ingots to make that.");
+			index = AddCraft(typeof(LuneriumIngot), "Alliages", "Lingot de Lunérium", 80, 110, typeof(HerbrositeIngot), "Lingot de Herbrosite", 3, "You do not have enough herbrosite ingots to make that.");
 			AddRes(index, typeof(HeptazionIngot), "Lingot d'Heptazion", 1, "You do not have enough heptazion ingot to make that.");
 
-			index = AddCraft(typeof(MarinarIngot), "Alliages", "Lingot de Marinar", 80, 120, typeof(IronIngot), "Lingot de Maritium", 3, "You do not have enough maritium ingots to make that.");
+			index = AddCraft(typeof(MarinarIngot), "Alliages", "Lingot de Marinar", 80, 110, typeof(IronIngot), "Lingot de Maritium", 3, "You do not have enough maritium ingots to make that.");
 			AddRes(index, typeof(MytherilIngot), "Lingot de Mytheril", 3, "You do not have enough mytheril ingot to make that.");
 			AddRes(index, typeof(DraconyrIngot), "Lingot de Draconyr", 1, "You do not have enough draconyr ingot to make that.");
 			AddRes(index, typeof(OceanisIngot), "Lingot d'Océanis", 1, "You do not have enough oceanis ingot to make that.");
 
-			index = AddCraft(typeof(NostalgiumIngot), "Alliages", "Lingots de Nostalgium (1)", 80, 130, typeof(BraziumIngot), "Lingot de Brazium", 3, "You do not have enough brazium ingots to make that.");
+			index = AddCraft(typeof(NostalgiumIngot), "Alliages", "Lingots de Nostalgium", 90, 120, typeof(BraziumIngot), "Lingot de Brazium", 3, "You do not have enough brazium ingots to make that.");
 			AddRes(index, typeof(LuneriumIngot), "Lingot de Lunérium", 3, "You do not have enough lunerium ingot to make that.");
 			AddRes(index, typeof(MarinarIngot), "Lingot de Marinar", 3, "You do not have enough marinar ingot to make that.");
 

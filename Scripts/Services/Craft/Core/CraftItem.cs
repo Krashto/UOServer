@@ -1439,6 +1439,13 @@ namespace Server.Engines.Craft
 				typeof(BoneLegs)
 			};
 
+		private static Type[] m_UseWoods = new Type[]
+			{
+				typeof(Bow),
+				typeof(Crossbow)
+				
+			};
+
 		private static Type[] m_UseIngots = new Type[]
 			{
 				typeof(RingmailArms),
@@ -1520,6 +1527,30 @@ namespace Server.Engines.Craft
 					case "MontagnardBone": skill += 40.0; break;
 					case "AncienBone": skill += 45.0; break;
 					
+				}
+
+				return skill;
+			}
+
+			contains = false;
+
+			for (int i = 0; !contains && i < m_UseWoods.Length; ++i)
+				contains = (ItemType == m_UseBones[i]);
+
+			if (contains)
+			{
+				switch (name)
+				{
+					case "PlainoisBoard": skill += 0.0; break;
+					case "ForestierBoard": skill += 10.0; break;
+					case "DesertiqueBoard": skill += 15.0; break;
+					case "CollinoisBoard": skill += 20.0; break;
+					case "SavanoisBoard": skill += 25.0; break;
+					case "ToundroisBoard": skill += 30.0; break;
+					case "TropicauxBoard": skill += 35.0; break;
+					case "MontagnardBoard": skill += 40.0; break;
+					case "AncienBoard": skill += 45.0; break;
+
 				}
 
 				return skill;

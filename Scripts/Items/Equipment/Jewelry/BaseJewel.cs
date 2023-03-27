@@ -1,5 +1,7 @@
+using Server;
 using Server.ContextMenus;
 using Server.Engines.Craft;
+using Server.Items;
 using Server.Misc;
 
 using System;
@@ -33,9 +35,10 @@ namespace Server.Items
         private NegativeAttributes m_NegativeAttributes;
         private CraftResource m_Resource;
         private GemType m_GemType;
+		
 
-        #region Stygian Abyss
-        private int m_TimesImbued;
+		#region Stygian Abyss
+		private int m_TimesImbued;
         private bool m_IsImbued;
         private int m_GorgonLenseCharges;
         private LenseType m_GorgonLenseType;
@@ -74,7 +77,11 @@ namespace Server.Items
             set { _Owner = value; if (_Owner != null) _OwnerName = _Owner.Name; InvalidateProperties(); }
         }
 
-        public virtual string OwnerName
+		
+
+		
+
+		public virtual string OwnerName
         {
             get { return _OwnerName; }
             set { _OwnerName = value; InvalidateProperties(); }
@@ -234,21 +241,24 @@ namespace Server.Items
             }
         }
 
-        [CommandProperty(AccessLevel.GameMaster)]
-        public CraftResource Resource
-        {
-            get
-            {
-                return m_Resource;
-            }
-            set
-            {
-                m_Resource = value;
-                Hue = CraftResources.GetHue(m_Resource);
-            }
-        }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public CraftResource Resource
+{
+	get { return m_Resource; }
+	set
+	{
+		if (value == CraftResource.Iron || value == CraftResource.Argent || value == CraftResource.Gold)
+		{
+			m_Resource = value;
+		}
 
-        [CommandProperty(AccessLevel.GameMaster)]
+		ItemID = ComputeItemID();
+
+		InvalidateProperties();
+	}
+}
+
+[CommandProperty(AccessLevel.GameMaster)]
         public GemType GemType
         {
             get
@@ -340,9 +350,12 @@ namespace Server.Items
         public override int ColdResistance => m_AosResistances.Cold;
         public override int PoisonResistance => m_AosResistances.Poison;
         public override int EnergyResistance => m_AosResistances.Energy;
-        public virtual int BaseGemTypeNumber => 0;
-
-        public virtual int InitMinHits => 0;
+		public virtual int BaseGemTypeNumber { get { return 0; } }
+		public virtual int ComputeItemID()
+		{
+			return this.ItemID;
+		}
+		public virtual int InitMinHits => 0;
         public virtual int InitMaxHits => 0;
 
         public override int LabelNumber
@@ -648,9 +661,12 @@ namespace Server.Items
         {
         }
 
-        public override void AddNameProperty(ObjectPropertyList list)
-        {
-            if (m_ReforgedPrefix != ReforgedPrefix.None || m_ReforgedSuffix != ReforgedSuffix.None)
+	
+		public override void AddNameProperty(ObjectPropertyList list)
+		{
+			
+		
+			if (m_ReforgedPrefix != ReforgedPrefix.None || m_ReforgedSuffix != ReforgedSuffix.None)
             {
                 if (m_ReforgedPrefix != ReforgedPrefix.None)
                 {
@@ -695,7 +711,9 @@ namespace Server.Items
 
             if (IsImbued)
                 list.Add(1080418); // (Imbued)
-        }
+
+			
+		}
 
         public override void AddWeightProperty(ObjectPropertyList list)
         {
