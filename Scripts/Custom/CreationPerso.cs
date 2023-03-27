@@ -180,6 +180,10 @@ namespace Server
 				skill.Cap = 50;
 				skill.SetLockNoRelay(SkillLock.Locked);
 			}
+
+			m_Player.Aptitudes.Reset();
+			m_Player.Classe = Classe.Aucune;
+			m_Player.Race.RemoveRace(m_Player);
 		}
     
         public void ChangeRace()
@@ -266,7 +270,7 @@ namespace Server
         {
 			m_Player.BaseFemale = m_female;
 			m_Player.BaseRace = m_Race;
-			m_Player.Race.RemoveRace(m_Player);	
+			m_Player.Race.RemoveRace(m_Player);
 			Race.AddRace(m_Player, m_Hue);
 			m_Player.Name = m_Name;
 			m_Player.Beaute = m_Appearance;

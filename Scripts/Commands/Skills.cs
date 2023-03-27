@@ -89,9 +89,12 @@ namespace Server.Commands
                     Server.Skills skills = targ.Skills;
 
                     for (int i = 0; i < skills.Length; ++i)
-                        skills[i].Base = m_Value;
+					{
+						if (Server.Skills.IsActive(skills[i].SkillName))
+							skills[i].Base = m_Value;
+					}
 
-                    CommandLogging.LogChangeProperty(from, targ, "EverySkill.Base", m_Value.ToString());
+					CommandLogging.LogChangeProperty(from, targ, "EverySkill.Base", m_Value.ToString());
                 }
                 else
                 {

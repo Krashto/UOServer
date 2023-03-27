@@ -26,7 +26,7 @@ namespace Server.Gumps
 
 			foreach(var skill in skills)
 			{
-				if (!IsIncluded(skill.SkillName))
+				if (!Skills.IsActive(skill.SkillName))
 					continue;
 
 				if (count != 0 && count % 20 == 0)
@@ -39,22 +39,12 @@ namespace Server.Gumps
 				AddLabel(x + 200 + column * columnSpace, y + lineSpace * line, 2101, ":");
 				if (skill.Base > 0)
 					AddButton(x + 220 + column * columnSpace, y + lineSpace * line + 2, 5603, 5607, 100 + skill.SkillID, GumpButtonType.Reply, 0);
-				AddLabel(x + 245 + column * columnSpace, y + lineSpace * line, 2101, skill.Value.ToString());
+				AddLabel(x + 245 + column * columnSpace, y + lineSpace * line, 2101, skill.Base.ToString());
 				if (skill.Base < 50 && m_from.SkillsTotal < 1500) //En dixième de pourcent
 					AddButton(x + 270 + column * columnSpace, y + lineSpace * line + 2, 5601, 5605, 200 + skill.SkillID, GumpButtonType.Reply, 0);
 				line++;
 				count++;
 			}
-		}
-
-		public bool IsIncluded(SkillName skillName)
-		{
-			return skillName == SkillName.Alchemy || skillName == SkillName.Anatomy || skillName == SkillName.AnimalTaming || skillName == SkillName.Archery || skillName == SkillName.Blacksmith
-				 || skillName == SkillName.Camping || skillName == SkillName.Cooking || skillName == SkillName.EvalInt || skillName == SkillName.Fencing || skillName == SkillName.Fishing || skillName == SkillName.Healing
-				 || skillName == SkillName.Hiding || skillName == SkillName.Inscribe || skillName == SkillName.Lumberjacking || skillName == SkillName.Macing || skillName == SkillName.Magery
-				 || skillName == SkillName.MagicResist || skillName == SkillName.Meditation || skillName == SkillName.Mining || skillName == SkillName.Musicianship || skillName == SkillName.Necromancy
-				 || skillName == SkillName.Parry || skillName == SkillName.Poisoning || skillName == SkillName.Snooping || skillName == SkillName.SpiritSpeak || skillName == SkillName.Swords || skillName == SkillName.Tactics
-				 || skillName == SkillName.Tailoring || skillName == SkillName.Tinkering || skillName == SkillName.Tracking || skillName == SkillName.Wrestling;
 		}
 
 		public override void OnResponse(NetState sender, RelayInfo info)
