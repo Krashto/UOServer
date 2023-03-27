@@ -21,7 +21,7 @@ namespace Server.Items
 
 		[Constructable]
         public Percemurs()
-            : base(41551) 
+            : base(41552)  
         {
             Weight = 7.0;
             Layer = Layer.TwoHanded;
@@ -66,7 +66,7 @@ namespace Server.Items
 		public override int InitMaxHits => 80;
 		[Constructable]
 		public Arbavive()
-			: base(41552) 
+			: base(41551) 
 		{
 			Weight = 7.0;
 			Layer = Layer.TwoHanded;

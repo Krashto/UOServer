@@ -129,8 +129,8 @@ namespace Server.Engines.Craft
 
 
 
-			index = AddCraft(typeof(Blancorde), "Arc", "Blancorde", 10.0, 40.0, typeof(PlainoisLog), 1044041, 10, 1044351);
-			index = AddCraft(typeof(Glaciale), "Arc", "Glaciale", 10.0, 40.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Blancorde), "Arcs", "Blancorde", 10.0, 40.0, typeof(PlainoisLog), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Glaciale), "Arcs", "Glaciale", 10.0, 40.0, typeof(PlainoisLog), 1044041, 10, 1044351);
 			index = AddCraft(typeof(Bow), "Arcs", "Arc simple", 10.0, 40.0, typeof(PlainoisLog), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Legarc), "Arcs", "Legarc", 15.0, 45.0, typeof(PlainoisLog), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Tarkarc), "Arcs", "Arc court renforcit", 15.0, 45.0, typeof(PlainoisLog), 1044041, 7, 1044351);
@@ -166,7 +166,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(ArbaletteRepetition), "Arbalètes", "Arbalète à Répétition", 70.0, 100.0, typeof(PlainoisLog), 1044041, 8, 1044351);
 			index = AddCraft(typeof(ArbaletteLourde), "Arbalètes", "Arbalète à Méchanisme", 70.0, 100.0, typeof(PlainoisLog), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Percemurs), "Arbalètes", "Percemurs", 80.0, 110.0, typeof(PlainoisLog), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Arbavive), "Arbalètess", "Arbavive", 80.0, 110.0, typeof(PlainoisLog), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Arbavive), "Arbalètes", "Arbavive", 80.0, 110.0, typeof(PlainoisLog), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Lumitrait), "Arbalètes", "Lumitrait", 85.0, 115.0, typeof(PlainoisLog), 1044041, 10, 1044351);
 
 
