@@ -899,6 +899,8 @@ namespace Server.Mobiles
             list = new List<BuyItemState>(buyInfo.Length);
             Container cont = BuyPack;
 
+			var scalar = 1 - (from.Skills[SkillName.Snooping].Value * 0.002);
+
             List<ObjectPropertyList> opls = null;
 
             for (int idx = 0; idx < buyInfo.Length; idx++)
@@ -924,7 +926,7 @@ namespace Server.Mobiles
                         buyItem.Name,
                         cont.Serial,
                         disp == null ? (Serial)0x7FC0FFEE : disp.Serial,
-                        buyItem.Price,
+                        (int)(buyItem.Price * scalar),
                         buyItem.Amount,
                         buyItem.ItemID,
                         buyItem.Hue));
@@ -986,7 +988,7 @@ namespace Server.Mobiles
 
                 if (name != null && list.Count < 250)
                 {
-                    list.Add(new BuyItemState(name, cont.Serial, item.Serial, price, item.Amount, item.ItemID, item.Hue));
+                    list.Add(new BuyItemState(name, cont.Serial, item.Serial, (int)(price * scalar), item.Amount, item.ItemID, item.Hue));
                     count++;
 
                     if (opls == null)
@@ -1134,9 +1136,11 @@ namespace Server.Mobiles
                             continue;
                         }
 
+						var scalar = 1 + (from.Skills[SkillName.Snooping].Value * 0.002);
+
                         if (item.IsStandardLoot() && item.Movable && ssi.IsSellable(item))
                         {
-                            table[item] = new SellItemState(item, ssi.GetSellPriceFor(item, this), ssi.GetNameFor(item));
+                            table[item] = new SellItemState(item, (int)(ssi.GetSellPriceFor(item, this) * scalar), ssi.GetNameFor(item));
                         }
                     }
                 }
