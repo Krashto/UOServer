@@ -2,37 +2,43 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a gremlin corpse")]
+    [CorpseName("Le Corps d'un Gremlin")]
     public class Gremlin : BaseCreature
     {
         [Constructable]
         public Gremlin()
             : base(AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a gremlin";
+            Name = "un Gremlin";
             Body = 724;
 
-            SetStr(106);
-            SetDex(130);
-            SetInt(36);
+			SetStr(173, 269);
+			SetDex(115, 192);
+			SetInt(96, 154);
 
-            SetHits(70);
+			SetHits(165, 251);
 
-            SetDamage(5, 7);
+			SetDamage(23, 39);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 26);
-            SetResistance(ResistanceType.Fire, 36);
-            SetResistance(ResistanceType.Cold, 22);
-            SetResistance(ResistanceType.Poison, 17);
-            SetResistance(ResistanceType.Energy, 30);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.Anatomy, 78.5);
-            SetSkill(SkillName.MagicResist, 82.5);
-            SetSkill(SkillName.Tactics, 65.3);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            AddItem(new Bow());
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+			AddItem(new Bow());
         }
 
         public Gremlin(Serial serial)

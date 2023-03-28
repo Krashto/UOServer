@@ -2,42 +2,45 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a goblin corpse")]
+    [CorpseName("Le Corps d'un Goblin")]
     public class GreenGoblin : BaseCreature
     {
         [Constructable]
         public GreenGoblin()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a green goblin";
+            Name = "un Goblin Vert";
             Body = 723;
             BaseSoundID = 0x600;
 
-            SetStr(252, 343);
-            SetDex(60, 74);
-            SetInt(117, 148);
+			SetStr(124, 192);
+			SetDex(83, 137);
+			SetInt(69, 109);
 
-            SetHits(162, 208);
-            SetStam(60, 74);
-            SetMana(117, 148);
+			SetHits(118, 179);
 
-            SetDamage(5, 7);
+			SetDamage(17, 28);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 50);
+			SetDamageType(ResistanceType.Cold, 50);
 
-            SetResistance(ResistanceType.Physical, 40, 50);
-            SetResistance(ResistanceType.Fire, 30, 39);
-            SetResistance(ResistanceType.Cold, 27, 35);
-            SetResistance(ResistanceType.Poison, 11, 20);
-            SetResistance(ResistanceType.Energy, 10, 20);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 120.5, 128.8);
-            SetSkill(SkillName.Tactics, 80.9, 89.9);
-            SetSkill(SkillName.Anatomy, 83.1, 89.6);
-            SetSkill(SkillName.Wrestling, 93.0, 108.3);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 1500;
-            Karma = -1500;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+	//		Fame = 1500;
+    //        Karma = -1500;
         }
 
         public GreenGoblin(Serial serial)

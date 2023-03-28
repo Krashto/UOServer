@@ -1,38 +1,44 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a grizzly bear corpse")]
+    [CorpseName("Le corps d'un Grizzly")]
     public class GrizzlyBear : BaseCreature
     {
         [Constructable]
         public GrizzlyBear()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a grizzly bear";
+            Name = "Un Grizzly";
             Body = 212;
             BaseSoundID = 0xA3;
 
-            SetStr(126, 155);
-            SetDex(81, 105);
-            SetInt(16, 40);
+			SetStr(173, 269);
+			SetDex(115, 192);
+			SetInt(96, 154);
 
-            SetHits(76, 93);
-            SetMana(0);
+			SetHits(165, 251);
 
-            SetDamage(8, 13);
+			SetDamage(23, 39);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 25, 35);
-            SetResistance(ResistanceType.Cold, 15, 25);
-            SetResistance(ResistanceType.Poison, 5, 10);
-            SetResistance(ResistanceType.Energy, 5, 10);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 25.1, 40.0);
-            SetSkill(SkillName.Tactics, 70.1, 100.0);
-            SetSkill(SkillName.Wrestling, 45.1, 70.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 1000;
-            Karma = 0;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+		//	Fame = 1000;
+        //    Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;

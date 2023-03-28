@@ -4,47 +4,49 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an orcish corpse")]
-    public class OrcBomber : BaseCreature
+	[CorpseName("Le Corps d'un Orc")]
+	public class OrcBomber : BaseCreature
     {
         private DateTime m_NextBomb;
         private int m_Thrown;
         [Constructable]
         public OrcBomber()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
-        {
+            : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+		{
             Body = 182;
 
-            Name = "an orc bomber";
+            Name = "Un Orc Bombardier";
             BaseSoundID = 0x45A;
 
-            SetStr(147, 215);
-            SetDex(91, 115);
-            SetInt(61, 85);
+			SetStr(229, 408);
+			SetDex(151, 253);
+			SetInt(126, 203);
 
-            SetHits(95, 123);
+			SetHits(452, 687);
 
-            SetDamage(1, 8);
+			SetDamage(34, 58);
 
-            SetDamageType(ResistanceType.Physical, 75);
-            SetDamageType(ResistanceType.Fire, 25);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 25, 35);
-            SetResistance(ResistanceType.Fire, 30, 40);
-            SetResistance(ResistanceType.Cold, 15, 25);
-            SetResistance(ResistanceType.Poison, 15, 20);
-            SetResistance(ResistanceType.Energy, 25, 30);
+			SetResistance(ResistanceType.Physical, 50, 60);
+			SetResistance(ResistanceType.Fire, 50, 60);
+			SetResistance(ResistanceType.Cold, 50, 60);
+			SetResistance(ResistanceType.Poison, 50, 60);
+			SetResistance(ResistanceType.Energy, 50, 60);
 
-            SetSkill(SkillName.MagicResist, 70.1, 85.0);
-            SetSkill(SkillName.Swords, 60.1, 85.0);
-            SetSkill(SkillName.Tactics, 75.1, 90.0);
-            SetSkill(SkillName.Wrestling, 60.1, 85.0);
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
 
-            Fame = 2500;
-            Karma = -2500;
-        }
 
-        public OrcBomber(Serial serial)
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
+
+		}
+
+		public OrcBomber(Serial serial)
             : base(serial)
         {
         }
