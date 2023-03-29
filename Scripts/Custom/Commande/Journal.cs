@@ -126,7 +126,7 @@ namespace JournalCommand
 		private CustomPlayerMobile m_From;
 		private List<JournalEntry> m_JournalEntries;
 
-		public CJournalAddArticleGump(CustomPlayerMobile from, List<JournalEntry> journalEntries, string path) : base("Journal de Colognan", 400, 400, false)
+		public CJournalAddArticleGump(CustomPlayerMobile from, List<JournalEntry> journalEntries, string path) : base("Journal de Colognan", 400, 500, false)
 		{
 			m_From = from;
 			m_JournalEntries = journalEntries;
@@ -138,10 +138,13 @@ namespace JournalCommand
 			AddHtml(30, 20, 340, 20, "<CENTER><BIG>Journal de Colognan</BIG></CENTER>", false, false);
 
 			AddTextEntry(100, 80, 350, 20, 33, 10, "Titre");
-			AddTextEntry(120, 100, 350, 300, 33, 11, "Corps de texte");
+			AddTextEntry(120, 100, 350, 120, 33, 11, "Paragraphe 1");
+			AddTextEntry(120, 220, 350, 120, 33, 12, "Paragraphe 2");
+			AddTextEntry(120, 340, 350, 120, 33, 13, "Paragraphe 3");
+			AddTextEntry(120, 460, 350, 120, 33, 14, "Paragraphe 4");
 
-			AddButton(100, 450, 2117, 2118, 1, GumpButtonType.Reply, 0);
-			AddLabel(120, 450, 0x480, "Ajouter l'article au journal");
+			AddButton(100, 580, 2117, 2118, 1, GumpButtonType.Reply, 0);
+			AddLabel(120, 580, 0x480, "Ajouter l'article au journal");
 		}
 
 		public override void OnResponse(Server.Network.NetState sender, RelayInfo info)
@@ -149,7 +152,33 @@ namespace JournalCommand
 			if (info.ButtonID == 1)
 			{
 				var title = info.GetTextEntry(10).Text;
-				var content = info.GetTextEntry(11).Text;
+				var parag1 = info.GetTextEntry(11).Text;
+				var parag2 = info.GetTextEntry(12).Text;
+				var parag3 = info.GetTextEntry(13).Text;
+				var parag4 = info.GetTextEntry(14).Text;
+
+				var content = string.Empty;
+				if (!string.IsNullOrEmpty(parag1))
+				{
+					content += $"{parag1}";
+					if (!string.IsNullOrEmpty(parag2) || !string.IsNullOrEmpty(parag3) || !string.IsNullOrEmpty(parag4))
+						content += "\n\r";
+				}
+				if (!string.IsNullOrEmpty(parag2))
+				{
+					content += $"{parag2}";
+					if (!string.IsNullOrEmpty(parag3) || !string.IsNullOrEmpty(parag4))
+						content += "\n\r";
+				}
+				if (!string.IsNullOrEmpty(parag3))
+				{
+					content += $"{parag3}";
+					if (!string.IsNullOrEmpty(parag4))
+						content += "\n\r";
+				}
+				if (!string.IsNullOrEmpty(parag3))
+					content += $"{parag4}";
+
 				var newEntry = new JournalEntry(m_From.Name, title, content, DateTime.Now, true);
 
 				m_JournalEntries.Add(newEntry);
