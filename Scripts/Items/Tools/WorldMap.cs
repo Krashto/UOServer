@@ -11,7 +11,7 @@ namespace Server.Items
             LootType = LootType.Blessed;
             Hue = 483;
 
-            SetDisplay(0, 0, 5119, 4095, 200, 200);
+			SetDisplay(256, 104, 1900, 1740, 600, 600);
         }
 
         public NavigatorsWorldMap(Serial serial)
@@ -36,8 +36,8 @@ namespace Server.Items
         [Constructable]
         public WorldMap()
         {
-            SetDisplay(0, 0, 5119, 4095, 400, 400);
-        }
+			SetDisplay(256, 104, 1900, 1740, 600, 600);
+		}
 
         public override void CraftInit(Mobile from)
         {
