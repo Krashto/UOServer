@@ -100,18 +100,17 @@ namespace Server.Mobiles
 				this.Add(new GenericBuyInfo("Tea Seed", typeof(TeaSeed), 1, 20, 0xF27, 0));
 				this.Add(new GenericBuyInfo("VanillaSeed", typeof(VanillaSeed), 1, 20, 0xF27, 0));
 
-
 			//	this.Add(new GenericBuyInfo("Pommier", typeof(AppleSapling), 1, 20, 0xF27, 0));
 			//	this.Add(new GenericBuyInfo("Pêcher", typeof(PeachSapling), 1, 20, 0xF27, 0));
 			//	this.Add(new GenericBuyInfo("Poirier", typeof(PearSapling), 1, 20, 0xF27, 0));
 
-				this.Add(new GenericBuyInfo("Chili Pepper Seed", typeof(ChiliPepperSeed), 1, 20, 0xF27, 0));
-				this.Add(new GenericBuyInfo("Cucumber Seed", typeof(CucumberSeed), 1, 20, 0xF27, 0));
-				this.Add(new GenericBuyInfo("Green Pepper Seed", typeof(GreenPepperSeed), 1, 20, 0xF27, 0));
-				this.Add(new GenericBuyInfo("Orange Pepper Seed", typeof(OrangePepperSeed), 1, 20, 0xF27, 0));
-				this.Add(new GenericBuyInfo("Red Pepper Seed", typeof(RedPepperSeed), 1, 20, 0xF27, 0));
-				this.Add(new GenericBuyInfo("Tomato Seed", typeof(TomatoSeed), 1, 20, 0xF27, 0));
-				this.Add(new GenericBuyInfo("Yellow Pepper Seed", typeof(YellowPepperSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Chili Pepper Seed", typeof(ChiliPepperSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Cucumber Seed", typeof(CucumberSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Green Pepper Seed", typeof(GreenPepperSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Orange Pepper Seed", typeof(OrangePepperSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Red Pepper Seed", typeof(RedPepperSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Tomato Seed", typeof(TomatoSeed), 1, 20, 0xF27, 0));
+				//this.Add(new GenericBuyInfo("Yellow Pepper Seed", typeof(YellowPepperSeed), 1, 20, 0xF27, 0));
 
 				this.Add(new GenericBuyInfo("Cantaloupe Seed", typeof(CantaloupeSeed), 1, 20, 0xF27, 0));
 				this.Add(new GenericBuyInfo("Green Squash Seed", typeof(GreenSquashSeed), 1, 20, 0xF27, 0));

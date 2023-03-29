@@ -45,7 +45,7 @@ namespace Server.Mobiles
             this.AddItem(new Sandals());
             this.AddItem(new LeatherSkirt());
             this.AddItem(new FemaleLeatherChest());
-			if (Utility.RandomDouble() < .25 ) PackItem( new Boline() );
+			//if (Utility.RandomDouble() < .25 ) PackItem( new Boline() );
 		}
 
 		public override void GenerateLoot()

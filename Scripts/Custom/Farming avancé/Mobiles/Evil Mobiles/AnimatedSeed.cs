@@ -83,7 +83,7 @@ namespace Server.Mobiles
 					case  21: itemloot = new PeanutSeed(); break;
 					case  22: itemloot = new PotatoSeed(); break;
 					case  23: itemloot = new RadishSeed(); break;
-					case  24: itemloot = new TomatoSeed(); break;
+					//case  24: itemloot = new TomatoSeed(); break;
 					case  25: itemloot = new SquashSeed(); break;
 					case  26: itemloot = new RedRoseSeed(); break;
 					case  27: itemloot = new GinsengSeed(); break;
@@ -98,7 +98,7 @@ namespace Server.Mobiles
 					case  36: itemloot = new BroccoliSeed(); break;
 					case  37: itemloot = new EggplantSeed(); break;
 					case  38: itemloot = new SnowPeasSeed(); break;
-					case  39: itemloot = new CucumberSeed(); break;
+					//case  39: itemloot = new CucumberSeed(); break;
 					case  40: itemloot = new CranberrySeed(); break;
 					case  41: itemloot = new PineappleSeed(); break;
 					case  42: itemloot = new IrishRoseSeed(); break;
@@ -114,7 +114,7 @@ namespace Server.Mobiles
 					case  52: itemloot = new MiniPeachSeed(); break;
 					case  53: itemloot = new AsparagusSeed(); break;
 					case  54: itemloot = new GreenBeanSeed(); break;
-					case  55: itemloot = new RedPepperSeed(); break;
+					//case  55: itemloot = new RedPepperSeed(); break;
 					case  56: itemloot = new BlackberrySeed(); break;
 					case  57: itemloot = new SnapdragonSeed(); break;
 					case  58: itemloot = new SpiritRoseSeed(); break;
@@ -133,13 +133,13 @@ namespace Server.Mobiles
 					case  71: itemloot = new SmallBananaSeed(); break;
 					case  72: itemloot = new CauliflowerSeed(); break;
 					case  73: itemloot = new SweetPotatoSeed(); break;
-					case  74: itemloot = new ChiliPepperSeed(); break;
-					case  75: itemloot = new GreenPepperSeed(); break;
+					//case  74: itemloot = new ChiliPepperSeed(); break;
+					//case  75: itemloot = new GreenPepperSeed(); break;
 					case  76: itemloot = new GreenSquashSeed(); break;
 					case  77: itemloot = new RedRaspberrySeed(); break;
 					case  78: itemloot = new MiniPistacioSeed(); break;
-					case  79: itemloot = new OrangePepperSeed(); break;
-					case  80: itemloot = new YellowPepperSeed(); break;
+					//case  79: itemloot = new OrangePepperSeed(); break;
+					//case  80: itemloot = new YellowPepperSeed(); break;
 					case  81: itemloot = new PinkCarnationSeed(); break;
 					case  82: itemloot = new HoneydewMelonSeed(); break;
 					case  83: itemloot = new BlackRaspberrySeed(); break;

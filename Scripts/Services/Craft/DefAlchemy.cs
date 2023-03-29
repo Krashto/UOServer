@@ -138,8 +138,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(UltimeCurePotion), 1116348, "Antidote Ultime", 80.0, 105.0, typeof(PlumesSaliva), "Plume de Saliva", 1, "Vous n'avez pas assez de plume de Saliva");
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(ElixirOfRebirth), 1116348, 1112762, 65.0, 115.0, typeof(Dragonsblood), 1031702, 3, 1044253);
-                     AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			//index = AddCraft(typeof(ElixirOfRebirth), 1116348, 1112762, 65.0, 115.0, typeof(Dragonsblood), 1031702, 3, 1044253);
+   //                  AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(BarrabHemolymphConcentrate), 1116348, "Potion d'Eodon", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
             AddRes(index, typeof(Ginseng), 1044356, 20, 1044364);

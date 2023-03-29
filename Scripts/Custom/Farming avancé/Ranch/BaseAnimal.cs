@@ -390,7 +390,7 @@ namespace Server.Mobiles
 			else if (item is Grapes || item is Peach || item is Pear || item is Apple || item is Watermelon || item is SmallWatermelon || item is Cantaloupe)
 				return true;
 			#if cropsystem
-			else if (item is WatermelonCrop || item is HoneydewMelonCrop || item is StrawberryCrop || item is CucumberCrop || item is CantaloupeCrop )
+			else if (item is WatermelonCrop || item is HoneydewMelonCrop || item is StrawberryCrop || item is CantaloupeCrop )
 				return true;
 			#endif
 			return false;
