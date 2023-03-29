@@ -2,46 +2,35 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a revenant lion corpse")]
+    [CorpseName("Le Corps d'un revenant")]
     public class RevenantLion : BaseCreature
     {
         [Constructable]
         public RevenantLion()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a Revenant Lion";
+            Name = "Un Revenant";
             Body = 251;
 
-            SetStr(276, 325);
-            SetDex(156, 175);
-            SetInt(76, 105);
+			SetDamageType(ResistanceType.Physical, 100);
 
-            SetHits(251, 280);
 
-            SetDamage(18, 24);
+			SetResistance(ResistanceType.Physical, 50, 60);
+			SetResistance(ResistanceType.Fire, 50, 60);
+			SetResistance(ResistanceType.Cold, 50, 60);
+			SetResistance(ResistanceType.Poison, 50, 60);
+			SetResistance(ResistanceType.Energy, 50, 60);
 
-            SetDamageType(ResistanceType.Physical, 30);
-            SetDamageType(ResistanceType.Cold, 30);
-            SetDamageType(ResistanceType.Poison, 10);
-            SetDamageType(ResistanceType.Energy, 30);
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
 
-            SetResistance(ResistanceType.Physical, 40, 60);
-            SetResistance(ResistanceType.Fire, 20, 30);
-            SetResistance(ResistanceType.Cold, 50, 60);
-            SetResistance(ResistanceType.Poison, 55, 65);
-            SetResistance(ResistanceType.Energy, 40, 50);
 
-            SetSkill(SkillName.EvalInt, 80.1, 90.0);
-            SetSkill(SkillName.Magery, 80.1, 90.0);
-            SetSkill(SkillName.Poisoning, 120.1, 130.0);
-            SetSkill(SkillName.MagicResist, 70.1, 90.0);
-            SetSkill(SkillName.Tactics, 60.1, 80.0);
-            SetSkill(SkillName.Wrestling, 80.1, 88.0);
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
 
-            Fame = 4000;
-            Karma = -4000;
-
-            SetWeaponAbility(WeaponAbility.BleedAttack);
+			SetWeaponAbility(WeaponAbility.BleedAttack);
         }
 
         public RevenantLion(Serial serial)

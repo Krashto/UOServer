@@ -1,38 +1,44 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a cougar corpse")]
+    [CorpseName("Le Corps d'un Cougar")]
     public class Cougar : BaseCreature
     {
         [Constructable]
         public Cougar()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a cougar";
+            Name = "Un Cougar";
             Body = 63;
             BaseSoundID = 0x73;
 
-            SetStr(56, 80);
-            SetDex(66, 85);
-            SetInt(26, 50);
+			SetStr(89, 137);
+			SetDex(59, 98);
+			SetInt(59, 79);
 
-            SetHits(34, 48);
-            SetMana(0);
+			SetHits(84, 128);
 
-            SetDamage(4, 10);
+			SetDamage(12, 20);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 20, 25);
-            SetResistance(ResistanceType.Fire, 5, 10);
-            SetResistance(ResistanceType.Cold, 10, 15);
-            SetResistance(ResistanceType.Poison, 5, 10);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 15.1, 30.0);
-            SetSkill(SkillName.Tactics, 45.1, 60.0);
-            SetSkill(SkillName.Wrestling, 45.1, 60.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 450;
-            Karma = 0;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+		//	Fame = 450;
+        //    Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;

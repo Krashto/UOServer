@@ -2,40 +2,45 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an eagle corpse")]
+    [CorpseName("Un corps d'Aigle")]
     public class Eagle : BaseCreature
     {
         [Constructable]
         public Eagle()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "an eagle";
+            Name = "Un Aigle";
             Body = 5;
             BaseSoundID = 0x2EE;
 
-            SetStr(31, 47);
-            SetDex(36, 60);
-            SetInt(8, 20);
+			SetStr(63, 98);
+			SetDex(42, 70);
+			SetInt(35, 56);
 
-            SetHits(20, 27);
-            SetMana(0);
+			SetHits(70, 91);
 
-            SetDamage(5, 10);
+			SetDamage(9, 14);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 20, 25);
-            SetResistance(ResistanceType.Fire, 10, 15);
-            SetResistance(ResistanceType.Cold, 20, 25);
-            SetResistance(ResistanceType.Poison, 5, 10);
-            SetResistance(ResistanceType.Energy, 5, 10);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 15.3, 30.0);
-            SetSkill(SkillName.Tactics, 18.1, 37.0);
-            SetSkill(SkillName.Wrestling, 20.1, 30.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 300;
-            Karma = 0;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+	//		Fame = 300;
+     //       Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;

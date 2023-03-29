@@ -3,14 +3,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a cu sidhe corpse")]
+    [CorpseName("le corps d'un Cu Sidhe")]
     public class CuSidhe : BaseMount
     {
         public override double HealChance => 1.0;
 
         [Constructable]
         public CuSidhe()
-            : this("a cu sidhe")
+            : this("Un cu sidhe")
         {
         }
 
@@ -27,32 +27,34 @@ namespace Server.Mobiles
             else if (chance <= 3301)
                 Hue = Utility.RandomList(0x97A, 0x978, 0x901, 0x8AC, 0x5A7, 0x527);
 
-            SetStr(1200, 1225);
-            SetDex(150, 170);
-            SetInt(250, 285);
+			SetStr(173, 269);
+			SetDex(115, 192);
+			SetInt(96, 154);
 
-            SetHits(1010, 1275);
+			SetHits(165, 251);
 
-            SetDamage(21, 28);
+			SetDamage(23, 39);
 
-            SetDamageType(ResistanceType.Physical, 0);
-            SetDamageType(ResistanceType.Cold, 50);
-            SetDamageType(ResistanceType.Energy, 50);
+			SetDamageType(ResistanceType.Physical, 100);
+	
 
-            SetResistance(ResistanceType.Physical, 50, 65);
-            SetResistance(ResistanceType.Fire, 25, 45);
-            SetResistance(ResistanceType.Cold, 70, 85);
-            SetResistance(ResistanceType.Poison, 30, 50);
-            SetResistance(ResistanceType.Energy, 70, 85);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.Wrestling, 90.1, 96.8);
-            SetSkill(SkillName.Tactics, 90.3, 99.3);
-            SetSkill(SkillName.MagicResist, 75.3, 90.0);
-            SetSkill(SkillName.Anatomy, 65.5, 69.4);
-            SetSkill(SkillName.Healing, 72.2, 98.9);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 5000;  //Guessing here
-            Karma = 5000;  //Guessing here
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+		//	Fame = 5000;  //Guessing here
+        //    Karma = 5000;  //Guessing here
 
             Tamable = true;
             ControlSlots = 3;

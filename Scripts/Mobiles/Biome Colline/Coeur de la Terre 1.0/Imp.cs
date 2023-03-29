@@ -2,45 +2,45 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an imp corpse")]
+    [CorpseName("Le Corps d'un Lutin")]
     public class Imp : BaseCreature
     {
         [Constructable]
         public Imp()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an imp";
+            Name = "Un Lutin";
             Body = 74;
             BaseSoundID = 422;
 
-            SetStr(91, 115);
-            SetDex(61, 80);
-            SetInt(86, 105);
+			SetStr(89, 137);
+			SetDex(59, 98);
+			SetInt(59, 79);
 
-            SetHits(55, 70);
+			SetHits(84, 128);
 
-            SetDamage(10, 14);
+			SetDamage(12, 20);
 
-            SetDamageType(ResistanceType.Physical, 0);
-            SetDamageType(ResistanceType.Fire, 50);
-            SetDamageType(ResistanceType.Poison, 50);
+			SetDamageType(ResistanceType.Physical, 50);
+			SetDamageType(ResistanceType.Cold, 50);
 
-            SetResistance(ResistanceType.Physical, 25, 35);
-            SetResistance(ResistanceType.Fire, 40, 50);
-            SetResistance(ResistanceType.Cold, 20, 30);
-            SetResistance(ResistanceType.Poison, 30, 40);
-            SetResistance(ResistanceType.Energy, 30, 40);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.EvalInt, 20.1, 30.0);
-            SetSkill(SkillName.Magery, 90.1, 100.0);
-            SetSkill(SkillName.MagicResist, 30.1, 50.0);
-            SetSkill(SkillName.Tactics, 42.1, 50.0);
-            SetSkill(SkillName.Wrestling, 40.1, 44.0);
-            SetSkill(SkillName.Necromancy, 20);
-            SetSkill(SkillName.SpiritSpeak, 20);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 2500;
-            Karma = -2500;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+	//		Fame = 2500;
+    //        Karma = -2500;
 
             Tamable = true;
             ControlSlots = 2;

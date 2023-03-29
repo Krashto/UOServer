@@ -3,42 +3,46 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an orcish corpse")]
-    public class OrcCaptain : BaseCreature
+	[CorpseName("Le Corps d'un Orc")]
+	public class OrcCaptain : BaseCreature
     {
         [Constructable]
         public OrcCaptain()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("orc");
+			Name = "Un Orc Capitaine";
             Body = 7;
             BaseSoundID = 0x45A;
 
-            SetStr(111, 145);
-            SetDex(101, 135);
-            SetInt(86, 110);
+			SetStr(229, 408);
+			SetDex(151, 253);
+			SetInt(126, 203);
 
-            SetHits(67, 87);
+			SetHits(633, 963);
 
-            SetDamage(5, 15);
+			SetDamage(40, 67);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 30, 35);
-            SetResistance(ResistanceType.Fire, 10, 20);
-            SetResistance(ResistanceType.Cold, 15, 25);
-            SetResistance(ResistanceType.Poison, 5, 10);
-            SetResistance(ResistanceType.Energy, 5, 10);
+			SetResistance(ResistanceType.Physical, 50, 60);
+			SetResistance(ResistanceType.Fire, 50, 60);
+			SetResistance(ResistanceType.Cold, 50, 60);
+			SetResistance(ResistanceType.Poison, 50, 60);
+			SetResistance(ResistanceType.Energy, 50, 60);
 
-            SetSkill(SkillName.MagicResist, 70.1, 85.0);
-            SetSkill(SkillName.Swords, 70.1, 95.0);
-            SetSkill(SkillName.Tactics, 85.1, 100.0);
+			SetSkill(SkillName.EvalInt, 50.1, 55.0);
+			SetSkill(SkillName.Magery, 50.1, 55.0);
+			SetSkill(SkillName.Meditation, 50.1, 55.0);
 
-            Fame = 2500;
-            Karma = -2500;
-        }
 
-        public OrcCaptain(Serial serial)
+			SetSkill(SkillName.MagicResist, 35.1, 55.0);
+			SetSkill(SkillName.Tactics, 50.1, 55.0);
+			SetSkill(SkillName.Wrestling, 50.1, 55.0);
+
+		}
+
+		public OrcCaptain(Serial serial)
             : base(serial)
         {
         }

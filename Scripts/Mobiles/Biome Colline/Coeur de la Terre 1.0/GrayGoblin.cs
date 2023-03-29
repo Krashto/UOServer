@@ -2,44 +2,47 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a goblin corpse")]
+    [CorpseName("Le Corps d'un Goblin")]
     public class GrayGoblin : BaseCreature
     {
         [Constructable]
         public GrayGoblin()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a gray goblin";
+            Name = "un Goblin Gris";
 
             Body = 723;
             Hue = 1900;
             BaseSoundID = 0x600;
 
-            SetStr(258, 327);
-            SetDex(62, 80);
-            SetInt(103, 150);
+			SetStr(124, 192);
+			SetDex(83, 137);
+			SetInt(69, 109);
 
-            SetHits(159, 194);
-            SetStam(62, 80);
-            SetMana(103, 150);
+			SetHits(118, 179);
 
-            SetDamage(5, 7);
+			SetDamage(17, 28);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+		
 
-            SetResistance(ResistanceType.Physical, 40, 50);
-            SetResistance(ResistanceType.Fire, 30, 40);
-            SetResistance(ResistanceType.Cold, 25, 32);
-            SetResistance(ResistanceType.Poison, 10, 19);
-            SetResistance(ResistanceType.Energy, 10, 20);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 120.9, 129.1);
-            SetSkill(SkillName.Tactics, 80.6, 89.4);
-            SetSkill(SkillName.Anatomy, 80.3, 89.4);
-            SetSkill(SkillName.Wrestling, 96.1, 105.5);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 1500;
-            Karma = -1500;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+		//	Fame = 1500;
+        //    Karma = -1500;
         }
 
         public GrayGoblin(Serial serial)

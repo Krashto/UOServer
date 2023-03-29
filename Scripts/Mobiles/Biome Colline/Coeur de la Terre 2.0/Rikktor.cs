@@ -5,44 +5,47 @@ using System.Collections;
 
 namespace Server.Mobiles
 {
-    public class Rikktor : BaseChampion
+
+	[CorpseName("Le Corps de Rikktor")]
+	public class Rikktor : BaseCreature
     {
         [Constructable]
         public Rikktor()
-            : base(AIType.AI_Melee)
-        {
+            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+		{
             Body = 172;
             Name = "Rikktor";
 
-            SetStr(701, 900);
-            SetDex(201, 350);
-            SetInt(51, 100);
+			SetStr(199, 355);
+			SetDex(132, 220);
+			SetInt(110, 177);
 
-            SetHits(15000);
-            SetStam(203, 650);
+			SetHits(5258, 7992);
 
-            SetDamage(28, 55);
+			SetDamage(26, 45);
 
-            SetDamageType(ResistanceType.Physical, 25);
-            SetDamageType(ResistanceType.Fire, 50);
-            SetDamageType(ResistanceType.Energy, 25);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 80, 90);
-            SetResistance(ResistanceType.Fire, 80, 90);
-            SetResistance(ResistanceType.Cold, 30, 40);
-            SetResistance(ResistanceType.Poison, 80, 90);
-            SetResistance(ResistanceType.Energy, 80, 90);
+			SetResistance(ResistanceType.Physical, 80, 90);
+			SetResistance(ResistanceType.Fire, 80, 90);
+			SetResistance(ResistanceType.Cold, 80, 90);
+			SetResistance(ResistanceType.Poison, 80, 90);
+			SetResistance(ResistanceType.Energy, 80, 90);
 
-            SetSkill(SkillName.Anatomy, 100.0);
-            SetSkill(SkillName.MagicResist, 140.2, 160.0);
-            SetSkill(SkillName.Tactics, 100.0);
-            SetSkill(SkillName.Wrestling, 118.4, 123.9);
+			SetSkill(SkillName.EvalInt, 75.1, 100.0);
+			SetSkill(SkillName.Magery, 75.1, 100.0);
+			SetSkill(SkillName.Meditation, 75.1, 100.0);
 
-            Fame = 22500;
-            Karma = -22500;
+			SetSkill(SkillName.MagicResist, 75.1, 100.0);
+			SetSkill(SkillName.Tactics, 75.1, 100.0);
+			SetSkill(SkillName.Wrestling, 75.1, 100.0);
 
-            ForceActiveSpeed = 0.35;
-            ForcePassiveSpeed = 0.7;
+
+		//	Fame = 22500;
+        //    Karma = -22500;
+
+         
         }
 
         public Rikktor(Serial serial)
@@ -50,25 +53,9 @@ namespace Server.Mobiles
         {
         }
 
-        public override ChampionSkullType SkullType => ChampionSkullType.Power;
-        public override Type[] UniqueList => new[] { typeof(CrownOfTalKeesh) };
-        public override Type[] SharedList => new[]
-                {
-                    typeof(TheMostKnowledgePerson),
-                    typeof(BraveKnightOfTheBritannia),
-                    typeof(LieutenantOfTheBritannianRoyalGuard)
-                };
-        public override Type[] DecorativeList => new[]
-                {
-                    typeof(LavaTile),
-                    typeof(MonsterStatuette),
-                    typeof(MonsterStatuette)
-                };
-        public override MonsterStatuetteType[] StatueTypes => new[]
-                {
-                    MonsterStatuetteType.OphidianArchMage,
-                    MonsterStatuetteType.OphidianWarrior
-                };
+       
+      
+     
         public override Poison PoisonImmune => Poison.Lethal;
 		/*     public override ScaleType ScaleType => ScaleType.All;
 			 public override int Scales => 20;*/

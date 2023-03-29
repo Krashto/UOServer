@@ -1,36 +1,43 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a bear corpse")]
+    [CorpseName("Le Corps d'un ours Brun")]
     public class BrownBear : BaseCreature
     {
         [Constructable]
         public BrownBear()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a brown bear";
+            Name = "Un Ours Brun";
             Body = 167;
             BaseSoundID = 0xA3;
 
-            SetStr(76, 100);
-            SetDex(26, 45);
-            SetInt(23, 47);
+			SetStr(124, 192);
+			SetDex(83, 137);
+			SetInt(69, 109);
 
-            SetHits(46, 60);
-            SetMana(0);
+			SetHits(118, 179);
 
-            SetDamage(6, 12);
+			SetDamage(17, 28);
 
-            SetDamageType(ResistanceType.Physical, 100);
+			SetDamageType(ResistanceType.Physical, 100);
+			
 
-            SetResistance(ResistanceType.Physical, 20, 30);
-            SetResistance(ResistanceType.Cold, 15, 20);
-            SetResistance(ResistanceType.Poison, 10, 15);
+			SetResistance(ResistanceType.Physical, 45, 55);
+			SetResistance(ResistanceType.Fire, 45, 55);
+			SetResistance(ResistanceType.Cold, 45, 55);
+			SetResistance(ResistanceType.Poison, 45, 55);
+			SetResistance(ResistanceType.Energy, 45, 55);
 
-            SetSkill(SkillName.MagicResist, 25.1, 35.0);
-            SetSkill(SkillName.Tactics, 40.1, 60.0);
-            SetSkill(SkillName.Wrestling, 40.1, 60.0);
+			SetSkill(SkillName.EvalInt, 35.1, 50.0);
+			SetSkill(SkillName.Magery, 35.1, 50.0);
+			SetSkill(SkillName.Meditation, 35.1, 50.0);
 
-            Fame = 450;
+			SetSkill(SkillName.MagicResist, 35.1, 50.0);
+			SetSkill(SkillName.Tactics, 35.1, 50.0);
+			SetSkill(SkillName.Wrestling, 35.1, 50.0);
+
+
+			Fame = 450;
             Karma = 0;
 
             Tamable = true;
