@@ -5,8 +5,8 @@ namespace Server.Items
         [Constructable]
         public LocalMap()
         {
-            SetDisplay(0, 0, 5119, 4095, 400, 400);
-        }
+			SetDisplay(256, 104, 1900, 1740, 400, 400);
+		}
 
         public LocalMap(Serial serial)
             : base(serial)
