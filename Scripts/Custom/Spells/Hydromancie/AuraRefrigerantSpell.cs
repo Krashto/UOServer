@@ -3,6 +3,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -55,8 +56,10 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 2 + Caster.Skills[CastSkill].Value / 50, Aptitude.Hydromancie));
 
 					foreach (Mobile m in eable)
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
+					{
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
 							targets.Add(m);
+					}
 
 					eable.Free();
 				}

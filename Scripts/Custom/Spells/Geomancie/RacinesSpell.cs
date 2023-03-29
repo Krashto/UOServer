@@ -5,6 +5,8 @@ using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using System.Collections;
 using VitaNex.FX;
+using Server.Mobiles;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -43,40 +45,70 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (CheckHSequence(m))
 			{
-				SpellHelper.Turn(Caster, m);
+				var targets = new ArrayList();
 
-				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
+				var map = m.Map;
 
-				if (!IndomptableSpell.IsActive(m))
+				if (map != null)
 				{
-					var duration = GetDurationForSpell(10);
-					SpellHelper.Turn(Caster, m);
+					IPooledEnumerable eable = map.GetMobilesInRange(m.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
 
+					targets.Add(m);
+
+					foreach (Mobile targ in eable)
+					{
+						if (Caster != targ && SpellHelper.ValidIndirectTarget(Caster, targ) && Caster.CanBeHarmful(targ, false) && !CustomPlayerMobile.IsInEquipe(Caster, targ))
+							targets.Add(targ);
+					}
+
+					eable.Free();
+				}
+
+				if (targets.Count > 0)
+				{
+					SpellHelper.Turn(Caster, m);
 					ConcentricWaveFX.Brambles.CreateInstance(Caster, Caster.Map, Caster.Direction, (int)Caster.GetDistanceToSqrt(m.Location));
 
-					var loc = new Point3D(m.X + 1, m.Y, m.Z);
-					new InternalItem(0x0D3F, loc, Caster, m.Map, duration);
-					loc = new Point3D(m.X + 1, m.Y + 1, m.Z);
-					new InternalItem(0x0D40, loc, Caster, m.Map, duration);
-					loc = new Point3D(m.X, m.Y + 1, m.Z);
-					new InternalItem(0x3020, loc, Caster, m.Map, duration);
-					loc = new Point3D(m.X, m.Y - 1, m.Z);
-					new InternalItem(0x3022, loc, Caster, m.Map, duration);
-					loc = new Point3D(m.X - 1, m.Y, m.Z);
-					new InternalItem(0x3023, loc, Caster, m.Map, duration);
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var targ = (Mobile)targets[i];
 
-					m.CantWalk = true;
-					BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, Caster));
+						SpellHelper.Turn(Caster, targ);
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
-					t.Start();
+						SpellHelper.CheckReflect((int)Circle, Caster, ref targ);
 
-					m.PlaySound(0x204);
-					m.FixedEffect(0x376A, 6, 1);
+						if (!IndomptableSpell.IsActive(targ))
+						{
+							var duration = GetDurationForSpell(10);
+							SpellHelper.Turn(m, targ);
+
+							ConcentricWaveFX.Brambles.CreateInstance(m, m.Map, m.Direction, (int)Caster.GetDistanceToSqrt(targ.Location));
+
+							var loc = new Point3D(targ.X + 1, targ.Y, targ.Z);
+							new InternalItem(0x0D3F, loc, Caster, targ.Map, duration);
+							loc = new Point3D(targ.X + 1, targ.Y + 1, targ.Z);
+							new InternalItem(0x0D40, loc, Caster, targ.Map, duration);
+							loc = new Point3D(targ.X, targ.Y + 1, targ.Z);
+							new InternalItem(0x3020, loc, Caster, targ.Map, duration);
+							loc = new Point3D(targ.X, targ.Y - 1, targ.Z);
+							new InternalItem(0x3022, loc, Caster, targ.Map, duration);
+							loc = new Point3D(targ.X - 1, targ.Y, targ.Z);
+							new InternalItem(0x3023, loc, Caster, targ.Map, duration);
+
+							targ.CantWalk = true;
+							BuffInfo.AddBuff(targ, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, targ));
+
+							Timer t = new InternalTimer(targ, DateTime.Now + duration);
+							m_Timers[targ] = t;
+							t.Start();
+
+							targ.PlaySound(0x204);
+							targ.FixedEffect(0x376A, 6, 1);
+						}
+						else
+							Caster.SendMessage("La cible est immunisée à la paralysie.");
+					}
 				}
-				else
-					Caster.SendMessage("La cible est immunisée à la paralysie.");
 			}
 
 			FinishSequence();

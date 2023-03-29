@@ -369,7 +369,6 @@ namespace Server.Spells
 
         public virtual TimeSpan GetDurationForSpell(double min, double scale = 1.0)
         {
-			
             double bonus = 1;
 
 			bonus += (Caster.Skills[CastSkill].Value - 50) / 150;

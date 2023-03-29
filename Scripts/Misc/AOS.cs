@@ -414,10 +414,17 @@ namespace Server
 			if (PassionArdenteSpell.IsActive(from))
 				from.Heal(totalDamage * fire / 200 / 2);
 
+			if (totalDamage > 0)
+			{
+				m.Frozen = false;
+				m.Paralyzed = false;
+				m.CantWalk = false;
+
+				AvatarDuFroidSpell.Deactivate(m);
+			}
+
 			totalDamage = m.Damage(totalDamage, from, true, false);
-			m.Frozen = false;
-			m.Paralyzed = false;
-			m.CantWalk = false;
+			
 
             ExplodingTarPotion.RemoveEffects(m);
 

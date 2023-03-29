@@ -3,7 +3,6 @@ using System.Collections;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -53,7 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				m_Timers[m] = t;
 				t.Start();
 
-				ConcentricWaveFX.SmallTornado.CreateInstance(m, m.Map, 0);
+				BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.AuraOfNausea, 1153792, 1153819, duration, m, $"{duration.TotalSeconds}\t{duration.TotalSeconds}\t{duration.TotalSeconds}\t{duration.TotalSeconds}"));
 
 				m.Emote($"*Est aveuglé{(m.Female ? "e" : "")}*");
 
@@ -80,6 +79,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				BuffInfo.RemoveBuff(m, BuffIcon.AuraOfNausea);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);

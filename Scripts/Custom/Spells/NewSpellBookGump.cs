@@ -84,7 +84,7 @@ namespace Server.Gumps
 			new SpellBookEntry( 5, Aptitude.Geomancie, "Aura fortifiante", new Type[] { typeof(MandrakeRoot), typeof(Nightshade)  }, 0x8cf, 4, 634),
 			new SpellBookEntry( 6, Aptitude.Geomancie, "Mur de plante", new Type[] { typeof(Garlic), typeof(Nightshade), typeof(NoxCrystal) }, 0x8e6, 4, 635),
 			new SpellBookEntry( 7, Aptitude.Geomancie, "Explosion de roche", new Type[] { typeof(Garlic), typeof(MandrakeRoot) }, 0x8d0, 5, 636),
-			new SpellBookEntry( 8, Aptitude.Geomancie, "Aura de remède", new Type[] { typeof(MandrakeRoot), typeof(Nightshade) }, 0x8c9, 6, 637),
+			new SpellBookEntry( 8, Aptitude.Geomancie, "Aura Préservation Manaique", new Type[] { typeof(MandrakeRoot), typeof(Nightshade) }, 0x8c9, 6, 637),
 			new SpellBookEntry( 9, Aptitude.Geomancie, "Racines", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x122, 7, 638),
 			new SpellBookEntry( 10, Aptitude.Geomancie, "Fléau terrestre", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SulfurousAsh) }, 0x8f8, 8, 639),
 
@@ -92,12 +92,12 @@ namespace Server.Gumps
 			new SpellBookEntry( 2, Aptitude.Guerison, "Remède", new Type[] { typeof(BlackPearl), typeof(Garlic), typeof(SulfurousAsh) }, 0x8d1, 2, 641),
 			new SpellBookEntry( 3, Aptitude.Guerison, "Mur de pierre", new Type[] { typeof(NoxCrystal), typeof(Nightshade), typeof(SulfurousAsh) }, 0x8d3, 3, 642),
 			new SpellBookEntry( 4, Aptitude.Guerison, "Rayon céleste", new Type[] { typeof(SulfurousAsh), typeof(SulfurousAsh), typeof(SulfurousAsh) }, 0x8f6, 3, 643),
-			new SpellBookEntry( 5, Aptitude.Guerison, "Lumière sacré", new Type[] { typeof(MandrakeRoot), typeof(Nightshade)  }, 0x8cf, 4, 644),
+			new SpellBookEntry( 5, Aptitude.Guerison, "Don de la vie", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SulfurousAsh) }, 0x8f8, 8, 649),
 			new SpellBookEntry( 6, Aptitude.Guerison, "Frayeur", new Type[] { typeof(Garlic), typeof(Nightshade), typeof(NoxCrystal) }, 0x8e6, 4, 645),
 			new SpellBookEntry( 7, Aptitude.Guerison, "Ferveur divine", new Type[] { typeof(Garlic), typeof(MandrakeRoot) }, 0x8d0, 5, 646),
 			new SpellBookEntry( 8, Aptitude.Guerison, "Inquisition", new Type[] { typeof(MandrakeRoot), typeof(Nightshade) }, 0x8c9, 6, 647),
 			new SpellBookEntry( 9, Aptitude.Guerison, "Mur de lumière", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x122, 7, 648),
-			new SpellBookEntry( 10, Aptitude.Guerison, "Don de la vie", new Type[] { typeof(Bloodmoss), typeof(Ginseng), typeof(SulfurousAsh) }, 0x8f8, 8, 649),
+			new SpellBookEntry( 10, Aptitude.Guerison, "Lumière sacré", new Type[] { typeof(MandrakeRoot), typeof(Nightshade)  }, 0x8cf, 4, 644),
 
 			new SpellBookEntry( 1, Aptitude.Hydromancie, "Armure de glace", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SpidersSilk) }, 0x11a, 1, 650),
 			new SpellBookEntry( 2, Aptitude.Hydromancie, "Restauration", new Type[] { typeof(Garlic), typeof(MandrakeRoot), typeof(SulfurousAsh) }, 0x14a, 2, 651),

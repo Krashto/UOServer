@@ -44,8 +44,8 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				var duration = GetDurationForSpell(2);
 
-				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-				m_Timers[Caster] = t;
+				Timer t = new InternalTimer(m, DateTime.Now + duration);
+				m_Timers[m] = t;
 				t.Start();
 
 				m.Emote("*A terriblement peur*");

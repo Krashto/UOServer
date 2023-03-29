@@ -51,9 +51,9 @@ namespace Server.Custom.Spells.NewSpells.Martial
 			FinishSequence();
 		}
 
-		public static int GetValue(Mobile m)
+		public static double GetValue(Mobile m)
 		{
-			return IsActive(m) ? (int)m_Table[m] : 0;
+			return IsActive(m) ? (double)m_Table[m] : 0.0;
 		}
 
 		public static bool IsActive(Mobile m)

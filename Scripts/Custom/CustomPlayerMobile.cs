@@ -1079,6 +1079,26 @@ namespace Server.Mobiles
 		}
 		public static bool IsInEquipe(Mobile source, Mobile target)
 		{
+			if (target is BaseCreature bc)
+			{
+				if (bc.ControlMaster == source)
+					return true;
+				else if (IsInParty(bc.ControlMaster, source))
+					return true;
+			}
+			else if (source is BaseCreature bc2)
+			{
+				if (bc2.ControlMaster == target)
+					return true;
+				else if (IsInParty(bc2.ControlMaster, target))
+					return true;
+			}
+
+			return IsInParty(source, target);
+		}
+
+		public static bool IsInParty(Mobile source, Mobile target)
+		{
 			var party = Engines.PartySystem.Party.Get(source);
 			return party != null && party.Contains(target);
 		}

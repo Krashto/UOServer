@@ -86,7 +86,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
-						source.MovingParticles(m, 0x11B6, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+						source.MovingParticles(m, 0x232E, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 						source.PlaySound(0x44B);
 
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);

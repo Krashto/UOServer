@@ -5,6 +5,9 @@ using Server.Spells;
 using Server.Custom.Spells.NewSpells.Chasseur;
 using Server.Items;
 using VitaNex.FX;
+using Server.Network;
+using Server.Custom.Spells.NewSpells.Hydromancie;
+using Server.Custom.Spells.NewSpells.Roublardise;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -43,7 +46,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if (BleedAttack.IsBleeding(m) && (m.Frozen || m.CantWalk || m.Paralyzed) && MarquerSpell.IsActive(m))
+				if ((CoupDansLeGenouSpell.IsActive(m) || BlizzardSpell.IsActive(m) || CoupureDesTendonsSpell.IsActive(m) || CoupureDesTendonsSpell.IsActive(m)) 
+					&& MarquerSpell.IsActive(m) && BleedAttack.IsBleeding(m))
 				{
 					Caster.MoveToWorld(m.Location, m.Map);
 					m.Damage(100);

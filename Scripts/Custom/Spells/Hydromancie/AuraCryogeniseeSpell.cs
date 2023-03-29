@@ -2,6 +2,7 @@ using System;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -45,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					targets.Add(Caster);
 
 					foreach (Mobile m in eable)
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
 							targets.Add(m);
 
 					eable.Free();

@@ -4,6 +4,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -53,6 +54,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 					if (Caster.CanBeBeneficial(target, false))
 						ToogleInvisibility(this, Caster, target);
 				}
+
+				eable.Free();
 			}
 
 			FinishSequence();
