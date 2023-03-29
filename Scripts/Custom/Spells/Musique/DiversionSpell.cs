@@ -2,9 +2,6 @@
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Mobiles;
-using System;
-using Server.Engines.CannedEvil;
-using Server.Items;
 using Server.Network;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
@@ -34,27 +31,6 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 		public override void OnCast()
 		{
 			Caster.Target = new DiversionTarget();
-		}
-
-		public void Target(Mobile m)
-		{
-			if (!Caster.CanSee(m))
-				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckHSequence(m))
-			{
-				var source = Caster;
-
-				SpellHelper.Turn(source, m);
-
-				m.SendLocalizedMessage(500616); // You hear lovely music, and forget to continue battling!
-				m.Combatant = null;
-				m.Warmode = false;
-
-				if (m is BaseCreature && !((BaseCreature)m).BardPacified)
-					((BaseCreature)m).Pacify(Caster, DateTime.UtcNow + TimeSpan.FromSeconds(30.0));
-			}
-
-			FinishSequence();
 		}
 
 		private class DiversionTarget : Target

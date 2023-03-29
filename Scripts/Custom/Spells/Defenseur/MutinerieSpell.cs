@@ -43,7 +43,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 					targ.Combatant = Caster;
 					targ.Emote($"*Est provoqué{(targ.Female ? "e" : "")} par {Caster.Name}*");
 					Caster.Combatant = targ;
-					targ.Emote($"*Provoque {targ.Name}*");
+					Caster.Emote($"*Provoque {targ.Name}*");
 				}
 			}
 

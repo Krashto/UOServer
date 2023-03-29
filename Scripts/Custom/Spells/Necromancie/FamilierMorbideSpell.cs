@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Gumps;
@@ -127,14 +126,14 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 			AddHtmlLocalized(30, 26, 200, 20, 1060147, EnabledColor16, false, false); // Chose thy familiar...
 
-			double necro = from.Skills[SkillName.Necromancy].Value;
-			double evalInt = from.Skills[SkillName.EvalInt].Value;
+			double castSkill = from.Skills[m_Spell.CastSkill].Value;
+			double damageSkill = from.Skills[m_Spell.DamageSkill].Value;
 
 			for (int i = 0; i < entries.Length; ++i)
 			{
 				object name = entries[i].Name;
 
-				bool enabled = (necro >= entries[i].ReqNecromancy && evalInt >= entries[i].ReqEvalInt);
+				bool enabled = (castSkill >= entries[i].ReqNecromancy && damageSkill >= entries[i].ReqEvalInt);
 
 				AddButton(27, 53 + (i * 21), 9702, 9703, i + 1, GumpButtonType.Reply, 0);
 
@@ -153,8 +152,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			{
 				FamilierMorbideEntry entry = m_Entries[index];
 
-				double necro = m_From.Skills[SkillName.Necromancy].Value;
-				double evalInt = m_From.Skills[SkillName.EvalInt].Value;
+				double castSkill = m_From.Skills[m_Spell.CastSkill].Value;
+				double damageSkill = m_From.Skills[m_Spell.DamageSkill].Value;
 
 				BaseCreature check = (BaseCreature)FamilierMorbideSpell.Table[m_From];
 
@@ -162,7 +161,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				{
 					m_From.SendLocalizedMessage(1061605); // You already have a familiar.
 				}
-				else if (necro < entry.ReqNecromancy || evalInt < entry.ReqEvalInt)
+				else if (castSkill < entry.ReqNecromancy || damageSkill < entry.ReqEvalInt)
 				{
 					// That familiar requires ~1_NECROMANCY~ Necromancy and ~2_SPIRIT~ Spirit Speak.
 					m_From.SendLocalizedMessage(1061606, string.Format("{0:F1}\t{1:F1}", entry.ReqNecromancy, entry.ReqEvalInt));

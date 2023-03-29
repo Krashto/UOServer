@@ -1,6 +1,7 @@
 using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -41,7 +42,31 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		{
 			if (CheckSequence())
 			{
+				if (CompagnonAnimalSpell.Table.Contains(Caster))
+				{
+					var bc = CompagnonAnimalSpell.Table[Caster] as BaseCreature;
 
+					if (bc != null)
+					{
+						var targets = bc.GetMobilesInRange(5);
+
+						foreach (var targ in targets)
+						{
+							if (CustomPlayerMobile.IsInEquipe(Caster, targ))
+								continue;
+
+							if (targ is BaseCreature creature && creature.Controlled && CustomPlayerMobile.IsInEquipe(Caster, creature.ControlMaster))
+								continue;
+
+							targ.Combatant = bc;
+							targ.Emote($"*Est provoqué{(targ.Female ? "e" : "")} par {Caster.Name}*");
+							bc.Combatant = targ;
+							bc.Emote($"*Provoque {targ.Name}*");
+						}
+					}
+				}
+				else
+					Caster.SendMessage("Vous n'avez pas de compagnon avec vous.");
 			}
 
 			FinishSequence();

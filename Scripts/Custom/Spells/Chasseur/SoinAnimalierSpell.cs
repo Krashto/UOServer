@@ -1,4 +1,5 @@
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
@@ -28,7 +29,22 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		{
 			if (CheckSequence())
 			{
-				
+				if (CompagnonAnimalSpell.Table.Contains(Caster))
+				{
+					var bc = CompagnonAnimalSpell.Table[Caster] as BaseCreature;
+
+					if (bc != null)
+					{
+						double toHeal = Caster.Skills[CastSkill].Value * 0.4 + Caster.Skills[DamageSkill].Value * 0.4;
+						toHeal += Utility.Random(10, 15);
+
+						toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Chasseur);
+
+						bc.Heal((int)toHeal);
+					}
+				}
+				else
+					Caster.SendMessage("Vous n'avez pas de compagnon avec vous.");
 			}
 
 			FinishSequence();

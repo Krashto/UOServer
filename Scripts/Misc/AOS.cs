@@ -1,4 +1,5 @@
 using Server.Custom.Spells.NewSpells.Defenseur;
+using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Engines.CityLoyalty;
 using Server.Engines.SphynxFortune;
@@ -406,6 +407,12 @@ namespace Server
 
 			if (PiedsAuSolSpell.IsActive(m))
 				totalDamage /= 4;
+
+			if (PassionArdenteSpell.IsActive(m))
+				m.Heal(totalDamage * fire / 200 / 2);
+
+			if (PassionArdenteSpell.IsActive(from))
+				from.Heal(totalDamage * fire / 200 / 2);
 
 			totalDamage = m.Damage(totalDamage, from, true, false);
 			m.Frozen = false;
