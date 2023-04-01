@@ -24,12 +24,12 @@ namespace Server.Mobiles
         protected override List<SBInfo> SBInfos => m_SBInfos;
         public override void InitSBInfo()
         {
-            m_SBInfos.Add(new SBStavesWeapon());
+         //   m_SBInfos.Add(new SBStavesWeapon());
             m_SBInfos.Add(new SBCarpenter());
-            m_SBInfos.Add(new SBWoodenShields());
+          //  m_SBInfos.Add(new SBWoodenShields());
 
-            if (IsTokunoVendor)
-                m_SBInfos.Add(new SBSECarpenter());
+            //if (IsTokunoVendor)
+            //    m_SBInfos.Add(new SBSECarpenter());
         }
 
         public override void InitOutfit()
@@ -47,10 +47,10 @@ namespace Server.Mobiles
             return (item is SmallCarpentryBOD || item is LargeCarpentryBOD);
         }
 
- ///       public override bool SupportsBulkOrders(Mobile from)
-  ///      {
-  ///          return BulkOrderSystem.NewSystemEnabled && from is PlayerMobile && from.Skills[SkillName.Carpentry].Base > 0;
-  ///      }
+        public override bool SupportsBulkOrders(Mobile from)
+       {
+            return BulkOrderSystem.NewSystemEnabled && from is PlayerMobile && from.Skills[SkillName.Carpentry].Base > 0;
+       }
 
         public override void OnSuccessfulBulkOrderReceive(Mobile from)
         {

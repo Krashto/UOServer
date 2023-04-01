@@ -54,8 +54,8 @@ namespace Server
 
         public static void Initialize()
         {
-            CommandSystem.Register("PossederNPC", AccessLevel.GameMaster, new CommandEventHandler(Possess_OnCommand));
-            CommandSystem.Register("LibererNPC", AccessLevel.GameMaster, new CommandEventHandler(UnPossess_OnCommand));
+            //CommandSystem.Register("PossederNPC", AccessLevel.GameMaster, new CommandEventHandler(Possess_OnCommand));
+            //CommandSystem.Register("LibererNPC", AccessLevel.GameMaster, new CommandEventHandler(UnPossess_OnCommand));
             CommandSystem.Register("CopierMoi", AccessLevel.GameMaster, new CommandEventHandler(CopyGm_OnCommand));
             CommandSystem.Register("ClonerNPC", AccessLevel.GameMaster, new CommandEventHandler(CloneNPC_OnCommand));
             CommandSystem.Register("CopierNPC", AccessLevel.GameMaster, new CommandEventHandler(CopyNPC_OnCommand));

@@ -33,21 +33,22 @@ namespace Server.Mobiles
             if (!IsStygianVendor)
             {
                 m_SBInfos.Add(new SBBlacksmith());
-                if (IsTokunoVendor)
-                {
-                    m_SBInfos.Add(new SBSEArmor());
-                    m_SBInfos.Add(new SBSEWeapons());
-                }
-            }
-            else
-            {
-                m_SBInfos.Add(new SBSABlacksmith());
-                m_SBInfos.Add(new SBSAArmor());
-                m_SBInfos.Add(new SBSAWeapons());
-            }
+            //    if (IsTokunoVendor)
+            //    {
+            //        m_SBInfos.Add(new SBSEArmor());
+            //        m_SBInfos.Add(new SBSEWeapons());
+            //    }
+            //}
+            //else
+            //{
+            //    m_SBInfos.Add(new SBSABlacksmith());
+            //    m_SBInfos.Add(new SBSAArmor());
+            //    m_SBInfos.Add(new SBSAWeapons());
+            //}
         }
+		}
 
-        public override VendorShoeType ShoeType => Utility.RandomBool() ? VendorShoeType.Sandals : VendorShoeType.Shoes;
+		public override VendorShoeType ShoeType => Utility.RandomBool() ? VendorShoeType.Sandals : VendorShoeType.Shoes;
 
         public override void InitOutfit()
         {
@@ -100,10 +101,10 @@ namespace Server.Mobiles
             return (item is SmallSmithBOD || item is LargeSmithBOD);
         }
 
-  ///      public override bool SupportsBulkOrders(Mobile from)
-  ///      {
- ///           return (from is PlayerMobile && from.Skills[SkillName.Blacksmith].Base > 0);
-  ///      }
+       public override bool SupportsBulkOrders(Mobile from)
+        {
+           return (from is PlayerMobile && from.Skills[SkillName.Blacksmith].Base > 0);
+      }
 
         public override TimeSpan GetNextBulkOrder(Mobile from)
         {
@@ -119,9 +120,10 @@ namespace Server.Mobiles
                 ((PlayerMobile)from).NextSmithBulkOrder = TimeSpan.Zero;
         }
 
-        #endregion
+		#endregion
 
-        public Blacksmith(Serial serial)
+		
+		public Blacksmith(Serial serial)
             : base(serial)
         {
         }
