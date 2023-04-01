@@ -73,7 +73,7 @@ namespace Server.Mobiles.AI
 						: TimeSpan.FromSeconds(1.5);
 				var delay = spell == null
 					? TimeSpan.FromSeconds(m_Mobile.ActiveSpeed * 2.0)
-					: spell.GetCastDelay() + TimeSpan.FromMilliseconds(spell.GetCastRecovery()) + ts;
+					: spell.GetCastDelay() + spell.GetCastRecovery() + ts;
 
 				return DateTime.UtcNow + delay;
 			}
@@ -81,7 +81,7 @@ namespace Server.Mobiles.AI
 			{
 				var delay = spell == null
 					? TimeSpan.FromSeconds(m_Mobile.ActiveSpeed * 2.0)
-					: spell.GetCastDelay() + TimeSpan.FromMilliseconds(spell.GetCastRecovery()) + GetDelay(spell);
+					: spell.GetCastDelay() + spell.GetCastRecovery() + GetDelay(spell);
 				return DateTime.UtcNow + delay;
 			}
 		}

@@ -56,22 +56,15 @@ namespace Server.Items
 				to.Str = from.Str;
 				to.Dex = from.Dex;
 				to.Int = from.Int;
-				to.Level = from.Level;
-				to.RealLevel = from.RealLevel;
-				to.MaxLevel = from.MaxLevel;
-				to.Experience = from.Experience;
-				to.Traits = from.Traits;
-				to.NextMate = from.NextMate;
 				to.Female = from.Female;
 				to.IsBonded = from.IsBonded;
-
-
 
 				for ( int i = 0; i < from.Skills.Length; ++i )
 				{
 					to.Skills[i].Base = from.Skills[i].Base;
 					to.Skills[i].Cap = from.Skills[i].Cap;
 				}
+
 				to.ControlOrder = from.ControlOrder;
 				to.ControlTarget = from.ControlTarget;
 				to.Controlled = from.Controlled;

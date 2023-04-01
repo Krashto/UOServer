@@ -1,5 +1,6 @@
 ﻿using Server.Custom.Aptitudes;
 using Server.Items;
+using Server.Mobiles;
 using System;
 
 namespace Server.Engines.Craft
@@ -371,6 +372,14 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Livre de sort", 50.0, 126, typeof(PlainoisLeather), 1044377, 10, 1044378);
 			index = AddCraft(typeof(LivreClasseAucune), "Magie/Classes", "Livre d'oubli de classe", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 1", 50.0, 126, typeof(TreasureMapLevelOnePart), "Morceau de carte niveau 1", 1, "Vous n'avez pas assez de morceau de carte niveau 1");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 2", 50.0, 126, typeof(TreasureMapLevelTwoPart), "Morceau de carte niveau 2", 1, "Vous n'avez pas assez de morceau de carte niveau 2");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 3", 50.0, 126, typeof(TreasureMapLevelThreePart), "Morceau de carte niveau 3", 1, "Vous n'avez pas assez de morceau de carte niveau 3");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 4", 50.0, 126, typeof(TreasureMapLevelFourPart), "Morceau de carte niveau 4", 1, "Vous n'avez pas assez de morceau de carte niveau 4");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 5", 50.0, 126, typeof(TreasureMapLevelFivePart), "Morceau de carte niveau 5", 1, "Vous n'avez pas assez de morceau de carte niveau 5");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 6", 50.0, 126, typeof(TreasureMapLevelSixPart), "Morceau de carte niveau 6", 1, "Vous n'avez pas assez de morceau de carte niveau 6");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 7", 50.0, 126, typeof(TreasureMapLevelSevenPart), "Morceau de carte niveau 7", 1, "Vous n'avez pas assez de morceau de carte niveau 7");
+
 			#region Skills
 			index = AddCraft(typeof(LivreSkillsAlchemy), "Livre d'étude (skills)", "Alchemy", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsAnatomy), "Livre d'étude (skills)", "Anatomy", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -546,5 +555,5 @@ namespace Server.Engines.Craft
 			CanEnhance = true;
 			CanAlter = true;
 		}
-    }
+	}
 }

@@ -56,12 +56,6 @@ namespace Server.Scripts.Commands
 				to.Str = from.Str;
 				to.Dex = from.Dex;
 				to.Int = from.Int;
-				to.Level = from.Level;
-				to.RealLevel = from.RealLevel;
-				to.MaxLevel = from.MaxLevel;
-				to.Experience = from.Experience;
-				to.Traits = from.Traits;
-				to.NextMate = from.NextMate;
 				to.Female = from.Female;
 				to.IsBonded = from.IsBonded;
 
@@ -70,6 +64,7 @@ namespace Server.Scripts.Commands
 					to.Skills[i].Base = from.Skills[i].Base;
 					to.Skills[i].Cap = from.Skills[i].Cap;
 				}
+
 				to.ControlOrder = from.ControlOrder;
 				to.ControlTarget = from.ControlTarget;
 				to.Controlled = from.Controlled;
@@ -79,10 +74,8 @@ namespace Server.Scripts.Commands
 
 			}
 
-
 			protected override void OnTarget(Mobile from, object targeted)
 			{
-
 				if (targeted is BaseCreature bc)
 				{
 					if (from.InRange(bc, 1))
@@ -97,13 +90,10 @@ namespace Server.Scripts.Commands
 								{
 									Horse ph = new Horse();
 									ConvertAnimal(bc, ph);
-
 									from.AddToBackpack(new Saddlebag());
 								}
 								else
-								{
 									from.SendMessage("La saccoche doit être vide.");
-								}								
 							}
 							else if (targeted is PackLlama pl1)
 							{
@@ -114,9 +104,7 @@ namespace Server.Scripts.Commands
 									from.AddToBackpack(new Saddlebag());
 								}
 								else
-								{
 									from.SendMessage("La saccoche doit être vide.");
-								}
 							}
 							else
 								from.SendMessage("Vous devez cibler un cheval porteur ou un llama porteur.");
@@ -126,10 +114,7 @@ namespace Server.Scripts.Commands
 						from.SendMessage("C'est trop loin.");
 				}
 				else
-				{
 					from.SendMessage("Vous devez cibler un cheval porteur ou un llama porteur.");
-				}
-
 			}
 		}
 	}

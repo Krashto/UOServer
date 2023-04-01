@@ -1,170 +1,133 @@
+using System;
 using Server.Mobiles;
 
 namespace Server
 {
-    public sealed class Attributs : BaseAttributs
+    public sealed class Attributs
     {
-        public Attributs(CustomPlayerMobile owner)
-            : base(owner)
+		private CustomPlayerMobile m_Owner;
+		public int[] m_Values = new int[Enum.GetValues(typeof(Attribut)).Length];
+
+		#region Props
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Constitution
+		{
+			get { return this[Attribut.Constitution]; }
+			set { this[Attribut.Constitution] = value; }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Sagesse
+		{
+			get { return this[Attribut.Sagesse]; }
+			set { this[Attribut.Sagesse] = value; }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Endurance
+		{
+			get { return this[Attribut.Endurance]; }
+			set { this[Attribut.Endurance] = value; }
+		}
+		#endregion
+
+		public Attributs(CustomPlayerMobile owner)
         {
-        }
+			m_Owner = owner;
+		}
 
-        public Attributs(CustomPlayerMobile owner, GenericReader reader)
-            : base(owner, reader)
+		public Attributs(CustomPlayerMobile owner, GenericReader reader)
         {
-        }
+			m_Owner = owner;
 
-        public static int GetValue(CustomPlayerMobile m, Attribut attribut)
-        {
-            Attributs attr = m.Attributs;
-            int value = 0;
+			int version = reader.ReadInt();
 
-            if (attr != null)
-                value = attr[attribut];
+			m_Values = new int[reader.ReadInt()];
 
-            return value;
-        }
+			for (int i = 0; i < m_Values.Length; ++i)
+				m_Values[i] = reader.ReadInt();
+		}
 
-        public int this[Attribut attribut]
-        {
-            get { return GetValue(attribut); }
-            set { SetValue(attribut, value); }
-        }
+		public void Serialize(GenericWriter writer)
+		{
+			writer.Write((int)0); // version;
 
-        public override string ToString()
-        {
-            return "...";
-        }
+			writer.Write((int)m_Values.Length);
 
-        #region Props
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Constitution
-        {
-            get { return this[Attribut.Constitution]; }
-            set { this[Attribut.Constitution] = value; }
-        }
+			for (int i = 0; i < m_Values.Length; ++i)
+				writer.Write((int)m_Values[i]);
+		}
 
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Sagesse
-        {
-            get { return this[Attribut.Sagesse]; }
-            set { this[Attribut.Sagesse] = value; }
-        }
+		public int GetValue(Attribut attribut)
+		{
+			int index = GetIndex(attribut);
 
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Endurance
-        {
-            get { return this[Attribut.Endurance]; }
-            set { this[Attribut.Endurance] = value; }
-        }
-        #endregion
-    }
+			if (index >= 0 && index < m_Values.Length)
+			{
+				int value = m_Values[index];
+				return value;
+			}
 
-    [PropertyObject]
-    public abstract class BaseAttributs
-    {
-        private CustomPlayerMobile m_Owner;
-        public int[] m_Values;
-        private int[] m_Base = new int[3];
+			return 0;
+		}
 
-        public CustomPlayerMobile Owner { get { return m_Owner; } }
+		public void SetValue(Attribut attribut, int value)
+		{
+			int index = GetIndex(attribut);
 
-        public BaseAttributs(CustomPlayerMobile owner)
-        {
-            m_Owner = owner;
-            m_Values = m_Base;
-        }
+			if (index >= 0 && index < m_Values.Length)
+			{
+				int oldvalue = m_Values[index];
+				m_Values[index] = value;
+				m_Owner.OnAttributsChange(attribut, oldvalue, value);
+			}
+		}
 
-        public BaseAttributs(CustomPlayerMobile owner, GenericReader reader)
-        {
-            m_Owner = owner;
+		private int GetIndex(Attribut attribut)
+		{
+			int index = (int)attribut;
 
-            int version = reader.ReadInt();
-
-            m_Values = new int[reader.ReadInt()];
-
-            for (int i = 0; i < m_Values.Length; ++i)
-                m_Values[i] = reader.ReadInt();
-        }
-
-        public void Serialize(GenericWriter writer)
-        {
-            writer.Write((int)0); // version;
-
-            writer.Write((int)m_Values.Length);
-
-            for (int i = 0; i < m_Values.Length; ++i)
-                writer.Write((int)m_Values[i]);
-        }
-
-        public int GetValue(Attribut attribut)
-        {
-            int index = GetIndex(attribut);
-
-            if (index >= 0 && index < m_Values.Length)
-            {
-                int value = m_Values[index];
-
-                return value;
-            }
-
-            return 0;
-        }
-
-        public void SetValue(Attribut attribut, int value)
-        {
-            int index = GetIndex(attribut);
-
-            if (index >= 0 && index < m_Values.Length)
-            {
-                int oldvalue = m_Values[index];
-
-                m_Values[index] = value;
-
-                m_Owner.OnAttributsChange(attribut, oldvalue, value);
-            }
-        }
-
-        private int GetIndex(Attribut attribut)
-        {
-            int index = (int)attribut;
-
-            return index;
-        }
+			return index;
+		}
 
 
 		public bool CanDecreaseStat(Attribut attr)
 		{
-			return Owner.Attributs[attr] > 25;
+			return m_Owner.Attributs[attr] > 25;
 		}
-
 
 		public bool CanIncreaseStat(Attribut attr)
 		{
-			if (Owner.RawDex + Owner.RawStr + Owner.RawInt + Owner.Attributs[Attribut.Constitution] + Owner.Attributs[Attribut.Sagesse] + Owner.Attributs[Attribut.Endurance] >= 525)
+			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] >= 525)
 				return false;
 
-			return Owner.Attributs[attr] < 125;
+			return m_Owner.Attributs[attr] < 125;
 		}
 
 		public void IncreaseStat(Attribut attr)
 		{
 			if (CanIncreaseStat(attr))
-				Owner.Attributs[attr]++;
+				m_Owner.Attributs[attr]++;
 		}
 
 		public void DecreaseStat(Attribut attr)
 		{
 			if (CanDecreaseStat(attr))
-				Owner.Attributs[attr]--;
+				m_Owner.Attributs[attr]--;
 		}
 
-		public virtual void Reset()
-        {
-            for (int i = 0; i < m_Values.Length; i++)
-                m_Values[i] = 0;
+		public void Reset()
+		{
+			for (int i = 0; i < m_Values.Length; i++)
+				m_Values[i] = 0;
 
-            Owner.PUDispo = Owner.Experience.Niveau * 3;
+			m_Owner.PUDispo = m_Owner.Experience.Niveau * 3;
+		}
+
+		public int this[Attribut attribut]
+        {
+            get { return GetValue(attribut); }
+            set { SetValue(attribut, value); }
         }
     }
 }

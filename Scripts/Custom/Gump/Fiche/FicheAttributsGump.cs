@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
-using Server;
 using Server.Network;
 using Server.Mobiles;
-using Server.Gumps;
 
 namespace Server.Gumps
 {
@@ -11,11 +8,6 @@ namespace Server.Gumps
     {
         private CustomPlayerMobile m_From;
         private CustomPlayerMobile m_GM;
-
-        public static int GetBaseValue(CustomPlayerMobile from, Attribut attribut)
-        {
-            return from.BaseAttributs[attribut];
-        }
 
         public static int GetValue(CustomPlayerMobile from, Attribut attribut)
         {
@@ -45,7 +37,7 @@ namespace Server.Gumps
         {
             int value = GetAddedValue(from, attribut);
 
-            if (value + GetBaseValue(from, attribut) >= 160)
+            if (value >= 160)
                 return false;
 
             if (GetDisponiblePU(from) <= 0)
@@ -96,7 +88,7 @@ namespace Server.Gumps
                 AddLabel(139, 76, 2101, String.Format("Points d'attribut disponibles / en attente: {0} / {1}", GetDisponiblePU(m_From), GetRemainingPU(m_From, m_From.Experience.Niveau) - GetDisponiblePU(m_From)));
 
                 AddLabel(110, 109, 2101, "Constitution");
-                AddLabel(200, 109, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Constitution)));
+                AddLabel(200, 109, 2101, String.Format(": {0}", m_From.Attributs[Attribut.Constitution]));
 
                 if (gm == null && CanLower(m_From, Attribut.Constitution))
                     AddButton(235, 110, 5603, 5607, 5, GumpButtonType.Reply, 0);
@@ -105,7 +97,7 @@ namespace Server.Gumps
                     AddButton(259, 110, 5601, 5605, 1, GumpButtonType.Reply, 0);
 
                 AddLabel(110, 141, 2101, "Sagesse");
-                AddLabel(200, 141, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Sagesse)));
+                AddLabel(200, 141, 2101, String.Format(": {0}", m_From.Attributs[Attribut.Sagesse]));
 
                 if (gm == null && CanLower(m_From, Attribut.Sagesse))
                     AddButton(235, 142, 5603, 5607, 6, GumpButtonType.Reply, 0);
@@ -114,7 +106,7 @@ namespace Server.Gumps
                     AddButton(259, 142, 5601, 5605, 2, GumpButtonType.Reply, 0);
 
                 AddLabel(311, 109, 2101, "Endurance");
-                AddLabel(401, 109, 2101, String.Format(": {0}", m_From.GetAttributValue(Attribut.Endurance)));
+                AddLabel(401, 109, 2101, String.Format(": {0}", m_From.Attributs[Attribut.Endurance]));
 
                 if (gm == null && CanLower(m_From, Attribut.Endurance))
                     AddButton(436, 110, 5603, 5607, 7, GumpButtonType.Reply, 0);

@@ -67,10 +67,10 @@ namespace Server.Gumps
 
 			AddSection(x - 10, y + space * line++, 250, space * 10 - 1, "Capacités");
 			line++;
-			foreach (Capacite cap in Enum.GetValues(typeof(Capacite)))
+			foreach (Capacite capacite in Enum.GetValues(typeof(Capacite)))
 			{
-				AddHtmlTexte(x + 10, y + space * line, 150, cap.ToString());
-				AddHtmlTexte(x + 125, y + space * line++, 100, m_From.GetCapaciteValue(cap).ToString());
+				AddHtmlTexte(x + 10, y + space * line, 150, capacite.ToString());
+				AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Capacites[capacite].ToString());
 			}
 
 			line++;

@@ -28,9 +28,6 @@ namespace Server.Spells.OldSpells
 			Caster.Target = new InternalTarget( this );
 		}
 
-		// Archcure is now 1/4th of a second faster
-		public override int CastDelayBase{ get{ return base.CastDelayBase - 1; } }
-
 		public void Target( IPoint3D p )
 		{
 			if ( !Caster.CanSee( p ) )

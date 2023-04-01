@@ -627,16 +627,16 @@ namespace Server.Mobiles
 		{
 			Aptitudes = new Aptitudes(this);
 			Experience = new ExperienceSystem();
-			BaseAttributs = new BAttributs(this);
 			Attributs = new Attributs(this);
+			Capacites = new Capacites(this);
 		}
 
 		public CustomPlayerMobile(Serial s) : base(s)
 		{
 			Aptitudes = new Aptitudes(this);
 			Experience = new ExperienceSystem();
-			BaseAttributs = new BAttributs(this);
 			Attributs = new Attributs(this);
+			Capacites = new Capacites(this);
 		}
 
 		public virtual void Tip(Mobile m, string tip)
@@ -678,7 +678,7 @@ namespace Server.Mobiles
 				return true;
 
 			int chanceToFall = 0;
-			int equitation = GetCapaciteValue(Capacite.Equitation);
+			int equitation = Capacites.Equitation;
 
 			if (equitation < 0)
 				equitation = 0;
@@ -1115,16 +1115,13 @@ namespace Server.Mobiles
 		#region Aptitudes, Connaissances, Attributs
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public BAttributs BaseAttributs { get; set; }
-
-		[CommandProperty(AccessLevel.GameMaster)]
 		public Attributs Attributs { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Aptitudes Aptitudes { get; set; }
 
-		//[CommandProperty(AccessLevel.GameMaster)]
-		//public Capacites Capacites { get; set; }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Capacites Capacites { get; set; }
 
 		public virtual void OnAptitudesChange(Aptitude aptitude, int oldvalue, int newvalue)
 		{
@@ -1164,16 +1161,6 @@ namespace Server.Mobiles
 		public virtual int GetTotalAptitudeValue(Aptitude aptitude)
 		{
 			return Aptitudes[aptitude] + GetBaseAptitudeValue(aptitude);
-		}
-
-		public int GetAttributValue(Attribut attribut)
-		{
-			return Attributs[attribut] + BaseAttributs[attribut];
-		}
-
-		public int GetCapaciteValue(Capacite capacite)
-		{
-			return Classes.GetCapaciteValue(capacite, m_Classe);
 		}
 
 		public enum ValidateType
@@ -1435,7 +1422,7 @@ namespace Server.Mobiles
 				case 0:
 					{
 						Experience = new ExperienceSystem(reader);
-						BaseAttributs = new BAttributs(this, reader);
+						Capacites = new Capacites(this, reader);
 						Attributs = new Attributs(this, reader); 
 						Aptitudes = new Aptitudes(this, reader);
 						m_Classe = (Classe)reader.ReadInt();
@@ -1493,7 +1480,7 @@ namespace Server.Mobiles
 
 			//Version 0
 			Experience.Serialize(writer);
-			BaseAttributs.Serialize(writer);
+			Capacites.Serialize(writer);
 			Attributs.Serialize(writer);
 			Aptitudes.Serialize(writer);
 			writer.Write((int)m_Classe);

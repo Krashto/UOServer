@@ -1,37 +1,23 @@
-﻿using Server.Items;
-using System;
+﻿using System;
 
 namespace Server.Mobiles
 {
     public class Paragon
     {
-        public static double ChestChance = 0;// Chance that a paragon will carry a paragon chest
-        public static double ChocolateIngredientChance = 0;// Chance that a paragon will drop a chocolatiering ingredient
+        public static double ChestChance = 100; // Chance that a paragon will carry a paragon chest
+        public static double ChocolateIngredientChance = 0; // Chance that a paragon will drop a chocolatiering ingredient
 		public static Map[] Maps = new Map[]                   // Maps that paragons will spawn on
         {
 			Map.Ilshenar,
 		    Map.Trammel,
 			Map.Felucca
+		};
 
-	};
         public static Type[] Artifacts = new Type[]
         {
-  /*          typeof(GoldBricks), typeof(PhillipsWoodenSteed),
-            typeof(AlchemistsBauble), typeof(ArcticDeathDealer),
-            typeof(BlazeOfDeath), typeof(BowOfTheJukaKing),
-            typeof(BurglarsBandana), typeof(CavortingClub),
-            typeof(EnchantedTitanLegBone), typeof(GwennosHarp),
-            typeof(IolosLute), typeof(LunaLance),
-            typeof(NightsKiss), typeof(NoxRangersHeavyCrossbow),
-            typeof(OrcishVisage), typeof(PolarBearMask),
-            typeof(ShieldOfInvulnerability), typeof(StaffOfPower),
-            typeof(VioletCourage), typeof(HeartOfTheLion),
-            typeof(WrathOfTheDryad), typeof(PixieSwatter),
-           typeof(GlovesOfThePugilist)
-	*/
-
 		};
-        public static int Hue = 0xB1B;// Paragon hue
+
+        //public static int Hue = 0xB1B; // Paragon hue
 
         // Buffs
         public static double HitsBuff = 5.0;
@@ -50,7 +36,7 @@ namespace Server.Mobiles
                 !bc.CanBeParagon)
                 return;
 
-            bc.Hue = Hue;
+            //bc.Hue = Hue;
 
             if (bc.HitsMaxSeed >= 0)
                 bc.HitsMaxSeed = (int)(bc.HitsMaxSeed * HitsBuff);
@@ -62,7 +48,7 @@ namespace Server.Mobiles
             bc.Hits = bc.HitsMax;
             bc.Mana = bc.ManaMax;
             bc.Stam = bc.StamMax;
-			bc.Title = "Envoutée";
+			bc.Title = "[Paragon]";
 
 			for (int i = 0; i < bc.Skills.Length; i++)
             {
@@ -84,8 +70,6 @@ namespace Server.Mobiles
 
             if (bc.Fame > 32000)
                 bc.Fame = 32000;
-
-            // TODO: Mana regeneration rate = Sqrt( buffedFame ) / 4
 
             if (bc.Karma != 0)
             {
@@ -146,20 +130,10 @@ namespace Server.Mobiles
             if (Array.IndexOf(Maps, m) == -1)
                 return false;
 
-            if (bc is BaseChampion || bc is Harrower || bc is BaseVendor|| bc.IsParagon)
+            if (bc is BaseChampion || bc is Harrower || bc is BaseVendor || bc.IsParagon)
                 return false;
 
- /*           int fame = bc.Fame;
-
-            if (fame > 32000)
-                fame = 32000;
-
-            double chance = 1 / Math.Round(20.0 - (fame / 3200));
-
-			double change = Utility.RandomDouble();*/
-
-
-			return (Utility.RandomDouble() <= 0.03);
+			return Utility.Random(1, 1001) <= 1; //0.1%
         }
 
         public static bool CheckArtifactChance(Mobile m, BaseCreature bc)

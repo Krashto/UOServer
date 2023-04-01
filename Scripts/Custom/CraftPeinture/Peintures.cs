@@ -194,14 +194,8 @@ namespace Server.Items
 
 		public int OnCraft(int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, ITool tool, CraftItem craftItem, int resHue)
 		{
-		
-			
-
 			Crafter = from;
-
-
 			return quality;
-
 		}
 	}
 	

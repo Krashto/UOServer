@@ -1466,7 +1466,7 @@ namespace Server.Items
 				if (defender is CustomPlayerMobile)
 				{
 					var pm = defender as CustomPlayerMobile;
-					chance += pm.GetCapaciteValue(Capacite.Bouclier) * 0.05;
+					chance += pm.Capacites[Capacite.Bouclier] * 0.05;
 				}
 
 				if (defender.Player)
@@ -2988,9 +2988,9 @@ namespace Server.Items
 				var pm = attacker as CustomPlayerMobile;
 
 				if (this is BaseMeleeWeapon)
-					capaciteBonus = pm.GetCapaciteValue(Capacite.ArmesMelee) * 0.2;
+					capaciteBonus = pm.Capacites[Capacite.ArmesMelee] * 0.2;
 				else if (this is BaseRanged)
-					capaciteBonus = pm.GetCapaciteValue(Capacite.ArmesDistance) * 0.2;
+					capaciteBonus = pm.Capacites[Capacite.ArmesDistance] * 0.2;
 			}
 			#endregion
 
@@ -4220,10 +4220,44 @@ namespace Server.Items
 
         public override void AddNameProperties(ObjectPropertyList list)
         {
-            base.AddNameProperties(list);
+			var name = Name ?? String.Empty;
 
-            #region Mondain's Legacy Sets
-            if (IsSetItem)
+			if (String.IsNullOrWhiteSpace(name))
+				name = System.Text.RegularExpressions.Regex.Replace(GetType().Name, "[A-Z]", " $0");
+
+			if (IsSetItem)
+				list.Add($"<BASEFONT COLOR=#00FF00>{name}</BASEFONT>" );
+			else if (Quality == ItemQuality.Legendary)
+				list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>" );
+			else if (Quality == ItemQuality.Epic)
+				list.Add($"<BASEFONT COLOR=#A020F0>{name}</BASEFONT>");
+			else if (Quality == ItemQuality.Exceptional)
+				list.Add($"<BASEFONT COLOR=#0000FF>{name}</BASEFONT>");
+			else
+				list.Add($"<BASEFONT COLOR=#808080>{name}</BASEFONT>");
+
+			var desc = Description ?? String.Empty;
+			
+			if (!String.IsNullOrWhiteSpace(desc))
+				list.Add(desc);
+
+			if (IsSecure)
+				AddSecureProperty(list);
+			else if (IsLockedDown)
+				AddLockedDownProperty(list);
+
+			AddCraftedProperties(list);
+			AddLootTypeProperty(list);
+			AddUsesRemainingProperties(list);
+			AddWeightProperty(list);
+
+			AppendChildNameProperties(list);
+
+			if (QuestItem)
+				AddQuestItemProperty(list);
+
+			#region Mondain's Legacy Sets
+			if (IsSetItem)
             {
                 list.Add(1073491, Pieces.ToString()); // Part of a Weapon/Armor Set (~1_val~ pieces)
 

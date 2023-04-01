@@ -879,7 +879,7 @@ namespace Server
 
 		public static bool IsActive(SkillName skillName)
 		{
-			return skillName == SkillName.Alchemy || skillName == SkillName.Anatomy || skillName == SkillName.AnimalTaming || skillName == SkillName.Archery || skillName == SkillName.Blacksmith
+			return skillName == SkillName.Alchemy || skillName == SkillName.Anatomy || skillName == SkillName.AnimalTaming || skillName == SkillName.Archery || skillName == SkillName.ArmsLore || skillName == SkillName.Blacksmith
 				 || skillName == SkillName.Camping || skillName == SkillName.Cooking || skillName == SkillName.EvalInt || skillName == SkillName.Fencing || skillName == SkillName.Fishing || skillName == SkillName.Healing
 				 || skillName == SkillName.Hiding || skillName == SkillName.Inscribe || skillName == SkillName.Lumberjacking || skillName == SkillName.Macing || skillName == SkillName.Magery
 				 || skillName == SkillName.MagicResist || skillName == SkillName.Meditation || skillName == SkillName.Mining || skillName == SkillName.Musicianship || skillName == SkillName.Necromancy

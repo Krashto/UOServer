@@ -1,3 +1,5 @@
+using Server.Engines.Craft;
+
 namespace Server.Items
 {
     public class CityMap : MapItem
@@ -14,7 +16,7 @@ namespace Server.Items
         }
 
         public override int LabelNumber => 1015231;// city map
-        public override void CraftInit(Mobile from)
+        public override void CraftInit(Mobile from, CraftItem craftitem)
         {
             double skillValue = from.Skills[SkillName.Cartography].Value;
             int dist = 64 + (int)(skillValue * 4);

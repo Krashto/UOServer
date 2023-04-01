@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Mobiles;
 using Server.Custom.Capacites;
+using Newtonsoft.Json.Linq;
 
 namespace Server.Items
 {
@@ -323,7 +324,7 @@ namespace Server.Items
 				if (Parent is CustomPlayerMobile)
 				{
 					var pm = Parent as CustomPlayerMobile;
-					capaciteBonus = (int)(ar * (pm.GetCapaciteValue(Capacite.Armure) * 0.10));
+					capaciteBonus = (int)(ar * (pm.Capacites[Capacite.Armure] * 0.10));
 				}
 
 				ar += -8 + (8 * (int)m_Quality) + capaciteBonus;
@@ -1047,7 +1048,7 @@ namespace Server.Items
 			if (Parent is CustomPlayerMobile)
 			{
 				var pm = Parent as CustomPlayerMobile;
-				resist += (int)(resist * (pm.GetCapaciteValue(Capacite.Armure) * 0.10));
+				resist += (int)(resist * (pm.Capacites[Capacite.Armure] * 0.10));
 			}
 
 			return resist;
@@ -2340,7 +2341,41 @@ namespace Server.Items
 
         public override void AddNameProperties(ObjectPropertyList list)
         {
-            base.AddNameProperties(list);
+			var name = Name ?? String.Empty;
+
+			if (String.IsNullOrWhiteSpace(name))
+				name = System.Text.RegularExpressions.Regex.Replace(GetType().Name, "[A-Z]", " $0");
+
+			if (IsSetItem)
+				list.Add($"<BASEFONT COLOR=#00FF00>{name}</BASEFONT>");
+			else if (Quality == ItemQuality.Legendary)
+				list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>");
+			else if (Quality == ItemQuality.Epic)
+				list.Add($"<BASEFONT COLOR=#A020F0>{name}</BASEFONT>");
+			else if (Quality == ItemQuality.Exceptional)
+				list.Add($"<BASEFONT COLOR=#0000FF>{name}</BASEFONT>");
+			else
+				list.Add($"<BASEFONT COLOR=#808080>{name}</BASEFONT>");
+
+			var desc = Description ?? String.Empty;
+
+			if (!String.IsNullOrWhiteSpace(desc))
+				list.Add(desc);
+
+			if (IsSecure)
+				AddSecureProperty(list);
+			else if (IsLockedDown)
+				AddLockedDownProperty(list);
+
+			AddCraftedProperties(list);
+			AddLootTypeProperty(list);
+			AddUsesRemainingProperties(list);
+			AddWeightProperty(list);
+
+			AppendChildNameProperties(list);
+
+			if (QuestItem)
+				AddQuestItemProperty(list);
 
 			list.Add("Ressource: " + CraftResources.GetDescription(Resource));
 

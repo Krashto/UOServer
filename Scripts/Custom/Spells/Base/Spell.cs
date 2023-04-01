@@ -378,7 +378,7 @@ namespace Server.Spells
 
 			if (Caster is CustomPlayerMobile pm)
 			{
-				bonus += pm.GetCapaciteValue(Capacite.Magie) / 50;
+				bonus += pm.Capacites.Magie / 50;
 				bonus += pm.Aptitudes.GetValue(RequiredAptitude.First()) / 100;
 			}
 
@@ -651,7 +651,7 @@ namespace Server.Spells
 			{
 				CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
 
-				double chance = 100 - (pm.GetCapaciteValue(Capacite.Equitation) * 6);
+				double chance = 100 - (pm.Capacites.Equitation * 6);
 
 				if (Utility.Random(0, 100) <= chance)
 					return false;
@@ -662,11 +662,9 @@ namespace Server.Spells
 			return Caster.CheckSkill( CastSkill, minSkill, maxSkill );
 		}
 
-		public static int[] m_ManaTable = new int[]{ 8, 12, 16, 20, 25, 32, 45, 60 };
-
 		public virtual int GetMana()
 		{
-			return m_ManaTable[(int)Circle];
+			return GetAptitudeValue() * 4;
         }
 
         public virtual int GetAptitudeValue()
@@ -712,33 +710,59 @@ namespace Server.Spells
 			return (long)(delay * 1000);
 		}
 
-		public virtual int CastRecoveryBase{ get{ return 2; } }
-		public virtual int CastRecoveryCircleScalar{ get{ return 0; } }
-		public virtual int CastRecoveryFastScalar{ get{ return 0; } }
-		public virtual int CastRecoveryPerSecond{ get{ return 1; } }
-		public virtual int CastRecoveryMinimum{ get{ return 0; } }
+		public virtual int CastRecoveryBase => 6;
+		public virtual int CastRecoveryFastScalar => 1;
+		public virtual int CastRecoveryPerSecond => 4;
+		public virtual int CastRecoveryMinimum => 0;
 
-		public virtual long GetCastRecovery()
+		public virtual TimeSpan GetCastRecovery()
 		{
-            return CastRecoveryBase * 1000;
+			int fcrDelay = -CastRecoveryFastScalar;
+
+			int delay = CastRecoveryBase + fcrDelay;
+
+			if (delay < CastRecoveryMinimum)
+				delay = CastRecoveryMinimum;
+
+			return TimeSpan.FromSeconds((double)delay / CastRecoveryPerSecond);
 		}
 
-		public virtual int CastDelayBase{ get{ return 1; } }
-		public virtual int CastDelayCircleScalar{ get{ return 1; } }
-		public virtual int CastDelayFastScalar{ get{ return 0; } }
-		public virtual int CastDelayPerSecond{ get{ return 1; } }
-		public virtual int CastDelayMinimum{ get{ return 1; } }
+        public virtual TimeSpan CastDelayBase => GetCastDelayBase();
+        public virtual double CastDelayFastScalar => 1.0;
+		public virtual double CastDelaySecondsPerTick => 1.0;
+        public virtual TimeSpan CastDelayMinimum => TimeSpan.FromSeconds(0.5);
+
+
+		public TimeSpan GetCastDelayBase()
+		{
+			switch(RequiredAptitudeValue)
+			{
+				case 1:
+				case 2:
+				case 3: return TimeSpan.FromSeconds(1);
+				case 4:
+				case 5:
+				case 6: return TimeSpan.FromSeconds(1.5);
+				case 7:
+				case 8:
+				case 9: return TimeSpan.FromSeconds(2.5);
+				case 10:
+				case 11:
+				case 12:
+				default: return TimeSpan.FromSeconds(3);
+			}
+		}
 
 		public virtual TimeSpan GetCastDelay()
 		{
-            int scalar = 2;
+			TimeSpan baseDelay = CastDelayBase;
+			TimeSpan fcDelay = TimeSpan.FromSeconds(-(CastDelayFastScalar * CastDelaySecondsPerTick));
+			TimeSpan delay = baseDelay + fcDelay;
 
-            double value = (CastDelayBase + (CastDelayCircleScalar * (int)Circle / scalar)) / CastDelayPerSecond;
+			if (delay < CastDelayMinimum)
+				delay = CastDelayMinimum;
 
-            if (value < CastDelayMinimum)
-                value = CastDelayMinimum;
-
-            return TimeSpan.FromSeconds(value);
+			return delay;
 		}
 
 		public virtual void FinishSequence()
@@ -913,7 +937,7 @@ namespace Server.Spells
                         m_Spell.m_CastTimer = null;
                         m_Spell.m_Caster.OnSpellCast(m_Spell);
                         m_Spell.m_Caster.Region.OnSpellCast(m_Spell.m_Caster, m_Spell);
-                        m_Spell.m_Caster.NextSpellTime = Core.TickCount + m_Spell.GetCastRecovery();// Spell.NextSpellDelay;
+                        m_Spell.m_Caster.NextSpellTime = Core.TickCount + (int)m_Spell.GetCastRecovery().TotalMilliseconds;
 
                         Target originalTarget = m_Spell.m_Caster.Target;
 

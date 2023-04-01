@@ -1,3 +1,5 @@
+using Server.Engines.Craft;
+
 namespace Server.Items
 {
     public class NavigatorsWorldMap : WorldMap
@@ -39,7 +41,7 @@ namespace Server.Items
 			SetDisplay(256, 104, 1900, 1740, 600, 600);
 		}
 
-        public override void CraftInit(Mobile from)
+        public override void CraftInit(Mobile from, CraftItem craftitem)
         {
             // Unlike the others, world map is not based on crafted location
             Facet = from.Map;

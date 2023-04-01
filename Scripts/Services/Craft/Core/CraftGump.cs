@@ -585,7 +585,7 @@ namespace Server.Engines.Craft
 							var resource = CraftResources.GetFromType(res.ItemType);
 							var level = CraftResources.GetLevel(resource);
 
-							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill) || (pm != null && pm.GetCapaciteValue(Capacite.Expertise) < level))
+							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill) || (pm != null && pm.Capacites[Capacite.Expertise] < level))
                             {
                                 m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
                             }
@@ -606,7 +606,7 @@ namespace Server.Engines.Craft
 							var resource = CraftResources.GetFromType(res.ItemType);
 							var level = CraftResources.GetLevel(resource);
 
-							if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill || (pm != null && pm.GetCapaciteValue(Capacite.Expertise) < level))
+							if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill || (pm != null && pm.Capacites[Capacite.Expertise] < level))
                             {
                                 m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
                             }

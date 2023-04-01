@@ -1,6 +1,7 @@
 #region References
 using Server.ContextMenus;
 using Server.Engines.CannedEvil;
+using Server.Engines.Craft;
 using Server.Engines.Harvest;
 using Server.Mobiles;
 using Server.Multis;
@@ -54,7 +55,7 @@ namespace Server.Items
 
         public void AssignChestQuality(Mobile digger, TreasureMapChest chest)
         {
-            double skill = digger.Skills[SkillName.Cartography].Value;
+            double skill = digger.Skills[SkillName.Inscribe].Value;
 
             int dif;
 
@@ -160,7 +161,7 @@ namespace Server.Items
         #region Spawn Locations
         private static readonly Rectangle2D[] m_FelTramWrap = new Rectangle2D[]
         {
-            new Rectangle2D(0, 0, 2146, 2115),
+            new Rectangle2D(780, 540, 500, 800),
 		//	new Rectangle2D(1344, 1320, 2248, 552),
 		};
 
@@ -314,34 +315,51 @@ namespace Server.Items
                 if (m_Decoder != null)
                 {
                     if (m_Level == 6)
-                    {
                         return 1063453;
-                    }
                     else if (m_Level == 7)
-                    {
                         return 1116773;
-                    }
                     else
-                    {
                         return 1041516 + m_Level;
-                    }
                 }
                 else if (m_Level == 6)
-                {
                     return 1063452;
-                }
                 else if (m_Level == 7)
-                {
                     return 1116790;
-                }
                 else
-                {
                     return 1041510 + m_Level;
-                }
             }
         }
 
-        public TreasureMap()
+		public override void CraftInit(Mobile from, CraftItem craftItem)
+		{
+			var craftResCol = craftItem.Resources;
+			var craftRes = craftResCol.GetAt(0);
+
+			if (craftRes != null)
+			{
+				if (craftRes.ItemType.BaseType == typeof(BaseTreasureMapPart))
+				{
+					if (craftRes.ItemType == typeof(TreasureMapLevelOnePart))
+						InitMap(1, Map.Felucca, false);
+					else if (craftRes.ItemType == typeof(TreasureMapLevelTwoPart))
+						InitMap(2, Map.Felucca, false);
+					else if (craftRes.ItemType == typeof(TreasureMapLevelThreePart))
+						InitMap(3, Map.Felucca, false);
+					else if (craftRes.ItemType == typeof(TreasureMapLevelFourPart))
+						InitMap(4, Map.Felucca, false);
+					else if (craftRes.ItemType == typeof(TreasureMapLevelFivePart))
+						InitMap(5, Map.Felucca, false);
+					else if (craftRes.ItemType == typeof(TreasureMapLevelSixPart))
+						InitMap(6, Map.Felucca, false);
+					else if (craftRes.ItemType == typeof(TreasureMapLevelSevenPart))
+						InitMap(7, Map.Felucca, false);
+					else
+						InitMap(0, Map.Felucca, false);
+				}
+			}
+		}
+
+		public TreasureMap()
         {
         }
 
@@ -354,55 +372,57 @@ namespace Server.Items
         [Constructable]
         public TreasureMap(int level, Map map1, bool eodon)
         {
-            Level = level;
-            bool newSystem = TreasureMapInfo.NewSystem;
+			InitMap(level, map1, eodon);
+		}
 
-            if (newSystem)
-            {
-                AssignRandomPackage();
-            }
+		public void InitMap(int level, Map map1, bool eodon)
+		{
+			Level = level;
+			bool newSystem = TreasureMapInfo.NewSystem;
 
+			if (newSystem)
+				AssignRandomPackage();
 
 			Map map = Map.Felucca;
 
 			if ((!newSystem && level == 7) || map == Map.Internal)
-                map = GetRandomMap();
+				map = GetRandomMap();
 
-			 map = Map.Felucca;
+			map = Map.Felucca;
 
 			Facet = map;
-            ChestLocation = GetRandomLocation(map, eodon);
+			ChestLocation = GetRandomLocation(map, eodon);
 
-            Width = 300;
-            Height = 300;
-            int width, height;
+			Width = 300;
+			Height = 300;
+			int width, height;
 
-            GetWidthAndHeight(map, out width, out height);
+			GetWidthAndHeight(map, out width, out height);
 
-            int x1 = ChestLocation.X - Utility.RandomMinMax(width / 4, (width / 4) * 3);
-            int y1 = ChestLocation.Y - Utility.RandomMinMax(height / 4, (height / 4) * 3);
+			int x1 = ChestLocation.X - Utility.RandomMinMax(width / 4, (width / 4) * 3);
+			int y1 = ChestLocation.Y - Utility.RandomMinMax(height / 4, (height / 4) * 3);
 
-            if (x1 < 0)
-                x1 = 0;
+			if (x1 < 0)
+				x1 = 0;
 
-            if (y1 < 0)
-                y1 = 0;
+			if (y1 < 0)
+				y1 = 0;
 
-            int x2;
-            int y2;
+			int x2;
+			int y2;
 
-            AdjustMap(map, out x2, out y2, x1, y1, width, height, eodon);
+			AdjustMap(map, out x2, out y2, x1, y1, width, height, eodon);
 
-            x1 = x2 - width;
-            y1 = y2 - height;
+			x1 = x2 - width;
+			y1 = y2 - height;
 
-            Bounds = new Rectangle2D(x1, y1, width, height);
-            Protected = true;
+			Bounds = new Rectangle2D(x1, y1, width, height);
+			Protected = true;
 
-            AddWorldPin(ChestLocation.X, ChestLocation.Y);
+			AddWorldPin(ChestLocation.X, ChestLocation.Y);
 
-            NextReset = DateTime.UtcNow + ResetTime;
-        }
+			NextReset = DateTime.UtcNow + ResetTime;
+		}
 
         public Map GetRandomMap()
         {
@@ -851,7 +871,7 @@ namespace Server.Items
             }
         }
 
-        public override void OnDoubleClick(Mobile from)
+		public override void OnDoubleClick(Mobile from)
         {
             if (!from.InRange(GetWorldLocation(), 2))
             {
@@ -888,11 +908,11 @@ namespace Server.Items
             {
                 double minSkill = GetMinSkillLevel();
 
-                if (from.Skills[SkillName.Cartography].Value < minSkill)
+                if (from.Skills[SkillName.Inscribe].Value < minSkill)
                 {
                     if (m_Level == 1)
                     {
-                        from.CheckSkill(SkillName.Cartography, 0, minSkill);
+                        from.CheckSkill(SkillName.Inscribe, 0, minSkill);
                     }
                     else
                     {
@@ -900,7 +920,7 @@ namespace Server.Items
                     }
                 }
 
-                if (!from.CheckSkill(SkillName.Cartography, minSkill - 10, minSkill + 30))
+                if (!from.CheckSkill(SkillName.Inscribe, minSkill - 10, minSkill + 30))
                 {
                     from.LocalOverheadMessage(MessageType.Regular, 0x3B2, 503018); // You fail to make anything of the map.
                     return;
@@ -1128,26 +1148,12 @@ namespace Server.Items
 
         private double GetMinSkillLevel()
         {
-            switch (m_Level)
-            {
-                case 0:
-                    return 27;
-                case 1:
-                    return 70;
-                case 2:
-                    return 90;
-                case 3:
-                case 4:
-                    return 100.0;
-
-                default:
-                    return 0.0;
-            }
+			return 30 + m_Level * 10;
         }
 
         protected virtual bool HasRequiredSkill(Mobile from)
         {
-            return (from.Skills[SkillName.Cartography].Value >= GetMinSkillLevel());
+            return (from.Skills[SkillName.Inscribe].Value >= GetMinSkillLevel());
         }
 
         protected class DigTarget : Target
@@ -1211,7 +1217,7 @@ namespace Server.Items
                     }
 
                     int maxRange;
-                    double skillValue = TreasureMapInfo.NewSystem ? from.Skills[SkillName.Cartography].Value : from.Skills[SkillName.Mining].Value;
+                    double skillValue = TreasureMapInfo.NewSystem ? from.Skills[SkillName.Inscribe].Value : from.Skills[SkillName.Mining].Value;
 
                     if (skillValue >= 100.0)
                     {

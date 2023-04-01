@@ -1025,7 +1025,7 @@ namespace Server.Engines.Craft
 					var resource = CraftResources.GetFromType(subResource.ItemType);
 					var level = CraftResources.GetLevel(resource);
 
-					if (subResource != null && from.Skills[craftSystem.MainSkill].Base < subResource.RequiredSkill || (pm != null && pm.GetCapaciteValue(Capacite.Expertise) < level))
+					if (subResource != null && from.Skills[craftSystem.MainSkill].Base < subResource.RequiredSkill || (pm != null && pm.Capacites[Capacite.Expertise] < level))
                     {
                         message = subResource.Message;
                         return false;
@@ -1365,9 +1365,12 @@ namespace Server.Engines.Craft
 			var exceptionalChance = 0.0;
 
 			if (from is CustomPlayerMobile pm)
-				exceptionalChance = pm.GetCapaciteValue(Capacite.Expertise) * 4;
+			{
+				exceptionalChance += pm.Capacites[Capacite.Expertise] * 4;
+				exceptionalChance += pm.Skills[SkillName.ArmsLore].Value / 10;
+			}
 
-            return exceptionalChance;
+			return exceptionalChance;
         }
 
         public bool CheckSkills(
@@ -1378,11 +1381,10 @@ namespace Server.Engines.Craft
 
 		public ItemQuality GetQuality(CraftSystem system, double successChance, Mobile from, int expertise)
 		{
-			Random rand = new Random();
-			int chance = rand.Next(1, 100001);
+			int chance = Utility.Random(1, 100001);
 
-			double chanceLegendary = GetLegendaryChance(system, successChance, from) / 2000; // chance légendaire augmentée de 0.002% par point d'expertise, max de 0.01%
-			double chanceEpic = GetEpicChance(system, successChance, from) / 20; // chance épique augmentée de 0.2% par point d'expertise, max de 1%
+			double chanceLegendary = GetLegendaryChance(system, successChance, from); // chance légendaire augmentée de 0.002% par point d'expertise, max de 0.01%
+			double chanceEpic = GetEpicChance(system, successChance, from); // chance épique augmentée de 0.2% par point d'expertise, max de 1%
 			double chanceExceptional = GetExceptionalChance(system, successChance, from); // chance exceptionnelle augmentée de 4% par point d'expertise, max de 20%
 
 			// multiplier par 1000 pour obtenir un chiffre entier (0.002 étant la plus petite valeur (4/2000))
@@ -1403,7 +1405,7 @@ namespace Server.Engines.Craft
 			quality = 1;
 
 			if (from is CustomPlayerMobile pm)
-				quality = (int)GetQuality(craftSystem, chance, from, pm.GetCapaciteValue(Capacite.Expertise));
+				quality = (int)GetQuality(craftSystem, chance, from, pm.Capacites[Capacite.Expertise]);
 
             return chance > Utility.RandomDouble();
         }

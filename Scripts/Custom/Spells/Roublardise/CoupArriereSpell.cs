@@ -1,6 +1,7 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using System;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -21,17 +22,15 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 		public override SkillName CastSkill { get { return SkillName.Hiding; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public override int CastDelayBase { get { return 0; } }
-		public override int CastDelayCircleScalar { get { return 0; } }
-		public override int CastDelayFastScalar { get { return 0; } }
-		public override int CastDelayPerSecond { get { return 1; } }
-		public override int CastDelayMinimum { get { return 0; } }
+		public override TimeSpan CastDelayBase => TimeSpan.Zero;
+		public override double CastDelayFastScalar => 0;
+		public override double CastDelaySecondsPerTick => 1;
+		public override TimeSpan CastDelayMinimum => TimeSpan.Zero;
 
-		public override int CastRecoveryBase { get { return 0; } }
-		public override int CastRecoveryCircleScalar { get { return 0; } }
-		public override int CastRecoveryFastScalar { get { return 0; } }
-		public override int CastRecoveryPerSecond { get { return 1; } }
-		public override int CastRecoveryMinimum { get { return 0; } }
+		public override int CastRecoveryBase => 0;
+		public override int CastRecoveryFastScalar => 0;
+		public override int CastRecoveryPerSecond => 1;
+		public override int CastRecoveryMinimum => 0;
 
 		public CoupArriereSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
