@@ -56,9 +56,9 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo("1016449", typeof(CheckerBoard), 2, 20, 0xFA6, 0));
                 Add(new GenericBuyInfo(typeof(Backgammon), 2, 20, 0xE1C, 0));
                 Add(new GenericBuyInfo(typeof(Dices), 2, 20, 0xFA7, 0));
-                Add(new GenericBuyInfo("1041243", typeof(ContractOfEmployment), 1252, 20, 0x14F0, 0));
-                Add(new GenericBuyInfo("a barkeep contract", typeof(BarkeepContract), 1252, 20, 0x14F0, 0));
-                Add(new GenericBuyInfo("1062332", typeof(VendorRentalContract), 1252, 20, 0x14F0, 0x672));
+                //Add(new GenericBuyInfo("1041243", typeof(ContractOfEmployment), 1252, 20, 0x14F0, 0));
+                //Add(new GenericBuyInfo("a barkeep contract", typeof(BarkeepContract), 1252, 20, 0x14F0, 0));
+                //Add(new GenericBuyInfo("1062332", typeof(VendorRentalContract), 1252, 20, 0x14F0, 0x672));
             }
         }
 
@@ -94,7 +94,7 @@ namespace Server.Mobiles
                 Add(typeof(CheckerBoard), 1);
                 Add(typeof(Backgammon), 1);
                 Add(typeof(Dices), 1);
-                Add(typeof(ContractOfEmployment), 626);
+                
             }
         }
     }

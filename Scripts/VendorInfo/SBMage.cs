@@ -24,7 +24,7 @@ namespace Server.Mobiles
 
                 Add(new GenericBuyInfo(typeof(BlankScroll), 5, 20, 0x0E34, 0));
 
-                Add(new GenericBuyInfo(typeof(RecallRune), 15, 10, 0x1F14, 0));
+         //       Add(new GenericBuyInfo(typeof(RecallRune), 15, 10, 0x1F14, 0));
 
                
 
