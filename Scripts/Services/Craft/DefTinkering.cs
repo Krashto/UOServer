@@ -645,16 +645,16 @@ namespace Server.Engines.Craft
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
-			AddSubRes(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
-			AddSubRes(typeof(ForestierBoard), "Forestier", 30.0, "Vous ne savez pas travailler le bois Forestier");
-			AddSubRes(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
-			AddSubRes(typeof(DesertiqueBoard), "Desertique", 40.0, "Vous ne savez pas travailler le bois Desertique");
-			AddSubRes(typeof(MontagnardBoard), "Montagnard", 50.0, "Vous ne savez pas travailler le bois Montagnard");
-			AddSubRes(typeof(VolcaniqueBoard), "Volcanique", 50.0, "Vous ne savez pas travailler le bois Volcanique");
-			AddSubRes(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
-			AddSubRes(typeof(ToundroisBoard), "Toundrois", 60.0, "Vous ne savez pas travailler le bois Toundrois");
-			AddSubRes(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
+			AddSubRes2(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
+			AddSubRes2(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
+			AddSubRes2(typeof(ForestierBoard), "Forestier", 30.0, "Vous ne savez pas travailler le bois Forestier");
+			AddSubRes2(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
+			AddSubRes2(typeof(DesertiqueBoard), "Desertique", 40.0, "Vous ne savez pas travailler le bois Desertique");
+			AddSubRes2(typeof(MontagnardBoard), "Montagnard", 50.0, "Vous ne savez pas travailler le bois Montagnard");
+			AddSubRes2(typeof(VolcaniqueBoard), "Volcanique", 50.0, "Vous ne savez pas travailler le bois Volcanique");
+			AddSubRes2(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
+			AddSubRes2(typeof(ToundroisBoard), "Toundrois", 60.0, "Vous ne savez pas travailler le bois Toundrois");
+			AddSubRes2(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
 
 			MarkOption = true;
 			Repair = true;
