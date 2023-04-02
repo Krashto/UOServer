@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Lethal;
+		public override int Level => 1;
+		public override Biome Biome => Biome.Plaine;
+		public override Poison PoisonImmune => Poison.Lethal;
         public override bool BleedImmune => true;
         public override void Serialize(GenericWriter writer)
         {

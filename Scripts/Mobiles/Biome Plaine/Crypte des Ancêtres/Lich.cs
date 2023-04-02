@@ -49,7 +49,10 @@ namespace Server.Mobiles
         {
         }
 
-        public override TribeType Tribe => TribeType.Undead;
+
+		public override int Level => 3;
+		public override Biome Biome => Biome.Plaine;
+		public override TribeType Tribe => TribeType.Undead;
 
         public override bool CanRummageCorpses => true;
         public override bool BleedImmune => true;

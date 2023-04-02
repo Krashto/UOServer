@@ -49,7 +49,9 @@ namespace Server.Mobiles
         {
         }
 
-        public override bool AutoDispel => !Controlled;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Plaine;
+		public override bool AutoDispel => !Controlled;
         public override bool BleedImmune => true;
         public override bool ReacquireOnMovement => !Controlled;
         public override double BonusPetDamageScalar => 3.0;

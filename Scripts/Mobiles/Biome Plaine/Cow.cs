@@ -52,7 +52,8 @@ namespace Server.Mobiles
             if (Utility.Random(1000) == 0) // 0.1% chance to have mad cows
                 FightMode = FightMode.Closest;
         }
-
+		public override int Level => 2;
+		public override Biome Biome => Biome.Plaine;
 		public override bool CanBeParagon => false;
 		public Cow(Serial serial)
             : base(serial)

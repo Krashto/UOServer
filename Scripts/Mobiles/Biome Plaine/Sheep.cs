@@ -53,6 +53,9 @@ namespace Server.Mobiles
             MinTameSkill = 11.1;
         }
 
+		public override int Level => 1;
+		public override Biome Biome => Biome.Plaine;
+
 		public override bool CanBeParagon => false;
 		public Sheep(Serial serial)
             : base(serial)

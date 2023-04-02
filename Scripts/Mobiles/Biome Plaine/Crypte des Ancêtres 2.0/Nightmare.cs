@@ -90,7 +90,10 @@ namespace Server.Mobiles
         {
         }
 
-        public override int Meat => 5;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Plaine;
+
+		public override int Meat => 5;
       //  public override int Hides => 10;
 		/*   public override HideType HideType => HideType.Barbed;
 		   public override FoodType FavoriteFood => FoodType.Meat;*/
