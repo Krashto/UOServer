@@ -54,7 +54,7 @@ namespace Server.Engines.Harvest
                 // Set the list of harvestable tiles
                 Tiles = m_WaterTiles,
                 SpecialTiles = m_LavaTiles,
-				RangedTiles = true,
+				//RangedTiles = true,
 
 				// Players must be within 4 tiles to harvest
 				MaxRange = 4,

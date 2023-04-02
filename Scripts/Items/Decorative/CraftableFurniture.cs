@@ -85,8 +85,8 @@ namespace Server.Items
         {
             CraftResourceInfo info = CraftResources.IsStandard(m_Resource) ? null : CraftResources.GetInfo(m_Resource);
 
-            if (info != null && info.Number > 0)
-                list.Add(info.Number);
+            if (info != null && !string.IsNullOrEmpty(info.Name))
+                list.Add($"Ressource: {info.Name}");
         }
 
         public override void Serialize(GenericWriter writer)
