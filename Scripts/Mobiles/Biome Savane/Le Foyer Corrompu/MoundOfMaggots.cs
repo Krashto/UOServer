@@ -28,16 +28,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 50.0);
             SetSkill(SkillName.Wrestling, 50.1, 60.0);
 
-            Fame = 1000;
-            Karma = -1000;
+         //   Fame = 1000;
+         //   Karma = -1000;
         }
 
         public MoundOfMaggots(Serial serial)
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Lethal;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Savane;
+		public override Poison PoisonImmune => Poison.Lethal;
         public override int TreasureMapLevel => 1;
         public override void GenerateLoot()
         {

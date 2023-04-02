@@ -34,8 +34,8 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 79.3, 94.0);
 			SetSkill(SkillName.Wrestling, 79.3, 94.0);
 
-			Fame = 11000;
-            Karma = -11000;
+		//	Fame = 11000;
+        //    Karma = -11000;
 
             Tamable = true;
             ControlSlots = 2;
@@ -43,8 +43,9 @@ namespace Server.Mobiles
 
             SetMagicalAbility(MagicalAbility.Piercing);
         }
-
-        public override int GetIdleSound() { return 0x673; }
+		public override int Level => 6;
+		public override Biome Biome => Biome.Savane;
+		public override int GetIdleSound() { return 0x673; }
         public override int GetAngerSound() { return 0x670; }
         public override int GetHurtSound() { return 0x672; }
         public override int GetDeathSound() { return 0x671; }

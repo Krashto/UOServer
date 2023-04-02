@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a llama corpse")]
+    [CorpseName("le Corps d'un Llama")]
     public class Llama : BaseCreature
     {
         [Constructable]
         public Llama()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a llama";
+            Name = "Un Llama";
             Body = 0xDC;
             BaseSoundID = 0x3F3;
 
@@ -28,8 +28,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 19.2, 29.0);
             SetSkill(SkillName.Wrestling, 19.2, 29.0);
 
-            Fame = 300;
-            Karma = 0;
+       //     Fame = 300;
+       //     Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;
@@ -40,7 +40,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 3;
+		public override Biome Biome => Biome.Savane;
 		public override bool CanBeParagon => false;
 		public override int Meat => 1;
         public override int Hides => 4;

@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a terathan matriarch corpse")]
+    [CorpseName("Le Corps d'une Therathan")]
     public class TerathanMatriarch : BaseCreature
     {
         [Constructable]
         public TerathanMatriarch()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a terathan matriarch";
+            Name = "Une Therathan Matriarche";
             Body = 72;
             BaseSoundID = 599;
 
@@ -43,8 +43,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 4;
+		public override int Level => 10;
+		public override Biome Biome => Biome.Savane;
+		public override int TreasureMapLevel => 4;
 
 		public override int Hides => 10;
 		public override HideType HideType => HideType.Arachnide;
@@ -59,8 +60,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.Rich);
             AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.Potions);
             AddLoot(LootPack.NecroRegs, 4, 10);
             AddLoot(LootPack.LootItem<SpidersSilk>(100.0, 5, false, true));
         }

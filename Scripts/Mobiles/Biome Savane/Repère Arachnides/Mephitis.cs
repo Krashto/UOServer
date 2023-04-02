@@ -50,8 +50,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override ChampionSkullType SkullType => ChampionSkullType.Venom;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Savane;
+		public override ChampionSkullType SkullType => ChampionSkullType.Venom;
         public override Type[] UniqueList => new[] { typeof(Calm) };
         public override Type[] SharedList => new[] { typeof(OblivionsNeedle), typeof(ANecromancerShroud) };
         public override Type[] DecorativeList => new[] { typeof(Web), typeof(MonsterStatuette) };

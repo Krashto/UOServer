@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a solen queen corpse")]
+    [CorpseName("Le corps d'un fourifeu")]
     public class RedSolenQueen : BaseCreature, IRedSolen
     {
         private bool m_BurstSac;
@@ -14,7 +14,7 @@ namespace Server.Mobiles
         public RedSolenQueen()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a red solen queen";
+            Name = "Une matriarche fourifeu";
             Body = 783;
             BaseSoundID = 959;
 
@@ -39,10 +39,11 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.0);
             SetSkill(SkillName.Wrestling, 90.0);
 
-            Fame = 4500;
-            Karma = -4500;
+     //       Fame = 4500;
+      //      Karma = -4500;
         }
-
+		public override int Level => 13;
+		public override Biome Biome => Biome.Savane;
 		public override int Hides => 10;
 		public override HideType HideType => HideType.Arachnide;
 

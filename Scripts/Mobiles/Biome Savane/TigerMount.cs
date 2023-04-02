@@ -49,8 +49,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 6;
+		public override Biome Biome => Biome.Savane;
 
-        public override int Meat => 3;
+		public override int Meat => 3;
         public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish | FoodType.Eggs | FoodType.FruitsAndVegies;
         public override void Serialize(GenericWriter writer)
         {

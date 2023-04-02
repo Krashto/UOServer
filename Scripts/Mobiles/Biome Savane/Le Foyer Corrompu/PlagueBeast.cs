@@ -76,13 +76,12 @@ namespace Server.Mobiles
 
             SetSpecialAbility(SpecialAbility.PoisonSpit);
         }
-
-        public override void GenerateLoot()
+		public override int Level => 6;
+		public override Biome Biome => Biome.Savane;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Gems, Utility.Random(1, 3));
-            AddLoot(LootPack.LootItem<PlagueBeastGland>(80.0));
-            AddLoot(LootPack.PeculiarSeed2);
         }
 
         public override void OnDamagedBySpell(Mobile caster)

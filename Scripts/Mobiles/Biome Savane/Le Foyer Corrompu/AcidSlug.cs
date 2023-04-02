@@ -45,12 +45,11 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override void GenerateLoot()
+		public override int Level => 3;
+		public override Biome Biome => Biome.Savane;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.LootItem<AcidSac>(75.0));
-            AddLoot(LootPack.LootItem<CongealedSlugAcid>());
         }
 
         public override int GetIdleSound()

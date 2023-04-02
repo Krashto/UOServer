@@ -43,8 +43,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 3;
+		public override Biome Biome => Biome.Savane;
 
-        public override int Meat => 5;
+		public override int Meat => 5;
         public override int Hides => 8;
         public override FoodType FavoriteFood => FoodType.Fish | FoodType.FruitsAndVegies | FoodType.Meat;
         public override PackInstinct PackInstinct => PackInstinct.Bear;

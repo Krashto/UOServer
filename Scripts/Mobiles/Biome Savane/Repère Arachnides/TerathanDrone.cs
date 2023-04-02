@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a terathan drone corpse")]
+    [CorpseName("Le corps d'une therathan")]
     public class TerathanDrone : BaseCreature
     {
         [Constructable]
         public TerathanDrone()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a terathan drone";
+            Name = "Un Drone Therathan";
             Body = 71;
             BaseSoundID = 594;
 
@@ -43,8 +43,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 4;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Savane;
+		public override int Meat => 4;
 
         public override TribeType Tribe => TribeType.Terathan;
 
