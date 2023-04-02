@@ -5,7 +5,7 @@ using Server.Mobiles;
 
 namespace Server
 {
-    public class Capacites
+    public sealed class Capacites
     {
 		private CustomPlayerMobile m_Owner;
 		private int[] m_Values = new int[Enum.GetValues(typeof(Capacite)).Length];
@@ -85,8 +85,7 @@ namespace Server
 
 		public int GetValue(Capacite capacite)
 		{
-			int value = Classes.GetCapaciteValue(capacite, m_Owner.Classe);
-			return m_Values[(int)capacite];
+			return 2 + m_Values[(int)capacite] + Classes.GetCapaciteValue(capacite, m_Owner.Classe);
 		}
 
 		public int this[Capacite Capacite]
@@ -115,6 +114,11 @@ namespace Server
 
 				m_Values[index] = value;
 
+				if (m_Values[index] < 0)
+					m_Values[index] = 0;
+				else if (m_Values[index] > 3)
+					m_Values[index] = 3;
+
 				m_Owner.OnCapacitesChange(capacite, oldvalue, value);
 			}
 		}
@@ -134,16 +138,16 @@ namespace Server
 			if (m_Owner.PUDispo <= 0)
 				return false;
 
-			return m_Values[(int)attr] < 5;
+			return m_Values[(int)attr] < 3;
 		}
 
-		public void IncreaseStat(Capacite attr)
+		public void Increase(Capacite attr)
 		{
 			if (CanIncreaseStat(attr))
 				m_Values[(int)attr]++;
 		}
 
-		public void DecreaseStat(Capacite attr)
+		public void Decrease(Capacite attr)
 		{
 			if (CanDecreaseStat(attr))
 				m_Values[(int)attr]--;

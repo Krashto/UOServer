@@ -1,12 +1,10 @@
 ﻿using System;
 using Server.Network;
 using Server.Mobiles;
-using System.Collections.Generic;
 using Server.Custom.Aptitudes;
 using Server.Custom.Classes;
-using Server.Items;
-using System.Linq;
 using Server.Custom.Capacites;
+using Server.Items;
 
 namespace Server.Gumps
 {
@@ -67,10 +65,15 @@ namespace Server.Gumps
 
 			AddSection(x - 10, y + space * line++, 250, space * 10 - 1, "Capacités");
 			line++;
-			foreach (Capacite capacite in Enum.GetValues(typeof(Capacite)))
+			for (int i = 0; i < Enum.GetValues(typeof(Capacite)).Length; i++)
 			{
+				var capacite = (Capacite)i;
+				if (m_From.Capacites.CanIncreaseStat(capacite))
+					AddButton(x + 120, y + space * line + 2, 5603, 5607, 500 + i, GumpButtonType.Reply, 0);
 				AddHtmlTexte(x + 10, y + space * line, 150, capacite.ToString());
 				AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Capacites[capacite].ToString());
+				if (m_From.Capacites.CanDecreaseStat(capacite))
+					AddButton(x + 180, y + space * line + 2, 5603, 5607, 550 + i, GumpButtonType.Reply, 0);
 			}
 
 			line++;
@@ -80,61 +83,85 @@ namespace Server.Gumps
 
 			AddHtmlTexte(x + 10, y + space * line, 150, "Force");
 
-			if (m_From.CanDecreaseStat(StatType.Str))
+			if (m_From.CanDecreaseStat(StatType.Str, 10))
+				AddButton(x + 100, y + space * line + 2, 5603, 5607, 400, GumpButtonType.Reply, 0);
+			if (m_From.CanDecreaseStat(StatType.Str, 1))
 				AddButton(x + 120, y + space * line + 2, 5603, 5607, 300, GumpButtonType.Reply, 0);
 
-			if (m_From.CanIncreaseStat(StatType.Str))
+			if (m_From.CanIncreaseStat(StatType.Str, 1))
 				AddButton(x + 180, y + space * line + 2, 5601, 5605, 301, GumpButtonType.Reply, 0);
+			if (m_From.CanIncreaseStat(StatType.Str, 10))
+				AddButton(x + 200, y + space * line + 2, 5601, 5605, 401, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Str.ToString());
 
 			AddHtmlTexte(x + 10, y + space * line, 150, "Dextérité");
 
-			if (m_From.CanDecreaseStat(StatType.Dex))
+			if (m_From.CanDecreaseStat(StatType.Dex, 10))
+				AddButton(x + 100, y + space * line + 2, 5603, 5607, 402, GumpButtonType.Reply, 0);
+			if (m_From.CanDecreaseStat(StatType.Dex, 1))
 				AddButton(x + 120, y + space * line + 2, 5603, 5607, 302, GumpButtonType.Reply, 0);
 
-			if (m_From.CanIncreaseStat(StatType.Dex))
+			if (m_From.CanIncreaseStat(StatType.Dex, 1))
 				AddButton(x + 180, y + space * line + 2, 5601, 5605, 303, GumpButtonType.Reply, 0);
+			if (m_From.CanIncreaseStat(StatType.Dex, 10))
+				AddButton(x + 200, y + space * line + 2, 5601, 5605, 403, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Dex.ToString());
 
 			AddHtmlTexte(x + 10, y + space * line, 150, "Intelligence");
 
-			if (m_From.CanDecreaseStat(StatType.Int))
+			if (m_From.CanDecreaseStat(StatType.Int, 10))
+				AddButton(x + 100, y + space * line + 2, 5603, 5607, 404, GumpButtonType.Reply, 0);
+			if (m_From.CanDecreaseStat(StatType.Int, 1))
 				AddButton(x + 120, y + space * line + 2, 5603, 5607, 304, GumpButtonType.Reply, 0);
 
-			if (m_From.CanIncreaseStat(StatType.Int))
+			if (m_From.CanIncreaseStat(StatType.Int, 1))
 				AddButton(x + 180, y + space * line + 2, 5601, 5605, 305, GumpButtonType.Reply, 0);
+			if (m_From.CanIncreaseStat(StatType.Int, 10))
+				AddButton(x + 200, y + space * line + 2, 5601, 5605, 405, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Int.ToString());
 
 			AddHtmlTexte(x + 10, y + space * line, 150, "Constitution");
 
-			if (m_From.Attributs.CanDecreaseStat(Attribut.Constitution))
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Constitution, 10))
+				AddButton(x + 100, y + space * line + 2, 5603, 5607, 406, GumpButtonType.Reply, 0);
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Constitution, 1))
 				AddButton(x + 120, y + space * line + 2, 5603, 5607, 306, GumpButtonType.Reply, 0);
 
-			if (m_From.Attributs.CanIncreaseStat(Attribut.Constitution))
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Constitution, 1))
 				AddButton(x + 180, y + space * line + 2, 5601, 5605, 307, GumpButtonType.Reply, 0);
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Constitution, 10))
+				AddButton(x + 200, y + space * line + 2, 5601, 5605, 407, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Attributs.Constitution.ToString());
 
 			AddHtmlTexte(x + 10, y + space * line, 150, "Endurance");
 
-			if (m_From.Attributs.CanDecreaseStat(Attribut.Endurance))
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Endurance, 10))
+				AddButton(x + 100, y + space * line + 2, 5603, 5607, 410, GumpButtonType.Reply, 0);
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Endurance, 1))
 				AddButton(x + 120, y + space * line + 2, 5603, 5607, 310, GumpButtonType.Reply, 0);
 
-			if (m_From.Attributs.CanIncreaseStat(Attribut.Endurance))
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Endurance, 1))
 				AddButton(x + 180, y + space * line + 2, 5601, 5605, 311, GumpButtonType.Reply, 0);
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Endurance, 10))
+				AddButton(x + 200, y + space * line + 2, 5601, 5605, 411, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Attributs.Endurance.ToString());
 
 			AddHtmlTexte(x + 10, y + space * line, 150, "Sagesse");
 
-			if (m_From.Attributs.CanDecreaseStat(Attribut.Sagesse))
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Sagesse, 10))
+				AddButton(x + 100, y + space * line + 2, 5603, 5607, 408, GumpButtonType.Reply, 0);
+			if (m_From.Attributs.CanDecreaseStat(Attribut.Sagesse, 1))
 				AddButton(x + 120, y + space * line + 2, 5603, 5607, 308, GumpButtonType.Reply, 0);
 
-			if (m_From.Attributs.CanIncreaseStat(Attribut.Sagesse))
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Sagesse, 1))
 				AddButton(x + 180, y + space * line + 2, 5601, 5605, 309, GumpButtonType.Reply, 0);
+			if (m_From.Attributs.CanIncreaseStat(Attribut.Sagesse, 10))
+				AddButton(x + 200, y + space * line + 2, 5601, 5605, 409, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Attributs.Sagesse.ToString());
 
@@ -169,6 +196,7 @@ namespace Server.Gumps
 			AddHtmlTexte(x + 525, y + space * line++, 100, m_From.Classe.ToString());
 			var info = Classes.GetInfos(m_From.Classe);
 			AddHtmlTexte(x + 261, y + space * line++, 150, "Aptitudes");
+
 			if (info.Aptitudes.Length > 0)
 			{
 				foreach (var apt in info.Aptitudes)
@@ -181,11 +209,12 @@ namespace Server.Gumps
 				AddHtmlTexte(x + 261, y + space * line++, 100, "Aucune");
 
 			AddHtmlTexte(x + 261, y + space * line++, 150, "Capacités");
+
 			if (info.Capacites.Length > 0)
 			{
 				foreach (var cap in info.Capacites)
 				{
-					AddHtmlTexte(x + 270, y + space * line, 150, cap.ToString());
+					AddHtmlTexte(x + 270, y + space * line, 150, cap.Capacite.ToString());
 					AddHtmlTexte(x + 525, y + space * line++, 100, cap.Value.ToString());
 				}
 			}
@@ -219,62 +248,132 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 300)
 			{
-				m_From.DecreaseStat(StatType.Str);
+				m_From.DecreaseStat(StatType.Str, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 301)
 			{
-				m_From.IncreaseStat(StatType.Str);
+				m_From.IncreaseStat(StatType.Str, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 302)
 			{
-				m_From.DecreaseStat(StatType.Dex);
+				m_From.DecreaseStat(StatType.Dex, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 303)
 			{
-				m_From.IncreaseStat(StatType.Dex);
+				m_From.IncreaseStat(StatType.Dex, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 304)
 			{
-				m_From.DecreaseStat(StatType.Int);
+				m_From.DecreaseStat(StatType.Int, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 305)
 			{
-				m_From.IncreaseStat(StatType.Int);
+				m_From.IncreaseStat(StatType.Int, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 306)
 			{
-				m_From.Attributs.DecreaseStat(Attribut.Constitution);
+				m_From.Attributs.Decrease(Attribut.Constitution, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 307)
 			{
-				m_From.Attributs.IncreaseStat(Attribut.Constitution);
+				m_From.Attributs.Increase(Attribut.Constitution, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 308)
 			{
-				m_From.Attributs.DecreaseStat(Attribut.Sagesse);
+				m_From.Attributs.Decrease(Attribut.Sagesse, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 309)
 			{
-				m_From.Attributs.IncreaseStat(Attribut.Sagesse);
+				m_From.Attributs.Increase(Attribut.Sagesse, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 310)
 			{
-				m_From.Attributs.DecreaseStat(Attribut.Endurance);
+				m_From.Attributs.Decrease(Attribut.Endurance, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID == 311)
 			{
-				m_From.Attributs.IncreaseStat(Attribut.Endurance);
+				m_From.Attributs.Increase(Attribut.Endurance, 1);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 400)
+			{
+				m_From.DecreaseStat(StatType.Str, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 401)
+			{
+				m_From.IncreaseStat(StatType.Str, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 402)
+			{
+				m_From.DecreaseStat(StatType.Dex, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 403)
+			{
+				m_From.IncreaseStat(StatType.Dex, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 404)
+			{
+				m_From.DecreaseStat(StatType.Int, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 405)
+			{
+				m_From.IncreaseStat(StatType.Int, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 406)
+			{
+				m_From.Attributs.Decrease(Attribut.Constitution, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 407)
+			{
+				m_From.Attributs.Increase(Attribut.Constitution, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 408)
+			{
+				m_From.Attributs.Decrease(Attribut.Sagesse, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 409)
+			{
+				m_From.Attributs.Increase(Attribut.Sagesse, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 410)
+			{
+				m_From.Attributs.Decrease(Attribut.Endurance, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 411)
+			{
+				m_From.Attributs.Increase(Attribut.Endurance, 10);
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID >= 500 && info.ButtonID < 550)
+			{
+				m_From.Capacites.Decrease((Capacite)(info.ButtonID - 500));
+				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID >= 550 && info.ButtonID < 600)
+			{
+				m_From.Capacites.Increase((Capacite)(info.ButtonID - 550));
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 		}

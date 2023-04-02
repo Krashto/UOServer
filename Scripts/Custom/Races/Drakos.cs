@@ -2,9 +2,9 @@
 
 namespace Server.Custom.Races
 {
-	class Breton : BaseRace
+	class Drakos : BaseRace
 	{
-		public override string Background => "Les Bretons";
+		public override string Background => "Les Drakos";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -17,10 +17,10 @@ namespace Server.Custom.Races
 			* 3) Race 0xFF is reserved for core use.
 			* 4) Changing or removing any predefined races may cause server instability.
 			*/
-			RegisterRace(new Breton(4, 4));
+			RegisterRace(new Drakos(1, 1));
 		}
 
-		public Breton(int raceID, int raceIndex) : base(raceID, raceIndex, "Breton", "Bretons", 400, 401, 402, 403)
+		public Drakos(int raceID, int raceIndex) : base(raceID, raceIndex, "Drako", "Drakos", 400, 401, 402, 403)
 		{
 		}
 
@@ -63,7 +63,7 @@ namespace Server.Custom.Races
 				default:
 					break;
 			}
-			return new CorpsBreton(itemId, hue);
+			return new CorpsArgonian(itemId, hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
@@ -110,20 +110,20 @@ namespace Server.Custom.Races
 
 namespace Server.Items
 {
-	public class CorpsBreton : BaseRaceGumps
+	public class CorpsArgonian : BaseRaceGumps
 	{
 		[Constructable]
-		public CorpsBreton() : this(0)
+		public CorpsArgonian() : this(0)
 		{
 		}
 
 		[Constructable]
-		public CorpsBreton(int id, int hue) : base(id, hue)
+		public CorpsArgonian(int id, int hue) : base(id, hue)
 		{
-			Name = "Breton";
+			Name = "Argonian";
 		}
 
-		public CorpsBreton(Serial serial)
+		public CorpsArgonian(Serial serial)
 			: base(serial)
 		{
 		}

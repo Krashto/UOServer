@@ -17,6 +17,8 @@ using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.CustomScripts.Systems.Experience;
 using Server.Custom.Capacites;
+using Newtonsoft.Json.Linq;
+
 #endregion
 
 namespace Server.Mobiles
@@ -741,53 +743,53 @@ namespace Server.Mobiles
 
 		#region Stats
 
-		public bool CanDecreaseStat(StatType stats)
+		public bool CanDecreaseStat(StatType stats, int value)
 		{
 			switch (stats)
 			{
-				case StatType.Str: return RawStr > 25;
-				case StatType.Dex: return RawDex > 25;
-				case StatType.Int: return RawInt > 25;
+				case StatType.Str: return RawStr - value > 25;
+				case StatType.Dex: return RawDex - value > 25;
+				case StatType.Int: return RawInt - value > 25;
 				default: return false;
 			}
 		}
 
-		public bool CanIncreaseStat(StatType stats)
+		public bool CanIncreaseStat(StatType stats, int value)
 		{
-			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance>= 525)
+			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value >= 525)
 				return false;
 
 			switch (stats)
 			{
-				case StatType.Str: return RawStr < 125;
-				case StatType.Dex: return RawDex < 125;
-				case StatType.Int: return RawInt < 125;
+				case StatType.Str: return RawStr + value < 125;
+				case StatType.Dex: return RawDex + value < 125;
+				case StatType.Int: return RawInt + value < 125;
 				default: return false;
 			}
 		}
 
-		public void IncreaseStat(StatType stats)
+		public void IncreaseStat(StatType stats, int value)
 		{
-			if (CanIncreaseStat(stats))
+			if (CanIncreaseStat(stats, value))
 			{
 				switch (stats)
 				{
-					case StatType.Str: RawStr++; break;
-					case StatType.Dex: RawDex++; break;
-					case StatType.Int: RawInt++; break;
+					case StatType.Str: RawStr += value; break;
+					case StatType.Dex: RawDex += value; break;
+					case StatType.Int: RawInt += value; break;
 				}
 			}
 		}
 
-		public void DecreaseStat(StatType stats)
+		public void DecreaseStat(StatType stats, int value)
 		{
-			if (CanDecreaseStat(stats))
+			if (CanDecreaseStat(stats, value))
 			{
 				switch (stats)
 				{
-					case StatType.Str: RawStr--; break;
-					case StatType.Dex: RawDex--; break;
-					case StatType.Int: RawInt--; break;
+					case StatType.Str: RawStr -= value; break;
+					case StatType.Dex: RawDex -= value; break;
+					case StatType.Int: RawInt -= value; break;
 				}
 			}
 		}

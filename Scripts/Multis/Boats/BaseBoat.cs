@@ -1001,16 +1001,8 @@ namespace Server.Multis
 
         public virtual bool CanCommand(Mobile m)
         {
-
-		
-
-
-
-
 			if (m is CustomPlayerMobile cm)
 			{
-
-
 				if (Stuck)
 				{
 					cm.SendMessage("Le bateau est pris, vous ne pouvez pas le déplacer.");
@@ -1021,24 +1013,12 @@ namespace Server.Multis
 					cm.SendMessage("Vous ne pouvez pas commander le bateau en étant caché.");
 					return false;
 				}
-
-				if (cm.Skills[SkillName.Cartography].Value >= 50)
+				else if (cm.Skills[SkillName.Cartography].Value < 50)
 				{
-					return true;
-				}
-				else
-				{
+					cm.SendMessage("Vous ne pouvez pas commander un bateau avec moins de 50 en Fishing.");
 					return false;
 				}
 			}
-
-
-
-
-
-
-
-
 
             return true;
         }

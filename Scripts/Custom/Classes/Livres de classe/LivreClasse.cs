@@ -135,13 +135,6 @@ namespace Server.Items
 
 					pm.Aptitudes.Reset();
 
-                    int puEnAttente = FicheAttributsGump.GetRemainingPU(pm, pm.Experience.Niveau) - FicheAttributsGump.GetDisponiblePU(pm);
-
-                    if (puEnAttente > 10)
-                        puEnAttente = 10;
-
-                    pm.PUDispo += puEnAttente;
-
 					Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
 				}
 			}

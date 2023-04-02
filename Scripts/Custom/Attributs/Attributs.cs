@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Server.Mobiles;
 
 namespace Server
@@ -6,7 +7,7 @@ namespace Server
     public sealed class Attributs
     {
 		private CustomPlayerMobile m_Owner;
-		public int[] m_Values = new int[Enum.GetValues(typeof(Attribut)).Length];
+		public int[] Values = new int[Enum.GetValues(typeof(Attribut)).Length];
 
 		#region Props
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -42,29 +43,39 @@ namespace Server
 
 			int version = reader.ReadInt();
 
-			m_Values = new int[reader.ReadInt()];
+			Values = new int[reader.ReadInt()];
 
-			for (int i = 0; i < m_Values.Length; ++i)
-				m_Values[i] = reader.ReadInt();
+			for (int i = 0; i < Values.Length; ++i)
+				Values[i] = reader.ReadInt();
 		}
 
 		public void Serialize(GenericWriter writer)
 		{
 			writer.Write((int)0); // version;
 
-			writer.Write((int)m_Values.Length);
+			writer.Write((int)Values.Length);
 
-			for (int i = 0; i < m_Values.Length; ++i)
-				writer.Write((int)m_Values[i]);
+			for (int i = 0; i < Values.Length; ++i)
+				writer.Write((int)Values[i]);
+		}
+
+		public static int GetAttributMaxPoints(CustomPlayerMobile pm)
+		{
+			return pm.Experience.Niveau / 15;
+		}
+
+		public static int GetAttributPoints(CustomPlayerMobile pm)
+		{
+			return GetAttributMaxPoints(pm) - pm.Attributs.Values.Sum();
 		}
 
 		public int GetValue(Attribut attribut)
 		{
 			int index = GetIndex(attribut);
 
-			if (index >= 0 && index < m_Values.Length)
+			if (index >= 0 && index < Values.Length)
 			{
-				int value = m_Values[index];
+				int value = Values[index];
 				return value;
 			}
 
@@ -75,10 +86,10 @@ namespace Server
 		{
 			int index = GetIndex(attribut);
 
-			if (index >= 0 && index < m_Values.Length)
+			if (index >= 0 && index < Values.Length)
 			{
-				int oldvalue = m_Values[index];
-				m_Values[index] = value;
+				int oldvalue = Values[index];
+				Values[index] = value;
 				m_Owner.OnAttributsChange(attribut, oldvalue, value);
 			}
 		}
@@ -91,35 +102,35 @@ namespace Server
 		}
 
 
-		public bool CanDecreaseStat(Attribut attr)
+		public bool CanDecreaseStat(Attribut attr, int value)
 		{
-			return m_Owner.Attributs[attr] > 25;
+			return m_Owner.Attributs[attr] - value > 25;
 		}
 
-		public bool CanIncreaseStat(Attribut attr)
+		public bool CanIncreaseStat(Attribut attr, int value)
 		{
-			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] >= 525)
+			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] + value >= 525)
 				return false;
 
-			return m_Owner.Attributs[attr] < 125;
+			return m_Owner.Attributs[attr] + value < 125;
 		}
 
-		public void IncreaseStat(Attribut attr)
+		public void Increase(Attribut attr, int value)
 		{
-			if (CanIncreaseStat(attr))
-				m_Owner.Attributs[attr]++;
+			if (CanIncreaseStat(attr, value))
+				m_Owner.Attributs[attr] += value;
 		}
 
-		public void DecreaseStat(Attribut attr)
+		public void Decrease(Attribut attr, int value)
 		{
-			if (CanDecreaseStat(attr))
-				m_Owner.Attributs[attr]--;
+			if (CanDecreaseStat(attr, value))
+				m_Owner.Attributs[attr] -= value;
 		}
 
 		public void Reset()
 		{
-			for (int i = 0; i < m_Values.Length; i++)
-				m_Values[i] = 0;
+			for (int i = 0; i < Values.Length; i++)
+				Values[i] = 0;
 
 			m_Owner.PUDispo = m_Owner.Experience.Niveau * 3;
 		}

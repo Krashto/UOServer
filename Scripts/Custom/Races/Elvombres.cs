@@ -2,9 +2,9 @@
 
 namespace Server.Custom.Races
 {
-	class Dwemer : BaseRace
+	class Elvombres : BaseRace
 	{
-		public override string Background => "Les Dwemers";
+		public override string Background => "Les Elvombres";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -17,10 +17,10 @@ namespace Server.Custom.Races
 			* 3) Race 0xFF is reserved for core use.
 			* 4) Changing or removing any predefined races may cause server instability.
 			*/
-			RegisterRace(new Dwemer(6, 6));
+			RegisterRace(new Elvombres(5, 5));
 		}
 
-		public Dwemer(int raceID, int raceIndex) : base(raceID, raceIndex, "Dwemer", "Dwemers", 400, 401, 402, 403)
+		public Elvombres(int raceID, int raceIndex) : base(raceID, raceIndex, "Elvombre", "Elvombres", 400, 401, 402, 403)
 		{
 		}
 
@@ -63,7 +63,7 @@ namespace Server.Custom.Races
 				default:
 					break;
 			}
-			return new CorpsDwemer(itemId, hue);
+			return new CorpsDunmer(itemId, hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
@@ -110,20 +110,20 @@ namespace Server.Custom.Races
 
 namespace Server.Items
 {
-	public class CorpsDwemer : BaseRaceGumps
+	public class CorpsDunmer : BaseRaceGumps
 	{
 		[Constructable]
-		public CorpsDwemer() : this(0)
+		public CorpsDunmer() : this(0)
 		{
 		}
 
 		[Constructable]
-		public CorpsDwemer(int id, int hue) : base(id, hue)
+		public CorpsDunmer(int id, int hue) : base(id, hue)
 		{
-			Name = "Dwemer";
+			Name = "Dunmer";
 		}
 
-		public CorpsDwemer(Serial serial)
+		public CorpsDunmer(Serial serial)
 			: base(serial)
 		{
 		}

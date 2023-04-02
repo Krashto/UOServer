@@ -2,9 +2,9 @@
 
 namespace Server.Custom.Races
 {
-	class Imperial : BaseRace
+	class Azuriens : BaseRace
 	{
-		public override string Background => "Les Imperials";
+		public override string Background => "Les Azuriens";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -17,10 +17,10 @@ namespace Server.Custom.Races
 			* 3) Race 0xFF is reserved for core use.
 			* 4) Changing or removing any predefined races may cause server instability.
 			*/
-			RegisterRace(new Imperial(7, 7));
+			RegisterRace(new Azuriens(7, 7));
 		}
 
-		public Imperial(int raceID, int raceIndex) : base(raceID, raceIndex, "Imperial", "Imperials", 400, 401, 402, 403)
+		public Azuriens(int raceID, int raceIndex) : base(raceID, raceIndex, "Azurien", "Azuriens", 400, 401, 402, 403)
 		{
 		}
 

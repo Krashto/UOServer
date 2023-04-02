@@ -2,9 +2,9 @@
 
 namespace Server.Custom.Races
 {
-	class Khajlit : BaseRace
+	class Azmins : BaseRace
 	{
-		public override string Background => "Les Khajlits";
+		public override string Background => "Les Azmins";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -17,10 +17,10 @@ namespace Server.Custom.Races
 			* 3) Race 0xFF is reserved for core use.
 			* 4) Changing or removing any predefined races may cause server instability.
 			*/
-			RegisterRace(new Khajlit(8, 8));
+			RegisterRace(new Azmins(2, 2));
 		}
 
-		public Khajlit(int raceID, int raceIndex) : base(raceID, raceIndex, "Khajlit", "Khajlits", 400, 401, 402, 403)
+		public Azmins(int raceID, int raceIndex) : base(raceID, raceIndex, "Azmin", "Azmins", 400, 401, 402, 403)
 		{
 		}
 
@@ -63,7 +63,7 @@ namespace Server.Custom.Races
 				default:
 					break;
 			}
-			return new CorpsKhajlit(itemId, hue);
+			return new CorpsAzmin(itemId, hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
@@ -110,20 +110,20 @@ namespace Server.Custom.Races
 
 namespace Server.Items
 {
-	public class CorpsKhajlit : BaseRaceGumps
+	public class CorpsAzmin : BaseRaceGumps
 	{
 		[Constructable]
-		public CorpsKhajlit() : this(0)
+		public CorpsAzmin() : this(0)
 		{
 		}
 
 		[Constructable]
-		public CorpsKhajlit(int id, int hue) : base(id, hue)
+		public CorpsAzmin(int id, int hue) : base(id, hue)
 		{
-			Name = "Khajlit";
+			Name = "Azmin";
 		}
 
-		public CorpsKhajlit(Serial serial)
+		public CorpsAzmin(Serial serial)
 			: base(serial)
 		{
 		}

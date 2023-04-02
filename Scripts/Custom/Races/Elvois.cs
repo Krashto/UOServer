@@ -2,9 +2,9 @@
 
 namespace Server.Custom.Races
 {
-	class Bosmer : BaseRace
+	class Elvois : BaseRace
 	{
-		public override string Background => "Les Bosmers";
+		public override string Background => "Les Elvois";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -17,10 +17,10 @@ namespace Server.Custom.Races
 			* 3) Race 0xFF is reserved for core use.
 			* 4) Changing or removing any predefined races may cause server instability.
 			*/
-			RegisterRace(new Bosmer(3, 3));
+			RegisterRace(new Elvois(3, 3));
 		}
 
-		public Bosmer(int raceID, int raceIndex) : base(raceID, raceIndex, "Bosmer", "Bosmers", 400, 401, 402, 403)
+		public Elvois(int raceID, int raceIndex) : base(raceID, raceIndex, "Elvois", "Elvois", 400, 401, 402, 403)
 		{
 		}
 

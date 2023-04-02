@@ -2,9 +2,9 @@
 
 namespace Server.Custom.Races
 {
-	class Redguard : BaseRace
+	class Azudois : BaseRace
 	{
-		public override string Background => "Les Redguards";
+		public override string Background => "Les Azudois";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -17,10 +17,10 @@ namespace Server.Custom.Races
 			* 3) Race 0xFF is reserved for core use.
 			* 4) Changing or removing any predefined races may cause server instability.
 			*/
-			RegisterRace(new Redguard(11, 11));
+			RegisterRace(new Azudois(11, 11));
 		}
 
-		public Redguard(int raceID, int raceIndex) : base(raceID, raceIndex, "Redguard", "Redguards", 400, 401, 402, 403)
+		public Azudois(int raceID, int raceIndex) : base(raceID, raceIndex, "Azudois", "Azudois", 400, 401, 402, 403)
 		{
 		}
 

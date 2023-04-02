@@ -16,39 +16,51 @@ namespace Server.Gumps
 			line++;
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Force");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 238, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 138, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Str.ToString());
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 139, GumpButtonType.Reply, 0);
+			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 239, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Dextérité");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 240, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 140, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Dex.ToString());
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 141, GumpButtonType.Reply, 0);
+			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 241, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Intelligence");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 242, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 142, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Int.ToString());
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 143, GumpButtonType.Reply, 0);
+			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 243, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Constitution");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 244, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 144, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Const.ToString());
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 145, GumpButtonType.Reply, 0);
+			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 245, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Endurance");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 246, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 146, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Endur.ToString());
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 147, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 247, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Sagesse");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
+			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 248, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 148, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Sag.ToString());
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 149, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 249, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Points restants");
 			AddLabel(x + 285, y + lineSpace * line, 2101, ":");
@@ -69,62 +81,122 @@ namespace Server.Gumps
 
 			if (info.ButtonID == 138)
 			{
-				m_Creation.Str -= 5;
+				m_Creation.Str -= 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 139)
 			{
-				m_Creation.Str += 5;
+				m_Creation.Str += 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 140)
 			{
-				m_Creation.Dex -= 5;
+				m_Creation.Dex -= 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 141)
 			{
-				m_Creation.Dex += 5;
+				m_Creation.Dex += 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 142)
 			{
-				m_Creation.Int -= 5;
+				m_Creation.Int -= 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 143)
 			{
-				m_Creation.Int += 5;
+				m_Creation.Int += 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 144)
 			{
-				m_Creation.Const -= 5;
+				m_Creation.Const -= 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 145)
 			{
-				m_Creation.Const += 5;
+				m_Creation.Const += 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 146)
 			{
-				m_Creation.Endur -= 5;
+				m_Creation.Endur -= 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 147)
 			{
-				m_Creation.Endur += 5;
+				m_Creation.Endur += 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 148)
 			{
-				m_Creation.Sag -= 5;
+				m_Creation.Sag -= 1;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 149)
 			{
-				m_Creation.Sag += 5;
+				m_Creation.Sag += 1;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 238)
+			{
+				m_Creation.Str -= 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 239)
+			{
+				m_Creation.Str += 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 240)
+			{
+				m_Creation.Dex -= 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 241)
+			{
+				m_Creation.Dex += 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 242)
+			{
+				m_Creation.Int -= 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 243)
+			{
+				m_Creation.Int += 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 244)
+			{
+				m_Creation.Const -= 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 245)
+			{
+				m_Creation.Const += 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 246)
+			{
+				m_Creation.Endur -= 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 247)
+			{
+				m_Creation.Endur += 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 248)
+			{
+				m_Creation.Sag -= 10;
+				from.SendGump(new CreationStatistique(from, m_Creation));
+			}
+			else if (info.ButtonID == 249)
+			{
+				m_Creation.Sag += 10;
 				from.SendGump(new CreationStatistique(from, m_Creation));
 			}
 			else if (info.ButtonID == 1001) //Next
