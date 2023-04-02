@@ -1495,15 +1495,16 @@ namespace Server.Engines.Craft
 			{
 				switch (name)
 				{
-					case "PlainoisLeather": skill += 0.0; break;
-					case "ForestierLeather": skill += 10.0; break;
-					case "DesertiqueLeather": skill += 15.0; break;
-					case "CollinoisLeather": skill += 20.0; break;
-					case "SavanoisLeather": skill += 25.0; break;
-					case "ToundroisLeather": skill += 30.0; break;
-					case "TropicauxLeather": skill += 35.0; break;
-					case "MontagnardLeather": skill += 40.0; break;
-					case "AncienLeather": skill += 45.0; break;
+					case "PlainoisLeather": skill += 0.0; break;	
+					case "CollinoisLeather": skill += 10.0; break;
+					case "ForestierLeather": skill += 15.0; break;
+					case "SavanoisLeather": skill += 20.0; break;
+					case "DesertiqueLeather": skill += 25.0; break;
+					case "MontagnardLeather": skill += 30.0; break;
+					case "VolcaniqueLeather": skill += 35.0; break;
+					case "TropicauxLeather": skill += 40.0; break;
+					case "ToundroisLeather": skill += 45.0; break;
+					case "AncienLeather": skill += 50.0; break;
 
 				}
 
@@ -1520,15 +1521,16 @@ namespace Server.Engines.Craft
 				switch (name)
 				{
 					case "PlainoisBone": skill += 0.0; break;
-					case "ForestierBone": skill += 10.0; break;
-					case "DesertiqueBone": skill += 15.0; break;
-					case "CollinoisBone": skill += 20.0; break;
-					case "SavanoisBone": skill += 25.0; break;
-					case "ToundroisBone": skill += 30.0; break;
-					case "TropicauxBone": skill += 35.0; break;
-					case "MontagnardBone": skill += 40.0; break;
-					case "AncienBone": skill += 45.0; break;
-					
+					case "CollinoisBone": skill += 10.0; break;
+					case "ForestierBone": skill += 15.0; break;
+					case "SavanoisBone": skill += 20.0; break;
+					case "DesertiqueBone": skill += 25.0; break;
+					case "MontagnardBone": skill += 30.0; break;
+					case "VolcaniqueBone": skill += 35.0; break;
+					case "TropicauxBone": skill += 40.0; break;
+					case "ToundroisBone": skill += 45.0; break;
+					case "AncienBone": skill += 50.0; break;
+
 				}
 
 				return skill;
@@ -1544,14 +1546,15 @@ namespace Server.Engines.Craft
 				switch (name)
 				{
 					case "PlainoisBoard": skill += 0.0; break;
-					case "ForestierBoard": skill += 10.0; break;
-					case "DesertiqueBoard": skill += 15.0; break;
-					case "CollinoisBoard": skill += 20.0; break;
-					case "SavanoisBoard": skill += 25.0; break;
-					case "ToundroisBoard": skill += 30.0; break;
-					case "TropicauxBoard": skill += 35.0; break;
-					case "MontagnardBoard": skill += 40.0; break;
-					case "AncienBoard": skill += 45.0; break;
+					case "CollinoisBoard": skill += 10.0; break;
+					case "ForestierBoard": skill += 15.0; break;
+					case "SavanoisBoard": skill += 20.0; break;
+					case "DesertiqueBoard": skill += 25.0; break;
+					case "MontagnardBoard": skill += 30.0; break;
+					case "VolcaniqueBoard": skill += 35.0; break;
+					case "TropicauxBoard": skill += 40.0; break;
+					case "ToundroisBoard": skill += 45.0; break;
+					case "AncienBoard": skill += 50.0; break;
 
 				}
 

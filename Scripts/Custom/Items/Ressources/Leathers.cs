@@ -356,7 +356,7 @@ namespace Server.Items
 
 		[Constructable]
 		public VolcaniqueLeather(int amount)
-			: base(CraftResource.ToundroisLeather, amount)
+			: base(CraftResource.VolcaniqueLeather, amount)
 		{
 		}
 

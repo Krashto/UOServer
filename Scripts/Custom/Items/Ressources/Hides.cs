@@ -451,7 +451,7 @@ namespace Server.Items
 
 		[Constructable]
 		public VolcaniqueHides(int amount)
-			: base(CraftResource.ToundroisLeather, amount)
+			: base(CraftResource.VolcaniqueLeather, amount)
 		{
 		}
 
