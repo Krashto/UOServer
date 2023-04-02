@@ -253,7 +253,7 @@ namespace Server.Engines.BulkOrders
             {
                 SkillName sk = GetSkillForBOD(type);
                 double theirSkill = pm.Skills[sk].Base;
-                bool doLarge = theirSkill >= 70.1 && ((theirSkill - 40.0) / 300.0) > Utility.RandomDouble();
+				bool doLarge = false; // theirSkill >= 70.1 && ((theirSkill - 40.0) / 300.0) > Utility.RandomDouble();
 
                 switch (type)
                 {
