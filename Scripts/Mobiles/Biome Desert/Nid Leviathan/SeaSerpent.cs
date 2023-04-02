@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a sea serpents corpse")]
+    [CorpseName("Le Corps d'un serpent de mer")]
     [TypeAlias("Server.Mobiles.Seaserpant")]
     public class SeaSerpent : BaseCreature
     {
@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public SeaSerpent()
             : base(AIType.MaritimeMageAI, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a sea serpent";
+            Name = "Un Serpent de mer";
             Body = 150;
             BaseSoundID = 447;
 
@@ -36,8 +36,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 60.1, 70.0);
             SetSkill(SkillName.Wrestling, 60.1, 70.0);
 
-            Fame = 6000;
-            Karma = -6000;
+          //  Fame = 6000;
+          //  Karma = -6000;
 
             CanSwim = true;
             CantWalk = true;
@@ -49,8 +49,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 5;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Desert;
+		public override int Meat => 5;
         public override MeatType MeatType => MeatType.SeaSerpentSteak;
         public override int TreasureMapLevel => Utility.RandomList(1, 2);
 

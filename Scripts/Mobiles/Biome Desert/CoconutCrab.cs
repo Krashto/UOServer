@@ -41,12 +41,12 @@ namespace Server.Mobiles
         }
     }
 
-    [CorpseName("a Coconut Crab corpse")]
+    [CorpseName("Le Corps d'un Crabe")]
     public class CoconutCrab : BaseMount
     {
         [Constructable]
         public CoconutCrab()
-            : this("Coconut Crab")
+            : this("Un crabe Coconut")
         {
         }
 
@@ -77,8 +77,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 30.0, 40.0);
             SetSkill(SkillName.Wrestling, 30.0, 35.0);
 
-            Fame = 300;
-            Karma = 300;
+        //    Fame = 300;
+        //    Karma = 300;
 
             Tamable = true;
             ControlSlots = 1;
@@ -89,8 +89,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 3;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Desert;
+		public override int Meat => 3;
         public override int Hides => 10;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies;
 

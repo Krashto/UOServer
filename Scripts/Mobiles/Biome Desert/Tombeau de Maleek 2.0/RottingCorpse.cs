@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a rotting corpse")]
+    [CorpseName("Un Corps decompose")]
     public class RottingCorpse : BaseCreature
     {
         [Constructable]
         public RottingCorpse()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a rotting corpse";
+            Name = "Un Putrefie";
             Body = 155;
             BaseSoundID = 471;
 
@@ -36,16 +36,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 100.0);
             SetSkill(SkillName.Wrestling, 90.1, 100.0);
 
-            Fame = 6000;
-            Karma = -6000;
+        //    Fame = 6000;
+        //    Karma = -6000;
         }
 
         public RottingCorpse(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Desert;
+		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
         public override int TreasureMapLevel => 5;

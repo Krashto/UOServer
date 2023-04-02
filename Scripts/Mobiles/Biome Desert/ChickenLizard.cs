@@ -15,7 +15,7 @@ namespace Server.Mobiles
         public ChickenLizard()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a chicken lizard";
+            Name = "chicken lizard";
             Body = 716;
 
             SetStr(74, 95);
@@ -46,8 +46,9 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.LootItem<ChickenLizardEgg>(5.0));
         }
-
-        public override int Meat => 3;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Desert;
+		public override int Meat => 3;
         public override MeatType MeatType => MeatType.Bird;
         public override FoodType FavoriteFood => FoodType.Meat;
 

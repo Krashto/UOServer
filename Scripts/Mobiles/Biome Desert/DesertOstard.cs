@@ -1,11 +1,11 @@
 namespace Server.Mobiles
 {
-    [CorpseName("an ostard corpse")]
+    [CorpseName("Le corps d'un Ostard")]
     public class DesertOstard : BaseMount
     {
         [Constructable]
         public DesertOstard()
-            : this("a desert ostard")
+            : this("Un desert ostard")
         {
         }
 
@@ -33,8 +33,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 25.3, 40.0);
             SetSkill(SkillName.Wrestling, 29.3, 44.0);
 
-            Fame = 450;
-            Karma = 0;
+        //    Fame = 450;
+        //    Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;
@@ -45,7 +45,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 3;
+		public override Biome Biome => Biome.Desert;
 		public override bool CanBeParagon => false;
 		public override int Meat => 3;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;

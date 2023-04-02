@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a wailing banshee corpse")]
+    [CorpseName("Le Corps d'une Wailing Banshee")]
     public class WailingBanshee : BaseCreature
     {
         [Constructable]
         public WailingBanshee()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a wailing banshee";
+            Name = "Wailing Banshee";
             Body = 310;
             BaseSoundID = 0x482;
 
@@ -45,8 +45,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 3;
+		public override Biome Biome => Biome.Desert;
+		public override bool BleedImmune => true;
 
         public override void GenerateLoot()
         {

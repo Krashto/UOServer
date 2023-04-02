@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a shadow knight corpse")]
+    [CorpseName("le corps d'un Chevalier")]
     public class ShadowKnight : BaseCreature
     {
         public override bool CanStealth => true;
@@ -14,8 +14,8 @@ namespace Server.Mobiles
         public ShadowKnight()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("shadow knight");
-            Title = "the Shadow Knight";
+            Name = NameList.RandomName("Arturo");
+            Title = "Chevalier des Ombres";
             Body = 311;
 
             SetStr(250);
@@ -71,8 +71,9 @@ namespace Server.Mobiles
             RevealingAction();
             base.OnDamagedBySpell(from);
         }
-
-        public override bool IgnoreYoungProtection => true;
+		public override int Level => 13;
+		public override Biome Biome => Biome.Desert;
+		public override bool IgnoreYoungProtection => true;
 
         public override TribeType Tribe => TribeType.Undead;
 

@@ -3,14 +3,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a wrinkly yomotsu corpse")]
+    [CorpseName("Le Corps d'un Yomotsu")]
     public class YomotsuElder : BaseCreature
     {
         [Constructable]
         public YomotsuElder()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a yomotsu elder";
+            Name = "Un Yomotsu Ancien";
             Body = 255;
             BaseSoundID = 0x452;
 
@@ -35,8 +35,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 115.1, 130.0);
             SetSkill(SkillName.Wrestling, 110.1, 130.0);
 
-            Fame = 12000;
-            Karma = -12000;
+       //     Fame = 12000;
+       //     Karma = -12000;
 
             SetWeaponAbility(WeaponAbility.DoubleStrike);
         }
@@ -45,8 +45,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override FoodType FavoriteFood => FoodType.Fish;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Desert;
+		public override FoodType FavoriteFood => FoodType.Fish;
         public override int Meat => 1;
         public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 5;

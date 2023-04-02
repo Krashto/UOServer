@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a Master Theophilus corpse")]
+    [CorpseName("le corps de Maitre Theophilus")]
     public class MasterTheophilus : EvilMageLord
     {
         [Constructable]
         public MasterTheophilus()
         {
-            Name = "Master Theophilus";
-            Title = "the necromancer";
+            Name = "Maitre Theophilus";
+            Title = "Le Nécromancien";
             Hue = 0;
 
             SetStr(137, 187);
@@ -37,8 +37,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.SpiritSpeak, 125.6, 133.8);
             SetSkill(SkillName.Meditation, 128.8, 132.9);
 
-            Fame = 18000;
-            Karma = -18000;
+      //      Fame = 18000;
+      //      Karma = -18000;
 
             AddItem(new Shoes(0x537));
             AddItem(new Robe(0x452));
@@ -50,7 +50,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-        public override bool CanBeParagon => false;
+
+		public override int Level => 18;
+		public override Biome Biome => Biome.Desert;
+		public override bool CanBeParagon => false;
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);
@@ -63,10 +66,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.MedScrolls, 4);
-            AddLoot(LootPack.HighScrolls, 4);
             AddLoot(LootPack.MageryRegs, 22);
-            AddLoot(LootPack.LootItem<DisintegratingThesisNotes>(15.0));
         }
 
         public override void Serialize(GenericWriter writer)

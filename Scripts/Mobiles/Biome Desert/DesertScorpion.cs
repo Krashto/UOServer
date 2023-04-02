@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a desert scorpion corpse")]
+    [CorpseName("Le Corps d'un Scorpion")]
     public class DesertScorpion : BaseCreature
     {
         [Constructable]
         public DesertScorpion()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, .2, .4)
         {
-            Name = "a desert scorpion";
+            Name = "Un Scorpion du desert";
             Body = 0x2CD;
             BaseSoundID = 397;
 
@@ -41,8 +41,9 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich, 1);
         }
-
-        public override Poison HitPoison => Poison.Lethal;
+		public override int Level => 3;
+		public override Biome Biome => Biome.Desert;
+		public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 3;
         public override int TreasureMapLevel => 1;

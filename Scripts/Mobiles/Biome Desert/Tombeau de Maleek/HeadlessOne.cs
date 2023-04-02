@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a headless corpse")]
+    [CorpseName("Un Sans tete")]
     public class HeadlessOne : BaseCreature
     {
         [Constructable]
         public HeadlessOne()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a headless one";
+            Name = "Un Sans Tete";
             Body = 31;
             Hue = Utility.RandomSkinHue() & 0x7FFF;
             BaseSoundID = 0x39D;
@@ -36,8 +36,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 1;
+		public override Biome Biome => Biome.Desert;
 
-        public override bool CanRummageCorpses => true;
+		public override bool CanRummageCorpses => true;
         public override int Meat => 1;
         public override void GenerateLoot()
         {
