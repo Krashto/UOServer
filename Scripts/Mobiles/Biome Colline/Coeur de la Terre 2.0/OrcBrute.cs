@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Lethal;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Colline;
+		public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 2;
 
         public override TribeType Tribe => TribeType.Orc;
@@ -59,8 +60,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.LootItem<ShadowIronOre>(3));
-            AddLoot(LootPack.LootItem<IronIngot>(5));
             AddLoot(LootPack.LootItem<Yeast>());
         }
 

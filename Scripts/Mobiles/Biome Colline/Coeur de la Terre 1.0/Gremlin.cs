@@ -40,8 +40,9 @@ namespace Server.Mobiles
 
 			AddItem(new Bow());
         }
-
-        public Gremlin(Serial serial)
+		public override int Level => 5;
+		public override Biome Biome => Biome.Colline;
+		public Gremlin(Serial serial)
             : base(serial)
         {
         }

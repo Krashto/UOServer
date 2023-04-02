@@ -50,8 +50,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override InhumanSpeech SpeechType => InhumanSpeech.Orc;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Colline;
+		public override InhumanSpeech SpeechType => InhumanSpeech.Orc;
         public override bool CanRummageCorpses => true;
 
         public override TribeType Tribe => TribeType.Orc;
@@ -65,7 +66,7 @@ namespace Server.Mobiles
             AddLoot(LootPack.LootItem<MandrakeRoot>(6, 10));
             AddLoot(LootPack.LootItem<BlackPearl>(6, 10));
             AddLoot(LootPack.LootItem<MortarPestle>(20.0));
-            AddLoot(LootPack.LootItem<LesserExplosionPotion>(20.0));
+        
             AddLoot(LootPack.LootItem<Yeast>(5.0));
         }
 

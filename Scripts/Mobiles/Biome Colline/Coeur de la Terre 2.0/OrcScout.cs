@@ -58,8 +58,9 @@ namespace Server.Mobiles
         public OrcScout(Serial serial)
             : base(serial)
         { }
-
-        public override bool CanRummageCorpses => true;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Colline;
+		public override bool CanRummageCorpses => true;
         public override bool CanStealth => true;
         public override int Meat => 1;
 
