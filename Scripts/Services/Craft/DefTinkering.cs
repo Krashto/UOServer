@@ -188,7 +188,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(SmithyHammer), "Outils", "Marteau de forgeron", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Saw), "Outils", "Scie", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
 	
-			index = AddCraft(typeof(RollingPin), "Outils", "Rouleau à pâte", 15.0, 35.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(RollingPin), "Outils", "Rouleau à pâte", 15.0, 35.0, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Skillet), "Outils", "Poêlon", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(FlourSifter), "Outils", "Tamis à farine", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(MortarPestle), "Outils", "Mortier et pilon", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
@@ -419,7 +419,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Gears), "Pièces d'assemblages", "Engrenages", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
 
 
-			index = AddCraft(typeof(ClockFrame), "Pièces d'assemblages", "Cadre d'horloge", 0.0, 50.0, typeof(RegularBoard), 1044041, 6, 1044351);
+			index = AddCraft(typeof(ClockFrame), "Pièces d'assemblages", "Cadre d'horloge", 0.0, 50.0, typeof(PlainoisBoard), 1044041, 6, 1044351);
 			SetUseSubRes2(index, true);
 
 			index = AddCraft(typeof(ClockParts), "Pièces d'assemblages", "Pièces d'horloge", 25.0, 75.0, typeof(IronIngot), 1044036, 1, 1044037);
@@ -428,7 +428,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(SextantParts), "Pièces d'assemblages", "Pièce de sextant", 30.0, 80.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(BarrelHoops), "Pièces d'assemblages", "Anneaux de baril", -15.0, 35.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Hinge), "Pièces d'assemblages", "Charnière", 5.0, 55.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(Axle), "Pièces d'assemblages", "Essieu", -25.0, 25.0, typeof(RegularBoard), 1044041, 2, 1044351);
+			index = AddCraft(typeof(Axle), "Pièces d'assemblages", "Essieu", -25.0, 25.0, typeof(PlainoisBoard), 1044041, 2, 1044351);
 		
 			#endregion
 
@@ -445,7 +445,7 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(ClockParts), "Pièces d'horloge", 1, 1044253);
 			index = AddCraft(typeof(SmallGrandfatherClock), "Assemblages", "Petite Horloge Grand Père", 50.0, 90.0, typeof(ClockFrame), "Cadre d'horloge", 1, 1044253);
 			AddRes(index, typeof(ClockParts), "Pièces d'horloge", 2, 1044253);
-			AddRes(index, typeof(RegularBoard), 1044041, 8, 1044351);
+			AddRes(index, typeof(PlainoisBoard), 1044041, 8, 1044351);
 			SetUseSubRes2(index, true);
 
 
@@ -454,11 +454,11 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(LargeGrandfatherClock), "Assemblages", "Horloge Grand Père", 50.0, 90.0, typeof(ClockFrame), "Cadre d'horloge", 1, 1044253);
 			AddRes(index, typeof(ClockParts), "Pièces d'horloge", 2, 1044253);
-			AddRes(index, typeof(RegularBoard), 1044041, 8, 1044351);
+			AddRes(index, typeof(PlainoisBoard), 1044041, 8, 1044351);
 			SetUseSubRes2(index, true);
 			index = AddCraft(typeof(WhiteGrandfatherClock), "Assemblages", "Horloge Grand Père Blanche", 50.0, 90.0, typeof(ClockFrame), "Cadre d'horloge", 1, 1044253);
 			AddRes(index, typeof(ClockParts), "Pièces d'horloge", 2, 1044253);
-			AddRes(index, typeof(RegularBoard), 1044041, 8, 1044351);
+			AddRes(index, typeof(PlainoisBoard), 1044041, 8, 1044351);
 			SetUseSubRes2(index, true);
 			index = AddCraft(typeof(Sextant), "Assemblages", "Sextant", 0.0, 0.0, typeof(SextantParts), "Pièces de sextant", 1, 1044253);
 			index = AddCraft(typeof(Bola), "Assemblages", "Bola", 60.0, 80.0, typeof(BolaBall), "Balle de bola", 4, 1042613);
@@ -546,14 +546,14 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(KnifeRight), "Ustensiles", "Couteau (G)", 0.0, 50.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(Goblet), "Ustensiles", "Gobelet", 10.0, 60.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(PewterMug), "Ustensiles", "Tasse", 10.0, 60.0, typeof(IronIngot), 1044036, 2, 1044037);
-			index = AddCraft(typeof(Tray), "Ustensiles", "Plateau", 25.0, 75.0, typeof(RegularBoard), 1044041, 2, 1044351);
+			index = AddCraft(typeof(Tray), "Ustensiles", "Plateau", 25.0, 75.0, typeof(PlainoisBoard), 1044041, 2, 1044351);
 			index = AddCraft(typeof(Silverware), "Ustensiles", "Coutellerie", 25.0, 75.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(FoodPlate), "Ustensiles", "Assiette de Nourriture", 25.0, 75.0, typeof(IronIngot), 1044036, 3, 1044037);
 		
 			#endregion
 
 			#region Luminaires et décorations
-			index = AddCraft(typeof(Torch), "Luminaires et décorations", "Torche", 0.0, 50.0, typeof(RegularBoard), 1044041, 2, 1044253);
+			index = AddCraft(typeof(Torch), "Luminaires et décorations", "Torche", 0.0, 50.0, typeof(PlainoisBoard), 1044041, 2, 1044253);
 		//	index = AddCraft(typeof(AvisRecherche), "Luminaires et décorations", "Avis de Recherche", 0.0, 50.0, typeof(Board), 1044041, 3, 1044253);
 			index = AddCraft(typeof(CandleLarge), "Luminaires et décorations", "Chandelier Simple", 45.0, 105.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Candelabra), "Luminaires et décorations", "Chandelier", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
@@ -566,15 +566,15 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Lantern), "Luminaires et décorations", "Lanterne", 30.0, 80.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(HeatingStand), "Luminaires et décorations", "Support chauffant", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(ShojiLantern), "Luminaires et décorations", "Lanterne sophistiquée", 65.0, 115.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddRes(index, typeof(RegularBoard), 1044041, 5, 1044351);
+			AddRes(index, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Brazier), "Luminaires et décorations", "Brasero", 45.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(BrazierTall), "Luminaires et décorations", "Brasero Long", 65.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(DragonBrazier), "Luminaires et décorations", "Brasero Cage", 85.0, 100.0, typeof(IronIngot), 1044036, 25, 1044253);
 			index = AddCraft(typeof(TerMurStyleCandelabra), "Luminaires et décorations", "Chandelier élégant", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(PaperLantern), "Luminaires et décorations", "Lanterne en papier", 65.0, 115.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddRes(index, typeof(RegularBoard), 1044041, 5, 1044351);
+			AddRes(index, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(RoundPaperLantern), "Luminaires et décorations", "Lanterne en papier ronde", 65.0, 115.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddRes(index, typeof(RegularBoard), 1044041, 5, 1044351);
+			AddRes(index, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(WindChimes), "Luminaires et décorations", "Carillons éoliens", 80.0, 130.0, typeof(IronIngot), 1044036, 15, 1044037);
 			index = AddCraft(typeof(FancyWindChimes), "Luminaires et décorations", "Carillons", 80.0, 130.0, typeof(IronIngot), 1044036, 15, 1044037);
 			index = AddCraft(typeof(MiniCherryTree1), "Luminaires et décorations", "Arbre en Pot", 65.0, 115.0, typeof(FertileDirt), "Terre", 10, "Vous n'avez pas suffisament de terre");
@@ -586,7 +586,7 @@ namespace Server.Engines.Craft
 			#region Divers
 			index = AddCraft(typeof(KeyRing), "Divers", "Anneau à clés", 10.0, 60.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Key), "Divers", "Clé", 20.0, 70.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(DyeTub), "Divers", "Bac de Teinture", 35.0, 65.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(DyeTub), "Divers", "Bac de Teinture", 35.0, 65.0, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Scales), "Divers", "Balance", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Globe), "Divers", "Globe terrestre", 55.0, 105.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Spyglass), "Divers", "Longue vue", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
@@ -641,19 +641,20 @@ namespace Server.Engines.Craft
 			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 90, "Vous n'avez pas les compétences requises pour forger ce métal.");
 
 
-			SetSubRes2(typeof(RegularBoard), 1072643);
+			SetSubRes2(typeof(PlainoisBoard), 1072643);
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes2(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
-			AddSubRes2(typeof(ForestierBoard), "Forestier", 10.0, "Vous ne savez pas travailler le bois Forestier");
-			AddSubRes2(typeof(DesertiqueBoard), "Desertique", 20.0, "Vous ne savez pas travailler le bois Desertique");
-			AddSubRes2(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
-			AddSubRes2(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
-			AddSubRes2(typeof(ToundroisBoard), "Toundrois", 50.0, "Vous ne savez pas travailler le bois Toundrois");
-			AddSubRes2(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
-			AddSubRes2(typeof(MontagnardBoard), "Montagnard", 70.0, "Vous ne savez pas travailler le bois Montagnard");
-			AddSubRes2(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
+			AddSubRes(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
+			AddSubRes(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
+			AddSubRes(typeof(ForestierBoard), "Forestier", 30.0, "Vous ne savez pas travailler le bois Forestier");
+			AddSubRes(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
+			AddSubRes(typeof(DesertiqueBoard), "Desertique", 40.0, "Vous ne savez pas travailler le bois Desertique");
+			AddSubRes(typeof(MontagnardBoard), "Montagnard", 50.0, "Vous ne savez pas travailler le bois Montagnard");
+			AddSubRes(typeof(VolcaniqueBoard), "Volcanique", 50.0, "Vous ne savez pas travailler le bois Volcanique");
+			AddSubRes(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
+			AddSubRes(typeof(ToundroisBoard), "Toundrois", 60.0, "Vous ne savez pas travailler le bois Toundrois");
+			AddSubRes(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
 
 			MarkOption = true;
 			Repair = true;

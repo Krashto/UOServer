@@ -162,7 +162,7 @@ namespace Server.Items
 
 		[Constructable]
 		public PlainoisLog(int amount)
-			: base(CraftResource.RegularWood, amount)
+			: base(CraftResource.PlainoisWood, amount)
 		{
 		}
 
