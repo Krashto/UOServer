@@ -42,6 +42,20 @@ namespace Server.Mobiles
         Good // Only attack aggressor -or- positive karma
     }
 
+	public enum Biome
+	{
+		Aucun,
+		Foret,
+		Plaine,
+		Desert,
+		Colline,
+		Montagne,
+		Toundra,
+		Volcan,
+		Tropique,
+		Savane
+	}
+
     public enum OrderType
     {
         None, //When no order, let's roam
@@ -1028,10 +1042,9 @@ namespace Server.Mobiles
         public virtual bool TaintedLifeAura => false;
         public virtual bool BreathImmune => false;
 
-		public int Level
-		{
-			get { return (int)(3.0637 * Math.Log(HitsMax) - 10.7); }
-		}
+		public virtual int Level => 0;
+
+		public virtual Biome Biome => Biome.Aucun;
 
 		#region Spill Acid
 		public void SpillAcid(int Amount)
