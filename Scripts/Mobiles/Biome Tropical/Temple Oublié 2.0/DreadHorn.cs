@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dread horns corpse")]
+    [CorpseName("Le Corps D'une creature")]
     public class DreadHorn : BasePeerless
     {
         public virtual int StrikingRange => 12;
@@ -13,7 +13,7 @@ namespace Server.Mobiles
         [Constructable]
         public DreadHorn() : base(AIType.AI_Spellweaving, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a Dread Horn";
+            Name = "Un Dread Horn";
             Body = 257;
             BaseSoundID = 0xA8;
 
@@ -45,29 +45,19 @@ namespace Server.Mobiles
             SetSkill(SkillName.Meditation, 110.0);
             SetSkill(SkillName.Spellweaving, 120.0);
 
-            Fame = 32000;
-            Karma = -32000;
+        //    Fame = 32000;
+        //    Karma = -32000;
 
             m_Change = DateTime.UtcNow;
             m_Stomp = DateTime.UtcNow;
             m_Teleport = DateTime.UtcNow;
         }
-
-        public override void GenerateLoot()
+		public override int Level => 16;
+		public override Biome Biome => Biome.Tropique;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.MedScrolls, 4);
-            AddLoot(LootPack.HighScrolls, 4);
-            AddLoot(LootPack.PeerlessResource, 8);
-            AddLoot(LootPack.Talisman, 5);
-            AddLoot(LootPack.LootItem<DreadHornMane>());
-            AddLoot(LootPack.LootItem<TaintedMushroom>(60.0));
-            AddLoot(LootPack.LootItem<ParrotItem>(60.0));
-            AddLoot(LootPack.LootItem<MangledHeadOfDreadhorn>(50.0));
-            AddLoot(LootPack.LootItem<HornOfTheDreadhorn>(50.0));
-            AddLoot(LootPack.LootItem<PristineDreadHorn>(5.0));
-            AddLoot(LootPack.LootItem<DreadFlute>(5.0));
-            AddLoot(LootPack.LootItem<DreadsRevenge>(5.0));
+           
         }
 
         public override void OnThink()

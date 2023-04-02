@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public MaddeningHorror()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a maddening horror";
+            Name = "Une Horreur";
             Body = 721;
 
             SetStr(270, 290);
@@ -41,13 +41,14 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 120.0);
             SetSkill(SkillName.SpiritSpeak, 120.0);
 
-            Fame = 23000;
-            Karma = -23000;
+        //    Fame = 23000;
+        //    Karma = -23000;
 
             SetSpecialAbility(SpecialAbility.ManaDrain);
         }
-
-        public MaddeningHorror(Serial serial)
+		public override int Level => 9;
+		public override Biome Biome => Biome.Toundra;
+		public MaddeningHorror(Serial serial)
             : base(serial)
         {
         }

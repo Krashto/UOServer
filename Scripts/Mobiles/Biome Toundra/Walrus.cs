@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a walrus corpse")]
+    [CorpseName("Le Corps d'un Morse")]
     public class Walrus : BaseCreature
     {
         [Constructable]
         public Walrus()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a walrus";
+            Name = "Un Morse";
             Body = 0xDD;
             BaseSoundID = 0xE0;
 
@@ -32,8 +32,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 19.2, 29.0);
             SetSkill(SkillName.Wrestling, 19.2, 29.0);
 
-            Fame = 150;
-            Karma = 0;
+          //  Fame = 150;
+          //  Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;
@@ -44,8 +44,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Toundra;
+		public override int Meat => 1;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Regular;
 		public override int Bones => 5;

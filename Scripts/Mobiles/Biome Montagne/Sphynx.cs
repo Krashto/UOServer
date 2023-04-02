@@ -13,7 +13,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
             Body = 788;
-            Name = "The Sphynx";
+            Name = "Un Loup Géant";
 
             SetStr(1001, 1200);
             SetDex(176, 195);
@@ -43,11 +43,12 @@ namespace Server.Mobiles
             SetSkill(SkillName.Meditation, 95.1, 120.0);
             SetSkill(SkillName.Tracking, 100.0);
 
-            Fame = 15000;
-            Karma = 0;
+         //   Fame = 15000;
+         //   Karma = 0;
         }
-
-        public override void GenerateLoot()
+		public override int Level => 5;
+		public override Biome Biome => Biome.Montagne;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootGold(1000, 1200));

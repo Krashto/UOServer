@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dryad's corpse")]
+    [CorpseName("Le Corps d'une Dryade")]
     public class MLDryad : BaseCreature
     {
         public override bool InitialInnocent => true;
@@ -16,7 +16,7 @@ namespace Server.Mobiles
         public MLDryad()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "a dryad";
+            Name = "Une Dryade";
             Body = 266;
             BaseSoundID = 0x57B;
 
@@ -44,19 +44,19 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 70.0, 80.0);
             SetSkill(SkillName.Wrestling, 70.0, 80.0);
 
-            Fame = 5000;
-            Karma = 5000;
+   //         Fame = 5000;
+    //        Karma = 5000;
         }
 
         public MLDryad(Serial serial)
             : base(serial)
         {
         }
-
-        public override void GenerateLoot()
+		public override int Level => 10;
+		public override Biome Biome => Biome.Tropique;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.PeculiarSeed1);
         }
 
         public override int Meat => 1;

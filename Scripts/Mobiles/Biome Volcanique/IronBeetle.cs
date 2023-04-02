@@ -6,14 +6,14 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-	[CorpseName("an iron beetle corpse")]
+	[CorpseName("Le Corps d'un Scarabee")]
 	public class IronBeetle : BaseCreature
 	{
 		[Constructable]
 		public IronBeetle()
 			: base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.25, 0.5)
 		{
-			Name = "an iron beetle";
+			Name = "Un Scarabee de Fer";
 			Body = 714;
 			BaseSoundID = 397;
 
@@ -41,13 +41,15 @@ namespace Server.Mobiles
 
 			Skills.Mining.Cap = 120;
 
-			Fame = 15000;
-			Karma = -15000;
+		//	Fame = 15000;
+	//		Karma = -15000;
 
 			Tamable = true;
 			MinTameSkill = 71.1;
 			ControlSlots = 4;
 		}
+		public override int Level => 5;
+		public override Biome Biome => Biome.Volcan;
 
 		public override void GenerateLoot()
 		{

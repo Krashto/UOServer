@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a troglodyte corpse")]
+    [CorpseName("le corps d'un troglodyte")]
     public class Troglodyte : BaseCreature
     {
         public override double HealChance => 1.0;
@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public Troglodyte()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)// NEED TO CHECK
         {
-            Name = "a troglodyte";
+            Name = "un troglodyte";
             Body = 267;
             BaseSoundID = 0x59F;
 
@@ -37,16 +37,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 70.2, 93.5);
             SetSkill(SkillName.Healing, 70.0, 95.0);
 
-            Fame = 5000;
-            Karma = -5000;
+         //   Fame = 5000;
+         //   Karma = -5000;
         }
 
         public Troglodyte(Serial serial)
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 2;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Montagne;
+		public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {

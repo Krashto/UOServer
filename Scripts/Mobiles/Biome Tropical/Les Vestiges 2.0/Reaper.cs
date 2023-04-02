@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a reapers corpse")]
+    [CorpseName("Le corps d'un arbre maudit")]
     public class Reaper : BaseCreature
     {
         [Constructable]
         public Reaper()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a reaper";
+            Name = "Un Arbre Maudit";
             Body = 47;
             BaseSoundID = 442;
 
@@ -37,16 +37,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 45.1, 60.0);
             SetSkill(SkillName.Wrestling, 50.1, 60.0);
 
-            Fame = 3500;
-            Karma = -3500;
+         //   Fame = 3500;
+         //   Karma = -3500;
         }
 
         public Reaper(Serial serial)
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Greater;
+		public override int Level => 11;
+		public override Biome Biome => Biome.Tropique;
+		public override Poison PoisonImmune => Poison.Greater;
         public override int TreasureMapLevel => 2;
         public override bool DisallowAllMoves => true;
         public override void GenerateLoot()

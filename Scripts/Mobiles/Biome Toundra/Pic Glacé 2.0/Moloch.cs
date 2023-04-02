@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a moloch corpse")]
+    [CorpseName("Le Corps d'un Moloche")]
     public class Moloch : BaseCreature
     {
         [Constructable]
         public Moloch()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a moloch";
+            Name = "Un Moloche";
             Body = 0x311;
             BaseSoundID = 0x300;
 
@@ -31,8 +31,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 75.1, 90.0);
             SetSkill(SkillName.Wrestling, 70.1, 90.0);
 
-            Fame = 7500;
-            Karma = -7500;
+           // Fame = 7500;
+           // Karma = -7500;
 
             SetWeaponAbility(WeaponAbility.ConcussionBlow);
         }
@@ -41,8 +41,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Regular;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Toundra;
+		public override Poison PoisonImmune => Poison.Regular;
 
         public override void GenerateLoot()
         {

@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a devourer of souls corpse")]
+    [CorpseName("Le Corps d'un Devoreur d'ames")]
     public class Devourer : BaseCreature
     {
         [Constructable]
         public Devourer()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a devourer of souls";
+            Name = "Un Devoreur d'Ames";
             Body = 303;
             BaseSoundID = 357;
 
@@ -38,16 +38,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 75.1, 85.0);
             SetSkill(SkillName.Wrestling, 80.1, 100.0);
 
-            Fame = 9500;
-            Karma = -9500;
+           // Fame = 9500;
+           // Karma = -9500;
         }
 
         public Devourer(Serial serial)
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Lethal;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Toundra;
+		public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 3;
         public override int TreasureMapLevel => 4;
         public override void GenerateLoot()

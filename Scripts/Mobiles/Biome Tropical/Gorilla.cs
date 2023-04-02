@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a gorilla corpse")]
+    [CorpseName("Le Corps d'un Gorille")]
     public class Gorilla : BaseCreature
     {
         [Constructable]
         public Gorilla()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a gorilla";
+            Name = "Un Gorille";
             Body = 0x1D;
             BaseSoundID = 0x9E;
 
@@ -30,14 +30,15 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 43.3, 58.0);
             SetSkill(SkillName.Wrestling, 43.3, 58.0);
 
-            Fame = 450;
-            Karma = 0;
+     //       Fame = 450;
+     //       Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;
             MinTameSkill = -18.9;
         }
-
+		public override int Level => 6;
+		public override Biome Biome => Biome.Tropique;
 		public override bool CanBeParagon => false;
 		public Gorilla(Serial serial)
             : base(serial)

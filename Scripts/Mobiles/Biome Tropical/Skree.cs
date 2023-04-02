@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Skree()
             : base(AIType.AI_Mystic, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a skree";
+            Name = "Un skree";
             Body = 733;
 
             SetStr(297, 330);
@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 3;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Tropique;
+		public override int Meat => 3;
 
         public override MeatType MeatType => MeatType.Bird;
 

@@ -5,14 +5,14 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a tangling root corpse")]
+    [CorpseName("Le corps d'une Liane Rampante")]
     public class TanglingRoots : BaseCreature
     {
         [Constructable]
         public TanglingRoots()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a tangling root";
+            Name = "Une Liane Rampante";
             Body = 8;
             BaseSoundID = 684;
 
@@ -37,11 +37,12 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 45.1, 60.0);
             SetSkill(SkillName.Wrestling, 45.1, 60.0);
 
-            Fame = 3000;
-            Karma = -3000;
+         //   Fame = 3000;
+         //   Karma = -3000;
         }
-
-        public override void GenerateLoot()
+		public override int Level => 11;
+		public override Biome Biome => Biome.Tropique;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich);         
             AddLoot(LootPack.RandomLootItem(new[] { typeof(RegularBoard), typeof(RegularLog) }, 100.0, 5, false, true));

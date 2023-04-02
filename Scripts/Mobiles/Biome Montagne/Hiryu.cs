@@ -3,12 +3,12 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a hiryu corpse")]
+    [CorpseName("Le corps d'un Hiryu")]
     public class Hiryu : BaseMount
     {
         [Constructable]
         public Hiryu()
-            : base("a hiryu", 243, 0x3E94, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base("Un Hiryu", 243, 0x3E94, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             Hue = GetHue();
 
@@ -34,8 +34,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 100.1, 110.0);
             SetSkill(SkillName.Wrestling, 100.1, 120.0);
 
-            Fame = 18000;
-            Karma = -18000;
+    //        Fame = 18000;
+    //        Karma = -18000;
 
             Tamable = true;
             ControlSlots = 4;
@@ -49,16 +49,15 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich, 3);
             AddLoot(LootPack.Gems, 4);
-            AddLoot(LootPack.PeculiarSeed4);
-            AddLoot(LootPack.BonsaiSeed);
         }
 
         public Hiryu(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool StatLossAfterTame => true;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Montagne;
+		public override bool StatLossAfterTame => true;
         public override int TreasureMapLevel => 5;
         public override int Meat => 16;
         public override int Hides => 60;

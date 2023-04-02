@@ -3,12 +3,12 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a unicorn corpse")]
+    [CorpseName("Le Corps d'une Licorne")]
     public class Unicorn : BaseMount
     {
         [Constructable]
         public Unicorn()
-            : this("a unicorn")
+            : this("Une Licorne")
         {
         }
 
@@ -42,8 +42,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 20.1, 22.5);
             SetSkill(SkillName.Wrestling, 80.5, 92.5);
 
-            Fame = 9000;
-            Karma = 9000;
+          //  Fame = 9000;
+          //  Karma = 9000;
 
             Tamable = true;
             ControlSlots = 2;
@@ -56,8 +56,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool AllowMaleRider => true;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Tropique;
+		public override bool AllowMaleRider => true;
         public override bool AllowMaleTamer => true;
         public override bool InitialInnocent => true;
         public override TimeSpan MountAbilityDelay => TimeSpan.FromHours(1.0);

@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a phoenix corpse")]
+    [CorpseName("Le Corps d'un Phenix")]
     public class Phoenix : BaseCreature, IAuraCreature
     {
         [Constructable]
         public Phoenix()
             : base(AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a phoenix";
+            Name = "Un Phenix";
             Body = 0x340;
             BaseSoundID = 0x8F;
 
@@ -35,8 +35,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 90.1, 100.0);
             SetSkill(SkillName.Tracking, 70.0, 80.0);
 
-            Fame = 15000;
-            Karma = 0;
+       //     Fame = 15000;
+       //     Karma = 0;
 
             Tamable = true;
             ControlSlots = 4;
@@ -49,8 +49,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanAngerOnTame => true;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Volcan;
+		public override bool CanAngerOnTame => true;
         public override int Meat => 1;
         public override MeatType MeatType => MeatType.Bird;
         public override int Feathers => 36;

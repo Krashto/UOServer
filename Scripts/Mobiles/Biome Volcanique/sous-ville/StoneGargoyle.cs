@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a gargoyle corpse")]
+    [CorpseName("Le Corps d'une Gargouille")]
     public class StoneGargoyle : BaseCreature
     {
         [Constructable]
         public StoneGargoyle()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a stone gargoyle";
+            Name = "Une Gargouille de Pierre";
             Body = 67;
             BaseSoundID = 0x174;
 
@@ -33,16 +33,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.1, 100.0);
             SetSkill(SkillName.Wrestling, 60.1, 100.0);
 
-            Fame = 4000;
-            Karma = -4000;
+         //   Fame = 4000;
+         //   Karma = -4000;
         }
 
         public StoneGargoyle(Serial serial)
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 2;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Volcan;
+		public override int TreasureMapLevel => 2;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average, 2);           

@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a fire elemental corpse")]
+    [CorpseName("le Corps d'un Elementaire de feu")]
     public class FireElemental : BaseCreature
     {
         [Constructable]
         public FireElemental()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a fire elemental";
+            Name = "Un Elementaire de Feu";
             Body = 15;
             BaseSoundID = 838;
 
@@ -36,8 +36,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.1, 100.0);
             SetSkill(SkillName.Wrestling, 70.1, 100.0);
 
-            Fame = 4500;
-            Karma = -4500;
+        //    Fame = 4500;
+         //   Karma = -4500;
 
             ControlSlots = 4;
 
@@ -48,8 +48,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override double DispelDifficulty => 117.5;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Volcan;
+		public override double DispelDifficulty => 117.5;
         public override double DispelFocus => 45.0;
         public override bool BleedImmune => true;
         public override int TreasureMapLevel => 2;

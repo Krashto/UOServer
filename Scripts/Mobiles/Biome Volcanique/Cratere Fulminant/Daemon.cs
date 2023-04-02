@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a daemon corpse")]
+    [CorpseName("Le Corps d'un Démon")]
     public class Daemon : BaseCreature
     {
         [Constructable]
         public Daemon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("daemon");
+            Name = "Un Démon";
             Body = 9;
             BaseSoundID = 357;
 
@@ -35,11 +35,14 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 70.1, 80.0);
             SetSkill(SkillName.Wrestling, 60.1, 80.0);
 
-            Fame = 15000;
-            Karma = -15000;
+     //       Fame = 15000;
+     //       Karma = -15000;
 
             ControlSlots = 4;
         }
+
+		public override int Level => 13;
+		public override Biome Biome => Biome.Volcan;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Demoniaque;
 
@@ -51,7 +54,6 @@ namespace Server.Mobiles
             AddLoot(LootPack.Rich);
 			AddLoot(LootPack.LootItem<MucusDemon>());
 			AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.MedScrolls, 2);
         }
 
         public Daemon(Serial serial)

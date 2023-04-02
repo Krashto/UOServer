@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a charred corpse")]
+    [CorpseName("Le Corps d'un Gargouille de feu")]
     public class FireGargoyle : BaseCreature, IAuraCreature
     {
         [Constructable]
         public FireGargoyle()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("fire gargoyle");
+            Name = "Une Gargouille de Feu";
             Body = 130;
             BaseSoundID = 0x174;
 
@@ -37,8 +37,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.1, 100.0);
             SetSkill(SkillName.Wrestling, 40.1, 80.0);
 
-            Fame = 3500;
-            Karma = -3500;
+        //    Fame = 3500;
+        //    Karma = -3500;
 
             SetSpecialAbility(SpecialAbility.DragonBreath);
             SetAreaEffect(AreaEffect.AuraDamage);
@@ -48,7 +48,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 9;
+		public override Biome Biome => Biome.Volcan;
 		public override void GenerateLootParagon()
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteFeu>(), Utility.RandomMinMax(2, 4));

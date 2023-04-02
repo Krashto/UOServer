@@ -32,8 +32,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.Wrestling, 90.1, 100.0);
 
-            Fame = 15000;
-            Karma = -15000;
+        //    Fame = 15000;
+        //    Karma = -15000;
         }
 
         public OgreLord(Serial serial)
@@ -45,6 +45,11 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvoutePhysique>(), Utility.RandomMinMax(2, 4));
 		}
+
+		public override int Level => 14;
+		public override Biome Biome => Biome.Montagne;
+
+
 		public override int Hides => 6;
 		public override HideType HideType => HideType.Geant;
 

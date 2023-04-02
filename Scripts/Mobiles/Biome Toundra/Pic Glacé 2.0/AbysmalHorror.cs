@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an abyssmal horror corpse")]
+    [CorpseName("Le corps d'une Horreur")]
     public class AbysmalHorror : BaseCreature
     {
         [Constructable]
         public AbysmalHorror()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an abyssmal horror";
+            Name = "Une Horreur Abyssale";
             Body = 312;
             BaseSoundID = 0x451;
 
@@ -55,8 +55,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanFlee => false;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Toundra;
+		public override bool CanFlee => false;
         public override bool IgnoreYoungProtection => true;
         public override bool Unprovokable => true;
         public override bool AreaPeaceImmune => true;

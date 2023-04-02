@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an arcane daemon corpse")]
+    [CorpseName("Le Corps d'un Demon")]
     public class ArcaneDaemon : BaseCreature
     {
         [Constructable]
         public ArcaneDaemon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an arcane daemon";
+            Name = "Un Demon Arcanique";
             Body = 0x310;
             BaseSoundID = 0x47D;
 
@@ -37,8 +37,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.EvalInt, 70.1, 80.0);
             SetSkill(SkillName.Meditation, 70.1, 80.0);
 
-            Fame = 7000;
-            Karma = -10000;
+        //    Fame = 7000;
+        //    Karma = -10000;
 
             SetWeaponAbility(WeaponAbility.ConcussionBlow);
         }
@@ -47,8 +47,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 11;
+		public override Biome Biome => Biome.Volcan;
 
-        public override Poison PoisonImmune => Poison.Deadly;
+		public override Poison PoisonImmune => Poison.Deadly;
 
         public override void GenerateLoot()
         {

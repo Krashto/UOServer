@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a giant beetle corpse")]
+    [CorpseName("Le Corps d'une Scarabee")]
     public class Beetle : BaseMount
     {
         public virtual double BoostedSpeed => 0.1;
 
         [Constructable]
         public Beetle()
-            : this("a giant beetle")
+            : this("Un Scarabee Geant")
         {
         }
 
@@ -42,8 +42,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 100.0);
             SetSkill(SkillName.Wrestling, 100.0);
 
-            Fame = 4000;
-            Karma = -4000;
+         //   Fame = 4000;
+          //  Karma = -4000;
 
             Tamable = true;
             ControlSlots = 3;
@@ -61,8 +61,9 @@ namespace Server.Mobiles
 
             AddItem(pack);
         }
-
-        public override int GetAngerSound()
+		public override int Level => 3;
+		public override Biome Biome => Biome.Montagne;
+		public override int GetAngerSound()
         {
             return 0x21D;
         }

@@ -2,13 +2,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a fire beetle corpse")]
+    [CorpseName("Le Corps d'un Scarabee")]
     [Engines.Craft.Forge]
     public class FireBeetle : BaseMount
     {
         [Constructable]
         public FireBeetle()
-            : base("a fire beetle", 0xA9, 0x3E95, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base("Un Scarabee de feu", 0xA9, 0x3E95, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             SetStr(300);
             SetDex(100);
@@ -31,8 +31,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 100.0);
             SetSkill(SkillName.Wrestling, 100.0);
 
-            Fame = 4000;
-            Karma = -4000;
+         //   Fame = 4000;
+         //   Karma = -4000;
 
             Tamable = true;
             ControlSlots = 3;
@@ -45,6 +45,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 4;
+		public override Biome Biome => Biome.Volcan;
 
 		public override void GenerateLootParagon()
 		{

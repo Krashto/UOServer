@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a fleshrenderer corpse")]
+    [CorpseName("Le Corps d'une creature immonde")]
     public class FleshRenderer : BaseCreature
     {
         public override bool SupportsRunAnimation => false;
@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public FleshRenderer()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a fleshrenderer";
+            Name = "Le Devoreur";
             Body = 315;
 
             SetStr(401, 460);
@@ -38,8 +38,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 105.0, 110.0);
             SetSkill(SkillName.Focus, 5.0, 15.0);
 
-            Fame = 23000;
-            Karma = -23000;
+        //    Fame = 23000;
+        //    Karma = -23000;
 
             SetWeaponAbility(WeaponAbility.Dismount);
             SetWeaponAbility(WeaponAbility.ParalyzingBlow);
@@ -52,8 +52,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanFlee => false;
+		public override int Level => 17;
+		public override Biome Biome => Biome.Tropique;
+		public override bool CanFlee => false;
 
         public override bool IgnoreYoungProtection => true;
         public override bool AutoDispel => true;

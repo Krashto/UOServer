@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a titans corpse")]
+    [CorpseName("Le Corps d'un Titan")]
     public class Titan : BaseCreature
     {
         [Constructable]
         public Titan()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a titan";
+            Name = "Un Titan";
             Body = 76;
             BaseSoundID = 609;
 
@@ -35,16 +35,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 60.1, 80.0);
             SetSkill(SkillName.Wrestling, 40.1, 50.0);
 
-            Fame = 11500;
-            Karma = -11500;
+        //    Fame = 11500;
+        //    Karma = -11500;
         }
 
         public Titan(Serial serial)
             : base(serial)
         {
         }
-
-        public override int Meat => 4;
+		public override int Level => 13;
+		public override Biome Biome => Biome.Montagne;
+		public override int Meat => 4;
         public override Poison PoisonImmune => Poison.Regular;
         public override int TreasureMapLevel => 5;
 		public override int Hides => 8;
@@ -58,8 +59,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls);
-            AddLoot(LootPack.PeculiarSeed1);
             AddLoot(LootPack.LootItem<Items.RoastPig>(10.0));
 			AddLoot(LootPack.LootItem<CheveuxGeant>());
 

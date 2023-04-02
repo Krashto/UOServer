@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a frost spider corpse")]
+    [CorpseName("Le corps d'une araignée de glace")]
     public class FrostSpider : BaseCreature
     {
         [Constructable]
         public FrostSpider()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a frost spider";
+            Name = "Une Araignee de Glace";
             Body = 20;
             BaseSoundID = 0x388;
 
@@ -38,8 +38,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 35.1, 50.0);
             SetSkill(SkillName.Wrestling, 50.1, 65.0);
 
-            Fame = 775;
-            Karma = -775;
+          //  Fame = 775;
+          //  Karma = -775;
 
             Tamable = true;
             ControlSlots = 1;
@@ -50,6 +50,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
+		public override int Level => 4;
+		public override Biome Biome => Biome.Toundra;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Arachnide;
 

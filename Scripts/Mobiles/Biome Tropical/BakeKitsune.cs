@@ -3,14 +3,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a bake kitsune corpse")]
+    [CorpseName("Le Corps d'une Bake Kitsune")]
     public class BakeKitsune : BaseCreature
     {
         [Constructable]
         public BakeKitsune()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a bake kitsune";
+            Name = "Un Bake Kitsune";
             Body = 246;
 
             SetStr(171, 220);
@@ -36,8 +36,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 70.1, 90.0);
             SetSkill(SkillName.Wrestling, 50.1, 55.0);
 
-            Fame = 8000;
-            Karma = -8000;
+          //  Fame = 8000;
+          //  Karma = -8000;
 
             Tamable = true;
             ControlSlots = 2;
@@ -50,11 +50,10 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.BonsaiSeed);
         }
-
-        public override int Meat => 5;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Tropique;
+		public override int Meat => 5;
         public override int Hides => 30;
         public override HideType HideType => HideType.Regular;
 		public override FoodType FavoriteFood => FoodType.FruitsAndVegies;

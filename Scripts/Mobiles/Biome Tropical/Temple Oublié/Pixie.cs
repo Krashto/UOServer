@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a pixie corpse")]
+    [CorpseName("Le Corps d'une Pixie")]
     public class Pixie : BaseCreature
     {
         [Constructable]
         public Pixie()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("pixie");
+            Name = "Une Pixie";
             Body = 128;
             BaseSoundID = 0x467;
 
@@ -36,16 +36,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 10.1, 20.0);
             SetSkill(SkillName.Wrestling, 10.1, 12.5);
 
-            Fame = 7000;
-            Karma = 7000;
+         //   Fame = 7000;
+         //   Karma = 7000;
         }
 
         public Pixie(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool InitialInnocent => true;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Tropique;
+		public override bool InitialInnocent => true;
 		//   public override HideType HideType => HideType.Spined;
 		//   public override int Hides => 5;
 

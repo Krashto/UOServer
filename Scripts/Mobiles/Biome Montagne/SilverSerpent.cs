@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a silver serpent corpse")]
+    [CorpseName("Le Corps d'un Serpent")]
     public class SilverSerpent : BaseCreature
     {
         [Constructable]
@@ -10,7 +10,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             Body = 92;
-            Name = "a silver serpent";
+            Name = "Un serpent argente";
             BaseSoundID = 219;
             Hue = 1150;
 
@@ -45,8 +45,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool DeathAdderCharmable => true;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Montagne;
+		public override bool DeathAdderCharmable => true;
         public override int Meat => 5;
 
 		public override int Hides => 4;

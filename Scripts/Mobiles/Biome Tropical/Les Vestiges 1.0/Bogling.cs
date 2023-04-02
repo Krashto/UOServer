@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Bogling()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a bogling";
+            Name = "Un Bogling";
             Body = 779;
             BaseSoundID = 422;
 
@@ -41,15 +41,15 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Hides => 6;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
+		public override int Hides => 6;
         public override int Meat => 1;
 
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItem<RegularLog>(4));
-            AddLoot(LootPack.LootItemCallback(RandomSeed));
         }
 
 		public override void GenerateLootParagon()

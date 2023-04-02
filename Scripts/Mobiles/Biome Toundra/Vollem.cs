@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a vollem corpse")]
+    [CorpseName("Le Corps d'un Vollem")]
     public class Vollem : BaseCreature, IRepairableMobile
     {
         public virtual Type RepairResource => IsMechanical ? typeof(Items.IronIngot) : typeof(Items.Bandage);
@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public Vollem()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a vollem";
+            Name = "Un Vollem";
             Body = 0x125;
 
             SetStr(496, 524);
@@ -43,8 +43,9 @@ namespace Server.Mobiles
 
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
-
-        public override bool IsScaredOfScaryThings => false;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Toundra;
+		public override bool IsScaredOfScaryThings => false;
         public override bool IsScaryToPets => true;
         public override bool IsBondable => false;
         public override bool DeleteOnRelease => true;

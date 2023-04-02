@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a balron corpse")]
+    [CorpseName("Le Corps d'un Balrog")]
     public class Balron : BaseCreature
     {
         [Constructable]
         public Balron()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("balron");
+            Name = "Un Balrog";
             Body = 40;
             BaseSoundID = 357;
 
@@ -39,16 +39,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.Wrestling, 90.1, 100.0);
 
-            Fame = 24000;
-            Karma = -24000;
+         //   Fame = 24000;
+         //   Karma = -24000;
         }
 
         public Balron(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool CanFly => true;
+		public override int Level => 17;
+		public override Biome Biome => Biome.Volcan;
+		public override bool CanFly => true;
 
         public override bool CanRummageCorpses => true;
         public override Poison PoisonImmune => Poison.Deadly;
@@ -66,7 +67,6 @@ namespace Server.Mobiles
             AddLoot(LootPack.FilthyRich, 2);
             AddLoot(LootPack.Rich);
 			AddLoot(LootPack.LootItem<MucusDemon>());
-			AddLoot(LootPack.MedScrolls, 2);
         }
 
         public override void Serialize(GenericWriter writer)

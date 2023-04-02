@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a drake corpse")]
+    [CorpseName("Le Corps d'un Dragonneau")]
     public class Drake : BaseCreature
     {
         [Constructable]
         public Drake()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a drake";
+            Name = "Un Dragonneau";
             Body = Utility.RandomList(60, 61);
             BaseSoundID = 362;
 
@@ -42,8 +42,8 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Wrestling, 45.1, 50.0);
 
 
-			Fame = 5500;
-            Karma = -5500;
+	//		Fame = 5500;
+    //        Karma = -5500;
 
             Tamable = true;
             ControlSlots = 2;
@@ -56,8 +56,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool ReacquireOnMovement => true;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Volcan;
+		public override bool ReacquireOnMovement => true;
         public override int TreasureMapLevel => 2;
         public override int Meat => 10;
         public override int DragonBlood => 8;

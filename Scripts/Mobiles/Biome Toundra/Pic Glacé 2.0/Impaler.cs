@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an impaler corpse")]
+    [CorpseName("Le Corps d'un Empaleur")]
     public class Impaler : BaseCreature
     {
         [Constructable]
         public Impaler()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("impaler");
+            Name = NameList.RandomName("Un Empaleur");
             Body = 306;
             BaseSoundID = 0x2A7;
 
@@ -37,8 +37,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 110.0, 120.0);
             SetSkill(SkillName.SpiritSpeak, 100.0, 110.0);
 
-            Fame = 24000;
-            Karma = -24000;
+         //   Fame = 24000;
+         //   Karma = -24000;
 
             SetWeaponAbility(WeaponAbility.BleedAttack);
             SetWeaponAbility(WeaponAbility.MortalStrike);
@@ -52,8 +52,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanFlee => false;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Toundra;
+		public override bool CanFlee => false;
 
         public override bool IgnoreYoungProtection => true;
         public override bool AutoDispel => true;

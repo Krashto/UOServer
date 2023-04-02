@@ -1,11 +1,11 @@
 namespace Server.Mobiles
 {
-    [CorpseName("an ostard corpse")]
+    [CorpseName("Le Corps d'un Ostard")]
     public class ForestOstard : BaseMount
     {
         [Constructable]
         public ForestOstard()
-            : this("a forest ostard")
+            : this("Un Ostard Forestier")
         {
         }
 
@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 3;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Tropique;
+		public override int Meat => 3;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;
         public override PackInstinct PackInstinct => PackInstinct.Ostard;
         public override void Serialize(GenericWriter writer)

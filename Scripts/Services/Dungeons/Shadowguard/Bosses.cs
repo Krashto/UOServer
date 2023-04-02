@@ -748,7 +748,8 @@ namespace Server.Engines.Shadowguard
         [Constructable]
         public Virtuebane() : base(AIType.AI_Mage)
         {
-            Name = "Virtuebane";
+            Name = "Molrh";
+			Title = "Maître Mortanyss";
 
             Body = 1071;
             SpeechHue = 452;
@@ -780,8 +781,9 @@ namespace Server.Engines.Shadowguard
             _NextNuke = DateTime.UtcNow + TimeSpan.FromMinutes(1);
             _NextDismount = DateTime.UtcNow + TimeSpan.FromMinutes(1);
         }
-
-        public override int GetDeathSound() { return 0x596; }
+		public override int Level => 18;
+		public override Biome Biome => Biome.Toundra;
+		public override int GetDeathSound() { return 0x596; }
         public override int GetAttackSound() { return 0x597; }
         public override int GetIdleSound() { return 0x598; }
         public override int GetAngerSound() { return 0x599; }

@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a chaos daemon corpse")]
+    [CorpseName("Le Corps d'un Demon")]
     public class ChaosDaemon : BaseCreature
     {
         [Constructable]
         public ChaosDaemon()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a chaos daemon";
+            Name = "Un Demon du Chaos";
             Body = 792;
             BaseSoundID = 0x3E9;
 
@@ -34,13 +34,14 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 70.1, 80.0);
             SetSkill(SkillName.Wrestling, 95.1, 100.0);
 
-            Fame = 3000;
-            Karma = -4000;
+         //   Fame = 3000;
+         //   Karma = -4000;
 
             SetWeaponAbility(WeaponAbility.CrushingBlow);
         }
-
-        public ChaosDaemon(Serial serial)
+		public override int Level => 12;
+		public override Biome Biome => Biome.Volcan;
+		public ChaosDaemon(Serial serial)
             : base(serial)
         {
         }

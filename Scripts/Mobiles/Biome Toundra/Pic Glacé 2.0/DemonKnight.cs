@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a demon knight corpse")]
+    [CorpseName("Le Corps d'un Chevalier Demon")]
     public class DemonKnight : BaseCreature
     {
         private bool m_InHere;
@@ -14,8 +14,8 @@ namespace Server.Mobiles
         public DemonKnight()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("demon knight");
-            Title = "the Dark Father";
+            Name = "Un Chevalier Demoniaque";
+            Title = "Le Gardien des Tenebres";
             Body = 318;
             BaseSoundID = 0x165;
 
@@ -50,8 +50,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 120.0);
             SetSkill(SkillName.SpiritSpeak, 120.0);
 
-            Fame = 28000;
-            Karma = -28000;
+        //    Fame = 28000;
+        //    Karma = -28000;
 
             SetWeaponAbility(WeaponAbility.CrushingBlow);
             SetWeaponAbility(WeaponAbility.WhirlwindAttack);
@@ -64,8 +64,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanFlee => false;
+		public override int Level => 17;
+		public override Biome Biome => Biome.Toundra;
+		public override bool CanFlee => false;
 
         public override bool IgnoreYoungProtection => true;
         public override bool BardImmune => false;

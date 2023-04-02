@@ -3,14 +3,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an undead gargoyle corpse")]
+    [CorpseName("Le Corps d'une Gargouille")]
     public class UndeadGargoyle : BaseCreature
     {
         [Constructable]
         public UndeadGargoyle()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an Undead Gargoyle";
+            Name = "Une Gargouille Maudite";
             Body = 722;
             BaseSoundID = 372;
 
@@ -40,21 +40,21 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 70, 120);
             SetSkill(SkillName.SpiritSpeak, 62.9, 113.7);
 
-            Fame = 3500;
-            Karma = -3500;
+       //     Fame = 3500;
+       //     Karma = -3500;
         }
 
         public UndeadGargoyle(Serial serial)
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 1;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Volcan;
+		public override int TreasureMapLevel => 1;
         public override int Meat => 1;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls);
         }
 
         public override void Serialize(GenericWriter writer)
