@@ -52,8 +52,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Plaine;
+		public override bool BleedImmune => true;
 
         public override void GenerateLoot()
         {

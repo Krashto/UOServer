@@ -55,7 +55,10 @@ namespace Server.Mobiles
 		
         public override int TreasureMapLevel => 1;
 
-        public override void GenerateLoot()
+		public override int Level => 11;
+		public override Biome Biome => Biome.Plaine;
+
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 2);
 

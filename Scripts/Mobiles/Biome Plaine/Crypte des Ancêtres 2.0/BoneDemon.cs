@@ -46,7 +46,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-	
+		public override int Level => 11;
+		public override Biome Biome => Biome.Plaine;
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Demoniaque;
 		public override bool Unprovokable => true;

@@ -50,15 +50,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.Parrot, 1);
-            AddLoot(LootPack.PeerlessResource, 8);
-            AddLoot(LootPack.Talisman, 5);
-            AddLoot(LootPack.LootItem<DiseasedBark>());
-            AddLoot(LootPack.LootItem<EternallyCorruptTree>());
-            AddLoot(LootPack.LootItem<MelisandesFermentedWine>(4, 8));
-            AddLoot(LootPack.LootItem<ParrotItem>(60.0));
-            AddLoot(LootPack.RandomLootItem(new[] { typeof(MelisandesHairDye), typeof(MelisandesCorrodedHatchet), typeof(AlbinoSquirrelImprisonedInCrystal) }, 22.25, 1));
-        }
+               }
 
         public override void OnThink()
         {
@@ -95,8 +87,9 @@ namespace Server.Mobiles
 
             base.OnDamage(amount, from, willKill);
         }
-
-        public override bool GivesMLMinorArtifact => true;
+		public override int Level => 16;
+		public override Biome Biome => Biome.Plaine;
+		public override bool GivesMLMinorArtifact => true;
 
         public override Poison PoisonImmune => Poison.Lethal;
 
