@@ -32,16 +32,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 45.1, 70.0);
             SetSkill(SkillName.Wrestling, 50.1, 70.0);
 
-            Fame = 1500;
-            Karma = -1500;
+      //      Fame = 1500;
+      //      Karma = -1500;
         }
 
         public GoreFiend(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Desert;
+		public override bool BleedImmune => true;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);

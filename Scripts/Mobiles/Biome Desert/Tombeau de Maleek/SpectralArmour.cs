@@ -10,7 +10,7 @@ namespace Server.Mobiles
         {
             Body = 637;
             Hue = 0x8026;
-            Name = "spectral armour";
+            Name = "Une Armure Spectrale";
 
             Buckler buckler = new Buckler();
             ChainCoif coif = new ChainCoif();
@@ -47,16 +47,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.MagicResist, 90.1, 100);
 
-            Fame = 7000;
-            Karma = -7000;
+         //   Fame = 7000;
+         //   Karma = -7000;
         }
 
         public SpectralArmour(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool DeleteCorpseOnDeath => true;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Desert;
+		public override bool DeleteCorpseOnDeath => true;
         public override Poison PoisonImmune => Poison.Regular;
         public override int GetIdleSound()
         {

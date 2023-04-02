@@ -43,8 +43,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool AlwaysAttackable => true;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Desert;
+		public override bool AlwaysAttackable => true;
         public override bool BleedImmune => true;
         public override int TreasureMapLevel => 2;
         public override void GenerateLoot()

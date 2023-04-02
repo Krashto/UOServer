@@ -3,14 +3,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a yomotsu corpse")]
+    [CorpseName("Le Corps d'un Yomotsu")]
     public class YomotsuWarrior : BaseCreature
     {
         [Constructable]
         public YomotsuWarrior()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a yomotsu warrior";
+            Name = "Un Guerrier Yomotsu";
             Body = 245;
             BaseSoundID = 0x452;
 
@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override FoodType FavoriteFood => FoodType.Fish;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Desert;
+		public override FoodType FavoriteFood => FoodType.Fish;
         public override int Meat => 1;
         public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 3;

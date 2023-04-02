@@ -40,17 +40,16 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.0);
             SetSkill(SkillName.Wrestling, 90.0);
 
-            Fame = 4500;
-            Karma = -4500;
+     //       Fame = 4500;
+     //       Karma = -4500;
            
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
-
-        public override void GenerateLoot()
+		public override int Level => 3;
+		public override Biome Biome => Biome.Desert;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.PeculiarSeed3);
-            AddLoot(LootPack.Bones);
             AddLoot(LootPack.LootItem<PlainoisBone>(100.0, 3, false, true));
             AddLoot(LootPack.LootItem<FertileDirt>(100.0, Utility.RandomMinMax(1, 5), false, true));
         }

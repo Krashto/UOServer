@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a succubus corpse")]
+    [CorpseName("le Corps d'une succube")]
     public class Succubus : BaseCreature
     {
         [Constructable]
         public Succubus()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a succubus";
+            Name = "Une succube";
             Body = 149;
             BaseSoundID = 0x4B0;
 
@@ -50,13 +50,13 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Desert;
+		public override int Meat => 1;
         public override int TreasureMapLevel => 5;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.MedScrolls, 2);
         }
 
         public override void Serialize(GenericWriter writer)

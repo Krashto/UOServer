@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public LadyOfTheSnow()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a lady of the snow";
+            Name = "Lady of the Snow";
             Body = 252;
             BaseSoundID = 0x482;
 
@@ -37,8 +37,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 90, 110.0);
             SetSkill(SkillName.SpiritSpeak, 90.0, 110.0);
 
-            Fame = 15200;
-            Karma = -15200;
+       //     Fame = 15200;
+       //     Karma = -15200;
 
             SetWeaponAbility(WeaponAbility.ColdWind);
         }
@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Desert;
+		public override bool BleedImmune => true;
         public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 4;
         public override int GetDeathSound()
@@ -61,7 +62,6 @@ namespace Server.Mobiles
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
             AddLoot(LootPack.MageryRegs, 3);
-            AddLoot(LootPack.BonsaiSeed);
         }
 
         public override void Serialize(GenericWriter writer)

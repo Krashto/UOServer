@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a scorpion corpse")]
+    [CorpseName("Le Corps d'un Scorpion")]
     public class Scorpion : BaseCreature
     {
         [Constructable]
         public Scorpion()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a scorpion";
+            Name = "Un scorpion";
             Body = 48;
             BaseSoundID = 397;
 
@@ -48,8 +48,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 3;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Desert;
+		public override int Meat => 3;
 
 		public override int Hides => 3;
 		public override HideType HideType => HideType.Arachnide;

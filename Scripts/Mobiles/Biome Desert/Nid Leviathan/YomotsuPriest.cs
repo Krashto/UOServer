@@ -3,14 +3,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a glowing yomotsu corpse")]
+    [CorpseName("Le Corps d'un Yomotsu")]
     public class YomotsuPriest : BaseCreature
     {
         [Constructable]
         public YomotsuPriest()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a yomotsu priest";
+            Name = "Un Pretre Yomotsu";
             Body = 253;
             BaseSoundID = 0x452;
 
@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 4;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Desert;
+		public override int TreasureMapLevel => 4;
 
         public override FoodType FavoriteFood => FoodType.Fish;
         public override int Meat => 1;
@@ -59,8 +60,6 @@ namespace Server.Mobiles
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
    //         AddLoot(LootPack.Gems, 4);
-            AddLoot(LootPack.LootItem<GreenGourd>(true));
-            AddLoot(LootPack.BonsaiSeed);
         }
 
         // TODO: Body Transformation

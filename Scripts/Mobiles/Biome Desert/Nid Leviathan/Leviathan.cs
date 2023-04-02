@@ -133,8 +133,9 @@ namespace Server.Mobiles
                 return IsParagon ? regen : regen += 40;
             }
         }
-
-        public override double TreasureMapChance => 0.25;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Desert;
+		public override double TreasureMapChance => 0.25;
 
         public override int TreasureMapLevel => 5;
 

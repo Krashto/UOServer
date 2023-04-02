@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a flesh golem corpse")]
+    [CorpseName("Le corps d'un Golem")]
     public class FleshGolem : BaseCreature
     {
         [Constructable]
         public FleshGolem()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a flesh golem";
+            Name = "Un golem de chair";
             Body = 304;
             BaseSoundID = 684;
 
@@ -43,8 +43,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Desert;
+		public override bool BleedImmune => true;
         public override int TreasureMapLevel => 1;
 
         public override void GenerateLoot()

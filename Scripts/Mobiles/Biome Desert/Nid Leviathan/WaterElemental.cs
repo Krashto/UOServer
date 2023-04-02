@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a water elemental corpse")]
+    [CorpseName("Un elementaire d'eau")]
     public class WaterElemental : BaseCreature
     {
         private bool m_HasDecanter = true;
@@ -14,7 +14,7 @@ namespace Server.Mobiles
         public WaterElemental()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a water elemental";
+            Name = "Un Elementaire D'eau";
             Body = 16;
             BaseSoundID = 278;
 
@@ -40,8 +40,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 50.1, 70.0);
             SetSkill(SkillName.Wrestling, 50.1, 70.0);
 
-            Fame = 4500;
-            Karma = -4500;
+      //      Fame = 4500;
+      //      Karma = -4500;
 
             ControlSlots = 3;
             CanSwim = true;
@@ -51,8 +51,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override double DispelDifficulty => 117.5;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Desert;
+		public override double DispelDifficulty => 117.5;
         public override double DispelFocus => 45.0;
         public override bool BleedImmune => true;
         public override int TreasureMapLevel => 2;

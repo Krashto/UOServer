@@ -24,10 +24,11 @@ namespace Server.Mobiles
 
         public override int Meat => 5;
 
- /*       public override ScaleType ScaleType => ScaleType.All;
-        public override int Scales => 20;*/
-
-        public override double TreasureMapChance => .50;
+		/*       public override ScaleType ScaleType => ScaleType.All;
+			   public override int Scales => 20;*/
+		public override int Level => 12;
+		public override Biome Biome => Biome.Desert;
+		public override double TreasureMapChance => .50;
         public override int TreasureMapLevel => 7;
 
         public override Type[] UniqueList => new Type[] { typeof(EnchantedCoralBracelet), typeof(LeviathanHideBracers), typeof(SmilingMoonBlade) };
@@ -45,7 +46,7 @@ namespace Server.Mobiles
         public Osiredon(Mobile fisher)
             : base(fisher, AIType.AI_NecroMage, FightMode.Closest)
         {
-            Name = "osiredon the scalis enforcer";
+            Name = "Osiridon";
             Body = 1068;
             BaseSoundID = 589;
 

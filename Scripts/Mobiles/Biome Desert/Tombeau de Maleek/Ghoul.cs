@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a ghostly corpse")]
+    [CorpseName("Le Corps d'une Goule")]
     public class Ghoul : BaseCreature
     {
         [Constructable]
         public Ghoul()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a ghoul";
+            Name = "Une Goule";
             Body = 748;
             BaseSoundID = 0x482;
 
@@ -31,16 +31,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 45.1, 60.0);
             SetSkill(SkillName.Wrestling, 45.1, 55.0);
 
-            Fame = 2500;
-            Karma = -2500;
+          //  Fame = 2500;
+          //  Karma = -2500;
         }
 
         public Ghoul(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Desert;
+		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Regular;
 
         public override TribeType Tribe => TribeType.Undead;

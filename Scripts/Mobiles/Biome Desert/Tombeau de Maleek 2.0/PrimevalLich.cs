@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a Primeval Lich corpse")]
+    [CorpseName("Le Corps d'une Liche Primitive")]
     public class PrimevalLich : BaseChampion
     {
         private DateTime m_NextDiscordTime;
@@ -18,7 +18,7 @@ namespace Server.Mobiles
         public PrimevalLich()
             : base(AIType.AI_NecroMage)
         {
-            Name = "Primeval Lich";
+            Name = "Une Liche Primitive";
             Body = 830;
 
             SetStr(500);
@@ -51,8 +51,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90, 120);
             SetSkill(SkillName.Wrestling, 100, 120);
 
-            Fame = 28000;
-            Karma = -28000;
+          //  Fame = 28000;
+          //  Karma = -28000;
 
             m_Timer = new TeleportTimer(this);
             m_Timer.Start();
@@ -62,8 +62,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int GetAttackSound() { return 0x61E; }
+		public override int Level => 18;
+		public override Biome Biome => Biome.Desert;
+		public override int GetAttackSound() { return 0x61E; }
         public override int GetDeathSound() { return 0x61F; }
         public override int GetHurtSound() { return 0x620; }
         public override int GetIdleSound() { return 0x621; }
