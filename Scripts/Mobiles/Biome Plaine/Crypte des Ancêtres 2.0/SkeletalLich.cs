@@ -55,6 +55,8 @@ namespace Server.Mobiles
 		
         public override int TreasureMapLevel => 1;
 
+
+
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 2);
