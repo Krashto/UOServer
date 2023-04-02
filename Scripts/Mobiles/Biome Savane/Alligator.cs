@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an alligator corpse")]
+    [CorpseName("Le Corps d'un Alligator")]
     public class Alligator : BaseCreature
     {
         [Constructable]
         public Alligator()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an alligator";
+            Name = "Un Alligator";
             Body = 0xCA;
             BaseSoundID = 660;
 
@@ -45,8 +45,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Savane;
+		public override int Meat => 1;
         public override int Hides => 4;
         public override HideType HideType => HideType.Reptilien;
 

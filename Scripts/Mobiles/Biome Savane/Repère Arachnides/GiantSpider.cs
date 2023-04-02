@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a giant spider corpse")]
+    [CorpseName("Le Corps d'une araignee")]
     public class GiantSpider : BaseCreature
     {
         [Constructable]
         public GiantSpider()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant spider";
+            Name = "Une araignee geante";
             Body = 28;
             BaseSoundID = 0x388;
 
@@ -44,6 +44,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
+		public override int Level => 4;
+		public override Biome Biome => Biome.Savane;
 		public override int Hides => 3;
 		public override HideType HideType => HideType.Arachnide;
 

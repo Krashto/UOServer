@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a crane corpse")]
+    [CorpseName("Le Corps d'une Grue")]
     public class Crane : BaseCreature
     {
         [Constructable]
         public Crane()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a crane";
+            Name = "Une Grue";
             Body = 254;
             BaseSoundID = 0x4D7;
 
@@ -28,16 +28,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 10.1, 11.0);
             SetSkill(SkillName.Wrestling, 10.1, 11.0);
 
-            Fame = 0;
-            Karma = 200;
+         //   Fame = 0;
+         //   Karma = 200;
         }
 
         public Crane(Serial serial)
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Savane;
+		public override int Meat => 1;
         public override int Feathers => 25;
         public override int GetAngerSound()
         {

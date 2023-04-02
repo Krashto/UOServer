@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a wolf corpse")]
+    [CorpseName("le corps d'un Loup")]
     public class LeatherWolf : BaseCreature, IRepairableMobile
     {
         public Type RepairResource => typeof(IronIngot);
@@ -18,7 +18,7 @@ namespace Server.Mobiles
         public LeatherWolf()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a leather wolf";
+            Name = "Un Loup Sauvage";
             Body = 739;
             BaseSoundID = 0xE5;
 
@@ -131,8 +131,10 @@ namespace Server.Mobiles
                 m_Owner.CheckFellows();
             }
         }
+		public override int Level => 4;
+		public override Biome Biome => Biome.Savane;
 
-        public override bool AlwaysMurderer => true;
+		public override bool AlwaysMurderer => true;
 
         public override int Meat => 1;
         public override PackInstinct PackInstinct => PackInstinct.Canine;
@@ -190,7 +192,7 @@ namespace Server.Mobiles
         public LeatherWolfFellow()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a leather wolf";
+            Name = "Un Loup Sauvage";
             Body = 739;
             BaseSoundID = 0xE5;
 

@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Snake()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a snake";
+            Name = "Un serpent";
             Body = 52;
             Hue = Utility.RandomSnakeHue();
             BaseSoundID = 0xDB;
@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Lesser;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Savane;
+		public override Poison PoisonImmune => Poison.Lesser;
         public override Poison HitPoison => Poison.Lesser;
         public override bool DeathAdderCharmable => true;
         public override int Meat => 1;

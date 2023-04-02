@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a solen worker corpse")]
+    [CorpseName("Le Corps d'un Fourifeu")]
     public class RedSolenWorker : BaseCreature, IRedSolen
     {
         [Constructable]
         public RedSolenWorker()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a red solen worker";
+            Name = "Un Fourifeu";
             Body = 781;
             BaseSoundID = 959;
 
@@ -36,7 +36,8 @@ namespace Server.Mobiles
             Fame = 1500;
             Karma = -1500;
         }
-
+		public override int Level => 5;
+		public override Biome Biome => Biome.Savane;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Arachnide;
 

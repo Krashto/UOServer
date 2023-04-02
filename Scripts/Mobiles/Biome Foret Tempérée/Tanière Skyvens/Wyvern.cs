@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool ReacquireOnMovement => true;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Foret;
+		public override bool ReacquireOnMovement => true;
         public override Poison PoisonImmune => Poison.Deadly;
         public override Poison HitPoison => Poison.Deadly;
         public override int TreasureMapLevel => 2;
@@ -63,9 +64,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.Average);
             AddLoot(LootPack.Meager);
-            AddLoot(LootPack.MedScrolls);
-            AddLoot(LootPack.LootItem<LesserPoisonPotion>(true));
-			AddLoot(LootPack.LootItem<Items.GemmePoison>(), (double)5);
+   
 		}
 
 		public override void GenerateLootParagon()

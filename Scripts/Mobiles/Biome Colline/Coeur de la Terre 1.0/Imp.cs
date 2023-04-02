@@ -51,8 +51,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 3;
+		public override Biome Biome => Biome.Colline;
+		public override int Meat => 1;
         public override int Hides => 1;
         public override HideType HideType => HideType.Demoniaque;
 
@@ -65,7 +66,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Meager);
-            AddLoot(LootPack.MedScrolls, 2);
+         
         }
 
         public override void Serialize(GenericWriter writer)

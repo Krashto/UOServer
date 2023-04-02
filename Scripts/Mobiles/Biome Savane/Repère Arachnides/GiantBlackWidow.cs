@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a giant black widow spider corpse")]
+    [CorpseName("Le Corps d'une araignee")]
     public class GiantBlackWidow : BaseCreature
     {
         [Constructable]
         public GiantBlackWidow()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant black widow";
+            Name = "Une Veuve Noire";
             Body = 0x9D;
             BaseSoundID = 0x388; // TODO: validate
 
@@ -43,6 +43,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 5;
+		public override Biome Biome => Biome.Savane;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Arachnide;
 

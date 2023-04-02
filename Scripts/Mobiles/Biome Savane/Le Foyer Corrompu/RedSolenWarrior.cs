@@ -4,7 +4,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a solen warrior corpse")]
+    [CorpseName("Le corps d'un fourifeu")]
     public class RedSolenWarrior : BaseCreature, IRedSolen
     {
         private bool m_BurstSac;
@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public RedSolenWarrior()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a red solen warrior";
+            Name = "Un Guerrier Fourifeu";
             Body = 782;
             BaseSoundID = 959;
 
@@ -40,7 +40,8 @@ namespace Server.Mobiles
             Fame = 3000;
             Karma = -3000;
         }
-
+		public override int Level => 7;
+		public override Biome Biome => Biome.Savane;
 		public override int Hides => 7;
 		public override HideType HideType => HideType.Arachnide;
 

@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dread spider corpse")]
+    [CorpseName("le corps d'une araignee")]
     public class DreadSpider : BaseCreature
     {
         [Constructable]
         public DreadSpider()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a dread spider";
+            Name = "Une Tarenlune";
             Body = 11;
             BaseSoundID = 1170;
 
@@ -52,6 +52,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
+
+		public override int Level => 6;
+		public override Biome Biome => Biome.Savane;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Arachnide;
 

@@ -46,8 +46,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override InhumanSpeech SpeechType => InhumanSpeech.Orc;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Colline;
+		public override InhumanSpeech SpeechType => InhumanSpeech.Orc;
         public override bool CanRummageCorpses => true;
         public override int Meat => 1;
 
@@ -57,7 +58,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.Meager, 2);
             AddLoot(LootPack.LootItem<Yeast>(50.0));
-            AddLoot(LootPack.LootItem<StoutWhip>(5.0));
+            
         }
 
         public override bool IsEnemy(Mobile m)

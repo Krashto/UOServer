@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 namespace Server.Mobiles
 {
-    [CorpseName("a raptor corpse")]
+    [CorpseName("Le Corps d'un Raptor")]
     public class Raptor : BaseCreature
     {
         private const int MaxFriends = 2;
@@ -24,7 +24,7 @@ namespace Server.Mobiles
         {
             m_IsFriend = isFriend;
 
-            Name = "a raptor";
+            Name = "Un Raptor";
             Body = 730;
 
             SetStr(404, 471);
@@ -47,8 +47,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 75.1, 100.0);
             SetSkill(SkillName.Wrestling, 70.1, 95.1);
 
-            Fame = 7500;
-            Karma = -7500;
+         //   Fame = 7500;
+         //   Karma = -7500;
 
             Tamable = !isFriend;
             MinTameSkill = 90.1;
@@ -57,7 +57,9 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.BleedAttack);
         }
 
-        public override int TreasureMapLevel => 3;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Savane;
+		public override int TreasureMapLevel => 3;
 
         public override int Meat => 7;
 

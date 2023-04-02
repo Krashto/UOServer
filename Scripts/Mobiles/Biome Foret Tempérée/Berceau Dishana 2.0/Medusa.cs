@@ -76,8 +76,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override Type[] UniqueSAList => new[] { typeof(Slither), typeof(IronwoodCompositeBow), typeof(Venom), typeof(PetrifiedSnake), typeof(StoneDragonsTooth), typeof(MedusaFloorTileAddonDeed) };
+		public override int Level => 17;
+		public override Biome Biome => Biome.Foret;
+		public override Type[] UniqueSAList => new[] { typeof(Slither), typeof(IronwoodCompositeBow), typeof(Venom), typeof(PetrifiedSnake), typeof(StoneDragonsTooth), typeof(MedusaFloorTileAddonDeed) };
 
         public override Type[] SharedSAList => new[] { typeof(SummonersKilt) };
 

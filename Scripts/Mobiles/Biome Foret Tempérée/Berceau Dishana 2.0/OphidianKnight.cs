@@ -54,8 +54,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 2;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Foret;
+		public override int Meat => 2;
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
         public override int TreasureMapLevel => 3;

@@ -54,7 +54,8 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<SangEnvouteEnergie>(), Utility.RandomMinMax(2, 4));
 		}
 
-
+		public override int Level => 6;
+		public override Biome Biome => Biome.Foret;
 		public override int Meat => 1;
         public override int Feathers => 50;
         public override bool CanFly => true;

@@ -37,15 +37,17 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 6;
+		public override Biome Biome => Biome.Colline;
 
-        public override bool BleedImmune => true;
+		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Greater;
         public override Poison HitPoison => Poison.Greater;
 
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich, 2);
-            AddLoot(LootPack.MedScrolls, 2);
+           
             AddLoot(LootPack.NecroRegs, 6, 8);
             AddLoot(LootPack.BodyPartsAndBones);
         }

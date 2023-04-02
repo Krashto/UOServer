@@ -49,7 +49,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 3;
+		public override Biome Biome => Biome.Foret;
 		public override bool CanBeParagon => false;
 		public override int Meat => 1;
         public override int Hides => 4;

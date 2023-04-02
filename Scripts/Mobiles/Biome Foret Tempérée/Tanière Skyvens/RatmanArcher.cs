@@ -3,14 +3,14 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-    [CorpseName("Le Corps d'un Homme Rat Archer")]
+    [CorpseName("Le Corps d'un Sky-Vens Archer")]
     public class RatmanArcher : BaseCreature
     {
         [Constructable]
         public RatmanArcher()
             : base(AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Homme Rat Archer";
+            Name = "Un Sky-vens Archer";
             Body = 0x8E;
             BaseSoundID = 437;
 
@@ -50,8 +50,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Foret;
+		public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
         public override bool CanRummageCorpses => true;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Regular;

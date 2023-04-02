@@ -6,14 +6,14 @@ namespace Server.Mobiles
     {
     }
 
-    [CorpseName("an acid elementals corpse")]
+    [CorpseName("Le corps d'un elemental")]
     public class AcidElemental : BaseCreature, IAcidCreature
     {
         [Constructable]
         public AcidElemental()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an acid elemental";
+            Name = "Un elemental d'acide";
             Body = 158;
             BaseSoundID = 263;
 
@@ -42,16 +42,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.1, 90.0);
             SetSkill(SkillName.Wrestling, 70.1, 90.0);
 
-            Fame = 10000;
-            Karma = -10000;
+         //   Fame = 10000;
+         //   Karma = -10000;
         }
 
         public AcidElemental(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Savane;
+		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
         public override double HitPoisonChance => 0.75;

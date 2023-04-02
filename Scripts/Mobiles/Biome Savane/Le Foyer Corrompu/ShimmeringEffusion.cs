@@ -40,28 +40,19 @@ namespace Server.Mobiles
             SetSkill(SkillName.Meditation, 120.0);
             SetSkill(SkillName.Spellweaving, 120.0);
 
-            Fame = 30000;
-            Karma = -30000;
+       //     Fame = 30000;
+       //     Karma = -30000;
         }
 
         public override void GenerateLoot()
         {
             AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.Parrot, 2);
-            AddLoot(LootPack.HighScrolls, 3);
-            AddLoot(LootPack.MedScrolls, 3);
-            AddLoot(LootPack.PeerlessResource, 8);
-            AddLoot(LootPack.Talisman, 5);
-            AddLoot(LootPack.LootItem<CapturedEssence>());
-            AddLoot(LootPack.LootItem<ShimmeringCrystals>());
 
-            AddLoot(LootPack.RandomLootItem(new[] { typeof(ShimmeringEffusionStatuette), typeof(CorporealBrumeStatuette), typeof(MantraEffervescenceStatuette), typeof(FetidEssenceStatuette) }, 5.0, 1));
 
-            AddLoot(LootPack.LootItem<FerretImprisonedInCrystal>(5.0));
-            AddLoot(LootPack.LootItem<CrystallineRing>(2.25));
         }
-
-        public override bool AutoDispel => true;
+		public override int Level => 18;
+		public override Biome Biome => Biome.Savane;
+		public override bool AutoDispel => true;
         public override int TreasureMapLevel => 5;
         public override bool HasFireRing => true;
         public override double FireRingChance => 0.1;

@@ -109,8 +109,9 @@ namespace Server.Mobiles
 
             SetSpecialAbility(SpecialAbility.Heal);
         }
-
-        public override void GenerateLoot()
+		public override int Level => 7;
+		public override Biome Biome => Biome.Foret;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.LootItem<Bandage>(11, true));
         }

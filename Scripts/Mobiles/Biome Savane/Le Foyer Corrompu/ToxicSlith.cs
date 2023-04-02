@@ -2,13 +2,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a slith corpse")]
+    [CorpseName("Le Corps d'une Slith")]
     public class ToxicSlith : BaseCreature
     {
         [Constructable]
         public ToxicSlith() : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a toxic slith";
+            Name = "Une Slith Toxique";
             Body = 734;
             Hue = 476;
 
@@ -36,8 +36,9 @@ namespace Server.Mobiles
 
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
-
-        public override int DragonBlood => 6;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Savane;
+		public override int DragonBlood => 6;
 
         public ToxicSlith(Serial serial) : base(serial)
         {

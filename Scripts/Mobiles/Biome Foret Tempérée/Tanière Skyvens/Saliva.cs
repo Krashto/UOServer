@@ -49,14 +49,13 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override void GenerateLoot()
+		public override int Level => 8;
+		public override Biome Biome => Biome.Foret;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.UltraRich, 2);
 
-            AddLoot(LootPack.Parrot);
 			AddLoot(LootPack.LootItem<Items.Gold>(100, 175));
-			AddLoot(LootPack.RandomLootItem(new System.Type[] { typeof(SilverRing), typeof(Necklace), typeof(SilverNecklace), typeof(Collier), typeof(Collier2),  typeof(Collier3), typeof(Couronne3),  typeof(Collier4), typeof(Tiare), }, 10.0, 1, false, true));
 			AddLoot(LootPack.LootItem<Items.Gemme>(), (double) 5);
 			AddLoot(LootPack.LootItem<PlumesSaliva>(1, 5));
 		}

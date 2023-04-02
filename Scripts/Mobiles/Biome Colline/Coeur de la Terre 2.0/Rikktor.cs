@@ -60,7 +60,8 @@ namespace Server.Mobiles
 		/*     public override ScaleType ScaleType => ScaleType.All;
 			 public override int Scales => 20;*/
 
-
+		public override int Level => 17;
+		public override Biome Biome => Biome.Colline;
 		public override int Hides => 12;
 		public override HideType HideType => HideType.Dragonique;
 

@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public RatmanMage()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Homme Rat Mage";
+            Name = "Un Sky-vens Mage";
             Body = 0x8F;
             BaseSoundID = 437;
 
@@ -48,8 +48,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Foret;
+		public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
         public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 2;
         public override int Meat => 1;

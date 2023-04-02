@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int GetAngerSound() { return 0x600; }
+		public override int Level => 4;
+		public override Biome Biome => Biome.Colline;
+		public override int GetAngerSound() { return 0x600; }
         public override int GetIdleSound() { return 0x600; }
         public override int GetAttackSound() { return 0x5FD; }
         public override int GetHurtSound() { return 0x5FF; }
@@ -62,7 +63,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Meager);
-            AddLoot(LootPack.LootItem<BolaBall>(20.0));
+      
         }
 
         public override void OnDeath(Container c)
