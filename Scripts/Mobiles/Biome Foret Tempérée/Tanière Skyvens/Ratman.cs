@@ -3,14 +3,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("Le Corps d'un Homme Rat")]
+    [CorpseName("Le Corps d'un Sky-vens Rat")]
     public class Ratman : BaseCreature
     {
         [Constructable]
         public Ratman()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Homme Rat";
+            Name = "Un Sky-vens";
             Body = 42;
             BaseSoundID = 437;
 			SetStr(124, 192);
@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
+		public override int Level => 4;
+		public override Biome Biome => Biome.Foret;
+		public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
         public override bool CanRummageCorpses => true;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Regular;

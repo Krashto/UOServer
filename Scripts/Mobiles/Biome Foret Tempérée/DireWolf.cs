@@ -48,7 +48,8 @@ namespace Server.Mobiles
             ControlSlots = 1;
             MinTameSkill = 83.1;
         }
-
+		public override int Level => 4;
+		public override Biome Biome => Biome.Foret;
 		public override bool CanBeParagon => false;
 		public DireWolf(Serial serial)
             : base(serial)

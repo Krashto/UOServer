@@ -54,7 +54,8 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteLezard>(), Utility.RandomMinMax(2, 4));
 		}
-
+		public override int Level => 3;
+		public override Biome Biome => Biome.Foret;
 		public override int TreasureMapLevel => 1;
         public override InhumanSpeech SpeechType => InhumanSpeech.Lizardman;
         public override bool CanRummageCorpses => true;

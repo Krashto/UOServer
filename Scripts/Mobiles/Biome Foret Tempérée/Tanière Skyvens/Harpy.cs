@@ -49,7 +49,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 3;
+		public override Biome Biome => Biome.Foret;
 		public override void GenerateLootParagon()
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteEnergie>(), Utility.RandomMinMax(2, 4));

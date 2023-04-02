@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 2;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Foret;
+		public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
@@ -56,7 +57,6 @@ namespace Server.Mobiles
             AddLoot(LootPack.Average);
             AddLoot(LootPack.LootItem<RawFishSteak>(3, true));
             AddLoot(LootPack.RandomLootItem(new [] { typeof(Gears), typeof(Hinge), typeof(Axle) }, 50.0, 1));
-            AddLoot(LootPack.PeculiarSeed2);
         }
 
         public override int GetAngerSound()

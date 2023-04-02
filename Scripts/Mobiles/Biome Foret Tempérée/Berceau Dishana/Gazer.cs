@@ -45,13 +45,13 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 1;
+		public override int Level => 3;
+		public override Biome Biome => Biome.Foret;
+		public override int TreasureMapLevel => 1;
         public override int Meat => 1;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
             AddLoot(LootPack.LootItem<Nightshade>(4, true));
         }
 

@@ -43,14 +43,15 @@
             : base(serial)
         {
         }
-
+		
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.Rich);
 			AddLoot(LootPack.LootItem<Items.Gold>(50, 100));
 			base.GenerateLoot();
 		}
-
+		public override int Level => 10;
+		public override Biome Biome => Biome.Foret;
 		public override bool CanBeParagon => false;
 		
         public override void Serialize(GenericWriter writer)

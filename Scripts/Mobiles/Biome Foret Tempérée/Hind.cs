@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 3;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Foret;
+		public override int Meat => 3;
         public override int Hides => 5;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;
         public override int GetAttackSound()

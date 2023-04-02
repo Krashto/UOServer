@@ -53,8 +53,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Foret;
+		public override int Meat => 1;
         public override int TreasureMapLevel => 2;
 
         public override TribeType Tribe => TribeType.Ophidian;
@@ -73,7 +74,7 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls, 2);
+          
             AddLoot(LootPack.MageryRegs, 5, 15);
             AddLoot(LootPack.NecroRegs, 5, 15);
         }

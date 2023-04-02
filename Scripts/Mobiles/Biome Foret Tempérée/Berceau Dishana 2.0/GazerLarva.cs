@@ -49,8 +49,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Foret;
+		public override int Meat => 1;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Poor);

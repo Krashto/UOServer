@@ -51,8 +51,9 @@ namespace Server.Mobiles
 
             m_NextGobble = DateTime.UtcNow;
         }
-
-        public override int Meat => 5;
+		public override int Level => 2;
+		public override Biome Biome => Biome.Foret;
+		public override int Meat => 5;
         public override MeatType MeatType => MeatType.Bird;
         public override FoodType FavoriteFood => FoodType.GrainsAndHay;
         public override int Feathers => 25;
