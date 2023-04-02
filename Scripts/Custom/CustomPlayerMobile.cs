@@ -747,23 +747,23 @@ namespace Server.Mobiles
 		{
 			switch (stats)
 			{
-				case StatType.Str: return RawStr - value > 25;
-				case StatType.Dex: return RawDex - value > 25;
-				case StatType.Int: return RawInt - value > 25;
+				case StatType.Str: return RawStr - value >= 25;
+				case StatType.Dex: return RawDex - value >= 25;
+				case StatType.Int: return RawInt - value >= 25;
 				default: return false;
 			}
 		}
 
 		public bool CanIncreaseStat(StatType stats, int value)
 		{
-			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value >= 525)
+			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value > 525)
 				return false;
 
 			switch (stats)
 			{
-				case StatType.Str: return RawStr + value < 125;
-				case StatType.Dex: return RawDex + value < 125;
-				case StatType.Int: return RawInt + value < 125;
+				case StatType.Str: return RawStr + value <= 125;
+				case StatType.Dex: return RawDex + value <= 125;
+				case StatType.Int: return RawInt + value <= 125;
 				default: return false;
 			}
 		}

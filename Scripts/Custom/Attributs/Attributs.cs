@@ -104,15 +104,15 @@ namespace Server
 
 		public bool CanDecreaseStat(Attribut attr, int value)
 		{
-			return m_Owner.Attributs[attr] - value > 25;
+			return m_Owner.Attributs[attr] - value >= 25;
 		}
 
 		public bool CanIncreaseStat(Attribut attr, int value)
 		{
-			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] + value >= 525)
+			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] + value > 525)
 				return false;
 
-			return m_Owner.Attributs[attr] + value < 125;
+			return m_Owner.Attributs[attr] + value <= 125;
 		}
 
 		public void Increase(Attribut attr, int value)

@@ -19,7 +19,7 @@ namespace Server.Gumps
 			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 238, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 138, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Str.ToString());
-			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 139, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line + 2, 5601, 5605, 139, GumpButtonType.Reply, 0);
 			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 239, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Dextérité");
@@ -27,7 +27,7 @@ namespace Server.Gumps
 			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 240, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 140, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Dex.ToString());
-			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 141, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line + 2, 5601, 5605, 141, GumpButtonType.Reply, 0);
 			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 241, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Intelligence");
@@ -35,7 +35,7 @@ namespace Server.Gumps
 			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 242, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 142, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Int.ToString());
-			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 143, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line + 2, 5601, 5605, 143, GumpButtonType.Reply, 0);
 			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 243, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Constitution");
@@ -43,7 +43,7 @@ namespace Server.Gumps
 			AddButton(x + 300, y + lineSpace * line + 2, 5603, 5607, 244, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 144, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Const.ToString());
-			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 145, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line + 2, 5601, 5605, 145, GumpButtonType.Reply, 0);
 			AddButton(x + 380, y + lineSpace * line++ + 2, 5601, 5605, 245, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Endurance");
@@ -51,7 +51,7 @@ namespace Server.Gumps
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 246, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 146, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Endur.ToString());
-			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 147, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line + 2, 5601, 5605, 147, GumpButtonType.Reply, 0);
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 247, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Sagesse");
@@ -59,7 +59,7 @@ namespace Server.Gumps
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 248, GumpButtonType.Reply, 0);
 			AddButton(x + 310, y + lineSpace * line + 2, 5603, 5607, 148, GumpButtonType.Reply, 0);
 			AddLabel(x + 340, y + lineSpace * line, 2101, creationPerso.Sag.ToString());
-			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 149, GumpButtonType.Reply, 0);
+			AddButton(x + 370, y + lineSpace * line + 2, 5601, 5605, 149, GumpButtonType.Reply, 0);
 			AddButton(x + 370, y + lineSpace * line++ + 2, 5601, 5605, 249, GumpButtonType.Reply, 0);
 
 			AddLabel(x + 185, y + lineSpace * line, 2101, "Points restants");

@@ -54,10 +54,10 @@ namespace Server.Engines.Harvest
                 // Set the list of harvestable tiles
                 Tiles = m_WaterTiles,
                 SpecialTiles = m_LavaTiles,
-                RangedTiles = true,
+				RangedTiles = true,
 
-                // Players must be within 4 tiles to harvest
-                MaxRange = 4,
+				// Players must be within 4 tiles to harvest
+				MaxRange = 4,
 
                 // One fish per harvest action
                 ConsumedPerHarvest = 1,
@@ -767,12 +767,13 @@ namespace Server.Engines.Harvest
         {
 			0x00A8, 0x00A9,
 			0x00AA, 0x00AB,
-			0x0136, 0x0137,
-			0x098B, 0x0E61,
-			0x0E62, 0x0E63,
-			0x0E64, 0x0E65,
-			0x3FF0, 0x3FF1,
-			0x3FF2, 0x3FF3,
+
+			//0x0136, 0x0137,
+			//0x098B, 0x0E61,
+			//0x0E62, 0x0E63,
+			//0x0E64, 0x0E65,
+			//0x3FF0, 0x3FF1,
+			//0x3FF2, 0x3FF3,
 
 			//0x55F0, 0x55F1,
 			//0x55F2, 0x55F3,

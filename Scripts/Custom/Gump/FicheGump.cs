@@ -193,7 +193,7 @@ namespace Server.Gumps
 			AddSection(x + 241, y + space * line++, 359, space * 12 - 1, "Classes");
 			line++;
 			AddHtmlTexte(x + 261, y + space * line, 150, "Classe");
-			AddHtmlTexte(x + 525, y + space * line++, 100, m_From.Classe.ToString());
+			AddHtmlTexte(x + 500, y + space * line++, 100, m_From.Classe.ToString());
 			var info = Classes.GetInfos(m_From.Classe);
 			AddHtmlTexte(x + 261, y + space * line++, 150, "Aptitudes");
 
@@ -201,7 +201,7 @@ namespace Server.Gumps
 			{
 				foreach (var apt in info.Aptitudes)
 				{
-					AddHtmlTexte(x + 270, y + space * line, 150, apt.ToString());
+					AddHtmlTexte(x + 270, y + space * line, 150, apt.Aptitude.ToString());
 					AddHtmlTexte(x + 525, y + space * line++, 100, apt.Value.ToString());
 				}
 			}
