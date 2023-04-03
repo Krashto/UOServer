@@ -44,7 +44,7 @@ namespace Server.Engines.BulkOrders
                 AmountMax = amountMax;
                 Type = entry.Type;
                 Number = entry.Number;
-                Graphic = entry.Graphic;
+                Graphic = entry.Graphic;				
                 RequireExceptional = reqExceptional;
                 Material = material;
                 GraphicHue = entry.Hue;

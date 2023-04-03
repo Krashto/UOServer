@@ -27,7 +27,7 @@ namespace Server.Engines.BulkOrders
 			int line = 0;
 			int lineSpace = 25;
 
-			AddSection(100, y + lineSpace * line++, 500, 400, "Contrat"); // Amount to make:
+			AddSection(100, y + lineSpace * line++, 500, 400, "Contrat");
 			line++;
 			AddHtmlTexte(150, y + lineSpace * line, 400, 20, "Quantité à fabriquer"); // Amount to make:
 			AddHtmlTexte(375, y + lineSpace * line++, 400, 20, deed.AmountMax.ToString());
@@ -47,7 +47,7 @@ namespace Server.Engines.BulkOrders
 			item.Delete();
 			line++;
 
-			AddItem(510, 172, deed.Graphic, deed.GraphicHue);
+			AddItem(510, 125, deed.Graphic, deed.GraphicHue);
 
             if (deed.RequireExceptional || deed.Material != BulkMaterialType.None)
                 AddHtmlTexte(150, y + lineSpace * line++, 400, 20, "Particularités:"); // Special requirements to meet:

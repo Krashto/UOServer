@@ -1,15 +1,15 @@
+using System;
 using Server.Gumps;
 using Server.Network;
 
 namespace Server.Engines.BulkOrders
 {
-    public class SmallBODAcceptGump : Gump
-    {
+    public class SmallBODAcceptGump : BaseProjectMGump
+	{
         private readonly SmallBOD m_Deed;
         private readonly Mobile m_From;
-        public SmallBODAcceptGump(Mobile from, SmallBOD deed)
-            : base(50, 50)
-        {
+        public SmallBODAcceptGump(Mobile from, SmallBOD deed) : base("Contrat de fabrication", 450, 300, false)
+		{
             m_From = from;
             m_Deed = deed;
 
@@ -18,45 +18,51 @@ namespace Server.Engines.BulkOrders
 
             AddPage(0);
 
-            AddBackground(25, 10, 430, 264, 5054);
+			int y = 100;
+			int line = 0;
+			int lineSpace = 25;
 
-            AddImageTiled(33, 20, 413, 245, 2624);
-            AddAlphaRegion(33, 20, 413, 245);
+			AddSection(100, y + lineSpace * line++, 425, 275, "Contrat");
+			line++;
 
-            AddImage(20, 5, 10460);
-            AddImage(430, 5, 10460);
-            AddImage(20, 249, 10460);
-            AddImage(430, 249, 10460);
+			AddHtmlTexte(150, y + lineSpace * line++, 400, 20, "Voulez-vous m'aider ?");
 
-            AddHtmlLocalized(190, 25, 120, 20, 1045133, 0x7FFF, false, false); // A bulk order
-            AddHtmlLocalized(40, 48, 350, 20, 1045135, 0x7FFF, false, false); // Ah!  Thanks for the goods!  Would you help me out?
+			AddHtmlTexte(150, y + lineSpace * line, 400, 20, "Item demandée:"); // Item requested:
+			var item = (Item)Activator.CreateInstance(deed.Type);
+			if (item != null)
+			{
+				var name = item.Name;
+				if (string.IsNullOrEmpty(item.Name))
+					name = System.Text.RegularExpressions.Regex.Replace(deed.Type.Name, "[A-Z]", " $0").Trim();
+				AddHtmlTexte(375, y + lineSpace * line, 400, 20, name);
+			}
+			item.Delete();
+			line++;
 
-            AddHtmlLocalized(40, 72, 210, 20, 1045138, 0x7FFF, false, false); // Amount to make:
-            AddLabel(250, 72, 1152, deed.AmountMax.ToString());
-
-            AddHtmlLocalized(40, 96, 120, 20, 1045136, 0x7FFF, false, false); // Item requested:
-            AddItem(385, 96, deed.Graphic, deed.GraphicHue);
-            AddHtmlLocalized(40, 120, 210, 20, deed.Number, 0xFFFFFF, false, false);
+			AddHtmlTexte(150, y + lineSpace * line, 400, 20, "Quantité à fabriquer:"); // Amount to make:
+			AddHtmlTexte(375, y + lineSpace * line++, 400, 20, deed.AmountMax.ToString());
+			
+            AddItem(400, 125, deed.Graphic, deed.GraphicHue);
 
             if (deed.RequireExceptional || deed.Material != BulkMaterialType.None)
             {
-                AddHtmlLocalized(40, 144, 210, 20, 1045140, 0x7FFF, false, false); // Special requirements to meet:
+                AddHtmlTexte(150, y + lineSpace * line++, 400, 20, "Particularités:"); // Special requirements to meet:
 
                 if (deed.RequireExceptional)
-                    AddHtmlLocalized(40, 168, 350, 20, 1045141, 0x7FFF, false, false); // All items must be exceptional.
+					AddHtmlTexte(150, y + lineSpace * line++, 400, 20, "Tous les items doivent être de qualité exceptionelle."); // All items must be exceptional.
 
                 if (deed.Material != BulkMaterialType.None)
-                    AddHtmlLocalized(40, deed.RequireExceptional ? 192 : 168, 350, 20, SmallBODGump.GetMaterialNumberFor(deed.Material), 0x7FFF, false, false); // All items must be made with x material.
+					AddHtmlLocalized(150, y + lineSpace * line++, 400, 20, SmallBODGump.GetMaterialNumberFor(deed.Material), 0x7FFF, false, false); // All items must be made with x material.
             }
 
-            AddHtmlLocalized(40, 216, 350, 20, 1045139, 0x7FFF, false, false); // Do you want to accept this order?
+			AddHtmlTexte(150, y + lineSpace * line++, 350, 20, "Voulez-vous accepter cette commande ?"); // Do you want to accept this order?
 
-            AddButton(100, 240, 4005, 4007, 1, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(135, 240, 120, 20, 1006044, 0x7FFF, false, false); // Ok
+            AddButton(150, y + lineSpace * line, 4005, 4007, 1, GumpButtonType.Reply, 0);
+			AddHtmlTexte(185, y + lineSpace * line, 400, 20, "Accepter");
 
-            AddButton(275, 240, 4005, 4007, 0, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(310, 240, 120, 20, 1011012, 0x7FFF, false, false); // CANCEL
-        }
+            AddButton(350, y + lineSpace * line, 4005, 4007, 0, GumpButtonType.Reply, 0);
+			AddHtmlTexte(385, y + lineSpace * line, 400, 20, "Refuser");
+		}
 
         public override void OnServerClose(NetState owner)
         {

@@ -22,6 +22,7 @@ namespace Server.Engines.BulkOrders
         public SmallBOD(int hue, int amountMax, Type type, int number, int graphic, bool requireExeptional, BulkMaterialType material, int graphichue = 0)
             : base(0x2258)
         {
+			Name = "Contrat de fabrication";
             Weight = 1.0;
             Hue = hue; // Blacksmith: 0x44E; Tailoring: 0x483
             LootType = LootType.Blessed;
@@ -150,18 +151,18 @@ namespace Server.Engines.BulkOrders
         }
         [CommandProperty(AccessLevel.GameMaster)]
         public bool Complete => (m_AmountCur == m_AmountMax);
-        public override int LabelNumber => 1045151;// a bulk order deed
+
         public static BulkMaterialType GetRandomMaterial(BulkMaterialType start, double[] chances)
         {
-            double random = Utility.RandomDouble();
+            //double random = Utility.RandomDouble();
 
-            for (int i = 0; i < chances.Length; ++i)
-            {
-                if (random < chances[i])
-                    return (i == 0 ? BulkMaterialType.None : start + (i - 1));
+            //for (int i = 0; i < chances.Length; ++i)
+            //{
+            //    if (random < chances[i])
+            //        return (i == 0 ? BulkMaterialType.None : start + (i - 1));
 
-                random -= chances[i];
-            }
+            //    random -= chances[i];
+            //}
 
             return BulkMaterialType.None;
         }
