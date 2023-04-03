@@ -30,7 +30,7 @@ namespace Server.Items
 
         public override WeaponAnimation DefAnimation => WeaponAnimation.Slash2H;
 
-        public virtual HarvestSystem HarvestSystem => Lumberjacking.System;
+		public virtual HarvestSystem HarvestSystem { get { return CustomLumberjacking.GetSystem(this); } }
 
         public override void OnDoubleClick(Mobile from)
         {
@@ -50,7 +50,7 @@ namespace Server.Items
                 return;
             }
 
-            if (!(HarvestSystem is Mining))
+            if (!(HarvestSystem is Mining || HarvestSystem is CustomMining))
                 from.SendLocalizedMessage(1010018); // What do you want to use this item on?
 
             HarvestSystem.BeginHarvesting(from, this);

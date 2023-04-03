@@ -51,13 +51,13 @@ namespace Server.Engines.Harvest
 			#region Mining for ore and stone
 			var oreAndStone = OreAndStone = new HarvestDefinition();
 
-			// Resource banks are every 8x8 tiles
+			// Resource banks are every 1x1 tiles
 			oreAndStone.BankWidth = 1;
 			oreAndStone.BankHeight = 1;
 
-			// Every bank holds from 10 to 34 ore
-			oreAndStone.MinTotal = 3;
-			oreAndStone.MaxTotal = 6;
+			// Every bank holds from 5 to 10 ore
+			oreAndStone.MinTotal = 5;
+			oreAndStone.MaxTotal = 10;
 
 			// A resource bank will respawn its content every 10 to 20 minutes
 			oreAndStone.MinRespawn = TimeSpan.FromMinutes(10.0);

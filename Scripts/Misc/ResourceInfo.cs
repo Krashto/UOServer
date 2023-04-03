@@ -1010,17 +1010,17 @@ namespace Server.Items
 
 		private static readonly CraftResourceInfo[] m_WoodInfo = new[]
         {
-            new CraftResourceInfo(0, 0, "Normal",		0, CraftAttributeInfo.Blank,			CraftResource.RegularWood,		typeof( RegularBoard ),		typeof(RegularLog)),
-            new CraftResourceInfo(1355, 0, "Plainois",	0, CraftAttributeInfo.Blank,		CraftResource.PlainoisWood,		typeof( PlainoisBoard ),	typeof(PlainoisLog)),
-			new CraftResourceInfo(1411, 0, "Forestier",   1, CraftAttributeInfo.ForestierWood,    CraftResource.ForestierWood,    typeof( ForestierBoard ),	typeof(ForestierLog)),
-			new CraftResourceInfo(1191, 0, "Collinois",   1, CraftAttributeInfo.CollinoisWood,    CraftResource.CollinoisWood,    typeof( CollinoisBoard ),	typeof(CollinoisLog)),
-			new CraftResourceInfo(1126, 0, "Désertique",  2, CraftAttributeInfo.DesertiqueWood,   CraftResource.DesertiqueWood,   typeof( DesertiqueBoard ),	typeof(DesertiqueLog)),
-			new CraftResourceInfo(1008, 0, "Savanois",    2, CraftAttributeInfo.SavanoisWood,		CraftResource.SavanoisWood,		typeof( SavanoisBoard ),	typeof(SavanoisLog)),
-			new CraftResourceInfo(2219, 0, "Montagnard",  3, CraftAttributeInfo.MontagnardWood,   CraftResource.MontagnardWood,   typeof( MontagnardBoard ),	typeof(MontagnardLog)),
-			new CraftResourceInfo(1109, 0, "Volcanique",  3, CraftAttributeInfo.VolcaniqueWood,   CraftResource.VolcaniqueWood,   typeof( VolcaniqueBoard ),	typeof(VolcaniqueLog)),
-			new CraftResourceInfo(2210, 0, "Tropicaux",   4, CraftAttributeInfo.TropicauxWood,    CraftResource.TropicauxWood,    typeof( TropicauxBoard ),	typeof(TropicauxLog)),
-			new CraftResourceInfo(2500, 0, "Toundrois",   4, CraftAttributeInfo.ToundroisWood,    CraftResource.ToundroisWood,    typeof( ToundroisBoard ), typeof(ToundroisLog)),
-			new CraftResourceInfo(1779, 0, "Ancien",      5, CraftAttributeInfo.AncienWood,       CraftResource.AncienWood,       typeof( AncienBoard ),		typeof(AncienLog)),
+            new CraftResourceInfo(0000, 0, "Normal",	  0,	CraftAttributeInfo.Blank,				CraftResource.RegularWood,		typeof( RegularBoard ),		typeof(RegularLog)),
+            new CraftResourceInfo(1355, 0, "Plainois",	  0,	CraftAttributeInfo.Blank,				CraftResource.PlainoisWood,		typeof( PlainoisBoard ),	typeof(PlainoisLog)),
+			new CraftResourceInfo(1411, 0, "Forestier",   1,	CraftAttributeInfo.ForestierWood,		CraftResource.ForestierWood,    typeof( ForestierBoard ),	typeof(ForestierLog)),
+			new CraftResourceInfo(1191, 0, "Collinois",   1,	CraftAttributeInfo.CollinoisWood,		CraftResource.CollinoisWood,    typeof( CollinoisBoard ),	typeof(CollinoisLog)),
+			new CraftResourceInfo(1126, 0, "Désertique",  2,	CraftAttributeInfo.DesertiqueWood,		CraftResource.DesertiqueWood,   typeof( DesertiqueBoard ),	typeof(DesertiqueLog)),
+			new CraftResourceInfo(1008, 0, "Savanois",    2,	CraftAttributeInfo.SavanoisWood,		CraftResource.SavanoisWood,		typeof( SavanoisBoard ),	typeof(SavanoisLog)),
+			new CraftResourceInfo(2219, 0, "Montagnard",  3,	CraftAttributeInfo.MontagnardWood,		CraftResource.MontagnardWood,   typeof( MontagnardBoard ),	typeof(MontagnardLog)),
+			new CraftResourceInfo(1109, 0, "Volcanique",  3,	CraftAttributeInfo.VolcaniqueWood,		CraftResource.VolcaniqueWood,   typeof( VolcaniqueBoard ),	typeof(VolcaniqueLog)),
+			new CraftResourceInfo(2210, 0, "Tropicaux",   4,	CraftAttributeInfo.TropicauxWood,		CraftResource.TropicauxWood,    typeof( TropicauxBoard ),	typeof(TropicauxLog)),
+			new CraftResourceInfo(2500, 0, "Toundrois",   4,	CraftAttributeInfo.ToundroisWood,		CraftResource.ToundroisWood,    typeof( ToundroisBoard ),	typeof(ToundroisLog)),
+			new CraftResourceInfo(1779, 0, "Ancien",      5,	CraftAttributeInfo.AncienWood,			CraftResource.AncienWood,       typeof( AncienBoard ),		typeof(AncienLog)),
 
 			new CraftResourceInfo(0x7DA, 0, "Oak",        99, CraftAttributeInfo.OakWood,      CraftResource.OakWood,      typeof(OakLog),         typeof(OakBoard)),
 			new CraftResourceInfo(0x4A7, 0, "Ash",        99, CraftAttributeInfo.AshWood,      CraftResource.AshWood,      typeof(AshLog),         typeof(AshBoard)),
