@@ -405,7 +405,7 @@ namespace Server.Items
 			 public override int InitMinHits => 20;
 			 public override int InitMaxHits => 30;*/
 
-		public override bool Disguise { get { return true; } }
+		public override bool Anonymous => true;
 
 
 		[Constructable]

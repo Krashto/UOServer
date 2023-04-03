@@ -2,7 +2,7 @@ namespace Server.Items
 {
     public class CloseHelm : BaseArmor
     {
-		public override bool Disguise { get { return true; } }
+		public override bool Anonymous => true;
 
 		[Constructable]
         public CloseHelm()

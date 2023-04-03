@@ -43,7 +43,7 @@ namespace Server.Items
             set { _OwnerName = value; InvalidateProperties(); }
         }
 
-        /* Armor internals work differently now (Jun 19 2003)
+		/* Armor internals work differently now (Jun 19 2003)
         * 
         * The attributes defined below default to -1.
         * If the value is -1, the corresponding virtual 'Aos/Old' property is used.
@@ -58,8 +58,8 @@ namespace Server.Items
         *  - MeditationAllowance
         */
 
-        // Instance values. These values must are unique to each armor piece.
-        private int m_MaxHitPoints;
+		// Instance values. These values must are unique to each armor piece.
+		private int m_MaxHitPoints;
         private int m_HitPoints;
         private Mobile m_Crafter;
         private ItemQuality m_Quality;
@@ -102,7 +102,7 @@ namespace Server.Items
         public virtual bool AllowMaleWearer => true;
         public virtual bool AllowFemaleWearer => true;
 
-		public virtual bool Disguise { get { return false; } }
+		public virtual bool Anonymous => false;
 
 		public abstract AMT MaterialType { get; }
 
@@ -2188,6 +2188,9 @@ namespace Server.Items
 
                 if (IsSetItem && m_SetEquipped)
                     SetHelper.RemoveSetBonus(m, SetID, this);
+
+				if (Anonymous && Layer == Layer.Helm)
+					m.NameMod = null;
 			}
 
             base.OnRemoved(parent);

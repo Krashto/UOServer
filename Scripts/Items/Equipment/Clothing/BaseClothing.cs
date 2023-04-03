@@ -56,7 +56,7 @@ namespace Server.Items
             set { _OwnerName = value; InvalidateProperties(); }
         }
 
-		public virtual bool Disguise { get { return false; } }
+		public virtual bool Anonymous => false;
 
 		public virtual bool CanFortify => !IsImbued && NegativeAttributes.Antique < 4;
         public virtual bool CanRepair => m_NegativeAttributes.NoRepair == 0;
@@ -235,7 +235,7 @@ namespace Server.Items
             }
         }
 
-        public virtual void OnAfterImbued(Mobile m, int mod, int value)
+		public virtual void OnAfterImbued(Mobile m, int mod, int value)
         {
         }
 
@@ -558,25 +558,25 @@ namespace Server.Items
 
         public override void OnAdded(object parent)
         {
-            Mobile mob = parent as Mobile;
+            Mobile m = parent as Mobile;
 
-            if (mob != null)
+            if (m != null)
             {
-                m_AosSkillBonuses.AddTo(mob);
+                m_AosSkillBonuses.AddTo(m);
 
                 if (IsSetItem)
                 {
-                    m_SetEquipped = SetHelper.FullSetEquipped(mob, SetID, Pieces);
+                    m_SetEquipped = SetHelper.FullSetEquipped(m, SetID, Pieces);
 
                     if (m_SetEquipped)
                     {
                         m_LastEquipped = true;
-                        SetHelper.AddSetBonus(mob, SetID);
+                        SetHelper.AddSetBonus(m, SetID);
                     }
                 }
 
-                AddStatBonuses(mob);
-                mob.CheckStatTimers();
+                AddStatBonuses(m);
+                m.CheckStatTimers();
             }
 
             base.OnAdded(parent);
@@ -584,23 +584,26 @@ namespace Server.Items
 
         public override void OnRemoved(object parent)
         {
-            Mobile mob = parent as Mobile;
+            Mobile m = parent as Mobile;
 
-            if (mob != null)
+            if (m != null)
             {
                 m_AosSkillBonuses.Remove();
 
                 if (IsSetItem && m_SetEquipped)
-                    SetHelper.RemoveSetBonus(mob, SetID, this);
+                    SetHelper.RemoveSetBonus(m, SetID, this);
 
                 string modName = Serial.ToString();
 
-                mob.RemoveStatMod(modName + "Str");
-                mob.RemoveStatMod(modName + "Dex");
-                mob.RemoveStatMod(modName + "Int");
+                m.RemoveStatMod(modName + "Str");
+                m.RemoveStatMod(modName + "Dex");
+                m.RemoveStatMod(modName + "Int");
 
-                mob.CheckStatTimers();
-            }
+                m.CheckStatTimers();
+
+				if (Anonymous && Layer == Layer.Helm)
+					m.NameMod = null;
+			}
 
             base.OnRemoved(parent);
         }

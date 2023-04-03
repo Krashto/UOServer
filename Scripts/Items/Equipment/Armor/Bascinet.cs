@@ -3,7 +3,7 @@ namespace Server.Items
     public class Bascinet : BaseArmor
     {
 
-		public override bool Disguise { get { return true; } }
+		public override bool Anonymous => true;
 		public override int BasePhysicalResistance => 4;
         public override int BaseFireResistance => 2;
         public override int BaseColdResistance => 2;
