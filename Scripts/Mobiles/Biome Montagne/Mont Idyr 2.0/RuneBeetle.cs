@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a rune beetle corpse")]
+    [CorpseName("le corps d'une beetle")]
     public class RuneBeetle : BaseCreature
     {
         private static readonly Hashtable m_Table = new Hashtable();
@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public RuneBeetle()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a rune beetle";
+            Name = "Une Beetle Runique";
             Body = 244;
 
             SetStr(401, 460);
@@ -39,8 +39,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 78.1, 93.0);
             SetSkill(SkillName.Wrestling, 70.1, 77.5);
 
-            Fame = 15000;
-            Karma = -15000;
+        //    Fame = 15000;
+        //    Karma = -15000;
 
             Tamable = true;
             ControlSlots = 3;
@@ -54,8 +54,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override Poison PoisonImmune => Poison.Greater;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Montagne;
+		public override Poison PoisonImmune => Poison.Greater;
         public override Poison HitPoison => Poison.Greater;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;
         public override bool CanAngerOnTame => true;
@@ -71,9 +72,7 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.MedScrolls, 1);
             AddLoot(LootPack.BodyPartsAndBones);
-            AddLoot(LootPack.BonsaiSeed);
         }
 
         public override int GetAngerSound()

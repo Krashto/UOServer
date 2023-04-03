@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("an oni corpse")]
+    [CorpseName("Le Corps d'un Oni")]
     public class Oni : BaseCreature
     {
         [Constructable]
         public Oni()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an oni";
+            Name = "Un Oni";
             Body = 241;
 
             SetStr(801, 910);
@@ -35,8 +35,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 86.1, 101.0);
             SetSkill(SkillName.Wrestling, 90.1, 100.0);
 
-            Fame = 15000;
-            Karma = -15000;
+         //   Fame = 15000;
+         //   Karma = -15000;
 
             SetSpecialAbility(SpecialAbility.AngryFire);
         }
@@ -45,8 +45,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanRummageCorpses => true;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
+		public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 4;
         public override int GetAngerSound()
         {
@@ -76,7 +77,6 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.BonsaiSeed);
         }
 
         public override void Serialize(GenericWriter writer)

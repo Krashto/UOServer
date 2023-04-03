@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a centaur corpse")]
+    [CorpseName("Le Corps d'un Centaur")]
     public class Centaur : BaseCreature
     {
         [Constructable]
         public Centaur()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("centaur");
+            Name = "Un Centaur";
             Body = 101;
             BaseSoundID = 679;
 
@@ -35,8 +35,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.Wrestling, 95.1, 100.0);
 
-            Fame = 6500;
-            Karma = 0;
+          //  Fame = 6500;
+          //  Karma = 0;
 
             AddItem(new Bow());
         }
@@ -46,7 +46,8 @@ namespace Server.Mobiles
         {
         }
 
-
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
 
 		public override void GenerateLootParagon()
 		{

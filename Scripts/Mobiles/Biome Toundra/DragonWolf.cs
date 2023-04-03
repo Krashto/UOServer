@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a dragon wolf corpse")]
+    [CorpseName("Le Corps d'un loup Glacé")]
     public class DragonWolf : BaseCreature
     {
         [Constructable]
         public DragonWolf()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a dragon wolf";
+            Name = "Un Loup Glacé";
             Body = 719;
             BaseSoundID = 0x5ED;
 
@@ -33,8 +33,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 90.0, 105.0);
             SetSkill(SkillName.Tracking, 60.0);
 
-            Fame = 8500;
-            Karma = -8500;
+        //    Fame = 8500;
+        //    Karma = -8500;
 
             Tamable = true;
             ControlSlots = 4;
@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool CanAngerOnTame => true;
+		public override int Level => 5;
+		public override Biome Biome => Biome.Toundra;
+		public override bool CanAngerOnTame => true;
 
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Lupus;

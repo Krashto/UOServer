@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a mongbat corpse")]
+    [CorpseName("Le Corps d'un Mongbat")]
     public class Mongbat : BaseCreature
     {
         [Constructable]
         public Mongbat()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a mongbat";
+            Name = "Un Mongbat";
             Body = 39;
             BaseSoundID = 422;
 
@@ -28,8 +28,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 5.1, 10.0);
             SetSkill(SkillName.Wrestling, 5.1, 10.0);
 
-            Fame = 150;
-            Karma = -150;
+         //   Fame = 150;
+         //   Karma = -150;
 
             Tamable = true;
             ControlSlots = 1;
@@ -40,8 +40,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
+		public override int Meat => 1;
         public override FoodType FavoriteFood => FoodType.Meat;
 
         public override bool CanFly => true;

@@ -3,7 +3,7 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an ethereal warrior corpse")]
+    [CorpseName("Le Corps d'un Ether")]
     public class EtherealWarrior : BaseCreature
     {
         private static readonly TimeSpan ResurrectDelay = TimeSpan.FromSeconds(2.0);
@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public EtherealWarrior()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("ethereal warrior");
+            Name = "Un Guerrier de l'Ether";
             Body = 123;
 
             SetStr(586, 785);
@@ -39,16 +39,18 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.Wrestling, 97.6, 100.0);
 
-            Fame = 7000;
-            Karma = 7000;
+         //   Fame = 7000;
+         //   Karma = 7000;
         }
 
         public EtherealWarrior(Serial serial)
             : base(serial)
         {
         }
+		public override int Level => 12;
+		public override Biome Biome => Biome.Tropique;
 
-        public override bool InitialInnocent => true;
+		public override bool InitialInnocent => true;
         public override int TreasureMapLevel => 5;
 
         public override TribeType Tribe => TribeType.Fey;

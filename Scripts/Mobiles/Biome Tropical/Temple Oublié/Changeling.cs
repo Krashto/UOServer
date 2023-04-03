@@ -58,8 +58,8 @@ namespace Server.Mobiles
 
             SetSkill(SkillName.Spellweaving, 91.6, 99.5);
 
-            Fame = 15000;
-            Karma = -15000;
+         //   Fame = 15000;
+         //   Karma = -15000;
         }
 
         public Changeling(Serial serial)
@@ -76,8 +76,9 @@ namespace Server.Mobiles
 
             return base.IsEnemy(m);
         }
-
-        public virtual string DefaultName => "a changeling";
+		public override int Level => 7;
+		public override Biome Biome => Biome.Tropique;
+		public virtual string DefaultName => "a changeling";
         public virtual int DefaultHue => 0;
 
         public override bool UseSmartAI => true;

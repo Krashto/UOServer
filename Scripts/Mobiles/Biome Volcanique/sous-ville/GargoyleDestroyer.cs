@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a gargoyle corpse")]
+    [CorpseName("Le Corps d'une Gargouille")]
     public class GargoyleDestroyer : BaseCreature
     {
         [Constructable]
         public GargoyleDestroyer()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Gargoyle Destroyer";
+            Name = "Une Gargouille Renforcee";
             Body = 0x2F3;
             BaseSoundID = 0x174;
 
@@ -38,22 +38,22 @@ namespace Server.Mobiles
             SetSkill(SkillName.EvalInt, 90.1, 100.0);
             SetSkill(SkillName.Meditation, 90.1, 100.0);
 
-            Fame = 10000;
-            Karma = -10000;
+        //    Fame = 10000;
+        //    Karma = -10000;
         }
 
         public GargoyleDestroyer(Serial serial)
             : base(serial)
         {
         }
-
-        public override int Meat => 1;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Volcan;
+		public override int Meat => 1;
         public override bool CanFly => true;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls);
         }
 
         public override void OnDamagedBySpell(Mobile from)

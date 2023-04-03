@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an ettins corpse")]
+    [CorpseName("Le corps d'un ettin")]
     public class Ettin : BaseCreature
     {
         [Constructable]
         public Ettin()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an ettin";
+            Name = "Un Ettin";
             Body = 18;
             BaseSoundID = 367;
 
@@ -33,14 +33,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 50.1, 70.0);
             SetSkill(SkillName.Wrestling, 50.1, 60.0);
 
-            Fame = 3000;
-            Karma = -3000;
+        //    Fame = 3000;
+        //    Karma = -3000;
         }
 
         public Ettin(Serial serial)
             : base(serial)
         {
         }
+
+		public override int Level => 6;
+		public override Biome Biome => Biome.Montagne;
 		public override int Hides => 4;
 		public override HideType HideType => HideType.Geant;
 

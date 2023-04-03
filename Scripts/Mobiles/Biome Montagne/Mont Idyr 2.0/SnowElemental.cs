@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a snow elemental corpse")]
+    [CorpseName("Le corps d'un elementaire")]
     public class SnowElemental : BaseCreature, IAuraCreature
     {
         [Constructable]
         public SnowElemental()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a snow elemental";
+            Name = "Un elementaire de neige";
             Body = 163;
             BaseSoundID = 263;
 
@@ -34,8 +34,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.1, 100.0);
             SetSkill(SkillName.Wrestling, 80.1, 100.0);
 
-            Fame = 5000;
-            Karma = -5000;
+        //    Fame = 5000;
+        //    Karma = -5000;
 
             SetAreaEffect(AreaEffect.AuraDamage);
         }
@@ -44,8 +44,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 10;
+		public override Biome Biome => Biome.Montagne;
+		public override bool BleedImmune => true;
         public override int TreasureMapLevel => 2;
 
         public void AuraEffect(Mobile m)

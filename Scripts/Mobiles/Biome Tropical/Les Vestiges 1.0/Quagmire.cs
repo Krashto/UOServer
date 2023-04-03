@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a quagmire corpse")]
+    [CorpseName("Le Corps d'un Quagmire")]
     public class Quagmire : BaseCreature
     {
         [Constructable]
         public Quagmire()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.4, 0.8)
         {
-            Name = "a quagmire";
+            Name = "Un Quagmire";
             Body = 789;
             BaseSoundID = 352;
 
@@ -34,11 +34,12 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 50.1, 60.0);
             SetSkill(SkillName.Wrestling, 60.1, 80.0);
 
-            Fame = 1500;
-            Karma = -1500;
+       //     Fame = 1500;
+       //     Karma = -1500;
         }
-
-        public Quagmire(Serial serial)
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
+		public Quagmire(Serial serial)
             : base(serial)
         {
         }

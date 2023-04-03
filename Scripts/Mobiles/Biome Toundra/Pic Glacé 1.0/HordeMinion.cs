@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a horde minion corpse")]
+    [CorpseName("Le corps d'un Minion")]
     public class HordeMinion : BaseCreature
     {
         [Constructable]
         public HordeMinion()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a horde minion";
+            Name = "Un Minion";
             Body = 776;
             BaseSoundID = 357;
 
@@ -30,13 +30,14 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 0.1, 15.0);
             SetSkill(SkillName.Wrestling, 25.1, 40.0);
 
-            Fame = 500;
-            Karma = -500;
+         //   Fame = 500;
+         //   Karma = -500;
 
             AddItem(new LightSource());
         }
-
-        public override void GenerateLoot()
+		public override int Level => 9;
+		public override Biome Biome => Biome.Toundra;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.LootItem<PlainoisBone>(3));
         }

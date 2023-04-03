@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a darknight creeper corpse")]
+    [CorpseName("Le Corps d'un Gardien Nocture")]
     public class DarknightCreeper : BaseCreature
     {
         [Constructable]
         public DarknightCreeper()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("darknight creeper");
+            Name = "Un Gardien Nocture";
             Body = 313;
             BaseSoundID = 0xE0;
 
@@ -37,16 +37,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.EvalInt, 118.1, 120.0);
             SetSkill(SkillName.Meditation, 150.0);
 
-            Fame = 22000;
-            Karma = -22000;
+          //  Fame = 22000;
+         //   Karma = -22000;
         }
 
         public DarknightCreeper(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool IgnoreYoungProtection => true;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Toundra;
+		public override bool IgnoreYoungProtection => true;
         public override bool Unprovokable => true;
         public override bool AreaPeaceImmune => true;
         public override bool BleedImmune => true;

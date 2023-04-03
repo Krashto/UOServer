@@ -3,17 +3,17 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a crimson dragon corpse")]
-    public class CrimsonDragon : BasePeerless
+    [CorpseName("Le Corps d'un Dragon")]
+    public class CrimsonDragon : BaseCreature
     {
-        public override bool GiveMLSpecial => false;
+   //     public override bool GiveMLSpecial => false;
 
         private DateTime m_NextTerror;
         [Constructable]
         public CrimsonDragon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a crimson dragon";
+            Name = "Un Dragon Crimson";
             Body = 197;
 
             BaseSoundID = 362;
@@ -58,7 +58,8 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteDragon>(), Utility.RandomMinMax(2, 4));
 		}
-
+		public override int Level => 20;
+		public override Biome Biome => Biome.Volcan;
 		public override bool AlwaysMurderer => true;
         public override bool Unprovokable => true;
         public override bool BardImmune => true;
@@ -88,9 +89,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.SuperBoss, 8);
             AddLoot(LootPack.Gems, 12);
-            AddLoot(LootPack.PeerlessResource, 8);
-            AddLoot(LootPack.LootItem<ParrotItem>(60.0));
-            AddLoot(LootPack.LootItem<CrimsonCincture>(2.5));
         }
 
         public override int GetIdleSound()

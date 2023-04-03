@@ -4,14 +4,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a wisp corpse")]
+    [CorpseName("Le Corps d'une Wisp")]
     public class DarkWisp : BaseCreature
     {
         [Constructable]
         public DarkWisp()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a dark wisp";
+            Name = "Une Wisp Sombre";
             Body = 165;
             BaseSoundID = 466;
 
@@ -40,8 +40,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Necromancy, 80.0);
             SetSkill(SkillName.SpiritSpeak, 80.0);
 
-            Fame = 4000;
-            Karma = -4000;
+          //  Fame = 4000;
+          //  Karma = -4000;
 
             AddItem(new LightSource());
         }
@@ -50,8 +50,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool AlwaysMurderer => true;
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
+		public override bool AlwaysMurderer => true;
 
         public override InhumanSpeech SpeechType => InhumanSpeech.Wisp;
 

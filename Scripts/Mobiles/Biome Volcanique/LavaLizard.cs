@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a lava lizard corpse")]
+    [CorpseName("Le Corps d'un Lezard")]
     public class LavaLizard : BaseCreature
     {
         [Constructable]
         public LavaLizard()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a lava lizard";
+            Name = "Un Lezard de lave";
             Body = 0xCE;
             Hue = Utility.RandomList(0x647, 0x650, 0x659, 0x662, 0x66B, 0x674);
             BaseSoundID = 0x5A;
@@ -34,8 +34,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 60.1, 80.0);
             SetSkill(SkillName.Wrestling, 60.1, 80.0);
 
-            Fame = 3000;
-            Karma = -3000;
+          //  Fame = 3000;
+           // Karma = -3000;
 
             Tamable = true;
             ControlSlots = 1;
@@ -49,7 +49,8 @@ namespace Server.Mobiles
         {
         }
 
-
+		public override int Level => 4;
+		public override Biome Biome => Biome.Volcan;
 
 		public override int Hides => 3;
 		public override HideType HideType => HideType.Reptilien;

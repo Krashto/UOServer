@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("an ogre corpse")]
+    [CorpseName("le corps d'un ogre")]
     public class Ogre : BaseCeosSpawn
 	{
         [Constructable]
         public Ogre()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an ogre";
+            Name = "un ogre";
             Body = 1;
             BaseSoundID = 427;
 
@@ -34,8 +34,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 60.1, 70.0);
             SetSkill(SkillName.Wrestling, 70.1, 80.0);
 
-            Fame = 3000;
-            Karma = -3000;
+         //   Fame = 3000;
+         //   Karma = -3000;
         }
 
         public Ogre(Serial serial)
@@ -47,6 +47,9 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvoutePhysique>(), Utility.RandomMinMax(2, 4));
 		}
+
+		public override int Level => 5;
+		public override Biome Biome => Biome.Montagne;
 		public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 1;
         public override int Meat => 2;

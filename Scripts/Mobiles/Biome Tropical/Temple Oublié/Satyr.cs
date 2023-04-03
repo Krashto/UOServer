@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a satyr's corpse")]
+    [CorpseName("Le Corps d'un Satyr")]
     public class Satyr : BaseCreature
     {
         [Constructable]
         public Satyr()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a satyr";
+            Name = "Un Satyr";
             Body = 271;
             BaseSoundID = 0x586;
 
@@ -46,13 +46,13 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override TribeType Tribe => TribeType.Fey;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Tropique;
+		public override TribeType Tribe => TribeType.Fey;
 
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls);
         }
 
 		public override void GenerateLootParagon()

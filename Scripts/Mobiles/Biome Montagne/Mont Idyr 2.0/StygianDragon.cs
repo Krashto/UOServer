@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a stygian dragon corpse")]
+    [CorpseName("Le corps d'un Dragon")]
     public class StygianDragon : BaseSABoss
     {
         private DateTime m_Delay;
@@ -15,7 +15,7 @@ namespace Server.Mobiles
         public StygianDragon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.3, 0.5)
         {
-            Name = "Stygian Dragon";
+            Name = "Un Dragon Stygian";
             Body = 826;
             BaseSoundID = 362;
 
@@ -44,8 +44,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 120.7, 125.0);
             SetSkill(SkillName.Wrestling, 115.0, 117.7);
 
-            Fame = 15000;
-            Karma = -15000;
+        //    Fame = 15000;
+        //    Karma = -15000;
 
             Tamable = false;
 
@@ -69,8 +69,9 @@ namespace Server.Mobiles
                     typeof(AxesOfFury), typeof(SummonersKilt),
                     typeof(TokenOfHolyFavor)
                 };
-
-        public override bool AlwaysMurderer => true;
+		public override int Level => 18;
+		public override Biome Biome => Biome.Montagne;
+		public override bool AlwaysMurderer => true;
         public override bool Unprovokable => false;
         public override bool BardImmune => false;
         public override bool AutoDispel => !Controlled;

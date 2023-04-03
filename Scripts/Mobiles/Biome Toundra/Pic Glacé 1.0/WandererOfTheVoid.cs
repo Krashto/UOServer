@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public WandererOfTheVoid()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a wanderer of the void";
+            Name = "Un wanderer of the void";
             Body = 316;
             BaseSoundID = 377;
 
@@ -36,16 +36,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 60.1, 70.0);
             SetSkill(SkillName.Wrestling, 60.1, 70.0);
 
-            Fame = 20000;
-            Karma = -20000;
+           // Fame = 20000;
+          //  Karma = -20000;
         }
 
         public WandererOfTheVoid(Serial serial)
             : base(serial)
         {
         }
-
-        public override bool BleedImmune => true;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Toundra;
+		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override int TreasureMapLevel => 4;
         public override void GenerateLoot()

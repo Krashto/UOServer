@@ -33,8 +33,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 50.1, 70.0);
             SetSkill(SkillName.Wrestling, 50.1, 70.0);
 
-            Fame = 3500;
-            Karma = -3500;
+       //     Fame = 3500;
+       //     Karma = -3500;
         }
 
         public Troll(Serial serial)
@@ -46,7 +46,8 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvoutePhysique>(), Utility.RandomMinMax(2, 4));
 		}
-		
+		public override int Level => 5;
+		public override Biome Biome => Biome.Montagne;
 		public override bool CanRummageCorpses => true;
         public override int TreasureMapLevel => 1;
         public override int Meat => 2;

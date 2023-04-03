@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dragon corpse")]
+    [CorpseName("Le Corps d'une Wyrm Ancestrale")]
     public class AncientWyrm : BaseCreature
     {
         [Constructable]
         public AncientWyrm()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "an ancient wyrm";
+            Name = "Une Wyrm Ancestrale";
             Body = 46;
             BaseSoundID = 362;
 
@@ -37,8 +37,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 97.6, 100.0);
             SetSkill(SkillName.Wrestling, 97.6, 100.0);
 
-            Fame = 22500;
-            Karma = -22500;
+         //   Fame = 22500;
+         //   Karma = -22500;
 
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
@@ -47,8 +47,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool ReacquireOnMovement => true;
+		public override int Level => 18;
+		public override Biome Biome => Biome.Volcan;
+		public override bool ReacquireOnMovement => true;
         public override bool AutoDispel => true;
 /*        public override HideType HideType => HideType.Barbed;
         public override int Hides => 40;

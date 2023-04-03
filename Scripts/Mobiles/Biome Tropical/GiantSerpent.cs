@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a giant serpent corpse")]
+    [CorpseName("Un Serpent Geant")]
     public class GiantSerpent : BaseCreature
     {
         [Constructable]
         public GiantSerpent()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant serpent";
+            Name = "Un Serpent Geant";
             Body = 0x15;
             Hue = Utility.RandomSnakeHue();
             BaseSoundID = 219;
@@ -37,11 +37,12 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 65.1, 70.0);
             SetSkill(SkillName.Wrestling, 60.1, 80.0);
 
-            Fame = 2500;
-            Karma = -2500;
+      //      Fame = 2500;
+       //     Karma = -2500;
         }
-
-        public GiantSerpent(Serial serial)
+		public override int Level => 6;
+		public override Biome Biome => Biome.Tropique;
+		public GiantSerpent(Serial serial)
             : base(serial)
         {
         }

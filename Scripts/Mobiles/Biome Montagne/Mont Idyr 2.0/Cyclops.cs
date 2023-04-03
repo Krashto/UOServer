@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a cyclopean corpse")]
+    [CorpseName("le corps d'un cyclope")]
     public class Cyclops : BaseCreature
     {
         [Constructable]
         public Cyclops()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a cyclopean warrior";
+            Name = "Un Cyclope";
             Body = 75;
             BaseSoundID = 604;
 
@@ -32,14 +32,16 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.1, 100.0);
             SetSkill(SkillName.Wrestling, 80.1, 90.0);
 
-            Fame = 4500;
-            Karma = -4500;
+        //    Fame = 4500;
+         //   Karma = -4500;
         }
 
         public Cyclops(Serial serial)
             : base(serial)
         {
         }
+		public override int Level => 9;
+		public override Biome Biome => Biome.Montagne;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Geant;
 

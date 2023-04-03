@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Doppleganger()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a doppleganger";
+            Name = "un doppleganger";
             Body = 0x309;
             BaseSoundID = 0x451;
 
@@ -29,16 +29,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 70.1, 80.0);
             SetSkill(SkillName.Wrestling, 80.1, 90.0);
 
-            Fame = 1000;
-            Karma = -1000;
+         //   Fame = 1000;
+         //   Karma = -1000;
         }
 
         public Doppleganger(Serial serial)
             : base(serial)
         {
         }
-
-        public override int Hides => 6;
+		public override int Level => 10;
+		public override Biome Biome => Biome.Montagne;
+		public override int Hides => 6;
         public override int Meat => 1;
         public override void GenerateLoot()
         {

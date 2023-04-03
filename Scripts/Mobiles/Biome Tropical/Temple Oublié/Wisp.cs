@@ -4,14 +4,14 @@ using System;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a wisp corpse")]
+    [CorpseName("Le Corps d'une Wisp")]
     public class Wisp : BaseCreature
     {
         [Constructable]
         public Wisp()
             : base(AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a wisp";
+            Name = "Une Wisp";
             Body = 58;
             BaseSoundID = 466;
 
@@ -38,8 +38,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 80.0);
             SetSkill(SkillName.Wrestling, 80.0);
 
-            Fame = 4000;
-            Karma = 0;
+         //   Fame = 4000;
+         //   Karma = 0;
 
             AddItem(new LightSource());
         }
@@ -48,8 +48,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override InhumanSpeech SpeechType => InhumanSpeech.Wisp;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Tropique;
+	//	public override InhumanSpeech SpeechType => InhumanSpeech.Wisp;
         public override TimeSpan ReacquireDelay => TimeSpan.FromSeconds(1.0);
 
         public override TribeType Tribe => TribeType.Fey;

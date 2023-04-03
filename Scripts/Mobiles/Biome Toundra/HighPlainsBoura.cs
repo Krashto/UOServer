@@ -3,7 +3,7 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a boura corpse")]
+    [CorpseName("Le Corps d'un Boura")]
     public class HighPlainsBoura : BaseCreature, ICarvable
     {
         private bool GatheredFur { get; set; }
@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public HighPlainsBoura()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a high plains boura";
+            Name = "Un Boura Arctique";
             Body = 715;
 
             SetStr(400, 435);
@@ -40,8 +40,8 @@ namespace Server.Mobiles
             ControlSlots = 3;
             MinTameSkill = 47.1;
 
-            Fame = 5000;
-            Karma = -5000;
+         //   Fame = 5000;
+         //   Karma = -5000;
 
             SetSpecialAbility(SpecialAbility.TailSwipe);
             SetSpecialAbility(SpecialAbility.ColossalBlow);
@@ -50,8 +50,9 @@ namespace Server.Mobiles
         public HighPlainsBoura(Serial serial) : base(serial)
         {
         }
-
-        public override int Meat => 10;
+		public override int Level => 7;
+		public override Biome Biome => Biome.Toundra;
+		public override int Meat => 10;
 
      //   public override int Hides => 22;
 

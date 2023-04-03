@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a white wolf corpse")]
+    [CorpseName("Le Corps d'un Loup")]
     public class WhiteWolf : BaseCreature
     {
         [Constructable]
         public WhiteWolf()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a white wolf";
+            Name = "Un Loup Blanc";
             Body = Utility.RandomList(34, 37);
             BaseSoundID = 0xE5;
 
@@ -34,8 +34,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 45.1, 60.0);
             SetSkill(SkillName.Wrestling, 45.1, 60.0);
 
-            Fame = 450;
-            Karma = 0;
+        //    Fame = 450;
+        //    Karma = 0;
 
             Tamable = true;
             ControlSlots = 1;
@@ -47,6 +47,10 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
+
+		public override int Level => 7;
+		public override Biome Biome => Biome.Toundra;
 		public override int Hides => 3;
 		public override HideType HideType => HideType.Lupus;
 

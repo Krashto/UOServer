@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a ravager corpse")]
+    [CorpseName("Le Corps d'un Ravageur")]
     public class Ravager : BaseCreature
     {
         [Constructable]
         public Ravager()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a ravager";
+            Name = "Un Ravageur";
             Body = 314;
             BaseSoundID = 357;
 
@@ -33,8 +33,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 75.1, 100.0);
             SetSkill(SkillName.Wrestling, 70.1, 90.0);
 
-            Fame = 3500;
-            Karma = -3500;
+          //  Fame = 3500;
+          //  Karma = -3500;
 
             SetWeaponAbility(WeaponAbility.CrushingBlow);
             SetWeaponAbility(WeaponAbility.Dismount);
@@ -44,8 +44,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 4;
+		public override int Level => 9;
+		public override Biome Biome => Biome.Toundra;
+		public override int TreasureMapLevel => 4;
 
         public override void GenerateLoot()
         {

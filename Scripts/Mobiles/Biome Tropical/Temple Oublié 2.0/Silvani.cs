@@ -34,16 +34,17 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 97.6, 100.0);
             SetSkill(SkillName.Wrestling, 97.6, 100.0);
 
-            Fame = 20000;
-            Karma = 20000;
+        //    Fame = 20000;
+        //    Karma = 20000;
         }
 
         public Silvani(Serial serial)
             : base(serial)
         {
         }
-
-        public override TribeType Tribe => TribeType.Fey;
+		public override int Level => 14;
+		public override Biome Biome => Biome.Tropique;
+		public override TribeType Tribe => TribeType.Fey;
 
         public override bool CanFly => true;
         public override bool Unprovokable => true;

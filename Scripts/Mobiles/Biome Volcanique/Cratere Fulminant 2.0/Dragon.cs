@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a dragon corpse")]
+    [CorpseName("Le Corps d'un Dragon")]
     public class Dragon : BaseCreature
     {
         [Constructable]
         public Dragon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a dragon";
+            Name = "Un Dragon";
             Body = Utility.RandomList(12, 59);
             BaseSoundID = 362;
 
@@ -42,8 +42,8 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Wrestling, 45.1, 50.0);
 
 
-			Fame = 15000;
-            Karma = -15000;
+		//	Fame = 15000;
+        //    Karma = -15000;
 
             Tamable = true;
             ControlSlots = 3;
@@ -56,8 +56,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool ReacquireOnMovement => !Controlled;
+		public override int Level => 14;
+		public override Biome Biome => Biome.Volcan;
+		public override bool ReacquireOnMovement => !Controlled;
         public override bool AutoDispel => !Controlled;
         public override int TreasureMapLevel => 4;
         public override int Meat => 19;

@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a deathwatchbeetle corpse")]
+    [CorpseName("Le Corps d'un Scarabee")]
     public class DeathwatchBeetle : BaseCreature
     {
         [Constructable]
         public DeathwatchBeetle()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a deathwatch beetle";
+            Name = "Un Scarabee Vigilant";
             Body = 242;
 
             SetStr(136, 160);
@@ -34,8 +34,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 50.1, 60.0);
             SetSkill(SkillName.Anatomy, 30.1, 34.0);
 
-            Fame = 1400;
-            Karma = -1400;
+        ///    Fame = 1400;
+         //   Karma = -1400;
 
             Tamable = true;
             MinTameSkill = 41.1;
@@ -44,8 +44,9 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.CrushingBlow);
             SetSpecialAbility(SpecialAbility.PoisonSpit);
         }
-
-        public DeathwatchBeetle(Serial serial)
+		public override int Level => 8;
+		public override Biome Biome => Biome.Tropique;
+		public DeathwatchBeetle(Serial serial)
            : base(serial)
         {
         }

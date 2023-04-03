@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a polar bear corpse")]
+    [CorpseName("Le Corps d'un Ours Polaire")]
     public class PolarBear : BaseCreature
     {
         [Constructable]
         public PolarBear()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a polar bear";
+            Name = "Un Ours Polaire";
             Body = 213;
             BaseSoundID = 0xA3;
 
@@ -43,6 +43,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
+		public override int Level => 7;
+		public override Biome Biome => Biome.Toundra;
 		public override bool CanBeParagon => false;
 		public override int Meat => 2;
         public override int Hides => 8;

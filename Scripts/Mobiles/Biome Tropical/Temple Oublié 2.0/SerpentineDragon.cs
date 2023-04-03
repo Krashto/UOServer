@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a dragon corpse")]
+    [CorpseName("Le Corps d'un Dragon")]
     public class SerpentineDragon : BaseCreature
     {
         [Constructable]
         public SerpentineDragon()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "a serpentine dragon";
+            Name = "Un Dragon Serpentin";
             Body = 103;
             BaseSoundID = 362;
 
@@ -36,8 +36,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 30.1, 100.0);
             SetSkill(SkillName.Tracking, 100.0);
 
-            Fame = 15000;
-            Karma = 15000;
+          //  Fame = 15000;
+          //  Karma = 15000;
 
             Tamable = true;
             ControlSlots = 3;
@@ -50,8 +50,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override bool ReacquireOnMovement => !Controlled;
+		public override int Level => 10;
+		public override Biome Biome => Biome.Tropique;
+		public override bool ReacquireOnMovement => !Controlled;
 
         public override double BonusPetDamageScalar => Controlled ? 1.0 : 3.0;
         public override bool AutoDispel => !Controlled;

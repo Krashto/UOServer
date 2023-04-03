@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("a giant toad corpse")]
+    [CorpseName("Le Corps d'une Grenouille Geante")]
     public class GiantToad : BaseCreature
     {
         [Constructable]
         public GiantToad()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a giant toad";
+            Name = "Une Grenouille Geante";
             Body = 80;
             BaseSoundID = 0x26B;
 
@@ -30,8 +30,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 40.1, 60.0);
             SetSkill(SkillName.Wrestling, 40.1, 60.0);
 
-            Fame = 750;
-            Karma = -750;
+         //   Fame = 750;
+         //   Karma = -750;
 
             Tamable = true;
             ControlSlots = 1;
@@ -59,7 +59,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 6;
+		public override Biome Biome => Biome.Tropique;
 		public override int Hides => 4;
 		public override HideType HideType => HideType.Reptilien;
 

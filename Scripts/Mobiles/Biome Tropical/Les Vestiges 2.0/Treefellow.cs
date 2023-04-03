@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("a treefellow corpse")]
+    [CorpseName("Le Corps d'un Treefellow")]
     public class Treefellow : BaseCreature
     {
         [Constructable]
         public Treefellow()
             : base(AIType.AI_Melee, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "a treefellow";
+            Name = "Un Treefellow";
             Body = 301;
 
             SetStr(196, 220);
@@ -31,8 +31,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 65.1, 90.0);
             SetSkill(SkillName.Wrestling, 65.1, 85.0);
 
-            Fame = 500;
-            Karma = 1500;
+        //    Fame = 500;
+        //    Karma = 1500;
 
             SetWeaponAbility(WeaponAbility.Dismount);
         }
@@ -41,8 +41,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override TribeType Tribe => TribeType.Fey;
+		public override int Level => 12;
+		public override Biome Biome => Biome.Tropique;
+		public override TribeType Tribe => TribeType.Fey;
 
         public override bool BleedImmune => true;
 

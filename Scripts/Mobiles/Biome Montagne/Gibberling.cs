@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Gibberling()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "a gibberling";
+            Name = "un gibberling";
             Body = 307;
             BaseSoundID = 0x44D;
 
@@ -45,8 +45,9 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
-        public override int TreasureMapLevel => 1;
+		public override int Level => 6;
+		public override Biome Biome => Biome.Montagne;
+		public override int TreasureMapLevel => 1;
 
         public override void GenerateLoot()
         {
