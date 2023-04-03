@@ -12,7 +12,6 @@ namespace Server.Commands
 		public static void Initialize()
 		{
 			CommandSystem.Register( "ChangeHue", AccessLevel.GameMaster, new CommandEventHandler(CH) );
-			
 		}
 
 		[Usage( "CH" )]
@@ -21,9 +20,5 @@ namespace Server.Commands
 		{
             arg.Mobile.Race.ChangeHue(arg.Mobile);       
 		}
-
-		
 	}
-   
-   
 }

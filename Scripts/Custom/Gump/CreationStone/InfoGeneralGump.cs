@@ -19,7 +19,7 @@ namespace Server.Gumps
 			AddHtmlTexteColored(x + 10, y + 55, 75, "Nom: ", "#ffffff");
 			AddTextEntryBg(x + 73, y + 50, 500, 25, 0, 1, creationPerso.Name);
 
-			AddButtonHtlml(x + 10, y + 85, 2, 2117, 2118, creationPerso.Female ? "Femme" : "Homme", "#ffffff");
+			AddButtonHtml(x + 10, y + 85, 2, 2117, 2118, creationPerso.Female ? "Femme" : "Homme", "#ffffff");
 
 			AddSection(x - 10, y + 126, 202, 483, "Apparence");
 
@@ -42,7 +42,7 @@ namespace Server.Gumps
 				Attribute attribute = memberInfo[0].GetCustomAttribute(typeof(AppearanceAttribute), false);
 				string apparence =  (creationPerso.Female ? ((AppearanceAttribute)attribute).FemaleAdjective : ((AppearanceAttribute)attribute).MaleAdjective);
 
-				AddButtonHtlml(x + 20, y + scale * line + 176, apparence, 200, 40, n + 100, color);
+				AddButtonHtml(x + 20, y + scale * line + 176, apparence, 200, 40, n + 100, color);
 				n++;
 				line++;
 			}
@@ -66,7 +66,7 @@ namespace Server.Gumps
 				Attribute attribute = memberInfo[0].GetCustomAttribute(typeof(AppearanceAttribute), false);
 				string apparence = (creationPerso.Female ? ((AppearanceAttribute)attribute).FemaleAdjective : ((AppearanceAttribute)attribute).MaleAdjective);
 
-				AddButtonHtlml(x + 223, y + scale * line + 176, apparence, 200, 40, n + 200, color);
+				AddButtonHtml(x + 223, y + scale * line + 176, apparence, 200, 40, n + 200, color);
 				n++;
 				line++;
 			}
@@ -92,7 +92,7 @@ namespace Server.Gumps
 				Attribute attribute = memberInfo[0].GetCustomAttribute(typeof(AppearanceAttribute), false);
 				string apparence = (creationPerso.Female ? ((AppearanceAttribute)attribute).FemaleAdjective : ((AppearanceAttribute)attribute).MaleAdjective);
 
-				AddButtonHtlml(x + 426, y + scale * line + 176, apparence, 200, 40, n + 300, color);
+				AddButtonHtml(x + 426, y + scale * line + 176, apparence, 200, 40, n + 300, color);
 				n++;
 				line++;
 			}	

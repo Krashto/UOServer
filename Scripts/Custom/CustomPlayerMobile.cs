@@ -18,6 +18,7 @@ using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.CustomScripts.Systems.Experience;
 using Server.Custom.Capacites;
 using Newtonsoft.Json.Linq;
+using Server.Custom.PointsAncestraux;
 
 #endregion
 
@@ -631,6 +632,7 @@ namespace Server.Mobiles
 			Experience = new ExperienceSystem();
 			Attributs = new Attributs(this);
 			Capacites = new Capacites(this);
+			PointsAncestraux = new PointsAncestraux(this);
 		}
 
 		public CustomPlayerMobile(Serial s) : base(s)
@@ -639,6 +641,7 @@ namespace Server.Mobiles
 			Experience = new ExperienceSystem();
 			Attributs = new Attributs(this);
 			Capacites = new Capacites(this);
+			PointsAncestraux = new PointsAncestraux(this);
 		}
 
 		public virtual void Tip(Mobile m, string tip)
@@ -1124,6 +1127,9 @@ namespace Server.Mobiles
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Capacites Capacites { get; set; }
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public PointsAncestraux PointsAncestraux { get; set; }
 
 		public virtual void OnAptitudesChange(Aptitude aptitude, int oldvalue, int newvalue)
 		{

@@ -141,12 +141,12 @@ namespace Server.Custom.System
 
 					AddSection(x + 241, y + (space * (line2 - 2)) +2, 260, 300, "Actions");
 					
-					AddButtonHtlml(x + 260, y + (space * line2++), GetButtonID(2, 2), "Liste des membres","#FFFFFF");
-					AddButtonHtlml(x + 260, y + (space * line2++), GetButtonID(2, 3), "Rangs, titres et salaires", "#FFFFFF");
-					AddButtonHtlml(x + 260, y + (space * line2++), GetButtonID(2, 0), "Ajouter un membre", "#FFFFFF");
-					AddButtonHtlml(x + 260, y + (space * line2++), GetButtonID(2, 1), "Retirer un membre", "#FFFFFF");
-					AddButtonHtlml(x + 260, y + (space * line2++), GetButtonID(1, 0), "Augmenter le rang", "#FFFFFF");
-					AddButtonHtlml(x + 260, y + (space * line2++), GetButtonID(1, 1), "Diminuer le rang", "#FFFFFF");
+					AddButtonHtml(x + 260, y + (space * line2++), GetButtonID(2, 2), "Liste des membres","#FFFFFF");
+					AddButtonHtml(x + 260, y + (space * line2++), GetButtonID(2, 3), "Rangs, titres et salaires", "#FFFFFF");
+					AddButtonHtml(x + 260, y + (space * line2++), GetButtonID(2, 0), "Ajouter un membre", "#FFFFFF");
+					AddButtonHtml(x + 260, y + (space * line2++), GetButtonID(2, 1), "Retirer un membre", "#FFFFFF");
+					AddButtonHtml(x + 260, y + (space * line2++), GetButtonID(1, 0), "Augmenter le rang", "#FFFFFF");
+					AddButtonHtml(x + 260, y + (space * line2++), GetButtonID(1, 1), "Diminuer le rang", "#FFFFFF");
 				}
                 else
                 {
@@ -435,7 +435,7 @@ namespace Server.Custom.System
                     continue;
 				CustomGuildMember m_Mobile = list[i];
 
-				AddButtonHtlml(x, y + (space * line) - 1, GetButtonID2(6, i), m_Mobile.GetName(), "#FFFFFF");
+				AddButtonHtml(x, y + (space * line) - 1, GetButtonID2(6, i), m_Mobile.GetName(), "#FFFFFF");
 
 				if (m_Mobile.CustomRank != -2)
 				{
@@ -478,9 +478,9 @@ namespace Server.Custom.System
 				AddHtmlTexteColored(x, y + (space * line++) - 1, 300, $"Salaire: {currentMember.Salaire}", "#FFFFFF");
 				AddHtmlTexteColored(x, y + (space * line++) - 1, 300, "Titre: " + currentMember.Titre, "#FFFFFF");
 				line++;
-				AddButtonHtlml(x, y + (space * line++) - 1, GetButtonID2(3, 0), "Augmenter au rang: " + m_Guild.GetTitleByRank(member.CustomRank + 1), "#FFFFFF");
-				AddButtonHtlml(x, y + (space * line++) - 1, GetButtonID2(4, 0), "Diminuer au rang: " + m_Guild.GetTitleByRank(member.CustomRank - 1), "#FFFFFF");
-				AddButtonHtlml(x, y + (space * line++) - 1, GetButtonID2(8, 0), "Rang personnalisé", "#FFFFFF");
+				AddButtonHtml(x, y + (space * line++) - 1, GetButtonID2(3, 0), "Augmenter au rang: " + m_Guild.GetTitleByRank(member.CustomRank + 1), "#FFFFFF");
+				AddButtonHtml(x, y + (space * line++) - 1, GetButtonID2(4, 0), "Diminuer au rang: " + m_Guild.GetTitleByRank(member.CustomRank - 1), "#FFFFFF");
+				AddButtonHtml(x, y + (space * line++) - 1, GetButtonID2(8, 0), "Rang personnalisé", "#FFFFFF");
 			}
 			else
 			{
@@ -490,10 +490,10 @@ namespace Server.Custom.System
 
 				AddHtmlTexteColored(x, y + (space * line) - 1, 75, "Titre: ", "#FFFFFF");
 				AddTextEntryBg(x + 100, y + (space * line++), 200, 25, 0, 2, currentMember.Titre);
-				AddButtonHtlml(x, y + (space * line++) - 1, GetButtonID2(8, 0), "Rang standard", "#FFFFFF");
+				AddButtonHtml(x, y + (space * line++) - 1, GetButtonID2(8, 0), "Rang standard", "#FFFFFF");
 			}	
-			AddButtonHtlml(x, y + (space * line++) - 1, GetButtonID2(5, 0), "Retirer de la guilde", "#FFFFFF");
-			AddButtonHtlml(x, y + (space * line++) - 1, GetButtonID2(7, 0), "Retour", "#FFFFFF");
+			AddButtonHtml(x, y + (space * line++) - 1, GetButtonID2(5, 0), "Retirer de la guilde", "#FFFFFF");
+			AddButtonHtml(x, y + (space * line++) - 1, GetButtonID2(7, 0), "Retour", "#FFFFFF");
         }
 
         public override void OnResponse(NetState sender, RelayInfo info)

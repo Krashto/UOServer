@@ -168,7 +168,7 @@ namespace Server.Gumps
 
 			if (from.Race.Barbe && (!from.Female || from.Race.FemmeBarbe))
 			{
-				AddButtonHtlml(x + 275, y + 623, 2, barbe ? "<h3><basefont color=#ffffff>Cheveux</basefont></h3>" : "<h3><basefont color=#ffffff>Barbes</basefont></h3>");
+				AddButtonHtml(x + 275, y + 623, 2, barbe ? "<h3><basefont color=#ffffff>Cheveux</basefont></h3>" : "<h3><basefont color=#ffffff>Barbes</basefont></h3>");
 
 			}
 

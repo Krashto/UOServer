@@ -34,7 +34,7 @@ namespace Server.Gumps
 			if (from.Classe != classe)
 			{
 
-			AddButtonHtlml(x, y + line * scale, 1, "Classe", "#FFFFFF");
+			AddButtonHtml(x, y + line * scale, 1, "Classe", "#FFFFFF");
 			line++;
 			}
 

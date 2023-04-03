@@ -21,7 +21,7 @@ namespace Server.Gumps
 			foreach (Race race in allRaces)
             {
 				string color = race == creationPerso.Race ? "#FFCC00" : "#FFFFFF";
-				AddButtonHtlml(x + 20, y + scale * line++ + 50, race.Name, 200, 40, race.RaceID + 100, color);
+				AddButtonHtml(x + 20, y + scale * line++ + 50, race.Name, 200, 40, race.RaceID + 100, color);
             }
 
             if (creationPerso.Race != null)

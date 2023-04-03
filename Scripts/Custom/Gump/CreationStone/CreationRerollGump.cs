@@ -35,7 +35,7 @@ namespace Server.Gumps
                         hueText = "#ffcc00";
                     }
 
-					AddButtonHtlml(x + 5, y + 35 + SpaceRanger * Range, "Nom: " + rero.Name, 200, 25, Range + 100, hueText);
+					AddButtonHtml(x + 5, y + 35 + SpaceRanger * Range, "Nom: " + rero.Name, 200, 25, Range + 100, hueText);
 					AddHtmlTexteColored(x + 23, y + 35 + Range * SpaceRanger + 20, 200,  "Expériences: " + rero.Experience, hueText);
 				}
 

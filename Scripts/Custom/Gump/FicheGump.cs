@@ -4,8 +4,6 @@ using Server.Mobiles;
 using Server.Custom.Aptitudes;
 using Server.Custom.Classes;
 using Server.Custom.Capacites;
-using Server.Items;
-using System.Linq;
 using Server.Custom;
 
 namespace Server.Gumps
@@ -57,12 +55,12 @@ namespace Server.Gumps
 			AddHtmlTexte(x + 10, y + space * line, 150, "Niveau");
 			AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Experience.Niveau.ToString());
 			AddHtmlTexte(x + 10, y + space * line, 150, "Actuelle");
-			AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Experience.Exp.ToString());
+			AddHtmlTexte(x + 125, y + space * line, 100, m_From.Experience.Exp.ToString());
+			AddButton(x + 200, y + space * line++ + 2, 0x5607, 0x568B, 400, GumpButtonType.Reply, 0);
 			AddHtmlTexte(x + 10, y + space * line, 150, "Restante");
 			AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Experience.ExpToGainBank.ToString());
 			AddHtmlTexte(x + 10, y + space * line, 150, "Heures jouées");
 			AddHtmlTexte(x + 125, y + space * line++, 100, Math.Round(m_From.Account.TotalGameTime.TotalHours, 2).ToString());
-
 			line++;
 
 			AddSection(x - 10, y + space * line++, 250, space * 10 - 1, "Capacités");
@@ -382,6 +380,10 @@ namespace Server.Gumps
 			{
 				m_From.Attributs.Increase(Attribut.Sagesse, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
+			}
+			else if (info.ButtonID == 400)
+			{
+				m_From.SendGump(new PointsAncestrauxExchangeGump(m_From, m_GM));
 			}
 			else if (info.ButtonID >= 500 && info.ButtonID < 550)
 			{
