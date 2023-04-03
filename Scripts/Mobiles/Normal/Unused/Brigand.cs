@@ -78,7 +78,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-
+		public override int Level => 8;
+		public override Biome Biome => Biome.Colline;
 		public override TribeType Tribe => TribeType.Brigand;
 
 		public override bool ClickTitle => false;
