@@ -4774,30 +4774,29 @@ namespace Server.Mobiles
             return null;
         }
 
-        #region Set[...]
+		#region Set[...]
         public void SetDamage(int val)
         {
-            m_DamageMin = val;
-            m_DamageMax = val;
+            m_DamageMin = 5 + (int)(Level * 1.5);
+            m_DamageMax = m_DamageMin + 3;
         }
 
         public void SetDamage(int min, int max)
         {
-            m_DamageMin = min;
-            m_DamageMax = max;
-        }
+			m_DamageMin = 5 + (int)(Level * 1.5);
+			m_DamageMax = m_DamageMin + 3;
+		}
 
         public void SetHits(int val)
         {
-            m_HitsMax = val;
+            m_HitsMax = (int)(40 * Math.Exp(0.315 * Level));
             Hits = HitsMax;
         }
 
         public void SetHits(int min, int max)
         {
-            m_HitsMax = Utility.RandomMinMax(min, max);
+            m_HitsMax = (int)(40 * Math.Exp(0.315 * Level));
             Hits = HitsMax;
-            SetAverage(min, max, m_HitsMax);
         }
 
         public void SetStam(int val)

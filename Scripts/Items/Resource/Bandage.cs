@@ -248,17 +248,9 @@ namespace Server.Items
             m_Table.Remove(m_Healer);
 
             if (m_Timer != null)
-            {
                 m_Timer.Stop();
-            }
 
             m_Timer = null;
-
-
-	/*		if (m_Healer is CustomPlayerMobile cp)
-			{
-				m_Healer.SendSpeedControl(SpeedControlType.Disable);
-			}*/
 		}
 
         private static readonly Dictionary<Mobile, BandageContext> m_Table = new Dictionary<Mobile, BandageContext>();
@@ -270,39 +262,15 @@ namespace Server.Items
             return bc;
         }
 
-        public static SkillName GetPrimarySkill(Mobile healer, Mobile m)
+        public static SkillName GetPrimarySkill()
         {
-            if (m is DespiseCreature)
-            {
-                return /*healer.Skills[SkillName.Healing].Value > healer.Skills[SkillName.Veterinary].Value ? */SkillName.Healing /*: SkillName.Veterinary*/;
-            }
+			return SkillName.Healing;
+		}
 
-            if (!m.Player && (m.Body.IsMonster || m.Body.IsAnimal))
-            {
-                return SkillName.Healing;
-            }
-            else
-            {
-                return SkillName.Healing;
-            }
-        }
-
-        public static SkillName GetSecondarySkill(Mobile healer, Mobile m)
+        public static SkillName GetSecondarySkill()
         {
-            if (m is DespiseCreature)
-            {
-                return /*healer.Skills[SkillName.Healing].Value > healer.Skills[SkillName.Veterinary].Value ?*/ SkillName.Anatomy/* : SkillName.AnimalLore*/;
-            }
-
-            if (!m.Player && (m.Body.IsMonster || m.Body.IsAnimal))
-            {
-                return SkillName.Healing;
-            }
-            else
-            {
-                return SkillName.Anatomy;
-            }
-        }
+			return SkillName.Anatomy;
+		}
 
         public void CheckPoisonOrBleed()
         {
@@ -311,8 +279,8 @@ namespace Server.Items
 
             if (bleeding || poisoned)
             {
-                double healing = m_Healer.Skills[SkillName.Healing].Value;
-                double anatomy = m_Healer.Skills[SkillName.Anatomy].Value;
+                double healing = m_Healer.Skills[GetPrimarySkill()].Value;
+                double anatomy = m_Healer.Skills[GetSecondarySkill()].Value;
                 double chance = ((healing + anatomy) - 120) * 25;
 
                 if (poisoned)
@@ -362,8 +330,8 @@ namespace Server.Items
             bool playSound = true;
             bool checkSkills = false;
 
-            SkillName primarySkill = GetPrimarySkill(m_Healer, m_Patient);
-            SkillName secondarySkill = GetSecondarySkill(m_Healer, m_Patient);
+            SkillName primarySkill = GetPrimarySkill();
+            SkillName secondarySkill = GetSecondarySkill();
 
             BaseCreature petPatient = m_Patient as BaseCreature;
 
@@ -561,8 +529,8 @@ namespace Server.Items
                 {
                     healerNumber = 500969; // You finish applying the bandages.
 
-                    double min = (anatomy / 8.0) + (healing / 5.0) + 4.0;
-                    double max = (anatomy / 6.0) + (healing / 2.5) + 4.0;
+                    double min = (anatomy / 10.0) + (healing / 7.0) + 4.0;
+                    double max = (anatomy / 8.0) + (healing / 5.0) + 4.0;
 
                     double toHeal = min + (Utility.RandomDouble() * (max - min));
 
@@ -722,17 +690,8 @@ namespace Server.Items
 
                 m_Table[healer] = context;
 
-
-	/*			if (healer is CustomPlayerMobile cp)
-				{
-					cp.SendSpeedControl(SpeedControlType.WalkSpeed);
-				}*/
-
-
                 if (healer != patient)
-                {
                     patient.SendLocalizedMessage(1008078, false, healer.Name); //  : Attempting to heal you.
-                }
 
                 healer.SendLocalizedMessage(500956); // You begin applying the bandages.
 
@@ -754,7 +713,7 @@ namespace Server.Items
 
         public static TimeSpan GetDelay(Mobile healer, Mobile patient, bool dead)
         {
-            return GetDelay(healer, patient, dead, GetPrimarySkill(healer, patient));
+            return GetDelay(healer, patient, dead, GetPrimarySkill());
         }
 
         public static TimeSpan GetDelay(Mobile healer, Mobile patient, bool dead, SkillName skill)
@@ -765,18 +724,18 @@ namespace Server.Items
 
             if (healer == patient)
             {
-                seconds = Math.Min(8, Math.Ceiling(11.0 - dex / 20));
-                seconds = Math.Max(seconds, 4);
+                seconds = Math.Min(15, Math.Ceiling(15.0 - dex / 25));
+                seconds = Math.Max(seconds, 10);
             }
-            //else if (skill == SkillName.Veterinary)
-            //{
-            //    seconds = 2.0;
-            //}
+            else if (patient is BaseCreature)
+            {
+                seconds = 2.0;
+            }
             else
             {
-                seconds = Math.Ceiling((double)4 - dex / 60);
-                seconds = Math.Max(seconds, 2);
-            }
+				seconds = Math.Min(15, Math.Ceiling(15.0 - dex / 25)) / 2;
+				seconds = Math.Max(seconds, 5);
+			}
 
             return TimeSpan.FromSeconds(seconds);
         }
