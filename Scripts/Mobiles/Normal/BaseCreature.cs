@@ -19,9 +19,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Server.Mobiles.AI;
 using Server.Spells.OldSpells;
-using static Server.HueData;
 using Server.Custom.Spells.NewSpells.Necromancie;
-using Server.Custom.Spells.NewSpells.Pyromancie;
 #endregion
 
 namespace Server.Mobiles
@@ -4801,67 +4799,62 @@ namespace Server.Mobiles
 
         public void SetStam(int val)
         {
-            m_StamMax = val;
+            m_StamMax = 25 + Level * 5;
             Stam = StamMax;
         }
 
         public void SetStam(int min, int max)
         {
-            m_StamMax = Utility.RandomMinMax(min, max);
+            m_StamMax = 25 + Level * 5;
             Stam = StamMax;
-            SetAverage(min, max, m_StamMax);
         }
 
         public void SetMana(int val)
         {
-            m_ManaMax = val;
+            m_ManaMax = 10000;
             Mana = ManaMax;
         }
 
         public void SetMana(int min, int max)
         {
-            m_ManaMax = Utility.RandomMinMax(min, max);
+            m_ManaMax = 10000;
             Mana = ManaMax;
-            SetAverage(min, max, m_ManaMax);
         }
 
         public void SetStr(int val)
         {
-            RawStr = val;
+            RawStr = 25 + Level * 5;
             Hits = HitsMax;
         }
 
         public void SetStr(int min, int max)
         {
-            RawStr = Utility.RandomMinMax(min, max);
+            RawStr = 25 + Level * 5;
             Hits = HitsMax;
-            SetAverage(min, max, RawStr);
         }
 
         public void SetDex(int val)
         {
-            RawDex = val;
+            RawDex = 25 + Level * 5;
             Stam = StamMax;
         }
 
         public void SetDex(int min, int max)
         {
-            RawDex = Utility.RandomMinMax(min, max);
+            RawDex = 25 + Level * 5;
             Stam = StamMax;
-            SetAverage(min, max, RawDex);
         }
 
         public void SetInt(int val)
         {
-            RawInt = val;
+            RawInt = 50 + Level * 10;
             Mana = ManaMax;
         }
 
         public void SetInt(int min, int max)
         {
-            RawInt = Utility.RandomMinMax(min, max);
+            RawInt = 50 + Level * 10;
             Mana = ManaMax;
-            SetAverage(min, max, RawInt);
         }
 
         public void SetDamageType(ResistanceType type, int min, int max)
@@ -4871,24 +4864,19 @@ namespace Server.Mobiles
 
         public void SetDamageType(ResistanceType type, int val)
         {
-            switch (type)
-            {
-                case ResistanceType.Physical:
-                    m_PhysicalDamage = val;
-                    break;
-                case ResistanceType.Fire:
-                    m_FireDamage = val;
-                    break;
-                case ResistanceType.Cold:
-                    m_ColdDamage = val;
-                    break;
-                case ResistanceType.Poison:
-                    m_PoisonDamage = val;
-                    break;
-                case ResistanceType.Energy:
-                    m_EnergyDamage = val;
-                    break;
-            }
+			switch(Biome)
+			{
+				case Biome.Aucun:		m_PhysicalDamage = 020;	m_FireDamage = 020;	m_ColdDamage = 020;	m_PoisonDamage = 020; m_EnergyDamage = 020; break;
+				case Biome.Foret:		m_PhysicalDamage = 020;	m_FireDamage = 000;	m_ColdDamage = 040; m_PoisonDamage = 040; m_EnergyDamage = 000; break;
+				case Biome.Plaine:		m_PhysicalDamage = 020;	m_FireDamage = 000;	m_ColdDamage = 000; m_PoisonDamage = 080; m_EnergyDamage = 000; break;
+				case Biome.Desert:		m_PhysicalDamage = 050;	m_FireDamage = 000;	m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 050; break;
+				case Biome.Colline:		m_PhysicalDamage = 020;	m_FireDamage = 000;	m_ColdDamage = 040; m_PoisonDamage = 000; m_EnergyDamage = 040; break;
+				case Biome.Montagne:	m_PhysicalDamage = 080;	m_FireDamage = 000;	m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 020; break;
+				case Biome.Toundra:		m_PhysicalDamage = 020;	m_FireDamage = 000;	m_ColdDamage = 080; m_PoisonDamage = 000; m_EnergyDamage = 000; break;
+				case Biome.Volcan:		m_PhysicalDamage = 020;	m_FireDamage = 080;	m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 000; break;
+				case Biome.Tropique:	m_PhysicalDamage = 020;	m_FireDamage = 040;	m_ColdDamage = 000; m_PoisonDamage = 040; m_EnergyDamage = 000; break;
+				case Biome.Savane:		m_PhysicalDamage = 020;	m_FireDamage = 000;	m_ColdDamage = 000;	m_PoisonDamage = 040; m_EnergyDamage = 040; break;
+			}
         }
 
         public void SetResistance(ResistanceType type, int value)
@@ -4898,136 +4886,64 @@ namespace Server.Mobiles
 
         public void SetResistance(ResistanceType type, int min, int max)
         {
-            int val = min == max ? min : Utility.RandomMinMax(min, max);
-
-            SetAverage(min, max, val);
-
-            switch (type)
-            {
-                case ResistanceType.Physical: m_PhysicalResistance = val; break;
-                case ResistanceType.Fire: m_FireResistance = val; break;
-                case ResistanceType.Cold: m_ColdResistance = val; break;
-                case ResistanceType.Poison: m_PoisonResistance = val; break;
-                case ResistanceType.Energy: m_EnergyResistance = val; break;
-            }
+            switch(Biome)
+			{
+				case Biome.Aucun:		m_PhysicalResistance = 050;	m_FireResistance = 050;	m_ColdResistance = 050;	m_PoisonResistance = 050; m_EnergyResistance = 050; break;
+				case Biome.Foret:		m_PhysicalResistance = 050;	m_FireResistance = 025;	m_ColdResistance = 050; m_PoisonResistance = 050; m_EnergyResistance = 025; break;
+				case Biome.Plaine:		m_PhysicalResistance = 050;	m_FireResistance = 025;	m_ColdResistance = 025; m_PoisonResistance = 075; m_EnergyResistance = 025; break;
+				case Biome.Desert:		m_PhysicalResistance = 075;	m_FireResistance = 025;	m_ColdResistance = 025; m_PoisonResistance = 025; m_EnergyResistance = 075; break;
+				case Biome.Colline:		m_PhysicalResistance = 050;	m_FireResistance = 025;	m_ColdResistance = 050; m_PoisonResistance = 025; m_EnergyResistance = 050; break;
+				case Biome.Montagne:	m_PhysicalResistance = 075;	m_FireResistance = 025;	m_ColdResistance = 025; m_PoisonResistance = 025; m_EnergyResistance = 025; break;
+				case Biome.Toundra:		m_PhysicalResistance = 050;	m_FireResistance = 025;	m_ColdResistance = 075; m_PoisonResistance = 025; m_EnergyResistance = 025; break;
+				case Biome.Volcan:		m_PhysicalResistance = 050;	m_FireResistance = 075;	m_ColdResistance = 025; m_PoisonResistance = 025; m_EnergyResistance = 025; break;
+				case Biome.Tropique:	m_PhysicalResistance = 050;	m_FireResistance = 050;	m_ColdResistance = 025; m_PoisonResistance = 050; m_EnergyResistance = 025; break;
+				case Biome.Savane:		m_PhysicalResistance = 050;	m_FireResistance = 025;	m_ColdResistance = 025;	m_PoisonResistance = 050; m_EnergyResistance = 050; break;
+			}
 
             UpdateResistances();
         }
 
         public void SetSkill(SkillName name, double val)
         {
-            Skills[name].BaseFixedPoint = (int)(val * 10);
+			Skills[SkillName.Wrestling].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+			Skills[SkillName.Tactics].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+			Skills[SkillName.MagicResist].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
 
-            if (Skills[name].Base > Skills[name].Cap)
-            {
-                SkillsCap += (Skills[name].BaseFixedPoint - Skills[name].CapFixedPoint);
+			if (HitPoison != null)
+			{
+				Skills[SkillName.Poisoning].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+				SetMagicalAbility(MagicalAbility.Poisoning);
+			}
 
-                Skills[name].Cap = Skills[name].Base;
-            }
-
-            if (name == SkillName.Poisoning && Skills[name].Base > 0 &&
-                !Controlled &&
-                (AbilityProfile == null || !AbilityProfile.HasAbility(MagicalAbility.Poisoning)))
-            {
-                SetMagicalAbility(MagicalAbility.Poisoning);
-            }
-
-            if (!Controlled && name == SkillName.Magery &&
-                (AbilityProfile == null || !AbilityProfile.HasAbility(MagicalAbility.Magery)) &&
-                Skills[SkillName.Magery].Base > 0 &&
-                (AI == AIType.AI_Mage || AI == AIType.AI_Necro || AI == AIType.AI_NecroMage || AI == AIType.AI_Mystic || AI == AIType.AI_Spellweaving))
-
-            {
-                SetMagicalAbility(MagicalAbility.Magery);
-            }
-        }
+			if ((AI == AIType.AI_Mage || AI == AIType.AI_Necro || AI == AIType.AI_NecroMage || AI == AIType.AI_Mystic || AI == AIType.AI_Spellweaving))
+			{
+				Skills[SkillName.Magery].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+				Skills[SkillName.EvalInt].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+				Skills[SkillName.Meditation].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+				SetMagicalAbility(MagicalAbility.Magery);
+			}
+		}
 
         public void SetSkill(SkillName name, double min, double max)
         {
-            int minFixed = (int)(min * 10);
-            int maxFixed = (int)(max * 10);
-
-            Skills[name].BaseFixedPoint = Utility.RandomMinMax(minFixed, maxFixed);
-
-            SetAverage(min, max, Skills[name].BaseFixedPoint / 10);
-
-            if (Skills[name].Base > Skills[name].Cap)
-            {
-                SkillsCap += (Skills[name].BaseFixedPoint - Skills[name].CapFixedPoint);
-
-                Skills[name].Cap = Skills[name].Base;
-            }
-
-            if (name == SkillName.Poisoning && Skills[name].Base > 0 &&
-                !Controlled &&
-                (AbilityProfile == null || !AbilityProfile.HasAbility(MagicalAbility.Poisoning)))
-            {
-                SetMagicalAbility(MagicalAbility.Poisoning);
-            }
-
-            if (!Controlled && name == SkillName.Magery &&
-                (AbilityProfile == null || !AbilityProfile.HasAbility(MagicalAbility.Magery)) &&
-                Skills[SkillName.Magery].Base > 0 &&
-                (AI == AIType.AI_Mage || AI == AIType.AI_Necro || AI == AIType.AI_NecroMage || AI == AIType.AI_Mystic || AI == AIType.AI_Spellweaving))
-
-            {
-                SetMagicalAbility(MagicalAbility.Magery);
-            }
-        }
+			SetSkill(name, min);
+		}
 
         public void SetFameLevel(int level)
         {
-            switch (level)
-            {
-                case 1:
-                    Fame = Utility.RandomMinMax(0, 1249);
-                    break;
-                case 2:
-                    Fame = Utility.RandomMinMax(1250, 2499);
-                    break;
-                case 3:
-                    Fame = Utility.RandomMinMax(2500, 4999);
-                    break;
-                case 4:
-                    Fame = Utility.RandomMinMax(5000, 9999);
-                    break;
-                case 5:
-                    Fame = Utility.RandomMinMax(10000, 10000);
-                    break;
-            }
-        }
+			Fame = 0;
+		}
 
-        public void SetKarmaLevel(int level)
+		public void SetKarmaLevel(int level)
         {
-            switch (level)
-            {
-                case 0:
-                    Karma = -Utility.RandomMinMax(0, 624);
-                    break;
-                case 1:
-                    Karma = -Utility.RandomMinMax(625, 1249);
-                    break;
-                case 2:
-                    Karma = -Utility.RandomMinMax(1250, 2499);
-                    break;
-                case 3:
-                    Karma = -Utility.RandomMinMax(2500, 4999);
-                    break;
-                case 4:
-                    Karma = -Utility.RandomMinMax(5000, 9999);
-                    break;
-                case 5:
-                    Karma = -Utility.RandomMinMax(10000, 10000);
-                    break;
-            }
-        }
+			if (Level >= 19)
+				Karma = -1000000;
+		}
 
-        public override void OnRawDexChange(int oldDex)
+		public override void OnRawDexChange(int oldDex)
         {
             if (oldDex != RawDex)
-            {
                 AdjustSpeeds();
-            }
         }
 
         public virtual void AdjustSpeeds()
@@ -5045,13 +4961,9 @@ namespace Server.Mobiles
         public static void Cap(ref int val, int min, int max)
         {
             if (val < min)
-            {
                 val = min;
-            }
             else if (val > max)
-            {
                 val = max;
-            }
         }
 
         public virtual void DropBackpack()
@@ -5136,9 +5048,13 @@ namespace Server.Mobiles
 		}
 
 		public virtual void GenerateLoot()
-        { }
+        {
+			var min = (int)(40 * Math.Exp(0.25 * Level) - 40);
+			var max = (int)((40 * Math.Exp(0.25 * Level) - 40) * 1.15);
+			AddItem(new Gold(Utility.Random(min, max)));
+		}
 
-        public virtual void AddLoot(LootPack pack, int min, int max)
+		public virtual void AddLoot(LootPack pack, int min, int max)
         {
             AddLoot(pack, Utility.RandomMinMax(min, max), 100.0);
         }
@@ -5190,8 +5106,6 @@ namespace Server.Mobiles
 
             pack.Generate(this);
         }
-
-
 
         public static void GetRandomAOSStats(int minLevel, int maxLevel, out int attributeCount, out int min, out int max)
         {
