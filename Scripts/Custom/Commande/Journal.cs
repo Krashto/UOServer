@@ -162,19 +162,19 @@ namespace JournalCommand
 				{
 					content += $"{parag1}";
 					if (!string.IsNullOrEmpty(parag2) || !string.IsNullOrEmpty(parag3) || !string.IsNullOrEmpty(parag4))
-						content += "\n\r";
+						content += "\n\r\n\r";
 				}
 				if (!string.IsNullOrEmpty(parag2))
 				{
 					content += $"{parag2}";
 					if (!string.IsNullOrEmpty(parag3) || !string.IsNullOrEmpty(parag4))
-						content += "\n\r";
+						content += "\n\r\n\r";
 				}
 				if (!string.IsNullOrEmpty(parag3))
 				{
 					content += $"{parag3}";
 					if (!string.IsNullOrEmpty(parag4))
-						content += "\n\r";
+						content += "\n\r\n\r";
 				}
 				if (!string.IsNullOrEmpty(parag3))
 					content += $"{parag4}";

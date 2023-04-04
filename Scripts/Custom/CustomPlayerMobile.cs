@@ -1422,6 +1422,11 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
+				case 2:
+					{
+						PointsAncestraux = new PointsAncestraux(this, reader);
+						goto case 1;
+					}
 				case 1:
 					{
 						Journaliste = reader.ReadBool();
@@ -1481,7 +1486,10 @@ namespace Server.Mobiles
         {        
             base.Serialize(writer);
 
-            writer.Write(1); // version
+            writer.Write(2); // version
+
+			//Version 2
+			PointsAncestraux.Serialize(writer);
 
 			//Version 1
 			writer.Write(Journaliste);

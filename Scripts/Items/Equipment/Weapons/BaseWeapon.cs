@@ -1187,6 +1187,9 @@ namespace Server.Items
             if (defValue <= -20.0)
                 defValue = -19.9;
 
+			if (attacker is BaseCreature && defender is CustomPlayerMobile)
+				bonus += 25;
+
             bonus += AosAttributes.GetValue(attacker, AosAttribute.AttackChance);
 
 			if (AveuglementSpell.IsActive(attacker))

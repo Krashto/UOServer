@@ -152,11 +152,11 @@ namespace Server.Misc
 				points += 10;
 
 			if (from is CustomPlayerMobile pm)
-				points += pm.Attributs.Constitution / 10;
+				points += pm.Attributs.Constitution / 50;
 
 			CheckBonusSkill(from, from.Hits, from.HitsMax, SkillName.Cooking);
 
-			points += from.Skills[SkillName.Cooking].Value / 30;
+			points += from.Skills[SkillName.Cooking].Value / 50;
 
 			points += BarrabHemolymphConcentrate.HPRegenBonus(from);
 

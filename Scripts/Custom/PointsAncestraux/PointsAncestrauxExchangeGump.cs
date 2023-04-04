@@ -1,12 +1,7 @@
 ﻿using System;
 using Server.Network;
 using Server.Mobiles;
-using Server.Custom.Aptitudes;
-using Server.Custom.Classes;
-using Server.Custom.Capacites;
-using Server.Custom;
 using Server.Targeting;
-using Server.Items;
 using Server.CustomScripts.Systems.Experience;
 
 namespace Server.Gumps

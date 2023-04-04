@@ -4775,13 +4775,13 @@ namespace Server.Mobiles
 		#region Set[...]
         public void SetDamage(int val)
         {
-            m_DamageMin = 5 + (int)(Level * 1.5);
+            m_DamageMin = 5 + (int)(Level * 2);
             m_DamageMax = m_DamageMin + 3;
         }
 
         public void SetDamage(int min, int max)
         {
-			m_DamageMin = 5 + (int)(Level * 1.5);
+			m_DamageMin = 5 + (int)(Level * 2);
 			m_DamageMax = m_DamageMin + 3;
 		}
 
@@ -5030,8 +5030,9 @@ namespace Server.Mobiles
             }
 
             GenerateLoot();
+			GenerateNewLoot();
 
-            if (m_Paragon)
+			if (m_Paragon)
 				GenerateLootParagon();
 
             KillersLuck = 0;
@@ -5049,6 +5050,11 @@ namespace Server.Mobiles
 
 		public virtual void GenerateLoot()
         {
+			
+		}
+
+		public void GenerateNewLoot()
+		{
 			var min = (int)(40 * Math.Exp(0.25 * Level) - 40);
 			var max = (int)((40 * Math.Exp(0.25 * Level) - 40) * 1.15);
 			AddItem(new Gold(Utility.Random(min, max)));
