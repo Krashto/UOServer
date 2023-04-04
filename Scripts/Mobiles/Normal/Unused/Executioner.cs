@@ -170,8 +170,9 @@ namespace Server.Mobiles
 
             return dam;
         }
-
-        public override void GenerateLoot()
+		public override int Level => 8;
+		public override Biome Biome => Biome.Colline;
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Meager);
