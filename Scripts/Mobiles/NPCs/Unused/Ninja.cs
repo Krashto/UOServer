@@ -60,7 +60,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.LootGold(250, 300));
+            //AddLoot(LootPack.LootGold(250, 300));
         }
 
         public override void Serialize(GenericWriter writer)

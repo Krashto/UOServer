@@ -69,7 +69,7 @@ namespace Server.Mobiles
 
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
 
-			PackGold(5, 11);
+			//PackGold(5, 11);
 
 		}
 

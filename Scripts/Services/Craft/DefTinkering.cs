@@ -611,50 +611,51 @@ namespace Server.Engines.Craft
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(IronIngot), "Fer", 0, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(BronzeIngot), "Bronze", 15, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(CopperIngot), "Copper", 15, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(SonneIngot), "Sonne", 20, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(ArgentIngot), "Argent", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(BorealeIngot), "Boréale", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(ChrysteliarIngot), "Chrysteliar", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(GlaciasIngot), "Glacias", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(LithiarIngot), "Lithiar", 30, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(AcierIngot), "Acier", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(DurianIngot), "Durian", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(EquilibrumIngot), "Équilibrum", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(GoldIngot), "Or", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(JolinarIngot), "Jolinar", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(JusticiumIngot), "Justicium", 45, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(AbyssiumIngot), "Abyssium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(BloodiriumIngot), "Bloodirium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(HerbrositeIngot), "Herbrosite", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(KhandariumIngot), "Khandarium", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(MytherilIngot), "Mytheril", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(SombralirIngot), "Sombralir", 60, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(DraconyrIngot), "Draconyr", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(HeptazionIngot), "Heptazion", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(OceanisIngot), "Océanis", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(BraziumIngot), "Brazium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(LuneriumIngot), "Lunerium", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(MarinarIngot), "Marinar", 80, "Vous n'avez pas les compétences requises pour forger ce métal.");
-			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 90, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(IronIngot), "Fer", 0.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BronzeIngot), "Bronze", 0.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(CopperIngot), "Copper", 0.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(SonneIngot), "Sonne", 20.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ArgentIngot), "Argent", 20.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BorealeIngot), "Boréale", 20.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(ChrysteliarIngot), "Chrysteliar", 20.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GlaciasIngot), "Glacias", 20.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LithiarIngot), "Lithiar", 20.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AcierIngot), "Acier", 40.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DurianIngot), "Durian", 40.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(EquilibrumIngot), "Équilibrum", 40.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(GoldIngot), "Or", 40.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JolinarIngot), "Jolinar", 40.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(JusticiumIngot), "Justicium", 40.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(AbyssiumIngot), "Abyssium", 60.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BloodiriumIngot), "Bloodirium", 60.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(HerbrositeIngot), "Herbrosite", 60.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(KhandariumIngot), "Khandarium", 60.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(MytherilIngot), "Mytheril", 60.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(SombralirIngot), "Sombralir", 60.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(DraconyrIngot), "Draconyr", 80.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(HeptazionIngot), "Heptazion", 80.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(OceanisIngot), "Océanis", 80.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(BraziumIngot), "Brazium", 80.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(LuneriumIngot), "Lunerium", 80.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(MarinarIngot), "Marinar", 80.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
+			AddSubRes(typeof(NostalgiumIngot), "Nostalgium", 100.0, "Vous n'avez pas les compétences requises pour forger ce métal.");
 
 
-			SetSubRes2(typeof(PlainoisBoard), 1072643);
+			// Set the overridable material
+			SetSubRes2(typeof(PlainoisBoard), "Plainois");
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes2(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
-			AddSubRes2(typeof(CollinoisBoard), "Collinois", 30.0, "Vous ne savez pas travailler le bois Collinois");
-			AddSubRes2(typeof(ForestierBoard), "Forestier", 30.0, "Vous ne savez pas travailler le bois Forestier");
-			AddSubRes2(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois Savanois");
-			AddSubRes2(typeof(DesertiqueBoard), "Desertique", 40.0, "Vous ne savez pas travailler le bois Desertique");
-			AddSubRes2(typeof(MontagnardBoard), "Montagnard", 50.0, "Vous ne savez pas travailler le bois Montagnard");
-			AddSubRes2(typeof(VolcaniqueBoard), "Volcanique", 50.0, "Vous ne savez pas travailler le bois Volcanique");
-			AddSubRes2(typeof(TropicauxBoard), "Tropicaux", 60.0, "Vous ne savez pas travailler le bois Tropicaux");
-			AddSubRes2(typeof(ToundroisBoard), "Toundrois", 60.0, "Vous ne savez pas travailler le bois Toundrois");
-			AddSubRes2(typeof(AncienBoard), "Ancien", 80.0, "Vous ne savez pas travailler le bois Ancien");
+			AddSubRes2(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois plainois");
+			AddSubRes2(typeof(CollinoisBoard), "Collinois", 20.0, "Vous ne savez pas travailler le bois collinois");
+			AddSubRes2(typeof(ForestierBoard), "Forestier", 20.0, "Vous ne savez pas travailler le bois forestier");
+			AddSubRes2(typeof(SavanoisBoard), "Savanois", 40.0, "Vous ne savez pas travailler le bois savanois");
+			AddSubRes2(typeof(DesertiqueBoard), "Desertique", 40.0, "Vous ne savez pas travailler le bois desertique");
+			AddSubRes2(typeof(MontagnardBoard), "Montagnard", 60.0, "Vous ne savez pas travailler le bois montagnard");
+			AddSubRes2(typeof(VolcaniqueBoard), "Volcanique", 60.0, "Vous ne savez pas travailler le bois volcanique");
+			AddSubRes2(typeof(TropicauxBoard), "Tropicaux", 80.0, "Vous ne savez pas travailler le bois tropicaux");
+			AddSubRes2(typeof(ToundroisBoard), "Toundrois", 80.0, "Vous ne savez pas travailler le bois toundrois");
+			AddSubRes2(typeof(AncienBoard), "Ancien", 100.0, "Vous ne savez pas travailler le bois ancien");
 
 			MarkOption = true;
 			Repair = true;

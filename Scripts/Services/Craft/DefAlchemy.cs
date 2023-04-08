@@ -381,62 +381,6 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(PlumesAigle), "Plumes d'aigles", 10, "Vous n'avez pas suffisament de plumes d'aigle");
 			#endregion
 			#endregion
-			#region Nouvelles
-			index = AddCraft(typeof(CoronasHealingPotion), "Revitalize Potion", "Coronas Revitalize Potion", 95.0, 100.0, typeof(BatWing), "Bat Wing", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(ManaPotion), "Mana Potion", "Tobyjug's Mana Potion", 90.0, 95.0, typeof(ArcaneGem), "Arcane Gem", 3);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(TotalManaRefreshPotion), "Mana Potion", "Tobyjug's Total Mana Potion", 96.0, 100.0, typeof(ArcaneGem), "Arcane Gem", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(ShrinkPotion), "Shrink Potion", "ASayre's Shrink Potion", 95.0, 100.0, typeof(AncienBone), "Bone", 2);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(PetResurrectPotion), "Resurrect Potion", "Cody's Pet Resurrect Potion", 90.0, 95.0, typeof(GraveDust), "Grave Dust", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(ResurrectPotion), "Resurrect Potion", "Cody's Resurrect Potion", 95.0, 100.0, typeof(GraveDust), "Grave Dust", 8);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(WaterElementalPotion), "Elemental Potion", "Shaz'ars Water Elemental Potion", 99.0, 100.0, typeof(NoxCrystal), "Nox Crystal", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(FireElementalPotion), "Elemental Potion", "Shaz'ars Fire Elemental Potion", 99.0, 100.0, typeof(NoxCrystal), "Nox Crystal", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(EarthElementalPotion), "Elemental Potion", "Shaz'ars Earth Elemental Potion", 99.0, 100.0, typeof(NoxCrystal), "Nox Crystal", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(PoisonElementalPotion), "Shaz'ars Elemental Potion", "Shaz'ars Poison Elemental Potion", 99.0, 100.0, typeof(NoxCrystal), "NoxCrystal", 15);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(BloodElementalPotion), "Shaz'ars Elemental Potion", "Shaz'ars Blood Elemental Potion", 99.0, 100.0, typeof(NoxCrystal), "NoxCrystal", 15);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(InvisibilityPotion), "Invisibility Potion", "Ezra's Invisibility Potion", 90.0, 95.0, typeof(PowderOfTranslocation), "Powder Of Translocation", 3);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(StealthPotion), "Invisibility Potion", "Ezra's Stealth Potion", 93.0, 96.0, typeof(PowderOfTranslocation), "Powder Of Translocation", 4);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(SuperStealthPotion), "Invisibility Potion", "Ezra's Super Stealth Potion", 97.0, 100.0, typeof(PowderOfTranslocation), "Powder Of Translocation", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(RepairPotion), "Repair Potion", "Rikktor's Repair Potion", 90.0, 95.0, typeof(PigIron), "Pig Iron", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(DurabilityPotion), "Repair Potion", "Rikktor's Durability Potion", 95.0, 100.0, typeof(PigIron), "Pig Iron", 8);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(SuperPotion), "Super Potion", "Stacia's Super Potion", 95.0, 100.0, typeof(DaemonBone), "Daemon Bone", 3);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(HairGrowthElixir), "Hair Growth Elixir", "Gabby's Hair Growth Elixir", 95.0, 100.0, typeof(SpidersSilk), "SpidersSilk", 3);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-		//	index = AddCraft(typeof(HangoverCure), "Hangover Cure", "Dr. Spock's Hangover Cure", 95.0, 100.0, typeof(DaemonBlood), "DaemonBlood", 3);
-		//	AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(MaskOfDeathPotion), "Mask Of Death", "Mask Of Death Potion", 98.0, 99.0, typeof(Nightshade), "Nightshade", 5);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			index = AddCraft(typeof(GreaterMaskOfDeathPotion), "Mask Of Death", "Greater Mask Of Death Potion", 99.0, 100.0, typeof(Nightshade), "Nightshade", 8);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			#endregion
-
 		}
 	}
 }

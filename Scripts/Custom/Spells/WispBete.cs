@@ -34,7 +34,7 @@ namespace Server.Mobiles
             VirtualArmor = 6;
 		}
 
-	public override int GetDeathSound()
+		public override int GetDeathSound()
 		{
 			return 1134;
 		}
@@ -44,7 +44,7 @@ namespace Server.Mobiles
             AddLoot(LootPack.Others, Utility.RandomMinMax(2, 3));
             AddLoot(LootPack.MageryRegs, Utility.RandomMinMax(8, 12));
 
-            PackGold(90, 110);
+            //PackGold(90, 110);
         }
 
 		public override Poison PoisonImmune{ get{ return Poison.Lethal; } }

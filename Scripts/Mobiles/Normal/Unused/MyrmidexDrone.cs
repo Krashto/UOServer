@@ -44,7 +44,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.LootGold(50, 70));
+            //AddLoot(LootPack.LootGold(50, 70));
             AddLoot(LootPack.LootItemCallback(TryDropEggsac, 25.0, Utility.RandomMinMax(1, 5), false, false));
         }
 

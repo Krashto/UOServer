@@ -205,28 +205,19 @@ namespace Server
 			}
 		}
 
-
-
-
-
-
-
-
-
 		public static readonly LootPackItem[] Marchandise = new[] { new LootPackItem(typeof(Materiaux), 1) };
 		public static readonly LootPackItem[] Gold5 = new[] { new LootPackItem(typeof(Citrine), 1) };
-		       public static readonly LootPackItem[] Gold10 = new[] { new LootPackItem(typeof(Amber), 1) };
-		       public static readonly LootPackItem[] Gold25 = new[] { new LootPackItem(typeof(Tourmaline), 1) };
-		       public static readonly LootPackItem[] Gold50 = new[] { new LootPackItem(typeof(Ruby), 1) };
-				public static readonly LootPackItem[] Gold75 = new[] { new LootPackItem(typeof(Amethyst), 1) };
-				public static readonly LootPackItem[] Gold100 = new[] { new LootPackItem(typeof(Sapphire), 1) };
-		       public static readonly LootPackItem[] Gold150 = new[] { new LootPackItem(typeof(StarSapphire), 1) };
-		      public static readonly LootPackItem[] Gold200 = new[] { new LootPackItem(typeof(Emerald), 1) };
-		       public static readonly LootPackItem[] Gold250 = new[] { new LootPackItem(typeof(Diamond), 1) };
-
+		public static readonly LootPackItem[] Gold10 = new[] { new LootPackItem(typeof(Amber), 1) };
+		public static readonly LootPackItem[] Gold25 = new[] { new LootPackItem(typeof(Tourmaline), 1) };
+		public static readonly LootPackItem[] Gold50 = new[] { new LootPackItem(typeof(Ruby), 1) };
+		public static readonly LootPackItem[] Gold75 = new[] { new LootPackItem(typeof(Amethyst), 1) };
+		public static readonly LootPackItem[] Gold100 = new[] { new LootPackItem(typeof(Sapphire), 1) };
+		public static readonly LootPackItem[] Gold150 = new[] { new LootPackItem(typeof(StarSapphire), 1) };
+		public static readonly LootPackItem[] Gold200 = new[] { new LootPackItem(typeof(Emerald), 1) };
+		public static readonly LootPackItem[] Gold250 = new[] { new LootPackItem(typeof(Diamond), 1) };
 
 		public static readonly LootPackItem[] RandomFoodRecipeItems = new[]
-	   {
+		{
 			new LootPackItem(typeof(RandomBakingRecipe), 1), new LootPackItem(typeof(RandomPreparationsRecipe), 1),
 			new LootPackItem(typeof(RandomBoilingRecipe), 1), new LootPackItem(typeof(RandomRawMeatPrepRecipe), 1),
 			new LootPackItem(typeof(RandomIngredientsRecipe), 1), new LootPackItem(typeof(RandomSaucesRecipe), 1),
@@ -728,8 +719,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-
-						new LootPackEntry(false, false, Gold5, 100.0, 5, true),
+					new LootPackEntry(false, false, Gold5, 100.0, 5, true),
 					new LootPackEntry(false, false, Gold10, 100.0, 1, true),
 					new LootPackEntry(false, false, Gold25, 100.0, 1, true),
 					new LootPackEntry(false, false, Gold25, 75.0, 1, true),
@@ -770,7 +760,7 @@ namespace Server
             new LootPack(
                 new[]
                 {
-						new LootPackEntry(false, false, Gold5, 100.0, 5, true),
+					new LootPackEntry(false, false, Gold5, 100.0, 5, true),
 					new LootPackEntry(false, false, Gold10, 100.0, 1, true),
 					new LootPackEntry(false, false, Gold25, 100.0, 1, true),
 					new LootPackEntry(false, false, Gold25, 75.0, 1, true),
@@ -1058,23 +1048,23 @@ namespace Server
             return new LootPack(new[] { new LootPackEntry(onSpawn, onSteal, new LootPackItem[] { new LootPackItem(callback, 1) }, chance, amount) });
         }
 
-        public static LootPack LootGold(int amount)
-        {
-            return new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(typeof(Gold), 1) }, 100.0, amount) });
-        }
+        //public static LootPack LootGold(int amount)
+        //{
+        //    return new LootPack(new[] { new LootPackEntry(false, true, new LootPackItem[] { new LootPackItem(typeof(Gold), 1) }, 100.0, amount) });
+        //}
 
-        public static LootPack LootGold(int min, int max)
-        {
-            if (min > max)
-                min = max;
+        //public static LootPack LootGold(int min, int max)
+        //{
+        //    if (min > max)
+        //        min = max;
 
-            if (min > 0)
-            {
-                return LootGold(Utility.RandomMinMax(min, max));
-            }
+        //    if (min > 0)
+        //    {
+        //        return LootGold(Utility.RandomMinMax(min, max));
+        //    }
 
-            return null;
-        }
+        //    return null;
+        //}
     }
 
     public class LootPackEntry

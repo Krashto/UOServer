@@ -531,7 +531,7 @@ namespace Server.Engines.Quests
             if (!Female)
                 AddItem(new BodySash(lowHue));
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)
@@ -583,7 +583,7 @@ namespace Server.Engines.Quests
             else
                 AddItem(new Boots(lowHue));
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)
@@ -646,7 +646,7 @@ namespace Server.Engines.Quests
                     break;
             }
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)
@@ -700,7 +700,7 @@ namespace Server.Engines.Quests
 
             AddItem(new Longsword());
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)
@@ -761,7 +761,7 @@ namespace Server.Engines.Quests
             if (!Female)
                 AddItem(new Longsword());
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)
@@ -818,7 +818,7 @@ namespace Server.Engines.Quests
 
             HairHue = Race.RandomHairHue();
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)
@@ -867,7 +867,7 @@ namespace Server.Engines.Quests
 
             Utility.AssignRandomHair(this);
 
-            PackGold(50, 100);
+            //PackGold(50, 100);
         }
 
         public override void Serialize(GenericWriter writer)

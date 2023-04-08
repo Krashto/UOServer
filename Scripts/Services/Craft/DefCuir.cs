@@ -241,16 +241,16 @@ namespace Server.Engines.Craft
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
-			AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, "Vous ne savez pas travailler le cuir Plainois");
-			AddSubRes(typeof(CollinoisLeather), "Collinois", 30.0, "Vous ne savez pas travailler le cuir Collinois");
-			AddSubRes(typeof(ForestierLeather), "Forestier", 30.0, "Vous ne savez pas travailler le cuir Forestier");
-			AddSubRes(typeof(SavanoisLeather), "Savanois", 40.0, "Vous ne savez pas travailler le cuir Savanois");
-			AddSubRes(typeof(DesertiqueLeather), "Desertique", 40.0, "Vous ne savez pas travailler le cuir Desertique");
-			AddSubRes(typeof(MontagnardLeather), "Montagnard", 50.0, "Vous ne savez pas travailler le cuir Montagnard");
-			AddSubRes(typeof(VolcaniqueLeather), "Volcanique", 50.0, "Vous ne savez pas travailler le cuir Volcanique");
-			AddSubRes(typeof(TropicauxLeather), "Tropicaux", 60.0, "Vous ne savez pas travailler le cuir Tropicaux");
-			AddSubRes(typeof(ToundroisLeather), "Toundrois", 60.0, "Vous ne savez pas travailler le cuir Toundrois");
-		    AddSubRes(typeof(AncienLeather), "Ancien", 80.0, "Vous ne savez pas travailler le cuir Ancien");
+			AddSubRes(typeof(PlainoisLeather), "Plainois", 0.0, "Vous ne savez pas travailler le cuir plainois");
+			AddSubRes(typeof(CollinoisLeather), "Collinois", 20.0, "Vous ne savez pas travailler le cuir collinois");
+			AddSubRes(typeof(ForestierLeather), "Forestier", 20.0, "Vous ne savez pas travailler le cuir forestier");
+			AddSubRes(typeof(SavanoisLeather), "Savanois", 40.0, "Vous ne savez pas travailler le cuir savanois");
+			AddSubRes(typeof(DesertiqueLeather), "Desertique", 40.0, "Vous ne savez pas travailler le cuir desertique");
+			AddSubRes(typeof(MontagnardLeather), "Montagnard", 60.0, "Vous ne savez pas travailler le cuir montagnard");
+			AddSubRes(typeof(VolcaniqueLeather), "Volcanique", 60.0, "Vous ne savez pas travailler le cuir volcanique");
+			AddSubRes(typeof(TropicauxLeather), "Tropicaux", 80.0, "Vous ne savez pas travailler le cuir tropicaux");
+			AddSubRes(typeof(ToundroisLeather), "Toundrois", 80.0, "Vous ne savez pas travailler le cuir toundrois");
+		    AddSubRes(typeof(AncienLeather), "Ancien", 100.0, "Vous ne savez pas travailler le cuir ancien");
 
 			MarkOption = true;
             Repair = true;

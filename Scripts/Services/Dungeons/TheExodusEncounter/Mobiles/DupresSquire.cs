@@ -87,7 +87,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.LootGold(400, 600));
+            //AddLoot(LootPack.LootGold(400, 600));
         }
 
         public override bool CanBeParagon => false;

@@ -116,20 +116,20 @@ namespace Server.Engines.Craft
 			// Set the overridable material
 			SetSubRes(typeof(PlainoisBone), "Plainois");
 
-            // Add every material you want the player to be able to choose from
-            // This will override the overridable material
-            AddSubRes(typeof(PlainoisBone), "Plainois", 0.0, "Vous ne savez pas travailler les os Plainois");
-			AddSubRes(typeof(CollinoisBone), "Collinois", 30.0, "Vous ne savez pas travailler les os Collinois");
-			AddSubRes(typeof(ForestierBone), "Forestier", 30.0, "Vous ne savez pas travailler les os Forestier");
-			AddSubRes(typeof(SavanoisBone), "Savanois", 40.0, "Vous ne savez pas travailler les os Savanois");
-			AddSubRes(typeof(DesertiqueBone), "Desertique", 40.0, "Vous ne savez pas travailler les os Desertique");
-			AddSubRes(typeof(MontagnardBone), "Montagnard", 50.0, "Vous ne savez pas travailler les os Montagnard");
-			AddSubRes(typeof(VolcaniqueBone), "Volcanique", 50.0, "Vous ne savez pas travailler les os Volcanique");
-			AddSubRes(typeof(TropicauxBone), "Tropicaux", 60.0, "Vous ne savez pas travailler les os Tropicaux");
-			AddSubRes(typeof(ToundroisBone), "Toundrois", 60.0, "Vous ne savez pas travailler les os Toundrois");
-			AddSubRes(typeof(AncienBone), "Ancien", 80.0, "Vous ne savez pas travailler les os Ancien");
+			// Add every material you want the player to be able to choose from
+			// This will override the overridable material
+			AddSubRes(typeof(PlainoisBone), "Plainois", 0.0, "Vous ne savez pas travailler l'os plainois");
+			AddSubRes(typeof(CollinoisBone), "Collinois", 20.0, "Vous ne savez pas travailler l'os collinois");
+			AddSubRes(typeof(ForestierBone), "Forestier", 20.0, "Vous ne savez pas travailler l'os forestier");
+			AddSubRes(typeof(SavanoisBone), "Savanois", 40.0, "Vous ne savez pas travailler l'os savanois");
+			AddSubRes(typeof(DesertiqueBone), "Desertique", 40.0, "Vous ne savez pas travailler l'os desertique");
+			AddSubRes(typeof(MontagnardBone), "Montagnard", 60.0, "Vous ne savez pas travailler l'os montagnard");
+			AddSubRes(typeof(VolcaniqueBone), "Volcanique", 60.0, "Vous ne savez pas travailler l'os volcanique");
+			AddSubRes(typeof(TropicauxBone), "Tropicaux", 80.0, "Vous ne savez pas travailler l'os tropicaux");
+			AddSubRes(typeof(ToundroisBone), "Toundrois", 80.0, "Vous ne savez pas travailler l'os toundrois");
+			AddSubRes(typeof(AncienBone), "Ancien", 100.0, "Vous ne savez pas travailler l'os ancien");
 
-            MarkOption = true;
+			MarkOption = true;
             Repair = true;
             CanEnhance = true;
             CanAlter = true;

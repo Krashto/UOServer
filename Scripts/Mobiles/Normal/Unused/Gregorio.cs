@@ -43,7 +43,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.LootGold(50, 150));
+            //AddLoot(LootPack.LootGold(50, 150));
         }
 
         public override int Damage(int amount, Mobile from, bool informMount, bool checkDisrupt)

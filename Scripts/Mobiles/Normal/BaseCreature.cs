@@ -2031,100 +2031,56 @@ namespace Server.Mobiles
                     }
                 }
 
-                if (hides != 0)
-                {
-                    Item leather = null;
-                    bool cutHides = (with is SkinningKnife && from.FindItemOnLayer(Layer.OneHanded) == with) || special || with is ButchersWarCleaver;
+				//Hides
+                Item leather = null;
+				hides = Level * 10;
+				if (with is SkinningKnife || special || with is ButchersWarCleaver)
+					hides *= 2;
 
-					switch (HideType)
-					{
-						case HideType.Lupus:
-							if (cutHides) leather = new ForestierLeather(hides);
-							else leather = new ForestierHides(hides);
-							break;
-						case HideType.Reptilien:
-							if (cutHides) leather = new DesertiqueLeather(hides);
-							else leather = new DesertiqueHides(hides);
-							break;
-						case HideType.Geant:
-							if (cutHides) leather = new CollinoisLeather(hides);
-							else leather = new CollinoisHides(hides);
-							break;
-						case HideType.Ophidien:
-							if (cutHides) leather = new SavanoisLeather(hides);
-							else leather = new SavanoisHides(hides);
-							break;
-						case HideType.Arachnide:
-							if (cutHides) leather = new ToundroisLeather(hides);
-							else leather = new ToundroisHides(hides);
-							break;
-						case HideType.Dragonique:
-							if (cutHides) leather = new TropicauxLeather(hides);
-							else leather = new TropicauxHides(hides);
-							break;
-						case HideType.Demoniaque:
-							if (cutHides) leather = new MontagnardLeather(hides);
-							else leather = new MontagnardHides(hides);
-							break;
-						case HideType.Ancien:
-							if (cutHides) leather = new AncienLeather(hides);
-							else leather = new AncienHides(hides);
-							break;
-						default:
-						case HideType.Regular:
-							if (cutHides) leather = new PlainoisLeather(hides);
-							else leather = new PlainoisHides(hides);
-							break;
-					}
-
-					if (!cutHides || !from.AddToBackpack(leather))
-                    {
-                        corpse.AddCarvedItem(leather, from);
-                        from.SendLocalizedMessage(500471); // You skin it, and the hides are now in the corpse.
-                    }
-                    else
-                    {
-                        from.SendLocalizedMessage(1073555); // You skin it and place the cut-up hides in your backpack.
-                    }
-				}
-
-				if (bones != 0)
+				switch (Biome)
 				{
-					Item bone = null;
-
-					switch (BoneType)
-					{
-						case BoneType.Lupus:
-							 bone = new ForestierBone(bones);
-							break;
-						case BoneType.Reptilien:
-							 bone = new DesertiqueBone(bones);
-							break;
-						case BoneType.Geant:
-							 bone = new CollinoisBone(bones);
-							break;
-						case BoneType.Ophidien:
-							bone = new SavanoisBone(bones);
-							break;
-						case BoneType.Arachnide:
-							bone = new ToundroisBone(bones);
-							break;
-						case BoneType.Dragonique:
-							bone = new TropicauxBone(bones);
-							break;
-						case BoneType.Demoniaque:
-							bone = new MontagnardBone(bones);
-							break;
-						case BoneType.Ancien:
-							bone = new AncienBone(bones);
-							break;
-						default:
-						case BoneType.Regular:
-							bone = new PlainoisBone(bones);
-							break;
-					}
-						corpse.AddCarvedItem(bone, from);				
+					default:
+					case Biome.Plaine: leather = new PlainoisLeather(hides); break;
+					case Biome.Foret: leather = new ForestierLeather(hides); break;
+					case Biome.Colline: leather = new CollinoisLeather(hides); break;
+					case Biome.Montagne: leather = new MontagnardLeather(hides); break;
+					case Biome.Toundra: leather = new ToundroisLeather(hides); break;
+					case Biome.Volcan: leather = new VolcaniqueLeather(hides); break;
+					case Biome.Tropique: leather = new TropicauxLeather(hides); break;
+					case Biome.Savane: leather = new SavanoisLeather(hides); break;
 				}
+
+				if (!from.AddToBackpack(leather))
+				{
+					corpse.AddCarvedItem(leather, from);
+					from.SendLocalizedMessage(500471); // You skin it, and the hides are now in the corpse.
+				}
+				else
+				{
+					from.SendLocalizedMessage(1073555); // You skin it and place the cut-up hides in your backpack.
+				}
+
+				//Bones
+				Item bone = null;
+				bones = Level * 10;
+				if (with is SkinningKnife || special || with is ButchersWarCleaver)
+					bones *= 2;
+
+				switch (Biome)
+				{
+					default:
+					case Biome.Plaine: bone = new PlainoisBone(bones); break;
+					case Biome.Foret: bone = new ForestierBone(bones); break;
+					case Biome.Colline: bone = new CollinoisBone(bones); break;
+					case Biome.Montagne: bone = new MontagnardBone(bones); break;
+					case Biome.Toundra: bone = new ToundroisBone(bones); break;
+					case Biome.Volcan: bone = new VolcaniqueBone(bones); break;
+					case Biome.Tropique: bone = new TropicauxBone(bones); break;
+					case Biome.Savane: bone = new SavanoisBone(bones); break;
+				}
+
+				if (!from.AddToBackpack(bone))
+					corpse.AddCarvedItem(bone, from);
 
                 if (dragonblood != 0)
                 {
@@ -2136,9 +2092,7 @@ namespace Server.Mobiles
                         from.SendLocalizedMessage(1094946); // Some blood is left on the corpse.
                     }
                     else
-                    {
                         from.SendLocalizedMessage(1114100); // You take some blood off the corpse and put it in your backpack.
-                    }
                 }
 
                 if (fur != 0)
@@ -2150,11 +2104,6 @@ namespace Server.Mobiles
                 }
 
                 corpse.Carved = true;
-
-                if (corpse.IsCriminalAction(from))
-                {
-                    from.CriminalAction(true);
-                }
 			}
 		}
 
@@ -2232,7 +2181,7 @@ namespace Server.Mobiles
 
         protected override void OnCreate()
         {
-            GenerateLoot(LootStage.Spawning);
+            //GenerateLoot(LootStage.Spawning);
         }
 		
         public override void Serialize(GenericWriter writer)
@@ -5203,18 +5152,18 @@ namespace Server.Mobiles
             return val;
         }
 
-        public void PackGold(int amount)
-        {
-            if (amount > 0)
-            {
-                PackItem(new Gold(amount));
-            }
-        }
+  //      public void PackGold(int amount)
+  //      {
+		//	if (amount > 0)
+		//	{
+		//		PackItem(new Gold(amount));
+		//	}
+		//}
 
-        public void PackGold(int min, int max)
-        {
-            PackGold(Utility.RandomMinMax(min, max));
-        }
+  //      public void PackGold(int min, int max)
+  //      {
+		//	PackGold(Utility.RandomMinMax(min, max));
+		//}
 
         public void PackStatue(int min, int max)
         {

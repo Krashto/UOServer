@@ -48,7 +48,7 @@ namespace Server.Mobiles
 			ControlSlots = 1;
 			MinTameSkill = 17.1;
 
-			PackGold( 25, 50 );
+			//PackGold( 25, 50 );
 			PackItem( new BlackPearl( 4 ) );
 		}
 

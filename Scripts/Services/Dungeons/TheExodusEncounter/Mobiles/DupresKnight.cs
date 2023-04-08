@@ -102,7 +102,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.LootGold(400, 600));
+            //AddLoot(LootPack.LootGold(400, 600));
         }
 
         public DupresKnight(Serial serial)

@@ -74,7 +74,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.LootItem<Arrow>(20, true));
-            AddLoot(LootPack.LootGold(10, 75));
+            //AddLoot(LootPack.LootGold(10, 75));
         }
 
         public HireRanger(Serial serial)
