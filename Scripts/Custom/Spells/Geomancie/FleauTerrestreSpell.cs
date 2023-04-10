@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Polymorphie;
@@ -64,6 +65,18 @@ namespace Server.Spells
 
 						if (!InsensibleSpell.IsActive(m))
 						{
+							double damage = GetNewAosDamage(m, 5, 1, 2, false);
+
+							if (CheckResisted(m))
+							{
+								damage *= 0.75;
+
+								m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+							}
+							SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
+
+							MortalStrike.BeginWound(m, TimeSpan.FromSeconds(6.0));
+
 							Poison p = Poison.Deadly;
 							m.ApplyPoison(Caster, p);
 							m.PlaySound(0x474);

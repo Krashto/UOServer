@@ -33,6 +33,8 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		{
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
+			else if (Caster.GetDistanceToSqrt(m) > 2)
+				Caster.SendMessage("Vous devez être plus proche de votre cible pour lancer cette attaque.");
 			else if (CheckHSequence(m))
 			{
 				SpellHelper.Turn(Caster, m);

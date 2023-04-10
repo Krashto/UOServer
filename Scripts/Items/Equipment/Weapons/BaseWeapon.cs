@@ -1883,6 +1883,9 @@ namespace Server.Items
 			if (FormeGivranteSpell.IsActive(attacker))
 				percentageBonus += 30;
 
+			if (AngeGardienSpell.IsActive(attacker))
+				percentageBonus += 100;
+
 			if (a != null)
                 percentageBonus += (int)(a.DamageScalar * 100) - 100;
 

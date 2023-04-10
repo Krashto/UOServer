@@ -1,4 +1,5 @@
-﻿using Server.Mobiles;
+﻿using Server.Custom.Classes;
+using Server.Mobiles;
 using Server.Network;
 using System;
 
@@ -38,10 +39,9 @@ namespace Server.CustomScripts.Systems.Experience
                         {
                             pm.Experience.Tick(pm);
                             CheckEvolve(pm);
-                        }
-
-                        //pm.OnlineHours += Interval_Minutes / 60.0;
-                    }
+							Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+						}
+					}
                 }
             }
         }

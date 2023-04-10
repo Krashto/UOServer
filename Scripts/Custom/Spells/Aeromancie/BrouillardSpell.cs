@@ -36,13 +36,13 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Effects.SendLocationParticles(EffectItem.Create(new Point3D(Caster.X, Caster.Y, Caster.Z + 16), Caster.Map, EffectItem.DefaultDuration), 0x376A, 10, 15, 5045);
 				Caster.PlaySound(0x3C4);
 
+				Deactivate(Caster);
+
 				Caster.Hidden = true;
 				Caster.AllowedStealthSteps = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 2, Aptitude.Aeromancie);
 				Caster.SendLocalizedMessage(502730); // You begin to move quietly.
 
 				ExplodeFX.Smoke.CreateInstance(Caster, Caster.Map, 1).Send();
-
-				Deactivate(Caster);
 
 				var duration = GetDurationForSpell(30, 2);
 
@@ -73,6 +73,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				t.Stop();
 				m_Timers.Remove(m);
 				m.RevealingAction();
+				m.SendMessage("Le brouillard prend fin.");
 			}
 		}
 

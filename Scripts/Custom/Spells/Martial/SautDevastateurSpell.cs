@@ -76,7 +76,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				TimeSpan duration = TimeSpan.FromSeconds((15 + (Caster.Skills.Magery.Fixed / 5)) / 4);
 
 				if (SpellHelper.CheckField(pnt, Caster.Map))
-					new FireFieldItem(itemID, pnt, Caster, Caster.Map, duration);
+					new FireFieldItem(itemID, pnt, Caster, Caster.Map, duration, 3);
 
 				for (int i = 1; i <= 2; ++i)
 				{
@@ -86,13 +86,13 @@ namespace Server.Custom.Spells.NewSpells.Martial
 						SpellHelper.AdjustField(ref point, Caster.Map, 16, false);
 
 						if (SpellHelper.CheckField(point, Caster.Map))
-							new FireFieldItem(itemID, point, Caster, Caster.Map, duration);
+							new FireFieldItem(itemID, point, Caster, Caster.Map, duration, 3);
 
 						point = new Point3D(eastToWest ? pnt.X + -index : pnt.X, eastToWest ? pnt.Y : pnt.Y + -index, pnt.Z);
 						SpellHelper.AdjustField(ref point, Caster.Map, 16, false);
 
 						if (SpellHelper.CheckField(point, Caster.Map))
-							new FireFieldItem(itemID, point, Caster, Caster.Map, duration);
+							new FireFieldItem(itemID, point, Caster, Caster.Map, duration, 3);
 					}, i);
 				}
 			}

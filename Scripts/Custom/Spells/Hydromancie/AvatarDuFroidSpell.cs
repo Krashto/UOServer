@@ -37,6 +37,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				var duration = GetDurationForSpell(15);
 
 				Caster.CantWalk = true;
+				Caster.Emote("Ferme les yeux, se fige sur place, et se concentre sur sa magie.");
 
 				BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.Paralyze, 1095150, 1095151, duration, Caster));
 
@@ -64,8 +65,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m.CantWalk = true;
+				m.CantWalk = false;
 				BuffInfo.RemoveBuff(m, BuffIcon.Paralyze);
+				m.Emote("Ouvre ses yeux et prend sa concentration magique.");
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);

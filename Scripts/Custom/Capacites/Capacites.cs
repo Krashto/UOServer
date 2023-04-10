@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Server.Custom.Capacites;
 using Server.Custom.Classes;
 using Server.Mobiles;
@@ -9,6 +10,9 @@ namespace Server
     {
 		private CustomPlayerMobile m_Owner;
 		private int[] m_Values = new int[Enum.GetValues(typeof(Capacite)).Length];
+
+		public int Bank { get { return BankMax - m_Values.Sum(); } }
+		public int BankMax { get { return m_Owner.Experience.Niveau / 15; } }
 
 		#region Props
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -118,8 +122,6 @@ namespace Server
 					m_Values[index] = 0;
 				else if (m_Values[index] > 3)
 					m_Values[index] = 3;
-
-				m_Owner.OnCapacitesChange(capacite, oldvalue, value);
 			}
 		}
 
@@ -135,7 +137,7 @@ namespace Server
 
 		public bool CanIncreaseStat(Capacite attr)
 		{
-			if (m_Owner.PUDispo <= 0)
+			if (Bank <= 0)
 				return false;
 
 			return m_Values[(int)attr] < 3;
@@ -157,9 +159,6 @@ namespace Server
 		{
 			for (int i = 0; i < m_Values.Length; i++)
 				m_Values[i] = 0;
-
-			var info = Classes.GetInfos(m_Owner.Classe);
-			m_Owner.PUDispo = info.Level;
 		}
 	}
 }

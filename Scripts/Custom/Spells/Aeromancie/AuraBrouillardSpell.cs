@@ -51,7 +51,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				foreach (Mobile target in eable)
 				{
-					if (Caster.CanBeBeneficial(target, false))
+					if (Caster.CanBeBeneficial(target, false) && CustomPlayerMobile.IsInEquipe(Caster, target))
 						ToogleInvisibility(this, Caster, target);
 				}
 

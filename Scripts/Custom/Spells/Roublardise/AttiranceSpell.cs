@@ -40,7 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellHelper.Turn(Caster, m);
 				SpellHelper.Turn(m, Caster);
 
-				MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(m.Direction), (int)Caster.GetDistanceToSqrt(m));
+				MovingSpells.MoveMobileTo(m, m.Location, m.Direction, (int)Caster.GetDistanceToSqrt(m));
 
 				m.Attack(Caster);
 				Caster.Attack(m);

@@ -1,4 +1,5 @@
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 using System;
 using System.Collections;
@@ -48,7 +49,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 						foreach (Mobile m in eable)
 						{
-							if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
+							if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
 								targets.Add(m);
 						}
 

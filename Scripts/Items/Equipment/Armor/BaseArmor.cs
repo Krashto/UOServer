@@ -8,7 +8,6 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Mobiles;
 using Server.Custom.Capacites;
-using Newtonsoft.Json.Linq;
 
 namespace Server.Items
 {
@@ -264,70 +263,7 @@ namespace Server.Items
             {
                 int ar = BaseArmorRating;
 
-                switch (m_Resource)
-                {
-                    case CraftResource.DullCopper:
-                        ar += 2;
-                        break;
-                    case CraftResource.ShadowIron:
-                        ar += 4;
-                        break;
-                    case CraftResource.Copper:
-                        ar += 6;
-                        break;
-                    case CraftResource.Bronze:
-                        ar += 8;
-                        break;
-                    case CraftResource.Gold:
-                        ar += 10;
-                        break;
-                    case CraftResource.Agapite:
-                        ar += 12;
-                        break;
-                    case CraftResource.Verite:
-                        ar += 14;
-                        break;
-					case CraftResource.Mytheril:
-						ar += 14;
-						break;
-					case CraftResource.Valorite:
-                        ar += 16;
-                        break;
-					case CraftResource.ForestierLeather:
-						ar += 2;
-						break;
-					case CraftResource.DesertiqueLeather:
-						ar += 4;
-						break;
-					case CraftResource.CollinoisLeather:
-						ar += 6;
-						break;
-					case CraftResource.SavanoisLeather:
-						ar += 8;
-						break;
-					case CraftResource.ToundroisLeather:
-						ar += 10;
-						break;
-					case CraftResource.TropicauxLeather:
-						ar += 12;
-						break;
-					case CraftResource.MontagnardLeather:
-						ar += 14;
-						break;
-					case CraftResource.AncienLeather:
-						ar += 16;
-						break;
-				}
-
-				var capaciteBonus = 0;
-
-				if (Parent is CustomPlayerMobile)
-				{
-					var pm = Parent as CustomPlayerMobile;
-					capaciteBonus = (int)(ar * (pm.Capacites[Capacite.Armure] * 0.10));
-				}
-
-				ar += -8 + (8 * (int)m_Quality) + capaciteBonus;
+				ar += -8 + (8 * (int)m_Quality);
                 return ScaleArmorByDurability(ar);
             }
         }
@@ -1025,7 +961,7 @@ namespace Server.Items
         public virtual int BasePoisonResistance => 0;
         public virtual int BaseEnergyResistance => 0;
 
-        public override int PhysicalResistance => GetBasePhysicalResistance() /*BasePhysicalResistance*/ + m_PhysicalBonus;
+        public override int PhysicalResistance => GetBasePhysicalResistance() + m_PhysicalBonus + GetBonusByQuality();
         public override int FireResistance => BaseFireResistance + m_FireBonus + GetBonusByQuality();
         public override int ColdResistance => BaseColdResistance + m_ColdBonus + GetBonusByQuality();
         public override int PoisonResistance => BasePoisonResistance + m_PoisonBonus + GetBonusByQuality();
@@ -1033,7 +969,7 @@ namespace Server.Items
 
 		public int GetBasePhysicalResistance()
 		{
-			var resist = GetBonusByQuality();
+			var resist = 0;
 
 			switch (MaterialType)
 			{
@@ -1048,12 +984,11 @@ namespace Server.Items
 			if (Parent is CustomPlayerMobile)
 			{
 				var pm = Parent as CustomPlayerMobile;
-				resist += (int)(resist * (pm.Capacites[Capacite.Armure] * 0.10));
+				resist += pm.Capacites[Capacite.Armure];
 			}
 
 			return resist;
 		}
-
 		
 		public int GetBaseBonusStr()
 		{
@@ -1131,6 +1066,8 @@ namespace Server.Items
 				case ItemQuality.Low: return -1;
 				case ItemQuality.Normal: return 0;
 				case ItemQuality.Exceptional: return 1;
+				case ItemQuality.Epic: return 2;
+				case ItemQuality.Legendary: return 3;
 			}
 
 			return 0;
@@ -2613,9 +2550,25 @@ namespace Server.Items
                 list.Add(1072378); // <br>Only when full set is present:				
                 GetSetProperties(list);
             }
-        }
 
-        public override void AddItemPowerProperties(ObjectPropertyList list)
+			if ((prop = GetBaseBonusStr()) > 0)
+				list.Add($"Bonus de force: {prop.ToString()}");
+			else if ((prop = GetBaseBonusStr()) < 0)
+				list.Add($"Malus de force: {prop.ToString()}");
+
+			if ((prop = GetBaseBonusDex()) > 0)
+				list.Add($"Bonus de dextérité: {prop.ToString()}");
+			else if ((prop = GetBaseBonusDex()) < 0)
+				list.Add($"Malus de dextérité: {prop.ToString()}");
+
+			if ((prop = GetBaseBonusInt()) > 0)
+				list.Add($"Bonus d'intelligence: {prop.ToString()}");
+			else if ((prop = GetBaseBonusInt()) < 0)
+				list.Add($"Malus d'intelligence: {prop.ToString()}");
+
+		}
+
+		public override void AddItemPowerProperties(ObjectPropertyList list)
         {
             if (m_ItemPower != ItemPower.None)
             {

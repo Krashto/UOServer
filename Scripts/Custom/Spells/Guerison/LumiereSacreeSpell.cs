@@ -53,7 +53,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 2 + Caster.Skills[CastSkill].Value / 50, Aptitude.Guerison));
 
 					foreach (Mobile m in eable)
-						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
+						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
 							bTargets.Add(m);
 
 					eable.Free();

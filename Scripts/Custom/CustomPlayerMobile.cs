@@ -172,7 +172,8 @@ namespace Server.Mobiles
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Salaire { get { return m_Salaire; } set { m_Salaire = value; } }
 
-		public ExperienceSystem Experience { get; set; }
+		
+
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Container Corps { get { return m_Corps; } set { m_Corps = value; } }
 
@@ -1108,16 +1109,8 @@ namespace Server.Mobiles
 			return party != null && party.Contains(target);
 		}
 
-		#region Leveling System
-		private int m_PUDispo;
-		public int PUDispo
-		{
-			get { return m_PUDispo; }
-			set { m_PUDispo = value; }
-		}
-		#endregion
-
-		#region Aptitudes, Connaissances, Attributs
+		[CommandProperty(AccessLevel.GameMaster)]
+		public ExperienceSystem Experience { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Attributs Attributs { get; set; }
@@ -1146,11 +1139,6 @@ namespace Server.Mobiles
 				Delta(MobileDelta.Mana);
 		}
 
-		public virtual void OnCapacitesChange(Capacite capacite, int oldvalue, int newvalue)
-		{
-			Validate(ValidateType.Capacites);
-		}
-
 		public override void OnSkillChange(SkillName skill, double oldBase)
 		{
 			Validate(ValidateType.All);
@@ -1176,7 +1164,6 @@ namespace Server.Mobiles
 			Aptitudes,
 			Classes,
 			Connaissances,
-			Capacites,
 			Skills,
 			All
 		}
@@ -1255,32 +1242,6 @@ namespace Server.Mobiles
 				}
 
 				Classes.SetBaseAndCapSkills(this, Experience.Niveau);
-			}
-
-			if (type == ValidateType.Capacites || type == ValidateType.All)
-			{
-				//for (int i = 0; i < Items.Count; ++i)
-				//{
-				//	Item item = (Item)Items[i];
-
-				//	if (item is BaseWeapon)
-				//	{
-				//		BaseWeapon weapon = item as BaseWeapon;
-
-				//		if (!weapon.CheckCapacite(this))
-				//		{
-				//			AddToBackpack(weapon);
-				//			SendMessage("Vous n'aviez plus les capacités nécessaires pour porter cet arme.");
-				//		}
-				//	}
-				//	else if (item is BaseArmor)
-				//	{
-				//		BaseArmor armor = item as BaseArmor;
-
-				//		if (!armor.CheckCapacite(this))
-				//			AddToBackpack(armor);
-				//	}
-				//}
 			}
 
 			if (type == ValidateType.Skills || type == ValidateType.All)
@@ -1412,7 +1373,6 @@ namespace Server.Mobiles
 				return;
 			}
 		}
-		#endregion
 
 		public override void Deserialize(GenericReader reader)
         {

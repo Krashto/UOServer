@@ -99,6 +99,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					if (AvatarDuFroidSpell.IsActive(m_From))
 						toHeal *= 1.5;
 
+					toHeal += SpellHelper.AdjustValue(m_From, toHeal, Aptitude.Hydromancie);
+
 					m_Mobile.Heal((int)toHeal);
 
 					if (++m_Count == m_MaxCount)

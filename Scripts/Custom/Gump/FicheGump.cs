@@ -13,7 +13,7 @@ namespace Server.Gumps
         private CustomPlayerMobile m_From;
         private CustomPlayerMobile m_GM;
 
-        public FicheGump(CustomPlayerMobile from, CustomPlayerMobile gm) : base("Fiche de personnage", 560, 660, false)
+        public FicheGump(CustomPlayerMobile from, CustomPlayerMobile gm) : base("Fiche de personnage", 560, 680, false)
         {
             m_From = from;
             m_GM = gm;
@@ -31,7 +31,7 @@ namespace Server.Gumps
 			int line = 0;
 			int space = 20;
 
-			AddSection(x - 10, y + space * line++, 250, space * 8 - 1, "Informations");
+			AddSection(x - 10, y + space * line++, 250, space * 9 - 1, "Informations");
 			line++;
 			AddHtmlTexte(x +10, y + space * line, 100, "Nom");
 			AddHtmlTexte(x + 125, y + space * line++, 150, from.GetBaseName());
@@ -39,14 +39,17 @@ namespace Server.Gumps
 			AddHtmlTexte(x + 10, y + space * line, 100, "Race");
 			AddHtmlTexte(x + 125, y + space * line++, 150, from.Race.Name);
 
-			AddHtmlTexte(x + 10, y + space * line, 100, "Apparence:");
+			AddHtmlTexte(x + 10, y + space * line, 100, "Apparence");
 			AddHtmlTexte(x + 125, y + space * line++, 150, from.Apparence());
 
-			AddHtmlTexte(x + 10, y + space * line, 100, "Grandeur:");
+			AddHtmlTexte(x + 10, y + space * line, 100, "Grandeur");
 			AddHtmlTexte(x + 125, y + space * line++, 150, from.GrandeurString());
 
-			AddHtmlTexte(x + 10, y + space * line, 100, "Grosseur:");
+			AddHtmlTexte(x + 10, y + space * line, 100, "Grosseur");
 			AddHtmlTexte(x + 125, y + space * line++, 150, from.CorpulenceString());
+
+			AddHtmlTexte(x + 10, y + space * line, 100, "Finances");
+			AddHtmlTexte(x + 125, y + space * line++, 150, CustomUtility.GetGoldAmountInBank(m_From).ToString());
 
 			line++;
 
@@ -57,7 +60,7 @@ namespace Server.Gumps
 			AddHtmlTexte(x + 10, y + space * line, 150, "Actuelle");
 			AddHtmlTexte(x + 125, y + space * line, 100, m_From.Experience.Exp.ToString());
 			AddButton(x + 200, y + space * line++ + 2, 0x5607, 0x568B, 400, GumpButtonType.Reply, 0);
-			AddHtmlTexte(x + 10, y + space * line, 150, "Restante");
+			AddHtmlTexte(x + 10, y + space * line, 150, "À gagner");
 			AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Experience.ExpToGainBank.ToString());
 			AddHtmlTexte(x + 10, y + space * line, 150, "Heures jouées");
 			AddHtmlTexte(x + 125, y + space * line++, 100, Math.Round(m_From.Account.TotalGameTime.TotalHours, 2).ToString());
@@ -68,12 +71,13 @@ namespace Server.Gumps
 			for (int i = 0; i < Enum.GetValues(typeof(Capacite)).Length; i++)
 			{
 				var capacite = (Capacite)i;
-				if (m_From.Capacites.CanIncreaseStat(capacite))
+				if (m_From.Capacites.CanDecreaseStat(capacite))
 					AddButton(x + 120, y + space * line + 2, 5603, 5607, 500 + i, GumpButtonType.Reply, 0);
 				AddHtmlTexte(x + 10, y + space * line, 150, capacite.ToString());
-				AddHtmlTexte(x + 125, y + space * line++, 100, m_From.Capacites[capacite].ToString());
-				if (m_From.Capacites.CanDecreaseStat(capacite))
-					AddButton(x + 180, y + space * line + 2, 5603, 5607, 550 + i, GumpButtonType.Reply, 0);
+				AddLabel(x + 150, y + space * line, 150, m_From.Capacites[capacite].ToString());
+				if (m_From.Capacites.CanIncreaseStat(capacite))
+					AddButton(x + 180, y + space * line + 2, 5601, 5605, 550 + i, GumpButtonType.Reply, 0);
+				line++;
 			}
 
 			line++;
@@ -165,13 +169,13 @@ namespace Server.Gumps
 
 			AddLabel(x + 150, y + space * line++, 150, m_From.Attributs.Sagesse.ToString());
 
-			AddHtmlTexte(x + 10, y + space * line, 150, "À placer");
+			AddHtmlTexte(x + 10, y + space * line, 150, "Points restants");
 			AddLabel(x + 150, y + space * line, 150, (525 - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.Attributs.Constitution - m_From.Attributs.Sagesse - m_From.Attributs.Endurance).ToString());
 
 			line = 0;
-			AddSection(x + 241, y + space * line++, 359, space * 23 - 1, "Talents");
+			AddSection(x + 241, y + space * line++, 359, space * 23 - 1, "Aptitudes");
 			line++;
-			AddHtmlTexte(x + 261, y + space * line++, 300, "Disponible: " + Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau) + " / Max: " + Aptitudes.GetMaxPA(m_From.Experience.Niveau));
+			AddHtmlTexte(x + 261, y + space * line++, 300, $"Disponible            {Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau)} / {Aptitudes.GetMaxPA(m_From.Experience.Niveau)} (Max)");
 
 			foreach (Aptitude apt in Enum.GetValues(typeof(Aptitude)))
 			{
@@ -190,7 +194,7 @@ namespace Server.Gumps
 
 			line++;
 			line++;
-			AddSection(x + 241, y + space * line++, 359, space * 12 - 1, "Classes");
+			AddSection(x + 241, y + space * line++, 359, space * 13 - 1, "Classes");
 			line++;
 			AddHtmlTexte(x + 261, y + space * line, 150, "Classe");
 			AddHtmlTexte(x + 500, y + space * line++, 100, m_From.Classe.ToString());

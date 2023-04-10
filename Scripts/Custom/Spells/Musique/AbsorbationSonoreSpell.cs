@@ -2,6 +2,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 using System;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -40,7 +41,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					targets.Add(Caster);
 
 					foreach (Mobile m in eable)
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && !CustomPlayerMobile.IsInEquipe(Caster, m))
 							targets.Add(m);
 
 					eable.Free();

@@ -59,16 +59,6 @@ namespace Server
 				writer.Write((int)Values[i]);
 		}
 
-		public static int GetAttributMaxPoints(CustomPlayerMobile pm)
-		{
-			return pm.Experience.Niveau / 15;
-		}
-
-		public static int GetAttributPoints(CustomPlayerMobile pm)
-		{
-			return GetAttributMaxPoints(pm) - pm.Attributs.Values.Sum();
-		}
-
 		public int GetValue(Attribut attribut)
 		{
 			int index = GetIndex(attribut);
@@ -131,8 +121,6 @@ namespace Server
 		{
 			for (int i = 0; i < Values.Length; i++)
 				Values[i] = 0;
-
-			m_Owner.PUDispo = m_Owner.Experience.Niveau * 3;
 		}
 
 		public int this[Attribut attribut]

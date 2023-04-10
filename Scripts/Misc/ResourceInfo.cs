@@ -325,49 +325,6 @@ namespace Server.Items
             shadowIron.RunicMinIntensity = 45;
             shadowIron.RunicMaxIntensity = 100;
 
-            //CraftAttributeInfo copper = Copper = new CraftAttributeInfo();
-
-            //copper.ArmorPhysicalResist = 0;
-            //copper.ArmorFireResist = 2;
-            //copper.ArmorPoisonResist = 7;
-            //copper.ArmorEnergyResist = 2;
-            //copper.WeaponPoisonDamage = 10;
-            //copper.WeaponEnergyDamage = 20;
-            //copper.RunicMinAttributes = 2;
-            //copper.RunicMaxAttributes = 3;
-
-            //copper.RunicMinIntensity = 50;
-            //copper.RunicMaxIntensity = 100;
-
-            //CraftAttributeInfo bronze = Bronze = new CraftAttributeInfo();
-
-            //bronze.ArmorPhysicalResist = 0;
-            //bronze.ArmorColdResist = 7;
-            //bronze.ArmorPoisonResist = 2;
-            //bronze.ArmorEnergyResist = 2;
-            //bronze.WeaponFireDamage = 40;
-            //bronze.RunicMinAttributes = 3;
-            //bronze.RunicMaxAttributes = 3;
-
-            //bronze.RunicMinIntensity = 55;
-            //bronze.RunicMaxIntensity = 100;
-
-            //CraftAttributeInfo golden = Golden = new CraftAttributeInfo();
-
-            //golden.ArmorPhysicalResist = 0;
-            //golden.ArmorFireResist = 2;
-            //golden.ArmorColdResist = 2;
-            //golden.ArmorEnergyResist = 3;
-            //golden.ArmorLuck = 40;
-            //golden.ArmorLowerRequirements = 30;
-            //golden.WeaponLuck = 40;
-            //golden.WeaponLowerRequirements = 50;
-            //golden.RunicMinAttributes = 3;
-            //golden.RunicMaxAttributes = 4;
-
-            //golden.RunicMinIntensity = 60;
-            //golden.RunicMaxIntensity = 100;
-
             CraftAttributeInfo agapite = Agapite = new CraftAttributeInfo();
 
             agapite.ArmorPhysicalResist = 1;
@@ -414,23 +371,6 @@ namespace Server.Items
 
             valorite.RunicMinIntensity = 85;
             valorite.RunicMaxIntensity = 100;
-
-			//CraftAttributeInfo mytheril = Mytheril = new CraftAttributeInfo();
-
-			//mytheril.ArmorPhysicalResist = 1;
-			//mytheril.ArmorFireResist = 5;
-			//mytheril.ArmorColdResist = 2;
-			//mytheril.ArmorPoisonResist = 2;
-			//mytheril.ArmorEnergyResist = 3;
-			//mytheril.WeaponFireDamage = 20;
-			//mytheril.WeaponPoisonDamage = 20;
-			//mytheril.WeaponEnergyDamage = 20;
-			//mytheril.RunicMinAttributes = 4;
-			//mytheril.RunicMaxAttributes = 5;
-
-			//mytheril.RunicMinIntensity = 70;
-			//mytheril.RunicMaxIntensity = 100;
-
 
 			CraftAttributeInfo bronze = Bronze = new CraftAttributeInfo();
 
@@ -490,7 +430,7 @@ namespace Server.Items
 
 			durian.ArmorPhysicalResist = 3;
 			durian.ArmorFireResist = 3;
-			durian.ArmorPoisonResist = 3;
+			durian.ArmorEnergyResist = 3;
 
 			CraftAttributeInfo equilibrum = Equilibrum = new CraftAttributeInfo();
 
@@ -590,9 +530,11 @@ namespace Server.Items
 
 			CraftAttributeInfo nostalgium = Nostalgium = new CraftAttributeInfo();
 
-			nostalgium.ArmorPhysicalResist = 5;
-			nostalgium.ArmorPoisonResist = 5;
-			nostalgium.ArmorEnergyResist = 5;
+			nostalgium.ArmorPhysicalResist = 6;
+			nostalgium.ArmorFireResist = 6;
+			nostalgium.ArmorColdResist = 6;
+			nostalgium.ArmorPoisonResist = 6;
+			nostalgium.ArmorEnergyResist = 6;
 
 			// Cuir
 

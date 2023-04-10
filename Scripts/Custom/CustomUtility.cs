@@ -5,11 +5,22 @@ namespace Server.Custom
 {
 	public class CustomUtility
 	{
-		public static bool ConsumeGoldInBank(Mobile m, int amount)
+		public static int GetGoldAmountInBank(Mobile m)
+		{
+			var goldPiles = GetGoldPilesInBank(m);
+			return goldPiles.Sum(f => f.Amount);
+		}
+
+		public static Item[] GetGoldPilesInBank(Mobile m)
 		{
 			var bankBox = m.BankBox;
-			var goldPiles = bankBox.FindItemsByType(typeof(Gold));
-			var goldSum = goldPiles.Sum(f => f.Amount);
+			return bankBox.FindItemsByType(typeof(Gold));
+		}
+
+		public static bool ConsumeGoldInBank(Mobile m, int amount)
+		{
+			var goldPiles = GetGoldPilesInBank(m);
+			var goldSum = GetGoldAmountInBank(m);
 
 			if (goldPiles == null || goldSum < amount)
 			{

@@ -141,7 +141,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			private InspirationElementaireSpell m_Owner;
 
 			public InternalTarget(InspirationElementaireSpell owner)
-				: base(12, false, TargetFlags.Harmful)
+				: base(12, false, TargetFlags.Beneficial)
 			{
 				m_Owner = owner;
 			}

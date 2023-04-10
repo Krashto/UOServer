@@ -30,14 +30,17 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 		public override void OnCast()
 		{
-			Caster.Target = new DiversionTarget();
+			Caster.Target = new DiversionTarget(this);
 		}
 
 		private class DiversionTarget : Target
 		{
-			public DiversionTarget()
+			private DiversionSpell m_Owner;
+
+			public DiversionTarget(DiversionSpell owner)
 				: base(12, false, TargetFlags.None)
 			{
+				m_Owner = owner;
 			}
 
 			protected override void OnTarget(Mobile from, object targ)
@@ -121,6 +124,11 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						}
 					}
 				}
+			}
+
+			protected override void OnTargetFinish(Mobile from)
+			{
+				m_Owner.FinishSequence();
 			}
 		}
 	}

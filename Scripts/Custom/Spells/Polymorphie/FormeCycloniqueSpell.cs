@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 				Caster.BodyMod = 13;
 
-				var mod = new DefaultSkillMod(SkillName.Stealth, true, 20.0)
+				var mod = new DefaultSkillMod(SkillName.Hiding, true, 20.0)
 				{
 					ObeyCap = false
 				};

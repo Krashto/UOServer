@@ -77,7 +77,12 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							Disturb(m);
 
 							if (!CheckResisted(m))
+							{
+								double damage = GetNewAosDamage(m, 5, 1, 2, false);
+								SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
+
 								BleedAttack.BeginBleed(m, Caster, true);
+							}
 							else
 								m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 
