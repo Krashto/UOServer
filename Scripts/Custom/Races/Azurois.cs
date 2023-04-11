@@ -4,7 +4,7 @@ namespace Server.Custom.Races
 {
 	class Azurois : BaseRace
 	{
-		public override string Background => "Les Azurois";
+		public override string Background => "L'ancienne légion Azurienne qui aura combattu l’invasion Elvuruks dans les terres du Nord, Le peu de survivants de cette bataille ne voulant pas perdre la face de leur défaite décida de concevoir un campement qui se nomme Terre-Froide. Ainsi la première nation Az Norois vie le jour. Dernier survivant de la bataille du Mont Idir, ils sont connus pour leur grande résistance au climat, leur peau pâle et leurs cheveux blonds\r\n\r\nLes Azorois sont fiers de leur héritage guerrier, valorisant la force et l'endurance de leurs guerriers. Ils ont une forte tradition militaire et sont souvent impliqués dans des conflits armés, que ce soit pour défendre leur territoire ou pour en conquérir de nouveaux.\r\n\r\nLe goût vestimentaire des Azorois se résume à tout ce qui a trait à la fourrure et au cuir, sensiblement représenter par des habits de couleur bleu et blanc en relation avec leur nouvelle terre celle de Terre-Froide. Autrement dit l’allure la plus glacial possible pour intimider leurs adversaires.  D’attitude bon vivant, les Azorois sont avant tout reconnu comme être des gens fiers de leur racine. Fidèle à leur nature festive dans l’adversité sans pour autant être dangereuse. Les Azorois aiment se surpasser et épater la galerie dans leur prouesse physique comme politique. Tendance à ne pas mâcher leur mot, les Azorois se prononce sans gêne sur tous les sujets\r\n\r\nLa culture Azoroise est profondément imprégnée de leur environnement naturel, avec des traditions qui célèbrent les saisons et les changements climatiques, ainsi que des rituels qui honorent les esprits des montagnes et des rivières. Ils ont également une forte tradition orale, avec des contes et des légendes épiques qui racontent des histoires de héros et de batailles.\r\n\r\nMalgré ce que peut représenter les Azorois, ils sont fidèles à leur partenaire et vouent cœur et âme à la protection de leur nid familial. La liaison amoureuse des Azorois se consiste à pouvoir impressionner sur le champ de bataille car au final, ils finiront tous dans le grand havre à pouvoir boire et se battre éternellement.\r\n";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -20,7 +20,7 @@ namespace Server.Custom.Races
 			RegisterRace(new Azurois(9, 9));
 		}
 
-		public Azurois(int raceID, int raceIndex) : base(raceID, raceIndex, "Azurois", "Azurois", 400, 401, 402, 403)
+		public Azurois(int raceID, int raceIndex) : base(raceID, raceIndex, "Azorois", "Azorois", 400, 401, 402, 403)
 		{
 		}
 
@@ -63,26 +63,26 @@ namespace Server.Custom.Races
 				default:
 					break;
 			}
-			return new CorpsNord(itemId, hue);
+			return new CorpsAzorois(itemId, hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
 		{
-			var gumpid = 52090;
+			var gumpid = 52084;
 
 			switch (hue)
 			{
 				case 1823:
-					gumpid = 52090;
+					gumpid = 52084;
 					break;
 				case 1820:
-					gumpid = 52090;
+					gumpid = 52084;
 					break;
 				case 1824:
-					gumpid = 52086;
+					gumpid = 52084;
 					break;
 				case 1821:
-					gumpid = 52086;
+					gumpid = 52084;
 					break;
 				case 1819:
 					gumpid = 52084;
@@ -91,10 +91,10 @@ namespace Server.Custom.Races
 					gumpid = 52084;
 					break;
 				case 1822:
-					gumpid = 52085; //
+					gumpid = 52084; //
 					break;
 				case 1826:
-					gumpid = 52085;
+					gumpid = 52084;
 					break;
 				default:
 					break;
@@ -110,20 +110,20 @@ namespace Server.Custom.Races
 
 namespace Server.Items
 {
-	public class CorpsNord : BaseRaceGumps
+	public class CorpsAzorois : BaseRaceGumps
 	{
 		[Constructable]
-		public CorpsNord() : this(0)
+		public CorpsAzorois() : this(0)
 		{
 		}
 
 		[Constructable]
-		public CorpsNord(int id, int hue) : base(id, hue)
+		public CorpsAzorois(int id, int hue) : base(id, hue)
 		{
-			Name = "Nord";
+			Name = "Azorois";
 		}
 
-		public CorpsNord(Serial serial)
+		public CorpsAzorois(Serial serial)
 			: base(serial)
 		{
 		}
