@@ -11,6 +11,7 @@ using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.Custom.Capacites;
 using Server.Custom.Classes;
 using System.Linq;
+using Server.Custom.Spells.NewSpells.Guerison;
 
 namespace Server.Spells
 {
@@ -758,6 +759,9 @@ namespace Server.Spells
 			TimeSpan baseDelay = CastDelayBase;
 			TimeSpan fcDelay = TimeSpan.FromSeconds(-(CastDelayFastScalar * CastDelaySecondsPerTick));
 			TimeSpan delay = baseDelay + fcDelay;
+
+			if (InquisitionSpell.IsActive(Caster))
+				delay -= TimeSpan.FromSeconds(1);
 
 			if (delay < CastDelayMinimum)
 				delay = CastDelayMinimum;

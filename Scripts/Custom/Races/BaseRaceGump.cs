@@ -44,7 +44,7 @@ namespace Server.Items
                 list.Add(LabelNumber);
         }
 
-        public virtual void AddProperties(Mobile mob/*, bool ondeserialize*/)
+        public virtual void AddProperties(Mobile mob)
         {
             if (BodyMod != -1)
                 mob.BodyMod = BodyMod;
@@ -81,7 +81,7 @@ namespace Server.Items
             int version = reader.ReadInt();
 
             if (Parent is Mobile)
-                AddProperties((Mobile)Parent/*, true*/);
+                AddProperties((Mobile)Parent);
         }
     }
 }

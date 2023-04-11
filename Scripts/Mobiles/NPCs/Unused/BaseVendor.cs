@@ -77,11 +77,6 @@ namespace Server.Mobiles
 			}
 
 		}
-		
-
-		public virtual StatutSocialEnum MinBuyClasse => StatutSocialEnum.Possession;
-
-
 
 		public virtual NpcGuild NpcGuild => NpcGuild.None;
 

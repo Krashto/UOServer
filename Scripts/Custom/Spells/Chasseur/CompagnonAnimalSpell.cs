@@ -64,16 +64,16 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			new CompagnonAnimalEntry(typeof(Pig), "Pig", 30.0, 30.0),
 			new CompagnonAnimalEntry(typeof(Gorilla), "Gorilla", 30.0, 30.0),
 			new CompagnonAnimalEntry(typeof(Eagle), "Eagle", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(GreyWolf), "GreyWolf", 30.0, 30.0),
+			new CompagnonAnimalEntry(typeof(GreyWolf), "Grey Wolf", 30.0, 30.0),
 			new CompagnonAnimalEntry(typeof(SnowLeopard), "Snow Leopard", 30.0, 30.0),
 			new CompagnonAnimalEntry(typeof(Alligator), "Alligator", 30.0, 30.0),
 			new CompagnonAnimalEntry(typeof(Horse), "Horse", 30.0, 30.0),
 			new CompagnonAnimalEntry(typeof(Llama), "Llama", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(GiantSerpent), "Giant Serpent", 30.0, 30.0),
-            new CompagnonAnimalEntry(typeof(Scorpion), "Scorpion", 60.0, 60.0),
-            new CompagnonAnimalEntry(typeof(Walrus), "Walrus", 80.0, 80.0),
-			new CompagnonAnimalEntry(typeof(PolarBear), "Polar Bear", 100.0, 100.0),
-			new CompagnonAnimalEntry(typeof(GrizzlyBear), "Grizzly Bear", 100.0, 100.0),
+			new CompagnonAnimalEntry(typeof(GiantSerpent), "Giant Serpent", 40.0, 40.0),
+            new CompagnonAnimalEntry(typeof(Scorpion), "Scorpion", 40.0, 40.0),
+            new CompagnonAnimalEntry(typeof(Walrus), "Walrus", 60.0, 60.0),
+			new CompagnonAnimalEntry(typeof(PolarBear), "Polar Bear", 60.0, 60.0),
+			new CompagnonAnimalEntry(typeof(GrizzlyBear), "Grizzly Bear", 60.0, 60.0),
         };
 
 		public static CompagnonAnimalEntry[] Entries => m_Entries;
@@ -82,39 +82,32 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 	public class CompagnonAnimalEntry
 	{
 		private readonly Type m_Type;
-		private readonly object m_Name;
+		private readonly string m_Name;
 		private readonly double m_ReqNecromancy;
 		private readonly double m_ReqEvalInt;
 
 		public Type Type => m_Type;
-		public object Name => m_Name;
-		public double ReqNecromancy => m_ReqNecromancy;
+		public string Name => m_Name;
+		public double ReqTracking => m_ReqNecromancy;
 		public double ReqEvalInt => m_ReqEvalInt;
 
-		public CompagnonAnimalEntry(Type type, object name, double reqNecromancy, double reqEvalInt)
+		public CompagnonAnimalEntry(Type type, string name, double reqTracking, double reqEvalInt)
 		{
 			m_Type = type;
 			m_Name = name;
-			m_ReqNecromancy = reqNecromancy;
+			m_ReqNecromancy = reqTracking;
 			m_ReqEvalInt = reqEvalInt;
 		}
 	}
 
-	public class CompagnonAnimalGump : Gump
+	public class CompagnonAnimalGump : BaseProjectMGump
 	{
 		private readonly Mobile m_From;
 		private readonly CompagnonAnimalEntry[] m_Entries;
 
 		private readonly CompagnonAnimalSpell m_Spell;
 
-		private const int EnabledColor16 = 0x0F20;
-		private const int DisabledColor16 = 0x262A;
-
-		private const int EnabledColor32 = 0x18CD00;
-		private const int DisabledColor32 = 0x4A8B52;
-
-		public CompagnonAnimalGump(Mobile from, CompagnonAnimalEntry[] entries, CompagnonAnimalSpell spell)
-			: base(200, 100)
+		public CompagnonAnimalGump(Mobile from, CompagnonAnimalEntry[] entries, CompagnonAnimalSpell spell) : base("Compagnon animal", 200, 300, false)
 		{
 			m_From = from;
 			m_Entries = entries;
@@ -122,35 +115,19 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 			AddPage(0);
 
-			AddBackground(10, 10, 250, 178, 9270);
-			AddAlphaRegion(20, 20, 230, 158);
-
-			AddImage(220, 20, 10464);
-			AddImage(220, 72, 10464);
-			AddImage(220, 124, 10464);
-
-			AddItem(188, 16, 6883);
-			AddItem(198, 168, 6881);
-			AddItem(8, 15, 6882);
-			AddItem(2, 168, 6880);
-
-			AddHtmlLocalized(30, 26, 200, 20, 1060147, EnabledColor16, false, false); // Chose thy familiar...
-
 			double castSkill = from.Skills[m_Spell.CastSkill].Value;
 			double damageSkill = from.Skills[m_Spell.DamageSkill].Value;
 
 			for (int i = 0; i < entries.Length; ++i)
 			{
-				object name = entries[i].Name;
+				string name = entries[i].Name;
 
-				bool enabled = (castSkill >= entries[i].ReqNecromancy && damageSkill >= entries[i].ReqEvalInt);
+				bool enabled = (castSkill >= entries[i].ReqTracking && damageSkill >= entries[i].ReqEvalInt);
 
-				AddButton(27, 53 + (i * 21), 9702, 9703, i + 1, GumpButtonType.Reply, 0);
+				if (enabled)
+					AddButton(75, 85 + (i * 20), 9702, 9703, i + 1, GumpButtonType.Reply, 0);
 
-				if (name is int)
-					AddHtmlLocalized(50, 51 + (i * 21), 150, 20, (int)name, enabled ? EnabledColor16 : DisabledColor16, false, false);
-				else if (name is string)
-					AddHtml(50, 51 + (i * 21), 150, 20, string.Format("<BASEFONT COLOR=#{0:X6}>{1}</BASEFONT>", enabled ? EnabledColor32 : DisabledColor32, name), false, false);
+				AddHtmlTexte(100, 83 + (i * 20), 150, 20, name);
 			}
 		}
 
@@ -169,19 +146,18 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				if (check != null && !check.Deleted)
 				{
-					m_From.SendLocalizedMessage(1061605); // You already have a familiar.
+					m_From.SendMessage("Vous avez déjà un compagnon."); // You already have a familiar.
 				}
-				else if (necro < entry.ReqNecromancy || evalInt < entry.ReqEvalInt)
+				else if (necro < entry.ReqTracking || evalInt < entry.ReqEvalInt)
 				{
-					// That familiar requires ~1_NECROMANCY~ Necromancy and ~2_SPIRIT~ Spirit Speak.
-					m_From.SendLocalizedMessage(1061606, string.Format("{0:F1}\t{1:F1}", entry.ReqNecromancy, entry.ReqEvalInt));
+					m_From.SendMessage($"Ce compagnon animal requiert {entry.ReqTracking}% de Tracking et {entry.ReqEvalInt}% d'Evaluating Intelligence");
 
 					m_From.CloseGump(typeof(CompagnonAnimalGump));
 					m_From.SendGump(new CompagnonAnimalGump(m_From, CompagnonAnimalSpell.Entries, m_Spell));
 				}
 				else if (entry.Type == null)
 				{
-					m_From.SendMessage("That familiar has not yet been defined.");
+					m_From.SendMessage("Ce compagnon animal n'a pas été défini encore.");
 
 					m_From.CloseGump(typeof(CompagnonAnimalGump));
 					m_From.SendGump(new CompagnonAnimalGump(m_From, CompagnonAnimalSpell.Entries, m_Spell));
@@ -191,8 +167,6 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 					try
 					{
 						BaseCreature bc = (BaseCreature)Activator.CreateInstance(entry.Type);
-
-						bc.Skills.MagicResist = m_From.Skills.MagicResist;
 
 						if (BaseCreature.Summon(bc, m_From, m_From.Location, -1, TimeSpan.FromDays(1.0)))
 						{
@@ -209,7 +183,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			}
 			else
 			{
-				m_From.SendLocalizedMessage(1061825); // You decide not to summon a familiar.
+				m_From.SendMessage("Vous décidez de ne pas appeler un compagnon animal");
 			}
 		}
 	}

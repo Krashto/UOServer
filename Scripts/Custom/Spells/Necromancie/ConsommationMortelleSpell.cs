@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class ConsommationMortelleSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura Exsangue", "[Aura Exsangue]",
+				"Consommation mortelle", "[Consommation mortelle]",
 				SpellCircle.Eighth,
 				212,
 				9041,
@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Reagent.SulfurousAsh
 			);
 
-		public override int RequiredAptitudeValue { get { return 5; } }
+		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -38,13 +38,11 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		{
 			if (!Caster.CanSee(bc))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckHSequence(bc))
+			else if (CheckBSequence(bc))
 			{
-				if (bc.ControlMaster == Caster)
+				if (bc.ControlMaster == Caster && bc.Summoned)
 				{
-					Caster.Hits += Math.Min(25, bc.Hits);
-					Caster.Stam += Math.Min(25, bc.Stam);
-					Caster.Mana += Math.Min(25, bc.Mana);
+					Caster.Hits += Math.Min(50, bc.Hits);
 
 					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, 3);
 					ExplodeFX.BloodRain.CreateInstance(bc.Location, bc.Map, 3);
@@ -52,7 +50,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				}
 				else
 				{
-					Caster.SendMessage("Vous pouvez seulement absorber vos totems.");
+					Caster.SendMessage("Vous pouvez seulement absorber vos créatures invoquées.");
 				}
 			}
 

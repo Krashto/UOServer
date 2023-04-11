@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Reagent.Garlic
 			);
 
-		public override int RequiredAptitudeValue { get { return 7; } }
+		public override int RequiredAptitudeValue { get { return 4; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

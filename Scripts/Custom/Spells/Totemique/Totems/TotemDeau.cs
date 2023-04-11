@@ -64,7 +64,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (m != ControlMaster)
 					continue;
 
-				ControlMaster.Heal(10 + (SuperCharged ? 10 : 0));
+				ControlMaster.Heal(25 + (SuperCharged ? 25 : 0));
 				ControlMaster.FixedParticles(0x376A, 9, 32, 5005, EffectLayer.Waist);
 				ControlMaster.PlaySound(0x1F2);
 			}

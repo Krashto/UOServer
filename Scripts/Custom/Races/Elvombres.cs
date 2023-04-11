@@ -32,98 +32,33 @@ namespace Server.Custom.Races
 
 		public override BaseRaceGumps GetSkin(int hue)
 		{
-			var itemId = 41509;
-
-			switch (hue)
-			{
-				case 1823:
-					itemId = 41509;
-					break;
-				case 1820:
-					itemId = 41509;
-					break;
-				case 1824:
-					itemId = 41505;
-					break;
-				case 1821:
-					itemId = 41505;
-					break;
-				case 1819:
-					itemId = 41503;
-					break;
-				case 1825:
-					itemId = 41503;
-					break;
-				case 1822:
-					itemId = 41504; //
-					break;
-				case 1826:
-					itemId = 41504;
-					break;
-				default:
-					break;
-			}
-			return new CorpsDunmer(itemId, hue);
+			return new CorpsElvombres(0xA21C, hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
 		{
-			var gumpid = 52090;
-
-			switch (hue)
-			{
-				case 1823:
-					gumpid = 52090;
-					break;
-				case 1820:
-					gumpid = 52090;
-					break;
-				case 1824:
-					gumpid = 52086;
-					break;
-				case 1821:
-					gumpid = 52086;
-					break;
-				case 1819:
-					gumpid = 52084;
-					break;
-				case 1825:
-					gumpid = 52084;
-					break;
-				case 1822:
-					gumpid = 52085; //
-					break;
-				case 1826:
-					gumpid = 52085;
-					break;
-				default:
-					break;
-			}
-
-			if (female)
-				gumpid += 10000;
-
-			return gumpid;
+			var gumpid = 52081;
+			return female ? gumpid + 10000 : gumpid;
 		}
 	}
 }
 
 namespace Server.Items
 {
-	public class CorpsDunmer : BaseRaceGumps
+	public class CorpsElvombres : BaseRaceGumps
 	{
 		[Constructable]
-		public CorpsDunmer() : this(0)
+		public CorpsElvombres() : this(0)
 		{
 		}
 
 		[Constructable]
-		public CorpsDunmer(int id, int hue) : base(id, hue)
+		public CorpsElvombres(int id, int hue) : base(id, hue)
 		{
-			Name = "Dunmer";
+			Name = "Elvombres";
 		}
 
-		public CorpsDunmer(Serial serial)
+		public CorpsElvombres(Serial serial)
 			: base(serial)
 		{
 		}

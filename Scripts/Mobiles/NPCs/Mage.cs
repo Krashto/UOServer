@@ -22,8 +22,6 @@ namespace Server.Mobiles
         {
         }
 
-		public override StatutSocialEnum MinBuyClasse => StatutSocialEnum.Equite;
-
 		public override NpcGuild NpcGuild => NpcGuild.MagesGuild;
         public override VendorShoeType ShoeType => Utility.RandomBool() ? VendorShoeType.Shoes : VendorShoeType.Sandals;
         protected override List<SBInfo> SBInfos => m_SBInfos;

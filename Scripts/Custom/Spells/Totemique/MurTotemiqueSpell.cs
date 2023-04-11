@@ -1,4 +1,5 @@
 ﻿using Server.Custom.Aptitudes;
+using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Items;
 using Server.Misc;
 using Server.Mobiles;
@@ -72,9 +73,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 				Effects.PlaySound(p, Caster.Map, 0x20B);
 
-				TimeSpan duration;
+				TimeSpan duration = GetDurationForSpell(10);
 
-				duration = TimeSpan.FromSeconds((15 + (Caster.Skills.Magery.Fixed / 5)) / 7);
+				if (InquisitionSpell.IsActive(m_Caster))
+					duration += GetDurationForSpell(5);
 
 				Point3D pnt = new Point3D(p);
 				int itemID = eastToWest ? 0x3946 : 0x3956;

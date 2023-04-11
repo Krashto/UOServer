@@ -20,7 +20,6 @@ namespace Server.Mobiles
         {
         }
 
-		public override StatutSocialEnum MinBuyClasse => StatutSocialEnum.Peregrin;
 		public override NpcGuild NpcGuild => NpcGuild.BlacksmithsGuild;
         public override bool IsActiveVendor => true;
         public override bool ClickTitle => true;

@@ -21,7 +21,6 @@ namespace Server.Mobiles
         {
         }
 
-		public override StatutSocialEnum MinBuyClasse => StatutSocialEnum.Peregrin;
 		public override VendorShoeType ShoeType => VendorShoeType.Boots;
         protected override List<SBInfo> SBInfos => m_SBInfos;
         public override void InitSBInfo()

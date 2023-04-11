@@ -23,9 +23,6 @@ namespace Server.Mobiles
             : base(serial)
         { }
 
-
-		public static StatutSocialEnum MinBankClasse => StatutSocialEnum.Possession;
-
 		public override NpcGuild NpcGuild => NpcGuild.MerchantsGuild;
 
         protected override List<SBInfo> SBInfos => m_SBInfos;

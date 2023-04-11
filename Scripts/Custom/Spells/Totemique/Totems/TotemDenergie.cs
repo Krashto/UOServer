@@ -56,16 +56,6 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (NextThinkingTime >= DateTime.Now)
 				return;
 
-			var mobiles = GetMobilesInRange(5);
-
-			foreach (var m in mobiles)
-			{
-				if (m != ControlMaster)
-					continue;
-
-				ControlMaster.Heal(10 + (SuperCharged ? 10 : 0));
-			}
-
 			base.OnThink();
 		}
 

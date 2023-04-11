@@ -2033,9 +2033,7 @@ namespace Server.Mobiles
 
 				//Hides
                 Item leather = null;
-				hides = Level * 10;
-				if (with is SkinningKnife || special || with is ButchersWarCleaver)
-					hides *= 2;
+				hides = (int)(4 * (1 + from.Skills[SkillName.Cooking].Value / 50));
 
 				switch (Biome)
 				{
@@ -2062,9 +2060,7 @@ namespace Server.Mobiles
 
 				//Bones
 				Item bone = null;
-				bones = Level * 10;
-				if (with is SkinningKnife || special || with is ButchersWarCleaver)
-					bones *= 2;
+				bones = (int)(4 * (1 + from.Skills[SkillName.Cooking].Value / 50));
 
 				switch (Biome)
 				{

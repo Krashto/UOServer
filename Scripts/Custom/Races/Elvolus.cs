@@ -24,7 +24,6 @@ namespace Server.Custom.Races
 		{
 		}
 
-
 		public override bool ValidateEquipment(Item item)
 		{
 			return true;
@@ -32,98 +31,33 @@ namespace Server.Custom.Races
 
 		public override BaseRaceGumps GetSkin(int hue)
 		{
-			var itemId = 41509;
-
-			switch (hue)
-			{
-				case 1823:
-					itemId = 41509;
-					break;
-				case 1820:
-					itemId = 41509;
-					break;
-				case 1824:
-					itemId = 41505;
-					break;
-				case 1821:
-					itemId = 41505;
-					break;
-				case 1819:
-					itemId = 41503;
-					break;
-				case 1825:
-					itemId = 41503;
-					break;
-				case 1822:
-					itemId = 41504; //
-					break;
-				case 1826:
-					itemId = 41504;
-					break;
-				default:
-					break;
-			}
-			return new CorpsAltmer(itemId, hue);
+			return new CorpsElvolus(0xA21C, hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
 		{
-			var gumpid = 52090;
-
-			switch (hue)
-			{
-				case 1823:
-					gumpid = 52090;
-					break;
-				case 1820:
-					gumpid = 52090;
-					break;
-				case 1824:
-					gumpid = 52086;
-					break;
-				case 1821:
-					gumpid = 52086;
-					break;
-				case 1819:
-					gumpid = 52084;
-					break;
-				case 1825:
-					gumpid = 52084;
-					break;
-				case 1822:
-					gumpid = 52085; //
-					break;
-				case 1826:
-					gumpid = 52085;
-					break;
-				default:
-					break;
-			}
-
-			if (female)
-				gumpid += 10000;
-
-			return gumpid;
+			var gumpid = 52081;
+			return female ? gumpid + 10000 : gumpid;
 		}
 	}
 }
 
 namespace Server.Items
 {
-	public class CorpsAltmer : BaseRaceGumps
+	public class CorpsElvolus : BaseRaceGumps
 	{
 		[Constructable]
-		public CorpsAltmer() : this(0)
+		public CorpsElvolus() : this(0)
 		{
 		}
 
 		[Constructable]
-		public CorpsAltmer(int id, int hue) : base(id, hue)
+		public CorpsElvolus(int id, int hue) : base(id, hue)
 		{
-			Name = "Altmer";
+			Name = "Elvolus";
 		}
 
-		public CorpsAltmer(Serial serial)
+		public CorpsElvolus(Serial serial)
 			: base(serial)
 		{
 		}

@@ -8,12 +8,7 @@ namespace Server.Mobiles
     {
         private readonly List<SBInfo> m_SBInfos = new List<SBInfo>();
         protected override List<SBInfo> SBInfos => m_SBInfos;
-
         public override NpcGuild NpcGuild => NpcGuild.BlacksmithsGuild;
-
-
-		public override StatutSocialEnum MinBuyClasse => StatutSocialEnum.Peregrin;
-
 
 		[Constructable]
         public Blacksmith()

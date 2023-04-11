@@ -68,6 +68,9 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				Point3D pnt = new Point3D(p);
 				TimeSpan duration = GetDurationForSpell(15);
 
+				if (InquisitionSpell.IsActive(m_Caster))
+					duration += GetDurationForSpell(5);
+
 				if (SpellHelper.CheckField(pnt, Caster.Map))
 					new InternalItem(itemID, pnt, Caster, Caster.Map, duration);
 

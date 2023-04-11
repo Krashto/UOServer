@@ -109,7 +109,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				var duration = m_Owner.GetDurationForSpell(10);
 
 				if (InquisitionSpell.IsActive(m_Caster))
-					duration = m_Owner.GetDurationForSpell(15);
+					duration += m_Owner.GetDurationForSpell(5);
 
 				m_Timer = new InternalTimer(this, duration);
 				m_Timer.Start();

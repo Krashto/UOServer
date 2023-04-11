@@ -3,7 +3,6 @@ using System.Collections;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.Mobiles;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie

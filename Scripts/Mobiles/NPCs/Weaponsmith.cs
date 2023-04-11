@@ -21,7 +21,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 36.0, 68.0);
         }
 
-		public override StatutSocialEnum MinBuyClasse => StatutSocialEnum.Peregrin;
 		public override void InitSBInfo()
         {
             m_SBInfos.Add(new SBWeaponSmith());

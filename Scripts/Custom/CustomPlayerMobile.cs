@@ -364,14 +364,6 @@ namespace Server.Mobiles
 
 		#endregion
 
-		protected override bool OnMove(Direction d)
-		{
-			if (FolieArdenteSpell.IsActive(this))
-				return base.OnMove(MovingSpells.GetOppositeDirection(d));
-
-			return base.OnMove(d);
-		}
-
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
 		{
 			return InsensibleSpell.IsActive(this) || FormeEnsangleeSpell.IsActive(this);

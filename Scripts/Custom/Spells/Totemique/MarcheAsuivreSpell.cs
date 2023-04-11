@@ -29,7 +29,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		{
 			if (CheckSequence())
 			{
-				var mobiles = Caster.GetMobilesInRange(10);
+				var mobiles = Caster.GetMobilesInRange(25);
 
 				foreach (var m in mobiles)
 				{
@@ -39,6 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					SpellHelper.Turn(totem, Caster);
 					ExplodeFX.Bee.CreateInstance(totem.Location, totem.Map, 1);
 					totem.CantWalk = false;
+					totem.ControlOrder = Mobiles.OrderType.Follow;
 				}
 			}
 			FinishSequence();

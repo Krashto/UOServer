@@ -6,6 +6,7 @@ using Server.Items;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Mobiles;
+using Server.Custom.Spells.NewSpells.Guerison;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
@@ -66,6 +67,9 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Effects.PlaySound(p, Caster.Map, 0x20B);
 
 				var duration = GetDurationForSpell(10);
+
+				if (InquisitionSpell.IsActive(m_Caster))
+					duration += GetDurationForSpell(5);
 
 				for (var i = -3; i <= 3; ++i)
 				{

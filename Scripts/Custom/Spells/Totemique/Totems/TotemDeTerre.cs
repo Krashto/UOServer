@@ -52,7 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (NextThinkingTime >= DateTime.Now)
 				return;
 
-			var mobiles = GetMobilesInRange(5);
+			var mobiles = GetMobilesInRange(SuperCharged ? 10 : 5);
 
 			foreach (var m in mobiles)
 			{

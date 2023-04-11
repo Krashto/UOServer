@@ -22,8 +22,6 @@ namespace Server.Mobiles
         {
         }
 
-		public virtual StatutSocialEnum MinBuyClasse => StatutSocialEnum.Equite;
-
 		public override VendorShoeType ShoeType => Utility.RandomBool() ? VendorShoeType.Shoes : VendorShoeType.Sandals;
         protected override List<SBInfo> SBInfos => m_SBInfos;
         public override void InitSBInfo()

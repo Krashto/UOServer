@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace Server
 {
   public enum GrandeurEnum
@@ -10,7 +5,7 @@ namespace Server
         [AppearanceAttribute("Aucun", "Aucune")]
         None,
         [AppearanceAttribute("Très petit", "Très petite")]
-        tresPetit,
+        TresPetit,
         [AppearanceAttribute("Petit", "Petite")]
         Petit,
         [AppearanceAttribute("Plutôt petit", "Plutôt petite")]
