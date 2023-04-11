@@ -4,7 +4,7 @@ namespace Server.Custom.Races
 {
 	class Azmins : BaseRace
 	{
-		public override string Background => "Certains croient qu’ils sont le mélange entre un Azuriens et un Minkos, dû à leur pilosité et à leur petite taille. Malgré tout, aucune preuve de leur création, ou était le premier Azmins à avoir foulé la terre de Casterral ? Nul ne peut le dire. Certains croient que la provenance des Azmins est des Azuriens qui ont été maudit à la naissance, d’autre croient en une malformation des Minkos. Le sujet est à questionnement encore aujourd’hui.\r\n\r\nLes Azmins sont une race de petits êtres humanoïdes. Ils mesurent en moyenne entre 90 cm et 1,20 m de hauteur et ont tendance à être potelés. Leur peau est souvent bronzée et leurs pieds sont grands et velus. Ils ont des yeux brillants et des cheveux bouclés, généralement bruns ou blonds.\r\n\r\nLes Azmins vivent dans des maisons souterraines appelées \"Azmial\" ou des trous d’Azmins, situés dans les plaines et dans les vallées verdoyantes de Casterral. Ils ont une culture simple et paisible, centrée sur la famille et les amis, et se consacrent à des activités telles que la culture de légumes, la cuisine, la fête, la lecture.   Bien que les Azmins soient généralement pacifiques et préfèrent éviter les conflits, ils sont capables de courage et de ténacité lorsqu'ils sont poussés à agir. Grâce à leur courage et leur détermination, ils ont réussi à surmonter de nombreux obstacles pour atteindre leur but et pouvoir profiter de leur joli petit village au cœur de la plaine de Casterral. Vivant ainsi en harmonie des festivités et des simples plaisirs de la vie.\r\n\r\nLes Azmins sont banals niveaux vestimentaires saufs pour les grandes soirées ou qu’ils sortent le total de leur collection d’habits. Les vêtements Azmins se résument à la simplicité. Un chandail à moitié déchiré, une salopette de travail, rien de mieux que se sentir valoriser dans la simplicité sauve dans des rares occasions\r\n\r\nLes Azmins sont d'énormes fervents des ancêtres travailleurs, agricoles et fermier. Pour eux, la vie se résume à pouvoir se lever le matin et avoir leur routine quotidienne sans se soucier des problèmes politiques. Vouant ainsi des fêtes et des grandes offrandes pour que les terres soient fertiles pour les jours à venir.\r\n\r\nComme les Minkos, les Azmins trouvent l’amour dans la simplicité, par le chant d’une chanteuse charmeuse ou même par la simplicité d’une bonne baguette qui sort directement du four du boulanger du coin.";
+		public override string Background => "Les Azmins";
 
 		public override int[] SkinHues => new int[] { 1823, 1820, 1824, 1821, 1819, 1825, 1822, 1826 };
 
@@ -68,27 +68,27 @@ namespace Server.Custom.Races
 
 		public override int GetGumpId(bool female, int hue)
 		{
-			var gumpid = 52085;
+			var gumpid = 52090;
 
 			switch (hue)
 			{
 				case 1823:
-					gumpid = 52085;
+					gumpid = 52090;
 					break;
 				case 1820:
-					gumpid = 52085;
+					gumpid = 52090;
 					break;
 				case 1824:
-					gumpid = 52085;
+					gumpid = 52086;
 					break;
 				case 1821:
-					gumpid = 52085;
+					gumpid = 52086;
 					break;
 				case 1819:
-					gumpid = 52085;
+					gumpid = 52084;
 					break;
 				case 1825:
-					gumpid = 52085;
+					gumpid = 52084;
 					break;
 				case 1822:
 					gumpid = 52085; //
