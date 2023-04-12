@@ -2,21 +2,21 @@ using System;
 
 namespace Server.Items
 {
-    public class GreaterAgilityPotion : BaseAgilityPotion
+    public class SuperiorAgilityPotion : BaseAgilityPotion
     {
         [Constructable]
-        public GreaterAgilityPotion()
-            : base(PotionEffect.AgilityGreater)
+        public SuperiorAgilityPotion()
+            : base(PotionEffect.AgilitySuperior)
         {
-			Name = "Potion de dextérité majeure";
+			Name = "Potion de dextérité supérieure";
 		}
 
-		public GreaterAgilityPotion(Serial serial)
+		public SuperiorAgilityPotion(Serial serial)
             : base(serial)
         {
         }
 
-        public override int DexOffset => 25;
+        public override int DexOffset => 35;
         public override TimeSpan Duration => TimeSpan.FromMinutes(5.0);
         public override void Serialize(GenericWriter writer)
         {

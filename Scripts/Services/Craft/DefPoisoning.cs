@@ -108,7 +108,7 @@ namespace Server.Engines.Craft
             index = AddCraft(typeof(GreaterCurePotion), 1116348, 1044554, 65.0, 95.0, typeof(Garlic), 1044355, 6, 1044363);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(UltimeCurePotion), 1116348, "Antidote Ultime", 80.0, 105.0, typeof(PlumesSaliva), "Plume de Saliva", 1, "Vous n'avez pas assez de plume de Saliva");
+			index = AddCraft(typeof(SuperiorCurePotion), 1116348, "Antidote Ultime", 80.0, 105.0, typeof(PlumesSaliva), "Plume de Saliva", 1, "Vous n'avez pas assez de plume de Saliva");
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             // Toxic

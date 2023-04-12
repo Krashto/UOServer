@@ -110,87 +110,96 @@ namespace Server.Engines.Craft
         {
             int index = -1;
 
-            // Healing and Curative
-            index = AddCraft(typeof(RefreshPotion), 1116348, 1044538, -25, 25.0, typeof(BlackPearl), 1044353, 1, 1044361);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(TotalRefreshPotion), 1116348, 1044539, 25.0, 75.0, typeof(BlackPearl), 1044353, 5, 1044361);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(LesserHealPotion), 1116348, 1044543, -25.0, 25.0, typeof(Ginseng), 1044356, 1, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(HealPotion), 1116348, 1044544, 15.0, 65.0, typeof(Ginseng), 1044356, 3, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(GreaterHealPotion), 1116348, 1044545, 55.0, 105.0, typeof(Ginseng), 1044356, 7, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(LesserCurePotion), 1116348, 1044552, -10.0, 40.0, typeof(Garlic), 1044355, 1, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(CurePotion), 1116348, 1044553, 25.0, 75.0, typeof(Garlic), 1044355, 3, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(GreaterCurePotion), 1116348, 1044554, 65.0, 95.0, typeof(Garlic), 1044355, 6, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(UltimeCurePotion), 1116348, "Antidote Ultime", 80.0, 105.0, typeof(PlumesSaliva), "Plume de Saliva", 1, "Vous n'avez pas assez de plume de Saliva");
+			index = AddCraft(typeof(LesserRefreshPotion), "Rafraichissement", "Potion de rafraichissement légère", 0.0, 25.0, typeof(BlackPearl), 1044353, 1, 1044361);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			//index = AddCraft(typeof(ElixirOfRebirth), 1116348, 1112762, 65.0, 115.0, typeof(Dragonsblood), 1031702, 3, 1044253);
-   //                  AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(BarrabHemolymphConcentrate), 1116348, "Potion d'Eodon", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(Ginseng), 1044356, 20, 1044364);
-  
-
-            // Enhancement
-            index = AddCraft(typeof(AgilityPotion), 1116349, 1044540, 15.0, 65.0, typeof(Bloodmoss), 1044354, 1, 1044362);
+			index = AddCraft(typeof(RefreshPotion), "Rafraichissement", "Potion de rafraichissement", 25.0, 50.0, typeof(BlackPearl), 1044353, 3, 1044361);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(GreaterAgilityPotion), 1116349, 1044541, 35.0, 85.0, typeof(Bloodmoss), 1044354, 3, 1044362);
+			index = AddCraft(typeof(GreaterRefreshPotion), "Rafraichissement", "Potion de rafraichissement majeure", 50.0, 75.0, typeof(BlackPearl), 1044353, 5, 1044361);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(SuperiorRefreshPotion), "Rafraichissement", "Potion de rafraichissement supérieure", 75.0, 100.0, typeof(BlackPearl), 1044353, 7, 1044361);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(NightSightPotion), 1116349, 1044542, -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
+            index = AddCraft(typeof(LesserHealPotion), "Soin", "Potion de soin mineure", 0.0, 25.0, typeof(Ginseng), 1044356, 1, 1044364);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(StrengthPotion), 1116349, 1044546, 25.0, 75.0, typeof(MandrakeRoot), 1044357, 2, 1044365);
+            index = AddCraft(typeof(HealPotion), "Soin", "Potion de soin", 25.0, 50.0, typeof(Ginseng), 1044356, 3, 1044364);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(GreaterStrengthPotion), 1116349, 1044547, 45.0, 95.0, typeof(MandrakeRoot), 1044357, 5, 1044365);
+            index = AddCraft(typeof(GreaterHealPotion), "Soin", "Potion de soin majeure", 50.0, 75.0, typeof(Ginseng), 1044356, 5, 1044364);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(InvisibilityPotion), 1116349, 1074860, 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(SuperiorHealPotion), "Soin", "Potion de soin supérieure", 75.0, 100.0, typeof(Ginseng), 1044356, 7, 1044364);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(LesserCurePotion), "Antidote", "Potion d'antidote mineure", 0.0, 25.0, typeof(Garlic), 1044355, 1, 1044363);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(CurePotion), "Antidote", "Potion d'antidote", 25.0, 50.0, typeof(Garlic), 1044355, 3, 1044363);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(GreaterCurePotion), "Antidote", "Potion d'antidote majeure", 50.0, 75.0, typeof(Garlic), 1044355, 5, 1044363);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(SuperiorCurePotion), "Antidote", "Potion d'antidote supérieure", 75.0, 100.0, typeof(Garlic), 1044355, 7, 1044363);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(LesserAgilityPotion), "Dextérité", "Potion de dextérité mineure", 0.0, 25.0, typeof(Bloodmoss), 1044354, 1, 1044362);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(AgilityPotion), "Dextérité", "Potion de dextérité", 25.0, 50.0, typeof(Bloodmoss), 1044354, 3, 1044362);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(GreaterAgilityPotion), "Dextérité", "Potion de dextérité majeure", 50.0, 75.0, typeof(Bloodmoss), 1044354, 5, 1044362);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(SuperiorAgilityPotion), "Dextérité", "Potion de dextérité supérieure", 75.0, 100.0, typeof(Bloodmoss), 1044354, 7, 1044362);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(LesserStrengthPotion), "Force", "Potion de force mineure", 0.0, 25.0, typeof(MandrakeRoot), 1044357, 1, 1044365);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(StrengthPotion), "Force", "Potion de force mineure", 25.0, 50.0, typeof(MandrakeRoot), 1044357, 3, 1044365);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(GreaterStrengthPotion), "Force", "Potion de force mineure", 50.0, 75.0, typeof(MandrakeRoot), 1044357, 5, 1044365);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(SuperiorStrengthPotion), "Force", "Potion de force mineure", 75.0, 100.0, typeof(MandrakeRoot), 1044357, 7, 1044365);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+			index = AddCraft(typeof(InvisibilityPotion), "Autres", "Potion d'invisibilité", 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
             AddRes(index, typeof(Bloodmoss), 1044354, 4, 1044362);
             AddRes(index, typeof(Nightshade), 1044358, 3, 1044366);
-        
 
-            index = AddCraft(typeof(JukariBurnPoiltice), 1116349, "Potion de résistances", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(BlackPearl), 1044353, 20, 1044361);
-            AddRes(index, typeof(Vanilla), 1080000, 10, 1080008);          
-         
+			index = AddCraft(typeof(NightSightPotion), "Autres", "Potion de vision de nuit", -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-         index = AddCraft(typeof(KurakAmbushersEssence), 1116349, "Essence de Kurak", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(Bloodmoss), 1044354, 20, 1044362);
-         
+			//index = AddCraft(typeof(JukariBurnPoiltice), 1116349, "Potion de résistances", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
+			//AddRes(index, typeof(BlackPearl), 1044353, 20, 1044361);
+			//AddRes(index, typeof(Vanilla), 1080000, 10, 1080008);          
 
-            index = AddCraft(typeof(BarakoDraftOfMight), 1116349, "Brassage de Barako", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(SpidersSilk), 1044360, 20, 1044368);
-            AddRes(index, typeof(BaseBeverage), 1022459, 10, 1044253);
-            SetBeverageType(index, BeverageType.Liquor);
+			//index = AddCraft(typeof(KurakAmbushersEssence), 1116349, "Essence de Kurak", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
+			//AddRes(index, typeof(Bloodmoss), 1044354, 20, 1044362);
 
-            index = AddCraft(typeof(UraliTranceTonic), 1116349, "Tonic de Urali", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(MandrakeRoot), 1044357, 20, 1044365);
-   /*         AddRes(index, typeof(YellowScales), 1156799, 10, 1044253);
-            AddRes(index, typeof(RiverMoss), 1156731, 5, 1044253);
-            AddRecipe(index, (int)AlchemyRecipes.UraliTranceTonic);
-   */
-            index = AddCraft(typeof(SakkhraProphylaxisPotion), 1116349, "Potion de Sakkhra", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(Nightshade), 1044358, 20, 1044366);
-   /*         AddRes(index, typeof(BaseBeverage), 1022503, 10, 1044253);
-            AddRes(index, typeof(BlueCorn), 1156733, 5, 1044253);
-   */         SetBeverageType(index, BeverageType.Wine);
+			//index = AddCraft(typeof(BarakoDraftOfMight), 1116349, "Brassage de Barako", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
+			//AddRes(index, typeof(SpidersSilk), 1044360, 20, 1044368);
+			//AddRes(index, typeof(BaseBeverage), 1022459, 10, 1044253);
+			//SetBeverageType(index, BeverageType.Liquor);
+
+			//index = AddCraft(typeof(UraliTranceTonic), 1116349, "Tonic de Urali", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
+			//AddRes(index, typeof(MandrakeRoot), 1044357, 20, 1044365);
+			//AddRes(index, typeof(YellowScales), 1156799, 10, 1044253);
+			//AddRes(index, typeof(RiverMoss), 1156731, 5, 1044253);
+			//AddRecipe(index, (int)AlchemyRecipes.UraliTranceTonic);
+
+			//index = AddCraft(typeof(SakkhraProphylaxisPotion), 1116349, "Potion de Sakkhra", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
+			//AddRes(index, typeof(Nightshade), 1044358, 20, 1044366);
+			//AddRes(index, typeof(BaseBeverage), 1022503, 10, 1044253);
+			//AddRes(index, typeof(BlueCorn), 1156733, 5, 1044253);
+			//SetBeverageType(index, BeverageType.Wine);
            
 			// Explosive
 			index = AddCraft(typeof(LesserExplosionPotion), 1116351, 1044555, 5.0, 55.0, typeof(SulfurousAsh), 1044359, 3, 1044367);
@@ -215,19 +224,17 @@ namespace Server.Engines.Craft
             AddRes(index, typeof(PigIron), 1023978, 10, 1044253);
 
             index = AddCraft(typeof(BlackPowder), 1116351, 1095826, 65.0, 115.0, typeof(SulfurousAsh), 1023980, 1, 1044253);
-                      AddRes(index, typeof(Charcoal), 1116303, 5, 1044253);
+            AddRes(index, typeof(Charcoal), 1116303, 5, 1044253);
 
             index = AddCraft(typeof(FuseCord), 1116351, 1116305, 55.0, 105.0, typeof(LightYarn), 1023615, 1, 1044253);
             AddRes(index, typeof(BlackPowder), 1095826, 1, 1044253);
             SetNeedWater(index, true);
 
-               
             index = AddCraft(typeof(SmokeBomb), 1116351, 1030248, 90.0, 120.0, typeof(Eggs), 1044477, 1, 1044253);
             AddRes(index, typeof(Ginseng), 1044356, 3, 1044364);
 
-      
 			index = AddCraft(typeof(HairDye), 1116351, "Teinture à Cheveux", 75.0, 100.0, typeof(BacVide), "Bac à teinture", 1, "Il vous faut un bac à teinture");
-			AddRes(index, typeof(Charcoal), "Charbon", 5, "Vous n'avez pas suffisament de Charbon");
+			AddRes(index, typeof(Charcoal), "Charbon", 5, "Vous n'avez pas suffisament de charbon");
 
 			#region Teintures
 

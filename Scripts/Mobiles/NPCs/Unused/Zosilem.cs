@@ -88,7 +88,7 @@ namespace Server.Engines.Quests
 
         private static readonly object[][] m_KegTypes = new object[][]
             {
-                new object[] {PotionEffect.RefreshTotal,  typeof(InspectedKegofTotalRefreshment) },
+                new object[] {PotionEffect.RefreshSuperior,  typeof(InspectedKegofTotalRefreshment) },
                 new object[] {PotionEffect.PoisonGreater, typeof(InspectedKegofGreaterPoison) }
             };
 

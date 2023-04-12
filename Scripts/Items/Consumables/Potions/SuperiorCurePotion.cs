@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class UltimeCurePotion : BaseCurePotion
+    public class SuperiorCurePotion : BaseCurePotion
     {
         private static readonly CureLevelInfo[] m_AosLevelInfo = new CureLevelInfo[]
         {
@@ -11,14 +11,12 @@ namespace Server.Items
             new CureLevelInfo(Poison.Lethal, 0.50)
         };
         [Constructable]
-        public UltimeCurePotion()
-            : base(PotionEffect.UltimeCure)
+        public SuperiorCurePotion() : base(PotionEffect.CureSuperior)
         {
-			Name = "Antidote Ultime";
-			Hue = 1917;
+			Name = "Potion d'antidote supérieure";
         }
 
-        public UltimeCurePotion(Serial serial)
+        public SuperiorCurePotion(Serial serial)
             : base(serial)
         {
         }

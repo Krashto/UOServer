@@ -1,23 +1,18 @@
-using System;
-
 namespace Server.Items
 {
-    public class GreaterAgilityPotion : BaseAgilityPotion
+    public class GreaterRefreshPotion : BaseRefreshPotion
     {
         [Constructable]
-        public GreaterAgilityPotion()
-            : base(PotionEffect.AgilityGreater)
+        public GreaterRefreshPotion() : base(PotionEffect.RefreshGreater)
         {
-			Name = "Potion de dextérité majeure";
+			Name = "Potion de rafraichissement majeure";
 		}
 
-		public GreaterAgilityPotion(Serial serial)
-            : base(serial)
+		public GreaterRefreshPotion(Serial serial) : base(serial)
         {
         }
 
-        public override int DexOffset => 25;
-        public override TimeSpan Duration => TimeSpan.FromMinutes(5.0);
+        public override double Refresh => 0.75;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

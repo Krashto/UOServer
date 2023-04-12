@@ -1,47 +1,52 @@
-﻿using System.Linq;
-using Server.Items;
+﻿using System;
+using System.Linq;
 
 namespace Server.Custom
 {
 	public class CustomUtility
 	{
-		public static int GetGoldAmountInBank(Mobile m)
+		public static int GetItemAmountInBank(Mobile m, Type type)
 		{
-			var goldPiles = GetGoldPilesInBank(m);
+			var goldPiles = GetItemPilesInBank(m, type);
 			return goldPiles.Sum(f => f.Amount);
 		}
 
-		public static Item[] GetGoldPilesInBank(Mobile m)
+		public static Item[] GetItemPilesInBank(Mobile m, Type type)
 		{
 			var bankBox = m.BankBox;
-			return bankBox.FindItemsByType(typeof(Gold));
+			return bankBox.FindItemsByType(type);
 		}
 
-		public static bool ConsumeGoldInBank(Mobile m, int amount)
+		public static bool ConsumeItemInBank(Mobile m, Type type, int amount)
 		{
-			var goldPiles = GetGoldPilesInBank(m);
-			var goldSum = GetGoldAmountInBank(m);
+			var piles = GetItemPilesInBank(m, type);
+			var qty = GetItemAmountInBank(m, type);
 
-			if (goldPiles == null || goldSum < amount)
+			if (piles == null || qty < amount)
 			{
-				m.SendMessage("Vous n'avez pas les fonds suffisants dans votre coffre de banque.");
+				var item = (Item)Activator.CreateInstance(type);
+				if (!string.IsNullOrEmpty(item.Name))
+					m.SendMessage($"Vous n'avez pas la quantité suffisante de {item.Name} dans votre coffre de banque.");
+				else
+					m.SendMessage($"Vous n'avez pas la quantité suffisante de {item.GetType()} dans votre coffre de banque.");
+				item.Delete();
 				return false;
 			}
 
-			int index = goldPiles.Length - 1;
+			int index = piles.Length - 1;
 			while (amount > 0 && index >= 0)
 			{
-				var gold = goldPiles[index];
+				var item = piles[index];
 
-				if (gold.Amount > amount)
+				if (item.Amount > amount)
 				{
-					gold.Amount -= amount;
+					item.Amount -= amount;
 					amount = 0;
 				}
 				else
 				{
-					amount -= gold.Amount;
-					gold.Delete();
+					amount -= item.Amount;
+					item.Delete();
 				}
 
 				index--;

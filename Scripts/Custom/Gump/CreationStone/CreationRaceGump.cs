@@ -54,7 +54,7 @@ namespace Server.Gumps
 
             if (info.ButtonID >= 10 && info.ButtonID < 100)
             {
-                m_Creation.Hue = m_Creation.Race.SkinHues[info.ButtonID - 10];
+                m_Creation.Hue = m_Creation.Race.SkinHues[info.ButtonID - 10] - 1;
                 from.SendGump(new CreationRaceGump(from, m_Creation));
             }
             else if (info.ButtonID >= 100 && info.ButtonID < 1000)

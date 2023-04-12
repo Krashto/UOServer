@@ -875,7 +875,7 @@ namespace Server.Misc
             PlaceItemIn(bag, 45, 149, MakePotionKeg(PotionEffect.CureGreater, 0x2D));
             PlaceItemIn(bag, 69, 149, MakePotionKeg(PotionEffect.HealGreater, 0x499));
             PlaceItemIn(bag, 93, 149, MakePotionKeg(PotionEffect.PoisonDeadly, 0x46));
-            PlaceItemIn(bag, 117, 149, MakePotionKeg(PotionEffect.RefreshTotal, 0x21));
+            PlaceItemIn(bag, 117, 149, MakePotionKeg(PotionEffect.RefreshSuperior, 0x21));
             PlaceItemIn(bag, 141, 149, MakePotionKeg(PotionEffect.ExplosionGreater, 0x74));
 
             PlaceItemIn(bag, 93, 82, new Bottle(1000));

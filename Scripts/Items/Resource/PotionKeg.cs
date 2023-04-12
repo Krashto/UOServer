@@ -81,7 +81,7 @@ namespace Server.Items
                         case PotionEffect.Poison: number = 1041615; break; // A keg of green liquid.
                         case PotionEffect.PoisonGreater: number = 1041615; break; // A keg of green liquid.
                         case PotionEffect.Refresh: number = 1041616; break; // A keg of red liquid.
-                        case PotionEffect.RefreshTotal: number = 1041616; break; // A keg of red liquid.
+                        case PotionEffect.RefreshSuperior: number = 1041616; break; // A keg of red liquid.
                         case PotionEffect.HealLesser: number = 1041617; break; // A keg of yellow liquid.
                         case PotionEffect.Heal: number = 1041617; break; // A keg of yellow liquid.
                         case PotionEffect.HealGreater: number = 1041617; break; // A keg of yellow liquid.
@@ -430,8 +430,8 @@ namespace Server.Items
 
                 case PotionEffect.Refresh:
                     return new RefreshPotion();
-                case PotionEffect.RefreshTotal:
-                    return new TotalRefreshPotion();
+                case PotionEffect.RefreshSuperior:
+                    return new SuperiorRefreshPotion();
 
                 case PotionEffect.HealLesser:
                     return new LesserHealPotion();

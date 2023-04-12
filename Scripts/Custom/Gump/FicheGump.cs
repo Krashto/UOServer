@@ -5,6 +5,7 @@ using Server.Custom.Aptitudes;
 using Server.Custom.Classes;
 using Server.Custom.Capacites;
 using Server.Custom;
+using Server.Items;
 
 namespace Server.Gumps
 {
@@ -49,7 +50,7 @@ namespace Server.Gumps
 			AddHtmlTexte(x + 125, y + space * line++, 150, from.CorpulenceString());
 
 			AddHtmlTexte(x + 10, y + space * line, 100, "Finances");
-			AddHtmlTexte(x + 125, y + space * line++, 150, CustomUtility.GetGoldAmountInBank(m_From).ToString());
+			AddHtmlTexte(x + 125, y + space * line++, 150, CustomUtility.GetItemAmountInBank(m_From, typeof(Gold)).ToString());
 
 			line++;
 
@@ -230,7 +231,7 @@ namespace Server.Gumps
         {
 			if (info.ButtonID >= 100 && info.ButtonID < 200)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 1000))
 				{
 					var apt = (Aptitude)(info.ButtonID - 100);
 					if (Aptitudes.CanLower(m_From, apt))
@@ -255,7 +256,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 300)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.DecreaseStat(StatType.Str, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -266,7 +267,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 302)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.DecreaseStat(StatType.Dex, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -277,7 +278,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 304)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.DecreaseStat(StatType.Int, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -288,7 +289,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 306)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.Attributs.Decrease(Attribut.Constitution, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -299,7 +300,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 308)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.Attributs.Decrease(Attribut.Endurance, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -310,7 +311,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 310)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.Attributs.Decrease(Attribut.Sagesse, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -321,7 +322,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 350)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.DecreaseStat(StatType.Str, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -332,7 +333,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 352)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.DecreaseStat(StatType.Dex, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -343,7 +344,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 354)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.DecreaseStat(StatType.Int, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -354,7 +355,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 356)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.Attributs.Decrease(Attribut.Constitution, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -365,7 +366,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 358)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.Attributs.Decrease(Attribut.Endurance, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -376,7 +377,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 360)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
 					m_From.Attributs.Decrease(Attribut.Sagesse, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -391,7 +392,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID >= 500 && info.ButtonID < 550)
 			{
-				if (CustomUtility.ConsumeGoldInBank(m_From, 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 1000))
 					m_From.Capacites.Decrease((Capacite)(info.ButtonID - 500));
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}

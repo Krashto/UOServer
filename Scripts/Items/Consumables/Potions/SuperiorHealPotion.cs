@@ -1,23 +1,22 @@
-using System;
-
 namespace Server.Items
 {
-    public class GreaterAgilityPotion : BaseAgilityPotion
+    public class SuperiorHealPotion : BaseHealPotion
     {
         [Constructable]
-        public GreaterAgilityPotion()
-            : base(PotionEffect.AgilityGreater)
+        public SuperiorHealPotion()
+            : base(PotionEffect.HealSuperior)
         {
-			Name = "Potion de dextérité majeure";
+			Name = "Potion de soin supérieure";
 		}
 
-		public GreaterAgilityPotion(Serial serial)
+		public SuperiorHealPotion(Serial serial)
             : base(serial)
         {
         }
 
-        public override int DexOffset => 25;
-        public override TimeSpan Duration => TimeSpan.FromMinutes(5.0);
+        public override int MinHeal => 60;
+        public override int MaxHeal => 60;
+        public override double Delay => 10.0;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

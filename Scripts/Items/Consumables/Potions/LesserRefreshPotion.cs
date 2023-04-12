@@ -1,19 +1,18 @@
 namespace Server.Items
 {
-    public class TotalRefreshPotion : BaseRefreshPotion
+    public class LesserRefreshPotion : BaseRefreshPotion
     {
         [Constructable]
-        public TotalRefreshPotion()
-            : base(PotionEffect.RefreshTotal)
+        public LesserRefreshPotion() : base(PotionEffect.RefreshLesser)
+        {
+			Name = "Potion de rafraichissement mineure";
+        }
+
+        public LesserRefreshPotion(Serial serial) : base(serial)
         {
         }
 
-        public TotalRefreshPotion(Serial serial)
-            : base(serial)
-        {
-        }
-
-        public override double Refresh => 1.0;
+        public override double Refresh => 0.25;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

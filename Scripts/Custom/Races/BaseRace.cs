@@ -200,7 +200,7 @@ namespace Server
 
 		public override int RandomSkinHue()
 		{
-			return SkinHues[Utility.Random(SkinHues.Length)];
+			return SkinHues[Utility.Random(SkinHues.Length)] - 1;
 		} 
 
 		public override int ClipHairHue(int hue)
