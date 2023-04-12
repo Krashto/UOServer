@@ -6,7 +6,7 @@
 		public Materiaux() : base(0x1876)
 		{
 			Name = "Materiaux";
-			Hue = 542;
+			Hue = 2930;
 			Weight = 0.3;
 			Stackable = true;
 		}
