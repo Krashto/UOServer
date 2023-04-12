@@ -4,29 +4,29 @@ using Server.Custom.Capacites;
 
 namespace Server
 {
-	public class DruideClasse
+	public class GuerisseurClasse
     {
-        private static string m_Name = "Druide";
-        private static Classe m_Classe = Classe.Druide;
-		private static int m_Level = 2;
+        private static string m_Name = "Guérisseur";
+        private static Classe m_Classe = Classe.Guerisseur;
+		private static int m_Level = 3;
         private static ClasseMode m_ClasseMode = ClasseMode.Mages;
-        private static Classe m_ClasseAvant = Classe.Naturaliste;
-        private static ClasseBranche m_ClasseBranche = ClasseBranche.Geomancien;
+        private static Classe m_ClasseAvant = Classe.Soigneur;
+        private static ClasseBranche m_ClasseBranche = ClasseBranche.Guerisseur;
         private static bool m_Active = true;
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {
-                new CAptitudes(Aptitude.Geomancie, 6),
+                new CAptitudes(Aptitude.Guerison, 10),
             };
 
         private static CCapacites[] m_Capacites = new CCapacites[]
             {
-				new CCapacites(Capacite.Magie, 2),
-			};
+                new CCapacites(Capacite.Magie, 3),
+            };
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.MagicResist, 75),
+                new CSkills(SkillName.Healing, 100),
             };
 
 		public static ClasseInfo ClasseInfo = new ClasseInfo(

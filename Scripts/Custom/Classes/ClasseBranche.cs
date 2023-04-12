@@ -22,5 +22,6 @@
 		Geomancien,
 		Aeromancien,
 		Necromancien,
+		Guerisseur,
 	}
 }

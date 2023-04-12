@@ -4,32 +4,31 @@ using Server.Custom.Capacites;
 
 namespace Server
 {
-	public class BardeClasse
+	public class MultiformeClasse
     {
-        private static string m_Name = "Barde";
-        private static Classe m_Classe = Classe.Barde;
-		private static int m_Level = 2;
-        private static ClasseMode m_ClasseMode = ClasseMode.Mages;
-        private static Classe m_ClasseAvant = Classe.Troubadour;
-        private static ClasseBranche m_ClasseBranche = ClasseBranche.Menestrel;
+        private static string m_Name = "Multiforme";
+        private static Classe m_Classe = Classe.Multiforme;
+		private static int m_Level = 1;
+        private static ClasseMode m_ClasseMode = ClasseMode.Roublards;
+        private static Classe m_ClasseAvant = Classe.Aucune;
+        private static ClasseBranche m_ClasseBranche = ClasseBranche.Changeforme;
         private static bool m_Active = false;
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {
-				new CAptitudes(Aptitude.Musique, 6),
+				new CAptitudes(Aptitude.Polymorphie, 3),
             };
 
 		private static CCapacites[] m_Capacites = new CCapacites[]
             {
-                new CCapacites(Capacite.Magie, 2),
-                new CCapacites(Capacite.Bouclier, 2),
-            };
+				new CCapacites(Capacite.Magie, 1),
+				new CCapacites(Capacite.ArmesMelee, 1),
+			};
 
         private static CSkills[] m_Skills = new CSkills[]
             {
-                new CSkills(SkillName.Musicianship, 75),
+                new CSkills(SkillName.Anatomy, 50),
             };
-
 
 		public static ClasseInfo ClasseInfo = new ClasseInfo(
 				m_Classe,

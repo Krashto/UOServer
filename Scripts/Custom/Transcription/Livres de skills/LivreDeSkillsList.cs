@@ -1085,8 +1085,43 @@ namespace Server.Items
             int version = reader.ReadInt();
         }
     }
+	[FlipableAttribute(0xFBE, 0xFBD)]
+	public class LivreSkillsNecromancy : LivreSkills
+	{
+		[Constructable]
+		public LivreSkillsNecromancy()
+			: this(SkillName.Necromancy, 0.0, 0.0)
+		{
+		}
 
-    [FlipableAttribute(0xFBE, 0xFBD)]
+		[Constructable]
+		public LivreSkillsNecromancy(SkillName skill, double value, double growvalue)
+			: base(skill, value, growvalue)
+		{
+			Name = "Étude : Necromancy";
+		}
+
+		public LivreSkillsNecromancy(Serial serial)
+			: base(serial)
+		{
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write((int)0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+
+	[FlipableAttribute(0xFBE, 0xFBD)]
     public class LivreSkillsPoisoning : LivreSkills
     {
         [Constructable]
@@ -1699,22 +1734,22 @@ namespace Server.Items
     }
 
     [FlipableAttribute(0xFBE, 0xFBD)]
-    public class LivreSkillsEquitation : LivreSkills
+    public class LivreSkillsStealth : LivreSkills
     {
         [Constructable]
-        public LivreSkillsEquitation()
+        public LivreSkillsStealth()
             : this(SkillName.Stealth, 0.0, 0.0)
         {
         }
 
         [Constructable]
-        public LivreSkillsEquitation(SkillName skill, double value, double growvalue)
+        public LivreSkillsStealth(SkillName skill, double value, double growvalue)
             : base(skill, value, growvalue)
         {
             Name = "Étude : Equitation";
         }
 
-        public LivreSkillsEquitation(Serial serial)
+        public LivreSkillsStealth(Serial serial)
             : base(serial)
         {
         }

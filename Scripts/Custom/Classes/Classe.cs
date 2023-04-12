@@ -79,5 +79,9 @@
 		Thanathauste,
 		Necromage,
 		Necromancien,
+
+		Intervenant,
+		Soigneur,
+		Guerisseur,
 	}
 }

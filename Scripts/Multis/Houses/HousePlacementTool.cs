@@ -727,8 +727,9 @@ namespace Server.Items
                                 return;
 
                             house.Price = m_Cost;
+							house.InitPrice = m_Cost;
 
-                            if (from.AccessLevel >= AccessLevel.GameMaster)
+							if (from.AccessLevel >= AccessLevel.GameMaster)
                             {
                                 from.SendMessage("{0} gold would have been withdrawn from your bank if you were not a GM.", m_Cost.ToString());
                             }

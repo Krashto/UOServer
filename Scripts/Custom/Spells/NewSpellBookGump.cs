@@ -201,6 +201,7 @@ namespace Server.Gumps
 
         public Hashtable m_NameColors = new Hashtable();
         public Hashtable m_Names = new Hashtable();
+        public Hashtable m_Symbols = new Hashtable();
 
         public void InitializeHashtable()
         {
@@ -231,7 +232,7 @@ namespace Server.Gumps
 			m_Names[Aptitude.Pyromancie] = "Pyromancie";
 			m_Names[Aptitude.Roublardise] = "Roublardise";
 			m_Names[Aptitude.Totemique] = "Totémique";
-        }
+		}
         #endregion
 
         private NewSpellbook m_Book;
@@ -291,8 +292,9 @@ namespace Server.Gumps
 				if (HasSpell(entry.SpellID) && ArrayContains(m_AptitudeList, entry.Aptitude))
 				{
 					//On ajoute l'information et les boutons
-					AddLabel(145 + hindex * 190, 54 + (vindex * 15), 0, entry.Name);
-					AddButton(130 + hindex * 190, 59 + (vindex * 15), 2103, 2104, entry.SpellID, GumpButtonType.Reply, 0); //Cast
+					AddLabel(163 + hindex * 190, 54 + (vindex * 15), 0, entry.Name);
+					AddButton(128 + hindex * 190, 59 + (vindex * 15), 2103, 2104, entry.SpellID, GumpButtonType.Reply, 0); //Cast
+					AddButton(140 + hindex * 190, 57 + (vindex * 15), 2224, 2224, 1000 + entry.SpellID, GumpButtonType.Reply, 0); //Info
 					vindex++;
 				}
 			}
@@ -322,14 +324,16 @@ namespace Server.Gumps
 						string name = "...";
 
 						if (m_NameColors.Contains(info.Aptitude))
-							namecolor = (int)m_NameColors[info.Aptitude];
+							namecolor = (int)m_NameColors[info.Aptitude] - 1;
 
 						if (m_Names.Contains(info.Aptitude))
 							name = (string)m_Names[info.Aptitude];
 
 						//On ajoute le nom
-						AddLabel(190 + hindex * 190, 20, namecolor, name);
-						AddLabel(140 + hindex * 190, 40, 0, info.Name);
+						AddButton(175 + hindex * 190, 22, 2223, 2223, 100 + ((info.SpellID - 600) / EntriesPerPage), GumpButtonType.Reply, 0);
+						AddLabel(200 + hindex * 190, 20, namecolor, name);
+						AddButton(140 + hindex * 190, 44, 2103, 2104, info.SpellID, GumpButtonType.Reply, 0);
+						AddLabel(155 + hindex * 190, 40, 0, info.Name);
 
 						//On ajoute les séparateurs
 						AddImageTiled(140 + hindex * 190, 60, 130, 10, 0x3A);
@@ -407,7 +411,9 @@ namespace Server.Gumps
 					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page + 1));
 				else if (info.ButtonID == 21 && m_Page >= (m_SpellBookEntry.Length / EntriesPerPage))
 					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page - 1));
-				else if (info.ButtonID >= 600 && info.ButtonID < 800)
+				else if (info.ButtonID >= 100 && info.ButtonID < 200)
+					pm.SendGump(new NewSpellbookGump(pm, m_Book, info.ButtonID - 100));
+				else if (info.ButtonID >= 600 && info.ButtonID < 1000)
                 {
                     Spell spell = SpellRegistry.NewSpell(info.ButtonID, pm, null);
 
@@ -416,7 +422,11 @@ namespace Server.Gumps
 
                     pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page));
                 }
-            }
+				else if (info.ButtonID >= 1600 && info.ButtonID < 1800)
+				{
+					pm.SendGump(new NewSpellbookGump(pm, m_Book, (int)Math.Ceiling((double)m_SpellBookEntry.Length / EntriesPerPage) + info.ButtonID - 1600));
+				}
+			}
         }
     }
 }

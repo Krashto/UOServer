@@ -3036,7 +3036,10 @@ namespace Server.Multis
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write(23); // version
+
+            writer.Write(24); // version
+
+			writer.Write(InitPrice);
 
             writer.Write((int)_CurrentDecay);
 
@@ -3166,7 +3169,12 @@ namespace Server.Multis
 
             switch (version)
             {
-                case 23: // Vendor rental contract fix
+				case 24:
+					{
+						InitPrice = reader.ReadInt();
+                        goto case 23;
+					}
+				case 23: // Vendor rental contract fix
                 case 22:
                     {
                         _CurrentDecay = (DecayType)reader.ReadInt();
@@ -4112,7 +4120,10 @@ namespace Server.Multis
         [CommandProperty(AccessLevel.GameMaster)]
         public int Price { get; set; }
 
-        public bool IsFriend(Mobile m)
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int InitPrice { get; set; }
+
+		public bool IsFriend(Mobile m)
         {
             if (m == null || Friends == null)
                 return false;

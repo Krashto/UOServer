@@ -367,16 +367,16 @@ namespace Server.Items
                 {
                     case "Alchemy": m_Skill = SkillName.Alchemy; break;
                     case "Anatomy": m_Skill = SkillName.Anatomy; break;
-                    //case "AnimalLore": m_Skill = SkillName.AnimalLore; break;
+                    case "AnimalLore": m_Skill = SkillName.AnimalLore; break;
                     case "ItemID": m_Skill = SkillName.ItemID; break;
                     case "ArmsLore": m_Skill = SkillName.ArmsLore; break;
                     case "Parry": m_Skill = SkillName.Parry; break;
                     case "Begging": m_Skill = SkillName.Begging; break;
                     case "Blacksmith": m_Skill = SkillName.Blacksmith; break;
-                    //case "Fletching": m_Skill = SkillName.Fletching; break;
+                    case "Fletching": m_Skill = SkillName.Fletching; break;
                     case "Peacemaking": m_Skill = SkillName.Peacemaking; break;
                     case "Camping": m_Skill = SkillName.Camping; break;
-                    //case "Carpentry": m_Skill = SkillName.Carpentry; break;
+                    case "Carpentry": m_Skill = SkillName.Carpentry; break;
                     case "Cartography": m_Skill = SkillName.Cartography; break;
                     case "Cooking": m_Skill = SkillName.Cooking; break;
                     case "DetectHidden": m_Skill = SkillName.DetectHidden; break;
@@ -404,7 +404,7 @@ namespace Server.Items
                     case "TasteID": m_Skill = SkillName.TasteID; break;
                     case "Tinkering": m_Skill = SkillName.Tinkering; break;
                     case "Tracking": m_Skill = SkillName.Tracking; break;
-                    //case "Veterinary": m_Skill = SkillName.Veterinary; break;
+                    case "Veterinary": m_Skill = SkillName.Veterinary; break;
                     case "Swords": m_Skill = SkillName.Swords; break;
                     case "Macing": m_Skill = SkillName.Macing; break;
                     case "Fencing": m_Skill = SkillName.Fencing; break;
@@ -414,6 +414,7 @@ namespace Server.Items
                     case "Meditation": m_Skill = SkillName.Meditation; break;
                     case "Stealth": m_Skill = SkillName.Stealth; break;
                     case "RemoveTrap": m_Skill = SkillName.RemoveTrap; break;
+                    case "Necromancy": m_Skill = SkillName.Necromancy; break;
                 }
             }
 

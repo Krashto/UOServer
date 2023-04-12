@@ -220,29 +220,29 @@ namespace Server.Engines.Craft
 
 		public override void InitCraftList()
         {
-			AddSpell("Sorts", typeof(AveuglementScroll), "Aéromancie - Aveuglement", 1);
-			AddSpell("Sorts", typeof(BrouillardScroll), "Aéromancie - Brouillard", 2);
-			AddSpell("Sorts", typeof(TeleportationScroll), "Aéromancie - Téleportation", 3);
-			AddSpell("Sorts", typeof(TornadoScroll), "Aéromancie - Tornado", 4);
-			AddSpell("Sorts", typeof(AuraEvasiveScroll), "Aéromancie - Aura évasive", 5);
-			AddSpell("Sorts", typeof(ExTeleportationScroll), "Aéromancie - Ex-téleportation", 6);
-			AddSpell("Sorts", typeof(ToucheSuffosantScroll), "Aéromancie - Touché suffosant", 7);
-			AddSpell("Sorts", typeof(AuraDeBrouillardScroll), "Aéromancie - Aura de brouillard", 8);
-			AddSpell("Sorts", typeof(VentFavorableScroll), "Aéromancie - Vent favorable", 9);
-			AddSpell("Sorts", typeof(VortexScroll), "Aéromancie - Vortex", 10);
+			AddSpell("Sorts", typeof(AveuglementScroll), "Aéro. - Aveuglement", 1);
+			AddSpell("Sorts", typeof(BrouillardScroll), "Aéro. - Brouillard", 2);
+			AddSpell("Sorts", typeof(TeleportationScroll), "Aéro. - Téleportation", 3);
+			AddSpell("Sorts", typeof(TornadoScroll), "Aéro. - Tornado", 4);
+			AddSpell("Sorts", typeof(AuraEvasiveScroll), "Aéro. - Aura évasive", 5);
+			AddSpell("Sorts", typeof(ExTeleportationScroll), "Aéro. - Ex-téleportation", 6);
+			AddSpell("Sorts", typeof(ToucheSuffosantScroll), "Aéro. - Touché suffosant", 7);
+			AddSpell("Sorts", typeof(AuraDeBrouillardScroll), "Aéro. - Aura de brouillard", 8);
+			AddSpell("Sorts", typeof(VentFavorableScroll), "Aéro. - Vent favorable", 9);
+			AddSpell("Sorts", typeof(VortexScroll), "Aéro. - Vortex", 10);
 
 			AddSpell("Sorts", typeof(AntidoteScroll), "Chasseur - Antidote", 1);
 			AddSpell("Sorts", typeof(MarquerScroll), "Chasseur - Marquer", 2);
-			AddSpell("Sorts", typeof(CompagnonAnimalScroll), "Chasseur - Compagnon animal", 3);
+			AddSpell("Sorts", typeof(CompagnonAnimalScroll), "Chasseur - Compagnon anim.", 3);
 			AddSpell("Sorts", typeof(SoinAnimalierScroll), "Chasseur - Soin animalier", 4);
 			AddSpell("Sorts", typeof(RugissementScroll), "Chasseur - Rugissement", 5);
-			AddSpell("Sorts", typeof(FrappeEnsanglanteeScroll), "Chasseur - Frappe ensanglantee", 6);
+			AddSpell("Sorts", typeof(FrappeEnsanglanteeScroll), "Chasseur - Frappe ensangl.", 6);
 			AddSpell("Sorts", typeof(SautAggressifScroll), "Chasseur - Saut aggressif", 7);
-			AddSpell("Sorts", typeof(CoupDansLeGenouScroll), "Chasseur - Coup dans le genou", 8);
+			AddSpell("Sorts", typeof(CoupDansLeGenouScroll), "Chasseur - Coup dans le gen.", 8);
 			AddSpell("Sorts", typeof(ChasseurDePrimeScroll), "Chasseur - Chasseur de prime", 9);
 			AddSpell("Sorts", typeof(ContratResoluScroll), "Chasseur - Contrat résolu", 10);
 
-			AddSpell("Sorts", typeof(CoupDeBouclierScroll), "Défenseur - Défenseur - Coup de bouclier", 1);
+			AddSpell("Sorts", typeof(CoupDeBouclierScroll), "Défenseur - Coup de bouclier", 1);
 			AddSpell("Sorts", typeof(BravadeScroll), "Défenseur - Bravade", 2);
 			AddSpell("Sorts", typeof(DevotionScroll), "Défenseur - Dévotion", 3);
 			AddSpell("Sorts", typeof(MutinerieScroll), "Défenseur - Mutinerie", 4);
@@ -253,38 +253,38 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(InsensibleScroll), "Défenseur - Insensible", 9);
 			AddSpell("Sorts", typeof(PiedsAuSolScroll), "Défenseur - Pieds su sol", 10);
 
-			AddSpell("Sorts", typeof(FortifieScroll), "Géomancie - Fortifié", 1);
-			AddSpell("Sorts", typeof(RocheScroll), "Géomancie - Roche", 2);
-			AddSpell("Sorts", typeof(ContaminationScroll), "Géomancie - Contamination", 3);
-			AddSpell("Sorts", typeof(EmpalementScroll), "Géomancie - Empalement", 4);
-			AddSpell("Sorts", typeof(AuraFortifianteScroll), "Géomancie - Aura fortifiante", 5);
-			AddSpell("Sorts", typeof(MurDePlanteScroll), "Géomancie - Mur de plante", 6);
-			AddSpell("Sorts", typeof(ExplosionDeRocheScroll), "Géomancie - Explosion de roche", 7);
-			AddSpell("Sorts", typeof(AuraPreservationManiaqueScroll), "Géomancie - Aura préservation maniaque", 8);
-			AddSpell("Sorts", typeof(RacinesScroll), "Géomancie - Racines", 9);
-			AddSpell("Sorts", typeof(FleauTerrestreScroll), "Géomancie - Fléau terrestre", 10);
+			AddSpell("Sorts", typeof(FortifieScroll), "Géo. - Fortifié", 1);
+			AddSpell("Sorts", typeof(RocheScroll), "Géo. - Roche", 2);
+			AddSpell("Sorts", typeof(ContaminationScroll), "Géo. - Contamination", 3);
+			AddSpell("Sorts", typeof(EmpalementScroll), "Géo. - Empalement", 4);
+			AddSpell("Sorts", typeof(AuraFortifianteScroll), "Géo. - Aura fortifiante", 5);
+			AddSpell("Sorts", typeof(MurDePlanteScroll), "Géo. - Mur de plante", 6);
+			AddSpell("Sorts", typeof(ExplosionDeRocheScroll), "Géo. - Explosion de roche", 7);
+			AddSpell("Sorts", typeof(AuraPreservationManiaqueScroll), "Géo. - Aura préserv. manaique", 8);
+			AddSpell("Sorts", typeof(RacinesScroll), "Géo. - Racines", 9);
+			AddSpell("Sorts", typeof(FleauTerrestreScroll), "Géo. - Fléau terrestre", 10);
 
-			AddSpell("Sorts", typeof(MainCicatrisanteScroll), "Guérison - Main cicatrisante", 1);
+			AddSpell("Sorts", typeof(MainCicatrisanteScroll), "Guérison - Main cicatri.", 1);
 			AddSpell("Sorts", typeof(RemedeScroll), "Guérison - Remède", 2);
 			AddSpell("Sorts", typeof(MurDePierreScroll), "Guérison - Mur de pierre", 3);
 			AddSpell("Sorts", typeof(RayonCelesteScroll), "Guérison - Rayon céleste", 4);
 			AddSpell("Sorts", typeof(LumiereSacreeScroll), "Guérison - Lumière sacrée", 5);
 			AddSpell("Sorts", typeof(FrayeurScroll), "Guérison - Frayeur", 6);
-			AddSpell("Sorts", typeof(FerveurDivineScroll), "Guérison - Ferveur divine", 7);
+			AddSpell("Sorts", typeof(FerveurDivineScroll), "Guérison - Ferveur divi.", 7);
 			AddSpell("Sorts", typeof(InquisitionScroll), "Guérison - Inquisition", 8);
 			AddSpell("Sorts", typeof(MurDeLumiereScroll), "Guérison - Mur de lumière", 9);
 			AddSpell("Sorts", typeof(DonDeLaVieScroll), "Guérison - Don de la vie", 10);
 
-			AddSpell("Sorts", typeof(ArmureDeGlaceScroll), "Hydromancie - Armure de glace", 1);
-			AddSpell("Sorts", typeof(RestaurationScroll), "Hydromancie - Restauration", 2);
-			AddSpell("Sorts", typeof(SoinPreventifScroll), "Hydromancie - Soin préventif", 3);
-			AddSpell("Sorts", typeof(CageDeGlaceScroll), "Hydromancie - Cage de glace", 4);
-			AddSpell("Sorts", typeof(AuraCryogeniseeScroll), "Hydromancie - Aura cryogenisée", 5);
-			AddSpell("Sorts", typeof(PieuxDeGlaceScroll), "Hydromancie - Pieux de glace", 6);
-			AddSpell("Sorts", typeof(CerveauGeleScroll), "Hydromancie - Cerveau gelé", 7);
-			AddSpell("Sorts", typeof(AuraRefrigeranteScroll), "Hydromancie - Aura réfrigerante", 8);
-			AddSpell("Sorts", typeof(AvatarDuFroidScroll), "Hydromancie - Avatar de froid", 9);
-			AddSpell("Sorts", typeof(BlizzardScroll), "Hydromancie - Blizzard", 10);
+			AddSpell("Sorts", typeof(ArmureDeGlaceScroll), "Hydro. - Armure de glace", 1);
+			AddSpell("Sorts", typeof(RestaurationScroll), "Hydro. - Restauration", 2);
+			AddSpell("Sorts", typeof(SoinPreventifScroll), "Hydro. - Soin préventif", 3);
+			AddSpell("Sorts", typeof(CageDeGlaceScroll), "Hydro. - Cage de glace", 4);
+			AddSpell("Sorts", typeof(AuraCryogeniseeScroll), "Hydro. - Aura cryogenisée", 5);
+			AddSpell("Sorts", typeof(PieuxDeGlaceScroll), "Hydro. - Pieux de glace", 6);
+			AddSpell("Sorts", typeof(CerveauGeleScroll), "Hydro. - Cerveau gelé", 7);
+			AddSpell("Sorts", typeof(AuraRefrigeranteScroll), "Hydro. - Aura réfrigerante", 8);
+			AddSpell("Sorts", typeof(AvatarDuFroidScroll), "Hydro. - Avatar de froid", 9);
+			AddSpell("Sorts", typeof(BlizzardScroll), "Hydro. - Blizzard", 10);
 
 			AddSpell("Sorts", typeof(SecondSouffleScroll), "Martial - Second souffle", 1);
 			AddSpell("Sorts", typeof(ProvocationScroll), "Martial - Provocation", 2);
@@ -294,74 +294,74 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(EnrageScroll), "Martial - Enragé", 6);
 			AddSpell("Sorts", typeof(BouclierMagiqueScroll), "Martial - Bouclier magique", 7);
 			AddSpell("Sorts", typeof(CommandementScroll), "Martial - Commandement", 8);
-			AddSpell("Sorts", typeof(PresenceInspiranteScroll), "Martial - Présence inspirante", 9);
+			AddSpell("Sorts", typeof(PresenceInspiranteScroll), "Martial - Présence inspir.", 9);
 			AddSpell("Sorts", typeof(AngeGardienScroll), "Martial - Ange gardien", 10);
 
 			AddSpell("Sorts", typeof(DiversionScroll), "Musique - Diversion", 1);
 			AddSpell("Sorts", typeof(CalmeToiScroll), "Musique - Calme toi!", 2);
 			AddSpell("Sorts", typeof(DesorienterScroll), "Musique - Désorienter", 3);
 			AddSpell("Sorts", typeof(DefiScroll), "Musique - Defi", 4);
-			AddSpell("Sorts", typeof(DecrescendoManiaqueScroll), "Musique - Decrescendo maniaque", 5);
-			AddSpell("Sorts", typeof(InspirationElementaireScroll), "Musique - Inspiration élémentaire", 6);
-			AddSpell("Sorts", typeof(AbsorbationSonoreScroll), "Musique - Absorbation sonore", 7);
-			AddSpell("Sorts", typeof(ParfaiteAspirationScroll), "Musique - Parfaite aspiration", 8);
-			AddSpell("Sorts", typeof(RevelationDiscordanteScroll), "Musique - Révelation discordante", 9);
+			AddSpell("Sorts", typeof(DecrescendoManiaqueScroll), "Musique - Decrescendo mana.", 5);
+			AddSpell("Sorts", typeof(InspirationElementaireScroll), "Musique - Inspiration élément.", 6);
+			AddSpell("Sorts", typeof(AbsorbationSonoreScroll), "Musique - Absorba. sonore", 7);
+			AddSpell("Sorts", typeof(ParfaiteAspirationScroll), "Musique - Parfaite aspirat.", 8);
+			AddSpell("Sorts", typeof(RevelationDiscordanteScroll), "Musique - Révelation discord.", 9);
 			AddSpell("Sorts", typeof(HavreDePaixScroll), "Musique - Havre de paix", 10);
 
-			AddSpell("Sorts", typeof(SoifDeSangScroll), "Nécromancie - Soif de sang", 1);
-			AddSpell("Sorts", typeof(ToucheAbsorbantScroll), "Nécromancie - Touché absorbant", 2);
-			AddSpell("Sorts", typeof(InfectionScroll), "Nécromancie - Infection", 3);
-			AddSpell("Sorts", typeof(ArmureOsScroll), "Nécromancie - Armure d'os", 4);
-			AddSpell("Sorts", typeof(FamilierMorbideScroll), "Nécromancie - Familier morbide", 5);
-			AddSpell("Sorts", typeof(ReanimationScroll), "Nécromancie - Réanimation", 6);
-			AddSpell("Sorts", typeof(ConsommationMortelleScroll), "Nécromancie - Consommation mortelle", 7);
-			AddSpell("Sorts", typeof(AuraVampiriqueScroll), "Nécromancie - Aura vampirique", 8);
-			AddSpell("Sorts", typeof(AppelDuSangScroll), "Nécromancie - Appel du sang", 9);
-			AddSpell("Sorts", typeof(PluieDeSangScroll), "Nécromancie - Pluie de sang", 10);
+			AddSpell("Sorts", typeof(SoifDeSangScroll), "Nécro. - Soif de sang", 1);
+			AddSpell("Sorts", typeof(ToucheAbsorbantScroll), "Nécro. - Touché absorbant", 2);
+			AddSpell("Sorts", typeof(InfectionScroll), "Nécro. - Infection", 3);
+			AddSpell("Sorts", typeof(ArmureOsScroll), "Nécro. - Armure d'os", 4);
+			AddSpell("Sorts", typeof(FamilierMorbideScroll), "Nécro. - Familier morbide", 5);
+			AddSpell("Sorts", typeof(ReanimationScroll), "Nécro. - Réanimation", 6);
+			AddSpell("Sorts", typeof(ConsommationMortelleScroll), "Nécro. - Consommation mortelle", 7);
+			AddSpell("Sorts", typeof(AuraVampiriqueScroll), "Nécro. - Aura vampirique", 8);
+			AddSpell("Sorts", typeof(AppelDuSangScroll), "Nécro. - Appel du sang", 9);
+			AddSpell("Sorts", typeof(PluieDeSangScroll), "Nécro. - Pluie de sang", 10);
 
-			AddSpell("Sorts", typeof(FormeCycloniqueScroll), "Forme cyclonique", 1);
-			AddSpell("Sorts", typeof(FormeMetalliqueScroll), "Polymorphie - Forme métallique", 2);
-			AddSpell("Sorts", typeof(FormeTerrestreScroll), "Polymorphie - Forme terrestre", 3);
-			AddSpell("Sorts", typeof(FormeEmpoisonneeScroll), "Polymorphie - Forme empoisonnée", 4);
-			AddSpell("Sorts", typeof(FormeGivranteScroll), "Polymorphie - Forme givrante", 5);
-			AddSpell("Sorts", typeof(FormeLiquideScroll), "Polymorphie - Forme liquide", 6);
-			AddSpell("Sorts", typeof(FormeCristallineScroll), "Polymorphie - Forme cristalline", 7);
-			AddSpell("Sorts", typeof(FormeElectrisanteScroll), "Polymorphie - Forme électrisante", 8);
-			AddSpell("Sorts", typeof(FormeEnflammeeScroll), "Polymorphie - Forme enflammée", 9);
-			AddSpell("Sorts", typeof(FormeEnsanglanteeScroll), "Polymorphie - Forme ensanglantée", 10);
+			AddSpell("Sorts", typeof(FormeCycloniqueScroll), "Polymorphie - Cyclonique", 1);
+			AddSpell("Sorts", typeof(FormeMetalliqueScroll), "Polymorphie - Métallique", 2);
+			AddSpell("Sorts", typeof(FormeTerrestreScroll), "Polymorphie - Terrestre", 3);
+			AddSpell("Sorts", typeof(FormeEmpoisonneeScroll), "Polymorphie - Empoisonnée", 4);
+			AddSpell("Sorts", typeof(FormeGivranteScroll), "Polymorphie - Givrante", 5);
+			AddSpell("Sorts", typeof(FormeLiquideScroll), "Polymorphie - Liquide", 6);
+			AddSpell("Sorts", typeof(FormeCristallineScroll), "Polymorphie - Cristalline", 7);
+			AddSpell("Sorts", typeof(FormeElectrisanteScroll), "Polymorphie - Électrisante", 8);
+			AddSpell("Sorts", typeof(FormeEnflammeeScroll), "Polymorphie - Enflammée", 9);
+			AddSpell("Sorts", typeof(FormeEnsanglanteeScroll), "Polymorphie - Ensanglantée", 10);
 
-			AddSpell("Sorts", typeof(BouclierDeFeuScroll), "Pyromancie - Bouclier de feu", 1);
-			AddSpell("Sorts", typeof(BouleDeFeuScroll), "Pyromancie - Boule de feu", 2);
-			AddSpell("Sorts", typeof(CeleriteScroll), "Pyromancie - Célérité", 3);
-			AddSpell("Sorts", typeof(SupernovaScroll), "Pyromancie - Supernova", 4);
-			AddSpell("Sorts", typeof(AuraRechauffanteScroll), "Pyromancie - Aura réchauffante", 5);
-			AddSpell("Sorts", typeof(FrenesieDouloureuseScroll), "Pyromancie - Frénésie douloureuse", 6);
-			AddSpell("Sorts", typeof(FolieArdenteScroll), "Pyromancie - Folie ardente", 7);
-			AddSpell("Sorts", typeof(AuraExaltationScroll), "Pyromancie - Aura d'exaltation", 8);
-			AddSpell("Sorts", typeof(CageDeFeuScroll), "Pyromancie - Cage de feu", 9);
-			AddSpell("Sorts", typeof(PassionArdenteScroll), "Pyromancie - Passion ardente", 10);
+			AddSpell("Sorts", typeof(BouclierDeFeuScroll), "Pyro. - Bouclier de feu", 1);
+			AddSpell("Sorts", typeof(BouleDeFeuScroll), "Pyro. - Boule de feu", 2);
+			AddSpell("Sorts", typeof(CeleriteScroll), "Pyro. - Célérité", 3);
+			AddSpell("Sorts", typeof(SupernovaScroll), "Pyro. - Supernova", 4);
+			AddSpell("Sorts", typeof(AuraRechauffanteScroll), "Pyro. - Aura réchauffante", 5);
+			AddSpell("Sorts", typeof(FrenesieDouloureuseScroll), "Pyro. - Frénésie douloureuse", 6);
+			AddSpell("Sorts", typeof(FolieArdenteScroll), "Pyro. - Folie ardente", 7);
+			AddSpell("Sorts", typeof(AuraExaltationScroll), "Pyro. - Aura d'exaltation", 8);
+			AddSpell("Sorts", typeof(CageDeFeuScroll), "Pyro. - Cage de feu", 9);
+			AddSpell("Sorts", typeof(PassionArdenteScroll), "Pyro. - Passion ardente", 10);
 
-			AddSpell("Sorts", typeof(AdrenalineScroll), "Roublardise - Adrénaline", 1);
-			AddSpell("Sorts", typeof(SommeilScroll), "Roublardise - Sommeil", 2);
-			AddSpell("Sorts", typeof(LancerPrecisScroll), "Roublardise - Lancer précis", 3);
-			AddSpell("Sorts", typeof(CoupArriereScroll), "Roublardise - Coup arrière", 4);
-			AddSpell("Sorts", typeof(EvasionScroll), "Roublardise - Évasion", 5);
-			AddSpell("Sorts", typeof(AttiranceScroll), "Roublardise - Attirance", 6);
-			AddSpell("Sorts", typeof(MainBlesseeScroll), "Roublardise - Main blessée", 7);
-			AddSpell("Sorts", typeof(CoupureDesTendonsScroll), "Roublardise - Coupure des tendons", 8);
-			AddSpell("Sorts", typeof(GazEndormantScroll), "Roublardise - Gaz endormant", 9);
-			AddSpell("Sorts", typeof(CoupMortelScroll), "Roublardise - Coup mortel", 10);
+			AddSpell("Sorts", typeof(AdrenalineScroll), "Roubl. - Adrénaline", 1);
+			AddSpell("Sorts", typeof(SommeilScroll), "Roubl. - Sommeil", 2);
+			AddSpell("Sorts", typeof(LancerPrecisScroll), "Roubl. - Lancer précis", 3);
+			AddSpell("Sorts", typeof(CoupArriereScroll), "Roubl. - Coup arrière", 4);
+			AddSpell("Sorts", typeof(EvasionScroll), "Roubl. - Évasion", 5);
+			AddSpell("Sorts", typeof(AttiranceScroll), "Roubl. - Attirance", 6);
+			AddSpell("Sorts", typeof(MainBlesseeScroll), "Roubl. - Main blessée", 7);
+			AddSpell("Sorts", typeof(CoupureDesTendonsScroll), "Roubl. - Coupure des tendons", 8);
+			AddSpell("Sorts", typeof(GazEndormantScroll), "Roubl. - Gaz endormant", 9);
+			AddSpell("Sorts", typeof(CoupMortelScroll), "Roubl. - Coup mortel", 10);
 
-			AddSpell("Sorts", typeof(TotemDeFeuScroll), "Totémique - Totem de feu", 1);
-			AddSpell("Sorts", typeof(TotemDeauScroll), "Totémique - Totem d'eau", 2);
-			AddSpell("Sorts", typeof(TotemDeTerreScroll), "Totémique - Totem de terre", 3);
-			AddSpell("Sorts", typeof(TotemDeVentScroll), "Totémique - Totem de vent", 4);
-			AddSpell("Sorts", typeof(AbsorbationScroll), "Totémique - Absorbation", 5);
-			AddSpell("Sorts", typeof(LierParEspritScroll), "Totémique - Lier par l'esprit", 6);
-			AddSpell("Sorts", typeof(SuperChargeurScroll), "Totémique - Super chargeur", 7);
-			AddSpell("Sorts", typeof(MurTotemiqueScroll), "Totémique - Mur totémique", 8);
-			AddSpell("Sorts", typeof(AppelSpirituelScroll), "Totémique - Appel spirituel", 9);
-			AddSpell("Sorts", typeof(MarcheAsuivreScroll), "Totémique - Marche à suivre", 10);
+			AddSpell("Sorts", typeof(TotemDeFeuScroll), "Toté. - Totem de feu", 1);
+			AddSpell("Sorts", typeof(TotemDeauScroll), "Toté. - Totem d'eau", 2);
+			AddSpell("Sorts", typeof(TotemDeTerreScroll), "Toté. - Totem de terre", 3);
+			AddSpell("Sorts", typeof(TotemDeVentScroll), "Toté. - Totem de vent", 4);
+			AddSpell("Sorts", typeof(AbsorbationScroll), "Toté. - Absorbation", 5);
+			AddSpell("Sorts", typeof(LierParEspritScroll), "Toté. - Lier par l'esprit", 6);
+			AddSpell("Sorts", typeof(SuperChargeurScroll), "Toté. - Super chargeur", 7);
+			AddSpell("Sorts", typeof(MurTotemiqueScroll), "Toté. - Mur totémique", 8);
+			AddSpell("Sorts", typeof(AppelSpirituelScroll), "Toté. - Appel spirituel", 9);
+			AddSpell("Sorts", typeof(MarcheAsuivreScroll), "Toté. - Marche à suivre", 10);
 
 			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Livre de sort", 50.0, 126, typeof(PlainoisLeather), 1044377, 10, 1044378);
 			index = AddCraft(typeof(LivreClasseAucune), "Magie/Classes", "Livre d'oubli de classe", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -381,49 +381,50 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreSkillsAnimalTaming), "Livre d'étude (skills)", "AnimalTaming", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsArchery), "Livre d'étude (skills)", "Archery", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsArmsLore), "Livre d'étude (skills)", "ArmsLore", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsBegging), "Livre d'étude (skills)", "Begging", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsBegging), "Livre d'étude (skills)", "Begging", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsBlacksmith), "Livre d'étude (skills)", "Blacksmith", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsCamping), "Livre d'étude (skills)", "Camping", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsCarpentry), "Livre d'étude (skills)", "Carpentry", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsCartography), "Livre d'étude (skills)", "Cartography", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsCartography), "Livre d'étude (skills)", "Cartography", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsCooking), "Livre d'étude (skills)", "Cooking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsDetectHidden), "Livre d'étude (skills)", "DetectHidden", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsDiscordance), "Livre d'étude (skills)", "Discordance", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsDetectHidden), "Livre d'étude (skills)", "DetectHidden", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsDiscordance), "Livre d'étude (skills)", "Discordance", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsEvalInt), "Livre d'étude (skills)", "EvalInt", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsFencing), "Livre d'étude (skills)", "Fencing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsFishing), "Livre d'étude (skills)", "Fishing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsFletching), "Livre d'étude (skills)", "Fletching", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsForensics), "Livre d'étude (skills)", "Forensics", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsForensics), "Livre d'étude (skills)", "Forensics", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsHealing), "Livre d'étude (skills)", "Healing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsHerding), "Livre d'étude (skills)", "Herding", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsHerding), "Livre d'étude (skills)", "Herding", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsHiding), "Livre d'étude (skills)", "Hiding", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsInscribe), "Livre d'étude (skills)", "Inscribe", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsItemID), "Livre d'étude (skills)", "ItemID", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsLockpicking), "Livre d'étude (skills)", "Lockpicking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsItemID), "Livre d'étude (skills)", "ItemID", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsLockpicking), "Livre d'étude (skills)", "Lockpicking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreSkillsLumberjacking), "Livre d'étude (skills)", "Lumberjacking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsMacing), "Livre d'étude (skills)", "Macing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsMagery), "Livre d'étude (skills)", "Magery", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsMagicResist), "Livre d'étude (skills)", "MagicResist", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsMeditation), "Livre d'étude (skills)", "Meditation", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsMining), "Livre d'étude (skills)", "Mining", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsMusicianship), "Livre d'étude (skills)", "Musicianship", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreSkillsNecromancy), "Livre d'étude (skills)", "Necromancy", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsParry), "Livre d'étude (skills)", "Parry", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsPeacemaking), "Livre d'étude (skills)", "Peacemaking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsPeacemaking), "Livre d'étude (skills)", "Peacemaking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsPoisoning), "Livre d'étude (skills)", "Poisoning", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsProvocation), "Livre d'étude (skills)", "Provocation", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsRemoveTrap), "Livre d'étude (skills)", "Remove Trap", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsProvocation), "Livre d'étude (skills)", "Provocation", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsRemoveTrap), "Livre d'étude (skills)", "Remove Trap", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsSpiritSpeak), "Livre d'étude (skills)", "SpiritSpeak", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsSnooping), "Livre d'étude (skills)", "Snooping", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsStealing), "Livre d'étude (skills)", "Stealing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsEquitation), "Livre d'étude (skills)", "Equitation", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsStealing), "Livre d'étude (skills)", "Stealing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsStealth), "Livre d'étude (skills)", "Stealth", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsSwords), "Livre d'étude (skills)", "Swords", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsTactics), "Livre d'étude (skills)", "Tactics", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsTailoring), "Livre d'étude (skills)", "Tailoring", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsTasteID), "Livre d'étude (skills)", "TasteID", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsTasteID), "Livre d'étude (skills)", "TasteID", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsTinkering), "Livre d'étude (skills)", "Tinkering", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsTracking), "Livre d'étude (skills)", "Tracking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsVeterinary), "Livre d'étude (skills)", "Veterinary", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsWrestling), "Livre d'étude (skills)", "Wrestling", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsLumberjacking), "Livre d'étude (skills)", "Lumberjacking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			#endregion
 
 			#region Artisans
@@ -470,23 +471,19 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreClasseApprenti), "Mages", "Aéromancien - Apprenti", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseEvocateur), "Mages", "Aéromancien - Évocateur", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseAeromancien), "Mages", "Aéromancien - Aéromancien", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-
-			index = AddCraft(typeof(LivreClasseMultiforme), "Mages", "Changeforme - Multiforme", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseDiversiforme), "Mages", "Changeforme - Diversiforme", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseChangeforme), "Mages", "Changeforme - Changeforme", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-
+			
 			index = AddCraft(typeof(LivreClasseNaturaliste), "Mages", "Géomancien - Naturaliste", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseDruide), "Mages", "Géomancien - Druide", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseGeomancien), "Mages", "Géomancien - Géomancien", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
+			index = AddCraft(typeof(LivreClasseIntervenant), "Mages", "Guérisseur - Intervenant", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseSoigneur), "Mages", "Guérisseur - Soigneur", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseGuerisseur), "Mages", "Guérisseur - Guérisseur", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+
 			index = AddCraft(typeof(LivreClasseMage), "Mages", "Hydromancien - Mage", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseMagicien), "Mages", "Hydromancien - Magicien", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseHydromancien), "Mages", "Hydromancien - Hydromancien", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-
-			index = AddCraft(typeof(LivreClasseTroubadour), "Mages", "Ménestrel - Troubadour", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseBarde), "Mages", "Ménestrel - Barde", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseMenestrel), "Mages", "Ménestrel - Ménestrel", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-
+			
 			index = AddCraft(typeof(LivreClasseThanathauste), "Mages", "Nécromancien - Thanathauste", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseNecromage), "Mages", "Nécromancien - Nécromage", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseNecromancien), "Mages", "Nécromancien - Nécromancien", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -501,6 +498,14 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Roublards
+			index = AddCraft(typeof(LivreClasseMultiforme), "Roublards", "Changeforme - Multiforme", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseDiversiforme), "Roublards", "Changeforme - Diversiforme", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseChangeforme), "Roublards", "Changeforme - Changeforme", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+
+			index = AddCraft(typeof(LivreClasseTroubadour), "Roublards", "Ménestrel - Troubadour", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseBarde), "Roublards", "Ménestrel - Barde", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseMenestrel), "Roublards", "Ménestrel - Ménestrel", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+
 			index = AddCraft(typeof(LivreClasseTraqueur), "Roublards", "Rôdeur - Traqueur", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClassePisteur), "Roublards", "Rôdeur - Pisteur", 70.0, 70.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseRodeur), "Roublards", "Rôdeur - Rôdeur", 90.0, 90.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");

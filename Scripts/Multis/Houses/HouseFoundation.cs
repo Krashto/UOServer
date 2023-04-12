@@ -970,6 +970,7 @@ namespace Server.Multis
         }
         #endregion
 
+
         public void EndConfirmCommit(Mobile from)
         {
             int oldPrice = Price;
@@ -980,9 +981,7 @@ namespace Server.Multis
             {
                 // Temporary Fix. We should be booting a client out of customization mode in the delete handler.
                 if (from.AccessLevel >= AccessLevel.GameMaster && cost != 0)
-                {
                     from.SendMessage("{0} material would have been {1} your bank if you were not a GM.", cost.ToString(), ((cost > 0) ? "withdrawn from" : "deposited into"));
-                }
                 else
                 {
                     if (cost > 0)
@@ -990,8 +989,10 @@ namespace Server.Multis
 						if (CustomUtility.ConsumeItemInBank(from, typeof(Materiaux), cost))
 							from.SendMessage($"{cost} matériaux ont été retirés de votre coffre de banque.");
 						else
+						{
 							from.SendMessage($"Il vous faut {cost} matériaux dans votre coffre de banque pour fabriquer le tout.");
 							return;
+						}
 					}
                     else if (cost < 0)
                     {
@@ -1071,11 +1072,12 @@ namespace Server.Multis
 
             if (context != null)
             {
-                int oldPrice = context.Foundation.Price;
-                int newPrice = oldPrice + context.Foundation.CustomizationCost + ((context.Foundation.DesignState.Components.List.Length - (context.Foundation.CurrentState.Components.List.Length + context.Foundation.Fixtures.Count)) * 500);
-                int bankBalance = Banker.GetBalance(from);
+				int initPrice = context.Foundation.InitPrice;
+				int oldPrice = context.Foundation.Price;
+                int newPrice = oldPrice + context.Foundation.CustomizationCost + ((context.Foundation.DesignState.Components.List.Length - (context.Foundation.CurrentState.Components.List.Length + context.Foundation.Fixtures.Count)) * 5);
+                int bankBalance = CustomUtility.GetItemAmountInBank(from, typeof(Materiaux));
 
-                from.SendGump(new ConfirmCommitGump(from, context.Foundation, bankBalance, oldPrice, newPrice));
+                from.SendGump(new ConfirmCommitGump(from, context.Foundation, bankBalance, initPrice, oldPrice, newPrice));
             }
         }
 
@@ -2042,8 +2044,7 @@ namespace Server.Multis
     {
         private readonly HouseFoundation m_Foundation;
 
-        public ConfirmCommitGump(Mobile from, HouseFoundation foundation, int bankBalance, int oldPrice, int newPrice)
-            : base(50, 50)
+        public ConfirmCommitGump(Mobile from, HouseFoundation foundation, int bankBalance, int initPrice, int oldPrice, int newPrice) : base(50, 50)
         {
             m_Foundation = foundation;
 
@@ -2057,35 +2058,38 @@ namespace Server.Multis
 
             AddAlphaRegion(10, 10, 300, 300);
 
-            AddHtmlLocalized(10, 10, 300, 20, 1062060, 32736, false, false); // <CENTER>COMMIT DESIGN</CENTER>
+            AddHtml(10, 10, 300, 20, "<CENTER><BASEFONT COLOR=#FFFFFF>Validation du design</BASEFONT></CENTER>", false, false);
 
-            AddHtmlLocalized(10, 40, 300, 140, (newPrice - oldPrice) <= bankBalance ? 1061898 : 1061903, 1023, false, true);
+			if ((newPrice - oldPrice) <= bankBalance)
+				AddHtml(10, 40, 300, 140, "Vous êtes sur le point de valider la conception de votre maison actuelle. Pour ce faire, vous devez payer la différence entre la valeur actuelle en matériaux de la maison et le coût en matériaux indiqué sur le menu du constructeur de maisons. Si le nouveau coût en matériaux de votre maison est inférieur à son ancienne valeur, vous recevrez un remboursement.", false, true);
+			else
+				AddHtml(10, 40, 300, 140, "Vous ne pouvez pas valider cette conception de maison, car vous n'avez pas les matériaux nécessaires dans votre coffre bancaire pour payer la mise à niveau. Veuillez sauvegarder votre conception, obtenir les matériaux nécessaires et valider à nouveau votre conception.", false, true);
 
-            AddHtmlLocalized(10, 190, 150, 20, 1061902, 32736, false, false); // Bank Balance:
-            AddLabel(170, 190, 55, bankBalance.ToString());
+			AddHtml(10, 190, 200, 20, $"<BASEFONT COLOR=#FFFFFF>Matériaux en banque</BASEFONT>", false, false);
+            AddHtml(200, 190, 200, 20, $"<BASEFONT COLOR=#FFFFFF>{bankBalance}</BASEFONT>", false, false);
 
-            AddHtmlLocalized(10, 215, 150, 20, 1061899, 1023, false, false); // Old Value:
-            AddLabel(170, 215, 90, oldPrice.ToString());
+			AddHtml(10, 210, 200, 20, $"<BASEFONT COLOR=#FFFFFF>Matériaux utilisés (Avant)</BASEFONT>", false, false);
+			AddHtml(200, 210, 200, 20, $"<BASEFONT COLOR=#FFFFFF>{oldPrice - initPrice}</BASEFONT>", false, false);
 
-            AddHtmlLocalized(10, 235, 150, 20, 1061900, 1023, false, false); // Cost To Commit:
-            AddLabel(170, 235, 90, newPrice.ToString());
+			AddHtml(10, 230, 200, 20, $"<BASEFONT COLOR=#FFFFFF>Matériaux utilisés (Après)</BASEFONT>", false, false);
+			AddHtml(200, 230, 200, 20, $"<BASEFONT COLOR=#FFFFFF>{newPrice - initPrice}</BASEFONT>", false, false);
 
             if (newPrice - oldPrice < 0)
             {
-                AddHtmlLocalized(10, 260, 150, 20, 1062059, 992, false, false); // Your Refund:
-                AddLabel(170, 260, 70, (oldPrice - newPrice).ToString());
+				AddHtml(10, 250, 200, 20, $"<BASEFONT COLOR=#FFFFFF>Remboursement de matériaux</BASEFONT>", false, false);
+				AddHtml(200, 250, 200, 20, $"<BASEFONT COLOR=#FFFFFF>{oldPrice - newPrice}</BASEFONT>", false, false);
             }
             else
             {
-                AddHtmlLocalized(10, 260, 150, 20, 1061901, 31744, false, false); // Your Cost:
-                AddLabel(170, 260, 40, (newPrice - oldPrice).ToString());
+				AddHtml(10, 250, 200, 20, $"<BASEFONT COLOR=#FFFFFF>Coût en matériaux</BASEFONT>", false, false);
+				AddHtml(200, 250, 200, 20, $"<BASEFONT COLOR=#FFFFFF>{newPrice - oldPrice}</BASEFONT>", false, false);
             }
 
             AddButton(10, 290, 4005, 4007, 1, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(45, 290, 55, 20, 1011036, 32767, false, false); // OKAY
+			AddHtml(45, 290, 150, 20, $"<BASEFONT COLOR=#FFFFFF>Appliquer</BASEFONT>", false, false);
 
             AddButton(170, 290, 4005, 4007, 0, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(195, 290, 55, 20, 1011012, 32767, false, false); // CANCEL
+			AddHtml(205, 290, 150, 20, $"<BASEFONT COLOR=#FFFFFF>Annuler</BASEFONT>", false, false);
         }
 
         public override void OnResponse(NetState sender, RelayInfo info)
