@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				SpellCircle.Second,
 				203,
 				9041,
-				Reagent.BlackPearl,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh
+				Reagent.EssenceGuerison
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

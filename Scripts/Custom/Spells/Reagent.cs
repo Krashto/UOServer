@@ -5,7 +5,7 @@ namespace Server.Spells
 {
 	public class Reagent
 	{
-		private static Type[] m_Types = new Type[13]
+		private static Type[] m_Types = new Type[26]
 			{
 				typeof( BlackPearl ),
 				typeof( Bloodmoss ),
@@ -19,7 +19,20 @@ namespace Server.Spells
 				typeof( GraveDust ),
 				typeof( DaemonBlood ),
 				typeof( NoxCrystal ),
-				typeof( PigIron )
+				typeof( PigIron ),
+				typeof( EssenceAeromancie ),
+				typeof( EssenceChasseur ),
+				typeof( EssenceDefenseur ),
+				typeof( EssenceGeomancie ),
+				typeof( EssenceGuerison ),
+				typeof( EssenceHydromancie ),
+				typeof( EssenceMartial ),
+				typeof( EssenceMusique ),
+				typeof( EssenceNecromancie ),
+				typeof( EssencePolymorphie ),
+				typeof( EssencePyromancie ),
+				typeof( EssenceRoublardise ),
+				typeof( EssenceTotemique )
 			};
 
 		public Type[] Types
@@ -103,6 +116,71 @@ namespace Server.Spells
 		{
 			get{ return m_Types[12]; }
 			set{ m_Types[12] = value; }
+		}
+		public static Type EssenceAeromancie
+		{
+			get { return m_Types[13]; }
+			set { m_Types[13] = value; }
+		}
+		public static Type EssenceChasseur
+		{
+			get { return m_Types[14]; }
+			set { m_Types[14] = value; }
+		}
+		public static Type EssenceDefenseur
+		{
+			get { return m_Types[15]; }
+			set { m_Types[15] = value; }
+		}
+		public static Type EssenceGeomancie
+		{
+			get { return m_Types[16]; }
+			set { m_Types[16] = value; }
+		}
+		public static Type EssenceGuerison
+		{
+			get { return m_Types[17]; }
+			set { m_Types[17] = value; }
+		}
+		public static Type EssenceHydromancie
+		{
+			get { return m_Types[18]; }
+			set { m_Types[18] = value; }
+		}
+		public static Type EssenceMartial
+		{
+			get { return m_Types[19]; }
+			set { m_Types[19] = value; }
+		}
+		public static Type EssenceMusique
+		{
+			get { return m_Types[20]; }
+			set { m_Types[20] = value; }
+		}
+		public static Type EssenceNecromancie
+		{
+			get { return m_Types[21]; }
+			set { m_Types[21] = value; }
+		}
+		public static Type EssencePolymorphie
+		{
+			get { return m_Types[22]; }
+			set { m_Types[22] = value; }
+		}
+		public static Type EssencePyromancie
+		{
+			get { return m_Types[23]; }
+			set { m_Types[23] = value; }
+		}
+		public static Type EssenceRoublardise
+		{
+			get { return m_Types[24]; }
+			set { m_Types[24] = value; }
+		}
+		public static Type EssenceTotemique
+		{
+			get { return m_Types[25]; }
+			set { m_Types[25] = value; }
 		}
 	}
 }

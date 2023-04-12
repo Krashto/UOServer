@@ -12,8 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.Third,
 				215,
 				9031,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

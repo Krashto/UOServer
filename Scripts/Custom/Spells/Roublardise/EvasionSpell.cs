@@ -16,7 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.First,
 				236,
 				9011,
-				Reagent.BlackPearl
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

@@ -1,10 +1,11 @@
 using System.Collections;
 using Server.Custom.Aptitudes;
+using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Mobiles;
 using Server.Spells;
 using VitaNex.FX;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class SupernovaSpell : Spell
 	{
@@ -14,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				233,
 				9042,
 				false,
-				Reagent.SulfurousAsh,
-				Reagent.SulfurousAsh,
-				Reagent.SulfurousAsh
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

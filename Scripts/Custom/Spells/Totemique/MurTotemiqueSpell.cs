@@ -12,13 +12,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class MurTotemiqueSpell : Spell
 	{
 		private static readonly SpellInfo m_Info = new SpellInfo(
-			"Mur totemique", "[Mur totemique]",
-			SpellCircle.Eighth,
-			269,
-			9070,
-			Reagent.Bloodmoss,
-			Reagent.MandrakeRoot,
-			Reagent.SpidersSilk);
+				"Mur totemique", "[Mur totemique]",
+				SpellCircle.Eighth,
+				269,
+				9070,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 8; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

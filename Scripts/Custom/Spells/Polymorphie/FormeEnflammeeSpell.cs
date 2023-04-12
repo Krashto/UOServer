@@ -16,10 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Sixth,
 				269,
 				9050,
-				false,
-				Reagent.SulfurousAsh,
-				Reagent.SpidersSilk,
-				Reagent.SulfurousAsh
+				Reagent.EssencePolymorphie
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

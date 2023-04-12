@@ -41,8 +41,6 @@ namespace Server.Mobiles
 		private DateTime m_LastPay;
 		private int m_Salaire;
 
-		private List<int> m_QuickSpells = new List<int>();
-
 		private int m_IdentiteId;
 
 		private bool m_Masque = false;
@@ -258,12 +256,7 @@ namespace Server.Mobiles
 
 			return value;
 		}
-		public List<int> QuickSpells
-		{
-			get { return m_QuickSpells; }
-			set { m_QuickSpells = value; }
-		}
-
+		
 		public new static void Initialize()
 		{
 			EventSink.Login += new LoginEventHandler(OnLogin);
@@ -1374,6 +1367,7 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
+				case 3:
 				case 2:
 					{
 						PointsAncestraux = new PointsAncestraux(this, reader);
@@ -1417,10 +1411,13 @@ namespace Server.Mobiles
 						m_BaseFemale = reader.ReadBool();
 						ChosenSpellbook = (NewSpellbook)reader.ReadItem();
 
-						QuickSpells = new List<int>();
-						count = reader.ReadInt();
-						for (int i = 0; i < count; i++)
-							QuickSpells.Add(reader.ReadInt());
+						if (version < 3)
+						{
+							count = reader.ReadInt();
+							for (int i = 0; i < count; i++)
+								/*QuickSpells.Add(*/reader.ReadInt()/*)*/;
+						}
+						
 						m_LastLoginTime = reader.ReadDateTime();
 						m_Grandeur = (GrandeurEnum)reader.ReadInt();
 						m_Corpulence = (CorpulenceEnum)reader.ReadInt();
@@ -1438,7 +1435,7 @@ namespace Server.Mobiles
         {        
             base.Serialize(writer);
 
-            writer.Write(2); // version
+            writer.Write(3); // version
 
 			//Version 2
 			PointsAncestraux.Serialize(writer);
@@ -1481,10 +1478,6 @@ namespace Server.Mobiles
 			writer.Write(m_BaseRace.RaceID);
 			writer.Write(m_BaseFemale);
 			writer.Write(ChosenSpellbook);
-
-			writer.Write(QuickSpells.Count);
-			for (int i = 0; i < QuickSpells.Count; i++)
-				writer.Write((int)QuickSpells[i]);
 
 			writer.Write(m_LastLoginTime);
 			writer.Write((int)m_Grandeur);

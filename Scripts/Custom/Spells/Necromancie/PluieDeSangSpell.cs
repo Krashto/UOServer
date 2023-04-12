@@ -15,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Seventh,
 				236,
 				9011,
-				Reagent.Nightshade,
-				Reagent.NoxCrystal,
-				Reagent.Bloodmoss
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 10; } }

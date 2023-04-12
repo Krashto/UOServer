@@ -12,9 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Eighth,
 				203,
 				9051,
-				Reagent.Nightshade,
-				Reagent.NoxCrystal,
-				Reagent.BlackPearl
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

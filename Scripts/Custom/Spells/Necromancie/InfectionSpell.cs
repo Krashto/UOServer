@@ -18,9 +18,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Fifth,
 				227,
 				9031,
-				Reagent.Nightshade,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

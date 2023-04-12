@@ -14,10 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				SpellCircle.Seventh,
 				209,
 				9022,
-				false,
-				Reagent.BlackPearl,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot
+				Reagent.EssenceHydromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 8; } }

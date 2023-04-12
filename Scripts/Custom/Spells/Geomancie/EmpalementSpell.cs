@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				233,
 				9042,
 				false,
-				Reagent.SulfurousAsh,
-				Reagent.SulfurousAsh,
-				Reagent.SulfurousAsh
+				Reagent.EssenceGeomancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

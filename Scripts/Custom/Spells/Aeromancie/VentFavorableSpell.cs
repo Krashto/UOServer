@@ -16,10 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.First,
 				233,
 				9012,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.Ginseng,
-				Reagent.Garlic
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

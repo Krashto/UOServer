@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Eighth,
 				212,
 				9041,
-				Reagent.Garlic,
-				Reagent.MandrakeRoot,
-				Reagent.SulfurousAsh
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

@@ -21,6 +21,7 @@ using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.SkillHandlers;
 using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Capacites;
+using Server.Custom.Spells.NewSpells.Pyromancie;
 
 #endregion
 

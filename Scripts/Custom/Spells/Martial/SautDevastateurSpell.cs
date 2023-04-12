@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				SpellCircle.Eighth,
 				203,
 				9051,
-				Reagent.Nightshade,
-				Reagent.NoxCrystal,
-				Reagent.BlackPearl
+				Reagent.EssenceMartial
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

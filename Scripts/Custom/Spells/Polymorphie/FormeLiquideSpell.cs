@@ -14,10 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Seventh,
 				269,
 				9050,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.Bloodmoss,
-				Reagent.Bloodmoss
+				Reagent.EssencePolymorphie
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

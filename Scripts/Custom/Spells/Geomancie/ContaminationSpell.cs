@@ -13,9 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.Third,
 				203,
 				9051,
-				Reagent.Nightshade,
-				Reagent.SulfurousAsh,
-				Reagent.NoxCrystal
+				Reagent.EssenceGeomancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

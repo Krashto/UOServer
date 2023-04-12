@@ -13,8 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.Second,
 				203,
 				9031,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

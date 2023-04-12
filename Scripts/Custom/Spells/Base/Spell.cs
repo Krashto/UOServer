@@ -12,6 +12,7 @@ using Server.Custom.Capacites;
 using Server.Custom.Classes;
 using System.Linq;
 using Server.Custom.Spells.NewSpells.Guerison;
+using Server.Custom.Spells.NewSpells.Musique;
 
 namespace Server.Spells
 {
@@ -663,10 +664,16 @@ namespace Server.Spells
 			return Caster.CheckSkill( CastSkill, minSkill, maxSkill );
 		}
 
+		public static int GetManaBase(int requiredAptitudeValue)
+		{
+			return requiredAptitudeValue * 4;
+
+		}
+
 		public virtual int GetMana()
 		{
-			return GetAptitudeValue() * 4;
-        }
+			return GetManaBase(GetAptitudeValue());
+		}
 
         public virtual int GetAptitudeValue()
         {
@@ -728,15 +735,15 @@ namespace Server.Spells
 			return TimeSpan.FromSeconds((double)delay / CastRecoveryPerSecond);
 		}
 
-        public virtual TimeSpan CastDelayBase => GetCastDelayBase();
+        public virtual TimeSpan CastDelayBase => GetCastDelayBase(GetAptitudeValue());
         public virtual double CastDelayFastScalar => 1.0;
 		public virtual double CastDelaySecondsPerTick => 1.0;
         public virtual TimeSpan CastDelayMinimum => TimeSpan.FromSeconds(0.5);
 
 
-		public TimeSpan GetCastDelayBase()
+		public static TimeSpan GetCastDelayBase(int requiredAptitudeValue)
 		{
-			switch(RequiredAptitudeValue)
+			switch(requiredAptitudeValue)
 			{
 				case 1:
 				case 2:

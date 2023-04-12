@@ -5,7 +5,7 @@ using Server.Items;
 using System.Collections;
 using System;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Musique
 {
 	public class DesorienterSpell : Spell
 	{
@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.Second,
 				203,
 				9041,
-				Reagent.BlackPearl,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh
+				Reagent.EssenceMusique
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

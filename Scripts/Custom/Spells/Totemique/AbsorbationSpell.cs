@@ -9,13 +9,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
     public class AbsorbationSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-            "Absorbation mmmmmmmh", "[Absorbation mmmmmmmh]",
-			SpellCircle.Eighth,
-			269,
-            9070,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+				"Absorbation mmmmmmmh", "[Absorbation mmmmmmmh]",
+				SpellCircle.Eighth,
+				269,
+				9070,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

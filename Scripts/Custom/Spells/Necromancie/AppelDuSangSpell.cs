@@ -12,10 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Eighth,
 				269,
 				9070,
-				false,
-				Reagent.GraveDust,
-				Reagent.DaemonBlood,
-				Reagent.PigIron
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

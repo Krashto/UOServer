@@ -6,6 +6,7 @@ using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Martial;
+using Server.Custom.Spells.NewSpells.Musique;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Custom.Spells.NewSpells.Pyromancie;
@@ -204,13 +205,13 @@ namespace Server.Spells
             Register(669, typeof(AngeGardienSpell));
 
 			//Musique
-            //Register(670, typeof(DiversionSpell));
+            Register(670, typeof(DiversionSpell));
             Register(671, typeof(CalmeToiSpell));
             Register(672, typeof(DesorienterSpell));
             Register(673, typeof(DefiSpell));
             Register(674, typeof(DecrescendoManaiqueSpell));
-			//Register(675, typeof(InspirationElementaireSpell));
-			//Register(676, typeof(AbsorbationSonoreSpell));
+			Register(675, typeof(InspirationElementaireSpell));
+			Register(676, typeof(AbsorbationSonoreSpell));
 			Register(677, typeof(ParfaiteAspirationSpell));
 			Register(678, typeof(RevelationDiscordanteSpell));
 			Register(679, typeof(HavreDePaixSpell));

@@ -14,10 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Sixth,
 				260,
 				9032,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.BlackPearl,
-				Reagent.Nightshade
+				Reagent.EssenceDefenseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 8; } }

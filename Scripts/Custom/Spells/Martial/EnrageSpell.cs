@@ -15,10 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				SpellCircle.Third,
 				269,
 				9020,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot,
-				Reagent.BlackPearl
+				Reagent.EssenceMartial
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

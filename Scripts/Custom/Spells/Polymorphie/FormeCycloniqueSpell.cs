@@ -15,10 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Fifth,
 				266,
 				9040,
-				false,
-				Reagent.BlackPearl,
-				Reagent.MandrakeRoot,
-				Reagent.Nightshade
+				Reagent.EssencePolymorphie
 			);
 
 		public override int RequiredAptitudeValue { get { return 1; } }

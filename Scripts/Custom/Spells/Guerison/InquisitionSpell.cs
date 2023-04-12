@@ -15,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				SpellCircle.Seventh,
 				242,
 				9012,
-				Reagent.Garlic,
-				Reagent.MandrakeRoot,
-				Reagent.SpidersSilk
+				Reagent.EssenceGuerison
 			);
 
 		public override int RequiredAptitudeValue { get { return 8; } }

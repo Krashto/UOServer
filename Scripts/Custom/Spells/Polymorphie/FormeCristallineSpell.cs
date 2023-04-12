@@ -15,10 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Eighth,
 				269,
 				9070,
-				false,
-				Reagent.BlackPearl,
-				Reagent.BlackPearl,
-				Reagent.SpidersSilk
+				Reagent.EssencePolymorphie
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

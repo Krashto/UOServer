@@ -15,10 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.Eighth,
 				233,
 				9042,
-				false,
-				Reagent.Nightshade,
-				Reagent.Garlic,
-				Reagent.Bloodmoss
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 10; } }

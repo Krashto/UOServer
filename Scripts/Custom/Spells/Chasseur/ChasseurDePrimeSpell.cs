@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.Seventh,
 				236,
 				9031,
-				Reagent.SulfurousAsh,
-				Reagent.Ginseng,
-				Reagent.MandrakeRoot
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

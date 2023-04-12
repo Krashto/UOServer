@@ -15,8 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Fourth,
 				203,
 				9051,
-				Reagent.BatWing,
-				Reagent.GraveDust
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

@@ -10,8 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.First,
 				212,
 				9061,
-				Reagent.Garlic,
-				Reagent.Ginseng
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 1; } }

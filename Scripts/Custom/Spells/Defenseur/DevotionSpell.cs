@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				SpellCircle.Second,
 				203,
 				9041,
-				Reagent.BlackPearl,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh
+				Reagent.EssenceDefenseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

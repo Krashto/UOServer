@@ -13,9 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Fourth,
 				215,
 				9061,
-				Reagent.Garlic,
-				Reagent.Ginseng,
-				Reagent.MandrakeRoot
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

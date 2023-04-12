@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.Fifth,
 				206,
 				9002,
-				Reagent.Bloodmoss,
-				Reagent.Nightshade,
-				Reagent.BlackPearl
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Second,
 				212,
 				9041,
-				Reagent.BlackPearl,
-				Reagent.Bloodmoss,
-				Reagent.Garlic
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 1; } }

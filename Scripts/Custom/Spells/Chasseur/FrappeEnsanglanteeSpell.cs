@@ -15,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.Seventh,
 				245,
 				9042,
-				Reagent.SpidersSilk,
-				Reagent.SulfurousAsh,
-				Reagent.BlackPearl
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

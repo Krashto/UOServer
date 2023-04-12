@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				SpellCircle.Fifth,
 				203,
 				9041,
-				Reagent.BlackPearl,
-				Reagent.Garlic,
-				Reagent.Ginseng
+				Reagent.EssenceHydromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

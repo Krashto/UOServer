@@ -3,7 +3,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System;
 
-namespace Server.Custom.Spells.NewSpells.Hydromancie
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class PassionArdenteSpell : Spell
 	{
@@ -14,8 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				SpellCircle.First,
 				206,
 				9002,
-				Reagent.Bloodmoss,
-				Reagent.SulfurousAsh
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

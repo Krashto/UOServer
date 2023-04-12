@@ -10,11 +10,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		private static SpellInfo m_Info = new SpellInfo(
 				"Restauration", "In Vas Jux Sanct",
 				SpellCircle.Seventh,
-				Core.AOS ? 239 : 215,
+				239,
 				9011,
-				Reagent.Garlic,
-				Reagent.MandrakeRoot,
-				Reagent.SulfurousAsh
+				Reagent.EssenceHydromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

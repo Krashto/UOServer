@@ -1,4 +1,5 @@
 using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Musique;
 using Server.Custom.Weapons;
 using Server.Mobiles;
 using Server.Network;

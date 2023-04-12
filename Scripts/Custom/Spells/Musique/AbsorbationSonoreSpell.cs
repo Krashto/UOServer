@@ -4,7 +4,7 @@ using System.Collections;
 using System;
 using Server.Mobiles;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Musique
 {
 	public class AbsorbationSonoreSpell : Spell
 	{
@@ -13,8 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.First,
 				212,
 				9061,
-				Reagent.MandrakeRoot,
-				Reagent.Nightshade
+				Reagent.EssenceMusique
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

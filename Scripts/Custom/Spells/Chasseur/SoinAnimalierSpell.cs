@@ -11,9 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.Fourth,
 				230,
 				9041,
-				Reagent.Bloodmoss,
-				Reagent.SulfurousAsh,
-				Reagent.SulfurousAsh
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

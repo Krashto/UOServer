@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Fifth,
 				218,
 				9032,
-				Reagent.BlackPearl,
-				Reagent.MandrakeRoot,
-				Reagent.Garlic
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 1; } }

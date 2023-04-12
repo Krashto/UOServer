@@ -19,9 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.Fifth,
 				218,
 				9012,
-				Reagent.Garlic,
-				Reagent.MandrakeRoot,
-				Reagent.SpidersSilk
+				Reagent.EssenceGeomancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

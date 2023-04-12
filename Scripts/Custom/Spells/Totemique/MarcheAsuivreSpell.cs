@@ -7,13 +7,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class MarcheAsuivreSpell : Spell
 	{
 		private static readonly SpellInfo m_Info = new SpellInfo(
-			"Marche a suivre", "[Marche a suivre]",
-			SpellCircle.Eighth,
-			269,
-			9070,
-			Reagent.Bloodmoss,
-			Reagent.MandrakeRoot,
-			Reagent.SpidersSilk);
+				"Marche a suivre", "[Marche a suivre]",
+				SpellCircle.Eighth,
+				269,
+				9070,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 10; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Seventh,
 				203,
 				9031,
-				Reagent.GraveDust,
-				Reagent.DaemonBlood,
-				Reagent.DaemonBlood
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

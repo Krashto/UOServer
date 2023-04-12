@@ -15,10 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Fourth,
 				269,
 				9010,
-				false,
-				Reagent.Ginseng,
-				Reagent.MandrakeRoot,
-				Reagent.Nightshade
+				Reagent.EssencePolymorphie
 			);
 
 		public override int RequiredAptitudeValue { get { return 10; } }

@@ -7,13 +7,13 @@ namespace Server.Custom.Spells.NewSpells.Totemique
     public class TotemDuVentSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-            "Totem du vent", "[Totem du vent]",
-			SpellCircle.Eighth,
-			269,
-            9010,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+				"Totem du vent", "[Totem du vent]",
+				SpellCircle.Eighth,
+				269,
+				9010,
+				Reagent.EssenceTotemique
+			);
+		
 		public override int RequiredAptitudeValue { get { return 4; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }
 		public override SkillName CastSkill { get { return SkillName.AnimalTaming; } }

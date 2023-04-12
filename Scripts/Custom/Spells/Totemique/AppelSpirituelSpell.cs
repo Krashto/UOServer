@@ -13,8 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Fifth,
 				203,
 				9031,
-				Reagent.BatWing,
-				Reagent.NoxCrystal
+				Reagent.EssenceTotemique
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

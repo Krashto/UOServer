@@ -11,7 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.First,
 				203,
 				9051,
-				Reagent.Nightshade
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

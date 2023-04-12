@@ -15,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.Fourth,
 				239,
 				9021,
-				Reagent.MandrakeRoot,
-				Reagent.SulfurousAsh,
-				Reagent.BlackPearl
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

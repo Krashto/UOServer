@@ -1,6 +1,7 @@
 using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Engines.CityLoyalty;
 using Server.Engines.SphynxFortune;
 using Server.Items;

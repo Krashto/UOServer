@@ -12,9 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				SpellCircle.Fourth,
 				230,
 				9041,
-				Reagent.Bloodmoss,
-				Reagent.SulfurousAsh,
-				Reagent.SulfurousAsh
+				Reagent.EssenceMartial
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

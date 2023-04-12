@@ -13,9 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Fourth,
 				203,
 				9031,
-				Reagent.NoxCrystal,
-				Reagent.SulfurousAsh,
-				Reagent.BlackPearl
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

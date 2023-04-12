@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.Eighth,
 				236,
 				9011,
-				Reagent.Garlic,
-				Reagent.SpidersSilk,
-				Reagent.SulfurousAsh
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

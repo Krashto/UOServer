@@ -4,7 +4,7 @@ using Server.Misc;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class CageDeFeuSpell : Spell
 	{
@@ -13,15 +13,12 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.Sixth,
 				230,
 				9052,
-				false,
-				Reagent.Garlic,
-				Reagent.Nightshade,
-				Reagent.NoxCrystal
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
-		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
+		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
 		public CageDeFeuSpell(Mobile caster, Item scroll)

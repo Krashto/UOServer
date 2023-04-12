@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
@@ -12,13 +9,12 @@ namespace Server.Custom.Spells.NewSpells.Martial
 		private static Hashtable m_Table = new Hashtable();
 
 		private static readonly SpellInfo m_Info = new SpellInfo(
-			"Bouclier magique", "[Bouclier magique]",
-			SpellCircle.Fifth,
-			242,
-			9012,
-			Reagent.Garlic,
-			Reagent.MandrakeRoot,
-			Reagent.SpidersSilk);
+				"Bouclier magique", "[Bouclier magique]",
+				SpellCircle.Fifth,
+				242,
+				9012,
+				Reagent.EssenceMartial
+			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Martial }; } }

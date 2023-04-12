@@ -11,9 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Eighth,
 				203,
 				9031,
-				Reagent.GraveDust,
-				Reagent.PigIron,
-				Reagent.BatWing
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

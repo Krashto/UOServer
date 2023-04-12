@@ -7,13 +7,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class LierParEspritSpell : Spell
 	{
 		private static readonly SpellInfo m_Info = new SpellInfo(
-			"Lier par l'esprit", "[Lier par l'esprit]",
-			SpellCircle.Eighth,
-			269,
-			9070,
-			Reagent.Bloodmoss,
-			Reagent.MandrakeRoot,
-			Reagent.SpidersSilk);
+				"Lier par l'esprit", "[Lier par l'esprit]",
+				SpellCircle.Eighth,
+				269,
+				9070,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

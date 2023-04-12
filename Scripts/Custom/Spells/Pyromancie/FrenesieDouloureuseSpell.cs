@@ -3,7 +3,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
 
-namespace Server.Custom.Spells.NewSpells.Roublardise
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class FrenesieDouloureuseSpell : Spell
 	{
@@ -12,8 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Fifth,
 				203,
 				9031,
-				Reagent.BatWing,
-				Reagent.NoxCrystal
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

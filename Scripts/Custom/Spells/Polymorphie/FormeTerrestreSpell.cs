@@ -15,10 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				SpellCircle.Third,
 				269,
 				9020,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot,
-				Reagent.BlackPearl
+				Reagent.EssencePolymorphie
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

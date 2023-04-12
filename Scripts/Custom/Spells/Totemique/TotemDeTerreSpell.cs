@@ -8,13 +8,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
     public class TotemDeTerreSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-            "Totem de terre", "[Totem de terre]",
-			SpellCircle.Eighth,
-			269,
-            9020,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+				"Totem de terre", "[Totem de terre]",
+				SpellCircle.Eighth,
+				269,
+				9020,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

@@ -3,7 +3,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 
-namespace Server.Custom.Spells.NewSpells.Aeromancie
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class CeleriteSpell : Spell
 	{
@@ -14,10 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.First,
 				233,
 				9012,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.Ginseng,
-				Reagent.Garlic
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }

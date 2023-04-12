@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				SpellCircle.First,
 				224,
 				9011,
-				Reagent.Garlic,
-				Reagent.Ginseng,
-				Reagent.MandrakeRoot
+				Reagent.EssenceHydromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 5; } }

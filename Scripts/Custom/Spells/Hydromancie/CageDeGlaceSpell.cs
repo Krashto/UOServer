@@ -16,9 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				SpellCircle.First,
 				212,
 				9041,
-				Reagent.SulfurousAsh,
-				Reagent.MandrakeRoot,
-				Reagent.SpidersSilk
+				Reagent.EssenceHydromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

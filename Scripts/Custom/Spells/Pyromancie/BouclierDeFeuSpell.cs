@@ -15,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				SpellCircle.First,
 				266,
 				9040,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot,
-				Reagent.SulfurousAsh
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 1; } }

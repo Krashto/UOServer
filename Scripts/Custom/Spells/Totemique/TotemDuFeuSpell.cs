@@ -1,5 +1,4 @@
 using Server.Custom.Aptitudes;
-using Server.Mobiles;
 using Server.Spells;
 using System;
 
@@ -8,14 +7,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
     public class TotemDuFeuSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-            "Totem du feu", "[Totem du feu]",
-			SpellCircle.Eighth,
-			269,
-            9050,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk,
-            Reagent.SulfurousAsh);
+				"Totem du feu", "[Totem du feu]",
+				SpellCircle.Eighth,
+				269,
+				9050,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 1; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

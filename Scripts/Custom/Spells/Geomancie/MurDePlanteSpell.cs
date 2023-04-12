@@ -17,10 +17,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.Sixth,
 				230,
 				9052,
-				false,
-				Reagent.Garlic,
-				Reagent.Nightshade,
-				Reagent.NoxCrystal
+				Reagent.EssenceGeomancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

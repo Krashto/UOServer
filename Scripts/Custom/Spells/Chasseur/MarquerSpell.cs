@@ -15,9 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				SpellCircle.Sixth,
 				230,
 				9022,
-				Reagent.BlackPearl,
-				Reagent.Nightshade,
-				Reagent.Garlic
+				Reagent.EssenceChasseur
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

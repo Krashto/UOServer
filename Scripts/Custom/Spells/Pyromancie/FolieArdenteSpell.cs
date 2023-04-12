@@ -4,7 +4,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
 
-namespace Server.Custom.Spells.NewSpells.Hydromancie
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class FolieArdenteSpell : Spell
 	{
@@ -13,11 +13,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		private static SpellInfo m_Info = new SpellInfo(
 				"Folie Ardente", "[Folie Ardente]",
 				SpellCircle.Seventh,
-				Core.AOS ? 239 : 215,
+				239,
 				9011,
-				Reagent.Garlic,
-				Reagent.MandrakeRoot,
-				Reagent.SulfurousAsh
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

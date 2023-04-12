@@ -14,9 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.Fourth,
 				224,
 				9061,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh,
-				Reagent.Ginseng
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

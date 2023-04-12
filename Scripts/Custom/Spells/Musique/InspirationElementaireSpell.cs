@@ -6,7 +6,7 @@ using Server.Mobiles;
 using Server.Targeting;
 using Server.Items;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Musique
 {
 	public class InspirationElementaireSpell : Spell
 	{
@@ -19,8 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.First,
 				212,
 				9061,
-				Reagent.MandrakeRoot,
-				Reagent.Nightshade
+				Reagent.EssenceMusique
 			);
 
 		public override int RequiredAptitudeValue { get { return 6; } }

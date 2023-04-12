@@ -7,13 +7,12 @@ namespace Server.Custom.Spells.NewSpells.Totemique
     public class TotemDeauSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-            "Totem d'eau", "[Totem d'eau]",
-			SpellCircle.Eighth,
-			269,
-            9070,
-            Reagent.Bloodmoss,
-            Reagent.MandrakeRoot,
-            Reagent.SpidersSilk);
+				"Totem d'eau", "[Totem d'eau]",
+				SpellCircle.Eighth,
+				269,
+				9070,
+				Reagent.EssenceTotemique
+			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }

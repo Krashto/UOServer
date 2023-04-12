@@ -12,9 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Sixth,
 				221,
 				9032,
-				Reagent.Bloodmoss,
-				Reagent.MandrakeRoot,
-				Reagent.SpidersSilk
+				Reagent.EssenceRoublardise
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

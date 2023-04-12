@@ -18,10 +18,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				SpellCircle.Fifth,
 				233,
 				9012,
-				false,
-				Reagent.Bloodmoss,
-				Reagent.Bloodmoss,
-				Reagent.SulfurousAsh
+				Reagent.EssenceHydromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 7; } }

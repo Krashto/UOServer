@@ -3,7 +3,7 @@ using Server.Spells;
 using System.Collections;
 using System;
 
-namespace Server.Custom.Spells.NewSpells.Geomancie
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class AuraRechauffanteSpell : Spell
 	{
@@ -15,12 +15,11 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				SpellCircle.First,
 				212,
 				9061,
-				Reagent.MandrakeRoot,
-				Reagent.Nightshade
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 3; } }
-		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Geomancie }; } }
+		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 

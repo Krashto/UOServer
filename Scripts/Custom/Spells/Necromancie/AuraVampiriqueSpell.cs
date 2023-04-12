@@ -12,7 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				SpellCircle.Second,
 				203,
 				9031,
-				Reagent.PigIron
+				Reagent.EssenceNecromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

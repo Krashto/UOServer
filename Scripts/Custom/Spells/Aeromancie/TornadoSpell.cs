@@ -16,10 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				SpellCircle.Third,
 				215,
 				9041,
-				false,
-				Reagent.BlackPearl,
-				Reagent.SpidersSilk,
-				Reagent.Ginseng
+				Reagent.EssenceAeromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

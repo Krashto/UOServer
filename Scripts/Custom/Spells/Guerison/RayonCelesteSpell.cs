@@ -13,8 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				SpellCircle.First,
 				212,
 				9061,
-				Reagent.Garlic,
-				Reagent.Ginseng
+				Reagent.EssenceGuerison
 			);
 
 		public override int RequiredAptitudeValue { get { return 4; } }

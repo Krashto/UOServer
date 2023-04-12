@@ -14,8 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				SpellCircle.First,
 				212,
 				9061,
-				Reagent.MandrakeRoot,
-				Reagent.Nightshade
+				Reagent.EssenceMartial
 			);
 
 		public override int RequiredAptitudeValue { get { return 9; } }

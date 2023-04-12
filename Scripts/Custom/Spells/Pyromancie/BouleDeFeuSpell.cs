@@ -3,7 +3,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 
-namespace Server.Custom.Spells.NewSpells.Roublardise
+namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
 	public class BouleDeFeuSpell : Spell
 	{
@@ -12,9 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				SpellCircle.Fourth,
 				203,
 				9031,
-				Reagent.NoxCrystal,
-				Reagent.SulfurousAsh,
-				Reagent.BlackPearl
+				Reagent.EssencePyromancie
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }

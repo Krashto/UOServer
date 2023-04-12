@@ -11,9 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				SpellCircle.Second,
 				203,
 				9041,
-				Reagent.BlackPearl,
-				Reagent.Garlic,
-				Reagent.SulfurousAsh
+				Reagent.EssenceMartial
 			);
 
 		public override int RequiredAptitudeValue { get { return 2; } }
