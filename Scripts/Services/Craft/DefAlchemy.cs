@@ -1,11 +1,12 @@
-﻿using Server.Engines.Quests.Hag;
+﻿using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
+using Server.Engines.Quests.Hag;
 using Server.Items;
 using System;
 using System.Security.Policy;
 
 namespace Server.Engines.Craft
 {
-    public enum AlchemyRecipes
+	public enum AlchemyRecipes
     {
         BarrabHemolymphConcentrate = 900,
         JukariBurnPoiltice = 901,
@@ -177,6 +178,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(NightSightPotion), "Autres", "Potion de vision de nuit", -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
+			index = AddCraft(typeof(SouvenirAeromanciePotion), "Potion de souvenir", "Potion de souvenir aéromancien", 50.0, 100.0, typeof(SouvenirAeromancie), "Souvenir Ancestral: Aéromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
 			//index = AddCraft(typeof(JukariBurnPoiltice), 1116349, "Potion de résistances", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
 			//AddRes(index, typeof(BlackPearl), 1044353, 20, 1044361);
 			//AddRes(index, typeof(Vanilla), 1080000, 10, 1080008);          
@@ -200,7 +204,7 @@ namespace Server.Engines.Craft
 			//AddRes(index, typeof(BaseBeverage), 1022503, 10, 1044253);
 			//AddRes(index, typeof(BlueCorn), 1156733, 5, 1044253);
 			//SetBeverageType(index, BeverageType.Wine);
-           
+
 			// Explosive
 			index = AddCraft(typeof(LesserExplosionPotion), 1116351, 1044555, 5.0, 55.0, typeof(SulfurousAsh), 1044359, 3, 1044367);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);

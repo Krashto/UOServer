@@ -8,11 +8,17 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Mobiles;
 using Server.Custom.Capacites;
+using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
 
 namespace Server.Items
 {
     public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality
     {
+		private SetAptitudeType m_SetAptitudeType;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public SetAptitudeType SetAptitudeType { get { return m_SetAptitudeType; } set { m_SetAptitudeType = value; InvalidateProperties(); } }
+		
 		private string _EngravedText;
 
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -1405,12 +1411,15 @@ namespace Server.Items
         {
             base.Serialize(writer);
 
-            writer.Write(18); // version
+            writer.Write(19); // version
 
-            // Version 16 - Removed Pre-AOS Armor Properties
-            // Version 14 - removed VvV Item (handled in VvV System) and BlockRepair (Handled as negative attribute)
+			//Version 19
+			writer.Write((int)SetAptitudeType);
 
-            writer.Write(_Owner);
+			// Version 16 - Removed Pre-AOS Armor Properties
+			// Version 14 - removed VvV Item (handled in VvV System) and BlockRepair (Handled as negative attribute)
+
+			writer.Write(_Owner);
             writer.Write(_OwnerName);
 
             //Version 11
@@ -1618,6 +1627,11 @@ namespace Server.Items
 
             switch (version)
             {
+				case 19:
+					{
+						SetAptitudeType = (SetAptitudeType)reader.ReadInt();
+                        goto case 18;
+					}
 				case 18:
 				case 17:
                 case 16:
@@ -2286,7 +2300,7 @@ namespace Server.Items
 			if (String.IsNullOrWhiteSpace(name))
 				name = System.Text.RegularExpressions.Regex.Replace(GetType().Name, "[A-Z]", " $0");
 
-			if (IsSetItem)
+			if (IsSetItem || SetAptitudeType != SetAptitudeType.None)
 				list.Add($"<BASEFONT COLOR=#00FF00>{name}</BASEFONT>");
 			else if (Quality == ItemQuality.Legendary)
 				list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>");
@@ -2346,8 +2360,10 @@ namespace Server.Items
                 }
             }
 
-            AddDamageTypeProperty(list);
+			if (SetAptitudeType != SetAptitudeType.None)
+				list.Add($"Set Type: {SetAptitudeType}");
 
+			AddDamageTypeProperty(list);
             
             if (this is SurgeShield && ((SurgeShield)this).Surge > SurgeType.None)
                 list.Add(1116176 + ((int)((SurgeShield)this).Surge));
@@ -2552,19 +2568,19 @@ namespace Server.Items
             }
 
 			if ((prop = GetBaseBonusStr()) > 0)
-				list.Add($"Bonus de force: {prop.ToString()}");
+				list.Add($"Bonus de force: {prop}");
 			else if ((prop = GetBaseBonusStr()) < 0)
-				list.Add($"Malus de force: {prop.ToString()}");
+				list.Add($"Malus de force: {prop}");
 
 			if ((prop = GetBaseBonusDex()) > 0)
-				list.Add($"Bonus de dextérité: {prop.ToString()}");
+				list.Add($"Bonus de dextérité: {prop}");
 			else if ((prop = GetBaseBonusDex()) < 0)
-				list.Add($"Malus de dextérité: {prop.ToString()}");
+				list.Add($"Malus de dextérité: {prop}");
 
 			if ((prop = GetBaseBonusInt()) > 0)
-				list.Add($"Bonus d'intelligence: {prop.ToString()}");
+				list.Add($"Bonus d'intelligence: {prop}");
 			else if ((prop = GetBaseBonusInt()) < 0)
-				list.Add($"Malus d'intelligence: {prop.ToString()}");
+				list.Add($"Malus d'intelligence: {prop}");
 
 		}
 

@@ -20,6 +20,8 @@ using System.Threading.Tasks;
 using Server.Mobiles.AI;
 using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom;
+
 #endregion
 
 namespace Server.Mobiles
@@ -3078,13 +3080,8 @@ namespace Server.Mobiles
 
             switch (NewAI)
             {
-				case AIType.AI_WildAnimal:
-					if (!(this is BaseAnimal))
-					{
-						m_AI = new AnimalAI(this);
-						m_CurrentAI = AIType.AI_Animal;
-					}
-					else m_AI = new WildAnimalAI(this);
+				case AIType.AI_Animal:
+					m_AI = new AnimalAI(this);
 					break;
 				case AIType.AI_Melee:
                     m_AI = new MeleeAI(this);
@@ -4975,10 +4972,12 @@ namespace Server.Mobiles
             }
 
             GenerateLoot();
-			GenerateNewLoot();
 
-			if (m_Paragon)
-				GenerateLootParagon();
+			if (!Tamable)
+			{
+				GenerateGoldLoot();
+				GenerateNewLoot();
+			}
 
             KillersLuck = 0;
         }
@@ -5000,8 +4999,164 @@ namespace Server.Mobiles
 
 		public void GenerateNewLoot()
 		{
+			////Paragon Chest
+			//if (IsParagon)
+			//{
+			//	var item = new ParagonChest(Name, Utility.Random(Level / 6, 1 + Level / 5));
+			//	if (item != null)
+			//		AddItem(item);
+			//}
+
+			//Dungeon Chest
+			if (Level >= 11 && Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDungeonChest));
+				if (item != null)
+					AddItem(item);
+			}
+
+			//Treasure Maps
+			if (Utility.Random(0, 1000) < Level)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseTreasureMapPart));
+				if (item != null)
+					AddItem(item);
+			}
+
+			//Portraits
+			if (Utility.Random(0, 10000) < Level)
+			{
+				var rnd = Utility.Random(1, 8);
+				switch (rnd)
+				{
+					default:
+					case 1: AddItem(new LadyPortrait1()); break;
+					case 2: AddItem(new LadyPortrait2()); break;
+					case 3: AddItem(new ManPortrait1()); break;
+					case 4: AddItem(new ManPortrait2()); break;
+					case 5: AddItem(new BlackthornPainting1()); break;
+					case 6: AddItem(new BlackthornPainting2()); break;
+					case 7: AddItem(new KingsPainting1()); break;
+					case 8: AddItem(new KingsPainting2()); break;
+				}
+			}
+
+			//Weapons
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseWeapon));
+				if (item is BaseWeapon weapon)
+				{
+					if (!weapon.IsArtifact)
+						AddItem(item);
+				}
+			}
+
+			//BaseRanged
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseRanged));
+				if (item is BaseRanged weapon)
+				{
+					if (!weapon.IsArtifact)
+						AddItem(item);
+				}
+			}
+
+			//BaseArmor
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseArmor));
+				if (item is BaseArmor armor)
+				{
+					if (!armor.IsArtifact)
+						AddItem(item);
+				}
+			}
+
+			//BaseShield
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseShield));
+				if (item is BaseShield shield)
+				{
+					if (!shield.IsArtifact)
+						AddItem(item);
+				}
+			}
+
+			//BaseJewel
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseJewel));
+				if (item is BaseJewel jewel)
+				{
+					if (!jewel.IsArtifact)
+						AddItem(item);
+				}
+			}
+
+			//Essences + Reagents
+			if ((AI == AIType.AI_Mage || AI == AIType.AI_NecroMage) && Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+				if (item != null)
+					AddItem(item);
+			}
+
+			//Body parts
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var item = CustomUtility.GetRandomItemFromList(new List<Type>() { typeof(LeftArm), typeof(RightArm), typeof(Torso), typeof(RightLeg), typeof(LeftLeg) });
+				if (item != null)
+					AddItem(item);
+			}
+
+			//Statues
+			if (Utility.Random(0, 1000) < Level)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(Statue));
+				if (item != null)
+					AddItem(item);
+			}
+
+			//Artifacts
+			if (Utility.Random(0, 1000) < Level)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDecorationArtifact));
+				if (item != null)
+					AddItem(item);
+			}
+
+			//Piece d'argent
+			if (Level > 5 && Utility.Random(0, 100) < Level * 3)
+				AddItem(new PieceArgent(10 * Level));
+
+			//Others
+			if (Utility.Random(0, 100) < Level * 5)
+			{
+				var rnd = Utility.Random(1, 3);
+				switch (rnd)
+				{
+					default:
+					case 1: AddItem(new Arrow(10)); break;
+					case 2: AddItem(new Bolt(10)); break;
+					case 3: AddItem(new Bandage(10)); break;
+				}
+			}
+		}
+
+		public void GenerateGoldLoot()
+		{
 			var min = (int)(40 * Math.Exp(0.25 * Level) - 40);
 			var max = (int)((40 * Math.Exp(0.25 * Level) - 40) * 1.15);
+
+			if (m_Paragon)
+			{ 
+				min *= 2;
+				max *= 2;
+			}
+
 			AddItem(new Gold(Utility.Random(min, max)));
 		}
 

@@ -148,16 +148,6 @@ namespace Server.Items
             {
                 Item item = Loot.RandomArmorOrShieldOrWeaponOrJewelry();
 
-                if (item != null && RandomItemGenerator.Enabled)
-                {
- ///                   TreasureMapChest.GetRandomItemStat(out int min, out int max);
-
-  ///                  RunicReforging.GenerateRandomItem(item, 0, min, max);
-
-                    DropItem(item);
-                    continue;
-                }
-
                 if (item is BaseWeapon)
                 {
                     BaseWeapon weapon = (BaseWeapon)item;

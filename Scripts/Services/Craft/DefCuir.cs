@@ -220,7 +220,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Backpack), "Divers", "Sac à dos", 10, 35.0, typeof(PlainoisLeather), 1044462, 5, 1044463);
 			index = AddCraft(typeof(Pouch), "Divers", "Bourse", 0.0, 25.0, typeof(PlainoisLeather), 1044462, 3, 1044463);
 			index = AddCraft(typeof(Bag), "Divers", "Sac", 5, 30.0, typeof(PlainoisLeather), 1044462, 4, 1044463);
-			index = AddCraft(typeof(Saddlebag), "Divers", "Sacoche de selle", 35.0, 50.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
 
 			index = AddCraft(typeof(Carquois), "Divers", "Carquois", 60.6, 80.6, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(fourreau), "Divers", "Fourreau épée longue", 80.7, 100.7, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");

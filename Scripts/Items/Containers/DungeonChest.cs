@@ -1,6 +1,9 @@
+using Server.Custom;
+using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
+
 namespace Server.Items
 {
-    public class TreasureLevel1 : BaseDungeonChest
+	public class TreasureLevel1 : BaseDungeonChest
     {
         public override int DefaultGumpID => 0x49;
 
@@ -15,16 +18,12 @@ namespace Server.Items
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 1 * Utility.Random(35, 45);
 
-      //      DropItem(new Gold(30, 100));
-            DropItem(new Bolt(10));
-			DropItem(new Arrow(10));
-
-			DropItem(new Tourmaline(Utility.Random(3)));
-			DropItem(new Amber(Utility.Random(2)));
-			DropItem(new Citrine(Utility.Random(5)));
-
-			//     for (int i = Utility.Random(3) + 1; i > 0; i--) // random 1 to 3
-			//       DropItem(Loot.RandomGem());
+			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			if (item != null)
+			{
+				item.Amount = Level;
+				DropItem(item);
+			}
 		}
 
         public TreasureLevel1(Serial serial) : base(serial)
@@ -59,30 +58,13 @@ namespace Server.Items
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 2 * Utility.Random(30, 50);
 
-	//		DropItem(new Gold(50, 75));
-			DropItem(new Tourmaline(Utility.Random(3)));
-			DropItem(new Amber(Utility.Random(2)));
-			DropItem(new Citrine(Utility.Random(5)));
-			DropItem(new DragonBlood(Utility.Random(0, 1)));
-
-
-
-			DropItem(new Arrow(10));
-            DropItem(Loot.RandomPotion());
-            for (int i = Utility.Random(1, 2); i > 1; i--)
-            {
-                Item ReagentLoot = Loot.RandomReagent();
-                ReagentLoot.Amount = Utility.Random(1, 2);
-                DropItem(ReagentLoot);
-            }
-            if (Utility.RandomBool()) //50% chance
-                for (int i = Utility.Random(8) + 1; i > 0; i--)
-                    DropItem(Loot.RandomScroll(0, 39, SpellbookType.Regular));
-
-            if (Utility.RandomBool()) //50% chance
-                for (int i = Utility.Random(6) + 1; i > 0; i--)
-                    DropItem(Loot.RandomGem());
-        }
+			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			if (item != null)
+			{
+				item.Amount = Level;
+				DropItem(item);
+			}
+		}
 
         public TreasureLevel2(Serial serial) : base(serial)
         {
@@ -116,34 +98,14 @@ namespace Server.Items
             MaxLockLevel = RequiredSkill;
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 3 * Utility.Random(30, 40);
-			DropItem(new DragonBlood(Utility.Random(1, 2)));
 
-	//		DropItem(new Gold(200, 500));
-
-
-
-			DropItem(new Arrow(10));
-
-            for (int i = Utility.Random(1, 3); i > 1; i--)
-            {
-                Item ReagentLoot = Loot.RandomReagent();
-                ReagentLoot.Amount = Utility.Random(1, 9);
-                DropItem(ReagentLoot);
-            }
-
-            for (int i = Utility.Random(1, 3); i > 1; i--)
-                DropItem(Loot.RandomPotion());
-
-            if (0.67 > Utility.RandomDouble()) //67% chance = 2/3
-                for (int i = Utility.Random(12) + 1; i > 0; i--)
-                    DropItem(Loot.RandomScroll(0, 47, SpellbookType.Regular));
-
-            if (0.67 > Utility.RandomDouble()) //67% chance = 2/3
-                for (int i = Utility.Random(9) + 1; i > 0; i--)
-                    DropItem(Loot.RandomGem());
-
-
-        }
+			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			if (item != null)
+			{
+				item.Amount = Level;
+				DropItem(item);
+			}
+		}
 
         public TreasureLevel3(Serial serial) : base(serial)
         {
@@ -175,31 +137,15 @@ namespace Server.Items
             LockLevel = RequiredSkill - Utility.Random(1, 10);
             MaxLockLevel = RequiredSkill;
             TrapType = TrapType.ExplosionTrap;
-            TrapPower = 4 * Utility.Random(25, 35); 
+            TrapPower = 4 * Utility.Random(25, 35);
 
-     //       DropItem(new Gold(350, 700));
-            DropItem(new BlankScroll(Utility.Random(1, 4)));
-			DropItem(new DragonBlood(Utility.Random(1, 3)));
-
-			for (int i = Utility.Random(1, 4); i > 1; i--)
-            {
-                Item ReagentLoot = Loot.RandomReagent();
-                ReagentLoot.Amount = Utility.Random(6, 12);
-                DropItem(ReagentLoot);
-            }
-
-            for (int i = Utility.Random(1, 4); i > 1; i--)
-                DropItem(Loot.RandomPotion());
-
-            if (0.75 > Utility.RandomDouble()) //75% chance = 3/4
-                for (int i = Utility.RandomMinMax(8, 16); i > 0; i--)
-                    DropItem(Loot.RandomScroll(0, 47, SpellbookType.Regular));
-
-            if (0.75 > Utility.RandomDouble()) //75% chance = 3/4
-                for (int i = Utility.RandomMinMax(6, 12) + 1; i > 0; i--)
-                    DropItem(Loot.RandomGem());
-
-        }
+			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			if (item != null)
+			{
+				item.Amount = Level;
+				DropItem(item);
+			}
+		}
 
         public TreasureLevel4(Serial serial) : base(serial)
         {
@@ -219,5 +165,4 @@ namespace Server.Items
             int version = reader.ReadInt();
         }
     }
-
 }

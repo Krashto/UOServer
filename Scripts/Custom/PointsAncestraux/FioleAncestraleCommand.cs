@@ -1,4 +1,5 @@
 ﻿using Server.Commands;
+using Server.Custom.PointsAncestraux;
 using Server.Mobiles;
 using Server.Targeting;
 
@@ -9,6 +10,7 @@ namespace Server.Scripts.Commands
 		public static void Initialize()
 		{
 			CommandSystem.Register("FioleAncestrale", AccessLevel.GameMaster, new CommandEventHandler(FioleAncestraleCommand_OnCommand));
+			CommandSystem.Register("FA", AccessLevel.GameMaster, new CommandEventHandler(FioleAncestraleCommand_OnCommand));
 		}
 
 		public static void FioleAncestraleCommand_OnCommand(CommandEventArgs e)
@@ -29,11 +31,7 @@ namespace Server.Scripts.Commands
 			protected override void OnTarget(Mobile from, object target)
 			{
 				if (target is CustomPlayerMobile pm)
-				{
-					var points = 1;
-					pm.PointsAncestraux.AddPoints(points);
-					pm.SendMessage($"Vous recevez {points} point{(points > 1 ? "s" : "")} ancestra{(points > 1 ? "ux" : "l")}");
-				}
+					pm.AddToBackpack(new FioleAncestrale());
 				else
 					from.SendMessage("Vous devez cibler un joueur.");
 			}

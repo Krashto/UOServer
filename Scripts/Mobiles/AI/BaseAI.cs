@@ -19,7 +19,7 @@ namespace Server.Mobiles
     {
         AI_Use_Default,
         AI_Melee,
-		AI_WildAnimal,
+		AI_UNUSED2,
 		AI_Archer,
         AI_Healer,
         AI_Vendor,

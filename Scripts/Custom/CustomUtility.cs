@@ -1,10 +1,29 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Server.Custom
 {
 	public class CustomUtility
 	{
+		public static Item GetRandomItemByBaseType(Type baseType)
+		{
+			var itemList = AppDomain.CurrentDomain.GetAssemblies()
+				.SelectMany(domainAssembly => domainAssembly.GetTypes())
+				.Where(type => baseType.IsAssignableFrom(type) && /*type != baseType && */!type.IsAbstract/* && type.IsValueType && type.GetConstructor(Type.EmptyTypes) != null*/)
+				.ToArray();
+
+			var rnd = Utility.Random(0, itemList.Length - 1);
+			var item = Activator.CreateInstance(itemList[rnd]) as Item;
+			return item;
+		}
+		public static Item GetRandomItemFromList(List<Type> itemList)
+		{
+			var rnd = Utility.Random(0, itemList.Count - 1);
+			var item = Activator.CreateInstance(itemList[rnd]) as Item;
+			return item;
+		}
+
 		public static int GetItemAmountInBank(Mobile m, Type type)
 		{
 			var goldPiles = GetItemPilesInBank(m, type);
