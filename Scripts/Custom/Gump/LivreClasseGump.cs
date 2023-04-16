@@ -12,7 +12,7 @@ namespace Server.Gumps
 		Classe m_Classe;
 		LivreClasse m_Livre;
 
-        public LivreClasseGump(CustomPlayerMobile from, Classe classe, LivreClasse livre) : base("Livres de classes", 250, 150, true)
+        public LivreClasseGump(CustomPlayerMobile from, Classe classe, LivreClasse livre) : base("Livre de classes", 250, 150, true)
         {
 			m_From = from;
 			m_Classe = classe;
@@ -21,33 +21,24 @@ namespace Server.Gumps
 			int x = XBase + 20;
 			int y = YBase + 10;
 
-			int xSecondColum = x + 60;
-			int xAmountColum = x + 400;
 			int line = 0;
-			int scale = 30;
-			int space = 80;
+			int lineSpace = 20;
 
-			AddHtml(x, y, 250, 50, String.Concat($"<h3><basefont color=\"#FFFFFF\">Veuillez choisir ou vous désirez placer la classe {classe}.</basefont></h3>"), false, false);
-			line++;
-			line++;
-
-			if (from.Classe != classe)
+			if (m_From.Classe != Classe.Aucune)
+				AddHtml(x, y, 250, 60, String.Concat($"<h3><basefont color=\"#FFFFFF\">Vous devez oublier votre classe avec un livre d'oubli de classe avant d'apprendre une nouvelle classe.</basefont></h3>"), false, false);
+			else
 			{
+				AddHtml(x, y, 250, 60, String.Concat($"<h3><basefont color=\"#FFFFFF\">Veuillez choisir ou vous désirez placer la classe {classe}.</basefont></h3>"), false, false);
+				line += 3;
 
-			AddButtonHtml(x, y + line * scale, 1, "Classe", "#FFFFFF");
-			line++;
+				if (from.Classe != classe)
+					AddButtonHtml(x, y + line * lineSpace, 1, "Classe", "#FFFFFF");
 			}
-
-			//if (classe.IsMetier() && from.Metier != classe)
-			//{
-			//	AddButtonHtlml(x, y + line * scale, 3, "Métier", "#FFFFFF");
-			//}
 		}
 
 		public override void OnResponse(NetState sender, RelayInfo info)
         {
 			Mobile from = sender.Mobile;
-
 
 			if (from is CustomPlayerMobile)
 			{
@@ -58,11 +49,6 @@ namespace Server.Gumps
 					cp.Classe = m_Classe;
 					m_Livre.Delete();
 				}
-				//else if (info.ButtonID == 3 && m_Classe.IsMetier())
-				//{
-				//	cp.Metier = m_Classe;
-				//	m_Livre.Delete();
-				//}
 			}
         }
     }

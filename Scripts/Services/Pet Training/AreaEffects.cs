@@ -105,9 +105,7 @@ namespace Server.Mobiles
             foreach (Mobile m in eable.OfType<Mobile>())
             {
                 if (ValidTarget(creature, m))
-                {
                     yield return m;
-                }
             }
 
             eable.Free();
@@ -118,7 +116,7 @@ namespace Server.Mobiles
             return to != from && to.Alive && !to.IsDeadBondedPet &&
                     from.CanBeHarmful(to, false) &&
                     SpellHelper.ValidIndirectTarget(from, to) &&
-                    from.InLOS(to);
+                    from.InLOS(to) && !(to is BaseCreature);
         }
 
         public List<BaseCreature> _Cooldown;

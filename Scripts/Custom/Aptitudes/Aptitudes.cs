@@ -134,22 +134,17 @@ namespace Server.Custom.Aptitudes
 		#region AptitudesEntry
 		public class AptitudesEntry
         {
-            private Aptitude m_Aptitude;
-            private string m_Name;
-            private int m_Max;
-            private SkillName m_Skill;
+            public Aptitude Aptitude { get; private set; }
+            public string Name { get; private set; }
+			public int Max { get; private set; }
+			public SkillName Skill { get; private set; }
 
-            public Aptitude Aptitude { get { return m_Aptitude; } }
-            public string Name { get { return m_Name; } }
-            public int Max { get { return m_Max; } }
-            public SkillName Skill { get { return m_Skill; } }
-
-            public AptitudesEntry(Aptitude aptitude, string name, int max, SkillName skill)
+			public AptitudesEntry(Aptitude aptitude, string name, int max, SkillName skill)
             {
-                m_Aptitude = aptitude;
-                m_Name = name;
-                m_Max = max;
-                m_Skill = skill;
+                Aptitude = aptitude;
+                Name = name;
+                Max = max;
+                Skill = skill;
             }
         }
 
@@ -226,9 +221,14 @@ namespace Server.Custom.Aptitudes
             return from.GetBaseAptitudeValue(aptitude);
         }
 
-		public static int GetSkillRequirement(int level)
+		public static double GetSkillRequirement(int level, Aptitude aptitude)
 		{
-			return 50 + level * 5;
+			AptitudesEntry entry = m_AptitudeEntries[(int)aptitude];
+
+			if (level == 0)
+				return 0;
+
+			return Classes.Classes.IsCraftingSkills(entry.Skill) ? 25 + (level - 1) * 2.5 : 50 + (level - 1) * 5;
 		}
 
 		public static bool IsValid(CustomPlayerMobile from, Aptitude aptitude)
@@ -245,14 +245,13 @@ namespace Server.Custom.Aptitudes
 				if (value > max)
 					return false;
 
+				int level = GetValue(from, aptitude);
+
 				double skill = from.Skills[entry.Skill].Base;
-				int addedvalue = GetValue(from, aptitude);
-				double skillRequirement = GetSkillRequirement(addedvalue);
 
-				if (addedvalue == 0)
-					return true;
+				double skillRequirement = GetSkillRequirement(level, entry.Aptitude);
 
-				return skill > skillRequirement;
+				return skill >= skillRequirement;
 			}
 
 			return false;
@@ -269,20 +268,22 @@ namespace Server.Custom.Aptitudes
 
                 if (index >= 0 && index < m_AptitudeEntries.Length)
                 {
-                    AptitudesEntry entry = m_AptitudeEntries[index];
+					AptitudesEntry entry = m_AptitudeEntries[index];
 
-                    int max = entry.Max;
-                    int value = from.GetTotalAptitudeValue(aptitude);
+					int max = entry.Max;
+					int value = from.GetTotalAptitudeValue(aptitude);
 
-                    if (value >= max)
-                        return false;
+					if (value > max)
+						return false;
 
-                    double skill = from.Skills[entry.Skill].Base;
-                    int requiredSkill = GetSkillRequirement(GetValue(from, aptitude));
+					int level = GetValue(from, aptitude);
 
-					if (skill > requiredSkill)
-						return true;
-                }
+					var skill = from.Skills[entry.Skill].Base;
+
+					var skillRequirement = GetSkillRequirement(level + 1, entry.Aptitude);
+
+					return skill >= skillRequirement;
+				}
             }
 
             return false;
