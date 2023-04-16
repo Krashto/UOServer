@@ -2329,7 +2329,7 @@ namespace Server
 		}
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public int FollowersMax
+		public virtual int FollowersMax
 		{
 			get => m_FollowersMax;
 			set

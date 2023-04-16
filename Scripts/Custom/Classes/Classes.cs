@@ -358,6 +358,14 @@ namespace Server.Custom.Classes
                 case Classe.Necromage: info = NecromageClasse.ClasseInfo; break;
                 case Classe.Necromancien: info = NecromancienClasse.ClasseInfo; break;
 
+				case Classe.Vagabond: info = VagabondClasse.ClasseInfo; break;
+				case Classe.Voleur: info = VoleurClasse.ClasseInfo; break;
+				case Classe.Roublard: info = RoublardClasse.ClasseInfo; break;
+				
+				case Classe.Intervenant: info = IntervenantClasse.ClasseInfo; break;
+				case Classe.Soigneur: info = SoigneurClasse.ClasseInfo; break;
+				case Classe.Guerisseur: info = GuerisseurClasse.ClasseInfo; break;
+
                 default: info = ClasseAucune.ClasseInfo; break;
             }
 

@@ -12,7 +12,7 @@ namespace Server
         private static ClasseMode m_ClasseMode = ClasseMode.Roublards;
         private static Classe m_ClasseAvant = Classe.Troubadour;
         private static ClasseBranche m_ClasseBranche = ClasseBranche.Menestrel;
-        private static bool m_Active = false;
+        private static bool m_Active = true;
 
         private static CAptitudes[] m_Aptitudes = new CAptitudes[]
             {

@@ -170,7 +170,8 @@ namespace Server.Mobiles
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Salaire { get { return m_Salaire; } set { m_Salaire = value; } }
 
-		
+		[CommandProperty(AccessLevel.GameMaster)]
+		public override int FollowersMax => 1 + Capacites[Capacite.Compagnon];
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Container Corps { get { return m_Corps; } set { m_Corps = value; } }

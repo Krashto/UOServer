@@ -1199,10 +1199,14 @@ namespace Server.Items
 			if (FormeElectrisanteSpell.IsActive(attacker))
 				bonus += 20;
 
+			if (attacker is CustomPlayerMobile && defender is BaseCreature)
+			{
+				var pm = attacker as CustomPlayerMobile;
+				bonus = pm.Capacites[Capacite.Precision] * 3;
+			}
+
 			if (attacker is BaseCreature bc && !bc.Controlled && defender is BaseCreature bc2 && bc2.Controlled)
-            {
                 bonus = Math.Max(bonus, 45);
-            }
 
             //SA Gargoyle cap is 50, else 45
             bonus = Math.Min(45, bonus);

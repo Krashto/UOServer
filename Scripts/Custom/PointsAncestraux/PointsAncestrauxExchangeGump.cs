@@ -3,6 +3,27 @@ using Server.Network;
 using Server.Mobiles;
 using Server.Targeting;
 using Server.CustomScripts.Systems.Experience;
+using Server.Commands;
+using Server.Gumps;
+
+namespace Server.Scripts.Commands
+{
+	public class PointsAncestrauxCommand
+	{
+		public static void Initialize()
+		{
+			CommandSystem.Register("PointsAncestraux", AccessLevel.GameMaster, new CommandEventHandler(PointsAncestrauxCommand_OnCommand));
+			CommandSystem.Register("PA", AccessLevel.GameMaster, new CommandEventHandler(PointsAncestrauxCommand_OnCommand));
+		}
+
+		public static void PointsAncestrauxCommand_OnCommand(CommandEventArgs e)
+		{
+			Mobile from = e.Mobile;
+
+			from.SendGump(new PointsAncestrauxExchangeGump(from as CustomPlayerMobile, null));
+		}
+	}
+}
 
 namespace Server.Gumps
 {
@@ -30,33 +51,35 @@ namespace Server.Gumps
 			int line = 0;
 			int space = 20;
 
-			AddSection(x - 10, y + space * line++, 305 - 1, space * 4 - 1, "Informations");
+			AddSection(x - 10, y + space * line++, 610, space * 5 - 1, "Informations");
 			line++;
 			AddHtmlTexte(x + 10, y + space * line++, 100, 80, "Explications...");
 			line += 4;
 
 			line = 5;
-			AddSection(x - 10, y + space * line++, 305 - 1, space * 4 - 1, "Expériences");
+			AddSection(x - 10, y + space * line++, 305 - 1, space * 7 - 1, "Expériences");
 			line++;
-			AddHtmlTexte(x + 10, y + space * line++, 300, 20, $"Vous pouvez échanger {m_ExpCost} contre 1 point ancestral à partir de {Experience.GetRequiredExpByLevel(50) + m_ExpCost} points d'expérience.");
+			AddHtmlTexte(x + 10, y + space * line++, 250, 60, $"Vous pouvez échanger {m_ExpCost} contre 1 point ancestral à partir de {Experience.GetRequiredExpByLevel(50) + m_ExpCost} points d'expérience.");
+			line += 2;
 			if (m_From.Experience.Exp >= Experience.GetRequiredExpByLevel(50) + m_ExpCost)
-				AddButtonHtml(X + 10, y + space * line, 1, "Échanger", "#FFFFFFF");
-			
-			line = 5;
-			AddSection(x + 295, y + space * line++, 305 - 1, space * 4 - 1, "Offrandes");
-			line++;
-			AddHtmlTexte(x + 10, y + space * line, 300, 20, $"Vous pouvez échanger une offrande en échange de points ancestraux.");
-			AddButtonHtml(X + 10, y + space * line, 2, "Échanger", "#FFFFFFF");
+				AddButtonHtml(x + 10, y + space * line++, 1, "Échanger", "#FFFFFFF");
 
-			line += 4;
+			line = 5;
+			AddSection(x + 295, y + space * line++, 305 - 1, space * 7 - 1, "Offrandes");
+			line++;
+			AddHtmlTexte(x + 315, y + space * line++, 250, 40, $"Vous pouvez échanger une offrande en échange de points ancestraux.");
+			line += 2;
+			AddButtonHtml(x + 315, y + space * line, 2, "Échanger", "#FFFFFFF");
+
+			line += 2;
 
 			AddSection(x - 10, y + space * line++, 610, space * 8 - 1, "Dépenser");
 			line++;
 			AddHtmlTexte(x + 10, y + space * line++, 610, 20, $"Vous pouvez dépenser des points ancestraux contre des objets.");
-			AddButtonHtml(X + 10, y + space * line++, 100, "Couleur de vêtement ancestrale", "#FFFFFFF");
-			AddButtonHtml(X + 10, y + space * line++, 101, "Couleur d'armure ancestrale", "#FFFFFFF");
-			AddButtonHtml(X + 10, y + space * line++, 102, "Couleur d'arme ancestrale", "#FFFFFFF");
-			AddButtonHtml(X + 10, y + space * line++, 120, "Parchemin de compétence supérieure", "#FFFFFFF");
+			AddButtonHtml(x + 10, y + space * line++, 100, "Couleur de vêtement ancestrale", "#FFFFFFF");
+			AddButtonHtml(x + 10, y + space * line++, 101, "Couleur d'armure ancestrale", "#FFFFFFF");
+			AddButtonHtml(x + 10, y + space * line++, 102, "Couleur d'arme ancestrale", "#FFFFFFF");
+			AddButtonHtml(x + 10, y + space * line++, 120, "Parchemin de compétence supérieure", "#FFFFFFF");
 		}
 
 		public override void OnResponse(NetState sender, RelayInfo info)

@@ -12,7 +12,7 @@ namespace Server
 		private int[] m_Values = new int[Enum.GetValues(typeof(Capacite)).Length];
 
 		public int Bank { get { return BankMax - m_Values.Sum(); } }
-		public int BankMax { get { return m_Owner.Experience.Niveau / 15; } }
+		public int BankMax { get { return m_Owner.Experience.Niveau / 10; } }
 
 		#region Props
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -63,6 +63,27 @@ namespace Server
 			get { return this[Capacite.Expertise]; }
 			set { this[Capacite.Expertise] = value; }
 		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Compagnon
+		{
+			get { return this[Capacite.Compagnon]; }
+			set { this[Capacite.Compagnon] = value; }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Concentration
+		{
+			get { return this[Capacite.Concentration]; }
+			set { this[Capacite.Concentration] = value; }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Precision
+		{
+			get { return this[Capacite.Precision]; }
+			set { this[Capacite.Precision] = value; }
+		}
 		#endregion
 
 		public Capacites(CustomPlayerMobile owner)
@@ -76,10 +97,16 @@ namespace Server
 
 			int version = reader.ReadInt();
 
-			m_Values = new int[reader.ReadInt()];
+			m_Values = new int[Enum.GetValues(typeof(Capacite)).Length];
 
-			for (int i = 0; i < m_Values.Length; ++i)
-				m_Values[i] = reader.ReadInt();
+			var count = reader.ReadInt();
+
+			for (int i = 0; i < count; ++i)
+			{
+				var value = reader.ReadInt();
+				if (i < m_Values.Length)
+					m_Values[i] = value;
+			}
 		}
 
         public static int GetValue(CustomPlayerMobile pm, Capacite capacite)

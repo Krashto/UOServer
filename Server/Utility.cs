@@ -1170,9 +1170,7 @@ namespace Server
 		public static int RandomBrightHue()
 		{
 			if (RandomDouble() < 0.1)
-			{
 				return RandomList(0x62, 0x71);
-			}
 
 			return RandomList(0x03, 0x0D, 0x13, 0x1C, 0x21, 0x30, 0x37, 0x3A, 0x44, 0x59);
 		}
@@ -1181,40 +1179,28 @@ namespace Server
 		public static int ClipSkinHue(int hue)
 		{
 			if (hue < 1002)
-			{
 				return 1002;
-			}
 			else if (hue > 1058)
-			{
 				return 1058;
-			}
 			else
-			{
 				return hue;
-			}
 		}
 
 		//[Obsolete( "Depreciated, use the methods for the Mobile's race", false )]
 		public static int RandomSkinHue()
 		{
-			return Random(1002, 57) | 0x8000;
+			return Random(1801, 80);
 		}
 
 		//[Obsolete( "Depreciated, use the methods for the Mobile's race", false )]
 		public static int ClipHairHue(int hue)
 		{
 			if (hue < 1102)
-			{
 				return 1102;
-			}
 			else if (hue > 1149)
-			{
 				return 1149;
-			}
 			else
-			{
 				return hue;
-			}
 		}
 
 		//[Obsolete( "Depreciated, use the methods for the Mobile's race", false )]

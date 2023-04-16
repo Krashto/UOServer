@@ -8,6 +8,9 @@
 		Magie,
 		Bouclier,
 		Equitation,
-		Expertise
+		Expertise,
+		Compagnon,
+		Concentration,
+		Precision
 	}
 }

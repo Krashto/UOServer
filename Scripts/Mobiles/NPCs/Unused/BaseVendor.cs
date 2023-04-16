@@ -35,7 +35,6 @@ namespace Server.Mobiles
         public static TimeSpan DelayRestock = TimeSpan.FromMinutes(Config.Get("Vendors.RestockDelay", 60));
         public static int MaxSell = Config.Get("Vendors.MaxSell", 500);
 
-
         public static List<BaseVendor> AllVendors { get; private set; }
 
         static BaseVendor()
@@ -75,7 +74,6 @@ namespace Server.Mobiles
 			{
 				m_Contrebandier = value;
 			}
-
 		}
 
 		public virtual NpcGuild NpcGuild => NpcGuild.None;
