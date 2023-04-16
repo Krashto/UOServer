@@ -78,17 +78,17 @@ namespace Server.Items
 		}
 	}
 
-	public class PlastronDedric : BaseArmor
+	public class PlastronDaedric : BaseArmor
 	{
 		[Constructable]
-		public PlastronDedric()
+		public PlastronDaedric()
 			: base(0xA48B)
 		{
 			Weight = 10.0;
 			Name = "Plastron Daedric";
 		}
 
-		public PlastronDedric(Serial serial)
+		public PlastronDaedric(Serial serial)
 			: base(serial)
 		{
 		}

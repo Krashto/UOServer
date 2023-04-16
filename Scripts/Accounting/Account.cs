@@ -636,7 +636,7 @@ namespace Server.Accounting
 				if (AccessLevel > AccessLevel.Player)
 					return 7;
 
-				return 2;
+				return 1;
 			}
 		}
 
