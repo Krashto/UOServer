@@ -89,7 +89,7 @@ namespace Server.Custom.Weapons
 			if (weapon == null)
 				return String.Empty;
 
-			var wa = GetWeaponAbilityIndexByWeaponType(weapon);
+			var wa = GetWeaponAbilityTypeByWeaponType(weapon);
 
 			if (wa == null)
 				return String.Empty;
@@ -147,7 +147,7 @@ namespace Server.Custom.Weapons
 			return string.Empty;
 		}
 
-		public static Type GetWeaponAbilityIndexByWeaponType(IWeapon iWeapon)
+		public static Type GetWeaponAbilityTypeByWeaponType(IWeapon iWeapon)
 		{
 			if (iWeapon == null || !(iWeapon is BaseWeapon))
 				return null;
@@ -189,7 +189,7 @@ namespace Server.Custom.Weapons
 			if (weapon == null || ability == null)
 				return false;
 
-			return ability.GetType() == GetWeaponAbilityIndexByWeaponType(weapon);
+			return ability.GetType() == GetWeaponAbilityTypeByWeaponType(weapon);
 		}
 	}
 }

@@ -2970,10 +2970,10 @@ namespace Server.Items
 
             GetBaseDamageRange(from, out baseMin, out baseMax);
 
-            min = Math.Max((int)ScaleDamageAOS(from, baseMin, false), 1);
-            max = Math.Max((int)ScaleDamageAOS(from, baseMax, false), 1);
+            min = Math.Max((int)ScaleDamageAOS(from, null, baseMin, false), 1);
+            max = Math.Max((int)ScaleDamageAOS(from, null, baseMax, false), 1);
         }
-        public virtual double ScaleDamageAOS(Mobile attacker, double damage, bool checkSkills)
+        public virtual double ScaleDamageAOS(Mobile attacker, Mobile defender, double damage, bool checkSkills)
         {
             if (checkSkills)
             {
@@ -2981,7 +2981,9 @@ namespace Server.Items
                 attacker.CheckSkill(SkillName.Tactics, 0.0, attacker.Skills[SkillName.Tactics].Cap);
                 // Passively check Anatomy for gain
                 attacker.CheckSkill(SkillName.Anatomy, 0.0, attacker.Skills[SkillName.Anatomy].Cap);
-            }
+				// Passively check Arms Lore for gain
+				attacker.CheckSkill(SkillName.ArmsLore, 0.0, attacker.Skills[SkillName.Anatomy].Cap);
+			}
 
 			#region Physical bonuses
 			/*
@@ -2991,8 +2993,8 @@ namespace Server.Items
 			double strengthBonus = GetBonus(attacker.Str, 0.300, 100.0, 5.00);
             double anatomyBonus = GetBonus(attacker.Skills[SkillName.Anatomy].Value, 0.500, 100.0, 5.00);
             double tacticsBonus = GetBonus(attacker.Skills[SkillName.Tactics].Value, 0.625, 100.0, 6.25);
-            double capaciteBonus = 0;
             double armsLoreBonus = GetBonus(attacker.Skills[SkillName.ArmsLore].Value, 0.250, 100.0, 2.5);
+			double capaciteBonus = 0;
 
 			if (attacker is CustomPlayerMobile)
 			{
@@ -3016,7 +3018,12 @@ namespace Server.Items
                 damageBonus = 100;
             #endregion
 
-            double totalBonus = strengthBonus + anatomyBonus + tacticsBonus + capaciteBonus + armsLoreBonus + (damageBonus / 100.0);
+            double totalBonus = strengthBonus + anatomyBonus + tacticsBonus + armsLoreBonus + (damageBonus / 100.0);
+
+			if (defender is BaseCreature)
+				totalBonus *= (1 + capaciteBonus);
+			else
+				totalBonus += capaciteBonus;
 
 			damage *= (1 + totalBonus);
 
@@ -3028,7 +3035,7 @@ namespace Server.Items
 
         public virtual int ComputeDamageAOS(Mobile attacker, Mobile defender)
         {
-            return (int)ScaleDamageAOS(attacker, GetBaseDamage(attacker), true);
+            return (int)ScaleDamageAOS(attacker, defender, GetBaseDamage(attacker), true);
         }
 
         public virtual int ScaleDamageByDurability(int damage)
@@ -4912,10 +4919,7 @@ namespace Server.Items
 
         public bool CanShowPoisonCharges()
         {
-            if (PrimaryAbility == WeaponAbility.InfectiousStrike || SecondaryAbility == WeaponAbility.InfectiousStrike)
-                return true;
-
-            return false;
+            return NewWeaponInfo.GetWeaponAbilityTypeByWeaponType(this) == typeof(InfectiousStrike);
         }
 
         public override bool DropToWorld(Mobile from, Point3D p)

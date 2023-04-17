@@ -65,7 +65,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			m.Hidden = true;
 			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[spell.CastSkill].Value / 2, Aptitude.Aeromancie);
-			m.SendLocalizedMessage(502730); // You begin to move quietly.
+			m.SendMessage("Un aura de brouillard a été mise sur vous.");
 
 			if (IsActive(m))
 				Deactivate(m);
@@ -95,6 +95,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m.SendMessage(33, "L'aura de brouillard prend fin.");
 				m.RevealingAction();
 			}
 		}
