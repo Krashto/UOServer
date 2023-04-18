@@ -15,7 +15,11 @@ namespace Server.Gumps
         private CustomPlayerMobile m_From;
         private CustomPlayerMobile m_GM;
 
-        public FicheGump(CustomPlayerMobile from, CustomPlayerMobile gm) : base("Fiche de personnage", 700, 460, false)
+		private int m_CapaciteDecreasingCost = 1000;
+		private int m_StatsDecreasingCost = 100;
+		private int m_AptitudesDecreasingCost = 1000;
+
+		public FicheGump(CustomPlayerMobile from, CustomPlayerMobile gm) : base("Fiche de personnage", 700, 500, false)
         {
             m_From = from;
             m_GM = gm;
@@ -60,19 +64,23 @@ namespace Server.Gumps
 			AddHtmlTexte(x + 150 + columnSpace * column, y + lineSpace * line++, 150, CustomUtility.GetItemAmountInBank(m_From, typeof(Materiaux)).ToString());
 			#endregion
 
+			line++;
+
 			#region Experience
 			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 7 - 1, "Expérience");
 			line++;
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "Niveau");
 			AddHtmlTexte(x + 150 + columnSpace * column, y + lineSpace * line++, 100, m_From.Experience.Niveau.ToString());
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "Actuelle");
-			AddButton(x + 140 + columnSpace * column, y + lineSpace * line + 2, 2117, 2118, 400, GumpButtonType.Reply, 0);
+			AddButton(x + 130 + columnSpace * column, y + lineSpace * line + 2, 2117, 2118, 400, GumpButtonType.Reply, 0);
 			AddHtmlTexte(x + 150 + columnSpace * column, y + lineSpace * line++, 100, m_From.Experience.Exp.ToString());
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "À gagner");
 			AddHtmlTexte(x + 150 + columnSpace * column, y + lineSpace * line++, 100, m_From.Experience.ExpToGainBank.ToString());
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "Heures jouées");
 			AddHtmlTexte(x + 150 + columnSpace * column, y + lineSpace * line++, 100, Math.Round(m_From.Account.TotalGameTime.TotalHours, 2).ToString());
 			#endregion
+
+			line++;
 
 			#region Classe
 			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 10 - 1, "Classes");
@@ -111,7 +119,7 @@ namespace Server.Gumps
 			line = 0;
 
 			#region Capacités
-			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 14 - 1, "Capacités");
+			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 15 - 1, "Capacités");
 			line++;
 			for (int i = 0; i < Enum.GetValues(typeof(Capacite)).Length; i++)
 			{
@@ -124,11 +132,11 @@ namespace Server.Gumps
 					AddButton(x + 180 + columnSpace * column, y + lineSpace * line + 2, 5601, 5605, 550 + i, GumpButtonType.Reply, 0);
 				line++;
 			}
+			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 200, 40, $"Note: Diminuer un point coûte {m_CapaciteDecreasingCost} po.");
 
-			line++;
-			line++;
+			line += 3;
 
-			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 11 - 1, "Statistique");
+			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 12 - 1, "Statistique");
 			line++;
 
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "Force");
@@ -216,14 +224,16 @@ namespace Server.Gumps
 			AddLabel(x + 150 + columnSpace * column, y + lineSpace * line++, 150, m_From.Attributs.Sagesse.ToString());
 
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "Points restants");
-			AddLabel(x + 150 + columnSpace * column, y + lineSpace * line, 150, (525 - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.Attributs.Constitution - m_From.Attributs.Sagesse - m_From.Attributs.Endurance).ToString());
+			AddLabel(x + 150 + columnSpace * column, y + lineSpace * line++, 150, (525 - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.Attributs.Constitution - m_From.Attributs.Sagesse - m_From.Attributs.Endurance).ToString());
+			
+			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 200, 40, $"Note: Diminuer un point coûte {m_StatsDecreasingCost} po.");
 			#endregion
 
 			column++;
 			line = 0;
 
 			#region Aptitudes
-			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 23 - 1, "Aptitudes");
+			AddSection(x - 10 + columnSpace * column, y + lineSpace * line++, 250, lineSpace * 27 - 1, "Aptitudes");
 			line++;
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 100, $"Disponible");
 			AddHtmlTexte(x + 125 + columnSpace * column, y + lineSpace * line++, 100, $"{Aptitudes.GetRemainingPA(m_From, m_From.Experience.Niveau)} / {Aptitudes.GetMaxPA(m_From.Experience.Niveau)} (Max)");
@@ -242,6 +252,8 @@ namespace Server.Gumps
 
 				line++;
 			}
+			line += 3;
+			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 200, 40, $"Note: Diminuer un point coûte {m_AptitudesDecreasingCost} po.");
 			#endregion
 		}
 
@@ -249,7 +261,7 @@ namespace Server.Gumps
         {
 			if (info.ButtonID >= 100 && info.ButtonID < 200)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_AptitudesDecreasingCost))
 				{
 					var apt = (Aptitude)(info.ButtonID - 100);
 					if (Aptitudes.CanLower(m_From, apt))
@@ -274,7 +286,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 300)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.DecreaseStat(StatType.Str, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -285,7 +297,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 302)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.DecreaseStat(StatType.Dex, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -296,7 +308,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 304)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.DecreaseStat(StatType.Int, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -307,7 +319,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 306)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.Attributs.Decrease(Attribut.Constitution, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -318,7 +330,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 308)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.Attributs.Decrease(Attribut.Endurance, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -329,7 +341,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 310)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.Attributs.Decrease(Attribut.Sagesse, 1);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -340,7 +352,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 350)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.DecreaseStat(StatType.Str, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -351,7 +363,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 352)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.DecreaseStat(StatType.Dex, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -362,7 +374,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 354)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.DecreaseStat(StatType.Int, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -373,7 +385,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 356)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.Attributs.Decrease(Attribut.Constitution, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -384,7 +396,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 358)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.Attributs.Decrease(Attribut.Endurance, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -395,7 +407,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 360)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 100))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_StatsDecreasingCost))
 					m_From.Attributs.Decrease(Attribut.Sagesse, 10);
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -410,7 +422,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID >= 500 && info.ButtonID < 550)
 			{
-				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), 1000))
+				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_CapaciteDecreasingCost))
 					m_From.Capacites.Decrease((Capacite)(info.ButtonID - 500));
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}

@@ -56,7 +56,7 @@ namespace Server.Gumps
 				if (acc.Reroll.Count > 0)
 					pm.SendGump(new CreationRerollGump(pm, m_Creation));
 				else
-					m_from.SendGump(new CreationSkills(m_from, m_Creation));
+					m_From.SendGump(new CreationSkills(m_From, m_Creation));
 			}
         }
     }

@@ -3,12 +3,18 @@
 	public  class Materiaux : Item
 	{
 		[Constructable]
-		public Materiaux() : base(0x1876)
+		public Materiaux() : this(1)
+		{
+		}
+
+		[Constructable]
+		public Materiaux(int amount) : base(0x1876)
 		{
 			Name = "Materiaux";
 			Hue = 2930;
 			Weight = 0.3;
 			Stackable = true;
+			Amount = amount;
 		}
 
 		public Materiaux(Serial serial)

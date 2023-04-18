@@ -5,14 +5,14 @@ namespace Server.Gumps
 {
 	public class CreationBaseGump : BaseProjectMGump
 	{
-		public CustomPlayerMobile m_from;
+		public CustomPlayerMobile m_From;
 		public CreationPerso m_Creation;
 
 		public CreationBaseGump(CustomPlayerMobile from, CreationPerso creationPerso, string Title , bool back, bool next)
 			: base(Title , 560, 622,false)
 		{
 			m_Creation = creationPerso;
-			m_from = from;
+			m_From = from;
 
 			int x = XBase;
 			int y = YBase;

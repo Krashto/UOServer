@@ -61,7 +61,7 @@ namespace Server.Gumps
                     m_Creation.Reroll = null;
                 else
                     m_Creation.Reroll = newReroll;
-                m_from.SendGump(new CreationRerollGump(from, m_Creation));
+                m_From.SendGump(new CreationRerollGump(from, m_Creation));
             }
 
 			if (info.ButtonID == 1001)

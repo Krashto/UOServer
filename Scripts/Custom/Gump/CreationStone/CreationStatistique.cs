@@ -201,7 +201,7 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID == 1001) //Next
             {
-				from.SendGump(new CreationSkills(m_from, m_Creation));
+				from.SendGump(new CreationSkills(m_From, m_Creation));
 			}
             else if (info.ButtonID == 1000 || info.ButtonID == 0) //Previous
             {

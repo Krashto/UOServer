@@ -210,9 +210,13 @@ namespace Server.Custom.Classes
 					skill.Cap = 25 + level / 2;
 				else
 					skill.Cap = 50 + level;
+
+				if (skill.Base > skill.Cap)
+					skill.Base = skill.Cap;
 			}
 				
 			pm.SkillMods.Clear();
+			pm.SkillsCap = 4000 + level * 80;
 
 			if (pm.Aptitudes.Chimie > 0)
 			{

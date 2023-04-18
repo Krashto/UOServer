@@ -76,7 +76,8 @@ namespace Server.Items
 
 			if (!(item is BaseContainer))
 			{
-				var newWeight = item.Weight * item.Amount;
+				var newWeight = item.Weight * item.Amount * scalar;
+
 				if (newWeight < 1)
 				{
 					from.SendMessage($"Vous ne pouvez pas recycler {item.Name}, car cet item n'est pas assez lourd.");
@@ -86,8 +87,9 @@ namespace Server.Items
 				item.Delete();
 
 				Item newItem = new Materiaux();
-				newItem.Amount = (int)(item.Weight * item.Amount * scalar);
+				newItem.Amount = (int)(newWeight);
 				from.AddToBackpack(newItem);
+				from.UpdateTotals();
 			}
 		}
 
