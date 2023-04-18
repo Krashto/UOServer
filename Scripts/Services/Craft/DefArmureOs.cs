@@ -96,21 +96,23 @@ namespace Server.Engines.Craft
         {
             int index = -1;
 
-            #region Bone Armor
-            index = AddCraft(typeof(BoneHelm), "Armure d'os", 1025206, 50, 80, typeof(PlainoisBone), "Os", 4, 1044463);
-            index = AddCraft(typeof(BoneGloves), "Armure d'os", 1025205, 50, 80, typeof(PlainoisBone), "Os", 6, 1044463);
-            index = AddCraft(typeof(BoneArms), "Armure d'os", 1025203, 50, 80, typeof(PlainoisBone), "Os", 8, 1044463);
-			index = AddCraft(typeof(BoneGorget), "Armure d'os", "Gorgerin d'os", 50, 80, typeof(PlainoisBone), "Os", 5, 1044463);
-			index = AddCraft(typeof(BoneLegs), "Armure d'os", 1025202, 50, 80, typeof(PlainoisBone), "Os", 10, 1044463);
-            index = AddCraft(typeof(BoneChest), "Armure d'os", 1025199, 50, 80, typeof(PlainoisBone), "Os", 12, 1044463);
+            #region Armure d'os Classique
+            index = AddCraft(typeof(BoneHelm), "Armure d'Os Classique", "Casque d'Os Classique", 50, 80, typeof(PlainoisBone), "Os", 4, "Vous n'avez pas suffisament d'os");
+            index = AddCraft(typeof(BoneGloves), "Armure d'Os Classique", "Gants d'Os Classique", 50, 80, typeof(PlainoisBone), "Os", 6, "Vous n'avez pas suffisament d'os");
+            index = AddCraft(typeof(BoneArms), "Armure d'Os Classique", "Brassards d'Os Classique", 50, 80, typeof(PlainoisBone), "Os", 8, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(BoneGorget), "Armure d'Os Classique", "Gorgerin d'Os Classique", 50, 80, typeof(PlainoisBone), "Os", 5, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(BoneLegs), "Armure d'Os Classique", "Jambieres d'Os Classique", 50, 80, typeof(PlainoisBone), "Os", 10, "Vous n'avez pas suffisament d'os");
+            index = AddCraft(typeof(BoneChest), "Armure d'Os Classique", "Plastron d'Os Classique", 50, 80, typeof(PlainoisBone), "Os", 12, "Vous n'avez pas suffisament d'os");
+			#endregion
 
-            index = AddCraft(typeof(OrcHelm), "Armure d'os", 1027947, 80, 120, typeof(PlainoisBone), "Os", 6, 1044463);
-			index = AddCraft(typeof(CasqueOS), "Armure d'os", "Casque d'Os", 80, 120, typeof(PlainoisBone), "Os", 4, 1044463);
-			index = AddCraft(typeof(GantsOS), "Armure d'os", "Gants d'Os", 80, 120, typeof(PlainoisBone), "Os", 6, 1044463);
-			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassard d'Os", 80, 120, typeof(PlainoisBone), "Os", 8, 1044463);
-			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambiere d'Os", 80, 120, typeof(PlainoisBone), "Os", 10, 1044463);
-			index = AddCraft(typeof(BouclierOs), "Armure d'os", "Bouclier d'Os", 80, 120, typeof(PlainoisBone), "Os", 10, 1044463) ;
-			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 80, 120, typeof(PlainoisBone), "Os", 12, 1044463);
+			#region Armure d'os
+			index = AddCraft(typeof(OrcHelm), "Armure d'os", "Casque d'Orc", 80, 120, typeof(PlainoisBone), "Os", 4, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(CasqueOS), "Armure d'os", "Casque d'Os", 80, 120, typeof(PlainoisBone), "Os", 4, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(GantsOS), "Armure d'os", "Gants d'Os", 80, 120, typeof(PlainoisBone), "Os", 6, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassards d'Os", 80, 120, typeof(PlainoisBone), "Os", 8, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambieres d'Os", 80, 120, typeof(PlainoisBone), "Os", 10, "Vous n'avez pas suffisament d'os");
+			//index = AddCraft(typeof(BouclierOs), "Armure d'os", "Bouclier d'Os", 80, 120, typeof(PlainoisBone), "Os", 10, "Vous n'avez pas suffisament d'os") ;
+			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 80, 120, typeof(PlainoisBone), "Os", 12, "Vous n'avez pas suffisament d'os");
 			#endregion
 
 			// Set the overridable material

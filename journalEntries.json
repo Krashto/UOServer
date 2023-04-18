@@ -1,5 +1,21 @@
 [
   {
+    "Id": "4495b391-b55d-453a-8b5f-5f21a6945048",
+    "Visible": true,
+    "WriterName": "Nimue",
+    "Title": "Nimue officiellement nommée Marquise du Refuge",
+    "Content": "Totalement auto-proclamée, Nimue devient la Marquise du Refuge. Elle s'octroie tous les droits de manière éternelle.\n\r\n\rTHAT'S IT\n\r\n\rTHAT'S ALL\n\r\n\rVous ferez un sondage sur le taux d'appréciation de cette nouvelle.",
+    "DateCreated": "2023-04-17T21:12:01.4379669-04:00"
+  },
+  {
+    "Id": "d28c9ea9-a2ca-4cf2-8374-3b996d7194e4",
+    "Visible": true,
+    "WriterName": "Mig",
+    "Title": "Titre Le vrai Héro",
+    "Content": "Il a été dit par les grands conte, que le vrai héro de la grande bataille de Oumgand'our à été déclarer grand victorieux de la guerre et à été promu chancelier suprême.\n\r\n\rN'Oublier pas de donner une offrande au chancelier suprême. Tristran la grand monarque de Valcoeur",
+    "DateCreated": "2023-04-17T19:35:25.2758447-04:00"
+  },
+  {
     "Id": "0f0d43df-225d-4f4b-b60e-59248d1fad4c",
     "Visible": false,
     "WriterName": "Tovarichtch",
@@ -86,5 +102,13 @@
     "Title": "4 entrée",
     "Content": "Contenu de la première entrée",
     "DateCreated": "2023-03-23T12:34:56.789Z"
+  },
+  {
+    "Id": "3a5607a3-1b5e-4eb2-aae5-235f796f20a2",
+    "Visible": true,
+    "WriterName": "Flynn",
+    "Title": "Wouaw",
+    "Content": "C'est\n\r\n\rBin l'fun\n\r\n\rdes systèmes\n\r\n\rqui marche",
+    "DateCreated": "2023-04-17T21:25:54.6164273-04:00"
   }
 ]
