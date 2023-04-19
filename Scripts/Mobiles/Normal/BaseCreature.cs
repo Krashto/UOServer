@@ -5004,7 +5004,7 @@ namespace Server.Mobiles
 			//{
 			//	var item = new ParagonChest(Name, Utility.Random(Level / 6, 1 + Level / 5));
 			//	if (item != null)
-			//		AddItem(item);
+			//		AddLoot(item);
 			//}
 
 			//Dungeon Chest
@@ -5012,7 +5012,7 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDungeonChest));
 				if (item != null)
-					AddItem(item);
+					AddLoot(item);
 			}
 
 			//Treasure Maps
@@ -5020,24 +5020,24 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseTreasureMapPart));
 				if (item != null)
-					AddItem(item);
+					AddLoot(item);
 			}
 
 			//Portraits
 			if (Utility.Random(0, 10000) < Level)
 			{
-				var rnd = Utility.Random(1, 8);
+				var rnd = Utility.Random(1, 9);
 				switch (rnd)
 				{
 					default:
-					case 1: AddItem(new LadyPortrait1()); break;
-					case 2: AddItem(new LadyPortrait2()); break;
-					case 3: AddItem(new ManPortrait1()); break;
-					case 4: AddItem(new ManPortrait2()); break;
-					case 5: AddItem(new BlackthornPainting1()); break;
-					case 6: AddItem(new BlackthornPainting2()); break;
-					case 7: AddItem(new KingsPainting1()); break;
-					case 8: AddItem(new KingsPainting2()); break;
+					case 1: AddLoot(new LadyPortrait1()); break;
+					case 2: AddLoot(new LadyPortrait2()); break;
+					case 3: AddLoot(new ManPortrait1()); break;
+					case 4: AddLoot(new ManPortrait2()); break;
+					case 5: AddLoot(new BlackthornPainting1()); break;
+					case 6: AddLoot(new BlackthornPainting2()); break;
+					case 7: AddLoot(new KingsPainting1()); break;
+					case 8: AddLoot(new KingsPainting2()); break;
 				}
 			}
 
@@ -5048,7 +5048,7 @@ namespace Server.Mobiles
 				if (item is BaseWeapon weapon)
 				{
 					if (!weapon.IsArtifact)
-						AddItem(item);
+						AddLoot(item);
 				}
 			}
 
@@ -5059,7 +5059,7 @@ namespace Server.Mobiles
 				if (item is BaseRanged weapon)
 				{
 					if (!weapon.IsArtifact)
-						AddItem(item);
+						AddLoot(item);
 				}
 			}
 
@@ -5070,7 +5070,7 @@ namespace Server.Mobiles
 				if (item is BaseArmor armor)
 				{
 					if (!armor.IsArtifact)
-						AddItem(item);
+						AddLoot(item);
 				}
 			}
 
@@ -5081,7 +5081,7 @@ namespace Server.Mobiles
 				if (item is BaseShield shield)
 				{
 					if (!shield.IsArtifact)
-						AddItem(item);
+						AddLoot(item);
 				}
 			}
 
@@ -5092,7 +5092,7 @@ namespace Server.Mobiles
 				if (item is BaseJewel jewel)
 				{
 					if (!jewel.IsArtifact)
-						AddItem(item);
+						AddLoot(item);
 				}
 			}
 
@@ -5101,7 +5101,7 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
 				if (item != null)
-					AddItem(item);
+					AddLoot(item);
 			}
 
 			//Body parts
@@ -5109,7 +5109,7 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemFromList(new List<Type>() { typeof(LeftArm), typeof(RightArm), typeof(Torso), typeof(RightLeg), typeof(LeftLeg) });
 				if (item != null)
-					AddItem(item);
+					AddLoot(item);
 			}
 
 			//Statues
@@ -5117,7 +5117,7 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(Statue));
 				if (item != null)
-					AddItem(item);
+					AddLoot(item);
 			}
 
 			//Artifacts
@@ -5125,23 +5125,23 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDecorationArtifact));
 				if (item != null)
-					AddItem(item);
+					AddLoot(item);
 			}
 
 			//Piece d'argent
 			if (Level > 5 && Utility.Random(0, 100) < Level * 3)
-				AddItem(new PieceArgent(10 * Level));
+				AddLoot(new PieceArgent(10 * Level));
 
 			//Others
 			if (Utility.Random(0, 100) < Level * 5)
 			{
-				var rnd = Utility.Random(1, 3);
+				var rnd = Utility.Random(1, 4);
 				switch (rnd)
 				{
 					default:
-					case 1: AddItem(new Arrow(10)); break;
-					case 2: AddItem(new Bolt(10)); break;
-					case 3: AddItem(new Bandage(10)); break;
+					case 1: AddLoot(new Arrow(10)); break;
+					case 2: AddLoot(new Bolt(10)); break;
+					case 3: AddLoot(new Bandage(10)); break;
 				}
 			}
 		}
@@ -5157,7 +5157,26 @@ namespace Server.Mobiles
 				max *= 2;
 			}
 
-			AddItem(new Gold(Utility.Random(min, max)));
+			AddLoot(new Gold(Utility.Random(min, max)));
+		}
+
+		public void AddLoot(Item item)
+		{
+			if (item != null)
+			{
+				Timer.DelayCall(TimeSpan.FromMilliseconds(25), () =>
+				{
+					var corpse = Corpse;
+
+					if (corpse != null)
+					{
+						if (!corpse.TryDropItem(this, item, false))
+							corpse.DropItem(item);
+					}
+					else
+						item.Delete();
+				});
+			}
 		}
 
 		public virtual void AddLoot(LootPack pack, int min, int max)

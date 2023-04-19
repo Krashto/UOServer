@@ -1,15 +1,68 @@
-using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Commands;
 using Server.Custom.Spells.NewSpells.Musique;
 using Server.Custom.Weapons;
 using Server.Mobiles;
 using Server.Network;
-using Server.Spells;
 using System;
 using System.Collections;
 
 namespace Server.Items
 {
-    public abstract class WeaponAbility
+	public class WeaponAbilityCommand
+	{
+		public static void Initialize()
+		{
+			CommandSystem.Register("WeaponAbility", AccessLevel.Player, new CommandEventHandler(WeaponAbility_OnCommand));
+			CommandSystem.Register("AttaqueSpeciale", AccessLevel.Player, new CommandEventHandler(WeaponAbility_OnCommand));
+			CommandSystem.Register("WA", AccessLevel.Player, new CommandEventHandler(WeaponAbility_OnCommand));
+			CommandSystem.Register("AS", AccessLevel.Player, new CommandEventHandler(WeaponAbility_OnCommand));
+		}
+
+		[Usage("AttaqueSpeciale")]
+		[Description("Permet de lancer l'attaque spéciale de l'arme que vous avez en main.")]
+		public static void WeaponAbility_OnCommand(CommandEventArgs e)
+		{
+			Mobile from = e.Mobile;
+
+			if (from is CustomPlayerMobile pm)
+			{
+				if (pm.Weapon == null)
+				{
+					pm.SendMessage("Vous devez avoir une arme en main pour lancer une attaque spéciale.");
+					return;
+				}
+
+				var type = NewWeaponInfo.GetWeaponAbilityTypeByWeaponType(pm.Weapon);
+
+				if (type == null)
+				{
+					pm.SendMessage("Votre arme ne possède pas d'attaque spéciale.");
+					return;
+				}
+
+				var wa = (WeaponAbility)Activator.CreateInstance(type);
+
+				if (wa == null)
+				{
+					pm.SendMessage("Erreur, veuillez contacter l'équipe par rapport aux attaques spéciales de votre arme.");
+					return;
+				}
+
+				WeaponAbility.SetCurrentAbility(pm, wa);
+
+				var name = NewWeaponInfo.GetWeaponAbilityNameByWeaponType(pm.Weapon);
+
+				if (!string.IsNullOrEmpty(name))
+				{
+					pm.SendMessage($"Votre prochaine attaque lancera: {name}");
+					return;
+				}
+			}
+		}
+	}
+
+
+	public abstract class WeaponAbility
     {
         public virtual int BaseMana => 0;
 
@@ -343,7 +396,15 @@ namespace Server.Items
 
             BaseWeapon weapon = m.Weapon as BaseWeapon;
 
-            return (weapon != null && (weapon.PrimaryAbility == a || weapon.SecondaryAbility == a));
+			var type = NewWeaponInfo.GetWeaponAbilityTypeByWeaponType(weapon);
+
+			if (type == null)
+			{
+				m.SendMessage("Votre arme ne possède pas d'attaque spéciale.");
+				return false;
+			}
+
+			return a.GetType() == type;
         }
 
         public virtual bool ValidatesDuringHit => true;

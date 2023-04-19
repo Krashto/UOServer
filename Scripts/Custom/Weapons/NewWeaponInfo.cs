@@ -84,7 +84,7 @@ namespace Server.Custom.Weapons
 			return (int)(GetMinDamage(weapon) * 1.25);
 		}
 
-		public static string GetWeaponAbilityNamesByWeaponType(IWeapon weapon)
+		public static string GetWeaponAbilityNameByWeaponType(IWeapon weapon)
 		{
 			if (weapon == null)
 				return String.Empty;

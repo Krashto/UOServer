@@ -4897,7 +4897,7 @@ namespace Server.Items
 			if (!string.IsNullOrEmpty(typeName))
 				list.Add($"Type: {typeName}");
 
-			var waName = NewWeaponInfo.GetWeaponAbilityNamesByWeaponType(this);
+			var waName = NewWeaponInfo.GetWeaponAbilityNameByWeaponType(this);
 			
 			if (!string.IsNullOrEmpty(waName))
 			{

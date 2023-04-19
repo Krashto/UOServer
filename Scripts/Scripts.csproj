@@ -31,4 +31,8 @@
   <ItemGroup>
     <Reference Include="System.Web" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Services\XmlSpawner\XmlItems\" />
+  </ItemGroup>
 </Project>
