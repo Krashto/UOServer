@@ -11,7 +11,7 @@
 		public EssenceGeomancie(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Géomancie";
-			Hue = 1190;
+			Hue = 2708;
 		}
 
 		public EssenceGeomancie(Serial serial) : base(serial)

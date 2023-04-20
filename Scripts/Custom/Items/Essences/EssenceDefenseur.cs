@@ -11,7 +11,7 @@
 		public EssenceDefenseur(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Défenseur";
-			Hue = 2006;
+			Hue = 2297;
 		}
 
 		public EssenceDefenseur(Serial serial) : base(serial)

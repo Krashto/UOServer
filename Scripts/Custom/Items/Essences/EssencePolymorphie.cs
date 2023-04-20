@@ -11,7 +11,7 @@
 		public EssencePolymorphie(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Polymorphie";
-			Hue = 1129;
+			Hue = 2661;
 		}
 
 		public EssencePolymorphie(Serial serial) : base(serial)

@@ -11,7 +11,7 @@
 		public EssenceTotemique(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Totemique";
-			Hue = 1139;
+			Hue = 2767;
 		}
 
 		public EssenceTotemique(Serial serial) : base(serial)
