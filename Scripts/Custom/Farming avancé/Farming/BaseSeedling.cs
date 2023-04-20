@@ -7,7 +7,7 @@ namespace Server.Items.Crops
 		public virtual bool CanGrowFarm { get { return Config.Get("Farming.CanGrowFarm", true); } }
 		public virtual bool CanGrowHouseTiles { get { return Config.Get("Farming.CanGrowHouseTiles", true); } }
 		public virtual bool CanGrowDirt { get { return Config.Get("Farming.CanGrowDirt", true); } }
-		public virtual bool CanGrowGround { get { return Config.Get("Farming.CanGrowGround", false); } }
+		public virtual bool CanGrowGround { get { return Config.Get("Farming.CanGrowGround", true); } }
 		public virtual bool CanGrowSwamp { get { return Config.Get("Farming.CanGrowSwamp", false); } }
 		public virtual bool CanGrowSand { get { return Config.Get("Farming.CanGrowSand", false); } }
 		public virtual bool CanGrowGarden { get { return Config.Get("Farming.CanGrowGarden", true); } }

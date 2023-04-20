@@ -200,7 +200,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(SouvenirAeromanciePotion), "Potion de souvenir", "Potion de souvenir aéromancien", 50.0, 100.0, typeof(SouvenirAeromancie), "Souvenir Ancestral: Aéromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(HairDye), 1116351, "Teinture à Cheveux", 75.0, 100.0, typeof(BacVide), "Bac à teinture", 1, "Il vous faut un bac à teinture");
+			index = AddCraft(typeof(HairDye), "Teinture pour cheveux", "Teinture à Cheveux", 75.0, 100.0, typeof(BacVide), "Bac à teinture", 1, "Il vous faut un bac à teinture");
 			AddRes(index, typeof(Charcoal), "Charbon", 5, "Vous n'avez pas suffisament de charbon");
 
 			#region Teintures
