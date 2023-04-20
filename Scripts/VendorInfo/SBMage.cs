@@ -43,8 +43,28 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(NoxCrystal), 5, 999, 0xF8E, 0));
                 Add(new GenericBuyInfo(typeof(GraveDust), 5, 999, 0xF8F, 0));
 
-                }
-            }
+				Add(new GenericBuyInfo(typeof(EssenceAeromancie), 5, 999, 0xF91, 2093));
+				Add(new GenericBuyInfo(typeof(EssenceDefenseur), 5, 999, 0xF91, 2297));
+				Add(new GenericBuyInfo(typeof(EssenceGeomancie), 5, 999, 0xF91, 2708));
+				Add(new GenericBuyInfo(typeof(EssenceGuerison), 5, 999, 0xF91, 1999));
+				Add(new GenericBuyInfo(typeof(EssenceMartial), 5, 999, 0xF91, 1935));
+				Add(new GenericBuyInfo(typeof(EssenceMusique), 5, 999, 0xF91, 1486));
+				Add(new GenericBuyInfo(typeof(EssenceNecromancie), 5, 999, 0xF91, 2174));
+				Add(new GenericBuyInfo(typeof(EssenceChasseur), 5, 999, 0xF91, 2173));
+				Add(new GenericBuyInfo(typeof(EssenceHydromancie), 5, 999, 0xF91, 2083));
+				Add(new GenericBuyInfo(typeof(EssencePolymorphie), 5, 999, 0xF91, 2661));
+				Add(new GenericBuyInfo(typeof(EssencePyromancie), 5, 999, 0xF91, 2737));
+				Add(new GenericBuyInfo(typeof(EssenceRoublardise), 5, 999, 0xF91, 2818));
+				Add(new GenericBuyInfo(typeof(EssenceTotemique), 5, 999, 0xF91, 2767));
+
+
+
+
+
+
+
+			}
+		}
         }
 }
 

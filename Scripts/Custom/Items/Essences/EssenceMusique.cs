@@ -11,7 +11,7 @@
 		public EssenceMusique(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Musique";
-			Hue = 1250;
+			Hue = 1486;
 		}
 
 		public EssenceMusique(Serial serial) : base(serial)

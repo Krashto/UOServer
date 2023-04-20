@@ -11,7 +11,7 @@
 		public EssenceChasseur(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Chasseur";
-			Hue = 1050;
+			Hue = 2173;
 		}
 
 		public EssenceChasseur(Serial serial) : base(serial)

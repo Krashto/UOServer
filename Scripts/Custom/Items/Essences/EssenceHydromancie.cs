@@ -11,7 +11,7 @@
 		public EssenceHydromancie(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Hydromancie";
-			Hue = 1264;
+			Hue = 2083;
 		}
 
 		public EssenceHydromancie(Serial serial) : base(serial)

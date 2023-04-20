@@ -11,7 +11,7 @@
 		public EssenceMartial(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Martial";
-			Hue = 1105;
+			Hue = 1935;
 		}
 
 		public EssenceMartial(Serial serial) : base(serial)
