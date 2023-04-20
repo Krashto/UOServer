@@ -152,9 +152,32 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CoiffeSanglier), "Chapeaux", "Coiffe Sanglier", 75.3, 95.3, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(TeteCoyote), "Chapeaux", "Tete de Coyote", 85.5, 105.5, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(TeteTaureau), "Chapeaux", "Tete de Taureau", 89.3, 109.3, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque1), "Chapeaux", "Masque", 19.3, 39.3, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque2), "Chapeaux", "Masque", 25, 35, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque3), "Chapeaux", "Masque", 25, 35, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque4), "Chapeaux", "Masque", 25, 35, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque5), "Chapeaux", "Masque", 35.3, 55.3, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque6), "Chapeaux", "Masque", 40, 60, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque7), "Chapeaux", "Masque", 40, 60, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque8), "Chapeaux", "Masque", 40, 60, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque9), "Chapeaux", "Masque", 40, 60, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque10), "Chapeaux", "Masque", 40, 60, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque11), "Chapeaux", "Masque", 50, 70, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque12), "Chapeaux", "Masque", 50, 70, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque13), "Chapeaux", "Masque", 50, 70, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque14), "Chapeaux", "Masque", 50, 70, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque15), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque16), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque17), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque18), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(Masque19), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+
+
+
+
 			#endregion
 
-	
+
 
 			#region Armure de Cuir
 			AddCraft(typeof(LeatherGorget), "Armures de Cuir", "Leather gorget", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
@@ -177,7 +200,30 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(HideGorget), "Armures de Peaux", "Gorgerin de Peaux", 26.0, 46.0, typeof(PlainoisLeather), 1044462, 12, 1044463);
 			#endregion
 
+			#region Armure De Chitin
+			index = AddCraft(typeof(PlastronChitinCuir), "Armures de Chitin", "Plastron de Chitin", 30.0, 50.0, typeof(PlainoisLeather), "Cuir", 14, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(BrassardChitinCuir), "Armures de Chitin", "Brassards de Chitin", 23.0, 43.0, typeof(PlainoisLeather), "Cuir", 8, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GantChitinCuir), "Armures de Chitin", "Gants de Chitin", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 6, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(JambiereChitinCuir), "Armures de Chitin", "Pantalons de Chitin", 25.0, 45.0, typeof(PlainoisLeather), "Cuir", 11, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GorgetChitinCuir), "Armures de Chitin", "Gorget de Chitin", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueChitinCuir), "Armures de Chitin", "Casque de Chitin", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			#endregion
 
+
+			#region Armure Rembourrée
+			index = AddCraft(typeof(PlastronRembourre), "Armure Rembourrée", "Plastron Rembourré", 30.0, 50.0, typeof(PlainoisLeather), "Cuir", 14, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(BrassardRemb), "Armure Rembourrée", "Brassards Rembourrés", 23.0, 43.0, typeof(PlainoisLeather), "Cuir", 8, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GantRembourre), "Armure Rembourrée", "Gants Rembourrés", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 6, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(JambiereRembourree), "Armure Rembourrée", "Pantalons Rembourrés", 25.0, 45.0, typeof(PlainoisLeather), "Cuir", 11, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GorgetRembourre), "Armure Rembourrée", "Gorget Rembourré", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueRembourre), "Armure Rembourrée", "Casque Rembourré", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueRembourre1), "Armure Rembourrée", "Casque Rembourré", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueRembourre2), "Armure Rembourrée", "Casque Rembourré", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueRembourre3), "Armure Rembourrée", "Casque Rembourré", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+
+
+
+			#endregion
 
 
 			#region Armure De Feuilles
@@ -206,16 +252,33 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(FemaleStuddedChest), "Armures Cloutée", "Female studded chest", 36.0, 56.0, typeof(PlainoisLeather), "Leather", 15, "You do not have sufficient leather to make that item.");
 
 
-			AddCraft(typeof(BrassardCloute), "Armures Cloutée", "Brassard Clouté", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
-			AddCraft(typeof(JupeCloute), "Armures Cloutée", "Jupe Clouté", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 12, 1044463);
+			//AddCraft(typeof(BrassardCloute), "Armures Cloutée", "Brassard Clouté", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
+			//AddCraft(typeof(JupeCloute), "Armures Cloutée", "Jupe Clouté", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 12, 1044463);
 
-			AddCraft(typeof(PlastronCloute), "Armures Cloutée", "Plastron Clouté", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
-			AddCraft(typeof(PlastronCloute2), "Armures Cloutée", "Plastron Clouté2", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
-			AddCraft(typeof(PlastronCloute3), "Armures Cloutée", "Plastron Clouté3", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
-			AddCraft(typeof(PlastronCloute4), "Armures Cloutée", "Plastron Clouté4", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
-
-			
+			//AddCraft(typeof(PlastronCloute), "Armures Cloutée", "Plastron Clouté", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
+			//AddCraft(typeof(PlastronCloute2), "Armures Cloutée", "Plastron Clouté2", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
+			//AddCraft(typeof(PlastronCloute3), "Armures Cloutée", "Plastron Clouté3", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
+			//AddCraft(typeof(PlastronCloute4), "Armures Cloutée", "Plastron Clouté4", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 14, 1044463);
 			#endregion
+
+			#region Armure Cloutée Elfique
+			index = AddCraft(typeof(PlastronClouteElfique), "Armure Cloutée Elfique", "Plastron Clouté Elfique", 36.0, 56.0, typeof(PlainoisLeather), "Cuir", 14, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(BrassardClouteElfique), "Armure Cloutée Elfique", "Brassards Clouté Elfique", 29.0, 49.0, typeof(PlainoisLeather), "Cuir", 8, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GantClouteElfique), "Armure Cloutée Elfique", "Gants Clouté Elfique", 26.0, 46.0, typeof(PlainoisLeather), "Cuir", 6, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(PantalonsClouteElfique), "Armure Cloutée Elfique", "Pantalons Clouté Elfique", 31.0, 51.0, typeof(PlainoisLeather), "Cuir", 11, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GorgetClouteElfique), "Armure Cloutée Elfique", "Gorget Clouté Elfique", 26.0, 46.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueClouteElfique), "Armure Cloutée Elfique", "Casque Clouté Elfique", 23.0, 43.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			#endregion
+
+			#region Armure Cloutée Renforcée
+			index = AddCraft(typeof(PlastronClouteRenforce), "Armure Renforcée", "Plastron Renforcé", 36.0, 56.0, typeof(PlainoisLeather), "Cuir", 14, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(BrassardClouteRenforce), "Armure Renforcée", "Brassards Renforcé", 29.0, 49.0, typeof(PlainoisLeather), "Cuir", 8, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GantClouteRenforce), "Armure Renforcée", "Gants Renforcé", 26.0, 46.0, typeof(PlainoisLeather), "Cuir", 6, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(PantalonsClouteRenforce), "Armure Renforcée", "Pantalons Renforcé", 31.0, 51.0, typeof(PlainoisLeather), "Cuir", 11, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(GorgetClouteRenforce), "Armure Renforcée", "Gorget Renforcé", 26.0, 46.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(CasqueClouteRenforce), "Armure Renforcée", "Casque Renforcé", 23.0, 43.0, typeof(PlainoisLeather), "Cuir", 5, "You do not have sufficient leather to make that item.");
+			#endregion
+
 
 			#region Divers
 			index = AddCraft(typeof(Backpack), "Divers", "Sac à dos", 10, 35.0, typeof(PlainoisLeather), 1044462, 5, 1044463);

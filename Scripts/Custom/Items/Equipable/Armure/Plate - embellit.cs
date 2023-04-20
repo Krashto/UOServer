@@ -25,7 +25,7 @@ namespace Server.Items
 		public override int InitMinHits => 50;
 		public override int InitMaxHits => 65;
 		public override int StrReq => 80;
-		public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+		public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
@@ -64,7 +64,7 @@ namespace Server.Items
 		public override int InitMinHits => 50;
 		public override int InitMaxHits => 65;
 		public override int StrReq => 80;
-		public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+		public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
@@ -101,7 +101,7 @@ namespace Server.Items
 		public override int InitMinHits => 50;
 		public override int InitMaxHits => 65;
 		public override int StrReq => 95;
-		public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+		public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
@@ -140,7 +140,7 @@ namespace Server.Items
 		public override int InitMinHits => 50;
 		public override int InitMaxHits => 65;
 		public override int StrReq => 90;
-		public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+		public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
@@ -179,7 +179,7 @@ namespace Server.Items
 		public override int InitMinHits => 50;
 		public override int InitMaxHits => 65;
 		public override int StrReq => 70;
-		public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+		public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 
 		public override void Serialize(GenericWriter writer)
 		{
@@ -217,7 +217,7 @@ namespace Server.Items
 		public override int InitMinHits => 50;
 		public override int InitMaxHits => 65;
 		public override int StrReq => 45;
-		public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+		public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);

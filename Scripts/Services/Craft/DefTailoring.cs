@@ -373,6 +373,17 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CapucheToile), "Chapeaux", "Capuche à Toile", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ChapeauFoulard), "Chapeaux", "Chapeau Foulard", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ChapeauMousquetaire), "Chapeaux", "Chapeau Mousquetaire", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+
+			index = AddCraft(typeof(Capuche1), "Chapeaux", "Capuche", 25.3, 45.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChapeauPlume1), "Chapeaux", "Chapeau à Plume Longue", 35.3, 55.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChapeauPlume2), "Chapeaux", "Chapeau à Plume Courte", 45.3, 65.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChapeauPlume3), "Chapeaux", "Chapeau à Plume", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChapeauToc), "Chapeaux", "Petite Toque", 35.3, 55.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ToquePlume), "Chapeaux", "Toque à Plume", 45.3, 65.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Chale1), "Chapeaux", "Chale voilé", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ChapeauMage), "Chapeaux", "majisto", 75.3, 95.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
+
+
 			index = AddCraft(typeof(CoiffeEgypte), "Chapeaux", "Coiffe Égyptienne", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(CoiffeColore), "Chapeaux", "Coiffe Colorée", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(ToqueBouffon), "Chapeaux", "Toque Bouffon", 55.3, 75.3, typeof(Cloth), "Tissus", 6, "Vous n'avez pas assez de tissus.");
