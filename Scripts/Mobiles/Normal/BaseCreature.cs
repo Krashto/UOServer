@@ -4849,21 +4849,21 @@ namespace Server.Mobiles
 
 		public void SetSkill(SkillName name, double val)
 		{
-			Skills[SkillName.Wrestling].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
-			Skills[SkillName.Tactics].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
-			Skills[SkillName.MagicResist].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+			Skills[SkillName.Wrestling].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
+			Skills[SkillName.Tactics].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
+			Skills[SkillName.MagicResist].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
 
 			if (HitPoison != null)
 			{
-				Skills[SkillName.Poisoning].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+				Skills[SkillName.Poisoning].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
 				SetMagicalAbility(MagicalAbility.Poisoning);
 			}
 
 			if ((AI == AIType.AI_Mage || AI == AIType.AI_Necro || AI == AIType.AI_NecroMage || AI == AIType.AI_Mystic || AI == AIType.AI_Spellweaving))
 			{
-				Skills[SkillName.Magery].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
-				Skills[SkillName.EvalInt].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
-				Skills[SkillName.Meditation].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5);
+				Skills[SkillName.Magery].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
+				Skills[SkillName.EvalInt].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
+				Skills[SkillName.Meditation].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
 				SetMagicalAbility(MagicalAbility.Magery);
 			}
 		}
@@ -5099,11 +5099,20 @@ namespace Server.Mobiles
 			}
 
 			//Essences + Reagents
-			if ((AI == AIType.AI_Mage || AI == AIType.AI_NecroMage) && Utility.Random(0, 100) < Level * 5)
+			if (AI == AIType.AI_Mage || AI == AIType.AI_NecroMage)
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+				item.Amount = 5 + Level;
 				if (item != null)
 					AddLoot(item);
+
+				if (Utility.Random(0, 100) < Level * 5)
+				{
+					item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+					item.Amount = 5 + Level;
+					if (item != null)
+						AddLoot(item);
+				}
 			}
 
 			//Body parts
