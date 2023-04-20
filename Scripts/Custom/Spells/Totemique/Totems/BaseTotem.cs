@@ -5,12 +5,15 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 {
 	public abstract class BaseTotem : BaseCreature
 	{
+		public bool MarcheASuivreEnable { get; set; }
 		public bool SuperCharged { get; set; }
 		public DateTime NextThinkingTime { get; set; }
 
 		public BaseTotem(AIType ai, FightMode mode, int iRangePerception, int iRangeFight)
 			: base(ai, mode, iRangePerception, iRangeFight, 0, 0)
 		{
+			CantWalk = true;
+			ControlOrder = OrderType.Stay;
 		}
 
 		public BaseTotem(Serial serial)
@@ -26,7 +29,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
-			writer.Write(0); // version
+			writer.Write(1); // version
+
+			writer.Write(MarcheASuivreEnable);
 
 			writer.Write(SuperCharged);
 		}
@@ -38,6 +43,11 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 			switch(version)
 			{
+				case 1:
+					{
+						MarcheASuivreEnable = reader.ReadBool();
+						goto case 0;
+					}
 				case 0:
 					{
 						SuperCharged = reader.ReadBool();

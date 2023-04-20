@@ -214,38 +214,47 @@ namespace Server.Custom.Classes
 				if (skill.Base > skill.Cap)
 					skill.Base = skill.Cap;
 			}
-				
-			pm.SkillMods.Clear();
+
 			pm.SkillsCap = 4000 + level * 80;
 
+			for (int i = pm.SkillMods.Count - 1; i >= 0; i--)
+				pm.RemoveSkillMod(pm.SkillMods[i]);
+				
 			if (pm.Aptitudes.Chimie > 0)
 			{
 				var mod = new DefaultSkillMod(SkillName.Alchemy, true, pm.Aptitudes.Chimie * 5.0);
-				pm.SkillMods.Add(mod);
+				mod.ObeyCap = false;
+				pm.AddSkillMod(mod);
 			}
 			if (pm.Aptitudes.Couture > 0)
 			{
 				var mod = new DefaultSkillMod(SkillName.Tailoring, true, pm.Aptitudes.Couture * 5.0);
-				pm.SkillMods.Add(mod);
+				mod.ObeyCap = false;
+				pm.AddSkillMod(mod);
 			}
 			if (pm.Aptitudes.Ingenierie > 0)
 			{
 				var mod = new DefaultSkillMod(SkillName.Tinkering, true, pm.Aptitudes.Ingenierie * 5.0);
-				pm.SkillMods.Add(mod);
+				mod.ObeyCap = false;
+				pm.AddSkillMod(mod);
 			}
 			if (pm.Aptitudes.Metallurgie > 0)
 			{
 				var mod = new DefaultSkillMod(SkillName.Blacksmith, true, pm.Aptitudes.Metallurgie * 5.0);
-				pm.SkillMods.Add(mod);
+				mod.ObeyCap = false;
+				pm.AddSkillMod(mod);
 			}
 			if (pm.Aptitudes.Transcription > 0)
 			{
 				var mod = new DefaultSkillMod(SkillName.Inscribe, true, pm.Aptitudes.Transcription * 5.0);
-				pm.SkillMods.Add(mod);
+				mod.ObeyCap = false;
+				pm.AddSkillMod(mod);
 			}
+
+			pm.UpdateSkillMods();
 		}
 
-        public static int GetCapaciteValue(Capacite capacite, Classe classe)
+		public static int GetCapaciteValue(Capacite capacite, Classe classe)
         {
             ClasseInfo info = GetInfos(classe);
 

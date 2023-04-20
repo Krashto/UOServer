@@ -111,16 +111,16 @@ namespace Server.Engines.Craft
         {
             int index = -1;
 
-			index = AddCraft(typeof(LesserRefreshPotion), "Rafraichissement", "Potion de rafraichissement légère", 0.0, 25.0, typeof(BlackPearl), 1044353, 1, 1044361);
+			index = AddCraft(typeof(LesserRefreshPotion), "Rafraichissement", "Potion de rafrai. mineure", 0.0, 25.0, typeof(BlackPearl), 1044353, 1, 1044361);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
 			index = AddCraft(typeof(RefreshPotion), "Rafraichissement", "Potion de rafraichissement", 25.0, 50.0, typeof(BlackPearl), 1044353, 3, 1044361);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(GreaterRefreshPotion), "Rafraichissement", "Potion de rafraichissement majeure", 50.0, 75.0, typeof(BlackPearl), 1044353, 5, 1044361);
+			index = AddCraft(typeof(GreaterRefreshPotion), "Rafraichissement", "Potion de rafrai. majeure", 50.0, 75.0, typeof(BlackPearl), 1044353, 5, 1044361);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(SuperiorRefreshPotion), "Rafraichissement", "Potion de rafraichissement supérieure", 75.0, 100.0, typeof(BlackPearl), 1044353, 7, 1044361);
+			index = AddCraft(typeof(SuperiorRefreshPotion), "Rafraichissement", "Potion de rafrai. supérieure", 75.0, 100.0, typeof(BlackPearl), 1044353, 7, 1044361);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
             index = AddCraft(typeof(LesserHealPotion), "Soin", "Potion de soin mineure", 0.0, 25.0, typeof(Ginseng), 1044356, 1, 1044364);
@@ -171,71 +171,34 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(SuperiorStrengthPotion), "Force", "Potion de force mineure", 75.0, 100.0, typeof(MandrakeRoot), 1044357, 7, 1044365);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
+			// Explosive
+			index = AddCraft(typeof(LesserExplosionPotion), "Explosion", "Potion explosive mineure", 5.0, 55.0, typeof(SulfurousAsh), 1044359, 3, 1044367);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(ExplosionPotion), "Explosion", "Potion explosive", 35.0, 85.0, typeof(SulfurousAsh), 1044359, 5, 1044367);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(GreaterExplosionPotion), "Explosion", "Potion explosive majeure", 65.0, 115.0, typeof(SulfurousAsh), 1044359, 10, 1044367);
+            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+
+            index = AddCraft(typeof(ConflagrationPotion), "Explosion", "Potion incendière", 55.0, 105.0, typeof(Bottle), 1044529, 1, 500315);
+            AddRes(index, typeof(GraveDust), 1023983, 5, 1044253);
+
+            index = AddCraft(typeof(GreaterConflagrationPotion), "Explosion", "Potion incendière majeure", 70.0, 120.0, typeof(Bottle), 1044529, 1, 500315);
+            AddRes(index, typeof(GraveDust), 1023983, 10, 1044253);
+
+            index = AddCraft(typeof(SmokeBomb), "Autres", "Smoke bomb", 90.0, 120.0, typeof(Eggs), 1044477, 1, 1044253);
+            AddRes(index, typeof(Ginseng), 1044356, 3, 1044364);
+
 			index = AddCraft(typeof(InvisibilityPotion), "Autres", "Potion d'invisibilité", 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(Bloodmoss), 1044354, 4, 1044362);
-            AddRes(index, typeof(Nightshade), 1044358, 3, 1044366);
+			AddRes(index, typeof(Bloodmoss), 1044354, 4, 1044362);
+			AddRes(index, typeof(Nightshade), 1044358, 3, 1044366);
 
 			index = AddCraft(typeof(NightSightPotion), "Autres", "Potion de vision de nuit", -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
+			//Potions de souvenir
 			index = AddCraft(typeof(SouvenirAeromanciePotion), "Potion de souvenir", "Potion de souvenir aéromancien", 50.0, 100.0, typeof(SouvenirAeromancie), "Souvenir Ancestral: Aéromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			//index = AddCraft(typeof(JukariBurnPoiltice), 1116349, "Potion de résistances", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-			//AddRes(index, typeof(BlackPearl), 1044353, 20, 1044361);
-			//AddRes(index, typeof(Vanilla), 1080000, 10, 1080008);          
-
-			//index = AddCraft(typeof(KurakAmbushersEssence), 1116349, "Essence de Kurak", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-			//AddRes(index, typeof(Bloodmoss), 1044354, 20, 1044362);
-
-			//index = AddCraft(typeof(BarakoDraftOfMight), 1116349, "Brassage de Barako", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-			//AddRes(index, typeof(SpidersSilk), 1044360, 20, 1044368);
-			//AddRes(index, typeof(BaseBeverage), 1022459, 10, 1044253);
-			//SetBeverageType(index, BeverageType.Liquor);
-
-			//index = AddCraft(typeof(UraliTranceTonic), 1116349, "Tonic de Urali", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-			//AddRes(index, typeof(MandrakeRoot), 1044357, 20, 1044365);
-			//AddRes(index, typeof(YellowScales), 1156799, 10, 1044253);
-			//AddRes(index, typeof(RiverMoss), 1156731, 5, 1044253);
-			//AddRecipe(index, (int)AlchemyRecipes.UraliTranceTonic);
-
-			//index = AddCraft(typeof(SakkhraProphylaxisPotion), 1116349, "Potion de Sakkhra", 51.0, 151.0, typeof(Bottle), 1044529, 1, 500315);
-			//AddRes(index, typeof(Nightshade), 1044358, 20, 1044366);
-			//AddRes(index, typeof(BaseBeverage), 1022503, 10, 1044253);
-			//AddRes(index, typeof(BlueCorn), 1156733, 5, 1044253);
-			//SetBeverageType(index, BeverageType.Wine);
-
-			// Explosive
-			index = AddCraft(typeof(LesserExplosionPotion), 1116351, 1044555, 5.0, 55.0, typeof(SulfurousAsh), 1044359, 3, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(ExplosionPotion), 1116351, 1044556, 35.0, 85.0, typeof(SulfurousAsh), 1044359, 5, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(GreaterExplosionPotion), 1116351, 1044557, 65.0, 115.0, typeof(SulfurousAsh), 1044359, 10, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(ConflagrationPotion), 1116351, 1072096, 55.0, 105.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(GraveDust), 1023983, 5, 1044253);
-
-            index = AddCraft(typeof(GreaterConflagrationPotion), 1116351, 1072099, 70.0, 120.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(GraveDust), 1023983, 10, 1044253);
-
-            index = AddCraft(typeof(ConfusionBlastPotion), 1116351, 1072106, 55.0, 105.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(PigIron), 1023978, 5, 1044253);
-
-            index = AddCraft(typeof(GreaterConfusionBlastPotion), 1116351, 1072109, 70.0, 120.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(PigIron), 1023978, 10, 1044253);
-
-            index = AddCraft(typeof(BlackPowder), 1116351, 1095826, 65.0, 115.0, typeof(SulfurousAsh), 1023980, 1, 1044253);
-            AddRes(index, typeof(Charcoal), 1116303, 5, 1044253);
-
-            index = AddCraft(typeof(FuseCord), 1116351, 1116305, 55.0, 105.0, typeof(LightYarn), 1023615, 1, 1044253);
-            AddRes(index, typeof(BlackPowder), 1095826, 1, 1044253);
-            SetNeedWater(index, true);
-
-            index = AddCraft(typeof(SmokeBomb), 1116351, 1030248, 90.0, 120.0, typeof(Eggs), 1044477, 1, 1044253);
-            AddRes(index, typeof(Ginseng), 1044356, 3, 1044364);
 
 			index = AddCraft(typeof(HairDye), 1116351, "Teinture à Cheveux", 75.0, 100.0, typeof(BacVide), "Bac à teinture", 1, "Il vous faut un bac à teinture");
 			AddRes(index, typeof(Charcoal), "Charbon", 5, "Vous n'avez pas suffisament de charbon");

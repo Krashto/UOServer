@@ -1202,7 +1202,7 @@ namespace Server.Items
 			if (attacker is CustomPlayerMobile && defender is BaseCreature)
 			{
 				var pm = attacker as CustomPlayerMobile;
-				bonus = pm.Capacites[Capacite.Precision] * 3;
+				bonus += pm.Capacites[Capacite.Precision] * 3;
 			}
 
 			if (attacker is BaseCreature bc && !bc.Controlled && defender is BaseCreature bc2 && bc2.Controlled)
@@ -3027,9 +3027,6 @@ namespace Server.Items
 
 			damage *= (1 + totalBonus);
 
-			if (attacker is BaseCreature)
-				damage *= 0.5;
-
             return damage;
         }
 
@@ -3043,9 +3040,7 @@ namespace Server.Items
             int scale = 100;
 
             if (m_MaxHits > 0 && m_Hits < m_MaxHits)
-            {
                 scale = 50 + ((50 * m_Hits) / m_MaxHits);
-            }
 
             return AOS.Scale(damage, scale);
         }

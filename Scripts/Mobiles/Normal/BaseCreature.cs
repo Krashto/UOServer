@@ -1042,6 +1042,8 @@ namespace Server.Mobiles
 		public virtual bool TaintedLifeAura => false;
 		public virtual bool BreathImmune => false;
 
+
+		[CommandProperty(AccessLevel.GameMaster)]
 		public virtual int Level => 0;
 
 		public virtual Biome Biome => Biome.Aucun;
@@ -4717,13 +4719,13 @@ namespace Server.Mobiles
 		#region Set[...]
 		public void SetDamage(int val)
 		{
-			m_DamageMin = 5 + (int)(Level * 2);
+			m_DamageMin = 5 + (int)(Level * 3);
 			m_DamageMax = m_DamageMin + 3;
 		}
 
 		public void SetDamage(int min, int max)
 		{
-			m_DamageMin = 5 + (int)(Level * 2);
+			m_DamageMin = 5 + (int)(Level * 3);
 			m_DamageMax = m_DamageMin + 3;
 		}
 

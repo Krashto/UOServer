@@ -11,8 +11,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		public TotemDenergie() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
 		{
 			Name = "Totem d'énergie";
-			Body = 16;
+			Body = 164;
 			BaseSoundID = 278;
+			Blessed = true;
 
 			SetStr(200);
 			SetDex(70);
@@ -38,8 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 85.0);
 
-			ControlSlots = 1;
-			AddItem(new LightSource());
+			ControlSlots = 0;
 		}
 
 		public TotemDenergie(Serial serial)
@@ -53,6 +53,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnThink()
 		{
+			CantWalk = !MarcheASuivreEnable;
+
 			if (NextThinkingTime >= DateTime.Now)
 				return;
 

@@ -39,7 +39,6 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Wrestling, 85.0);
 
 			ControlSlots = 1;
-			AddItem(new LightSource());
 		}
 
 		public TotemDeau(Serial serial)
@@ -54,6 +53,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnThink()
 		{
+			CantWalk = !MarcheASuivreEnable;
+
 			if (NextThinkingTime >= DateTime.Now)
 				return;
 

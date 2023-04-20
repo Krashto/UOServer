@@ -98,43 +98,26 @@ namespace Server.Engines.Craft
         {
             int index = -1;
 
-            // Curative
-            index = AddCraft(typeof(LesserCurePotion), 1116348, 1044552, -10.0, 40.0, typeof(Garlic), 1044355, 1, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(CurePotion), 1116348, 1044553, 25.0, 75.0, typeof(Garlic), 1044355, 3, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-            index = AddCraft(typeof(GreaterCurePotion), 1116348, 1044554, 65.0, 95.0, typeof(Garlic), 1044355, 6, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
-			index = AddCraft(typeof(SuperiorCurePotion), 1116348, "Antidote Ultime", 80.0, 105.0, typeof(PlumesSaliva), "Plume de Saliva", 1, "Vous n'avez pas assez de plume de Saliva");
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-
             // Toxic
-            index = AddCraft(typeof(LesserPoisonPotion), 1116350, 1044548, -5.0, 45.0, typeof(Nightshade), 1044358, 1, 1044366);
+            index = AddCraft(typeof(LesserPoisonPotion), "Poisons", "Potion de poison mineure", 0, 25.0, typeof(Nightshade), 1044358, 1, 1044366);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(PoisonPotion), 1116350, 1044549, 15.0, 65.0, typeof(Nightshade), 1044358, 2, 1044366);
+            index = AddCraft(typeof(PoisonPotion), "Poisons", "Potion de poison", 25.0, 50.0, typeof(Nightshade), 1044358, 2, 1044366);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(GreaterPoisonPotion), 1116350, 1044550, 55.0, 105.0, typeof(Nightshade), 1044358, 4, 1044366);
+            index = AddCraft(typeof(GreaterPoisonPotion), "Poisons", "Potion de poison majeure", 50.0, 75.0, typeof(Nightshade), 1044358, 4, 1044366);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(DeadlyPoisonPotion), 1116350, 1044551, 90.0, 140.0, typeof(Nightshade), 1044358, 8, 1044366);
+            index = AddCraft(typeof(DeadlyPoisonPotion), "Poisons", "Potion de poison supérieure", 75.0, 100.0, typeof(Nightshade), 1044358, 8, 1044366);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(ParasiticPotion), 1116350, 1072942, 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(ParasiticPotion), "Poisons", "Potion de poison parasitique", 75.0, 100.0, typeof(Bottle), 1044529, 1, 500315);
             AddRes(index, typeof(NoxCrystal), "Nox Crystal", 5, "Pas assez de Nox Crystal");
 			AddRes(index, typeof(VeninAraigneeGeante), "Venin d'araignée géante", 1, "Vous n'avez pas suffisament de venin d'Araignée Géante");
 
-			index = AddCraft(typeof(DarkglowPotion), 1116350, 1072943, 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(DarkglowPotion), "Poisons", "Potion de poison sombrelueur", 75.0, 100.0, typeof(Bottle), 1044529, 1, 500315);
             AddRes(index, typeof(NoxCrystal), "Nox Crystal", 5, "Pas assez de Nox Crystal");
 			AddRes(index, typeof(VeninAraigneeNoire), "Venin d'araignée noire", 1, "Vous n'avez pas suffisament de venin d'Araignée Noire");
-
-			index = AddCraft(typeof(ScouringToxin), 1116350, 1112292, 75.0, 100.0, typeof(NoxCrystal), "Nox Crystal", 1, "Pas assez de Nox Crystal");
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
-			AddRes(index, typeof(VeninTarenlune), "Venin de Tarenlune", 5, "Vous n'avez pas suffisament de venin de Tarenlune");
 		}
 	}
 }

@@ -38,6 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					SpellHelper.Turn(totem, Caster);
 					ExplodeFX.Bee.CreateInstance(totem.Location, totem.Map, 1);
 					totem.CantWalk = false;
+					totem.MarcheASuivreEnable = true;
 					totem.ControlOrder = Mobiles.OrderType.Follow;
 				}
 			}

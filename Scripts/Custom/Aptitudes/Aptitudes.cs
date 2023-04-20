@@ -273,7 +273,7 @@ namespace Server.Custom.Aptitudes
 					int max = entry.Max;
 					int value = from.GetTotalAptitudeValue(aptitude);
 
-					if (value > max)
+					if (value >= max)
 						return false;
 
 					int level = GetValue(from, aptitude);

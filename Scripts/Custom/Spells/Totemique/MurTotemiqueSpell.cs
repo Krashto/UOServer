@@ -84,8 +84,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				{
 					new InternalItem(itemID, pnt, Caster, Caster.Map, duration, false);
 					var totem = new TotemDenergie();
-					SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
-					totem.CantWalk = true;
+					SpellHelper.Summon(totem, Caster, 0x217, duration + TimeSpan.FromMilliseconds(50), false, false);
+					totem.MoveToWorld(pnt, Caster.Map);
 				}
 
 				for (int i = 1; i <= 2; ++i)
@@ -99,8 +99,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 						{
 							new InternalItem(itemID, point, Caster, Caster.Map, duration, false);
 							var totem = new TotemDenergie();
-							SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
-							totem.CantWalk = true;
+							SpellHelper.Summon(totem, Caster, 0x217, duration + TimeSpan.FromMilliseconds(50), false, false);
+							totem.MoveToWorld(point, Caster.Map);
 						}
 
 						point = new Point3D(eastToWest ? pnt.X + -index : pnt.X, eastToWest ? pnt.Y : pnt.Y + -index, pnt.Z);
@@ -110,8 +110,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 						{
 							new InternalItem(itemID, point, Caster, Caster.Map, duration, false);
 							var totem = new TotemDenergie();
-							SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
-							totem.CantWalk = true;
+							SpellHelper.Summon(totem, Caster, 0x217, duration + TimeSpan.FromMilliseconds(50), false, false);
+							totem.MoveToWorld(point, Caster.Map);
 						}
 					}, i);
 				}
