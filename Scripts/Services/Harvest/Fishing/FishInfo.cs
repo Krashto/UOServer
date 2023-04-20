@@ -243,7 +243,7 @@ namespace Server.Items
             if (reg.Parent != null)
                 reg = reg.Parent;
 
-            double skill = from.Skills[SkillName.Fishing].Value;
+            double skill = from.Skills[SkillName.Cooking].Value;
             bool fishing = harvestItem is FishingPole;
 
             Type bait = null;

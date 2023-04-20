@@ -39,6 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				var duration = GetDurationForSpell(30, 2);
 
 				Caster.BodyMod = 164;
+				Caster.HueMod = 0;
 
 				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
@@ -62,6 +63,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public static void Deactivate(Mobile m)
 		{
+			if (m == null)
+				return;
+
 			var t = m_Timers[m] as Timer;
 
 			if (t != null)
@@ -70,6 +74,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m_Timers.Remove(m);
 
 				m.BodyMod = 0;
+				m.HueMod = -1;
 
 				m.SendSpeedControl(SpeedControlType.Disable);
 

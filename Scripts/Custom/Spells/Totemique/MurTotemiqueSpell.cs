@@ -125,16 +125,14 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		{
 			private readonly Timer m_Timer;
 			private readonly Mobile m_Caster;
+			public override bool BlocksFit => true;
 
-			public InternalItem(int itemID, Point3D loc, Mobile caster, Map map, TimeSpan duration, bool visible)
-				: base(itemID)
+			public InternalItem(int itemID, Point3D loc, Mobile caster, Map map, TimeSpan duration, bool visible) : base(itemID)
 			{
 				Movable = false;
 				Visible = visible;
-				Light = LightType.Circle300;
 
 				MoveToWorld(loc, map);
-				Effects.SendLocationParticles(EffectItem.Create(loc, map, EffectItem.DefaultDuration), 0x376A, 9, 10, 5029);
 
 				m_Caster = caster;
 
@@ -152,7 +150,6 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				m_Timer.Start();
 			}
 
-			public override bool BlocksFit => true;
 			public override void Serialize(GenericWriter writer)
 			{
 				base.Serialize(writer);

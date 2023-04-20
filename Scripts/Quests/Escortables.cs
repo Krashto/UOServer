@@ -933,7 +933,7 @@ namespace Server.Engines.Quests
             SetSkill(SkillName.Magery, 82.0, 100.0);
             SetSkill(SkillName.MagicResist, 82.0, 100.0);
             SetSkill(SkillName.Tactics, 82.0, 100.0);
-            SetSkill(SkillName.Camping, 80.0, 100.0);
+            SetSkill(SkillName.Cooking, 80.0, 100.0);
             SetSkill(SkillName.Forensics, 80.0, 100.0);
             SetSkill(SkillName.SpiritSpeak, 80.0, 100.0);
 
@@ -962,7 +962,7 @@ namespace Server.Engines.Quests
                 return false;
 
             return (skill == SkillName.Anatomy) ||
-                   (skill == SkillName.Camping) ||
+                   (skill == SkillName.Cooking) ||
                    (skill == SkillName.Forensics) ||
                    (skill == SkillName.Healing) ||
                    (skill == SkillName.SpiritSpeak);

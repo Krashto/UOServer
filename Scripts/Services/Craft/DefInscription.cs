@@ -383,7 +383,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreSkillsArmsLore), "Livre d'étude (skills)", "ArmsLore", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsBegging), "Livre d'étude (skills)", "Begging", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsBlacksmith), "Livre d'étude (skills)", "Blacksmith", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsCamping), "Livre d'étude (skills)", "Camping", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsCamping), "Livre d'étude (skills)", "Camping", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsCarpentry), "Livre d'étude (skills)", "Carpentry", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsCartography), "Livre d'étude (skills)", "Cartography", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsCooking), "Livre d'étude (skills)", "Cooking", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
@@ -391,7 +391,7 @@ namespace Server.Engines.Craft
 			//index = AddCraft(typeof(LivreSkillsDiscordance), "Livre d'étude (skills)", "Discordance", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsEvalInt), "Livre d'étude (skills)", "EvalInt", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsFencing), "Livre d'étude (skills)", "Fencing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreSkillsFishing), "Livre d'étude (skills)", "Fishing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			//index = AddCraft(typeof(LivreSkillsFishing), "Livre d'étude (skills)", "Fishing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsFletching), "Livre d'étude (skills)", "Fletching", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			//index = AddCraft(typeof(LivreSkillsForensics), "Livre d'étude (skills)", "Forensics", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreSkillsHealing), "Livre d'étude (skills)", "Healing", 0.0, 0.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");

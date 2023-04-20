@@ -7,7 +7,7 @@ namespace Server.Mobiles
             : base("ranger")
         {
             SetSkill(SkillName.AnimalTaming, 64.0, 100.0);
-            SetSkill(SkillName.Camping, 75.0, 98.0);
+            SetSkill(SkillName.Cooking, 75.0, 98.0);
             SetSkill(SkillName.Hiding, 75.0, 98.0);
             SetSkill(SkillName.MagicResist, 75.0, 98.0);
             SetSkill(SkillName.Tactics, 65.0, 88.0);

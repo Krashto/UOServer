@@ -38,6 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				var duration = GetDurationForSpell(30, 2);
 
 				Caster.BodyMod = 159;
+				Caster.HueMod = 0;
 
 				var value = 40 - SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Polymorphie);
 
@@ -61,6 +62,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public static void Deactivate(Mobile m)
 		{
+			if (m == null)
+				return;
+
 			var t = m_Timers[m] as Timer;
 
 			if (t != null)
@@ -69,6 +73,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m_Timers.Remove(m);
 
 				m.BodyMod = 0;
+				m.HueMod = -1;
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);

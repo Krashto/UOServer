@@ -135,7 +135,7 @@ namespace Server.Misc
             double value = skill.Value;
 
             //TODO: Is there any other place this can go?
-            if (skillName == SkillName.Fishing && BaseGalleon.FindGalleonAt(from, from.Map) is TokunoGalleon)
+            if (skillName == SkillName.Cooking && BaseGalleon.FindGalleonAt(from, from.Map) is TokunoGalleon)
                 value += 1;
 
             if (value < minSkill)

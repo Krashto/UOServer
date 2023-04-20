@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Provisioner()
             : base("Maraicher")
         {
-            SetSkill(SkillName.Camping, 45.0, 68.0);
+            SetSkill(SkillName.Cooking, 45.0, 68.0);
             SetSkill(SkillName.Tactics, 45.0, 68.0);
         }
 

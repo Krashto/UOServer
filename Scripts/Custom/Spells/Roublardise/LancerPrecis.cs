@@ -16,7 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				Reagent.EssenceRoublardise
 			);
 
-		public override int RequiredAptitudeValue { get { return 3; } }
+		public override int RequiredAptitudeValue { get { return 2; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Roublardise }; } }
 		public override SkillName CastSkill { get { return SkillName.Hiding; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

@@ -13,7 +13,7 @@ namespace Server.Mobiles
             AddItem(new GnarledStaff());
             //AddItem( new Robe(5) );
 
-            SetSkill(SkillName.Camping, 80.0, 100.0);
+            SetSkill(SkillName.Cooking, 80.0, 100.0);
             SetSkill(SkillName.Forensics, 80.0, 100.0);
             SetSkill(SkillName.SpiritSpeak, 80.0, 100.0);
         }
@@ -31,7 +31,7 @@ namespace Server.Mobiles
                 return false;
 
             return (skill == SkillName.Anatomy) ||
-                   (skill == SkillName.Camping) ||
+                   (skill == SkillName.Cooking) ||
                    (skill == SkillName.Forensics) ||
                    (skill == SkillName.Healing) ||
                    (skill == SkillName.SpiritSpeak) ||

@@ -1013,9 +1013,9 @@ namespace Server.Multis
 					cm.SendMessage("Vous ne pouvez pas commander le bateau en étant caché.");
 					return false;
 				}
-				else if (cm.Skills[SkillName.Fishing].Value < 50)
+				else if (cm.Skills[SkillName.Cooking].Value < 50)
 				{
-					cm.SendMessage("Vous ne pouvez pas commander un bateau avec moins de 50 en Fishing.");
+					cm.SendMessage("Vous ne pouvez pas commander un bateau avec moins de 50 en Cooking.");
 					return false;
 				}
 			}

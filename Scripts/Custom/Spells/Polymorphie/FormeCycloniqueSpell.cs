@@ -38,6 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				var duration = GetDurationForSpell(30, 2);
 
 				Caster.BodyMod = 13;
+				Caster.HueMod = 0;
 
 				var mod = new DefaultSkillMod(SkillName.Hiding, true, 20.0)
 				{
@@ -61,6 +62,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public static void Deactivate(Mobile m)
 		{
+			if (m == null)
+				return;
+
 			var t = m_Timers[m] as Timer;
 			var mod = m_Table[m] as SkillMod;
 
@@ -71,6 +75,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m.RemoveSkillMod(mod);
 
 				m.BodyMod = 0;
+				m.HueMod = -1;
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);

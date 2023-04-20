@@ -3,6 +3,8 @@ using Server.Targeting;
 using Server.Misc;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Custom.Spells.NewSpells.Totemique;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Pyromancie
 {
@@ -39,73 +41,38 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				var duration = GetDurationForSpell(5, 0.1);
+				var duration = GetDurationForSpell(5, 1);
 
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				int range = 12;
+				int hue = 2737;
 
-				new InternalItem(0x398C, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X - 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X - 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 0, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				int startX = m.Location.X - range / 2;
+				int startY = m.Location.Y - range / 2;
+				int endY = m.Location.Y + range / 2;
 
-				new InternalItem(0x398C, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X - 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X - 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 0, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x398C, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				for (int y = startY; y <= endY; y++)
+					new InternalItem(0x3956, hue, new Point3D(startX, y, m.Location.Z), Caster, Caster.Map, duration, true);
 
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, true);
-				new InternalItem(0x3996, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, true);
+				startX = m.Location.X - range / 2;
+				startY = m.Location.Y - range / 2;
+				int endX = m.Location.X + range / 2;
 
+				for (int x = startX; x <= endX; x++)
+					new InternalItem(0x3946, hue, new Point3D(x, startY, m.Location.Z), Caster, Caster.Map, duration, true);
 
+				startX = m.Location.X - range / 2;
+				startY = m.Location.Y + range / 2;
+				endX = m.Location.X + range / 2;
 
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				for (int x = startX; x <= endX; x++)
+					new InternalItem(0x3946, hue, new Point3D(x, startY, m.Location.Z), Caster, Caster.Map, duration, true);
 
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 0, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 1, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 2, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				startX = m.Location.X + range / 2;
+				startY = m.Location.Y - range / 2;
+				endY = m.Location.Y + range / 2;
 
-				new InternalItem(0x82, new Point3D(m.Location.X - 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X - 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 0, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 1, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 2, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
-
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 3, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 2, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y - 1, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 0, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 1, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 2, m.Location.Z), Caster, Caster.Map, duration, false);
-				new InternalItem(0x82, new Point3D(m.Location.X + 3, m.Location.Y + 3, m.Location.Z), Caster, Caster.Map, duration, false);
+				for (int y = startY; y <= endY; y++)
+					new InternalItem(0x3956, hue, new Point3D(startX, y, m.Location.Z), Caster, Caster.Map, duration, true);
 			}
 
 			FinishSequence();
@@ -114,28 +81,62 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 		[DispellableField]
 		private class InternalItem : Item
 		{
-			private Timer m_Timer;
-			private DateTime m_End;
-			private Mobile m_Caster;
+			private readonly Timer m_Timer;
+			private readonly Mobile m_Caster;
+			public override bool BlocksFit => true;
 
-			public override bool BlocksFit { get { return true; } }
-
-			public InternalItem(int itemID, Point3D loc, Mobile caster, Map map, TimeSpan duration, bool visible) : base(itemID)
+			public InternalItem(int itemID, int hue, Point3D loc, Mobile caster, Map map, TimeSpan duration, bool visible) : base(itemID)
 			{
-				var canFit = SpellHelper.AdjustField(ref loc, map, 12, false);
-
-				Visible = visible;
 				Movable = false;
-				Light = LightType.Circle300;
+				Visible = visible;
+				Hue = hue;
 
 				MoveToWorld(loc, map);
 
 				m_Caster = caster;
 
-				m_End = DateTime.Now + duration;
+				if (Deleted)
+					return;
 
 				m_Timer = new InternalTimer(this, duration);
 				m_Timer.Start();
+			}
+
+			public InternalItem(Serial serial)
+				: base(serial)
+			{
+				m_Timer = new InternalTimer(this, TimeSpan.FromSeconds(5.0));
+				m_Timer.Start();
+			}
+
+			public override void Serialize(GenericWriter writer)
+			{
+				base.Serialize(writer);
+
+				writer.Write(0); // version
+			}
+
+			public override void Deserialize(GenericReader reader)
+			{
+				base.Deserialize(reader);
+
+				int version = reader.ReadInt();
+			}
+
+			public override bool OnMoveOver(Mobile m)
+			{
+				int noto;
+
+				if (m is PlayerMobile)
+				{
+					noto = Notoriety.Compute(m_Caster, m);
+					if (noto == Notoriety.Enemy || noto == Notoriety.Ally)
+						return false;
+
+					if (m.Map != null && (m.Map.Rules & MapRules.FreeMovement) == 0)
+						return false;
+				}
+				return base.OnMoveOver(m);
 			}
 
 			public override void OnAfterDelete()
@@ -146,70 +147,29 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 					m_Timer.Stop();
 			}
 
-			public InternalItem(Serial serial) : base(serial)
+			private class InternalTimer : Timer
 			{
-			}
-
-			public override void Serialize(GenericWriter writer)
-			{
-				base.Serialize(writer);
-
-				writer.Write(1); // version
-
-				writer.Write(m_Caster);
-				writer.WriteDeltaTime(m_End);
-			}
-
-			public override void Deserialize(GenericReader reader)
-			{
-				base.Deserialize(reader);
-
-				var version = reader.ReadInt();
-
-				switch (version)
+				private readonly InternalItem m_Item;
+				public InternalTimer(InternalItem item, TimeSpan duration)
+					: base(duration)
 				{
-					case 1:
-						{
-							m_Caster = reader.ReadMobile();
+					Priority = TimerPriority.OneSecond;
+					m_Item = item;
+				}
 
-							goto case 0;
-						}
-					case 0:
-						{
-							m_End = reader.ReadDeltaTime();
-
-							break;
-						}
+				protected override void OnTick()
+				{
+					m_Item.Delete();
 				}
 			}
 		}
 
-		private class InternalTimer : Timer
+		public class InternalTarget : Target
 		{
-			private InternalItem m_Item;
-
-			public InternalTimer(InternalItem item, TimeSpan duration) : base(duration)
-			{
-				m_Item = item;
-
-				Priority = TimerPriority.FiftyMS;
-			}
-
-			protected override void OnTick()
-			{
-				if (m_Item.Deleted)
-					return;
-
-				m_Item.Delete();
-			}
-		}
-
-		private class InternalTarget : Target
-		{
-			private CageDeFeuSpell m_Owner;
+			private readonly CageDeFeuSpell m_Owner;
 
 			public InternalTarget(CageDeFeuSpell owner)
-				: base(12, true, TargetFlags.Harmful)
+				: base(15, true, TargetFlags.None)
 			{
 				m_Owner = owner;
 			}

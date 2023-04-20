@@ -26,8 +26,6 @@ namespace Server.Mobiles
 {
 	public partial class CustomPlayerMobile : PlayerMobile
 	{
-		public static List<SkillName> SkillGeneral = new List<SkillName>() { SkillName.Mining, SkillName.Lumberjacking, SkillName.Fishing, SkillName.MagicResist };
-
 		private GrandeurEnum m_Grandeur;
 		private CorpulenceEnum m_Corpulence;
 		private AppearanceEnum m_Apparence;
@@ -730,6 +728,20 @@ namespace Server.Mobiles
 		}
 
 		#endregion
+		public override int GetMinResistance(ResistanceType type)
+		{
+			if (type == ResistanceType.Physical)
+			{
+				return MinPlayerResistance;
+			}
+
+			int magicResist = (int)Skills[SkillName.MagicResist].Value;
+			int min = (int)(magicResist * 0.2);
+
+			min += Capacites[Capacite.Armure] * 4;
+
+			return Math.Max(MinPlayerResistance, Math.Min(MaxPlayerResistance, min));
+		}
 
 		#region Stats
 

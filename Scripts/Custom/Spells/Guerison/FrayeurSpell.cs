@@ -1,15 +1,12 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using System.Collections;
-using System;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Guerison
 {
 	public class FrayeurSpell : Spell
 	{
-		private static Hashtable m_Timers = new Hashtable();
-
 		private static SpellInfo m_Info = new SpellInfo(
 				"Frayeur", "[Frayeur]",
 				SpellCircle.First,
@@ -41,77 +38,32 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				SpellHelper.Turn(Caster, m);
 
-				var duration = GetDurationForSpell(2);
-
-				Timer t = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers[m] = t;
-				t.Start();
-
 				m.Emote("*A terriblement peur*");
 
 				m.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
 				m.PlaySound(0x1E0);
+
+				Disarm.DoEffect(Caster, m);
+
+				Disturb(m);
+
+				var source = Caster;
+
+				SpellHelper.CheckReflect((int)Circle, ref source, ref m);
+
+				double damage = GetNewAosDamage(m, 6, 1, 2, false);
+
+				if (CheckResisted(m))
+				{
+					damage *= 0.75;
+
+					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				}
+
+				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
 			}
 
 			FinishSequence();
-		}
-
-		public static bool IsActive(Mobile m)
-		{
-			return m_Timers.ContainsKey(m);
-		}
-
-		public static void Deactivate(Mobile m)
-		{
-			if (m == null)
-				return;
-
-			var t = m_Timers[m] as Timer;
-
-			if (t != null)
-			{
-				t.Stop();
-				m_Timers.Remove(m);
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
-			}
-		}
-
-		public class InternalTimer : Timer
-		{
-			private Mobile m_Mobile;
-			private DateTime m_EndTime;
-
-			public InternalTimer(Mobile m, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromMilliseconds(100))
-			{
-				m_Mobile = m;
-				m_EndTime = endTime;
-
-				Priority = TimerPriority.OneSecond;
-			}
-
-			protected override void OnTick()
-			{
-				try
-				{
-					m_Mobile.Direction = (Direction)Utility.Random((int)Direction.North, (int)Direction.Up);
-					m_Mobile.NetState.BlockAllPackets = true;
-					m_Mobile.Move(m_Mobile.Direction);
-					m_Mobile.NetState.BlockAllPackets = false;
-					m_Mobile.ProcessDelta();
-				}
-				catch (Exception e)
-				{
-					Diagnostics.ExceptionLogging.LogException(e);
-				}
-
-				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
-				{
-					Deactivate(m_Mobile);
-					Stop();
-				}
-			}
 		}
 
 		public class InternalTarget : Target

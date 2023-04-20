@@ -254,12 +254,12 @@ namespace Server.Spells
 
 			//Roublardise
             Register(710, typeof(AdrenalineSpell));
-            Register(711, typeof(SommeilSpell));
-            Register(712, typeof(LancerPrecisSpell));
-			Register(713, typeof(CoupArriereSpell));
-			Register(714, typeof(EvasionSpell));
+            Register(711, typeof(LancerPrecisSpell));
+			Register(712, typeof(CoupArriereSpell));
+            Register(713, typeof(SommeilSpell));
+			Register(714, typeof(MainBlesseeSpell));
 			Register(715, typeof(AttiranceSpell));
-			Register(716, typeof(MainBlesseeSpell));
+			Register(716, typeof(EvasionSpell));
 			Register(717, typeof(CoupureDesTendonsSpell));
 			Register(718, typeof(GazEndormantSpell));
 			Register(719, typeof(CoupMortelSpell));

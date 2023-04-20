@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Fisherman()
             : base("Pecheur")
         {
-            SetSkill(SkillName.Fishing, 75.0, 98.0);
+            SetSkill(SkillName.Cooking, 75.0, 98.0);
         }
 
         public Fisherman(Serial serial)

@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Ranger()
             : base("the ranger")
         {
-            SetSkill(SkillName.Camping, 55.0, 78.0);
+            SetSkill(SkillName.Cooking, 55.0, 78.0);
             SetSkill(SkillName.Tracking, 65.0, 88.0);
             SetSkill(SkillName.Hiding, 45.0, 68.0);
             SetSkill(SkillName.Archery, 65.0, 88.0);

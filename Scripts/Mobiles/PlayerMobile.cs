@@ -1087,19 +1087,6 @@ namespace Server.Mobiles
 			ns.Send(new PersonalLightLevel(this, personal));
 		}
 
-		public override int GetMinResistance(ResistanceType type)
-		{
-			if (type == ResistanceType.Physical)
-			{
-				return MinPlayerResistance;
-			}
-
-			int magicResist = (int)(Skills[SkillName.MagicResist].Value);
-			int min = (int)(magicResist * 0.4);
-
-			return Math.Max(MinPlayerResistance, Math.Min(MaxPlayerResistance, min));
-		}
-
 		#region City Loyalty
 		public override int GetResistance(ResistanceType type)
 		{

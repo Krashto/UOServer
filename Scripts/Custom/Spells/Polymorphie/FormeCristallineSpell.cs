@@ -39,6 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				var duration = GetDurationForSpell(30, 2);
 
 				Caster.BodyMod = 300;
+				Caster.HueMod = 0;
 
 				var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Polymorphie);
 
@@ -68,7 +69,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 		public static void Deactivate(Mobile m)
 		{
-			if (m != null)
+			if (m == null)
 				return;
 
 			var t = m_Timers[m] as Timer;
@@ -81,6 +82,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m_Table.Remove(m);
 
 				m.BodyMod = 0;
+				m.HueMod = -1;
 
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
