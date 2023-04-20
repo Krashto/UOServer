@@ -301,14 +301,34 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
 			AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
 			AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Bascinet), "Armure Légère","Bascinet", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(Helmet), "Armure Légère", "Casque", 35.0, 55.0, typeof(IronIngot), 1044036, 15, 1044037);
+			//AddCraft(typeof(Bascinet), "Armure Légère","Bascinet", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
+			//AddCraft(typeof(Helmet), "Armure Légère", "Casque", 35.0, 55.0, typeof(IronIngot), 1044036, 15, 1044037);
 			AddCraft(typeof(NorseHelm), "Armure Légère", "Haume Nordique", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
 			#endregion
 
+
+			#region "Armure Barbaresque"
+			AddCraft(typeof(GantMailleBarbare), "Armure Légère", "Gants Barbaresque", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(GorgetMailleBarbare), "Armure Légère", "Gorgerin Barbaresque", 22.0, 42.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(JambiereMailleBarbare), "Armure Légère", "Jambes Barbaresque", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(BrassardMailleBarbare), "Armure Légère", "Brassard Barbaresque", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(PlastronMailleBarbare), "Armure Légère", "Torse Barbaresque", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(CasqueMailleBarbare), "Armure Légère", "Casque Barbaresque", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			#endregion
+
+			#region "Armure Broigne"
+			AddCraft(typeof(GantMailleRenforce), "Armure Légère", "Gants Broigne", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(GorgetMailleRenforce), "Armure Légère", "Gorgerin Broigne", 22.0, 42.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(JambiereMailleRenforce), "Armure Légère", "Jambes Broigne", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(BrassardMaillerRenforce), "Armure Légère", "Brassard Broigne", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(PlastronMailleRenforce), "Armure Légère", "Torse Broigne", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(CasqueMailleRenforce), "Armure Légère", "Casque Broigne", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			#endregion
+
+
 			#region "Armure Intermédiaire"
 			AddCraft(typeof(ChainCoif), "Armure Intermédiaire", "Coiffe de mailles", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
+		//	AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(ChainGorget), "Armure Intermédiaire", "Gorgerin de mailles", 42.0, 62.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(ChainmailArms), "Armure Intermédiaire", "Brassards de mailles", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
 			AddCraft(typeof(ChainLegs), "Armure Intermédiaire", "Jambes de mailles", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
@@ -316,10 +336,10 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(CloseHelm), "Armure Intermédiaire", "Casque fermé", 45.0, 65.0, typeof(IronIngot), 1044036, 15, 1044037);
 
 
-			AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 43.0, 63.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 50.0, 70.0, typeof(IronIngot), 1044036, 20, 1044037);
+			//AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
+			//AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 43.0, 63.0, typeof(IronIngot), 1044036, 10, 1044037);
+			//AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
+			//AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 50.0, 70.0, typeof(IronIngot), 1044036, 20, 1044037);
 			#endregion
 
 			#region "Armure Lourde"
@@ -329,22 +349,66 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(PlateLegs), "Armure Lourde", "Jambières de plaque", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
 			AddCraft(typeof(PlateChest), "Armure Lourde", "Torse de plaque", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
 			AddCraft(typeof(FemalePlateChest), "Armure Lourde", "Torse de plaque femme", 51.0, 71.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 41.0, 61.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+		//	AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+		//	AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			//AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			//AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			//AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			//AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 41.0, 61.0, typeof(IronIngot), 1044036, 20, 1044037);
+			//AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			//AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			//AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			//AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			//AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
 			AddCraft(typeof(PlateHelm), "Armure Lourde", "Casque de Plaque", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
 			AddCraft(typeof(CasqueChaos), "Armure Lourde", "Casque du Chaos", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-
-
 			#endregion
+
+			#region "Armure demi-plaque"
+			AddCraft(typeof(BrassardEmbellit), "Armure Intermédiaire", "Brassards de demi-plaque", 35.0, 55.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(GantsEmbellit), "Armure Intermédiaire", "Gants de demi-plaque", 32.0, 52.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetEmbellit), "Armure Intermédiaire", "Gorgerin de demi-plaque", 29.0, 49.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereEmbellit), "Armure Intermédiaire", "Jambières de demi-plaque", 38.0, 58.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueEmbellit), "Armure Intermédiaire", "Casque de demi-plaque", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlastronEmbellit), "Armure Intermédiaire", "Torse de demi-plaque", 42.0, 62.0, typeof(IronIngot), 1044036, 25, 1044037);
+			#endregion
+
+			#region "Armure Cuirasse"
+			AddCraft(typeof(BrassardSemiMaille), "Armure Intermédiaire", "Brassards de Cuirasse", 35.0, 55.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(GantsSemiMaille), "Armure Intermédiaire", "Gants de Cuirasse", 32.0, 52.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetSemiMaille), "Armure Intermédiaire", "Gorgerin de Cuirasse", 29.0, 49.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereSemiMaille), "Armure Intermédiaire", "Jambières de Cuirasse", 38.0, 58.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueSemiMaille), "Armure Intermédiaire", "Casque de Cuirasse", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlastronSemiMaille), "Armure Intermédiaire", "Torse de Cuirasse", 42.0, 62.0, typeof(IronIngot), 1044036, 25, 1044037);
+			#endregion
+
+			#region "Armure Dragon"
+			AddCraft(typeof(BrassardDragon), "Armure Lourde", "Brassards Draconique", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(GantsDragon), "Armure Lourde", "Gants Draconique", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetDragon), "Armure Lourde", "Gorgerin Draconique", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereDragon), "Armure Lourde", "Jambières Draconique", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueDragon), "Armure Lourde", "Casque Draconique", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlastronDragon), "Armure Lourde", "Torse Draconique", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			#endregion
+
+			#region "Armure Daedric"
+			AddCraft(typeof(BrassardDaedric), "Armure Lourde", "Brassards Daedric", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(GantsDaedric), "Armure Lourde", "Gants Daedric", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetDaedric), "Armure Lourde", "Gorgerin Daedric", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereDaedric), "Armure Lourde", "Jambières Daedric", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueDaedric), "Armure Lourde", "Casque Daedric", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlastronDaedric), "Armure Lourde", "Torse Daedric", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			#endregion
+
+			#region "Armure Vieillie"
+			AddCraft(typeof(BrassardVieillit), "Armure Lourde", "Brassards Vielli", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(GantsVieillit), "Armure Lourde", "Gants Vielli", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetVieillit), "Armure Lourde", "Gorgerin Vielli", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereViellit), "Armure Lourde", "Jambières Vielli", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueVieillit), "Armure Lourde", "Casque Vielli", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlastronViellit), "Armure Lourde", "Torse Vielli", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			#endregion
+
 
 
 			#region "Boucliers"
@@ -514,38 +578,44 @@ namespace Server.Engines.Craft
 
 
 			index = AddCraft(typeof(DraconyrIngot), "Alliages", "Lingot de Draconyr", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
-			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough copper ingot to make that.");
-			AddRes(index, typeof(GlaciasIngot), "Lingot de Glacias", 2, "You do not have enough glacias ingot to make that.");
-			AddRes(index, typeof(DurianIngot), "Lingot de Durian", 1, "You do not have enough durian ingot to make that.");
-			AddRes(index, typeof(JusticiumIngot), "Lingot de Justicium", 1, "You do not have enough justicium ingot to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough Cuivre ingot to make that.");
+			AddRes(index, typeof(SonneIngot), "Lingot de Sonne", 2, "You do not have enough Sonne ingot to make that.");
+			AddRes(index, typeof(AcierIngot), "Lingot d'Acier", 1, "You do not have enough Acier ingot to make that.");
 
 			
 
 			index = AddCraft(typeof(HeptazionIngot), "Alliages", "Lingot d'Heptazion", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
-			AddRes(index, typeof(LithiarIngot), "Lingot de Lithiar", 3, "You do not have enough lithiar ingot to make that.");
-			AddRes(index, typeof(ArgentIngot), "Lingot d'Argent", 2, "You do not have enough argent ingot to make that.");
-			AddRes(index, typeof(SombralirIngot), "Lingot de Sombralir", 1, "You do not have enough sombralir ingot to make that.");
-			AddRes(index, typeof(AcierIngot), "Lingot d'Acier", 1, "You do not have enough acier ingot to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough Cuivre ingot to make that.");
+			AddRes(index, typeof(ArgentIngot), "Lingot d'Argent", 2, "You do not have enough Argent ingot to make that.");
+			AddRes(index, typeof(DurianIngot), "Lingot de Durian", 1, "You do not have enough Durian ingot to make that.");
 
 
 			index = AddCraft(typeof(OceanisIngot), "Alliages", "Lingot d'Océanis", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
-			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough copper ingot to make that.");
-			AddRes(index, typeof(BorealeIngot), "Lingot de Boréale", 2, "You do not have enough boreale ingot to make that.");
-			AddRes(index, typeof(JolinarIngot), "Lingot de Jolinar", 1, "You do not have enough jolinar ingot to make that.");
+			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough Cuivre ingot to make that.");
+			AddRes(index, typeof(BorealeIngot), "Lingot de Boréale", 2, "You do not have enough Boreale ingot to make that.");
+			AddRes(index, typeof(JolinarIngot), "Lingot de Équilibrum", 1, "You do not have enough Equilibrum ingot to make that.");
 		
-			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingot de Brazium", 80, 110, typeof(BloodiriumIngot), "Lingot de Bloodirium", 3, "You do not have enough bloodirium ingots to make that.");
-			
-			index = AddCraft(typeof(LuneriumIngot), "Alliages", "Lingot de Lunérium", 80, 110, typeof(HerbrositeIngot), "Lingot de Herbrosite", 3, "You do not have enough herbrosite ingots to make that.");
-			AddRes(index, typeof(HeptazionIngot), "Lingot d'Heptazion", 1, "You do not have enough heptazion ingot to make that.");
+			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingot de Brazium", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough bloodirium ingots to make that.");
+			AddRes(index, typeof(BronzeIngot), "Lingot de Bronze", 3, "You do not have enough Bronze ingot to make that.");
+			AddRes(index, typeof(ChrysteliarIngot), "Lingot de Chrysteliar", 2, "You do not have enough Chrysteliar ingot to make that.");
+			AddRes(index, typeof(GoldIngot), "Lingot d'Or", 1, "You do not have enough Or ingot to make that.");
 
-			index = AddCraft(typeof(MarinarIngot), "Alliages", "Lingot de Marinar", 80, 110, typeof(IronIngot), "Lingot de Maritium", 3, "You do not have enough maritium ingots to make that.");
-			AddRes(index, typeof(MytherilIngot), "Lingot de Mytheril", 3, "You do not have enough mytheril ingot to make that.");
-			AddRes(index, typeof(DraconyrIngot), "Lingot de Draconyr", 1, "You do not have enough draconyr ingot to make that.");
-			AddRes(index, typeof(OceanisIngot), "Lingot d'Océanis", 1, "You do not have enough oceanis ingot to make that.");
 
-			index = AddCraft(typeof(NostalgiumIngot), "Alliages", "Lingots de Nostalgium", 90, 120, typeof(BraziumIngot), "Lingot de Brazium", 3, "You do not have enough brazium ingots to make that.");
-			AddRes(index, typeof(LuneriumIngot), "Lingot de Lunérium", 3, "You do not have enough lunerium ingot to make that.");
-			AddRes(index, typeof(MarinarIngot), "Lingot de Marinar", 3, "You do not have enough marinar ingot to make that.");
+			index = AddCraft(typeof(LuneriumIngot), "Alliages", "Lingot de Lunérium", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough herbrosite ingots to make that.");
+			AddRes(index, typeof(BronzeIngot), "Lingot Bronze", 3, "You do not have enough Bronze ingot to make that.");
+			AddRes(index, typeof(GlaciasIngot), "Lingot de Glacias", 2, "You do not have enough Glacias ingot to make that.");
+			AddRes(index, typeof(JolinarIngot), "Lingot de Jolinar", 1, "You do not have enough Jolinar ingot to make that.");
+
+
+			index = AddCraft(typeof(MarinarIngot), "Alliages", "Lingot de Marinar", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough maritium ingots to make that.");
+			AddRes(index, typeof(BronzeIngot), "Lingot de Bronze", 3, "You do not have enough Bronze ingot to make that.");
+			AddRes(index, typeof(LithiarIngot), "Lingot de Lithiar", 2, "You do not have enough Lithiar ingot to make that.");
+			AddRes(index, typeof(JusticiumIngot), "Lingot de Justicium", 1, "You do not have enough Justicium ingot to make that.");
+
+			index = AddCraft(typeof(NostalgiumIngot), "Alliages", "Lingots de Nostalgium", 90, 120, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough brazium ingots to make that.");
+			AddRes(index, typeof(DraconyrIngot), "Lingot de Draconyr", 3, "You do not have enough Draconyr ingot to make that.");
+			AddRes(index, typeof(BraziumIngot), "Lingot de Brazium", 2, "You do not have enough Brazium ingot to make that.");
+			AddRes(index, typeof(MarinarIngot), "Lingot de Marinar", 1, "You do not have enough Marinar ingot to make that.");
 
 
 			#endregion

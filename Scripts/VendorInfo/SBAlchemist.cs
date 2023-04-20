@@ -26,8 +26,10 @@ namespace Server.Mobiles
             {
     
                 Add(new GenericBuyInfo(typeof(MortarPestle), 8, 10, 0xE9B, 0));
+				Add(new GenericBuyInfo(typeof(MortarPestlePoisoning), 8, 10, 0xE9B, 0));
 
-                Add(new GenericBuyInfo(typeof(BlackPearl), 3, 999, 0xF7A, 0));
+
+				Add(new GenericBuyInfo(typeof(BlackPearl), 3, 999, 0xF7A, 0));
                 Add(new GenericBuyInfo(typeof(Bloodmoss), 3, 999, 0xF7B, 0));
                 Add(new GenericBuyInfo(typeof(Garlic), 3, 999, 0xF84, 0));
                 Add(new GenericBuyInfo(typeof(Ginseng), 3, 999, 0xF85, 0));
