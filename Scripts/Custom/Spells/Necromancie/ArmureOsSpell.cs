@@ -63,19 +63,14 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				m_OathTable[Caster] = Caster;
 				m_OathTable[m] = Caster;
 
-				Caster.PlaySound(0x175);
+				var duration = GetDurationForSpell(0.2);
 
-				Caster.FixedParticles(0x375A, 1, 17, 9919, 33, 7, EffectLayer.Waist);
-				Caster.FixedParticles(0x3728, 1, 13, 9502, 33, 7, (EffectLayer)255);
-
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Armure d'os", duration, AptitudeColor.Necromancie, SpellEffectType.Bonus);
 				ExplodeFX.Bone.CreateInstance(Caster, Caster.Map, 1).Send();
 
-				m.FixedParticles(0x375A, 1, 17, 9919, 33, 7, EffectLayer.Waist);
-				m.FixedParticles(0x3728, 1, 13, 9502, 33, 7, (EffectLayer)255);
-
+				CustomUtility.ApplySimpleSpellEffect(m, "Armure d'os", duration, AptitudeColor.Necromancie, SpellEffectType.Malus);
 				ExplodeFX.Bone.CreateInstance(m, m.Map, 1).Send();
 
-				var duration = GetDurationForSpell(0.2);
 
 				new ExpireTimer(Caster, m, duration).Start();
 			}
@@ -123,8 +118,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				if (m_Caster.Deleted || m_Target.Deleted || !m_Caster.Alive || !m_Target.Alive || DateTime.Now >= m_End)
 				{
-					m_Caster.SendLocalizedMessage(1061620); // Your Blood Oath has been broken.
-					m_Target.SendLocalizedMessage(1061620); // Your Blood Oath has been broken.
+					CustomUtility.ApplySimpleSpellEffect(m_Caster, "Armure d'os", AptitudeColor.Necromancie, SpellSequenceType.End);
+					CustomUtility.ApplySimpleSpellEffect(m_Target, "Armure d'os", AptitudeColor.Necromancie, SpellSequenceType.End);
 
 					m_OathTable.Remove(m_Caster);
 					m_OathTable.Remove(m_Target);

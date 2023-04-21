@@ -67,8 +67,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 						m_Timers[m] = t;
 						t.Start();
 
-						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-						Caster.PlaySound(0x28E);
+						CustomUtility.ApplySimpleSpellEffect(m, "Parfaite aspiration", duration, AptitudeColor.Musique);
 					}
 				}
 			}
@@ -99,8 +98,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Parfaite aspiration", AptitudeColor.Musique, SpellSequenceType.End);
 			}
 		}
 

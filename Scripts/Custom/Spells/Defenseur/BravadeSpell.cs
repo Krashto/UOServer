@@ -43,6 +43,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 				m.Combatant = Caster;
 				m.Emote($"*Est provoqué{(m.Female ? "e" : "")} par {Caster.Name}*");
+				CustomUtility.ApplySimpleSpellEffect(m, "Bravade", AptitudeColor.Defenseur, SpellEffectType.Taunt);
+
 				Caster.Combatant = m;
 				m.Emote($"*Provoque {m.Name}*");
 			}

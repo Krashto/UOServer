@@ -11,7 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura Rechauffante", "[Aura Rechauffante]",
+				"Aura rechauffante", "[Aura rechauffante]",
 				SpellCircle.First,
 				212,
 				9061,
@@ -69,8 +69,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 						m_Timers[m] = t;
 						t.Start();
 
-						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-						Caster.PlaySound(0x28E);
+						CustomUtility.ApplySimpleSpellEffect(Caster, "Aura rechauffante", duration, AptitudeColor.Pyromancie);
 					}
 				}
 			}
@@ -98,8 +97,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura rechauffante", AptitudeColor.Pyromancie, SpellSequenceType.End);
 			}
 		}
 

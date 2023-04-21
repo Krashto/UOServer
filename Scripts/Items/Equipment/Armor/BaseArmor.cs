@@ -884,11 +884,11 @@ namespace Server.Items
         public int ComputeStatBonus(StatType type)
         {
 			if (type == StatType.Str)
-				return StrBonus + Attributes.BonusStr + GetBaseBonusStr();
+				return StrBonus + Attributes.BonusStr;
             else if (type == StatType.Dex)
-                return DexBonus + Attributes.BonusDex + GetBaseBonusDex();
+                return DexBonus + Attributes.BonusDex;
             else
-                return IntBonus + Attributes.BonusInt + GetBaseBonusInt();
+                return IntBonus + Attributes.BonusInt;
         }
 
         [CommandProperty(AccessLevel.GameMaster)]
@@ -1061,6 +1061,36 @@ namespace Server.Items
 					case 6: offset -= 0; break;
 				}
 			}
+
+			return offset;
+		}
+
+		public int GetBaseBonusHits()
+		{
+			var offset = 0;
+
+			if (MaterialType == AMT.Plate)
+				offset += CraftResources.GetLevel(Resource);
+
+			return offset;
+		}
+
+		public int GetBaseBonusStam()
+		{
+			var offset = 0;
+
+			if (MaterialType == AMT.Chainmail)
+				offset += CraftResources.GetLevel(Resource);
+
+			return offset;
+		}
+
+		public int GetBaseBonusMana()
+		{
+			var offset = 0;
+
+			if (MaterialType == AMT.Ringmail)
+				offset += CraftResources.GetLevel(Resource);
 
 			return offset;
 		}
@@ -2566,22 +2596,6 @@ namespace Server.Items
                 list.Add(1072378); // <br>Only when full set is present:				
                 GetSetProperties(list);
             }
-
-			if ((prop = GetBaseBonusStr()) > 0)
-				list.Add($"Bonus de force: {prop}");
-			else if ((prop = GetBaseBonusStr()) < 0)
-				list.Add($"Malus de force: {prop}");
-
-			if ((prop = GetBaseBonusDex()) > 0)
-				list.Add($"Bonus de dextérité: {prop}");
-			else if ((prop = GetBaseBonusDex()) < 0)
-				list.Add($"Malus de dextérité: {prop}");
-
-			if ((prop = GetBaseBonusInt()) > 0)
-				list.Add($"Bonus d'intelligence: {prop}");
-			else if ((prop = GetBaseBonusInt()) < 0)
-				list.Add($"Malus d'intelligence: {prop}");
-
 		}
 
 		public override void AddItemPowerProperties(ObjectPropertyList list)

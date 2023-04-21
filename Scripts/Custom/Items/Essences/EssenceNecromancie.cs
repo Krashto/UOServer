@@ -1,4 +1,6 @@
-﻿namespace Server.Items
+﻿using Server.Custom;
+
+namespace Server.Items
 {
 	public class EssenceNecromancie : BaseReagent
 	{
@@ -10,8 +12,8 @@
 		[Constructable]
 		public EssenceNecromancie(int amount) : base(0x0F91, amount)
 		{
-			Name = "Essence: Necromancie";
-			Hue = 2174;
+			Name = "Essence: Nécromancie";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public EssenceNecromancie(Serial serial) : base(serial)

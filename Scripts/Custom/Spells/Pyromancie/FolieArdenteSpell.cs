@@ -11,7 +11,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Folie Ardente", "[Folie Ardente]",
+				"Folie ardente", "[Folie ardente]",
 				SpellCircle.Seventh,
 				239,
 				9011,
@@ -64,6 +64,8 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				Timer t = new InternalTimer(this, Caster, m, damage * 0.5, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Folie ardente", duration, AptitudeColor.Pyromancie, SpellEffectType.Damage);
 			}
 
 			FinishSequence();
@@ -86,8 +88,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				t.Stop();
 				m_Timers.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Folie ardente", AptitudeColor.Pyromancie, SpellSequenceType.End);
 			}
 		}
 
@@ -121,8 +122,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 					m_Mobile.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 				}
 
-				m_Mobile.FixedParticles(0x3709, 10, 30, 5052, EffectLayer.LeftFoot);
-				m_Mobile.PlaySound(0x208);
+				CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Folie ardente", AptitudeColor.Pyromancie, SpellEffectType.Damage);
 
 				SpellHelper.Damage(m_Owner, m_Mobile, m_Damage, 0, 100, 0, 0, 0);
 

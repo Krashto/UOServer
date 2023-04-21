@@ -13,7 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 	public class MurDePlanteSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Mur De Plante", "In Nox Grav",
+				"Mur De Plante", "[Mur De Plante]",
 				SpellCircle.Sixth,
 				230,
 				9052,
@@ -252,7 +252,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 									caster.DoHarmful(m);
 
 									m_Item.ApplyPoisonTo(m);
-									m.PlaySound(0x474);
+									CustomUtility.ApplySimpleSpellEffect(m, "Mur de plante", AptitudeColor.Geomancie, SpellEffectType.Damage);
 								}
 							}
 						}

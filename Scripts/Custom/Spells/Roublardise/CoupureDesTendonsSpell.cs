@@ -14,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Coupure Des Tendons", "[Coupure Des Tendons]",
+				"Coupure des tendons", "[Coupure des tendons]",
 				SpellCircle.Fourth,
 				206,
 				9002,
@@ -55,9 +55,8 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 				if (!InsensibleSpell.IsActive(m))
 				{
-					m.PlaySound(22);
-					m.FixedEffect(0x923, 3, 30);
 					BleedAttack.BeginBleed(m, Caster, true);
+					CustomUtility.ApplySimpleSpellEffect(m, "Coupure des tendons", AptitudeColor.Roublardise, SpellEffectType.Damage);
 				}
 				else
 					Caster.SendMessage("Votre cible est immunisée aux saignements.");
@@ -71,8 +70,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				if (!IndomptableSpell.IsActive(m))
 				{
 					m.SendSpeedControl(SpeedControlType.WalkSpeed);
-					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-					m.PlaySound(508);
+					CustomUtility.ApplySimpleSpellEffect(m, "Coupure des tendons", duration, AptitudeColor.Roublardise, SpellEffectType.Move);
 				}
 				else
 					Caster.SendMessage("Votre cible est immunisée aux ralentissements.");

@@ -65,7 +65,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			private VortexSpell m_Owner;
 			private IPoint3D m_Loc;
 
-			public VortexTimer(Mobile caster, VortexSpell owner, DateTime endtime, IPoint3D p) : base(TimeSpan.Zero, TimeSpan.FromSeconds(1))
+			public VortexTimer(Mobile caster, VortexSpell owner, DateTime endtime, IPoint3D p) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
 				m_Caster = caster;
 				m_Owner = owner;
@@ -126,6 +126,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 								m_Caster.DoHarmful(m);
 
 								AOS.Damage(m, m_Caster, (int)damage, 0, 0, 0, 0, 100);
+
+								CustomUtility.ApplySimpleSpellEffect(m, "Vortex", AptitudeColor.Aeromancie, SpellEffectType.Damage);
 
 								m.BoltEffect(0);
 							}

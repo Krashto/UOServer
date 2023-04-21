@@ -42,6 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				{
 					ExplodeFX.Blood.CreateInstance(m, m.Map, 5).Send();
 					m.Kill();
+					CustomUtility.ApplySimpleSpellEffect(m, "Coup mortel", AptitudeColor.Roublardise, SpellEffectType.Damage);
 				}
 				else
 					Caster.SendMessage("La cible doit avoir moins de 20% de sa vie pour être exécutée.");

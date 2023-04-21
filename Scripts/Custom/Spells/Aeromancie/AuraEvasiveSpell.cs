@@ -71,12 +71,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 							m_Table[m] = mod;
 							m.AddResistanceMod(mod);
 
+							CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", duration, AptitudeColor.Aeromancie);
+
 							Timer t = new InternalTimer(m, DateTime.Now + duration);
 							m_Timers[m] = t;
 							t.Start();
-
-							Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-							Caster.PlaySound(0x28E);
 						}
 					}
 				}
@@ -106,9 +105,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", AptitudeColor.Aeromancie, SpellSequenceType.End);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				m.FixedParticles(14217, 10, 20, 5013, 2093, 0, EffectLayer.Waist); //ID, speed, dura, effect, hue, render, layer
 			}
 		}
 

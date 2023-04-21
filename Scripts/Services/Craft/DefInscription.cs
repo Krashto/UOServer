@@ -259,7 +259,7 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(EmpalementScroll), "Géo. - Empalement", 4);
 			AddSpell("Sorts", typeof(AuraFortifianteScroll), "Géo. - Aura fortifiante", 5);
 			AddSpell("Sorts", typeof(MurDePlanteScroll), "Géo. - Mur de plante", 6);
-			AddSpell("Sorts", typeof(ExplosionDeRocheScroll), "Géo. - Explosion de roche", 7);
+			AddSpell("Sorts", typeof(ExplosionDeRochesScroll), "Géo. - Explosion de roche", 7);
 			AddSpell("Sorts", typeof(AuraPreservationManiaqueScroll), "Géo. - Aura préserv. manaique", 8);
 			AddSpell("Sorts", typeof(RacinesScroll), "Géo. - Racines", 9);
 			AddSpell("Sorts", typeof(FleauTerrestreScroll), "Géo. - Fléau terrestre", 10);

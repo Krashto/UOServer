@@ -77,6 +77,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (InquisitionSpell.IsActive(m_Caster))
 					duration += GetDurationForSpell(5);
 
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Mur totemique", duration, AptitudeColor.Totemique, SpellEffectType.Summon);
+
 				Point3D pnt = new Point3D(p);
 				int itemID = eastToWest ? 0x3946 : 0x3956;
 

@@ -43,8 +43,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				m_Timers[Caster] = t;
 				t.Start();
 
-				Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-				Caster.PlaySound(0x28E);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Second Souffle", duration, AptitudeColor.Martial);
 			}
 
 			FinishSequence();

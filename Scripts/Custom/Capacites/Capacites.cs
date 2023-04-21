@@ -12,7 +12,7 @@ namespace Server
 		private int[] m_Values = new int[Enum.GetValues(typeof(Capacite)).Length];
 
 		public int Bank { get { return BankMax - m_Values.Sum(); } }
-		public int BankMax { get { return m_Owner.Experience.Niveau / 10; } }
+		public int BankMax { get { return m_Owner.Experience.Niveau / 5; } }
 
 		#region Props
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -84,6 +84,13 @@ namespace Server
 			get { return this[Capacite.Precision]; }
 			set { this[Capacite.Precision] = value; }
 		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Perfection
+		{
+			get { return this[Capacite.Perfection]; }
+			set { this[Capacite.Perfection] = value; }
+		}
 		#endregion
 
 		public Capacites(CustomPlayerMobile owner)
@@ -116,7 +123,7 @@ namespace Server
 
 		public int GetValue(Capacite capacite)
 		{
-			return 2 + m_Values[(int)capacite] + Classes.GetCapaciteValue(capacite, m_Owner.Classe);
+			return m_Values[(int)capacite] + Classes.GetCapaciteValue(capacite, m_Owner.Classe);
 		}
 
 		public int this[Capacite Capacite]
@@ -147,8 +154,8 @@ namespace Server
 
 				if (m_Values[index] < 0)
 					m_Values[index] = 0;
-				else if (m_Values[index] > 3)
-					m_Values[index] = 3;
+				else if (m_Values[index] > 5)
+					m_Values[index] = 5;
 			}
 		}
 
@@ -167,7 +174,7 @@ namespace Server
 			if (Bank <= 0)
 				return false;
 
-			return m_Values[(int)attr] < 3;
+			return m_Values[(int)attr] < 5;
 		}
 
 		public void Increase(Capacite attr)

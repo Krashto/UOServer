@@ -66,6 +66,8 @@ namespace Server.Custom.Spells.NewSpells.Musique
 					if (m.Skills[j].Value > 0)
 						mods.Add(new DefaultSkillMod((SkillName)j, true, m.Skills[j].Value * scalar));
 				}
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Desorienter", AptitudeColor.Musique, SpellEffectType.Malus);
 			}
 
 			FinishSequence();

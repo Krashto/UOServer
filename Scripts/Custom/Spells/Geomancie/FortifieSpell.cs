@@ -47,8 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				m_Timers[Caster] = t;
 				t.Start();
 
-				Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-				Caster.PlaySound(0x28E);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Fortifie", duration, AptitudeColor.Geomancie);
 			}
 
 			FinishSequence();
@@ -75,8 +74,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				m.RemoveResistanceMod(mod);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Fortifie", AptitudeColor.Geomancie, SpellSequenceType.End);
 			}
 		}
 

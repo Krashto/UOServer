@@ -1,4 +1,6 @@
-﻿namespace Server.Items
+﻿using Server.Custom;
+
+namespace Server.Items
 {
 	public class EssenceMusique : BaseReagent
 	{
@@ -11,7 +13,7 @@
 		public EssenceMusique(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Musique";
-			Hue = 1486;
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public EssenceMusique(Serial serial) : base(serial)

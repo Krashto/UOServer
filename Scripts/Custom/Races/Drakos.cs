@@ -31,7 +31,7 @@ namespace Server.Custom.Races
 
 		public override BaseRaceGumps GetSkin(int hue)
 		{
-			return new CorpsDrakos(0xA227, hue);
+			return new CorpsDrakos(hue);
 		}
 
 		public override int GetGumpId(bool female, int hue)
@@ -52,7 +52,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CorpsDrakos(int id, int hue) : base(id, hue)
+		public CorpsDrakos(int hue) : base(0xA227, hue)
 		{
 			Name = "Drakos";
 		}

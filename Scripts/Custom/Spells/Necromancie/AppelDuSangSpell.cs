@@ -47,6 +47,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				SpellHelper.Summon(new SummonedBloodElemental(), Caster, 0x217, duration, false, false);
 
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Appel du sang", duration, AptitudeColor.Necromancie, SpellEffectType.Summon);
+
 				ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 5).Send();
 			}
 

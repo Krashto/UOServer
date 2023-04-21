@@ -41,8 +41,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				m_Timers[Caster] = t;
 				t.Start();
 
-				Caster.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				Caster.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Tornado", duration, AptitudeColor.Aeromancie);
 			}
 			
 			FinishSequence();
@@ -63,9 +62,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Tornado", AptitudeColor.Aeromancie, SpellSequenceType.End);
 			}
 		}
 

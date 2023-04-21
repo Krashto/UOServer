@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 	public class ContaminationSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Contamination", "In Nox",
+				"Contamination", "[Contamination]",
 				SpellCircle.Third,
 				203,
 				9051,
@@ -59,6 +59,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					{
 						m.ApplyPoison(Caster, Poison.GetPoison(level));
 						ExplodeFX.Poison.CreateInstance(m, m.Map, 0).Send();
+						CustomUtility.ApplySimpleSpellEffect(m, "Contamination", AptitudeColor.Geomancie, SpellEffectType.Damage);
 					}
 				}
 

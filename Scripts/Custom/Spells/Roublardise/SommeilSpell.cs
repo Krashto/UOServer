@@ -47,6 +47,8 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 				m.Freeze(duration);
 				m.Emote("*S'endort*");
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Gaz endormant", AptitudeColor.Roublardise, SpellEffectType.Malus);
 			}
 
 			FinishSequence();

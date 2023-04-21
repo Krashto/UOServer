@@ -4,6 +4,7 @@ using Server.Spells;
 using Server.Items;
 using Server.Mobiles;
 using System.Collections;
+using System;
 
 namespace Server.Custom.Spells.NewSpells.Defenseur
 {
@@ -65,6 +66,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 					pm.Animate(21, 5, 1, false, false, 0);
 
 					pm.Resurrect();
+
+					CustomUtility.ApplySimpleSpellEffect(pm, "Miracle", AptitudeColor.Defenseur, SpellEffectType.Heal);
 
 					if (c != null)
 					{

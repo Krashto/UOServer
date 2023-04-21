@@ -1,4 +1,6 @@
-﻿namespace Server.Items
+﻿using Server.Custom;
+
+namespace Server.Items
 {
 	public class EssencePolymorphie : BaseReagent
 	{
@@ -11,7 +13,7 @@
 		public EssencePolymorphie(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Polymorphie";
-			Hue = 2661;
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public EssencePolymorphie(Serial serial) : base(serial)

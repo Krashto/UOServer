@@ -29,12 +29,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 		{
 			if (CheckSequence())
 			{
-				Mobile targ = Caster;
-
-				targ.PlaySound(0x1E9);
-				targ.FixedParticles(0x375A, 10, 15, 5037, EffectLayer.Waist);
-
 				m_Table[Caster] = Caster;
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Bouclier magique", AptitudeColor.Martial);
 			}
 
 			FinishSequence();
@@ -55,9 +51,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 			if (mob != null)
 			{
 				m_Table.Remove(m);
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Bouclier magique", AptitudeColor.Martial, SpellSequenceType.End);
 			}
 		}
 	}

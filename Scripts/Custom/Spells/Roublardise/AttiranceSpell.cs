@@ -44,8 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				m.Attack(Caster);
 				Caster.Attack(m);
 
-				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
-				m.PlaySound(0x474);
+				CustomUtility.ApplySimpleSpellEffect(m, "Attirance", AptitudeColor.Roublardise, SpellEffectType.Taunt);
 			}
 
 			FinishSequence();

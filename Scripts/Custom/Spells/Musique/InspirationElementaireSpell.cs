@@ -64,8 +64,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 				m_Table.Remove(m);
 				m_Mod.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Inspiration Elementaire", AptitudeColor.Musique, SpellEffectType.Bonus);
 			}
 		}
 
@@ -104,12 +103,12 @@ namespace Server.Custom.Spells.NewSpells.Musique
 
 				SpellHelper.Turn(source, pm);
 
-				if (pm.Weapon is BaseWeapon weap)
+				if (pm.Weapon != null && !(pm.Weapon is Fists) && pm.Weapon is BaseWeapon weap)
 				{
 					var duration = GetDurationForSpell(30);
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
+					Timer t = new InternalTimer(pm, DateTime.Now + duration);
+					m_Timers[pm] = t;
 					t.Start();
 
 					var rnd = Utility.Random(0, 4);
@@ -125,8 +124,10 @@ namespace Server.Custom.Spells.NewSpells.Musique
 						case 4: { mod = "HitDispel"; weap.WeaponAttributes.HitDispel = 30; break; }
 					}
 
-					m_Mod[Caster] = mod;
-					m_Table[Caster] = weap;
+					m_Mod[pm] = mod;
+					m_Table[pm] = weap;
+
+					CustomUtility.ApplySimpleSpellEffect(pm, "Inspiration Elementaire", duration, AptitudeColor.Musique);
 				}
 				else
 					Caster.SendMessage("Votre cible doit avoir une arme en main pour que l'effet s'applique.");

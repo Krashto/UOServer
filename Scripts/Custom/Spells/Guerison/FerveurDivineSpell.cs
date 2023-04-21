@@ -43,9 +43,10 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				Caster.SendMessage($"Vous avez échangé votre banque de mana avec {m.Name}.");
 				Caster.MovingParticles(m, 0x379F, 7, 0, false, false, 3043, 0, 0);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Ferveur divine", AptitudeColor.Guerison, SpellEffectType.Bonus);
 
 				m.SendMessage($"{Caster.Name} a échangé sa banque de mana avec vous.");
-				m.MovingParticles( Caster, 0x379F, 7, 0, false, false, 3043, 0, 0 );
+				CustomUtility.ApplySimpleSpellEffect(m, "Ferveur divine", AptitudeColor.Guerison, SpellEffectType.Malus);
 			}
 
 			FinishSequence();

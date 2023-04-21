@@ -26,7 +26,6 @@ namespace Server.Items
         public override int MaxDamage => 13;
         public override float Speed => 3.50f;
 
-		public override int DefMaxRange => 2;
 		public override int InitMinHits => 31;
         public override int InitMaxHits => 100;
         public override HarvestSystem HarvestSystem => null;

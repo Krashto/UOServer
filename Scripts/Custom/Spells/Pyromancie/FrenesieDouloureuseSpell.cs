@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 	public class FrenesieDouloureuseSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Frenesie Douloureuse", "[Frenesie Douloureuse]",
+				"Frenesie douloureuse", "[Frenesie douloureuse]",
 				SpellCircle.Fifth,
 				203,
 				9031,
@@ -61,8 +61,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 				}
 
-				source.MovingParticles(m, 0x36D4, 7, 0, false, true, 9502, 4019, 0x160);
-				source.PlaySound(0x15E);
+				CustomUtility.ApplySimpleSpellEffect(m, "Frenesie douloureuse", AptitudeColor.Pyromancie, SpellEffectType.Damage);
 
 				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 			}

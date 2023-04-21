@@ -1,4 +1,6 @@
-﻿namespace Server.Items
+﻿using Server.Custom;
+
+namespace Server.Items
 {
 	public class EssenceTotemique : BaseReagent
 	{
@@ -10,8 +12,8 @@
 		[Constructable]
 		public EssenceTotemique(int amount) : base(0x0F91, amount)
 		{
-			Name = "Essence: Totemique";
-			Hue = 2767;
+			Name = "Essence: Totémique";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public EssenceTotemique(Serial serial) : base(serial)

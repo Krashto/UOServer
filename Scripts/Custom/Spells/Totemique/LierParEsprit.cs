@@ -38,6 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					SpellHelper.Turn(totem, Caster);
 					ConcentricWaveFX.Water.CreateInstance(totem.Location, totem.Map, totem.Direction, (int)totem.GetDistanceToSqrt(Caster));
 					totem.MoveToWorld(Caster.Location, Caster.Map);
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Lier par l'esprit", AptitudeColor.Totemique, SpellEffectType.Move);
 				}
 			}
 

@@ -42,8 +42,8 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 						else
 							Caster.SendLocalizedMessage(1010060); // You have failed to cure your target!
 
-					Caster.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
-					Caster.PlaySound(0x1E0);
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Antidote", AptitudeColor.Chasseur, SpellEffectType.Heal);
+
 				}
 				else
 					Caster.SendMessage($"Vous n'êtes pas empoisonné{(Caster.Female ? "e" : "")}");

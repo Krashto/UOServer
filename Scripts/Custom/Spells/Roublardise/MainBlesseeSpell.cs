@@ -40,9 +40,10 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 			if (CheckSequence())
 			{
 				WeaponAbility.SetCurrentAbility(Caster, WeaponAbility.Disarm);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Main blessee", AptitudeColor.Roublardise);
 				Caster.SendMessage("Votre prochain coup désarmera votre cible.");
 			}
-			
+
 			FinishSequence();
 		}
 	}

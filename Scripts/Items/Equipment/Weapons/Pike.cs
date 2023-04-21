@@ -25,8 +25,6 @@ namespace Server.Items
         public override int MaxDamage => 12;
         public override float Speed => 3.00f;
 
-		public override int DefMaxRange => 2;
-
 		public override int InitMinHits => 31;
         public override int InitMaxHits => 110;
         public override void Serialize(GenericWriter writer)

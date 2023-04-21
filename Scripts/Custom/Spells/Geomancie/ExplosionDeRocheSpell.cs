@@ -6,10 +6,10 @@ using VitaNex.FX;
 
 namespace Server.Custom.Spells.NewSpells.Geomancie
 {
-	public class ExplosionDeRocheSpell : Spell
+	public class ExplosionDeRochesSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Explosion De Roche", "Vas Kal Des Ylem",
+				"Explosion De Roches", "[Explosion De Roches]",
 				SpellCircle.Eighth,
 				233,
 				9042,
@@ -21,7 +21,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 		public override SkillName CastSkill { get { return SkillName.MagicResist; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public ExplosionDeRocheSpell(Mobile caster, Item scroll)
+		public ExplosionDeRochesSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -86,10 +86,11 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
-						source.MovingParticles(m, 0x11B6, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
-						source.PlaySound(0x44B);
-
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
+
+						source.MovingParticles(m, 0x11B6, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+
+						CustomUtility.ApplySimpleSpellEffect(m, "Explosion De Roches", AptitudeColor.Geomancie, SpellEffectType.Damage);
 					}
 				}
 			}

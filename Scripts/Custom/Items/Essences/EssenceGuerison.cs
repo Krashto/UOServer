@@ -1,4 +1,6 @@
-﻿namespace Server.Items
+﻿using Server.Custom;
+
+namespace Server.Items
 {
 	public class EssenceGuerison : BaseReagent
 	{
@@ -11,7 +13,7 @@
 		public EssenceGuerison(int amount) : base(0x0F91, amount)
 		{
 			Name = "Essence: Guérison";
-			Hue = 1999;
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public EssenceGuerison(Serial serial) : base(serial)

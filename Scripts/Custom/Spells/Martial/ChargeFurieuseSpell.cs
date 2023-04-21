@@ -44,6 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(m.Direction), 3);
 				ExplodeFX.Earth.CreateInstance(m.Location, m.Map, 2).Send();
+				CustomUtility.ApplySimpleSpellEffect(m, "Charge furieuse", AptitudeColor.Martial, SpellEffectType.Move);
 			}
 
 			FinishSequence();

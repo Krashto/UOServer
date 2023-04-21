@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 	public class CerveauGeleSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Cerveau gelé", "Vas Aqua",
+				"Cerveau gele", "[Cerveau gele]",
 				SpellCircle.Fifth,
 				203,
 				9041,
@@ -47,10 +47,10 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				Disturb(m);
 
 				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m) || PieuxDeGlaceSpell.IsActive(m)))
+				{
 					m.Damage(m.Hits - m.HitsMax / 2);
-
-				source.MovingParticles(m, 0x36D4, 7, 0, false, true, 1941, 0, 9502, 4019, 0x160, 0);
-				source.PlaySound(282);
+					CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
+				}
 			}
 
 			FinishSequence();

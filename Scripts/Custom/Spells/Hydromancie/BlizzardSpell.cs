@@ -67,9 +67,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 						if (!IndomptableSpell.IsActive(m))
 						{
 							m.SendSpeedControl(SpeedControlType.WalkSpeed);
-
-							m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-							m.PlaySound(508);
+							CustomUtility.ApplySimpleSpellEffect(m, "Blizzard", AptitudeColor.Hydromancie, SpellEffectType.Malus);
 						}
 					}
 				}
@@ -105,6 +103,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					if (m_Timers.ContainsKey(m_Mobile))
 						m_Timers.Remove(m_Mobile);
 					m_Mobile.SendSpeedControl(SpeedControlType.Disable);
+					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Blizzard", AptitudeColor.Hydromancie, SpellSequenceType.End);
 					Stop();
 				}
 				else

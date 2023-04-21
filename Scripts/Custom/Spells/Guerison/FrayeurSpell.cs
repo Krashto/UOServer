@@ -61,6 +61,8 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				}
 
 				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Frayeur", AptitudeColor.Guerison, SpellEffectType.Damage);
 			}
 
 			FinishSequence();

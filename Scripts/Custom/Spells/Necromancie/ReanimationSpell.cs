@@ -103,7 +103,11 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 									bc.SetMana((int)(m_Corpse.Owner.ManaMax * 0.60));
 									bc.SetDamage(Utility.RandomMinMax(mindam, maxdam));
 
-									BaseCreature.Summon(bc, true, Caster, m_Location, 0x217, TimeSpan.FromDays(90));
+									var duration = GetDurationForSpell(30, 1);
+
+									BaseCreature.Summon(bc, true, Caster, m_Location, 0x217, duration);
+
+									CustomUtility.ApplySimpleSpellEffect(Caster, "Reanimation", duration, AptitudeColor.Necromancie, SpellEffectType.Summon);
 
 									if (m_Corpse != null)
 										m_Corpse.TurnToBones();

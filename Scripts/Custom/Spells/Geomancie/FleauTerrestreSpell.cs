@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using Server.Custom;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Items;
@@ -11,7 +12,7 @@ namespace Server.Spells
 	public class FleauTerrestreSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Fléau terrestre", "Kal Nox Corp Grav",
+				"Fléau terrestre", "[Fléau terrestre]",
 				SpellCircle.Seventh,
 				236,
 				9011,
@@ -79,6 +80,8 @@ namespace Server.Spells
 							m.ApplyPoison(Caster, p);
 							m.PlaySound(0x474);
 							ExplodeFX.Poison.CreateInstance(m, m.Map, 0).Send();
+
+							CustomUtility.ApplySimpleSpellEffect(m, "Fléau terrestre", AptitudeColor.Geomancie, SpellEffectType.Damage);
 						}
 					}
 				}

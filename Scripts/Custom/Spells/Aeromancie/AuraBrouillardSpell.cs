@@ -10,6 +10,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
 	public class AuraDeBrouillardSpell : Spell
 	{
+		public static Hashtable m_Timers = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Aura de brouillard", "[Aura de brouillard]",
 				SpellCircle.Fifth,
@@ -61,12 +63,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public static void ToogleInvisibility(Spell spell, Mobile caster, Mobile m)
 		{
-			ExplodeFX.Smoke.CreateInstance(m, m.Map, 1).Send();
-
-			m.Hidden = true;
-			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[spell.CastSkill].Value / 2, Aptitude.Aeromancie);
-			m.SendMessage("Un aura de brouillard a été mise sur vous.");
-
 			if (IsActive(m))
 				Deactivate(m);
 
@@ -75,9 +71,14 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			Timer t = new InternalTimer(m, DateTime.Now + duration);
 			m_Timers[m] = t;
 			t.Start();
-		}
 
-		public static Hashtable m_Timers = new Hashtable();
+			ExplodeFX.Smoke.CreateInstance(m, m.Map, 1).Send();
+
+			m.Hidden = true;
+			m.AllowedStealthSteps = (int)SpellHelper.AdjustValue(caster, 1 + caster.Skills[spell.CastSkill].Value / 2, Aptitude.Aeromancie);
+
+			CustomUtility.ApplySimpleSpellEffect(m, "Aura de brouillard", duration, AptitudeColor.Aeromancie);
+		}
 
 		public static bool IsActive(Mobile m)
 		{
@@ -95,8 +96,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m.SendMessage(33, "L'aura de brouillard prend fin.");
 				m.RevealingAction();
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura de brouillard", AptitudeColor.Aeromancie, SpellSequenceType.End);
 			}
 		}
 

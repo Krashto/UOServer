@@ -1366,7 +1366,7 @@ namespace Server.Engines.Craft
 
 			if (from is CustomPlayerMobile pm)
 			{
-				exceptionalChance += pm.Capacites[Capacite.Expertise] * 4;
+				exceptionalChance += pm.Capacites[Capacite.Perfection] * 4;
 				exceptionalChance += pm.Skills[SkillName.ArmsLore].Value / 10;
 			}
 
@@ -1405,7 +1405,7 @@ namespace Server.Engines.Craft
 			quality = 1;
 
 			if (from is CustomPlayerMobile pm)
-				quality = (int)GetQuality(craftSystem, chance, from, pm.Capacites[Capacite.Expertise]);
+				quality = (int)GetQuality(craftSystem, chance, from, pm.Capacites[Capacite.Perfection]);
 
             return chance > Utility.RandomDouble();
         }

@@ -53,6 +53,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				BuffInfo.AddBuff(m, new BuffInfo(BuffIcon.AuraOfNausea, 1153792, 1153819, duration, m, $"{duration.TotalSeconds}\t{duration.TotalSeconds}\t{duration.TotalSeconds}\t{duration.TotalSeconds}"));
 
 				m.Emote($"*Est aveuglé{(m.Female ? "e" : "")}*");
+				CustomUtility.ApplySimpleSpellEffect(m, "Aveuglement", duration, AptitudeColor.Aeromancie, SpellEffectType.Malus);
 
 				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
 				m.PlaySound(508);
@@ -78,10 +79,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				t.Stop();
 				m_Timers.Remove(m);
 				BuffInfo.RemoveBuff(m, BuffIcon.AuraOfNausea);
-				m.Emote($"N'est plus aveuglé{(m.Female ? "e" : "")}");
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aveuglement", AptitudeColor.Aeromancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

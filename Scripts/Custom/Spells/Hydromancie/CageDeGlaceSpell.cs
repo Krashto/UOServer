@@ -12,7 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Cage de glace", "In Por Ylem",
+				"Cage de glace", "[Cage de glace]",
 				SpellCircle.First,
 				212,
 				9041,
@@ -61,8 +61,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					loc = new Point3D(m.X, m.Y + 1, m.Z);
 					new InternalItem(0x9CB7, loc, Caster, m.Map, duration);
 
-					m.PlaySound(0x204);
-					m.FixedEffect(0x376A, 6, 1);
+					CustomUtility.ApplySimpleSpellEffect(m, "Cage de glace", duration, AptitudeColor.Hydromancie);
 				}
 				else
 					Caster.SendMessage("La cible est immunisée à la paralysie.");
@@ -202,13 +201,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public class InternalTimer : Timer
 		{
-			private Mobile m_Target;
+			private Mobile m_Mobile;
 			private DateTime m_Endtime;
 
 			public InternalTimer(Mobile target, DateTime end)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
-				m_Target = target;
+				m_Mobile = target;
 				m_Endtime = end;
 
 				Priority = TimerPriority.OneSecond;
@@ -216,13 +215,10 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 			protected override void OnTick()
 			{
-				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Target) || m_Target == null || m_Target.Deleted || !m_Target.Alive)
+				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
-					m_Timers.Remove(m_Target);
-
-					m_Target.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-					m_Target.PlaySound(508);
-
+					m_Timers.Remove(m_Mobile);
+					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Cage de glace", AptitudeColor.Hydromancie, SpellSequenceType.End);
 					Stop();
 				}
 			}

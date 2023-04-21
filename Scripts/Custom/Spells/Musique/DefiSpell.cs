@@ -42,6 +42,8 @@ namespace Server.Custom.Spells.NewSpells.Musique
 				SpellHelper.Turn(source, m);
 
 				BaseInstrument.PickInstrument(m, Provocation.OnPickedInstrument);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Defi", AptitudeColor.Musique, SpellEffectType.Malus);
 			}
 
 			FinishSequence();

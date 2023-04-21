@@ -83,8 +83,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 								mods.Add(new DefaultSkillMod((SkillName)j, true, m.Skills[j].Value * scalar));
 						}
 
-						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-						Caster.PlaySound(0x28E);
+						CustomUtility.ApplySimpleSpellEffect(m, "Revelation discordante", AptitudeColor.Musique, SpellEffectType.Malus);
 					}
 				}
 			}

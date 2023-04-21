@@ -834,7 +834,8 @@ namespace Server.Spells
 			{
                 m_Caster.Mana -= mana;
 
-				MentorSpell.Deactivate(m_Caster);
+				if (MentorSpell.IsActive(m_Caster))
+					MentorSpell.Deactivate(m_Caster);
 
 				if ( m_Scroll is SpellScroll )
 					m_Scroll.Consume();

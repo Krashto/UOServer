@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 	public class RestaurationSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Restauration", "In Vas Jux Sanct",
+				"Restauration", "[Restauration]",
 				SpellCircle.Seventh,
 				239,
 				9011,
@@ -40,6 +40,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				Timer t = new InternalTimer(Caster, m);
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Restauration", AptitudeColor.Hydromancie, SpellEffectType.Heal);
 			}
 
 			FinishSequence();
@@ -101,8 +103,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					m_Mobile.Heal((int)toHeal);
 
-					if (++m_Count == m_MaxCount)
+					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Restauration", AptitudeColor.Hydromancie, SpellEffectType.Heal);
+
+					if (++m_Count >= m_MaxCount)
+					{
+						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Restauration", AptitudeColor.Hydromancie, SpellSequenceType.End);
 						Stop();
+					}
 				}
 			}
 		}

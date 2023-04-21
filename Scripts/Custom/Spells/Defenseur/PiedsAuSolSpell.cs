@@ -48,6 +48,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Pieds au sol", duration, AptitudeColor.Defenseur);
 			}
 
 			FinishSequence();

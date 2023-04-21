@@ -54,6 +54,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				m_Timers[m] = t;
 				t.Start();
 
+				CustomUtility.ApplySimpleSpellEffect(m, "Toucher suffocant", duration, AptitudeColor.Aeromancie, SpellEffectType.Malus);
+
 				m.Squelched = true;
 			}
 
@@ -77,6 +79,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				t.Stop();
 				m_Timers.Remove(m);
 				m.Squelched = false;
+				CustomUtility.ApplySimpleSpellEffect(m, "Toucher suffocant", AptitudeColor.Aeromancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

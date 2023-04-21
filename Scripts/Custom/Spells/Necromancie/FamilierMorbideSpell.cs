@@ -183,10 +183,11 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 						bc.Skills.MagicResist = m_From.Skills.MagicResist;
 
-						if (BaseCreature.Summon(bc, m_From, m_From.Location, -1, TimeSpan.FromDays(1.0)))
+						var duration = m_Spell.GetDurationForSpell(30, 2);
+
+						if (BaseCreature.Summon(bc, m_From, m_From.Location, -1, duration))
 						{
-							m_From.FixedParticles(0x3728, 1, 10, 9910, EffectLayer.Head);
-							bc.PlaySound(bc.GetIdleSound());
+							CustomUtility.ApplySimpleSpellEffect(m_From, "", duration, AptitudeColor.Necromancie, SpellEffectType.Summon);
 							FamilierMorbideSpell.Table[m_From] = bc;
 						}
 					}

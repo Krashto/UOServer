@@ -38,6 +38,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Ange gardien", duration, AptitudeColor.Martial);
 			}
 
 			FinishSequence();
@@ -60,8 +62,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				t.Stop();
 				m_Timers.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Ange gardien", AptitudeColor.Martial, SpellSequenceType.End);
 			}
 		}
 

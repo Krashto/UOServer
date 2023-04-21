@@ -57,7 +57,8 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				}
 
 				source.MovingParticles(m, 0x36D4, 7, 0, false, true, 9502, 4019, 0x160);
-				source.PlaySound(0x15E);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Bouclier de feu", AptitudeColor.Pyromancie, SpellEffectType.Damage);
 
 				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 			}

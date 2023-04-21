@@ -53,9 +53,8 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				Caster.MoveToWorld(MoveTo(m), Caster.Map);
 
 				Caster.Attack(m);
-				
-				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);
-				m.PlaySound(0x474);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Coup arriere", AptitudeColor.Roublardise, SpellEffectType.Damage);
 			}
 
 			FinishSequence();

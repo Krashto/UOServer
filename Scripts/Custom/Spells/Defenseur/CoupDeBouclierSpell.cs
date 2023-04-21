@@ -53,6 +53,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				}
 
 				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Coup de bouclier", AptitudeColor.Defenseur, SpellEffectType.Damage);
 			}
 
 			FinishSequence();

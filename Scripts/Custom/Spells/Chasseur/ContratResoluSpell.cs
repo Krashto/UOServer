@@ -52,8 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 					ExplodeFX.Blood.CreateInstance(Caster, Caster.Map, 5).Send();
 
-					m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-					m.PlaySound(508);
+					CustomUtility.ApplySimpleSpellEffect(m, "Contrat résolu", AptitudeColor.Chasseur, SpellEffectType.Damage);
 				}
 				else
 				{

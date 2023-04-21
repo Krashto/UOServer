@@ -41,12 +41,16 @@ namespace Server.Custom.Spells.NewSpells.Musique
 
 				SpellHelper.Turn(source, m);
 
-				m.SendLocalizedMessage(500616); // You hear lovely music, and forget to continue battling!
+				CustomUtility.ApplySimpleSpellEffect(m, "Calme toi!", AptitudeColor.Musique, SpellEffectType.Malus);
 				m.Combatant = null;
 				m.Warmode = false;
 
 				if (m is BaseCreature && !((BaseCreature)m).BardPacified)
-					((BaseCreature)m).Pacify(Caster, DateTime.UtcNow + TimeSpan.FromSeconds(30.0));
+				{
+					var duration = TimeSpan.FromSeconds(30.0);
+					var bc = (BaseCreature)m;
+					bc.Pacify(Caster, DateTime.UtcNow + duration);
+				}
 			}
 
 			FinishSequence();

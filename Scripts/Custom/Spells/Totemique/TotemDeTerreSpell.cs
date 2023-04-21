@@ -46,9 +46,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				var totem = new TotemDeTerre();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
-            }
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem de terre", duration, AptitudeColor.Totemique, SpellEffectType.Summon);
+			}
 
-            FinishSequence();
+			FinishSequence();
         }
     }
 }

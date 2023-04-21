@@ -55,15 +55,17 @@ namespace Server.Custom.Spells.NewSpells.Musique
 
 						SpellHelper.Turn(Caster, m);
 
-						m.SendLocalizedMessage(500616); // You hear lovely music, and forget to continue battling!
 						m.Combatant = null;
 						m.Warmode = false;
 
-						if (m is BaseCreature && !((BaseCreature)m).BardPacified)
-							((BaseCreature)m).Pacify(Caster, DateTime.UtcNow + TimeSpan.FromSeconds(30.0));
+						CustomUtility.ApplySimpleSpellEffect(m, "Havre de paix", AptitudeColor.Musique, SpellEffectType.Malus);
 
-						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-						Caster.PlaySound(0x28E);
+						if (m is BaseCreature && !((BaseCreature)m).BardPacified)
+						{
+							var duration = TimeSpan.FromSeconds(30.0);
+							var bc = (BaseCreature)m;
+							bc.Pacify(Caster, DateTime.UtcNow + duration);
+						}
 					}
 				}
 			}

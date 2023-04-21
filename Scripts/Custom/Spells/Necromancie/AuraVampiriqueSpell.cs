@@ -37,9 +37,6 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				if (IsActive(Caster))
 					Deactivate(Caster);
 
-				Caster.PlaySound(0x387);
-				Caster.FixedParticles(0x3779, 1, 15, 9905, 32, 2, EffectLayer.Head);
-				Caster.FixedParticles(0x37B9, 1, 14, 9502, 32, 5, (EffectLayer)255);
 				new SoundEffectTimer(Caster).Start();
 
 				var duration = GetDurationForSpell(15);
@@ -50,6 +47,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				t.Start();
 
 				BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.CurseWeapon, 1060512, 1153780, duration, Caster));
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Aura vampirique", duration, AptitudeColor.Necromancie);
 			}
 
 			FinishSequence();
@@ -74,9 +73,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				BuffInfo.RemoveBuff(m, BuffIcon.CurseWeapon);
 
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura vampirique", AptitudeColor.Necromancie, SpellSequenceType.End);
 			}
 		}
 

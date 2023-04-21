@@ -59,8 +59,8 @@ namespace Server.Custom.Spells.NewSpells.Musique
 						Caster.Mana += Math.Min(manaSteal, Caster.ManaMax - Caster.Mana);
 						m.Mana -= Math.Min(manaSteal, m.Mana);
 
-						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-						Caster.PlaySound(0x28E);
+						CustomUtility.ApplySimpleSpellEffect(Caster, "Absorbation sonore", AptitudeColor.Musique, SpellEffectType.Bonus);
+						CustomUtility.ApplySimpleSpellEffect(m, "Absorbation sonore", AptitudeColor.Musique, SpellEffectType.Malus);
 					}
 				}
 			}

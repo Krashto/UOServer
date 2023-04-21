@@ -65,21 +65,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 						SpellHelper.CheckReflect((int)Circle, ref source, ref m);
 
-						var scalar = 1.0;
-
-						if (AuraFortifianteSpell.IsActive(Caster))
-						{
-							scalar += 0.5;
-							AuraFortifianteSpell.Deactivate(Caster);
-						}
-
-						if (FortifieSpell.IsActive(Caster))
-						{
-							scalar += 0.5;
-							FortifieSpell.Deactivate(Caster);
-						}
-
-						double damage = GetNewAosDamage(m, (int)(4 * scalar), 1, 6, true);
+						double damage = GetNewAosDamage(m, 4, 1, 6, true);
 
 						if (CheckResisted(m))
 						{
@@ -89,7 +75,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 						}
 
 						source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
-						source.PlaySound(0x44B);
+						CustomUtility.ApplySimpleSpellEffect(m, "Supernova", AptitudeColor.Pyromancie, SpellEffectType.Damage);
 
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 					}

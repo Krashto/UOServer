@@ -906,7 +906,12 @@ namespace Server
         {
             get
             {
-                return this[AosAttribute.BonusStr];
+				var bonus = this[AosAttribute.BonusStr];
+
+				if (Owner is BaseArmor armor)
+					bonus += armor.GetBaseBonusStr();
+
+				return bonus;
             }
             set
             {
@@ -919,7 +924,12 @@ namespace Server
         {
             get
             {
-                return this[AosAttribute.BonusDex];
+				var bonus = this[AosAttribute.BonusDex];
+
+				if (Owner is BaseArmor armor)
+					bonus += armor.GetBaseBonusDex();
+
+				return bonus;
             }
             set
             {
@@ -932,7 +942,12 @@ namespace Server
         {
             get
             {
-                return this[AosAttribute.BonusInt];
+				var bonus = this[AosAttribute.BonusInt];
+
+				if (Owner is BaseArmor armor)
+					bonus += armor.GetBaseBonusInt();
+
+				return bonus;
             }
             set
             {
@@ -945,7 +960,12 @@ namespace Server
         {
             get
             {
-                return this[AosAttribute.BonusHits];
+				var bonus = this[AosAttribute.BonusHits];
+
+				if (Owner is BaseArmor armor)
+					bonus += armor.GetBaseBonusHits();
+
+				return bonus;
             }
             set
             {
@@ -958,7 +978,12 @@ namespace Server
         {
             get
             {
-                return this[AosAttribute.BonusStam];
+				var bonus = this[AosAttribute.BonusStam];
+
+				if (Owner is BaseArmor armor)
+					bonus += armor.GetBaseBonusStam();
+
+				return bonus;
             }
             set
             {
@@ -971,7 +996,12 @@ namespace Server
         {
             get
             {
-                return this[AosAttribute.BonusMana];
+				var bonus = this[AosAttribute.BonusMana];
+
+				if (Owner is BaseArmor armor)
+					bonus += armor.GetBaseBonusMana();
+
+				return bonus;
             }
             set
             {

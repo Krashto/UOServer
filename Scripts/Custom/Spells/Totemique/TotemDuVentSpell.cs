@@ -45,9 +45,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				var totem = new TotemDeVent();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
-            }
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem du vent", duration, AptitudeColor.Totemique, SpellEffectType.Summon);
+			}
 
-            FinishSequence();
+			FinishSequence();
         }
     }
 }

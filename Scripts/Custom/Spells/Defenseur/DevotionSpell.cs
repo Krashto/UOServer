@@ -36,12 +36,6 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				if (IsActive(Caster))
 					Deactivate(Caster);
 
-				Caster.PlaySound(0x232);
-
-				IEntity from = new Entity(Serial.Zero, new Point3D(Caster.X, Caster.Y, Caster.Z), Caster.Map);
-				IEntity to = new Entity(Serial.Zero, new Point3D(Caster.X, Caster.Y, Caster.Z + 50), Caster.Map);
-				Effects.SendMovingParticles(from, to, 0x1B72, 1, 0, false, false, 33, 3, 9501, 1, 0, EffectLayer.Head, 0x100);
-
 				var value = 0;
 
 				if (Caster is CustomPlayerMobile pm)
@@ -54,6 +48,12 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				IEntity from = new Entity(Serial.Zero, new Point3D(Caster.X, Caster.Y, Caster.Z), Caster.Map);
+				IEntity to = new Entity(Serial.Zero, new Point3D(Caster.X, Caster.Y, Caster.Z + 50), Caster.Map);
+				Effects.SendMovingParticles(from, to, 0x1B72, 1, 0, false, false, 33, 3, 9501, 1, 0, EffectLayer.Head, 0x100);
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Dévotion", duration, AptitudeColor.Defenseur);
 			}
 
 			FinishSequence();
@@ -81,8 +81,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				t.Stop();
 				m_Timers.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Dévotion", AptitudeColor.Defenseur, SpellSequenceType.End);
 			}
 		}
 

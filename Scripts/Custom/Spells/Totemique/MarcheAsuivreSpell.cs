@@ -40,6 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					totem.CantWalk = false;
 					totem.MarcheASuivreEnable = true;
 					totem.ControlOrder = Mobiles.OrderType.Follow;
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Marche a suivre", AptitudeColor.Totemique, SpellEffectType.Move);
 				}
 			}
 			FinishSequence();

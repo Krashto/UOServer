@@ -72,19 +72,21 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 						if (!InsensibleSpell.IsActive(m))
 						{
-							Disturb(m);
 
-							if (!CheckResisted(m))
+							if (CheckResisted(m))
+								m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+							else
 							{
+								Disturb(m);
+
 								double damage = GetNewAosDamage(m, 5, 1, 2, false);
+
 								SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
 
 								BleedAttack.BeginBleed(m, Caster, true);
-							}
-							else
-								m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 
-							Caster.MovingParticles(m, 0x36D4, 7, 0, false, true, 9501, 1, 0, 0x100);
+								CustomUtility.ApplySimpleSpellEffect(m, "Empalement", AptitudeColor.Geomancie, SpellEffectType.Damage);
+							}
 						}
 						else
 							Caster.SendMessage($"{m.Name} est immunisé{(m.Female ? "e" : "")} aux saignements.");

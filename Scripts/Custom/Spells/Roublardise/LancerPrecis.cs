@@ -51,10 +51,8 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 				if (!InsensibleSpell.IsActive(m))
 				{
-					m.PlaySound(22);
-					m.FixedEffect(0x923, 3, 30);
-
 					BleedAttack.BeginBleed(m, Caster, true);
+					CustomUtility.ApplySimpleSpellEffect(m, "Lancer precis", AptitudeColor.Roublardise, SpellEffectType.Damage);
 				}
 				else
 					Caster.SendMessage("Votre cible est immunisée aux saignements.");

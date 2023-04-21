@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
-				Caster.PlaySound(163);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Vent favorable", duration, AptitudeColor.Aeromancie, SpellEffectType.Malus);
 			}
 
 			FinishSequence();
@@ -65,9 +65,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				t.Stop();
 				m_Timers.Remove(m);
 				m.SendSpeedControl(SpeedControlType.Disable);
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Vent favorable", AptitudeColor.Aeromancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

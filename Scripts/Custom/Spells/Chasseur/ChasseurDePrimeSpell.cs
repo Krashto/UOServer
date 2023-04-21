@@ -64,6 +64,8 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 					var duration = GetDurationForSpell(8);
 
+					CustomUtility.ApplySimpleSpellEffect(m, "Chasseur de prime", duration, AptitudeColor.Chasseur, SpellEffectType.Malus);
+
 					Timer t = new InternalTimer(m, DateTime.Now + duration);
 					m_Timers[m] = t;
 					t.Start();
@@ -102,8 +104,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Chasseur de prime", AptitudeColor.Chasseur, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

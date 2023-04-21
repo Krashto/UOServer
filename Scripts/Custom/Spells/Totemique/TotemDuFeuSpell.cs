@@ -45,9 +45,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				var totem = new TotemDeFeu();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
-            }
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem du feu", duration, AptitudeColor.Totemique, SpellEffectType.Summon);
+			}
 
-            FinishSequence();
+			FinishSequence();
         }
     }
 }

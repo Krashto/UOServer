@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
     public class AbsorbationSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-				"Absorbation mmmmmmmh", "[Absorbation mmmmmmmh]",
+				"Absorbation", "[Absorbation]",
 				SpellCircle.Eighth,
 				269,
 				9070,
@@ -46,6 +46,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, 3);
 					ExplodeFX.BloodRain.CreateInstance(totem.Location, totem.Map, 3);
 					totem.Delete();
+
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Absorbation", AptitudeColor.Totemique, SpellEffectType.Heal);
 				}
 				else
 				{

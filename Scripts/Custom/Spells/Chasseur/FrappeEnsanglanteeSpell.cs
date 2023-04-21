@@ -54,8 +54,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 					MortalStrike.BeginWound(m, TimeSpan.FromSeconds(6.0));
 					BleedAttack.BeginBleed(m, Caster, true);
 
-					m.FixedParticles(0x3709, 10, 30, 5052, EffectLayer.LeftFoot);
-					m.PlaySound(0x208);
+					CustomUtility.ApplySimpleSpellEffect(m, "Frappe ensanglantée", AptitudeColor.Chasseur, SpellEffectType.Damage);
 				}
 				else
 					Caster.SendMessage("La cible est immunisée aux saignements.");

@@ -5,6 +5,7 @@ using Server.Mobiles;
 using Server.Network; 
 using Server.Spells; 
 using Server.Custom.Aptitudes;
+using Server.Custom;
 
 namespace Server.Gumps
 {
@@ -181,7 +182,7 @@ namespace Server.Gumps
             return m_Book.HasSpell(spellID);
         }
         
-        #region tableaux
+        #region Tableaux
         //Liste des magies du spellbook et leur couleur
         public Aptitude[] m_AptitudeList = new Aptitude[] {
 			Aptitude.Martial,
@@ -205,19 +206,19 @@ namespace Server.Gumps
 
         public void InitializeHashtable()
         {
-            m_NameColors[Aptitude.Aeromancie] = 1153;
-			m_NameColors[Aptitude.Chasseur] = 1050;
-			m_NameColors[Aptitude.Defenseur] = 2006;
-			m_NameColors[Aptitude.Geomancie] = 1190;
-			m_NameColors[Aptitude.Guerison] = 2006;
-			m_NameColors[Aptitude.Hydromancie] = 1264;
-			m_NameColors[Aptitude.Martial] = 1105;
-			m_NameColors[Aptitude.Musique] = 1250;
-			m_NameColors[Aptitude.Necromancie] = 1991;
-			m_NameColors[Aptitude.Polymorphie] = 1129;
-			m_NameColors[Aptitude.Pyromancie] = 1258;
-			m_NameColors[Aptitude.Roublardise] = 1109;
-            m_NameColors[Aptitude.Totemique] = 1139;
+            m_NameColors[Aptitude.Aeromancie] = (int)AptitudeColor.Aeromancie;
+			m_NameColors[Aptitude.Chasseur] = (int)AptitudeColor.Chasseur;
+			m_NameColors[Aptitude.Defenseur] = (int)AptitudeColor.Defenseur;
+			m_NameColors[Aptitude.Geomancie] = (int)AptitudeColor.Geomancie;
+			m_NameColors[Aptitude.Guerison] = (int)AptitudeColor.Guerison;
+			m_NameColors[Aptitude.Hydromancie] = (int)AptitudeColor.Hydromancie;
+			m_NameColors[Aptitude.Martial] = (int)AptitudeColor.Martial;
+			m_NameColors[Aptitude.Musique] = (int)AptitudeColor.Musique;
+			m_NameColors[Aptitude.Necromancie] = (int)AptitudeColor.Necromancie;
+			m_NameColors[Aptitude.Polymorphie] = (int)AptitudeColor.Polymorphie;
+			m_NameColors[Aptitude.Pyromancie] = (int)AptitudeColor.Pyromancie;
+			m_NameColors[Aptitude.Roublardise] = (int)AptitudeColor.Roublardise;
+            m_NameColors[Aptitude.Totemique] = (int)AptitudeColor.Totemique;
 
 			m_Names[Aptitude.Aeromancie] = "Aéromancie";
 			m_Names[Aptitude.Chasseur] = "Chasseur";

@@ -39,6 +39,8 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 						toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Chasseur);
 
 						bc.Heal((int)toHeal);
+
+						CustomUtility.ApplySimpleSpellEffect(bc, "Soin animalier", AptitudeColor.Chasseur, SpellEffectType.Heal);
 					}
 				}
 				else

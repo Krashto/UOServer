@@ -33,12 +33,10 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 			{
 				var duration = GetDurationForSpell(15);
 
-				var endtime = DateTime.Now + duration;
-
-				Timer t = new InternalTimer(Caster, endtime);
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				t.Start();
 
-				Caster.PlaySound(163);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Celerite", duration, AptitudeColor.Pyromancie);
 			}
 
 			FinishSequence();
@@ -60,7 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m.RevealingAction();
+				CustomUtility.ApplySimpleSpellEffect(m, "Celerite", AptitudeColor.Pyromancie, SpellSequenceType.End);
 			}
 		}
 

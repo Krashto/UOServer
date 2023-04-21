@@ -58,6 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 							targ.Combatant = bc;
 							targ.Emote($"*Est provoqué{(targ.Female ? "e" : "")} par {Caster.Name}*");
+							CustomUtility.ApplySimpleSpellEffect(targ, "Rugissement", AptitudeColor.Chasseur, SpellEffectType.Taunt);
 							bc.Combatant = targ;
 							bc.Emote($"*Provoque {targ.Name}*");
 						}

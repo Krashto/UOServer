@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 	public class SoinPreventifSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Soin préventif", "In Lor",
+				"Soin preventif", "[Soin preventif]",
 				SpellCircle.First,
 				236,
 				9031,
@@ -40,12 +40,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				Caster.MoveToWorld(m.Location, m.Map);
 
-				m.MagicDamageAbsorb = 50;
-				m.MeleeDamageAbsorb = 50;
-				m.SendMessage("Vous vous sentez entouré d'une bulle rafraichissante.");
+				//m.MagicDamageAbsorb = 50;
+				//m.MeleeDamageAbsorb = 50;
 
 				Timer t = new InternalTimer(Caster, m);
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Soin preventif", AptitudeColor.Hydromancie, SpellEffectType.Heal);
 			}
 
 			FinishSequence();
@@ -107,8 +108,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					m_Mobile.Heal((int)toHeal);
 
-					if (++m_Count == m_MaxCount)
+					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Soin preventif", AptitudeColor.Hydromancie, SpellEffectType.Heal);
+
+					if (++m_Count >= m_MaxCount)
+					{
+						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Soin preventif", AptitudeColor.Hydromancie, SpellSequenceType.End);
 						Stop();
+					}
 				}
 			}
 		}

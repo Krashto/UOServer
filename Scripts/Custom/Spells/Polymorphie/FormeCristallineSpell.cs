@@ -57,6 +57,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Forme cristalline", duration, AptitudeColor.Polymorphie);
 			}
 
 			FinishSequence();
@@ -87,8 +89,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Forme cristalline", AptitudeColor.Polymorphie, SpellSequenceType.End);
 			}
 		}
 

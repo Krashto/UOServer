@@ -47,8 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				m_Timers[Caster] = t;
 				t.Start();
 
-				Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-				Caster.PlaySound(0x28E);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Armure de glace", duration, AptitudeColor.Hydromancie);
 			}
 
 			FinishSequence();
@@ -75,8 +74,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				m.RemoveResistanceMod(mod);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Remede", AptitudeColor.Hydromancie, SpellSequenceType.End);
+				CustomUtility.ApplySimpleSpellEffect(m, "", AptitudeColor.Hydromancie, SpellSequenceType.End);
 			}
 		}
 

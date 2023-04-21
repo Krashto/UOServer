@@ -45,6 +45,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Forme enflammee", duration, AptitudeColor.Polymorphie);
 			}
 
 			FinishSequence();
@@ -70,8 +72,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m.BodyMod = 0;
 				m.HueMod = -1;
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Forme enflammee", AptitudeColor.Polymorphie, SpellSequenceType.End);
 			}
 		}
 

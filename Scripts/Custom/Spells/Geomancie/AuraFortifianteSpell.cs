@@ -71,8 +71,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						m_Timers[m] = t;
 						t.Start();
 
-						Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-						Caster.PlaySound(0x28E);
+						CustomUtility.ApplySimpleSpellEffect(m, "Aura fortifiante", duration, AptitudeColor.Geomancie);
 					}
 				}
 			}
@@ -103,8 +102,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura fortifiante", AptitudeColor.Geomancie, SpellSequenceType.End);
 			}
 		}
 

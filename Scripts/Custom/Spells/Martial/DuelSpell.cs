@@ -55,6 +55,9 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Duel", duration, AptitudeColor.Martial, SpellEffectType.Bonus);
+				CustomUtility.ApplySimpleSpellEffect(m, "Duel", duration, AptitudeColor.Martial, SpellEffectType.Malus);
 			}
 
 			FinishSequence();

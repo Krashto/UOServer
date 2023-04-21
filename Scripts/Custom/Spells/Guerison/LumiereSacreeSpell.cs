@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 	public class LumiereSacreeSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Lumiere Sacree", "[Lumiere Sacree]",
+				"Lumiere sacree", "[Lumiere sacree]",
 				SpellCircle.First,
 				212,
 				9061,
@@ -84,6 +84,8 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 						m.Heal((int)toHeal);
 
+						CustomUtility.ApplySimpleSpellEffect(m, "Lumiere Sacree", AptitudeColor.Guerison, SpellEffectType.Heal);
+
 						m.FixedParticles(0x376A, 9, 32, 5005, EffectLayer.Waist);
 						m.PlaySound(0x1F2);
 					}
@@ -108,6 +110,8 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 						}
 
 						damage *= GetDamageScalar(m);
+
+						CustomUtility.ApplySimpleSpellEffect(m, "Lumiere sacree", AptitudeColor.Guerison, SpellEffectType.Damage);
 
 						m.BoltEffect(0);
 

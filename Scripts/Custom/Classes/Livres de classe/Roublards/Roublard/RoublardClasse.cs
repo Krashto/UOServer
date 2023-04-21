@@ -21,8 +21,8 @@ namespace Server
 
 		private static CCapacites[] m_Capacites = new CCapacites[]
             {
-				new CCapacites(Capacite.ArmesMelee, 3),
-				new CCapacites(Capacite.Precision, 3)
+				new CCapacites(Capacite.ArmesMelee, 5),
+				new CCapacites(Capacite.Precision, 5)
 			};
 
         private static CSkills[] m_Skills = new CSkills[]

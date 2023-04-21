@@ -3,6 +3,7 @@ using Server.Spells;
 using System.Collections;
 using Server.Mobiles;
 using Server.Targeting;
+using System;
 
 namespace Server.Custom.Spells.NewSpells.Defenseur
 {
@@ -35,18 +36,18 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 		public void Target(Mobile m)
 		{
-			if (IsActive(Caster))
-			{
-				Caster.SendMessage("Ce sort est déjà actif");
-			}
+			if (IsActive(m))
+				Deactivate(m);
 			else if (CheckSequence())
 			{
 				var value = 0;
 
-				if (Caster is CustomPlayerMobile pm)
+				if (m is CustomPlayerMobile pm)
 					value += pm.Aptitudes.Defenseur * 10;
 
-				m_Table[Caster] = value;
+				m_Table[m] = value;
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Mentor", AptitudeColor.Defenseur, SpellSequenceType.Start);
 			}
 
 			FinishSequence();
@@ -59,6 +60,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 			if (m_Table.ContainsKey(m))
 				m_Table.Remove(m);
+
+			CustomUtility.ApplySimpleSpellEffect(m, "Mentor", AptitudeColor.Defenseur, SpellSequenceType.End);
 		}
 
 		public static int GetValue(Mobile m)

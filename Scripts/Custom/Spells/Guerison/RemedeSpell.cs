@@ -58,8 +58,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 						m.SendLocalizedMessage(1010060); // You have failed to cure your target!
 				}
 
-				m.FixedParticles(0x373A, 10, 15, 5012, EffectLayer.Waist);
-				m.PlaySound(0x1E0);
+				CustomUtility.ApplySimpleSpellEffect(m, "Remede", AptitudeColor.Guerison, SpellEffectType.Heal);
 			}
 
 			FinishSequence();

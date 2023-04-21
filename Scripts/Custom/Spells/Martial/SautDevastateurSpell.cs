@@ -73,6 +73,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				TimeSpan duration = TimeSpan.FromSeconds((15 + (Caster.Skills.Magery.Fixed / 5)) / 4);
 
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Saut devastateur", AptitudeColor.Martial, SpellEffectType.Move);
+
 				if (SpellHelper.CheckField(pnt, Caster.Map))
 					new FireFieldItem(itemID, pnt, Caster, Caster.Map, duration, 3);
 

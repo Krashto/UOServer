@@ -15,7 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Racines", "An Por Choma",
+				"Racines", "[Racines]",
 				SpellCircle.Fifth,
 				218,
 				9012,
@@ -100,8 +100,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							m_Timers[targ] = t;
 							t.Start();
 
-							targ.PlaySound(0x204);
-							targ.FixedEffect(0x376A, 6, 1);
+							CustomUtility.ApplySimpleSpellEffect(m, "Racines", duration, AptitudeColor.Geomancie, SpellEffectType.Malus);
 						}
 						else
 							Caster.SendMessage("La cible est immunisée à la paralysie.");
@@ -131,8 +130,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				m.CantWalk = false;
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Racines", AptitudeColor.Geomancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

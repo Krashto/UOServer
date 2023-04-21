@@ -61,7 +61,9 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 						if (!InsensibleSpell.IsActive(m))
 						{
 							BleedAttack.BeginBleed(m, Caster, true);
-							InfectionSpell.ToogleCurse(this, Caster, m);
+							CustomUtility.ApplySimpleSpellEffect(m, "Pluie de sang", AptitudeColor.Necromancie, SpellEffectType.Damage);
+
+							InfectionSpell.ToogleCurse(this, Caster, m, "Pluie de sang");
 						}
 						else
 							Caster.SendMessage($"{m.Name} est immunisé{(m.Female ? "e" : "")} aux saignements.");

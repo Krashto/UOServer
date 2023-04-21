@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Forme Liquide", "[Forme Liquide]",
+				"Forme liquide", "[Forme liquide]",
 				SpellCircle.Seventh,
 				269,
 				9050,
@@ -43,6 +43,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Forme liquide", duration, AptitudeColor.Polymorphie);
 			}
 
 			FinishSequence();
@@ -73,8 +75,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m.BodyMod = 0;
 				m.HueMod = -1;
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Forme liquide", AptitudeColor.Polymorphie, SpellSequenceType.End);
 			}
 		}
 

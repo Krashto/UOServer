@@ -45,6 +45,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				Caster.Combatant = m;
 				m.Combatant = Caster;
+
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Provocation", AptitudeColor.Martial, SpellEffectType.Taunt);
 			}
 
 			FinishSequence();

@@ -63,8 +63,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				m.Heal((int)toHeal);
 
-				m.FixedParticles(0x376A, 9, 32, 5005, EffectLayer.Waist);
-				m.PlaySound(0x1F2);
+				CustomUtility.ApplySimpleSpellEffect(m, "Rayon celeste", AptitudeColor.Guerison, SpellEffectType.Heal);
 			}
 
 			FinishSequence();

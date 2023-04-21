@@ -66,6 +66,8 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 					pm.Resurrect();
 
+					CustomUtility.ApplySimpleSpellEffect(pm, "Don de la vie", AptitudeColor.Guerison, SpellEffectType.Heal);
+
 					if (c != null)
 					{
 						var list = new ArrayList();

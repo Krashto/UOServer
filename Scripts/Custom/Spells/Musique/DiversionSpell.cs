@@ -115,6 +115,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 
 							m_Creature.TargetLocation = p;
 							from.SendLocalizedMessage(502479); // The animal walks where it was instructed to.
+							CustomUtility.ApplySimpleSpellEffect(m_Creature, "Diversion", AptitudeColor.Musique, SpellEffectType.Malus);
 						}
 						else
 						{

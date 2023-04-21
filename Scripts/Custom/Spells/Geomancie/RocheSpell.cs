@@ -56,6 +56,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				source.PlaySound(0x44B);
 
 				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Roche", AptitudeColor.Geomancie, SpellEffectType.Damage);
 			}
 
 			FinishSequence();

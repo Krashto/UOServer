@@ -40,8 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				m_Timers[Caster] = t;
 				t.Start();
 
-				Caster.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
-				Caster.PlaySound(0x28E);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Inquisition", duration, AptitudeColor.Guerison);
 			}
 
 			FinishSequence();
@@ -65,8 +64,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Inquisition", AptitudeColor.Guerison, SpellSequenceType.End);
 			}
 		}
 

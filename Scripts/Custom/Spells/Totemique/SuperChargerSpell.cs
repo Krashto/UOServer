@@ -38,6 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					SpellHelper.Turn(totem, Caster);
 					ExplodeFX.Bee.CreateInstance(totem.Location, totem.Map, 1);
 					totem.SuperCharged = true;
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Super charger", AptitudeColor.Totemique, SpellEffectType.Summon);
 				}
 			}
 

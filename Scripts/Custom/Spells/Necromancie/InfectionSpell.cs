@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			FinishSequence();
 		}
 
-		public static void ToogleCurse(Spell spell, Mobile Caster, Mobile m)
+		public static void ToogleCurse(Spell spell, Mobile Caster, Mobile m, string overrideSpellName = null)
 		{
 			if(!InsensibleSpell.IsActive(m))
 			{
@@ -69,8 +69,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				Caster.DoHarmful(m);
 
-				m.FixedParticles(0x374A, 10, 15, 5028, EffectLayer.Waist);
-				m.PlaySound(0x1EA);
+				CustomUtility.ApplySimpleSpellEffect(m, !string.IsNullOrEmpty(overrideSpellName) ? overrideSpellName : "Infection", duration, AptitudeColor.Necromancie, SpellEffectType.Malus);
 			}
 			else
 			{

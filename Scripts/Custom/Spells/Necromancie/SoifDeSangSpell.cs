@@ -50,10 +50,9 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-					m.PlaySound(22);
-					m.FixedEffect(0x923, 3, 30);
-
 					BleedAttack.BeginBleed(m, Caster, true);
+
+					CustomUtility.ApplySimpleSpellEffect(m, "", AptitudeColor.Necromancie, SpellEffectType.Damage);
 				}
 				else
 					Caster.SendMessage($"{m.Name} est immunisé{(m.Female ? "e" : "")} aux saignements.");

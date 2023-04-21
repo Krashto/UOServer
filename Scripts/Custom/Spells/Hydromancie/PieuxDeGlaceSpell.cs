@@ -13,7 +13,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		public static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Pieux de glace", "Pieux de glace",
+				"Pieux de glace", "[Pieux de glace]",
 				SpellCircle.Seventh,
 				239,
 				9011,
@@ -84,10 +84,10 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
-						source.MovingParticles(m, 0x232E, 7, 0, false, true, 0, 0, 9502, 4019, 0x160, 0);
-						source.PlaySound(0x44B);
-
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
+
+						source.MovingParticles(m, 0x232E, 7, 0, true, false, 0, 0, 0);
+						CustomUtility.ApplySimpleSpellEffect(m, "Pieux de glace", AptitudeColor.Hydromancie, SpellEffectType.Damage);
 					}
 				}
 			}

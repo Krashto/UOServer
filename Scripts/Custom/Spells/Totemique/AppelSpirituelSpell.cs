@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 	public class AppelSpirituelSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Appel Spirituel", "[Appel Spirituel]",
+				"Appel spirituel", "[Appel spirituel]",
 				SpellCircle.Fifth,
 				203,
 				9031,
@@ -39,6 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				ExplodeFX.Smoke.CreateInstance(m, m.Map, 0).Send();
 				m.MoveToWorld(new Point3D(1120, 1407, 0), Map.Felucca);
 				ExplodeFX.Smoke.CreateInstance(m, m.Map, 0).Send();
+				CustomUtility.ApplySimpleSpellEffect(m, "Appel spirituel", AptitudeColor.Totemique, SpellEffectType.Move);
 			}
 
 			FinishSequence();

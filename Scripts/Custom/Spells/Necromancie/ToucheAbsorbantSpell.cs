@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 	public class ToucheAbsorbantSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Touche Absorbant", "[Touche Absorbant]",
+				"Touche absorbant", "[Touche absorbant]",
 				SpellCircle.Seventh,
 				203,
 				9031,
@@ -55,7 +55,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 					var toHeal = SpellHelper.AdjustValue(Caster, Utility.Random(min, max), Aptitude.Necromancie);
 					Caster.Heal((int)toHeal);
 
-					Caster.Emote("Absorbe la cible.");
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Touche absorbant", AptitudeColor.Necromancie, SpellEffectType.Heal);
 
 					c.TurnToBones();
 				}

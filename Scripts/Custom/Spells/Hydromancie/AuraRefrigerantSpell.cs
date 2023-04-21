@@ -69,6 +69,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 						Timer t = new InternalTimer(Caster, m);
 						t.Start();
+
+						CustomUtility.ApplySimpleSpellEffect(Caster, "Aura refregirante", AptitudeColor.Hydromancie, SpellEffectType.Heal);
 					}
 				}
 			}
@@ -130,8 +132,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					m_Mobile.Heal((int)toHeal);
 
-					if (++m_Count == m_MaxCount)
+					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellEffectType.Heal);
+
+					if (++m_Count >= m_MaxCount)
+					{
+						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellSequenceType.End);
 						Stop();
+					}
 				}
 			}
 		}

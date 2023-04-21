@@ -44,6 +44,9 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, 3);
 					ExplodeFX.BloodRain.CreateInstance(bc.Location, bc.Map, 3);
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Consommation mortelle", AptitudeColor.Necromancie, SpellEffectType.Heal);
+					CustomUtility.ApplySimpleSpellEffect(bc, "Consommation mortelle", AptitudeColor.Necromancie, SpellEffectType.Heal);
+
 					bc.Delete();
 				}
 				else

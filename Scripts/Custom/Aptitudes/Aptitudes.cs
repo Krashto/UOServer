@@ -226,7 +226,7 @@ namespace Server.Custom.Aptitudes
 			AptitudesEntry entry = m_AptitudeEntries[(int)aptitude];
 
 			if (level == 0)
-				return 0;
+				return Classes.Classes.IsCraftingSkills(entry.Skill) ? 25 : 50;
 
 			return Classes.Classes.IsCraftingSkills(entry.Skill) ? 25 + (level - 1) * 2.5 : 50 + (level - 1) * 5;
 		}
@@ -246,6 +246,9 @@ namespace Server.Custom.Aptitudes
 					return false;
 
 				int level = GetValue(from, aptitude);
+
+				if (level == 0)
+					return true;
 
 				double skill = from.Skills[entry.Skill].Base;
 
