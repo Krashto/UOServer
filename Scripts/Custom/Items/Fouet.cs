@@ -15,7 +15,7 @@ namespace Server.Items
     {
         public BaseFouet() : base(5742)
 		{
-			Layer = Layer.TwoHanded;
+			Layer = Layer.OneHanded;
 			Name = "Fouet";
 			Weight = 2.0;
         }

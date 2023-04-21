@@ -29,22 +29,26 @@ namespace Server.Mobiles
 				Add(new GenericBuyInfo(typeof(MortarPestlePoisoning), 8, 10, 0xE9B, 0));
 
 
-				Add(new GenericBuyInfo(typeof(BlackPearl), 3, 999, 0xF7A, 0));
-                Add(new GenericBuyInfo(typeof(Bloodmoss), 3, 999, 0xF7B, 0));
-                Add(new GenericBuyInfo(typeof(Garlic), 3, 999, 0xF84, 0));
-                Add(new GenericBuyInfo(typeof(Ginseng), 3, 999, 0xF85, 0));
-                Add(new GenericBuyInfo(typeof(MandrakeRoot), 3, 999, 0xF86, 0));
-                Add(new GenericBuyInfo(typeof(Nightshade), 3, 999, 0xF88, 0));
-                Add(new GenericBuyInfo(typeof(SpidersSilk), 3, 999, 0xF8D, 0));
-                Add(new GenericBuyInfo(typeof(SulfurousAsh), 3, 999, 0xF8C, 0));
+				Add(new GenericBuyInfo(typeof(BlackPearl), 5, 999, 0xF7A, 0));
+				Add(new GenericBuyInfo(typeof(Bloodmoss), 5, 999, 0xF7B, 0));
+				Add(new GenericBuyInfo(typeof(Garlic), 5, 999, 0xF84, 0));
+				Add(new GenericBuyInfo(typeof(Ginseng), 5, 999, 0xF85, 0));
+				Add(new GenericBuyInfo(typeof(MandrakeRoot), 5, 999, 0xF86, 0));
+				Add(new GenericBuyInfo(typeof(Nightshade), 5, 999, 0xF88, 0));
+				Add(new GenericBuyInfo(typeof(SpidersSilk), 5, 999, 0xF8D, 0));
+				Add(new GenericBuyInfo(typeof(SulfurousAsh), 5, 999, 0xF8C, 0));
 
-                Add(new GenericBuyInfo(typeof(Bottle), 3, 100, 0xF0E, 0, true));
-                
-                
+				Add(new GenericBuyInfo(typeof(BatWing), 5, 999, 0xF78, 0));
+				Add(new GenericBuyInfo(typeof(DaemonBlood), 5, 999, 0xF7D, 0));
+				Add(new GenericBuyInfo(typeof(PigIron), 5, 999, 0xF8A, 0));
+				Add(new GenericBuyInfo(typeof(NoxCrystal), 5, 999, 0xF8E, 0));
+				Add(new GenericBuyInfo(typeof(GraveDust), 5, 999, 0xF8F, 0));
 
-    
-            }
-        }
+
+
+
+			}
+		}
 
         public class InternalSellInfo : GenericSellInfo
         {

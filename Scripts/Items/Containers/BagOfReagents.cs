@@ -19,9 +19,27 @@ namespace Server.Items
             DropItem(new Nightshade(amount));
             DropItem(new SulfurousAsh(amount));
             DropItem(new SpidersSilk(amount));
-        }
 
-        public BagOfReagents(Serial serial)
+			DropItem(new EssenceAeromancie(amount));
+			DropItem(new EssenceChasseur(amount));
+			DropItem(new EssenceDefenseur(amount));
+			DropItem(new EssenceGeomancie(amount));
+			DropItem(new EssenceGuerison(amount));
+			DropItem(new EssenceHydromancie(amount));
+			DropItem(new EssenceMartial(amount));
+			DropItem(new EssenceMusique(amount));
+			DropItem(new EssenceNecromancie(amount));
+			DropItem(new EssencePolymorphie(amount));
+			DropItem(new EssencePyromancie(amount));
+			DropItem(new EssenceRoublardise(amount));
+			DropItem(new EssenceTotemique(amount));
+
+
+
+
+		}
+
+		public BagOfReagents(Serial serial)
             : base(serial)
         {
         }

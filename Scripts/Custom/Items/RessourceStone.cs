@@ -1,31 +1,32 @@
 using System;
+using Server.Engines.Quests;
 using Server.Items;
 
 namespace Server.Items
 {
-	public class RegStone : Item
+	public class RessourcesStone : Item
 	{
 		public override string DefaultName
 		{
-			get { return "Une Pierre de Réactifs"; }
+			get { return "Une Pierre de Ressources"; }
 		}
 
 		[Constructable]
-		public RegStone() : base( 0xED4 )
+		public RessourcesStone() : base( 0xED4 )
 		{
 			Movable = false;
-			Hue = 0x2D1;
+			Hue = 1999;
 		}
 
 		public override void OnDoubleClick( Mobile from )
 		{
-			BagOfReagents regBag = new BagOfReagents( 50 );
+			BagOfRessources regBag = new BagOfRessources( 50 );
 
 			if ( !from.AddToBackpack( regBag ) )
 				regBag.Delete();
 		}
 
-		public RegStone( Serial serial ) : base( serial )
+		public RessourcesStone( Serial serial ) : base( serial )
 		{
 		}
 
