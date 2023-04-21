@@ -44,7 +44,16 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				var duration = GetDurationForSpell(5, 1);
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Cage de feu", duration, AptitudeColor.Pyromancie, SpellEffectType.Bonus);
-				CustomUtility.ApplySimpleSpellEffect(m, "Cage de feu", duration, AptitudeColor.Pyromancie, SpellEffectType.Malus);
+				if (Caster != m)
+					CustomUtility.ApplySimpleSpellEffect(m, "Cage de feu", duration, AptitudeColor.Pyromancie, SpellEffectType.Malus);
+
+				Timer.DelayCall(duration, () =>
+				{
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Cage de feu", duration, AptitudeColor.Pyromancie, SpellSequenceType.End, SpellEffectType.Bonus);
+					if (Caster != m)
+						CustomUtility.ApplySimpleSpellEffect(m, "Cage de feu", duration, AptitudeColor.Pyromancie, SpellSequenceType.End, SpellEffectType.Malus);
+				});
+
 
 				int range = 12;
 				int hue = 2737;

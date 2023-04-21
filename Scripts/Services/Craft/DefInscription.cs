@@ -226,7 +226,7 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(TornadoScroll), "Aéro. - Tornado", 4);
 			AddSpell("Sorts", typeof(AuraEvasiveScroll), "Aéro. - Aura évasive", 5);
 			AddSpell("Sorts", typeof(ExTeleportationScroll), "Aéro. - Ex-téleportation", 6);
-			AddSpell("Sorts", typeof(ToucheSuffosantScroll), "Aéro. - Touché suffosant", 7);
+			AddSpell("Sorts", typeof(ToucherSuffocantScroll), "Aéro. - Touché suffosant", 7);
 			AddSpell("Sorts", typeof(AuraDeBrouillardScroll), "Aéro. - Aura de brouillard", 8);
 			AddSpell("Sorts", typeof(VentFavorableScroll), "Aéro. - Vent favorable", 9);
 			AddSpell("Sorts", typeof(VortexScroll), "Aéro. - Vortex", 10);

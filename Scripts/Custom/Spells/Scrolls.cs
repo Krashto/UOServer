@@ -1,5 +1,7 @@
 using System;
 using Server;
+using Server.Custom.Spells.NewSpells.Aeromancie;
+using Server.Spells;
 
 namespace Server.Items
 {
@@ -11,7 +13,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AveuglementScroll( int amount ) : base( 600, 0x2260, amount )
+		public AveuglementScroll( int amount ) : base( SpellRegistry.GetSpellIdFromType(typeof(AveuglementSpell)), 0x2260, amount )
 		{
 			Name = "Aveuglement";
 		}
@@ -42,7 +44,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BrouillardScroll(int amount) : base(601, 0x2260, amount)
+		public BrouillardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BrouillardSpell)), 0x2260, amount)
 		{
 			Name = "Brouillard";
 		}
@@ -73,7 +75,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TeleportationScroll(int amount) : base(602, 0x2260, amount)
+		public TeleportationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TeleportationSpell)), 0x2260, amount)
 		{
 			Name = "Teleportation";
 		}
@@ -104,7 +106,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TornadoScroll(int amount) : base(603, 0x2260, amount)
+		public TornadoScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TornadoSpell)), 0x2260, amount)
 		{
 			Name = "Tornado";
 		}
@@ -135,7 +137,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraEvasiveScroll(int amount) : base(604, 0x2260, amount)
+		public AuraEvasiveScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraEvasiveSpell)), 0x2260, amount)
 		{
 			Name = "Aura Evasive";
 		}
@@ -166,7 +168,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ExTeleportationScroll(int amount) : base(605, 0x2260, amount)
+		public ExTeleportationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ExTeleportationSpell)), 0x2260, amount)
 		{
 			Name = "Ex-Teleportation";
 		}
@@ -189,20 +191,20 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class ToucheSuffosantScroll : SpellScroll
+	public class ToucherSuffocantScroll : SpellScroll
 	{
 		[Constructable]
-		public ToucheSuffosantScroll() : this(1)
+		public ToucherSuffocantScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public ToucheSuffosantScroll(int amount) : base(606, 0x2260, amount)
+		public ToucherSuffocantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucherSuffocantSpell)), 0x2260, amount)
 		{
-			Name = "Touché suffosant";
+			Name = "Toucher suffocant";
 		}
 
-		public ToucheSuffosantScroll(Serial serial) : base(serial)
+		public ToucherSuffocantScroll(Serial serial) : base(serial)
 		{
 		}
 
@@ -228,7 +230,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraDeBrouillardScroll(int amount) : base(607, 0x2260, amount)
+		public AuraDeBrouillardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraDeBrouillardSpell)), 0x2260, amount)
 		{
 			Name = "Aura De Brouillard";
 		}
@@ -259,7 +261,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public VentFavorableScroll(int amount) : base(608, 0x2260, amount)
+		public VentFavorableScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(VentFavorableSpell)), 0x2260, amount)
 		{
 			Name = "Vent Favorable";
 		}
@@ -290,7 +292,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public VortexScroll(int amount) : base(609, 0x2260, amount)
+		public VortexScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(VortexSpell)), 0x2260, amount)
 		{
 			Name = "Vortex";
 		}
@@ -321,7 +323,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AntidoteScroll(int amount) : base(610, 0x2262, amount)
+		public AntidoteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AntidoteScroll)), 0x2262, amount)
 		{
 			Name = "Antidote";
 		}
@@ -352,7 +354,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MarquerScroll(int amount) : base(611, 0x2262, amount)
+		public MarquerScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MarquerScroll)), 0x2262, amount)
 		{
 			Name = "Marquer";
 		}
@@ -383,7 +385,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CompagnonAnimalScroll(int amount) : base(612, 0x2262, amount)
+		public CompagnonAnimalScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CompagnonAnimalScroll)), 0x2262, amount)
 		{
 			Name = "Compagnon Animal";
 		}
@@ -414,7 +416,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SoinAnimalierScroll(int amount) : base(613, 0x2262, amount)
+		public SoinAnimalierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoinAnimalierScroll)), 0x2262, amount)
 		{
 			Name = "Soin Animalier";
 		}
@@ -445,7 +447,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RugissementScroll(int amount) : base(614, 0x2262, amount)
+		public RugissementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RugissementScroll)), 0x2262, amount)
 		{
 			Name = "Rugissement";
 		}
@@ -476,7 +478,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FrappeEnsanglanteeScroll(int amount) : base(615, 0x2262, amount)
+		public FrappeEnsanglanteeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrappeEnsanglanteeScroll)), 0x2262, amount)
 		{
 			Name = "Frappe Ensanglantee";
 		}
@@ -507,7 +509,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SautAggressifScroll(int amount) : base(616, 0x2262, amount)
+		public SautAggressifScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SautAggressifScroll)), 0x2262, amount)
 		{
 			Name = "Saut Aggressif";
 		}
@@ -538,7 +540,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupDansLeGenouScroll(int amount) : base(617, 0x2262, amount)
+		public CoupDansLeGenouScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDansLeGenouScroll)), 0x2262, amount)
 		{
 			Name = "Coup Dans Le Genou";
 		}
@@ -569,7 +571,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ChasseurDePrimeScroll(int amount) : base(618, 0x2262, amount)
+		public ChasseurDePrimeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ChasseurDePrimeScroll)), 0x2262, amount)
 		{
 			Name = "Chasseur De Prime";
 		}
@@ -600,7 +602,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ContratResoluScroll(int amount) : base(619, 0x2262, amount)
+		public ContratResoluScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ContratResoluScroll)), 0x2262, amount)
 		{
 			Name = "Contrat Resolu";
 		}
@@ -631,7 +633,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupDeBouclierScroll(int amount) : base(620, 0x2264, amount)
+		public CoupDeBouclierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDeBouclierScroll)), 0x2264, amount)
 		{
 			Name = "Coup De Bouclier";
 		}
@@ -662,7 +664,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BravadeScroll(int amount) : base(621, 0x2264, amount)
+		public BravadeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BravadeScroll)), 0x2264, amount)
 		{
 			Name = "Bravade";
 		}
@@ -693,7 +695,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DevotionScroll(int amount) : base(622, 0x2264, amount)
+		public DevotionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DevotionScroll)), 0x2264, amount)
 		{
 			Name = "Devotion";
 		}
@@ -724,7 +726,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MutinerieScroll(int amount) : base(623, 0x2264, amount)
+		public MutinerieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MutinerieScroll)), 0x2264, amount)
 		{
 			Name = "Mutinerie";
 		}
@@ -755,7 +757,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MentorScroll(int amount) : base(624, 0x2264, amount)
+		public MentorScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MentorScroll)), 0x2264, amount)
 		{
 			Name = "Mentor";
 		}
@@ -786,7 +788,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LienDeVieScroll(int amount) : base(625, 0x2264, amount)
+		public LienDeVieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LienDeVieScroll)), 0x2264, amount)
 		{
 			Name = "Lien De Vie";
 		}
@@ -817,7 +819,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MiracleScroll(int amount) : base(626, 0x2264, amount)
+		public MiracleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MiracleScroll)), 0x2264, amount)
 		{
 			Name = "Miracle";
 		}
@@ -848,7 +850,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public IndomptableScroll(int amount) : base(627, 0x2264, amount)
+		public IndomptableScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(IndomptableScroll)), 0x2264, amount)
 		{
 			Name = "Indomptable";
 		}
@@ -879,7 +881,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InsensibleScroll(int amount) : base(628, 0x2264, amount)
+		public InsensibleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InsensibleScroll)), 0x2264, amount)
 		{
 			Name = "Insensible";
 		}
@@ -910,7 +912,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PiedsAuSolScroll(int amount) : base(629, 0x2264, amount)
+		public PiedsAuSolScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PiedsAuSolScroll)), 0x2264, amount)
 		{
 			Name = "Pieds Au Sol";
 		}
@@ -941,7 +943,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FortifieScroll(int amount) : base(630, 0x2266, amount)
+		public FortifieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FortifieScroll)), 0x2266, amount)
 		{
 			Name = "Fortifie";
 		}
@@ -972,7 +974,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RocheScroll(int amount) : base(631, 0x2266, amount)
+		public RocheScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RocheScroll)), 0x2266, amount)
 		{
 			Name = "Roche";
 		}
@@ -1003,7 +1005,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ContaminationScroll(int amount) : base(632, 0x2266, amount)
+		public ContaminationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ContaminationScroll)), 0x2266, amount)
 		{
 			Name = "Contamination";
 		}
@@ -1034,7 +1036,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public EmpalementScroll(int amount) : base(633, 0x2266, amount)
+		public EmpalementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EmpalementScroll)), 0x2266, amount)
 		{
 			Name = "Empalement";
 		}
@@ -1065,7 +1067,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraFortifianteScroll(int amount) : base(634, 0x2266, amount)
+		public AuraFortifianteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraFortifianteScroll)), 0x2266, amount)
 		{
 			Name = "Aura Fortifiante";
 		}
@@ -1096,7 +1098,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurDePlanteScroll(int amount) : base(635, 0x2266, amount)
+		public MurDePlanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDePlanteScroll)), 0x2266, amount)
 		{
 			Name = "Mur De Plante";
 		}
@@ -1127,7 +1129,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ExplosionDeRochesScroll(int amount) : base(636, 0x2266, amount)
+		public ExplosionDeRochesScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ExplosionDeRochesScroll)), 0x2266, amount)
 		{
 			Name = "Explosion De Roches";
 		}
@@ -1158,7 +1160,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraPreservationManiaqueScroll(int amount) : base(637, 0x2266, amount)
+		public AuraPreservationManiaqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraPreservationManiaqueScroll)), 0x2266, amount)
 		{
 			Name = "Aura Preservation Maniaque";
 		}
@@ -1189,7 +1191,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RacinesScroll(int amount) : base(638, 0x2266, amount)
+		public RacinesScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RacinesScroll)), 0x2266, amount)
 		{
 			Name = "Racines";
 		}
@@ -1220,7 +1222,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FleauTerrestreScroll(int amount) : base(639, 0x2266, amount)
+		public FleauTerrestreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FleauTerrestreScroll)), 0x2266, amount)
 		{
 			Name = "Fleau Terrestre";
 		}
@@ -1251,7 +1253,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MainCicatrisanteScroll(int amount) : base(640, 0x2268, amount)
+		public MainCicatrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MainCicatrisanteScroll)), 0x2268, amount)
 		{
 			Name = "Main Cicatrisante";
 		}
@@ -1282,7 +1284,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RemedeScroll(int amount) : base(641, 0x2268, amount)
+		public RemedeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RemedeScroll)), 0x2268, amount)
 		{
 			Name = "Remede";
 		}
@@ -1313,7 +1315,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurDePierreScroll(int amount) : base(642, 0x2268, amount)
+		public MurDePierreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDePierreScroll)), 0x2268, amount)
 		{
 			Name = "Mur De Pierre";
 		}
@@ -1344,7 +1346,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RayonCelesteScroll(int amount) : base(643, 0x2268, amount)
+		public RayonCelesteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RayonCelesteScroll)), 0x2268, amount)
 		{
 			Name = "Rayon Celeste";
 		}
@@ -1375,7 +1377,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LumiereSacreeScroll(int amount) : base(644, 0x2268, amount)
+		public LumiereSacreeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LumiereSacreeScroll)), 0x2268, amount)
 		{
 			Name = "Lumiere Sacree";
 		}
@@ -1406,7 +1408,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FrayeurScroll(int amount) : base(645, 0x2268, amount)
+		public FrayeurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrayeurScroll)), 0x2268, amount)
 		{
 			Name = "Frayeur";
 		}
@@ -1437,7 +1439,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FerveurDivineScroll(int amount) : base(646, 0x2268, amount)
+		public FerveurDivineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FerveurDivineScroll)), 0x2268, amount)
 		{
 			Name = "Ferveur Divine";
 		}
@@ -1468,7 +1470,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InquisitionScroll(int amount) : base(647, 0x2268, amount)
+		public InquisitionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InquisitionScroll)), 0x2268, amount)
 		{
 			Name = "Inquisition";
 		}
@@ -1499,7 +1501,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurDeLumiereScroll(int amount) : base(648, 0x2268, amount)
+		public MurDeLumiereScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDeLumiereScroll)), 0x2268, amount)
 		{
 			Name = "Mur De Lumiere";
 		}
@@ -1530,7 +1532,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DonDeLaVieScroll(int amount) : base(649, 0x2268, amount)
+		public DonDeLaVieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DonDeLaVieScroll)), 0x2268, amount)
 		{
 			Name = "Don De La Vie";
 		}
@@ -1561,7 +1563,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ArmureDeGlaceScroll(int amount) : base(650, 0x226A, amount)
+		public ArmureDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ArmureDeGlaceScroll)), 0x226A, amount)
 		{
 			Name = "Armure De Glace";
 		}
@@ -1592,7 +1594,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RestaurationScroll(int amount) : base(651, 0x226A, amount)
+		public RestaurationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RestaurationScroll)), 0x226A, amount)
 		{
 			Name = "Restauration";
 		}
@@ -1623,7 +1625,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SoinPreventifScroll(int amount) : base(652, 0x226A, amount)
+		public SoinPreventifScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoinPreventifScroll)), 0x226A, amount)
 		{
 			Name = "Soin Preventif";
 		}
@@ -1654,7 +1656,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CageDeGlaceScroll(int amount) : base(653, 0x226A, amount)
+		public CageDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CageDeGlaceScroll)), 0x226A, amount)
 		{
 			Name = "Cage De Glace";
 		}
@@ -1685,7 +1687,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraCryogeniseeScroll(int amount) : base(654, 0x226A, amount)
+		public AuraCryogeniseeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraCryogeniseeScroll)), 0x226A, amount)
 		{
 			Name = "Aura Cryogenisee";
 		}
@@ -1716,7 +1718,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PieuxDeGlaceScroll(int amount) : base(655, 0x226A, amount)
+		public PieuxDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PieuxDeGlaceScroll)), 0x226A, amount)
 		{
 			Name = "Pieux De Glace";
 		}
@@ -1747,7 +1749,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CerveauGeleScroll(int amount) : base(656, 0x226A, amount)
+		public CerveauGeleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CerveauGeleScroll)), 0x226A, amount)
 		{
 			Name = "Cerveau Gele";
 		}
@@ -1778,7 +1780,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraRefrigeranteScroll(int amount) : base(657, 0x226A, amount)
+		public AuraRefrigeranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraRefrigeranteScroll)), 0x226A, amount)
 		{
 			Name = "Aura Refrigerante";
 		}
@@ -1809,7 +1811,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AvatarDuFroidScroll(int amount) : base(658, 0x226A, amount)
+		public AvatarDuFroidScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AvatarDuFroidScroll)), 0x226A, amount)
 		{
 			Name = "Avatar Du Froid";
 		}
@@ -1840,7 +1842,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BlizzardScroll(int amount) : base(659, 0x226A, amount)
+		public BlizzardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BlizzardScroll)), 0x226A, amount)
 		{
 			Name = "Blizzard";
 		}
@@ -1871,7 +1873,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SecondSouffleScroll(int amount) : base(660, 0x226C, amount)
+		public SecondSouffleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SecondSouffleScroll)), 0x226C, amount)
 		{
 			Name = "Second Souffle";
 		}
@@ -1902,7 +1904,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ProvocationScroll(int amount) : base(661, 0x226C, amount)
+		public ProvocationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ProvocationScroll)), 0x226C, amount)
 		{
 			Name = "Provocation";
 		}
@@ -1933,7 +1935,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SautDevastateurScroll(int amount) : base(662, 0x226C, amount)
+		public SautDevastateurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SautDevastateurScroll)), 0x226C, amount)
 		{
 			Name = "Saut Devastateur";
 		}
@@ -1964,7 +1966,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DuelScroll(int amount) : base(663, 0x226C, amount)
+		public DuelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DuelScroll)), 0x226C, amount)
 		{
 			Name = "Duel";
 		}
@@ -1995,7 +1997,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ChargeFurieuseScroll(int amount) : base(664, 0x226C, amount)
+		public ChargeFurieuseScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ChargeFurieuseScroll)), 0x226C, amount)
 		{
 			Name = "Charge Furieuse";
 		}
@@ -2026,7 +2028,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public EnrageScroll(int amount) : base(665, 0x226C, amount)
+		public EnrageScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EnrageScroll)), 0x226C, amount)
 		{
 			Name = "Enrage";
 		}
@@ -2057,7 +2059,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BouclierMagiqueScroll(int amount) : base(666, 0x226C, amount)
+		public BouclierMagiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouclierMagiqueScroll)), 0x226C, amount)
 		{
 			Name = "Bouclier Magique";
 		}
@@ -2088,7 +2090,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CommandementScroll(int amount) : base(667, 0x226C, amount)
+		public CommandementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CommandementScroll)), 0x226C, amount)
 		{
 			Name = "Commandement";
 		}
@@ -2119,7 +2121,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PresenceInspiranteScroll(int amount) : base(668, 0x226C, amount)
+		public PresenceInspiranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PresenceInspiranteScroll)), 0x226C, amount)
 		{
 			Name = "Presence Inspirante";
 		}
@@ -2150,7 +2152,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AngeGardienScroll(int amount) : base(669, 0x226C, amount)
+		public AngeGardienScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AngeGardienScroll)), 0x226C, amount)
 		{
 			Name = "Ange Gardien";
 		}
@@ -2181,7 +2183,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DiversionScroll(int amount) : base(670, 0x226E, amount)
+		public DiversionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DiversionScroll)), 0x226E, amount)
 		{
 			Name = "Diversion";
 		}
@@ -2212,7 +2214,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CalmeToiScroll(int amount) : base(671, 0x226E, amount)
+		public CalmeToiScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CalmeToiScroll)), 0x226E, amount)
 		{
 			Name = "Calme-Toi";
 		}
@@ -2243,7 +2245,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DesorienterScroll(int amount) : base(672, 0x226E, amount)
+		public DesorienterScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DesorienterScroll)), 0x226E, amount)
 		{
 			Name = "Desorienter";
 		}
@@ -2275,7 +2277,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DefiScroll(int amount) : base(673, 0x226E, amount)
+		public DefiScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DefiScroll)), 0x226E, amount)
 		{
 			Name = "Defi";
 		}
@@ -2306,7 +2308,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DecrescendoManiaqueScroll(int amount) : base(674, 0x226E, amount)
+		public DecrescendoManiaqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DecrescendoManiaqueScroll)), 0x226E, amount)
 		{
 			Name = "Decrescendo Maniaque";
 		}
@@ -2337,7 +2339,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InspirationElementaireScroll(int amount) : base(675, 0x226E, amount)
+		public InspirationElementaireScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InspirationElementaireScroll)), 0x226E, amount)
 		{
 			Name = "Inspiration Elementaire";
 		}
@@ -2368,7 +2370,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AbsorbationSonoreScroll(int amount) : base(676, 0x226E, amount)
+		public AbsorbationSonoreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AbsorbationSonoreScroll)), 0x226E, amount)
 		{
 			Name = "Absorbation Sonore";
 		}
@@ -2399,7 +2401,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ParfaiteAspirationScroll(int amount) : base(677, 0x226E, amount)
+		public ParfaiteAspirationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ParfaiteAspirationScroll)), 0x226E, amount)
 		{
 			Name = "Parfaite Aspiration";
 		}
@@ -2430,7 +2432,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RevelationDiscordanteScroll(int amount) : base(678, 0x226E, amount)
+		public RevelationDiscordanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RevelationDiscordanteScroll)), 0x226E, amount)
 		{
 			Name = "Revelation Discordante";
 		}
@@ -2461,7 +2463,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public HavreDePaixScroll(int amount) : base(679, 0x226E, amount)
+		public HavreDePaixScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(HavreDePaixScroll)), 0x226E, amount)
 		{
 			Name = "Havre De Paix";
 		}
@@ -2492,7 +2494,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SoifDeSangScroll(int amount) : base(680, 0x2270, amount)
+		public SoifDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoifDeSangScroll)), 0x2270, amount)
 		{
 			Name = "Soif De Sang";
 		}
@@ -2523,7 +2525,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ToucheAbsorbantScroll(int amount) : base(681, 0x2270, amount)
+		public ToucheAbsorbantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucheAbsorbantScroll)), 0x2270, amount)
 		{
 			Name = "Touche Absorbant";
 		}
@@ -2554,7 +2556,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InfectionScroll(int amount) : base(682, 0x2270, amount)
+		public InfectionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InfectionScroll)), 0x2270, amount)
 		{
 			Name = "Infection";
 		}
@@ -2585,7 +2587,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ArmureOsScroll(int amount) : base(683, 0x2270, amount)
+		public ArmureOsScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ArmureOsScroll)), 0x2270, amount)
 		{
 			Name = "Armure d'Os";
 		}
@@ -2616,7 +2618,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FamilierMorbideScroll(int amount) : base(684, 0x2270, amount)
+		public FamilierMorbideScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FamilierMorbideScroll)), 0x2270, amount)
 		{
 			Name = "Familier Morbide";
 		}
@@ -2647,7 +2649,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ReanimationScroll(int amount) : base(685, 0x2270, amount)
+		public ReanimationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ReanimationScroll)), 0x2270, amount)
 		{
 			Name = "Reanimation";
 		}
@@ -2678,7 +2680,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ConsommationMortelleScroll(int amount) : base(686, 0x2270, amount)
+		public ConsommationMortelleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ConsommationMortelleScroll)), 0x2270, amount)
 		{
 			Name = "Consommation Mortelle";
 		}
@@ -2709,7 +2711,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraVampiriqueScroll(int amount) : base(687, 0x2270, amount)
+		public AuraVampiriqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraVampiriqueScroll)), 0x2270, amount)
 		{
 			Name = "Aura Vampirique";
 		}
@@ -2740,7 +2742,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AppelDuSangScroll(int amount) : base(688, 0x2270, amount)
+		public AppelDuSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AppelDuSangScroll)), 0x2270, amount)
 		{
 			Name = "Appel Du Sang";
 		}
@@ -2771,7 +2773,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PluieDeSangScroll(int amount) : base(689, 0x2270, amount)
+		public PluieDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PluieDeSangScroll)), 0x2270, amount)
 		{
 			Name = "Pluie De Sang";
 		}
@@ -2802,7 +2804,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeCycloniqueScroll(int amount) : base(690, 0x2272, amount)
+		public FormeCycloniqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeCycloniqueScroll)), 0x2272, amount)
 		{
 			Name = "Forme Cyclonique";
 		}
@@ -2833,7 +2835,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeMetalliqueScroll(int amount) : base(691, 0x2272, amount)
+		public FormeMetalliqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeMetalliqueScroll)), 0x2272, amount)
 		{
 			Name = "Forme Metallique";
 		}
@@ -2864,7 +2866,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeTerrestreScroll(int amount) : base(692, 0x2272, amount)
+		public FormeTerrestreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeTerrestreScroll)), 0x2272, amount)
 		{
 			Name = "Forme Terrestre";
 		}
@@ -2895,7 +2897,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeEmpoisonneeScroll(int amount) : base(693, 0x2272, amount)
+		public FormeEmpoisonneeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEmpoisonneeScroll)), 0x2272, amount)
 		{
 			Name = "Forme Empoisonnee";
 		}
@@ -2926,7 +2928,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeGivranteScroll(int amount) : base(694, 0x2272, amount)
+		public FormeGivranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeGivranteScroll)), 0x2272, amount)
 		{
 			Name = "Forme Givrante";
 		}
@@ -2957,7 +2959,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeLiquideScroll(int amount) : base(695, 0x2272, amount)
+		public FormeLiquideScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeLiquideScroll)), 0x2272, amount)
 		{
 			Name = "Forme Liquide";
 		}
@@ -2988,7 +2990,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeCristallineScroll(int amount) : base(696, 0x2272, amount)
+		public FormeCristallineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeCristallineScroll)), 0x2272, amount)
 		{
 			Name = "Forme Cristalline";
 		}
@@ -3019,7 +3021,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeElectrisanteScroll(int amount) : base(697, 0x2272, amount)
+		public FormeElectrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeElectrisanteScroll)), 0x2272, amount)
 		{
 			Name = "Forme Electrisante";
 		}
@@ -3050,7 +3052,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeEnflammeeScroll(int amount) : base(698, 0x2272, amount)
+		public FormeEnflammeeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEnflammeeScroll)), 0x2272, amount)
 		{
 			Name = "Forme Enflammee";
 		}
@@ -3081,7 +3083,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeEnsanglanteeScroll(int amount) : base(699, 0x2272, amount)
+		public FormeEnsanglanteeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEnsanglanteeScroll)), 0x2272, amount)
 		{
 			Name = "Forme Ensanglantee";
 		}
@@ -3113,7 +3115,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BouclierDeFeuScroll(int amount) : base(700, 0x2274, amount)
+		public BouclierDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouclierDeFeuScroll)), 0x2274, amount)
 		{
 			Name = "Bouclier De Feu";
 		}
@@ -3144,7 +3146,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BouleDeFeuScroll(int amount) : base(701, 0x2274, amount)
+		public BouleDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouleDeFeuScroll)), 0x2274, amount)
 		{
 			Name = "Boule De Feu";
 		}
@@ -3175,7 +3177,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CeleriteScroll(int amount) : base(702, 0x2274, amount)
+		public CeleriteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CeleriteScroll)), 0x2274, amount)
 		{
 			Name = "Celerite";
 		}
@@ -3206,7 +3208,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SupernovaScroll(int amount) : base(703, 0x2274, amount)
+		public SupernovaScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SupernovaScroll)), 0x2274, amount)
 		{
 			Name = "Supernova";
 		}
@@ -3237,7 +3239,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraRechauffanteScroll(int amount) : base(704, 0x2274, amount)
+		public AuraRechauffanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraRechauffanteScroll)), 0x2274, amount)
 		{
 			Name = "Aura Rechauffante";
 		}
@@ -3268,7 +3270,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FrenesieDouloureuseScroll(int amount) : base(705, 0x2274, amount)
+		public FrenesieDouloureuseScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrenesieDouloureuseScroll)), 0x2274, amount)
 		{
 			Name = "Frenesie Douloureuse";
 		}
@@ -3299,7 +3301,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FolieArdenteScroll(int amount) : base(706, 0x2274, amount)
+		public FolieArdenteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FolieArdenteScroll)), 0x2274, amount)
 		{
 			Name = "Folie Ardente";
 		}
@@ -3330,7 +3332,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraExaltationScroll(int amount) : base(707, 0x2274, amount)
+		public AuraExaltationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraExaltationScroll)), 0x2274, amount)
 		{
 			Name = "Aura Exaltation";
 		}
@@ -3361,7 +3363,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CageDeFeuScroll(int amount) : base(708, 0x2274, amount)
+		public CageDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CageDeFeuScroll)), 0x2274, amount)
 		{
 			Name = "Cage De Feu";
 		}
@@ -3392,7 +3394,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PassionArdenteScroll(int amount) : base(709, 0x2274, amount)
+		public PassionArdenteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PassionArdenteScroll)), 0x2274, amount)
 		{
 			Name = "Passion Ardente";
 		}
@@ -3423,7 +3425,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AdrenalineScroll(int amount) : base(710, 0x2276, amount)
+		public AdrenalineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AdrenalineScroll)), 0x2276, amount)
 		{
 			Name = "Adrenaline";
 		}
@@ -3454,7 +3456,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SommeilScroll(int amount) : base(711, 0x2276, amount)
+		public SommeilScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SommeilScroll)), 0x2276, amount)
 		{
 			Name = "Sommeil";
 		}
@@ -3485,7 +3487,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LancerPrecisScroll(int amount) : base(712, 0x2276, amount)
+		public LancerPrecisScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LancerPrecisScroll)), 0x2276, amount)
 		{
 			Name = "Lancer Precis";
 		}
@@ -3516,7 +3518,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupArriereScroll(int amount) : base(713, 0x2276, amount)
+		public CoupArriereScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupArriereScroll)), 0x2276, amount)
 		{
 			Name = "Coup Arriere";
 		}
@@ -3547,7 +3549,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public EvasionScroll(int amount) : base(714, 0x2276, amount)
+		public EvasionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EvasionScroll)), 0x2276, amount)
 		{
 			Name = "Evasion";
 		}
@@ -3578,7 +3580,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AttiranceScroll(int amount) : base(715, 0x2276, amount)
+		public AttiranceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AttiranceScroll)), 0x2276, amount)
 		{
 			Name = "Attirance";
 		}
@@ -3609,7 +3611,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MainBlesseeScroll(int amount) : base(716, 0x2276, amount)
+		public MainBlesseeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MainBlesseeScroll)), 0x2276, amount)
 		{
 			Name = "Main Blessee";
 		}
@@ -3640,7 +3642,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupureDesTendonsScroll(int amount) : base(717, 0x2276, amount)
+		public CoupureDesTendonsScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupureDesTendonsScroll)), 0x2276, amount)
 		{
 			Name = "Coupure Des Tendons";
 		}
@@ -3671,7 +3673,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public GazEndormantScroll(int amount) : base(718, 0x2276, amount)
+		public GazEndormantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(GazEndormantScroll)), 0x2276, amount)
 		{
 			Name = "Gaz Endormant";
 		}
@@ -3702,7 +3704,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupMortelScroll(int amount) : base(719, 0x2276, amount)
+		public CoupMortelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupMortelScroll)), 0x2276, amount)
 		{
 			Name = "Coup Mortel";
 		}
@@ -3733,7 +3735,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeFeuScroll(int amount) : base(720, 0x2278, amount)
+		public TotemDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeFeuScroll)), 0x2278, amount)
 		{
 			Name = "Totem De Feu";
 		}
@@ -3764,7 +3766,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeauScroll(int amount) : base(721, 0x2276, amount)
+		public TotemDeauScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeauScroll)), 0x2276, amount)
 		{
 			Name = "Totem D'eau";
 		}
@@ -3795,7 +3797,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeTerreScroll(int amount) : base(722, 0x2276, amount)
+		public TotemDeTerreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeTerreScroll)), 0x2276, amount)
 		{
 			Name = "Totem De Terre";
 		}
@@ -3826,7 +3828,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeVentScroll(int amount) : base(723, 0x2276, amount)
+		public TotemDeVentScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeVentScroll)), 0x2276, amount)
 		{
 			Name = "Totem De Vent";
 		}
@@ -3857,7 +3859,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AbsorbationScroll(int amount) : base(724, 0x2276, amount)
+		public AbsorbationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AbsorbationScroll)), 0x2276, amount)
 		{
 			Name = "Absorbation";
 		}
@@ -3888,7 +3890,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LierParEspritScroll(int amount) : base(725, 0x2276, amount)
+		public LierParEspritScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LierParEspritScroll)), 0x2276, amount)
 		{
 			Name = "Lier Par Esprit";
 		}
@@ -3919,7 +3921,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SuperChargeurScroll(int amount) : base(726, 0x2276, amount)
+		public SuperChargeurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SuperChargeurScroll)), 0x2276, amount)
 		{
 			Name = "Super Chargeur";
 		}
@@ -3950,7 +3952,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurTotemiqueScroll(int amount) : base(727, 0x2276, amount)
+		public MurTotemiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurTotemiqueScroll)), 0x2276, amount)
 		{
 			Name = "Mur Totemique";
 		}
@@ -3981,7 +3983,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AppelSpirituelScroll(int amount) : base(728, 0x2276, amount)
+		public AppelSpirituelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AppelSpirituelScroll)), 0x2276, amount)
 		{
 			Name = "Appel Spirituel";
 		}
@@ -4012,7 +4014,7 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MarcheAsuivreScroll(int amount) : base(729, 0x2276, amount)
+		public MarcheAsuivreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MarcheAsuivreScroll)), 0x2276, amount)
 		{
 			Name = "Marche A Suivre";
 		}

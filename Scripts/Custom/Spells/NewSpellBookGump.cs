@@ -6,26 +6,53 @@ using Server.Network;
 using Server.Spells; 
 using Server.Custom.Aptitudes;
 using Server.Custom;
+using Server.Custom.Spells.NewSpells.Aeromancie;
+using System.Xml.Linq;
+using Server.Custom.Classes;
+using System.Linq;
+using Server.Custom.Spells.NewSpells.Chasseur;
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Defenseur;
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Custom.Spells.NewSpells.Guerison;
+using Server.Custom.Spells.NewSpells.Martial;
+using Server.Custom.Spells.NewSpells.Musique;
+using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Pyromancie;
+using Server.Custom.Spells.NewSpells.Roublardise;
+using Server.Custom.Spells.NewSpells.Totemique;
 
 namespace Server.Gumps
 {
     public class SpellBookEntry
     {
+        public Type SpellType { get; private set; }
+		public string Description { get; private set; }
+		public int SpellID { get; private set; }
         public int Level { get; private set; }
         public string Name { get; private set; }
 		public Type[] Reagents { get; private set; }
 		public Aptitude Aptitude { get; private set; }
-		public int SpellID { get; private set; }
-		public string Description { get; private set; }
 
-		public SpellBookEntry(int level, Aptitude aptitude, string name, Type[] regs, int spellid, string description)
+		public SpellBookEntry(Type spellType, string description)
         {
-            Level = level;
-            Name = name;
-            Reagents = regs;
-            Aptitude = aptitude;
-            SpellID = spellid;
+			SpellType = spellType;
 			Description = description;
+
+			if (SpellType != null)
+			{
+				SpellID = SpellRegistry.GetSpellIdFromType(SpellType);
+
+				var spell = SpellRegistry.GetSpellFromType(SpellType);
+
+				if (spell != null)
+				{
+					Name = spell.Name;
+					Reagents = spell.Reagents;
+					Aptitude = spell.RequiredAptitude.FirstOrDefault();
+					Level = spell.RequiredAptitudeValue;
+				}
+			}
 		}
 	}
 
@@ -33,148 +60,148 @@ namespace Server.Gumps
     {
 		public static SpellBookEntry[] m_SpellBookEntry = new SpellBookEntry[]
 		{
-			new SpellBookEntry( 1, Aptitude.Aeromancie, "Aveuglement", new Type[] { typeof(EssenceAeromancie) }, 600, "Réduction des chances de toucher de la cible"),
-			new SpellBookEntry( 2, Aptitude.Aeromancie, "Brouillard", new Type[] { typeof(EssenceAeromancie) }, 601, "Rend invisible la cible."),
-			new SpellBookEntry( 3, Aptitude.Aeromancie, "Téléportation", new Type[] { typeof(EssenceAeromancie) }, 602, "Permet de vous téléporter sur la case de votre choix."),
-			new SpellBookEntry( 4, Aptitude.Aeromancie, "Tornado", new Type[] { typeof(EssenceAeromancie) }, 603, "Crée un champ de force autour de vous qui pousse les ennemis qui vous approchent."),
-			new SpellBookEntry( 5, Aptitude.Aeromancie, "Aura Évasive", new Type[] { typeof(EssenceAeromancie) }, 604, "Procure un bouclier de points de vie à vos alliés."),
-			new SpellBookEntry( 6, Aptitude.Aeromancie, "Ex-Téléportation", new Type[] { typeof(EssenceAeromancie) }, 605, "Permet d'interchanger votre place avec votre cible."),
-			new SpellBookEntry( 7, Aptitude.Aeromancie, "Toucher suffocant", new Type[] { typeof(EssenceAeromancie) }, 606, "Rend muet votre cible, l'empêchant de lancer des sorts."),
-            new SpellBookEntry( 8, Aptitude.Aeromancie, "Aura de brouillard", new Type[] { typeof(EssenceAeromancie) }, 607, "Rend invisible les alliés autour de vous."),
-			new SpellBookEntry( 9, Aptitude.Aeromancie, "Vent favorable", new Type[] { typeof(EssenceAeromancie) }, 608, "Vous procure la rapidité de déplacement à pieds d'un cheval."),
-			new SpellBookEntry( 10, Aptitude.Aeromancie, "Vortex", new Type[] { typeof(EssenceAeromancie) }, 609, "Crée une zone de tempête, envoyant des éclairs ici et là à ceux qui traversent la zone."),
+			new SpellBookEntry( typeof(AveuglementSpell), "Réduction des chances de toucher de la cible"),
+			new SpellBookEntry( typeof(BrouillardSpell), "Rend invisible la cible."),
+			new SpellBookEntry( typeof(TeleportationSpell), "Permet de vous téléporter sur la case de votre choix."),
+			new SpellBookEntry( typeof(TornadoSpell), "Crée un champ de force autour de vous qui pousse les ennemis qui vous approchent."),
+			new SpellBookEntry( typeof(AuraEvasiveSpell), "Procure un bouclier de points de vie à vos alliés."),
+			new SpellBookEntry( typeof(ExTeleportationSpell), "Permet d'interchanger votre place avec votre cible."),
+			new SpellBookEntry( typeof(ToucherSuffocantSpell), "Rend muet votre cible, l'empêchant de lancer des sorts."),
+            new SpellBookEntry( typeof(AuraDeBrouillardSpell), "Rend invisible les alliés autour de vous."),
+			new SpellBookEntry( typeof(VentFavorableSpell), "Vous procure la rapidité de déplacement à pieds d'un cheval."),
+			new SpellBookEntry( typeof(VortexSpell), "Crée une zone de tempête, envoyant des éclairs ici et là à ceux qui traversent la zone."),
 
-            new SpellBookEntry( 1, Aptitude.Chasseur, "Antidote", new Type[] { typeof(EssenceChasseur) }, 610, "Permet de guérir le poison sur soi-même."),
-			new SpellBookEntry( 2, Aptitude.Chasseur, "Marquer", new Type[] { typeof(EssenceChasseur) }, 611, "Marque une cible et gagne de la rapidité d'attaque."),
-			new SpellBookEntry( 3, Aptitude.Chasseur, "Compagnon animal", new Type[] { typeof(EssenceChasseur) }, 612, "Permet d'invoquer un compagnon animal."),
-			new SpellBookEntry( 4, Aptitude.Chasseur, "Soin animalier", new Type[] { typeof(EssenceChasseur) }, 613, "Permet de soigner son compagnon animal."),
-			new SpellBookEntry( 5, Aptitude.Chasseur, "Rugissement", new Type[] { typeof(EssenceChasseur) }, 614, "Ordonne à votre compagnon animal de rugir, attirant vers lui les créatures autour de lui."),
-			new SpellBookEntry( 6, Aptitude.Chasseur, "Frappe ensanglantée", new Type[] { typeof(EssenceChasseur) }, 615, "Permet de faire saigner une cible, l'empêchant par le fait même de se soigner."),
-			new SpellBookEntry( 7, Aptitude.Chasseur, "Saut aggressif", new Type[] { typeof(EssenceChasseur) }, 616, "Permet de reculer de quelques cas tout en frappant la cible."),
-			new SpellBookEntry( 8, Aptitude.Chasseur, "Coup dans le genou", new Type[] { typeof(EssenceChasseur) }, 617, "Empêche la cible de courir."),
-			new SpellBookEntry( 9, Aptitude.Chasseur, "Chasseur de prime", new Type[] { typeof(EssenceChasseur) }, 618, "Si la cible est touchée par le sort Marquer, ces résistances sont diminuées drastiquement."),
-            new SpellBookEntry( 10, Aptitude.Chasseur, "Contrat résolu", new Type[] { typeof(EssenceChasseur) }, 619, "Si la cible est marquée, ne peut plus courir* et est ensanglantée, vous téléporte sur la cible pour la tuer d'un coup. *Le fait de frapper ou d'ensanglanter une cible lui retire l'empêchement de courir, alors soyez rapide ou soyez plusieurs!"),
+            new SpellBookEntry( typeof(AntidoteSpell), "Permet de guérir le poison sur soi-même."),
+			new SpellBookEntry( typeof(MarquerSpell), "Marque une cible et gagne de la rapidité d'attaque."),
+			new SpellBookEntry( typeof(CompagnonAnimalSpell), "Permet d'invoquer un compagnon animal."),
+			new SpellBookEntry( typeof(SoinAnimalierSpell), "Permet de soigner son compagnon animal."),
+			new SpellBookEntry( typeof(RugissementSpell), "Ordonne à votre compagnon animal de rugir, attirant vers lui les créatures autour de lui."),
+			new SpellBookEntry( typeof(FrappeEnsanglanteeSpell), "Permet de faire saigner une cible, l'empêchant par le fait même de se soigner."),
+			new SpellBookEntry( typeof(SautAggressifSpell), "Permet de reculer de quelques cas tout en frappant la cible."),
+			new SpellBookEntry( typeof(CoupDansLeGenouSpell), "Empêche la cible de courir."),
+			new SpellBookEntry( typeof(ChasseurDePrimeSpell), "Si la cible est touchée par le sort Marquer, ces résistances sont diminuées drastiquement."),
+            new SpellBookEntry( typeof(ContratResoluSpell), "Si la cible est marquée, ne peut plus courir* et est ensanglantée, vous téléporte sur la cible pour la tuer d'un coup. *Le fait de frapper ou d'ensanglanter une cible lui retire l'empêchement de courir, alors soyez rapide ou soyez plusieurs!"),
 
-			new SpellBookEntry( 1, Aptitude.Defenseur, "Coup de bouclier", new Type[] { typeof(EssenceDefenseur) }, 620, "Donne un coup de bouclier à la cible."),
-			new SpellBookEntry( 2, Aptitude.Defenseur, "Bravage", new Type[] { typeof(EssenceDefenseur) }, 621, "Provoque une cible."),
-			new SpellBookEntry( 3, Aptitude.Defenseur, "Dévotion", new Type[] { typeof(EssenceDefenseur) }, 622, "Augmente ces points de vie maximun."),
-			new SpellBookEntry( 4, Aptitude.Defenseur, "Mutinerie", new Type[] { typeof(EssenceDefenseur) }, 623, "Provoque toutes les créatures autour de vous."),
-			new SpellBookEntry( 5, Aptitude.Defenseur, "Mentor", new Type[] { typeof(EssenceDefenseur) }, 624, "Procure de la réduction de coût de mana sur votre cible."),
-			new SpellBookEntry( 6, Aptitude.Defenseur, "Lien de vie", new Type[] { typeof(EssenceDefenseur) }, 625, "La moitié des dégâts reçus sur votre cible vous est transférée."),
-			new SpellBookEntry( 7, Aptitude.Defenseur, "Miracle", new Type[] { typeof(EssenceDefenseur) }, 626, "Ressuscite un joueur. Vous devez cibler son corps inerte."),
-			new SpellBookEntry( 8, Aptitude.Defenseur, "Indomptable", new Type[] { typeof(EssenceDefenseur) }, 627, "La cible est immunitée contre la paralysie, le sommeil, l'empêchement de bouger et l'empêchement de courir."),
-			new SpellBookEntry( 9, Aptitude.Defenseur, "Insensible", new Type[] { typeof(EssenceDefenseur) }, 628, "La cible est immunitée contre le poison, le saignement, l'empêchement de se soigner et à la malédiction."),
-			new SpellBookEntry( 10, Aptitude.Defenseur, "Pieds au sol", new Type[] { typeof(EssenceDefenseur) }, 629, "Vous cloue au sol, mais les dégâts reçus sont réduits."),
+			new SpellBookEntry( typeof(CoupDeBouclierSpell), "Donne un coup de bouclier à la cible."),
+			new SpellBookEntry( typeof(BravadeSpell), "Provoque une cible."),
+			new SpellBookEntry( typeof(DevotionSpell), "Augmente ces points de vie maximun."),
+			new SpellBookEntry( typeof(MutinerieSpell), "Provoque toutes les créatures autour de vous."),
+			new SpellBookEntry( typeof(MentorSpell), "Procure de la réduction de coût de mana sur votre cible."),
+			new SpellBookEntry( typeof(LienDeVieSpell), "La moitié des dégâts reçus sur votre cible vous est transférée."),
+			new SpellBookEntry( typeof(MiracleSpell), "Ressuscite un joueur. Vous devez cibler son corps inerte."),
+			new SpellBookEntry( typeof(IndomptableSpell), "La cible est immunitée contre la paralysie, le sommeil, l'empêchement de bouger et l'empêchement de courir."),
+			new SpellBookEntry( typeof(InsensibleSpell), "La cible est immunitée contre le poison, le saignement, l'empêchement de se soigner et à la malédiction."),
+			new SpellBookEntry( typeof(PiedsAuSolSpell), "Vous cloue au sol, mais les dégâts reçus sont réduits."),
 
-			new SpellBookEntry( 1, Aptitude.Geomancie, "Fortifié", new Type[] { typeof(EssenceGeomancie) }, 630, "Augmente votre résistance physique."),
-			new SpellBookEntry( 2, Aptitude.Geomancie, "Roche", new Type[] { typeof(EssenceGeomancie) }, 631, "Lance une roche sur la cible."),
-			new SpellBookEntry( 3, Aptitude.Geomancie, "Contamination", new Type[] { typeof(EssenceGeomancie) }, 632, "Empoisonne la cible."),
-			new SpellBookEntry( 4, Aptitude.Geomancie, "Empalement", new Type[] { typeof(EssenceGeomancie) }, 633, "Lance des épines autour de vous, ensanglante les cibles touchées."),
-			new SpellBookEntry( 5, Aptitude.Geomancie, "Aura fortifiante", new Type[] { typeof(EssenceGeomancie) }, 634, "Augmente la résistance physique de vous et vos alliés."),
-			new SpellBookEntry( 6, Aptitude.Geomancie, "Mur de plante", new Type[] { typeof(EssenceGeomancie) }, 635, "Invoque un mur de plante qui empoisonne les cibles autour."),
-			new SpellBookEntry( 7, Aptitude.Geomancie, "Explosion de roche", new Type[] { typeof(EssenceGeomancie) }, 636, "Permet de faire exploser sa résistance physique et d'envoyer des pierres sur les cibles autour. *Les sorts Fortifié et Aura fortifiante augmentent les dégâts du sort."),
-			new SpellBookEntry( 8, Aptitude.Geomancie, "Aura Préserv. Manaique", new Type[] { typeof(EssenceGeomancie) }, 637, "Procure de la réduction de coût de mana à vous et vos alliés."),
-			new SpellBookEntry( 9, Aptitude.Geomancie, "Racines", new Type[] { typeof(EssenceGeomancie) }, 638, "Enracine une cible, l'empêchant de bouger."),
-			new SpellBookEntry( 10, Aptitude.Geomancie, "Fléau terrestre", new Type[] { typeof(EssenceGeomancie) }, 639, "Endommage, empoisonne et empêche de se soigner les ennemis autour de vous."),
+			new SpellBookEntry( typeof(FortifieSpell), "Augmente votre résistance physique."),
+			new SpellBookEntry( typeof(RocheSpell), "Lance une roche sur la cible."),
+			new SpellBookEntry( typeof(ContaminationSpell), "Empoisonne la cible."),
+			new SpellBookEntry( typeof(EmpalementSpell), "Lance des épines autour de vous, ensanglante les cibles touchées."),
+			new SpellBookEntry( typeof(AuraFortifianteSpell), "Augmente la résistance physique de vous et vos alliés."),
+			new SpellBookEntry( typeof(MurDePlanteSpell), "Invoque un mur de plante qui empoisonne les cibles autour."),
+			new SpellBookEntry( typeof(ExplosionDeRochesSpell), "Permet de faire exploser sa résistance physique et d'envoyer des pierres sur les cibles autour. *Les sorts Fortifié et Aura fortifiante augmentent les dégâts du sort."),
+			new SpellBookEntry( typeof(AuraPreservationManaiqueSpell), "Procure de la réduction de coût de mana à vous et vos alliés."),
+			new SpellBookEntry( typeof(RacinesSpell), "Enracine une cible, l'empêchant de bouger."),
+			new SpellBookEntry( typeof(FleauTerrestreSpell), "Endommage, empoisonne et empêche de se soigner les ennemis autour de vous."),
 
-			new SpellBookEntry( 1, Aptitude.Guerison, "Main cicatrisante", new Type[] { typeof(EssenceGuerison) }, 640, "Permet de lancer un sortilège de soin."),
-			new SpellBookEntry( 2, Aptitude.Guerison, "Remède", new Type[] { typeof(EssenceGuerison) }, 641, "Permet de guérir le poison d'une cible."),
-			new SpellBookEntry( 3, Aptitude.Guerison, "Mur de pierre", new Type[] { typeof(EssenceGuerison) }, 642, "Invoque un mur de pierre."),
-			new SpellBookEntry( 4, Aptitude.Guerison, "Rayon céleste", new Type[] { typeof(EssenceGuerison) }, 643, "Permet de lancer un sortilège de soin amélioré."),
-			new SpellBookEntry( 5, Aptitude.Guerison, "Don de la vie", new Type[] { typeof(EssenceGuerison) }, 649, "Ressuscite un joueur. Vous devez cibler son corps inerte."),
-			new SpellBookEntry( 6, Aptitude.Guerison, "Frayeur", new Type[] { typeof(EssenceGuerison) }, 645, "Votre cible est prise de peur."),
-			new SpellBookEntry( 7, Aptitude.Guerison, "Ferveur divine", new Type[] { typeof(EssenceGuerison) }, 646, "Permet d’interchanger vos points de mana avec votre cible."),
-			new SpellBookEntry( 8, Aptitude.Guerison, "Inquisition", new Type[] { typeof(EssenceGuerison) }, 647, "Augmente votre rapidité de lancer des sorts, vos sorts de soins sont améliorés et vos murs durent plus longtemps."),
-			new SpellBookEntry( 9, Aptitude.Guerison, "Mur de lumière", new Type[] { typeof(EssenceGuerison) }, 648, "Permet de lancer un mur de paralysie."),
-			new SpellBookEntry( 10, Aptitude.Guerison, "Lumière sacré", new Type[] { typeof(EssenceGuerison) }, 644, "Endommage les ennemis et soigne les alliés autour de votre cible."),
+			new SpellBookEntry( typeof(MainCicatrisanteSpell), "Permet de lancer un sortilège de soin."),
+			new SpellBookEntry( typeof(RemedeSpell), "Permet de guérir le poison d'une cible."),
+			new SpellBookEntry( typeof(MurDePierreSpell), "Invoque un mur de pierre."),
+			new SpellBookEntry( typeof(RayonCelesteSpell), "Permet de lancer un sortilège de soin amélioré."),
+			new SpellBookEntry( typeof(DonDeLaVieSpell), "Ressuscite un joueur. Vous devez cibler son corps inerte."),
+			new SpellBookEntry( typeof(FrayeurSpell), "Votre cible est prise de peur."),
+			new SpellBookEntry( typeof(FerveurDivineSpell), "Permet d’interchanger vos points de mana avec votre cible."),
+			new SpellBookEntry( typeof(InquisitionSpell), "Augmente votre rapidité de lancer des sorts, vos sorts de soins sont améliorés et vos murs durent plus longtemps."),
+			new SpellBookEntry( typeof(MurDeLumiereSpell), "Permet de lancer un mur de paralysie."),
+			new SpellBookEntry( typeof(LumiereSacreeSpell), "Endommage les ennemis et soigne les alliés autour de votre cible."),
 
-			new SpellBookEntry( 1, Aptitude.Hydromancie, "Armure de glace", new Type[] { typeof(EssenceHydromancie) }, 650, "Augmente votre résistance au froid."),
-			new SpellBookEntry( 2, Aptitude.Hydromancie, "Restauration", new Type[] { typeof(EssenceHydromancie) }, 651, "Procure une regénération de points de vie à votre cible."),
-			new SpellBookEntry( 3, Aptitude.Hydromancie, "Soin préventif", new Type[] { typeof(EssenceHydromancie) }, 652, "Permet de se téléporter sur un allié et lui appliquer le sort Restauration."),
-			new SpellBookEntry( 4, Aptitude.Hydromancie, "Cage de glace", new Type[] { typeof(EssenceHydromancie) }, 653, "Entoure une cible de mur de glace, l'empêchant de bouger."),
-			new SpellBookEntry( 5, Aptitude.Hydromancie, "Aura cryogénisée", new Type[] { typeof(EssenceHydromancie) }, 654, "Augmente la résistance au froid de vous et vos alliés."),
-			new SpellBookEntry( 6, Aptitude.Hydromancie, "Pieux de glace", new Type[] { typeof(EssenceHydromancie) }, 655, "La cible est assaillit de pieux de glace qui explosent autour d'elle."),
-			new SpellBookEntry( 7, Aptitude.Hydromancie, "Cerveau gelé", new Type[] { typeof(EssenceHydromancie) }, 656, "Si la cible est affectée par le sort 'Blizzard' ou 'Cage de glace', ses points de vie sont réduits à la moitié de son maximum."),
-			new SpellBookEntry( 8, Aptitude.Hydromancie, "Aura réfrigérante", new Type[] { typeof(EssenceHydromancie) }, 657, "Applique le sort Restauration à vous et aux alliés autour de vous."),
-			new SpellBookEntry( 9, Aptitude.Hydromancie, "Avatar du froid", new Type[] { typeof(EssenceHydromancie) }, 658, "Vous cloue les pieds au sol, mais vos sorts de soin sont améliorés."),
-			new SpellBookEntry( 10, Aptitude.Hydromancie, "Blizzard", new Type[] { typeof(EssenceHydromancie) }, 659, "Crée une zone de blizzard, empêchant les ennemis de courir et leur fait perdre de la stamina."),
+			new SpellBookEntry( typeof(MainCicatrisanteSpell), "Augmente votre résistance au froid."),
+			new SpellBookEntry( typeof(RemedeSpell), "Procure une regénération de points de vie à votre cible."),
+			new SpellBookEntry( typeof(MurDePierreSpell), "Permet de se téléporter sur un allié et lui appliquer le sort Restauration."),
+			new SpellBookEntry( typeof(RayonCelesteSpell), "Entoure une cible de mur de glace, l'empêchant de bouger."),
+			new SpellBookEntry( typeof(LumiereSacreeSpell),"Augmente la résistance au froid de vous et vos alliés."),
+			new SpellBookEntry( typeof(FrayeurSpell), "La cible est assaillit de pieux de glace qui explosent autour d'elle."),
+			new SpellBookEntry( typeof(FerveurDivineSpell), "Si la cible est affectée par le sort 'Blizzard' ou 'Cage de glace', ses points de vie sont réduits à la moitié de son maximum."),
+			new SpellBookEntry( typeof(InquisitionSpell), "Applique le sort Restauration à vous et aux alliés autour de vous."),
+			new SpellBookEntry( typeof(MurDeLumiereSpell), "Vous cloue les pieds au sol, mais vos sorts de soin sont améliorés."),
+			new SpellBookEntry(	typeof(DonDeLaVieSpell), "Crée une zone de blizzard, empêchant les ennemis de courir et leur fait perdre de la stamina."),
 
-			new SpellBookEntry( 1, Aptitude.Martial, "Second souffle", new Type[] { typeof(EssenceMartial) }, 660, "Augmente les points de vie."),
-			new SpellBookEntry( 2, Aptitude.Martial, "Provocation", new Type[] { typeof(EssenceMartial) }, 661, "La cible est attirée vers vous."),
-			new SpellBookEntry( 3, Aptitude.Martial, "Saut dévastateur", new Type[] { typeof(EssenceMartial) }, 662, "Saute de quelques cases et crée une zone de feu lors de l'impact."),
-			new SpellBookEntry( 4, Aptitude.Martial, "Duel", new Type[] { typeof(EssenceMartial) }, 663, "Gagne un bonus de dégâts contre la cible."),
-			new SpellBookEntry( 5, Aptitude.Martial, "Charge furieuse", new Type[] { typeof(EssenceMartial) }, 664, "Charge vers la cible, la repoussant lors de l'impact."),
-			new SpellBookEntry( 6, Aptitude.Martial, "Enragé", new Type[] { typeof(EssenceMartial) }, 665, "Réduit sa résistance physique, mais augmente ses dégâts physiques."),
-			new SpellBookEntry( 7, Aptitude.Martial, "Bouclier magique", new Type[] { typeof(EssenceMartial) }, 666, "Permet de renvoyer le prochain sort sur vous sur le lanceur du sort."),
-			new SpellBookEntry( 8, Aptitude.Martial, "Commandement", new Type[] { typeof(EssenceMartial) }, 667, "Augmente vos points de vie et ceux de vos alliés."),
-			new SpellBookEntry( 9, Aptitude.Martial, "Présence inspirante", new Type[] { typeof(EssenceMartial) }, 668, "Augmente la regénération de vos points de vie et celle de vos alliés."),
-			new SpellBookEntry( 10, Aptitude.Martial, "Ange gardien", new Type[] { typeof(EssenceMartial) }, 669, "Vous perdez des points de vie, mais votre résistance est grandement améliorée."),
+			new SpellBookEntry( typeof(SecondSouffleSpell), "Augmente les points de vie."),
+			new SpellBookEntry( typeof(ProvocationSpell), "La cible est attirée vers vous."),
+			new SpellBookEntry( typeof(SautDevastateurSpell), "Saute de quelques cases et crée une zone de feu lors de l'impact."),
+			new SpellBookEntry( typeof(DuelSpell), "Gagne un bonus de dégâts contre la cible."),
+			new SpellBookEntry( typeof(ChargeFurieuseSpell), "Charge vers la cible, la repoussant lors de l'impact."),
+			new SpellBookEntry( typeof(EnrageSpell), "Réduit sa résistance physique, mais augmente ses dégâts physiques."),
+			new SpellBookEntry( typeof(BouclierMagiqueSpell), "Permet de renvoyer le prochain sort sur vous sur le lanceur du sort."),
+			new SpellBookEntry( typeof(CommandementSpell), "Augmente vos points de vie et ceux de vos alliés."),
+			new SpellBookEntry( typeof(PresenceInspiranteSpell), "Augmente la regénération de vos points de vie et celle de vos alliés."),
+			new SpellBookEntry( typeof(AngeGardienSpell), "Vous perdez des points de vie, mais votre résistance est grandement améliorée."),
 
-			new SpellBookEntry( 1, Aptitude.Musique, "Diversion", new Type[] { typeof(EssenceMusique) }, 670, "Permet d’attirer l’attention d’un monstre sur une cible*. *Ciblez le sol."),
-			new SpellBookEntry( 2, Aptitude.Musique, "Calme toi!", new Type[] { typeof(EssenceMusique) }, 671, "Apaise une créature."),
-			new SpellBookEntry( 3, Aptitude.Musique, "Désorienté", new Type[] { typeof(EssenceMusique) }, 672, "Désoriente une créature."),
-			new SpellBookEntry( 4, Aptitude.Musique, "Défi", new Type[] { typeof(EssenceMusique) }, 673, "Provoque une créature sur une autre."),
-			new SpellBookEntry( 5, Aptitude.Musique, "Descescendo maniaque", new Type[] { typeof(EssenceMusique) }, 674, "Procure de la réduction de coût de mana à vous et vos alliés."),
-			new SpellBookEntry( 6, Aptitude.Musique, "Inspiration élémentaire", new Type[] { typeof(EssenceMusique) }, 675, "Ajoute des effets magiques à votre arme de manière aléatoire (Ex: boule de feu, éclair, etc)"),
-			new SpellBookEntry( 7, Aptitude.Musique, "Absorbation sonore", new Type[] { typeof(EssenceMusique) }, 676, "Permet de drainer la mana des ennemis autour de vous."),
-			new SpellBookEntry( 8, Aptitude.Musique, "Parfaite aspiration", new Type[] { typeof(EssenceMusique) }, 677, "Augmente la concentration d'une cible, ce qui lui empêche de râter un sort lorsqu'elle est touchée."),
-			new SpellBookEntry( 9, Aptitude.Musique, "Révélation discordance", new Type[] { typeof(EssenceMusique) }, 678, "Permet de révéler tous les invisibles de votre écran et les désoriente."),
-			new SpellBookEntry( 10, Aptitude.Musique, "Havre de paix", new Type[] { typeof(EssenceMusique) }, 679, "Apaise toutes les créatures autour de vous."),
+			new SpellBookEntry( typeof(DiversionSpell), "Permet d’attirer l’attention d’un monstre sur une cible*. *Ciblez le sol."),
+			new SpellBookEntry( typeof(CalmeToiSpell), "Apaise une créature."),
+			new SpellBookEntry( typeof(DesorienterSpell), "Désoriente une créature."),
+			new SpellBookEntry( typeof(DefiSpell), "Provoque une créature sur une autre."),
+			new SpellBookEntry( typeof(DecrescendoManaiqueSpell), "Procure de la réduction de coût de mana à vous et vos alliés."),
+			new SpellBookEntry( typeof(InspirationElementaireSpell), "Ajoute des effets magiques à votre arme de manière aléatoire (Ex: boule de feu, éclair, etc)"),
+			new SpellBookEntry( typeof(AbsorbationSonoreSpell), "Permet de drainer la mana des ennemis autour de vous."),
+			new SpellBookEntry( typeof(ParfaiteAspirationSpell), "Augmente la concentration d'une cible, ce qui lui empêche de râter un sort lorsqu'elle est touchée."),
+			new SpellBookEntry( typeof(RevelationDiscordanteSpell), "Permet de révéler tous les invisibles de votre écran et les désoriente."),
+			new SpellBookEntry( typeof(HavreDePaixSpell), "Apaise toutes les créatures autour de vous."),
 
-			new SpellBookEntry( 1, Aptitude.Necromancie, "Soif de sang", new Type[] { typeof(EssenceNecromancie) }, 680, "Ensanglante la cible."),
-			new SpellBookEntry( 2, Aptitude.Necromancie, "Touché absorbant", new Type[] { typeof(EssenceNecromancie) }, 681, "Permet de se soigner en ciblant un corp inerte au sol."),
-			new SpellBookEntry( 3, Aptitude.Necromancie, "Infection", new Type[] { typeof(EssenceNecromancie) }, 682, "Applique une malédiction sur la cible."),
-			new SpellBookEntry( 4, Aptitude.Necromancie, "Armure d'os", new Type[] { typeof(EssenceNecromancie) }, 683, "Vous procure un aura qui réflète les dégâts."),
-			new SpellBookEntry( 5, Aptitude.Necromancie, "Familier morbide", new Type[] { typeof(EssenceNecromancie) }, 684, "Invoque une créature morbide."),
-			new SpellBookEntry( 6, Aptitude.Necromancie, "Réanimation", new Type[] { typeof(EssenceNecromancie) }, 685, "Permet de relever les cadavres."),
-			new SpellBookEntry( 7, Aptitude.Necromancie, "Consommation mortelle", new Type[] { typeof(EssenceNecromancie) }, 686, "Permet de consommer l'existance d'une créature invoquées et de se soigner."),
-			new SpellBookEntry( 8, Aptitude.Necromancie, "Aura vampirique", new Type[] { typeof(EssenceNecromancie) }, 687, "Donne un aura de regain de vie à ses alliés quand ils sont des dégâts."),
-			new SpellBookEntry( 9, Aptitude.Necromancie, "Appel du sang", new Type[] { typeof(EssenceNecromancie) }, 688, "Invoque un élémentaire de sang."),
-			new SpellBookEntry( 10, Aptitude.Necromancie, "Pluie de sang", new Type[] { typeof(EssenceNecromancie) }, 689, "Ensanglante et applique une malédiction aux ennemis autour de soi."),
+			new SpellBookEntry( typeof(SoifDeSangSpell), "Ensanglante la cible."),
+			new SpellBookEntry( typeof(ToucheAbsorbantSpell), "Permet de se soigner en ciblant un corp inerte au sol."),
+			new SpellBookEntry( typeof(InfectionSpell), "Applique une malédiction sur la cible."),
+			new SpellBookEntry( typeof(ArmureOsSpell), "Vous procure un aura qui réflète les dégâts."),
+			new SpellBookEntry( typeof(FamilierMorbideSpell), "Invoque une créature morbide."),
+			new SpellBookEntry( typeof(ReanimationSpell), "Permet de relever les cadavres."),
+			new SpellBookEntry( typeof(ConsommationMortelleSpell), "Permet de consommer l'existance d'une créature invoquées et de se soigner."),
+			new SpellBookEntry( typeof(AuraVampiriqueSpell), "Donne un aura de regain de vie à ses alliés quand ils sont des dégâts."),
+			new SpellBookEntry( typeof(AppelDuSangSpell), "Invoque un élémentaire de sang."),
+			new SpellBookEntry( typeof(PluieDeSangSpell), "Ensanglante et applique une malédiction aux ennemis autour de soi."),
 
-			new SpellBookEntry( 1, Aptitude.Polymorphie, "Forme cyclonique", new Type[] { typeof(EssencePolymorphie) }, 690, "Gagne un bonus de compétence 'Hiding'."),
-			new SpellBookEntry( 2, Aptitude.Polymorphie, "Forme métallique", new Type[] { typeof(EssencePolymorphie) }, 691, "Procure une meilleure regénération de points de vie."),
-			new SpellBookEntry( 3, Aptitude.Polymorphie, "Forme terrestre", new Type[] { typeof(EssencePolymorphie) }, 692, "Augmente votre résistance phjysique, mais diminue votre résistance au feu et à l'énergie."),
-			new SpellBookEntry( 4, Aptitude.Polymorphie, "Forme empoisonnée", new Type[] { typeof(EssencePolymorphie) }, 693, "Permet d'appliquer un poison lorsque vous frappez une cible."),
-			new SpellBookEntry( 5, Aptitude.Polymorphie, "Forme givrante", new Type[] { typeof(EssencePolymorphie) }, 694, "Augmente vos dégâts physiques et votre régénération de points de vie."),
-			new SpellBookEntry( 6, Aptitude.Polymorphie, "Forme liquide", new Type[] { typeof(EssencePolymorphie) }, 695, "Procure un bonus de guérison avec les bandages sur soi-même."),
-			new SpellBookEntry( 7, Aptitude.Polymorphie, "Forme cristalline", new Type[] { typeof(EssencePolymorphie) }, 696, "Augmente votre regénération de mana, mais vous perdez des points de vie. Augmente votre résistance au froid et poison."),
-			new SpellBookEntry( 8, Aptitude.Polymorphie, "Forme électrisante", new Type[] { typeof(EssencePolymorphie) }, 697, "Augmente votre vitesse de déplacement, de précision des coups et vos points de vie."),
-			new SpellBookEntry( 9, Aptitude.Polymorphie, "Forme enflammée", new Type[] { typeof(EssencePolymorphie) }, 698, "Brûle les ennemis qui sont trop près de vous."),
-			new SpellBookEntry( 10, Aptitude.Polymorphie, "Forme ensanglantée", new Type[] { typeof(EssencePolymorphie) }, 699, "Procure un regain de vie lors de coups, augmente votre regénération de mana et de stamina. Vous êtes immunisé aux poisons, mais vous perdez de la résistance au feu."),
+			new SpellBookEntry( typeof(FormeCycloniqueSpell), "Gagne un bonus de compétence 'Hiding'."),
+			new SpellBookEntry( typeof(FormeMetalliqueSpell), "Procure une meilleure regénération de points de vie."),
+			new SpellBookEntry( typeof(FormeTerrestreSpell), "Augmente votre résistance phjysique, mais diminue votre résistance au feu et à l'énergie."),
+			new SpellBookEntry( typeof(FormeEmpoisonneeSpell), "Permet d'appliquer un poison lorsque vous frappez une cible."),
+			new SpellBookEntry( typeof(FormeGivranteSpell), "Augmente vos dégâts physiques et votre régénération de points de vie."),
+			new SpellBookEntry( typeof(FormeLiquideSpell), "Procure un bonus de guérison avec les bandages sur soi-même."),
+			new SpellBookEntry( typeof(FormeCristallineSpell), "Augmente votre regénération de mana, mais vous perdez des points de vie. Augmente votre résistance au froid et poison."),
+			new SpellBookEntry( typeof(FormeElectrisanteSpell), "Augmente votre vitesse de déplacement, de précision des coups et vos points de vie."),
+			new SpellBookEntry( typeof(FormeEnflammeeSpell), "Brûle les ennemis qui sont trop près de vous."),
+			new SpellBookEntry( typeof(FormeEnsangleeSpell), "Procure un regain de vie lors de coups, augmente votre regénération de mana et de stamina. Vous êtes immunisé aux poisons, mais vous perdez de la résistance au feu."),
 
-			new SpellBookEntry( 1, Aptitude.Pyromancie, "Bouclier de feu", new Type[] { typeof(EssencePyromancie) }, 700, "Augmente votre résistance au feu."),
-			new SpellBookEntry( 2, Aptitude.Pyromancie, "Boule de feu", new Type[] { typeof(EssencePyromancie) }, 701, "Lance une boule de feu."),
-			new SpellBookEntry( 3, Aptitude.Pyromancie, "Célérité", new Type[] { typeof(EssencePyromancie) }, 702, "Augmente la vitesse d'attaque de votre cible."),
-			new SpellBookEntry( 4, Aptitude.Pyromancie, "Supernova", new Type[] { typeof(EssencePyromancie) }, 703, "Permet de lancer des boules de feu autour de vous."),
-			new SpellBookEntry( 5, Aptitude.Pyromancie, "Aura réchauffante", new Type[] { typeof(EssencePyromancie) }, 704, "Augmente la résistance au feu de vous et vos alliés."),
-			new SpellBookEntry( 6, Aptitude.Pyromancie, "Frénésie douloureuse", new Type[] { typeof(EssencePyromancie) }, 705, "Votre cible est attirée vers vous tout en étant brûlée."),
-			new SpellBookEntry( 7, Aptitude.Pyromancie, "Folie ardente", new Type[] { typeof(EssencePyromancie) }, 706, "Brûle votre cible de manière répétitive."),
-			new SpellBookEntry( 8, Aptitude.Pyromancie, "Aura d'exaltation", new Type[] { typeof(EssencePyromancie) }, 707, "Augmente la vitesse d'attaque de vous et de vos alliés."),
-			new SpellBookEntry( 9, Aptitude.Pyromancie, "Cage de feu", new Type[] { typeof(EssencePyromancie) }, 708, "La cible est téléportée à vous, vous entourant tous les deux d'une cage de feu. Tous les gens entourés par la cage de feu ne peuvent s'en échapper."),
-			new SpellBookEntry( 10, Aptitude.Pyromancie, "Passion ardente", new Type[] { typeof(EssencePyromancie) }, 709, "Une partie des dégâts de feu reçus vous soigne. Une partie des dégâts de feu envoyés vous soigne également."),
+			new SpellBookEntry( typeof(BouclierDeFeuSpell), "Augmente votre résistance au feu."),
+			new SpellBookEntry( typeof(BouleDeFeuSpell), "Lance une boule de feu."),
+			new SpellBookEntry( typeof(CeleriteSpell), "Augmente la vitesse d'attaque de votre cible."),
+			new SpellBookEntry( typeof(SupernovaSpell), "Permet de lancer des boules de feu autour de vous."),
+			new SpellBookEntry( typeof(AuraRechauffanteSpell), "Augmente la résistance au feu de vous et vos alliés."),
+			new SpellBookEntry( typeof(FrenesieDouloureuseSpell), "Votre cible est attirée vers vous tout en étant brûlée."),
+			new SpellBookEntry( typeof(FolieArdenteSpell), "Brûle votre cible de manière répétitive."),
+			new SpellBookEntry( typeof(AuraExaltationSpell), "Augmente la vitesse d'attaque de vous et de vos alliés."),
+			new SpellBookEntry( typeof(CageDeFeuSpell), "La cible est téléportée à vous, vous entourant tous les deux d'une cage de feu. Tous les gens entourés par la cage de feu ne peuvent s'en échapper."),
+			new SpellBookEntry( typeof(PassionArdenteSpell), "Une partie des dégâts de feu reçus vous soigne. Une partie des dégâts de feu envoyés vous soigne également."),
 
-			new SpellBookEntry( 1, Aptitude.Roublardise, "Adrénaline", new Type[] { typeof(EssenceRoublardise) }, 710, "Augmente votre regénération de stamina."),
-			new SpellBookEntry( 2, Aptitude.Roublardise, "Lancer précis", new Type[] { typeof(EssenceRoublardise) }, 711, "Lance un couteau qui ensanglante votre cible."),
-			new SpellBookEntry( 3, Aptitude.Roublardise, "Coup arrière", new Type[] { typeof(EssenceRoublardise) }, 712, "Permet de se téléporter en arrière de votre cible pour la frapper."),
-			new SpellBookEntry( 4, Aptitude.Roublardise, "Sommeil", new Type[] { typeof(EssenceRoublardise) }, 713, "Endort une cible."),
-			new SpellBookEntry( 5, Aptitude.Roublardise, "Main blessée", new Type[] { typeof(EssenceRoublardise) }, 714, "Désarmera la prochaine personne que vous frapperez."),
-			new SpellBookEntry( 6, Aptitude.Roublardise, "Attirance", new Type[] { typeof(EssenceRoublardise) }, 715, "Téléporte une cible vers vous."),
-			new SpellBookEntry( 7, Aptitude.Roublardise, "Évasion", new Type[] { typeof(EssenceRoublardise) }, 716, "Permet de se téléporter à une case aléatoire et vous rend invisible."),
-			new SpellBookEntry( 8, Aptitude.Roublardise, "Coupure des tendons", new Type[] { typeof(EssenceRoublardise) }, 717, "Ensanglante une cible et l'empêche de courir."),
-			new SpellBookEntry( 9, Aptitude.Roublardise, "Gas endormant", new Type[] { typeof(EssenceRoublardise) }, 718, "Endort les ennemis autour de votre cible."),
-			new SpellBookEntry( 10, Aptitude.Roublardise, "Coup mortel", new Type[] { typeof(EssenceRoublardise) }, 719, "Si les points de vie de votre cible sont sous la barre des 20%, la cible est exécutée."),
+			new SpellBookEntry( typeof(AdrenalineSpell), "Augmente votre regénération de stamina."),
+			new SpellBookEntry( typeof(LancerPrecisSpell), "Lance un couteau qui ensanglante votre cible."),
+			new SpellBookEntry( typeof(CoupArriereSpell), "Permet de se téléporter en arrière de votre cible pour la frapper."),
+			new SpellBookEntry( typeof(SommeilSpell), "Endort une cible."),
+			new SpellBookEntry( typeof(MainBlesseeSpell), "Désarmera la prochaine personne que vous frapperez."),
+			new SpellBookEntry( typeof(AttiranceSpell), "Téléporte une cible vers vous."),
+			new SpellBookEntry( typeof(EvasionSpell), "Permet de se téléporter à une case aléatoire et vous rend invisible."),
+			new SpellBookEntry( typeof(CoupureDesTendonsSpell), "Ensanglante une cible et l'empêche de courir."),
+			new SpellBookEntry( typeof(GazEndormantSpell), "Endort les ennemis autour de votre cible."),
+			new SpellBookEntry( typeof(CoupMortelSpell), "Si les points de vie de votre cible sont sous la barre des 20%, la cible est exécutée."),
 
-			new SpellBookEntry( 1, Aptitude.Totemique, "Totem de feu", new Type[] { typeof(EssenceTotemique) }, 720, "Invoque un totem de feu qui lance des boules de feu."),
-			new SpellBookEntry( 2, Aptitude.Totemique, "Totem de l'eau", new Type[] { typeof(EssenceTotemique) }, 721, "Invoque un totem d'eau qui vous soigne."),
-			new SpellBookEntry( 3, Aptitude.Totemique, "Totem de terre", new Type[] { typeof(EssenceTotemique) }, 722, "Invoque un totem de terre qui attirent les ennemis autour de lui."),
-			new SpellBookEntry( 4, Aptitude.Totemique, "Totem de vent", new Type[] { typeof(EssenceTotemique) }, 723, "Invoque un totem de vent qui lance des éclairs."),
-			new SpellBookEntry( 5, Aptitude.Totemique, "Absorbation", new Type[] { typeof(EssenceTotemique) }, 724, "Absorbe un totem pour regagner de la vie, de la stamina et de la mana."),
-			new SpellBookEntry( 6, Aptitude.Totemique, "Lier par l'esprit", new Type[] { typeof(EssenceTotemique) },  725, "Permet de téléporter les totems sur soi."),
-			new SpellBookEntry( 7, Aptitude.Totemique, "Supercharger", new Type[] { typeof(EssenceTotemique) }, 726, "Améliore la puissance des totems."),
-			new SpellBookEntry( 8, Aptitude.Totemique, "Mur totémique", new Type[] { typeof(EssenceTotemique) }, 727, "Permet d'invoquer un mur de totems d'énergie, vous empêchant de les traverser.."),
-			new SpellBookEntry( 9, Aptitude.Totemique, "Appel spirituel", new Type[] { typeof(EssenceTotemique) }, 728, "Permet de retourner une cible à la ville."),
-			new SpellBookEntry( 10, Aptitude.Totemique, "Marche à suivre", new Type[] { typeof(EssenceTotemique) }, 729, "Permet aux totems de vous suivre."),
+			new SpellBookEntry( typeof(TotemDuFeuSpell), "Invoque un totem de feu qui lance des boules de feu."),
+			new SpellBookEntry( typeof(TotemDeauSpell), "Invoque un totem d'eau qui vous soigne."),
+			new SpellBookEntry( typeof(TotemDeTerreSpell), "Invoque un totem de terre qui attirent les ennemis autour de lui."),
+			new SpellBookEntry( typeof(TotemDuVentSpell), "Invoque un totem de vent qui lance des éclairs."),
+			new SpellBookEntry( typeof(AbsorbationSpell), "Absorbe un totem pour regagner de la vie, de la stamina et de la mana."),
+			new SpellBookEntry( typeof(LierParEspritSpell), "Permet de téléporter les totems sur soi."),
+			new SpellBookEntry( typeof(SuperChargerSpell), "Améliore la puissance des totems."),
+			new SpellBookEntry( typeof(MurTotemiqueSpell), "Permet d'invoquer un mur de totems d'énergie, vous empêchant de les traverser.."),
+			new SpellBookEntry( typeof(AppelSpirituelSpell), "Permet de retourner une cible à la ville."),
+			new SpellBookEntry( typeof(MarcheAsuivreSpell), "Permet aux totems de vous suivre."),
         };
 
         public bool HasSpell(int spellID)

@@ -1,4 +1,6 @@
 using System;
+using System.Linq;
+using Server.Custom.Aptitudes;
 
 namespace Server.Spells
 {
@@ -33,6 +35,41 @@ namespace Server.Spells
 
 				return m_Count;
 			}
+		}
+
+		public static int GetSpellIdFromType(Type type)
+		{
+			return m_Types.IndexOf(type);
+		}
+
+		public static Spell GetSpellFromType(Type type)
+		{
+			var spellID = GetSpellIdFromType(type);
+
+			if (spellID < 0)
+				return null;
+
+			return NewSpell(spellID, null, null);
+		}
+
+		public static string GetSpellNameFromType(Type type)
+		{
+			var spell = GetSpellFromType(type);
+
+			if (spell == null)
+				return null;
+
+			return spell.Name;
+		}
+
+		public static Aptitude[] GetSpellAptitudeFromType(Type type)
+		{
+			var spell = GetSpellFromType(type);
+
+			if (spell == null)
+				return null;
+
+			return spell.RequiredAptitude;
 		}
 
 		public static void Register( int spellID, Type type )
