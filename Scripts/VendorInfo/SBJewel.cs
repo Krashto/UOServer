@@ -15,14 +15,12 @@ namespace Server.Mobiles
         {
             public InternalBuyInfo()
             {
-         /*       Add(new GenericBuyInfo(typeof(GoldRing), 27, 20, 0x108A, 0));
-                Add(new GenericBuyInfo(typeof(Necklace), 26, 20, 0x1085, 0));
-                Add(new GenericBuyInfo(typeof(GoldNecklace), 27, 20, 0x1088, 0));
-                Add(new GenericBuyInfo(typeof(GoldBeadNecklace), 27, 20, 0x1089, 0));
-                Add(new GenericBuyInfo(typeof(Beads), 27, 20, 0x108B, 0, true));
-                Add(new GenericBuyInfo(typeof(GoldBracelet), 27, 20, 0x1086, 0));
-                Add(new GenericBuyInfo(typeof(GoldEarrings), 27, 20, 0x1087, 0));             */
-            }
+				Add(new GenericBuyInfo(typeof(Amber), 80, Utility.RandomMinMax(15, 25), 0xF25, 0));
+				Add(new GenericBuyInfo(typeof(Bracelet1), 250, Utility.RandomMinMax(15, 25), 0x1F06, 0));
+				Add(new GenericBuyInfo(typeof(Necklace), 250, Utility.RandomMinMax(15, 25), 0x1F08, 0));
+				Add(new GenericBuyInfo(typeof(Earrings), 125, Utility.RandomMinMax(15, 25), 0x1F07, 0));
+				Add(new GenericBuyInfo(typeof(Ring1), 125, Utility.RandomMinMax(15, 25), 0x1F09, 0));
+			}
         }
 
         public class InternalSellInfo : GenericSellInfo
@@ -31,14 +29,14 @@ namespace Server.Mobiles
             {
 
 				Add(typeof(Citrine), 5);
-				Add(typeof(Amber), 10);
-				Add(typeof(Tourmaline), 25);
-				Add(typeof(Ruby), 50);
-				Add(typeof(Amethyst), 75);
-				Add(typeof(Sapphire), 100);
-				Add(typeof(StarSapphire), 150);
-				Add(typeof(Emerald), 200);
-				Add(typeof(Diamond), 250);
+				Add(typeof(Amber), 8);
+				Add(typeof(Tourmaline), 10);
+				Add(typeof(Ruby), 12);
+				Add(typeof(Amethyst), 15);
+				Add(typeof(Sapphire), 28);
+				Add(typeof(StarSapphire), 20);
+				Add(typeof(Emerald), 22);
+				Add(typeof(Diamond), 25);
 
 				Add(typeof(GoldRing), 13);
                 Add(typeof(SilverRing), 10);

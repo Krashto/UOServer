@@ -363,7 +363,7 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(AppelSpirituelScroll), "Toté. - Appel spirituel", 9);
 			AddSpell("Sorts", typeof(MarcheAsuivreScroll), "Toté. - Marche à suivre", 10);
 
-			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Livre de sort", 50.0, 126, typeof(PlainoisLeather), 1044377, 10, 1044378);
+			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Grimoire", 30.0, 50.0, typeof(BlankScroll), "Parchemin Vierge", 20, "Parchemin Vierge insuffisant");
 			index = AddCraft(typeof(LivreClasseAucune), "Magie/Classes", "Livre d'oubli de classe", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
 			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 1", 50.0, 126, typeof(TreasureMapLevelOnePart), "Morceau de carte niveau 1", 1, "Vous n'avez pas assez de morceau de carte niveau 1");
@@ -524,12 +524,13 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(CarnetAdresse), "Autres", "Carnet d'Adresse", 25.0, 50.0, typeof(BlankScroll), 1044377, 40, 1044378);
 
+
 			index = AddCraft(typeof(Calendrier), "Autres", "Calendrier", 0.0, 25.0, typeof(BlankScroll), 1044377, 20, 1044378);
-			index = AddCraft(typeof(GlassblowingBook), "Autres", "Connaissances Verre", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(SandMiningBook), "Autres", "Connaissances Sable", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(StoneMiningBook), "Autres", "Connaissances Granite", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(MasonryBook), "Autres", "Connaissances Pierre", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(GemMiningBook), "Autres", "Connaissances Gems", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
+			//index = AddCraft(typeof(GlassblowingBook), "Autres", "Connaissances Verre", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
+			//index = AddCraft(typeof(SandMiningBook), "Autres", "Connaissances Sable", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
+			//index = AddCraft(typeof(StoneMiningBook), "Autres", "Connaissances Granite", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
+			//index = AddCraft(typeof(MasonryBook), "Autres", "Connaissances Pierre", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
+			//index = AddCraft(typeof(GemMiningBook), "Autres", "Connaissances Gems", 65, 100, typeof(BlankScroll), 1044377, 5, 1044378);
 
 			// Set the overridable material
 			SetSubRes(typeof(PlainoisLeather), "Plainois");

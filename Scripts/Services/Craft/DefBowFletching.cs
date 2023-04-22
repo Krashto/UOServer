@@ -112,9 +112,9 @@ namespace Server.Engines.Craft
 			int index = -1;
 
 			// Munitions
-			index = AddCraft(typeof(Kindling), "Munitions", "Petit bois", 0.0, 00.0, typeof(RegularBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Kindling), "Munitions", "Petit bois", 0.0, 00.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Shaft), "Munitions", "Fût", 0.0, 40.0, typeof(RegularBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Shaft), "Munitions", "Fût", 0.0, 40.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
 			index = AddCraft(typeof(Arrow), "Munitions", "Flèche", 0.0, 40.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
