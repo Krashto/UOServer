@@ -220,7 +220,7 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
 			index = AddCraft(typeof(BambooFlute), "Instruments", "Flûte de bambou", 85.0, 100.0, typeof(PlainoisBoard), 1044041, 15, 1044351);
 			index = AddCraft(typeof(AudChar), "Instruments", "Aude-Char", 85.0, 100.0, typeof(PlainoisBoard), 1044041, 35, 1044351);
-			AddRes(index, typeof(Granite), 1044514, 3, 1044513);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
 
 			// Caisses et coffres
 			index = AddCraft(typeof(WoodenBox), "Caisses et coffres", "Boîte en bois", 20.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
@@ -234,13 +234,13 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(WoodenFootLocker), "Caisses et coffres", "Coffre à chaussures", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
 			index = AddCraft(typeof(FinishedWoodenChest), "Caisses et coffres", "Grand coffre", 90.0, 115.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
 	
-			index = AddCraft(typeof(OrnateElvenChestSouthDeed), "Caisses et coffres", 1072862, 90.0, 115.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
+			index = AddCraft(typeof(OrnateElvenChestSouthDeed), "Caisses et coffres", "Coffre elfique orné (S)", 90.0, 115.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(OrnateElvenChestEastDeed), "Caisses et coffres", 1073383, 90.0, 115.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
+			index = AddCraft(typeof(OrnateElvenChestEastDeed), "Caisses et coffres", "Coffre elfique orné (E)", 90.0, 115.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(RarewoodChest), "Caisses et coffres", 1073402, 80.0, 105.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
-			index = AddCraft(typeof(DecorativeBox), "Caisses et coffres", 1073403, 80.0, 105.0, typeof(PlainoisBoard), 1044041, 25, 1044351);
-			index = AddCraft(typeof(Chest), "Caisses et coffres", 1095293, 80.0, 105.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(RarewoodChest), "Caisses et coffres", "Coffre en bois", 80.0, 105.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(DecorativeBox), "Caisses et coffres", "Boite décorative", 80.0, 105.0, typeof(PlainoisBoard), 1044041, 25, 1044351);
+			index = AddCraft(typeof(Chest), "Caisses et coffres", "Coffre", 80.0, 105.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
 
 			// Chaises
 			index = AddCraft(typeof(FootStool), "Chaises", "Petit tabouret", 11.0, 36.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
@@ -318,7 +318,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(ArcaneBookShelfDeedEast), "Armoires", "Étagère arcanique (E)", 94.7, 119.7, typeof(PlainoisBoard), 1044041, 80, 1044351);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(AcademicBookCase), "Armoires", "Bibliothèque académique", 60.0, 85.0, typeof(PlainoisBoard), 1044041, 25, 1044351);
-			AddRes(index, typeof(AcademicBooksArtifact), 1071202, 1, 1044253);
 			index = AddCraft(typeof(ElvenWashBasinSouthWithDrawerDeed), "Armoires", "Commode avec vanité (S)", 70.0, 95.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(ElvenWashBasinEastWithDrawerDeed), "Armoires", "Commode avec vanité (E)", 70.0, 95.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
