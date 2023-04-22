@@ -71,11 +71,10 @@ namespace Server.Items
         {
             base.GetProperties(list);
 
-			if (!CraftResources.IsStandard(m_Resource))
-				list.Add(CraftResources.GetName(m_Resource));
+			list.Add(CraftResources.GetName(m_Resource));
 		}
 
-        public override void Serialize(GenericWriter writer)
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 

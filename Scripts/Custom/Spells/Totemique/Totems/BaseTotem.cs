@@ -5,6 +5,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 {
 	public abstract class BaseTotem : BaseCreature
 	{
+		public override bool DeleteOnRelease => true;
 		public bool MarcheASuivreEnable { get; set; }
 		public bool SuperCharged { get; set; }
 		public DateTime NextThinkingTime { get; set; }

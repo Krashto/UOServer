@@ -45,8 +45,7 @@ namespace Server.Items
         {
             base.GetProperties(list);
 
-			if (!CraftResources.IsStandard(m_Resource))
-				list.Add(CraftResources.GetName(m_Resource));
+			list.Add(CraftResources.GetName(m_Resource));
 		}
         public BaseLog(Serial serial) : base(serial)
         {

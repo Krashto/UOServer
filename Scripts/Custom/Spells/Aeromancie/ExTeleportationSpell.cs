@@ -2,6 +2,7 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using VitaNex.FX;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
@@ -50,9 +51,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			else if (!SpellHelper.CheckTravel(Caster, map, new Point3D(m.Location), TravelCheckType.TeleportTo))
 			{
 			}
+			else if (m.Blessed || m is BaseVendor)
+				Caster.SendMessage("Vous ne pouvez pas téléporter cette personne.");
 			else if (!Caster.CanSee(m))
 				Caster.SendMessage("Vous ne pouvez pas voir l'endroit où vous désirez vous téléporter.");
-			else if (CheckSequence())
+			else if (CheckHSequence(m))
 			{
 				SpellHelper.Turn(Caster, orig);
 

@@ -500,17 +500,9 @@ namespace Server.Items
                     list.Add(entry.Title);
             }
 
-            if (!CraftResources.IsStandard(m_Resource))
-            {
-                int num = CraftResources.GetLocalizationNumber(m_Resource);
+			list.Add(CraftResources.GetName(m_Resource));
 
-                if (num > 0)
-                    list.Add(num);
-                else
-                    list.Add(CraftResources.GetName(m_Resource));
-            }
-
-            if (m_UsesRemaining != oldUses)
+			if (m_UsesRemaining != oldUses)
                 Timer.DelayCall(TimeSpan.Zero, InvalidateProperties);
         }
 

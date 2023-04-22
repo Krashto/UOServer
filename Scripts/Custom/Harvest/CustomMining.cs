@@ -126,15 +126,16 @@ namespace Server.Engines.Harvest
 
 			oreAndStone.BonusResources = new BonusHarvestResource[]
 			{
-				new BonusHarvestResource(0, 99.2, null, null), //Nothing
-                new BonusHarvestResource(100, .1, 1072562, typeof(BlueDiamond)),
-				new BonusHarvestResource(100, .1, 1072567, typeof(DarkSapphire)),
-				new BonusHarvestResource(100, .1, 1072570, typeof(EcruCitrine)),
-				new BonusHarvestResource(100, .1, 1072564, typeof(FireRuby)),
-				new BonusHarvestResource(100, .1, 1072566, typeof(PerfectEmerald)),
-				new BonusHarvestResource(100, .1, 1072568, typeof(Turquoise)),
-				new BonusHarvestResource(100, .1, 1077180, typeof(SmallPieceofBlackrock)),
-				new BonusHarvestResource(100, .1, 1113344, typeof(CrystallineBlackrock), Map.TerMur)
+				new BonusHarvestResource(00.0, 99.1, null, null), //Nothing
+                new BonusHarvestResource(50.0, 00.1, "Amber", typeof(Amber)),
+				new BonusHarvestResource(50.0, 00.1, "Amethyst", typeof(Amethyst)),
+				new BonusHarvestResource(50.0, 00.1, "Citrine", typeof(Citrine)),
+				new BonusHarvestResource(50.0, 00.1, "Diamond", typeof(Diamond)),
+				new BonusHarvestResource(50.0, 00.1, "Emerald", typeof(Emerald)),
+				new BonusHarvestResource(50.0, 00.1, "Ruby", typeof(Ruby)),
+				new BonusHarvestResource(50.0, 00.1, "Sapphire", typeof(Sapphire)),
+				new BonusHarvestResource(50.0, 00.1, "Star Sapphire", typeof(StarSapphire)),
+				new BonusHarvestResource(50.0, 00.1, "Tourmaline", typeof(Tourmaline))
 			};
 
 			oreAndStone.RaceBonus = true;

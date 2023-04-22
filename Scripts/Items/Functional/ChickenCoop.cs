@@ -1,4 +1,5 @@
 using Server.ContextMenus;
+using Server.Custom;
 using Server.Gumps;
 using Server.Mobiles;
 using Server.Multis;
@@ -235,7 +236,7 @@ namespace Server.Items
             if (Deleted || !from.CheckAlive() || !m_Stored.ContainsKey(from))
                 return;
 
-            if ((from.Followers + pet.ControlSlots) <= from.FollowersMax)
+            if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4)
             {
                 pet.SetControlMaster(from);
 
@@ -378,7 +379,7 @@ namespace Server.Items
 
                 ++stabledCount;
 
-                if ((from.Followers + pet.ControlSlots) <= from.FollowersMax)
+                if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4)
                 {
                     pet.SetControlMaster(from);
 

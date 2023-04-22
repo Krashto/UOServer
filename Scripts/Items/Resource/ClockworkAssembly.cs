@@ -1,3 +1,4 @@
+using Server.Custom;
 using Server.Mobiles;
 using System;
 
@@ -36,7 +37,7 @@ namespace Server.Items
                 from.SendLocalizedMessage(1071943); // You must be a Journeyman or higher Tinker to construct a golem.
                 return;
             }
-            else if ((from.Followers + 4) > from.FollowersMax)
+            else if ((from.Followers + 4) > from.FollowersMax || CustomUtility.GetFollowerCount(from) >= 4)
             {
                 from.SendLocalizedMessage(1049607); // You have too many followers to control that creature.
                 return;

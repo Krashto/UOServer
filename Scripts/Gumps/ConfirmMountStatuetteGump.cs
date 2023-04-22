@@ -1,3 +1,4 @@
+using Server.Custom;
 using Server.Mobiles;
 using Server.Network;
 using System;
@@ -29,7 +30,7 @@ namespace Server.Gumps
 
             if (m != null)
             {
-                if ((from.Followers + m.ControlSlots) > from.FollowersMax)
+                if ((from.Followers + m.ControlSlots) > from.FollowersMax || CustomUtility.GetFollowerCount(from) >= 4)
                 {
                     m.Delete();
                     from.SendLocalizedMessage(1114321); // You have too many followers to control that pet.

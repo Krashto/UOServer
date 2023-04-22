@@ -555,18 +555,18 @@ namespace Server.Commands.Generic
             from.Location = toLoc;
             from.ProcessDelta();
 
-            if (!from.Hidden)
-            {
-                Effects.SendLocationParticles(
-                    EffectItem.Create(fromLoc, from.Map, EffectItem.DefaultDuration),
-                    0x3728,
-                    10,
-                    10,
-                    2023);
-                Effects.SendLocationParticles(EffectItem.Create(toLoc, from.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 5023);
+            //if (!from.Hidden)
+            //{
+            //    Effects.SendLocationParticles(
+            //        EffectItem.Create(fromLoc, from.Map, EffectItem.DefaultDuration),
+            //        0x3728,
+            //        10,
+            //        10,
+            //        2023);
+            //    Effects.SendLocationParticles(EffectItem.Create(toLoc, from.Map, EffectItem.DefaultDuration), 0x3728, 10, 10, 5023);
 
-                from.PlaySound(0x1FE);
-            }
+            //    from.PlaySound(0x1FE);
+            //}
         }
     }
 

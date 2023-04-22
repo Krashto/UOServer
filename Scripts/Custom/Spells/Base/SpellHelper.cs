@@ -973,6 +973,8 @@ namespace Server.Spells
 				bonus += pm.Capacites[Capacite.Magie] * 20;
 			}
 
+			target.CheckSkill(SkillName.MagicResist, 0.0, 120.0);
+
 			iDamage *= (1 + bonus / 100);
 
 			if ( delay == TimeSpan.Zero )
@@ -1018,7 +1020,6 @@ namespace Server.Spells
 			Damage( delay, target, from, damage, phys, fire, cold, pois, nrgy, DFAlgorithm.Standard );
 		}
 
-
 		public static void Damage( TimeSpan delay, Mobile target, Mobile from, double damage, int phys, int fire, int cold, int pois, int nrgy, DFAlgorithm dfa )
 		{
 			int iDamage = (int) damage;
@@ -1030,6 +1031,8 @@ namespace Server.Spells
 				var pm = from as CustomPlayerMobile;
 				bonus += pm.Capacites[Capacite.Magie] * 20;
 			}
+
+			target.CheckSkill(SkillName.MagicResist, 0.0, 120.0);
 
 			iDamage *= (1 + bonus / 100);
 

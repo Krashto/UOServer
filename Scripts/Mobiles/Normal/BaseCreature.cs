@@ -4720,7 +4720,7 @@ namespace Server.Mobiles
 		public void SetDamage(int val)
 		{
 			m_DamageMin = 5 + (int)(Level * 3);
-			m_DamageMax = m_DamageMin + 3;
+			m_DamageMax = m_DamageMin + 5;
 		}
 
 		public void SetDamage(int min, int max)
@@ -5014,7 +5014,10 @@ namespace Server.Mobiles
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDungeonChest));
 				if (item != null)
+				{
+					item.Movable = true;
 					AddLoot(item);
+				}
 			}
 
 			//Treasure Maps
@@ -5159,8 +5162,8 @@ namespace Server.Mobiles
 
 		public void GenerateGoldLoot()
 		{
-			var min = (int)(40 * Math.Exp(0.25 * Level) - 40);
-			var max = (int)((40 * Math.Exp(0.25 * Level) - 40) * 1.15);
+			var min = (int)(20 * Math.Exp(0.25 * Level) - 40);
+			var max = (int)((20 * Math.Exp(0.25 * Level) - 40) * 1.15);
 
 			if (m_Paragon)
 			{ 
@@ -6386,7 +6389,7 @@ namespace Server.Mobiles
         public static bool Summon(
             BaseCreature creature, bool controlled, Mobile caster, Point3D p, int sound, TimeSpan duration)
         {
-            if (caster.Followers + creature.ControlSlots > caster.FollowersMax)
+            if (caster.Followers + creature.ControlSlots > caster.FollowersMax || CustomUtility.GetFollowerCount(caster) >= 4)
             {
                 caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
                 creature.Delete();

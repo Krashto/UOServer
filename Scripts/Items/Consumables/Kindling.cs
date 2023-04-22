@@ -9,7 +9,6 @@ namespace Server.Items
     {
 		private static TimeSpan AnimateDelay = TimeSpan.FromSeconds(5.0);
 
-
 		[Constructable]
         public Kindling()
             : this(1)
@@ -23,10 +22,6 @@ namespace Server.Items
             Stackable = true;
             Weight = 1.0;
             Amount = amount;
-
-			
-			
-
 		}
 
         public Kindling(Serial serial)
@@ -52,7 +47,6 @@ namespace Server.Items
         }
 
         public override void OnDoubleClick(Mobile from)
-
 		{
             if (!VerifyMove(from))
                 return;

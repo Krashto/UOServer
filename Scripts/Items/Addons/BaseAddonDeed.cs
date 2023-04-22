@@ -125,8 +125,7 @@ namespace Server.Items
         {
             base.GetProperties(list);
 
-            if (!CraftResources.IsStandard(m_Resource))
-                list.Add(CraftResources.GetLocalizationNumber(m_Resource));
+			list.Add(CraftResources.GetName(m_Resource));
         }
 
         public virtual int OnCraft(int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, ITool tool, CraftItem craftItem, int resHue)

@@ -35,7 +35,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		{
 			BaseCreature check = (BaseCreature)m_Table[Caster];
 
-			if (check != null && !check.Deleted)
+			if (check != null && check.Controlled)
 			{
 				Caster.SendLocalizedMessage(1061605); // You already have a familiar.
 				return false;

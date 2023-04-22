@@ -75,9 +75,9 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			FinishSequence();
 		}
 
-		public static int GetValue(Mobile m)
+		public static double GetValue(Mobile m)
 		{
-			return m_Table.ContainsKey(m) ? (int)m_Table[m] : 0;
+			return m_Table.ContainsKey(m) ? (double)m_Table[m] : 0.0;
 		}
 
 

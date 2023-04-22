@@ -33,6 +33,8 @@ using Server.Poker; // Poker edit
 using RankDefinition = Server.Guilds.RankDefinition;
 using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom;
+
 #endregion
 
 namespace Server.Mobiles
@@ -6165,7 +6167,7 @@ namespace Server.Mobiles
                     continue;
                 }
 
-                if ((Followers + pet.ControlSlots) <= FollowersMax)
+                if ((Followers + pet.ControlSlots) <= FollowersMax && CustomUtility.GetFollowerCount(this) < 4)
                 {
                     pet.SetControlMaster(this);
 

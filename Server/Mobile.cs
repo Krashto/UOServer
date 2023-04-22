@@ -947,7 +947,7 @@ namespace Server
 
 		public static int MinPlayerResistance { get => m_MinPlayerResistance; set => m_MinPlayerResistance = value; }
 
-		private static int m_MaxPlayerResistance = 140;
+		private static int m_MaxPlayerResistance = 200;
 
 		public static int MaxPlayerResistance { get => m_MaxPlayerResistance; set => m_MaxPlayerResistance = value; }
 

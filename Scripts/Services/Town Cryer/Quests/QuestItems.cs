@@ -382,7 +382,7 @@ namespace Server.Engines.Quests
                     {
                         if (item.Locked && from.InRange(chest.GetWorldLocation(), 1))
                         {
-                            from.CheckTargetSkill(SkillName.Lockpicking, item, 0, 100);
+                            from.CheckTargetSkill(SkillName.Snooping, item, 0, 100);
 
                             // Success! Pick the lock!
                             from.PrivateOverheadMessage(MessageType.Regular, 1154, 1158252, from.NetState); // *Your recent study of Treasure Hunting helps you pick the lock...*

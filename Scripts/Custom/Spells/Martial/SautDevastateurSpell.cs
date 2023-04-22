@@ -71,7 +71,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				Point3D pnt = new Point3D(Caster.Location);
 
-				TimeSpan duration = TimeSpan.FromSeconds((15 + (Caster.Skills.Magery.Fixed / 5)) / 4);
+				TimeSpan duration = GetDurationForSpell(5, 0.5);
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Saut devastateur", AptitudeColor.Martial, SpellEffectType.Move);
 

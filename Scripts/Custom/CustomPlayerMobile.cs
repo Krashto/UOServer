@@ -169,7 +169,7 @@ namespace Server.Mobiles
 		public int Salaire { get { return m_Salaire; } set { m_Salaire = value; } }
 
 		[CommandProperty(AccessLevel.GameMaster)]
-		public override int FollowersMax => 1 + Capacites[Capacite.Compagnon];
+		public override int FollowersMax => 2 + Capacites[Capacite.Compagnon];
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public Container Corps { get { return m_Corps; } set { m_Corps = value; } }
@@ -731,9 +731,7 @@ namespace Server.Mobiles
 		public override int GetMinResistance(ResistanceType type)
 		{
 			if (type == ResistanceType.Physical)
-			{
 				return MinPlayerResistance;
-			}
 
 			int magicResist = (int)Skills[SkillName.MagicResist].Value;
 			int min = (int)(magicResist * 0.2);
@@ -758,7 +756,7 @@ namespace Server.Mobiles
 
 		public bool CanIncreaseStat(StatType stats, int value)
 		{
-			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value > 525)
+			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value > Attributs.MaxStat)
 				return false;
 
 			switch (stats)

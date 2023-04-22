@@ -1,5 +1,4 @@
 using System;
-using System.Linq;
 using Server.Mobiles;
 
 namespace Server
@@ -8,6 +7,10 @@ namespace Server
     {
 		private CustomPlayerMobile m_Owner;
 		public int[] Values = new int[Enum.GetValues(typeof(Attribut)).Length];
+
+		public static int MaxStats = 500;
+		public static int MinStat = 25;
+		public static int MaxStat = 125;
 
 		#region Props
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -99,7 +102,7 @@ namespace Server
 
 		public bool CanIncreaseStat(Attribut attr, int value)
 		{
-			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] + value > 525)
+			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] + value > MaxStats)
 				return false;
 
 			return m_Owner.Attributs[attr] + value <= 125;

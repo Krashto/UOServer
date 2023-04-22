@@ -6,6 +6,7 @@ using System.Text;
 using Server.Gumps;
 using Server.Multis;
 using System.Collections.Generic;
+using Server.Custom.Items.Spells;
 
 namespace Server.Custom.Weapons
 {
@@ -64,8 +65,10 @@ namespace Server.Custom.Weapons
 		{
 			double baseDamage = 1;
 
-			if (weapon is Fists)
+			if (weapon is BaseTrainingWand)
 				baseDamage = 1;
+			else if (weapon is Fists)
+				baseDamage = 10;
 			else if (weapon is BaseRanged)
 				baseDamage = 28;
 			else if (weapon.Layer == Layer.OneHanded)

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Items;
 using System.Reflection;
+using Server.Mobiles;
 
 namespace Server.Custom
 {
@@ -258,6 +259,14 @@ namespace Server.Custom
 			}
 
 			return amount <= 0;
+		}
+
+		internal static int GetFollowerCount(Mobile caster)
+		{
+			if (caster == null || !(caster is CustomPlayerMobile pm))
+				return 0;
+
+			return pm.AllFollowers.Count;
 		}
 	}
 }

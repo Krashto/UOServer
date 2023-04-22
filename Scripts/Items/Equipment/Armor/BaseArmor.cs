@@ -984,7 +984,7 @@ namespace Server.Items
 				case AMT.Bone:		resist += 3; break;
 				case AMT.Ringmail:	resist += 4; break;
 				case AMT.Chainmail: resist += 5; break;
-				case AMT.Plate:		resist += 7; break;
+				case AMT.Plate:		resist += 6; break;
 			}
 
 			if (Parent is CustomPlayerMobile)

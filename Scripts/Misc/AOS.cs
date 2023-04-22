@@ -9,7 +9,6 @@ using Server.Misc;
 using Server.Mobiles;
 using Server.Services.Virtues;
 using Server.SkillHandlers;
-using Server.Spells;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -152,14 +151,14 @@ namespace Server
 
             if (!ignoreArmor)
             {
-                int physDamage = damage * phys * (200 - damageable.PhysicalResistance);
-                int fireDamage = damage * fire * (200 - damageable.FireResistance);
-                int coldDamage = damage * cold * (200 - damageable.ColdResistance);
-                int poisonDamage = damage * pois * (200 - damageable.PoisonResistance);
-                int energyDamage = damage * nrgy * (200 - damageable.EnergyResistance);
+                int physDamage = damage * phys * (300 - damageable.PhysicalResistance);
+                int fireDamage = damage * fire * (300 - damageable.FireResistance);
+                int coldDamage = damage * cold * (300 - damageable.ColdResistance);
+                int poisonDamage = damage * pois * (300 - damageable.PoisonResistance);
+                int energyDamage = damage * nrgy * (300 - damageable.EnergyResistance);
 
                 totalDamage = physDamage + fireDamage + coldDamage + poisonDamage + energyDamage;
-                totalDamage /= 40000;
+                totalDamage /= 30000;
 
                 totalDamage += damage * direct / 100;
 
@@ -169,18 +168,16 @@ namespace Server
 
 					int random = Utility.Random(5);
 
-
 					if (random < 1)
 					{
-							quiver.HitPoints--;
+						quiver.HitPoints--;
 
-							if (quiver.Deleted)
-							{
-								quiver = null;
-							}
+						if (quiver.Deleted)
+						{
+							quiver = null;
+						}
 					}
 				}
-                   
 
                 if (m != null)
                     BaseFishPie.ScaleDamage(from, m, ref totalDamage, phys, fire, cold, pois, nrgy, direct);
@@ -425,7 +422,6 @@ namespace Server
 			}
 
 			totalDamage = m.Damage(totalDamage, from, true, false);
-			
 
             ExplodingTarPotion.RemoveEffects(m);
 

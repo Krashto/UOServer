@@ -54,6 +54,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				Effects.SendMovingParticles(from, to, 0x1B72, 1, 0, false, false, 33, 3, 9501, 1, 0, EffectLayer.Head, 0x100);
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Dévotion", duration, AptitudeColor.Defenseur);
+
+				Caster.Delta(MobileDelta.Hits);
 			}
 
 			FinishSequence();
@@ -80,6 +82,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m.Delta(MobileDelta.Hits);
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Dévotion", AptitudeColor.Defenseur, SpellSequenceType.End);
 			}

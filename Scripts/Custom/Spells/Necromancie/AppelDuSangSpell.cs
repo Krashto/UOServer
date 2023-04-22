@@ -30,7 +30,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			if (!base.CheckCast())
 				return false;
 
-			if (Caster.Followers + 4 > Caster.FollowersMax)
+			if (Caster.Followers + 4 > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
 			{
 				Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 				return false;

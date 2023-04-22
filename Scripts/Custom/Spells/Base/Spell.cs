@@ -8,8 +8,6 @@ using Server.Spells.OldSpells;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
-using Server.Custom.Capacites;
-using Server.Custom.Classes;
 using System.Linq;
 using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Custom.Spells.NewSpells.Musique;
@@ -628,19 +626,14 @@ namespace Server.Spells
         {
         }
 
-		private const double ChanceOffset = 20.0, ChanceLength = 100.0 / 9.0;
+		private const double ChanceOffset = 10.0;
 
 		public virtual void GetCastSkills( out double min, out double max )
 		{
-			int circle = (int)m_Info.Circle;
-
-			if ( m_Scroll != null )
-				circle -= 2;
-
-			double avg = ChanceLength * circle;
+			var avg = RequiredAptitudeValue * 10;
 
 			min = avg - ChanceOffset;
-            max = avg + ChanceOffset;
+            max = avg;
 		}
 
 		public virtual bool CheckFizzle()

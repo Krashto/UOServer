@@ -36,14 +36,14 @@ namespace Server.Gumps
 				}
 
 				AddLabel(x + 30 + column * columnSpace, y + lineSpace * line, 2101, skill.Name);
-				if (skill.Base > 5)
+				if (skill.Base >= 5)
 					AddButton(x + 165 + column * columnSpace, y + lineSpace * line + 2, 5603, 5607, 300 + skill.SkillID, GumpButtonType.Reply, 0);
 				if (skill.Base > 0)
 					AddButton(x + 185 + column * columnSpace, y + lineSpace * line + 2, 5603, 5607, 100 + skill.SkillID, GumpButtonType.Reply, 0);
 				AddLabel(x + 210 + column * columnSpace, y + lineSpace * line, 2101, skill.Base.ToString());
 				if (skill.Base < 50 && m_From.SkillsTotal < 1500) //En dixième de pourcent
 					AddButton(x + 235 + column * columnSpace, y + lineSpace * line + 2, 5601, 5605, 200 + skill.SkillID, GumpButtonType.Reply, 0);
-				if (skill.Base < 45 && m_From.SkillsTotal < 1500) //En dixième de pourcent
+				if (skill.Base <= 45 && m_From.SkillsTotal < 1500) //En dixième de pourcent
 					AddButton(x + 260 + column * columnSpace, y + lineSpace * line + 2, 5601, 5605, 400 + skill.SkillID, GumpButtonType.Reply, 0);
 				line++;
 				count++;
@@ -69,13 +69,13 @@ namespace Server.Gumps
 			}
 			else if (info.ButtonID >= 300 && info.ButtonID < 400)
 			{
-				if (m_From.Skills[info.ButtonID - 300].Base > 5)
+				if (m_From.Skills[info.ButtonID - 300].Base >= 5)
 					m_From.Skills[info.ButtonID - 300].Base -= 5;
 				m_From.SendGump(new CreationSkills(m_From, m_Creation));
 			}
 			else if (info.ButtonID >= 400 && info.ButtonID < 500)
 			{
-				if (m_From.Skills[info.ButtonID - 400].Base < 45 && m_From.SkillsTotal < 1500) //En dixième de pourcent
+				if (m_From.Skills[info.ButtonID - 400].Base <= 45 && m_From.SkillsTotal < 1500) //En dixième de pourcent
 					m_From.Skills[info.ButtonID - 400].Base += 5;
 				m_From.SendGump(new CreationSkills(m_From, m_Creation));
 			}

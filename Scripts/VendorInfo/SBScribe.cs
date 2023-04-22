@@ -30,24 +30,22 @@ namespace Server.Mobiles
 				Add(new GenericBuyInfo(typeof(BrownBook), 15, 10, 0xFEF, 0));
                 Add(new GenericBuyInfo(typeof(TanBook), 15, 10, 0xFF0, 0));
                 Add(new GenericBuyInfo(typeof(BlueBook), 15, 10, 0xFF2, 0));
-
-              
-                    
-                }
+                Add(new GenericBuyInfo(typeof(LivreVierge), 250, 10, 0xFF2, 0));
             }
         }
+    }
 
-        public class InternalSellInfo : GenericSellInfo
+    public class InternalSellInfo : GenericSellInfo
+    {
+        public InternalSellInfo()
         {
-            public InternalSellInfo()
-            {
-                Add(typeof(ScribesPen), 1);
-                Add(typeof(BrownBook), 2);
-                Add(typeof(TanBook), 2);
+            Add(typeof(ScribesPen), 1);
+            Add(typeof(BrownBook), 2);
+            Add(typeof(TanBook), 2);
 			Add(typeof(BlueBook), 2);
-                Add(typeof(BlankScroll), 1);
-            }
+            Add(typeof(BlankScroll), 1);
         }
+    }
 }
 
 

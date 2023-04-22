@@ -417,8 +417,7 @@ namespace Server.Items
 			if ((prop = m_AosAttributes.SpellChanneling) != 0)
 				list.Add(1060482); // spell channeling	
 
-			if (!CraftResources.IsStandard(m_Resource))
-				list.Add(CraftResources.GetName(m_Resource));
+			list.Add(CraftResources.GetName(m_Resource));
 
 			if ((prop = (GetLuckBonus() + m_AosAttributes.Luck)) != 0)
 				list.Add(1060436, prop.ToString()); // luck ~1_val~

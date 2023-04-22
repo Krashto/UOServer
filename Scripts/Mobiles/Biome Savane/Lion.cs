@@ -3,7 +3,7 @@ namespace Server.Mobiles
     [CorpseName("Le corps d'un Lion")]
     public class Lion : BaseCreature
     {
-        public override double HealChance => .167;
+        public override double HealChance => 0.167;
 
         [Constructable]
         public Lion()
@@ -34,15 +34,13 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 79.3, 94.0);
 			SetSkill(SkillName.Wrestling, 79.3, 94.0);
 
-		//	Fame = 11000;
-        //    Karma = -11000;
-
             Tamable = true;
             ControlSlots = 2;
             MinTameSkill = 60.1;
 
             SetMagicalAbility(MagicalAbility.Piercing);
         }
+
 		public override int Level => 6;
 		public override Biome Biome => Biome.Savane;
 		public override int GetIdleSound() { return 0x673; }

@@ -1,6 +1,8 @@
+using Server.Custom;
 using Server.Gumps;
 using Server.Items;
 using Server.Misc;
+using Server.Multis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -1577,8 +1579,8 @@ namespace Server.Mobiles
                         Creature.Aggressed.Count > 0 || Creature.Combatant != null)
                     {
                         User.SendLocalizedMessage(1156876); // Since you have been in combat recently you may not use this feature.
-                    }
-                    else if (!profile.HasIncreasedControlSlot && User.Followers >= User.FollowersMax)
+					}
+                    else if (!profile.HasIncreasedControlSlot && (User.Followers >= User.FollowersMax || CustomUtility.GetFollowerCount(User) >= 4))
                     {
                         User.SendLocalizedMessage(1157498); // You do not have the available pet slots to train this pet. Please free up pet slots and try again.
                     }

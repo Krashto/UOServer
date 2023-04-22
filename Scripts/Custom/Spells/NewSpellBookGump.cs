@@ -21,6 +21,7 @@ using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Custom.Spells.NewSpells.Roublardise;
 using Server.Custom.Spells.NewSpells.Totemique;
+using Server.Custom.Spells.NewSpells.Hydromancie;
 
 namespace Server.Gumps
 {
@@ -115,16 +116,16 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(MurDeLumiereSpell), "Permet de lancer un mur de paralysie."),
 			new SpellBookEntry( typeof(LumiereSacreeSpell), "Endommage les ennemis et soigne les alliés autour de votre cible."),
 
-			new SpellBookEntry( typeof(MainCicatrisanteSpell), "Augmente votre résistance au froid."),
-			new SpellBookEntry( typeof(RemedeSpell), "Procure une regénération de points de vie à votre cible."),
-			new SpellBookEntry( typeof(MurDePierreSpell), "Permet de se téléporter sur un allié et lui appliquer le sort Restauration."),
-			new SpellBookEntry( typeof(RayonCelesteSpell), "Entoure une cible de mur de glace, l'empêchant de bouger."),
-			new SpellBookEntry( typeof(LumiereSacreeSpell),"Augmente la résistance au froid de vous et vos alliés."),
-			new SpellBookEntry( typeof(FrayeurSpell), "La cible est assaillit de pieux de glace qui explosent autour d'elle."),
-			new SpellBookEntry( typeof(FerveurDivineSpell), "Si la cible est affectée par le sort 'Blizzard' ou 'Cage de glace', ses points de vie sont réduits à la moitié de son maximum."),
-			new SpellBookEntry( typeof(InquisitionSpell), "Applique le sort Restauration à vous et aux alliés autour de vous."),
-			new SpellBookEntry( typeof(MurDeLumiereSpell), "Vous cloue les pieds au sol, mais vos sorts de soin sont améliorés."),
-			new SpellBookEntry(	typeof(DonDeLaVieSpell), "Crée une zone de blizzard, empêchant les ennemis de courir et leur fait perdre de la stamina."),
+			new SpellBookEntry( typeof(ArmureDeGlaceSpell), "Augmente votre résistance au froid."),
+			new SpellBookEntry( typeof(RestaurationSpell), "Procure une regénération de points de vie à votre cible."),
+			new SpellBookEntry( typeof(SoinPreventifSpell), "Permet de se téléporter sur un allié et lui appliquer le sort Restauration."),
+			new SpellBookEntry( typeof(CageDeGlaceSpell), "Entoure une cible de mur de glace, l'empêchant de bouger."),
+			new SpellBookEntry( typeof(AuraCryogeniseeSpell), "Augmente la résistance au froid de vous et vos alliés."),
+			new SpellBookEntry( typeof(PieuxDeGlaceSpell), "La cible est assaillit de pieux de glace qui explosent autour d'elle."),
+			new SpellBookEntry( typeof(CerveauGeleSpell), "Si la cible est affectée par le sort 'Blizzard' ou 'Cage de glace', ses points de vie sont réduits à la moitié de son maximum."),
+			new SpellBookEntry( typeof(AuraRefrigeranteSpell), "Applique le sort Restauration à vous et aux alliés autour de vous."),
+			new SpellBookEntry( typeof(AvatarDuFroidSpell), "Vous cloue les pieds au sol, mais vos sorts de soin sont améliorés."),
+			new SpellBookEntry(	typeof(BlizzardSpell), "Crée une zone de blizzard, empêchant les ennemis de courir et leur fait perdre de la stamina."),
 
 			new SpellBookEntry( typeof(SecondSouffleSpell), "Augmente les points de vie."),
 			new SpellBookEntry( typeof(ProvocationSpell), "La cible est attirée vers vous."),

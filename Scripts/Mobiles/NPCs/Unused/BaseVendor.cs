@@ -2148,9 +2148,7 @@ namespace Server.Mobiles
                         int amount = resp.Amount;
 
                         if (amount > resp.Item.Amount)
-                        {
                             amount = resp.Item.Amount;
-                        }
 
                         if (ssi.IsResellable(resp.Item))
                         {
@@ -2198,29 +2196,18 @@ namespace Server.Mobiles
                         else
                         {
                             if (amount < resp.Item.Amount)
-                            {
                                 resp.Item.Amount -= amount;
-                            }
                             else
-                            {
                                 resp.Item.Delete();
-                            }
                         }
 
                         int singlePrice = ssi.GetSellPriceFor(resp.Item, this);
                         GiveGold += singlePrice * amount;
 
-						Server.Custom.CustomPersistence.AddSellItem(resp.Item.GetType().ToString(), singlePrice * amount);
+						Custom.CustomPersistence.AddSellItem(resp.Item.GetType().ToString(), singlePrice * amount);
 
 						if (seller is CustomPlayerMobile cp )
-						{
-
-
-
-							Server.Custom.CustomPersistence.SellingLog(cp, m_Contrebandier, resp.Item.GetType().ToString(), amount, singlePrice);
-
-						}
-
+							Custom.CustomPersistence.SellingLog(cp, m_Contrebandier, resp.Item.GetType().ToString(), amount, singlePrice);
 
 						EventSink.InvokeValidVendorSell(new ValidVendorSellEventArgs(seller, this, resp.Item, singlePrice));
 
@@ -2232,51 +2219,15 @@ namespace Server.Mobiles
             if (GiveGold > 0)
             {
 
-				if (seller is CustomPlayerMobile && !m_Contrebandier)
+				while (GiveGold > 60000)
 				{
-
-					CustomPlayerMobile pSeller = (CustomPlayerMobile)seller;
-
-
-					int taxespaye = GiveGold - pSeller.GainGold(GiveGold);
-
-					switch (Utility.Random(4))
-					{
-						case 0:
-							{
-								Say("Merci de votre contribution de " + taxespaye.ToString() + " à l'empire.");
-								break;
-							}
-						case 1:
-							{
-								Say("Malheureusement, je dois retenir " + taxespaye.ToString() + " pour financer l'empire.");
-								break;
-							}
-						case 2:
-							{
-								Say("Vous avez payé " + taxespaye.ToString() + " pour aider à défendre notre glorieur et puissant empire.");
-								break;
-							}
-						default:
-							{
-								Say("Vous avez payé " + taxespaye.ToString() + " en taxe à l'empire.");
-								break;
-							}
-					}
-
+					seller.AddToBackpack(new Gold(60000));
+					GiveGold -= 60000;
 				}
-				else
-				{
-					while (GiveGold > 60000)
-					{
-						seller.AddToBackpack(new Gold(60000));
-						GiveGold -= 60000;
-					}
 
-					seller.AddToBackpack(new Gold(GiveGold));
+				seller.AddToBackpack(new Gold(GiveGold));
 
-					seller.PlaySound(0x0037); //Gold dropping sound
-				}
+				seller.PlaySound(0x0037); //Gold dropping sound
 
 
                 if (SupportsBulkOrders(seller))
@@ -2284,13 +2235,9 @@ namespace Server.Mobiles
                     Item bulkOrder = CreateBulkOrder(seller, false);
 
                     if (bulkOrder is LargeBOD)
-                    {
                         seller.SendGump(new LargeBODAcceptGump(seller, (LargeBOD)bulkOrder));
-                    }
                     else if (bulkOrder is SmallBOD)
-                    {
                         seller.SendGump(new SmallBODAcceptGump(seller, (SmallBOD)bulkOrder));
-                    }
                 }
             }
 

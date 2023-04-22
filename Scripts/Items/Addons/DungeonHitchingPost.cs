@@ -1,6 +1,8 @@
 using Server.ContextMenus;
+using Server.Custom;
 using Server.Gumps;
 using Server.Mobiles;
+using Server.Multis;
 using Server.Network;
 using Server.Targeting;
 using System.Collections.Generic;
@@ -214,10 +216,10 @@ namespace Server.Items
                     from.Stabled.Remove(pet);
                 }
                 else
-                {
-                    ++stabled;
+				{
+					++stabled;
 
-                    if ((from.Followers + pet.ControlSlots) <= from.FollowersMax)
+                    if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4)
                     {
                         pet.SetControlMaster(from);
 
@@ -291,7 +293,7 @@ namespace Server.Items
             if (pet == null || pet.Deleted || from.Map != Map || !from.InRange(this, 14) || !from.Stabled.Contains(pet) || !from.CheckAlive())
                 return;
 
-            if ((from.Followers + pet.ControlSlots) <= from.FollowersMax)
+            if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4)
             {
                 pet.SetControlMaster(from);
 

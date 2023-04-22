@@ -81,6 +81,22 @@ namespace Server.Items
             {
                 CustomPlayerMobile pm = (CustomPlayerMobile)from;
 
+				if (this is LivreClasseAucune)
+				{
+					pm.Classe = Classe.Aucune;
+
+					pm.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
+					pm.PlaySound(0x28E);
+
+					pm.Aptitudes.Reset();
+
+					Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+
+					pm.SendMessage("Vous oubliez votre classe.");
+
+					return;
+				}
+
                 ClasseInfo oldinfo = Classes.GetInfos(pm.Classe);
                 ClasseInfo newinfo = Classes.GetInfos(m_Classe);
 

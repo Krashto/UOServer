@@ -74,7 +74,7 @@ namespace Server.Gumps
 				}
 
 				AddLabel(x + 30 + column * columnSpace, y + lineSpace * line, 2101, skill.Name);
-				if (skill.Base > 5)
+				if (skill.Base >= 5)
 					AddButton(x + 165 + column * columnSpace, y + lineSpace * line + 2, 5603, 5607, 300 + skill.SkillID, GumpButtonType.Reply, 0);
 				if (skill.Base > 0)
 					AddButton(x + 185 + column * columnSpace, y + lineSpace * line + 2, 5603, 5607, 100 + skill.SkillID, GumpButtonType.Reply, 0);
@@ -134,7 +134,7 @@ namespace Server.Gumps
 			else if (info.ButtonID >= 300 && info.ButtonID < 400)
 			{
 				var skill = m_From.Skills[info.ButtonID - 300];
-				if (skill.Base > 5)
+				if (skill.Base >= 5)
 					skill.Base -= 5;
 				m_From.SendGump(new TestStoneGump(m_From));
 			}

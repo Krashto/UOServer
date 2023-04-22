@@ -65,17 +65,9 @@ namespace Server.Items
         {
             base.GetProperties(list);
 
-            if (!CraftResources.IsStandard(m_Resource))
-            {
-                int num = CraftResources.GetLocalizationNumber(m_Resource);
-
-                if (num > 0)
-                    list.Add(num);
-                else
-                    list.Add(CraftResources.GetName(m_Resource));
-            }
-        }
-    }
+			list.Add(CraftResources.GetName(m_Resource));
+		}
+	}
 
     public class Granite : BaseGranite
     {

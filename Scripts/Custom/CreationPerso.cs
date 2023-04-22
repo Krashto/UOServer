@@ -29,10 +29,6 @@ namespace Server
 		private int m_Endur = 25;
 		private int m_Sag = 25;
 
-		private int m_MaxStats = 525;
-		private int m_MinStat = 25;
-		private int m_MaxStat = 125;
-
 		private CustomPlayerMobile m_Player;
 
 		private Reroll m_Reroll;
@@ -57,12 +53,12 @@ namespace Server
 			get => m_Str;
 			set
 			{
-				if (value + m_Dex + m_Int + m_Const + m_Endur + m_Sag > m_MaxStats)
-					m_Str = m_MaxStats - (m_Dex + m_Int + m_Const + m_Endur + m_Sag);
-				else if (value < m_MinStat)
-					m_Str = m_MinStat;
-				else if (value > m_MaxStat)
-					m_Str = m_MaxStat;
+				if (value + m_Dex + m_Int + m_Const + m_Endur + m_Sag > Attributs.MaxStats)
+					m_Str = Attributs.MaxStats - (m_Dex + m_Int + m_Const + m_Endur + m_Sag);
+				else if (value < Attributs.MinStat)
+					m_Str = Attributs.MinStat;
+				else if (value > Attributs.MaxStat)
+					m_Str = Attributs.MaxStat;
 				else
 					m_Str = value;
 			}
@@ -73,12 +69,12 @@ namespace Server
 			get => m_Dex;
 			set
 			{
-				if (value + m_Str + m_Int + m_Const + m_Endur + m_Sag > m_MaxStats)
-					m_Dex = m_MaxStats - (m_Str + m_Int + m_Const + m_Endur + m_Sag);
-				else if (value < m_MinStat)
-					m_Dex = m_MinStat;
-				else if (value > m_MaxStat)
-					m_Dex = m_MaxStat;
+				if (value + m_Str + m_Int + m_Const + m_Endur + m_Sag > Attributs.MaxStats)
+					m_Dex = Attributs.MaxStats - (m_Str + m_Int + m_Const + m_Endur + m_Sag);
+				else if (value < Attributs.MinStat)
+					m_Dex = Attributs.MinStat;
+				else if (value > Attributs.MaxStat)
+					m_Dex = Attributs.MaxStat;
 				else
 					m_Dex = value;
 			}
@@ -89,12 +85,12 @@ namespace Server
 			get => m_Int;
 			set
 			{
-				if (value + m_Str + m_Dex + m_Const + m_Endur + m_Sag > m_MaxStats)
-					m_Int = m_MaxStats - (m_Str + m_Dex + m_Const + m_Endur + m_Sag);
-				else if (value < m_MinStat)
-					m_Int = m_MinStat;
-				else if (value > m_MaxStat)
-					m_Int = m_MaxStat;
+				if (value + m_Str + m_Dex + m_Const + m_Endur + m_Sag > Attributs.MaxStats)
+					m_Int = Attributs.MaxStats - (m_Str + m_Dex + m_Const + m_Endur + m_Sag);
+				else if (value < Attributs.MinStat)
+					m_Int = Attributs.MinStat;
+				else if (value > Attributs.MaxStat)
+					m_Int = Attributs.MaxStat;
 				else
 					m_Int = value;
 			}
@@ -105,12 +101,12 @@ namespace Server
 			get => m_Const;
 			set
 			{
-				if (value + m_Str + m_Dex + m_Int + m_Endur + m_Sag > m_MaxStats)
-					m_Const = m_MaxStats - (m_Str + m_Dex + m_Int + m_Endur + m_Sag);
-				else if (value < m_MinStat)
-					m_Const = m_MinStat;
-				else if (value > m_MaxStat)
-					m_Const = m_MaxStat;
+				if (value + m_Str + m_Dex + m_Int + m_Endur + m_Sag > Attributs.MaxStats)
+					m_Const = Attributs.MaxStats - (m_Str + m_Dex + m_Int + m_Endur + m_Sag);
+				else if (value < Attributs.MinStat)
+					m_Const = Attributs.MinStat;
+				else if (value > Attributs.MaxStat)
+					m_Const = Attributs.MaxStat;
 				else
 					m_Const = value;
 			}
@@ -121,12 +117,12 @@ namespace Server
 			get => m_Endur;
 			set
 			{
-				if (value + m_Str + m_Dex + m_Int + m_Const + m_Sag > m_MaxStats)
-					m_Endur = m_MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Sag);
-				else if (value < m_MinStat)
-					m_Endur = m_MinStat;
-				else if (value > m_MaxStat)
-					m_Endur = m_MaxStat;
+				if (value + m_Str + m_Dex + m_Int + m_Const + m_Sag > Attributs.MaxStats)
+					m_Endur = Attributs.MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Sag);
+				else if (value < Attributs.MinStat)
+					m_Endur = Attributs.MinStat;
+				else if (value > Attributs.MaxStat)
+					m_Endur = Attributs.MaxStat;
 				else
 					m_Endur = value;
 			}
@@ -137,12 +133,12 @@ namespace Server
 			get => m_Sag;
 			set
 			{
-				if (value + m_Str + m_Dex + m_Int + m_Const + m_Endur > m_MaxStats)
-					m_Sag = m_MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Endur);
-				else if (value < m_MinStat)
-					m_Sag = m_MinStat;
-				else if (value > m_MaxStat)
-					m_Sag = m_MaxStat;
+				if (value + m_Str + m_Dex + m_Int + m_Const + m_Endur > Attributs.MaxStats)
+					m_Sag = Attributs.MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Endur);
+				else if (value < Attributs.MinStat)
+					m_Sag = Attributs.MinStat;
+				else if (value > Attributs.MaxStat)
+					m_Sag = Attributs.MaxStat;
 				else
 					m_Sag = value;
 			}
@@ -211,7 +207,7 @@ namespace Server
 
 		public bool CheckStats()
 		{
-			if (m_Str + m_Dex + m_Int + m_Const + m_Endur + m_Sag == m_MaxStats)
+			if (m_Str + m_Dex + m_Int + m_Const + m_Endur + m_Sag == Attributs.MaxStats)
 				return true;
 
 			return false;
@@ -263,7 +259,7 @@ namespace Server
 
 		public int GetPointsRestants()
 		{
-			return m_MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Endur + m_Sag);
+			return Attributs.MaxStats - (m_Str + m_Dex + m_Int + m_Const + m_Endur + m_Sag);
 		}
 
 		public void Validate()

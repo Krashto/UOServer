@@ -68,7 +68,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 						{
 							bc.ControlSlots = ReanimationGump.m_Entries[m_Summon].ControlSlot;
 
-							if (Caster.Followers + bc.ControlSlots > Caster.FollowersMax)
+							if (Caster.Followers + bc.ControlSlots > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
 								Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 							else if (m_Corpse != null && m_Corpse.InBones)
 								Caster.SendMessage("Vous ne pouvez animer la mort à partir de ce corps.");

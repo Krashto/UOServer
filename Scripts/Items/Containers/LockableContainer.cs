@@ -420,24 +420,15 @@ namespace Server.Items
         public override void AddCraftedProperties(ObjectPropertyList list)
         {
             if (m_PlayerConstructed && m_Crafter != null)
-            {
                 list.Add(1050043, m_Crafter.Name); // crafted by ~1_NAME~
-            }
 
             if (m_Quality == ItemQuality.Exceptional)
-            {
                 list.Add(1060636); // Exceptional
-            }
 
-            if (m_Resource > CraftResource.Iron && !CraftResources.IsStandard(m_Resource))
-            {
-                list.Add(1114057, "#{0}", CraftResources.GetLocalizationNumber(m_Resource)); // ~1_val~
-            }
+				list.Add(CraftResources.GetName(m_Resource));
 
             if (m_IsShipwreckedItem)
-            {
                 list.Add(1041645); // recovered from a shipwreck
-            }
         }
 
         #region ICraftable Members

@@ -126,7 +126,7 @@ namespace Server.Items
                 return;
             }
 
-            if (from.Skills[SkillName.Lockpicking].Value < lockpickable.RequiredSkill - SkillBonus)
+            if (from.Skills[SkillName.Snooping].Value < lockpickable.RequiredSkill - SkillBonus)
             {
                 /*
                 // Do some training to gain skills
@@ -145,7 +145,7 @@ namespace Server.Items
                 maxlevel -= SkillBonus; //regulars subtract the bonus from the max level
             }
 
-            if (this is MasterSkeletonKey || from.CheckTargetSkill(SkillName.Lockpicking, lockpickable, minLevel, maxlevel))
+            if (this is MasterSkeletonKey || from.CheckTargetSkill(SkillName.Snooping, lockpickable, minLevel, maxlevel))
             {
                 // Success! Pick the lock!
                 OnUse();

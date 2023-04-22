@@ -11,7 +11,6 @@ namespace Server.Mobiles
         {
             SetSkill(SkillName.Tracking, 75.0, 98.0);
             SetSkill(SkillName.Hiding, 65.0, 88.0);
-            SetSkill(SkillName.Lockpicking, 85.0, 100.0);
             SetSkill(SkillName.Snooping, 90.0, 100.0);
             SetSkill(SkillName.Poisoning, 60.0, 83.0);
             SetSkill(SkillName.Stealing, 90.0, 100.0);

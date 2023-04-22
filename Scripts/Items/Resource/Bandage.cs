@@ -157,8 +157,6 @@ namespace Server.Items
 							{
 								NegativeAttributes.OnCombatAction(from);
 								m_Bandage.Consume();
-							
-
 							}
 						}
 					}
@@ -208,16 +206,12 @@ namespace Server.Items
         private int m_HealingBonus;
 		private bool m_Corpse;
 
-
 		public Mobile Healer => m_Healer;
         public Mobile Patient => m_Patient;
         public int Slips { get { return m_Slips; } set { m_Slips = value; } }
         public int HealedPoisonOrBleed { get { return m_HealedPoisonOrBleed; } set { m_HealedPoisonOrBleed = value; } }
         public Timer Timer => m_Timer;
         public int HealingBonus => m_HealingBonus;
-
-		public bool corpse => m_Corpse;
-
 
 		public void Slip()
         {
@@ -529,8 +523,8 @@ namespace Server.Items
                 {
                     healerNumber = 500969; // You finish applying the bandages.
 
-                    double min = (anatomy / 10.0) + (healing / 7.0) + 4.0;
-                    double max = (anatomy / 8.0) + (healing / 5.0) + 4.0;
+                    double min = (anatomy / 15.0) + (healing / 10.0);
+                    double max = (anatomy / 10.0) + (healing / 7.5);
 
                     double toHeal = min + (Utility.RandomDouble() * (max - min));
 

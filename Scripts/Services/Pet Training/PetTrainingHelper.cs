@@ -1,3 +1,4 @@
+using Server.Custom;
 using Server.Engines.VvV;
 using Server.Items;
 using Server.SkillHandlers;
@@ -1729,7 +1730,7 @@ namespace Server.Mobiles
                             {
                                 m.SendMessage("That cannot be tamed!");
                             }
-                            else if (m.Followers + bc.ControlSlots > m.FollowersMax)
+                            else if (m.Followers + bc.ControlSlots > m.FollowersMax || CustomUtility.GetFollowerCount(m) >= 4)
                             {
                                 m.SendLocalizedMessage(1049611); // You have too many followers to tame that creature.
                                 bc.Delete();

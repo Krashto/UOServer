@@ -510,12 +510,13 @@ namespace Server.Items
         {
             get
             {
-                if (m_NegativeAttributes.Massive > 0)
-                {
-                    return 125;
-                }
+				return 0;
+                //if (m_NegativeAttributes.Massive > 0)
+                //{
+                //    return 125;
+                //}
 
-                return m_StrReq == -1 ? StrengthReq : m_StrReq;
+                //return m_StrReq == -1 ? StrengthReq : m_StrReq;
             }
             set
             {
@@ -1469,12 +1470,12 @@ namespace Server.Items
                 // As per OSI, no negitive effect from the Racial stuffs, ie, 120 parry and '0' bushido with humans
 
                 if (chance < 0) // chance shouldn't go below 0
-                    chance = defender.Player ? 0 : .1;
+                    chance = defender.Player ? 0 : 0.1;
 
 				if (defender is CustomPlayerMobile)
 				{
 					var pm = defender as CustomPlayerMobile;
-					chance += pm.Capacites[Capacite.Bouclier] * 0.05;
+					chance += pm.Capacites[Capacite.Bouclier] * 0.03;
 				}
 
 				if (defender.Player)
@@ -1550,7 +1551,7 @@ namespace Server.Items
 
                     BaseShield shield = defender.FindItemOnLayer(Layer.TwoHanded) as BaseShield;
 
-                    if (shield != null)
+                    if (shield != null && Utility.Random(0, 100) < 30)
                     {
                         shield.OnHit(this, damage);
 
@@ -4165,16 +4166,12 @@ namespace Server.Items
             CraftResourceInfo resInfo = CraftResources.GetInfo(m_Resource);
 
             if (resInfo == null)
-            {
                 return 0;
-            }
 
             CraftAttributeInfo attrInfo = resInfo.AttributeInfo;
 
             if (attrInfo == null)
-            {
                 return 0;
-            }
 
             return attrInfo.WeaponLuck;
         }
@@ -4182,37 +4179,23 @@ namespace Server.Items
         public override void AddCraftedProperties(ObjectPropertyList list)
         {
             if (OwnerName != null)
-            {
                 list.Add(1153213, OwnerName);
-            }
 
             if (m_Crafter != null)
-            {
                 list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
-            }
 
             if (m_Quality == ItemQuality.Exceptional)
-            {
                 list.Add("Exceptionnelle"); // Exceptional
-            }
 			if (m_Quality == ItemQuality.Epic)
-			{
-				list.Add("épique"); // Exceptional
-			}
+				list.Add("Épique"); // Exceptional
 			if (m_Quality == ItemQuality.Legendary)
-			{
 				list.Add("Légendaire"); // Exceptional
-			}
 
 			if (IsImbued)
-            {
                 list.Add(1080418); // (Imbued)
-            }
 
             if (m_Altered)
-            {
                 list.Add(1111880); // Altered
-            }
         }
 
         public override void AddWeightProperty(ObjectPropertyList list)
@@ -4226,9 +4209,7 @@ namespace Server.Items
         public override void AddUsesRemainingProperties(ObjectPropertyList list)
         {
             if (ShowUsesRemaining)
-            {
                 list.Add(1060584, UsesRemaining.ToString()); // uses remaining: ~1_val~
-            }
         }
 
         public override void AddNameProperties(ObjectPropertyList list)
@@ -4960,12 +4941,14 @@ namespace Server.Items
 
             CraftContext context = craftSystem.GetContext(from);
 
-            if (Quality == ItemQuality.Exceptional)
-            {
+			if (Quality == ItemQuality.Legendary)
+				Attributes.WeaponDamage += 100;
+			else if (Quality == ItemQuality.Epic)
+				Attributes.WeaponDamage += 70;
+			else if (Quality == ItemQuality.Exceptional)
                 Attributes.WeaponDamage += 35;
-            }
 
-            if (!craftItem.ForceNonExceptional)
+			if (!craftItem.ForceNonExceptional)
             {
                 if (tool is BaseRunicTool)
                 {
