@@ -5162,8 +5162,12 @@ namespace Server.Mobiles
 
 		public void GenerateGoldLoot()
 		{
-			var min = (int)(20 * Math.Exp(0.25 * Level) - 40);
-			var max = (int)((20 * Math.Exp(0.25 * Level) - 40) * 1.15);
+			var min = (int)(20 * Math.Exp(0.25 * Level) - 20);
+
+			if (min < 1)
+				min = 1;
+
+			var max = (int)(min * 1.15);
 
 			if (m_Paragon)
 			{ 
