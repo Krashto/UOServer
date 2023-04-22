@@ -363,7 +363,7 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(AppelSpirituelScroll), "Toté. - Appel spirituel", 9);
 			AddSpell("Sorts", typeof(MarcheAsuivreScroll), "Toté. - Marche à suivre", 10);
 
-			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Livre de sort", 50.0, 126, typeof(PlainoisLeather), "Cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(NewSpellbook), "Magie/Classes", "Grimoire", 50.0, 126, typeof(PlainoisLeather), "Cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(LivreClasseAucune), "Magie/Classes", "Livre d'oubli de classe", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
 			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 1", 50.0, 100.0, typeof(TreasureMapLevelOnePart), "Morceau de carte niveau 1", 1, "Vous n'avez pas assez de morceau de carte niveau 1");
