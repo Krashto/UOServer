@@ -4,25 +4,25 @@ namespace Server.Items
     {
         [Constructable]
         public GargoyleBook200()
-            : base(0x42B8, 100, true)
+            : base(0x238C, 200, true)
         {
         }
 
         [Constructable]
         public GargoyleBook200(int pageCount, bool writable)
-            : base(0x42B8, pageCount, writable)
+            : base(0x238C, pageCount, writable)
         {
         }
 
         [Constructable]
         public GargoyleBook200(string title, string author, int pageCount, bool writable)
-            : base(0x42B8, title, author, pageCount, writable)
+            : base(0x238C, title, author, pageCount, writable)
         {
         }
 
         // Intended for defined books only
         public GargoyleBook200(bool writable)
-            : base(0x42B8, writable)
+            : base(0x238C, writable)
         {
         }
 
@@ -39,7 +39,7 @@ namespace Server.Items
 
 			if (version < 2)
 			{
-				Pages = new BookPageInfo[100];
+				Pages = new BookPageInfo[200];
 
 				for (int i = 0; i < Pages.Length; ++i)
 					Pages[i] = new BookPageInfo();
