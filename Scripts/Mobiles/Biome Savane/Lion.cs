@@ -1,14 +1,19 @@
 namespace Server.Mobiles
 {
     [CorpseName("Le corps d'un Lion")]
-    public class Lion : BaseCreature
+    public class Lion : BaseMount
     {
-        public override double HealChance => 0.167;
+
+		public Lion() : this("Un Lion")
+		{
+		}
+		public override double HealChance => 0.167;
+
+
 
         [Constructable]
-        public Lion()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
-        {
+		public Lion(string name) : base(name, 786, 0x312, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+		{
             Name = "Un Lion";
             Body = 786;
             Female = true;

@@ -386,103 +386,103 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CookedShrimp), "Poissons et fruits de mer", "Crevette cuite", 50.0, 70.0, typeof(RawShrimp), "Crevette crue", 1, "you need more Raw Shrimp");
 			SetNeedHeat(index, true);
 
-			index = AddCraft(typeof(GreatBarracudaPie), "Poissons et fruits de mer", 1116214, 61.0, 110.0, typeof(GreatBarracudaSteak), 1116298, 1, 1044253);
+			index = AddCraft(typeof(GreatBarracudaPie), "Poissons et fruits de mer", "Pâté de Barracuda", 61.0, 110.0, typeof(GreatBarracudaSteak), 1116298, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116299, 1, 1044253);
 			AddRes(index, typeof(ZoogiFungus), 1029911, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(GiantKoiPie), "Poissons et fruits de mer", 1116216, 61.0, 110.0, typeof(GiantKoiSteak), 1044253, 1, 1044253);
+			index = AddCraft(typeof(GiantKoiPie), "Poissons et fruits de mer", "Pâté de Koi Géant", 61.0, 110.0, typeof(GiantKoiSteak), 1044253, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116299, 1, 1044253);
 			AddRes(index, typeof(WoodenBowlOfPeas), 1025628, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FireFishPie), "Poissons et fruits de mer", 1116217, 55.0, 105.0, typeof(FireFishSteak), 1116307, 1, 1044253);
+			index = AddCraft(typeof(FireFishPie), "Poissons et fruits de mer", "Pâté de Poissonfeu", 55.0, 105.0, typeof(FireFishSteak), 1116307, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Carrot), 1023191, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(StoneCrabPie), "Poissons et fruits de mer", 1116227, 55.0, 105.0, typeof(StoneCrabMeat), 1116317, 1, 1044253);
+			index = AddCraft(typeof(StoneCrabPie), "Poissons et fruits de mer", "Pâté de Crabe", 55.0, 105.0, typeof(StoneCrabMeat), 1116317, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Cabbage), 1023195, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(BlueLobsterPie), "Poissons et fruits de mer", 1116228, 55.0, 105.0, typeof(BlueLobsterMeat), 1116318, 1, 1044253);
+			index = AddCraft(typeof(BlueLobsterPie), "Poissons et fruits de mer", "Pâté de Homard", 55.0, 105.0, typeof(BlueLobsterMeat), 1116318, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Cherry), 1040001, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(ReaperFishPie), "Poissons et fruits de mer", 1116218, 55.0, 105.0, typeof(ReaperFishSteak), 1116308, 1, 1044253);
+			index = AddCraft(typeof(ReaperFishPie), "Poissons et fruits de mer", "Pâté de Poisson Riper", 55.0, 105.0, typeof(ReaperFishSteak), 1116308, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Pumpkin), 1023178, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(CrystalFishPie), "Poissons et fruits de mer", 1116219, 55.0, 105.0, typeof(CrystalFishSteak), 1116309, 1, 1044253);
+			index = AddCraft(typeof(CrystalFishPie), "Poissons et fruits de mer", "Pâté de Poisson Crystalin", 55.0, 105.0, typeof(CrystalFishSteak), 1116309, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Apple), 1022512, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(BullFishPie), "Poissons et fruits de mer", 1116220, 55.0, 105.0, typeof(BullFishSteak), 1116310, 1, 1044253);
+			index = AddCraft(typeof(BullFishPie), "Poissons et fruits de mer", "Pâté de Poisson Bull", 55.0, 105.0, typeof(BullFishSteak), 1116310, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Squash), 1023186, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(SummerDragonfishPie), "Poissons et fruits de mer", 1116221, 55.0, 105.0, typeof(SummerDragonfishSteak), 1116311, 1, 1044253);
+			index = AddCraft(typeof(SummerDragonfishPie), "Poissons et fruits de mer", "Pâté de Summer Dragon", 55.0, 105.0, typeof(SummerDragonfishSteak), 1116311, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Onion), 1023182, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(FairySalmonPie), "Poissons et fruits de mer", 1116222, 55.0, 105.0, typeof(FairySalmonSteak), 1116312, 1, 1044253);
+			index = AddCraft(typeof(FairySalmonPie), "Poissons et fruits de mer", "Pâté de SaumonFée", 55.0, 105.0, typeof(FairySalmonSteak), 1116312, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(EarOfCorn), 1023199, 1, 1044253);
 			
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(LavaFishPie), "Poissons et fruits de mer", 1116223, 55.0, 105.0, typeof(LavaFishSteak), 1116313, 1, 1044253);
+			index = AddCraft(typeof(LavaFishPie), "Poissons et fruits de mer", "Pâté de Poisson Lavasé", 55.0, 105.0, typeof(LavaFishSteak), 1116313, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(CheeseWheel), 1044486, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(AutumnDragonfishPie), "Poissons et fruits de mer", 1116224, 55.0, 105.0, typeof(AutumnDragonfishSteak), 1116314, 1, 1044253);
+			index = AddCraft(typeof(AutumnDragonfishPie), "Poissons et fruits de mer", "Pâté de AutumnDragon", 55.0, 105.0, typeof(AutumnDragonfishSteak), 1116314, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Pear), 1022452, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(SpiderCrabPie), "Poissons et fruits de mer", 1116229, 55.0, 105.0, typeof(SpiderCrabMeat), 1116320, 1, 1044253);
+			index = AddCraft(typeof(SpiderCrabPie), "Poissons et fruits de mer", "Pâté de Crabe araignée", 55.0, 105.0, typeof(SpiderCrabMeat), 1116320, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(Lettuce), 1023184, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(YellowtailBarracudaPie), "Poissons et fruits de mer", 1116098, 55.0, 105.0, typeof(YellowtailBarracudaSteak), 1116301, 1, 1044253);
+			index = AddCraft(typeof(YellowtailBarracudaPie), "Poissons et fruits de mer", "Pâté de YellowTail Barracuda", 55.0, 105.0, typeof(YellowtailBarracudaSteak), 1116301, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(BaseBeverage), 1022503, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(HolyMackerelPie), "Poissons et fruits de mer", 1116225, 55.0, 105.0, typeof(HolyMackerelSteak), 1116315, 1, 1044253);
+			index = AddCraft(typeof(HolyMackerelPie), "Poissons et fruits de mer", "Pâté de HolyMackereau", 55.0, 105.0, typeof(HolyMackerelSteak), 1116315, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(JarHoney), 1022540, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
 
 			SetNeedOven(index, true);
 
-			index = AddCraft(typeof(UnicornFishPie), "Poissons et fruits de mer", 1116226, 55.0, 105.0, typeof(UnicornFishSteak), 1116316, 1, 1044253);
+			index = AddCraft(typeof(UnicornFishPie), "Poissons et fruits de mer", "Pâté de Poisson Licorne", 55.0, 105.0, typeof(UnicornFishSteak), 1116316, 1, 1044253);
 			AddRes(index, typeof(Dough), 1024157, 1, 1044253);
 			AddRes(index, typeof(FreshGinger), 1031235, 1, 1044253);
 			AddRes(index, typeof(BarbecueSauce), 1116338, 1, 1044253);
@@ -873,7 +873,10 @@ namespace Server.Engines.Craft
 			SetNeedOven(index, true);
 			index = AddCraft(typeof(SushiRolls), "Plâts préparés", "Sushi", 80.0, 99.0, typeof(BaseBeverage), 1046458, 1, 1044253);
 			AddRes(index, typeof(RawFishSteak), "Poisson cru", 10, 1044253);
+			
 			index = AddCraft(typeof(SushiPlatter), "Plâts préparés", "Plateau de sushi", 80.0, 99.0, typeof(BaseBeverage), 1046458, 1, 1044253);
+			AddRes(index, typeof(RawFishSteak), "Poisson cru", 10, 1044253);
+
 			index = AddCraft(typeof(MisoSoup), "Plâts préparés", "Soupe Miso", 80.0, 99.0, typeof(RawFishSteak), "Poisson cru", 1, 1044253);
 			AddRes(index, typeof(BaseBeverage), 1046458, 1, 1044253);
 			SetNeedOven(index, true);
