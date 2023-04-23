@@ -1,3 +1,4 @@
+using Server.Custom.Aptitudes;
 using Server.Custom.Capacites;
 using Server.Gumps;
 using Server.Items;
@@ -585,9 +586,13 @@ namespace Server.Engines.Craft
 							var resource = CraftResources.GetFromType(res.ItemType);
 							var level = CraftResources.GetLevel(resource);
 
-							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill) || (pm != null && pm.Capacites[Capacite.Expertise] < level))
+							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill))
+							{
+								m_From.SendGump(new CraftGump(m_From, system, m_Tool, $"Niveau requis de compétence: {res.RequiredSkill}% de {system.MainSkill}"));
+							}
+							else if ((pm != null && pm.Capacites[Capacite.Expertise] < level))
                             {
-                                m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
+                                m_From.SendGump(new CraftGump(m_From, system, m_Tool, $"Niveau requis d'expertise: {level}"));
                             }
                             else
                             {

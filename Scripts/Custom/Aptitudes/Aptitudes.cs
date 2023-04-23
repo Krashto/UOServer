@@ -341,9 +341,9 @@ namespace Server.Custom.Aptitudes
 			AptitudesEntry entry = m_AptitudeEntries[(int)aptitude];
 
 			if (level == 0)
-				return Classes.Classes.IsCraftingSkills(entry.SkillName) ? 25 : 50;
+				return 50;
 
-			return Classes.Classes.IsCraftingSkills(entry.SkillName) ? 25 + (level - 1) * 2.5 : 50 + (level - 1) * 5;
+			return 50 + (level - 1) * 5;
 		}
 
 		public static SkillName GetSkillName(Aptitude aptitude)
@@ -351,6 +351,17 @@ namespace Server.Custom.Aptitudes
 			AptitudesEntry entry = m_AptitudeEntries[(int)aptitude];
 
 			return entry.SkillName;
+		}
+
+		public static Aptitude GetAptitudeNameBySkillName(SkillName skillName)
+		{
+			foreach(var entry in m_AptitudeEntries)
+			{
+				if (entry.SkillName == skillName)
+					return entry.Aptitude;
+			}
+
+			return (Aptitude)(-1);
 		}
 
 		public void Validate()

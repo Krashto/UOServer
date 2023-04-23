@@ -20,7 +20,6 @@ namespace Server.Mobiles
         public AnimalTrainer()
             : base("Dresseur d'Animaux")
         {
-            SetSkill(SkillName.AnimalLore, 64.0, 100.0);
             SetSkill(SkillName.AnimalTaming, 90.0, 100.0);
             SetSkill(SkillName.Healing, 65.0, 88.0);
         }

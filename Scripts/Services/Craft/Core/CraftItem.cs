@@ -1,5 +1,6 @@
 #region References
 using Server.Commands;
+using Server.Custom.Aptitudes;
 using Server.Custom.Capacites;
 using Server.Engines.Plants;
 using Server.Engines.Quests;
@@ -1025,11 +1026,16 @@ namespace Server.Engines.Craft
 					var resource = CraftResources.GetFromType(subResource.ItemType);
 					var level = CraftResources.GetLevel(resource);
 
-					if (subResource != null && from.Skills[craftSystem.MainSkill].Base < subResource.RequiredSkill || (pm != null && pm.Capacites[Capacite.Expertise] < level))
-                    {
-                        message = subResource.Message;
-                        return false;
-                    }
+					if (subResource != null && from.Skills[craftSystem.MainSkill].Base < subResource.RequiredSkill)
+					{
+						message = $"Niveau requis de compétence: {subResource.RequiredSkill}% de {craftSystem.MainSkill}";
+						return false;
+					}
+					else if (pm != null && pm.Capacites[Capacite.Expertise] < level)
+					{
+						message = $"Niveau requis d'expertise: {level}";
+						return false;
+					}
                 }
                 // ******************
 
@@ -1373,8 +1379,7 @@ namespace Server.Engines.Craft
 			return exceptionalChance;
         }
 
-        public bool CheckSkills(
-            Mobile from, Type typeRes, CraftSystem craftSystem, ref int quality, ref bool allRequiredSkills, int maxAmount)
+        public bool CheckSkills(Mobile from, Type typeRes, CraftSystem craftSystem, ref int quality, ref bool allRequiredSkills, int maxAmount)
         {
             return CheckSkills(from, typeRes, craftSystem, ref quality, ref allRequiredSkills, true, maxAmount);
         }
@@ -1647,12 +1652,17 @@ namespace Server.Engines.Craft
 				double maxSkill = AdjustSkill(craftSkill.MaxSkill, from, craftSystem);
 				double valSkill = from.Skills[craftSkill.SkillToMake].Value;
 
-				if (valSkill < minSkill)
-                {
-                    allRequiredSkills = false;
-                }
+				var pm = from as CustomPlayerMobile;
 
-                if (craftSkill.SkillToMake == craftSystem.MainSkill)
+				var aptitude = Aptitudes.GetAptitudeNameBySkillName(craftSkill.SkillToMake);
+
+				if (pm != null && craftSkill.MinSkill >= 50 && aptitude != (Aptitude)(-1) && pm.Aptitudes[aptitude] < (int)((craftSkill.MinSkill - 45) / 5))
+					allRequiredSkills = false;
+
+				if (valSkill < minSkill)
+					allRequiredSkills = false;
+
+				if (craftSkill.SkillToMake == craftSystem.MainSkill)
                 {
                     minMainSkill = minSkill;
                     maxMainSkill = maxSkill;
@@ -1660,42 +1670,29 @@ namespace Server.Engines.Craft
                 }
 
                 if (gainSkills && !UseAllRes) // This is a passive check. Success chance is entirely dependant on the main skill
-                {
                     from.CheckSkill(craftSkill.SkillToMake, minSkill, maxSkill);
-                }
             }
 
             double chance;
 
             if (allRequiredSkills)
-            {
-                chance = craftSystem.GetChanceAtMin(this) +
-                         ((valMainSkill - minMainSkill) / (maxMainSkill - minMainSkill) * (1.0 - craftSystem.GetChanceAtMin(this)));
-            }
+                chance = craftSystem.GetChanceAtMin(this) + ((valMainSkill - minMainSkill) / (maxMainSkill - minMainSkill) * (1.0 - craftSystem.GetChanceAtMin(this)));
             else
-            {
                 chance = 0.0;
-            }
 
             if (allRequiredSkills && from.Talisman is BaseTalisman)
             {
                 BaseTalisman talisman = (BaseTalisman)from.Talisman;
 
                 if (talisman.CheckSkill(craftSystem))
-                {
                     chance += talisman.SuccessBonus / 100.0;
-                }
             }
 
             if (WoodworkersBench.HasBonus(from, craftSystem.MainSkill))
-            {
                 chance += .5;
-            }
 
             if (allRequiredSkills && valMainSkill == maxMainSkill)
-            {
                 chance = 1.0;
-            }
 
             return chance;
         }

@@ -1,3 +1,4 @@
+using Server.Custom.Aptitudes;
 using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
@@ -185,24 +186,21 @@ namespace Server.Engines.Craft
         {
             for (int i = 0; i < m_CraftItem.Skills.Count; i++)
             {
-				//   CraftSkill skill = m_CraftItem.Skills.GetAt(i);
-				//   double minSkill = skill.MinSkill, maxSkill = skill.MaxSkill;
-
-				double skillValue = m_From.Skills[m_CraftItem.Skills.GetAt(i).SkillToMake].Value;
-				skillValue = Math.Round(skillValue, 1);
-				//AddLabel(378, (20 * i) + 132, LabelHue, skillValue.ToString());
-
-
 				CraftSkill skill = m_CraftItem.Skills.GetAt(i);
-				double minSkill = m_CraftItem.AdjustSkill(skill.MinSkill, m_From, m_CraftSystem), maxSkill = m_CraftItem.AdjustSkill(skill.MaxSkill, m_From, m_CraftSystem);
-
+				double minSkill = m_CraftItem.AdjustSkill(skill.MinSkill, m_From, m_CraftSystem);
 
 				if (minSkill < 0)
                     minSkill = 0;
 
-                AddHtmlLocalized(170, 132 + (i * 20), 200, 18, AosSkillBonuses.GetLabel(skill.SkillToMake), LabelColor, false, false);
-               AddLabel(430, 132 + (i * 20), LabelHue, string.Format("{0:F1}", minSkill));
-            }
+				AddLabel(170, 132, LabelHue, $"Niveau d'aptitude:");
+				if (minSkill >= 50)
+					AddLabel(430, 132, LabelHue, $"{(int)((minSkill - 45) / 5)}");
+				else
+					AddLabel(430, 132, LabelHue, "0");
+
+				AddHtmlLocalized(170, 152 + (i * 20), 200, 18, AosSkillBonuses.GetLabel(skill.SkillToMake), LabelColor, false, false);
+                AddLabel(430, 152 + (i * 20), LabelHue, string.Format("{0:F1}", minSkill));
+			}
 
             CraftSubResCol res = (m_CraftItem.UseSubRes2 ? m_CraftSystem.CraftSubRes2 : m_CraftSystem.CraftSubRes);
             int resIndex = -1;
