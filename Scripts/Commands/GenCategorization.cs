@@ -12,7 +12,7 @@ namespace Server.Commands
         private static readonly Type typeofItem = typeof(Item);
         private static readonly Type typeofMobile = typeof(Mobile);
         private static readonly Type typeofConstructable = typeof(ConstructableAttribute);
-        private static CategoryEntry m_RootItems, m_RooCustomPlayerMobiles;
+        private static CategoryEntry m_RootItems, m_RootMobiles;
         public static CategoryEntry Items
         {
             get
@@ -27,10 +27,10 @@ namespace Server.Commands
         {
             get
             {
-                if (m_RooCustomPlayerMobiles == null)
+                if (m_RootMobiles == null)
                     Load();
 
-                return m_RooCustomPlayerMobiles;
+                return m_RootMobiles;
             }
         }
         public static void Initialize()
@@ -157,7 +157,7 @@ namespace Server.Commands
                 AddTypes(ScriptCompiler.Assemblies[i], types);
 
             m_RootItems = Load(types, "Data/items.cfg");
-            m_RooCustomPlayerMobiles = Load(types, "Data/mobiles.cfg");
+            m_RootMobiles = Load(types, "Data/mobiles.cfg");
         }
 
         private static CategoryEntry Load(ArrayList types, string config)

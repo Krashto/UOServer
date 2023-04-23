@@ -189,7 +189,6 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 					if (duration < 0.0)
 						duration = 0.0;
 
-
 					m.Paralyze(TimeSpan.FromSeconds(duration));
 
 					m.PlaySound(0x204);

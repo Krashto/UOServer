@@ -83,7 +83,7 @@ namespace Server.Items
 
                 if (region != null)
                 {
-                    List<Mobile> mobiles = region.GeCustomPlayerMobiles();
+                    List<Mobile> mobiles = region.GetMobiles();
 
                     foreach (Mobile m in mobiles)
                         if (m is BaseCreature && ((BaseCreature)m).ControlMaster == from)

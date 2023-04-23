@@ -238,7 +238,7 @@ namespace Server.Spells
             Register(696, typeof(FormeCristallineSpell));
             Register(697, typeof(FormeElectrisanteSpell));
             Register(698, typeof(FormeEnflammeeSpell));
-            Register(699, typeof(FormeEnsangleeSpell));
+            Register(699, typeof(FormeEnsanglanteeSpell));
 
 			//Pyromancie
             Register(700, typeof(BouclierDeFeuSpell));
@@ -265,7 +265,7 @@ namespace Server.Spells
 			Register(719, typeof(CoupMortelSpell));
 
 			//Totemique
-			Register(720, typeof(TotemDuFeuSpell));
+			Register(720, typeof(TotemDeFeuSpell));
 			Register(721, typeof(TotemDeauSpell));
 			Register(722, typeof(TotemDeTerreSpell));
 			Register(723, typeof(TotemDuVentSpell));

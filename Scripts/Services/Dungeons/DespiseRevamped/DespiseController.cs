@@ -532,7 +532,7 @@ namespace Server.Engines.Despise
             m_CleanupTimer = Timer.DelayCall(TimeSpan.FromMinutes(5), TimeSpan.FromMinutes(5), EndSequence);
             m_CleanupTimer.Start();
 
-            foreach (Mobile m in m_LowerRegion.GeCustomPlayerMobiles())
+            foreach (Mobile m in m_LowerRegion.GetMobiles())
             {
                 if (m is DespiseCreature && ((DespiseCreature)m).Orb != null)
                 {

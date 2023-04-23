@@ -17,7 +17,7 @@ namespace Server.Items
         private static readonly Dictionary<Mobile, Timer> m_Table = new Dictionary<Mobile, Timer>();
         private static readonly List<Mobile> m_EffectReduction = new List<Mobile>();
 
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override string Name => "Mortal Strike";
 
@@ -86,7 +86,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

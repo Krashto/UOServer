@@ -2,7 +2,9 @@
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
-using VitaNex.FX;
+using Server.Mobiles;
+using Server.Misc;
+using System;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -25,45 +27,85 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 		{
 		}
 
-		public override void OnCast()
+		public override bool CheckCast()
 		{
-			Caster.Target = new InternalTarget(this);
+			if (SpellHelper.CheckCombat(Caster))
+			{
+				Caster.SendLocalizedMessage(1005564, "", 0x22); // Wouldst thou flee during the heat of battle??
+				return false;
+			}
+
+			return base.CheckCast();
 		}
 
-		public void Target(Mobile m)
+		public override void OnCast()
 		{
-			if (!Caster.CanSee(m))
-				Caster.SendLocalizedMessage(500237); // Target can not be seen.
+			if (SpellHelper.CheckCombat(Caster))
+			{
+				Caster.SendLocalizedMessage(1005564, "", 0x22); // Wouldst thou flee during the heat of battle??
+			}
 			else if (CheckSequence())
 			{
-				ExplodeFX.Smoke.CreateInstance(m, m.Map, 0).Send();
-				m.MoveToWorld(new Point3D(1120, 1407, 0), Map.Felucca);
-				ExplodeFX.Smoke.CreateInstance(m, m.Map, 0).Send();
-				CustomUtility.ApplySimpleSpellEffect(m, "Appel spirituel", AptitudeColor.Totemique, SpellEffectType.Move);
+				Caster.SendLocalizedMessage(501024); // You open a magical gate to another location
+
+				Effects.PlaySound(Caster.Location, Caster.Map, 0x20E);
+
+				double duration = GetDurationForSpell(15, 1).TotalSeconds;
+
+				InternalItem gate = new InternalItem(new Point3D(1120, 1407, 0), Map.Felucca, duration);
+				gate.Hue = (int)AptitudeColor.Totemique;
+				gate.MoveToWorld(Caster.Location, Caster.Map);
 			}
 
 			FinishSequence();
 		}
 
-		private class InternalTarget : Target
+		[DispellableField]
+		private class InternalItem : Moongate
 		{
-			private AppelSpirituelSpell m_Owner;
+			private double m_Duration;
 
-			public InternalTarget(AppelSpirituelSpell owner)
-				: base(12, false, TargetFlags.Beneficial)
+			public InternalItem(Point3D target, Map map, double duration) : base(target, map)
 			{
-				m_Owner = owner;
+				Map = map;
+				m_Duration = duration;
+
+				Dispellable = true;
+
+				InternalTimer t = new InternalTimer(this, m_Duration);
+				t.Start();
 			}
 
-			protected override void OnTarget(Mobile from, object o)
+			public InternalItem(Serial serial) : base(serial)
 			{
-				if (o is Mobile)
-					m_Owner.Target((Mobile)o);
 			}
 
-			protected override void OnTargetFinish(Mobile from)
+			public override void Serialize(GenericWriter writer)
 			{
-				m_Owner.FinishSequence();
+				base.Serialize(writer);
+			}
+
+			public override void Deserialize(GenericReader reader)
+			{
+				base.Deserialize(reader);
+
+				Delete();
+			}
+
+			private class InternalTimer : Timer
+			{
+				private Item m_Item;
+
+				public InternalTimer(Item item, double duration) : base(TimeSpan.FromSeconds(duration))
+				{
+					Priority = TimerPriority.OneSecond;
+					m_Item = item;
+				}
+
+				protected override void OnTick()
+				{
+					m_Item.Delete();
+				}
 			}
 		}
 	}

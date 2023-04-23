@@ -8,7 +8,7 @@ namespace Server.Items
     /// </summary>
     public class NerveStrike : WeaponAbility
     {
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override int Id => 18;
 		public override string Name => "Nerve Strike";
@@ -31,7 +31,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

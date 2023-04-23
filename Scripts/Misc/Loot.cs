@@ -601,59 +601,58 @@ namespace Server
 
         public static Item RandomArmorOrShieldOrWeaponOrJewelry(bool inTokuno = false, bool isMondain = false, bool isStygian = false)
         {
-            if (isStygian)
-            {
-                return Construct(
+     //       if (isStygian)
+     //       {
+     //           return Construct(
 
-                    m_SAWeaponTypes,
-                    m_WeaponTypes,
-                    m_SARangedWeaponTypes,
-                    m_RangedWeaponTypes,
-                    m_SAArmorTypes,
-                    m_ArmorTypes,
-                    m_HatTypes,
-                    m_ShieldTypes,
-                    m_JewelryTypes,
-                //    m_SAJewelryTypes,
-                    m_SAShieldTypes);
-            }
+     //               m_SAWeaponTypes,
+     //               m_WeaponTypes,
+     //               m_SARangedWeaponTypes,
+     //               m_RangedWeaponTypes,
+     //               m_SAArmorTypes,
+     //               m_ArmorTypes,
+     //               m_HatTypes,
+     //               m_ShieldTypes,
+     //               m_JewelryTypes,
+					//m_SAShieldTypes);
+     //       }
 
-            if (isMondain)
-            {
-                return Construct(
+     //       if (isMondain)
+     //       {
+     //           return Construct(
 
-                    m_MLWeaponTypes,
-                    m_WeaponTypes,
-                    m_MLRangedWeaponTypes,
-                    m_RangedWeaponTypes,
-                    m_MLArmorTypes,
-                    m_ArmorTypes,
-                    m_HatTypes,
-                    m_ShieldTypes,
-                    m_JewelryTypes);
-            }
+     //               m_MLWeaponTypes,
+     //               m_WeaponTypes,
+     //               m_MLRangedWeaponTypes,
+     //               m_RangedWeaponTypes,
+     //               m_MLArmorTypes,
+     //               m_ArmorTypes,
+     //               m_HatTypes,
+     //               m_ShieldTypes,
+     //               m_JewelryTypes);
+     //       }
 
-            if (inTokuno)
-            {
-                return Construct(
+     //       if (inTokuno)
+     //       {
+     //           return Construct(
 
-                    m_SEWeaponTypes,
-                    m_WeaponTypes,
-                    m_SERangedWeaponTypes,
-                    m_RangedWeaponTypes,
-                    m_SEArmorTypes,
-                    m_ArmorTypes,
-                    m_SEHatTypes,
-                    m_HatTypes,
-                    m_ShieldTypes,
-                    m_JewelryTypes);
-            }
+     //               m_SEWeaponTypes,
+     //               m_WeaponTypes,
+     //               m_SERangedWeaponTypes,
+     //               m_RangedWeaponTypes,
+     //               m_SEArmorTypes,
+     //               m_ArmorTypes,
+     //               m_SEHatTypes,
+     //               m_HatTypes,
+     //               m_ShieldTypes,
+     //               m_JewelryTypes);
+     //       }
 
             return Construct(
                 m_WeaponTypes,
                 m_RangedWeaponTypes,
                 m_ArmorTypes,
-                m_HatTypes,
+                //m_HatTypes,
                 m_ShieldTypes,
                 m_JewelryTypes);
         }

@@ -11,14 +11,14 @@ namespace Server.Items
         private Mobile m_Target;
         private Mobile m_Mobile;
 
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override int Id => 31;
 		public override string Name => "Arc mystique";
 
 		public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!CheckMana(attacker, true) && defender != null)
+            if (!CheckStamina(attacker, true) && defender != null)
                 return;
 
             BaseThrown weapon = attacker.Weapon as BaseThrown;

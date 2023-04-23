@@ -36,7 +36,7 @@ namespace Server
 			Console.WriteLine(
 				"Finished ({0} items, {1} mobiles, {2} customs) ({3:F2} seconds)",
 				Core.ScriptItems,
-				Core.ScripCustomPlayerMobiles,
+				Core.ScriptMobiles,
 				Core.ScriptCustoms,
 				watch.Elapsed.TotalSeconds);
 			Utility.PopColor();

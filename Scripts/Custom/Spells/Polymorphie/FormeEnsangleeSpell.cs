@@ -5,7 +5,7 @@ using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Polymorphie
 {
-	public class FormeEnsangleeSpell : Spell
+	public class FormeEnsanglanteeSpell : Spell
 	{
 		private static Hashtable m_Timers = new Hashtable();
 		private static Hashtable m_Table = new Hashtable();
@@ -23,7 +23,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 		public override SkillName CastSkill { get { return SkillName.Anatomy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public FormeEnsangleeSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
+		public FormeEnsanglanteeSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{
 		}
 

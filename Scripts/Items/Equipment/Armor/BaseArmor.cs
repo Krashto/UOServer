@@ -2295,14 +2295,12 @@ namespace Server.Items
             if (m_Crafter != null)
                 list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
 
-            if (m_Quality == ItemQuality.Exceptional)
-                list.Add("Exceptionnelle"); // Exceptional
-
-			if (m_Quality == ItemQuality.Epic)
-				list.Add("Épique"); // Exceptional
-
-			if (m_Quality == ItemQuality.Legendary)
-				list.Add("Légendaire"); // Exceptional
+			if (m_Quality == ItemQuality.Exceptional)
+				list.Add("Exceptionnelle");
+			else if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire");
 
 			if (IsImbued)
                 list.Add(1080418); // (Imbued)

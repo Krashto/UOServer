@@ -23,7 +23,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if ((Caster.Followers + 1) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
+			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
 			{
 				Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 				return false;
@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
             if (CheckSequence())
             {
                 TimeSpan duration = GetDurationForSpell(30, 1);
-				var totem = new TotemDeVent();
+				var totem = new TotemDuVent();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem du vent", duration, AptitudeColor.Totemique, SpellEffectType.Summon);

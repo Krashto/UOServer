@@ -1493,7 +1493,7 @@ namespace Server.Mobiles
 					item.Location = context.Foundation.BanLocation;
 				}
 
-				foreach (Mobile mobile in context.Foundation.GeCustomPlayerMobiles())
+				foreach (Mobile mobile in context.Foundation.GetMobiles())
 				{
 					mobile.Location = context.Foundation.BanLocation;
 				}

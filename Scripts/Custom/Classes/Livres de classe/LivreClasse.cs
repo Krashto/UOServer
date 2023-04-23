@@ -91,6 +91,7 @@ namespace Server.Items
 					pm.Aptitudes.Reset();
 
 					Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+					pm.Capacites.Validate();
 
 					pm.SendMessage("Vous oubliez votre classe.");
 
@@ -120,17 +121,13 @@ namespace Server.Items
                 {
                     pm.SendMessage("Votre classe est déjà : " + pm.GetClasse(m_Classe));
                 }
-                else if (!Classes.IsValid(pm, m_Classe))
+                else if (!Classes.HaveRequired(pm, m_Classe))
                 {
                     pm.SendMessage("Vous n'avez pas les prérequis pour obtenir cette classe.");
                 }
                 //else if (pm.ChangementClasse > DateTime.Now && (!CustomPlayerMobile.enabled || DateTime.Now < CustomPlayerMobile.TimeBegin || DateTime.Now > CustomPlayerMobile.TimeEnd)) //+ TimeSpan.FromMinutes(7 + ((int)oldinfo.ClasseBranche != (int)newinfo.ClasseBranche && oldinfo.Classe != Classe.Aucune ? 4 * pm.NombreChangementClasse : 0))
                 //{
                 //    pm.SendMessage("Vous devez attendre " + String.Format("{0:F0}", (pm.ChangementClasse - DateTime.Now).Days) + " jours avant de pouvoir changer à nouveau.");//(7 + ((int)oldinfo.ClasseBranche != (int)newinfo.ClasseBranche && oldinfo.Classe != Classe.Aucune ? 4 * pm.NombreChangementClasse : 0)).ToString()
-                //}
-                //else if (newinfo.Prestige && !pm.AccessPrestige)
-                //{
-                //    pm.SendMessage("Vous n'avez pas accès aux classes de prestige.");
                 //}
                 else
                 {
@@ -149,9 +146,11 @@ namespace Server.Items
                     pm.FixedParticles(0x375A, 10, 15, 5010, EffectLayer.Waist);
                     pm.PlaySound(0x28E);
 
-					pm.Aptitudes.Reset();
-
 					Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+					pm.Capacites.Validate();
+					pm.Aptitudes.Validate();
+					pm.CloseAllGumps();
+					Delete();
 				}
 			}
         }

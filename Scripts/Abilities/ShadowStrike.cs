@@ -7,7 +7,7 @@ namespace Server.Items
     /// </summary>
     public class ShadowStrike : WeaponAbility
     {
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
         public override double DamageScalar => 1.25;
 
@@ -39,7 +39,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

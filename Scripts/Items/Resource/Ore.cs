@@ -145,7 +145,7 @@ namespace Server.Items
             list.Add(CraftResources.GetName(m_Resource));
         }
 
-		public override double DefaultWeight => 3;
+		public override double DefaultWeight => 2;
 
 		public override int LabelNumber
         {

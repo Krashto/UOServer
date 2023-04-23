@@ -29,7 +29,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if ((Caster.Followers + 1) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
+			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
 			{
 				Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 				return false;

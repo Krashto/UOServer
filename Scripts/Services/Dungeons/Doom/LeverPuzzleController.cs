@@ -698,7 +698,7 @@ namespace Server.Engines.Doom
             protected override void OnTick()
             {
                 ticks++;
-                List<Mobile> mobiles = m_Controller.m_LampRoom.GeCustomPlayerMobiles();
+                List<Mobile> mobiles = m_Controller.m_LampRoom.GetMobiles();
 
                 if (ticks >= 71 || m_Controller.m_LampRoom.GetPlayerCount() == 0)
                 {

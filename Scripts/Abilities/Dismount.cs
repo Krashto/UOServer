@@ -11,7 +11,7 @@ namespace Server.Items
     /// </summary>
     public class Dismount : WeaponAbility
     {
-        public override int BaseMana => 25;
+        public override int BaseStamina => 25;
 
 		public override string Name => "Désarçonner";
 
@@ -55,7 +55,7 @@ namespace Server.Items
                 return;
             }
 
-            if (!CheckMana(attacker, true))
+            if (!CheckStamina(attacker, true))
             {
                 return;
             }

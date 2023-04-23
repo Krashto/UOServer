@@ -762,7 +762,7 @@ namespace Server
 		private static int m_ItemCount, m_MobileCount, m_CustomsCount;
 
 		public static int ScriptItems => m_ItemCount;
-		public static int ScripCustomPlayerMobiles => m_MobileCount;
+		public static int ScriptMobiles => m_MobileCount;
 		public static int ScriptCustoms => m_CustomsCount;
 
 		public static void VerifySerialization()

@@ -122,6 +122,8 @@ namespace Server.Gumps
 				var skill = m_From.Skills[info.ButtonID - 100];
 				if (skill.Base > 0)
 					skill.Base -= 1;
+				if (skill.SkillName == SkillName.MagicResist)
+					m_From.UpdateResistances();
 				m_From.SendGump(new TestStoneGump(m_From));
 			}
 			else if (info.ButtonID >= 200 && info.ButtonID < 300)
@@ -129,6 +131,8 @@ namespace Server.Gumps
 				var skill = m_From.Skills[info.ButtonID - 200];
 				if (skill.Base < skill.Cap && m_From.SkillsTotal < m_From.SkillsCap) //En dixième de pourcent
 					skill.Base += 1;
+				if (skill.SkillName == SkillName.MagicResist)
+					m_From.UpdateResistances();
 				m_From.SendGump(new TestStoneGump(m_From));
 			}
 			else if (info.ButtonID >= 300 && info.ButtonID < 400)
@@ -136,6 +140,8 @@ namespace Server.Gumps
 				var skill = m_From.Skills[info.ButtonID - 300];
 				if (skill.Base >= 5)
 					skill.Base -= 5;
+				if (skill.SkillName == SkillName.MagicResist)
+					m_From.UpdateResistances();
 				m_From.SendGump(new TestStoneGump(m_From));
 			}
 			else if (info.ButtonID >= 400 && info.ButtonID < 500)
@@ -143,6 +149,8 @@ namespace Server.Gumps
 				var skill = m_From.Skills[info.ButtonID - 400];
 				if (skill.Base <= (skill.Cap - 5) && m_From.SkillsTotal < m_From.SkillsCap) //En dixième de pourcent
 					skill.Base += 5;
+				if (skill.SkillName == SkillName.MagicResist)
+					m_From.UpdateResistances();
 				m_From.SendGump(new TestStoneGump(m_From));
 			}
 		}

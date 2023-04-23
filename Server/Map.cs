@@ -158,7 +158,7 @@ namespace Server
 		{
 			ClientSelector = SelectClients;
 			EntitySelector = SelectEntities;
-			MobileSelector = SelecCustomPlayerMobiles;
+			MobileSelector = SelectMobiles;
 			ItemSelector = SelectItems;
 			MultiSelector = SelectMultis;
 			MultiTileSelector = SelectMultiTiles;
@@ -166,7 +166,7 @@ namespace Server
 
 		public static IEnumerable<NetState> SelectClients(Sector s, Rectangle2D bounds)
 		{
-			return s.Clients.Where(o => o != null && o.Mobile != null && !o.Mobile.Deleted && bounds.Contains(o.Mobile));
+			return s.Clients.Where(o => o != null && o.Mobile != null && !o.Mobile.Deleted && !o.Mobile.Blessed && bounds.Contains(o.Mobile));
 		}
 
 		public static IEnumerable<IEntity> SelectEntities(Sector s, Rectangle2D bounds)
@@ -178,9 +178,9 @@ namespace Server
 						  .Where(bounds.Contains);
 		}
 
-		public static IEnumerable<Mobile> SelecCustomPlayerMobiles(Sector s, Rectangle2D bounds)
+		public static IEnumerable<Mobile> SelectMobiles(Sector s, Rectangle2D bounds)
 		{
-			return s.Mobiles.Where(o => o != null && !o.Deleted && bounds.Contains(o));
+			return s.Mobiles.Where(o => o != null && !o.Deleted && o.AccessLevel == AccessLevel.Player && bounds.Contains(o));
 		}
 
 		public static IEnumerable<Item> SelectItems(Sector s, Rectangle2D bounds)
@@ -253,7 +253,7 @@ namespace Server
 
 		public static Map.PooledEnumerable<Mobile> GetMobiles(Map map, Rectangle2D bounds)
 		{
-			return Map.PooledEnumerable<Mobile>.Instantiate(map, bounds, MobileSelector ?? SelecCustomPlayerMobiles);
+			return Map.PooledEnumerable<Mobile>.Instantiate(map, bounds, MobileSelector ?? SelectMobiles);
 		}
 
 		public static Map.PooledEnumerable<Item> GetItems(Map map, Rectangle2D bounds)
@@ -664,12 +664,12 @@ namespace Server
 			return PooledEnumeration.GetItems(this, bounds);
 		}
 
-		public IPooledEnumerable<Mobile> GeCustomPlayerMobilesInRange(Point3D p)
+		public IPooledEnumerable<Mobile> GetMobilesInRange(Point3D p)
 		{
 #if Map_UseMaxRange || Map_AllUpdates
 			return GetMobilesInRange(p, Core.GlobalMaxUpdateRange);
 #else
-			return GeCustomPlayerMobilesInRange(p, 18);
+			return GetMobilesInRange(p, 18);
 #endif
 		}
 
@@ -784,16 +784,16 @@ namespace Server
 			return PooledEnumerable<Item>.Instantiate(ItemEnumerator.Instantiate(this, bounds));
 		}
 
-		public IPooledEnumerable<Mobile> GeCustomPlayerMobilesInRange(Point3D p)
+		public IPooledEnumerable<Mobile> GetMobilesInRange(Point3D p)
 		{
 #if Map_UseMaxRange || Map_AllUpdates
-			return GeCustomPlayerMobilesInRange(p, Core.GlobalMaxUpdateRange);
+			return GetMobilesInRange(p, Core.GlobalMaxUpdateRange);
 #else
-			return GeCustomPlayerMobilesInRange(p, 18);
+			return GetMobilesInRange(p, 18);
 #endif
 		}
 
-		public IPooledEnumerable<Mobile> GeCustomPlayerMobilesInRange(Point3D p, int range)
+		public IPooledEnumerable<Mobile> GetMobilesInRange(Point3D p, int range)
 		{
 			if (this == Internal)
 			{
@@ -805,7 +805,7 @@ namespace Server
 					MobileEnumerator.Instantiate(this, new Rectangle2D(p.m_X - range, p.m_Y - range, range * 2 + 1, range * 2 + 1)));
 		}
 
-		public IPooledEnumerable<Mobile> GeCustomPlayerMobilesInBounds(Rectangle2D bounds)
+		public IPooledEnumerable<Mobile> GetMobilesInBounds(Rectangle2D bounds)
 		{
 			if (this == Internal)
 			{

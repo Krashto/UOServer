@@ -5,7 +5,7 @@ namespace Server.Items
     /// </summary>
     public class CrushingBlow : WeaponAbility
     {
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Coup écrasant";
 		public override int Id => 4;
@@ -14,7 +14,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

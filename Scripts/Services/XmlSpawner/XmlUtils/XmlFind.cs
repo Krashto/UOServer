@@ -323,7 +323,7 @@ namespace Server.Mobiles
                     ((m as IMount)?.Rider != null) ||
                     (m is GalleonPilot) || m is PetParrot ||
                     (GenericBuyInfo.IsDisplayCache(m)) ||
-                    (m is EffecCustomPlayerMobile) ||
+                    (m is EffectMobile) ||
                     (m is BaseCreature creature && creature.IsStabled) ||
                     (m is PlayerVendor && BaseHouse.AllHouses.Any(x => x.InternalizedVendors.Contains(m))))
                     return true;

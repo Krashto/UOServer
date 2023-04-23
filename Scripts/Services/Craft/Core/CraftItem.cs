@@ -2369,12 +2369,7 @@ namespace Server.Engines.Craft
                         return;
                     }
 
-                    bool makersMark = false;
-
-                    if (quality == 2 && m_From.Skills[m_CraftSystem.MainSkill].Base >= 100.0)
-                    {
-                        makersMark = m_CraftItem.IsMarkable(m_CraftItem.ItemType);
-                    }
+                    bool makersMark = m_CraftItem.IsMarkable(m_CraftItem.ItemType);
 
                     if (makersMark && context.MarkOption == CraftMarkOption.PromptForMark && !m_AutoCraft)
                     {

@@ -17,7 +17,7 @@ namespace Server.Items
 
 		public override int Id => 15;
 
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
         private static readonly Dictionary<Mobile, Timer> m_Registry = new Dictionary<Mobile, Timer>();
         public static Dictionary<Mobile, Timer> Registry => m_Registry;
@@ -43,7 +43,7 @@ namespace Server.Items
 
             if (targets.Count > 0)
             {
-                if (!CheckMana(attacker, true))
+                if (!CheckStamina(attacker, true))
                     return;
 
                 attacker.FixedEffect(0x3728, 10, 15);

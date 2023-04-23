@@ -35,11 +35,11 @@ namespace Server.Items
             return success;
         }
 
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
         public override bool OnBeforeSwing(Mobile attacker, Mobile defender)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, false))
+            if (!Validate(attacker) || !CheckStamina(attacker, false))
                 return false;
 
             int ran = -1;
@@ -116,7 +116,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (CheckMana(attacker, false))
+            if (CheckStamina(attacker, false))
             {
                 BladeWeaveRedirect bwr;
                 if (m_NewAttack.TryGetValue(attacker, out bwr))

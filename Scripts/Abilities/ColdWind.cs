@@ -15,13 +15,13 @@ namespace Server.Items
 
 		public override int Id => 33;
 
-		public override int BaseMana => 20;
+		public override int BaseStamina => 20;
 
         public override double DamageScalar => 1.5;
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             if (attacker.Map == null || attacker.Map == Map.Internal)

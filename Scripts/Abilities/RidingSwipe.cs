@@ -10,7 +10,7 @@ namespace Server.Items
     /// </summary>
     public class RidingSwipe : WeaponAbility
     {
-        public override int BaseMana => 25;
+        public override int BaseStamina => 25;
 
 		public override string Name => "Riding Swipe";
 
@@ -36,7 +36,7 @@ namespace Server.Items
                 return;
             }
 
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

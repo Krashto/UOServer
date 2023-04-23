@@ -7,8 +7,6 @@ using Server.Spells;
 using Server.Custom.Aptitudes;
 using Server.Custom;
 using Server.Custom.Spells.NewSpells.Aeromancie;
-using System.Xml.Linq;
-using Server.Custom.Classes;
 using System.Linq;
 using Server.Custom.Spells.NewSpells.Chasseur;
 using Server.Custom.Spells.NewSpells.Geomancie;
@@ -22,6 +20,7 @@ using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Custom.Spells.NewSpells.Roublardise;
 using Server.Custom.Spells.NewSpells.Totemique;
 using Server.Custom.Spells.NewSpells.Hydromancie;
+using static Server.Config;
 
 namespace Server.Gumps
 {
@@ -65,7 +64,7 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(BrouillardSpell), "Rend invisible la cible."),
 			new SpellBookEntry( typeof(TeleportationSpell), "Permet de vous téléporter sur la case de votre choix."),
 			new SpellBookEntry( typeof(TornadoSpell), "Crée un champ de force autour de vous qui pousse les ennemis qui vous approchent."),
-			new SpellBookEntry( typeof(AuraEvasiveSpell), "Procure un bouclier de points de vie à vos alliés."),
+			new SpellBookEntry( typeof(AuraEvasiveSpell), "Augmente la résistance à l'énergie de vous et vos alliés."),
 			new SpellBookEntry( typeof(ExTeleportationSpell), "Permet d'interchanger votre place avec votre cible."),
 			new SpellBookEntry( typeof(ToucherSuffocantSpell), "Rend muet votre cible, l'empêchant de lancer des sorts."),
             new SpellBookEntry( typeof(AuraDeBrouillardSpell), "Rend invisible les alliés autour de vous."),
@@ -169,7 +168,7 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(FormeCristallineSpell), "Augmente votre regénération de mana, mais vous perdez des points de vie. Augmente votre résistance au froid et poison."),
 			new SpellBookEntry( typeof(FormeElectrisanteSpell), "Augmente votre vitesse de déplacement, de précision des coups et vos points de vie."),
 			new SpellBookEntry( typeof(FormeEnflammeeSpell), "Brûle les ennemis qui sont trop près de vous."),
-			new SpellBookEntry( typeof(FormeEnsangleeSpell), "Procure un regain de vie lors de coups, augmente votre regénération de mana et de stamina. Vous êtes immunisé aux poisons, mais vous perdez de la résistance au feu."),
+			new SpellBookEntry( typeof(FormeEnsanglanteeSpell), "Procure un regain de vie lors de coups, augmente votre regénération de mana et de stamina. Vous êtes immunisé aux poisons, mais vous perdez de la résistance au feu."),
 
 			new SpellBookEntry( typeof(BouclierDeFeuSpell), "Augmente votre résistance au feu."),
 			new SpellBookEntry( typeof(BouleDeFeuSpell), "Lance une boule de feu."),
@@ -193,7 +192,7 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(GazEndormantSpell), "Endort les ennemis autour de votre cible."),
 			new SpellBookEntry( typeof(CoupMortelSpell), "Si les points de vie de votre cible sont sous la barre des 20%, la cible est exécutée."),
 
-			new SpellBookEntry( typeof(TotemDuFeuSpell), "Invoque un totem de feu qui lance des boules de feu."),
+			new SpellBookEntry( typeof(TotemDeFeuSpell), "Invoque un totem de feu qui lance des boules de feu."),
 			new SpellBookEntry( typeof(TotemDeauSpell), "Invoque un totem d'eau qui vous soigne."),
 			new SpellBookEntry( typeof(TotemDeTerreSpell), "Invoque un totem de terre qui attirent les ennemis autour de lui."),
 			new SpellBookEntry( typeof(TotemDuVentSpell), "Invoque un totem de vent qui lance des éclairs."),
@@ -288,7 +287,7 @@ namespace Server.Gumps
 			if (m_Page < (m_SpellBookEntry.Length / EntriesPerPage))
 				AddButton(456, 10, 502, 502, 18, GumpButtonType.Reply, 0);
 			else if (m_Page == m_SpellBookEntry.Length / EntriesPerPage)
-				AddButton(456, 10, 502, 502, 20, GumpButtonType.Reply, 0);
+				AddButton(456, 10, 502, 502, 1600, GumpButtonType.Reply, 0);
 
 			if (m_Page > 0)
 				AddButton(100, 10, 501, 501, 19, GumpButtonType.Reply, 0);
@@ -329,61 +328,65 @@ namespace Server.Gumps
 			}
 
 			//Pour tous les sorts
-			if (m_Page > m_SpellBookEntry.Length / EntriesPerPage)
+			if (m_Page >= 600)
 			{
-				for (int i = (m_Page - (int)Math.Ceiling((double)m_SpellBookEntry.Length / EntriesPerPage)), count = 0; count < 1 && i < m_SpellBookEntry.Length; ++i, count++)
+				foreach(var spell in m_SpellBookEntry)
 				{
-					SpellBookEntry info = (SpellBookEntry)m_SpellBookEntry[i];
+					if (spell.SpellID != m_Page)
+						continue;
 
 					//Si le livre possède le sort
-					if (this.HasSpell(info.SpellID) && ArrayContains(m_AptitudeList, info.Aptitude))
+					if (this.HasSpell(spell.SpellID) && ArrayContains(m_AptitudeList, spell.Aptitude))
 					{
 						hindex = 0;
 
 						//On ajoute les boutons de pages
-						if (i > 0)
-							AddButton(100, 10, 501, 501, 21, GumpButtonType.Reply, 0);
+						if (m_Page > 600)
+							AddButton(100, 10, 501, 501, 1000 + spell.SpellID - 1, GumpButtonType.Reply, 0);
 						else
-							AddButton(100, 10, 501, 501, 19, GumpButtonType.Reply, 0);
+							AddButton(100, 10, 501, 501, 20, GumpButtonType.Reply, 0);
 
-						if (i < m_SpellBookEntry.Length)
-							AddButton(456, 10, 502, 502, 20, GumpButtonType.Reply, 0);
+						if (m_Page < 729)
+							AddButton(456, 10, 502, 502, 1000 + spell.SpellID + 1, GumpButtonType.Reply, 0);
 
 						int namecolor = 0;
 						string name = "...";
 
-						if (m_NameColors.Contains(info.Aptitude))
-							namecolor = (int)m_NameColors[info.Aptitude] - 1;
+						if (m_NameColors.Contains(spell.Aptitude))
+							namecolor = (int)m_NameColors[spell.Aptitude] - 1;
 
-						if (m_Names.Contains(info.Aptitude))
-							name = (string)m_Names[info.Aptitude];
+						if (m_Names.Contains(spell.Aptitude))
+							name = (string)m_Names[spell.Aptitude];
 
 						//On ajoute le nom
-						AddButton(175 + hindex * 190, 22, 2223, 2223, 100 + ((info.SpellID - 600) / EntriesPerPage), GumpButtonType.Reply, 0);
+						AddButton(175 + hindex * 190, 22, 2223, 2223, 100 + ((spell.SpellID - 600) / EntriesPerPage), GumpButtonType.Reply, 0);
 						AddLabel(200 + hindex * 190, 20, namecolor, name);
-						AddButton(140 + hindex * 190, 44, 2103, 2104, info.SpellID, GumpButtonType.Reply, 0);
-						AddLabel(155 + hindex * 190, 40, 0, info.Name);
+						AddButton(140 + hindex * 190, 44, 2103, 2104, spell.SpellID, GumpButtonType.Reply, 0);
+						AddLabel(155 + hindex * 190, 40, 0, spell.Name);
 
 						//On ajoute les séparateurs
 						AddImageTiled(140 + hindex * 190, 60, 130, 10, 0x3A);
 
 						//On ajoute l'icone en tant que bouton pour lancer le sort
-						AddLabel(140 + hindex * 190, 80, 0, $"Niveau : {info.Level}");
-						AddLabel(140 + hindex * 190, 100, 0, $"Mana : {Spell.GetManaBase(info.Level)}");
-						AddLabel(140 + hindex * 190, 120, 0, $"Temps : {Spell.GetCastDelayBase(info.Level).TotalSeconds}s");
+						AddLabel(140 + hindex * 190, 80, 0, $"Niveau : {spell.Level}");
+						AddLabel(140 + hindex * 190, 100, 0, $"Mana : {Spell.GetManaBase(spell.Level)}");
+						AddLabel(140 + hindex * 190, 120, 0, $"Temps : {Spell.GetCastDelayBase(spell.Level).TotalSeconds}s");
+
+						//On ajoute l'icone en tant que bouton pour lancer le sort
+						AddLabel(140 + hindex * 190, 140, 0, $"Skill : {Aptitudes.GetSkillName(spell.Aptitude)}");
 
 						//On ajoute les infos diverses
-						AddHtml(140 + hindex * 190, 140, 100, 20, "Réactifs:", false, false);
-						for (int j = 0; j < info.Reagents.Length; j++)
+						AddHtml(140 + hindex * 190, 160, 100, 20, "Réactifs:", false, false);
+						for (int j = 0; j < spell.Reagents.Length; j++)
 						{
-							Type type = (Type)info.Reagents[j];
-							AddLabel(140 + hindex * 190, 160 + j * 20, 0, $"- {type.Name}");
+							Type type = (Type)spell.Reagents[j];
+							AddLabel(140 + hindex * 190, 180 + j * 20, 0, $"- {type.Name}");
 						}
 
 						hindex = 1;
 
 						AddHtml(130 + hindex * 190, 25, 100, 20, "Description:", false, false);
-						AddHtml(130 + hindex * 190, 45, 170, 180, info.Description, false, false);
+						AddHtml(130 + hindex * 190, 45, 170, 180, spell.Description, false, false);
 					}
 				}
 			}
@@ -436,13 +439,11 @@ namespace Server.Gumps
                     pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page + 1));
 				else if (info.ButtonID == 19 && m_Page > 0)
 					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page - 1));
-				else if (info.ButtonID == 20 && m_Page < (m_SpellBookEntry.Length / EntriesPerPage + m_SpellBookEntry.Length))
-					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page + 1));
-				else if (info.ButtonID == 21 && m_Page >= (m_SpellBookEntry.Length / EntriesPerPage))
-					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_Page - 1));
+				else if (info.ButtonID == 20 && m_Page > 0)
+					pm.SendGump(new NewSpellbookGump(pm, m_Book, m_SpellBookEntry.Length / EntriesPerPage));
 				else if (info.ButtonID >= 100 && info.ButtonID < 200)
 					pm.SendGump(new NewSpellbookGump(pm, m_Book, info.ButtonID - 100));
-				else if (info.ButtonID >= 600 && info.ButtonID < 1000)
+				else if (info.ButtonID >= 600 && info.ButtonID < 800)
                 {
                     Spell spell = SpellRegistry.NewSpell(info.ButtonID, pm, null);
 
@@ -453,7 +454,7 @@ namespace Server.Gumps
                 }
 				else if (info.ButtonID >= 1600 && info.ButtonID < 1800)
 				{
-					pm.SendGump(new NewSpellbookGump(pm, m_Book, (int)Math.Ceiling((double)m_SpellBookEntry.Length / EntriesPerPage) + info.ButtonID - 1600));
+					pm.SendGump(new NewSpellbookGump(pm, m_Book, info.ButtonID - 1000));
 				}
 			}
         }

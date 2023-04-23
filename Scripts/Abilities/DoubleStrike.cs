@@ -6,7 +6,7 @@ namespace Server.Items
     /// </summary>
     public class DoubleStrike : WeaponAbility
     {
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
         public override double DamageScalar => 0.9;
 
 		public override string Name => "Double frappe";
@@ -25,7 +25,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
             {
                 return;
             }

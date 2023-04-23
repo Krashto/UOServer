@@ -272,25 +272,55 @@ namespace Server.Custom.Classes
             return 0;
         }
 
-        public static bool IsValid(CustomPlayerMobile m, Classe classe)
+		public static bool HaveRequired(CustomPlayerMobile pm, Classe classe)
+		{
+			ClasseInfo info = GetInfos(classe);
+
+			if (pm == null || info == null)
+				return false;
+
+			if (info.Skills != null)
+			{
+				foreach (var skill in info.Skills)
+				{
+					if (pm.Skills[skill.SkillName].Value < skill.Value)
+						return false;
+				}
+			}
+
+			return true;
+		}
+
+		public static void Validate(CustomPlayerMobile pm, Classe classe)
         {
             ClasseInfo info = GetInfos(classe);
 
-            if (m == null || info == null)
-                return false;
+            if (pm == null || info == null)
+                return;
 
             if (info.Skills != null)
             {
-                for (int i = 0; i < info.Skills.Length; ++i)
-                {
-                    CSkills skills = info.Skills[i];
+				var isValid = true;
 
-                    if (m.Skills[skills.SkillName].Base < skills.Value)
-                        return false;
+				foreach (var skill in info.Skills)
+                {
+					if (pm.Skills[skill.SkillName].Value < skill.Value)
+						isValid = false;
+
+					while (!isValid)
+					{
+						var previousClasse = GetClassBefore(pm.Classe);
+
+						if (pm.Skills[skill.SkillName].Value < skill.Value)
+						{
+							pm.Classe = previousClasse;
+							isValid = false;
+						}
+						else
+							isValid = true;
+					}
                 }
             }
-
-            return true;
         }
 
         public static ClasseInfo GetInfos(Classe classe)

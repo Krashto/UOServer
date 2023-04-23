@@ -9,7 +9,7 @@ namespace Server.Items
     // The target will be hit with chaos damage regardless of whether they were dismounted or paralyzed.
     public class InfusedThrow : WeaponAbility
     {
-        public override int BaseMana => 25;
+        public override int BaseStamina => 25;
 
 		public override string Name => "Lancer infusé";
 
@@ -17,7 +17,7 @@ namespace Server.Items
 
 		public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!CheckMana(attacker, true))
+            if (!CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

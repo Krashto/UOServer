@@ -12,7 +12,7 @@ namespace Server.Items
     /// </summary>
     public class InfectiousStrike : WeaponAbility
     {
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Frappe infectieuse";
 
@@ -48,7 +48,7 @@ namespace Server.Items
                 return;
             }
 
-            if (!CheckMana(attacker, true))
+            if (!CheckStamina(attacker, true))
                 return;
 
             // Infectious strike special move now uses poisoning skill to help determine potency 

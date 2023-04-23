@@ -7,7 +7,7 @@ namespace Server.Items
     /// </summary>
     public class ArmorIgnore : WeaponAbility
     {
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override int Id => 1;
 
@@ -16,7 +16,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

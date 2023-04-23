@@ -1,6 +1,20 @@
 using System;
 using Server;
+using Server.Custom;
 using Server.Custom.Spells.NewSpells.Aeromancie;
+using Server.Custom.Spells.NewSpells.Chasseur;
+using Server.Custom.Spells.NewSpells.Defenseur;
+using Server.Custom.Spells.NewSpells.Geomancie;
+using Server.Custom.Spells.NewSpells.Guerison;
+using Server.Custom.Spells.NewSpells.Hydromancie;
+using Server.Custom.Spells.NewSpells.Martial;
+using Server.Custom.Spells.NewSpells.Musique;
+using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Custom.Spells.NewSpells.Pyromancie;
+using Server.Custom.Spells.NewSpells.Roublardise;
+using Server.Custom.Spells.NewSpells.Totemique;
+using Server.Engines.Blackthorn;
 using Server.Spells;
 
 namespace Server.Items
@@ -13,9 +27,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AveuglementScroll( int amount ) : base( SpellRegistry.GetSpellIdFromType(typeof(AveuglementSpell)), 0x2260, amount )
+		public AveuglementScroll( int amount ) : base( SpellRegistry.GetSpellIdFromType(typeof(AveuglementSpell)), 0x1F2D, amount )
 		{
 			Name = "Aveuglement";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public AveuglementScroll( Serial serial ) : base( serial )
@@ -44,9 +59,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BrouillardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BrouillardSpell)), 0x2260, amount)
+		public BrouillardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BrouillardSpell)), 0x1F2D, amount)
 		{
 			Name = "Brouillard";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public BrouillardScroll(Serial serial) : base(serial)
@@ -75,9 +91,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TeleportationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TeleportationSpell)), 0x2260, amount)
+		public TeleportationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TeleportationSpell)), 0x1F2D, amount)
 		{
 			Name = "Teleportation";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public TeleportationScroll(Serial serial) : base(serial)
@@ -106,9 +123,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TornadoScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TornadoSpell)), 0x2260, amount)
+		public TornadoScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TornadoSpell)), 0x1F2D, amount)
 		{
 			Name = "Tornado";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public TornadoScroll(Serial serial) : base(serial)
@@ -137,9 +155,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraEvasiveScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraEvasiveSpell)), 0x2260, amount)
+		public AuraEvasiveScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraEvasiveSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Evasive";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public AuraEvasiveScroll(Serial serial) : base(serial)
@@ -168,9 +187,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ExTeleportationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ExTeleportationSpell)), 0x2260, amount)
+		public ExTeleportationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ExTeleportationSpell)), 0x1F2D, amount)
 		{
 			Name = "Ex-Teleportation";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public ExTeleportationScroll(Serial serial) : base(serial)
@@ -199,9 +219,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ToucherSuffocantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucherSuffocantSpell)), 0x2260, amount)
+		public ToucherSuffocantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucherSuffocantSpell)), 0x1F2D, amount)
 		{
 			Name = "Toucher suffocant";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public ToucherSuffocantScroll(Serial serial) : base(serial)
@@ -230,9 +251,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraDeBrouillardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraDeBrouillardSpell)), 0x2260, amount)
+		public AuraDeBrouillardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraDeBrouillardSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura De Brouillard";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public AuraDeBrouillardScroll(Serial serial) : base(serial)
@@ -261,9 +283,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public VentFavorableScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(VentFavorableSpell)), 0x2260, amount)
+		public VentFavorableScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(VentFavorableSpell)), 0x1F2D, amount)
 		{
 			Name = "Vent Favorable";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public VentFavorableScroll(Serial serial) : base(serial)
@@ -292,9 +315,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public VortexScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(VortexSpell)), 0x2260, amount)
+		public VortexScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(VortexSpell)), 0x1F2D, amount)
 		{
 			Name = "Vortex";
+			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
 		public VortexScroll(Serial serial) : base(serial)
@@ -323,9 +347,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AntidoteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AntidoteScroll)), 0x2262, amount)
+		public AntidoteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AntidoteSpell)), 0x1F2D, amount)
 		{
 			Name = "Antidote";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public AntidoteScroll(Serial serial) : base(serial)
@@ -354,9 +379,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MarquerScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MarquerScroll)), 0x2262, amount)
+		public MarquerScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MarquerSpell)), 0x1F2D, amount)
 		{
 			Name = "Marquer";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public MarquerScroll(Serial serial) : base(serial)
@@ -385,9 +411,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CompagnonAnimalScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CompagnonAnimalScroll)), 0x2262, amount)
+		public CompagnonAnimalScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CompagnonAnimalSpell)), 0x1F2D, amount)
 		{
 			Name = "Compagnon Animal";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public CompagnonAnimalScroll(Serial serial) : base(serial)
@@ -416,9 +443,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SoinAnimalierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoinAnimalierScroll)), 0x2262, amount)
+		public SoinAnimalierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoinAnimalierSpell)), 0x1F2D, amount)
 		{
 			Name = "Soin Animalier";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public SoinAnimalierScroll(Serial serial) : base(serial)
@@ -447,9 +475,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RugissementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RugissementScroll)), 0x2262, amount)
+		public RugissementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RugissementSpell)), 0x1F2D, amount)
 		{
 			Name = "Rugissement";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public RugissementScroll(Serial serial) : base(serial)
@@ -478,9 +507,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FrappeEnsanglanteeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrappeEnsanglanteeScroll)), 0x2262, amount)
+		public FrappeEnsanglanteeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrappeEnsanglanteeSpell)), 0x1F2D, amount)
 		{
 			Name = "Frappe Ensanglantee";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public FrappeEnsanglanteeScroll(Serial serial) : base(serial)
@@ -509,9 +539,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SautAggressifScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SautAggressifScroll)), 0x2262, amount)
+		public SautAggressifScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SautAggressifSpell)), 0x1F2D, amount)
 		{
 			Name = "Saut Aggressif";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public SautAggressifScroll(Serial serial) : base(serial)
@@ -540,9 +571,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupDansLeGenouScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDansLeGenouScroll)), 0x2262, amount)
+		public CoupDansLeGenouScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDansLeGenouSpell)), 0x1F2D, amount)
 		{
 			Name = "Coup Dans Le Genou";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public CoupDansLeGenouScroll(Serial serial) : base(serial)
@@ -571,9 +603,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ChasseurDePrimeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ChasseurDePrimeScroll)), 0x2262, amount)
+		public ChasseurDePrimeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ChasseurDePrimeSpell)), 0x1F2D, amount)
 		{
 			Name = "Chasseur De Prime";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public ChasseurDePrimeScroll(Serial serial) : base(serial)
@@ -602,9 +635,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ContratResoluScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ContratResoluScroll)), 0x2262, amount)
+		public ContratResoluScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ContratResoluSpell)), 0x1F2D, amount)
 		{
 			Name = "Contrat Resolu";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
 		public ContratResoluScroll(Serial serial) : base(serial)
@@ -633,9 +667,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupDeBouclierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDeBouclierScroll)), 0x2264, amount)
+		public CoupDeBouclierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDeBouclierSpell)), 0x1F2D, amount)
 		{
 			Name = "Coup De Bouclier";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public CoupDeBouclierScroll(Serial serial) : base(serial)
@@ -664,9 +699,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BravadeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BravadeScroll)), 0x2264, amount)
+		public BravadeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BravadeSpell)), 0x1F2D, amount)
 		{
 			Name = "Bravade";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public BravadeScroll(Serial serial) : base(serial)
@@ -695,9 +731,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DevotionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DevotionScroll)), 0x2264, amount)
+		public DevotionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DevotionSpell)), 0x1F2D, amount)
 		{
 			Name = "Devotion";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public DevotionScroll(Serial serial) : base(serial)
@@ -726,9 +763,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MutinerieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MutinerieScroll)), 0x2264, amount)
+		public MutinerieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MutinerieSpell)), 0x1F2D, amount)
 		{
 			Name = "Mutinerie";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public MutinerieScroll(Serial serial) : base(serial)
@@ -757,9 +795,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MentorScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MentorScroll)), 0x2264, amount)
+		public MentorScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MentorSpell)), 0x1F2D, amount)
 		{
 			Name = "Mentor";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public MentorScroll(Serial serial) : base(serial)
@@ -788,9 +827,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LienDeVieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LienDeVieScroll)), 0x2264, amount)
+		public LienDeVieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LienDeVieSpell)), 0x1F2D, amount)
 		{
 			Name = "Lien De Vie";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public LienDeVieScroll(Serial serial) : base(serial)
@@ -819,9 +859,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MiracleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MiracleScroll)), 0x2264, amount)
+		public MiracleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MiracleSpell)), 0x1F2D, amount)
 		{
 			Name = "Miracle";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public MiracleScroll(Serial serial) : base(serial)
@@ -850,9 +891,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public IndomptableScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(IndomptableScroll)), 0x2264, amount)
+		public IndomptableScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(IndomptableSpell)), 0x1F2D, amount)
 		{
 			Name = "Indomptable";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public IndomptableScroll(Serial serial) : base(serial)
@@ -881,9 +923,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InsensibleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InsensibleScroll)), 0x2264, amount)
+		public InsensibleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InsensibleSpell)), 0x1F2D, amount)
 		{
 			Name = "Insensible";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public InsensibleScroll(Serial serial) : base(serial)
@@ -912,9 +955,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PiedsAuSolScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PiedsAuSolScroll)), 0x2264, amount)
+		public PiedsAuSolScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PiedsAuSolSpell)), 0x1F2D, amount)
 		{
 			Name = "Pieds Au Sol";
+			Hue = (int)AptitudeColor.Defenseur;
 		}
 
 		public PiedsAuSolScroll(Serial serial) : base(serial)
@@ -943,9 +987,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FortifieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FortifieScroll)), 0x2266, amount)
+		public FortifieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FortifieSpell)), 0x1F2D, amount)
 		{
 			Name = "Fortifie";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public FortifieScroll(Serial serial) : base(serial)
@@ -974,9 +1019,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RocheScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RocheScroll)), 0x2266, amount)
+		public RocheScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RocheSpell)), 0x1F2D, amount)
 		{
 			Name = "Roche";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public RocheScroll(Serial serial) : base(serial)
@@ -1005,9 +1051,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ContaminationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ContaminationScroll)), 0x2266, amount)
+		public ContaminationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ContaminationSpell)), 0x1F2D, amount)
 		{
 			Name = "Contamination";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public ContaminationScroll(Serial serial) : base(serial)
@@ -1036,9 +1083,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public EmpalementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EmpalementScroll)), 0x2266, amount)
+		public EmpalementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EmpalementSpell)), 0x1F2D, amount)
 		{
 			Name = "Empalement";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public EmpalementScroll(Serial serial) : base(serial)
@@ -1067,9 +1115,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraFortifianteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraFortifianteScroll)), 0x2266, amount)
+		public AuraFortifianteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraFortifianteSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Fortifiante";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public AuraFortifianteScroll(Serial serial) : base(serial)
@@ -1098,9 +1147,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurDePlanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDePlanteScroll)), 0x2266, amount)
+		public MurDePlanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDePlanteSpell)), 0x1F2D, amount)
 		{
 			Name = "Mur De Plante";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public MurDePlanteScroll(Serial serial) : base(serial)
@@ -1129,9 +1179,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ExplosionDeRochesScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ExplosionDeRochesScroll)), 0x2266, amount)
+		public ExplosionDeRochesScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ExplosionDeRochesSpell)), 0x1F2D, amount)
 		{
 			Name = "Explosion De Roches";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public ExplosionDeRochesScroll(Serial serial) : base(serial)
@@ -1152,20 +1203,21 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AuraPreservationManiaqueScroll : SpellScroll
+	public class AuraPreservationManaiqueScroll : SpellScroll
 	{
 		[Constructable]
-		public AuraPreservationManiaqueScroll() : this(1)
+		public AuraPreservationManaiqueScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public AuraPreservationManiaqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraPreservationManiaqueScroll)), 0x2266, amount)
+		public AuraPreservationManaiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraPreservationManaiqueSpell)), 0x1F2D, amount)
 		{
-			Name = "Aura Preservation Maniaque";
+			Name = "Aura Preservation Manaique";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
-		public AuraPreservationManiaqueScroll(Serial serial) : base(serial)
+		public AuraPreservationManaiqueScroll(Serial serial) : base(serial)
 		{
 		}
 
@@ -1191,9 +1243,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RacinesScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RacinesScroll)), 0x2266, amount)
+		public RacinesScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RacinesSpell)), 0x1F2D, amount)
 		{
 			Name = "Racines";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public RacinesScroll(Serial serial) : base(serial)
@@ -1222,9 +1275,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FleauTerrestreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FleauTerrestreScroll)), 0x2266, amount)
+		public FleauTerrestreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FleauTerrestreSpell)), 0x1F2D, amount)
 		{
 			Name = "Fleau Terrestre";
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public FleauTerrestreScroll(Serial serial) : base(serial)
@@ -1253,9 +1307,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MainCicatrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MainCicatrisanteScroll)), 0x2268, amount)
+		public MainCicatrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MainCicatrisanteSpell)), 0x1F2D, amount)
 		{
 			Name = "Main Cicatrisante";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public MainCicatrisanteScroll(Serial serial) : base(serial)
@@ -1284,9 +1339,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RemedeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RemedeScroll)), 0x2268, amount)
+		public RemedeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RemedeSpell)), 0x1F2D, amount)
 		{
 			Name = "Remede";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public RemedeScroll(Serial serial) : base(serial)
@@ -1315,9 +1371,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurDePierreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDePierreScroll)), 0x2268, amount)
+		public MurDePierreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDePierreSpell)), 0x1F2D, amount)
 		{
 			Name = "Mur De Pierre";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public MurDePierreScroll(Serial serial) : base(serial)
@@ -1346,9 +1403,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RayonCelesteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RayonCelesteScroll)), 0x2268, amount)
+		public RayonCelesteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RayonCelesteSpell)), 0x1F2D, amount)
 		{
 			Name = "Rayon Celeste";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public RayonCelesteScroll(Serial serial) : base(serial)
@@ -1377,9 +1435,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LumiereSacreeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LumiereSacreeScroll)), 0x2268, amount)
+		public LumiereSacreeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LumiereSacreeSpell)), 0x1F2D, amount)
 		{
 			Name = "Lumiere Sacree";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public LumiereSacreeScroll(Serial serial) : base(serial)
@@ -1408,9 +1467,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FrayeurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrayeurScroll)), 0x2268, amount)
+		public FrayeurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrayeurSpell)), 0x1F2D, amount)
 		{
 			Name = "Frayeur";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public FrayeurScroll(Serial serial) : base(serial)
@@ -1439,9 +1499,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FerveurDivineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FerveurDivineScroll)), 0x2268, amount)
+		public FerveurDivineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FerveurDivineSpell)), 0x1F2D, amount)
 		{
 			Name = "Ferveur Divine";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public FerveurDivineScroll(Serial serial) : base(serial)
@@ -1470,9 +1531,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InquisitionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InquisitionScroll)), 0x2268, amount)
+		public InquisitionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InquisitionSpell)), 0x1F2D, amount)
 		{
 			Name = "Inquisition";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public InquisitionScroll(Serial serial) : base(serial)
@@ -1501,9 +1563,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurDeLumiereScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDeLumiereScroll)), 0x2268, amount)
+		public MurDeLumiereScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurDeLumiereSpell)), 0x1F2D, amount)
 		{
 			Name = "Mur De Lumiere";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public MurDeLumiereScroll(Serial serial) : base(serial)
@@ -1532,9 +1595,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DonDeLaVieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DonDeLaVieScroll)), 0x2268, amount)
+		public DonDeLaVieScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DonDeLaVieSpell)), 0x1F2D, amount)
 		{
 			Name = "Don De La Vie";
+			Hue = (int)AptitudeColor.Guerison;
 		}
 
 		public DonDeLaVieScroll(Serial serial) : base(serial)
@@ -1563,9 +1627,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ArmureDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ArmureDeGlaceScroll)), 0x226A, amount)
+		public ArmureDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ArmureDeGlaceSpell)), 0x1F2D, amount)
 		{
 			Name = "Armure De Glace";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public ArmureDeGlaceScroll(Serial serial) : base(serial)
@@ -1594,9 +1659,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RestaurationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RestaurationScroll)), 0x226A, amount)
+		public RestaurationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RestaurationSpell)), 0x1F2D, amount)
 		{
 			Name = "Restauration";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public RestaurationScroll(Serial serial) : base(serial)
@@ -1625,9 +1691,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SoinPreventifScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoinPreventifScroll)), 0x226A, amount)
+		public SoinPreventifScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoinPreventifSpell)), 0x1F2D, amount)
 		{
 			Name = "Soin Preventif";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public SoinPreventifScroll(Serial serial) : base(serial)
@@ -1656,9 +1723,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CageDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CageDeGlaceScroll)), 0x226A, amount)
+		public CageDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CageDeGlaceSpell)), 0x1F2D, amount)
 		{
 			Name = "Cage De Glace";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public CageDeGlaceScroll(Serial serial) : base(serial)
@@ -1687,9 +1755,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraCryogeniseeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraCryogeniseeScroll)), 0x226A, amount)
+		public AuraCryogeniseeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraCryogeniseeSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Cryogenisee";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public AuraCryogeniseeScroll(Serial serial) : base(serial)
@@ -1718,9 +1787,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PieuxDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PieuxDeGlaceScroll)), 0x226A, amount)
+		public PieuxDeGlaceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PieuxDeGlaceSpell)), 0x1F2D, amount)
 		{
 			Name = "Pieux De Glace";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public PieuxDeGlaceScroll(Serial serial) : base(serial)
@@ -1749,9 +1819,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CerveauGeleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CerveauGeleScroll)), 0x226A, amount)
+		public CerveauGeleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CerveauGeleSpell)), 0x1F2D, amount)
 		{
 			Name = "Cerveau Gele";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public CerveauGeleScroll(Serial serial) : base(serial)
@@ -1780,9 +1851,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraRefrigeranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraRefrigeranteScroll)), 0x226A, amount)
+		public AuraRefrigeranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraRefrigeranteSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Refrigerante";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public AuraRefrigeranteScroll(Serial serial) : base(serial)
@@ -1811,9 +1883,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AvatarDuFroidScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AvatarDuFroidScroll)), 0x226A, amount)
+		public AvatarDuFroidScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AvatarDuFroidSpell)), 0x1F2D, amount)
 		{
 			Name = "Avatar Du Froid";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public AvatarDuFroidScroll(Serial serial) : base(serial)
@@ -1842,9 +1915,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BlizzardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BlizzardScroll)), 0x226A, amount)
+		public BlizzardScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BlizzardSpell)), 0x1F2D, amount)
 		{
 			Name = "Blizzard";
+			Hue = (int)AptitudeColor.Hydromancie;
 		}
 
 		public BlizzardScroll(Serial serial) : base(serial)
@@ -1873,9 +1947,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SecondSouffleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SecondSouffleScroll)), 0x226C, amount)
+		public SecondSouffleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SecondSouffleSpell)), 0x1F2D, amount)
 		{
 			Name = "Second Souffle";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public SecondSouffleScroll(Serial serial) : base(serial)
@@ -1904,9 +1979,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ProvocationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ProvocationScroll)), 0x226C, amount)
+		public ProvocationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ProvocationSpell)), 0x1F2D, amount)
 		{
 			Name = "Provocation";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public ProvocationScroll(Serial serial) : base(serial)
@@ -1935,9 +2011,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SautDevastateurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SautDevastateurScroll)), 0x226C, amount)
+		public SautDevastateurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SautDevastateurSpell)), 0x1F2D, amount)
 		{
 			Name = "Saut Devastateur";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public SautDevastateurScroll(Serial serial) : base(serial)
@@ -1966,9 +2043,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DuelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DuelScroll)), 0x226C, amount)
+		public DuelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DuelSpell)), 0x1F2D, amount)
 		{
 			Name = "Duel";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public DuelScroll(Serial serial) : base(serial)
@@ -1997,9 +2075,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ChargeFurieuseScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ChargeFurieuseScroll)), 0x226C, amount)
+		public ChargeFurieuseScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ChargeFurieuseSpell)), 0x1F2D, amount)
 		{
 			Name = "Charge Furieuse";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public ChargeFurieuseScroll(Serial serial) : base(serial)
@@ -2028,9 +2107,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public EnrageScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EnrageScroll)), 0x226C, amount)
+		public EnrageScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EnrageSpell)), 0x1F2D, amount)
 		{
 			Name = "Enrage";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public EnrageScroll(Serial serial) : base(serial)
@@ -2059,9 +2139,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BouclierMagiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouclierMagiqueScroll)), 0x226C, amount)
+		public BouclierMagiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouclierMagiqueSpell)), 0x1F2D, amount)
 		{
 			Name = "Bouclier Magique";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public BouclierMagiqueScroll(Serial serial) : base(serial)
@@ -2090,9 +2171,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CommandementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CommandementScroll)), 0x226C, amount)
+		public CommandementScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CommandementSpell)), 0x1F2D, amount)
 		{
 			Name = "Commandement";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public CommandementScroll(Serial serial) : base(serial)
@@ -2121,9 +2203,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PresenceInspiranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PresenceInspiranteScroll)), 0x226C, amount)
+		public PresenceInspiranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PresenceInspiranteSpell)), 0x1F2D, amount)
 		{
 			Name = "Presence Inspirante";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public PresenceInspiranteScroll(Serial serial) : base(serial)
@@ -2152,9 +2235,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AngeGardienScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AngeGardienScroll)), 0x226C, amount)
+		public AngeGardienScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AngeGardienSpell)), 0x1F2D, amount)
 		{
 			Name = "Ange Gardien";
+			Hue = (int)AptitudeColor.Martial;
 		}
 
 		public AngeGardienScroll(Serial serial) : base(serial)
@@ -2183,9 +2267,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DiversionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DiversionScroll)), 0x226E, amount)
+		public DiversionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DiversionSpell)), 0x1F2D, amount)
 		{
 			Name = "Diversion";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public DiversionScroll(Serial serial) : base(serial)
@@ -2214,9 +2299,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CalmeToiScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CalmeToiScroll)), 0x226E, amount)
+		public CalmeToiScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CalmeToiSpell)), 0x1F2D, amount)
 		{
 			Name = "Calme-Toi";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public CalmeToiScroll(Serial serial) : base(serial)
@@ -2245,9 +2331,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DesorienterScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DesorienterScroll)), 0x226E, amount)
+		public DesorienterScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DesorienterSpell)), 0x1F2D, amount)
 		{
 			Name = "Desorienter";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public DesorienterScroll(Serial serial) : base(serial)
@@ -2277,9 +2364,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public DefiScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DefiScroll)), 0x226E, amount)
+		public DefiScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DefiSpell)), 0x1F2D, amount)
 		{
 			Name = "Defi";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public DefiScroll(Serial serial) : base(serial)
@@ -2300,20 +2388,21 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class DecrescendoManiaqueScroll : SpellScroll
+	public class DecrescendoManaiqueScroll : SpellScroll
 	{
 		[Constructable]
-		public DecrescendoManiaqueScroll() : this(1)
+		public DecrescendoManaiqueScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public DecrescendoManiaqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DecrescendoManiaqueScroll)), 0x226E, amount)
+		public DecrescendoManaiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(DecrescendoManaiqueSpell)), 0x1F2D, amount)
 		{
-			Name = "Decrescendo Maniaque";
+			Name = "Decrescendo Manaique";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
-		public DecrescendoManiaqueScroll(Serial serial) : base(serial)
+		public DecrescendoManaiqueScroll(Serial serial) : base(serial)
 		{
 		}
 
@@ -2339,9 +2428,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InspirationElementaireScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InspirationElementaireScroll)), 0x226E, amount)
+		public InspirationElementaireScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InspirationElementaireSpell)), 0x1F2D, amount)
 		{
 			Name = "Inspiration Elementaire";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public InspirationElementaireScroll(Serial serial) : base(serial)
@@ -2370,9 +2460,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AbsorbationSonoreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AbsorbationSonoreScroll)), 0x226E, amount)
+		public AbsorbationSonoreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AbsorbationSonoreSpell)), 0x1F2D, amount)
 		{
 			Name = "Absorbation Sonore";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public AbsorbationSonoreScroll(Serial serial) : base(serial)
@@ -2401,9 +2492,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ParfaiteAspirationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ParfaiteAspirationScroll)), 0x226E, amount)
+		public ParfaiteAspirationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ParfaiteAspirationSpell)), 0x1F2D, amount)
 		{
 			Name = "Parfaite Aspiration";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public ParfaiteAspirationScroll(Serial serial) : base(serial)
@@ -2432,9 +2524,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public RevelationDiscordanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RevelationDiscordanteScroll)), 0x226E, amount)
+		public RevelationDiscordanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(RevelationDiscordanteSpell)), 0x1F2D, amount)
 		{
 			Name = "Revelation Discordante";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public RevelationDiscordanteScroll(Serial serial) : base(serial)
@@ -2463,9 +2556,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public HavreDePaixScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(HavreDePaixScroll)), 0x226E, amount)
+		public HavreDePaixScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(HavreDePaixSpell)), 0x1F2D, amount)
 		{
 			Name = "Havre De Paix";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public HavreDePaixScroll(Serial serial) : base(serial)
@@ -2494,9 +2588,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SoifDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoifDeSangScroll)), 0x2270, amount)
+		public SoifDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoifDeSangSpell)), 0x1F2D, amount)
 		{
 			Name = "Soif De Sang";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public SoifDeSangScroll(Serial serial) : base(serial)
@@ -2525,9 +2620,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ToucheAbsorbantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucheAbsorbantScroll)), 0x2270, amount)
+		public ToucheAbsorbantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucheAbsorbantSpell)), 0x1F2D, amount)
 		{
 			Name = "Touche Absorbant";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
 		public ToucheAbsorbantScroll(Serial serial) : base(serial)
@@ -2556,9 +2652,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public InfectionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InfectionScroll)), 0x2270, amount)
+		public InfectionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InfectionSpell)), 0x1F2D, amount)
 		{
 			Name = "Infection";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public InfectionScroll(Serial serial) : base(serial)
@@ -2587,9 +2684,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ArmureOsScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ArmureOsScroll)), 0x2270, amount)
+		public ArmureOsScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ArmureOsSpell)), 0x1F2D, amount)
 		{
 			Name = "Armure d'Os";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public ArmureOsScroll(Serial serial) : base(serial)
@@ -2618,9 +2716,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FamilierMorbideScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FamilierMorbideScroll)), 0x2270, amount)
+		public FamilierMorbideScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FamilierMorbideSpell)), 0x1F2D, amount)
 		{
 			Name = "Familier Morbide";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public FamilierMorbideScroll(Serial serial) : base(serial)
@@ -2649,9 +2748,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ReanimationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ReanimationScroll)), 0x2270, amount)
+		public ReanimationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ReanimationSpell)), 0x1F2D, amount)
 		{
 			Name = "Reanimation";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public ReanimationScroll(Serial serial) : base(serial)
@@ -2680,9 +2780,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public ConsommationMortelleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ConsommationMortelleScroll)), 0x2270, amount)
+		public ConsommationMortelleScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ConsommationMortelleSpell)), 0x1F2D, amount)
 		{
 			Name = "Consommation Mortelle";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public ConsommationMortelleScroll(Serial serial) : base(serial)
@@ -2711,9 +2812,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraVampiriqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraVampiriqueScroll)), 0x2270, amount)
+		public AuraVampiriqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraVampiriqueSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Vampirique";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public AuraVampiriqueScroll(Serial serial) : base(serial)
@@ -2742,9 +2844,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AppelDuSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AppelDuSangScroll)), 0x2270, amount)
+		public AppelDuSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AppelDuSangSpell)), 0x1F2D, amount)
 		{
 			Name = "Appel Du Sang";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public AppelDuSangScroll(Serial serial) : base(serial)
@@ -2773,9 +2876,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PluieDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PluieDeSangScroll)), 0x2270, amount)
+		public PluieDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PluieDeSangSpell)), 0x1F2D, amount)
 		{
 			Name = "Pluie De Sang";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public PluieDeSangScroll(Serial serial) : base(serial)
@@ -2804,9 +2908,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeCycloniqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeCycloniqueScroll)), 0x2272, amount)
+		public FormeCycloniqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeCycloniqueSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Cyclonique";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeCycloniqueScroll(Serial serial) : base(serial)
@@ -2835,9 +2940,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeMetalliqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeMetalliqueScroll)), 0x2272, amount)
+		public FormeMetalliqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeMetalliqueSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Metallique";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeMetalliqueScroll(Serial serial) : base(serial)
@@ -2866,9 +2972,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeTerrestreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeTerrestreScroll)), 0x2272, amount)
+		public FormeTerrestreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeTerrestreSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Terrestre";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeTerrestreScroll(Serial serial) : base(serial)
@@ -2897,9 +3004,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeEmpoisonneeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEmpoisonneeScroll)), 0x2272, amount)
+		public FormeEmpoisonneeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEmpoisonneeSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Empoisonnee";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeEmpoisonneeScroll(Serial serial) : base(serial)
@@ -2928,9 +3036,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeGivranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeGivranteScroll)), 0x2272, amount)
+		public FormeGivranteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeGivranteSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Givrante";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeGivranteScroll(Serial serial) : base(serial)
@@ -2959,9 +3068,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeLiquideScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeLiquideScroll)), 0x2272, amount)
+		public FormeLiquideScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeLiquideSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Liquide";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeLiquideScroll(Serial serial) : base(serial)
@@ -2990,9 +3100,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeCristallineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeCristallineScroll)), 0x2272, amount)
+		public FormeCristallineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeCristallineSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Cristalline";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeCristallineScroll(Serial serial) : base(serial)
@@ -3021,9 +3132,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeElectrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeElectrisanteScroll)), 0x2272, amount)
+		public FormeElectrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeElectrisanteSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Electrisante";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeElectrisanteScroll(Serial serial) : base(serial)
@@ -3052,9 +3164,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeEnflammeeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEnflammeeScroll)), 0x2272, amount)
+		public FormeEnflammeeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEnflammeeSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Enflammee";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeEnflammeeScroll(Serial serial) : base(serial)
@@ -3083,9 +3196,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FormeEnsanglanteeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEnsanglanteeScroll)), 0x2272, amount)
+		public FormeEnsanglanteeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FormeEnsanglanteeSpell)), 0x1F2D, amount)
 		{
 			Name = "Forme Ensanglantee";
+			Hue = (int)AptitudeColor.Polymorphie;
 		}
 
 		public FormeEnsanglanteeScroll(Serial serial) : base(serial)
@@ -3115,9 +3229,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BouclierDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouclierDeFeuScroll)), 0x2274, amount)
+		public BouclierDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouclierDeFeuSpell)), 0x1F2D, amount)
 		{
 			Name = "Bouclier De Feu";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public BouclierDeFeuScroll(Serial serial) : base(serial)
@@ -3146,9 +3261,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public BouleDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouleDeFeuScroll)), 0x2274, amount)
+		public BouleDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(BouleDeFeuSpell)), 0x1F2D, amount)
 		{
 			Name = "Boule De Feu";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public BouleDeFeuScroll(Serial serial) : base(serial)
@@ -3177,9 +3293,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CeleriteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CeleriteScroll)), 0x2274, amount)
+		public CeleriteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CeleriteSpell)), 0x1F2D, amount)
 		{
 			Name = "Celerite";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public CeleriteScroll(Serial serial) : base(serial)
@@ -3208,9 +3325,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SupernovaScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SupernovaScroll)), 0x2274, amount)
+		public SupernovaScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SupernovaSpell)), 0x1F2D, amount)
 		{
 			Name = "Supernova";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public SupernovaScroll(Serial serial) : base(serial)
@@ -3239,9 +3357,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraRechauffanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraRechauffanteScroll)), 0x2274, amount)
+		public AuraRechauffanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraRechauffanteSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Rechauffante";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public AuraRechauffanteScroll(Serial serial) : base(serial)
@@ -3270,9 +3389,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FrenesieDouloureuseScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrenesieDouloureuseScroll)), 0x2274, amount)
+		public FrenesieDouloureuseScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FrenesieDouloureuseSpell)), 0x1F2D, amount)
 		{
 			Name = "Frenesie Douloureuse";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public FrenesieDouloureuseScroll(Serial serial) : base(serial)
@@ -3301,9 +3421,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public FolieArdenteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FolieArdenteScroll)), 0x2274, amount)
+		public FolieArdenteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(FolieArdenteSpell)), 0x1F2D, amount)
 		{
 			Name = "Folie Ardente";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public FolieArdenteScroll(Serial serial) : base(serial)
@@ -3332,9 +3453,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AuraExaltationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraExaltationScroll)), 0x2274, amount)
+		public AuraExaltationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraExaltationSpell)), 0x1F2D, amount)
 		{
 			Name = "Aura Exaltation";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public AuraExaltationScroll(Serial serial) : base(serial)
@@ -3363,9 +3485,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CageDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CageDeFeuScroll)), 0x2274, amount)
+		public CageDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CageDeFeuSpell)), 0x1F2D, amount)
 		{
 			Name = "Cage De Feu";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public CageDeFeuScroll(Serial serial) : base(serial)
@@ -3394,9 +3517,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public PassionArdenteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PassionArdenteScroll)), 0x2274, amount)
+		public PassionArdenteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(PassionArdenteSpell)), 0x1F2D, amount)
 		{
 			Name = "Passion Ardente";
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public PassionArdenteScroll(Serial serial) : base(serial)
@@ -3425,9 +3549,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AdrenalineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AdrenalineScroll)), 0x2276, amount)
+		public AdrenalineScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AdrenalineSpell)), 0x1F2D, amount)
 		{
 			Name = "Adrenaline";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public AdrenalineScroll(Serial serial) : base(serial)
@@ -3456,9 +3581,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public SommeilScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SommeilScroll)), 0x2276, amount)
+		public SommeilScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SommeilSpell)), 0x1F2D, amount)
 		{
 			Name = "Sommeil";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public SommeilScroll(Serial serial) : base(serial)
@@ -3487,9 +3613,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LancerPrecisScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LancerPrecisScroll)), 0x2276, amount)
+		public LancerPrecisScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LancerPrecisSpell)), 0x1F2D, amount)
 		{
 			Name = "Lancer Precis";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public LancerPrecisScroll(Serial serial) : base(serial)
@@ -3518,9 +3645,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupArriereScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupArriereScroll)), 0x2276, amount)
+		public CoupArriereScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupArriereSpell)), 0x1F2D, amount)
 		{
 			Name = "Coup Arriere";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public CoupArriereScroll(Serial serial) : base(serial)
@@ -3549,9 +3677,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public EvasionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EvasionScroll)), 0x2276, amount)
+		public EvasionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(EvasionSpell)), 0x1F2D, amount)
 		{
 			Name = "Evasion";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public EvasionScroll(Serial serial) : base(serial)
@@ -3580,9 +3709,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AttiranceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AttiranceScroll)), 0x2276, amount)
+		public AttiranceScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AttiranceSpell)), 0x1F2D, amount)
 		{
 			Name = "Attirance";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public AttiranceScroll(Serial serial) : base(serial)
@@ -3611,9 +3741,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MainBlesseeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MainBlesseeScroll)), 0x2276, amount)
+		public MainBlesseeScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MainBlesseeSpell)), 0x1F2D, amount)
 		{
 			Name = "Main Blessee";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public MainBlesseeScroll(Serial serial) : base(serial)
@@ -3642,9 +3773,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupureDesTendonsScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupureDesTendonsScroll)), 0x2276, amount)
+		public CoupureDesTendonsScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupureDesTendonsSpell)), 0x1F2D, amount)
 		{
 			Name = "Coupure Des Tendons";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public CoupureDesTendonsScroll(Serial serial) : base(serial)
@@ -3673,9 +3805,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public GazEndormantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(GazEndormantScroll)), 0x2276, amount)
+		public GazEndormantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(GazEndormantSpell)), 0x1F2D, amount)
 		{
 			Name = "Gaz Endormant";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public GazEndormantScroll(Serial serial) : base(serial)
@@ -3704,9 +3837,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public CoupMortelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupMortelScroll)), 0x2276, amount)
+		public CoupMortelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupMortelSpell)), 0x1F2D, amount)
 		{
 			Name = "Coup Mortel";
+			Hue = (int)AptitudeColor.Roublardise;
 		}
 
 		public CoupMortelScroll(Serial serial) : base(serial)
@@ -3735,9 +3869,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeFeuScroll)), 0x2278, amount)
+		public TotemDeFeuScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeFeuSpell)), 0x1F2D, amount)
 		{
 			Name = "Totem De Feu";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public TotemDeFeuScroll(Serial serial) : base(serial)
@@ -3766,9 +3901,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeauScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeauScroll)), 0x2276, amount)
+		public TotemDeauScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeauSpell)), 0x1F2D, amount)
 		{
 			Name = "Totem D'eau";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public TotemDeauScroll(Serial serial) : base(serial)
@@ -3797,9 +3933,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public TotemDeTerreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeTerreScroll)), 0x2276, amount)
+		public TotemDeTerreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeTerreSpell)), 0x1F2D, amount)
 		{
 			Name = "Totem De Terre";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public TotemDeTerreScroll(Serial serial) : base(serial)
@@ -3820,20 +3957,21 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class TotemDeVentScroll : SpellScroll
+	public class TotemDuVentScroll : SpellScroll
 	{
 		[Constructable]
-		public TotemDeVentScroll() : this(1)
+		public TotemDuVentScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public TotemDeVentScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDeVentScroll)), 0x2276, amount)
+		public TotemDuVentScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(TotemDuVentSpell)), 0x1F2D, amount)
 		{
-			Name = "Totem De Vent";
+			Name = "Totem Du Vent";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
-		public TotemDeVentScroll(Serial serial) : base(serial)
+		public TotemDuVentScroll(Serial serial) : base(serial)
 		{
 		}
 
@@ -3859,9 +3997,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AbsorbationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AbsorbationScroll)), 0x2276, amount)
+		public AbsorbationScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AbsorbationSpell)), 0x1F2D, amount)
 		{
 			Name = "Absorbation";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public AbsorbationScroll(Serial serial) : base(serial)
@@ -3890,9 +4029,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public LierParEspritScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LierParEspritScroll)), 0x2276, amount)
+		public LierParEspritScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(LierParEspritSpell)), 0x1F2D, amount)
 		{
 			Name = "Lier Par Esprit";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public LierParEspritScroll(Serial serial) : base(serial)
@@ -3913,20 +4053,21 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class SuperChargeurScroll : SpellScroll
+	public class SuperChargerScroll : SpellScroll
 	{
 		[Constructable]
-		public SuperChargeurScroll() : this(1)
+		public SuperChargerScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SuperChargeurScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SuperChargeurScroll)), 0x2276, amount)
+		public SuperChargerScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SuperChargerSpell)), 0x1F2D, amount)
 		{
-			Name = "Super Chargeur";
+			Name = "Super Charger";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
-		public SuperChargeurScroll(Serial serial) : base(serial)
+		public SuperChargerScroll(Serial serial) : base(serial)
 		{
 		}
 
@@ -3952,9 +4093,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MurTotemiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurTotemiqueScroll)), 0x2276, amount)
+		public MurTotemiqueScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MurTotemiqueSpell)), 0x1F2D, amount)
 		{
 			Name = "Mur Totemique";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public MurTotemiqueScroll(Serial serial) : base(serial)
@@ -3983,9 +4125,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public AppelSpirituelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AppelSpirituelScroll)), 0x2276, amount)
+		public AppelSpirituelScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AppelSpirituelSpell)), 0x1F2D, amount)
 		{
 			Name = "Appel Spirituel";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public AppelSpirituelScroll(Serial serial) : base(serial)
@@ -4014,9 +4157,10 @@ namespace Server.Items
 		}
 
 		[Constructable]
-		public MarcheAsuivreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MarcheAsuivreScroll)), 0x2276, amount)
+		public MarcheAsuivreScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(MarcheAsuivreSpell)), 0x1F2D, amount)
 		{
 			Name = "Marche A Suivre";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public MarcheAsuivreScroll(Serial serial) : base(serial)

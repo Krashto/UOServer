@@ -37,7 +37,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 92.0);
 
-			ControlSlots = 1;
+			ControlSlots = 2;
 			CantWalk = true;
 			ControlOrder = OrderType.Stay;
 			AddItem(new LightSource());
@@ -54,7 +54,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 		public override void OnThink()
 		{
-			CantWalk = true;
+			CantWalk = !MarcheASuivreEnable;
 
 			if (NextThinkingTime >= DateTime.Now)
 				return;

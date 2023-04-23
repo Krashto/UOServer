@@ -7,6 +7,7 @@
 		[Constructable]
 		public MagicResistTrainingWand() : base()
 		{
+			Hue = (int)AptitudeColor.Geomancie;
 		}
 
 		public MagicResistTrainingWand(Serial serial) : base(serial)

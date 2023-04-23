@@ -1117,7 +1117,7 @@ namespace Server.Items
                             }
 
                             List<Item> items = m_House.GetItems();
-                            List<Mobile> mobiles = m_House.GeCustomPlayerMobiles();
+                            List<Mobile> mobiles = m_House.GetMobiles();
 
                             newHouse.MoveToWorld(new Point3D(m_House.X + m_House.ConvertOffsetX, m_House.Y + m_House.ConvertOffsetY, m_House.Z + m_House.ConvertOffsetZ), m_House.Map);
                             m_House.Delete();

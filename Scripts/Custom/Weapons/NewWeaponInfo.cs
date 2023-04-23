@@ -135,9 +135,7 @@ namespace Server.Custom.Weapons
 			else if (weapon is BaseStaff)
 				return "Staff";
 			else if (weapon is BaseBashing)
-				return "Bashing" ;
-			else if (weapon is Fists)
-				return "Fist";
+				return "Bashing";
 			else if (weapon is Bow)
 				return "Bow";
 			else if (weapon is ElvenCompositeLongbow)
@@ -146,6 +144,10 @@ namespace Server.Custom.Weapons
 				return "Crossbow";
 			else if (weapon is HeavyCrossbow)
 				return "Heavy Crossbow";
+			else if (weapon is Fists)
+				return "Fist";
+			else if (weapon is BaseKatar)
+				return "Katar";
 
 			return string.Empty;
 		}
@@ -173,8 +175,6 @@ namespace Server.Custom.Weapons
 				return typeof(Block);
 			else if (weapon is BaseBashing)
 				return typeof(CrushingBlow);
-			else if (weapon is Fists)
-				return typeof(ParalyzingBlow);
 			else if (weapon is Bow)
 				return typeof(MovingShot);
 			else if (weapon is ElvenCompositeLongbow)
@@ -183,6 +183,10 @@ namespace Server.Custom.Weapons
 				return typeof(SerpentArrow);
 			else if (weapon is HeavyCrossbow)
 				return typeof(ArmorPierce);
+			else if (weapon is Fists)
+				return typeof(ParalyzingBlow);
+			else if (weapon is BaseKatar)
+				return typeof(ParalyzingBlow);
 
 			return null;
 		}

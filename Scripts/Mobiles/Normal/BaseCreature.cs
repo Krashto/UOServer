@@ -1956,7 +1956,7 @@ namespace Server.Mobiles
 			}
 			else
 			{
-				var cookingBonus = from.Skills[SkillName.Cooking].Value / 30.0;
+				var cookingBonus = 1 + from.Skills[SkillName.Cooking].Value / 50.0;
 
 				feathers = (int)Math.Ceiling(feathers * cookingBonus);
 				wool = (int)Math.Ceiling(wool * cookingBonus);
@@ -3510,22 +3510,24 @@ namespace Server.Mobiles
 			get { return m_dMinTameSkill; }
 			set
 			{
-				double skill = m_dMinTameSkill;
+				m_dMinTameSkill = Level * 5;
 
-				if (skill != value)
-				{
-					m_dMinTameSkill = value;
-					double adjusted = CurrentTameSkill - skill;
+				//double skill = m_dMinTameSkill;
 
-					if (adjusted > 0)
-					{
-						m_CurrentTameSkill = value + adjusted;
-					}
-					else
-					{
-						m_CurrentTameSkill = value;
-					}
-				}
+				//if (skill != value)
+				//{
+				//	m_dMinTameSkill = value;
+				//	double adjusted = CurrentTameSkill - skill;
+
+				//	if (adjusted > 0)
+				//	{
+				//		m_CurrentTameSkill = value + adjusted;
+				//	}
+				//	else
+				//	{
+				//		m_CurrentTameSkill = value;
+				//	}
+				//}
 			}
 		}
 
@@ -5049,55 +5051,10 @@ namespace Server.Mobiles
 			//Weapons
 			if (Utility.Random(0, 100) < Level * 5)
 			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseWeapon));
-				if (item is BaseWeapon weapon)
+				for (int i = 0; i <= Level / 2; i++)
 				{
-					if (!weapon.IsArtifact)
-						AddLoot(item);
-				}
-			}
-
-			//BaseRanged
-			if (Utility.Random(0, 100) < Level * 5)
-			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseRanged));
-				if (item is BaseRanged weapon)
-				{
-					if (!weapon.IsArtifact)
-						AddLoot(item);
-				}
-			}
-
-			//BaseArmor
-			if (Utility.Random(0, 100) < Level * 5)
-			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseArmor));
-				if (item is BaseArmor armor)
-				{
-					if (!armor.IsArtifact)
-						AddLoot(item);
-				}
-			}
-
-			//BaseShield
-			if (Utility.Random(0, 100) < Level * 5)
-			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseShield));
-				if (item is BaseShield shield)
-				{
-					if (!shield.IsArtifact)
-						AddLoot(item);
-				}
-			}
-
-			//BaseJewel
-			if (Utility.Random(0, 100) < Level * 5)
-			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseJewel));
-				if (item is BaseJewel jewel)
-				{
-					if (!jewel.IsArtifact)
-						AddLoot(item);
+					var item = Loot.RandomArmorOrShieldOrWeaponOrJewelry();
+					AddLoot(item);
 				}
 			}
 

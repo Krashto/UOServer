@@ -77,7 +77,7 @@ namespace Server.SkillHandlers
 
                 if (range > 0)
                 {
-     /*               IPooledEnumerable inRange = src.Map.GeCustomPlayerMobilesInRange(p, range);
+     /*               IPooledEnumerable inRange = src.Map.GetMobilesInRange(p, range);
 
                    foreach (Mobile trg in inRange)
                     {

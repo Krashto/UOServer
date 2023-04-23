@@ -10,7 +10,7 @@ namespace Server.Items
     {
         private static readonly Hashtable m_Table = new Hashtable();
 
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Maîtrise de la défense";
 		public override int Id => 17;
@@ -28,7 +28,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

@@ -38,7 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 85.0);
 
-			ControlSlots = 1;
+			ControlSlots = 2;
 		}
 
 		public TotemDeau(Serial serial)

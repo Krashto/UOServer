@@ -15,7 +15,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				Reagent.EssenceNecromancie
 			);
 
-		public override int RequiredAptitudeValue { get { return 2; } }
+		public override int RequiredAptitudeValue { get { return 8; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Necromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Necromancy; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

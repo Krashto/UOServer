@@ -27,9 +27,10 @@ namespace Server.Items
         public override float Speed => 3.00f;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 60;
-        public override WeaponAnimation DefAnimation => WeaponAnimation.Slash1H;
-		
-        public override void Serialize(GenericWriter writer)
+        public override WeaponAnimation DefAnimation => WeaponAnimation.Bash1H;
+        public override SkillName DefSkill => SkillName.Macing;
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0); // version

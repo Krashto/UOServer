@@ -406,10 +406,10 @@ namespace Server
 			if (PiedsAuSolSpell.IsActive(m))
 				totalDamage /= 4;
 
-			if (PassionArdenteSpell.IsActive(m))
+			if (m != null && PassionArdenteSpell.IsActive(m))
 				m.Heal(totalDamage * fire / 200 / 2);
 
-			if (PassionArdenteSpell.IsActive(from))
+			if (from != null && PassionArdenteSpell.IsActive(from))
 				from.Heal(totalDamage * fire / 200 / 2);
 
 			if (totalDamage > 0)

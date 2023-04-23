@@ -5,7 +5,7 @@ namespace Server.Items
 {
     public class ForceOfNature : WeaponAbility
     {
-        public override int BaseMana => 35;
+        public override int BaseStamina => 35;
 
 		public override string Name => "Force de la nature";
 
@@ -13,7 +13,7 @@ namespace Server.Items
 
 		public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

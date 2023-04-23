@@ -2922,7 +2922,7 @@ namespace Server.Mobiles
 
             int count = 0;
 
-            Mobile foundmobile = FindInRecenCustomPlayerMobileSearchList(fromspawner, name, typestr);
+            Mobile foundmobile = FindInRecentMobileSearchList(fromspawner, name, typestr);
 
             if (foundmobile != null) return foundmobile;
 
@@ -2950,7 +2950,7 @@ namespace Server.Mobiles
             if (count == 1)
             {
                 // add this to the recent search list
-                AddToRecenCustomPlayerMobileSearchList(fromspawner, foundmobile);
+                AddToRecentMobileSearchList(fromspawner, foundmobile);
 
                 return (foundmobile);
             }
@@ -3121,27 +3121,27 @@ namespace Server.Mobiles
             return (founditem);
         }
 
-        public static void AddToRecenCustomPlayerMobileSearchList(XmlSpawner spawner, Mobile target)
+        public static void AddToRecentMobileSearchList(XmlSpawner spawner, Mobile target)
         {
             if (spawner == null || target == null) return;
 
-            if (spawner.RecenCustomPlayerMobileSearchList == null)
+            if (spawner.RecentMobileSearchList == null)
             {
-                spawner.RecenCustomPlayerMobileSearchList = new List<Mobile>();
+                spawner.RecentMobileSearchList = new List<Mobile>();
             }
 
-            spawner.RecenCustomPlayerMobileSearchList.Add(target);
+            spawner.RecentMobileSearchList.Add(target);
 
             // check the length and truncate if it gets too long
-            if (spawner.RecenCustomPlayerMobileSearchList.Count > 100)
+            if (spawner.RecentMobileSearchList.Count > 100)
             {
-                spawner.RecenCustomPlayerMobileSearchList.RemoveAt(0);
+                spawner.RecentMobileSearchList.RemoveAt(0);
             }
         }
 
-        public static Mobile FindInRecenCustomPlayerMobileSearchList(XmlSpawner spawner, string name, string typestr)
+        public static Mobile FindInRecentMobileSearchList(XmlSpawner spawner, string name, string typestr)
         {
-            if (spawner == null || name == null || spawner.RecenCustomPlayerMobileSearchList == null) return null;
+            if (spawner == null || name == null || spawner.RecentMobileSearchList == null) return null;
 
             List<Mobile> deletelist = null;
             Mobile foundmobile = null;
@@ -3152,7 +3152,7 @@ namespace Server.Mobiles
                 targettype = SpawnerType.GetType(typestr);
             }
 
-            foreach (Mobile m in spawner.RecenCustomPlayerMobileSearchList)
+            foreach (Mobile m in spawner.RecentMobileSearchList)
             {
                 if (m.Deleted)
                 {
@@ -3177,7 +3177,7 @@ namespace Server.Mobiles
             if (deletelist != null)
             {
                 foreach (Mobile i in deletelist)
-                    spawner.RecenCustomPlayerMobileSearchList.Remove(i);
+                    spawner.RecentMobileSearchList.Remove(i);
             }
 
             return (foundmobile);

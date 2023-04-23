@@ -12,7 +12,7 @@ namespace Server.Items
         private static readonly Dictionary<Mobile, FeintTimer> m_Registry = new Dictionary<Mobile, FeintTimer>();
         public static Dictionary<Mobile, FeintTimer> Registry => m_Registry;
 
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override string Name => "Feinte";
 
@@ -20,7 +20,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             if (Registry.ContainsKey(attacker))

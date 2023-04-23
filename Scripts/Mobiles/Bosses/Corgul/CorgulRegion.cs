@@ -107,7 +107,7 @@ namespace Server.Regions
 
         public void RemovePlayers(bool message)
         {
-            List<Mobile> list = GeCustomPlayerMobiles();
+            List<Mobile> list = GetMobiles();
 
             foreach (Mobile m in list)
             {

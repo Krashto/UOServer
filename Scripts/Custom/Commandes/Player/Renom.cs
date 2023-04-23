@@ -41,7 +41,13 @@ namespace Server.Scripts.Commands
                 {
 					BaseClothing item = (BaseClothing)targeted;
 
-                    if (item.IsChildOf(from.Backpack)) 
+					if (item.PlayerConstructed && item.Crafter != from)
+					{
+						from.SendMessage("Seul le fabriquant peut renommer l'item.");
+						return;
+					}
+
+					if (item.IsChildOf(from.Backpack)) 
                         item.Name = m_Name;
                     else
                         from.SendMessage("L'item doit être dans votre sac.");
@@ -49,6 +55,12 @@ namespace Server.Scripts.Commands
 				else if (targeted is BaseArmor)
 				{
 					BaseArmor item = (BaseArmor)targeted;
+
+					if (item.PlayerConstructed && item.Crafter != from)
+					{
+						from.SendMessage("Seul le fabriquant peut renommer l'item.");
+						return;
+					}
 
 					if (item.IsChildOf(from.Backpack))
 						item.Name = m_Name;
@@ -58,6 +70,12 @@ namespace Server.Scripts.Commands
 				else if (targeted is BaseWeapon)
 				{
 					BaseWeapon item = (BaseWeapon)targeted;
+
+					if (item.PlayerConstructed && item.Crafter != from)
+					{
+						from.SendMessage("Seul le fabriquant peut renommer l'item.");
+						return;
+					}
 
 					if (item.IsChildOf(from.Backpack))
 						item.Name = m_Name;
@@ -95,6 +113,12 @@ namespace Server.Scripts.Commands
 				{
 					CraftableFurniture item = (CraftableFurniture)targeted;
 
+					if (item.PlayerConstructed && item.Crafter != from)
+					{
+						from.SendMessage("Seul le fabriquant peut renommer l'item.");
+						return;
+					}
+
 					if (item.IsChildOf(from.Backpack))
 						item.Name = m_Name;
 					else
@@ -113,8 +137,6 @@ namespace Server.Scripts.Commands
                 {
                     from.SendMessage("Vous devez choisir un Item.");
                 }
-
-				
             }
         }
 	}

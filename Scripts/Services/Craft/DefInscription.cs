@@ -260,7 +260,7 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(AuraFortifianteScroll), "Géo. - Aura fortifiante", 5);
 			AddSpell("Sorts", typeof(MurDePlanteScroll), "Géo. - Mur de plante", 6);
 			AddSpell("Sorts", typeof(ExplosionDeRochesScroll), "Géo. - Explosion de roche", 7);
-			AddSpell("Sorts", typeof(AuraPreservationManiaqueScroll), "Géo. - Aura préserv. manaique", 8);
+			AddSpell("Sorts", typeof(AuraPreservationManaiqueScroll), "Géo. - Aura préserv. manaique", 8);
 			AddSpell("Sorts", typeof(RacinesScroll), "Géo. - Racines", 9);
 			AddSpell("Sorts", typeof(FleauTerrestreScroll), "Géo. - Fléau terrestre", 10);
 
@@ -301,7 +301,7 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(CalmeToiScroll), "Musique - Calme toi!", 2);
 			AddSpell("Sorts", typeof(DesorienterScroll), "Musique - Désorienter", 3);
 			AddSpell("Sorts", typeof(DefiScroll), "Musique - Defi", 4);
-			AddSpell("Sorts", typeof(DecrescendoManiaqueScroll), "Musique - Decrescendo mana.", 5);
+			AddSpell("Sorts", typeof(DecrescendoManaiqueScroll), "Musique - Decrescendo mana.", 5);
 			AddSpell("Sorts", typeof(InspirationElementaireScroll), "Musique - Inspiration élément.", 6);
 			AddSpell("Sorts", typeof(AbsorbationSonoreScroll), "Musique - Absorba. sonore", 7);
 			AddSpell("Sorts", typeof(ParfaiteAspirationScroll), "Musique - Parfaite aspirat.", 8);
@@ -355,10 +355,10 @@ namespace Server.Engines.Craft
 			AddSpell("Sorts", typeof(TotemDeFeuScroll), "Toté. - Totem de feu", 1);
 			AddSpell("Sorts", typeof(TotemDeauScroll), "Toté. - Totem d'eau", 2);
 			AddSpell("Sorts", typeof(TotemDeTerreScroll), "Toté. - Totem de terre", 3);
-			AddSpell("Sorts", typeof(TotemDeVentScroll), "Toté. - Totem de vent", 4);
+			AddSpell("Sorts", typeof(TotemDuVentScroll), "Toté. - Totem de vent", 4);
 			AddSpell("Sorts", typeof(AbsorbationScroll), "Toté. - Absorbation", 5);
 			AddSpell("Sorts", typeof(LierParEspritScroll), "Toté. - Lier par l'esprit", 6);
-			AddSpell("Sorts", typeof(SuperChargeurScroll), "Toté. - Super chargeur", 7);
+			AddSpell("Sorts", typeof(SuperChargerScroll), "Toté. - Super chargeur", 7);
 			AddSpell("Sorts", typeof(MurTotemiqueScroll), "Toté. - Mur totémique", 8);
 			AddSpell("Sorts", typeof(AppelSpirituelScroll), "Toté. - Appel spirituel", 9);
 			AddSpell("Sorts", typeof(MarcheAsuivreScroll), "Toté. - Marche à suivre", 10);

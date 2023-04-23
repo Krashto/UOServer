@@ -63,28 +63,40 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				int endY = m.Location.Y + range / 2;
 
 				for (int y = startY; y <= endY; y++)
+				{
 					new InternalItem(0x3956, hue, new Point3D(startX, y, m.Location.Z), Caster, Caster.Map, duration, true);
+					new InternalItem(0x82, hue, new Point3D(startX, y, m.Location.Z), Caster, Caster.Map, duration, false);
+				}
 
 				startX = m.Location.X - range / 2;
 				startY = m.Location.Y - range / 2;
 				int endX = m.Location.X + range / 2;
 
 				for (int x = startX; x <= endX; x++)
+				{
 					new InternalItem(0x3946, hue, new Point3D(x, startY, m.Location.Z), Caster, Caster.Map, duration, true);
+					new InternalItem(0x82, hue, new Point3D(x, startY, m.Location.Z), Caster, Caster.Map, duration, false);
+				}
 
 				startX = m.Location.X - range / 2;
 				startY = m.Location.Y + range / 2;
 				endX = m.Location.X + range / 2;
 
 				for (int x = startX; x <= endX; x++)
+				{
 					new InternalItem(0x3946, hue, new Point3D(x, startY, m.Location.Z), Caster, Caster.Map, duration, true);
+					new InternalItem(0x82, hue, new Point3D(x, startY, m.Location.Z), Caster, Caster.Map, duration, false);
+				}
 
 				startX = m.Location.X + range / 2;
 				startY = m.Location.Y - range / 2;
 				endY = m.Location.Y + range / 2;
 
 				for (int y = startY; y <= endY; y++)
+				{
 					new InternalItem(0x3956, hue, new Point3D(startX, y, m.Location.Z), Caster, Caster.Map, duration, true);
+					new InternalItem(0x82, hue, new Point3D(startX, y, m.Location.Z), Caster, Caster.Map, duration, false);
+				}
 			}
 
 			FinishSequence();

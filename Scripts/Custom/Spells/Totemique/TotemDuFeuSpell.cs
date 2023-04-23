@@ -4,10 +4,10 @@ using System;
 
 namespace Server.Custom.Spells.NewSpells.Totemique
 {
-    public class TotemDuFeuSpell : Spell
+    public class TotemDeFeuSpell : Spell
     {
         private static readonly SpellInfo m_Info = new SpellInfo(
-				"Totem du feu", "[Totem du feu]",
+				"Totem de feu", "[Totem de feu]",
 				SpellCircle.Eighth,
 				269,
 				9050,
@@ -23,7 +23,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if ((Caster.Followers + 1) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
+			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
 			{
 				Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 				return false;
@@ -32,7 +32,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			return true;
 		}
 
-		public TotemDuFeuSpell(Mobile caster, Item scroll)
+		public TotemDeFeuSpell(Mobile caster, Item scroll)
             : base(caster, scroll, m_Info)
         {
         }

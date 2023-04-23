@@ -14,7 +14,7 @@ namespace Server.Items
     {
         public static readonly TimeSpan BlockEquipDuration = TimeSpan.FromSeconds(5.0);
 
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Désarmer";
 		public override int Id => 5;
@@ -36,7 +36,7 @@ namespace Server.Items
 
             ClearCurrentAbility(attacker);
 
-			if (CheckMana(attacker, true))
+			if (CheckStamina(attacker, true))
 				DoEffect(attacker, defender);
 		}
 
@@ -59,11 +59,14 @@ namespace Server.Items
 			if (pack == null || (toDisarm != null && !toDisarm.Movable))
 			{
 				attacker.SendLocalizedMessage(1004001); // You cannot disarm your opponent.
+				return;
 			}
 			else if (toDisarm == null || toDisarm is BaseShield)
 			{
 				attacker.SendLocalizedMessage(1060849); // Your target is already unarmed!
+				return;
 			}
+
 			attacker.SendLocalizedMessage(1060092); // You disarm their weapon!
 			defender.SendLocalizedMessage(1060093); // Your weapon has been disarmed!
 

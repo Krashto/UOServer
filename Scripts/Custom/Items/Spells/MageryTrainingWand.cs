@@ -7,6 +7,7 @@
 		[Constructable]
 		public MageryTrainingWand() : base()
 		{
+			Hue = (int)AptitudeColor.Pyromancie;
 		}
 
 		public MageryTrainingWand(Serial serial) : base(serial)

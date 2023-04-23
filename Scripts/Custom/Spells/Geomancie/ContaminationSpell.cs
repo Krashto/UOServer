@@ -51,16 +51,11 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				else
 					level = 0;
 
-				if (CheckResisted(m))
-					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
-				else
+				if (!InsensibleSpell.IsActive(m))
 				{
-					if (!InsensibleSpell.IsActive(m))
-					{
-						m.ApplyPoison(Caster, Poison.GetPoison(level));
-						ExplodeFX.Poison.CreateInstance(m, m.Map, 0).Send();
-						CustomUtility.ApplySimpleSpellEffect(m, "Contamination", AptitudeColor.Geomancie, SpellEffectType.Damage);
-					}
+					m.ApplyPoison(Caster, Poison.GetPoison(level));
+					ExplodeFX.Poison.CreateInstance(m, m.Map, 0).Send();
+					CustomUtility.ApplySimpleSpellEffect(m, "Contamination", AptitudeColor.Geomancie, SpellEffectType.Damage);
 				}
 
 				m.FixedParticles(0x374A, 10, 15, 5021, EffectLayer.Waist);

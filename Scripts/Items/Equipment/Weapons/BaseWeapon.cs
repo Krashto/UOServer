@@ -1323,7 +1323,7 @@ namespace Server.Items
 				bonus += 25;
 
 			if (MarquerSpell.IsActive(m))
-				bonus += 15;
+				bonus += 25;
 
 			double ticks;
 
@@ -2026,7 +2026,7 @@ namespace Server.Items
             {
                 if ((a != null && a.Validate(attacker)))
                 {
-                    if (a != null && a.CheckMana(attacker, true))
+                    if (a != null && a.CheckStamina(attacker, true))
                     {
                         WeaponAbility.ClearCurrentAbility(attacker);
 
@@ -2140,7 +2140,7 @@ namespace Server.Items
 			if (AuraVampiriqueSpell.IsActive(attacker))
 				lifeLeech += 15;
 
-			if (FormeEnsangleeSpell.IsActive(attacker))
+			if (FormeEnsanglanteeSpell.IsActive(attacker))
 				lifeLeech += 30;
 
 			if (lifeLeech != 0)
@@ -2334,7 +2334,7 @@ namespace Server.Items
 			}
 
 			if (!ranged && FormeEmpoisonneeSpell.IsActive(attacker))
-				attacker.ApplyPoison(defender, Poison.Regular);
+				defender.ApplyPoison(attacker, Poison.Regular);
 
 			BaseFamiliar.OnHit(attacker, damageable);
         }
@@ -4185,11 +4185,11 @@ namespace Server.Items
                 list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
 
             if (m_Quality == ItemQuality.Exceptional)
-                list.Add("Exceptionnelle"); // Exceptional
-			if (m_Quality == ItemQuality.Epic)
-				list.Add("Épique"); // Exceptional
-			if (m_Quality == ItemQuality.Legendary)
-				list.Add("Légendaire"); // Exceptional
+                list.Add("Exceptionnelle");
+			else if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire");
 
 			if (IsImbued)
                 list.Add(1080418); // (Imbued)
@@ -4944,9 +4944,9 @@ namespace Server.Items
 			if (Quality == ItemQuality.Legendary)
 				Attributes.WeaponDamage += 100;
 			else if (Quality == ItemQuality.Epic)
-				Attributes.WeaponDamage += 70;
+				Attributes.WeaponDamage += 60;
 			else if (Quality == ItemQuality.Exceptional)
-                Attributes.WeaponDamage += 35;
+                Attributes.WeaponDamage += 30;
 
 			if (!craftItem.ForceNonExceptional)
             {

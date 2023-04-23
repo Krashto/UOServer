@@ -29,8 +29,11 @@ namespace Server.Items
 
     public enum BookQuality
     {
+		Low,
         Regular,
-        Exceptional
+        Exceptional,
+		Epic,
+		Legendary
     }
 
     public class Spellbook : Item, ICraftable, ISlayer, IEngravable, IVvVItem, IOwnerRestricted, IWearableDurability
@@ -753,14 +756,35 @@ namespace Server.Items
 
         public override void AddNameProperties(ObjectPropertyList list)
         {
-            base.AddNameProperties(list);
+			var name = Name ?? String.Empty;
 
-            if (m_Quality == BookQuality.Exceptional)
-            {
-                list.Add(1063341); // exceptional
-            }
+			if (String.IsNullOrWhiteSpace(name))
+				name = System.Text.RegularExpressions.Regex.Replace(GetType().Name, "[A-Z]", " $0");
 
-            if (m_EngravedText != null)
+			/*if (IsSetItem)
+				list.Add($"<BASEFONT COLOR=#00FF00>{name}</BASEFONT>");
+			else */if (m_Quality == BookQuality.Legendary)
+				list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>");
+			else if (m_Quality == BookQuality.Epic)
+				list.Add($"<BASEFONT COLOR=#A020F0>{name}</BASEFONT>");
+			else if (m_Quality == BookQuality.Exceptional)
+				list.Add($"<BASEFONT COLOR=#0000FF>{name}</BASEFONT>");
+			else
+				list.Add($"<BASEFONT COLOR=#808080>{name}</BASEFONT>");
+
+			var desc = Description ?? String.Empty;
+
+			if (!String.IsNullOrWhiteSpace(desc))
+				list.Add(desc);
+
+			if (m_Quality == BookQuality.Exceptional)
+                list.Add("Exceptionnelle");
+			else if (m_Quality == BookQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == BookQuality.Legendary)
+				list.Add("Légendaire");
+
+			if (m_EngravedText != null)
             {
                 list.Add(1072305, Utility.FixHtml(m_EngravedText)); // Engraved: ~1_INSCRIPTION~
             }
@@ -1111,7 +1135,16 @@ namespace Server.Items
             CraftItem craftItem,
             int resHue)
         {
-            int magery = from.Skills.Magery.BaseFixedPoint;
+			Quality = (BookQuality)(quality);
+
+			if (Quality == BookQuality.Legendary)
+				Attributes.SpellDamage += 50;
+			else if (Quality == BookQuality.Epic)
+				Attributes.SpellDamage += 30;
+			else if (Quality == BookQuality.Exceptional)
+				Attributes.SpellDamage += 15;
+
+			int magery = from.Skills.Magery.BaseFixedPoint;
 
             if (magery >= 800)
             {
@@ -1175,8 +1208,6 @@ namespace Server.Items
             {
                 Crafter = from;
             }
-
-            m_Quality = (BookQuality)(quality - 1);
 
             return quality;
         }

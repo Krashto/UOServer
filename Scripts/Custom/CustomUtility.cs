@@ -201,13 +201,17 @@ namespace Server.Custom
 				.ToArray();
 
 			var rnd = Utility.Random(0, itemList.Length - 1);
-			var item = Activator.CreateInstance(itemList[rnd]) as Item;
+			Item item = null;
+			try { item = Activator.CreateInstance(itemList[rnd]) as Item; }
+			catch { return null; }
 			return item;
 		}
 		public static Item GetRandomItemFromList(List<Type> itemList)
 		{
 			var rnd = Utility.Random(0, itemList.Count - 1);
-			var item = Activator.CreateInstance(itemList[rnd]) as Item;
+			Item item = null;
+			try { item = Activator.CreateInstance(itemList[rnd]) as Item; }
+			catch { return null; }
 			return item;
 		}
 

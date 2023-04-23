@@ -16,7 +16,7 @@ namespace Server.Items
         // No longer active in pub21:
         private static readonly Hashtable m_Table = new Hashtable();
 
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override string Name => "Coup paralysant";
 
@@ -80,7 +80,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

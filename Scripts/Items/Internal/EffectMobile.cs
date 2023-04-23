@@ -3,29 +3,29 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-    public class EffecCustomPlayerMobile : Mobile
+    public class EffectMobile : Mobile
     {
         public static readonly TimeSpan DefaultDuration = TimeSpan.FromSeconds(1.0);
-        private static readonly List<EffecCustomPlayerMobile> m_Free = new List<EffecCustomPlayerMobile>();// List of available EffecCustomPlayerMobiles
+        private static readonly List<EffectMobile> m_Free = new List<EffectMobile>();// List of available EffectMobiles
 
-        public EffecCustomPlayerMobile(Serial serial)
+        public EffectMobile(Serial serial)
             : base(serial)
         {
         }
 
-        private EffecCustomPlayerMobile()
+        private EffectMobile()
         {
             CantWalk = true;
             Blessed = true;
         }
 
-        public static EffecCustomPlayerMobile Create(Point3D p, Map map, TimeSpan duration)
+        public static EffectMobile Create(Point3D p, Map map, TimeSpan duration)
         {
-            EffecCustomPlayerMobile mobile = null;
+            EffectMobile mobile = null;
 
             for (int i = m_Free.Count - 1; mobile == null && i >= 0; --i) // We reuse new entries first so decay works better
             {
-                EffecCustomPlayerMobile free = m_Free[i];
+                EffectMobile free = m_Free[i];
 
                 m_Free.RemoveAt(i);
 
@@ -34,7 +34,7 @@ namespace Server.Mobiles
             }
 
             if (mobile == null)
-                mobile = new EffecCustomPlayerMobile();
+                mobile = new EffectMobile();
 
             mobile.MoveToWorld(p, map);
             mobile.BeginFree(duration);
@@ -74,8 +74,8 @@ namespace Server.Mobiles
 
         private class FreeTimer : Timer
         {
-            private readonly EffecCustomPlayerMobile m_Mobile;
-            public FreeTimer(EffecCustomPlayerMobile mobile, TimeSpan delay)
+            private readonly EffectMobile m_Mobile;
+            public FreeTimer(EffectMobile mobile, TimeSpan delay)
                 : base(delay)
             {
                 m_Mobile = mobile;

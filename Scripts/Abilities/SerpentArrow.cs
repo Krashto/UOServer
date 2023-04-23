@@ -2,7 +2,7 @@
 {
     public class SerpentArrow : WeaponAbility
     {
-        public override int BaseMana => 25;
+        public override int BaseStamina => 25;
 
 		public override string Name => "Serpent Arrow";
 
@@ -15,7 +15,7 @@
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

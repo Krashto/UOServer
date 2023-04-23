@@ -1882,15 +1882,17 @@ namespace Server.Mobiles
             m_Mobile.PlaySound(m_Mobile.GetAngerSound());
             Mobile master = m_Mobile.ControlMaster;
 
-            if (m_Mobile.DeleteOnRelease)
-            {
-                m_Mobile.PrivateOverheadMessage(
-                    MessageType.Regular,
-                    0x3B2,
-                    1043255,
-                    string.Format("{0}", m_Mobile.Name),
-                    master.NetState); // ~1_NAME~ appears to have decided that it is better off without a master!
-            }
+			if (!m_Mobile.DeleteOnRelease)
+			{
+				m_Mobile.PrivateOverheadMessage(
+					MessageType.Regular,
+					0x3B2,
+					1043255,
+					string.Format("{0}", m_Mobile.Name),
+					master.NetState); // ~1_NAME~ appears to have decided that it is better off without a master!
+			}
+			else
+				m_Mobile.Delete();
 
             m_Mobile.SetControlMaster(null);
             m_Mobile.SummonMaster = null;

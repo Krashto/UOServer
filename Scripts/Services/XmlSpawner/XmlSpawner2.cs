@@ -204,7 +204,7 @@ namespace Server.Mobiles
 
         public List<XmlSpawner> RecentSpawnerSearchList = null;
         public List<Item> RecentItemSearchList = null;
-        public List<Mobile> RecenCustomPlayerMobileSearchList = null;
+        public List<Mobile> RecentMobileSearchList = null;
         private TimeSpan m_DespawnTime;
 
         private string m_SkillTrigger;

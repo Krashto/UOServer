@@ -358,7 +358,7 @@ namespace Server.Mobiles
 
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
 		{
-			return InsensibleSpell.IsActive(this) || FormeEnsangleeSpell.IsActive(this);
+			return InsensibleSpell.IsActive(this) || FormeEnsanglanteeSpell.IsActive(this);
 		}
 
 		#region Hiding
@@ -686,8 +686,8 @@ namespace Server.Mobiles
 				case EquitationType.Dismount: chanceToFall = m_DismountTable[equitation]; break;
 			}
 
-			if (chanceToFall < 0)
-				chanceToFall = 0;
+			if (chanceToFall <= 0)
+				return true;
 
 			if (chanceToFall <= Utility.RandomMinMax(0, 100))
 				return true;
@@ -1145,22 +1145,13 @@ namespace Server.Mobiles
 			base.OnSkillChange(skill, oldBase);
 		}
 
-		public virtual int GetBaseAptitudeValue(Aptitude aptitude)
-		{
-			return Classes.GetAptitudeValue(m_Classe, aptitude);
-		}
-
-		public virtual int GetTotalAptitudeValue(Aptitude aptitude)
-		{
-			return Aptitudes[aptitude] + GetBaseAptitudeValue(aptitude);
-		}
-
 		public enum ValidateType
 		{
 			Aptitudes,
 			Classes,
 			Connaissances,
 			Skills,
+			Capacite,
 			All
 		}
 
@@ -1172,83 +1163,32 @@ namespace Server.Mobiles
 			if (!CanBeginAction(typeof(ValidateType)))
 				return;
 
-			if (Aptitudes == null || Attributs == null/* || m_Capacites == null*/ || Skills == null)
+			if (Aptitudes == null || Attributs == null || Capacites == null || Skills == null)
 				return;
 
 			BeginAction(typeof(ValidateType));
-
-			if (type == ValidateType.Aptitudes || type == ValidateType.All)
-			{
-				bool wasValid;
-				bool hasChange = false;
-
-				for (int i = 0; i < Aptitudes.m_Values.Length; ++i)
-				{
-					wasValid = true;
-					Aptitude aptitude = (Aptitude)i;
-
-					while (!Aptitudes.IsValid(this, aptitude))
-					{
-						if (!Aptitudes.CanLower(this, aptitude))
-						{
-							//Console.WriteLine(String.Format("Bug dans la vérification de l'aptitude [{0}] [{1}]", aptitude.ToString(), this));
-							break;
-						}
-						else
-						{
-							Aptitudes.SetValue(aptitude, Aptitudes[aptitude] - 1);
-
-							if (wasValid)
-								wasValid = false;
-
-							if (!hasChange)
-								hasChange = true;
-						}
-					}
-
-					if (!wasValid)
-					{
-						OnAptitudesChange(aptitude, Aptitudes[aptitude] + 1, Aptitudes[aptitude]);
-						SendMessage(String.Format("Vous n'aviez plus les prérequis pour l'aptitude {0}, sa valeur a donc été diminuée.", aptitude.ToString()));
-					}
-				}
-			}
-
-			if (type == ValidateType.Classes || type == ValidateType.All)
-			{
-				if (m_Classe != Classe.Aucune)
-				{
-					bool wasValid = true;
-
-					while (!Classes.IsValid(this, m_Classe))
-					{
-						//Classes.RemoveAptitudesToClassBefore(this, m_Classe);
-						//Classes.RemoveCapacitesToClassBefore(this, m_Classe);
-
-						m_Classe = Classes.GetClassBefore(m_Classe);
-
-						wasValid = false;
-
-						if (m_Classe == Classe.Aucune)
-							break;
-					}
-
-					if (!wasValid)
-						SendMessage("Vous n'aviez plus les prérequis pour votre classe");
-				}
-
-				Classes.SetBaseAndCapSkills(this, Experience.Niveau);
-			}
 
 			if (type == ValidateType.Skills || type == ValidateType.All)
 			{
 				for (int i = 0; i < Skills.Length; ++i)
 				{
-					double cap = this.Skills[i].Cap;
+					double cap = Skills[i].Cap;
 
-					if (this.Skills[i].Base > cap)
-						this.Skills[i].Base = cap;
+					if (Skills[i].Base > cap)
+						Skills[i].Base = cap;
 				}
+			}
+
+			if (type == ValidateType.Aptitudes || type == ValidateType.All)
+				Aptitudes.Validate();
+
+			if (type == ValidateType.Capacite || type == ValidateType.All)
+				Capacites.Validate();
+
+			if (type == ValidateType.Classes || type == ValidateType.All)
+			{
+				Classes.SetBaseAndCapSkills(this, Experience.Niveau);
+				Classes.Validate(this, Classe);
 			}
 
 			EndAction(typeof(ValidateType));

@@ -77,7 +77,6 @@ namespace Server.Spells
 		public Type[] Reagents{ get{ return m_Info.Reagents; } }
 		public Item Scroll{ get{ return m_Scroll; } }
 
-		private static double NextSpellDelay = 2.0;
 		private static TimeSpan AnimateDelay = TimeSpan.FromSeconds( 1.5 );
 
 		public virtual SkillName CastSkill{ get{ return SkillName.Magery; } }
@@ -223,7 +222,7 @@ namespace Server.Spells
 
 			var pm = m_Caster as CustomPlayerMobile;
 
-			if (pm != null && pm.Aptitudes.Transcription * 10 > Utility.Random(100))
+			if (pm != null && pm.Aptitudes.Transcription * 10 >= Utility.Random(100))
 				return true;
 
 			Container pack = m_Caster.Backpack;
@@ -379,7 +378,7 @@ namespace Server.Spells
 			if (Caster is CustomPlayerMobile pm)
 			{
 				bonus += pm.Capacites.Magie / 50;
-				bonus += pm.Aptitudes.GetValue(RequiredAptitude.First()) / 100;
+				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) / 100;
 			}
 
 			min *= bonus * scale;
@@ -541,7 +540,7 @@ namespace Server.Spells
 			//{
 			//	m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
 			//}
-			else if (m_Caster.Paralyzed)
+			else if (m_Caster.Paralyzed )
 			{
 				m_Caster.SendMessage($"Vous ne pouvez pas envoyer de sort lorsque vous êtes paralysé{(m_Caster.Female ? "e" : "")}.");
 			}
@@ -739,18 +738,16 @@ namespace Server.Spells
 			switch(requiredAptitudeValue)
 			{
 				case 1:
-				case 2:
-				case 3: return TimeSpan.FromSeconds(1);
-				case 4:
+				case 2: return TimeSpan.FromSeconds(1.5);
+				case 3: 
+				case 4: return TimeSpan.FromSeconds(2.0);
 				case 5:
-				case 6: return TimeSpan.FromSeconds(1.5);
+				case 6: return TimeSpan.FromSeconds(2.5);
 				case 7:
-				case 8:
-				case 9: return TimeSpan.FromSeconds(2.5);
-				case 10:
-				case 11:
-				case 12:
-				default: return TimeSpan.FromSeconds(3);
+				case 8: return TimeSpan.FromSeconds(3.0);
+				case 9: 
+				case 10: 
+				default: return TimeSpan.FromSeconds(3.5);
 			}
 		}
 
@@ -783,9 +780,9 @@ namespace Server.Spells
 
             for (int i = 0; !ok && i < apt.Length; ++i)
             {
-                Aptitude c = apt[i];
+                Aptitude a = apt[i];
 
-                ok = (pm.GetTotalAptitudeValue(c) >= cValueRequis);
+                ok = (pm.Aptitudes.GetRealValue(a) >= cValueRequis);
             }
 
             return ok;
@@ -798,6 +795,8 @@ namespace Server.Spells
             Aptitude[] aptitudeRequise = GetAptitude();
 
             CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
+
+			pm.RevealingAction();
 
 			if ( m_Caster.Deleted || !m_Caster.Alive || m_Caster.Spell != this || m_State != SpellState.Sequencing )
             {

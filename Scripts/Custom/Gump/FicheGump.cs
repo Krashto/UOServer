@@ -124,11 +124,11 @@ namespace Server.Gumps
 			for (int i = 0; i < Enum.GetValues(typeof(Capacite)).Length; i++)
 			{
 				var capacite = (Capacite)i;
-				if (m_From.Capacites.CanDecreaseStat(capacite))
+				if (m_From.Capacites.CanLower(capacite))
 					AddButton(x + 120 + columnSpace * column, y + lineSpace * line + 2, 5603, 5607, 500 + i, GumpButtonType.Reply, 0);
 				AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, CustomUtility.GetDescription(capacite));
-				AddLabel(x + 150 + columnSpace * column, y + lineSpace * line, 150, m_From.Capacites[capacite].ToString());
-				if (m_From.Capacites.CanIncreaseStat(capacite))
+				AddLabel(x + 150 + columnSpace * column, y + lineSpace * line, 150, m_From.Capacites.GetRealValue(capacite).ToString());
+				if (m_From.Capacites.CanRaise(capacite))
 					AddButton(x + 180 + columnSpace * column, y + lineSpace * line + 2, 5601, 5605, 550 + i, GumpButtonType.Reply, 0);
 				line++;
 			}
@@ -226,7 +226,7 @@ namespace Server.Gumps
 			AddLabel(x + 150 + columnSpace * column, y + lineSpace * line++, 150, m_From.Attributs.Sagesse.ToString());
 
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, "Points restants");
-			AddLabel(x + 150 + columnSpace * column, y + lineSpace * line++, 150, (525 - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.Attributs.Constitution - m_From.Attributs.Sagesse - m_From.Attributs.Endurance).ToString());
+			AddLabel(x + 150 + columnSpace * column, y + lineSpace * line++, 150, (Attributs.MaxStats - m_From.RawStr - m_From.RawDex - m_From.RawInt - m_From.Attributs.Constitution - m_From.Attributs.Sagesse - m_From.Attributs.Endurance).ToString());
 			
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 200, 40, $"Note: Diminuer un point coûte {m_StatsDecreasingCost} po.");
 			#endregion
@@ -244,12 +244,12 @@ namespace Server.Gumps
 			{
 				AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line, 150, apt.ToString());
 
-				AddLabel(x + 150 + columnSpace * column, y + lineSpace * line, 150, m_From.Aptitudes.GetValue(apt).ToString());
+				AddLabel(x + 150 + columnSpace * column, y + lineSpace * line, 150, m_From.Aptitudes.GetRealValue(apt).ToString());
 
-				if (Aptitudes.CanLower(m_From, apt))
+				if (m_From.Aptitudes.CanLower(apt))
 					AddButton(x + 120 + columnSpace * column, y + lineSpace * line + 2, 5603, 5607, 100 + (int)apt, GumpButtonType.Reply, 0);
 
-				if (Aptitudes.CanRaise(m_From, apt))
+				if (m_From.Aptitudes.CanRaise(apt))
 					AddButton(x + 175 + columnSpace * column, y + lineSpace * line + 2, 5601, 5605, 200 + (int)apt, GumpButtonType.Reply, 0);
 
 				line++;
@@ -266,9 +266,9 @@ namespace Server.Gumps
 				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_AptitudesDecreasingCost))
 				{
 					var apt = (Aptitude)(info.ButtonID - 100);
-					if (Aptitudes.CanLower(m_From, apt))
+					if (m_From.Aptitudes.CanLower(apt))
 					{
-						m_From.Aptitudes[apt]--;
+						m_From.Aptitudes.Lower(apt);
 						Classes.SetBaseAndCapSkills(m_From, m_From.Experience.Niveau);
 						m_From.InvalidateProperties();
 					}
@@ -279,9 +279,9 @@ namespace Server.Gumps
 			else if (info.ButtonID >= 200 && info.ButtonID < 300)
 			{
 				var apt = (Aptitude)(info.ButtonID - 200);
-				if (Aptitudes.CanRaise(m_From, apt))
+				if (m_From.Aptitudes.CanRaise(apt))
 				{
-					m_From.Aptitudes[apt]++;
+					m_From.Aptitudes.Raise(apt);
 					Classes.SetBaseAndCapSkills(m_From, m_From.Experience.Niveau);
 					m_From.InvalidateProperties();
 				}
@@ -476,14 +476,14 @@ namespace Server.Gumps
 			{
 				if (CustomUtility.ConsumeItemInBank(m_From, typeof(Gold), m_CapaciteDecreasingCost))
 				{
-					m_From.Capacites.Decrease((Capacite)(info.ButtonID - 500));
+					m_From.Capacites.Lower((Capacite)(info.ButtonID - 500));
 					m_From.InvalidateProperties();
 				}
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 			else if (info.ButtonID >= 550 && info.ButtonID < 600)
 			{
-				m_From.Capacites.Increase((Capacite)(info.ButtonID - 550));
+				m_From.Capacites.Raise((Capacite)(info.ButtonID - 550));
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
 		}

@@ -17,13 +17,13 @@ namespace Server.Items
 
         public static Hashtable Registry => m_Registry;
 
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
         public override double DamageScalar => 1.2;
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (Registry.Contains(defender) || !Validate(attacker) || !CheckMana(attacker, true))
+            if (Registry.Contains(defender) || !Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

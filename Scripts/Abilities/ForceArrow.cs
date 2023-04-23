@@ -6,7 +6,7 @@ namespace Server.Items
 {
     public class ForceArrow : WeaponAbility
     {
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Force Arrow";
 
@@ -14,7 +14,7 @@ namespace Server.Items
 
 		public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

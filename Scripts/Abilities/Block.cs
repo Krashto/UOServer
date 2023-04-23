@@ -18,7 +18,7 @@ namespace Server.Items
     {
         private static Dictionary<Mobile, BlockInfo> _Table;
 
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Bloquer";
 
@@ -107,7 +107,7 @@ namespace Server.Items
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

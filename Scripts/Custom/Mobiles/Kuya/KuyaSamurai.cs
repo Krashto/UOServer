@@ -133,7 +133,7 @@ namespace Server.Mobiles
 				int Range = 10;
 				List<KuyaArchiMage> targets = new List<KuyaArchiMage>();
 
-				IPooledEnumerable eable =  Map.GeCustomPlayerMobilesInRange(Home);
+				IPooledEnumerable eable =  Map.GetMobilesInRange(Home);
 
 				foreach (Mobile m in eable)
 				{

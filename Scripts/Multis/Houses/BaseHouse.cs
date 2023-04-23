@@ -967,14 +967,14 @@ namespace Server.Multis
             return list;
         }
 
-        public List<Mobile> GeCustomPlayerMobiles()
+        public List<Mobile> GetMobiles()
         {
             if (Map == null || Map == Map.Internal)
                 return new List<Mobile>();
 
             List<Mobile> list = new List<Mobile>();
 
-            foreach (Mobile mobile in Region.GeCustomPlayerMobiles())
+            foreach (Mobile mobile in Region.GetMobiles())
                 if (IsInside(mobile))
                     list.Add(mobile);
 
@@ -3829,7 +3829,7 @@ namespace Server.Multis
 
             CheckUnregisteredAddons();
 
-            foreach (Mobile m in GeCustomPlayerMobiles().Where(m => m is Mannequin || m is Steward))
+            foreach (Mobile m in GetMobiles().Where(m => m is Mannequin || m is Steward))
             {
                 Mannequin.ForceRedeed(m);
             }

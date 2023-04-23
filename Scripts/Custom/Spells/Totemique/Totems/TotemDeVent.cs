@@ -7,12 +7,12 @@ using Server.Spells;
 namespace Server.Custom.Spells.NewSpells.Totemique
 {
 	[CorpseName("an air elemental corpse")]
-	public class TotemDeVent : BaseTotem
+	public class TotemDuVent : BaseTotem
 	{
 		[Constructable]
-		public TotemDeVent() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
+		public TotemDuVent() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
 		{
-			Name = "Totem de vent";
+			Name = "Totem du vent";
 			Body = 13;
 			Hue = 0x4001;
 			BaseSoundID = 655;
@@ -42,10 +42,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 80.0);
 
-			ControlSlots = 1;
+			ControlSlots = 2;
 		}
 
-		public TotemDeVent(Serial serial)
+		public TotemDuVent(Serial serial)
 			: base(serial)
 		{
 		}
@@ -69,6 +69,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					continue;
 
 				if (m is BaseTotem totem && totem.ControlMaster == ControlMaster)
+					continue;
+
+				if (m.AccessLevel > AccessLevel.Player)
 					continue;
 
 				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))

@@ -5,7 +5,7 @@ namespace Server.Items
 {
     public class PsychicAttack : WeaponAbility
     {
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override string Name => "Attaque psychique";
 
@@ -13,7 +13,7 @@ namespace Server.Items
 
 		public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return;
 
             ClearCurrentAbility(attacker);

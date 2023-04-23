@@ -47,6 +47,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m_Timers[Caster] = t;
 				t.Start();
 
+				Caster.Delta(MobileDelta.Hits);
+
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Forme electrisante", duration, AptitudeColor.Polymorphie);
 			}
 
@@ -79,6 +81,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m.HueMod = -1;
 
 				m.SendSpeedControl(SpeedControlType.Disable);
+
+				m.Delta(MobileDelta.Hits);
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Forme electrisante", AptitudeColor.Polymorphie, SpellSequenceType.End);
 			}

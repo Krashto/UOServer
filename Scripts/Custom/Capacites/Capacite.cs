@@ -6,7 +6,7 @@
 		Armure,
 		[Description("Armes melee")]
 		ArmesMelee,
-		[Description("Armes à distance")]
+		[Description("Armes distance")]
 		ArmesDistance,
 		[Description("Magie")]
 		Magie,

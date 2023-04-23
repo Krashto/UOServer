@@ -7,6 +7,7 @@
 		[Constructable]
 		public NecromancyTrainingWand() : base()
 		{
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public NecromancyTrainingWand(Serial serial) : base(serial)

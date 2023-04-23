@@ -1,7 +1,6 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -15,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				Reagent.EssenceChasseur
 			);
 
-		public override int RequiredAptitudeValue { get { return 2; } }
+		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Chasseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

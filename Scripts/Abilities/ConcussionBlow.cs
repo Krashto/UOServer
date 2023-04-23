@@ -7,7 +7,7 @@ namespace Server.Items
     /// </summary>
     public class ConcussionBlow : WeaponAbility
     {
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
 		public override string Name => "Coup de commotion";
 		public override int Id => 3;
@@ -16,7 +16,7 @@ namespace Server.Items
 
 		public override bool OnBeforeDamage(Mobile attacker, Mobile defender)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true))
+            if (!Validate(attacker) || !CheckStamina(attacker, true))
                 return false;
 
             ClearCurrentAbility(attacker);

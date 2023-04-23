@@ -64,7 +64,7 @@ namespace Server.Items
 
 	public abstract class WeaponAbility
     {
-        public virtual int BaseMana => 0;
+        public virtual int BaseStamina => 0;
 
         public virtual int AccuracyBonus => 0;
 
@@ -138,16 +138,16 @@ namespace Server.Items
             return SkillName.Tactics;
         }
 
-        public virtual int CalculateMana(Mobile from)
+        public virtual int CalculateStamina(Mobile from)
         {
-            int mana = BaseMana;
+            int stam = BaseStamina;
 
             double skillTotal = GetSkillTotal(from);
 
             if (skillTotal >= 300.0)
-                mana -= 10;
+                stam -= 10;
             else if (skillTotal >= 200.0)
-                mana -= 5;
+                stam -= 5;
 
             double scalar = 1.0;
 
@@ -160,13 +160,13 @@ namespace Server.Items
 				lmc += 20;
 
             scalar -= (double)lmc / 100;
-            mana = (int)(mana * scalar);
+            stam = (int)(stam * scalar);
 
             // Using a special move within 3 seconds of the previous special move costs double mana 
             if (GetContext(from) != null)
-                mana *= 2;
+                stam *= 2;
 
-            return mana;
+            return stam;
         }
 
         public virtual bool CheckWeaponSkill(Mobile from)
@@ -245,13 +245,13 @@ namespace Server.Items
             return skill.Value;
         }
 
-        public virtual bool CheckMana(Mobile from, bool consume)
+        public virtual bool CheckStamina(Mobile from, bool consume)
         {
-            int mana = CalculateMana(from);
+            int stam = CalculateStamina(from);
 
-            if (from.Mana < mana)
+            if (from.Stam < stam)
             {
-                from.SendLocalizedMessage(1060181, mana.ToString()); // You need ~1_MANA_REQUIREMENT~ mana to perform that attack
+                from.SendMessage($"Vous avez besoin de plus de stamina pour lancer cette attaque (Coût:{stam})");
                 return false;
             }
 
@@ -268,7 +268,7 @@ namespace Server.Items
                 if (ManaPhasingOrb.IsInManaPhase(from))
                     ManaPhasingOrb.RemoveFromTable(from);
                 else
-                    from.Mana -= mana;
+                    from.Stam -= stam;
             }
 
             return true;
@@ -276,9 +276,9 @@ namespace Server.Items
 
         public virtual bool Validate(Mobile from)
         {
-			return CheckMana(from, false);
+			return CheckStamina(from, false);
 
-			//if (!from.Player && CheckMana(from, false))
+			//if (!from.Player && CheckStamina(from, false))
 			//    return true;
 
 			//if (from.Player)
@@ -301,10 +301,10 @@ namespace Server.Items
 			//	return false;
 			//}
 
-			//return CheckSkills(from) && CheckMana(from, false);
+			//return CheckSkills(from) && CheckStamina(from, false);
 		}
 
-        private static readonly WeaponAbility[] m_Abilities = new WeaponAbility[34]
+		private static readonly WeaponAbility[] m_Abilities = new WeaponAbility[34]
         {
             null,
             new ArmorIgnore(),

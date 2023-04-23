@@ -564,12 +564,12 @@ namespace Server
 			return GetEnumeratedPlayers(predicate).Count();
 		}
 
-		public List<Mobile> GeCustomPlayerMobiles()
+		public List<Mobile> GetMobiles()
 		{
-			return GeCustomPlayerMobiles(null);
+			return GetMobiles(null);
 		}
 
-		public List<Mobile> GeCustomPlayerMobiles(Func<Mobile, bool> predicate)
+		public List<Mobile> GetMobiles(Func<Mobile, bool> predicate)
 		{
 			return GetEnumeratedMobiles(predicate).ToList();
 		}

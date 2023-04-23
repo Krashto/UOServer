@@ -10,7 +10,7 @@ namespace Server.Items
     /// </summary>
     public class WhirlwindAttack : WeaponAbility
     {
-        public override int BaseMana => 15;
+        public override int BaseStamina => 15;
 
 		public override string Name => "Whirlwind Attack";
 
@@ -45,7 +45,7 @@ namespace Server.Items
             if (weapon == null)
                 return;
 
-            if (!CheckMana(attacker, true))
+            if (!CheckStamina(attacker, true))
                 return;
 
             attacker.FixedEffect(0x3728, 10, 15);

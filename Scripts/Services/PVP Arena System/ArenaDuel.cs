@@ -955,7 +955,7 @@ namespace Server.Engines.ArenaSystem
 
 		public void ClearArena()
 		{
-		    foreach (Mobile item in Arena.Region.GeCustomPlayerMobiles())
+		    foreach (Mobile item in Arena.Region.GetMobiles())
 			{
 				if (item.Z == Arena.Definition.ArenaZ && item.AccessLevel == AccessLevel.Player)
 				{

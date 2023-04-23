@@ -5,7 +5,7 @@ namespace Server.Items
 {
     public class LightningArrow : WeaponAbility
     {
-        public override int BaseMana => 20;
+        public override int BaseStamina => 20;
 
         public override bool ConsumeAmmo => false;
 
@@ -30,7 +30,7 @@ namespace Server.Items
             if (weapon == null)
                 return;
 
-            if (!CheckMana(attacker, true))
+            if (!CheckStamina(attacker, true))
                 return;
 
             List<Mobile> targets = new List<Mobile>();

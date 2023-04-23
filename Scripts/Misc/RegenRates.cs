@@ -176,7 +176,7 @@ namespace Server.Misc
             if (from is BaseCreature)
                 points += ((BaseCreature)from).DefaultStamRegen;
 
-			if (FormeEnsangleeSpell.IsActive(from))
+			if (FormeEnsanglanteeSpell.IsActive(from))
                 points += 15;
 
 			if (from is CustomPlayerMobile pm)
@@ -206,7 +206,7 @@ namespace Server.Misc
 			if (FormeCristallineSpell.IsActive(from))
 				points += 15;
 
-			if (FormeEnsangleeSpell.IsActive(from))
+			if (FormeEnsanglanteeSpell.IsActive(from))
 				points += 3;
 
 			if (from is CustomPlayerMobile pm)

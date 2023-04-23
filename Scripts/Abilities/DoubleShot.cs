@@ -5,7 +5,7 @@ namespace Server.Items
     /// </summary>
     public class DoubleShot : WeaponAbility
     {
-        public override int BaseMana => 30;
+        public override int BaseStamina => 30;
 
 		public override string Name => "Double tir";
 
@@ -50,7 +50,7 @@ namespace Server.Items
 
         public void Use(Mobile attacker, Mobile defender)
         {
-            if (!Validate(attacker) || !CheckMana(attacker, true) || attacker.Weapon == null)	//sanity
+            if (!Validate(attacker) || !CheckStamina(attacker, true) || attacker.Weapon == null)	//sanity
                 return;
 
             ClearCurrentAbility(attacker);
