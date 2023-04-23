@@ -193,7 +193,7 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Armure de Peaux
-			index = AddCraft(typeof(HideChest), "Armures de Peaux", "Coffre de Peaux", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 15, 1044463);
+			index = AddCraft(typeof(HideChest), "Armures de Peaux", "Plastron de Peaux", 36.0, 56.0, typeof(PlainoisLeather), 1044462, 15, 1044463);
 			index = AddCraft(typeof(HidePauldrons), "Armures de Peaux", "Épaulettes de Peaux", 29.0, 49.0, typeof(PlainoisLeather), 1044462, 12, 1044463);
 			index = AddCraft(typeof(HideGloves), "Armures de Peaux", "Gants de Peaux", 26.0, 46.0, typeof(PlainoisLeather), 1044462, 10, 1044463);
 			index = AddCraft(typeof(HidePants), "Armures de Peaux", "Pantalons de Peaux", 31.0, 51.0, typeof(PlainoisLeather), 1044462, 15, 1044463);
@@ -227,7 +227,7 @@ namespace Server.Engines.Craft
 
 
 			#region Armure De Feuilles
-			index = AddCraft(typeof(LeafChest), "Armures de Feuilles", "Coffre de feuille", 30.0, 50.0, typeof(PlainoisLeather), "Cuir", 14, "You do not have sufficient leather to make that item.");
+			index = AddCraft(typeof(LeafChest), "Armures de Feuilles", "Plastron de feuille", 30.0, 50.0, typeof(PlainoisLeather), "Cuir", 14, "You do not have sufficient leather to make that item.");
 			index = AddCraft(typeof(LeafArms), "Armures de Feuilles", "Brassards de feuille", 23.0, 43.0, typeof(PlainoisLeather), "Cuir", 8, "You do not have sufficient leather to make that item.");
 			index = AddCraft(typeof(LeafGloves), "Armures de Feuilles", "Gants de feuille", 20.0, 40.0, typeof(PlainoisLeather), "Cuir", 6, "You do not have sufficient leather to make that item.");
 			index = AddCraft(typeof(LeafLegs), "Armures de Feuilles", "Pantalons de feuille", 25.0, 45.0, typeof(PlainoisLeather), "Cuir", 11, "You do not have sufficient leather to make that item.");
