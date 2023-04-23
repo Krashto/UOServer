@@ -26,7 +26,8 @@ namespace Server.Mobiles
 
 				
 				Add(new GenericBuyInfo(typeof(ScribesPen), 8, 20, 0xFBF, 0));
-                Add(new GenericBuyInfo(typeof(BlankScroll), 5, 999, 0x0E34, 0));
+				Add(new GenericBuyInfo(typeof(SpellsPen), 8, 20, 0xFBF, 2079));
+				Add(new GenericBuyInfo(typeof(BlankScroll), 5, 999, 0x0E34, 0));
 				//Add(new GenericBuyInfo(typeof(BlankMap), 5, 40, 0x14EC, 0));
 				//Add(new GenericBuyInfo(typeof(MapmakersPen), 8, 20, 0x0FBF, 0));
 				Add(new GenericBuyInfo(typeof(BrownBook), 15, 10, 0xFEF, 0));

@@ -50,7 +50,7 @@ namespace Server.Items
 			: base(0xA446)
 		{
 			Weight = 8.0;
-			Name = "Plastron Clouté Elfique";
+			Name = "Plastron Clouté Renforcé";
 		}
 
 		public PlastronClouteRenforce(Serial serial)
@@ -167,7 +167,7 @@ namespace Server.Items
 			: base(0xA443)
 		{
 			Weight = 2.0;
-			Name = "Gants Clouté Elfique";
+			Name = "Gants Clouté Renforcé";
 		}
 
 		public GantClouteRenforce(Serial serial)
