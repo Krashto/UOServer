@@ -796,7 +796,7 @@ namespace Server.Spells
 
             CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
 
-			pm.RevealingAction();
+			m_Caster.RevealingAction();
 
 			if ( m_Caster.Deleted || !m_Caster.Alive || m_Caster.Spell != this || m_State != SpellState.Sequencing )
             {

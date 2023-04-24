@@ -87,13 +87,10 @@ namespace Server.Custom.Spells.NewSpells.Musique
 				return;
 
 			var t = (Timer)m_Timers[m];
-			var mod = (ResistanceMod)m_Table[m];
 
-			if (t != null && mod != null)
+			if (t != null)
 			{
 				t.Stop();
-
-				m.RemoveResistanceMod(mod);
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);

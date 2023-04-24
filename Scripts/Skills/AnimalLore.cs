@@ -34,12 +34,7 @@ namespace Server.SkillHandlers
 				from.CheckTargetSkill(SkillName.AnimalTaming, c, 0.0, 120.0);
 
 				if (from is PlayerMobile)
-				{
-					Timer.DelayCall(TimeSpan.FromSeconds(1), () =>
-					{
-						BaseGump.SendGump(new NewAnimalLoreGump((PlayerMobile)from, c));
-					});
-				}
+					BaseGump.SendGump(new NewAnimalLoreGump((PlayerMobile)from, c));
 			}
 
 			private static void Check(Mobile from, BaseCreature c, double min)
