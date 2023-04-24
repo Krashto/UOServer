@@ -451,9 +451,9 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(ElvenSpellblade), "Dagues", "Égorgeuse", 20.0, 40.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(AssassinSpike), "Dagues", "Épineuse", 25.0, 45.0, typeof(IronIngot), 1044036, 9, 1044037);
 			AddCraft(typeof(Leafblade), "Dagues", "Coupe-gorge", 30.0, 50.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(SkinningKnife), "Dagues", 1023781, 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
-			AddCraft(typeof(Cleaver), "Dagues", 1097478, 0.0, 20.0, typeof(IronIngot), 1044036, 3, 1044037);
-			AddCraft(typeof(ButcherKnife), "Dagues", 1097486, 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
+			AddCraft(typeof(SkinningKnife), "Dagues", "Couteau à dépecer", 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
+			AddCraft(typeof(Cleaver), "Dagues", "Couperet", 0.0, 20.0, typeof(IronIngot), 1044036, 3, 1044037);
+			AddCraft(typeof(ButcherKnife), "Dagues", "Couteau de boucher", 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
 			#endregion
 
 			#region "Épées"
