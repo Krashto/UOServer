@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class StoneSlithClaw : Cyclone
+    public class StoneSlithClaw : BatonNature
     {
         public override bool IsArtifact => true;
         [Constructable]
@@ -8,7 +8,6 @@ namespace Server.Items
         {
             Hue = 1150;
             WeaponAttributes.HitHarm = 40;
-            Slayer = SlayerName.DaemonDismissal;
             WeaponAttributes.HitLowerDefend = 40;
             Attributes.WeaponSpeed = 25;
             Attributes.WeaponDamage = 45;

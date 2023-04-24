@@ -49,7 +49,7 @@ namespace Server.Items
         }
     }
 
-    public class GlaiveOfTheInfiniteSwarm : SoulGlaive
+    public class GlaiveOfTheInfiniteSwarm : BatonNature
     {
         public override int LabelNumber => 1157366;  // Glaive of the Infinite Swarm
         public override bool IsArtifact => true;

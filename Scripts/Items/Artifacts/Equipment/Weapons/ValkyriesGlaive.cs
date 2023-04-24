@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class ValkyriesGlaive : SoulGlaive
+    public class ValkyriesGlaive : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1113531;  // Valkyrie's Glaive

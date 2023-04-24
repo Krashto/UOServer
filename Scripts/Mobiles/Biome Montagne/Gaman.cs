@@ -1,14 +1,21 @@
+using System.Xml.Linq;
 using Server.Items;
 
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Gaman")]
-    public class Gaman : BaseCreature
+    public class Gaman : BaseMount
     {
-        [Constructable]
-        public Gaman()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
-        {
+
+		[Constructable]
+		public Gaman()
+		  : this("Un Gaman")
+		{
+		}
+		[Constructable]
+		public Gaman(string name)
+		  : base(name, 248, 248, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+		{
             Name = "Un Gaman";
             Body = 248;
 

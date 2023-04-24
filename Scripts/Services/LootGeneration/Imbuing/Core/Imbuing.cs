@@ -1767,7 +1767,7 @@ namespace Server.SkillHandlers
 
         private static readonly Type[] m_CannotImbue = new Type[]
         {
-            typeof(Cyclone), typeof(ClothWingArmor)
+            typeof(JupeOndulee), typeof(ClothWingArmor)
         };
 
         public static int GetValueForID(Item item, int id)

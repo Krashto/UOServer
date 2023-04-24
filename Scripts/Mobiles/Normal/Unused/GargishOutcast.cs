@@ -46,9 +46,9 @@ namespace Server.Mobiles
             switch (Utility.Random(3))
             {
                 default:
-                case 0: wep = new Cyclone(); break;
-                case 1: wep = new SoulGlaive(); break;
-                case 2: wep = new Boomerang(); break;
+                case 0: wep = new BatonNature(); break;
+                case 1: wep = new BatonNature(); break;
+                case 2: wep = new BatonNature(); break;
             }
 
             wep.Attributes.SpellChanneling = 1;

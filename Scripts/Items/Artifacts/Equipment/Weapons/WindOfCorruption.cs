@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class WindOfCorruption : Cyclone
+    public class WindOfCorruption : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1150358;  // Wind of Corruption
@@ -15,8 +15,7 @@ namespace Server.Items
             Attributes.WeaponSpeed = 30;
             Attributes.WeaponDamage = 50;
             WeaponAttributes.HitLowerDefend = 40;
-            AosElementDamages.Chaos = 100;
-            Slayer = SlayerName.Fey;
+           
             Hue = 1171;
         }
 

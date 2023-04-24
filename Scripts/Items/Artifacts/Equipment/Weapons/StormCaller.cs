@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class StormCaller : Boomerang
+    public class StormCaller : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1113530;  // Storm Caller

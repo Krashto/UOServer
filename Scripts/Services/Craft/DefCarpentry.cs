@@ -193,7 +193,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(WildStaff), "Armes et bouclier", "Bâton sauvage", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 16, 1044351);
 			index = AddCraft(typeof(Club), "Armes et bouclier", "Massue", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(BlackStaff), "Armes et bouclier", "Bâton noir", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
-			index = AddCraft(typeof(BatonNature), "Armes et bouclier", "Bâton de la Nature", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
+			//index = AddCraft(typeof(BatonNature), "Armes et bouclier", "Bâton de la Nature", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(BatonDragonique), "Armes et bouclier", "Bâton Dragonique", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(BatonErmite), "Armes et bouclier", "Bâton de l'Ermite", 55.0, 80.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Eterfer), "Armes et bouclier", "Eterfer", 55.0, 80.0, typeof(PlainoisBoard), 1044041, 6, 1044351);

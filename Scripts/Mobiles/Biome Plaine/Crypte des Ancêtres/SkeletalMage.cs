@@ -54,16 +54,13 @@ namespace Server.Mobiles
 		
         public override TribeType Tribe => TribeType.Undead;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
-            AddLoot(LootPack.MageryRegs, 3);
-            AddLoot(LootPack.NecroRegs, 3, 10);
-            AddLoot(LootPack.LootItem<PlainoisBone>());
-        }
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<PoussiereNecrotique>(1, true));
 
-        public override void Serialize(GenericWriter writer)
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

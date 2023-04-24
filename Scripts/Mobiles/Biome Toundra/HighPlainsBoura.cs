@@ -1,17 +1,22 @@
+using System.Xml.Linq;
 using Server.Items;
 using Server.Network;
 
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Boura")]
-    public class HighPlainsBoura : BaseCreature, ICarvable
+    public class HighPlainsBoura : BaseMount, ICarvable
     {
         private bool GatheredFur { get; set; }
 
-        [Constructable]
-        public HighPlainsBoura()
-            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
-        {
+		[Constructable]
+		public HighPlainsBoura()
+		  : this("Boura")
+		{
+		}
+		[Constructable]
+        public HighPlainsBoura(string name) : base(name, 715, 0x2CB, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
+		{
             Name = "Un Boura Arctique";
             Body = 715;
 

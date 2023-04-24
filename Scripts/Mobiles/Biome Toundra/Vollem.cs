@@ -3,17 +3,14 @@ using System;
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Vollem")]
-    public class Vollem : BaseMount, IRepairableMobile
+    public class Vollem : BaseCreature, IRepairableMobile
     {
 
-		public Vollem() : this("Un Vollem")
-		{
-		}
 		public virtual Type RepairResource => IsMechanical ? typeof(Items.IronIngot) : typeof(Items.Bandage);
         public virtual bool IsMechanical => true;
 
         [Constructable]
-		public Vollem(string name) : base(name, 293, 0x125, AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+		public Vollem() : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
             Name = "Un Vollem";
             Body = 0x125;

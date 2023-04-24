@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class Craven : DualPointedSpear
+    public class Craven : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1154474;  // Craven

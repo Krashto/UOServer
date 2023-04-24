@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-    public class WardensArmorOfAugmentation : Cyclone
+    public class WardensArmorOfAugmentation : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1115515;  // Warden's Armor Of Augmentation
@@ -9,7 +9,6 @@
         public WardensArmorOfAugmentation()
         {
             Hue = 0x9C2;
-            AbsorptionAttributes.EaterKinetic = 5;
             Attributes.SpellDamage = 3;
             Attributes.LowerManaCost = 1;
             Attributes.WeaponSpeed = 5;

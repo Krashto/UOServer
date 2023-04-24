@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Spectre")]
@@ -49,13 +51,13 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Plaine;
 		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MageryRegs, 10);
-        }
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<FluideAstral>(1, true));
 
-        public override int GetIdleSound()
+		}
+
+		public override int GetIdleSound()
         {
             return 0x5F4;
         }
