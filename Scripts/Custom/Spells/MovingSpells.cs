@@ -1,39 +1,44 @@
-﻿using System.Collections;
+﻿using System;
 using Server.Spells;
 
 namespace Server.Custom.Spells
 {
 	public class MovingSpells
 	{
-		public static void MoveMobileTo(Mobile m, Point3D origin, Direction d, int tiles)
+		public static void MoveMobileTo(Mobile m, Direction d, int tiles)
 		{
-			int count = 0;
-
-			var x = origin.X + GetOrientation(d).X;
-			var y = origin.Y + GetOrientation(d).Y;
-			Point3D newpoint = new Point3D(x, y, origin.Z);
-			var p = (IPoint3D)newpoint;
-			SpellHelper.GetSurfaceTop(ref p);
-
-			while (count < tiles)
+			try
 			{
-				x = m.X + GetOrientation(d).X;
-				y = m.Y + GetOrientation(d).Y;
-				newpoint = new Point3D(x, y, m.Z);
-				p = (IPoint3D)newpoint;
-				SpellHelper.GetSurfaceTop(ref p);
+				for (int i = 0; i < tiles; i++)
+				{
+					var oritentation = GetOrientation(d);
+					var from = m.Location;
+					from.X += oritentation.X * tiles;
+					from.Y += oritentation.Y * tiles;
 
-				bool canfit = m.Map.CanSpawnMobile((Point3D)p);
-				if (canfit)
-					m.MoveToWorld(newpoint, m.Map);
-				else
-					break;
-				count++;
+					Timer.DelayCall(TimeSpan.FromSeconds(0.5 * i), () =>
+					{
+						if (SpellHelper.AdjustField(ref from, m.Map, 12, false))
+						{
+							m.Location = from;
+							m.ProcessDelta();
+						}
+						else
+							m.Paralyze(TimeSpan.FromSeconds(0.5));
+					});
+				}
+			}
+			catch (Exception e)
+			{
+				Diagnostics.ExceptionLogging.LogException(e);
 			}
 		}
 
 		public static Point2D GetOrientation(Direction d)
 		{
+			if ((int)d >= 0x80)
+				d = d & (Direction.North | Direction.Right | Direction.East | Direction.Down | Direction.South | Direction.Left | Direction.West | Direction.Up );
+
 			switch (d)
 			{
 				case Direction.North: return new Point2D(0, -1);
@@ -51,7 +56,10 @@ namespace Server.Custom.Spells
 
 		public static Direction GetOppositeDirection(Direction d)
 		{
-			switch(d)
+			if ((int)d >= 0x80)
+				d = d & (Direction.North | Direction.Right | Direction.East | Direction.Down | Direction.South | Direction.Left | Direction.West | Direction.Up);
+
+			switch (d)
 			{
 				case Direction.North: return Direction.South;
 				case Direction.Right: return Direction.Left;
@@ -65,47 +73,5 @@ namespace Server.Custom.Spells
 
 			return d;
 		}
-
-		//var targets = new ArrayList();
-
-		//var map = m_From.Map;
-
-		//if (map != null)
-		//{
-		//	var range = 1;
-		//	IPooledEnumerable eable = map.GetMobilesInRange(m_From.Location, range);
-
-		//	ExplodeFX.Tornado.CreateInstance(m_From, m_From.Map, range).Send();
-
-		//	foreach (Mobile m in eable)
-		//		if (m_From != m && SpellHelper.ValidIndirectTarget(m_From, m) && m_From.CanBeHarmful(m, false))
-		//			targets.Add(m);
-
-		//	eable.Free();
-		//}
-
-		//if (targets.Count > 0)
-		//{
-		//	for (var i = 0; i < targets.Count; ++i)
-		//	{
-		//		var m = (Mobile)targets[i];
-
-		//		var source = m_From;
-
-		//		Disturb(m);
-
-		//		if (m_Owner.CheckResisted(m))
-		//			m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
-		//		else
-		//		{
-		//			SpellHelper.Turn(m, source);
-
-		//			MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 2);
-
-		//			source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
-		//			source.PlaySound(0x44B);
-		//		}
-		//	}
-		//}
 	}
 }

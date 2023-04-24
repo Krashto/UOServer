@@ -120,7 +120,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
 
-							MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(source.Direction), 3);
+							MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(source.Direction), 3);
 
 							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 							source.PlaySound(0x44B);

@@ -43,8 +43,11 @@ namespace Server.Mobiles
             SetSkill(SkillName.Magery, 25.6, 38.6);
 
             ControlSlots = 2;
+			Tamable = true;
 
-            SetSpecialAbility(SpecialAbility.DragonBreath);
+			MinTameSkill = 25;
+
+			SetSpecialAbility(SpecialAbility.DragonBreath);
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Toundra;

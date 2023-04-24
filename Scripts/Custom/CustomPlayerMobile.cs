@@ -645,11 +645,11 @@ namespace Server.Mobiles
 		public int TileToDontFall { get; set; }
 																// 0    1    2    3    4    5 
 		private static int[] m_RunningTable = new int[]			{ 100, 100, 025, 000, 000, 000 };
-		private static int[] m_BeingAttackedTable = new int[]	{ 100, 100, 100, 100, 075, 005 };
-		private static int[] m_MeleeAttackingTable = new int[]	{ 100, 100, 100, 050, 005, 000 };
-		private static int[] m_CastAttackingTable = new int[]	{ 100, 100, 100, 100, 100, 100 };
-		private static int[] m_RangedAttackingTable = new int[] { 100, 100, 100, 050, 005, 000 };
-		private static int[] m_DismountTable = new int[]		{ 100, 100, 080, 070, 060, 050 };
+		private static int[] m_BeingAttackedTable = new int[]	{ 100, 075, 050, 025, 000, 000 };
+		private static int[] m_MeleeAttackingTable = new int[]	{ 100, 100, 075, 050, 025, 000 };
+		private static int[] m_CastAttackingTable = new int[]	{ 100, 100, 075, 050, 025, 000 };
+		private static int[] m_RangedAttackingTable = new int[] { 100, 100, 075, 050, 025, 000 };
+		private static int[] m_DismountTable = new int[]		{ 100, 100, 085, 070, 065, 050 };
 
 		public virtual bool CheckEquitation(EquitationType type, Point3D oldLocation)
 		{
@@ -756,7 +756,8 @@ namespace Server.Mobiles
 
 		public bool CanIncreaseStat(StatType stats, int value)
 		{
-			if (RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value > Attributs.MaxStat)
+			var newTotal = RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value;
+			if (newTotal > Attributs.MaxStats)
 				return false;
 
 			switch (stats)

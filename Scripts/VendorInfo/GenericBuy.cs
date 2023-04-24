@@ -67,7 +67,13 @@ namespace Server.Mobiles
                 m_Name = name;
         }
 
-        public virtual int ControlSlots => 0;
+		public static double GetBuyingScalar(Mobile from)
+		{
+			return 1 - (from.Skills[SkillName.Snooping].Value * 0.002);
+		}
+
+
+		public virtual int ControlSlots => 0;
         public virtual bool CanCacheDisplay => false;//return ( m_Args == null || m_Args.Length == 0 ); } 
         public Type Type
         {

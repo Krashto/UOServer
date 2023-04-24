@@ -3507,7 +3507,7 @@ namespace Server.Mobiles
 		[CommandProperty(AccessLevel.GameMaster)]
 		public double MinTameSkill
 		{
-			get { return m_dMinTameSkill; }
+			get { return Level * 5; }
 			set
 			{
 				m_dMinTameSkill = Level * 5;

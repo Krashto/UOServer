@@ -29,28 +29,30 @@ namespace Server.Mobiles
             m_Types = null;
         }
 
-        public int GetSellPriceFor(Item item)
+		public static double GetSellingScalar(Mobile from)
+		{
+			return 1 + (from.Skills[SkillName.Snooping].Value * 0.002);
+		}
+
+		public int GetSellPriceFor(Mobile from, Item item)
         {
-            return GetSellPriceFor(item, null);
+            return GetSellPriceFor(from, item, null);
         }
 
-        public int GetSellPriceFor(Item item, BaseVendor vendor)
+        public int GetSellPriceFor(Mobile from, Item item, BaseVendor vendor)
         {
             int price = 0;
             m_Table.TryGetValue(item.GetType(), out price);
 
+			if (from != null)
+			{
+				price = (int)(price * GetSellingScalar(from));
+			}
+
             if (vendor != null && BaseVendor.UseVendorEconomy)
             {
                 IBuyItemInfo buyInfo = vendor.GetBuyInfo().OfType<GenericBuyInfo>().FirstOrDefault(info => info.EconomyItem && info.Type == item.GetType());
-
-       //         if (buyInfo != null)
-       //         {
-       //             int sold = buyInfo.TotalSold;
-        //            price = (int)(buyInfo.Price * .75);
-
-                    return Math.Max(1, price);
-
-     //           }
+                return Math.Max(1, price);
             }
 
             if (item is BaseArmor)
@@ -61,8 +63,6 @@ namespace Server.Mobiles
                     price = (int)(price * 0.60);
                 else if (armor.Quality == ItemQuality.Exceptional)
                     price = (int)(price * 1.25);
-
-       //         price += 5 * armor.ArmorAttributes.DurabilityBonus;
 
                 if (price < 1)
                     price = 1;
@@ -75,10 +75,6 @@ namespace Server.Mobiles
                     price = (int)(price * 0.60);
                 else if (weapon.Quality == ItemQuality.Exceptional)
                     price = (int)(price * 1.25);
-
-//                price += 100 * weapon.WeaponAttributes.DurabilityBonus;
-
-   //             price += 10 * weapon.Attributes.WeaponDamage;
 
                 if (price < 1)
                     price = 1;
@@ -114,14 +110,14 @@ namespace Server.Mobiles
             return price;
         }
 
-        public int GetBuyPriceFor(Item item)
+        public int GetBuyPriceFor(Mobile from, Item item)
         {
-            return GetBuyPriceFor(item, null);
+            return GetBuyPriceFor(from, item, null);
         }
 
-        public int GetBuyPriceFor(Item item, BaseVendor vendor)
+        public int GetBuyPriceFor(Mobile from, Item item, BaseVendor vendor)
         {
-            return (int)(1.90 * GetSellPriceFor(item, vendor));
+            return (int)(1.90 * GetSellPriceFor(from, item, vendor) * GenericBuyInfo.GetBuyingScalar(from));
         }
 
         public string GetNameFor(Item item)

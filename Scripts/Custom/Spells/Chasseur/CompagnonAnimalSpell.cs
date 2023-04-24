@@ -57,21 +57,21 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 		private static readonly CompagnonAnimalEntry[] m_Entries = new CompagnonAnimalEntry[]
 		{
-			new CompagnonAnimalEntry(typeof(Rabbit), "Rabbit", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Hind), "Hind", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Pig), "Pig", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Gorilla), "Gorilla", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Eagle), "Eagle", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(GreyWolf), "Grey Wolf", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(SnowLeopard), "Snow Leopard", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Alligator), "Alligator", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Horse), "Horse", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(Llama), "Llama", 30.0, 30.0),
-			new CompagnonAnimalEntry(typeof(GiantSerpent), "Giant Serpent", 40.0, 40.0),
-            new CompagnonAnimalEntry(typeof(Scorpion), "Scorpion", 40.0, 40.0),
-            new CompagnonAnimalEntry(typeof(Walrus), "Walrus", 60.0, 60.0),
-			new CompagnonAnimalEntry(typeof(PolarBear), "Polar Bear", 60.0, 60.0),
-			new CompagnonAnimalEntry(typeof(GrizzlyBear), "Grizzly Bear", 60.0, 60.0),
+			new CompagnonAnimalEntry(typeof(Rabbit), "Rabbit", 30.0),
+			new CompagnonAnimalEntry(typeof(Hind), "Hind", 30.0),
+			new CompagnonAnimalEntry(typeof(Pig), "Pig", 30.0),
+			new CompagnonAnimalEntry(typeof(Gorilla), "Gorilla", 30.0),
+			new CompagnonAnimalEntry(typeof(Eagle), "Eagle", 30.0),
+			new CompagnonAnimalEntry(typeof(GreyWolf), "Grey Wolf", 30.0),
+			new CompagnonAnimalEntry(typeof(SnowLeopard), "Snow Leopard", 30.0),
+			new CompagnonAnimalEntry(typeof(Alligator), "Alligator", 30.0),
+			new CompagnonAnimalEntry(typeof(Horse), "Horse", 30.0),
+			new CompagnonAnimalEntry(typeof(Llama), "Llama", 30.0),
+			new CompagnonAnimalEntry(typeof(GiantSerpent), "Giant Serpent", 40.0),
+            new CompagnonAnimalEntry(typeof(Scorpion), "Scorpion", 40.0),
+            new CompagnonAnimalEntry(typeof(Walrus), "Walrus", 60.0),
+			new CompagnonAnimalEntry(typeof(PolarBear), "Polar Bear", 60.0),
+			new CompagnonAnimalEntry(typeof(GrizzlyBear), "Grizzly Bear", 60.0),
         };
 
 		public static CompagnonAnimalEntry[] Entries => m_Entries;
@@ -79,22 +79,15 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 	public class CompagnonAnimalEntry
 	{
-		private readonly Type m_Type;
-		private readonly string m_Name;
-		private readonly double m_ReqNecromancy;
-		private readonly double m_ReqEvalInt;
+		public Type Type { get; private set; }
+		public string Name { get; private set; }
+		public double ReqTracking { get; private set; }
 
-		public Type Type => m_Type;
-		public string Name => m_Name;
-		public double ReqTracking => m_ReqNecromancy;
-		public double ReqEvalInt => m_ReqEvalInt;
-
-		public CompagnonAnimalEntry(Type type, string name, double reqTracking, double reqEvalInt)
+		public CompagnonAnimalEntry(Type type, string name, double reqTracking)
 		{
-			m_Type = type;
-			m_Name = name;
-			m_ReqNecromancy = reqTracking;
-			m_ReqEvalInt = reqEvalInt;
+			Type = type;
+			Name = name;
+			ReqTracking = reqTracking;
 		}
 	}
 
@@ -114,15 +107,12 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			AddPage(0);
 
 			double castSkill = from.Skills[m_Spell.CastSkill].Value;
-			double damageSkill = from.Skills[m_Spell.DamageSkill].Value;
 
 			for (int i = 0; i < entries.Length; ++i)
 			{
 				string name = entries[i].Name;
 
-				bool enabled = (castSkill >= entries[i].ReqTracking && damageSkill >= entries[i].ReqEvalInt);
-
-				if (enabled)
+				if (castSkill >= entries[i].ReqTracking)
 					AddButton(75, 85 + (i * 20), 9702, 9703, i + 1, GumpButtonType.Reply, 0);
 
 				AddHtmlTexte(100, 83 + (i * 20), 150, 20, name);
@@ -146,9 +136,9 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				{
 					m_From.SendMessage("Vous avez déjà un compagnon."); // You already have a familiar.
 				}
-				else if (necro < entry.ReqTracking || evalInt < entry.ReqEvalInt)
+				else if (necro < entry.ReqTracking)
 				{
-					m_From.SendMessage($"Ce compagnon animal requiert {entry.ReqTracking}% de Tracking et {entry.ReqEvalInt}% d'Evaluating Intelligence");
+					m_From.SendMessage($"Ce compagnon animal requiert {entry.ReqTracking}% de Tracking");
 
 					m_From.CloseGump(typeof(CompagnonAnimalGump));
 					m_From.SendGump(new CompagnonAnimalGump(m_From, CompagnonAnimalSpell.Entries, m_Spell));

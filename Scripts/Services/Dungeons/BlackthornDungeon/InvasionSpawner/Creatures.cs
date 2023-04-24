@@ -376,7 +376,7 @@ namespace Server.Engines.Blackthorn
 
         public Item RandomMageWeapon()
         {
-            return Loot.Construct(new Type[] { typeof(Spellbook), typeof(GnarledStaff), typeof(BlackStaff), typeof(QuarterStaff), typeof(WildStaff) });
+            return Loot.Construct(new Type[] { typeof(NewSpellbook), typeof(GnarledStaff), typeof(BlackStaff), typeof(QuarterStaff), typeof(WildStaff) });
         }
 
         public Item RandomSamuraiWeapon()

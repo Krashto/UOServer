@@ -41,7 +41,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
         {
             if (CheckSequence())
             {
-                TimeSpan duration = GetDurationForSpell(30, 1);
+				TimeSpan duration = TimeSpan.FromMinutes(10);
 				var totem = new TotemDeFeu();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;

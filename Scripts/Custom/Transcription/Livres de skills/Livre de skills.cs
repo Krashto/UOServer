@@ -85,7 +85,7 @@ namespace Server.Items
             m_Skill = skill;
             m_Level = value;
             m_GrowValue = growvalue;
-            m_Max = 30; //Acheté = 30, tjs.
+            m_Max = 30;
         }
 
         public LivreSkills(Serial serial) : base(serial)
@@ -338,27 +338,25 @@ namespace Server.Items
                 m_GrowValue = 0.2;
                 m_Max = 30;
 
-                if (from is CustomPlayerMobile)
+                if (from is CustomPlayerMobile pm)
                 {
-                    m_Level = ((CustomPlayerMobile)from).Aptitudes.GetRealValue(Aptitude.Transcription) * 3;
-                    m_GrowValue = ((CustomPlayerMobile)from).Aptitudes.GetRealValue(Aptitude.Transcription) * 0.2;
+                    m_Level = pm.Aptitudes.GetRealValue(Aptitude.Transcription) * 3;
+                    m_GrowValue = pm.Aptitudes.GetRealValue(Aptitude.Transcription) * 0.2 + pm.Capacites.Expertise * 0.1 + pm.Capacites.Perfection * 0.1;
 
-                    double apti = ((CustomPlayerMobile)from).Aptitudes.GetRealValue(Aptitude.Transcription);
+                    double apti = pm.Aptitudes.GetRealValue(Aptitude.Transcription);
 
-                    if (apti >= 12)
-                        m_Max = 145;
-                    else if (apti >= 10)
+                    if (apti >= 10)
                         m_Max = 120;
-                    else if (apti >= 9)
+                    else if (apti >= 8)
                         m_Max = 100;
-                    else if (apti >= 7)
-                        m_Max = 90;
-                    else if (apti >= 5)
-                        m_Max = 70;
-                    else if (apti >= 3)
-                        m_Max = 50;
+                    else if (apti >= 6)
+                        m_Max = 80;
+                    else if (apti >= 4)
+                        m_Max = 60;
+                    else if (apti >= 2)
+                        m_Max = 40;
                     else
-                        m_Max = 30;
+                        m_Max = 20;
                 }
 
                 m_Author = from;

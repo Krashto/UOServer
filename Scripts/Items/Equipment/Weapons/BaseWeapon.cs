@@ -1941,7 +1941,7 @@ namespace Server.Items
 				percentageBonus += 100;
 
 			if (EnrageSpell.IsActive(attacker))
-				percentageBonus += 100;
+				percentageBonus += this is BaseRanged ? 50 : 100;
 
 			if (CommandementSpell.IsActive(attacker))
 				percentageBonus += 100;

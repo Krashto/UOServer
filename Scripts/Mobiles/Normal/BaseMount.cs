@@ -440,7 +440,13 @@ namespace Server.Mobiles
                 return;
             }
 
-            if (from.Mounted)
+			if (from.Hidden && from.AccessLevel == AccessLevel.Player)
+			{
+				from.SendMessage("Vous ne pouvez chevaucher une monture en étant caché."); // Please dismount first.
+				return;
+			}
+
+			if (from.Mounted)
             {
                 from.SendLocalizedMessage(1005583); // Please dismount first.
                 return;

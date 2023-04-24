@@ -11,18 +11,18 @@ namespace Server.SkillHandlers
 
 		private static readonly int[,] m_ArmorTable =
 		{
-            //	Gorget	Gloves	Helmet	Arms	Legs	Chest	Shield
-            /* Cloth	*/ { 0, 0, 0, 0, 0, 0, 0 },
-            /* Leather	*/ { 0, 0, 0, 0, 0, 0, 0 },
-            /* Studded	*/ { 2, 2, 0, 4, 6, 10, 0 },
-            /* Bone		*/ { 0, 5, 10, 10, 15, 25, 0 },
-            /* Spined	*/ { 0, 0, 0, 0, 0, 0, 0 },
-            /* Horned	*/ { 0, 0, 0, 0, 0, 0, 0 },
-            /* Barbed	*/ { 0, 0, 0, 0, 0, 0, 0 },
-            /* Ring		*/ { 0, 5, 0, 10, 15, 25, 0 },
-            /* Chain	*/ { 0, 0, 10, 0, 15, 25, 0 },
-            /* Plate	*/ { 5, 5, 10, 10, 15, 25, 0 },
-            /* Dragon	*/ { 0, 5, 10, 10, 15, 25, 0 }
+            //				Gorget	Gloves	Helmet	Arms	Legs	Chest	Shield
+            /* Cloth	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Leather	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Studded	*/ {  2,	  2,	  0,	 4,		 6,		 10,      0 },
+            /* Bone		*/ {  0,	  5,	  10,	 10,	 15,	 25,	  0 },
+            /* Spined	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Horned	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Barbed	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Ring		*/ {  0,	  5,	  0,	 10,	 15,	 25,	  0 },
+            /* Chain	*/ {  0,	  0,	  10,	 0,		 15,	 25,	  0 },
+            /* Plate	*/ {  5,	  5,	  10,	 10,	 15,	 25,	  0 },
+            /* Dragon	*/ {  0,	  5,	  10,	 10,	 15,	 25,	  0 }
 		};
 
 		public static double HidingRequirement => 30;
@@ -77,7 +77,6 @@ namespace Server.SkillHandlers
 
         public static TimeSpan OnUse(Mobile m)
         {
-
 			if (m.Hidden)
 			{
 				if (m.Skills[SkillName.Hiding].Base < HidingRequirement)
@@ -93,12 +92,12 @@ namespace Server.SkillHandlers
 					BuffInfo.RemoveBuff(m, BuffIcon.HidingAndOrStealth);
 				}
 				if (m.Mounted)
-					{
-						m.SendMessage("Vous ne pouvez pas vous déplacer étant caché sur une monture."); // You are busy doing something else and cannot hide.
+				{
+					m.SendMessage("Vous ne pouvez pas vous déplacer étant caché sur une monture."); // You are busy doing something else and cannot hide.
 					m.RevealingAction();
 					BuffInfo.RemoveBuff(m, BuffIcon.HidingAndOrStealth);
 					return TimeSpan.FromSeconds(2.0);
-					}
+				}
 				
 				else
 				{

@@ -370,15 +370,15 @@ namespace Server.Spells
         {
             double bonus = 1;
 
-			bonus += (Caster.Skills[CastSkill].Value - 50) / 150;
-			bonus += (Caster.Skills[DamageSkill].Value - 50) / 200;
+			bonus += (Caster.Skills[CastSkill].Value - 50) / 50;
+			bonus += (Caster.Skills[DamageSkill].Value - 50) / 75;
 
-			bonus += Caster.Int / 2000;
+			bonus += Caster.Int / 1000;
 
 			if (Caster is CustomPlayerMobile pm)
 			{
-				bonus += pm.Capacites.Magie / 50;
-				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) / 100;
+				bonus += pm.Capacites.Magie / 25;
+				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) / 50;
 			}
 
 			min *= bonus * scale;
@@ -540,6 +540,10 @@ namespace Server.Spells
 			//{
 			//	m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
 			//}
+			else if (m_Caster.Hidden)
+			{
+				m_Caster.SendMessage($"Vous ne pouvez pas envoyer de sort lorsque vous êtes caché{(m_Caster.Female ? "e" : "")}.");
+			}
 			else if (m_Caster.Paralyzed )
 			{
 				m_Caster.SendMessage($"Vous ne pouvez pas envoyer de sort lorsque vous êtes paralysé{(m_Caster.Female ? "e" : "")}.");
@@ -795,8 +799,6 @@ namespace Server.Spells
             Aptitude[] aptitudeRequise = GetAptitude();
 
             CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
-
-			m_Caster.RevealingAction();
 
 			if ( m_Caster.Deleted || !m_Caster.Alive || m_Caster.Spell != this || m_State != SpellState.Sequencing )
             {

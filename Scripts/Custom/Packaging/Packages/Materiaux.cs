@@ -12,7 +12,7 @@
 		{
 			Name = "Materiaux";
 			Hue = 2930;
-			Weight = 0.3;
+			Weight = 0.1;
 			Stackable = true;
 			Amount = amount;
 		}

@@ -28,7 +28,7 @@ namespace Server.Mobiles
 
     public abstract class BaseVendor : BaseCreature, IVendor
     {
-        public static bool UseVendorEconomy = !Siege.SiegeShard;
+		public static bool UseVendorEconomy = false; //!Siege.SiegeShard;
         public static int BuyItemChange = Config.Get("Vendors.BuyItemChange", 1000);
         public static int SellItemChange = Config.Get("Vendors.SellItemChange", 1000);
         public static int EconomyStockAmount = Config.Get("Vendors.EconomyStockAmount", 500);
@@ -892,8 +892,6 @@ namespace Server.Mobiles
             list = new List<BuyItemState>(buyInfo.Length);
             Container cont = BuyPack;
 
-			var scalar = 1 - (from.Skills[SkillName.Snooping].Value * 0.002);
-
             List<ObjectPropertyList> opls = null;
 
             for (int idx = 0; idx < buyInfo.Length; idx++)
@@ -914,12 +912,12 @@ namespace Server.Mobiles
                     continue;
                 }
 
-                list.Add(
+				list.Add(
                     new BuyItemState(
                         buyItem.Name,
                         cont.Serial,
                         disp == null ? (Serial)0x7FC0FFEE : disp.Serial,
-                        (int)(buyItem.Price * scalar),
+                        (int)(buyItem.Price * GenericBuyInfo.GetBuyingScalar(from)),
                         buyItem.Amount,
                         buyItem.ItemID,
                         buyItem.Hue));
@@ -973,7 +971,7 @@ namespace Server.Mobiles
                 {
                     if (ssi.IsSellable(item))
                     {
-                        price = ssi.GetBuyPriceFor(item, this);
+                        price = (int)(ssi.GetBuyPriceFor(from, item, this));
                         name = ssi.GetNameFor(item);
                         break;
                     }
@@ -981,7 +979,7 @@ namespace Server.Mobiles
 
                 if (name != null && list.Count < 250)
                 {
-                    list.Add(new BuyItemState(name, cont.Serial, item.Serial, (int)(price * scalar), item.Amount, item.ItemID, item.Hue));
+                    list.Add(new BuyItemState(name, cont.Serial, item.Serial, price, item.Amount, item.ItemID, item.Hue));
                     count++;
 
                     if (opls == null)
@@ -1129,11 +1127,9 @@ namespace Server.Mobiles
                             continue;
                         }
 
-						var scalar = 1 + (from.Skills[SkillName.Snooping].Value * 0.002);
-
                         if (item.IsStandardLoot() && item.Movable && ssi.IsSellable(item))
                         {
-                            table[item] = new SellItemState(item, (int)(ssi.GetSellPriceFor(item, this) * scalar), ssi.GetNameFor(item));
+                            table[item] = new SellItemState(item, (int)(ssi.GetSellPriceFor(from, item, this)), ssi.GetNameFor(item));
                         }
                     }
                 }
@@ -1342,7 +1338,7 @@ namespace Server.Mobiles
                 if (ssi.IsSellable(dropped))
                 {
                     SayTo(from, 501548, 0x3B2); // I thank thee.
-                    Titles.AwardFame(from, ssi.GetSellPriceFor(dropped, this) * dropped.Amount, true);
+                    Titles.AwardFame(from, (int)(ssi.GetSellPriceFor(from, dropped, this) * dropped.Amount), true);
 
                     return true;
                 }
@@ -1477,6 +1473,7 @@ namespace Server.Mobiles
         }
 
         private void ProcessSinglePurchase(
+			Mobile buyer,
             BuyItemResponse buy,
             IBuyItemInfo bii,
             List<BuyItemResponse> validBuy,
@@ -1508,7 +1505,7 @@ namespace Server.Mobiles
                 return;
             }
 
-            cost = (double)bii.Price * amount;
+            cost = (double)bii.Price * amount * GenericBuyInfo.GetBuyingScalar(buyer);
             validBuy.Add(buy);
         }
 
@@ -1651,8 +1648,8 @@ namespace Server.Mobiles
 
                     if (gbi != null)
                     {
-                        ProcessSinglePurchase(buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref cost);
-                    }
+                        ProcessSinglePurchase(buyer, buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref cost);
+					}
                     else if (item != BuyPack && item.IsChildOf(BuyPack))
                     {
                         if (amount > item.Amount)
@@ -1671,7 +1668,7 @@ namespace Server.Mobiles
                             {
                                 if (ssi.IsResellable(item))
                                 {
-                                    cost = (double)ssi.GetBuyPriceFor(item, this) * amount;
+                                    cost = (double)ssi.GetBuyPriceFor(buyer, item, this) * amount;
                                     validBuy.Add(buy);
                                     break;
                                 }
@@ -1704,8 +1701,8 @@ namespace Server.Mobiles
 
                     if (gbi != null)
                     {
-                        ProcessSinglePurchase(buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref cost);
-                    }
+                        ProcessSinglePurchase(buyer, buy, gbi, validBuy, ref controlSlots, ref fullPurchase, ref cost);
+					}
 
                     if (validBuy.Contains(buy))
                     {
@@ -2201,7 +2198,7 @@ namespace Server.Mobiles
                                 resp.Item.Delete();
                         }
 
-                        int singlePrice = ssi.GetSellPriceFor(resp.Item, this);
+						int singlePrice = (int)(ssi.GetSellPriceFor(seller, resp.Item, this));
                         GiveGold += singlePrice * amount;
 
 						Custom.CustomPersistence.AddSellItem(resp.Item.GetType().ToString(), singlePrice * amount);
@@ -2723,12 +2720,12 @@ namespace Server
         string GetNameFor(Item item);
 
         //get price for an item which the player is selling
-        int GetSellPriceFor(Item item);
-        int GetSellPriceFor(Item item, BaseVendor vendor);
+        int GetSellPriceFor(Mobile from, Item item);
+        int GetSellPriceFor(Mobile from, Item item, BaseVendor vendor);
 
         //get price for an item which the player is buying
-        int GetBuyPriceFor(Item item);
-        int GetBuyPriceFor(Item item, BaseVendor vendor);
+        int GetBuyPriceFor(Mobile from, Item item);
+        int GetBuyPriceFor(Mobile from, Item item, BaseVendor vendor);
 
         //can we sell this item to this vendor?
         bool IsSellable(Item item);

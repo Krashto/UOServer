@@ -85,8 +85,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (SpellHelper.CheckField(pnt, Caster.Map))
 				{
 					new InternalItem(itemID, pnt, Caster, Caster.Map, duration, false);
-					var totem = new TotemDenergie();
-					SpellHelper.Summon(totem, Caster, 0x217, duration + TimeSpan.FromMilliseconds(50), false, false);
+					var totem = new TotemDenergie(duration);
 					totem.MoveToWorld(pnt, Caster.Map);
 				}
 
@@ -100,8 +99,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 						if (SpellHelper.CheckField(point, Caster.Map))
 						{
 							new InternalItem(itemID, point, Caster, Caster.Map, duration, false);
-							var totem = new TotemDenergie();
-							SpellHelper.Summon(totem, Caster, 0x217, duration + TimeSpan.FromMilliseconds(50), false, false);
+							var totem = new TotemDenergie(duration);
 							totem.MoveToWorld(point, Caster.Map);
 						}
 
@@ -111,8 +109,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 						if (SpellHelper.CheckField(point, Caster.Map))
 						{
 							new InternalItem(itemID, point, Caster, Caster.Map, duration, false);
-							var totem = new TotemDenergie();
-							SpellHelper.Summon(totem, Caster, 0x217, duration + TimeSpan.FromMilliseconds(50), false, false);
+							var totem = new TotemDenergie(duration);
 							totem.MoveToWorld(point, Caster.Map);
 						}
 					}, i);

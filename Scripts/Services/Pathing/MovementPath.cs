@@ -134,7 +134,7 @@ namespace Server
             }
         }
 
-        private static void Path(Mobile from, IPoint3D p, PathAlgorithm alg, string name, int zOffset)
+        public static void Path(Mobile from, IPoint3D p, PathAlgorithm alg, string name, int zOffset)
         {
             m_OverrideAlgorithm = alg;
 

@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				ConcentricWaveFX.Fire.CreateInstance(Caster.Location, Caster.Map, Caster.Direction, 3).Send();
 
-				MovingSpells.MoveMobileTo(Caster, Caster.Location, Caster.Direction, 3);
+				MovingSpells.MoveMobileTo(Caster, Caster.Direction, 3);
 
 				int dx = Caster.Location.X - oldLocation.X;
 				int dy = Caster.Location.Y - oldLocation.Y;

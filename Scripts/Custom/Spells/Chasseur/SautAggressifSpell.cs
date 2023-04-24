@@ -41,7 +41,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				Disturb(m);
 
-				MovingSpells.MoveMobileTo(Caster, Caster.Location, MovingSpells.GetOppositeDirection(Caster.Direction), 3);
+				MovingSpells.MoveMobileTo(Caster, MovingSpells.GetOppositeDirection(Caster.Direction), 3);
 
 				double damage = GetNewAosDamage(m, 6, 1, 2, false);
 

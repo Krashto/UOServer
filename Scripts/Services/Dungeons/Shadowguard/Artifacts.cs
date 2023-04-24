@@ -74,7 +74,7 @@ namespace Server.Items
         }
     }
 
-    public class AnonsSpellbook : Spellbook
+    public class AnonsSpellbook : NewSpellbook
     {
         public override int LabelNumber => 1156344;
 

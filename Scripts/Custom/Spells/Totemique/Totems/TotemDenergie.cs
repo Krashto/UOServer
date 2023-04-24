@@ -7,9 +7,17 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	[CorpseName("a water elemental corpse")]
 	public class TotemDenergie : BaseTotem
 	{
+		private DateTime m_EndTime { get; set; }
+
 		[Constructable]
-		public TotemDenergie() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
+		public TotemDenergie() : this(TimeSpan.FromSeconds(30))
 		{
+		}
+
+		public TotemDenergie(TimeSpan duration) : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
+		{
+			m_EndTime = DateTime.Now + duration;
+
 			Name = "Totem d'énergie";
 			Body = 164;
 			BaseSoundID = 278;
@@ -39,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 85.0);
 
-			ControlSlots = 0;
+			ControlSlots = 1;
 		}
 
 		public TotemDenergie(Serial serial)
@@ -54,6 +62,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		public override void OnThink()
 		{
 			CantWalk = !MarcheASuivreEnable;
+
+			if (m_EndTime < DateTime.Now)
+				Delete();
 
 			if (NextThinkingTime >= DateTime.Now)
 				return;

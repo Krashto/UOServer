@@ -39,10 +39,10 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				Disturb(m);
 
-				MovingSpells.MoveMobileTo(Caster, Caster.Location, Caster.Direction, (int)Caster.GetDistanceToSqrt(m));
+				MovingSpells.MoveMobileTo(Caster, Caster.Direction, (int)Caster.GetDistanceToSqrt(m));
 				ExplodeFX.Earth.CreateInstance(Caster.Location, Caster.Map, 2).Send();
 
-				MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(m.Direction), 3);
+				MovingSpells.MoveMobileTo(m, Caster.Direction, 3);
 				ExplodeFX.Earth.CreateInstance(m.Location, m.Map, 2).Send();
 				CustomUtility.ApplySimpleSpellEffect(m, "Charge furieuse", AptitudeColor.Martial, SpellEffectType.Move);
 			}

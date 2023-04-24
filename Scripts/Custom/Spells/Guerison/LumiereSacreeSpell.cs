@@ -74,7 +74,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 						var m = (Mobile)bTargets[i];
 
-						toHeal = Caster.Skills[CastSkill].Value * 0.25 + Caster.Skills[DamageSkill].Value * 0.25;
+						toHeal = Caster.Skills[CastSkill].Value * 0.15 + Caster.Skills[DamageSkill].Value * 0.15;
 						toHeal += Utility.Random(1, 5);
 
 						toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Guerison);

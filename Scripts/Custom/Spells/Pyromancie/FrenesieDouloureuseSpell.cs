@@ -40,7 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				SpellHelper.Turn(Caster, m);
 				SpellHelper.Turn(m, Caster);
 
-				MovingSpells.MoveMobileTo(m, m.Location, MovingSpells.GetOppositeDirection(m.Direction), (int)Caster.GetDistanceToSqrt(m));
+				MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(m.Direction), (int)Caster.GetDistanceToSqrt(m));
 
 				m.Attack(Caster);
 				Caster.Attack(m);

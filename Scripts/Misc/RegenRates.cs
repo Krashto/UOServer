@@ -32,16 +32,14 @@ namespace Server.Misc
 
         public static double GetArmorOffset(Mobile from)
         {
-            double rating = 0.0;
+            double rating =  GetArmorMeditationValue(from.NeckArmor as BaseArmor);
+				   rating += GetArmorMeditationValue(from.HandArmor as BaseArmor);
+				   rating += GetArmorMeditationValue(from.HeadArmor as BaseArmor);
+				   rating += GetArmorMeditationValue(from.ArmsArmor as BaseArmor);
+				   rating += GetArmorMeditationValue(from.LegsArmor as BaseArmor);
+				   rating += GetArmorMeditationValue(from.ChestArmor as BaseArmor);
 
-            rating += GetArmorMeditationValue(from.NeckArmor as BaseArmor);
-            rating += GetArmorMeditationValue(from.HandArmor as BaseArmor);
-            rating += GetArmorMeditationValue(from.HeadArmor as BaseArmor);
-            rating += GetArmorMeditationValue(from.ArmsArmor as BaseArmor);
-            rating += GetArmorMeditationValue(from.LegsArmor as BaseArmor);
-            rating += GetArmorMeditationValue(from.ChestArmor as BaseArmor);
-
-            return rating / 4;
+            return rating;
         }
 
         private static void CheckBonusSkill(Mobile m, int cur, int max, SkillName skill)
@@ -94,32 +92,23 @@ namespace Server.Misc
                 CheckBonusSkill(from, from.Mana, from.ManaMax, SkillName.Meditation);
 
             double rate;
-            double armorPenalty = GetArmorOffset(from);
+            double armorPenaltyScalar = GetArmorOffset(from);
 
             double med = from.Skills[SkillName.Meditation].Value;
             double focus = from.Skills[SkillName.Focus].Value;
 
             double focusBonus = focus / 200;
-            double medBonus = 0;
-
-			double formeGlaceBonus = 0;
-
-			//if (LicheFormSpell.IsActive(from))
-			//	formeGlaceBonus += 0.5;
 
 			CheckBonusSkill(from, from.Mana, from.ManaMax, SkillName.Focus);
 
-            if (armorPenalty == 0)
+            var medBonus = (0.0075 * med) + (0.0025 * from.Int);
+
+            if (medBonus >= 100.0)
+                medBonus *= 1.1;
+
+            if (from.Meditating)
             {
-                medBonus = (0.0075 * med) + (0.0025 * from.Int);
-
-                if (medBonus >= 100.0)
-                    medBonus *= 1.1;
-
-                if (from.Meditating)
-                {
-                    medBonus *= 2;
-                }
+                medBonus *= 2;
             }
 
             double itemBase = ((((med / 2) + (focus / 4)) / 90) * .65) + 2.35;
@@ -127,7 +116,7 @@ namespace Server.Misc
 
             double itemBonus = ((itemBase * intensityBonus) - (itemBase - 1)) / 10;
 
-            rate = 1.0 / (0.2 + focusBonus + medBonus + itemBonus + formeGlaceBonus);
+            rate = 1.0 / ((0.2 + focusBonus + medBonus + itemBonus) * (1 - armorPenaltyScalar));
 
             if (double.IsNaN(rate))
             {
@@ -223,15 +212,12 @@ namespace Server.Misc
             if (ar == null || ar.ArmorAttributes.MageArmor != 0 || ar.Attributes.SpellChanneling != 0)
                 return 0.0;
 
-            switch (ar.MeditationAllowance)
+            switch (ar.MaterialType)
             {
-                default:
-                case ArmorMeditationAllowance.None:
-                    return ar.BaseArmorRatingScaled;
-                case ArmorMeditationAllowance.Half:
-                    return ar.BaseArmorRatingScaled / 2.0;
-                case ArmorMeditationAllowance.All:
-                    return 0.0;
+                default: return 0.00;
+				case ArmorMaterialType.Plate: return 0.15;
+                case ArmorMaterialType.Chainmail: return 0.10;
+                case ArmorMaterialType.Ringmail: return 0.05;
             }
         }
     }
