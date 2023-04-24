@@ -2,7 +2,7 @@ using Server.Engines.Craft;
 
 namespace Server.Items
 {
-    [Alterable(typeof(DefBlacksmithy), typeof(DualPointedSpear))]
+    [Alterable(typeof(DefBlacksmithy), typeof(JupeOndulee))]
     [Flipable(0x1403, 0x1402)]
     public class ShortSpear : BaseSpear
     {

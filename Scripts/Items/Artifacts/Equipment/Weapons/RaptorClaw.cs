@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class RaptorClaw : Boomerang
+    public class RaptorClaw : BatonNature
     {
         public override bool IsArtifact => true;
         [Constructable]

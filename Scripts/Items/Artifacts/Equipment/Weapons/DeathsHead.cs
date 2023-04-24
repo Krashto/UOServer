@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class DeathsHead : DiscMace
+    public class DeathsHead : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1113526;  // Death's Head

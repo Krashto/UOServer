@@ -399,7 +399,7 @@ namespace Server
 			//new LootPackItem(typeof(BombardScroll), 1),
 			//new LootPackItem(typeof(SpellPlagueScroll), 1),
 			//new LootPackItem(typeof(HailStormScroll), 1),
-			//new LootPackItem(typeof(NetherCycloneScroll), 1),
+			//new LootPackItem(typeof(NetherJupeOnduleeScroll), 1),
 			//new LootPackItem(typeof(RisingColossusScroll), 1)
         //};
 

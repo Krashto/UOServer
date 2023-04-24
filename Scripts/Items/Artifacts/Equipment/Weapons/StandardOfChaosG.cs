@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class StandardOfChaosG : DualPointedSpear
+    public class StandardOfChaosG : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1113522;  // Standard of Chaos
@@ -16,7 +16,6 @@ namespace Server.Items
             Attributes.WeaponSpeed = 30;
             Attributes.WeaponDamage = -40;
             Attributes.CastSpeed = 1;
-            AosElementDamages.Chaos = 100;
         }
 
         public StandardOfChaosG(Serial serial)

@@ -313,7 +313,7 @@ namespace Server.Items
         }
     }
 
-    public class HalawasHuntingBowGargoyle : Cyclone
+    public class HalawasHuntingBowGargoyle : JupeOndulee
     {
         public override int LabelNumber => 1156127;
 
@@ -325,9 +325,7 @@ namespace Server.Items
         [Constructable]
         public HalawasHuntingBowGargoyle()
         {
-            Slayer = SlayerName.Eodon;
             WeaponAttributes.HitLeechMana = 20;
-            Velocity = 60;
             Attributes.AttackChance = 20;
             Attributes.WeaponSpeed = 45;
         }
@@ -390,7 +388,7 @@ namespace Server.Items
     }
 
    
-    public class JumusSacredHideGargoyle : Cyclone
+    public class JumusSacredHideGargoyle : BatonNature
     {
         public override int LabelNumber => 1156130;
 
@@ -508,7 +506,7 @@ namespace Server.Items
         }
     }
 
-    public class LereisHuntingSpearGargoyle : DualPointedSpear
+    public class LereisHuntingSpearGargoyle : BatonNature
     {
         public override int LabelNumber => 1156128;
 

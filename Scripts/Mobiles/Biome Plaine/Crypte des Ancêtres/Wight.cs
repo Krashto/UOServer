@@ -47,8 +47,13 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.MortalStrike);
             SetWeaponAbility(WeaponAbility.ColdWind);
         }
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<GriffeWight>(1, true));
 
-        public Wight(Serial serial)
+		}
+
+		public Wight(Serial serial)
             : base(serial)
         {
         }
@@ -56,11 +61,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Plaine;
 		public override bool BleedImmune => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-		}
-
+       
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

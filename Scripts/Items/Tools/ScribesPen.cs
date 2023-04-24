@@ -6,7 +6,6 @@ namespace Server.Items
     public class ScribesPen : BaseTool
     {
         public override CraftSystem CraftSystem => DefInscription.CraftSystem;
-        public override int LabelNumber => 1044168; // scribe's pen
 
         [Constructable]
         public ScribesPen()
@@ -19,6 +18,8 @@ namespace Server.Items
             : base(uses, 0x0FBF)
         {
             Weight = 1.0;
+			Name = "Plume d'écriture";
+			Hue = 0;
         }
 
         public ScribesPen(Serial serial)

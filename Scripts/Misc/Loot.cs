@@ -26,12 +26,12 @@ namespace Server
 		
         private static readonly Type[] m_SAWeaponTypes = new[]
         {
-            typeof(DiscMace), typeof(Shortblade), typeof(DualPointedSpear), typeof(GlassStaff),
+            typeof(BatonNature), typeof(BatonNature), typeof(BatonNature), typeof(GlassStaff),
             typeof(StoneWarSword), typeof(DualShortAxes), typeof(GlassSword), typeof(Dagger)
         };
         public static Type[] SAWeaponTypes => m_SAWeaponTypes;
 
-        private static readonly Type[] m_SARangedWeaponTypes = new[] { typeof(Boomerang), typeof(Cyclone), typeof(SoulGlaive), };
+        private static readonly Type[] m_SARangedWeaponTypes = new[] { typeof(BatonNature), typeof(BatonNature), typeof(BatonNature), };
         public static Type[] SARangedWeaponTypes => m_SARangedWeaponTypes;
 
         private static readonly Type[] m_SAArmorTypes = new[]
@@ -281,7 +281,7 @@ namespace Server
             /*typeof( NetherBoltScroll ),     typeof( HealingStoneScroll ),   typeof( PurgeMagicScroll ),         typeof( EnchantScroll ),
             typeof( SleepScroll ),          typeof( EagleStrikeScroll ),   typeof( AnimatedWeaponScroll ),      typeof( StoneFormScroll ),
             typeof( SpellTriggerScroll ),   typeof( MassSleepScroll ),      typeof( CleansingWindsScroll ),     typeof( BombardScroll ),
-            typeof( SpellPlagueScroll ),    typeof( HailStormScroll ),      typeof( NetherCycloneScroll ),      typeof( RisingColossusScroll ),
+            typeof( SpellPlagueScroll ),    typeof( HailStormScroll ),      typeof( NetherBatonNatureScroll ),      typeof( RisingColossusScroll ),
 			typeof( RemoveCurseScroll ),      typeof( EnemyOfOneScroll ),      typeof( CleanseByFireScroll ), typeof( ConsecrateWeaponScroll ),     
 			typeof( DivineFuryScroll ),      typeof( CloseWoundsScroll ),
 		};
@@ -300,7 +300,7 @@ namespace Server
         {
             typeof(NetherBoltScroll), typeof(HealingStoneScroll), typeof(PurgeMagicScroll), typeof(EagleStrikeScroll),
             typeof(AnimatedWeaponScroll), typeof(StoneFormScroll), typeof(SpellTriggerScroll), typeof(CleansingWindsScroll),
-            typeof(BombardScroll), typeof(SpellPlagueScroll), typeof(HailStormScroll), typeof(NetherCycloneScroll),
+            typeof(BombardScroll), typeof(SpellPlagueScroll), typeof(HailStormScroll), typeof(NetherBatonNatureScroll),
             typeof(RisingColossusScroll), typeof(SleepScroll), typeof(MassSleepScroll), typeof(EnchantScroll)
         };
 

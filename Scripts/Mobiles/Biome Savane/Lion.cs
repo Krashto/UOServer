@@ -3,8 +3,9 @@ namespace Server.Mobiles
     [CorpseName("Le corps d'un Lion")]
     public class Lion : BaseMount
     {
-
-		public Lion() : this("Un Lion")
+		[Constructable]
+		public Lion()
+	  : this("Lion")
 		{
 		}
 		public override double HealChance => 0.167;

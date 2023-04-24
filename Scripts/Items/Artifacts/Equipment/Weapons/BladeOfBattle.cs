@@ -1,6 +1,6 @@
 namespace Server.Items
 {
-    public class BladeOfBattle : Shortblade
+    public class BladeOfBattle : BatonNature
     {
         public override bool IsArtifact => true;
         public override int LabelNumber => 1113525;  // Blade of Battle

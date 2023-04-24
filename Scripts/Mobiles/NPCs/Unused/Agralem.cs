@@ -11,7 +11,7 @@ namespace Server.Engines.Quests
         {
             AddObjective(new SlayObjective(typeof(BaseVoidCreature), "Void Daemons", 10));
 
-            AddReward(new BaseReward(typeof(AbyssReaver), 1112694)); // Abyss Reaver
+            AddReward(new BaseReward(typeof(BatonNature), 1112694)); // Abyss Reaver
         }
 
         public override bool DoneOnce => true;
@@ -75,7 +75,7 @@ namespace Server.Engines.Quests
 
         public override void InitOutfit()
         {
-            AddItem(new Cyclone());
+            AddItem(new JupeOndulee());
             AddItem(new LeatherChest(2305));
             AddItem(new LeatherArms(2305));
         }

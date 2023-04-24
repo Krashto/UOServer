@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Cheval Squelettique")]
@@ -49,8 +51,14 @@ namespace Server.Mobiles
 		public override int Level => 1;
 		public override Biome Biome => Biome.Plaine;
 		public override Poison PoisonImmune => Poison.Lethal;
-        public override bool BleedImmune => true;
-        public override void Serialize(GenericWriter writer)
+		public override bool BleedImmune => true;
+
+			 public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<TibiaChevalNecro>(1, true));
+			
+		}
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 
