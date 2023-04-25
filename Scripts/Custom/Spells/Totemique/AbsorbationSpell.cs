@@ -39,7 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			{
 				if (totem.ControlMaster == Caster)
 				{
-					Caster.Hits += Math.Min(25, totem.Hits);
+					Caster.Hits += Math.Min(40, totem.Hits);
 					Caster.Stam += Math.Min(25, totem.Stam);
 					Caster.Mana += Math.Min(25, totem.Mana);
 

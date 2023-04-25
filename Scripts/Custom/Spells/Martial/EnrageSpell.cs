@@ -50,6 +50,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				foreach (var mod in mods)
 					Caster.AddResistanceMod(mod);
 
+				Caster.UpdateResistances();
+
 				var duration = GetDurationForSpell(20);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
@@ -83,6 +85,8 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Enrage", AptitudeColor.Martial, SpellSequenceType.End);
 			}

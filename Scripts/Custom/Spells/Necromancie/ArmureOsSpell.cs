@@ -63,7 +63,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				m_OathTable[Caster] = Caster;
 				m_OathTable[m] = Caster;
 
-				var duration = GetDurationForSpell(0.2);
+				var duration = GetDurationForSpell(3);
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Armure d'os", duration, AptitudeColor.Necromancie, SpellEffectType.Bonus);
 				ExplodeFX.Bone.CreateInstance(Caster, Caster.Map, 1).Send();

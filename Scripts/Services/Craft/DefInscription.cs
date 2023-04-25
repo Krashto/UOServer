@@ -175,9 +175,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreClasseSoigneur), "Mages", "Guérisseur - Soigneur", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseGuerisseur), "Mages", "Guérisseur - Guérisseur", 75.0, 75.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
-			index = AddCraft(typeof(LivreClasseMage), "Mages", "Hydromancien - Mage", 25.0, 25.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseMagicien), "Mages", "Hydromancien - Magicien", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseHydromancien), "Mages", "Hydromancien - Hydromancien", 75.0, 75.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseMage), "Mages", "Hydro. - Mage", 25.0, 25.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseMagicien), "Mages", "Hydro. - Magicien", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseHydromancien), "Mages", "Hydro. - Hydromancien", 75.0, 75.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			
 			index = AddCraft(typeof(LivreClasseThanathauste), "Mages", "Nécromancien - Thanathauste", 25.0, 25.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseNecromage), "Mages", "Nécromancien - Nécromage", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");

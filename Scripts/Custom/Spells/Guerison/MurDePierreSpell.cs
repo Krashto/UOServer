@@ -70,7 +70,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				Effects.PlaySound(p, Caster.Map, 0x1F6);
 
-				for (int i = -1; i <= 1; ++i)
+				for (int i = -2; i <= 2; ++i)
 				{
 					Point3D loc = new Point3D(eastToWest ? p.X + i : p.X, eastToWest ? p.Y : p.Y + i, p.Z);
 

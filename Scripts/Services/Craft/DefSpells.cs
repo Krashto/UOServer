@@ -176,43 +176,20 @@ namespace Server.Engines.Craft
 			switch (level)
 			{
 				default:
-				case 1: minSkill = 0; maxSkill = 30; break;
-				case 2: minSkill = 10; maxSkill = 40; break;
-				case 3: minSkill = 20; maxSkill = 50; break;
-				case 4: minSkill = 30; maxSkill = 60; break;
-				case 5: minSkill = 40; maxSkill = 70; break;
-				case 6: minSkill = 50; maxSkill = 80; break;
-				case 7: minSkill = 60; maxSkill = 90; break;
-				case 8: minSkill = 70; maxSkill = 100; break;
-				case 9: minSkill = 80; maxSkill = 110; break;
-				case 10: minSkill = 90; maxSkill = 120; break;
+				case 1: minSkill = 35; maxSkill = 45; break;
+				case 2: minSkill = 45; maxSkill = 45; break;
+				case 3: minSkill = 50; maxSkill = 60; break;
+				case 4: minSkill = 55; maxSkill = 65; break;
+				case 5: minSkill = 60; maxSkill = 70; break;
+				case 6: minSkill = 65; maxSkill = 75; break;
+				case 7: minSkill = 70; maxSkill = 80; break;
+				case 8: minSkill = 75; maxSkill = 85; break;
+				case 9: minSkill = 80; maxSkill = 90; break;
+				case 10: minSkill = 90; maxSkill = 100; break;
 			}
 
 			index = AddCraft(type, aptitude, name, minSkill, maxSkill, typeof(BlankScroll), "Blank scroll", 1, "You do not have enough blank scrolls to make that.");
 		}
-
-		private string GetCircle(int circle)
-		{
-			if (circle >= 0 && circle <= 10)
-				return m_GetCircle[circle];
-
-			return "";
-		}
-
-		private static string[] m_GetCircle = new string[]
-			{
-				"Niveau 0",
-				"Niveau 1",
-				"Niveau 2",
-				"Niveau 3",
-				"Niveau 4",
-				"Niveau 5",
-				"Niveau 6",
-				"Niveau 7",
-				"Niveau 8",
-				"Niveau 9",
-				"Niveau 10",
-			};
 
 		public override void InitCraftList()
         {

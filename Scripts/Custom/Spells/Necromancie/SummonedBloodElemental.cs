@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
@@ -44,6 +46,36 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			VirtualArmor = 71;
 
 			ControlSlots = 4;
+		}
+
+		public DateTime NextThinkingTime { get; set; }
+
+		public override void OnThink()
+		{
+			var mobiles = GetMobilesInRange(5);
+
+			if (NextThinkingTime < DateTime.Now)
+			{
+				NextThinkingTime = DateTime.Now + TimeSpan.FromSeconds(5);
+				Hits += mobiles.Count() * 3;
+			}
+
+			foreach (var m in mobiles)
+			{
+				if (m == ControlMaster)
+					continue;
+
+				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))
+					continue;
+
+				if (m is BaseCreature creature && creature.Controlled && CustomPlayerMobile.IsInEquipe(ControlMaster, creature.ControlMaster))
+					continue;
+
+				m.Combatant = this;
+				Combatant = m;
+			}
+
+			base.OnThink();
 		}
 
 		public SummonedBloodElemental(Serial serial) : base(serial)

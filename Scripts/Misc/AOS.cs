@@ -407,10 +407,10 @@ namespace Server
 				totalDamage /= 4;
 
 			if (m != null && PassionArdenteSpell.IsActive(m))
-				m.Heal(totalDamage * fire / 100 / 3);
+				m.Heal(totalDamage * fire / 100 / 5);
 
 			if (from != null && PassionArdenteSpell.IsActive(from))
-				from.Heal(totalDamage * fire / 100 / 3);
+				from.Heal(totalDamage * fire / 100 / 5);
 
 			if (totalDamage > 0)
 			{

@@ -112,10 +112,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(BrassardOs), "Armure d'os", "Brassards d'Os", 38, 58, typeof(PlainoisBone), "Os", 8, "Vous n'avez pas suffisament d'os");
 			index = AddCraft(typeof(JambiereOs), "Armure d'os", "Jambieres d'Os", 40, 60, typeof(PlainoisBone), "Os", 10, "Vous n'avez pas suffisament d'os");
 			index = AddCraft(typeof(PlastronOs), "Armure d'os", "Plastron d'Os", 50, 70, typeof(PlainoisBone), "Os", 12, "Vous n'avez pas suffisament d'os");
-			index = AddCraft(typeof(GorgetOS), "Armure d'os", "Gorget d'Os", 35, 55, typeof(PlainoisBone), "Os", 6, "Vous n'avez pas suffisament d'os");
-			index = AddCraft(typeof(GorgetOS1), "Armure d'os", "Gorget d'Os", 35, 55, typeof(PlainoisBone), "Os", 6, "Vous n'avez pas suffisament d'os");
-
-
+			index = AddCraft(typeof(GorgetOS), "Armure d'os", "Gorgerin d'Os", 35, 55, typeof(PlainoisBone), "Os", 6, "Vous n'avez pas suffisament d'os");
+			index = AddCraft(typeof(GorgetOS1), "Armure d'os", "Gorgerin Épaule d'Os", 35, 55, typeof(PlainoisBone), "Os", 6, "Vous n'avez pas suffisament d'os");
 			#endregion
 
 			// Set the overridable material

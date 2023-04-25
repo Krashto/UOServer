@@ -162,13 +162,13 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LesserStrengthPotion), "Force", "Potion de force mineure", 0.0, 25.0, typeof(MandrakeRoot), 1044357, 1, 1044365);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(StrengthPotion), "Force", "Potion de force mineure", 25.0, 50.0, typeof(MandrakeRoot), 1044357, 3, 1044365);
+			index = AddCraft(typeof(StrengthPotion), "Force", "Potion de force", 25.0, 50.0, typeof(MandrakeRoot), 1044357, 3, 1044365);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-            index = AddCraft(typeof(GreaterStrengthPotion), "Force", "Potion de force mineure", 50.0, 75.0, typeof(MandrakeRoot), 1044357, 5, 1044365);
+            index = AddCraft(typeof(GreaterStrengthPotion), "Force", "Potion de force majeure", 50.0, 75.0, typeof(MandrakeRoot), 1044357, 5, 1044365);
             AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
-			index = AddCraft(typeof(SuperiorStrengthPotion), "Force", "Potion de force mineure", 75.0, 100.0, typeof(MandrakeRoot), 1044357, 7, 1044365);
+			index = AddCraft(typeof(SuperiorStrengthPotion), "Force", "Potion de force supérieure", 75.0, 100.0, typeof(MandrakeRoot), 1044357, 7, 1044365);
 			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
 
 			// Explosive

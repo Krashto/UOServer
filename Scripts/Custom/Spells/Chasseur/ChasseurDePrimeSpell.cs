@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				{
 					Deactivate(m);
 
-					var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Chasseur);
+					var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 10 + Caster.Skills[DamageSkill].Value / 10, Aptitude.Chasseur);
 
 					var mods = new ResistanceMod[5]
 							{
@@ -61,6 +61,10 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 					foreach (var mod in mods)
 						m.AddResistanceMod(mod);
+
+					m.UpdateResistances();
+
+					m.Squelched = true;
 
 					var duration = GetDurationForSpell(8);
 
@@ -103,6 +107,10 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
+
+				m.Squelched = false;
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Chasseur de prime", AptitudeColor.Chasseur, SpellSequenceType.End, SpellEffectType.Malus);
 			}

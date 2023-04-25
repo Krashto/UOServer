@@ -51,6 +51,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 				m_Table[Caster] = mod;
 				Caster.AddResistanceMod(mod);
+				Caster.UpdateResistances();
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
@@ -79,6 +80,8 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				m_Table.Remove(m);
 
 				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Bouclier de feu", AptitudeColor.Pyromancie, SpellSequenceType.End);
 			}

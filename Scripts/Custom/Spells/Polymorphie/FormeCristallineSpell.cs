@@ -54,6 +54,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				foreach (var mod in mods)
 					Caster.AddResistanceMod(mod);
 
+				Caster.UpdateResistances();
+
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
 				t.Start();
@@ -89,6 +91,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				foreach (var mod in mods)
 					m.RemoveResistanceMod(mod);
 
+				m.UpdateResistances();
+
 				CustomUtility.ApplySimpleSpellEffect(m, "Forme cristalline", AptitudeColor.Polymorphie, SpellSequenceType.End);
 			}
 		}
@@ -108,6 +112,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 			protected override void OnTick()
 			{
+				if (m_Mobile.Hits >= 5)
+					m_Mobile.Hits -= 2;
+
 				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
 					Deactivate(m_Mobile);

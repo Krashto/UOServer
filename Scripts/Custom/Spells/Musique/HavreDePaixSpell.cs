@@ -3,6 +3,7 @@ using Server.Spells;
 using System.Collections;
 using System;
 using Server.Mobiles;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Musique
 {
@@ -58,6 +59,8 @@ namespace Server.Custom.Spells.NewSpells.Musique
 						m.Combatant = null;
 						m.Warmode = false;
 
+						Disarm.DoEffect(Caster, m);
+
 						CustomUtility.ApplySimpleSpellEffect(m, "Havre de paix", AptitudeColor.Musique, SpellEffectType.Malus);
 
 						if (m is BaseCreature && !((BaseCreature)m).BardPacified)
@@ -91,13 +94,10 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			{
 				t.Stop();
 
-				m.RemoveResistanceMod(mod);
-
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Havre de paix", AptitudeColor.Musique, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

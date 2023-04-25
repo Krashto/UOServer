@@ -36,7 +36,7 @@ namespace Server.SkillHandlers
             private readonly BaseInstrument m_Instrument;
 
             public InternalFirstTarget(Mobile from, BaseInstrument instrument)
-                : base(BaseInstrument.GetBardRange(from, SkillName.Provocation), false, TargetFlags.None)
+                : base(BaseInstrument.GetBardRange(from, SkillName.Musicianship), false, TargetFlags.None)
             {
                 m_Instrument = instrument;
             }
@@ -83,7 +83,7 @@ namespace Server.SkillHandlers
             private readonly BaseInstrument m_Instrument;
 
             public InternalSecondTarget(Mobile from, BaseInstrument instrument, BaseCreature creature)
-                : base(BaseInstrument.GetBardRange(from, SkillName.Provocation), false, TargetFlags.None)
+                : base(BaseInstrument.GetBardRange(from, SkillName.Musicianship), false, TargetFlags.None)
             {
                 m_Instrument = instrument;
                 m_Creature = creature;
@@ -113,7 +113,7 @@ namespace Server.SkillHandlers
                         from.SendLocalizedMessage(1049446); // You have no chance of provoking those creatures.
                     }
                     else if (m_Creature.Map != target.Map ||
-                             !m_Creature.InRange(target, BaseInstrument.GetBardRange(from, SkillName.Provocation)))
+                             !m_Creature.InRange(target, BaseInstrument.GetBardRange(from, SkillName.Musicianship)))
                     {
                         from.SendLocalizedMessage(1049450);
                         // The creatures you are trying to provoke are too far away from each other for your music to have an effect.
@@ -145,7 +145,7 @@ namespace Server.SkillHandlers
                             }
                             else
                             {
-                                if (!from.CheckTargetSkill(SkillName.Provocation, target, diff - 25.0, diff + 25.0))
+                                if (!from.CheckTargetSkill(SkillName.Musicianship, target, diff - 25.0, diff + 25.0))
                                 {
                                     from.NextSkillTime = Core.TickCount + (10000 - ((masteryBonus / 5) * 1000));
                                     from.SendLocalizedMessage(501599); // Your music fails to incite enough anger.

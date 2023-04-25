@@ -83,6 +83,8 @@ namespace Server.Custom.Spells.NewSpells.Musique
 								mods.Add(new DefaultSkillMod((SkillName)j, true, m.Skills[j].Value * scalar));
 						}
 
+						m.UpdateResistances();
+
 						CustomUtility.ApplySimpleSpellEffect(m, "Revelation discordante", AptitudeColor.Musique, SpellEffectType.Malus);
 					}
 				}
@@ -109,13 +111,14 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			{
 				t.Stop();
 
-				m.RemoveResistanceMod(mod);
-
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Revelation discordante", AptitudeColor.Musique, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

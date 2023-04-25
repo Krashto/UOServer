@@ -1,5 +1,8 @@
+using System;
 using System.Linq;
 using Server.Custom.Aptitudes;
+using Server.Misc;
+using Server.Mobiles;
 using Server.Spells;
 using VitaNex.FX;
 

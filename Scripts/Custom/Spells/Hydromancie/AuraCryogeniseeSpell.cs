@@ -66,6 +66,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 						ResistanceMod mod = new ResistanceMod(ResistanceType.Cold, (int)value);
 						m_Table[m] = mod;
 						m.AddResistanceMod(mod);
+						m.UpdateResistances();
 
 						Timer t = new InternalTimer(m, DateTime.Now + duration);
 						m_Timers[m] = t;
@@ -97,6 +98,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				t.Stop();
 
 				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);

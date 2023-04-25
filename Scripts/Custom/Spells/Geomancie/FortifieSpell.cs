@@ -40,6 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				m_Table[Caster] = mod;
 				Caster.AddResistanceMod(mod);
+				Caster.UpdateResistances();
 
 				var duration = GetDurationForSpell(15);
 
@@ -73,6 +74,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				m_Table.Remove(m);
 
 				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Fortifie", AptitudeColor.Geomancie, SpellSequenceType.End);
 			}

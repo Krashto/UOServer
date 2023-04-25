@@ -79,6 +79,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 							{
 								Disturb(m);
 
+								m.Combatant = Caster;
+
 								double damage = GetNewAosDamage(m, 5, 1, 2, false);
 
 								SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);

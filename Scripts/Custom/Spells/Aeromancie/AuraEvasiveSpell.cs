@@ -70,6 +70,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 							ResistanceMod mod = new ResistanceMod(ResistanceType.Energy, (int)value);
 							m_Table[m] = mod;
 							m.AddResistanceMod(mod);
+							m.UpdateResistances();
 
 							CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", duration, AptitudeColor.Aeromancie);
 
@@ -102,6 +103,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				t.Stop();
 
 				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);

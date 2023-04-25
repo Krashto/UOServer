@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Server.Items;
 using Server.Mobiles;
 
@@ -43,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		}
 
 		public override double DispelDifficulty => 117.5;
-
+		public override int Level => 3;
 		public override double DispelFocus => 45.0;
 
 		public override void OnThink()
@@ -54,6 +55,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				return;
 
 			var mobiles = GetMobilesInRange(SuperCharged ? 10 : 5);
+
+			Hits += mobiles.Count() * 5;
 
 			foreach (var m in mobiles)
 			{

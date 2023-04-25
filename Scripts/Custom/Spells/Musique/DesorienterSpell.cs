@@ -44,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 
 				ArrayList mods = new ArrayList();
 
-				double discord = Caster.Skills[SkillName.Discordance].Value;
+				double discord = Caster.Skills[SkillName.Musicianship].Value;
 
 				var effect = (int)Math.Max(-28.0, (discord / -4.0));
 

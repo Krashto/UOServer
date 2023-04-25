@@ -6,6 +6,7 @@ using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Network;
 using VitaNex.FX;
+using Server.Custom.Spells.NewSpells.Aeromancie;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -67,7 +68,20 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 						if (!IndomptableSpell.IsActive(m))
 						{
 							m.SendSpeedControl(SpeedControlType.WalkSpeed);
+
+							Disturb(m);
+
+							double damage = GetNewAosDamage(null, 3, 2, 3, true);
+
+							damage = (int)SpellHelper.AdjustValue(m_Caster, damage, Aptitude.Hydromancie);
+
+							m_Caster.DoHarmful(m);
+
+							AOS.Damage(m, m_Caster, (int)damage, 0, 0, 0, 0, 100);
+
 							CustomUtility.ApplySimpleSpellEffect(m, "Blizzard", AptitudeColor.Hydromancie, SpellEffectType.Malus);
+
+							m.BoltEffect(0);
 						}
 					}
 				}
@@ -109,7 +123,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				else
 				{
 					ExplodeFX.Snow.CreateInstance(m_Mobile, m_Mobile.Map, 1).Send();
-					m_Mobile.Stam -= 5;
+					m_Mobile.Stam -= 10;
 					m_Mobile.Hits -= 1;
 				}
 			}

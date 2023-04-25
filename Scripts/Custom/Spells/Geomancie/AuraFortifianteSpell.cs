@@ -66,6 +66,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
 						m_Table[m] = mod;
 						m.AddResistanceMod(mod);
+						m.UpdateResistances();
 
 						Timer t = new InternalTimer(m, DateTime.Now + duration);
 						m_Timers[m] = t;
@@ -98,6 +99,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				t.Stop();
 
 				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);

@@ -62,7 +62,8 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
             new FamilierMorbideEntry(typeof(ShadowWispFamiliar), 1060142, 50.0, 50.0), // Shadow Wisp
             new FamilierMorbideEntry(typeof(DarkWolfFamiliar), 1060143, 60.0, 60.0), // Dark Wolf
             new FamilierMorbideEntry(typeof(DeathAdder), 1060145, 80.0, 80.0), // Death Adder
-            new FamilierMorbideEntry(typeof(VampireBatFamiliar), 1060144, 100.0, 100.0)// Vampire Bat
+            new FamilierMorbideEntry(typeof(VampireBatFamiliar), 1060144, 90.0, 90.0),// Vampire Bat
+            new FamilierMorbideEntry(typeof(SkeletalMount), "Skeletal Mount", 100.0, 100.0)
         };
 
 		public static FamilierMorbideEntry[] Entries => m_Entries;
@@ -183,7 +184,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 						bc.Skills.MagicResist = m_From.Skills.MagicResist;
 
-						var duration = m_Spell.GetDurationForSpell(30, 2);
+						var duration = m_Spell.GetDurationForSpell(240, 3);
 
 						if (BaseCreature.Summon(bc, m_From, m_From.Location, -1, duration))
 						{

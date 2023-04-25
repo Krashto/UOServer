@@ -67,7 +67,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 						m_Timers[m] = t;
 						t.Start();
 
-						CustomUtility.ApplySimpleSpellEffect(m, "", duration, AptitudeColor.Musique);
+						CustomUtility.ApplySimpleSpellEffect(m, "Decrescendo manaique", duration, AptitudeColor.Musique);
 					}
 				}
 			}
@@ -98,13 +98,10 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			{
 				t.Stop();
 
-				m.RemoveResistanceMod(mod);
-
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Decrescendo manaique", AptitudeColor.Musique, SpellSequenceType.End);
 			}
 		}
 

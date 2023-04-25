@@ -42,18 +42,20 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				Disturb(m);
 
-				int level;
+				var total = Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value;
 
-				var total = Caster.Skills[SkillName.MagicResist].Value + Caster.Skills[SkillName.EvalInt].Value;
+				Poison p;
 
-				if (total > 150.0)
-					level = 1;
+				if (total > 140)
+					p = Poison.Greater;
+				else if (total > 100)
+					p = Poison.Regular;
 				else
-					level = 0;
+					p = Poison.Lesser;
 
 				if (!InsensibleSpell.IsActive(m))
 				{
-					m.ApplyPoison(Caster, Poison.GetPoison(level));
+					m.ApplyPoison(Caster, p);
 					ExplodeFX.Poison.CreateInstance(m, m.Map, 0).Send();
 					CustomUtility.ApplySimpleSpellEffect(m, "Contamination", AptitudeColor.Geomancie, SpellEffectType.Damage);
 				}

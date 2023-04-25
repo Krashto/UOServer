@@ -87,10 +87,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				m.RemoveResistanceMod(mod);
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Duel", AptitudeColor.Martial, SpellSequenceType.End);
 			}
 		}
 

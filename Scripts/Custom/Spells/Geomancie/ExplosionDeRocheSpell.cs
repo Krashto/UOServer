@@ -67,17 +67,17 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 						if (AuraFortifianteSpell.IsActive(Caster))
 						{
-							scalar += 0.5;
+							scalar += 1;
 							AuraFortifianteSpell.Deactivate(Caster);
 						}
 
 						if (FortifieSpell.IsActive(Caster))
 						{
-							scalar += 0.5;
+							scalar += 1;
 							FortifieSpell.Deactivate(Caster);
 						}
 
-						double damage = GetNewAosDamage(m, (int)(6 * scalar), 1, 2, false);
+						double damage = GetNewAosDamage(m, (int)(4 * scalar), (int)(1 * scalar), (int)(2 * scalar), false);
 
 						if (CheckResisted(m))
 						{

@@ -106,8 +106,11 @@ namespace Server.Engines.Help
             m_Sent = DateTime.UtcNow;
             m_Message = Utility.FixHtml(message);
             m_Type = type;
-            m_PageLocation = sender.Location;
-            m_PageMap = sender.Map;
+			if (sender != null)
+			{
+				m_PageLocation = sender.Location;
+				m_PageMap = sender.Map;
+			}
 
             PlayerMobile pm = sender as PlayerMobile;
             if (pm != null && pm.SpeechLog != null && Array.IndexOf(SpeechLogAttachment, type) >= 0)
@@ -422,8 +425,11 @@ namespace Server.Engines.Help
 
         public static void Enqueue(PageEntry entry)
         {
-            m_List.Add(entry);
-            m_KeyedBySender[entry.Sender] = entry;
+			if (entry.Sender == null)
+				return;
+
+			m_List.Add(entry);
+			m_KeyedBySender[entry.Sender] = entry;
 
             bool isStaffOnline = false;
 

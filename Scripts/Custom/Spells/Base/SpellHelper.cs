@@ -622,7 +622,7 @@ namespace Server.Spells
 
 		public static int GetOffset( Mobile caster, Mobile target, StatType type, bool curse )
         {
-            double value = 1 + (caster.Skills[SkillName.Magery].Value + caster.Skills[SkillName.EvalInt].Value) * 0.15;
+            double value = 1 + (caster.Skills[SkillName.Necromancy].Value + caster.Skills[SkillName.EvalInt].Value) * 0.15;
 
             double mr = target.Skills[SkillName.MagicResist].Value;
             value *= 1 - (mr * 0.005);

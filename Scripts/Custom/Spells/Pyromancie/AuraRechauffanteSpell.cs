@@ -59,11 +59,13 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 						var duration = GetDurationForSpell(15);
 
-						var value = 1 + (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 600;
+						var value = 1 + (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
 
-						ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
+						ResistanceMod mod = new ResistanceMod(ResistanceType.Fire, (int)value);
 						m_Table[m] = mod;
 						m.AddResistanceMod(mod);
+
+						m.UpdateResistances();
 
 						Timer t = new InternalTimer(m, DateTime.Now + duration);
 						m_Timers[m] = t;
@@ -96,6 +98,8 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
+
+				m.UpdateResistances();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Aura rechauffante", AptitudeColor.Pyromancie, SpellSequenceType.End);
 			}
