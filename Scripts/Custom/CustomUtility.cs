@@ -56,6 +56,60 @@ namespace Server.Custom
 
 	public class CustomUtility
 	{
+		public static bool IsInOpenWorldRegion(Point3D location)
+		{
+			return location.X > 0 && location.X < 2160 && location.Y > 0 && location.Y < 2125;
+		}
+		public static bool IsInDungeonRegion(Point3D location)
+		{
+			return !IsInOpenWorldRegion(location);
+		}
+
+		public static void IsTeleportingInDungeonRegion(Mobile from, Point3D newLocation)
+		{
+			if (from.AccessLevel > AccessLevel.Player)
+				return;
+
+			if (!IsInDungeonRegion(from.Location) && IsInDungeonRegion(newLocation) && from is CustomPlayerMobile pm)
+			{
+				if (pm.Mounted && pm.Mount is BaseMount mount)
+				{
+					mount.Rider = null;
+					mount.Internalize();
+					mount.SetControlMaster(null);
+					mount.Poison = null;
+					mount.Hits = mount.HitsMax;
+					mount.ControlOrder = OrderType.Stay;
+					mount.SummonMaster = null;
+					mount.IsStabled = true;
+
+					pm.StoredCreatureWhenEnteringInDungeon = mount;
+					pm.SendMessage("Votre monture a été téléporté en dehors du donjon. Vous la retrouverez en sortant.");
+				}
+			}
+		}
+		public static void IsTeleportingOutOfDungeonRegion(Mobile from, Point3D newLocation)
+		{
+			if (from.AccessLevel > AccessLevel.Player)
+				return;
+
+			if (IsInDungeonRegion(from.Location) && !IsInDungeonRegion(newLocation) && from is CustomPlayerMobile pm)
+			{
+				if (!pm.Mounted && pm.Mount == null && pm.StoredCreatureWhenEnteringInDungeon is BaseMount mount)
+				{
+					mount.SetControlMaster(pm);
+					mount.IsStabled = false;
+					mount.Poison = null;
+					mount.Hits = mount.HitsMax;
+					mount.MoveToWorld(pm.Location, pm.Map);
+					mount.Rider = pm;
+
+					pm.StoredCreatureWhenEnteringInDungeon = null;
+					pm.SendMessage("Vous retrouvez votre monture.");
+				}
+			}
+		}
+
 		public static void ApplySimpleSpellEffect(Mobile from, string spellName, AptitudeColor aptColor, SpellEffectType effect = SpellEffectType.Bonus)
 		{
 			ApplySimpleSpellEffect(from, spellName, TimeSpan.Zero, aptColor, SpellSequenceType.None, effect);

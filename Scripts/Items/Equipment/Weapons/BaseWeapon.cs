@@ -22,6 +22,7 @@ using Server.SkillHandlers;
 using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Capacites;
 using Server.Custom.Spells.NewSpells.Pyromancie;
+using Server.Custom.Spells.Necromancie.Summons;
 
 #endregion
 
@@ -1322,7 +1323,7 @@ namespace Server.Items
 			if (AuraExaltationSpell.IsActive(m))
 				bonus += 25;
 
-			if (MarquerSpell.IsActive(m))
+			if (MarquerSpell.IsAttackSpeedBonusActive(m))
 				bonus += 25;
 
 			double ticks;

@@ -33,9 +33,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 90.0, 105.0);
             SetSkill(SkillName.Tracking, 60.0);
 
-        //    Fame = 8500;
-        //    Karma = -8500;
-
             Tamable = true;
             ControlSlots = 4;
             MinTameSkill = 102.0;
@@ -47,6 +44,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
 		public override int Level => 5;
 		public override Biome Biome => Biome.Toundra;
 		public override bool CanAngerOnTame => true;
@@ -61,7 +59,14 @@ namespace Server.Mobiles
 		public override int Meat => 4;
         public override FoodType FavoriteFood => FoodType.Meat;
 
-        public override void GenerateLoot()
+		public override bool OnBeforeDeath()
+		{
+			Hue = 891;
+
+			return base.OnBeforeDeath();
+		}
+
+		public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
             AddLoot(LootPack.Rich);

@@ -113,9 +113,6 @@ namespace Server.Spells
 
 			damage = AOS.Scale( damage, 100 + damageBonus );
 
-            //if (AOS.Testing)
-            //    Caster.SendMessage("Spell - Damage : " + String.Format("{0:0.##}", (damage / 100)));
-
             if (target is BaseCreature)
                 damage *= 4;
 
@@ -138,15 +135,14 @@ namespace Server.Spells
 			return damage * scale;
 		}
 
-		public virtual bool IsCasting{ get{ return m_State == SpellState.Casting; } }
+		public virtual bool IsCasting { get{ return m_State == SpellState.Casting; } }
 
         public virtual void OnCasterHurt()
         {
             if (CheckHurt)
             {
                 CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
-                double chance = m_Caster.Skills[SkillName.Magery].Value / 333;
-                chance += m_Caster.Skills[SkillName.EvalInt].Value / 333;
+                double chance = m_Caster.Skills[SkillName.EvalInt].Value / 333;
 
                 if (chance > Utility.RandomDouble())
                     m_Caster.SendMessage("Vous réussissez à garder votre concentration.");
@@ -649,7 +645,7 @@ namespace Server.Spells
 			{
 				CustomPlayerMobile pm = (CustomPlayerMobile)m_Caster;
 
-				double chance = 100 - (pm.Capacites.Equitation * 6);
+				double chance = 100 - (pm.Capacites.Equitation * 20);
 
 				if (Utility.Random(0, 100) <= chance)
 					return false;

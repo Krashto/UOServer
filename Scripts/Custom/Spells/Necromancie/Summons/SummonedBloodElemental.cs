@@ -2,15 +2,11 @@ using System;
 using System.Linq;
 using Server.Mobiles;
 
-namespace Server.Custom.Spells.NewSpells.Necromancie
+namespace Server.Custom.Spells.Necromancie.Summons
 {
 	[CorpseName("a lich corpse")]
 	public class SummonedBloodElemental : BaseCreature
 	{
-		public override double DispelDifficulty { get { return 90; } }
-		public override double DispelFocus { get { return 70.0; } }
-		public override bool DeleteCorpseOnDeath { get { return true; } }
-
 		[Constructable]
 		public SummonedBloodElemental() : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
@@ -47,7 +43,11 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 			ControlSlots = 4;
 		}
-
+		public override double DispelDifficulty { get { return 90; } }
+		public override double DispelFocus { get { return 70.0; } }
+		public override int Level => 5;
+		public override bool DeleteOnRelease => true;
+		public override bool DeleteCorpseOnDeath => true;
 		public DateTime NextThinkingTime { get; set; }
 
 		public override void OnThink()

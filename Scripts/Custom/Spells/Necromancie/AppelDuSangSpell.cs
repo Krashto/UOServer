@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using Server.Custom.Aptitudes;
+using Server.Custom.Spells.Necromancie.Summons;
 using Server.Misc;
 using Server.Mobiles;
 using Server.Spells;

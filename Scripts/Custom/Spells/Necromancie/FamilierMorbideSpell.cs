@@ -5,6 +5,7 @@ using Server.Spells;
 using Server.Gumps;
 using Server.Mobiles;
 using Server.Network;
+using Server.Custom.Spells.Necromancie.Summons;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
 {
@@ -58,12 +59,14 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 		private static readonly FamilierMorbideEntry[] m_Entries = new FamilierMorbideEntry[]
 		{
-			new FamilierMorbideEntry(typeof(HordeMinionFamiliar), 1060146, 30.0, 30.0), // Horde Minion
-            new FamilierMorbideEntry(typeof(ShadowWispFamiliar), 1060142, 50.0, 50.0), // Shadow Wisp
-            new FamilierMorbideEntry(typeof(DarkWolfFamiliar), 1060143, 60.0, 60.0), // Dark Wolf
-            new FamilierMorbideEntry(typeof(DeathAdder), 1060145, 80.0, 80.0), // Death Adder
-            new FamilierMorbideEntry(typeof(VampireBatFamiliar), 1060144, 90.0, 90.0),// Vampire Bat
-            new FamilierMorbideEntry(typeof(SkeletalMount), "Skeletal Mount", 100.0, 100.0)
+			new FamilierMorbideEntry(typeof(HordeMinionFamiliar), "Horde Minion", 30.0), 
+            new FamilierMorbideEntry(typeof(ShadowWispFamiliar), "Shadow Wisp", 50.0),
+            new FamilierMorbideEntry(typeof(DarkWolfFamiliar), "Dark Wolf", 60.0),
+            new FamilierMorbideEntry(typeof(DeathAdder), "Death Adder", 80.0),
+			new FamilierMorbideEntry(typeof(SkeletalMount), "Skeletal Mount", 100.0),
+            new FamilierMorbideEntry(typeof(SummonedSkeletalMage), "Skeletal Mage", 90.0),
+			new FamilierMorbideEntry(typeof(VampireBatFamiliar), "Vampire Bat", 90.0),
+            new FamilierMorbideEntry(typeof(SummonedLich), "Lich", 90.0),
         };
 
 		public static FamilierMorbideEntry[] Entries => m_Entries;
@@ -71,22 +74,15 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 	public class FamilierMorbideEntry
 	{
-		private readonly Type m_Type;
-		private readonly object m_Name;
-		private readonly double m_ReqNecromancy;
-		private readonly double m_ReqEvalInt;
+		public Type Type { get; private set; }
+		public object Name { get; private set; }
+		public double ReqNecromancy { get; private set; }
 
-		public Type Type => m_Type;
-		public object Name => m_Name;
-		public double ReqNecromancy => m_ReqNecromancy;
-		public double ReqEvalInt => m_ReqEvalInt;
-
-		public FamilierMorbideEntry(Type type, object name, double reqNecromancy, double reqEvalInt)
+		public FamilierMorbideEntry(Type type, object name, double reqNecromancy)
 		{
-			m_Type = type;
-			m_Name = name;
-			m_ReqNecromancy = reqNecromancy;
-			m_ReqEvalInt = reqEvalInt;
+			Type = type;
+			Name = name;
+			ReqNecromancy = reqNecromancy;
 		}
 	}
 
@@ -127,13 +123,12 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 			AddHtmlLocalized(30, 26, 200, 20, 1060147, EnabledColor16, false, false); // Chose thy familiar...
 
 			double castSkill = from.Skills[m_Spell.CastSkill].Value;
-			double damageSkill = from.Skills[m_Spell.DamageSkill].Value;
 
 			for (int i = 0; i < entries.Length; ++i)
 			{
 				object name = entries[i].Name;
 
-				bool enabled = (castSkill >= entries[i].ReqNecromancy && damageSkill >= entries[i].ReqEvalInt);
+				bool enabled = castSkill >= entries[i].ReqNecromancy;
 
 				AddButton(27, 53 + (i * 21), 9702, 9703, i + 1, GumpButtonType.Reply, 0);
 
@@ -153,7 +148,6 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				FamilierMorbideEntry entry = m_Entries[index];
 
 				double castSkill = m_From.Skills[m_Spell.CastSkill].Value;
-				double damageSkill = m_From.Skills[m_Spell.DamageSkill].Value;
 
 				BaseCreature check = (BaseCreature)FamilierMorbideSpell.Table[m_From];
 
@@ -161,10 +155,9 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 				{
 					m_From.SendLocalizedMessage(1061605); // You already have a familiar.
 				}
-				else if (castSkill < entry.ReqNecromancy || damageSkill < entry.ReqEvalInt)
+				else if (castSkill < entry.ReqNecromancy)
 				{
-					// That familiar requires ~1_NECROMANCY~ Necromancy and ~2_SPIRIT~ Spirit Speak.
-					m_From.SendLocalizedMessage(1061606, string.Format("{0:F1}\t{1:F1}", entry.ReqNecromancy, entry.ReqEvalInt));
+					m_From.SendMessage($"Vous avez besoin de {entry.ReqNecromancy}% de Necromancy pour invoquer cette créature.");
 
 					m_From.CloseGump(typeof(FamilierMorbideGump));
 					m_From.SendGump(new FamilierMorbideGump(m_From, FamilierMorbideSpell.Entries, m_Spell));
@@ -186,7 +179,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 						var duration = m_Spell.GetDurationForSpell(240, 3);
 
-						if (BaseCreature.Summon(bc, m_From, m_From.Location, -1, duration))
+						if (BaseCreature.Summon(bc, true, m_From, m_From.Location, -1, duration))
 						{
 							CustomUtility.ApplySimpleSpellEffect(m_From, "", duration, AptitudeColor.Necromancie, SpellEffectType.Summon);
 							FamilierMorbideSpell.Table[m_From] = bc;

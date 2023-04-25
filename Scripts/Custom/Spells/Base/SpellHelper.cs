@@ -518,11 +518,6 @@ namespace Server.Spells
 			return true;
 		}
 
-		public static bool AddStatBonus( Mobile caster, Mobile target, StatType type )
-		{
-			return AddStatBonus( caster, target, type, GetOffset( caster, target, type, false ), GetDuration( caster, target ) );
-		}
-
         public static bool AddStatBonus(Mobile caster, Mobile target, StatType type, TimeSpan duration)
         {
             return AddStatBonus(caster, target, type, GetOffset(caster, target, type, false), duration);
@@ -549,11 +544,6 @@ namespace Server.Spells
 			return false;
 		}
 
-		public static bool AddStatCurse( Mobile caster, Mobile target, StatType type )
-		{
-			return AddStatCurse( caster, target, type, GetOffset( caster, target, type, true ), GetDuration( caster, target ) );
-		}
-
         public static bool AddStatCurse(Mobile caster, Mobile target, StatType type, TimeSpan duration)
         {
             return AddStatCurse(caster, target, type, GetOffset(caster, target, type, true), duration);
@@ -578,22 +568,6 @@ namespace Server.Spells
 			}
 
 			return false;
-		}
-
-		public static TimeSpan GetDuration( Mobile caster, Mobile target )
-        {
-			CustomPlayerMobile pm = caster as CustomPlayerMobile;
-
-			double value = caster.Skills[SkillName.Magery].Value * 1.8;
-
-			if (pm != null)
-			{
-				value *= 1 + pm.Capacites[Capacite.Magie] * 0.1;
-				if (pm.ChosenSpellbook != null)
-					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
-			}
-
-			return TimeSpan.FromSeconds(value);
 		}
 
         public static double AdjustValue(Mobile caster, double value, Aptitude aptitude)

@@ -9,6 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 	public class MarquerSpell : Spell
 	{
 		public static Hashtable m_Timers = new Hashtable();
+		public static Hashtable m_Timers2 = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
 				"Marquer", "[Marquer]",
@@ -49,7 +50,12 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				m_Timers[m] = t;
 				t.Start();
 
+				Timer t2 = new InternalTimer(m, DateTime.Now + duration);
+				m_Timers2[Caster] = t2;
+				t.Start();
+
 				CustomUtility.ApplySimpleSpellEffect(m, "Marquer", duration, AptitudeColor.Chasseur, SpellEffectType.Malus);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Marquer", duration, AptitudeColor.Chasseur, SpellEffectType.Bonus);
 			}
 
 			FinishSequence();
@@ -58,6 +64,11 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		public static bool IsActive(Mobile m)
 		{
 			return m_Timers.ContainsKey(m);
+		}
+
+		public static bool IsAttackSpeedBonusActive(Mobile m)
+		{
+			return m_Timers2.ContainsKey(m);
 		}
 
 		public static void Deactivate(Mobile m)

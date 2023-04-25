@@ -442,7 +442,7 @@ namespace Server.Custom.Aptitudes
 
 		public int this[Aptitude aptitude]
         {
-            get { return GetValue(aptitude); }
+            get { return GetRealValue(aptitude); }
             set { SetValue(aptitude, value); }
         }
 		public void SetValue(Aptitude aptitude, int value)

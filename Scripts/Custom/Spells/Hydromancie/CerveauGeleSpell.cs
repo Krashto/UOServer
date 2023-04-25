@@ -48,7 +48,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m) || PieuxDeGlaceSpell.IsActive(m)))
 				{
-					m.Damage(m.Hits - m.HitsMax / 2);
+					m.Damage(m.Hits - (m.HitsMax / 2));
 					CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
 				}
 			}

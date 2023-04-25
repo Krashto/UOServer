@@ -139,9 +139,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreClasseForgeron), "Artisans", "Forgeron - Forgeron", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			index = AddCraft(typeof(LivreClasseForgefer), "Artisans", "Forgeron - Forgefer", 75.0, 75.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 
-			index = AddCraft(typeof(LivreClasseEleve), "Artisans", "Savant - Élève", 25.0, 25.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseErudit), "Artisans", "Savant - Érudit", 60.0, 60.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
-			index = AddCraft(typeof(LivreClasseSage), "Artisans", "Savant - Sage", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseEleve), "Artisans", "Savant - Élève", 20.0, 20.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseErudit), "Artisans", "Savant - Érudit", 40.0, 40.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
+			index = AddCraft(typeof(LivreClasseSage), "Artisans", "Savant - Sage", 60.0, 60.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			#endregion
 
 			#region Guerriers

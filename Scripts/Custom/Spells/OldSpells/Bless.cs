@@ -1,3 +1,4 @@
+using System;
 using Server.Targeting;
 
 namespace Server.Spells.OldSpells
@@ -36,9 +37,9 @@ namespace Server.Spells.OldSpells
 			{
 				SpellHelper.Turn( Caster, m );
 
-				SpellHelper.AddStatBonus( Caster, m, StatType.Str ); SpellHelper.DisableSkillCheck = true;
-				SpellHelper.AddStatBonus( Caster, m, StatType.Dex );
-				SpellHelper.AddStatBonus( Caster, m, StatType.Int ); SpellHelper.DisableSkillCheck = false;
+				SpellHelper.AddStatBonus( Caster, m, StatType.Str, TimeSpan.FromSeconds(30) ); SpellHelper.DisableSkillCheck = true;
+				SpellHelper.AddStatBonus( Caster, m, StatType.Dex, TimeSpan.FromSeconds(30));
+				SpellHelper.AddStatBonus( Caster, m, StatType.Int, TimeSpan.FromSeconds(30)); SpellHelper.DisableSkillCheck = false;
 
 				m.FixedParticles( 0x373A, 10, 15, 5018, EffectLayer.Waist );
 				m.PlaySound( 0x1EA );

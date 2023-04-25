@@ -1,3 +1,4 @@
+using Server.Custom;
 using Server.Items;
 using Server.Multis;
 using Server.Network;
@@ -14,7 +15,9 @@ namespace Server.Mobiles
         DismountRecovery,
         RidingSwipe,
         RidingSwipeEthereal,
-        RidingSwipeFlying
+        RidingSwipeFlying,
+		IsInDungeon,
+		IsHidden
     }
 
     public abstract class BaseMount : BaseCreature, IMount
@@ -244,28 +247,30 @@ namespace Server.Mobiles
             return GetMountPrevention(mob, null);
         }
 
-        public static BlockMountType GetMountPrevention(Mobile mob, BaseMount mount)
+        public static BlockMountType GetMountPrevention(Mobile from, BaseMount mount)
         {
-            if (mob == null)
+            if (from == null)
                 return BlockMountType.None;
 
-            BlockEntry entry = null;
+			if (from.Hidden && from.AccessLevel == AccessLevel.Player)
+				return BlockMountType.IsHidden;
 
-            if (m_Table.ContainsKey(mob))
-                entry = m_Table[mob];
+			if (CustomUtility.IsInDungeonRegion(from.Location) && from.AccessLevel == AccessLevel.Player)
+				return BlockMountType.IsInDungeon;
+
+			BlockEntry entry = null;
+
+            if (m_Table.ContainsKey(from))
+                entry = m_Table[from];
 
             if (entry == null)
                 return BlockMountType.None;
 
             if (entry.IsExpired(mount))
-            {
                 return BlockMountType.None;
-            }
 
             if (entry.m_Type >= BlockMountType.RidingSwipe && entry.m_Expiration > DateTime.UtcNow)
-            {
                 return BlockMountType.DismountRecovery;
-            }
 
             return entry.m_Type;
         }
@@ -280,45 +285,55 @@ namespace Server.Mobiles
             return CheckMountAllowed(mob, null, message, flying);
         }
 
-        public static bool CheckMountAllowed(Mobile mob, BaseMount mount, bool message, bool flying)
+        public static bool CheckMountAllowed(Mobile from, BaseMount mount, bool message, bool flying)
         {
-            BlockMountType type = GetMountPrevention(mob, mount);
+            BlockMountType type = GetMountPrevention(from, mount);
 
             if (type == BlockMountType.None)
                 return true;
+			else if (type == BlockMountType.IsInDungeon)
+			{
+				from.SendMessage("Vous ne pouvez pas chevaucher une monture dans les donjons.");
+				return false;
+			}
+			else if (type == BlockMountType.IsHidden)
+			{
+				from.SendMessage("Vous ne pouvez chevaucher une monture en étant caché.");
+				return false;
+			}
 
-            if (message && mob.NetState != null)
+			if (message && from.NetState != null)
             {
                 switch (type)
                 {
                     case BlockMountType.RidingSwipeEthereal:
                     case BlockMountType.Dazed:
                         {
-                            mob.PrivateOverheadMessage(MessageType.Regular, 0x3B2, flying ? 1112457 : 1040024, mob.NetState);
+                            from.PrivateOverheadMessage(MessageType.Regular, 0x3B2, flying ? 1112457 : 1040024, from.NetState);
                             // You are still too dazed from being knocked off your mount to ride!
                             break;
                         }
                     case BlockMountType.BolaRecovery:
                         {
-                            mob.PrivateOverheadMessage(MessageType.Regular, 0x3B2, flying ? 1112455 : 1062910, mob.NetState);
+                            from.PrivateOverheadMessage(MessageType.Regular, 0x3B2, flying ? 1112455 : 1062910, from.NetState);
                             // You cannot mount while recovering from a bola throw.
                             break;
                         }
                     case BlockMountType.RidingSwipe:
                         {
-                            mob.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1062934, mob.NetState);
+                            from.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1062934, from.NetState);
                             // You must heal your mount before riding it.
                             break;
                         }
                     case BlockMountType.RidingSwipeFlying:
                         {
-                            mob.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1112454, mob.NetState);
+                            from.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1112454, from.NetState);
                             // You must heal your mount before riding it.
                             break;
                         }
                     case BlockMountType.DismountRecovery:
                         {
-                            mob.PrivateOverheadMessage(MessageType.Regular, 0x3B2, flying ? 1112456 : 1070859, mob.NetState);
+                            from.PrivateOverheadMessage(MessageType.Regular, 0x3B2, flying ? 1112456 : 1070859, from.NetState);
                             // You cannot mount while recovering from a dismount special maneuver.
                             break;
                         }
@@ -439,12 +454,6 @@ namespace Server.Mobiles
             {
                 return;
             }
-
-			if (from.Hidden && from.AccessLevel == AccessLevel.Player)
-			{
-				from.SendMessage("Vous ne pouvez chevaucher une monture en étant caché."); // Please dismount first.
-				return;
-			}
 
 			if (from.Mounted)
             {

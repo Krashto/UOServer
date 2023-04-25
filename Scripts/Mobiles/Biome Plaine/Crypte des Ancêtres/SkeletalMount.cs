@@ -39,9 +39,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 35.1, 50.0);
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
-
-			//      Fame = 0;
-			//      Karma = 0;
 		}
 
         public SkeletalMount(Serial serial)

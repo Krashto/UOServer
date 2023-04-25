@@ -16,7 +16,7 @@ namespace Server.Items
 
         public override int MinHeal => 40;
         public override int MaxHeal => 40;
-        public override double Delay => 8.0;
+        public override double Delay => 16.0;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

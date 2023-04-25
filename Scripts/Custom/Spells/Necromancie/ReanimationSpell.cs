@@ -161,10 +161,11 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 			public static ReanimationEntry[] m_Entries = new ReanimationEntry[]
 			{
-				new ReanimationEntry( typeof(Zombie), "Zombie", 1, 20.0, 45.0 ),
-				new ReanimationEntry( typeof(Skeleton), "Squelette", 1, 30.0, 55.0 ),
-				new ReanimationEntry( typeof(Spectre), "Spectre", 2, 50.0, 90.0 ),
-				new ReanimationEntry( typeof(Mummy), "Momie", 3, 70.0, 100.0 ),
+				new ReanimationEntry( typeof(SummonedZombie), "Zombie", 1, 20.0, 45.0 ),
+				new ReanimationEntry( typeof(SummonedSkeleton), "Squelette", 1, 30.0, 55.0 ),
+				new ReanimationEntry( typeof(SummonedSpectre), "Spectre", 2, 50.0, 90.0 ),
+				new ReanimationEntry( typeof(SummonedBoneKnight), "Chevalier", 2, 60.0, 80.0 ),
+				new ReanimationEntry( typeof(SummonedMummy), "Momie", 3, 70.0, 100.0 ),
 			};
 
 			private Mobile m_Caster;

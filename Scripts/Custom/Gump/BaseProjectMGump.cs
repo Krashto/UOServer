@@ -168,6 +168,10 @@ namespace Server.Gumps
 		{
 			AddHtml(x, y, largeur, 20, String.Concat("<h3><basefont color=", color, ">", texte, "</basefont></h3>"), false, false);
 		}
+		public string Center(string text)
+		{
+			return string.Format("<CENTER>{0}</CENTER>", text);
+		}
 
 		public void AddTitle(int x, int y, string titre)
 		{

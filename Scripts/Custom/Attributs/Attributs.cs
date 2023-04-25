@@ -1,10 +1,12 @@
 using System;
+using Server.Items;
 using Server.Mobiles;
 
 namespace Server
 {
+    [PropertyObject]
     public sealed class Attributs
-    {
+	{
 		private CustomPlayerMobile m_Owner;
 		public int[] Values = new int[Enum.GetValues(typeof(Attribut)).Length];
 
@@ -14,26 +16,62 @@ namespace Server
 
 		#region Props
 		[CommandProperty(AccessLevel.GameMaster)]
+		public int BaseConstitution
+		{
+			get { return GetBaseValue(Attribut.Constitution); }
+			set { this[Attribut.Constitution] = value; }
+		}
+		[CommandProperty(AccessLevel.GameMaster)]
 		public int Constitution
 		{
-			get { return this[Attribut.Constitution]; }
-			set { this[Attribut.Constitution] = value; }
+			get { return GetRealValue(Attribut.Constitution); }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int BaseSagesse
+		{
+			get { return GetBaseValue(Attribut.Sagesse); }
+			set { this[Attribut.Sagesse] = value; }
 		}
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Sagesse
 		{
-			get { return this[Attribut.Sagesse]; }
-			set { this[Attribut.Sagesse] = value; }
+			get { return GetRealValue(Attribut.Sagesse); }
+		}
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int BaseEndurance
+		{
+			get { return GetBaseValue(Attribut.Endurance); }
+			set { this[Attribut.Endurance] = value; }
 		}
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Endurance
 		{
-			get { return this[Attribut.Endurance]; }
-			set { this[Attribut.Endurance] = value; }
+			get { return GetRealValue(Attribut.Endurance); }
 		}
+
 		#endregion
+
+		public int GetRealValue(Attribut attr)
+		{
+			var value = GetBaseValue(attr);
+
+			switch(attr)
+			{
+				case Attribut.Constitution: value += BaseHitsMaxBuffFood.GetValue(m_Owner); break;
+				case Attribut.Endurance: value += BaseStamMaxBuffFood.GetValue(m_Owner); break;
+				case Attribut.Sagesse: value += BaseManaMaxBuffFood.GetValue(m_Owner); break;
+			}
+
+			return value;
+		}
+		public int GetBaseValue(Attribut attr)
+		{
+			return Values[(int)attr];
+		}
 
 		public Attributs(CustomPlayerMobile owner)
         {
@@ -62,29 +100,11 @@ namespace Server
 				writer.Write((int)Values[i]);
 		}
 
-		public int GetValue(Attribut attribut)
+		public void SetValue(Attribut attr, int value)
 		{
-			int index = GetIndex(attribut);
-
-			if (index >= 0 && index < Values.Length)
-			{
-				int value = Values[index];
-				return value;
-			}
-
-			return 0;
-		}
-
-		public void SetValue(Attribut attribut, int value)
-		{
-			int index = GetIndex(attribut);
-
-			if (index >= 0 && index < Values.Length)
-			{
-				int oldvalue = Values[index];
-				Values[index] = value;
-				m_Owner.OnAttributsChange(attribut, oldvalue, value);
-			}
+			int oldvalue = GetBaseValue(attr);
+			Values[(int)attr] = value;
+			m_Owner.OnAttributsChange(attr, oldvalue, value);
 		}
 
 		private int GetIndex(Attribut attribut)
@@ -94,30 +114,30 @@ namespace Server
 			return index;
 		}
 
-
 		public bool CanDecreaseStat(Attribut attr, int value)
 		{
-			return m_Owner.Attributs[attr] - value >= 25;
+			var baseValue = GetBaseValue(attr);
+			return baseValue - value >= MinStat;
 		}
 
 		public bool CanIncreaseStat(Attribut attr, int value)
 		{
-			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs[Attribut.Constitution] + m_Owner.Attributs[Attribut.Sagesse] + m_Owner.Attributs[Attribut.Endurance] + value > MaxStats)
+			if (m_Owner.RawDex + m_Owner.RawStr + m_Owner.RawInt + m_Owner.Attributs.BaseConstitution + m_Owner.Attributs.BaseEndurance + m_Owner.Attributs.BaseSagesse + value > MaxStats)
 				return false;
 
-			return m_Owner.Attributs[attr] + value <= 125;
+			return GetBaseValue(attr) + value <= MaxStat;
 		}
 
 		public void Increase(Attribut attr, int value)
 		{
 			if (CanIncreaseStat(attr, value))
-				m_Owner.Attributs[attr] += value;
+				m_Owner.Attributs[attr] = GetBaseValue(attr) + value;
 		}
 
 		public void Decrease(Attribut attr, int value)
 		{
 			if (CanDecreaseStat(attr, value))
-				m_Owner.Attributs[attr] -= value;
+				m_Owner.Attributs[attr] = GetBaseValue(attr) - value;
 		}
 
 		public void Reset()
@@ -128,7 +148,7 @@ namespace Server
 
 		public int this[Attribut attribut]
         {
-            get { return GetValue(attribut); }
+            get { return GetRealValue(attribut); }
             set { SetValue(attribut, value); }
         }
     }

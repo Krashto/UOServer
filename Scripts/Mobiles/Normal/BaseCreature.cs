@@ -21,6 +21,7 @@ using Server.Mobiles.AI;
 using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom;
+using Server.Custom.Spells.Necromancie.Summons;
 
 #endregion
 
@@ -6347,8 +6348,7 @@ namespace Server.Mobiles
             return Summon(creature, true, caster, p, sound, duration);
         }
 
-        public static bool Summon(
-            BaseCreature creature, bool controlled, Mobile caster, Point3D p, int sound, TimeSpan duration)
+        public static bool Summon(BaseCreature creature, bool controlled, Mobile caster, Point3D p, int sound, TimeSpan duration)
         {
             if (caster.Followers + creature.ControlSlots > caster.FollowersMax || CustomUtility.GetFollowerCount(caster) >= 4)
             {

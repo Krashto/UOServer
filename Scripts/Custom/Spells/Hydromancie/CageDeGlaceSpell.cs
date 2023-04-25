@@ -50,8 +50,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					m.Paralyze(duration);
 
-					Timer t = new InternalTimer(Caster, DateTime.Now + duration);
-					m_Timers[Caster] = t;
+					Timer t = new InternalTimer(this, m, DateTime.Now + duration);
+					m_Timers[m] = t;
 					t.Start();
 
 					var loc = new Point3D(m.X + 1, m.Y, m.Z);
@@ -73,6 +73,18 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		public static bool IsActive(Mobile m)
 		{
 			return m_Timers.ContainsKey(m);
+		}
+
+		public void Deactivate(Mobile m)
+		{
+			var t = m_Timers[m] as Timer;
+
+			if (t != null)
+			{
+				t.Stop();
+				m_Timers.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Cage de glace", AptitudeColor.Hydromancie, SpellSequenceType.End);
+			}
 		}
 
 		private class InternalItem : Item
@@ -185,28 +197,16 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			}
 		}
 
-		public void StopTimer(Mobile m)
-		{
-			var t = m_Timers[m] as Timer;
-
-			if (t != null)
-			{
-				t.Stop();
-				m_Timers.Remove(m);
-
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
-			}
-		}
-
 		public class InternalTimer : Timer
 		{
+			private CageDeGlaceSpell m_Owner;
 			private Mobile m_Mobile;
 			private DateTime m_Endtime;
 
-			public InternalTimer(Mobile target, DateTime end)
+			public InternalTimer(CageDeGlaceSpell owner, Mobile target, DateTime end)
 				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
+				m_Owner = owner;
 				m_Mobile = target;
 				m_Endtime = end;
 
@@ -219,7 +219,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				{
 					m_Timers.Remove(m_Mobile);
 					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Cage de glace", AptitudeColor.Hydromancie, SpellSequenceType.End);
-					Stop();
+					m_Owner.Deactivate(m_Mobile);
 				}
 			}
 		}

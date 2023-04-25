@@ -49,7 +49,12 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				m_Timers[Caster] = t;
 				t.Start();
 
+				Timer t2 = new InternalTimer(m, DateTime.Now + duration);
+				m_Timers[m] = t2;
+				t.Start();
+
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Lien de vie", duration, AptitudeColor.Defenseur);
+				CustomUtility.ApplySimpleSpellEffect(m, "Lien de vie", duration, AptitudeColor.Defenseur);
 			}
 
 			FinishSequence();

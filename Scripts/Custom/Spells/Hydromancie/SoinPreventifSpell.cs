@@ -40,9 +40,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				Caster.MoveToWorld(m.Location, m.Map);
 
-				//m.MagicDamageAbsorb = 50;
-				//m.MeleeDamageAbsorb = 50;
-
 				Timer t = new InternalTimer(Caster, m);
 				t.Start();
 

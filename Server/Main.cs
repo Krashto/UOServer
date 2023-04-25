@@ -581,9 +581,9 @@ namespace Server
 			dotnet = "4.7.2";
 #endif
 
-#if NETFX_48
+//#if NETFX_48
 			dotnet = "4.8";
-#endif
+//#endif
 
 			if (String.IsNullOrEmpty(dotnet))
 				dotnet = "MONO/CSC/Unknown";

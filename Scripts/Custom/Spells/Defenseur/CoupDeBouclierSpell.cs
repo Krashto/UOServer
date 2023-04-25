@@ -14,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				Reagent.EssenceDefenseur
 			);
 
-		public override int RequiredAptitudeValue { get { return 1; } }
+		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Defenseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Parry; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -33,28 +33,16 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 		{
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckHSequence(m))
+			else if (CheckBSequence(m))
 			{
 				var source = Caster;
 
 				SpellHelper.Turn(source, m);
 
-				Disturb(m);
+				Caster.MoveToWorld(m.Location, m.Map);
 
-				Caster.Animate(AnimationType.Parry, 0);
-
-				double damage = GetNewAosDamage(m, 6, 1, 2, false);
-
-				if (CheckResisted(m))
-				{
-					damage *= 0.75;
-
-					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
-				}
-
-				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);
-
-				CustomUtility.ApplySimpleSpellEffect(m, "Coup de bouclier", AptitudeColor.Defenseur, SpellEffectType.Damage);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Coup de bouclier", AptitudeColor.Defenseur, SpellEffectType.Move);
+				CustomUtility.ApplySimpleSpellEffect(m, "Coup de bouclier", AptitudeColor.Defenseur, SpellEffectType.Move);
 			}
 
 			FinishSequence();
@@ -65,7 +53,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 			private CoupDeBouclierSpell m_Owner;
 
 			public InternalTarget(CoupDeBouclierSpell owner)
-				: base(2, false, TargetFlags.Harmful)
+				: base(2, false, TargetFlags.Beneficial)
 			{
 				m_Owner = owner;
 			}

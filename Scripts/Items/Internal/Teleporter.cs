@@ -7,6 +7,7 @@ using Server.Regions;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Server.Custom;
 #endregion
 
 namespace Server.Items
@@ -242,9 +243,7 @@ namespace Server.Items
             Map map = m_MapDest;
 
             if (map == null || map == Map.Internal)
-            {
                 map = Map;
-            }
 
             Region myRegion = Region.Find(m.Location, m.Map);
             Region toRegion = Region.Find(m_PointDest, map);

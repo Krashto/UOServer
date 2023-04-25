@@ -156,7 +156,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 					{
 						BaseCreature bc = (BaseCreature)Activator.CreateInstance(entry.Type);
 
-						if (BaseCreature.Summon(bc, m_From, m_From.Location, -1, TimeSpan.FromDays(1.0)))
+						if (BaseCreature.Summon(bc, true, m_From, m_From.Location, -1, TimeSpan.FromDays(1.0)))
 						{
 							m_From.FixedParticles(0x3728, 1, 10, 9910, EffectLayer.Head);
 							bc.PlaySound(bc.GetIdleSound());

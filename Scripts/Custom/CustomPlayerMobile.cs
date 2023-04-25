@@ -12,14 +12,10 @@ using Server.Gumps;
 using Server.Custom.Classes;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Polymorphie;
-using Server.Custom.Spells;
-using Server.Custom.Spells.NewSpells.Hydromancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.CustomScripts.Systems.Experience;
 using Server.Custom.Capacites;
-using Newtonsoft.Json.Linq;
 using Server.Custom.PointsAncestraux;
-
 #endregion
 
 namespace Server.Mobiles
@@ -100,6 +96,8 @@ namespace Server.Mobiles
 			}
 
 		}
+
+		public Mobile StoredCreatureWhenEnteringInDungeon { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public bool DeathShot { get; set; }
@@ -359,6 +357,67 @@ namespace Server.Mobiles
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
 		{
 			return InsensibleSpell.IsActive(this) || FormeEnsanglanteeSpell.IsActive(this);
+		}
+
+		public override void MoveToWorld(Point3D newLocation, Map map)
+		{
+			CustomUtility.IsTeleportingInDungeonRegion(this, newLocation);
+			CustomUtility.IsTeleportingOutOfDungeonRegion(this, newLocation);
+
+			base.MoveToWorld(newLocation, map);
+		}
+
+		public override void ComputeResistances()
+		{
+			base.ComputeResistances();
+
+			for (int i = 0; i < Resistances.Length; ++i)
+				Resistances[i] = GetMinResistance((ResistanceType)i);
+
+			Resistances[(int)ResistanceType.Physical] += BasePhysicalResistance;
+			Resistances[(int)ResistanceType.Fire]	  += BaseFireResistance;
+			Resistances[(int)ResistanceType.Cold]	  += BaseColdResistance;
+			Resistances[(int)ResistanceType.Poison]   += BasePoisonResistance;
+			Resistances[(int)ResistanceType.Energy]   += BaseEnergyResistance;
+
+			for (int i = 0; ResistanceMods != null && i < ResistanceMods.Count; ++i)
+			{
+				ResistanceMod mod = ResistanceMods[i];
+				int v = (int)mod.Type;
+
+				if (v >= 0 && v < Resistances.Length)
+					Resistances[v] += mod.Offset;
+			}
+
+			for (int i = 0; i < Items.Count; ++i)
+			{
+				Item item = Items[i];
+
+				if (item.CheckPropertyConfliction(this))
+					continue;
+
+				ISetItem setItem = item as ISetItem;
+
+				Resistances[(int)ResistanceType.Physical] += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Physical) : item.PhysicalResistance;
+				Resistances[(int)ResistanceType.Fire]	  += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Fire) : item.FireResistance;
+				Resistances[(int)ResistanceType.Cold]	  += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Cold) : item.ColdResistance;
+				Resistances[(int)ResistanceType.Poison]   += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Poison) : item.PoisonResistance;
+				Resistances[(int)ResistanceType.Energy]   += setItem != null && setItem.SetEquipped ? setItem.SetResistBonus(ResistanceType.Energy) : item.EnergyResistance;
+			}
+
+			for (int i = 0; i < Resistances.Length; ++i)
+			{
+				int min = GetMinResistance((ResistanceType)i);
+				int max = GetMaxResistance((ResistanceType)i);
+
+				if (max < min)
+					max = min;
+
+				if (Resistances[i] > max)
+					Resistances[i] = max;
+				else if (Resistances[i] < min)
+					Resistances[i] = min;
+			}
 		}
 
 		#region Hiding
@@ -747,24 +806,24 @@ namespace Server.Mobiles
 		{
 			switch (stats)
 			{
-				case StatType.Str: return RawStr - value >= 25;
-				case StatType.Dex: return RawDex - value >= 25;
-				case StatType.Int: return RawInt - value >= 25;
+				case StatType.Str: return RawStr - value >= Attributs.MinStat;
+				case StatType.Dex: return RawDex - value >= Attributs.MinStat;
+				case StatType.Int: return RawInt - value >= Attributs.MinStat;
 				default: return false;
 			}
 		}
 
 		public bool CanIncreaseStat(StatType stats, int value)
 		{
-			var newTotal = RawDex + RawStr + RawInt + Attributs.Constitution + Attributs.Sagesse + Attributs.Endurance + value;
+			var newTotal = RawDex + RawStr + RawInt + Attributs.BaseConstitution + Attributs.BaseEndurance + Attributs.BaseSagesse + value;
 			if (newTotal > Attributs.MaxStats)
 				return false;
 
 			switch (stats)
 			{
-				case StatType.Str: return RawStr + value <= 125;
-				case StatType.Dex: return RawDex + value <= 125;
-				case StatType.Int: return RawInt + value <= 125;
+				case StatType.Str: return RawStr + value <= Attributs.MaxStat;
+				case StatType.Dex: return RawDex + value <= Attributs.MaxStat;
+				case StatType.Int: return RawInt + value <= Attributs.MaxStat;
 				default: return false;
 			}
 		}
@@ -1127,13 +1186,26 @@ namespace Server.Mobiles
 			CheckStatTimers();
 		}
 
-		public virtual void OnAttributsChange(Attribut attribut, int oldvalue, int newvalue)
+		public virtual void OnAttributsChange(Attribut attr, int oldvalue, int newvalue)
 		{
-			if (attribut == Attribut.Constitution)
+			if (attr == Attribut.Constitution)
+			{
 				Delta(MobileDelta.Hits);
-
-			if (attribut == Attribut.Endurance)
+				if (Hits > HitsMax)
+					Hits = HitsMax;
+			}
+			else if (attr == Attribut.Endurance)
+			{
+				Delta(MobileDelta.Stam);
+				if (Stam > StamMax)
+					Stam = StamMax;
+			}
+			else if (attr == Attribut.Sagesse)
+			{
 				Delta(MobileDelta.Mana);
+				if (Mana > ManaMax)
+					Mana = ManaMax;
+			}
 		}
 
 		public override void OnSkillChange(SkillName skill, double oldBase)
@@ -1319,6 +1391,12 @@ namespace Server.Mobiles
 
 			switch (version)
 			{
+				case 4:
+					{
+						if (reader.ReadBool())
+							StoredCreatureWhenEnteringInDungeon = reader.ReadMobile();
+						goto case 3;
+					}
 				case 3:
 				case 2:
 					{
@@ -1387,7 +1465,12 @@ namespace Server.Mobiles
         {        
             base.Serialize(writer);
 
-            writer.Write(3); // version
+            writer.Write(4); // version
+
+			//Version 4
+			writer.Write(StoredCreatureWhenEnteringInDungeon != null);
+			if (StoredCreatureWhenEnteringInDungeon != null)
+				writer.Write(StoredCreatureWhenEnteringInDungeon);
 
 			//Version 2
 			PointsAncestraux.Serialize(writer);
