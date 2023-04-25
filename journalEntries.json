@@ -1,5 +1,13 @@
 [
   {
+    "Id": "de155a88-5a8e-4b61-a15d-364c602cd91f",
+    "Visible": false,
+    "WriterName": "Riiem",
+    "Title": "SONDAGE!",
+    "Content": "Est-ce que Crayolla devrait changer de nom pour Sharpie?\n\r\n\rSi OUI, postez un soleil dans le discord général.\n\r\n\rSi NON, postez une lune dans le discord général.\n\r\n\rParagraphe 4",
+    "DateCreated": "2023-04-25T11:43:36.4973066-04:00"
+  },
+  {
     "Id": "fedb07c4-c796-465a-a433-141354dada53",
     "Visible": false,
     "WriterName": "Crayo",
@@ -126,5 +134,13 @@
     "Title": "4 entrée",
     "Content": "Contenu de la première entrée",
     "DateCreated": "2023-03-23T12:34:56.789Z"
+  },
+  {
+    "Id": "3a7688bc-a9d2-43f3-8d16-bf8b594a622a",
+    "Visible": true,
+    "WriterName": "Riiem",
+    "Title": "SONDAGE!!!!",
+    "Content": "Est-ce que Crayolla devrait changer son nom pour Sharpie?\n\r\n\rSi OUI, postez un soleil sur le discord général en taggant Crayolla. \n\r\n\rSi NON, postez une lune sur le discord général en taggant Crayolla.",
+    "DateCreated": "2023-04-25T11:45:49.8687659-04:00"
   }
 ]
