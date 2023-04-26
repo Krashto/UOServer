@@ -94,12 +94,12 @@ namespace Server.Gumps
 			{
 				foreach (var apt in info.Aptitudes)
 				{
-					AddHtmlTexte(x + 20 + columnSpace * column, y + lineSpace * line, 150, apt.Aptitude.ToString());
+					AddHtmlTexte(x + 12 + columnSpace * column, y + lineSpace * line, 150, apt.Aptitude.ToString());
 					AddHtmlTexte(x + 115 + columnSpace * column, y + lineSpace * line++, 100, apt.Value.ToString());
 				}
 			}
 			else
-				AddHtmlTexte(x + 20 + columnSpace * column, y + lineSpace * line++, 100, "Aucune");
+				AddHtmlTexte(x + 12 + columnSpace * column, y + lineSpace * line++, 100, "Aucune");
 
 			AddHtmlTexte(x + 10 + columnSpace * column, y + lineSpace * line++, 150, "Capacités");
 
@@ -107,12 +107,12 @@ namespace Server.Gumps
 			{
 				foreach (var cap in info.Capacites)
 				{
-					AddHtmlTexte(x + 20 + columnSpace * column, y + lineSpace * line, 150, CustomUtility.GetDescription(cap.Capacite));
+					AddHtmlTexte(x + 12 + columnSpace * column, y + lineSpace * line, 150, CustomUtility.GetDescription(cap.Capacite));
 					AddHtmlTexte(x + 115 + columnSpace * column, y + lineSpace * line++, 100, cap.Value.ToString());
 				}
 			}
 			else
-				AddHtmlTexte(x + 20 + columnSpace * column, y + lineSpace * line++, 100, "Aucune");
+				AddHtmlTexte(x + 12 + columnSpace * column, y + lineSpace * line++, 100, "Aucune");
 			#endregion
 
 			column++;

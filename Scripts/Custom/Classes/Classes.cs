@@ -101,12 +101,12 @@ namespace Server.Custom.Classes
 			return true;
 		}
 
-		public static void Validate(CustomPlayerMobile pm, Classe classe)
+		public static bool Validate(CustomPlayerMobile pm, Classe classe)
         {
             ClasseInfo info = GetInfos(classe);
 
-            if (pm == null || info == null)
-                return;
+            if (pm == null || info == null || classe == Classe.Aucune)
+                return true;
 
             if (info.Skills != null)
             {
@@ -119,18 +119,18 @@ namespace Server.Custom.Classes
 
 					while (!isValid)
 					{
-						var previousClasse = GetClassBefore(pm.Classe);
+						pm.SendMessage($"Vous n'avez plus les prérequis de la classe: {info.Nom}");
+						pm.Classe = GetClassBefore(pm.Classe);
+						var newInfo = GetInfos(pm.Classe);
+						if (newInfo != null)
+							pm.SendMessage($"Votre classe est maintenant: {newInfo.Nom}");
 
-						if (pm.Skills[skill.SkillName].Value < skill.Value)
-						{
-							pm.Classe = previousClasse;
-							isValid = false;
-						}
-						else
-							isValid = true;
+						isValid = Validate(pm, pm.Classe);
 					}
                 }
             }
+
+			return true;
         }
 
         public static ClasseInfo GetInfos(Classe classe)
