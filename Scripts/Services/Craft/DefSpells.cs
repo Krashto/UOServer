@@ -218,9 +218,9 @@ namespace Server.Engines.Craft
 			AddSpell("Chasseur", typeof(ChasseurDePrimeScroll), "Chasseur de prime", 9);
 			AddSpell("Chasseur", typeof(ContratResoluScroll), "Contrat résolu", 10);
 
-			AddSpell("Défenseur", typeof(CoupDeBouclierScroll), "Coup de bouclier", 1);
+			AddSpell("Défenseur", typeof(DevotionScroll), "Dévotion", 1);
 			AddSpell("Défenseur", typeof(BravadeScroll), "Bravade", 2);
-			AddSpell("Défenseur", typeof(DevotionScroll), "Dévotion", 3);
+			AddSpell("Défenseur", typeof(InterventionScroll), "Intervention", 3);
 			AddSpell("Défenseur", typeof(MutinerieScroll), "Mutinerie", 4);
 			AddSpell("Défenseur", typeof(MentorScroll), "Mentor", 5);
 			AddSpell("Défenseur", typeof(LienDeVieScroll), "Lien de vie", 6);
@@ -244,12 +244,12 @@ namespace Server.Engines.Craft
 			AddSpell("Guérison", typeof(RemedeScroll), "Remède", 2);
 			AddSpell("Guérison", typeof(MurDePierreScroll), "Mur de pierre", 3);
 			AddSpell("Guérison", typeof(RayonCelesteScroll), "Rayon céleste", 4);
-			AddSpell("Guérison", typeof(LumiereSacreeScroll), "Lumière sacrée", 5);
+			AddSpell("Guérison", typeof(DonDeLaVieScroll), "Don de la vie", 5);
 			AddSpell("Guérison", typeof(FrayeurScroll), "Frayeur", 6);
 			AddSpell("Guérison", typeof(FerveurDivineScroll), "Ferveur divine", 7);
 			AddSpell("Guérison", typeof(InquisitionScroll), "Inquisition", 8);
 			AddSpell("Guérison", typeof(MurDeLumiereScroll), "Mur de lumière", 9);
-			AddSpell("Guérison", typeof(DonDeLaVieScroll), "Don de la vie", 10);
+			AddSpell("Guérison", typeof(LumiereSacreeScroll), "Lumière sacrée", 10);
 
 			AddSpell("Hydromancie", typeof(ArmureDeGlaceScroll), "Armure de glace", 1);
 			AddSpell("Hydromancie", typeof(RestaurationScroll), "Restauration", 2);
@@ -311,16 +311,16 @@ namespace Server.Engines.Craft
 			AddSpell("Pyromancie", typeof(CeleriteScroll), "Célérité", 3);
 			AddSpell("Pyromancie", typeof(SupernovaScroll), "Supernova", 4);
 			AddSpell("Pyromancie", typeof(AuraRechauffanteScroll), "Aura réchauffante", 5);
-			AddSpell("Pyromancie", typeof(FrenesieDouloureuseScroll), "Frénésie douloureuse", 6);
-			AddSpell("Pyromancie", typeof(FolieArdenteScroll), "Folie ardente", 7);
+			AddSpell("Pyromancie", typeof(PassionArdenteScroll), "Passion ardente", 6);
+			AddSpell("Pyromancie", typeof(CageDeFeuScroll), "Cage de feu", 7);
 			AddSpell("Pyromancie", typeof(AuraExaltationScroll), "Aura d'exaltation", 8);
-			AddSpell("Pyromancie", typeof(CageDeFeuScroll), "Cage de feu", 9);
-			AddSpell("Pyromancie", typeof(PassionArdenteScroll), "Passion ardente", 10);
+			AddSpell("Pyromancie", typeof(FrenesieDouloureuseScroll), "Frénésie douloureuse", 8);
+			AddSpell("Pyromancie", typeof(FolieArdenteScroll), "Folie ardente", 10);
 
 			AddSpell("Roublardise", typeof(AdrenalineScroll), "Adrénaline", 1);
-			AddSpell("Roublardise", typeof(SommeilScroll), "Sommeil", 2);
-			AddSpell("Roublardise", typeof(LancerPrecisScroll), "Lancer précis", 3);
-			AddSpell("Roublardise", typeof(CoupArriereScroll), "Coup arrière", 4);
+			AddSpell("Roublardise", typeof(LancerPrecisScroll), "Lancer précis", 2);
+			AddSpell("Roublardise", typeof(CoupArriereScroll), "Coup arrière", 3);
+			AddSpell("Roublardise", typeof(SommeilScroll), "Sommeil", 4);
 			AddSpell("Roublardise", typeof(EvasionScroll), "Évasion", 5);
 			AddSpell("Roublardise", typeof(AttiranceScroll), "Attirance", 6);
 			AddSpell("Roublardise", typeof(MainBlesseeScroll), "Main blessée", 7);

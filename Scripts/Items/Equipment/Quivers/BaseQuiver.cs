@@ -601,9 +601,13 @@ namespace Server.Items
                 list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
             }
 
-            if (m_Quality == ItemQuality.Exceptional)
-                list.Add(1063341); // exceptional
-        }
+			if (m_Quality == ItemQuality.Exceptional)
+				list.Add("Exceptionnelle");
+			else if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire");
+		}
 
         public override void AddNameProperties(ObjectPropertyList list)
         {
@@ -1108,15 +1112,14 @@ namespace Server.Items
         {
             Quality = (ItemQuality)quality;
 
-
-			if (Quality == ItemQuality.Exceptional)
-			{
+			if (Quality == ItemQuality.Legendary)
+				m_MaxHitPoints = 250;
+			else if(Quality == ItemQuality.Epic)
+				m_MaxHitPoints = 200;
+			else if(Quality == ItemQuality.Exceptional)
 				m_MaxHitPoints = 150;
-			}
 			else
-			{
 				m_MaxHitPoints = 75;
-			}
 
 			m_HitPoints = m_MaxHitPoints; 
 

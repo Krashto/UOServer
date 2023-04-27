@@ -226,7 +226,7 @@ namespace Server.Items
 
 		public int GetStrRequirement()
 		{
-			return AOS.Scale(10, 100 - m_LowerStatReq);
+			return 0;
 		}
 
 		public void OnFishedHarvest(Mobile from, bool caughtAnything)

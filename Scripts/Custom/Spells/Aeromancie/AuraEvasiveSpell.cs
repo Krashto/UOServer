@@ -65,7 +65,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							var duration = GetDurationForSpell(15);
 
-							var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
+							var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Aeromancie);
 
 							ResistanceMod mod = new ResistanceMod(ResistanceType.Energy, (int)value);
 							m_Table[m] = mod;

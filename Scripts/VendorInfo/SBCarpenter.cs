@@ -24,17 +24,15 @@ namespace Server.Mobiles
                 //Add(new GenericBuyInfo(typeof(Inshave), 10, 20, 0x10E6, 0));
                 //Add(new GenericBuyInfo(typeof(DovetailSaw), 12, 20, 0x1028, 0));
                 Add(new GenericBuyInfo(typeof(Saw), 15, 20, 0x1034, 0));
-                //Add(new GenericBuyInfo(typeof(Hammer), 17, 20, 0x102A, 0));
-                //Add(new GenericBuyInfo(typeof(MouldingPlane), 11, 20, 0x102C, 0));
-                //Add(new GenericBuyInfo(typeof(SmoothingPlane), 10, 20, 0x1032, 0));
-                //Add(new GenericBuyInfo(typeof(JointingPlane), 11, 20, 0x1030, 0));
-                //Add(new GenericBuyInfo(typeof(Drums), 21, 20, 0xE9C, 0));
-                Add(new GenericBuyInfo(typeof(Tambourine), 20, 20, 0xE9D, 0));
-                //Add(new GenericBuyInfo(typeof(LapHarp), 21, 20, 0xEB2, 0));
-                //Add(new GenericBuyInfo(typeof(Lute), 21, 20, 0xEB3, 0));
-
-                
-            }
+				//Add(new GenericBuyInfo(typeof(Hammer), 17, 20, 0x102A, 0));
+				//Add(new GenericBuyInfo(typeof(MouldingPlane), 11, 20, 0x102C, 0));
+				//Add(new GenericBuyInfo(typeof(SmoothingPlane), 10, 20, 0x1032, 0));
+				//Add(new GenericBuyInfo(typeof(JointingPlane), 11, 20, 0x1030, 0));
+				Add(new GenericBuyInfo(typeof(Drums), 50, 20, 0xE9C, 0));
+				Add(new GenericBuyInfo(typeof(Tambourine), 50, 20, 0xE9D, 0));
+				Add(new GenericBuyInfo(typeof(LapHarp), 50, 20, 0xEB2, 0));
+				Add(new GenericBuyInfo(typeof(Lute), 50, 20, 0xEB3, 0));
+			}
         }
 
         public class InternalSellInfo : GenericSellInfo

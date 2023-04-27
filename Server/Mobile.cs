@@ -2849,7 +2849,7 @@ namespace Server
 		protected virtual bool OnMove(Direction d)
 		{
 			if (m_Hidden && m_AccessLevel == AccessLevel.Player)
-				JetDetection();
+				RevealingAction();
 
 			return true;
 		}

@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				{
 					Deactivate(m);
 
-					var value = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 10 + Caster.Skills[DamageSkill].Value / 10, Aptitude.Chasseur);
+					var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Chasseur);
 
 					var mods = new ResistanceMod[5]
 							{

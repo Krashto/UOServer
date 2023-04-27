@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeFeu : BaseTotem
 	{
 		[Constructable]
-		public TotemDeFeu() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
+		public TotemDeFeu() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 5)
 		{
 			Name = "Totem de feu";
 			Body = 15;
@@ -71,6 +71,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					continue;
 
 				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))
+					continue;
+
+				if (m.AccessLevel > AccessLevel.Player || m.Blessed || m is BaseVendor)
 					continue;
 
 				if (CanSee(m))

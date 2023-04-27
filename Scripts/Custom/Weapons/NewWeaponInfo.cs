@@ -68,13 +68,13 @@ namespace Server.Custom.Weapons
 			if (weapon is BaseTrainingWand)
 				baseDamage = 1;
 			else if (weapon is Fists)
-				baseDamage = 10;
+				baseDamage = 9;
 			else if (weapon is BaseRanged)
-				baseDamage = 28;
+				baseDamage = 20;
 			else if (weapon.Layer == Layer.OneHanded)
-				baseDamage = 22;
+				baseDamage = 19;
 			else if (weapon.Layer == Layer.TwoHanded)
-				baseDamage = 32;
+				baseDamage = 27;
 
 			if (baseDamage < 1)
 				baseDamage = 1;

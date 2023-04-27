@@ -34,7 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				Deactivate(Caster);
 			else if (CheckSequence())
 			{
-				var value = Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20;
+				var value = 40 - SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10, Aptitude.Martial);
 
 				var mods = new ResistanceMod[5]
 						{

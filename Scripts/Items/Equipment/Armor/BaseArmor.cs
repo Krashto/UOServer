@@ -810,7 +810,7 @@ namespace Server.Items
 				m_Quality = value;
 
 				UnscaleDurability();
-				DistributeQualityBonuses();
+				//DistributeQualityBonuses();
 
                 Invalidate();
                 InvalidateProperties();
@@ -1176,8 +1176,12 @@ namespace Server.Items
 
             if (m_Quality == ItemQuality.Exceptional)
                 bonus += 20;
+			else if (m_Quality == ItemQuality.Epic)
+				bonus += 40;
+			else if (m_Quality == ItemQuality.Legendary)
+				bonus += 60;
 
-            bonus += m_AosArmorAttributes.DurabilityBonus;
+			bonus += m_AosArmorAttributes.DurabilityBonus;
 
             if (m_Resource == CraftResource.Heartwood)
                 return bonus;
@@ -2638,8 +2642,6 @@ namespace Server.Items
 
             PlayerConstructed = true;
 
-			DistributeQualityBonuses();
-
             if (tool is BaseRunicTool && !craftItem.ForceNonExceptional)
                 ((BaseRunicTool)tool).ApplyAttributesTo(this);
 
@@ -2659,17 +2661,6 @@ namespace Server.Items
             }
 
             return quality;
-        }
-
-        public virtual void DistributeQualityBonuses()
-        {
-			m_PhysicalBonus = -1 + (int)m_Quality;
-			m_FireBonus = -1 + (int)m_Quality;
-			m_ColdBonus = -1 + (int)m_Quality;
-			m_PoisonBonus = -1 + (int)m_Quality;
-			m_EnergyBonus = -1 + (int)m_Quality;
-
-			InvalidateProperties();
         }
 
         protected virtual void ApplyResourceResistances(CraftResource oldResource)

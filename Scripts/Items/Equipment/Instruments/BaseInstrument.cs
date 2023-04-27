@@ -4,6 +4,7 @@ using Server.Mobiles;
 using Server.Targeting;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Server.Items
 {
@@ -235,8 +236,12 @@ namespace Server.Items
 
         public int GetUsesScalar()
         {
-            if (m_Quality == ItemQuality.Exceptional)
+			if (m_Quality == ItemQuality.Exceptional)
                 return 200;
+			else if (m_Quality == ItemQuality.Epic)
+                return 300;
+			else if (m_Quality == ItemQuality.Legendary)
+                return 400;
 
             return 100;
         }

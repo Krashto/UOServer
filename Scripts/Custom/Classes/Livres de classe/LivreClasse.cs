@@ -95,6 +95,7 @@ namespace Server.Items
 
 					pm.SendMessage("Vous oubliez votre classe.");
 
+					Delete();
 					return;
 				}
 

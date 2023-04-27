@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeTerre : BaseTotem
 	{
 		[Constructable]
-		public TotemDeTerre() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
+		public TotemDeTerre() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 5)
 		{
 			Name = "Totem de terre";
 			Body = 14;
@@ -56,7 +56,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 			var mobiles = GetMobilesInRange(SuperCharged ? 10 : 5);
 
-			Hits += mobiles.Count() * 5;
+			Hits += mobiles.Count() * (SuperCharged ? 10 : 5);
 
 			foreach (var m in mobiles)
 			{
@@ -67,6 +67,9 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					continue;
 
 				if (m is BaseCreature creature && creature.Controlled && CustomPlayerMobile.IsInEquipe(ControlMaster, creature.ControlMaster))
+					continue;
+
+				if (m.AccessLevel > AccessLevel.Player || m.Blessed || m is BaseVendor)
 					continue;
 
 				m.Combatant = this;

@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using Server.Gumps;
 using Server.Engines.TreasuresOfKotlCity;
+using Server.Mobiles;
 
 #endregion
 
@@ -287,7 +288,7 @@ namespace Server.Items
         {
         }
 
-        public virtual int OnHit(BaseWeapon weap, int damage)
+		public virtual int OnHit(BaseWeapon weap, int damage)
         {
             if (m_MaxHitPoints == 0)
                 return damage;

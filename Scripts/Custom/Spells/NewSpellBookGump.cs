@@ -84,7 +84,7 @@ namespace Server.Gumps
 
 			new SpellBookEntry( typeof(DevotionSpell), "Augmente ces points de vie maximun."),
 			new SpellBookEntry( typeof(BravadeSpell), "Provoque une cible."),
-			new SpellBookEntry( typeof(CoupDeBouclierSpell), "Permet de se téléporter sur une cible."),
+			new SpellBookEntry( typeof(InterventionSpell), "Permet de se téléporter sur une cible."),
 			new SpellBookEntry( typeof(MutinerieSpell), "Provoque toutes les créatures autour de vous."),
 			new SpellBookEntry( typeof(MentorSpell), "Procure de la réduction de coût de mana sur votre cible."),
 			new SpellBookEntry( typeof(LienDeVieSpell), "La moitié des dégâts reçus sur votre cible vous est transférée."),
@@ -126,14 +126,14 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(AvatarDuFroidSpell), "Vous cloue les pieds au sol, mais vos sorts de soin sont améliorés."),
 			new SpellBookEntry(	typeof(BlizzardSpell), "Crée une zone de blizzard, empêchant les ennemis de courir et leur fait perdre de la stamina."),
 
-			new SpellBookEntry( typeof(SecondSouffleSpell), "Augmente les points de vie."),
+			new SpellBookEntry( typeof(SecondSouffleSpell), "Augmente la régénération de point de vie."),
 			new SpellBookEntry( typeof(ProvocationSpell), "La cible est attirée vers vous."),
 			new SpellBookEntry( typeof(SautDevastateurSpell), "Saute de quelques cases et crée une zone de feu lors de l'impact."),
 			new SpellBookEntry( typeof(DuelSpell), "Gagne un bonus de dégâts contre la cible."),
 			new SpellBookEntry( typeof(ChargeFurieuseSpell), "Charge vers la cible, la repoussant lors de l'impact."),
 			new SpellBookEntry( typeof(EnrageSpell), "Réduit sa résistance physique, mais augmente ses dégâts physiques."),
 			new SpellBookEntry( typeof(BouclierMagiqueSpell), "Permet de renvoyer le prochain sort sur vous sur le lanceur du sort."),
-			new SpellBookEntry( typeof(CommandementSpell), "Augmente vos points de vie et ceux de vos alliés."),
+			new SpellBookEntry( typeof(CommandementSpell), "Augmente vos dégâts et ceux de vos alliés."),
 			new SpellBookEntry( typeof(PresenceInspiranteSpell), "Augmente la regénération de vos points de vie et celle de vos alliés."),
 			new SpellBookEntry( typeof(AngeGardienSpell), "Vous perdez des points de vie, mais votre résistance est grandement améliorée."),
 

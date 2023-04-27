@@ -11,6 +11,7 @@ using Server.Custom.Spells.NewSpells.Defenseur;
 using System.Linq;
 using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Custom.Spells.NewSpells.Musique;
+using Server.Custom.Spells.NewSpells.Polymorphie;
 
 namespace Server.Spells
 {
@@ -114,7 +115,7 @@ namespace Server.Spells
 			damage = AOS.Scale( damage, 100 + damageBonus );
 
             if (target is BaseCreature)
-                damage *= 4;
+                damage *= 3;
 
             return damage / 100;
 		}
@@ -532,10 +533,13 @@ namespace Server.Spells
 			{
 				m_Caster.SendLocalizedMessage( 502642 ); // You are already casting a spell.
 			}
-			//else if ( BlockedByHorrificBeast && TransformationSpell.UnderTransformation( m_Caster, typeof( HorrificBeastSpell ) ) )
-			//{
-			//	m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
-			//}
+			else if ( FormeCristallineSpell.IsActive(m_Caster) || FormeCycloniqueSpell.IsActive(m_Caster) || FormeElectrisanteSpell.IsActive(m_Caster)
+				   || FormeEmpoisonneeSpell.IsActive(m_Caster) || FormeEnflammeeSpell.IsActive(m_Caster) || FormeEnsanglanteeSpell.IsActive(m_Caster)
+				   || FormeGivranteSpell.IsActive(m_Caster) || FormeLiquideSpell.IsActive(m_Caster) || FormeMetalliqueSpell.IsActive(m_Caster)
+				   || FormeTerrestreSpell.IsActive(m_Caster))
+			{
+				m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
+			}
 			else if (m_Caster.Hidden)
 			{
 				m_Caster.SendMessage($"Vous ne pouvez pas envoyer de sort lorsque vous êtes caché{(m_Caster.Female ? "e" : "")}.");
@@ -658,7 +662,7 @@ namespace Server.Spells
 
 		public static int GetManaBase(int requiredAptitudeValue)
 		{
-			return requiredAptitudeValue * 4;
+			return requiredAptitudeValue * 5;
 
 		}
 

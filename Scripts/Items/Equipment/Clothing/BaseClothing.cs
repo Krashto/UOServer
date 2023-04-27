@@ -136,12 +136,7 @@ namespace Server.Items
         {
             get
             {
-                if (m_NegativeAttributes.Massive > 0)
-                {
-                    return 125;
-                }
-
-                return m_StrReq == -1 ? StrReq : m_StrReq;
+				return 0;
             }
             set
             {
@@ -881,14 +876,12 @@ namespace Server.Items
             if (m_Crafter != null)
                 list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
 
-            if (m_Quality == ItemQuality.Exceptional)
-                list.Add(1018303); // Exceptional
-
-			if (m_Quality == ItemQuality.Epic)
-				list.Add("Épique"); // Exceptional
-
-			if (m_Quality == ItemQuality.Legendary)
-				list.Add("Légendaire"); // Exceptional
+			if (m_Quality == ItemQuality.Exceptional)
+				list.Add("Exceptionnelle");
+			else if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire");
 
 			if (IsImbued == true)
                 list.Add(1080418); // (Imbued)

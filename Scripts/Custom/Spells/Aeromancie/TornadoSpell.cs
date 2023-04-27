@@ -72,9 +72,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			private TornadoSpell m_Owner;
 			private DateTime m_EndTime;
 
-			public InternalTimer(Mobile m, TornadoSpell owner, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
+			public InternalTimer(Mobile caster, TornadoSpell owner, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(1))
 			{
-				m_Caster = m;
+				m_Caster = caster;
 				m_Owner = owner;
 				m_EndTime = endTime;
 
@@ -87,13 +87,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				var map = m_Caster.Map;
 
-				var range = 1;
-
-				ExplodeFX.Tornado.CreateInstance(m_Caster, m_Caster.Map, range).Send();
+				ExplodeFX.Tornado.CreateInstance(m_Caster, m_Caster.Map, 1).Send();
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(m_Caster.Location, range);
+					IPooledEnumerable eable = map.GetMobilesInRange(m_Caster.Location, 2);
 
 					foreach (Mobile m in eable)
 						if (m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
@@ -120,7 +118,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
 
-							MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(source.Direction), 3);
+							MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(m.Direction), 3);
 
 							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 							source.PlaySound(0x44B);

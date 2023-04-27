@@ -210,7 +210,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Harp), "Instruments", "Harpe", 45.0, 60.0, typeof(PlainoisBoard), 1044041, 35, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
 			index = AddCraft(typeof(Drums), "Instruments", "Tambour", 50.0, 70.0, typeof(PlainoisBoard), 1044041, 20, 1044351);
-	
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
 			index = AddCraft(typeof(Lute), "Instruments", "Luth", 55.0, 75.0, typeof(PlainoisBoard), 1044041, 25, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);

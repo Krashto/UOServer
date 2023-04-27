@@ -914,6 +914,8 @@ namespace Server.Mobiles
 			PreventPvpAttack = true;
 			PreventPvpAttackTime = DateTime.Now + TimeSpan.FromMinutes(DeathDuration + PreventPvpAttackDuration);
 			Timer.DelayCall(TimeSpan.FromMinutes(DeathDuration + PreventPvpAttackDuration), new TimerStateCallback(RetourCombatPvP_Callback), this);
+
+			InvalidateProperties();
 		}
 
 		public override bool CanHeal()
@@ -1007,6 +1009,7 @@ namespace Server.Mobiles
 				{
 					pm.Vulnerability = false;
 					pm.SendMessage(HueManager.GetHue(HueManagerList.Green), "Vous n'êtes plus vulnérable. La prochaine fois que vous tomberez au combat, vous serez assomé.");
+					pm.InvalidateProperties();
 				}
 			}
 		}

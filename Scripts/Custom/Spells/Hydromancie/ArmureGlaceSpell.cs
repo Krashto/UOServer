@@ -36,7 +36,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				var duration = GetDurationForSpell(15);
 
-				var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
+				var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10, Aptitude.Hydromancie);
 
 				ResistanceMod mod = new ResistanceMod(ResistanceType.Cold, (int)value);
 

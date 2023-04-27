@@ -659,21 +659,21 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class CoupDeBouclierScroll : SpellScroll
+	public class InterventionScroll : SpellScroll
 	{
 		[Constructable]
-		public CoupDeBouclierScroll() : this(1)
+		public InterventionScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public CoupDeBouclierScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(CoupDeBouclierSpell)), 0x1F2D, amount)
+		public InterventionScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(InterventionSpell)), 0x1F2D, amount)
 		{
-			Name = "Coup De Bouclier";
+			Name = "Intervention";
 			Hue = (int)AptitudeColor.Defenseur;
 		}
 
-		public CoupDeBouclierScroll(Serial serial) : base(serial)
+		public InterventionScroll(Serial serial) : base(serial)
 		{
 		}
 

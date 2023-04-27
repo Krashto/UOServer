@@ -4,10 +4,10 @@ using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Defenseur
 {
-	public class CoupDeBouclierSpell : Spell
+	public class InterventionSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Coup de bouclier", "[Coup de bouclier]",
+				"Intervention", "[Intervention]",
 				SpellCircle.Second,
 				203,
 				9041,
@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 		public override SkillName CastSkill { get { return SkillName.Parry; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public CoupDeBouclierSpell(Mobile caster, Item scroll)
+		public InterventionSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -41,8 +41,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 				Caster.MoveToWorld(m.Location, m.Map);
 
-				CustomUtility.ApplySimpleSpellEffect(Caster, "Coup de bouclier", AptitudeColor.Defenseur, SpellEffectType.Move);
-				CustomUtility.ApplySimpleSpellEffect(m, "Coup de bouclier", AptitudeColor.Defenseur, SpellEffectType.Move);
+				CustomUtility.ApplySimpleSpellEffect(Caster, "Intervention", AptitudeColor.Defenseur, SpellEffectType.Move);
+				CustomUtility.ApplySimpleSpellEffect(m, "Intervention", AptitudeColor.Defenseur, SpellEffectType.Move);
 			}
 
 			FinishSequence();
@@ -50,10 +50,10 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 		private class InternalTarget : Target
 		{
-			private CoupDeBouclierSpell m_Owner;
+			private InterventionSpell m_Owner;
 
-			public InternalTarget(CoupDeBouclierSpell owner)
-				: base(2, false, TargetFlags.Beneficial)
+			public InternalTarget(InterventionSpell owner)
+				: base(9, false, TargetFlags.Beneficial)
 			{
 				m_Owner = owner;
 			}

@@ -11,8 +11,8 @@ namespace Server.Gumps
     {
         public static void Initialize()
         {
-            CommandSystem.Register("Qui", AccessLevel.Player, new CommandEventHandler(WhoList_OnCommand));
-            CommandSystem.Register("QuiListe", AccessLevel.Player, new CommandEventHandler(WhoList_OnCommand));
+            CommandSystem.Register("Qui", AccessLevel.Counselor, new CommandEventHandler(WhoList_OnCommand));
+            CommandSystem.Register("QuiListe", AccessLevel.Counselor, new CommandEventHandler(WhoList_OnCommand));
         }
 
         [Usage("WhoList")]

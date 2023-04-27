@@ -1,6 +1,7 @@
 using System.Collections;
 using Server.Network;
 using Server.Gumps;
+using Server.Mobiles;
 
 namespace Server.Items
 {
@@ -60,6 +61,22 @@ namespace Server.Items
 
 			if (!string.IsNullOrEmpty(leatherType))
 				list.Add($"Ressource: Cuir {leatherType}");
+		}
+
+		public override bool OnEquip(Mobile from)
+		{
+			if (from is CustomPlayerMobile pm)
+				pm.ChosenSpellbook = this;
+
+			return base.OnEquip(from);
+		}
+
+		public override void OnRemoved(object parent)
+		{
+			if (parent is CustomPlayerMobile pm)
+				pm.ChosenSpellbook = null;
+
+			base.OnRemoved(parent);
 		}
 
 		public override void OnDoubleClick( Mobile from )

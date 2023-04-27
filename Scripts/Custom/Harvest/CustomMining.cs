@@ -93,7 +93,7 @@ namespace Server.Engines.Harvest
 
 			res = new HarvestResource[]
 			{
-				new HarvestResource(00.0,  00.0, 100.0, "Fer",          typeof(IronOre)),
+				new HarvestResource(00.0,  -100.0, 100.0, "Fer",        typeof(IronOre)),
 				new HarvestResource(00.0,  00.0, 100.0, "Bronze",       typeof(BronzeOre)),
 				new HarvestResource(00.0,  00.0, 100.0, "Cuivre",       typeof(CopperOre)),
 				new HarvestResource(30.0,  30.0, 100.0, "Sonne",        typeof(SonneOre)),

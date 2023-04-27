@@ -71,10 +71,14 @@ namespace Server.Items
 
         public int GetUsesScalar()
         {
-            if (m_Quality == ItemQuality.Exceptional)
-                return 200;
+			if (m_Quality == ItemQuality.Exceptional)
+				return 200;
+			else if (m_Quality == ItemQuality.Epic)
+				return 300;
+			else if (m_Quality == ItemQuality.Legendary)
+				return 400;
 
-            return 100;
+			return 100;
         }
         #endregion
 
@@ -512,12 +516,6 @@ namespace Server.Items
             get
             {
 				return 0;
-                //if (m_NegativeAttributes.Massive > 0)
-                //{
-                //    return 125;
-                //}
-
-                //return m_StrReq == -1 ? StrengthReq : m_StrReq;
             }
             set
             {
@@ -682,12 +680,14 @@ namespace Server.Items
         {
             int bonus = 0;
 
-            if (m_Quality == ItemQuality.Exceptional)
-            {
-                bonus += 20;
-            }
+			if (m_Quality == ItemQuality.Exceptional)
+				bonus += 20;
+			else if (m_Quality == ItemQuality.Epic)
+				bonus += 40;
+			else if (m_Quality == ItemQuality.Legendary)
+				bonus += 60;
 
-            bonus += m_AosWeaponAttributes.DurabilityBonus;
+			bonus += m_AosWeaponAttributes.DurabilityBonus;
 
             if (m_Resource == CraftResource.Heartwood)
             {
@@ -4949,20 +4949,15 @@ namespace Server.Items
 			else if (Quality == ItemQuality.Exceptional)
                 Attributes.WeaponDamage += 30;
 
+			CraftResourceInfo info = CraftResources.GetInfo(m_Resource);
+
+			if (info != null)
+				Attributes.WeaponDamage += info.Level * 10;
+
 			if (!craftItem.ForceNonExceptional)
             {
                 if (tool is BaseRunicTool)
-                {
                     ((BaseRunicTool)tool).ApplyAttributesTo(this);
-                }
-            }
-
-            if (Quality == ItemQuality.Exceptional)
-            {
-                double div = Siege.SiegeShard ? 12.5 : 20;
-
-                Attributes.WeaponDamage += (int)(from.Skills.ArmsLore.Value / div);
-                from.CheckSkill(SkillName.ArmsLore, 0, 100);
             }
 
             if (craftItem != null && !craftItem.ForceNonExceptional)
@@ -4970,16 +4965,12 @@ namespace Server.Items
                 CraftResourceInfo resInfo = CraftResources.GetInfo(m_Resource);
 
                 if (resInfo == null)
-                {
                     return quality;
-                }
 
                 CraftAttributeInfo attrInfo = resInfo.AttributeInfo;
 
                 if (attrInfo == null)
-                {
                     return quality;
-                }
 
                 DistributeMaterialBonus(attrInfo);
             }

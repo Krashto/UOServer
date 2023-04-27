@@ -27,8 +27,8 @@ namespace Server.Gumps
             if (creationPerso.Race != null)
             {
                 AddBackground(x + 325, y + 20, 200, 250,2629);// -- Le noire est pas un pure noire, alors sa fait pas ... Transformer en pure noire dans les gumps ? ? 
-                m_Creation.Hue = creationPerso.Hue == -1 ? creationPerso.Race.RandomSkinHue() : creationPerso.Hue;
-                AddImage(x + 355, y + 30, creationPerso.Race.GetGumpId(creationPerso.Female, m_Creation.Hue), m_Creation.Hue);
+                m_Creation.Hue = creationPerso.Hue == -1 ? creationPerso.Race.SkinHues[0] : creationPerso.Hue;
+                AddImage(x + 355, y + 30, creationPerso.Race.GetGumpId(creationPerso.Female, m_Creation.Hue - 1), m_Creation.Hue - 1);
                 AddColorChoice(x + 435 - creationPerso.Race.SkinHues.Length * 9, y + 275, 10, creationPerso.Race.SkinHues);
             }
             else
@@ -54,7 +54,7 @@ namespace Server.Gumps
 
             if (info.ButtonID >= 10 && info.ButtonID < 100)
             {
-                m_Creation.Hue = m_Creation.Race.SkinHues[info.ButtonID - 10] - 1;
+                m_Creation.Hue = m_Creation.Race.SkinHues[info.ButtonID - 10];
                 from.SendGump(new CreationRaceGump(from, m_Creation));
             }
             else if (info.ButtonID >= 100 && info.ButtonID < 1000)

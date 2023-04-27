@@ -40,7 +40,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Caster.BodyMod = 159;
 				Caster.HueMod = 0;
 
-				var value = 40 - SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value / 20 + Caster.Skills[DamageSkill].Value / 20, Aptitude.Polymorphie);
+				var value = 40 - SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10, Aptitude.Polymorphie);
 
 				var mod = new ResistanceMod(ResistanceType.Fire, -(int)value);
 

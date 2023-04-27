@@ -61,7 +61,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 						var duration = GetDurationForSpell(15);
 
-						var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10;
+						var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Geomancie);
 
 						ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
 						m_Table[m] = mod;

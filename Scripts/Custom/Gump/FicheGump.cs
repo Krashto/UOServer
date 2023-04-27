@@ -231,7 +231,7 @@ namespace Server.Gumps
 
 			AddHtmlTexte(x + 174 + columnSpace * column, y + lineSpace * line, 32, Center(m_From.Attributs.BaseEndurance.ToString()));
 			if (m_From.Attributs.Endurance > m_From.Attributs.BaseEndurance)
-				AddHtmlTexte(x + 55 + columnSpace * column, y + lineSpace * line, 55, Center($"+{m_From.Attributs.Endurance - m_From.Attributs.BaseEndurance}"));
+				AddHtmlTexte(x + 85 + columnSpace * column, y + lineSpace * line, 55, Center($"+{m_From.Attributs.Endurance - m_From.Attributs.BaseEndurance}"));
 			else if (m_From.Dex < m_From.RawDex)
 				AddHtmlTexte(x + 85 + columnSpace * column, y + lineSpace * line, 55, Center($"-{m_From.Attributs.BaseEndurance - m_From.Attributs.Endurance}"));
 			line++;

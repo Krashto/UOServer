@@ -66,7 +66,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 						Caster.CanBeHarmful(m);
 
-						var duration = GetDurationForSpell(2, 0.05);
+						var duration = GetDurationForSpell(4);
 
 						m.Freeze(duration);
 						m.Combatant = null;

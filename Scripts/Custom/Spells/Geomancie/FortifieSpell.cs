@@ -34,7 +34,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Deactivate(Caster);
 			else if (CheckSequence())
 			{
-				var value = (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 20;
+				var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10, Aptitude.Geomancie);
 
 				ResistanceMod mod = new ResistanceMod(ResistanceType.Physical, (int)value);
 

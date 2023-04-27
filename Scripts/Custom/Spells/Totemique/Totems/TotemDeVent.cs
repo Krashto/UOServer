@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDuVent : BaseTotem
 	{
 		[Constructable]
-		public TotemDuVent() : base(AIType.AI_Mage, FightMode.Closest, 10, 5)
+		public TotemDuVent() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 5)
 		{
 			Name = "Totem du vent";
 			Body = 13;
@@ -71,10 +71,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (m is BaseTotem totem && totem.ControlMaster == ControlMaster)
 					continue;
 
-				if (m.AccessLevel > AccessLevel.Player)
+				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))
 					continue;
 
-				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))
+				if (m.AccessLevel > AccessLevel.Player || m.Blessed || m is BaseVendor)
 					continue;
 
 				if (CanSee(m))

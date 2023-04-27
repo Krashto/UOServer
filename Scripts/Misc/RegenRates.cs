@@ -137,7 +137,7 @@ namespace Server.Misc
 
 			points += SecondSouffleSpell.GetValue(from);
 
-			if (CommandementSpell.IsActive(from))
+			if (PresenceInspiranteSpell.IsActive(from))
 				points += 10;
 
 			if (from is CustomPlayerMobile pm)
@@ -215,9 +215,9 @@ namespace Server.Misc
             switch (ar.MaterialType)
             {
                 default: return 0.00;
-				case ArmorMaterialType.Plate: return 0.15;
-                case ArmorMaterialType.Chainmail: return 0.10;
-                case ArmorMaterialType.Ringmail: return 0.05;
+				case ArmorMaterialType.Plate: return 0.06;
+                case ArmorMaterialType.Chainmail: return 0.04;
+                case ArmorMaterialType.Ringmail: return 0.02;
             }
         }
     }

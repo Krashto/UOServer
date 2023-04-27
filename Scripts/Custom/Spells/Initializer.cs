@@ -145,7 +145,7 @@ namespace Server.Spells
 			Register(619, typeof(ContratResoluSpell));
 
 			//Defenseur
-			Register(620, typeof(CoupDeBouclierSpell));
+			Register(620, typeof(InterventionSpell));
 			Register(621, typeof(BravadeSpell));
 			Register(622, typeof(DevotionSpell));
 			Register(623, typeof(MutinerieSpell));
