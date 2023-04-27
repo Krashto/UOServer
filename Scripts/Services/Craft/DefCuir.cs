@@ -170,7 +170,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Masque16), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(Masque17), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(Masque18), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
-			index = AddCraft(typeof(Masque19), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			//index = AddCraft(typeof(Masque19), "Chapeaux", "Masque", 70, 90, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 
 
 

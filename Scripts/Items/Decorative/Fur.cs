@@ -13,10 +13,11 @@ namespace Server.Items
 
         [Constructable]
         public Fur(FurType type, int amount)
-            : base(0x1875)
+            : base(0x11F4)
         {
             Stackable = true;
             Amount = amount;
+			Name = "Fourrure";
 
             switch (type)
             {

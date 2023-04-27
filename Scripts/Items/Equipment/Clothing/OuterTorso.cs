@@ -1397,7 +1397,7 @@ namespace Server.Items
 
 		}
 
-        public override bool AllowMaleWearer => false;
+        public override bool AllowMaleWearer => true;
 
         public FemaleElvenRobe(Serial serial)
             : base(serial)

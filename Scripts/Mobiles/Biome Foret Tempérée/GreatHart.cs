@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Cerf")]
@@ -67,8 +69,15 @@ namespace Server.Mobiles
         {
             return 0x84;
         }
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawGroundVenison>(), Utility.RandomMinMax(1, 3));
+			AddLoot(LootPack.LootItem<RawVenisonRoast>(), Utility.RandomMinMax(1, 3));
+			AddLoot(LootPack.LootItem<RawVenisonSlice>(), Utility.RandomMinMax(1, 3));
+			AddLoot(LootPack.LootItem<RawVenisonSteak>(), Utility.RandomMinMax(1, 3));
 
-        public override void Serialize(GenericWriter writer)
+		}
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);
