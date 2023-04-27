@@ -50,6 +50,7 @@ namespace Server.Items
 		{
 			Weight = 2.0;
 			Name ="Pipe Courbée";
+			Layer = Layer.Neck;
 		}
 
 		public PipeCourbee(Serial serial)
@@ -87,6 +88,7 @@ namespace Server.Items
 		{
 			Weight = 2.0;
 			Name ="Pipe Courte";
+			Layer = Layer.Neck;
 		}
 
 		public PipeCourte (Serial serial)
@@ -122,6 +124,7 @@ namespace Server.Items
 		{
 			Weight = 2.0;
 			Name ="Pipe Longue";
+			Layer = Layer.Neck;
 		}
 
 		public PipeLongue(Serial serial)

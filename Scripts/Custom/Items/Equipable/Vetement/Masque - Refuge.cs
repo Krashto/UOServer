@@ -5,7 +5,10 @@ namespace Server.Items
 
 	public class Masque1 :  BaseHat
     {
-        [Constructable]
+
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque1()
 			: this(0)
 	{
@@ -42,7 +45,9 @@ namespace Server.Items
 public class Masque2 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque2()
             : this(0)
 
@@ -82,7 +87,9 @@ public override void Deserialize(GenericReader reader)
 public class Masque3 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque3()
             : this(0)
 
@@ -122,7 +129,9 @@ public override void Deserialize(GenericReader reader)
 public class Masque4 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque4()
             : this(0)
 
@@ -162,7 +171,9 @@ public override void Deserialize(GenericReader reader)
 public class Masque5 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque5()
             : this(0)
 
@@ -202,7 +213,9 @@ public override void Deserialize(GenericReader reader)
 public class Masque6 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque6()
             : this(0)
 
@@ -242,7 +255,9 @@ public override void Deserialize(GenericReader reader)
 public class Masque7 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque7()
             : this(0)
 
@@ -282,7 +297,9 @@ public override void Deserialize(GenericReader reader)
 public class Masque8 :  BaseHat
 
 	{
-	[Constructable]
+		public override bool Anonymous => true;
+
+		[Constructable]
 	public Masque8()
             : this(0)
 
@@ -322,6 +339,9 @@ public override void Deserialize(GenericReader reader)
 	public class Masque9 : BaseHat
 
 	{
+
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque9()
 				: this(0)
@@ -363,6 +383,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque10 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque10()
 				: this(0)
@@ -403,6 +425,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque11 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque11()
 				: this(0)
@@ -444,6 +468,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque12 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque12()
 				: this(0)
@@ -485,6 +511,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque13 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque13()
 				: this(0)
@@ -525,6 +553,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque14 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque14()
 				: this(0)
@@ -565,6 +595,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque15 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque15()
 				: this(0)
@@ -605,6 +637,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque16 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque16()
 				: this(0)
@@ -646,6 +680,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque17 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque17()
 				: this(0)
@@ -687,6 +723,8 @@ public override void Deserialize(GenericReader reader)
 	public class Masque18 : BaseHat
 
 	{
+		public override bool Anonymous => true;
+
 		[Constructable]
 		public Masque18()
 				: this(0)

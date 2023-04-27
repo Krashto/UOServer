@@ -252,7 +252,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(WoodenChairCushion), "Chaises", "Chaise avec coussin", 42.1, 67.1, typeof(PlainoisBoard), 1044041, 13, 1044351);
 		
 
-			index = AddCraft(typeof(ChaiseLuxe), "Chaises", "Chaise de Luxe", 52.6, 77.6, typeof(PlainoisBoard), 1044041, 17, 1044351);
+		//	index = AddCraft(typeof(ChaiseLuxe), "Chaises", "Chaise de Luxe", 52.6, 77.6, typeof(PlainoisBoard), 1044041, 17, 1044351);
 
 
 			index = AddCraft(typeof(Throne), "Chaises", "Trône massif", 73.6, 98.6, typeof(PlainoisBoard), 1044041, 19, 1044351);

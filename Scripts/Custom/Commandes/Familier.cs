@@ -8,7 +8,7 @@ namespace Server.Commands
 	{
 		public static void Initialize()
 		{
-			CommandSystem.Register( "Familier", AccessLevel.Owner, new CommandEventHandler( Familier ) );
+			CommandSystem.Register( "Familier", AccessLevel.Player, new CommandEventHandler( Familier ) );
 		}
 
 		[Usage( "Familier" )]

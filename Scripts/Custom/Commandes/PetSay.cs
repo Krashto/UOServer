@@ -17,7 +17,7 @@ namespace Server.Scripts.Commands
 		{
 			if ( e.Length != 1 )
 			{
-				e.Mobile.SendMessage( "Utilisation : petsay <message>" );
+				e.Mobile.SendMessage( "Utilisation : petsay <message entre guillemet>" );
 			}
 			else
 			{
