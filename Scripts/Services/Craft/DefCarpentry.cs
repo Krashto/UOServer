@@ -453,10 +453,11 @@ namespace Server.Engines.Craft
 			CanAlter = true;
 
 			// Set the overridable material
-			SetSubRes(typeof(PlainoisBoard), "Plainois");
+			SetSubRes(typeof(RegularBoard), "Commun");
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
+			AddSubRes(typeof(RegularBoard), "Commun", 0.0, "Vous ne savez pas travailler le bois plainois");
 			AddSubRes(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois plainois");
 			AddSubRes(typeof(CollinoisBoard), "Collinois", 20.0, "Vous ne savez pas travailler le bois collinois");
 			AddSubRes(typeof(ForestierBoard), "Forestier", 20.0, "Vous ne savez pas travailler le bois forestier");

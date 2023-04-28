@@ -952,7 +952,7 @@ namespace Server.Items
 
 		private static readonly CraftResourceInfo[] m_WoodInfo = new[]
         {
-            new CraftResourceInfo(0000, 0, "Normal",	  0,	CraftAttributeInfo.Blank,				CraftResource.RegularWood,		typeof( RegularBoard ),		typeof(RegularLog)),
+            new CraftResourceInfo(0000, 0, "Commun",	  0,	CraftAttributeInfo.Blank,				CraftResource.RegularWood,		typeof( RegularBoard ),		typeof(RegularLog)),
             new CraftResourceInfo(1355, 0, "Plainois",	  0,	CraftAttributeInfo.Blank,				CraftResource.PlainoisWood,		typeof( PlainoisBoard ),	typeof(PlainoisLog)),
 			new CraftResourceInfo(1411, 0, "Forestier",   1,	CraftAttributeInfo.ForestierWood,		CraftResource.ForestierWood,    typeof( ForestierBoard ),	typeof(ForestierLog)),
 			new CraftResourceInfo(1191, 0, "Collinois",   1,	CraftAttributeInfo.CollinoisWood,		CraftResource.CollinoisWood,    typeof( CollinoisBoard ),	typeof(CollinoisLog)),
