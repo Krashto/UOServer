@@ -10,7 +10,9 @@ namespace Server.Items
             : base(0x1B74)
         {
             Weight = 7.0;
-        }
+			Name = "Blason";
+
+		}
 
         public MetalKiteShield(Serial serial)
             : base(serial)

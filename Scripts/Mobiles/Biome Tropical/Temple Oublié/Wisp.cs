@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public Wisp()
             : base(AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Wisp";
+            Name = " Wisp";
             Body = 58;
             BaseSoundID = 466;
 

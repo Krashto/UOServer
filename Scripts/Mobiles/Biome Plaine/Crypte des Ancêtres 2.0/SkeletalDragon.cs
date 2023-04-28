@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public SkeletalDragon()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Dragon Squelette";
+            Name = " Dragon Squelette";
             Body = 104;
             BaseSoundID = 0x488;
 

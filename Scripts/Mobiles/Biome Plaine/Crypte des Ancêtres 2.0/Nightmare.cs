@@ -7,7 +7,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Nightmare()
-            : this("Un Cauchemar")
+            : this(" Cauchemar")
         {
         }
 

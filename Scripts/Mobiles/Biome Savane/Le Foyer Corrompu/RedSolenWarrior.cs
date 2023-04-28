@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public RedSolenWarrior()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Guerrier Fourifeu";
+            Name = " Guerrier Fourifeu";
             Body = 782;
             BaseSoundID = 959;
 

@@ -14,7 +14,7 @@ namespace Server.Mobiles
         public DemonKnight()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Chevalier Demoniaque";
+            Name = " Chevalier Demoniaque";
             Title = "Le Gardien des Tenebres";
             Body = 318;
             BaseSoundID = 0x165;
@@ -160,7 +160,7 @@ namespace Server.Mobiles
                 UnholyBone bone = new UnholyBone
                 {
                     Hue = 0,
-                    Name = "unholy bones",
+                    Name = "holy bones",
                     ItemID = Utility.Random(0xECA, 9)
                 };
 

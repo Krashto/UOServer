@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Treefellow()
             : base(AIType.AI_Melee, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Treefellow";
+            Name = " Treefellow";
             Body = 301;
 
             SetStr(196, 220);

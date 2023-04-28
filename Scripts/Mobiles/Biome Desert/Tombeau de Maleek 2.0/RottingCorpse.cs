@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("Un Corps decompose")]
+    [CorpseName(" Corps decompose")]
     public class RottingCorpse : BaseCreature
     {
         [Constructable]
         public RottingCorpse()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Putrefie";
+            Name = " Putrefie";
             Body = 155;
             BaseSoundID = 471;
 

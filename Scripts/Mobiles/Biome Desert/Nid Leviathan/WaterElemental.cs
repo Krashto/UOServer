@@ -2,7 +2,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("Un elementaire d'eau")]
+    [CorpseName(" elementaire d'eau")]
     public class WaterElemental : BaseCreature
     {
         private bool m_HasDecanter = true;
@@ -14,7 +14,7 @@ namespace Server.Mobiles
         public WaterElemental()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Elementaire D'eau";
+            Name = " Elementaire D'eau";
             Body = 16;
             BaseSoundID = 278;
 

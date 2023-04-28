@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Dog()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Chien";
+            Name = " Chien";
             Body = 0xD9;
             Hue = Utility.RandomAnimalHue();
             BaseSoundID = 0x85;

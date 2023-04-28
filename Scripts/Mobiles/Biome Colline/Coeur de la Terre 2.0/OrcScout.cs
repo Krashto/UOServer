@@ -15,7 +15,7 @@ namespace Server.Mobiles
         public OrcScout()
             : base(AIType.AI_OrcScout, FightMode.Closest, 10, 7, 0.2, 0.4)
         {
-            Name = "un orc Scout";
+            Name = " orc Scout";
             Body = 0xB5;
             BaseSoundID = 0x45A;
 			SetStr(229, 408);

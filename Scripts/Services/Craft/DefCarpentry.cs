@@ -147,7 +147,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(BarrelStaves), "Divers", "Douves de baril", 00.0, 25.0, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(BarrelLid), "Divers", "Couvercle de baril", 11.0, 36.0, typeof(PlainoisBoard), 1044041, 4, 1044351);
 			index = AddCraft(typeof(Keg), "Divers", "Tonnelet", 57.8, 82.8, typeof(BarrelStaves), "Douves de baril", 3, 1044253);
-			AddRes(index, typeof(BarrelHoops), "Cerceaux de baril", 1, 1044253);
+			AddRes(index, typeof(BarrelHoops), "Anneaux de baril", 1, 1044253);
 			AddRes(index, typeof(BarrelLid), "Couvercle de baril", 1, 1044253);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(LiquorBarrel), "Divers", "Baril d'alcool", 60.0, 90.0, typeof(PlainoisBoard), 1044041, 50, 1044351);

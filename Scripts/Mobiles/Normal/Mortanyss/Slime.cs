@@ -58,7 +58,7 @@ namespace Server.Mobiles
             if (!base.CheckMovement(d, out newZ))
                 return false;
 
-            if (Region.IsPartOf("Underworld") && newZ > Location.Z)
+            if (Region.IsPartOf("derworld") && newZ > Location.Z)
                 return false;
 
             return true;

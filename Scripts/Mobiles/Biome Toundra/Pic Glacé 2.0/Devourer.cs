@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Devourer()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Devoreur d'Ames";
+            Name = " Devoreur d'Ames";
             Body = 303;
             BaseSoundID = 357;
 

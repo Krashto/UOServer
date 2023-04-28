@@ -7,8 +7,8 @@ namespace Server.Mobiles
     {
         private static readonly string[] m_Names = new string[]
         {
-            "Un Chevalier Ophidien",
-            "Un Ophidien Vengeur"
+            " Chevalier Ophidien",
+            " Ophidien Vengeur"
         };
         [Constructable]
         public OphidianKnight()

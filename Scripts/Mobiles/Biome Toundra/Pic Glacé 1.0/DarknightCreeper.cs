@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public DarknightCreeper()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Gardien Nocture";
+            Name = " Gardien Nocture";
             Body = 313;
             BaseSoundID = 0xE0;
 

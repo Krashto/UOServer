@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public FrostSpider()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Araignee de Glace";
+            Name = " Araignee de Glace";
             Body = 20;
             BaseSoundID = 0x388;
 

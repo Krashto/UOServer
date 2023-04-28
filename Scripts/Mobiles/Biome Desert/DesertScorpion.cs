@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public DesertScorpion()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, .2, .4)
         {
-            Name = "Un Scorpion du desert";
+            Name = " Scorpion du desert";
             Body = 0x2CD;
             BaseSoundID = 397;
 

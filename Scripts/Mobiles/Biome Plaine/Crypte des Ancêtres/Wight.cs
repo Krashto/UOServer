@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public Wight()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Wight";
+            Name = " Wight";
             Body = 252;
             Hue = 1153;
             BaseSoundID = 0x482;

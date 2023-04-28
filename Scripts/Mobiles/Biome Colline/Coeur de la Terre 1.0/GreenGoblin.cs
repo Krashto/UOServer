@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GreenGoblin()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "un Goblin Vert";
+            Name = " Goblin Vert";
             Body = 723;
             BaseSoundID = 0x600;
 

@@ -8,7 +8,7 @@ namespace Server.Mobiles
         [Constructable]
         public Zombie() : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un zombie";
+            Name = " zombie";
             Body = 3;
             BaseSoundID = 471;
 

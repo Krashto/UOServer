@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Quagmire()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.4, 0.8)
         {
-            Name = "Un Quagmire";
+            Name = " Quagmire";
             Body = 789;
             BaseSoundID = 352;
 

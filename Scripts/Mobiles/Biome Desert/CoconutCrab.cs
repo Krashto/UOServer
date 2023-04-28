@@ -46,7 +46,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public CoconutCrab()
-            : this("Un crabe Coconut")
+            : this(" crabe Coconut")
         {
         }
 

@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Phoenix()
             : base(AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Phenix";
+            Name = " Phenix";
             Body = 0x340;
             BaseSoundID = 0x8F;
 

@@ -7,7 +7,9 @@ namespace Server.Items
             : base(0x1B78)
         {
             Weight = 5.0;
-        }
+			Name = "La pointe";
+
+		}
 
         public WoodenKiteShield(Serial serial)
             : base(serial)

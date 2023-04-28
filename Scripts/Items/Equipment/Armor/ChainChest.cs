@@ -18,7 +18,9 @@ namespace Server.Items
             : base(0x13BF)
         {
             Weight = 7.0;
-        }
+			Name = "Tunique de mailles";
+
+		}
 
         public ChainChest(Serial serial)
             : base(serial)

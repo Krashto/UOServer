@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Gorilla()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Gorille";
+            Name = " Gorille";
             Body = 0x1D;
             BaseSoundID = 0x9E;
 

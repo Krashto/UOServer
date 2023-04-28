@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public TerathanWarrior()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Guerriere Therathan";
+            Name = " Guerriere Therathan";
             Body = 70;
             BaseSoundID = 589;
 

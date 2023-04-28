@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public DragonWolf()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Loup Glacé";
+            Name = " Loup Glacé";
             Body = 719;
             BaseSoundID = 0x5ED;
 

@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public FireGargoyle()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Gargouille de Feu";
+            Name = " Gargouille de Feu";
             Body = 130;
             BaseSoundID = 0x174;
 

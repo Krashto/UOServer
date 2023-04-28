@@ -10,7 +10,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             Body = 92;
-            Name = "Un serpent argente";
+            Name = " serpent argente";
             BaseSoundID = 219;
             Hue = 1150;
 

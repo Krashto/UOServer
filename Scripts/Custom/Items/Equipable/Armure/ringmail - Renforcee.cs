@@ -10,7 +10,7 @@ namespace Server.Items
 			: base(0xA45B)
 		{
 			Weight = 7.0;
-			Name = "Brassard Renforcé";
+			Name = "Brassard Broigne";
 		}
 
 		public BrassardMaillerRenforce(Serial serial)
@@ -47,7 +47,7 @@ namespace Server.Items
 			: base(0xA45C)
 		{
 			Weight = 5.0;
-			Name = "Gants Renforcés";
+			Name = "Gants Broigne";
 		}
 
 		public GantMailleRenforce(Serial serial)
@@ -84,7 +84,7 @@ namespace Server.Items
 			: base(0xA45E)
 		{
 			Weight = 4.0;
-			Name = "Gorgerin Renforcé";
+			Name = "Gorgerin Broigne";
 		}
 
 		public GorgetMailleRenforce(Serial serial)
@@ -121,7 +121,7 @@ namespace Server.Items
 			: base(0xA45D)
 		{
 			Weight = 4.0;
-			Name = "Casque Renforcé";
+			Name = "Casque Broigne";
 		}
 
 		public CasqueMailleRenforce(Serial serial)
@@ -159,7 +159,7 @@ namespace Server.Items
 			: base(0xA460)
 		{
 			Weight = 10.0;
-			Name = "Plastron Renforcé";
+			Name = "Plastron Broigne";
 		}
 
 
@@ -198,7 +198,7 @@ namespace Server.Items
 			: base(0xA45F)
 		{
 			Weight = 9.0;
-			Name = "Jambière Renforcée";
+			Name = "Jambière Broigne";
 		}
 
 		public JambiereMailleRenforce(Serial serial)

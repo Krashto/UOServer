@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public Ratman()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Sky-vens";
+            Name = " Sky-vens";
             Body = 42;
             BaseSoundID = 437;
 			SetStr(124, 192);

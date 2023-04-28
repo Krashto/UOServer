@@ -7,8 +7,10 @@ namespace Server.Items
         public ChainmailArms()
             : base(0x13EE)
         {
-            Weight = 15.0;
-        }
+            Weight = 7.0;
+			Name = "Brassards de mailles";
+
+		}
 
         public ChainmailArms(Serial serial)
             : base(serial)
@@ -23,7 +25,7 @@ namespace Server.Items
         public override int InitMinHits => 40;
         public override int InitMaxHits => 50;
         public override int StrReq => 40;
-        public override ArmorMaterialType MaterialType => ArmorMaterialType.Ringmail;
+        public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

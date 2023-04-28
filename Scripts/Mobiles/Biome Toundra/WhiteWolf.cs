@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public WhiteWolf()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Loup Blanc";
+            Name = " Loup Blanc";
             Body = Utility.RandomList(34, 37);
             BaseSoundID = 0xE5;
 

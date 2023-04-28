@@ -15,7 +15,7 @@ namespace Server.Mobiles
         [Constructable]
 		public Lion(string name) : base(name, 786, 0x312, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
-            Name = "Un Lion";
+            Name = " Lion";
             Body = 786;
             Female = true;
             BaseSoundID = 0x3EF;

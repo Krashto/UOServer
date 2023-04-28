@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public TerathanDrone()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Drone Therathan";
+            Name = " Drone Therathan";
             Body = 71;
             BaseSoundID = 594;
 

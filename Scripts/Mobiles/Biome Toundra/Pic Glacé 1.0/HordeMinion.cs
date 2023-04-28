@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public HordeMinion()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Minion";
+            Name = " Minion";
             Body = 776;
             BaseSoundID = 357;
 

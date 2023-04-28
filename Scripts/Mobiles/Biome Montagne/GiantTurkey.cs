@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GiantTurkey()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Dinde Géante";
+            Name = " Dinde Géante";
             Body = 1026;
             BaseSoundID = 0x66A;
 

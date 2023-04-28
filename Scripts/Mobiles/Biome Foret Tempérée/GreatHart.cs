@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GreatHart()
             : base(AIType.AI_Melee, FightMode.Weakest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Cerf";
+            Name = " Cerf";
             Body = 0xEA;
 
 			SetStr(89, 137);

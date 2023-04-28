@@ -11,7 +11,7 @@ namespace Server.Mobiles
 
         [Constructable]
         public Beetle()
-            : this("Un Scarabee Geant")
+            : this(" Scarabee Geant")
         {
         }
 

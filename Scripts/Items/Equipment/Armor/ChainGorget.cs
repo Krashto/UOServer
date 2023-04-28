@@ -7,7 +7,9 @@ namespace Server.Items
             : base(0x2B69)
         {
             Weight = 7.0;
-        }
+			Name = "Gorgerin de mailles";
+
+		}
 
         public ChainGorget(Serial serial)
             : base(serial)

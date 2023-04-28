@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public BogThing()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.6, 1.2)
         {
-            Name = "Un Bogthing";
+            Name = " Bogthing";
             Body = 780;
 
             SetStr(801, 900);

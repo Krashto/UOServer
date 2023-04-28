@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Hind()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Biche";
+            Name = "Biche";
             Body = 0xED;
 
 			SetStr(63, 98);

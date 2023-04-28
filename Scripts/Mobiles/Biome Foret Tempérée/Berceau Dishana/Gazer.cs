@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Gazer()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "un Gazer";
+            Name = " Gazer";
             Body = 22;
             BaseSoundID = 377;
 

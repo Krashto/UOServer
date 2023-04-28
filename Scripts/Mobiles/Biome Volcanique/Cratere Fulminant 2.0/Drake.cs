@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Drake()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Dragonneau";
+            Name = " Dragonneau";
             Body = Utility.RandomList(60, 61);
             BaseSoundID = 362;
 

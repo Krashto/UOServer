@@ -13,7 +13,7 @@ namespace Server.Mobiles
         public Sheep()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Mouton";
+            Name = " Mouton";
             Body = 0xCF;
             BaseSoundID = 0xD6;
 
@@ -125,7 +125,15 @@ namespace Server.Mobiles
             Body = (DateTime.UtcNow >= m_NextWoolTime) ? 0xCF : 0xDF;
         }
 
-        public override void Serialize(GenericWriter writer)
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawLambLegExp>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawMuttonRoast>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawMuttonSteak>(), Utility.RandomMinMax(0, 2));
+
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 

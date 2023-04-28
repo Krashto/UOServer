@@ -13,7 +13,7 @@ namespace Server.Mobiles
         [Constructable]
         public DreadHorn() : base(AIType.AI_Spellweaving, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Dread Horn";
+            Name = " Dread Horn";
             Body = 257;
             BaseSoundID = 0xA8;
 

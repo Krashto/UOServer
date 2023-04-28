@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GazerLarva()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Gazer Brule";
+            Name = " Gazer Brule";
             Body = 778;
             BaseSoundID = 377;
 

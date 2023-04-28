@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("Une araignée")]
+    [CorpseName(" araignée")]
     public class WolfSpider : BaseCreature
     {
         [Constructable]
         public WolfSpider()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une araignée";
+            Name = " araignée";
             Body = 736;
             Hue = 0;
 

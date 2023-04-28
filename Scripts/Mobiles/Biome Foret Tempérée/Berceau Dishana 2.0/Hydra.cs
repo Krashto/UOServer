@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Hydra()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Hydre";
+            Name = " Hydre";
             Body = 0x109;
             BaseSoundID = 0x16A;
 

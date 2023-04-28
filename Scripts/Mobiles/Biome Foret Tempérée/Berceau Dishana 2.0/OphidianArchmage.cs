@@ -7,8 +7,8 @@ namespace Server.Mobiles
     {
         private static readonly string[] m_Names = new string[]
         {
-            "Un Ophidien Justicier",
-            "Un Ophidien Fanatique"
+            " Ophidien Justicier",
+            " Ophidien Fanatique"
         };
         [Constructable]
         public OphidianArchmage()

@@ -21,7 +21,9 @@ namespace Server.Items
             : base(0x1B72)
         {
             Weight = 6.0;
-        }
+			Name = "Rondache résonnante";
+
+		}
 
         public BronzeShield(Serial serial)
             : base(serial)

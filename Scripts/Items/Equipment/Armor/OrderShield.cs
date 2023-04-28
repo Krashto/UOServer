@@ -10,7 +10,9 @@ namespace Server.Items
             : base(0x1BC4)
         {
             Weight = 7.0;
-        }
+			Name = "Égide";
+
+		}
 
         public OrderShield(Serial serial)
             : base(serial)

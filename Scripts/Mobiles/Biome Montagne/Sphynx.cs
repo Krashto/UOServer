@@ -8,7 +8,7 @@ namespace Server.Mobiles
 {
     public class Sphynx : BaseMount
 	{
-		public Sphynx() : this("Un Loup Géant")
+		public Sphynx() : this(" Loup Géant")
 		{
 		}
 
@@ -17,7 +17,7 @@ namespace Server.Mobiles
 
 		{
 			Body = 788;
-            Name = "Un Loup Géant";
+            Name = " Loup Géant";
 
             SetStr(1001, 1200);
             SetDex(176, 195);

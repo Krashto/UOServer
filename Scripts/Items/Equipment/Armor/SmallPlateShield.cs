@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x4202)
         {
             Weight = 6.0;
-        }
+			Name = "Targe";
+
+		}
 
         public SmallPlateShield(Serial serial)
             : base(serial)

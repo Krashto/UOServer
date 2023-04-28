@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public MaddeningHorror()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Horreur";
+            Name = " Horreur";
             Body = 721;
 
             SetStr(270, 290);

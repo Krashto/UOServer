@@ -298,9 +298,9 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(RingmailLegs), "Armure Légère", "Jambes d’anneaux", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
 			AddCraft(typeof(RingmailArms), "Armure Légère", "Brassard d’anneaux", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(RingmailChest), "Armure Légère", "Torse d’anneaux", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
+			//AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
+			//AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
+			//AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
 			//AddCraft(typeof(Bascinet), "Armure Légère","Bascinet", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
 			//AddCraft(typeof(Helmet), "Armure Légère", "Casque", 35.0, 55.0, typeof(IronIngot), 1044036, 15, 1044037);
 			AddCraft(typeof(NorseHelm), "Armure Légère", "Haume Nordique", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
@@ -401,12 +401,12 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region "Armure Vieillie"
-			AddCraft(typeof(BrassardVieillit), "Armure Lourde", "Brassards Vielli", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(GantsVieillit), "Armure Lourde", "Gants Vielli", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetVieillit), "Armure Lourde", "Gorgerin Vielli", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereViellit), "Armure Lourde", "Jambières Vielli", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CasqueVieillit), "Armure Lourde", "Casque Vielli", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlastronViellit), "Armure Lourde", "Torse Vielli", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardVieillit), "Armure Lourde", "Brassards Ancien", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
+			AddCraft(typeof(GantsVieillit), "Armure Lourde", "Gants Ancien", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GorgetVieillit), "Armure Lourde", "Gorgerin Ancien", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(JambiereViellit), "Armure Lourde", "Jambières Ancien", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(CasqueVieillit), "Armure Lourde", "Casque Ancien", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlastronViellit), "Armure Lourde", "Torse Ancien", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
 			#endregion
 
 
@@ -420,11 +420,11 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(BronzeShield), "Boucliers", "Rondache résonnante", 36.0, 56.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(EcuBois), "Boucliers", "Écu de bois", 32.0, 52.0, typeof(IronIngot), 1044036, 8, 1044037);
 			AddCraft(typeof(BouclierRond2), "Boucliers", "Bouclier Rond", 32.0, 52.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Targe3), "Boucliers", "Targe renforcé", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(Rondache), "Boucliers", "Rondache renforcée", 41.0, 41.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(MetalKiteShield), "Boucliers", "Le blason", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BouclierRond), "Boucliers", "Bouclier Rond Renforcé", 41.0, 61.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(ChaosShield), "Boucliers", "Targe décoré", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Targe3), "Boucliers", "Targe renforcée", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Rondache), "Boucliers", "Rondache", 41.0, 41.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(MetalKiteShield), "Boucliers", "Blason", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(BouclierRond), "Boucliers", "Bouclier Rond", 41.0, 61.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(ChaosShield), "Boucliers", "Targe décorée", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
 			AddCraft(typeof(HeaterShield), "Boucliers", "Muraille", 49.0, 49.0, typeof(IronIngot), 1044036, 18, 1044037);
 			AddCraft(typeof(Pavois), "Boucliers", "Pavois", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
 			AddCraft(typeof(Targe), "Boucliers", "Targe Bicolore", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);

@@ -9,7 +9,7 @@ namespace Server.Items
 			: base(0xA449)
 		{
 			Weight = 5.0;
-			Name = "Brassard Embellit";
+			Name = "Brassard de demi-plaque";
 		}
 
 		public BrassardEmbellit(Serial serial)
@@ -48,7 +48,7 @@ namespace Server.Items
 			: base(0xA44A)
 		{
 			Weight = 5.0;
-			Name = "Casque Embellit";
+			Name = "Casque de demi-plaque";
 		}
 
 		public CasqueEmbellit(Serial serial)
@@ -85,7 +85,7 @@ namespace Server.Items
 			: base(0xA44E)
 		{
 			Weight = 10.0;
-			Name = "Plastron Embellit";
+			Name = "Plastron de demi-plaque";
 		}
 
 		public PlastronEmbellit(Serial serial)
@@ -124,7 +124,7 @@ namespace Server.Items
 			: base(0xA44D)
 		{
 			Weight = 7.0;
-			Name = "Jambière Embellit";
+			Name = "Jambière de demi-plaque";
 		}
 
 		public JambiereEmbellit(Serial serial)
@@ -163,7 +163,7 @@ namespace Server.Items
 			: base(0xA44B)
 		{
 			Weight = 2.0;
-			Name = "Gants Embellit";
+			Name = "Gants de demi-plaque";
 		}
 
 		public GantsEmbellit(Serial serial)
@@ -201,7 +201,7 @@ namespace Server.Items
 			: base(0xA44C)
 		{
 			Weight = 2.0;
-			Name = "Gorget Embellit";
+			Name = "Gorget de demi-plaque";
 		}
 
 		public GorgetEmbellit(Serial serial)

@@ -13,7 +13,7 @@ namespace Server.Mobiles
 		public IronBeetle()
 			: base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.25, 0.5)
 		{
-			Name = "Un Scarabee de Fer";
+			Name = " Scarabee de Fer";
 			Body = 714;
 			BaseSoundID = 397;
 

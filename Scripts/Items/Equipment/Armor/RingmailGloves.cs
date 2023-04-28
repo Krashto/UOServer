@@ -11,6 +11,7 @@ namespace Server.Items
             : base(0x13EB)
         {
             Weight = 2.0;
+			Name = "Gants d'anneaux";
         }
 
         public RingmailGloves(Serial serial)

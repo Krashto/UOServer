@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public DeathwatchBeetle()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Scarabee Vigilant";
+            Name = " Scarabee Vigilant";
             Body = 242;
 
             SetStr(136, 160);

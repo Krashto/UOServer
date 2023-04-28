@@ -1,13 +1,13 @@
 namespace Server.Mobiles
 {
-    [CorpseName("Un Sans tete")]
+    [CorpseName(" Sans tete")]
     public class HeadlessOne : BaseCreature
     {
         [Constructable]
         public HeadlessOne()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Sans Tete";
+            Name = " Sans Tete";
             Body = 31;
             Hue = Utility.RandomSkinHue() & 0x7FFF;
             BaseSoundID = 0x39D;

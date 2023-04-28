@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public SmallTiger()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Tigreau";
+            Name = " Tigreau";
             Body = 269;
             BaseSoundID = 0x3EF;
 

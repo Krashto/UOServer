@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public RevenantLion()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Revenant";
+            Name = " Revenant";
             Body = 251;
 
 			SetDamageType(ResistanceType.Physical, 100);

@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Ravager()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Ravageur";
+            Name = " Ravageur";
             Body = 314;
             BaseSoundID = 357;
 

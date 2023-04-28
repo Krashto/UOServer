@@ -12,7 +12,9 @@ namespace Server.Items
             : base(0x1BC3)
         {
             Weight = 5.0;
-        }
+			Name = "Targe décorée";
+
+		}
 
         public ChaosShield(Serial serial)
             : base(serial)

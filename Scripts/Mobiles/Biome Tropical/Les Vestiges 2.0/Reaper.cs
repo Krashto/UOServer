@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Reaper()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Arbre Maudit";
+            Name = " Arbre Maudit";
             Body = 47;
             BaseSoundID = 442;
 

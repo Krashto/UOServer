@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public UndeadGargoyle()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Gargouille Maudite";
+            Name = " Gargouille Maudite";
             Body = 722;
             BaseSoundID = 372;
 

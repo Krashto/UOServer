@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public ElderGazer()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Gazer Ancien";
+            Name = " Gazer Ancien";
             Body = 22;
             BaseSoundID = 377;
 

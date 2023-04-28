@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Gremlin()
             : base(AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "un Gremlin";
+            Name = " Gremlin";
             Body = 724;
 
 			SetStr(173, 269);

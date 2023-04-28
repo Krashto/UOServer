@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Walrus()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Morse";
+            Name = " Morse";
             Body = 0xDD;
             BaseSoundID = 0xE0;
 

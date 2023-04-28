@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GiantSpider()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une araignee geante";
+            Name = " araignee geante";
             Body = 28;
             BaseSoundID = 0x388;
 

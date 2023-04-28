@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public SnowElemental()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un elementaire de neige";
+            Name = " elementaire de neige";
             Body = 163;
             BaseSoundID = 263;
 

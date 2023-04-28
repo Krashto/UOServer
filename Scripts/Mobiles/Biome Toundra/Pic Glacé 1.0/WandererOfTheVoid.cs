@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public WandererOfTheVoid()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un wanderer of the void";
+            Name = " wanderer of the void";
             Body = 316;
             BaseSoundID = 377;
 

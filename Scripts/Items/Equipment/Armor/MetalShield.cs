@@ -10,7 +10,9 @@ namespace Server.Items
             : base(0x1B7B)
         {
             Weight = 6.0;
-        }
+			Name = "Rampart";
+
+		}
 
         public MetalShield(Serial serial)
             : base(serial)

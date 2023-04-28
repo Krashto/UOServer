@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("Un Serpent Geant")]
+    [CorpseName(" Serpent Geant")]
     public class GiantSerpent : BaseCreature
     {
         [Constructable]
         public GiantSerpent()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Serpent Geant";
+            Name = " Serpent Geant";
             Body = 0x15;
             Hue = Utility.RandomSnakeHue();
             BaseSoundID = 219;

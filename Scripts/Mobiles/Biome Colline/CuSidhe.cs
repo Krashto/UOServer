@@ -10,7 +10,7 @@ namespace Server.Mobiles
 
         [Constructable]
         public CuSidhe()
-            : this("Un cu sidhe")
+            : this(" cu sidhe")
         {
         }
 

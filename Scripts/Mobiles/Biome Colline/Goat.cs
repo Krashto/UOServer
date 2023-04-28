@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public Goat()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Une chevre";
+            Name = "Chevre";
             Body = 0xD1;
             BaseSoundID = 0x99;
 
@@ -82,7 +82,14 @@ namespace Server.Mobiles
             return true;
         }
 
-        public override void Serialize(GenericWriter writer)
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawGoatRoast>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawGoatSteak>(), Utility.RandomMinMax(0, 2));
+
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

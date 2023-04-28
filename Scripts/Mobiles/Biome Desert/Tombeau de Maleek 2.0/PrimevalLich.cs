@@ -18,7 +18,7 @@ namespace Server.Mobiles
         public PrimevalLich()
             : base(AIType.AI_NecroMage)
         {
-            Name = "Une Liche Primitive";
+            Name = " Liche Primitive";
             Body = 830;
 
             SetStr(500);

@@ -9,7 +9,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public BlackBear() : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
 		{
-            Name = "Un Ours Noir";
+            Name = " Ours Noir";
             Body = 211;
             BaseSoundID = 0xA3;
 

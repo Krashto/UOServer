@@ -9,7 +9,9 @@ namespace Server.Items
             : base(0x1408)
         {
             Weight = 5.0;
-        }
+			Name = "Casque fermé";
+
+		}
 
         public CloseHelm(Serial serial)
             : base(serial)
@@ -24,7 +26,7 @@ namespace Server.Items
         public override int InitMinHits => 45;
         public override int InitMaxHits => 60;
         public override int StrReq => 55;
-        public override ArmorMaterialType MaterialType => ArmorMaterialType.Plate;
+        public override ArmorMaterialType MaterialType => ArmorMaterialType.Chainmail;
 
         public override void Serialize(GenericWriter writer)
         {

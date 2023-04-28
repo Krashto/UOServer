@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public SerpentineDragon()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Dragon Serpentin";
+            Name = " Dragon Serpentin";
             Body = 103;
             BaseSoundID = 362;
 

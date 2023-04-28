@@ -8,7 +8,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public Unicorn()
-            : this("Une Licorne")
+            : this(" Licorne")
         {
         }
 

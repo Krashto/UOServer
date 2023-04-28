@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Skree()
             : base(AIType.AI_Mystic, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un skree";
+            Name = " skree";
             Body = 733;
 
             SetStr(297, 330);

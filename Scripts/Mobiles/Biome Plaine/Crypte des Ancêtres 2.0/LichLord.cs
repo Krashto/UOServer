@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public LichLord()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Seigneur Liche";
+            Name = " Seigneur Liche";
             Body = 79;
             BaseSoundID = 412;
 

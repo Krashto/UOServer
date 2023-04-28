@@ -10,7 +10,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             SpeechHue = Utility.RandomDyedHue();
-            Title = "Un Brigand";
+            Title = " Brigand";
            	Race = BaseRace.GetRace(Utility.Random(4));
 
 			if (Female = Utility.RandomBool())

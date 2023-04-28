@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public EtherealWarrior()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Guerrier de l'Ether";
+            Name = " Guerrier de l'Ether";
             Body = 123;
 
             SetStr(586, 785);

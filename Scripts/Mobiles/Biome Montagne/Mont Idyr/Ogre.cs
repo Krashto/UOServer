@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Ogre()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "un ogre";
+            Name = " ogre";
             Body = 1;
             BaseSoundID = 427;
 

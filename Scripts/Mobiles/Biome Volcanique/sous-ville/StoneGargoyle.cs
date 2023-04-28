@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public StoneGargoyle()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Gargouille de Pierre";
+            Name = " Gargouille de Pierre";
             Body = 67;
             BaseSoundID = 0x174;
 

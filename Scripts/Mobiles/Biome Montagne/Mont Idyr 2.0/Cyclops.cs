@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Cyclops()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Cyclope";
+            Name = " Cyclope";
             Body = 75;
             BaseSoundID = 604;
 

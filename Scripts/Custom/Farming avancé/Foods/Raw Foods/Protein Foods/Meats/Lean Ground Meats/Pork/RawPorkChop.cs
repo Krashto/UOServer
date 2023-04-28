@@ -44,7 +44,7 @@ namespace Server.Items
 			Weight = 1.0;
 			Stackable = true;
 			Amount = amount;
-			Name = "raw pork chop";
+			Name = "Chop de porc crue";
 		}
 
 		public RawPorkChop( Serial serial ) : base( serial )

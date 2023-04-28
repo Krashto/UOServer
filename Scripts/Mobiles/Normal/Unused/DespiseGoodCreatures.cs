@@ -138,7 +138,7 @@ namespace Server.Engines.Despise
         [Constructable]
         public DespiseUnicorn(int powerLevel) : base(AIType.AI_Melee, FightMode.Evil)
         {
-            Name = "Unicorn";
+            Name = "icorn";
             Body = 0x7A;
             BaseSoundID = 0x4BC;
 

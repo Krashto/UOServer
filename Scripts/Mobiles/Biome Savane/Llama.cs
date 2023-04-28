@@ -7,9 +7,10 @@ namespace Server.Mobiles
         public Llama()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Llama";
+            Name = "Llama des Montagnes";
             Body = 0xDC;
             BaseSoundID = 0x3F3;
+			Hue = 649;
 
             SetStr(21, 49);
             SetDex(36, 55);

@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x13BE)
         {
             Weight = 7.0;
-        }
+			Name = "Jambières de mailles";
+
+		}
 
         public ChainLegs(Serial serial)
             : base(serial)

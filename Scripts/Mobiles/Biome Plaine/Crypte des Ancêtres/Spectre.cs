@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public Spectre()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Spectre";
+            Name = " Spectre";
             Body = 26;
             Hue = 0x4001;
             BaseSoundID = 0x482;

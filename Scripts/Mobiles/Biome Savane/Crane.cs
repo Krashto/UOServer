@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Crane()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Grue";
+            Name = " Grue";
             Body = 254;
             BaseSoundID = 0x4D7;
 

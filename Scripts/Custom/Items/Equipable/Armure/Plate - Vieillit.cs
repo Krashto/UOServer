@@ -124,7 +124,7 @@ namespace Server.Items
 			: base(0xA480)
 		{
 			Weight = 7.0;
-			Name = "Jambière Ancienne";
+			Name = "Jambière Ancien";
 		}
 
 		public JambiereViellit(Serial serial)
@@ -201,7 +201,7 @@ namespace Server.Items
 			: base(0xA484)
 		{
 			Weight = 2.0;
-			Name = "Gorget Dragonique";
+			Name = "Gorget Ancien";
 		}
 
 		public GorgetVieillit(Serial serial)

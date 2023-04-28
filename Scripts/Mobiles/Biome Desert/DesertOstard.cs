@@ -5,7 +5,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public DesertOstard()
-            : this("Un desert ostard")
+            : this(" desert ostard")
         {
         }
 

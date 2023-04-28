@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public LavaElemental()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Elementaire de Lave";
+            Name = " Elementaire de Lave";
             Body = 720;
 
             SetStr(446, 510);

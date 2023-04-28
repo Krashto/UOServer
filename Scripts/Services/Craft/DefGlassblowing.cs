@@ -98,11 +98,11 @@ namespace Server.Engines.Craft
 
         public override void InitCraftList()
         {
-            int index = AddCraft(typeof(Bottle), 1044050, 1023854, 52.5, 102.5, typeof(Sand), 1044625, 1, 1044627);
-            SetUseAllRes(index, true);
-			AddCraft(typeof(EmptyWineBottle), 1044050, "Bouteille de Vin", 52.5, 102.5, typeof(Sand), 1044625, 2, 1044627);
-			AddCraft(typeof(EmptyAleBottle), 1044050, "Bouteille de Bière", 52.5, 102.5, typeof(Sand), 1044625, 2, 1044627);
-			AddCraft(typeof(SmallFlask), 1044050, 1044610, 52.5, 102.5, typeof(Sand), 1044625, 2, 1044627);
+   //         int index = AddCraft(typeof(Bottle), 1044050, 1023854, 12.5, 32.5, typeof(Sand), 1044625, 1, 1044627);
+   //         SetUseAllRes(index, true);
+			//AddCraft(typeof(EmptyWineBottle), 1044050, "Bouteille de Vin", 22.5, 42.5, typeof(Sand), 1044625, 2, 1044627);
+			//AddCraft(typeof(EmptyAleBottle), 1044050, "Bouteille de Bière", 32.5, 52.5, typeof(Sand), 1044625, 2, 1044627);
+			//AddCraft(typeof(SmallFlask), 1044050, 1044610, 52.5, 102.5, typeof(Sand), 1044625, 2, 1044627);
             AddCraft(typeof(MediumFlask), 1044050, 1044611, 52.5, 102.5, typeof(Sand), 1044625, 3, 1044627);
             AddCraft(typeof(CurvedFlask), 1044050, 1044612, 55.0, 105.0, typeof(Sand), 1044625, 2, 1044627);
             AddCraft(typeof(LongFlask), 1044050, 1044613, 57.5, 107.5, typeof(Sand), 1044625, 4, 1044627);

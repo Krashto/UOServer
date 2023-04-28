@@ -24,7 +24,7 @@ namespace Server.Mobiles
         {
             m_IsFriend = isFriend;
 
-            Name = "Un Raptor";
+            Name = " Raptor";
             Body = 730;
 
             SetStr(404, 471);

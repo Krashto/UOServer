@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public PatchworkSkeleton()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Squelette Rapiece";
+            Name = " Squelette Rapiece";
             Body = 309;
             BaseSoundID = 0x48D;
 

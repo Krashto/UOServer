@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public StoneHarpy()
             : base()
         {
-            Name = "Une Harpie de Pierre";
+            Name = " Harpie de Pierre";
             Body = 73;
             BaseSoundID = 402;
 

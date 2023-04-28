@@ -1,4 +1,5 @@
 using System;
+using Server.Items;
 
 namespace Server.Mobiles
 {
@@ -12,7 +13,7 @@ namespace Server.Mobiles
         public Cow()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Vache";
+            Name = "Vache";
             Body = Utility.RandomList(0xD8, 0xE7);
             BaseSoundID = 0x78;
 
@@ -129,7 +130,22 @@ namespace Server.Mobiles
             return false;
         }
 
-        public override void Serialize(GenericWriter writer)
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawBeefPorterhouse>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefPrimeRib>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefRibeye>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefRibs>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefRoast>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefSirloin>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefSlice>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefTBone>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBeefTenderloin>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawGroundBeef>(), Utility.RandomMinMax(0, 2));
+			
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

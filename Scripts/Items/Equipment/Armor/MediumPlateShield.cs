@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x4203)
         {
             Weight = 6.0;
-        }
+			Name = "Rondache";
+
+		}
 
         public MediumPlateShield(Serial serial)
             : base(serial)

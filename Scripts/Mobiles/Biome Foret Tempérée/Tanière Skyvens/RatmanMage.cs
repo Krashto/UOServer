@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public RatmanMage()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Sky-vens Mage";
+            Name = " Sky-vens Mage";
             Body = 0x8F;
             BaseSoundID = 437;
 

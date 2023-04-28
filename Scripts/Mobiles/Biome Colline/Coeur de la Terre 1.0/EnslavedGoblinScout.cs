@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public EnslavedGoblinScout()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Goblin Eclaireur";
+            Name = " Goblin Eclaireur";
             Body = 334;
             BaseSoundID = 0x600;
 

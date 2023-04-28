@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public BoneKnight()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Chevalier d'Os";
+            Name = " Chevalier d'Os";
             Body = 57;
             BaseSoundID = 451;
 

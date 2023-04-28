@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public RatmanArcher()
             : base(AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Sky-vens Archer";
+            Name = " Sky-vens Archer";
             Body = 0x8E;
             BaseSoundID = 437;
 

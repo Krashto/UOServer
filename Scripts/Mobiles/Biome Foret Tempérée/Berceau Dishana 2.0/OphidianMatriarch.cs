@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public OphidianMatriarch()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Ophidienne Matriarche";
+            Name = " Ophidienne Matriarche";
             Body = 87;
             BaseSoundID = 644;
 

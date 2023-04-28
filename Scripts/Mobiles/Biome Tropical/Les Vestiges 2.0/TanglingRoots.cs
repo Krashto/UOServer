@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public TanglingRoots()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Liane Rampante";
+            Name = " Liane Rampante";
             Body = 8;
             BaseSoundID = 684;
 

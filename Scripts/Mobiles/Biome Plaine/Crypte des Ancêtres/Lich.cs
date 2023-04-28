@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public Lich()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Liche";
+            Name = " Liche";
             Body = 24;
             BaseSoundID = 0x3E9;
 

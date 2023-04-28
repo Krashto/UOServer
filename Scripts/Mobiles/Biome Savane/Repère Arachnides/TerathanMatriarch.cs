@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public TerathanMatriarch()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Therathan Matriarche";
+            Name = " Therathan Matriarche";
             Body = 72;
             BaseSoundID = 599;
 

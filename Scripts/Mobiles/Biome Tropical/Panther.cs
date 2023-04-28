@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Panther()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "une Panthere Noire";
+            Name = " Panthere Noire";
             Body = 0xD6;
             Hue = 0x901;
             BaseSoundID = 0x462;

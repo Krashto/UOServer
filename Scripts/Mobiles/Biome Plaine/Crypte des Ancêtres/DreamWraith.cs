@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public DreamWraith()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Spectre Astral";
+            Name = " Spectre Astral";
             Body = 740;
             BaseSoundID = 0x482;
 

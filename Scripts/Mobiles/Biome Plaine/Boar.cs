@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Cochon")]
@@ -7,7 +9,7 @@ namespace Server.Mobiles
         public Boar()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Cochon";
+            Name = " Cochon";
             Body = 0x122;
             BaseSoundID = 0xC4;
 
@@ -54,7 +56,24 @@ namespace Server.Mobiles
 
 		public override int Meat => 8;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;
-        public override void Serialize(GenericWriter writer)
+
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<PorkHock>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBacon>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawBaconSlab>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawGroundPork>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawHam>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawHamSlices>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawPigHead>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawPorkChop>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawPorkRoast>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawPorkSlice>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawSpareRibs>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawTrotters>(), Utility.RandomMinMax(0, 2));
+
+		}
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

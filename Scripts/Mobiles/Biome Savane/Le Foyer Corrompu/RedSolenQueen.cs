@@ -14,7 +14,7 @@ namespace Server.Mobiles
         public RedSolenQueen()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une matriarche fourifeu";
+            Name = " matriarche fourifeu";
             Body = 783;
             BaseSoundID = 959;
 

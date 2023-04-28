@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Dragon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Dragon";
+            Name = " Dragon";
             Body = Utility.RandomList(12, 59);
             BaseSoundID = 362;
 

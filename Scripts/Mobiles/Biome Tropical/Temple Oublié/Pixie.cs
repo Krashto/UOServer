@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Pixie()
             : base(AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Pixie";
+            Name = " Pixie";
             Body = 128;
             BaseSoundID = 0x467;
 

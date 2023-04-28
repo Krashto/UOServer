@@ -5,7 +5,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public TigerMount()
-            : this("Un Tigre")
+            : this(" Tigre")
         {
         }
 

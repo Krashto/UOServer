@@ -11,6 +11,7 @@ namespace Server.Items
             : base(0x1410)
         {
             Weight = 5.0;
+			Name = "Brassards de Plaque";
         }
 
         public PlateArms(Serial serial)

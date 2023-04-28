@@ -12,7 +12,7 @@ namespace Server.Mobiles
         };
         [Constructable]
         public Horse()
-            : this("Un Cheval")
+            : this(" Cheval")
         {
         }
 

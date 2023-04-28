@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Impaler()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = NameList.RandomName("Un Empaleur");
+            Name = NameList.RandomName(" Empaleur");
             Body = 306;
             BaseSoundID = 0x2A7;
 

@@ -10,7 +10,7 @@ namespace Server.Items
 			: base(0xA44F)
 		{
 			Weight = 4.0;
-			Name = "Casque de Maille"; 
+			Name = "Casque de Cuirasse"; 
 		}
 
 		public CasqueSemiMaille(Serial serial)
@@ -47,7 +47,7 @@ namespace Server.Items
 			: base(0xA450)
 		{
 			Weight = 4.0;
-			Name = "Brassard de Maille";
+			Name = "Brassard de Cuirasse";
 		}
 
 		public BrassardSemiMaille(Serial serial)
@@ -95,7 +95,7 @@ namespace Server.Items
 			: base(0xA452)
 		{
 			Weight = 3.0;
-			Name = "Gants de Maille";
+			Name = "Gants de Cuirasse";
 		}
 
 		public GantsSemiMaille(Serial serial)
@@ -133,7 +133,7 @@ namespace Server.Items
 			: base(0xA453)
 		{
 			Weight = 3.0;
-			Name = "Gorgerin de Maille";
+			Name = "Gorgerin de Cuirasse";
 		}
 
 		public GorgetSemiMaille(Serial serial)
@@ -160,7 +160,7 @@ namespace Server.Items
 			: base(0xA454)
 		{
 			Weight = 7.0;
-			Name = "Jambière de Maille";
+			Name = "Jambière de Cuirasse";
 		}
 
 		public JambiereSemiMaille(Serial serial)
@@ -197,7 +197,7 @@ namespace Server.Items
 			: base(0xA451)
 		{
 			Weight = 7.0;
-			Name = "Plastron de Maille";
+			Name = "Plastron de Cuirasse";
 		}
 
 		public PlastronSemiMaille(Serial serial)

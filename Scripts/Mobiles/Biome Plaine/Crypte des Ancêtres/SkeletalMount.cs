@@ -7,7 +7,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public SkeletalMount()
-            : this("Un Cheval Squelettique")
+            : this(" Cheval Squelettique")
         {
         }
 
@@ -72,7 +72,7 @@ namespace Server.Mobiles
             {
                 case 0:
                     {
-                        Name = "Un Cheval Squelettique";
+                        Name = " Cheval Squelettique";
                         Tamable = false;
                         MinTameSkill = 0.0;
                         ControlSlots = 0;

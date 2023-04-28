@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public YomotsuPriest()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Pretre Yomotsu";
+            Name = " Pretre Yomotsu";
             Body = 253;
             BaseSoundID = 0x452;
 

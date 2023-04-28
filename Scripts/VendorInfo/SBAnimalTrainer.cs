@@ -23,6 +23,7 @@ namespace Server.Mobiles
 				Add(new AnimalBuyInfo(1, typeof(RidableLlama), 1000, 10, 220, 0));
 				Add(new AnimalBuyInfo(1, typeof(PackHorse), 800, 10, 291, 0));
                 Add(new AnimalBuyInfo(1, typeof(PackLlama), 800, 10, 292, 0));
+				
                 
 
 				//Add(new AnimalBuyInfo(1, typeof(FarmBull), 500, 10, 233, 0));
@@ -35,7 +36,7 @@ namespace Server.Mobiles
 	
 
 				//Add(new GenericBuyInfo("2001111", typeof(HitchingPostSouthDeed), 10000, 10, 0x14F0, 0));
-				//Add(new GenericBuyInfo(typeof(HitchingRope), 500, 20, 0x14F8, 0));
+				Add(new GenericBuyInfo(typeof(Saddlebag), 500, 20, 0x14F8, 0));
 			}
         }
 

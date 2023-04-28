@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public Bogling()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Bogling";
+            Name = " Bogling";
             Body = 779;
             BaseSoundID = 422;
 

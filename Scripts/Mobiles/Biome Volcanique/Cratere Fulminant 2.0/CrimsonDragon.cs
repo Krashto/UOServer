@@ -13,7 +13,7 @@ namespace Server.Mobiles
         public CrimsonDragon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Dragon Crimson";
+            Name = " Dragon Crimson";
             Body = 197;
 
             BaseSoundID = 362;

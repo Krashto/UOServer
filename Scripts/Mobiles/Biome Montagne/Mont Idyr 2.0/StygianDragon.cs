@@ -15,7 +15,7 @@ namespace Server.Mobiles
         public StygianDragon()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.3, 0.5)
         {
-            Name = "Un Dragon Stygian";
+            Name = " Dragon Stygian";
             Body = 826;
             BaseSoundID = 362;
 

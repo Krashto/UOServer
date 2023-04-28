@@ -61,14 +61,14 @@ namespace Server.Mobiles
         }
     }
 
-    [CorpseName("Un Triton")]
+    [CorpseName(" Triton")]
     public class Triton : BaseCreature
     {
         [Constructable]
         public Triton()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Triton";
+            Name = " Triton";
             Body = 0x2D0;
             Hue = 2713;
             BaseSoundID = 0x5A;

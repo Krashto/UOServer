@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		{
             Body = 182;
 
-            Name = "Un Orc Bombardier";
+            Name = " Orc Bombardier";
             BaseSoundID = 0x45A;
 
 			SetStr(229, 408);

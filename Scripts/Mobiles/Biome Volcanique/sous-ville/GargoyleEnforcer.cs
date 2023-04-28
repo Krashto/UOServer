@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GargoyleEnforcer()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Gargouille Renforcee";
+            Name = " Gargouille Renforcee";
             Body = 0x2F2;
             BaseSoundID = 0x174;
 

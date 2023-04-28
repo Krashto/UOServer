@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x13BB)
         {
             Weight = 1.0;
-        }
+			Name = "Coiffe de mailles";
+
+		}
 
         public ChainCoif(Serial serial)
             : base(serial)

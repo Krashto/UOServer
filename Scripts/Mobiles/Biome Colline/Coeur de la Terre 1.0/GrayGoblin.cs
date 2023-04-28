@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GrayGoblin()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "un Goblin Gris";
+            Name = " Goblin Gris";
 
             Body = 723;
             Hue = 1900;

@@ -11,7 +11,7 @@ namespace Server.Mobiles
         public DarkWisp()
             : base(AIType.AI_NecroMage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Wisp Sombre";
+            Name = " Wisp Sombre";
             Body = 165;
             BaseSoundID = 466;
 

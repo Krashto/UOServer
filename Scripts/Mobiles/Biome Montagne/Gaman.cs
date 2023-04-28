@@ -9,14 +9,14 @@ namespace Server.Mobiles
 
 		[Constructable]
 		public Gaman()
-		  : this("Un Gaman")
+		  : this(" Gaman")
 		{
 		}
 		[Constructable]
 		public Gaman(string name)
 		  : base(name, 248, 248, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
 		{
-            Name = "Un Gaman";
+            Name = " Gaman";
             Body = 248;
 
             SetStr(146, 175);

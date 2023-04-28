@@ -11,7 +11,8 @@ namespace Server.Items
             : base(0x2FC7)
         {
             Weight = 2.0;
-        }
+			Name = "Gorget d'anneaux";
+		}
 
         public RingmailGorget(Serial serial)
             : base(serial)

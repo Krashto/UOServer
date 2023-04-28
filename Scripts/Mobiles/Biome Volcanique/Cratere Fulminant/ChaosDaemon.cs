@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public ChaosDaemon()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Demon du Chaos";
+            Name = " Demon du Chaos";
             Body = 792;
             BaseSoundID = 0x3E9;
 

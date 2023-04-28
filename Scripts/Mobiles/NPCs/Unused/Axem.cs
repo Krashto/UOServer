@@ -82,7 +82,7 @@ namespace Server.Engines.Quests
     {
         public YeOldeQuest()
         {
-            AddObjective(new ObtainObjective(typeof(UntranslatedAncientTome), "Untranslated Ancient Tome", 1, 0xFF2, 0, 2405));
+            AddObjective(new ObtainObjective(typeof(UntranslatedAncientTome), "translated Ancient Tome", 1, 0xFF2, 0, 2405));
 
             AddReward(new BaseReward(typeof(BulgingMuseumBag), 1112995));
             AddReward(new BaseReward("Loyalty Rating"));

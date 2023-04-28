@@ -11,7 +11,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public PolarBear(string name) : base(name, 213, 0xD5, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
-            Name = "Un Ours Polaire";
+            Name = " Ours Polaire";
             Body = 213;
             BaseSoundID = 0xA3;
 

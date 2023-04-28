@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public DreadSpider()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Une Tarenlune";
+            Name = " Tarenlune";
             Body = 11;
             BaseSoundID = 1170;
 

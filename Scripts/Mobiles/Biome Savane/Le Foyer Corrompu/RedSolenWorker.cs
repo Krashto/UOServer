@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public RedSolenWorker()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Fourifeu";
+            Name = " Fourifeu";
             Body = 781;
             BaseSoundID = 959;
 

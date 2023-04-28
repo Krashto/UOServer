@@ -1,4 +1,10 @@
+using System;
+using System.Linq;
+
+using Server.Items;
+
 namespace Server.Mobiles
+
 {
     [CorpseName("a mountain goat corpse")]
     public class MountainGoat : BaseCreature
@@ -7,7 +13,7 @@ namespace Server.Mobiles
         public MountainGoat()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "a mountain goat";
+            Name = "Chèvre des montagnes";
             Body = 88;
             BaseSoundID = 0x99;
 
@@ -48,7 +54,14 @@ namespace Server.Mobiles
         public override int Meat => 2;
         public override int Hides => 4;
         public override FoodType FavoriteFood => FoodType.GrainsAndHay | FoodType.FruitsAndVegies;
-        public override void Serialize(GenericWriter writer)
+
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawGoatRoast>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawGoatSteak>(), Utility.RandomMinMax(0, 2));
+
+		}
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

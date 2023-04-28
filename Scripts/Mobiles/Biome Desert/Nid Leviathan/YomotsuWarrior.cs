@@ -10,7 +10,7 @@ namespace Server.Mobiles
         public YomotsuWarrior()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Guerrier Yomotsu";
+            Name = " Guerrier Yomotsu";
             Body = 245;
             BaseSoundID = 0x452;
 

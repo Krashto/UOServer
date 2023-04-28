@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public Squirrel()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Ecureuil";
+            Name = " Ecureuil";
             Body = 0x116;
 
 			SetStr(45, 70);

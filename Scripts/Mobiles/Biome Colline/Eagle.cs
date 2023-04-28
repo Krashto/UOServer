@@ -2,14 +2,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-    [CorpseName("Un corps d'Aigle")]
+    [CorpseName("un corps d'Aigle")]
     public class Eagle : BaseCreature
     {
         [Constructable]
         public Eagle()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Aigle";
+            Name = " Aigle";
             Body = 5;
             BaseSoundID = 0x2EE;
 

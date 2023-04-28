@@ -7,7 +7,7 @@ namespace Server.Mobiles
         public GrizzlyBear()
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
-            Name = "Un Grizzly";
+            Name = " Grizzly";
             Body = 212;
             BaseSoundID = 0xA3;
 
