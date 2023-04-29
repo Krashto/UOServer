@@ -47,11 +47,10 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 			SpellHelper.GetSurfaceTop(ref p);
 
-			if (Server.Misc.WeightOverloading.IsOverloaded(Caster))
+			if (Caster.Mounted)
+				Caster.SendMessage("Vous ne pouvez pas vous téléporter à dos de cheval.");
+			else if (Server.Misc.WeightOverloading.IsOverloaded(Caster))
 				Caster.SendLocalizedMessage(502359, "", 0x22); // Thou art too encumbered to move.
-			/*else if ( !SpellHelper.CheckTravel( Caster, TravelCheckType.TeleportFrom ) )
-			{
-			}*/
 			else if (!SpellHelper.CheckTravel(Caster, map, new Point3D(p), TravelCheckType.TeleportTo))
 			{
 			}

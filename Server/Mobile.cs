@@ -2848,7 +2848,7 @@ namespace Server
 		/// <returns>True if the move is allowed, false if not.</returns>
 		protected virtual bool OnMove(Direction d)
 		{
-			if (m_Hidden && m_AccessLevel == AccessLevel.Player)
+			if (m_Hidden && (d & Direction.Running) != 0 && m_AccessLevel == AccessLevel.Player)
 				RevealingAction();
 
 			return true;

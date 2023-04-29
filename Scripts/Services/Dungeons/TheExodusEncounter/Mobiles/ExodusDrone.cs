@@ -115,7 +115,7 @@ namespace Server.Mobiles
                 attacker.SendAsciiMessage("Your weapon cannot penetrate the creature's magical barrier");
             }
 
-            if (attacker != null && attacker.Alive && attacker.Weapon is BaseRanged && 0.4 > Utility.RandomDouble())
+            if (attacker != null && attacker.Alive && attacker.Weapon is BaseRangedWeapon && 0.4 > Utility.RandomDouble())
             {
                 SendEBolt(attacker);
             }

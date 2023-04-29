@@ -44,8 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				if ((CoupDansLeGenouSpell.IsActive(m) || BlizzardSpell.IsActive(m) || CoupureDesTendonsSpell.IsActive(m)) 
-					&& MarquerSpell.IsActive(m) && BleedAttack.IsBleeding(m))
+				if (m.Hits <= (m.HitsMax * 0.3) && MarquerSpell.IsActive(m) && BleedAttack.IsBleeding(m))
 				{
 					Caster.MoveToWorld(m.Location, m.Map);
 					m.Damage(100);

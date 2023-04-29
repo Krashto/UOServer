@@ -80,7 +80,6 @@ namespace Server.Custom
 					mount.Poison = null;
 					mount.Hits = mount.HitsMax;
 					mount.ControlOrder = OrderType.Stay;
-					mount.SummonMaster = null;
 					mount.IsStabled = true;
 
 					pm.StoredCreatureWhenEnteringInDungeon = mount;
@@ -102,7 +101,9 @@ namespace Server.Custom
 					mount.Poison = null;
 					mount.Hits = mount.HitsMax;
 					mount.MoveToWorld(pm.Location, pm.Map);
-					mount.Rider = pm;
+					mount.ControlOrder = OrderType.Follow;
+					if (pm.Alive)
+						mount.Rider = pm;
 
 					pm.StoredCreatureWhenEnteringInDungeon = null;
 					pm.SendMessage("Vous retrouvez votre monture.");

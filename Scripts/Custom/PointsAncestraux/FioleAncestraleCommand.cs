@@ -31,7 +31,7 @@ namespace Server.Scripts.Commands
 			protected override void OnTarget(Mobile from, object target)
 			{
 				if (target is CustomPlayerMobile pm)
-					pm.AddToBackpack(new FioleAncestrale());
+					pm.AddToBackpack(new FioleAncestrale(pm));
 				else
 					from.SendMessage("Vous devez cibler un joueur.");
 			}

@@ -12,7 +12,7 @@ namespace Server.Mobiles
         public RedSolenWarrior()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = " Guerrier Fourifeu";
+            Name = "Un Guerrier Fourifeu";
             Body = 782;
             BaseSoundID = 959;
 
@@ -62,7 +62,7 @@ namespace Server.Mobiles
         public override void OnGotMeleeAttack(Mobile attacker)
         {
 
-            if (attacker.Weapon is BaseRanged)
+            if (attacker.Weapon is BaseRangedWeapon)
 
                 BeginAcidBreath();
 

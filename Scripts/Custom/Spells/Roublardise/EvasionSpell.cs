@@ -100,7 +100,9 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		public override void OnCast()
 		{
-			if (CheckSequence())
+			if (Caster.Mounted)
+				Caster.SendMessage("Vous ne pouvez pas vous téléporter à dos de cheval.");
+			else if (CheckSequence())
 			{
 				while ((!Check || point == Caster.Location || point == new Point3D(0, 0, 0)) && Count < 30)
 					GetLocation();

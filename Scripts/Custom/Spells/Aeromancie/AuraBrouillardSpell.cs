@@ -37,7 +37,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public void Target(Mobile m)
 		{
-			if (!Caster.CanSee(m))
+			if (Caster.Mounted)
+				Caster.SendMessage("Vous ne pouvez pas vous cacher à dos de cheval.");
+			else if (m.Mounted)
+				Caster.SendMessage("Vous ne pouvez pas cacher quelqu'un à dos de cheval.");
+			else if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (CheckBSequence(m))
 			{
@@ -63,7 +67,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public static void ToogleInvisibility(Spell spell, Mobile caster, Mobile m)
 		{
-			if (IsActive(m))
+			if (m.Mounted)
+				m.SendMessage("Vous ne pouvez pas vous cacher à dos de cheval.");
+			else if (IsActive(m))
 				Deactivate(m);
 
 			var duration = spell.GetDurationForSpell(30, 2);

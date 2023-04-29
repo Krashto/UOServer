@@ -533,10 +533,16 @@ namespace Server.Spells
 			{
 				m_Caster.SendLocalizedMessage( 502642 ); // You are already casting a spell.
 			}
-			else if ( FormeCristallineSpell.IsActive(m_Caster) || FormeCycloniqueSpell.IsActive(m_Caster) || FormeElectrisanteSpell.IsActive(m_Caster)
-				   || FormeEmpoisonneeSpell.IsActive(m_Caster) || FormeEnflammeeSpell.IsActive(m_Caster) || FormeEnsanglanteeSpell.IsActive(m_Caster)
-				   || FormeGivranteSpell.IsActive(m_Caster) || FormeLiquideSpell.IsActive(m_Caster) || FormeMetalliqueSpell.IsActive(m_Caster)
-				   || FormeTerrestreSpell.IsActive(m_Caster))
+			else if ( m_Caster.Mounted && ((this is FormeCristallineSpell && !FormeCristallineSpell.IsActive(m_Caster))
+					  || (this is FormeCycloniqueSpell && !FormeCycloniqueSpell.IsActive(m_Caster))
+					  || (this is FormeElectrisanteSpell && !FormeElectrisanteSpell.IsActive(m_Caster))
+					  || (this is FormeEmpoisonneeSpell && !FormeEmpoisonneeSpell.IsActive(m_Caster))
+					  || (this is FormeEnflammeeSpell && !FormeEnflammeeSpell.IsActive(m_Caster))
+					  || (this is FormeEnsanglanteeSpell && !FormeEnsanglanteeSpell.IsActive(m_Caster))
+					  || (this is FormeGivranteSpell && !FormeGivranteSpell.IsActive(m_Caster))
+					  || (this is FormeLiquideSpell && !FormeLiquideSpell.IsActive(m_Caster))
+					  || (this is FormeMetalliqueSpell && !FormeMetalliqueSpell.IsActive(m_Caster))
+					  || (this is FormeTerrestreSpell && !FormeTerrestreSpell.IsActive(m_Caster))))
 			{
 				m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
 			}

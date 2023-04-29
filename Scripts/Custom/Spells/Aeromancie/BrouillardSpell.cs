@@ -29,7 +29,9 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 		public override void OnCast()
 		{
-			if (CheckSequence())
+			if (Caster.Mounted)
+				Caster.SendMessage("Vous ne pouvez pas vous cacher à dos de cheval.");
+			else if (CheckSequence())
 			{
 				if (IsActive(Caster))
 					Deactivate(Caster);

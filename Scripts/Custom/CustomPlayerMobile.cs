@@ -16,6 +16,7 @@ using Server.Custom.Spells.NewSpells.Defenseur;
 using Server.CustomScripts.Systems.Experience;
 using Server.Custom.Capacites;
 using Server.Custom.PointsAncestraux;
+using Server.ContextMenus;
 #endregion
 
 namespace Server.Mobiles
@@ -354,6 +355,23 @@ namespace Server.Mobiles
 
 		#endregion
 
+		public override void OnSaid(SpeechEventArgs e)
+		{
+			if (Squelched)
+			{
+				SendLocalizedMessage(500168); // You can not say anything, you have been muted.
+				e.Blocked = true;
+			}
+			else if (Frozen)
+			{
+				SendMessage("Vous ne pouvez pas parler en dormant.");
+				e.Blocked = true;
+			}
+			else
+			{
+				base.OnSaid(e);
+			}
+		}
 		public override bool CheckPoisonImmunity(Mobile from, Poison poison)
 		{
 			return InsensibleSpell.IsActive(this) || FormeEnsanglanteeSpell.IsActive(this);

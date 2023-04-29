@@ -51,7 +51,7 @@ namespace Server.Custom.Weapons
 
 			if (weapon is Fists)
 				speed = 2.0f;
-			else if (weapon is BaseRanged)
+			else if (weapon is BaseRangedWeapon)
 				speed = 3.25f;
 			else if (weapon.Layer == Layer.OneHanded)
 				speed = 2.5f;
@@ -65,11 +65,13 @@ namespace Server.Custom.Weapons
 		{
 			double baseDamage = 1;
 
-			if (weapon is BaseTrainingWand)
+			if (weapon is TrainingSword)
+				baseDamage = 1;
+			else if (weapon is BaseTrainingWand)
 				baseDamage = 1;
 			else if (weapon is Fists)
 				baseDamage = 9;
-			else if (weapon is BaseRanged)
+			else if (weapon is BaseRangedWeapon)
 				baseDamage = 20;
 			else if (weapon.Layer == Layer.OneHanded)
 				baseDamage = 19;

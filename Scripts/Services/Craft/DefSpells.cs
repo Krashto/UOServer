@@ -307,8 +307,8 @@ namespace Server.Engines.Craft
 			AddSpell("Polymorphie", typeof(FormeEnsanglanteeScroll), "Ensanglantée", 10);
 
 			AddSpell("Pyromancie", typeof(BouclierDeFeuScroll), "Bouclier de feu", 1);
-			AddSpell("Pyromancie", typeof(BouleDeFeuScroll), "Boule de feu", 2);
-			AddSpell("Pyromancie", typeof(CeleriteScroll), "Célérité", 3);
+			AddSpell("Pyromancie", typeof(CeleriteScroll), "Célérité", 2);
+			AddSpell("Pyromancie", typeof(BouleDeFeuScroll), "Boule de feu", 3);
 			AddSpell("Pyromancie", typeof(SupernovaScroll), "Supernova", 4);
 			AddSpell("Pyromancie", typeof(AuraRechauffanteScroll), "Aura réchauffante", 5);
 			AddSpell("Pyromancie", typeof(PassionArdenteScroll), "Passion ardente", 6);

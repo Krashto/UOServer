@@ -1,6 +1,7 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Chasseur
 {
@@ -50,6 +51,9 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 					damage *= 0.75;
 					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 				}
+
+				if (m.Mounted && m.Mount != null && m is CustomPlayerMobile pm)
+					pm.CheckEquitation(EquitationType.Dismount, pm.Location);
 
 				SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 

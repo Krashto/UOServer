@@ -124,6 +124,7 @@ namespace Server.Engines.Craft
 			SetUseAllRes(index, true);
 
 			// Arcs
+			index = AddCraft(typeof(TrainingBow), "Arcs", "Arc d'entrainement", 0.0, 50.0, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Blancorde), "Arcs", "Blancorde", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
 			index = AddCraft(typeof(Glaciale), "Arcs", "Glaciale", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
 			index = AddCraft(typeof(Bow), "Arcs", "Arc simple", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 7, 1044351);

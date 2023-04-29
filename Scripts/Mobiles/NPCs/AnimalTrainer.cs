@@ -55,15 +55,35 @@ namespace Server.Mobiles
                 list.Add(new StableEntry(this, from));
 
                 if (from.Stabled.Count > 0)
-                {
                     list.Add(new ClaimAllEntry(this, from));
-                }
-            }
 
-            base.AddCustomContextEntries(from, list);
+				if (from is CustomPlayerMobile pm)
+				list.Add(new ClaimAllPetsEntry(pm));
+			}
+
+			base.AddCustomContextEntries(from, list);
         }
 
-        public override void GetProperties(ObjectPropertyList list)
+		private class ClaimAllPetsEntry : ContextMenuEntry
+		{
+			private readonly CustomPlayerMobile m_From;
+
+			public ClaimAllPetsEntry(CustomPlayerMobile from) : base(3006127)
+			{
+				m_From = from;
+			}
+
+			public override void OnClick()
+			{
+				foreach (var follower in m_From.AllFollowers)
+				{
+					if (follower is BaseCreature bc && !bc.IsStabled && bc.Map != Map.Internal)
+						follower.MoveToWorld(m_From.Location, m_From.Map);
+				}
+			}
+		}
+
+		public override void GetProperties(ObjectPropertyList list)
         {
             base.GetProperties(list);
 

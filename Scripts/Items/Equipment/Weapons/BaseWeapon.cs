@@ -365,9 +365,12 @@ namespace Server.Items
             get { return m_Quality; }
             set
             {
-                UnscaleDurability();
-                UnscaleUses();
-                m_Quality = value;
+				UnscaleDurability();
+				UnscaleUses();
+				m_Quality = value;
+
+				ScaleWeaponDamage();
+				
                 ScaleDurability();
                 ScaleUses();
                 InvalidateProperties();
@@ -427,6 +430,7 @@ namespace Server.Items
                 UnscaleDurability();
                 m_Resource = value;
                 Hue = CraftResources.GetHue(m_Resource);
+				ScaleWeaponDamage();
                 InvalidateProperties();
                 ScaleDurability();
             }
@@ -659,8 +663,25 @@ namespace Server.Items
 
             InvalidateProperties();
         }
+		
+		public void ScaleWeaponDamage()
+		{
+			if (m_Quality == ItemQuality.Legendary)
+				Attributes.WeaponDamage = 100;
+			else if (m_Quality == ItemQuality.Epic)
+				Attributes.WeaponDamage = 60;
+			else if (m_Quality == ItemQuality.Exceptional)
+				Attributes.WeaponDamage = 30;
 
-        public virtual void ScaleDurability()
+			CraftResourceInfo info = CraftResources.GetInfo(m_Resource);
+
+			if (info != null)
+				Attributes.WeaponDamage += info.Level * 10;
+
+			InvalidateProperties();
+		}
+
+		public virtual void ScaleDurability()
         {
             int scale = 100 + GetDurabilityBonus();
 
@@ -1227,7 +1248,7 @@ namespace Server.Items
 			{
 				var atk = (CustomPlayerMobile)attacker;
 
-				if (this is BaseRanged)
+				if (this is BaseRangedWeapon)
 				{
 					if (!atk.CheckEquitation(EquitationType.RangedAttacking))
 						return false;
@@ -1492,7 +1513,7 @@ namespace Server.Items
 
                 return success;
             }
-            else if (!(defender.Weapon is Fists) && !(defender.Weapon is BaseRanged))
+            else if (!(defender.Weapon is Fists) && !(defender.Weapon is BaseRangedWeapon))
             {
                 BaseWeapon weapon = defender.Weapon as BaseWeapon;
 
@@ -1782,7 +1803,7 @@ namespace Server.Items
 
             WeaponAbility a = WeaponAbility.GetCurrentAbility(attacker);
 
-            bool ranged = this is BaseRanged;
+            bool ranged = this is BaseRangedWeapon;
             int phys, fire, cold, pois, nrgy, chaos, direct;
 
             if (a is MovingShot)
@@ -1942,7 +1963,7 @@ namespace Server.Items
 				percentageBonus += 100;
 
 			if (EnrageSpell.IsActive(attacker))
-				percentageBonus += this is BaseRanged ? 50 : 100;
+				percentageBonus += this is BaseRangedWeapon ? 50 : 100;
 
 			if (CommandementSpell.IsActive(attacker))
 				percentageBonus += 100;
@@ -2223,7 +2244,7 @@ namespace Server.Items
                 int explosChance = (int)(ExtendedWeaponAttributes.GetValue(attacker, ExtendedWeaponAttribute.HitExplosion) * propertyBonus);
 
                 #region Mondains Legacy
-                int velocityChance = this is BaseRanged ? ((BaseRanged)this).Velocity : 0;
+                int velocityChance = this is BaseRangedWeapon ? ((BaseRangedWeapon)this).Velocity : 0;
                 #endregion
 
                 #region Stygian Abyss
@@ -3004,7 +3025,7 @@ namespace Server.Items
 
 				if (this is BaseMeleeWeapon)
 					capaciteBonus = pm.Capacites[Capacite.ArmesMelee] * 0.2;
-				else if (this is BaseRanged)
+				else if (this is BaseRangedWeapon)
 					capaciteBonus = pm.Capacites[Capacite.ArmesDistance] * 0.2;
 			}
 			#endregion
@@ -4519,7 +4540,7 @@ namespace Server.Items
                 list.Add(1113710, prop.ToString()); // Battle Lust
             }
 
-            if (this is BaseRanged && (prop = ((BaseRanged)this).Velocity) != 0)
+            if (this is BaseRangedWeapon && (prop = ((BaseRangedWeapon)this).Velocity) != 0)
             {
                 list.Add(1072793, prop.ToString()); // Velocity ~1_val~%
             }
@@ -4941,18 +4962,6 @@ namespace Server.Items
             }
 
             CraftContext context = craftSystem.GetContext(from);
-
-			if (Quality == ItemQuality.Legendary)
-				Attributes.WeaponDamage += 100;
-			else if (Quality == ItemQuality.Epic)
-				Attributes.WeaponDamage += 60;
-			else if (Quality == ItemQuality.Exceptional)
-                Attributes.WeaponDamage += 30;
-
-			CraftResourceInfo info = CraftResources.GetInfo(m_Resource);
-
-			if (info != null)
-				Attributes.WeaponDamage += info.Level * 10;
 
 			if (!craftItem.ForceNonExceptional)
             {

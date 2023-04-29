@@ -1536,7 +1536,7 @@ namespace Server.Items
                 if (Info == null || HardCap == 1)
                     return HardCap;
 
-                int[] range = item is BaseRanged && SecondaryInfo != null ? SecondaryInfo[resIndex] : Info[resIndex];
+                int[] range = item is BaseRangedWeapon && SecondaryInfo != null ? SecondaryInfo[resIndex] : Info[resIndex];
 
                 int max = range[preIndex];
                 int min = Math.Max(ItemPropertyInfo.GetMinIntensity(item, id), (int)(range[0] * .75));

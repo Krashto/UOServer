@@ -12,7 +12,6 @@ using Server.Engines.Quests;
 using Server.Engines.Shadowguard;
 using Server.Engines.SphynxFortune;
 using Server.Engines.VendorSearching;
-using Server.Engines.VoidPool;
 using Server.Engines.VvV;
 using Server.Guilds;
 using Server.Gumps;
@@ -32,7 +31,6 @@ using Server.Engines.ArenaSystem;
 using Server.Poker; // Poker edit
 using RankDefinition = Server.Guilds.RankDefinition;
 using Server.Spells.OldSpells;
-using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom;
 
 #endregion
@@ -1083,7 +1081,6 @@ namespace Server.Mobiles
 
 			if (pm != null)
 			{
-				pm.ClaimAutoStabledPets();
 				pm.ValidateEquipment();
 
 				ReportMurdererGump.CheckMurderer(pm);
@@ -1097,14 +1094,10 @@ namespace Server.Mobiles
 						cp.SendMessage(72, string.Format("Vous avez {0} missive(s) en attente.", cp.MissiveEnAttente.Count));
 					}
 
-
 					if (cp.NetState.Version == new ClientVersion("7.0.15.1"))
 					{
 						cp.SendGump(new VersionGump(cp));
 					}
-
-
-
 				}
 			}
 

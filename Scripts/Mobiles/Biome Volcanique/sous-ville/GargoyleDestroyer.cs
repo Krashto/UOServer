@@ -9,7 +9,7 @@ namespace Server.Mobiles
         public GargoyleDestroyer()
             : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = " Gargouille Renforcee";
+            Name = "Une Gargouille Renforcee";
             Body = 0x2F3;
             BaseSoundID = 0x174;
 
@@ -68,7 +68,7 @@ namespace Server.Mobiles
         {
             base.OnGotMeleeAttack(attacker);
 
-            if (attacker != null && attacker.Alive && attacker.Weapon is BaseRanged && 0.4 > Utility.RandomDouble())
+            if (attacker != null && attacker.Alive && attacker.Weapon is BaseRangedWeapon && 0.4 > Utility.RandomDouble())
             {
                 ThrowHatchet(attacker);
             }

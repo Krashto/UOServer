@@ -1,4 +1,5 @@
 using Server.Commands.Generic;
+using Server.Custom.Services;
 using Server.Gumps;
 using Server.Items;
 using Server.Menus.ItemLists;
@@ -12,6 +13,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Text;
+using static Server.Custom.Services.DiscordService;
 
 namespace Server.Commands
 {
@@ -437,9 +439,10 @@ namespace Server.Commands
         {
             BroadcastMessage(AccessLevel.Player, 0x482, string.Format("Staff message from {0}:", e.Mobile.Name));
             BroadcastMessage(AccessLevel.Player, 0x482, e.ArgString);
-        }
+			DiscordService.SendMessage(DiscordMessageType.News, $"Message général: {e.ArgString}");
+		}
 
-        public static void BroadcastMessage(AccessLevel ac, int hue, string message)
+		public static void BroadcastMessage(AccessLevel ac, int hue, string message)
         {
             World.Broadcast(hue, false, ac, message);
         }

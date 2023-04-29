@@ -1477,6 +1477,7 @@ namespace Server.Engines.Craft
 				typeof(NorseHelm),
 				typeof(PlateHelm)
 			};
+
 		public double AdjustSkill(double skill, Mobile from, CraftSystem craftSystem)
 		{
 			CraftSubResCol res = craftSystem.CraftSubRes;
@@ -1510,7 +1511,6 @@ namespace Server.Engines.Craft
 					case "TropicauxLeather": skill += 40.0; break;
 					case "ToundroisLeather": skill += 45.0; break;
 					case "AncienLeather": skill += 50.0; break;
-
 				}
 
 				return skill;
@@ -1560,7 +1560,6 @@ namespace Server.Engines.Craft
 					case "TropicauxBoard": skill += 40.0; break;
 					case "ToundroisBoard": skill += 45.0; break;
 					case "AncienBoard": skill += 50.0; break;
-
 				}
 
 				return skill;
@@ -1603,21 +1602,6 @@ namespace Server.Engines.Craft
 					case "LuneriumIngot": skill += 40.0; break;
 					case "MarinarIngot": skill += 40.0; break;
 					case "NostalgiumIngot": skill += 45.0; break;
-					
-					
-					//case "VolcaniumIngot": skill += 10.0; break;
-					//case "AgapiteIngot": skill += 17.0; break;					
-					//case "EtherylIngot": skill += 17.0; break;										
-					//case "ZirconiumIngot": skill += 17.0; break;					
-					//case "MaritiumIngot": skill += 25.0; break;
-					//case "MuscoviteIngot": skill += 25.0; break;
-					//case "PhlogopiteIngot": skill += 25.0; break;
-					//case "BiotiteIngot": skill += 35.0; break;
-					//case "HeliothropeIngot": skill += 35.0; break;
-					//case "PyroxeneIngot": skill += 35.0; break;
-					
-					
-
 				}
 
 				return skill;

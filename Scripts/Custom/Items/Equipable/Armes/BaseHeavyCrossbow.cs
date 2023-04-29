@@ -1,6 +1,6 @@
 ﻿namespace Server.Items
 {
-	public abstract class BaseHeavyCrossbow : BaseRanged
+	public abstract class BaseHeavyCrossbow : BaseRangedWeapon
 	{
 		public BaseHeavyCrossbow(int itemID)
 			: base(itemID)

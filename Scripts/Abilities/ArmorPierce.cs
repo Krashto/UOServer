@@ -34,7 +34,7 @@ namespace Server.Items
 
             if (_Table.ContainsKey(defender))
             {
-                if (attacker.Weapon is BaseRanged)
+                if (attacker.Weapon is BaseRangedWeapon)
                     return;
 
                 _Table[defender].Stop();

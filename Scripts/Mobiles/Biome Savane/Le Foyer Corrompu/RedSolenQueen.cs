@@ -14,7 +14,7 @@ namespace Server.Mobiles
         public RedSolenQueen()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            Name = " matriarche fourifeu";
+            Name = "Une matriarche fourifeu";
             Body = 783;
             BaseSoundID = 959;
 
@@ -90,7 +90,7 @@ namespace Server.Mobiles
         public override void OnGotMeleeAttack(Mobile attacker)
         {
 
-            if (attacker.Weapon is BaseRanged)
+            if (attacker.Weapon is BaseRangedWeapon)
 
                 BeginAcidBreath();
 

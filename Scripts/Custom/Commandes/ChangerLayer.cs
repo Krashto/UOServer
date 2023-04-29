@@ -114,9 +114,9 @@ namespace Server.Gumps
 {
 	public class LayerChangeGump : Gump
 	{
-		private BaseClothing m_cloth;
-		private Layer m_selection;
-		private Layer[] lays;
+		private BaseClothing m_Cloth;
+		private Layer m_Selection;
+		private Layer[] m_Layers;
 
 		public LayerChangeGump(BaseClothing cloth)
 			: this(cloth, Layer.Invalid)
@@ -125,14 +125,14 @@ namespace Server.Gumps
 		public LayerChangeGump(BaseClothing cloth, Layer selection)
 			: base(50, 50)
 		{
-			m_cloth = cloth;
-			m_selection = selection;
+			m_Cloth = cloth;
+			m_Selection = selection;
 			
 			this.Closable = true;
 			this.Disposable = true;
 			this.Dragable = true;
 			this.Resizable = false;
-			lays = Server.Scripts.Commands.LayerTarget.ValidLayers;
+			m_Layers = Server.Scripts.Commands.LayerTarget.ValidLayers;
 
 			int space = 25;
 
@@ -142,14 +142,14 @@ namespace Server.Gumps
 				AddPage(i);
 				for (int j = 0; j < 9; j++)
 				{
-					if ((lays.Length >= (i - 1) * 9 + j + 1) && (lays[(i - 1) * 9 + j] != m_selection))
+					if ((m_Layers.Length >= (i - 1) * 9 + j + 1) && (m_Layers[(i - 1) * 9 + j] != m_Selection))
 						AddButton(80, 117 + space * j, 1202, 1204, (i - 1) * 9 + j + 1, GumpButtonType.Reply, 0);
 				}
 				AddBackground(76, 116, 165, 225, 9200);
 				for (int j = 0; j < 9; j++)
 				{
-					if ((lays.Length >= (i - 1) * 9 + j + 1) && (lays[(i - 1) * 9 + j] != m_selection))
-						AddLabel(103, 115 + space * j, 0, lays[(i - 1) * 9 + j].ToString());
+					if ((m_Layers.Length >= (i - 1) * 9 + j + 1) && (m_Layers[(i - 1) * 9 + j] != m_Selection))
+						AddLabel(103, 115 + space * j, 0, m_Layers[(i - 1) * 9 + j].ToString());
 				}
 
 				if (i == 1)
@@ -157,7 +157,7 @@ namespace Server.Gumps
 				else if (i == 2)
 					AddButton(84, 341, 5223, 5223, 40, GumpButtonType.Page, 1);
 
-				if (m_selection != Layer.Invalid)
+				if (m_Selection != Layer.Invalid)
 					AddButton(139, 372, 247, 248, 50, GumpButtonType.Reply, 0);
 
 				AddButton(42, 372, 242, 243, 0, GumpButtonType.Reply, 0);
@@ -169,13 +169,13 @@ namespace Server.Gumps
 		{
 			AddPage(0);
 			AddBackground(4, 4, 244, 404, 9200);
-			AddItem(18, 138, m_cloth.ItemID, m_cloth.Hue);
+			AddItem(18, 138, m_Cloth.ItemID, m_Cloth.Hue);
 			AddLabel(49, 12, 0, @"Menu Changement de Layer");
-			AddLabel(20, 39, 0, @"Nom de l'Item: " + (String.IsNullOrEmpty(m_cloth.Name) ? m_cloth.GetType().Name : m_cloth.Name));
-			AddLabel(13, 62, 0, @"Layer Actuel: " + m_cloth.Layer.ToString());
+			AddLabel(20, 39, 0, @"Nom de l'Item: " + (String.IsNullOrEmpty(m_Cloth.Name) ? m_Cloth.GetType().Name : m_Cloth.Name));
+			AddLabel(13, 62, 0, @"Layer Actuel: " + m_Cloth.Layer.ToString());
 
-			if (m_selection != Layer.Invalid)
-				AddLabel(20, 87, 0, @"Changer Pour: " + m_selection.ToString());
+			if (m_Selection != Layer.Invalid)
+				AddLabel(20, 87, 0, @"Changer Pour: " + m_Selection.ToString());
 		}
 
 		public override void OnResponse(NetState sender, RelayInfo info)
@@ -186,17 +186,17 @@ namespace Server.Gumps
 			{
 				case 0:
 					{
-						m_cloth.Movable = true;
-						
+						m_Cloth.Movable = true;
 						break;
 					}
 				case 50:
 					{
-						if (m_selection != Layer.Invalid)
+						if (m_Selection != Layer.Invalid)
 						{
-							m_cloth.Layer = m_selection;
-							m_cloth.Movable = true;						
+							m_Cloth.Layer = m_Selection;
+							m_Cloth.Movable = true;						
 						}
+						from.SendGump(new LayerChangeGump( m_Cloth, m_Layers[info.ButtonID - 1]));
 						break;
 					}
 				default:
@@ -204,7 +204,7 @@ namespace Server.Gumps
 						if (from.HasGump(typeof(LayerChangeGump)))
 							from.CloseGump(typeof(LayerChangeGump));
 
-						from.SendGump(new LayerChangeGump( m_cloth, lays[info.ButtonID - 1]));
+						from.SendGump(new LayerChangeGump( m_Cloth, m_Layers[info.ButtonID - 1]));
 						break;
 					}
 

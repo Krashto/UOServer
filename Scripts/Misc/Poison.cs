@@ -14,22 +14,22 @@ namespace Server
         [CallPriority(10)]
         public static void Configure()
         {
-            Register(new PoisonImpl("Lesser", 0, 3, 12, 7.5, 3.0, 2.25, 10, 4));
-            Register(new PoisonImpl("Regular", 1, 6, 14, 10.0, 3.0, 3.25, 10, 3));
-            Register(new PoisonImpl("Greater", 2, 9, 16, 15.0, 3.0, 4.25, 10, 2));
-            Register(new PoisonImpl("Deadly", 3, 12, 24, 30.0, 3.0, 5.25, 15, 2));
-            Register(new PoisonImpl("Lethal", 4, 16, 40, 35.0, 3.0, 5.25, 20, 2));
+            Register(new PoisonImpl("Lesser", 0, 3, 12, 7.5, 3.0, 2.25, 5, 4));
+            Register(new PoisonImpl("Regular", 1, 6, 14, 10.0, 3.0, 3.25, 5, 3));
+            Register(new PoisonImpl("Greater", 2, 9, 16, 15.0, 3.0, 4.25, 5, 2));
+            Register(new PoisonImpl("Deadly", 3, 12, 24, 30.0, 3.0, 5.25, 5, 2));
+            Register(new PoisonImpl("Lethal", 4, 16, 40, 35.0, 3.0, 5.25, 5, 2));
 
-            Register(new PoisonImpl("LesserDarkglow", 10, 3, 12, 7.5, 3.0, 2.25, 10, 4));
-            Register(new PoisonImpl("RegularDarkglow", 11, 6, 14, 10.0, 3.0, 3.25, 10, 3));
-            Register(new PoisonImpl("GreaterDarkglow", 12, 9, 16, 15.0, 3.0, 4.25, 10, 2));
-            Register(new PoisonImpl("DeadlyDarkglow", 13, 12, 24, 30.0, 3.0, 5.25, 15, 2));
+            Register(new PoisonImpl("LesserDarkglow", 10, 3, 12, 7.5, 3.0, 2.25, 5, 4));
+            Register(new PoisonImpl("RegularDarkglow", 11, 6, 14, 10.0, 3.0, 3.25, 5, 3));
+            Register(new PoisonImpl("GreaterDarkglow", 12, 9, 16, 15.0, 3.0, 4.25, 5, 2));
+            Register(new PoisonImpl("DeadlyDarkglow", 13, 12, 24, 30.0, 3.0, 5.25, 5, 2));
 
-            Register(new PoisonImpl("LesserParasitic", 14, 3, 12, 7.5, 3.0, 2.25, 10, 4));
-            Register(new PoisonImpl("RegularParasitic", 15, 6, 14, 10.0, 3.0, 3.25, 10, 3));
-            Register(new PoisonImpl("GreaterParasitic", 16, 9, 16, 15.0, 3.0, 4.25, 10, 2));
-            Register(new PoisonImpl("DeadlyParasitic", 17, 12, 24, 30.0, 3.0, 5.25, 15, 2));
-            Register(new PoisonImpl("LethalParasitic", 18, 16, 40, 35.0, 3.0, 5.25, 20, 2));
+            Register(new PoisonImpl("LesserParasitic", 14, 3, 12, 7.5, 3.0, 2.25, 5, 4));
+            Register(new PoisonImpl("RegularParasitic", 15, 6, 14, 10.0, 3.0, 3.25, 5, 3));
+            Register(new PoisonImpl("GreaterParasitic", 16, 9, 16, 15.0, 3.0, 4.25, 5, 2));
+            Register(new PoisonImpl("DeadlyParasitic", 17, 12, 24, 30.0, 3.0, 5.25, 5, 2));
+            Register(new PoisonImpl("LethalParasitic", 18, 16, 40, 35.0, 3.0, 5.25, 5, 2));
         }
 
         public static Poison IncreaseLevel(Poison oldPoison)

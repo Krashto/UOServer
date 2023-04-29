@@ -546,9 +546,9 @@ namespace Server.SkillHandlers
                     wep.AosElementDamages[(AosElementAttribute)prop] = value;
                     wep.Hue = wep.GetElementalDamageHue();
                 }
-                else if (prop is string && wep is BaseRanged && (string)prop == "WeaponVelocity")
+                else if (prop is string && wep is BaseRangedWeapon && (string)prop == "WeaponVelocity")
                 {
-                    ((BaseRanged)wep).Velocity = value;
+                    ((BaseRangedWeapon)wep).Velocity = value;
                 }
             }
             else if (item is BaseShield)
@@ -850,7 +850,7 @@ namespace Server.SkillHandlers
 
                 if (itemToImbue is BaseThrown)
                     maxWeight += 0;
-                else if (itemToImbue is BaseRanged)
+                else if (itemToImbue is BaseRangedWeapon)
                     maxWeight += 50;
                 else if (itemToImbue.Layer == Layer.TwoHanded)
                     maxWeight += 100;
@@ -1026,9 +1026,9 @@ namespace Server.SkillHandlers
                     }
                 }
 
-                if (wep is BaseRanged && !(prop is string))
+                if (wep is BaseRangedWeapon && !(prop is string))
                 {
-                    BaseRanged ranged = wep as BaseRanged;
+                    BaseRangedWeapon ranged = wep as BaseRangedWeapon;
 
                     if (ranged.Velocity > 0 && id != 60)
                         total++;
@@ -1318,9 +1318,9 @@ namespace Server.SkillHandlers
                 if (((BaseWeapon)item).SearingWeapon)
                     weight += GetIntensityForAttribute(item, "SearingWeapon", id, 1, trueWeight, imbuing);
 
-                if (item is BaseRanged)
+                if (item is BaseRangedWeapon)
                 {
-                    BaseRanged ranged = item as BaseRanged;
+                    BaseRangedWeapon ranged = item as BaseRangedWeapon;
 
                     if (ranged.Velocity > 0)
                         weight += GetIntensityForAttribute(item, "WeaponVelocity", id, ranged.Velocity, trueWeight, imbuing);
@@ -1796,8 +1796,8 @@ namespace Server.SkillHandlers
                 else if (attr is SlayerName && w.Slayer == (SlayerName)attr)
                     return 1;
 
-                else if (id == 60 && item is BaseRanged)
-                    return ((BaseRanged)item).Velocity;
+                else if (id == 60 && item is BaseRangedWeapon)
+                    return ((BaseRangedWeapon)item).Velocity;
 
                 else if (id == 62)
                     return w.SearingWeapon ? 1 : 0;
@@ -1988,7 +1988,7 @@ namespace Server.SkillHandlers
                 return 0;
             }
 
-            if (id == 61 && !(item is BaseRanged))
+            if (id == 61 && !(item is BaseRangedWeapon))
             {
                 id = 63;
             }
@@ -2030,7 +2030,7 @@ namespace Server.SkillHandlers
             {
                 if (item is BaseWeapon)
                 {
-                    if (item is BaseRanged && info.CanImbue(ItemType.Ranged))
+                    if (item is BaseRangedWeapon && info.CanImbue(ItemType.Ranged))
                     {
                         canImbue = true;
                     }

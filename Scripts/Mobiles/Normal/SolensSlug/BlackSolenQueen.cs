@@ -82,7 +82,7 @@ namespace Server.Mobiles
 
         public override void OnGotMeleeAttack(Mobile attacker)
         {
-            if (attacker.Weapon is BaseRanged)
+            if (attacker.Weapon is BaseRangedWeapon)
                 BeginAcidBreath();
 
             else if (Map != null && attacker != this && m_Laid == false && 0.20 > Utility.RandomDouble())

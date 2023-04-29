@@ -108,7 +108,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 			AddPage(0);
 
-			AddBackground(10, 10, 250, 178, 9270);
+			AddBackground(10, 10, 250, 250, 9270);
 			AddAlphaRegion(20, 20, 230, 158);
 
 			AddImage(220, 20, 10464);

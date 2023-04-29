@@ -1037,7 +1037,7 @@ namespace Server.Items
             attrs[attr] = Scale(min, max, low / scale, high / scale) * scale;
         }
 
-        private static void ApplyVelocityAttribute(BaseRanged ranged, int min, int max, int low, int high, int scale)
+        private static void ApplyVelocityAttribute(BaseRangedWeapon ranged, int min, int max, int low, int high, int scale)
         {
             ranged.Velocity = Scale(min, max, low / scale, high / scale) * scale;
         }

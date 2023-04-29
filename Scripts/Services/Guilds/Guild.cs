@@ -673,25 +673,8 @@ namespace Server.Guilds
         #region EventSinks
         public static void EventSink_GuildGumpRequest(GuildGumpRequestArgs args)
         {
-            PlayerMobile pm = args.Mobile as PlayerMobile;
-
-            if (pm == null)
-            {
-                return;
-            }
-			else
-			{
-				pm.SendMessage("Menu désactivé.");
-			}
-
-        /*    if (pm.Guild == null)
-            {
-                pm.SendGump(new CreateGuildGump(pm));
-            }
-            else
-            {
-                pm.SendGump(new GuildInfoGump(pm, pm.Guild as Guild));
-            }*/
+			if (args.Mobile is CustomPlayerMobile pm)
+				pm.SendGump(new FicheGump(pm, null));
         }
 
         public static void EventSink_CreateGuild(CreateGuildEventArgs args)

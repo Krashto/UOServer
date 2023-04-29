@@ -842,7 +842,7 @@ namespace Server.Engines.ArenaSystem
                     {
                         Item item = pm.FindItemOnLayer(Layer.TwoHanded);
 
-                        if (item is BaseRanged)
+                        if (item is BaseRangedWeapon)
                         {
                             pm.AddToBackpack(item);
                             pm.SendLocalizedMessage(1115996); // The rules prohibit the use of ranged weapons!

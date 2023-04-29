@@ -392,7 +392,7 @@ namespace Server.Engines.VendorSearching
                 {
                     string str = o as string;
 
-                    if (str == "WeaponVelocity" && (!(item is BaseRanged) || ((BaseRanged)item).Velocity < value))
+                    if (str == "WeaponVelocity" && (!(item is BaseRangedWeapon) || ((BaseRangedWeapon)item).Velocity < value))
                         return false;
 
                     if (str == "SearingWeapon" && (!(item is BaseWeapon) || !((BaseWeapon)item).SearingWeapon))
