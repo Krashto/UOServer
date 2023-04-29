@@ -30,15 +30,15 @@ namespace Server.Mobiles
             public InternalSellInfo()
             {
 
-				Add(typeof(Citrine), 1);
-				Add(typeof(Amber), 2);
-				Add(typeof(Tourmaline), 3);
-				Add(typeof(Ruby), 4);
-				Add(typeof(Amethyst), 5);
-				Add(typeof(Sapphire), 6);
-				Add(typeof(StarSapphire), 7);
-				Add(typeof(Emerald), 8);
-				Add(typeof(Diamond), 10);
+				Add(typeof(Citrine), 5);
+				Add(typeof(Amber), 8);
+				Add(typeof(Tourmaline), 12);
+				Add(typeof(Ruby), 15);
+				Add(typeof(Amethyst), 18);
+				Add(typeof(Sapphire), 21);
+				Add(typeof(StarSapphire), 25);
+				Add(typeof(Emerald), 28);
+				Add(typeof(Diamond), 31);
 
 				Add(typeof(GoldRing), 7);
                 Add(typeof(SilverRing), 5);
