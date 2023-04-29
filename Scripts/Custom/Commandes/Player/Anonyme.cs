@@ -20,7 +20,7 @@ namespace Server.Scripts.Commands
 
 			Item item = from.FindItemOnLayer(Layer.Helm);
 
-			if (item is BaseArmor && ((BaseArmor)item).Anonymous || item is BaseClothing && ((BaseClothing)item).Anonymous)
+			if (item is BaseArmor && ((BaseArmor)item).Anonymous || item is BaseFoulards || item is BaseClothing && ((BaseClothing)item).Anonymous)
 			{
 				if (string.IsNullOrEmpty(from.NameMod))
 					from.NameMod = "Anonyme";
