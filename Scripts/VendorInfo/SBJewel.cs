@@ -30,28 +30,28 @@ namespace Server.Mobiles
             public InternalSellInfo()
             {
 
-				Add(typeof(Citrine), 5);
-				Add(typeof(Amber), 10);
-				Add(typeof(Tourmaline), 15);
-				Add(typeof(Ruby), 20);
-				Add(typeof(Amethyst), 25);
-				Add(typeof(Sapphire), 30);
-				Add(typeof(StarSapphire), 35);
-				Add(typeof(Emerald), 40);
-				Add(typeof(Diamond), 50);
+				Add(typeof(Citrine), 1);
+				Add(typeof(Amber), 2);
+				Add(typeof(Tourmaline), 3);
+				Add(typeof(Ruby), 4);
+				Add(typeof(Amethyst), 5);
+				Add(typeof(Sapphire), 6);
+				Add(typeof(StarSapphire), 7);
+				Add(typeof(Emerald), 8);
+				Add(typeof(Diamond), 10);
 
-				Add(typeof(GoldRing), 13);
-                Add(typeof(SilverRing), 10);
-                Add(typeof(Necklace), 13);
-                Add(typeof(GoldNecklace), 13);
-                Add(typeof(GoldBeadNecklace), 13);
-                Add(typeof(SilverNecklace), 10);
-                Add(typeof(SilverBeadNecklace), 10);
-                Add(typeof(Beads), 13);
-                Add(typeof(GoldBracelet), 13);
-                Add(typeof(SilverBracelet), 10);
-                Add(typeof(GoldEarrings), 13);
-                Add(typeof(SilverEarrings), 10);
+				Add(typeof(GoldRing), 7);
+                Add(typeof(SilverRing), 5);
+                Add(typeof(Necklace), 5);
+                Add(typeof(GoldNecklace), 7);
+                Add(typeof(GoldBeadNecklace), 7);
+                Add(typeof(SilverNecklace), 6);
+                Add(typeof(SilverBeadNecklace), 6);
+                Add(typeof(Beads), 5);
+                Add(typeof(GoldBracelet), 7);
+                Add(typeof(SilverBracelet), 6);
+                Add(typeof(GoldEarrings), 7);
+                Add(typeof(SilverEarrings), 6);
             }
         }
     }
