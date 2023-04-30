@@ -7,8 +7,10 @@
         public ElegantLowTable()
             : base(0x2819)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Table basse élégante";
+
+		}
 
         public ElegantLowTable(Serial serial)
             : base(serial)
@@ -37,8 +39,10 @@
         public PlainLowTable()
             : base(0x281A)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Table basse simple";
+
+		}
 
         public PlainLowTable(Serial serial)
             : base(serial)
@@ -68,8 +72,10 @@
         public LargeTable()
             : base(0xB90)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Table large";
+
+		}
 
         public LargeTable(Serial serial)
             : base(serial)
@@ -102,8 +108,10 @@
         public Nightstand()
             : base(0xB35)
         {
-            Weight = 1.0;
-        }
+            Weight = 10.0;
+			Name = "Petite table";
+
+		}
 
         public Nightstand(Serial serial)
             : base(serial)
@@ -136,8 +144,10 @@
         public YewWoodTable()
             : base(0xB8F)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Table arrondie";
+
+		}
 
         public YewWoodTable(Serial serial)
             : base(serial)
@@ -300,7 +310,7 @@
 			: base(0x118F)
 		{
 			Weight = 15;
-			Name = "Comptoir";
+			Name = "Comptoir avec nappe";
 		}
 
 

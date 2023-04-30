@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 9.0;
             Layer = Layer.OneHanded;
-        }
+			Name = "Marteau à pointes";
+
+		}
 
         public HammerPick(Serial serial)
             : base(serial)

@@ -9,7 +9,9 @@ namespace Server.Items
             : base(0x2DDD)
         {
             Weight = 1.0;
-        }
+			Name = "Lutrin simple";
+
+		}
 
         public ElvenPodium(Serial serial)
             : base(serial)

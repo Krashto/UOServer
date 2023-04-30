@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x143B)
         {
             Weight = 10.0;
-        }
+			Name = "Maul";
+
+		}
 
         public Maul(Serial serial)
             : base(serial)

@@ -1073,7 +1073,7 @@ public class RangementAlchimie : FurnitureContainer
 			: base(0x0E83)
 		{
 			Weight = 1.0;
-			Name = "Un bac Vide";
+			Name = "Bac Vide";
 
 		}
 

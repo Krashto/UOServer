@@ -7,7 +7,10 @@ namespace Server.Items
         public DualShortAxes()
             : base(0x8FD)
         {
-        }
+			Name = "Double hache courte";
+			Weight = 8.0;
+
+		}
 
         public DualShortAxes(Serial serial)
             : base(serial)

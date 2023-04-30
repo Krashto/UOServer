@@ -178,7 +178,9 @@ namespace Server.Items
         public TrainingDummyEastAddon()
         {
             AddComponent(new TrainingDummy(0x1074), 0, 0, 0);
-        }
+			Name = "Mannequin d'entrainement";
+
+		}
 
         public TrainingDummyEastAddon(Serial serial)
             : base(serial)
@@ -206,7 +208,9 @@ namespace Server.Items
         [Constructable]
         public TrainingDummyEastDeed()
         {
-        }
+			Name = "Mannequin d'entrainement";
+
+		}
 
         public TrainingDummyEastDeed(Serial serial)
             : base(serial)
@@ -236,7 +240,9 @@ namespace Server.Items
         public TrainingDummySouthAddon()
         {
             AddComponent(new TrainingDummy(0x1070), 0, 0, 0);
-        }
+			Name = "Mannequin d'entrainement";
+
+		}
 
         public TrainingDummySouthAddon(Serial serial)
             : base(serial)
@@ -264,7 +270,9 @@ namespace Server.Items
         [Constructable]
         public TrainingDummySouthDeed()
         {
-        }
+			Name = "Mannequin d'entrainement";
+
+		}
 
         public TrainingDummySouthDeed(Serial serial)
             : base(serial)

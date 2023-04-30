@@ -12,7 +12,9 @@ namespace Server.Items
             Movable = true;
             Duration = TimeSpan.Zero; // Never burnt out
             Burning = false;
-            Light = LightType.Circle300;
+			Name = "Lanterne blanche suspendue";
+
+			Light = LightType.Circle300;
             Weight = 3.0;
         }
 

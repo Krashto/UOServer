@@ -12,7 +12,9 @@ namespace Server.Items
             : base(0x13B0)
         {
             Weight = 8.0;
-        }
+			Name = "Tranchar";
+
+		}
 
         public WarAxe(Serial serial)
             : base(serial)
@@ -24,7 +26,7 @@ namespace Server.Items
         public override int StrengthReq => 35;
         public override int MinDamage => 12;
         public override int MaxDamage => 16;
-        public override float Speed => 3.00f;
+        public override float Speed => 3.5f;
 
         public override int DefHitSound => 0x233;
         public override int DefMissSound => 0x239;

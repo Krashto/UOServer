@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x13FB)
         {
             Weight = 6.0;
-        }
+			Name = "Hache de bataille";
+
+		}
 
         public LargeBattleAxe(Serial serial)
             : base(serial)

@@ -29,7 +29,10 @@ namespace Server.Items
             : base(0x407C)
         {
             m_Level = SecureLevel.CoOwners;
-        }
+
+			Name = "Présentoir";
+
+		}
 
         public override bool OnDragDropInto(Mobile from, Item item, Point3D p)
         {

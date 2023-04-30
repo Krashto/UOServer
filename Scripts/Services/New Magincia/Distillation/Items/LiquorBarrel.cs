@@ -59,7 +59,9 @@ namespace Server.Items
         {
             m_Liquor = Liquor.None;
             m_UsesRemaining = 0;
-        }
+			Name = "Tonneau d'alcool";
+
+		}
 
         public override void OnDoubleClick(Mobile from)
         {

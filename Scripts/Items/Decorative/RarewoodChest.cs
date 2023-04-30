@@ -8,8 +8,10 @@ namespace Server.Items
         public RarewoodChest()
             : base(0x2DF1)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Coffre en bois";
+
+		}
 
         public RarewoodChest(Serial serial)
             : base(serial)

@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x13F6)
         {
             Weight = 1.0;
-        }
+			Name = "Couteau de boucher";
+
+		}
 
         public ButcherKnife(Serial serial)
             : base(serial)

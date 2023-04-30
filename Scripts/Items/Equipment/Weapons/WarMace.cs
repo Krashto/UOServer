@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x1407)
         {
             Weight = 17.0;
-        }
+			Name = "Masse de guerre";
+
+		}
 
         public WarMace(Serial serial)
             : base(serial)

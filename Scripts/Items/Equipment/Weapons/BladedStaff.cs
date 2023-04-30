@@ -10,8 +10,10 @@ namespace Server.Items
         public BladedStaff()
             : base(0x26BD)
         {
-            Weight = 4.0;
-        }
+            Weight = 12.0;
+			Name = "Bardiche Simple";
+
+		}
 
         public BladedStaff(Serial serial)
             : base(serial)

@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF5C)
         {
             Weight = 14.0;
-        }
+			Name = "Masse";
+
+		}
 
         public Mace(Serial serial)
             : base(serial)

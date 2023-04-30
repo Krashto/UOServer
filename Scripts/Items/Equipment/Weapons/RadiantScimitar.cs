@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x2D33)
         {
             Weight = 9.0;
-        }
+			Name = "Cimeterre infini";
+
+		}
 
         public RadiantScimitar(Serial serial)
             : base(serial)

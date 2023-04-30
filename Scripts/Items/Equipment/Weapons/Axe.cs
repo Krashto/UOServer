@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF49)
         {
             Weight = 4.0;
-        }
+			Name = "Hache simple";
+
+		}
 
         public Axe(Serial serial)
             : base(serial)

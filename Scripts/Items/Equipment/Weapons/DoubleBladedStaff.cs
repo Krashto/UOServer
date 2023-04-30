@@ -10,8 +10,10 @@ namespace Server.Items
         public DoubleBladedStaff()
             : base(0x26BF)
         {
-            Weight = 2.0;
-        }
+            Weight = 10.0;
+			Name = "Bardiche double lames";
+
+		}
 
         public DoubleBladedStaff(Serial serial)
             : base(serial)

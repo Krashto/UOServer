@@ -604,7 +604,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Lunettes1), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Lunettes2), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(Lunettes3), "Divers", "Lunettes", 50.0, 90.0, typeof(IronIngot), 1044036, 3, 1044037);
-			index = AddCraft(typeof(Bottle), "Divers", "Bouteille Vide", 12.5, 32.5, typeof(IronIngot), 1044036, 1, 1044037);
+			index = AddCraft(typeof(Bottle), "Divers", "Bouteille Vide (1)", 15.0, 35.0, typeof(IronIngot), 1044036, 1, 1044037);
+			index = AddCraft(typeof(Bottle), "Divers", "Bouteille Vide (Max)", 15.0, 35.0, typeof(IronIngot), 1044036, 1, 1044037);
 			SetUseAllRes(index, true);
 			AddCraft(typeof(EmptyWineBottle), "Divers", "Bouteille de Vin", 22.5, 42.5, typeof(IronIngot), 1044036, 2, 1044037);
 			AddCraft(typeof(EmptyAleBottle), "Divers", "Bouteille de Bière", 32.5, 52.5, typeof(IronIngot), 1044036, 2, 1044037);

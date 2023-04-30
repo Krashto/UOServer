@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF62)
         {
             Weight = 7.0;
-        }
+			Name = "Lance de guerre";
+
+		}
 
         public Spear(Serial serial)
             : base(serial)

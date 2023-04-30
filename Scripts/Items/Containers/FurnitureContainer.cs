@@ -157,8 +157,10 @@ namespace Server.Items
         public TallCabinet()
             : base(0x2815)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Grande commode";
+
+		}
 
         public TallCabinet(Serial serial)
             : base(serial)
@@ -186,8 +188,10 @@ namespace Server.Items
         public ShortCabinet()
             : base(0x2817)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Table basse étroite";
+
+		}
 
         public ShortCabinet(Serial serial)
             : base(serial)
@@ -215,8 +219,10 @@ namespace Server.Items
         public RedArmoire()
             : base(0x2857)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Petite armoire";
+
+		}
 
         public RedArmoire(Serial serial)
             : base(serial)
@@ -244,8 +250,10 @@ namespace Server.Items
         public CherryArmoire()
             : base(0x285D)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Petite armoire élégante";
+
+		}
 
         public CherryArmoire(Serial serial)
             : base(serial)
@@ -273,8 +281,10 @@ namespace Server.Items
         public MapleArmoire()
             : base(0x285B)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Petite armoire décorée";
+
+		}
 
         public MapleArmoire(Serial serial)
             : base(serial)
@@ -302,8 +312,10 @@ namespace Server.Items
         public ElegantArmoire()
             : base(0x2859)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Table de chevet";
+
+		}
 
         public ElegantArmoire(Serial serial)
             : base(serial)
@@ -447,8 +459,10 @@ namespace Server.Items
         public Drawer()
             : base(0xA2C)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Commode";
+
+		}
 
         public Drawer(Serial serial)
             : base(serial)
@@ -476,8 +490,10 @@ namespace Server.Items
         public FancyDrawer()
             : base(0xA30)
         {
-            Weight = 1.0;
-        }
+            Weight = 21.0;
+			Name = "Commode huppée";
+
+		}
 
         public FancyDrawer(Serial serial)
             : base(serial)
@@ -505,8 +521,10 @@ namespace Server.Items
         public Armoire()
             : base(0xA4F)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Armoire";
+
+		}
 
         public Armoire(Serial serial)
             : base(serial)
@@ -542,8 +560,10 @@ namespace Server.Items
         public FancyArmoire()
             : base(0xA4D)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Armoire travaillée";
+
+		}
 
         public FancyArmoire(Serial serial)
             : base(serial)

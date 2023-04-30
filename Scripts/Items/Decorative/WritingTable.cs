@@ -8,8 +8,10 @@ namespace Server.Items
         public WritingTable()
             : base(0xB4A)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Bureau d'éctriture";
+
+		}
 
         public WritingTable(Serial serial)
             : base(serial)

@@ -8,8 +8,10 @@ namespace Server.Items
             : base(0xA2A)
         {
             Weight = 10.0;
-			
-        }
+			Name = "Tabouret";
+
+
+		}
 
         public Stool(Serial serial)
             : base(serial)
@@ -68,7 +70,9 @@ namespace Server.Items
             : base(0xB5E)
         {
             Weight = 10.0;
-        }
+			Name = "Petit tabouret";
+
+		}
 
         public FootStool(Serial serial)
             : base(serial)

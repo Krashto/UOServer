@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xEC3)
         {
             Weight = 2.0;
-        }
+			Name = "Couperet";
+
+		}
 
         public Cleaver(Serial serial)
             : base(serial)

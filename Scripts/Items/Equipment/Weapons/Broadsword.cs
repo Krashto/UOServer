@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF5E)
         {
             Weight = 6.0;
-        }
+			Name = "Épée courte";
+
+		}
 
         public Broadsword(Serial serial)
             : base(serial)

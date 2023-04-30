@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x2D21)
         {
             Weight = 4.0;
-        }
+			Name = "Épineuse";
+
+		}
 
         public AssassinSpike(Serial serial)
             : base(serial)

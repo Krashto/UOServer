@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x1405)
         {
             Weight = 9.0;
-        }
+			Name = "Fourche de guerre";
+
+		}
 
         public WarFork(Serial serial)
             : base(serial)

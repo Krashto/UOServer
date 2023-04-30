@@ -10,8 +10,10 @@ namespace Server.Items
         public CrescentBlade()
             : base(0x26C1)
         {
-            Weight = 1.0;
-        }
+            Weight = 8.0;
+			Name = "Épée Croissant";
+
+		}
 
         public CrescentBlade(Serial serial)
             : base(serial)

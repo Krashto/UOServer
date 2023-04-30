@@ -26,6 +26,11 @@ namespace Server.Items
         public override int MaxDamage => 13;
         public override float Speed => 3.50f;
 
+		public override SkillName DefSkill => SkillName.Fencing;
+		public override WeaponType DefType => WeaponType.Piercing;
+
+		public override WeaponAnimation DefAnimation => WeaponAnimation.Pierce2H;
+
 		public override int InitMinHits => 31;
         public override int InitMaxHits => 100;
         public override HarvestSystem HarvestSystem => null;

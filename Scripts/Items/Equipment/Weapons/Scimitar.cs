@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x13B6)
         {
             Weight = 5.0;
-        }
+			Name = "Cimeterre";
+
+		}
 
         public Scimitar(Serial serial)
             : base(serial)

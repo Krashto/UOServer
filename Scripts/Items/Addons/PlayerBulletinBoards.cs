@@ -18,7 +18,8 @@ namespace Server.Items
             : base(0x2311)
         {
             Weight = 15.0;
-        }
+			Name = "Tableau d'affichage";
+		}
 
         public PlayerBBSouth(Serial serial)
             : base(serial)
@@ -47,6 +48,7 @@ namespace Server.Items
             : base(0x2312)
         {
             Weight = 15.0;
+			Name = "Tableau d'affichage";
         }
 
         public PlayerBBEast(Serial serial)

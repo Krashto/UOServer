@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 10.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Éclat Solaire";
+
+		}
 
         public NoDachi(Serial serial)
             : base(serial)

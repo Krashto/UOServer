@@ -8,8 +8,10 @@ namespace Server.Items
         public DecorativeBox()
             : base(0x2DF3)
         {
-            Weight = 1.0;
-        }
+            Weight = 5.0;
+			Name = "Boite décorative";
+
+		}
 
         public DecorativeBox(Serial serial)
             : base(serial)

@@ -112,14 +112,20 @@ namespace Server.Engines.Craft
 			int index = -1;
 
 			// Munitions
-			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles", 0.0, 00.0, typeof(RegularBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (1)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (Max)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Shaft), "Munitions", "Fût", 0.0, 40.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Shaft), "Munitions", "Fût (1)", 0.0, 20.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Shaft), "Munitions", "Fût (Max)", 0.0, 20.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Arrow), "Munitions", "Flèche", 0.0, 40.0, typeof(Shaft), 1044560, 1, 1044561);
+			index = AddCraft(typeof(Arrow), "Munitions", "Flèche (1)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
+			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
+			index = AddCraft(typeof(Arrow), "Munitions", "Flèche (Max)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux", 0.0, 40.0, typeof(Shaft), 1044560, 1, 1044561);
+			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux (1)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
+			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
+			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux (Max)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			SetUseAllRes(index, true);
 

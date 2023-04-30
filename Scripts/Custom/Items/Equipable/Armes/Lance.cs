@@ -88,7 +88,7 @@ namespace Server.Items
 			: base(41590)
 		{
 			Weight = 7.0;
-			Name = "Hellebarde";
+			Name = "Hallebarde simple";
 		}
 
 		public Hellebarde(Serial serial)
