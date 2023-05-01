@@ -79,8 +79,8 @@ namespace Server.Items
         [Constructable]
         public DistillerySouthAddon()
         {
-            AddComponent(new LocalizedAddonComponent(8879, 1150640), 0, 0, 0);
-            AddComponent(new LocalizedAddonComponent(8878, 1150640), -1, 0, 0);
+            AddComponent(new LocalizedAddonComponent(8878, 1150640), 0, 0, 0);
+            AddComponent(new LocalizedAddonComponent(8879, 1150640), -1, 0, 0);
         }
 
         public override void OnComponentUsed(AddonComponent component, Mobile from)
