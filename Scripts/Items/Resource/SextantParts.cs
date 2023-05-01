@@ -16,7 +16,9 @@ namespace Server.Items
             Stackable = true;
             Amount = amount;
             Weight = 2.0;
-        }
+			Name = "Pièces de sextant";
+
+		}
 
         public SextantParts(Serial serial)
             : base(serial)

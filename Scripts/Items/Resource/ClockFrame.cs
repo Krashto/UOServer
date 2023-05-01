@@ -16,7 +16,9 @@ namespace Server.Items
             Stackable = true;
             Amount = amount;
             Weight = 2.0;
-        }
+			Name = "Cadre d'horloge";
+
+		}
 
         public ClockFrame(Serial serial)
             : base(serial)

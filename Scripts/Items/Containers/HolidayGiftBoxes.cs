@@ -47,7 +47,9 @@
             : base(Utility.RandomBool() ? 0x46A5 : 0x46A6)
         {
             Hue = GiftBoxHues.RandomGiftBoxHue;
-        }
+			Name = "Boite Cadeau, Rectangle";
+
+		}
 
         public GiftBoxRectangle(Serial serial)
             : base(serial)
@@ -75,7 +77,9 @@
             : base(0x46A2)
         {
             Hue = GiftBoxHues.RandomGiftBoxHue;
-        }
+			Name = "Boite Cadeau, Carré";
+
+		}
 
         public GiftBoxCube(Serial serial)
             : base(serial)
@@ -103,7 +107,9 @@
             : base(0x46A3)
         {
             Hue = GiftBoxHues.RandomGiftBoxHue;
-        }
+			Name = "Boite Cadeau, Cylindre";
+
+		}
 
         public GiftBoxCylinder(Serial serial)
             : base(serial)
@@ -131,7 +137,9 @@
             : base(0x46A4)
         {
             Hue = GiftBoxHues.RandomGiftBoxHue;
-        }
+			Name = "Boite Cadeau, Octogone";
+
+		}
 
         public GiftBoxOctogon(Serial serial)
             : base(serial)
@@ -159,7 +167,10 @@
             : base(0x46A7)
         {
             Hue = GiftBoxHues.RandomGiftBoxHue;
-        }
+			Name = "Boite Cadeau, Ange";
+			Weight = 2.0;
+
+		}
 
         public GiftBoxAngel(Serial serial)
             : base(serial)

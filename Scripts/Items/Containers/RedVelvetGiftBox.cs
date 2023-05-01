@@ -9,10 +9,13 @@ namespace Server.Items
         [Constructable]
         public RedVelvetGiftBox()
             : this(false)
-        {
-        }
+		{
+			Name = "Boite Cadeau, Petite rouge";
+			Weight = 2.0;
 
-        [Constructable]
+		}
+
+		[Constructable]
         public RedVelvetGiftBox(bool fill)
             : base(0xE7A)
         {

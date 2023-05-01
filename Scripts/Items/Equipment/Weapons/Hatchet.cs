@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF43)
         {
             Weight = 4.0;
-        }
+			Name = "Hachette";
+
+		}
 
         public Hatchet(Serial serial)
             : base(serial)

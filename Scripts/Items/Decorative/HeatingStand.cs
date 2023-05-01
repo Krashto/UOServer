@@ -16,7 +16,9 @@ namespace Server.Items
             Burning = false;
             Light = LightType.Empty;
             Weight = 1.0;
-        }
+			Name = "Support chauffant";
+
+		}
 
         public HeatingStand(Serial serial)
             : base(serial)

@@ -11,7 +11,9 @@ namespace Server.Services.BasketWeaving.Baskets
             : base(0x9AC)
         {
             Weight = 1.0;
-        }
+			Name = "Panier rond avec poignées";
+
+		}
 
         public RoundBasketHandles(Serial serial)
             : base(serial)

@@ -12,7 +12,9 @@ namespace Server.Items
             Burning = false;
             Light = LightType.Circle225;
             Weight = 20.0;
-        }
+			Name = "Grand Chandelier";
+
+		}
 
         public CandelabraStand(Serial serial)
             : base(serial)

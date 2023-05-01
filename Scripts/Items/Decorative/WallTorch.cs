@@ -14,7 +14,9 @@ namespace Server.Items
             Burning = false;
             Light = LightType.WestBig;
             Weight = 3.0;
-        }
+			Name = "Torche murale";
+
+		}
 
         public WallTorch(Serial serial)
             : base(serial)

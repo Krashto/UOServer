@@ -14,7 +14,9 @@ namespace Server.Items
             Burning = false;
             Light = LightType.Circle150;
             Weight = 3.0;
-        }
+			Name = "Lanterne en papier";
+
+		}
 
         public PaperLantern(Serial serial)
             : base(serial)

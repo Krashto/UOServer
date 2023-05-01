@@ -139,7 +139,10 @@ namespace Server.Items
         public WindChimes()
             : base(0x2832)
         {
-        }
+			Name = "Carillons éoliens";
+			Weight = 1;
+
+		}
 
         public WindChimes(Serial serial)
             : base(serial)
@@ -166,7 +169,10 @@ namespace Server.Items
         public FancyWindChimes()
             : base(0x2833)
         {
-        }
+			Name = "Carillons";
+			Weight = 1.0;
+
+		}
 
         public FancyWindChimes(Serial serial)
             : base(serial)

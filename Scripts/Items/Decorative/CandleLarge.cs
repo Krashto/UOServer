@@ -16,7 +16,9 @@ namespace Server.Items
             Burning = false;
             Light = LightType.Circle150;
             Weight = 2.0;
-        }
+			Name = "Chandelier simple";
+
+		}
 
         public CandleLarge(Serial serial)
             : base(serial)

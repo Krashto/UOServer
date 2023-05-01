@@ -7,6 +7,8 @@ namespace Server.Items
 		[Constructable]
         public Fouet4() : base(4)
 		{
+			Name = "Fouet (4 m)";
+			Weight = 3;
 		}
 
         public Fouet4(Serial serial) : base(serial)

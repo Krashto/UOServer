@@ -17,7 +17,9 @@ namespace Server.Items
             : base(uses, 0x1034)
         {
             Weight = 2.0;
-        }
+			Name = "Scie";
+
+		}
 
         public Saw(Serial serial)
             : base(serial)

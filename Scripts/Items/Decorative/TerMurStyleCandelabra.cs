@@ -15,7 +15,9 @@ namespace Server.Items
             Burning = false;
             Light = LightType.Circle225;
             Weight = 10.0;
-        }
+			Name = "Chandelier élégant";
+
+		}
 
         public TerMurStyleCandelabra(Serial serial)
             : base(serial)

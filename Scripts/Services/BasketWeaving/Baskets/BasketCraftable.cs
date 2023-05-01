@@ -9,7 +9,10 @@ namespace Server.Services.BasketWeaving.Baskets
         [Constructable]
         public BasketCraftable() : base(9431)
         {
-        }
+			Weight = 2.0;
+			Name = "Panier tressé";
+
+		}
 
         public BasketCraftable(Serial serial) : base(serial)
         {
