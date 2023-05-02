@@ -202,7 +202,7 @@ namespace Server.Engines.Craft
 			AddSpell("Aéromancie", typeof(TornadoScroll), "Tornado", 4);
 			AddSpell("Aéromancie", typeof(AuraEvasiveScroll), "Aura évasive", 5);
 			AddSpell("Aéromancie", typeof(ExTeleportationScroll), "Ex-téleportation", 6);
-			AddSpell("Aéromancie", typeof(ToucherSuffocantScroll), "Touché suffosant", 7);
+			AddSpell("Aéromancie", typeof(ToucherSuffocantScroll), "Touché suffocant", 7);
 			AddSpell("Aéromancie", typeof(AuraDeBrouillardScroll), "Aura de brouillard", 8);
 			AddSpell("Aéromancie", typeof(VentFavorableScroll), "Vent favorable", 9);
 			AddSpell("Aéromancie", typeof(VortexScroll), "Vortex", 10);
@@ -214,7 +214,7 @@ namespace Server.Engines.Craft
 			AddSpell("Chasseur", typeof(RugissementScroll), "Rugissement", 5);
 			AddSpell("Chasseur", typeof(FrappeEnsanglanteeScroll), "Frappe ensanglantée", 6);
 			AddSpell("Chasseur", typeof(SautAggressifScroll), "Saut aggressif", 7);
-			AddSpell("Chasseur", typeof(CoupDansLeGenouScroll), "Coup dans le geou", 8);
+			AddSpell("Chasseur", typeof(CoupDansLeGenouScroll), "Coup dans le genou", 8);
 			AddSpell("Chasseur", typeof(ChasseurDePrimeScroll), "Chasseur de prime", 9);
 			AddSpell("Chasseur", typeof(ContratResoluScroll), "Contrat résolu", 10);
 
@@ -227,7 +227,7 @@ namespace Server.Engines.Craft
 			AddSpell("Défenseur", typeof(MiracleScroll), "Miracle", 7);
 			AddSpell("Défenseur", typeof(IndomptableScroll), "Indomptable", 8);
 			AddSpell("Défenseur", typeof(InsensibleScroll), "Insensible", 9);
-			AddSpell("Défenseur", typeof(PiedsAuSolScroll), "Pieds su sol", 10);
+			AddSpell("Défenseur", typeof(PiedsAuSolScroll), "Pieds au sol", 10);
 
 			AddSpell("Géomancie", typeof(FortifieScroll), "Fortifié", 1);
 			AddSpell("Géomancie", typeof(RocheScroll), "Roche", 2);
