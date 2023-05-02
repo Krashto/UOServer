@@ -9,6 +9,7 @@ namespace Server.Items
 		{
 			Weight = 4.0;
 			Name = "Eterfer";
+			Layer = Layer.TwoHanded;
 		}
 
 		public Eterfer(Serial serial)

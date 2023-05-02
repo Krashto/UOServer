@@ -9,7 +9,8 @@ namespace Server.Items
         public RepeatingCrossbow()
             : base(0x26C3)
         {
-            Weight = 6.0;
+            Weight = 7.0;
+			Name = "Arbalète Rapide";
         }
 
         public RepeatingCrossbow(Serial serial)
@@ -23,9 +24,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.DoubleStrike;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MovingShot;
         public override int StrengthReq => 30;
-        public override int MinDamage => 11;
-        public override int MaxDamage => 15;
-        public override float Speed => 2.75f;
+        public override int MinDamage => 20;
+        public override int MaxDamage => 24;
+        public override float Speed => 5.00f;
 
         public override int DefMaxRange => 8;
         public override int InitMinHits => 31;

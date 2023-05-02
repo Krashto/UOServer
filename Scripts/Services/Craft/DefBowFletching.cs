@@ -111,7 +111,7 @@ namespace Server.Engines.Craft
 		{
 			int index = -1;
 
-			// Munitions
+			#region Munitions
 			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (1)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (Max)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
@@ -128,8 +128,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux (Max)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			SetUseAllRes(index, true);
+			#endregion
 
-			// Arcs
+			#region Arcs
 			index = AddCraft(typeof(TrainingBow), "Arcs", "Arc d'entrainement", 0.0, 50.0, typeof(PlainoisBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Blancorde), "Arcs", "Blancorde", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
 			index = AddCraft(typeof(Glaciale), "Arcs", "Glaciale", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
@@ -155,7 +156,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Foliere), "Arcs", "Foliere", 70.0, 100.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
 			index = AddCraft(typeof(Composite), "Arcs", "Composite", 90.0, 110.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
 			index = AddCraft(typeof(Pieuse), "Arcs", "Pieuse", 90.0, 110.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-
+			#endregion
 			// Arbalètes	
 			index = AddCraft(typeof(Crossbow), "Arbalètes", "Arbalète simple", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Arbalete), "Arbalètes", "Arbalète", 20.0, 50.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
@@ -169,10 +170,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Arbavive), "Arbalètes", "Arbavive", 80.0, 110.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Lumitrait), "Arbalètes", "Lumitrait", 85.0, 115.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
 
-			SetSubRes(typeof(PlainoisBoard), "Plainois");
+			SetSubRes(typeof(RegularBoard), "Commun");
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
+			AddSubRes(typeof(RegularBoard), "Commun", 0.0, "Vous ne savez pas travailler le bois Commun");
 			AddSubRes(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois Plainois");
 			AddSubRes(typeof(ForestierBoard), "Forestier", 10.0, "Vous ne savez pas travailler le bois Forestier");
 			AddSubRes(typeof(DesertiqueBoard), "Desertique", 20.0, "Vous ne savez pas travailler le bois Desertique");

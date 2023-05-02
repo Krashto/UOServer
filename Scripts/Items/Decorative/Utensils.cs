@@ -387,7 +387,9 @@ namespace Server.Items
             : base(0x9D7)
         {
             Weight = 1.0;
-        }
+			Name = "Assiette décorative";
+
+		}
 
         public Plate(Serial serial)
             : base(serial)

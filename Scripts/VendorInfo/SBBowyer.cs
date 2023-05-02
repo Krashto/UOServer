@@ -15,8 +15,12 @@ namespace Server.Mobiles
         {
             public InternalBuyInfo()
             {
-                Add(new GenericBuyInfo(typeof(FletcherTools), 2, 20, 0x1022, 0));
-            }
+				Add(new GenericBuyInfo(typeof(TrainingBow), 50, 20, 0x13B2, 0));
+				Add(new GenericBuyInfo(typeof(FletcherTools), 2, 20, 0x1022, 0));
+
+				Add(new GenericBuyInfo(typeof(Arrow), 3, 999, 0xF3F, 0, true));
+				Add(new GenericBuyInfo(typeof(Bolt), 3, 999, 0x1BFB, 0, true));
+			}
         }
 
         public class InternalSellInfo : GenericSellInfo

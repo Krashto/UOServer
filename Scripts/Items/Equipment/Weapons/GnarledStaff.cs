@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x13F8)
         {
             Weight = 3.0;
-        }
+			Name = "Bâton noueux";
+
+		}
 
         public GnarledStaff(Serial serial)
             : base(serial)

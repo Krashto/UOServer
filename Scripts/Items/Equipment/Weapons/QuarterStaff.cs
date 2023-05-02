@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0xE89)
         {
             Weight = 4.0;
-        }
+			Name = "Bâton";
+
+		}
 
         public QuarterStaff(Serial serial)
             : base(serial)

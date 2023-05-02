@@ -10,7 +10,9 @@ namespace Server.Items
             : base(0x2D2B)
         {
             Weight = 6.0;
-        }
+			Name = "Percecoeur";
+
+		}
 
         public MagicalShortbow(Serial serial)
             : base(serial)
@@ -23,9 +25,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.LightningArrow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.PsychicAttack;
         public override int StrengthReq => 45;
-        public override int MinDamage => 12;
-        public override int MaxDamage => 16;
-        public override float Speed => 3.00f;
+        public override int MinDamage => 16;
+        public override int MaxDamage => 20;
+        public override float Speed => 4.00f;
 
         public override int DefMaxRange => 10;
         public override int InitMinHits => 41;

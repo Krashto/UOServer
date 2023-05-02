@@ -9,9 +9,11 @@ namespace Server.Items
         public HeavyCrossbow()
             : base(0x13FD)
         {
-            Weight = 9.0;
+            Weight = 7.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Arbalète lourde";
+
+		}
 
         public HeavyCrossbow(Serial serial)
             : base(serial)

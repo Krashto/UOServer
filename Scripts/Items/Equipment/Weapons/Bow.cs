@@ -11,7 +11,9 @@ namespace Server.Items
         {
             Weight = 6.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Arc simple";
+
+		}
 
         public Bow(Serial serial)
             : base(serial)
@@ -24,9 +26,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ParalyzingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.MortalStrike;
         public override int StrengthReq => 30;
-        public override int MinDamage => 17;
-        public override int MaxDamage => 21;
-        public override float Speed => 4.25f;
+        public override int MinDamage => 16;
+        public override int MaxDamage => 20;
+        public override float Speed => 4.00f;
 
         public override int DefMaxRange => 10;
         public override int InitMinHits => 31;

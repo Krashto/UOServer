@@ -487,9 +487,10 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Ustensiles
+			index = AddCraft(typeof(FoodPlate), "Ustensiles", "Assiette", 25.0, 45.0, typeof(IronIngot), 1044036, 2, 1044037);
+
 			index = AddCraft(typeof(SpoonLeft), "Ustensiles", "Cuillière (G)", 0.0, 50.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(SpoonRight), "Ustensiles", "Cuillière (D)", 0.0, 50.0, typeof(IronIngot), 1044036, 1, 1044037);
-			index = AddCraft(typeof(Plate), "Ustensiles", "Assiette", 0.0, 50.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(ForkLeft), "Ustensiles", "Fourchette (G)", 0.0, 50.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(ForkRight), "Ustensiles", "Fourchette (D)", 0.0, 50.0, typeof(IronIngot), 1044036, 1, 1044037);
 			index = AddCraft(typeof(KnifeLeft), "Ustensiles", "Couteau (G)", 0.0, 50.0, typeof(IronIngot), 1044036, 1, 1044037);
@@ -498,7 +499,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(PewterMug), "Ustensiles", "Chope en étain", 10.0, 60.0, typeof(IronIngot), 1044036, 2, 1044037);
 			index = AddCraft(typeof(Tray), "Ustensiles", "Plateau", 25.0, 75.0, typeof(PlainoisBoard), 1044041, 2, 1044351);
 			index = AddCraft(typeof(Silverware), "Ustensiles", "Argenterie", 25.0, 75.0, typeof(IronIngot), 1044036, 4, 1044037);
-			index = AddCraft(typeof(FoodPlate), "Outils", "Assiette", 25.0, 45.0, typeof(IronIngot), 1044036, 2, 1044037);
 
 
 			#endregion
@@ -594,10 +594,11 @@ namespace Server.Engines.Craft
 
 
 			// Set the overridable material
-			SetSubRes2(typeof(PlainoisBoard), "Plainois");
+			SetSubRes2(typeof(RegularBoard), "Commun");
 
 			// Add every material you want the player to be able to choose from
 			// This will override the overridable material
+			AddSubRes2(typeof(RegularBoard), "Commun", 0.0, "Vous ne savez pas travailler le bois Commun");
 			AddSubRes2(typeof(PlainoisBoard), "Plainois", 0.0, "Vous ne savez pas travailler le bois plainois");
 			AddSubRes2(typeof(CollinoisBoard), "Collinois", 20.0, "Vous ne savez pas travailler le bois collinois");
 			AddSubRes2(typeof(ForestierBoard), "Forestier", 20.0, "Vous ne savez pas travailler le bois forestier");

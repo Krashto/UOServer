@@ -19,7 +19,9 @@ namespace Server.Items
             Stackable = true;
             Amount = amount;
             Weight = 1.0;
-        }
+			Name = "Bombe de Fumée";
+
+		}
 
         public SmokeBomb(Serial serial)
             : base(serial)

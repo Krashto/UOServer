@@ -56,12 +56,12 @@ namespace Server.Engines.Harvest
 			oreAndStone.BankHeight = 1;
 
 			// Every bank holds from 5 to 10 ore
-			oreAndStone.MinTotal = 5;
-			oreAndStone.MaxTotal = 10;
+			oreAndStone.MinTotal = 3;
+			oreAndStone.MaxTotal = 7;
 
 			// A resource bank will respawn its content every 10 to 20 minutes
-			oreAndStone.MinRespawn = TimeSpan.FromMinutes(10.0);
-			oreAndStone.MaxRespawn = TimeSpan.FromMinutes(20.0);
+			oreAndStone.MinRespawn = TimeSpan.FromMinutes(30.0);
+			oreAndStone.MaxRespawn = TimeSpan.FromMinutes(60.0);
 
 			// Skill checking is done on the Mining skill
 			oreAndStone.Skill = SkillName.Mining;
@@ -79,7 +79,7 @@ namespace Server.Engines.Harvest
 			// The digging effect
 			oreAndStone.EffectActions = new int[] { 3 };
 			oreAndStone.EffectSounds = new int[] { 0x125, 0x126 };
-			oreAndStone.EffectCounts = new int[] { 1 };
+			oreAndStone.EffectCounts = new int[] { 5 };
 			oreAndStone.EffectDelay = TimeSpan.FromSeconds(1.6);
 			oreAndStone.EffectSoundDelay = TimeSpan.FromSeconds(0.9);
 

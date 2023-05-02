@@ -55,12 +55,12 @@ namespace Server.Engines.Harvest
 				BankHeight = 2,
 
 				// Every bank holds from 10 to 20 logs
-				MinTotal = 10,
-				MaxTotal = 20,
+				MinTotal = 5,
+				MaxTotal = 10,
 
 				// A resource bank will respawn its content every 20 to 30 minutes
-				MinRespawn = TimeSpan.FromMinutes(10.0),
-				MaxRespawn = TimeSpan.FromMinutes(20.0),
+				MinRespawn = TimeSpan.FromMinutes(30.0),
+				MaxRespawn = TimeSpan.FromMinutes(60.0),
 
 				// Skill checking is done on the CustomLumberjacking skill
 				Skill = SkillName.Lumberjacking,
@@ -72,13 +72,13 @@ namespace Server.Engines.Harvest
 				MaxRange = 2,
 
 				// Five logs per harvest action
-				ConsumedPerHarvest = 5,
-				ConsumedPerFeluccaHarvest = 10,
+				ConsumedPerHarvest = 2,
+				ConsumedPerFeluccaHarvest = 2,
 
 				// The chopping effect
 				EffectActions = new int[] { 7 },
 				EffectSounds = new int[] { 0x13E },
-				EffectCounts = (new int[] { 1 }),
+				EffectCounts = (new int[] { 5 }),
 				EffectDelay = TimeSpan.FromSeconds(1.6),
 				EffectSoundDelay = TimeSpan.FromSeconds(0.9),
 
@@ -112,12 +112,12 @@ namespace Server.Engines.Harvest
 			lumber.BonusResources = new BonusHarvestResource[]
 			{
 				new BonusHarvestResource(0, 82.0, null, null), //Nothing
-                new BonusHarvestResource(100, 10.0, 1072548, typeof(BarkFragment)),
-				new BonusHarvestResource(100, 03.0, 1072550, typeof(LuminescentFungi)),
-				new BonusHarvestResource(100, 02.0, 1072547, typeof(SwitchItem)),
-				new BonusHarvestResource(100, 01.0, 1072549, typeof(ParasiticPlant)),
-				new BonusHarvestResource(100, 01.0, 1072551, typeof(BrilliantAmber)),
-				new BonusHarvestResource(100, 01.0, 1113756, typeof(CrystalShards), Map.TerMur),
+    //            new BonusHarvestResource(100, 10.0, 1072548, typeof(BarkFragment)),
+				//new BonusHarvestResource(100, 03.0, 1072550, typeof(LuminescentFungi)),
+				//new BonusHarvestResource(100, 02.0, 1072547, typeof(SwitchItem)),
+				//new BonusHarvestResource(100, 01.0, 1072549, typeof(ParasiticPlant)),
+				//new BonusHarvestResource(100, 01.0, 1072551, typeof(BrilliantAmber)),
+				//new BonusHarvestResource(100, 01.0, 1113756, typeof(CrystalShards), Map.TerMur),
 			};
 
 			lumber.Resources = res;

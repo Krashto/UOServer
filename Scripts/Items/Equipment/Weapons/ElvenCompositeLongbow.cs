@@ -9,8 +9,10 @@ namespace Server.Items
         public ElvenCompositeLongbow()
             : base(0x2D1E)
         {
-            Weight = 8.0;
-        }
+            Weight = 6.0;
+			Name = "Arc long composite";
+
+		}
 
         public ElvenCompositeLongbow(Serial serial)
             : base(serial)
@@ -23,9 +25,9 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ForceArrow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.SerpentArrow;
         public override int StrengthReq => 45;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 19;
-        public override float Speed => 3.75f;
+        public override int MinDamage => 16;
+        public override int MaxDamage => 20;
+        public override float Speed => 4.00f;
 
         public override int DefMaxRange => 10;
         public override int InitMinHits => 41;
