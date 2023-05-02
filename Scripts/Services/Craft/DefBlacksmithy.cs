@@ -86,7 +86,7 @@ namespace Server.Engines.Craft
 		}
 
 		private DefBlacksmithy()
-			: base(1, 1, 1.25) // base( 1, 2, 1.7 )
+			: base(3, 4, 1.50) // base( 1, 2, 1.7 )
 		{
 			/*
             base( MinCraftEffect, MaxCraftEffect, Delay )

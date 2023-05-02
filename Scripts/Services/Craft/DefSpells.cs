@@ -31,8 +31,8 @@ namespace Server.Engines.Craft
 		}
 
 		private DefSpells()
-            : base(1, 1, 1.25)// base( 1, 1, 3.0 )
-        {
+            : base(3, 4, 1.50)// base( 1, 1, 3.0 )
+		{
         }
 
         public override int CanCraft(Mobile from, ITool tool, Type typeItem)

@@ -8,8 +8,8 @@ namespace Server.Engines.Craft
     {
         private static CraftSystem m_CraftSystem;
         private DefGlassblowing()
-            : base(1, 1, 1.25)// base( 1, 2, 1.7 )
-        {
+            : base(3, 4, 1.50)// base( 1, 2, 1.7 )
+		{
         }
 
         public static CraftSystem CraftSystem

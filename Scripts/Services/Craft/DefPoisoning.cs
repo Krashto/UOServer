@@ -31,8 +31,8 @@ namespace Server.Engines.Craft
         }
 
         private DefPoisoning()
-            : base(1, 1, 1.25)// base( 1, 1, 3.1 )
-        {
+            : base(3, 4, 1.50)// base( 1, 1, 3.1 )
+		{
         }
 
         public override int CanCraft(Mobile from, ITool tool, Type itemType)

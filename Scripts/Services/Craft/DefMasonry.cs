@@ -37,7 +37,7 @@ namespace Server.Engines.Craft
 		}
 
 		private DefMasonry()
-			: base(1, 1, 1.25)// base( 1, 2, 1.7 ) 
+			: base(3, 4, 1.50)// base( 1, 2, 1.7 ) 
 		{
 		}
 
