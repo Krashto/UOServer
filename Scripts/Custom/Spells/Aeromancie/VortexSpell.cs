@@ -92,7 +92,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 					if (map != null)
 					{
-						var range = (int)SpellHelper.AdjustValue(m_Caster, 1 + m_Caster.Skills[m_Owner.CastSkill].Base / 25, Aptitude.Aeromancie);
+						var range = (int)SpellHelper.AdjustValue(m_Caster, 1 + m_Caster.Skills[m_Owner.CastSkill].Base / 30, Aptitude.Aeromancie);
 
 						IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(m_Loc), range);
 

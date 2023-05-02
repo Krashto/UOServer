@@ -181,7 +181,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 						if (BaseCreature.Summon(bc, true, m_From, m_From.Location, -1, duration))
 						{
-							CustomUtility.ApplySimpleSpellEffect(m_From, "", duration, AptitudeColor.Necromancie, SpellEffectType.Summon);
+							CustomUtility.ApplySimpleSpellEffect(m_From, "Familier morbide", duration, AptitudeColor.Necromancie, SpellEffectType.Summon);
 							FamilierMorbideSpell.Table[m_From] = bc;
 						}
 					}

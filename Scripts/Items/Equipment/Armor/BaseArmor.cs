@@ -1315,6 +1315,8 @@ namespace Server.Items
 
                 m_AosSkillBonuses.AddTo(from);
 
+				m_AosAttributes.AddStatBonuses(from);
+
                 if (IsSetItem)
                 {
                     m_SetEquipped = SetHelper.FullSetEquipped(from, SetID, Pieces);
@@ -1327,8 +1329,9 @@ namespace Server.Items
                 }
 
                 from.Delta(MobileDelta.Armor); // Tell them armor rating has changed
-            }
-        }
+				from.Delta(MobileDelta.Hits | MobileDelta.Stam | MobileDelta.Mana);
+			}
+		}
 
         public virtual double ScaleArmorByDurability(double armor)
         {
@@ -2150,7 +2153,13 @@ namespace Server.Items
 
                 if (intBonus != 0)
                     from.AddStatMod(new StatMod(StatType.Int, modName + "Int", intBonus, TimeSpan.Zero));
-            }
+			}
+
+			m_AosSkillBonuses.AddTo(from);
+
+			m_AosAttributes.AddStatBonuses(from);
+
+			from.Delta(MobileDelta.Hits | MobileDelta.Stam | MobileDelta.Mana);
 
             return base.OnEquip(from);
         }

@@ -31,7 +31,11 @@ namespace Server.Scripts.Commands
 			protected override void OnTarget(Mobile from, object target)
 			{
 				if (target is CustomPlayerMobile pm)
+				{
+					CommandLogging.WriteLine(from, $"{from} {from.Account} {from.Name} a donné une fiole ancestrale à {pm} {pm.Account} {pm.Name}");
 					pm.AddToBackpack(new FioleAncestrale(pm));
+
+				}
 				else
 					from.SendMessage("Vous devez cibler un joueur.");
 			}

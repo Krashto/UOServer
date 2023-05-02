@@ -138,13 +138,11 @@ namespace Server.Custom.Weapons
 				return "Staff";
 			else if (weapon is BaseBashing)
 				return "Bashing";
-			else if (weapon is Bow)
+			else if (weapon is BaseBow)
 				return "Bow";
-			else if (weapon is ElvenCompositeLongbow)
-				return "Longbow";
-			else if (weapon is Crossbow)
+			else if (weapon is BaseCrossbow)
 				return "Crossbow";
-			else if (weapon is HeavyCrossbow)
+			else if (weapon is BaseHeavyCrossbow)
 				return "Heavy Crossbow";
 			else if (weapon is Fists)
 				return "Fist";

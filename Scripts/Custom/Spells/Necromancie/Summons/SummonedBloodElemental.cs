@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.Necromancie.Summons
 	public class SummonedBloodElemental : BaseCreature
 	{
 		[Constructable]
-		public SummonedBloodElemental() : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+		public SummonedBloodElemental() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4)
 		{
 			Name = "Elemental de sang";
 			Body = 159;
@@ -52,13 +52,14 @@ namespace Server.Custom.Spells.Necromancie.Summons
 
 		public override void OnThink()
 		{
+			if (NextThinkingTime >= DateTime.Now)
+				return;
+
+			NextThinkingTime = DateTime.Now + TimeSpan.FromSeconds(5);
+
 			var mobiles = GetMobilesInRange(5);
 
-			if (NextThinkingTime < DateTime.Now)
-			{
-				NextThinkingTime = DateTime.Now + TimeSpan.FromSeconds(5);
-				Hits += mobiles.Count() * 3;
-			}
+			Hits += mobiles.Count() * 3;
 
 			foreach (var m in mobiles)
 			{
@@ -69,6 +70,9 @@ namespace Server.Custom.Spells.Necromancie.Summons
 					continue;
 
 				if (m is BaseCreature creature && creature.Controlled && CustomPlayerMobile.IsInEquipe(ControlMaster, creature.ControlMaster))
+					continue;
+
+				if (m.AccessLevel > AccessLevel.Player || m.Blessed || m is BaseVendor)
 					continue;
 
 				m.Combatant = this;

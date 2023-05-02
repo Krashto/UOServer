@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				SpellHelper.Turn(Caster, m);
 
-				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Aeromancie);
+				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 30, Aptitude.Aeromancie);
 
 				IPooledEnumerable eable = Caster.Map.GetMobilesInRange(new Point3D(Caster.Location), range);
 
@@ -72,7 +72,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			else if (IsActive(m))
 				Deactivate(m);
 
-			var duration = spell.GetDurationForSpell(30, 2);
+			var duration = spell.GetDurationForSpell(30, 3);
 
 			Timer t = new InternalTimer(m, DateTime.Now + duration);
 			m_Timers[m] = t;

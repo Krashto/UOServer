@@ -62,7 +62,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				var duration = GetDurationForSpell(2);
 
 				Timer t = new InternalTimer(this, Caster, m, damage * 0.5, DateTime.Now + duration);
-				m_Timers[Caster] = t;
+				m_Timers[m] = t;
 				t.Start();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Folie ardente", duration, AptitudeColor.Pyromancie, SpellEffectType.Damage);
@@ -71,9 +71,9 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 			FinishSequence();
 		}
 
-		public static bool IsActive(Mobile attacker)
+		public static bool IsActive(Mobile m)
 		{
-			return m_Timers.ContainsKey(attacker);
+			return m_Timers.ContainsKey(m);
 		}
 
 		public static void Deactivate(Mobile m)

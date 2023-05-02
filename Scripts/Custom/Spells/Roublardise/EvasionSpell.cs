@@ -19,20 +19,10 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				Reagent.EssenceRoublardise
 			);
 
-		public override int RequiredAptitudeValue { get { return 5; } }
+		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Roublardise }; } }
 		public override SkillName CastSkill { get { return SkillName.Hiding; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
-
-		public override TimeSpan CastDelayBase => TimeSpan.Zero;
-		public override double CastDelayFastScalar => 0;
-		public override double CastDelaySecondsPerTick => 1;
-		public override TimeSpan CastDelayMinimum => TimeSpan.Zero;
-
-		public override int CastRecoveryBase => 0;
-		public override int CastRecoveryFastScalar => 0;
-		public override int CastRecoveryPerSecond => 1;
-		public override int CastRecoveryMinimum => 0;
 
 		public EvasionSpell(Mobile caster, Item scroll) : base(caster, scroll, m_Info)
 		{

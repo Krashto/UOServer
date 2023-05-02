@@ -591,28 +591,29 @@ namespace Server.Engines.BulkOrders
 
         public override int ComputeGold(int quantity, bool exceptional, BulkMaterialType material, int itemCount, Type type)
         {
-            int gold = 0;
+			return quantity * itemCount * 10 * (exceptional ? 2 : 1);
+            //int gold = 0;
 
-            if (itemCount == 1 && BulkOrderSystem.NewSystemEnabled && BulkOrderSystem.ComputeGold(type, quantity, out gold))
-            {
-                return gold;
-            }
+            //if (itemCount == 1 && BulkOrderSystem.NewSystemEnabled && BulkOrderSystem.ComputeGold(type, quantity, out gold))
+            //{
+            //    return gold;
+            //}
 
-            int[][][] goldTable = m_GoldTable;
+            //int[][][] goldTable = m_GoldTable;
 
-            int typeIndex = ComputeType(type, itemCount);
-            int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
-            int mtrlIndex = (material >= BulkMaterialType.DullCopper && material <= BulkMaterialType.Valorite) ? 1 + (material - BulkMaterialType.DullCopper) : 0;
+            //int typeIndex = ComputeType(type, itemCount);
+            //int quanIndex = (quantity == 20 ? 2 : quantity == 15 ? 1 : 0);
+            //int mtrlIndex = (material >= BulkMaterialType.DullCopper && material <= BulkMaterialType.Valorite) ? 1 + (material - BulkMaterialType.DullCopper) : 0;
 
-            if (exceptional)
-                typeIndex++;
+            //if (exceptional)
+            //    typeIndex++;
 
-            gold = goldTable[typeIndex][quanIndex][mtrlIndex];
+            //gold = goldTable[typeIndex][quanIndex][mtrlIndex];
 
-            int min = (gold * 9) / 10;
-            int max = (gold * 10) / 9;
+            //int min = (gold * 9) / 10;
+            //int max = (gold * 10) / 9;
 
-            return Utility.RandomMinMax(min, max);
+            //return Utility.RandomMinMax(min, max);
         }
     }
     #endregion

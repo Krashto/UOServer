@@ -1,8 +1,6 @@
 ﻿using System;
-using Server;
 using Server.Commands;
 using Server.Gumps;
-using Server.Mobiles;
 using Server.Items;
 using Server.Targeting;
 using Server.Network;
@@ -118,25 +116,24 @@ namespace Server.Gumps
 		private Layer m_Selection;
 		private Layer[] m_Layers;
 
-		public LayerChangeGump(BaseClothing cloth)
-			: this(cloth, Layer.Invalid)
+		public LayerChangeGump(BaseClothing cloth) : this(cloth, Layer.Invalid)
 		{
 		}
-		public LayerChangeGump(BaseClothing cloth, Layer selection)
-			: base(50, 50)
+		public LayerChangeGump(BaseClothing cloth, Layer selection) : base(50, 50)
 		{
 			m_Cloth = cloth;
 			m_Selection = selection;
 			
-			this.Closable = true;
-			this.Disposable = true;
-			this.Dragable = true;
-			this.Resizable = false;
-			m_Layers = Server.Scripts.Commands.LayerTarget.ValidLayers;
+			Closable = true;
+			Disposable = true;
+			Dragable = true;
+			Resizable = false;
+			m_Layers = Scripts.Commands.LayerTarget.ValidLayers;
 
 			int space = 25;
 
 			AddBackground();
+
 			for (int i = 1; i < 3; i++)
 			{
 				AddPage(i);
@@ -161,7 +158,6 @@ namespace Server.Gumps
 					AddButton(139, 372, 247, 248, 50, GumpButtonType.Reply, 0);
 
 				AddButton(42, 372, 242, 243, 0, GumpButtonType.Reply, 0);
-
 			}
 
 		}
@@ -196,7 +192,7 @@ namespace Server.Gumps
 							m_Cloth.Layer = m_Selection;
 							m_Cloth.Movable = true;						
 						}
-						from.SendGump(new LayerChangeGump( m_Cloth, m_Layers[info.ButtonID - 1]));
+						from.SendGump(new LayerChangeGump( m_Cloth, m_Selection ));
 						break;
 					}
 				default:
@@ -207,7 +203,6 @@ namespace Server.Gumps
 						from.SendGump(new LayerChangeGump( m_Cloth, m_Layers[info.ButtonID - 1]));
 						break;
 					}
-
 			}
 		}
 	}

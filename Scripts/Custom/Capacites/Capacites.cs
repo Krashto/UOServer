@@ -104,7 +104,7 @@ namespace Server
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Expertise
 		{
-			get { return GetRealValue(Capacite.Equitation); }
+			get { return GetRealValue(Capacite.Expertise); }
 		}
 
 		[CommandProperty(AccessLevel.GameMaster)]

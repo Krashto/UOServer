@@ -77,8 +77,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				m.UpdateResistances();
 
-				CustomUtility.ApplySimpleSpellEffect(m, "Remede", AptitudeColor.Hydromancie, SpellSequenceType.End);
-				CustomUtility.ApplySimpleSpellEffect(m, "", AptitudeColor.Hydromancie, SpellSequenceType.End);
+				CustomUtility.ApplySimpleSpellEffect(m, "Armure de glace", AptitudeColor.Hydromancie, SpellSequenceType.End);
 			}
 		}
 

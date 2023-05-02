@@ -103,10 +103,10 @@ namespace Server.Spells
 			int damage = Utility.Dice( dice, sides, bonus ) * 100;
 			int damageBonus = 0;
 
-            double anatomySkill = Caster.Skills[SkillName.Anatomy].Value;
-            damageBonus += (int)(anatomySkill / 2.5);
+            double evalIntSkill = Caster.Skills[SkillName.EvalInt].Value;
+            damageBonus += (int)(evalIntSkill / 3.33);
 
-			int intBonus = Caster.Int / 2;
+			int intBonus = Caster.Int / 4;
 			damageBonus += intBonus;
 
             int evalSkill = GetDamageFixed( m_Caster );
@@ -115,25 +115,9 @@ namespace Server.Spells
 			damage = AOS.Scale( damage, 100 + damageBonus );
 
             if (target is BaseCreature)
-                damage *= 3;
+                damage *= 2;
 
             return damage / 100;
-		}
-
-		public virtual double GetAosDamage( int min, int random, double div )
-		{
-			double scale = 1.0;
-
-			scale += GetInscribeSkill( m_Caster ) * 0.001;
-
-			if ( Caster.Player )
-				scale += Caster.Int * 0.001;
-
-			int baseDamage = min + (int)(GetDamageSkill( m_Caster ) / div);
-
-			double damage = Utility.RandomMinMax( baseDamage, baseDamage + random );
-
-			return damage * scale;
 		}
 
 		public virtual bool IsCasting { get{ return m_State == SpellState.Casting; } }
@@ -523,6 +507,8 @@ namespace Server.Spells
 		public virtual bool Cast()
         {
             CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
+			BaseCreature bc = m_Caster as BaseCreature;
+
 			m_StartCastTime = DateTime.Now;
 
 			if ( !m_Caster.CheckAlive() )
@@ -544,7 +530,7 @@ namespace Server.Spells
 					  || (this is FormeMetalliqueSpell && !FormeMetalliqueSpell.IsActive(m_Caster))
 					  || (this is FormeTerrestreSpell && !FormeTerrestreSpell.IsActive(m_Caster))))
 			{
-				m_Caster.SendLocalizedMessage( 1061091 ); // You cannot cast that spell in this form.
+				m_Caster.SendMessage( "Vous ne pouvez pas lancer ce type de sorts en chevauchant une monture." );
 			}
 			else if (m_Caster.Hidden)
 			{
@@ -562,7 +548,7 @@ namespace Server.Spells
 			{
 				m_Caster.SendLocalizedMessage( 502644 ); // You must wait for that spell to have an effect.
             }
-			else if ( m_Caster.Mana >= ScaleMana( GetMana() ) )
+			else if ( m_Caster.Mana >= ScaleMana( GetMana() ) || bc != null)
 			{
 				if (m_Caster.Spell == null && m_Caster.CheckSpellCast( this ) && CheckCast() && m_Caster.Region.OnBeginSpellCast( m_Caster, this ) )
 				{
@@ -784,7 +770,7 @@ namespace Server.Spells
 				m_Caster.Spell = null;
 		}
 
-        public virtual bool VerifyConn(CustomPlayerMobile pm, Aptitude[] apt, int cValueRequis)
+        public virtual bool VerifyAptitudes(CustomPlayerMobile pm, Aptitude[] apt, int cValueRequis)
         {
             bool ok = false;
 
@@ -800,7 +786,11 @@ namespace Server.Spells
 
         public virtual bool CheckSequence()
 		{
-            int mana = ScaleMana(GetMana());
+			if (m_Caster is BaseCreature)
+				return true;
+
+			int mana = ScaleMana(GetMana());
+
             int aptitudeValueRequis = GetAptitudeValue();
             Aptitude[] aptitudeRequise = GetAptitude();
 
@@ -822,7 +812,7 @@ namespace Server.Spells
 			{
 				m_Caster.LocalOverheadMessage( MessageType.Regular, 0x22, 502625 ); // Insufficient mana for this spell.
             }
-            else if (pm != null && !VerifyConn(pm, aptitudeRequise, aptitudeValueRequis))
+            else if (pm != null && !VerifyAptitudes(pm, aptitudeRequise, aptitudeValueRequis))
             {
                 m_Caster.LocalOverheadMessage(MessageType.Regular, 0x22, false, "La connaissance nécessaire pour ce sort n'est pas assez développée.");
             }

@@ -263,8 +263,15 @@ namespace Server.Mobiles
 		private static void OnLogin(LoginEventArgs e)
 		{
 			var pm = e.Mobile as CustomPlayerMobile;
-			if (pm != null)
-				Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+
+			if (pm == null)
+				return;
+
+			Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+
+			pm.Hunger = 20;
+			pm.Thirst = 20;
+
 		}
 
 		[CommandProperty(AccessLevel.GameMaster)]

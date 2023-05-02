@@ -57,7 +57,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 						if (IsActive(m))
 							Deactivate(m);
 
-						var duration = GetDurationForSpell(15);
+						var duration = GetDurationForSpell(15, 3);
 
 						Timer t = new InternalTimer(m, DateTime.Now + duration);
 						m_Timers[m] = t;

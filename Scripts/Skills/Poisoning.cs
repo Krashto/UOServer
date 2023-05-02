@@ -54,20 +54,7 @@ namespace Server.SkillHandlers
                     if (m_Potion.Deleted)
                         return;
 
-                    bool startTimer = false;
-
-                    if (targeted is Food || targeted is FukiyaDarts || targeted is Shuriken)
-                    {
-                        startTimer = true;
-                    }
-                    else if (targeted is BaseWeapon)
-                    {
-                        BaseWeapon weapon = (BaseWeapon)targeted;
-
-                        startTimer = (weapon.PrimaryAbility == WeaponAbility.InfectiousStrike || weapon.SecondaryAbility == WeaponAbility.InfectiousStrike);
-                    }
-
-                    if (startTimer)
+                    if (targeted is Food || targeted is FukiyaDarts || targeted is Shuriken || targeted is BaseKnife)
                     {
                         new InternalTimer(from, (Item)targeted, m_Potion).Start();
 

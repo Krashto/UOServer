@@ -1492,119 +1492,69 @@ namespace Server.Engines.Craft
 				name = subResource.ItemType.Name;
 			}
 
-			bool contains = false;
-
-			for (int i = 0; !contains && i < m_UseLeathers.Length; ++i)
-				contains = (ItemType == m_UseLeathers[i]);
-
-			if (contains)
+			switch (name)
 			{
-				switch (name)
-				{
-					case "PlainoisLeather": skill += 0.0; break;	
-					case "CollinoisLeather": skill += 10.0; break;
-					case "ForestierLeather": skill += 15.0; break;
-					case "SavanoisLeather": skill += 20.0; break;
-					case "DesertiqueLeather": skill += 25.0; break;
-					case "MontagnardLeather": skill += 30.0; break;
-					case "VolcaniqueLeather": skill += 35.0; break;
-					case "TropicauxLeather": skill += 40.0; break;
-					case "ToundroisLeather": skill += 45.0; break;
-					case "AncienLeather": skill += 50.0; break;
-				}
+				case "PlainoisLeather": skill += 0.0; break;	
+				case "CollinoisLeather": skill += 10.0; break;
+				case "ForestierLeather": skill += 15.0; break;
+				case "SavanoisLeather": skill += 20.0; break;
+				case "DesertiqueLeather": skill += 25.0; break;
+				case "MontagnardLeather": skill += 30.0; break;
+				case "VolcaniqueLeather": skill += 35.0; break;
+				case "TropicauxLeather": skill += 40.0; break;
+				case "ToundroisLeather": skill += 45.0; break;
+				case "AncienLeather": skill += 50.0; break;
 
-				return skill;
-			}
+				case "PlainoisBone": skill += 0.0; break;
+				case "CollinoisBone": skill += 10.0; break;
+				case "ForestierBone": skill += 15.0; break;
+				case "SavanoisBone": skill += 20.0; break;
+				case "DesertiqueBone": skill += 25.0; break;
+				case "MontagnardBone": skill += 30.0; break;
+				case "VolcaniqueBone": skill += 35.0; break;
+				case "TropicauxBone": skill += 40.0; break;
+				case "ToundroisBone": skill += 45.0; break;
+				case "AncienBone": skill += 50.0; break;
 
-			contains = false;
+				case "PlainoisBoard": skill += 0.0; break;
+				case "CollinoisBoard": skill += 10.0; break;
+				case "ForestierBoard": skill += 15.0; break;
+				case "SavanoisBoard": skill += 20.0; break;
+				case "DesertiqueBoard": skill += 25.0; break;
+				case "MontagnardBoard": skill += 30.0; break;
+				case "VolcaniqueBoard": skill += 35.0; break;
+				case "TropicauxBoard": skill += 40.0; break;
+				case "ToundroisBoard": skill += 45.0; break;
+				case "AncienBoard": skill += 50.0; break;
 
-			for (int i = 0; !contains && i < m_UseBones.Length; ++i)
-				contains = (ItemType == m_UseBones[i]);
-
-			if (contains)
-			{
-				switch (name)
-				{
-					case "PlainoisBone": skill += 0.0; break;
-					case "CollinoisBone": skill += 10.0; break;
-					case "ForestierBone": skill += 15.0; break;
-					case "SavanoisBone": skill += 20.0; break;
-					case "DesertiqueBone": skill += 25.0; break;
-					case "MontagnardBone": skill += 30.0; break;
-					case "VolcaniqueBone": skill += 35.0; break;
-					case "TropicauxBone": skill += 40.0; break;
-					case "ToundroisBone": skill += 45.0; break;
-					case "AncienBone": skill += 50.0; break;
-
-				}
-
-				return skill;
-			}
-
-			contains = false;
-
-			for (int i = 0; !contains && i < m_UseWoods.Length; ++i)
-				contains = (ItemType == m_UseBones[i]);
-
-			if (contains)
-			{
-				switch (name)
-				{
-					case "PlainoisBoard": skill += 0.0; break;
-					case "CollinoisBoard": skill += 10.0; break;
-					case "ForestierBoard": skill += 15.0; break;
-					case "SavanoisBoard": skill += 20.0; break;
-					case "DesertiqueBoard": skill += 25.0; break;
-					case "MontagnardBoard": skill += 30.0; break;
-					case "VolcaniqueBoard": skill += 35.0; break;
-					case "TropicauxBoard": skill += 40.0; break;
-					case "ToundroisBoard": skill += 45.0; break;
-					case "AncienBoard": skill += 50.0; break;
-				}
-
-				return skill;
-			}
-
-			contains = false;
-
-			for (int i = 0; !contains && i < m_UseIngots.Length; ++i)
-				contains = (ItemType == m_UseIngots[i]);
-
-			if (contains)
-			{
-				switch (name)
-				{
-					case "IronIngot": skill += 0.0; break;
-					case "BronzeIngot": skill += 5.0; break;
-					case "CopperIngot": skill += 5.0; break;
-					case "SonneIngot": skill += 10.0; break;
-					case "ArgentIngot": skill += 10.0; break;
-					case "BorealeIngot": skill += 15.0; break;
-					case "ChrysteliarIngot": skill += 15.0; break;
-					case "GlaciasIngot": skill += 15.0; break;
-					case "LithiarIngot": skill += 25.0; break;
-					case "AcierIngot": skill += 25.0; break;
-					case "DurianIngot": skill += 25.0; break;
-					case "EquilibrumIngot": skill += 25.0; break;
-					case "GoldIngot": skill += 30.0; break;
-					case "JolinarIngot": skill += 30.0; break;
-					case "JusticiumIngot": skill += 30.0; break;
-					case "AbyssiumIngot": skill += 30.0; break;
-					case "BloodiriumIngot": skill += 30.0; break;
-					case "HerbrositeIngot": skill += 35.0; break;
-					case "KhandariumIngot": skill += 35.0; break;
-					case "MytherilIngot": skill += 35.0; break;
-					case "SombralirIngot": skill += 35.0; break;
-					case "DraconyrIngot": skill += 35.0; break;
-					case "HeptazionIngot": skill += 40.0; break;
-					case "OceanisIngot": skill += 40.0; break;
-					case "BraziumIngot": skill += 40.0; break;
-					case "LuneriumIngot": skill += 40.0; break;
-					case "MarinarIngot": skill += 40.0; break;
-					case "NostalgiumIngot": skill += 45.0; break;
-				}
-
-				return skill;
+				case "IronIngot": skill += 0.0; break;
+				case "BronzeIngot": skill += 5.0; break;
+				case "CopperIngot": skill += 5.0; break;
+				case "SonneIngot": skill += 10.0; break;
+				case "ArgentIngot": skill += 10.0; break;
+				case "BorealeIngot": skill += 15.0; break;
+				case "ChrysteliarIngot": skill += 15.0; break;
+				case "GlaciasIngot": skill += 15.0; break;
+				case "LithiarIngot": skill += 25.0; break;
+				case "AcierIngot": skill += 25.0; break;
+				case "DurianIngot": skill += 25.0; break;
+				case "EquilibrumIngot": skill += 25.0; break;
+				case "GoldIngot": skill += 30.0; break;
+				case "JolinarIngot": skill += 30.0; break;
+				case "JusticiumIngot": skill += 30.0; break;
+				case "AbyssiumIngot": skill += 30.0; break;
+				case "BloodiriumIngot": skill += 30.0; break;
+				case "HerbrositeIngot": skill += 35.0; break;
+				case "KhandariumIngot": skill += 35.0; break;
+				case "MytherilIngot": skill += 35.0; break;
+				case "SombralirIngot": skill += 35.0; break;
+				case "DraconyrIngot": skill += 35.0; break;
+				case "HeptazionIngot": skill += 40.0; break;
+				case "OceanisIngot": skill += 40.0; break;
+				case "BraziumIngot": skill += 40.0; break;
+				case "LuneriumIngot": skill += 40.0; break;
+				case "MarinarIngot": skill += 40.0; break;
+				case "NostalgiumIngot": skill += 45.0; break;
 			}
 
 			return skill;

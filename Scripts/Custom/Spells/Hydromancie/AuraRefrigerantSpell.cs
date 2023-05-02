@@ -67,7 +67,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					{
 						var m = (Mobile)targets[i];
 
-						Timer t = new InternalTimer(Caster, m);
+						var duration = GetDurationForSpell(15, 3);
+
+						Timer t = new InternalTimer(Caster, m, duration);
 						t.Start();
 
 						CustomUtility.ApplySimpleSpellEffect(Caster, "Aura refregirante", AptitudeColor.Hydromancie, SpellEffectType.Heal);
@@ -104,28 +106,28 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public class InternalTimer : Timer
 		{
+			private DateTime m_EndTime;
 			private Mobile m_From;
 			private Mobile m_Mobile;
-			private int m_Count;
-			private readonly int m_MaxCount;
-			public InternalTimer(Mobile from, Mobile m) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
+			public InternalTimer(Mobile from, Mobile m, TimeSpan duration) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
 				m_From = from;
 				m_Mobile = m;
+				m_EndTime = DateTime.Now + duration;
 
 				Priority = TimerPriority.OneSecond;
-				m_MaxCount = 5;
 			}
 
 			protected override void OnTick()
 			{
-				if (m_Count >= m_MaxCount || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
+				if (DateTime.Now >= m_EndTime || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
+					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellSequenceType.End);
 					Stop();
 				}
 				else
 				{
-					double toHeal = Math.Max(1, Utility.RandomMinMax(8 + m_Count, (8 + m_Count) * 2));
+					double toHeal = Math.Max(1, Utility.RandomMinMax(8, 16));
 
 					if (AvatarDuFroidSpell.IsActive(m_From))
 						toHeal *= 1.5;
@@ -133,12 +135,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					m_Mobile.Heal((int)toHeal);
 
 					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellEffectType.Heal);
-
-					if (++m_Count >= m_MaxCount)
-					{
-						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellSequenceType.End);
-						Stop();
-					}
 				}
 			}
 		}

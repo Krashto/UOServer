@@ -1,5 +1,4 @@
 using Server.Custom.Aptitudes;
-using Server.Mobiles;
 using Server.Spells;
 using System;
 
@@ -15,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				Reagent.EssenceTotemique
 			);
 
-		public override int RequiredAptitudeValue { get { return 3; } }
+		public override int RequiredAptitudeValue { get { return 1; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }
 		public override SkillName CastSkill { get { return SkillName.AnimalTaming; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

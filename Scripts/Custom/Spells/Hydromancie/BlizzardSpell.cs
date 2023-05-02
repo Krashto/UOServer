@@ -44,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				var map = Caster.Map;
 
-				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 15, Aptitude.Hydromancie);
+				var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 30, Aptitude.Hydromancie);
 
 				ExplodeFX.Snow.CreateInstance(Caster, Caster.Map, range).Send();
 

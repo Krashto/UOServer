@@ -129,33 +129,33 @@ namespace Server.Engines.BulkOrders
         {
             List<Item> list = new List<Item>();
 
-            RewardGroup rewardGroup = AlchemyRewardCalculator.Instance.LookupRewards(AlchemyRewardCalculator.Instance.ComputePoints(this));
+            //RewardGroup rewardGroup = AlchemyRewardCalculator.Instance.LookupRewards(AlchemyRewardCalculator.Instance.ComputePoints(this));
 
-            if (rewardGroup != null)
-            {
-                if (full)
-                {
-                    for (int i = 0; i < rewardGroup.Items.Length; ++i)
-                    {
-                        Item item = rewardGroup.Items[i].Construct();
+            //if (rewardGroup != null)
+            //{
+            //    if (full)
+            //    {
+            //        for (int i = 0; i < rewardGroup.Items.Length; ++i)
+            //        {
+            //            Item item = rewardGroup.Items[i].Construct();
 
-                        if (item != null)
-                            list.Add(item);
-                    }
-                }
-                else
-                {
-                    RewardItem rewardItem = rewardGroup.AcquireItem();
+            //            if (item != null)
+            //                list.Add(item);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        RewardItem rewardItem = rewardGroup.AcquireItem();
 
-                    if (rewardItem != null)
-                    {
-                        Item item = rewardItem.Construct();
+            //        if (rewardItem != null)
+            //        {
+            //            Item item = rewardItem.Construct();
 
-                        if (item != null)
-                            list.Add(item);
-                    }
-                }
-            }
+            //            if (item != null)
+            //                list.Add(item);
+            //        }
+            //    }
+            //}
 
             return list;
         }

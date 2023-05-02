@@ -38,7 +38,7 @@ namespace Server.Mobiles
         }
 
         public BaseFamiliar()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, -1, -1)
+            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, -1, -1)
         { }
 
         public BaseFamiliar(Serial serial)

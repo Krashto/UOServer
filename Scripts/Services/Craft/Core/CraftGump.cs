@@ -586,7 +586,7 @@ namespace Server.Engines.Craft
 							var resource = CraftResources.GetFromType(res.ItemType);
 							var level = CraftResources.GetLevel(resource);
 
-							if ((m_From.Skills[system.MainSkill].Base < res.RequiredSkill))
+							if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill)
 							{
 								m_From.SendGump(new CraftGump(m_From, system, m_Tool, $"Niveau requis de compétence: {res.RequiredSkill}% de {system.MainSkill}"));
 							}
@@ -607,22 +607,27 @@ namespace Server.Engines.Craft
                             int groupIndex = (context == null ? -1 : context.LastGroupIndex);
 
                             CraftSubRes res = system.CraftSubRes2.GetAt(index);
+
 							var pm = m_From as CustomPlayerMobile;
 							var resource = CraftResources.GetFromType(res.ItemType);
 							var level = CraftResources.GetLevel(resource);
 
-							if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill || (pm != null && pm.Capacites[Capacite.Expertise] < level))
-                            {
-                                m_From.SendGump(new CraftGump(m_From, system, m_Tool, res.Message));
-                            }
-                            else
-                            {
-                                if (context != null)
-                                    context.LastResourceIndex2 = index;
+							if (m_From.Skills[system.MainSkill].Base < res.RequiredSkill)
+							{
+								m_From.SendGump(new CraftGump(m_From, system, m_Tool, $"Niveau requis de compétence: {res.RequiredSkill}% de {system.MainSkill}"));
+							}
+							else if ((pm != null && pm.Capacites[Capacite.Expertise] < level))
+							{
+								m_From.SendGump(new CraftGump(m_From, system, m_Tool, $"Niveau requis d'expertise: {level}"));
+							}
+							else
+							{
+								if (context != null)
+									context.LastResourceIndex2 = index;
 
-                                m_From.SendGump(new CraftGump(m_From, system, m_Tool, null));
-                            }
-                        }
+								m_From.SendGump(new CraftGump(m_From, system, m_Tool, null));
+							}
+						}
 
                         break;
                     }

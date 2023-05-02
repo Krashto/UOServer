@@ -60,8 +60,8 @@ namespace Server
 
 		private static int GetMaxMovementDex(BaseCreature bc)
         {
-            return bc.IsMonster ? 150 : 190;
-        }
+            return bc.IsMonster ? 150 : 190; //bc.IsMonster ? 150 : 190;
+		}
 
         public static bool InActivePVPCombat(BaseCreature bc)
         {

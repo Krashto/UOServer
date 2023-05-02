@@ -1,17 +1,7 @@
 using System;
-using Server;
-using Server.Misc;
 using Server.Network;
 using Server.Mobiles;
 using Server.Commands;
-using Server.Targeting;
-using System.Collections;
-using Server.Engines.Plants;
-using Server.Engines.Quests;
-using Server.Engines.Quests.Hag;
-using System.Collections.Generic;
-using Server.Commands.Generic;
-
 
 namespace Server.Items
 {
@@ -34,14 +24,14 @@ namespace Server.Items
 
 		public static void FoodDecay()
 		{
-			foreach ( NetState state in NetState.Instances )
-			{
-				if ( state.Mobile != null && state.Mobile.AccessLevel == AccessLevel.Player ) // Check if player
-				{
-					HungerDecay( state.Mobile );
-					ThirstDecay( state.Mobile );
-				}
-			}
+			//foreach ( NetState state in NetState.Instances )
+			//{
+			//	if ( state.Mobile != null && state.Mobile.AccessLevel == AccessLevel.Player ) // Check if player
+			//	{
+			//		HungerDecay( state.Mobile );
+			//		ThirstDecay( state.Mobile );
+			//	}
+			//}
 		}
 
 		public static void HungerDecay( Mobile m )
@@ -93,7 +83,7 @@ namespace Server.Items
 	{
 		public static void Initialize()
 		{
-			new HitsDecayTimer().Start();
+			//new HitsDecayTimer().Start();
 		}
 		// Based on the same timespan used in RegenRates.cs
 		public HitsDecayTimer() : base( TimeSpan.FromSeconds( 11 ), TimeSpan.FromSeconds( 11 ) )
@@ -148,7 +138,7 @@ namespace Server.Items
 	{
 		public static void Initialize()
 		{
-			new StamDecayTimer().Start();
+			//new StamDecayTimer().Start();
 		}
 		// Based on the same timespan used in RegenRates.cs
 		public StamDecayTimer() : base( TimeSpan.FromSeconds( 7 ), TimeSpan.FromSeconds( 7 ) )
@@ -201,16 +191,13 @@ namespace Server.Items
 	{
 		public static void Initialize()
 		{
-			CommandSystem.Register("Statut", AccessLevel.Player, new CommandEventHandler(Statut_OnCommand));
+			//CommandSystem.Register("Statut", AccessLevel.Owner, new CommandEventHandler(Statut_OnCommand));
 		}
 
 		[Usage("Statut")]
 		[Description("Affiche votre niveau de nutrition et d'hydratation.")]
 		public static void Statut_OnCommand(CommandEventArgs e)
-
-	
-
-	{
+		{
 			int h = e.Mobile.Hunger; // Variable to hold the hunger value of the player
 			// these values are taken from Food.cs and relate directly to the message
 			// you get when you eat.

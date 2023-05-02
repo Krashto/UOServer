@@ -39,7 +39,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				new SoundEffectTimer(Caster).Start();
 
-				var duration = GetDurationForSpell(15);
+				var duration = GetDurationForSpell(15, 3);
 
 				var t = new ExpireTimer(Caster, duration);
 

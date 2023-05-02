@@ -98,7 +98,7 @@ namespace Server.Gumps
                     }
                     else
                     {
-                        Banker.Deposit(m_Mobile, m_House.Price, true);
+                        Banker.Deposit(m_Mobile, m_House.InitPrice, true);
 
                         var region = new TempNoHousingRegion(m_House, m_Mobile);
                         Timer.DelayCall(m_House.RestrictedPlacingTime, region.Unregister);

@@ -1,3 +1,4 @@
+using Server.Custom;
 using Server.HuePickers;
 using Server.Items;
 using Server.Mobiles;
@@ -19,16 +20,18 @@ namespace Server.Gumps
             m_Vendor = vendor;
             m_VI = vi;
 
-            AddBackground(100, 10, 300, 150, 5054);
+            AddBackground(100, 10, 300, 150, 3000);
 
             AddHtmlLocalized(125, 20, 250, 24, 1019070, false, false); // You have agreed to purchase:
 
             if (!string.IsNullOrEmpty(vi.Description))
                 AddLabel(125, 45, 0, vi.Description);
-            else
-                AddHtmlLocalized(125, 45, 250, 24, 1019072, false, false); // an item without a description
+            else if (vi.Item.LabelNumber > 0)
+                AddHtmlLocalized(125, 45, 250, 24, vi.Item.LabelNumber, false, false);
+			else
+				AddLabel(125, 45, 0, vi.Item.GetType().Name.ToString());
 
-            AddHtmlLocalized(125, 70, 250, 24, 1019071, false, false); // for the amount of:
+			AddHtmlLocalized(125, 70, 250, 24, 1019071, false, false); // for the amount of:
             AddLabel(125, 95, 0, vi.Price.ToString());
 
             AddButton(250, 130, 4005, 4007, 0, GumpButtonType.Reply, 0);

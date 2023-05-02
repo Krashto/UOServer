@@ -171,18 +171,21 @@ namespace Server.Mobiles
                 if (amount < 5000)
                 {
                     item = new Gold(amount);
+					from.SendMessage($"{amount} pièces d'or ont été déposée dans votre coffre de banque.");
                     amount = 0;
                 }
                 else if (amount <= 1000000)
                 {
                     item = new BankCheck(amount);
+					from.SendMessage($"Un chèque de {amount} pièces d'or ont été déposé dans votre coffre de banque.");
                     amount = 0;
-                }
+				}
                 else
                 {
                     item = new BankCheck(1000000);
+					from.SendMessage($"Un chèque de 1000000 pièces d'or ont été déposé dans votre coffre de banque.");
                     amount -= 1000000;
-                }
+				}
 
                 if (box.TryDropItem(from, item, false))
                 {
@@ -199,9 +202,6 @@ namespace Server.Mobiles
                     return false;
                 }
             }
-
-            if (message)
-                from.SendLocalizedMessage(1042763, amount.ToString("N0", System.Globalization.CultureInfo.GetCultureInfo("en-US"))); // ~1_AMOUNT~ gold was deposited in your account.
 
             return true;
         }

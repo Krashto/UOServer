@@ -1,11 +1,14 @@
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Defenseur
 {
 	public class InterventionSpell : Spell
 	{
+		private static Hashtable m_Table = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Intervention", "[Intervention]",
 				SpellCircle.Second,
@@ -14,7 +17,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				Reagent.EssenceDefenseur
 			);
 
-		public override int RequiredAptitudeValue { get { return 3; } }
+		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Defenseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Parry; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -27,6 +30,26 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 		public override void OnCast()
 		{
 			Caster.Target = new InternalTarget(this);
+
+		}
+
+		public static bool IsActive(Mobile m)
+		{
+			return m_Table.ContainsKey(m);
+		}
+
+		public static void Desactive(Mobile m)
+		{
+			if (m == null)
+				return;
+
+			var mob = m_Table[m] as Mobile;
+
+			if (mob != null)
+			{
+				m_Table.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Intervention", AptitudeColor.Defenseur, SpellSequenceType.End);
+			}
 		}
 
 		public void Target(Mobile m)
@@ -39,10 +62,8 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 				SpellHelper.Turn(source, m);
 
-				Caster.MoveToWorld(m.Location, m.Map);
-
-				CustomUtility.ApplySimpleSpellEffect(Caster, "Intervention", AptitudeColor.Defenseur, SpellEffectType.Move);
-				CustomUtility.ApplySimpleSpellEffect(m, "Intervention", AptitudeColor.Defenseur, SpellEffectType.Move);
+				m_Table[Caster] = Caster;
+				CustomUtility.ApplySimpleSpellEffect(m, "Intervention", AptitudeColor.Defenseur, SpellEffectType.Bonus);
 			}
 
 			FinishSequence();

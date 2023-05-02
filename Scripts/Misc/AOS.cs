@@ -589,7 +589,43 @@ namespace Server
                         value += ((FishingPole)obj).GetLuckBonus();
                 }
 
-                if (obj is ISetItem)
+				if (attribute == AosAttribute.BonusHits)
+				{
+					if (obj is BaseWeapon)
+						value += ((BaseWeapon)obj).Attributes.BonusHits;
+
+					if (obj is BaseArmor)
+						value += ((BaseArmor)obj).Attributes.BonusHits;
+
+					if (obj is FishingPole)
+						value += ((FishingPole)obj).Attributes.BonusHits;
+				}
+
+				if (attribute == AosAttribute.BonusStam)
+				{
+					if (obj is BaseWeapon)
+						value += ((BaseWeapon)obj).Attributes.BonusStam;
+
+					if (obj is BaseArmor)
+						value += ((BaseArmor)obj).Attributes.BonusStam;
+
+					if (obj is FishingPole)
+						value += ((FishingPole)obj).Attributes.BonusStam;
+				}
+
+				if (attribute == AosAttribute.BonusMana)
+				{
+					if (obj is BaseWeapon)
+						value += ((BaseWeapon)obj).Attributes.BonusMana;
+
+					if (obj is BaseArmor)
+						value += ((BaseArmor)obj).Attributes.BonusMana;
+
+					if (obj is FishingPole)
+						value += ((FishingPole)obj).Attributes.BonusMana;
+				}
+
+				if (obj is ISetItem)
                 {
                     ISetItem item = (ISetItem)obj;
 

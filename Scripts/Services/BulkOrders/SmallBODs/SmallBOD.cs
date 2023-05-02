@@ -267,23 +267,23 @@ namespace Server.Engines.BulkOrders
         {
             reward = null;
             gold = ComputeGold();
-            fame = ComputeFame();
+			fame = 0; // ComputeFame();
 
-            if (!BulkOrderSystem.NewSystemEnabled)
-            {
-                List<Item> rewards = ComputeRewards(false);
+            //if (!BulkOrderSystem.NewSystemEnabled)
+            //{
+            //    List<Item> rewards = ComputeRewards(false);
 
-                if (rewards.Count > 0)
-                {
-                    reward = rewards[Utility.Random(rewards.Count)];
+            //    if (rewards.Count > 0)
+            //    {
+            //        reward = rewards[Utility.Random(rewards.Count)];
 
-                    for (int i = 0; i < rewards.Count; ++i)
-                    {
-                        if (rewards[i] != reward)
-                            rewards[i].Delete();
-                    }
-                }
-            }
+            //        for (int i = 0; i < rewards.Count; ++i)
+            //        {
+            //            if (rewards[i] != reward)
+            //                rewards[i].Delete();
+            //        }
+            //    }
+            //}
         }
 
         public virtual bool CheckType(Item item)

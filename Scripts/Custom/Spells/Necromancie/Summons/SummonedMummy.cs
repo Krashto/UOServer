@@ -7,7 +7,7 @@ namespace Server.Mobiles
     {
 		[Constructable]
         public SummonedMummy()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.4, 0.8)
+            : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.4, 0.8)
         {
             Name = "Une Momie";
             Body = 154;

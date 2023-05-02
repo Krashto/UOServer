@@ -57,7 +57,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 						if (IsActive(m))
 							Deactivate(m);
 
-						var duration = GetDurationForSpell(15);
+						var duration = GetDurationForSpell(15, 3);
 
 						var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10, Aptitude.Pyromancie);
 

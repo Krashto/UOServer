@@ -1,10 +1,9 @@
-using Server.Custom.Aptitudes;
+using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
 using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
 using Server.Network;
 using System;
-using System.Reflection;
 
 namespace Server.Engines.Craft
 {
@@ -198,8 +197,28 @@ namespace Server.Engines.Craft
 				else
 					AddLabel(430, 132, LabelHue, "0");
 
-				AddHtmlLocalized(170, 152 + (i * 20), 200, 18, AosSkillBonuses.GetLabel(skill.SkillToMake), LabelColor, false, false);
-                AddLabel(430, 152 + (i * 20), LabelHue, string.Format("{0:F1}", minSkill));
+				if (m_CraftItem.ItemType.BaseType == typeof(BaseSouvenirPotion))
+				{
+					AddLabel(170, 152, LabelHue, $"Niveau d'expertise:");
+					AddLabel(430, 152, LabelHue, "5");
+				}
+				else if (m_CraftItem.ItemType.BaseType.BaseType == typeof(BasePotion))
+				{
+					AddLabel(170, 152, LabelHue, $"Niveau d'expertise:");
+					if (minSkill < 25)
+						AddLabel(430, 152, LabelHue, "1");
+					else if (minSkill < 50)
+						AddLabel(430, 152, LabelHue, "2");
+					else if (minSkill < 75)
+						AddLabel(430, 152, LabelHue, "3");
+					else if (minSkill < 100)
+						AddLabel(430, 152, LabelHue, "4");
+					else if (minSkill < 100)
+						AddLabel(430, 152, LabelHue, "5");
+				}
+
+				AddHtmlLocalized(170, 172 + (i * 20), 200, 18, AosSkillBonuses.GetLabel(skill.SkillToMake), LabelColor, false, false);
+                AddLabel(430, 172 + (i * 20), LabelHue, string.Format("{0:F1}", minSkill));
 			}
 
             CraftSubResCol res = (m_CraftItem.UseSubRes2 ? m_CraftSystem.CraftSubRes2 : m_CraftSystem.CraftSubRes);

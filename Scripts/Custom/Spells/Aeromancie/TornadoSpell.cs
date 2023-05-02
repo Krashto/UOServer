@@ -116,7 +116,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							Disturb(m);
 
-							double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
+							double damage = m_Owner.GetNewAosDamage(m, 8, 2, 6, true);
 
 							MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(m.Direction), 3);
 

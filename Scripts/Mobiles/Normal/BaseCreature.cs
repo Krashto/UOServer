@@ -2112,7 +2112,7 @@ namespace Server.Mobiles
 		public const int OldRangePerception = 10;
 
 		public BaseCreature(AIType ai, FightMode mode, int iRangePerception, int iRangeFight)
-			: this(ai, mode, iRangePerception, iRangeFight, 0.2, 0.4)
+			: this(ai, mode, iRangePerception, iRangeFight, 0.1, 0.4)
 		{
 		}
 
@@ -2135,6 +2135,9 @@ namespace Server.Mobiles
 
 			m_iRangePerception = iRangePerception;
 			m_iRangeFight = iRangeFight;
+
+			if ((ai == AIType.AI_Mage || ai == AIType.AI_NecroMage) && m_iRangeFight < 5)
+				m_iRangeFight = 5;
 
 			m_FightMode = mode;
 
@@ -3083,9 +3086,6 @@ namespace Server.Mobiles
 
 			switch (NewAI)
 			{
-				case AIType.AI_Animal:
-					m_AI = new AnimalAI(this);
-					break;
 				case AIType.AI_Melee:
 					m_AI = new MeleeAI(this);
 					break;
@@ -4782,25 +4782,25 @@ namespace Server.Mobiles
 
 		public void SetDex(int val)
 		{
-			RawDex = 25 + Level * 5;
+			RawDex = 100 + Level * 5;
 			Stam = StamMax;
 		}
 
 		public void SetDex(int min, int max)
 		{
-			RawDex = 25 + Level * 5;
+			RawDex = 100 + Level * 5;
 			Stam = StamMax;
 		}
 
 		public void SetInt(int val)
 		{
-			RawInt = 50 + Level * 10;
+			RawInt = 100 + Level * 10;
 			Mana = ManaMax;
 		}
 
 		public void SetInt(int min, int max)
 		{
-			RawInt = 50 + Level * 10;
+			RawInt = 100 + Level * 10;
 			Mana = ManaMax;
 		}
 
@@ -7490,15 +7490,6 @@ namespace Server.Mobiles
 
         [CommandProperty(AccessLevel.GameMaster)]
         public bool RemoveOnSave { get { return m_RemoveOnSave; } set { m_RemoveOnSave = value; } }
-
-		public bool BaseHire { get; internal set; }
-
-		private class AnimalAI : BaseAI
-		{
-			public AnimalAI(BaseCreature m) : base(m)
-			{
-			}
-		}
 	}
 
 	public class LoyaltyTimer : Timer

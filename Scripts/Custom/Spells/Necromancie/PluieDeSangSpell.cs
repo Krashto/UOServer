@@ -38,7 +38,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 				if (map != null)
 				{
-					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 20, Aptitude.Necromancie);
+					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 30, Aptitude.Necromancie);
 
 					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, range).Send();
 

@@ -39,7 +39,7 @@ namespace Server.Spells
 
 				if (map != null)
 				{
-					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 5, Aptitude.Geomancie);
+					var range = (int)SpellHelper.AdjustValue(Caster, 1 + Caster.Skills[CastSkill].Value / 30, Aptitude.Geomancie);
 
 					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(Caster.Location), range);
 

@@ -16,6 +16,7 @@ using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Capacites;
 using Server.Custom.Classes;
+using Server.Custom.Spells.NewSpells.Defenseur;
 
 namespace Server
 {
@@ -913,7 +914,7 @@ namespace Server.Spells
 
         public static void CheckReflect( int circle, ref Mobile caster, ref Mobile target)
         {
-			if (BouclierMagiqueSpell.IsActive(target))
+			if (BouclierMagiqueSpell.IsActive(target) || InterventionSpell.IsActive(target))
 			{
 				target.FixedEffect(0x37B9, 10, 5);
 
