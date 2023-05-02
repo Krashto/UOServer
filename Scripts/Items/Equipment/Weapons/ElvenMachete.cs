@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x2D35)
         {
             Weight = 6.0;
-        }
+			Name = "Machette runique";
+
+		}
 
         public ElvenMachete(Serial serial)
             : base(serial)

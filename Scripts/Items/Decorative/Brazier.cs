@@ -13,7 +13,9 @@ namespace Server.Items
             Burning = true;
             Light = LightType.Circle225;
             Weight = 20.0;
-        }
+			Name = "Brasero";
+
+		}
 
         public Brazier(Serial serial)
             : base(serial)

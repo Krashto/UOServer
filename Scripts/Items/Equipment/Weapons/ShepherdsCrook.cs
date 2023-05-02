@@ -14,7 +14,9 @@ namespace Server.Items
             : base(0xE81)
         {
             Weight = 4.0;
-        }
+			Name = "Bâton de berger";
+
+		}
 
         public ShepherdsCrook(Serial serial)
             : base(serial)

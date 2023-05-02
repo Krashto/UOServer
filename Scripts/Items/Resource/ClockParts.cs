@@ -16,7 +16,9 @@ namespace Server.Items
             Stackable = true;
             Amount = amount;
             Weight = 1.0;
-        }
+			Name = "Pièces d'horloge";
+
+		}
 
         public ClockParts(Serial serial)
             : base(serial)

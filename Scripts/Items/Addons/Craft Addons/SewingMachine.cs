@@ -14,12 +14,14 @@ namespace Server.Items
             {
                 AddCraftComponent(new AddonToolComponent(CraftSystem, 39496, 39480, 1123504, uses, this), 0, 0, 0);
                 AddComponent(new ToolDropComponent(39498, 1123522), -1, 0, 0);
-            }
+				Name = "Machine à Coudre";
+			}
             else
             {
                 AddCraftComponent(new AddonToolComponent(CraftSystem, 39497, 39488, 1123504, uses, this), 0, 0, 0);
                 AddComponent(new ToolDropComponent(39498, 1123522), 0, 1, 0);
-            }
+				Name = "Machine à Coudre";
+			}
         }
 
         public SewingMachine(Serial serial)
@@ -52,7 +54,9 @@ namespace Server.Items
         [Constructable]
         public SewingMachineDeed() : this(0)
         {
-        }
+			Name = "Machine à Coudre";
+
+		}
 
         [Constructable]
         public SewingMachineDeed(int uses) : base(uses)

@@ -12,11 +12,13 @@ namespace Server.Items
             if (east) // east
             {
                 AddComponent(new AddonContainerComponent(0xA45), 0, -1, 0);
-            }
+				Name = "Vanité";
+			}
             else // south
             {
                 AddComponent(new AddonContainerComponent(0xA3D), -1, 0, 0);
-            }
+				Name = "Vanité";
+			}
         }
 
         public VanityAddon(Serial serial)
@@ -50,8 +52,8 @@ namespace Server.Items
         public VanityDeed()
             : base()
         {
-            LootType = LootType.Blessed;
-        }
+			Name = "Vanité";
+		}
 
         public VanityDeed(Serial serial)
             : base(serial)

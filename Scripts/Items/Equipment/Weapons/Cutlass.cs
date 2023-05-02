@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x1441)
         {
             Weight = 8.0;
-        }
+			Name = "Sabre";
+
+		}
 
         public Cutlass(Serial serial)
             : base(serial)

@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 12.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Croissant de lune";
+
+		}
 
         public Lajatang(Serial serial)
             : base(serial)

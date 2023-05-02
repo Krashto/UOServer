@@ -9,7 +9,9 @@ namespace Server.Items
         {
             Weight = 5.0;
             Layer = Layer.OneHanded;
-        }
+			Name = "Surineur";
+
+		}
 
         public Wakizashi(Serial serial)
             : base(serial)

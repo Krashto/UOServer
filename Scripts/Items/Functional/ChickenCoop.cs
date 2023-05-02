@@ -34,7 +34,9 @@ namespace Server.Items
         {
             Weight = 20;
             m_Level = SecureLevel.CoOwners;
-        }
+			Name = "Poulailler";
+
+		}
 
         public void OnChop(Mobile from)
         {

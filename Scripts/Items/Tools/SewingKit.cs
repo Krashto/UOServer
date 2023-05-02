@@ -16,7 +16,9 @@ namespace Server.Items
             : base(uses, 0xF9D)
         {
             Weight = 2.0;
-        }
+			Name = "Kit de couture";
+
+		}
 
         public SewingKit(Serial serial)
             : base(serial)

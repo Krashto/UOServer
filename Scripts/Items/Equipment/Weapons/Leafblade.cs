@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x2D22)
         {
             Weight = 8.0;
-        }
+			Name = "Coupe-gorge";
+
+		}
 
         public Leafblade(Serial serial)
             : base(serial)

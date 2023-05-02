@@ -8,8 +8,10 @@ namespace Server.Items
         public Throne()
             : base(0xB33)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Trône massif";
+
+		}
 
         public Throne(Serial serial)
             : base(serial)

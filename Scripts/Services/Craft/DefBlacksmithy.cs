@@ -86,7 +86,7 @@ namespace Server.Engines.Craft
 		}
 
 		private DefBlacksmithy()
-			: base(1, 1, 1.25) // base( 1, 2, 1.7 )
+			: base(3, 4, 1.50) // base( 1, 2, 1.7 )
 		{
 			/*
             base( MinCraftEffect, MaxCraftEffect, Delay )
@@ -442,8 +442,8 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(AnneauxCombat), "Armes de poings", "Anneaux de Combat", 20.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(GriffesCombat), "Armes de poings", "Griffes de Combat", 35.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(KamaKuya), "Armes de poings", "Kama Kuya", 35.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(LameCirculaire), "Armes de poings", "Lames Circulaires", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Kama1), "Armes de poings", "Kama Bonga", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(LameCirculaire), "Armes de poings", "Lame Circulaire", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Kama1), "Armes de poings", "Kama", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
 			#endregion
 
 			#region "Dagues"
@@ -459,16 +459,16 @@ namespace Server.Engines.Craft
 			#region "Épées"
 			AddCraft(typeof(BoneHarvester), "Épées", "Serpe", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
 			AddCraft(typeof(Broadsword), "Épées", "Épée courte", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Cutlass), "Épées", "Sabre Kroise", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(Cutlass), "Épées", "Sabre", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
 			AddCraft(typeof(Katana), "Épées", "Katana", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
 			AddCraft(typeof(Longsword), "Épées", "Épée longue", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(Scimitar), "Épées", "Cimeterre", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(VikingSword), "Épées", "Épée Kaloise", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeCourte), "Épées", "Épée Koraine", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(SabreLuxe), "Épées", "Sabre Kershe", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(VikingSword), "Épées", "Épée Lourde", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(EpeeCourte), "Épées", "Épée Courte", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
+			AddCraft(typeof(SabreLuxe), "Épées", "Sabre de Luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
 			AddCraft(typeof(EpeeBatardeLuxe), "Épées", "Épée bâtarde de luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(EpeeDoubleTranchant), "Épées", "Épée à Double Tranchants", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeLongue), "Épées", "Épée Longue", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
+			AddCraft(typeof(EpeeLongue), "Épées", "Épée Afuitée", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(EpeeBatarde), "Épées", "Épée bâtarde", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
 			AddCraft(typeof(EpeeDeuxMains), "Épées", "Épée Deux Mains", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
 			AddCraft(typeof(Runire), "Épées", "Runire", 45.0, 70.0, typeof(IronIngot), 1044036, 8, 1044037);
@@ -480,7 +480,6 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 60.0, 85.0, typeof(IronIngot), 1044036, 15, 1044037);
 			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 60.0, 85.0, typeof(IronIngot), 1044036, 15, 1044037);
 			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 75.0, 105.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Runire), "Épées", "Runire", 75.0, 105.0, typeof(IronIngot), 1044036, 8, 1044037);
 			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 75.0, 105.0, typeof(IronIngot), 1044036, 15, 1044037);
 			#endregion
 
@@ -497,7 +496,6 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(HacheDouble), "Haches", "Trombe", 45.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(DoubleAxe), "Haches", "Naga", 60.0, 85.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 75.0, 105.0, typeof(IronIngot), 1044036, 18, 1044037);
 			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 75.0, 105.0, typeof(IronIngot), 1044036, 24, 1044037);
@@ -507,11 +505,11 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Hallebarde
-			index = AddCraft(typeof(Pitchfork), "Hallebardes", "Pitchfork", 10.0, 35.0, typeof(IronIngot), "Iron ingot", 5, "You do not have enough iron ingots to make that.");
+			index = AddCraft(typeof(Pitchfork), "Hallebardes", "Fourche", 10.0, 35.0, typeof(IronIngot), "Iron ingot", 5, "You do not have enough iron ingots to make that.");
 			AddCraft(typeof(Bardiche), "Hallebardes", "Bardiche", 40.0, 60.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Hellebarde), "Hallebardes", "Hellebarde", 50.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(BladedStaff), "Hallebardes", "BladedStaff", 55.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(DoubleBladedStaff), "Hallebardes", "DoubleBladedStaff", 80.0, 100.0, typeof(IronIngot), 1044036, 16, 1044037);
+			AddCraft(typeof(Hellebarde), "Hallebardes", "Hallebarde simple", 50.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(BladedStaff), "Hallebardes", "Bardiche Simple", 55.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(DoubleBladedStaff), "Hallebardes", "Bardiche double lames", 80.0, 100.0, typeof(IronIngot), 1044036, 16, 1044037);
 			AddCraft(typeof(Halberd), "Hallebardes", "Hallebarde", 85.0, 105.0, typeof(IronIngot), 1044036, 20, 1044037);
 			#endregion
 
@@ -522,8 +520,8 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Scythe), "Lances", "Scythe", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(Spear), "Lances", "Lance de guerre", 35.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(Epieu), "Lances", "Épieu", 40.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GrandeFourche), "Lances", "Fourche", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Luxe", 60.0, 85.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(GrandeFourche), "Lances", "Grande Fourche", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Guerre", 60.0, 85.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(Trident), "Lances", "Trident", 65.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
 			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 70.0, 95.0, typeof(IronIngot), 1044036, 12, 1044037);
 			#endregion
@@ -542,7 +540,6 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Massue), "Masses et marteaux", "Massue", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(MorgensternBoules), "Masses et marteaux", "Morgenstern à Boules", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
 			AddCraft(typeof(MorgensternPointes), "Masses et marteaux", "Morgenstern à Pointes", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(WarHammer), "Masses et marteaux", "War Hammer", 60.0, 85.0, typeof(IronIngot), 1044036, 16, 1044037);
 			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 60.0, 85.0, typeof(IronIngot), 1044036, 16, 1044037);
 			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 60.0, 85.0, typeof(IronIngot), 1044036, 20, 1044037);
 			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 75.0, 105.0, typeof(IronIngot), 1044036, 16, 1044037);
@@ -557,7 +554,7 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 45.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
 			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 60.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
 			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 60.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissants de lune", 60.0, 80.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissant de lune", 60.0, 80.0, typeof(IronIngot), 1044036, 25, 1044037);
 			#endregion
 
 			#region "Divers"

@@ -15,7 +15,9 @@ namespace Server.Items
             Weight = 10;
             Light = LightType.Circle150;
             Burning = true;
-        }
+			Name = "Brasero Cage";
+
+		}
 
         public DragonBrazier(Serial serial)
             : base(serial)

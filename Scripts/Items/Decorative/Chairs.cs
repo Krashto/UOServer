@@ -9,7 +9,9 @@ namespace Server.Items
             : base(0xB4F)
         {
             Weight = 20.0;
-        }
+			Name = "Chaise travaillée";
+
+		}
 
         public FancyWoodenChairCushion(Serial serial)
             : base(serial)
@@ -38,7 +40,9 @@ namespace Server.Items
             : base(0xB53)
         {
             Weight = 20.0;
-        }
+			Name = "Chaise avec coussin";
+
+		}
 
         public WoodenChairCushion(Serial serial)
             : base(serial)
@@ -67,7 +71,9 @@ namespace Server.Items
             : base(0xB57)
         {
             Weight = 20.0;
-        }
+			Name = "Chaise simple";
+
+		}
 
         public WoodenChair(Serial serial)
             : base(serial)
@@ -96,7 +102,9 @@ namespace Server.Items
             : base(0xB5B)
         {
             Weight = 20.0;
-        }
+			Name = "Chaise rustique";
+
+		}
 
         public BambooChair(Serial serial)
             : base(serial)
@@ -155,8 +163,10 @@ namespace Server.Items
         public OrnateElvenChair()
             : base(0x2DE3)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Chaise sculptée";
+
+		}
 
         public OrnateElvenChair(Serial serial)
             : base(serial)
@@ -185,7 +195,10 @@ namespace Server.Items
         public BigElvenChair()
             : base(0x2DEB)
         {
-        }
+			Weight = 15;
+			Name = "Chaise ornée";
+
+		}
 
         public BigElvenChair(Serial serial)
             : base(serial)
@@ -214,7 +227,10 @@ namespace Server.Items
         public ElvenReadingChair()
             : base(0x2DF5)
         {
-        }
+			Weight = 15;
+			Name = "Chaise carrée";
+
+		}
 
         public ElvenReadingChair(Serial serial)
             : base(serial)

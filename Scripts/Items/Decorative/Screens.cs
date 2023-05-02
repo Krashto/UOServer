@@ -9,7 +9,9 @@ namespace Server.Items
             : base(0x24D0)
         {
             Weight = 20.0;
-        }
+			Name = "Paravent simple";
+
+		}
 
         public BambooScreen(Serial serial)
             : base(serial)
@@ -40,7 +42,9 @@ namespace Server.Items
             : base(0x24CB)
         {
             Weight = 20.0;
-        }
+			Name = "Paravent léger";
+
+		}
 
         public ShojiScreen(Serial serial)
             : base(serial)

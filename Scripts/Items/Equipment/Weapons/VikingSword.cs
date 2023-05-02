@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x13B9)
         {
             Weight = 6.0;
-        }
+			Name = "Épée Lourde";
+
+		}
 
         public VikingSword(Serial serial)
             : base(serial)
@@ -20,12 +22,12 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.CrushingBlow;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ParalyzingBlow;
-        public override int StrengthReq => 40;
-        public override int MinDamage => 15;
-        public override int MaxDamage => 19;
-        public override float Speed => 3.75f;
+		public override int StrengthReq => 25;
+		public override int MinDamage => 12;
+		public override int MaxDamage => 16;
+		public override float Speed => 3.00f;
 
-        public override int DefHitSound => 0x237;
+		public override int DefHitSound => 0x237;
         public override int DefMissSound => 0x23A;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 100;

@@ -7,7 +7,9 @@ namespace Server.Items
             : base(0xE9D, 0x52, 0x53)
         {
             Weight = 1.0;
-        }
+			Name = "Tambourine";
+
+		}
 
         public Tambourine(Serial serial)
             : base(serial)

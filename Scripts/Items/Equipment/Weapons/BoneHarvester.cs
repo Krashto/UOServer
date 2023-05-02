@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x26BB)
         {
             Weight = 3.0;
-        }
+			Name = "Serpe";
+
+		}
 
         public BoneHarvester(Serial serial)
             : base(serial)

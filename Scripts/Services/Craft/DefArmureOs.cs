@@ -28,8 +28,8 @@ namespace Server.Engines.Craft
 
         #region Constructor
         private DefBoneTailoring()
-            : base(1, 1, 1.25)// base( 1, 1, 4.5 )
-        {
+            : base(3, 4, 1.50)// base( 1, 1, 4.5 )
+		{
         }
 
         #endregion

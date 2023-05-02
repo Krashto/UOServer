@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x2D25)
         {
             Weight = 8.0;
-        }
+			Name = "Bâton sauvage";
+
+		}
 
         public WildStaff(Serial serial)
             : base(serial)

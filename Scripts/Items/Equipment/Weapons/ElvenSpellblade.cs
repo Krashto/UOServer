@@ -11,7 +11,8 @@ namespace Server.Items
             : base(0x2D20)
         {
             Weight = 5.0;
-            Layer = Layer.TwoHanded;
+            Layer = Layer.OneHanded;
+			Name = "Égorgeuse";
         }
 
         public ElvenSpellblade(Serial serial)

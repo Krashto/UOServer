@@ -9,8 +9,10 @@ namespace Server.Items
         public CompositeBow()
             : base(0x26C2)
         {
-            Weight = 5.0;
-        }
+            Weight = 6.0;
+			Name = "Arc composite";
+
+		}
 
         public CompositeBow(Serial serial)
             : base(serial)

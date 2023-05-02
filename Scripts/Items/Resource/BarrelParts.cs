@@ -22,6 +22,7 @@ namespace Server.Items
             : base(0x1DB8)
         {
             Weight = 2;
+			Name = "Couvercle de Tonneau";
         }
 
         public override void AddCraftedProperties(ObjectPropertyList list)
@@ -101,6 +102,7 @@ namespace Server.Items
             : base(0x1EB1)
         {
             Weight = 1;
+			Name = "Douve de Tonneau";
         }
 
         public override void AddCraftedProperties(ObjectPropertyList list)
@@ -179,6 +181,7 @@ namespace Server.Items
             : base(0x1DB7)
         {
             Weight = 5;
+			Name = "Cercle de Tonneau";
         }
 
         public override void AddCraftedProperties(ObjectPropertyList list)

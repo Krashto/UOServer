@@ -11,7 +11,9 @@ namespace Server.Items
             Weight = 11.0;
             UsesRemaining = 50;
             ShowUsesRemaining = true;
-        }
+			Name = "Pioche";
+
+		}
 
         public Pickaxe(Serial serial) : base(serial)
         {

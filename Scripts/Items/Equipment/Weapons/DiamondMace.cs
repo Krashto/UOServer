@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x2D24)
         {
             Weight = 10.0;
-        }
+			Name = "Masse diamant";
+
+		}
 
         public DiamondMace(Serial serial)
             : base(serial)

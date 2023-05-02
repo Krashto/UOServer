@@ -25,8 +25,10 @@ namespace Server.Mobiles
             public InternalBuyInfo(Mobile m)
             {
     
-                Add(new GenericBuyInfo(typeof(MortarPestle), 8, 10, 0xE9B, 0));
-				Add(new GenericBuyInfo(typeof(MortarPestlePoisoning), 8, 10, 0xE9B, 0));
+                Add(new GenericBuyInfo(typeof(MortarPestle), 8, 20, 0xE9B, 0));
+				Add(new GenericBuyInfo(typeof(MortarPestlePoisoning), 8, 20, 0xE9B, 0));
+				Add(new GenericBuyInfo(typeof(Bottle), 5, 999, 0xF0E, 0));
+
 
 
 				Add(new GenericBuyInfo(typeof(BlackPearl), 5, 999, 0xF7A, 0));

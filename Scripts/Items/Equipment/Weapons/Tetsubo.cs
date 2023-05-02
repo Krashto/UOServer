@@ -9,7 +9,9 @@ namespace Server.Items
         {
             Weight = 8.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Longue massue";
+
+		}
 
         public Tetsubo(Serial serial)
             : base(serial)

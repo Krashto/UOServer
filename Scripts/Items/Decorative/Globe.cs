@@ -25,7 +25,9 @@ namespace Server.Items
             : base(0x1047)// It isn't flipable
         {
             Weight = 3.0;
-        }
+			Name = "Globe terrestre";
+
+		}
 
         public override void AddCraftedProperties(ObjectPropertyList list)
         {

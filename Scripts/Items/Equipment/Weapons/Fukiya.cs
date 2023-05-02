@@ -17,7 +17,9 @@ namespace Server.Items
         {
             Weight = 4.0;
             Layer = Layer.OneHanded;
-        }
+			Name = "Bâton de frappe";
+
+		}
 
         public Fukiya(Serial serial)
             : base(serial)

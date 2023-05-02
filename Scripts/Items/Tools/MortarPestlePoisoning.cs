@@ -8,7 +8,7 @@ namespace Server.Items
         public MortarPestlePoisoning()
             : base(0xE9B)
         {
-			Name = "Mortar and Pestle (Poisoning)";
+			Name = "Mortier et pilon (poison)";
 			Hue = 77;
             Weight = 1.0;
         }
@@ -17,7 +17,7 @@ namespace Server.Items
         public MortarPestlePoisoning(int uses)
             : base(uses, 0xE9B)
         {
-			Name = "Mortar and Pestle (Poisoning)";
+			Name = "Mortier et pilon (poison)";
 			Hue = 77;
 			Weight = 1.0;
 		}

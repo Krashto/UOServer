@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 4.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Hache de guerre";
+
+		}
 
         public BattleAxe(Serial serial)
             : base(serial)

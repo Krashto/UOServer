@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x1443)
         {
             Weight = 8.0;
-        }
+			Name = "Hache à deux mains";
+
+		}
 
         public TwoHandedAxe(Serial serial)
             : base(serial)

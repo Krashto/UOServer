@@ -8,8 +8,10 @@ namespace Server.Items
         public FancyElvenArmoire()
             : base(0x2D07)
         {
-            Weight = 1.0;
-        }
+            Weight = 20.0;
+			Name = "Grande armoire travaillée";
+
+		}
 
         public FancyElvenArmoire(Serial serial)
             : base(serial)

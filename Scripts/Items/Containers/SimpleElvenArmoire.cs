@@ -1,3 +1,5 @@
+using Server.Mobiles;
+
 namespace Server.Items
 {
     [Furniture]
@@ -8,8 +10,10 @@ namespace Server.Items
         public SimpleElvenArmoire()
             : base(0x2D05)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Grande armoire élégante";
+
+		}
 
         public SimpleElvenArmoire(Serial serial)
             : base(serial)

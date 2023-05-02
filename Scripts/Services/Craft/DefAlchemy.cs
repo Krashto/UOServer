@@ -22,7 +22,7 @@ namespace Server.Engines.Craft
 
 		// public override int GumpTitleNumber => 1044001;
 
-		public override string GumpTitleString => "Alchemie";
+		public override string GumpTitleString => "Alchimie";
 
 
 		private static CraftSystem m_CraftSystem;
@@ -44,7 +44,7 @@ namespace Server.Engines.Craft
         }
 
         private DefAlchemy()
-            : base(1, 1, 1.25)// base( 1, 1, 3.1 )
+            : base(3, 4, 1.50)// base( 1, 1, 3.1 )
         {
         }
 
@@ -111,94 +111,94 @@ namespace Server.Engines.Craft
         {
             int index = -1;
 
-			index = AddCraft(typeof(LesserRefreshPotion), "Rafraichissement", "Potion de rafrai. mineure", 0.0, 25.0, typeof(BlackPearl), 1044353, 1, 1044361);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(LesserRefreshPotion), "Rafraichissement", "Potion de rafrai. mineure", 0.0, 25.0, typeof(BlackPearl), "Perle noire", 1, "Vous n'avez pas suffisament de perle noire");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(RefreshPotion), "Rafraichissement", "Potion de rafraichissement", 25.0, 50.0, typeof(BlackPearl), 1044353, 3, 1044361);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(RefreshPotion), "Rafraichissement", "Potion de rafraichissement", 25.0, 50.0, typeof(BlackPearl), "Perle noire", 3, "Vous n'avez pas suffisament de perle noire");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(GreaterRefreshPotion), "Rafraichissement", "Potion de rafrai. majeure", 50.0, 75.0, typeof(BlackPearl), 1044353, 5, 1044361);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(GreaterRefreshPotion), "Rafraichissement", "Potion de rafrai. majeure", 50.0, 75.0, typeof(BlackPearl), "Perle noire", 5, "Vous n'avez pas suffisament de perle noire");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(SuperiorRefreshPotion), "Rafraichissement", "Potion de rafrai. supérieure", 75.0, 100.0, typeof(BlackPearl), 1044353, 7, 1044361);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(SuperiorRefreshPotion), "Rafraichissement", "Potion de rafrai. supérieure", 75.0, 100.0, typeof(BlackPearl), "Perle noire", 7, "Vous n'avez pas suffisament de perle noire");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(LesserHealPotion), "Soin", "Potion de soin mineure", 0.0, 25.0, typeof(Ginseng), 1044356, 1, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(LesserHealPotion), "Soin", "Potion de soin mineure", 0.0, 25.0, typeof(Ginseng), "Ginseng", 1, "Vous n'avez pas suffisament de Ginseng");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(HealPotion), "Soin", "Potion de soin", 25.0, 50.0, typeof(Ginseng), 1044356, 3, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(HealPotion), "Soin", "Potion de soin", 25.0, 50.0, typeof(Ginseng), "Ginseng", 3, "Vous n'avez pas suffisament de Ginseng");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(GreaterHealPotion), "Soin", "Potion de soin majeure", 50.0, 75.0, typeof(Ginseng), 1044356, 5, 1044364);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(GreaterHealPotion), "Soin", "Potion de soin majeure", 50.0, 75.0, typeof(Ginseng), "Ginseng", 5, "Vous n'avez pas suffisament de Ginseng");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(SuperiorHealPotion), "Soin", "Potion de soin supérieure", 75.0, 100.0, typeof(Ginseng), 1044356, 7, 1044364);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(SuperiorHealPotion), "Soin", "Potion de soin supérieure", 75.0, 100.0, typeof(Ginseng), "Ginseng", 7, "Vous n'avez pas suffisament de Ginseng");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(LesserCurePotion), "Antidote", "Potion d'antidote mineure", 0.0, 25.0, typeof(Garlic), 1044355, 1, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(LesserCurePotion), "Antidote", "Potion d'antidote mineure", 0.0, 25.0, typeof(Garlic), "Ail", 1, "Vous n'avez pas suffisament d'Ail");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(CurePotion), "Antidote", "Potion d'antidote", 25.0, 50.0, typeof(Garlic), 1044355, 3, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(CurePotion), "Antidote", "Potion d'antidote", 25.0, 50.0, typeof(Garlic), "Ail", 3, "Vous n'avez pas suffisament d'Ail");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(GreaterCurePotion), "Antidote", "Potion d'antidote majeure", 50.0, 75.0, typeof(Garlic), 1044355, 5, 1044363);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(GreaterCurePotion), "Antidote", "Potion d'antidote majeure", 50.0, 75.0, typeof(Garlic), "Ail", 5, "Vous n'avez pas suffisament d'Ail");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(SuperiorCurePotion), "Antidote", "Potion d'antidote supérieure", 75.0, 100.0, typeof(Garlic), 1044355, 7, 1044363);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(SuperiorCurePotion), "Antidote", "Potion d'antidote supérieure", 75.0, 100.0, typeof(Garlic), "Ail", 7, "Vous n'avez pas suffisament d'Ail");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(LesserAgilityPotion), "Dextérité", "Potion de dextérité mineure", 0.0, 25.0, typeof(Bloodmoss), 1044354, 1, 1044362);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(LesserAgilityPotion), "Dextérité", "Potion de dextérité mineure", 0.0, 25.0, typeof(Bloodmoss), "Mousse de Sang", 1, "Vous n'avez pas suffisament de Mousse de sang");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(AgilityPotion), "Dextérité", "Potion de dextérité", 25.0, 50.0, typeof(Bloodmoss), 1044354, 3, 1044362);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(AgilityPotion), "Dextérité", "Potion de dextérité", 25.0, 50.0, typeof(Bloodmoss), "Mousse de Sang", 3, "Vous n'avez pas suffisament de Mousse de sang");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(GreaterAgilityPotion), "Dextérité", "Potion de dextérité majeure", 50.0, 75.0, typeof(Bloodmoss), 1044354, 5, 1044362);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(GreaterAgilityPotion), "Dextérité", "Potion de dextérité majeure", 50.0, 75.0, typeof(Bloodmoss), "Mousse de Sang", 5, "Vous n'avez pas suffisament de Mousse de sang");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(SuperiorAgilityPotion), "Dextérité", "Potion de dextérité supérieure", 75.0, 100.0, typeof(Bloodmoss), 1044354, 7, 1044362);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(SuperiorAgilityPotion), "Dextérité", "Potion de dextérité supérieure", 75.0, 100.0, typeof(Bloodmoss), "Mousse de Sang", 7, "Vous n'avez pas suffisament de Mousse de sang");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(LesserStrengthPotion), "Force", "Potion de force mineure", 0.0, 25.0, typeof(MandrakeRoot), 1044357, 1, 1044365);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(LesserStrengthPotion), "Force", "Potion de force mineure", 0.0, 25.0, typeof(MandrakeRoot), "Racine de Mandragore", 1, "Vous n'avez pas suffisament de Racine de Mandragore");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(StrengthPotion), "Force", "Potion de force", 25.0, 50.0, typeof(MandrakeRoot), 1044357, 3, 1044365);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(StrengthPotion), "Force", "Potion de force", 25.0, 50.0, typeof(MandrakeRoot), "Racine de Mandragore", 3, "Vous n'avez pas suffisament de Racine de Mandragore");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(GreaterStrengthPotion), "Force", "Potion de force majeure", 50.0, 75.0, typeof(MandrakeRoot), 1044357, 5, 1044365);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(GreaterStrengthPotion), "Force", "Potion de force majeure", 50.0, 75.0, typeof(MandrakeRoot), "Racine de Mandragore", 5, "Vous n'avez pas suffisament de Racine de Mandragore");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-			index = AddCraft(typeof(SuperiorStrengthPotion), "Force", "Potion de force supérieure", 75.0, 100.0, typeof(MandrakeRoot), 1044357, 7, 1044365);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(SuperiorStrengthPotion), "Force", "Potion de force supérieure", 75.0, 100.0, typeof(MandrakeRoot), "Racine de Mandragore", 7, "Vous n'avez pas suffisament de Racine de Mandragore");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
 			// Explosive
-			index = AddCraft(typeof(LesserExplosionPotion), "Explosion", "Potion explosive mineure", 5.0, 55.0, typeof(SulfurousAsh), 1044359, 3, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(LesserExplosionPotion), "Explosion", "Potion explosive mineure", 5.0, 55.0, typeof(SulfurousAsh), "Cendres sulfureuses", 3, "Vous n'avez pas assez de Cendres sulfureuses");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(ExplosionPotion), "Explosion", "Potion explosive", 35.0, 85.0, typeof(SulfurousAsh), 1044359, 5, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(ExplosionPotion), "Explosion", "Potion explosive", 35.0, 85.0, typeof(SulfurousAsh), "Cendres sulfureuses", 5, "Vous n'avez pas assez de Cendres sulfureuses");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(GreaterExplosionPotion), "Explosion", "Potion explosive majeure", 65.0, 115.0, typeof(SulfurousAsh), 1044359, 10, 1044367);
-            AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+            index = AddCraft(typeof(GreaterExplosionPotion), "Explosion", "Potion explosive majeure", 65.0, 115.0, typeof(SulfurousAsh), "Cendres sulfureuses", 10, "Vous n'avez pas assez de Cendres sulfureuses");
+            AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
-            index = AddCraft(typeof(ConflagrationPotion), "Explosion", "Potion incendière", 55.0, 105.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(GraveDust), 1023983, 5, 1044253);
+            index = AddCraft(typeof(ConflagrationPotion), "Explosion", "Potion incendière", 55.0, 105.0, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+            AddRes(index, typeof(GraveDust), "Poussière Blanche", 5, "Vous n'avez pas suffisament de Poussière Blanche");
 
-            index = AddCraft(typeof(GreaterConflagrationPotion), "Explosion", "Potion incendière majeure", 70.0, 120.0, typeof(Bottle), 1044529, 1, 500315);
-            AddRes(index, typeof(GraveDust), 1023983, 10, 1044253);
+            index = AddCraft(typeof(GreaterConflagrationPotion), "Explosion", "Potion incendière majeure", 70.0, 120.0, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+            AddRes(index, typeof(GraveDust), "Poussière Blanche", 10, "Vous n'avez pas suffisament de Poussière Blanche");
 
-            index = AddCraft(typeof(SmokeBomb), "Autres", "Smoke bomb", 90.0, 120.0, typeof(Eggs), 1044477, 1, 1044253);
-            AddRes(index, typeof(Ginseng), 1044356, 3, 1044364);
+            index = AddCraft(typeof(SmokeBomb), "Autres", "Bombe de Fumée", 90.0, 120.0, typeof(Eggs), "Oeuf", 1, "Vous n'avez pas suffisament d'oeuf");
+            AddRes(index, typeof(Ginseng), "Ginseng", 3, "Vous n'avez pas suffisament de Ginseng");
 
-			index = AddCraft(typeof(InvisibilityPotion), "Autres", "Potion d'invisibilité", 65.0, 115.0, typeof(Bottle), 1044529, 1, 500315);
-			AddRes(index, typeof(Bloodmoss), 1044354, 4, 1044362);
-			AddRes(index, typeof(Nightshade), 1044358, 3, 1044366);
+			index = AddCraft(typeof(InvisibilityPotion), "Autres", "Potion d'invisibilité", 65.0, 115.0, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+			AddRes(index, typeof(Bloodmoss), "Mousse de Sang", 4, "Vous n'avez pas suffisament de Mousse de sang");
+			AddRes(index, typeof(Nightshade), "Belladone", 3, "Vous n'avez pas suffisament de Belladone");
 
-			index = AddCraft(typeof(NightSightPotion), "Autres", "Potion de vision de nuit", -25.0, 25.0, typeof(SpidersSilk), 1044360, 1, 1044368);
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			index = AddCraft(typeof(NightSightPotion), "Autres", "Potion de vision de nuit", -25.0, 25.0, typeof(SpidersSilk), "Soie d'araignée", 1, "Vous n'avez pas suffisament de Soie d'araignée");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 			//Potions de souvenir
 			index = AddCraft(typeof(SouvenirAeromanciePotion), "Potion de souvenir", "Potion de souvenir aéromancien", 50.0, 100.0, typeof(SouvenirAeromancie), "Souvenir Ancestral: Aéromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
-			AddRes(index, typeof(Bottle), 1044529, 1, 500315);
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
 			index = AddCraft(typeof(HairDye), "Teinture pour cheveux", "Teinture à Cheveux", 75.0, 100.0, typeof(BacVide), "Bac à teinture", 1, "Il vous faut un bac à teinture");
 			AddRes(index, typeof(Charcoal), "Charbon", 5, "Vous n'avez pas suffisament de charbon");

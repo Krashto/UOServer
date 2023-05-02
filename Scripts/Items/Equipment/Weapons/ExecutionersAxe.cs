@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF45)
         {
             Weight = 8.0;
-        }
+			Name = "Hachette";
+
+		}
 
         public ExecutionersAxe(Serial serial)
             : base(serial)

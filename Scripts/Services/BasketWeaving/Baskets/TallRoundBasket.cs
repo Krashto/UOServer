@@ -9,7 +9,9 @@ namespace Server.Services.BasketWeaving.Baskets
             : base(0x24D8)
         {
             Weight = 1.0;
-        }
+			Name = "Panier haut tressé";
+
+		}
 
         public TallRoundBasket(Serial serial)
             : base(serial)

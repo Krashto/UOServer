@@ -9,7 +9,9 @@ namespace Server.Services.BasketWeaving.Baskets
             : base(0x09B1)
         {
             Weight = 1.0;
-        }
+			Name = "Petit panier rond avec poignées";
+
+		}
 
         public SmallBushel(Serial serial)
             : base(serial)

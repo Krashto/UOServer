@@ -1,7 +1,9 @@
 namespace Server.Items
 {
     [Furniture]
-    [TypeAlias("Server.Items.Easle")]
+	[Flipable(0xF66, 0xF68, 0xF6A)]
+
+	[TypeAlias("Server.Items.Easle")]
     public class EasleSouth : Item
     {
         [Constructable]
@@ -9,6 +11,7 @@ namespace Server.Items
             : base(0xF66)
         {
             Weight = 25.0;
+			Name = "Chevalet";
         }
 
         public EasleSouth(Serial serial)

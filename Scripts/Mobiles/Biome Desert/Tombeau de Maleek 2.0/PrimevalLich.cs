@@ -88,12 +88,12 @@ namespace Server.Mobiles
             AddLoot(LootPack.Meager);
         }
 
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
+        //public override void OnDeath(Container c)
+        //{
+        //    base.OnDeath(c);
 
-            c.DropItem(new PrimalLichDust());
-        }
+        //    c.DropItem(new PrimalLichDust());
+        //}
 
         public void ChangeCombatant()
         {

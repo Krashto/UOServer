@@ -11,6 +11,7 @@ namespace Server.Items
             : base(0x26C0)
         {
             Weight = 12.0;
+			Layer = Layer.TwoHanded;
         }
 
         public Lance(Serial serial)
@@ -33,7 +34,7 @@ namespace Server.Items
         public override int InitMaxHits => 110;
         public override SkillName DefSkill => SkillName.Fencing;
         public override WeaponType DefType => WeaponType.Piercing;
-        public override WeaponAnimation DefAnimation => WeaponAnimation.Pierce1H;
+		public override WeaponAnimation DefAnimation => WeaponAnimation.Pierce2H;
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

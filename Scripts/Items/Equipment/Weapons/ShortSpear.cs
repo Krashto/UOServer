@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x1403)
         {
             Weight = 4.0;
-        }
+			Name = "Lance courte";
+
+		}
 
         public ShortSpear(Serial serial)
             : base(serial)

@@ -848,7 +848,9 @@ namespace Server.Items
             : base(0x9A9)
         {
             Weight = 2.0;
-        }
+			Name = "Petite caisse";
+
+		}
 
         /// <summary>
         /// Due to popular demand, ServUO will be reproducing an EA bug that was never fixed.
@@ -913,7 +915,9 @@ namespace Server.Items
             : base(0xE3F)
         {
             Weight = 2.0;
-        }
+			Name = "Moyenne caisse";
+
+		}
 
         public MediumCrate(Serial serial)
             : base(serial)
@@ -944,7 +948,9 @@ namespace Server.Items
             : base(0xE3D)
         {
             Weight = 1.0;
-        }
+			Name = "Grande caisse";
+
+		}
 
         public LargeCrate(Serial serial)
             : base(serial)
@@ -1125,8 +1131,10 @@ namespace Server.Items
         public WoodenChest()
             : base(0xe43)
         {
-            Weight = 2.0;
-        }
+            Weight = 15.0;
+			Name = "Coffre en bois";
+
+		}
 
         public WoodenChest(Serial serial)
             : base(serial)
@@ -1156,7 +1164,10 @@ namespace Server.Items
         public PlainWoodenChest()
             : base(0x280B)
         {
-        }
+			Name = "Grand coffre simple";
+			Weight = 15;
+
+		}
 
         public PlainWoodenChest(Serial serial)
             : base(serial)
@@ -1186,7 +1197,10 @@ namespace Server.Items
         public OrnateWoodenChest()
             : base(0x280D)
         {
-        }
+			Name = "Grand coffre orné";
+			Weight = 15;
+
+		}
 
         public OrnateWoodenChest(Serial serial)
             : base(serial)
@@ -1216,7 +1230,10 @@ namespace Server.Items
         public GildedWoodenChest()
             : base(0x280F)
         {
-        }
+			Weight = 15;
+			Name = "Grand coffre renforcé";
+
+		}
 
         public GildedWoodenChest(Serial serial)
             : base(serial)
@@ -1247,7 +1264,10 @@ namespace Server.Items
             : base(0x2811)
         {
             GumpID = 0x10B;
-        }
+			Name = "Coffre à chaussures";
+			Weight = 10;
+
+		}
 
         public WoodenFootLocker(Serial serial)
             : base(serial)
@@ -1283,7 +1303,10 @@ namespace Server.Items
         public FinishedWoodenChest()
             : base(0x2813)
         {
-        }
+			Name = "Grand coffre";
+			Weight = 20;
+
+		}
 
         public FinishedWoodenChest(Serial serial)
             : base(serial)
@@ -1313,8 +1336,10 @@ namespace Server.Items
         public Chest()
             : base(0x4026)
         {
-            Weight = 1.0;
-        }
+            Weight = 15.0;
+			Name = "Coffre";
+
+		}
 
         public Chest(Serial serial)
             : base(serial)
@@ -1346,7 +1371,9 @@ namespace Server.Items
             : base(0xA99)
         {
             Weight = 11.0;
-        }
+			Name = "Bibliothèque académique";
+
+		}
 
         public AcademicBookCase(Serial serial)
             : base(serial)

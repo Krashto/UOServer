@@ -129,29 +129,28 @@ namespace Server.Mobiles
 
 
 				Add(typeof(Citrine), 5);
-				Add(typeof(Amber), 10);
-				Add(typeof(Tourmaline), 25);
-				Add(typeof(Ruby), 50);
-				Add(typeof(Amethyst), 75);
-				Add(typeof(Sapphire), 100);
-				Add(typeof(StarSapphire), 150);
-				Add(typeof(Emerald), 200);
-				Add(typeof(Diamond), 250);
+				Add(typeof(Amber), 8);
+				Add(typeof(Tourmaline), 12);
+				Add(typeof(Ruby), 15);
+				Add(typeof(Amethyst), 18);
+				Add(typeof(Sapphire), 21);
+				Add(typeof(StarSapphire), 25);
+				Add(typeof(Emerald), 28);
+				Add(typeof(Diamond), 31);
 
-
-				Add(typeof(GoldRing), 13);
-                Add(typeof(SilverRing), 10);
-                Add(typeof(Necklace), 13);
-                Add(typeof(GoldNecklace), 13);
-                Add(typeof(GoldBeadNecklace), 13);
-                Add(typeof(SilverNecklace), 10);
-                Add(typeof(SilverBeadNecklace), 10);
-                Add(typeof(Beads), 13);
-                Add(typeof(GoldBracelet), 13);
-                Add(typeof(SilverBracelet), 10);
-                Add(typeof(GoldEarrings), 13);
-                Add(typeof(SilverEarrings), 10);
-            }
+				Add(typeof(GoldRing), 7);
+				Add(typeof(SilverRing), 5);
+				Add(typeof(Necklace), 5);
+				Add(typeof(GoldNecklace), 7);
+				Add(typeof(GoldBeadNecklace), 7);
+				Add(typeof(SilverNecklace), 6);
+				Add(typeof(SilverBeadNecklace), 6);
+				Add(typeof(Beads), 5);
+				Add(typeof(GoldBracelet), 7);
+				Add(typeof(SilverBracelet), 6);
+				Add(typeof(GoldEarrings), 7);
+				Add(typeof(SilverEarrings), 6);
+			}
         }
     }
 }

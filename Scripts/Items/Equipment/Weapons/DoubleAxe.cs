@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF4B)
         {
             Weight = 8.0;
-        }
+			Name = "Hache double";
+
+		}
 
         public DoubleAxe(Serial serial)
             : base(serial)

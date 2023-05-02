@@ -12,6 +12,7 @@ namespace Server.Items
         {
             Weight = 5.0;
             Layer = Layer.TwoHanded;
+			Name = "Griffes";
         }
 
         public Tekagi(Serial serial)

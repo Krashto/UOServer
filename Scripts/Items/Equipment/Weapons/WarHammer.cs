@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 10.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Dispenseur";
+
+		}
 
         public WarHammer(Serial serial)
             : base(serial)

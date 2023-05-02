@@ -415,7 +415,9 @@ namespace Server.Items
         public PewterMug()
         {
             Weight = 1.0;
-        }
+			Name = "Chope en étain";
+
+		}
 
         [Constructable]
         public PewterMug(BeverageType type)
@@ -461,7 +463,10 @@ namespace Server.Items
         public Goblet()
         {
             Weight = 1.0;
-        }
+			Name = "Gobelet";
+
+
+		}
 
         [Constructable]
         public Goblet(BeverageType type)

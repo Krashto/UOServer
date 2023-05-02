@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0xDF0)
         {
             Weight = 6.0;
-        }
+			Name = "Bâton noir";
+
+		}
 
         public BlackStaff(Serial serial)
             : base(serial)

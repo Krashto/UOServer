@@ -11,6 +11,7 @@ namespace Server.Items
             : base(0xF52)
         {
             Weight = 1.0;
+			Name = "Dague";
         }
 
         public Dagger(Serial serial)

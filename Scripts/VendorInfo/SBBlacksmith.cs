@@ -18,26 +18,29 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(IronIngot), 5, 16, 0x1BF2, 0, true));
                 Add(new GenericBuyInfo(typeof(SmithHammer), 13, 14, 0x13E3, 0));
 
-                Add(new GenericBuyInfo(typeof(BronzeShield), 66, 20, 0x1B72, 0));
-                //Add(new GenericBuyInfo(typeof(Buckler), 50, 20, 0x1B73, 0));
-                //Add(new GenericBuyInfo(typeof(MetalKiteShield), 123, 20, 0x1B74, 0));
-                //Add(new GenericBuyInfo(typeof(HeaterShield), 231, 20, 0x1B76, 0));
-                //Add(new GenericBuyInfo(typeof(WoodenKiteShield), 70, 20, 0x1B78, 0));
-                //Add(new GenericBuyInfo(typeof(MetalShield), 121, 20, 0x1B7B, 0));
+                Add(new GenericBuyInfo(typeof(BronzeShield), 50, 20, 0x1B72, 0));
+				Add(new GenericBuyInfo(typeof(TrainingSword), 50, 20, 0xF5E, 0));
+				Add(new GenericBuyInfo(typeof(TrainingKryss), 50, 20, 0x1401, 0));
+				Add(new GenericBuyInfo(typeof(TrainingMace), 50, 20, 0xF5C, 0));
+				//Add(new GenericBuyInfo(typeof(Buckler), 50, 20, 0x1B73, 0));
+				//Add(new GenericBuyInfo(typeof(MetalKiteShield), 123, 20, 0x1B74, 0));
+				//Add(new GenericBuyInfo(typeof(HeaterShield), 231, 20, 0x1B76, 0));
+				//Add(new GenericBuyInfo(typeof(WoodenKiteShield), 70, 20, 0x1B78, 0));
+				//Add(new GenericBuyInfo(typeof(MetalShield), 121, 20, 0x1B7B, 0));
 
-                //Add(new GenericBuyInfo(typeof(WoodenShield), 30, 20, 0x1B7A, 0));
+				//Add(new GenericBuyInfo(typeof(WoodenShield), 30, 20, 0x1B7A, 0));
 
-                //Add(new GenericBuyInfo(typeof(PlateGorget), 104, 20, 0x1413, 0));
-                //Add(new GenericBuyInfo(typeof(PlateChest), 243, 20, 0x1415, 0));
-                //Add(new GenericBuyInfo(typeof(PlateLegs), 218, 20, 0x1411, 0));
-                //Add(new GenericBuyInfo(typeof(PlateArms), 188, 20, 0x1410, 0));
-                //Add(new GenericBuyInfo(typeof(PlateGloves), 155, 20, 0x1414, 0));
+				//Add(new GenericBuyInfo(typeof(PlateGorget), 104, 20, 0x1413, 0));
+				//Add(new GenericBuyInfo(typeof(PlateChest), 243, 20, 0x1415, 0));
+				//Add(new GenericBuyInfo(typeof(PlateLegs), 218, 20, 0x1411, 0));
+				//Add(new GenericBuyInfo(typeof(PlateArms), 188, 20, 0x1410, 0));
+				//Add(new GenericBuyInfo(typeof(PlateGloves), 155, 20, 0x1414, 0));
 
-                //Add(new GenericBuyInfo(typeof(PlateHelm), 21, 20, 0x1412, 0));
-                //Add(new GenericBuyInfo(typeof(CloseHelm), 18, 20, 0x1408, 0));
-                //Add(new GenericBuyInfo(typeof(CloseHelm), 18, 20, 0x1409, 0));
-                //Add(new GenericBuyInfo(typeof(Helmet), 31, 20, 0x140A, 0));
-                Add(new GenericBuyInfo(typeof(Helmet), 18, 20, 0x140B, 0));
+				//Add(new GenericBuyInfo(typeof(PlateHelm), 21, 20, 0x1412, 0));
+				//Add(new GenericBuyInfo(typeof(CloseHelm), 18, 20, 0x1408, 0));
+				//Add(new GenericBuyInfo(typeof(CloseHelm), 18, 20, 0x1409, 0));
+				//Add(new GenericBuyInfo(typeof(Helmet), 31, 20, 0x140A, 0));
+				Add(new GenericBuyInfo(typeof(Helmet), 18, 20, 0x140B, 0));
                 //Add(new GenericBuyInfo(typeof(NorseHelm), 18, 20, 0x140E, 0));
                 //Add(new GenericBuyInfo(typeof(NorseHelm), 18, 20, 0x140F, 0));
                 //Add(new GenericBuyInfo(typeof(Bascinet), 18, 20, 0x140C, 0));

@@ -13,7 +13,9 @@ namespace Server.Items
             Duration = TimeSpan.Zero; // Never burnt out
             Burning = false;
             Light = LightType.Circle300;
-            Weight = 3.0;
+			Name = "Lanterne rouge suspendue";
+
+			Weight = 3.0;
         }
 
         public RedHangingLantern(Serial serial)

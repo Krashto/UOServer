@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0x26BC)
         {
             Weight = 8.0;
-        }
+			Name = "Sceptre";
+
+		}
 
         public Scepter(Serial serial)
             : base(serial)

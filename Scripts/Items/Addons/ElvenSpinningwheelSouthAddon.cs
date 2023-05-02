@@ -9,7 +9,9 @@ namespace Server.Items
         public ElvenSpinningwheelSouthAddon()
         {
             AddComponent(new AddonComponent(0x2E3F), 0, 0, 0);
-        }
+			Name = "Rouet élégant";
+
+		}
 
         public ElvenSpinningwheelSouthAddon(Serial serial)
             : base(serial)
@@ -107,7 +109,8 @@ namespace Server.Items
         [Constructable]
         public ElvenSpinningwheelSouthDeed()
         {
-        }
+			Name = "Rouet élégant";
+		}
 
         public ElvenSpinningwheelSouthDeed(Serial serial)
             : base(serial)

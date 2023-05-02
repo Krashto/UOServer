@@ -11,8 +11,10 @@ namespace Server.Items
             : base(0x2D2F)
         {
             Weight = 10.0;
-            Layer = Layer.TwoHanded;
-        }
+            Layer = Layer.OneHanded;
+			Name = "Éclat lunaire";
+
+		}
 
         public WarCleaver(Serial serial)
             : base(serial)

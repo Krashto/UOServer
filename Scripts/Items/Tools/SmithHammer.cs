@@ -48,7 +48,9 @@ namespace Server.Items
         {
             Weight = 8.0;
             ShowUsesRemaining = true;
-        }
+			Name = "Marteau de forgeron";
+
+		}
 
         #region ITool Members
         public CraftSystem CraftSystem => DefBlacksmithy.CraftSystem;

@@ -1,13 +1,15 @@
 namespace Server.Items
 {
     [Furniture]
-    public class TallMusicStandLeft : Item
+	[Flipable(0xEBB, 0xEBC)]
+	public class TallMusicStandLeft : Item
     {
         [Constructable]
         public TallMusicStandLeft()
             : base(0xEBB)
         {
             Weight = 10.0;
+			Name = "Grand Lutrin";
         }
 
         public TallMusicStandLeft(Serial serial)
@@ -57,13 +59,15 @@ namespace Server.Items
     }
 
     [Furniture]
-    public class ShortMusicStandLeft : Item
+	[Flipable(0xEB6, 0xEB8)]
+	public class ShortMusicStandLeft : Item
     {
         [Constructable]
         public ShortMusicStandLeft()
             : base(0xEB6)
         {
             Weight = 10.0;
+			Name = "Petit Lutrin";
         }
 
         public ShortMusicStandLeft(Serial serial)

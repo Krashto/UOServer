@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 8.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Les jumelles";
+
+		}
 
         public Daisho(Serial serial)
             : base(serial)

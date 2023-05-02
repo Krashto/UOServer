@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0x13B4)
         {
             Weight = 9.0;
-        }
+			Name = "Massue";
+
+		}
 
         public Club(Serial serial)
             : base(serial)

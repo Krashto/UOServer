@@ -15,7 +15,9 @@ namespace Server.Items
         {
             Unknown = true;
             UpdateWeight();
-        }
+			Name = "Tonnelet de potion";
+
+		}
 
         public PotionKeg(Serial serial)
             : base(serial)

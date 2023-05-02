@@ -9,9 +9,11 @@ namespace Server.Items
         public Yumi()
             : base(0x27A5)
         {
-            Weight = 8.0;
+            Weight = 6.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Arc long";
+
+		}
 
         public Yumi(Serial serial)
             : base(serial)
@@ -24,8 +26,8 @@ namespace Server.Items
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorPierce;
         public override WeaponAbility SecondaryAbility => WeaponAbility.DoubleShot;
         public override int StrengthReq => 35;
-        public override int MinDamage => 13;
-        public override int MaxDamage => 17;
+        public override int MinDamage => 16;
+        public override int MaxDamage => 20;
         public override float Speed => 3.25f;
 
         public override int DefMaxRange => 10;

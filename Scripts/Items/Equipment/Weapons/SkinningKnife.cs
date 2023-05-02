@@ -8,7 +8,9 @@ namespace Server.Items
             : base(0xEC4)
         {
             Weight = 1.0;
-        }
+			Name = "Couteau à dépecer";
+
+		}
 
         public SkinningKnife(Serial serial)
             : base(serial)

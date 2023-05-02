@@ -105,7 +105,8 @@ namespace Server.Items
         public DartBoardEastAddon()
         {
             AddComponent(new DartBoard(true), 0, 0, 0);
-        }
+			Name = "Jeu de Dards";
+		}
 
         public DartBoardEastAddon(Serial serial)
             : base(serial)
@@ -133,6 +134,7 @@ namespace Server.Items
         [Constructable]
         public DartBoardEastDeed()
         {
+			Name = "Jeu de Dards";
         }
 
         public DartBoardEastDeed(Serial serial)
@@ -162,7 +164,8 @@ namespace Server.Items
         public DartBoardSouthAddon()
         {
             AddComponent(new DartBoard(false), 0, 0, 0);
-        }
+			Name = "Jeu de dards";
+		}
 
         public DartBoardSouthAddon(Serial serial)
             : base(serial)
@@ -190,7 +193,9 @@ namespace Server.Items
         [Constructable]
         public DartBoardSouthDeed()
         {
-        }
+			Name = "Jeu de dards";
+
+		}
 
         public DartBoardSouthDeed(Serial serial)
             : base(serial)

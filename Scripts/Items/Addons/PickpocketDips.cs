@@ -167,9 +167,11 @@ namespace Server.Items
         public PickpocketDipEastAddon()
         {
             AddComponent(new PickpocketDip(0x1EC3), 0, 0, 0);
-        }
+			Name = "Mannequin de vol à la tir";
 
-        public PickpocketDipEastAddon(Serial serial)
+		}
+
+		public PickpocketDipEastAddon(Serial serial)
             : base(serial)
         {
         }
@@ -195,7 +197,9 @@ namespace Server.Items
         [Constructable]
         public PickpocketDipEastDeed()
         {
-        }
+			Name = "Mannequin de vol à la tir";
+
+		}
 
         public PickpocketDipEastDeed(Serial serial)
             : base(serial)
@@ -225,9 +229,11 @@ namespace Server.Items
         public PickpocketDipSouthAddon()
         {
             AddComponent(new PickpocketDip(0x1EC0), 0, 0, 0);
-        }
+			Name = "Mannequin de vol à la tir";
 
-        public PickpocketDipSouthAddon(Serial serial)
+		}
+
+		public PickpocketDipSouthAddon(Serial serial)
             : base(serial)
         {
         }
@@ -253,9 +259,11 @@ namespace Server.Items
         [Constructable]
         public PickpocketDipSouthDeed()
         {
-        }
+			Name = "Mannequin de vol à la tir";
 
-        public PickpocketDipSouthDeed(Serial serial)
+		}
+
+		public PickpocketDipSouthDeed(Serial serial)
             : base(serial)
         {
         }

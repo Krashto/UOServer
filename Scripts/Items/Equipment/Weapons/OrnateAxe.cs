@@ -12,7 +12,9 @@ namespace Server.Items
         {
             Weight = 12.0;
             Layer = Layer.TwoHanded;
-        }
+			Name = "Hache ornée";
+
+		}
 
         public OrnateAxe(Serial serial)
             : base(serial)

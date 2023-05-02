@@ -237,7 +237,9 @@ namespace Server.Items
             : base(0x9F8)
         {
             Weight = 1.0;
-        }
+			Name = "Cuillère (G)";
+
+		}
 
         public SpoonLeft(Serial serial)
             : base(serial)
@@ -266,7 +268,9 @@ namespace Server.Items
             : base(0x9F9)
         {
             Weight = 1.0;
-        }
+			Name = "Cuillière (D)";
+
+		}
 
         public SpoonRight(Serial serial)
             : base(serial)
@@ -383,7 +387,9 @@ namespace Server.Items
             : base(0x9D7)
         {
             Weight = 1.0;
-        }
+			Name = "Assiette décorative";
+
+		}
 
         public Plate(Serial serial)
             : base(serial)

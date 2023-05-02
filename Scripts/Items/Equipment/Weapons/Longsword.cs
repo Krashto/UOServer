@@ -11,7 +11,9 @@ namespace Server.Items
             : base(0xF61)
         {
             Weight = 7.0;
-        }
+			Name = "Épée longue";
+
+		}
 
         public Longsword(Serial serial)
             : base(serial)
@@ -20,12 +22,12 @@ namespace Server.Items
 
         public override WeaponAbility PrimaryAbility => WeaponAbility.ArmorIgnore;
         public override WeaponAbility SecondaryAbility => WeaponAbility.ConcussionBlow;
-        public override int StrengthReq => 35;
-        public override int MinDamage => 14;
-        public override int MaxDamage => 18;
-        public override float Speed => 3.50f;
+		public override int StrengthReq => 25;
+		public override int MinDamage => 10;
+		public override int MaxDamage => 14;
+		public override float Speed => 2.50f;
 
-        public override int DefHitSound => 0x237;
+		public override int DefHitSound => 0x237;
         public override int DefMissSound => 0x23A;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 110;
