@@ -52,7 +52,7 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-
+//public override int TreasureMapLevel
 		//	Fame = 5000;  //Guessing here
         //    Karma = 5000;  //Guessing here
 
