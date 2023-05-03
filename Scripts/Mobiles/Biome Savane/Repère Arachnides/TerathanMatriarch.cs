@@ -45,7 +45,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 10;
 		public override Biome Biome => Biome.Savane;
-		public override int TreasureMapLevel => 4;
+		//public override int TreasureMapLevel => 4;
 
 		public override int Hides => 10;
 		public override HideType HideType => HideType.Arachnide;

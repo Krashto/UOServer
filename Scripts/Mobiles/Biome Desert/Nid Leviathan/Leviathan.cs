@@ -137,7 +137,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Desert;
 		public override double TreasureMapChance => 0.25;
 
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public override void OnActionCombat()
         {

@@ -147,7 +147,7 @@ namespace Server.Mobiles
         {
         }
 
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public override void Serialize(GenericWriter writer)
         {

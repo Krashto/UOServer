@@ -52,7 +52,7 @@ namespace Server.Mobiles
 		}
 
 		public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
         public override int Meat => 2;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Regular;

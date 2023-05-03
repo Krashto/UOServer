@@ -62,7 +62,7 @@ namespace Server.Mobiles
 		public override bool StatLossAfterTame => true;
         public override bool ReacquireOnMovement => !Controlled;
         public override bool AutoDispel => !Controlled;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override int Meat => 19;
 		/*        public override int Hides => 30;
 				public override HideType HideType => HideType.Barbed;

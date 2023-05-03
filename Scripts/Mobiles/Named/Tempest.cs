@@ -52,7 +52,7 @@ namespace Server.Mobiles
 
         public override bool BleedImmune => true;
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {

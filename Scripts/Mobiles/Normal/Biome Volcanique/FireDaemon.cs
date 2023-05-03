@@ -59,7 +59,7 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Demoniaque;
 		public override bool CanRummageCorpses => true;
         public override Poison PoisonImmune => Poison.Regular;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int Meat => 1;
 
 

@@ -52,7 +52,7 @@ namespace Server.Mobiles
         }
 
         public override bool ReacquireOnMovement => true;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int Meat => 19;
         public override int DragonBlood => 8;
 		public override int Hides => 12;

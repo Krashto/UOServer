@@ -44,7 +44,7 @@ namespace Server.Mobiles
                 c.DropItem(new LuckyDagger());
         }
 
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override int Meat => 10;
 
 		public override int Hides => 8;

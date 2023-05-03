@@ -58,7 +58,7 @@ namespace Server.Mobiles
         public override bool ReacquireOnMovement => true;
         public override bool AttacksFocus => true;
         public override bool CanFlee => false;
-        public override int TreasureMapLevel => 7;
+        //public override int TreasureMapLevel => 7;
 
         // Missing Tail Swipe Ability
 
@@ -363,7 +363,7 @@ namespace Server.Mobiles
         public override bool AutoDispel => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override bool UseSmartAI => true;
-        public override int TreasureMapLevel => 7;
+        //public override int TreasureMapLevel => 7;
 
         public GreatApe(Serial serial)
             : base(serial)

@@ -69,7 +69,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Colline;
-		public override int TreasureMapLevel => 5;
+		////public override int TreasureMapLevel => 5;
 
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies;
         public override bool CanAngerOnTame => true;

@@ -61,7 +61,7 @@ namespace Server.Mobiles
         public override bool AutoDispel => !Controlled;
         public override Poison PoisonImmune => Poison.Deadly;
         public override Poison HitPoison => Poison.Deadly;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override int Meat => 19;
 		//    public override int Hides => 20;
 		//     public override int Scales => 10;

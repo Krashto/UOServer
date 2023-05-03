@@ -65,7 +65,7 @@ namespace Server.Mobiles
 
         public override Poison HitPoison => 0.8 >= Utility.RandomDouble() ? Poison.Greater : Poison.Deadly;
 
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public override bool AlwaysMurderer => true;
 

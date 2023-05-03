@@ -42,7 +42,7 @@ namespace Server.Mobiles
 
         public override Poison HitPoison => Poison.Lesser;
         public override Poison PoisonImmune => Poison.Lesser;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public override void GenerateLoot()
         {

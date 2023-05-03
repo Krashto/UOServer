@@ -42,7 +42,7 @@ namespace Server.Mobiles
 
         public override Poison PoisonImmune => Poison.Regular;
 
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Geant;
 

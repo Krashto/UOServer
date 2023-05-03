@@ -82,7 +82,7 @@ namespace Server.Mobiles
 
         public override int Meat => 2;
         public override FoodType FavoriteFood => FoodType.Meat;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public override void GenerateLoot()
         {

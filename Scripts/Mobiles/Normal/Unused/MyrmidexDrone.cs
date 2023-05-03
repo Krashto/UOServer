@@ -61,7 +61,7 @@ namespace Server.Mobiles
         public override int Meat => 4;
         public override Poison HitPoison => Poison.Regular;
         public override Poison PoisonImmune => Poison.Regular;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public override bool IsEnemy(Mobile m)
         {

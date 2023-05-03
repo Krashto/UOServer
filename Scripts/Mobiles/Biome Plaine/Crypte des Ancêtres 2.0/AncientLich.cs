@@ -61,7 +61,7 @@ namespace Server.Mobiles
 		
         public override Poison PoisonImmune => Poison.Lethal;
 		
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
 /*		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.;

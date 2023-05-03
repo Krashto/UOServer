@@ -60,7 +60,7 @@ namespace Server.Mobiles
 
         public override bool CanAngerOnTame => true;
         public override bool ReacquireOnMovement => !Controlled;
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override int Meat => 10;
 
 

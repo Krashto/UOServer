@@ -211,7 +211,7 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Greater;
 
 		public override bool Unprovokable => true;
-		public override int TreasureMapLevel => 5;
+		//public override int TreasureMapLevel => 5;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Geant;
 		public override int Bones => 8;

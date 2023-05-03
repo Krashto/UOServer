@@ -58,7 +58,7 @@ namespace Server.Mobiles
 		public override int Level => 7;
 		public override Biome Biome => Biome.Montagne;
 		public override bool StatLossAfterTame => true;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override int Meat => 16;
         public override int Hides => 60;
         public override FoodType FavoriteFood => FoodType.Meat;

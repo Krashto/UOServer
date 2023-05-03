@@ -52,7 +52,7 @@ namespace Server.Mobiles
         public override double DispelDifficulty => 117.5;
         public override double DispelFocus => 45.0;
         public override bool BleedImmune => true;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public override void GenerateLoot()
         {

@@ -55,7 +55,7 @@ namespace Server.Mobiles
         {
         }
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
         public override int Meat => 10;
 
 		public override int Hides => 8;

@@ -62,7 +62,7 @@ namespace Server.Mobiles
         public override int Meat => 6;
         public override MeatType MeatType => MeatType.DinoRibs;
         public override int Hides => 11;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public Anchisaur(Serial serial)
             : base(serial)

@@ -95,7 +95,7 @@ namespace Server.Mobiles
 			AddLoot(LootPack.Average);
 			  
 	}
-		public override int TreasureMapLevel => 3;
+		//public override int TreasureMapLevel => 3;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);

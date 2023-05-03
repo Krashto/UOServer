@@ -51,7 +51,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Desert;
 		public override bool BleedImmune => true;
         public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int GetDeathSound()
         {
             return 0x370;

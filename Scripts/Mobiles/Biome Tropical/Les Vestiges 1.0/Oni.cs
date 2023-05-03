@@ -48,7 +48,7 @@ namespace Server.Mobiles
 		public override int Level => 8;
 		public override Biome Biome => Biome.Tropique;
 		public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int GetAngerSound()
         {
             return 0x4E3;

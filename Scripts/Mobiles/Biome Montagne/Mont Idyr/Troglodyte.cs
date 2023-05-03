@@ -47,7 +47,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 7;
 		public override Biome Biome => Biome.Montagne;
-		public override int TreasureMapLevel => 2;
+		//public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {

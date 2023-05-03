@@ -50,7 +50,7 @@ namespace Server.Mobiles
         }
 
         public override bool StatLossAfterTame => true;
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override int Meat => 16;
         public override int Hides => 60;
         public override FoodType FavoriteFood => FoodType.Meat;

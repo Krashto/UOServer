@@ -53,7 +53,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Desert;
 		public override int Meat => 5;
         public override MeatType MeatType => MeatType.SeaSerpentSteak;
-        public override int TreasureMapLevel => Utility.RandomList(1, 2);
+        //public override int TreasureMapLevel => Utility.RandomList(1, 2);
 
 
 		public override int Hides => 12;

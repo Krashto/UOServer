@@ -57,7 +57,7 @@ namespace Server.Mobiles
 		public override int Level => 12;
 		public override Biome Biome => Biome.Foret;
 		public override Poison PoisonImmune => Poison.Greater;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
 
         public override TribeType Tribe => TribeType.Ophidian;
 

@@ -47,7 +47,7 @@ namespace Server.Mobiles
 		public override int Level => 10;
 		public override Biome Biome => Biome.Montagne;
 		public override bool BleedImmune => true;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public void AuraEffect(Mobile m)
         {

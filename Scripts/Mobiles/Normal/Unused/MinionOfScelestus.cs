@@ -55,7 +55,7 @@ namespace Server.Mobiles
             AddLoot(LootPack.UltraRich);
         }
 
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override Poison PoisonImmune => Poison.Parasitic;
         public override Poison HitPoison => Poison.Lethal;
         public override bool TaintedLifeAura => true;

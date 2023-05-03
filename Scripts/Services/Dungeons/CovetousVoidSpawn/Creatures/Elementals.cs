@@ -170,7 +170,7 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
         public override double HitPoisonChance => 0.75;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public VenomElemental(Serial serial) : base(serial)
         {

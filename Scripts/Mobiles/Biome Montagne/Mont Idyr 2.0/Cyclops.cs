@@ -49,7 +49,7 @@ namespace Server.Mobiles
 		public override int Bones => 8;
 		public override BoneType BoneType => BoneType.Geant;
 		public override int Meat => 4;
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);

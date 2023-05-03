@@ -226,7 +226,7 @@ namespace Server.Mobiles
 		{
 		}
 		public override int Meat => 4;
-		public override int TreasureMapLevel => 5;
+		//public override int TreasureMapLevel => 5;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Ancien;
 		public override int Bones => 8;

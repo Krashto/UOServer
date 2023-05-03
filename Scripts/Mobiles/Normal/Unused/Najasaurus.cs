@@ -46,7 +46,7 @@ namespace Server.Mobiles
         public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Lethal;
         public override bool CanAngerOnTame => true;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
         public override int Meat => 15;
         public override MeatType MeatType => MeatType.DinoRibs;
 

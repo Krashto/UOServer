@@ -53,7 +53,7 @@ namespace Server.Mobiles
 		public override int Level => 18;
 		public override Biome Biome => Biome.Savane;
 		public override bool AutoDispel => true;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override bool HasFireRing => true;
         public override double FireRingChance => 0.1;
 

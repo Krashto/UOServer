@@ -45,7 +45,7 @@ namespace Server.Mobiles
         public override double DispelFocus => 45.0;
         public override bool CanRummageCorpses => true;
         public override Poison PoisonImmune => Poison.Regular;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int Meat => 5;
 		public override int Hides => 6;
 		public override HideType HideType => HideType.Demoniaque;

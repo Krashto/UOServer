@@ -1,6 +1,7 @@
 using Server.Engines.Craft;
 using Server.Network;
 using System;
+using System.Collections.Generic;
 
 namespace Server.Items
 {
@@ -91,10 +92,14 @@ namespace Server.Items
 
         public int GetUsesScalar()
         {
-            if (m_Quality == ItemQuality.Exceptional)
-                return 200;
+			if (m_Quality == ItemQuality.Exceptional)
+				return 150;
+			else if (m_Quality == ItemQuality.Epic)
+				return 200;
+			else if (m_Quality == ItemQuality.Legendary)
+				return 300;
 
-            return 100;
+			return 100;
         }
 
         public bool ShowUsesRemaining
@@ -129,13 +134,17 @@ namespace Server.Items
             if (m_Crafter != null)
                 list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
 
-            if (m_Quality == ItemQuality.Exceptional)
-                list.Add(1060636); // exceptional
-        }
+			if (m_Quality == ItemQuality.Exceptional)
+				list.Add("Exceptionnelle");
+			else if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire");
+		}
 
         public override void AddUsesRemainingProperties(ObjectPropertyList list)
         {
-            list.Add(1060584, UsesRemaining.ToString()); // uses remaining: ~1_val~
+            list.Add("Utilisation restante:", UsesRemaining.ToString()); // uses remaining: ~1_val~
         }
 
         public virtual void DisplayDurabilityTo(Mobile m)

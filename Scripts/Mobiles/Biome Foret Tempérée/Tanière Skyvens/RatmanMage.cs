@@ -52,7 +52,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Foret;
 		public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
         public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
         public override int Meat => 1;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Regular;

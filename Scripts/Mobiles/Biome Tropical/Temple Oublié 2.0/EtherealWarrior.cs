@@ -51,7 +51,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Tropique;
 
 		public override bool InitialInnocent => true;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public override TribeType Tribe => TribeType.Fey;
 

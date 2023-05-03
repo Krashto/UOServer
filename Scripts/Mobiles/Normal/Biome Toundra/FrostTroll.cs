@@ -43,7 +43,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Toundra;
 
 		public override int Meat => 2;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
