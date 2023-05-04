@@ -23,9 +23,11 @@ namespace Server.Gumps
             CommandSystem.Register("StaticsTool", AccessLevel.GameMaster, new CommandEventHandler(OzThothsStatic_OnCommand));
             CommandSystem.Register("STool", AccessLevel.GameMaster, new CommandEventHandler(OzThothsStatic_OnCommand));
             CommandSystem.Register("ST", AccessLevel.GameMaster, new CommandEventHandler(OzThothsStatic_OnCommand));
-        }
+			CommandSystem.Register("Architecte", AccessLevel.GameMaster, new CommandEventHandler(OzThothsStatic_OnCommand));
 
-        [Usage("StaticTool")]
+		}
+
+		[Usage("StaticTool")]
         [Description("Makes a call to an in game static tool")]
         private static void OzThothsStatic_OnCommand(CommandEventArgs e)
         {
