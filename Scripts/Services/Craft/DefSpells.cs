@@ -193,8 +193,8 @@ namespace Server.Engines.Craft
 
 		public override void InitCraftList()
         {
-			index = AddCraft(typeof(NewSpellbook), "Magie", "Grimoire", 50.0, 126, typeof(PlainoisLeather), "Cuir", 10, "Vous n'avez pas assez de cuir.");
-			index = AddCraft(typeof(BlankScroll), "Magie", "Parchemin Vierge", 10.0, 20.0, typeof(Kindling), "Kindling", 1, "Vous n'avez pas assez de Petit Bois.");
+			index = AddCraft(typeof(NewSpellbook), "Magie", "Grimoire", 35.0, 75.0, typeof(PlainoisLeather), "Cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(BlankScroll), "Magie", "Parchemin Vierge", 10.0, 30.0, typeof(Kindling), "Kindling", 1, "Vous n'avez pas assez de Petit Bois.");
 
 			AddSpell("Aéromancie", typeof(AveuglementScroll), "Aveuglement", 1);
 			AddSpell("Aéromancie", typeof(BrouillardScroll), "Brouillard", 2);

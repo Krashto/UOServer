@@ -74,7 +74,7 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(WoodenBox), 14, 20, 0xE7D, 0));
                 Add(new GenericBuyInfo(typeof(Key), 2, 20, 0x100E, 0));
                 Add(new GenericBuyInfo(typeof(Bedroll), 5, 20, 0xA59, 0));
-                Add(new GenericBuyInfo(typeof(Kindling), 2, 20, 0xDE1, 0, true));
+             //   Add(new GenericBuyInfo(typeof(Kindling), 2, 20, 0xDE1, 0, true));
 
           ///      Add(new GenericBuyInfo("1041205", typeof(Multis.SmallBoatDeed), 10177, 20, 0x14F2, 0));
                 Add(new GenericBuyInfo("1041060", typeof(HairDye), 60, 20, 0xEFF, 0));

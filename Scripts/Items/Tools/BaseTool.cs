@@ -1,3 +1,4 @@
+using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
 using Server.Engines.Craft;
 using Server.Network;
 using System;
@@ -141,10 +142,46 @@ namespace Server.Items
 			else if (m_Quality == ItemQuality.Legendary)
 				list.Add("Légendaire");
 		}
+		public override void AddNameProperties(ObjectPropertyList list)
+		{
+			var name = Name ?? String.Empty;
+			
+			 if (Quality == ItemQuality.Legendary)
+				list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>");
+			else if (Quality == ItemQuality.Epic)
+				list.Add($"<BASEFONT COLOR=#A020F0>{name}</BASEFONT>");
+			else if (Quality == ItemQuality.Exceptional)
+				list.Add($"<BASEFONT COLOR=#0000FF>{name}</BASEFONT>");
+			else
+				list.Add($"<BASEFONT COLOR=#808080>{name}</BASEFONT>");
 
-        public override void AddUsesRemainingProperties(ObjectPropertyList list)
+			var desc = Description ?? String.Empty;
+
+			if (!String.IsNullOrWhiteSpace(desc))
+				list.Add(desc);
+
+			if (IsSecure)
+				AddSecureProperty(list);
+			else if (IsLockedDown)
+				AddLockedDownProperty(list);
+
+			AddCraftedProperties(list);
+			AddLootTypeProperty(list);
+			AddUsesRemainingProperties(list);
+			AddWeightProperty(list);
+
+			AppendChildNameProperties(list);
+
+			if (QuestItem)
+				AddQuestItemProperty(list);
+
+			list.Add("Ressource: " + CraftResources.GetDescription(Resource));
+		}
+
+
+		public override void AddUsesRemainingProperties(ObjectPropertyList list)
         {
-            list.Add("Utilisation restante:", UsesRemaining.ToString()); // uses remaining: ~1_val~
+            list.Add("Utilisation restante: {0}", UsesRemaining.ToString()); // uses remaining: ~1_val~
         }
 
         public virtual void DisplayDurabilityTo(Mobile m)
@@ -220,7 +257,17 @@ namespace Server.Items
         {
             if (IsChildOf(from.Backpack) || Parent == from)
             {
-                CraftSystem system = CraftSystem;
+
+				bool isSmithHammer = this is SmithHammer;
+
+				if (isSmithHammer && Parent != from)
+				{
+					from.SendMessage("Vous devez avoir l'outil en main pour l'utiliser."); // That must be in your pack for you to use it.
+				}
+				else if (isSmithHammer || from.HasFreeHand())
+				{
+
+					CraftSystem system = CraftSystem;
 
                 if (m_RepairMode)
                 {
@@ -240,13 +287,40 @@ namespace Server.Items
                     }
                 }
             }
-            else
+				else
+				{
+					from.SendMessage("Vous devez avoir les mains vides.");
+				}
+
+			}
+
+			else
             {
                 from.SendLocalizedMessage(1042001); // That must be in your pack for you to use it.
             }
         }
+		public override bool CanEquip(Mobile from)
+		{
+			Item item = from.FindItemOnLayer(Layer.OneHanded);
 
-        public override void Serialize(GenericWriter writer)
+			if (item != null)
+			{
+				from.SendMessage("Vous devez avoir les mains libres pour équipper un outil !");
+				return false;
+			}
+
+			item = from.FindItemOnLayer(Layer.TwoHanded);
+
+			if (item != null)
+			{
+				from.SendMessage("Vous devez avoir les mains libres pour équipper un outil !");
+				return false;
+			}
+
+			return true;
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
 

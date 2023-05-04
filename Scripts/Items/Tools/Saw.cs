@@ -10,7 +10,8 @@ namespace Server.Items
             : base(0x1034)
         {
             Weight = 2.0;
-        }
+			Name = "Scie";
+		}
 
         [Constructable]
         public Saw(int uses)
