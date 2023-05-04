@@ -128,7 +128,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.MageryRegs, 3);
         }
 

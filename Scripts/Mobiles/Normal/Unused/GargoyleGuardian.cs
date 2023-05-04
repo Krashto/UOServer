@@ -55,7 +55,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
         }
 
         public override void OnDamagedBySpell(Mobile from)

@@ -49,7 +49,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.Gems, Utility.RandomMinMax(1, 4));
          //   AddLoot(LootPack.LootItem<PainSpikeScroll>(15.0, true));
         }

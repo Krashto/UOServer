@@ -89,7 +89,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich, 3);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.Gems, 2);
             AddLoot(LootPack.LootItem<Arrow>(35));
             AddLoot(LootPack.LootItem<Bolt>(25));

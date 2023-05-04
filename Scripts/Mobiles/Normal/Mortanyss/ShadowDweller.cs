@@ -54,7 +54,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich, 3);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.NecroRegs, 17, 24);
         }
 

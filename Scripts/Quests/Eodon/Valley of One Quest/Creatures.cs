@@ -796,7 +796,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich, 3);
             AddLoot(LootPack.Gems, 2);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
         }
 
         public VolcanoElemental(Serial serial)

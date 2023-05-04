@@ -50,7 +50,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich, 2);
             AddLoot(LootPack.Parrot);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.HighScrolls);
         }
 

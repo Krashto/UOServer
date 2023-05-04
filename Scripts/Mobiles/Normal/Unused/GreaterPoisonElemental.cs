@@ -61,7 +61,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.LootItem<Nightshade>(4, true));
             AddLoot(LootPack.LootItem<LesserPoisonPotion>(true));
         }

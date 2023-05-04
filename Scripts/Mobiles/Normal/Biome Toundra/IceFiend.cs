@@ -71,7 +71,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
 		}
 

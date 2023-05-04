@@ -222,7 +222,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.PeculiarSeed1);
             AddLoot(LootPack.LootItem<Items.RoastPig>(10.0));
 			AddLoot(LootPack.LootItem<Items.Gold>(15000,25000));

@@ -60,7 +60,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.PeculiarSeed2);
 
         }

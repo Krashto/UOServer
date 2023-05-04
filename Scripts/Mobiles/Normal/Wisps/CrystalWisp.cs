@@ -16,7 +16,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
         }
 
         public override void Serialize(GenericWriter writer)
