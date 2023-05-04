@@ -22,7 +22,7 @@ namespace Server.Engines.BulkOrders
 			int line = 0;
 			int lineSpace = 25;
 
-			AddSection(100, y + lineSpace * line++, 425, 275, "Contrat");
+			AddSection(100, y + lineSpace * line++, 425, 275, "Commande");
 			line++;
 
 			AddHtmlTexte(150, y + lineSpace * line++, 400, 20, "Voulez-vous m'aider ?");
