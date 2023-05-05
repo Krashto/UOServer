@@ -49,7 +49,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
         }
 
         public MeerMage(Serial serial)
@@ -60,7 +60,7 @@ namespace Server.Mobiles
         public override bool AutoDispel => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override bool InitialInnocent => true;
         public static bool UnderEffect(Mobile m)
         {

@@ -67,7 +67,7 @@ namespace Server.Mobiles
 
         public override int Hides => 40;
         public override int Meat => 19;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public override void Serialize(GenericWriter writer)
         {

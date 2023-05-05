@@ -69,7 +69,7 @@ namespace Server.Mobiles
   /*      public override int Scales => 6;
 
         public override ScaleType ScaleType => (Utility.RandomBool() ? ScaleType.Black : ScaleType.White);*/
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override bool CanAngerOnTame => true;
 
         public override void GenerateLoot()

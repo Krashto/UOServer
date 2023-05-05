@@ -9,7 +9,7 @@ namespace Server.Mobiles
     {
 
         public override bool AutoDispel => !Controlled;
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override int Meat => 9;
         public override Poison HitPoison => Poison.Greater;
         public override double HitPoisonChance => 0.75;
@@ -58,7 +58,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
         }
 
         public override void OnDeath(Container c)

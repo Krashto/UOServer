@@ -17,7 +17,7 @@ namespace Server.Mobiles
         {
             public InternalBuyInfo()
             {
-                Add(new GenericBuyInfo(typeof(NewSpellbook), 250, 10, 0xEFA, 0));
+                Add(new GenericBuyInfo(typeof(NewSpellbook), 500, 10, 0xEFA, 0));
 
                 Add(new GenericBuyInfo(typeof(NecromancyTrainingWand), 100, 10, 0xDF2, 0));
                 Add(new GenericBuyInfo(typeof(MageryTrainingWand), 100, 10, 0xDF2, 0));

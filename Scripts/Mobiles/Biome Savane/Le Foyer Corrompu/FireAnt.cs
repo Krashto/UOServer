@@ -51,7 +51,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 4;
 		public override Biome Biome => Biome.Savane;
-		public override int TreasureMapLevel => 3;
+		//public override int TreasureMapLevel => 3;
 
         public override int GetIdleSound()
         {

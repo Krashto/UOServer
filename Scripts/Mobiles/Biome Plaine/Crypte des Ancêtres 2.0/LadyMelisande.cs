@@ -93,7 +93,7 @@ namespace Server.Mobiles
 
         public override Poison PoisonImmune => Poison.Lethal;
 
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public LadyMelisande(Serial serial)
             : base(serial)

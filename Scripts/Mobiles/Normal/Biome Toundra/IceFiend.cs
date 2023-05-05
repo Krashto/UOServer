@@ -44,7 +44,7 @@ namespace Server.Mobiles
         {
         }
 
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int Meat => 1;
         public override bool CanFly => true;
 
@@ -71,7 +71,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
 		}
 

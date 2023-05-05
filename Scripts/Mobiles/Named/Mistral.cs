@@ -53,13 +53,13 @@ namespace Server.Mobiles
 
         public override bool BleedImmune => true;
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average);
             AddLoot(LootPack.Meager);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
         }
 
         public override void Serialize(GenericWriter writer)

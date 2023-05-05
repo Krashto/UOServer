@@ -11,6 +11,7 @@ namespace Server.Items
         {
             Weight = 8.0;
             Layer = Layer.OneHanded;
+			Name = "Marteau de Forgeron";
         }
 
         [Constructable]
@@ -19,7 +20,8 @@ namespace Server.Items
         {
             Weight = 8.0;
             Layer = Layer.OneHanded;
-        }
+			Name = "Marteau de Forgeron";
+		}
 
         public SmithHammer(Serial serial)
             : base(serial)

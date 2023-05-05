@@ -22,7 +22,7 @@ namespace Server.Engines.BulkOrders
         public SmallBOD(int hue, int amountMax, Type type, int number, int graphic, bool requireExeptional, BulkMaterialType material, int graphichue = 0)
             : base(0x2258)
         {
-			Name = "Contrat de fabrication";
+			Name = "Commande à compléter";
             Weight = 1.0;
             Hue = hue; // Blacksmith: 0x44E; Tailoring: 0x483
             LootType = LootType.Blessed;

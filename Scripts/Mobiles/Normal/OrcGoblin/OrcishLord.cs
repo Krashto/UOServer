@@ -46,7 +46,7 @@ namespace Server.Mobiles
 
         public override InhumanSpeech SpeechType => InhumanSpeech.Orc;
         public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
         public override int Meat => 1;
 
         public override TribeType Tribe => TribeType.Orc;

@@ -66,7 +66,7 @@ namespace Server.Mobiles
 
 		public override Poison PoisonImmune => Poison.Regular;
         public override Poison HitPoison => Utility.RandomBool() ? Poison.Lesser : Poison.Regular;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override bool CanFly => true;
         public override void GenerateLoot()
         {

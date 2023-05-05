@@ -65,7 +65,7 @@ namespace Server.Mobiles
 
         public override bool BardImmune => true;
 
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public override int Meat => 10;
 

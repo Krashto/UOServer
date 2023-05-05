@@ -56,7 +56,7 @@ namespace Server.Mobiles
 
         public override int Hides => 12;
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override HideType HideType => HideType.Reptilien;
 

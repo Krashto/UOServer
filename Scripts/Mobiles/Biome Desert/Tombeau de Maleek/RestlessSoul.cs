@@ -47,7 +47,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Desert;
 		public override bool AlwaysAttackable => true;
         public override bool BleedImmune => true;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Poor);

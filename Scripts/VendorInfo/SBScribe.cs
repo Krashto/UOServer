@@ -25,11 +25,11 @@ namespace Server.Mobiles
             {
 				Add(new GenericBuyInfo(typeof(ScribesPen), 8, 20, 0xFBF, 0));
 				Add(new GenericBuyInfo(typeof(SpellsPen), 8, 20, 0x1F19, 2079));
-				Add(new GenericBuyInfo(typeof(BlankScroll), 5, 999, 0x0E34, 0));
+				Add(new GenericBuyInfo(typeof(BlankScroll), 20, 999, 0x0E34, 0));
 				Add(new GenericBuyInfo(typeof(BrownBook), 15, 10, 0xFEF, 0));
                 Add(new GenericBuyInfo(typeof(TanBook), 15, 10, 0xFF0, 0));
                 Add(new GenericBuyInfo(typeof(BlueBook), 15, 10, 0xFF2, 0));
-                Add(new GenericBuyInfo(typeof(LivreVierge), 500, 999, 0xFF2, 0));
+                Add(new GenericBuyInfo(typeof(LivreVierge), 500, 999, 0xFBE, 0));
             }
         }
     }

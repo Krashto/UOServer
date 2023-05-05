@@ -29,7 +29,7 @@ namespace Server.Mobiles
 		public override int Level => 12;
 		public override Biome Biome => Biome.Desert;
 		public override double TreasureMapChance => .50;
-        public override int TreasureMapLevel => 7;
+        //public override int TreasureMapLevel => 7;
 
         public override Type[] UniqueList => new Type[] { typeof(EnchantedCoralBracelet), typeof(LeviathanHideBracers), typeof(SmilingMoonBlade) };
         public override Type[] SharedList => new Type[] { typeof(MiniSoulForgeDeed) };

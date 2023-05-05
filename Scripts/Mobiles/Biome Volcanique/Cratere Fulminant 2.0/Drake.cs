@@ -59,7 +59,7 @@ namespace Server.Mobiles
 		public override int Level => 12;
 		public override Biome Biome => Biome.Volcan;
 		public override bool ReacquireOnMovement => true;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
         public override int Meat => 10;
         public override int DragonBlood => 8;
 
@@ -88,7 +88,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.MageryRegs, 3);
 
 			AddLoot(LootPack.LootItem<Items.GemmeFeu>(), (double)5);

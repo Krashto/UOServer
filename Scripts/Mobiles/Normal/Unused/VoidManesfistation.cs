@@ -82,7 +82,7 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.MedScrolls, 1);
+       //AddLoot(LootPack.MedScrolls, 1);
             AddLoot(LootPack.HighScrolls, 1);
         }
 

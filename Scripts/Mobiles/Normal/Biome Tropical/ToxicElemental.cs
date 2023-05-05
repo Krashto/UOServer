@@ -48,7 +48,7 @@ namespace Server.Mobiles
         public override bool BleedImmune => true;
         public override Poison HitPoison => Poison.Lethal;
         public override double HitPoisonChance => 0.6;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);

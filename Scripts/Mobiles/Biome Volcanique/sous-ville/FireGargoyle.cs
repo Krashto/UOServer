@@ -54,7 +54,7 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteFeu>(), Utility.RandomMinMax(2, 4));
 		}
-		public override int TreasureMapLevel => 1;
+		//public override int TreasureMapLevel => 1;
         public override int Meat => 1;
         public override bool CanFly => true;
 

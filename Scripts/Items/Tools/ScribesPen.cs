@@ -11,7 +11,9 @@ namespace Server.Items
         public ScribesPen()
             : base(0x0FBF)
         {
-        }
+			Name = "Plume d'écriture";
+			Weight = 1;
+		}
 
         [Constructable]
         public ScribesPen(int uses)

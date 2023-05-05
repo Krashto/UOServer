@@ -109,7 +109,7 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.ColossalRage);
         }
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
@@ -212,7 +212,7 @@ namespace Server.Mobiles
                 Wall.OnTrollKilled();
         }
 
-        public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
 
         public CaveTroll(Serial serial)
             : base(serial)
@@ -576,7 +576,7 @@ namespace Server.Mobiles
             m.SendLocalizedMessage(1008112); // The intense heat is damaging you!
         }
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
@@ -1128,7 +1128,7 @@ namespace Server.Mobiles
             }
         }
 
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
@@ -1530,7 +1530,7 @@ namespace Server.Mobiles
 
         public override bool AutoDispel => true;
         public override double AutoDispelChance => 1.0;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override double TreasureMapChance => 1.0;
         public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Parasitic;

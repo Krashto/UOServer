@@ -226,7 +226,7 @@ namespace Server.Mobiles
 		{
 		}
 		public override int Meat => 4;
-		public override int TreasureMapLevel => 5;
+		//public override int TreasureMapLevel => 5;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Ancien;
 		public override int Bones => 8;
@@ -408,7 +408,7 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
         {
 			AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.PeculiarSeed1);
             AddLoot(LootPack.LootItem<Items.RoastPig>(10.0));
 			AddLoot(LootPack.LootItem<Items.Gold>(15000,20000));

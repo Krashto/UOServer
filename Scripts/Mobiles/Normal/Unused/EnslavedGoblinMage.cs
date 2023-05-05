@@ -53,7 +53,7 @@ namespace Server.Mobiles
 
         public override int Level => 3;
         public override bool CanRummageCorpses => true;
-		public override int TreasureMapLevel => 1;
+        //public override int TreasureMapLevel => 1;
         public override int Meat => 1;
 
         public override void GenerateLoot()

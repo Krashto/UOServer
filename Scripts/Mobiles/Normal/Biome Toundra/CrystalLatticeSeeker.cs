@@ -47,7 +47,7 @@ namespace Server.Mobiles
         }
 
         public override int Feathers => 100;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 4);

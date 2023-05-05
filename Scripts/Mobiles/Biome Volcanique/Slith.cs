@@ -44,7 +44,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Volcan;
 		public override int DragonBlood => 8;
 
-        public override int TreasureMapLevel => 2;
+        ////public override int TreasureMapLevel => 2;
         public override int Meat => 6;
 
 		public override int Hides => 6;
@@ -56,7 +56,7 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
+            AddLoot(LootPack.Average, 1);
         }
 
         public override void OnDeath(Container c)

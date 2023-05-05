@@ -54,13 +54,13 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer => true;
         public override bool CanRummageCorpses => true;
 
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
 
         public override int Meat => 1;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.PeculiarSeed2);
 
         }

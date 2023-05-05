@@ -49,7 +49,7 @@ namespace Server.Mobiles
         public override bool CanFly => true;
         public override bool Unprovokable => true;
         public override Poison PoisonImmune => Poison.Regular;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.UltraRich, 2);

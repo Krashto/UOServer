@@ -47,7 +47,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Montagne;
 		public override int Meat => 4;
         public override Poison PoisonImmune => Poison.Regular;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Geant;
 

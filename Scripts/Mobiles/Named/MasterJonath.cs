@@ -46,11 +46,11 @@ namespace Server.Mobiles
 
         public override bool CanBeParagon => false;
 
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.HighScrolls, 2);
             AddLoot(LootPack.MageryRegs, 22);
             AddLoot(LootPack.Parrot);

@@ -60,7 +60,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Volcan;
 		public override bool ReacquireOnMovement => !Controlled;
         public override bool AutoDispel => !Controlled;
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
         public override int Meat => 19;
         public override int DragonBlood => 8;
         public override int Hides => 10;

@@ -53,11 +53,11 @@ namespace Server.Mobiles
         public override bool CanRummageCorpses => true;
         public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.Rich);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.NecroRegs, 17, 24);
 			AddLoot(LootPack.BodyPartsAndBones, Utility.RandomMinMax(3, 5));
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));

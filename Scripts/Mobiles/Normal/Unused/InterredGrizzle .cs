@@ -48,7 +48,7 @@ namespace Server.Mobiles
 
         public override bool CanBeParagon => false;
 
-        public override int TreasureMapLevel => 4;
+        //public override int TreasureMapLevel => 4;
 
         public override void GenerateLoot() // -- Need to verify
         {

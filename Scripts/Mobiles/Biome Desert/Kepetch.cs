@@ -94,7 +94,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
+            AddLoot(LootPack.Average, 1);
         }
 
         public override int GetIdleSound()

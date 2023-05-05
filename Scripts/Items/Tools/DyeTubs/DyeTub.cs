@@ -28,7 +28,7 @@ namespace Server.Items
             Weight = 10.0;
             m_Redyable = true;
 			m_Charges = 10;
-			Name = "Bac à teinture";
+			Name = "Bac de teinture";
 
 		}
 

@@ -79,7 +79,7 @@ namespace Server.Engines.BulkOrders
                 else
                     amountMax = Utility.RandomList(10, 10, 15, 20);
 
-                CraftSystem system = DefInscription.CraftSystem;
+                CraftSystem system = DefSpells.CraftSystem;
 
                 List<SmallBulkEntry> validEntries = new List<SmallBulkEntry>();
 

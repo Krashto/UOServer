@@ -67,7 +67,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Tropique;
 		public override bool CanAngerOnTame => true;
 
-        public override int TreasureMapLevel => 3;
+        //public override int TreasureMapLevel => 3;
         public override int Meat => 4;
 		public override int Hides => 10;
 		public override HideType HideType => HideType.Lupus;

@@ -53,12 +53,12 @@ namespace Server.Mobiles
         public override bool AutoDispel => true;
         public override bool CanRummageCorpses => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override bool InitialInnocent => true;
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.HighScrolls, 2);
         }
 

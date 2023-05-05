@@ -211,7 +211,7 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Greater;
 
 		public override bool Unprovokable => true;
-		public override int TreasureMapLevel => 5;
+		//public override int TreasureMapLevel => 5;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Geant;
 		public override int Bones => 8;
@@ -222,7 +222,7 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Average);
-            AddLoot(LootPack.MedScrolls);
+       //AddLoot(LootPack.MedScrolls);
             AddLoot(LootPack.PeculiarSeed1);
             AddLoot(LootPack.LootItem<Items.RoastPig>(10.0));
 			AddLoot(LootPack.LootItem<Items.Gold>(15000,25000));

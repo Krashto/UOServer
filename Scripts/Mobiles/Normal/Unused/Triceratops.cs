@@ -54,7 +54,7 @@ namespace Server.Mobiles
         public override HideType HideType => HideType.Regular;
         public override int Meat => 3;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         public override bool CanAngerOnTame => true;
         public override bool StatLossAfterTame => true;

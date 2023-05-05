@@ -69,7 +69,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Plaine;
 		public override Type[] DecorativeList => new[] { typeof(Futon), typeof(SwampTile) };
         public override MonsterStatuetteType[] StatueTypes => new MonsterStatuetteType[] { };
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
         public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Lethal;
         public override double HitPoisonChance => 0.8;

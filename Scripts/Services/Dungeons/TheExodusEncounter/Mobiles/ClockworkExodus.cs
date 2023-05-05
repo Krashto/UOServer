@@ -144,7 +144,7 @@ namespace Server.Mobiles
         public virtual double ChangeCombatant => 0.3;
         public override bool AlwaysMurderer => true;
         public override Poison PoisonImmune => Poison.Greater;
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
         public override void GenerateLoot()
         {

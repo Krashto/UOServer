@@ -53,7 +53,7 @@ namespace Server.Mobiles
         }
 
         public override bool InitialInnocent => true;
-        public override int TreasureMapLevel => 2;
+        //public override int TreasureMapLevel => 2;
 
         private void AddImmovableItem(Item item)
         {

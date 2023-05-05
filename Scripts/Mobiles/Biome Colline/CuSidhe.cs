@@ -52,7 +52,7 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-
+//public override int TreasureMapLevel
 		//	Fame = 5000;  //Guessing here
         //    Karma = 5000;  //Guessing here
 
@@ -69,7 +69,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Colline;
-		public override int TreasureMapLevel => 5;
+		////public override int TreasureMapLevel => 5;
 
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies;
         public override bool CanAngerOnTame => true;

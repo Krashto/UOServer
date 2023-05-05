@@ -61,7 +61,7 @@ namespace Server.Mobiles
 		
         public override Poison PoisonImmune => Poison.Lethal;
 		
-        public override int TreasureMapLevel => 5;
+        //public override int TreasureMapLevel => 5;
 
 /*		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.;
@@ -94,11 +94,10 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
             AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.MedScrolls, 2);
+       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.NecroRegs, 100, 200);
 			AddLoot(LootPack.BodyPartsAndBones, Utility.RandomMinMax(3, 5));
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
-			AddLoot(LootPack.LootItem<Items.Gold>(25, 100));
 			AddLoot(LootPack.LootItem<CerveauLiche>());
 		}
 

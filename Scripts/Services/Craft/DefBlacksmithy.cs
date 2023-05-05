@@ -293,281 +293,281 @@ namespace Server.Engines.Craft
 
 			int index;
 			#region "Armure Légère"
-			AddCraft(typeof(RingmailGloves), "Armure Légère", "Gants d’anneaux", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RingmailGorget), "Armure Légère", "Gorgerin d’anneaux", 22.0, 42.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(RingmailLegs), "Armure Légère", "Jambes d’anneaux", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(RingmailArms), "Armure Légère", "Brassard d’anneaux", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(RingmailChest), "Armure Légère", "Torse d’anneaux", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			//AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			//AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
-			//AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
-			//AddCraft(typeof(Bascinet), "Armure Légère","Bascinet", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
-			//AddCraft(typeof(Helmet), "Armure Légère", "Casque", 35.0, 55.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(NorseHelm), "Armure Légère", "Haume Nordique", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(RingmailGloves), "Armure Légère", "Gants d’anneaux", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RingmailGorget), "Armure Légère", "Gorgerin d’anneaux", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RingmailLegs), "Armure Légère", "Jambes d’anneaux", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RingmailArms), "Armure Légère", "Brassard d’anneaux", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RingmailChest), "Armure Légère", "Torse d’anneaux", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(PlastronMaille2), "Armure Légère", "Torse d’anneaux fins", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(JambiereMaille2), "Armure Légère", "Jambière d’anneaux fins", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(BrassardMaille), "Armure Légère", "Brassard d’anneaux fins", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(Bascinet), "Armure Légère","Bascinet", 40.0, 60.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(Helmet), "Armure Légère", "Casque", 35.0, 55.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(NorseHelm), "Armure Légère", "Haume Nordique", 40.0, 60.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 
 			#region "Armure Barbaresque"
-			AddCraft(typeof(GantMailleBarbare), "Armure Légère", "Gants Barbaresque", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(GorgetMailleBarbare), "Armure Légère", "Gorgerin Barbaresque", 22.0, 42.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(JambiereMailleBarbare), "Armure Légère", "Jambes Barbaresque", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BrassardMailleBarbare), "Armure Légère", "Brassard Barbaresque", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(PlastronMailleBarbare), "Armure Légère", "Torse Barbaresque", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(CasqueMailleBarbare), "Armure Légère", "Casque Barbaresque", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(GantMailleBarbare), "Armure Légère", "Gants Barbaresque", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetMailleBarbare), "Armure Légère", "Gorgerin Barbaresque", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereMailleBarbare), "Armure Légère", "Jambes Barbaresque", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BrassardMailleBarbare), "Armure Légère", "Brassard Barbaresque", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronMailleBarbare), "Armure Légère", "Torse Barbaresque", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueMailleBarbare), "Armure Légère", "Casque Barbaresque", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Broigne"
-			AddCraft(typeof(GantMailleRenforce), "Armure Légère", "Gants Broigne", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(GorgetMailleRenforce), "Armure Légère", "Gorgerin Broigne", 22.0, 42.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(JambiereMailleRenforce), "Armure Légère", "Jambes Broigne", 28.0, 48.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BrassardMaillerRenforce), "Armure Légère", "Brassard Broigne", 25.0, 45.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(PlastronMailleRenforce), "Armure Légère", "Torse Broigne", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(CasqueMailleRenforce), "Armure Légère", "Casque Broigne", 20.0, 40.0, typeof(IronIngot), 1044036, 10, 1044037);
+			AddCraft(typeof(GantMailleRenforce), "Armure Légère", "Gants Broigne", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetMailleRenforce), "Armure Légère", "Gorgerin Broigne", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereMailleRenforce), "Armure Légère", "Jambes Broigne", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BrassardMaillerRenforce), "Armure Légère", "Brassard Broigne", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronMailleRenforce), "Armure Légère", "Torse Broigne", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueMailleRenforce), "Armure Légère", "Casque Broigne", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 
 			#region "Armure Intermédiaire"
-			AddCraft(typeof(ChainCoif), "Armure Intermédiaire", "Coiffe de mailles", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
-		//	AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ChainGorget), "Armure Intermédiaire", "Gorgerin de mailles", 42.0, 62.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(ChainmailArms), "Armure Intermédiaire", "Brassards de mailles", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(ChainLegs), "Armure Intermédiaire", "Jambes de mailles", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(ChainChest), "Armure Intermédiaire", "Tunique de maille", 50.0, 70.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CloseHelm), "Armure Intermédiaire", "Casque fermé", 45.0, 65.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(ChainCoif), "Armure Intermédiaire", "Coiffe de mailles", 40.0, 60.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+		//	AddCraft(typeof(CasqueKorain), "Armure Intermédiaire", "Casque Korain", 40.0, 60.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ChainGorget), "Armure Intermédiaire", "Gorgerin de mailles", 42.0, 62.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ChainmailArms), "Armure Intermédiaire", "Brassards de mailles", 45.0, 65.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ChainLegs), "Armure Intermédiaire", "Jambes de mailles", 48.0, 68.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ChainChest), "Armure Intermédiaire", "Tunique de maille", 50.0, 70.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CloseHelm), "Armure Intermédiaire", "Casque fermé", 45.0, 65.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 
 
-			//AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 60.0, typeof(IronIngot), 1044036, 10, 1044037);
-			//AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 43.0, 63.0, typeof(IronIngot), 1044036, 10, 1044037);
-			//AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 48.0, 68.0, typeof(IronIngot), 1044036, 18, 1044037);
-			//AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 50.0, 70.0, typeof(IronIngot), 1044036, 20, 1044037);
+			//AddCraft(typeof(CasqueMaille), "Armure Intermédiaire", "Coiffe de mailles matelassée", 40.0, 60.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(GantsMaille), "Armure Intermédiaire", "Gants de mailles matelassées", 43.0, 63.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(JambiereMaille), "Armure Intermédiaire", "Jambière de mailles matelassée", 48.0, 68.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(PlastronMaille), "Armure Intermédiaire", "Tunique de mailles matelassée", 50.0, 70.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Lourde"
-			AddCraft(typeof(PlateArms), "Armure Lourde", "Brassards de plaque", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(PlateGloves), "Armure Lourde", "Gants de plaque", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(PlateGorget), "Armure Lourde", "Gorgerin de plaque", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(PlateLegs), "Armure Lourde", "Jambières de plaque", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(PlateChest), "Armure Lourde", "Torse de plaque", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(FemalePlateChest), "Armure Lourde", "Torse de plaque femme", 51.0, 71.0, typeof(IronIngot), 1044036, 20, 1044037);
-		//	AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-		//	AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			//AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			//AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			//AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			//AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 41.0, 61.0, typeof(IronIngot), 1044036, 20, 1044037);
-			//AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			//AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			//AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			//AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			//AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(PlateHelm), "Armure Lourde", "Casque de Plaque", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CasqueChaos), "Armure Lourde", "Casque du Chaos", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(PlateArms), "Armure Lourde", "Brassards de plaque", 45.0, 65.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlateGloves), "Armure Lourde", "Gants de plaque", 42.0, 62.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlateGorget), "Armure Lourde", "Gorgerin de plaque", 39.0, 59.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlateLegs), "Armure Lourde", "Jambières de plaque", 48.0, 68.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlateChest), "Armure Lourde", "Torse de plaque", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(FemalePlateChest), "Armure Lourde", "Torse de plaque femme", 51.0, 71.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+		//	AddCraft(typeof(BrassardChaos), "Armure Lourde", "Brassard du Chaos", 45.0, 65.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+		//	AddCraft(typeof(PlastronChaos), "Armure Lourde", "Plastron du Chaos", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(BrassardDecoratif), "Armure Lourde", "Brassard Décoratif", 45.0, 65.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(JambiereDecoratif), "Armure Lourde", "Jambière Décoratif", 48.0, 68.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(PlastronDecoratif), "Armure Lourde", "Plastron Décoratif", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(BottesElfique), "Armure Lourde", "Bottes Elfique", 41.0, 61.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(GantsElfique), "Armure Lourde", "Gants Elfique", 42.0, 62.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(GorgetElfique), "Armure Lourde", "Gorget Elfique", 39.0, 59.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(PlastronElfique), "Armure Lourde", "Plastron Elfique", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(PlastronPlaque), "Armure Lourde", "Harnois", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(PlastronPlaqueDoree), "Armure Lourde", "Plastron de plaque Dorée", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlateHelm), "Armure Lourde", "Casque de Plaque", 50.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueChaos), "Armure Lourde", "Casque du Chaos", 50.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure demi-plaque"
-			AddCraft(typeof(BrassardEmbellit), "Armure Intermédiaire", "Brassards de demi-plaque", 35.0, 55.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(GantsEmbellit), "Armure Intermédiaire", "Gants de demi-plaque", 32.0, 52.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetEmbellit), "Armure Intermédiaire", "Gorgerin de demi-plaque", 29.0, 49.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereEmbellit), "Armure Intermédiaire", "Jambières de demi-plaque", 38.0, 58.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CasqueEmbellit), "Armure Intermédiaire", "Casque de demi-plaque", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlastronEmbellit), "Armure Intermédiaire", "Torse de demi-plaque", 42.0, 62.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardEmbellit), "Armure Intermédiaire", "Brassards de demi-plaque", 35.0, 55.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantsEmbellit), "Armure Intermédiaire", "Gants de demi-plaque", 32.0, 52.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetEmbellit), "Armure Intermédiaire", "Gorgerin de demi-plaque", 29.0, 49.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereEmbellit), "Armure Intermédiaire", "Jambières de demi-plaque", 38.0, 58.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueEmbellit), "Armure Intermédiaire", "Casque de demi-plaque", 40.0, 60.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronEmbellit), "Armure Intermédiaire", "Torse de demi-plaque", 42.0, 62.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Cuirasse"
-			AddCraft(typeof(BrassardSemiMaille), "Armure Intermédiaire", "Brassards de Cuirasse", 35.0, 55.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(GantsSemiMaille), "Armure Intermédiaire", "Gants de Cuirasse", 32.0, 52.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetSemiMaille), "Armure Intermédiaire", "Gorgerin de Cuirasse", 29.0, 49.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereSemiMaille), "Armure Intermédiaire", "Jambières de Cuirasse", 38.0, 58.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CasqueSemiMaille), "Armure Intermédiaire", "Casque de Cuirasse", 40.0, 60.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlastronSemiMaille), "Armure Intermédiaire", "Torse de Cuirasse", 42.0, 62.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardSemiMaille), "Armure Intermédiaire", "Brassards de Cuirasse", 35.0, 55.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantsSemiMaille), "Armure Intermédiaire", "Gants de Cuirasse", 32.0, 52.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetSemiMaille), "Armure Intermédiaire", "Gorgerin de Cuirasse", 29.0, 49.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereSemiMaille), "Armure Intermédiaire", "Jambières de Cuirasse", 38.0, 58.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueSemiMaille), "Armure Intermédiaire", "Casque de Cuirasse", 40.0, 60.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronSemiMaille), "Armure Intermédiaire", "Torse de Cuirasse", 42.0, 62.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Dragon"
-			AddCraft(typeof(BrassardDragon), "Armure Lourde", "Brassards Draconique", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(GantsDragon), "Armure Lourde", "Gants Draconique", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetDragon), "Armure Lourde", "Gorgerin Draconique", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereDragon), "Armure Lourde", "Jambières Draconique", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CasqueDragon), "Armure Lourde", "Casque Draconique", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlastronDragon), "Armure Lourde", "Torse Draconique", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardDragon), "Armure Lourde", "Brassards Draconique", 45.0, 65.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantsDragon), "Armure Lourde", "Gants Draconique", 42.0, 62.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetDragon), "Armure Lourde", "Gorgerin Draconique", 39.0, 59.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereDragon), "Armure Lourde", "Jambières Draconique", 48.0, 68.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueDragon), "Armure Lourde", "Casque Draconique", 50.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronDragon), "Armure Lourde", "Torse Draconique", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Daedric"
-			AddCraft(typeof(BrassardDaedric), "Armure Lourde", "Brassards Daedric", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(GantsDaedric), "Armure Lourde", "Gants Daedric", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetDaedric), "Armure Lourde", "Gorgerin Daedric", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereDaedric), "Armure Lourde", "Jambières Daedric", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CasqueDaedric), "Armure Lourde", "Casque Daedric", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlastronDaedric), "Armure Lourde", "Torse Daedric", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardDaedric), "Armure Lourde", "Brassards Daedric", 45.0, 65.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantsDaedric), "Armure Lourde", "Gants Daedric", 42.0, 62.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetDaedric), "Armure Lourde", "Gorgerin Daedric", 39.0, 59.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereDaedric), "Armure Lourde", "Jambières Daedric", 48.0, 68.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueDaedric), "Armure Lourde", "Casque Daedric", 50.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronDaedric), "Armure Lourde", "Torse Daedric", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Vieillie"
-			AddCraft(typeof(BrassardVieillit), "Armure Lourde", "Brassards Ancien", 45.0, 65.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(GantsVieillit), "Armure Lourde", "Gants Ancien", 42.0, 62.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GorgetVieillit), "Armure Lourde", "Gorgerin Ancien", 39.0, 59.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(JambiereViellit), "Armure Lourde", "Jambières Ancien", 48.0, 68.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(CasqueVieillit), "Armure Lourde", "Casque Ancien", 50.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(PlastronViellit), "Armure Lourde", "Torse Ancien", 52.0, 72.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(BrassardVieillit), "Armure Lourde", "Brassards Ancien", 45.0, 65.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantsVieillit), "Armure Lourde", "Gants Ancien", 42.0, 62.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetVieillit), "Armure Lourde", "Gorgerin Ancien", 39.0, 59.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereViellit), "Armure Lourde", "Jambières Ancien", 48.0, 68.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CasqueVieillit), "Armure Lourde", "Casque Ancien", 50.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronViellit), "Armure Lourde", "Torse Ancien", 52.0, 72.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 
 
 			#region "Boucliers"
-			AddCraft(typeof(Buckler), "Boucliers", "Bouclier", 32.0, 52.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(MetalShield), "Boucliers", "Rampart", 39.0, 59.0, typeof(IronIngot), 1044036, 14, 1044037);
-			index = AddCraft(typeof(SmallPlateShield), "Boucliers", "Targe", 32.0, 52.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(WoodenKiteShield), "Boucliers", "La pointe", 41.0, 61.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(MediumPlateShield), "Boucliers", "Rondache", 49.0, 69.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(BronzeShield), "Boucliers", "Rondache résonnante", 36.0, 56.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(EcuBois), "Boucliers", "Écu de bois", 32.0, 52.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(BouclierRond2), "Boucliers", "Bouclier Rond", 32.0, 52.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Targe3), "Boucliers", "Targe renforcée", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(Rondache), "Boucliers", "Rondache", 41.0, 41.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(MetalKiteShield), "Boucliers", "Blason", 45.0, 65.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(BouclierRond), "Boucliers", "Bouclier Rond", 41.0, 61.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(ChaosShield), "Boucliers", "Targe décorée", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(HeaterShield), "Boucliers", "Muraille", 49.0, 49.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Pavois), "Boucliers", "Pavois", 32.0, 52.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Targe), "Boucliers", "Targe Bicolore", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(OrderShield), "Boucliers", "Égide", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
-			AddCraft(typeof(EcuLong), "Boucliers", "Écu Long", 41.0, 61.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Pavois2), "Boucliers", "Pavois Décoratif", 41.0, 61.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Targe2), "Boucliers", "Rondache Colimaçon", 41.0, 61.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Buckler), "Boucliers", "Bouclier", 32.0, 52.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MetalShield), "Boucliers", "Rampart", 39.0, 59.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			index = AddCraft(typeof(SmallPlateShield), "Boucliers", "Targe", 32.0, 52.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WoodenKiteShield), "Boucliers", "La pointe", 41.0, 61.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MediumPlateShield), "Boucliers", "Rondache", 49.0, 69.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BronzeShield), "Boucliers", "Rondache résonnante", 36.0, 56.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EcuBois), "Boucliers", "Écu de bois", 32.0, 52.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BouclierRond2), "Boucliers", "Bouclier Rond", 32.0, 52.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Targe3), "Boucliers", "Targe renforcée", 41.0, 61.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Rondache), "Boucliers", "Rondache", 41.0, 41.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MetalKiteShield), "Boucliers", "Blason", 45.0, 65.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BouclierRond), "Boucliers", "Bouclier Rond", 41.0, 61.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ChaosShield), "Boucliers", "Targe décorée", 41.0, 61.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HeaterShield), "Boucliers", "Muraille", 49.0, 49.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Pavois), "Boucliers", "Pavois", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Targe), "Boucliers", "Targe Bicolore", 41.0, 61.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(OrderShield), "Boucliers", "Égide", 41.0, 61.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EcuLong), "Boucliers", "Écu Long", 41.0, 61.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Pavois2), "Boucliers", "Pavois Décoratif", 41.0, 61.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Targe2), "Boucliers", "Rondache Colimaçon", 41.0, 61.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armes de poings"
-			AddCraft(typeof(DoubleLames), "Armes de poings", "Double Lames de poing", 0.0, 25.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(Sai), "Armes de poings", "Sai", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Kama), "Armes de poings", "Kama", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Tekagi), "Armes de poings", "Griffes", 20.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(AnneauxCombat), "Armes de poings", "Anneaux de Combat", 20.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GriffesCombat), "Armes de poings", "Griffes de Combat", 35.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(KamaKuya), "Armes de poings", "Kama Kuya", 35.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(LameCirculaire), "Armes de poings", "Lame Circulaire", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Kama1), "Armes de poings", "Kama", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(DoubleLames), "Armes de poings", "Double Lames de poing", 0.0, 25.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Sai), "Armes de poings", "Sai", 10.0, 35.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Kama), "Armes de poings", "Kama", 10.0, 35.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Tekagi), "Armes de poings", "Griffes", 20.0, 55.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(AnneauxCombat), "Armes de poings", "Anneaux de Combat", 20.0, 55.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GriffesCombat), "Armes de poings", "Griffes de Combat", 35.0, 65.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(KamaKuya), "Armes de poings", "Kama Kuya", 35.0, 65.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(LameCirculaire), "Armes de poings", "Lame Circulaire", 50.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Kama1), "Armes de poings", "Kama", 50.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Dagues"
-			AddCraft(typeof(Dagger), "Dagues", "Dague", 0.0, 40.0, typeof(IronIngot), 1044036, 3, 1044037);
-			AddCraft(typeof(ElvenSpellblade), "Dagues", "Égorgeuse", 20.0, 40.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(AssassinSpike), "Dagues", "Épineuse", 25.0, 45.0, typeof(IronIngot), 1044036, 9, 1044037);
-			AddCraft(typeof(Leafblade), "Dagues", "Coupe-gorge", 30.0, 50.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(SkinningKnife), "Dagues", "Couteau à dépecer", 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
-			AddCraft(typeof(Cleaver), "Dagues", "Couperet", 0.0, 20.0, typeof(IronIngot), 1044036, 3, 1044037);
-			AddCraft(typeof(ButcherKnife), "Dagues", "Couteau de boucher", 0.0, 20.0, typeof(IronIngot), 1044036, 2, 1044037);
+			AddCraft(typeof(Dagger), "Dagues", "Dague", 0.0, 40.0, typeof(IronIngot), "Fer", 3, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ElvenSpellblade), "Dagues", "Égorgeuse", 20.0, 40.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(AssassinSpike), "Dagues", "Épineuse", 25.0, 45.0, typeof(IronIngot), "Fer", 9, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Leafblade), "Dagues", "Coupe-gorge", 30.0, 50.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(SkinningKnife), "Dagues", "Couteau à dépecer", 0.0, 20.0, typeof(IronIngot), "Fer", 2, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Cleaver), "Dagues", "Couperet", 0.0, 20.0, typeof(IronIngot), "Fer", 3, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ButcherKnife), "Dagues", "Couteau de boucher", 0.0, 20.0, typeof(IronIngot), "Fer", 2, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Épées"
-			AddCraft(typeof(BoneHarvester), "Épées", "Serpe", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Broadsword), "Épées", "Épée courte", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Cutlass), "Épées", "Sabre", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(Katana), "Épées", "Katana", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(Longsword), "Épées", "Épée longue", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Scimitar), "Épées", "Cimeterre", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(VikingSword), "Épées", "Épée Lourde", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeCourte), "Épées", "Épée Courte", 10.0, 35.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(SabreLuxe), "Épées", "Sabre de Luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(EpeeBatardeLuxe), "Épées", "Épée bâtarde de luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeDoubleTranchant), "Épées", "Épée à Double Tranchants", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeLongue), "Épées", "Épée Afuitée", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(EpeeBatarde), "Épées", "Épée bâtarde", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(EpeeDeuxMains), "Épées", "Épée Deux Mains", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Runire), "Épées", "Runire", 45.0, 70.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(NoDachi), "Épées", "Éclat solaire", 45.0, 70.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Wakizashi), "Épées", "Surineur", 45.0, 70.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(RadiantScimitar), "Épées", "Cimeterre infini", 45.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(RuneBlade), "Épées", "Lame vorpal", 45.0, 70.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(ElvenMachete), "Épées", "Machette runique", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 60.0, 85.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 60.0, 85.0, typeof(IronIngot), 1044036, 15, 1044037);
-			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 75.0, 105.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 75.0, 105.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(BoneHarvester), "Épées", "Serpe", 10.0, 35.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Broadsword), "Épées", "Épée courte", 10.0, 35.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Cutlass), "Épées", "Sabre", 10.0, 35.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Katana), "Épées", "Katana", 10.0, 35.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Longsword), "Épées", "Épée longue", 10.0, 35.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Scimitar), "Épées", "Cimeterre", 10.0, 35.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(VikingSword), "Épées", "Épée Lourde", 10.0, 35.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EpeeCourte), "Épées", "Épée Courte", 10.0, 35.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(SabreLuxe), "Épées", "Sabre de Luxe", 30.0, 55.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EpeeBatardeLuxe), "Épées", "Épée bâtarde de luxe", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EpeeDoubleTranchant), "Épées", "Épée à Double Tranchants", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EpeeLongue), "Épées", "Épée Afuitée", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EpeeBatarde), "Épées", "Épée bâtarde", 45.0, 70.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(EpeeDeuxMains), "Épées", "Épée Deux Mains", 45.0, 70.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Runire), "Épées", "Runire", 45.0, 70.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(NoDachi), "Épées", "Éclat solaire", 45.0, 70.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Wakizashi), "Épées", "Surineur", 45.0, 70.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RadiantScimitar), "Épées", "Cimeterre infini", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RuneBlade), "Épées", "Lame vorpal", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ElvenMachete), "Épées", "Machette runique", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 60.0, 85.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 60.0, 85.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 75.0, 105.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 75.0, 105.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Haches"
-			AddCraft(typeof(Axe), "Haches", "Hache simple", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(BattleAxe), "Haches", "Hache de guerre", 10.0, 35.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(DoubleAxe), "Haches", "Hache double", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ExecutionersAxe), "Haches", "Hachette", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(LargeBattleAxe), "Haches", "Hache de bataille", 30.0, 55.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(TwoHandedAxe), "Haches", "Hache à deux mains", 30.0, 55.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(WarAxe), "Haches", "Tranchar", 30.0, 55.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(GrandeHache), "Haches", "Éventreuse", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(GrandeHacheDouble), "Haches", "Francisque", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(HacheDouble), "Haches", "Trombe", 45.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 60.0, 85.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 75.0, 105.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 75.0, 105.0, typeof(IronIngot), 1044036, 24, 1044037);
-			AddCraft(typeof(DoubleHachette), "Haches", "Double Hachette", 75.0, 105.0, typeof(IronIngot), 1044036, 15, 1044037);
+			AddCraft(typeof(Axe), "Haches", "Hache simple", 10.0, 35.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BattleAxe), "Haches", "Hache de guerre", 10.0, 35.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DoubleAxe), "Haches", "Hache double", 10.0, 35.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ExecutionersAxe), "Haches", "Hachette", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(LargeBattleAxe), "Haches", "Hache de bataille", 30.0, 55.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(TwoHandedAxe), "Haches", "Hache à deux mains", 30.0, 55.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarAxe), "Haches", "Tranchar", 30.0, 55.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GrandeHache), "Haches", "Éventreuse", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GrandeHacheDouble), "Haches", "Francisque", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HacheDouble), "Haches", "Trombe", 45.0, 70.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 75.0, 105.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 75.0, 105.0, typeof(IronIngot), "Fer", 24, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DoubleHachette), "Haches", "Double Hachette", 75.0, 105.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 
 			
 			#endregion
 
 			#region Hallebarde
 			index = AddCraft(typeof(Pitchfork), "Hallebardes", "Fourche", 10.0, 35.0, typeof(IronIngot), "Iron ingot", 5, "You do not have enough iron ingots to make that.");
-			AddCraft(typeof(Bardiche), "Hallebardes", "Bardiche", 40.0, 60.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Hellebarde), "Hallebardes", "Hallebarde simple", 50.0, 70.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(BladedStaff), "Hallebardes", "Bardiche Simple", 55.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(DoubleBladedStaff), "Hallebardes", "Bardiche double lames", 80.0, 100.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Halberd), "Hallebardes", "Hallebarde", 85.0, 105.0, typeof(IronIngot), 1044036, 20, 1044037);
+			AddCraft(typeof(Bardiche), "Hallebardes", "Bardiche", 40.0, 60.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Hellebarde), "Hallebardes", "Hallebarde simple", 50.0, 70.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BladedStaff), "Hallebardes", "Bardiche Simple", 55.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DoubleBladedStaff), "Hallebardes", "Bardiche double lames", 80.0, 100.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Halberd), "Hallebardes", "Hallebarde", 85.0, 105.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Lances"
-			AddCraft(typeof(Lance), "Lances", "Lance", 10.0, 35.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(Pike), "Lances", "Pique", 10.0, 35.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(ShortSpear), "Lances", "Lance courte", 20.0, 45.0, typeof(IronIngot), 1044036, 6, 1044037);
-			AddCraft(typeof(Scythe), "Lances", "Scythe", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Spear), "Lances", "Lance de guerre", 35.0, 60.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Epieu), "Lances", "Épieu", 40.0, 65.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(GrandeFourche), "Lances", "Grande Fourche", 50.0, 75.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Guerre", 60.0, 85.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(Trident), "Lances", "Trident", 65.0, 90.0, typeof(IronIngot), 1044036, 12, 1044037);
-			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 70.0, 95.0, typeof(IronIngot), 1044036, 12, 1044037);
+			AddCraft(typeof(Lance), "Lances", "Lance", 10.0, 35.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Pike), "Lances", "Pique", 10.0, 35.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ShortSpear), "Lances", "Lance courte", 20.0, 45.0, typeof(IronIngot), "Fer", 6, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Scythe), "Lances", "Scythe", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Spear), "Lances", "Lance de guerre", 35.0, 60.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Epieu), "Lances", "Épieu", 40.0, 65.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GrandeFourche), "Lances", "Grande Fourche", 50.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Guerre", 60.0, 85.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Trident), "Lances", "Trident", 65.0, 90.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 70.0, 95.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Masses et marteaux"
-			AddCraft(typeof(HammerPick), "Masses et marteaux", "Marteau à pointes", 10.0, 35.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Mace), "Masses et marteaux", "Masse", 10.0, 35.0, typeof(IronIngot), 1044036, 6, 1044037);
-			AddCraft(typeof(Maul), "Masses et marteaux", "Maul", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Scepter), "Masses et marteaux", "Sceptre", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(WarMace), "Masses et marteaux", "Masse de guerre", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(GrandeMasse), "Masses et marteaux", "Grande Masse", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 45.0, 70.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MassuePointes), "Masses et marteaux", "Massue à Pointes", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Massue), "Masses et marteaux", "Massue", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MorgensternBoules), "Masses et marteaux", "Morgenstern à Boules", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(MorgensternPointes), "Masses et marteaux", "Morgenstern à Pointes", 30.0, 55.0, typeof(IronIngot), 1044036, 14, 1044037);
-			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 60.0, 85.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 60.0, 85.0, typeof(IronIngot), 1044036, 20, 1044037);
-			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 75.0, 105.0, typeof(IronIngot), 1044036, 16, 1044037);
-			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 75.0, 105.0, typeof(IronIngot), 1044036, 10, 1044037);	
+			AddCraft(typeof(HammerPick), "Masses et marteaux", "Marteau à pointes", 10.0, 35.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Mace), "Masses et marteaux", "Masse", 10.0, 35.0, typeof(IronIngot), "Fer", 6, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Maul), "Masses et marteaux", "Maul", 10.0, 35.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Scepter), "Masses et marteaux", "Sceptre", 30.0, 55.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarMace), "Masses et marteaux", "Masse de guerre", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GrandeMasse), "Masses et marteaux", "Grande Masse", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MassuePointes), "Masses et marteaux", "Massue à Pointes", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Massue), "Masses et marteaux", "Massue", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MorgensternBoules), "Masses et marteaux", "Morgenstern à Boules", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MorgensternPointes), "Masses et marteaux", "Morgenstern à Pointes", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 60.0, 85.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 60.0, 85.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 75.0, 105.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 75.0, 105.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");	
 			
 			#endregion
 
 			#region "Rapières et Estoc"
-			AddCraft(typeof(Rapiere), "Rapières et Estoc", "Rapière", 10.0, 35.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RapiereLuxe), "Rapières et Estoc", "Rapière de Luxe", 30.0, 55.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(RapiereDecoree), "Rapières et Estoc", "Rapière Décorée", 45.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 45.0, 70.0, typeof(IronIngot), 1044036, 10, 1044037);
-			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 60.0, 80.0, typeof(IronIngot), 1044036, 8, 1044037);
-			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 60.0, 80.0, typeof(IronIngot), 1044036, 18, 1044037);
-			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissant de lune", 60.0, 80.0, typeof(IronIngot), 1044036, 25, 1044037);
+			AddCraft(typeof(Rapiere), "Rapières et Estoc", "Rapière", 10.0, 35.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RapiereLuxe), "Rapières et Estoc", "Rapière de Luxe", 30.0, 55.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RapiereDecoree), "Rapières et Estoc", "Rapière Décorée", 45.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 45.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 60.0, 80.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 60.0, 80.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissant de lune", 60.0, 80.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Divers"
 			
-			AddCraft(typeof(AnvilEastDeed), "Divers", "Enclume (Est)", 52.0, 100.0, typeof(IronIngot), 1044036, 150, 1044037);
+			AddCraft(typeof(AnvilEastDeed), "Divers", "Enclume (Est)", 52.0, 100.0, typeof(IronIngot), "Fer", 150, "Vous n'avez pas suffisament de lingot de Fer");
 			
-			AddCraft(typeof(AnvilSouthDeed), "Divers", "Enclume (Sud)", 52.0, 100.0, typeof(IronIngot), 1044036, 150, 1044037);
+			AddCraft(typeof(AnvilSouthDeed), "Divers", "Enclume (Sud)", 52.0, 100.0, typeof(IronIngot), "Fer", 150, "Vous n'avez pas suffisament de lingot de Fer");
 			
-			AddCraft(typeof(SmallForgeDeed), "Divers", "Petite Forge", 52.0, 100.0, typeof(IronIngot), 1044036, 150, 1044037);
+			AddCraft(typeof(SmallForgeDeed), "Divers", "Petite Forge", 52.0, 100.0, typeof(IronIngot), "Fer", 150, "Vous n'avez pas suffisament de lingot de Fer");
 			
-			AddCraft(typeof(LargeForgeEastDeed), "Divers", "Grande Forge (Est)", 72.0, 120.0, typeof(IronIngot), 1044036, 200, 1044037);
+			AddCraft(typeof(LargeForgeEastDeed), "Divers", "Grande Forge (Est)", 72.0, 120.0, typeof(IronIngot), "Fer", 200, "Vous n'avez pas suffisament de lingot de Fer");
 			
-			AddCraft(typeof(LargeForgeSouthDeed), "Divers", "Grande Forge (Sud)", 72.0, 120.0, typeof(IronIngot), 1044036, 200, 1044037);
+			AddCraft(typeof(LargeForgeSouthDeed), "Divers", "Grande Forge (Sud)", 72.0, 120.0, typeof(IronIngot), "Fer", 200, "Vous n'avez pas suffisament de lingot de Fer");
 			
 			#endregion
 

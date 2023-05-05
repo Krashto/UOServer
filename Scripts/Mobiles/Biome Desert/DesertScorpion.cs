@@ -46,7 +46,7 @@ namespace Server.Mobiles
 		public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 3;
-        public override int TreasureMapLevel => 1;
+        ////public override int TreasureMapLevel => 1;
 
         public DesertScorpion(Serial serial)
             : base(serial)
