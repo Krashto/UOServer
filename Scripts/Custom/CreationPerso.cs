@@ -289,7 +289,7 @@ namespace Server
 
 			m_Player.AddToBackpack(new Gold(1000));
 
-			m_Player.MoveToWorld(new Point3D(1069, 1410, -1), Map.Felucca);
+			m_Player.MoveToWorld(new Point3D(3745, 868, 35), Map.Felucca);
 			m_Player.Blessed = false;
 
 			Robe robe = new Robe();
