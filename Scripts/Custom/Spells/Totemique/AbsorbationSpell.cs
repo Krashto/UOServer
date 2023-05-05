@@ -35,13 +35,13 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		{
 			if (!Caster.CanSee(totem))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckHSequence(totem))
+			else if (CheckSequence())
 			{
 				if (totem.ControlMaster == Caster)
 				{
-					Caster.Hits += Math.Min(40, totem.Hits);
-					Caster.Stam += Math.Min(25, totem.Stam);
-					Caster.Mana += Math.Min(25, totem.Mana);
+					Caster.Hits += 25;
+					Caster.Stam += 25;
+					Caster.Mana += 25;
 
 					ExplodeFX.BloodRain.CreateInstance(Caster, Caster.Map, 3);
 					ExplodeFX.BloodRain.CreateInstance(totem.Location, totem.Map, 3);

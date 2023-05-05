@@ -96,15 +96,15 @@ namespace Server.Items
 
         protected virtual void BrokeLockPickTest(Mobile from)
         {
-            // When failed, a 25% chance to break the lockpick
-            if (!IsSkeletonKey && Utility.Random(4) == 0)
-            {
-                // You broke the lockpick.
-                SendLocalizedMessageTo(from, 502074);
+			// When failed, a 25% chance to break the lockpick
+			//if (!IsSkeletonKey && Utility.Random(4) == 0)
+			//{
+			//    // You broke the lockpick.
+			//    SendLocalizedMessageTo(from, 502074);
 
-                from.PlaySound(0x3A4);
-                Consume();
-            }
+				from.PlaySound(0x3A4);
+				Consume();
+            //}
         }
 
         protected virtual void EndLockpick(object state)
@@ -136,7 +136,9 @@ namespace Server.Items
                 return;
             }
 
-            int maxlevel = lockpickable.MaxLockLevel;
+			from.CheckSkill(SkillName.Snooping, 0.0, from.Skills[SkillName.Snooping].Cap);
+
+			int maxlevel = lockpickable.MaxLockLevel;
             int minLevel = lockpickable.LockLevel;
 
             if (lockpickable is Skeletonkey)
@@ -154,14 +156,12 @@ namespace Server.Items
                 from.PlaySound(0x4A);
                 lockpickable.LockPick(from);
 
-				if (Utility.Random(4) == 0)
-				{
-					SendLocalizedMessageTo(from, 502074);
+				//if (Utility.Random(4) == 0)
+				//{
+				//	SendLocalizedMessageTo(from, 502074);
 					from.PlaySound(0x3A4);
 					Consume();
-				}
-
-
+				//}
             }
             else
             {

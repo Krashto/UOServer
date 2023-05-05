@@ -1,3 +1,6 @@
+using Server.Custom;
+using Server.Custom.Packaging.Packages;
+
 namespace Server.Items
 {
     [Flipable]
@@ -12,10 +15,22 @@ namespace Server.Items
             0x0, 0x455, 0x47E, 0x89F, 0x8A5, 0x8AB,
             0x966, 0x96D, 0x972, 0x973, 0x979
         };
+
         private string m_Name;
-        [Constructable]
-        public ParagonChest(string name, int level)
-            : base(Utility.RandomList(m_ItemIDs))
+
+		[Constructable]
+		public ParagonChest() : base(Utility.RandomList(m_ItemIDs))
+		{
+			m_Name = "Coffre aux trésors";
+		}
+
+		[Constructable]
+		public ParagonChest(int level) : this("Coffre aux trésors", level)
+		{
+		}
+
+		[Constructable]
+        public ParagonChest(string name, int level) : base(Utility.RandomList(m_ItemIDs))
         {
             m_Name = name;
             Hue = Utility.RandomList(m_Hues);
@@ -107,7 +122,7 @@ namespace Server.Items
             }
         }
 
-        private void Fill(int level)
+        public void Fill(int level)
         {
             TrapType = TrapType.ExplosionTrap;
             TrapPower = level * 25;
@@ -117,47 +132,52 @@ namespace Server.Items
             switch (level)
             {
                 case 1:
-                    RequiredSkill = 36;
+                    RequiredSkill = 25;
                     break;
                 case 2:
-                    RequiredSkill = 76;
+                    RequiredSkill = 40;
                     break;
                 case 3:
-                    RequiredSkill = 84;
+                    RequiredSkill = 55;
                     break;
                 case 4:
-                    RequiredSkill = 92;
+                    RequiredSkill = 70;
                     break;
                 case 5:
-                    RequiredSkill = 100;
+                    RequiredSkill = 85;
                     break;
                 case 6:
                     RequiredSkill = 100;
                     break;
             }
 
-            LockLevel = RequiredSkill - 10;
-            MaxLockLevel = RequiredSkill + 40;
+            LockLevel = RequiredSkill;
+            MaxLockLevel = RequiredSkill;
 
-            DropItem(new Gold(level * 200));
+            DropItem(new Gold(level * 250));
 
-            for (int i = 0; i < level; ++i)
-                DropItem(Loot.RandomScroll(0, 63, SpellbookType.Regular));
+			if (Utility.Random(0, 100) < level * 5)
+				DropItem(new Materiaux());
 
-            for (int i = 0; i < level * 2; ++i)
+			if (Utility.Random(0, 100) < level * 5)
+				DropItem(new PieceArgent(level * 5 + 1));
+
+			Item item = null;
+
+			for (int i = 0; i < level * 2; ++i)
             {
-                Item item = Loot.RandomArmorOrShieldOrWeaponOrJewelry();
+                item = Loot.RandomArmorOrShieldOrWeaponOrJewelry();
 
                 if (item is BaseWeapon)
                 {
                     BaseWeapon weapon = (BaseWeapon)item;
 
-                    int attributeCount;
-                    int min, max;
+                    //int attributeCount;
+                    //int min, max;
 
-                    GetRandomAOSStats(out attributeCount, out min, out max);
+                    //GetRandomAOSStats(out attributeCount, out min, out max);
 
-                    BaseRunicTool.ApplyAttributesTo(weapon, attributeCount, min, max);
+                    //BaseRunicTool.ApplyAttributesTo(weapon, attributeCount, min, max);
 
                     DropItem(item);
                 }
@@ -165,12 +185,12 @@ namespace Server.Items
                 {
                     BaseArmor armor = (BaseArmor)item;
 
-                    int attributeCount;
-                    int min, max;
+                    //int attributeCount;
+                    //int min, max;
 
-                    GetRandomAOSStats(out attributeCount, out min, out max);
+                    //GetRandomAOSStats(out attributeCount, out min, out max);
 
-                    BaseRunicTool.ApplyAttributesTo(armor, attributeCount, min, max);
+                    //BaseRunicTool.ApplyAttributesTo(armor, attributeCount, min, max);
 
                     DropItem(item);
                 }
@@ -178,38 +198,36 @@ namespace Server.Items
                 {
                     BaseHat hat = (BaseHat)item;
 
-                    int attributeCount;
-                    int min, max;
+                    //int attributeCount;
+                    //int min, max;
 
-                    GetRandomAOSStats(out attributeCount, out min, out max);
+                    //GetRandomAOSStats(out attributeCount, out min, out max);
 
-                    BaseRunicTool.ApplyAttributesTo(hat, attributeCount, min, max);
+                    //BaseRunicTool.ApplyAttributesTo(hat, attributeCount, min, max);
 
                     DropItem(item);
                 }
                 else if (item is BaseJewel)
                 {
-                    int attributeCount;
-                    int min, max;
+                    //int attributeCount;
+                    //int min, max;
 
-                    GetRandomAOSStats(out attributeCount, out min, out max);
+                    //GetRandomAOSStats(out attributeCount, out min, out max);
 
-                    BaseRunicTool.ApplyAttributesTo((BaseJewel)item, attributeCount, min, max);
+                    //BaseRunicTool.ApplyAttributesTo((BaseJewel)item, attributeCount, min, max);
 
                     DropItem(item);
                 }
             }
 
-            for (int i = 0; i < level; i++)
-            {
-                Item item = Loot.RandomPossibleReagent();
-                item.Amount = Utility.RandomMinMax(40, 60);
-                DropItem(item);
-            }
+			item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+			item.Amount = 5 + level;
+			if (item != null)
+				DropItem(item);
 
-            for (int i = 0; i < level; i++)
+			for (int i = 0; i < level; i++)
             {
-                Item item = Loot.RandomGem();
+                item = Loot.RandomGem();
                 DropItem(item);
             }
 

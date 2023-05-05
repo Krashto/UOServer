@@ -7,6 +7,8 @@ namespace Server.Engines.Harvest
 {
 	public class CustomLumberjacking : HarvestSystem
 	{
+		private static CustomLumberjacking m_GeneralSystem { get; set; }
+		
 		public static HarvestSystem GetSystem(Item item)
 		{
 			Map map;
@@ -33,9 +35,10 @@ namespace Server.Engines.Harvest
 					return ((CustomLumberjackingStone)i).HarvestSystem;
 			}
 
-			var system = new CustomLumberjacking();
+			if (m_GeneralSystem == null)
+				m_GeneralSystem = new CustomLumberjacking();
 
-			return system;
+			return m_GeneralSystem;
 		}
 
 		private readonly HarvestDefinition m_Definition;

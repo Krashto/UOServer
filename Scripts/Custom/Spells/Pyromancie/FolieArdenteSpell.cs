@@ -43,7 +43,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 				SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-				double damage = Utility.RandomMinMax(47, 57);
+				double damage = Utility.RandomMinMax(25, 35);
 
 				if (CheckResisted(m))
 				{

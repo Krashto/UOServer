@@ -33,8 +33,8 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 					if (bc != null)
 					{
-						double toHeal = Caster.Skills[CastSkill].Value * 0.4 + Caster.Skills[DamageSkill].Value * 0.4;
-						toHeal += Utility.Random(10, 15);
+						double toHeal = Caster.Skills[CastSkill].Value * 0.3 + Caster.Skills[DamageSkill].Value * 0.3;
+						toHeal += Utility.Random(5, 10);
 
 						toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Chasseur);
 

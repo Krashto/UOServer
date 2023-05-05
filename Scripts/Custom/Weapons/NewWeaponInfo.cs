@@ -3,9 +3,6 @@ using Server.Items;
 using Server.Commands;
 using Server.Custom.Misc;
 using System.Text;
-using Server.Gumps;
-using Server.Multis;
-using System.Collections.Generic;
 using Server.Custom.Items.Spells;
 
 namespace Server.Custom.Weapons
@@ -169,7 +166,7 @@ namespace Server.Custom.Weapons
 				return typeof(WhirlwindAttack);
 			else if (weapon is BaseSpear)
 				return typeof(ArmorIgnore);
-			else if (weapon is BasePoleArm)
+			else if (weapon is BasePoleArm || weapon is Lance)
 				return typeof(Dismount);
 			else if (weapon is BaseStaff)
 				return typeof(Block);

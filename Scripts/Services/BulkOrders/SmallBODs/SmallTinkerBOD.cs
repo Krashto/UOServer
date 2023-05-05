@@ -188,7 +188,29 @@ namespace Server.Engines.BulkOrders
                     }
                 }
 
-                if (validEntries.Count > 0)
+				system = DefBoneTailoring.CraftSystem;
+
+				for (int i = 0; i < entries.Length; ++i)
+				{
+					CraftItem item = system.CraftItems.SearchFor(entries[i].Type);
+
+					if (item != null)
+					{
+						bool allRequiredSkills = true;
+						double chance = item.GetSuccessChance(m, null, system, false, ref allRequiredSkills);
+
+						if (allRequiredSkills && chance >= 0.0)
+						{
+							if (reqExceptional)
+								chance = item.GetExceptionalChance(system, chance, m);
+
+							if (chance > 0.0)
+								validEntries.Add(entries[i]);
+						}
+					}
+				}
+
+				if (validEntries.Count > 0)
                 {
                     SmallBulkEntry entry = validEntries[Utility.Random(validEntries.Count)];
 

@@ -45,6 +45,7 @@ namespace Server.Mobiles
         {
         }
 
+		public override int Level => 4;
         public override int Meat => 3;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Regular;

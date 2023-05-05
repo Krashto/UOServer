@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				{
 					SpellHelper.CheckReflect((int)Circle, Caster, ref m);
 
-					var duration = GetDurationForSpell(4);
+					var duration = GetDurationForSpell(4, 1.25);
 
 					m.Paralyze(duration);
 
@@ -215,10 +215,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 			protected override void OnTick()
 			{
-				if (DateTime.Now >= m_Endtime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
+				if (DateTime.Now >= m_Endtime || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
-					m_Timers.Remove(m_Mobile);
-					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Cage de glace", AptitudeColor.Hydromancie, SpellSequenceType.End);
 					m_Owner.Deactivate(m_Mobile);
 				}
 			}

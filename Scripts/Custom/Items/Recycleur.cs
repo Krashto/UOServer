@@ -126,7 +126,7 @@ namespace Server.Items
                     case CraftResource.TropicauxLeather:    
                     case CraftResource.MontagnardLeather:   
                     case CraftResource.AncienLeather:       
-                    case CraftResource.PlainoisLeather:		m_CraftSystem = new List<CraftSystem>() { DefCuir.CraftSystem }; break;
+                    case CraftResource.PlainoisLeather:		m_CraftSystem = new List<CraftSystem>() { DefLeatherArmor.CraftSystem }; break;
 
                     case CraftResource.PlainoisBone:        
 					case CraftResource.ForestierBone:	    

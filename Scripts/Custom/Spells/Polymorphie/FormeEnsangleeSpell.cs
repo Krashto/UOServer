@@ -74,6 +74,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m_Table.Remove(m);
 
 				m.BodyMod = 0;
 				m.HueMod = -1;

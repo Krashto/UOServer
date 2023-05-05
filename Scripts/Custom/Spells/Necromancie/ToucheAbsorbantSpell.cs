@@ -43,13 +43,13 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 					if (c.Owner is CustomPlayerMobile)
 					{
-						min = 10;
-						max = 15;
+						min = 5;
+						max = 10;
 					}
 					else if (c.Owner is BaseCreature)
 					{
-						min = 30;
-						max = 40;
+						min = 20;
+						max = 30;
 					}
 
 					var toHeal = SpellHelper.AdjustValue(Caster, Utility.Random(min, max), Aptitude.Necromancie);

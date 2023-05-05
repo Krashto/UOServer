@@ -33,51 +33,48 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			if (CheckSequence())
 			{
-				if (CheckSequence())
+				var targets = new ArrayList();
+
+				var map = Caster.Map;
+
+				if (map != null)
 				{
-					var targets = new ArrayList();
+					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
 
-					var map = Caster.Map;
+					targets.Add(Caster);
 
-					if (map != null)
+					foreach (Mobile m in eable)
 					{
-						IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
-
-						targets.Add(Caster);
-
-						foreach (Mobile m in eable)
-						{
-							if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
-								targets.Add(m);
-						}
-
-						eable.Free();
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
+							targets.Add(m);
 					}
 
-					if (targets.Count > 0)
+					eable.Free();
+				}
+
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
 					{
-						for (var i = 0; i < targets.Count; ++i)
-						{
-							var m = (Mobile)targets[i];
+						var m = (Mobile)targets[i];
 
-							if (IsActive(m))
-								Deactivate(m);
+						if (IsActive(m))
+							Deactivate(m);
 
-							var duration = GetDurationForSpell(15, 3);
+						var duration = GetDurationForSpell(15, 3);
 
-							var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Aeromancie);
+						var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Aeromancie);
 
-							ResistanceMod mod = new ResistanceMod(ResistanceType.Energy, (int)value);
-							m_Table[m] = mod;
-							m.AddResistanceMod(mod);
-							m.UpdateResistances();
+						ResistanceMod mod = new ResistanceMod(ResistanceType.Energy, (int)value);
+						m_Table[m] = mod;
+						m.AddResistanceMod(mod);
+						m.UpdateResistances();
 
-							CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", duration, AptitudeColor.Aeromancie);
+						CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", duration, AptitudeColor.Aeromancie);
 
-							Timer t = new InternalTimer(m, DateTime.Now + duration);
-							m_Timers[m] = t;
-							t.Start();
-						}
+						Timer t = new InternalTimer(m, DateTime.Now + duration);
+						m_Timers[m] = t;
+						t.Start();
 					}
 				}
 			}

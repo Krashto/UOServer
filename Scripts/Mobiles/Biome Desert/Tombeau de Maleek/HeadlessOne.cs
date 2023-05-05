@@ -9,7 +9,6 @@ namespace Server.Mobiles
         {
             Name = " Sans Tete";
             Body = 31;
-            Hue = Utility.RandomSkinHue() & 0x7FFF;
             BaseSoundID = 0x39D;
 
             SetStr(26, 50);

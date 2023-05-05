@@ -1,8 +1,10 @@
 #region References
 using Server.ContextMenus;
+using Server.Custom;
 using Server.Engines.Quests;
 using Server.Gumps;
 using Server.Items;
+using Server.Multis;
 using Server.Network;
 using Server.Targeting;
 using System;
@@ -429,7 +431,7 @@ namespace Server.Mobiles
 
         public bool CanClaim(Mobile from, BaseCreature pet)
         {
-            return from.Followers + pet.ControlSlots <= from.FollowersMax;
+			return from.Followers + pet.ControlSlots <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4;
         }
 
         private void DoClaim(Mobile from, BaseCreature pet)

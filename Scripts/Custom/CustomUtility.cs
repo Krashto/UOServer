@@ -293,7 +293,7 @@ namespace Server.Custom
 				if (!string.IsNullOrEmpty(item.Name))
 					m.SendMessage($"Vous n'avez pas la quantité suffisante de {item.Name} dans votre coffre de banque.");
 				else
-					m.SendMessage($"Vous n'avez pas la quantité suffisante de {item.GetType()} dans votre coffre de banque.");
+					m.SendMessage($"Vous n'avez pas la quantité suffisante de {item.GetType().Name} dans votre coffre de banque.");
 				item.Delete();
 				return false;
 			}

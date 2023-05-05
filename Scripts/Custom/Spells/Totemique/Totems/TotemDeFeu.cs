@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeFeu : BaseTotem
 	{
 		[Constructable]
-		public TotemDeFeu() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 5)
+		public TotemDeFeu() : base(AIType.AI_Melee, FightMode.Aggressor, 10, 5)
 		{
 			Name = "Totem de feu";
 			Body = 15;

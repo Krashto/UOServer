@@ -1,13 +1,9 @@
 ﻿using System;
-using Server;
-using Server.Mobiles;
-using Server.Gumps;
 using System.Collections.Generic;
 using Server.Engines.Craft;
 
 namespace Server.Items
 {
-	
     public abstract class Statue : Item, ICraftable
 	{
 		private string m_Title;
@@ -46,42 +42,6 @@ namespace Server.Items
         {
         }
 
-		public override void OnDoubleClick(Mobile from)
-		{
-			if (from is CustomPlayerMobile )
-			{
-				CustomPlayerMobile cp = (CustomPlayerMobile)from;
-
-				if (Finish || from == m_Crafter || from.AccessLevel > AccessLevel.Player)
-				{			
-					from.SendGump(new StatueGump(cp, this));
-				}
-				else 
-				{
-					from.SendMessage("Seul le créateur de la statue peut la terminer.");
-				}
-			
-			}
-		}
-		public override void OnDoubleClickNotAccessible(Mobile from)
-		{
-			if (from is CustomPlayerMobile)
-			{
-				CustomPlayerMobile cp = (CustomPlayerMobile)from;
-
-				if (Finish || from == m_Crafter || from.AccessLevel > AccessLevel.Player)
-				{
-					from.SendGump(new StatueGump(cp, this));
-				}
-				else
-				{
-					from.SendMessage("Seul le créateur de la statue peut la terminer.");
-				}
-
-			}
-		}
-
-
 		public string GetContenu(int Entry)
 		{
 			if (Description.ContainsKey(Entry))
@@ -92,40 +52,11 @@ namespace Server.Items
 			{
 				return "";
 			}
-
-
 		}
 
 		public override bool IsAccessibleTo(Mobile check)
 		{
 			return true;
-		}
-
-
-		public void ApplyStatue(StatueEnCours p)
-		{
-			m_Finish = true;
-			m_Title = p.Title;
-			m_CrafterName = p.Name;
-
-	//		Name = m_Title;
-
-			foreach (KeyValuePair<int,string> item in p.Description)
-			{
-				addContenu(item.Key, item.Value);
-			}
-		}
-
-		public void addContenu(int Entry, string value)
-		{
-			if (m_Description.ContainsKey(Entry))
-			{
-				m_Description[Entry] = value;
-			}
-			else
-			{
-				m_Description.Add(Entry, value);
-			}
 		}
 
 		public override void GetProperties(ObjectPropertyList list)
@@ -164,7 +95,6 @@ namespace Server.Items
 
             int version = reader.ReadInt();
 
-
 			switch (version)
 			{
 				case 1:
@@ -189,20 +119,13 @@ namespace Server.Items
 						break;
 					}
 			}
-
-		
         }
 
 		public int OnCraft(int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, ITool tool, CraftItem craftItem, int resHue)
 		{
-		
-			
-
 			Crafter = from;
 
-
 			return quality;
-
 		}
 	}
 }

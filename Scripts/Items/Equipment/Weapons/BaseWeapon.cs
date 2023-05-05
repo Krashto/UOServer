@@ -183,9 +183,9 @@ namespace Server.Items
         public virtual int StrengthReq => 0;
         public virtual int DexterityReq => 0;
         public virtual int IntelligenceReq => 0;
-        public virtual int MinDamage => 0;
-        public virtual int MaxDamage => 0;
-        public virtual float Speed => 0.0f;
+        public virtual int MinDamage => NewWeaponInfo.GetMinDamage(this);
+        public virtual int MaxDamage => NewWeaponInfo.GetMaxDamage(this);
+        public virtual float Speed => NewWeaponInfo.GetSpeed(this);
         public virtual int AosMaxRange => DefMaxRange;
         public virtual int AosHitSound => DefHitSound;
         public virtual int AosMissSound => DefMissSound;
@@ -476,7 +476,7 @@ namespace Server.Items
         [CommandProperty(AccessLevel.GameMaster)]
         public int MinimumDamage
         {
-            get { return (m_MinDamage == -1 ? MinDamage : m_MinDamage); }
+            get { return NewWeaponInfo.GetMinDamage(this); /*(m_MinDamage == -1 ? MinDamage : m_MinDamage);*/ }
             set
             {
                 m_MinDamage = value;
@@ -487,7 +487,7 @@ namespace Server.Items
         [CommandProperty(AccessLevel.GameMaster)]
         public int MaximumDamage
         {
-            get { return (m_MaxDamage == -1 ? MaxDamage : m_MaxDamage); }
+            get { return NewWeaponInfo.GetMaxDamage(this); /*(m_MaxDamage == -1 ? MaxDamage : m_MaxDamage);*/ }
             set
             {
                 m_MaxDamage = value;
@@ -500,13 +500,14 @@ namespace Server.Items
         {
             get
             {
-                if (m_Speed != -1)
-                {
-                    return m_Speed;
-                }
+				return NewWeaponInfo.GetSpeed(this);
+				//if (m_Speed != -1)
+				//{
+				//    return m_Speed;
+				//}
 
-                return Speed;
-            }
+				//return Speed;
+			}
             set
             {
                 m_Speed = value;
@@ -1324,7 +1325,7 @@ namespace Server.Items
 
         public virtual TimeSpan GetDelay(Mobile m)
         {
-            double speed = Speed;
+			double speed = NewWeaponInfo.GetSpeed(this); //Speed;
 
             if (speed == 0)
             {

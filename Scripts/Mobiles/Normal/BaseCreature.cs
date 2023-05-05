@@ -22,6 +22,8 @@ using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom;
 using Server.Custom.Spells.Necromancie.Summons;
+using Server.Engines.TreasuresOfKotlCity;
+
 
 #endregion
 
@@ -2038,7 +2040,7 @@ namespace Server.Mobiles
 
 				//Hides
 				Item leather = null;
-				hides = (int)(4 * (1 + from.Skills[SkillName.Cooking].Value / 50));
+				hides = (int)(Level * (1 + from.Skills[SkillName.Cooking].Value / 50));
 
 				switch (Biome)
 				{
@@ -2065,7 +2067,7 @@ namespace Server.Mobiles
 
 				//Bones
 				Item bone = null;
-				bones = (int)(4 * (1 + from.Skills[SkillName.Cooking].Value / 50));
+				bones = (int)(Level * (1 + from.Skills[SkillName.Cooking].Value / 50));
 
 				switch (Biome)
 				{
@@ -4728,20 +4730,18 @@ namespace Server.Mobiles
 
 		public void SetDamage(int min, int max)
 		{
-			m_DamageMin = 5 + (int)(Level * 3);
-			m_DamageMax = m_DamageMin + 3;
+			SetDamage(min);
 		}
 
 		public void SetHits(int val)
 		{
-			m_HitsMax = (int)(40 * Math.Exp(0.315 * Level));
+			m_HitsMax = (int)(60 * Math.Exp(0.315 * Level));
 			Hits = HitsMax;
 		}
 
 		public void SetHits(int min, int max)
 		{
-			m_HitsMax = (int)(40 * Math.Exp(0.315 * Level));
-			Hits = HitsMax;
+			SetHits(min);
 		}
 
 		public void SetStam(int val)
@@ -4752,8 +4752,7 @@ namespace Server.Mobiles
 
 		public void SetStam(int min, int max)
 		{
-			m_StamMax = 25 + Level * 5;
-			Stam = StamMax;
+			SetStam(min);
 		}
 
 		public void SetMana(int val)
@@ -4764,8 +4763,7 @@ namespace Server.Mobiles
 
 		public void SetMana(int min, int max)
 		{
-			m_ManaMax = 10000;
-			Mana = ManaMax;
+			SetMana(min);
 		}
 
 		public void SetStr(int val)
@@ -4776,8 +4774,7 @@ namespace Server.Mobiles
 
 		public void SetStr(int min, int max)
 		{
-			RawStr = 25 + Level * 5;
-			Hits = HitsMax;
+			SetStr(min);
 		}
 
 		public void SetDex(int val)
@@ -4788,8 +4785,7 @@ namespace Server.Mobiles
 
 		public void SetDex(int min, int max)
 		{
-			RawDex = 100 + Level * 5;
-			Stam = StamMax;
+			SetDex(min);
 		}
 
 		public void SetInt(int val)
@@ -4800,8 +4796,7 @@ namespace Server.Mobiles
 
 		public void SetInt(int min, int max)
 		{
-			RawInt = 100 + Level * 10;
-			Mana = ManaMax;
+			SetInt(min);
 		}
 
 		public void SetDamageType(ResistanceType type, int min, int max)
@@ -4813,16 +4808,16 @@ namespace Server.Mobiles
 		{
 			switch (Biome)
 			{
-				case Biome.Aucun: m_PhysicalDamage = 020; m_FireDamage = 020; m_ColdDamage = 020; m_PoisonDamage = 020; m_EnergyDamage = 020; break;
-				case Biome.Foret: m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 040; m_PoisonDamage = 040; m_EnergyDamage = 000; break;
-				case Biome.Plaine: m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 080; m_EnergyDamage = 000; break;
-				case Biome.Desert: m_PhysicalDamage = 050; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 050; break;
-				case Biome.Colline: m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 040; m_PoisonDamage = 000; m_EnergyDamage = 040; break;
+				case Biome.Aucun:	 m_PhysicalDamage = 020; m_FireDamage = 020; m_ColdDamage = 020; m_PoisonDamage = 020; m_EnergyDamage = 020; break;
+				case Biome.Foret:	 m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 040; m_PoisonDamage = 040; m_EnergyDamage = 000; break;
+				case Biome.Plaine:	 m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 080; m_EnergyDamage = 000; break;
+				case Biome.Desert:	 m_PhysicalDamage = 050; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 050; break;
+				case Biome.Colline:  m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 040; m_PoisonDamage = 000; m_EnergyDamage = 040; break;
 				case Biome.Montagne: m_PhysicalDamage = 080; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 020; break;
-				case Biome.Toundra: m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 080; m_PoisonDamage = 000; m_EnergyDamage = 000; break;
-				case Biome.Volcan: m_PhysicalDamage = 020; m_FireDamage = 080; m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 000; break;
+				case Biome.Toundra:  m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 080; m_PoisonDamage = 000; m_EnergyDamage = 000; break;
+				case Biome.Volcan:   m_PhysicalDamage = 020; m_FireDamage = 080; m_ColdDamage = 000; m_PoisonDamage = 000; m_EnergyDamage = 000; break;
 				case Biome.Tropique: m_PhysicalDamage = 020; m_FireDamage = 040; m_ColdDamage = 000; m_PoisonDamage = 040; m_EnergyDamage = 000; break;
-				case Biome.Savane: m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 040; m_EnergyDamage = 040; break;
+				case Biome.Savane:   m_PhysicalDamage = 020; m_FireDamage = 000; m_ColdDamage = 000; m_PoisonDamage = 040; m_EnergyDamage = 040; break;
 			}
 		}
 
@@ -5004,21 +4999,24 @@ namespace Server.Mobiles
 
 		public void GenerateSpecialLoot()
 		{
-			////Paragon Chest
-			//if (IsParagon)
-			//{
-			//	var item = new ParagonChest(Name, Utility.Random(Level / 6, 1 + Level / 5));
-			//	if (item != null)
-			//		AddLoot(item);
-			//}
+			//Paragon Chests
+			if (IsParagon)
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(ParagonChest));
+				if (item is ParagonChest pc)
+				{
+					pc.Fill(Utility.Random(Level / 6, 1 + Level / 5));
+					AddLoot(item);
+				}
+			}
 
-			//Dungeon Chest
+			//Dungeon Chests
 			if (Level >= 11 && Utility.Random(0, 100) < Level * 5)
 			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDungeonChest));
-				if (item != null)
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(ParagonChest));
+				if (item is ParagonChest pc)
 				{
-					item.Movable = true;
+					pc.Fill((int)Math.Ceiling(Level - 11 / 2.0));
 					AddLoot(item);
 				}
 			}
@@ -5120,7 +5118,10 @@ namespace Server.Mobiles
 
 		public void GenerateGoldLoot()
 		{
-			var min = (int)(20 * Math.Exp(0.25 * Level) - 20);
+			var min = (int)(20 * Math.Exp(0.22 * Level) - 20);
+
+			if (Level >= 11)
+				min = (int)(100 * Math.Exp(0.22 * Level) - 20);
 
 			if (min < 1)
 				min = 1;

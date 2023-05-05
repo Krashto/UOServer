@@ -1193,7 +1193,7 @@ namespace Server.Mobiles
 
                 if (pm != null && pm.NextBODTurnInTime > DateTime.UtcNow)
                 {
-                    SayTo(from, 0x3B2, $"Vous devez attendre {(pm.NextBODTurnInTime - DateTime.UtcNow).TotalMinutes} minutes avant votre prochain retour de contrat.", null);
+                    SayTo(from, 0x3B2, $"Vous devez attendre {(pm.NextBODTurnInTime - DateTime.UtcNow).Minutes} minutes avant votre prochain retour de contrat.", null);
                     return false;
                 }
                 else if (!IsValidBulkOrder(dropped) || !SupportsBulkOrders(from))

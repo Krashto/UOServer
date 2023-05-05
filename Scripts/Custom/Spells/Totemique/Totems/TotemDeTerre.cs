@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeTerre : BaseTotem
 	{
 		[Constructable]
-		public TotemDeTerre() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 5)
+		public TotemDeTerre() : base(AIType.AI_Melee, FightMode.Aggressor, 10, 5)
 		{
 			Name = "Totem de terre";
 			Body = 14;

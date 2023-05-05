@@ -40,6 +40,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+		public override int Level => 2;
 		public override int Hides => 4;
 		public override HideType HideType => HideType.Regular;
 

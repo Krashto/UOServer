@@ -195,10 +195,7 @@ namespace Server.Engines.Harvest
                             item.Amount += WoodsmansTalisman.CheckHarvest(from, type, this);
                         }
 
-                        if (from.AccessLevel == AccessLevel.Player)
-                        {
-                            bank.Consume(amount, from);
-                        }
+                        bank.Consume(amount, from);
 
                         if (Give(from, item, def.PlaceAtFeetIfFull))
                         {

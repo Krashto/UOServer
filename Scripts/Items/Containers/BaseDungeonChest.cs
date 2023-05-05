@@ -44,7 +44,6 @@ namespace Server.Items
 			}
 			else
 			{
-
 				if (!Mimic)
 				{
 					Mimic = true;
@@ -52,39 +51,21 @@ namespace Server.Items
 
 				base.Open(from);
 			}
-		
 		}
 
 		public virtual void TransformMimic(Mobile Combatant)
 		{
-
 			Mimic helper = new Mimic();
-
 
 			helper.Home = this.Location;
 			helper.RangeHome = 4;
 			helper.Combatant = Combatant;
 			helper.Warmode = true;
-
 		
 			helper.MoveToWorld(this.Location, Map);
 
-			
-
 			this.Delete();
-
-
-
-
 		}
-
-
-
-
-
-
-
-
 
 		public override void Serialize(GenericWriter writer)
         {
@@ -146,13 +127,6 @@ namespace Server.Items
 
             DropItem(item);
         }
-
-
-
-
-
-
-
 
 		private void StartDeleteTimer()
         {

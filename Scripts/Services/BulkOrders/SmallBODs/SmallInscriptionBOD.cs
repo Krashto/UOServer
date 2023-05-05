@@ -100,7 +100,26 @@ namespace Server.Engines.BulkOrders
                     }
                 }
 
-                if (validEntries.Count > 0)
+				system = DefSpells.CraftSystem;
+
+				for (int i = 0; i < entries.Length; ++i)
+				{
+					CraftItem item = system.CraftItems.SearchFor(entries[i].Type);
+
+					if (item != null)
+					{
+						bool allRequiredSkills = true;
+						double chance = item.GetSuccessChance(m, null, system, false, ref allRequiredSkills);
+
+						if (allRequiredSkills && chance >= 0.0)
+						{
+							if (chance > 0.0)
+								validEntries.Add(entries[i]);
+						}
+					}
+				}
+
+				if (validEntries.Count > 0)
                 {
                     SmallBulkEntry entry = validEntries[Utility.Random(validEntries.Count)];
                     return new SmallInscriptionBOD(entry, amountMax);

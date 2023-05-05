@@ -57,22 +57,22 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 		private static readonly CompagnonAnimalEntry[] m_Entries = new CompagnonAnimalEntry[]
 		{
-			new CompagnonAnimalEntry(typeof(Rabbit), "Rabbit", 30.0),
-			new CompagnonAnimalEntry(typeof(Hind), "Hind", 30.0),
-			new CompagnonAnimalEntry(typeof(Pig), "Pig", 30.0),
-			new CompagnonAnimalEntry(typeof(Gorilla), "Gorilla", 30.0),
-			new CompagnonAnimalEntry(typeof(Eagle), "Eagle", 30.0),
-			new CompagnonAnimalEntry(typeof(GreyWolf), "Grey Wolf", 30.0),
-			new CompagnonAnimalEntry(typeof(SnowLeopard), "Snow Leopard", 30.0),
-			new CompagnonAnimalEntry(typeof(Alligator), "Alligator", 30.0),
-			new CompagnonAnimalEntry(typeof(Horse), "Horse", 30.0),
-			new CompagnonAnimalEntry(typeof(Llama), "Llama", 30.0),
-			new CompagnonAnimalEntry(typeof(GiantSerpent), "Giant Serpent", 40.0),
-            new CompagnonAnimalEntry(typeof(Scorpion), "Scorpion", 40.0),
-            new CompagnonAnimalEntry(typeof(Walrus), "Walrus", 60.0),
-			new CompagnonAnimalEntry(typeof(PolarBear), "Polar Bear", 60.0),
-			new CompagnonAnimalEntry(typeof(GrizzlyBear), "Grizzly Bear", 60.0),
-        };
+			new CompagnonAnimalEntry(typeof(Rabbit), "Rabbit", 30.0), //1
+			new CompagnonAnimalEntry(typeof(Hind), "Hind", 40.0), //2
+			new CompagnonAnimalEntry(typeof(Pig), "Pig", 40.0), //2
+			new CompagnonAnimalEntry(typeof(Eagle), "Eagle", 40.0), //2
+			new CompagnonAnimalEntry(typeof(GreyWolf), "Grey Wolf", 50.0), //3
+			new CompagnonAnimalEntry(typeof(Horse), "Horse", 50.0), //3
+			new CompagnonAnimalEntry(typeof(Llama), "Llama", 50.0), //3
+			new CompagnonAnimalEntry(typeof(SnowLeopard), "Snow Leopard", 60.0), //4
+			new CompagnonAnimalEntry(typeof(Alligator), "Alligator", 60.0), //4
+			new CompagnonAnimalEntry(typeof(GrizzlyBear), "Grizzly Bear", 70.0), //5
+            new CompagnonAnimalEntry(typeof(Walrus), "Walrus", 70.0), //5
+			new CompagnonAnimalEntry(typeof(GiantSerpent), "Giant Serpent", 80.0), //6
+            new CompagnonAnimalEntry(typeof(Scorpion), "Scorpion", 80.0), //6
+			new CompagnonAnimalEntry(typeof(Gorilla), "Gorilla", 80.0), //6
+			new CompagnonAnimalEntry(typeof(PolarBear), "Polar Bear", 90.0), //7
+		};
 
 		public static CompagnonAnimalEntry[] Entries => m_Entries;
 	}

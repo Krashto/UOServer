@@ -86,8 +86,8 @@ namespace Server.Items
         #region Spawn Types
         private static readonly Type[][] m_SpawnTypes = new Type[][]
         {
-            new Type[]{ typeof( HeadlessOne ), typeof( Skeleton ) },
-            new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof( HeadlessOne ), typeof( Skeleton ), typeof( Zombie ) },
+            new Type[]{ typeof( Zombie ), typeof( Skeleton ) },
+            new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof(Zombie), typeof( Skeleton ), typeof( Zombie ) },
             new Type[]{ typeof( OrcishMage ), typeof( Gargoyle ), typeof( Gazer ), typeof( HellHound ), typeof( EarthElemental ) },
             new Type[]{ typeof( Lich ), typeof( OgreLord ), typeof( DreadSpider ), typeof( AirElemental ), typeof( FireElemental ) },
             new Type[]{ typeof( DreadSpider ), typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( OgreLord ) },
@@ -98,8 +98,8 @@ namespace Server.Items
 
         private static readonly Type[][] m_TokunoSpawnTypes = new Type[][]
         {
-            new Type[]{ typeof( HeadlessOne ), typeof( Skeleton ) },
-            new Type[]{ typeof( HeadlessOne ), typeof( Mongbat ), typeof( Ratman ), typeof( Skeleton), typeof( Zombie ),  },
+            new Type[]{ typeof( Zombie ), typeof( Skeleton ) },
+            new Type[]{ typeof( Zombie ), typeof( Mongbat ), typeof( Ratman ), typeof( Skeleton), typeof( Zombie ),  },
             new Type[]{ typeof( EarthElemental ), typeof( Gazer ), typeof( Gargoyle ), typeof( HellHound ), typeof( OrcishMage ), },
             new Type[]{ typeof( AirElemental ), typeof( DreadSpider ), typeof( FireElemental ), typeof( Lich ), typeof( OgreLord ), },
             new Type[]{ typeof( ElderGazer ), typeof( Daemon ), typeof( DreadSpider ), typeof( LichLord ), typeof( OgreLord ), },
@@ -110,8 +110,8 @@ namespace Server.Items
 
         private static readonly Type[][] m_MalasSpawnTypes = new Type[][]
         {
-            new Type[]{ typeof( HeadlessOne ), typeof( Skeleton ) },
-            new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof( HeadlessOne ), typeof( Skeleton ), typeof( Zombie ) },
+            new Type[]{ typeof( Zombie ), typeof( Skeleton ) },
+            new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof( Zombie ), typeof( Skeleton ), typeof( Zombie ) },
             new Type[]{ typeof( OrcishMage ), typeof( Gargoyle ), typeof( Gazer ), typeof( HellHound ), typeof( EarthElemental ) },
             new Type[]{ typeof( Lich ), typeof( OgreLord ), typeof( DreadSpider ), typeof( AirElemental ), typeof( FireElemental ) },
             new Type[]{ typeof( DreadSpider ), typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( OgreLord ) },
@@ -123,8 +123,8 @@ namespace Server.Items
 
         private static readonly Type[][] m_IlshenarSpawnTypes = new Type[][]
         {
-            new Type[]{ typeof( HeadlessOne ), typeof( Skeleton ) },
-            new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof( HeadlessOne ), typeof( Skeleton ), typeof( Zombie ) },
+            new Type[]{ typeof( Zombie ), typeof( Skeleton ) },
+            new Type[]{ typeof( Mongbat ), typeof( Ratman ), typeof( Zombie ), typeof( Skeleton ), typeof( Zombie ) },
             new Type[]{ typeof( OrcishMage ), typeof( Gargoyle ), typeof( Gazer ), typeof( HellHound ), typeof( EarthElemental ) },
             new Type[]{ typeof( Lich ), typeof( OgreLord ), typeof( DreadSpider ), typeof( AirElemental ), typeof( FireElemental ) },
             new Type[]{ typeof( DreadSpider ), typeof( LichLord ), typeof( Daemon ), typeof( ElderGazer ), typeof( OgreLord ) },
@@ -135,7 +135,7 @@ namespace Server.Items
 
         private static readonly Type[][] m_TerMurSpawnTypes = new Type[][]
         {
-            new Type[]{ typeof( HeadlessOne ), typeof( Skeleton ) },
+            new Type[]{ typeof( Zombie ), typeof( Skeleton ) },
             new Type[]{ typeof( ClockworkScorpion ), typeof( CorrosiveSlime ), typeof( GreaterMongbat ) },
             new Type[]{ typeof( AcidSlug ), typeof( FireElemental ), typeof( WaterElemental ) },
             new Type[]{ typeof( LeatherWolf ), typeof( StoneSlith ), typeof( ToxicSlith ) },

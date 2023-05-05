@@ -6,7 +6,7 @@ namespace Server.Items
 {
 	public class LeatherSewingKit : BaseTool
 	{
-		public override CraftSystem CraftSystem{ get{ return DefCuir.CraftSystem; } }
+		public override CraftSystem CraftSystem{ get{ return DefLeatherArmor.CraftSystem; } }
 
 		[Constructable]
 		public LeatherSewingKit() : base( 0xF9D )

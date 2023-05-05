@@ -113,9 +113,10 @@ namespace Server.Mobiles
             public InternalSellInfo()
             {
                 Add(typeof(Tongs), 1);
-                Add(typeof(IronIngot), 1);
+                //Add(typeof(IronIngot), 1);
+				Add(typeof(IronIngotResourceCrate), 100);
                 Add(typeof(Buckler), 5);
-                Add(typeof(BronzeShield), 3);
+				Add(typeof(BronzeShield), 3);
                 Add(typeof(MetalShield), 6);
                 Add(typeof(MetalKiteShield), 2);
                 Add(typeof(HeaterShield), 5);

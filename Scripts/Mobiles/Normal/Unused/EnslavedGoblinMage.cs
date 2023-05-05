@@ -7,7 +7,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public EnslavedGoblinMage()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             Name = "enslaved goblin mage";
             Body = 334;
@@ -51,8 +51,9 @@ namespace Server.Mobiles
         public override int GetHurtSound() { return 0x5FF; }
         public override int GetDeathSound() { return 0x5FE; }
 
+        public override int Level => 3;
         public override bool CanRummageCorpses => true;
-        public override int TreasureMapLevel => 1;
+		public override int TreasureMapLevel => 1;
         public override int Meat => 1;
 
         public override void GenerateLoot()

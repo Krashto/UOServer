@@ -58,17 +58,7 @@ namespace Server.Items
 				default:
 					return 0;
 			}
-
-
-
 		}
-
-
-
-
-
-
-
 
         [CommandProperty(AccessLevel.GameMaster)]
         public TreasureLevel Level
@@ -82,6 +72,7 @@ namespace Server.Items
                 m_TreasureLevel = value;
             }
         }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public short MaxSpawnTime
         {
@@ -94,6 +85,7 @@ namespace Server.Items
                 m_MaxSpawnTime = value;
             }
         }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public short MinSpawnTime
         {
@@ -106,6 +98,7 @@ namespace Server.Items
                 m_MinSpawnTime = value;
             }
         }
+
         [CommandProperty(AccessLevel.GameMaster)]
         public override bool Locked
         {
@@ -124,6 +117,7 @@ namespace Server.Items
                 }
             }
         }
+
         public override bool IsDecoContainer => false;
         public override string DefaultName
         {
@@ -267,6 +261,5 @@ namespace Server.Items
                 m_Chest.Reset();
             }
         }
-        ;
     }
 }

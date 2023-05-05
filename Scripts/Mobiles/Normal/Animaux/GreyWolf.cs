@@ -10,7 +10,7 @@ namespace Server.Mobiles
             : base(AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4)
         {
             Name = "a grey wolf";
-            Body = Utility.RandomList(25, 27);
+            Body = 25;
             BaseSoundID = 0xE5;
 
             SetStr(56, 80);
@@ -47,6 +47,7 @@ namespace Server.Mobiles
         {
         }
 
+		public override int Level => 3;
 		public override bool CanBeParagon => false;
 		public override int Meat => 1;
 		public override int Hides => 5;

@@ -8,6 +8,8 @@ namespace Server.Engines.Harvest
 {
 	public class CustomMining : HarvestSystem
 	{
+		private static CustomMining m_GeneralSystem { get; set; }
+
 		public static HarvestSystem GetSystem(Item item)
 		{
 			Map map;
@@ -34,9 +36,10 @@ namespace Server.Engines.Harvest
 					return ((CustomMiningStone)i).HarvestSystem;
 			}
 
-			var system = new CustomMining();
+			if (m_GeneralSystem == null)
+				m_GeneralSystem = new CustomMining();
 
-			return system;
+			return m_GeneralSystem;
 		}
 
 		public HarvestDefinition OreAndStone { get; }

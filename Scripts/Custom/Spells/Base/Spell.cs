@@ -749,7 +749,7 @@ namespace Server.Spells
 
 		public virtual TimeSpan GetCastDelay()
 		{
-			TimeSpan baseDelay = CastDelayBase;
+			TimeSpan baseDelay = GetCastDelayBase(GetAptitudeValue());
 			TimeSpan fcDelay = TimeSpan.FromSeconds(-(CastDelayFastScalar * CastDelaySecondsPerTick));
 			TimeSpan delay = baseDelay + fcDelay;
 

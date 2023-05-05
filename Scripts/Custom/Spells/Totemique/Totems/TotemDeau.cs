@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeau : BaseTotem
 	{
 		[Constructable]
-		public TotemDeau() : base(AIType.AI_Mage, FightMode.Aggressor, 10, 5)
+		public TotemDeau() : base(AIType.AI_Melee, FightMode.Aggressor, 10, 5)
 		{
 			Name = "Totem d'eau";
 			Body = 16;
@@ -64,7 +64,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (m != ControlMaster)
 					continue;
 
-				ControlMaster.Heal(15 + (SuperCharged ? 15 : 0));
+				ControlMaster.Heal(10 + (SuperCharged ? 10 : 0));
 				ControlMaster.FixedParticles(0x376A, 9, 32, 5005, EffectLayer.Waist);
 			}
 

@@ -53,7 +53,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				SpellHelper.Turn(Caster, m);
 
-				double toHeal = Caster.Skills[CastSkill].Value * 0.075 + Caster.Skills[DamageSkill].Value * 0.075;
+				double toHeal = Caster.Skills[CastSkill].Value * 0.05 + Caster.Skills[DamageSkill].Value * 0.05;
 				toHeal += Utility.Random(1, 5);
 
 				toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Guerison);

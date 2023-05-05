@@ -1,6 +1,8 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Necromancie
@@ -34,21 +36,48 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		{
 			if (CheckSequence())
 			{
-				if (IsActive(Caster))
-					Deactivate(Caster);
+				var targets = new ArrayList();
 
-				new SoundEffectTimer(Caster).Start();
+				var map = Caster.Map;
 
-				var duration = GetDurationForSpell(15, 3);
+				if (map != null)
+				{
+					IPooledEnumerable eable = map.GetMobilesInRange(Caster.Location, (int)(1 + Caster.Skills[CastSkill].Value / 25));
 
-				var t = new ExpireTimer(Caster, duration);
+					targets.Add(Caster);
 
-				m_Timers[Caster] = t;
-				t.Start();
+					foreach (Mobile m in eable)
+					{
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
+							targets.Add(m);
+					}
 
-				BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.CurseWeapon, 1060512, 1153780, duration, Caster));
+					eable.Free();
+				}
 
-				CustomUtility.ApplySimpleSpellEffect(Caster, "Aura vampirique", duration, AptitudeColor.Necromancie);
+				if (targets.Count > 0)
+				{
+					for (var i = 0; i < targets.Count; ++i)
+					{
+						var m = (Mobile)targets[i];
+
+						if (IsActive(Caster))
+							Deactivate(Caster);
+
+						new SoundEffectTimer(Caster).Start();
+
+						var duration = GetDurationForSpell(15, 3);
+
+						var t = new ExpireTimer(Caster, duration);
+
+						m_Timers[Caster] = t;
+						t.Start();
+
+						BuffInfo.AddBuff(Caster, new BuffInfo(BuffIcon.CurseWeapon, 1060512, 1153780, duration, Caster));
+
+						CustomUtility.ApplySimpleSpellEffect(Caster, "Aura vampirique", duration, AptitudeColor.Necromancie);
+					}
+				}
 			}
 
 			FinishSequence();

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace Server.Engines.Craft
 {
  
-    public class DefCuir : CraftSystem
+    public class DefLeatherArmor : CraftSystem
     {
         #region Statics
 
@@ -19,7 +19,7 @@ namespace Server.Engines.Craft
             get
             {
                 if (m_CraftSystem == null)
-                    m_CraftSystem = new DefCuir();
+                    m_CraftSystem = new DefLeatherArmor();
 
                 return m_CraftSystem;
             }
@@ -27,7 +27,7 @@ namespace Server.Engines.Craft
         #endregion
 
         #region Constructor
-        private DefCuir()
+        private DefLeatherArmor()
             : base(3, 4, 1.50)// base( 1, 1, 4.5 )
 		{
         }
