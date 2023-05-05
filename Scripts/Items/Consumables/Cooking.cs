@@ -298,6 +298,7 @@ namespace Server.Items
         {
             Weight = 1.0;
             Stackable = true;
+			Name = "Pot de Miel";
         }
 
         public JarHoney(Serial serial)
