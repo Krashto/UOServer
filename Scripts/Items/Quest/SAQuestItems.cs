@@ -395,6 +395,7 @@ namespace Server.Items
         {
             Stackable = true;
             Amount = amount;
+			Name = "Pièce Chanceuse";
 
             Hue = 1174;
         }
@@ -409,14 +410,14 @@ namespace Server.Items
 
         public override int LabelNumber => 1113366;// lucky coin
 
-        public override void OnDoubleClick(Mobile from)
-        {
-            if (IsChildOf(from.Backpack) && Amount >= 1)
-            {
-                from.SendLocalizedMessage(1113367); // Make a wish then toss me into sacred waters!!
-                from.Target = new InternalTarget(this);
-            }
-        }
+        //public override void OnDoubleClick(Mobile from)
+        //{
+        //    if (IsChildOf(from.Backpack) && Amount >= 1)
+        //    {
+        //        from.SendLocalizedMessage(1113367); // Make a wish then toss me into sacred waters!!
+        //        from.Target = new InternalTarget(this);
+        //    }
+        //}
 
         private class InternalTarget : Target
         {

@@ -71,13 +71,13 @@ namespace Server.Mobiles
             return ore;
         }
 
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
+        //public override void OnDeath(Container c)
+        //{
+        //    base.OnDeath(c);
 
-            if (Utility.RandomDouble() < 0.03)
-                c.DropItem(new LuckyCoin());
-        }
+        //    if (Utility.RandomDouble() < 0.03)
+        //        c.DropItem(new LuckyCoin());
+        //}
 
         public override void Serialize(GenericWriter writer)
         {

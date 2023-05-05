@@ -771,7 +771,7 @@ namespace Server.Items
         public DeerMask(int hue)
             : base(0x1547, hue)
         {
-			Name = "Marsque de Cerf";
+			Name = "Masque de Cerf";
 
 		}
 
