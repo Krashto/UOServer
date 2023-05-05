@@ -455,7 +455,7 @@ namespace Server.Mobiles.MannequinProperty
 
         public double GetPropertyValue(Item item)
         {
-            return item is BaseRangedWeapon ranged ? ranged.Velocity : 0;
+            return item is BaseRanged ranged ? ranged.Velocity : 0;
         }
 
         public override bool Matches(Item item)

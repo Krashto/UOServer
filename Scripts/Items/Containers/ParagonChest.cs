@@ -1,3 +1,4 @@
+using System;
 using Server.Custom;
 using Server.Custom.Packaging.Packages;
 
@@ -46,7 +47,8 @@ namespace Server.Items
         {
             base.GetProperties(list);
 
-            list.Add(1063449, m_Name);
+			if (m_Name != "Coffre aux trésors")
+				list.Add(1063449, m_Name);
         }
 
         public void Flip()
@@ -164,6 +166,25 @@ namespace Server.Items
 
 			Item item = null;
 
+			item = CustomUtility.GetRandomItemByBaseType(typeof(SpellScroll));
+
+			if (item != null)
+			{
+				if (item is GateTravelScroll || item is RecallScroll)
+					item.Delete();
+				else
+					DropItem(item);
+			}
+
+			item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+			item.Amount = 5 + level;
+			if (item != null)
+				DropItem(item);
+
+			item = CustomUtility.GetRandomItemByBaseType(typeof(BaseShell));
+			if (item != null)
+				DropItem(item);
+
 			for (int i = 0; i < level * 2; ++i)
             {
                 item = Loot.RandomArmorOrShieldOrWeaponOrJewelry();
@@ -209,14 +230,14 @@ namespace Server.Items
                 }
                 else if (item is BaseJewel)
                 {
-                    //int attributeCount;
-                    //int min, max;
+					int attributeCount;
+					int min, max;
 
-                    //GetRandomAOSStats(out attributeCount, out min, out max);
+					GetRandomAOSStats(out attributeCount, out min, out max);
 
-                    //BaseRunicTool.ApplyAttributesTo((BaseJewel)item, attributeCount, min, max);
+					BaseRunicTool.ApplyAttributesTo((BaseJewel)item, attributeCount, min, max);
 
-                    DropItem(item);
+					DropItem(item);
                 }
             }
 

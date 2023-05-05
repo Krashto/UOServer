@@ -5060,7 +5060,17 @@ namespace Server.Mobiles
 			//Essences + Reagents
 			if (AI == AIType.AI_Mage || AI == AIType.AI_NecroMage)
 			{
-				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(SpellScroll));
+
+				if (item != null)
+				{
+					if (item is GateTravelScroll || item is RecallScroll)
+						item.Delete();
+					else
+						AddLoot(item);
+				}
+
+				item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
 				item.Amount = 5 + Level;
 				if (item != null)
 					AddLoot(item);

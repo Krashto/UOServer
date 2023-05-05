@@ -139,7 +139,7 @@ namespace Server.Items
 
         public void Fire(Mobile from)
         {
-            BaseRangedWeapon ranged = from.Weapon as BaseRangedWeapon;
+            BaseRanged ranged = from.Weapon as BaseRanged;
 
             if (ranged == null)
             {

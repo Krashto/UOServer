@@ -55,7 +55,7 @@ namespace Server.Mobiles
 
         public override void OnGotMeleeAttack(Mobile attacker)
         {
-            if (attacker.Weapon is BaseRangedWeapon)
+            if (attacker.Weapon is BaseRanged)
                 BeginAcidBreath();
 
             base.OnGotMeleeAttack(attacker);

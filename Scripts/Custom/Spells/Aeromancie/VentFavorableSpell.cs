@@ -1,5 +1,4 @@
 using System;
-using Server.Mobiles;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using System.Collections;
@@ -39,8 +38,10 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				t.Start();
+				m_Timers[Caster] = t;
 
-				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
+				Caster.Flying = true;
+				//Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Vent favorable", duration, AptitudeColor.Aeromancie, SpellEffectType.Malus);
 			}
@@ -64,7 +65,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m.SendSpeedControl(SpeedControlType.Disable);
+				m.Flying = false;
+				//m.SendSpeedControl(SpeedControlType.Disable);
 				CustomUtility.ApplySimpleSpellEffect(m, "Vent favorable", AptitudeColor.Aeromancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}

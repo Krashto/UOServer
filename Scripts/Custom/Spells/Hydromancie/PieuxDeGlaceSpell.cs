@@ -51,8 +51,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					IPooledEnumerable eable = map.GetMobilesInRange(target.Location, range);
 
-					ExplodeFX.Earth.CreateInstance(target.Location, target.Map, range).Send();
-
 					foreach (Mobile m in eable)
 					{
 						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
@@ -86,7 +84,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 
-						source.MovingParticles(m, 0x232E, 7, 0, true, false, 0, 0, 0);
+						ExplodeFX.Ice.CreateInstance(target.Location, target.Map, 1).Send();
 						CustomUtility.ApplySimpleSpellEffect(m, "Pieux de glace", AptitudeColor.Hydromancie, SpellEffectType.Damage);
 					}
 				}

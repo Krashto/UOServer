@@ -99,7 +99,7 @@ namespace Server.Items
         {
             BaseWeapon weapon = from.Weapon as BaseWeapon;
 
-            if (weapon is BaseRangedWeapon)
+            if (weapon is BaseRanged)
                 SendLocalizedMessageTo(from, 501822); // You can't practice ranged weapons on this.
             else if (weapon == null || !from.InRange(GetWorldLocation(), weapon.MaxRange))
                 SendLocalizedMessageTo(from, 501816); // You are too far away to do that.

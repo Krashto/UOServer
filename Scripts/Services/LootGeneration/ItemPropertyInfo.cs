@@ -690,7 +690,7 @@ namespace Server.Items
         {
             Type typ = specialRes;
 
-            if (item is BaseRangedWeapon)
+            if (item is BaseRanged)
             {
                 if (id == 1)
                 {
@@ -710,7 +710,7 @@ namespace Server.Items
         {
             TextDefinition td = info.SpecialName;
 
-            if (item is BaseRangedWeapon)
+            if (item is BaseRanged)
             {
                 if (info.ID == 1)
                 {
@@ -801,7 +801,7 @@ namespace Server.Items
         {
             int max = (int)(wep.Speed * 2500 / (100 + wep.Attributes.WeaponSpeed));
 
-            if (wep is BaseRangedWeapon)
+            if (wep is BaseRanged)
             {
                 max /= 2;
             }
@@ -918,7 +918,7 @@ namespace Server.Items
 
         public static ItemType GetItemType(Item item)
         {
-            if (item is BaseRangedWeapon)
+            if (item is BaseRanged)
                 return ItemType.Ranged;
             if (item is BaseWeapon)
                 return ItemType.Melee;

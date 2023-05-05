@@ -121,7 +121,7 @@ namespace Server.Mobiles
         {
             base.OnGotMeleeAttack(attacker);
 
-            if (attacker.Weapon is BaseRangedWeapon && m_NextSpawn < DateTime.UtcNow && m_Eels.Count < SpawnMax && 0.25 > Utility.RandomDouble())
+            if (attacker.Weapon is BaseRanged && m_NextSpawn < DateTime.UtcNow && m_Eels.Count < SpawnMax && 0.25 > Utility.RandomDouble())
                 SpawnEel(attacker);
         }
 

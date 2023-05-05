@@ -443,9 +443,9 @@ namespace VitaNex.FX
 				return;
 			}
 
-			var list = new int[] { 0x1771, 0x1773, 0x1774, 0x1775, 0x1776, 0x1777, 0x1778, 0x1779, 0x177B, 0x177C };
+			var list = new int[] { 0x16EF, 0x16F0, 0x16F1, 0x16F2, 0x16F3 };
 			e.EffectID = Utility.RandomList(list);
-			e.Hue = Utility.RandomMinMax(1361, 1366);
+			//e.Hue = Utility.RandomMinMax(1361, 1366);
 			e.Source = new Entity(Serial.Zero, e.Source.Location.Clone3D(zOffset: 5), e.Map);
 		}
 	}

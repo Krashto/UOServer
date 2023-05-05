@@ -124,7 +124,7 @@ namespace Server.Engines.ArenaSystem
         {
             ArenaDuel duel = Arena.CurrentDuel;
 
-            if (duel != null && !duel.RangedWeaponsAllowed && item is BaseRangedWeapon)
+            if (duel != null && !duel.RangedWeaponsAllowed && item is BaseRanged)
             {
                 pm.SendLocalizedMessage(1115996); // The rules prohibit the use of ranged weapons!
                 return false;

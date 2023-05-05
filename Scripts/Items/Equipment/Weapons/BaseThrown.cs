@@ -2,7 +2,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BaseThrown : BaseRangedWeapon
+    public abstract class BaseThrown : BaseRanged
     {
         private Mobile m_Thrower;
         private Mobile m_Target;

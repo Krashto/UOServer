@@ -2,7 +2,7 @@
 
 namespace Server.Custom.Items.TrainingWeapon
 {
-	public abstract class BaseTrainingRangedWeapon : BaseRangedWeapon
+	public abstract class BaseTrainingRangedWeapon : BaseRanged
 	{
 		public BaseTrainingRangedWeapon(int itemID)
 			: base(itemID)

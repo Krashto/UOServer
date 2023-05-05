@@ -42,7 +42,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				Caster.BodyMod = 164;
 				Caster.HueMod = 0;
 
-				Caster.SendSpeedControl(SpeedControlType.MountSpeed);
+				Caster.Flying = true;
+				//Caster.SendSpeedControl(SpeedControlType.MountSpeed);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
@@ -81,7 +82,8 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				m.BodyMod = 0;
 				m.HueMod = -1;
 
-				m.SendSpeedControl(SpeedControlType.Disable);
+				m.Flying = false;
+				//m.SendSpeedControl(SpeedControlType.Disable);
 
 				m.Delta(MobileDelta.Hits);
 

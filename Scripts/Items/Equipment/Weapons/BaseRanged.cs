@@ -7,7 +7,7 @@ using System;
 
 namespace Server.Items
 {
-    public abstract class BaseRangedWeapon : BaseWeapon
+    public abstract class BaseRanged : BaseWeapon
 	{
         public abstract int EffectID { get; }
         public abstract Type AmmoType { get; }
@@ -47,11 +47,11 @@ namespace Server.Items
             }
         }
 
-        public BaseRangedWeapon(int itemID)
+        public BaseRanged(int itemID)
             : base(itemID)
         { }
 
-        public BaseRangedWeapon(Serial serial)
+        public BaseRanged(Serial serial)
             : base(serial)
         { }
 

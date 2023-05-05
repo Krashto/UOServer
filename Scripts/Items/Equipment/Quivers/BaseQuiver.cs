@@ -476,7 +476,7 @@ namespace Server.Items
                 m_Attributes.AddStatBonuses(mob);
                 m_AosSkillBonuses.AddTo(mob);
 
-                BaseRangedWeapon ranged = mob.Weapon as BaseRangedWeapon;
+                BaseRanged ranged = mob.Weapon as BaseRanged;
 
                 if (ranged != null)
                     ranged.InvalidateProperties();

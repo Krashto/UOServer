@@ -68,7 +68,7 @@ namespace Server.Items
             defender.PlaySound(0x140);
             defender.FixedParticles(0x3728, 10, 15, 9955, EffectLayer.Waist);
 
-            int delay = attacker.Weapon is BaseRangedWeapon ? 8 : 10;
+            int delay = attacker.Weapon is BaseRanged ? 8 : 10;
 
             DoDismount(attacker, defender, mount, delay);
 
@@ -102,7 +102,7 @@ namespace Server.Items
 
             if (attacker is PlayerMobile)
             {
-                ((PlayerMobile)attacker).SetMountBlock(BlockMountType.DismountRecovery, TimeSpan.FromSeconds(attacker.Weapon is BaseRangedWeapon ? 8 : 10), false);
+                ((PlayerMobile)attacker).SetMountBlock(BlockMountType.DismountRecovery, TimeSpan.FromSeconds(attacker.Weapon is BaseRanged ? 8 : 10), false);
             }
             else if (attacker is BaseCreature)
             {

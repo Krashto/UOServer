@@ -1032,13 +1032,13 @@ namespace Server.Engines.Shadowguard
 
             BaseWeapon wep = Weapon as BaseWeapon;
 
-            if ((wep is Fists || wep is BaseRangedWeapon) && InRange(Combatant.Location, 1) && 0.1 > Utility.RandomDouble())
+            if ((wep is Fists || wep is BaseRanged) && InRange(Combatant.Location, 1) && 0.1 > Utility.RandomDouble())
             {
                 Item scimitar = Backpack.FindItemByType(typeof(Scimitar));
 
                 if (scimitar != null)
                 {
-                    if (wep is BaseRangedWeapon)
+                    if (wep is BaseRanged)
                         Backpack.DropItem(wep);
 
                     SetWearable(scimitar);
@@ -1046,7 +1046,7 @@ namespace Server.Engines.Shadowguard
                     _NextWeaponSwitch = DateTime.UtcNow + TimeSpan.FromSeconds(10);
                 }
             }
-            else if ((wep is Fists || !(wep is BaseRangedWeapon)) && !InRange(Combatant.Location, 1) && 0.1 > Utility.RandomDouble())
+            else if ((wep is Fists || !(wep is BaseRanged)) && !InRange(Combatant.Location, 1) && 0.1 > Utility.RandomDouble())
             {
                 Item yumi = Backpack.FindItemByType(typeof(Yumi));
 

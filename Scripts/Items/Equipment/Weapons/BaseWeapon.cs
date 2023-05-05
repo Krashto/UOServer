@@ -1249,7 +1249,7 @@ namespace Server.Items
 			{
 				var atk = (CustomPlayerMobile)attacker;
 
-				if (this is BaseRangedWeapon)
+				if (this is BaseRanged)
 				{
 					if (!atk.CheckEquitation(EquitationType.RangedAttacking))
 						return false;
@@ -1514,7 +1514,7 @@ namespace Server.Items
 
                 return success;
             }
-            else if (!(defender.Weapon is Fists) && !(defender.Weapon is BaseRangedWeapon))
+            else if (!(defender.Weapon is Fists) && !(defender.Weapon is BaseRanged))
             {
                 BaseWeapon weapon = defender.Weapon as BaseWeapon;
 
@@ -1804,7 +1804,7 @@ namespace Server.Items
 
             WeaponAbility a = WeaponAbility.GetCurrentAbility(attacker);
 
-            bool ranged = this is BaseRangedWeapon;
+            bool ranged = this is BaseRanged;
             int phys, fire, cold, pois, nrgy, chaos, direct;
 
             if (a is MovingShot)
@@ -1964,7 +1964,7 @@ namespace Server.Items
 				percentageBonus += 100;
 
 			if (EnrageSpell.IsActive(attacker))
-				percentageBonus += this is BaseRangedWeapon ? 50 : 100;
+				percentageBonus += this is BaseRanged ? 50 : 100;
 
 			if (CommandementSpell.IsActive(attacker))
 				percentageBonus += 100;
@@ -2245,7 +2245,7 @@ namespace Server.Items
                 int explosChance = (int)(ExtendedWeaponAttributes.GetValue(attacker, ExtendedWeaponAttribute.HitExplosion) * propertyBonus);
 
                 #region Mondains Legacy
-                int velocityChance = this is BaseRangedWeapon ? ((BaseRangedWeapon)this).Velocity : 0;
+                int velocityChance = this is BaseRanged ? ((BaseRanged)this).Velocity : 0;
                 #endregion
 
                 #region Stygian Abyss
@@ -3026,7 +3026,7 @@ namespace Server.Items
 
 				if (this is BaseMeleeWeapon)
 					capaciteBonus = pm.Capacites[Capacite.ArmesMelee] * 0.2;
-				else if (this is BaseRangedWeapon)
+				else if (this is BaseRanged)
 					capaciteBonus = pm.Capacites[Capacite.ArmesDistance] * 0.2;
 			}
 			#endregion
@@ -4541,7 +4541,7 @@ namespace Server.Items
                 list.Add(1113710, prop.ToString()); // Battle Lust
             }
 
-            if (this is BaseRangedWeapon && (prop = ((BaseRangedWeapon)this).Velocity) != 0)
+            if (this is BaseRanged && (prop = ((BaseRanged)this).Velocity) != 0)
             {
                 list.Add(1072793, prop.ToString()); // Velocity ~1_val~%
             }

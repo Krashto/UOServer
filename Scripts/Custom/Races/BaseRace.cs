@@ -4,6 +4,7 @@ using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using Server.Custom.Races;
 using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
@@ -56,6 +57,12 @@ namespace Server
 
             if (Present != null)
                 m.AddToBackpack(Present);
+
+			if (this is Drakos || this is Peekos)
+			{
+				m.HairItemID = 0;
+				m.FacialHairItemID = 0;
+			}
 
             m.EquipItem(skin);
         }
@@ -120,6 +127,9 @@ namespace Server
 
 		public override bool ValidateHair(bool female, int itemID)
 		{
+			if (this is Drakos || this is Peekos)
+				return false;
+
 			if (itemID == 0)
 				return true;
 
@@ -137,6 +147,9 @@ namespace Server
 
 		public override int RandomHair(bool female) //Random hair doesn't include baldness
 		{
+			if (this is Drakos || this is Peekos)
+				return 0;
+
 			switch (Utility.Random(9))
 			{
 				case 0: return 0x203B;  //Short
@@ -153,6 +166,9 @@ namespace Server
 
 		public override bool ValidateFacialHair(bool female, int itemID)
 		{
+			if (this is Drakos || this is Peekos)
+				return false;
+
 			if (itemID == 0)
 				return true;
 
