@@ -267,6 +267,7 @@ namespace Server.Items
             Stackable = false;
             Weight = 1.0;
             FillFactor = 2;
+			Name = "Bol de Mais";
         }
 
         public PewterBowlOfCorn(Serial serial)
@@ -387,6 +388,7 @@ namespace Server.Items
             Stackable = false;
             Weight = 1.0;
             FillFactor = 2;
+			Name = "Bol de Patates";
         }
 
         public PewterBowlOfPotatos(Serial serial)

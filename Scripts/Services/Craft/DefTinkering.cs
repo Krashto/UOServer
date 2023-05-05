@@ -470,11 +470,11 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(BarrelTap), "Robinet de baril", 1, 1044253);
 			index = AddCraft(typeof(Rope), "Assemblages", "Corde", 60.0, 120.0, typeof(Cloth), "Tissus", 10, "Vous avez besoin de plus de tissus");
 			
-			index = AddCraft(typeof(DistillerySouthAddonDeed), "Assemblages", "Distillerie (S)",65.0, 100.0, typeof(PotionKeg), "Tonnelet de Potions", 2, 1044253);
+			index = AddCraft(typeof(DistillerySouthAddonDeed), "Assemblages", "Distillerie (S)",65.0, 100.0, typeof(LiquorBarrel), "Tonneau d'alcool", 2, 1044253);
 			AddRes(index, typeof(HeatingStand), "Support chauffant", 4, 1044253);
 			AddRes(index, typeof(CopperWire), "Fil de cuivre", 20, 1044253);
 			ForceNonExceptional(index);
-			index = AddCraft(typeof(DistilleryEastAddonDeed), "Assemblages", "Distillerie (E)", 65.0, 100.0, typeof(PotionKeg), "Tonnelet de Potions", 2, 1044253);
+			index = AddCraft(typeof(DistilleryEastAddonDeed), "Assemblages", "Distillerie (E)", 65.0, 100.0, typeof(LiquorBarrel), "Tonneau d'alcool", 2, 1044253);
 			AddRes(index, typeof(HeatingStand), "Support chauffant", 4, 1044253);
 			AddRes(index, typeof(CopperWire), "Fil de cuivre", 20, 1044253);
 			ForceNonExceptional(index);

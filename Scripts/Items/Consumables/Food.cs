@@ -1286,6 +1286,7 @@ namespace Server.Items
         {
             Weight = 1.0;
             FillFactor = 1;
+			Name = "Melon d'eau";
         }
 
         public HoneydewMelon(Serial serial)
