@@ -7,8 +7,8 @@ using System;
 
 namespace Server.Engines.Distillation
 {
-    public class DistillationGump : Gump
-    {
+    public class DistillationGump : BaseProjectMGump
+	{
         private const int LabelHue = 0x480;
         private const int LabelColor = 0x7FFF;
         private const int FontColor = 0xFFFFFF;
@@ -16,8 +16,8 @@ namespace Server.Engines.Distillation
         private readonly DistillationContext m_Context;
         private readonly CraftDefinition m_Def;
 
-        public DistillationGump(Mobile from) : base(35, 35)
-        {
+        public DistillationGump(Mobile from) : base("Menu de Distillation", 30, 30, false)
+		{
             from.CloseGump(typeof(DistillationGump));
 
             m_Context = DistillationSystem.GetContext(from);
@@ -25,7 +25,7 @@ namespace Server.Engines.Distillation
             Group group = m_Context.LastGroup;
             Liquor liquor = m_Context.LastLiquor;
 
-            if (liquor == Liquor.None)
+            if (liquor == Liquor.Aucun)
                 liquor = DistillationSystem.GetFirstLiquor(group);
 
             m_Def = DistillationSystem.GetDefinition(liquor, group);
@@ -36,7 +36,7 @@ namespace Server.Engines.Distillation
             if (m_Def.Liquor != liquor)
                 liquor = m_Def.Liquor;
 
-            AddBackground(0, 0, 500, 500, 5054);
+           AddBackground(0, 0, 500, 500, 5054);
             AddImageTiled(10, 10, 480, 30, 2624);
             AddImageTiled(10, 50, 230, 120, 2624);
             AddImageTiled(10, 180, 230, 200, 2624);
@@ -46,18 +46,19 @@ namespace Server.Engines.Distillation
             AddImageTiled(10, 460, 480, 30, 2624);
             AddAlphaRegion(10, 10, 480, 480);
 
-            AddHtmlLocalized(10, 16, 510, 20, 1150682, LabelColor, false, false); // <center>DISTILLERY MENU</center>
+            AddHtmlTexte(10, 16, 510, 20, "Menu de Distillerie"); // <center>DISTILLERY MENU</center>
 
-            AddHtmlLocalized(10, 55, 230, 20, 1150683, LabelColor, false, false); // <center>Select the group</center>
+
+			AddHtmlTexte(10, 55, 230, 20, "Sélection de la Base"); // <center>Select the group</center>
 
             AddButton(15, 80, 4005, 4007, 1, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(55, 80, 200, 20, DistillationSystem.GetLabel(Group.WheatBased), LabelColor, false, false); // WHEAT BASED
+            AddHtmlLocalized(55, 80, 200, 20, DistillationSystem.GetLabel(Group.BaseBle), LabelColor, false, false); // WHEAT BASED
 
             AddButton(15, 106, 4005, 4007, 2, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(55, 106, 200, 20, DistillationSystem.GetLabel(Group.WaterBased), LabelColor, false, false); // WATER  BASED
+            AddHtmlLocalized(55, 106, 200, 20, DistillationSystem.GetLabel(Group.BaseEau), LabelColor, false, false); // WATER  BASED
 
             AddButton(15, 132, 4005, 4007, 3, GumpButtonType.Reply, 0);
-            AddHtmlLocalized(55, 132, 200, 20, DistillationSystem.GetLabel(Group.Other), LabelColor, false, false); // OTHER
+            AddHtmlLocalized(55, 132, 200, 20, DistillationSystem.GetLabel(Group.Autre), LabelColor, false, false); // OTHER
 
             AddHtmlLocalized(10, 184, 230, 20, 1150684, LabelColor, false, false); // <center>Select the liquor type</center>
 
@@ -108,7 +109,7 @@ namespace Server.Engines.Distillation
                 y += 26;
             }
 
-            AddHtmlLocalized(250, 264, 240, 20, 1150770, LabelColor, false, false); // <center>Distillery Options</center>
+			AddHtmlTexte(250, 264, 240, 20, "Options de Distillation"); // <center>Distillery Options</center>
 
             AddButton(255, 290, 4005, 4007, 4, GumpButtonType.Reply, 0);
             AddHtmlLocalized(295, 290, 200, 20, m_Context.MakeStrong ? 1150730 : 1150729, LabelColor, false, false); // Double Distillation - Standard Distillation
@@ -134,13 +135,13 @@ namespace Server.Engines.Distillation
             {
                 case 0: return;
                 case 1: // Select Wheat Based
-                    m_Context.LastGroup = Group.WheatBased;
+                    m_Context.LastGroup = Group.BaseBle;
                     break;
                 case 2: // Select Water Based
-                    m_Context.LastGroup = Group.WaterBased;
+                    m_Context.LastGroup = Group.BaseEau;
                     break;
                 case 3: // Select Other
-                    m_Context.LastGroup = Group.Other;
+                    m_Context.LastGroup = Group.Autre;
                     break;
                 case 4: // Distillation Strength
                     if (m_Context.MakeStrong)
