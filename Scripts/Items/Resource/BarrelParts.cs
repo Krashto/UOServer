@@ -265,6 +265,7 @@ namespace Server.Items
             : base(0x1004)
         {
             Weight = 1;
+			Name = "Couvercle de Tonneau";
         }
 
         public override void AddCraftedProperties(ObjectPropertyList list)

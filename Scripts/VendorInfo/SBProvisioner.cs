@@ -133,13 +133,14 @@ namespace Server.Mobiles
 
 				Add(typeof(Citrine), 5);
 				Add(typeof(Amber), 8);
-				Add(typeof(Tourmaline), 12);
-				Add(typeof(Ruby), 15);
-				Add(typeof(Amethyst), 18);
-				Add(typeof(Sapphire), 21);
-				Add(typeof(StarSapphire), 25);
-				Add(typeof(Emerald), 28);
-				Add(typeof(Diamond), 31);
+				Add(typeof(Tourmaline), 9);
+				Add(typeof(Ruby), 10);
+				Add(typeof(Amethyst), 12);
+				Add(typeof(Sapphire), 15);
+				Add(typeof(StarSapphire), 20);
+				Add(typeof(Emerald), 25);
+				Add(typeof(Diamond), 35);
+
 
 				Add(typeof(GoldRing), 7);
 				Add(typeof(SilverRing), 5);

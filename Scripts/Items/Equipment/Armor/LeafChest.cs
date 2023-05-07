@@ -3,12 +3,12 @@ using Server.Engines.Craft;
 namespace Server.Items
 {
 
-    [Flipable(0x2FC5, 0x317B)]
+    [Flipable(0x317B, 0x317B)]
     public class LeafChest : BaseArmor
     {
         [Constructable]
         public LeafChest()
-            : base(0x2FC5)
+            : base(0x317B)
         {
             Weight = 2.0;
         }
@@ -17,7 +17,7 @@ namespace Server.Items
             : base(serial)
         {
         }
-
+		
         public override int BasePhysicalResistance => 1;
         public override int BaseFireResistance => 3;
         public override int BaseColdResistance => 2;
