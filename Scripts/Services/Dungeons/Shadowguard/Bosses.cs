@@ -781,7 +781,7 @@ namespace Server.Engines.Shadowguard
             _NextNuke = DateTime.UtcNow + TimeSpan.FromMinutes(1);
             _NextDismount = DateTime.UtcNow + TimeSpan.FromMinutes(1);
         }
-		public override int Level => 18;
+		public override int Level => 20;
 		public override Biome Biome => Biome.Toundra;
 		public override int GetDeathSound() { return 0x596; }
         public override int GetAttackSound() { return 0x597; }

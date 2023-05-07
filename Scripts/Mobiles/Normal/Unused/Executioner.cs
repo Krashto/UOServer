@@ -13,7 +13,8 @@ namespace Server.Mobiles
         public Executioner()
             : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            SpeechHue = Utility.RandomDyedHue();
+			Race = Race.Human;
+			SpeechHue = Utility.RandomDyedHue();
             Title = "L'executeur";
             Hue = Utility.RandomSkinHue();
 
@@ -35,8 +36,8 @@ namespace Server.Mobiles
 			SetStr(386, 400);
             SetDex(151, 165);
             SetInt(161, 175);
-
-            SetDamage(8, 10);
+			SetHits(58, 72);
+			SetDamage(8, 10);
 
             SetDamageType(ResistanceType.Physical, 100);
 
@@ -174,10 +175,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Colline;
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Meager);
 			AddLoot(LootPack.Others, Utility.RandomMinMax(5, 6));
-			AddLoot(LootPack.LootItem<Items.Gold>(50, 150));
 
 		}
 

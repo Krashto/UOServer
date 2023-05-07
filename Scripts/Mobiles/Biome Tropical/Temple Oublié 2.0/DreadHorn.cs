@@ -52,7 +52,7 @@ namespace Server.Mobiles
             m_Stomp = DateTime.UtcNow;
             m_Teleport = DateTime.UtcNow;
         }
-		public override int Level => 16;
+		public override int Level => 18;
 		public override Biome Biome => Biome.Tropique;
 		public override void GenerateLoot()
         {

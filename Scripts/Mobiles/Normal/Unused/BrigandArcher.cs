@@ -9,7 +9,8 @@ namespace Server.Mobiles
         public BrigandArcher()
             : base(AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-            SpeechHue = Utility.RandomDyedHue();
+			Race = Race.Human;
+			SpeechHue = Utility.RandomDyedHue();
             Title = " Brigand";
            	Race = BaseRace.GetRace(Utility.Random(4));
 
@@ -29,8 +30,8 @@ namespace Server.Mobiles
             SetStr(86, 100);
             SetDex(81, 95);
             SetInt(61, 75);
-
-            SetDamage(10, 23);
+			SetHits(58, 72);
+			SetDamage(10, 23);
 
 
             SetSkill(SkillName.MagicResist, 25.0, 47.5);
@@ -38,8 +39,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 65.0, 87.5);
             SetSkill(SkillName.Wrestling, 15.0, 37.5);
 
-            Fame = 1000;
-            Karma = -1000;
+            //Fame = 1000;
+            //Karma = -1000;
 
             AddItem(new Boots(Utility.RandomNeutralHue()));
             AddItem(new FancyShirt());
@@ -54,7 +55,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		public override int Level => 8;
+		public override int Level => 6;
 		public override Biome Biome => Biome.Colline;
 		public override TribeType Tribe => TribeType.Brigand;
 
