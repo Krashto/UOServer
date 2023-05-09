@@ -440,13 +440,13 @@ namespace Server.Items
 		}
 	}
 
-	public class Bock : BaseUtensil
+	public class BazBock : BaseUtensil
 
 	{
 
 
 		[Constructable]
-		public Bock()
+		public BazBock()
 				: base(0xA3E4)
 
 		{
@@ -455,7 +455,7 @@ namespace Server.Items
 			Layer = Layer.OneHanded;
 		}
 
-		public Bock(Serial serial)
+		public BazBock(Serial serial)
 				: base(serial)
 
 		{
@@ -476,13 +476,13 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class CoupeMain : BaseUtensil
+	public class BazCoupeMain : BaseUtensil
 
 	{
 
 
 		[Constructable]
-		public CoupeMain()
+		public BazCoupeMain()
 				: base(0xA3FA)
 
 		{
@@ -491,7 +491,7 @@ namespace Server.Items
 			Layer = Layer.OneHanded;
 		}
 
-		public CoupeMain(Serial serial)
+		public BazCoupeMain(Serial serial)
 				: base(serial)
 
 		{
@@ -549,13 +549,13 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class CorneBoire : BaseUtensil
+	public class BazCorneBoire : BaseUtensil
 
 	{
 
 
 		[Constructable]
-		public CorneBoire()
+		public BazCorneBoire()
 				: base(0xA3F0)
 
 		{
@@ -564,7 +564,7 @@ namespace Server.Items
 			Layer = Layer.OneHanded;
 		}
 
-		public CorneBoire(Serial serial)
+		public BazCorneBoire(Serial serial)
 				: base(serial)
 
 		{
@@ -623,13 +623,13 @@ namespace Server.Items
 		}
 	}
 
-	public class Parchemin : BaseUtensil
+	public class BazParchemin : BaseUtensil
 
 	{
 
 
 		[Constructable]
-		public Parchemin()
+		public BazParchemin()
 				: base(0xA3F6)
 
 		{
@@ -638,7 +638,295 @@ namespace Server.Items
 			Layer = Layer.OneHanded;
 		}
 
-		public Parchemin(Serial serial)
+		public BazParchemin(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique1 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique1()
+				: base(0xA4AB)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Voodoo";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique1(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique2 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique2()
+				: base(0xA4AC)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Rubis";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique2(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class Bazrelique3 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public Bazrelique3()
+				: base(0xA4AD)
+
+		{
+			Weight = 2.0;
+			Name = "Relique du Gardien";
+			Layer = Layer.OneHanded;
+		}
+
+		public Bazrelique3(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique4 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique4()
+				: base(0xA4AE)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Prière";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique4(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique5 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique5()
+				: base(0xA4B0)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Ombre";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique5(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique6 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique6()
+				: base(0xA4B1)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Argentée";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique6(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique7 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique7()
+				: base(0xA4B6)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Coupe";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique7(Serial serial)
+				: base(serial)
+
+		{
+		}
+
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(0); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
+	public class BazRelique8 : BaseUtensil
+
+	{
+
+
+		[Constructable]
+		public BazRelique8()
+				: base(0xA4B7)
+
+		{
+			Weight = 2.0;
+			Name = "Relique Étoilée";
+			Layer = Layer.OneHanded;
+		}
+
+		public BazRelique8(Serial serial)
 				: base(serial)
 
 		{

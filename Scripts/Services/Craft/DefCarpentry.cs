@@ -202,7 +202,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(WildStaff), "Armes et bouclier", "Bâton sauvage", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 16, 1044351);
 			index = AddCraft(typeof(Club), "Armes et bouclier", "Massue", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(BlackStaff), "Armes et bouclier", "Bâton noir", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
-			//index = AddCraft(typeof(BatonNature), "Armes et bouclier", "Bâton de la Nature", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(BatonDragonique), "Armes et bouclier", "Bâton Dragonique", 40.0, 60.0, typeof(PlainoisBoard), 1044041, 9, 1044351);
 			index = AddCraft(typeof(BatonErmite), "Armes et bouclier", "Bâton de l'Ermite", 55.0, 80.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
 			index = AddCraft(typeof(Eterfer), "Armes et bouclier", "Eterfer", 55.0, 80.0, typeof(PlainoisBoard), 1044041, 6, 1044351);
@@ -241,6 +240,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(OrnateWoodenChest), "Caisses et coffres", "Grand coffre orné", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
 			index = AddCraft(typeof(GildedWoodenChest), "Caisses et coffres", "Grand coffre renforcé", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
 			index = AddCraft(typeof(WoodenFootLocker), "Caisses et coffres", "Coffre à chaussures", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(CoffreMaritime), "Caisses et coffres", "Coffre Maritime", 60.0, 90.0, typeof(PlainoisBoard), 1044041, 40, 1044351);
+			
+
+
 			index = AddCraft(typeof(FinishedWoodenChest), "Caisses et coffres", "Grand coffre", 70.0, 90.0, typeof(PlainoisBoard), 1044041, 30, 1044351);
 	
 			index = AddCraft(typeof(OrnateElvenChestSouthDeed), "Caisses et coffres", "Coffre elfique orné (S)", 90.0, 115.0, typeof(PlainoisBoard), 1044041, 40, 1044351);

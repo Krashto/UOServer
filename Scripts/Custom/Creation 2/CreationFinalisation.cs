@@ -30,7 +30,7 @@ namespace Server.Gumps
 
             int space = 115;
 
-			string context = "Le bateau continuera de voger en direction de la ville principale, et vous allez perdre tous les objets présents dans votre sac. Etes-vous certain de vouloir continuer?";
+			string context = "Le bateau continuera de voguer en direction de la ville principale, et vous allez perdre tous les objets présents dans votre sac. Etes-vous certain de vouloir continuer?";
 
 			AddSection(x - 5 , y, 445, 160, "Contexte", context);
 
