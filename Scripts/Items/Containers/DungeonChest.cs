@@ -18,12 +18,12 @@ namespace Server.Items
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 1 * Utility.Random(35, 45);
 
-			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
-			if (item != null)
-			{
-				item.Amount = Level;
-				DropItem(item);
-			}
+			//var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			//if (item != null)
+			//{
+			//	item.Amount = Level;
+			//	DropItem(item);
+			//}
 		}
 
         public TreasureLevel1(Serial serial) : base(serial)
@@ -58,12 +58,12 @@ namespace Server.Items
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 2 * Utility.Random(30, 50);
 
-			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
-			if (item != null)
-			{
-				item.Amount = Level;
-				DropItem(item);
-			}
+			//var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			//if (item != null)
+			//{
+			//	item.Amount = Level;
+			//	DropItem(item);
+			//}
 		}
 
         public TreasureLevel2(Serial serial) : base(serial)
@@ -99,12 +99,12 @@ namespace Server.Items
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 3 * Utility.Random(30, 40);
 
-			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
-			if (item != null)
-			{
-				item.Amount = Level;
-				DropItem(item);
-			}
+			//var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			//if (item != null)
+			//{
+			//	item.Amount = Level;
+			//	DropItem(item);
+			//}
 		}
 
         public TreasureLevel3(Serial serial) : base(serial)
@@ -139,12 +139,12 @@ namespace Server.Items
             TrapType = TrapType.ExplosionTrap;
             TrapPower = 4 * Utility.Random(25, 35);
 
-			var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
-			if (item != null)
-			{
-				item.Amount = Level;
-				DropItem(item);
-			}
+			//var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+			//if (item != null)	
+			//{
+			//	item.Amount = Level;
+			//	DropItem(item);
+			//}
 		}
 
         public TreasureLevel4(Serial serial) : base(serial)

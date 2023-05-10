@@ -14,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		{
 		}
 
-		public TotemDenergie(TimeSpan duration) : base(AIType.AI_Melee, FightMode.Aggressor, 10, 5)
+		public TotemDenergie(TimeSpan duration) : base(AIType.AI_Melee, FightMode.Closest, 10, 1)
 		{
 			m_EndTime = DateTime.Now + duration;
 

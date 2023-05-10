@@ -16,7 +16,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				Reagent.EssenceChasseur
 			);
 
-		public override int RequiredAptitudeValue { get { return 5; } }
+		public override int RequiredAptitudeValue { get { return 7; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Chasseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -58,6 +58,11 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 							targ.Combatant = bc;
 							targ.Emote($"*Est provoqué{(targ.Female ? "e" : "")} par {Caster.Name}*");
+							if (Caster is CustomPlayerMobile pm)
+							{
+								targ.Stam -= Math.Min(2 * pm.Aptitudes[Aptitude.Chasseur], targ.Stam);
+								targ.Mana -= Math.Min(2 * pm.Aptitudes[Aptitude.Chasseur], targ.Mana);
+							}
 							CustomUtility.ApplySimpleSpellEffect(targ, "Rugissement", AptitudeColor.Chasseur, SpellEffectType.Taunt);
 							bc.Combatant = targ;
 							bc.Emote($"*Provoque {targ.Name}*");

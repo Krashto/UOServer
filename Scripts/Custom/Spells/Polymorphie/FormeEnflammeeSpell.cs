@@ -99,6 +99,14 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 				var map = m_Caster.Map;
 
+				if (m_Caster.Mana < 2)
+				{
+					m_Caster.SendMessage("Votre forme ne fait plus effet, car vous n'avez plus suffisamment de mana.");
+					return;
+				}
+
+				m_Caster.Mana -= 2;
+
 				if (map != null)
 				{
 					var range = 2;
@@ -126,7 +134,7 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 						Disturb(m);
 
-						double damage = m_Owner.GetNewAosDamage(m, 8, 1, 6, true);
+						double damage = m_Owner.GetNewAosDamage(m, 6, 1, 5, true);
 
 						if (m_Owner.CheckResisted(m))
 						{

@@ -95,27 +95,30 @@ namespace Server.Items
         public bool CanRaise(CustomPlayerMobile from, SkillName skill)
         {
             double skillValue = from.Skills[skill].Base;
-            double skillCap = from.Skills[skill].Cap;
-            SkillLock skillLock = from.Skills[skill].Lock;
 
-            if (m_Level <= 0)
+			if (m_Level <= 0)
+			{
+				from.SendMessage("Vous ne pouvez plus augmenter votre compétence avec ce livre.");
+				return false;
+			}
+			else if (from.SkillsTotal >= from.SkillsCap)
+			{
+				from.SendMessage("Vous ne pouvez plus augmenter votre compétence avec ce livre (Total Skill Cap).");
+				return false;
+			}
+			else if (skillValue >= from.Skills[skill].Cap)
             {
-                from.SendMessage("Vous ne pouvez plus augmenter votre compétence avec ce livre.");
+                from.SendMessage("Vous ne pouvez augmenter votre skill. Vous avez atteint votre cap (Skill Cap).");
                 return false;
             }
-            else if (skillValue >= skillCap)
+            else if (from.Skills[skill].Lock != SkillLock.Up)
             {
-                from.SendMessage("Vous ne pouvez augmenter votre skill: vous avez atteint son cap.");
-                return false;
-            }
-            else if (skillLock != SkillLock.Up)
-            {
-                from.SendMessage("Vous ne pouvez augmenter votre skill: vérifiez son cadenas.");
+                from.SendMessage("Vous ne pouvez augmenter votre skill. Vérifiez le cadenas.");
                 return false;
             }
             else if (skillValue >= m_Max)
             {
-                from.SendMessage("Vous ne pouvez augmenter votre skill: vous avez atteint le niveau maximum du livre.");
+                from.SendMessage("Vous ne pouvez augmenter votre skill. Vous avez atteint le niveau maximum du livre.");
                 return false;
             }
             else

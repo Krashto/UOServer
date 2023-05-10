@@ -20,7 +20,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				Reagent.EssenceHydromancie
 			);
 
-		public override int RequiredAptitudeValue { get { return 6; } }
+		public override int RequiredAptitudeValue { get { return 2; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Hydromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Meditation; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -75,6 +75,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 						SpellHelper.CheckReflect((int)Circle, ref source, ref m);
 
 						double damage = GetNewAosDamage(m, 4, 1, 6, true);
+
+						if (AvatarDuFroidSpell.IsActive(m))
+							damage *= 1.2;
 
 						if (CheckResisted(m))
 						{

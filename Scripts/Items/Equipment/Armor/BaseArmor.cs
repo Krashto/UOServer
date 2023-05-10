@@ -987,10 +987,18 @@ namespace Server.Items
 				case AMT.Plate:		resist += 6; break;
 			}
 
-			if (Parent is CustomPlayerMobile)
+			if (Parent is CustomPlayerMobile pm)
 			{
-				var pm = Parent as CustomPlayerMobile;
-				resist += pm.Capacites[Capacite.Armure];
+				var capacite = pm.Capacites[Capacite.Armure];
+				switch (MaterialType)
+				{
+					case AMT.Leather:	resist += capacite;	    break;
+					case AMT.Studded:	resist += capacite;	    break;
+					case AMT.Bone:		resist += capacite;	    break;
+					case AMT.Ringmail:	resist += capacite * 2; break;
+					case AMT.Chainmail: resist += capacite * 2; break;
+					case AMT.Plate:		resist += capacite * 2; break;
+				}
 			}
 
 			return resist;
@@ -1102,8 +1110,8 @@ namespace Server.Items
 				case ItemQuality.Low: return -1;
 				case ItemQuality.Normal: return 0;
 				case ItemQuality.Exceptional: return 1;
-				case ItemQuality.Epic: return 2;
-				case ItemQuality.Legendary: return 3;
+				case ItemQuality.Epic: return 3;
+				case ItemQuality.Legendary: return 5;
 			}
 
 			return 0;

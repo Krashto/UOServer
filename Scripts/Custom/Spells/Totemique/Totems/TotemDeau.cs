@@ -8,7 +8,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeau : BaseTotem
 	{
 		[Constructable]
-		public TotemDeau() : base(AIType.AI_Melee, FightMode.Aggressor, 10, 5)
+		public TotemDeau() : base(AIType.AI_Melee, FightMode.Closest, 10, 1)
 		{
 			Name = "Totem d'eau";
 			Body = 16;

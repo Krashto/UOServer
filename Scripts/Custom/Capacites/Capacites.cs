@@ -21,7 +21,7 @@ namespace Server
 		public int BaseArmure
 		{
 			get { return GetValue(Capacite.Armure); }
-			set { this[Capacite.Armure] = value; }
+			set { this[Capacite.Armure] = value; m_Owner.UpdateResistances(); }
 		}
 		[CommandProperty(AccessLevel.GameMaster)]
 		public int Armure

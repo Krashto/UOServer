@@ -17,7 +17,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 				Reagent.EssencePyromancie
 			);
 
-		public override int RequiredAptitudeValue { get { return 2; } }
+		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Pyromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.Magery; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

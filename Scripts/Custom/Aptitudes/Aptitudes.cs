@@ -373,22 +373,22 @@ namespace Server.Custom.Aptitudes
 			{
 				AptitudesEntry entry = m_AptitudeEntries[(int)aptitude];
 
-				var value = GetRealValue(aptitude);
+				var baseValue = GetValue(aptitude);
 
-				if (m_Values[(int)aptitude] < 0)
-					value = m_Values[(int)aptitude] = 0;
-				if (value > entry.Max)
-					value = m_Values[(int)aptitude] = Math.Max(0, entry.Max - Classes.Classes.GetAptitudeValue(m_Owner.Classe, aptitude));
+				if (baseValue < 0)
+					baseValue = m_Values[(int)aptitude] = 0;
+				if (GetRealValue(aptitude) > entry.Max)
+					m_Values[(int)aptitude] = Math.Max(0, entry.Max - Classes.Classes.GetAptitudeValue(m_Owner.Classe, aptitude));
 
 				double skill = Owner.Skills[entry.SkillName].Value;
 
-				double skillRequirement = GetSkillRequirement(value, entry.Aptitude);
+				double skillRequirement = GetSkillRequirement(baseValue, entry.Aptitude);
 
-				while (skillRequirement > skill && value > 0)
+				while (skillRequirement > skill && baseValue > 0)
 				{
 					m_Values[(int)aptitude]--;
-					value = GetRealValue(aptitude);
-					skillRequirement = GetSkillRequirement(value, entry.Aptitude);
+					baseValue = GetValue(aptitude);
+					skillRequirement = GetSkillRequirement(baseValue, entry.Aptitude);
 				}
 			}
 		}
@@ -407,14 +407,14 @@ namespace Server.Custom.Aptitudes
 					AptitudesEntry entry = m_AptitudeEntries[index];
 
 					int max = entry.Max;
-					int level = GetRealValue(aptitude);
+					int value = GetValue(aptitude);
 
-					if (level >= max)
+					if (GetRealValue(aptitude) >= max)
 						return false;
 
 					var skill = Owner.Skills[entry.SkillName].Base;
 
-					var skillRequirement = GetSkillRequirement(level + 1, entry.Aptitude);
+					var skillRequirement = GetSkillRequirement(value + 1, entry.Aptitude);
 
 					return skill >= skillRequirement;
 				}
@@ -449,7 +449,7 @@ namespace Server.Custom.Aptitudes
 		{
 			int index = GetIndex(aptitude);
 
-			if (m_Values[index] == value)
+			if (GetValue(aptitude) == value)
 				return;
 
 			if (index >= 0 && index < m_Values.Length)

@@ -20,7 +20,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 				Reagent.EssenceChasseur
 			);
 
-		public override int RequiredAptitudeValue { get { return 8; } }
+		public override int RequiredAptitudeValue { get { return 9; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Chasseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

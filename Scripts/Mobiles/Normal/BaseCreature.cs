@@ -4724,7 +4724,7 @@ namespace Server.Mobiles
 		#region Set[...]
 		public void SetDamage(int val)
 		{
-			m_DamageMin = 5 + (int)(Level * 3);
+			m_DamageMin = 5 + (int)(Level * 2);
 			m_DamageMax = m_DamageMin + 5;
 		}
 

@@ -1,5 +1,6 @@
 using System.Linq;
 using Server;
+using Server.Custom;
 using Server.Gumps;
 using Server.Items;
 using Server.Network;
@@ -127,6 +128,12 @@ namespace BedrollTent
 
 			private void AddTent(Mobile from, int hue)
 			{
+				if (CustomUtility.IsInDungeonRegion(from.Location))
+				{
+					from.SendMessage("Vous ne pouvez pas poser de tête dans les donjons.");
+					return;
+				}
+
 				if (m_Tent != null)
 				{
 					from.SendMessage("Vous ne pouvez poser qu'une seule tente à la fois.");

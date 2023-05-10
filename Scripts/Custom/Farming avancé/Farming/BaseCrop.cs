@@ -166,12 +166,16 @@ namespace Server.Items.Crops
 		{
 			base.Serialize(writer);
 			writer.Write((int)0);
+
+			writer.Write(Sower);
 		}
 
 		public override void Deserialize(GenericReader reader)
 		{
 			base.Deserialize(reader);
 			int version = reader.ReadInt();
+
+			Sower = reader.ReadMobile();
 		}
 	}
 }

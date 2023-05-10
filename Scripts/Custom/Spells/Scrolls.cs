@@ -147,21 +147,21 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AuraEvasiveScroll : SpellScroll
+	public class AuraElectrisanteScroll : SpellScroll
 	{
 		[Constructable]
-		public AuraEvasiveScroll() : this(1)
+		public AuraElectrisanteScroll() : this(1)
 		{
 		}
 
 		[Constructable]
-		public AuraEvasiveScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraEvasiveSpell)), 0x1F2D, amount)
+		public AuraElectrisanteScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(AuraElectrisanteSpell)), 0x1F2D, amount)
 		{
-			Name = "Aura Evasive";
+			Name = "Aura Electrisante";
 			Hue = (int)AptitudeColor.Aeromancie;
 		}
 
-		public AuraEvasiveScroll(Serial serial) : base(serial)
+		public AuraElectrisanteScroll(Serial serial) : base(serial)
 		{
 		}
 

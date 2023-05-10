@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public class TotemDeTerre : BaseTotem
 	{
 		[Constructable]
-		public TotemDeTerre() : base(AIType.AI_Melee, FightMode.Aggressor, 10, 5)
+		public TotemDeTerre() : base(AIType.AI_Melee, FightMode.Closest, 10, 1)
 		{
 			Name = "Totem de terre";
 			Body = 14;
@@ -35,7 +35,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 90.0);
 
-			ControlSlots = 1;
+			ControlSlots = 2;
 		}
 
 		public TotemDeTerre(Serial serial)

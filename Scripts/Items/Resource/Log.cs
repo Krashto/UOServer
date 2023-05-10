@@ -100,7 +100,7 @@ namespace Server.Items
 
         public virtual bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 0, new RegularBoard()))
+            if (!TryCreateBoards(from, 0, new RegularBoard(2)))
                 return false;
 
             return true;
@@ -144,7 +144,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 0, new RegularBoard()))
+            if (!TryCreateBoards(from, 0, new RegularBoard(2)))
                 return false;
 
             return true;
@@ -188,7 +188,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new PlainoisBoard()))
+			if (!TryCreateBoards(from, 0, new PlainoisBoard(2)))
 				return false;
 
 			return true;
@@ -230,7 +230,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 100, new HeartwoodBoard()))
+            if (!TryCreateBoards(from, 100, new HeartwoodBoard(2)))
                 return false;
 
             return true;
@@ -272,7 +272,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 100, new BloodwoodBoard()))
+            if (!TryCreateBoards(from, 100, new BloodwoodBoard(2)))
                 return false;
 
             return true;
@@ -314,7 +314,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 100, new FrostwoodBoard()))
+            if (!TryCreateBoards(from, 100, new FrostwoodBoard(2)))
                 return false;
 
             return true;
@@ -356,7 +356,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 65, new OakBoard()))
+            if (!TryCreateBoards(from, 65, new OakBoard(2)))
                 return false;
 
             return true;
@@ -398,7 +398,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 80, new AshBoard()))
+            if (!TryCreateBoards(from, 80, new AshBoard(2)))
                 return false;
 
             return true;
@@ -440,7 +440,7 @@ namespace Server.Items
 
         public override bool Axe(Mobile from, BaseAxe axe)
         {
-            if (!TryCreateBoards(from, 95, new YewBoard()))
+            if (!TryCreateBoards(from, 95, new YewBoard(2)))
                 return false;
 
             return true;
@@ -481,7 +481,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new ForestierBoard()))
+			if (!TryCreateBoards(from, 0, new ForestierBoard(2)))
 				return false;
 
 			return true;
@@ -521,7 +521,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new CollinoisBoard()))
+			if (!TryCreateBoards(from, 0, new CollinoisBoard(2)))
 				return false;
 
 			return true;
@@ -561,7 +561,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new DesertiqueBoard()))
+			if (!TryCreateBoards(from, 0, new DesertiqueBoard(2)))
 				return false;
 
 			return true;
@@ -601,7 +601,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new MontagnardBoard()))
+			if (!TryCreateBoards(from, 0, new MontagnardBoard(2)))
 				return false;
 
 			return true;
@@ -641,7 +641,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new SavanoisBoard()))
+			if (!TryCreateBoards(from, 0, new SavanoisBoard(2)))
 				return false;
 
 			return true;
@@ -681,7 +681,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new VolcaniqueBoard()))
+			if (!TryCreateBoards(from, 0, new VolcaniqueBoard(2)))
 				return false;
 
 			return true;
@@ -721,7 +721,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new ToundroisBoard()))
+			if (!TryCreateBoards(from, 0, new ToundroisBoard(2)))
 				return false;
 
 			return true;
@@ -761,7 +761,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new TropicauxBoard()))
+			if (!TryCreateBoards(from, 0, new TropicauxBoard(2)))
 				return false;
 
 			return true;
@@ -801,7 +801,7 @@ namespace Server.Items
 
 		public override bool Axe(Mobile from, BaseAxe axe)
 		{
-			if (!TryCreateBoards(from, 0, new AncienBoard()))
+			if (!TryCreateBoards(from, 0, new AncienBoard(2)))
 				return false;
 
 			return true;

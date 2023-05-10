@@ -48,8 +48,19 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m) || PieuxDeGlaceSpell.IsActive(m)))
 				{
-					m.Damage(m.Hits - (m.HitsMax / 2));
-					CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
+					if (m is BaseCreature)
+					{
+						if (AvatarDuFroidSpell.IsActive(Caster))
+							m.Damage(m.Hits - (m.HitsMax * 35 / 100));
+						else
+							m.Damage(m.Hits - (m.HitsMax * 25 / 100));
+						CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
+					}
+					else
+					{
+						m.Damage(m.Hits - (m.HitsMax * 50 / 100));
+						CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
+					}
 				}
 			}
 

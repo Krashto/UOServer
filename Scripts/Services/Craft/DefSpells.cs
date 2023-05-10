@@ -200,29 +200,29 @@ namespace Server.Engines.Craft
 			AddSpell("Aéromancie", typeof(BrouillardScroll), "Brouillard", 2);
 			AddSpell("Aéromancie", typeof(TeleportationScroll), "Téleportation", 3);
 			AddSpell("Aéromancie", typeof(TornadoScroll), "Tornado", 4);
-			AddSpell("Aéromancie", typeof(AuraEvasiveScroll), "Aura évasive", 5);
-			AddSpell("Aéromancie", typeof(ExTeleportationScroll), "Ex-téleportation", 6);
-			AddSpell("Aéromancie", typeof(ToucherSuffocantScroll), "Touché suffocant", 7);
+			AddSpell("Aéromancie", typeof(AuraElectrisanteScroll), "Aura électrisante", 5);
+			AddSpell("Aéromancie", typeof(ToucherSuffocantScroll), "Touché suffocant", 6);
+			AddSpell("Aéromancie", typeof(VentFavorableScroll), "Vent favorable", 7);
 			AddSpell("Aéromancie", typeof(AuraDeBrouillardScroll), "Aura de brouillard", 8);
-			AddSpell("Aéromancie", typeof(VentFavorableScroll), "Vent favorable", 9);
+			AddSpell("Aéromancie", typeof(ExTeleportationScroll), "Ex-téleportation", 9);
 			AddSpell("Aéromancie", typeof(VortexScroll), "Vortex", 10);
 
 			AddSpell("Chasseur", typeof(AntidoteScroll), "Antidote", 1);
 			AddSpell("Chasseur", typeof(MarquerScroll), "Marquer", 2);
 			AddSpell("Chasseur", typeof(CompagnonAnimalScroll), "Compagnon animal", 3);
 			AddSpell("Chasseur", typeof(SoinAnimalierScroll), "Soin animalier", 4);
-			AddSpell("Chasseur", typeof(RugissementScroll), "Rugissement", 5);
-			AddSpell("Chasseur", typeof(FrappeEnsanglanteeScroll), "Frappe ensanglantée", 6);
-			AddSpell("Chasseur", typeof(SautAggressifScroll), "Saut aggressif", 7);
-			AddSpell("Chasseur", typeof(CoupDansLeGenouScroll), "Coup dans le genou", 8);
-			AddSpell("Chasseur", typeof(ChasseurDePrimeScroll), "Chasseur de prime", 9);
+			AddSpell("Chasseur", typeof(FrappeEnsanglanteeScroll), "Frappe ensanglantée", 5);
+			AddSpell("Chasseur", typeof(SautAggressifScroll), "Saut aggressif", 6);
+			AddSpell("Chasseur", typeof(RugissementScroll), "Rugissement", 7);
+			AddSpell("Chasseur", typeof(ChasseurDePrimeScroll), "Chasseur de prime", 8);
+			AddSpell("Chasseur", typeof(CoupDansLeGenouScroll), "Coup dans le genou", 9);
 			AddSpell("Chasseur", typeof(ContratResoluScroll), "Contrat résolu", 10);
 
 			AddSpell("Défenseur", typeof(DevotionScroll), "Dévotion", 1);
 			AddSpell("Défenseur", typeof(BravadeScroll), "Bravade", 2);
-			AddSpell("Défenseur", typeof(MentorScroll), "Mentor", 3);
+			AddSpell("Défenseur", typeof(InterventionScroll), "Intervention", 3);
 			AddSpell("Défenseur", typeof(MutinerieScroll), "Mutinerie", 4);
-			AddSpell("Défenseur", typeof(InterventionScroll), "Intervention", 5);
+			AddSpell("Défenseur", typeof(MentorScroll), "Mentor", 5);
 			AddSpell("Défenseur", typeof(LienDeVieScroll), "Lien de vie", 6);
 			AddSpell("Défenseur", typeof(MiracleScroll), "Miracle", 7);
 			AddSpell("Défenseur", typeof(IndomptableScroll), "Indomptable", 8);
@@ -242,9 +242,9 @@ namespace Server.Engines.Craft
 
 			AddSpell("Guérison", typeof(MainCicatrisanteScroll), "Main cicatritrisante", 1);
 			AddSpell("Guérison", typeof(RemedeScroll), "Remède", 2);
-			AddSpell("Guérison", typeof(MurDePierreScroll), "Mur de pierre", 3);
+			AddSpell("Guérison", typeof(DonDeLaVieScroll), "Don de la vie", 3);
 			AddSpell("Guérison", typeof(RayonCelesteScroll), "Rayon céleste", 4);
-			AddSpell("Guérison", typeof(DonDeLaVieScroll), "Don de la vie", 5);
+			AddSpell("Guérison", typeof(MurDePierreScroll), "Mur de pierre", 5);
 			AddSpell("Guérison", typeof(FrayeurScroll), "Frayeur", 6);
 			AddSpell("Guérison", typeof(FerveurDivineScroll), "Ferveur divine", 7);
 			AddSpell("Guérison", typeof(InquisitionScroll), "Inquisition", 8);
@@ -252,11 +252,11 @@ namespace Server.Engines.Craft
 			AddSpell("Guérison", typeof(LumiereSacreeScroll), "Lumière sacrée", 10);
 
 			AddSpell("Hydromancie", typeof(ArmureDeGlaceScroll), "Armure de glace", 1);
-			AddSpell("Hydromancie", typeof(RestaurationScroll), "Restauration", 2);
-			AddSpell("Hydromancie", typeof(SoinPreventifScroll), "Soin préventif", 3);
+			AddSpell("Hydromancie", typeof(PieuxDeGlaceScroll), "Pieux de glace", 2);
+			AddSpell("Hydromancie", typeof(RestaurationScroll), "Restauration", 3);
 			AddSpell("Hydromancie", typeof(CageDeGlaceScroll), "Cage de glace", 4);
 			AddSpell("Hydromancie", typeof(AuraCryogeniseeScroll), "Aura cryogenisée", 5);
-			AddSpell("Hydromancie", typeof(PieuxDeGlaceScroll), "Pieux de glace", 6);
+			AddSpell("Hydromancie", typeof(SoinPreventifScroll), "Soin préventif", 6);
 			AddSpell("Hydromancie", typeof(CerveauGeleScroll), "Cerveau gelé", 7);
 			AddSpell("Hydromancie", typeof(AuraRefrigeranteScroll), "Aura réfrigerante", 8);
 			AddSpell("Hydromancie", typeof(AvatarDuFroidScroll), "Avatar de froid", 9);
@@ -307,8 +307,8 @@ namespace Server.Engines.Craft
 			AddSpell("Polymorphie", typeof(FormeEnsanglanteeScroll), "Ensanglantée", 10);
 
 			AddSpell("Pyromancie", typeof(BouclierDeFeuScroll), "Bouclier de feu", 1);
-			AddSpell("Pyromancie", typeof(CeleriteScroll), "Célérité", 2);
-			AddSpell("Pyromancie", typeof(BouleDeFeuScroll), "Boule de feu", 3);
+			AddSpell("Pyromancie", typeof(BouleDeFeuScroll), "Boule de feu", 2);
+			AddSpell("Pyromancie", typeof(CeleriteScroll), "Célérité", 3);
 			AddSpell("Pyromancie", typeof(SupernovaScroll), "Supernova", 4);
 			AddSpell("Pyromancie", typeof(AuraRechauffanteScroll), "Aura réchauffante", 5);
 			AddSpell("Pyromancie", typeof(PassionArdenteScroll), "Passion ardente", 6);
@@ -329,9 +329,9 @@ namespace Server.Engines.Craft
 			AddSpell("Roublardise", typeof(CoupMortelScroll), "Coup mortel", 10);
 
 			AddSpell("Totémique", typeof(TotemDeTerreScroll), "Totem de terre", 1);
-			AddSpell("Totémique", typeof(TotemDeauScroll), "Totem d'eau", 2);
-			AddSpell("Totémique", typeof(TotemDeFeuScroll), "Totem de feu", 3);
-			AddSpell("Totémique", typeof(TotemDuVentScroll), "Totem du vent", 4);
+			AddSpell("Totémique", typeof(TotemDeFeuScroll), "Totem de feu", 2);
+			AddSpell("Totémique", typeof(TotemDuVentScroll), "Totem du vent", 3);
+			AddSpell("Totémique", typeof(TotemDeauScroll), "Totem d'eau", 4);
 			AddSpell("Totémique", typeof(AbsorbationScroll), "Absorbation", 5);
 			AddSpell("Totémique", typeof(LierParEspritScroll), "Lier par l'esprit", 6);
 			AddSpell("Totémique", typeof(SuperChargerScroll), "Super chargeur", 7);

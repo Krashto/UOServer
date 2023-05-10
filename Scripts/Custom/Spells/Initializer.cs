@@ -125,32 +125,32 @@ namespace Server.Spells
             Register(601, typeof(BrouillardSpell));
             Register(602, typeof(TeleportationSpell));
             Register(603, typeof(TornadoSpell));
-            Register(604, typeof(AuraEvasiveSpell));
-            Register(605, typeof(ExTeleportationSpell));
-            Register(606, typeof(ToucherSuffocantSpell));
-            Register(607, typeof(AuraDeBrouillardSpell));
-            Register(608, typeof(VentFavorableSpell));
-            Register(609, typeof(VortexSpell));
+            Register(604, typeof(AuraElectrisanteSpell));
+            Register(605, typeof(ToucherSuffocantSpell));
+            Register(606, typeof(VentFavorableSpell));
+			Register(607, typeof(AuraDeBrouillardSpell));
+            Register(608, typeof(ExTeleportationSpell));
+			Register(609, typeof(VortexSpell));
 
 			//Chasseur
 			Register(610, typeof(AntidoteSpell));
 			Register(611, typeof(MarquerSpell));
 			Register(612, typeof(CompagnonAnimalSpell));
 			Register(613, typeof(SoinAnimalierSpell));
-			Register(614, typeof(RugissementSpell));
-			Register(615, typeof(FrappeEnsanglanteeSpell));
-			Register(616, typeof(SautAggressifSpell));
-			Register(617, typeof(CoupDansLeGenouSpell));
-			Register(618, typeof(ChasseurDePrimeSpell));
+			Register(614, typeof(FrappeEnsanglanteeSpell));
+			Register(615, typeof(SautAggressifSpell));
+			Register(616, typeof(RugissementSpell));
+			Register(617, typeof(ChasseurDePrimeSpell));
+			Register(618, typeof(CoupDansLeGenouSpell));
 			Register(619, typeof(ContratResoluSpell));
 
 			//Defenseur
 			Register(620, typeof(DevotionSpell));
 			Register(621, typeof(BravadeSpell));
-			Register(622, typeof(MentorSpell));
+			Register(622, typeof(InterventionSpell));
 			Register(623, typeof(MutinerieSpell));
-			Register(624, typeof(InterventionSpell));
-            Register(625, typeof(LienDeVieSpell));
+			Register(624, typeof(MentorSpell));
+			Register(625, typeof(LienDeVieSpell));
 			Register(626, typeof(MiracleSpell));
 			Register(627, typeof(IndomptableSpell));
             Register(628, typeof(InsensibleSpell));
@@ -171,9 +171,9 @@ namespace Server.Spells
 			//Guerison
 			Register(640, typeof(MainCicatrisanteSpell));
 			Register(641, typeof(RemedeSpell));
-			Register(642, typeof(MurDePierreSpell));
+			Register(642, typeof(DonDeLaVieSpell));
 			Register(643, typeof(RayonCelesteSpell));
-			Register(644, typeof(DonDeLaVieSpell));
+			Register(644, typeof(MurDePierreSpell));
 			Register(645, typeof(FrayeurSpell));
 			Register(646, typeof(FerveurDivineSpell));
 			Register(647, typeof(InquisitionSpell));
@@ -182,12 +182,12 @@ namespace Server.Spells
 
 			//Hydromancie
 			Register(650, typeof(ArmureDeGlaceSpell));
-            Register(651, typeof(RestaurationSpell));
-            Register(652, typeof(SoinPreventifSpell));
-            Register(653, typeof(CageDeGlaceSpell));
+            Register(651, typeof(PieuxDeGlaceSpell));
+            Register(652, typeof(RestaurationSpell));
+			Register(653, typeof(CageDeGlaceSpell));
             Register(654, typeof(AuraCryogeniseeSpell));
-            Register(655, typeof(PieuxDeGlaceSpell));
-            Register(656, typeof(CerveauGeleSpell));
+            Register(655, typeof(SoinPreventifSpell));
+			Register(656, typeof(CerveauGeleSpell));
             Register(657, typeof(AuraRefrigeranteSpell));
             Register(658, typeof(AvatarDuFroidSpell));
             Register(659, typeof(BlizzardSpell));
@@ -242,9 +242,9 @@ namespace Server.Spells
 
 			//Pyromancie
             Register(700, typeof(BouclierDeFeuSpell));
-            Register(701, typeof(BouleDeFeuSpell));
-            Register(702, typeof(CeleriteSpell));
-            Register(703, typeof(SupernovaSpell));
+            Register(701, typeof(CeleriteSpell));
+            Register(702, typeof(BouleDeFeuSpell));
+			Register(703, typeof(SupernovaSpell));
             Register(704, typeof(AuraRechauffanteSpell));
             Register(705, typeof(PassionArdenteSpell));
             Register(706, typeof(CageDeFeuSpell));
@@ -266,9 +266,9 @@ namespace Server.Spells
 
 			//Totemique
 			Register(720, typeof(TotemDeTerreSpell));
-			Register(721, typeof(TotemDeauSpell));
-			Register(722, typeof(TotemDeFeuSpell));
-			Register(723, typeof(TotemDuVentSpell));
+			Register(721, typeof(TotemDeFeuSpell));
+			Register(722, typeof(TotemDuVentSpell));
+			Register(723, typeof(TotemDeauSpell));
 			Register(724, typeof(AbsorbationSpell));
 			Register(725, typeof(LierParEspritSpell));
 			Register(726, typeof(SuperChargerSpell));

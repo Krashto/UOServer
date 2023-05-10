@@ -6,12 +6,13 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 	public abstract class BaseTotem : BaseCreature
 	{
 		public override bool DeleteOnRelease => true;
+		public override bool DeleteCorpseOnDeath => true;
 		public bool MarcheASuivreEnable { get; set; }
 		public bool SuperCharged { get; set; }
 		public DateTime NextThinkingTime { get; set; }
 
 		public BaseTotem(AIType ai, FightMode mode, int iRangePerception, int iRangeFight)
-			: base(ai, mode, iRangePerception, iRangeFight, 0, 0)
+			: base(ai, mode, iRangePerception, iRangeFight, 0.2, 0.4)
 		{
 			CantWalk = true;
 			ControlOrder = OrderType.Stay;

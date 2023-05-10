@@ -2,6 +2,9 @@ using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
+using Discord;
+using Server.Mobiles;
+using System;
 
 namespace Server.Custom.Spells.NewSpells.Guerison
 {
@@ -58,6 +61,12 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 					damage *= 0.75;
 
 					m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
+				}
+
+				if (Caster is CustomPlayerMobile pm)
+				{
+					m.Stam -= Math.Min(2 * pm.Aptitudes[Aptitude.Guerison], m.Stam);
+					m.Mana -= Math.Min(2 * pm.Aptitudes[Aptitude.Guerison], m.Mana);
 				}
 
 				SpellHelper.Damage(this, m, damage, 100, 0, 0, 0, 0);

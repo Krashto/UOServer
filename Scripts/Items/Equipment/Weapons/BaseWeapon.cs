@@ -657,10 +657,10 @@ namespace Server.Items
 
         public virtual void UnscaleDurability()
         {
-            int scale = 100 + GetDurabilityBonus();
+            int durability = GetDurabilityBonus();
 
-            m_Hits = ((m_Hits * 100) + (scale - 1)) / scale;
-            m_MaxHits = ((m_MaxHits * 100) + (scale - 1)) / scale;
+            m_Hits = durability;
+            m_MaxHits = durability;
 
             InvalidateProperties();
         }
@@ -684,16 +684,10 @@ namespace Server.Items
 
 		public virtual void ScaleDurability()
         {
-            int scale = 100 + GetDurabilityBonus();
+            int durability = GetDurabilityBonus();
 
-            m_Hits = ((m_Hits * scale) + 99) / 100;
-            m_MaxHits = ((m_MaxHits * scale) + 99) / 100;
-
-            if (m_MaxHits > 255)
-                m_MaxHits = 255;
-
-            if (m_Hits > 255)
-                m_Hits = 255;
+            m_Hits = durability;
+            m_MaxHits = durability;
 
             InvalidateProperties();
         }
@@ -702,32 +696,25 @@ namespace Server.Items
         {
             int bonus = 0;
 
-			if (m_Quality == ItemQuality.Exceptional)
-				bonus += 20;
+			if (m_Quality == ItemQuality.Legendary)
+				bonus += 1000;
 			else if (m_Quality == ItemQuality.Epic)
-				bonus += 40;
-			else if (m_Quality == ItemQuality.Legendary)
-				bonus += 60;
+				bonus += 500;
+			else if (m_Quality == ItemQuality.Exceptional)
+				bonus += 250;
+			else
+				bonus += 100;
 
 			bonus += m_AosWeaponAttributes.DurabilityBonus;
-
-            if (m_Resource == CraftResource.Heartwood)
-            {
-                return bonus;
-            }
 
             CraftResourceInfo resInfo = CraftResources.GetInfo(m_Resource);
             CraftAttributeInfo attrInfo = null;
 
             if (resInfo != null)
-            {
                 attrInfo = resInfo.AttributeInfo;
-            }
 
             if (attrInfo != null)
-            {
                 bonus += attrInfo.WeaponDurability;
-            }
 
             return bonus;
         }
@@ -1356,10 +1343,10 @@ namespace Server.Items
             ticks = Math.Floor((ticks - dexTicks) * (100.0 / (100 + bonus)));
 
             // Swing speed currently capped at one swing every 1.25 seconds (5 ticks).
-            if (ticks < 5)
-            {
+			if (m is BaseCreature && ticks < 8)
+				ticks = 8;
+			else if (ticks < 5)
                 ticks = 5;
-            }
 
             delayInSeconds = ticks * 0.25;
 

@@ -64,7 +64,7 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(BrouillardSpell), "Rend invisible la cible."),
 			new SpellBookEntry( typeof(TeleportationSpell), "Permet de vous téléporter sur la case de votre choix."),
 			new SpellBookEntry( typeof(TornadoSpell), "Crée un champ de force autour de vous qui pousse les ennemis qui vous approchent."),
-			new SpellBookEntry( typeof(AuraEvasiveSpell), "Augmente la résistance à l'énergie de vous et vos alliés."),
+			new SpellBookEntry( typeof(AuraElectrisanteSpell), "Augmente la résistance à l'énergie de vous et vos alliés."),
 			new SpellBookEntry( typeof(ExTeleportationSpell), "Permet d'interchanger votre place avec votre cible."),
 			new SpellBookEntry( typeof(ToucherSuffocantSpell), "Rend muet votre cible, l'empêchant de lancer des sorts."),
             new SpellBookEntry( typeof(AuraDeBrouillardSpell), "Rend invisible les alliés autour de vous."),

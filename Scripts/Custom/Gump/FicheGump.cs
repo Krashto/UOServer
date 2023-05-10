@@ -508,6 +508,8 @@ namespace Server.Gumps
 				{
 					m_From.Capacites.Lower((Capacite)(info.ButtonID - 500));
 					m_From.InvalidateProperties();
+					m_From.UpdateResistances();
+					var update = m_From.FollowersMax;
 				}
 				m_From.SendGump(new FicheGump(m_From, m_GM));
 			}
@@ -515,6 +517,9 @@ namespace Server.Gumps
 			{
 				m_From.Capacites.Raise((Capacite)(info.ButtonID - 550));
 				m_From.SendGump(new FicheGump(m_From, m_GM));
+				m_From.InvalidateProperties();
+				m_From.UpdateResistances();
+				var update = m_From.FollowersMax;
 			}
 		}
     }

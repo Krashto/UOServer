@@ -6,13 +6,13 @@ using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
-	public class AuraEvasiveSpell : Spell
+	public class AuraElectrisanteSpell : Spell
 	{
 		private static Hashtable m_Table = new Hashtable();
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura Evasive", "[Aura Evasive]",
+				"Aura Electrisante", "[Aura Electrisante]",
 				SpellCircle.Eighth,
 				236,
 				9011,
@@ -24,7 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		public override SkillName CastSkill { get { return SkillName.SpiritSpeak; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public AuraEvasiveSpell(Mobile caster, Item scroll)
+		public AuraElectrisanteSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{
 		}
@@ -70,7 +70,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 						m.AddResistanceMod(mod);
 						m.UpdateResistances();
 
-						CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", duration, AptitudeColor.Aeromancie);
+						CustomUtility.ApplySimpleSpellEffect(m, "Aura électrisante", duration, AptitudeColor.Aeromancie);
 
 						Timer t = new InternalTimer(m, DateTime.Now + duration);
 						m_Timers[m] = t;
@@ -105,7 +105,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
-				CustomUtility.ApplySimpleSpellEffect(m, "Aura évasive", AptitudeColor.Aeromancie, SpellSequenceType.End);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura électrisante", AptitudeColor.Aeromancie, SpellSequenceType.End);
 
 				m.FixedParticles(14217, 10, 20, 5013, 2093, 0, EffectLayer.Waist); //ID, speed, dura, effect, hue, render, layer
 			}

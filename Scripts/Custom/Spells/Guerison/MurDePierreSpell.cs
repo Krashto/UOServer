@@ -17,7 +17,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 				Reagent.EssenceGuerison
 			);
 
-		public override int RequiredAptitudeValue { get { return 3; } }
+		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Guerison }; } }
 		public override SkillName CastSkill { get { return SkillName.Healing; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

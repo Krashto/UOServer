@@ -75,6 +75,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 							damage = (int)SpellHelper.AdjustValue(m_Caster, damage, Aptitude.Hydromancie);
 
+							if (AvatarDuFroidSpell.IsActive(m))
+								damage *= 1.2;
+
 							m_Caster.DoHarmful(m);
 
 							AOS.Damage(m, m_Caster, (int)damage, 0, 0, 0, 0, 100);
@@ -123,7 +126,13 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				else
 				{
 					ExplodeFX.Snow.CreateInstance(m_Mobile, m_Mobile.Map, 1).Send();
-					m_Mobile.Stam -= 10;
+
+					var stamReduction = 10.0;
+
+					if (AvatarDuFroidSpell.IsActive(m_Mobile))
+						stamReduction *= 1.2;
+
+					m_Mobile.Stam -= (int)stamReduction;
 					m_Mobile.Hits -= 1;
 				}
 			}
