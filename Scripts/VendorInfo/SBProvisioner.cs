@@ -1,3 +1,4 @@
+using BedrollTent;
 using Server.Items;
 using System.Collections.Generic;
 
@@ -19,6 +20,8 @@ namespace Server.Mobiles
 
 				Add(new GenericBuyInfo(typeof(RecycleBag), 50, 20, 0xE76, 0));
 				Add(new GenericBuyInfo(typeof(Recycleur), 50, 20, 0x12B3, 0));
+				Add(new GenericBuyInfo(typeof(TentBedroll), 5000, 20, 0xA57, 0));
+
 
 				Add(new GenericBuyInfo(typeof(Arrow), 5, 999, 0xF3F, 0, true));
                 Add(new GenericBuyInfo(typeof(Bolt), 5, 999, 0x1BFB, 0, true));
@@ -130,13 +133,14 @@ namespace Server.Mobiles
 
 				Add(typeof(Citrine), 5);
 				Add(typeof(Amber), 8);
-				Add(typeof(Tourmaline), 12);
-				Add(typeof(Ruby), 15);
-				Add(typeof(Amethyst), 18);
-				Add(typeof(Sapphire), 21);
-				Add(typeof(StarSapphire), 25);
-				Add(typeof(Emerald), 28);
-				Add(typeof(Diamond), 31);
+				Add(typeof(Tourmaline), 9);
+				Add(typeof(Ruby), 10);
+				Add(typeof(Amethyst), 12);
+				Add(typeof(Sapphire), 15);
+				Add(typeof(StarSapphire), 20);
+				Add(typeof(Emerald), 25);
+				Add(typeof(Diamond), 35);
+
 
 				Add(typeof(GoldRing), 7);
 				Add(typeof(SilverRing), 5);

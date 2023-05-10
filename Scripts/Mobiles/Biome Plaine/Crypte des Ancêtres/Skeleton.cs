@@ -70,34 +70,17 @@ namespace Server.Mobiles
 			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
 		}
 
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
 
-            if (!Controlled)
-            {
-                switch (Utility.Random(5))
-                {
-                    case 0:
-                        c.DropItem(new BoneArms());
-                        break;
-                    case 1:
-                        c.DropItem(new BoneChest());
-                        break;
-                    case 2:
-                        c.DropItem(new BoneGloves());
-                        break;
-                    case 3:
-                        c.DropItem(new BoneLegs());
-                        break;
-                    case 4:
-                        c.DropItem(new BoneHelm());
-                        break;
-                }
-            }
-        }
 
-        public override void Serialize(GenericWriter writer)
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
+
+			if (Utility.RandomDouble() < 0.01)
+				c.DropItem(new AmeSquelette());
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

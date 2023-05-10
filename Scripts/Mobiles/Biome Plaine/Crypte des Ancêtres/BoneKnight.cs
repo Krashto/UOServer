@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Chevalier d'Os")]
@@ -57,7 +59,15 @@ namespace Server.Mobiles
             AddLoot(LootPack.Meager);
         }
 
-        public override void Serialize(GenericWriter writer)
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
+
+			if (Utility.RandomDouble() < 0.04)
+				c.DropItem(new AmeChevalierSquelettique());
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

@@ -52,7 +52,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		public override int Level => 17;
+		public override int Level => 19;
 		public override Biome Biome => Biome.Tropique;
 		public override bool CanFlee => false;
 

@@ -169,31 +169,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
         }
 
-        public override bool OnBeforeDeath()
-        {
-            Hue = 16385;
-
-            if (!NoKillAwards)
-            {
-                Map map = Map;
-
-                if (map != null)
-                {
-                    for (int x = -7; x <= 7; ++x)
-                    {
-                        for (int y = -7; y <= 3; ++y)
-                        {
-                            double dist = Math.Sqrt(x * x + y * y);
-
-                            if (dist <= 12)
-                                new GoodiesTimer(map, X + x, Y + y).Start();
-                        }
-                    }
-                }
-            }
-
-            return base.OnBeforeDeath();
-        }
+      
 
         private void Terrorize(object o)
         {
@@ -221,53 +197,53 @@ namespace Server.Mobiles
                 m_Y = y;
             }
 
-            protected override void OnTick()
-            {
-                int z = m_Map.GetAverageZ(m_X, m_Y);
-                bool canFit = m_Map.CanFit(m_X, m_Y, z, 6, false, false);
+            //protected override void OnTick()
+            //{
+            //    int z = m_Map.GetAverageZ(m_X, m_Y);
+            //    bool canFit = m_Map.CanFit(m_X, m_Y, z, 6, false, false);
 
-                for (int i = -3; !canFit && i <= 3; ++i)
-                {
-                    canFit = m_Map.CanFit(m_X, m_Y, z + i, 6, false, false);
+            //    for (int i = -3; !canFit && i <= 3; ++i)
+            //    {
+            //        canFit = m_Map.CanFit(m_X, m_Y, z + i, 6, false, false);
 
-                    if (canFit)
-                        z += i;
-                }
+            //        if (canFit)
+            //            z += i;
+            //    }
 
-                if (!canFit)
-                    return;
+            //    if (!canFit)
+            //        return;
 
-                Gold g = new Gold(300, 500);
+            //    Gold g = new Gold(300, 500);
 
-                g.MoveToWorld(new Point3D(m_X, m_Y, z), m_Map);
+            //    g.MoveToWorld(new Point3D(m_X, m_Y, z), m_Map);
 
-                if (0.5 >= Utility.RandomDouble())
-                {
-                    switch (Utility.Random(3))
-                    {
-                        case 0: // Fire column
-                            {
-                                Effects.SendLocationParticles(EffectItem.Create(g.Location, g.Map, EffectItem.DefaultDuration), 0x3709, 10, 30, 5052);
-                                Effects.PlaySound(g, g.Map, 0x208);
+            //    if (0.5 >= Utility.RandomDouble())
+            //    {
+            //        switch (Utility.Random(3))
+            //        {
+            //            case 0: // Fire column
+            //                {
+            //                    Effects.SendLocationParticles(EffectItem.Create(g.Location, g.Map, EffectItem.DefaultDuration), 0x3709, 10, 30, 5052);
+            //                    Effects.PlaySound(g, g.Map, 0x208);
 
-                                break;
-                            }
-                        case 1: // Explosion
-                            {
-                                Effects.SendLocationParticles(EffectItem.Create(g.Location, g.Map, EffectItem.DefaultDuration), 0x36BD, 20, 10, 5044);
-                                Effects.PlaySound(g, g.Map, 0x307);
+            //                    break;
+            //                }
+            //            case 1: // Explosion
+            //                {
+            //                    Effects.SendLocationParticles(EffectItem.Create(g.Location, g.Map, EffectItem.DefaultDuration), 0x36BD, 20, 10, 5044);
+            //                    Effects.PlaySound(g, g.Map, 0x307);
 
-                                break;
-                            }
-                        case 2: // Ball of fire
-                            {
-                                Effects.SendLocationParticles(EffectItem.Create(g.Location, g.Map, EffectItem.DefaultDuration), 0x36FE, 10, 10, 5052);
+            //                    break;
+            //                }
+            //            case 2: // Ball of fire
+            //                {
+            //                    Effects.SendLocationParticles(EffectItem.Create(g.Location, g.Map, EffectItem.DefaultDuration), 0x36FE, 10, 10, 5052);
 
-                                break;
-                            }
-                    }
+            //                    break;
+            //                }
+            //        }
                 }
             }
         }
-    }
-}
+    
+

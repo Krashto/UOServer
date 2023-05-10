@@ -115,7 +115,15 @@ namespace Server.Mobiles
             AddLoot(LootPack.LootItem<SulfurousAsh>(3, 5, true));
         }
 
-        public override int GetAngerSound()
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
+
+			if (Utility.RandomDouble() < 0.06)
+				c.DropItem(new AmeCauchemar());
+		}
+
+		public override int GetAngerSound()
         {
             if (!Controlled)
                 return 0x16A;

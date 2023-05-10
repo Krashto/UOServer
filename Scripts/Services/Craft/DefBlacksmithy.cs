@@ -559,16 +559,24 @@ namespace Server.Engines.Craft
 
 			#region "Divers"
 			
-			AddCraft(typeof(AnvilEastDeed), "Divers", "Enclume (Est)", 52.0, 100.0, typeof(IronIngot), "Fer", 150, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(AnvilEastDeed), "Divers", "Enclume (Est)", 52.0, 100.0, typeof(IronIngot), "Fer", 100, "Vous n'avez pas suffisament de lingot de Fer");
 			
-			AddCraft(typeof(AnvilSouthDeed), "Divers", "Enclume (Sud)", 52.0, 100.0, typeof(IronIngot), "Fer", 150, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(AnvilSouthDeed), "Divers", "Enclume (Sud)", 52.0, 100.0, typeof(IronIngot), "Fer", 100, "Vous n'avez pas suffisament de lingot de Fer");
 			
 			AddCraft(typeof(SmallForgeDeed), "Divers", "Petite Forge", 52.0, 100.0, typeof(IronIngot), "Fer", 150, "Vous n'avez pas suffisament de lingot de Fer");
-			
+
+			index = AddCraft(typeof(CoffreMetalVisqueux), "Divers", "Coffre Métal Visqueux", 55.0, 85.0, typeof(IronIngot), "Fer", 30, "Vous n'avez pas suffisament de lingot de Fer");
+
+			index = AddCraft(typeof(CoffreMetalRouille), "Divers", "Coffre Métal Rouillé", 60.0, 90.0, typeof(IronIngot), "Fer", 30, "Vous n'avez pas suffisament de lingot de Fer");
+
+			index = AddCraft(typeof(CoffreMetalDore), "Divers", "Coffre Metal Doré", 65.0, 95.0, typeof(IronIngot), "Fer", 30, "Vous n'avez pas suffisament de lingot de Fer");
+
 			AddCraft(typeof(LargeForgeEastDeed), "Divers", "Grande Forge (Est)", 72.0, 120.0, typeof(IronIngot), "Fer", 200, "Vous n'avez pas suffisament de lingot de Fer");
 			
 			AddCraft(typeof(LargeForgeSouthDeed), "Divers", "Grande Forge (Sud)", 72.0, 120.0, typeof(IronIngot), "Fer", 200, "Vous n'avez pas suffisament de lingot de Fer");
+
 			
+
 			#endregion
 
 			#region Alliages

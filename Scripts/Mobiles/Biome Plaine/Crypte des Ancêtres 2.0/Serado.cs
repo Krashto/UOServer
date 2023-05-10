@@ -86,8 +86,16 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<Items.Gold>(2500, 5000));
 		}
 
-        // TODO: Hit Lightning Area
-        public override void OnDamagedBySpell(Mobile attacker)
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
+
+			if (Utility.RandomDouble() < 0.16)
+				c.DropItem(new AmeSerado());
+		}
+
+		// TODO: Hit Lightning Area
+		public override void OnDamagedBySpell(Mobile attacker)
         {
             base.OnDamagedBySpell(attacker);
 

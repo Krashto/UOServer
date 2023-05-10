@@ -22,7 +22,7 @@ namespace BedrollTent
 		[Constructable]
 		public BedrollTent(int hue) : base(0xA57)
 		{
-			Name = "Bedroll";
+			Name = "Tente";
 			Movable = true;
 			m_Hue = hue;
 			m_Tent = null;

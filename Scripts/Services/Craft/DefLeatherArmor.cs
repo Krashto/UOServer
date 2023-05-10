@@ -143,7 +143,7 @@ namespace Server.Engines.Craft
 			#region Masques
 			index = AddCraft(typeof(OrcMask), "Masques", "Masque d'orc", 75.0, 100.0, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(BearMask), "Masques", "Masque d'ours", 77.5, 102.5, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
-			index = AddCraft(typeof(DeerMask), "Masques", "Marsque de Cerf", 77.5, 102.5, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
+			index = AddCraft(typeof(DeerMask), "Masques", "Masque de Cerf", 77.5, 102.5, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(TribalMask), "Masques", "Masque Tribal", 82.5, 107.5, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(HornedTribalMask), "Masques", "Masque tribal Ornée", 82.5, 107.5, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");
 			index = AddCraft(typeof(CoiffeGuepard), "Chapeaux", "Coiffe Guepard", 75.3, 95.3, typeof(PlainoisLeather), "cuir", 10, "Vous n'avez pas assez de cuir.");

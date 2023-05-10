@@ -293,7 +293,7 @@ namespace Server.Mobiles
 
         public override bool HandlesOnSpeech(Mobile from)
         {
-            if (from.InRange(Location, 12))
+            if (from.InRange(Location, 5))
             {
                 return true;
             }
@@ -310,7 +310,7 @@ namespace Server.Mobiles
 
         public static void HandleSpeech(Mobile vendor, SpeechEventArgs e)
         {
-            if (!e.Handled && e.Mobile.InRange(vendor, 12))
+            if (!e.Handled && e.Mobile.InRange(vendor, 5))
             {
                 if (e.Mobile.Map.Rules != MapRules.FeluccaRules && vendor is BaseVendor && !((BaseVendor)vendor).CheckVendorAccess(e.Mobile))
                 {

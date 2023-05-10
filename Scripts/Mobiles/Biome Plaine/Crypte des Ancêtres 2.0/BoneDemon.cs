@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Demon D'Os")]
@@ -61,8 +63,15 @@ namespace Server.Mobiles
 
 			AddLoot(LootPack.LootItem<Items.GemmeGlace>(), (double)5);
 		}
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
 
-        public override void Serialize(GenericWriter writer)
+			if (Utility.RandomDouble() < 0.11)
+				c.DropItem(new AmeDemonOs());
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);
