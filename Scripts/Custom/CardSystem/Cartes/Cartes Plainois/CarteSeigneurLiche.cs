@@ -18,8 +18,14 @@ namespace Server.Items
 		public CarteSeigneurLiche() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Resistance au poison";
-			Hue = 1416;
+			Name = "Carte Seigneur Liche";
+			Hue = 1940;
+		}
+
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Resistance Poison +4]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

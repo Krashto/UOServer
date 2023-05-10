@@ -18,10 +18,14 @@ namespace Server.Items
 		public CarteCauchemar() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Resistance feu";
-			Hue = 2584;
+			Name = "Carte Cauchemar";
+			Hue = 1940;
 		}
-
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Resistance Feu +4]"));
+		}
 		public override bool CanEnchant(Item item, Mobile from)
 		{
 			if (item is BaseJewel)

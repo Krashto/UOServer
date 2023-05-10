@@ -20,9 +20,16 @@ namespace Server.Items
 		public CarteSpectre() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Diminution du cout en Mana";
-			Hue = 1416;
+			Name = "Carte Spectre";
+			Hue = 1940;
 		}
+
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Diminution Cout de Mana +3]"));
+		}
+
 
 		public override bool CanEnchant(Item item, Mobile from)
 		{

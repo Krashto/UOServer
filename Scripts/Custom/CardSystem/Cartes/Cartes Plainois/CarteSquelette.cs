@@ -18,8 +18,14 @@ namespace Server.Items
 		public CarteSquelette() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Vie";
-			Hue = 2101;
+			Name = "Carte Squelette";
+			Hue = 1940;
+		}
+
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Bonus de Vie +4]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

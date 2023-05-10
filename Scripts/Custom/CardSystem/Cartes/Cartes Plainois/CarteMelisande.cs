@@ -18,9 +18,16 @@ namespace Server.Items
 		public CarteMelisande() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Regeneration de vie";
-			Hue = 2584;
+			Name = "Carte Lady Melisande";
+			Hue = 1940;
 		}
+
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Regeneration de Vie +1]"));
+		}
+
 
 		public override bool CanEnchant(Item item, Mobile from)
 		{

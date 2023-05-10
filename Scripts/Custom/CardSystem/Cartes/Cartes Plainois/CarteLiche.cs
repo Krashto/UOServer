@@ -18,8 +18,13 @@ namespace Server.Items
 		public CarteLiche() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Cout en ingredients";
-			Hue = 2584;
+			Name = "Carte Liche";
+			Hue = 1940;
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Diminution Cout en Ingredients +6]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

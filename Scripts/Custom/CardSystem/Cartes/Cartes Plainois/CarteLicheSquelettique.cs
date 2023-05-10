@@ -18,8 +18,13 @@ namespace Server.Items
 		public CarteLicheSquelettique() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Focus aux compétences";
-			Hue = 2584;
+			Name = "Carte Liche Squelette";
+			Hue = 1940;
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Focus Compétence +1]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

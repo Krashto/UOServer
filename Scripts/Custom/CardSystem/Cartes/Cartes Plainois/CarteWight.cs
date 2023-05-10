@@ -18,8 +18,13 @@ namespace Server.Items
 		public CarteWight() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Defense";
-			Hue = 2584;
+			Name = "Carte Wight";
+			Hue = 1940;
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Defense +2]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

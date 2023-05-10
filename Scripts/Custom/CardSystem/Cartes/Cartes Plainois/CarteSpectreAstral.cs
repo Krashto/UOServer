@@ -18,9 +18,16 @@ namespace Server.Items
 		public CarteSpectreAstral() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Chance de toucher";
-			Hue = 2584;
+			Name = "Carte Spectre Astral";
+			Hue = 1940;
 		}
+
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Chance de Toucher +2]"));
+		}
+
 
 		public override bool CanEnchant(Item item, Mobile from)
 		{

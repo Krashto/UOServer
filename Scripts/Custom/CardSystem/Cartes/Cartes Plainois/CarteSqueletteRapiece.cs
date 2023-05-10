@@ -18,10 +18,14 @@ namespace Server.Items
 		public CarteSqueletteRapiece() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Vitesse de frappe";
-			Hue = 2584;
+			Name = "Carte Squelette Rapiece";
+			Hue = 1940;
 		}
-
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Vitesse de Frappe +4]"));
+		}
 		public override bool CanEnchant(Item item, Mobile from)
 		{
 			if (item is BaseJewel)

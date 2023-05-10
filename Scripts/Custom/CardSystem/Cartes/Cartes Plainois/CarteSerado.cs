@@ -18,10 +18,14 @@ namespace Server.Items
 		public CarteSerado() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Regeneration de Mana";
-			Hue = 2584;
+			Name = "Carte Serado";
+			Hue = 1940;
 		}
-
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Renegeration de Mana +1]"));
+		}
 		public override bool CanEnchant(Item item, Mobile from)
 		{
 			 if (item is BaseJewel)

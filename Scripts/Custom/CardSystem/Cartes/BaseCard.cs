@@ -126,7 +126,7 @@ namespace Server.Items
 					}
 					else if ((((Item)targeted).Parent != null) && (((Item)targeted).Parent is Mobile))
 					{
-						from.SendMessage("Vous ne pouvez pas enchanter cette objets à cette endroit.");
+						from.SendMessage("Vous ne pouvez pas enchanter cette objets à cet endroit.");
 					}
 					else if (!m_Rune.CheckSuccess(from))
 					{

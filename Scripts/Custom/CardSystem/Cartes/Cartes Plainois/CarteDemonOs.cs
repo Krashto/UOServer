@@ -18,8 +18,14 @@ namespace Server.Items
 		public CarteDemonOs() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Vitesse d'incantation";
-			Hue = 2584;
+			Name = "Carte Demon d'Os";
+			Hue = 1940;
+			
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Vitesse d'incantation +1]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

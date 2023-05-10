@@ -18,10 +18,14 @@ namespace Server.Items
 		public CarteMageSquelettique() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Mana";
-			Hue = 2101;
+			Name = "Carte Mage Squelette";
+			Hue = 1940;
 		}
-
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Bonus de Mana +4]"));
+		}
 		public override bool CanEnchant(Item item, Mobile from)
 		{
 			

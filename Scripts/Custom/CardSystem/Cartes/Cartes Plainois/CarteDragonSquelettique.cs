@@ -18,8 +18,13 @@ namespace Server.Items
 		public CarteDragonSquelettique() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Resistance Energie";
-			Hue = 2584;
+			Name = "Carte Dragon Squelettique";
+			Hue = 1940;
+		}
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Resistance Energie +4]"));
 		}
 
 		public override bool CanEnchant(Item item, Mobile from)

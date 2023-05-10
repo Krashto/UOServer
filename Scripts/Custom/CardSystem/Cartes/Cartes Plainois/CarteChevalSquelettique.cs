@@ -18,10 +18,14 @@ namespace Server.Items
 		public CarteChevalSquelettique() : base()
 		{
 			Weight = 0.2;  // ?
-			Name = "Defense accrue";
-			Hue = 2584;
+			Name = "Carte Cheval Squelettique";
+			Hue = 1940;
 		}
-
+		public override void GetProperties(ObjectPropertyList list)
+		{
+			base.GetProperties(list);
+			list.Add(String.Format("[Defense accrue +2]"));
+		}
 		public override bool CanEnchant(Item item, Mobile from)
 		{
 			if (item is BaseJewel)
