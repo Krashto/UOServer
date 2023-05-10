@@ -64,7 +64,15 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<CerveauLiche>());
 		}
 
-        public override void Serialize(GenericWriter writer)
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
+
+			if (Utility.RandomDouble() < 0.03)
+				c.DropItem(new AmeLiche());
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

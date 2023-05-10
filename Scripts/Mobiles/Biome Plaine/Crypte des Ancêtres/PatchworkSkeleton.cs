@@ -59,8 +59,15 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.Meager);
         }
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
 
-        public override void Serialize(GenericWriter writer)
+			if (Utility.RandomDouble() < 0.03)
+				c.DropItem(new AmeSquelRapiece());
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);

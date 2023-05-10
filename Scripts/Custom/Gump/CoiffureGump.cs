@@ -88,7 +88,7 @@ namespace Server.Gumps
 		public BarberScissorsBase m_Item;
 
         public CoiffureGump(CustomPlayerMobile from, Mobile to,int page,BarberScissorsBase itemid, bool barbe = false)
-            : base(!barbe ? "Choix de cheveux" : "Choix de Barbe", 560, 622, false)
+            : base(!barbe ? "Choix de cheveux" : "Choix de Barbe", 560, 715, false)
         {
             m_From = from;
 			m_to = to;
@@ -151,7 +151,7 @@ namespace Server.Gumps
 			}
 
 
-			while (column != 7 && line != 7)
+			while (column != 8 && line != 8)
 			{
 				AddBackground(x + column * 86, y + line * 86, 85, 85, 9270);
 
@@ -165,12 +165,12 @@ namespace Server.Gumps
 			}
 
 
-			AddBackground(x, y + 602 , 602, 60, 9270);
+			AddBackground(x, y + 692 , 602, 60, 9270);
 
 
 			if (m_to.Race.Barbe && (!m_to.Female || m_to.Race.FemmeBarbe))
 			{
-				AddButtonHtml(x + 275, y + 623, 2, barbe ? "<h3><basefont color=#ffffff>Cheveux</basefont></h3>" : "<h3><basefont color=#ffffff>Barbes</basefont></h3>");
+				AddButtonHtml(x + 275, y + 712, 2, barbe ? "<h3><basefont color=#ffffff>Cheveux</basefont></h3>" : "<h3><basefont color=#ffffff>Barbes</basefont></h3>");
 
 			}
 

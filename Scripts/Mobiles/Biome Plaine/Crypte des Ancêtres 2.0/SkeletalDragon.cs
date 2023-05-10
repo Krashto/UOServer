@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Dragon Squelette")]
@@ -70,7 +72,15 @@ namespace Server.Mobiles
             AddLoot(LootPack.Gems, 5);
         }
 
-        public override void Serialize(GenericWriter writer)
+		public override void OnDeath(Container c)
+		{
+			base.OnDeath(c);
+
+			if (Utility.RandomDouble() < 0.08)
+				c.DropItem(new AmeDragonSquel());
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0);
