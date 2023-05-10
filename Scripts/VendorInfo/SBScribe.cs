@@ -26,7 +26,7 @@ namespace Server.Mobiles
 				Add(new GenericBuyInfo(typeof(Missive), 5, 999, 0x14EE, 0));
 				Add(new GenericBuyInfo(typeof(ScribesPen), 10, 20, 0xFBF, 0));
 				Add(new GenericBuyInfo(typeof(SpellsPen), 15, 20, 0x1F19, 2079));
-				Add(new GenericBuyInfo(typeof(SoulsPen), 50, 20, 0x10E7, 2962));
+				//Add(new GenericBuyInfo(typeof(SoulsPen), 50, 20, 0x10E7, 2962));
 
 				Add(new GenericBuyInfo(typeof(BlankScroll), 20, 999, 0x0E34, 0));
 				Add(new GenericBuyInfo(typeof(BrownBook), 15, 10, 0xFEF, 0));

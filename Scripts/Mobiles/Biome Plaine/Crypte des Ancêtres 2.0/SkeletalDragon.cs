@@ -72,13 +72,13 @@ namespace Server.Mobiles
             AddLoot(LootPack.Gems, 5);
         }
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.08)
-				c.DropItem(new AmeDragonSquel());
-		}
+		//	if (Utility.RandomDouble() < 0.08)
+		//		c.DropItem(new AmeDragonSquel());
+		//}
 
 		public override void Serialize(GenericWriter writer)
         {

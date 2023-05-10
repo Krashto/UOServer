@@ -63,13 +63,13 @@ namespace Server.Mobiles
 
 			AddLoot(LootPack.LootItem<Items.GemmeGlace>(), (double)5);
 		}
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.11)
-				c.DropItem(new AmeDemonOs());
-		}
+		//	if (Utility.RandomDouble() < 0.11)
+		//		c.DropItem(new AmeDemonOs());
+		//}
 
 		public override void Serialize(GenericWriter writer)
         {

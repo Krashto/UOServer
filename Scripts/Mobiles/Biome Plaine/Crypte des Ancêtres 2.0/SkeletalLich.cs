@@ -63,13 +63,13 @@ namespace Server.Mobiles
             AddLoot(LootPack.FilthyRich, 2);
 
         }
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.11)
-				c.DropItem(new AmeLicheSquel());
-		}
+		//	if (Utility.RandomDouble() < 0.11)
+		//		c.DropItem(new AmeLicheSquel());
+		//}
 
 
 		public override void Serialize(GenericWriter writer)

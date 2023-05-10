@@ -101,13 +101,13 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<CerveauLiche>());
 		}
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.09)
-				c.DropItem(new AmeLicheAncienne());
-		}
+		//	if (Utility.RandomDouble() < 0.09)
+		//		c.DropItem(new AmeLicheAncienne());
+		//}
 
 		public override void Serialize(GenericWriter writer)
         {

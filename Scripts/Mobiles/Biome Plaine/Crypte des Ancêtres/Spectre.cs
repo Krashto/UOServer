@@ -63,13 +63,13 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<CerveauSpectre>());
 		}
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.02)
-				c.DropItem(new AmeSpectre());
-		}
+		//	if (Utility.RandomDouble() < 0.02)
+		//		c.DropItem(new AmeSpectre());
+		//}
 
 		public override void Serialize(GenericWriter writer)
         {

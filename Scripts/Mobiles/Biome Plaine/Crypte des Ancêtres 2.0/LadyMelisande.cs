@@ -52,13 +52,13 @@ namespace Server.Mobiles
             AddLoot(LootPack.SuperBoss, 8);
                }
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.16)
-				c.DropItem(new AmeLadyMelisande());
-		}
+		//	if (Utility.RandomDouble() < 0.16)
+		//		c.DropItem(new AmeLadyMelisande());
+		//}
 
 		public override void OnThink()
         {

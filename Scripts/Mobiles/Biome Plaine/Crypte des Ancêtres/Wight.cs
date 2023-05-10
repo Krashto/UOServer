@@ -61,13 +61,13 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Plaine;
 		public override bool BleedImmune => true;
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.04)
-				c.DropItem(new AmeWight());
-		}
+		//	if (Utility.RandomDouble() < 0.04)
+		//		c.DropItem(new AmeWight());
+		//}
 
 		public override void Serialize(GenericWriter writer)
         {

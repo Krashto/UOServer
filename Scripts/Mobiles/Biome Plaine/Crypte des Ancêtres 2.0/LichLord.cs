@@ -66,13 +66,13 @@ namespace Server.Mobiles
             AddLoot(LootPack.NecroRegs, 12, 40);
         }
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.06)
-				c.DropItem(new AmeSeigneurLiche());
-		}
+		//	if (Utility.RandomDouble() < 0.06)
+		//		c.DropItem(new AmeSeigneurLiche());
+		//}
 
 		public override void Serialize(GenericWriter writer)
         {

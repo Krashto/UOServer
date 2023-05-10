@@ -56,13 +56,13 @@ namespace Server.Mobiles
 			
 		}
 
-		public override void OnDeath(Container c)
-		{
-			base.OnDeath(c);
+		//public override void OnDeath(Container c)
+		//{
+		//	base.OnDeath(c);
 
-			if (Utility.RandomDouble() < 0.01)
-				c.DropItem(new AmeChevalSquelettique());
-		}
+		//	if (Utility.RandomDouble() < 0.01)
+		//		c.DropItem(new AmeChevalSquelettique());
+		//}
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
