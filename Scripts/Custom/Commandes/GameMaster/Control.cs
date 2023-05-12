@@ -76,8 +76,6 @@ namespace Server.Commands
 			if ( from != null ) 
 			{
 				from.SendMessage( "Choisissez un NPC à contrôler..." );
-				//"Choose the target to control..."
-				
 				from.Target = new InternalTarget( e.Arguments );
 			}
 		}
@@ -155,12 +153,11 @@ namespace Server.Commands
 		{
 			Mobile target;
 
-			if ( from is PlayerMobile && targeted is Mobile)
+			if ( from is CustomPlayerMobile && targeted is Mobile)
 			{
-				if ( targeted is PlayerMobile && ((PlayerMobile)targeted).Player )
+				if ( targeted is CustomPlayerMobile && ((CustomPlayerMobile)targeted).Player )
 				{
 					from.SendMessage("Vous ne pouvez contrôler un joueur");
-					//"You cant control players"
 					return;
 				}
 				
@@ -178,26 +175,47 @@ namespace Server.Commands
 					ChangeControl(target, controlItem, controlItem.Stats, controlItem.Skills, controlItem.Items);
 				}
 			}
-			else if ( from is PlayerMobile && targeted is ControlItem )
+			else if ( from is CustomPlayerMobile && targeted is ControlItem )
 				((Item)targeted).Delete();
 		}
 		
-		
 		private static void StartControl( Mobile from, Mobile target, bool stats, bool skills, bool items )
 		{
+			if (!(from is CustomPlayerMobile pm))
+			{
+				from.SendMessage("Erreur 0: Vous n'êtes pas un joueur.");
+				return;
+			}
+
+			if (target is null)
+			{
+				from.SendMessage("Erreur 1: La cible n'est pas valide");
+				return;
+			}
+
 			from.SendMessage("Vous contrôlez le NPC {0}, {1}", target.Name, target.Title);
-			//"You leave your Body an control {0}, {1}"
 
-			//Clone Player
-			CustomPlayerMobile playerClone = (CustomPlayerMobile)DupeMobile(from);
+			var playerClone = DupeMobile(from) as CustomPlayerMobile;
 
-			playerClone.Beaute = ((CustomPlayerMobile)from).Beaute;
-			playerClone.Grosseur = ((CustomPlayerMobile)from).Grosseur;
-			playerClone.Grandeur = ((CustomPlayerMobile)from).Grandeur;
+			if (playerClone == null)
+			{
+				from.SendMessage("Erreur 2: Erreur lors de la copie du NPC.");
+				return;
+			}
 
-			//Create ControlItem
-			ControlItem controlItem = new ControlItem(from, playerClone, target, stats, skills, items);
-			from.Backpack.DropItem(controlItem);
+			playerClone.Beaute = pm.Beaute;
+			playerClone.Grosseur = pm.Grosseur;
+			playerClone.Grandeur = pm.Grandeur;
+
+			var controlItem = new ControlItem(from, playerClone, target, stats, skills, items);
+
+			if (pm.Backpack == null)
+			{
+				from.SendMessage("Erreur 3: Vous devez avoir un backpack pour prendre possession d'un NPC.");
+				return;
+			}
+
+			pm.Backpack.DropItem(controlItem);
 					
 			//Props target -> player
 			CopyProps(from, target, stats, skills);
@@ -219,28 +237,28 @@ namespace Server.Commands
 
 		private static void ChangeControl( Mobile target, ControlItem controlItem, bool stats, bool skills, bool items )
 		{
+			if (target is null)
+				return;
+
+			if (controlItem is null)
+				return;
+
 			Mobile from						= controlItem.Owner;
 			CustomPlayerMobile oldPlayer 	= controlItem.Player;
 			Mobile oldNPC 				 	= controlItem.NPC;
-			
+
+			if (from is null)
+				return;
+
 			if ( oldNPC != null )
 			{
-				//NPC Wiederherstellen
 				if ( !oldNPC.Deleted )
 				{
-					
 					//Props from -> oldNPC
 					CopyProps( oldNPC, from, stats, skills );
 					
-					//if ( oldNPC.Map == Map.Internal )
-					//	oldNPC.MoveToWorld(from.Location, from.Map);
-					
 					//Equip: from -> oldNPC
 					MoveEquip(from, oldNPC, items);
-
-
-
-
 				}
 				else
 				{
@@ -248,12 +266,10 @@ namespace Server.Commands
 					oldNPC.Delete();
 				}
 			}
-			
 		
 			if ( target != oldPlayer && target != null && !target.Deleted ) 
 			{
-				from.SendMessage("Vous contrôlez  {0}, {1}", target.Name, target.Title);
-				//"You Control  {0}, {1}"
+				from.SendMessage("Vous contrôlez {0}, {1}", target.Name, target.Title);
 				
 				//Update ControlItem
 				controlItem.NPC = target;
@@ -279,47 +295,36 @@ namespace Server.Commands
 		
 		public static void EndControl( ControlItem controlItem, bool stats, bool skills, bool items )
 		{
-			Mobile from							= controlItem.Owner;
+			if (controlItem is null)
+				return;
+
+			Mobile from				= controlItem.Owner;
 			PlayerMobile oldPlayer 	= controlItem.Player;
-			Mobile oldNPC 				 	= controlItem.NPC;
+			Mobile oldNPC 			= controlItem.NPC;
 			
 			if ( from == null )
 				return;
 			
 			from.SendMessage("Vous reprenez votre corps");
 
-			
-
-			//"You are in your original Body"
-
-			//NPC wiederherstellen
 			if ( oldNPC != null && !oldNPC.Deleted )
 			{
-
 				//Props from -> oldNPC
 				CopyProps( oldNPC, from, stats, skills );
-
-				//if ( oldNPC.Map == Map.Internal )
-				//	oldNPC.MoveToWorld(from.Location, from.Map);
-				
 				
 				//Equip from -> oldNPC
 				MoveEquip( from, oldNPC, items );
 
 				oldNPC.Race.AddRace(oldNPC, oldNPC.Hue);
-
-
 			}
 			else
 			{
-				from.SendMessage("Le NPC a été supprimé peu être à cause d'un respawn manuel");	
-				//"The original NPC was deleted. Maybe because a manual respawn"
+				from.SendMessage("Le NPC a été supprimé, peut être à cause d'un respawn manuel");	
 				oldNPC.Delete();
 			}
 			
 			if ( oldPlayer != null && !oldPlayer.Deleted )
 			{
-				//Spieler Wiederherstellen (100%)
 				//Props: oldPlayer -> player
 				CopyProps( from, oldPlayer, true, true );
 				//Equip: oldPlayer -> player
@@ -341,11 +346,10 @@ namespace Server.Commands
 
 				oldPlayer.Delete();
 				from.Hidden = true;
-
 			}
 		}
 
-    //Return true if the base.OnBeforeDeath should be executed and false if not.
+		//Return true if the base.OnBeforeDeath should be executed and false if not.
 		public static bool UncontrolDeath( Mobile from )
 		{
 			if ( from.AccessLevel < accessLevel )
@@ -355,8 +359,6 @@ namespace Server.Commands
 			
 			if ( controlItem != null )
 			{
-				
-
 				//Backup NPC
 				Mobile NPC = (Mobile)controlItem.NPC;
 				
@@ -366,7 +368,6 @@ namespace Server.Commands
 				from.Stam = from.StamMax;
 				from.Mana = from.StamMax;
 				from.Hidden = true;
-
 
 				//Kill NPC as normal
 				NPC.Kill();
@@ -408,17 +409,13 @@ namespace Server.Commands
 					item = (Item)from.Backpack.Items[i];
 
 					if( item != null && !item.Deleted && item.LootType != LootType.Newbied && item.LootType != LootType.Blessed )
-					{
 						itemsToMove.Add( item );
-					}
 				}
 				
 				for ( int i = 0; i < itemsToMove.Count; ++i)
-				{
 					to.Backpack.DropItem((Item)itemsToMove[i]);
-				}
+
 				itemsToMove.Clear();
-				
 			}
 		}
 		
@@ -460,11 +457,6 @@ namespace Server.Commands
 			{
 				if ( from.Map == Map.Internal )
 					from.MoveToWorld(target.Location, target.Map);
-
-
-
-
-
 				
 				if ( stats )
 					CopyMobileProps( target, from, "Parent", "NetState", "Player", "AccessLevel" );
@@ -472,17 +464,14 @@ namespace Server.Commands
 					CopyMobileProps( target, from, "Parent", "NetState", "Player", "AccessLevel", "RawStr", "Str", "RawDex", "Dex", "RawInt", "Int", "Hits", "Mana", "Stam");
 			  
 				if ( skills )
-				  //Console.WriteLine("Copy {2} Skills from {0} to {1}", from, target, target.Skills.Length);
-					for ( int i = 0; i < target.Skills.Length; ++i )
+				{
+					//Console.WriteLine("Copy {2} Skills from {0} to {1}", from, target, target.Skills.Length);
+					for (int i = 0; i < target.Skills.Length; ++i)
 					{
-					  //Console.WriteLine("Skill {0} old Value = {1} new Value = {2}", i, target.Skills[i].Base, from.Skills[i].Base);
+						//Console.WriteLine("Skill {0} old Value = {1} new Value = {2}", i, target.Skills[i].Base, from.Skills[i].Base);
 						target.Skills[i].Base = from.Skills[i].Base;
-						
 					}
-
-
-
-
+				}
 			}
 			catch
 			{
@@ -542,41 +531,6 @@ namespace Server.Commands
 				return false;
 		}
 		
-		/*Unused now*/
-		private static void CopyProperties ( object dest, object src, Type type , params string[] omitProps )
-		{
-			if (!CompareType(dest,type) || !CompareType(src,type) || (dest.GetType() != src.GetType()) )
-				return;
-
-			PropertyInfo[] props = type.GetProperties();
-			
-			bool omit = false;
-			for ( int i = 0; i < props.Length; i++ )
-			{
-				try
-				{
-					
-					for (int j=0; j<omitProps.Length; j++)
-						if (string.Compare(omitProps[j], props[i].Name, true) == 0)
-						{
-							omit = true;
-							break;
-						}
-
-					if ( props[i].CanRead && props[i].CanWrite && !omit)
-					{
-						//Console.WriteLine( "Setting {0} = {1}", props[i].Name, props[i].GetValue( src, null ) );
-						props[i].SetValue( dest, props[i].GetValue( src, null ), null );
-					}
-					omit = false;
-				}
-				catch
-				{
-					//Console.WriteLine( "Denied" );
-				}
-			}
-		}
-		
 		private static object Construct( Type type, params object[] constructParams)
 		{
 			bool constructed=false;
@@ -608,10 +562,7 @@ namespace Server.Commands
 			}
 			return toReturn;
 		}
-		
-		
 	}
-	
 }
 
 
@@ -632,7 +583,7 @@ namespace Server.Items
 		{
 			get
 			{ 
-				if ( m_Player is PlayerMobile )
+				if ( m_Owner is PlayerMobile )
 					return (PlayerMobile)m_Owner; 
 				else return null;
 			}
@@ -643,9 +594,7 @@ namespace Server.Items
 		{
 			get
 			{ 
-				if ( m_Player is CustomPlayerMobile)
-					return (CustomPlayerMobile)m_Player; 
-				else return null;
+				return m_Player; 
 			}
 		}
 		
@@ -706,11 +655,9 @@ namespace Server.Items
 			LootType = LootType.Blessed;
 		}
 		
-		
 		public ControlItem( Serial serial ) : base( serial )
 		{
 		}
-		
 		
 		public override void OnDoubleClick( Mobile from )
 		{
@@ -732,11 +679,8 @@ namespace Server.Items
 		{
 			Delete();
 			
-			
 			return false; 
-			//return base.DropToWorld( from, p );
 		}
-		
 
 		public override void OnDelete()
 		{
@@ -760,7 +704,6 @@ namespace Server.Items
 			writer.Write( (Mobile)m_Owner );
 			writer.Write( (Mobile)m_Player );
 			writer.Write( (Mobile)m_NPC );
-		
 		}
 
 		public override void Deserialize( GenericReader reader )
@@ -786,11 +729,6 @@ namespace Server.Items
 					break;
 				}
 			}
-			
 		}
-		
-		
-		
-		
 	}
 }

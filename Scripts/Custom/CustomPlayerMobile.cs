@@ -892,28 +892,28 @@ namespace Server.Mobiles
 			{
 				return false;
 			}
-			if (m_PossessStorage != null)
-			{
-				Server.Possess.CopySkills(this, m_Possess);
-				Server.Possess.CopyProps(this, m_Possess);
-				Server.Possess.MoveItems(this, m_Possess);
+			//if (m_PossessStorage != null)
+			//{
+			//	Server.Possess.CopySkills(this, m_Possess);
+			//	Server.Possess.CopyProps(this, m_Possess);
+			//	Server.Possess.MoveItems(this, m_Possess);
 
-				m_Possess.Location = Location;
-				m_Possess.Direction = Direction;
-				m_Possess.Map = Map;
-				m_Possess.Frozen = false;
+			//	m_Possess.Location = Location;
+			//	m_Possess.Direction = Direction;
+			//	m_Possess.Map = Map;
+			//	m_Possess.Frozen = false;
 
-				Server.Possess.CopySkills(m_PossessStorage, this);
-				Server.Possess.CopyProps(m_PossessStorage, this);
-				Server.Possess.MoveItems(m_PossessStorage, this);
+			//	Server.Possess.CopySkills(m_PossessStorage, this);
+			//	Server.Possess.CopyProps(m_PossessStorage, this);
+			//	Server.Possess.MoveItems(m_PossessStorage, this);
 
-				m_PossessStorage.Delete();
-				m_PossessStorage = null;
-				m_Possess.Kill();
-				m_Possess = null;
-				Hidden = true;
-				return false;
-			}
+			//	m_PossessStorage.Delete();
+			//	m_PossessStorage = null;
+			//	m_Possess.Kill();
+			//	m_Possess = null;
+			//	Hidden = true;
+			//	return false;
+			//}
 		}
 
 		public override void OnDeath(Container c)

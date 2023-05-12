@@ -17,7 +17,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				Reagent.EssenceDefenseur
 			);
 
-		public override int RequiredAptitudeValue { get { return 3; } }
+		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Defenseur }; } }
 		public override SkillName CastSkill { get { return SkillName.Parry; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

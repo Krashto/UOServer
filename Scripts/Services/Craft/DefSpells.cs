@@ -220,9 +220,9 @@ namespace Server.Engines.Craft
 
 			AddSpell("Défenseur", typeof(DevotionScroll), "Dévotion", 1);
 			AddSpell("Défenseur", typeof(BravadeScroll), "Bravade", 2);
-			AddSpell("Défenseur", typeof(InterventionScroll), "Intervention", 3);
+			AddSpell("Défenseur", typeof(MentorScroll), "Mentor", 3);
 			AddSpell("Défenseur", typeof(MutinerieScroll), "Mutinerie", 4);
-			AddSpell("Défenseur", typeof(MentorScroll), "Mentor", 5);
+			AddSpell("Défenseur", typeof(InterventionScroll), "Intervention", 5);
 			AddSpell("Défenseur", typeof(LienDeVieScroll), "Lien de vie", 6);
 			AddSpell("Défenseur", typeof(MiracleScroll), "Miracle", 7);
 			AddSpell("Défenseur", typeof(IndomptableScroll), "Indomptable", 8);

@@ -147,9 +147,9 @@ namespace Server.Spells
 			//Defenseur
 			Register(620, typeof(DevotionSpell));
 			Register(621, typeof(BravadeSpell));
-			Register(622, typeof(InterventionSpell));
+			Register(622, typeof(MentorSpell));
 			Register(623, typeof(MutinerieSpell));
-			Register(624, typeof(MentorSpell));
+			Register(624, typeof(InterventionSpell));
 			Register(625, typeof(LienDeVieSpell));
 			Register(626, typeof(MiracleSpell));
 			Register(627, typeof(IndomptableSpell));
