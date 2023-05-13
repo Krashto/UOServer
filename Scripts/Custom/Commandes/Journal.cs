@@ -23,7 +23,12 @@ namespace JournalCommand
 		[Description("Ouvre le journal de la ville et permet de lire et d'ajouter des articles.")]
 		private static void OnJournalCommand(CommandEventArgs e)
 		{
-			var from = e.Mobile;
+			var pm = e.Mobile as CustomPlayerMobile;
+			OpenJournal(pm);
+		}
+
+		public static void OpenJournal(CustomPlayerMobile pm)
+		{
 			List<JournalEntry> journalEntries = new List<JournalEntry>();
 
 			// Charger les articles existants à partir du fichier JSON
@@ -32,8 +37,8 @@ namespace JournalCommand
 				journalEntries = JsonConvert.DeserializeObject<List<JournalEntry>>(json);
 
 			// Créer un nouveau gump pour afficher le journal
-			from.CloseGump(typeof(CJournalGump));
-			from.SendGump(new CJournalGump((CustomPlayerMobile)from, journalEntries, 0));
+			pm.CloseGump(typeof(CJournalGump));
+			pm.SendGump(new CJournalGump(pm, journalEntries, 0));
 		}
 
 		private CustomPlayerMobile m_From;
