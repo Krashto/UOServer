@@ -1,19 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ServerRegions>
   <Facet name="Felucca">
-    <region name="Alverton">
-      <rune name="Alverton" />
-      <rect x="1341" y="706" width="162" height="164" />
-      <rect x="1220" y="790" width="130" height="92" />
-      <rect x="1201" y="690" width="29" height="130" />
-      <rect x="1351" y="870" width="144" height="15" />
-      <rect x="1225" y="553" width="175" height="242" />
-      <rect x="1198" y="619" width="260" height="92" />
+    <region type="TownRegion" priority="51" name="Bateau">
+      <rect x="3686" y="838" width="84" height="60" />
+      <music name="Bucsden" />
+      <zrange min="-22" />
       <logoutDelay active="false" />
+    </region>
+    <region type="TownRegion" priority="51" name="Colognan">
+      <rect x="1002" y="1357" width="111" height="82" />
+      <music name="Minoc" />
+      <zrange min="-5" />
+      <logoutDelay active="false" />
+      <guards disabled="true" />
+    </region>
+    <region name="Creation">
+      <rect x="2273" y="383" width="38" height="38" />
+      <music name="Yew" />
+      <zrange min="0" />
     </region>
   </Facet>
   <Facet name="Trammel">
-      <region type="Jail" priority="50" name="Jail">
+    <region type="Jail" priority="50" name="Jail">
       <rect x="5271" y="1159" width="41" height="33" />
       <go x="5275" y="1163" z="0" />
     </region>

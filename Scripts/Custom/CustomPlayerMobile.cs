@@ -1093,47 +1093,27 @@ namespace Server.Mobiles
 				JailBy = Jailor;
 			}
 
-			switch (Utility.Random(9))
+			switch (Utility.Random(4))
 			{
 				case 0:
-					Location = new Point3D(5276, 1164, 0);
-					Map = Map.Trammel;
+					Location = new Point3D(2272, 340, 0);
+					Map = Map.Felucca;
 					break;
 				case 1:
-					Location = new Point3D(5286, 1164, 0);
-					Map = Map.Trammel;
+					Location = new Point3D(2262, 340, 0);
+					Map = Map.Felucca;
 					break;
 				case 2:
-					Location = new Point3D(5296, 1164, 0);
-					Map = Map.Trammel;
+					Location = new Point3D(2262, 353, 0);
+					Map = Map.Felucca;
 					break;
 				case 3:
 					Location = new Point3D(5306, 1164, 0);
-					Map = Map.Trammel;
+					Map = Map.Felucca;
 					break;
 				case 4:
-					Location = new Point3D(5276, 1174, 0);
-					Map = Map.Trammel;
-					break;
-				case 5:
-					Location = new Point3D(5276, 1174, 0);
-					Map = Map.Trammel;
-					break;
-				case 6:
-					Location = new Point3D(5286, 1174, 0);
-					Map = Map.Trammel;
-					break;
-				case 7:
-					Location = new Point3D(5306, 1174, 0);
-					Map = Map.Trammel;
-					break;
-				case 8:
-					Location = new Point3D(5283, 1184, 0);
-					Map = Map.Trammel;
-					break;
-				case 9:
-					Location = new Point3D(5304, 1184, 0);
-					Map = Map.Trammel;
+					Location = new Point3D(2272, 353, 0);
+					Map = Map.Felucca;
 					break;
 				default:
 					break;
