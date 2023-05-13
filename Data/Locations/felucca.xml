@@ -22,27 +22,44 @@
 			<child name="Village près du fort" x="925" y="1316" z="1" />
 			<child name="Ville déchue" x="481" y="945" z="5" />
 			<child name="Villa du gouverneur" x="1322" y="1520" z="0" />
+			<child name="Talbalim" x="1864" y="1819" z="0" />
 			
 	</parent>
 			<parent name="Mines">
 
 			<child name="Fer/Cuivre/Bronze" x="1008" y="1414" z="-22" />
-			<child name="Lithiar/Argent" x="1216" y="1429" z="1" />
+			<child name="Lithiar" x="1216" y="1429" z="1" />
 			<child name="Herborite" x="744" y="1474" z="1" />
-			<child name="Equilbrium/Etheryl/Or" x="566" y="1255" z="0" />
-			<child name="Phlogopite" x="816" y="786" z="0" />
-			<child name="Acier/Agapite/Durian" x="562" y="787" z="0" />
+			<child name="Equilbrium" x="566" y="1255" z="0" />
+			<child name="Durian" x="816" y="786" z="0" />
+			<child name="Acier" x="562" y="787" z="0" />
 			<child name="Abyssium" x="685" y="553" z="0" />
 			<child name="Sombralir" x="1030" y="620" z="-20" />
-			<child name="Muscovite" x="1081" y="250" z="0" />
+			<child name="Glacias" x="1081" y="250" z="0" />
 			<child name="Mytheril" x="1656" y="565" z="0" />
-			<child name="Glacias/Chrysteliar/Boreal" x="1485" y="863" z="0" />
-			<child name="Maritium" x="1522" y="911" z="0" />
+			<child name="Chrysteliar" x="1485" y="863" z="0" />
+			<child name="Glacias" x="1522" y="911" z="0" />
 			<child name="Bloodirium" x="1335" y="915" z="-11" />
-			<child name="Sonne/Volcanium" x="1148" y="968" z="0" />
-			<child name="Jolinar/Justicium/Zirconium" x="1362" y="1165" z="0" />
+			<child name="Sonne" x="1148" y="968" z="0" />
+			<child name="Jolinar" x="1362" y="1165" z="0" />
 			<child name="Khandarium" x="1411" y="1265" z="4" />
-</parent>
+			<child name="Argent" x="1195" y="1856" z="-29" />
+			<child name="Or" x="1799" y="1965" z="0" />
+			<child name="Justicium" x="1618" y="282" z="34" />
+				
+			</parent>
+
+		<parent name="Iles">
+			<child name="Ile1" x="273" y="1836" z="23" />
+			<child name="Ile2" x="1197" y="1860" z="2" />
+			<child name="Ile3" x="1817" y="723" z="46" />
+			<child name="Ile4" x="1617" y="296" z="27" />
+			<child name="Ile5" x="559" y="245" z="11" />
+			<child name="Ile6" x="179" y="748" z="0" />
+
+		</parent>
+		
+		
 			<parent name="Dongeons">
 			<child name="Dongeon Mortanyss" x="1119" y="1331" z="1" />
 			<child name="Dongeon Leviathan" x="1766" y="1126" z="-1" />

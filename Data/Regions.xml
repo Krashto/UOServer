@@ -20,7 +20,6 @@
       <zrange min="0" />
     </region>
     <region priority="51" name="Ville Dechue">
-      <rect x="-1" y="-1" width="-1" height="-1" />
       <rect x="405" y="864" width="100" height="122" />
       <music name="Nujelm" />
       <logoutDelay active="false" />
@@ -37,6 +36,32 @@
     <region type="Jail" priority="51" name="Jail">
       <rect x="2253" y="326" width="63" height="35" />
       <music name="MinocNegative" />
+    </region>
+    <region priority="51" name="Petits-Gens">
+      <rect x="896" y="1283" width="70" height="65" />
+      <music name="Britain1" />
+      <logoutDelay active="false" />
+    </region>
+    <region priority="51" name="Dongeon">
+      <rect x="2106" y="2159" width="96" height="127" />
+      <rect x="1979" y="2159" width="114" height="131" />
+      <rect x="1871" y="2161" width="90" height="124" />
+      <rect x="1724" y="2157" width="114" height="132" />
+      <rect x="1533" y="2141" width="153" height="115" />
+      <rect x="1192" y="2146" width="195" height="157" />
+      <rect x="1047" y="2150" width="133" height="133" />
+      <rect x="843" y="2165" width="167" height="240" />
+      <rect x="715" y="2158" width="100" height="123" />
+      <rect x="477" y="2160" width="209" height="132" />
+      <rect x="157" y="2165" width="279" height="204" />
+      <rect x="29" y="2228" width="128" height="116" />
+      <music name="Dungeon9" />
+    </region>
+    <region priority="51" name="Talbalim">
+      <rect x="1845" y="1804" width="110" height="112" />
+      <rect x="1777" y="1888" width="154" height="163" />
+      <music name="Bucsden" />
+      <logoutDelay active="false" />
     </region>
   </Facet>
   <Facet name="Trammel">
