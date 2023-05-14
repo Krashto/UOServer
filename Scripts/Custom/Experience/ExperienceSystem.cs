@@ -2,6 +2,7 @@
 using Server.Mobiles;
 using Server.Commands;
 using Server.Custom;
+using Server.Items;
 
 namespace Server.CustomScripts.Systems.Experience
 {
@@ -67,15 +68,13 @@ namespace Server.CustomScripts.Systems.Experience
     {
         public const int ExpGainPerTick = 200;
         public const int MaxExpAllowedByDay = 1000;
-        public int MaxExpRetard => (DateTime.Now - CustomPersistence.Ouverture).Days * 1000;
+		public int MaxExpRetard => (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 18, 0, 0) - CustomPersistence.Ouverture).Days * 1000;
 
         [CommandProperty(AccessLevel.GameMaster)]
-        public int Exp { get; set; }
-
-        [CommandProperty(AccessLevel.GameMaster)]
-        public int Niveau { get; set; }
-
-        [CommandProperty(AccessLevel.GameMaster)]
+		public int Exp { get; set; }
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int Niveau { get; set; }
+		[CommandProperty(AccessLevel.GameMaster)]
         public DateTime NextTickExp { get; set; }
 
         [CommandProperty(AccessLevel.GameMaster)]
