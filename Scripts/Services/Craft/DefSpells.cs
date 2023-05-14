@@ -176,16 +176,16 @@ namespace Server.Engines.Craft
 			switch (level)
 			{
 				default:
-				case 1: minSkill = 35; maxSkill = 45; break;
-				case 2: minSkill = 45; maxSkill = 45; break;
-				case 3: minSkill = 50; maxSkill = 60; break;
-				case 4: minSkill = 55; maxSkill = 65; break;
-				case 5: minSkill = 60; maxSkill = 70; break;
-				case 6: minSkill = 65; maxSkill = 75; break;
-				case 7: minSkill = 70; maxSkill = 80; break;
-				case 8: minSkill = 75; maxSkill = 85; break;
-				case 9: minSkill = 80; maxSkill = 90; break;
-				case 10: minSkill = 90; maxSkill = 100; break;
+				case 1: minSkill = 35.0; maxSkill = 45.0; break;
+				case 2: minSkill = 45.0; maxSkill = 45.0; break;
+				case 3: minSkill = 50.0; maxSkill = 60.0; break;
+				case 4: minSkill = 55.0; maxSkill = 65.0; break;
+				case 5: minSkill = 60.0; maxSkill = 70.0; break;
+				case 6: minSkill = 65.0; maxSkill = 75.0; break;
+				case 7: minSkill = 70.0; maxSkill = 80.0; break;
+				case 8: minSkill = 75.0; maxSkill = 85.0; break;
+				case 9: minSkill = 80.0; maxSkill = 90.0; break;
+				case 10: minSkill = 90.0; maxSkill = 100.0; break;
 			}
 
 			index = AddCraft(type, aptitude, name, minSkill, maxSkill, typeof(BlankScroll), "Blank scroll", 1, "You do not have enough blank scrolls to make that.");
@@ -194,7 +194,7 @@ namespace Server.Engines.Craft
 		public override void InitCraftList()
         {
 			index = AddCraft(typeof(NewSpellbook), "Magie", "Grimoire", 35.0, 75.0, typeof(PlainoisLeather), "Cuir", 10, "Vous n'avez pas assez de cuir.");
-			index = AddCraft(typeof(BlankScroll), "Magie", "Parchemin Vierge", 10.0, 30.0, typeof(Kindling), "Kindling", 1, "Vous n'avez pas assez de Petit Bois.");
+			index = AddCraft(typeof(BlankScroll), "Magie", "Parchemin Vierge", 10.0, 30.0, typeof(Kindling), "Kindling", 3, "Vous n'avez pas assez de Petit Bois.");
 
 			AddSpell("Aéromancie", typeof(AveuglementScroll), "Aveuglement", 1);
 			AddSpell("Aéromancie", typeof(BrouillardScroll), "Brouillard", 2);

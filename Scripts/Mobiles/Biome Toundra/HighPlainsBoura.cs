@@ -55,7 +55,7 @@ namespace Server.Mobiles
         public HighPlainsBoura(Serial serial) : base(serial)
         {
         }
-		public override int Level => 7;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Toundra;
 		public override int Meat => 10;
 

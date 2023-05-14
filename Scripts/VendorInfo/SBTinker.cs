@@ -31,14 +31,14 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(Lockpick), 12, 20, 0x14FC, 0, true));
 
 				
-				Add(new GenericBuyInfo(typeof(TinkersTools), 7, 20, 0x1EBC, 0));
+			//	Add(new GenericBuyInfo(typeof(TinkersTools), 7, 20, 0x1EBC, 0));
                 Add(new GenericBuyInfo(typeof(RegularBoard), 3, 20, 0x1BD7, 0, true));
                 Add(new GenericBuyInfo(typeof(IronIngot), 5, 16, 0x1BF2, 0, true));
                 Add(new GenericBuyInfo(typeof(SewingKit), 15, 20, 0xF9D, 0));
 				Add(new GenericBuyInfo(typeof(LeatherSewingKit), 20, 20, 0xF9D, 0xF9D));
 				Add(new GenericBuyInfo(typeof(BoneSewingKit), 20, 20, 0xF9D, 1109));
 
-				Add(new GenericBuyInfo(typeof(DrawKnife), 10, 20, 0x10E4, 0));
+				//Add(new GenericBuyInfo(typeof(DrawKnife), 10, 20, 0x10E4, 0));
     
 
                 Add(new GenericBuyInfo(typeof(ButcherKnife), 13, 20, 0x13F6, 0));

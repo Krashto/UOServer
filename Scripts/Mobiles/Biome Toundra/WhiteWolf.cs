@@ -49,7 +49,7 @@ namespace Server.Mobiles
         }
 
 
-		public override int Level => 7;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Toundra;
 		public override int Hides => 3;
 		public override HideType HideType => HideType.Lupus;

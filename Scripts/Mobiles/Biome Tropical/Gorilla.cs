@@ -37,7 +37,7 @@ namespace Server.Mobiles
             ControlSlots = 1;
             MinTameSkill = -18.9;
         }
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Tropique;
 		public override bool CanBeParagon => false;
 		public Gorilla(Serial serial)

@@ -47,7 +47,7 @@ namespace Server.Mobiles
             SetMagicalAbility(MagicalAbility.Piercing);
         }
 
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Savane;
 		public override int GetIdleSound() { return 0x673; }
         public override int GetAngerSound() { return 0x670; }
