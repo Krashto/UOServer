@@ -46,18 +46,6 @@ namespace Server.Mobiles
 
         public override bool CanBeParagon => false;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.HighScrolls, 2);
-            AddLoot(LootPack.MageryRegs, 3);
-            AddLoot(LootPack.NecroRegs, 1, 10);
-            AddLoot(LootPack.LootItem<DisintegratingThesisNotes>(15.0));
-            AddLoot(LootPack.Parrot);
-        }
-
-        // TODO: Special move?
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

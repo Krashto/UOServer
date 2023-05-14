@@ -47,13 +47,9 @@ namespace Server.Mobiles
         }
 
         public override int Feathers => 100;
-        //public override int TreasureMapLevel => 5;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 4);
             AddLoot(LootPack.Parrot);
-            AddLoot(LootPack.Gems);
-            AddLoot(LootPack.HighScrolls, 2);
             AddLoot(LootPack.LootItem<CrystallineFragments>(75.0));
             AddLoot(LootPack.LootItem<PiecesOfCrystal>(7.0));
         }

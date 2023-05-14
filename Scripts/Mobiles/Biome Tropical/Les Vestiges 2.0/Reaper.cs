@@ -48,11 +48,9 @@ namespace Server.Mobiles
 		public override int Level => 11;
 		public override Biome Biome => Biome.Tropique;
 		public override Poison PoisonImmune => Poison.Greater;
-        //public override int TreasureMapLevel => 2;
         public override bool DisallowAllMoves => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
             AddLoot(LootPack.LootItem<RegularLog>(5));
             AddLoot(LootPack.LootItem<MandrakeRoot>(5));
 			AddLoot(LootPack.LootItem<EcorceArbreMaudit>());

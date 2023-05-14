@@ -49,7 +49,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		}
 
 		public override double DispelDifficulty => 117.5;
-		public override int Level => 4;
+		public override int Level => 3;
 		public override double DispelFocus => 45.0;
 
 		public override void OnThink()
@@ -61,8 +61,13 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 			var mobiles = GetMobilesInRange(5);
 
+			var count = 0;
+
 			foreach (var m in mobiles)
 			{
+				if (count >= 3)
+					break;
+
 				if (m == ControlMaster)
 					continue;
 
@@ -93,6 +98,8 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					MovingParticles(m, 0x36D4, 7, 0, false, true, 9501, 1, 0, 0x100);
 
 					m.Damage((int)damage);
+
+					count++;
 				}
 			}
 

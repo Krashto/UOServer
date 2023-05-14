@@ -50,16 +50,9 @@ namespace Server.Mobiles
         }
 		public override int Level => 9;
 		public override Biome Biome => Biome.Tropique;
-	//	public override InhumanSpeech SpeechType => InhumanSpeech.Wisp;
         public override TimeSpan ReacquireDelay => TimeSpan.FromSeconds(1.0);
 
         public override TribeType Tribe => TribeType.Fey;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

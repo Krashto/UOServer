@@ -111,14 +111,6 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Reptilien;
 		public override FoodType FavoriteFood => FoodType.FruitsAndVegies;
 
-        public override void GenerateLoot()
-        {
-            if (IsChampionSpawn)
-                AddLoot(LootPack.FilthyRich, 2);
-            else
-                AddLoot(LootPack.UltraRich, 2);
-        }
-
         public Dimetrosaur(Serial serial)
             : base(serial)
         {

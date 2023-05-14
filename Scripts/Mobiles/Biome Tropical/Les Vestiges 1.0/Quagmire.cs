@@ -51,11 +51,7 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
         public override double HitPoisonChance => 0.1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
-
+        
         public override int GetAngerSound()
         {
             return 353;

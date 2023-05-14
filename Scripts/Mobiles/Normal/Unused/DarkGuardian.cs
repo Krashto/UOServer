@@ -48,19 +48,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.NecroRegs, 15, 25);
-            AddLoot(LootPack.LootItemCallback(DropTreasureMap));
-        }
-
-        private Item DropTreasureMap(IEntity e)
-        {
-            return new TreasureMap(Utility.RandomList(0, 0, 0, 1), e.Map);
-        }
-
         public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override bool Unprovokable => true;

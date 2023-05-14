@@ -40,17 +40,12 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
 
-
-	//		Fame = 1500;
-    //        Karma = -1500;
-
             SetWeaponAbility(WeaponAbility.MortalStrike);
             SetWeaponAbility(WeaponAbility.ColdWind);
         }
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.LootItem<GriffeWight>(1, true));
-
 		}
 
 		public Wight(Serial serial)

@@ -78,12 +78,7 @@ namespace Server.Mobiles
 		public override FoodType FavoriteFood => FoodType.Meat;
         public override bool CanAngerOnTame => true;
         public override bool CanFly => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 4);
-            AddLoot(LootPack.Gems, 8);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

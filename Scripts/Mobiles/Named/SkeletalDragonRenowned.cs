@@ -64,13 +64,6 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
 
-		//     public override int Hides => 20;
-		//       public override HideType HideType => HideType.Barbed;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

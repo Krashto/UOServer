@@ -30,9 +30,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 0.1, 15.0);
             SetSkill(SkillName.Wrestling, 25.1, 40.0);
 
-         //   Fame = 500;
-         //   Karma = -500;
-
             AddItem(new LightSource());
         }
 		public override int Level => 9;

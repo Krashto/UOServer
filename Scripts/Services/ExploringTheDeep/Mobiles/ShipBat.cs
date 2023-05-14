@@ -34,11 +34,6 @@
             Karma = -1000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-        }
-
         public override int GetIdleSound()
         {
             return 0x29B;

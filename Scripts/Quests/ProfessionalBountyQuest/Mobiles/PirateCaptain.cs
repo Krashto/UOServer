@@ -119,11 +119,6 @@ namespace Server.Mobiles
             return Utility.RandomMinMax(2498, 2644);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 2);
-        }
-
         public void PickRandomName()
         {
             m_Adjective = Utility.RandomMinMax(1116631, 1116650);

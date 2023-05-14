@@ -52,7 +52,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Foret;
 		public override InhumanSpeech SpeechType => InhumanSpeech.Ratman;
         public override bool CanRummageCorpses => true;
-        //public override int TreasureMapLevel => 2;
         public override int Meat => 1;
 		public override int Hides => 8;
 		public override HideType HideType => HideType.Regular;
@@ -62,11 +61,8 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Poor);
-            AddLoot(LootPack.MageryRegs, 6);
             AddLoot(LootPack.Statue);
 			AddLoot(LootPack.RandomLootItem(new Type[] { typeof(CheeseWedge), typeof(CheeseSlice), typeof(CheeseWheel) }, 25.0, 2, false, true));
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
 		}
 
         public override void Serialize(GenericWriter writer)

@@ -80,12 +80,6 @@ namespace Server.Mobiles
             return 0x28B;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.NecroRegs, 30, 275);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

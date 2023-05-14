@@ -64,11 +64,6 @@ namespace Server.Engines.SorcerersDungeon
         public override int GetAttackSound() { return 0x232; }
         public override int GetHurtSound() { return 0x140; }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

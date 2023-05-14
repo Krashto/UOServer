@@ -37,16 +37,11 @@ namespace Server.Mobiles
             Karma = -8100;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 1);
-        }
 		public override int Level => 3;
 		public override Biome Biome => Biome.Desert;
 		public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 3;
-        ////public override int TreasureMapLevel => 1;
 
         public DesertScorpion(Serial serial)
             : base(serial)

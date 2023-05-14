@@ -43,8 +43,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Gems);
             AddLoot(LootPack.LootItem<ClockworkAssembly>(40.0));
             AddLoot(LootPack.LootItemCallback(Golem.SpawnGears, 5.0, 1, false, false));
         }

@@ -49,7 +49,6 @@ namespace Server.Mobiles
 		public override int Level => 5;
 		public override Biome Biome => Biome.Montagne;
 		public override bool CanRummageCorpses => true;
-        //public override int TreasureMapLevel => 1;
         public override int Meat => 2;
 		public override int Hides => 5;
 		public override HideType HideType => HideType.Regular;
@@ -59,7 +58,6 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Regular;
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
 			AddLoot(LootPack.LootItem<CheveuxTroll>());
 		}
 

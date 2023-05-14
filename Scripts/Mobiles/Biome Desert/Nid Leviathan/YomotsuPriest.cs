@@ -49,20 +49,11 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Desert;
-		//public override int TreasureMapLevel => 4;
 
         public override FoodType FavoriteFood => FoodType.Fish;
         public override int Meat => 1;
         public override bool CanRummageCorpses => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-   //         AddLoot(LootPack.Gems, 4);
-        }
-
-        // TODO: Body Transformation
         public override void OnGaveMeleeAttack(Mobile defender)
         {
             base.OnGaveMeleeAttack(defender);

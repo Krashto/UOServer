@@ -57,11 +57,6 @@ namespace Server.Items
         public override int Meat => 1;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-        }
-
         protected override void OnLocationChange(Point3D oldLocation)
         {
             base.OnLocationChange(oldLocation);

@@ -53,21 +53,13 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.LootItem<Bandage>(1, 15, true));
             AddLoot(LootPack.LootItem<SeveredHumanEars>(75.0, 1));
 			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
 
 			if (LootStage == LootStage.Death)
             {
-                if (!Female)
-                {
-                    AddLoot(LootPack.LootItem<Bola>(10.0));
-                }
-                else
-                {
+                if (Female)
                     AddLoot(LootPack.LootItem<TribalBerry>(10.0));
-                }
 
                 if (0.5 > Utility.RandomDouble())
                 {

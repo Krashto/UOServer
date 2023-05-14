@@ -49,11 +49,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Desert;
 		public override bool BleedImmune => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

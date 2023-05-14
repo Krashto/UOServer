@@ -52,25 +52,6 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer => true;
         public override bool CanRummageCorpses => true;
         public override int Meat => 1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average);
-        
-        }
-
-        private Item AddLootContainer(IEntity e)
-        {
-            var pack = new Backpack();
-
-            pack.DropItem(new Arrow(Utility.RandomMinMax(25, 35)));
-            pack.DropItem(new Arrow(Utility.RandomMinMax(25, 35)));
-            pack.DropItem(new Bandage(Utility.RandomMinMax(5, 15)));
-            pack.DropItem(new Bandage(Utility.RandomMinMax(5, 15)));
-
-
-            return pack;
-        }
 
         public override void OnDamage(int amount, Mobile from, bool willKill)
         {

@@ -54,11 +54,7 @@ namespace Server.Mobiles
         public override bool CanRummageCorpses => true;
         public override int Hides => 8;
 		public override HideType HideType => HideType.Regular;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-        }
-
+		
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -49,11 +49,6 @@ namespace Server.Mobiles
 		public override int Bones => 7;
 		public override BoneType BoneType => BoneType.Arachnide;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
         public RedSolenWarrior(Serial serial)
             : base(serial)
         {

@@ -339,23 +339,11 @@ namespace Server.Mobiles
 			}
 		}
 
-
-
-
-
 		public override void GenerateLoot()
 		{
-			AddLoot(LootPack.SuperBoss, 8);
-			AddLoot(LootPack.MedScrolls);
 			AddLoot(LootPack.PeculiarSeed1);
 			AddLoot(LootPack.LootItem<Items.RoastPig>(10.0));
-			AddLoot(LootPack.LootItem<Items.Gold>(15000, 20000));
 		}
-
-
-
-
-
 
 		public override void OnDeath(Container c)
 		{
@@ -363,7 +351,6 @@ namespace Server.Mobiles
 			Parole();
 
 		}
-
 
 		public override void OnDamage(int amount, Mobile from, bool willKill)
 		{

@@ -56,9 +56,7 @@ namespace Server.Mobiles
         public override Poison HitPoison => Poison.Deadly;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
             AddLoot(LootPack.LootItem<SpidersSilk>(5, true));
-            AddLoot(LootPack.LootItem<LesserPoisonPotion>(2, true));
 			AddLoot(LootPack.LootItem<VeninAraigneeNoire>());
 		}
 

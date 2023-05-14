@@ -63,12 +63,6 @@ namespace Server.Mobiles
         public override PackInstinct PackInstinct => PackInstinct.Daemon;
         public override bool CanFly => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-         
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

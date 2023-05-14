@@ -54,8 +54,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.MageryRegs, 6);
             AddLoot(LootPack.LootItem<OrcishKinMask>(5.0));
             AddLoot(LootPack.LootItem<Yeast>(50.0));
         }

@@ -41,11 +41,6 @@ namespace Server.Mobiles
 
         public override bool DeleteCorpseOnDeath => true;
 
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(75, 200));
-        }
-
         public override bool OnBeforeDeath()
         {
             if (!base.OnBeforeDeath())

@@ -41,11 +41,6 @@ namespace Server.Mobiles
 
         public override bool AlwaysMurderer => true;
 
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(50, 150));
-        }
-
         public override int Damage(int amount, Mobile from, bool informMount, bool checkDisrupt)
         {
             if (from is BaseCreature && ((BaseCreature)from).GetMaster() is PlayerMobile)

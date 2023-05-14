@@ -65,8 +65,6 @@ namespace Server.Mobiles
         public override PackInstinct PackInstinct => PackInstinct.Canine;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItem<SulfurousAsh>(5));
         }
 

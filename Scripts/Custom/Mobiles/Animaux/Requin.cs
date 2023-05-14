@@ -89,9 +89,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
 			AddLoot(LootPack.LootItem<DentRequin>());
-
 		}
 
         public override void Serialize(GenericWriter writer)

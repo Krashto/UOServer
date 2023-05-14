@@ -49,11 +49,7 @@ namespace Server.Mobiles
 
         public override Poison HitPoison => Poison.Deadly;
         public override Poison PoisonImmune => Poison.Deadly;
-        public override void GenerateLoot() // Need to verify
-        {
-            AddLoot(LootPack.FilthyRich);
-        }
-
+        
         public override int GetAngerSound()
         {
             return 0x56d;

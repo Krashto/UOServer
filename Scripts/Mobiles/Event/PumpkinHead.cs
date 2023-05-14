@@ -60,7 +60,6 @@ namespace Server.Mobiles
         {
             AddLoot(LootPack.LootItem<WrappedCandy>(true));
             AddLoot(LootPack.RandomLootItem(new Type[] { typeof(CarvablePlainPumpkin), typeof(CarvablePumpkinTall), typeof(CarvableGordPumpkinTall) }, 20.0, 1));
-            AddLoot(LootPack.UltraRich, 2);
         }
 
         public virtual void Lifted_Callback(Mobile from)

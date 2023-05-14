@@ -48,11 +48,6 @@ namespace Server.Mobiles
         public override FoodType FavoriteFood => FoodType.GrainsAndHay;
         public override int Feathers => 35;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich);
-        }
-
         public override int GetIdleSound()
         {
             return 0x66A;

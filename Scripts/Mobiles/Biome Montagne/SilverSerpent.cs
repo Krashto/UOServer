@@ -60,12 +60,6 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Gems, 2);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

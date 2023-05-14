@@ -52,25 +52,8 @@ namespace Server.Mobiles
         public override bool BleedImmune => true;
 		
         public override Poison PoisonImmune => Poison.Lethal;
-		
-        //public override int TreasureMapLevel => 1;
-
 		public override int Level => 11;
 		public override Biome Biome => Biome.Plaine;
-
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-
-        }
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.11)
-		//		c.DropItem(new AmeLicheSquel());
-		//}
-
 
 		public override void Serialize(GenericWriter writer)
         {

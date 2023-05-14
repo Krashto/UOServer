@@ -34,21 +34,12 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 100.1, 110.0);
             SetSkill(SkillName.Wrestling, 100.1, 120.0);
 
-    //        Fame = 18000;
-    //        Karma = -18000;
-
             Tamable = true;
             ControlSlots = 4;
             MinTameSkill = 98.7;
 
             SetWeaponAbility(WeaponAbility.Dismount);
             SetSpecialAbility(SpecialAbility.GraspingClaw);
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.Gems, 4);
         }
 
         public Hiryu(Serial serial)

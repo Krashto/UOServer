@@ -66,12 +66,6 @@ namespace Server.Mobiles
 			return base.OnBeforeDeath();
 		}
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Rich);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -94,14 +94,6 @@ namespace Server.Mobiles
                 Utility.AssignRandomFacialHair(this, hairHue);
         }
 
-        public override void GenerateLoot()
-        {
-			AddLoot(LootPack.Rich);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
-
-		}
-
-
 		public override void OnThink()
 		{
 			base.OnThink();

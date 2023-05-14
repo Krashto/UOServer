@@ -57,23 +57,14 @@ namespace Server.Mobiles
 		public override int Level => 12;
 		public override Biome Biome => Biome.Foret;
 		public override Poison PoisonImmune => Poison.Greater;
-        //public override int TreasureMapLevel => 4;
 
         public override TribeType Tribe => TribeType.Ophidian;
 
 		public override int Hides => 6;
 		public override HideType HideType => HideType.Ophidien;
 
-
 		public override int Bones => 6;
 		public override BoneType BoneType => BoneType.Ophidien;
-
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average, 2);
-          
-        }
 
         public override void Serialize(GenericWriter writer)
         {

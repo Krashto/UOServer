@@ -101,14 +101,11 @@ namespace Server.Mobiles
 
 		public override FoodType FavoriteFood => FoodType.FruitsAndVegies | FoodType.GrainsAndHay;
 
-//        public override int DragonBlood => 8;
-
         public override int Fur => GatheredFur ? 0 : 15;
         public override FurType FurType => FurType.Brown;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
             AddLoot(LootPack.LootItem<RawRibs>(5));
         }
 

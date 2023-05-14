@@ -103,16 +103,9 @@ namespace Server.Mobiles
             SetWearable(cloak);
         }
 
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(400, 600));
-        }
-
         public override bool CanBeParagon => false;
 
         public override Poison PoisonImmune => Poison.Lethal;
-
-        //public override int TreasureMapLevel => 5;
 
         public DupresChampion(Serial serial)
             : base(serial)

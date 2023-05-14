@@ -51,11 +51,6 @@ namespace Server.Engines.Shadowguard
             Utility.AssignRandomHair(this);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public override bool AlwaysMurderer => true;
         public bool BlockReflect { get; set; }
 
@@ -112,11 +107,6 @@ namespace Server.Engines.Shadowguard
             Karma = -15000;
 
             BlockReflect = true;
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
         }
 
         public ShantyThePirate(Serial serial) : base(serial)
@@ -289,11 +279,6 @@ namespace Server.Engines.Shadowguard
         }
         #endregion
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
@@ -409,11 +394,6 @@ namespace Server.Engines.Shadowguard
             return true;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public EnsorcelledArmor(Serial serial) : base(serial)
         {
         }
@@ -463,11 +443,6 @@ namespace Server.Engines.Shadowguard
             }
 
             base.OnDeath(c);
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
         }
 
         public VileDrake(Serial serial) : base(serial)
@@ -574,12 +549,6 @@ namespace Server.Engines.Shadowguard
             }
 
             return 0;
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.Gems, 8);
         }
 
         public override void OnGaveMeleeAttack(Mobile defender)

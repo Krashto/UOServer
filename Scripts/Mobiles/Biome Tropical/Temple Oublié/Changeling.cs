@@ -86,14 +86,6 @@ namespace Server.Mobiles
         public override bool ShowFameTitle => false;
         public override bool InitialInnocent => (m_MorphedInto != null);
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-       //AddLoot(LootPack.MedScrolls);
-            AddLoot(LootPack.Gems, 2);
-            AddLoot(LootPack.LootItem<Arrow>(35));
-            AddLoot(LootPack.LootItem<Bolt>(25));
-        }
 
         [CommandProperty(AccessLevel.GameMaster)]
         public Mobile MorphedInto

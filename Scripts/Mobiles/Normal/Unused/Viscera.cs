@@ -48,11 +48,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-        }
-
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
 

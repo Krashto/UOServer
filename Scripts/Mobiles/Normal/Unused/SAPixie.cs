@@ -44,8 +44,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Gems, 2);
-            AddLoot(LootPack.Statue);
             AddLoot(LootPack.LootItem<PixieLeg>(33.0, 1, false, true));
         }
 

@@ -46,19 +46,10 @@ namespace Server.Mobiles
             SetSkill(SkillName.EvalInt, 90.1, 100.0);
             SetSkill(SkillName.Meditation, 95.1, 120.0);
             SetSkill(SkillName.Tracking, 100.0);
-
-         //   Fame = 15000;
-         //   Karma = 0;
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Montagne;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-            //AddLoot(LootPack.LootGold(1000, 1200));
-    }
-
-
+		
         public Sphynx(Serial serial)
             : base(serial)
         {

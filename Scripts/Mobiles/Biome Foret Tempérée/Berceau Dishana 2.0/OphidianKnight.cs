@@ -71,15 +71,8 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<SangEnvoutePoison>(), Utility.RandomMinMax(2, 4));
 		}
 
-
 		public override int Bones => 6;
 		public override BoneType BoneType => BoneType.Ophidien;
-
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-            AddLoot(LootPack.LootItem<LesserPoisonPotion>());
-        }
 
         public override void Serialize(GenericWriter writer)
         {

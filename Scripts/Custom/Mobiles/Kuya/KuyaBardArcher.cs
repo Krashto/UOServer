@@ -113,11 +113,6 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
         {
             AddLoot(LootPack.RandomLootItem(new System.Type[] { typeof(Harp), typeof(Lute), typeof(Drums), typeof(Tambourine) }));
-            AddLoot(LootPack.LootItem<Longsword>(true));
-            AddLoot(LootPack.LootItem<Bow>(true));
-            AddLoot(LootPack.LootItem<Arrow>(100, true));
-			AddLoot(LootPack.Average);
-			//      AddLoot(LootPack.LootGold(10, 50));
 		}
 
         public KuyaBardArcher(Serial serial)

@@ -76,12 +76,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.LootItem<VeriteOre>(5));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

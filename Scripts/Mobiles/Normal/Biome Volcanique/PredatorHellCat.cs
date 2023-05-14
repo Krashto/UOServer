@@ -63,11 +63,7 @@ namespace Server.Mobiles
 
 
 		public override PackInstinct PackInstinct => PackInstinct.Feline;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -47,12 +47,6 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.Block);
             SetSpecialAbility(SpecialAbility.GraspingClaw);
         }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 1);
-        }
-
         public override int Meat => 3;
         public override MeatType MeatType => MeatType.DinoRibs;
         public override bool CanAngerOnTame => true;

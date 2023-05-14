@@ -52,12 +52,7 @@ namespace Server.Mobiles
         }
 
         public override Poison HitPoison => Poison.Lethal;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.LootItem<Bandage>(5, true));
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

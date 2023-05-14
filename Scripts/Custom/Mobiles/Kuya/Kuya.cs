@@ -114,14 +114,6 @@ namespace Server.Mobiles
 		public override void OnDeath(Container c)
 		{
 			base.OnDeath(c);
-
-
-		}
-
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Average);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
 		}
 
 		public override void Serialize(GenericWriter writer)

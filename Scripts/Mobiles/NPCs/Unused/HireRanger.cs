@@ -49,32 +49,6 @@ namespace Server.Mobiles
             AddItem(new Shoes(Utility.RandomNeutralHue()));
             AddItem(new Shirt());
 		    AddItem(new ShortPants(Utility.RandomNeutralHue()));
-
-/*            // Pick a random sword
-            switch (Utility.Random(3))
-            {
-                case 0:
-                    AddItem(new Longsword());
-                    break;
-                case 1:
-                    AddItem(new VikingSword());
-                    break;
-                case 2:
-                    AddItem(new Broadsword());
-                    break;
-            }
-/*
-            SetWearable(new StuddedChest(), 0x59C);
-            SetWearable(new StuddedArms(), 0x59C);
-            SetWearable(new StuddedGloves(), 0x59C);
-            SetWearable(new StuddedLegs(), 0x59C);
-            SetWearable(new StuddedGorget(), 0x59C);*/
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.LootItem<Arrow>(20, true));
-            //AddLoot(LootPack.LootGold(10, 75));
         }
 
         public HireRanger(Serial serial)

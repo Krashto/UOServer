@@ -76,21 +76,10 @@ namespace Server.Mobiles
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteDrake>(), Utility.RandomMinMax(2, 4));
 		}
-
-
-
-		/*      public override int Hides => 20;
-			  public override HideType HideType => HideType.Horned;
-			  public override int Scales => 2;
-			  public override ScaleType ScaleType => (Body == 60 ? ScaleType.Yellow : ScaleType.Red);*/
 		public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish;
         public override bool CanFly => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.MageryRegs, 3);
-
 			AddLoot(LootPack.LootItem<Items.GemmeFeu>(), (double)5);
 		}
 

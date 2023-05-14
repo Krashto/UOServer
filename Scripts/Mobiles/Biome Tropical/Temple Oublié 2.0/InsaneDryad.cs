@@ -43,9 +43,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 100.0, 120.0);
             SetSkill(SkillName.Tactics, 70.0, 80.0);
             SetSkill(SkillName.Wrestling, 70.0, 80.0);
-
-   //         Fame = 5000;
-    //        Karma = 5000;
         }
 
         public MLDryad(Serial serial)
@@ -54,11 +51,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 10;
 		public override Biome Biome => Biome.Tropique;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
+		
         public override int Meat => 1;
 
         public override void OnThink()

@@ -69,18 +69,12 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Colline;
-		////public override int TreasureMapLevel => 5;
 
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies;
         public override bool CanAngerOnTame => true;
         public override bool StatLossAfterTame => true;
         public override int Hides => 10;
         public override int Meat => 3;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 5);
-        }
 
         public override void OnAfterTame(Mobile tamer)
         {

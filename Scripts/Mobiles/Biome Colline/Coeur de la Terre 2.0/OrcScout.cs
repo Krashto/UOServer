@@ -69,7 +69,6 @@ namespace Server.Mobiles
         public override void GenerateLoot()
 
         {
-            AddLoot(LootPack.Rich);
             AddLoot(LootPack.LootItem<Yeast>(50.0));
             AddLoot(LootPack.LootItem<Apple>(3, 5));
             AddLoot(LootPack.LootItem<Arrow>(15, 28));

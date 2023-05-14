@@ -65,8 +65,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 1);
-            AddLoot(LootPack.FilthyRich, 2);
             AddLoot(LootPack.LootItem<DaemonBone>(30, true));
             AddLoot(LootPack.LootItem<AncientPotteryFragments>(30.0));
         }

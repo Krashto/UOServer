@@ -43,15 +43,7 @@ namespace Server.Mobiles
 
         public override bool CanRummageCorpses => true;
 
-        //public override int TreasureMapLevel => 1;
-
         public override int Meat => 2;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

@@ -90,12 +90,6 @@ namespace Server.Mobiles
 
 		public override bool ShowFameTitle => false;
 
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Average);
-			  
-	}
-		//public override int TreasureMapLevel => 3;
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);

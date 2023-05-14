@@ -50,11 +50,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Tropique;
 		public override TribeType Tribe => TribeType.Fey;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
 		public override void GenerateLootParagon()
 		{
 			AddLoot(LootPack.LootItem<SangEnvouteSatyr>(), Utility.RandomMinMax(2, 4));

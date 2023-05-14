@@ -44,11 +44,7 @@ namespace Server.Mobiles
 
         public override bool CanRummageCorpses => true;
         public override bool InitialInnocent => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
+        
         public override void OnDamage(int amount, Mobile from, bool willKill)
         {
             if (from != null && !willKill && amount > 3 && !InRange(from, 7))

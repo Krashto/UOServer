@@ -52,14 +52,7 @@ namespace Server.Mobiles
 
         public override Poison PoisonImmune => Poison.Lethal;
 
-        //public override int TreasureMapLevel => 4;
         public override int Meat => 3;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.NecroRegs, 20, 45);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

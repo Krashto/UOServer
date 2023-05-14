@@ -61,7 +61,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average); //Unknown
             AddLoot(LootPack.LootItem<RegularLog>(Utility.RandomMinMax(5, 10)));
 			AddLoot(LootPack.LootItem<EcorceArbreGeant>());
 		}

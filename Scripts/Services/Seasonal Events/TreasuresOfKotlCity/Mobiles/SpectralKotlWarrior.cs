@@ -55,11 +55,6 @@ namespace Server.Mobiles
             Karma = -16000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-        }
-
         public override Poison HitPoison => Poison.Deadly;
         public override Poison PoisonImmune => Poison.Deadly;
 

@@ -31,9 +31,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 70.1, 95.0);
             SetSkill(SkillName.Tactics, 55.1, 80.0);
             SetSkill(SkillName.Wrestling, 30.1, 55.0);
-
-       //     Fame = 1000;
-       //     Karma = -1000;
         }
 
         public VampireBat(Serial serial)
@@ -42,11 +39,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 2;
 		public override Biome Biome => Biome.Desert;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-        }
-
+		
         public override int GetIdleSound()
         {
             return 0x29B;

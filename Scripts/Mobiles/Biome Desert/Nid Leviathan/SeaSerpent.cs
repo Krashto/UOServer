@@ -63,17 +63,8 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Reptilien;
 
-
-
-
-		/*       public override int Hides => 10;
-			   public override HideType HideType => HideType.Horned;
-			   public override int Scales => 8;
-			   public override ScaleType ScaleType => ScaleType.Blue;*/
-
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItem<RawFishSteak>());
             AddLoot(LootPack.RandomLootItem(new[] { typeof(SulfurousAsh), typeof(BlackPearl) }, 100.0, 4, false, true));
         }

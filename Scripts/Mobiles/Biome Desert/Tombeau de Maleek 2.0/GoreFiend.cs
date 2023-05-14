@@ -43,13 +43,10 @@ namespace Server.Mobiles
 		public override int Level => 6;
 		public override Biome Biome => Biome.Desert;
 		public override bool BleedImmune => true;
+
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-
 			AddLoot(LootPack.BodyParts, Utility.RandomMinMax(3, 5));
-
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
 		}
 
         public override int GetDeathSound()

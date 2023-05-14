@@ -100,9 +100,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Tactics, 50.1, 55.0);
 			SetSkill(SkillName.Wrestling, 50.1, 55.0);
 
-		//	Fame = 300;
-        //    Karma = 300;
-
             Tamable = true;
             ControlSlots = 2;
             MinTameSkill = 56.0;
@@ -111,11 +108,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 7;
 		public override Biome Biome => Biome.Foret;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.LootItem<Bandage>(11, true));
-        }
-
+		
         public Triton(Serial serial)
             : base(serial)
         {
@@ -125,7 +118,6 @@ namespace Server.Mobiles
         public override int Meat => 3;
 		public override int Hides => 7;
 		public override HideType HideType => HideType.Reptilien;
-
 
 		public override int Bones => 7;
 		public override BoneType BoneType => BoneType.Reptilien;

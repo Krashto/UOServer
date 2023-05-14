@@ -256,12 +256,6 @@ namespace Server.Mobiles
             base.Delete();
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 5);
-            AddLoot(LootPack.LootItemCallback(RandomRecipe, 10.0, 1, false, false));
-        }
-
         private Item RandomRecipe(IEntity e)
         {
             return Utility.RandomBool() ? new RecipeScroll(1100) : new RecipeScroll(1108);
@@ -350,11 +344,6 @@ namespace Server.Mobiles
                 ((Osiredon)m_Master).RemoveEel(this);
 
             base.Delete();
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 1);
         }
 
         public ParasiticEel(Serial serial)

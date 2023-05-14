@@ -52,8 +52,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItem<Carrot>(100.0, Utility.RandomMinMax(5, 10), false, true));
             AddLoot(LootPack.LootItem<BrightlyColoredEggs>(20.0, 1, false, true));
             AddLoot(LootPack.RandomLootItem(Loot.StatueTypes, false, true));

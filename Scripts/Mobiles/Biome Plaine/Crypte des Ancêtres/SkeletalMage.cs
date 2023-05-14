@@ -56,14 +56,7 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<PoussiereNecrotique>(1, true));
 
 		}
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.02)
-		//		c.DropItem(new AmeMageSquelette());
-		//}
-
+		
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

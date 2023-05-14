@@ -50,12 +50,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Volcan;
 		public override int Meat => 1;
         public override bool CanFly => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-        }
-
+        
         public override void OnDamagedBySpell(Mobile from)
         {
             if (from != null && from.Alive && 0.4 > Utility.RandomDouble())

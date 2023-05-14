@@ -45,21 +45,13 @@ namespace Server.Mobiles
             SetSkill(SkillName.Meditation, 110.0);
             SetSkill(SkillName.Spellweaving, 120.0);
 
-        //    Fame = 32000;
-        //    Karma = -32000;
-
             m_Change = DateTime.UtcNow;
             m_Stomp = DateTime.UtcNow;
             m_Teleport = DateTime.UtcNow;
         }
 		public override int Level => 18;
 		public override Biome Biome => Biome.Tropique;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 8);
-           
-        }
-
+		
         public override void OnThink()
         {
             base.OnThink();

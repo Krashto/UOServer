@@ -49,10 +49,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.LootItem<Arrow>(60, 80));
             AddLoot(LootPack.LootItem<Apple>(5));
-   
         }
 
         public override void Serialize(GenericWriter writer)

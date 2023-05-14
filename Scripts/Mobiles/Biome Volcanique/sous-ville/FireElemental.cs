@@ -53,11 +53,8 @@ namespace Server.Mobiles
 		public override double DispelDifficulty => 117.5;
         public override double DispelFocus => 45.0;
         public override bool BleedImmune => true;
-        //public override int TreasureMapLevel => 2;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItem<SulfurousAsh>(3, true));
         }
 

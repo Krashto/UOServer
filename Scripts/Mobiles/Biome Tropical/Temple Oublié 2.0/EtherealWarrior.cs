@@ -51,17 +51,11 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Tropique;
 
 		public override bool InitialInnocent => true;
-        //public override int TreasureMapLevel => 5;
 
         public override TribeType Tribe => TribeType.Fey;
 
         public override int Feathers => 100;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-            AddLoot(LootPack.Gems);
-        }
-
+        
         public override void OnMovement(Mobile from, Point3D oldLocation)
         {
             if (!from.Alive && (from is PlayerMobile))

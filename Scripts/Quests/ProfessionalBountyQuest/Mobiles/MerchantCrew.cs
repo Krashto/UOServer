@@ -95,13 +95,6 @@ namespace Server.Mobiles
             Karma = 8000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.LootItem<Arrow>(25, true));
-            AddLoot(LootPack.LootItem<Bolt>(25, true));
-        }
-
         public MerchantCrew(Serial serial)
             : base(serial)
         {

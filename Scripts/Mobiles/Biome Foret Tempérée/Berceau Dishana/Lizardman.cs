@@ -68,13 +68,6 @@ namespace Server.Mobiles
 		public override int Bones => 4;
 		public override BoneType BoneType => BoneType.Reptilien;
 
-		/*    public override int Hides => 12;
-			public override HideType HideType => HideType.Spined;*/
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -52,10 +52,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
-            AddLoot(LootPack.MageryRegs, 3);
-            AddLoot(LootPack.NecroRegs, 3, 10);
             AddLoot(LootPack.LootItem<PlainoisBone>());
         }
 

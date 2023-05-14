@@ -79,13 +79,6 @@ namespace Server.Mobiles
             AddItem(bow);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.LootItem<Arrow>(25, true));
-            AddLoot(LootPack.LootItem<Bolt>(25, true));
-        }
-
         public override bool OnBeforeDeath()
         {
             if (Region.IsPartOf<Regions.CorgulRegion>())

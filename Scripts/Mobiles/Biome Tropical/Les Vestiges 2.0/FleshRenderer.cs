@@ -61,12 +61,6 @@ namespace Server.Mobiles
         public override bool Unprovokable => true;
         public override bool AreaPeaceImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-        }
 
         public override int GetAttackSound()
         {

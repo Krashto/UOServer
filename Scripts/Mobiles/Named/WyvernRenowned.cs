@@ -75,15 +75,6 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
 
-		/*      public override int Hides => 20;
-
-			  public override HideType HideType => HideType.Horned;
-		*/
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich);
-        }
-
         public override int GetAttackSound()
         {
             return 713;

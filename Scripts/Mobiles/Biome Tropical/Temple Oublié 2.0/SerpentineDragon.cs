@@ -66,15 +66,10 @@ namespace Server.Mobiles
 		public override HideType HideType => HideType.Dragonique;
 
 		public override int Meat => 19;
-  /*      public override int Scales => 6;
-
-        public override ScaleType ScaleType => (Utility.RandomBool() ? ScaleType.Black : ScaleType.White);*/
-        //public override int TreasureMapLevel => 4;
         public override bool CanAngerOnTame => true;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);          
             AddLoot(LootPack.PeculiarSeed3);
         }
 

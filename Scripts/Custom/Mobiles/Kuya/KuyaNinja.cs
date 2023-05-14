@@ -125,14 +125,6 @@ namespace Server.Mobiles
 
 		public override TribeType Tribe => TribeType.Kuya;
 
-		public override void GenerateLoot()
-        {
-			AddLoot(LootPack.Rich, 2);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
-			AddLoot(LootPack.Potions, Utility.RandomMinMax(1, 2));
-			AddLoot(LootPack.Statue,1,5);
-		}
-
         private void ChangeWeapon()
         {
             if (Backpack == null)

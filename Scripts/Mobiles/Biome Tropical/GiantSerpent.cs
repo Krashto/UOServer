@@ -68,16 +68,11 @@ namespace Server.Mobiles
 		public override int Bones => 4;
 		public override BoneType BoneType => BoneType.Reptilien;
 
-
 		public override void GenerateLoot()
         {
-    //        AddLoot(LootPack.Average);
             AddLoot(LootPack.LootItem<PlainoisBone>());
 			AddLoot(LootPack.LootItem<OeufSerpent>());
 			AddLoot(LootPack.LootItem<EcaillesSerpentGeant>());
-
-
-
 		}
 
 		public override void Serialize(GenericWriter writer)

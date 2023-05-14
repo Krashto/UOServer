@@ -53,12 +53,6 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Regular;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.LootItem<Arrow>(Utility.RandomMinMax(50, 70)));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

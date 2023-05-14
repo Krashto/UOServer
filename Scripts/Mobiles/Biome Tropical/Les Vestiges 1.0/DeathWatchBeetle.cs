@@ -51,12 +51,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Potions, 1);
-			AddLoot(LootPack.LootPoor, 1);
-		}
-
         public override int Hides => 8;
 
         public override int GetAngerSound()

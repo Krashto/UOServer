@@ -38,12 +38,6 @@
             Karma = -7000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Gems, 2);
-        }
-
         public override bool DeathAdderCharmable => true;
         public override int Meat => 1;
         public override Poison PoisonImmune => Poison.Deadly;

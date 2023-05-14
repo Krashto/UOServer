@@ -50,7 +50,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
             AddLoot(LootPack.LootItem<SabrixsEye>(20.0));
             AddLoot(LootPack.Parrot);
             AddLoot(LootPack.RandomLootItem(new System.Type[] { typeof(PaladinArms), typeof(HunterLegs) }, 25.0, 1, false, false));

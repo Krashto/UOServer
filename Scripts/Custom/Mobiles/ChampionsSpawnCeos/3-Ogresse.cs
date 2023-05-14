@@ -53,13 +53,6 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<SangEnvoutePhysique>(), Utility.RandomMinMax(2, 4));
 		}
 
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Average);
-			AddLoot(LootPack.Potions, 2);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
-		}
-
 		public override int Meat => 1;
 
 		public override void Serialize(GenericWriter writer)

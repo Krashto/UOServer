@@ -83,17 +83,8 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
 
-
-		/*       public override int Scales => 7;
-			   public override ScaleType ScaleType => (Body == 12 ? ScaleType.Yellow : ScaleType.Red);*/
 		public override int DragonBlood => 48;
         public override bool CanFlee => false;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 4);
-            AddLoot(LootPack.Gems, 8);
-        }
 
         public override void OnThink()
         {

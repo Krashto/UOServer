@@ -67,14 +67,6 @@ namespace Server.Mobiles
 		public override int Bones => 4;
 		public override BoneType BoneType => BoneType.Demoniaque;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Average);
-       //AddLoot(LootPack.MedScrolls, 2);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
-		}
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

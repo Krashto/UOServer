@@ -89,12 +89,6 @@ namespace Server.Mobiles
 
         public override bool ForceStayHome => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.Meager);
-        }
-
         public override bool OnBeforeDeath()
         {
             IMount mount = Mount;

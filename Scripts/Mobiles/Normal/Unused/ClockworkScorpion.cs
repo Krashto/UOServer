@@ -56,11 +56,7 @@ namespace Server.Mobiles
         public override bool DeleteOnRelease => true;
         public override bool BardImmune => Controlled;
         public override Poison PoisonImmune => Poison.Lethal;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager, 2);
-        }
-
+        
         public override int GetAngerSound()
         {
             return 541;

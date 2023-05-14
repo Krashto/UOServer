@@ -85,18 +85,11 @@ namespace Server.Mobiles
             SetWearable(bs);
         }
 
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(400, 600));
-        }
-
         public override bool CanBeParagon => false;
 
         public override bool InitialInnocent => true;
 
         public override Poison PoisonImmune => Poison.Lethal;
-
-        //public override int TreasureMapLevel => 5;
 
         public DupresSquire(Serial serial)
             : base(serial)

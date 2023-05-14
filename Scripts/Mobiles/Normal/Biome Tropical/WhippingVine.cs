@@ -41,7 +41,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.MageryRegs, 3);
             AddLoot(LootPack.LootItem<DecorativeVines>(10.0));
             AddLoot(LootPack.LootItem<FertileDirt>(1, 10, false, true));
             AddLoot(LootPack.LootItem<Vines>());

@@ -48,12 +48,6 @@ namespace Server.Mobiles
 
         public override Poison HitPoison => Poison.Regular;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-            AddLoot(LootPack.Gems);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

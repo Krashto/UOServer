@@ -63,12 +63,7 @@ namespace Server.Mobiles
         }
 
         public override bool AllureImmune => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.MageryRegs, 22);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

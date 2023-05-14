@@ -51,12 +51,9 @@ namespace Server.Mobiles
 		public override FoodType FavoriteFood => FoodType.Fish;
         public override int Meat => 1;
         public override bool CanRummageCorpses => true;
-        //public override int TreasureMapLevel => 3;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
-            AddLoot(LootPack.Gems, 2);
             AddLoot(LootPack.LootItem<GreenGourd>(1.0));
             AddLoot(LootPack.BonsaiSeed);
         }

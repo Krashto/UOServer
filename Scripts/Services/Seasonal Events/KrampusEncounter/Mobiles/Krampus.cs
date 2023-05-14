@@ -220,11 +220,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 5);
-        }
-
         public override void OnThink()
         {
             base.OnThink();

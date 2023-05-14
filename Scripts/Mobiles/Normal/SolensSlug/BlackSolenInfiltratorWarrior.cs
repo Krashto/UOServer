@@ -39,12 +39,6 @@ namespace Server.Mobiles
             Karma = -3000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average, 2);
-
-        }
-
         public BlackSolenInfiltratorWarrior(Serial serial)
             : base(serial)
         {

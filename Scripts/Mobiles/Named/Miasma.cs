@@ -63,7 +63,6 @@ namespace Server.Mobiles
         public override bool GivesMLMinorArtifact => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
             AddLoot(LootPack.RandomLootItem(new System.Type[]
                 {
                     typeof(MyrmidonGloves),typeof(MyrmidonGorget),typeof(MyrmidonLegs),

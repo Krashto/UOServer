@@ -59,11 +59,7 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Regular;
 		public override FoodType FavoriteFood => FoodType.Meat;
         public override PackInstinct PackInstinct => PackInstinct.Feline;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

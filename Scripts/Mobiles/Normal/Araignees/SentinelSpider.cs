@@ -47,12 +47,6 @@ namespace Server.Mobiles
 		public override int Bones => 5;
 		public override BoneType BoneType => BoneType.Arachnide;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.Poor);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

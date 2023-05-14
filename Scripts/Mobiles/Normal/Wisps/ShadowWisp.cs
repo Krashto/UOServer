@@ -41,11 +41,6 @@ namespace Server.Mobiles
             AddItem(new LightSource());
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Bones);
-        }
-
         public ShadowWisp(Serial serial)
             : base(serial)
         {

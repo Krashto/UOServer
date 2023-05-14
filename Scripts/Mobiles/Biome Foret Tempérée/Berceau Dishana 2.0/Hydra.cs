@@ -61,12 +61,7 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Reptilien;
 
 		public override int Meat => 19;
-        //public override int TreasureMapLevel => 5;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-        }
-
+       
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -58,12 +58,6 @@ namespace Server.Mobiles
 
         public override TimeSpan ReacquireDelay => TimeSpan.FromSeconds(1.0);
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

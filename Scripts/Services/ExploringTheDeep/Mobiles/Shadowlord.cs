@@ -126,12 +126,6 @@ namespace Server.Mobiles
 
         public override Poison PoisonImmune => Poison.Lethal;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 4);
-            AddLoot(LootPack.FilthyRich);
-        }
-
         public override void CheckReflect(Mobile caster, ref bool reflect)
         {
             reflect = Wisps.Any(w => !w.Deleted && w.InRange(Location, 20));

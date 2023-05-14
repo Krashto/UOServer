@@ -41,11 +41,6 @@ namespace Server.Mobiles
         public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Regular;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);        
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

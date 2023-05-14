@@ -50,11 +50,8 @@ namespace Server.Mobiles
 		
         public override bool ReacquireOnMovement => true;
 		
-  //      public override int Hides => 20;
 		
         public override int Meat => 19;
-
-		//       public override HideType HideType => HideType.Barbed;
 
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
@@ -62,12 +59,6 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune => Poison.Lethal;
 		
         public override TribeType Tribe => TribeType.Undead;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.Gems, 4);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

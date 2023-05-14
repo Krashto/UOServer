@@ -49,9 +49,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Gems);
             AddLoot(LootPack.LootItem<BlackthornWelcomeBook>(2.0));
             AddLoot(LootPack.LootItem<PowerCrystal>());
             AddLoot(LootPack.LootItemCallback(Golem.SpawnGears, 5.0, 1, false, false));

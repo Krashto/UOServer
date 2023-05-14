@@ -88,12 +88,6 @@ namespace Server.Mobiles
             return 0x28D;
         }
 
-        public override void GenerateLoot()
-        {
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.MageryRegs, 30);
-        }
-
         public override bool OnBeforeDeath()
         {
             if (!base.OnBeforeDeath())

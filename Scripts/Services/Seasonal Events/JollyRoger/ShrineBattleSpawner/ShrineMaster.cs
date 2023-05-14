@@ -727,12 +727,6 @@ namespace Server.Engines.JollyRoger
             ColUtility.Free(list);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.LootItemCallback(CheckAbilityLootItem, 100.0, Utility.RandomMinMax(10, 25), false, true));
-        }
-
         protected Item CheckAbilityLootItem(IEntity e)
         {
             if (AbilityProfile != null && AbilityProfile.HasAbility(SpecialAbility.Heal))

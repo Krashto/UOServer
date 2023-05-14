@@ -62,13 +62,7 @@ namespace Server.Mobiles
         public override bool AreaPeaceImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => (0.8 >= Utility.RandomDouble() ? Poison.Greater : Poison.Deadly);
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -50,19 +50,12 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune => Poison.Lethal;
 		public override bool BleedImmune => true;
 
-			 public override void GenerateLoot()
+		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.LootItem<TibiaChevalNecro>(1, true));
 			
 		}
 
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.01)
-		//		c.DropItem(new AmeChevalSquelettique());
-		//}
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

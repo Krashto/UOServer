@@ -50,12 +50,6 @@ namespace Server.Mobiles
             SetAreaEffect(AreaEffect.AuraDamage);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-       //     AddLoot(LootPack.Gems, 8);
-        }
-
         public override void OnAfterTame(Mobile tamer)
         {
             Title = null;

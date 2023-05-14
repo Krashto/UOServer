@@ -64,12 +64,7 @@ namespace Server.Mobiles
         public override PackInstinct PackInstinct => PackInstinct.Arachnid;
         public override Poison PoisonImmune => Poison.Greater;
         public override Poison HitPoison => (0.8 >= Utility.RandomDouble() ? Poison.Greater : Poison.Deadly);
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.LootItem<LesserPoisonPotion>(true));
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

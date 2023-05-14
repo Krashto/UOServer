@@ -59,11 +59,6 @@ namespace Server.Mobiles
 
         public override double HitPoisonChance => 0.75;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

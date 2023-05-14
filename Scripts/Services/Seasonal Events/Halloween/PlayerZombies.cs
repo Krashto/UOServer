@@ -272,7 +272,6 @@ namespace Server.Engines.Events
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItemCallback(GenerateBodyPart, 50.0, 1, false, false));
         }
 

@@ -59,11 +59,6 @@ namespace Server.Mobiles
             Karma = -35000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 5);
-        }
-
         public override void OnThink()
         {
             base.OnThink();
@@ -642,11 +637,6 @@ namespace Server.Mobiles
                 Math.Cos( 320.0 / 180.0 * Math.PI ), Math.Sin( 320.0 / 180.0 * Math.PI ),
                 Math.Cos( 300.0 / 180.0 * Math.PI ), Math.Sin( 300.0 / 180.0 * Math.PI ),
         };
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 5);
-        }
 
         public override void Delete()
         {

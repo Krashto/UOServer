@@ -58,20 +58,8 @@ namespace Server.Mobiles
 
 		}
 
-
-
-
 		public override TribeType Tribe => TribeType.Kuya;
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Rich);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
-			AddLoot(LootPack.MedScrolls);
-			AddLoot(LootPack.MageryRegs, 15);
-			AddLoot(LootPack.Potions, Utility.RandomMinMax(1, 2));
-
-		}
-
+		
 		public KuyaArchiMage(Serial serial)
 			: base(serial)
 		{

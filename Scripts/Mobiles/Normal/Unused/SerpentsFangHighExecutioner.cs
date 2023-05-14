@@ -32,11 +32,6 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer => true;
         public override bool ShowFameTitle => false;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 6);
-        }
-
         public override void AlterMeleeDamageFrom(Mobile from, ref int damage)
         {
             if (from != null)

@@ -53,57 +53,7 @@ namespace Server.Mobiles
 
         public override bool CanRummageCorpses => true;
         public override bool InitialInnocent => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.LootItem<Bolt>(10, 20));
-            AddLoot(LootPack.LootItem<Arrow>(10, 20));
-  
-        }
-
-        private static Item DropWeapons(IEntity e)
-        {
-            var pack = new Backpack();
-
-            switch (Utility.Random(6))
-            {
-                case 0:
-                    pack.DropItem(new Broadsword());
-                    break;
-                case 1:
-                    pack.DropItem(new Cutlass());
-                    break;
-                case 2:
-                    pack.DropItem(new Katana());
-                    break;
-                case 3:
-                    pack.DropItem(new Longsword());
-                    break;
-                case 4:
-                    pack.DropItem(new Scimitar());
-                    break;
-                case 5:
-                    pack.DropItem(new VikingSword());
-                    break;
-            }
-
-            return pack;
-        }
-
-        private static Item DropRegs(IEntity e)
-        {
-            var bag = new Bag();
-
-            int count = Utility.RandomMinMax(10, 20);
-
-            for (int i = 0; i < count; ++i)
-            {
-                bag.DropItemStacked(Loot.RandomReagent());
-            }
-
-            return bag;
-        }
-
+        
         public override int GetHurtSound()
         {
             return 0x14D;

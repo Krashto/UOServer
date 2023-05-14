@@ -81,11 +81,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 1);
-        }
-
         public SabreToothedTiger(Serial serial)
             : base(serial)
         {

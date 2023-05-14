@@ -62,12 +62,8 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.MageryRegs, 10, 15);
             AddLoot(LootPack.LootItem<TribalBerry>(10.0, true));
-            AddLoot(LootPack.LootItem<Bandage>(1, 15));
             AddLoot(LootPack.LootItem<SeveredHumanEars>(75.0, 1));
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
 		}
 
         public override bool IsEnemy(Mobile m)

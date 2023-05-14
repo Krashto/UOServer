@@ -63,15 +63,7 @@ namespace Server.Mobiles
         public override bool CanRummageCorpses => true;
         public override bool AlwaysMurderer => true;
         public override int Meat => 1;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-       //AddLoot(LootPack.MedScrolls);
-            AddLoot(LootPack.MageryRegs, 6);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

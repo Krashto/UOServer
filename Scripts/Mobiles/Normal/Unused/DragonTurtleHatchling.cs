@@ -47,11 +47,6 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average, 3);
-        }
-
         public override void OnAfterTame(Mobile tamer)
         {
             if (Owners.Count == 0)

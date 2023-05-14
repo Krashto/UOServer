@@ -150,12 +150,6 @@ namespace Server.Mobiles
             base.OnAfterDelete();
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.NecroRegs, 30, 275);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

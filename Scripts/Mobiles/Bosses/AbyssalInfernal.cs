@@ -81,11 +81,6 @@ namespace Server.Mobiles
         public override int GetHurtSound() { return 0x5D6; }
         public override int GetIdleSound() { return 0x5D7; }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 4);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

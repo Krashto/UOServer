@@ -63,9 +63,6 @@ namespace Server.Mobiles
         public override int Meat => 2;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
-			AddLoot(LootPack.Potions, 2);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
 			AddLoot(LootPack.LootItem<CheveuxGeant>());
 		}
 

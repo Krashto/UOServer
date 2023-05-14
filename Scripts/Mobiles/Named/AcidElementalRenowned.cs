@@ -54,9 +54,7 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Lethal;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItem<Nightshade>(4));
-            AddLoot(LootPack.LootItem<LesserPoisonPotion>());
         }
 
         public override void Serialize(GenericWriter writer)

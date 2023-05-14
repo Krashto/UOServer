@@ -47,15 +47,7 @@ namespace Server.Mobiles
 
         public override bool AutoDispel => true;
         public override bool BleedImmune => true;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Gems, 2);
-            AddLoot(LootPack.LootItem<BronzeOre>(5));
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

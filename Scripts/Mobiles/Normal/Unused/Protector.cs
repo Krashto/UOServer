@@ -76,11 +76,6 @@ namespace Server.Mobiles
             base.GenerateLoot(false);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

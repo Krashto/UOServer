@@ -68,12 +68,6 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
 
-
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 4);
-        }
-
         public override void OnGaveMeleeAttack(Mobile defender)
         {
             base.OnGaveMeleeAttack(defender);

@@ -51,12 +51,6 @@ namespace Server.Mobiles
 		public override int Level => 5;
 		public override Biome Biome => Biome.Volcan;
 
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Meager);
-			AddLoot(LootPack.Gems);
-		}
-
 		public override void OnDeath(Container c)
 		{
 			base.OnDeath(c);

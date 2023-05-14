@@ -50,13 +50,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Toundra;
 		public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 3;
-        //public override int TreasureMapLevel => 4;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.NecroRegs, 24, 45);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

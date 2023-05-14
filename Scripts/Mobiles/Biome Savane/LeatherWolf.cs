@@ -146,11 +146,7 @@ namespace Server.Mobiles
 		public override int Bones => 5;
 		public override BoneType BoneType => BoneType.Lupus;
 		public override FoodType FavoriteFood => FoodType.Meat;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager, 2);
-        }
-
+        
         public override int GetIdleSound()
         {
             return 1545;

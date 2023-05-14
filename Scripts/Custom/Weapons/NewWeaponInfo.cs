@@ -137,6 +137,8 @@ namespace Server.Custom.Weapons
 				return "Bashing";
 			else if (weapon is BaseBow)
 				return "Bow";
+			else if (weapon is BaseLongbow)
+				return "Long Bow";
 			else if (weapon is BaseCrossbow)
 				return "Crossbow";
 			else if (weapon is BaseHeavyCrossbow)
@@ -172,13 +174,13 @@ namespace Server.Custom.Weapons
 				return typeof(Block);
 			else if (weapon is BaseBashing)
 				return typeof(CrushingBlow);
-			else if (weapon is Bow)
+			else if (weapon is BaseBow)
 				return typeof(MovingShot);
-			else if (weapon is ElvenCompositeLongbow)
+			else if (weapon is BaseLongbow)
 				return typeof(MortalStrike);
-			else if (weapon is Crossbow)
+			else if (weapon is BaseCrossbow)
 				return typeof(SerpentArrow);
-			else if (weapon is HeavyCrossbow)
+			else if (weapon is BaseHeavyCrossbow)
 				return typeof(ArmorPierce);
 			else if (weapon is Fists)
 				return typeof(ParalyzingBlow);

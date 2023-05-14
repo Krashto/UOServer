@@ -31,12 +31,6 @@ namespace Server.Mobiles
             ControlSlots = 5;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 4);
-            AddLoot(LootPack.Gems, 8);
-        }
-
         public EnragedColossus(Serial serial)
             : base(serial)
         {

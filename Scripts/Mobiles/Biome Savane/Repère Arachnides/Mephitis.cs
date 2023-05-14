@@ -59,11 +59,7 @@ namespace Server.Mobiles
         public override MonsterStatuetteType[] StatueTypes => new[] { MonsterStatuetteType.Spider };
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 4);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

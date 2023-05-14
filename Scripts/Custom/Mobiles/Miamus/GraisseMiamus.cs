@@ -56,12 +56,7 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune => Poison.Lethal;
         public override bool BleedImmune => true;
         public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish | FoodType.FruitsAndVegies | FoodType.GrainsAndHay | FoodType.Eggs;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
-        }
-
+        
 		public override bool CheckMovement(Direction d, out int newZ)
         {
             if (!base.CheckMovement(d, out newZ))

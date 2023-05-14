@@ -55,8 +55,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager, 2);
- 
             AddLoot(LootPack.LootItem<Yeast>(50.0, true));
             AddLoot(LootPack.LootItem<RegularLog>(1, 10, true));
             AddLoot(LootPack.LootItem<RegularBoard>(10, 20, true));

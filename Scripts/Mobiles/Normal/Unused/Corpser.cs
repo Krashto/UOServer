@@ -47,7 +47,6 @@ namespace Server.Mobiles
         public override bool DisallowAllMoves => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItem<MandrakeRoot>(3, true));
             AddLoot(LootPack.LootItems(new[] { new LootPackItem(typeof(RegularBoard), 1), new LootPackItem(typeof(RegularLog), 3) }, 10));
         }

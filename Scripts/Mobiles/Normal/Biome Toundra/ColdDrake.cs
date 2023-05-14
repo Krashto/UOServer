@@ -52,12 +52,6 @@ namespace Server.Mobiles
 		public override int Bones => 8;
 		public override BoneType BoneType => BoneType.Dragonique;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.MageryRegs, 3);
-        }
-
         public override bool CanAngerOnTame => true;
         public override bool ReacquireOnMovement => !Controlled;
         //public override int TreasureMapLevel => 3;

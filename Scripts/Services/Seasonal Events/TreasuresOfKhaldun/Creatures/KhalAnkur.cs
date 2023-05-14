@@ -325,12 +325,6 @@ namespace Server.Mobiles
             m_NextAbilityTime = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(200, 300));
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.Meager);
-        }
-        
         private int _120GPowerScrolls = 4;
 
         public override Item GetPowerScroll()

@@ -56,10 +56,8 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
         public override double HitPoisonChance => 0.75;
-        //public override int TreasureMapLevel => 2;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
             AddLoot(LootPack.LootItem<Nightshade>(4, true));
         }
 

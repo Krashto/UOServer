@@ -73,15 +73,10 @@ namespace Server.Mobiles
 		public override int Bones => 5;
 		public override BoneType BoneType => BoneType.Lupus;
 
-
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.LootItem<PoilsLoup>());
 		}
-		
-
-
-
 
 		public override FoodType FavoriteFood => FoodType.Meat;
         public override PackInstinct PackInstinct => PackInstinct.Canine;

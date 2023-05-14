@@ -111,17 +111,6 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.RidingSwipe);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-    //        AddLoot(LootPack.Gems, 2);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(5, 6));
-			AddLoot(LootPack.LootItem<Items.Gold>(50, 150));
-
-			//       AddLoot(LootPack.LootItem<BookOfBushido>());
-		}
-
         public override bool AlwaysMurderer => true;
         public override bool BardImmune => true;
         public override bool CanRummageCorpses => true;

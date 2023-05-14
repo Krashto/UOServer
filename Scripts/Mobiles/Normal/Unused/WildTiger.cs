@@ -86,8 +86,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 1);
-
             if (LootStage == LootStage.Death)
             {
                 switch (Utility.Random(11))

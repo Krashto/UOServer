@@ -51,7 +51,6 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Lethal;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
             AddLoot(LootPack.LootItem<DaemonBone>(25.0, 10, false, true));
         }
 

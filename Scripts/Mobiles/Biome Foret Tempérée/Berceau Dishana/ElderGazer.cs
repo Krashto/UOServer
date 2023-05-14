@@ -28,9 +28,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 35.1, 50.0);
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
-
-		//	Fame = 12500;
-        //    Karma = -12500;
         }
 
         public ElderGazer(Serial serial)
@@ -39,12 +36,6 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Foret;
-
-		//public override int TreasureMapLevel => 4;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

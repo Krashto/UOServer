@@ -38,9 +38,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Magery, 50.0, 60.0);
             SetSkill(SkillName.EvalInt, 50.0, 60.0);
             SetSkill(SkillName.Meditation, 80.0);
-
-            Fame = 25000;
-            Karma = -25000;
         }
 
         public UnfrozenMummy(Serial serial)
@@ -50,10 +47,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.Parrot);
-            AddLoot(LootPack.HighScrolls, 2);
-       //AddLoot(LootPack.MedScrolls);          
             AddLoot(LootPack.Parrot);      
         }
 

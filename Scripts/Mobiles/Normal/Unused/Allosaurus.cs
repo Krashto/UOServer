@@ -48,14 +48,6 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.Disarm);
         }
 
-        public override void GenerateLoot()
-        {
-            if (IsChampionSpawn)
-                AddLoot(LootPack.FilthyRich, 3);
-            else
-                AddLoot(LootPack.UltraRich, 3);
-        }
-
         public override int GetIdleSound()
         {
             return 0x2C4;

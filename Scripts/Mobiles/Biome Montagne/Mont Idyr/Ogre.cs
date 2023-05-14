@@ -64,9 +64,6 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
 			AddLoot(LootPack.LootItem<CheveuxGeant>());
 		}
 

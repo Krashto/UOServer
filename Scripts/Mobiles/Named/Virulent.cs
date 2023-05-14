@@ -57,7 +57,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 3);
             AddLoot(LootPack.LootItem<SpidersSilk>(8, true));
         }
 

@@ -73,23 +73,10 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
 
-
-
-		/*       public override int Scales => 12;
-		 *       
-			   public override ScaleType ScaleType => (ScaleType)Utility.Random(4);*/
-
-
 		public override FoodType FavoriteFood => FoodType.Meat;
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Utility.RandomBool() ? Poison.Deadly : Poison.Lethal;
-        //public override int TreasureMapLevel => 5;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.Gems, 12);
-        }
 
         public override int GetIdleSound()
         {

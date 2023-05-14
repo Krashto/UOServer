@@ -53,10 +53,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Foret;
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
-
-			AddLoot(LootPack.LootItem<Items.Gold>(100, 175));
-			AddLoot(LootPack.LootItem<Items.Gemme>(), (double) 5);
 			AddLoot(LootPack.LootItem<PlumesSaliva>(1, 5));
 		}
 

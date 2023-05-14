@@ -66,9 +66,6 @@ namespace Server.Mobiles
         public override bool CanFly => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Gems, Utility.Random(1, 5));
 			AddLoot(LootPack.LootItem<EcaillesWyrm>());
 		}
 

@@ -86,13 +86,6 @@ namespace Server.Mobiles
 
         public override int GetDeathSound() { return 0x316; }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.SuperBoss, 3);
-			AddLoot(LootPack.LootItem<Items.Gold>(3000,5000));
-		}
-
         private void AddAndEquip(Item item, int hue = 0)
         {
             item.Movable = false;

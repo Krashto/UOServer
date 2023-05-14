@@ -41,24 +41,8 @@ namespace Server.Mobiles
 
 			Timer.DelayCall(TimeSpan.FromSeconds(1), SpawnSatyrs);
 
-     //       Fame = 25000;
-     //       Karma = -25000;
-
             SetAreaEffect(AreaEffect.AuraOfNausea);
         }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 8);
-               }
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.16)
-		//		c.DropItem(new AmeLadyMelisande());
-		//}
 
 		public override void OnThink()
         {

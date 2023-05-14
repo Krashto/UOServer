@@ -49,9 +49,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.RareGems);
-            AddLoot(LootPack.MageryRegs, 20, 30);
             AddLoot(LootPack.LootItem<ParasiticPlant>(true));
             AddLoot(LootPack.LootItem<LuminescentFungi>(true));
         }

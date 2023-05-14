@@ -46,12 +46,6 @@ namespace Server.Mobiles
 		public override int Level => 6;
 		public override Biome Biome => Biome.Desert;
 		public override bool BleedImmune => true;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

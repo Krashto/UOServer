@@ -78,11 +78,6 @@ namespace Server.Items
             SetWeaponAbility(WeaponAbility.Disarm);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 4);
-        }
-
         public virtual void OnResourceChanged()
         {
             Hue = 0x8000 | CraftResources.GetHue(_Resource);

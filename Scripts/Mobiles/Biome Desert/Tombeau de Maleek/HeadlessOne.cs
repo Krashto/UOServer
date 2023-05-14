@@ -40,11 +40,7 @@ namespace Server.Mobiles
 
 		public override bool CanRummageCorpses => true;
         public override int Meat => 1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

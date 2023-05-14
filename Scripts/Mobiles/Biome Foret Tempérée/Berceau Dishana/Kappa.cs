@@ -49,12 +49,9 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Foret;
-		//public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.Average);
             AddLoot(LootPack.LootItem<RawFishSteak>(3, true));
             AddLoot(LootPack.RandomLootItem(new [] { typeof(Gears), typeof(Hinge), typeof(Axle) }, 50.0, 1));
         }

@@ -101,12 +101,6 @@ namespace Server.Mobiles
             return false;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Potions);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

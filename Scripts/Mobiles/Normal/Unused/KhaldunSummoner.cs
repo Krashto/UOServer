@@ -149,18 +149,6 @@ namespace Server.Mobiles
                 rm.AddItem(pack);
             }
 
-            for (int i = 0; i < 2; i++)
-            {
-                LootPack.FilthyRich.Generate(this, rm.Backpack, true, LootPack.GetLuckChanceForKiller(this));
-                LootPack.FilthyRich.Generate(this, rm.Backpack, false, LootPack.GetLuckChanceForKiller(this));
-            }
-
-			Gold gold = new Gold(Utility.Random(50, 50));
-
-			rm.AddToBackpack(gold);
-
-
-
 			Effects.PlaySound(this, Map, GetDeathSound());
             Effects.SendLocationEffect(Location, Map, 0x3709, 30, 10, 0x835, 0);
             rm.MoveToWorld(Location, Map);

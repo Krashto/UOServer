@@ -45,11 +45,7 @@ namespace Server.Mobiles
 
         public override FoodType FavoriteFood => FoodType.Fish;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -32,10 +32,6 @@ namespace Server.Mobiles
             Karma = -3000;
         }
 
-        public override void GenerateLoot()
-        {
-        }
-
         public MougGuur(Serial serial)
             : base(serial)
         {

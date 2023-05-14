@@ -94,10 +94,7 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Plaine;
 
 		public override int Meat => 5;
-      //  public override int Hides => 10;
-		/*   public override HideType HideType => HideType.Barbed;
-		   public override FoodType FavoriteFood => FoodType.Meat;*/
-
+      
 		public override int Hides => 12;
 		public override HideType HideType => HideType.Demoniaque;
 
@@ -109,19 +106,8 @@ namespace Server.Mobiles
 		public override bool CanAngerOnTame => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
             AddLoot(LootPack.LootItem<SulfurousAsh>(3, 5, true));
         }
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.06)
-		//		c.DropItem(new AmeCauchemar());
-		//}
 
 		public override int GetAngerSound()
         {

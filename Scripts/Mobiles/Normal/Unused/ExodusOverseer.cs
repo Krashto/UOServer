@@ -51,11 +51,6 @@ namespace Server.Mobiles
         public override bool IsScaryToPets => true;
         public override Poison PoisonImmune => Poison.Lethal;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
         public override int GetIdleSound()
         {
             return 0xFD;

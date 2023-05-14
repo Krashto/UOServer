@@ -82,15 +82,6 @@ namespace Server.Mobiles
 
 		}
 
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.FilthyRich);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
-			AddLoot(LootPack.MedScrolls);
-			AddLoot(LootPack.MageryRegs, 15);
-			AddLoot(LootPack.Potions, Utility.RandomMinMax(1, 2));
-		}
-
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);

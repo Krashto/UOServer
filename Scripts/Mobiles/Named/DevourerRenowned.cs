@@ -55,12 +55,7 @@ namespace Server.Mobiles
         public override Type[] SharedSAList => new Type[] { typeof(AnimatedLegsoftheInsaneTinker), typeof(StormCaller), typeof(PillarOfStrength) };
         public override Poison PoisonImmune => Poison.Lethal;
         public override int Meat => 3;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.NecroRegs, 24, 45);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -38,11 +38,6 @@ namespace Server.Mobiles
             Karma = -1500;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Gems, 1, 2);     
-        }
-
         public BlackSolenWorker(Serial serial)
             : base(serial)
         {

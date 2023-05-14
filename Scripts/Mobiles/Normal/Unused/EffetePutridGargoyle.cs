@@ -42,13 +42,7 @@ namespace Server.Mobiles
         }
 
         public override int Meat => 1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average, 2);
-       //AddLoot(LootPack.MedScrolls);
-            AddLoot(LootPack.Gems, Utility.RandomMinMax(1, 4));
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

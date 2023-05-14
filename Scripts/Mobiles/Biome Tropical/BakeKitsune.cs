@@ -46,11 +46,6 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.Rage);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-        }
 		public override int Level => 7;
 		public override Biome Biome => Biome.Tropique;
 		public override int Meat => 5;

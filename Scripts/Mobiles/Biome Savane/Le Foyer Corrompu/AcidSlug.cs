@@ -47,11 +47,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 3;
 		public override Biome Biome => Biome.Savane;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
-
+		
         public override int GetIdleSound()
         {
             return 1499;

@@ -56,7 +56,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            //AddLoot(LootPack.LootGold(60, 70));
             AddLoot(LootPack.LootItemCallback(TryDropBannana, 25.0, Utility.RandomMinMax(1, 5), false, false));
         }
 

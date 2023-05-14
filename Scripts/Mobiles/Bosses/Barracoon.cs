@@ -81,11 +81,6 @@ namespace Server.Mobiles
 
         public override bool ForceStayHome => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-        }
-
         public void SpawnRatmen(Mobile target)
         {
             Map map = Map;

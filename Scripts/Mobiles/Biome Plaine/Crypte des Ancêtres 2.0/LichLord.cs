@@ -58,22 +58,7 @@ namespace Server.Mobiles
         public override bool CanRummageCorpses => true;
         public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        //public override int TreasureMapLevel => 4;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.NecroRegs, 12, 40);
-        }
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.06)
-		//		c.DropItem(new AmeSeigneurLiche());
-		//}
-
+        
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

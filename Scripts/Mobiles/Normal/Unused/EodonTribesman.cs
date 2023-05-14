@@ -375,11 +375,6 @@ namespace Server.Mobiles
         public override bool AlwaysAttackable => Region.IsPartOf<BattleRegion>();
         public override bool ShowFameTitle => false;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-        }
-
         public TribeWarrior(Serial serial) : base(serial)
         {
         }
@@ -405,12 +400,6 @@ namespace Server.Mobiles
         public TribeShaman(EodonTribe type) : base(AIType.AI_Mage, type)
         {
             RangeFight = 7;
-        }
-
-         public override void GenerateLoot()
-        {
-            AddLoot(LootPack.MageryRegs, 1, 3);
-            AddLoot(LootPack.LootItem<Bandage>(3, 5, false, true));
         }
 
         public override void BuildBody()
@@ -716,11 +705,6 @@ namespace Server.Mobiles
                 weapon.LootType = LootType.Blessed;
                 SetWearable(weapon);
             }
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
         }
 
         public TribeChieftan(Serial serial) : base(serial)

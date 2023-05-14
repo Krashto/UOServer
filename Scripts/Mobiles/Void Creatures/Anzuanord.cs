@@ -70,8 +70,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
-       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.LootItem<DaemonBone>(5, true));
         }
 

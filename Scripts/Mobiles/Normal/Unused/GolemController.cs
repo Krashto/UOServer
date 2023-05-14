@@ -57,7 +57,6 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
             AddLoot(LootPack.LootItem<ArcaneGem>(70.0));
         }
 

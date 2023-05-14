@@ -48,8 +48,6 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune => Poison.Lethal;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.MageryRegs, 3);
             AddLoot(LootPack.LootItems(new[] { new LootPackItem(typeof(RegularBoard), 1), new LootPackItem(typeof(RegularLog), 3) }, 10));
         }
 

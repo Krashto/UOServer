@@ -531,8 +531,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.LootItem<Arrow>(100, 200, true));
             AddLoot(LootPack.LootItem<MedusaStatue>(2.5));
         }
 

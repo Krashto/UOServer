@@ -56,14 +56,7 @@ namespace Server.Mobiles
         public override int GetDeathSound() { return 0x5FE; }
 
         public override bool CanRummageCorpses => true;
-        //public override int TreasureMapLevel => 1;
         public override int Meat => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.LootItem<BolaBall>(20.0));
-        }
 
         public override void Serialize(GenericWriter writer)
         {

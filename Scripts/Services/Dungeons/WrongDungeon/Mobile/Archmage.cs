@@ -51,14 +51,8 @@ namespace Server.Mobiles
 
         public override bool AlwaysMurderer => true;
 
-        //public override int TreasureMapLevel => 2;
-
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.MageryRegs, 23);
             AddLoot(LootPack.LootItem<SeveredHumanEars>(75.0, 1));
         }
 

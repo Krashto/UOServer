@@ -131,7 +131,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Gems, 2);
             AddLoot(LootPack.LootItem<FertileDirt>(2, true));
         }
 

@@ -47,12 +47,8 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Volcan;
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.Gems, 2);
-
             AddLoot(LootPack.LootItem<Nightshade>(4, true));
             AddLoot(LootPack.LootItem<SulfurousAsh>(5, true));
-            AddLoot(LootPack.LootItem<LesserPoisonPotion>(true));
         }
 
 		public override void GenerateLootParagon()

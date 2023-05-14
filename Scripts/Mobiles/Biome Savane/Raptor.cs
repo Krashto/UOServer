@@ -76,11 +76,6 @@ namespace Server.Mobiles
 
 		public override PackInstinct PackInstinct => PackInstinct.Ostard;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-        }
-
         public override int GetIdleSound()
         {
             return 1573;

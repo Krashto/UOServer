@@ -55,22 +55,11 @@ namespace Server.Mobiles
 		public override bool Unprovokable => true;
         public override bool AreaPeaceImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        //public override int TreasureMapLevel => 1;
         public override void GenerateLoot()
         {
-			AddLoot(LootPack.LootItem<Items.Gold>(500, 1000));
-			AddLoot(LootPack.FilthyRich, 8);
-
 			AddLoot(LootPack.LootItem<Items.GemmeGlace>(), (double)5);
 		}
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.11)
-		//		c.DropItem(new AmeDemonOs());
-		//}
-
+		
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

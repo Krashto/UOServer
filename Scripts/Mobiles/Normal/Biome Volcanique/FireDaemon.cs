@@ -73,12 +73,6 @@ namespace Server.Mobiles
             m.SendLocalizedMessage(1008112); // The intense heat is damaging you!
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

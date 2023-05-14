@@ -42,13 +42,7 @@ namespace Server.Mobiles
 
         public override Poison HitPoison => Poison.Lesser;
         public override Poison PoisonImmune => Poison.Lesser;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(20, 40));
-        }
-
+        
         public override bool IsEnemy(Mobile m)
         {
             if (MyrmidexInvasionSystem.Active && MyrmidexInvasionSystem.IsAlliedWithEodonTribes(m))

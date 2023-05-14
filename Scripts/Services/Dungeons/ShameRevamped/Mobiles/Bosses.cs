@@ -129,11 +129,6 @@ namespace Server.Mobiles
             Karma = -4500;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 1);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);
@@ -214,7 +209,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 1);
             AddLoot(LootPack.LootItem<SulfurousAsh>(5, true));
         }
 
@@ -283,12 +277,6 @@ namespace Server.Mobiles
 
             Fame = 4500;
             Karma = -4500;
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 1);
-            AddLoot(LootPack.HighScrolls, Utility.RandomMinMax(3, 5));
         }
 
         public override void OnDeath(Container c)

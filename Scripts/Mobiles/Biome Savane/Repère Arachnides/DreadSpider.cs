@@ -65,11 +65,9 @@ namespace Server.Mobiles
 		public override bool CanAngerOnTame => true;
         public override Poison PoisonImmune => Poison.Lethal;
         public override Poison HitPoison => Poison.Lethal;
-        //public override int TreasureMapLevel => 3;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.LootItem<SpidersSilk>(8, true));
 			AddLoot(LootPack.LootItem<VeninTarenlune>());
 		}

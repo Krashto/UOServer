@@ -82,13 +82,6 @@ namespace Server.Mobiles
             return base.OnBeforeDeath();
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Gems, 2);
-            AddLoot(LootPack.LootItem<DullCopperOre>(5));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -48,9 +48,6 @@ namespace Server.Mobiles
         }
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 1);
-            AddLoot(LootPack.MageryRegs, Utility.RandomMinMax(1, 2));
-            AddLoot(LootPack.Gems, Utility.RandomMinMax(1, 2));
             AddLoot(LootPack.LootItem<ExecutionersCap>());
             AddLoot(LootPack.LootItem<ExecutionersCap>(33.0));
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 5.0, 1, false, false));
@@ -113,9 +110,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.MageryRegs, Utility.RandomMinMax(1, 2));
-            AddLoot(LootPack.Gems, Utility.RandomMinMax(1, 2));
             AddLoot(LootPack.LootItem<Granite>());
             AddLoot(LootPack.LootItem<Sand>());
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 15.0, 1, false, false));
@@ -192,8 +186,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
-            AddLoot(LootPack.Gems);
             AddLoot(LootPack.LootItem<Saltpeter>(100.0, Utility.RandomMinMax(1, 5), false, true));
             AddLoot(LootPack.LootItem<Potash>(100.0, Utility.RandomMinMax(1, 5), false, true));
             AddLoot(LootPack.LootItem<Charcoal>(100.0, Utility.RandomMinMax(1, 5), false, true));
@@ -269,7 +261,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItem<ExecutionersCap>());
             AddLoot(LootPack.LootItemCallback(SpawnGears, 5.0, 1, false, false));
             AddLoot(LootPack.LootItemCallback(CheckSpawnCrystal, 20.0, 1, false, false));
@@ -334,7 +325,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 1);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 20.0, 1, false, false));
         }
 
@@ -391,7 +381,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 20.0, 1, false, false));
             AddLoot(LootPack.LootItem<FertileDirt>());
             AddLoot(LootPack.LootItem<ExecutionersCap>());
@@ -446,7 +435,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 20.0, 1, false, false));
         }
 
@@ -504,7 +492,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 10.0, 1, false, false));
         }
 
@@ -580,7 +567,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 10.0, 1, false, false));
             AddLoot(LootPack.LootItem<SulfurousAsh>(5, false));
         }
@@ -646,7 +632,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 10.0, 1, false, false));
         }
 
@@ -721,7 +706,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 3);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 15.0, 1, false, false));
         }
 
@@ -861,9 +845,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.HighScrolls, Utility.RandomMinMax(5, 20));
-            AddLoot(LootPack.MageryRegs, 31);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 5, false, false));
         }
 
@@ -1001,7 +982,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 5, false, false));
         }
 
@@ -1132,7 +1112,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 3, false, false));
         }
 
@@ -1187,7 +1166,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 3, false, false));
         }
 
@@ -1325,7 +1303,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 5, false, false));
         }
 
@@ -1458,7 +1435,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 5, false, false));
             AddLoot(LootPack.LootItem<VoidCore>(20.0));
         }
@@ -1537,9 +1513,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.HighScrolls, Utility.RandomMinMax(1, 8));
-            AddLoot(LootPack.MageryRegs, Utility.RandomMinMax(7, 11));
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 33.0, 5, false, false));
         }
 
@@ -1596,7 +1569,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 1);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 10.0, 1, false, false));
         }
 
@@ -1654,8 +1626,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 1);
-            AddLoot(LootPack.FilthyRich, 1);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 10.0, 5, false, false));
         }
 
@@ -1710,8 +1680,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 1);
-            AddLoot(LootPack.FilthyRich, 1);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 10.0, 5, false, false));
         }
 
@@ -1759,7 +1727,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 1);
             AddLoot(LootPack.LootItemCallback(ClayGolem.CheckSpawnCrystal, 8.0, 1, false, false));
         }
 

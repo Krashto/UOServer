@@ -59,7 +59,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
             AddLoot(LootPack.LootItem<BlackPearl>(3, true));
             AddLoot(LootPack.LootItem<IronOre>(3, true));
         }

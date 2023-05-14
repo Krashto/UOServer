@@ -45,15 +45,6 @@ namespace Server.Mobiles
         {
         }
 
-        //public override int TreasureMapLevel => 4;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Gems);
-        }
-
         public override void OnDeath(Container c)
         {
             base.OnDeath(c);

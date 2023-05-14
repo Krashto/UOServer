@@ -62,11 +62,6 @@ namespace Server.Mobiles
                 c.DropItem(new ParagonChest(Name, 5));
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

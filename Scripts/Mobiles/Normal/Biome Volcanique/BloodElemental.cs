@@ -45,13 +45,6 @@ namespace Server.Mobiles
         {
         }
 
-        //public override int TreasureMapLevel => 5;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

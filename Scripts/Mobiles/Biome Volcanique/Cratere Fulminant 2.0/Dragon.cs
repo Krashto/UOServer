@@ -60,7 +60,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Volcan;
 		public override bool ReacquireOnMovement => !Controlled;
         public override bool AutoDispel => !Controlled;
-        //public override int TreasureMapLevel => 4;
         public override int Meat => 19;
         public override int DragonBlood => 8;
         public override int Hides => 10;
@@ -74,9 +73,7 @@ namespace Server.Mobiles
         public override bool CanFly => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 2);
 			AddLoot(LootPack.LootItem<Items.GemmeFeu>(), (double)10);
-			//     AddLoot(LootPack.Gems, 8);
 		}
 
 

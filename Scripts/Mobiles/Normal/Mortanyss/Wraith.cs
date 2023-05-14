@@ -48,12 +48,6 @@ namespace Server.Mobiles
 
         public override Poison PoisonImmune => Poison.Lethal;
 		
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.MageryRegs, 10);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

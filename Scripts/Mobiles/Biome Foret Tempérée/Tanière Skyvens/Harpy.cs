@@ -64,8 +64,6 @@ namespace Server.Mobiles
         public override void GenerateLoot()
         {
 			AddLoot(LootPack.LootItem<PlumesHarpie>());
-			AddLoot(LootPack.Meager, 2);
-			AddLoot(LootPack.RandomLootItem(new System.Type[] { typeof(SilverRing), typeof(Necklace), typeof(SilverNecklace), typeof(Collier), typeof(Collier2) }, 5.0, 1, false, true));
 		}
 
         public override int GetAttackSound()

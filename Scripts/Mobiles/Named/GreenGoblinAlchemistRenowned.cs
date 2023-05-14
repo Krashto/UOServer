@@ -55,11 +55,6 @@ namespace Server.Mobiles
         public override int GetHurtSound() { return 0x5FF; }
         public override int GetDeathSound() { return 0x5FE; }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

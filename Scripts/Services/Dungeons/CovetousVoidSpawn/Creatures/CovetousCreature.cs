@@ -163,12 +163,6 @@ namespace Server.Mobiles
             return canTeleport;
         }
 
-        public override void GenerateLoot()
-        {
-            if (!VoidSpawn)
-                AddLoot(LootPack.Rich, Math.Max(1, Stage / 2));
-        }
-
         public virtual void SetPower()
         {
             foreach (Skill skill in Skills)

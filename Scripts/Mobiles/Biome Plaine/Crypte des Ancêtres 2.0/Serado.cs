@@ -69,7 +69,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Plaine;
 		public override Type[] DecorativeList => new[] { typeof(Futon), typeof(SwampTile) };
         public override MonsterStatuetteType[] StatueTypes => new MonsterStatuetteType[] { };
-        //public override int TreasureMapLevel => 5;
         public override Poison HitPoison => Poison.Lethal;
         public override Poison PoisonImmune => Poison.Lethal;
         public override double HitPoisonChance => 0.8;
@@ -79,20 +78,8 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 4);
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Gems, 6);
             AddLoot(LootPack.BonsaiSeed);
-			AddLoot(LootPack.LootItem<Items.Gold>(2500, 5000));
 		}
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.16)
-		//		c.DropItem(new AmeSerado());
-		//}
 
 		// TODO: Hit Lightning Area
 		public override void OnDamagedBySpell(Mobile attacker)

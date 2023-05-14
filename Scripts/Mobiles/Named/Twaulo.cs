@@ -78,13 +78,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.Average);
-      //      AddLoot(LootPack.Gems);
-            AddLoot(LootPack.LootItem<Arrow>(Utility.RandomMinMax(500, 700)));
-
-			AddLoot(LootPack.LootItem<Items.Gold>(500,750));
-
 			AddLoot(LootPack.LootItem<Items.GemmeFoudre>(), (double)5);
 		}
 

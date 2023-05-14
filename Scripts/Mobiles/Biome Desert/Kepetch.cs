@@ -92,11 +92,6 @@ namespace Server.Mobiles
             return false;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average, 1);
-        }
-
         public override int GetIdleSound()
         {
             return 1545;

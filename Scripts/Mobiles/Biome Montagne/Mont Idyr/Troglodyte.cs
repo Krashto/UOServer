@@ -47,14 +47,10 @@ namespace Server.Mobiles
         }
 		public override int Level => 7;
 		public override Biome Biome => Biome.Montagne;
-		//public override int TreasureMapLevel => 2;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.LootItem<Bandage>(5, true));
             AddLoot(LootPack.LootItem<Ribs>(true));
-   
         }
 
         public override void OnDeath(Container c)

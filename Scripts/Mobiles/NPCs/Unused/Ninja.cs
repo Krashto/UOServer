@@ -58,11 +58,6 @@ namespace Server.Mobiles
         public override bool CanTeach => true;
         public override bool ClickTitle => false;
 
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(250, 300));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

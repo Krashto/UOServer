@@ -61,11 +61,6 @@ namespace Server.Mobiles
         public override int Meat => 5;
         public override FoodType FavoriteFood => FoodType.Meat;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 1);
-        }
-
         public override bool CanAngerOnTame => true;
         public override bool StatLossAfterTame => true;
 

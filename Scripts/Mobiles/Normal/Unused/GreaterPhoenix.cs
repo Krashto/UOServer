@@ -40,11 +40,6 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.GraspingClaw);
         }
 
-        public override void GenerateLoot()
-        {
-			AddLoot(LootPack.Rich);
-		}
-
         public GreaterPhoenix(Serial serial) : base(serial)
         {
         }

@@ -46,11 +46,6 @@ namespace Server.Mobiles
 
         public override TribeType Tribe => TribeType.Undead;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

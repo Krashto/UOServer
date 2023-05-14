@@ -57,9 +57,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Average, 2);
-       //AddLoot(LootPack.MedScrolls, 2);
             AddLoot(LootPack.LootItem<DaemonBone>(15, true));
         }
 

@@ -63,8 +63,6 @@ namespace Server.Mobiles
         public override PackInstinct PackInstinct => PackInstinct.Arachnid;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.Poor);
             AddLoot(LootPack.LootItem<SpidersSilk>(7));
 			AddLoot(LootPack.LootItem<VeninTarenlune>());
 		}

@@ -52,14 +52,6 @@ namespace Server.Engines.Shadowguard
         public override Poison PoisonImmune => Poison.Lethal;
         public override bool AlwaysMurderer => true;
 
-        public override void GenerateLoot()
-        {
-            if (IsLastBoss)
-            {
-                AddLoot(LootPack.SuperBoss, 7);
-            }
-        }
-
         public ShadowguardBoss(Serial serial) : base(serial)
         {
         }
@@ -1012,13 +1004,6 @@ namespace Server.Engines.Shadowguard
             };
 
             SetWeaponAbility(WeaponAbility.Dismount);
-        }
-
-        public override void GenerateLoot()
-        {
-            base.GenerateLoot();
-
-            AddLoot(LootPack.LootItem<Arrow>(25, true));
         }
 
         private DateTime _NextWeaponSwitch;

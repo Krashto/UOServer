@@ -70,12 +70,9 @@ namespace Server.Mobiles
         }
 
         public override bool GivesMLMinorArtifact => true;
-        //public override int TreasureMapLevel => 5;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.Talisman, 5);
             AddLoot(LootPack.LootItem<GrizzledBones>());
 
             AddLoot(LootPack.RandomLootItem(new[] { typeof(TombstoneOfTheDamned), typeof(GlobOfMonstreousInterredGrizzle), typeof(MonsterousInterredGrizzleMaggots), typeof(GrizzledSkullCollection) }));

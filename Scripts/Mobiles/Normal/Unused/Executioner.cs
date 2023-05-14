@@ -173,12 +173,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 8;
 		public override Biome Biome => Biome.Colline;
-		public override void GenerateLoot()
-        {
-			AddLoot(LootPack.Others, Utility.RandomMinMax(5, 6));
-
-		}
-
+		
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

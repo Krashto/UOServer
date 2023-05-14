@@ -173,11 +173,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
         public override WeaponAbility GetWeaponAbility()
         {
             BaseWeapon wep = Weapon as BaseWeapon;

@@ -41,7 +41,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
             AddLoot(LootPack.LootItem<PowerCrystal>());
             AddLoot(LootPack.LootItem<ArcaneGem>());
             AddLoot(LootPack.LootItem<ClockworkAssembly>());

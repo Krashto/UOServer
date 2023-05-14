@@ -52,12 +52,6 @@ namespace Server.Mobiles
             m.SendLocalizedMessage(1008111, false, Name); //  : The intense cold is damaging you!
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

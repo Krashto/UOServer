@@ -44,14 +44,6 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Greater;
         public override Poison HitPoison => Poison.Greater;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-           
-            AddLoot(LootPack.NecroRegs, 6, 8);
-            AddLoot(LootPack.BodyPartsAndBones);
-        }
-
         public override int GetAngerSound()
         {
             return 0x518;

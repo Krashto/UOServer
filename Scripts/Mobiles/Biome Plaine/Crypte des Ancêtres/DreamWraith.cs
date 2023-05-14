@@ -54,16 +54,7 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.LootItem<FluideAstral>(1, true));
-
 		}
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.05)
-		//		c.DropItem(new AmeSpectreAstral());
-		//}
 
 		public override int GetIdleSound()
         {

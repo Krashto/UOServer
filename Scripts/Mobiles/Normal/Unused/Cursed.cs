@@ -81,11 +81,6 @@ namespace Server.Mobiles
             return -1;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

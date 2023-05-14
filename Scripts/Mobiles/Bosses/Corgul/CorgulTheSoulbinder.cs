@@ -352,17 +352,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 6);
-            AddLoot(LootPack.LootItemCallback(RandomRecipe, 10.0, 1, false, false));
-        }
-
-        private Item RandomRecipe(IEntity e)
-        {
-            return Utility.RandomBool() ? new RecipeScroll(1101) : new RecipeScroll(1109);
-        }
-
         public override Item GetPowerScroll()
         {
             return ChampionSpawn.CreateRandomSoT(Map != null && Map.Rules == MapRules.FeluccaRules);

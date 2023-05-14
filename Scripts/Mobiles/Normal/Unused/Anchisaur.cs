@@ -48,11 +48,6 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.ParalyzingBlow);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 1);
-        }
-
         public override void OnThink()
         {
             base.OnThink();

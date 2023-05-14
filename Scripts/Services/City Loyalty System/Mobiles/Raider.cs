@@ -133,13 +133,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.LootItem<Arrow>(25, true));
-            AddLoot(LootPack.LootItem<Bolt>(25, true));
-        }
-
         public Raider(Serial serial)
             : base(serial)
         {

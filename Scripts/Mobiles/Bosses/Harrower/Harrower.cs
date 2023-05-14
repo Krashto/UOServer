@@ -133,12 +133,6 @@ namespace Server.Mobiles
             return harrower;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 2);
-            AddLoot(LootPack.Meager);
-        }
-
         public void Morph()
         {
             if (m_TrueForm)

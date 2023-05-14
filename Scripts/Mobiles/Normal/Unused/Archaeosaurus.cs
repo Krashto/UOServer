@@ -46,11 +46,6 @@ namespace Server.Mobiles
             SetWeaponAbility(WeaponAbility.TalonStrike);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 2);
-        }
-
         public override int Meat => 1;
         public override MeatType MeatType => MeatType.DinoRibs;
         public override int Hides => 7;

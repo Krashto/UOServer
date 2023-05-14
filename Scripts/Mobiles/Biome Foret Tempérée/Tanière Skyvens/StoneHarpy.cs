@@ -61,11 +61,8 @@ namespace Server.Mobiles
         public override bool CanFly => true;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
-			AddLoot(LootPack.RandomLootItem(new System.Type[] { typeof(SilverRing), typeof(Necklace), typeof(SilverNecklace), typeof(Collier), typeof(Collier2) }, 5.0, 1, false, true));
 			AddLoot(LootPack.LootItem<PlumesHarpie>());
 			AddLoot(LootPack.LootItem<OeufPierre>());
-			// AddLoot(LootPack.Gems, 2);
 		}
 
         public override int GetAttackSound()

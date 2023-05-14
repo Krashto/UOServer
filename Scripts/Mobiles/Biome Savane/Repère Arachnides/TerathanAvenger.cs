@@ -62,12 +62,6 @@ namespace Server.Mobiles
 
 		public override TribeType Tribe => TribeType.Terathan;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-            
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

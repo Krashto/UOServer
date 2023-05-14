@@ -54,7 +54,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 4);
             AddLoot(LootPack.LootItem<AbscessTail>());
         }
 

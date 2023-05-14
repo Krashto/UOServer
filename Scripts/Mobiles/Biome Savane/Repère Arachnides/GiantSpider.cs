@@ -60,7 +60,6 @@ namespace Server.Mobiles
         public override Poison HitPoison => Poison.Regular;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Poor);
             AddLoot(LootPack.LootItem<SpidersSilk>(5, true));
 			AddLoot(LootPack.LootItem<VeninAraigneeGeante>());
 		}

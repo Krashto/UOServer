@@ -52,7 +52,6 @@ namespace Server.Mobiles
 		public override void GenerateLoot()
 		{
 			AddLoot(LootPack.LootItem<PoussiereNecrotique>(1, true));
-
 		}
 
 		public override void Serialize(GenericWriter writer)

@@ -30,7 +30,6 @@ namespace Server.Items
         public override int MaxDamage => 20;
         public override float Speed => 4.00f;
 
-        public override int DefMaxRange => 10;
         public override int InitMinHits => 31;
         public override int InitMaxHits => 60;
         public override WeaponAnimation DefAnimation => WeaponAnimation.ShootBow;

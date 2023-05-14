@@ -51,11 +51,6 @@ namespace Server.Mobiles
 		public override int Meat => 1;
         public override bool CanFly => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

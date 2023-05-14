@@ -117,13 +117,6 @@ namespace Server.Mobiles
             return WeaponAbility.WhirlwindAttack;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.HighScrolls, 2);
-        }
-
         private DateTime m_NextSummon;
 
         public override void OnThink()

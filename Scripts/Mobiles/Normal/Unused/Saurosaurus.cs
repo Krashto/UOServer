@@ -50,11 +50,6 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.LifeLeech);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-        }
-
         public override bool CanAngerOnTame => true;
         public override bool StatLossAfterTame => true;
         public override int DragonBlood => 8;

@@ -40,17 +40,8 @@ namespace Server.Mobiles
             SetSkill(SkillName.EvalInt, 150.0);
             SetSkill(SkillName.Meditation, 120.0);
             SetSkill(SkillName.Spellweaving, 120.0);
-
-       //     Fame = 30000;
-       //     Karma = -30000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 8);
-
-
-        }
 		public override int Level => 18;
 		public override Biome Biome => Biome.Savane;
 		public override bool AutoDispel => true;

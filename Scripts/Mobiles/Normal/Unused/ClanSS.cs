@@ -51,13 +51,7 @@ namespace Server.Mobiles
 
 		public override int Bones => 8;
 		public override BoneType BoneType => BoneType.Regular;
-		//public override int TreasureMapLevel => 2;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-            AddLoot(LootPack.LootItem<Arrow>(Utility.RandomMinMax(50, 70)));
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

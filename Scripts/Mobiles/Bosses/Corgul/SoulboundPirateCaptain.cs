@@ -59,11 +59,6 @@ namespace Server.Mobiles
             return base.OnBeforeDeath();
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-        }
-
         public SoulboundPirateCaptain(Serial serial)
             : base(serial)
         {

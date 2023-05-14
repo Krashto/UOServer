@@ -72,13 +72,6 @@ namespace Server.Mobiles
 		public override FoodType FavoriteFood => FoodType.Meat;
         public override bool CanAngerOnTame => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
-        }
-
         public override int GetAngerSound()
         {
             if (!Controlled)

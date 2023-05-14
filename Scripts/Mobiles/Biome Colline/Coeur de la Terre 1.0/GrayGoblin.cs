@@ -58,15 +58,8 @@ namespace Server.Mobiles
         public override int GetDeathSound() { return 0x5FE; }
 
         public override bool CanRummageCorpses => true;
-        //public override int TreasureMapLevel => 1;
         public override int Meat => 1;
         public override TribeType Tribe => TribeType.GrayGoblin;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-
-        }
 
         public override void Serialize(GenericWriter writer)
         {

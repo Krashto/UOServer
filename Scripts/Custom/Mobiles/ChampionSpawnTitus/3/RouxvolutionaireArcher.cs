@@ -70,13 +70,6 @@ namespace Server.Mobiles
 			base.OnDeath(c);
 		}
 
-		public override void GenerateLoot()
-		{
-			AddLoot(LootPack.Rich);
-			AddLoot(LootPack.LootItem<Arrow>(10, 25, true));
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
-		}
-
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);

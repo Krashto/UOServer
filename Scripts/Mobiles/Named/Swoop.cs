@@ -56,9 +56,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
-            AddLoot(LootPack.HighScrolls);
-            AddLoot(LootPack.MageryRegs, 4);
             AddLoot(LootPack.Parrot, 1);
             AddLoot(LootPack.RandomLootItem(
                 new[] { typeof(AssassinChest),  typeof(AssassinArms),   typeof(DeathChest),     typeof(MyrmidonArms),       typeof(MyrmidonLegs),

@@ -51,12 +51,6 @@ namespace Server.Mobiles
         }
 
         public override int Meat => 1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-       //AddLoot(LootPack.MedScrolls);
-        }
 
         public override void OnDamagedBySpell(Mobile from)
         {

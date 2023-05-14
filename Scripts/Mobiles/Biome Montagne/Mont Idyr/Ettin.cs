@@ -54,14 +54,7 @@ namespace Server.Mobiles
 		public override int Bones => 4;
 		public override BoneType BoneType => BoneType.Geant;
 		public override bool CanRummageCorpses => true;
-        //public override int TreasureMapLevel => 1;
         public override int Meat => 4;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Potions);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

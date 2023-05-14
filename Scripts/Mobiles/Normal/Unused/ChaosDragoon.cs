@@ -181,11 +181,6 @@ namespace Server.Mobiles
             return 0x2C8;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
         public override bool OnBeforeDeath()
         {
             IMount mount = Mount;

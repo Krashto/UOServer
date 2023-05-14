@@ -36,16 +36,6 @@ namespace Server.Mobiles
             Karma = -700;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Potions, 1);
-
-            if (Utility.RandomBool())
-            {
-                AddLoot(LootPack.MageryRegs, 3);
-            }
-        }
-
         public DeathwatchBeetleHatchling(Serial serial)
             : base(serial)
         {

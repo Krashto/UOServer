@@ -75,7 +75,6 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<RawVenisonRoast>(), Utility.RandomMinMax(1, 3));
 			AddLoot(LootPack.LootItem<RawVenisonSlice>(), Utility.RandomMinMax(1, 3));
 			AddLoot(LootPack.LootItem<RawVenisonSteak>(), Utility.RandomMinMax(1, 3));
-
 		}
 		public override void Serialize(GenericWriter writer)
         {

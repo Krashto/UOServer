@@ -201,11 +201,8 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
-
             if (LootStage == LootStage.Death && Body == 772)
             {
-                AddLoot(LootPack.LootItem<GargoylesPickaxe>(0));
                 AddLoot(LootPack.LootItem<UndeadGargHorn>(0));
             }
         }

@@ -58,12 +58,6 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<SangEnvouteFeu>(), Utility.RandomMinMax(2, 4));
 		}
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

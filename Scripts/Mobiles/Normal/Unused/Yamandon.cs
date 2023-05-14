@@ -59,9 +59,6 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich);
-            AddLoot(LootPack.FilthyRich, 2);
-            AddLoot(LootPack.Gems, 6);
             AddLoot(LootPack.LootItem<Eggs>(2));
             AddLoot(LootPack.BonsaiSeed);
         }

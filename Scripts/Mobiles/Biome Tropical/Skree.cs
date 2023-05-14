@@ -54,11 +54,6 @@ namespace Server.Mobiles
 
         public override int Hides => 5;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
-
         public override int GetIdleSound()
         {
             return 1585;

@@ -69,13 +69,6 @@ namespace Server.Mobiles
         public override bool CanFly => true;
         public override bool CanAngerOnTame => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.MageryRegs, 3);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -53,12 +53,8 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.Gems);
             AddLoot(LootPack.LootItem<FertileDirt>(Utility.RandomMinMax(1, 4)));
             AddLoot(LootPack.LootItem<MandrakeRoot>());
-            AddLoot(LootPack.LootItemCallback(SpawnOre));
         }
 
         private Item SpawnOre(IEntity e)

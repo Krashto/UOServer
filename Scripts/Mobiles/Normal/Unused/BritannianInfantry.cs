@@ -79,11 +79,6 @@ namespace Server.Mobiles
         public override bool ShowFameTitle => false;
         public override bool ClickTitle => false;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 1);
-        }
-
         public override WeaponAbility GetWeaponAbility()
         {
             BaseWeapon wep = Weapon as BaseWeapon;

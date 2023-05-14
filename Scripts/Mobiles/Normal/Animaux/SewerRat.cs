@@ -54,11 +54,7 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Regular;
 
 		public override FoodType FavoriteFood => FoodType.Meat | FoodType.Eggs | FoodType.FruitsAndVegies;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

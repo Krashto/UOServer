@@ -49,13 +49,7 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer => true;
         public override bool CanRummageCorpses => true;
         public override int Meat => 1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
-
-        }
-
+        
         public override int GetIdleSound()
         {
             return 0x1AC;

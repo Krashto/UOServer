@@ -51,11 +51,6 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 3);
-        }
-
         public override int Meat => 1;
         public override int Hides => 33;
         public override FoodType FavoriteFood => FoodType.FruitsAndVegies;

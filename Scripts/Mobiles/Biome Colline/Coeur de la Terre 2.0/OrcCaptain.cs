@@ -56,9 +56,7 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager, 2);
             AddLoot(LootPack.LootItem<Yeast>(50.0));
-            
         }
 
         public override bool IsEnemy(Mobile m)

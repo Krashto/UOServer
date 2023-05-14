@@ -52,14 +52,10 @@ namespace Server.Mobiles
         {
         }
 
-        //public override int TreasureMapLevel => 3;
         public override bool Uncalmable => true;
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Gems, 2);
             AddLoot(LootPack.LootItem<OrigamiPaper>(2.0));
             AddLoot(LootPack.BonsaiSeed);
         }

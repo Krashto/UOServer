@@ -49,7 +49,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Desert;
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average, 2);
             AddLoot(LootPack.LootItem<PlainoisBone>(100.0, 3, false, true));
             AddLoot(LootPack.LootItem<FertileDirt>(100.0, Utility.RandomMinMax(1, 5), false, true));
         }

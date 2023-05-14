@@ -58,11 +58,6 @@ namespace Server.Mobiles
 
         public override bool AlwaysMurderer => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-        }
-
         public override void OnDeath(Container c)
         {
             if (Map == Map.TerMur)

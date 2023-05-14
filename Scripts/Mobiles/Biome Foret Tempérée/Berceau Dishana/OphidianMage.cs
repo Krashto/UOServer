@@ -72,15 +72,6 @@ namespace Server.Mobiles
 		public override int Bones => 6;
 		public override BoneType BoneType => BoneType.Ophidien;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-         
-           
-            AddLoot(LootPack.MageryRegs, 10);
-    //        AddLoot(LootPack.LootItem<PainSpikeScroll>(16.7));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -44,14 +44,7 @@ namespace Server.Mobiles
 		public override int Level => 9;
 		public override Biome Biome => Biome.Volcan;
 		public override int Meat => 1;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average, 2);
-            AddLoot(LootPack.Gems);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -45,13 +45,8 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<SangEnvouteFeu>(), Utility.RandomMinMax(2, 4));
 		}
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average, 2);
-        }
 		public override int Level => 4;
 		public override Biome Biome => Biome.Savane;
-		//public override int TreasureMapLevel => 3;
 
         public override int GetIdleSound()
         {

@@ -135,12 +135,6 @@ namespace Server.Mobiles
         public override bool ShowFameTitle => false;
 
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
-		}
-
         public override bool OnBeforeDeath()
         {
             IMount mount = Mount;

@@ -134,12 +134,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Poor);
-            AddLoot(LootPack.Gems);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

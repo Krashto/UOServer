@@ -47,8 +47,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
             AddLoot(LootPack.LootItem<Scimitar>());
             AddLoot(LootPack.LootItem<WoodenShield>());
             AddLoot(LootPack.RandomLootItem(new Type[] { typeof(BoneArms), typeof(BoneChest), typeof(BoneGloves), typeof(BoneLegs), typeof(BoneHelm) }));

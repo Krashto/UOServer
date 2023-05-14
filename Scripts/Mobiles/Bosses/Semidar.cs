@@ -60,12 +60,6 @@ namespace Server.Mobiles
         public override MonsterStatuetteType[] StatueTypes => new MonsterStatuetteType[] { };
         public override Poison PoisonImmune => Poison.Lethal;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 4);
-            AddLoot(LootPack.FilthyRich);
-        }
-
         public override void CheckReflect(Mobile caster, ref bool reflect)
         {
             if (!caster.Female && !caster.IsBodyMod)

@@ -34,11 +34,6 @@ namespace Server.Mobiles
             Karma = -1000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public override bool OnBeforeDeath()
         {
             if (Region.IsPartOf<Regions.CorgulRegion>())

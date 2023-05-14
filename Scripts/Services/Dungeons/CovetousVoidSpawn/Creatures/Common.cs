@@ -20,11 +20,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 60, 90);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
         public DazzledHarpy(Serial serial) : base(serial)
         {
         }
@@ -68,11 +63,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 25, 40);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
-
         public VampireMongbat(Serial serial) : base(serial)
         {
         }
@@ -111,11 +101,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 30, 40);
             SetSkill(SkillName.Tactics, 40, 60);
             SetSkill(SkillName.Wrestling, 40, 60);
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
         }
 
         public HeadlessMiner(Serial serial) : base(serial)
@@ -158,11 +143,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Magery, 50, 70);
             SetSkill(SkillName.EvalInt, 50, 70);
             SetSkill(SkillName.Meditation, 50, 100);
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager, 2);
         }
 
         public StrangeGazer(Serial serial) : base(serial)

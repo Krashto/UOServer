@@ -43,10 +43,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-        }
-
         public override bool CanBeParagon => false;
 
         public override void Serialize(GenericWriter writer)

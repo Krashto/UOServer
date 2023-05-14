@@ -14,7 +14,6 @@ namespace Server.Items
 		public override int MaxDamage => 22;
 		public override float Speed => 4.50f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 80;
 
@@ -61,7 +60,6 @@ namespace Server.Items
 		public override int MaxDamage => 22;
 		public override float Speed => 4.50f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 80;
 		[Constructable]
@@ -105,7 +103,6 @@ namespace Server.Items
 		public override int MaxDamage => 24;
 		public override float Speed => 5.00f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 100;
 
@@ -150,7 +147,6 @@ namespace Server.Items
 		public override int MaxDamage => 24;
 		public override float Speed => 5.00f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 100;
 
@@ -196,7 +192,6 @@ namespace Server.Items
 		public override int MaxDamage => 22;
 		public override float Speed => 4.50f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 80;
 		[Constructable]
@@ -241,7 +236,6 @@ namespace Server.Items
 		public override int MaxDamage => 22;
 		public override float Speed => 4.50f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 80;
 		[Constructable]
@@ -287,7 +281,6 @@ namespace Server.Items
 		public override int MaxDamage => 22;
 		public override float Speed => 4.50f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 80;
 		[Constructable]
@@ -333,7 +326,6 @@ namespace Server.Items
 		public override int MaxDamage => 22;
 		public override float Speed => 4.50f;
 
-		public override int DefMaxRange => 8;
 		public override int InitMinHits => 31;
 		public override int InitMaxHits => 80;
 		[Constructable]

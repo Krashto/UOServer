@@ -31,9 +31,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 75.1, 90.0);
             SetSkill(SkillName.Wrestling, 70.1, 90.0);
 
-           // Fame = 7500;
-           // Karma = -7500;
-
             SetWeaponAbility(WeaponAbility.ConcussionBlow);
         }
 
@@ -44,11 +41,6 @@ namespace Server.Mobiles
 		public override int Level => 12;
 		public override Biome Biome => Biome.Toundra;
 		public override Poison PoisonImmune => Poison.Regular;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

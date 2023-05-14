@@ -251,11 +251,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 2);
-        }
-
         public TRex(Serial serial)
             : base(serial)
         {
@@ -353,11 +348,6 @@ namespace Server.Mobiles
 
             _NextSpecial = DateTime.UtcNow;
             _NextBarrelThrow = DateTime.UtcNow;
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 2);
         }
 
         public override bool AutoDispel => true;
@@ -678,11 +668,6 @@ namespace Server.Mobiles
 
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
         public Trapper(Serial serial)
             : base(serial)
         {
@@ -715,11 +700,6 @@ namespace Server.Mobiles
         {
             Title = "the poacher";
             Nest = nest;
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
         }
 
         public Poacher(Serial serial)
@@ -790,13 +770,6 @@ namespace Server.Mobiles
             Karma = -12500;
 
             SetSpecialAbility(SpecialAbility.DragonBreath);
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-            AddLoot(LootPack.Gems, 2);
-       //AddLoot(LootPack.MedScrolls);
         }
 
         public VolcanoElemental(Serial serial)

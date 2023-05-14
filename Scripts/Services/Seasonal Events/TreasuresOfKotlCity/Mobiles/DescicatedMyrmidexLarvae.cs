@@ -44,11 +44,6 @@ namespace Server.Mobiles
         public override Poison HitPoison => Poison.Lesser;
         public override Poison PoisonImmune => Poison.Lesser;
 
-        public override void GenerateLoot()
-        {
-            //AddLoot(LootPack.LootGold(20, 40));
-        }
-
         public DescicatedMyrmidexLarvae(Serial serial)
             : base(serial)
         {

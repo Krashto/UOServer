@@ -51,9 +51,7 @@ namespace Server.Mobiles
 		public override BoneType BoneType => BoneType.Demoniaque;
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
 			AddLoot(LootPack.LootItem<MucusDemon>());
-			AddLoot(LootPack.Average, 2);
         }
 
         public Daemon(Serial serial)

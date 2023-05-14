@@ -75,11 +75,6 @@ namespace Server.Mobiles
             return 0x25B;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-        }
-
         public override void OnGotMeleeAttack(Mobile attacker)
         {
             if (attacker.Weapon is BaseRanged)

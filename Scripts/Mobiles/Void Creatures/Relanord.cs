@@ -57,7 +57,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.FilthyRich, 1);
             AddLoot(LootPack.LootItem<DaemonBone>(15, true));
         }
 

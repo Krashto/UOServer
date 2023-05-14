@@ -119,12 +119,6 @@ namespace Server.Mobiles
 
         public override bool AlwaysMurderer => true;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 4);
-            AddLoot(LootPack.Gems, 8);
-        }
-
         public override void FireRing()
         {
             for (int i = 0; i < m_North.Length; i += 2)

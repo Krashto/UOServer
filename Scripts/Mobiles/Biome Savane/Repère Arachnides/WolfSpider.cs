@@ -61,12 +61,8 @@ namespace Server.Mobiles
 		public override int Bones => 3;
 		public override BoneType BoneType => BoneType.Arachnide;
 
-		//public override int TreasureMapLevel => 1;
-
 		public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
-            AddLoot(LootPack.Gems, 2);
             AddLoot(LootPack.LootItem<SpidersSilk>(8, true));
         }
 

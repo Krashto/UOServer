@@ -55,15 +55,8 @@ namespace Server.Mobiles
 
 		public override bool CanRummageCorpses => true;
         public override Poison PoisonImmune => Poison.Regular;
-        //public override int TreasureMapLevel => 3;
         public override int Meat => 2;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 2);
-			AddLoot(LootPack.Potions, 2);
-			AddLoot(LootPack.Others, Utility.RandomMinMax(3, 4));
-		}
-
+       
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -35,9 +35,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 50.1, 75.0);
             SetSkill(SkillName.Tactics, 60.1, 70.0);
             SetSkill(SkillName.Wrestling, 60.1, 70.0);
-
-           // Fame = 20000;
-          //  Karma = -20000;
         }
 
         public WandererOfTheVoid(Serial serial)
@@ -48,11 +45,6 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Toundra;
 		public override bool BleedImmune => true;
         public override Poison PoisonImmune => Poison.Lethal;
-        //public override int TreasureMapLevel => 4;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

@@ -53,7 +53,6 @@ namespace Server.Mobiles
         }
 		public override int Level => 9;
 		public override Biome Biome => Biome.Foret;
-		//public override int TreasureMapLevel => 5;
         public override int Meat => 4;
         public override MeatType MeatType => MeatType.DinoRibs;
         public override int Hides => 10;
@@ -61,11 +60,7 @@ namespace Server.Mobiles
         public override bool StatLossAfterTame => true;
         public override FoodType FavoriteFood => FoodType.Meat;
         public override bool CanFly => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -60,11 +60,6 @@ namespace Server.Mobiles
         public override bool AlwaysMurderer => true;
         public override bool ShowFameTitle => false;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 4);
-        }
-
         public override void AlterSpellDamageFrom(Mobile from, ref int damage)
         {
             if (from != null)

@@ -78,12 +78,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 6;
 		public override Biome Biome => Biome.Savane;
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.Gems, Utility.Random(1, 3));
-        }
-
+		
         public override void OnDamagedBySpell(Mobile caster)
         {
             if (Map != null && caster != this && 0.25 > Utility.RandomDouble())

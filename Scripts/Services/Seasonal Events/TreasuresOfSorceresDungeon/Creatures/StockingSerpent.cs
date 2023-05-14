@@ -53,11 +53,6 @@ namespace Server.Engines.SorcerersDungeon
         public override bool AlwaysMurderer => true;
         public override Poison PoisonImmune => Poison.Lethal;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 2);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

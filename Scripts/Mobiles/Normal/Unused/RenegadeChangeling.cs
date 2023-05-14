@@ -46,13 +46,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.LootItem<Arrow>(15));
-            AddLoot(LootPack.LootItem<Bolt>(10));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

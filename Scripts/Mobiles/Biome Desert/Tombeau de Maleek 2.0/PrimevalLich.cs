@@ -82,19 +82,6 @@ namespace Server.Mobiles
         public override Type[] DecorativeList => new[] { typeof(MummifiedCorpse) };
         public override MonsterStatuetteType[] StatueTypes => new MonsterStatuetteType[] { };
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 3);
-            AddLoot(LootPack.Meager);
-        }
-
-        //public override void OnDeath(Container c)
-        //{
-        //    base.OnDeath(c);
-
-        //    c.DropItem(new PrimalLichDust());
-        //}
-
         public void ChangeCombatant()
         {
             ForceReacquire();

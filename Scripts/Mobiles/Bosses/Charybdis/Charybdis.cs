@@ -641,25 +641,6 @@ namespace Server.Mobiles
             typeof(YellowtailBarracudaSteak),
         };
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 8);
-            AddLoot(LootPack.LootItemCallback(RandomGoody, 10.0, 1, false, false));
-        }
-
-        private Item RandomGoody(IEntity e)
-        {
-            switch (Utility.Random(5))
-            {
-                default:
-                case 0: return new RecipeScroll(1102);
-                case 1: return new RecipeScroll(1103);
-                case 2: return new HungryCoconutCrabStatue();
-                case 3: return new LeurociansMempoOfFortune();
-                case 4: return new CaptainsHeartyRum();
-            }
-        }
-
         public Charydbis(Serial serial)
             : base(serial)
         {
@@ -737,11 +718,6 @@ namespace Server.Mobiles
 
             Fame = 2500;
             Karma = -2500;
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 1);
         }
 
         public override void Delete()

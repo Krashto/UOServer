@@ -36,11 +36,6 @@ namespace Server.Mobiles
             Karma = -22000;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 2);
-        }
-
         public MerchantCaptain(Serial serial)
             : base(serial)
         {

@@ -47,12 +47,6 @@ namespace Server.Mobiles
 		public override bool DeleteOnRelease => true;
 		public override bool DeleteCorpseOnDeath => true;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

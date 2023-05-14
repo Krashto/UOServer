@@ -49,13 +49,6 @@ namespace Server.Mobiles
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss);
-            AddLoot(LootPack.UltraRich);
-        }
-
-        //public override int TreasureMapLevel => 4;
         public override Poison PoisonImmune => Poison.Parasitic;
         public override Poison HitPoison => Poison.Lethal;
         public override bool TaintedLifeAura => true;

@@ -39,12 +39,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void GenerateLoot()
-        {
-			AddLoot(LootPack.Poor);
-			//     AddLoot(LootPack.Gems, Utility.RandomMinMax(1, 2));
-		}
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

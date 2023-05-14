@@ -35,14 +35,9 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Magery, 50.1, 55.0);
 			SetSkill(SkillName.Meditation, 50.1, 55.0);
 
-
 			SetSkill(SkillName.MagicResist, 35.1, 55.0);
 			SetSkill(SkillName.Tactics, 50.1, 55.0);
 			SetSkill(SkillName.Wrestling, 50.1, 55.0);
-
-
-		//	Fame = 900;
-        //    Karma = -900;
         }
 
         public GazerLarva(Serial serial)
@@ -54,7 +49,6 @@ namespace Server.Mobiles
 		public override int Meat => 1;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Poor);
             AddLoot(LootPack.LootItem<Nightshade>(2, 3));
         }
 

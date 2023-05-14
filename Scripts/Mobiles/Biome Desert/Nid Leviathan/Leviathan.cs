@@ -182,11 +182,6 @@ namespace Server.Mobiles
                 m.SendMessage("As your backpack is full, your reward for destroying the legendary leviathan has been placed at your feet.");
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 5);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

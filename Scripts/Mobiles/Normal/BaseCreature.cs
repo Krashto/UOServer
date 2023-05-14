@@ -5128,6 +5128,9 @@ namespace Server.Mobiles
 
 		public void GenerateGoldLoot()
 		{
+			if (this is Kepetch || this is DesertScorpion)
+				return;
+
 			var min = (int)(20 * Math.Exp(0.22 * Level) - 20);
 
 			if (Level >= 11)

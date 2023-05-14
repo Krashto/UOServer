@@ -44,15 +44,8 @@ namespace Server.Mobiles
 
         public override bool AutoDispel => true;
         public override bool BleedImmune => true;
-        //public override int TreasureMapLevel => 1;
         public override Poison PoisonImmune => Poison.Deadly;
         public override bool BreathImmune => true;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.LootItem<ShadowIronOre>(5));
-        }
 
         public override void AlterMeleeDamageFrom(Mobile from, ref int damage)
         {

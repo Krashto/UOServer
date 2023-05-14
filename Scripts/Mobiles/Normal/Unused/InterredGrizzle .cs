@@ -48,13 +48,6 @@ namespace Server.Mobiles
 
         public override bool CanBeParagon => false;
 
-        //public override int TreasureMapLevel => 4;
-
-        public override void GenerateLoot() // -- Need to verify
-        {
-            AddLoot(LootPack.FilthyRich);
-        }
-
         public override void OnDamage(int amount, Mobile from, bool willKill)
         {
             if (Utility.RandomDouble() < 0.04)

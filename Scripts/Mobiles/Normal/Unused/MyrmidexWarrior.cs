@@ -47,7 +47,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich, 2);
             AddLoot(LootPack.LootItemCallback(TryDropMoonstone, 0.25, Utility.RandomMinMax(1, 5), false, false));
         }
 

@@ -121,20 +121,8 @@ namespace Server.Mobiles
 		public override HideType HideType => HideType.Dragonique;
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Dragonique;
-
-		/*       public override int Hides => 22;
-			   public override HideType HideType => HideType.Horned;
-		/*       public override int Scales => 2;
-			   public override ScaleType ScaleType => ScaleType.Black;*/
 		public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish;
         public override bool CanFly => true;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.MageryRegs, 3);
-        }
 
         public override void Serialize(GenericWriter writer)
         {

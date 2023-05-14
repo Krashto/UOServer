@@ -36,12 +36,6 @@ namespace Server.Mobiles
             FieldActive = CanUseField;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Rich);
-        }
-
         public ExodusMinion(Serial serial)
             : base(serial)
         {

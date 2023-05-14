@@ -50,14 +50,7 @@ namespace Server.Mobiles
 
         public override bool AutoDispel => true;
         public override bool BleedImmune => true;
-        //public override int TreasureMapLevel => 1;
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-            AddLoot(LootPack.LootItem<ValoriteOre>(5));
-        }
-
+        
         public override void AlterMeleeDamageFrom(Mobile from, ref int damage)
         {
             if (from is BaseCreature)

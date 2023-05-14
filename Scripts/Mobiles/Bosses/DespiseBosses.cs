@@ -227,11 +227,6 @@ namespace Server.Engines.Despise
         public override bool InitialInnocent => true;
         public override BaseCreature SummonWisp => new EnsorcledWisp();
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 3);
-        }
-
         public AdrianTheGloriousLord(Serial serial) : base(serial)
         {
         }
@@ -314,11 +309,6 @@ namespace Server.Engines.Despise
         public override bool AlwaysMurderer => true;
         public override BaseCreature SummonWisp => new CorruptedWisp();
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 3);
-        }
-
         public AndrosTheDreadLord(Serial serial)
             : base(serial)
         {
@@ -384,11 +374,6 @@ namespace Server.Engines.Despise
             }
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-        }
-
         public override bool OnBeforeDeath()
         {
             Summoned = false;
@@ -396,7 +381,6 @@ namespace Server.Engines.Despise
         }
 
         public override bool InitialInnocent => true;
-        //public override bool ForceNotoriety { get { return true; } }
 
         public EnsorcledWisp(Serial serial) : base(serial)
         {
@@ -460,11 +444,6 @@ namespace Server.Engines.Despise
                 ControlTarget = ControlMaster;
                 ControlOrder = OrderType.Follow;
             }
-        }
-
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
         }
 
         public override bool OnBeforeDeath()

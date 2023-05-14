@@ -110,12 +110,6 @@ namespace Server.Mobiles
 		public override int Bones => 12;
 		public override BoneType BoneType => BoneType.Ancien;
 
-		public override void GenerateLoot()
-        {
-            AddLoot(LootPack.SuperBoss, 2);
-            AddLoot(LootPack.HighScrolls, Utility.RandomMinMax(6, 60));
-        }
-
         public override void OnDamage(int amount, Mobile from, bool willKill)
         {
             if (from != null && from != this && !m_InHere)

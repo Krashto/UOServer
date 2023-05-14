@@ -39,9 +39,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Wrestling, 60.1, 70.0);
             SetSkill(SkillName.Necromancy, 70, 120);
             SetSkill(SkillName.SpiritSpeak, 62.9, 113.7);
-
-       //     Fame = 3500;
-       //     Karma = -3500;
         }
 
         public UndeadGargoyle(Serial serial)
@@ -50,13 +47,8 @@ namespace Server.Mobiles
         }
 		public override int Level => 8;
 		public override Biome Biome => Biome.Volcan;
-		//public override int TreasureMapLevel => 1;
         public override int Meat => 1;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Average);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

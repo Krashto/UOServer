@@ -91,24 +91,6 @@ namespace Server.Mobiles
             return 0x28B;
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-       //AddLoot(LootPack.MedScrolls, 2);
-            AddLoot(LootPack.NecroRegs, 100, 200);
-			AddLoot(LootPack.BodyPartsAndBones, Utility.RandomMinMax(3, 5));
-			AddLoot(LootPack.Others, Utility.RandomMinMax(1, 2));
-			AddLoot(LootPack.LootItem<CerveauLiche>());
-		}
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.09)
-		//		c.DropItem(new AmeLicheAncienne());
-		//}
-
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

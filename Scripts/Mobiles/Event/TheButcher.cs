@@ -76,7 +76,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.UltraRich, 2);
             AddLoot(LootPack.LootItem<PumpkinCarvingKit>(20.0));
             AddLoot(LootPack.RandomLootItem(new Type[] { typeof(ObsidianSkull), typeof(CrystalSkull), typeof(JadeSkull) }, 1.0, 1)); // 1% chance
         }

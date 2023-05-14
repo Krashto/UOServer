@@ -59,9 +59,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Average);
-            AddLoot(LootPack.Meager);
-
             AddLoot(LootPack.LootItem<SulfurousAsh>(6, 10));
             AddLoot(LootPack.LootItem<MandrakeRoot>(6, 10));
             AddLoot(LootPack.LootItem<BlackPearl>(6, 10));

@@ -130,7 +130,6 @@ namespace Server.Mobiles
 			AddLoot(LootPack.LootItem<RawLambLegExp>(), Utility.RandomMinMax(0, 2));
 			AddLoot(LootPack.LootItem<RawMuttonRoast>(), Utility.RandomMinMax(0, 2));
 			AddLoot(LootPack.LootItem<RawMuttonSteak>(), Utility.RandomMinMax(0, 2));
-
 		}
 
 		public override void Serialize(GenericWriter writer)

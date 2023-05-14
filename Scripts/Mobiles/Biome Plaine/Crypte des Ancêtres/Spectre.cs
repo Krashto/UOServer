@@ -58,18 +58,8 @@ namespace Server.Mobiles
         public override Poison PoisonImmune => Poison.Lethal;
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Meager);
-            AddLoot(LootPack.MageryRegs, 10);
 			AddLoot(LootPack.LootItem<CerveauSpectre>());
 		}
-
-		//public override void OnDeath(Container c)
-		//{
-		//	base.OnDeath(c);
-
-		//	if (Utility.RandomDouble() < 0.02)
-		//		c.DropItem(new AmeSpectre());
-		//}
 
 		public override void Serialize(GenericWriter writer)
         {

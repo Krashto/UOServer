@@ -46,12 +46,6 @@ namespace Server.Mobiles
             m_NextAbilityTime = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(2, 5));
         }
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich);
-       //AddLoot(LootPack.MedScrolls, 2);
-        }
-
         public MeerMage(Serial serial)
             : base(serial)
         {

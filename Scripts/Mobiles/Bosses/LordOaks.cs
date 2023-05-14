@@ -77,11 +77,7 @@ namespace Server.Mobiles
         public override TribeType Tribe => TribeType.Fey;
 
         public override Poison PoisonImmune => Poison.Deadly;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.UltraRich, 5);
-        }
-
+        
         public void SpawnPixies(Mobile target)
         {
             Map map = Map;

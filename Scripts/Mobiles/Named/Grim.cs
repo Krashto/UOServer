@@ -54,13 +54,6 @@ namespace Server.Mobiles
         public override int Meat => 10;
         public override int Hides => 20;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.FilthyRich, 3);
-       //AddLoot(LootPack.MedScrolls);
-            AddLoot(LootPack.HighScrolls, 2);
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

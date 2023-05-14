@@ -353,7 +353,6 @@ namespace Server.Mobiles
 
         public override void GenerateLoot()
         {
-            AddLoot(LootPack.Rich);
             AddLoot(LootPack.LootItem<Corde>(5.0));
 			AddLoot(LootPack.LootItem<Items.GemmeFoudre>(), (double)5);
 		}

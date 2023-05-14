@@ -63,9 +63,8 @@ namespace Server.Mobiles
 
 		public override void GenerateLoot()
 		{
-		AddLoot(LootPack.LootItem<PlumesAigle>());
+			AddLoot(LootPack.LootItem<PlumesAigle>());
 		}
-
 
 		public override void Serialize(GenericWriter writer)
         {

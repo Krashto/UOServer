@@ -54,11 +54,7 @@ namespace Server.Mobiles
         }
 
         public override bool BleedImmune => true;
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Rich, 3);
-        }
-
+        
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
