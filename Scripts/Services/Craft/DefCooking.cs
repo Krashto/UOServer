@@ -271,7 +271,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(BeefTenderloin), "Viandes", "Filet de boeuf", 25.0, 70.0, typeof(RawBeefTenderloin), "Filet de boeuf cru", 1, "You need more Raw Raw Beef Tenderloin");
 			////AddRecipe(index, (int)CookRecipesExp.BeefTenderloin);
 			SetNeedHeat(index, true);
-			index = AddCraft(typeof(GroundBeef), "Viandes", "Boeuf haché", 25.0, 60.0, typeof(RawRibs), "Jarret de boeuf", 1, 1044253);
+			index = AddCraft(typeof(GroundBeef), "Viandes", "Boeuf haché", 25.0, 60.0, typeof(RawGroundBeef), "Jarret de boeuf", 1, 1044253);
 			////AddRecipe(index, (int)CookRecipesExp.GroundBeef);
 			#endregion
 
@@ -285,7 +285,7 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Porc
-			index = AddCraft(typeof(RawGroundPork), "Viandes", "Porc haché", 25.0, 60.0, typeof(PorkHock), "Jarret de porc", 1, "You need more Pork Hock");
+			index = AddCraft(typeof(GroundPork), "Viandes", "Porc haché", 25.0, 60.0, typeof(RawGroundPork), "Jarret de porc", 1, "You need more Pork Hock");
 			////AddRecipe(index, (int)CookRecipesExp.RawGroundPork);
 			SetNeedHeat(index, true);
 			index = AddCraft(typeof(Bacon), "Viandes", "Bacon", 25.0, 70.0, typeof(RawBacon), "Bacon cru", 1, "You need more Raw Bacon");

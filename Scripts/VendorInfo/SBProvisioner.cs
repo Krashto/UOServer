@@ -105,7 +105,7 @@ namespace Server.Mobiles
                 Add(typeof(Candle), 3);
                 Add(typeof(Torch), 4);
                 Add(typeof(Lantern), 1);
-              //  Add(typeof(Lockpick), 1);
+                Add(typeof(Lockpick), 1);
                 Add(typeof(FloppyHat), 3);
                 Add(typeof(WideBrimHat), 4);
                 Add(typeof(Cap), 5);
