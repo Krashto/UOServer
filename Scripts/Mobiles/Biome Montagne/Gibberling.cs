@@ -45,14 +45,14 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Montagne;
 		////public override int TreasureMapLevel => 1;
 
-        public override void GenerateLoot()
-        {
-            AddLoot(LootPack.Meager);
-        }
+        //public override void GenerateLoot()
+        //{
+        //    AddLoot(LootPack.Meager);
+        //}
 
         public override void Serialize(GenericWriter writer)
         {

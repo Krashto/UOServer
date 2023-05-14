@@ -3,12 +3,12 @@ using Server.Items;
 namespace Server.Mobiles
 {
     [TypeAlias("Server.Mobiles.HumanBrigand")]
-    public class Brigand : BaseCreature
+    public class BrigandMage : BaseCreature
     {
         [Constructable]
-        public Brigand()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
-        {
+        public BrigandMage()
+            : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
+		{
 
 			Race = Race.Human;
             SpeechHue = Utility.RandomDyedHue();
@@ -45,40 +45,15 @@ namespace Server.Mobiles
             //Karma = -1000;
 
             AddItem(new Boots(Utility.RandomNeutralHue()));
-            AddItem(new FancyShirt());
-            AddItem(new Bandana());
+			AddItem(new Robe(Utility.RandomNeutralHue()));
+			AddItem(new ChapeauMage());
 			AddItem(new Backpack());
 			
-
-            switch (Utility.Random(7))
-            {
-                case 0:
-                    AddItem(new Longsword());
-                    break;
-                case 1:
-                    AddItem(new Cutlass());
-                    break;
-                case 2:
-                    AddItem(new Broadsword());
-                    break;
-                case 3:
-                    AddItem(new Axe());
-                    break;
-                case 4:
-                    AddItem(new Club());
-                    break;
-                case 5:
-                    AddItem(new Dagger());
-                    break;
-                case 6:
-                    AddItem(new Spear());
-                    break;
-            }
 
             Utility.AssignRandomHair(this);
         }
 
-        public Brigand(Serial serial)
+        public BrigandMage(Serial serial)
             : base(serial)
         {
         }

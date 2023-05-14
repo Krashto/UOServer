@@ -51,7 +51,7 @@ namespace Server.Mobiles
             AddLoot(LootPack.FilthyRich);
             AddLoot(LootPack.Rich);
         }
-		public override int Level => 7;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Tropique;
 		public override int Meat => 5;
         public override int Hides => 30;

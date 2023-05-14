@@ -40,7 +40,7 @@ namespace Server.Mobiles
       //      Fame = 2500;
        //     Karma = -2500;
         }
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Tropique;
 		public GiantSerpent(Serial serial)
             : base(serial)

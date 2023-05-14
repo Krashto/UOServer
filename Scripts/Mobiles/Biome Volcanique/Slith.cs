@@ -40,7 +40,7 @@ namespace Server.Mobiles
         public Slith(Serial serial) : base(serial)
         {
         }
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Volcan;
 		public override int DragonBlood => 8;
 

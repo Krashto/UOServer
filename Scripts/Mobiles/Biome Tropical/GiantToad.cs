@@ -59,7 +59,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Tropique;
 		public override int Hides => 4;
 		public override HideType HideType => HideType.Reptilien;

@@ -55,7 +55,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		public override int Level => 7;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Montagne;
 		public override bool StatLossAfterTame => true;
         //public override int TreasureMapLevel => 5;

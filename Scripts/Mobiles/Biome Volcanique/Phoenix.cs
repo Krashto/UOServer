@@ -49,7 +49,7 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
-		public override int Level => 6;
+		public override int Level => 5;
 		public override Biome Biome => Biome.Volcan;
 		public override bool CanAngerOnTame => true;
         public override int Meat => 1;
