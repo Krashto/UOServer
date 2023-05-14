@@ -15,7 +15,7 @@ namespace Server.Items
         {
 			Weight = 1.0;
 			Hue = 2079;
-			Name = "Plume de compétences";
+			Name = "Cristal de compétences";
 		}
 
         [Constructable]
@@ -24,7 +24,7 @@ namespace Server.Items
         {
             Weight = 1.0;
 			Hue = 2079;
-			Name = "Plume de compétences";
+			Name = "Cristal de compétences";
         }
 
         public SpellsPen(Serial serial)

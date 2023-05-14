@@ -47,6 +47,8 @@ namespace Server.Mobiles
             AddItem(new Boots(Utility.RandomNeutralHue()));
             AddItem(new FancyShirt());
             AddItem(new Bandana());
+			AddItem(new Backpack());
+			AddToBackpack(new Arrow(Utility.Random(5, 15)));
 
             switch (Utility.Random(7))
             {

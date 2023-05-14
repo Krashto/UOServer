@@ -99,13 +99,13 @@ namespace Server.Mobiles
             {
                 Add(typeof(Arrow), 1);
                 Add(typeof(Bolt), 2);
-                Add(typeof(Backpack), 7);
+                Add(typeof(Backpack), 1);
                 Add(typeof(Pouch), 3);
                 Add(typeof(Bag), 3);
                 Add(typeof(Candle), 3);
                 Add(typeof(Torch), 4);
                 Add(typeof(Lantern), 1);
-                Add(typeof(Lockpick), 6);
+              //  Add(typeof(Lockpick), 1);
                 Add(typeof(FloppyHat), 3);
                 Add(typeof(WideBrimHat), 4);
                 Add(typeof(Cap), 5);

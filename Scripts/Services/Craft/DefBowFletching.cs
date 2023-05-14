@@ -115,8 +115,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (1)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (Max)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Shaft), "Munitions", "Fût (1)", 0.0, 20.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
-			index = AddCraft(typeof(Shaft), "Munitions", "Fût (Max)", 0.0, 20.0, typeof(PlainoisBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Shaft), "Munitions", "Fût (1)", 0.0, 20.0, typeof(RegularBoard), "Planche", 1, "Vous n'avez pas suffisament de planche");
+			index = AddCraft(typeof(Shaft), "Munitions", "Fût (Max)", 0.0, 20.0, typeof(RegularBoard), "Planche", 1, "Vous n'avez pas suffisament de planche");
 			SetUseAllRes(index, true);
 			index = AddCraft(typeof(Arrow), "Munitions", "Flèche (1)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
@@ -131,44 +131,44 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Arcs
-			index = AddCraft(typeof(TrainingBow), "Arcs", "Arc d'entrainement", 0.0, 50.0, typeof(PlainoisBoard), 1044041, 5, 1044351);
-			index = AddCraft(typeof(Blancorde), "Arcs", "Blancorde", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(Glaciale), "Arcs", "Glaciale", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(Bow), "Arcs", "Arc simple", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Legarc), "Arcs", "Legarc", 15.0, 45.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Tarkarc), "Arcs", "Arc court renforcit", 15.0, 45.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Ebonie), "Arcs", "Ebonie", 15.0, 45.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Mirka), "Arcs", "Mirka", 20.0, 50.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Souplecorde), "Arcs", "Souplecorde", 20.0, 50.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Sombrevent), "Arcs", "Sombrevent", 20.0, 50.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(CompositeBow), "Arcs", "Arc composite", 30.0, 60.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(MagicalShortbow), "Arcs", "Percecoeur", 30.0, 60.0, typeof(PlainoisBoard), 1044041, 15, 1044351);
-			index = AddCraft(typeof(Vigne), "Arcs", "Vigne", 30.0, 60.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Foudre), "Arcs", "Foudre", 40.0, 70.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Flamfleche), "Arcs", "Flamflèche", 40.0, 70.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Yumi), "Arcs", "Arc long", 40.0, 70.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(Mirielle), "Arcs", "Mirielle", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(ElvenCompositeLongbow), "Arcs", "Arc long composite", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 20, 1044351);
-			index = AddCraft(typeof(Barbatrine), "Arcs", "Barbatrine", 60.0, 90.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Chantefleche), "Arcs", "Chantefleche", 60.0, 90.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Sifflecrin), "Arcs", "Sifflecrin", 60.0, 90.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Maegie), "Arcs", "Maegie", 70.0, 100.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Foliere), "Arcs", "Foliere", 70.0, 100.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Composite), "Arcs", "Composite", 90.0, 110.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(Pieuse), "Arcs", "Pieuse", 90.0, 110.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(TrainingBow), "Arcs", "Arc d'entrainement", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(Blancorde), "Arcs", "Blancorde", 10.0, 40.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Glaciale), "Arcs", "Glaciale", 10.0, 40.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Bow), "Arcs", "Arc simple", 10.0, 40.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Legarc), "Arcs", "Legarc", 15.0, 45.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Tarkarc), "Arcs", "Arc court renforcit", 15.0, 45.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Ebonie), "Arcs", "Ebonie", 15.0, 45.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Mirka), "Arcs", "Mirka", 20.0, 50.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Souplecorde), "Arcs", "Souplecorde", 20.0, 50.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Sombrevent), "Arcs", "Sombrevent", 20.0, 50.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(CompositeBow), "Arcs", "Arc composite", 30.0, 60.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(MagicalShortbow), "Arcs", "Percecoeur", 30.0, 60.0, typeof(RegularBoard), 1044041, 15, 1044351);
+			index = AddCraft(typeof(Vigne), "Arcs", "Vigne", 30.0, 60.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Foudre), "Arcs", "Foudre", 40.0, 70.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Flamfleche), "Arcs", "Flamflèche", 40.0, 70.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Yumi), "Arcs", "Arc long", 40.0, 70.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Mirielle), "Arcs", "Mirielle", 50.0, 80.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(ElvenCompositeLongbow), "Arcs", "Arc long composite", 50.0, 80.0, typeof(RegularBoard), 1044041, 20, 1044351);
+			index = AddCraft(typeof(Barbatrine), "Arcs", "Barbatrine", 60.0, 90.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Chantefleche), "Arcs", "Chantefleche", 60.0, 90.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Sifflecrin), "Arcs", "Sifflecrin", 60.0, 90.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Maegie), "Arcs", "Maegie", 70.0, 100.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Foliere), "Arcs", "Foliere", 70.0, 100.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Composite), "Arcs", "Composite", 90.0, 110.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(Pieuse), "Arcs", "Pieuse", 90.0, 110.0, typeof(RegularBoard), 1044041, 8, 1044351);
 			#endregion
 			// Arbalètes	
-			index = AddCraft(typeof(Crossbow), "Arbalètes", "Arbalète simple", 10.0, 40.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Arbalete), "Arbalètes", "Arbalète", 20.0, 50.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(ArbaletteChasse), "Arbalètes", "Arbalète de chasse", 30.0, 60.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(RepeatingCrossbow), "Arbalètes", "Arbalète à répétition", 40.0, 70.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(HeavyCrossbow), "Arbalètes", "Arbalète lourde", 50.0, 80.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
-			index = AddCraft(typeof(ArbalettePistolet), "Arbalètes", "Arbalète à Main", 60.0, 90.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(ArbaletteRepetition), "Arbalètes", "Arbalète à Répétition", 70.0, 100.0, typeof(PlainoisBoard), 1044041, 8, 1044351);
-			index = AddCraft(typeof(ArbaletteLourde), "Arbalètes", "Arbalète à Méchanisme", 70.0, 100.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Percemurs), "Arbalètes", "Percemurs", 80.0, 110.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Arbavive), "Arbalètes", "Arbavive", 80.0, 110.0, typeof(PlainoisBoard), 1044041, 7, 1044351);
-			index = AddCraft(typeof(Lumitrait), "Arbalètes", "Lumitrait", 85.0, 115.0, typeof(PlainoisBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(Crossbow), "Arbalètes", "Arbalète simple", 10.0, 40.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Arbalete), "Arbalètes", "Arbalète", 20.0, 50.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(ArbaletteChasse), "Arbalètes", "Arbalète de chasse", 30.0, 60.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(RepeatingCrossbow), "Arbalètes", "Arbalète à répétition", 40.0, 70.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(HeavyCrossbow), "Arbalètes", "Arbalète lourde", 50.0, 80.0, typeof(RegularBoard), 1044041, 10, 1044351);
+			index = AddCraft(typeof(ArbalettePistolet), "Arbalètes", "Arbalète à Main", 60.0, 90.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(ArbaletteRepetition), "Arbalètes", "Arbalète à Répétition", 70.0, 100.0, typeof(RegularBoard), 1044041, 8, 1044351);
+			index = AddCraft(typeof(ArbaletteLourde), "Arbalètes", "Arbalète à Méchanisme", 70.0, 100.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Percemurs), "Arbalètes", "Percemurs", 80.0, 110.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Arbavive), "Arbalètes", "Arbavive", 80.0, 110.0, typeof(RegularBoard), 1044041, 7, 1044351);
+			index = AddCraft(typeof(Lumitrait), "Arbalètes", "Lumitrait", 85.0, 115.0, typeof(RegularBoard), 1044041, 10, 1044351);
 
 			SetSubRes(typeof(RegularBoard), "Commun");
 

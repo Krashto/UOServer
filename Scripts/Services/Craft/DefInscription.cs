@@ -263,11 +263,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(LivreSkillsWrestling), "Livre d'étude (skills)", "Wrestling", 50.0, 50.0, typeof(LivreVierge), "Livre vierge", 1, "Vous n'avez pas de livre vierge.");
 			#endregion
 
-			index = AddCraft(typeof(BlankScroll), "Autres", "Parchemin Vierge", 10.0, 20.0, typeof(Kindling), "Kindling", 10, "Vous n'avez pas assez de Petit Bois.");
-			index = AddCraft(typeof(Missive), "Autres", "Missive", 15.0, 50.0, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(GargoyleBook100), "Autres", "Livre 100 pages", 60.0, 100.0, typeof(BlankScroll), 1044377, 40, 1044378);
-			index = AddCraft(typeof(CarnetAdresse), "Autres", "Carnet d'Adresse", 25.0, 50.0, typeof(BlankScroll), 1044377, 40, 1044378);
-			index = AddCraft(typeof(Calendrier), "Autres", "Calendrier", 0.0, 25.0, typeof(BlankScroll), 1044377, 20, 1044378);
+			index = AddCraft(typeof(BlankScroll), "Autres", "Parchemin Vierge", 10.0, 20.0, typeof(Kindling), "Kindling", 5, "Vous n'avez pas assez de Petit Bois.");
+			index = AddCraft(typeof(Missive), "Autres", "Missive", 15.0, 50.0, typeof(BlankScroll), 1044377, 1, 1044378);
+			index = AddCraft(typeof(GargoyleBook100), "Autres", "Livre 100 pages", 60.0, 100.0, typeof(BlankScroll), 1044377, 15, 1044378);
+			index = AddCraft(typeof(CarnetAdresse), "Autres", "Carnet d'Adresse", 25.0, 50.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(Calendrier), "Autres", "Calendrier", 0.0, 25.0, typeof(BlankScroll), 1044377, 5, 1044378);
 
 			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 1", 50.0, 100.0, typeof(TreasureMapLevelOnePart), "Morceau de carte niveau 1", 1, "Vous n'avez pas assez de morceau de carte niveau 1");
 			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 2", 50.0, 100.0, typeof(TreasureMapLevelTwoPart), "Morceau de carte niveau 2", 1, "Vous n'avez pas assez de morceau de carte niveau 2");
