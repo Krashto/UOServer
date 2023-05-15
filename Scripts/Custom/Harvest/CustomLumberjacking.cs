@@ -58,8 +58,8 @@ namespace Server.Engines.Harvest
 				BankHeight = 2,
 
 				// Every bank holds from 10 to 20 logs
-				MinTotal = 5,
-				MaxTotal = 10,
+				MinTotal = 6,
+				MaxTotal = 9,
 
 				// A resource bank will respawn its content every 20 to 30 minutes
 				MinRespawn = TimeSpan.FromMinutes(30.0),
@@ -75,13 +75,13 @@ namespace Server.Engines.Harvest
 				MaxRange = 2,
 
 				// Five logs per harvest action
-				ConsumedPerHarvest = 2,
-				ConsumedPerFeluccaHarvest = 2,
+				ConsumedPerHarvest = 3,
+				ConsumedPerFeluccaHarvest = 3,
 
 				// The chopping effect
-				EffectActions = new int[] { 7 },
+				EffectActions = new int[] { 2 },
 				EffectSounds = new int[] { 0x13E },
-				EffectCounts = (new int[] { 5 }),
+				EffectCounts = (new int[] { 3 }),
 				EffectDelay = TimeSpan.FromSeconds(1.6),
 				EffectSoundDelay = TimeSpan.FromSeconds(0.9),
 

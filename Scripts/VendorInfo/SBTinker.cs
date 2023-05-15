@@ -28,13 +28,13 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo("1024112", typeof(Key), 8, 20, 0x1010, 0));
                 Add(new GenericBuyInfo("1024115", typeof(Key), 8, 20, 0x1013, 0));
                 Add(new GenericBuyInfo(typeof(KeyRing), 8, 20, 0x1010, 0));
-                Add(new GenericBuyInfo(typeof(Lockpick), 12, 20, 0x14FC, 0, true));
+                Add(new GenericBuyInfo(typeof(Lockpick), 5, 20, 0x14FC, 0, true));
 
 				
-			//	Add(new GenericBuyInfo(typeof(TinkersTools), 7, 20, 0x1EBC, 0));
+				Add(new GenericBuyInfo(typeof(TinkerTools), 20, 20, 0x1EB8, 0));
                 Add(new GenericBuyInfo(typeof(RegularBoard), 3, 20, 0x1BD7, 0, true));
-                Add(new GenericBuyInfo(typeof(IronIngot), 5, 16, 0x1BF2, 0, true));
-                Add(new GenericBuyInfo(typeof(SewingKit), 15, 20, 0xF9D, 0));
+                Add(new GenericBuyInfo(typeof(IronIngot), 3, 16, 0x1BF2, 0, true));
+                Add(new GenericBuyInfo(typeof(SewingKit), 20, 20, 0xF9D, 0));
 				Add(new GenericBuyInfo(typeof(LeatherSewingKit), 20, 20, 0xF9D, 0xF9D));
 				Add(new GenericBuyInfo(typeof(BoneSewingKit), 20, 20, 0xF9D, 1109));
 
@@ -46,13 +46,13 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo(typeof(Scissors), 11, 20, 0xF9F, 0));
 
           
-                Add(new GenericBuyInfo(typeof(Saw), 15, 20, 0x1034, 0));
+                Add(new GenericBuyInfo(typeof(Saw), 20, 20, 0x1034, 0));
 
                
-                Add(new GenericBuyInfo(typeof(SmithHammer), 23, 20, 0x13E3, 0));
+                Add(new GenericBuyInfo(typeof(SmithHammer), 20, 20, 0x13E3, 0));
                 // TODO: Sledgehammer
 
-                Add(new GenericBuyInfo(typeof(Shovel), 12, 20, 0xF39, 0));
+                Add(new GenericBuyInfo(typeof(Shovel), 30, 20, 0xF39, 0));
 
               
 
@@ -68,26 +68,26 @@ namespace Server.Mobiles
         {
             public InternalSellInfo()
             {
-				/*
-                Add(typeof(Drums), 10);
-                Add(typeof(Tambourine), 10);
-                Add(typeof(LapHarp), 10);
-                Add(typeof(Lute), 10);
+				
+                Add(typeof(Drums), 7);
+                Add(typeof(Tambourine), 7);
+                Add(typeof(LapHarp), 7);
+                Add(typeof(Lute), 7);
 
-                Add(typeof(Shovel), 6);
+                Add(typeof(Shovel), 5);
                 Add(typeof(SewingKit), 1);
-                Add(typeof(Scissors), 6);
-                Add(typeof(Tongs), 7);
+                Add(typeof(Scissors), 2);
+                //Add(typeof(Tongs), 7);
                 Add(typeof(Key), 1);
 
-                Add(typeof(DovetailSaw), 6);
-                Add(typeof(MouldingPlane), 6);
-                Add(typeof(Nails), 1);
-                Add(typeof(JointingPlane), 6);
-                Add(typeof(SmoothingPlane), 6);
+                //Add(typeof(DovetailSaw), 6);
+                //Add(typeof(MouldingPlane), 6);
+                //Add(typeof(Nails), 1);
+                //Add(typeof(JointingPlane), 6);
+                //Add(typeof(SmoothingPlane), 6);
                 Add(typeof(Saw), 7);
 
-                Add(typeof(Clock), 11);
+                Add(typeof(Clock), 10);
                 Add(typeof(ClockParts), 1);
                 Add(typeof(AxleGears), 1);
                 Add(typeof(Gears), 1);
@@ -97,22 +97,22 @@ namespace Server.Mobiles
                 Add(typeof(Axle), 1);
                 Add(typeof(Springs), 1);
 
-                Add(typeof(DrawKnife), 5);
-                Add(typeof(Froe), 5);
-                Add(typeof(Inshave), 5);
-                Add(typeof(Scorp), 5);
+                //Add(typeof(DrawKnife), 5);
+                //Add(typeof(Froe), 5);
+                //Add(typeof(Inshave), 5);
+                //Add(typeof(Scorp), 5);
 
-                Add(typeof(Lockpick), 6);
-                Add(typeof(TinkerTools), 3);
+                Add(typeof(Lockpick), 1);
+                Add(typeof(TinkerTools), 2);
 
-                Add(typeof(Board), 1);
-                Add(typeof(Log), 1);
+                Add(typeof(RegularBoard), 1);
+                Add(typeof(RegularLog), 1);
 
-                Add(typeof(Pickaxe), 16);
+                Add(typeof(Pickaxe), 7);
                 Add(typeof(Hammer), 3);
-                Add(typeof(SmithHammer), 11);
-                Add(typeof(ButcherKnife), 6);
-				*/
+                Add(typeof(SmithHammer), 2);
+                Add(typeof(ButcherKnife), 3);
+				
             }
         }
     }

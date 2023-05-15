@@ -59,8 +59,8 @@ namespace Server.Engines.Harvest
 			oreAndStone.BankHeight = 1;
 
 			// Every bank holds from 5 to 10 ore
-			oreAndStone.MinTotal = 3;
-			oreAndStone.MaxTotal = 7;
+			oreAndStone.MinTotal = 6;
+			oreAndStone.MaxTotal = 9;
 
 			// A resource bank will respawn its content every 10 to 20 minutes
 			oreAndStone.MinRespawn = TimeSpan.FromMinutes(30.0);
@@ -76,13 +76,13 @@ namespace Server.Engines.Harvest
 			oreAndStone.MaxRange = 2;
 
 			// One ore per harvest action
-			oreAndStone.ConsumedPerHarvest = 1;
-			oreAndStone.ConsumedPerFeluccaHarvest = 2;
+			oreAndStone.ConsumedPerHarvest = 3;
+			oreAndStone.ConsumedPerFeluccaHarvest = 3;
 
 			// The digging effect
-			oreAndStone.EffectActions = new int[] { 3 };
+			oreAndStone.EffectActions = new int[] { 2 };
 			oreAndStone.EffectSounds = new int[] { 0x125, 0x126 };
-			oreAndStone.EffectCounts = new int[] { 5 };
+			oreAndStone.EffectCounts = new int[] { 3 };
 			oreAndStone.EffectDelay = TimeSpan.FromSeconds(1.6);
 			oreAndStone.EffectSoundDelay = TimeSpan.FromSeconds(0.9);
 

@@ -60,8 +60,8 @@ namespace Server.Engines.Harvest
 				MaxRange = 4,
 
                 // One fish per harvest action
-                ConsumedPerHarvest = 1,
-                ConsumedPerFeluccaHarvest = 1,
+                ConsumedPerHarvest = 2,
+                ConsumedPerFeluccaHarvest = 2,
 
                 // The fishing
                 EffectActions = new int[] { 6 },
