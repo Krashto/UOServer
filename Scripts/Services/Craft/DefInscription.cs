@@ -265,11 +265,7 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(BlankScroll), "Autres", "Parchemin Vierge", 10.0, 20.0, typeof(Kindling), "Kindling", 5, "Vous n'avez pas assez de Petit Bois.");
 			index = AddCraft(typeof(Missive), "Autres", "Missive", 15.0, 50.0, typeof(BlankScroll), 1044377, 1, 1044378);
-			index = AddCraft(typeof(TanBook), "Autres", "Livre de 20 pages (Beige)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(BlueBook), "Autres", "Livre de 20 pages (Bleu)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(RedBook), "Autres", "Livre de 20 pages (Rouge)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(BrownBook), "Autres", "Livre de 20 pages (Brun)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
-			index = AddCraft(typeof(GargoyleBook100), "Autres", "Livre 100 pages", 60.0, 100.0, typeof(BlankScroll), 1044377, 15, 1044378);
+			
 			index = AddCraft(typeof(CarnetAdresse), "Autres", "Carnet d'Adresse", 25.0, 50.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			index = AddCraft(typeof(Calendrier), "Autres", "Calendrier", 0.0, 25.0, typeof(BlankScroll), 1044377, 5, 1044378);
 
@@ -281,6 +277,41 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 6", 60.0, 80.0, typeof(TreasureMapLevelSixPart), "Morceau de carte niveau 6", 5, "Vous n'avez pas assez de morceau de carte niveau 6");
 			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 7", 80.0, 100.0, typeof(TreasureMapLevelSevenPart), "Morceau de carte niveau 7", 5, "Vous n'avez pas assez de morceau de carte niveau 7");
 
+			#region Livres
+			index = AddCraft(typeof(TanBook), "Livres", "Livre de 20 pages (Beige)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(TanBookTrente), "Livres", "Livre de 30 pages (Beige)", 10.0, 30.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(TanBookQuarante), "Livres", "Livre de 40 pages (Beige)", 20.0, 50.0, typeof(BlankScroll), 1044377, 15, 1044378);
+			index = AddCraft(typeof(TanBookCinquante), "Livres", "Livre de 50 pages (Beige)", 30.0, 60.0, typeof(BlankScroll), 1044377, 20, 1044378);
+			index = AddCraft(typeof(TanBookSoixante), "Livres", "Livre de 60 pages (Beige)", 40.0, 70.0, typeof(BlankScroll), 1044377, 25, 1044378);
+			index = AddCraft(typeof(TanBookSoixanteQuinze), "Livres", "Livre de 75 pages (Beige)", 50.0, 80.0, typeof(BlankScroll), 1044377, 30, 1044378);
+
+
+			index = AddCraft(typeof(BlueBook), "Livres", "Livre de 20 pages (Bleu)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(BlueBookTrente), "Livres", "Livre de 30 pages (Bleu)", 10.0, 30.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(BlueBookQuarante), "Livres", "Livre de 40 pages (Bleu)", 20.0, 50.0, typeof(BlankScroll), 1044377, 15, 1044378);
+			index = AddCraft(typeof(BlueBookCinquante), "Livres", "Livre de 50 pages (Bleu)", 30.0, 60.0, typeof(BlankScroll), 1044377, 20, 1044378);
+			index = AddCraft(typeof(BlueBookSoixante), "Livres", "Livre de 60 pages (Bleu)", 40.0, 70.0, typeof(BlankScroll), 1044377, 25, 1044378);
+			index = AddCraft(typeof(BlueBookSoixanteQuinze), "Livres", "Livre de 75 pages (Bleu)", 50.0, 80.0, typeof(BlankScroll), 1044377, 30, 1044378);
+
+			index = AddCraft(typeof(RedBook), "Livres", "Livre de 20 pages (Rouge)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(RedBookTrente), "Livres", "Livre de 30 pages (Rouge)", 10.0, 30.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(RedBookQuarante), "Livres", "Livre de 40 pages (Rouge)", 20.0, 50.0, typeof(BlankScroll), 1044377, 15, 1044378);
+			index = AddCraft(typeof(RedBookCinquante), "Livres", "Livre de 50 pages (Rouge)", 30.0, 60.0, typeof(BlankScroll), 1044377, 20, 1044378);
+			index = AddCraft(typeof(RedBookSoixante), "Livres", "Livre de 60 pages (Rouge)", 40.0, 70.0, typeof(BlankScroll), 1044377, 25, 1044378);
+			index = AddCraft(typeof(RedBookSoixanteQuinze), "Livres", "Livre de 75 pages (Rouge)", 50.0, 80.0, typeof(BlankScroll), 1044377, 30, 1044378);
+
+
+			index = AddCraft(typeof(BrownBook), "Livres", "Livre de 20 pages (Brun)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(BrownBookTrente), "Livres", "Livre de 30 pages (Brun)", 10.0, 30.0, typeof(BlankScroll), 1044377, 10, 1044378);
+			index = AddCraft(typeof(BrownBookQuarante), "Livres", "Livre de 40 pages (Brun)", 20.0, 50.0, typeof(BlankScroll), 1044377, 15, 1044378);
+			index = AddCraft(typeof(BrownBookCinquante), "Livres", "Livre de 50 pages (Brun)", 30.0, 60.0, typeof(BlankScroll), 1044377, 20, 1044378);
+			index = AddCraft(typeof(BrownBookSoixante), "Livres", "Livre de 60 pages (Brun)", 40.0, 70.0, typeof(BlankScroll), 1044377, 25, 1044378);
+			index = AddCraft(typeof(BrownBookSoixanteQuinze), "Livres", "Livre de 75 pages (Brun)", 50.0, 80.0, typeof(BlankScroll), 1044377, 30, 1044378);
+
+			index = AddCraft(typeof(GargoyleBook100), "Livres", "Livre de 100 pages", 60.0, 100.0, typeof(BlankScroll), 1044377, 40, 1044378);
+
+
+			#endregion
 			// Set the overridable material
 			SetSubRes(typeof(PlainoisLeather), "Plainois");
 
