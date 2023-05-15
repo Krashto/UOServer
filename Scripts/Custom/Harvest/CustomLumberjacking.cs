@@ -8,7 +8,7 @@ namespace Server.Engines.Harvest
 	public class CustomLumberjacking : HarvestSystem
 	{
 		private static CustomLumberjacking m_GeneralSystem { get; set; }
-		
+
 		public static HarvestSystem GetSystem(Item item)
 		{
 			Map map;
@@ -59,7 +59,7 @@ namespace Server.Engines.Harvest
 
 				// Every bank holds from 10 to 20 logs
 				MinTotal = 6,
-				MaxTotal = 9,
+				MaxTotal = 12,
 
 				// A resource bank will respawn its content every 20 to 30 minutes
 				MinRespawn = TimeSpan.FromMinutes(30.0),
@@ -79,7 +79,7 @@ namespace Server.Engines.Harvest
 				ConsumedPerFeluccaHarvest = 3,
 
 				// The chopping effect
-				EffectActions = new int[] { 13 },
+				EffectActions = new int[] { 7 },
 				EffectSounds = new int[] { 0x13E },
 				EffectCounts = (new int[] { 3 }),
 				EffectDelay = TimeSpan.FromSeconds(1.6),
@@ -94,17 +94,17 @@ namespace Server.Engines.Harvest
 
 			res = new HarvestResource[]
 			{
-				new HarvestResource(00.0, 00.0, 100.0, "Normal",		typeof(RegularLog)),
-				new HarvestResource(00.0, 00.0, 100.0, "Plainois",		typeof(PlainoisLog)),
-				new HarvestResource(20.0, 20.0, 100.0, "Forestier",		typeof(ForestierLog)),
-				new HarvestResource(20.0, 20.0, 100.0, "Collinois",		typeof(CollinoisLog)),
-				new HarvestResource(40.0, 40.0, 100.0, "Désertique",	typeof(DesertiqueLog)),
-				new HarvestResource(40.0, 40.0, 100.0, "Savanois",		typeof(SavanoisLog)),
-				new HarvestResource(60.0, 60.0, 100.0, "Montagnard",	typeof(MontagnardLog)),
-				new HarvestResource(60.0, 60.0, 100.0, "Volcanique",	typeof(VolcaniqueLog)),
-				new HarvestResource(80.0, 80.0, 100.0, "Tropicaux",		typeof(TropicauxLog)),
-				new HarvestResource(80.0, 80.0, 100.0, "Toundrois",		typeof(ToundroisLog)),
-				new HarvestResource(90.0, 90.0, 100.0, "Ancien",		typeof(AncienLog)),
+				new HarvestResource(00.0, 00.0, 100.0, "Normal",        typeof(RegularLog)),
+				new HarvestResource(00.0, 00.0, 100.0, "Plainois",      typeof(PlainoisLog)),
+				new HarvestResource(20.0, 20.0, 100.0, "Forestier",     typeof(ForestierLog)),
+				new HarvestResource(20.0, 20.0, 100.0, "Collinois",     typeof(CollinoisLog)),
+				new HarvestResource(40.0, 40.0, 100.0, "Désertique",    typeof(DesertiqueLog)),
+				new HarvestResource(40.0, 40.0, 100.0, "Savanois",      typeof(SavanoisLog)),
+				new HarvestResource(60.0, 60.0, 100.0, "Montagnard",    typeof(MontagnardLog)),
+				new HarvestResource(60.0, 60.0, 100.0, "Volcanique",    typeof(VolcaniqueLog)),
+				new HarvestResource(80.0, 80.0, 100.0, "Tropicaux",     typeof(TropicauxLog)),
+				new HarvestResource(80.0, 80.0, 100.0, "Toundrois",     typeof(ToundroisLog)),
+				new HarvestResource(90.0, 90.0, 100.0, "Ancien",        typeof(AncienLog)),
 			};
 
 			veins = new HarvestVein[]
