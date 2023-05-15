@@ -64,7 +64,7 @@ namespace Server.Engines.Harvest
                 ConsumedPerFeluccaHarvest = 2,
 
                 // The fishing
-                EffectActions = new int[] { 6 },
+                EffectActions = new int[] { 12 },
                 EffectSounds = new int[0],
                 EffectCounts = new int[] { 1 },
                 EffectDelay = TimeSpan.Zero,

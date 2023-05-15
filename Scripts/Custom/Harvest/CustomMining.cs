@@ -80,7 +80,7 @@ namespace Server.Engines.Harvest
 			oreAndStone.ConsumedPerFeluccaHarvest = 3;
 
 			// The digging effect
-			oreAndStone.EffectActions = new int[] { 2 };
+			oreAndStone.EffectActions = new int[] { 11 };
 			oreAndStone.EffectSounds = new int[] { 0x125, 0x126 };
 			oreAndStone.EffectCounts = new int[] { 3 };
 			oreAndStone.EffectDelay = TimeSpan.FromSeconds(1.6);

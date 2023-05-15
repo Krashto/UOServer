@@ -32,8 +32,8 @@ namespace Server.Mobiles
 
 				
 				Add(new GenericBuyInfo(typeof(TinkerTools), 20, 20, 0x1EB8, 0));
-                Add(new GenericBuyInfo(typeof(RegularBoard), 3, 20, 0x1BD7, 0, true));
-                Add(new GenericBuyInfo(typeof(IronIngot), 3, 16, 0x1BF2, 0, true));
+                Add(new GenericBuyInfo(typeof(RegularBoard), 3, 50, 0x1BD7, 0, true));
+                Add(new GenericBuyInfo(typeof(IronIngot), 3, 50, 0x1BF2, 0, true));
                 Add(new GenericBuyInfo(typeof(SewingKit), 20, 20, 0xF9D, 0));
 				Add(new GenericBuyInfo(typeof(LeatherSewingKit), 20, 20, 0xF9D, 0xF9D));
 				Add(new GenericBuyInfo(typeof(BoneSewingKit), 20, 20, 0xF9D, 1109));
