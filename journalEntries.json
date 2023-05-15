@@ -1,5 +1,29 @@
 [
   {
+    "Id": "7e1185fb-dc8f-4dfe-b29c-9efc7a20641a",
+    "Visible": false,
+    "WriterName": "Nimue",
+    "Title": "IMPORTANT - Les Compagnies - IMPORTANT",
+    "Content": "Oyez Oyez!  Toutes les nouvelles compagnies sont invitées à communiquer avec Appoline du Lys afin d'officialiser leur participation à la prochaine fournée des Contrats offerts par Colognan.\n\r\n\rCes Compagnies seront rencontrées au courant de la semaine:  Compagnie Les Gardiens du commerce, Compagnie Les Insatiables, Compagnie des Braves, Compagnie d'expédition Marchande de Casterral, Compagnie Vicem alteram, Compagnie SAGA\n\r\n\rSi vous aviez communiqué avec la Conseillère du Lys mais que le nom de votre compagnie ne figure pas sur cette liste, veuillez communiquer avec celle-ci dès que possible afin qu'elle puisse rectifier cette erreur.\n\r\n\rÉgalement et pour finir, les renseignements pouvant mener à la découverte de l’identité du Chef de la ''brillante'' compagnie des Dindons empaillés pourraient se voir chaudement récompensés par la conseillère elle-même. Soyez vigilents.",
+    "DateCreated": "2023-05-14T17:50:39.1295238-04:00"
+  },
+  {
+    "Id": "07981b75-ba03-4380-8dcd-f0c9c06d90d0",
+    "Visible": false,
+    "WriterName": "Nimue",
+    "Title": "Recrutement des Compagnies",
+    "Content": "Oyez Oyez!  Toutes les nouvelles compagnies sont invitées à communiquer avec Appoline du Lys afin d'officialiser leur participation à la prochaine fournée des Contrats offerts par Colognan qui aura lieu très prochainement.\n\r\n\rCes Compagnies seront rencontrées cette semaine:  Compagnie Les Gardiens du commerce, Compagnie Les Insatiables, Compagnie des Braves, Compagnie d'expédition Marchande de Casterral, Compagnie Vicem alteram, Compagnie SAGA.\n\r\n\rSi vous aviez communiqué avec la Conseillère du Lys mais que le nom de votre compagnie ne figure pas sur cette liste, veuillez communiquer avec celle-ci dès que possible afin qu'elle puisse rectifier cette erreur.\n\r\n\rÉgalement et pour finir, les informateurs pouvant mener à la découverte de l’identité du Chef de la ''brillante'' compagnie des Dindons empaillés pourraient se voir chaudement récompensés par la conseillère elle-même. Ouvrez vos yeux et vo",
+    "DateCreated": "2023-05-14T17:46:58.6087154-04:00"
+  },
+  {
+    "Id": "058b10b1-0d5f-4d41-8284-e376b92f16c4",
+    "Visible": false,
+    "WriterName": "Nimue",
+    "Title": "Recrutement des Compagnies",
+    "Content": "Oyez Oyez!  Toutes les nouvelles compagnies sont invitées à communiquer avec Appoline du Lys afin d'officialiser leur participation à la prochaine fournée des Contrats offerts par Colognan qui aura lieu prochainement.\n\r\n\rCes compagnies seront rencontrées cette semaine:                                                   -Compagnie Les Gardiens du commerce                 -Compagnie Les Insatiables                         -Compagnie des Braves                \n\r\n\r-Compagnie d'expédition Marchande de Casterral          -Compagnie Vicem alteram                           -Compagnie SAGA\n\r\n\rSi vous aviez communiqué avec la Conseillère du Lys mais que le nom de votre compagnie ne figure pas sur cette liste, veuillez communiquer avec celle-ci dès que possible afin qu'elle puisse rectifier cette erreur.",
+    "DateCreated": "2023-05-14T17:41:43.2376339-04:00"
+  },
+  {
     "Id": "0d72955e-6826-4409-bd37-0123d049a26e",
     "Visible": false,
     "WriterName": "Nucca",
@@ -150,5 +174,13 @@
     "Title": "4 entrée",
     "Content": "Contenu de la première entrée",
     "DateCreated": "2023-03-23T12:34:56.789Z"
+  },
+  {
+    "Id": "644bd8a1-4c31-4737-b8af-974cd8db99a3",
+    "Visible": true,
+    "WriterName": "Nimue",
+    "Title": "IMPORTANT- Les Compagnie - IMPORTANT",
+    "Content": "Oyez Oyez!  Toutes les nouvelles compagnies sont invitées à communiquer avec Appoline du Lys afin d'officialiser leur participation à la prochaine fournée des Contrats offerts par Colognan. \n\r\n\rCes Compagnies seront rencontrées au courant de la semaine:Compagnie Les Gardiens du commerce, Compagnie Les Insatiables, Compagnie des Braves, Compagnie d'expédition Marchande de Casterral, Compagnie Vicem alteram, Compagnie SAGA\n\r\n\rSi vous aviez communiqué avec la Conseillère du Lys mais que le nom de votre compagnie ne figure pas sur cette liste, veuillez communiquer avec celle-ci dès que possible afin qu'elle puisse rectifier cette erreur.\n\r\n\rÉgalement et pour finir, les renseignements pouvant mener à la découverte de l’identité du Chef de la ''brillante'' compagnie des Dindons empaillés pourraient se voir chaudement récompensés par la conseillère elle-même. Soyez vigilent.",
+    "DateCreated": "2023-05-14T17:58:33.255579-04:00"
   }
 ]

@@ -265,6 +265,10 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(BlankScroll), "Autres", "Parchemin Vierge", 10.0, 20.0, typeof(Kindling), "Kindling", 5, "Vous n'avez pas assez de Petit Bois.");
 			index = AddCraft(typeof(Missive), "Autres", "Missive", 15.0, 50.0, typeof(BlankScroll), 1044377, 1, 1044378);
+			index = AddCraft(typeof(TanBook), "Autres", "Livre de 20 pages (Beige)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(BlueBook), "Autres", "Livre de 20 pages (Bleu)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(RedBook), "Autres", "Livre de 20 pages (Rouge)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
+			index = AddCraft(typeof(BrownBook), "Autres", "Livre de 20 pages (Brun)", 10.0, 30.0, typeof(BlankScroll), 1044377, 5, 1044378);
 			index = AddCraft(typeof(GargoyleBook100), "Autres", "Livre 100 pages", 60.0, 100.0, typeof(BlankScroll), 1044377, 15, 1044378);
 			index = AddCraft(typeof(CarnetAdresse), "Autres", "Carnet d'Adresse", 25.0, 50.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			index = AddCraft(typeof(Calendrier), "Autres", "Calendrier", 0.0, 25.0, typeof(BlankScroll), 1044377, 5, 1044378);
