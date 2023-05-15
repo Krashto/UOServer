@@ -273,13 +273,13 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CarnetAdresse), "Autres", "Carnet d'Adresse", 25.0, 50.0, typeof(BlankScroll), 1044377, 10, 1044378);
 			index = AddCraft(typeof(Calendrier), "Autres", "Calendrier", 0.0, 25.0, typeof(BlankScroll), 1044377, 5, 1044378);
 
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 1", 50.0, 100.0, typeof(TreasureMapLevelOnePart), "Morceau de carte niveau 1", 1, "Vous n'avez pas assez de morceau de carte niveau 1");
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 2", 50.0, 100.0, typeof(TreasureMapLevelTwoPart), "Morceau de carte niveau 2", 1, "Vous n'avez pas assez de morceau de carte niveau 2");
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 3", 50.0, 100.0, typeof(TreasureMapLevelThreePart), "Morceau de carte niveau 3", 1, "Vous n'avez pas assez de morceau de carte niveau 3");
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 4", 50.0, 100.0, typeof(TreasureMapLevelFourPart), "Morceau de carte niveau 4", 1, "Vous n'avez pas assez de morceau de carte niveau 4");
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 5", 50.0, 100.0, typeof(TreasureMapLevelFivePart), "Morceau de carte niveau 5", 1, "Vous n'avez pas assez de morceau de carte niveau 5");
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 6", 50.0, 100.0, typeof(TreasureMapLevelSixPart), "Morceau de carte niveau 6", 1, "Vous n'avez pas assez de morceau de carte niveau 6");
-			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 7", 50.0, 100.0, typeof(TreasureMapLevelSevenPart), "Morceau de carte niveau 7", 1, "Vous n'avez pas assez de morceau de carte niveau 7");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 1", 10.0, 30.0, typeof(TreasureMapLevelOnePart), "Morceau de carte niveau 1", 5, "Vous n'avez pas assez de morceau de carte niveau 1");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 2", 20.0, 40.0, typeof(TreasureMapLevelTwoPart), "Morceau de carte niveau 2", 5, "Vous n'avez pas assez de morceau de carte niveau 2");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 3", 30.0, 50.0, typeof(TreasureMapLevelThreePart), "Morceau de carte niveau 3", 5, "Vous n'avez pas assez de morceau de carte niveau 3");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 4", 40.0, 60.0, typeof(TreasureMapLevelFourPart), "Morceau de carte niveau 4", 5, "Vous n'avez pas assez de morceau de carte niveau 4");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 5", 50.0, 70.0, typeof(TreasureMapLevelFivePart), "Morceau de carte niveau 5", 5, "Vous n'avez pas assez de morceau de carte niveau 5");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 6", 60.0, 80.0, typeof(TreasureMapLevelSixPart), "Morceau de carte niveau 6", 5, "Vous n'avez pas assez de morceau de carte niveau 6");
+			index = AddCraft(typeof(TreasureMap), "Carte aux trésors", "Niveau 7", 80.0, 100.0, typeof(TreasureMapLevelSevenPart), "Morceau de carte niveau 7", 5, "Vous n'avez pas assez de morceau de carte niveau 7");
 
 			// Set the overridable material
 			SetSubRes(typeof(PlainoisLeather), "Plainois");

@@ -104,14 +104,18 @@ namespace Server.Items
         public RawDinoRibs()
             : this(1)
         {
-        }
+			Stackable = true;
+			
+			Name = "Viande Avariée";
+		}
 
         [Constructable]
         public RawDinoRibs(int amount)
-            : base(0xA425)
+            : base(0x9F1)
         {
             Stackable = true;
             Amount = amount;
+			Name = "Viande Avariée";
         }
 
         public RawDinoRibs(Serial serial)
