@@ -1,6 +1,7 @@
 #region References
 using Server.Accounting;
 using Server.Commands;
+using Server.Custom.Services;
 using Server.Gumps;
 using Server.Misc;
 using Server.Mobiles;
@@ -11,6 +12,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Mail;
+using static Server.Custom.Services.DiscordService;
 #endregion
 
 namespace Server.Engines.Help
@@ -431,7 +433,9 @@ namespace Server.Engines.Help
 			m_List.Add(entry);
 			m_KeyedBySender[entry.Sender] = entry;
 
-            bool isStaffOnline = false;
+			//DiscordService.SendMessage(DiscordMessageType.Staff, $"Un nouveau page a été reçu.");
+
+			bool isStaffOnline = false;
 
             foreach (NetState ns in NetState.Instances)
             {

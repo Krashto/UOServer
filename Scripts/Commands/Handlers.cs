@@ -439,7 +439,7 @@ namespace Server.Commands
         {
             BroadcastMessage(AccessLevel.Player, 0x482, string.Format("Staff message from {0}:", e.Mobile.Name));
             BroadcastMessage(AccessLevel.Player, 0x482, e.ArgString);
-			DiscordService.SendMessage(DiscordMessageType.News, $"Message général: {e.ArgString}");
+			DiscordService.SendMessage(DiscordMessageType.News, $"Message général de {e.Mobile.Name}: {e.ArgString}");
 		}
 
 		public static void BroadcastMessage(AccessLevel ac, int hue, string message)
