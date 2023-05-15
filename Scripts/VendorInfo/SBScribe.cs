@@ -28,7 +28,7 @@ namespace Server.Mobiles
 				Add(new GenericBuyInfo(typeof(CarnetAdresse), 15, 20, 0xFF2, 1633));
 
 				Add(new GenericBuyInfo(typeof(SpellsPen), 15, 20, 0x1F19, 2079));
-				//Add(new GenericBuyInfo(typeof(SoulsPen), 50, 20, 0x10E7, 2962));
+				Add(new GenericBuyInfo(typeof(SoulsPen), 50, 20, 0x10E7, 2962));
 
 				
 
