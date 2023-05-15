@@ -16,7 +16,15 @@ namespace Server.Mobiles
             Body = 0x3CA;
             Hue = 0x41CE;
 
-            m_Target = target;
+			Halberd weapon = new Halberd
+			{
+				Hue = 0x41CE,
+				Movable = false
+			};
+
+			AddItem(weapon);
+
+			m_Target = target;
             m_ExpireTime = DateTime.UtcNow + TimeSpan.FromMinutes(10.0);
 
             SetStr(401, 500);
@@ -44,14 +52,6 @@ namespace Server.Mobiles
 
             Fame = 0;
             Karma = 0;
-
-            Halberd weapon = new Halberd
-            {
-                Hue = 0x41CE,
-                Movable = false
-            };
-
-            AddItem(weapon);
         }
 
         public KhaldunRevenant(Serial serial)

@@ -49,14 +49,6 @@ namespace Server.Mobiles
         {
         }
 
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
-
-            if (Paragon.ChestChance > Utility.RandomDouble())
-                c.DropItem(new ParagonChest(Name, 5));
-        }
-
         public override void GenerateLoot()
         {
             AddLoot(LootPack.LootItem<ParrotItem>(60.0));

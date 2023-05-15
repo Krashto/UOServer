@@ -18,6 +18,12 @@ namespace Server.Mobiles
             Name = " orc Scout";
             Body = 0xB5;
             BaseSoundID = 0x45A;
+
+			if (0.1 > Utility.RandomDouble())
+				AddItem(new OrcishBow());
+			else
+				AddItem(new Bow());
+
 			SetStr(229, 408);
 			SetDex(151, 253);
 			SetInt(126, 203);
@@ -27,7 +33,6 @@ namespace Server.Mobiles
 			SetDamage(30, 51);
 
 			SetDamageType(ResistanceType.Physical, 100);
-			
 
 			SetResistance(ResistanceType.Physical, 50, 60);
 			SetResistance(ResistanceType.Fire, 50, 60);
@@ -39,20 +44,9 @@ namespace Server.Mobiles
 			SetSkill(SkillName.Magery, 50.1, 55.0);
 			SetSkill(SkillName.Meditation, 50.1, 55.0);
 
-
 			SetSkill(SkillName.MagicResist, 35.1, 55.0);
 			SetSkill(SkillName.Tactics, 50.1, 55.0);
 			SetSkill(SkillName.Wrestling, 50.1, 55.0);
-
-
-			if (0.1 > Utility.RandomDouble())
-            {
-                AddItem(new OrcishBow());
-            }
-            else
-            {
-                AddItem(new Bow());
-            }
         }
 
         public OrcScout(Serial serial)

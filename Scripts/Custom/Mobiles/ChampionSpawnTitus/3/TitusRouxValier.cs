@@ -40,23 +40,6 @@ namespace Server.Mobiles
 			}
 
 
-			SetStr(151, 170);
-			SetDex(92, 130);
-			SetInt(51, 65);
-
-			SetDamage(20, 30);
-
-
-			SetDamageType(ResistanceType.Physical, 100);
-
-            SetSkill(SkillName.Fencing, 70, 110);
-            SetSkill(SkillName.Healing, 60.3, 90.0);
-            SetSkill(SkillName.Macing, 70, 110);
-            SetSkill(SkillName.Poisoning, 60.0, 82.5);
-            SetSkill(SkillName.MagicResist, 72.5, 95.0);
-            SetSkill(SkillName.Swords, 70, 110);
-            SetSkill(SkillName.Tactics, 72.5, 95.0);
-
 			AddItem(new Boots(Utility.RandomNeutralHue()));
 			AddItem(new FancyShirt());
 			AddItem(new Bandana());
@@ -93,6 +76,21 @@ namespace Server.Mobiles
 
 			AdjustSpeeds();
 
+			SetStr(151, 170);
+			SetDex(92, 130);
+			SetInt(51, 65);
+
+			SetDamage(20, 30);
+
+			SetDamageType(ResistanceType.Physical, 100);
+
+            SetSkill(SkillName.Fencing, 70, 110);
+            SetSkill(SkillName.Healing, 60.3, 90.0);
+            SetSkill(SkillName.Macing, 70, 110);
+            SetSkill(SkillName.Poisoning, 60.0, 82.5);
+            SetSkill(SkillName.MagicResist, 72.5, 95.0);
+            SetSkill(SkillName.Swords, 70, 110);
+            SetSkill(SkillName.Tactics, 72.5, 95.0);
 		}
 
 

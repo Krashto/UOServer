@@ -1,5 +1,6 @@
 using Server;
 using Server.ContextMenus;
+using Server.Custom.Aptitudes;
 using Server.Engines.Craft;
 using Server.Items;
 using Server.Misc;
@@ -35,7 +36,6 @@ namespace Server.Items
         private NegativeAttributes m_NegativeAttributes;
         private CraftResource m_Resource;
         private GemType m_GemType;
-		
 
 		#region Stygian Abyss
 		private int m_TimesImbued;
@@ -76,10 +76,6 @@ namespace Server.Items
             get { return _Owner; }
             set { _Owner = value; if (_Owner != null) _OwnerName = _Owner.Name; InvalidateProperties(); }
         }
-
-		
-
-		
 
 		public virtual string OwnerName
         {
@@ -181,7 +177,13 @@ namespace Server.Items
             }
         }
 
-        [CommandProperty(AccessLevel.Player)]
+		[CommandProperty(AccessLevel.GameMaster)]
+		public Aptitude AptitudeBonus { get; set; } = (Aptitude)(-1);
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public int AptitudeLevel { get; set; }
+
+		[CommandProperty(AccessLevel.Player)]
         public AosAttributes Attributes
         {
             get
@@ -192,6 +194,7 @@ namespace Server.Items
             {
             }
         }
+
 
         [CommandProperty(AccessLevel.GameMaster)]
         public AosElementAttributes Resistances
@@ -243,22 +246,22 @@ namespace Server.Items
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public CraftResource Resource
-{
-	get { return m_Resource; }
-	set
-	{
-		if (value == CraftResource.Iron || value == CraftResource.Argent || value == CraftResource.Gold)
 		{
-			m_Resource = value;
+			get { return m_Resource; }
+			set
+			{
+				if (value == CraftResource.Iron || value == CraftResource.Argent || value == CraftResource.Gold)
+				{
+					m_Resource = value;
+				}
+
+				ItemID = ComputeItemID();
+
+				InvalidateProperties();
+			}
 		}
 
-		ItemID = ComputeItemID();
-
-		InvalidateProperties();
-	}
-}
-
-[CommandProperty(AccessLevel.GameMaster)]
+		[CommandProperty(AccessLevel.GameMaster)]
         public GemType GemType
         {
             get
@@ -624,6 +627,8 @@ namespace Server.Items
                         SetHelper.AddSetBonus(from, SetID);
                     }
                 }
+
+				from.UpdateResistances();
                 #endregion
             }
         }
@@ -729,7 +734,9 @@ namespace Server.Items
         {
             base.AddNameProperties(list);
 
-            if (m_GorgonLenseCharges > 0)
+			list.Add($"Enchantement: {Enchantement}/1");
+
+			if (m_GorgonLenseCharges > 0)
                 list.Add(1112590, m_GorgonLenseCharges.ToString()); //Gorgon Lens Charges: ~1_val~
 
             #region Mondain's Legacy Sets
@@ -807,70 +814,73 @@ namespace Server.Items
                 list.Add(1060441); // night sight
 
             if ((prop = m_AosAttributes.BonusStr) != 0)
-                list.Add(1060485, prop.ToString()); // strength bonus ~1_val~
+                list.Add($"Bonus de points de force {prop}"); // strength bonus ~1_val~
 
             if ((prop = m_AosAttributes.BonusDex) != 0)
-                list.Add(1060409, prop.ToString()); // dexterity bonus ~1_val~
+                list.Add($"Bonus de points de dextérité {prop}"); // dexterity bonus ~1_val~
 
             if ((prop = m_AosAttributes.BonusInt) != 0)
-                list.Add(1060432, prop.ToString()); // intelligence bonus ~1_val~
+                list.Add($"Bonus de points d'intelligence {prop}"); // intelligence bonus ~1_val~
 
             if ((prop = m_AosAttributes.BonusHits) != 0)
-                list.Add(1060431, prop.ToString()); // hit point increase ~1_val~
+                list.Add($"Bonus de points de vie {prop}"); // hit point increase ~1_val~
 
             if ((prop = m_AosAttributes.BonusStam) != 0)
-                list.Add(1060484, prop.ToString()); // stamina increase ~1_val~
+                list.Add($"Bonus de points de stamina {prop}"); // stamina increase ~1_val~
 
             if ((prop = m_AosAttributes.BonusMana) != 0)
-                list.Add(1060439, prop.ToString()); // mana increase ~1_val~
+                list.Add($"Bonus de points de mana {prop}"); // mana increase ~1_val~
 
             if ((prop = m_AosAttributes.RegenHits) != 0)
-                list.Add(1060444, prop.ToString()); // hit point regeneration ~1_val~
+                list.Add($"Bonus de regénération de points de vie {prop}"); // hit point regeneration ~1_val~
 
             if ((prop = m_AosAttributes.RegenStam) != 0)
-                list.Add(1060443, prop.ToString()); // stamina regeneration ~1_val~
+                list.Add($"Bonus de regénération de points de stamina {prop}"); // stamina regeneration ~1_val~
 
             if ((prop = m_AosAttributes.RegenMana) != 0)
-                list.Add(1060440, prop.ToString()); // mana regeneration ~1_val~
+                list.Add($"Bonus de regénération de points de mana {prop}"); // mana regeneration ~1_val~
 
             if ((prop = m_AosAttributes.Luck) != 0)
-                list.Add(1060436, prop.ToString()); // luck ~1_val~
+                list.Add($"Chance {prop}"); // luck ~1_val~
 
             if ((prop = m_AosAttributes.EnhancePotions) != 0)
                 list.Add(1060411, prop.ToString()); // enhance potions ~1_val~%
 
             if ((prop = m_AosAttributes.ReflectPhysical) != 0)
-                list.Add(1060442, prop.ToString()); // reflect physical damage ~1_val~%
+                list.Add($"Réflection des dégâts physiques {prop}"); // reflect physical damage ~1_val~%
 
             if ((prop = m_AosAttributes.AttackChance) != 0)
-                list.Add(1060415, prop.ToString()); // hit chance increase ~1_val~%
+                list.Add($"Chances de toucher {prop}"); // hit chance increase ~1_val~%
 
             if ((prop = m_AosAttributes.WeaponSpeed) != 0)
-                list.Add(1060486, prop.ToString()); // swing speed increase ~1_val~%
+                list.Add($"Vitesse de frappe {prop}"); // swing speed increase ~1_val~%
 
             if ((prop = m_AosAttributes.WeaponDamage) != 0)
-                list.Add(1060401, prop.ToString()); // damage increase ~1_val~%
+                list.Add($"Dégâts physiques {prop}"); // damage increase ~1_val~%
 
             if ((prop = m_AosAttributes.DefendChance) != 0)
-                list.Add(1060408, prop.ToString()); // defense chance increase ~1_val~%
+                list.Add($"Chances d'esquive {prop}"); // defense chance increase ~1_val~%
 
             if ((prop = m_AosAttributes.CastRecovery) != 0)
-                list.Add(1060412, prop.ToString()); // faster cast recovery ~1_val~
+                list.Add($"Vitesse d'enchainement des sorts {prop}"); // faster cast recovery ~1_val~
 
             if ((prop = m_AosAttributes.CastSpeed) != 0)
-                list.Add(1060413, prop.ToString()); // faster casting ~1_val~
+                list.Add($"Vitesse d'incantation {prop}"); // faster casting ~1_val~
 
             if ((prop = m_AosAttributes.SpellDamage) != 0)
-                list.Add(1060483, prop.ToString()); // spell damage increase ~1_val~%
+                list.Add($"Dégâts magiques {prop}"); // spell damage increase ~1_val~%
 
             if ((prop = m_AosAttributes.LowerManaCost) != 0)
-                list.Add(1060433, prop.ToString()); // lower mana cost ~1_val~%
+                list.Add($"Réduction en coût de mana {prop}"); // lower mana cost ~1_val~%
 
             if ((prop = m_AosAttributes.LowerRegCost) != 0)
-                list.Add(1060434, prop.ToString()); // lower reagent cost ~1_val~%      
+                list.Add($"Réduction en coût d'essence {prop}"); // lower reagent cost ~1_val~%      
 
-            if ((prop = m_AosAttributes.IncreasedKarmaLoss) != 0)
-                list.Add(1075210, prop.ToString()); // Increased Karma Loss ~1val~%
+			if ((prop = m_AosAttributes.LowerAmmoCost) != 0)
+				list.Add($"Réduction en coût de munition {prop}");
+
+			if (AptitudeBonus != (Aptitude)(-1))
+				list.Add($"Aptitude: {AptitudeBonus} +{AptitudeLevel}");
 
             base.AddResistanceProperties(list);
 
@@ -930,11 +940,16 @@ namespace Server.Items
         {
             base.Serialize(writer);
 
-            writer.Write(12); // version
+            writer.Write(13); // version
 
-            // Version 12 - removed VvV Item (handled in VvV System) and BlockRepair (Handled as negative attribute)
+			//Version 13
 
-            writer.Write(m_SetPhysicalBonus);
+			writer.Write((int)AptitudeBonus); // version
+			writer.Write(AptitudeLevel); // version
+
+			// Version 12 - removed VvV Item (handled in VvV System) and BlockRepair (Handled as negative attribute)
+
+			writer.Write(m_SetPhysicalBonus);
             writer.Write(m_SetFireBonus);
             writer.Write(m_SetColdBonus);
             writer.Write(m_SetPoisonBonus);
@@ -1001,7 +1016,13 @@ namespace Server.Items
 
             switch (version)
             {
-                case 12:
+				case 13:
+					{
+						AptitudeBonus = (Aptitude)reader.ReadInt();
+						AptitudeLevel = reader.ReadInt();
+						goto case 12;
+					}
+				case 12:
                 case 11:
                     {
                         m_SetPhysicalBonus = reader.ReadInt();

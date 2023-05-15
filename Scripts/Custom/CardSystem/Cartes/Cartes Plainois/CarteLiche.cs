@@ -1,60 +1,16 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Server.Multis;
-using Server.Mobiles;
-using Server.Network;
-using Server.ContextMenus;
-using Server.Spells;
-using Server.Targeting;
-using Server.Misc;
-
 namespace Server.Items
 {
 	public class CarteLiche : BaseCard
 	{
+		public override int Level => 6;
+		public override CardEnchantType EnchantType => CardEnchantType.LowerRegCost;
 
 		[Constructable]
-		public CarteLiche() : base()
+		public CarteLiche() : base(1940)
 		{
-			Weight = 0.2;  // ?
 			Name = "Carte Liche";
-			Hue = 1940;
 		}
-		public override void GetProperties(ObjectPropertyList list)
-		{
-			base.GetProperties(list);
-			list.Add(String.Format("[Diminution Cout en Ingredients +6]"));
-		}
-
-		public override bool CanEnchant(Item item, Mobile from)
-		{
-			if (item is BaseJewel)
-			{
-				return true;
-			}
-
-
-			from.SendMessage("Vous pouvez enchanter que les Bijoux avec cette carte.");
-
-
-			return base.CanEnchant(item, from);
-		}
-
-		public override void Enchant(Item item, Mobile from)
-		{
-
-			int augmentper = 6;
-
-			if (item is BaseJewel Jewel)
-			{
-				Jewel.Attributes.LowerRegCost += augmentper;
-			}
-
-			base.Enchant(item, from);
-		}
-
-
+		
 		public CarteLiche(Serial serial) : base(serial)
 		{
 		}

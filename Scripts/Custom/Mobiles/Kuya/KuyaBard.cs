@@ -26,30 +26,9 @@ namespace Server.Mobiles
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
 				Title = "Kuya Envoutant";
 			}
-			
-			HairItemID = Race.RandomHair(Female);
-            HairHue = Race.RandomHairHue();
-            Race.RandomFacialHair(this);
 
-			SetStr(85, 100);
-			SetDex(85, 100);
-			SetInt(50, 75);
 
-			SetDamage(5, 10);
-
-            SetSkill(SkillName.Tactics, 35, 57);
-            SetSkill(SkillName.Magery, 22, 22);
-            SetSkill(SkillName.Swords, 45, 67);
-            SetSkill(SkillName.Archery, 36, 67);
-            SetSkill(SkillName.Parry, 45, 60);
-            SetSkill(SkillName.Musicianship, 66.0, 97.5);
-            SetSkill(SkillName.Peacemaking, 65.0, 87.5);
-			SetSkill(SkillName.Provocation, 65.0, 87.5);
-
-			Fame = 100;
-            Karma = 100;
-
-            AddItem(new Shoes(Utility.RandomNeutralHue()));
+			AddItem(new Shoes(Utility.RandomNeutralHue()));
 
 			switch (Utility.Random(6))
 			{
@@ -92,6 +71,28 @@ namespace Server.Mobiles
 			AddItem(new Bow());
 
 			AddItem(new MaleKimono());
+
+			HairItemID = Race.RandomHair(Female);
+            HairHue = Race.RandomHairHue();
+            Race.RandomFacialHair(this);
+
+			SetStr(85, 100);
+			SetDex(85, 100);
+			SetInt(50, 75);
+
+			SetDamage(5, 10);
+
+            SetSkill(SkillName.Tactics, 35, 57);
+            SetSkill(SkillName.Magery, 22, 22);
+            SetSkill(SkillName.Swords, 45, 67);
+            SetSkill(SkillName.Archery, 36, 67);
+            SetSkill(SkillName.Parry, 45, 60);
+            SetSkill(SkillName.Musicianship, 66.0, 97.5);
+            SetSkill(SkillName.Peacemaking, 65.0, 87.5);
+			SetSkill(SkillName.Provocation, 65.0, 87.5);
+
+			Fame = 100;
+            Karma = 100;
 		}
 
 		public override bool CanPeace => true;

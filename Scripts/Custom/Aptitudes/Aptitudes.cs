@@ -1,4 +1,5 @@
 using System;
+using Server.Items;
 using Server.Mobiles;
 
 namespace Server.Custom.Aptitudes
@@ -303,7 +304,20 @@ namespace Server.Custom.Aptitudes
 
 		public int GetRealValue(Aptitude aptitude)
 		{
-			return m_Values[(int)aptitude] + Classes.Classes.GetAptitudeValue(Owner.Classe, aptitude);
+			var value = m_Values[(int)aptitude];
+
+			if (Owner != null)
+			{
+				value += Classes.Classes.GetAptitudeValue(Owner.Classe, aptitude);
+
+				foreach (var item in Owner.Items)
+				{
+					if (item is BaseJewel jewel && jewel.AptitudeBonus == aptitude)
+						value += jewel.AptitudeLevel;
+				}
+			}
+
+			return value;
 		}
 
 		private int GetValue(Aptitude aptitude)

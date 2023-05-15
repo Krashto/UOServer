@@ -1,59 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Server.Multis;
-using Server.Mobiles;
-using Server.Network;
-using Server.ContextMenus;
-using Server.Spells;
-using Server.Targeting;
-using Server.Misc;
-
 namespace Server.Items
 {
 	public class CarteSquelette : BaseCard
 	{
+		public override int Level => 4;
+		public override CardEnchantType EnchantType => CardEnchantType.BonusHits;
 
 		[Constructable]
-		public CarteSquelette() : base()
+		public CarteSquelette() : base(1940)
 		{
-			Weight = 0.2;  // ?
 			Name = "Carte Squelette";
-			Hue = 1940;
 		}
-
-		public override void GetProperties(ObjectPropertyList list)
-		{
-			base.GetProperties(list);
-			list.Add(String.Format("[Bonus de Vie +4]"));
-		}
-
-		public override bool CanEnchant(Item item, Mobile from)
-		{
-			 if (item is BaseJewel)
-			{
-				return true;
-			}
-
-			from.SendMessage("Vous pouvez enchanter les bijoux avec cette carte.");
-
-			return base.CanEnchant(item, from);
-		}
-
-		public override void Enchant(Item item, Mobile from)
-		{
-
-			int augmentper = 4;
-
-
-			 if (item is BaseJewel Jewel)
-			{
-						Jewel.Attributes.BonusHits += augmentper;								
-			}
-
-			base.Enchant(item, from);
-		}
-
 
 		public CarteSquelette( Serial serial ) : base( serial )
 		{

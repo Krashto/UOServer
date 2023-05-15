@@ -1179,21 +1179,12 @@ namespace Server.Mobiles
 
             if (dropped is SmallBOD || dropped is LargeBOD)
             {
-                PlayerMobile pm = from as PlayerMobile;
+                var pm = from as CustomPlayerMobile;
                 IBOD bod = dropped as IBOD;
-
-                //if (bod != null && BulkOrderSystem.NewSystemEnabled && Bribes != null && Bribes.ContainsKey(from) && Bribes[from].BOD == bod)
-                //{
-                //    if (BulkOrderSystem.CanExchangeBOD(from, this, bod, Bribes[from].Amount))
-                //    {
-                //        DoBribe(from, bod);
-                //        return false;
-                //    }
-                //}
 
                 if (pm != null && pm.NextBODTurnInTime > DateTime.UtcNow)
                 {
-                    SayTo(from, 0x3B2, $"Vous devez attendre {(pm.NextBODTurnInTime - DateTime.UtcNow).Minutes} minutes avant votre prochain retour de contrat.", null);
+                    SayTo(from, 0x3B2, $"Vous devez attendre {(pm.NextBODTurnInTime - DateTime.UtcNow).Minutes}m{(pm.NextBODTurnInTime - DateTime.UtcNow).Seconds}s avant votre prochain retour de contrat.", null);
                     return false;
                 }
                 else if (!IsValidBulkOrder(dropped) || !SupportsBulkOrders(from))
@@ -1201,11 +1192,6 @@ namespace Server.Mobiles
                     SayTo(from, 0x3B2, "Cette commande est pour un autre commerçant.", null);
                     return false;
                 }
-                //else if (!BulkOrderSystem.CanClaimRewards(from))
-                //{
-                //    SayTo(from, 1157083, 0x3B2); // You must claim your last turn-in reward in order for us to continue doing business.
-                //    return false;
-                //}
                 else if (bod == null || !bod.Complete)
                 {
                     SayTo(from, 0x3B2, "Vous n'avez pas encore terminé la commande.", null);
@@ -1222,60 +1208,13 @@ namespace Server.Mobiles
 
                 from.SendSound(0x3D);
 
-                //if (BulkOrderSystem.NewSystemEnabled && from is PlayerMobile)
-                //{
-                    //SayTo(from, 1157204, from.Name, 0x3B2); // Ho! Ho! Thank ye ~1_PLAYER~ for giving me a Bulk Order Deed!
-
-                    //BODContext context = BulkOrderSystem.GetContext(from);
-
-                    //int points = 0;
-                    //double banked = 0.0;
-
-                    //if (dropped is SmallBOD)
-                    //    BulkOrderSystem.ComputePoints((SmallBOD)dropped, out points, out banked);
-                    //else
-                    //    BulkOrderSystem.ComputePoints((LargeBOD)dropped, out points, out banked);
-
-                    //switch (context.PointsMode)
-                    //{
-                    //    case PointsMode.Enabled:
-                    //        context.AddPending(BODType, points);
-                    //        from.SendGump(new ConfirmBankPointsGump((PlayerMobile)from, this, BODType, points, banked));
-                    //        break;
-                    //    case PointsMode.Disabled:
-                    //        context.AddPending(BODType, points);
-                    //        from.SendGump(new RewardsGump(this, (PlayerMobile)from, BODType, points));
-                    //        break;
-                    //    case PointsMode.Automatic:
-                    //        BulkOrderSystem.SetPoints(from, BODType, banked);
-                    //        from.SendGump(new RewardsGump(this, (PlayerMobile)from, BODType));
-                    //        break;
-                    //}
-
-                    // On EA, you have to choose the reward before you get the gold/fame reward.  IF you right click the gump, you lose 
-                    // the gold/fame for that bod.
-
-                    Banker.Deposit(from, gold, true);
-                //}
-                //else
-                //{
-                    SayTo(from, 1045132, 0x3B2); // Thank you so much!  Here is a reward for your effort.
-
-                    //if (reward != null)
-                    //{
-                    //    from.AddToBackpack(reward);
-                    //}
-
-                    Banker.Deposit(from, gold, true);
-                //}
-
-                //Titles.AwardFame(from, fame, true);
+                Banker.Deposit(from, gold, true);
+                SayTo(from, 1045132, 0x3B2); // Thank you so much!  Here is a reward for your effort.
 
                 OnSuccessfulBulkOrderReceive(from);
-                //Engines.CityLoyalty.CityLoyaltySystem.OnBODTurnIn(from, gold);
 
                 if (pm != null)
-                    pm.NextBODTurnInTime = DateTime.UtcNow + TimeSpan.FromHours(6.0);
+                    pm.NextBODTurnInTime = DateTime.UtcNow + TimeSpan.FromHours(1.0);
 
                 dropped.Delete();
                 return true;

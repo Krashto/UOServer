@@ -29,21 +29,6 @@ namespace Server.Mobiles
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
 			}
 
-			SetStr(86, 100);
-			SetDex(200, 500);
-			SetInt(61, 75);
-
-			SetDamage(10, 23);
-
-			SetSkill(SkillName.Fencing, 66.0, 97.5);
-			SetSkill(SkillName.Macing, 65.0, 87.5);
-			SetSkill(SkillName.MagicResist, 25.0, 47.5);
-			SetSkill(SkillName.Swords, 65.0, 87.5);
-			SetSkill(SkillName.Tactics, 65.0, 87.5);
-			SetSkill(SkillName.Wrestling, 15.0, 37.5);
-
-			Fame = 1000;
-			Karma = -1000;
 			switch (Utility.Random(3))
 			{
 				case 0:
@@ -97,6 +82,21 @@ namespace Server.Mobiles
 			if (Utility.Random(7) != 0)
 				Utility.AssignRandomFacialHair(this, hairHue);
 
+			SetStr(86, 100);
+			SetDex(200, 500);
+			SetInt(61, 75);
+
+			SetDamage(10, 23);
+
+			SetSkill(SkillName.Fencing, 66.0, 97.5);
+			SetSkill(SkillName.Macing, 65.0, 87.5);
+			SetSkill(SkillName.MagicResist, 25.0, 47.5);
+			SetSkill(SkillName.Swords, 65.0, 87.5);
+			SetSkill(SkillName.Tactics, 65.0, 87.5);
+			SetSkill(SkillName.Wrestling, 15.0, 37.5);
+
+			Fame = 1000;
+			Karma = -1000;
 		}
 
 		public Kuya(Serial serial)

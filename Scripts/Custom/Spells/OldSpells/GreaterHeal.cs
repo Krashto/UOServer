@@ -48,7 +48,7 @@ namespace Server.Spells.OldSpells
 			{
 				Caster.LocalOverheadMessage( MessageType.Regular, 0x22, (Caster == m) ? 1005000 : 1010398 );
 			}
-			else if ( CheckBSequence( m ) )
+			else if ( CheckSequence() )
 			{
 				SpellHelper.Turn( Caster, m );
 
@@ -72,7 +72,7 @@ namespace Server.Spells.OldSpells
 		{
 			private GreaterHealSpell m_Owner;
 
-			public InternalTarget( GreaterHealSpell owner ) : base( 12, false, TargetFlags.Beneficial )
+			public InternalTarget( GreaterHealSpell owner ) : base( 12, false, TargetFlags.None )
 			{
 				m_Owner = owner;
 			}

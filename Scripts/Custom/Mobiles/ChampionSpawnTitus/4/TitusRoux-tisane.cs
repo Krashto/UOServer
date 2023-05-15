@@ -22,29 +22,6 @@ namespace Server.Mobiles
 			Name = NameList.RandomName("female");
 			AddItem(new Skirt(Utility.RandomNeutralHue()));
 
-			SetStr(151, 170);
-			SetDex(92, 130);
-			SetInt(51, 65);
-
-			SetDamage(15, 20);
-
-			SetResistance(ResistanceType.Physical, 55, 60);
-			SetResistance(ResistanceType.Fire, 25, 35);
-			SetResistance(ResistanceType.Cold, 30, 40);
-			SetResistance(ResistanceType.Poison, 30, 40);
-			SetResistance(ResistanceType.Energy, 30, 40);
-
-			SetSkill(SkillName.MagicResist, 55.0, 65.0);
-			SetSkill(SkillName.Tactics, 80.0, 100.0);
-			SetSkill(SkillName.Wrestling, 80.0, 100.0);
-			SetSkill(SkillName.Fencing, 80, 110);
-			SetSkill(SkillName.Macing, 80, 110);
-			SetSkill(SkillName.Swords, 80, 110);
-
-			SetSkill(SkillName.Musicianship, 100);
-			SetSkill(SkillName.Discordance, 100);
-			SetSkill(SkillName.Provocation, 100);
-			SetSkill(SkillName.Peacemaking, 100);
 
 			AddItem(new Boots(Utility.RandomNeutralHue()));
 			AddItem(new FancyShirt());
@@ -76,6 +53,30 @@ namespace Server.Mobiles
 			}
 
 			Utility.AssignRandomHair(this, RouxCouleur());
+
+			SetStr(151, 170);
+			SetDex(92, 130);
+			SetInt(51, 65);
+
+			SetDamage(15, 20);
+
+			SetResistance(ResistanceType.Physical, 55, 60);
+			SetResistance(ResistanceType.Fire, 25, 35);
+			SetResistance(ResistanceType.Cold, 30, 40);
+			SetResistance(ResistanceType.Poison, 30, 40);
+			SetResistance(ResistanceType.Energy, 30, 40);
+
+			SetSkill(SkillName.MagicResist, 55.0, 65.0);
+			SetSkill(SkillName.Tactics, 80.0, 100.0);
+			SetSkill(SkillName.Wrestling, 80.0, 100.0);
+			SetSkill(SkillName.Fencing, 80, 110);
+			SetSkill(SkillName.Macing, 80, 110);
+			SetSkill(SkillName.Swords, 80, 110);
+
+			SetSkill(SkillName.Musicianship, 100);
+			SetSkill(SkillName.Discordance, 100);
+			SetSkill(SkillName.Provocation, 100);
+			SetSkill(SkillName.Peacemaking, 100);
         }
 
         public TitusRouxTisane(Serial serial)

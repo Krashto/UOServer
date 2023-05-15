@@ -1,5 +1,3 @@
-using Server.Items;
-
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Squelette")]
@@ -37,10 +35,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 35.1, 50.0);
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
-
-
-		//	Fame = 450;
-        //    Karma = -450;
         }
 
         public Skeleton(Serial serial)

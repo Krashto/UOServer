@@ -57,14 +57,6 @@ namespace Server.Mobiles
             AddLoot(LootPack.LootItem<AbscessTail>());
         }
 
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
-
-            if (Paragon.ChestChance > Utility.RandomDouble())
-                c.DropItem(new ParagonChest(Name, 5));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

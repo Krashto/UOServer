@@ -1,3 +1,6 @@
+using Server.Engines.Craft;
+using System;
+
 namespace Server.Items
 {
     public class Shaft : Item, ICommodity
@@ -37,5 +40,12 @@ namespace Server.Items
 
             int version = reader.ReadInt();
         }
-    }
+
+		public virtual int OnCraft(int quality, bool makersMark, Mobile from, CraftSystem craftSystem, Type typeRes, ITool tool, CraftItem craftItem, int resHue)
+		{
+			Amount = Amount * 5;
+
+			return quality;
+		}
+	}
 }

@@ -26,6 +26,17 @@ namespace Server.Mobiles
             Name = "Medusa";
             Body = 728;
 
+			IronwoodCompositeBow Bow = new IronwoodCompositeBow
+			{
+				Movable = false
+			};
+			AddItem(Bow);
+
+			m_Scales = Utility.RandomMinMax(1, 2) + 7;
+
+			SetWeaponAbility(WeaponAbility.MortalStrike);
+			SetSpecialAbility(SpecialAbility.VenomousBite);
+
 			SetStr(199, 355);
 			SetDex(132, 220);
 			SetInt(110, 177);
@@ -36,7 +47,6 @@ namespace Server.Mobiles
 
 			SetDamageType(ResistanceType.Energy, 50);
 			SetDamageType(ResistanceType.Poison, 50);
-
 
 			SetResistance(ResistanceType.Physical, 25, 25);
 			SetResistance(ResistanceType.Fire, 25, 25);
@@ -51,25 +61,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 75.1, 100.0);
 			SetSkill(SkillName.Tactics, 75.1, 100.0);
 			SetSkill(SkillName.Wrestling, 75.1, 100.0);
-
-
-
-
-
-
-		//	Fame = 22000;
-        //    Karma = -22000;
-
-            IronwoodCompositeBow Bow = new IronwoodCompositeBow
-            {
-                Movable = false
-            };
-            AddItem(Bow);
-
-            m_Scales = Utility.RandomMinMax(1, 2) + 7;
-
-            SetWeaponAbility(WeaponAbility.MortalStrike);
-            SetSpecialAbility(SpecialAbility.VenomousBite);
         }
 
         public Medusa(Serial serial)

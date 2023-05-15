@@ -17,7 +17,11 @@ namespace Server.Mobiles
             else
                 Body = 183;
 
-            SetStr(96, 115);
+			AddItem(new Spear());
+			AddItem(new BoneArms());
+			AddItem(new BoneLegs());
+
+			SetStr(96, 115);
             SetDex(86, 105);
             SetInt(51, 65);
 
@@ -31,13 +35,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 57.5, 80.0);
             SetSkill(SkillName.Swords, 60.0, 82.5);
             SetSkill(SkillName.Tactics, 60.0, 82.5);
-
-            Fame = 1000;
-            Karma = -1000;
-
-            AddItem(new Spear());
-            AddItem(new BoneArms());
-            AddItem(new BoneLegs());
         }
 
         public Savage(Serial serial)

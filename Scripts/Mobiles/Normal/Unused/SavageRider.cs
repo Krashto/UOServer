@@ -14,7 +14,14 @@ namespace Server.Mobiles
 
             Body = 185;
 
-            SetStr(151, 170);
+			AddItem(new TribalSpear());
+			AddItem(new BoneArms());
+			AddItem(new BoneLegs());
+			AddItem(new BearMask());
+
+			new SavageRidgeback().Rider = this;
+
+			SetStr(151, 170);
             SetDex(92, 130);
             SetInt(51, 65);
 
@@ -29,16 +36,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 72.5, 95.0);
             SetSkill(SkillName.Swords, 72.5, 95.0);
             SetSkill(SkillName.Tactics, 72.5, 95.0);
-
-            Fame = 1000;
-            Karma = -1000;
-
-            AddItem(new TribalSpear());
-            AddItem(new BoneArms());
-            AddItem(new BoneLegs());
-            AddItem(new BearMask());
-
-            new SavageRidgeback().Rider = this;
         }
 
         public SavageRider(Serial serial)

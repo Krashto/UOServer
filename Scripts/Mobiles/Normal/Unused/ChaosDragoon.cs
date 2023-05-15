@@ -13,7 +13,121 @@ namespace Server.Mobiles
             Body = 0x190;
             Hue = Utility.RandomSkinHue();
 
-            SetStr(176, 225);
+			CraftResource res = CraftResource.None;
+
+			switch (Utility.Random(6))
+			{
+				case 0:
+					res = CraftResource.BlackScales;
+					break;
+				case 1:
+					res = CraftResource.RedScales;
+					break;
+				case 2:
+					res = CraftResource.BlueScales;
+					break;
+				case 3:
+					res = CraftResource.YellowScales;
+					break;
+				case 4:
+					res = CraftResource.GreenScales;
+					break;
+				case 5:
+					res = CraftResource.WhiteScales;
+					break;
+			}
+
+			BaseWeapon melee = null;
+
+			switch (Utility.Random(3))
+			{
+				case 0:
+					melee = new Kryss();
+					break;
+				case 1:
+					melee = new Broadsword();
+					break;
+				case 2:
+					melee = new Katana();
+					break;
+			}
+
+			melee.Movable = false;
+			AddItem(melee);
+
+			DragonHelm helm = new DragonHelm
+			{
+				Resource = res,
+				Movable = false
+			};
+			AddItem(helm);
+
+			DragonChest chest = new DragonChest
+			{
+				Resource = res,
+				Movable = false
+			};
+			AddItem(chest);
+
+			DragonArms arms = new DragonArms
+			{
+				Resource = res,
+				Movable = false
+			};
+			AddItem(arms);
+
+			DragonGloves gloves = new DragonGloves
+			{
+				Resource = res,
+				Movable = false
+			};
+			AddItem(gloves);
+
+			DragonLegs legs = new DragonLegs
+			{
+				Resource = res,
+				Movable = false
+			};
+			AddItem(legs);
+
+			ChaosShield shield = new ChaosShield
+			{
+				Movable = false
+			};
+			AddItem(shield);
+
+			AddItem(new Shirt());
+			AddItem(new Boots());
+
+			int amount = Utility.RandomMinMax(1, 3);
+
+			switch (res)
+			{
+				case CraftResource.BlackScales:
+					AddItem(new BlackScales(amount));
+					break;
+				case CraftResource.RedScales:
+					AddItem(new RedScales(amount));
+					break;
+				case CraftResource.BlueScales:
+					AddItem(new BlueScales(amount));
+					break;
+				case CraftResource.YellowScales:
+					AddItem(new YellowScales(amount));
+					break;
+				case CraftResource.GreenScales:
+					AddItem(new GreenScales(amount));
+					break;
+				case CraftResource.WhiteScales:
+					AddItem(new WhiteScales(amount));
+					break;
+			}
+
+			new SwampDragon().Rider = this;
+
+			SetSpecialAbility(SpecialAbility.DragonBreath);
+
+			SetStr(176, 225);
             SetDex(81, 95);
             SetInt(61, 85);
 
@@ -36,120 +150,6 @@ namespace Server.Mobiles
 
             Fame = 5000;
             Karma = -5000;
-
-            CraftResource res = CraftResource.None;
-
-            switch (Utility.Random(6))
-            {
-                case 0:
-                    res = CraftResource.BlackScales;
-                    break;
-                case 1:
-                    res = CraftResource.RedScales;
-                    break;
-                case 2:
-                    res = CraftResource.BlueScales;
-                    break;
-                case 3:
-                    res = CraftResource.YellowScales;
-                    break;
-                case 4:
-                    res = CraftResource.GreenScales;
-                    break;
-                case 5:
-                    res = CraftResource.WhiteScales;
-                    break;
-            }
-
-            BaseWeapon melee = null;
-
-            switch (Utility.Random(3))
-            {
-                case 0:
-                    melee = new Kryss();
-                    break;
-                case 1:
-                    melee = new Broadsword();
-                    break;
-                case 2:
-                    melee = new Katana();
-                    break;
-            }
-
-            melee.Movable = false;
-            AddItem(melee);
-
-            DragonHelm helm = new DragonHelm
-            {
-                Resource = res,
-                Movable = false
-            };
-            AddItem(helm);
-
-            DragonChest chest = new DragonChest
-            {
-                Resource = res,
-                Movable = false
-            };
-            AddItem(chest);
-
-            DragonArms arms = new DragonArms
-            {
-                Resource = res,
-                Movable = false
-            };
-            AddItem(arms);
-
-            DragonGloves gloves = new DragonGloves
-            {
-                Resource = res,
-                Movable = false
-            };
-            AddItem(gloves);
-
-            DragonLegs legs = new DragonLegs
-            {
-                Resource = res,
-                Movable = false
-            };
-            AddItem(legs);
-
-            ChaosShield shield = new ChaosShield
-            {
-                Movable = false
-            };
-            AddItem(shield);
-
-            AddItem(new Shirt());
-            AddItem(new Boots());
-
-            int amount = Utility.RandomMinMax(1, 3);
-
-            switch (res)
-            {
-                case CraftResource.BlackScales:
-                    AddItem(new BlackScales(amount));
-                    break;
-                case CraftResource.RedScales:
-                    AddItem(new RedScales(amount));
-                    break;
-                case CraftResource.BlueScales:
-                    AddItem(new BlueScales(amount));
-                    break;
-                case CraftResource.YellowScales:
-                    AddItem(new YellowScales(amount));
-                    break;
-                case CraftResource.GreenScales:
-                    AddItem(new GreenScales(amount));
-                    break;
-                case CraftResource.WhiteScales:
-                    AddItem(new WhiteScales(amount));
-                    break;
-            }
-
-            new SwampDragon().Rider = this;
-
-            SetSpecialAbility(SpecialAbility.DragonBreath);
         }
 
         public ChaosDragoon(Serial serial)

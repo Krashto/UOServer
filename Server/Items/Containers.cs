@@ -18,6 +18,7 @@ namespace Server.Items
 		private bool m_Open;
 
 		public override int DefaultMaxWeight => 0;
+		public override int DefaultMaxItems => 500;
 
 		public override bool IsVirtualItem => true;
 

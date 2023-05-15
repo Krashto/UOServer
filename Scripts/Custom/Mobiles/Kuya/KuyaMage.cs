@@ -27,29 +27,6 @@ namespace Server.Mobiles
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
 			}
 
-			SetStr(20);
-			SetDex(150);
-			SetInt(125);
-
-			SetDamage(9, 15);
-
-			SetDamageType(ResistanceType.Physical, 100);
-
-			SetResistance(ResistanceType.Physical, 80, 90);
-			SetResistance(ResistanceType.Fire, 40, 50);
-			SetResistance(ResistanceType.Cold, 40, 50);
-			SetResistance(ResistanceType.Poison, 40, 50);
-			SetResistance(ResistanceType.Energy, 40, 50);
-
-			SetSkill(SkillName.EvalInt, 70.1, 80.0);
-			SetSkill(SkillName.Magery, 70.1, 80.0);
-			SetSkill(SkillName.Meditation, 70.1, 80.0);
-			SetSkill(SkillName.MagicResist, 50.5, 100.0);
-			SetSkill(SkillName.Tactics, 10.1, 20.0);
-			SetSkill(SkillName.Wrestling, 10.1, 12.5);
-
-
-
 			switch (Utility.Random(6))
 			{
 				case 0:
@@ -96,6 +73,27 @@ namespace Server.Mobiles
 
 			if (Utility.Random(7) != 0)
 				Utility.AssignRandomFacialHair(this, hairHue);
+
+			SetStr(20);
+			SetDex(150);
+			SetInt(125);
+
+			SetDamage(9, 15);
+
+			SetDamageType(ResistanceType.Physical, 100);
+
+			SetResistance(ResistanceType.Physical, 80, 90);
+			SetResistance(ResistanceType.Fire, 40, 50);
+			SetResistance(ResistanceType.Cold, 40, 50);
+			SetResistance(ResistanceType.Poison, 40, 50);
+			SetResistance(ResistanceType.Energy, 40, 50);
+
+			SetSkill(SkillName.EvalInt, 70.1, 80.0);
+			SetSkill(SkillName.Magery, 70.1, 80.0);
+			SetSkill(SkillName.Meditation, 70.1, 80.0);
+			SetSkill(SkillName.MagicResist, 50.5, 100.0);
+			SetSkill(SkillName.Tactics, 10.1, 20.0);
+			SetSkill(SkillName.Wrestling, 10.1, 12.5);
 		}
 
 		public KuyaMage(Serial serial)

@@ -713,7 +713,9 @@ namespace Server.Spells
 
 		public virtual TimeSpan GetCastRecovery()
 		{
-			int fcrDelay = -CastRecoveryFastScalar;
+			int fcr = AosAttributes.GetValue(m_Caster, AosAttribute.CastRecovery);
+
+            int fcrDelay = -(CastRecoveryFastScalar * fcr);
 
 			int delay = CastRecoveryBase + fcrDelay;
 
@@ -725,7 +727,7 @@ namespace Server.Spells
 
         public virtual TimeSpan CastDelayBase => GetCastDelayBase(GetAptitudeValue());
         public virtual double CastDelayFastScalar => 1.0;
-		public virtual double CastDelaySecondsPerTick => 1.0;
+		public virtual double CastDelaySecondsPerTick => 0.25;
         public virtual TimeSpan CastDelayMinimum => TimeSpan.FromSeconds(0.5);
 
 
@@ -734,23 +736,25 @@ namespace Server.Spells
 			switch(requiredAptitudeValue)
 			{
 				case 1:
-				case 2: return TimeSpan.FromSeconds(1.5);
+				case 2: return TimeSpan.FromSeconds(2.0);
 				case 3: 
-				case 4: return TimeSpan.FromSeconds(2.0);
+				case 4: return TimeSpan.FromSeconds(2.5);
 				case 5:
-				case 6: return TimeSpan.FromSeconds(2.5);
+				case 6: return TimeSpan.FromSeconds(3.0);
 				case 7:
-				case 8: return TimeSpan.FromSeconds(3.0);
+				case 8: return TimeSpan.FromSeconds(3.5);
 				case 9: 
 				case 10: 
-				default: return TimeSpan.FromSeconds(3.5);
+				default: return TimeSpan.FromSeconds(4.0);
 			}
 		}
 
 		public virtual TimeSpan GetCastDelay()
 		{
+			int fc = AosAttributes.GetValue(m_Caster, AosAttribute.CastSpeed);
+
 			TimeSpan baseDelay = GetCastDelayBase(GetAptitudeValue());
-			TimeSpan fcDelay = TimeSpan.FromSeconds(-(CastDelayFastScalar * CastDelaySecondsPerTick));
+			TimeSpan fcDelay = TimeSpan.FromSeconds(-(CastDelayFastScalar * fc * CastDelaySecondsPerTick));
 			TimeSpan delay = baseDelay + fcDelay;
 
 			if (InquisitionSpell.IsActive(Caster))

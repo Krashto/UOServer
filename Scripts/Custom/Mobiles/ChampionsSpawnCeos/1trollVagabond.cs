@@ -13,6 +13,8 @@ namespace Server.Mobiles
             Body = 53;
             BaseSoundID = 461;
 
+			AddItem(new Bow());
+
 			SetStr(146, 175);
 			SetDex(101, 130);
 			SetInt(120, 135);
@@ -37,8 +39,6 @@ namespace Server.Mobiles
 
 			Fame = 6500;
 			Karma = -6500;
-
-			AddItem(new Bow());
 		}
 
         public Trollvagabond(Serial serial)

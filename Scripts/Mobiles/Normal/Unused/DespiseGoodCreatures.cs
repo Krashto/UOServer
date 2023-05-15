@@ -195,13 +195,14 @@ namespace Server.Engines.Despise
             Body = 101;
             BaseSoundID = 679;
 
-            SetSkill(SkillName.Archery, SkillStart);
+			AddItem(new Bow());
+			PackItem(new Arrow(Utility.RandomMinMax(5, 10)));
+
+			SetSkill(SkillName.Archery, SkillStart);
 
             Fame = GetFame;
             Karma = GetKarmaGood;
 
-            AddItem(new Bow());
-            PackItem(new Arrow(Utility.RandomMinMax(5, 10)));
             Power = powerLevel;
 
             RangeFight = 8;

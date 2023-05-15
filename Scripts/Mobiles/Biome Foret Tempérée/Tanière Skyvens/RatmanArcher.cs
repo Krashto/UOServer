@@ -14,6 +14,8 @@ namespace Server.Mobiles
             Body = 0x8E;
             BaseSoundID = 437;
 
+			AddItem(new Bow());
+
 			SetStr(173, 269);
 			SetDex(115, 192);
 			SetInt(96, 154);
@@ -23,7 +25,6 @@ namespace Server.Mobiles
 			SetDamage(23, 39);
 
 			SetDamageType(ResistanceType.Physical, 100);
-
 
 			SetResistance(ResistanceType.Physical, 75, 75);
 			SetResistance(ResistanceType.Fire, 25, 25);
@@ -38,12 +39,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 35.1, 50.0);
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
-
-
-		//	Fame = 6500;
-        //    Karma = -6500;
-
-            AddItem(new Bow());
         }
 
         public RatmanArcher(Serial serial)

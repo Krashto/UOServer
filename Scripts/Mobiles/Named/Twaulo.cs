@@ -17,7 +17,9 @@ namespace Server.Mobiles
             BaseSoundID = 679;
             Hue = 0x455;
 
-            SetStr(1751, 1950);
+			AddItem(new Bow());
+
+			SetStr(1751, 1950);
             SetDex(251, 450);
             SetInt(801, 1000);
 
@@ -41,11 +43,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 50.3, 80.0);
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.Wrestling, 95.1, 100.0);
-
-            Fame = 50000;
-            Karma = 50000;
-
-            AddItem(new Bow());
         }
 
         public Twaulo(Serial serial)

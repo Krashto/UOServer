@@ -15,7 +15,15 @@ namespace Server.Mobiles
             Hue = Utility.RandomSkinHue();
             Utility.AssignRandomHair(this);
 
-            SetStr(150, 200);
+			AddItem(new TricorneHat(1));
+			AddItem(new LeatherArms());
+			AddItem(new FancyShirt(1));
+			AddItem(new ShortPants(1));
+			AddItem(new Cutlass());
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new GoldEarrings());
+
+			SetStr(150, 200);
             SetDex(150);
             SetInt(95, 110);
 
@@ -35,18 +43,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 110.0, 120.0);
             SetSkill(SkillName.Tactics, 110.0, 120.0);
             SetSkill(SkillName.Anatomy, 110.0, 120.0);
-
-            Fame = 8000;
-            Karma = -8000;
-
-            AddItem(new TricorneHat(1));
-            AddItem(new LeatherArms());
-            AddItem(new FancyShirt(1));
-            AddItem(new ShortPants(1));
-            AddItem(new Cutlass());
-            AddItem(new Boots(Utility.RandomNeutralHue()));
-            AddItem(new GoldEarrings());
-
         }
 
         public override bool OnBeforeDeath()

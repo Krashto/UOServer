@@ -1,58 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Server.Multis;
-using Server.Mobiles;
-using Server.Network;
-using Server.ContextMenus;
-using Server.Spells;
-using Server.Targeting;
-using Server.Misc;
-
 namespace Server.Items
 {
 	public class CarteChevalSquelettique : BaseCard
 	{
+		public override int Level => 4;
+		public override CardEnchantType EnchantType => CardEnchantType.BonusStam;
 
 		[Constructable]
-		public CarteChevalSquelettique() : base()
+		public CarteChevalSquelettique() : base(1940)
 		{
-			Weight = 0.2;  // ?
 			Name = "Carte Cheval Squelettique";
-			Hue = 1940;
 		}
-		public override void GetProperties(ObjectPropertyList list)
-		{
-			base.GetProperties(list);
-			list.Add(String.Format("[Defense accrue +2]"));
-		}
-		public override bool CanEnchant(Item item, Mobile from)
-		{
-			if (item is BaseJewel)
-			{
-				return true;
-			}
-
-
-			from.SendMessage("Vous pouvez enchanter que les Bijoux avec cette carte.");
-
-			return base.CanEnchant(item, from);
-		}
-
-		public override void Enchant(Item item, Mobile from)
-		{
-
-			int augmentper = 2;
-
-			if (item is BaseJewel Jewel)
-			{
-				Jewel.Attributes.DefendChance += augmentper;
-			}
-
-
-			base.Enchant(item, from);
-		}
-
 
 		public CarteChevalSquelettique(Serial serial) : base(serial)
 		{

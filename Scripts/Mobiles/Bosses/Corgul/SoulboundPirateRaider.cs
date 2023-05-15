@@ -33,7 +33,28 @@ namespace Server.Mobiles
             Hue = Utility.RandomSkinHue();
             Utility.AssignRandomHair(this);
 
-            SetStr(150, 200);
+			AddItem(new TricorneHat());
+			AddItem(new LeatherArms());
+			AddItem(new FancyShirt());
+			AddItem(new ShortPants());
+			AddItem(new Cutlass());
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new GoldEarrings());
+
+			Item bow;
+
+			switch (Utility.Random(4))
+			{
+				default:
+				case 0: bow = new CompositeBow(); break;
+				case 1: bow = new Crossbow(); break;
+				case 2: bow = new Bow(); break;
+				case 3: bow = new HeavyCrossbow(); break;
+			}
+
+			AddItem(bow);
+
+			SetStr(150, 200);
             SetDex(125, 150);
             SetInt(95, 110);
 
@@ -53,30 +74,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Archery, 90.0, 105.5);
             SetSkill(SkillName.Tactics, 90.0, 105.5);
             SetSkill(SkillName.Anatomy, 90.0, 105.5);
-
-            Fame = 2000;
-            Karma = -2000;
-
-            AddItem(new TricorneHat());
-            AddItem(new LeatherArms());
-            AddItem(new FancyShirt());
-            AddItem(new ShortPants());
-            AddItem(new Cutlass());
-            AddItem(new Boots(Utility.RandomNeutralHue()));
-            AddItem(new GoldEarrings());
-
-            Item bow;
-
-            switch (Utility.Random(4))
-            {
-                default:
-                case 0: bow = new CompositeBow();break;
-                case 1: bow = new Crossbow(); break;
-                case 2: bow = new Bow(); break;
-                case 3: bow = new HeavyCrossbow(); break;
-            }
-
-            AddItem(bow);
         }
 
         public override bool OnBeforeDeath()

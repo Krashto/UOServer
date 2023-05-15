@@ -33,6 +33,12 @@ namespace Server.Mobiles
 
 			Race = BaseRace.GetRace(Utility.Random(4));
 
+			AddItem(new ThighBoots(Utility.RandomRedHue()));
+			AddItem(new Surcoat(Utility.RandomRedHue()));
+			AddItem(new ExecutionersAxe());
+
+			Utility.AssignRandomHair(this);
+
 			SetStr(386, 400);
             SetDex(151, 165);
             SetInt(161, 175);
@@ -55,15 +61,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 125.0);
             SetSkill(SkillName.Tactics, 125.0);
             SetSkill(SkillName.Lumberjacking, 125.0);
-
-            Fame = 5000;
-            Karma = -5000;
-
-            AddItem(new ThighBoots(Utility.RandomRedHue()));
-            AddItem(new Surcoat(Utility.RandomRedHue()));
-            AddItem(new ExecutionersAxe());
-
-            Utility.AssignRandomHair(this);
         }
 
         public Executioner(Serial serial)

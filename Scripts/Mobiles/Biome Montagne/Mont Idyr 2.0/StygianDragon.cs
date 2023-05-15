@@ -106,16 +106,6 @@ namespace Server.Mobiles
             }
         }
 
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
-
-            c.DropItem(new StygianDragonHead());
-
-            if (Paragon.ChestChance > Utility.RandomDouble())
-                c.DropItem(new ParagonChest(Name, 5));
-        }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

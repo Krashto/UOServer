@@ -13,7 +13,9 @@ namespace Server.Mobiles
             Body = 0x8E;
             BaseSoundID = 437;
 
-            SetStr(300, 330);
+			AddItem(new Bow());
+
+			SetStr(300, 330);
             SetDex(220, 240);
             SetInt(240, 275);
 
@@ -34,11 +36,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 76.8, 99.3);
             SetSkill(SkillName.Tactics, 64.2, 84.4);
             SetSkill(SkillName.Wrestling, 62.8, 85.0);
-
-            Fame = 6500;
-            Karma = -6500;
-
-            AddItem(new Bow());
         }
 
         public ClanCT(Serial serial)

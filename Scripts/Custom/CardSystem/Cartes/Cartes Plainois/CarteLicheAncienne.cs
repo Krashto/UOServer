@@ -1,58 +1,15 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Server.Multis;
-using Server.Mobiles;
-using Server.Network;
-using Server.ContextMenus;
-using Server.Spells;
-using Server.Targeting;
-using Server.Misc;
-
 namespace Server.Items
 {
 	public class CarteLicheAncienne : BaseCard
 	{
+		public override int Level => 4;
+		public override CardEnchantType EnchantType => CardEnchantType.ColdResistance;
 
 		[Constructable]
-		public CarteLicheAncienne() : base()
+		public CarteLicheAncienne() : base(1940)
 		{
-			Weight = 0.2;  // ?
 			Name = "Carte Liche Ancienne";
-			Hue = 1940;
 		}
-		public override void GetProperties(ObjectPropertyList list)
-		{
-			base.GetProperties(list);
-			list.Add(String.Format("[Resistance Froid +4]"));
-		}
-		public override bool CanEnchant(Item item, Mobile from)
-		{
-			if (item is BaseJewel)
-			{
-				return true;
-			}
-
-
-			from.SendMessage("Vous pouvez enchanter que les Bijoux avec cette carte.");
-
-
-			return base.CanEnchant(item, from);
-		}
-
-		public override void Enchant(Item item, Mobile from)
-		{
-
-			int augmentper = 4;
-
-			if (item is BaseJewel Jewel)
-			{
-				Jewel.Resistances.Cold += augmentper;
-			}
-
-			base.Enchant(item, from);
-		}
-
 
 		public CarteLicheAncienne(Serial serial) : base(serial)
 		{

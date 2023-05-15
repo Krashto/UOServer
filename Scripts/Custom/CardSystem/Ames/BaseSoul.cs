@@ -1,17 +1,14 @@
 namespace Server.Items
 {
-	public class CarteSeigneurLiche : BaseCard
+	public abstract class BaseSoul : Item
 	{
-		public override int Level => 4;
-		public override CardEnchantType EnchantType => CardEnchantType.PoisonResistance;
-
-		[Constructable]
-		public CarteSeigneurLiche() : base(1940)
+		public BaseSoul(int hue, int itemId) : base(itemId)
 		{
-			Name = "Carte Seigneur Liche";
+			Hue = hue;
+			Weight = 1.0;
 		}
 
-		public CarteSeigneurLiche( Serial serial ) : base( serial )
+		public BaseSoul( Serial serial ) : base( serial )
 		{
 		}
 

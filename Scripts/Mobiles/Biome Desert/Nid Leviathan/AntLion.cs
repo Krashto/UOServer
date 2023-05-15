@@ -39,9 +39,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 70.0);
             SetSkill(SkillName.Tactics, 90.0);
             SetSkill(SkillName.Wrestling, 90.0);
-
-     //       Fame = 4500;
-     //       Karma = -4500;
            
             SetSpecialAbility(SpecialAbility.DragonBreath);
         }

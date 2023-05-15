@@ -16,7 +16,9 @@ namespace Server.Mobiles
             Body = 0x8E;
             BaseSoundID = 437;
 
-            SetStr(119);
+			AddItem(new Bow());
+
+			SetStr(119);
             SetDex(279);
             SetInt(327);
 
@@ -39,11 +41,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 66.0);
             SetSkill(SkillName.Tactics, 68.1);
             SetSkill(SkillName.Wrestling, 85.5);
-
-            Fame = 6500;
-            Karma = -6500;
-
-            AddItem(new Bow());
         }
 
         public RakktaviRenowned(Serial serial)

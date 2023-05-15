@@ -256,8 +256,6 @@ namespace Server.Misc
             if (from is BaseCreature && ((BaseCreature)from).Controlled)
                 gc += gc * 1.00;
 
-			gc /= 1.25;
-
             if (gc > 1.00)
                 gc = 1.00;
 

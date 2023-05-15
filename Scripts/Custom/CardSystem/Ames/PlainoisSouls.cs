@@ -1,26 +1,11 @@
-using System;
-using Server;
-using Server.Items;
-using Server.Network;
-using Server.Mobiles;
-using Server.Targeting;
-using Server.Spells;
-using Server.Gumps;
-///using Server.Custom.Enums;
-using Server.Custom;
-
 namespace Server.Items
 {
-
-	public  class AmeSquelette : Item //BaseJet
+	public  class AmeSquelette : BaseSoul
     {
 		[Constructable]
-		public AmeSquelette() : base(9660)
+		public AmeSquelette() : base(1940, 9660)
 		{
-			
-			Name = "ame de squelette";
-			Weight = 1.0;
-			Hue = 1940;
+			Name = "Âme de squelette";
         }
 
 		public AmeSquelette( Serial serial ) : base( serial )
@@ -41,16 +26,13 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeChevalSquelettique : Item //BaseJet
+
+	public class AmeChevalSquelettique : BaseSoul
 	{
 		[Constructable]
-		public AmeChevalSquelettique() : base(9751)
+		public AmeChevalSquelettique() : base(1940, 9751)
 		{
-
-			Name = "ame de cheval squelette";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de cheval squelette";
 		}
 
 		public AmeChevalSquelettique(Serial serial) : base(serial)
@@ -71,16 +53,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeMageSquelette : Item //BaseJet
+	public class AmeMageSquelette : BaseSoul
 	{
 		[Constructable]
-		public AmeMageSquelette() : base(9662)
+		public AmeMageSquelette() : base(1940, 9662)
 		{
-
-			Name = "ame de mage squelette";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de mage squelette";
 		}
 
 		public AmeMageSquelette(Serial serial) : base(serial)
@@ -101,16 +79,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeSpectre : Item //BaseJet
+	public class AmeSpectre : BaseSoul
 	{
 		[Constructable]
-		public AmeSpectre() : base(9671)
+		public AmeSpectre() : base(1940, 9671)
 		{
-
-			Name = "ame de spectre";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de spectre";
 		}
 
 		public AmeSpectre(Serial serial) : base(serial)
@@ -131,16 +105,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeLiche : Item //BaseJet
+	public class AmeLiche : BaseSoul
 	{
 		[Constructable]
-		public AmeLiche() : base(9636)
+		public AmeLiche() : base(1940, 9636)
 		{
-
-			Name = "ame de liche";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de liche";
 		}
 
 		public AmeLiche(Serial serial) : base(serial)
@@ -161,16 +131,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeSquelRapiece : Item //BaseJet
+	public class AmeSquelRapiece : BaseSoul
 	{
 		[Constructable]
-		public AmeSquelRapiece() : base(9769)
+		public AmeSquelRapiece() : base(1940, 9769)
 		{
-
-			Name = "ame de squelette rapiece";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de squelette rapiece";
 		}
 
 		public AmeSquelRapiece(Serial serial) : base(serial)
@@ -191,16 +157,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeWight : Item //BaseJet
+	public class AmeWight : BaseSoul
 	{
 		[Constructable]
-		public AmeWight() : base(10092)
+		public AmeWight() : base(1940, 10092)
 		{
-
-			Name = "ame de wight";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de wight";
 		}
 
 		public AmeWight(Serial serial) : base(serial)
@@ -221,16 +183,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeSpectreAstral : Item //BaseJet
+	public class AmeSpectreAstral : BaseSoul
 	{
 		[Constructable]
-		public AmeSpectreAstral() : base(17054)
+		public AmeSpectreAstral() : base(1940, 17054)
 		{
-
-			Name = "ame de spectre astral";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de spectre astral";
 		}
 
 		public AmeSpectreAstral(Serial serial) : base(serial)
@@ -251,16 +209,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeChevalierSquelettique : Item //BaseJet
+	public class AmeChevalierSquelettique : BaseSoul
 	{
 		[Constructable]
-		public AmeChevalierSquelettique() : base(9661)
+		public AmeChevalierSquelettique() : base(1940, 9661)
 		{
-
-			Name = "ame de chevalier squelette";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de chevalier squelette";
 		}
 
 		public AmeChevalierSquelettique(Serial serial) : base(serial)
@@ -281,16 +235,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeSeigneurLiche : Item //BaseJet
+	public class AmeSeigneurLiche : BaseSoul
 	{
 		[Constructable]
-		public AmeSeigneurLiche() : base(9637)
+		public AmeSeigneurLiche() : base(1940, 9637)
 		{
-
-			Name = "ame de seigneur liche";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de seigneur liche";
 		}
 
 		public AmeSeigneurLiche(Serial serial) : base(serial)
@@ -311,16 +261,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeCauchemar : Item //BaseJet
+	public class AmeCauchemar : BaseSoul
 	{
 		[Constructable]
-		public AmeCauchemar() : base(9628)
+		public AmeCauchemar() : base(1940, 9628)
 		{
-
-			Name = "ame de cauchemar";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de cauchemar";
 		}
 
 		public AmeCauchemar(Serial serial) : base(serial)
@@ -341,19 +287,15 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeDragonSquel : Item //BaseJet
+	public class AmeDragonSquelettique : BaseSoul
 	{
 		[Constructable]
-		public AmeDragonSquel() : base(8406)
+		public AmeDragonSquelettique() : base(1940, 8406)
 		{
-
-			Name = "ame de dragon squelettique";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de dragon squelettique";
 		}
 
-		public AmeDragonSquel(Serial serial) : base(serial)
+		public AmeDragonSquelettique(Serial serial) : base(serial)
 		{
 		}
 
@@ -371,16 +313,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeLicheAncienne : Item //BaseJet
+	public class AmeLicheAncienne : BaseSoul
 	{
 		[Constructable]
-		public AmeLicheAncienne() : base(9637)
+		public AmeLicheAncienne() : base(1940, 9637)
 		{
-
-			Name = "ame de liche ancienne";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de liche ancienne";
 		}
 
 		public AmeLicheAncienne(Serial serial) : base(serial)
@@ -401,19 +339,15 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeLicheSquel : Item //BaseJet
+	public class AmeLicheSquelettique : BaseSoul
 	{
 		[Constructable]
-		public AmeLicheSquel() : base(9769)
+		public AmeLicheSquelettique() : base(1940, 9769)
 		{
-
-			Name = "ame de liche squelettique";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de liche squelettique";
 		}
 
-		public AmeLicheSquel(Serial serial) : base(serial)
+		public AmeLicheSquelettique(Serial serial) : base(serial)
 		{
 		}
 
@@ -431,16 +365,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeDemonOs : Item //BaseJet
+	public class AmeDemonOs : BaseSoul
 	{
 		[Constructable]
-		public AmeDemonOs() : base(9768)
+		public AmeDemonOs() : base(1940, 9768)
 		{
-
-			Name = "ame de demon d'os";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de demon d'os";
 		}
 
 		public AmeDemonOs(Serial serial) : base(serial)
@@ -461,16 +391,13 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeLadyMelisande : Item //BaseJet
+
+	public class AmeLadyMelisande : BaseSoul
 	{
 		[Constructable]
-		public AmeLadyMelisande() : base(9636)
+		public AmeLadyMelisande() : base(1940, 9636)
 		{
-
-			Name = "ame de lady melisande";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de lady melisande";
 		}
 
 		public AmeLadyMelisande(Serial serial) : base(serial)
@@ -491,16 +418,12 @@ namespace Server.Items
 			int version = reader.ReadInt();
 		}
 	}
-	public class AmeSerado : Item //BaseJet
+	public class AmeSerado : BaseSoul
 	{
 		[Constructable]
-		public AmeSerado() : base(10097)
+		public AmeSerado() : base(1940, 10097)
 		{
-
-			Name = "ame de serado";
-			Weight = 1.0;
-			Hue = 1940;
-
+			Name = "Âme de serado";
 		}
 
 		public AmeSerado(Serial serial) : base(serial)

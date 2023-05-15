@@ -31,6 +31,61 @@ namespace Server.Mobiles
 				Name = NameList.RandomName("tokuno male");
 			}
 
+			LeatherNinjaBelt belt = new LeatherNinjaBelt
+			{
+				UsesRemaining = 20,
+				Poison = Poison.Greater,
+				PoisonCharges = 20,
+				Movable = false
+			};
+			AddItem(belt);
+
+			int amount = Skills[SkillName.Ninjitsu].Value >= 100 ? 2 : 1;
+
+			for (int i = 0; i < amount; i++)
+			{
+				Fukiya f = new Fukiya
+				{
+					UsesRemaining = 10,
+					Poison = amount == 1 ? Poison.Regular : Poison.Greater,
+					PoisonCharges = 10,
+					Movable = false
+				};
+				PackItem(f);
+			}
+
+			AddItem(new NinjaTabi());
+			AddItem(new LeatherNinjaJacket());
+			AddItem(new LeatherNinjaHood());
+			AddItem(new LeatherNinjaPants());
+			AddItem(new LeatherNinjaMitts());
+
+			if (Utility.RandomDouble() < 0.33)
+				PackItem(new SmokeBomb());
+
+			if (Utility.RandomBool())
+				PackItem(new Tessen());
+			else
+				PackItem(new Wakizashi());
+
+			if (Utility.RandomBool())
+				PackItem(new Nunchaku());
+			else
+				PackItem(new Daisho());
+
+			if (Utility.RandomBool())
+				PackItem(new Sai());
+			else
+				PackItem(new Tekagi());
+
+			if (Utility.RandomBool())
+				PackItem(new Kama());
+			else
+				PackItem(new Katana());
+
+			Utility.AssignRandomHair(this);
+			ChangeWeapon();
+
 			SetHits(251, 350);
 
             SetStr(126, 225);
@@ -60,65 +115,9 @@ namespace Server.Mobiles
 
             SetSkill(SkillName.Ninjitsu, 95.0, 120.0);
             SetSkill(SkillName.Hiding, 100.0);
-        //    SetSkill(SkillName.Stealth, 120.0);
 
             Fame = 8500;
             Karma = -8500;
-
-            LeatherNinjaBelt belt = new LeatherNinjaBelt
-            {
-                UsesRemaining = 20,
-                Poison = Poison.Greater,
-                PoisonCharges = 20,
-                Movable = false
-            };
-            AddItem(belt);
-
-            int amount = Skills[SkillName.Ninjitsu].Value >= 100 ? 2 : 1;
-
-            for (int i = 0; i < amount; i++)
-            {
-                Fukiya f = new Fukiya
-                {
-                    UsesRemaining = 10,
-                    Poison = amount == 1 ? Poison.Regular : Poison.Greater,
-                    PoisonCharges = 10,
-                    Movable = false
-                };
-                PackItem(f);
-            }
-
-            AddItem(new NinjaTabi());
-            AddItem(new LeatherNinjaJacket());
-            AddItem(new LeatherNinjaHood());
-            AddItem(new LeatherNinjaPants());
-            AddItem(new LeatherNinjaMitts());
-
-            if (Utility.RandomDouble() < 0.33)
-                PackItem(new SmokeBomb());
-
-            if (Utility.RandomBool())
-                PackItem(new Tessen());
-            else
-                PackItem(new Wakizashi());
-
-            if (Utility.RandomBool())
-                PackItem(new Nunchaku());
-            else
-                PackItem(new Daisho());
-
-            if (Utility.RandomBool())
-                PackItem(new Sai());
-            else
-                PackItem(new Tekagi());
-
-            if (Utility.RandomBool())
-                PackItem(new Kama());
-            else
-                PackItem(new Katana());
-
-            Utility.AssignRandomHair(this);
-            ChangeWeapon();
         }
 
         public override bool BardImmune => true;

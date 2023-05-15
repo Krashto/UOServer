@@ -21,7 +21,8 @@ namespace Server.Mobiles
 			SetDamage(23, 39);
 
 			SetDamageType(ResistanceType.Physical, 100);
-			
+
+			AddItem(new Bow());
 
 			SetResistance(ResistanceType.Physical, 45, 55);
 			SetResistance(ResistanceType.Fire, 45, 55);
@@ -36,9 +37,6 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 35.1, 50.0);
 			SetSkill(SkillName.Tactics, 35.1, 50.0);
 			SetSkill(SkillName.Wrestling, 35.1, 50.0);
-
-
-			AddItem(new Bow());
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Colline;

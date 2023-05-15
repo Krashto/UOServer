@@ -13,7 +13,9 @@ namespace Server.Mobiles
             Body = 101;
             BaseSoundID = 679;
 
-            SetStr(202, 300);
+			AddItem(new Bow());
+
+			SetStr(202, 300);
             SetDex(104, 260);
             SetInt(91, 100);
 
@@ -34,11 +36,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 50.3, 80.0);
             SetSkill(SkillName.Tactics, 90.1, 100.0);
             SetSkill(SkillName.Wrestling, 95.1, 100.0);
-
-          //  Fame = 6500;
-          //  Karma = 0;
-
-            AddItem(new Bow());
         }
 
         public Centaur(Serial serial)

@@ -19,7 +19,11 @@ namespace Server.Mobiles
             Female = true;
             Body = 186;
 
-            SetStr(126, 145);
+			AddItem(new BoneArms());
+			AddItem(new BoneLegs());
+			AddItem(new DeerMask());
+
+			SetStr(126, 145);
             SetDex(91, 110);
             SetInt(161, 185);
 
@@ -42,13 +46,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 62.5, 85.0);
             SetSkill(SkillName.Tactics, 62.5, 85.0);
             SetSkill(SkillName.Wrestling, 62.5, 85.0);
-
-            Fame = 1000;
-            Karma = -1000;
-
-            AddItem(new BoneArms());
-            AddItem(new BoneLegs());
-            AddItem(new DeerMask());
         }
 
         public SavageShaman(Serial serial)

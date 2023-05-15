@@ -16,7 +16,9 @@ namespace Server.Mobiles
             Name = "a meer captain";
             Body = 773;
 
-            SetStr(96, 110);
+			AddItem(new Crossbow());
+
+			SetStr(96, 110);
             SetDex(186, 200);
             SetInt(96, 110);
 
@@ -37,11 +39,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 90.1, 100.0);
             SetSkill(SkillName.Tactics, 91.0, 100.0);
             SetSkill(SkillName.Wrestling, 80.9, 89.9);
-
-            Fame = 2000;
-            Karma = 5000;
-
-            AddItem(new Crossbow());
 
             m_NextAbilityTime = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(2, 5));
         }

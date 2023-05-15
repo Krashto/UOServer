@@ -1104,19 +1104,19 @@ namespace Server.Engines.Harvest
                 base.FinishHarvesting(from, tool, def, toHarvest, locked);
         }
 
-        public override bool CheckHarvestSkill(Map map, Point3D loc, Mobile from, HarvestResource res, HarvestDefinition def)
-        {
-            bool deepWater = IsDeepWater(loc, map);
-            double value = from.Skills[SkillName.Cooking].Value;
+        //public override bool CheckHarvestSkill(Map map, Point3D loc, Mobile from, HarvestResource res, HarvestDefinition def)
+        //{
+        //    bool deepWater = IsDeepWater(loc, map);
+        //    double value = from.Skills[SkillName.Cooking].Value;
 
-            if (deepWater && value < 75.0) // can't fish here yet
-                return from.Skills[def.Skill].Value >= res.ReqSkill;
+        //    if (deepWater && value < 75.0) // can't fish here yet
+        //        return from.Skills[def.Skill].Value >= res.ReqSkill;
 
-            if (!deepWater && value >= 75.0) // you can fish, but no gains!
-                return true;
+        //    if (!deepWater && value >= 75.0) // you can fish, but no gains!
+        //        return true;
 
-            return base.CheckHarvestSkill(map, loc, from, res, def);
-        }
+        //    return base.CheckHarvestSkill(map, loc, from, res, def);
+        //}
 
         public Type GetSpecialLavaItem(Mobile from, Item type, Map map, Point3D pnt, object toHarvest)
         {

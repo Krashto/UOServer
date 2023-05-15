@@ -39,7 +39,11 @@ namespace Server.Mobiles
 			AddItem(new ShortPants(Utility.RandomNeutralHue()));
             AddItem(new Shirt(Utility.RandomNeutralHue()));
 
-            SetStr(91, 100);
+			BaseWeapon weapon = Loot.RandomWeapon();
+			weapon.Movable = false;
+			AddItem(weapon);
+
+			SetStr(91, 100);
             SetDex(86, 95);
             SetInt(61, 70);
 
@@ -59,13 +63,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 55.0, 77.5);
             SetSkill(SkillName.Tactics, 60.0, 82.5);
             SetSkill(SkillName.Poisoning, 60.0, 82.5);
-
-            Fame = 1000;
-            Karma = -2000;
-
-            BaseWeapon weapon = Loot.RandomWeapon();
-            weapon.Movable = false;
-            AddItem(weapon);
         }
 
         public Cursed(Serial serial)

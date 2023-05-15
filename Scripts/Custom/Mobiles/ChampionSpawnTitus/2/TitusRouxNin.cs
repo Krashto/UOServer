@@ -35,6 +35,42 @@ namespace Server.Mobiles
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
 			}
 
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new FancyShirt());
+			AddItem(new Bandana());
+
+			if (Utility.RandomDouble() < 0.33)
+				PackItem(new SmokeBomb());
+
+			switch (Utility.Random(7))
+			{
+				case 0:
+					AddItem(new Longsword());
+					break;
+				case 1:
+					AddItem(new Cutlass());
+					break;
+				case 2:
+					AddItem(new Broadsword());
+					break;
+				case 3:
+					AddItem(new Axe());
+					break;
+				case 4:
+					AddItem(new Club());
+					break;
+				case 5:
+					AddItem(new Dagger());
+					break;
+				case 6:
+					AddItem(new Spear());
+					break;
+			}
+
+			Utility.AssignRandomHair(this, RouxCouleur());
+
+			ChangeWeapon();
+
 			SetHits(251, 350);
 
 			SetStr(126, 225);
@@ -87,42 +123,6 @@ namespace Server.Mobiles
 				};
 				PackItem(f);
 			}
-
-			AddItem(new Boots(Utility.RandomNeutralHue()));
-			AddItem(new FancyShirt());
-			AddItem(new Bandana());
-
-			if (Utility.RandomDouble() < 0.33)
-				PackItem(new SmokeBomb());
-
-			switch (Utility.Random(7))
-			{
-				case 0:
-					AddItem(new Longsword());
-					break;
-				case 1:
-					AddItem(new Cutlass());
-					break;
-				case 2:
-					AddItem(new Broadsword());
-					break;
-				case 3:
-					AddItem(new Axe());
-					break;
-				case 4:
-					AddItem(new Club());
-					break;
-				case 5:
-					AddItem(new Dagger());
-					break;
-				case 6:
-					AddItem(new Spear());
-					break;
-			}
-
-			Utility.AssignRandomHair(this, RouxCouleur());
-
-			ChangeWeapon();
 		}
 
 		public TitusRouxNin(Serial serial)

@@ -27,12 +27,18 @@ namespace Server.Mobiles
 				AddItem(new ShortPants(Utility.RandomNeutralHue()));
 			}
 
+
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new FancyShirt());
+			AddItem(new Bandana());
+
+			AddItem(new Bow());
+
 			SetStr(86, 100);
 			SetDex(81, 95);
 			SetInt(61, 75);
 
 			SetDamage(15, 25);
-
 
 			SetSkill(SkillName.MagicResist, 60, 80);
 			SetSkill(SkillName.Archery, 70, 110);
@@ -42,12 +48,6 @@ namespace Server.Mobiles
 
 			Fame = 1000;
 			Karma = -1000;
-
-			AddItem(new Boots(Utility.RandomNeutralHue()));
-			AddItem(new FancyShirt());
-			AddItem(new Bandana());
-
-			AddItem(new Bow());
 
 			Utility.AssignRandomHair(this, RouxCouleur());
 

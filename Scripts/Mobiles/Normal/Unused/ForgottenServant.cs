@@ -25,7 +25,39 @@ namespace Server.Mobiles
                 AddItem(new ShortPants(Utility.RandomNeutralHue()));
             }
 
-            SetStr(147, 215);
+
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new FancyShirt());
+			AddItem(new Bandana());
+
+			switch (Utility.Random(7))
+			{
+				case 0:
+					AddItem(new Longsword());
+					break;
+				case 1:
+					AddItem(new Cutlass());
+					break;
+				case 2:
+					AddItem(new Broadsword());
+					break;
+				case 3:
+					AddItem(new Axe());
+					break;
+				case 4:
+					AddItem(new Club());
+					break;
+				case 5:
+					AddItem(new Dagger());
+					break;
+				case 6:
+					AddItem(new Spear());
+					break;
+			}
+
+			Utility.AssignRandomHair(this);
+
+			SetStr(147, 215);
             SetDex(91, 115);
             SetInt(61, 85);
 
@@ -45,40 +77,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 60.1, 85.0);
             SetSkill(SkillName.Tactics, 75.1, 90.0);
             SetSkill(SkillName.Wrestling, 60.1, 85.0);
-
-            Fame = 2500;
-            Karma = -2500;
-
-            AddItem(new Boots(Utility.RandomNeutralHue()));
-            AddItem(new FancyShirt());
-            AddItem(new Bandana());
-
-            switch (Utility.Random(7))
-            {
-                case 0:
-                    AddItem(new Longsword());
-                    break;
-                case 1:
-                    AddItem(new Cutlass());
-                    break;
-                case 2:
-                    AddItem(new Broadsword());
-                    break;
-                case 3:
-                    AddItem(new Axe());
-                    break;
-                case 4:
-                    AddItem(new Club());
-                    break;
-                case 5:
-                    AddItem(new Dagger());
-                    break;
-                case 6:
-                    AddItem(new Spear());
-                    break;
-            }
-
-            Utility.AssignRandomHair(this);
         }
 
         public ForgottenServant(Serial serial)

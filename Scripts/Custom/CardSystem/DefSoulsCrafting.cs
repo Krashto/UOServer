@@ -1,7 +1,6 @@
 ﻿using System;
 using Server.Items;
-using Server.Mobiles;
-using Server.Engines.CannedEvil;
+using Server.Custom;
 
 namespace Server.Engines.Craft
 {
@@ -35,16 +34,9 @@ namespace Server.Engines.Craft
 		{
 		}
 
-
-
 		public override void PlayCraftEffect( Mobile from )
 		{
 			from.PlaySound( 0x1F5 ); // magic
-
-			//if ( from.Body.Type == BodyType.Human && !from.Mounted )
-			//	from.Animate( 9, 5, 1, true, false, 0 );
-
-			//new InternalTimer( from ).Start();
 		}
 
 		// Delay to synchronize the sound with the hit on the anvil
@@ -78,76 +70,57 @@ namespace Server.Engines.Craft
 			}
 			else
 			{
-				//from.PlaySound( 65 ); // rune breaking
-				//if ( quality == 0 )
-					//return 502785; // You were barely able to make this item.  It's quality is below average.
-				//else if ( makersMark && quality == 2 )
-					//return 1044156; // You create an exceptional quality item and affix your maker's mark.
-				//else if ( quality == 2 )
-					//return 1044155; // You create an exceptional quality item.
-				//else				
-					return 1044154; // You create the item.
+				return 1044154; // You create the item.
+			}
+		}
+
+		public void AddCard(string category, Type itemType, Type soulType, double minSkill)
+		{
+			var item = Activator.CreateInstance(itemType) as BaseCard;
+			var soul = Activator.CreateInstance(soulType) as BaseSoul;
+
+			int index = -1;
+
+			if (item != null)
+			{
+				var name = CustomUtility.GetDescription(item.EnchantType);
+				name = name.Replace("regénération de points", "régen.");
+				name = name.Replace("regénération", "régen.");
+				name = name.Replace("enchainement", "enchan.");
+
+				index = AddCraft(itemType, category, name, minSkill, minSkill + 10, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
+				item.Delete();
+			}
+			else
+				index = AddCraft(itemType, category, "Erreur", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
+
+			if (soul != null)
+			{
+				AddRes(index, soulType, soul.Name, 1, $"Il vous manquent une {soul.Name}");
+				soul.Delete();
 			}
 		}
 
 		public override void InitCraftList()
 		{
-		
-			int
-
 			#region Carte Plainois
-			index = AddCraft( typeof( CarteSquelette ), "Cartes Plainois", "Bonus de Vie", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeSquelette), "Ame de Squelette", 1, "Il vous manquent une ame de Squelette");
-
-			index = AddCraft(typeof(CarteChevalSquelettique), "Cartes Plainois", "Bonus de Stam", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeChevalSquelettique), "Ame de Cheval Squelettique", 1, "Il vous manquent une ame de Cheval Squelettique");
-
-			index = AddCraft(typeof(CarteMageSquelettique), "Cartes Plainois", "Bonus de Mana", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeMageSquelette), "Ame de mage Squelette", 1, "Il vous manquent une ame de mage Squelette");
-
-			index = AddCraft(typeof(CarteSpectre), "Cartes Plainois", "Réduction en cout de mana", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeSpectre), "Ame de spectre", 1, "Il vous manquent une ame de spectre");
-
-			index = AddCraft(typeof(CarteLiche), "Cartes Plainois", "Réduction en cout d'ingrédients", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeLiche), "Ame de Liche", 1, "Il vous manquent une ame de Liche");
-
-			index = AddCraft(typeof(CarteSqueletteRapiece), "Cartes Plainois", "Vitesse d'Attaque", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeSquelRapiece), "Ame de Squelette rapiece", 1, "Il vous manquent une ame de Squelette rapiece");
-
-			index = AddCraft(typeof(CarteWight), "Cartes Plainois", "Défense Accrue", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeWight), "Ame de Wight", 1, "Il vous manquent une ame de wight");
-
-			index = AddCraft(typeof(CarteSpectreAstral), "Cartes Plainois", "Chance de Toucher", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeSpectreAstral), "Ame de Spectre Astral", 1, "Il vous manquent une ame de Spectre Astral");
-
-			index = AddCraft(typeof(CarteChevalierSquelettique), "Cartes Plainois", "Résistance Physique", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeChevalierSquelettique), "Ame de Chevalier Squelettique", 1, "Il vous manquent une ame de Chevalier Squelettique");
-
-			index = AddCraft(typeof(CarteSeigneurLiche), "Cartes Plainois", "Résistance au Poison", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeSeigneurLiche), "Ame de Seigneur Liche", 1, "Il vous manquent une ame de Seigneur Liche");
-
-			index = AddCraft(typeof(CarteCauchemar), "Cartes Plainois", "Résistance au Feu", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeCauchemar), "Ame de Cauchemar", 1, "Il vous manquent une ame de Cauchemar");
-
-			index = AddCraft(typeof(CarteDragonSquelettique), "Cartes Plainois", "Resistance à l'Énergie", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeDragonSquel), "Ame de Dragon Squelette", 1, "Il vous manquent une ame de Dragon Squelette");
-
-			index = AddCraft(typeof(CarteLicheAncienne), "Cartes Plainois", "Résistance au Froid", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeLicheAncienne), "Ame de Liche Ancienne", 1, "Il vous manquent une ame de Liche Ancienne");
-
-			index = AddCraft(typeof(CarteLicheSquelettique), "Cartes Plainois", "Récupération de sortilège", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeLicheSquel), "Ame de Liche Squelettique", 1, "Il vous manquent une ame de Liche Squelettique");
-
-			index = AddCraft(typeof(CarteDemonOs), "Cartes Plainois", "Vitesse d'incantation de sortilège", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeDemonOs), "Ame de Demon d'os", 1, "Il vous manquent une ame de Demon d'os");
-
-			index = AddCraft(typeof(CarteMelisande), "Cartes Plainois", "Régénération de vie", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeLadyMelisande), "Ame de Lady Melisande", 1, "Il vous manquent une ame de Lady Melisande");
-
-			index = AddCraft(typeof(CarteSerado), "Cartes Plainois", "Regénération de Mana", 0.0, 30.0, typeof(BlankScroll), "Parchemin vierge", 5, "Il vous faut un parchemin vierge.");
-			AddRes(index, typeof(AmeSerado), "Ame de Serado", 1, "Il vous manquent une ame de Serado");
+			AddCard("Cartes plainoises", typeof(CarteSquelette), typeof(AmeSquelette), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteChevalSquelettique), typeof(AmeChevalSquelettique), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteMageSquelettique), typeof(AmeMageSquelette), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteSpectre), typeof(AmeSpectre), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteLiche), typeof(AmeLiche), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteSqueletteRapiece), typeof(AmeSquelRapiece), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteWight), typeof(AmeWight), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteChevalierSquelettique), typeof(AmeChevalierSquelettique), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteSeigneurLiche), typeof(AmeSeigneurLiche), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteCauchemar), typeof(AmeCauchemar), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteDragonSquelettique), typeof(AmeDragonSquelettique), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteLicheAncienne), typeof(AmeLicheAncienne), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteLicheSquelettique), typeof(AmeLicheSquelettique), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteDemonOs), typeof(AmeDemonOs), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteMelisande), typeof(AmeLadyMelisande), 50.0);
+			AddCard("Cartes plainoises", typeof(CarteSerado), typeof(AmeSerado), 50.0);
 			#endregion
-
 		}
 
 		public override int CanCraft(Mobile from, ITool tool, Type itemType)

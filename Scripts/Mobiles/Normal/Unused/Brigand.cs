@@ -6,10 +6,8 @@ namespace Server.Mobiles
     public class Brigand : BaseCreature
     {
         [Constructable]
-        public Brigand()
-            : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
+        public Brigand() : base(AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
-
 			Race = Race.Human;
             SpeechHue = Utility.RandomDyedHue();
             Title = " Brigand";
@@ -28,7 +26,39 @@ namespace Server.Mobiles
                 AddItem(new ShortPants(Utility.RandomNeutralHue()));
             }
 
-            SetStr(86, 100);
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new FancyShirt());
+			AddItem(new Bandana());
+			AddItem(new Backpack());
+
+			switch (Utility.Random(7))
+			{
+				case 0:
+					AddItem(new Longsword());
+					break;
+				case 1:
+					AddItem(new Cutlass());
+					break;
+				case 2:
+					AddItem(new Broadsword());
+					break;
+				case 3:
+					AddItem(new Axe());
+					break;
+				case 4:
+					AddItem(new Club());
+					break;
+				case 5:
+					AddItem(new Dagger());
+					break;
+				case 6:
+					AddItem(new Spear());
+					break;
+			}
+
+			Utility.AssignRandomHair(this);
+
+			SetStr(86, 100);
             SetDex(81, 95);
             SetInt(61, 75);
 			SetHits(58, 72);
@@ -40,42 +70,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 65.0, 87.5);
             SetSkill(SkillName.Tactics, 65.0, 87.5);
             SetSkill(SkillName.Wrestling, 15.0, 37.5);
-
-            //Fame = 1000;
-            //Karma = -1000;
-
-            AddItem(new Boots(Utility.RandomNeutralHue()));
-            AddItem(new FancyShirt());
-            AddItem(new Bandana());
-			AddItem(new Backpack());
-			
-
-            switch (Utility.Random(7))
-            {
-                case 0:
-                    AddItem(new Longsword());
-                    break;
-                case 1:
-                    AddItem(new Cutlass());
-                    break;
-                case 2:
-                    AddItem(new Broadsword());
-                    break;
-                case 3:
-                    AddItem(new Axe());
-                    break;
-                case 4:
-                    AddItem(new Club());
-                    break;
-                case 5:
-                    AddItem(new Dagger());
-                    break;
-                case 6:
-                    AddItem(new Spear());
-                    break;
-            }
-
-            Utility.AssignRandomHair(this);
         }
 
         public Brigand(Serial serial)

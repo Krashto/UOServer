@@ -1,59 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using Server.Multis;
-using Server.Mobiles;
-using Server.Network;
-using Server.ContextMenus;
-using Server.Spells;
-using Server.Targeting;
-using Server.Misc;
-
-namespace Server.Items
+﻿namespace Server.Items
 {
 	public class CarteLicheSquelettique : BaseCard
 	{
+		public override int Level => 1;
+		public override CardEnchantType EnchantType => CardEnchantType.CastRecovery;
 
 		[Constructable]
-		public CarteLicheSquelettique() : base()
+		public CarteLicheSquelettique() : base(1940)
 		{
-			Weight = 0.2;  // ?
 			Name = "Carte Liche Squelette";
-			Hue = 1940;
 		}
-		public override void GetProperties(ObjectPropertyList list)
-		{
-			base.GetProperties(list);
-			list.Add(String.Format("[Focus Compétence +1]"));
-		}
-
-		public override bool CanEnchant(Item item, Mobile from)
-		{
-			if (item is BaseJewel)
-			{
-				return true;
-			}
-
-
-			from.SendMessage("Vous pouvez enchanter que les Bijoux avec cette carte.");
-
-			return base.CanEnchant(item, from);
-		}
-
-		public override void Enchant(Item item, Mobile from)
-		{
-
-			int augmentper = 1;
-
-			if (item is BaseJewel Jewel)
-			{
-				Jewel.Attributes.CastRecovery += augmentper;
-			}
-
-
-			base.Enchant(item, from);
-		}
-
 
 		public CarteLicheSquelettique(Serial serial) : base(serial)
 		{

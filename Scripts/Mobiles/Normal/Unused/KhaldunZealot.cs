@@ -26,6 +26,52 @@ namespace Server.Mobiles
 
 			Hue = 0;
 
+			VikingSword weapon = new VikingSword
+			{
+				Hue = 0x835,
+				Movable = false
+			};
+			AddItem(weapon);
+
+			MetalShield shield = new MetalShield
+			{
+				Hue = 0x835,
+				Movable = false
+			};
+			AddItem(shield);
+
+			BoneHelm helm = new BoneHelm
+			{
+				Hue = 0x835
+			};
+			AddItem(helm);
+
+			BoneArms arms = new BoneArms
+			{
+				Hue = 0x835
+			};
+			AddItem(arms);
+
+			BoneGloves gloves = new BoneGloves
+			{
+				Hue = 0x835
+			};
+			AddItem(gloves);
+
+			BoneChest tunic = new BoneChest
+			{
+				Hue = 0x835
+			};
+			AddItem(tunic);
+
+			BoneLegs legs = new BoneLegs
+			{
+				Hue = 0x835
+			};
+			AddItem(legs);
+
+			AddItem(new Boots());
+
 			SetStr(351, 400);
             SetDex(151, 165);
             SetInt(76, 100);
@@ -48,55 +94,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Anatomy, 120.1, 130.0);
             SetSkill(SkillName.MagicResist, 90.1, 100.0);
             SetSkill(SkillName.Tactics, 90.1, 100.0);
-
-            Fame = 10000;
-            Karma = -10000;
-
-            VikingSword weapon = new VikingSword
-            {
-                Hue = 0x835,
-                Movable = false
-            };
-            AddItem(weapon);
-
-            MetalShield shield = new MetalShield
-            {
-                Hue = 0x835,
-                Movable = false
-            };
-            AddItem(shield);
-
-            BoneHelm helm = new BoneHelm
-            {
-                Hue = 0x835
-            };
-            AddItem(helm);
-
-            BoneArms arms = new BoneArms
-            {
-                Hue = 0x835
-            };
-            AddItem(arms);
-
-            BoneGloves gloves = new BoneGloves
-            {
-                Hue = 0x835
-            };
-            AddItem(gloves);
-
-            BoneChest tunic = new BoneChest
-            {
-                Hue = 0x835
-            };
-            AddItem(tunic);
-
-            BoneLegs legs = new BoneLegs
-            {
-                Hue = 0x835
-            };
-            AddItem(legs);
-
-            AddItem(new Boots());
         }
 
         public KhaldunZealot(Serial serial)

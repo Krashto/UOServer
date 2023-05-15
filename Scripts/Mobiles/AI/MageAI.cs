@@ -383,7 +383,7 @@ namespace Server.Mobiles.AI
 
 			var toDispel = FindDispelTarget(true);
 
-			if (toDispel != null) // Something dispellable is attacking us
+			if (toDispel != null && Utility.RandomDouble() < 0.25) // Something dispellable is attacking us
 			{
 				m_Mobile.DebugSay("I am going to dispel {0}", toDispel);
 
@@ -916,17 +916,19 @@ namespace Server.Mobiles.AI
 
 		public virtual Spell GetHealSpell()
 		{
-			Spell spell = null;
+			return null;
 
-			if (m_Mobile.Hits < m_Mobile.HitsMax - 50)
-				if (CheckCanCastMagery(4))
-					spell = new GreaterHealSpell(m_Mobile, null);
-				else
-					spell = new HealSpell(m_Mobile, null);
-			else if (m_Mobile.Hits < m_Mobile.HitsMax - 10)
-				spell = new HealSpell(m_Mobile, null);
+			//Spell spell = null;
 
-			return spell;
+			//if (m_Mobile.Hits < m_Mobile.HitsMax - 50)
+			//	if (CheckCanCastMagery(4))
+			//		spell = new HealSpell(m_Mobile, null);
+			//	else
+			//		spell = new HealSpell(m_Mobile, null);
+			//else if (m_Mobile.Hits < m_Mobile.HitsMax - 10)
+			//	spell = new HealSpell(m_Mobile, null);
+
+			//return spell;
 		}
 
 		public virtual Spell GetCureSpell()

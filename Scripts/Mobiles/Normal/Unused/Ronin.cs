@@ -15,18 +15,7 @@ namespace Server.Mobiles
         {
             SpeechHue = Utility.RandomDyedHue();
             Hue = Utility.RandomSkinHue();
-
-
-
-
-
-
 			Female = Utility.RandomBool();
-
-
-
-
-		
 
 			if (Female = Utility.RandomBool())
 			{
@@ -42,10 +31,40 @@ namespace Server.Mobiles
 
 			Title = "Ronin";
 
-
 			Hue = Utility.RandomSkinHue();
 
 			Race = BaseRace.GetRace(Utility.Random(4));
+
+			AddItem(new SamuraiTabi());
+			AddItem(new LeatherHiroSode());
+			AddItem(new LeatherDo());
+
+			switch (Utility.Random(4))
+			{
+				case 0: AddItem(new LightPlateJingasa()); break;
+				case 1: AddItem(new ChainHatsuburi()); break;
+				case 2: AddItem(new DecorativePlateKabuto()); break;
+				case 3: AddItem(new LeatherJingasa()); break;
+			}
+
+			switch (Utility.Random(3))
+			{
+				case 0: AddItem(new StuddedHaidate()); break;
+				case 1: AddItem(new LeatherSuneate()); break;
+				case 2: AddItem(new PlateSuneate()); break;
+			}
+
+			if (Utility.RandomDouble() > .2)
+				AddItem(new NoDachi());
+			else
+				AddItem(new Halberd());
+
+			PackItem(new Wakizashi());
+			PackItem(new Longsword());
+
+			Utility.AssignRandomHair(this);
+
+			SetWeaponAbility(WeaponAbility.RidingSwipe);
 
 			SetStr(326, 375);
             SetDex(100, 150);
@@ -75,40 +94,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 92.6, 107.5);
 
             SetSkill(SkillName.Bushido, 95.0, 120.0);
-
-            Fame = 8500;
-            Karma = -8500;
-
-            AddItem(new SamuraiTabi());
-            AddItem(new LeatherHiroSode());
-            AddItem(new LeatherDo());
-
-            switch (Utility.Random(4))
-            {
-                case 0: AddItem(new LightPlateJingasa()); break;
-                case 1: AddItem(new ChainHatsuburi()); break;
-                case 2: AddItem(new DecorativePlateKabuto()); break;
-                case 3: AddItem(new LeatherJingasa()); break;
-            }
-
-            switch (Utility.Random(3))
-            {
-                case 0: AddItem(new StuddedHaidate()); break;
-                case 1: AddItem(new LeatherSuneate()); break;
-                case 2: AddItem(new PlateSuneate()); break;
-            }
-
-            if (Utility.RandomDouble() > .2)
-                AddItem(new NoDachi());
-            else
-                AddItem(new Halberd());
-
-            PackItem(new Wakizashi());
-            PackItem(new Longsword());
-
-            Utility.AssignRandomHair(this);
-
-            SetWeaponAbility(WeaponAbility.RidingSwipe);
         }
 
         public override bool AlwaysMurderer => true;

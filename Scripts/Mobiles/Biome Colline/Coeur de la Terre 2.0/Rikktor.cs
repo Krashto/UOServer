@@ -40,26 +40,14 @@ namespace Server.Mobiles
 			SetSkill(SkillName.MagicResist, 75.1, 100.0);
 			SetSkill(SkillName.Tactics, 75.1, 100.0);
 			SetSkill(SkillName.Wrestling, 75.1, 100.0);
-
-
-		//	Fame = 22500;
-        //    Karma = -22500;
-
-         
         }
 
         public Rikktor(Serial serial)
             : base(serial)
         {
         }
-
-       
-      
      
         public override Poison PoisonImmune => Poison.Lethal;
-		/*     public override ScaleType ScaleType => ScaleType.All;
-			 public override int Scales => 20;*/
-
 		public override int Level => 17;
 		public override Biome Biome => Biome.Colline;
 		public override int Hides => 12;

@@ -28,7 +28,12 @@ namespace Server.Mobiles
                 AddItem(new ShortPants(Utility.RandomNeutralHue()));
             }
 
-            SetStr(86, 100);
+			AddItem(new Boots(Utility.RandomNeutralHue()));
+			AddItem(new Robe(Utility.RandomNeutralHue()));
+			AddItem(new ChapeauMage());
+			AddItem(new Backpack());
+
+			SetStr(86, 100);
             SetDex(81, 95);
             SetInt(61, 75);
 			SetHits(58, 72);
@@ -40,15 +45,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Swords, 65.0, 87.5);
             SetSkill(SkillName.Tactics, 65.0, 87.5);
             SetSkill(SkillName.Wrestling, 15.0, 37.5);
-
-            //Fame = 1000;
-            //Karma = -1000;
-
-            AddItem(new Boots(Utility.RandomNeutralHue()));
-			AddItem(new Robe(Utility.RandomNeutralHue()));
-			AddItem(new ChapeauMage());
-			AddItem(new Backpack());
-			
 
             Utility.AssignRandomHair(this);
         }

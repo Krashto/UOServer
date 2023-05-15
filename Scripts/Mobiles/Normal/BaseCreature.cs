@@ -22,13 +22,9 @@ using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom;
 using Server.Custom.Spells.Necromancie.Summons;
-using Server.Engines.TreasuresOfKotlCity;
-
-
 #endregion
 
 namespace Server.Mobiles
-
 {
 	#region Enums
 	/// <summary>
@@ -1107,9 +1103,9 @@ namespace Server.Mobiles
 		}
 
 		#region Flee!!!
-		public virtual bool CanFlee => !m_Paragon && !GivesMLMinorArtifact && !SlayerGroup.GetEntryByName(SlayerName.Silver).Slays(this);
-		public virtual double FleeChance => 0.25;
-		public virtual double BreakFleeChance => 0.85;
+		public virtual bool CanFlee => false; //!m_Paragon && !GivesMLMinorArtifact && !SlayerGroup.GetEntryByName(SlayerName.Silver).Slays(this);
+		public virtual double FleeChance => 0.0; //0.25;
+		public virtual double BreakFleeChance => 1.00; //0.85;
 
 		public long NextFleeCheck { get; set; }
 		public DateTime ForceFleeUntil { get; set; }
@@ -4864,6 +4860,15 @@ namespace Server.Mobiles
 				Skills[SkillName.Meditation].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
 				SetMagicalAbility(MagicalAbility.Magery);
 			}
+
+			var weapon = FindItemOnLayer(Layer.OneHanded) as BaseWeapon;
+
+			if (weapon == null)
+				weapon = FindItemOnLayer(Layer.TwoHanded) as BaseWeapon;
+
+			if (weapon != null)
+				Skills[weapon.DefSkill].BaseFixedPoint = (Utility.RandomMinMax(35, 45) + Level * 5) * 10;
+
 		}
 
 		public void SetSkill(SkillName name, double min, double max)
@@ -4973,11 +4978,9 @@ namespace Server.Mobiles
 
 			GenerateLoot();
 
-			if (!Tamable || (Tamable && Level > 5))
-			{
-				GenerateGoldLoot();
-				GenerateSpecialLoot();
-			}
+			GenerateGoldLoot();
+			GenerateSpecialLoot();
+			GenerateSouls();
 
             KillersLuck = 0;
         }
@@ -4997,26 +5000,70 @@ namespace Server.Mobiles
 			
 		}
 
+		public void GenerateSouls()
+		{
+			if (Utility.RandomDouble() > (Level / 100.0))
+				return;
+
+			if (this is BoneKnight)
+				AddLoot(new AmeChevalierSquelettique());
+			else if (this is DreamWraith)
+				AddLoot(new AmeSpectreAstral());
+			else if (this is Lich)
+				AddLoot(new AmeLiche());
+			else if (this is PatchworkSkeleton)
+				AddLoot(new AmeSquelRapiece());
+			else if (this is SkeletalMage)
+				AddLoot(new AmeMageSquelette());
+			else if (this is SkeletalMount)
+				AddLoot(new AmeChevalSquelettique());
+			else if (this is Skeleton)
+				AddLoot(new AmeSquelette());
+			else if (this is Spectre)
+				AddLoot(new AmeSpectre());
+			else if (this is Wight)
+				AddLoot(new AmeWight());
+			else if (this is AncientLich)
+				AddLoot(new AmeLicheAncienne());
+			else if (this is BoneDemon)
+				AddLoot(new AmeDemonOs());
+			else if (this is LadyMelisande)
+				AddLoot(new AmeLadyMelisande());
+			else if (this is LichLord)
+				AddLoot(new AmeSeigneurLiche());
+			else if (this is Nightmare)
+				AddLoot(new AmeCauchemar());
+			else if (this is Serado)
+				AddLoot(new AmeSerado());
+			else if (this is SkeletalDragon)
+				AddLoot(new AmeDragonSquelettique());
+			else if (this is SkeletalLich)
+				AddLoot(new AmeLicheSquelettique());
+		}
+
 		public void GenerateSpecialLoot()
 		{
+			if (Tamable && Level <= 5)
+				return;
+
 			//Paragon Chests
 			if (IsParagon)
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(ParagonChest));
 				if (item is ParagonChest pc)
 				{
-					pc.Fill(Utility.Random(Level / 6, 1 + Level / 5));
+					pc.Fill(Utility.Random(Level / 6, 1 + (Level / 5)));
 					AddLoot(item);
 				}
 			}
 
 			//Dungeon Chests
-			if (Level >= 11 && Utility.Random(0, 100) < Level * 5)
+			if (Level >= 11 && (Utility.Random(0, 100) < (Level * 5)))
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(ParagonChest));
 				if (item is ParagonChest pc)
 				{
-					pc.Fill((int)Math.Ceiling(Level - 11 / 2.0));
+					pc.Fill((int)Math.Ceiling((Level - 11) / 2.0));
 					AddLoot(item);
 				}
 			}
@@ -5128,6 +5175,9 @@ namespace Server.Mobiles
 
 		public void GenerateGoldLoot()
 		{
+			if (Tamable && Level <= 5)
+				return;
+
 			if (this is Kepetch || this is DesertScorpion)
 				return;
 
@@ -5557,11 +5607,7 @@ namespace Server.Mobiles
             {
                 if (treasureLevel >= 0)
                 {
-                    if (m_Paragon && Paragon.ChestChance > Utility.RandomDouble())
-                    {
-                        PackItem(new ParagonChest(Name, treasureLevel));
-                    }
-                    else if (TreasureMapChance >= Utility.RandomDouble())
+                    if (TreasureMapChance >= Utility.RandomDouble())
                     {
                         Map map = Map;
 

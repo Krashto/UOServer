@@ -13,7 +13,9 @@ namespace Server.Mobiles
             Body = 0x8E;
             BaseSoundID = 437;
 
-            SetStr(97, 100);
+			AddItem(new Bow());
+
+			SetStr(97, 100);
             SetDex(98, 100);
             SetInt(45, 50);
 
@@ -33,11 +35,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.MagicResist, 65.1, 90.0);
             SetSkill(SkillName.Tactics, 59.1, 65.0);
             SetSkill(SkillName.Wrestling, 72.5, 75.0);
-
-            Fame = 6500;
-            Karma = -6500;
-
-            AddItem(new Bow());
         }
 
         public ClanSS(Serial serial)

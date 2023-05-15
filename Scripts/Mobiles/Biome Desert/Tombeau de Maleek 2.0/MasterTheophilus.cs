@@ -37,9 +37,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.SpiritSpeak, 125.6, 133.8);
             SetSkill(SkillName.Meditation, 128.8, 132.9);
 
-      //      Fame = 18000;
-      //      Karma = -18000;
-
             AddItem(new Shoes(0x537));
             AddItem(new Robe(0x452));
 
@@ -54,14 +51,7 @@ namespace Server.Mobiles
 		public override int Level => 18;
 		public override Biome Biome => Biome.Desert;
 		public override bool CanBeParagon => false;
-        public override void OnDeath(Container c)
-        {
-            base.OnDeath(c);
-
-            if (Paragon.ChestChance > Utility.RandomDouble())
-                c.DropItem(new ParagonChest(Name, 5));
-        }
-
+        
         public override bool AllureImmune => true;
         
         public override void Serialize(GenericWriter writer)
