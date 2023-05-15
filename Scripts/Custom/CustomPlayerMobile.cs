@@ -698,7 +698,7 @@ namespace Server.Mobiles
 		public CustomPlayerMobile()
 		{
 			Aptitudes = new Aptitudes(this);
-			Experience = new ExperienceSystem();
+			Experience = new ExperienceSystem(this);
 			Attributs = new Attributs(this);
 			Capacites = new Capacites(this);
 			PointsAncestraux = new PointsAncestraux(this);
@@ -707,7 +707,7 @@ namespace Server.Mobiles
 		public CustomPlayerMobile(Serial s) : base(s)
 		{
 			Aptitudes = new Aptitudes(this);
-			Experience = new ExperienceSystem();
+			Experience = new ExperienceSystem(this);
 			Attributs = new Attributs(this);
 			Capacites = new Capacites(this);
 			PointsAncestraux = new PointsAncestraux(this);
@@ -1418,7 +1418,7 @@ namespace Server.Mobiles
 					}
 				case 0:
 					{
-						Experience = new ExperienceSystem(reader);
+						Experience = new ExperienceSystem(this, reader);
 						Capacites = new Capacites(this, reader);
 						Attributs = new Attributs(this, reader); 
 						Aptitudes = new Aptitudes(this, reader);

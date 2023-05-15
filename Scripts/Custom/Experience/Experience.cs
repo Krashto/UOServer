@@ -48,15 +48,11 @@ namespace Server.CustomScripts.Systems.Experience
 
         public static int GetLevelByExp(Mobile from)
         {
-            int level = MaxLevel;
+            int level = 0;
 
-            if (from is CustomPlayerMobile)
+            if (from is CustomPlayerMobile pm)
             {
-                CustomPlayerMobile pm = from as CustomPlayerMobile;
-
-                ExperienceSystem exp = pm.Experience;
-
-                for (int i = 0; (i >= 0) && (GetRequiredExpByLevel(i) > exp.Exp); i--)
+                for (int i = 0; GetRequiredExpByLevel(i) <= pm.Experience.Exp; i++)
                     level = i;
             }
             return level;

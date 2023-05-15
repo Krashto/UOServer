@@ -3,6 +3,7 @@ using Server.Mobiles;
 using Server.Commands;
 using Server.Custom;
 using Server.Items;
+using Server.Custom.Classes;
 
 namespace Server.CustomScripts.Systems.Experience
 {
@@ -66,6 +67,8 @@ namespace Server.CustomScripts.Systems.Experience
     [PropertyObject]
     public class ExperienceSystem
     {
+		private CustomPlayerMobile m_From;
+
         public const int ExpGainPerTick = 200;
         public const int MaxExpAllowedByDay = 1000;
 		public int MaxExpRetard => (new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 18, 0, 0) - CustomPersistence.Ouverture).Days * 1000;
@@ -90,9 +93,11 @@ namespace Server.CustomScripts.Systems.Experience
             writer.Write(ExpToGainBank);
         }
 
-        public ExperienceSystem(GenericReader reader)
+        public ExperienceSystem(CustomPlayerMobile from, GenericReader reader)
         {
-            int version = reader.ReadInt();
+			m_From = from;
+
+			int version = reader.ReadInt();
 
             Exp = reader.ReadInt();
             Niveau = reader.ReadInt();
@@ -100,9 +105,11 @@ namespace Server.CustomScripts.Systems.Experience
             ExpToGainBank = reader.ReadInt();
         }
 
-        public ExperienceSystem()
+        public ExperienceSystem(CustomPlayerMobile from)
         {
-            NextTickExp = DateTime.Now.AddMinutes(Experience.Interval_Minutes);
+			m_From = from;
+
+			NextTickExp = DateTime.Now.AddMinutes(Experience.Interval_Minutes);
             ExpToGainBank = MaxExpAllowedByDay;
         }
 
@@ -113,9 +120,15 @@ namespace Server.CustomScripts.Systems.Experience
 			if (ExpToGainBank + Exp < MaxExpRetard)
 				ExpToGainBank = MaxExpRetard - Exp;
 
-			if (ExpToGainBank > MaxExpRetard)
-                ExpToGainBank = MaxExpRetard;
-        }
+			if (ExpToGainBank + Exp >= MaxExpRetard)
+			{
+				Exp = MaxExpRetard;
+				ExpToGainBank = 0;
+				Niveau = Experience.GetLevelByExp(m_From);
+				m_From.Validate(CustomPlayerMobile.ValidateType.All);
+				m_From.Aptitudes.Reset();
+			}
+		}
 
         public static void ResetAllTicks()
         {

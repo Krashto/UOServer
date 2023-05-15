@@ -1,6 +1,7 @@
 ﻿using System;
 using Server.Commands;
 using Server.Custom.Services;
+using Server.Network;
 using static Server.Custom.Services.DiscordService;
 
 namespace Server.Custom.Commands
@@ -40,7 +41,7 @@ namespace Server.Custom.Services
 
 		public static void PlayerCountMessage()
 		{
-			SendMessage(DiscordMessageType.Status, $"Il y a présentement {10} joueurs connectés.");
+			SendMessage(DiscordMessageType.Status, $"Il y a présentement {NetState.Instances.Count} joueurs connectés.");
 
 			LastReset = DateTime.Now;
 		}
