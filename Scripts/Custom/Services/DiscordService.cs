@@ -44,7 +44,7 @@ namespace Server.Custom.Services
 			SendMessage(DiscordMessageType.Status, "Le serveur a fermé.");
 		}
 		
-		public static bool IsMainServer => Environment.MachineName == "Bureau" && SocketOptions.Port == 2593;
+		public static bool IsMainServer => Environment.MachineName == "BUREAU" && SocketOptions.Port == 2593;
 
 		private static string m_NewsWebHookLink => "https://discord.com/api/webhooks/1101125982011785346/9TfIC7xzC-FimBXd8m3DKdcGr3SpgE6ug9AXyfEM2HWFAQnOiCDg2HRjVcjl6snEygLi";
 		private static string m_StatusWebHookLink => "https://discord.com/api/webhooks/1101125982011785346/9TfIC7xzC-FimBXd8m3DKdcGr3SpgE6ug9AXyfEM2HWFAQnOiCDg2HRjVcjl6snEygLi";
