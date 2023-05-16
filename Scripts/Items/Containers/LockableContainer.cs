@@ -305,7 +305,7 @@ namespace Server.Items
                 return base.OnDragDropInto(from, item, p);
             }
 
-            if (from.AccessLevel < AccessLevel.GameMaster && m_Locked)
+            if (/*from.AccessLevel < AccessLevel.GameMaster && */m_Locked)
             {
                 from.SendLocalizedMessage(501747); // It appears to be locked.
                 return false;

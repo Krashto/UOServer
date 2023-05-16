@@ -690,27 +690,21 @@ namespace Server.Items
             }
             set
             {
-                if (m_Resource != value || m_Resource == DefaultResource)
-                {
-                    UnscaleDurability();
-                    CraftResource old = m_Resource;
+				UnscaleDurability();
 
-                    m_Resource = value;
+				m_Resource = value;
 
-                    ApplyResourceResistances(old);
+				ApplyResourceResistances(m_Resource);
 
-                    Hue = CraftResources.GetHue(m_Resource);
+				Hue = CraftResources.GetHue(m_Resource);
 
-                    Invalidate();
-                    InvalidateProperties();
+				if (Parent is Mobile)
+					((Mobile)Parent).UpdateResistances();
 
-                    if (Parent is Mobile)
-                        ((Mobile)Parent).UpdateResistances();
-
-                    ScaleDurability();
-                }
-            }
-        }
+				ScaleDurability();
+				InvalidateProperties();
+			}
+		}
 
         public virtual double ArmorScalar
         {
@@ -807,14 +801,13 @@ namespace Server.Items
             }
             set
             {
+				UnscaleDurability();
+
 				m_Quality = value;
 
-				UnscaleDurability();
-				//DistributeQualityBonuses();
-
-                Invalidate();
+				ScaleDurability();
+				Invalidate();
                 InvalidateProperties();
-                ScaleDurability();
             }
         }
 
@@ -1154,45 +1147,38 @@ namespace Server.Items
 
         public void UnscaleDurability()
         {
-            int scale = 100 + GetDurabilityBonus();
+			int durability = GetDurabilityBonus();
 
-            m_HitPoints = ((m_HitPoints * 100) + (scale - 1)) / scale;
-            m_MaxHitPoints = ((m_MaxHitPoints * 100) + (scale - 1)) / scale;
+			m_HitPoints = durability;
+			m_MaxHitPoints = durability;
 
-            InvalidateProperties();
-        }
+			InvalidateProperties();
+		}
 
         public void ScaleDurability()
         {
-            int scale = 100 + GetDurabilityBonus();
+			int durability = GetDurabilityBonus();
 
-            m_HitPoints = ((m_HitPoints * scale) + 99) / 100;
-            m_MaxHitPoints = ((m_MaxHitPoints * scale) + 99) / 100;
+			m_HitPoints = durability;
+			m_MaxHitPoints = durability;
 
-            if (m_MaxHitPoints > 255)
-                m_MaxHitPoints = 255;
-
-            if (m_HitPoints > 255)
-                m_HitPoints = 255;
-
-            InvalidateProperties();
-        }
+			InvalidateProperties();
+		}
 
         public virtual int GetDurabilityBonus()
         {
             int bonus = 0;
 
-            if (m_Quality == ItemQuality.Exceptional)
-                bonus += 20;
+			if (m_Quality == ItemQuality.Legendary)
+				bonus += 200;
 			else if (m_Quality == ItemQuality.Epic)
-				bonus += 40;
-			else if (m_Quality == ItemQuality.Legendary)
-				bonus += 60;
+				bonus += 150;
+			else if (m_Quality == ItemQuality.Exceptional)
+				bonus += 125;
+			else
+				bonus += 100;
 
 			bonus += m_AosArmorAttributes.DurabilityBonus;
-
-            if (m_Resource == CraftResource.Heartwood)
-                return bonus;
 
             CraftResourceInfo resInfo = CraftResources.GetInfo(m_Resource);
             CraftAttributeInfo attrInfo = null;

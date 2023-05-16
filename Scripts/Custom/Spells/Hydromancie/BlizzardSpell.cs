@@ -6,7 +6,6 @@ using Server.Spells;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Network;
 using VitaNex.FX;
-using Server.Custom.Spells.NewSpells.Aeromancie;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -61,7 +60,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					{
 						Caster.DoHarmful(m);
 
-						Timer t = new InternalTimer(m);
+						Timer t = new InternalTimer(this, m);
 						m_Timers[m] = t;
 						t.Start();
 
@@ -98,15 +97,31 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			return m_Timers.ContainsKey(m);
 		}
 
+		public void Deactivate(Mobile m)
+		{
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
+
+			if (t != null)
+			{
+				t.Stop();
+				m_Timers.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Blizzard", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Malus);
+			}
+		}
+
 		private class InternalTimer : Timer
 		{
+			private BlizzardSpell m_Owner;
 			private readonly Mobile m_Mobile;
 			private int m_Count;
 			private readonly int m_MaxCount;
 
-			public InternalTimer(Mobile m)
-				: base(TimeSpan.Zero, TimeSpan.FromSeconds(2.0))
+			public InternalTimer(BlizzardSpell owner, Mobile m) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2.0))
 			{
+				m_Owner = owner;
 				m_Mobile = m;
 				Priority = TimerPriority.TwoFiftyMS;
 
@@ -117,10 +132,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				if (!m_Mobile.Alive || m_Mobile.Deleted || ++m_Count == m_MaxCount)
 				{
-					if (m_Timers.ContainsKey(m_Mobile))
-						m_Timers.Remove(m_Mobile);
-					m_Mobile.SendSpeedControl(SpeedControlType.Disable);
-					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Blizzard", AptitudeColor.Hydromancie, SpellSequenceType.End);
+					m_Owner.Deactivate(m_Mobile);
 					Stop();
 				}
 				else

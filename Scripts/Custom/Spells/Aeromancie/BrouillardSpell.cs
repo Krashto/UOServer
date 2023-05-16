@@ -65,7 +65,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
+			var t = m_Timers[m] as Timer;
 
 			if (t != null)
 			{

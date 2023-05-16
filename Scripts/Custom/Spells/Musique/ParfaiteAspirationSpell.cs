@@ -86,9 +86,10 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
+			var t = m_Timers[m] as Timer;
+			var v = m_Table[m] as double?;
 
-			if (t != null)
+			if (t != null && v != null)
 			{
 				t.Stop();
 

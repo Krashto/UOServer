@@ -428,13 +428,16 @@ namespace Server.Items
             set
             {
                 UnscaleDurability();
+
                 m_Resource = value;
+
                 Hue = CraftResources.GetHue(m_Resource);
+
 				ScaleWeaponDamage();
-                InvalidateProperties();
                 ScaleDurability();
-            }
-        }
+                InvalidateProperties();
+			}
+		}
 
         [CommandProperty(AccessLevel.GameMaster)]
         public bool PlayerConstructed { get { return m_PlayerConstructed; } set { m_PlayerConstructed = value; } }
@@ -1332,7 +1335,7 @@ namespace Server.Items
 			if (AuraExaltationSpell.IsActive(m))
 				bonus += 25;
 
-			if (MarquerSpell.IsAttackSpeedBonusActive(m))
+			if (MarquerSpell.IsActive(m))
 				bonus += 25;
 
 			double ticks;
@@ -4814,7 +4817,7 @@ namespace Server.Items
 
             list.Add(1061168, "{0}\t{1}", MinDamage.ToString(), MaxDamage.ToString()); // weapon damage ~1_val~ - ~2_val~
 
-            list.Add(1061167, string.Format("{0}s", Speed)); // weapon speed ~1_val~
+            list.Add(1061167, string.Format("{0}s", WeaponSpeed)); // weapon speed ~1_val~
 
             if (MaxRange > 1)
             {

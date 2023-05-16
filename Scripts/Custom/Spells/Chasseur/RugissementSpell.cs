@@ -21,16 +21,6 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 		public override SkillName CastSkill { get { return SkillName.Tracking; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
 
-		public override TimeSpan CastDelayBase => TimeSpan.Zero;
-		public override double CastDelayFastScalar => 0;
-		public override double CastDelaySecondsPerTick => 1;
-		public override TimeSpan CastDelayMinimum => TimeSpan.Zero;
-
-		public override int CastRecoveryBase => 0;
-		public override int CastRecoveryFastScalar => 0;
-		public override int CastRecoveryPerSecond => 1;
-		public override int CastRecoveryMinimum => 0;
-
 		public RugissementSpell(Mobile caster, Item scroll)
 			: base(caster, scroll, m_Info)
 		{

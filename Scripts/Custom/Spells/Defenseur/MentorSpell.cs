@@ -53,6 +53,16 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 			FinishSequence();
 		}
 
+		public static int GetValue(Mobile m)
+		{
+			return m_Table.ContainsKey(m) ? (int)m_Table[m] : 0;
+		}
+
+		public static bool IsActive(Mobile m)
+		{
+			return m_Table.ContainsKey(m);
+		}
+
 		public static void Deactivate(Mobile m)
 		{
 			if (m == null)
@@ -62,16 +72,6 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				m_Table.Remove(m);
 
 			CustomUtility.ApplySimpleSpellEffect(m, "Mentor", AptitudeColor.Defenseur, SpellSequenceType.End);
-		}
-
-		public static int GetValue(Mobile m)
-		{
-			return m_Table.ContainsKey(m) ? (int)m_Table[m] : 0;
-		}
-
-		public static bool IsActive(Mobile m)
-		{
-			return m_Table.ContainsKey(m);
 		}
 
 		private class InternalTarget : Target

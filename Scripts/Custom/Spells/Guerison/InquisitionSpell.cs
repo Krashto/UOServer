@@ -7,7 +7,6 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 {
 	public class InquisitionSpell : Spell
 	{
-		private static Hashtable m_Table = new Hashtable();
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
@@ -48,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 		public static bool IsActive(Mobile m)
 		{
-			return m_Table.ContainsKey(m);
+			return m_Timers.ContainsKey(m);
 		}
 
 		public static void Deactivate(Mobile m)
@@ -62,7 +61,6 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m_Table.Remove(m);
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Inquisition", AptitudeColor.Guerison, SpellSequenceType.End);
 			}

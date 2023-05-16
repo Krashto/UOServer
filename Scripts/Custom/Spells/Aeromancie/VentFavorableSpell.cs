@@ -66,7 +66,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				t.Stop();
 				m_Timers.Remove(m);
 				m.Flying = false;
-				//m.SendSpeedControl(SpeedControlType.Disable);
 				CustomUtility.ApplySimpleSpellEffect(m, "Vent favorable", AptitudeColor.Aeromancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}

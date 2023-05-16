@@ -6,6 +6,7 @@ using System.Collections;
 using System;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Network;
+using System.Web.UI;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -86,6 +87,9 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		public static void Deactivate(Mobile m)
 		{
+			if (m == null)
+				return;
+
 			var t = m_Timers[m] as Timer;
 
 			if (t != null)

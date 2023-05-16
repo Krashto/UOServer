@@ -9,6 +9,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 {
 	public class ToucherSuffocantSpell : Spell
 	{
+		private static Hashtable m_Timers = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Toucher Suffocant", "[Toucher Suffocant]",
 				SpellCircle.Fourth,
@@ -30,8 +32,6 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 		{
 			Caster.Target = new InternalTarget(this);
 		}
-
-		private static Hashtable m_Timers = new Hashtable();
 
 		public void Target(Mobile m)
 		{
@@ -72,7 +72,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
+			var t = m_Timers[m] as Timer;
 
 			if (t != null)
 			{

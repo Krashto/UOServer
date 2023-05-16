@@ -10,8 +10,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
 	public class PieuxDeGlaceSpell : Spell
 	{
-		public static Hashtable m_Timers = new Hashtable();
-
 		private static SpellInfo m_Info = new SpellInfo(
 				"Pieux de glace", "[Pieux de glace]",
 				SpellCircle.Seventh,
@@ -39,7 +37,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		{
 			if (!Caster.CanSee(target))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckSequence())
+			else if (CheckHSequence(target))
 			{
 				var targets = new ArrayList();
 
@@ -96,34 +94,12 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			FinishSequence();
 		}
 
-		public static bool IsActive(Mobile m)
-		{
-			return m_Timers.ContainsKey(m);
-		}
-
-		public class InternalTimer : Timer
-		{
-			private Mobile m_Mobile;
-
-			public InternalTimer(Mobile m, TimeSpan duration) : base(duration)
-			{
-				m_Mobile = m;
-				Priority = TimerPriority.TwoFiftyMS;
-			}
-
-			protected override void OnTick()
-			{
-				if (m_Timers.ContainsKey(m_Mobile))
-					m_Timers.Remove(m_Mobile);
-			}
-		}
-
 		private class InternalTarget : Target
 		{
 			private PieuxDeGlaceSpell m_Owner;
 
 			public InternalTarget(PieuxDeGlaceSpell owner)
-				: base(12, true, TargetFlags.Beneficial)
+				: base(12, true, TargetFlags.Harmful)
 			{
 				m_Owner = owner;
 			}

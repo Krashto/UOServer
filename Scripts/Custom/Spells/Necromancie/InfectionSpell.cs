@@ -9,10 +9,6 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 {
 	public class InfectionSpell : Spell
 	{
-		private static Hashtable m_Registry = new Hashtable();
-		public static Hashtable Registry { get { return m_Registry; } }
-		public static Hashtable m_Table = new Hashtable();
-
 		private static SpellInfo m_Info = new SpellInfo(
 				"Infection", "[Infection]",
 				SpellCircle.Fifth,

@@ -348,18 +348,7 @@ namespace Server.Items
 
                     double apti = pm.Aptitudes.GetRealValue(Aptitude.Transcription);
 
-                    if (apti >= 10)
-                        m_Max = 120;
-                    else if (apti >= 8)
-                        m_Max = 100;
-                    else if (apti >= 6)
-                        m_Max = 80;
-                    else if (apti >= 4)
-                        m_Max = 60;
-                    else if (apti >= 2)
-                        m_Max = 40;
-                    else
-                        m_Max = 20;
+                    m_Max = 50 + apti * 5;
                 }
 
                 m_Author = from;

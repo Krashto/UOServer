@@ -87,8 +87,11 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 		public static void Deactivate(Mobile m)
 		{
-			var t = (Timer)m_Timers[m];
-			var mod = (ResistanceMod)m_Table[m];
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
+			var mod = m_Table[m] as ResistanceMod;
 
 			if (t != null && mod != null)
 			{

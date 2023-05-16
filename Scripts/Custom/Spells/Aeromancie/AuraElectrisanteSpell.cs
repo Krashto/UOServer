@@ -92,8 +92,8 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
-			var mod = (ResistanceMod)m_Table[m];
+			var t = m_Timers[m] as Timer;
+			var mod = m_Table[m] as ResistanceMod;
 
 			if (t != null && mod != null)
 			{

@@ -77,11 +77,13 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				return;
 
 			var t = m_Timers[m] as Timer;
+			var v = m_Table[m] as int?;
 
-			if (t != null)
+			if (t != null && v != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m_Table.Remove(m);
 				m.Delta(MobileDelta.Hits);
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Dévotion", AptitudeColor.Defenseur, SpellSequenceType.End);

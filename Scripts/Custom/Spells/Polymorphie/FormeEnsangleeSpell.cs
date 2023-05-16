@@ -69,8 +69,9 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 				return;
 
 			var t = m_Timers[m] as Timer;
+			var mod = m_Table[m] as ResistanceMod;
 
-			if (t != null)
+			if (t != null && mod != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
@@ -78,6 +79,10 @@ namespace Server.Custom.Spells.NewSpells.Polymorphie
 
 				m.BodyMod = 0;
 				m.HueMod = -1;
+
+				m.RemoveResistanceMod(mod);
+
+				m.UpdateResistances();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Forme ensanglantee", AptitudeColor.Polymorphie, SpellSequenceType.End);
 			}

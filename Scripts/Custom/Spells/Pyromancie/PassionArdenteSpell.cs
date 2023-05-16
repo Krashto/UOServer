@@ -52,6 +52,9 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 		public static void Deactivate(Mobile m)
 		{
+			if (m == null)
+				return;
+
 			var t = m_Timers[m] as Timer;
 
 			if (t != null)

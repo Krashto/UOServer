@@ -109,7 +109,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					if (++m_Count >= m_MaxCount)
 					{
-						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Soin preventif", AptitudeColor.Hydromancie, SpellSequenceType.End);
+						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Soin preventif", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
 						Stop();
 					}
 				}

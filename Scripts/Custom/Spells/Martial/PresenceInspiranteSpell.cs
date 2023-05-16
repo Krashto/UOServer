@@ -78,7 +78,10 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 		public static void Deactivate(Mobile m)
 		{
-			var t = (Timer)m_Timers[m];
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
 
 			if (t != null)
 			{

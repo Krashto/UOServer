@@ -9,7 +9,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 	public class MarquerSpell : Spell
 	{
 		public static Hashtable m_Timers = new Hashtable();
-		public static Hashtable m_Timers2 = new Hashtable();
+		public static Hashtable m_Table = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
 				"Marquer", "[Marquer]",
@@ -42,16 +42,15 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			{
 				SpellHelper.Turn(Caster, m);
 
-				Deactivate(m);
+				Deactivate(Caster);
 
 				var duration = GetDurationForSpell(10);
 
-				Timer t = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers[m] = t;
+				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
+				m_Timers[Caster] = t;
 				t.Start();
 
-				Timer t2 = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers2[Caster] = t2;
+				m_Table[Caster] = m;
 				t.Start();
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Marquer", duration, AptitudeColor.Chasseur, SpellEffectType.Malus);
@@ -66,24 +65,26 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 			return m_Timers.ContainsKey(m);
 		}
 
-		public static bool IsAttackSpeedBonusActive(Mobile m)
-		{
-			return m_Timers2.ContainsKey(m);
-		}
-
 		public static void Deactivate(Mobile m)
 		{
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
+			var t = m_Timers[m] as Timer;
+			var target = m_Table[m] as Mobile;
 
 			if (t != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
 
-				CustomUtility.ApplySimpleSpellEffect(m, "Marquer", AptitudeColor.Chasseur, SpellSequenceType.End, SpellEffectType.Malus);
+				CustomUtility.ApplySimpleSpellEffect(m, "Marquer", AptitudeColor.Chasseur, SpellSequenceType.End, SpellEffectType.Bonus);
+			}
+
+			if (target != null)
+			{
+				m_Table.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(target, "Marquer", AptitudeColor.Chasseur, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 

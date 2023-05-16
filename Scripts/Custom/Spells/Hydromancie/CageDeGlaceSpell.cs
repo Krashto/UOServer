@@ -77,13 +77,16 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public void Deactivate(Mobile m)
 		{
+			if (m == null)
+				return;
+
 			var t = m_Timers[m] as Timer;
 
 			if (t != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				CustomUtility.ApplySimpleSpellEffect(m, "Cage de glace", AptitudeColor.Hydromancie, SpellSequenceType.End);
+				CustomUtility.ApplySimpleSpellEffect(m, "Cage de glace", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Malus);
 			}
 		}
 
@@ -218,6 +221,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				if (DateTime.Now >= m_Endtime || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
 					m_Owner.Deactivate(m_Mobile);
+					Stop();
 				}
 			}
 		}

@@ -90,8 +90,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
-			var mod = (ResistanceMod)m_Table[m];
+			var t = m_Timers[m] as Timer;
+			var mod = m_Table[m] as ResistanceMod;
 
 			if (t != null && mod != null)
 			{
@@ -104,7 +104,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				m_Timers.Remove(m);
 				m_Table.Remove(m);
 
-				CustomUtility.ApplySimpleSpellEffect(m, "Aura cryogenisee", AptitudeColor.Hydromancie, SpellSequenceType.End);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura cryogenisee", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
 			}
 		}
 

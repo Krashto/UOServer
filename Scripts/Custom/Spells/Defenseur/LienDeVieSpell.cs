@@ -41,16 +41,12 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				if (IsActive(Caster))
 					Deactivate(Caster);
 
-				m_Table[m] = Caster;
+				m_Table[Caster] = m;
 
 				var duration = GetDurationForSpell(20);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
-				t.Start();
-
-				Timer t2 = new InternalTimer(m, DateTime.Now + duration);
-				m_Timers[m] = t2;
 				t.Start();
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Lien de vie", duration, AptitudeColor.Defenseur);
@@ -98,14 +94,20 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				return;
 
 			var t = m_Timers[m] as Timer;
+			var target = m_Table[m] as Mobile;
 
 			if (t != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m_Table.Remove(m);
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Lien de vie", AptitudeColor.Defenseur, SpellSequenceType.End);
+			}
+
+			if (target != null)
+			{
+				m_Table.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(target, "Lien de vie", AptitudeColor.Defenseur, SpellSequenceType.End);
 			}
 		}
 

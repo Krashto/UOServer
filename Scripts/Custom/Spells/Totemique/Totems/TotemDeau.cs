@@ -61,7 +61,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 			foreach (var m in mobiles)
 			{
-				if (m != ControlMaster)
+				if (m != ControlMaster || !CanSee(ControlMaster) || !InLOS(ControlMaster))
 					continue;
 
 				ControlMaster.Heal(10 + (SuperCharged ? 10 : 0));

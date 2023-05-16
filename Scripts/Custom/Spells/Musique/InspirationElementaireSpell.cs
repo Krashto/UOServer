@@ -10,9 +10,9 @@ namespace Server.Custom.Spells.NewSpells.Musique
 {
 	public class InspirationElementaireSpell : Spell
 	{
-		private static Hashtable m_Table = new Hashtable();
-		private static Hashtable m_Mod = new Hashtable();
 		private static Hashtable m_Timers = new Hashtable();
+		private static Hashtable m_Mod = new Hashtable();
+		private static Hashtable m_Weapon = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
 				"Inspiration Elementaire", "[Inspiration Elementaire]",
@@ -36,67 +36,12 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			Caster.Target = new InternalTarget(this);
 		}
 
-		public static bool IsActive(Mobile m)
-		{
-			return m_Table.ContainsKey(m);
-		}
-
-		public static void Deactivate(Mobile m)
-		{
-			if (m == null)
-				return;
-
-			var t = m_Timers[m] as Timer;
-			var weap = m_Table[m] as BaseWeapon;
-			var mod = m_Mod[m] as string;
-
-			if (t != null && weap != null && mod != null)
-			{
-				t.Stop();
-
-				weap.WeaponAttributes.HitFireball = 0;
-				weap.WeaponAttributes.HitLightning = 0;
-				weap.WeaponAttributes.HitHarm = 0;
-				weap.WeaponAttributes.HitMagicArrow = 0;
-				weap.WeaponAttributes.HitDispel = 0;
-
-				m_Timers.Remove(m);
-				m_Table.Remove(m);
-				m_Mod.Remove(m);
-
-				CustomUtility.ApplySimpleSpellEffect(m, "Inspiration Elementaire", AptitudeColor.Musique, SpellEffectType.Bonus);
-			}
-		}
-
-		public class InternalTimer : Timer
-		{
-			private Mobile m_Mobile;
-			private DateTime m_EndTime;
-
-			public InternalTimer(Mobile m, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
-			{
-				m_Mobile = m;
-				m_EndTime = endTime;
-
-				Priority = TimerPriority.OneSecond;
-			}
-
-			protected override void OnTick()
-			{
-				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
-				{
-					Deactivate(m_Mobile);
-					Stop();
-				}
-			}
-		}
-
 		public void Target(CustomPlayerMobile pm)
 		{
 			if (!Caster.CanSee(pm))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (IsActive(Caster))
-				Deactivate(Caster);
+			else if (IsActive(pm))
+				Deactivate(pm);
 			else if (CheckBSequence(pm))
 			{
 				var source = Caster;
@@ -125,7 +70,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 					}
 
 					m_Mod[pm] = mod;
-					m_Table[pm] = weap;
+					m_Weapon[pm] = weap;
 
 					CustomUtility.ApplySimpleSpellEffect(pm, "Inspiration Elementaire", duration, AptitudeColor.Musique);
 				}
@@ -134,6 +79,62 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			}
 
 			FinishSequence();
+		}
+
+
+		public static bool IsActive(Mobile m)
+		{
+			return m_Weapon.ContainsKey(m);
+		}
+
+		public static void Deactivate(Mobile m)
+		{
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
+			var mod = m_Mod[m] as string;
+			var weap = m_Weapon[m] as BaseWeapon;
+
+			if (t != null && mod != null && weap != null)
+			{
+				t.Stop();
+
+				weap.WeaponAttributes.HitFireball = 0;
+				weap.WeaponAttributes.HitLightning = 0;
+				weap.WeaponAttributes.HitHarm = 0;
+				weap.WeaponAttributes.HitMagicArrow = 0;
+				weap.WeaponAttributes.HitDispel = 0;
+
+				m_Timers.Remove(m);
+				m_Mod.Remove(m);
+				m_Weapon.Remove(m);
+
+				CustomUtility.ApplySimpleSpellEffect(m, "Inspiration Elementaire", AptitudeColor.Musique, SpellEffectType.Bonus);
+			}
+		}
+
+		public class InternalTimer : Timer
+		{
+			private Mobile m_Mobile;
+			private DateTime m_EndTime;
+
+			public InternalTimer(Mobile m, DateTime endTime) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
+			{
+				m_Mobile = m;
+				m_EndTime = endTime;
+
+				Priority = TimerPriority.OneSecond;
+			}
+
+			protected override void OnTick()
+			{
+				if (DateTime.Now >= m_EndTime && m_Timers.Contains(m_Mobile) || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
+				{
+					Deactivate(m_Mobile);
+					Stop();
+				}
+			}
 		}
 
 		private class InternalTarget : Target

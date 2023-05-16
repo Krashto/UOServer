@@ -46,7 +46,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 				Disturb(m);
 
-				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m) || PieuxDeGlaceSpell.IsActive(m)))
+				if (m.Hits > m.HitsMax / 2 && (CageDeGlaceSpell.IsActive(m) || BlizzardSpell.IsActive(m)))
 				{
 					if (m is BaseCreature)
 					{

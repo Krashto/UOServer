@@ -60,7 +60,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 
 			foreach (var m in mobiles)
 			{
-				if (m == ControlMaster)
+				if (m == ControlMaster || !CanSee(m) || !InLOS(m))
 					continue;
 
 				if (CustomPlayerMobile.IsInEquipe(ControlMaster, m))

@@ -65,14 +65,15 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				return;
 
 			var t = m_Timers[m] as Timer;
+			var v = m_Table[m] as double?;
 
-			if (t != null)
+			if (t != null && v != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m_Table.Remove(m);
 
-				m.FixedParticles(14217, 10, 20, 5013, 1942, 0, EffectLayer.CenterFeet); //ID, speed, dura, effect, hue, render, layer
-				m.PlaySound(508);
+				CustomUtility.ApplySimpleSpellEffect(m, "Second Souffle", AptitudeColor.Martial, SpellSequenceType.End);
 			}
 		}
 

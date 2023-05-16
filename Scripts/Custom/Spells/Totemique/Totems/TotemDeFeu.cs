@@ -68,7 +68,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				if (count >= 3)
 					break;
 
-				if (m == ControlMaster)
+				if (m == ControlMaster || !CanSee(m) || !InLOS(m))
 					continue;
 
 				if (m is BaseTotem totem && totem.ControlMaster == ControlMaster)
