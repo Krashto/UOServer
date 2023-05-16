@@ -369,9 +369,14 @@ namespace Server.Items
 			if (version < 3 && (Weight == 1 || Weight == 2))
 				Weight = -1;
 		}
+		public override void OnAosSingleClick(Mobile from)
+		{
+			LabelTo(from, "{0} by {1}", m_Title, m_Author);
+			LabelTo(from, "[{0} pages]", m_Pages.Length);
+		}
 
 		public override void AddNameProperty(ObjectPropertyList list)
-		{
+		{	
 			if (!string.IsNullOrEmpty(m_Title))
 				list.Add(m_Title);
 			else
