@@ -22,6 +22,8 @@ namespace Server.Mobiles
 				Add(new GenericBuyInfo(typeof(TrainingSword), 50, 20, 0xF5E, 0));
 				Add(new GenericBuyInfo(typeof(TrainingKryss), 50, 20, 0x1401, 0));
 				Add(new GenericBuyInfo(typeof(TrainingMace), 50, 20, 0xF5C, 0));
+				Add(new GenericBuyInfo(typeof(TrainingDoublelames), 50, 20, 41560, 0));
+
 				//Add(new GenericBuyInfo(typeof(Buckler), 50, 20, 0x1B73, 0));
 				//Add(new GenericBuyInfo(typeof(MetalKiteShield), 123, 20, 0x1B74, 0));
 				//Add(new GenericBuyInfo(typeof(HeaterShield), 231, 20, 0x1B76, 0));

@@ -7,7 +7,7 @@ namespace Server.Items
     {
         [Constructable]
         public Shaft()
-            : this(1)
+            : this(5)
         {
         }
 
@@ -16,7 +16,7 @@ namespace Server.Items
             : base(0x1BD4)
         {
             Stackable = true;
-            Amount = amount;
+            Amount = 5;
         }
 
         public Shaft(Serial serial)

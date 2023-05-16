@@ -62,7 +62,7 @@ namespace Server.Items
 		public override void GetProperties(ObjectPropertyList list)
         {
             if (!Finish)
-                list.Add("Statue à complèter");
+                list.Add("Statue");
 			else
 			{
 				list.Add(m_Title);

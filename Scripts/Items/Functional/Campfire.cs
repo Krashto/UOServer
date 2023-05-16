@@ -151,10 +151,10 @@ namespace Server.Items
 				if (entry.Safe = true)
 				{
 
-					if (entry.Player.Hits < entry.Player.HitsMax && entry.Player.CanHeal())
-						entry.Player.Hits += 1;
-					//  if(entry.Player.Mana < entry.Player.ManaMax)
-					//	entry.Player.Mana +=1;
+					//if (entry.Player.Hits < entry.Player.HitsMax && entry.Player.CanHeal())
+					//	entry.Player.Hits += 1;
+					////  if(entry.Player.Mana < entry.Player.ManaMax)
+					////	entry.Player.Mana +=1;
 
 
 					Effects.SendLocationParticles(this, 0x3779, 1, 30, 1160, 3, 9502, 0);
