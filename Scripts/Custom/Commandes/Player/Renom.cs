@@ -109,6 +109,15 @@ namespace Server.Scripts.Commands
 					else
 						from.SendMessage("L'item doit être dans votre sac.");
 				}
+				else if (targeted is Statue)
+				{
+					Statue item = (Statue)targeted;
+
+					if (item.IsChildOf(from.Backpack))
+						item.Name = m_Name;
+					else
+						from.SendMessage("L'item doit être dans votre sac.");
+				}
 				else if (targeted is CraftableFurniture)
 				{
 					CraftableFurniture item = (CraftableFurniture)targeted;
