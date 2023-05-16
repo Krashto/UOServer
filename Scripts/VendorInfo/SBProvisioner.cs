@@ -98,7 +98,7 @@ namespace Server.Mobiles
             public InternalSellInfo()
             {
                 Add(typeof(Arrow), 1);
-                Add(typeof(Bolt), 2);
+                Add(typeof(Bolt), 1);
                 Add(typeof(Backpack), 1);
                 Add(typeof(Pouch), 3);
                 Add(typeof(Bag), 3);

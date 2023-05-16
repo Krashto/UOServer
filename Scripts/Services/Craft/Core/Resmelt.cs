@@ -125,31 +125,91 @@ namespace Server.Engines.Craft
 
                     switch (resource)
                     {
-                        case CraftResource.DullCopper:
-                            difficulty = 65.0;
-                            break;
-                        case CraftResource.ShadowIron:
-                            difficulty = 70.0;
-                            break;
-                        case CraftResource.Copper:
-                            difficulty = 75.0;
+                        case CraftResource.Iron:
+                            difficulty = 0.0;
                             break;
                         case CraftResource.Bronze:
-                            difficulty = 80.0;
+                            difficulty = 0.0;
                             break;
-                        case CraftResource.Gold:
-                            difficulty = 85.0;
+                        case CraftResource.Copper:
+                            difficulty = 0.0;
                             break;
-                        case CraftResource.Agapite:
-                            difficulty = 90.0;
+                        case CraftResource.Sonne:
+                            difficulty = 20.0;
                             break;
-                        case CraftResource.Verite:
-                            difficulty = 95.0;
+                        case CraftResource.Argent:
+                            difficulty = 20.0;
                             break;
-                        case CraftResource.Valorite:
-                            difficulty = 99.0;
+                        case CraftResource.Boreale:
+                            difficulty = 20.0;
                             break;
-                    }
+                        case CraftResource.Chrysteliar:
+                            difficulty = 20.0;
+                            break;
+                        case CraftResource.Glacias:
+                            difficulty = 20.0;
+                            break;
+						case CraftResource.Lithiar:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Acier:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Durian:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Equilibrum:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Justicium:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Gold:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Jolinar:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Abyssium:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Bloodirium:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Herbrosite:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Khandarium:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Mytheril:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Sombralir:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Draconyr:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Heptazion:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Oceanis:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Brazium:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Lunerium:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Marinar:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Nostalgium:
+							difficulty = 100.0;
+							break;
+					}
 
                     double skill = Math.Max(from.Skills[SkillName.Mining].Value, from.Skills[SkillName.Blacksmith].Value);
 

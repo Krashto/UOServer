@@ -308,21 +308,21 @@ namespace Server.Engines.Craft
 
 
 			#region "Armure Barbaresque"
-			AddCraft(typeof(GantMailleBarbare), "Armure Légère", "Gants Barbaresque", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(GorgetMailleBarbare), "Armure Légère", "Gorgerin Barbaresque", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(JambiereMailleBarbare), "Armure Légère", "Jambes Barbaresque", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(BrassardMailleBarbare), "Armure Légère", "Brassard Barbaresque", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(PlastronMailleBarbare), "Armure Légère", "Torse Barbaresque", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(CasqueMailleBarbare), "Armure Légère", "Casque Barbaresque", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetMailleBarbare), "Armure Légère", "Gorgerin Barbaresque", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantMailleBarbare), "Armure Légère", "Gants Barbaresque", 25.0, 45.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BrassardMailleBarbare), "Armure Légère", "Brassard Barbaresque", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereMailleBarbare), "Armure Légère", "Jambes Barbaresque", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronMailleBarbare), "Armure Légère", "Torse Barbaresque", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Armure Broigne"
-			AddCraft(typeof(GantMailleRenforce), "Armure Légère", "Gants Broigne", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(GorgetMailleRenforce), "Armure Légère", "Gorgerin Broigne", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(JambiereMailleRenforce), "Armure Légère", "Jambes Broigne", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(BrassardMaillerRenforce), "Armure Légère", "Brassard Broigne", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(PlastronMailleRenforce), "Armure Légère", "Torse Broigne", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(CasqueMailleRenforce), "Armure Légère", "Casque Broigne", 20.0, 40.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GorgetMailleRenforce), "Armure Légère", "Gorgerin Broigne", 22.0, 42.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GantMailleRenforce), "Armure Légère", "Gants Broigne", 25.0, 45.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(BrassardMaillerRenforce), "Armure Légère", "Brassard Broigne", 25.0, 45.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JambiereMailleRenforce), "Armure Légère", "Jambes Broigne", 28.0, 48.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(PlastronMailleRenforce), "Armure Légère", "Torse Broigne", 32.0, 52.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 

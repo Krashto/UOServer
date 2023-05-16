@@ -325,15 +325,6 @@ namespace Server.Items
                         case CraftResource.ShadowIron:
                             difficulty = 40.0;
                             break;
-                        case CraftResource.Copper:
-                            difficulty = 45.0;
-                            break;
-                        case CraftResource.Bronze:
-                            difficulty = 50.0;
-                            break;
-                        case CraftResource.Gold:
-                            difficulty = 55.0;
-                            break;
                         case CraftResource.Agapite:
                             difficulty = 60.0;
                             break;
@@ -343,8 +334,89 @@ namespace Server.Items
                         case CraftResource.Valorite:
                             difficulty = 70.0;
                             break;
+						case CraftResource.Iron:
+							difficulty = 0.0;
+							break;
+						case CraftResource.Bronze:
+							difficulty = 0.0;
+							break;
+						case CraftResource.Copper:
+							difficulty = 0.0;
+							break;
+						case CraftResource.Sonne:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Argent:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Boreale:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Chrysteliar:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Glacias:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Lithiar:
+							difficulty = 20.0;
+							break;
+						case CraftResource.Acier:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Durian:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Equilibrum:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Justicium:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Gold:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Jolinar:
+							difficulty = 40.0;
+							break;
+						case CraftResource.Abyssium:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Bloodirium:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Herbrosite:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Khandarium:
+							difficulty = 60.0;
+							break;
 						case CraftResource.Mytheril:
-							difficulty = 90.0;
+							difficulty = 60.0;
+							break;
+						case CraftResource.Sombralir:
+							difficulty = 60.0;
+							break;
+						case CraftResource.Draconyr:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Heptazion:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Oceanis:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Brazium:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Lunerium:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Marinar:
+							difficulty = 80.0;
+							break;
+						case CraftResource.Nostalgium:
+							difficulty = 100.0;
 							break;
 					}
 
