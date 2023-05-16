@@ -120,7 +120,7 @@ namespace Server.CustomScripts.Systems.Experience
 			if (ExpToGainBank + Exp < MaxExpRetard)
 				ExpToGainBank = MaxExpRetard - Exp;
 
-			if (ExpToGainBank + Exp >= MaxExpRetard)
+			if (ExpToGainBank + Exp > MaxExpRetard)
 			{
 				Exp = MaxExpRetard;
 				ExpToGainBank = 0;
