@@ -3,8 +3,6 @@ using Server.Mobiles;
 using Server.Targeting;
 using System;
 using Server.Services.BasketWeaving.Baskets;
-using Xanthos.ShrinkSystem;
-using System.Security.Policy;
 
 namespace Server.Engines.Craft
 {
@@ -163,12 +161,6 @@ namespace Server.Engines.Craft
 			}
 		}
 
-		
-
-
-
-		
-
 		public override void InitCraftList()
 		{
 			int index = -1;
@@ -179,29 +171,22 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(SewingKit), "Outils", "Kit de couture (Tissus)", 10.0, 30.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(BoneSewingKit), "Outils", "Kit de couture (Os)", 10.0, 30.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(LeatherSewingKit), "Outils", "Kit de couture (Cuir)", 10.0, 30.0, typeof(IronIngot), 1044036, 5, 1044037);
-
-		
 			index = AddCraft(typeof(Hatchet), "Outils", "Hachette", 20.0, 40.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Shovel), "Outils", "Pelle", 20.0, 40.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Pickaxe), "Outils", "Pioche", 20.0, 40.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(TinkerTools), "Outils", "Trousse de Bricolage", 15.0, 30.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(SmithyHammer), "Outils", "Marteau de forgeron", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(Saw), "Outils", "Scie", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
-	
 			index = AddCraft(typeof(RollingPin), "Outils", "Rouleau à pâte", 15.0, 35.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(Skillet), "Outils", "Poêlon", 15.0, 30.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(FlourSifter), "Outils", "Tamis à farine", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(MortarPestle), "Outils", "Mortier et pilon", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(MortarPestlePoisoning), "Outils", "Mortier et pilon (Poison)", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
-
 			index = AddCraft(typeof(FletcherTools), "Outils", "Outil fabrication d'arc", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(ScribesPen), "Outils", "Plume d'écriture", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(SpellsPen), "Outils", "Cristal de compétences", 15.0, 35.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(SoulsPen), "Outils", "Plume de reviviscence", 50.0, 75.0, typeof(IronIngot), 1044036, 3, 1044037);
-
-
 			index = AddCraft(typeof(Lockpick), "Outils", "Crochets", 10.0, 30.0, typeof(IronIngot), 1044036, 3, 1044037);
-
 			index = AddCraft(typeof(BarberScissors), "Outils", "Ciseaux de Barbier", 10.0, 70.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Ecraseur), "Outils", "Écraseur", 15.0, 30.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(BeerBreweringTools), "Outils", "Outil fabrication de bière", 35.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
@@ -213,12 +198,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(JuicersTools), "Outils", "Fabrication de Jus", 30.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(VinyardLabelMaker), "Outils", "Marqueur de vin", 30.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(WinecraftersTools), "Outils", "Outil fabrication de vin", 30.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
-		
-
-
-
 			#endregion
-
 	
 			#region Anneaux
 			AddCraft(typeof(Ring1), "Anneaux", "Anneau", 40.0, 55.0, typeof(IronIngot), "Lingot de fer", 1, "Vous n'avez pas assez de lingots pour fabriquer cet anneau.");
@@ -379,8 +359,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(MenotteDoree), "Bijoux Divers", "Menotte dorée", 80.0, 100.0, typeof(IronIngot), "lingots", 5, "Vous n'avez pas assez de lingots.");
 			#endregion
 
-			
-
 			#region Paniers et boîtes
 			index = AddCraft(typeof(RoundBasket), "Paniers et boîtes", "Panier rond", 10.0, 30.0, typeof(Kindling), "Petit Bois", 5, "Vous manquez de petit bois");
 			AddRes(index, typeof(Shaft), 1027125, 3, 1044351);
@@ -419,22 +397,15 @@ namespace Server.Engines.Craft
 
 			#endregion
 
-		
-
 			#region Pièces d'assemblages
 			index = AddCraft(typeof(Gears), "Pièces d'assemblages", "Engrenages", 5.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
-
-
 			index = AddCraft(typeof(ClockFrame), "Pièces d'assemblages", "Cadre d'horloge", 0.0, 50.0, typeof(RegularBoard), 1044041, 6, 1044351);
 			SetUseSubRes2(index, true);
-
 			index = AddCraft(typeof(BarrelTap), "Pièces d'assemblages", "Robinet de baril", 35.0, 85.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Springs), "Pièces d'assemblages", "Ressorts", 5.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(BarrelHoops), "Pièces d'assemblages", "Cercles de tonneau", -15.0, 35.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Hinge), "Pièces d'assemblages", "Charnière", 5.0, 55.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Axle), "Pièces d'assemblages", "Essieu", -25.0, 25.0, typeof(RegularBoard), 1044041, 2, 1044351);
-
-		
 			#endregion
 
 			#region Assemblages
@@ -452,11 +423,6 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(ClockParts), "Pièces d'horloge", 2, 1044253);
 			AddRes(index, typeof(RegularBoard), 1044041, 8, 1044351);
 			SetUseSubRes2(index, true);
-
-
-
-
-
 			index = AddCraft(typeof(LargeGrandfatherClock), "Assemblages", "Horloge Grand Père", 50.0, 90.0, typeof(ClockFrame), "Cadre d'horloge", 1, 1044253);
 			AddRes(index, typeof(ClockParts), "Pièces d'horloge", 2, 1044253);
 			AddRes(index, typeof(RegularBoard), 1044041, 8, 1044351);
@@ -472,7 +438,6 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(BarrelLid), "Couvercle de baril", 1, 1044253);
 			AddRes(index, typeof(BarrelTap), "Robinet de baril", 1, 1044253);
 			index = AddCraft(typeof(Rope), "Assemblages", "Corde", 60.0, 120.0, typeof(Cloth), "Tissus", 10, "Vous avez besoin de plus de tissus");
-			
 			index = AddCraft(typeof(DistillerySouthAddonDeed), "Assemblages", "Distillerie (S)",65.0, 100.0, typeof(LiquorBarrel), "Tonneau d'alcool", 2, 1044253);
 			AddRes(index, typeof(HeatingStand), "Support chauffant", 4, 1044253);
 			AddRes(index, typeof(CopperWire), "Fil de cuivre", 20, 1044253);
@@ -482,11 +447,9 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(CopperWire), "Fil de cuivre", 20, 1044253);
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(AdvancedTrainingDummySouthDeed), "Assemblages", "Mannequin d'entrainement avancé (S)", 80.0, 110.0, typeof(TrainingDummySouthDeed), 1044336, 1, 1044253);
-		
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(AdvancedTrainingDummyEastDeed), "Assemblages", "Mannequin d'entrainement avancé (E)", 80.0, 110.0, typeof(TrainingDummyEastDeed), 1044335, 1, 1044253);
 			ForceNonExceptional(index);
-
 			#endregion
 
 			#region Ustensiles
@@ -502,8 +465,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(PewterMug), "Ustensiles", "Chope en étain", 10.0, 60.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(Tray), "Ustensiles", "Plateau", 25.0, 75.0, typeof(RegularBoard), 1044041, 2, 1044351);
 			index = AddCraft(typeof(Silverware), "Ustensiles", "Argenterie", 25.0, 75.0, typeof(IronIngot), 1044036, 4, 1044037);
-
-
 			#endregion
 
 			#region Luminaires et décorations
@@ -513,7 +474,6 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(CandelabraStand), "Luminaires et décorations", "Grand Chandelier", 65.0, 105.0, typeof(IronIngot), 1044036, 8, 1044037);
 			index = AddCraft(typeof(WallSconce), "Luminaires et décorations", "Chandelle Murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
 			index = AddCraft(typeof(WallTorch), "Luminaires et décorations", "Torche murale", 35.0, 105.0, typeof(IronIngot), 1044036, 3, 1044037);
-		
 			index = AddCraft(typeof(Lantern), "Luminaires et décorations", "Lanterne", 30.0, 80.0, typeof(IronIngot), 1044036, 5, 1044037);
 			index = AddCraft(typeof(HeatingStand), "Luminaires et décorations", "Support chauffant", 60.0, 110.0, typeof(IronIngot), 1044036, 4, 1044037);
 			index = AddCraft(typeof(ShojiLantern), "Luminaires et décorations", "Lanterne sophistiquée", 65.0, 115.0, typeof(IronIngot), 1044036, 30, 1044037);
@@ -528,9 +488,6 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(WindChimes), "Luminaires et décorations", "Carillons éoliens", 80.0, 130.0, typeof(IronIngot), 1044036, 35, 1044037);
 			index = AddCraft(typeof(FancyWindChimes), "Luminaires et décorations", "Carillons", 80.0, 130.0, typeof(IronIngot), 1044036, 35, 1044037);
-		
-
-
 			#endregion
 
 			#region Divers
@@ -555,11 +512,7 @@ namespace Server.Engines.Craft
 			SetUseAllRes(index, true);
 			AddCraft(typeof(EmptyWineBottle), "Divers", "Bouteille de Vin", 22.5, 42.5, typeof(IronIngot), 1044036, 5, 1044037);
 			AddCraft(typeof(EmptyAleBottle), "Divers", "Bouteille de Bière", 32.5, 52.5, typeof(IronIngot), 1044036, 5, 1044037);
-
-
 			#endregion
-
-
 
 			// Set the overridable material
 			SetSubRes(typeof(IronIngot), 1044022);

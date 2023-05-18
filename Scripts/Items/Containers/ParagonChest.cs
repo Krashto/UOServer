@@ -1,5 +1,6 @@
 using System;
 using Server.Custom;
+using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
 using Server.Custom.Packaging.Packages;
 
 namespace Server.Items
@@ -181,9 +182,21 @@ namespace Server.Items
 			if (item != null)
 				DropItem(item);
 
+			item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
+			item.Amount = 5 + level;
+			if (item != null)
+				DropItem(item);
+
 			item = CustomUtility.GetRandomItemByBaseType(typeof(BaseShell));
 			if (item != null)
 				DropItem(item);
+
+			if (Utility.Random(0, 100) < (level * 5))
+			{
+				item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+				if (item != null)
+					DropItem(item);
+			}
 
 			for (int i = 0; i < level * 2; ++i)
             {

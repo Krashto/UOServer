@@ -310,8 +310,20 @@ namespace Server.Mobiles
 
         public static void HandleSpeech(Mobile vendor, SpeechEventArgs e)
         {
-            if (!e.Handled && e.Mobile.InRange(vendor, 5))
+            if (!e.Handled)
             {
+				if (!e.Mobile.InRange(vendor, 5))
+				{
+					e.Mobile.SendMessage("Vous devez être plus près du banquier.");
+					return;
+				}
+
+				if (!e.Mobile.InLOS(vendor))
+				{
+					e.Mobile.SendMessage("Le banquier ne vous voit pas.");
+					return;
+				}
+
                 if (e.Mobile.Map.Rules != MapRules.FeluccaRules && vendor is BaseVendor && !((BaseVendor)vendor).CheckVendorAccess(e.Mobile))
                 {
                     return;

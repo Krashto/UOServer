@@ -1,23 +1,23 @@
 ﻿namespace Server.Custom.Items.SouvenirsAncestraux.Souvenirs
 {
-	public class SouvenirAeromanciePotion : BaseSouvenirPotion
+	public class SouvenirTotemiquePotion : BaseSouvenirPotion
 	{
-		public override SetAptitudeType SetType => SetAptitudeType.Aeromancie;
+		public override SetAptitudeType SetType => SetAptitudeType.Totemique;
 
 		[Constructable]
-		public SouvenirAeromanciePotion() : this(1)
+		public SouvenirTotemiquePotion() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SouvenirAeromanciePotion(int amount) : base()
+		public SouvenirTotemiquePotion(int amount) : base()
 		{
-			Name = "Souvenir Ancestral: Aéromancie";
+			Name = "Souvenir Ancestral: Totemique";
 			Amount = amount;
-			Hue = 1153;
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
-		public SouvenirAeromanciePotion(Serial serial) : base(serial)
+		public SouvenirTotemiquePotion(Serial serial) : base(serial)
 		{
 		}
 

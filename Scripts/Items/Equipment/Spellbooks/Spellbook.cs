@@ -8,9 +8,6 @@ using Server.Targeting;
 using System;
 using System.Collections.Generic;
 using Server.Gumps;
-using Server.Engines.TreasuresOfKotlCity;
-using Server.Mobiles;
-
 #endregion
 
 namespace Server.Items
@@ -135,7 +132,15 @@ namespace Server.Items
             set
             {
                 m_Quality = value;
-                InvalidateProperties();
+
+				if (Quality == BookQuality.Legendary)
+					Attributes.SpellDamage = 50;
+				else if (Quality == BookQuality.Epic)
+					Attributes.SpellDamage = 30;
+				else if (Quality == BookQuality.Exceptional)
+					Attributes.SpellDamage = 15;
+
+				InvalidateProperties();
             }
         }
 
@@ -1139,11 +1144,11 @@ namespace Server.Items
 			Quality = (BookQuality)(quality);
 
 			if (Quality == BookQuality.Legendary)
-				Attributes.SpellDamage += 50;
+				Attributes.SpellDamage = 50;
 			else if (Quality == BookQuality.Epic)
-				Attributes.SpellDamage += 30;
+				Attributes.SpellDamage = 30;
 			else if (Quality == BookQuality.Exceptional)
-				Attributes.SpellDamage += 15;
+				Attributes.SpellDamage = 15;
 
 			int magery = from.Skills.Magery.BaseFixedPoint;
 

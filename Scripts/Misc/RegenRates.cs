@@ -166,10 +166,10 @@ namespace Server.Misc
                 points += ((BaseCreature)from).DefaultStamRegen;
 
 			if (FormeEnsanglanteeSpell.IsActive(from))
-                points += 15;
+                points += 10;
 
 			if (from is CustomPlayerMobile pm)
-				points += pm.Attributs.Endurance / 10;
+				points += pm.Attributs.Endurance / 30;
 
 			if (points < -1)
                 points = -1;
@@ -190,16 +190,16 @@ namespace Server.Misc
 			points += FormeMetalliqueSpell.GetValue(from);
 
 			if (AdrenalineSpell.IsActive(from))
-				points += 10;
+				points += 7;
 
 			if (FormeCristallineSpell.IsActive(from))
-				points += 15;
+				points += 10;
 
 			if (FormeEnsanglanteeSpell.IsActive(from))
 				points += 3;
 
 			if (from is CustomPlayerMobile pm)
-				points += pm.Attributs.Sagesse / 10;
+				points += pm.Attributs.Sagesse / 30;
 
 			foreach (RegenBonusHandler handler in ManaBonusHandlers)
                 points += handler(from);

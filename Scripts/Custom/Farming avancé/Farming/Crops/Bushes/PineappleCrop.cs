@@ -22,7 +22,7 @@ namespace Server.Items.Crops
 
 		public override void OnDoubleClick( Mobile from )
 		{
-			Sow(from, typeof(PineappleSeed));
+			Sow(from, typeof(PineappleSeedling));
 		}
 
 		public PineappleSeed( Serial serial ) : base( serial ) { }

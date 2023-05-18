@@ -10,8 +10,8 @@
 		[Constructable]
 		public SouvenirTotemique(int amount) : base(amount)
 		{
-			Name = "Souvenir: Totemique";
-			Hue = 1139;
+			Name = "Souvenir Ancestral: Totemique";
+			Hue = (int)AptitudeColor.Totemique;
 		}
 
 		public SouvenirTotemique(Serial serial) : base(serial)

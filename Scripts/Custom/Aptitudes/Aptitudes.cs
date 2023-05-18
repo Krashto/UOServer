@@ -1,4 +1,5 @@
 using System;
+using Server.Custom.SouvenirsAncestraux;
 using Server.Items;
 using Server.Mobiles;
 
@@ -315,6 +316,8 @@ namespace Server.Custom.Aptitudes
 					if (item is BaseJewel jewel && jewel.AptitudeBonus == aptitude)
 						value += jewel.AptitudeLevel;
 				}
+
+				value += NewSetSystem.GetSetBonus(null, Owner, aptitude);
 			}
 
 			return value;

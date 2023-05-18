@@ -138,7 +138,7 @@ namespace Server.Mobiles
             private readonly BaseVendor m_Vendor;
 
             public BulkOrderInfoEntry(Mobile from, BaseVendor vendor)
-                : base(6152, -1)
+                : base(6152, 5)
             {
                 Enabled = vendor.CheckVendorAccess(from);
 
@@ -148,10 +148,20 @@ namespace Server.Mobiles
 
             public override void OnClick()
             {
-                if (!m_From.InRange(m_Vendor.Location, 20))
-                    return;
+                if (!m_From.InRange(m_Vendor.Location, 5))
+				{
+					m_From.SendMessage("Vous devez être plus près du vendeur.");
+					return;
+				}
+				
+				if (!m_From.InLOS(m_Vendor.Location))
+				{
+					m_From.SendMessage("Le vendeur ne vous voit pas.");
+					return;
 
-                EventSink.InvokeBODOffered(new BODOfferEventArgs(m_From, m_Vendor));
+				}
+
+				EventSink.InvokeBODOffered(new BODOfferEventArgs(m_From, m_Vendor));
 
                 if (m_Vendor.SupportsBulkOrders(m_From) && m_From is PlayerMobile)
                 {
@@ -239,10 +249,23 @@ namespace Server.Mobiles
 
             public override void OnClick()
             {
-                if (!m_From.InRange(m_Vendor.Location, 2) || !(m_From is PlayerMobile))
+                if (!(m_From is PlayerMobile))
                     return;
 
-                if (m_Vendor.SupportsBulkOrders(m_From) && m_From is PlayerMobile)
+				if (!m_From.InRange(m_Vendor.Location, 2))
+				{
+					m_From.SendMessage("Vous devez être plus près du vendeur.");
+					return;
+				}
+
+				if (!m_From.InLOS(m_Vendor.Location))
+				{
+					m_From.SendMessage("Le vendeur ne vous voit pas.");
+					return;
+
+				}
+
+				if (m_Vendor.SupportsBulkOrders(m_From) && m_From is PlayerMobile)
                 {
                     if (m_From.NetState != null && m_From.NetState.IsEnhancedClient)
                     {
@@ -262,7 +285,7 @@ namespace Server.Mobiles
             private readonly BaseVendor m_Vendor;
 
             public ClaimRewardsEntry(Mobile from, BaseVendor vendor)
-                : base(1155593, 3)
+                : base(1155593, 5)
             {
                 Enabled = vendor.CheckVendorAccess(from);
 
@@ -272,10 +295,23 @@ namespace Server.Mobiles
 
             public override void OnClick()
             {
-                if (!m_From.InRange(m_Vendor.Location, 3) || !(m_From is PlayerMobile))
+                if (!(m_From is PlayerMobile))
                     return;
 
-                BODContext context = BulkOrderSystem.GetContext(m_From);
+				if (!m_From.InRange(m_Vendor.Location, 5))
+				{
+					m_From.SendMessage("Vous devez être plus près du vendeur.");
+					return;
+				}
+
+				if (!m_From.InLOS(m_Vendor.Location))
+				{
+					m_From.SendMessage("Le vendeur ne vous voit pas.");
+					return;
+
+				}
+
+				BODContext context = BulkOrderSystem.GetContext(m_From);
                 int pending = context.GetPendingRewardFor(m_Vendor.BODType);
 
                 if (pending > 0)
@@ -2570,34 +2606,61 @@ namespace Server.ContextMenus
     public class VendorBuyEntry : ContextMenuEntry
     {
         private readonly BaseVendor m_Vendor;
+		private readonly Mobile m_From;
 
-        public VendorBuyEntry(Mobile from, BaseVendor vendor)
-            : base(6103, 8)
+        public VendorBuyEntry(Mobile from, BaseVendor vendor) : base(6103, 5)
         {
-            m_Vendor = vendor;
+			m_From = from;
+			m_Vendor = vendor;
             Enabled = vendor.CheckVendorAccess(from);
         }
 
         public override void OnClick()
         {
-            m_Vendor.VendorBuy(Owner.From);
+			if (!m_From.InRange(m_Vendor.Location, 5))
+			{
+				m_From.SendMessage("Vous devez être plus près du vendeur.");
+				return;
+			}
+
+			if (!m_From.InLOS(m_Vendor.Location))
+			{
+				m_From.SendMessage("Le vendeur ne vous voit pas.");
+				return;
+			}
+
+			m_Vendor.VendorBuy(Owner.From);
         }
     }
 
     public class VendorSellEntry : ContextMenuEntry
     {
         private readonly BaseVendor m_Vendor;
+		private readonly Mobile m_From;
 
-        public VendorSellEntry(Mobile from, BaseVendor vendor)
-            : base(6104, 8)
+		public VendorSellEntry(Mobile from, BaseVendor vendor)
+            : base(6104, 5)
         {
+			m_From = from;
             m_Vendor = vendor;
-            Enabled = vendor.CheckVendorAccess(from);
+			Enabled = vendor.CheckVendorAccess(from);
         }
 
         public override void OnClick()
         {
-            m_Vendor.VendorSell(Owner.From);
+			if (!m_From.InRange(m_Vendor.Location, 5))
+			{
+				m_From.SendMessage("Vous devez être plus près du vendeur.");
+				return;
+			}
+
+			if (!m_From.InLOS(m_Vendor.Location))
+			{
+				m_From.SendMessage("Le vendeur ne vous voit pas.");
+				return;
+			}
+
+			m_Vendor.VendorSell(Owner.From);
         }
     }
 

@@ -395,7 +395,10 @@ namespace Server.Items
             if (val > MaxBardingDifficulty)
                 val = MaxBardingDifficulty;
 
-            return val;
+			if (bc != null && bc.Level >= 11)
+				val = MaxBardingDifficulty * 100.0;
+
+			return val;
         }
 
         public double GetDifficultyFor(Mobile targ)

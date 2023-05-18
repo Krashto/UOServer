@@ -915,15 +915,15 @@ namespace Server.Mobiles
 
 		private static void CheckPets()
 		{
-			foreach (PlayerMobile pm in World.Mobiles.Values.OfType<PlayerMobile>())
-			{
-				if (((!pm.Mounted) &&
-					 (pm.AllFollowers.Count > pm.AutoStabled.Count)) ||
-					(pm.Mounted && (pm.AllFollowers.Count > (pm.AutoStabled.Count + 1))))
-				{
-					pm.AutoStablePets(); /* autostable checks summons, et al: no need here */
-				}
-			}
+			//foreach (PlayerMobile pm in World.Mobiles.Values.OfType<PlayerMobile>())
+			//{
+			//	if (((!pm.Mounted) &&
+			//		 (pm.AllFollowers.Count > pm.AutoStabled.Count)) ||
+			//		(pm.Mounted && (pm.AllFollowers.Count > (pm.AutoStabled.Count + 1))))
+			//	{
+			//		pm.AutoStablePets(); /* autostable checks summons, et al: no need here */
+			//	}
+			//}
 		}
 
 		public override void OnSkillInvalidated(Skill skill)
@@ -1446,7 +1446,7 @@ namespace Server.Mobiles
 				pm.m_SpeechLog = null;
 				pm.LastOnline = DateTime.UtcNow;
 
-				pm.AutoStablePets();
+				//pm.AutoStablePets();
 			}
 
 			//DisguiseTimers.StopTimer(from);

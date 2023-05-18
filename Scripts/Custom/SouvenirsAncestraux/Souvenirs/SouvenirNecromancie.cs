@@ -1,20 +1,20 @@
 ﻿namespace Server.Custom.Items.SouvenirsAncestraux.Souvenirs
 {
-	public class SouvenirHydromancie : BaseSouvenir
+	public class SouvenirNecromancie : BaseSouvenir
 	{
 		[Constructable]
-		public SouvenirHydromancie() : this(1)
+		public SouvenirNecromancie() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SouvenirHydromancie(int amount) : base(amount)
+		public SouvenirNecromancie(int amount) : base(amount)
 		{
-			Name = "Souvenir: Hydromancie";
-			Hue = 1264;
+			Name = "Souvenir Ancestral: Necromancie";
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
-		public SouvenirHydromancie(Serial serial) : base(serial)
+		public SouvenirNecromancie(Serial serial) : base(serial)
 		{
 		}
 

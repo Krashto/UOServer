@@ -3,6 +3,8 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Mobiles;
 using System;
+using Server.Custom.Spells.Musique;
+using Server.Engines.Quests;
 
 namespace Server.Custom.Spells.NewSpells.Musique
 {
@@ -45,11 +47,47 @@ namespace Server.Custom.Spells.NewSpells.Musique
 				m.Combatant = null;
 				m.Warmode = false;
 
-				if (m is BaseCreature && !((BaseCreature)m).BardPacified)
+				if (m is BaseCreature bc)
 				{
-					var duration = TimeSpan.FromSeconds(30.0);
-					var bc = (BaseCreature)m;
-					bc.Pacify(Caster, DateTime.UtcNow + duration);
+					if (bc.BardPacified)
+						Caster.SendMessage("Vous ne pouvez pas calmer une créature déjà calmée.");
+					else if (bc.Level >= 11)
+						Caster.SendMessage("Vous ne pouvez pas calmer un mini boss ou un boss.");
+					else
+					{
+						double diff = MusicSpellHelper.GetBaseDifficulty(bc) - 10.0;
+						double music = Caster.Skills[SkillName.Musicianship].Value;
+
+						if (music > 80.0)
+						{
+							diff -= (music - 80.0) * 0.5;
+						}
+
+						if (!Caster.CheckTargetSkill(SkillName.Musicianship, bc, diff - 25.0, diff + 25.0))
+						{
+							Caster.SendLocalizedMessage(1049531); // You attempt to calm your target, but fail.
+							MusicSpellHelper.PlayInstrumentBadly(Caster);
+						}
+						else
+						{
+							MusicSpellHelper.PlayInstrumentWell(Caster);
+
+							Caster.SendLocalizedMessage(1049532); // You play hypnotic music, calming your target.
+
+							double seconds = 100 - (diff / 1.5);
+
+							if (seconds > 120)
+							{
+								seconds = 120;
+							}
+							else if (seconds < 10)
+							{
+								seconds = 10;
+							}
+
+							bc.Pacify(Caster, DateTime.UtcNow + TimeSpan.FromSeconds(seconds));
+						}
+					}
 				}
 			}
 

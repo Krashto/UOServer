@@ -1,20 +1,23 @@
 ﻿namespace Server.Custom.Items.SouvenirsAncestraux.Souvenirs
 {
-	public class SouvenirMartial : BaseSouvenir
+	public class SouvenirMusiquePotion : BaseSouvenirPotion
 	{
+		public override SetAptitudeType SetType => SetAptitudeType.Musique;
+
 		[Constructable]
-		public SouvenirMartial() : this(1)
+		public SouvenirMusiquePotion() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SouvenirMartial(int amount) : base(amount)
+		public SouvenirMusiquePotion(int amount) : base()
 		{
-			Name = "Souvenir: Martial";
-			Hue = 1105;
+			Name = "Souvenir Ancestral: Musique";
+			Amount = amount;
+			Hue = (int)AptitudeColor.Musique;
 		}
 
-		public SouvenirMartial(Serial serial) : base(serial)
+		public SouvenirMusiquePotion(Serial serial) : base(serial)
 		{
 		}
 

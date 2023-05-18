@@ -196,9 +196,46 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(NightSightPotion), "Autres", "Potion de vision de nuit", -25.0, 25.0, typeof(SpidersSilk), "Soie d'araignée", 1, "Vous n'avez pas suffisament de Soie d'araignée");
 			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
 			//Potions de souvenir
-			//index = AddCraft(typeof(SouvenirAeromanciePotion), "Potion de souvenir", "Potion de souvenir aéromancien", 50.0, 100.0, typeof(SouvenirAeromancie), "Souvenir Ancestral: Aéromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
-			//AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+			index = AddCraft(typeof(SouvenirAeromanciePotion), "Potion de souvenir", "Potion de souvenir d'aéromancie", 50.0, 100.0, typeof(SouvenirAeromancie), "Souvenir Ancestral: Aéromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirChasseurPotion), "Potion de souvenir", "Potion de souvenir du chasseur", 50.0, 100.0, typeof(SouvenirChasseur), "Souvenir Ancestral: Chasseur", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirDefenseurPotion), "Potion de souvenir", "Potion de souvenir du défenseur", 50.0, 100.0, typeof(SouvenirDefenseur), "Souvenir Ancestral: Défenseur", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirGeomanciePotion), "Potion de souvenir", "Potion de souvenir de géomancie", 50.0, 100.0, typeof(SouvenirGeomancie), "Souvenir Ancestral: Géomancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirGuerisonPotion), "Potion de souvenir", "Potion de souvenir de guérison", 50.0, 100.0, typeof(SouvenirGuerison), "Souvenir Ancestral: Guérison", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirHydromanciePotion), "Potion de souvenir", "Potion de souvenir d'hydromancie", 50.0, 100.0, typeof(SouvenirHydromancie), "Souvenir Ancestral: Hydromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirMartialPotion), "Potion de souvenir", "Potion de souvenir de martial", 50.0, 100.0, typeof(SouvenirMartial), "Souvenir Ancestral: Martial", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirMusiquePotion), "Potion de souvenir", "Potion de souvenir de musique", 50.0, 100.0, typeof(SouvenirMusique), "Souvenir Ancestral: Musique", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirNecromanciePotion), "Potion de souvenir", "Potion de souvenir de nécromancie", 50.0, 100.0, typeof(SouvenirNecromancie), "Souvenir Ancestral: Nécromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirPolymorphiePotion), "Potion de souvenir", "Potion de souvenir de polymorphie", 50.0, 100.0, typeof(SouvenirPolymorphie), "Souvenir Ancestral: Polymorphie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirPyromanciePotion), "Potion de souvenir", "Potion de souvenir du pyromancie", 50.0, 100.0, typeof(SouvenirPyromancie), "Souvenir Ancestral: Pyromancie", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirRoublardisePotion), "Potion de souvenir", "Potion de souvenir du roublardise", 50.0, 100.0, typeof(SouvenirRoublardise), "Souvenir Ancestral: Roublardise", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
+
+			index = AddCraft(typeof(SouvenirTotemiquePotion), "Potion de souvenir", "Potion de souvenir du totémique", 50.0, 100.0, typeof(SouvenirTotemique), "Souvenir Ancestral: Totémique", 1, "Vous n'avez pas suffisamment de souvenir pour concocter ceci.");
+			AddRes(index, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
 
 			index = AddCraft(typeof(HairDye), "Teinture pour cheveux", "Teinture à Cheveux", 75.0, 100.0, typeof(BacVide), "Bac Vide", 1, "Il vous faut un bac vide");
 			AddRes(index, typeof(Charcoal), "Charbon", 5, "Vous n'avez pas suffisament de charbon");

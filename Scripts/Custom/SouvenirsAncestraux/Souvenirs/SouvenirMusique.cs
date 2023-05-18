@@ -1,20 +1,20 @@
 ﻿namespace Server.Custom.Items.SouvenirsAncestraux.Souvenirs
 {
-	public class SouvenirDefenseur : BaseSouvenir
+	public class SouvenirMusique : BaseSouvenir
 	{
 		[Constructable]
-		public SouvenirDefenseur() : this(1)
+		public SouvenirMusique() : this(1)
 		{
 		}
 
 		[Constructable]
-		public SouvenirDefenseur(int amount) : base(amount)
+		public SouvenirMusique(int amount) : base(amount)
 		{
-			Name = "Souvenir: Défenseur";
-			Hue = 2006;
+			Name = "Souvenir Ancestral: Musique";
+			Hue = (int)AptitudeColor.Musique;
 		}
 
-		public SouvenirDefenseur(Serial serial) : base(serial)
+		public SouvenirMusique(Serial serial) : base(serial)
 		{
 		}
 

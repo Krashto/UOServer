@@ -22,6 +22,7 @@ using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom;
 using Server.Custom.Spells.Necromancie.Summons;
+using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
 #endregion
 
 namespace Server.Mobiles
@@ -5066,6 +5067,14 @@ namespace Server.Mobiles
 					pc.Fill((int)Math.Ceiling((Level - 11) / 2.0));
 					AddLoot(item);
 				}
+			}
+
+			//Souvenirs
+			if (Level >= 11 && (Utility.Random(0, 100) < (Level * 5)))
+			{
+				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
+				if (item is BaseSouvenir bs)
+					AddLoot(item);
 			}
 
 			//Treasure Maps

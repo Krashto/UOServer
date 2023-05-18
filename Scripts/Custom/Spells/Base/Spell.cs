@@ -12,6 +12,7 @@ using System.Linq;
 using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Custom.Spells.NewSpells.Musique;
 using Server.Custom.Spells.NewSpells.Polymorphie;
+using Server.Multis;
 
 namespace Server.Spells
 {
@@ -109,7 +110,9 @@ namespace Server.Spells
 			int intBonus = Caster.Int / 4;
 			damageBonus += intBonus;
 
-            int evalSkill = GetDamageFixed( m_Caster );
+			damageBonus += AosAttributes.GetValue(Caster, AosAttribute.SpellDamage);
+
+			int evalSkill = GetDamageFixed( m_Caster );
             damageBonus += ((9 * evalSkill) / 100);
 
 			damage = AOS.Scale( damage, 100 + damageBonus );

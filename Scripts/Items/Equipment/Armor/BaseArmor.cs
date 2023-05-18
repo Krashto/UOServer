@@ -9,10 +9,12 @@ using System.Linq;
 using Server.Mobiles;
 using Server.Custom.Capacites;
 using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
+using Server.Custom.SouvenirsAncestraux;
+using static Server.Custom.SouvenirsAncestraux.NewSetSystem;
 
 namespace Server.Items
 {
-    public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality
+    public abstract class BaseArmor : Item, IScissorable, ICraftable, IWearableDurability, IResource, ISetItem, IVvVItem, IOwnerRestricted, ITalismanProtection, IEngravable, IArtifact, ICombatEquipment, IQuality, INewSetItem
     {
 		private SetAptitudeType m_SetAptitudeType;
 
@@ -1170,9 +1172,9 @@ namespace Server.Items
             int bonus = 0;
 
 			if (m_Quality == ItemQuality.Legendary)
-				bonus += 200;
+				bonus += 500;
 			else if (m_Quality == ItemQuality.Epic)
-				bonus += 150;
+				bonus += 250;
 			else if (m_Quality == ItemQuality.Exceptional)
 				bonus += 125;
 			else
@@ -1322,12 +1324,15 @@ namespace Server.Items
                     }
                 }
 
-                from.Delta(MobileDelta.Armor); // Tell them armor rating has changed
+				if (SetAptitudeType != SetAptitudeType.None)
+					InvalidateEquipedArmorProperties(parent as Mobile, this);
+
+				from.Delta(MobileDelta.Armor); // Tell them armor rating has changed
 				from.Delta(MobileDelta.Hits | MobileDelta.Stam | MobileDelta.Mana);
 			}
 		}
 
-        public virtual double ScaleArmorByDurability(double armor)
+		public virtual double ScaleArmorByDurability(double armor)
         {
             int scale = 100;
 
@@ -2179,9 +2184,12 @@ namespace Server.Items
 
 				if (Anonymous && Layer == Layer.Helm)
 					m.NameMod = null;
+
+				if (SetAptitudeType != SetAptitudeType.None)
+					InvalidateEquipedArmorProperties(parent as Mobile, this);
 			}
 
-            base.OnRemoved(parent);
+			base.OnRemoved(parent);
         }
 
         public DateTime NextSelfRepair { get; set; }
@@ -2394,10 +2402,7 @@ namespace Server.Items
                     GetSetProperties(list);
                 }
             }
-
-			if (SetAptitudeType != SetAptitudeType.None)
-				list.Add($"Set Type: {SetAptitudeType}");
-
+			
 			AddDamageTypeProperty(list);
             
             if (this is SurgeShield && ((SurgeShield)this).Surge > SurgeType.None)
@@ -2601,6 +2606,13 @@ namespace Server.Items
                 list.Add(1072378); // <br>Only when full set is present:				
                 GetSetProperties(list);
             }
+
+			if (SetAptitudeType != SetAptitudeType.None)
+			{
+				list.Add($"<BASEFONT COLOR=#00FF00>Set de {SetAptitudeType}</BASEFONT>");
+				foreach(var message in GetBonusMessageList(this, Parent as Mobile, SetAptitudeType))
+					list.Add(message);
+			}
 		}
 
 		public override void AddItemPowerProperties(ObjectPropertyList list)
@@ -2997,9 +3009,9 @@ namespace Server.Items
 
             if ((prop = m_SetSelfRepair) != 0 && m_AosArmorAttributes.SelfRepair == 0)
                 list.Add(1060450, prop.ToString()); // self repair ~1_val~
-        }
+		}
 
-        public int SetResistBonus(ResistanceType resist)
+		public int SetResistBonus(ResistanceType resist)
         {
             if (SetHelper.ResistsBonusPerPiece(this))
             {

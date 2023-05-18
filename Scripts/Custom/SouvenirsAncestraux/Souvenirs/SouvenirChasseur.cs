@@ -1,32 +1,34 @@
 ﻿namespace Server.Custom.Items.SouvenirsAncestraux.Souvenirs
 {
-	public abstract class BaseSouvenir : Item
+	public class SouvenirChasseur : BaseSouvenir
 	{
-		public BaseSouvenir() : this(1)
+		[Constructable]
+		public SouvenirChasseur() : this(1)
 		{
 		}
 
-		public BaseSouvenir(int amount) : base(3982)
+		[Constructable]
+		public SouvenirChasseur(int amount) : base(amount)
 		{
-			Stackable = true;
-			Amount = amount;
+			Name = "Souvenir Ancestral: Chasseur";
+			Hue = (int)AptitudeColor.Chasseur;
 		}
 
-		public BaseSouvenir(Serial serial) : base(serial)
+		public SouvenirChasseur(Serial serial) : base(serial)
 		{
 		}
-
-		public override double DefaultWeight => 0.1;
 
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
+
 			writer.Write(0); // version
 		}
 
 		public override void Deserialize(GenericReader reader)
 		{
 			base.Deserialize(reader);
+
 			var version = reader.ReadInt();
 		}
 	}

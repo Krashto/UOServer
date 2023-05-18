@@ -101,11 +101,11 @@ namespace Server.Items
 				from.SendMessage("Vous ne pouvez plus augmenter votre compétence avec ce livre.");
 				return false;
 			}
-			else if (from.SkillsTotal >= from.SkillsCap)
-			{
-				from.SendMessage("Vous ne pouvez plus augmenter votre compétence avec ce livre (Total Skill Cap).");
-				return false;
-			}
+			//else if (from.SkillsTotal >= from.SkillsCap)
+			//{
+			//	from.SendMessage("Vous ne pouvez plus augmenter votre compétence avec ce livre (Total Skill Cap).");
+			//	return false;
+			//}
 			else if (skillValue >= from.Skills[skill].Cap)
             {
                 from.SendMessage("Vous ne pouvez augmenter votre skill. Vous avez atteint votre cap (Skill Cap).");
