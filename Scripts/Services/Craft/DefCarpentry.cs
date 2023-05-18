@@ -193,6 +193,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(TrainingSword), "Armes et bouclier", "Épée d'entrainement", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(TrainingKryss), "Armes et bouclier", "Estoc d'entrainement", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			index = AddCraft(typeof(TrainingMace), "Armes et bouclier", "Masse d'entrainement", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(TrainingDoublelames), "Armes et bouclier", "Double lames d'entrainement", 0.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
+
 			index = AddCraft(typeof(ShepherdsCrook), "Armes et bouclier", "Bâton de berger", 25.0, 50.0, typeof(RegularBoard), 1044041, 7, 1044351);
 			index = AddCraft(typeof(QuarterStaff), "Armes et bouclier", "Bâton", 25.0, 50.0, typeof(RegularBoard), 1044041, 6, 1044351);
 			index = AddCraft(typeof(GnarledStaff), "Armes et bouclier", "Bâton noueux", 25.0, 50.0, typeof(RegularBoard), 1044041, 7, 1044351);

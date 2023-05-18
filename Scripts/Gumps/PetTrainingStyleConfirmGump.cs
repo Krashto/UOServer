@@ -47,13 +47,13 @@ namespace Server.Gumps
 
             AddECHandleInput();
 
-            AddButton(70, 150, 0x9CC8, 0x9CC7, 1, GumpButtonType.Reply, 0);
+            AddButton(70, 150, 0x9AA, 0x9A9, 1, GumpButtonType.Reply, 0);
             AddHtmlLocalized(70, 153, 126, 25, 1114513, "#1046362", 0, false, false);
 
             AddECHandleInput();
             AddECHandleInput();
 
-            AddButton(235, 150, 0x9CC8, 0x9CC7, 2, GumpButtonType.Reply, 0);
+            AddButton(235, 150, 0x9AA, 0x9A9, 2, GumpButtonType.Reply, 0);
             AddHtmlLocalized(235, 153, 126, 25, 1114513, "#1006045", 0, false, false);
 
             AddECHandleInput();
