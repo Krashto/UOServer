@@ -375,7 +375,8 @@ namespace Server.Engines.Craft
 		};
 		private static readonly int[] m_Distillerys = new[]
 		{
-			0x3DB8, 0x3DB9, 0x3DBA, 0x3DBB
+			// 0x3DB8, 0x3DB9, 0x3DBA, 0x3DBB
+			0x22B0, 0x22B1, 0x22AF, 0x22AE
 		};
 		private static readonly int[] m_SteamPoweredBeverageMakers = new[]
 		{
@@ -399,7 +400,18 @@ namespace Server.Engines.Craft
         private static readonly Type[][] ItemTypesTable =
         {
             new[] {typeof(RegularBoard), typeof(RegularLog)},
-            new[] {typeof(HeartwoodBoard), typeof(HeartwoodLog)},
+			new[] {typeof(PlainoisBoard), typeof(PlainoisLog)},
+			new[] {typeof(CollinoisBoard), typeof(CollinoisLog)},
+			new[] {typeof(ForestierBoard), typeof(ForestierLog)},
+			new[] {typeof(SavanoisBoard), typeof(SavanoisLog)},
+			new[] {typeof(DesertiqueBoard), typeof(DesertiqueLog)},
+			new[] {typeof(MontagnardBoard), typeof(MontagnardLog)},
+			new[] {typeof(VolcaniqueBoard), typeof(VolcaniqueLog)},
+			new[] {typeof(TropicauxBoard), typeof(TropicauxLog)},
+			new[] {typeof(ToundroisBoard), typeof(ToundroisLog)},
+			new[] {typeof(AncienBoard), typeof(AncienLog)},
+
+			new[] {typeof(HeartwoodBoard), typeof(HeartwoodLog)},
             new[] {typeof(BloodwoodBoard), typeof(BloodwoodLog)},
             new[] {typeof(FrostwoodBoard), typeof(FrostwoodLog)},
             new[] {typeof(OakBoard), typeof(OakLog)},
@@ -478,7 +490,20 @@ namespace Server.Engines.Craft
         private static readonly Dictionary<Type, Type> m_ResourceConversionTable = new Dictionary<Type, Type>()
         {
             { typeof(RegularBoard), typeof(RegularLog) },
-            { typeof(HeartwoodBoard), typeof(HeartwoodLog) },
+
+			 
+			 {typeof(PlainoisBoard), typeof(PlainoisLog)},
+			 {typeof(CollinoisBoard), typeof(CollinoisLog)},
+			 {typeof(ForestierBoard), typeof(ForestierLog)},
+			 {typeof(SavanoisBoard), typeof(SavanoisLog)},
+			 {typeof(DesertiqueBoard), typeof(DesertiqueLog)},
+			 {typeof(MontagnardBoard), typeof(MontagnardLog)},
+			 {typeof(VolcaniqueBoard), typeof(VolcaniqueLog)},
+			 {typeof(TropicauxBoard), typeof(TropicauxLog)},
+			 {typeof(ToundroisBoard), typeof(ToundroisLog)},
+			 {typeof(AncienBoard), typeof(AncienLog)},
+
+			{ typeof(HeartwoodBoard), typeof(HeartwoodLog) },
             { typeof(BloodwoodBoard), typeof(BloodwoodLog) },
             { typeof(FrostwoodBoard), typeof(FrostwoodLog) },
             { typeof(OakBoard), typeof(OakLog) },

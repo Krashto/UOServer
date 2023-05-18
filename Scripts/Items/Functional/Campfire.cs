@@ -186,7 +186,7 @@ namespace Server.Items
 				}
 				else
 				{
-					state.Hits += 10;
+					state.Hits += 0;
 				}				
 			}
 

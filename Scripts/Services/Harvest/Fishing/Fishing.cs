@@ -41,8 +41,8 @@ namespace Server.Engines.Harvest
 				BankHeight = 8,
 
 				// Every bank holds from 5 to 15 fish
-				MinTotal = 5,
-				MaxTotal = 15,
+				MinTotal = 3,
+				MaxTotal = 12,
 
 				// A resource bank will respawn its content every 10 to 20 minutes
 				MinRespawn = TimeSpan.FromMinutes(30.0),
@@ -60,8 +60,8 @@ namespace Server.Engines.Harvest
 				MaxRange = 4,
 
 				// One fish per harvest action
-				ConsumedPerHarvest = 2,
-				ConsumedPerFeluccaHarvest = 2,
+				ConsumedPerHarvest = 1,
+				ConsumedPerFeluccaHarvest = 1,
 
 				// The fishing
 				EffectActions = new int[] { 6 },
