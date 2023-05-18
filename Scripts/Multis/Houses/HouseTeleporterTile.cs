@@ -255,9 +255,9 @@ namespace Server.Multis
                         return;
                     }
 
-                    if (item is GateTravelScroll)
+                    if (item is BlankScroll)
                     {
-                        GateTravelScroll scroll = item as GateTravelScroll;
+						BlankScroll scroll = item as BlankScroll;
 
                         if (Item.Charges >= MaxCharges)
                         {

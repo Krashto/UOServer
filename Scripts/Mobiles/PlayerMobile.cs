@@ -30,8 +30,9 @@ using System.Linq;
 using Server.Engines.ArenaSystem;
 using Server.Poker; // Poker edit
 using RankDefinition = Server.Guilds.RankDefinition;
-using Server.Spells.OldSpells;
 using Server.Custom;
+using Server.Spells.Fifth;
+using Server.Spells.Sixth;
 
 #endregion
 

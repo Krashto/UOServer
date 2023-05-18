@@ -4,7 +4,6 @@ using Server.Network;
 using Server.Targeting;
 using Server.Mobiles;
 using Server.Custom;
-using Server.Spells.OldSpells;
 using Server.Custom.Aptitudes;
 using Server.Custom.Spells.NewSpells.Geomancie;
 using Server.Custom.Spells.NewSpells.Defenseur;
@@ -13,6 +12,7 @@ using Server.Custom.Spells.NewSpells.Guerison;
 using Server.Custom.Spells.NewSpells.Musique;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Multis;
+using Server.Spells.Fifth;
 
 namespace Server.Spells
 {

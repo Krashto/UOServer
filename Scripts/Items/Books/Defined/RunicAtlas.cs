@@ -1,7 +1,8 @@
 using Server.Gumps;
 using Server.Mobiles;
 using Server.Prompts;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
+using Server.Spells.Seventh;
 using System;
 
 namespace Server.Items

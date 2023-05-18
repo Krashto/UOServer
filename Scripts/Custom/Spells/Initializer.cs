@@ -12,7 +12,14 @@ using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Custom.Spells.NewSpells.Roublardise;
 using Server.Custom.Spells.NewSpells.Totemique;
-using Server.Spells.OldSpells;
+using Server.Spells.Eighth;
+using Server.Spells.Fifth;
+using Server.Spells.First;
+using Server.Spells.Fourth;
+using Server.Spells.Second;
+using Server.Spells.Seventh;
+using Server.Spells.Sixth;
+using Server.Spells.Third;
 
 namespace Server.Spells
 {
@@ -21,54 +28,54 @@ namespace Server.Spells
         public static void Initialize()
         {
             // First circle
-            //Register(00, typeof(ClumsySpell));
-            //Register(01, typeof(CreateFoodSpell));
-            //Register(02, typeof(FeeblemindSpell));
+            Register(00, typeof(ClumsySpell));
+            Register(01, typeof(CreateFoodSpell));
+            Register(02, typeof(FeeblemindSpell));
             Register(03, typeof(HealSpell));
-            //Register(04, typeof(MagicArrowSpell));
-            //Register(05, typeof(NightSightSpell));
-            //Register(06, typeof(ReactiveArmorSpell));
-            //Register(07, typeof(WeakenSpell));
+            Register(04, typeof(MagicArrowSpell));
+            Register(05, typeof(NightSightSpell));
+            Register(06, typeof(ReactiveArmorSpell));
+            Register(07, typeof(WeakenSpell));
 
             // Second circle
-            //Register(08, typeof(AgilitySpell));
-            //Register(09, typeof(CunningSpell));
+            Register(08, typeof(AgilitySpell));
+            Register(09, typeof(CunningSpell));
             Register(10, typeof(CureSpell));
             Register(11, typeof(HarmSpell));
-            //Register(12, typeof(MagicTrapSpell));
-            //Register(13, typeof(RemoveTrapSpell));
-            //Register(14, typeof(ProtectionSpell));
-            //Register(15, typeof(StrengthSpell));
+            Register(12, typeof(MagicTrapSpell));
+            Register(13, typeof(RemoveTrapSpell));
+            Register(14, typeof(ProtectionSpell));
+            Register(15, typeof(StrengthSpell));
 
             // Third circle
             Register(16, typeof(BlessSpell));
             Register(17, typeof(FireballSpell));
-            //Register(18, typeof(MagicLockSpell));
-            //Register(19, typeof(PoisonSpell));
+            Register(18, typeof(MagicLockSpell));
+            Register(19, typeof(PoisonSpell));
             Register(20, typeof(TelekinesisSpell));
             Register(21, typeof(TeleportSpell));
-            //Register(22, typeof(UnlockSpell));
-            //Register(23, typeof(WallOfStoneSpell));
+            Register(22, typeof(UnlockSpell));
+            Register(23, typeof(WallOfStoneSpell));
 
             // Fourth circle
             Register(24, typeof(ArchCureSpell));
-            //Register(25, typeof(ArchProtectionSpell));
-            //Register(26, typeof(CurseSpell));
+            Register(25, typeof(ArchProtectionSpell));
+            Register(26, typeof(CurseSpell));
             Register(27, typeof(FireFieldSpell));
             Register(28, typeof(GreaterHealSpell));
             Register(29, typeof(LightningSpell));
-            //Register(30, typeof(ManaDrainSpell));
+            Register(30, typeof(ManaDrainSpell));
             Register(31, typeof(RecallSpell));
 
             // Fifth circle
-            //Register(32, typeof(BladeSpiritsSpell));
+            Register(32, typeof(BladeSpiritsSpell));
             Register(33, typeof(DispelFieldSpell));
             Register(34, typeof(IncognitoSpell));
-            //Register(35, typeof(MagicReflectSpell));
-            //Register(36, typeof(MindBlastSpell));
+            Register(35, typeof(MagicReflectSpell));
+            Register(36, typeof(MindBlastSpell));
             Register(37, typeof(ParalyzeSpell));
             Register(38, typeof(PoisonFieldSpell));
-            //Register(39, typeof(SummonCreatureSpell));
+            Register(39, typeof(SummonCreatureSpell));
 
             // Sixth circle
             Register(40, typeof(DispelSpell));
@@ -76,29 +83,29 @@ namespace Server.Spells
             Register(42, typeof(ExplosionSpell));
             Register(43, typeof(InvisibilitySpell));
             Register(44, typeof(MarkSpell));
-            //Register(45, typeof(MassCurseSpell));
+            Register(45, typeof(MassCurseSpell));
             Register(46, typeof(ParalyzeFieldSpell));
             Register(47, typeof(RevealSpell));
 
             // Seventh circle
-            //Register(48, typeof(ChainLightningSpell));
-            //Register(49, typeof(EnergyFieldSpell));
+            Register(48, typeof(ChainLightningSpell));
+            Register(49, typeof(EnergyFieldSpell));
             Register(50, typeof(FlameStrikeSpell));
             Register(51, typeof(GateTravelSpell));
-			//Register(52, typeof(ManaVampireSpell));
-			//Register(53, typeof(MassDispelSpell));
-			//Register(54, typeof(MeteorSwarmSpell));
-			//Register(55, typeof(PolymorphSpell));
+			Register(52, typeof(ManaVampireSpell));
+			Register(53, typeof(MassDispelSpell));
+			Register(54, typeof(MeteorSwarmSpell));
+			Register(55, typeof(PolymorphSpell));
 
 			// Eighth circle
-			//Register(56, typeof(EarthquakeSpell));
-			//Register(57, typeof(EnergyVortexSpell));
-			//Register(58, typeof(.ResurrectionSpell));
-			//Register(59, typeof(AirElementalSpell));
-			//Register(60, typeof(SummonDaemonSpell));
-			//Register(61, typeof(EarthElementalSpell));
-			//Register(62, typeof(FireElementalSpell));
-			//Register(63, typeof(WaterElementalSpell));
+			Register(56, typeof(EarthquakeSpell));
+			Register(57, typeof(EnergyVortexSpell));
+			Register(58, typeof(ResurrectionSpell));
+			Register(59, typeof(AirElementalSpell));
+			Register(60, typeof(SummonDaemonSpell));
+			Register(61, typeof(EarthElementalSpell));
+			Register(62, typeof(FireElementalSpell));
+			Register(63, typeof(WaterElementalSpell));
 
 			// Necromancy spells
 			//Register(100, typeof(Necromancy.AnimateDeadSpell));

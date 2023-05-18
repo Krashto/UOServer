@@ -1,6 +1,6 @@
 ﻿using Server.Gumps;
 using Server.Mobiles;
-using Server.Spells.OldSpells;
+using Server.Spells.Fifth;
 using System;
 
 namespace Server.Items

@@ -1,5 +1,5 @@
 using System;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
 
 namespace Server.Engines.InstancedPeerless
 {

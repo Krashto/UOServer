@@ -3,7 +3,7 @@ using System.Collections;
 
 using Server;
 using Server.Regions;
-using Server.Spells.OldSpells;
+using Server.Spells.Sixth;
 
 namespace Arya.Chess
 {

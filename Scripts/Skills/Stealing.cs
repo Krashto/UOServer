@@ -10,7 +10,7 @@ using System.IO;
 
 using System;
 using System.Collections;
-using Server.Spells.OldSpells;
+using Server.Spells.Fifth;
 #endregion
 
 namespace Server.SkillHandlers

@@ -23,7 +23,7 @@ namespace Server.Mobiles
 
 		[Constructable]
         public Kraken()
-            : base(AIType.MaritimeMeleeAI, FightMode.Closest, 30, 3, 0.2, 0.4)
+            : base(AIType.AI_Mage, FightMode.Closest, 30, 3, 0.2, 0.4)
         {
             m_NextWaterBall = DateTime.UtcNow;
 
@@ -369,9 +369,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
 
 			if (version == 0)
-			{
-				AI = AIType.MaritimeMageAI;
-			}
+				AI = AIType.AI_Mage;
 
 			m_NextWaterBall = DateTime.UtcNow;
 			m_NextStuck = DateTime.UtcNow;

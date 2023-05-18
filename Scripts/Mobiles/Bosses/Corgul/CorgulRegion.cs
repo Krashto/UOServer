@@ -1,7 +1,9 @@
 using Server.Items;
 using Server.Mobiles;
 using Server.Multis;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
+using Server.Spells.Seventh;
+using Server.Spells.Sixth;
 using System;
 using System.Collections.Generic;
 using System.Linq;

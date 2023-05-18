@@ -170,12 +170,7 @@ namespace Server.Items
 			item = CustomUtility.GetRandomItemByBaseType(typeof(SpellScroll));
 
 			if (item != null)
-			{
-				if (item is GateTravelScroll || item is RecallScroll)
-					item.Delete();
-				else
-					DropItem(item);
-			}
+				DropItem(item);
 
 			item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
 			item.Amount = 5 + level;

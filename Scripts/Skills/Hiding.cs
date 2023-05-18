@@ -2,7 +2,7 @@
 using Server.Network;
 using System;
 using Server.Items;
-using Server.Spells.OldSpells;
+using Server.Spells.Sixth;
 
 namespace Server.SkillHandlers
 {

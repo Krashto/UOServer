@@ -8,7 +8,7 @@ namespace Server.Engines.Quests
         public ThePenIsMightierQuest()
             : base()
         {
-            AddObjective(new ObtainObjective(typeof(RecallScroll), "recall scroll", 5, 0x1F4C));
+            AddObjective(new ObtainObjective(typeof(BlankScroll), "recall scroll", 5, 0x1F4C));
 
             AddReward(new BaseReward(typeof(RedLeatherBook), 1075545)); // a book bound in red leather
         }

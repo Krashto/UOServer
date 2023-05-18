@@ -17,12 +17,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Server.Mobiles.AI;
-using Server.Spells.OldSpells;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom;
 using Server.Custom.Spells.Necromancie.Summons;
 using Server.Custom.Items.SouvenirsAncestraux.Souvenirs;
+using Server.Spells.Sixth;
 #endregion
 
 namespace Server.Mobiles
@@ -3127,13 +3126,6 @@ namespace Server.Mobiles
 				case AIType.AI_Necro:
 					m_AI = new MageAI(this);
 					break;
-				case AIType.MaritimeMeleeAI:
-					m_AI = new MaritimeMeleeAI(this);
-					break;
-				case AIType.MaritimeMageAI:
-					m_AI = new MaritimeMageAI(this);
-					break;
-
 			}
 		}
 
@@ -5117,14 +5109,8 @@ namespace Server.Mobiles
 			if (AI == AIType.AI_Mage || AI == AIType.AI_NecroMage)
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(SpellScroll));
-
 				if (item != null)
-				{
-					if (item is GateTravelScroll || item is RecallScroll)
-						item.Delete();
-					else
-						AddLoot(item);
-				}
+					AddLoot(item);
 
 				item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
 				item.Amount = 5 + Level;

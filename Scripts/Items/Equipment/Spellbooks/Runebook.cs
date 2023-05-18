@@ -425,7 +425,7 @@ namespace Server.Items
                     from.SendLocalizedMessage(502401); // This runebook is full.
                 }
             }
-            else if (dropped is RecallScroll)
+            else if (dropped is BlankScroll /*RecallScroll*/)
             {
                 if (CurCharges < MaxCharges)
                 {

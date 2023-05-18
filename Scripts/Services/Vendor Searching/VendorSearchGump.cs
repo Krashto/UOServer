@@ -1,7 +1,7 @@
 using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
 using System;
 using System.Collections.Generic;
 using System.Globalization;

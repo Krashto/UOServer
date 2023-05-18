@@ -1,5 +1,5 @@
 using Server.Items;
-using Server.Spells.OldSpells;
+using Server.Spells.Sixth;
 using Server.Targeting;
 using System.Collections.Generic;
 

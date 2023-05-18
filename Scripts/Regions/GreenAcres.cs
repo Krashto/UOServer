@@ -1,5 +1,7 @@
 using System.Xml;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
+using Server.Spells.Seventh;
+using Server.Spells.Sixth;
 
 namespace Server.Regions
 {

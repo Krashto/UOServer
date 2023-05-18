@@ -1,5 +1,5 @@
 using Server.Mobiles;
-using Server.Spells.OldSpells;
+using Server.Spells.Fifth;
 using System;
 using System.Collections.Generic;
 

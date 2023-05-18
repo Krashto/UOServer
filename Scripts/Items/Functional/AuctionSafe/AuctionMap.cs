@@ -3,7 +3,7 @@ using Server.Engines.Auction;
 using Server.Gumps;
 using Server.Mobiles;
 using Server.Multis;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
 using System.Collections.Generic;
 
 namespace Server.Items

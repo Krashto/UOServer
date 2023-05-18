@@ -10,7 +10,6 @@ using Server.Custom;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Server.Spells.OldSpells;
 using Server.Custom.Weapons;
 using Server.Custom.Spells.NewSpells.Necromancie;
 using Server.Custom.Spells.NewSpells.Polymorphie;
@@ -23,6 +22,7 @@ using Server.Custom.Spells.NewSpells.Martial;
 using Server.Custom.Capacites;
 using Server.Custom.Spells.NewSpells.Pyromancie;
 using Server.Custom.Spells.Necromancie.Summons;
+using Server.Spells.Sixth;
 
 #endregion
 

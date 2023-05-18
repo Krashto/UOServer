@@ -2,7 +2,9 @@ using Server.Custom.Spells.NewSpells.Aeromancie;
 using Server.Engines.Quests;
 using Server.Items;
 using Server.Mobiles;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
+using Server.Spells.Seventh;
+using Server.Spells.Sixth;
 using System.Linq;
 using System.Xml;
 

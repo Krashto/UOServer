@@ -8,7 +8,7 @@ namespace Server.Mobiles
     {
         [Constructable]
         public SeaSerpent()
-            : base(AIType.MaritimeMageAI, FightMode.Closest, 10, 1, 0.2, 0.4)
+            : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
         {
             Name = " Serpent de mer";
             Body = 150;
@@ -81,9 +81,7 @@ namespace Server.Mobiles
             int version = reader.ReadInt();
 
 			if (version == 0)
-			{
-				AI = AIType.MaritimeMageAI;
-			}
+				AI = AIType.AI_Mage;
 		}
     }
 }

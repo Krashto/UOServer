@@ -6,7 +6,9 @@ using Server.Mobiles;
 
 using System;
 using System.Collections.Generic;
-using Server.Spells.OldSpells;
+using Server.Spells.Sixth;
+using Server.Spells.Seventh;
+using Server.Spells.Third;
 
 namespace Server.Regions
 {

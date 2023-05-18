@@ -1,7 +1,8 @@
 using Server.Engines.JollyRoger;
 using Server.Items;
 using Server.Network;
-using Server.Spells.OldSpells;
+using Server.Spells.Seventh;
+using Server.Spells.Sixth;
 using System.Collections.Generic;
 using System.Linq;
 

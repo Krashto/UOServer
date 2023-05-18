@@ -5,7 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using Server.Mobiles;
 using Server.Spells;
-using Server.Spells.OldSpells;
+using Server.Spells.Fourth;
+using Server.Spells.Seventh;
 
 namespace Server.Gumps
 {
