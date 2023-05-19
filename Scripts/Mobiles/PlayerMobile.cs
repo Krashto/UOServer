@@ -6096,7 +6096,7 @@ namespace Server.Mobiles
                     continue;
                 }
 
-                if ((Followers + pet.ControlSlots) <= FollowersMax && CustomUtility.GetFollowerCount(this) < 4)
+                if ((Followers + pet.ControlSlots) <= FollowersMax && CustomUtility.GetFollowersCount(this) < 4)
                 {
                     pet.SetControlMaster(this);
 

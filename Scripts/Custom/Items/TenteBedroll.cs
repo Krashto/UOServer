@@ -130,7 +130,7 @@ namespace BedrollTent
 			{
 				if (CustomUtility.IsInDungeonRegion(from.Location))
 				{
-					from.SendMessage("Vous ne pouvez pas poser de tête dans les donjons.");
+					from.SendMessage("Vous ne pouvez pas poser de tente dans les donjons.");
 					return;
 				}
 
@@ -145,7 +145,6 @@ namespace BedrollTent
 					from.SendMessage("Vous avez atteint le nombre maximum de tentes.");
 					return;
 				}
-
 
 				m_Tent = new SmallTent(); // Création d'une tente sans couleur
 				m_Tent.Hue = m_Bedroll.Hue; // Définition de la couleur de la tente avec la couleur du Bedroll

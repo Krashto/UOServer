@@ -13,6 +13,9 @@ using Server.Custom.Spells.NewSpells.Musique;
 using Server.Custom.Spells.NewSpells.Polymorphie;
 using Server.Multis;
 using Server.Spells.Fifth;
+using Server.Custom.Spells.NewSpells.Totemique;
+using Server.Custom.Spells.NewSpells.Necromancie;
+using Server.Custom.Spells.NewSpells.Chasseur;
 
 namespace Server.Spells
 {
@@ -765,6 +768,10 @@ namespace Server.Spells
 			TimeSpan baseDelay = GetCastDelayBase(GetAptitudeValue());
 			TimeSpan fcDelay = TimeSpan.FromSeconds(-(CastDelayFastScalar * fc * CastDelaySecondsPerTick));
 			TimeSpan delay = baseDelay + fcDelay;
+
+			if (this is TotemDeauSpell || this is TotemDeTerreSpell || this is TotemDeFeuSpell || this is TotemDuVentSpell || this is AppelDuSangSpell ||
+				this is FamilierMorbideSpell || this is CompagnonAnimalSpell)
+				delay += TimeSpan.FromSeconds(3);
 
 			if (InquisitionSpell.IsActive(Caster))
 				delay -= TimeSpan.FromSeconds(1);

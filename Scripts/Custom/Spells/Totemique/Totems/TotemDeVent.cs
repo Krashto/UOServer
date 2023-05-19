@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			SetSkill(SkillName.Tactics, 100.0);
 			SetSkill(SkillName.Wrestling, 80.0);
 
-			ControlSlots = 2;
+			ControlSlots = 3;
 		}
 
 		public TotemDuVent(Serial serial)
@@ -51,7 +51,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		}
 
 		public override double DispelDifficulty => 117.5;
-		public override int Level => 3;
+		public override int Level => 2;
 		public override double DispelFocus => 45.0;
 
 		public override void OnThink()

@@ -431,7 +431,7 @@ namespace Server.Mobiles
 
         public bool CanClaim(Mobile from, BaseCreature pet)
         {
-			return from.Followers + pet.ControlSlots <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4;
+			return from.Followers + pet.ControlSlots <= from.FollowersMax && CustomUtility.GetFollowersCount(from) < 4;
         }
 
         private void DoClaim(Mobile from, BaseCreature pet)

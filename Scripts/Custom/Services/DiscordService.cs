@@ -46,9 +46,9 @@ namespace Server.Custom.Services
 		
 		public static bool IsMainServer => Environment.MachineName == "BUREAU" && SocketOptions.Port == 2593;
 
-		private static string m_NewsWebHookLink => "https://discord.com/api/webhooks/1101125982011785346/9TfIC7xzC-FimBXd8m3DKdcGr3SpgE6ug9AXyfEM2HWFAQnOiCDg2HRjVcjl6snEygLi";
+		private static string m_NewsWebHookLink => "https://discord.com/api/webhooks/1109157266403369012/b3Z9VA3MesBBL5NhhGtZafDNcKD57rrq_eRBEqCrNtYtG8hNQqw7OdrmUhfifYLahTHe";
 		private static string m_StatusWebHookLink => "https://discord.com/api/webhooks/1101125982011785346/9TfIC7xzC-FimBXd8m3DKdcGr3SpgE6ug9AXyfEM2HWFAQnOiCDg2HRjVcjl6snEygLi";
-		private static string m_StaffWebHookLink => "https://discord.com/api/webhooks/1101125982011785346/9TfIC7xzC-FimBXd8m3DKdcGr3SpgE6ug9AXyfEM2HWFAQnOiCDg2HRjVcjl6snEygLi";
+		private static string m_StaffWebHookLink => "https://discord.com/api/webhooks/1109153730483454092/IY9U_sx-ZDx8fBBGiZDSme-dNzaS9n3pOwhOpzv5uwKKTWbSZvk-DlwXlN4hMZCsOSDW";
 
 		private static DiscordWebhookClient m_NewsClient;
 		private static DiscordWebhookClient m_StatusClient;

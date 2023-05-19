@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Server.Mobiles;
 
 namespace Server.Custom.Spells.NewSpells.Totemique
@@ -26,6 +27,21 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		public override void OnThink()
 		{
 			NextThinkingTime = DateTime.Now + TimeSpan.FromSeconds(5);
+		}
+
+		public static bool CanSummonTotemType(Mobile caster, Type totem)
+		{
+			if (caster == null || !(caster is CustomPlayerMobile pm))
+				return false;
+
+			var allowed = true;
+			foreach (var follower in pm.AllFollowers)
+			{
+				if (follower.GetType() == totem)
+					return false;
+			}
+
+			return allowed;
 		}
 
 		public override void Serialize(GenericWriter writer)

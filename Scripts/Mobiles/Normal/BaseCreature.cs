@@ -5179,7 +5179,7 @@ namespace Server.Mobiles
 			var min = (int)(20 * Math.Exp(0.22 * Level) - 20);
 
 			if (Level >= 11)
-				min = (int)(100 * Math.Exp(0.22 * Level) - 20);
+				min = (int)(125 * Math.Exp(0.22 * Level) - 20);
 
 			if (min < 1)
 				min = 1;
@@ -6405,7 +6405,7 @@ namespace Server.Mobiles
 
         public static bool Summon(BaseCreature creature, bool controlled, Mobile caster, Point3D p, int sound, TimeSpan duration)
         {
-            if (caster.Followers + creature.ControlSlots > caster.FollowersMax || CustomUtility.GetFollowerCount(caster) >= 4)
+            if (caster.Followers + creature.ControlSlots > caster.FollowersMax || CustomUtility.GetFollowersCount(caster) >= 4)
             {
                 caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
                 creature.Delete();

@@ -143,7 +143,7 @@ namespace Server.Engines.VeteranRewards
                 {
                     if (CheckAccessible(from, this))
                     {
-                        if ((from.Followers + 4) > from.FollowersMax || CustomUtility.GetFollowerCount(from) >= 4)
+                        if ((from.Followers + 4) > from.FollowersMax || CustomUtility.GetFollowersCount(from) >= 4)
                         {
                             from.SendLocalizedMessage(1049607); // You have too many followers to control that creature.
                         }

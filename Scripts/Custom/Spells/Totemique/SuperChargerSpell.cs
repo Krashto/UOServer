@@ -14,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				Reagent.EssenceTotemique
 			);
 
-		public override int RequiredAptitudeValue { get { return 7; } }
+		public override int RequiredAptitudeValue { get { return 9; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }
 		public override SkillName CastSkill { get { return SkillName.AnimalTaming; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

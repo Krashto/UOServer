@@ -433,7 +433,8 @@ namespace Server.Engines.Help
 			m_List.Add(entry);
 			m_KeyedBySender[entry.Sender] = entry;
 
-			//DiscordService.SendMessage(DiscordMessageType.Staff, $"Un nouveau page a été reçu.");
+			DiscordService.SendMessage(DiscordMessageType.Staff, $"Un nouveau page de {entry.Sender} a été reçu.");
+			DiscordService.SendMessage(DiscordMessageType.Staff, $"Message: {entry.Message}");
 
 			bool isStaffOnline = false;
 

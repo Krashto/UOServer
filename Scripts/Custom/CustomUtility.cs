@@ -320,7 +320,7 @@ namespace Server.Custom
 			return amount <= 0;
 		}
 
-		internal static int GetFollowerCount(Mobile caster)
+		public static int GetFollowersCount(Mobile caster)
 		{
 			if (caster == null || !(caster is CustomPlayerMobile pm))
 				return 0;

@@ -249,10 +249,10 @@ namespace Server.Spells
 
 			//Pyromancie
             Register(700, typeof(BouclierDeFeuSpell));
-            Register(701, typeof(CeleriteSpell));
-            Register(702, typeof(BouleDeFeuSpell));
+            Register(701, typeof(BouleDeFeuSpell));
+            Register(702, typeof(CeleriteSpell));
 			Register(703, typeof(SupernovaSpell));
-            Register(704, typeof(AuraRechauffanteSpell));
+			Register(704, typeof(AuraRechauffanteSpell));
             Register(705, typeof(PassionArdenteSpell));
             Register(706, typeof(CageDeFeuSpell));
             Register(707, typeof(AuraExaltationSpell));
@@ -273,14 +273,14 @@ namespace Server.Spells
 
 			//Totemique
 			Register(720, typeof(TotemDeTerreSpell));
-			Register(721, typeof(TotemDeFeuSpell));
-			Register(722, typeof(TotemDuVentSpell));
-			Register(723, typeof(TotemDeauSpell));
-			Register(724, typeof(AbsorbationSpell));
-			Register(725, typeof(LierParEspritSpell));
-			Register(726, typeof(SuperChargerSpell));
+			Register(721, typeof(AbsorbationSpell));
+			Register(722, typeof(TotemDeFeuSpell));
+			Register(723, typeof(LierParEspritSpell));
+			Register(724, typeof(TotemDeauSpell));
+			Register(725, typeof(AppelSpirituelSpell));
+			Register(726, typeof(TotemDuVentSpell));
 			Register(727, typeof(MurTotemiqueSpell));
-			Register(728, typeof(AppelSpirituelSpell));
+			Register(728, typeof(SuperChargerSpell));
 			Register(729, typeof(MarcheAsuivreSpell));
 		}
 

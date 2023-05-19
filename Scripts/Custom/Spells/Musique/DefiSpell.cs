@@ -1,8 +1,9 @@
 ﻿using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
-using Server.SkillHandlers;
-using Server.Items;
+using Server.Mobiles;
+using Server.Custom.Spells.Musique;
+using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Musique
 {
@@ -28,20 +29,28 @@ namespace Server.Custom.Spells.NewSpells.Musique
 
 		public override void OnCast()
 		{
-			Caster.Target = new InternalTarget(this);
+			Caster.Target = new InternalFirstTarget(this);
 		}
 
-		public void Target(Mobile m)
+		private static Hashtable m_Table = new Hashtable();
+		public void FirstTarget(Mobile m)
 		{
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
-			else if (CheckHSequence(m))
+			else if (!(m is BaseCreature bc))
+				Caster.SendMessage("Votre première cible doit être une créature.");
+			else if (CheckSequence())
 			{
 				var source = Caster;
-
 				SpellHelper.Turn(source, m);
 
-				BaseInstrument.PickInstrument(m, Provocation.OnPickedInstrument);
+				if (bc.Level >= 11)
+					Caster.SendMessage("Vous ne pouvez pas calmer un mini boss ou un boss.");
+				else
+				{
+					m_Table[Caster] = bc;
+					Caster.Target = new InternalSecondTarget(this);
+				}
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Defi", AptitudeColor.Musique, SpellEffectType.Malus);
 			}
@@ -49,12 +58,67 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			FinishSequence();
 		}
 
-		private class InternalTarget : Target
+		public void SecondTarget(Mobile m)
+		{
+			if (!Caster.CanSee(m))
+				Caster.SendLocalizedMessage(500237); // Target can not be seen.
+			else
+			{
+				var bc1 = m_Table[Caster] as BaseCreature;
+
+				if (bc1 != null)
+				{
+					m_Table.Remove(Caster);
+
+					double diff;
+					double music;
+
+					if (m is BaseCreature bc2)
+					{
+						diff = MusicSpellHelper.GetBaseDifficulty(bc2) - 5.0;
+						music = Caster.Skills[SkillName.Musicianship].Value;
+					}
+					else if (m is CustomPlayerMobile pm)
+					{
+						diff = pm.Skills[SkillName.MagicResist].Value - 5.0;
+						music = Caster.Skills[SkillName.Musicianship].Value;
+					}
+					else
+					{
+						diff = 100;
+						music = 0;
+					}
+
+					if (music > 80.0)
+						diff -= (music - 80.0) * 0.5;
+
+					if ((Caster.CanBeHarmful(m, true, false, true) && Caster.CanBeHarmful(m, true, false, true)))
+					{
+						if (!Caster.CheckTargetSkill(SkillName.Musicianship, m, diff - 25.0, diff + 25.0))
+						{
+							Caster.SendLocalizedMessage(501599); // Your music fails to incite enough anger.
+							MusicSpellHelper.PlayInstrumentBadly(Caster);
+						}
+						else
+						{
+							Caster.SendLocalizedMessage(501602); // Your music succeeds, as you start a fight.
+							MusicSpellHelper.PlayInstrumentWell(Caster);
+							bc1.Provoke(Caster, m, true);
+							CustomUtility.ApplySimpleSpellEffect(m, "Defi", AptitudeColor.Musique, SpellEffectType.Malus);
+						}
+					}
+				}
+			}
+
+			FinishSequence();
+		}
+
+		private class InternalFirstTarget : Target
 		{
 			private DefiSpell m_Owner;
 
-			public InternalTarget(DefiSpell owner)
-				: base(12, false, TargetFlags.Harmful)
+			public InternalFirstTarget(DefiSpell owner)
+				: base(12, false, TargetFlags.None)
 			{
 				m_Owner = owner;
 			}
@@ -62,7 +126,29 @@ namespace Server.Custom.Spells.NewSpells.Musique
 			protected override void OnTarget(Mobile from, object o)
 			{
 				if (o is Mobile)
-					m_Owner.Target((Mobile)o);
+					m_Owner.FirstTarget((Mobile)o);
+			}
+
+			protected override void OnTargetFinish(Mobile from)
+			{
+				m_Owner.FinishSequence();
+			}
+		}
+
+		private class InternalSecondTarget : Target
+		{
+			private DefiSpell m_Owner;
+
+			public InternalSecondTarget(DefiSpell owner)
+				: base(12, false, TargetFlags.None)
+			{
+				m_Owner = owner;
+			}
+
+			protected override void OnTarget(Mobile from, object o)
+			{
+				if (o is Mobile)
+					m_Owner.SecondTarget((Mobile)o);
 			}
 
 			protected override void OnTargetFinish(Mobile from)

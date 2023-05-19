@@ -23,7 +23,13 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
+			if (!BaseTotem.CanSummonTotemType(Caster, typeof(TotemDeTerre)))
+			{
+				Caster.SendMessage("Vous avez déjà ce type de totem.");
+				return false;
+			}
+
+			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowersCount(Caster) >= 4)
 			{
 				Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 				return false;

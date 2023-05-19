@@ -122,7 +122,7 @@ namespace Server.Items
 
             GolemInfo ginfo = m_Info[(int)m_Type];
 
-            if ((from.Followers + ginfo.Slots) > from.FollowersMax || CustomUtility.GetFollowerCount(from) >= 4)
+            if ((from.Followers + ginfo.Slots) > from.FollowersMax || CustomUtility.GetFollowersCount(from) >= 4)
             {
                 from.SendLocalizedMessage(1049607); // You have too many followers to control that creature.
                 return;

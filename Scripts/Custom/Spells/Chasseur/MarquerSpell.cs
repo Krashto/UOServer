@@ -44,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Chasseur
 
 				Deactivate(Caster);
 
-				var duration = GetDurationForSpell(10);
+				var duration = GetDurationForSpell(20);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

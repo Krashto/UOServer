@@ -161,7 +161,7 @@ namespace Server.SkillHandlers
                             creature.PrivateOverheadMessage(MessageType.Regular, 0x3B2, 1049652, from.NetState);
                             // That creature can only be tamed by females.
                         }                     
-                        else if (from.Followers + creature.ControlSlots > from.FollowersMax || CustomUtility.GetFollowerCount(from) >= 4)
+                        else if (from.Followers + creature.ControlSlots > from.FollowersMax || CustomUtility.GetFollowersCount(from) >= 4)
                         {
                             from.SendLocalizedMessage(1049611); // You have too many followers to tame that creature.
                         }

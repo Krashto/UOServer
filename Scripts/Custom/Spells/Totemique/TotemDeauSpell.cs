@@ -14,7 +14,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				Reagent.EssenceTotemique
 			);
 
-		public override int RequiredAptitudeValue { get { return 4; } }
+		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Totemique }; } }
 		public override SkillName CastSkill { get { return SkillName.AnimalTaming; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -29,7 +29,13 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowerCount(Caster) >= 4)
+			if (!BaseTotem.CanSummonTotemType(Caster, typeof(TotemDeau)))
+			{
+				Caster.SendMessage("Vous avez déjà ce type de totem.");
+				return false;
+			}
+
+			if ((Caster.Followers + 2) > Caster.FollowersMax || CustomUtility.GetFollowersCount(Caster) >= 4)
 			{
 				Caster.SendLocalizedMessage(1049645); // You have too many followers to summon that creature.
 				return false;

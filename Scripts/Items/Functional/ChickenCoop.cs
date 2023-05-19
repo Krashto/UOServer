@@ -238,7 +238,7 @@ namespace Server.Items
             if (Deleted || !from.CheckAlive() || !m_Stored.ContainsKey(from))
                 return;
 
-            if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4)
+            if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowersCount(from) < 4)
             {
                 pet.SetControlMaster(from);
 
@@ -381,7 +381,7 @@ namespace Server.Items
 
                 ++stabledCount;
 
-                if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowerCount(from) < 4)
+                if ((from.Followers + pet.ControlSlots) <= from.FollowersMax && CustomUtility.GetFollowersCount(from) < 4)
                 {
                     pet.SetControlMaster(from);
 

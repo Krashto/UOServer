@@ -1580,7 +1580,7 @@ namespace Server.Mobiles
                     {
                         User.SendMessage("Since you have been in combat recently you may not use this feature."); // Since you have been in combat recently you may not use this feature.
 					}
-                    else if (!profile.HasIncreasedControlSlot && (User.Followers >= User.FollowersMax || CustomUtility.GetFollowerCount(User) >= 4))
+                    else if (!profile.HasIncreasedControlSlot && (User.Followers >= User.FollowersMax || CustomUtility.GetFollowersCount(User) >= 4))
                     {
                         User.SendMessage("You do not have the available pet slots to train this pet. Please free up pet slots and try again."); // You do not have the available pet slots to train this pet. Please free up pet slots and try again.
                     }

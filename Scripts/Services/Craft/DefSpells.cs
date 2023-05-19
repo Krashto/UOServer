@@ -279,14 +279,14 @@ namespace Server.Engines.Craft
 			AddSpell("Roublardise", typeof(CoupMortelScroll), "Coup mortel", 10);
 
 			AddSpell("Totémique", typeof(TotemDeTerreScroll), "Totem de terre", 1);
-			AddSpell("Totémique", typeof(TotemDeFeuScroll), "Totem de feu", 2);
-			AddSpell("Totémique", typeof(TotemDuVentScroll), "Totem du vent", 3);
-			AddSpell("Totémique", typeof(TotemDeauScroll), "Totem d'eau", 4);
-			AddSpell("Totémique", typeof(AbsorbationScroll), "Absorbation", 5);
-			AddSpell("Totémique", typeof(LierParEspritScroll), "Lier par l'esprit", 6);
-			AddSpell("Totémique", typeof(SuperChargerScroll), "Super chargeur", 7);
+			AddSpell("Totémique", typeof(AbsorbationScroll), "Absorbation", 2);
+			AddSpell("Totémique", typeof(TotemDeFeuScroll), "Totem de feu", 3);
+			AddSpell("Totémique", typeof(LierParEspritScroll), "Lier par l'esprit", 4);
+			AddSpell("Totémique", typeof(TotemDeauScroll), "Totem d'eau", 5);
+			AddSpell("Totémique", typeof(AppelSpirituelScroll), "Appel spirituel", 6);
+			AddSpell("Totémique", typeof(TotemDuVentScroll), "Totem du vent", 7);
 			AddSpell("Totémique", typeof(MurTotemiqueScroll), "Mur totémique", 8);
-			AddSpell("Totémique", typeof(AppelSpirituelScroll), "Appel spirituel", 9);
+			AddSpell("Totémique", typeof(SuperChargerScroll), "Super chargeur", 9);
 			AddSpell("Totémique", typeof(MarcheAsuivreScroll), "Marche à suivre", 10);
 
 			// Set the overridable material
