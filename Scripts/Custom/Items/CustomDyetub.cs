@@ -605,7 +605,7 @@ namespace Server.Items
 		[Constructable]
 		public TurquoisePlumePaon()
 		{
-			Hue = DyedHue = 2242;
+			Hue = DyedHue = 2282;
 			Redyable = false;
 			Charges = 5;
 			Name = "Teinture Plume Paon";

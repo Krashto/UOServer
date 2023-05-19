@@ -9,6 +9,7 @@ namespace Server.Items
             : base(0xDD6)
         {
             Hue = hue;
+			Stackable = true;
         }
 
         public BaseMagicFish(Serial serial)
@@ -65,6 +66,8 @@ namespace Server.Items
         public PrizedFish()
             : base(51)
         {
+			Stackable = true;
+			Name = "Poisson Enchanté (Int)";
         }
 
         public PrizedFish(Serial serial)
@@ -99,7 +102,9 @@ namespace Server.Items
         public WondrousFish()
             : base(86)
         {
-        }
+			Stackable = true;
+			Name = "Poisson Enchanté (Dex)";
+		}
 
         public WondrousFish(Serial serial)
             : base(serial)
@@ -133,7 +138,9 @@ namespace Server.Items
         public TrulyRareFish()
             : base(76)
         {
-        }
+			Stackable = true;
+			Name = "Poisson Enchanté (Str)";
+		}
 
         public TrulyRareFish(Serial serial)
             : base(serial)
@@ -167,7 +174,9 @@ namespace Server.Items
         public PeculiarFish()
             : base(66)
         {
-        }
+			Stackable = true;
+			Name = "Poisson Enchanté (Stam)";
+		}
 
         public PeculiarFish(Serial serial)
             : base(serial)

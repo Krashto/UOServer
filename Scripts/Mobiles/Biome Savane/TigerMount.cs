@@ -51,6 +51,7 @@ namespace Server.Mobiles
         }
 		public override int Level => 5;
 		public override Biome Biome => Biome.Savane;
+		public override PackInstinct PackInstinct => PackInstinct.Feline;
 
 		public override int Meat => 3;
         public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish | FoodType.Eggs | FoodType.FruitsAndVegies;
