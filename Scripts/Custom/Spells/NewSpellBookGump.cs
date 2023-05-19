@@ -193,14 +193,14 @@ namespace Server.Gumps
 			new SpellBookEntry( typeof(CoupMortelSpell), "Si les points de vie de votre cible sont sous la barre des 20%, la cible est exécutée."),
 
 			new SpellBookEntry( typeof(TotemDeTerreSpell), "Invoque un totem de terre qui attirent les ennemis autour de lui."),
-			new SpellBookEntry( typeof(TotemDeFeuSpell), "Invoque un totem de feu qui lance des boules de feu."),
-			new SpellBookEntry( typeof(TotemDuVentSpell), "Invoque un totem de vent qui lance des éclairs."),
-			new SpellBookEntry( typeof(TotemDeauSpell), "Invoque un totem d'eau qui vous soigne."),
 			new SpellBookEntry( typeof(AbsorbationSpell), "Absorbe un totem pour regagner de la vie, de la stamina et de la mana."),
+			new SpellBookEntry( typeof(TotemDeFeuSpell), "Invoque un totem de feu qui lance des boules de feu."),
 			new SpellBookEntry( typeof(LierParEspritSpell), "Permet de téléporter les totems sur soi."),
-			new SpellBookEntry( typeof(SuperChargerSpell), "Améliore la puissance des totems."),
-			new SpellBookEntry( typeof(MurTotemiqueSpell), "Permet d'invoquer un mur de totems d'énergie, vous empêchant de les traverser.."),
+			new SpellBookEntry( typeof(TotemDeauSpell), "Invoque un totem d'eau qui vous soigne."),
 			new SpellBookEntry( typeof(AppelSpirituelSpell), "Permet de retourner une cible à la ville."),
+			new SpellBookEntry( typeof(TotemDuVentSpell), "Invoque un totem de vent qui lance des éclairs."),
+			new SpellBookEntry( typeof(MurTotemiqueSpell), "Permet d'invoquer un mur de totems d'énergie, vous empêchant de les traverser.."),
+			new SpellBookEntry( typeof(SuperChargerSpell), "Améliore la puissance des totems."),
 			new SpellBookEntry( typeof(MarcheAsuivreSpell), "Permet aux totems de vous suivre."),
         };
 

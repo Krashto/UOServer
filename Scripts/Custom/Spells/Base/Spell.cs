@@ -770,7 +770,7 @@ namespace Server.Spells
 			TimeSpan delay = baseDelay + fcDelay;
 
 			if (this is TotemDeauSpell || this is TotemDeTerreSpell || this is TotemDeFeuSpell || this is TotemDuVentSpell || this is AppelDuSangSpell ||
-				this is FamilierMorbideSpell || this is CompagnonAnimalSpell)
+				this is FamilierMorbideSpell || this is CompagnonAnimalSpell || this is ReanimationSpell)
 				delay += TimeSpan.FromSeconds(3);
 
 			if (InquisitionSpell.IsActive(Caster))
