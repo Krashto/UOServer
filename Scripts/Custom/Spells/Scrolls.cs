@@ -2591,7 +2591,7 @@ namespace Server.Items
 		public SoifDeSangScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(SoifDeSangSpell)), 0x1F2D, amount)
 		{
 			Name = "Soif De Sang";
-			Hue = (int)AptitudeColor.Musique;
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public SoifDeSangScroll(Serial serial) : base(serial)
@@ -2623,7 +2623,7 @@ namespace Server.Items
 		public ToucheAbsorbantScroll(int amount) : base(SpellRegistry.GetSpellIdFromType(typeof(ToucheAbsorbantSpell)), 0x1F2D, amount)
 		{
 			Name = "Touche Absorbant";
-			Hue = (int)AptitudeColor.Musique;
+			Hue = (int)AptitudeColor.Necromancie;
 		}
 
 		public ToucheAbsorbantScroll(Serial serial) : base(serial)
