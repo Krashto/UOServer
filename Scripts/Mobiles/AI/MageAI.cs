@@ -131,6 +131,8 @@ namespace Server.Mobiles
 			return true;
 		}
 
+		private DateTime NextUseOfCureSpell;
+
 		public override bool DoActionCombat()
 		{
 			IDamageable c = m_Mobile.Combatant;
@@ -229,6 +231,9 @@ namespace Server.Mobiles
 
 				if (spell != null)
 					spell.Cast();
+
+				if (spell is CureSpell || spell is ArchCureSpell)
+					NextUseOfCureSpell = DateTime.Now + TimeSpan.FromSeconds(30);
 
 				NextCastTime = GetCastDelay(spell);
 			}
@@ -1107,6 +1112,9 @@ namespace Server.Mobiles
 
 		public virtual Spell GetCureSpell()
 		{
+			if (NextUseOfCureSpell > DateTime.Now)
+				return null;
+
 			if (SmartAI && m_Mobile.Poison.Level > 1 && CheckCanCastMagery(4))
 			{
 				return new ArchCureSpell(m_Mobile, null);

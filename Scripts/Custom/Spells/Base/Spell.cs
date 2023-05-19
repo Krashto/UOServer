@@ -130,6 +130,9 @@ namespace Server.Spells
 
         public virtual void OnCasterHurt()
         {
+			if (m_Caster is BaseCreature)
+				return;
+
             if (CheckHurt)
             {
                 CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
@@ -679,8 +682,8 @@ namespace Server.Spells
             return RequiredAptitude;
         }
 
-        public virtual int RequiredAptitudeValue { get { return 99; } }
-        public virtual int RequiredMagicCapacity { get { return 99; } }
+        public virtual int RequiredAptitudeValue { get { return 10; } }
+        public virtual int RequiredMagicCapacity { get { return 10; } }
         public virtual Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Aeromancie }; } }
 
 		public virtual int ScaleMana( int mana )
