@@ -104,6 +104,9 @@ namespace Server.Spells
 			int damage = Utility.Dice( dice, sides, bonus ) * 100;
 			int damageBonus = 0;
 
+			if (m_Caster is BaseCreature)
+				damage /= 2;
+
             double evalIntSkill = Caster.Skills[SkillName.EvalInt].Value;
             damageBonus += (int)(evalIntSkill / 3.33);
 
