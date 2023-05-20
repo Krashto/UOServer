@@ -9,33 +9,33 @@ namespace Server
     {
         public static readonly double MinDelay = 0.1;
         public static readonly double MaxDelay = 0.5;
-        public static readonly double MinDelayWild = 0.4;
-        public static readonly double MaxDelayWild = 0.8;
+        public static readonly double MinDelayWild = 0.325;
+        public static readonly double MaxDelayWild = 0.65;
 
         public static bool GetSpeeds(BaseCreature bc, ref double activeSpeed, ref double passiveSpeed)
         {
-            int maxDex = GetMaxMovementDex(bc);
-            int dex = Math.Min(maxDex, Math.Max(25, bc.Dex));
+			int maxDex = GetMaxMovementDex(bc);
+			int dex = Math.Min(maxDex, Math.Max(100, bc.Dex));
 
-            double min = bc.IsMonster || InActivePVPCombat(bc) ? MinDelayWild : MinDelay;
-            double max = bc.IsMonster || InActivePVPCombat(bc) ? MaxDelayWild : MaxDelay;
+			double min = bc.IsMonster || InActivePVPCombat(bc) ? MinDelayWild : MinDelay;
+			double max = bc.IsMonster || InActivePVPCombat(bc) ? MaxDelayWild : MaxDelay;
 
-            if (bc.IsParagon)
-            {
-                min /= 2;
-                max = min + .4;
-            }
+			if (bc.IsParagon)
+			{
+				min /= 2;
+				max = min + .4;
+			}
 
-            activeSpeed = max - ((max - min) * ((double)dex / maxDex));
+			activeSpeed = (max - ((max - min) * ((double)dex / maxDex))) * 0.75;
 
-            if (activeSpeed < min)
-            {
-                activeSpeed = min;
-            }
+			if (activeSpeed < min)
+			{
+				activeSpeed = min;
+			}
 
-            passiveSpeed = activeSpeed * 2;
+			passiveSpeed = activeSpeed * 2;
 
-            return true;
+			return true;
         }
 
 		public static bool GetCustomSpeeds(BaseCreature bc, ref double activeSpeed, ref double passiveSpeed) // pour certains mobs que je veux mettre courreur.

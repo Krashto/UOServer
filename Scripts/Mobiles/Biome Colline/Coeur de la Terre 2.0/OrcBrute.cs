@@ -84,63 +84,63 @@ namespace Server.Mobiles
             }
         }
 
-        public override int Damage(int amount, Mobile from, bool informMount, bool checkDisrupt)
-        {
-            int damage = base.Damage(amount, from, informMount, checkDisrupt);
+        //public override int Damage(int amount, Mobile from, bool informMount, bool checkDisrupt)
+        //{
+        //    int damage = base.Damage(amount, from, informMount, checkDisrupt);
 
-            if (from != null && from != this && !Controlled && !Summoned && Utility.RandomDouble() <= 0.2)
-            {
-                SpawnOrcLord(from);
-            }
+        //    if (from != null && from != this && !Controlled && !Summoned && Utility.RandomDouble() <= 0.2)
+        //    {
+        //        SpawnOrcLord(from);
+        //    }
 
-            return damage;
-        }
+        //    return damage;
+        //}
 
-        public void SpawnOrcLord(Mobile target)
-        {
-            Map map = target.Map;
+        //public void SpawnOrcLord(Mobile target)
+        //{
+        //    Map map = target.Map;
 
-            if (map == null)
-                return;
+        //    if (map == null)
+        //        return;
 
-            int orcs = 0;
-            IPooledEnumerable eable = GetMobilesInRange(10);
+        //    int orcs = 0;
+        //    IPooledEnumerable eable = GetMobilesInRange(10);
 
-            foreach (Mobile m in eable)
-            {
-                if (m is OrcishLord)
-                    ++orcs;
-            }
+        //    foreach (Mobile m in eable)
+        //    {
+        //        if (m is OrcishLord)
+        //            ++orcs;
+        //    }
 
-            eable.Free();
+        //    eable.Free();
 
-            if (orcs < 10)
-            {
-                BaseCreature orc = new SpawnedOrcishLord
-                {
-                    Team = Team
-                };
+        //    if (orcs < 10)
+        //    {
+        //        BaseCreature orc = new SpawnedOrcishLord
+        //        {
+        //            Team = Team
+        //        };
 
-                Point3D loc = target.Location;
-                bool validLocation = false;
+        //        Point3D loc = target.Location;
+        //        bool validLocation = false;
 
-                for (int j = 0; !validLocation && j < 10; ++j)
-                {
-                    int x = target.X + Utility.Random(3) - 1;
-                    int y = target.Y + Utility.Random(3) - 1;
-                    int z = map.GetAverageZ(x, y);
+        //        for (int j = 0; !validLocation && j < 10; ++j)
+        //        {
+        //            int x = target.X + Utility.Random(3) - 1;
+        //            int y = target.Y + Utility.Random(3) - 1;
+        //            int z = map.GetAverageZ(x, y);
 
-                    if (validLocation = map.CanFit(x, y, Z, 16, false, false))
-                        loc = new Point3D(x, y, Z);
-                    else if (validLocation = map.CanFit(x, y, z, 16, false, false))
-                        loc = new Point3D(x, y, z);
-                }
+        //            if (validLocation = map.CanFit(x, y, Z, 16, false, false))
+        //                loc = new Point3D(x, y, Z);
+        //            else if (validLocation = map.CanFit(x, y, z, 16, false, false))
+        //                loc = new Point3D(x, y, z);
+        //        }
 
-                orc.MoveToWorld(loc, map);
+        //        orc.MoveToWorld(loc, map);
 
-                orc.Combatant = target;
-            }
-        }
+        //        orc.Combatant = target;
+        //    }
+        //}
 
         public override void Serialize(GenericWriter writer)
         {

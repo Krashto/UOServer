@@ -116,19 +116,21 @@ namespace Server.Engines.Craft
 			if (type == typeof(CrystalDust))
 				return false;
 
-			bool contains = false;
-			type = item.ItemType;
+			return true;
 
-			for (int i = 0; !contains && i < m_TinkerColorables.Length; ++i)
-				contains = (m_TinkerColorables[i] == type);
+			//bool contains = false;
+			//type = item.ItemType;
 
-			if (!contains && !type.IsSubclassOf(typeof(BaseIngot)))
-				return false;
+			//for (int i = 0; !contains && i < m_TinkerColorables.Length; ++i)
+			//	contains = (m_TinkerColorables[i] == type);
 
-			if (type.IsSubclassOf(typeof(BaseBoard)))
-				return true;
+			//if (!contains && !type.IsSubclassOf(typeof(BaseIngot)))
+			//	return false;
 
-			return contains;
+			//if (type.IsSubclassOf(typeof(BaseBoard)))
+			//	return true;
+
+			//return contains;
 		}
 
 		public override void PlayCraftEffect(Mobile from)

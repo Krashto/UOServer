@@ -378,11 +378,17 @@ namespace Server.Items
 			bronze.ArmorColdResist = 1;
 			bronze.ArmorPoisonResist = 1;
 
+			bronze.WeaponColdDamage = 10;
+			bronze.WeaponPoisonDamage = 10;
+
 			CraftAttributeInfo cuivre = Cuivre = new CraftAttributeInfo();
 
 			cuivre.ArmorPhysicalResist = 1;
 			cuivre.ArmorFireResist = 1;
 			cuivre.ArmorEnergyResist = 1;
+
+			cuivre.WeaponFireDamage = 10;
+			cuivre.WeaponEnergyDamage = 10;
 
 			CraftAttributeInfo sonne = Sonne = new CraftAttributeInfo();
 
@@ -390,11 +396,17 @@ namespace Server.Items
 			sonne.ArmorFireResist = 2;
 			sonne.ArmorPoisonResist = 2;
 
+			sonne.WeaponFireDamage = 20;
+			sonne.WeaponPoisonDamage = 20;
+
 			CraftAttributeInfo argent = Argent = new CraftAttributeInfo();
 
 			argent.ArmorPhysicalResist = 2;
 			argent.ArmorFireResist = 2;
 			argent.ArmorEnergyResist = 2;
+
+			argent.WeaponFireDamage = 20;
+			argent.WeaponEnergyDamage = 20;
 
 			CraftAttributeInfo boreale = Boreale = new CraftAttributeInfo();
 
@@ -402,11 +414,17 @@ namespace Server.Items
 			boreale.ArmorFireResist = 2;
 			boreale.ArmorColdResist = 2;
 
+			boreale.WeaponFireDamage = 20;
+			boreale.WeaponColdDamage = 20;
+
 			CraftAttributeInfo chrysteliar = Chrysteliar = new CraftAttributeInfo();
 
 			chrysteliar.ArmorPhysicalResist = 2;
 			chrysteliar.ArmorColdResist = 2;
 			chrysteliar.ArmorPoisonResist = 2;
+
+			chrysteliar.WeaponColdDamage = 20;
+			chrysteliar.WeaponPoisonDamage = 20;
 
 			CraftAttributeInfo glacias = Glacias = new CraftAttributeInfo();
 
@@ -414,11 +432,17 @@ namespace Server.Items
 			glacias.ArmorColdResist = 2;
 			glacias.ArmorEnergyResist = 2;
 
+			glacias.WeaponDamage = 20;
+			glacias.WeaponDamage = 20;
+
 			CraftAttributeInfo lithiar = Lithiar = new CraftAttributeInfo();
 
 			lithiar.ArmorPhysicalResist = 2;
 			lithiar.ArmorPoisonResist = 2;
 			lithiar.ArmorEnergyResist = 2;
+
+			lithiar.WeaponPoisonDamage = 20;
+			lithiar.WeaponEnergyDamage = 20;
 
 			CraftAttributeInfo acier = Acier = new CraftAttributeInfo();
 
@@ -426,11 +450,17 @@ namespace Server.Items
 			acier.ArmorFireResist = 3;
 			acier.ArmorPoisonResist = 3;
 
+			acier.WeaponFireDamage = 30;
+			acier.WeaponPoisonDamage = 30;
+
 			CraftAttributeInfo durian = Durian = new CraftAttributeInfo();
 
 			durian.ArmorPhysicalResist = 3;
 			durian.ArmorFireResist = 3;
 			durian.ArmorEnergyResist = 3;
+
+			durian.WeaponFireDamage = 30;
+			durian.WeaponEnergyDamage = 30;
 
 			CraftAttributeInfo equilibrum = Equilibrum = new CraftAttributeInfo();
 
@@ -438,11 +468,17 @@ namespace Server.Items
 			equilibrum.ArmorFireResist = 3;
 			equilibrum.ArmorColdResist = 3;
 
+			equilibrum.WeaponFireDamage = 30;
+			equilibrum.WeaponColdDamage = 30;
+
 			CraftAttributeInfo or = Or = new CraftAttributeInfo();
 
 			or.ArmorPhysicalResist = 3;
 			or.ArmorColdResist = 3;
 			or.ArmorPoisonResist = 3;
+
+			or.WeaponColdDamage = 30;
+			or.WeaponPoisonDamage = 30;
 
 			CraftAttributeInfo jolinar = Jolinar = new CraftAttributeInfo();
 
@@ -450,11 +486,17 @@ namespace Server.Items
 			jolinar.ArmorColdResist = 3;
 			jolinar.ArmorEnergyResist = 3;
 
+			jolinar.WeaponColdDamage = 30;
+			jolinar.WeaponEnergyDamage = 30;
+
 			CraftAttributeInfo justicium = Justicium = new CraftAttributeInfo();
 
 			justicium.ArmorPhysicalResist = 3;
 			justicium.ArmorPoisonResist = 3;
 			justicium.ArmorEnergyResist = 3;
+
+			justicium.WeaponPoisonDamage = 30;
+			justicium.WeaponEnergyDamage = 30;
 
 			CraftAttributeInfo abyssium = Abyssium = new CraftAttributeInfo();
 
@@ -462,11 +504,17 @@ namespace Server.Items
 			abyssium.ArmorFireResist = 4;
 			abyssium.ArmorPoisonResist = 4;
 
+			abyssium.WeaponFireDamage = 40;
+			abyssium.WeaponPoisonDamage = 40;
+
 			CraftAttributeInfo bloodirium = Bloodirium = new CraftAttributeInfo();
 
 			bloodirium.ArmorPhysicalResist = 4;
 			bloodirium.ArmorFireResist = 4;
 			bloodirium.ArmorEnergyResist = 4;
+
+			bloodirium.WeaponFireDamage = 40;
+			bloodirium.WeaponEnergyDamage = 40;
 
 			CraftAttributeInfo herbrosite = Herbrosite = new CraftAttributeInfo();
 
@@ -474,11 +522,17 @@ namespace Server.Items
 			herbrosite.ArmorFireResist = 4;
 			herbrosite.ArmorColdResist = 4;
 
+			herbrosite.WeaponFireDamage = 40;
+			herbrosite.WeaponColdDamage = 40;
+
 			CraftAttributeInfo khandarium = Khandarium = new CraftAttributeInfo();
 
 			khandarium.ArmorPhysicalResist = 4;
 			khandarium.ArmorColdResist = 4;
 			khandarium.ArmorPoisonResist = 4;
+
+			khandarium.WeaponColdDamage = 40;
+			khandarium.WeaponPoisonDamage = 40;
 
 			CraftAttributeInfo mytheril = Mytheril = new CraftAttributeInfo();
 
@@ -486,11 +540,17 @@ namespace Server.Items
 			mytheril.ArmorColdResist = 4;
 			mytheril.ArmorEnergyResist = 4;
 
+			mytheril.WeaponColdDamage = 40;
+			mytheril.WeaponEnergyDamage = 40;
+
 			CraftAttributeInfo sombralir = Sombralir = new CraftAttributeInfo();
 
 			sombralir.ArmorPhysicalResist = 4;
 			sombralir.ArmorPoisonResist = 4;
 			sombralir.ArmorEnergyResist = 4;
+
+			sombralir.WeaponPoisonDamage = 40;
+			sombralir.WeaponEnergyDamage = 40;
 
 			CraftAttributeInfo draconyr = Draconyr = new CraftAttributeInfo();
 
@@ -498,11 +558,17 @@ namespace Server.Items
 			draconyr.ArmorFireResist = 5;
 			draconyr.ArmorPoisonResist = 5;
 
+			draconyr.WeaponFireDamage = 50;
+			draconyr.WeaponPoisonDamage = 50;
+
 			CraftAttributeInfo heptazion = Heptazion = new CraftAttributeInfo();
 
 			heptazion.ArmorPhysicalResist = 5;
 			heptazion.ArmorFireResist = 5;
 			heptazion.ArmorEnergyResist = 5;
+
+			heptazion.WeaponFireDamage = 50;
+			heptazion.WeaponEnergyDamage = 50;
 
 			CraftAttributeInfo oceanis = Oceanis = new CraftAttributeInfo();
 
@@ -510,11 +576,17 @@ namespace Server.Items
 			oceanis.ArmorFireResist = 5;
 			oceanis.ArmorColdResist = 5;
 
+			oceanis.WeaponFireDamage = 50;
+			oceanis.WeaponColdDamage = 50;
+
 			CraftAttributeInfo brazium = Brazium = new CraftAttributeInfo();
 
 			brazium.ArmorPhysicalResist = 5;
 			brazium.ArmorColdResist = 5;
 			brazium.ArmorPoisonResist = 5;
+
+			brazium.WeaponColdDamage = 50;
+			brazium.WeaponPoisonDamage = 50;
 
 			CraftAttributeInfo lunerium = Lunerium = new CraftAttributeInfo();
 
@@ -522,11 +594,17 @@ namespace Server.Items
 			lunerium.ArmorColdResist = 5;
 			lunerium.ArmorEnergyResist = 5;
 
+			lunerium.WeaponColdDamage = 50;
+			lunerium.WeaponEnergyDamage = 50;
+
 			CraftAttributeInfo marinar = Marinar = new CraftAttributeInfo();
 
 			marinar.ArmorPhysicalResist = 5;
 			marinar.ArmorPoisonResist = 5;
 			marinar.ArmorEnergyResist = 5;
+
+			marinar.ArmorPoisonResist = 50;
+			marinar.WeaponEnergyDamage = 50;
 
 			CraftAttributeInfo nostalgium = Nostalgium = new CraftAttributeInfo();
 
@@ -535,6 +613,12 @@ namespace Server.Items
 			nostalgium.ArmorColdResist = 6;
 			nostalgium.ArmorPoisonResist = 6;
 			nostalgium.ArmorEnergyResist = 6;
+
+			nostalgium.WeaponFireDamage = 20;
+			nostalgium.WeaponColdDamage = 20;
+			nostalgium.WeaponPoisonDamage = 20;
+			nostalgium.WeaponEnergyDamage = 20;
+			nostalgium.WeaponDamage = 20;
 
 			// Cuir
 
@@ -659,6 +743,98 @@ namespace Server.Items
 			ancienBone.ArmorPoisonResist = 6;
 			ancienBone.ArmorEnergyResist = 6;
 
+			// Os
+			CraftAttributeInfo plainoisWood = PlainoisWood = new CraftAttributeInfo();
+
+			plainoisWood.ArmorPhysicalResist = 1;
+
+			CraftAttributeInfo forestierWood = ForestierWood = new CraftAttributeInfo();
+
+			forestierWood.ArmorPhysicalResist = 2;
+			forestierWood.ArmorPoisonResist = 2;
+			forestierWood.ArmorColdResist = 2;
+
+			forestierWood.WeaponPoisonDamage = 20;
+			forestierWood.WeaponColdDamage = 20;
+
+			CraftAttributeInfo collinoisWood = CollinoisWood = new CraftAttributeInfo();
+
+			collinoisWood.ArmorPhysicalResist = 2;
+			collinoisWood.ArmorColdResist = 2;
+			collinoisWood.ArmorEnergyResist = 2;
+
+			collinoisWood.WeaponPoisonDamage = 20;
+			collinoisWood.WeaponEnergyDamage = 20;
+
+			CraftAttributeInfo desertiqueWood = DesertiqueWood = new CraftAttributeInfo();
+
+			desertiqueWood.ArmorPhysicalResist = 3;
+			desertiqueWood.ArmorFireResist = 3;
+			desertiqueWood.ArmorPoisonResist = 3;
+
+			desertiqueWood.WeaponFireDamage = 30;
+			desertiqueWood.WeaponPoisonDamage = 30;
+
+			CraftAttributeInfo savanoisWood = SavanoisWood = new CraftAttributeInfo();
+
+			savanoisWood.ArmorPhysicalResist = 3;
+			savanoisWood.ArmorFireResist = 3;
+			savanoisWood.ArmorEnergyResist = 3;
+
+			savanoisWood.WeaponFireDamage = 30;
+			savanoisWood.WeaponEnergyDamage = 30;
+
+			CraftAttributeInfo toundroisWood = ToundroisWood = new CraftAttributeInfo();
+
+			toundroisWood.ArmorPhysicalResist = 4;
+			toundroisWood.ArmorPoisonResist = 4;
+			toundroisWood.ArmorColdResist = 4;
+
+			toundroisWood.WeaponPoisonDamage = 40;
+			toundroisWood.WeaponColdDamage = 40;
+
+			CraftAttributeInfo tropicauxWood = TropicauxWood = new CraftAttributeInfo();
+
+			tropicauxWood.ArmorPhysicalResist = 4;
+			tropicauxWood.ArmorFireResist = 4;
+			tropicauxWood.ArmorEnergyResist = 4;
+
+			tropicauxWood.WeaponFireDamage = 40;
+			tropicauxWood.WeaponEnergyDamage = 40;
+
+			CraftAttributeInfo montagnardWood = MontagnardWood = new CraftAttributeInfo();
+
+			montagnardWood.ArmorPhysicalResist = 5;
+			montagnardWood.ArmorColdResist = 5;
+			montagnardWood.ArmorPoisonResist = 5;
+
+			montagnardWood.WeaponColdDamage = 50;
+			montagnardWood.WeaponPoisonDamage = 50;
+
+			CraftAttributeInfo volcaniqueWood = VolcaniqueWood = new CraftAttributeInfo();
+
+			volcaniqueWood.ArmorPhysicalResist = 5;
+			volcaniqueWood.ArmorFireResist = 5;
+			volcaniqueWood.ArmorEnergyResist = 5;
+
+			volcaniqueWood.WeaponFireDamage = 50;
+			volcaniqueWood.WeaponEnergyDamage = 50;
+
+			CraftAttributeInfo ancienWood = AncienWood = new CraftAttributeInfo();
+
+			ancienWood.ArmorPhysicalResist = 6;
+			ancienWood.ArmorFireResist = 6;
+			ancienWood.ArmorColdResist = 6;
+			ancienWood.ArmorPoisonResist = 6;
+			ancienWood.ArmorEnergyResist = 6;
+
+			ancienWood.WeaponFireDamage = 20;
+			ancienWood.WeaponColdDamage = 20;
+			ancienWood.WeaponPoisonDamage = 20;
+			ancienWood.WeaponEnergyDamage = 20;
+			ancienWood.WeaponDamage = 20;
+
+			//Scales
 
 			CraftAttributeInfo red = RedScales = new CraftAttributeInfo();
             red.ArmorPhysicalResist = 1;

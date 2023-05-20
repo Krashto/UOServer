@@ -4,6 +4,7 @@ using System.Linq;
 using Server.Items;
 using System.Reflection;
 using Server.Mobiles;
+using Discord;
 
 namespace Server.Custom
 {
@@ -326,6 +327,46 @@ namespace Server.Custom
 				return 0;
 
 			return pm.AllFollowers.Count;
+		}
+
+		public static void SpawnMobsOnDamage(BaseCreature master, Mobile target, Type spawnType, int max)
+		{
+			Map map = target.Map;
+
+			if (map == null)
+				return;
+
+			int aids = master.GetTeamSize(10);
+
+			if (aids < max)
+			{
+				var spawn = Activator.CreateInstance(spawnType) as BaseCreature;
+
+				if (spawn == null)
+					return;
+
+				spawn.Team = master.Team;
+				spawn.SummonMaster = master;
+
+				Point3D loc = target.Location;
+				bool validLocation = false;
+
+				for (int j = 0; !validLocation && j < 10; ++j)
+				{
+					int x = target.X + Utility.Random(3) - 1;
+					int y = target.Y + Utility.Random(3) - 1;
+					int z = map.GetAverageZ(x, y);
+
+					if (validLocation = map.CanFit(x, y, target.Z, 16, false, false))
+						loc = new Point3D(x, y, target.Z);
+					else if (validLocation = map.CanFit(x, y, z, 16, false, false))
+						loc = new Point3D(x, y, z);
+				}
+
+				spawn.MoveToWorld(loc, map);
+
+				spawn.Combatant = target;
+			}
 		}
 	}
 }

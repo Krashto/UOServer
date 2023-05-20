@@ -1219,6 +1219,8 @@ namespace Server.Items
             #region Mondain's Legacy
             m_Quality = (ItemQuality)quality;
 
+			Hue = resHue;
+
             if (makersMark)
                 m_Crafter = from;
             #endregion

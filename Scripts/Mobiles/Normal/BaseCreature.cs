@@ -1584,6 +1584,24 @@ namespace Server.Mobiles
 				}
 			}
 
+			if (Level >= 11 && from != null && from != this && Utility.RandomDouble() <= 0.25)
+			{
+				Type spawnType;
+
+				if (this is OrcBrute)
+					spawnType = typeof(SpawnedOrcishLord);
+				else if (this is Hydra)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Daemon)
+					spawnType = typeof(Imp);
+				else
+					spawnType = typeof(PatchworkSkeleton);
+
+				var teamSize = Math.Max(8, Level - 5);
+
+				CustomUtility.SpawnMobsOnDamage(this, from, spawnType, teamSize);
+			}
+
 			return amount;
 		}
 
@@ -2141,7 +2159,7 @@ namespace Server.Mobiles
 
 			m_iTeam = 0;
 
-			SpeedInfo.GetSpeeds(this, ref dActiveSpeed, ref dPassiveSpeed);
+			//SpeedInfo.GetSpeeds(this, ref dActiveSpeed, ref dPassiveSpeed);
 
 			m_dActiveSpeed = dActiveSpeed;
 			m_dPassiveSpeed = dPassiveSpeed;
@@ -3809,33 +3827,24 @@ namespace Server.Mobiles
 
 		public virtual int GetTeamSize(int iRange)
 		{
-			int iCount = 0;
+			return GetTeamMobiles(iRange).Count;
+		}
+
+		public virtual List<BaseCreature> GetTeamMobiles(int iRange)
+		{
+			var list = new List<BaseCreature>();
 
 			IPooledEnumerable eable = GetMobilesInRange(iRange);
 
 			foreach (Mobile m in eable)
 			{
-				if (m is BaseCreature)
-				{
-					if (((BaseCreature)m).Team == Team)
-					{
-						if (!m.Deleted)
-						{
-							if (m != this)
-							{
-								if (CanSee(m))
-								{
-									iCount++;
-								}
-							}
-						}
-					}
-				}
+				if (m is BaseCreature bc && bc.Team == Team && !m.Deleted && m.Alive && m != this && CanSee(m))
+					list.Add(bc);
 			}
 
 			eable.Free();
 
-			return iCount;
+			return list;
 		}
 
 		private class TameEntry : ContextMenuEntry

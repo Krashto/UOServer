@@ -327,13 +327,15 @@ namespace Server.Engines.Help
             if (old != null)
             {
                 m_KeyedByHandler.Remove(old);
-            }
+				DiscordService.SendMessage(DiscordMessageType.Staff, $"{old.Name} ({old.Account.Username}) retire son assignation sur le page de {entry.Sender.Name} ({(entry.Sender.Account != null ? entry.Sender.Account.Username : "")}).");
+			}
 
-            if (value != null)
+			if (value != null)
             {
                 m_KeyedByHandler[value] = entry;
-            }
-        }
+				DiscordService.SendMessage(DiscordMessageType.Staff, $"{value.Name} s'est assigné le page.");
+			}
+		}
 
         [Usage("Pages")]
         [Description("Opens the page queue menu.")]
@@ -405,9 +407,14 @@ namespace Server.Engines.Help
             e.Stop();
 
             m_List.Remove(e);
-            m_KeyedBySender.Remove(e.Sender);
 
-            if (e.Handler != null)
+			if (e.Sender != null)
+			{
+				m_KeyedBySender.Remove(e.Sender);
+				DiscordService.SendMessage(DiscordMessageType.Staff, $"{e.Sender.Name} a fermé le page.");
+			}
+
+			if (e.Handler != null)
             {
                 m_KeyedByHandler.Remove(e.Handler);
             }
@@ -433,7 +440,7 @@ namespace Server.Engines.Help
 			m_List.Add(entry);
 			m_KeyedBySender[entry.Sender] = entry;
 
-			DiscordService.SendMessage(DiscordMessageType.Staff, $"Un nouveau page de {entry.Sender} a été reçu.");
+			DiscordService.SendMessage(DiscordMessageType.Staff, $"Un nouveau page de {entry.Sender.Name} ({(entry.Sender.Account != null ? entry.Sender.Account.Username : "")}) a été reçu.");
 			DiscordService.SendMessage(DiscordMessageType.Staff, $"Message: {entry.Message}");
 
 			bool isStaffOnline = false;

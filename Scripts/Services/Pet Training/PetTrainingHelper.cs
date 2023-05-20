@@ -1193,7 +1193,7 @@ namespace Server.Mobiles
 
         public static int GetTotalCost(TrainingPoint tp, BaseCreature bc, int value, int startValue)
         {
-            int cost = (int)(value * tp.Weight);
+            int cost = (int)(value * tp.Weight / 4);
 
             if (tp.Requirements != null && tp.Requirements.Length > 0)
             {

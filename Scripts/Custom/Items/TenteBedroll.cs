@@ -1,16 +1,13 @@
 using System.Linq;
-using Server;
 using Server.Custom;
 using Server.Gumps;
-using Server.Items;
 using Server.Network;
 
-namespace BedrollTent
+namespace Server.Items
 {
 	public class BedrollTent : Item, IDyable
 	{
 		private int m_Hue;
-		private SmallTent m_Tent;
 		private const int MAX_TENTS = 1;
 		private static int m_TentCount = 0;
 
@@ -24,10 +21,7 @@ namespace BedrollTent
 		{
 			Name = "Tente";
 			Movable = true;
-			m_Hue = hue;
-			m_Tent = null;
-			Hue = hue;
-			
+			m_Hue = Hue = hue;
 		}
 
 		public BedrollTent(Serial serial) : base(serial)
@@ -82,16 +76,13 @@ namespace BedrollTent
 			m_Hue = reader.ReadInt();
 		}
 
-
 		private class BedrollGump : BaseProjectMGump
 		{
 			private SmallTent m_Tent;
 			
 			private BedrollTent m_Bedroll;
 
-
 			public BedrollGump(BedrollTent bedroll) : base("Menu Tente", 100, 60, false)
-
 			{
 				m_Bedroll = bedroll;
 
@@ -155,9 +146,6 @@ namespace BedrollTent
 
 			private void RemoveTent(Mobile from)
 			{
-				Map map = from.Map;
-				Point3D location = from.Location;
-
 				Item[] items = from.GetItemsInRange(15).ToArray();
 
 				foreach (Item item in items)
@@ -168,9 +156,7 @@ namespace BedrollTent
 						from.SendMessage("Vous retirez la tente.");
 						m_TentCount--;
 						return;
-
 					}
-
 				}
 
 				from.SendMessage("Il n'y a plus de tente.");

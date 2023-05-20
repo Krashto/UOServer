@@ -35,9 +35,6 @@ namespace Server.Mobiles
             SetSkill(SkillName.Tactics, 70.1, 80.0);
             SetSkill(SkillName.Wrestling, 60.1, 80.0);
 
-     //       Fame = 15000;
-     //       Karma = -15000;
-
             ControlSlots = 4;
         }
 

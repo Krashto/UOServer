@@ -125,9 +125,9 @@ namespace Server.Items
 
 		public virtual bool CanEnchant(Item item, Mobile from)
 		{
-			if (!(item is BaseBracelet && item is BaseRing))
+			if (!(item is BaseBracelet || item is BaseRing))
 			{
-				from.SendMessage("Vous pouvez enchanter que les Bijoux avec cette carte.");
+				from.SendMessage("Vous pouvez enchanter que les bracelets et les anneaux avec cette carte.");
 				return false;
 			}
 
@@ -139,7 +139,7 @@ namespace Server.Items
 			if (!CanEnchant(item, from))
 				return;
 
-			if (!(item is BaseBracelet && item is BaseRing))
+			if (!(item is BaseBracelet || item is BaseRing))
 				return;
 
 			var jewel = item as BaseJewel;

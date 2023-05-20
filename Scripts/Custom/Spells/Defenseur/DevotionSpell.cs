@@ -3,6 +3,8 @@ using Server.Spells;
 using System.Collections;
 using System;
 using Server.Mobiles;
+using Server.Network;
+using Server.Items;
 
 namespace Server.Custom.Spells.NewSpells.Defenseur
 {
@@ -44,6 +46,11 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 				m_Table[Caster] = value;
 
 				var duration = GetDurationForSpell(30);
+
+				Timer.DelayCall(TimeSpan.FromSeconds(1.0), () =>
+				{
+					Caster.Hits += value;
+				});
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;
