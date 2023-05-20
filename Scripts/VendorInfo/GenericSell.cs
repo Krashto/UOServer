@@ -1,3 +1,4 @@
+using Server.Engines.Quests;
 using Server.Items;
 using System;
 using System.Collections.Generic;
@@ -62,9 +63,14 @@ namespace Server.Mobiles
                 if (armor.Quality == ItemQuality.Low)
                     price = (int)(price * 0.60);
                 else if (armor.Quality == ItemQuality.Exceptional)
-                    price = (int)(price * 1.25);
+                    price = (int)(price * 1.50);
+				else if (armor.Quality == ItemQuality.Epic)
+					price = (int)(price * 5.00);
+				else if (armor.Quality == ItemQuality.Legendary)
+					price = (int)(price * 10.00);
 
-                if (price < 1)
+
+				if (price < 1)
                     price = 1;
             }
             else if (item is BaseWeapon)
@@ -75,11 +81,49 @@ namespace Server.Mobiles
                     price = (int)(price * 0.60);
                 else if (weapon.Quality == ItemQuality.Exceptional)
                     price = (int)(price * 1.25);
+				else if (weapon.Quality == ItemQuality.Epic)
+					price = (int)(price * 5.00);
+				else if (weapon.Quality == ItemQuality.Legendary)
+					price = (int)(price * 10.00);
 
-                if (price < 1)
+				if (price < 1)
                     price = 1;
             }
-            else if (item is BaseBeverage)
+			else if (item is BaseTool)
+			{
+				BaseTool tool = (BaseTool)item;
+
+				if (tool.Quality == ItemQuality.Low)
+					price = (int)(price * 0.60);
+				else if (tool.Quality == ItemQuality.Exceptional)
+					price = (int)(price * 1.25);
+				else if (tool.Quality == ItemQuality.Epic)
+					price = (int)(price * 5.00);
+				else if (tool.Quality == ItemQuality.Legendary)
+					price = (int)(price * 10.00);
+
+				if (price < 1)
+					price = 1;
+			}
+
+			if (item is BaseJewel)
+			{
+				BaseJewel jewel = (BaseJewel)item;
+
+				if (jewel.Quality == ItemQuality.Low)
+					price = (int)(price * 0.60);
+				else if (jewel.Quality == ItemQuality.Exceptional)
+					price = (int)(price * 1.50);
+				else if (jewel.Quality == ItemQuality.Epic)
+					price = (int)(price * 5.00);
+				else if (jewel.Quality == ItemQuality.Legendary)
+					price = (int)(price * 10.00);
+
+
+				if (price < 1)
+					price = 1;
+			}
+			else if (item is BaseBeverage)
             {
                 int price1 = price, price2 = price;
 

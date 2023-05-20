@@ -734,6 +734,27 @@ namespace Server.Items
         {
             base.AddNameProperties(list);
 
+			{
+				var name = Name ?? String.Empty;
+
+				if (Quality == ItemQuality.Legendary)
+					list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>");
+				else if (Quality == ItemQuality.Epic)
+					list.Add($"<BASEFONT COLOR=#A020F0>{name}</BASEFONT>");
+				else if (Quality == ItemQuality.Exceptional)
+					list.Add($"<BASEFONT COLOR=#0000FF>{name}</BASEFONT>");
+				else
+					list.Add($"<BASEFONT COLOR=#808080>{name}</BASEFONT>");
+
+				var desc = Description ?? String.Empty;
+
+				if (!String.IsNullOrWhiteSpace(desc))
+					list.Add(desc);
+
+				list.Add("Ressource: " + CraftResources.GetDescription(Resource));
+			}
+
+
 			list.Add($"Enchantement: {Enchantement}/1");
 
 			if (m_GorgonLenseCharges > 0)

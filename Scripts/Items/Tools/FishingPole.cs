@@ -201,8 +201,8 @@ namespace Server.Items
 
 			m_AosAttributes = new AosAttributes(this);
 			m_AosSkillBonuses = new AosSkillBonuses(this);
-
-			UsesRemaining = 150;
+			ShowUsesRemaining = true;
+			UsesRemaining = 50;
 		}
 
 		public void ScaleUses()

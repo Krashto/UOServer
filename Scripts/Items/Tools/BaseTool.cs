@@ -96,9 +96,9 @@ namespace Server.Items
 			if (m_Quality == ItemQuality.Exceptional)
 				return 150;
 			else if (m_Quality == ItemQuality.Epic)
-				return 200;
-			else if (m_Quality == ItemQuality.Legendary)
 				return 300;
+			else if (m_Quality == ItemQuality.Legendary)
+				return 500;
 
 			return 100;
         }

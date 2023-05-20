@@ -64,73 +64,119 @@ namespace Server.Mobiles
 		public override int Level => 3;
 		public override Biome Biome => Biome.Montagne;
 		public override int GetAngerSound()
-        {
-            return 0x21D;
-        }
+		{
+			return 0x21D;
+		}
 
-        public override int GetIdleSound()
-        {
-            return 0x21D;
-        }
+		public override int GetIdleSound()
+		{
+			return 0x21D;
+		}
 
-        public override int GetAttackSound()
-        {
-            return 0x162;
-        }
+		public override int GetAttackSound()
+		{
+			return 0x162;
+		}
 
-        public override int GetHurtSound()
-        {
-            return 0x163;
-        }
+		public override int GetHurtSound()
+		{
+			return 0x163;
+		}
 
-        public override int GetDeathSound()
-        {
-            return 0x21D;
-        }
+		public override int GetDeathSound()
+		{
+			return 0x21D;
+		}
 
-        public override FoodType FavoriteFood => FoodType.Meat;
+		public override FoodType FavoriteFood => FoodType.Meat;
 
-        public override bool CanAutoStable => (Backpack == null || Backpack.Items.Count == 0) && base.CanAutoStable;
+		public override bool CanAutoStable => (Backpack == null || Backpack.Items.Count == 0) && base.CanAutoStable;
 
-        public Beetle(Serial serial)
-            : base(serial)
-        {
-        }
+		public Beetle(Serial serial)
+			: base(serial)
+		{
+		}
 
-        public override void OnHarmfulSpell(Mobile from)
-        {
-            if (!Controlled && ControlMaster == null)
-                CurrentSpeed = BoostedSpeed;
-        }
+		public override void OnHarmfulSpell(Mobile from)
+		{
+			if (!Controlled && ControlMaster == null)
+				CurrentSpeed = BoostedSpeed;
+		}
 
-        public override void OnCombatantChange()
-        {
-            if (Combatant == null && !Controlled && ControlMaster == null)
-                CurrentSpeed = PassiveSpeed;
-        }
+		public override void OnCombatantChange()
+		{
+			if (Combatant == null && !Controlled && ControlMaster == null)
+				CurrentSpeed = PassiveSpeed;
+		}
 
-        public override void OnAfterTame(Mobile tamer)
-        {
-            base.OnAfterTame(tamer);
+		#region Pack Animal Methods
+		public override DeathMoveResult GetInventoryMoveResultFor(Item item)
+		{
+			return DeathMoveResult.MoveToCorpse;
+		}
 
-            if (Owners.Count == 0)
-            {
-                SetInt(500);
-            }
-        }
+		public override bool IsSnoop(Mobile from)
+		{
+			if (PackAnimal.CheckAccess(this, from))
+				return false;
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+			return base.IsSnoop(from);
+		}
 
-            writer.Write(1); // version
-        }
+		public override bool OnDragDrop(Mobile from, Item item)
+		{
+			if (CheckFeed(from, item))
+				return true;
 
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
+			if (PackAnimal.CheckAccess(this, from))
+			{
+				AddToBackpack(item);
+				return true;
+			}
 
-            int version = reader.ReadInt();
-        }
-    }
+			return base.OnDragDrop(from, item);
+		}
+
+		public override bool CheckNonlocalDrop(Mobile from, Item item, Item target)
+		{
+			return PackAnimal.CheckAccess(this, from);
+		}
+
+		public override bool CheckNonlocalLift(Mobile from, Item item)
+		{
+			return PackAnimal.CheckAccess(this, from);
+		}
+
+		public override void GetContextMenuEntries(Mobile from, List<ContextMenuEntry> list)
+		{
+			base.GetContextMenuEntries(from, list);
+
+			PackAnimal.GetContextMenuEntries(this, from, list);
+		}
+		#endregion
+
+		public override void OnAfterTame(Mobile tamer)
+		{
+			base.OnAfterTame(tamer);
+
+			if (Owners.Count == 0)
+			{
+				SetInt(500);
+			}
+		}
+
+		public override void Serialize(GenericWriter writer)
+		{
+			base.Serialize(writer);
+
+			writer.Write(1); // version
+		}
+
+		public override void Deserialize(GenericReader reader)
+		{
+			base.Deserialize(reader);
+
+			int version = reader.ReadInt();
+		}
+	}
 }
