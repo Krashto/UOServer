@@ -9,7 +9,7 @@ namespace Server.Items
         public Necklace1() : base(0x1F08)
         {
             Weight = 0.1;
-            Name = "collier";
+            Name = "Collier";
         }
 
         public override int ComputeItemID()
@@ -48,8 +48,8 @@ namespace Server.Items
         [Constructable]
         public Ring1() : base(0x1F09)
         {
-            Weight = 0.1;
-            Name = "anneau";
+            Weight = 1.0;
+            Name = "Anneau";
         }
 
         public override int ComputeItemID()
@@ -89,7 +89,7 @@ namespace Server.Items
         public Bracelet1() : base(0x1F06)
         {
             Weight = 0.1;
-            Name = "bracelet";
+            Name = "Bracelet";
         }
 
         public override int ComputeItemID()
@@ -128,8 +128,8 @@ namespace Server.Items
         [Constructable]
         public Earrings1() : base(0x1F07)
         {
-            Weight = 0.1;
-            Name = "boucles d'oreilles";
+            Weight = 1.0;
+            Name = "Boucles d'oreilles";
         }
 
         public override int ComputeItemID()

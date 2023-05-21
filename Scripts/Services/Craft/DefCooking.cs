@@ -967,7 +967,7 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(FoodPlate), "Plate", 1, "You need a plate!");
 			//AddRecipe(index, (int)CookRecipesExp.PumpkinCookies);
 			SetNeedOven(index, true);
-			index = AddCraft(typeof(Cake), "Pâtisserie/Boulangerie", "Gâteau", 80.0, 99.0, typeof(CakeMix), "Mélange à gâteau", 1, 1044253);
+			index = AddCraft(typeof(Cake), "Pâtisserie/Boulangerie", "Gâteau", 50.0, 70.0, typeof(CakeMix), "Mélange à gâteau", 1, 1044253);
 			SetNeedOven(index, true);
 
 

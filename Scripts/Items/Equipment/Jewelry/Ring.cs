@@ -44,6 +44,8 @@ namespace Server.Items
         public GoldRing()
             : base(0x108a)
         {
+			Weight = 1.0;
+			Name = "Anneau";
 
         }
 
