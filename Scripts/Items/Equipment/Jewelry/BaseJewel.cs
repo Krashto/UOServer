@@ -28,8 +28,8 @@ namespace Server.Items
     {
         private int m_MaxHitPoints;
         private int m_HitPoints;
-
-        private AosAttributes m_AosAttributes;
+	
+		private AosAttributes m_AosAttributes;
         private AosElementAttributes m_AosResistances;
         private AosSkillBonuses m_AosSkillBonuses;
         private SAAbsorptionAttributes m_SAAbsorptionAttributes;
@@ -247,13 +247,17 @@ namespace Server.Items
 		[CommandProperty(AccessLevel.GameMaster)]
 		public CraftResource Resource
 		{
-			get { return m_Resource; }
+			get
+			{
+				return m_Resource;
+			}
 			set
 			{
-				if (value == CraftResource.Iron || value == CraftResource.Argent || value == CraftResource.Gold)
-				{
-					m_Resource = value;
-				}
+				UnscaleDurability();
+
+				m_Resource = value;
+
+				Hue = CraftResources.GetHue(m_Resource);
 
 				ItemID = ComputeItemID();
 
@@ -667,72 +671,70 @@ namespace Server.Items
         }
 
 	
-		public override void AddNameProperty(ObjectPropertyList list)
-		{
+		//public override void AddNameProperty(ObjectPropertyList list)
+		//{
 			
 		
-			if (m_ReforgedPrefix != ReforgedPrefix.None || m_ReforgedSuffix != ReforgedSuffix.None)
-            {
-                if (m_ReforgedPrefix != ReforgedPrefix.None)
-                {
-                    int prefix = RunicReforging.GetPrefixName(m_ReforgedPrefix);
+		//	if (m_ReforgedPrefix != ReforgedPrefix.None || m_ReforgedSuffix != ReforgedSuffix.None)
+  //          {
+  //              if (m_ReforgedPrefix != ReforgedPrefix.None)
+  //              {
+  //                  int prefix = RunicReforging.GetPrefixName(m_ReforgedPrefix);
 
-                    if (m_ReforgedSuffix == ReforgedSuffix.None)
-                        list.Add(1151757, string.Format("#{0}\t{1}", prefix, GetNameString())); // ~1_PREFIX~ ~2_ITEM~
-                    else
-                        list.Add(1151756, string.Format("#{0}\t{1}\t#{2}", prefix, GetNameString(), RunicReforging.GetSuffixName(m_ReforgedSuffix))); // ~1_PREFIX~ ~2_ITEM~ of ~3_SUFFIX~
-                }
-                else if (m_ReforgedSuffix != ReforgedSuffix.None)
-                {
-                    RunicReforging.AddSuffixName(list, m_ReforgedSuffix, GetNameString());
-                }
-            }
-            else
-            {
-                base.AddNameProperty(list);
-            }
-        }
+  //                  if (m_ReforgedSuffix == ReforgedSuffix.None)
+  //                      list.Add(1151757, string.Format("#{0}\t{1}", prefix, GetNameString())); // ~1_PREFIX~ ~2_ITEM~
+  //                  else
+  //                      list.Add(1151756, string.Format("#{0}\t{1}\t#{2}", prefix, GetNameString(), RunicReforging.GetSuffixName(m_ReforgedSuffix))); // ~1_PREFIX~ ~2_ITEM~ of ~3_SUFFIX~
+  //              }
+  //              else if (m_ReforgedSuffix != ReforgedSuffix.None)
+  //              {
+  //                  RunicReforging.AddSuffixName(list, m_ReforgedSuffix, GetNameString());
+  //              }
+  //          }
+  //          else
+  //          {
+  //              base.AddNameProperty(list);
+  //          }
+  //      }
 
-        private string GetNameString()
-        {
-            string name = Name;
+        //private string GetNameString()
+        //{
+        //    string name = Name;
 
-            if (name == null)
-                name = string.Format("#{0}", LabelNumber);
+        //    if (name == null)
+        //        name = string.Format("#{0}", LabelNumber);
 
-            return name;
-        }
+        //    return name;
+        //}
 
-        public override void AddCraftedProperties(ObjectPropertyList list)
-        {
-            if (OwnerName != null)
-                list.Add(1153213, OwnerName);
+      
 
-            if (m_Crafter != null)
-                list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
-
-			if (m_Quality == ItemQuality.Exceptional)
-				list.Add("Exceptionnelle");
-			else if (m_Quality == ItemQuality.Epic)
-				list.Add("Épique");
-			else if (m_Quality == ItemQuality.Legendary)
-				list.Add("Légendaire");
-
-			if (IsImbued)
-                list.Add(1080418); // (Imbued)
-		}
-
-        public override void AddWeightProperty(ObjectPropertyList list)
-        {
-            base.AddWeightProperty(list);
-
-            if (IsVvVItem)
-                list.Add(1154937); // VvV Item
-        }
-
+       
         public override void AddNameProperties(ObjectPropertyList list)
-        {
-            base.AddNameProperties(list);
+        //{
+        //    base.AddNameProperties(list);
+
+			{
+				var name = Name ?? String.Empty;
+
+				if (Quality == ItemQuality.Legendary)
+					list.Add($"<BASEFONT COLOR=#FFA500>{name}</BASEFONT>");
+				else if (Quality == ItemQuality.Epic)
+					list.Add($"<BASEFONT COLOR=#A020F0>{name}</BASEFONT>");
+				else if (Quality == ItemQuality.Exceptional)
+					list.Add($"<BASEFONT COLOR=#0000FF>{name}</BASEFONT>");
+				else
+					list.Add($"<BASEFONT COLOR=#808080>{name}</BASEFONT>");
+
+				var desc = Description ?? String.Empty;
+
+				if (!String.IsNullOrWhiteSpace(desc))
+					list.Add(desc);
+
+				list.Add("Ressource: " + CraftResources.GetDescription(Resource));
+
+			AddWeightProperty(list);
+			AddCraftedProperties(list);
 
 			list.Add($"Enchantement: {Enchantement}/1");
 
@@ -894,7 +896,33 @@ namespace Server.Items
             }
         }
 
-        public override void AddItemPowerProperties(ObjectPropertyList list)
+		public override void AddCraftedProperties(ObjectPropertyList list)
+		{
+			if (OwnerName != null)
+				list.Add(1153213, OwnerName);
+
+			if (m_Crafter != null)
+				list.Add(1050043, m_Crafter.TitleName); // crafted by ~1_NAME~
+
+			if (m_Quality == ItemQuality.Exceptional)
+				list.Add("Exceptionnelle");
+			else if (m_Quality == ItemQuality.Epic)
+				list.Add("Épique");
+			else if (m_Quality == ItemQuality.Legendary)
+				list.Add("Légendaire");
+
+			if (IsImbued)
+				list.Add(1080418); // (Imbued)
+		}
+		//public override void AddWeightProperty(ObjectPropertyList list)
+		//{
+		//	base.AddWeightProperty(list);
+
+		//	if (IsVvVItem)
+		//		list.Add(1154937); // VvV Item
+		//}
+
+		public override void AddItemPowerProperties(ObjectPropertyList list)
         {
             if (m_ItemPower != ItemPower.None)
             {
@@ -1173,7 +1201,7 @@ namespace Server.Items
 
             if (version < 2)
             {
-                m_Resource = CraftResource.Iron;
+                //m_Resource = CraftResource.Iron;
                 m_GemType = GemType.None;
             }
         }

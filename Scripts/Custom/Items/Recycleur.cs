@@ -71,7 +71,9 @@ namespace Server.Items
                     resource = weapon.Resource;
                 else if (targeted is BaseShoes shoes)
                     resource = shoes.Resource;
-                else
+				else if (targeted is NewSpellbook spellbook)
+					resource = spellbook.Resource;
+				else
                     from.SendMessage( "Cet article ne peut pas être recyclé.");
 
                 if (resource == CraftResource.None)

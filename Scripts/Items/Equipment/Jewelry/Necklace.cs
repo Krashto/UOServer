@@ -64,6 +64,7 @@ namespace Server.Items
             : base(0x1088)
         {
             Weight = 0.1;
+			Name = "Collier";
         }
 
         public GoldNecklace(Serial serial)

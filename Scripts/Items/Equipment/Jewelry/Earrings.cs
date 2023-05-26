@@ -33,8 +33,10 @@ namespace Server.Items
         public GoldEarrings()
             : base(0x1087)
         {
-            Weight = 0.1;
-        }
+			Weight = 1.0;
+			Name = "Boucles d'oreilles";
+
+		}
 
         public GoldEarrings(Serial serial)
             : base(serial)

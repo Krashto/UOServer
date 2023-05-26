@@ -44,7 +44,9 @@ namespace Server.Items
         public GoldBracelet()
             : base(0x1086)
         {
-        }
+			Weight = 1.0;
+			Name = "Bracelet";
+		}
 
         public GoldBracelet(Serial serial)
             : base(serial)
