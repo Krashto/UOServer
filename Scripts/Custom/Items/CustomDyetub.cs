@@ -875,7 +875,7 @@ namespace Server.Items
 		[Constructable]
 		public GrisArgenteDyeTub()
 		{
-			Hue = DyedHue = 1909;
+			Hue = DyedHue = 2796;
 			Redyable = false;
 			Charges = 5;
 			Name = "Teinture Argenté";
@@ -936,7 +936,7 @@ namespace Server.Items
 		[Constructable]
 		public BlancDyeTub()
 		{
-			Hue = DyedHue = 2491;
+			Hue = DyedHue = 2498;
 			Redyable = false;
 			Charges = 5;
 			Name = "Teinture Blanc Pure";
