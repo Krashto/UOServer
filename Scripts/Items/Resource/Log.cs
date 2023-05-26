@@ -41,12 +41,13 @@ namespace Server.Items
             Hue = CraftResources.GetHue(resource);
         }
 
-        public override void GetProperties(ObjectPropertyList list)
+		public override void GetProperties(ObjectPropertyList list)
         {
             base.GetProperties(list);
 
 			list.Add(CraftResources.GetName(m_Resource));
 		}
+
         public BaseLog(Serial serial) : base(serial)
         {
         }

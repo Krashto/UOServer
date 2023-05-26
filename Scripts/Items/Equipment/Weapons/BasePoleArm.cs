@@ -25,7 +25,9 @@ namespace Server.Items
 
         public override WeaponAnimation DefAnimation => WeaponAnimation.Slash2H;
 
-        public virtual HarvestSystem HarvestSystem => Lumberjacking.System;
+		public override int DefMaxRange => 2;
+
+		public virtual HarvestSystem HarvestSystem => Lumberjacking.System;
 
         public override void OnDoubleClick(Mobile from)
         {

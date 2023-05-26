@@ -59,7 +59,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						if (IsActive(m))
 							Deactivate(m);
 
-						var duration = GetDurationForSpell(15, 3);
+						var duration = GetDurationForSpell(30, 3);
 
 						var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Geomancie);
 

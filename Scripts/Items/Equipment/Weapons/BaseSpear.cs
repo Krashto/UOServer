@@ -21,7 +21,9 @@ namespace Server.Items
 
         public override WeaponAnimation DefAnimation => WeaponAnimation.Pierce2H;
 
-        public override void Serialize(GenericWriter writer)
+		public override int DefMaxRange => 2;
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(0); // version

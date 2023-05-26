@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Martial
 
 				ConcentricWaveFX.Fire.CreateInstance(Caster.Location, Caster.Map, Caster.Direction, 3).Send();
 
-				MovingSpells.MoveMobileTo(Caster, Caster.Direction, 3);
+				MovingSpells.MoveMobileTo(Caster, Caster.Direction, 5);
 
 				int dx = Caster.Location.X - oldLocation.X;
 				int dy = Caster.Location.Y - oldLocation.Y;
@@ -78,6 +78,11 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				if (SpellHelper.CheckField(pnt, Caster.Map))
 					new FireFieldItem(itemID, pnt, Caster, Caster.Map, duration, 3);
 
+				var damage = 0;
+
+				if (Caster is CustomPlayerMobile pm)
+					damage += pm.Aptitudes[Aptitude.Martial];
+
 				for (int i = 1; i <= 2; ++i)
 				{
 					Timer.DelayCall(TimeSpan.FromMilliseconds(i * 100), index =>
@@ -86,13 +91,13 @@ namespace Server.Custom.Spells.NewSpells.Martial
 						SpellHelper.AdjustField(ref point, Caster.Map, 16, false);
 
 						if (SpellHelper.CheckField(point, Caster.Map))
-							new FireFieldItem(itemID, point, Caster, Caster.Map, duration, 3);
+							new FireFieldItem(itemID, point, Caster, Caster.Map, duration, damage);
 
 						point = new Point3D(eastToWest ? pnt.X + -index : pnt.X, eastToWest ? pnt.Y : pnt.Y + -index, pnt.Z);
 						SpellHelper.AdjustField(ref point, Caster.Map, 16, false);
 
 						if (SpellHelper.CheckField(point, Caster.Map))
-							new FireFieldItem(itemID, point, Caster, Caster.Map, duration, 3);
+							new FireFieldItem(itemID, point, Caster, Caster.Map, duration, damage);
 					}, i);
 				}
 			}

@@ -1,8 +1,6 @@
-﻿using System;
-using Server;
-using Server.Gumps;
-using Server.Mobiles;
+﻿using Server.Gumps;
 using Server.Commands;
+using Server.Custom;
 
 namespace Server.Scripts.Commands
 {
@@ -19,10 +17,13 @@ namespace Server.Scripts.Commands
         {
             Mobile from = e.Mobile;
 
-            if (from is Mobile)
-            {
-                from.SendGump(new DecorationGump((Mobile)from));
-            }
+			if (CustomUtility.IsInDungeonRegion(from.Location))
+			{
+				from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+				return;
+			}
+
+			from.SendGump(new DecorationGump(from));
         }
     }
 }

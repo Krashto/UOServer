@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 				Caster.AddResistanceMod(mod);
 				Caster.UpdateResistances();
 
-				var duration = GetDurationForSpell(15);
+				var duration = GetDurationForSpell(30, 3);
 
 				Timer t = new InternalTimer(Caster, DateTime.Now + duration);
 				m_Timers[Caster] = t;

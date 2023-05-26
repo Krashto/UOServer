@@ -136,8 +136,8 @@ namespace Server.Spells
 			if (m_Caster is BaseCreature)
 				return;
 
-            if (CheckHurt)
-            {
+            //if (CheckHurt)
+            //{
                 CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
                 double chance = m_Caster.Skills[SkillName.EvalInt].Value / 333;
 
@@ -145,7 +145,7 @@ namespace Server.Spells
                     m_Caster.SendMessage("Vous réussissez à garder votre concentration.");
                 else
                     Disturb(DisturbType.Hurt);
-            }
+            //}
         }
 
 		public virtual void OnCasterKilled()
@@ -366,7 +366,7 @@ namespace Server.Spells
 			bonus += (Caster.Skills[CastSkill].Value - 50) / 50;
 			bonus += (Caster.Skills[DamageSkill].Value - 50) / 75;
 
-			bonus += Caster.Int / 1000;
+			bonus += Caster.Int / 500;
 
 			if (Caster is CustomPlayerMobile pm)
 			{

@@ -44,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		}
 
 		public override double DispelDifficulty => 117.5;
-		public override int Level => 4;
+		public override int Level => 3;
 		public override double DispelFocus => 45.0;
 
 		public override void OnThink()
@@ -76,7 +76,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				Combatant = m;
 			}
 
-			base.OnThink();
+			NextThinkingTime = DateTime.Now + TimeSpan.FromSeconds(10);
 		}
 
 		public override void OnDeath(Container c)

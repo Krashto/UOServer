@@ -133,15 +133,15 @@ namespace Server.SkillHandlers
 
                 if (toChannel != null)
                 {
-                    min = 1 + (int)(Caster.Skills[SkillName.SpiritSpeak].Value * 0.25);
-                    max = min + 4;
+                    min = 1 + (int)(Caster.Skills[SkillName.SpiritSpeak].Value * 0.125);
+                    max = min + 2;
                     mana = 0;
                     number = 1061287; // You channel energy from a nearby corpse to heal your wounds.
                 }
                 else
                 {
-                    min = 1 + (int)(Caster.Skills[SkillName.SpiritSpeak].Value * 0.25);
-                    max = min + 4;
+                    min = 1 + (int)(Caster.Skills[SkillName.SpiritSpeak].Value * 0.125);
+                    max = min + 2;
                     mana = 10;
                     number = 1061286; // You channel your own spiritual energy to heal your wounds.
                 }

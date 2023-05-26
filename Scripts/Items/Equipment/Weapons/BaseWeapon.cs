@@ -183,9 +183,9 @@ namespace Server.Items
         public virtual int StrengthReq => 0;
         public virtual int DexterityReq => 0;
         public virtual int IntelligenceReq => 0;
-        public virtual int MinDamage => NewWeaponInfo.GetMinDamage(this);
-        public virtual int MaxDamage => NewWeaponInfo.GetMaxDamage(this);
-        public virtual float Speed => NewWeaponInfo.GetSpeed(this);
+        public virtual int MinDamage => 0;
+        public virtual int MaxDamage => 0;
+        public virtual float Speed => 0;
         public virtual int AosMaxRange => DefMaxRange;
         public virtual int AosHitSound => DefHitSound;
         public virtual int AosMissSound => DefMissSound;
@@ -479,7 +479,7 @@ namespace Server.Items
         [CommandProperty(AccessLevel.GameMaster)]
         public int MinimumDamage
         {
-            get { return NewWeaponInfo.GetMinDamage(this); /*(m_MinDamage == -1 ? MinDamage : m_MinDamage);*/ }
+            get { return (m_MinDamage == -1 ? MinDamage : m_MinDamage); }
             set
             {
                 m_MinDamage = value;
@@ -490,7 +490,7 @@ namespace Server.Items
         [CommandProperty(AccessLevel.GameMaster)]
         public int MaximumDamage
         {
-            get { return NewWeaponInfo.GetMaxDamage(this); /*(m_MaxDamage == -1 ? MaxDamage : m_MaxDamage);*/ }
+            get { return (m_MaxDamage == -1 ? MaxDamage : m_MaxDamage); }
             set
             {
                 m_MaxDamage = value;
@@ -503,13 +503,10 @@ namespace Server.Items
         {
             get
             {
-				return NewWeaponInfo.GetSpeed(this);
-				//if (m_Speed != -1)
-				//{
-				//    return m_Speed;
-				//}
+				if (m_Speed != -1)
+					return m_Speed;
 
-				//return Speed;
+				return Speed;
 			}
             set
             {
@@ -1315,7 +1312,7 @@ namespace Server.Items
 
         public virtual TimeSpan GetDelay(Mobile m)
         {
-			double speed = NewWeaponInfo.GetSpeed(this); //Speed;
+			double speed = Speed;
 
             if (speed == 0)
             {
@@ -2943,8 +2940,8 @@ namespace Server.Items
                 }
             }
 
-            min = MinDamage;
-            max = MaxDamage;
+            min = MinimumDamage;
+            max = MaximumDamage;
         }
 
         public virtual double GetBaseDamage(Mobile attacker)
@@ -4815,7 +4812,7 @@ namespace Server.Items
                 list.Add(1079978, direct.ToString()); // Direct Damage: ~1_PERCENT~%
             }
 
-            list.Add(1061168, "{0}\t{1}", MinDamage.ToString(), MaxDamage.ToString()); // weapon damage ~1_val~ - ~2_val~
+            list.Add(1061168, "{0}\t{1}", MinimumDamage.ToString(), MaximumDamage.ToString()); // weapon damage ~1_val~ - ~2_val~
 
             list.Add(1061167, string.Format("{0}s", WeaponSpeed)); // weapon speed ~1_val~
 

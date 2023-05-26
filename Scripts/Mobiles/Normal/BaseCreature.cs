@@ -2061,6 +2061,7 @@ namespace Server.Mobiles
 					default:
 					case Biome.Plaine: leather = new PlainoisLeather(hides); break;
 					case Biome.Foret: leather = new ForestierLeather(hides); break;
+					case Biome.Desert: leather = new DesertiqueLeather(hides); break;
 					case Biome.Colline: leather = new CollinoisLeather(hides); break;
 					case Biome.Montagne: leather = new MontagnardLeather(hides); break;
 					case Biome.Toundra: leather = new ToundroisLeather(hides); break;
@@ -2088,6 +2089,7 @@ namespace Server.Mobiles
 					default:
 					case Biome.Plaine: bone = new PlainoisBone(bones); break;
 					case Biome.Foret: bone = new ForestierBone(bones); break;
+					case Biome.Desert: bone = new DesertiqueBone(bones); break;
 					case Biome.Colline: bone = new CollinoisBone(bones); break;
 					case Biome.Montagne: bone = new MontagnardBone(bones); break;
 					case Biome.Toundra: bone = new ToundroisBone(bones); break;
@@ -2159,7 +2161,7 @@ namespace Server.Mobiles
 
 			m_iTeam = 0;
 
-			//SpeedInfo.GetSpeeds(this, ref dActiveSpeed, ref dPassiveSpeed);
+			SpeedInfo.GetSpeeds(this, ref dActiveSpeed, ref dPassiveSpeed);
 
 			m_dActiveSpeed = dActiveSpeed;
 			m_dPassiveSpeed = dPassiveSpeed;

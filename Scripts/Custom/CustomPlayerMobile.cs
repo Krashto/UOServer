@@ -966,34 +966,6 @@ namespace Server.Mobiles
 
 			Frozen = false;
 
-			if (Corpse != null)
-			{
-				ArrayList list = new ArrayList();
-
-				foreach (Item item in Corpse.Items)
-				{
-					list.Add(item);
-				}
-
-				foreach (Item item in list)
-				{
-					if (item.Layer == Layer.Hair || item.Layer == Layer.FacialHair)
-						item.Delete();
-
-					if (item is BaseRaceGumps || (Corpse is Corpse && ((Corpse)Corpse).EquipItems.Contains(item)))
-					{
-						if (!EquipItem(item))
-							AddToBackpack(item);
-					}
-					else
-					{
-						AddToBackpack(item);
-					}
-				}
-
-				Corpse.Delete();
-			}
-
 			SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous vous relevez péniblement.", VulnerabilityDuration);
 			SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous êtes vulnérable pendant les {0} prochaines minutes.", VulnerabilityDuration);
 			SendMessage(HueManager.GetHue(HueManagerList.Red), "Si vous tombez au combat, vous serez envoyé{0} dans le monde des esprits.", Female ? "e" : "");
@@ -1015,12 +987,41 @@ namespace Server.Mobiles
 
 		private static void RessuciterOverTime_Callback(object state)
 		{
-			if ((Mobile)state is CustomPlayerMobile)
+			if (state is CustomPlayerMobile pm)
 			{
-				var pm = (CustomPlayerMobile)state;
-
 				if (!pm.Alive)
+				{
 					pm.Resurrect();
+
+					if (pm.Corpse != null)
+					{
+						ArrayList list = new ArrayList();
+
+						foreach (Item item in pm.Corpse.Items)
+						{
+							list.Add(item);
+						}
+
+						foreach (Item item in list)
+						{
+							if (item.Layer == Layer.Hair || item.Layer == Layer.FacialHair)
+								item.Delete();
+
+							if (item is BaseRaceGumps || (pm.Corpse is Corpse && ((Corpse)pm.Corpse).EquipItems.Contains(item)))
+							{
+								if (!pm.EquipItem(item))
+									pm.
+										AddToBackpack(item);
+							}
+							else
+							{
+								pm.AddToBackpack(item);
+							}
+						}
+
+						pm.Corpse.Delete();
+					}
+				}
 			}
 		}
 

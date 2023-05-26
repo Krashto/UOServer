@@ -2333,6 +2333,9 @@ namespace Server
 			}
 		}
 
+		[CommandProperty(AccessLevel.Decorator)]
+		public bool LockedByStaff { get; set; }
+
 		public virtual bool ForceShowProperties => IsLockedDown || IsSecure;
 
 		public virtual int GetPacketFlags()
@@ -2479,39 +2482,28 @@ namespace Server
 
 		public virtual void Serialize(GenericWriter writer)
 		{
-			writer.Write(17); // version
+			writer.Write(18); // version
 
+			//Version 18
+			writer.Write(LockedByStaff);
 
-			//			17
-
+			//Version 17
 			writer.Write(m_Enchantement);
 
-			//16
-
+			//Version 16
 			writer.Write(m_LockByPlayer);
 
-			// 15
-
+			//Version 15
 			writer.Write(m_Createur);
 			writer.Write(m_Description);
 
-
-
-
-
-
-
-
-
-			// 14
+			//Version 14
 			writer.Write(Sockets != null ? Sockets.Count : 0);
 
 			if (Sockets != null)
 			{
 				foreach (var socket in Sockets)
-				{
 					ItemSocket.Save(socket, writer);
-				}
 			}
 
 			// 13: Merge sync
@@ -3008,6 +3000,11 @@ namespace Server
 
 			switch (version)
 			{
+				case 18:
+					{
+						LockedByStaff = reader.ReadBool();
+						goto case 17;
+					}
 				case 17:
 					{
 						m_Enchantement = reader.ReadInt();

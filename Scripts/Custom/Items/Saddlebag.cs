@@ -1,9 +1,6 @@
 ﻿using System;
-using Server;
-using Server.Items;
 using Server.Targeting;
 using Server.Mobiles;
-using System.Collections;
 
 namespace Server.Items
 {
@@ -40,17 +37,15 @@ namespace Server.Items
 
 		public override void OnDoubleClick( Mobile from )
 		{
-			bool CanUse = from.CheckSkill( SkillName.AnimalTaming, 0, 0 );
-
+			bool canUse = from.CheckSkill( SkillName.AnimalTaming, 0, 0 );
 			
-			if (CanUse)
+			if (canUse)
 			{
-				if (this.IsChildOf( from.Backpack ))
+				if (IsChildOf( from.Backpack ))
 				{
 					from.SendMessage("Choisir un cheval ou un llama");
 					from.Target = new BagTarget(this);
 				}
-
 				else
 					from.SendMessage("Cela doit être dans votre sac.");
 			}
@@ -58,17 +53,6 @@ namespace Server.Items
 			{
 				from.SendMessage("Vous êtes trop bête pour savoir à quoi cela sert.");
 			}
-			{
-				if (m_Charges >= 1)
-			{
-					m_Charges -= 1;
-			}
-			else
-			{
-				Delete();
-				from.SendMessage("Votre saccoche est maintenant trop usée.");
-			}
-		}
 		}
 
 		private class BagTarget : Target
@@ -95,13 +79,12 @@ namespace Server.Items
 				to.Female = from.Female;
 				to.IsBonded = from.IsBonded;
 
-
-
 				for ( int i = 0; i < from.Skills.Length; ++i )
 				{
 					to.Skills[i].Base = from.Skills[i].Base;
 					to.Skills[i].Cap = from.Skills[i].Cap;
 				}
+
 				to.ControlOrder = from.ControlOrder;
 				to.ControlTarget = from.ControlTarget;
 				to.Controlled = from.Controlled;
@@ -110,16 +93,12 @@ namespace Server.Items
 				from.Delete();
 			}
 
-			
-				protected override void OnTarget( Mobile from, object targ )
-
+			protected override void OnTarget( Mobile from, object targ )
 			{
-
 				if (targ is BaseCreature)
 				{
 					BaseCreature bc = (BaseCreature) targ;
 					if ( from.InRange( bc, 2 ) )
-
 					{
 						if (bc.ControlMaster != from)
 							from.SendMessage("Vous pouvez seulement le mettre sur un de vos animaux!");
@@ -129,30 +108,35 @@ namespace Server.Items
 							{
 								PackHorse ph = new PackHorse();
 								ConvertAnimal(bc, ph);
-								//sb.Consume();
-							
+								sb.Charges--;
+
+								if (sb.Charges <= 0)
+								{
+									sb.Delete();
+									from.SendMessage("Votre saccoche est maintenant trop usée.");
+								}
 							}
 							else if (targ is Llama)
 							{
 								PackLlama pl = new PackLlama();
 								ConvertAnimal(bc, pl);
-								//sb.Consume();
-								
+								sb.Charges--;
+
+								if (sb.Charges <= 0)
+								{
+									sb.Delete();
+									from.SendMessage("Votre saccoche est maintenant trop usée.");
+								}
 							}
 							else if (targ is PackHorse)
 							{
 								Horse pl = new Horse();
 								ConvertAnimal(bc, pl);
-								//from.AddToBackpack(sb);
-								
 							}
 							else if (targ is PackLlama)
 							{
 								RidableLlama pl = new RidableLlama();
 								ConvertAnimal(bc, pl);
-								//from.AddToBackpack(sb);
-								
-
 							}
 							else
 								from.SendMessage("Vous pouvez pas mettre cela sur cette animal.");
@@ -165,13 +149,8 @@ namespace Server.Items
 					from.SendMessage("Vous pouvez pas mettre une sacoche sur cette animal.");
 			}
 		}
-		
 
-
-
-			
-
-			public Saddlebag( Serial serial ) : base( serial )
+		public Saddlebag( Serial serial ) : base( serial )
 		{
 		}
 
@@ -190,8 +169,6 @@ namespace Server.Items
 			int version = reader.ReadInt();
 			m_Charges = reader.ReadInt();
 		}
-
-		
 	}
 }
 

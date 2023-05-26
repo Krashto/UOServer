@@ -1,11 +1,8 @@
-using System;
-using Server;
-using Server.Gumps;
-using Server.Mobiles;
 using Server.Items;
 using Server.Network;
 using Server.Targeting;
 using Server.Multis;
+using Server.Custom;
 
 namespace Server.Gumps
 {
@@ -75,6 +72,12 @@ namespace Server.Gumps
 			if (from.Deleted || !from.Alive)
 				return;
 
+			if (CustomUtility.IsInDungeonRegion(from.Location))
+			{
+				from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+				return;
+			}
+
 			switch (info.ButtonID)
 			{
 				case 1:
@@ -109,34 +112,22 @@ namespace Server.Gumps
 					break;
 				case 11:
 					{
-
 						BaseHouse House = BaseHouse.FindHouseAt(from);
 
 						if (House != null)
-						{
 							from.Target = new LockdownTarget(false, House);
-						}
 						else
-						{
 							from.Target = new DecoLockTarget();
-						}
 						break;
-
-
 					}
 				case 12:
 					{
-
 						BaseHouse House = BaseHouse.FindHouseAt(from);
 
 						if (House != null)
-						{
 							from.Target = new LockdownTarget(true, House);
-						}
 						else
-						{
 							from.Target = new DecoUnLockTarget();
-						}
 						break;
 					}
 				default: break;
@@ -159,15 +150,24 @@ namespace Server.Gumps
 				{
 					Item item = (Item)target;
 
+					if (CustomUtility.IsInDungeonRegion(from.Location))
+					{
+						from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+						return;
+					}
+
+					if (item.LockedByStaff)
+					{
+						from.SendMessage("Vous pouvez seulement deplacer un objet !");
+						return;
+					}
+
 					if ((from.GetDistanceToSqrt(item.Location) <= 1) && (from.InLOS(item)))
 					{
-						///                       if (item.CanBeAltered)
-						{
-							Point3D point = item.Location;
-							point.Z += 1;
+						Point3D point = item.Location;
+						point.Z += 1;
 
-							item.Location = point;
-						}
+						item.Location = point;
 					}
 					else
 						from.SendMessage("Ceci est hors de votre portée.");
@@ -194,15 +194,24 @@ namespace Server.Gumps
 				{
 					Item item = (Item)target;
 
+					if (CustomUtility.IsInDungeonRegion(from.Location))
+					{
+						from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+						return;
+					}
+
+					if (item.LockedByStaff)
+					{
+						from.SendMessage("Vous pouvez seulement deplacer un objet !");
+						return;
+					}
+
 					if ((from.GetDistanceToSqrt(item.Location) <= 1) && (from.InLOS(item)))
 					{
-						///                       if (item.CanBeAltered)
-						{
-							Point3D point = item.Location;
-							point.Z -= 1;
+						Point3D point = item.Location;
+						point.Z -= 1;
 
-							item.Location = point;
-						}
+						item.Location = point;
 					}
 					else
 						from.SendMessage("Ceci est hors de votre portée.");
@@ -228,6 +237,18 @@ namespace Server.Gumps
 				if ((target is Item) && (!(target is BaseDoor)))
 				{
 					Item item = (Item)target;
+
+					if (CustomUtility.IsInDungeonRegion(from.Location))
+					{
+						from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+						return;
+					}
+
+					if (item.LockedByStaff)
+					{
+						from.SendMessage("Vous pouvez seulement deplacer un objet !");
+						return;
+					}
 
 					if ((from.GetDistanceToSqrt(item.Location) <= 1) && (from.InLOS(item)))
 					{
@@ -266,6 +287,18 @@ namespace Server.Gumps
 				{
 					Item item = (Item)target;
 
+					if (CustomUtility.IsInDungeonRegion(from.Location))
+					{
+						from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+						return;
+					}
+
+					if (item.LockedByStaff)
+					{
+						from.SendMessage("Vous pouvez seulement deplacer un objet !");
+						return;
+					}
+
 					if ((from.GetDistanceToSqrt(item.Location) <= 1) && (from.InLOS(item)))
 					{
 						if (item.CanBeLock)
@@ -278,18 +311,10 @@ namespace Server.Gumps
 								item.LockByPlayer = false;
 							}
 							else
-							{
 								from.SendMessage("Vous ne pouvez débarrer que les objets verouillé ou créer par un joueur.");
-							}
-
-
-
-
 						}
 						else
-						{
 							from.SendMessage("Vous ne pouvez pas barrer/debarrer cet objet.");
-						}
 					}
 					else
 						from.SendMessage("Ceci est hors de votre portée.");
@@ -318,47 +343,55 @@ namespace Server.Gumps
 				{
 					Item item = (Item)target;
 
+					if (CustomUtility.IsInDungeonRegion(from.Location))
+					{
+						from.SendMessage("Vous ne pouvez pas utiliser cette commande dans les donjons !");
+						return;
+					}
+
+					if (item.LockedByStaff)
+					{
+						from.SendMessage("Vous pouvez seulement deplacer un objet !");
+						return;
+					}
+
 					if ((from.GetDistanceToSqrt(item.Location) <= 1) && (from.InLOS(item)))
 					{
-						///                       if (item.CanBeAltered)
+						Point3D point = item.Location;
+
+						switch (dir)
 						{
-							Point3D point = item.Location;
-
-							switch (dir)
-							{
-								case DecoDirection.North:
-									point.X -= 1;
-									point.Y -= 1;
-									break;
-								case DecoDirection.South:
-									point.X += 1;
-									point.Y += 1;
-									break;
-								case DecoDirection.East:
-									point.X += 1;
-									point.Y -= 1;
-									break;
-								case DecoDirection.West:
-									point.X -= 1;
-									point.Y += 1;
-									break;
-								case DecoDirection.NorthEast:
-									point.Y -= 1;
-									break;
-								case DecoDirection.NorthWest:
-									point.X -= 1;
-									break;
-								case DecoDirection.SouthEast:
-									point.X += 1;
-									break;
-								case DecoDirection.SouthWest:
-									point.Y += 1;
-									break;
-							}
-							//        point.Z -= 1;
-
-							item.Location = point;
+							case DecoDirection.North:
+								point.X -= 1;
+								point.Y -= 1;
+								break;
+							case DecoDirection.South:
+								point.X += 1;
+								point.Y += 1;
+								break;
+							case DecoDirection.East:
+								point.X += 1;
+								point.Y -= 1;
+								break;
+							case DecoDirection.West:
+								point.X -= 1;
+								point.Y += 1;
+								break;
+							case DecoDirection.NorthEast:
+								point.Y -= 1;
+								break;
+							case DecoDirection.NorthWest:
+								point.X -= 1;
+								break;
+							case DecoDirection.SouthEast:
+								point.X += 1;
+								break;
+							case DecoDirection.SouthWest:
+								point.Y += 1;
+								break;
 						}
+
+						item.Location = point;
 					}
 					else
 						from.SendMessage("Ceci est hors de votre portée.");

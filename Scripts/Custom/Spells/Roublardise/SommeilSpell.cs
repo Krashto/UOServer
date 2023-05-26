@@ -43,7 +43,7 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 				m.FixedParticles(0x37C4, 1, 8, 9502, 39, 4, EffectLayer.Head);
 				m.PlaySound(0x210);
 
-				var duration = GetDurationForSpell(4);
+				var duration = GetDurationForSpell(6, 2);
 
 				m.Freeze(duration);
 				m.Combatant = null;

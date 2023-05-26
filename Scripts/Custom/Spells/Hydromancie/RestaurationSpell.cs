@@ -94,7 +94,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				}
 				else
 				{
-					double toHeal = Math.Max(1, Utility.RandomMinMax(5 + m_Count, (5 + m_Count) * 2));
+					double toHeal = Math.Max(1, Utility.RandomMinMax(3 + m_Count, (3 + m_Count) * 1.5));
 
 					if (AvatarDuFroidSpell.IsActive(m_From))
 						toHeal *= 1.25;

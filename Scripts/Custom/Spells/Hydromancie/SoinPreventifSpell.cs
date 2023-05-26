@@ -101,7 +101,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					double toHeal = Math.Max(1, Utility.RandomMinMax(5 + m_Count, (5 + m_Count) * 2));
 
 					if (AvatarDuFroidSpell.IsActive(m_From))
-						toHeal *= 1.5;
+						toHeal *= 1.25;
 
 					m_Mobile.Heal((int)toHeal);
 

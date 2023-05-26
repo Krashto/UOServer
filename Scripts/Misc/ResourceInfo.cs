@@ -555,8 +555,10 @@ namespace Server.Items
 			CraftAttributeInfo draconyr = Draconyr = new CraftAttributeInfo();
 
 			draconyr.ArmorPhysicalResist = 5;
-			draconyr.ArmorFireResist = 5;
-			draconyr.ArmorPoisonResist = 5;
+			draconyr.ArmorFireResist = 7;
+			draconyr.ArmorColdResist = 2;
+			draconyr.ArmorPoisonResist = 7;
+			draconyr.ArmorEnergyResist = 2;
 
 			draconyr.WeaponFireDamage = 50;
 			draconyr.WeaponPoisonDamage = 50;
@@ -564,8 +566,10 @@ namespace Server.Items
 			CraftAttributeInfo heptazion = Heptazion = new CraftAttributeInfo();
 
 			heptazion.ArmorPhysicalResist = 5;
-			heptazion.ArmorFireResist = 5;
-			heptazion.ArmorEnergyResist = 5;
+			heptazion.ArmorFireResist = 7;
+			heptazion.ArmorColdResist = 2;
+			heptazion.ArmorPoisonResist = 2;
+			heptazion.ArmorEnergyResist = 7;
 
 			heptazion.WeaponFireDamage = 50;
 			heptazion.WeaponEnergyDamage = 50;
@@ -573,8 +577,10 @@ namespace Server.Items
 			CraftAttributeInfo oceanis = Oceanis = new CraftAttributeInfo();
 
 			oceanis.ArmorPhysicalResist = 5;
-			oceanis.ArmorFireResist = 5;
-			oceanis.ArmorColdResist = 5;
+			oceanis.ArmorFireResist = 7;
+			oceanis.ArmorColdResist = 7;
+			oceanis.ArmorPoisonResist = 2;
+			oceanis.ArmorEnergyResist = 2;
 
 			oceanis.WeaponFireDamage = 50;
 			oceanis.WeaponColdDamage = 50;
@@ -582,8 +588,10 @@ namespace Server.Items
 			CraftAttributeInfo brazium = Brazium = new CraftAttributeInfo();
 
 			brazium.ArmorPhysicalResist = 5;
-			brazium.ArmorColdResist = 5;
-			brazium.ArmorPoisonResist = 5;
+			brazium.ArmorFireResist = 2;
+			brazium.ArmorColdResist = 7;
+			brazium.ArmorPoisonResist = 7;
+			brazium.ArmorEnergyResist = 2;
 
 			brazium.WeaponColdDamage = 50;
 			brazium.WeaponPoisonDamage = 50;
@@ -591,8 +599,10 @@ namespace Server.Items
 			CraftAttributeInfo lunerium = Lunerium = new CraftAttributeInfo();
 
 			lunerium.ArmorPhysicalResist = 5;
-			lunerium.ArmorColdResist = 5;
-			lunerium.ArmorEnergyResist = 5;
+			lunerium.ArmorFireResist = 2;
+			lunerium.ArmorColdResist = 7;
+			lunerium.ArmorPoisonResist = 2;
+			lunerium.ArmorEnergyResist = 7;
 
 			lunerium.WeaponColdDamage = 50;
 			lunerium.WeaponEnergyDamage = 50;
@@ -600,8 +610,10 @@ namespace Server.Items
 			CraftAttributeInfo marinar = Marinar = new CraftAttributeInfo();
 
 			marinar.ArmorPhysicalResist = 5;
-			marinar.ArmorPoisonResist = 5;
-			marinar.ArmorEnergyResist = 5;
+			marinar.ArmorFireResist = 2;
+			marinar.ArmorColdResist = 2;
+			marinar.ArmorPoisonResist = 7;
+			marinar.ArmorEnergyResist = 7;
 
 			marinar.ArmorPoisonResist = 50;
 			marinar.WeaponEnergyDamage = 50;
@@ -609,10 +621,10 @@ namespace Server.Items
 			CraftAttributeInfo nostalgium = Nostalgium = new CraftAttributeInfo();
 
 			nostalgium.ArmorPhysicalResist = 6;
-			nostalgium.ArmorFireResist = 6;
-			nostalgium.ArmorColdResist = 6;
-			nostalgium.ArmorPoisonResist = 6;
-			nostalgium.ArmorEnergyResist = 6;
+			nostalgium.ArmorFireResist = 8;
+			nostalgium.ArmorColdResist = 8;
+			nostalgium.ArmorPoisonResist = 8;
+			nostalgium.ArmorEnergyResist = 8;
 
 			nostalgium.WeaponFireDamage = 20;
 			nostalgium.WeaponColdDamage = 20;
@@ -677,10 +689,10 @@ namespace Server.Items
 			CraftAttributeInfo ancienLeather = AncienLeather = new CraftAttributeInfo();
 
 			ancienLeather.ArmorPhysicalResist = 6;
-			ancienLeather.ArmorFireResist = 6;
-			ancienLeather.ArmorColdResist = 6;
-			ancienLeather.ArmorPoisonResist = 6;
-			ancienLeather.ArmorEnergyResist = 6;
+			ancienLeather.ArmorFireResist = 8;
+			ancienLeather.ArmorColdResist = 8;
+			ancienLeather.ArmorPoisonResist = 8;
+			ancienLeather.ArmorEnergyResist = 8;
 
 			// Os
 			CraftAttributeInfo plainoisBone = PlainoisBone = new CraftAttributeInfo();
@@ -738,10 +750,10 @@ namespace Server.Items
 			CraftAttributeInfo ancienBone = AncienBone = new CraftAttributeInfo();
 
 			ancienBone.ArmorPhysicalResist = 6;
-			ancienBone.ArmorFireResist = 6;
-			ancienBone.ArmorColdResist = 6;
-			ancienBone.ArmorPoisonResist = 6;
-			ancienBone.ArmorEnergyResist = 6;
+			ancienBone.ArmorFireResist = 8;
+			ancienBone.ArmorColdResist = 8;
+			ancienBone.ArmorPoisonResist = 8;
+			ancienBone.ArmorEnergyResist = 8;
 
 			// Os
 			CraftAttributeInfo plainoisWood = PlainoisWood = new CraftAttributeInfo();
@@ -823,10 +835,10 @@ namespace Server.Items
 			CraftAttributeInfo ancienWood = AncienWood = new CraftAttributeInfo();
 
 			ancienWood.ArmorPhysicalResist = 6;
-			ancienWood.ArmorFireResist = 6;
-			ancienWood.ArmorColdResist = 6;
-			ancienWood.ArmorPoisonResist = 6;
-			ancienWood.ArmorEnergyResist = 6;
+			ancienWood.ArmorFireResist = 8;
+			ancienWood.ArmorColdResist = 8;
+			ancienWood.ArmorPoisonResist = 8;
+			ancienWood.ArmorEnergyResist = 8;
 
 			ancienWood.WeaponFireDamage = 20;
 			ancienWood.WeaponColdDamage = 20;

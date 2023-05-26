@@ -42,49 +42,49 @@ namespace Server.Custom.Weapons
 			return dps;
 		}
 
-		public static float GetSpeed(BaseWeapon weapon)
-		{
-			var speed = 5.00f;
+		//public static float GetSpeed(BaseWeapon weapon)
+		//{
+		//	var speed = 5.00f;
 
-			if (weapon is Fists)
-				speed = 2.0f;
-			else if (weapon is BaseRanged)
-				speed = 3.25f;
-			else if (weapon.Layer == Layer.OneHanded)
-				speed = 2.5f;
-			else if (weapon.Layer == Layer.TwoHanded)
-				speed = 4.0f;
+		//	if (weapon is Fists)
+		//		speed = 2.0f;
+		//	else if (weapon is BaseRanged)
+		//		speed = 3.25f;
+		//	else if (weapon.Layer == Layer.OneHanded)
+		//		speed = 2.5f;
+		//	else if (weapon.Layer == Layer.TwoHanded)
+		//		speed = 4.0f;
 
-			return speed;
-		}
+		//	return speed;
+		//}
 
-		public static int GetMinDamage(BaseWeapon weapon)
-		{
-			double baseDamage = 1;
+		//public static int GetMinDamage(BaseWeapon weapon)
+		//{
+		//	double baseDamage = 1;
 
-			if (weapon is TrainingSword)
-				baseDamage = 1;
-			else if (weapon is BaseTrainingWand)
-				baseDamage = 1;
-			else if (weapon is Fists)
-				baseDamage = 9;
-			else if (weapon is BaseRanged)
-				baseDamage = 20;
-			else if (weapon.Layer == Layer.OneHanded)
-				baseDamage = 19;
-			else if (weapon.Layer == Layer.TwoHanded)
-				baseDamage = 27;
+		//	if (weapon is TrainingSword)
+		//		baseDamage = 1;
+		//	else if (weapon is BaseTrainingWand)
+		//		baseDamage = 1;
+		//	else if (weapon is Fists)
+		//		baseDamage = 9;
+		//	else if (weapon is BaseRanged)
+		//		baseDamage = 20;
+		//	else if (weapon.Layer == Layer.OneHanded)
+		//		baseDamage = 14;
+		//	else if (weapon.Layer == Layer.TwoHanded)
+		//		baseDamage = 25;
 
-			if (baseDamage < 1)
-				baseDamage = 1;
+		//	if (baseDamage < 1)
+		//		baseDamage = 1;
 
-			return (int)baseDamage;
-		}
+		//	return (int)baseDamage;
+		//}
 
-		public static int GetMaxDamage(BaseWeapon weapon)
-		{
-			return (int)(GetMinDamage(weapon) * 1.25);
-		}
+		//public static int GetMaxDamage(BaseWeapon weapon)
+		//{
+		//	return (int)(GetMinDamage(weapon) * 1.34);
+		//}
 
 		public static string GetWeaponAbilityNameByWeaponType(IWeapon weapon)
 		{

@@ -22,7 +22,7 @@ namespace Server
 
 			if (bc.IsParagon)
 			{
-				min /= 2;
+				min /= 1.5;
 				max = min + .4;
 			}
 
