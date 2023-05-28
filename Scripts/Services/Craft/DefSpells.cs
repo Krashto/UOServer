@@ -126,16 +126,16 @@ namespace Server.Engines.Craft
 			switch (level)
 			{
 				default:
-				case 1: minSkill = 35.0; maxSkill = 45.0; break;
-				case 2: minSkill = 45.0; maxSkill = 45.0; break;
-				case 3: minSkill = 50.0; maxSkill = 60.0; break;
-				case 4: minSkill = 55.0; maxSkill = 65.0; break;
-				case 5: minSkill = 60.0; maxSkill = 70.0; break;
-				case 6: minSkill = 65.0; maxSkill = 75.0; break;
-				case 7: minSkill = 70.0; maxSkill = 80.0; break;
-				case 8: minSkill = 75.0; maxSkill = 85.0; break;
-				case 9: minSkill = 80.0; maxSkill = 90.0; break;
-				case 10: minSkill = 90.0; maxSkill = 100.0; break;
+				case 1: minSkill = 00.0; maxSkill = 40.0; break;
+				case 2: minSkill = 10.0; maxSkill = 50.0; break;
+				case 3: minSkill = 20.0; maxSkill = 60.0; break;
+				case 4: minSkill = 30.0; maxSkill = 70.0; break;
+				case 5: minSkill = 40.0; maxSkill = 80.0; break;
+				case 6: minSkill = 50.0; maxSkill = 90.0; break;
+				case 7: minSkill = 60.0; maxSkill = 100.0; break;
+				case 8: minSkill = 70.0; maxSkill = 100.0; break;
+				case 9: minSkill = 80.0; maxSkill = 110.0; break;
+				case 10: minSkill = 90.0; maxSkill = 120.0; break;
 			}
 
 			index = AddCraft(type, aptitude, name, minSkill, maxSkill, typeof(BlankScroll), "Blank scroll", 1, "You do not have enough blank scrolls to make that.");

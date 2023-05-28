@@ -59,9 +59,9 @@ namespace Server.Mobiles
         public override int Hides => 11;
         public override HideType HideType => HideType.Regular;
         public override int Meat => 5;
-        public override FoodType FavoriteFood => FoodType.Meat;
-
-        public override bool CanAngerOnTame => true;
+		public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish;
+		public override PackInstinct PackInstinct => PackInstinct.Feline;
+		public override bool CanAngerOnTame => true;
         public override bool StatLossAfterTame => true;
 
         public Lion(Serial serial)

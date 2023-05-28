@@ -319,7 +319,7 @@ namespace Server.Engines.Craft
 			#region Teintures Verte
 			index = AddCraft(typeof(VertSombreDyeTub), "Teintures", "Vert Sombre", 25.0, 50.0, typeof(BacVide), "Bac Vide", 1, "Il vous faut un Bac Vide");
 			AddRes(index, typeof(PoudreCoquillages), "Poudre de Coquillages", 5, "Vous n'avez pas suffisament de Poudre de Coquillages");
-			AddRes(index, typeof(EcorceArbreGeant), "Ecorce d'arbre maudit", 5, "Vous n'avez pas suffisament d'écorce d'arbre maudit");
+			AddRes(index, typeof(EcorceArbreGeant), "Ecorce d'arbre géant", 5, "Vous n'avez pas suffisament d'écorce d'arbre géant");
 
 			index = AddCraft(typeof(VertOliveDyeTub), "Teintures", "Vert Olive", 50.0, 75.0, typeof(BacVide), "Bac Vide", 1, "Il vous faut un Bac Vide");
 			AddRes(index, typeof(PoudreCoquillages), "Poudre de Coquillages", 5, "Vous n'avez pas suffisament de Poudre de Coquillages");

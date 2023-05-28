@@ -15,14 +15,27 @@ namespace Server.SkillHandlers
             /* Cloth	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
             /* Leather	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
             /* Studded	*/ {  0,      0,      0,     0,      0,      0,       0 },
-            /* Bone		*/ {  0,      0,      0,     0,      0,      0,       0 },
+            /* Bone		*/ {  0,      5,      5,     5,     10,     20,       0 },
             /* Spined	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
             /* Horned	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
             /* Barbed	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
-            /* Ring		*/ {  0,	  5,	  0,	 10,	 15,	 25,	  0 },
-            /* Chain	*/ {  0,	  0,	  10,	 0,		 15,	 25,	  0 },
-            /* Plate	*/ {  5,	  5,	  10,	 10,	 15,	 25,	  0 },
-            /* Dragon	*/ {  0,	  5,	  10,	 10,	 15,	 25,	  0 }
+            /* Ring		*/ {  0,      5,      5,     5,      10,     20,      0 },
+            /* Chain	*/ {  0,      5,      10,    10,     15,     25,      0 },
+            /* Plate	*/ {  0,	  10,	  10,	 15,	 20,	 30,	  0 },
+            /* Dragon	*/ {  0,      5,      10,    10,     15,     25,      0 },
+
+			  ////				Gorget	Gloves	Helmet	Arms	Legs	Chest	Shield
+     //       /* Cloth	*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Leather	*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Studded	*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Bone		*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Spined	*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Horned	*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Barbed	*/ {  0,      0,      0,     0,      0,      0,       0 },
+     //       /* Ring		*/ {  0,      5,      0,     10,     15,     25,      0 },
+     //       /* Chain	*/ {  0,      0,      10,    0,      15,     25,      0 },
+     //       /* Plate	*/ {  5,      5,      10,    10,     15,     25,      0 },
+     //       /* Dragon	*/ {  0,      5,      10,    10,     15,     25,      0 }
 		};
 
 		public static double HidingRequirement => 30;
@@ -103,7 +116,7 @@ namespace Server.SkillHandlers
 				{
 					int armorRating = GetArmorRating(m);
 
-					if (armorRating >= 42) //I have a hunch '42' was chosen cause someone's a fan of DNA
+					if (armorRating >= 35) //I have a hunch '42' was chosen cause someone's a fan of DNA
 					{
 						m.SendLocalizedMessage(502727); // You could not hope to move quietly wearing this much armor.
 						m.RevealingAction();

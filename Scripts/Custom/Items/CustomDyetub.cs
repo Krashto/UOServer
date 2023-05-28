@@ -485,7 +485,7 @@ namespace Server.Items
 		[Constructable]
 		public VertSombreDyeTub()
 		{
-			Hue = DyedHue = 1980;
+			Hue = DyedHue = 1436;
 			Redyable = false;
 			Charges = 5;
 			Name = "Teinture Vert Sombre";
