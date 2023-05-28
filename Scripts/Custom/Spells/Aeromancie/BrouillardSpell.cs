@@ -71,7 +71,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 			{
 				t.Stop();
 				m_Timers.Remove(m);
-				m.RevealingAction();
+				//m.RevealingAction();
 				CustomUtility.ApplySimpleSpellEffect(m, "Brouillard", AptitudeColor.Aeromancie, SpellSequenceType.End);
 			}
 		}

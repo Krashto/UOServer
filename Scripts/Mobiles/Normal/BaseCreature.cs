@@ -1579,9 +1579,7 @@ namespace Server.Mobiles
 			if (SubdueBeforeTame && !Controlled)
 			{
 				if ((oldHits > ((double)HitsMax / 10)) && (Hits <= ((double)HitsMax / 10)))
-				{
 					PublicOverheadMessage(MessageType.Regular, 0x3B2, false, "* The creature has been beaten into subjugation! *");
-				}
 			}
 
 			if (Level >= 11 && from != null && from != this && Utility.RandomDouble() <= 0.25)
@@ -1590,10 +1588,85 @@ namespace Server.Mobiles
 
 				if (this is OrcBrute)
 					spawnType = typeof(SpawnedOrcishLord);
+				else if (this is Rikktor)
+					spawnType = typeof(Imp);
+				else if (this is PrimevalLich)
+					spawnType = typeof(LichLord);
+				else if (this is ShadowKnight)
+					spawnType = typeof(SkeletalKnight);
 				else if (this is Hydra)
+					spawnType = typeof(SeaSerpent);
+				else if (this is OphidianMatriarch)
+					spawnType = typeof(OphidianArchmage);
+				else if (this is OgreLord)
+					spawnType = typeof(Troglodyte);
+				else if (this is StygianDragon)
+					spawnType = typeof(LavaElemental);
+				else if (this is Titan)
+					spawnType = typeof(Troll);
+				else if (this is LadyMelisande)
+					spawnType = typeof(SkeletalMage);
+				else if (this is Serado)
+					spawnType = typeof(Oni);
+				else if (this is SkeletalLich)
+					spawnType = typeof(Lich);
+				else if (this is RedSolenQueen)
+					spawnType = typeof(RedSolenWarrior);
+				else if (this is ShimmeringEffusion)
+					spawnType = typeof(PoisonElemental);
+				else if (this is Mephitis)
+					spawnType = typeof(GiantSpider);
+
+				else if (this is Osiredon)
 					spawnType = typeof(PatchworkSkeleton);
+				else if (this is MasterTheophilus)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Medusa)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is BoneDemon)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is AbysmalHorror)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is DemonKnight)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Devourer)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Impaler)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Moloch)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is BogThing)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is FleshRenderer)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Reaper)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is TanglingRoots)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Treefellow)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is TsukiWolf)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is DreadHorn)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is EtherealWarrior)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Silvani)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is ArcaneDaemon)
+					spawnType = typeof(Imp);
+				else if (this is Balron)
+					spawnType = typeof(Imp);
+				else if (this is ChaosDaemon)
+					spawnType = typeof(Imp);
 				else if (this is Daemon)
 					spawnType = typeof(Imp);
+				else if (this is AncientWyrm)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Dragon)
+					spawnType = typeof(PatchworkSkeleton);
+				else if (this is Drake)
+					spawnType = typeof(PatchworkSkeleton);
 				else
 					spawnType = typeof(PatchworkSkeleton);
 

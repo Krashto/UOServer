@@ -177,7 +177,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 
 						bc.Skills.MagicResist = m_From.Skills.MagicResist;
 
-						var duration = m_Spell.GetDurationForSpell(240, 3);
+						var duration = m_Spell.GetDurationForSpell(300);
 
 						if (BaseCreature.Summon(bc, true, m_From, m_From.Location, -1, duration))
 						{

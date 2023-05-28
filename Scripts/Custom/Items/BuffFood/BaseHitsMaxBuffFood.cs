@@ -49,6 +49,8 @@ namespace Server.Items
 			Timer t = new InternalTimer(from, DateTime.Now + Duration);
 			m_Timers[from] = t;
 			t.Start();
+
+			from.Delta(MobileDelta.Hits);
 			return true;
         }
 
@@ -67,12 +69,15 @@ namespace Server.Items
 			if (m == null)
 				return;
 
-			var t = (Timer)m_Timers[m];
+			var t = m_Timers[m] as Timer;
+			var mod = m_Table[m] as int?;
 
-			if (t != null)
+			if (t != null && mod != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);
+				m_Table.Remove(m);
+				m.Delta(MobileDelta.Hits);
 				m.SendMessage("La nourriture réconfortante de constitution prend fin.");
 			}
 		}

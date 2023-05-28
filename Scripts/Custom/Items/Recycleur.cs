@@ -120,15 +120,16 @@ namespace Server.Items
 					case CraftResource.Marinar:
 					case CraftResource.Nostalgium:			m_CraftSystem = new List<CraftSystem>() { DefBlacksmithy.CraftSystem, DefTinkering.CraftSystem }; break;
 
-                    case CraftResource.ForestierLeather:    
+					case CraftResource.PlainoisLeather:
+					case CraftResource.ForestierLeather:    
 					case CraftResource.DesertiqueLeather:	
 					case CraftResource.CollinoisLeather:	
 					case CraftResource.SavanoisLeather:	    
                     case CraftResource.ToundroisLeather:    
                     case CraftResource.TropicauxLeather:    
-                    case CraftResource.MontagnardLeather:   
-                    case CraftResource.AncienLeather:       
-                    case CraftResource.PlainoisLeather:		m_CraftSystem = new List<CraftSystem>() { DefLeatherArmor.CraftSystem }; break;
+                    case CraftResource.MontagnardLeather:
+                    case CraftResource.VolcaniqueLeather:
+					case CraftResource.AncienLeather: m_CraftSystem = new List<CraftSystem>() { DefLeatherArmor.CraftSystem }; break;
 
                     case CraftResource.PlainoisBone:        
 					case CraftResource.ForestierBone:	    
@@ -137,8 +138,9 @@ namespace Server.Items
                     case CraftResource.SavanoisBone:        
                     case CraftResource.ToundroisBone:       
                     case CraftResource.TropicauxBone:       
-                    case CraftResource.MontagnardBone:      
-                    case CraftResource.AncienBone:			m_CraftSystem = new List<CraftSystem>() { DefBoneTailoring.CraftSystem }; break;
+					case CraftResource.MontagnardBone:      
+                    case CraftResource.VolcaniqueBone:
+                    case CraftResource.AncienBone: m_CraftSystem = new List<CraftSystem>() { DefBoneTailoring.CraftSystem }; break;
 
 					case CraftResource.RegularWood:
 					case CraftResource.PlainoisWood:
@@ -156,7 +158,7 @@ namespace Server.Items
 					case CraftResource.YewWood:
 					case CraftResource.Heartwood:
 					case CraftResource.Bloodwood:
-					case CraftResource.Frostwood:			m_CraftSystem = new List<CraftSystem>() { DefBowFletching.CraftSystem, DefCarpentry.CraftSystem, DefTinkering.CraftSystem }; break;
+					case CraftResource.Frostwood: m_CraftSystem = new List<CraftSystem>() { DefBowFletching.CraftSystem, DefCarpentry.CraftSystem, DefTinkering.CraftSystem }; break;
 				}
 
                 if (m_CraftSystem == null || m_CraftSystem.Count <= 0)

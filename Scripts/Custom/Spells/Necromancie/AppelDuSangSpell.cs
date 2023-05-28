@@ -47,7 +47,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 		{
 			if (CheckSequence())
 			{
-				var duration = GetDurationForSpell(30, 2);
+				var duration = GetDurationForSpell(300);
 
 				SpellHelper.Summon(new SummonedBloodElemental(), Caster, 0x217, duration, false, false);
 

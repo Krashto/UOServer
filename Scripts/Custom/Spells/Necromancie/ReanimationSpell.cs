@@ -103,7 +103,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 									bc.SetMana((int)(m_Corpse.Owner.ManaMax * 0.60));
 									bc.SetDamage(Utility.RandomMinMax(mindam, maxdam));
 
-									var duration = GetDurationForSpell(60, 3);
+									var duration = GetDurationForSpell(300);
 
 									BaseCreature.Summon(bc, true, Caster, m_Location, 0x217, duration);
 

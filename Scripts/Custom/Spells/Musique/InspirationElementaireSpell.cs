@@ -22,7 +22,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 				Reagent.EssenceMusique
 			);
 
-		public override int RequiredAptitudeValue { get { return 6; } }
+		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Musique }; } }
 		public override SkillName CastSkill { get { return SkillName.Musicianship; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

@@ -577,12 +577,12 @@ namespace Server.Spells
 
 			if (pm != null)
 			{
-				value += caster.Int / 1000;
-				value *= 1 + pm.Capacites[Capacite.Magie] * 0.0875;
-				value *= 1 + pm.Aptitudes.GetRealValue(aptitude) * 0.0875;
+				value += caster.Int / 1000.0;
+				value *= 1.0 + pm.Capacites[Capacite.Magie] * 0.0875;
+				value *= 1.0 + pm.Aptitudes.GetRealValue(aptitude) * 0.0875;
 
 				if (pm.ChosenSpellbook != null)
-					value *= 1 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
+					value *= 1.0 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
 			}
 
 			return value;

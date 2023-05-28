@@ -224,11 +224,11 @@ namespace Server.Engines.Craft
 			AddSpell("Martial", typeof(AngeGardienScroll), "Ange gardien", 10);
 
 			AddSpell("Musique", typeof(DiversionScroll), "Diversion", 1);
-			AddSpell("Musique", typeof(CalmeToiScroll), "Calme toi!", 2);
-			AddSpell("Musique", typeof(DesorienterScroll), "Désorienter", 3);
-			AddSpell("Musique", typeof(DefiScroll), "Defi", 4);
+			AddSpell("Musique", typeof(DesorienterScroll), "Désorienter", 2);
+			AddSpell("Musique", typeof(InspirationElementaireScroll), "Inspiration élémentaire", 3);
+			AddSpell("Musique", typeof(CalmeToiScroll), "Calme toi!", 4);
 			AddSpell("Musique", typeof(DecrescendoManaiqueScroll), "Decrescendo mana.", 5);
-			AddSpell("Musique", typeof(InspirationElementaireScroll), "Inspiration élémentaire", 6);
+			AddSpell("Musique", typeof(DefiScroll), "Defi", 6);
 			AddSpell("Musique", typeof(AbsorbationSonoreScroll), "Absorbation sonore", 7);
 			AddSpell("Musique", typeof(ParfaiteAspirationScroll), "Parfaite aspiration", 8);
 			AddSpell("Musique", typeof(RevelationDiscordanteScroll), "Révelation discordante", 9);

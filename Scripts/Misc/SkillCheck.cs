@@ -434,231 +434,231 @@ namespace Server.Misc
 
         public static void TryStatGain(SkillInfo info, Mobile from)
         {
-			// Chance roll
-			double chance;
+			//// Chance roll
+			//double chance;
 
-			if (from is BaseCreature && ((BaseCreature)from).Controlled)
-			{
-				chance = _PetChanceToGainStats / 100.0;
-			}
-			else
-			{
-				chance = _PlayerChanceToGainStats / 100.0;
-			}
+			//if (from is BaseCreature && ((BaseCreature)from).Controlled)
+			//{
+			//	chance = _PetChanceToGainStats / 100.0;
+			//}
+			//else
+			//{
+			//	chance = _PlayerChanceToGainStats / 100.0;
+			//}
 
-			if (Utility.RandomDouble() >= chance)
-			{
-				return;
-			}
+			//if (Utility.RandomDouble() >= chance)
+			//{
+			//	return;
+			//}
 
-			// Selection
-			StatLockType primaryLock = StatLockType.Locked;
-			StatLockType secondaryLock = StatLockType.Locked;
+			//// Selection
+			//StatLockType primaryLock = StatLockType.Locked;
+			//StatLockType secondaryLock = StatLockType.Locked;
 
-			switch (info.Primary)
-			{
-				case StatCode.Str:
-					primaryLock = from.StrLock;
-					break;
-				case StatCode.Dex:
-					primaryLock = from.DexLock;
-					break;
-				case StatCode.Int:
-					primaryLock = from.IntLock;
-					break;
-			}
+			//switch (info.Primary)
+			//{
+			//	case StatCode.Str:
+			//		primaryLock = from.StrLock;
+			//		break;
+			//	case StatCode.Dex:
+			//		primaryLock = from.DexLock;
+			//		break;
+			//	case StatCode.Int:
+			//		primaryLock = from.IntLock;
+			//		break;
+			//}
 
-			switch (info.Secondary)
-			{
-				case StatCode.Str:
-					secondaryLock = from.StrLock;
-					break;
-				case StatCode.Dex:
-					secondaryLock = from.DexLock;
-					break;
-				case StatCode.Int:
-					secondaryLock = from.IntLock;
-					break;
-			}
+			//switch (info.Secondary)
+			//{
+			//	case StatCode.Str:
+			//		secondaryLock = from.StrLock;
+			//		break;
+			//	case StatCode.Dex:
+			//		secondaryLock = from.DexLock;
+			//		break;
+			//	case StatCode.Int:
+			//		secondaryLock = from.IntLock;
+			//		break;
+			//}
 
-			// Gain
-			// Decision block of both are selected to gain
-			if (primaryLock == StatLockType.Up && secondaryLock == StatLockType.Up)
-			{
-				if (Utility.Random(4) == 0)
-					GainStat(from, (Stat)info.Secondary);
-				else
-					GainStat(from, (Stat)info.Primary);
-			}
-			else // Will not do anything if neither are selected to gain
-			{
-				if (primaryLock == StatLockType.Up)
-					GainStat(from, (Stat)info.Primary);
-				else if (secondaryLock == StatLockType.Up)
-					GainStat(from, (Stat)info.Secondary);
-			}
+			//// Gain
+			//// Decision block of both are selected to gain
+			//if (primaryLock == StatLockType.Up && secondaryLock == StatLockType.Up)
+			//{
+			//	if (Utility.Random(4) == 0)
+			//		GainStat(from, (Stat)info.Secondary);
+			//	else
+			//		GainStat(from, (Stat)info.Primary);
+			//}
+			//else // Will not do anything if neither are selected to gain
+			//{
+			//	if (primaryLock == StatLockType.Up)
+			//		GainStat(from, (Stat)info.Primary);
+			//	else if (secondaryLock == StatLockType.Up)
+			//		GainStat(from, (Stat)info.Secondary);
+			//}
 		}
 
         public static bool CanLower(Mobile from, Stat stat)
         {
-			switch (stat)
-			{
-				case Stat.Str:
-					return from.StrLock == StatLockType.Down && from.RawStr > 10;
+			//switch (stat)
+			//{
+			//	case Stat.Str:
+			//		return from.StrLock == StatLockType.Down && from.RawStr > 10;
 
-				case Stat.Dex:
-					return from.DexLock == StatLockType.Down && from.RawDex > 10;
+			//	case Stat.Dex:
+			//		return from.DexLock == StatLockType.Down && from.RawDex > 10;
 
-				case Stat.Int:
-					return from.IntLock == StatLockType.Down && from.RawInt > 10;
-			}
+			//	case Stat.Int:
+			//		return from.IntLock == StatLockType.Down && from.RawInt > 10;
+			//}
 
 			return false;
         }
 
         public static bool CanRaise(Mobile from, Stat stat, bool atTotalCap)
         {
-			switch (stat)
-			{
-				case Stat.Str:
-					if (from.RawStr < from.StrCap)
-					{
-						if (atTotalCap && from is PlayerMobile)
-						{
-							return CanLower(from, Stat.Dex) || CanLower(from, Stat.Int);
-						}
+			//switch (stat)
+			//{
+			//	case Stat.Str:
+			//		if (from.RawStr < from.StrCap)
+			//		{
+			//			if (atTotalCap && from is PlayerMobile)
+			//			{
+			//				return CanLower(from, Stat.Dex) || CanLower(from, Stat.Int);
+			//			}
 
-						return true;
-					}
+			//			return true;
+			//		}
 
-					return false;
+			//		return false;
 
-				case Stat.Dex:
-					if (from.RawDex < from.DexCap)
-					{
-						if (atTotalCap && from is PlayerMobile)
-						{
-							return CanLower(from, Stat.Str) || CanLower(from, Stat.Int);
-						}
+			//	case Stat.Dex:
+			//		if (from.RawDex < from.DexCap)
+			//		{
+			//			if (atTotalCap && from is PlayerMobile)
+			//			{
+			//				return CanLower(from, Stat.Str) || CanLower(from, Stat.Int);
+			//			}
 
-						return true;
-					}
+			//			return true;
+			//		}
 
-					return false;
+			//		return false;
 
-				case Stat.Int:
-					if (from.RawInt < from.IntCap)
-					{
-						if (atTotalCap && from is PlayerMobile)
-						{
-							return CanLower(from, Stat.Str) || CanLower(from, Stat.Dex);
-						}
+			//	case Stat.Int:
+			//		if (from.RawInt < from.IntCap)
+			//		{
+			//			if (atTotalCap && from is PlayerMobile)
+			//			{
+			//				return CanLower(from, Stat.Str) || CanLower(from, Stat.Dex);
+			//			}
 
-						return true;
-					}
+			//			return true;
+			//		}
 
-					return false;
-			}
+			//		return false;
+			//}
 
 			return false;
         }
 
         public static void IncreaseStat(Mobile from, Stat stat)
         {
-            bool atTotalCap = from.RawStatTotal >= from.StatCap;
+            //bool atTotalCap = from.RawStatTotal >= from.StatCap;
 
-            switch (stat)
-            {
-                case Stat.Str:
-                    {
-                        if (CanRaise(from, Stat.Str, atTotalCap))
-                        {
-                            if (atTotalCap)
-                            {
-                                if (CanLower(from, Stat.Dex) && (from.RawDex < from.RawInt || !CanLower(from, Stat.Int)))
-                                    --from.RawDex;
-                                else if (CanLower(from, Stat.Int))
-                                    --from.RawInt;
-                            }
+            //switch (stat)
+            //{
+            //    case Stat.Str:
+            //        {
+            //            if (CanRaise(from, Stat.Str, atTotalCap))
+            //            {
+            //                if (atTotalCap)
+            //                {
+            //                    if (CanLower(from, Stat.Dex) && (from.RawDex < from.RawInt || !CanLower(from, Stat.Int)))
+            //                        --from.RawDex;
+            //                    else if (CanLower(from, Stat.Int))
+            //                        --from.RawInt;
+            //                }
 
-                            ++from.RawStr;
+            //                ++from.RawStr;
 
-                            if (from is BaseCreature && ((BaseCreature)from).HitsMaxSeed > -1 && ((BaseCreature)from).HitsMaxSeed < from.StrCap)
-                            {
-                                ((BaseCreature)from).HitsMaxSeed++;
-                            }
+            //                if (from is BaseCreature && ((BaseCreature)from).HitsMaxSeed > -1 && ((BaseCreature)from).HitsMaxSeed < from.StrCap)
+            //                {
+            //                    ((BaseCreature)from).HitsMaxSeed++;
+            //                }
 
-                            if (Siege.SiegeShard && from is PlayerMobile)
-                            {
-                                Siege.IncreaseStat((PlayerMobile)from);
-                            }
-                        }
+            //                if (Siege.SiegeShard && from is PlayerMobile)
+            //                {
+            //                    Siege.IncreaseStat((PlayerMobile)from);
+            //                }
+            //            }
 
-                        break;
-                    }
-                case Stat.Dex:
-                    {
-                        if (CanRaise(from, Stat.Dex, atTotalCap))
-                        {
-                            if (atTotalCap)
-                            {
-                                if (CanLower(from, Stat.Str) && (from.RawStr < from.RawInt || !CanLower(from, Stat.Int)))
-                                    --from.RawStr;
-                                else if (CanLower(from, Stat.Int))
-                                    --from.RawInt;
-                            }
+            //            break;
+            //        }
+            //    case Stat.Dex:
+            //        {
+            //            if (CanRaise(from, Stat.Dex, atTotalCap))
+            //            {
+            //                if (atTotalCap)
+            //                {
+            //                    if (CanLower(from, Stat.Str) && (from.RawStr < from.RawInt || !CanLower(from, Stat.Int)))
+            //                        --from.RawStr;
+            //                    else if (CanLower(from, Stat.Int))
+            //                        --from.RawInt;
+            //                }
 
-                            ++from.RawDex;
+            //                ++from.RawDex;
 
-                            if (from is BaseCreature && ((BaseCreature)from).StamMaxSeed > -1 && ((BaseCreature)from).StamMaxSeed < from.DexCap)
-                            {
-                                ((BaseCreature)from).StamMaxSeed++;
-                            }
+            //                if (from is BaseCreature && ((BaseCreature)from).StamMaxSeed > -1 && ((BaseCreature)from).StamMaxSeed < from.DexCap)
+            //                {
+            //                    ((BaseCreature)from).StamMaxSeed++;
+            //                }
 
-                            if (Siege.SiegeShard && from is PlayerMobile)
-                            {
-                                Siege.IncreaseStat((PlayerMobile)from);
-                            }
-                        }
+            //                if (Siege.SiegeShard && from is PlayerMobile)
+            //                {
+            //                    Siege.IncreaseStat((PlayerMobile)from);
+            //                }
+            //            }
 
-                        break;
-                    }
-                case Stat.Int:
-                    {
-                        if (CanRaise(from, Stat.Int, atTotalCap))
-                        {
-                            if (atTotalCap)
-                            {
-                                if (CanLower(from, Stat.Str) && (from.RawStr < from.RawDex || !CanLower(from, Stat.Dex)))
-                                    --from.RawStr;
-                                else if (CanLower(from, Stat.Dex))
-                                    --from.RawDex;
-                            }
+            //            break;
+            //        }
+            //    case Stat.Int:
+            //        {
+            //            if (CanRaise(from, Stat.Int, atTotalCap))
+            //            {
+            //                if (atTotalCap)
+            //                {
+            //                    if (CanLower(from, Stat.Str) && (from.RawStr < from.RawDex || !CanLower(from, Stat.Dex)))
+            //                        --from.RawStr;
+            //                    else if (CanLower(from, Stat.Dex))
+            //                        --from.RawDex;
+            //                }
 
-                            ++from.RawInt;
+            //                ++from.RawInt;
 
-                            if (from is BaseCreature && ((BaseCreature)from).ManaMaxSeed > -1 && ((BaseCreature)from).ManaMaxSeed < from.IntCap)
-                            {
-                                ((BaseCreature)from).ManaMaxSeed++;
-                            }
+            //                if (from is BaseCreature && ((BaseCreature)from).ManaMaxSeed > -1 && ((BaseCreature)from).ManaMaxSeed < from.IntCap)
+            //                {
+            //                    ((BaseCreature)from).ManaMaxSeed++;
+            //                }
 
-                            if (Siege.SiegeShard && from is PlayerMobile)
-                            {
-                                Siege.IncreaseStat((PlayerMobile)from);
-                            }
-                        }
+            //                if (Siege.SiegeShard && from is PlayerMobile)
+            //                {
+            //                    Siege.IncreaseStat((PlayerMobile)from);
+            //                }
+            //            }
 
-                        break;
-                    }
-            }
+            //            break;
+            //        }
+            //}
         }
 
         public static void GainStat(Mobile from, Stat stat)
         {
-            if (!CheckStatTimer(from, stat))
-                return;
+            //if (!CheckStatTimer(from, stat))
+            //    return;
 
-            IncreaseStat(from, stat);
+            //IncreaseStat(from, stat);
         }
 
         public static bool CheckStatTimer(Mobile from, Stat stat)

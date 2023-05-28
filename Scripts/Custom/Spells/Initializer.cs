@@ -213,11 +213,11 @@ namespace Server.Spells
 
 			//Musique
             Register(670, typeof(DiversionSpell));
-            Register(671, typeof(CalmeToiSpell));
-            Register(672, typeof(DesorienterSpell));
-            Register(673, typeof(DefiSpell));
-            Register(674, typeof(DecrescendoManaiqueSpell));
-			Register(675, typeof(InspirationElementaireSpell));
+            Register(671, typeof(DesorienterSpell));
+			Register(672, typeof(InspirationElementaireSpell));
+            Register(673, typeof(CalmeToiSpell));
+			Register(674, typeof(DecrescendoManaiqueSpell));
+			Register(675, typeof(DefiSpell));
 			Register(676, typeof(AbsorbationSonoreSpell));
 			Register(677, typeof(ParfaiteAspirationSpell));
 			Register(678, typeof(RevelationDiscordanteSpell));

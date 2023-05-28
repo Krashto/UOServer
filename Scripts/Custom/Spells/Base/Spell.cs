@@ -366,12 +366,12 @@ namespace Server.Spells
 			bonus += (Caster.Skills[CastSkill].Value - 50) / 50;
 			bonus += (Caster.Skills[DamageSkill].Value - 50) / 75;
 
-			bonus += Caster.Int / 500;
+			bonus += Caster.Int / 500.0;
 
 			if (Caster is CustomPlayerMobile pm)
 			{
-				bonus += pm.Capacites.Magie / 25;
-				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) / 50;
+				bonus += pm.Capacites.Magie / 25.0;
+				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) / 50.0;
 			}
 
 			min *= bonus * scale;
