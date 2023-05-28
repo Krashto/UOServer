@@ -1043,6 +1043,8 @@ namespace Server.Mobiles
 
 
 		[CommandProperty(AccessLevel.GameMaster)]
+		public int MobLevel { get { return Level; } }
+
 		public virtual int Level => 0;
 
 		public virtual Biome Biome => Biome.Aucun;
