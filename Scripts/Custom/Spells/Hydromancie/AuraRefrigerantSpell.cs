@@ -54,7 +54,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					foreach (Mobile m in eable)
 					{
-						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
+						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m) && !m.Poisoned)
 							targets.Add(m);
 					}
 

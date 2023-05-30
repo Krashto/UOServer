@@ -35,7 +35,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Deactivate(Caster);
 			else if (CheckSequence())
 			{
-				var duration = GetDurationForSpell(5);
+				var duration = GetDurationForSpell(4);
 
 				Timer t = new InternalTimer(Caster, this, DateTime.Now + duration);
 				m_Timers[Caster] = t;
@@ -91,7 +91,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(m_Caster.Location, 2);
+					IPooledEnumerable eable = map.GetMobilesInRange(m_Caster.Location, 1);
 
 					foreach (Mobile m in eable)
 						if (m_Caster != m && SpellHelper.ValidIndirectTarget(m_Caster, m) && m_Caster.CanBeHarmful(m, false) && m_Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(m_Caster, m))
@@ -116,7 +116,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							Disturb(m);
 
-							double damage = m_Owner.GetNewAosDamage(m, 8, 2, 6, true);
+							double damage = m_Owner.GetNewAosDamage(m, 2, 1, 1, true);
 
 							MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(m.Direction), 3);
 

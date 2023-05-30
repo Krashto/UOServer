@@ -1,5 +1,3 @@
-using Server.Mobiles;
-using Server.Spells;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,22 +10,12 @@ namespace Server.Items
     /// </summary>
     public class Disarm : WeaponAbility
     {
-        public static readonly TimeSpan BlockEquipDuration = TimeSpan.FromSeconds(5.0);
+        public static readonly TimeSpan BlockEquipDuration = TimeSpan.FromSeconds(20.0);
 
         public override int BaseStamina => 20;
 
 		public override string Name => "Désarmer";
 		public override int Id => 5;
-
-		//public override bool RequiresSecondarySkill(Mobile from)
-  //      {
-  //          BaseWeapon weapon = from.Weapon as BaseWeapon;
-
-  //          if (weapon == null)
-  //              return false;
-
-  //          return weapon.Skill != SkillName.Wrestling;
-  //      }
 
         public override void OnHit(Mobile attacker, Mobile defender, int damage)
         {
@@ -40,13 +28,13 @@ namespace Server.Items
 				DoEffect(attacker, defender);
 		}
 
-		public static void DoEffect(Mobile attacker, Mobile defender)
+		public static bool DoEffect(Mobile attacker, Mobile defender)
 		{
 			if (IsImmune(defender))
 			{
 				attacker.SendLocalizedMessage(1111827); // Your opponent is gripping their weapon too tightly to be disarmed.
 				defender.SendLocalizedMessage(1111828); // You will not be caught off guard by another disarm attack for some time.
-				return;
+				return false;
 			}
 
 			Item toDisarm = defender.FindItemOnLayer(Layer.OneHanded);
@@ -59,12 +47,12 @@ namespace Server.Items
 			if (pack == null || (toDisarm != null && !toDisarm.Movable))
 			{
 				attacker.SendLocalizedMessage(1004001); // You cannot disarm your opponent.
-				return;
+				return false;
 			}
 			else if (toDisarm == null || toDisarm is BaseShield)
 			{
 				attacker.SendLocalizedMessage(1060849); // Your target is already unarmed!
-				return;
+				return false;
 			}
 
 			attacker.SendLocalizedMessage(1060092); // You disarm their weapon!
@@ -79,10 +67,12 @@ namespace Server.Items
 
 			BaseWeapon.BlockEquip(defender, BlockEquipDuration);
 
-			AddImmunity(defender, attacker.Weapon is Fists ? TimeSpan.FromSeconds(10) : TimeSpan.FromSeconds(15));
+			AddImmunity(defender, attacker.Weapon is Fists ? TimeSpan.FromSeconds(30) : TimeSpan.FromSeconds(40));
+
+			return true;
 		}
 
-        public static List<Mobile> _Immunity;
+		public static List<Mobile> _Immunity;
 
         public static bool IsImmune(Mobile m)
         {

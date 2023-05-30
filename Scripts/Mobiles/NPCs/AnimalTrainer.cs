@@ -60,7 +60,7 @@ namespace Server.Mobiles
                     list.Add(new ClaimAllEntry(this, from));
 
 				if (from is CustomPlayerMobile pm)
-				list.Add(new ClaimAllPetsEntry(pm));
+					list.Add(new ClaimAllPetsEntry(pm));
 			}
 
 			base.AddCustomContextEntries(from, list);

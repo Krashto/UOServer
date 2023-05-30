@@ -533,20 +533,20 @@ namespace Server.Mobiles
 			double chance = 0.80 * GetBagFilledRatio(this);
 
 			if (chance >= Utility.RandomDouble())
-				bonus -= 10;
+				bonus -= 5;
 
 			int ar = SkillHandlers.Hiding.GetArmorRating(this);
 
 			if (ar >= 90)
-				bonus -= 50;
+				bonus -= 25;
 			else if (ar >= 75)
-				bonus -= 40;
-			else if (ar >= 60)
-				bonus -= 30;
-			else if (ar >= 40)
 				bonus -= 20;
-			else if (ar >= 20)
+			else if (ar >= 60)
+				bonus -= 15;
+			else if (ar >= 40)
 				bonus -= 10;
+			else if (ar >= 20)
+				bonus -= 5;
 
 			return base.GetHideBonus() + bonus;
 		}

@@ -2,6 +2,7 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Items;
 using System;
+using Server.Targeting;
 
 namespace Server.Custom.Spells.NewSpells.Roublardise
 {
@@ -34,17 +35,52 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 			: base(caster, scroll, m_Info)
 		{
 		}
-
 		public override void OnCast()
 		{
-			if (CheckSequence())
+			Caster.Target = new InternalTarget(this);
+		}
+
+		public void Target(Mobile m)
+		{
+			if (!Caster.CanSee(m))
+				Caster.SendLocalizedMessage(500237); // Target can not be seen.
+			else if (CheckHSequence(m))
 			{
-				WeaponAbility.SetCurrentAbility(Caster, WeaponAbility.Disarm);
-				CustomUtility.ApplySimpleSpellEffect(Caster, "Main blessee", AptitudeColor.Roublardise);
-				Caster.SendMessage("Votre prochain coup désarmera votre cible.");
+				Disturb(m);
+
+				SpellHelper.Turn(Caster, m);
+				SpellHelper.Turn(m, Caster);
+
+				if (Disarm.DoEffect(Caster, m))
+				{
+					CustomUtility.ApplySimpleSpellEffect(Caster, "Main blessee", AptitudeColor.Roublardise, SpellEffectType.Bonus);
+					CustomUtility.ApplySimpleSpellEffect(m, "Main blessee", AptitudeColor.Roublardise, SpellEffectType.Malus);
+				}
 			}
 
 			FinishSequence();
+		}
+
+		private class InternalTarget : Target
+		{
+			private MainBlesseeSpell m_Owner;
+
+			public InternalTarget(MainBlesseeSpell owner)
+				: base(12, false, TargetFlags.Harmful)
+			{
+				m_Owner = owner;
+			}
+
+			protected override void OnTarget(Mobile from, object o)
+			{
+				if (o is Mobile)
+					m_Owner.Target((Mobile)o);
+			}
+
+			protected override void OnTargetFinish(Mobile from)
+			{
+				m_Owner.FinishSequence();
+			}
 		}
 	}
 }

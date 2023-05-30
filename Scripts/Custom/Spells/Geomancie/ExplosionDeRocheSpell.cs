@@ -49,6 +49,20 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 					eable.Free();
 				}
 
+				var scalar = 1.0;
+
+				if (AuraFortifianteSpell.IsActive(Caster))
+				{
+					scalar += 1.0;
+					AuraFortifianteSpell.Deactivate(Caster);
+				}
+
+				if (FortifieSpell.IsActive(Caster))
+				{
+					scalar += 1.0;
+					FortifieSpell.Deactivate(Caster);
+				}
+
 				if (targets.Count > 0)
 				{
 					for (var i = 0; i < targets.Count; ++i)
@@ -62,20 +76,6 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 						Disturb(m);
 
 						SpellHelper.CheckReflect((int)Circle, ref source, ref m);
-
-						var scalar = 1.0;
-
-						if (AuraFortifianteSpell.IsActive(Caster))
-						{
-							scalar += 1;
-							AuraFortifianteSpell.Deactivate(Caster);
-						}
-
-						if (FortifieSpell.IsActive(Caster))
-						{
-							scalar += 1;
-							FortifieSpell.Deactivate(Caster);
-						}
 
 						double damage = GetNewAosDamage(m, (int)(4 * scalar), (int)(1 * scalar), (int)(2 * scalar), false);
 

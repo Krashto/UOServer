@@ -418,6 +418,8 @@ namespace Server
 				m.Paralyzed = false;
 				m.CantWalk = false;
 
+				from.RevealingAction();
+
 				AvatarDuFroidSpell.Deactivate(m);
 			}
 

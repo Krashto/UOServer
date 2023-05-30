@@ -8,21 +8,19 @@ namespace Server.SkillHandlers
 {
     public class Hiding
     {
-
 		private static readonly int[,] m_ArmorTable =
 		{
             //				Gorget	Gloves	Helmet	Arms	Legs	Chest	Shield
-            /* Cloth	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
-            /* Leather	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
-            /* Studded	*/ {  0,      0,      0,     0,      0,      0,       0 },
-            /* Bone		*/ {  0,      0,      0,     0,      0,      0,       0 },
-            /* Spined	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
-            /* Horned	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
-            /* Barbed	*/ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
-            /* Ring		*/ {  0,	  5,	  0,	 10,	 15,	 25,	  0 },
-            /* Chain	*/ {  0,	  0,	  10,	 0,		 15,	 25,	  0 },
-            /* Plate	*/ {  5,	  5,	  10,	 10,	 15,	 25,	  0 },
-            /* Dragon	*/ {  0,	  5,	  10,	 10,	 15,	 25,	  0 }
+            /* Cloth	 */ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Leather	 */ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Studded	 */ {  0,     0,      0,     0,      0,      0,       0 },
+            /* Bone		 */ {  0,     0,      0,     0,      0,      0,       0 },
+            /* Ringmail	 */ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Chainmail */ {  0,     0,      10,    0,      15,     25,      0 },
+            /* Plate	 */ {  5,     5,      10,    10,     15,     25,      0 },
+            /* Dragon	 */ {  0,	  5,	  10,	 10,	 15,	 25,	  0 },
+            /* Wood		 */ {  0,	  0,	  0,	 0,		 0,		 0,		  0 },
+            /* Stone	 */ {  5,     5,      10,    10,     15,     25,      0 },
 		};
 
 		public static double HidingRequirement => 30;

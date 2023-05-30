@@ -1,4 +1,5 @@
 using Server.Engines.Craft;
+using Server.Mobiles;
 using Server.Network;
 using System;
 
@@ -160,7 +161,9 @@ namespace Server.Items
         {
             base.Serialize(writer);
 
-            writer.Write(8); // version
+            writer.Write(9); // version
+
+			writer.Write(CanDropWhenLocked);
 
             writer.Write(m_PlayerConstructed);
             writer.Write((int)m_Resource);
@@ -189,6 +192,11 @@ namespace Server.Items
 
             switch (version)
             {
+				case 9:
+					{
+						CanDropWhenLocked = reader.ReadBool();
+						goto case 8;
+					}
                 case 8:
                     {
                         m_PlayerConstructed = reader.ReadBool();
@@ -281,9 +289,14 @@ namespace Server.Items
             return !m_Locked && base.CheckContentDisplay(from);
         }
 
-        public override bool TryDropItem(Mobile from, Item dropped, bool sendFullMessage)
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool CanDropWhenLocked { get; set; }
+
+		public override bool IsDecoContainer => !Movable && !IsLockedDown && !IsSecure && Parent == null && !CanDropWhenLocked;
+
+		public override bool TryDropItem(Mobile from, Item dropped, bool sendFullMessage)
         {
-            if (from.AccessLevel < AccessLevel.GameMaster && m_Locked)
+            if (from.AccessLevel < AccessLevel.GameMaster && m_Locked && !CanDropWhenLocked)
             {
                 from.SendLocalizedMessage(501747); // It appears to be locked.
                 return false;
@@ -305,7 +318,7 @@ namespace Server.Items
                 return base.OnDragDropInto(from, item, p);
             }
 
-            if (/*from.AccessLevel < AccessLevel.GameMaster && */m_Locked)
+            if (from.AccessLevel < AccessLevel.GameMaster && m_Locked && !CanDropWhenLocked)
             {
                 from.SendLocalizedMessage(501747); // It appears to be locked.
                 return false;
@@ -320,9 +333,7 @@ namespace Server.Items
                 return false;
 
             if (this is SecretChest)
-            {
                 return true;
-            }
 
             if (item != this && from.AccessLevel < AccessLevel.GameMaster && m_Locked)
                 return false;

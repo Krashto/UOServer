@@ -2,6 +2,8 @@ using System;
 using Server.Targeting;
 using Server.Custom.Aptitudes;
 using Server.Spells;
+using Server.Mobiles;
+using Server.Network;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
@@ -34,6 +36,18 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		{
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
+			else if (m.IsDeadBondedPet)
+			{
+				Caster.SendLocalizedMessage(1060177); // You cannot heal a creature that is already dead!
+			}
+			else if (m is BaseCreature && ((BaseCreature)m).IsAnimatedDead)
+			{
+				Caster.SendLocalizedMessage(1061654); // You cannot heal that which is not alive.
+			}
+			else if (m.Poisoned)
+			{
+				Caster.LocalOverheadMessage(MessageType.Regular, 0x22, (Caster == m) ? 1005000 : 1010398);
+			}
 			else if (CheckSequence())
 			{
 				SpellHelper.Turn(Caster, m);
