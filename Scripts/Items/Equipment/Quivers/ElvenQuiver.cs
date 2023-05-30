@@ -1,3 +1,5 @@
+using Server.Mobiles.MannequinProperty;
+
 namespace Server.Items
 {
     [Flipable(0x2FB7, 0x3171)]
@@ -11,7 +13,9 @@ namespace Server.Items
         {
             WeightReduction = 30;
 			Name = "Petit Carquois";
-        }
+		
+
+		}
 
         public ElvenQuiver(Serial serial)
             : base(serial)

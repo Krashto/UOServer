@@ -10,7 +10,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 	public class AuraRefrigeranteSpell : Spell
 	{
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura refregirante", "[Aura refregirante]",
+				"Aura refrigerante", "[Aura refrigerante]",
 				SpellCircle.Seventh,
 				209,
 				9022,

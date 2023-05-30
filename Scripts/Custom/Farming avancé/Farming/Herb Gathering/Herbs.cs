@@ -497,10 +497,12 @@ namespace Server.Items
 		public Patchouli() : this( 1 ) { }
 
 		[Constructable]
-		public Patchouli( int amount ) : base( amount, 0x18E4 )
+		public Patchouli( int amount ) : base( amount, 0x0F88)
 		{
             Name = "Patchouli";
-            Hue = 0x597;
+            Hue = 0x562;
+			Stackable = true;
+			
 		}
 
 		public Patchouli( Serial serial ) : base( serial ) { }

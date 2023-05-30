@@ -25,11 +25,11 @@ namespace Server.Items
 
 			if (amount != 1)
 			{
-				Name = "Pièces d'Argents";
+				Name = "Pièces en argent";
 			}
 			else
 			{
-				Name = "Pièce d'Argent";
+				Name = "Pièces en argent";
 			}
 
 			

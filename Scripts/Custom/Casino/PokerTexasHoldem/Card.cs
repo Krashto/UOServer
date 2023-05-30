@@ -13,7 +13,7 @@ namespace Server.Poker
 		public Suit Suit { get { return m_Suit; } }
 		public Rank Rank { get { return m_Rank; } }
 
-		public string Name { get { return String.Format( "{0} of {1}", m_Rank, m_Suit ).ToLower(); } }
+		public string Name { get { return String.Format( "{0} de {1}", m_Rank, m_Suit ).ToLower(); } }
 		public string RankString { get { return m_Rank.ToString().ToLower(); } }
 
 		public Card( Suit suit, Rank rank )
@@ -30,10 +30,10 @@ namespace Server.Poker
 			{
 				switch ( m_Rank )
 				{
-					case Rank.Jack: return "J";
-					case Rank.Queen: return "Q";
-					case Rank.King: return "K";
-					case Rank.Ace: return "A";
+					case Rank.Valet: return "J";
+					case Rank.Reine: return "Q";
+					case Rank.Roi: return "K";
+					case Rank.As: return "A";
 				}
 			}
 			return "?";
@@ -59,7 +59,7 @@ namespace Server.Poker
 
 		public override string ToString()
 		{
-			return String.Format( "{0} of {1}", m_Rank, m_Suit );
+			return String.Format( "{0} de {1}", m_Rank, m_Suit );
 		}
 
 		#region IComparable Members

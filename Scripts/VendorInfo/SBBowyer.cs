@@ -27,9 +27,9 @@ namespace Server.Mobiles
         {
             public InternalSellInfo()
             {
-                Add(typeof(FletcherTools), 1);
-				Add(typeof(Arrow), 1);
-				Add(typeof(Bolt), 1);
+                Add(typeof(FletcherTools), 2);
+				Add(typeof(Arrow), 2);
+				Add(typeof(Bolt), 2);
 			}
         }
     }

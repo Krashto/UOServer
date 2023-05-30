@@ -101,7 +101,7 @@ namespace Server.SkillHandlers
 				{
 					int armorRating = GetArmorRating(m);
 
-					if (armorRating >= 35) //I have a hunch '42' was chosen cause someone's a fan of DNA
+					if (armorRating >= 10) //I have a hunch '42' was chosen cause someone's a fan of DNA
 					{
 						m.SendLocalizedMessage(502727); // You could not hope to move quietly wearing this much armor.
 						m.RevealingAction();

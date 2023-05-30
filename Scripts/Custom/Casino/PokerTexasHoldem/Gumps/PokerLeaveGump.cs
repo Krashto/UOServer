@@ -22,15 +22,16 @@ namespace Server.Poker
 			this.AddImageTiled( 18, 15, 350, 180, 9274 );
 			//this.AddAlphaRegion( 23, 20, 340, 170 );
             this.AddBackground(0, 0, 390, 200, 9270);
-			this.AddLabel( 133, 25, 28, @"Leave Poker Table" );
+			this.AddLabel( 133, 25, 37, @"Quitter la table de poker" );
 			this.AddImageTiled( 42, 47, 301, 3, 96 );
-			this.AddLabel( 60, 62, 68, @"You are about to leave a game of Poker." );
-			this.AddImage( 33, 38, 95, 68 );
-			this.AddImage( 342, 38, 97, 68 );
-			this.AddLabel( 43, 80, 68, @"Are you sure you want to cash-out and leave the" );
-			this.AddLabel( 48, 98, 68, @"table? You will auto fold, and any current bets" );
-			this.AddLabel( 40, 116, 68, @"will be lost. Winnings will be deposited in your bank." );
-			this.AddButton( 163, 155, 247, 248, (int)Handlers.btnOkay, GumpButtonType.Reply, 0 );
+			this.AddLabel( 40, 62, 41, @"Vous êtes sur le point de quitter un jeu de poker." );
+			this.AddImage( 33, 38, 95, 41 );
+			this.AddImage( 342, 38, 97, 41 );
+			this.AddLabel( 23, 80, 41, @"Êtes-vous sûr que vous voulez laisser votre or " );
+			this.AddLabel( 30, 98, 41, @"et quitter la table? Vous vous couchez et tous les" );
+			this.AddLabel( 40, 116, 41, @"paris en cours seront perdus. Les gains seront " );
+            this.AddLabel( 60, 136, 41, @"déposés dans votre banque." );
+			this.AddButton( 163, 165, 247, 248, (int)Handlers.btnOkay, GumpButtonType.Reply, 0 );
 		}
 
 		public enum Handlers
@@ -61,10 +62,10 @@ namespace Server.Poker
 
 
 					if ( player.RequestLeave )
-						from.SendMessage( 0x22, "You have already submitted a request to leave." );
+						from.SendMessage( 0x22, "Vous avez déjà soumis une demande de quitter." );
 					else
 					{
-						from.SendMessage( 0x22, "You have submitted a request to leave the table." );
+						from.SendMessage( 0x22, "Vous avez présenté une demande de quitter la table." );
 						player.RequestLeave = true;
 					}
 				}

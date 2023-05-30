@@ -1,11 +1,9 @@
 using System;
-using System.Collections.Generic;
-
-using Server;
-using Server.Commands;
-using Server.Gumps;
 using Server.Items;
 using Server.Mobiles;
+using Server.Commands;
+using Server.CustomScripts;
+using System.Collections.Generic;
 
 namespace Server.Poker
 {
@@ -13,7 +11,7 @@ namespace Server.Poker
 	{
 		public static void Initialize()
 		{
-			CommandSystem.Register( "AddPokerSeat", AccessLevel.Administrator, new CommandEventHandler( AddPokerSeat_OnCommand ) );
+			CommandSystem.Register( "AddPokerSeat", AccessLevel.Seer, new CommandEventHandler( AddPokerSeat_OnCommand ) );
 			CommandSystem.Register( "PokerKick", AccessLevel.Seer, new CommandEventHandler( PokerKick_OnCommand ) );
 
 			EventSink.Disconnected += new DisconnectedEventHandler( EventSink_Disconnected );
@@ -38,9 +36,9 @@ namespace Server.Poker
 
 		[CommandProperty( AccessLevel.Seer )]
 		public bool TournamentMode { get { return m_TournamentMode; } set { m_TournamentMode = value; } }
-		[CommandProperty( AccessLevel.Administrator )]
+		[CommandProperty( AccessLevel.Seer)]
 		public bool ClearSeats { get { return false; } set { m_Seats.Clear(); } }
-		[CommandProperty( AccessLevel.Administrator )]
+		[CommandProperty( AccessLevel.Seer)]
 		public int RakeMax { get { return m_RakeMax; } set { m_RakeMax = value; } }
 		[CommandProperty( AccessLevel.Seer )]
 		public int MinBuyIn { get { return m_MinBuyIn; } set { m_MinBuyIn = value; } }
@@ -50,11 +48,11 @@ namespace Server.Poker
 		public int SmallBlind { get { return m_SmallBlind; } set { m_SmallBlind = value; } }
 		[CommandProperty( AccessLevel.Seer )]
 		public int BigBlind { get { return m_BigBlind; } set { m_BigBlind = value; } }
-		[CommandProperty( AccessLevel.Administrator )]
+		[CommandProperty( AccessLevel.Seer )]
 		public Point3D ExitLocation { get { return m_ExitLocation; } set { m_ExitLocation = value; } }
-		[CommandProperty( AccessLevel.Administrator )]
+		[CommandProperty( AccessLevel.Seer )]
 		public Map ExitMap { get { return m_ExitMap; } set { m_ExitMap = value; } }
-		[CommandProperty( AccessLevel.Administrator )]
+		[CommandProperty( AccessLevel.Seer )]
 		public double Rake
 		{
 			get { return m_Rake; }
@@ -94,7 +92,7 @@ namespace Server.Poker
 
 				for ( int i = 0; i < toRemove.Count; ++i )
 				{
-					toRemove[i].Mobile.SendMessage( 0x22, "The poker dealer has been set to inactive by a game master, and you are now being removed from the poker game and being refunded the money that you currently have." );
+                    toRemove[i].Mobile.SendMessage(HueManager.GetHue(HueManagerList.Red), "Le croupier de poker a été mis à l'état inactif par un maître de jeu, et vous êtes maintenant retirés du jeu de poker et être remboursé.");
 					m_Game.RemovePlayer( toRemove[i] );
 				}
 
@@ -115,10 +113,10 @@ namespace Server.Poker
 		public PokerDealer( int maxPlayers )
 		{
 			Blessed = true;
-			Frozen = true;
+			CantWalk = true;
 			InitStats( 100, 100, 100 );
 
-			Title = "the poker dealer";
+			Title = "Croupier de poker";
 			Hue = Utility.RandomSkinHue();
 			NameHue = 0x35;
 
@@ -144,17 +142,17 @@ namespace Server.Poker
 
 		private void Dress()
 		{
-			AddItem( new FancyShirt( 0 ) );
+			AddItem( new ChemiseDistinguee( 0 ) );
 
 			Item pants = new LongPants();
 			pants.Hue = 1;
 			AddItem( pants );
 
-			Item shoes = new Shoes();
+			Item shoes = new Souliers();
 			shoes.Hue = 1;
 			AddItem( shoes );
 
-			Item sash = new BodySash();
+			Item sash = new CeintureTorse();
 			sash.Hue = 1;
 			AddItem( sash );
 
@@ -178,7 +176,7 @@ namespace Server.Poker
 					if ( m != null && m.Mobile != null && m.Mobile.BankBox != null )
 					{
 						m.Mobile.BankBox.DropItem( new BankCheck( award ) );
-						World.Broadcast( 1161, true, "{0} has won the poker jackpot of {1} gold with {2}", m.Mobile.Name, award.ToString( "#,###" ), HandRanker.RankString( m_JackpotWinners.Hand ) );
+                        World.Broadcast(1161, true, "{0} a remporté le jackpot de poker. {1} pièces d'or avec {2}", m.Mobile.Name, award.ToString("#,###"), HandRanker.RankString(m_JackpotWinners.Hand));
 					}
 				}
 
@@ -190,20 +188,20 @@ namespace Server.Poker
 		public override void OnDoubleClick( Mobile from )
 		{
 			if ( !m_Active )
-				from.SendMessage( 0x9A, "This table is inactive" );
+				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
 			else if ( !InRange( from.Location, 8 ) )
-				from.PrivateOverheadMessage( Server.Network.MessageType.Regular, 0x22, true, "I am too far away to do that", from.NetState );
+				from.PrivateOverheadMessage( Server.Network.MessageType.Regular, HueManager.GetHue(HueManagerList.Red), true, "I am too far away to do that", from.NetState );
 			else if ( m_MinBuyIn == 0 || m_MaxBuyIn == 0 )
-				from.SendMessage( 0x9A, "This table is inactive" );
+				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
 			else if ( m_MinBuyIn > m_MaxBuyIn )
-				from.SendMessage( 0x9A, "This table is inactive" );
+				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
 			else if ( m_Seats.Count < m_MaxPlayers )
-				from.SendMessage( 0x9A, "This table is inactive" );
+				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
 			else if ( m_Game.GetIndexFor( from ) != -1 )
 				return; //TODO: Grab more chips from the player's bankbox
 			else if ( m_Game.Players.Count >= m_MaxPlayers )
 			{
-				from.SendMessage( 0x22, "This table is full" );
+				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est pleine." );
 				base.OnDoubleClick( from );
 			}
 			else if ( m_Game.Players.Count < m_MaxPlayers )
@@ -224,7 +222,7 @@ namespace Server.Poker
 
 			for ( int i = 0; i < toRemove.Count; ++i )
 			{
-				toRemove[i].Mobile.SendMessage( 0x22, "The poker dealer has been deleted, and you are now being removed from the poker game and being refunded the money that you currently have." );
+                toRemove[i].Mobile.SendMessage(HueManager.GetHue(HueManagerList.Red), "Le croupier de poker a été supprimé, et vous sont maintenant retirés du jeu de poker et être remboursé.");
 				m_Game.RemovePlayer( toRemove[i] );
 			}
 
@@ -240,9 +238,9 @@ namespace Server.Poker
 
 			foreach ( Mobile m in from.GetMobilesInRange( 0 ) )
 			{
-				if ( m is PlayerMobile )
+				if ( m is CustomPlayerMobile)
 				{
-					PlayerMobile pm = (PlayerMobile)m;
+                    CustomPlayerMobile pm = (CustomPlayerMobile)m;
 
 					PokerGame game = pm.PokerGame;
 
@@ -253,14 +251,14 @@ namespace Server.Poker
 						if ( player != null )
 						{
 							game.RemovePlayer( player );
-							from.SendMessage( "They have been removed from the poker table" );
+                            from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Ils ont été retirés de la table de poker.");
 							return;
 						}
 					}
 				}
 			}
 
-			from.SendMessage( "No one found to kick from a poker table. Make sure you are standing on top of them." );
+            from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Personne n'a été trouvé à cette table de poker. Assurez-vous que vous êtes sur la case du croupier.");
 		}
 
 		static void EventSink_Disconnected( DisconnectedEventArgs e )
@@ -270,9 +268,9 @@ namespace Server.Poker
 			if ( from == null )
 				return;
 
-			if ( from is PlayerMobile )
+			if ( from is CustomPlayerMobile)
 			{
-				PlayerMobile pm = (PlayerMobile)from;
+                CustomPlayerMobile pm = (CustomPlayerMobile)from;
 
 				PokerGame game = pm.PokerGame;
 
@@ -314,13 +312,13 @@ namespace Server.Poker
 
 					if ( ((PokerDealer)m).AddPokerSeat( from, seat ) != -1 )
 					{
-						from.SendMessage( 0x22, "A new seat was successfully created." );
+                        from.SendMessage(HueManager.GetHue(HueManagerList.Green), "Un nouveau siège a été créé avec succès.");
 						success = true;
 						break;
 					}
 					else
 					{
-						from.SendMessage( 0x22, "There is no more room at that table for another seat. Try increasing the value of MaxPlayers first." );
+                        from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Il n'y a pas plus de place à la table pour un autre siège. Essayez d'augmenter la valeur de MaxPlayers.");
 						success = true;
 						break;
 					}
@@ -328,7 +326,7 @@ namespace Server.Poker
 			}
 
 			if ( !success )
-				from.SendMessage( 0x22, "No poker dealers were found in range. (Try standing on top of the dealer)" );
+                from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Aucun croupier de poker a été trouvé. (Placez-vous sur la case du croupier pour ajouter un siège.)");
 		}
 
 		public int AddPokerSeat( Mobile from, Point3D seat )

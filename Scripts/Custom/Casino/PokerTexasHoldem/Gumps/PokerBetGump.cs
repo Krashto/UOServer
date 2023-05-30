@@ -45,15 +45,15 @@ namespace Server.Poker
 			this.AddRadio( 14, 70, 9727, 9730, false, (int)Buttons.AllIn );
 			this.AddRadio( 14, 100, 9727, 9730, false, ( canCall ? (int)Buttons.Raise : (int)Buttons.Bet ) );
 
-			this.AddHtml( 45, 14, 60, 45, Color( canCall ? "Call" : "Check", COLOR_WHITE ), false, false );
+			this.AddHtml( 45, 14, 60, 45, Color( canCall ? "Suivre" : "Checker", COLOR_WHITE ), false, false );
 
 			if ( canCall )
-				this.AddHtml( 75, 14, 60, 22, Color( Center( ( m_Game.CurrentBet - player.RoundBet >= player.Gold ? "all-in" : String.Format( "{0}", ( m_Game.CurrentBet - m_Player.RoundBet ).ToString( "#,###" ) ) ) ), COLOR_GREEN ), false, false );
+				this.AddHtml( 75, 14, 60, 22, Color( Center( ( m_Game.CurrentBet - player.RoundBet >= player.Gold ? "Tapis" : String.Format( "{0}", ( m_Game.CurrentBet - m_Player.RoundBet ).ToString( "#,###" ) ) ) ), COLOR_GREEN ), false, false );
 
-			this.AddHtml( 45, 44, 60, 45, Color( "Fold", COLOR_WHITE ), false, false );
-			this.AddHtml( 45, 74, 60, 45, Color( "All In", COLOR_WHITE ), false, false );
-			this.AddHtml( 45, 104, 60, 45, Color( canCall ? "Raise" : "Bet", COLOR_WHITE ), false, false );
-			this.AddTextEntry( 85, 104, 60, 22, 455, (int)Buttons.txtBet, game.Dealer.BigBlind.ToString() );
+			this.AddHtml( 45, 44, 60, 45, Color( "Coucher", COLOR_WHITE ), false, false );
+			this.AddHtml( 45, 74, 60, 45, Color( "Tapis", COLOR_WHITE ), false, false );
+			this.AddHtml( 45, 104, 60, 45, Color( canCall ? "Relancer" : "Miser", COLOR_WHITE ), false, false );
+			this.AddTextEntry( 95, 104, 60, 22, 455, (int)Buttons.txtBet, game.Dealer.BigBlind.ToString() );
 
 			this.AddButton( 95, 132, 247, 248, (int)Buttons.Okay, GumpButtonType.Reply, 0 );
 		}
@@ -125,14 +125,14 @@ namespace Server.Poker
 
 					if ( bet < m_Game.Dealer.BigBlind )
 					{
-						from.SendMessage( 0x22, "Your must bet at least {0}gp.", m_Game.BigBlind );
+						from.SendMessage( 0x22, "Vous devez miser au moins {0} pièces d'or.", m_Game.BigBlind );
 
 						from.CloseGump( typeof( PokerBetGump ) );
 						from.SendGump( new PokerBetGump( m_Game, m_Player, m_CanCall ) );
 					}
 					else if ( bet > m_Player.Gold )
 					{
-						from.SendMessage( 0x22, "You cannot bet more gold than you currently have!" );
+						from.SendMessage( 0x22, "Vous ne pouvez pas parier plus d'or que vous avez actuellement!" );
 
 						from.CloseGump( typeof( PokerBetGump ) );
 						from.SendGump( new PokerBetGump( m_Game, m_Player, m_CanCall ) );
@@ -157,14 +157,14 @@ namespace Server.Poker
 
 					if ( bet < 100 )
 					{
-						from.SendMessage( 0x22, "If you are going to raise a bet, it needs to be by at least 100gp." );
+						from.SendMessage( 0x22, "Si vous voulez relancer, vous devez ajouter au moins 100 pièces d'or." );
 
 						from.CloseGump( typeof( PokerBetGump ) );
 						from.SendGump( new PokerBetGump( m_Game, m_Player, m_CanCall ) );
 					}
 					else if ( bet + m_Game.CurrentBet > m_Player.Gold )
 					{
-						from.SendMessage( 0x22, "You do not have enough gold to raise by that much." );
+                        from.SendMessage(0x22, "Vous ne disposez pas assez d'or pour relancer d'autant.");
 
 						from.CloseGump( typeof( PokerBetGump ) );
 						from.SendGump( new PokerBetGump( m_Game, m_Player, m_CanCall ) );

@@ -3,6 +3,7 @@ using System.Text;
 
 using Server.Poker;
 using Server.Network;
+using Server.CustomScripts;
 
 namespace Server.Items
 {
@@ -14,7 +15,7 @@ namespace Server.Items
 			: base( 0x1E5E )
 		{
 			Movable = false;
-			Name = "Poker Jackpot";
+            Name = "Jackpot du Poker ";
 			Hue = 1161;
 		}
 
@@ -27,7 +28,7 @@ namespace Server.Items
 				{
 					if ( PokerDealer.JackpotWinners.Winners.Count > 1 )
 					{
-						StringBuilder sb = new StringBuilder( String.Format( "The jackpot is {0} gold. ", PokerDealer.Jackpot.ToString( "#,###" ) ) );
+						StringBuilder sb = new StringBuilder( String.Format( "Le jackpot est de {0} pièces d'or. ", PokerDealer.Jackpot.ToString( "#,###" ) ) );
 
 						sb.Append( "It is currently split by: " );
 
@@ -39,29 +40,29 @@ namespace Server.Items
 								sb.Append( "(-null-)" );
 
 							if ( PokerDealer.JackpotWinners.Winners.Count == 2 && i == 0 )
-								sb.Append( " and " );
+								sb.Append( " et " );
 							else if ( i != PokerDealer.JackpotWinners.Winners.Count - 2 )
 								sb.Append( ", " );
 							else
-								sb.Append( " and " );
+								sb.Append( " et " );
 						}
 
-						sb.Append( String.Format( " leading with {0}", HandRanker.RankString( PokerDealer.JackpotWinners.Hand ) ) );
+						sb.Append( String.Format( " mène avec {0}", HandRanker.RankString( PokerDealer.JackpotWinners.Hand ) ) );
 
 						DisplayMessage( from, sb.ToString() );
 						return;
 					}
 					else if ( PokerDealer.JackpotWinners.Winners[0] != null && PokerDealer.JackpotWinners.Winners[0].Mobile != null )
 					{
-						DisplayMessage( from, String.Format( "The jackpot is {0} gold. {1} leads with {2}", PokerDealer.Jackpot.ToString( "#,###" ), PokerDealer.JackpotWinners.Winners[0].Mobile.Name, HandRanker.RankString( PokerDealer.JackpotWinners.Hand ) ) );
+						DisplayMessage( from, String.Format( "Le jackpot est de {0} pièces d'or. {1} mène avec {2}", PokerDealer.Jackpot.ToString( "#,###" ), PokerDealer.JackpotWinners.Winners[0].Mobile.Name, HandRanker.RankString( PokerDealer.JackpotWinners.Hand ) ) );
 						return;
 					}
 				}
 
-				DisplayMessage( from, "Currently No Jackpot" );
+				DisplayMessage( from, "Aucun jackpot" );
 			}
 			else
-				from.SendMessage( 0x22, "That is too far away." );
+				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Ceci est trop loin." );
 		}
 
 		private void DisplayMessage( Mobile from, string text )
