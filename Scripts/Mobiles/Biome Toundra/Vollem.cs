@@ -3,16 +3,16 @@ using System;
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'un Vollem")]
-    public class Vollem : BaseCreature, IRepairableMobile
+    public class Vollem : BaseCreature
     {
 
-		public virtual Type RepairResource => IsMechanical ? typeof(Items.IronIngot) : typeof(Items.Bandage);
-        public virtual bool IsMechanical => true;
+		//public virtual Type RepairResource => IsMechanical ? typeof(Items.IronIngot) : typeof(Items.Bandage);
+  //      public virtual bool IsMechanical => true;
 
         [Constructable]
 		public Vollem() : base(AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4)
 		{
-            Name = " Vollem";
+            Name = "Vollem";
             Body = 0x125;
 
             SetStr(496, 524);
@@ -50,9 +50,9 @@ namespace Server.Mobiles
 		public override Biome Biome => Biome.Toundra;
 		public override bool IsScaredOfScaryThings => false;
         public override bool IsScaryToPets => true;
-        public override bool IsBondable => false;
-        public override bool DeleteOnRelease => true;
-        public override bool AutoDispel => !Controlled;
+        public override bool IsBondable => true;
+        public override bool DeleteOnRelease => false;
+        //public override bool AutoDispel => !Controlled;
         public override bool BleedImmune => true;
         public override bool BardImmune => Controlled;
         public override Poison PoisonImmune => Poison.Lethal;
@@ -95,32 +95,32 @@ namespace Server.Mobiles
             return base.GetHurtSound();
         }
 
-        public override void OnDamage(int amount, Mobile from, bool willKill)
-        {
-            if (IsMechanical && (Controlled || Summoned))
-            {
-                Mobile master = (ControlMaster);
+        //public override void OnDamage(int amount, Mobile from, bool willKill)
+        //{
+        //    if (IsMechanical && (Controlled || Summoned))
+        //    {
+        //        Mobile master = (ControlMaster);
 
-                if (master == null)
-                    master = SummonMaster;
+        //        if (master == null)
+        //            master = SummonMaster;
 
-                if (master != null && master.Player && master.Map == Map && master.InRange(Location, 20))
-                {
-                    if (master.Mana >= amount)
-                    {
-                        master.Mana -= amount;
-                    }
-                    else
-                    {
-                        amount -= master.Mana;
-                        master.Mana = 0;
-                        master.Damage(amount);
-                    }
-                }
-            }
+        //        if (master != null && master.Player && master.Map == Map && master.InRange(Location, 20))
+        //        {
+        //            if (master.Mana >= amount)
+        //            {
+        //                master.Mana -= amount;
+        //            }
+        //            else
+        //            {
+        //                amount -= master.Mana;
+        //                master.Mana = 0;
+        //                master.Damage(amount);
+        //            }
+        //        }
+        //    }
 
-            base.OnDamage(amount, from, willKill);
-        }
+        //    base.OnDamage(amount, from, willKill);
+        //}
 
         public Vollem(Serial serial)
             : base(serial)

@@ -4260,6 +4260,8 @@ namespace Server.Items
 			if (QuestItem)
 				AddQuestItemProperty(list);
 
+			list.Add("Ressource: " + CraftResources.GetDescription(Resource));
+
 			#region Mondain's Legacy Sets
 			if (IsSetItem)
             {

@@ -1,3 +1,4 @@
+using Capt.MiniGames;
 using Server.Items;
 using System.Collections.Generic;
 
@@ -19,6 +20,7 @@ namespace Server.Mobiles
 
 				Add(new GenericBuyInfo(typeof(RecycleBag), 50, 20, 0xE76, 0));
 				Add(new GenericBuyInfo(typeof(Recycleur), 50, 20, 0x12B3, 0));
+				Add(new GenericBuyInfo(typeof(Boline), 50, 20, 0xEC5, 1940));
 				Add(new GenericBuyInfo(typeof(BedrollTent), 5000, 20, 0xA57, 0));
 
 				Add(new GenericBuyInfo(typeof(Arrow), 5, 999, 0xF3F, 0, true));
@@ -82,9 +84,11 @@ namespace Server.Mobiles
                 Add(new GenericBuyInfo("1016450", typeof(Chessboard), 2, 20, 0xFA6, 0));
                 Add(new GenericBuyInfo("1016449", typeof(CheckerBoard), 2, 20, 0xFA6, 0));
                 Add(new GenericBuyInfo(typeof(Backgammon), 2, 20, 0xE1C, 0));
-                Add(new GenericBuyInfo(typeof(Engines.Mahjong.MahjongGame), 6, 20, 0xFAA, 0));
+				Add(new GenericBuyInfo(typeof(JeuTarot), 2, 20, 0x0E15, 0));
+				Add(new GenericBuyInfo(typeof(Engines.Mahjong.MahjongGame), 6, 20, 0xFAA, 0));
                 Add(new GenericBuyInfo(typeof(Dices), 2, 20, 0xFA7, 0));
-                Add(new GenericBuyInfo(typeof(SmallBagBall), 3, 20, 0x2256, 0));
+				Add(new GenericBuyInfo(typeof(YahtzeeDice), 2, 20, 0xFA7, 0));
+				Add(new GenericBuyInfo(typeof(SmallBagBall), 3, 20, 0x2256, 0));
                 Add(new GenericBuyInfo(typeof(LargeBagBall), 3, 20, 0x2257, 0));
            //     Add(new GenericBuyInfo("1079931", typeof(SalvageBag), 1255, 20, 0xE76, Utility.RandomBlueHue()));
            //     Add(new GenericBuyInfo("1114770", typeof(SkinTingeingTincture), 1255, 20, 0xEFF, 90));

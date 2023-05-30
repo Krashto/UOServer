@@ -137,6 +137,8 @@ namespace Server.Items
         {
             base.AddNameProperty(list);
 
+
+
             if (!string.IsNullOrEmpty(EngravedText))
             {
                 list.Add(1072305, Utility.FixHtml(EngravedText)); // Engraved: ~1_INSCRIPTION~
@@ -1615,7 +1617,7 @@ namespace Server.Items
         }
     }
 
-    [Flipable(0xA0D8, 0xA0D9)]
+    [Flipable(0xA40E, 0xA40E)]
     public class HotDog : Food
     {
         public override int LabelNumber => 1125201;  // hot dog
@@ -1628,9 +1630,10 @@ namespace Server.Items
 
         [Constructable]
         public HotDog(int amount)
-            : base(amount, 0xA0D8)
+            : base(amount, 0xA40E)
         {
             FillFactor = 2;
+			Name = "Hot Dog";
         }
 
         public HotDog(Serial serial)

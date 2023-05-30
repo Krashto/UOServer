@@ -47,7 +47,7 @@ namespace Server.Items
 
     public class VollemHeld : Vollem
     {
-        public override bool IsMechanical => false;
+        //public override bool IsMechanical => false;
 
         [Constructable]
         public VollemHeld()

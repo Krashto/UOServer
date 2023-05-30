@@ -147,10 +147,10 @@ namespace Server.Engines.Craft
 			#endregion
 
 			#region Ingrédients humides
-			index = AddCraft(typeof(CocoaButter), "Ingrédients humides", "Beurre de cacao", 0.0, 50.0, typeof(CocoaPulp), 1080530, 1, 1044253);
+			index = AddCraft(typeof(CocoaButter), "Ingrédients humides", "Beurre de cacao", 0.0, 50.0, typeof(BagOfCocoa), 1080530, 1, 1044253);
 			SetItemHue(index, 0x457);
 			SetNeedOven(index, true);
-			index = AddCraft(typeof(CocoaLiquor), "Ingrédients humides", "Liqueur de cacao", 0.0, 50.0, typeof(CocoaPulp), 1080530, 1, 1044253);
+			index = AddCraft(typeof(CocoaLiquor), "Ingrédients humides", "Liqueur de cacao", 0.0, 50.0, typeof(BagOfCocoa), 1080530, 1, 1044253);
 			AddRes(index, typeof(EmptyPewterBowl), 1025629, 1, 1044253);
 			SetItemHue(index, 0x46A);
 			SetNeedOven(index, true);

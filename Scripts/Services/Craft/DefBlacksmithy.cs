@@ -270,7 +270,14 @@ namespace Server.Engines.Craft
 			{
 				return 1044155; // You create an exceptional quality item.
 			}
-
+			if (quality == 3)
+			{
+				from.SendMessage("Vous créez un item de qualité Épique."); ; // You create an epic quality item.
+			}
+			if (quality == 4)
+			{
+				from.SendMessage("Vous créez un item de qualité Légendaire."); ; // You create a legendary quality item.
+			}
 			return 1044154; // You create the item.
 		}
 
