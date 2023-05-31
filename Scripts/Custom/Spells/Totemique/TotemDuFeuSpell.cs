@@ -1,4 +1,5 @@
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 using System;
 
@@ -47,8 +48,21 @@ namespace Server.Custom.Spells.NewSpells.Totemique
         {
             if (CheckSequence())
             {
+				BaseTotem totem;
+
+				if (Caster is CustomPlayerMobile pm)
+				{
+					if (pm.Aptitudes.Totemique >= 7)
+						totem = new TotemDeFeuUltime();
+					else if (pm.Aptitudes.Totemique >= 4)
+						totem = new TotemDeFeuAvance();
+					else
+						totem = new TotemDeFeu();
+				}
+				else
+					totem = new TotemDeFeu();
+
 				var duration = GetDurationForSpell(300);
-				var totem = new TotemDeFeu();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem du feu", duration, AptitudeColor.Totemique, SpellEffectType.Summon);

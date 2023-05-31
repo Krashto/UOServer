@@ -1,4 +1,5 @@
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 using System;
 
@@ -48,8 +49,21 @@ namespace Server.Custom.Spells.NewSpells.Totemique
         {
             if (CheckSequence())
             {
+				BaseTotem totem;
+
+				if (Caster is CustomPlayerMobile pm)
+				{
+					if (pm.Aptitudes.Totemique >= 7)
+						totem = new TotemDeauUltime();
+					else if (pm.Aptitudes.Totemique >= 4)
+						totem = new TotemDeauAvance();
+					else
+						totem = new TotemDeau();
+				}
+				else
+					totem = new TotemDeau();
+
 				var duration = GetDurationForSpell(300);
-				var totem = new TotemDeau();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem d'eau", duration, AptitudeColor.Totemique, SpellEffectType.Summon);

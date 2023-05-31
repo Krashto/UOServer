@@ -43,7 +43,7 @@ namespace Server.Spells.Fifth
 
                     int intel = Math.Min(200, Caster.Int);
 
-                    int damage = (int)((Caster.Skills[SkillName.Magery].Value + intel) / 5) + Utility.RandomMinMax(2, 6);
+                    int damage = (int)((Caster.Skills[SkillName.Magery].Value + intel) / 20) + Utility.RandomMinMax(2, 6);
 
                     if (damage > 60)
                         damage = 60;

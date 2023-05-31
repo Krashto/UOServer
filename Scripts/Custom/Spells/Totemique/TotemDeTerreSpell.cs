@@ -1,4 +1,5 @@
 using Server.Custom.Aptitudes;
+using Server.Mobiles;
 using Server.Spells;
 using System;
 
@@ -54,8 +55,21 @@ namespace Server.Custom.Spells.NewSpells.Totemique
         {
             if (CheckSequence())
             {
+				BaseTotem totem;
+
+				if (Caster is CustomPlayerMobile pm)
+				{
+					if (pm.Aptitudes.Totemique >= 7)
+						totem = new TotemDeTerreUltime();
+					else if (pm.Aptitudes.Totemique >= 4)
+						totem = new TotemDeTerreAvance();
+					else
+						totem = new TotemDeTerre();
+				}
+				else
+					totem = new TotemDeTerre();
+
 				var duration = GetDurationForSpell(300);
-				var totem = new TotemDeTerre();
 				SpellHelper.Summon(totem, Caster, 0x217, duration, false, false);
 				totem.CantWalk = true;
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Totem de terre", duration, AptitudeColor.Totemique, SpellEffectType.Summon);
