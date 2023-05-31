@@ -20,8 +20,8 @@ namespace Server.Items
         private Mobile _Owner;
         private string _OwnerName;
         private bool _ElvesOnly;
-		private int m_MaxHitPoints;
-		private int m_HitPoints;
+		//private int m_MaxHitPoints;
+		//private int m_HitPoints;
 
 
 		[CommandProperty(AccessLevel.GameMaster)]
@@ -72,55 +72,54 @@ namespace Server.Items
         }
 
 
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int MaxHitPoints
-		{
-			get
-			{
-				return m_MaxHitPoints;
-			}
-			set
-			{
-				m_MaxHitPoints = value;
+		//[CommandProperty(AccessLevel.GameMaster)]
+		//public int MaxHitPoints
+		//{
+		//	get
+		//	{
+		//		return m_MaxHitPoints;
+		//	}
+		//	set
+		//	{
+		//		m_MaxHitPoints = value;
 
-				InvalidateProperties();
-			}
-		}
-
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public int HitPoints
-		{
-			get
-			{
-				return m_HitPoints;
-			}
-			set
-			{
-				if (value != m_HitPoints && MaxHitPoints > 0)
-				{
-					m_HitPoints = value;
-
-					if (m_HitPoints <= 0)
-					{
-						if (GetUser() != null)
-						{
-							GetUser().SendMessage(37, $"Votre {this.Name} se brise.");
-						}
+		//		InvalidateProperties();
+		//	}
+		//}
 
 
+		//[CommandProperty(AccessLevel.GameMaster)]
+		//public int HitPoints
+		//{
+		//	get
+		//	{
+		//		return m_HitPoints;
+		//	}
+		//	set
+		//	{
+		//		if (value != m_HitPoints && MaxHitPoints > 0)
+		//		{
+		//			m_HitPoints = value;
+
+		//			if (m_HitPoints <= 0)
+		//			{
+		//				if (GetUser() != null)
+		//				{
+		//					GetUser().SendMessage(37, $"Votre {this.Name} se brise.");
+		//				}
 
 
-						Delete();
 
-					}
-					else if (m_HitPoints > MaxHitPoints)
-						m_HitPoints = MaxHitPoints;
 
-					InvalidateProperties();
-				}
-			}
-		}
+		//				Delete();
+
+		//			}
+		//			else if (m_HitPoints > MaxHitPoints)
+		//				m_HitPoints = MaxHitPoints;
+
+		//			InvalidateProperties();
+		//		}
+
 
 		public virtual int ArtifactRarity => 0;
 
@@ -306,8 +305,8 @@ namespace Server.Items
             DamageIncrease = 10;
             IsArrowAmmo = true;
 
-			HitPoints = 75;
-			MaxHitPoints = 75;
+			//HitPoints = 75;
+			//MaxHitPoints = 75;
         }
 
         public BaseQuiver(Serial serial)
@@ -766,8 +765,8 @@ namespace Server.Items
             }
 
 
-			if (m_HitPoints >= 0 && m_MaxHitPoints > 0)
-				list.Add(1060639, "{0}\t{1}", m_HitPoints, m_MaxHitPoints); // durability ~1_val~ / ~2_val~
+		//	if (m_HitPoints >= 0 && m_MaxHitPoints > 0)
+		//		list.Add(1060639, "{0}\t{1}", m_HitPoints, m_MaxHitPoints); // durability ~1_val~ / ~2_val~
 		}
 
 		public int SetResistBonus(ResistanceType resist)
@@ -833,8 +832,8 @@ namespace Server.Items
             base.Serialize(writer);
             writer.Write(5); // version
 
-			writer.Write(m_HitPoints);
-			writer.Write(m_MaxHitPoints);
+			//writer.Write(m_HitPoints);
+			//writer.Write(m_MaxHitPoints);
 
             writer.Write(_VvVItem);
             writer.Write(_Owner);
@@ -941,8 +940,8 @@ namespace Server.Items
             {
 				case 5:
 					{
-						m_HitPoints = reader.ReadInt();
-						m_MaxHitPoints = reader.ReadInt();
+						//m_HitPoints = reader.ReadInt();
+						//m_MaxHitPoints = reader.ReadInt();
 						goto case 4;
 					}
                 case 4:
@@ -1070,8 +1069,8 @@ namespace Server.Items
 
 			if (version == 4)
 			{
-				m_HitPoints = 75;
-				m_MaxHitPoints = 75;
+				//m_HitPoints = 75;
+				//m_MaxHitPoints = 75;
 			}
 
 
@@ -1112,16 +1111,16 @@ namespace Server.Items
         {
             Quality = (ItemQuality)quality;
 
-			if (Quality == ItemQuality.Legendary)
-				m_MaxHitPoints = 250;
-			else if(Quality == ItemQuality.Epic)
-				m_MaxHitPoints = 200;
-			else if(Quality == ItemQuality.Exceptional)
-				m_MaxHitPoints = 150;
-			else
-				m_MaxHitPoints = 75;
+			//if (Quality == ItemQuality.Legendary)
+			//	m_MaxHitPoints = 250;
+			//else if(Quality == ItemQuality.Epic)
+			//	m_MaxHitPoints = 200;
+			//else if(Quality == ItemQuality.Exceptional)
+			//	m_MaxHitPoints = 150;
+			//else
+			//	m_MaxHitPoints = 75;
 
-			m_HitPoints = m_MaxHitPoints; 
+			//m_HitPoints = m_MaxHitPoints; 
 
 			if (makersMark)
                 Crafter = from;

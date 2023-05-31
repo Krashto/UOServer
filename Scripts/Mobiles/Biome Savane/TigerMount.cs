@@ -54,7 +54,7 @@ namespace Server.Mobiles
 		public override PackInstinct PackInstinct => PackInstinct.Feline;
 
 		public override int Meat => 3;
-		public override FoodType FavoriteFood => FoodType.Meat | FoodType.Fish;
+		public override FoodType FavoriteFood => FoodType.Meat;
 		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

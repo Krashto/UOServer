@@ -72,7 +72,7 @@ namespace Server.Engines.Harvest
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de marjolaine dans votre sac.", typeof( Marjoram ) ),
 				new HarvestResource( 70.0, 70.0, 70.0, "Vous déposez un peu de reine-des-prés dans votre sac.", typeof( Meadowsweet ) ),
 				new HarvestResource( 10.0, 10.0, 10.0,  "Vous déposez un peu de menthe dans votre sac.", typeof( Mint ) ),
-				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de armoire commune dans votre sac.", typeof( Mugwort ) ),
+				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de armoise commune dans votre sac.", typeof( Mugwort ) ),
 				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de graine de moutarde dans votre sac.", typeof( Mustard ) ),
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de gomme d'épinette dans votre sac.", typeof( Myrrh ) ),
 				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de olive dans votre sac.", typeof( Olive ) ),

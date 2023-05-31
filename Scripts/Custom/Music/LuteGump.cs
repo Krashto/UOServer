@@ -1,81 +1,73 @@
-﻿using System;
-using System.Collections;
-using System.IO;
-using System.Text;
-using Server;
-using Server.Items;
-using Server.Mobiles;
 using Server.Network;
-using Server.Gumps;
 
 namespace Server.Gumps
 {
 	public class LuteGump : Gump
 	{
-        private bool Record = false;
-		public LuteGump()
-			: base( 0, 0 )
+		public LuteGump() : base( 0, 0 )
 		{
-			this.Closable=true;
-			this.Disposable=true;
-			this.Dragable=true;
-			this.Resizable=false;
-			this.AddPage(0);
-			this.AddBackground(6, 15, 570, 140, 5120);
-			this.AddAlphaRegion( 16, 20, 550, 130 );
-			this.AddImageTiled( 16, 20, 550, 20, 9354);
-			this.AddLabel( 19, 20, 200, "Compositeur des mélodies");
-            this.AddLabel(55, 60, 2056, @"do");
-            this.AddLabel(55, 80, 2056, @"do");
-            this.AddLabel(55, 100, 2056, @"do");
-            this.AddLabel(95, 60, 2056, @"do#");
-            this.AddLabel(95, 80, 2056, @"do#");
-            this.AddLabel(145, 60, 2056, @"re");
-            this.AddLabel(145, 80, 2056, @"re");
-            this.AddLabel(185, 60, 2056, @"re#");
-            this.AddLabel(185, 80, 2056, @"re#");
-            this.AddLabel(235, 60, 2056, @"mi");
-            this.AddLabel(235, 80, 2056, @"mi");
-            this.AddLabel(275, 60, 2056, @"fa");
-            this.AddLabel(275, 80, 2056, @"fa");
-            this.AddLabel(315, 60, 2056, @"fa#");
-            this.AddLabel(315, 80, 2056, @"fa#");
-            this.AddLabel(365, 60, 2056, @"sol");
-            this.AddLabel(365, 80, 2056, @"sol");
-            this.AddLabel(405, 60, 2056, @"sol#");
-            this.AddLabel(405, 80, 2056, @"sol#");
-            this.AddLabel(455, 60, 2056, @"la");
-            this.AddLabel(455, 80, 2056, @"la");
-            this.AddLabel(495, 60, 2056, @"la#");
-            this.AddLabel(495, 80, 2056, @"la#");
-            this.AddLabel(545, 60, 2056, @"si");
-            this.AddLabel(545, 80, 2056, @"si");
-			this.AddButton(35, 62, 5601, 5605, (int)Buttons.Button1, GumpButtonType.Reply, 0);
-			this.AddButton(35, 82, 5601, 5605, (int)Buttons.Button2, GumpButtonType.Reply, 0);
-			this.AddButton(35, 102, 5601, 5605, (int)Buttons.Button3, GumpButtonType.Reply, 0);
-			this.AddButton(75, 62, 5601, 5605, (int)Buttons.Button4, GumpButtonType.Reply, 0);
-			this.AddButton(75, 82, 5601, 5605, (int)Buttons.Button5, GumpButtonType.Reply, 0);
-			this.AddButton(125, 62, 5601, 5605, (int)Buttons.Button6, GumpButtonType.Reply, 0);
-			this.AddButton(125, 82, 5601, 5605, (int)Buttons.Button7, GumpButtonType.Reply, 0);
-			this.AddButton(165, 62, 5601, 5605, (int)Buttons.Button8, GumpButtonType.Reply, 0);
-			this.AddButton(165, 82, 5601, 5605, (int)Buttons.Button9, GumpButtonType.Reply, 0);
-			this.AddButton(215, 62, 5601, 5605, (int)Buttons.Button10, GumpButtonType.Reply, 0);
-			this.AddButton(215, 82, 5601, 5605, (int)Buttons.Button11, GumpButtonType.Reply, 0);
-			this.AddButton(255, 62, 5601, 5605, (int)Buttons.Button12, GumpButtonType.Reply, 0);
-			this.AddButton(255, 82, 5601, 5605, (int)Buttons.Button13, GumpButtonType.Reply, 0);
-			this.AddButton(295, 62, 5601, 5605, (int)Buttons.Button14, GumpButtonType.Reply, 0);
-			this.AddButton(295, 82, 5601, 5605, (int)Buttons.Button15, GumpButtonType.Reply, 0);
-			this.AddButton(345, 62, 5601, 5605, (int)Buttons.Button16, GumpButtonType.Reply, 0);
-			this.AddButton(345, 82, 5601, 5605, (int)Buttons.Button17, GumpButtonType.Reply, 0);
-			this.AddButton(385, 62, 5601, 5605, (int)Buttons.Button18, GumpButtonType.Reply, 0);
-			this.AddButton(385, 82, 5601, 5605, (int)Buttons.Button19, GumpButtonType.Reply, 0);
-			this.AddButton(435, 62, 5601, 5605, (int)Buttons.Button20, GumpButtonType.Reply, 0);
-			this.AddButton(435, 82, 5601, 5605, (int)Buttons.Button21, GumpButtonType.Reply, 0);
-			this.AddButton(475, 62, 5601, 5605, (int)Buttons.Button22, GumpButtonType.Reply, 0);
-			this.AddButton(475, 82, 5601, 5605, (int)Buttons.Button23, GumpButtonType.Reply, 0);
-			this.AddButton(525, 62, 5601, 5605, (int)Buttons.Button24, GumpButtonType.Reply, 0);
-			this.AddButton(525, 82, 5601, 5605, (int)Buttons.Button25, GumpButtonType.Reply, 0);
-			this.AddButton(425, 120, 241, 242, (int)Buttons.Close2, GumpButtonType.Reply, 0);
+			Closable = true;
+			Disposable = true;
+			Dragable = true;
+			Resizable = false;
+
+			AddPage(0);
+
+			AddBackground(6, 15, 570, 140, 5054);
+			AddAlphaRegion( 16, 20, 550, 130 );
+			AddImageTiled( 16, 20, 550, 20, 9354);
+			AddLabel( 19, 20, 200, "Compositeur des m�lodies");
+            AddLabel(55, 60, 2056, @"do");
+            AddLabel(55, 80, 2056, @"do");
+            AddLabel(55, 100, 2056, @"do");
+            AddLabel(95, 60, 2056, @"do#");
+            AddLabel(95, 80, 2056, @"do#");
+            AddLabel(145, 60, 2056, @"re");
+            AddLabel(145, 80, 2056, @"re");
+            AddLabel(185, 60, 2056, @"re#");
+            AddLabel(185, 80, 2056, @"re#");
+            AddLabel(235, 60, 2056, @"mi");
+            AddLabel(235, 80, 2056, @"mi");
+            AddLabel(275, 60, 2056, @"fa");
+            AddLabel(275, 80, 2056, @"fa");
+            AddLabel(315, 60, 2056, @"fa#");
+            AddLabel(315, 80, 2056, @"fa#");
+            AddLabel(365, 60, 2056, @"sol");
+            AddLabel(365, 80, 2056, @"sol");
+            AddLabel(405, 60, 2056, @"sol#");
+            AddLabel(405, 80, 2056, @"sol#");
+            AddLabel(455, 60, 2056, @"la");
+            AddLabel(455, 80, 2056, @"la");
+            AddLabel(495, 60, 2056, @"la#");
+            AddLabel(495, 80, 2056, @"la#");
+            AddLabel(545, 60, 2056, @"si");
+            AddLabel(545, 80, 2056, @"si");
+			AddButton(35, 62, 5601, 5605, (int)Buttons.Button1, GumpButtonType.Reply, 0);
+			AddButton(35, 82, 5601, 5605, (int)Buttons.Button2, GumpButtonType.Reply, 0);
+			AddButton(35, 102, 5601, 5605, (int)Buttons.Button3, GumpButtonType.Reply, 0);
+			AddButton(75, 62, 5601, 5605, (int)Buttons.Button4, GumpButtonType.Reply, 0);
+			AddButton(75, 82, 5601, 5605, (int)Buttons.Button5, GumpButtonType.Reply, 0);
+			AddButton(125, 62, 5601, 5605, (int)Buttons.Button6, GumpButtonType.Reply, 0);
+			AddButton(125, 82, 5601, 5605, (int)Buttons.Button7, GumpButtonType.Reply, 0);
+			AddButton(165, 62, 5601, 5605, (int)Buttons.Button8, GumpButtonType.Reply, 0);
+			AddButton(165, 82, 5601, 5605, (int)Buttons.Button9, GumpButtonType.Reply, 0);
+			AddButton(215, 62, 5601, 5605, (int)Buttons.Button10, GumpButtonType.Reply, 0);
+			AddButton(215, 82, 5601, 5605, (int)Buttons.Button11, GumpButtonType.Reply, 0);
+			AddButton(255, 62, 5601, 5605, (int)Buttons.Button12, GumpButtonType.Reply, 0);
+			AddButton(255, 82, 5601, 5605, (int)Buttons.Button13, GumpButtonType.Reply, 0);
+			AddButton(295, 62, 5601, 5605, (int)Buttons.Button14, GumpButtonType.Reply, 0);
+			AddButton(295, 82, 5601, 5605, (int)Buttons.Button15, GumpButtonType.Reply, 0);
+			AddButton(345, 62, 5601, 5605, (int)Buttons.Button16, GumpButtonType.Reply, 0);
+			AddButton(345, 82, 5601, 5605, (int)Buttons.Button17, GumpButtonType.Reply, 0);
+			AddButton(385, 62, 5601, 5605, (int)Buttons.Button18, GumpButtonType.Reply, 0);
+			AddButton(385, 82, 5601, 5605, (int)Buttons.Button19, GumpButtonType.Reply, 0);
+			AddButton(435, 62, 5601, 5605, (int)Buttons.Button20, GumpButtonType.Reply, 0);
+			AddButton(435, 82, 5601, 5605, (int)Buttons.Button21, GumpButtonType.Reply, 0);
+			AddButton(475, 62, 5601, 5605, (int)Buttons.Button22, GumpButtonType.Reply, 0);
+			AddButton(475, 82, 5601, 5605, (int)Buttons.Button23, GumpButtonType.Reply, 0);
+			AddButton(525, 62, 5601, 5605, (int)Buttons.Button24, GumpButtonType.Reply, 0);
+			AddButton(525, 82, 5601, 5605, (int)Buttons.Button25, GumpButtonType.Reply, 0);
+			AddButton(425, 120, 241, 242, (int)Buttons.Close2, GumpButtonType.Reply, 0);
 
 		}
 		public enum Buttons

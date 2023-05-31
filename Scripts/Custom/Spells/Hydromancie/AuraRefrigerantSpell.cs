@@ -12,7 +12,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 		private static Hashtable m_Timers = new Hashtable();
 
 		private static SpellInfo m_Info = new SpellInfo(
-				"Aura refregirante", "[Aura refregirante]",
+				"Aura refrigerante", "[Aura refrigerante]",
 				SpellCircle.Seventh,
 				209,
 				9022,

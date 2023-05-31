@@ -84,7 +84,7 @@ namespace Server.Poker
 				this.AddBackground( x, y, 101, 65, 9270 ); //changed from 9200.  This is the gump that shows your name and gold left.
 
 				if ( current.HasBlindBet || current.HasDealerButton )
-                    this.AddHtml(x, y - 15, 101, 45, Color(Center(current.HasBigBlind ? "(Big Blind)" : current.HasSmallBlind ? "(Small Blind)" : "(Dealer Button)"), COLOR_GREEN), false, false); // changed from COLOR_YELLOW
+                    this.AddHtml(x - 10, y - 15, 121, 45, Color(Center(current.HasBigBlind ? "(Grosse Blind)" : current.HasSmallBlind ? "(Petite Blind)" : "(Jeton du croupier)"), COLOR_GREEN), false, false); // changed from COLOR_YELLOW
 
 				this.AddHtml( x, y + 5, 101, 45, Color( Center( current.Mobile.Name ), ( m_Game.Players.Peek() == current ? COLOR_GREEN : !m_Game.Players.Round.Contains( current ) ? COLOR_OFF_WHITE : COLOR_PINK ) ), false, false );
 				this.AddHtml( x + 2, y + 24, 101, 45, Color( Center( "(" + current.Gold.ToString( "#,###" ) + ")" ), COLOR_GOLD ), false, false );

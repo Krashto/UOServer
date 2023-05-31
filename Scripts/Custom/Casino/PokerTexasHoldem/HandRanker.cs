@@ -10,25 +10,25 @@ namespace Server.Poker
 			switch ( rank )
 			{
 				case HandRank.None:
-					return "high card";
+					return "Carte haute";
 				case HandRank.OnePair:
-					return "one pair";
+					return "Une paire";
 				case HandRank.TwoPairs:
-					return "two pairs";
+					return "Deux pairs";
 				case HandRank.ThreeOfAKind:
-					return "three of a kind";
+					return "Brelan";
 				case HandRank.Straight:
-					return "a straight";
+                    return "Quinte";
 				case HandRank.Flush:
-					return "a flush";
+					return "Couleur";
 				case HandRank.FullHouse:
-					return "a full house";
+					return "Full";
 				case HandRank.FourOfAKind:
-					return "four of a kind";
+                    return "Carré";
 				case HandRank.StraightFlush:
-					return "a straight flush";
+                    return "Quinte Flush";
 				case HandRank.RoyalFlush:
-					return "a royal flush";
+					return "Quinte Royale";
 			}
 			return String.Empty;
 		}
@@ -38,25 +38,25 @@ namespace Server.Poker
 			switch ( entry.Rank )
 			{
 				case HandRank.None:
-					return String.Format( "high card {0}", entry.BestCards[0].RankString );
+                    return String.Format("Carte haute {0}", entry.BestCards[0].RankString);
 				case HandRank.OnePair:
-					return String.Format( "a pair of {0}s", entry.BestCards[0].RankString );
+					return String.Format( "Pair de {0}", entry.BestCards[0].RankString );
 				case HandRank.TwoPairs:
-					return String.Format( "two pairs: {0}s and {1}s", entry.BestCards[0].RankString, entry.BestCards[2].RankString );
+					return String.Format( "Deux paires de: {0} and {1}", entry.BestCards[0].RankString, entry.BestCards[2].RankString );
 				case HandRank.ThreeOfAKind:
-					return String.Format( "three {0}s", entry.BestCards[0].RankString );
+					return String.Format( "Brelan de {0}", entry.BestCards[0].RankString );
 				case HandRank.Straight:
-					return String.Format( "a straight: high {0} to low {1}", entry.BestCards[0].RankString, entry.BestCards[4].RankString );
+					return String.Format( "Quinte : {0} à {1}", entry.BestCards[0].RankString, entry.BestCards[4].RankString );
 				case HandRank.Flush:
-					return String.Format( "a flush: high card {0}", entry.BestCards[0].RankString );
+					return String.Format( "Couleur: Carte haute: {0}", entry.BestCards[0].RankString );
 				case HandRank.FullHouse:
-					return String.Format( "a full house: 3 {0}s and 2 {1}s", entry.BestCards[0].RankString, entry.BestCards[3].RankString );
+					return String.Format( "Full: 3 {0} et 2 {1}", entry.BestCards[0].RankString, entry.BestCards[3].RankString );
 				case HandRank.FourOfAKind:
-					return String.Format( "four {0}s", entry.BestCards[0].RankString );
+					return String.Format( "Carré de {0}", entry.BestCards[0].RankString );
 				case HandRank.StraightFlush:
-					return String.Format( "a straight flush: {0} to {1}", entry.BestCards[0].Name, entry.BestCards[4].Name );
+					return String.Format( "Quinte Flush: {0} à {1}", entry.BestCards[0].Name, entry.BestCards[4].Name );
 				case HandRank.RoyalFlush:
-					return "a royal flush";
+					return "Quinte Royale";
 			}
 			return String.Empty;
 		}
@@ -98,9 +98,9 @@ namespace Server.Poker
 		public static RankResult IsBetterThan( ResultEntry left, ResultEntry right )
 		{
 			if ( left.Rank > right.Rank )
-				return RankResult.Better;
+				return RankResult.Mieux;
 			if ( left.Rank < right.Rank )
-				return RankResult.Worse;
+				return RankResult.Pire;
 
 			//Ranks are the same
 			if ( left.Rank != HandRank.RoyalFlush )
@@ -108,13 +108,13 @@ namespace Server.Poker
 				for ( int i = 0; i < left.BestCards.Count; ++i )
 				{
 					if ( left.BestCards[i].Rank > right.BestCards[i].Rank )
-						return RankResult.Better;
+						return RankResult.Mieux;
 					if ( left.BestCards[i].Rank < right.BestCards[i].Rank )
-						return RankResult.Worse;
+						return RankResult.Pire;
 				}
 			}
 
-			return RankResult.Same;
+			return RankResult.Meme;
 		}
 
 		public static HandRank GetBestHand( List<Card> sortedCards, out List<Card> bestCards )
@@ -199,7 +199,7 @@ namespace Server.Poker
 			//since the cards are sorted,
 			//we need only to check the first and fifth card
 			//if they are an Ace and 10 respectively
-			if ( flushCards[0].Rank == Rank.Ace && flushCards[4].Rank == Rank.Ten )
+			if ( flushCards[0].Rank == Rank.As && flushCards[4].Rank == Rank.Dix )
 			{
 				for ( int i = 0; i < 5; ++i )
 				{
@@ -363,8 +363,8 @@ namespace Server.Poker
 			//special case, if the straight is 5, 4, 3, 2, 
 			//check for the ace which should be the first card in sortedCards
 			else if ( sequenceCardCount == 4
-				&& straightCards[straightCards.Count - 1].Rank == Rank.Two
-				&& sortedCards[0].Rank == Rank.Ace )
+				&& straightCards[straightCards.Count - 1].Rank == Rank.Deux
+				&& sortedCards[0].Rank == Rank.As )
 			{
 				straightCards.Add( sortedCards[0] );
 				return true;
