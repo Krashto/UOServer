@@ -17,6 +17,7 @@ namespace Server.Items
             m_Charges = charges;
             LootType = LootType.Blessed;
 			ItemID = 0xDF2;
+			Layer = Layer.OneHanded;
 
 		}
 
