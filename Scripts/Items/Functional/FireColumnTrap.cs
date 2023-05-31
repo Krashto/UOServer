@@ -72,7 +72,7 @@ namespace Server.Items
 
             if (from.Alive && CheckRange(from.Location, 0))
             {
-                Spells.SpellHelper.Damage(TimeSpan.FromSeconds(0.5), from, from, Utility.RandomMinMax(MinDamage, MaxDamage), 0, 100, 0, 0, 0);
+                Spells.SpellHelper.Damage(null, TimeSpan.FromSeconds(0.5), from, from, Utility.RandomMinMax(MinDamage, MaxDamage), 0, 100, 0, 0, 0);
 
                 if (!WarningFlame)
                     DoEffect();

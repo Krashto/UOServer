@@ -119,13 +119,11 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 							{
 								Disturb(m);
 
-								double damage = new VortexSpell(m_Caster, null).GetNewAosDamage(null, 6, 4, 6, true);
-
-								damage = (int)SpellHelper.AdjustValue(m_Caster, damage, Aptitude.Aeromancie);
+								double damage = m_Owner.GetNewAosDamage(m, 6, 3, 5, true);
 
 								m_Caster.DoHarmful(m);
 
-								AOS.Damage(m, m_Caster, (int)damage, 0, 0, 0, 0, 100);
+								SpellHelper.Damage(m_Owner, m, damage, 0, 0, 0, 0, 100);
 
 								CustomUtility.ApplySimpleSpellEffect(m, "Vortex", AptitudeColor.Aeromancie, SpellEffectType.Damage);
 

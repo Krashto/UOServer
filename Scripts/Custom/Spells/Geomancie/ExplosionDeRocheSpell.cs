@@ -88,6 +88,8 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
 
+						Caster.DoHarmful(m);
+
 						source.MovingParticles(m, 0x11B6, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 
 						CustomUtility.ApplySimpleSpellEffect(m, "Explosion De Roches", AptitudeColor.Geomancie, SpellEffectType.Damage);

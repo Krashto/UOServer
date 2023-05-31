@@ -49,7 +49,7 @@ namespace Server.Items
             from.SendSound(0x22B);
             from.SendLocalizedMessage(1095157); // You stepped onto a goblin trap!
 
-            Spells.SpellHelper.Damage(TimeSpan.FromSeconds(0.30), from, from, Utility.RandomMinMax(50, 75), 100, 0, 0, 0, 0);
+            Spells.SpellHelper.Damage(null, TimeSpan.FromSeconds(0.30), from, from, Utility.RandomMinMax(50, 75), 100, 0, 0, 0, 0);
 
             if (m_Owner != null)
                 from.DoHarmful(m_Owner);

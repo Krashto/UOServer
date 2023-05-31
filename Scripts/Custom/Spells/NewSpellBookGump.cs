@@ -61,11 +61,11 @@ namespace Server.Gumps
 		public static SpellBookEntry[] m_SpellBookEntry = new SpellBookEntry[]
 		{
 			new SpellBookEntry( typeof(AveuglementSpell), "Réduction des chances de toucher de la cible"),
-			new SpellBookEntry( typeof(BrouillardSpell), "Rend invisible la cible."),
 			new SpellBookEntry( typeof(TeleportationSpell), "Permet de vous téléporter sur la case de votre choix."),
 			new SpellBookEntry( typeof(TornadoSpell), "Crée un champ de force autour de vous qui pousse les ennemis qui vous approchent."),
 			new SpellBookEntry( typeof(AuraElectrisanteSpell), "Augmente la résistance à l'énergie de vous et vos alliés."),
 			new SpellBookEntry( typeof(ToucherSuffocantSpell), "Rend muet votre cible, l'empêchant de lancer des sorts."),
+			new SpellBookEntry( typeof(BrouillardSpell), "Rend invisible la cible."),
 			new SpellBookEntry( typeof(VentFavorableSpell), "Vous procure la rapidité de déplacement à pieds d'un cheval."),
 			new SpellBookEntry( typeof(AuraDeBrouillardSpell), "Rend invisible les alliés autour de vous."),
 			new SpellBookEntry( typeof(ExTeleportationSpell), "Permet d'interchanger votre place avec votre cible."),

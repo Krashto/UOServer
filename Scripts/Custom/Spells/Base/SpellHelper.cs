@@ -573,17 +573,25 @@ namespace Server.Spells
 
         public static double AdjustValue(Mobile caster, double value, Aptitude aptitude)
         {
+			double bonus = 0;
+
 			CustomPlayerMobile pm = caster as CustomPlayerMobile;
 
 			if (pm != null)
 			{
-				value += caster.Int / 1000.0;
-				value *= 1.0 + pm.Capacites[Capacite.Magie] * 0.0875;
-				value *= 1.0 + pm.Aptitudes.GetRealValue(aptitude) * 0.0875;
+				bonus += pm.Capacites[Capacite.Magie] * 20;
+				bonus += pm.Aptitudes.GetRealValue(aptitude) * 10;
 
 				if (pm.ChosenSpellbook != null)
-					value *= 1.0 + CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 0.1;
+					bonus += CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 10;
 			}
+
+			bonus += (int)(caster.Int);
+
+			double damageSkill = caster.Skills[SkillName.EvalInt].Value;
+			bonus += (int)(damageSkill);
+
+			value *= 1 + bonus / 100;
 
 			return value;
 		}
@@ -943,12 +951,6 @@ namespace Server.Spells
 			int iDamage = (int)damage;
 			int bonus = 0;
 
-			if (from is CustomPlayerMobile)
-			{
-				var pm = from as CustomPlayerMobile;
-				bonus += pm.Capacites[Capacite.Magie] * 20;
-			}
-
 			target.CheckSkill(SkillName.MagicResist, 0.0, 120.0);
 
 			iDamage *= (1 + bonus / 100);
@@ -976,41 +978,54 @@ namespace Server.Spells
 		{
 			TimeSpan ts = GetDamageDelayForSpell( spell );
 
-			Damage( ts, target, spell.Caster, damage, phys, fire, cold, pois, nrgy );
+			Damage( spell, ts, target, spell.Caster, damage, phys, fire, cold, pois, nrgy );
 		}
 
 		public static void Damage( Spell spell, Mobile target, double damage, int phys, int fire, int cold, int pois, int nrgy, DFAlgorithm dfa )
 		{
 			TimeSpan ts = GetDamageDelayForSpell( spell );
 
-			Damage( ts, target, spell.Caster, damage, phys, fire, cold, pois, nrgy, dfa );
+			Damage( spell, ts, target, spell.Caster, damage, phys, fire, cold, pois, nrgy, dfa );
 		}
 
-		public static void Damage( TimeSpan delay, Mobile target, double damage, int phys, int fire, int cold, int pois, int nrgy )
+		public static void Damage( Spell spell, TimeSpan delay, Mobile target, double damage, int phys, int fire, int cold, int pois, int nrgy )
 		{
-			Damage( delay, target, null, damage, phys, fire, cold, pois, nrgy );
+			Damage( spell, delay, target, null, damage, phys, fire, cold, pois, nrgy );
 		}
 
-		public static void Damage( TimeSpan delay, Mobile target, Mobile from, double damage, int phys, int fire, int cold, int pois, int nrgy )
+		public static void Damage( Spell spell, TimeSpan delay, Mobile target, Mobile from, double damage, int phys, int fire, int cold, int pois, int nrgy )
 		{
-			Damage( delay, target, from, damage, phys, fire, cold, pois, nrgy, DFAlgorithm.Standard );
+			Damage( spell, delay, target, from, damage, phys, fire, cold, pois, nrgy, DFAlgorithm.Standard );
 		}
 
-		public static void Damage( TimeSpan delay, Mobile target, Mobile from, double damage, int phys, int fire, int cold, int pois, int nrgy, DFAlgorithm dfa )
+		public static void Damage( Spell spell, TimeSpan delay, Mobile target, Mobile from, double damage, int phys, int fire, int cold, int pois, int nrgy, DFAlgorithm dfa )
 		{
-			int iDamage = (int) damage;
-
 			int bonus = 0;
 
-			if (from is CustomPlayerMobile)
+			if (spell != null)
 			{
-				var pm = from as CustomPlayerMobile;
-				bonus += pm.Capacites[Capacite.Magie] * 20;
+				CustomPlayerMobile pm = from as CustomPlayerMobile;
+
+				if (pm != null)
+				{
+					bonus += pm.Capacites[Capacite.Magie] * 20;
+					bonus += pm.Aptitudes.GetRealValue(spell.RequiredAptitude.First()) * 10;
+
+					if (pm.ChosenSpellbook != null)
+						bonus += CraftResources.GetIndex(pm.ChosenSpellbook.Resource) * 10;
+				}
+
+				bonus += (int)(from.Int);
+
+				double damageSkill = from.Skills[spell.DamageSkill].Value;
+				bonus += (int)(damageSkill);
 			}
 
 			target.CheckSkill(SkillName.MagicResist, 0.0, 120.0);
 
-			iDamage *= (1 + bonus / 100);
+			damage *= (1 + bonus / 100.0);
+
+			int iDamage = (int)damage;
 
 			if ( delay == TimeSpan.Zero )
 			{

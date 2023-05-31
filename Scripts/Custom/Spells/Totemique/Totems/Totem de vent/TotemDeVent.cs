@@ -6,50 +6,52 @@ using Server.Spells;
 
 namespace Server.Custom.Spells.NewSpells.Totemique
 {
-	[CorpseName("a fire elemental corpse")]
-	public class TotemDeFeu : BaseTotem
+	[CorpseName("an air elemental corpse")]
+	public class TotemDuVent : BaseTotem
 	{
 		[Constructable]
-		public TotemDeFeu() : base(AIType.AI_Melee, FightMode.Closest, 10, 1)
+		public TotemDuVent() : base(AIType.AI_Melee, FightMode.Closest, 10, 1)
 		{
-			Name = "Totem de feu";
-			Body = 15;
-			BaseSoundID = 838;
+			Name = "Totem du vent";
+			Body = 13;
+			Hue = 0x4001;
+			BaseSoundID = 655;
 
 			SetStr(200);
 			SetDex(200);
 			SetInt(100);
 
-			SetDamage(9, 14);
+			SetHits(150);
+			SetStam(50);
 
-			SetDamageType(ResistanceType.Physical, 0);
-			SetDamageType(ResistanceType.Fire, 100);
+			SetDamage(6, 9);
 
-			SetResistance(ResistanceType.Physical, 50, 60);
-			SetResistance(ResistanceType.Fire, 70, 80);
-			SetResistance(ResistanceType.Cold, 0, 10);
+			SetDamageType(ResistanceType.Physical, 50);
+			SetDamageType(ResistanceType.Energy, 50);
+
+			SetResistance(ResistanceType.Physical, 40, 50);
+			SetResistance(ResistanceType.Fire, 30, 40);
+			SetResistance(ResistanceType.Cold, 35, 45);
 			SetResistance(ResistanceType.Poison, 50, 60);
-			SetResistance(ResistanceType.Energy, 50, 60);
+			SetResistance(ResistanceType.Energy, 70, 80);
 
-			SetSkill(SkillName.EvalInt, 90.0);
-			SetSkill(SkillName.Magery, 90.0);
-			SetSkill(SkillName.MagicResist, 85.0);
+			SetSkill(SkillName.Meditation, 90.0);
+			SetSkill(SkillName.EvalInt, 70.0);
+			SetSkill(SkillName.Magery, 70.0);
+			SetSkill(SkillName.MagicResist, 60.0);
 			SetSkill(SkillName.Tactics, 100.0);
-			SetSkill(SkillName.Wrestling, 92.0);
+			SetSkill(SkillName.Wrestling, 80.0);
 
 			ControlSlots = 3;
-			CantWalk = true;
-			ControlOrder = OrderType.Stay;
-			AddItem(new LightSource());
 		}
 
-		public TotemDeFeu(Serial serial)
+		public TotemDuVent(Serial serial)
 			: base(serial)
 		{
 		}
 
 		public override double DispelDifficulty => 117.5;
-		public override int Level => 2;
+		public override int Level => 1;
 		public override double DispelFocus => 45.0;
 
 		public override void OnThink()
@@ -84,7 +86,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 				{
 					SpellHelper.Turn(this, m);
 
-					double damage = 50;
+					double damage = 100;
 
 					if (SuperCharged)
 						damage *= 2;
@@ -92,10 +94,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 					if (mobiles.Count() > 2)
 						damage = damage * 2 / mobiles.Count();
 
-					if (damage > 25)
-						damage = 25;
+					if (damage > 50)
+						damage = 50;
 
-					MovingParticles(m, 0x36D4, 7, 0, false, true, 9501, 1, 0, 0x100);
+					Effects.SendBoltEffect(m, true, 0, false);
 
 					m.Damage((int)damage);
 

@@ -4,11 +4,14 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Mobiles;
 using Server.Network;
+using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
 	public class SoinPreventifSpell : Spell
 	{
+		private static Hashtable m_Timers = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Soin preventif", "[Soin preventif]",
 				SpellCircle.First,
@@ -34,6 +37,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public void Target(Mobile m)
 		{
+			if (IsActive(m))
+				Deactivate(m);
+
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (m.IsDeadBondedPet)
@@ -55,12 +61,33 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				Caster.MoveToWorld(m.Location, m.Map);
 
 				Timer t = new InternalTimer(Caster, m);
+				m_Timers[m] = t;
 				t.Start();
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Soin preventif", AptitudeColor.Hydromancie, SpellEffectType.Heal);
 			}
 
 			FinishSequence();
+		}
+
+		public static bool IsActive(Mobile m)
+		{
+			return m_Timers.ContainsKey(m);
+		}
+
+		public static void Deactivate(Mobile m)
+		{
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
+
+			if (t != null)
+			{
+				t.Stop();
+				m_Timers.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Soin preventif", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
+			}
 		}
 
 		private class InternalTarget : Target
@@ -101,29 +128,33 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 				m_Mobile = m;
 				Priority = TimerPriority.TwoFiftyMS;
 
-				m_MaxCount = 5;
+				m_MaxCount = 3;
+
+				if (from is CustomPlayerMobile pm)
+					m_MaxCount = Math.Max(pm.Capacites.Magie, 3);
 			}
 
 			protected override void OnTick()
 			{
-				if (!m_Mobile.Alive || m_Mobile.Deleted)
+				if (m_Count >= m_MaxCount || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
+					Deactivate(m_Mobile);
 					Stop();
 				}
 				else
 				{
-					double toHeal = Math.Max(1, Utility.RandomMinMax(5 + m_Count, (5 + m_Count) * 2));
+					double toHeal = Math.Max(1, Utility.RandomMinMax(2, 3));
 
 					if (AvatarDuFroidSpell.IsActive(m_From))
 						toHeal *= 1.25;
 
-					m_Mobile.Heal((int)toHeal);
+					toHeal += SpellHelper.AdjustValue(m_From, toHeal, Aptitude.Hydromancie);
 
-					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Soin preventif", AptitudeColor.Hydromancie, SpellEffectType.Heal);
+					m_Mobile.Heal((int)toHeal);
 
 					if (++m_Count >= m_MaxCount)
 					{
-						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Soin preventif", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
+						Deactivate(m_Mobile);
 						Stop();
 					}
 				}

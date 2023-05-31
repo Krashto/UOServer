@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Reagent.EssenceAeromancie
 			);
 
-		public override int RequiredAptitudeValue { get { return 6; } }
+		public override int RequiredAptitudeValue { get { return 5; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Aeromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.SpiritSpeak; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }

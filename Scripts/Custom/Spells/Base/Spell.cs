@@ -110,16 +110,16 @@ namespace Server.Spells
 			if (m_Caster is BaseCreature)
 				damage /= 2;
 
-            double evalIntSkill = Caster.Skills[SkillName.EvalInt].Value;
-            damageBonus += (int)(evalIntSkill / 3.33);
+   //         double damageSkill = Caster.Skills[DamageSkill].Value;
+   //         damageBonus += (int)(damageSkill / 3.33);
 
-			int intBonus = Caster.Int / 4;
-			damageBonus += intBonus;
+			//int intBonus = Caster.Int / 4;
+			//damageBonus += intBonus;
 
-			damageBonus += AosAttributes.GetValue(Caster, AosAttribute.SpellDamage);
+			//damageBonus += AosAttributes.GetValue(Caster, AosAttribute.SpellDamage);
 
-			int evalSkill = GetDamageFixed( m_Caster );
-            damageBonus += ((9 * evalSkill) / 100);
+			//int evalSkill = GetDamageFixed( m_Caster );
+   //         damageBonus += ((9 * evalSkill) / 100);
 
 			damage = AOS.Scale( damage, 100 + damageBonus );
 
@@ -363,15 +363,15 @@ namespace Server.Spells
         {
             double bonus = 1;
 
-			bonus += (Caster.Skills[CastSkill].Value - 50) / 50;
-			bonus += (Caster.Skills[DamageSkill].Value - 50) / 75;
+			bonus += Caster.Skills[CastSkill].Value * 0.01;
+			bonus += Caster.Skills[DamageSkill].Value * 0.01;
 
-			bonus += Caster.Int / 500.0;
+			bonus += Caster.Int * 0.005;
 
 			if (Caster is CustomPlayerMobile pm)
 			{
-				bonus += pm.Capacites.Magie / 25.0;
-				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) / 50.0;
+				bonus += pm.Capacites.Magie * 0.10;
+				bonus += pm.Aptitudes.GetRealValue(RequiredAptitude.First()) * 0.05;
 			}
 
 			min *= bonus * scale;
@@ -694,7 +694,7 @@ namespace Server.Spells
 			double scalar = 1.0;
 
             if (Caster.IsPlayer())
-                mana = (int)(mana * (1 - (Caster.Int * 0.003)));
+                mana = (int)(mana * (1 - (Caster.Int * 0.002)));
 
 			scalar -= DecrescendoManaiqueSpell.GetValue(Caster) / 100;
 

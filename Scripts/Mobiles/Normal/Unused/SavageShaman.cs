@@ -233,7 +233,7 @@ namespace Server.Mobiles
 
                                 m.BoltEffect(0);
 
-                                SpellHelper.Damage(TimeSpan.FromSeconds(0.25), m, this, damage, 0, 0, 0, 0, 100);
+                                SpellHelper.Damage(null, TimeSpan.FromSeconds(0.25), m, this, damage, 0, 0, 0, 0, 100);
                             }
 
                             break;

@@ -44,7 +44,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 		}
 
 		public override double DispelDifficulty => 117.5;
-		public override int Level => 3;
+		public override int Level => 2;
 		public override double DispelFocus => 45.0;
 
 		public override void OnThink()

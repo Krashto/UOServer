@@ -2419,7 +2419,7 @@ namespace Server.Items
             attacker.MovingParticles(defender, 0x36E4, 5, 0, false, true, 3006, 4006, 0);
             attacker.PlaySound(0x1E5);
 
-            SpellHelper.Damage(TimeSpan.FromSeconds(1.0), defender, attacker, damage, 0, 100, 0, 0, 0);
+            SpellHelper.Damage(null, TimeSpan.FromSeconds(1.0), defender, attacker, damage, 0, 100, 0, 0, 0);
 
             if (ProcessingMultipleHits)
                 BlockHitEffects = true;
@@ -2448,7 +2448,7 @@ namespace Server.Items
             defender.FixedParticles(0x374A, 10, 30, 5013, 1153, 2, EffectLayer.Waist);
             defender.PlaySound(0x0FC);
 
-            SpellHelper.Damage(TimeSpan.Zero, defender, attacker, damage, 0, 0, 100, 0, 0);
+            SpellHelper.Damage(null, TimeSpan.Zero, defender, attacker, damage, 0, 0, 100, 0, 0);
 
             if (ProcessingMultipleHits)
                 BlockHitEffects = true;
@@ -2468,7 +2468,7 @@ namespace Server.Items
             attacker.MovingParticles(defender, 0x36D4, 7, 0, false, true, 9502, 4019, 0x160);
             attacker.PlaySound(0x15E);
 
-            SpellHelper.Damage(TimeSpan.FromSeconds(1.0), defender, attacker, damage, 0, 100, 0, 0, 0);
+            SpellHelper.Damage(null, TimeSpan.FromSeconds(1.0), defender, attacker, damage, 0, 100, 0, 0, 0);
 
             if (ProcessingMultipleHits)
                 BlockHitEffects = true;
@@ -2487,7 +2487,7 @@ namespace Server.Items
 
             defender.BoltEffect(0);
 
-            SpellHelper.Damage(TimeSpan.Zero, defender, attacker, damage, 0, 0, 0, 0, 100);
+            SpellHelper.Damage(null, TimeSpan.Zero, defender, attacker, damage, 0, 0, 0, 0, 100);
 
             if (ProcessingMultipleHits)
                 BlockHitEffects = true;
@@ -2544,7 +2544,7 @@ namespace Server.Items
             defender.FixedParticles(0x36BD, 20, 10, 5044, EffectLayer.Head);
             defender.PlaySound(0x307);
 
-            SpellHelper.Damage(TimeSpan.FromSeconds(1.0), defender, attacker, damage, 0, 100, 0, 0, 0);
+            SpellHelper.Damage(null, TimeSpan.FromSeconds(1.0), defender, attacker, damage, 0, 100, 0, 0, 0);
 
             if (ProcessingMultipleHits)
                 BlockHitEffects = true;

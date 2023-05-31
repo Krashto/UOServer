@@ -4,11 +4,14 @@ using Server.Custom.Aptitudes;
 using Server.Spells;
 using Server.Mobiles;
 using Server.Network;
+using System.Collections;
 
 namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
 	public class RestaurationSpell : Spell
 	{
+		private static Hashtable m_Timers = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Restauration", "[Restauration]",
 				SpellCircle.Seventh,
@@ -34,31 +37,49 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public void Target(Mobile m)
 		{
+			if (IsActive(m))
+				Deactivate(m);
+
 			if (!Caster.CanSee(m))
 				Caster.SendLocalizedMessage(500237); // Target can not be seen.
 			else if (m.IsDeadBondedPet)
-			{
 				Caster.SendLocalizedMessage(1060177); // You cannot heal a creature that is already dead!
-			}
 			else if (m is BaseCreature && ((BaseCreature)m).IsAnimatedDead)
-			{
 				Caster.SendLocalizedMessage(1061654); // You cannot heal that which is not alive.
-			}
 			else if (m.Poisoned)
-			{
 				Caster.LocalOverheadMessage(MessageType.Regular, 0x22, (Caster == m) ? 1005000 : 1010398);
-			}
 			else if (CheckBSequence(m))
 			{
 				SpellHelper.Turn(Caster, m);
 
 				Timer t = new InternalTimer(Caster, m);
+				m_Timers[m] = t;
 				t.Start();
 
 				CustomUtility.ApplySimpleSpellEffect(Caster, "Restauration", AptitudeColor.Hydromancie, SpellEffectType.Heal);
 			}
 
 			FinishSequence();
+		}
+
+		public static bool IsActive(Mobile m)
+		{
+			return m_Timers.ContainsKey(m);
+		}
+
+		public static void Deactivate(Mobile m)
+		{
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
+
+			if (t != null)
+			{
+				t.Stop();
+				m_Timers.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Restauration", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
+			}
 		}
 
 		private class InternalTarget : Target
@@ -91,6 +112,7 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			private Mobile m_Mobile;
 			private int m_Count;
 			private readonly int m_MaxCount;
+
 			public InternalTimer(Mobile from, Mobile m) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
 				m_From = from;
@@ -107,11 +129,12 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			{
 				if (m_Count >= m_MaxCount || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
+					Deactivate(m_Mobile);
 					Stop();
 				}
 				else
 				{
-					double toHeal = Math.Max(1, Utility.RandomMinMax(3 + m_Count, (3 + m_Count) * 1.5));
+					double toHeal = Math.Max(1, Utility.RandomMinMax(1, 2));
 
 					if (AvatarDuFroidSpell.IsActive(m_From))
 						toHeal *= 1.25;
@@ -120,11 +143,9 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					m_Mobile.Heal((int)toHeal);
 
-					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Restauration", AptitudeColor.Hydromancie, SpellEffectType.Heal);
-
 					if (++m_Count >= m_MaxCount)
 					{
-						CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Restauration", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
+						Deactivate(m_Mobile);
 						Stop();
 					}
 				}

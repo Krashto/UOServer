@@ -58,8 +58,6 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 					if (Caster.CanSee(m))
 					{
-						Caster.DoHarmful(m);
-
 						Timer t = new InternalTimer(this, m);
 						m_Timers[m] = t;
 						t.Start();
@@ -72,14 +70,12 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 							double damage = GetNewAosDamage(null, 3, 2, 3, true);
 
-							damage = (int)SpellHelper.AdjustValue(m_Caster, damage, Aptitude.Hydromancie);
-
 							if (AvatarDuFroidSpell.IsActive(m))
 								damage *= 1.2;
 
-							m_Caster.DoHarmful(m);
+							Caster.DoHarmful(m);
 
-							AOS.Damage(m, m_Caster, (int)damage, 0, 0, 0, 0, 100);
+							SpellHelper.Damage(this, m, damage, 0, 0, 100, 0, 0);
 
 							CustomUtility.ApplySimpleSpellEffect(m, "Blizzard", AptitudeColor.Hydromancie, SpellEffectType.Malus);
 

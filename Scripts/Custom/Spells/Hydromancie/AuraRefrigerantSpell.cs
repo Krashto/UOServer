@@ -9,6 +9,8 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 {
 	public class AuraRefrigeranteSpell : Spell
 	{
+		private static Hashtable m_Timers = new Hashtable();
+
 		private static SpellInfo m_Info = new SpellInfo(
 				"Aura refregirante", "[Aura refregirante]",
 				SpellCircle.Seventh,
@@ -67,9 +69,11 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					{
 						var m = (Mobile)targets[i];
 
-						var duration = GetDurationForSpell(15, 3);
+						if (IsActive(m))
+							Deactivate(m);
 
-						Timer t = new InternalTimer(Caster, m, duration);
+						Timer t = new InternalTimer(Caster, m);
+						m_Timers[m] = t;
 						t.Start();
 
 						CustomUtility.ApplySimpleSpellEffect(Caster, "Aura refregirante", AptitudeColor.Hydromancie, SpellEffectType.Heal);
@@ -78,6 +82,26 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 			}
 
 			FinishSequence();
+		}
+
+		public static bool IsActive(Mobile m)
+		{
+			return m_Timers.ContainsKey(m);
+		}
+
+		public static void Deactivate(Mobile m)
+		{
+			if (m == null)
+				return;
+
+			var t = m_Timers[m] as Timer;
+
+			if (t != null)
+			{
+				t.Stop();
+				m_Timers.Remove(m);
+				CustomUtility.ApplySimpleSpellEffect(m, "Aura refregirante", AptitudeColor.Hydromancie, SpellSequenceType.End, SpellEffectType.Heal);
+			}
 		}
 
 		private class InternalTarget : Target
@@ -106,35 +130,46 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 
 		public class InternalTimer : Timer
 		{
-			private DateTime m_EndTime;
 			private Mobile m_From;
 			private Mobile m_Mobile;
-			public InternalTimer(Mobile from, Mobile m, TimeSpan duration) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
+			private int m_Count;
+			private readonly int m_MaxCount;
+
+			public InternalTimer(Mobile from, Mobile m) : base(TimeSpan.Zero, TimeSpan.FromSeconds(2))
 			{
 				m_From = from;
 				m_Mobile = m;
-				m_EndTime = DateTime.Now + duration;
 
 				Priority = TimerPriority.OneSecond;
+				m_MaxCount = 3;
+
+				if (from is CustomPlayerMobile pm)
+					m_MaxCount = Math.Max(pm.Capacites.Magie, 3);
 			}
 
 			protected override void OnTick()
 			{
-				if (DateTime.Now >= m_EndTime || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
+				if (m_Count >= m_MaxCount || m_Mobile == null || m_Mobile.Deleted || !m_Mobile.Alive)
 				{
-					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellSequenceType.End);
+					Deactivate(m_Mobile);
 					Stop();
 				}
 				else
 				{
-					double toHeal = Math.Max(1, Utility.RandomMinMax(5, 10));
+					double toHeal = Math.Max(1, Utility.RandomMinMax(1, 2));
 
 					if (AvatarDuFroidSpell.IsActive(m_From))
-						toHeal *= 1.5;
+						toHeal *= 1.25;
+
+					toHeal += SpellHelper.AdjustValue(m_From, toHeal, Aptitude.Hydromancie);
 
 					m_Mobile.Heal((int)toHeal);
 
-					CustomUtility.ApplySimpleSpellEffect(m_Mobile, "Aura refregirante", AptitudeColor.Hydromancie, SpellEffectType.Heal);
+					if (++m_Count >= m_MaxCount)
+					{
+						Deactivate(m_Mobile);
+						Stop();
+					}
 				}
 			}
 		}

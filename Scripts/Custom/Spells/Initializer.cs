@@ -129,11 +129,11 @@ namespace Server.Spells
 
             //Aeromancie
             Register(600, typeof(AveuglementSpell));
-            Register(601, typeof(BrouillardSpell));
-            Register(602, typeof(TeleportationSpell));
-            Register(603, typeof(TornadoSpell));
-            Register(604, typeof(AuraElectrisanteSpell));
-            Register(605, typeof(ToucherSuffocantSpell));
+            Register(601, typeof(TeleportationSpell));
+            Register(602, typeof(TornadoSpell));
+            Register(603, typeof(AuraElectrisanteSpell));
+			Register(604, typeof(ToucherSuffocantSpell));
+			Register(605, typeof(BrouillardSpell));
             Register(606, typeof(VentFavorableSpell));
 			Register(607, typeof(AuraDeBrouillardSpell));
             Register(608, typeof(ExTeleportationSpell));

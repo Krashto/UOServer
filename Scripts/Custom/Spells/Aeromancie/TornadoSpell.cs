@@ -19,7 +19,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 				Reagent.EssenceAeromancie
 			);
 
-		public override int RequiredAptitudeValue { get { return 4; } }
+		public override int RequiredAptitudeValue { get { return 3; } }
 		public override Aptitude[] RequiredAptitude { get { return new Aptitude[] { Aptitude.Aeromancie }; } }
 		public override SkillName CastSkill { get { return SkillName.SpiritSpeak; } }
 		public override SkillName DamageSkill { get { return SkillName.EvalInt; } }
@@ -116,14 +116,12 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							Disturb(m);
 
-							double damage = m_Owner.GetNewAosDamage(m, 2, 1, 1, true);
-
 							MovingSpells.MoveMobileTo(m, MovingSpells.GetOppositeDirection(m.Direction), 3);
 
 							source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
 							source.PlaySound(0x44B);
 
-							SpellHelper.Damage(m_Owner, m, damage, 0, 100, 0, 0, 0);
+							m.Damage(1);
 						}
 					}
 				}

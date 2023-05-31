@@ -147,11 +147,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(BlankScroll), "Magie", "Parchemin Vierge", 10.0, 30.0, typeof(Kindling), "Kindling", 3, "Vous n'avez pas assez de Petit Bois.");
 
 			AddSpell("Aéromancie", typeof(AveuglementScroll), "Aveuglement", 1);
-			AddSpell("Aéromancie", typeof(BrouillardScroll), "Brouillard", 2);
-			AddSpell("Aéromancie", typeof(TeleportationScroll), "Téleportation", 3);
-			AddSpell("Aéromancie", typeof(TornadoScroll), "Tornado", 4);
-			AddSpell("Aéromancie", typeof(AuraElectrisanteScroll), "Aura électrisante", 5);
-			AddSpell("Aéromancie", typeof(ToucherSuffocantScroll), "Touché suffocant", 6);
+			AddSpell("Aéromancie", typeof(TeleportationScroll), "Téleportation", 2);
+			AddSpell("Aéromancie", typeof(TornadoScroll), "Tornado", 3);
+			AddSpell("Aéromancie", typeof(AuraElectrisanteScroll), "Aura électrisante", 4);
+			AddSpell("Aéromancie", typeof(ToucherSuffocantScroll), "Touché suffocant", 5);
+			AddSpell("Aéromancie", typeof(BrouillardScroll), "Brouillard", 6);
 			AddSpell("Aéromancie", typeof(VentFavorableScroll), "Vent favorable", 7);
 			AddSpell("Aéromancie", typeof(AuraDeBrouillardScroll), "Aura de brouillard", 8);
 			AddSpell("Aéromancie", typeof(ExTeleportationScroll), "Ex-téleportation", 9);

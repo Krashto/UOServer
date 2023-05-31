@@ -368,5 +368,17 @@ namespace Server.Custom
 				spawn.Combatant = target;
 			}
 		}
+
+		public static bool IsMobileUndead(Mobile m)
+		{
+			return m is BoneKnight || m is DreamWraith || m is Lich || m is PatchworkSkeleton || m is SkeletalMage
+				|| m is SkeletalMount || m is Skeleton || m is Spectre || m is Wight
+				|| m is AncientLich || m is BoneDemon || m is LadyMelisande || m is LichLord || m is Nightmare
+				|| m is Serado || m is SkeletalDragon || m is SkeletalLich
+				|| m is Ghoul || m is HeadlessOne || m is Mummy || m is RestlessSoul || m is SpectralArmour 
+				|| m is VampireBat || m is WailingBanshee || m is Zombie 
+				|| m is FleshGolem || m is GoreFiend || m is LadyOfTheSnow || m is MasterTheophilus || m is PrimevalLich 
+				|| m is RottingCorpse || m is ShadowKnight || m is Succubus;
+		}
 	}
 }

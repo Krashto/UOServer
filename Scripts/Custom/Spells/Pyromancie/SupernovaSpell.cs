@@ -74,10 +74,13 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
-						source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
-						CustomUtility.ApplySimpleSpellEffect(m, "Supernova", AptitudeColor.Pyromancie, SpellEffectType.Damage);
-
 						SpellHelper.Damage(this, m, damage, 0, 100, 0, 0, 0);
+
+						Caster.DoHarmful(m);
+
+						source.MovingParticles(m, 0x36D4, 7, 0, false, true, 342, 0, 9502, 4019, 0x160, 0);
+
+						CustomUtility.ApplySimpleSpellEffect(m, "Supernova", AptitudeColor.Pyromancie, SpellEffectType.Damage);
 					}
 				}
 			}

@@ -418,7 +418,8 @@ namespace Server
 				m.Paralyzed = false;
 				m.CantWalk = false;
 
-				from.RevealingAction();
+				if (direct == 0) //Bleed, Force of Nature and Searing Weapon do not reveal attacker
+					from.RevealingAction();
 
 				AvatarDuFroidSpell.Deactivate(m);
 			}

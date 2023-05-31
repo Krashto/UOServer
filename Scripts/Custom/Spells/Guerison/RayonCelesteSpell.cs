@@ -49,19 +49,21 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				Caster.LocalOverheadMessage(MessageType.Regular, 0x22, (Caster == m) ? 1005000 : 1010398);
 			}
-			else if (CheckBSequence(m))
+			else if (CheckSequence())
 			{
 				SpellHelper.Turn(Caster, m);
 
-				double toHeal = Caster.Skills[CastSkill].Value * 0.1 + Caster.Skills[DamageSkill].Value * 0.1;
-				toHeal += Utility.Random(1, 5);
+				double toHeal = Utility.RandomMinMax(10, 12);
 
 				toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Guerison);
 
 				if (InquisitionSpell.IsActive(Caster))
 					toHeal *= 1.5;
 
-				m.Heal((int)toHeal);
+				if (CustomUtility.IsMobileUndead(m))
+					SpellHelper.Damage(this, m, toHeal, 0, 0, 0, 0, 100);
+				else
+					m.Heal((int)toHeal);
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Rayon celeste", AptitudeColor.Guerison, SpellEffectType.Heal);
 			}
@@ -74,7 +76,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			private RayonCelesteSpell m_Owner;
 
 			public InternalTarget(RayonCelesteSpell owner)
-				: base(12, false, TargetFlags.Beneficial)
+				: base(12, false, TargetFlags.None)
 			{
 				m_Owner = owner;
 			}

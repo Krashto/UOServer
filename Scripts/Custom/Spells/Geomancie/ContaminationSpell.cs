@@ -42,7 +42,7 @@ namespace Server.Custom.Spells.NewSpells.Geomancie
 
 				Disturb(m);
 
-				var total = Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value;
+				var total = SpellHelper.AdjustValue(Caster, Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value, Aptitude.Geomancie);
 
 				Poison p;
 
