@@ -120,6 +120,7 @@ namespace Server.Items
             : base(0x1044)
         {
             Hue = 1111;
+			Name = "Beurre de Cacao";
         }
 
         public override void AddCraftedProperties(ObjectPropertyList list)

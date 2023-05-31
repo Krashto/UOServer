@@ -39,7 +39,9 @@ namespace Server.Items
             : base(0x99B)
         {
             Hue = 1461;
-        }
+			Name = "Sauce Secrète de Souche";
+
+		}
 
         public SamuelsSecretSauce(Serial serial) : base(serial)
         {

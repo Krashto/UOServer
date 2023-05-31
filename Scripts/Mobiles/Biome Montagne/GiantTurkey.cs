@@ -68,7 +68,15 @@ namespace Server.Mobiles
             return 0x66B;
         }
 
-        public GiantTurkey(Serial serial) : base(serial)
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawTurkey>(), Utility.RandomMinMax(2, 4));
+			AddLoot(LootPack.LootItem<RawTurkeyLeg>(), Utility.RandomMinMax(2, 4));
+			AddLoot(LootPack.LootItem<TurkeyHock>(), Utility.RandomMinMax(2, 4));
+
+		}
+
+		public GiantTurkey(Serial serial) : base(serial)
         {
         }
 

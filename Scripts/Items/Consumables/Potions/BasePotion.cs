@@ -56,6 +56,7 @@ namespace Server.Items
 		Shatter,
 		Jukari,
 		FearEssence,
+		Shrink,
 		ExplodingTarPotion
 	}
 

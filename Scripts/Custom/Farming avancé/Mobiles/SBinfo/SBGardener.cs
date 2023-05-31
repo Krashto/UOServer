@@ -28,14 +28,17 @@ namespace Server.Mobiles
 				//this.Add( new GenericBuyInfo( typeof( MilkBucket ), 300, 10, 0x0FFA, 0 ) );
 				//this.Add( new GenericBuyInfo( typeof( CheeseForm ), 300, 10, 0x0E78, 0 ) );
 
-			//	this.Add( new GenericBuyInfo( "Plant Bowl", typeof( Engines.Plants.PlantBowl ), 2, 20, 0x15FD, 0 ) );
-			//	this.Add( new GenericBuyInfo( "Fertile Dirt", typeof( FertileDirt ), 5, 999, 0xF81, 0 ) );
-			//	this.Add( new GenericBuyInfo( "Random Plant Seed", typeof( Engines.Plants.Seed ), 2, 20, 0xDCF, 0 ) );
- 		//	//	this.Add( new GenericBuyInfo( typeof( GreaterCurePotion ), 45, 20, 0xF07, 0 ) );
-			////	this.Add( new GenericBuyInfo( typeof( GreaterPoisonPotion ), 45, 20, 0xF0A, 0 ) );
-			////	this.Add( new GenericBuyInfo( typeof( GreaterStrengthPotion ), 45, 20, 0xF09, 0 ) );
-			////	this.Add( new GenericBuyInfo( typeof( GreaterHealPotion ), 45, 20, 0xF0C, 0 ) );
-                this.Add(new GenericBuyInfo("Asparagus Seed", typeof(AsparagusSeed), 5, 20, 0xF27, 0));
+				//	this.Add( new GenericBuyInfo( "Plant Bowl", typeof( Engines.Plants.PlantBowl ), 2, 20, 0x15FD, 0 ) );
+				//	this.Add( new GenericBuyInfo( "Fertile Dirt", typeof( FertileDirt ), 5, 999, 0xF81, 0 ) );
+				//	this.Add( new GenericBuyInfo( "Random Plant Seed", typeof( Engines.Plants.Seed ), 2, 20, 0xDCF, 0 ) );
+				//	//	this.Add( new GenericBuyInfo( typeof( GreaterCurePotion ), 45, 20, 0xF07, 0 ) );
+				////	this.Add( new GenericBuyInfo( typeof( GreaterPoisonPotion ), 45, 20, 0xF0A, 0 ) );
+				////	this.Add( new GenericBuyInfo( typeof( GreaterStrengthPotion ), 45, 20, 0xF09, 0 ) );
+				////	this.Add( new GenericBuyInfo( typeof( GreaterHealPotion ), 45, 20, 0xF0C, 0 ) );
+				///
+
+				this.Add(new GenericBuyInfo("Gingembre frais", typeof(FreshGinger), 5, 20, 0x2BE3, 0));
+				this.Add(new GenericBuyInfo("Asparagus Seed", typeof(AsparagusSeed), 5, 20, 0xF27, 0));
                 this.Add(new GenericBuyInfo("Beet Seed", typeof(BeetSeed), 5, 20, 0xF27, 0));
                 this.Add(new GenericBuyInfo("Broccoli Seed", typeof(BroccoliSeed), 5, 20, 0xF27, 0));
                 this.Add(new GenericBuyInfo("Cabbage Seed", typeof(CabbageSeed), 5, 20, 0xF27, 0));

@@ -339,6 +339,7 @@ namespace Server.Items
         {
             Weight = 1.0;
             FillFactor = 1;
+			Name = "Bacon";
         }
 
         public Bacon(Serial serial)

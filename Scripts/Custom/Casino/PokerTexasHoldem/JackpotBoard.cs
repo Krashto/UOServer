@@ -62,7 +62,7 @@ namespace Server.Items
 				DisplayMessage( from, "Aucun jackpot" );
 			}
 			else
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Ceci est trop loin." );
+				from.SendMessage( "Ceci est trop loin." );
 		}
 
 		private void DisplayMessage( Mobile from, string text )

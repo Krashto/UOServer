@@ -33,7 +33,7 @@ namespace Server.Poker
 
 				foreach ( PokerPlayer player in toRemove )
 				{
-                    player.SendMessage(HueManager.GetHue(HueManagerList.Red), "Le serveur a planté, et vous êtes maintenant retirés du jeu de poker et être remboursé.");
+                    player.SendMessage("Le serveur a planté, et vous êtes maintenant retirés du jeu de poker et être remboursé.");
 					game.RemovePlayer( player );
 				}
 			}
@@ -719,9 +719,9 @@ namespace Server.Poker
 			if ( !m_Dealer.InRange( from.Location, 8 ) )
 				from.PrivateOverheadMessage( Server.Network.MessageType.Regular, 0x22, true, "Je suis trop loin pour le faire", from.NetState );
 			else if ( GetIndexFor( from ) != -1 )
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Vous êtes déjà assis à cette table" );
+				from.SendMessage(  "Vous êtes déjà assis à cette table" );
 			else if ( m_Players.Count >= m_Dealer.MaxPlayers )
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Désolé, cette table est pleine." );
+				from.SendMessage(  "Désolé, cette table est pleine." );
 			/*else if ( TournamentSystem.TournamentCore.SignedUpTeam( from ) != null || TournamentSystem.TournamentCore.FindTeam( from ) != null )
 				from.SendMessage( 0x22, "You may not join a poker game while signed up for a tournament." );*/
 			else if ( Banker.Withdraw( from, player.Gold ) )
@@ -737,7 +737,7 @@ namespace Server.Poker
 
 				if ( seat == Point3D.Zero )
 				{
-					from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Désolé, cette table est pleine" );
+					from.SendMessage( "Désolé, cette table est pleine" );
 					return;
 				}
 
@@ -747,7 +747,7 @@ namespace Server.Poker
 				m_Players.Players.Add( player );
 
 				( (CustomPlayerMobile)from ).PokerGame = this;
-				from.SendMessage( HueManager.GetHue(HueManagerList.Green), "Vous rejoignez la table de jeu." );
+				from.SendMessage( "Vous rejoignez la table de jeu." );
 
 				if ( m_Players.Count == 1 && !GameBackup.PokerGames.Contains( this ) )
 					GameBackup.PokerGames.Add( this );
@@ -764,7 +764,7 @@ namespace Server.Poker
 				m_NeedsGumpUpdate = true;
 			}
 			else
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Votre coffre de banque n'a pas les fonds pour se joindre à cette table de poker." );
+				from.SendMessage( "Votre coffre de banque n'a pas les fonds pour se joindre à cette table de poker." );
 		}
 
 		public void RemovePlayer( PokerPlayer player )
@@ -811,12 +811,12 @@ namespace Server.Poker
 						}
 						catch { }
 
-						from.SendMessage( HueManager.GetHue(HueManagerList.Red), "WARNING: Could not find your bankbox. All of your poker money has been lost in this error. Please contact a Game Master to resolve this issue." );
+						from.SendMessage( "WARNING: Could not find your bankbox. All of your poker money has been lost in this error. Please contact a Game Master to resolve this issue." );
 					}
 					else
 					{
 						Banker.Deposit( from.BankBox, player.Gold );
-						from.SendMessage( HueManager.GetHue(HueManagerList.Green), "{0} pièce d'or a été déposé dans votre banque.", player.Gold );
+						from.SendMessage(  "{0} pièce d'or a été déposé dans votre banque.", player.Gold );
 					}
 				}
 
@@ -824,7 +824,7 @@ namespace Server.Poker
 				( (CustomPlayerMobile)from ).PokerGame = null;
 				from.Location = m_Dealer.ExitLocation;
 				from.Map = m_Dealer.ExitMap;
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Vous avez quitté la table." );
+				from.SendMessage(  "Vous avez quitté la table." );
 
 				m_NeedsGumpUpdate = true;
 			}
@@ -917,7 +917,7 @@ namespace Server.Poker
 
 				if ( m_LastPlayer.BetStart.AddSeconds( 45.0 ) <= DateTime.Now /*&& m_LastPlayer.Mobile.HasGump( typeof( PokerBetGump ) )*/ && !hasWarned )
 				{
-                    m_LastPlayer.SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous avez 15 secondes pour faire un choix. (Vous vous coucherez automatiquement si vous ne faites aucun choix.)");
+                    m_LastPlayer.SendMessage( "Vous avez 15 secondes pour faire un choix. (Vous vous coucherez automatiquement si vous ne faites aucun choix.)");
 					hasWarned = true;
 				}
 				else if ( m_LastPlayer.BetStart.AddSeconds( 60.0 ) <= DateTime.Now /*&& m_LastPlayer.Mobile.HasGump( typeof( PokerBetGump ) )*/ )

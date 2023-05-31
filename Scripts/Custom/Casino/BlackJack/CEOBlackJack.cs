@@ -197,7 +197,7 @@ namespace Server.Items
 		{
 			if (m_InUseBy != null)
 			{
-                m_InUseBy.SendMessage(HueManager.GetHue(HueManagerList.Red), "Une erreur critique a forcé ce jeu hors ligne, notifiez un Maître de jeu s'il vous plaît.");
+                m_InUseBy.SendMessage("Une erreur critique a forcé ce jeu hors ligne, notifiez un Maître de jeu s'il vous plaît.");
 				m_InUseBy = null;
 			}
 			
@@ -785,17 +785,17 @@ namespace Server.Items
 
         private void Dress()
         {
-            AddItem(new ChemiseDistinguee(0));
+            AddItem(new Shirt(0));
 
             Item pants = new LongPants();
             pants.Hue = 1;
             AddItem(pants);
 
-            Item shoes = new Souliers();
+            Item shoes = new Shoes();
             shoes.Hue = 1;
             AddItem(shoes);
 
-            Item sash = new CeintureTorse();
+            Item sash = new Sash();
             sash.Hue = 1;
             AddItem(sash);
 
@@ -937,7 +937,7 @@ namespace Server.Items
 					if (m_OnCredit != 0 && !m_TestMode)
 					{
 						m_InUseBy.PlaySound(52);
-                        m_InUseBy.SendMessage(HueManager.GetHue(HueManagerList.Green), "Hey, vous avez laissé un peu d'argent sur la table! Voilà pour vous!");
+                        m_InUseBy.SendMessage("Hey, vous avez laissé un peu d'argent sur la table! Voilà pour vous!");
 						if (m_Escrow > 0)
 						{
 							Credit(0, 0, m_Escrow); // Take their bet, too bad, so sad.
@@ -946,7 +946,7 @@ namespace Server.Items
 						DoCashOut(m_InUseBy); // Give them their winnings
 					}
 					else
-                        m_InUseBy.SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous marchez loin de cette table de jeu.");
+                        m_InUseBy.SendMessage("Vous marchez loin de cette table de jeu.");
 					InUseBy = null;
 					InvalidateProperties();
 				}
@@ -968,7 +968,7 @@ namespace Server.Items
 
 			if (!from.InRange(Location, 2) || !from.InLOS(this))
 			{
-                from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Ceci est trop loin."); // That is too far away.
+                from.SendMessage( "Ceci est trop loin."); // That is too far away.
 				return;
 			}
 			if (!m_Active)
@@ -979,7 +979,7 @@ namespace Server.Items
 					if (m_OnCredit != 0)
 						DoCashOut(from);
 				}
-                from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Désolé, cette table de jeu est actuellement en maintenance.");
+                from.SendMessage( "Désolé, cette table de jeu est actuellement en maintenance.");
 				return;
 			}
 
@@ -1006,7 +1006,7 @@ namespace Server.Items
                     string tempName = m_InUseBy != null ? m_InUseBy.Name : "Quelqu'un";
 					if (m_InUseBy != null && m_InUseBy != from && m_OnCredit != 0)
 						DoCashOut(m_InUseBy); // Previous user disconnected or something? Give them their cash before releasing.
-                    from.SendMessage(HueManager.GetHue(HueManagerList.Green), "Quelqu'un a laissé cette table inactive trop longtemps, il est maintenant à vous de jouer.", tempName); 
+                    from.SendMessage( "Quelqu'un a laissé cette table inactive trop longtemps, il est maintenant à vous de jouer.", tempName); 
                     InUseBy = from;
 					m_BJInfo.status = GameStatus.Waiting;
 					m_BJInfo.totalhands = m_BJInfo.largesthand = 0;
@@ -1022,7 +1022,7 @@ namespace Server.Items
 			else
 			{
 				string text = String.Format("Quelqu'un utilise présentement la table de jeu.", m_InUseBy.Name);
-                from.SendMessage(HueManager.GetHue(HueManagerList.Red), text);
+                from.SendMessage( text);
 				return;
 			}
 			if (m_TestMode)
@@ -1043,7 +1043,7 @@ namespace Server.Items
 		{
 			if (!from.InRange(this.Location, 10) || !from.InLOS(this))
 			{
-                from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous êtes trop loin de la table de jeu pour y jouer.");
+                from.SendMessage( "Vous êtes trop loin de la table de jeu pour y jouer.");
 				RemovePlayer(from);
 				return;
 			}
@@ -1186,7 +1186,7 @@ namespace Server.Items
 			{
                 string message = string.Format("Encaissement de chèque de {0} de votre sac.", checkamount);
 				Credit(checkamount);
-                from.SendMessage(HueManager.GetHue(HueManagerList.Green), message);
+                from.SendMessage( message);
 				return GetBet(from, amount);
 			}
 			return false;
@@ -1197,7 +1197,7 @@ namespace Server.Items
 			checkamount = 0;
 			if (m == null)
 			{
-                m.SendMessage(HueManager.GetHue(HueManagerList.Red), "Ce jeu a besoin d'entretien.");
+                m.SendMessage( "Ce jeu a besoin d'entretien.");
                 SecurityCamera(0, "Ce jeu a besoin d'entretien.");
 				Active = false;
 				return false;
@@ -1228,7 +1228,7 @@ namespace Server.Items
 					}
 					else
 					{
-                        m.SendMessage(HueManager.GetHue(HueManagerList.Red), "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
+                        m.SendMessage( "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
 						BlackJackOffline(9503);
 						return false;
 					}
@@ -1278,10 +1278,10 @@ namespace Server.Items
 			{
 				if (from.AccessLevel >= AccessLevel.GameMaster) // Allow a GM to clear out the invalid amount
 				{
-                    from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Invalide montant remporté ({0}), réinitialiser à 0.", m_OnCredit);
+                    from.SendMessage( "Invalide montant remporté ({0}), réinitialiser à 0.", m_OnCredit);
 					m_OnCredit = m_Won = 0;
 				}
-                from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
+                from.SendMessage( "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
 				BlackJackOffline(9502);
 				return;
 			}
@@ -1291,11 +1291,11 @@ namespace Server.Items
 				try
 				{
 					from.AddToBackpack(new Gold(m_OnCredit));
-                    from.SendMessage(HueManager.GetHue(HueManagerList.Green), "{0} pièces d'or a été ajouté à votre sac.", m_OnCredit);
+                    from.SendMessage( "{0} pièces d'or a été ajouté à votre sac.", m_OnCredit);
 				}
 				catch
 				{
-                    from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
+                    from.SendMessage( "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
 					BlackJackOffline(9500);
 					return;
 				}
@@ -1305,11 +1305,11 @@ namespace Server.Items
 				try
 				{
 					from.AddToBackpack(new BankCheck(m_OnCredit));
-                    from.SendMessage(HueManager.GetHue(HueManagerList.Green), "Un chèque de banque de {0} pièces d'or a été placé dans votre sac.", m_OnCredit);
+                    from.SendMessage( "Un chèque de banque de {0} pièces d'or a été placé dans votre sac.", m_OnCredit);
 				}
 				catch
 				{
-                    from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
+                    from.SendMessage("Il y a un problème en essayant d'encaisser un chèque dans votre sac à dos, ce jeu est déconnecté. Demandez l'aide d'un Maître de jeu.");
 					BlackJackOffline(9501);
 					return;
 				}
@@ -2060,7 +2060,7 @@ namespace Server.Items
 		{
 			ceobj.PublicOverheadMessage(0, (ceobj.Hue == 907 ? 0 : ceobj.Hue), false, "Blackjack!");
 			if (Utility.RandomDouble() < .005)
-				DoFireworks(from);
+				//DoFireworks(from);
 				switch (Utility.Random(7))
 				{
 					case 0:
@@ -2090,21 +2090,21 @@ namespace Server.Items
 				from.PlaySound(Utility.RandomList(1372, 1373, 1090, 1068, 1053));
 		}
 
-		private static void DoFireworks(Mobile m)
-		{
-			FireworksWand fwand = new FireworksWand();
+		//private static void DoFireworks(Mobile m)
+		//{
+		//	FireworksWand fwand = new FireworksWand();
 
-			if (fwand != null && !fwand.Deleted)
-			{
-				try
-				{
-					fwand.Parent = m;
-					fwand.BeginLaunch(m, true);
-					fwand.Delete();
-				}
-				catch { }
-			}
-		}
+		//	if (fwand != null && !fwand.Deleted)
+		//	{
+		//		try
+		//		{
+		//			fwand.Parent = m;
+		//			fwand.BeginLaunch(m, true);
+		//			fwand.Delete();
+		//		}
+		//		catch { }
+		//	}
+		//}
 
 		private class DealerTimer : Timer
 		{

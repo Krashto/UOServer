@@ -1,4 +1,5 @@
 using System;
+using Server.Items;
 
 namespace Server.Mobiles
 {
@@ -92,8 +93,14 @@ namespace Server.Mobiles
                 m_NextGobble = DateTime.UtcNow + TimeSpan.FromSeconds(Utility.RandomMinMax(20, 240));
             }
         }
-
-        public Turkey(Serial serial) : base(serial)
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<RawTurkey>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<RawTurkeyLeg>(), Utility.RandomMinMax(0, 2));
+			AddLoot(LootPack.LootItem<TurkeyHock>(), Utility.RandomMinMax(0, 2));
+		
+		}
+		public Turkey(Serial serial) : base(serial)
         {
         }
 

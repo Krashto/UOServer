@@ -5,6 +5,7 @@ using Server.Mobiles;
 
 namespace Server.Items
 {
+	[Flipable(0xEFA, 0x2253, 0x2252, 0x2254, 0x238C, 0x23A0, 0x225A, 0x2D50, 0x2D9D)]
 	public class NewSpellbook : Spellbook
 	{
 		private CraftResource m_Resource;

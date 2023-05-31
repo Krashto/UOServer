@@ -38,7 +38,9 @@ namespace Server.Items
             Stackable = false;
             Weight = 1.0;
             FillFactor = 2;
-        }
+			Name = "Motte de wasabi";
+
+		}
 
         public WasabiClumps(Serial serial)
             : base(serial)

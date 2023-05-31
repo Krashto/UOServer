@@ -328,6 +328,7 @@ namespace Server.Items
             Stackable = true;
             Weight = 1.0;
             Amount = amount;
+			Name = "Herbes sèches";
         }
 
         public DriedHerbs(Serial serial)

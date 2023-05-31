@@ -170,7 +170,7 @@ namespace Server
 
 					if (random < 1)
 					{
-						quiver.HitPoints--;
+						//quiver.HitPoints--;
 
 						if (quiver.Deleted)
 						{

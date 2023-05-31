@@ -92,7 +92,7 @@ namespace Server.Poker
 
 				for ( int i = 0; i < toRemove.Count; ++i )
 				{
-                    toRemove[i].Mobile.SendMessage(HueManager.GetHue(HueManagerList.Red), "Le croupier de poker a été mis à l'état inactif par un maître de jeu, et vous êtes maintenant retirés du jeu de poker et être remboursé.");
+                    toRemove[i].Mobile.SendMessage("Le croupier de poker a été mis à l'état inactif par un maître de jeu, et vous êtes maintenant retirés du jeu de poker et être remboursé.");
 					m_Game.RemovePlayer( toRemove[i] );
 				}
 
@@ -142,17 +142,17 @@ namespace Server.Poker
 
 		private void Dress()
 		{
-			AddItem( new ChemiseDistinguee( 0 ) );
+			AddItem( new Shirt( 0 ) );
 
 			Item pants = new LongPants();
 			pants.Hue = 1;
 			AddItem( pants );
 
-			Item shoes = new Souliers();
+			Item shoes = new Shoes();
 			shoes.Hue = 1;
 			AddItem( shoes );
 
-			Item sash = new CeintureTorse();
+			Item sash = new Sash();
 			sash.Hue = 1;
 			AddItem( sash );
 
@@ -188,20 +188,20 @@ namespace Server.Poker
 		public override void OnDoubleClick( Mobile from )
 		{
 			if ( !m_Active )
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
+				from.SendMessage( "Cette table est inactive." );
 			else if ( !InRange( from.Location, 8 ) )
-				from.PrivateOverheadMessage( Server.Network.MessageType.Regular, HueManager.GetHue(HueManagerList.Red), true, "I am too far away to do that", from.NetState );
+				from.SendMessage( "I am too far away to do that" );
 			else if ( m_MinBuyIn == 0 || m_MaxBuyIn == 0 )
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
+				from.SendMessage( "Cette table est inactive." );
 			else if ( m_MinBuyIn > m_MaxBuyIn )
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
+				from.SendMessage( "Cette table est inactive." );
 			else if ( m_Seats.Count < m_MaxPlayers )
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est inactive." );
+				from.SendMessage( "Cette table est inactive." );
 			else if ( m_Game.GetIndexFor( from ) != -1 )
 				return; //TODO: Grab more chips from the player's bankbox
 			else if ( m_Game.Players.Count >= m_MaxPlayers )
 			{
-				from.SendMessage( HueManager.GetHue(HueManagerList.Red), "Cette table est pleine." );
+				from.SendMessage( "Cette table est pleine." );
 				base.OnDoubleClick( from );
 			}
 			else if ( m_Game.Players.Count < m_MaxPlayers )
@@ -222,7 +222,7 @@ namespace Server.Poker
 
 			for ( int i = 0; i < toRemove.Count; ++i )
 			{
-                toRemove[i].Mobile.SendMessage(HueManager.GetHue(HueManagerList.Red), "Le croupier de poker a été supprimé, et vous sont maintenant retirés du jeu de poker et être remboursé.");
+                toRemove[i].Mobile.SendMessage("Le croupier de poker a été supprimé, et vous sont maintenant retirés du jeu de poker et être remboursé.");
 				m_Game.RemovePlayer( toRemove[i] );
 			}
 
@@ -251,14 +251,14 @@ namespace Server.Poker
 						if ( player != null )
 						{
 							game.RemovePlayer( player );
-                            from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Ils ont été retirés de la table de poker.");
+                            from.SendMessage( "Ils ont été retirés de la table de poker.");
 							return;
 						}
 					}
 				}
 			}
 
-            from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Personne n'a été trouvé à cette table de poker. Assurez-vous que vous êtes sur la case du croupier.");
+            from.SendMessage("Personne n'a été trouvé à cette table de poker. Assurez-vous que vous êtes sur la case du croupier.");
 		}
 
 		static void EventSink_Disconnected( DisconnectedEventArgs e )
@@ -312,13 +312,13 @@ namespace Server.Poker
 
 					if ( ((PokerDealer)m).AddPokerSeat( from, seat ) != -1 )
 					{
-                        from.SendMessage(HueManager.GetHue(HueManagerList.Green), "Un nouveau siège a été créé avec succès.");
+                        from.SendMessage( "Un nouveau siège a été créé avec succès.");
 						success = true;
 						break;
 					}
 					else
 					{
-                        from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Il n'y a pas plus de place à la table pour un autre siège. Essayez d'augmenter la valeur de MaxPlayers.");
+                        from.SendMessage( "Il n'y a pas plus de place à la table pour un autre siège. Essayez d'augmenter la valeur de MaxPlayers.");
 						success = true;
 						break;
 					}
@@ -326,7 +326,7 @@ namespace Server.Poker
 			}
 
 			if ( !success )
-                from.SendMessage(HueManager.GetHue(HueManagerList.Red), "Aucun croupier de poker a été trouvé. (Placez-vous sur la case du croupier pour ajouter un siège.)");
+                from.SendMessage( "Aucun croupier de poker a été trouvé. (Placez-vous sur la case du croupier pour ajouter un siège.)");
 		}
 
 		public int AddPokerSeat( Mobile from, Point3D seat )

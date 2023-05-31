@@ -291,6 +291,7 @@ namespace Server.Items
         {
             Stackable = false;
             Weight = 1.0;
+			Name = "Dinde";
         }
 
         public TurkeyPlatter(Serial serial)
@@ -422,6 +423,7 @@ namespace Server.Items
         {
             Weight = 1.0;
             FillFactor = 1;
+			Nmae = "Poitrine de Poulet";
         }
 
         public RoastChicken(Serial serial)

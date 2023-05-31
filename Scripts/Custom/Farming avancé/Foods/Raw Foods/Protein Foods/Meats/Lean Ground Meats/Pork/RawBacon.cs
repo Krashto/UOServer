@@ -16,7 +16,7 @@ namespace Server.Items
         public RawBacon(int amount)
             : base(amount, 0x979)
 		{
-			Name = "Tranche de Bacon cru";
+			Name = "Bacon cru";
 			Weight = 1.0;
 			Stackable = true;
 			Amount = amount;
