@@ -32,7 +32,7 @@ namespace Server
 				{
 					errorString = "You cannot shrink your pet while it is in combat.";
 				}
-				else if (!(t.Controled && t.ControlMaster==from))
+				else if (!(t.Controlled && t.ControlMaster==from))
 				{
 					errorLocalizedMessage = 1042562;	//That is not your pet!
 					errorString = "That is not your pet!";
@@ -64,7 +64,7 @@ namespace Server
 						shrunkenPet.MoveToWorld( new Point3D( t.X, t.Y, t.Z ), t.Map );  // place shrunken pet at current location
 					}
 
-					t.Controled = true;	//To make it so It won't still be a part of a spawner. 
+					t.Controlled = true;	//To make it so It won't still be a part of a spawner. 
 					
 					SendAway( t );
 
@@ -104,7 +104,7 @@ namespace Server
 			b.SetControlMaster( null );
 			b.SummonMaster = null;
 			b.Internalize();
-			b.Controled = true;	//T' make it so It won't still be associated with a spawner.  Only relevent with Unrestricted shrink
+			b.Controlled = true;	//T' make it so It won't still be associated with a spawner.  Only relevent with Unrestricted shrink
 		}
 	}
 }
