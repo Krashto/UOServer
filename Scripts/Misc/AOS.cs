@@ -418,13 +418,13 @@ namespace Server
 				m.Paralyzed = false;
 				m.CantWalk = false;
 
-				if (direct == 0) //Bleed, Force of Nature and Searing Weapon do not reveal attacker
+				if (direct == 0 && from != null) //Bleed, Force of Nature and Searing Weapon do not reveal attacker
 					from.RevealingAction();
 
 				AvatarDuFroidSpell.Deactivate(m);
 			}
 
-			totalDamage = m.Damage(totalDamage, from, true, false);
+			totalDamage = m.Damage(totalDamage, from, true, true);
 
             ExplodingTarPotion.RemoveEffects(m);
 

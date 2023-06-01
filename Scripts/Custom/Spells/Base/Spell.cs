@@ -136,17 +136,20 @@ namespace Server.Spells
 			if (m_Caster is BaseCreature)
 				return;
 
-            //if (CheckHurt)
-            //{
-                CustomPlayerMobile pm = m_Caster as CustomPlayerMobile;
-                double chance = m_Caster.Skills[SkillName.EvalInt].Value / 333;
+			if (CheckHurt)
+			{
+				double chance = m_Caster.Skills[SkillName.EvalInt].Value * 0.0025;
+				chance += m_Caster.Skills[SkillName.Tactics].Value * 0.0025;
 
-                if (chance > Utility.RandomDouble())
+				if (m_Caster is CustomPlayerMobile pm)
+					chance += pm.Capacites.Concentration * 0.05;
+
+				if (chance > Utility.RandomDouble())
                     m_Caster.SendMessage("Vous réussissez à garder votre concentration.");
                 else
                     Disturb(DisturbType.Hurt);
-            //}
-        }
+			}
+		}
 
 		public virtual void OnCasterKilled()
 		{
@@ -448,7 +451,7 @@ namespace Server.Spells
 		public virtual void OnDisturb( DisturbType type, bool message )
 		{
 			if ( message )
-				m_Caster.SendLocalizedMessage( 500641 ); // Your concentration is disturbed, thus ruining thy spell.
+				m_Caster.SendMessage("Votre concentration est perturbée, ruinant ainsi votre sort.");
 		}
 
 		public virtual bool CheckCast()
