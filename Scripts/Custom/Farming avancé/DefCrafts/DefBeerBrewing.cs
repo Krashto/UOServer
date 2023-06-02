@@ -67,42 +67,42 @@ namespace Server.Engines.Craft
 
             index = AddCraft(typeof(LongNeckBottleOfMillerLite), "Long Necks", "a LongNeck Bottle Of Miller Lite", 0.0, 10.4, typeof(SnowHops), "Snow Hops", 2, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfMGD), "Long Necks", "a LongNeck Bottle Of Miller Genuine Draft", 10.0, 20.4, typeof(SweetHops), "Sweet Hops", 2, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfCoolersLite), "Long Necks", "a LongNeck Bottle Of Coolers Lite", 20.0, 35.4, typeof(SnowHops), "Snow Hops", 1, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfBudLight), "Long Necks", "a LongNeck Bottle Of Bud Light", 35.0, 50.4, typeof(BitterHops), "Bitter Hops", 1, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfBudWiser), "Long Necks", "a LongNeck Bottle Of Bud Wiser", 50.0, 65.4, typeof(BitterHops), "Bitter Hops", 2, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfCorna), "Long Necks", "a LongNeck Bottle Of Corna", 65.0, 78.4, typeof(ElvenHops), "Elven Hops", 2, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfCornaLite), "Long Necks", "a LongNeck Bottle Of Corna Lite", 78.0, 90.4, typeof(ElvenHops), "Elven Hops", 1, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
             index = AddCraft(typeof(LongNeckBottleOfWildturkey), "Long Necks", "a LongNeck Bottle Of Wild Turkey", 90.0, 105.4, typeof(SweetHops), "Sweet Hops", 2, "You need more Hops");
             AddRes(index, typeof(BaseBeverage), "Water", 2, "You need more water");
-            AddRes(index, typeof(BrewersYeast), "Brewers Yeast", 1, "You need more Brewers Yeast");
+            AddRes(index, typeof(BrewersYeast), "Levure à Fermentation", 1, "You need more Levure à Fermentation");
             SetNeedDistillery(index, true);
 
 			SetSubRes( typeof( BitterHops ),	"Bitter Hops" );

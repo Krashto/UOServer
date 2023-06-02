@@ -104,10 +104,10 @@ namespace Server.Items
         public static void PlayDrinkEffect(Mobile m)
         {
             m.RevealingAction();
-            m.PlaySound(0x2D6);
-            m.AddToBackpack(new Bottle());
+			m.PlaySound(Utility.Random(0x3A, 3));
+			//m.AddToBackpack(new Bottle());
 
-            if (m.Body.IsHuman && !m.Mounted)
+			if (m.Body.IsHuman && !m.Mounted)
             {
                 m.Animate(AnimationType.Eat, 0);
             }

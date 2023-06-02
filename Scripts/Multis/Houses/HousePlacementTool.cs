@@ -457,53 +457,53 @@ namespace Server.Items
 
         private static readonly HousePlacementEntry[] m_TwoStoryFoundations = new HousePlacementEntry[]
         {
-            new HousePlacementEntry(typeof(HouseFoundation), 1060241,   425,    212,    489,    244,    10, 120000, 0,   4,  0,  0x13EC), // 7x7 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060242,   580,    290,    667,    333,    14, 125000, 0,   5,  0,  0x13ED), // 7x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060243,   650,    325,    748,    374,    16, 130000, 0,   5,  0,  0x13EE), // 7x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060244,   700,    350,    805,    402,    16, 135000, 0,   6,  0,  0x13EF), // 7x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060245,   750,    375,    863,    431,    16, 140000, 0,   6,  0,  0x13F0), // 7x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060246,   800,    400,    920,    460,    18, 145000, 0,   7,  0,  0x13F1), // 7x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060253,   580,    290,    667,    333,    14, 150000, 0,   4,  0,  0x13F8), // 8x7 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060254,   650,    325,    748,    374,    16, 155000, 0,   5,  0,  0x13F9), // 8x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060255,   700,    350,    805,    402,    16, 160000, 0,   5,  0,  0x13FA), // 8x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060256,   750,    375,    863,    431,    16, 165000, 0,   6,  0,  0x13FB), // 8x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060257,   800,    400,    920,    460,    18, 170000, 0,   6,  0,  0x13FC), // 8x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060258,   850,    425,    1265,   632,    24, 175000, 0,   7,  0,  0x13FD), // 8x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060259,   1100,   550,    1265,   632,    24, 180000, 0,   7,  0,  0x13FE), // 8x13 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060265,   650,    325,    748,    374,    16, 185000, 0,   4,  0,  0x1404), // 9x7 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060266,   700,    350,    805,    402,    16, 190000, 0,   5,  0,  0x1405), // 9x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060267,   750,    375,    863,    431,    16, 195000, 0,   5,  0,  0x1406), // 9x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060268,   800,    400,    920,    460,    18, 200000, 0,   6,  0,  0x1407), // 9x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060269,   850,    425,    1265,   632,    24, 205000, 0,   6,  0,  0x1408), // 9x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060270,   1100,   550,    1265,   632,    24, 210000, 0,   7,  0,  0x1409), // 9x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060271,   1100,   550,    1265,   632,    24, 215000, 0,   7,  0,  0x140A), // 9x13 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060277,   700,    350,    805,    402,    16, 220000, 0,   4,  0,  0x1410), // 10x7 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060278,   750,    375,    863,    431,    16, 225000, 0,   5,  0,  0x1411), // 10x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060279,   800,    400,    920,    460,    18, 230000, 0,   5,  0,  0x1412), // 10x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060280,   850,    425,    1265,   632,    24, 235000, 0,   6,  0,  0x1413), // 10x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060281,   1100,   550,    1265,   632,    24, 240000, 0,   6,  0,  0x1414), // 10x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060282,   1100,   550,    1265,   632,    24, 245000, 0,   7,  0,  0x1415), // 10x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060283,   1150,   575,    1323,   661,    24, 250000, 0,   7,  0,  0x1416), // 10x13 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060289,   750,    375,    863,    431,    16, 255000, 0,   4,  0,  0x141C), // 11x7 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060290,   800,    400,    920,    460,    18, 260000, 0,   5,  0,  0x141D), // 11x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060291,   850,    425,    1265,   632,    24, 265000, 0,   5,  0,  0x141E), // 11x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060292,   1100,   550,    1265,   632,    24, 270000, 0,   6,  0,  0x141F), // 11x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060293,   1100,   550,    1265,   632,    24, 275000, 0,   6,  0,  0x1420), // 11x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060294,   1150,   575,    1323,   661,    24, 280000, 0,   7,  0,  0x1421), // 11x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060295,   1200,   600,    1380,   690,    26, 285000, 0,   7,  0,  0x1422), // 11x13 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060301,   800,    400,    920,    460,    18, 290000, 0,   4,  0,  0x1428), // 12x7 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060302,   850,    425,    1265,   632,    24, 295000, 0,   5,  0,  0x1429), // 12x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060303,   1100,   550,    1265,   632,    24, 300000, 0,   5,  0,  0x142A), // 12x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060304,   1100,   550,    1265,   632,    24, 305000, 0,   6,  0,  0x142B), // 12x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060305,   1150,   575,    1323,   661,    24, 310000, 0,   6,  0,  0x142C), // 12x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060306,   1200,   600,    1380,   690,    26, 315000, 0,   7,  0,  0x142D), // 12x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060307,   1250,   625,    1438,   719,    26, 320000, 0,   7,  0,  0x142E), // 12x13 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060314,   1100,   550,    1265,   632,    24, 325000, 0,   5,  0,  0x1435), // 13x8 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060315,   1100,   550,    1265,   632,    24, 330000, 0,   5,  0,  0x1436), // 13x9 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060316,   1150,   575,    1323,   661,    24, 335000, 0,   6,  0,  0x1437), // 13x10 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060317,   1200,   600,    1380,   690,    26, 340000, 0,   6,  0,  0x1438), // 13x11 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060318,   1250,   625,    1438,   719,    26, 345000, 0,   7,  0,  0x1439), // 13x12 2-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060319,   1300,   650,    1495,   747,    28, 350000, 0,  7,  0,  0x143A)// 13x13 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060241,   425,    212,    489,    244,    10, 70000, 0,   4,  0,  0x13EC), // 7x7 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060242,   580,    290,    667,    333,    14, 75000, 0,   5,  0,  0x13ED), // 7x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060243,   650,    325,    748,    374,    16, 80000, 0,   5,  0,  0x13EE), // 7x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060244,   700,    350,    805,    402,    16, 85000, 0,   6,  0,  0x13EF), // 7x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060245,   750,    375,    863,    431,    16, 90000, 0,   6,  0,  0x13F0), // 7x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060246,   800,    400,    920,    460,    18, 95000, 0,   7,  0,  0x13F1), // 7x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060253,   580,    290,    667,    333,    14, 75000, 0,   4,  0,  0x13F8), // 8x7 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060254,   650,    325,    748,    374,    16, 80000, 0,   5,  0,  0x13F9), // 8x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060255,   700,    350,    805,    402,    16, 85000, 0,   5,  0,  0x13FA), // 8x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060256,   750,    375,    863,    431,    16, 90000, 0,   6,  0,  0x13FB), // 8x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060257,   800,    400,    920,    460,    18, 95000, 0,   6,  0,  0x13FC), // 8x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060258,   850,    425,    1265,   632,    24, 100000, 0,   7,  0,  0x13FD), // 8x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060259,   1100,   550,    1265,   632,    24, 105000, 0,   7,  0,  0x13FE), // 8x13 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060265,   650,    325,    748,    374,    16, 80000, 0,   4,  0,  0x1404), // 9x7 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060266,   700,    350,    805,    402,    16, 85000, 0,   5,  0,  0x1405), // 9x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060267,   750,    375,    863,    431,    16, 90000, 0,   5,  0,  0x1406), // 9x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060268,   800,    400,    920,    460,    18, 95000, 0,   6,  0,  0x1407), // 9x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060269,   850,    425,    1265,   632,    24, 100000, 0,   6,  0,  0x1408), // 9x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060270,   1100,   550,    1265,   632,    24, 105000, 0,   7,  0,  0x1409), // 9x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060271,   1100,   550,    1265,   632,    24, 110000, 0,   7,  0,  0x140A), // 9x13 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060277,   700,    350,    805,    402,    16, 85000, 0,   4,  0,  0x1410), // 10x7 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060278,   750,    375,    863,    431,    16, 90000, 0,   5,  0,  0x1411), // 10x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060279,   800,    400,    920,    460,    18, 95000, 0,   5,  0,  0x1412), // 10x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060280,   850,    425,    1265,   632,    24, 100000, 0,   6,  0,  0x1413), // 10x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060281,   1100,   550,    1265,   632,    24, 105000, 0,   6,  0,  0x1414), // 10x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060282,   1100,   550,    1265,   632,    24, 110000, 0,   7,  0,  0x1415), // 10x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060283,   1150,   575,    1323,   661,    24, 115000, 0,   7,  0,  0x1416), // 10x13 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060289,   750,    375,    863,    431,    16, 90000, 0,   4,  0,  0x141C), // 11x7 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060290,   800,    400,    920,    460,    18, 95000, 0,   5,  0,  0x141D), // 11x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060291,   850,    425,    1265,   632,    24, 100000, 0,   5,  0,  0x141E), // 11x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060292,   1100,   550,    1265,   632,    24, 105000, 0,   6,  0,  0x141F), // 11x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060293,   1100,   550,    1265,   632,    24, 110000, 0,   6,  0,  0x1420), // 11x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060294,   1150,   575,    1323,   661,    24, 115000, 0,   7,  0,  0x1421), // 11x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060295,   1200,   600,    1380,   690,    26, 120000, 0,   7,  0,  0x1422), // 11x13 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060301,   800,    400,    920,    460,    18, 95000, 0,   4,  0,  0x1428), // 12x7 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060302,   850,    425,    1265,   632,    24, 100000, 0,   5,  0,  0x1429), // 12x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060303,   1100,   550,    1265,   632,    24, 105000, 0,   5,  0,  0x142A), // 12x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060304,   1100,   550,    1265,   632,    24, 110000, 0,   6,  0,  0x142B), // 12x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060305,   1150,   575,    1323,   661,    24, 115000, 0,   6,  0,  0x142C), // 12x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060306,   1200,   600,    1380,   690,    26, 120000, 0,   7,  0,  0x142D), // 12x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060307,   1250,   625,    1438,   719,    26, 125000, 0,   7,  0,  0x142E), // 12x13 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060314,   1100,   550,    1265,   632,    24, 105000, 0,   5,  0,  0x1435), // 13x8 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060315,   1100,   550,    1265,   632,    24, 110000, 0,   5,  0,  0x1436), // 13x9 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060316,   1150,   575,    1323,   661,    24, 115000, 0,   6,  0,  0x1437), // 13x10 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060317,   1200,   600,    1380,   690,    26, 120000, 0,   6,  0,  0x1438), // 13x11 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060318,   1250,   625,    1438,   719,    26, 125000, 0,   7,  0,  0x1439), // 13x12 2-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060319,   1300,   650,    1495,   747,    28, 130000, 0,  7,  0,  0x143A)// 13x13 2-Story Customizable House
         };
 
         private static readonly HousePlacementEntry[] m_ThreeStoryFoundations = new HousePlacementEntry[]
@@ -523,44 +523,44 @@ namespace Server.Items
             new HousePlacementEntry(typeof(HouseFoundation), 1060322,   1370,   685,    1576,   788,    28, 290000, 0,  9,  0,  0x143D), // 13x16 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060323,   2119,   1059,   2437,   1218,   42, 295000, 0,  9,  0,  0x143E), // 13x17 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060324,   2119,   1059,   2437,   1218,   42, 300000, 0,  10, 0,  0x143F), // 13x18 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060327,   1150,   575,    1323,   661,    24, 305000, 0,   5,  0,  0x1442), // 14x9 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060328,   1200,   600,    1380,   690,    26, 310000, 0,   6,  0,  0x1443), // 14x10 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060329,   1250,   625,    1438,   719,    26, 315000, 0,   6,  0,  0x1444), // 14x11 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060330,   1300,   650,    1495,   747,    28, 320000, 0,  7,  0,  0x1445), // 14x12 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060331,   1350,   675,    1553,   776,    28, 325000, 0,  7,  0,  0x1446), // 14x13 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060327,   1150,   575,    1323,   661,    24, 230000, 0,   5,  0,  0x1442), // 14x9 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060328,   1200,   600,    1380,   690,    26, 235000, 0,   6,  0,  0x1443), // 14x10 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060329,   1250,   625,    1438,   719,    26, 245000, 0,   6,  0,  0x1444), // 14x11 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060330,   1300,   650,    1495,   747,    28, 260000, 0,  7,  0,  0x1445), // 14x12 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060331,   1350,   675,    1553,   776,    28, 280000, 0,  7,  0,  0x1446), // 14x13 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060332,   1370,   685,    1576,   788,    28, 330000, 0,  8,  0,  0x1447), // 14x14 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060333,   1370,   685,    1576,   788,    28, 335000, 0,  8,  0,  0x1448), // 14x15 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060334,   2119,   1059,   2437,   1218,   42, 340000, 0,  9,  0,  0x1449), // 14x16 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060335,   2119,   1059,   2437,   1218,   42, 345000, 0,  9,  0,  0x144A), // 14x17 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060336,   2119,   1059,   2437,   1218,   42, 350000, 0,  10, 0,  0x144B), // 14x18 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060340,   1250,   625,    1438,   719,    26, 355000, 0,   6,  0,  0x144F), // 15x10 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060341,   1300,   650,    1495,   747,    28, 360000, 0,  6,  0,  0x1450), // 15x11 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060342,   1350,   675,    1553,   776,    28, 365000, 0,  7,  0,  0x1451), // 15x12 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060343,   1370,   685,    1576,   788,    28, 370000, 0,  7,  0,  0x1452), // 15x13 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060344,   1370,   685,    1576,   788,    28, 375000, 0,  8,  0,  0x1453), // 15x14 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060340,   1250,   625,    1438,   719,    26, 240000, 0,   6,  0,  0x144F), // 15x10 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060341,   1300,   650,    1495,   747,    28, 250000, 0,  6,  0,  0x1450), // 15x11 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060342,   1350,   675,    1553,   776,    28, 265000, 0,  7,  0,  0x1451), // 15x12 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060343,   1370,   685,    1576,   788,    28, 285000, 0,  7,  0,  0x1452), // 15x13 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060344,   1370,   685,    1576,   788,    28, 335000, 0,  8,  0,  0x1453), // 15x14 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060345,   2119,   1059,   2437,   1218,   42, 380000, 0,  8,  0,  0x1454), // 15x15 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060346,   2119,   1059,   2437,   1218,   42, 385000, 0,  9,  0,  0x1455), // 15x16 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060347,   2119,   1059,   2437,   1218,   42, 390000, 0,  9,  0,  0x1456), // 15x17 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060348,   2119,   1059,   2437,   1218,   42, 395000, 0,  10, 0,  0x1457), // 15x18 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060353,   1350,   675,    1553,   776,    28, 400000, 0,  6,  0,  0x145C), // 16x11 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060354,   1370,   685,    1576,   788,    28, 405000, 0,  7,  0,  0x145D), // 16x12 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060355,   1370,   685,    1576,   788,    28, 410000, 0,  7,  0,  0x145E), // 16x13 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060356,   2119,   1059,   2437,   1218,   42, 415000, 0,  8,  0,  0x145F), // 16x14 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060357,   2119,   1059,   2437,   1218,   42, 420000, 0,  8,  0,  0x1460), // 16x15 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060353,   1350,   675,    1553,   776,    28, 255000, 0,  6,  0,  0x145C), // 16x11 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060354,   1370,   685,    1576,   788,    28, 270000, 0,  7,  0,  0x145D), // 16x12 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060355,   1370,   685,    1576,   788,    28, 290000, 0,  7,  0,  0x145E), // 16x13 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060356,   2119,   1059,   2437,   1218,   42, 340000, 0,  8,  0,  0x145F), // 16x14 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060357,   2119,   1059,   2437,   1218,   42, 385000, 0,  8,  0,  0x1460), // 16x15 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060358,   2119,   1059,   2437,   1218,   42, 425000, 0,  9,  0,  0x1461), // 16x16 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060359,   2119,   1059,   2437,   1218,   42, 430000, 0,  9,  0,  0x1462), // 16x17 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060360,   2119,   1059,   2437,   1218,   42, 435000, 0,  10, 0,  0x1463), // 16x18 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060366,   1370,   685,    1576,   788,    28, 440000, 0,  7,  0,  0x1469), // 17x12 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060367,   2119,   1059,   2437,   1218,   42, 445000, 0,  7,  0,  0x146A), // 17x13 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060368,   2119,   1059,   2437,   1218,   42, 450000, 0,  8,  0,  0x146B), // 17x14 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060369,   2119,   1059,   2437,   1218,   42, 455000, 0,  8,  0,  0x146C), // 17x15 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060370,   2119,   1059,   2437,   1218,   42, 460000, 0,  9,  0,  0x146D), // 17x16 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060366,   1370,   685,    1576,   788,    28, 275000, 0,  7,  0,  0x1469), // 17x12 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060367,   2119,   1059,   2437,   1218,   42, 295000, 0,  7,  0,  0x146A), // 17x13 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060368,   2119,   1059,   2437,   1218,   42, 345000, 0,  8,  0,  0x146B), // 17x14 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060369,   2119,   1059,   2437,   1218,   42, 390000, 0,  8,  0,  0x146C), // 17x15 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060370,   2119,   1059,   2437,   1218,   42, 430000, 0,  9,  0,  0x146D), // 17x16 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060371,   2119,   1059,   2437,   1218,   42, 465000, 0,  9,  0,  0x146E), // 17x17 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060372,   2119,   1059,   2437,   1218,   42, 470000, 0,  10, 0,  0x146F), // 17x18 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060379,   2119,   1059,   2437,   1218,   42, 475000, 0,  7,  0,  0x1476), // 18x13 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060380,   2119,   1059,   2437,   1218,   42, 480000, 0,  8,  0,  0x1477), // 18x14 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060381,   2119,   1059,   2437,   1218,   42, 485000, 0,  8,  0,  0x1478), // 18x15 3-Story Customizable House
-            new HousePlacementEntry(typeof(HouseFoundation), 1060382,   2119,   1059,   2437,   1218,   42, 490000, 0,  9,  0,  0x1479), // 18x16 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060372,   2119,   1059,   2437,   1218,   42, 495000, 0,  10, 0,  0x146F), // 17x18 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060379,   2119,   1059,   2437,   1218,   42, 300000, 0,  7,  0,  0x1476), // 18x13 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060380,   2119,   1059,   2437,   1218,   42, 350000, 0,  8,  0,  0x1477), // 18x14 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060381,   2119,   1059,   2437,   1218,   42, 395000, 0,  8,  0,  0x1478), // 18x15 3-Story Customizable House
+            new HousePlacementEntry(typeof(HouseFoundation), 1060382,   2119,   1059,   2437,   1218,   42, 435000, 0,  9,  0,  0x1479), // 18x16 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060383,   2119,   1059,   2437,   1218,   42, 495000, 0,  9,  0,  0x147A), // 18x17 3-Story Customizable House
             new HousePlacementEntry(typeof(HouseFoundation), 1060384,   2119,   1059,   2437,   1218,   42, 500000, 0,  10, 0,  0x147B),// 18x18 3-Story Customizable House
 

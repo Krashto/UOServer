@@ -1,4 +1,5 @@
-﻿using Server.Items;
+﻿using Server.Custom.Packaging.Packages;
+using Server.Items;
 using System;
 
 namespace Server.Engines.Craft
@@ -138,6 +139,8 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(WheatWort), "Ingrédients secs", "Mout de Blé", 0.0, 20.0, typeof(SackFlour), "Sac de Farine", 1, "Vous n'avez pas suffisament de sac de farine");
 			AddRes(index, typeof(Pitcher), "Eau", 5, "Vous n'avez pas suffisament d'eau");
 			index = AddCraft(typeof(Yeast), "Ingrédients secs", "Levure", 0.0, 20.0, typeof(SackFlour), "Sac de Farine", 1, "Vous n'avez pas suffisament de sac de farine");
+			AddRes(index, typeof(Pitcher), "Eau", 5, "Vous n'avez pas suffisament d'eau");
+			index = AddCraft(typeof(BrewersYeast), "Ingrédients secs", "Levure à fermentation", 0.0, 20.0, typeof(SackFlour), "Sac de Farine", 1, "Vous n'avez pas suffisament de sac de farine");
 			AddRes(index, typeof(Pitcher), "Eau", 5, "Vous n'avez pas suffisament d'eau");
 			index = AddCraft(typeof(DriedOnions), "Ingrédients secs", "Onions Déshydratés", 20.0, 40.0, typeof(Onion), "Onions", 5, 1044253);
 			index = AddCraft(typeof(DriedHerbs), "Ingrédients secs", "Herbes sèches", 20.0, 40.0, typeof(Garlic), "Garlic", 2, 1044253);
@@ -510,11 +513,11 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(Pitcher), 1046458, 1, 1044253);
 			index = AddCraft(typeof(UnbakedQuiche), "Préparations repas", "Quiche crue", 20.0, 50.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(Eggs), 1044477, 1, 1044253);
-			index = AddCraft(typeof(AsianVegMix), "Préparations repas", "Mélange de Légumes Asiatique", 60.0, 20.0, typeof(Cabbage), "Cabbage", 1, 1044253);
+			index = AddCraft(typeof(AsianVegMix), "Préparations repas", "Mélange de Légumes Asiatique", 50.0, 70.0, typeof(Cabbage), "Cabbage", 1, 1044253);
 			AddRes(index, typeof(Onion), "Onion", 1, 1044253);
 			AddRes(index, typeof(RedMushroom), "Red Mushroom", 1, "You need a Red Mushroom");
 			AddRes(index, typeof(Carrot), "Carrot", 1, 1044253);
-			index = AddCraft(typeof(MixedVegetables), "Préparations repas", "Mélange de Légumes", 60.0, 20.0, typeof(Potato), "Potato", 2, 1044253);
+			index = AddCraft(typeof(MixedVegetables), "Préparations repas", "Mélange de Légumes", 50.0, 70.0, typeof(Potato), "Potato", 2, 1044253);
 			AddRes(index, typeof(Carrot), "Carrot", 1, 1044253);
 			AddRes(index, typeof(Celery), "Celery", 1, 1044253);
 			AddRes(index, typeof(Onion), "Onion", 1, 1044253);
@@ -526,7 +529,7 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(CheeseWheel), 1044486, 1, 1044253);
 			index = AddCraft(typeof(PotatoStrings), "Préparations repas", "Lanière de Patate", 70.0, 20.0, typeof(Potato), "Potato", 1, 1044253);
 			SetNeedOven(index, true);
-			index = AddCraft(typeof(TacoShell), "Préparations repas", "Coquille de Taco", 60.0, 20.0, typeof(Tortilla), "Tortilla", 1, 1044253);
+			index = AddCraft(typeof(TacoShell), "Préparations repas", "Coquille de Taco", 50.0, 70.0, typeof(Tortilla), "Tortilla", 1, 1044253);
 			SetNeedHeat(index, true);
 			#endregion
 
@@ -535,7 +538,7 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(JarHoney), "Miel", 1, 1044253);
 			index = AddCraft(typeof(CakeMix), "Préparations desserts", "Mélange à gâteau", 40.0, 75.0, typeof(SackFlourOpen), "Sac de farine ouvert", 1, 1151092);
 			AddRes(index, typeof(SweetDough), "Pâte sucrée", 1, 1044253);
-			index = AddCraft(typeof(PieMix), "Préparations desserts", "Mélange à tarte", 60.0, 20.0, typeof(Dough), 1044469, 1, 1044253);
+			index = AddCraft(typeof(PieMix), "Préparations desserts", "Mélange à tarte", 50.0, 70.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(Butter), "Butter", 1, 1044253);
 			//AddRecipe(index, (int)CookRecipesExp.PieMix);
 			index = AddCraft(typeof(ChocolateMix), "Préparations desserts", "Mélange chocolaté", 45.0, 100.0, typeof(Dough), 1044469, 1, 1044253);
@@ -547,14 +550,14 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(CocoaButter), "Beurre de cacao", 1, 1044253);
 			SetItemHue(index, 0x457);
 			SetNeedOven(index, true);
-			index = AddCraft(typeof(WaffleMix), "Préparations desserts", "Mélange à Gaufres", 60.0, 20.0, typeof(Dough), 1044469, 1, 1044253);
+			index = AddCraft(typeof(WaffleMix), "Préparations desserts", "Mélange à Gaufres", 50.0, 70.0, typeof(Dough), 1044469, 1, 1044253);
 			AddRes(index, typeof(Eggs), "Eggs", 2, 1044253);
 			AddRes(index, typeof(CookingOil), "Cooking Oil", 1, 1044253);
-			index = AddCraft(typeof(BowlCornFlakes), "Préparations desserts", "Bol de Corn Flakes", 60.0, 20.0, typeof(BagOfCornmeal), "Bag of Cornmeal", 1, 1044253);
+			index = AddCraft(typeof(BowlCornFlakes), "Préparations desserts", "Bol de Corn Flakes", 10.0, 30.0, typeof(BagOfCornmeal), "Bag of Cornmeal", 1, 1044253);
 			AddRes(index, typeof(Pitcher), 1046458, 1, 1044253);
 			//AddRecipe(index, (int)CookRecipesExp.BowlCornFlakes);
 
-			index = AddCraft(typeof(BowlRiceKrisps), "Préparations desserts", "Bol de Rice Krisps", 60.0, 20.0, typeof(BagOfRicemeal), "Bag of Ricemeal", 1, 1044253);
+			index = AddCraft(typeof(BowlRiceKrisps), "Préparations desserts", "Bol de Rice Krisps", 50.0, 70.0, typeof(BagOfRicemeal), "Bag of Ricemeal", 1, 1044253);
 			AddRes(index, typeof(Pitcher), 1046458, 1, 1044253);
 			index = AddCraft(typeof(UnbakedFruitPie), "Préparations desserts", "Tarte aux fruits crue", 40.0, 75.0, typeof(Dough), "Pâte", 1, 1044253);
 			AddRes(index, typeof(Pear), "Poire", 1, 1044253);
@@ -915,7 +918,7 @@ namespace Server.Engines.Craft
 			AddRes(index, typeof(Pitcher), 1046458, 1, 1044253);
 			////AddRecipe(index, (int)CookRecipesExp.Tortilla);
 			SetNeedOven(index, true);
-			index = AddCraft(typeof(PizzaCrust), "Pâtisserie/Boulangerie", "Pizza Crust", 60.0, 20.0, typeof(Dough), 1044469, 1, 1044253);
+			index = AddCraft(typeof(PizzaCrust), "Pâtisserie/Boulangerie", "Pizza Crust", 50.0, 70.0, typeof(Dough), 1044469, 1, 1044253);
 			//AddRecipe(index, (int)CookRecipesExp.PizzaCrust);
 			index = AddCraft(typeof(BreadLoaf), "Pâtisserie/Boulangerie", "Miche de pain", 70.0, 90.0, typeof(Dough), "Pâte", 1, 1044253);
 			SetNeedOven(index, true);
@@ -1117,11 +1120,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(GreenTea), "Meli Melo", "Thé Vert", 80.0, 120.0, typeof(GreenTeaBasket), 1030316, 1, 1044253);
 			AddRes(index, typeof(Pitcher), 1046458, 1, 1044253);	
 			SetNeedOven(index, true);
-			index = AddCraft(typeof(FruitBasket), "Meli Melo", "Panier de Fruits", 60.0, 20.0, typeof(Apple), "Apple", 5, 1044253);
+			index = AddCraft(typeof(FruitBasket), "Meli Melo", "Panier de Fruits", 50.0, 70.0, typeof(Apple), "Apple", 5, 1044253);
 			AddRes(index, typeof(Peach), "Peach", 5, 1044253);
 			AddRes(index, typeof(Pear), "Pear", 5, 1044253);
 			AddRes(index, typeof(Cherry), "Cherries", 5, 1044253);
-			index = AddCraft(typeof(Tofu), "Meli Melo", "Tofu", 60.0, 20.0, typeof(BagOfSoy), "Bag of Soy", 1, 1044253);
+			index = AddCraft(typeof(Tofu), "Meli Melo", "Tofu", 50.0, 70.0, typeof(BagOfSoy), "Bag of Soy", 1, 1044253);
 
 			index = AddCraft(typeof(ChocSunflowerSeeds), "Meli Melo", "Graine de tournesol au chocolat", 70.0, 20.0, typeof(EdibleSun), "Sunflower Seeds", 1, 1044253);
 			AddRes(index, typeof(BagOfCocoa), "Bag of Cocoa", 1, "you need a bag oc cocoa");
@@ -1149,11 +1152,67 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(NaturalDye), "Teinture", "Teinture naturelle", 65.0, 115.0, typeof(PlantPigment), "Pigment de plante", 1, 1044253);
 			AddRes(index, typeof(ColorFixative), "Fixateur de couleur", 1, 1044253);
 			SetRequireResTarget(index);
-			index = AddCraft(typeof(WoodPulp), "Teinture", "Pulpe de bois", 60.0, 20.0, typeof(BarkFragment), "Morceau d’écorce", 1, 1044253);
+			index = AddCraft(typeof(WoodPulp), "Teinture", "Pulpe de bois", 50.0, 70.0, typeof(BarkFragment), "Morceau d’écorce", 1, 1044253);
 			AddRes(index, typeof(Pitcher), 1046458, 1, 1044253);
 			index = AddCraft(typeof(Charcoal), "Teinture", "Charbon", 0.0, 50.0, typeof(RegularBoard), "Planche", 1, 1044351);
 			SetUseAllRes(index, true);
 			SetNeedHeat(index, true);
+			#endregion
+
+			#region Essences
+			index = AddCraft(typeof(EssenceAeromancie), "Essences", "Essence Aeromancie", 50.0, 70.0, typeof(SlipperyElm), "Orme Glissante", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceDefenseur), "Essences", "Essence Defenseur", 50.0, 70.0, typeof(Mugwort), "Armoise Commune", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceGeomancie), "Essences", "Essence Geomancie", 50.0, 70.0, typeof(WillowBark), "Écorce de Saule", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceGuerison), "Essences", "Essence Guerison", 50.0, 70.0, typeof(Chamomile), "Camomille", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceMartial), "Essences", "Essence Martial", 50.0, 70.0, typeof(Clove), "Clou de Girofle", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceMusique), "Essences", "Essence Musique", 50.0, 70.0, typeof(Myrrh), "Gomme D'épinette", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceNecromancie), "Essences", "Essence Necromancie", 50.0, 70.0, typeof(Patchouli), "Patchouli", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+		
+			index = AddCraft(typeof(EssenceChasseur), "Essences", "Essence Chasseur", 50.0, 70.0, typeof(Sandelwood), "Bois de Santal", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceHydromancie), "Essences", "Essence Hydromancie", 50.0, 70.0, typeof(Valerian), "Valériane", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssencePolymorphie), "Essences", "Essence polymorphie", 50.0, 70.0, typeof(Lavender), "Lavande", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssencePyromancie), "Essences", "Essence Pyromancie", 50.0, 70.0, typeof(Dragonsblood), "Sang de Dragon", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceRoublardise), "Essences", "Essence Roublardise", 50.0, 70.0, typeof(Meadowsweet), "Reine-Des-Prés", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+			index = AddCraft(typeof(EssenceTotemique), "Essences", "Essence Totemique", 50.0, 70.0, typeof(Caraway), "Cumin", 1, 1044253);
+			AddRes(index, typeof(Materiaux), "Matériaux", 1, "Vous n'avez pas suffisament de matériaux");
+			SetNeedHeat(index, true);
+
+
 			#endregion
 		}
 	}

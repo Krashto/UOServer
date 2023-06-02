@@ -2084,7 +2084,7 @@ namespace Server.Mobiles
 					}
 				}
 
-				if (from.InRange(this, 10))
+				if (from.InRange(this, 2))
 				{
 					list.Add(new CallbackEntry(1077728, () => OpenTrade(from))); // Trade
 				}

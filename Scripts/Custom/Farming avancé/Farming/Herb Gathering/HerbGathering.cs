@@ -39,10 +39,10 @@ namespace Server.Engines.Harvest
 			herb.ConsumedPerHarvest = 1;
 			herb.ConsumedPerFeluccaHarvest = 1;
 
-			herb.EffectActions = new int[]{ 32 };
+			herb.EffectActions = new int[]{ 9 };
 			herb.EffectSounds = new int[]{ 0x4F };
 			herb.EffectCounts = new int[]{ 1, 1, 1, 1, 2 };
-			herb.EffectDelay = TimeSpan.FromSeconds( 0.7 );
+			herb.EffectDelay = TimeSpan.FromSeconds( 1.5 );
 			herb.EffectSoundDelay = TimeSpan.FromSeconds( 0.7 );
 
 			herb.NoResourcesMessage = "Il n'y a rien à récolter ici.";
@@ -65,12 +65,12 @@ namespace Server.Engines.Harvest
 				new HarvestResource( 60.0, 60.0, 60.0, "Vous déposez un peu de clou de girofle dans votre sac.", typeof( Clove ) ),
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de résine dans votre sac.", typeof( Copal ) ),
 				new HarvestResource( 60.0, 60.0, 60.0, "Vous déposez un peu de cerfeuil dans votre sac.", typeof( Coriander ) ),
-				new HarvestResource( 70.0, 70.0, 70.0, "Vous déposez un peu de aneth dans votre sac.", typeof( Dill ) ),
+				new HarvestResource( 20.0, 20.0, 20.0, "Vous déposez un peu de aneth dans votre sac.", typeof( Dill ) ),
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de sang de dragon dans votre sac.", typeof( Dragonsblood ) ),
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de encens dans votre sac.", typeof( Frankincense ) ),
-				new HarvestResource( 70.0, 70.0, 70.0, "Vous déposez un peu de lavande dans votre sac.", typeof( Lavender ) ),
+				new HarvestResource( 20.0, 20.0, 20.0, "Vous déposez un peu de lavande dans votre sac.", typeof( Lavender ) ),
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de marjolaine dans votre sac.", typeof( Marjoram ) ),
-				new HarvestResource( 70.0, 70.0, 70.0, "Vous déposez un peu de reine-des-prés dans votre sac.", typeof( Meadowsweet ) ),
+				new HarvestResource( 20.0, 20.0, 20.0, "Vous déposez un peu de reine-des-prés dans votre sac.", typeof( Meadowsweet ) ),
 				new HarvestResource( 10.0, 10.0, 10.0,  "Vous déposez un peu de menthe dans votre sac.", typeof( Mint ) ),
 				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de armoise commune dans votre sac.", typeof( Mugwort ) ),
 				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de graine de moutarde dans votre sac.", typeof( Mustard ) ),

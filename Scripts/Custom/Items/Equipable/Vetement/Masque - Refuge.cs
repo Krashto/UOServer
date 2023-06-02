@@ -60,7 +60,7 @@ public class Masque2 :  BaseHat
 
 		{
 		Weight = 2.0;
-		Name = "Masque";
+		Name = "Masque Ossement d'élan";
 	}
 
 	public Masque2(Serial serial)
@@ -102,7 +102,7 @@ public class Masque3 :  BaseHat
 
 		{
 		Weight = 2.0;
-		Name ="Masque";
+		Name = "Masque Crâne";
 	}
 
 	public Masque3(Serial serial)
@@ -144,7 +144,7 @@ public class Masque4 :  BaseHat
 
 		{
 		Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque Crâne à piques";
 		}
 
 	public Masque4(Serial serial)
@@ -186,7 +186,7 @@ public class Masque5 :  BaseHat
 
 		{
 		Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque du Sage à cornes";
 		}
 
 	public Masque5(Serial serial)
@@ -228,7 +228,7 @@ public class Masque6 :  BaseHat
 
 		{
 		Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque de plumes fines";
 		}
 
 	public Masque6(Serial serial)
@@ -270,7 +270,7 @@ public class Masque7 :  BaseHat
 
 		{
 		Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque simple";
 		}
 
 	public Masque7(Serial serial)
@@ -312,7 +312,7 @@ public class Masque8 :  BaseHat
 
 		{
 		Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque Vénitien";
 		}
 
 	public Masque8(Serial serial)
@@ -355,7 +355,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque-foulard";
 		}
 
 		public Masque9(Serial serial)
@@ -398,7 +398,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Lunettes d'aveugle";
 		}
 
 		public Masque10(Serial serial)
@@ -440,7 +440,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Bandeau oeil droit";
 		}
 
 		public Masque11(Serial serial)
@@ -483,7 +483,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque Crâne à foulard";
 		}
 
 		public Masque12(Serial serial)
@@ -526,7 +526,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque de soirée";
 		}
 
 		public Masque13(Serial serial)
@@ -568,7 +568,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque Festif";
 		}
 
 		public Masque14(Serial serial)
@@ -610,7 +610,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque du phénix";
 		}
 
 		public Masque15(Serial serial)
@@ -652,7 +652,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque simple à foulard";
 		}
 
 		public Masque16(Serial serial)
@@ -695,7 +695,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque doré";
 		}
 
 		public Masque17(Serial serial)
@@ -738,7 +738,7 @@ public override void Deserialize(GenericReader reader)
 
 		{
 			Weight = 2.0;
-			Name = "Masque";
+			Name = "Masque partiel orné";
 		}
 
 		public Masque18(Serial serial)
