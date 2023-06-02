@@ -53,17 +53,28 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 			{
 				SpellHelper.Turn(Caster, m);
 
-				double toHeal = Utility.RandomMinMax(5, 7);
-
-				toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Guerison);
-
-				if (InquisitionSpell.IsActive(Caster))
-					toHeal *= 1.5;
-
 				if (CustomUtility.IsMobileUndead(m))
-					SpellHelper.Damage(this, m, toHeal, 0, 0, 0, 0, 100);
+				{
+					double damage = Utility.RandomMinMax(5, 7);
+
+					damage = SpellHelper.AdjustValue(Caster, damage, Aptitude.Guerison);
+
+					if (InquisitionSpell.IsActive(Caster))
+						damage *= 1.25;
+
+					SpellHelper.Damage(this, m, damage, 0, 0, 0, 0, 100);
+				}
 				else
+				{
+					double toHeal = Utility.RandomMinMax(5, 7);
+
+					toHeal = SpellHelper.AdjustValue(Caster, toHeal, Aptitude.Guerison);
+
+					if (InquisitionSpell.IsActive(Caster))
+						toHeal *= 1.5;
+
 					m.Heal((int)toHeal);
+				}
 
 				CustomUtility.ApplySimpleSpellEffect(m, "Main cicatrisante", AptitudeColor.Guerison, SpellEffectType.Heal);
 			}
