@@ -153,21 +153,21 @@ namespace Server.Mobiles
 
 
 
-		public override int Damage(int amount, Mobile from, bool informMount, bool checkDisrupt)
-        {
-            int dam = base.Damage(amount, from, informMount, checkDisrupt);
+		//public override int Damage(int amount, Mobile from, bool informMount, bool checkDisrupt)
+  //      {
+  //          int dam = base.Damage(amount, from, informMount, checkDisrupt);
 
-            if (!BlockReflect && from != null && dam > 0)
-            {
-                BlockReflect = true;
-                AOS.Damage(from, this, dam, 0, 0, 0, 0, 0, 0, 100);
-                BlockReflect = false;
+  //          if (!BlockReflect && from != null && dam > 0)
+  //          {
+  //              BlockReflect = true;
+  //              AOS.Damage(from, this, dam, 0, 0, 0, 0, 0, 0, 100);
+  //              BlockReflect = false;
 
-                from.PlaySound(0x1F1);
-            }
+  //              from.PlaySound(0x1F1);
+  //          }
 
-            return dam;
-        }
+  //          return dam;
+  //      }
 		public override int Level => 8;
 		public override Biome Biome => Biome.Colline;
 		
