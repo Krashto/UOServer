@@ -55,7 +55,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				if (CustomUtility.IsMobileUndead(m))
 				{
-					double damage = Utility.RandomMinMax(5, 7);
+					double damage = Utility.RandomMinMax(3, 4);
 
 					damage = SpellHelper.AdjustValue(Caster, damage, Aptitude.Guerison);
 
