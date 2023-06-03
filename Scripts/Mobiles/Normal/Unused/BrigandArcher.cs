@@ -13,6 +13,8 @@ namespace Server.Mobiles
 			SpeechHue = Utility.RandomDyedHue();
             Title = " Brigand";
            	Race = BaseRace.GetRace(Utility.Random(4));
+			ForceActiveSpeed = 0.20;
+			ForcePassiveSpeed = 0.20;
 
 			if (Female = Utility.RandomBool())
             {
@@ -43,6 +45,7 @@ namespace Server.Mobiles
             SetSkill(SkillName.Archery, 65.0, 87.5);
             SetSkill(SkillName.Tactics, 65.0, 87.5);
             SetSkill(SkillName.Wrestling, 15.0, 37.5);
+			
 
 			Utility.AssignRandomHair(this);
         }
@@ -51,6 +54,8 @@ namespace Server.Mobiles
             : base(serial)
         {
         }
+
+		
 		public override int Level => 6;
 		public override Biome Biome => Biome.Colline;
 		public override TribeType Tribe => TribeType.Brigand;

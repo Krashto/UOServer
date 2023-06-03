@@ -61,6 +61,11 @@ namespace Server.Items
 				from.SendMessage("Vous ne pouvez pas recycler des pièces d'or.");
 				return;
 			}
+			else if (item is PieceArgent)
+			{
+				from.SendMessage("Vous ne pouvez pas recycler des pièces d'argent.");
+				return;
+			}
 			else if (item.CheckNewbied() || item.Insured || item.PayedInsurance)
 			{
 				from.SendMessage($"Vous ne pouvez pas recycler {item.Name}, car cet item est assuré ou béni.");

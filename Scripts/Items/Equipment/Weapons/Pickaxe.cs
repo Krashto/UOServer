@@ -12,6 +12,7 @@ namespace Server.Items
             UsesRemaining = 50;
             ShowUsesRemaining = true;
 			Name = "Pioche";
+			Layer = Layer.TwoHanded;
 
 		}
 

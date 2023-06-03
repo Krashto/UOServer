@@ -37,9 +37,20 @@ namespace Server.Items
             if (HarvestSystem == null || Deleted)
                 return;
 
+
             Point3D loc = GetWorldLocation();
 
-            if (!from.InLOS(loc) || !from.InRange(loc, 2))
+			if (IsChildOf(from.Backpack) || Parent == from)
+			{
+
+				bool isPickAxe = this is Pickaxe;
+
+				if (isPickAxe && Parent != from)
+				{
+					from.SendMessage("Vous devez avoir l'outil en main pour l'utiliser."); // That must be in your pack for you to use it.
+				}
+
+				if (!from.InLOS(loc) || !from.InRange(loc, 2))
             {
                 from.LocalOverheadMessage(Network.MessageType.Regular, 0x3E9, 1019045); // I can't reach that
                 return;
@@ -54,9 +65,11 @@ namespace Server.Items
                 from.SendLocalizedMessage(1010018); // What do you want to use this item on?
 
             HarvestSystem.BeginHarvesting(from, this);
-        }
+		}
+	}
 
-        public override void GetContextMenuEntries(Mobile from, List<ContextMenuEntry> list)
+
+		public override void GetContextMenuEntries(Mobile from, List<ContextMenuEntry> list)
         {
             base.GetContextMenuEntries(from, list);
 

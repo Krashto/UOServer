@@ -71,6 +71,8 @@ namespace Server.Items
                     resource = weapon.Resource;
                 else if (targeted is BaseShoes shoes)
                     resource = shoes.Resource;
+				else if (targeted is BaseClothing clothing)
+					resource = clothing.Resource;
 				else if (targeted is NewSpellbook spellbook)
 					resource = spellbook.Resource;
 				else
