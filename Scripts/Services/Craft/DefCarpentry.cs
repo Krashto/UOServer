@@ -215,20 +215,32 @@ namespace Server.Engines.Craft
 			#region Instruments
 			index = AddCraft(typeof(LapHarp), "Instruments", "Petite harpe", 10.0, 30.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 10, 1044287);
-			index = AddCraft(typeof(RuneLute), "Instruments", "Luth fin", 50.0, 70.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(RuneLute), "Instruments", "Luth fin", 10.0, 30.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			AddRes(index, typeof(Cloth), "Cloth", 5, "You do not have enough cloth to make that.");
-			index = AddCraft(typeof(Harp), "Instruments", "Grande Harpe", 40.0, 60.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(Harp), "Instruments", "Grande Harpe", 10.0, 30.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 5, 1044287);
-			index = AddCraft(typeof(Drums), "Instruments", "Tambour", 50.0, 70.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(Drums), "Instruments", "Tambour", 10.0, 30.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 5, 1044287);
-			index = AddCraft(typeof(Lute), "Instruments", "Luth", 30.0, 50.0, typeof(RegularBoard), 1044041, 5, 1044351);
+			index = AddCraft(typeof(Lute), "Instruments", "Luth", 10.0, 30.0, typeof(RegularBoard), 1044041, 5, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 5, 1044287);
-			index = AddCraft(typeof(Tambourine), "Instruments", "Tambourine", 60.0, 85.0, typeof(RegularBoard), 1044041, 15, 1044351);
+			index = AddCraft(typeof(Tambourine), "Instruments", "Tambourine", 30.0, 60.0, typeof(RegularBoard), 1044041, 15, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 5, 1044287);
-			index = AddCraft(typeof(TambourineTassel), "Instruments", "Tambourine décorée", 75.0, 100.0, typeof(RegularBoard), 1044041, 15, 1044351);
+			index = AddCraft(typeof(TambourineTassel), "Instruments", "Tambourine décorée", 30.0, 60.0, typeof(RegularBoard), 1044041, 15, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 5, 1044287);
-			index = AddCraft(typeof(BambooFlute), "Instruments", "Flûte de bambou", 80.0, 100.0, typeof(RegularBoard), 1044041, 15, 1044351);
-			index = AddCraft(typeof(AudChar), "Instruments", "Aude-Char", 80.0, 100.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			index = AddCraft(typeof(BambooFlute), "Instruments", "Flûte de bambou", 30.0, 60.0, typeof(RegularBoard), 1044041, 15, 1044351);
+			index = AddCraft(typeof(AudChar), "Instruments", "Aude-Char", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
+			index = AddCraft(typeof(Guitare), "Instruments", "Guitare", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
+			index = AddCraft(typeof(HarpeLongue), "Instruments", "Harpe Longue", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
+			index = AddCraft(typeof(CelloDeed), "Instruments", "Cello", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
+			index = AddCraft(typeof(TrumpetDeed), "Instruments", "Trompette", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
+			index = AddCraft(typeof(pianomodernAddonDeed), "Instruments", "Piano (E)", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
+			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
+			index = AddCraft(typeof(pianomodern2AddonDeed), "Instruments", "Piano (S)", 30.0, 60.0, typeof(RegularBoard), 1044041, 35, 1044351);
 			AddRes(index, typeof(Cloth), 1044286, 15, 1044287);
 			#endregion Instruments
 

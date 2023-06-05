@@ -1,3 +1,5 @@
+using Server.Items;
+
 namespace Server.Mobiles
 {
     [CorpseName("Le Corps d'une Poule")]
@@ -43,8 +45,12 @@ namespace Server.Mobiles
             ControlSlots = 1;
             MinTameSkill = -0.9;
         }
-
-        public Chicken(Serial serial)
+		public override void GenerateLoot()
+		{
+			AddLoot(LootPack.LootItem<ChickenLeg>(), Utility.RandomMinMax(2, 2));
+			
+		}
+		public Chicken(Serial serial)
             : base(serial)
         {
         }

@@ -122,7 +122,7 @@ namespace Server.Items
             : base(itemID)
         {
             m_UsesRemaining = uses;
-            m_Quality = ItemQuality.Normal;
+            //m_Quality = ItemQuality.Normal;
         }
 
         public BaseTool(Serial serial)

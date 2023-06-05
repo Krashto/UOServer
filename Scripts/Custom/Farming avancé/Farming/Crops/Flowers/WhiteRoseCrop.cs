@@ -22,7 +22,7 @@ namespace Server.Items.Crops
 
 		public override void OnDoubleClick( Mobile from )
 		{
-			Sow(from, typeof(BlackRoseSeedling));
+			Sow(from, typeof(WhiteRoseSeedling));
 		}
 
 		public WhiteRoseSeed( Serial serial ) : base( serial ) { }

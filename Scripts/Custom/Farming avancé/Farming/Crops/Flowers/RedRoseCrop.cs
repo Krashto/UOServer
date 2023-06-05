@@ -70,7 +70,7 @@ namespace Server.Items.Crops
 		{
 			Movable = false;
 			Name = "Plant de rose rouge";
-			Hue = 1676;
+			Hue = 2118;
 			Sower = sower;
 			Init(this, 1, 0x234C, 0x234D, false);
 		}

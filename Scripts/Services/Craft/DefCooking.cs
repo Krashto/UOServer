@@ -244,6 +244,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(VenisonRoast), "Viandes", "Rôtis de cerf", 25.0, 70.0, typeof(RawVenisonRoast), "Rôtis de cerf cru", 1, "You need more Raw Venison Roast");
 			////AddRecipe(index, (int)CookRecipesExp.VenisonRoast);
 			SetNeedHeat(index, true);
+			index = AddCraft(typeof(VenisonRoastSlices), "Viandes", "Viande hachée de cerf", 25.0, 70.0, typeof(RawGroundVenison), "Viande Hachée de cerf crue", 1, "You need more Raw ground venison");
+			////AddRecipe(index, (int)CookRecipesExp.VenisonRoast);
+			SetNeedHeat(index, true);
+
 			#endregion
 
 			#region Boeuf

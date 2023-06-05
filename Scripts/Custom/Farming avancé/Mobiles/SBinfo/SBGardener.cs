@@ -36,7 +36,7 @@ namespace Server.Mobiles
 				////	this.Add( new GenericBuyInfo( typeof( GreaterStrengthPotion ), 45, 20, 0xF09, 0 ) );
 				////	this.Add( new GenericBuyInfo( typeof( GreaterHealPotion ), 45, 20, 0xF0C, 0 ) );
 				///
-
+				this.Add(new GenericBuyInfo("Baie Tribale", typeof(TribalBerry), 5, 25, 0x9D0, 0));
 				this.Add(new GenericBuyInfo("Gingembre frais", typeof(FreshGinger), 5, 20, 0x2BE3, 0));
 				this.Add(new GenericBuyInfo("Asparagus Seed", typeof(AsparagusSeed), 5, 20, 0xF27, 0));
                 this.Add(new GenericBuyInfo("Beet Seed", typeof(BeetSeed), 5, 20, 0xF27, 0));

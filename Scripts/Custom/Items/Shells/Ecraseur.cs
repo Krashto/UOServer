@@ -37,7 +37,7 @@ namespace Server.Items
             {
                 BaseShell shell = (BaseShell)o;
 
-                shell.ScissorHelper(from, new PoudreCoquillages(), 1, false);
+                shell.ScissorHelper(from, new PoudreCoquillages(3), 1, false);
             }
             else
             {

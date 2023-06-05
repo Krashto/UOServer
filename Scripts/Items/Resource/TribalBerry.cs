@@ -21,6 +21,7 @@ namespace Server.Items
             Stackable = true;
             Amount = amount;
             Hue = 6;
+			Name = "Baie Tribale";
         }
 
         public TribalBerry(Serial serial)

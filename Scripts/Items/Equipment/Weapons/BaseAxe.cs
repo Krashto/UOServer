@@ -32,41 +32,30 @@ namespace Server.Items
 
 		public virtual HarvestSystem HarvestSystem { get { return CustomLumberjacking.GetSystem(this); } }
 
-        public override void OnDoubleClick(Mobile from)
-        {
-            if (HarvestSystem == null || Deleted)
-                return;
+		public override void OnDoubleClick(Mobile from)
+		{
+			if (HarvestSystem == null || Deleted)
+				return;
 
+			Point3D loc = GetWorldLocation();
 
-            Point3D loc = GetWorldLocation();
-
-			if (IsChildOf(from.Backpack) || Parent == from)
+			if (!from.InLOS(loc) || !from.InRange(loc, 2))
 			{
+				from.LocalOverheadMessage(Network.MessageType.Regular, 0x3E9, 1019045); // I can't reach that
+				return;
+			}
+			else if (!IsAccessibleTo(from))
+			{
+				PublicOverheadMessage(Network.MessageType.Regular, 0x3E9, 1061637); // You are not allowed to access 
+				return;
+			}
 
-				bool isPickAxe = this is Pickaxe;
-
-				if (isPickAxe && Parent != from)
-				{
-					from.SendMessage("Vous devez avoir l'outil en main pour l'utiliser."); // That must be in your pack for you to use it.
-				}
-
-				if (!from.InLOS(loc) || !from.InRange(loc, 2))
-            {
-                from.LocalOverheadMessage(Network.MessageType.Regular, 0x3E9, 1019045); // I can't reach that
-                return;
-            }
-            else if (!IsAccessibleTo(from))
-            {
-                PublicOverheadMessage(Network.MessageType.Regular, 0x3E9, 1061637); // You are not allowed to access 
-                return;
-            }
-
-            if (!(HarvestSystem is Mining || HarvestSystem is CustomMining))
+			if (!(HarvestSystem is Mining || HarvestSystem is CustomMining))
                 from.SendLocalizedMessage(1010018); // What do you want to use this item on?
 
             HarvestSystem.BeginHarvesting(from, this);
 		}
-	}
+	
 
 
 		public override void GetContextMenuEntries(Mobile from, List<ContextMenuEntry> list)

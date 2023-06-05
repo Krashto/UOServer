@@ -87,7 +87,8 @@ namespace Server.Engines.Harvest
 				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de orme glissante dans votre sac.", typeof( SlipperyElm ) ),
 				new HarvestResource( 10.0, 10.0, 10.0,  "Vous déposez un peu de thym dans votre sac.", typeof( Thyme ) ),
 				new HarvestResource( 30.0, 30.0, 30.0, "Vous déposez un peu de valériane dans votre sac.", typeof( Valerian ) ),
-				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de écorce de saule dans votre sac.", typeof( WillowBark ) )
+				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de écorce de saule dans votre sac.", typeof( WillowBark ) ),
+				new HarvestResource( 50.0, 50.0, 50.0, "Vous déposez un peu de baie tribale dans votre sac.", typeof( TribalBerry ) )
 			};
 
 			veins = new HarvestVein[]
@@ -127,6 +128,7 @@ namespace Server.Engines.Harvest
 				new HarvestVein( 5.0, 0.1, res[32], res[0] ),
 				new HarvestVein( 5.0, 0.1, res[33], res[0] ),
 				new HarvestVein( 5.0, 0.1, res[34], res[0] ),
+				new HarvestVein( 5.0, 0.1, res[35], res[0] ),
 			};
 
 			herb.Resources = res;

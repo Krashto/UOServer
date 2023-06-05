@@ -51,14 +51,14 @@ namespace Server.Custom.Spells.NewSpells.Hydromancie
 					if (m is BaseCreature)
 					{
 						if (AvatarDuFroidSpell.IsActive(Caster))
-							m.Damage(m.Hits - (m.HitsMax * 20 / 200)); // m.Damage(m.Hits - (m.HitsMax * 35 / 100))
+							m.Damage(m.Hits - (m.HitsMax * 70 / 100));
 						else
-							m.Damage(m.Hits - (m.HitsMax * 10 / 200)); // m.Damage(m.Hits - (m.HitsMax * 25 / 100)); 
+							m.Damage(m.Hits - (m.HitsMax * 80 / 100)); 
 						CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
 					}
 					else
 					{
-						m.Damage(m.Hits - (m.HitsMax * 50 / 100));
+						m.Damage(m.Hits - (m.HitsMax * 90 / 100));
 						CustomUtility.ApplySimpleSpellEffect(m, "Cerveau gele", AptitudeColor.Hydromancie, SpellEffectType.Damage);
 					}
 				}

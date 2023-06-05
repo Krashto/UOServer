@@ -2,6 +2,7 @@
 
 using System;
 using Server;
+using Server.Gumps;
 using Server.Items;
 
 namespace Server.Items
@@ -37,7 +38,18 @@ namespace Server.Items
 		public pianomodern2Addon( Serial serial ) : base( serial )
 		{
 		}
-
+		public override void OnComponentUsed(AddonComponent ac, Mobile from)
+		{
+			if (!from.InRange(GetWorldLocation(), 1))
+				from.SendMessage("You are too far away to use that!");
+			else if (from.Mounted)
+				from.SendMessage("You cannot play the piano while mounted!");
+			else
+			{
+				if (!from.HasGump(typeof(SynthGump)))
+					from.SendGump(new SynthGump(from));
+			}
+		}
 
 		public override void Serialize( GenericWriter writer )
 		{
