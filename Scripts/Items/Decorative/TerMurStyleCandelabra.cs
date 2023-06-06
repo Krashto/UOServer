@@ -14,7 +14,7 @@ namespace Server.Items
             Duration = TimeSpan.Zero; // Never burnt out
             Burning = false;
             Light = LightType.Circle225;
-            Weight = 10.0;
+            Weight = 3.0;
 			Name = "Chandelier élégant";
 
 		}

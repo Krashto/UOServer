@@ -164,8 +164,9 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Butter), "Ingrédients humides", "Beurre", 20.0, 60.0, typeof(Cream), "Cream", 1, 1044253);
 			////AddRecipe(index, (int)CookRecipesExp.Butter);
 			SetNeedHeat(index, true);
-			index = AddCraft(typeof(Cream), "Ingrédients humides", "Crème", 20.0, 60.0, typeof(Pitcher), "Lait", 5, 1044253);
-			////AddRecipe(index, (int)CookRecipesExp.Cream);
+			index = AddCraft(typeof(Cream), "Ingrédients humides", "Crème", 20.0, 60.0, typeof(Vanilla), "Lait", 1, 1044253);
+			AddRes(index, typeof(Pitcher), 1022544, 1, 1044253);
+			SetBeverageType(index, BeverageType.Milk);
 			SetNeedHeat(index, true);
 			index = AddCraft(typeof(CookingOil), "Ingrédients humides", "Huile d'arachide", 25.0, 60.0, typeof(Peanut), "Peanut", 10, 1044253);
 			////AddRecipe(index, (int)CookRecipesExp.CookingOil);

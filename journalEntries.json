@@ -1,5 +1,13 @@
 [
   {
+    "Id": "af0887e2-f0e3-49d3-8d50-aa6a30a5b281",
+    "Visible": true,
+    "WriterName": "Nimue",
+    "Title": "- Avis de Recherches - Melkior Poings d'Acier",
+    "Content": "La Compagnie du Kraken d'Or, en chargerie de la recherchettée de Masque Noireau, demandouille l'aidement de tout habitanteur du Fortinage qui aurait des informationnements sur le \"dangereux Masque Noir\". \n\r\n\rIl affectionneraitiserait particulièrement les beaux objetements et les richesseries de compagneries. Il rôderouillerait entre le fortinage et des catacombetées... Gare-à-vousez vous!\n\r\n\rMerci de contactasser Melkior, responsabilisateur des projetteries de la Compagnie Kraken d'Or et enquêtateur sur cette affairement des plus loucheuses. ",
+    "DateCreated": "2023-06-02T20:01:16.8319801-04:00"
+  },
+  {
     "Id": "150e4015-bf84-4ec4-861f-e26895a171d7",
     "Visible": true,
     "WriterName": "Nimue",
@@ -416,11 +424,11 @@
     "DateCreated": "2023-03-23T12:34:56.789Z"
   },
   {
-    "Id": "af0887e2-f0e3-49d3-8d50-aa6a30a5b281",
+    "Id": "abe50031-e2f4-4dcc-8934-b5f5e02035e6",
     "Visible": true,
     "WriterName": "Nimue",
-    "Title": "- Avis de Recherches - Melkior Poings d'Acier",
-    "Content": "La Compagnie du Kraken d'Or, en chargerie de la recherchettée de Masque Noireau, demandouille l'aidement de tout habitanteur du Fortinage qui aurait des informationnements sur le \"dangereux Masque Noir\". \n\r\n\rIl affectionneraitiserait particulièrement les beaux objetements et les richesseries de compagneries. Il rôderouillerait entre le fortinage et des catacombetées... Gare-à-vousez vous!\n\r\n\rMerci de contactasser Melkior, responsabilisateur des projetteries de la Compagnie Kraken d'Or et enquêtateur sur cette affairement des plus loucheuses. ",
-    "DateCreated": "2023-06-02T20:01:16.8319801-04:00"
+    "Title": "Le chant du cygne du Madrigal - Garance Renart",
+    "Content": "Grand spectacle dit aussi grand scandale. La tête d’affiche Tristan Madrigal se serait présenté non pas pour jouer sur scène, mais injurier à la remise des prix. \n\r\n\rE effet, le barde fit une apparition tardive et surprenante tandis que les numéros musicaux grandioses de Basile Sonnet et Gault avaient eu cours...\n\r\n\rIl ouvrit la bouche devant la conseillère culturelle non pas pour chanter... mais pour la traiter de plus grande manipulatrice de Colognan, et même pire encore.\n\r\n\rTristan Madrigal aura gagné sa célébrité au prix fort. On peut se questionner, quel sort lui réservera le Conseil s’il revenait au Fortin après ces invectives? ",
+    "DateCreated": "2023-06-05T22:16:46.3353212-04:00"
   }
 ]
