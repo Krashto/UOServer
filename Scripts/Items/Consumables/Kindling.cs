@@ -11,7 +11,7 @@ namespace Server.Items
 
 		[Constructable]
         public Kindling()
-            : this(1)
+            : this(5)
         {
         }
 

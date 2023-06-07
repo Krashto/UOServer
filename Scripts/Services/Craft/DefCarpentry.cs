@@ -109,9 +109,15 @@ namespace Server.Engines.Craft
 		}
 
 		public override void PlayCraftEffect(Mobile from)
-		{
-			from.PlaySound(0x23D);
-		}
+		
+			{
+				if (from.Body.Type == BodyType.Human && !from.Mounted)
+					from.Animate(9, 5, 1, true, false, 0);
+
+				from.PlaySound(0x23D);
+			}
+			
+		
 
 		public override int PlayEndingEffect(Mobile from, bool failed, bool lostMaterial, bool toolBroken, int quality, bool makersMark, CraftItem item)
 		{

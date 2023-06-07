@@ -74,9 +74,9 @@ namespace Server.Engines.Craft
 
 		public override void PlayCraftEffect(Mobile from)
 		{
-			// no animation
-			//if ( from.Body.Type == BodyType.Human && !from.Mounted )
-			//	from.Animate( 33, 5, 1, true, false, 0 );
+			 //no animation
+			if ( from.Body.Type == BodyType.Human && !from.Mounted )
+				from.Animate( 33, 5, 1, true, false, 0 );
 			from.PlaySound(0x55);
 		}
 
@@ -112,18 +112,18 @@ namespace Server.Engines.Craft
 			int index = -1;
 
 			#region Munitions
-			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (1)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
+			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (5)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			index = AddCraft(typeof(Kindling), "Munitions", "Brindilles (Max)", 0.0, 20.0, typeof(RegularBoard), 1044041, 1, 1044351);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Shaft), "Munitions", "Fût (1)", 0.0, 20.0, typeof(RegularBoard), "Planche", 1, "Vous n'avez pas suffisament de planche");
+			index = AddCraft(typeof(Shaft), "Munitions", "Fût (5)", 0.0, 20.0, typeof(RegularBoard), "Planche", 1, "Vous n'avez pas suffisament de planche");
 			index = AddCraft(typeof(Shaft), "Munitions", "Fût (Max)", 0.0, 20.0, typeof(RegularBoard), "Planche", 1, "Vous n'avez pas suffisament de planche");
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Arrow), "Munitions", "Flèche (1)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
+			index = AddCraft(typeof(Arrow), "Munitions", "Flèche (5)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			index = AddCraft(typeof(Arrow), "Munitions", "Flèche (Max)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			SetUseAllRes(index, true);
-			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux (1)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
+			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux (5)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);
 			index = AddCraft(typeof(Bolt), "Munitions", "Carreaux (Max)", 10.0, 30.0, typeof(Shaft), 1044560, 1, 1044561);
 			AddRes(index, typeof(Feather), 1044562, 1, 1044563);

@@ -1,5 +1,21 @@
 [
   {
+    "Id": "66bd83aa-df6b-4edb-ae30-0b5ba3d529d1",
+    "Visible": true,
+    "WriterName": "Nimue",
+    "Title": "La morte-vivante - Garance Renart",
+    "Content": "La conseillère Chrimationis va à merveille, hurlaient les crieurs le matin. La conseillère économique est morte, vive la conseillère économique, criait-on le soir.\n\r\n\rIl faut se faire une idée. Pourquoi mentir avec tant d’aplomb, et affirmer la conseillère pimpante de santé dans son odeur de nécrose? À vivre dans le déni, on creuse sa propre tombe. \n\r\n\rPas besoin d’avoir goûté le soi-disant grand buffet  aux odeurs de décomposition pour tirer la moue. Nous qui avons survécu aux feux du ciel, pouvons encaisser la vérité.\n\r\n\rDès lors, les condoléances de mise dites, il importe de penser à l’après. La sécurité de ceux qui restent, et aussi au bon maintien des charges de la défunte dame.",
+    "DateCreated": "2023-06-06T23:36:40.2576368-04:00"
+  },
+  {
+    "Id": "abe50031-e2f4-4dcc-8934-b5f5e02035e6",
+    "Visible": true,
+    "WriterName": "Nimue",
+    "Title": "Le chant du cygne du Madrigal - Garance Renart",
+    "Content": "Grand spectacle dit aussi grand scandale. La tête d’affiche Tristan Madrigal se serait présenté non pas pour jouer sur scène, mais injurier à la remise des prix. \n\r\n\rE effet, le barde fit une apparition tardive et surprenante tandis que les numéros musicaux grandioses de Basile Sonnet et Gault avaient eu cours...\n\r\n\rIl ouvrit la bouche devant la conseillère culturelle non pas pour chanter... mais pour la traiter de plus grande manipulatrice de Colognan, et même pire encore.\n\r\n\rTristan Madrigal aura gagné sa célébrité au prix fort. On peut se questionner, quel sort lui réservera le Conseil s’il revenait au Fortin après ces invectives? ",
+    "DateCreated": "2023-06-05T22:16:46.3353212-04:00"
+  },
+  {
     "Id": "af0887e2-f0e3-49d3-8d50-aa6a30a5b281",
     "Visible": true,
     "WriterName": "Nimue",
@@ -424,11 +440,11 @@
     "DateCreated": "2023-03-23T12:34:56.789Z"
   },
   {
-    "Id": "abe50031-e2f4-4dcc-8934-b5f5e02035e6",
+    "Id": "da8aafe3-883b-4d4c-aa86-e67e3672071a",
     "Visible": true,
     "WriterName": "Nimue",
-    "Title": "Le chant du cygne du Madrigal - Garance Renart",
-    "Content": "Grand spectacle dit aussi grand scandale. La tête d’affiche Tristan Madrigal se serait présenté non pas pour jouer sur scène, mais injurier à la remise des prix. \n\r\n\rE effet, le barde fit une apparition tardive et surprenante tandis que les numéros musicaux grandioses de Basile Sonnet et Gault avaient eu cours...\n\r\n\rIl ouvrit la bouche devant la conseillère culturelle non pas pour chanter... mais pour la traiter de plus grande manipulatrice de Colognan, et même pire encore.\n\r\n\rTristan Madrigal aura gagné sa célébrité au prix fort. On peut se questionner, quel sort lui réservera le Conseil s’il revenait au Fortin après ces invectives? ",
-    "DateCreated": "2023-06-05T22:16:46.3353212-04:00"
+    "Title": "Un concours de...concours - Garance Renart",
+    "Content": "On voit une rude compétition poindre, quand il s’agit de concours. Mais pouvait-on croire, qu’un jour des compétitions similaires se mesureraient?\n\r\n\rEn effet, la compétition culinaire du gouverneur demandant aux participants de lui soumettre un quatre services a une rivale écrasante, ce n’est pas peu dire.\n\r\n\rLa grande quête des Insatiables pour trouver le meilleur chef cuisinier de tout-Colognan avant le 11 du mois serait bien plus demandante, avec ses 11 services, plus chanson. \n\r\n\rLe concours lancé par Uggvard Vifvent, réputé pour être le plus fin gourmet de notre Fortin, écrasera-t-il celui du gouverneur de tout son poids?",
+    "DateCreated": "2023-06-06T23:37:46.8919739-04:00"
   }
 ]
