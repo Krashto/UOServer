@@ -191,11 +191,14 @@ namespace Server.Engines.Craft
 				if (minSkill < 0)
                     minSkill = 0;
 
-				AddLabel(170, 132, LabelHue, $"Niveau d'aptitude:");
-				if (minSkill >= 50)
-					AddLabel(430, 132, LabelHue, $"{(int)((minSkill - 45) / 5)}");
-				else
-					AddLabel(430, 132, LabelHue, "0");
+				if (skill.SkillToMake != SkillName.Cooking)
+				{
+					AddLabel(170, 132, LabelHue, $"Niveau d'aptitude:");
+					if (minSkill >= 50)
+						AddLabel(430, 132, LabelHue, $"{(int)((minSkill - 45) / 5)}");
+					else
+						AddLabel(430, 132, LabelHue, "0");
+				}
 
 				if (m_CraftItem.ItemType.BaseType == typeof(BaseSouvenirPotion))
 				{

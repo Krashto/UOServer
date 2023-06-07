@@ -71,7 +71,7 @@ namespace Server.CustomScripts.Systems.Experience
 
         public const int ExpGainPerTick = 200;
         public const int MaxExpAllowedByDay = 1000;
-		public int MaxExpRetard => ((new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 18, 0, 0) - new DateTime(CustomPersistence.Ouverture.Year, CustomPersistence.Ouverture.Month, CustomPersistence.Ouverture.Day, 18, 0, 0)).Days + 1) * MaxExpAllowedByDay;
+		public int MaxExpRetard => ((new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 17, 59, 59) - new DateTime(CustomPersistence.Ouverture.Year, CustomPersistence.Ouverture.Month, CustomPersistence.Ouverture.Day, 17, 59, 59)).Days + 1) * MaxExpAllowedByDay;
 
         [CommandProperty(AccessLevel.GameMaster)]
 		public int Exp { get; set; }
@@ -110,8 +110,8 @@ namespace Server.CustomScripts.Systems.Experience
 			m_From = from;
 
 			NextTickExp = DateTime.Now.AddMinutes(Experience.Interval_Minutes);
-            ExpToGainBank = MaxExpAllowedByDay;
-        }
+			ResetTicks();
+		}
 
         public void ResetTicks()
         {
@@ -122,8 +122,14 @@ namespace Server.CustomScripts.Systems.Experience
 
 			if (ExpToGainBank + Exp > MaxExpRetard)
 			{
-				Exp = MaxExpRetard;
-				ExpToGainBank = 0;
+				if (Exp > MaxExpRetard)
+				{
+					Exp = MaxExpRetard;
+					ExpToGainBank = 0;
+				}
+				else
+					ExpToGainBank = MaxExpRetard - Exp;
+
 				Niveau = Experience.GetLevelByExp(m_From);
 				m_From.Validate(CustomPlayerMobile.ValidateType.All);
 				m_From.Aptitudes.Reset();

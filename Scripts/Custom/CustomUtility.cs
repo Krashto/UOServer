@@ -256,7 +256,7 @@ namespace Server.Custom
 				.Where(type => baseType.IsAssignableFrom(type) && /*type != baseType && */!type.IsAbstract/* && type.IsValueType && type.GetConstructor(Type.EmptyTypes) != null*/)
 				.ToArray();
 
-			var rnd = Utility.Random(0, itemList.Length - 1);
+			var rnd = Utility.RandomMinMax(0, itemList.Length - 1);
 			Item item = null;
 			try { item = Activator.CreateInstance(itemList[rnd]) as Item; }
 			catch { return null; }
@@ -264,7 +264,7 @@ namespace Server.Custom
 		}
 		public static Item GetRandomItemFromList(List<Type> itemList)
 		{
-			var rnd = Utility.Random(0, itemList.Count - 1);
+			var rnd = Utility.RandomMinMax(0, itemList.Count - 1);
 			Item item = null;
 			try { item = Activator.CreateInstance(itemList[rnd]) as Item; }
 			catch { return null; }

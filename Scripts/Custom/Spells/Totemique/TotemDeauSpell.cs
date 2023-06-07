@@ -30,7 +30,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if (!BaseTotem.CanSummonTotemType(Caster, typeof(TotemDeau)))
+			if (!BaseTotem.CanSummonTotemType(Caster, typeof(BaseTotemDeau)))
 			{
 				Caster.SendMessage("Vous avez déjà ce type de totem.");
 				return false;

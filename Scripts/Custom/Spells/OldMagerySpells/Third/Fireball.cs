@@ -1,7 +1,6 @@
 using Server.Mobiles;
 using Server.Targeting;
 using System;
-
 namespace Server.Spells.Third
 {
     public class FireballSpell : MagerySpell
@@ -40,10 +39,11 @@ namespace Server.Spells.Third
             {
                 SpellHelper.Turn(Caster, m);
 
-                double damage = 0;
-                damage = GetNewAosDamage(mob, 19, 1, 5, mob is PlayerMobile);
+                double damage = GetNewAosDamage(mob, 19, 1, 5, mob is PlayerMobile);
 
-                if (damage > 0)
+				SpellHelper.CheckReflect((int)SpellCircle.Third, Caster, ref mob);
+
+				if (damage > 0)
                 {
                     Caster.MovingParticles(m, 0x36D4, 7, 0, false, true, 9502, 4019, 0x160);
                     Caster.PlaySound(0x15E);

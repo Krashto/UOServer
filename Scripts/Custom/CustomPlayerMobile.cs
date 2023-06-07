@@ -268,6 +268,7 @@ namespace Server.Mobiles
 				return;
 
 			Classes.SetBaseAndCapSkills(pm, pm.Experience.Niveau);
+			pm.Experience.ResetTicks();
 
 			pm.Hunger = 20;
 			pm.Thirst = 20;

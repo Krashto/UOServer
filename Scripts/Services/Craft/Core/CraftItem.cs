@@ -1615,7 +1615,7 @@ namespace Server.Engines.Craft
 
 				var aptitude = Aptitudes.GetAptitudeNameBySkillName(craftSkill.SkillToMake);
 
-				if (pm != null && craftSkill.MinSkill >= 50 && aptitude != (Aptitude)(-1) && pm.Aptitudes[aptitude] < (int)((craftSkill.MinSkill - 45) / 5))
+				if (craftSkill.SkillToMake != SkillName.Cooking && pm != null && craftSkill.MinSkill >= 50 && aptitude != (Aptitude)(-1) && pm.Aptitudes[aptitude] < (int)((craftSkill.MinSkill - 45) / 5))
 					allRequiredSkills = false;
 
 				if (valSkill < minSkill)

@@ -24,7 +24,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			if (!base.CheckCast())
 				return false;
 
-			if (!BaseTotem.CanSummonTotemType(Caster, typeof(TotemDeFeu)))
+			if (!BaseTotem.CanSummonTotemType(Caster, typeof(BaseTotemDeFeu)))
 			{
 				Caster.SendMessage("Vous avez déjà ce type de totem.");
 				return false;

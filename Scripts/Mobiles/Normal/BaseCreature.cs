@@ -5131,13 +5131,13 @@ namespace Server.Mobiles
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(ParagonChest));
 				if (item is ParagonChest pc)
 				{
-					pc.Fill(Utility.Random(Level / 6, 1 + (Level / 5)));
+					pc.Fill(Utility.RandomMinMax(Level / 6, 1 + (Level / 5)));
 					AddLoot(item);
 				}
 			}
 
 			//Dungeon Chests
-			if (Level >= 11 && (Utility.Random(0, 100) < (Level * 5)))
+			if (Level >= 11 && (Utility.RandomMinMax(0, 100) < (Level * 5)))
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(ParagonChest));
 				if (item is ParagonChest pc)
@@ -5148,7 +5148,7 @@ namespace Server.Mobiles
 			}
 
 			//Souvenirs
-			if (Level >= 11 && (Utility.Random(0, 100) < (Level * 5)))
+			if (Level >= 11 && (Utility.RandomMinMax(0, 100) < (Level * 5)))
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseSouvenir));
 				if (item is BaseSouvenir bs)
@@ -5156,7 +5156,7 @@ namespace Server.Mobiles
 			}
 
 			//Treasure Maps
-			if (Utility.Random(0, 1000) < Level)
+			if (Utility.RandomMinMax(0, 1000) < Level)
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseTreasureMapPart));
 				if (item != null)
@@ -5164,9 +5164,9 @@ namespace Server.Mobiles
 			}
 
 			//Portraits
-			if (Utility.Random(0, 10000) < Level)
+			if (Utility.RandomMinMax(0, 10000) < Level)
 			{
-				var rnd = Utility.Random(1, 9);
+				var rnd = Utility.RandomMinMax(1, 9);
 				switch (rnd)
 				{
 					default:
@@ -5182,7 +5182,7 @@ namespace Server.Mobiles
 			}
 
 			//Weapons
-			if (Utility.Random(0, 100) < Level * 5)
+			if (Utility.RandomMinMax(0, 100) < Level * 5)
 			{
 				for (int i = 0; i <= Level / 2; i++)
 				{
@@ -5203,7 +5203,7 @@ namespace Server.Mobiles
 				if (item != null)
 					AddLoot(item);
 
-				if (Utility.Random(0, 100) < Level * 5)
+				if (Utility.RandomMinMax(0, 100) < Level * 5)
 				{
 					item = CustomUtility.GetRandomItemByBaseType(typeof(BaseReagent));
 					item.Amount = 5 + Level;
@@ -5213,7 +5213,7 @@ namespace Server.Mobiles
 			}
 
 			//Body parts
-			if (Utility.Random(0, 100) < Level * 5)
+			if (Utility.RandomMinMax(0, 100) < Level * 5)
 			{
 				var item = CustomUtility.GetRandomItemFromList(new List<Type>() { typeof(LeftArm), typeof(RightArm), typeof(Torso), typeof(RightLeg), typeof(LeftLeg) });
 				if (item != null)
@@ -5221,7 +5221,7 @@ namespace Server.Mobiles
 			}
 
 			//Statues
-			if (Utility.Random(0, 1000) < Level)
+			if (Utility.RandomMinMax(0, 1000) < Level)
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(Statue));
 				if (item != null)
@@ -5229,7 +5229,7 @@ namespace Server.Mobiles
 			}
 
 			//Artifacts
-			if (Utility.Random(0, 1000) < Level)
+			if (Utility.RandomMinMax(0, 1000) < Level)
 			{
 				var item = CustomUtility.GetRandomItemByBaseType(typeof(BaseDecorationArtifact));
 				if (item != null)
@@ -5237,13 +5237,13 @@ namespace Server.Mobiles
 			}
 
 			//Piece d'argent
-			if (Level > 5 && Utility.Random(0, 100) < Level * 3)
+			if (Level > 5 && Utility.RandomMinMax(0, 100) < Level * 3)
 				AddLoot(new PieceArgent(10 * Level));
 
 			//Others
-			if (Utility.Random(0, 100) < Level * 5)
+			if (Utility.RandomMinMax(0, 100) < Level * 5)
 			{
-				var rnd = Utility.Random(1, 4);
+				var rnd = Utility.RandomMinMax(1, 4);
 				switch (rnd)
 				{
 					default:

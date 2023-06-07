@@ -56,7 +56,7 @@ namespace Server.Spells.Fourth
                 // Algorithm: (40% of magery) + (1-10)
 
                 int toHeal = (int)(Caster.Skills[SkillName.Magery].Value * 0.4);
-                toHeal += Utility.Random(1, 10);
+                toHeal += Utility.RandomMinMax(1, 10);
 
                 //m.Heal( toHeal, Caster );
                 SpellHelper.Heal(Caster, toHeal, true);

@@ -736,7 +736,8 @@ namespace Server.Items
 			AddWeightProperty(list);
 			AddCraftedProperties(list);
 
-			list.Add($"Enchantement: {Enchantement}/1");
+			if (this is BaseBracelet || this is BaseRing)
+				list.Add($"Enchantement: {Enchantement}/1");
 
 			if (m_GorgonLenseCharges > 0)
                 list.Add(1112590, m_GorgonLenseCharges.ToString()); //Gorgon Lens Charges: ~1_val~

@@ -7,7 +7,7 @@ using Server.Spells;
 namespace Server.Custom.Spells.NewSpells.Totemique
 {
 	[CorpseName("a fire elemental corpse")]
-	public class TotemDeFeuAvance : BaseTotem
+	public class TotemDeFeuAvance : BaseTotemDeFeu
 	{
 		[Constructable]
 		public TotemDeFeuAvance() : base(AIType.AI_Melee, FightMode.Closest, 10, 1)

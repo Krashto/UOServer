@@ -922,15 +922,26 @@ namespace Server.Spells
 
         public static void CheckReflect( int circle, ref Mobile caster, ref Mobile target)
         {
-			if (BouclierMagiqueSpell.IsActive(target) || InterventionSpell.IsActive(target))
+			if (BouclierMagiqueSpell.IsActive(target))
 			{
+				BouclierMagiqueSpell.Desactive(target);
+
 				target.FixedEffect(0x37B9, 10, 5);
 
 				Mobile temp = caster;
 				caster = target;
 				target = temp;
+			}
 
-				BouclierMagiqueSpell.Desactive(target);
+			if (InterventionSpell.IsActive(target))
+			{
+				InterventionSpell.Desactive(target);
+
+				target.FixedEffect(0x37B9, 10, 5);
+
+				Mobile temp = caster;
+				caster = target;
+				target = temp;
 			}
 		}
 

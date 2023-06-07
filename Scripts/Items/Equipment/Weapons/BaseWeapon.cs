@@ -1947,7 +1947,7 @@ namespace Server.Items
             else if (cs1 != CheckSlayerResult.None || cs2 != CheckSlayerResult.None || suit != CheckSlayerResult.None || tal != CheckSlayerResult.None)
                 defender.FixedEffect(0x37B9, 10, 5);
 
-			if (DuelSpell.IsActive(attacker) && defender.GetType() == DuelSpell.GetEnemyType(defender))
+			if (DuelSpell.IsActive(attacker) && defender.GetType() == DuelSpell.GetEnemyType(attacker))
 				percentageBonus += 100;
 
 			if (EnrageSpell.IsActive(attacker))

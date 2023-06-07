@@ -56,7 +56,7 @@ namespace Server.Custom.Spells.NewSpells.Musique
 					m_Timers[pm] = t;
 					t.Start();
 
-					var rnd = Utility.Random(0, 4);
+					var rnd = Utility.RandomMinMax(0, 4);
 					var mod = string.Empty;
 
 					switch (rnd)

@@ -52,7 +52,7 @@ namespace Server.Custom.Spells.NewSpells.Necromancie
 						max = 30;
 					}
 
-					var toHeal = SpellHelper.AdjustValue(Caster, Utility.Random(min, max), Aptitude.Necromancie);
+					var toHeal = SpellHelper.AdjustValue(Caster, Utility.RandomMinMax(min, max), Aptitude.Necromancie);
 					Caster.Heal((int)toHeal);
 
 					CustomUtility.ApplySimpleSpellEffect(Caster, "Touche absorbant", AptitudeColor.Necromancie, SpellEffectType.Heal);

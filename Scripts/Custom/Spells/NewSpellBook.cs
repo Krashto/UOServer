@@ -8,21 +8,6 @@ namespace Server.Items
 	[Flipable(0xEFA, 0x2253, 0x2252, 0x2254, 0x238C, 0x23A0, 0x225A, 0x2D50, 0x2D9D)]
 	public class NewSpellbook : Spellbook
 	{
-		private CraftResource m_Resource;
-
-		[CommandProperty(AccessLevel.GameMaster)]
-		public CraftResource Resource
-		{
-			get { return m_Resource; }
-			set
-			{
-				UnscaleDurability();
-				m_Resource = value;
-				Hue = CraftResources.GetHue(m_Resource);
-				InvalidateProperties();
-				ScaleDurability();
-			}
-		}
 		public override SpellbookType SpellbookType{ get{ return SpellbookType.Regular; } }
 		public override int BookOffset{ get{ return 600; } }
 		public override int BookCount{ get{ return 200; } }
@@ -40,28 +25,6 @@ namespace Server.Items
 		{
 			Name = "Grimoire";
 			Layer = Layer.OneHanded;
-		}
-
-		public override void AddNameProperties(ObjectPropertyList list)
-		{
-			base.AddNameProperties(list);
-
-			string leatherType = string.Empty;
-
-			switch (m_Resource)
-			{
-				case CraftResource.ForestierLeather: leatherType = "Forestier"; break;
-				case CraftResource.DesertiqueLeather: leatherType = "Desertique"; break;
-				case CraftResource.CollinoisLeather: leatherType = "Collinois"; break;
-				case CraftResource.SavanoisLeather: leatherType = "Savanois"; break;
-				case CraftResource.ToundroisLeather: leatherType = "Toundrois"; break;
-				case CraftResource.TropicauxLeather: leatherType = "Tropicaux"; break;
-				case CraftResource.MontagnardLeather: leatherType = "Montagnard"; break;
-				case CraftResource.AncienLeather: leatherType = "Ancien"; break;
-			}
-
-			if (!string.IsNullOrEmpty(leatherType))
-				list.Add($"Ressource: Cuir {leatherType}");
 		}
 
 		public override bool OnEquip(Mobile from)
@@ -143,10 +106,12 @@ namespace Server.Items
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int) 1 ); // version
+			writer.Write( (int) 2 ); // version
 			
+			//Version 2: Remove Resource, transfered to Spellbook.cs
+
 			//Version 1
-			writer.Write((int)Resource);
+			//writer.Write((int)Resource);
 
 			//Version 0
 			writer.Write(Contents.Count);
@@ -165,6 +130,10 @@ namespace Server.Items
 
 			switch(version)
 			{
+				case 2:
+					{
+						goto case 0;
+					}
 				case 1:
 					{
 						Resource = (CraftResource)reader.ReadInt();

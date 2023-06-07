@@ -115,7 +115,7 @@ namespace Server.Custom.Spells.NewSpells.Aeromancie
 
 							double chance = 60;
 
-							if (chance > Utility.Random(0, 100))
+							if (chance > Utility.RandomMinMax(0, 100))
 							{
 								Disturb(m);
 

@@ -29,7 +29,7 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			NextThinkingTime = DateTime.Now + TimeSpan.FromSeconds(5);
 		}
 
-		public static bool CanSummonTotemType(Mobile caster, Type totem)
+		public static bool CanSummonTotemType(Mobile caster, Type totemBaseType)
 		{
 			if (caster == null || !(caster is CustomPlayerMobile pm))
 				return false;
@@ -37,7 +37,10 @@ namespace Server.Custom.Spells.NewSpells.Totemique
 			var allowed = true;
 			foreach (var follower in pm.AllFollowers)
 			{
-				if (follower.GetType() == totem)
+				var type = follower.GetType();
+				var baseType = type.BaseType;
+
+				if (baseType == totemBaseType)
 					return false;
 			}
 

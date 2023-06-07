@@ -125,7 +125,7 @@ namespace Server.Items
             }
         }
 
-        [CommandProperty(AccessLevel.GameMaster)]
+		[CommandProperty(AccessLevel.GameMaster)]
         public BookQuality Quality
         {
             get { return m_Quality; }
@@ -280,12 +280,28 @@ namespace Server.Items
             }
         }
 
-        public virtual bool CanFortify => false;
+		private CraftResource m_Resource;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public CraftResource Resource
+		{
+			get { return m_Resource; }
+			set
+			{
+				UnscaleDurability();
+				m_Resource = value;
+				Hue = CraftResources.GetHue(m_Resource);
+				InvalidateProperties();
+				ScaleDurability();
+			}
+		}
+
+		public virtual bool CanFortify => false;
 
         public virtual int InitMinHits => 0;
         public virtual int InitMaxHits => 0;
 
-        public virtual void ScaleDurability()
+		public virtual void ScaleDurability()
         {
         }
 
@@ -790,6 +806,24 @@ namespace Server.Items
 			else if (m_Quality == BookQuality.Legendary)
 				list.Add("Légendaire");
 
+			string leatherType = string.Empty;
+
+			switch (m_Resource)
+			{
+				case CraftResource.PlainoisLeather:		leatherType = "Plainois"; break;
+				case CraftResource.ForestierLeather:	leatherType = "Forestier"; break;
+				case CraftResource.DesertiqueLeather:	leatherType = "Desertique"; break;
+				case CraftResource.CollinoisLeather:	leatherType = "Collinois"; break;
+				case CraftResource.SavanoisLeather:		leatherType = "Savanois"; break;
+				case CraftResource.ToundroisLeather:	leatherType = "Toundrois"; break;
+				case CraftResource.TropicauxLeather:	leatherType = "Tropicaux"; break;
+				case CraftResource.MontagnardLeather:	leatherType = "Montagnard"; break;
+				case CraftResource.AncienLeather:		leatherType = "Ancien"; break;
+			}
+
+			if (!string.IsNullOrEmpty(leatherType))
+				list.Add($"Ressource: Cuir {leatherType}");
+
 			if (m_EngravedText != null)
             {
                 list.Add(1072305, Utility.FixHtml(m_EngravedText)); // Engraved: ~1_INSCRIPTION~
@@ -992,9 +1026,11 @@ namespace Server.Items
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
-            writer.Write(6); // version
+            writer.Write(7); // version
 
-            m_NegativeAttributes.Serialize(writer);
+            writer.Write((int)m_Resource);
+
+			m_NegativeAttributes.Serialize(writer);
 
             writer.Write(m_HitPoints);
             writer.Write(m_MaxHitPoints);
@@ -1026,6 +1062,11 @@ namespace Server.Items
 
             switch (version)
             {
+				case 7:
+					{
+						Resource = (CraftResource)reader.ReadInt();
+						goto case 6;
+					}
                 case 6:
                     {
                         m_NegativeAttributes = new NegativeAttributes(this, reader);
@@ -1126,9 +1167,14 @@ namespace Server.Items
             }
 
             if (Parent is Mobile)
-            {
                 ((Mobile)Parent).CheckStatTimers();
-            }
+
+			
+			if (version < 7)
+			{
+				Resource = CraftResource.PlainoisLeather;
+				Hue = CraftResources.GetHue(m_Resource);
+			}
         }
 
         public virtual int OnCraft(
@@ -1149,6 +1195,11 @@ namespace Server.Items
 				Attributes.SpellDamage = 30;
 			else if (Quality == BookQuality.Exceptional)
 				Attributes.SpellDamage = 15;
+
+			if (typeRes == null)
+				typeRes = craftItem.Resources.GetAt(0).ItemType;
+
+			Resource = CraftResources.GetFromType(typeRes);
 
 			int magery = from.Skills.Magery.BaseFixedPoint;
 

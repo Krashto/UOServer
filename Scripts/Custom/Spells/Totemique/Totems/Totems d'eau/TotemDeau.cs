@@ -5,7 +5,7 @@ using Server.Mobiles;
 namespace Server.Custom.Spells.NewSpells.Totemique
 {
 	[CorpseName("a water elemental corpse")]
-	public class TotemDeau : BaseTotem
+	public class TotemDeau : BaseTotemDeau
 	{
 		[Constructable]
 		public TotemDeau() : base(AIType.AI_Melee, FightMode.Closest, 10, 1)

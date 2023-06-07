@@ -30,8 +30,8 @@ namespace Server.Custom.Spells.NewSpells.Roublardise
 
 		public void GetLocation()
 		{
-			var X = Utility.Random(-10, 20);
-			var Y = Utility.Random(-10, 20);
+			var X = Utility.RandomMinMax(-10, 20);
+			var Y = Utility.RandomMinMax(-10, 20);
 
 			var total = Caster.Location;
 

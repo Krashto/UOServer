@@ -25,7 +25,7 @@ namespace Server.Items
             Name = "Recycleur";
 			Hue = 1109;
 			Weight = 2.0;
-            m_UsesRemaining = Utility.Random(50, 75);
+            m_UsesRemaining = Utility.RandomMinMax(50, 75);
 		}
 
 		public Recycleur( Serial serial ) : base( serial )

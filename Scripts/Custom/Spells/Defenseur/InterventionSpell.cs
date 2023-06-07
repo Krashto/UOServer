@@ -62,7 +62,7 @@ namespace Server.Custom.Spells.NewSpells.Defenseur
 
 				SpellHelper.Turn(source, m);
 
-				m_Table[Caster] = Caster;
+				m_Table[m] = m;
 				CustomUtility.ApplySimpleSpellEffect(m, "Intervention", AptitudeColor.Defenseur, SpellEffectType.Bonus);
 			}
 

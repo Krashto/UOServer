@@ -5,6 +5,7 @@ using Server.Mobiles;
 using Server.Network;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Server.Items
 {
@@ -23,6 +24,12 @@ namespace Server.Items
 		public static void WeaponAbility_OnCommand(CommandEventArgs e)
 		{
 			Mobile from = e.Mobile;
+
+			if (WeaponAbility.BlockNextAbility != null && WeaponAbility.BlockNextAbility.Contains(from))
+			{
+				from.SendMessage("Vous devez attendre avant de lancer une autre attaque spéciale.");
+				return;
+			}
 
 			if (from is CustomPlayerMobile pm)
 			{
@@ -60,7 +67,6 @@ namespace Server.Items
 			}
 		}
 	}
-
 
 	public abstract class WeaponAbility
     {
@@ -251,7 +257,7 @@ namespace Server.Items
 
             if (from.Stam < stam)
             {
-                from.SendMessage($"Vous avez besoin de plus de stamina pour lancer cette attaque (Coût:{stam})");
+                from.SendMessage($"Vous avez besoin de plus de stamina pour lancer cette attaque (Coût: {stam})");
                 return false;
             }
 
@@ -428,30 +434,40 @@ namespace Server.Items
             return a;
         }
 
-        public static bool SetCurrentAbility(Mobile m, WeaponAbility a)
-        {
-            //if (!IsWeaponAbility(m, a))
-            //{
-            //    ClearCurrentAbility(m);
-            //    return false;
-            //}
+		public static List<Mobile> BlockNextAbility;
+		public static readonly TimeSpan BlockNextAbilityDuration = TimeSpan.FromSeconds(10.0);
 
-            if (a != null && !a.Validate(m))
+		public static bool SetCurrentAbility(Mobile m, WeaponAbility a)
+        {
+			if (BlockNextAbility != null && BlockNextAbility.Contains(m))
+			{
+				m.SendMessage("Vous devez attendre avant de lancer une autre attaque spéciale.");
+				return false;
+			}
+
+			if (a != null && !a.Validate(m))
             {
                 ClearCurrentAbility(m);
                 return false;
             }
 
             if (a == null)
-            {
                 m_Table.Remove(m);
-            }
             else
-            {
                 m_Table[m] = a;
-            }
 
-            return true;
+			if (BlockNextAbility == null)
+				BlockNextAbility = new List<Mobile>();
+
+			BlockNextAbility.Add(m);
+
+			Timer.DelayCall(BlockNextAbilityDuration, mob =>
+			{
+				if (BlockNextAbility != null && BlockNextAbility.Contains(mob))
+					BlockNextAbility.Remove(mob);
+			}, m);
+
+			return true;
         }
 
         public static void ClearCurrentAbility(Mobile m)

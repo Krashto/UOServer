@@ -79,9 +79,9 @@ namespace Server.Custom.Spells.NewSpells.Martial
 				return;
 
 			var t = m_Timers[m] as Timer;
-			var mod = m_Table[m] as ResistanceMod;
+			var type = m_Table[m] as Type;
 
-			if (t != null && mod != null)
+			if (t != null && type != null)
 			{
 				t.Stop();
 				m_Timers.Remove(m);

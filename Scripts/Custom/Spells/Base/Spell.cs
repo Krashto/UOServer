@@ -136,6 +136,9 @@ namespace Server.Spells
 			if (m_Caster is BaseCreature)
 				return;
 
+			if (this is AntidoteSpell)
+				return;
+
 			if (CheckHurt)
 			{
 				double chance = m_Caster.Skills[SkillName.EvalInt].Value * 0.0025;
@@ -658,7 +661,7 @@ namespace Server.Spells
 
 				double chance = 100 - (pm.Capacites.Equitation * 20);
 
-				if (Utility.Random(0, 100) <= chance)
+				if (Utility.RandomMinMax(0, 100) <= chance)
 					return false;
 			}
 
