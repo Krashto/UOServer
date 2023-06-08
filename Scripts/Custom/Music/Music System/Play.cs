@@ -312,7 +312,7 @@ namespace Server.Commands
 			}
 			else if (!xm.Playing) // If this is a new tune, create a new timer and start it.
 			{
-				from.Emote("*plays a tune*"); // Player emotes to indicate they are playing
+				from.Emote("*Joue une mélodie*"); // Player emotes to indicate they are playing
 				xm.Playing = true;
                 MobilePlayTimer pt = new MobilePlayTimer(from, instrument);
 				pt.Start();

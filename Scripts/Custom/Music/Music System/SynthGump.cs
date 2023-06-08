@@ -82,7 +82,7 @@ namespace Server.Gumps
             AddLabel(40, 7, labelhue, "Song Name:");
             AddTextEntry(160, 7, 163, 20, 0, 0, m_Name);
             AddBackground(332, 2, 407, 28, 9200);
-            AddLabel(520, 7, labelhue, "The Synthesizer by Lokai");
+            AddLabel(520, 7, labelhue, "Le Piano");
             AddBackground(114, 34, 626, 84, 9200);
             AddBackground(110, 62, 347, 56, 9250);
 			AddBackground(114, 123, 624, 28, 9200);
@@ -560,17 +560,20 @@ namespace Server.Gumps
                             break;
                         }
                     case (int)Buttons.FileOptions: from.SendGump(new SynthGump(m_From, m_Page, (int)inst, m_Music, m_Keys, m_Recording, !m_FileOptions, m_Chords, m_Mixer, m_Song, m_Name, m_MusicTracks)); break;
-                    case (int)Buttons.Play:
-                        {
-                            List<string> tempSong = new List<string>(m_Song);
-                            string speed = tempSong[0];
-                            tempSong.RemoveAt(0);
-                            string[] newSong = tempSong.ToArray();
-                            Play.Play_OnCommand(new CommandEventArgs(from, "Play", speed, newSong));
-                            from.SendGump(new SynthGump(m_From, m_Page, (int)inst, m_Music, m_Keys, m_Recording, m_FileOptions, m_Chords, m_Mixer, m_Song, m_Name, m_MusicTracks));
-                            break;
-                        }
-                    case (int)Buttons.Save:
+					case (int)Buttons.Play:
+						{
+							if (m_Song.Count > 0) // Vérifie si la liste des chansons n'est pas vide
+							{
+								List<string> tempSong = new List<string>(m_Song);
+								string speed = tempSong[0];
+								tempSong.RemoveAt(0);
+								string[] newSong = tempSong.ToArray();
+								Play.Play_OnCommand(new CommandEventArgs(from, "Play", speed, newSong));
+							}
+							from.SendGump(new SynthGump(m_From, m_Page, (int)inst, m_Music, m_Keys, m_Recording, m_FileOptions, m_Chords, m_Mixer, m_Song, m_Name, m_MusicTracks));
+							break;
+						}
+					case (int)Buttons.Save:
                         {
                             SaveSong(from, m_Name, m_Song);
                             from.SendGump(new SynthGump(m_From, m_Page, (int)inst, m_Music, m_Keys, m_Recording, m_FileOptions, m_Chords, m_Mixer, m_Song, m_Name, m_MusicTracks));

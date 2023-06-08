@@ -41,7 +41,7 @@ namespace Server.Items
 
 		public override void OnComponentUsed(AddonComponent ac, Mobile from)
 		{
-			if (!from.InRange(GetWorldLocation(), 1))
+			if (!from.InRange(GetWorldLocation(), 3))
 				from.SendMessage("You are too far away to use that!");
 			else if (from.Mounted)
 				from.SendMessage("You cannot play the piano while mounted!");
