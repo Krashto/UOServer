@@ -13,8 +13,7 @@ namespace Server.Items
 			Weight = 1.0;
 		}
 
-		public Ecraseur(Serial serial)
-			: base(serial)
+		public Ecraseur(Serial serial) : base(serial)
 		{
 		}
 
@@ -37,22 +36,22 @@ namespace Server.Items
 			{
 				BaseShell shell = (BaseShell)o;
 
-				int alchemySkill = from.Skills.Alchemy.BaseFixedPoint;
+				double alchemySkill = from.Skills.Alchemy.Base;
 				int powderAmount = 1; // Quantité par défaut de poudre de coquillages
 
-				if (alchemySkill >= 25 && alchemySkill < 50)
+				if (alchemySkill >= 25.0 && alchemySkill < 50.0)
 				{
 					powderAmount = 2;
 				}
-				else if (alchemySkill >= 50 && alchemySkill < 75)
+				else if (alchemySkill >= 50.0 && alchemySkill < 75.0)
 				{
 					powderAmount = 3;
 				}
-				else if (alchemySkill >= 75 && alchemySkill < 100)
+				else if (alchemySkill >= 75.0 && alchemySkill < 100.0)
 				{
 					powderAmount = 4;
 				}
-				else if (alchemySkill >= 100)
+				else if (alchemySkill >= 100.0)
 				{
 					powderAmount = 5;
 				}
@@ -72,14 +71,12 @@ namespace Server.Items
 		public override void Serialize(GenericWriter writer)
 		{
 			base.Serialize(writer);
-
 			writer.Write((int)0); // version
 		}
 
 		public override void Deserialize(GenericReader reader)
 		{
 			base.Deserialize(reader);
-
 			int version = reader.ReadInt();
 		}
 	}

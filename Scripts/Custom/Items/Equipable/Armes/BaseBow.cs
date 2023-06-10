@@ -18,7 +18,7 @@
 
 		public override WeaponAnimation DefAnimation => WeaponAnimation.ShootBow;
 
-		public override int DefMaxRange => 7;
+		public override int DefMaxRange => 6;
 
 		public override void Serialize(GenericWriter writer)
 		{

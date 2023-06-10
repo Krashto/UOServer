@@ -5,7 +5,7 @@
 		public virtual int Level { get; set; }
 
 		[Constructable]
-		public BaseTreasureMapPart() : this(1)
+		public BaseTreasureMapPart() : this(0)
 		{
 			Name = "Morceau de carte au trésor";
 			Weight = 0.5;

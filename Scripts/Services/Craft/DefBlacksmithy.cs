@@ -483,11 +483,11 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Wakizashi), "Épées", "Surineur", 45.0, 70.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(RadiantScimitar), "Épées", "Cimeterre infini", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(RuneBlade), "Épées", "Lame vorpal", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(ElvenMachete), "Épées", "Machette runique", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 60.0, 85.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 60.0, 85.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 75.0, 105.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 75.0, 105.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(ElvenMachete), "Épées", "Machette runique", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DoubleEpee), "Épées", "Double épée", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(CrescentBlade), "Épées", "Épée Croissant", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WakizashiLong), "Épées", "Wakizashi Long", 45.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Daisho), "Épées", "Les jumelles", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Haches"
@@ -501,12 +501,12 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(GrandeHache), "Haches", "Éventreuse", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(GrandeHacheDouble), "Haches", "Francisque", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(HacheDouble), "Haches", "Trombe", 45.0, 70.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 60.0, 85.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 75.0, 105.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 75.0, 105.0, typeof(IronIngot), "Fer", 24, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(DoubleHachette), "Haches", "Double Hachette", 75.0, 105.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HAchePique), "Haches", "Barbelé", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HacheDoublePiques), "Haches", "Exécutrice", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(HacheDoubleNaine), "Haches", "Gardienne", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(OrnateAxe), "Haches", "Hache ornée", 45.0, 70.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DualShortAxes), "Haches", "Double hache courte", 45.0, 70.0, typeof(IronIngot), "Fer", 24, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DoubleHachette), "Haches", "Double Hachette", 45.0, 70.0, typeof(IronIngot), "Fer", 15, "Vous n'avez pas suffisament de lingot de Fer");
 
 			
 			#endregion
@@ -527,10 +527,10 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Scythe), "Lances", "Scythe", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(Spear), "Lances", "Lance de guerre", 35.0, 60.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(Epieu), "Lances", "Épieu", 40.0, 65.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(GrandeFourche), "Lances", "Grande Fourche", 50.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Guerre", 60.0, 85.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Trident), "Lances", "Trident", 65.0, 90.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 70.0, 95.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(GrandeFourche), "Lances", "Grande Fourche", 43.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(JavelotLuxe), "Lances", "Javelot de Guerre", 43.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Trident), "Lances", "Trident", 43.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarFork), "Lances", "Fourche de guerre", 43.0, 75.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Masses et marteaux"
@@ -540,28 +540,30 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Scepter), "Masses et marteaux", "Sceptre", 30.0, 55.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(WarMace), "Masses et marteaux", "Masse de guerre", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(GrandeMasse), "Masses et marteaux", "Grande Masse", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(MassuePointes), "Masses et marteaux", "Massue à Pointes", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(Massue), "Masses et marteaux", "Massue", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(MorgensternBoules), "Masses et marteaux", "Morgenstern à Boules", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(MorgensternPointes), "Masses et marteaux", "Morgenstern à Pointes", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 60.0, 85.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 60.0, 85.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 75.0, 105.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 75.0, 105.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");	
+			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 40.0, 70.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 40.0, 70.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 40.0, 70.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 40.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
+			
+			
 			
 			#endregion
 
 			#region "Rapières et Estoc"
 			AddCraft(typeof(Rapiere), "Rapières et Estoc", "Rapière", 10.0, 35.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(RapiereLuxe), "Rapières et Estoc", "Rapière de Luxe", 30.0, 55.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(RapiereDecoree), "Rapières et Estoc", "Rapière Décorée", 45.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 45.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 60.0, 80.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 60.0, 80.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissant de lune", 60.0, 80.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RapiereLuxe), "Rapières et Estoc", "Rapière de Luxe", 20.0, 50.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(RapiereDecoree), "Rapières et Estoc", "Rapière Décorée", 30.0, 60.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Astoria), "Rapières et Estoc", "Astoria", 30.0, 60.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Kryss), "Rapières et Estoc", "Kryss", 40.0, 70.0, typeof(IronIngot), "Fer", 8, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(WarCleaver), "Rapières et Estoc", "Éclat lunaire", 40.0, 70.0, typeof(IronIngot), "Fer", 18, "Vous n'avez pas suffisament de lingot de Fer");
+			AddCraft(typeof(Lajatang), "Rapières et Estoc", "Croissant de lune", 40.0, 70.0, typeof(IronIngot), "Fer", 25, "Vous n'avez pas suffisament de lingot de Fer");
 			#endregion
 
 			#region "Divers"

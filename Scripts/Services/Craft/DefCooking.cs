@@ -311,7 +311,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(PorkChop), "Viandes", "Escalope de Porc", 25.0, 70.0, typeof(RawPorkChop), "Chop de porc crue", 1, "You need more Chop de porc crue");
 			////AddRecipe(index, (int)CookRecipesExp.PorkChop);
 			SetNeedHeat(index, true);
-			index = AddCraft(typeof(PorkRoast), "Viandes", "Côtelettes de porc", 25.0, 70.0, typeof(RawPorkRoast), "Rôti de porc cru", 1, "You need more Raw Pork Roast");
+			index = AddCraft(typeof(PorkRoast), "Viandes", "Rôti de porc", 25.0, 70.0, typeof(RawPorkRoast), "Rôti de porc cru", 1, "You need more Raw Pork Roast");
 			////AddRecipe(index, (int)CookRecipesExp.PorkRoast);
 			SetNeedHeat(index, true);
 			index = AddCraft(typeof(Trotters), "Viandes", "Pattes de porc", 25.0, 70.0, typeof(RawTrotters), "Pattes de porc crues", 1, "You need more Raw Trotters");

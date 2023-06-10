@@ -154,8 +154,8 @@ namespace Server.Items
                     break;
             }
 
-            LockLevel = RequiredSkill;
-            MaxLockLevel = RequiredSkill;
+            LockLevel = RequiredSkill - 5;
+            MaxLockLevel = RequiredSkill - 5;
 
             DropItem(new Gold(level * 250));
 

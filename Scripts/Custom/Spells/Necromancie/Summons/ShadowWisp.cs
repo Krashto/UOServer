@@ -106,7 +106,8 @@ namespace Server.Custom.Spells.Necromancie.Summons
 				if (friendly)
 				{
 					m.FixedEffect(0x37C4, 1, 12, 1109, 3); // At player
-					m.Mana += 1 - m.Karma / 1000;
+					m.Mana += 3;
+					//m.Mana += 1 - m.Karma / 1000;
 				}
 			}
 		}

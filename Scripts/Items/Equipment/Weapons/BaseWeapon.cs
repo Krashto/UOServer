@@ -677,7 +677,7 @@ namespace Server.Items
 			CraftResourceInfo info = CraftResources.GetInfo(m_Resource);
 
 			if (info != null)
-				Attributes.WeaponDamage += info.Level * 15;
+				Attributes.WeaponDamage += info.Level * 5;
 
 			InvalidateProperties();
 		}

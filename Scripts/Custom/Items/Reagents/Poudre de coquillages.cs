@@ -16,7 +16,7 @@ namespace Server.Items
         {
             Name = "poudre de coquillages";
 			Stackable = true;
-			Amount = amount;
+			//Amount = amount;
         }
 
         public PoudreCoquillages(Serial serial) : base(serial)

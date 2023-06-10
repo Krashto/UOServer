@@ -201,7 +201,7 @@ namespace Server.Items
                         break;
                 }
 
-                cont.LockLevel = cont.RequiredSkill - 10;
+                cont.LockLevel = cont.RequiredSkill - 4;
                 cont.MaxLockLevel = cont.RequiredSkill + 40;
 
                 #region Gold

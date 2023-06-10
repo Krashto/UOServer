@@ -162,7 +162,7 @@ namespace Server.Misc
 
                         if ((karma >= 0 && ke.m_Karma >= 0 && karma >= ke.m_Karma) || (karma < 0 && ke.m_Karma < 0 && karma < ke.m_Karma))
                         {
-                            list.Add(title.AppendFormat(ke.m_Title, m.Name, m.Female ? "Lady" : "Lord").ToString());
+                            //list.Add(title.AppendFormat(ke.m_Title, m.Name, m.Female ? "Lady" : "Lord").ToString());
                         }
                     }
                 }
@@ -288,73 +288,73 @@ namespace Server.Misc
         {
             new FameEntry(1249, new KarmaEntry[]
             {
-                new KarmaEntry(-10000, "The Outcast {0}"),
-                new KarmaEntry(-5000, "The Despicable {0}"),
-                new KarmaEntry(-2500, "The Scoundrel {0}"),
-                new KarmaEntry(-1250, "The Unsavory {0}"),
-                new KarmaEntry(-625, "The Rude {0}"),
-                new KarmaEntry(624, "{0}"),
-                new KarmaEntry(1249, "The Fair {0}"),
-                new KarmaEntry(2499, "The Kind {0}"),
-                new KarmaEntry(4999, "The Good {0}"),
-                new KarmaEntry(9999, "The Honest {0}"),
-                new KarmaEntry(10000, "The Trustworthy {0}")
+                //new KarmaEntry(-10000, "The Outcast {0}"),
+                //new KarmaEntry(-5000, "The Despicable {0}"),
+                //new KarmaEntry(-2500, "The Scoundrel {0}"),
+                //new KarmaEntry(-1250, "The Unsavory {0}"),
+                //new KarmaEntry(-625, "The Rude {0}"),
+                //new KarmaEntry(624, "{0}"),
+                //new KarmaEntry(1249, "The Fair {0}"),
+                //new KarmaEntry(2499, "The Kind {0}"),
+                //new KarmaEntry(4999, "The Good {0}"),
+                //new KarmaEntry(9999, "The Honest {0}"),
+                //new KarmaEntry(10000, "The Trustworthy {0}")
             }),
             new FameEntry(2499, new KarmaEntry[]
             {
-                new KarmaEntry(-10000, "The Wretched {0}"),
-                new KarmaEntry(-5000, "The Dastardly {0}"),
-                new KarmaEntry(-2500, "The Malicious {0}"),
-                new KarmaEntry(-1250, "The Dishonorable {0}"),
-                new KarmaEntry(-625, "The Disreputable {0}"),
-                new KarmaEntry(624, "The Notable {0}"),
-                new KarmaEntry(1249, "The Upstanding {0}"),
-                new KarmaEntry(2499, "The Respectable {0}"),
-                new KarmaEntry(4999, "The Honorable {0}"),
-                new KarmaEntry(9999, "The Commendable {0}"),
-                new KarmaEntry(10000, "The Estimable {0}")
+                //new KarmaEntry(-10000, "The Wretched {0}"),
+                //new KarmaEntry(-5000, "The Dastardly {0}"),
+                //new KarmaEntry(-2500, "The Malicious {0}"),
+                //new KarmaEntry(-1250, "The Dishonorable {0}"),
+                //new KarmaEntry(-625, "The Disreputable {0}"),
+                //new KarmaEntry(624, "The Notable {0}"),
+                //new KarmaEntry(1249, "The Upstanding {0}"),
+                //new KarmaEntry(2499, "The Respectable {0}"),
+                //new KarmaEntry(4999, "The Honorable {0}"),
+                //new KarmaEntry(9999, "The Commendable {0}"),
+                //new KarmaEntry(10000, "The Estimable {0}")
             }),
             new FameEntry(4999, new KarmaEntry[]
             {
-                new KarmaEntry(-10000, "The Nefarious {0}"),
-                new KarmaEntry(-5000, "The Wicked {0}"),
-                new KarmaEntry(-2500, "The Vile {0}"),
-                new KarmaEntry(-1250, "The Ignoble {0}"),
-                new KarmaEntry(-625, "The Notorious {0}"),
-                new KarmaEntry(624, "The Prominent {0}"),
-                new KarmaEntry(1249, "The Reputable {0}"),
-                new KarmaEntry(2499, "The Proper {0}"),
-                new KarmaEntry(4999, "The Admirable {0}"),
-                new KarmaEntry(9999, "The Famed {0}"),
-                new KarmaEntry(10000, "The Great {0}")
+                //new KarmaEntry(-10000, "The Nefarious {0}"),
+                //new KarmaEntry(-5000, "The Wicked {0}"),
+                //new KarmaEntry(-2500, "The Vile {0}"),
+                //new KarmaEntry(-1250, "The Ignoble {0}"),
+                //new KarmaEntry(-625, "The Notorious {0}"),
+                //new KarmaEntry(624, "The Prominent {0}"),
+                //new KarmaEntry(1249, "The Reputable {0}"),
+                //new KarmaEntry(2499, "The Proper {0}"),
+                //new KarmaEntry(4999, "The Admirable {0}"),
+                //new KarmaEntry(9999, "The Famed {0}"),
+                //new KarmaEntry(10000, "The Great {0}")
             }),
             new FameEntry(9999, new KarmaEntry[]
             {
-                new KarmaEntry(-10000, "The Dread {0}"),
-                new KarmaEntry(-5000, "The Evil {0}"),
-                new KarmaEntry(-2500, "The Villainous {0}"),
-                new KarmaEntry(-1250, "The Sinister {0}"),
-                new KarmaEntry(-625, "The Infamous {0}"),
-                new KarmaEntry(624, "The Renowned {0}"),
-                new KarmaEntry(1249, "The Distinguished {0}"),
-                new KarmaEntry(2499, "The Eminent {0}"),
-                new KarmaEntry(4999, "The Noble {0}"),
-                new KarmaEntry(9999, "The Illustrious {0}"),
-                new KarmaEntry(10000, "The Glorious {0}")
+                //new KarmaEntry(-10000, "The Dread {0}"),
+                //new KarmaEntry(-5000, "The Evil {0}"),
+                //new KarmaEntry(-2500, "The Villainous {0}"),
+                //new KarmaEntry(-1250, "The Sinister {0}"),
+                //new KarmaEntry(-625, "The Infamous {0}"),
+                //new KarmaEntry(624, "The Renowned {0}"),
+                //new KarmaEntry(1249, "The Distinguished {0}"),
+                //new KarmaEntry(2499, "The Eminent {0}"),
+                //new KarmaEntry(4999, "The Noble {0}"),
+                //new KarmaEntry(9999, "The Illustrious {0}"),
+                //new KarmaEntry(10000, "The Glorious {0}")
             }),
             new FameEntry(10000, new KarmaEntry[]
             {
-                new KarmaEntry(-10000, "The Dread {1} {0}"),
-                new KarmaEntry(-5000, "The Evil {1} {0}"),
-                new KarmaEntry(-2500, "The Dark {1} {0}"),
-                new KarmaEntry(-1250, "The Sinister {1} {0}"),
-                new KarmaEntry(-625, "The Dishonored {1} {0}"),
-                new KarmaEntry(624, "{1} {0}"),
-                new KarmaEntry(1249, "The Distinguished {1} {0}"),
-                new KarmaEntry(2499, "The Eminent {1} {0}"),
-                new KarmaEntry(4999, "The Noble {1} {0}"),
-                new KarmaEntry(9999, "The Illustrious {1} {0}"),
-                new KarmaEntry(10000, "The Glorious {1} {0}")
+                //new KarmaEntry(-10000, "The Dread {1} {0}"),
+                //new KarmaEntry(-5000, "The Evil {1} {0}"),
+                //new KarmaEntry(-2500, "The Dark {1} {0}"),
+                //new KarmaEntry(-1250, "The Sinister {1} {0}"),
+                //new KarmaEntry(-625, "The Dishonored {1} {0}"),
+                //new KarmaEntry(624, "{1} {0}"),
+                //new KarmaEntry(1249, "The Distinguished {1} {0}"),
+                //new KarmaEntry(2499, "The Eminent {1} {0}"),
+                //new KarmaEntry(4999, "The Noble {1} {0}"),
+                //new KarmaEntry(9999, "The Illustrious {1} {0}"),
+                //new KarmaEntry(10000, "The Glorious {1} {0}")
             })
         };
 
