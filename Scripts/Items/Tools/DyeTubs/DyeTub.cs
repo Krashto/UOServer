@@ -52,6 +52,7 @@ namespace Server.Items
         public virtual bool AllowDyables => true;
         public virtual bool AllowMetal => false;
 		public virtual bool AllowWeapons => false;
+		public virtual bool AllowWeapons => false;
 
 
 

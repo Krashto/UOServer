@@ -93,10 +93,19 @@ namespace Server.Engines.Harvest
 
 			fish.BonusResources = new BonusHarvestResource[]
 			{
-				new BonusHarvestResource(0, 97.0, null, null), //set to same chance as mining ml gems
-			    //new BonusHarvestResource(80.0, 2.0, 1113764, typeof(DelicateScales)),
-       //         new BonusHarvestResource(80.0, 1.0, 1072597, typeof(WhitePearl))
-            };
+				new BonusHarvestResource(0, 88.0, null, null), //set to same chance as mining ml gems
+			    new BonusHarvestResource(50.0, 2.0, "Coquillage", typeof(CoquillageHautsFonds)),
+				new BonusHarvestResource(50.0, 2.0, "Coquillage", typeof(CoquillageArcEnCiel)),
+				new BonusHarvestResource(50.0, 2.0, "Coquillage", typeof(CoquilleDoree)),
+				new BonusHarvestResource(50.0, 2.0, "Coquillage", typeof(CoquilleEcarlate)),
+				new BonusHarvestResource(50.0, 2.0, "Coquillage", typeof(CoquillePlate)),
+				new BonusHarvestResource(50.0, 2.0, "Coquillage", typeof(CoquilleTachetee)),
+
+
+					};
+
+			//         new BonusHarvestResource(80.0, 1.0, 1072597, typeof(WhitePearl))
+
 
 			m_Definition = fish;
 			Definitions.Add(fish);

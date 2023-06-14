@@ -473,25 +473,25 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Coussin6), "Divers", "Coussin Coussin Carré et Lisse", 75.0, 95.0, typeof(Cloth), "Tissus", 20  ,"Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Foulard4), "Divers", "Cache - Visage", 75.0, 95.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Foulard2), "Divers", "Foulard épaule", 80.0, 100.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(Cocarde), "Divers", "Cocarde", 80.0, 100.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BandagesPieds), "Divers", "Bandages Pieds", 80.0, 100.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BandagesBras), "Divers", "Bandages Bras", 80.0, 100.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BandagesTaille), "Divers", "Bandages Taille", 80.0, 100.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(ElvenQuiver), "Divers", "Petit Carquois", 80.0, 100.0, typeof(PlainoisLeather), 1044462, 12,  1044463);
-			index = AddCraft(typeof(Draps), "Divers", "Draps", 80.0, 100.0, typeof(Cloth), "Tissus", 25  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(Cocarde), "Divers", "Cocarde", 40.0, 700.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BandagesPieds), "Divers", "Bandages Pieds", 40.0, 70.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BandagesBras), "Divers", "Bandages Bras", 40.0, 70.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BandagesTaille), "Divers", "Bandages Taille", 40.0, 70.0, typeof(Cloth), "Tissus", 10  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(ElvenQuiver), "Divers", "Petit Carquois", 40.0, 70.0, typeof(PlainoisLeather), 1044462, 12,  1044463);
+			index = AddCraft(typeof(Draps), "Divers", "Draps", 30.0, 60.0, typeof(Cloth), "Tissus", 25  ,"Vous n'avez pas assez de tissus.");
 			AddCraftAction(index, CombineCloth);
 
 			index = AddCraft(typeof(RideauBlanc), "Tapis / Rideaux", "Rideaux Blanc(flip)", 50.0, 70.0, typeof(Cloth), "Tissus", 30  ,"Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(RideauRouge), "Tapis / Rideaux", "Rideaux Rouge(flip)", 50.0, 70.0, typeof(Cloth), "Tissus", 30  ,"Vous n'avez pas assez de tissus.");
 			index = AddCraft(typeof(Voilage), "Tapis / Rideaux", "Voilage(flip)", 55.0, 75.0, typeof(Cloth), "Tissus", 30  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BlueDecorativeRugDeed), "Tapis / Rideaux", "Tapis décoratif bleu", 55.0, 75.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BlueFancyRugDeed), "Tapis / Rideaux", "Tapis huppé bleu", 60.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(BluePlainRugDeed), "Tapis / Rideaux", "Tapis bleu", 60.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(CinnamonFancyRugDeed), "Tapis / Rideaux", "Tapis Cannelle", 60.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(GoldenDecorativeRugDeed), "Tapis / Rideaux", "Tapis Doré", 60.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(PinkFancyRugDeed), "Tapis / Rideaux", "Tapis Huppé Rose", 65.0, 85.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(RedPlainRugDeed), "Tapis / Rideaux", "Tapis Rouge", 70.0, 90.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
-			index = AddCraft(typeof(RoseRugAddonDeed), "Tapis / Rideaux", "Tapis Rose", 70.0, 90.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BlueDecorativeRugDeed), "Tapis / Rideaux", "Tapis décoratif bleu", 40.0, 70.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BlueFancyRugDeed), "Tapis / Rideaux", "Tapis huppé bleu", 40.0, 70.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(BluePlainRugDeed), "Tapis / Rideaux", "Tapis bleu", 40.0, 70.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(CinnamonFancyRugDeed), "Tapis / Rideaux", "Tapis Cannelle", 40.0, 70.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(GoldenDecorativeRugDeed), "Tapis / Rideaux", "Tapis Doré", 40.0, 70.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(PinkFancyRugDeed), "Tapis / Rideaux", "Tapis Huppé Rose", 50.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(RedPlainRugDeed), "Tapis / Rideaux", "Tapis Rouge", 50.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
+			//index = AddCraft(typeof(RoseRugAddonDeed), "Tapis / Rideaux", "Tapis Rose", 50.0, 80.0, typeof(Cloth), "Tissus", 50  ,"Vous n'avez pas assez de tissus.");
 			
 
 			// Set the overridable material

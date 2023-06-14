@@ -1,5 +1,6 @@
 using Server.Targeting;
 using System;
+using System.Collections.Generic;
 
 namespace Server.Items
 {
@@ -131,10 +132,18 @@ namespace Server.Items
         {
             int held = Math.Max(0, Math.Min(m_Held, 100));
 
-            Weight = 20 + ((held * 80) / 100);
-        }
+			Weight = 20 + ((held * 80) / 100);
+			
+		}
+		public override void AddCraftedProperties(ObjectPropertyList list)
+		{
+			int held = Math.Max(0, Math.Min(m_Held, 100));
 
-        public override void Serialize(GenericWriter writer)
+			list.Add("Quantité: " + held);
+
+		}
+
+		public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);
             writer.Write(2); // version

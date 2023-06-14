@@ -974,7 +974,7 @@ namespace Server.Multis
         public void EndConfirmCommit(Mobile from)
         {
             int oldPrice = Price;
-            int newPrice = oldPrice + CustomizationCost + ((DesignState.Components.List.Length - (CurrentState.Components.List.Length + CurrentState.Fixtures.Length)) * 5);
+            int newPrice = oldPrice + CustomizationCost + ((DesignState.Components.List.Length - (CurrentState.Components.List.Length + CurrentState.Fixtures.Length)) * 20);
             int cost = newPrice - oldPrice;
 
             if (!Deleted)

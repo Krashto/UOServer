@@ -58,8 +58,8 @@ namespace Server.Mobiles
         {
         }
 
-        public override bool AllowFemaleRider => false;
-        public override bool AllowFemaleTamer => false;
+        //public override bool AllowFemaleRider => true;
+        //public override bool AllowFemaleTamer => true;
         public override bool InitialInnocent => true;
         public override TimeSpan MountAbilityDelay => TimeSpan.FromHours(1.0);
 

@@ -665,7 +665,7 @@ namespace Server.Items
 		[Constructable]
 		public EcaillePoissonDyeTub()
 		{
-			Hue = DyedHue = 2386;
+			Hue = DyedHue = 2587;
 			Redyable = false;
 			Charges = 5;
 			Name = "Teinture Ecaille de Poisson";

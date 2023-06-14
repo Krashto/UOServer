@@ -58,8 +58,8 @@ namespace Server.Mobiles
         }
 		public override int Level => 9;
 		public override Biome Biome => Biome.Tropique;
-		public override bool AllowMaleRider => true;
-        public override bool AllowMaleTamer => true;
+		//public override bool AllowMaleRider => true;
+  //      public override bool AllowMaleTamer => true;
         public override bool InitialInnocent => true;
         public override TimeSpan MountAbilityDelay => TimeSpan.FromHours(1.0);
 
