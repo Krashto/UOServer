@@ -273,6 +273,7 @@ namespace Server.Custom.Aptitudes
         public Aptitudes(CustomPlayerMobile owner)
         {
 			m_Owner = owner;
+
 		}
 		
 		public Aptitudes(CustomPlayerMobile owner, GenericReader reader)

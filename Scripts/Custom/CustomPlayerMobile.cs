@@ -79,6 +79,9 @@ namespace Server.Mobiles
 		public DateTime EndOfVulnerabilityTime { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
+		public bool Assomer { get; set; }
+
+		[CommandProperty(AccessLevel.GameMaster)]
 		public bool Vulnerability
 		{
 			get
@@ -698,6 +701,7 @@ namespace Server.Mobiles
 
 		public CustomPlayerMobile()
 		{
+		
 			Aptitudes = new Aptitudes(this);
 			Experience = new ExperienceSystem(this);
 			Attributs = new Attributs(this);
@@ -707,6 +711,7 @@ namespace Server.Mobiles
 
 		public CustomPlayerMobile(Serial s) : base(s)
 		{
+			
 			Aptitudes = new Aptitudes(this);
 			Experience = new ExperienceSystem(this);
 			Attributs = new Attributs(this);
@@ -927,6 +932,7 @@ namespace Server.Mobiles
 
 			if (!Vulnerability && !DeathShot)
 			{
+				Assomer = true;
 				Frozen = true;
 				Assomage = true;
 				Timer.DelayCall(TimeSpan.FromMinutes(DeathDuration), new TimerStateCallback(RessuciterOverTime_Callback), this);
@@ -966,6 +972,35 @@ namespace Server.Mobiles
 			base.OnAfterResurrect();
 
 			Frozen = false;
+
+			if (Corpse != null && Assomer )
+			{
+				Assomer = false;
+				ArrayList list = new ArrayList();
+
+				foreach (Item item in Corpse.Items)
+				{
+					list.Add(item);
+				}
+
+				foreach (Item item in list)
+				{
+					if (item.Layer == Layer.Hair || item.Layer == Layer.FacialHair)
+						item.Delete();
+
+					if (item is BaseRaceGumps || (Corpse is Corpse && ((Corpse)Corpse).EquipItems.Contains(item)))
+					{
+						if (!EquipItem(item))
+							AddToBackpack(item);
+					}
+					else
+					{
+						AddToBackpack(item);
+					}
+				}
+
+				Corpse.Delete();
+			}
 
 			SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous vous relevez péniblement.", VulnerabilityDuration);
 			SendMessage(HueManager.GetHue(HueManagerList.Red), "Vous êtes vulnérable pendant les {0} prochaines minutes.", VulnerabilityDuration);

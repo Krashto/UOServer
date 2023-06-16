@@ -1684,7 +1684,9 @@ namespace Server.Items
             Poison.Serialize(m_Poison, writer);
             writer.Write((int)m_Content);
             writer.Write(m_Quantity);
-        }
+			writer.Write((int)_Quality);
+			writer.Write(_Crafter);
+		}
 
         protected bool CheckType(string name)
         {
@@ -1717,7 +1719,10 @@ namespace Server.Items
                         m_Poison = Poison.Deserialize(reader);
                         m_Content = (BeverageType)reader.ReadInt();
                         m_Quantity = reader.ReadInt();
-                        break;
+
+						_Quality = (ItemQuality)reader.ReadInt();
+						_Crafter = reader.ReadMobile();
+						break;
                     }
             }
         }

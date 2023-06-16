@@ -132,7 +132,7 @@ namespace Server.CustomScripts.Systems.Experience
 
 				Niveau = Experience.GetLevelByExp(m_From);
 				m_From.Validate(CustomPlayerMobile.ValidateType.All);
-				m_From.Aptitudes.Reset();
+				//m_From.Aptitudes.Reset(); // Donne un reset de PAs
 			}
 		}
 
