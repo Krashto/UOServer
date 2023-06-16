@@ -723,7 +723,7 @@ namespace Server.Mobiles
 		{
 			SendGump(new TipGump(this, m, tip, true));
 
-			SendMessage("Un maître de jeu vous a envoyé un message, double cliquez le b pour le lire.");
+			SendMessage("Vous avez reçu un .tip, double cliquez le parchemin pour le lire.");
 		}
 
 		#region Equitation
