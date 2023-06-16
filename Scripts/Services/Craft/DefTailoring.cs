@@ -338,9 +338,11 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(Robe16), "Robes", "Robe provocante Sombre", 75.0, 95.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");	
 			index = AddCraft(typeof(Robe8), "Robes", "Robe lacée large", 75.0, 95.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");	
 			index = AddCraft(typeof(Robe12), "Robes", "Robe délicate", 80.0, 100.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");	
-			index = AddCraft(typeof(Robe3), "Robes", "Robe manches courtes", 80.0, 100.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");	
+			index = AddCraft(typeof(Robe3), "Robes", "Robe manches courtes", 80.0, 100.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");
+			index = AddCraft(typeof(RobeNim), "Robes", "Robe Nimunique", 80.0, 100.0, typeof(Cloth), "Tissus", 16, "Vous n'avez pas assez de tissus.");
+
 			index = AddCraft(typeof(Robe7), "Robes", "Robe Simple", 85.0, 105.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");	
-			index = AddCraft(typeof(Robe10), "Robes", "Robe manches amples", 90.0, 110.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");	
+			index = AddCraft(typeof(Robe10), "Robes", "Robe manches amples", 90.0, 110.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");
 			
 
 			index = AddCraft(typeof(Robe), "Toges", "Toge Simple", 50.0, 70.0, typeof(Cloth), "Tissus", 16  ,"Vous n'avez pas assez de tissus.");

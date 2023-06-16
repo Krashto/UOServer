@@ -293,6 +293,10 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(ElvenLoveseatEastDeed), "Chaises", "Chaise élégante (E)", 80.0, 100.0, typeof(RegularBoard), 1044041, 50, 1044351);
 			SetDisplayID(index, 0x2DE0);
 			ForceNonExceptional(index);
+			index = AddCraft(typeof(FancyCouchEastDeed), "Chaises", "Canapé (E)", 60.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(FancyCouchWestDeed), "Chaises", "Canapé (O)", 60.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(FancyCouchSouthDeed), "Chaises", "Canapé (S)", 60.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
+			index = AddCraft(typeof(FancyCouchNorthDeed), "Chaises", "Canapé (N)", 60.0, 80.0, typeof(RegularBoard), 1044041, 30, 1044351);
 
 			#endregion
 

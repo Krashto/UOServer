@@ -34,8 +34,7 @@ namespace Xanthos.ShrinkSystem
 		{
 			Weight = 1.0;
 			Movable = true;
-			Name = "Pet Leash";
-			LootType = ( ShrinkConfig.BlessedLeash ? LootType.Blessed : LootType.Regular );
+			Name = "Harnais pour animaux";
 		}
 
 		public PetLeash( Serial serial ) : base( serial )

@@ -2207,7 +2207,7 @@ namespace Server.Items
             if (Absorbed < 2)
                 Absorbed = 2;
 
-            double chance = NegativeAttributes.Antique > 0 ? 80 : 25;
+            double chance = NegativeAttributes.Antique > 0 ? 80 : 35;
 
             if (chance >= Utility.Random(100)) // 25% chance to lower durability
             {

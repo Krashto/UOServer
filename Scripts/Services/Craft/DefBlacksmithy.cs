@@ -547,7 +547,7 @@ namespace Server.Engines.Craft
 			AddCraft(typeof(Tessen), "Masses et marteaux", "Tessen", 40.0, 70.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(DiamondMace), "Masses et marteaux", "Masse diamant", 40.0, 70.0, typeof(IronIngot), "Fer", 20, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(WarHammer), "Masses et marteaux", "Dispenseur", 40.0, 70.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 40.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(Maul), "Masses et marteaux", "Ogrillonne", 40.0, 70.0, typeof(IronIngot), "Fer", 10, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(MarteauPointes), "Masses et marteaux", "Étoile du matin", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(Marteau), "Masses et marteaux", "Marteau", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(MassueClous), "Masses et marteaux", "Massue à Clous", 45.0, 70.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");

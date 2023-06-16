@@ -3,6 +3,7 @@ using Server.Mobiles;
 using Server.Targeting;
 using System;
 using Server.Services.BasketWeaving.Baskets;
+using Xanthos.ShrinkSystem;
 
 namespace Server.Engines.Craft
 {
@@ -527,6 +528,9 @@ namespace Server.Engines.Craft
 			SetUseAllRes(index, true);
 			AddCraft(typeof(EmptyWineBottle), "Divers", "Bouteille de Vin", 22.5, 42.5, typeof(IronIngot), 1044036, 5, 1044037);
 			AddCraft(typeof(EmptyAleBottle), "Divers", "Bouteille de Bière", 32.5, 52.5, typeof(IronIngot), 1044036, 5, 1044037);
+			index = AddCraft(typeof(PetLeash), "Divers", "Harnais pour animaux", 70.0, 110.0, typeof(PlainoisLeather), 1044462, 5, 1044463);
+			AddRes(index, typeof(PoussiereNecrotique), "Poussière Nécrotique", 10, "Vous n'avez pas suffisament de Poussière Nécrotique");
+
 			#endregion
 
 			// Set the overridable material
