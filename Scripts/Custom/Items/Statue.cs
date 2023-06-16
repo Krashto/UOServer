@@ -30,11 +30,13 @@ namespace Server.Items
 		public Statue(int itemID)
             : this(itemID, 0)
         {
+			Movable = true;
         }
 
         public Statue(int itemID, int hue)
             : base(itemID)
         {
+			Movable = true;
         }
 
         public Statue(Serial serial)

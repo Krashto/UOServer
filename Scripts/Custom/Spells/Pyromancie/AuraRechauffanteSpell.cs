@@ -59,7 +59,7 @@ namespace Server.Custom.Spells.NewSpells.Pyromancie
 
 						var duration = GetDurationForSpell(15, 3);
 
-						var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 10, Aptitude.Pyromancie);
+						var value = SpellHelper.AdjustValue(Caster, (Caster.Skills[CastSkill].Value + Caster.Skills[DamageSkill].Value) / 5, Aptitude.Pyromancie);
 
 						ResistanceMod mod = new ResistanceMod(ResistanceType.Fire, (int)value);
 						m_Table[m] = mod;
