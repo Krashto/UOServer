@@ -1,5 +1,21 @@
 [
   {
+    "Id": "7a556e81-6ace-4b3c-b941-b9fe35cb8356",
+    "Visible": true,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 2/2 - Kathya",
+    "Content": "Golem d'Abysses // Une situation intolérable atteint son point de rupture. Un changement radical vous permettra de retrouver votre équilibre et votre paix intérieure. // Nombre chanceux: 2, 45 // Couleur du mois: Brun-gris",
+    "DateCreated": "2023-06-16T19:19:44.9423393-04:00"
+  },
+  {
+    "Id": "6d4cbb79-62cf-4fd1-80bd-18505ca26e91",
+    "Visible": true,
+    "WriterName": "Basile Sonnet",
+    "Title": "Le vent libérateur - Par Basile Sonnet",
+    "Content": "Dans les méandres de l'intestin, Un mal enserre un gras festin. Un ventre crispé et tourmenté. Espère en vain sa liberté. \n\r\n\rMais soudainement, bruit salvateur! Les cors résonnent au dur labeur. Les anges entament tous en coeur, Le chant du pet libérateur!\n\r\n\rTel un souffle de délivrance, Il brise les chaînes de la souffrance. Un rire éclate, un soulagement, Gloire au pruneaux triomphants!",
+    "DateCreated": "2023-06-15T14:10:14.7906415-04:00"
+  },
+  {
     "Id": "caefe70b-02d2-4dd0-aecc-eee9e0f6c2f8",
     "Visible": true,
     "WriterName": "Hyara Farren",
@@ -33,7 +49,7 @@
   },
   {
     "Id": "df4b8032-5d6d-419a-b5ff-63d4b9419777",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Kathya",
     "Title": "Horoscope 1/2 - Kathya",
     "Content": "Fée du Printemps // Laissez la lumière pénétrer les ténèbres, laissez l'amour panser les blessures. La guérison est un voyage, mais vous émergez plus fort(e) et résilient(e) à chaque étape. // Nombre chanceux: 12, 52 // Couleur du mois: Or\n\r\n\rTigre d'Été // Des épreuves vous attendent, mais ne perdez pas espoir. Soyez courageux, car même les jours sombres préparent le terrain pour un avenir plus lumineux. // Nombre chanceux: 5, 33 // Couleur du mois: Olive\n\r\n\rKi-Rin d'Automne // Des nouvelles sont en route, heureuse ou non. Soyez ouvert(e) à l'inattendu, car même les défis peuvent dévoiler des opportunités inespérées. // Nombre chanceux: 4, 65 // Couleur du mois: Orangé\n\r\n\rDragon d'Hiver // Une épreuve majeure approche, nécessitant un sacrifice difficile. Restez fort(e) et persévérez, car de cette épreuve naîtra une croissance et une sagesse profonde. // Nombre chanceux: 1, 54 // Couleur du mois: Gris argent",
@@ -41,7 +57,7 @@
   },
   {
     "Id": "61d7c038-6d7c-4f4e-82ab-1a297b0884ff",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Kathya",
     "Title": "Horoscope 2/2 - Kathya",
     "Content": "Golem d'Abysses // Une réussite vous attend, mais méfiez-vous d'une ancienne infidélité qui refait surface. Restez vigilant dans vos relations pour préserver l'équilibre. // Nombre chanceux: 11, 55 // Couleur du mois: Jaune soleil",
@@ -608,11 +624,11 @@
     "DateCreated": "2023-03-23T12:34:56.789Z"
   },
   {
-    "Id": "6d4cbb79-62cf-4fd1-80bd-18505ca26e91",
+    "Id": "0e2f2ecc-ddbe-4172-b6a1-a24acf057a41",
     "Visible": true,
-    "WriterName": "Basile Sonnet",
-    "Title": "Le vent libérateur - Par Basile Sonnet",
-    "Content": "Dans les méandres de l'intestin, Un mal enserre un gras festin. Un ventre crispé et tourmenté. Espère en vain sa liberté. \n\r\n\rMais soudainement, bruit salvateur! Les cors résonnent au dur labeur. Les anges entament tous en coeur, Le chant du pet libérateur!\n\r\n\rTel un souffle de délivrance, Il brise les chaînes de la souffrance. Un rire éclate, un soulagement, Gloire au pruneaux triomphants!",
-    "DateCreated": "2023-06-15T14:10:14.7906415-04:00"
+    "WriterName": "Kathya",
+    "Title": "Horoscope 1/2 - Kathya",
+    "Content": "Fée du Printemps // Les énergies cosmiques favorisent la guérison des relations. Le pardon et la compréhension mutuelle sont les clés d'une réconciliation harmonieuse. // Nombre chanceux: 4, 46 // Couleur du mois: Orange\n\r\n\rTigre d'Été // Les efforts que vous avez déployés commencent à porter leurs fruits. Soyez persévérant(e), car des développements positifs sont en vue. // Nombre chanceux: 10, 64 // Couleur du mois: Vert sombre\n\r\n\rKi-Rin d'Automne // Une opportunité inattendue se présente, apportant joie ou défi. Soyez ouvert(e) à l'inconnu et prêt(e) à saisir les possibilités qui se présentent à vous. // Nombre chanceux: 8, 32 // Couleur du mois: Vert Olive\n\r\n\rDragon d'Hiver // Les apparences sont trompeuses. Méfiez-vous des mensonges et des trahisons. Prenez des décisions éclairées pour protéger votre bien-être émotionnel. // Nombre chanceux: 6, 24 // Couleur du mois: Bleu ciel",
+    "DateCreated": "2023-06-16T19:20:12.184005-04:00"
   }
 ]

@@ -4,7 +4,7 @@ namespace Server.Items
     {
         [Constructable]
         public Arrow()
-            : this(5)
+            : this(1)
         {
         }
 

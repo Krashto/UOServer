@@ -9,7 +9,7 @@ namespace Server.Items
 
         [Constructable]
         public Bolt()
-            : this(5)
+            : this(1)
         {
         }
 
