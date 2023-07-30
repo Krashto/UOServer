@@ -1,0 +1,935 @@
+##############################
+Log started on 2023-03-14 00:46:14
+
+2023-03-14 00:53:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add catt'
+2023-03-14 00:53:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add dogg'
+2023-03-14 00:53:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 979, -28) in Ilshenar: "TravestyDog"
+2023-03-14 00:53:51: 127.0.0.1: Serials: 0x7; 
+2023-03-14 00:53:58: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'kill '
+2023-03-14 00:53:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x7 "a dog" (no account)
+2023-03-14 00:54:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1835, 978, -28) in Ilshenar: "ImprisonedDog"
+2023-03-14 00:54:03: 127.0.0.1: Serials: 0x40000007; 
+2023-03-14 00:54:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 976, -28) in Ilshenar: "HotDog"
+2023-03-14 00:54:35: 127.0.0.1: Serials: 0x40000009; 
+2023-03-14 00:54:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1837, 975, -28) in Ilshenar: "Hotdog"
+2023-03-14 00:54:37: 127.0.0.1: Serials: 0x4000000A; 
+2023-03-14 00:54:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 977, -28) in Ilshenar: "Dog"
+2023-03-14 00:54:39: 127.0.0.1: Serials: 0x9; 
+##############################
+Log started on 2023-03-14 12:24:22
+
+2023-03-14 12:24:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add chandail10'
+2023-03-14 12:24:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1833, 983, -27) in Ilshenar: "chandail10"
+2023-03-14 12:24:43: 127.0.0.1: Serials: 0x40000006; 
+2023-03-14 12:25:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add pantalon'
+2023-03-14 12:25:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 983, -28) in Ilshenar: "Pantalon10"
+2023-03-14 12:25:13: 127.0.0.1: Serials: 0x40000007; 
+2023-03-14 12:25:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add roblenoble'
+2023-03-14 12:25:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set itemid 41936'
+2023-03-14 12:25:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'itemid' of 0x40000007 (Pantalon10) to '41936'
+2023-03-14 12:29:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 12:29:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 980, -28) in Ilshenar: "sewingkit"
+2023-03-14 12:29:04: 127.0.0.1: Serials: 0x40000008; 
+2023-03-14 12:30:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique7'
+2023-03-14 12:30:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 982, -28) in Ilshenar: "tunique7"
+2023-03-14 12:30:27: 127.0.0.1: Serials: 0x4000001C; 
+##############################
+Log started on 2023-03-14 12:33:40
+
+2023-03-14 12:34:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique7'
+2023-03-14 12:34:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1834, 982, -28) in Ilshenar: "tunique7"
+2023-03-14 12:34:01: 127.0.0.1: Serials: 0x40000006; 
+2023-03-14 12:34:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 12:34:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 980, -28) in Ilshenar: "sewingkit"
+2023-03-14 12:34:55: 127.0.0.1: Serials: 0x40000007; 
+##############################
+Log started on 2023-03-14 12:37:02
+
+2023-03-14 12:37:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique7'
+2023-03-14 12:37:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1837, 981, -28) in Ilshenar: "tunique7"
+2023-03-14 12:37:18: 127.0.0.1: Serials: 0x40000006; 
+2023-03-14 12:37:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 12:37:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 982, -28) in Ilshenar: "sewingkit"
+2023-03-14 12:37:30: 127.0.0.1: Serials: 0x40000007; 
+2023-03-14 13:19:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set itemid 41768'
+2023-03-14 13:19:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'itemid' of 0x40000006 (Tunique7) to '41768'
+2023-03-14 13:25:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set itemid'
+2023-03-14 13:25:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set itemid 41768'
+2023-03-14 13:25:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'itemid' of 0x40000006 (Tunique7) to '41768'
+2023-03-14 13:25:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set itemid 41768'
+2023-03-14 13:25:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'itemid' of 0x40000006 (Tunique7) to '41768'
+##############################
+Log started on 2023-03-14 13:28:12
+
+2023-03-14 13:28:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique3'
+2023-03-14 13:28:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1837, 981, -28) in Ilshenar: "tunique3"
+2023-03-14 13:28:34: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-14 13:33:07
+
+2023-03-14 13:33:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique8'
+2023-03-14 13:33:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1834, 979, -28) in Ilshenar: "tunique8"
+2023-03-14 13:33:53: 127.0.0.1: Serials: 0x40000008; 
+2023-03-14 13:33:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique3'
+2023-03-14 13:33:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1834, 978, -28) in Ilshenar: "tunique3"
+2023-03-14 13:33:56: 127.0.0.1: Serials: 0x40000009; 
+2023-03-14 13:35:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tourmaline'
+2023-03-14 13:35:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 979, -28) in Ilshenar: "tourmaline"
+2023-03-14 13:35:40: 127.0.0.1: Serials: 0x40000019; 
+2023-03-14 13:36:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add pince'
+2023-03-14 13:36:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tongs'
+2023-03-14 13:36:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1835, 964, -28) in Ilshenar: "tongs"
+2023-03-14 13:36:13: 127.0.0.1: Serials: 0x4000001C; 
+2023-03-14 13:36:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add toile'
+2023-03-14 13:36:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1836, 966, -28) in Ilshenar: "ToileVierge"
+2023-03-14 13:36:30: 127.0.0.1: Serials: 0x4000001E; 
+2023-03-14 13:36:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add diamond'
+2023-03-14 13:36:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1835, 969, -28) in Ilshenar: "diamond"
+2023-03-14 13:36:42: 127.0.0.1: Serials: 0x40000020; 
+2023-03-14 13:37:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-14 13:37:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go felucca'
+2023-03-14 13:37:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 1000 1000'
+2023-03-14 13:37:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-14 16:52:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-14 16:53:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add newspellbook'
+2023-03-14 16:53:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (805, 1006, 1) in Felucca: "newspellbook"
+2023-03-14 16:53:29: 127.0.0.1: Serials: 0x40000055; 
+2023-03-14 16:53:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'allspells '
+2023-03-14 16:53:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add regstone'
+2023-03-14 16:53:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (804, 1005, 2) in Felucca: "regstone"
+2023-03-14 16:53:38: 127.0.0.1: Serials: 0x40000056; 
+2023-03-14 16:54:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add troll'
+2023-03-14 16:54:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (737, 1045, 0) in Felucca: "troll"
+2023-03-14 16:54:09: 127.0.0.1: Serials: 0x7; 
+##############################
+Log started on 2023-03-14 16:57:29
+
+##############################
+Log started on 2023-03-14 21:19:15
+
+2023-03-14 21:19:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add .add tunique3'
+2023-03-14 21:19:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tunique3'
+2023-03-14 21:19:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (833, 1009, -1) in Felucca: "tunique3"
+2023-03-14 21:19:43: 127.0.0.1: Serials: 0x40000008; 
+2023-03-14 21:19:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add toilevierge'
+2023-03-14 21:19:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (832, 1007, 1) in Felucca: "toilevierge"
+2023-03-14 21:19:55: 127.0.0.1: Serials: 0x4000000A; 
+2023-03-14 21:23:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 21:23:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x8 "a dog" (no account)
+2023-03-14 21:23:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-14 21:23:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'save '
+2023-03-14 21:24:02: 127.0.0.1: Awaiting confirmation...
+2023-03-14 21:24:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'global remove'
+2023-03-14 21:24:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-03-14 21:40:55
+
+2023-03-14 23:15:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-14 23:15:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-14 23:16:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-14 23:17:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'qui '
+2023-03-14 23:17:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'qui '
+2023-03-14 23:17:11: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-14 23:17:11: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'qui '
+2023-03-14 23:17:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-14 23:17:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'qui '
+2023-03-14 23:17:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') se dirige sur 0x3 "Nucca" ('admin'), Localisation (2267, 108, 0), Map Felucca
+2023-03-14 23:18:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:18:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400000F8 (FancyRobe)
+2023-03-14 23:18:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:18:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x6 "a horse" (no account)
+2023-03-14 23:18:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:18:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000499 (PlateGloves)
+2023-03-14 23:18:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add mortarpest'
+2023-03-14 23:18:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2262, 107, 0) in Felucca: "MortarPestle"
+2023-03-14 23:18:49: 127.0.0.1: Serials: 0x4000000B; 
+2023-03-14 23:18:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2263, 106, 0) in Felucca: "MortarPestle"
+2023-03-14 23:18:49: 127.0.0.1: Serials: 0x4000000C; 
+2023-03-14 23:19:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 23:19:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2262, 107, 0) in Felucca: "sewingkit"
+2023-03-14 23:19:06: 127.0.0.1: Serials: 0x4000000D; 
+2023-03-14 23:19:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 23:19:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2262, 109, 0) in Felucca: "sewingkit"
+2023-03-14 23:19:07: 127.0.0.1: Serials: 0x4000000E; 
+2023-03-14 23:19:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add cloth 100000'
+2023-03-14 23:19:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2261, 108, 0) in Felucca: "cloth" "100000"
+2023-03-14 23:19:16: 127.0.0.1: Serials: 0x4000000F; 
+2023-03-14 23:19:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-14 23:19:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-14 23:19:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000011 (Cloth) (inBag=False; amount=1)
+2023-03-14 23:19:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000011 (Cloth) creating 0x40000014 (Cloth)
+2023-03-14 23:19:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-14 23:19:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x3 "Nucca" ('admin') to '100'
+2023-03-14 23:19:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-14 23:19:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'UsesRemaining' of 0x4000000E (SewingKit) to '9999'
+2023-03-14 23:20:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm remove'
+2023-03-14 23:20:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:20:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400000F4 (Backpack)
+2023-03-14 23:20:16: 127.0.0.1: Crafting 0x40000031 (Jupe) with craft system DefTailoring
+2023-03-14 23:20:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add backpack'
+2023-03-14 23:20:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2263, 106, 0) in Felucca: "backpack"
+2023-03-14 23:20:21: 70.55.171.10: Serials: 0x40000032; 
+2023-03-14 23:20:29: 127.0.0.1: Crafting 0x40000034 (Jupe2) with craft system DefTailoring
+2023-03-14 23:20:33: 70.55.171.10: Crafting 0x40000036 (Jupe) with craft system DefTailoring
+2023-03-14 23:20:36: 127.0.0.1: Crafting 0x40000037 (Jupe3) with craft system DefTailoring
+2023-03-14 23:20:43: 127.0.0.1: Crafting 0x4000003B (Jupe5) with craft system DefTailoring
+2023-03-14 23:20:50: 127.0.0.1: Crafting 0x40000040 (JupeCourte) with craft system DefTailoring
+2023-03-14 23:20:57: 70.55.171.10: Crafting 0x40000041 (Ceinture) with craft system DefTailoring
+2023-03-14 23:21:01: 127.0.0.1: Crafting 0x40000046 (JupeOndule2) with craft system DefTailoring
+2023-03-14 23:21:05: 70.55.171.10: Crafting 0x40000049 (Ceinture2) with craft system DefTailoring
+2023-03-14 23:21:06: 127.0.0.1: Crafting 0x4000004A (PareoCourt) with craft system DefTailoring
+2023-03-14 23:21:14: 70.55.171.10: Crafting 0x4000004C (Ceinture3) with craft system DefTailoring
+2023-03-14 23:21:18: 127.0.0.1: Crafting 0x4000004E (Skirt) with craft system DefTailoring
+2023-03-14 23:21:23: 70.55.171.10: Crafting 0x40000050 (Ceinture4) with craft system DefTailoring
+2023-03-14 23:21:30: 127.0.0.1: Crafting 0x40000053 (JupeCourte2) with craft system DefTailoring
+2023-03-14 23:21:31: 70.55.171.10: Crafting 0x40000055 (Ceinture5) with craft system DefTailoring
+2023-03-14 23:21:38: 70.55.171.10: Crafting 0x40000057 (Ceinture6) with craft system DefTailoring
+2023-03-14 23:21:55: 70.55.171.10: Crafting 0x40000063 (Ceinture7) with craft system DefTailoring
+2023-03-14 23:22:04: 70.55.171.10: Crafting 0x40000067 (Ceinture8) with craft system DefTailoring
+2023-03-14 23:22:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add leather 1000'
+2023-03-14 23:22:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 105, 0) in Felucca: "leather" "1000"
+2023-03-14 23:22:07: 127.0.0.1: Serials: 0x40000068; 
+2023-03-14 23:22:21: 70.55.171.10: Crafting 0x4000006C (Ceinture9) with craft system DefTailoring
+2023-03-14 23:22:28: 70.55.171.10: Crafting 0x4000006F (CeintureBaril) with craft system DefTailoring
+2023-03-14 23:22:38: 70.55.171.10: Crafting 0x40000071 (CeintureMetal) with craft system DefTailoring
+2023-03-14 23:23:01: 127.0.0.1: Crafting 0x40000079 (FourreauDore) with craft system DefTailoring
+2023-03-14 23:23:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'changerlayer '
+2023-03-14 23:23:25: 70.55.171.10: Crafting 0x4000007A (CentureDoreeLarge) with craft system DefTailoring
+2023-03-14 23:23:44: 127.0.0.1: Crafting 0x4000007C (FourreauDore) with craft system DefTailoring
+2023-03-14 23:24:11: 70.55.171.10: Crafting 0x40000080 (LeatherNinjaBelt) with craft system DefTailoring
+2023-03-14 23:24:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:24:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000032 (Backpack)
+2023-03-14 23:24:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add backpack'
+2023-03-14 23:24:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2265, 106, 0) in Felucca: "backpack"
+2023-03-14 23:24:41: 70.55.171.10: Serials: 0x40000084; 
+2023-03-14 23:24:42: 127.0.0.1: Crafting 0x40000085 (RideauBlanc) with craft system DefTailoring
+2023-03-14 23:24:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-14 23:24:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'flip '
+2023-03-14 23:24:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000007 (SewingKit) (inBag=False; amount=1)
+2023-03-14 23:24:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000007 (SewingKit) creating 0x40000086 (SewingKit)
+2023-03-14 23:24:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-14 23:24:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000007 (SewingKit) (inBag=False; amount=1)
+2023-03-14 23:24:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000007 (SewingKit) creating 0x40000087 (SewingKit)
+2023-03-14 23:24:55: 127.0.0.1: Crafting 0x40000089 (RideauRouge) with craft system DefTailoring
+2023-03-14 23:25:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'flip '
+2023-03-14 23:25:01: 70.55.171.10: Crafting 0x4000008A (Bottes) with craft system DefTailoring
+2023-03-14 23:25:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'flip '
+2023-03-14 23:25:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'flip '
+2023-03-14 23:25:09: 70.55.171.10: Crafting 0x4000008C (Bottes2) with craft system DefTailoring
+2023-03-14 23:25:15: 70.55.171.10: Crafting 0x4000008E (Bottes3) with craft system DefTailoring
+2023-03-14 23:25:19: 127.0.0.1: Crafting 0x40000091 (Voilage) with craft system DefTailoring
+2023-03-14 23:25:20: 70.55.171.10: Crafting 0x40000092 (Bottes4) with craft system DefTailoring
+2023-03-14 23:25:26: 70.55.171.10: Crafting 0x400000A3 (Bottes5) with craft system DefTailoring
+2023-03-14 23:25:35: 70.55.171.10: Crafting 0x400000A5 (Bottes6) with craft system DefTailoring
+2023-03-14 23:25:40: 127.0.0.1: Crafting 0x400000A6 (StuddedGorget) with craft system DefTailoring
+2023-03-14 23:25:44: 70.55.171.10: Crafting 0x400000A8 (Bottes7) with craft system DefTailoring
+2023-03-14 23:25:46: 127.0.0.1: Crafting 0x400000A9 (StuddedGloves) with craft system DefTailoring
+2023-03-14 23:25:49: 70.55.171.10: Crafting 0x400000AB (Bottes8) with craft system DefTailoring
+2023-03-14 23:25:50: 127.0.0.1: Crafting 0x400000AC (StuddedArms) with craft system DefTailoring
+2023-03-14 23:25:55: 127.0.0.1: Crafting 0x400000AE (StuddedLegs) with craft system DefTailoring
+2023-03-14 23:25:59: 127.0.0.1: Crafting 0x400000AF (StuddedChest) with craft system DefTailoring
+2023-03-14 23:26:00: 70.55.171.10: Crafting 0x400000B0 (Bottes9) with craft system DefTailoring
+2023-03-14 23:26:04: 127.0.0.1: Crafting 0x400000B1 (BrassardCloute) with craft system DefTailoring
+2023-03-14 23:26:13: 127.0.0.1: Crafting 0x400000B2 (JupeCloute) with craft system DefTailoring
+2023-03-14 23:26:16: 70.55.171.10: Crafting 0x400000B4 (Bottes9) with craft system DefTailoring
+2023-03-14 23:26:25: 127.0.0.1: Crafting 0x400000D2 (PlastronCloute) with craft system DefTailoring
+2023-03-14 23:26:26: 70.55.171.10: Crafting 0x400000D3 (Bottes10) with craft system DefTailoring
+2023-03-14 23:26:31: 127.0.0.1: Crafting 0x400000D6 (PlastronCloute2) with craft system DefTailoring
+2023-03-14 23:26:32: 70.55.171.10: Crafting 0x400000D7 (BottesPoils) with craft system DefTailoring
+2023-03-14 23:26:36: 127.0.0.1: Crafting 0x400000D9 (PlastronCloute3) with craft system DefTailoring
+2023-03-14 23:26:40: 127.0.0.1: Crafting 0x400000ED (PlastronCloute4) with craft system DefTailoring
+2023-03-14 23:26:46: 127.0.0.1: Crafting 0x400000EE (HideChest) with craft system DefTailoring
+2023-03-14 23:26:54: 127.0.0.1: Crafting 0x400000EF (HidePauldrons) with craft system DefTailoring
+2023-03-14 23:26:59: 127.0.0.1: Crafting 0x400000F1 (HideGloves) with craft system DefTailoring
+2023-03-14 23:27:02: 70.55.171.10: Crafting 0x400000F2 (SoulierTissus) with craft system DefTailoring
+2023-03-14 23:27:16: 70.55.171.10: Crafting 0x400000F4 (SandaleCuir) with craft system DefTailoring
+2023-03-14 23:27:26: 70.55.171.10: Crafting 0x400000F5 (SandaleCuir) with craft system DefTailoring
+2023-03-14 23:27:30: 127.0.0.1: Crafting 0x400000F7 (HidePants) with craft system DefTailoring
+2023-03-14 23:27:34: 127.0.0.1: Crafting 0x400000F8 (HideGorget) with craft system DefTailoring
+2023-03-14 23:27:38: 127.0.0.1: Crafting 0x400000F9 (StuddedBustierArms) with craft system DefTailoring
+2023-03-14 23:27:43: 127.0.0.1: Crafting 0x400000FA (FemaleStuddedChest) with craft system DefTailoring
+2023-03-14 23:27:54: 70.55.171.10: Crafting 0x400000FC (ElvenBoots) with craft system DefTailoring
+2023-03-14 23:28:01: 70.55.171.10: Crafting 0x40000101 (Shoes) with craft system DefTailoring
+2023-03-14 23:28:02: 127.0.0.1: Crafting 0x40000102 (PlastronBarbare) with craft system DefTailoring
+2023-03-14 23:28:08: 70.55.171.10: Crafting 0x40000103 (Sandals) with craft system DefTailoring
+2023-03-14 23:28:09: 127.0.0.1: Crafting 0x40000104 (PlastronBarbare2) with craft system DefTailoring
+2023-03-14 23:28:18: 70.55.171.10: Crafting 0x40000107 (Boots) with craft system DefTailoring
+2023-03-14 23:28:23: 127.0.0.1: Crafting 0x40000109 (LeatherGorget) with craft system DefTailoring
+2023-03-14 23:28:26: 70.55.171.10: Crafting 0x4000010A (ThighBoots) with craft system DefTailoring
+2023-03-14 23:28:30: 127.0.0.1: Crafting 0x4000010B (LeatherGorget) with craft system DefTailoring
+2023-03-14 23:28:34: 70.55.171.10: Crafting 0x4000010D (LeatherTalons) with craft system DefTailoring
+2023-03-14 23:28:34: 127.0.0.1: Crafting 0x4000010E (LeatherCap) with craft system DefTailoring
+2023-03-14 23:28:37: 70.55.171.10: Crafting 0x4000010F (LeatherTalons) with craft system DefTailoring
+2023-03-14 23:28:38: 127.0.0.1: Crafting 0x40000110 (LeatherGloves) with craft system DefTailoring
+2023-03-14 23:28:43: 127.0.0.1: Crafting 0x40000111 (LeatherArms) with craft system DefTailoring
+2023-03-14 23:28:48: 127.0.0.1: Crafting 0x40000112 (BrassardCuirSombre) with craft system DefTailoring
+2023-03-14 23:28:54: 127.0.0.1: Crafting 0x40000113 (JambiereCuirSombre) with craft system DefTailoring
+2023-03-14 23:29:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:29:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000089 (RideauRouge)
+2023-03-14 23:29:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:29:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000084 (Backpack)
+2023-03-14 23:29:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add backpack'
+2023-03-14 23:29:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2262, 105, 0) in Felucca: "backpack"
+2023-03-14 23:29:23: 70.55.171.10: Serials: 0x40000116; 
+2023-03-14 23:29:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:29:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x4000012C (BagOfReagents)
+2023-03-14 23:29:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm remove'
+2023-03-14 23:29:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400000E3 (BagOfReagents)
+2023-03-14 23:29:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x4000009C (BagOfNecroReagents)
+2023-03-14 23:29:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000022 (BagOfReagents)
+2023-03-14 23:29:43: 70.55.171.10: Crafting 0x40000119 (VoileDos) with craft system DefTailoring
+2023-03-14 23:29:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000093 (BagOfReagents)
+2023-03-14 23:29:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add leather 200'
+2023-03-14 23:29:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 105, 0) in Felucca: "leather" "200"
+2023-03-14 23:29:52: 127.0.0.1: Serials: 0x4000011B; 
+2023-03-14 23:29:54: 70.55.171.10: Crafting 0x4000011D (Cape) with craft system DefTailoring
+2023-03-14 23:30:01: 70.55.171.10: Crafting 0x40000120 (Cape2) with craft system DefTailoring
+2023-03-14 23:30:10: 127.0.0.1: Crafting 0x40000122 (PlastronCuirSombre) with craft system DefTailoring
+2023-03-14 23:30:12: 70.55.171.10: Crafting 0x40000123 (Cape3) with craft system DefTailoring
+2023-03-14 23:30:20: 127.0.0.1: Crafting 0x40000125 (BottesBarbare) with craft system DefTailoring
+2023-03-14 23:30:25: 70.55.171.10: Crafting 0x40000127 (Cape4) with craft system DefTailoring
+2023-03-14 23:30:32: 127.0.0.1: Crafting 0x40000129 (GorgetBarbare) with craft system DefTailoring
+2023-03-14 23:30:33: 70.55.171.10: Crafting 0x4000012A (Cape5) with craft system DefTailoring
+2023-03-14 23:30:41: 70.55.171.10: Crafting 0x4000012C (Cape6) with craft system DefTailoring
+2023-03-14 23:30:42: 127.0.0.1: Crafting 0x4000012D (JambiereBarbare) with craft system DefTailoring
+2023-03-14 23:30:48: 70.55.171.10: Crafting 0x4000012F (Cape7) with craft system DefTailoring
+2023-03-14 23:30:51: 127.0.0.1: Crafting 0x40000130 (JambiereBarbare2) with craft system DefTailoring
+2023-03-14 23:30:55: 70.55.171.10: Crafting 0x40000132 (Cape8) with craft system DefTailoring
+2023-03-14 23:30:58: 127.0.0.1: Crafting 0x40000133 (PlastronBarbare) with craft system DefTailoring
+2023-03-14 23:31:02: 70.55.171.10: Crafting 0x40000135 (Cape9) with craft system DefTailoring
+2023-03-14 23:31:06: 127.0.0.1: Crafting 0x40000137 (PlastronBarbare2) with craft system DefTailoring
+2023-03-14 23:31:07: 70.55.171.10: Crafting 0x40000138 (Cape10) with craft system DefTailoring
+2023-03-14 23:31:14: 127.0.0.1: Crafting 0x40000139 (PlastronBarbare4) with craft system DefTailoring
+2023-03-14 23:31:16: 70.55.171.10: Crafting 0x4000013B (Cape11) with craft system DefTailoring
+2023-03-14 23:31:20: 127.0.0.1: Crafting 0x4000013C (PlastronBarbare7) with craft system DefTailoring
+2023-03-14 23:31:30: 127.0.0.1: Crafting 0x4000013D (LeafGorget) with craft system DefTailoring
+2023-03-14 23:31:37: 70.55.171.10: Crafting 0x4000013F (CapeBleu) with craft system DefTailoring
+2023-03-14 23:31:39: 127.0.0.1: Crafting 0x40000140 (LeafLegs) with craft system DefTailoring
+2023-03-14 23:31:44: 70.55.171.10: Crafting 0x40000142 (CapePaon) with craft system DefTailoring
+2023-03-14 23:31:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:32:05: 70.55.171.10: Crafting 0x40000144 (Cloak) with craft system DefTailoring
+2023-03-14 23:32:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:32:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000013 (Backpack)
+2023-03-14 23:32:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add backpack'
+2023-03-14 23:32:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 105, 0) in Felucca: "backpack"
+2023-03-14 23:32:12: 127.0.0.1: Serials: 0x40000145; 
+2023-03-14 23:32:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:32:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000116 (Backpack)
+2023-03-14 23:32:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add backpack'
+2023-03-14 23:32:29: 127.0.0.1: Crafting 0x40000146 (Capuche) with craft system DefTailoring
+2023-03-14 23:32:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2262, 106, 0) in Felucca: "backpack"
+2023-03-14 23:32:30: 70.55.171.10: Serials: 0x40000147; 
+2023-03-14 23:32:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:32:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x4000010E (LeatherCap)
+2023-03-14 23:32:44: 127.0.0.1: Crafting 0x40000149 (CapucheToile) with craft system DefTailoring
+2023-03-14 23:32:46: 70.55.171.10: Crafting 0x4000014A (Foulard2) with craft system DefTailoring
+2023-03-14 23:32:49: 70.55.171.10: Crafting 0x4000014B (Carquois) with craft system DefTailoring
+2023-03-14 23:32:58: 70.55.171.10: Crafting 0x4000014D (fourreau) with craft system DefTailoring
+2023-03-14 23:33:02: 127.0.0.1: Crafting 0x4000014E (ChapeauFoulard) with craft system DefTailoring
+2023-03-14 23:33:09: 127.0.0.1: Crafting 0x40000150 (ChapeauMousquetaire) with craft system DefTailoring
+2023-03-14 23:33:12: 70.55.171.10: Crafting 0x40000151 (fourreau2) with craft system DefTailoring
+2023-03-14 23:33:14: 127.0.0.1: Crafting 0x40000152 (CoiffeEgypte) with craft system DefTailoring
+2023-03-14 23:33:18: 70.55.171.10: Crafting 0x40000154 (fourreau3) with craft system DefTailoring
+2023-03-14 23:33:24: 70.55.171.10: Crafting 0x40000155 (FourreauDore) with craft system DefTailoring
+2023-03-14 23:33:25: 127.0.0.1: Crafting 0x40000156 (CoiffeColore) with craft system DefTailoring
+2023-03-14 23:33:32: 127.0.0.1: Crafting 0x40000157 (ToqueBouffon) with craft system DefTailoring
+2023-03-14 23:33:38: 127.0.0.1: Crafting 0x40000158 (MasqueEpouvantail) with craft system DefTailoring
+2023-03-14 23:33:43: 70.55.171.10: Crafting 0x40000159 (Foulard) with craft system DefTailoring
+2023-03-14 23:33:54: 127.0.0.1: Crafting 0x4000015A (CoiffeGuepard) with craft system DefTailoring
+2023-03-14 23:34:01: 127.0.0.1: Crafting 0x4000015B (CoiffeLoupBlanc) with craft system DefTailoring
+2023-03-14 23:34:03: 70.55.171.10: Crafting 0x4000015C (Foulard2) with craft system DefTailoring
+2023-03-14 23:34:07: 127.0.0.1: Crafting 0x4000015D (CoiffeLion) with craft system DefTailoring
+2023-03-14 23:34:15: 70.55.171.10: Crafting 0x4000015F (Foulard4) with craft system DefTailoring
+2023-03-14 23:34:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tigre'
+2023-03-14 23:34:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tiger'
+2023-03-14 23:34:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 101, 0) in Felucca: "SmallTiger"
+2023-03-14 23:34:21: 127.0.0.1: Serials: 0x6; 
+2023-03-14 23:34:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 101, 0) in Felucca: "SmallTiger"
+2023-03-14 23:34:22: 127.0.0.1: Serials: 0x7; 
+2023-03-14 23:34:22: 70.55.171.10: Crafting 0x40000160 (Cocarde) with craft system DefTailoring
+2023-03-14 23:34:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2263, 101, 0) in Felucca: "WildTiger"
+2023-03-14 23:34:27: 127.0.0.1: Serials: 0x8; 
+2023-03-14 23:34:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 100, 0) in Felucca: "WildWhiteTiger"
+2023-03-14 23:34:30: 127.0.0.1: Serials: 0xA; 
+2023-03-14 23:34:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 100, 0) in Felucca: "WildBlackTiger"
+2023-03-14 23:34:33: 127.0.0.1: Serials: 0xB; 
+2023-03-14 23:34:33: 70.55.171.10: Crafting 0x4000016A (BandagesPieds) with craft system DefTailoring
+2023-03-14 23:34:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 100, 0) in Felucca: "WhiteTigerPelt"
+2023-03-14 23:34:38: 127.0.0.1: Serials: 0x4000016C; 
+2023-03-14 23:34:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 100, 0) in Felucca: "WhiteTigerFigurine"
+2023-03-14 23:34:41: 127.0.0.1: Serials: 0x4000016D; 
+2023-03-14 23:34:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2262, 100, 0) in Felucca: "TigersClawThief"
+2023-03-14 23:34:44: 127.0.0.1: Serials: 0xC; 
+2023-03-14 23:34:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2266, 99, 0) in Felucca: "BlackTigerPelt"
+2023-03-14 23:34:51: 127.0.0.1: Serials: 0x4000017A; 
+2023-03-14 23:34:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2267, 100, 0) in Felucca: "PetTigerCubStatuette"
+2023-03-14 23:34:57: 127.0.0.1: Serials: 0x4000017B; 
+2023-03-14 23:35:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2261, 102, 0) in Felucca: "TigerMount"
+2023-03-14 23:35:01: 127.0.0.1: Serials: 0xD; 
+2023-03-14 23:35:06: 70.55.171.10: Crafting 0x4000017D (BourseCeinture) with craft system DefTailoring
+2023-03-14 23:35:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add lion'
+2023-03-14 23:35:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2263, 102, 0) in Felucca: "lion"
+2023-03-14 23:35:15: 127.0.0.1: Serials: 0xE; 
+2023-03-14 23:35:21: 70.55.171.10: Crafting 0x40000180 (CacheOeil1) with craft system DefTailoring
+2023-03-14 23:35:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm remove'
+2023-03-14 23:35:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xE "Un Lion" (no account)
+2023-03-14 23:35:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-14 23:35:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2260, 96, 0) to (2270, 105, 0) in Felucca (Items, Mobiles)
+2023-03-14 23:35:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-14 23:35:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2256, 95, 0) to (2259, 96, 0) in Felucca (Items, Mobiles)
+2023-03-14 23:35:31: 70.55.171.10: Crafting 0x40000181 (CacheOeil2) with craft system DefTailoring
+2023-03-14 23:35:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-14 23:35:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2268, 110, 0) to (2268, 114, 0) in Felucca (Items, Mobiles)
+2023-03-14 23:35:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-14 23:35:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2270, 112, 0) to (2271, 112, 0) in Felucca (Items, Mobiles)
+2023-03-14 23:35:38: 70.55.171.10: Crafting 0x40000183 (CacheOeil3) with craft system DefTailoring
+2023-03-14 23:35:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add warm'
+2023-03-14 23:36:01: 127.0.0.1: Crafting 0x40000185 (CoiffeSanglier) with craft system DefTailoring
+2023-03-14 23:36:08: 70.55.171.10: Crafting 0x40000188 (BodySash) with craft system DefTailoring
+2023-03-14 23:36:25: 70.55.171.10: Crafting 0x4000018A (HalfApron) with craft system DefTailoring
+2023-03-14 23:36:26: 127.0.0.1: Crafting 0x4000018B (Capuche2) with craft system DefTailoring
+2023-03-14 23:36:34: 70.55.171.10: Crafting 0x4000018D (FullApron) with craft system DefTailoring
+2023-03-14 23:36:36: 127.0.0.1: Crafting 0x4000018E (TeteCoyote) with craft system DefTailoring
+2023-03-14 23:36:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add gemmes'
+2023-03-14 23:36:45: 127.0.0.1: Crafting 0x40000190 (TeteTaureau) with craft system DefTailoring
+2023-03-14 23:36:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2263, 105, 0) in Felucca: "AquaGem"
+2023-03-14 23:36:48: 70.55.171.10: Serials: 0x40000191; 
+2023-03-14 23:36:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-14 23:36:57: 127.0.0.1: Crafting 0x40000196 (Toque) with craft system DefTailoring
+2023-03-14 23:37:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add feu'
+2023-03-14 23:37:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2262, 106, 0) in Felucca: "GemmeFeu"
+2023-03-14 23:37:11: 70.55.171.10: Serials: 0x40000199; 
+2023-03-14 23:37:12: 127.0.0.1: Crafting 0x4000019A (Turban) with craft system DefTailoring
+2023-03-14 23:37:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-14 23:37:18: 127.0.0.1: Crafting 0x4000019B (VoileTete) with craft system DefTailoring
+2023-03-14 23:37:21: 70.55.171.10: Crafting 0x4000019C (QuiverOfFire) with craft system DefTailoring
+2023-03-14 23:38:04: 70.55.171.10: Crafting 0x4000019D (Carquois) with craft system DefTailoring
+2023-03-14 23:38:09: 127.0.0.1: Crafting 0x4000019E (Cap) with craft system DefTailoring
+2023-03-14 23:38:18: 127.0.0.1: Crafting 0x4000019F (ChapeauPirate) with craft system DefTailoring
+2023-03-14 23:38:23: 127.0.0.1: Crafting 0x400001A0 (ChapeauPiratePlume) with craft system DefTailoring
+2023-03-14 23:38:38: 127.0.0.1: Crafting 0x400001A1 (SkullCap) with craft system DefTailoring
+2023-03-14 23:38:46: 127.0.0.1: Crafting 0x400001A3 (Bandana) with craft system DefTailoring
+2023-03-14 23:38:48: 70.55.171.10: Crafting 0x400001A4 (GargoyleHalfApron) with craft system DefTailoring
+2023-03-14 23:38:51: 127.0.0.1: Crafting 0x400001A5 (FloppyHat) with craft system DefTailoring
+2023-03-14 23:39:01: 70.55.171.10: Crafting 0x400001A7 (Sash) with craft system DefTailoring
+2023-03-14 23:39:15: 70.55.171.10: Crafting 0x400001A9 (OilCloth) with craft system DefTailoring
+2023-03-14 23:39:36: 70.55.171.10: Crafting 0x400001AC (GozaMatEastDeed) with craft system DefTailoring
+2023-03-14 23:39:36: 127.0.0.1: Crafting 0x400001AD (FeatheredHat) with craft system DefTailoring
+2023-03-14 23:39:48: 127.0.0.1: Crafting 0x400001B2 (HornedTribalMask) with craft system DefTailoring
+2023-03-14 23:40:00: 70.55.171.10: Crafting 0x400001B4 (LargeDiamondPillow) with craft system DefTailoring
+2023-03-14 23:40:01: 127.0.0.1: Crafting 0x400001B5 (TribalMask) with craft system DefTailoring
+2023-03-14 23:40:07: 70.55.171.10: Crafting 0x400001B7 (SmallDiamondPillow) with craft system DefTailoring
+2023-03-14 23:40:14: 70.55.171.10: Crafting 0x400001BA (LargeSquarePillow) with craft system DefTailoring
+2023-03-14 23:40:14: 127.0.0.1: Crafting 0x400001BB (DeerMask) with craft system DefTailoring
+2023-03-14 23:40:25: 127.0.0.1: Crafting 0x400001BE (BearMask) with craft system DefTailoring
+2023-03-14 23:40:26: 70.55.171.10: Crafting 0x400001BF (ThrowPillow) with craft system DefTailoring
+2023-03-14 23:40:36: 127.0.0.1: Crafting 0x400001C0 (ClothNinjaHood) with craft system DefTailoring
+2023-03-14 23:40:39: 70.55.171.10: Crafting 0x400001C1 (Draps) with craft system DefTailoring
+2023-03-14 23:40:45: 70.55.171.10: Crafting 0x400001C3 (Coussin1) with craft system DefTailoring
+2023-03-14 23:40:52: 70.55.171.10: Crafting 0x400001C5 (Coussin2) with craft system DefTailoring
+2023-03-14 23:40:57: 127.0.0.1: Crafting 0x400001C6 (JesterHat) with craft system DefTailoring
+2023-03-14 23:41:06: 127.0.0.1: Crafting 0x400001C9 (JesterHat) with craft system DefTailoring
+2023-03-14 23:41:14: 127.0.0.1: Crafting 0x400001CB (TricorneHat) with craft system DefTailoring
+2023-03-14 23:41:29: 70.55.171.10: Crafting 0x400001D7 (Backpack) with craft system DefTailoring
+2023-03-14 23:41:53: 70.55.171.10: Crafting 0x400001F9 (Saddlebag) with craft system DefTailoring
+2023-03-14 23:42:08: 70.55.171.10: Crafting 0x400001FB (Corde) with craft system DefTailoring
+2023-03-14 23:42:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:42:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000147 (Backpack)
+2023-03-14 23:42:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add backpack'
+2023-03-14 23:43:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2260, 100, 0) in Felucca: "backpack"
+2023-03-14 23:43:00: 70.55.171.10: Serials: 0x400001FC; 
+2023-03-14 23:43:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add tailo'
+2023-03-14 23:43:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-14 23:43:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000007 (SewingKit) (inBag=False; amount=1)
+2023-03-14 23:43:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000007 (SewingKit) creating 0x400001FD (SewingKit)
+2023-03-14 23:43:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-14 23:43:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000007 (SewingKit) (inBag=False; amount=1)
+2023-03-14 23:43:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000007 (SewingKit) creating 0x400001FE (SewingKit)
+2023-03-14 23:43:19: 127.0.0.1: Crafting 0x40000200 (Toge) with craft system DefTailoring
+2023-03-14 23:43:24: 127.0.0.1: Crafting 0x40000201 (Toge2) with craft system DefTailoring
+2023-03-14 23:43:33: 127.0.0.1: Crafting 0x40000202 (Toge3) with craft system DefTailoring
+2023-03-14 23:43:39: 127.0.0.1: Crafting 0x40000204 (Toge4) with craft system DefTailoring
+2023-03-14 23:43:44: 127.0.0.1: Crafting 0x40000206 (Toge5) with craft system DefTailoring
+2023-03-14 23:43:44: 70.55.171.10: Crafting 0x40000207 (Robe2) with craft system DefTailoring
+2023-03-14 23:43:48: 127.0.0.1: Crafting 0x40000208 (Toge6) with craft system DefTailoring
+2023-03-14 23:43:51: 70.55.171.10: Crafting 0x4000020D (Robe19) with craft system DefTailoring
+2023-03-14 23:43:55: 127.0.0.1: Crafting 0x40000223 (Toge7) with craft system DefTailoring
+2023-03-14 23:43:58: 70.55.171.10: Crafting 0x40000243 (RobeCourte) with craft system DefTailoring
+2023-03-14 23:44:00: 127.0.0.1: Crafting 0x40000244 (Toge7) with craft system DefTailoring
+2023-03-14 23:44:09: 127.0.0.1: Crafting 0x40000246 (Toge8) with craft system DefTailoring
+2023-03-14 23:44:13: 70.55.171.10: Crafting 0x40000247 (Robe3) with craft system DefTailoring
+2023-03-14 23:44:19: 127.0.0.1: Crafting 0x40000248 (TogeKoraine) with craft system DefTailoring
+2023-03-14 23:44:24: 127.0.0.1: Crafting 0x4000024A (TogeSparte) with craft system DefTailoring
+2023-03-14 23:44:24: 70.55.171.10: Crafting 0x4000024B (RobeMoulante) with craft system DefTailoring
+2023-03-14 23:44:28: 127.0.0.1: Crafting 0x4000024C (Poncho) with craft system DefTailoring
+2023-03-14 23:44:30: 70.55.171.10: Crafting 0x4000024E (RobeProvocante) with craft system DefTailoring
+2023-03-14 23:44:40: 127.0.0.1: Crafting 0x4000024F (TogePhilosophe) with craft system DefTailoring
+2023-03-14 23:44:45: 127.0.0.1: Crafting 0x40000250 (TogePhilosophe) with craft system DefTailoring
+2023-03-14 23:44:53: 70.55.171.10: Crafting 0x40000252 (Robe5) with craft system DefTailoring
+2023-03-14 23:44:54: 127.0.0.1: Crafting 0x40000253 (Robe) with craft system DefTailoring
+2023-03-14 23:45:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:45:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000145 (Backpack)
+2023-03-14 23:45:24: 70.55.171.10: Crafting 0x40000256 (Robe6) with craft system DefTailoring
+2023-03-14 23:45:32: 70.55.171.10: Crafting 0x40000258 (Robe7) with craft system DefTailoring
+2023-03-14 23:45:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add backpack'
+2023-03-14 23:45:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 104, 0) in Felucca: "backpack"
+2023-03-14 23:45:38: 127.0.0.1: Serials: 0x4000025B; 
+2023-03-14 23:45:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 23:45:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 104, 0) in Felucca: "sewingkit"
+2023-03-14 23:45:44: 127.0.0.1: Serials: 0x4000025C; 
+2023-03-14 23:45:45: 70.55.171.10: Crafting 0x4000025D (Robe8) with craft system DefTailoring
+2023-03-14 23:45:51: 70.55.171.10: Crafting 0x4000025F (Robe10) with craft system DefTailoring
+2023-03-14 23:45:56: 70.55.171.10: Crafting 0x40000261 (Robe11) with craft system DefTailoring
+2023-03-14 23:46:04: 70.55.171.10: Crafting 0x40000263 (Robe12) with craft system DefTailoring
+2023-03-14 23:46:09: 70.55.171.10: Crafting 0x40000265 (Robe13) with craft system DefTailoring
+2023-03-14 23:46:15: 70.55.171.10: Crafting 0x40000267 (Robe14) with craft system DefTailoring
+2023-03-14 23:46:20: 70.55.171.10: Crafting 0x40000269 (Robe15) with craft system DefTailoring
+2023-03-14 23:46:22: 127.0.0.1: Crafting 0x4000026A (Chandail) with craft system DefTailoring
+2023-03-14 23:46:29: 127.0.0.1: Crafting 0x4000026C (Camisole) with craft system DefTailoring
+2023-03-14 23:46:36: 70.55.171.10: Crafting 0x4000026E (Robe16) with craft system DefTailoring
+2023-03-14 23:46:42: 127.0.0.1: Crafting 0x4000026F (Chandail2) with craft system DefTailoring
+2023-03-14 23:46:46: 70.55.171.10: Crafting 0x40000271 (RobeProvocante2) with craft system DefTailoring
+2023-03-14 23:46:47: 127.0.0.1: Crafting 0x40000272 (Tunique) with craft system DefTailoring
+2023-03-14 23:46:52: 127.0.0.1: Crafting 0x40000274 (Chemise) with craft system DefTailoring
+2023-03-14 23:46:53: 70.55.171.10: Crafting 0x40000275 (RobeProvocante3) with craft system DefTailoring
+2023-03-14 23:46:57: 127.0.0.1: Crafting 0x40000276 (Chemise) with craft system DefTailoring
+2023-03-14 23:47:03: 70.55.171.10: Crafting 0x40000278 (RobeProvocante4) with craft system DefTailoring
+2023-03-14 23:47:07: 127.0.0.1: Crafting 0x4000027A (DebardeurSangles) with craft system DefTailoring
+2023-03-14 23:47:13: 70.55.171.10: Crafting 0x4000027B (RobeProvocante5) with craft system DefTailoring
+2023-03-14 23:47:22: 127.0.0.1: Crafting 0x4000027E (BrassiereTissus) with craft system DefTailoring
+2023-03-14 23:47:26: 127.0.0.1: Crafting 0x4000027F (Tunique2) with craft system DefTailoring
+2023-03-14 23:47:32: 127.0.0.1: Crafting 0x40000280 (Tunique2) with craft system DefTailoring
+2023-03-14 23:47:37: 127.0.0.1: Crafting 0x40000281 (Uniforme) with craft system DefTailoring
+2023-03-14 23:47:42: 127.0.0.1: Crafting 0x40000282 (Bustier) with craft system DefTailoring
+2023-03-14 23:47:50: 70.55.171.10: Crafting 0x40000287 (RobeProvocante6) with craft system DefTailoring
+2023-03-14 23:47:56: 70.55.171.10: Crafting 0x4000028D (Robe18) with craft system DefTailoring
+2023-03-14 23:47:57: 127.0.0.1: Crafting 0x4000028E (Tabar4) with craft system DefTailoring
+2023-03-14 23:48:02: 127.0.0.1: Crafting 0x40000290 (Tabar5) with craft system DefTailoring
+2023-03-14 23:48:03: 70.55.171.10: Crafting 0x40000291 (RobeCourteLacet) with craft system DefTailoring
+2023-03-14 23:48:09: 70.55.171.10: Crafting 0x40000293 (RobeBleudecolte) with craft system DefTailoring
+2023-03-14 23:48:09: 127.0.0.1: Crafting 0x40000294 (Tabar5) with craft system DefTailoring
+2023-03-14 23:48:14: 127.0.0.1: Crafting 0x40000296 (Tabar6) with craft system DefTailoring
+2023-03-14 23:48:19: 127.0.0.1: Crafting 0x40000297 (Tabar8) with craft system DefTailoring
+2023-03-14 23:48:20: 70.55.171.10: Crafting 0x40000298 (RobeLacetCuir) with craft system DefTailoring
+2023-03-14 23:48:24: 127.0.0.1: Crafting 0x4000029A (Tabar8) with craft system DefTailoring
+2023-03-14 23:48:26: 70.55.171.10: Crafting 0x4000029B (RobeDessin) with craft system DefTailoring
+2023-03-14 23:48:30: 127.0.0.1: Crafting 0x4000029D (Tabar7) with craft system DefTailoring
+2023-03-14 23:48:37: 127.0.0.1: Crafting 0x4000029E (Chandail3) with craft system DefTailoring
+2023-03-14 23:48:58: 70.55.171.10: Crafting 0x400002A2 (RobeCorset) with craft system DefTailoring
+2023-03-14 23:49:04: 70.55.171.10: Crafting 0x400002A4 (RobeCorset) with craft system DefTailoring
+2023-03-14 23:49:14: 70.55.171.10: Crafting 0x400002A6 (RobeNobleDecolte) with craft system DefTailoring
+2023-03-14 23:49:15: 127.0.0.1: Crafting 0x400002A7 (ElvenDarkShirt) with craft system DefTailoring
+2023-03-14 23:49:21: 70.55.171.10: Crafting 0x400002A9 (RobeDoree) with craft system DefTailoring
+2023-03-14 23:49:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'changerlayer '
+2023-03-14 23:49:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-14 23:49:54: 70.55.171.10: Crafting 0x400002AE (Drapee) with craft system DefTailoring
+2023-03-14 23:50:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'changerlayer '
+2023-03-14 23:50:12: 127.0.0.1: Crafting 0x400002BB (Pantalon12) with craft system DefTailoring
+2023-03-14 23:50:14: 70.55.171.10: Crafting 0x400002BD (PlainDress) with craft system DefTailoring
+2023-03-14 23:50:21: 70.55.171.10: Crafting 0x400002BF (FancyDress) with craft system DefTailoring
+2023-03-14 23:50:26: 127.0.0.1: Crafting 0x400002C1 (Salopette) with craft system DefTailoring
+2023-03-14 23:50:26: 70.55.171.10: Crafting 0x400002C2 (MaleElvenRobe) with craft system DefTailoring
+2023-03-14 23:50:35: 70.55.171.10: Crafting 0x400002C5 (FemaleElvenRobe) with craft system DefTailoring
+2023-03-14 23:50:40: 127.0.0.1: Crafting 0x400002C6 (CulotteLeopard) with craft system DefTailoring
+2023-03-14 23:50:51: 127.0.0.1: Crafting 0x400002C8 (CulotteLeopard) with craft system DefTailoring
+2023-03-14 23:50:53: 127.0.0.1: Crafting 0x400002C9 (CulotteLeopard) with craft system DefTailoring
+2023-03-14 23:50:55: 127.0.0.1: Crafting 0x400002CA (CulotteLeopard) with craft system DefTailoring
+2023-03-14 23:50:59: 127.0.0.1: Crafting 0x400002CB (ShortPants) with craft system DefTailoring
+2023-03-14 23:51:04: 127.0.0.1: Crafting 0x400002CD (LongPants) with craft system DefTailoring
+2023-03-14 23:51:07: 127.0.0.1: Crafting 0x400002CF (ElvenPants) with craft system DefTailoring
+2023-03-14 23:51:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-14 23:51:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2262, 105, 0) in Felucca: "sewingkit"
+2023-03-14 23:51:31: 127.0.0.1: Serials: 0x400002DC; 
+2023-03-14 23:51:39: 127.0.0.1: Crafting 0x400002E2 (WoodlandBelt) with craft system DefTailoring
+2023-03-14 23:52:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-14 23:52:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x4000025B (Backpack)
+2023-03-14 23:52:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add backpack'
+2023-03-14 23:52:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 106, 0) in Felucca: "backpack"
+2023-03-14 23:52:46: 127.0.0.1: Serials: 0x400002F0; 
+2023-03-14 23:52:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add saw'
+2023-03-14 23:52:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 105, 0) in Felucca: "saw"
+2023-03-14 23:52:57: 127.0.0.1: Serials: 0x400002F1; 
+2023-03-14 23:52:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add saw'
+2023-03-14 23:52:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 106, 0) in Felucca: "saw"
+2023-03-14 23:52:59: 127.0.0.1: Serials: 0x400002F2; 
+2023-03-14 23:53:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add saw'
+2023-03-14 23:53:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 107, 0) in Felucca: "saw"
+2023-03-14 23:53:00: 127.0.0.1: Serials: 0x400002F3; 
+2023-03-14 23:53:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:53:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400001FC (Backpack)
+2023-03-14 23:53:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:53:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000019D (Carquois)
+2023-03-14 23:53:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add backpack'
+2023-03-14 23:53:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2263, 104, 0) in Felucca: "backpack"
+2023-03-14 23:53:21: 70.55.171.10: Serials: 0x400002F4; 
+2023-03-14 23:53:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boards 10000'
+2023-03-14 23:53:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add board 10000'
+2023-03-14 23:53:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 106, 0) in Felucca: "board" "10000"
+2023-03-14 23:53:27: 127.0.0.1: Serials: 0x400002F5; 
+2023-03-14 23:53:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add forge'
+2023-03-14 23:53:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2263, 103, 0) in Felucca: "forge"
+2023-03-14 23:53:29: 70.55.171.10: Serials: 0x400002F6; 
+2023-03-14 23:53:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add log 10000'
+2023-03-14 23:53:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add anvil'
+2023-03-14 23:53:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 106, 0) in Felucca: "log" "10000"
+2023-03-14 23:53:32: 127.0.0.1: Serials: 0x400002F7; 
+2023-03-14 23:53:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2264, 103, 0) in Felucca: "anvil"
+2023-03-14 23:53:32: 70.55.171.10: Serials: 0x400002F8; 
+2023-03-14 23:53:58: 70.55.171.10: Crafting 0x400002FD (WaterTroughEastDeed) with craft system DefCarpentry
+2023-03-14 23:54:02: 70.55.171.10: Crafting 0x400002FE (WaterTroughEastDeed) with craft system DefCarpentry
+2023-03-14 23:54:27: 127.0.0.1: Crafting 0x4000030C (BacVide) with craft system DefCarpentry
+2023-03-14 23:54:31: 127.0.0.1: Crafting 0x4000030D (BarrelStaves) with craft system DefCarpentry
+2023-03-14 23:54:33: 127.0.0.1: Crafting 0x4000030E (BarrelLid) with craft system DefCarpentry
+2023-03-14 23:54:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add scroll'
+2023-03-14 23:54:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2265, 107, 0) in Felucca: "BlankScroll"
+2023-03-14 23:54:38: 70.55.171.10: Serials: 0x40000310; 
+2023-03-14 23:54:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-14 23:54:44: 127.0.0.1: Crafting 0x40000312 (LiquorBarrel) with craft system DefCarpentry
+2023-03-14 23:54:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000310 (BlankScroll) to '100'
+2023-03-14 23:54:56: 127.0.0.1: Crafting 0x40000314 (Watertub) with craft system DefCarpentry
+2023-03-14 23:54:59: 70.55.171.10: Crafting 0x40000315 (RedHangingLantern) with craft system DefCarpentry
+2023-03-14 23:55:04: 70.55.171.10: Crafting 0x40000317 (WhiteHangingLantern) with craft system DefCarpentry
+2023-03-14 23:55:10: 127.0.0.1: Crafting 0x40000319 (ShortMusicStandLeft) with craft system DefCarpentry
+2023-03-14 23:55:14: 127.0.0.1: Crafting 0x4000031A (ShortMusicStandRight) with craft system DefCarpentry
+2023-03-14 23:55:18: 70.55.171.10: Crafting 0x4000031C (ShojiScreen) with craft system DefCarpentry
+2023-03-14 23:55:19: 127.0.0.1: Crafting 0x4000031D (TallMusicStandLeft) with craft system DefCarpentry
+2023-03-14 23:55:22: 127.0.0.1: Crafting 0x4000031E (TallMusicStandRight) with craft system DefCarpentry
+2023-03-14 23:55:24: 127.0.0.1: Crafting 0x4000031F (ElvenPodium) with craft system DefCarpentry
+2023-03-14 23:55:25: 70.55.171.10: Crafting 0x40000320 (BambooScreen) with craft system DefCarpentry
+2023-03-14 23:55:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:55:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000320 (BambooScreen)
+2023-03-14 23:55:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:55:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000031C (ShojiScreen)
+2023-03-14 23:55:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:55:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000317 (WhiteHangingLantern)
+2023-03-14 23:55:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:55:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000315 (RedHangingLantern)
+2023-03-14 23:55:55: 127.0.0.1: Crafting 0x40000327 (PlayerBBEast) with craft system DefCarpentry
+2023-03-14 23:56:19: 127.0.0.1: Crafting 0x4000032F (PipeCourbee) with craft system DefCarpentry
+2023-03-14 23:56:22: 70.55.171.10: Crafting 0x40000330 (BambooScreen) with craft system DefCarpentry
+2023-03-14 23:56:26: 70.55.171.10: Crafting 0x40000332 (Paravent) with craft system DefCarpentry
+2023-03-14 23:56:33: 70.55.171.10: Crafting 0x40000334 (Incubator) with craft system DefCarpentry
+2023-03-14 23:56:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:56:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000332 (Paravent)
+2023-03-14 23:56:54: 70.55.171.10: Crafting 0x40000338 (ChickenCoop) with craft system DefCarpentry
+2023-03-14 23:57:17: 70.55.171.10: Crafting 0x40000345 (VanityDeed) with craft system DefCarpentry
+2023-03-14 23:57:20: 127.0.0.1: Crafting 0x40000346 (WoodenShield) with craft system DefCarpentry
+2023-03-14 23:57:28: 127.0.0.1: Crafting 0x4000034E (Parchemin) with craft system DefCarpentry
+2023-03-14 23:57:32: 127.0.0.1: Crafting 0x4000034F (Parchemin) with craft system DefCarpentry
+2023-03-14 23:57:32: 70.55.171.10: Crafting 0x40000350 (FeedingThrough) with craft system DefCarpentry
+2023-03-14 23:57:37: 127.0.0.1: Crafting 0x40000351 (Parchemin) with craft system DefCarpentry
+2023-03-14 23:58:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-14 23:58:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000330 (BambooScreen)
+2023-03-14 23:58:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add piano'
+2023-03-14 23:58:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add pian'
+2023-03-14 23:58:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add '
+2023-03-14 23:58:36: 70.55.171.10: Crafting 0x4000035B (Puit) with craft system DefCarpentry
+2023-03-14 23:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add ironlingot'
+2023-03-14 23:59:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2268, 107, 0) in Felucca: "IronIngot"
+2023-03-14 23:59:31: 70.55.171.10: Serials: 0x40000361; 
+2023-03-14 23:59:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-14 23:59:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000361 (IronIngot) to '100'
+2023-03-14 23:59:56: 70.55.171.10: Crafting 0x40000362 (PoteauChaine) with craft system DefCarpentry
+2023-03-15 00:00:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bouteille'
+2023-03-15 00:00:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 108, 0) in Felucca: "WhippingVine"
+2023-03-15 00:00:35: 70.55.171.10: Serials: 0x10; 
+2023-03-15 00:00:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:00:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x10 "a whipping vine" (no account)
+2023-03-15 00:00:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bouteille'
+2023-03-15 00:00:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 108, 0) in Felucca: "AcidVine"
+2023-03-15 00:00:44: 70.55.171.10: Serials: 0x4000036D; 
+2023-03-15 00:00:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:00:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000036D (AcidVine)
+2023-03-15 00:00:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bouteille'
+2023-03-15 00:00:50: 127.0.0.1: Crafting 0x4000036E (BarrildeVin) with craft system DefCarpentry
+2023-03-15 00:00:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 108, 0) in Felucca: "BottleOfWine"
+2023-03-15 00:00:53: 70.55.171.10: Serials: 0x4000036F; 
+2023-03-15 00:00:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2272, 102, 0) in Felucca: "BottleOfWine"
+2023-03-15 00:00:58: 70.55.171.10: Serials: 0x40000370; 
+2023-03-15 00:00:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:00:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000370 (BottleOfWine)
+2023-03-15 00:01:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-15 00:01:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000376 (BottleOfWine)
+2023-03-15 00:01:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000037D (BottleOfWine)
+2023-03-15 00:01:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000037E (BottleOfWine)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000037F (BottleOfWine)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000380 (BottleOfWine)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000381 (BottleOfWine)
+2023-03-15 00:01:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000382 (BottleOfWine)
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000383 (BottleOfWine)
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000384 (BottleOfWine)
+2023-03-15 00:01:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000385 (BottleOfWine)
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000387 (BottleOfWine)
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000388 (BottleOfWine)
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000389 (BottleOfWine)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000038A (BottleOfWine)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000038B (BottleOfWine)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000038C (BottleOfWine)
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000038D (BottleOfWine)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000038E (BottleOfWine)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x4000038F (BottleOfWine)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000390 (BottleOfWine)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000391 (BottleOfWine)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x4000036F (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x4000036F (BottleOfWine) creating 0x40000392 (BottleOfWine)
+2023-03-15 00:01:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000393 (BottleOfWine)
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000394 (BottleOfWine)
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000395 (BottleOfWine)
+2023-03-15 00:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000396 (BottleOfWine)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000397 (BottleOfWine)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000398 (BottleOfWine)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x40000399 (BottleOfWine)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:32: 127.0.0.1: Crafting 0x4000039A (TabouretFeutre) with craft system DefCarpentry
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x4000039B (BottleOfWine)
+2023-03-15 00:01:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x4000039C (BottleOfWine)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x4000039D (BottleOfWine)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x4000039E (BottleOfWine)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x4000039F (BottleOfWine)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x400003A0 (BottleOfWine)
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x400003AA (BottleOfWine)
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000392 (BottleOfWine) (inBag=False; amount=1)
+2023-03-15 00:01:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000392 (BottleOfWine) creating 0x400003AB (BottleOfWine)
+2023-03-15 00:01:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'flip '
+2023-03-15 00:02:31: 70.55.171.10: Crafting 0x400003B6 (PresentoireVide) with craft system DefCarpentry
+2023-03-15 00:02:57: 70.55.171.10: Crafting 0x400003B7 (PresentoirePlein1) with craft system DefCarpentry
+2023-03-15 00:03:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-15 00:03:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2257, 98, 0) to (2272, 110, 0) in Felucca (Items, Mobiles)
+2023-03-15 00:03:36: 70.55.171.10: Crafting 0x400003BA (EmptyBookcase) with craft system DefCarpentry
+2023-03-15 00:03:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-15 00:03:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2267, 111, 10) to (2267, 111, 10) in Felucca (Items, Mobiles)
+2023-03-15 00:03:40: 70.55.171.10: Crafting 0x400003BC (FullBookcase) with craft system DefCarpentry
+2023-03-15 00:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'flip '
+2023-03-15 00:03:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add tinkertool'
+2023-03-15 00:03:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'flip '
+2023-03-15 00:03:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 105, 0) in Felucca: "TinkerTools"
+2023-03-15 00:03:53: 127.0.0.1: Serials: 0x400003BD; 
+2023-03-15 00:03:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2267, 104, 0) in Felucca: "TinkerTools"
+2023-03-15 00:03:53: 127.0.0.1: Serials: 0x400003BE; 
+2023-03-15 00:03:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 104, 0) in Felucca: "TinkerTools"
+2023-03-15 00:03:53: 127.0.0.1: Serials: 0x400003BF; 
+2023-03-15 00:03:56: 70.55.171.10: Crafting 0x400003C1 (BibliothequeLuxe) with craft system DefCarpentry
+2023-03-15 00:04:13: 70.55.171.10: Crafting 0x400003C6 (BibliothequeLuxe2) with craft system DefCarpentry
+2023-03-15 00:04:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'move '
+2023-03-15 00:04:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') moving 0x400003C6 (BibliothequeLuxe2) to (2272, 105, 0)
+2023-03-15 00:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400003AB (BottleOfWine)
+2023-03-15 00:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000038F (BottleOfWine)
+2023-03-15 00:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000039B (BottleOfWine)
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000396 (BottleOfWine)
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000385 (BottleOfWine)
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000399 (BottleOfWine)
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000038B (BottleOfWine)
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000345 (VanityDeed)
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400002FD (WaterTroughEastDeed)
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000038D (BottleOfWine)
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000039F (BottleOfWine)
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000380 (BottleOfWine)
+2023-03-15 00:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000393 (BottleOfWine)
+2023-03-15 00:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000394 (BottleOfWine)
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000383 (BottleOfWine)
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000039D (BottleOfWine)
+2023-03-15 00:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400003AA (BottleOfWine)
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000382 (BottleOfWine)
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400002FE (WaterTroughEastDeed)
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000389 (BottleOfWine)
+2023-03-15 00:05:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000386 (Board) (inBag=False; amount=1)
+2023-03-15 00:05:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000386 (Board) creating 0x400003DB (Board)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003DD (Board)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003DE (Board)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003DF (Board)
+2023-03-15 00:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003E0 (Board)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003E1 (Board)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003E3 (Board)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003E3 (Board) (inBag=False; amount=1)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003E3 (Board) creating 0x400003E4 (Board)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003E5 (Board)
+2023-03-15 00:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003DB (Board) (inBag=False; amount=1)
+2023-03-15 00:05:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003DB (Board) creating 0x400003E6 (Board)
+2023-03-15 00:05:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-15 00:05:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400003E0 (Board) (inBag=False; amount=1)
+2023-03-15 00:05:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400003E0 (Board) creating 0x400003E7 (Board)
+2023-03-15 00:05:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400003E6 (Board)
+2023-03-15 00:05:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000386 (Board)
+2023-03-15 00:05:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400003DF (Board)
+2023-03-15 00:05:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400003E4 (Board)
+2023-03-15 00:05:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000376 (BottleOfWine)
+2023-03-15 00:05:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:05:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:06:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000037E (BottleOfWine)
+2023-03-15 00:06:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:06:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000397 (BottleOfWine)
+2023-03-15 00:06:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:06:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000395 (BottleOfWine)
+2023-03-15 00:06:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-15 00:06:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000381 (BottleOfWine)
+2023-03-15 00:06:06: 70.55.171.10: Crafting 0x40000416 (Drawer) with craft system DefCarpentry
+2023-03-15 00:06:10: 70.55.171.10: Crafting 0x40000417 (CommodeFoncee) with craft system DefCarpentry
+2023-03-15 00:07:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add furnituredy'
+2023-03-15 00:07:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2265, 108, 0) in Felucca: "FurnitureDyeTub"
+2023-03-15 00:07:53: 127.0.0.1: Serials: 0x40000441; 
+2023-03-15 00:07:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add dyes'
+2023-03-15 00:08:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2264, 108, 0) in Felucca: "dyes"
+2023-03-15 00:08:00: 127.0.0.1: Serials: 0x40000442; 

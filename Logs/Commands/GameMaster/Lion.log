@@ -1,0 +1,239 @@
+2023-05-07 23:24:23: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'gm '
+2023-05-07 23:24:28: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'who '
+2023-05-07 23:24:28: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'who '
+2023-05-07 23:24:34: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') se dirige sur 0x12 "Jacinda" ('Nimue'), Localisation (2261, 100, 0), Map Felucca
+2023-05-07 23:24:42: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add lion'
+2023-05-07 23:24:43: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') building at (2246, 101, 0) in Felucca: "lion"
+2023-05-07 23:24:43: 142.127.0.3: Serials: 0x40B; 
+2023-05-07 23:24:46: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add lionè'
+2023-05-07 23:24:50: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add lion'
+2023-05-07 23:24:50: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') building at (2258, 98, 0) in Felucca: "lion"
+2023-05-07 23:24:50: 142.127.0.3: Serials: 0x424; 
+2023-05-07 23:25:00: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add lion'
+2023-05-07 23:25:00: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') building at (2281, 119, 0) in Felucca: "lion"
+2023-05-07 23:25:00: 142.127.0.3: Serials: 0x443; 
+2023-05-07 23:25:37: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add '
+2023-05-07 23:26:00: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'Add Cougar'
+2023-05-07 23:26:00: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') building at (2272, 119, 0) in Felucca: "Cougar"
+2023-05-07 23:26:00: 142.127.0.3: Serials: 0x446; 
+2023-05-07 23:26:14: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'm delete'
+2023-05-07 23:26:16: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') deleting 0x424 " Lion" (no account)
+2023-05-07 23:26:23: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'get bodyvalue'
+2023-05-07 23:26:32: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') set property 'bodyvalue' of 0x3F5 "Lionheart" ('Lion') to '786'
+2023-05-07 23:26:32: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'self set bodyvalue 786'
+2023-05-07 23:26:34: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'delete '
+2023-05-07 23:26:36: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') deleting 0x40B " Lion" (no account)
+2023-05-07 23:27:48: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add lion'
+2023-05-07 23:27:49: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') building at (3745, 868, 35) in Felucca: "lion"
+2023-05-07 23:27:49: 142.127.0.3: Serials: 0x46F; 
+2023-05-07 23:27:52: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'get bodyvalue'
+2023-05-07 23:27:57: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') set property 'bodyvalue' of 0x3F5 "Lionheart" ('Lion') to '786'
+2023-05-07 23:27:57: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'self set bodyvalue 786'
+2023-05-07 23:28:00: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'delete '
+2023-05-07 23:28:02: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') deleting 0x46F " Lion" (no account)
+2023-05-07 23:28:03: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'who '
+2023-05-07 23:28:06: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'who '
+2023-05-07 23:28:09: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') se dirige sur 0x12 "Nimue" ('Nimue'), Localisation (2261, 101, 0), Map Felucca
+2023-05-07 23:28:36: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'dupe '
+2023-05-07 23:28:38: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') duping 0x40000E14 (GMRobe) (inBag=False; amount=1)
+2023-05-07 23:28:38: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') duped 0x40000E14 (GMRobe) creating 0x40001048 (GMRobe)
+2023-05-07 23:29:17: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'who '
+2023-05-07 23:29:51: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'delete '
+2023-05-07 23:29:52: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') deleting 0x443 " Lion" (no account)
+2023-05-07 23:29:55: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'add horse'
+2023-05-07 23:29:56: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') building at (2277, 104, 0) in Felucca: "horse"
+2023-05-07 23:29:56: 142.127.0.3: Serials: 0x579; 
+2023-05-07 23:30:05: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'self set bodyvvalue 0'
+2023-05-07 23:30:14: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') set property 'hue' of 0x3F5 "Lionheart" ('Lion') to '0'
+2023-05-07 23:30:14: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'self set hue 0'
+2023-05-07 23:30:49: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'm tele'
+2023-05-07 23:31:28: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'm tele'
+2023-05-07 23:32:15: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'self set invul'
+2023-05-07 23:32:19: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') set property 'blessed' of 0x3F5 "Lionheart" ('Lion') to 'True'
+2023-05-07 23:32:19: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'self invul'
+2023-05-07 23:36:03: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'tele '
+2023-05-07 23:36:56: 142.127.0.3: GameMaster 0x3F5 "Lionheart" ('Lion') used command 'who '
+2023-05-07 23:39:43: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'bodyvalue' of 0x275 "Coeur de Lion" ('Lion') to '786'
+2023-05-07 23:39:43: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self set bodyvalue 786'
+2023-05-07 23:39:46: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x275 "Coeur de Lion" ('Lion') to '0'
+2023-05-07 23:39:46: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self set hue 0'
+2023-05-07 23:39:48: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'blessed' of 0x275 "Coeur de Lion" ('Lion') to 'True'
+2023-05-07 23:39:48: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self invul'
+2023-05-07 23:40:01: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'add gmrobe'
+2023-05-07 23:40:01: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (3746, 868, 35) in Felucca: "gmrobe"
+2023-05-07 23:40:01: 142.127.0.3: Serials: 0x40000466; 
+2023-05-07 23:40:09: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-07 23:40:13: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') se dirige sur 0x12 "nimue" ('Nimue'), Localisation (2262, 97, 0), Map Felucca
+2023-05-07 23:40:15: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-07 23:40:28: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'dupe '
+2023-05-07 23:40:30: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') duping 0x40000877 (GMRobe) (inBag=False; amount=1)
+2023-05-07 23:40:30: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') duped 0x40000877 (GMRobe) creating 0x40000617 (GMRobe)
+2023-05-07 23:40:42: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'dupe '
+2023-05-07 23:40:43: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') duping 0x40000E14 (GMRobe) (inBag=False; amount=1)
+2023-05-07 23:40:43: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') duped 0x40000E14 (GMRobe) creating 0x40000630 (GMRobe)
+2023-05-07 23:41:06: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'set hue 2342423342243'
+2023-05-07 23:41:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'set hue 234234423'
+2023-05-07 23:41:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x40000127 (CorpsPeekos) to '234234423'
+2023-05-07 23:41:50: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'delete '
+2023-05-07 23:41:52: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') deleting 0x40000127 (CorpsPeekos)
+2023-05-07 23:41:58: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x275 "Coeur de Lion" ('Lion') to '0'
+2023-05-07 23:41:58: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self set hue 0'
+2023-05-07 23:42:06: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'set hue 0'
+2023-05-07 23:42:14: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'dupe '
+2023-05-07 23:42:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'dupe '
+2023-05-07 23:42:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') duping 0x400033CF (GMRobe) (inBag=False; amount=1)
+2023-05-07 23:42:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') duped 0x400033CF (GMRobe) creating 0x400012BA (GMRobe)
+2023-05-07 23:42:47: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'bodyvalue' of 0x275 "Coeur de Lion" ('Lion') to '786'
+2023-05-07 23:42:47: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self set bodyvalue 786'
+2023-05-07 23:42:54: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'inc z -5'
+2023-05-07 23:43:08: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self inc z 5'
+2023-05-07 23:44:29: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-07 23:44:42: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'add horse'
+2023-05-07 23:44:43: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1060, 1413, 0) in Felucca: "horse"
+2023-05-07 23:44:43: 142.127.0.3: Serials: 0x388; 
+2023-05-07 23:44:50: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-07 23:44:53: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') se dirige sur 0x12 "nimue" ('Nimue'), Localisation (1053, 1388, 25), Map Felucca
+2023-05-07 23:45:27: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'get bodyvalue'
+2023-05-07 23:45:31: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'get bodyvalue'
+2023-05-07 23:49:51: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'get bodyvalue'
+2023-05-07 23:49:58: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'get bodyvalue'
+2023-05-07 23:50:03: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'bodyvalue' of 0x275 "Coeur de Lion" ('Lion') to '400'
+2023-05-07 23:50:03: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self set bodyvalue 400'
+2023-05-07 23:54:00: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'get hue'
+2023-05-07 23:54:06: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'set hue 2796'
+2023-05-07 23:54:06: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x40000630 (GMRobe) to '2796'
+2023-05-07 23:54:12: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'set hue 2796'
+2023-05-07 23:54:12: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x40000617 (GMRobe) to '2796'
+2023-05-07 23:55:01: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x275 "Coeur de Lion" ('Lion') to '2796'
+2023-05-07 23:55:01: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self set hue 2796'
+2023-05-08 00:47:53: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:05:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:07:01: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:07:08: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'inc z 10'
+2023-05-08 01:07:13: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'inc z 10'
+2023-05-08 01:07:15: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:07:31: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'inc z 4'
+2023-05-08 01:07:34: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:08:26: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:09:47: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-08 01:09:55: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go ga'
+2023-05-08 01:09:56: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-08 01:10:04: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:10:11: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'get itemid'
+2023-05-08 01:10:25: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 's 40936'
+2023-05-08 01:10:27: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-08 01:10:30: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-08 01:10:32: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') se dirige sur 0x1C7 "Mig" ('Mig'), Localisation (1039, 1411, 0), Map Felucca
+2023-05-08 01:10:39: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:10:52: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'move '
+2023-05-08 01:10:56: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:11:02: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:11:10: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:18:10: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'add skeleton'
+2023-05-08 01:18:15: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm add skeleton'
+2023-05-08 01:18:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1035, 1412, 0) in Felucca: "skeleton"
+2023-05-08 01:18:16: 142.127.0.3: Serials: 0x918; 
+2023-05-08 01:18:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1036, 1413, 0) in Felucca: "skeleton"
+2023-05-08 01:18:16: 142.127.0.3: Serials: 0x920; 
+2023-05-08 01:18:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1038, 1414, 0) in Felucca: "skeleton"
+2023-05-08 01:18:16: 142.127.0.3: Serials: 0x92B; 
+2023-05-08 01:18:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1040, 1414, 0) in Felucca: "skeleton"
+2023-05-08 01:18:17: 142.127.0.3: Serials: 0x92C; 
+2023-05-08 01:18:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1044, 1411, 0) in Felucca: "skeleton"
+2023-05-08 01:18:17: 142.127.0.3: Serials: 0x92D; 
+2023-05-08 01:18:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1040, 1415, -1) in Felucca: "skeleton"
+2023-05-08 01:18:17: 142.127.0.3: Serials: 0x92F; 
+2023-05-08 01:18:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1039, 1417, 0) in Felucca: "skeleton"
+2023-05-08 01:18:17: 142.127.0.3: Serials: 0x930; 
+2023-05-08 01:18:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1040, 1417, 0) in Felucca: "skeleton"
+2023-05-08 01:18:17: 142.127.0.3: Serials: 0x931; 
+2023-05-08 01:18:18: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1036, 1412, 0) in Felucca: "skeleton"
+2023-05-08 01:18:18: 142.127.0.3: Serials: 0x937; 
+2023-05-08 01:18:18: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1037, 1413, 0) in Felucca: "skeleton"
+2023-05-08 01:18:18: 142.127.0.3: Serials: 0x938; 
+2023-05-08 01:18:18: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1041, 1418, 0) in Felucca: "skeleton"
+2023-05-08 01:18:18: 142.127.0.3: Serials: 0x939; 
+2023-05-08 01:18:18: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1045, 1413, 0) in Felucca: "skeleton"
+2023-05-08 01:18:18: 142.127.0.3: Serials: 0x93A; 
+2023-05-08 01:18:18: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1045, 1412, 0) in Felucca: "skeleton"
+2023-05-08 01:18:18: 142.127.0.3: Serials: 0x93B; 
+2023-05-08 01:18:18: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1036, 1417, -1) in Felucca: "skeleton"
+2023-05-08 01:18:18: 142.127.0.3: Serials: 0x93C; 
+2023-05-08 01:18:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1038, 1416, 0) in Felucca: "skeleton"
+2023-05-08 01:18:19: 142.127.0.3: Serials: 0x93D; 
+2023-05-08 01:18:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (1042, 1411, -1) in Felucca: "skeleton"
+2023-05-08 01:18:19: 142.127.0.3: Serials: 0x93E; 
+2023-05-08 01:18:21: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:18:31: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'blessed' of 0x275 "Coeur de Lion" ('Lion') to 'True'
+2023-05-08 01:18:31: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self invul'
+2023-05-08 01:18:44: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm delete'
+2023-05-08 01:18:49: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm delete'
+2023-05-08 01:18:53: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:20:52: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:23:12: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:24:04: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'delete '
+2023-05-08 01:24:05: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') deleting 0xAD8 "Lady Melisandre" (no account)
+2023-05-08 01:24:09: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:24:14: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'kill '
+2023-05-08 01:24:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:24:32: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:25:49: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:27:25: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:32:53: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:32:57: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:36:35: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:36:55: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-08 01:37:08: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'self inc z 50'
+2023-05-08 01:40:05: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-08 01:40:07: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') se dirige sur 0x40B "Dyzee" ('Dyzee'), Localisation (917, 1313, -1), Map Felucca
+2023-05-08 01:40:13: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'add horse'
+2023-05-08 01:40:14: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (918, 1309, 0) in Felucca: "horse"
+2023-05-08 01:40:14: 142.127.0.3: Serials: 0xA4E; 
+2023-05-08 01:40:17: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-08 01:40:25: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-10 00:40:13: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-10 00:40:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-10 00:43:45: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:23:25: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'add missive'
+2023-05-10 01:23:26: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') building at (2259, 97, 0) in Felucca: "missive"
+2023-05-10 01:23:26: 142.127.0.3: Serials: 0x4000181A; 
+2023-05-10 01:23:29: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-10 01:24:45: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-10 01:24:47: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-10 01:47:46: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'qui '
+2023-05-10 01:49:02: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-10 01:49:49: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'set hue 232'
+2023-05-10 01:49:54: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') set property 'hue' of 0x275 "Coeur de Lion" ('Lion') to '232'
+2023-05-10 01:50:04: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-10 01:50:10: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:50:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-10 01:50:20: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:50:24: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-10 01:50:24: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:50:40: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-10 01:50:45: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '
+2023-05-10 01:50:46: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:50:58: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:05: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:11: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:16: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:34: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:37: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:42: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:51:52: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:52:07: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:52:11: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:52:19: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:52:22: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:52:33: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'm tele'
+2023-05-10 01:53:02: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:53:33: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:53:48: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:54:28: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:54:36: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:54:45: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 01:54:57: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'who '
+2023-05-10 03:10:48: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'go '
+2023-05-10 03:11:00: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'delete '
+2023-05-10 03:11:08: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') deleting 0x40002229 (Static)
+2023-05-10 03:11:10: 142.127.0.3: GameMaster 0x275 "Coeur de Lion" ('Lion') used command 'gm '

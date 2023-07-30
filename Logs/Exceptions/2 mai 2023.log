@@ -1,0 +1,51 @@
+##############################
+Exception log started on 2023-05-02 12:07:02
+
+Exception Caught: 2023-05-02 12:07:02
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-05-02 12:13:47
+
+Exception Caught: 2023-05-02 12:13:47
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-05-02 16:10:43
+
+Exception Caught: 2023-05-02 16:10:43
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-05-02 21:19:40
+
+Exception Caught: 2023-05-02 21:19:40
+System.IO.IOException: Le processus ne peut pas accéder au fichier 'C:\LeRefuge\LeRefugeServer\Logs\Commands\2 mai 2023.log', car il est en cours d'utilisation par un autre processus.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   à System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   à System.IO.StreamWriter..ctor(String path, Boolean append)
+   à Server.Commands.CommandLogging.Initialize() dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Logging.cs:ligne 38
+
+Exception Caught: 2023-05-02 21:19:41
+System.IO.IOException: Le processus ne peut pas accéder au fichier 'C:\LeRefuge\LeRefugeServer\Logs\Chat\2 mai 2023.log', car il est en cours d'utilisation par un autre processus.
+   à System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   à System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   à System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   à System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   à System.IO.StreamWriter..ctor(String path, Boolean append)
+   à Server.Engines.Chat.ChatLogging.Initialize() dans C:\LeRefuge\LeRefugeServer\Scripts\Services\Chat\Logging.cs:ligne 28
+
+##############################
+Exception log started on 2023-05-02 22:13:57
+
+Exception Caught: 2023-05-02 22:13:57
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+

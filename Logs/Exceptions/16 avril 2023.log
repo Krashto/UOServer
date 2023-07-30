@@ -1,0 +1,150 @@
+##############################
+Exception log started on 2023-04-16 17:42:31
+
+Exception Caught: 2023-04-16 17:42:31
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:42:47
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:44:42
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:45:15
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:50:50
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:52:35
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:53:22
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:53:28
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:53:28
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 17:58:51
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:02:33
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:04:01
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:04:13
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:04:17
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:04:32
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:06:35
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:07:05
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:07:21
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:07:21
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:07:50
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+
+Exception Caught: 2023-04-16 18:09:02
+System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.ParseNumbers.StringToInt(String s, Int32 radix, Int32 flags, Int32* currPos)
+   à System.Convert.ToInt32(String value, Int32 fromBase)
+   à Server.Mobiles.XmlSpawnerGump.OnResponse(NetState state, RelayInfo info) dans D:\KaldeniaServer\Scripts\Services\XmlSpawner\XmlSpawnerGumps.cs:ligne 765
+

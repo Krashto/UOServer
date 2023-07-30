@@ -1,0 +1,12 @@
+##############################
+Exception log started on 2023-05-10 11:09:22
+
+Exception Caught: 2023-05-10 11:09:22
+System.MemberAccessException: Impossible de créer une instance de Server.Custom.Items.Spells.BaseTrainingWand, car il s'agit d'une classe abstraite.
+   à System.Reflection.RuntimeConstructorInfo.CheckCanCreateInstance(Type declaringType, Boolean isVarArg)
+   à System.Reflection.RuntimeConstructorInfo.ThrowNoInvokeException()
+   à System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   à System.Reflection.ConstructorInfo.Invoke(Object[] parameters)
+   à Server.Commands.Add.Build(Mobile from, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, Boolean& sendError) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 287
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 384
+

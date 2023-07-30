@@ -1,0 +1,1540 @@
+##############################
+Log started on 2023-03-27 00:32:38
+
+2023-03-27 00:34:03: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-27 00:34:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-27 00:34:11: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-27 00:34:19: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-27 00:46:18: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-27 00:46:47: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-27 00:47:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-27 00:47:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add cuir'
+2023-03-27 00:47:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add sewin'
+2023-03-27 00:48:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1050, 1426, -1) in Felucca: "LeatherSewingKit"
+2023-03-27 00:48:02: 70.55.171.10: Serials: 0x400002E1; 
+2023-03-27 00:48:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 00:48:05: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+##############################
+Log started on 2023-03-27 01:46:31
+
+2023-03-27 01:50:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 01:50:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400000B7 (AddonComponent)
+2023-03-27 01:50:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 01:50:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400000D8 (Forge)
+2023-03-27 02:03:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add inscript'
+2023-03-27 02:03:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add in'
+2023-03-27 02:03:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1032, 1412, 0) in Felucca: "PenAndInk"
+2023-03-27 02:03:35: 70.55.171.10: Serials: 0x4000000A; 
+2023-03-27 02:03:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 02:03:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add plum'
+2023-03-27 02:03:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add plu'
+2023-03-27 02:04:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1027, 1411, -1) in Felucca: "plum"
+2023-03-27 02:04:00: 70.55.171.10: Serials: 0x40000010; 
+2023-03-27 02:04:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 02:04:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000010 (Plum)
+2023-03-27 02:04:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add plumescribe'
+2023-03-27 02:04:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-27 02:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '100'
+2023-03-27 02:05:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add lingo'
+2023-03-27 02:05:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1028, 1411, -1) in Felucca: "IronIngot"
+2023-03-27 02:05:25: 70.55.171.10: Serials: 0x40000019; 
+2023-03-27 02:05:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 02:05:33: 70.55.171.10: Crafting 0x4000001B (ScribesPen) with craft system DefTinkering
+##############################
+Log started on 2023-03-27 02:27:30
+
+##############################
+Log started on 2023-03-27 02:56:15
+
+2023-03-27 02:56:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'go '
+2023-03-27 02:56:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-27 02:56:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add addon'
+2023-03-27 02:56:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 216, 0) in Felucca: "AbbygifttobaleAddon"
+2023-03-27 02:56:42: 127.0.0.1: Serials: 0x4000003F; 
+2023-03-27 02:56:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 02:56:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000DD0 (AddonComponent)
+2023-03-27 02:56:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 217, 0) in Felucca: "AbbygifttobaleAddonDeed"
+2023-03-27 02:56:51: 127.0.0.1: Serials: 0x40000E3D; 
+2023-03-27 02:56:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 216, 0) in Felucca: "AdmiralJacksShipwreckAddon"
+2023-03-27 02:56:56: 127.0.0.1: Serials: 0x40000E3E; 
+2023-03-27 02:56:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 02:57:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400011D6 (AddonComponent)
+2023-03-27 02:57:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 214, 0) in Felucca: "AdvancedTrainingDummyEastAddon"
+2023-03-27 02:57:04: 127.0.0.1: Serials: 0x40001513; 
+2023-03-27 02:57:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 213, 0) in Felucca: "AG_DarksMansionAddon"
+2023-03-27 02:57:20: 127.0.0.1: Serials: 0x4000151C; 
+2023-03-27 02:57:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-27 02:57:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 02:57:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40002B1B (AddonComponent)
+2023-03-27 02:57:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 02:57:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2269, 211, 0) to (2269, 218, 0) in Felucca (Items, Mobiles)
+2023-03-27 02:57:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 211, 0) in Felucca: "AG_DonsPrivateIslandAddon"
+2023-03-27 02:57:50: 127.0.0.1: Serials: 0x400058E4; 
+2023-03-27 02:58:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-27 02:58:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 02:58:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 02:58:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 02:58:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 02:58:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2271, 226, 23) to (2279, 230, 23) in Felucca (Items, Mobiles)
+2023-03-27 02:58:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add addon'
+2023-03-27 02:58:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 224, 0) in Felucca: "Aiakos_Blank_DockAddon"
+2023-03-27 02:58:49: 127.0.0.1: Serials: 0x40006885; 
+2023-03-27 02:59:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 02:59:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40006978 (AddonComponent)
+2023-03-27 02:59:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 239, 0) in Felucca: "Aiakos_CastleAddon"
+2023-03-27 02:59:12: 127.0.0.1: Serials: 0x40006A46; 
+2023-03-27 02:59:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 02:59:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40006A60 (AddonComponent)
+2023-03-27 02:59:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 229, 0) in Felucca: "Aiakos_Chateau_Test2Addon"
+2023-03-27 02:59:36: 127.0.0.1: Serials: 0x4000763C; 
+2023-03-27 02:59:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-27 03:00:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:00:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400078CC (AddonComponent)
+2023-03-27 03:00:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 224, 0) in Felucca: "Aiakos_Dungeon2Addon"
+2023-03-27 03:00:06: 127.0.0.1: Serials: 0x40007B56; 
+2023-03-27 03:00:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:00:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40007C77 (AddonComponent)
+2023-03-27 03:00:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2283, 218, 0) in Felucca: "Aiakos_Floating_cityAddon"
+2023-03-27 03:00:24: 127.0.0.1: Serials: 0x40008110; 
+2023-03-27 03:00:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-27 03:00:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:00:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400086EF (AddonComponent)
+2023-03-27 03:00:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 238, 0) in Felucca: "Aiakos_Paradise_Mansion_TestAddon"
+2023-03-27 03:00:51: 127.0.0.1: Serials: 0x40009ABD; 
+2023-03-27 03:00:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'tele '
+2023-03-27 03:01:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:01:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000A4BD (AddonComponent)
+2023-03-27 03:01:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 237, 0) in Felucca: "Aiakos_Pirate_Castle_FinalAddon"
+2023-03-27 03:01:07: 127.0.0.1: Serials: 0x4000AFD8; 
+2023-03-27 03:01:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:01:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000B010 (AddonComponent)
+2023-03-27 03:01:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 236, 0) in Felucca: "Aiakos_Small_Stone_VillaAddon"
+2023-03-27 03:01:17: 127.0.0.1: Serials: 0x4000B6A1; 
+2023-03-27 03:01:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:01:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000BCB3 (AddonComponent)
+2023-03-27 03:01:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 239, 0) in Felucca: "AlchemistTableEastAddon"
+2023-03-27 03:01:27: 127.0.0.1: Serials: 0x4000BCEE; 
+2023-03-27 03:01:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 233, 0) in Felucca: "AmethystTreeAddon"
+2023-03-27 03:01:34: 127.0.0.1: Serials: 0x4000BCF1; 
+2023-03-27 03:01:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 237, 0) in Felucca: "BarAddon"
+2023-03-27 03:01:49: 127.0.0.1: Serials: 0x4000BCF9; 
+2023-03-27 03:01:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:01:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000C0DB (AddonComponent)
+2023-03-27 03:01:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 232, 0) in Felucca: "BananaHoardAddon"
+2023-03-27 03:01:56: 127.0.0.1: Serials: 0x4000C71E; 
+2023-03-27 03:02:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 233, 0) in Felucca: "ArmoryAddon"
+2023-03-27 03:02:00: 127.0.0.1: Serials: 0x4000C71F; 
+2023-03-27 03:02:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:02:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000CE6F (AddonComponent)
+2023-03-27 03:02:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 234, 0) in Felucca: "BarrelSpongeAddon"
+2023-03-27 03:02:07: 127.0.0.1: Serials: 0x4000CF97; 
+2023-03-27 03:02:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2260, 239, 0) in Felucca: "BedOfNailsAddon"
+2023-03-27 03:02:21: 127.0.0.1: Serials: 0x4000CF99; 
+2023-03-27 03:02:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2262, 241, 0) in Felucca: "BeerBarNAddon"
+2023-03-27 03:02:23: 127.0.0.1: Serials: 0x4000CF9C; 
+2023-03-27 03:02:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2262, 246, 0) in Felucca: "BeerBarWAddon"
+2023-03-27 03:02:27: 127.0.0.1: Serials: 0x4000CFA0; 
+2023-03-27 03:02:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 244, 0) in Felucca: "BelfryAddon"
+2023-03-27 03:02:41: 127.0.0.1: Serials: 0x4000CFA4; 
+2023-03-27 03:02:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:02:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000D0A1 (AddonComponent)
+2023-03-27 03:02:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 242, 0) in Felucca: "birdhouseAddon"
+2023-03-27 03:02:56: 127.0.0.1: Serials: 0x4000D3EA; 
+2023-03-27 03:03:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 250, 0) in Felucca: "BlackthornBaseAddon"
+2023-03-27 03:03:05: 127.0.0.1: Serials: 0x4000D3FF; 
+2023-03-27 03:03:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 250, 0) in Felucca: "BlackWellAddon"
+2023-03-27 03:03:08: 127.0.0.1: Serials: 0x4000D400; 
+2023-03-27 03:03:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 249, 0) in Felucca: "blanksoutharchAddon"
+2023-03-27 03:03:15: 127.0.0.1: Serials: 0x4000D417; 
+2023-03-27 03:03:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 0'
+2023-03-27 03:03:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x4000D41B (AddonComponent) to '0'
+2023-03-27 03:03:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 258, 0) in Felucca: "BoilingCauldronAddon"
+2023-03-27 03:03:38: 127.0.0.1: Serials: 0x4000D42B; 
+2023-03-27 03:03:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2268, 256, 0) in Felucca: "BoneCouchAddon"
+2023-03-27 03:03:42: 127.0.0.1: Serials: 0x4000D42E; 
+2023-03-27 03:03:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 257, 0) in Felucca: "BoneTableAddon"
+2023-03-27 03:03:45: 127.0.0.1: Serials: 0x4000D431; 
+2023-03-27 03:03:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 255, 0) in Felucca: "BoneThroneAddon"
+2023-03-27 03:03:47: 127.0.0.1: Serials: 0x4000D433; 
+2023-03-27 03:03:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 259, 0) in Felucca: "BonfireAddon"
+2023-03-27 03:03:51: 127.0.0.1: Serials: 0x4000D435; 
+2023-03-27 03:03:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 252, 0) in Felucca: "bottlerackAddon"
+2023-03-27 03:03:58: 127.0.0.1: Serials: 0x4000D510; 
+2023-03-27 03:04:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 259, 0) in Felucca: "BoulderRock01Addon"
+2023-03-27 03:04:05: 127.0.0.1: Serials: 0x4000D529; 
+2023-03-27 03:04:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 258, 0) in Felucca: "BoulderRock04Addon"
+2023-03-27 03:04:10: 127.0.0.1: Serials: 0x4000D52D; 
+2023-03-27 03:04:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 255, 0) in Felucca: "BrewDistilleryEastAddon"
+2023-03-27 03:04:17: 127.0.0.1: Serials: 0x4000D531; 
+2023-03-27 03:04:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 256, 0) in Felucca: "BrewDistillerySouthAddon"
+2023-03-27 03:04:20: 127.0.0.1: Serials: 0x4000D534; 
+2023-03-27 03:04:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 265, 0) in Felucca: "DistilleryEastAddon"
+2023-03-27 03:04:41: 127.0.0.1: Serials: 0x4000D537; 
+2023-03-27 03:04:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 265, 0) in Felucca: "DistilleryEastAddon"
+2023-03-27 03:04:42: 127.0.0.1: Serials: 0x4000D53A; 
+2023-03-27 03:04:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 263, 0) in Felucca: "DistilleryEastAddon"
+2023-03-27 03:04:46: 127.0.0.1: Serials: 0x4000D53D; 
+2023-03-27 03:05:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:05:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2261, 244, 0) to (2283, 266, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:05:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2253, 265, 0) in Felucca: "BrokenArmoireAddon"
+2023-03-27 03:05:29: 127.0.0.1: Serials: 0x4000D540; 
+2023-03-27 03:05:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 256, 0) in Felucca: "BrokenArmoireAddon"
+2023-03-27 03:05:30: 127.0.0.1: Serials: 0x4000D542; 
+2023-03-27 03:05:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 255, 0) in Felucca: "BrokenChestOfDrawersAddon"
+2023-03-27 03:05:33: 127.0.0.1: Serials: 0x4000D544; 
+2023-03-27 03:05:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 255, 0) in Felucca: "BrokenCoveredChairAddon"
+2023-03-27 03:05:38: 127.0.0.1: Serials: 0x4000D546; 
+2023-03-27 03:05:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 255, 0) in Felucca: "BrokenFallenChairAddon"
+2023-03-27 03:05:41: 127.0.0.1: Serials: 0x4000D548; 
+2023-03-27 03:05:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 253, 0) in Felucca: "BrownWellAddon"
+2023-03-27 03:05:45: 127.0.0.1: Serials: 0x4000D54A; 
+2023-03-27 03:05:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 246, 0) in Felucca: "CampSiteAddon"
+2023-03-27 03:05:58: 127.0.0.1: Serials: 0x4000D565; 
+2023-03-27 03:06:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 234, 0) in Felucca: "CampSiteAddon"
+2023-03-27 03:06:05: 127.0.0.1: Serials: 0x4000D595; 
+2023-03-27 03:06:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 231, 0) in Felucca: "CarpentryWorkShopAddon"
+2023-03-27 03:06:22: 127.0.0.1: Serials: 0x4000D5C5; 
+2023-03-27 03:06:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 225, 0) in Felucca: "CaveEntranceEast_Addon"
+2023-03-27 03:06:30: 127.0.0.1: Serials: 0x4000D5F4; 
+2023-03-27 03:06:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2286, 222, 0) in Felucca: "CaveEntranceSouth_Addon"
+2023-03-27 03:06:33: 127.0.0.1: Serials: 0x4000D60F; 
+2023-03-27 03:06:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 225, 0) in Felucca: "CelloAddon"
+2023-03-27 03:06:40: 127.0.0.1: Serials: 0x4000D62F; 
+2023-03-27 03:06:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2291, 230, 0) in Felucca: "CaveHomeAddon"
+2023-03-27 03:06:47: 127.0.0.1: Serials: 0x4000D631; 
+2023-03-27 03:07:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:07:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2286, 226, 0) to (2298, 235, 21) in Felucca (Items, Mobiles)
+2023-03-27 03:07:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2288, 224, 0) in Felucca: "ChaosTileAddon"
+2023-03-27 03:07:05: 127.0.0.1: Serials: 0x4000D789; 
+2023-03-27 03:07:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 226, 0) in Felucca: "CherryBlossomTree1bAddon"
+2023-03-27 03:07:12: 127.0.0.1: Serials: 0x4000D78E; 
+2023-03-27 03:07:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2294, 223, 0) in Felucca: "CherryBlossomTree1bAddon"
+2023-03-27 03:07:13: 127.0.0.1: Serials: 0x4000D791; 
+2023-03-27 03:07:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 224, 0) in Felucca: "CherryBlossomTree1eAddon"
+2023-03-27 03:07:17: 127.0.0.1: Serials: 0x4000D794; 
+2023-03-27 03:07:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2294, 226, 0) in Felucca: "CherryBlossomTree1eAddon"
+2023-03-27 03:07:18: 127.0.0.1: Serials: 0x4000D797; 
+2023-03-27 03:07:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 226, 0) in Felucca: "CherryBlossomTree2aAddon"
+2023-03-27 03:07:21: 127.0.0.1: Serials: 0x4000D79A; 
+2023-03-27 03:07:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2293, 228, 0) in Felucca: "CherryBlossomTree2aAddon"
+2023-03-27 03:07:21: 127.0.0.1: Serials: 0x4000D79D; 
+2023-03-27 03:07:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 227, 0) in Felucca: "CherryBlossomTree2bAddon"
+2023-03-27 03:07:27: 127.0.0.1: Serials: 0x4000D7A0; 
+2023-03-27 03:07:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2294, 229, 0) in Felucca: "CherryBlossomTree2bAddon"
+2023-03-27 03:07:28: 127.0.0.1: Serials: 0x4000D7A3; 
+2023-03-27 03:07:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 228, 0) in Felucca: "CherryBlossomTreeAddon"
+2023-03-27 03:07:31: 127.0.0.1: Serials: 0x4000D7A6; 
+2023-03-27 03:07:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 229, 0) in Felucca: "CherryBlossomTreeAddon"
+2023-03-27 03:07:32: 127.0.0.1: Serials: 0x4000D7A9; 
+2023-03-27 03:07:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 230, 0) in Felucca: "CherryBlossomTrunkAddon"
+2023-03-27 03:07:39: 127.0.0.1: Serials: 0x4000D7AC; 
+2023-03-27 03:07:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2287, 233, 0) in Felucca: "CherryBlossomTrunkAddon"
+2023-03-27 03:07:40: 127.0.0.1: Serials: 0x4000D7AE; 
+2023-03-27 03:07:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:07:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2266, 216, 0) to (2287, 249, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:07:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:07:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2294, 218, 0) to (2295, 232, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:07:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:07:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2287, 222, 0) to (2304, 234, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:07:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:07:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2269, 252, 0) to (2279, 258, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:08:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 246, 0) in Felucca: "CodexOfVirtueAddon"
+2023-03-27 03:08:02: 127.0.0.1: Serials: 0x4000D7B0; 
+2023-03-27 03:08:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2262, 248, 0) in Felucca: "ComputerDeskEastAddon"
+2023-03-27 03:08:09: 127.0.0.1: Serials: 0x4000D7D5; 
+2023-03-27 03:08:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2258, 249, 0) in Felucca: "ComputerDeskSouthAddon"
+2023-03-27 03:08:12: 127.0.0.1: Serials: 0x4000D7D8; 
+2023-03-27 03:08:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 238, 0) in Felucca: "ConversationPitAddon"
+2023-03-27 03:08:15: 127.0.0.1: Serials: 0x4000D7DB; 
+2023-03-27 03:08:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 246, 0) in Felucca: "CousteauPerronAddon"
+2023-03-27 03:08:33: 127.0.0.1: Serials: 0x4000D827; 
+2023-03-27 03:08:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 252, 0) in Felucca: "CowBellAddon"
+2023-03-27 03:08:44: 127.0.0.1: Serials: 0x4000D840; 
+2023-03-27 03:08:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 247, 0) in Felucca: "CraftAddon"
+2023-03-27 03:08:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 250, 0) in Felucca: "CreepyPortraitAddon"
+2023-03-27 03:08:51: 127.0.0.1: Serials: 0x4000D842; 
+2023-03-27 03:08:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 255, 0) in Felucca: "CrossWhiteEAddon"
+2023-03-27 03:08:54: 127.0.0.1: Serials: 0x4000D844; 
+2023-03-27 03:08:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2283, 249, 0) in Felucca: "CrossWhiteSAddon"
+2023-03-27 03:08:57: 127.0.0.1: Serials: 0x4000D875; 
+2023-03-27 03:09:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 252, 0) in Felucca: "CrossWoodEAddon"
+2023-03-27 03:09:00: 127.0.0.1: Serials: 0x4000D8A8; 
+2023-03-27 03:09:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 253, 0) in Felucca: "CrossWoodSAddon"
+2023-03-27 03:09:03: 127.0.0.1: Serials: 0x4000D8DA; 
+2023-03-27 03:09:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 239, 0) in Felucca: "CrystalAltarAddon"
+2023-03-27 03:09:07: 127.0.0.1: Serials: 0x4000D90C; 
+2023-03-27 03:09:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 240, 0) in Felucca: "CrystalBrazierAddon"
+2023-03-27 03:09:12: 127.0.0.1: Serials: 0x4000D911; 
+2023-03-27 03:09:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 241, 0) in Felucca: "CrystalCluster01Addon"
+2023-03-27 03:09:15: 127.0.0.1: Serials: 0x4000D913; 
+2023-03-27 03:09:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 240, 15) in Felucca: "CrystalCluster02Addon"
+2023-03-27 03:09:18: 127.0.0.1: Serials: 0x4000D91F; 
+2023-03-27 03:09:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2263, 257, 0) in Felucca: "DarkFlowerTapestryEastAddon"
+2023-03-27 03:09:21: 127.0.0.1: Serials: 0x4000D92E; 
+2023-03-27 03:09:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2262, 250, 0) in Felucca: "DayDecorationAddon"
+2023-03-27 03:09:28: 127.0.0.1: Serials: 0x4000D931; 
+2023-03-27 03:09:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:09:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000D936 (AddonComponent)
+2023-03-27 03:09:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 263, 0) in Felucca: "DecorativeBlackwidowAddon"
+2023-03-27 03:09:45: 127.0.0.1: Serials: 0x4000D9E5; 
+2023-03-27 03:09:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2264, 263, 0) in Felucca: "DogHouseAddon"
+2023-03-27 03:09:56: 127.0.0.1: Serials: 0x4000D9EA; 
+2023-03-27 03:10:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 263, 0) in Felucca: "DonsDungeonCastleAddon"
+2023-03-27 03:10:10: 127.0.0.1: Serials: 0x4000DA05; 
+2023-03-27 03:10:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 265, 22) in Felucca: "DayDecorationAddon"
+2023-03-27 03:10:21: 127.0.0.1: Serials: 0x4000ECB3; 
+2023-03-27 03:10:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 264, 0) in Felucca: "DayDecorationAddon"
+2023-03-27 03:10:25: 127.0.0.1: Serials: 0x4000ED67; 
+2023-03-27 03:10:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 270, 0) in Felucca: "DayDecorationAddon"
+2023-03-27 03:10:28: 127.0.0.1: Serials: 0x4000EE1B; 
+2023-03-27 03:10:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 271, 0) in Felucca: "DayDecorationAddon"
+2023-03-27 03:10:30: 127.0.0.1: Serials: 0x4000EECF; 
+2023-03-27 03:10:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:10:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000DE89 (AddonComponent)
+2023-03-27 03:10:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:10:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000EEC9 (AddonComponent)
+2023-03-27 03:10:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:10:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:10:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2272, 260, 0) to (2281, 272, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:10:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:10:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2259, 237, 0) to (2288, 267, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:10:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add addon'
+2023-03-27 03:11:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 252, 0) in Felucca: "DonsHellTowerAddon"
+2023-03-27 03:11:05: 127.0.0.1: Serials: 0x4000EF83; 
+2023-03-27 03:11:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:11:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000F012 (AddonComponent)
+2023-03-27 03:11:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 244, 0) in Felucca: "DonsMagicSandstoneTowerAddon"
+2023-03-27 03:11:21: 127.0.0.1: Serials: 0x4000F3B9; 
+2023-03-27 03:11:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:11:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000F99A (AddonComponent)
+2023-03-27 03:11:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 244, 0) in Felucca: "DonsMarketplaceAddon"
+2023-03-27 03:11:36: 127.0.0.1: Serials: 0x4000FF8F; 
+2023-03-27 03:11:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'tele '
+2023-03-27 03:11:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:11:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400100BF (AddonComponent)
+2023-03-27 03:11:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 250, 0) in Felucca: "DonsRanchHouseAddon"
+2023-03-27 03:11:55: 127.0.0.1: Serials: 0x40010C32; 
+2023-03-27 03:12:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:12:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40010E85 (AddonComponent)
+2023-03-27 03:12:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 259, 0) in Felucca: "DonsShardOwnerHouseAddon"
+2023-03-27 03:12:09: 127.0.0.1: Serials: 0x40011364; 
+2023-03-27 03:12:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:12:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40011401 (AddonComponent)
+2023-03-27 03:12:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 251, 0) in Felucca: "DonsVendorHouseAddon"
+2023-03-27 03:12:25: 127.0.0.1: Serials: 0x40013375; 
+2023-03-27 03:12:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:12:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400134E3 (AddonComponent)
+2023-03-27 03:12:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 255, 0) in Felucca: "DonsWalledTown1Addon"
+2023-03-27 03:12:39: 127.0.0.1: Serials: 0x40013DA8; 
+2023-03-27 03:12:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 203, 0) in Felucca: "DonsWalledTown3Addon"
+2023-03-27 03:12:57: 127.0.0.1: Serials: 0x4001415C; 
+2023-03-27 03:13:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:13:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400149FE (AddonComponent)
+2023-03-27 03:13:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:13:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40013EE0 (AddonComponent)
+2023-03-27 03:13:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2288, 238, 0) in Felucca: "DungeonBullAddon"
+2023-03-27 03:13:16: 127.0.0.1: Serials: 0x4001699E; 
+2023-03-27 03:13:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 241, 0) in Felucca: "DungeonFountainAddon"
+2023-03-27 03:13:20: 127.0.0.1: Serials: 0x400169A4; 
+2023-03-27 03:13:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2286, 240, 0) in Felucca: "DungeonWallAndVineAddon"
+2023-03-27 03:13:23: 127.0.0.1: Serials: 0x400169A9; 
+2023-03-27 03:13:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2286, 241, 0) in Felucca: "DungeonWallAndVineAddon"
+2023-03-27 03:13:25: 127.0.0.1: Serials: 0x400169AC; 
+2023-03-27 03:13:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2286, 242, 0) in Felucca: "DungeonWallAndVineAddon"
+2023-03-27 03:13:26: 127.0.0.1: Serials: 0x400169AF; 
+2023-03-27 03:13:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 249, 0) in Felucca: "EastgateDonAddon"
+2023-03-27 03:13:33: 127.0.0.1: Serials: 0x400169B2; 
+2023-03-27 03:13:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 252, 0) in Felucca: "EGEAddon"
+2023-03-27 03:13:43: 127.0.0.1: Serials: 0x400169CA; 
+2023-03-27 03:13:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2268, 250, 0) in Felucca: "EGEAddon"
+2023-03-27 03:13:46: 127.0.0.1: Serials: 0x400169D7; 
+2023-03-27 03:13:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2268, 254, 0) in Felucca: "EGSAddon"
+2023-03-27 03:13:49: 127.0.0.1: Serials: 0x400169E4; 
+2023-03-27 03:13:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 253, 0) in Felucca: "EGSAddon"
+2023-03-27 03:13:50: 127.0.0.1: Serials: 0x400169F9; 
+2023-03-27 03:14:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 246, 0) in Felucca: "EnchantedBladeAddon"
+2023-03-27 03:14:01: 127.0.0.1: Serials: 0x40016A0E; 
+2023-03-27 03:14:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 247, 0) in Felucca: "EnchantedVortexAddon"
+2023-03-27 03:14:05: 127.0.0.1: Serials: 0x40016A10; 
+2023-03-27 03:14:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 241, 0) in Felucca: "EnergyGateAddon"
+2023-03-27 03:14:10: 127.0.0.1: Serials: 0x40016A12; 
+2023-03-27 03:14:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 241, 0) in Felucca: "energyGateeastAddon"
+2023-03-27 03:14:18: 127.0.0.1: Serials: 0x40016A29; 
+2023-03-27 03:14:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 241, 0) in Felucca: "energyGateeastAddon"
+2023-03-27 03:14:20: 127.0.0.1: Serials: 0x40016A36; 
+2023-03-27 03:14:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 243, 0) in Felucca: "energyGateeastAddon"
+2023-03-27 03:14:20: 127.0.0.1: Serials: 0x40016A43; 
+2023-03-27 03:14:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 247, 0) in Felucca: "eviltreeAddon"
+2023-03-27 03:14:29: 127.0.0.1: Serials: 0x40016A50; 
+2023-03-27 03:14:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 244, 0) in Felucca: "ExodusAlterAddon"
+2023-03-27 03:14:36: 127.0.0.1: Serials: 0x40016A5F; 
+2023-03-27 03:14:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 249, 0) in Felucca: "FallenLogAddon"
+2023-03-27 03:14:45: 127.0.0.1: Serials: 0x40016A64; 
+2023-03-27 03:14:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 247, 0) in Felucca: "FallenLogAddon"
+2023-03-27 03:14:45: 127.0.0.1: Serials: 0x40016A68; 
+2023-03-27 03:14:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 240, 0) in Felucca: "FancyCouchEastAddon"
+2023-03-27 03:14:48: 127.0.0.1: Serials: 0x40016A6C; 
+2023-03-27 03:14:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 236, 0) in Felucca: "FancyCouchNorthAddon"
+2023-03-27 03:14:57: 127.0.0.1: Serials: 0x40016A70; 
+2023-03-27 03:15:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2283, 232, 0) in Felucca: "FancyCouchSouthAddon"
+2023-03-27 03:15:00: 127.0.0.1: Serials: 0x40016A74; 
+2023-03-27 03:15:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 233, 0) in Felucca: "FancyWoodenShelfEastAddon"
+2023-03-27 03:15:06: 127.0.0.1: Serials: 0x40016A78; 
+2023-03-27 03:15:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 235, 0) in Felucca: "FancyWoodenShelfSouthAddon"
+2023-03-27 03:15:10: 127.0.0.1: Serials: 0x40016A7A; 
+2023-03-27 03:15:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 236, 0) in Felucca: "FireOnPillarAddon"
+2023-03-27 03:15:15: 127.0.0.1: Serials: 0x40016A7C; 
+2023-03-27 03:15:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 247, 0) in Felucca: "fishpondAddon"
+2023-03-27 03:15:21: 127.0.0.1: Serials: 0x40016A80; 
+2023-03-27 03:15:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 0'
+2023-03-27 03:15:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40016ABF (AddonComponent) to '0'
+2023-03-27 03:15:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 240, 0) in Felucca: "FishtankBoatAddon"
+2023-03-27 03:15:34: 127.0.0.1: Serials: 0x40016AF2; 
+2023-03-27 03:16:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'area set hue 0'
+2023-03-27 03:16:02: 127.0.0.1: Property has been set. (172)
+2023-03-27 03:16:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2298, 235, 0) in Felucca: "FlourMillEastAddon"
+2023-03-27 03:16:11: 127.0.0.1: Serials: 0x40016B7C; 
+2023-03-27 03:16:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 238, 0) in Felucca: "FluffySpongeAddon"
+2023-03-27 03:16:15: 127.0.0.1: Serials: 0x40016B80; 
+2023-03-27 03:16:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 237, 0) in Felucca: "Forgottens_Starter_CityAddon"
+2023-03-27 03:16:20: 127.0.0.1: Serials: 0x40016B82; 
+2023-03-27 03:16:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:16:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40018BD6 (AddonComponent)
+2023-03-27 03:16:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 239, 0) in Felucca: "ForsythiaBush01Addon"
+2023-03-27 03:16:26: 127.0.0.1: Serials: 0x4001A49D; 
+2023-03-27 03:16:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2298, 237, 0) in Felucca: "ForsythiaBush01Addon"
+2023-03-27 03:16:27: 127.0.0.1: Serials: 0x4001A4A4; 
+2023-03-27 03:16:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 237, 0) in Felucca: "ForsythiaBush02Addon"
+2023-03-27 03:16:31: 127.0.0.1: Serials: 0x4001A4AB; 
+2023-03-27 03:16:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2301, 239, 0) in Felucca: "ForsythiaBush02Addon"
+2023-03-27 03:16:31: 127.0.0.1: Serials: 0x4001A4B0; 
+2023-03-27 03:16:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 240, 0) in Felucca: "FountainAddon"
+2023-03-27 03:16:37: 127.0.0.1: Serials: 0x4001A4B5; 
+2023-03-27 03:16:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 245, 0) in Felucca: "FountainBarrelAddon"
+2023-03-27 03:16:40: 127.0.0.1: Serials: 0x4001A4C6; 
+2023-03-27 03:16:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2310, 242, 0) in Felucca: "FrostedBathTableAddon"
+2023-03-27 03:16:54: 127.0.0.1: Serials: 0x4001A4EA; 
+2023-03-27 03:16:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2310, 243, 0) in Felucca: "FrostedBathTableAddon"
+2023-03-27 03:16:59: 127.0.0.1: Serials: 0x4001A4F7; 
+2023-03-27 03:17:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 244, 0) in Felucca: "FrostedBathTableAddon"
+2023-03-27 03:17:00: 127.0.0.1: Serials: 0x4001A504; 
+2023-03-27 03:17:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2309, 243, 0) in Felucca: "FrostedBathTableAddon"
+2023-03-27 03:17:01: 127.0.0.1: Serials: 0x4001A511; 
+2023-03-27 03:17:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2310, 244, 0) in Felucca: "FrostedBathTableAddon"
+2023-03-27 03:17:01: 127.0.0.1: Serials: 0x4001A51E; 
+2023-03-27 03:17:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 246, 0) in Felucca: "FrostedEastTableAddon"
+2023-03-27 03:17:05: 127.0.0.1: Serials: 0x4001A52B; 
+2023-03-27 03:17:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 250, 0) in Felucca: "FrostedLGSquareTableAddon"
+2023-03-27 03:17:09: 127.0.0.1: Serials: 0x4001A530; 
+2023-03-27 03:17:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2309, 251, 0) in Felucca: "FrostedSmSquareTableAddon"
+2023-03-27 03:17:14: 127.0.0.1: Serials: 0x4001A53D; 
+2023-03-27 03:17:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 250, 0) in Felucca: "FrostedSmSquareTableAddon"
+2023-03-27 03:17:15: 127.0.0.1: Serials: 0x4001A541; 
+2023-03-27 03:17:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 247, 0) in Felucca: "FrostedSTableAddon"
+2023-03-27 03:17:18: 127.0.0.1: Serials: 0x4001A545; 
+2023-03-27 03:17:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2315, 243, 0) in Felucca: "FrostedTailorTableAddon"
+2023-03-27 03:17:22: 127.0.0.1: Serials: 0x4001A54A; 
+2023-03-27 03:17:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2301, 255, 0) in Felucca: "fullArchenergyAddon"
+2023-03-27 03:17:28: 127.0.0.1: Serials: 0x4001A55A; 
+2023-03-27 03:17:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2310, 233, 0) in Felucca: "galleonAddon"
+2023-03-27 03:17:31: 127.0.0.1: Serials: 0x4001A572; 
+2023-03-27 03:17:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'tele '
+2023-03-27 03:17:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-27 03:18:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set visible false'
+2023-03-27 03:18:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'visible' of 0x4001A990 (AddonComponent) to 'False'
+2023-03-27 03:18:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set visible false'
+2023-03-27 03:18:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'visible' of 0x4001A69F (AddonComponent) to 'False'
+2023-03-27 03:18:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set visible false'
+2023-03-27 03:18:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'visible' of 0x4001A75F (AddonComponent) to 'False'
+2023-03-27 03:18:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:18:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4001A941 (AddonComponent)
+2023-03-27 03:18:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 231, 0) in Felucca: "gardenwellAddon"
+2023-03-27 03:18:25: 127.0.0.1: Serials: 0x4001AD20; 
+2023-03-27 03:18:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2313, 226, 0) in Felucca: "GargishCotEastAddon"
+2023-03-27 03:18:33: 127.0.0.1: Serials: 0x4001AD55; 
+2023-03-27 03:18:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2311, 230, 0) in Felucca: "GargishCouchEastAddon"
+2023-03-27 03:18:37: 127.0.0.1: Serials: 0x4001AD58; 
+2023-03-27 03:18:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2317, 228, 0) in Felucca: "GargishCouchSouthAddon"
+2023-03-27 03:18:39: 127.0.0.1: Serials: 0x4001AD5B; 
+2023-03-27 03:18:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2314, 232, 0) in Felucca: "GeoffreyCampAddon"
+2023-03-27 03:18:44: 127.0.0.1: Serials: 0x4001AD5E; 
+2023-03-27 03:18:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:18:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4001AD6F (AddonComponent)
+2023-03-27 03:18:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 225, 0) in Felucca: "GlassClothRackAddon"
+2023-03-27 03:18:54: 127.0.0.1: Serials: 0x4001AD83; 
+2023-03-27 03:19:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 227, 0) in Felucca: "GlobeOfSosariaAddon"
+2023-03-27 03:19:01: 127.0.0.1: Serials: 0x4001AD90; 
+2023-03-27 03:19:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2311, 233, 0) in Felucca: "GlobeStarsAddon"
+2023-03-27 03:19:08: 127.0.0.1: Serials: 0x4001AD95; 
+2023-03-27 03:19:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 238, 6) in Felucca: "GoldenWillowAddon"
+2023-03-27 03:19:18: 127.0.0.1: Serials: 0x4001ADE9; 
+2023-03-27 03:19:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 238, 0) in Felucca: "GreenTeaCauldronAddon"
+2023-03-27 03:19:27: 127.0.0.1: Serials: 0x4001ADFD; 
+2023-03-27 03:19:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2323, 237, 0) in Felucca: "GypsyVardoGreenEWAddon"
+2023-03-27 03:19:35: 127.0.0.1: Serials: 0x4001ADFF; 
+2023-03-27 03:19:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2333, 229, 0) in Felucca: "GypsyVardoWhiteNSAddon"
+2023-03-27 03:19:46: 127.0.0.1: Serials: 0x4001AE7B; 
+2023-03-27 03:19:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2337, 230, 0) in Felucca: "GypsyVardoWhiteNSAddon"
+2023-03-27 03:19:48: 127.0.0.1: Serials: 0x4001AEF7; 
+2023-03-27 03:19:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2321, 247, 0) in Felucca: "HalloweenBloodFountainAddon"
+2023-03-27 03:19:53: 127.0.0.1: Serials: 0x4001AF73; 
+2023-03-27 03:20:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2309, 256, 0) in Felucca: "HalloweenCasketTempleAddon"
+2023-03-27 03:20:03: 127.0.0.1: Serials: 0x4001AFE4; 
+2023-03-27 03:20:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2318, 256, 0) in Felucca: "HalloweenHellPitAddon"
+2023-03-27 03:20:09: 127.0.0.1: Serials: 0x4001B063; 
+2023-03-27 03:20:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:20:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2297, 228, 0) to (2323, 261, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:20:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:20:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2290, 224, 0) to (2316, 244, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:20:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:20:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2264, 228, 0) to (2289, 257, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:20:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 249, 0) in Felucca: "HalloweenMinotaurYardAddon"
+2023-03-27 03:20:34: 127.0.0.1: Serials: 0x4001B0EE; 
+2023-03-27 03:20:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 239, 0) in Felucca: "HalloweenSkullPostAddon"
+2023-03-27 03:20:38: 127.0.0.1: Serials: 0x4001B14D; 
+2023-03-27 03:20:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 244, 0) in Felucca: "HalloweenSpiderForestAddon"
+2023-03-27 03:20:42: 127.0.0.1: Serials: 0x4001B168; 
+2023-03-27 03:20:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 257, 0) in Felucca: "HalloweenTortureChamberAddon"
+2023-03-27 03:20:51: 127.0.0.1: Serials: 0x4001B1A9; 
+2023-03-27 03:20:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 250, 0) in Felucca: "HalloweenTreeBlackAddon"
+2023-03-27 03:20:56: 127.0.0.1: Serials: 0x4001B1EE; 
+2023-03-27 03:21:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 252, 0) in Felucca: "HalloweenWorshipTempleAddon"
+2023-03-27 03:21:01: 127.0.0.1: Serials: 0x4001B1FD; 
+2023-03-27 03:21:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:21:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2286, 259, 0) to (2286, 259, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:21:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:21:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2266, 241, 0) to (2283, 257, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:21:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 249, 0) in Felucca: "HangingFarmToolAddon"
+2023-03-27 03:21:16: 127.0.0.1: Serials: 0x4001B249; 
+2023-03-27 03:21:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 246, 0) in Felucca: "HarpsichordAddonDeed"
+2023-03-27 03:21:19: 127.0.0.1: Serials: 0x4001B24C; 
+2023-03-27 03:21:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 252, 0) in Felucca: "HarvestCartAddon"
+2023-03-27 03:21:22: 127.0.0.1: Serials: 0x4001B24D; 
+2023-03-27 03:21:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 258, 0) in Felucca: "HarvestKillAddon"
+2023-03-27 03:21:31: 127.0.0.1: Serials: 0x4001B25E; 
+2023-03-27 03:21:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 253, 0) in Felucca: "HarvestLampAddon"
+2023-03-27 03:21:40: 127.0.0.1: Serials: 0x4001B278; 
+2023-03-27 03:21:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 257, 0) in Felucca: "harvesttableAddon"
+2023-03-27 03:21:43: 127.0.0.1: Serials: 0x4001B287; 
+2023-03-27 03:21:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 253, 0) in Felucca: "HarvestWreathEAddon"
+2023-03-27 03:21:53: 127.0.0.1: Serials: 0x4001B294; 
+2023-03-27 03:21:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 256, 0) in Felucca: "HaunterMirrorAddon"
+2023-03-27 03:21:58: 127.0.0.1: Serials: 0x4001B29E; 
+2023-03-27 03:22:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 250, 0) in Felucca: "hellAddon"
+2023-03-27 03:22:02: 127.0.0.1: Serials: 0x4001B2A0; 
+2023-03-27 03:22:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:22:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2268, 237, 0) to (2280, 253, 1) in Felucca (Items, Mobiles)
+2023-03-27 03:22:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 242, 0) in Felucca: "hex_CornerFireplaceAddon"
+2023-03-27 03:22:15: 127.0.0.1: Serials: 0x4001B6ED; 
+2023-03-27 03:22:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 241, 0) in Felucca: "hex_FirepEastAddon"
+2023-03-27 03:22:20: 127.0.0.1: Serials: 0x4001B700; 
+2023-03-27 03:22:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 239, 0) in Felucca: "hex_FirepEastAddon"
+2023-03-27 03:22:24: 127.0.0.1: Serials: 0x4001B72B; 
+2023-03-27 03:22:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'inc z -1'
+2023-03-27 03:22:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'inc z -1'
+2023-03-27 03:22:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 249, 0) in Felucca: "hex_fireplaceMPAddon"
+2023-03-27 03:22:42: 127.0.0.1: Serials: 0x4001B756; 
+2023-03-27 03:22:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 244, 0) in Felucca: "hex_fireplaceMPAddon"
+2023-03-27 03:22:43: 127.0.0.1: Serials: 0x4001B770; 
+2023-03-27 03:22:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 238, 0) in Felucca: "hex_FirepSouthAddon"
+2023-03-27 03:22:48: 127.0.0.1: Serials: 0x4001B78A; 
+2023-03-27 03:22:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 232, 0) in Felucca: "hex_PvpArenaAddon"
+2023-03-27 03:22:53: 127.0.0.1: Serials: 0x4001B7B5; 
+2023-03-27 03:23:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 221, 0) in Felucca: "hex_StoveEastAddon"
+2023-03-27 03:23:04: 127.0.0.1: Serials: 0x4001B93A; 
+2023-03-27 03:23:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 217, 0) in Felucca: "hex_StoveEastAddon"
+2023-03-27 03:23:06: 127.0.0.1: Serials: 0x4001B950; 
+2023-03-27 03:23:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 214, 0) in Felucca: "hex_WaterfallPondAddon"
+2023-03-27 03:23:16: 127.0.0.1: Serials: 0x4001B966; 
+2023-03-27 03:23:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 216, 0) in Felucca: "HeXgraveyAddon"
+2023-03-27 03:23:26: 127.0.0.1: Serials: 0x4001B989; 
+2023-03-27 03:23:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:23:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2274, 213, 0) to (2288, 237, 22) in Felucca (Items, Mobiles)
+2023-03-27 03:23:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 224, 0) in Felucca: "HildebrandtDragonRugAddon"
+2023-03-27 03:23:39: 127.0.0.1: Serials: 0x4001B9F9; 
+2023-03-27 03:23:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2263, 231, 0) in Felucca: "IslandAbigail1Addon"
+2023-03-27 03:23:48: 127.0.0.1: Serials: 0x4001BA13; 
+2023-03-27 03:23:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'tele '
+2023-03-27 03:24:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2261, 228, 23) in Felucca: "IversRoundingAddon"
+2023-03-27 03:24:04: 127.0.0.1: Serials: 0x4001C167; 
+2023-03-27 03:24:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 233, 23) in Felucca: "IversRoundingAddon"
+2023-03-27 03:24:05: 127.0.0.1: Serials: 0x4001C32E; 
+2023-03-27 03:24:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:24:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2249, 230, 23) to (2278, 236, 23) in Felucca (Items, Mobiles)
+2023-03-27 03:24:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:24:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2271, 219, 0) to (2282, 253, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:24:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add addon'
+2023-03-27 03:24:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 241, 0) in Felucca: "KCounterCornerAddon"
+2023-03-27 03:24:32: 127.0.0.1: Serials: 0x4001C4F5; 
+2023-03-27 03:24:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 243, 0) in Felucca: "KCounterEAddon"
+2023-03-27 03:24:37: 127.0.0.1: Serials: 0x4001C4FD; 
+2023-03-27 03:24:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 247, 0) in Felucca: "kegstorageAddon"
+2023-03-27 03:24:40: 127.0.0.1: Serials: 0x4001C502; 
+2023-03-27 03:24:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 238, 0) in Felucca: "KhaldunCampAddon"
+2023-03-27 03:24:45: 127.0.0.1: Serials: 0x4001C545; 
+2023-03-27 03:24:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 233, 0) in Felucca: "KhaldunEntranceAddon"
+2023-03-27 03:24:50: 127.0.0.1: Serials: 0x4001C5A2; 
+2023-03-27 03:25:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2288, 237, 0) in Felucca: "KitchenStoveEAddon"
+2023-03-27 03:25:04: 127.0.0.1: Serials: 0x4001C5E1; 
+2023-03-27 03:25:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2291, 234, 0) in Felucca: "KotlSacraficialAltarAddon"
+2023-03-27 03:25:16: 127.0.0.1: Serials: 0x4001C5EE; 
+2023-03-27 03:25:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 231, 0) in Felucca: "KotlWallAddon"
+2023-03-27 03:25:18: 127.0.0.1: Serials: 0x4001C5F3; 
+2023-03-27 03:25:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 233, 0) in Felucca: "KOvenEAddon"
+2023-03-27 03:25:23: 127.0.0.1: Serials: 0x4001C61C; 
+2023-03-27 03:25:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 230, 0) in Felucca: "KOvenSAddon"
+2023-03-27 03:25:25: 127.0.0.1: Serials: 0x4001C62C; 
+2023-03-27 03:25:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 237, 0) in Felucca: "KSinkEAddon"
+2023-03-27 03:25:28: 127.0.0.1: Serials: 0x4001C63C; 
+2023-03-27 03:25:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 241, 0) in Felucca: "LargeFishingNetAddon"
+2023-03-27 03:25:37: 127.0.0.1: Serials: 0x4001C64C; 
+2023-03-27 03:25:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 242, 0) in Felucca: "LargeSpiderWebAddon"
+2023-03-27 03:25:41: 127.0.0.1: Serials: 0x4001C64E; 
+2023-03-27 03:25:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 228, 0) in Felucca: "LightFlowerTapestryEastAddon"
+2023-03-27 03:25:48: 127.0.0.1: Serials: 0x4001C654; 
+2023-03-27 03:25:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 233, 12) in Felucca: "LilacBushTreeAddon"
+2023-03-27 03:25:52: 127.0.0.1: Serials: 0x4001C657; 
+2023-03-27 03:25:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 239, 0) in Felucca: "LongMetalTableEastAddon"
+2023-03-27 03:25:55: 127.0.0.1: Serials: 0x4001C65F; 
+2023-03-27 03:26:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2293, 242, 0) in Felucca: "LongTableEastAddon"
+2023-03-27 03:26:00: 127.0.0.1: Serials: 0x4001C666; 
+2023-03-27 03:26:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2288, 245, 0) in Felucca: "LongVine01Addon"
+2023-03-27 03:26:03: 127.0.0.1: Serials: 0x4001C669; 
+2023-03-27 03:26:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 247, 0) in Felucca: "LongVine02Addon"
+2023-03-27 03:26:08: 127.0.0.1: Serials: 0x4001C66D; 
+2023-03-27 03:26:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2293, 245, 0) in Felucca: "LongVine03Addon"
+2023-03-27 03:26:10: 127.0.0.1: Serials: 0x4001C672; 
+2023-03-27 03:26:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 241, 0) in Felucca: "LongWoodenTableEastAddon"
+2023-03-27 03:26:15: 127.0.0.1: Serials: 0x4001C676; 
+2023-03-27 03:26:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2301, 239, 0) in Felucca: "LordBritishThroneAddon"
+2023-03-27 03:26:20: 127.0.0.1: Serials: 0x4001C67D; 
+2023-03-27 03:26:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 235, 0) in Felucca: "MarbleShrineSmallAddon"
+2023-03-27 03:26:24: 127.0.0.1: Serials: 0x4001C680; 
+2023-03-27 03:26:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 231, 0) in Felucca: "MarketStandBeeEastAddon"
+2023-03-27 03:26:37: 127.0.0.1: Serials: 0x4001C724; 
+2023-03-27 03:26:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 235, 0) in Felucca: "MedusaFloorTileAddon"
+2023-03-27 03:26:51: 127.0.0.1: Serials: 0x4001C735; 
+2023-03-27 03:26:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2316, 236, 0) in Felucca: "MedusaSNestAddon"
+2023-03-27 03:26:59: 127.0.0.1: Serials: 0x4001C74F; 
+2023-03-27 03:27:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 246, 0) in Felucca: "MeetingAreaAddon"
+2023-03-27 03:27:07: 127.0.0.1: Serials: 0x4001C759; 
+2023-03-27 03:27:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:27:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2289, 244, 0) to (2320, 246, 42) in Felucca (Items, Mobiles)
+2023-03-27 03:27:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:27:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2282, 226, 0) to (2322, 251, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:27:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add addon'
+2023-03-27 03:27:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 246, 0) in Felucca: "MetalTableEastAddon"
+2023-03-27 03:27:39: 127.0.0.1: Serials: 0x4001CFB0; 
+2023-03-27 03:27:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 243, 0) in Felucca: "MistletoeAddon"
+2023-03-27 03:27:44: 127.0.0.1: Serials: 0x4001CFB5; 
+2023-03-27 03:27:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 240, 0) in Felucca: "MLTree01Addon"
+2023-03-27 03:27:48: 127.0.0.1: Serials: 0x4001CFB6; 
+2023-03-27 03:27:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 241, 0) in Felucca: "MLTree02Addon"
+2023-03-27 03:27:52: 127.0.0.1: Serials: 0x4001CFBF; 
+2023-03-27 03:27:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 243, 0) in Felucca: "MLTree03Addon"
+2023-03-27 03:27:55: 127.0.0.1: Serials: 0x4001CFC8; 
+2023-03-27 03:27:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 245, 0) in Felucca: "MLTree05Addon"
+2023-03-27 03:27:58: 127.0.0.1: Serials: 0x4001CFCC; 
+2023-03-27 03:28:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 247, 0) in Felucca: "MushroomGardenEastAddon"
+2023-03-27 03:28:05: 127.0.0.1: Serials: 0x4001CFD0; 
+2023-03-27 03:28:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 252, 0) in Felucca: "NewKitchenEastAddon"
+2023-03-27 03:28:19: 127.0.0.1: Serials: 0x4001CFDD; 
+2023-03-27 03:28:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2287, 246, 0) in Felucca: "NexusAddon"
+2023-03-27 03:28:32: 127.0.0.1: Serials: 0x4001CFE9; 
+2023-03-27 03:28:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2286, 252, 0) in Felucca: "ObsidianPillarAddon"
+2023-03-27 03:28:38: 127.0.0.1: Serials: 0x4001CFF7; 
+2023-03-27 03:28:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2287, 251, 0) in Felucca: "ObsidianRockAddon"
+2023-03-27 03:28:40: 127.0.0.1: Serials: 0x4001CFF9; 
+2023-03-27 03:28:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 253, 0) in Felucca: "OrangeBlossomTreeAddon"
+2023-03-27 03:28:44: 127.0.0.1: Serials: 0x4001CFFB; 
+2023-03-27 03:28:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 255, 0) in Felucca: "OrchardAddon"
+2023-03-27 03:28:49: 127.0.0.1: Serials: 0x4001D008; 
+2023-03-27 03:28:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:28:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2274, 245, 0) to (2288, 254, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:28:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 249, 0) in Felucca: "PalmsCasinoAddon"
+2023-03-27 03:28:56: 127.0.0.1: Serials: 0x4001D80A; 
+2023-03-27 03:29:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:29:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4001DC7A (AddonComponent)
+2023-03-27 03:29:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 255, 0) in Felucca: "PaladiumAddon"
+2023-03-27 03:29:05: 127.0.0.1: Serials: 0x4001E626; 
+2023-03-27 03:29:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:29:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4001EC72 (AddonComponent)
+2023-03-27 03:29:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2286, 247, 0) in Felucca: "ParrotPerchAddon"
+2023-03-27 03:29:16: 127.0.0.1: Serials: 0x4001EE89; 
+2023-03-27 03:29:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 244, 0) in Felucca: "PianoAddon"
+2023-03-27 03:29:25: 127.0.0.1: Serials: 0x4001EE8B; 
+2023-03-27 03:29:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 240, 0) in Felucca: "pianomodern2Addon"
+2023-03-27 03:29:34: 127.0.0.1: Serials: 0x4001EEAD; 
+2023-03-27 03:29:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 237, 0) in Felucca: "PlainWoodenShelfEastAddon"
+2023-03-27 03:29:50: 127.0.0.1: Serials: 0x4001EEB5; 
+2023-03-27 03:29:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2298, 242, 0) in Felucca: "PlunderBeaconAddon"
+2023-03-27 03:29:57: 127.0.0.1: Serials: 0x4001EEB7; 
+2023-03-27 03:30:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:30:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4001EF15 (AddonComponent)
+2023-03-27 03:30:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 245, 0) in Felucca: "PondAddon"
+2023-03-27 03:30:22: 127.0.0.1: Serials: 0x4001EFF9; 
+2023-03-27 03:30:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 242, 0) in Felucca: "PottedTeaRosesTealAddon"
+2023-03-27 03:30:35: 127.0.0.1: Serials: 0x4001F03C; 
+2023-03-27 03:30:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 240, 0) in Felucca: "PumpkinShackAddon"
+2023-03-27 03:30:41: 127.0.0.1: Serials: 0x4001F041; 
+2023-03-27 03:30:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 250, 0) in Felucca: "PumpkinHugeAddon"
+2023-03-27 03:30:45: 127.0.0.1: Serials: 0x4001F17C; 
+2023-03-27 03:30:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 249, 0) in Felucca: "RawMoonstoneLargeAddon"
+2023-03-27 03:30:50: 127.0.0.1: Serials: 0x4001F19B; 
+2023-03-27 03:30:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2294, 252, 0) in Felucca: "RawMoonstoneLargeAddon"
+2023-03-27 03:30:51: 127.0.0.1: Serials: 0x4001F19D; 
+2023-03-27 03:30:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 251, 0) in Felucca: "PussyWillowTreeAddon"
+2023-03-27 03:30:54: 127.0.0.1: Serials: 0x4001F19F; 
+2023-03-27 03:31:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 253, 0) in Felucca: "RawMoonstoneSmallAddon"
+2023-03-27 03:31:00: 127.0.0.1: Serials: 0x4001F1A9; 
+2023-03-27 03:31:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 240, 0) in Felucca: "RedMapleTree1aAddon"
+2023-03-27 03:31:04: 127.0.0.1: Serials: 0x4001F1AB; 
+2023-03-27 03:31:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 242, 0) in Felucca: "RedMapleTree1cAddon"
+2023-03-27 03:31:08: 127.0.0.1: Serials: 0x4001F1AE; 
+2023-03-27 03:31:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 250, 0) in Felucca: "RedMoonGateCelticAddon"
+2023-03-27 03:31:14: 127.0.0.1: Serials: 0x4001F1B1; 
+2023-03-27 03:31:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 249, 0) in Felucca: "RitualTableAddon"
+2023-03-27 03:31:19: 127.0.0.1: Serials: 0x4001F1CC; 
+2023-03-27 03:31:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 245, 6) in Felucca: "RosebudTreeAddon"
+2023-03-27 03:31:22: 127.0.0.1: Serials: 0x4001F1D1; 
+2023-03-27 03:31:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 247, 0) in Felucca: "SkullPileAddon"
+2023-03-27 03:31:36: 127.0.0.1: Serials: 0x4001F1DA; 
+2023-03-27 03:31:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 236, 0) in Felucca: "ShowerRightAddon"
+2023-03-27 03:31:41: 127.0.0.1: Serials: 0x4001F1E3; 
+2023-03-27 03:31:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 233, 0) in Felucca: "ShowerRightAddon"
+2023-03-27 03:31:44: 127.0.0.1: Serials: 0x4001F201; 
+2023-03-27 03:31:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 227, 0) in Felucca: "SkeletalHangmanAddon"
+2023-03-27 03:31:56: 127.0.0.1: Serials: 0x4001F21F; 
+2023-03-27 03:32:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 225, 0) in Felucca: "SkullRugSouthAddon"
+2023-03-27 03:32:10: 127.0.0.1: Serials: 0x4001F222; 
+2023-03-27 03:32:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 229, 0) in Felucca: "SkullRugEastAddon"
+2023-03-27 03:32:15: 127.0.0.1: Serials: 0x4001F23F; 
+2023-03-27 03:32:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2289, 220, 0) in Felucca: "SmallPersonalGardenFieldAddon"
+2023-03-27 03:32:21: 127.0.0.1: Serials: 0x4001F25C; 
+2023-03-27 03:32:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 224, 0) in Felucca: "SmallPersonalGardenFieldAddon"
+2023-03-27 03:32:29: 127.0.0.1: Serials: 0x4001F2C8; 
+2023-03-27 03:32:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 230, 0) in Felucca: "SmallStretchedHideEastAddon"
+2023-03-27 03:32:34: 127.0.0.1: Serials: 0x4001F334; 
+2023-03-27 03:32:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 231, 0) in Felucca: "SmallWorldTreeRugAddon"
+2023-03-27 03:32:37: 127.0.0.1: Serials: 0x4001F336; 
+2023-03-27 03:32:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 219, 0) in Felucca: "SmithWorkShopAddon"
+2023-03-27 03:32:41: 127.0.0.1: Serials: 0x4001F340; 
+2023-03-27 03:32:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 231, 0) in Felucca: "SpikeColumnAddon"
+2023-03-27 03:32:48: 127.0.0.1: Serials: 0x4001F35C; 
+2023-03-27 03:32:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 233, 0) in Felucca: "SpikePostAddon"
+2023-03-27 03:32:51: 127.0.0.1: Serials: 0x4001F35E; 
+2023-03-27 03:32:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 213, 0) in Felucca: "Stable_Large_1Addon"
+2023-03-27 03:32:58: 127.0.0.1: Serials: 0x4001F360; 
+2023-03-27 03:33:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:33:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2279, 209, 0) to (2302, 245, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:33:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2287, 229, 0) in Felucca: "Stable_Large_1Addon"
+2023-03-27 03:33:06: 127.0.0.1: Serials: 0x4001F40C; 
+2023-03-27 03:33:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 231, 0) in Felucca: "Stable_Small_1Addon"
+2023-03-27 03:33:17: 127.0.0.1: Serials: 0x4001F4B8; 
+2023-03-27 03:33:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 238, 0) in Felucca: "StaghornFernAddon"
+2023-03-27 03:33:24: 127.0.0.1: Serials: 0x4001F511; 
+2023-03-27 03:33:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 237, 0) in Felucca: "SteamPoweredBeverageMakerAddon"
+2023-03-27 03:33:30: 127.0.0.1: Serials: 0x4001F512; 
+2023-03-27 03:33:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 235, 0) in Felucca: "StoneFountainAddon"
+2023-03-27 03:33:41: 127.0.0.1: Serials: 0x4001F514; 
+2023-03-27 03:33:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 236, 0) in Felucca: "StoneAnvilEastAddon"
+2023-03-27 03:33:45: 127.0.0.1: Serials: 0x4001F525; 
+2023-03-27 03:33:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 235, 0) in Felucca: "StoneAnvilSouthAddon"
+2023-03-27 03:33:48: 127.0.0.1: Serials: 0x4001F527; 
+2023-03-27 03:33:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 238, 0) in Felucca: "StoneWallAndVineAddon"
+2023-03-27 03:33:57: 127.0.0.1: Serials: 0x4001F529; 
+2023-03-27 03:34:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2271, 237, 0) in Felucca: "StoneOvenSouthAddon"
+2023-03-27 03:34:00: 127.0.0.1: Serials: 0x4001F52C; 
+2023-03-27 03:34:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 241, 0) in Felucca: "StoneWellAddon"
+2023-03-27 03:34:05: 127.0.0.1: Serials: 0x4001F52F; 
+2023-03-27 03:34:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 238, 0) in Felucca: "SuitOfGoldArmorAddon"
+2023-03-27 03:34:10: 127.0.0.1: Serials: 0x4001F546; 
+2023-03-27 03:34:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 237, 0) in Felucca: "SuitOfGoldArmorAddon"
+2023-03-27 03:34:11: 127.0.0.1: Serials: 0x4001F548; 
+2023-03-27 03:34:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 240, 0) in Felucca: "TableWithBlueClothAddon"
+2023-03-27 03:34:17: 127.0.0.1: Serials: 0x4001F54A; 
+2023-03-27 03:34:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2283, 238, 0) in Felucca: "TableWithOrangeClothAddon"
+2023-03-27 03:34:19: 127.0.0.1: Serials: 0x4001F54C; 
+2023-03-27 03:34:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 242, 0) in Felucca: "TableWithRedClothAddon"
+2023-03-27 03:34:21: 127.0.0.1: Serials: 0x4001F54E; 
+2023-03-27 03:34:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 243, 0) in Felucca: "TailorsShopAddon"
+2023-03-27 03:34:23: 127.0.0.1: Serials: 0x4001F550; 
+2023-03-27 03:34:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 240, 0) in Felucca: "tent_brownAddon"
+2023-03-27 03:34:32: 127.0.0.1: Serials: 0x4001F56F; 
+2023-03-27 03:34:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 234, 0) in Felucca: "TigerRugAddon"
+2023-03-27 03:34:38: 127.0.0.1: Serials: 0x4001F5D4; 
+2023-03-27 03:34:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 230, 0) in Felucca: "tikibarAddon"
+2023-03-27 03:34:41: 127.0.0.1: Serials: 0x4001F5DB; 
+2023-03-27 03:34:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 03:34:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2265, 229, 0) to (2283, 244, 0) in Felucca (Items, Mobiles)
+2023-03-27 03:34:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 236, 0) in Felucca: "tikibarAddon"
+2023-03-27 03:34:50: 127.0.0.1: Serials: 0x4001F64B; 
+2023-03-27 03:35:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 244, 0) in Felucca: "TinkersBenchEastAddon"
+2023-03-27 03:35:03: 127.0.0.1: Serials: 0x4001F6BB; 
+2023-03-27 03:35:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 245, 0) in Felucca: "TinkersBenchSouthAddon"
+2023-03-27 03:35:07: 127.0.0.1: Serials: 0x4001F6BF; 
+2023-03-27 03:35:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 244, 0) in Felucca: "TrainingRoomAddon"
+2023-03-27 03:35:13: 127.0.0.1: Serials: 0x4001F6C3; 
+2023-03-27 03:35:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 03:35:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4001F88F (AddonComponent)
+2023-03-27 03:35:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 247, 0) in Felucca: "TreasurePile03Addon"
+2023-03-27 03:35:20: 127.0.0.1: Serials: 0x4001FBCD; 
+2023-03-27 03:35:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 246, 0) in Felucca: "TreasurePile02Addon"
+2023-03-27 03:35:23: 127.0.0.1: Serials: 0x4001FBD7; 
+2023-03-27 03:35:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 248, 0) in Felucca: "TreasurePile01Addon"
+2023-03-27 03:35:25: 127.0.0.1: Serials: 0x4001FBE0; 
+2023-03-27 03:35:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 237, 0) in Felucca: "TreasurePile05Addon"
+2023-03-27 03:35:29: 127.0.0.1: Serials: 0x4001FBEA; 
+2023-03-27 03:35:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 240, 0) in Felucca: "TreasurePile04Addon"
+2023-03-27 03:35:31: 127.0.0.1: Serials: 0x4001FBF8; 
+2023-03-27 03:35:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2283, 244, 0) in Felucca: "TrumpetAddon"
+2023-03-27 03:35:33: 127.0.0.1: Serials: 0x4001FC04; 
+2023-03-27 03:35:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 243, 0) in Felucca: "TurkeyStatueAddon"
+2023-03-27 03:35:36: 127.0.0.1: Serials: 0x4001FC06; 
+2023-03-27 03:35:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 246, 0) in Felucca: "UnsettlingPortraitAddon"
+2023-03-27 03:35:40: 127.0.0.1: Serials: 0x4001FC0B; 
+2023-03-27 03:35:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 246, 0) in Felucca: "UpholsteredChairAddon"
+2023-03-27 03:35:42: 127.0.0.1: Serials: 0x4001FC0D; 
+2023-03-27 03:35:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 244, 0) in Felucca: "ValentineDinnerEAddon"
+2023-03-27 03:35:46: 127.0.0.1: Serials: 0x4001FC0F; 
+2023-03-27 03:36:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 252, 0) in Felucca: "WallMountedBellEastAddon"
+2023-03-27 03:36:03: 127.0.0.1: Serials: 0x4001FC1B; 
+2023-03-27 03:36:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 250, 0) in Felucca: "WasherDryerSAddon"
+2023-03-27 03:36:07: 127.0.0.1: Serials: 0x4001FC1D; 
+2023-03-27 03:36:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 231, 0) in Felucca: "waterparkAddon"
+2023-03-27 03:36:15: 127.0.0.1: Serials: 0x4001FC29; 
+2023-03-27 03:36:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2284, 246, 0) in Felucca: "WeatheredBronzeArcherAddon"
+2023-03-27 03:36:21: 127.0.0.1: Serials: 0x4001FC61; 
+2023-03-27 03:36:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 242, 0) in Felucca: "WeatheredBronzeFairySculptureAddon"
+2023-03-27 03:36:24: 127.0.0.1: Serials: 0x4001FC63; 
+2023-03-27 03:36:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 242, 0) in Felucca: "WeatheredBronzeGlobeSculptureAddon"
+2023-03-27 03:36:26: 127.0.0.1: Serials: 0x4001FC65; 
+2023-03-27 03:36:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 243, 0) in Felucca: "WisteriaTreeAddon"
+2023-03-27 03:36:32: 127.0.0.1: Serials: 0x4001FC67; 
+2023-03-27 03:36:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 242, 0) in Felucca: "WoodenTableEastAddon"
+2023-03-27 03:36:35: 127.0.0.1: Serials: 0x4001FC75; 
+2023-03-27 03:36:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2287, 244, 0) in Felucca: "WoodenTableSouthAddon"
+2023-03-27 03:36:37: 127.0.0.1: Serials: 0x4001FC78; 
+2023-03-27 03:36:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 250, 0) in Felucca: "WoodWellAddon"
+2023-03-27 03:36:39: 127.0.0.1: Serials: 0x4001FC7B; 
+2023-03-27 03:36:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2285, 244, 0) in Felucca: "XDGuardPostAddon"
+2023-03-27 03:36:43: 127.0.0.1: Serials: 0x4001FC95; 
+2023-03-27 03:36:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 245, 0) in Felucca: "XDGuardPostAddon"
+2023-03-27 03:36:45: 127.0.0.1: Serials: 0x4001FEA7; 
+2023-03-27 03:36:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'tele '
+2023-03-27 12:11:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 12:11:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2264, 215, 0) to (2302, 261, 0) in Felucca (Items, Mobiles)
+2023-03-27 12:11:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-03-27 12:19:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 12:19:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2277, 175, 0) to (2286, 195, 0) in Felucca (Items, Mobiles)
+2023-03-27 12:19:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-03-27 12:28:34
+
+2023-03-27 12:28:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 12:28:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2261, 223, 0) to (2291, 263, 0) in Felucca (Items, Mobiles)
+2023-03-27 12:35:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add fletching'
+2023-03-27 12:35:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2272, 184, 0) in Felucca: "LargeFletchingBOD"
+2023-03-27 12:35:53: 127.0.0.1: Serials: 0x40000022; 
+2023-03-27 12:36:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bowcraft'
+2023-03-27 12:37:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add flet'
+2023-03-27 12:37:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2264, 188, 0) in Felucca: "FletcherTools"
+2023-03-27 12:37:04: 127.0.0.1: Serials: 0x40000027; 
+2023-03-27 12:37:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add sewingma'
+2023-03-27 12:37:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2268, 184, 0) in Felucca: "SewingMachineDeed"
+2023-03-27 12:37:36: 127.0.0.1: Serials: 0x40000028; 
+2023-03-27 12:38:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add sewing'
+2023-03-27 12:38:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 182, 7) in Felucca: "SewingKit"
+2023-03-27 12:38:09: 127.0.0.1: Serials: 0x4000002C; 
+2023-03-27 12:38:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 182, 7) in Felucca: "BoneSewingKit"
+2023-03-27 12:38:31: 127.0.0.1: Serials: 0x4000002D; 
+2023-03-27 12:39:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add tinker'
+2023-03-27 12:39:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add tinke'
+2023-03-27 12:39:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 183, 7) in Felucca: "TinkerBenchDeed"
+2023-03-27 12:39:08: 127.0.0.1: Serials: 0x4000002E; 
+2023-03-27 12:39:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 178, 7) in Felucca: "TinkersBenchEastAddon"
+2023-03-27 12:39:15: 127.0.0.1: Serials: 0x40000032; 
+2023-03-27 12:39:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 178, 7) in Felucca: "TinkersBenchSouthAddon"
+2023-03-27 12:39:23: 127.0.0.1: Serials: 0x40000036; 
+2023-03-27 12:39:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 178, 7) in Felucca: "TinkerTable"
+2023-03-27 12:39:26: 127.0.0.1: Serials: 0x4000003C; 
+2023-03-27 12:39:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 178, 7) in Felucca: "TinkerTools"
+2023-03-27 12:39:28: 127.0.0.1: Serials: 0x4000003D; 
+2023-03-27 12:39:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 181, 7) in Felucca: "TinkersSatchel"
+2023-03-27 12:39:30: 127.0.0.1: Serials: 0x4000003E; 
+##############################
+Log started on 2023-03-27 13:25:45
+
+##############################
+Log started on 2023-03-27 13:26:46
+
+##############################
+Log started on 2023-03-27 13:58:25
+
+2023-03-27 13:59:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 13:59:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2327, 224, 0) to (2341, 235, 0) in Felucca (Items, Mobiles)
+2023-03-27 13:59:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-27 14:00:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ironingot 200'
+2023-03-27 14:00:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 102, 0) in Felucca: "ironingot" "200"
+2023-03-27 14:00:11: 127.0.0.1: Serials: 0x40000048; 
+2023-03-27 14:00:16: 127.0.0.1: Crafting 0x40000049 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:23: 127.0.0.1: Crafting 0x4000004A (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:26: 127.0.0.1: Crafting 0x4000004B (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:28: 127.0.0.1: Crafting 0x4000004C (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:30: 127.0.0.1: Crafting 0x4000004D (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:32: 127.0.0.1: Crafting 0x4000004E (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:37: 127.0.0.1: Crafting 0x40000053 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:39: 127.0.0.1: Crafting 0x40000054 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 200'
+2023-03-27 14:00:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '200'
+2023-03-27 14:00:46: 127.0.0.1: Crafting 0x40000056 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:49: 127.0.0.1: Crafting 0x4000008B (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:51: 127.0.0.1: Crafting 0x4000008D (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:53: 127.0.0.1: Crafting 0x4000008E (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:54: 127.0.0.1: Crafting 0x40000090 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:56: 127.0.0.1: Crafting 0x40000091 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:00:58: 127.0.0.1: Crafting 0x40000093 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:01:00: 127.0.0.1: Crafting 0x40000095 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:01:01: 127.0.0.1: Crafting 0x40000096 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:01:03: 127.0.0.1: Crafting 0x40000097 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:01:05: 127.0.0.1: Crafting 0x40000098 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:01:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-03-27 14:01:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-27 14:02:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set capacite expertise 10'
+2023-03-27 14:02:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'Classe' of 0x1 "Nucca" ('admin') to 'Forgefer'
+2023-03-27 14:02:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-03-27 14:02:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'titre '
+2023-03-27 14:02:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'titre '
+2023-03-27 14:02:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'titre '
+2023-03-27 14:03:07: 127.0.0.1: Crafting 0x4000009B (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ironingot 200'
+2023-03-27 14:03:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 103, 0) in Felucca: "ironingot" "200"
+2023-03-27 14:03:20: 127.0.0.1: Serials: 0x4000009D; 
+2023-03-27 14:03:24: 127.0.0.1: Crafting 0x4000009E (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:27: 127.0.0.1: Crafting 0x4000009F (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:29: 127.0.0.1: Crafting 0x400000A1 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:31: 127.0.0.1: Crafting 0x400000A2 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:33: 127.0.0.1: Crafting 0x400000A3 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:35: 127.0.0.1: Crafting 0x400000A4 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:36: 127.0.0.1: Crafting 0x400000B5 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:38: 127.0.0.1: Crafting 0x400000B7 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:40: 127.0.0.1: Crafting 0x400000B9 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:42: 127.0.0.1: Crafting 0x400000D8 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:43: 127.0.0.1: Crafting 0x400000F0 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:45: 127.0.0.1: Crafting 0x400000F1 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:47: 127.0.0.1: Crafting 0x400000F2 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:48: 127.0.0.1: Crafting 0x400000F3 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:50: 127.0.0.1: Crafting 0x400000F8 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:03:52: 127.0.0.1: Crafting 0x400000F9 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-27 14:04:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-27 14:04:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'Quality' of 0x400000F8 (RingmailGloves) to 'Epic'
+2023-03-27 14:04:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set isimbued true'
+2023-03-27 14:04:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'isimbued' of 0x400000F8 (RingmailGloves) to 'True'
+##############################
+Log started on 2023-03-27 14:19:00
+
+##############################
+Log started on 2023-03-27 20:38:30
+
+2023-03-27 20:38:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add creation'
+2023-03-27 20:38:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 111, 0) in Felucca: "CreationStone"
+2023-03-27 20:38:51: 127.0.0.1: Serials: 0x40000006; 
+2023-03-27 20:43:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-03-27 20:45:20
+
+2023-03-27 20:45:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-27 20:45:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'Classe' of 0x1 "Nucca" ('admin') to 'Aucune'
+2023-03-27 20:45:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 0'
+2023-03-27 20:45:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '0'
+2023-03-27 20:45:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add creation'
+2023-03-27 20:45:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 107, 0) in Felucca: "CreationStone"
+2023-03-27 20:45:44: 127.0.0.1: Serials: 0x40000006; 
+2023-03-27 20:47:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-27 20:47:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'Chimie' of ... to '0'
+2023-03-27 20:48:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'save '
+2023-03-27 20:50:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'go '
+2023-03-27 20:50:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 20:50:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000CCE (IronIngot)
+2023-03-27 20:50:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 20:50:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000294 (Armoire)
+2023-03-27 20:50:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-27 20:50:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000251 (PlainoisLeather)
+2023-03-27 20:52:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-03-27 20:54:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'journal '
+2023-03-27 20:55:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 20:55:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2277, 110, 1) to (2277, 115, 1) in Felucca (Items, Mobiles)
+2023-03-27 20:55:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-27 20:55:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2278, 111, 1) to (2278, 111, 1) in Felucca (Items, Mobiles)
+2023-03-27 20:58:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ornatewood'
+2023-03-27 20:58:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 107, 0) in Felucca: "OrnateWoodenChest"
+2023-03-27 20:58:57: 127.0.0.1: Serials: 0x40000010; 
+2023-03-27 20:59:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-27 20:59:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1411'
+2023-03-27 20:59:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000010 (OrnateWoodenChest) to '1411'
+2023-03-27 20:59:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'dupe '
+2023-03-27 20:59:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'dupe 3'
+2023-03-27 20:59:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') duping 0x40000010 (OrnateWoodenChest) (inBag=False; amount=3)
+2023-03-27 20:59:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') duped 0x40000010 (OrnateWoodenChest) creating 0x40000012 (OrnateWoodenChest)
+2023-03-27 20:59:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') duped 0x40000010 (OrnateWoodenChest) creating 0x40000019 (OrnateWoodenChest)
+2023-03-27 20:59:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') duped 0x40000010 (OrnateWoodenChest) creating 0x40000020 (OrnateWoodenChest)
+2023-03-27 20:59:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-27 20:59:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1008'
+2023-03-27 20:59:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000012 (OrnateWoodenChest) to '1008'
+2023-03-27 20:59:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-27 20:59:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2210'
+2023-03-27 20:59:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000020 (OrnateWoodenChest) to '2210'
+2023-03-27 20:59:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-27 20:59:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-27 20:59:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue'
+2023-03-27 20:59:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-27 20:59:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1126'
+2023-03-27 20:59:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000019 (OrnateWoodenChest) to '1126'
+2023-03-27 20:59:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ornate'
+2023-03-27 21:00:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ornatewood'
+2023-03-27 21:00:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2282, 108, 0) in Felucca: "OrnateWoodenChest"
+2023-03-27 21:00:05: 127.0.0.1: Serials: 0x40000021; 
+2023-03-27 22:26:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:27:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1197, 1344, 1) in Felucca: "AG_DarksMansionAddon"
+2023-03-27 22:27:13: 70.55.171.10: Serials: 0x400001A5; 
+2023-03-27 22:27:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:27:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40001BD3 (AddonComponent)
+2023-03-27 22:27:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:27:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:27:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:27:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1180, 1330, 1) in Felucca: "AG_DonsPrivateIslandAddon"
+2023-03-27 22:27:32: 70.55.171.10: Serials: 0x400047B5; 
+2023-03-27 22:27:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:27:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40004C62 (AddonComponent)
+2023-03-27 22:27:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:27:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1194, 1346, 0) in Felucca: "AdvancedTrainingDummyEastAddon"
+2023-03-27 22:27:48: 70.55.171.10: Serials: 0x40005756; 
+2023-03-27 22:27:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:27:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40005757 (AdvancedTrainingDummy)
+2023-03-27 22:27:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:27:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1192, 1345, 0) in Felucca: "AdmiralJacksShipwreckAddon"
+2023-03-27 22:27:52: 70.55.171.10: Serials: 0x4000575F; 
+2023-03-27 22:27:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:27:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:27:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40005BF7 (AddonComponent)
+2023-03-27 22:27:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:27:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1190, 1345, -1) in Felucca: "AbbygifttobaleAddon"
+2023-03-27 22:27:59: 70.55.171.10: Serials: 0x40005E34; 
+2023-03-27 22:28:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000676B (AddonComponent)
+2023-03-27 22:28:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:28:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1187, 1347, 0) in Felucca: "AbbatoirAddon"
+2023-03-27 22:28:13: 70.55.171.10: Serials: 0x40006878; 
+2023-03-27 22:28:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000687D (AddonComponent)
+2023-03-27 22:28:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:28:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1190, 1347, -1) in Felucca: "Aiakos_Blank_DockAddon"
+2023-03-27 22:28:20: 70.55.171.10: Serials: 0x40006882; 
+2023-03-27 22:28:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40006949 (AddonComponent)
+2023-03-27 22:28:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:28:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1174, 1352, 0) in Felucca: "Aiakos_CastleAddon"
+2023-03-27 22:28:34: 70.55.171.10: Serials: 0x40006A43; 
+2023-03-27 22:28:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:28:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:28:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40007335 (AddonComponent)
+2023-03-27 22:29:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'qui '
+2023-03-27 22:29:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'qui '
+2023-03-27 22:29:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:29:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1175, 1354, -1) in Felucca: "Aiakos_Pirate_Castle_FinalAddon"
+2023-03-27 22:29:30: 70.55.171.10: Serials: 0x40007639; 
+2023-03-27 22:29:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:29:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40007916 (AddonComponent)
+2023-03-27 22:29:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:29:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1168, 1356, 1) in Felucca: "Aiakos_Dungeon2Addon"
+2023-03-27 22:29:38: 70.55.171.10: Serials: 0x40007D02; 
+2023-03-27 22:29:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:29:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400082B9 (AddonComponent)
+2023-03-27 22:29:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:29:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1175, 1357, 0) in Felucca: "AG_DonsPrivateIslandAddon"
+2023-03-27 22:29:46: 70.55.171.10: Serials: 0x400082BC; 
+2023-03-27 22:29:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:29:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:29:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:29:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:29:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40008BE8 (AddonComponent)
+2023-03-27 22:30:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:30:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1185, 1347, 1) in Felucca: "Aiakos_Dungeon2Addon"
+2023-03-27 22:30:26: 70.55.171.10: Serials: 0x4000925D; 
+2023-03-27 22:30:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40009668 (AddonComponent)
+2023-03-27 22:30:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:30:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1190, 1345, -1) in Felucca: "Aiakos_Floating_cityAddon"
+2023-03-27 22:30:32: 70.55.171.10: Serials: 0x40009817; 
+2023-03-27 22:30:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:30:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40009841 (AddonComponent)
+2023-03-27 22:30:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:30:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:31:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1308, 1228, -5) in Felucca: "Aiakos_Floating_cityAddon"
+2023-03-27 22:31:04: 70.55.171.10: Serials: 0x4000B1C4; 
+2023-03-27 22:31:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:31:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000C4EF (AddonComponent)
+2023-03-27 22:31:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:31:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1315, 1231, -5) in Felucca: "Aiakos_Floating_cityAddon"
+2023-03-27 22:31:10: 70.55.171.10: Serials: 0x4000CB71; 
+2023-03-27 22:31:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:31:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:31:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:31:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000DF4B (AddonComponent)
+2023-03-27 22:32:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:32:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:32:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:32:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:32:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:32:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1368, 1196, 0) in Felucca: "Aiakos_Villa_FinalAddon"
+2023-03-27 22:32:40: 70.55.171.10: Serials: 0x4000E523; 
+2023-03-27 22:32:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:32:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000E9CB (AddonComponent)
+2023-03-27 22:32:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:32:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1368, 1201, 9) in Felucca: "AbbygifttobaleAddon"
+2023-03-27 22:32:52: 70.55.171.10: Serials: 0x4000EC89; 
+2023-03-27 22:32:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:32:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000F5C1 (AddonComponent)
+2023-03-27 22:32:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:32:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1369, 1195, 2) in Felucca: "AG_DarksMansionAddon"
+2023-03-27 22:32:58: 70.55.171.10: Serials: 0x4000F6CD; 
+2023-03-27 22:32:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:33:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000F88D (AddonComponent)
+2023-03-27 22:33:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:33:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:33:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1388, 1203, 9) in Felucca: "AmethystTreeAddon"
+2023-03-27 22:33:24: 70.55.171.10: Serials: 0x40013A74; 
+2023-03-27 22:33:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:33:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40013A75 (AddonComponent)
+2023-03-27 22:33:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:33:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1390, 1200, 7) in Felucca: "AG_DarksMansionAddon"
+2023-03-27 22:33:29: 70.55.171.10: Serials: 0x40013A7C; 
+2023-03-27 22:33:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:33:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400143C9 (AddonComponent)
+2023-03-27 22:33:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:33:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1385, 1205, 7) in Felucca: "AdmiralJacksShipwreckAddon"
+2023-03-27 22:33:34: 70.55.171.10: Serials: 0x40017E23; 
+2023-03-27 22:33:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:33:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400181C3 (AddonComponent)
+2023-03-27 22:33:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:33:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1375, 1215, 2) in Felucca: "AbbygifttobaleAddon"
+2023-03-27 22:33:47: 70.55.171.10: Serials: 0x400184F8; 
+2023-03-27 22:33:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:33:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40018E38 (AddonComponent)
+2023-03-27 22:33:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:33:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1386, 1210, 5) in Felucca: "AG_DonsPrivateIslandAddon"
+2023-03-27 22:33:53: 70.55.171.10: Serials: 0x40018F3C; 
+2023-03-27 22:33:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:33:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:34:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:34:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40018FC8 (AddonComponent)
+2023-03-27 22:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:34:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:34:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1381, 1214, 1) in Felucca: "Aiakos_Chateau_Test2Addon"
+2023-03-27 22:34:29: 70.55.171.10: Serials: 0x40019EDD; 
+2023-03-27 22:34:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:34:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:34:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001A3ED (AddonComponent)
+2023-03-27 22:34:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:34:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1376, 1215, 2) in Felucca: "AG_DonsPrivateIslandAddon"
+2023-03-27 22:34:42: 70.55.171.10: Serials: 0x4001A3F7; 
+2023-03-27 22:34:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:34:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001ADED (AddonComponent)
+2023-03-27 22:35:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:35:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:35:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:35:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:35:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:35:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:35:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:36:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:36:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1478, 1195, 3) in Felucca: "AlchemistTableEastAddon"
+2023-03-27 22:36:40: 70.55.171.10: Serials: 0x4001B398; 
+2023-03-27 22:36:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:36:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001B399 (AddonComponent)
+2023-03-27 22:36:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:36:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1478, 1198, 1) in Felucca: "ArenaAddon"
+2023-03-27 22:36:50: 70.55.171.10: Serials: 0x4001B39B; 
+2023-03-27 22:36:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:36:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001B3AA (AddonComponent)
+2023-03-27 22:36:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:42:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:42:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:43:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1474, 1179, 1) in Felucca: "DonsDungeonCastleAddon"
+2023-03-27 22:43:04: 70.55.171.10: Serials: 0x4001B415; 
+2023-03-27 22:43:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:43:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:43:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:43:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001BC49 (AddonComponent)
+2023-03-27 22:43:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:43:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add addon'
+2023-03-27 22:51:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add newspel'
+2023-03-27 22:51:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1467, 1185, 1) in Felucca: "NewSpellbook"
+2023-03-27 22:51:15: 70.55.171.10: Serials: 0x4001C6C3; 
+2023-03-27 22:51:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 22:51:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'allspells '
+2023-03-27 22:51:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-27 22:51:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'Totemique' of ... to '10'
+2023-03-27 22:51:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-27 22:51:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '100'
+2023-03-27 22:51:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-27 22:51:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-27 22:52:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '100'
+2023-03-27 22:52:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 120'
+2023-03-27 22:52:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '120'
+2023-03-27 22:53:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:53:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001C6CE (Corpse)
+2023-03-27 22:53:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:53:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001C6CC (Corpse)
+2023-03-27 22:53:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'set mana 200'
+2023-03-27 22:53:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'mana' of 0x3 "Mig" ('Mig') to '200'
+2023-03-27 22:54:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:54:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4001C6D2 (Corpse)
+2023-03-27 22:56:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:56:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x11 "Totem de feu" (no account)
+2023-03-27 22:56:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:56:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x10 "Totem d'eau" (no account)
+2023-03-27 22:56:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:56:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x27 "Totem de terre" (no account)
+2023-03-27 22:56:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-27 22:56:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x16 "Totem de vent" (no account)
+2023-03-27 22:57:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'go '
+2023-03-27 22:57:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'qui '
+2023-03-27 23:07:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:07:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'm tele'
+2023-03-27 23:07:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-27 23:09:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'm tele'

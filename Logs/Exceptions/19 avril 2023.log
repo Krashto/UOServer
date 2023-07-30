@@ -1,0 +1,83 @@
+##############################
+Exception log started on 2023-04-19 22:11:18
+
+Exception Caught: 2023-04-19 22:11:18
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:19
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:20
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:21
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:23
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:24
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:26
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:27
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:33
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:34
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:35
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:37
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:40
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:41
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:42
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:43
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:44
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:45
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:47
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+
+Exception Caught: 2023-04-19 22:11:48
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Custom.Spells.NewSpells.Guerison.FrayeurSpell.InternalTimer.OnTick() dans D:\KaldeniaServer\Scripts\Custom\Spells\Guerison\FrayeurSpell.cs:ligne 99
+

@@ -1,0 +1,398 @@
+2023-05-07 23:57:18: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'gm '
+2023-05-07 23:57:56: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-07 23:57:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x40000E14 (GMRobe) (inBag=False; amount=1)
+2023-05-07 23:57:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x40000E14 (GMRobe) creating 0x400015B5 (GMRobe)
+2023-05-08 00:00:30: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 5743'
+2023-05-08 00:00:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '5743'
+2023-05-08 00:00:37: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2844'
+2023-05-08 00:00:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2844'
+2023-05-08 00:00:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2566'
+2023-05-08 00:00:44: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2566'
+2023-05-08 00:00:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2569'
+2023-05-08 00:00:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2569'
+2023-05-08 00:01:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'get hue'
+2023-05-08 00:01:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2333'
+2023-05-08 00:01:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2333'
+2023-05-08 00:05:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'vemote wouahh'
+2023-05-08 00:06:18: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 00:06:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40001372 (Robe)
+2023-05-08 00:06:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40001371 (Gold)
+2023-05-08 00:15:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:16:08: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:18:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2334'
+2023-05-08 00:18:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2334'
+2023-05-08 00:19:09: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add lunette'
+2023-05-08 00:19:12: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1055, 1388, 25) in Felucca: "Lunettes"
+2023-05-08 00:19:12: 184.160.109.184: Serials: 0x400015BC; 
+2023-05-08 00:21:15: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 00:21:16: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x81B " Dragon" (no account)
+2023-05-08 00:21:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'setallskills 100'
+2023-05-08 00:21:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'EverySkill.Base' of 0x40B "Dyzee" ('Dyzee') to '100'
+2023-05-08 00:21:53: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'invul '
+2023-05-08 00:21:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'blessed' of 0x40B "Dyzee" ('Dyzee') to 'True'
+2023-05-08 00:28:29: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add '
+2023-05-08 00:28:37: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add dragon'
+2023-05-08 00:28:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1053, 1387, 25) in Felucca: "dragon"
+2023-05-08 00:28:38: 184.160.109.184: Serials: 0x8BD; 
+2023-05-08 00:28:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add dragon'
+2023-05-08 00:28:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1061, 1388, -1) in Felucca: "dragon"
+2023-05-08 00:28:43: 184.160.109.184: Serials: 0x8C8; 
+2023-05-08 00:28:49: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add dragons'
+2023-05-08 00:28:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1062, 1388, -1) in Felucca: "BaneDragon"
+2023-05-08 00:28:57: 184.160.109.184: Serials: 0x8D2; 
+2023-05-08 00:28:59: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1055, 1390, 25) in Felucca: "BaneDragon"
+2023-05-08 00:28:59: 184.160.109.184: Serials: 0x8DC; 
+2023-05-08 00:29:01: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1056, 1390, 25) in Felucca: "BaneDragon"
+2023-05-08 00:29:01: 184.160.109.184: Serials: 0x8E4; 
+2023-05-08 00:29:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1056, 1393, 7) in Felucca: "BaneDragon"
+2023-05-08 00:29:02: 184.160.109.184: Serials: 0x8EE; 
+2023-05-08 00:30:09: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 00:30:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40001370 (CorpsDrakos)
+2023-05-08 00:30:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 00:30:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'setallskills 100'
+2023-05-08 00:30:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'EverySkill.Base' of 0x40B "Dyzee" ('Dyzee') to '100'
+2023-05-08 00:38:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:38:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 00:38:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 00:38:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') hiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self hide'
+2023-05-08 00:38:35: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') hiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:35: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self hide'
+2023-05-08 00:38:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 00:38:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 00:38:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') hiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self hide'
+2023-05-08 00:38:45: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'hide '
+2023-05-08 00:38:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'hide '
+2023-05-08 00:38:49: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') hiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'mortal '
+2023-05-08 00:38:53: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'blessed' of 0x40B "Dyzee" ('Dyzee') to 'False'
+2023-05-08 00:38:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 00:38:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 00:39:12: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:39:24: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2544'
+2023-05-08 00:39:25: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2544'
+2023-05-08 00:39:28: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2549'
+2023-05-08 00:39:29: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2549'
+2023-05-08 00:39:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2550'
+2023-05-08 00:39:37: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2550'
+2023-05-08 00:39:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2551'
+2023-05-08 00:39:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2551'
+2023-05-08 00:39:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2556'
+2023-05-08 00:39:44: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2556'
+2023-05-08 00:39:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2577'
+2023-05-08 00:39:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2577'
+2023-05-08 00:39:51: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2866'
+2023-05-08 00:39:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2866'
+2023-05-08 00:39:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2866'
+2023-05-08 00:39:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2822'
+2023-05-08 00:40:00: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2822'
+2023-05-08 00:40:03: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2844'
+2023-05-08 00:40:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2844'
+2023-05-08 00:40:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2888'
+2023-05-08 00:40:08: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2888'
+2023-05-08 00:40:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2899'
+2023-05-08 00:40:12: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2899'
+2023-05-08 00:40:17: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2766'
+2023-05-08 00:40:19: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2766'
+2023-05-08 00:40:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 244'
+2023-05-08 00:40:23: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '244'
+2023-05-08 00:40:25: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2445'
+2023-05-08 00:40:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2445'
+2023-05-08 00:40:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2447'
+2023-05-08 00:40:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2447'
+2023-05-08 00:40:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2567'
+2023-05-08 00:40:37: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2567'
+2023-05-08 00:40:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2966<'
+2023-05-08 00:40:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2966'
+2023-05-08 00:40:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2966'
+2023-05-08 00:40:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2900'
+2023-05-08 00:40:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2900'
+2023-05-08 00:41:15: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2844'
+2023-05-08 00:41:16: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2844'
+2023-05-08 00:41:18: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2811'
+2023-05-08 00:41:19: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2811'
+2023-05-08 00:41:25: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2755'
+2023-05-08 00:41:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2755'
+2023-05-08 00:41:29: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2744'
+2023-05-08 00:41:30: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2744'
+2023-05-08 00:41:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2743'
+2023-05-08 00:41:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2743'
+2023-05-08 00:41:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2742'
+2023-05-08 00:41:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2742'
+2023-05-08 00:41:45: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2741'
+2023-05-08 00:41:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2741'
+2023-05-08 00:41:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2740'
+2023-05-08 00:41:49: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2740'
+2023-05-08 00:41:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2738'
+2023-05-08 00:41:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2738'
+2023-05-08 00:41:59: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:42:00: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2737'
+2023-05-08 00:42:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2736'
+2023-05-08 00:42:06: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2736'
+2023-05-08 00:42:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:42:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2737'
+2023-05-08 00:42:19: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:42:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2737'
+2023-05-08 00:42:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:42:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2737'
+2023-05-08 00:42:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:42:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'get hue'
+2023-05-08 00:43:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:43:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400015B5 (GMRobe) to '2737'
+2023-05-08 00:43:24: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:43:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 2737'
+2023-05-08 00:44:35: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'get hue'
+2023-05-08 00:44:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 00:44:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x400015B5 (GMRobe) (inBag=False; amount=1)
+2023-05-08 00:44:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x400015B5 (GMRobe) creating 0x400021B6 (GMRobe)
+2023-05-08 00:46:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add chapeau'
+2023-05-08 00:46:53: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1055, 1389, 25) in Felucca: "ChapeauToc"
+2023-05-08 00:46:53: 184.160.109.184: Serials: 0x400021B7; 
+2023-05-08 00:47:00: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add kilt'
+2023-05-08 00:47:01: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1055, 1389, 25) in Felucca: "kilt"
+2023-05-08 00:47:01: 184.160.109.184: Serials: 0x400021B8; 
+2023-05-08 00:47:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:47:59: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:48:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 00:48:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') se dirige sur 0x1C7 "Mig" ('Mig'), Localisation (1037, 1410, 2), Map Felucca
+2023-05-08 00:49:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robe'
+2023-05-08 00:50:15: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 00:50:18: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 00:50:18: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x400021C5 (Guitare) (inBag=False; amount=1)
+2023-05-08 00:50:18: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x400021C5 (Guitare) creating 0x400021C8 (Guitare)
+2023-05-08 00:50:34: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add luth'
+2023-05-08 00:50:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1040, 1411, 0) in Felucca: "Lute"
+2023-05-08 00:50:38: 184.160.109.184: Serials: 0x400021CA; 
+2023-05-08 00:51:13: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 00:53:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add potence'
+2023-05-08 00:53:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add chicken'
+2023-05-08 00:53:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1039, 1412, 0) in Felucca: "chicken"
+2023-05-08 00:53:55: 184.160.109.184: Serials: 0x901; 
+2023-05-08 00:53:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add chicken'
+2023-05-08 00:53:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1040, 1412, 0) in Felucca: "chicken"
+2023-05-08 00:53:58: 184.160.109.184: Serials: 0x907; 
+2023-05-08 00:54:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'get hue'
+2023-05-08 00:54:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 1920'
+2023-05-08 00:54:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400021E7 (Static) to '1920'
+2023-05-08 00:55:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'set hue 1920'
+2023-05-08 00:55:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'hue' of 0x400021E8 (Static) to '1920'
+2023-05-08 00:55:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 00:55:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 00:55:53: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 00:55:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x907 " Poule" (no account)
+2023-05-08 00:56:01: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 00:56:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021D3 (Corpse)
+2023-05-08 00:56:03: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021EB (Corpse)
+2023-05-08 00:56:03: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021E6 (Corpse)
+2023-05-08 00:56:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021E8 (Static)
+2023-05-08 00:56:12: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 00:56:14: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x400021EC (Bag) (inBag=False; amount=1)
+2023-05-08 00:56:14: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x400021EC (Bag) creating 0x400021EE (Bag)
+2023-05-08 00:56:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'get hueà'
+2023-05-08 00:57:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'get hue'
+2023-05-08 00:57:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add sewing'
+2023-05-08 00:57:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1041, 1412, 0) in Felucca: "SewingKit"
+2023-05-08 00:57:40: 184.160.109.184: Serials: 0x400021F4; 
+2023-05-08 00:58:05: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robe d'
+2023-05-08 00:58:08: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robe déc'
+2023-05-08 00:58:09: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1042, 1410, 2) in Felucca: "robe" "déc"
+2023-05-08 00:58:13: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robesfd'
+2023-05-08 00:58:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1042, 1410, 2) in Felucca: "RobeProvocante6"
+2023-05-08 00:58:27: 184.160.109.184: Serials: 0x400021FD; 
+2023-05-08 00:59:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robesfd'
+2023-05-08 00:59:12: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1042, 1410, 2) in Felucca: "RobeProvocante5"
+2023-05-08 00:59:12: 184.160.109.184: Serials: 0x400021FE; 
+2023-05-08 00:59:21: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robesfd'
+2023-05-08 00:59:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1041, 1410, 2) in Felucca: "RobeProvocante4"
+2023-05-08 00:59:26: 184.160.109.184: Serials: 0x400021FF; 
+2023-05-08 00:59:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robesfd'
+2023-05-08 00:59:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1042, 1410, 2) in Felucca: "RobeProvocante2"
+2023-05-08 00:59:48: 184.160.109.184: Serials: 0x40002200; 
+2023-05-08 00:59:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add robesfd'
+2023-05-08 00:59:56: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1041, 1410, 2) in Felucca: "RobeProvocante"
+2023-05-08 00:59:56: 184.160.109.184: Serials: 0x40002201; 
+2023-05-08 01:00:29: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 01:00:32: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021FE (RobeProvocante5)
+2023-05-08 01:00:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 01:00:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002201 (RobeProvocante)
+2023-05-08 01:00:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 01:00:38: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021FF (RobeProvocante4)
+2023-05-08 01:00:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 01:00:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021B8 (Kilt)
+2023-05-08 01:00:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 01:00:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002054 (PlateChest)
+2023-05-08 01:01:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add ear'
+2023-05-08 01:01:16: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1040, 1411, 0) in Felucca: "Earrings"
+2023-05-08 01:01:16: 184.160.109.184: Serials: 0x40002205; 
+2023-05-08 01:01:51: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add coiffe'
+2023-05-08 01:01:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1042, 1411, -1) in Felucca: "CoiffeColore"
+2023-05-08 01:01:54: 184.160.109.184: Serials: 0x40002208; 
+2023-05-08 01:02:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add coiffe'
+2023-05-08 01:02:05: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1042, 1411, -1) in Felucca: "CoiffeEgypte"
+2023-05-08 01:02:05: 184.160.109.184: Serials: 0x40002209; 
+2023-05-08 01:02:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add chapeau'
+2023-05-08 01:02:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1038, 1410, 2) in Felucca: "ChapeauPlume3"
+2023-05-08 01:02:46: 184.160.109.184: Serials: 0x40002212; 
+2023-05-08 01:02:51: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add chapeau'
+2023-05-08 01:02:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1039, 1410, 2) in Felucca: "ChapeauPlume2"
+2023-05-08 01:02:55: 184.160.109.184: Serials: 0x40002213; 
+2023-05-08 01:03:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delet'
+2023-05-08 01:03:15: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 01:03:19: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021B7 (ChapeauToc)
+2023-05-08 01:03:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002208 (CoiffeColore)
+2023-05-08 01:03:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002212 (ChapeauPlume3)
+2023-05-08 01:03:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002209 (CoiffeEgypte)
+2023-05-08 01:03:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400015B5 (GMRobe)
+2023-05-08 01:03:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 01:03:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x388 " Cheval" (no account)
+2023-05-08 01:04:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 01:04:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x4000152B (PoissonMain) (inBag=False; amount=1)
+2023-05-08 01:04:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x4000152B (PoissonMain) creating 0x4000221A (PoissonMain)
+2023-05-08 01:05:01: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 01:05:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x400012E7 (BouquetFleur) (inBag=False; amount=1)
+2023-05-08 01:05:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x400012E7 (BouquetFleur) creating 0x4000221B (BouquetFleur)
+2023-05-08 01:05:10: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'props '
+2023-05-08 01:05:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'Layer' of 0x4000221A (PoissonMain) to 'FirstValid'
+2023-05-08 01:05:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'props '
+2023-05-08 01:05:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') set property 'Layer' of 0x4000221B (BouquetFleur) to 'FirstValid'
+2023-05-08 01:07:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 01:07:07: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 01:07:44: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'st '
+2023-05-08 01:07:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'Inc y -1'
+2023-05-08 01:07:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'Inc z 1'
+2023-05-08 01:07:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'Inc z -1'
+2023-05-08 01:07:56: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:59: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'adddoor '
+2023-05-08 01:07:59: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'addarch '
+2023-05-08 01:08:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add hair'
+2023-05-08 01:08:48: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1041, 1410, 2) in Felucca: "hair"
+2023-05-08 01:08:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add hairff'
+2023-05-08 01:09:10: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add longhair'
+2023-05-08 01:09:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1040, 1411, 0) in Felucca: "longhair"
+2023-05-08 01:09:16: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 01:09:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 01:09:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x40000CFB (BarberScissors) (inBag=False; amount=1)
+2023-05-08 01:09:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x40000CFB (BarberScissors) creating 0x40002224 (BarberScissors)
+2023-05-08 01:09:47: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 01:10:49: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add ring'
+2023-05-08 01:11:03: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1038, 1411, 0) in Felucca: "GoldRing"
+2023-05-08 01:11:03: 184.160.109.184: Serials: 0x4000223B; 
+2023-05-08 01:11:28: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:12:06: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:12:21: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') hiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 01:12:21: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self hide'
+2023-05-08 01:12:23: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 01:12:23: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 01:12:30: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add marteau'
+2023-05-08 01:12:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1038, 1412, 0) in Felucca: "marteau"
+2023-05-08 01:12:31: 184.160.109.184: Serials: 0x40002246; 
+2023-05-08 01:12:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add hammer'
+2023-05-08 01:12:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1038, 1412, 0) in Felucca: "hammer"
+2023-05-08 01:12:40: 184.160.109.184: Serials: 0x40002249; 
+2023-05-08 01:13:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add dragonm'
+2023-05-08 01:13:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add dragon'
+2023-05-08 01:13:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') building at (1040, 1412, 0) in Felucca: "dragon"
+2023-05-08 01:13:40: 184.160.109.184: Serials: 0x912; 
+2023-05-08 01:13:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 01:13:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x912 " Dragon" (no account)
+2023-05-08 01:14:28: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 01:14:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 01:14:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'kill '
+2023-05-08 01:14:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'delete '
+2023-05-08 01:14:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400022D5 (Corpse)
+2023-05-08 01:18:13: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'add hugovier'
+2023-05-08 01:18:20: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'area kill'
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x93E " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x93B " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x93A " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x92D " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x92C " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x92B " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x920 " Squelette" (no account)
+2023-05-08 01:18:22: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x918 " Squelette" (no account)
+2023-05-08 01:18:23: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'area kill'
+2023-05-08 01:18:24: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x93C " Squelette" (no account)
+2023-05-08 01:18:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'area kill'
+2023-05-08 01:18:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x939 " Squelette" (no account)
+2023-05-08 01:18:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x92F " Squelette" (no account)
+2023-05-08 01:18:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x931 " Squelette" (no account)
+2023-05-08 01:18:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x93D " Squelette" (no account)
+2023-05-08 01:18:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x938 " Squelette" (no account)
+2023-05-08 01:18:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x937 " Squelette" (no account)
+2023-05-08 01:18:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'area kill'
+2023-05-08 01:18:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') killing 0x930 " Squelette" (no account)
+2023-05-08 01:18:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'area delete'
+2023-05-08 01:18:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 01:18:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002468 (Corpse)
+2023-05-08 01:18:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x4000247E (Corpse)
+2023-05-08 01:18:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400023B0 (Corpse)
+2023-05-08 01:18:56: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002456 (Corpse)
+2023-05-08 01:18:56: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002426 (Corpse)
+2023-05-08 01:18:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002440 (Corpse)
+2023-05-08 01:18:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002490 (Corpse)
+2023-05-08 01:19:01: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 01:19:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 01:19:04: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002338 (Corpse)
+2023-05-08 01:19:08: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x4000239A (Corpse)
+2023-05-08 01:19:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:19:46: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:20:06: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:20:11: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:20:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'vemote pete'
+2023-05-08 01:20:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'xemote pete'
+2023-05-08 01:20:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'xemote pete'
+2023-05-08 01:32:51: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 01:32:52: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') amène 0x275 "Coeur de Lion" ('Lion') à la Localisation (1042, 1408, 27), Map Felucca
+2023-05-08 01:32:56: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 01:33:02: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') se dirige sur 0x1A "Troubadour" ('Trouba'), Localisation (1117, 1375, -1), Map Felucca
+2023-05-08 01:33:05: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:33:27: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:35:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'dupe '
+2023-05-08 01:35:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duping 0x4000222F (RobeNobleDecolte) (inBag=False; amount=1)
+2023-05-08 01:35:43: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') duped 0x4000222F (RobeNobleDecolte) creating 0x400024A2 (RobeNobleDecolte)
+2023-05-08 01:35:54: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:36:16: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 01:36:17: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002246 (Marteau)
+2023-05-08 01:36:25: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021FD (RobeProvocante6)
+2023-05-08 01:36:26: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x40002249 (Hammer)
+2023-05-08 01:36:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400021C8 (Guitare)
+2023-05-08 01:36:41: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm delete'
+2023-05-08 01:36:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') deleting 0x400024A2 (RobeNobleDecolte)
+2023-05-08 01:36:45: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 01:36:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') se dirige sur 0x1A "Troubadour" ('Trouba'), Localisation (1117, 1375, -1), Map Felucca
+2023-05-08 01:36:50: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:36:53: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 01:36:55: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') se dirige sur 0x275 "Coeur de Lion" ('Lion'), Localisation (832, 1066, -25), Map Felucca
+2023-05-08 01:36:57: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:37:01: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:37:05: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:37:09: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:37:58: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 01:38:00: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') se dirige sur 0x275 "Coeur de Lion" ('Lion'), Localisation (459, 951, 6), Map Felucca
+2023-05-08 01:38:03: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:38:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:38:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') unhiding 0x40B "Dyzee" ('Dyzee')
+2023-05-08 01:38:33: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'self unhide'
+2023-05-08 01:38:34: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 01:38:36: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') se dirige sur 0x275 "Coeur de Lion" ('Lion'), Localisation (820, 780, 14), Map Felucca
+2023-05-08 01:38:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:39:49: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:40:31: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:40:39: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:40:40: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 01:40:42: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'm tele'
+2023-05-08 15:26:17: 76.65.253.137: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 17:30:01: 76.65.253.137: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-08 21:08:37: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-09 00:06:16: 184.160.109.184: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '
+2023-05-09 12:51:22: 76.65.253.137: GameMaster 0x40B "Dyzee" ('Dyzee') used command 'who '

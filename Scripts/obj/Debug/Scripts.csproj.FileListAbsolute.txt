@@ -1,0 +1,157 @@
+C:\Kaldenia\Serveur\Scripts\bin\Debug\Scripts.dll
+C:\Kaldenia\Serveur\Scripts\bin\Debug\Scripts.pdb
+C:\Kaldenia\Serveur\Scripts\bin\Debug\System.Drawing.Common.dll
+C:\Kaldenia\Serveur\Scripts\bin\Debug\Server.dll
+C:\Kaldenia\Serveur\Scripts\bin\Debug\Server.pdb
+C:\Kaldenia\Serveur\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+C:\Kaldenia\Serveur\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kaldenia\Serveur\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+C:\Kaldenia\Serveur\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+C:\Kaldenia\Serveur\Scripts\obj\Debug\Scripts.dll
+C:\Kaldenia\Serveur\Scripts\obj\Debug\Scripts.pdb
+C:\Users\eowym\Downloads\Serveur\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+C:\Users\eowym\Downloads\Serveur\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eowym\Downloads\Serveur\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+C:\Users\eowym\Downloads\Serveur\Scripts\obj\Debug\Scripts.dll
+C:\Users\eowym\Downloads\Serveur\Scripts\obj\Debug\Scripts.pdb
+C:\Users\eowym\Downloads\Serveur\Scripts\bin\Debug\Scripts.dll
+C:\Users\eowym\Downloads\Serveur\Scripts\bin\Debug\Scripts.pdb
+C:\Users\eowym\Downloads\Serveur\Scripts\bin\Debug\System.Drawing.Common.dll
+C:\Users\eowym\Downloads\Serveur\Scripts\bin\Debug\Server.dll
+C:\Users\eowym\Downloads\Serveur\Scripts\bin\Debug\Server.pdb
+C:\Users\eowym\Downloads\Serveur\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+C:\KaldeniaV3\Scripts\bin\Debug\Scripts.dll
+C:\KaldeniaV3\Scripts\bin\Debug\Scripts.pdb
+C:\KaldeniaV3\Scripts\bin\Debug\System.Drawing.Common.dll
+C:\KaldeniaV3\Scripts\bin\Debug\Server.dll
+C:\KaldeniaV3\Scripts\bin\Debug\Server.pdb
+C:\KaldeniaV3\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+C:\KaldeniaV3\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\KaldeniaV3\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+C:\KaldeniaV3\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+C:\KaldeniaV3\Scripts\obj\Debug\Scripts.dll
+C:\KaldeniaV3\Scripts\obj\Debug\Scripts.pdb
+C:\NewUoServer2023\Scripts\bin\Debug\Scripts.dll
+C:\NewUoServer2023\Scripts\bin\Debug\Scripts.pdb
+C:\NewUoServer2023\Scripts\bin\Debug\System.Drawing.Common.dll
+C:\NewUoServer2023\Scripts\bin\Debug\Server.dll
+C:\NewUoServer2023\Scripts\bin\Debug\Server.pdb
+C:\NewUoServer2023\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+C:\NewUoServer2023\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\NewUoServer2023\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+C:\NewUoServer2023\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+C:\NewUoServer2023\Scripts\obj\Debug\Scripts.dll
+C:\NewUoServer2023\Scripts\obj\Debug\Scripts.pdb
+D:\KaldeniaV31\Scripts\bin\Debug\Scripts.dll
+D:\KaldeniaV31\Scripts\bin\Debug\Scripts.pdb
+D:\KaldeniaV31\Scripts\bin\Debug\System.Drawing.Common.dll
+D:\KaldeniaV31\Scripts\bin\Debug\Server.dll
+D:\KaldeniaV31\Scripts\bin\Debug\Server.pdb
+D:\KaldeniaV31\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+D:\KaldeniaV31\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+D:\KaldeniaV31\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+D:\KaldeniaV31\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+D:\KaldeniaV31\Scripts\obj\Debug\Scripts.dll
+D:\KaldeniaV31\Scripts\obj\Debug\Scripts.pdb
+D:\KaldeniaServer\Scripts\bin\Debug\Scripts.dll
+D:\KaldeniaServer\Scripts\bin\Debug\Scripts.pdb
+D:\KaldeniaServer\Scripts\bin\Debug\System.Drawing.Common.dll
+D:\KaldeniaServer\Scripts\bin\Debug\Server.dll
+D:\KaldeniaServer\Scripts\bin\Debug\Server.pdb
+D:\KaldeniaServer\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+D:\KaldeniaServer\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+D:\KaldeniaServer\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+D:\KaldeniaServer\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+D:\KaldeniaServer\Scripts\obj\Debug\Scripts.dll
+D:\KaldeniaServer\Scripts\obj\Debug\Scripts.pdb
+D:\KaldeniaServer\Scripts\bin\Debug\Newtonsoft.Json.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Scripts.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Scripts.pdb
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Newtonsoft.Json.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Drawing.Common.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Server.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Server.pdb
+C:\LeRefuge\LeRefugeServer\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+C:\LeRefuge\LeRefugeServer\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\LeRefuge\LeRefugeServer\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+C:\LeRefuge\LeRefugeServer\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+C:\LeRefuge\LeRefugeServer\Scripts\obj\Debug\Scripts.dll
+C:\LeRefuge\LeRefugeServer\Scripts\obj\Debug\Scripts.pdb
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Commands.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Core.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Interactions.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Rest.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Webhook.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Discord.Net.WebSocket.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Buffers.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Collections.Immutable.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Interactive.Async.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Linq.Async.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Memory.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Numerics.Vectors.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Reactive.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\LeRefuge\LeRefugeServer\Scripts\bin\Debug\System.ValueTuple.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Scripts.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Scripts.pdb
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Discord.Net.Commands.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Discord.Net.Core.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Discord.Net.Interactions.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Discord.Net.Rest.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Discord.Net.Webhook.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Discord.Net.WebSocket.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Newtonsoft.Json.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Buffers.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Collections.Immutable.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Drawing.Common.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Interactive.Async.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Linq.Async.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Memory.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Numerics.Vectors.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Reactive.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\System.ValueTuple.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Server.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\bin\Debug\Server.pdb
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\obj\Debug\Scripts.dll
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\obj\Debug\Scripts.pdb
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Scripts.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Scripts.pdb
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Commands.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Core.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Interactions.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Rest.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Discord.Net.Webhook.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Discord.Net.WebSocket.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Newtonsoft.Json.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Buffers.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Collections.Immutable.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Drawing.Common.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Interactive.Async.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Linq.Async.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Memory.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Numerics.Vectors.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Reactive.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\System.ValueTuple.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Server.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\bin\Debug\Server.pdb
+D:\LeRefuge_Data\LeRefugeServer\Scripts\obj\Debug\Scripts.csproj.AssemblyReference.cache
+D:\LeRefuge_Data\LeRefugeServer\Scripts\obj\Debug\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+D:\LeRefuge_Data\LeRefugeServer\Scripts\obj\Debug\Scripts.csproj.CoreCompileInputs.cache
+D:\LeRefuge_Data\LeRefugeServer\Scripts\obj\Debug\Scripts.csproj.CopyComplete
+D:\LeRefuge_Data\LeRefugeServer\Scripts\obj\Debug\Scripts.dll
+D:\LeRefuge_Data\LeRefugeServer\Scripts\obj\Debug\Scripts.pdb

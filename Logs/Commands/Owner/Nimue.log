@@ -1,0 +1,55 @@
+2023-07-14 03:52:48: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'move '
+2023-07-14 03:52:51: 74.15.141.240: Owner 0x94B "Nimue" (no account) moving 0xD35 "Jericho Stout" (no account) to (2273, 81, 0)
+2023-07-14 03:53:03: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'add bracelet'
+2023-07-14 03:53:06: 74.15.141.240: Owner 0x94B "Nimue" (no account) building at (2276, 90, 0) in Felucca: "Bracelet1"
+2023-07-14 03:53:06: 74.15.141.240: Serials: 0x4000DBED; 
+2023-07-14 03:53:14: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 03:53:39: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'Name' of 0x4000DBED (Bracelet1) to 'Montre ouvragée de qualité - Signé Renart'
+2023-07-14 03:53:45: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 03:53:53: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'bank '
+2023-07-14 03:54:41: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'bank '
+2023-07-14 03:54:43: 74.15.141.240: Owner 0x94B "Nimue" (no account) opening bank box of 0x94B "Nimue" (no account)
+2023-07-14 03:57:53: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'Name' of 0x4000DBED (Bracelet1) to 'Montre-bracelet au mécanisme ingénieux, signature Renart.'
+2023-07-14 03:57:59: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 03:58:05: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'Quality' of 0x4000DBED (Bracelet1) to 'Exceptional'
+2023-07-14 03:58:08: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 03:58:13: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'Crafter' of 0x4000DB6E (Salopette) to '(null)'
+2023-07-14 03:58:15: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'Crafter' of 0x4000DB6E (Salopette) to '(null)'
+2023-07-14 03:58:19: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 03:58:32: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 04:07:50: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 04:07:54: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0x15BB "Tom Luthel" ('poumon'), Localisation (1093, 1387, -20), Map Felucca
+2023-07-14 04:08:04: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 04:09:23: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 04:09:26: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0x1720 "Samalek Avasarala" ('Pinky'), Localisation (1066, 1421, 5), Map Felucca
+2023-07-14 04:12:50: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 04:12:55: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0x15BB "Tom Luthel" ('poumon'), Localisation (1094, 1385, -20), Map Felucca
+2023-07-14 04:14:02: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 04:14:11: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0x14B2 "Neri" ('jungle123'), Localisation (1085, 1404, 0), Map Felucca
+2023-07-14 04:15:20: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'delete '
+2023-07-14 04:15:21: 74.15.141.240: Owner 0x94B "Nimue" (no account) deleting 0x4000DBEA (CorpsPetitGens)
+2023-07-14 04:15:56: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 15:27:08: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 15:27:11: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0xEDF "Orleans Renart" ('lix'), Localisation (1094, 1411, 0), Map Felucca
+2023-07-14 15:27:15: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'dupe '
+2023-07-14 15:27:16: 74.15.141.240: Owner 0x94B "Nimue" (no account) duping 0x4001D2C6 (PlantItem) (inBag=False; amount=1)
+2023-07-14 15:27:16: 74.15.141.240: Owner 0x94B "Nimue" (no account) duped 0x4001D2C6 (PlantItem) creating 0x400101F9 (PlantItem)
+2023-07-14 15:27:48: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 15:28:04: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'Stage7'
+2023-07-14 15:28:11: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'Stage7'
+2023-07-14 15:28:14: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'Stage7'
+2023-07-14 15:28:21: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'DecorativePlant'
+2023-07-14 15:28:30: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'DeadTwigs'
+2023-07-14 15:28:36: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'Stage8'
+2023-07-14 15:28:44: 74.15.141.240: Owner 0x94B "Nimue" (no account) set property 'PlantStatus' of 0x400101F9 (PlantItem) to 'Stage9'
+2023-07-14 15:30:12: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 15:30:15: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0xEDF "Orleans Renart" ('lix'), Localisation (1059, 1334, 1), Map Felucca
+2023-07-14 15:30:23: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 15:30:44: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 15:30:51: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'add seed'
+2023-07-14 15:30:52: 74.15.141.240: Owner 0x94B "Nimue" (no account) building at (1060, 1335, 0) in Felucca: "seed"
+2023-07-14 15:30:52: 74.15.141.240: Serials: 0x4001023D; 
+2023-07-14 15:30:55: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'props '
+2023-07-14 15:31:12: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 15:44:04: 74.15.141.240: Owner 0x94B "Nimue" (no account) used command 'qui '
+2023-07-14 15:44:07: 74.15.141.240: Owner 0x94B "Nimue" (no account) se dirige sur 0x71E "Nyere'Nyelle" ('artist'), Localisation (2239, 1527, -28), Map Felucca

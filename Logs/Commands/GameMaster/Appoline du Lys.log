@@ -1,0 +1,21 @@
+2023-05-07 23:31:45: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'tele '
+2023-05-07 23:31:48: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'props '
+2023-05-07 23:31:58: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) set property 'Journaliste' of 0x12 "Appoline du Lys" (no account) to 'True'
+2023-05-07 23:32:13: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) set property 'Classe' of 0x12 "Appoline du Lys" (no account) to 'Styliste'
+2023-05-07 23:32:57: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) set property 'CantWalk' of 0x12 "Appoline du Lys" (no account) to 'False'
+2023-05-07 23:33:04: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'props '
+2023-05-07 23:33:08: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'props '
+2023-05-07 23:33:14: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'delete '
+2023-05-07 23:33:18: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'delete '
+2023-05-07 23:33:43: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'posseder '
+2023-05-07 23:34:23: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'add barber'
+2023-05-07 23:34:25: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) building at (2261, 97, 0) in Felucca: "BarberScissors"
+2023-05-07 23:34:25: 184.162.169.177: Serials: 0x40001064; 
+2023-05-07 23:34:27: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) building at (2263, 98, 0) in Felucca: "BarberScissors"
+2023-05-07 23:34:27: 184.162.169.177: Serials: 0x40001065; 
+2023-05-07 23:34:32: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) building at (2262, 105, 0) in Felucca: "BarberScissors"
+2023-05-07 23:34:32: 184.162.169.177: Serials: 0x40001066; 
+2023-05-07 23:34:41: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) building at (2262, 102, 0) in Felucca: "BarberScissors"
+2023-05-07 23:34:41: 184.162.169.177: Serials: 0x40001067; 
+2023-05-07 23:35:49: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) used command 'delete '
+2023-05-07 23:35:50: 184.162.169.177: GameMaster 0x12 "Appoline du Lys" (no account) deleting 0x388 "Appoline du Lys" ('Nimue')

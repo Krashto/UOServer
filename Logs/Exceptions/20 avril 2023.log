@@ -1,0 +1,51 @@
+##############################
+Exception log started on 2023-04-20 02:05:59
+
+Exception Caught: 2023-04-20 02:05:59
+System.MissingMethodException: Aucun constructeur sans paramètre défini pour cet objet.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Custom.CustomUtility.GetRandomItemByBaseType(Type baseType) dans D:\KaldeniaServer\Scripts\Custom\CustomUtility.cs:ligne 17
+   à Server.Mobiles.BaseCreature.GenerateSpecialLoot() dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 5082
+   à Server.Mobiles.BaseCreature.GenerateLoot(LootStage stage) dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 4981
+   à Server.Mobiles.BaseCreature.OnBeforeDeath() dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 5619
+   à Server.Mobile.Kill() dans D:\KaldeniaServer\Server\Mobile.cs:ligne 3926
+   à Server.Commands.Generic.KillCommand.Execute(CommandEventArgs e, Object obj) dans D:\KaldeniaServer\Scripts\Commands\Generic\Commands\Commands.cs:ligne 1010
+   à Server.Commands.Generic.BaseCommand.ExecuteList(CommandEventArgs e, ArrayList list) dans D:\KaldeniaServer\Scripts\Commands\Generic\Commands\BaseCommand.cs:ligne 131
+   à Server.Commands.Generic.BaseCommandImplementor.RunCommand(Mobile from, Object obj, BaseCommand command, String[] args) dans D:\KaldeniaServer\Scripts\Commands\Generic\Implementors\BaseCommandImplementor.cs:ligne 291
+   à Server.Commands.Generic.AreaCommandImplementor.OnTarget(Mobile from, Map map, Point3D start, Point3D end, Object state) dans D:\KaldeniaServer\Scripts\Commands\Generic\Implementors\AreaCommandImplementor.cs:ligne 70
+
+Exception Caught: 2023-04-20 02:06:11
+System.MissingMethodException: Aucun constructeur sans paramètre défini pour cet objet.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Custom.CustomUtility.GetRandomItemByBaseType(Type baseType) dans D:\KaldeniaServer\Scripts\Custom\CustomUtility.cs:ligne 17
+   à Server.Mobiles.BaseCreature.GenerateSpecialLoot() dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 5082
+   à Server.Mobiles.BaseCreature.GenerateLoot(LootStage stage) dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 4981
+   à Server.Mobiles.BaseCreature.OnBeforeDeath() dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 5619
+   à Server.Mobile.Kill() dans D:\KaldeniaServer\Server\Mobile.cs:ligne 3926
+   à Server.Commands.Generic.KillCommand.Execute(CommandEventArgs e, Object obj) dans D:\KaldeniaServer\Scripts\Commands\Generic\Commands\Commands.cs:ligne 1010
+   à Server.Commands.Generic.BaseCommand.ExecuteList(CommandEventArgs e, ArrayList list) dans D:\KaldeniaServer\Scripts\Commands\Generic\Commands\BaseCommand.cs:ligne 131
+   à Server.Commands.Generic.BaseCommandImplementor.RunCommand(Mobile from, Object obj, BaseCommand command, String[] args) dans D:\KaldeniaServer\Scripts\Commands\Generic\Implementors\BaseCommandImplementor.cs:ligne 291
+   à Server.Commands.Generic.BaseCommandImplementor.RunCommand(Mobile from, BaseCommand command, String[] args) dans D:\KaldeniaServer\Scripts\Commands\Generic\Implementors\BaseCommandImplementor.cs:ligne 233
+
+Exception Caught: 2023-04-20 02:07:11
+System.MissingMethodException: Aucun constructeur sans paramètre défini pour cet objet.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Custom.CustomUtility.GetRandomItemByBaseType(Type baseType) dans D:\KaldeniaServer\Scripts\Custom\CustomUtility.cs:ligne 17
+   à Server.Mobiles.BaseCreature.GenerateSpecialLoot() dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 5071
+   à Server.Mobiles.BaseCreature.GenerateLoot(LootStage stage) dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 4981
+   à Server.Mobiles.BaseCreature.OnBeforeDeath() dans D:\KaldeniaServer\Scripts\Mobiles\Normal\BaseCreature.cs:ligne 5619
+   à Server.Mobile.Kill() dans D:\KaldeniaServer\Server\Mobile.cs:ligne 3926
+   à Server.Commands.Generic.KillCommand.Execute(CommandEventArgs e, Object obj) dans D:\KaldeniaServer\Scripts\Commands\Generic\Commands\Commands.cs:ligne 1010
+   à Server.Commands.Generic.BaseCommand.ExecuteList(CommandEventArgs e, ArrayList list) dans D:\KaldeniaServer\Scripts\Commands\Generic\Commands\BaseCommand.cs:ligne 131
+   à Server.Commands.Generic.BaseCommandImplementor.RunCommand(Mobile from, Object obj, BaseCommand command, String[] args) dans D:\KaldeniaServer\Scripts\Commands\Generic\Implementors\BaseCommandImplementor.cs:ligne 291
+   à Server.Commands.Generic.BaseCommandImplementor.RunCommand(Mobile from, BaseCommand command, String[] args) dans D:\KaldeniaServer\Scripts\Commands\Generic\Implementors\BaseCommandImplementor.cs:ligne 233
+

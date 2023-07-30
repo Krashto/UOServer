@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="1">
+	<account>
+		<username>KrashAdmin</username>
+		<newCryptPassword>5E-7F-13-79-80-1A-E5-89-E7-60-97-73-E5-57-10-EC-C3-B0-6E-41</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-07-30T19:30:00.7712025Z</created>
+		<lastLogin>2023-07-30T19:49:03.5923735Z</lastLogin>
+		<totalGameTime>PT18M46.2111238S</totalGameTime>
+		<chars>
+			<char index="1">3</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-07-30T19:37:11.5798033Z">Character #1 0x2 "Namalae" deleted by 127.0.0.1</comment>
+		</comments>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+</accounts>

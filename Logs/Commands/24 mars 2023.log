@@ -1,0 +1,545 @@
+##############################
+Log started on 2023-03-24 00:13:50
+
+##############################
+Log started on 2023-03-24 00:14:09
+
+2023-03-24 00:27:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add mask'
+2023-03-24 00:28:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2302, 109, 0) in Felucca: "OrcishKinMask"
+2023-03-24 00:28:05: 70.55.171.10: Serials: 0x4000000D; 
+2023-03-24 00:28:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000000D (OrcishKinMask)
+2023-03-24 00:28:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add mask'
+2023-03-24 00:28:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 108, 0) in Felucca: "PlagueMaskSouth"
+2023-03-24 00:28:11: 70.55.171.10: Serials: 0x40000010; 
+2023-03-24 00:28:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2301, 109, 0) in Felucca: "PlagueMaskSouth"
+2023-03-24 00:28:13: 70.55.171.10: Serials: 0x40000013; 
+2023-03-24 00:28:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000013 (PlagueMaskSouth)
+2023-03-24 00:28:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000010 (PlagueMaskSouth)
+2023-03-24 00:28:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add mask'
+2023-03-24 00:28:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 108, 0) in Felucca: "PaintingMasks"
+2023-03-24 00:28:21: 70.55.171.10: Serials: 0x40000014; 
+2023-03-24 00:28:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2304, 108, 0) in Felucca: "PaintingMasks"
+2023-03-24 00:28:25: 70.55.171.10: Serials: 0x40000018; 
+2023-03-24 00:28:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2304, 108, 0) in Felucca: "PaintingMasks"
+2023-03-24 00:28:26: 70.55.171.10: Serials: 0x40000019; 
+2023-03-24 00:28:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000018 (PaintingMasks)
+2023-03-24 00:28:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000019 (PaintingMasks)
+2023-03-24 00:28:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000014 (PaintingMasks)
+2023-03-24 00:28:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add mask'
+2023-03-24 00:28:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 109, 0) in Felucca: "ClownMaskEast"
+2023-03-24 00:28:34: 70.55.171.10: Serials: 0x4000001A; 
+2023-03-24 00:28:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000001A (ClownMaskEast)
+2023-03-24 00:28:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add mask'
+2023-03-24 00:28:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 109, 0) in Felucca: "DeerMask"
+2023-03-24 00:28:37: 70.55.171.10: Serials: 0x4000001B; 
+2023-03-24 00:28:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:28:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x4000001B (DeerMask)
+2023-03-24 00:28:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add mask'
+2023-03-24 00:30:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add sewing kit'
+2023-03-24 00:30:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 109, 0) in Felucca: "SewingKit"
+2023-03-24 00:30:18: 70.55.171.10: Serials: 0x4000001C; 
+2023-03-24 00:30:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-24 00:34:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-03-24 00:34:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-03-24 00:37:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-24 00:37:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x78 "Troll" (no account)
+2023-03-24 00:42:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bonesewin'
+2023-03-24 00:42:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 112, 0) in Felucca: "BoneSewingKit"
+2023-03-24 00:42:41: 127.0.0.1: Serials: 0x400000FB; 
+2023-03-24 00:42:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add sewin'
+2023-03-24 00:42:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2304, 109, 0) in Felucca: "SewingKit"
+2023-03-24 00:42:52: 70.55.171.10: Serials: 0x40000100; 
+2023-03-24 00:42:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add sewin'
+2023-03-24 00:42:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 111, 0) in Felucca: "BoneSewingKit"
+2023-03-24 00:42:55: 70.55.171.10: Serials: 0x40000131; 
+2023-03-24 00:42:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-24 00:43:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bone 1000'
+2023-03-24 00:43:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add os 1000'
+2023-03-24 00:43:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bone'
+2023-03-24 00:43:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 112, 0) in Felucca: "AncienBone"
+2023-03-24 00:43:24: 127.0.0.1: Serials: 0x40000136; 
+2023-03-24 00:43:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set amount 1000'
+2023-03-24 00:43:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'amount' of 0x40000136 (AncienBone) to '1000'
+2023-03-24 00:43:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-24 00:43:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000005 (Backpack)
+2023-03-24 00:43:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add backpack'
+2023-03-24 00:43:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 112, 0) in Felucca: "backpack"
+2023-03-24 00:43:56: 127.0.0.1: Serials: 0x40000138; 
+2023-03-24 00:44:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-24 00:44:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '100'
+2023-03-24 00:44:35: 127.0.0.1: Crafting 0x40000172 (PlastronOs) with craft system DefBoneTailoring
+2023-03-24 00:44:40: 127.0.0.1: Crafting 0x40000173 (BouclierOs) with craft system DefBoneTailoring
+2023-03-24 00:44:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add boucli'
+2023-03-24 00:44:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2305, 112, 0) in Felucca: "BouclierOs"
+2023-03-24 00:44:48: 70.55.171.10: Serials: 0x40000177; 
+2023-03-24 00:44:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-24 00:44:52: 127.0.0.1: Crafting 0x40000191 (JambiereOs) with craft system DefBoneTailoring
+2023-03-24 00:44:57: 127.0.0.1: Crafting 0x40000192 (BrassardOs) with craft system DefBoneTailoring
+2023-03-24 00:45:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 00:45:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000177 (BouclierOs)
+2023-03-24 00:45:01: 127.0.0.1: Crafting 0x40000193 (GantsOS) with craft system DefBoneTailoring
+2023-03-24 00:45:06: 127.0.0.1: Crafting 0x40000194 (CasqueOS) with craft system DefBoneTailoring
+2023-03-24 00:45:10: 127.0.0.1: Crafting 0x40000196 (BoneGorget) with craft system DefBoneTailoring
+2023-03-24 00:45:36: 127.0.0.1: Crafting 0x40000197 (OrcHelm) with craft system DefBoneTailoring
+2023-03-24 00:51:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add billboard'
+2023-03-24 00:51:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add board'
+2023-03-24 00:51:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 118, 0) in Felucca: "MongbatDartboard"
+2023-03-24 00:51:50: 127.0.0.1: Serials: 0x40000200; 
+2023-03-24 00:51:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2298, 111, 0) in Felucca: "JackpotBoard"
+2023-03-24 00:51:58: 127.0.0.1: Serials: 0x40000201; 
+2023-03-24 00:52:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 114, 0) in Felucca: "FlouredBreadBoard"
+2023-03-24 00:52:08: 127.0.0.1: Serials: 0x40000203; 
+2023-03-24 00:52:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 115, 0) in Felucca: "BulletinBoard"
+2023-03-24 00:52:18: 127.0.0.1: Serials: 0x40000204; 
+2023-03-24 00:54:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-24 00:54:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 116, 0) in Felucca: "sewingkit"
+2023-03-24 00:54:53: 127.0.0.1: Serials: 0x4000021C; 
+2023-03-24 00:59:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2291, 115, 0) in Felucca: "UOBoard"
+2023-03-24 00:59:19: 127.0.0.1: Serials: 0x40000244; 
+2023-03-24 01:04:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add carquois'
+2023-03-24 01:04:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 106, 0) in Felucca: "carquois"
+2023-03-24 01:04:35: 127.0.0.1: Serials: 0x40000267; 
+2023-03-24 01:15:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add skillet'
+2023-03-24 01:15:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2293, 107, 0) in Felucca: "skillet"
+2023-03-24 01:15:09: 127.0.0.1: Serials: 0x4000026B; 
+2023-03-24 01:20:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'renom enculume'
+2023-03-24 01:20:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'renom enculume'
+2023-03-24 01:20:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'renom allo'
+2023-03-24 01:49:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'who '
+2023-03-24 02:06:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add chapea'
+2023-03-24 02:06:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 111, 0) in Felucca: "ChapeauMousquetaire"
+2023-03-24 02:06:57: 70.55.171.10: Serials: 0x400002EE; 
+2023-03-24 02:06:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 02:06:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400002EE (ChapeauMousquetaire)
+2023-03-24 02:07:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add coiff'
+2023-03-24 02:07:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 110, 0) in Felucca: "CoiffeColore"
+2023-03-24 02:07:10: 70.55.171.10: Serials: 0x400002EF; 
+2023-03-24 02:07:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 02:07:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400002EF (CoiffeColore)
+2023-03-24 02:07:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add coiff'
+2023-03-24 02:08:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add cuir'
+2023-03-24 02:08:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add leather'
+2023-03-24 02:15:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-24 02:15:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'move '
+2023-03-24 02:15:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-24 02:33:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add shurik'
+2023-03-24 02:34:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2303, 112, 0) in Felucca: "Ceinture10"
+2023-03-24 02:34:08: 70.55.171.10: Serials: 0x400003A0; 
+2023-03-24 02:34:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-24 02:34:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400003A0 (Ceinture10)
+2023-03-24 02:34:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add shurik'
+##############################
+Log started on 2023-03-24 02:40:19
+
+2023-03-24 02:41:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add leathersewing'
+2023-03-24 02:41:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 105, 0) in Felucca: "LeatherSewingKit"
+2023-03-24 02:41:10: 127.0.0.1: Serials: 0x40000005; 
+2023-03-24 02:41:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add leathersewing'
+2023-03-24 02:41:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 104, 0) in Felucca: "LeatherSewingKit"
+2023-03-24 02:41:19: 127.0.0.1: Serials: 0x40000007; 
+2023-03-24 02:41:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-24 02:41:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ancienleather 100'
+2023-03-24 02:41:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 108, 0) in Felucca: "ancienleather" "100"
+2023-03-24 02:41:55: 127.0.0.1: Serials: 0x4000000B; 
+2023-03-24 02:42:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ancienhide'
+2023-03-24 02:42:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 105, 0) in Felucca: "AncienHides"
+2023-03-24 02:42:04: 127.0.0.1: Serials: 0x4000000D; 
+2023-03-24 02:42:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 106, 0) in Felucca: "AncienHides"
+2023-03-24 02:42:04: 127.0.0.1: Serials: 0x40000010; 
+2023-03-24 02:42:19: 127.0.0.1: Crafting 0x40000013 (LeatherArms) with craft system DefCuir
+2023-03-24 02:42:54: 127.0.0.1: Crafting 0x40000014 (LeatherChest) with craft system DefCuir
+2023-03-24 02:43:00: 127.0.0.1: Crafting 0x40000018 (LeatherLegs) with craft system DefCuir
+2023-03-24 02:43:04: 127.0.0.1: Crafting 0x40000019 (LeatherArms) with craft system DefCuir
+2023-03-24 02:43:10: 127.0.0.1: Crafting 0x4000001A (LeatherGloves) with craft system DefCuir
+2023-03-24 02:43:16: 127.0.0.1: Crafting 0x4000001B (LeatherCap) with craft system DefCuir
+2023-03-24 02:43:23: 127.0.0.1: Crafting 0x4000001D (LeatherCap) with craft system DefCuir
+2023-03-24 02:43:27: 127.0.0.1: Crafting 0x4000001E (LeatherGorget) with craft system DefCuir
+2023-03-24 02:44:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-24 02:44:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 50'
+2023-03-24 02:44:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '50'
+2023-03-24 02:54:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'save '
+##############################
+Log started on 2023-03-24 11:44:32
+
+2023-03-24 11:48:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-03-24 11:48:19
+
+##############################
+Log started on 2023-03-24 11:50:15
+
+2023-03-24 11:50:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-03-24 11:50:41
+
+##############################
+Log started on 2023-03-24 11:52:37
+
+##############################
+Log started on 2023-03-24 11:52:52
+
+2023-03-24 11:53:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add leather'
+2023-03-24 11:53:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add leathersewing'
+2023-03-24 11:53:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 107, 0) in Felucca: "LeatherSewingKit"
+2023-03-24 11:53:50: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 11:54:09
+
+##############################
+Log started on 2023-03-24 11:56:24
+
+2023-03-24 11:56:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 11:57:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2299, 105, 0) to (2301, 114, 1) in Felucca (Items, Mobiles)
+2023-03-24 11:57:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 11:57:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2298, 111, 0) to (2299, 115, 0) in Felucca (Items, Mobiles)
+2023-03-24 11:57:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 11:57:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2290, 111, 7) to (2290, 112, 27) in Felucca (Items, Mobiles)
+2023-03-24 11:57:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 11:57:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2290, 112, 7) to (2290, 112, 7) in Felucca (Items, Mobiles)
+2023-03-24 11:57:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-24 11:57:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400000F1 (HouseSign)
+2023-03-24 11:58:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 11:58:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2276, 175, 0) to (2285, 190, 2) in Felucca (Items, Mobiles)
+##############################
+Log started on 2023-03-24 12:01:13
+
+##############################
+Log started on 2023-03-24 12:04:06
+
+##############################
+Log started on 2023-03-24 12:04:31
+
+##############################
+Log started on 2023-03-24 12:05:15
+
+2023-03-24 12:05:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-03-24 12:08:04
+
+2023-03-24 12:10:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add static 0x1001'
+2023-03-24 12:10:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 112, 7) in Felucca: "static" "0x1001"
+2023-03-24 12:10:37: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 12:25:19
+
+2023-03-24 12:25:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 12:25:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 110, 0) in Felucca: "bedrolltent"
+2023-03-24 12:25:27: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 12:25:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedroll'
+2023-03-24 12:25:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 116, 0) in Felucca: "bedroll"
+2023-03-24 12:25:50: 127.0.0.1: Serials: 0x4000009F; 
+2023-03-24 12:25:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get itemid'
+##############################
+Log started on 2023-03-24 12:29:39
+
+2023-03-24 12:29:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 12:29:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 110, 0) in Felucca: "bedrolltent"
+2023-03-24 12:29:53: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 12:31:02
+
+##############################
+Log started on 2023-03-24 12:33:37
+
+2023-03-24 12:33:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 12:33:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 112, 0) in Felucca: "bedrolltent"
+2023-03-24 12:33:51: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 12:35:27
+
+2023-03-24 12:35:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 12:35:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 111, 0) in Felucca: "bedrolltent"
+2023-03-24 12:35:39: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 12:36:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 12:36:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2302, 108, 0) to (2307, 120, 20) in Felucca (Items, Mobiles)
+##############################
+Log started on 2023-03-24 13:09:23
+
+2023-03-24 13:09:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 13:09:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 112, 0) in Felucca: "bedrolltent"
+2023-03-24 13:09:31: 127.0.0.1: Serials: 0x4000000A; 
+##############################
+Log started on 2023-03-24 13:09:45
+
+##############################
+Log started on 2023-03-24 13:15:54
+
+2023-03-24 13:16:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 13:16:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 116, 0) in Felucca: "bedrolltent"
+2023-03-24 13:16:02: 127.0.0.1: Serials: 0x4000000A; 
+##############################
+Log started on 2023-03-24 13:23:10
+
+2023-03-24 13:23:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 13:23:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 115, 0) in Felucca: "bedrolltent"
+2023-03-24 13:23:19: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 13:23:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1109'
+2023-03-24 13:23:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1109'
+##############################
+Log started on 2023-03-24 13:28:53
+
+2023-03-24 13:28:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 13:29:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 114, 0) in Felucca: "bedrolltent"
+2023-03-24 13:29:00: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 13:29:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1109'
+2023-03-24 13:29:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1109'
+##############################
+Log started on 2023-03-24 13:29:13
+
+2023-03-24 15:07:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:07:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 115, 0) in Felucca: "bedrolltent"
+2023-03-24 15:07:47: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 15:14:18
+
+2023-03-24 15:14:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:14:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 111, 0) in Felucca: "bedrolltent"
+2023-03-24 15:14:31: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 15:15:45
+
+2023-03-24 15:15:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:15:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 116, 0) in Felucca: "bedrolltent"
+2023-03-24 15:15:53: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 15:17:33
+
+2023-03-24 15:17:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:17:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 114, 0) in Felucca: "bedrolltent"
+2023-03-24 15:17:42: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 15:18:10
+
+##############################
+Log started on 2023-03-24 15:24:16
+
+2023-03-24 15:24:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:24:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 112, 0) in Felucca: "bedrolltent"
+2023-03-24 15:24:22: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 15:24:53
+
+##############################
+Log started on 2023-03-24 15:28:48
+
+##############################
+Log started on 2023-03-24 15:29:34
+
+2023-03-24 15:29:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:29:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 112, 0) in Felucca: "bedrolltent"
+2023-03-24 15:29:55: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 15:29:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1009'
+2023-03-24 15:30:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1009'
+2023-03-24 15:30:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1109'
+2023-03-24 15:30:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1109'
+##############################
+Log started on 2023-03-24 15:30:17
+
+##############################
+Log started on 2023-03-24 15:36:23
+
+2023-03-24 15:36:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1009'
+2023-03-24 15:36:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 15:36:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 115, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 15:36:36: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 15:36:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2988'
+2023-03-24 15:37:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '2988'
+2023-03-24 15:37:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-24 15:37:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1779'
+2023-03-24 15:37:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1779'
+##############################
+Log started on 2023-03-24 15:56:29
+
+2023-03-24 15:56:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 15:56:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 116, 0) in Felucca: "bedrolltent"
+2023-03-24 15:56:35: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 15:56:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1009'
+2023-03-24 15:56:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1109'
+2023-03-24 15:56:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1109'
+##############################
+Log started on 2023-03-24 16:00:29
+
+2023-03-24 16:00:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 16:00:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 116, 0) in Felucca: "bedrolltent"
+2023-03-24 16:00:39: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 16:00:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1109'
+2023-03-24 16:00:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000008 (BedrollTent) to '1109'
+##############################
+Log started on 2023-03-24 16:30:58
+
+2023-03-24 16:31:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 16:31:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 116, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 16:31:26: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 16:36:13
+
+2023-03-24 16:36:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 16:36:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 115, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 16:36:23: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 16:52:43
+
+2023-03-24 16:52:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 16:52:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 117, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 16:52:56: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 16:55:11
+
+2023-03-24 16:55:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 16:55:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 116, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 16:55:22: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 16:57:34
+
+2023-03-24 16:57:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 16:57:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 115, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 16:57:45: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 16:58:45
+
+2023-03-24 16:58:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 16:58:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 116, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 16:58:55: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 17:02:49
+
+2023-03-24 17:02:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 17:02:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 117, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 17:02:58: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 17:04:50
+
+2023-03-24 17:04:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent set hue 1109'
+2023-03-24 17:04:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 116, 0) in Felucca: "bedrolltent" "set" "hue" "1109"
+2023-03-24 17:04:59: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-24 19:00:02
+
+##############################
+Log started on 2023-03-24 19:07:16
+
+2023-03-24 19:07:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 19:07:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 114, 0) in Felucca: "bedrolltent"
+2023-03-24 19:07:26: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 19:07:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add dyetub'
+2023-03-24 19:07:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 114, 0) in Felucca: "dyetub"
+2023-03-24 19:07:31: 127.0.0.1: Serials: 0x4000000A; 
+2023-03-24 19:07:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add dyes'
+2023-03-24 19:07:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 114, 0) in Felucca: "dyes"
+2023-03-24 19:07:35: 127.0.0.1: Serials: 0x4000000D; 
+2023-03-24 19:08:02: 127.0.0.1: Player 0x1 "Nucca" ('admin') used command 'gm '
+2023-03-24 19:10:13: 127.0.0.1: Player 0x1 "Nucca" ('admin') used command 'flip '
+2023-03-24 19:10:16: 127.0.0.1: Player 0x1 "Nucca" ('admin') used command 'flip '
+2023-03-24 19:10:18: 127.0.0.1: Player 0x1 "Nucca" ('admin') used command 'flip '
+##############################
+Log started on 2023-03-24 19:11:53
+
+2023-03-24 19:12:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add smithhammer'
+2023-03-24 19:12:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 115, 0) in Felucca: "smithhammer"
+2023-03-24 19:12:38: 127.0.0.1: Serials: 0x4000000D; 
+2023-03-24 19:13:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-24 19:13:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '100'
+2023-03-24 20:08:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-24 20:09:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 500'
+2023-03-24 20:09:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '500'
+2023-03-24 20:09:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ironingot 1000'
+2023-03-24 20:09:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 103, 0) in Felucca: "ironingot" "1000"
+2023-03-24 20:09:24: 127.0.0.1: Serials: 0x40000024; 
+2023-03-24 20:09:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-24 20:09:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000025 (IronIngot)
+2023-03-24 20:09:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-24 20:09:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x4000000B (AncienLeather)
+2023-03-24 20:09:54: 127.0.0.1: Crafting 0x40000026 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:10:01: 127.0.0.1: Crafting 0x40000027 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:10:15: 127.0.0.1: Crafting 0x40000028 (PlateChest) with craft system DefBlacksmithy
+##############################
+Log started on 2023-03-24 20:10:25
+
+2023-03-24 20:10:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add ironingot 2000'
+2023-03-24 20:10:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 115, 0) in Felucca: "ironingot" "2000"
+2023-03-24 20:10:38: 127.0.0.1: Serials: 0x40000008; 
+2023-03-24 20:10:57: 127.0.0.1: Crafting 0x40000010 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:01: 127.0.0.1: Crafting 0x4000001F (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:03: 127.0.0.1: Crafting 0x40000020 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:05: 127.0.0.1: Crafting 0x40000021 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:08: 127.0.0.1: Crafting 0x40000022 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:10: 127.0.0.1: Crafting 0x40000023 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:12: 127.0.0.1: Crafting 0x40000024 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:14: 127.0.0.1: Crafting 0x40000025 (PlateChest) with craft system DefBlacksmithy
+2023-03-24 20:11:32: 127.0.0.1: Crafting 0x40000028 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:35: 127.0.0.1: Crafting 0x40000029 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:37: 127.0.0.1: Crafting 0x4000002A (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:39: 127.0.0.1: Crafting 0x4000002B (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:41: 127.0.0.1: Crafting 0x4000002C (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:43: 127.0.0.1: Crafting 0x4000002D (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:44: 127.0.0.1: Crafting 0x4000002E (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:46: 127.0.0.1: Crafting 0x4000002F (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:48: 127.0.0.1: Crafting 0x40000030 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:11:50: 127.0.0.1: Crafting 0x40000031 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:12: 127.0.0.1: Crafting 0x40000032 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:15: 127.0.0.1: Crafting 0x40000033 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:16: 127.0.0.1: Crafting 0x40000034 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:18: 127.0.0.1: Crafting 0x40000035 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:20: 127.0.0.1: Crafting 0x40000036 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:23: 127.0.0.1: Crafting 0x40000037 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:34: 127.0.0.1: Crafting 0x40000038 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:36: 127.0.0.1: Crafting 0x40000091 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:38: 127.0.0.1: Crafting 0x40000093 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:40: 127.0.0.1: Crafting 0x40000095 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:42: 127.0.0.1: Crafting 0x40000096 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:43: 127.0.0.1: Crafting 0x40000097 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:47: 127.0.0.1: Crafting 0x40000098 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:49: 127.0.0.1: Crafting 0x4000009A (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:50: 127.0.0.1: Crafting 0x4000009B (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:52: 127.0.0.1: Crafting 0x4000009C (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:54: 127.0.0.1: Crafting 0x4000009D (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:56: 127.0.0.1: Crafting 0x4000009E (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:12:58: 127.0.0.1: Crafting 0x4000009F (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:00: 127.0.0.1: Crafting 0x400000A1 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:02: 127.0.0.1: Crafting 0x400000A2 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:04: 127.0.0.1: Crafting 0x400000A3 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:05: 127.0.0.1: Crafting 0x400000A4 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:07: 127.0.0.1: Crafting 0x400000B9 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:09: 127.0.0.1: Crafting 0x400000D8 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:11: 127.0.0.1: Crafting 0x400000F8 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:12: 127.0.0.1: Crafting 0x400000F9 (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:15: 127.0.0.1: Crafting 0x400000FA (Dagger) with craft system DefBlacksmithy
+2023-03-24 20:13:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-24 20:14:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'Quality' of 0x4000002D (Dagger) to 'Legendary'
+2023-03-24 20:15:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-03-24 20:15:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'Quality' of 0x40000097 (Dagger) to 'Legendary'
+2023-03-24 20:18:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'journal '
+2023-03-24 21:50:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bedrolltent'
+2023-03-24 21:50:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 116, 0) in Felucca: "bedrolltent"
+2023-03-24 21:50:55: 127.0.0.1: Serials: 0x40000132; 
+2023-03-24 21:51:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-03-24 21:51:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2304, 114, 20) to (2306, 118, 21) in Felucca (Items, Mobiles)
+2023-03-24 21:51:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'get hue'
+2023-03-24 21:51:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2656'
+2023-03-24 21:51:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000014 (LeatherChest) to '2656'
+2023-03-24 21:51:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2656'
+2023-03-24 21:51:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000018 (LeatherLegs) to '2656'
+2023-03-24 21:51:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2656'
+2023-03-24 21:51:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000013 (LeatherArms) to '2656'
+2023-03-24 21:51:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2656'
+2023-03-24 21:51:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x4000001A (LeatherGloves) to '2656'
+2023-03-24 21:51:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2656'
+2023-03-24 21:51:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x4000001E (LeatherGorget) to '2656'
+2023-03-24 21:51:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 2656'
+2023-03-24 21:51:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x4000001D (LeatherCap) to '2656'
+2023-03-24 21:51:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 0'
+2023-03-24 21:51:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x1 "Nucca" ('admin') to '0'
+2023-03-24 21:55:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 1109'
+2023-03-24 21:55:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000132 (BedrollTent) to '1109'
+2023-03-24 21:55:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-24 21:55:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-03-24 22:08:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set hue 0'
+2023-03-24 22:08:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'hue' of 0x40000132 (BedrollTent) to '0'

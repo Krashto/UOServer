@@ -1,0 +1,324 @@
+##############################
+Log started on 2023-03-18 03:14:36
+
+2023-03-18 03:14:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ingot'
+2023-03-18 03:15:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1100, 930, 1) in Felucca: "PileofInspectedDullCopperIngots"
+2023-03-18 03:15:10: 127.0.0.1: Serials: 0x40000005; 
+2023-03-18 03:15:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-18 03:15:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000005 (PileofInspectedDullCopperIngots)
+2023-03-18 03:15:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ore'
+2023-03-18 03:15:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add minerais'
+2023-03-18 03:15:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+##############################
+Log started on 2023-03-18 03:29:45
+
+2023-03-18 03:30:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ingot'
+2023-03-18 03:30:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-18 03:30:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 0'
+2023-03-18 03:30:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x3 "Nucca" ('admin') to '0'
+##############################
+Log started on 2023-03-18 03:30:40
+
+2023-03-18 03:30:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+##############################
+Log started on 2023-03-18 03:31:07
+
+2023-03-18 03:31:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-18 03:32:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+##############################
+Log started on 2023-03-18 03:32:13
+
+##############################
+Log started on 2023-03-18 03:33:14
+
+##############################
+Log started on 2023-03-18 03:34:40
+
+##############################
+Log started on 2023-03-18 03:34:50
+
+2023-03-18 03:35:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-18 03:35:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add smithhammer'
+2023-03-18 03:35:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2274, 114, 0) in Felucca: "smithhammer"
+2023-03-18 03:35:12: 127.0.0.1: Serials: 0x40000005; 
+2023-03-18 03:35:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ingot'
+2023-03-18 03:35:37: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'go felucca'
+2023-03-18 03:35:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ore'
+2023-03-18 03:35:50: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'go 1000 1000'
+2023-03-18 03:35:56: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'qui '
+2023-03-18 03:35:58: 70.55.171.10: Owner 0x6 "Migg" ('Mig') se dirige sur 0x3 "Nucca" ('admin'), Localisation (2275, 113, 0), Map Felucca
+2023-03-18 03:36:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-18 03:36:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x6 "Migg" ('Mig'), Localisation (2275, 113, 0), Map Felucca
+2023-03-18 03:36:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set bodyvalue 400'
+2023-03-18 03:36:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'bodyvalue' of 0x6 "Migg" ('Mig') to '400'
+2023-03-18 03:36:12: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'props '
+2023-03-18 03:36:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm remove'
+2023-03-18 03:36:20: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'props '
+2023-03-18 03:36:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C7 (PlateLegs)
+2023-03-18 03:36:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C4 (PlateChest)
+2023-03-18 03:36:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C8 (SmithHammer)
+2023-03-18 03:36:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C3 (PlateHelm)
+2023-03-18 03:36:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C2 (PlateArms)
+2023-03-18 03:36:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C5 (PlateGloves)
+2023-03-18 03:36:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003C6 (PlateGloves)
+2023-03-18 03:36:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x400003D0 (Runire)
+2023-03-18 03:36:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000908 (SewingKit)
+2023-03-18 03:36:34: 70.55.171.10: Owner 0x6 "Migg" ('Mig') set property 'BaseRace' of 0x6 "Migg" ('Mig') to 'Karge'
+2023-03-18 03:36:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add leather'
+2023-03-18 03:36:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add leathe'
+2023-03-18 03:36:56: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'add smith'
+2023-03-18 03:36:58: 70.55.171.10: Owner 0x6 "Migg" ('Mig') building at (2277, 112, 0) in Felucca: "SmithHammer"
+2023-03-18 03:36:58: 70.55.171.10: Serials: 0x4000002B; 
+2023-03-18 03:37:01: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'tele '
+2023-03-18 03:37:14: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'add sewing'
+2023-03-18 03:37:15: 70.55.171.10: Owner 0x6 "Migg" ('Mig') building at (2276, 112, 0) in Felucca: "SewingKit"
+2023-03-18 03:37:15: 70.55.171.10: Serials: 0x40000031; 
+2023-03-18 03:37:19: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'tele '
+2023-03-18 03:37:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add leather'
+2023-03-18 03:37:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add leathersew'
+2023-03-18 03:37:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add sewin'
+2023-03-18 03:37:33: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'add news'
+2023-03-18 03:37:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2272, 113, 0) in Felucca: "SewingKit"
+2023-03-18 03:37:35: 127.0.0.1: Serials: 0x40000032; 
+2023-03-18 03:37:35: 70.55.171.10: Owner 0x6 "Migg" ('Mig') building at (2276, 113, 0) in Felucca: "NewSpellbook"
+2023-03-18 03:37:35: 70.55.171.10: Serials: 0x40000033; 
+2023-03-18 03:37:38: 70.55.171.10: Owner 0x6 "Migg" ('Mig') used command 'allspells '
+##############################
+Log started on 2023-03-18 03:37:44
+
+2023-03-18 03:38:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-18 03:38:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-18 03:38:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000765 (Backpack)
+2023-03-18 03:38:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add backpack'
+2023-03-18 03:38:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2274, 113, 0) in Felucca: "backpack"
+2023-03-18 03:38:16: 127.0.0.1: Serials: 0x40000005; 
+2023-03-18 03:38:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add newspellbook'
+2023-03-18 03:38:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2273, 114, 0) in Felucca: "newspellbook"
+2023-03-18 03:38:23: 127.0.0.1: Serials: 0x40000006; 
+2023-03-18 03:38:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'allspells '
+##############################
+Log started on 2023-03-18 03:38:45
+
+##############################
+Log started on 2023-03-18 17:18:12
+
+2023-03-18 17:18:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add newspellbook'
+2023-03-18 17:18:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1104, 933, 0) in Felucca: "newspellbook"
+2023-03-18 17:18:57: 127.0.0.1: Serials: 0x40000005; 
+2023-03-18 17:19:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'allspells '
+2023-03-18 17:19:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add scribepen'
+2023-03-18 17:19:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1105, 932, -1) in Felucca: "ScribesPen"
+2023-03-18 17:19:17: 127.0.0.1: Serials: 0x40000006; 
+2023-03-18 17:19:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ore'
+2023-03-18 17:33:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-18 17:33:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add smithhammer'
+2023-03-18 17:33:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1105, 930, 0) in Felucca: "smithhammer"
+2023-03-18 17:33:46: 127.0.0.1: Serials: 0x40000029; 
+2023-03-18 17:34:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-18 17:34:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'titre '
+2023-03-18 17:34:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-18 17:35:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-18 17:35:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm trele'
+2023-03-18 17:35:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:43:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-18 21:44:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'adddoor '
+2023-03-18 21:44:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor NorthCCW'
+2023-03-18 21:44:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1056, 1419, 7) in Felucca: "StrongWoodDoor" "NorthCCW"
+2023-03-18 21:44:06: 127.0.0.1: Serials: 0x40000057; 
+2023-03-18 21:44:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:44:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:44:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1013, 1390, 45) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:44:22: 127.0.0.1: Serials: 0x40000058; 
+2023-03-18 21:44:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:44:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1013, 1395, 45) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:44:26: 127.0.0.1: Serials: 0x40000059; 
+2023-03-18 21:44:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:44:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1014, 1399, 25) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:44:34: 127.0.0.1: Serials: 0x4000005A; 
+2023-03-18 21:44:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:44:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1032, 1417, 7) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:44:48: 127.0.0.1: Serials: 0x4000005B; 
+2023-03-18 21:44:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:44:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1043, 1424, 7) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:44:54: 127.0.0.1: Serials: 0x4000005C; 
+2023-03-18 21:44:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'inc z -1'
+2023-03-18 21:45:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:45:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:45:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1023, 1423, 9) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:45:08: 127.0.0.1: Serials: 0x4000005D; 
+2023-03-18 21:45:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:45:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:45:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1044, 1405, 7) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:45:20: 127.0.0.1: Serials: 0x4000005E; 
+2023-03-18 21:45:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:45:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1030, 1394, 7) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:45:29: 127.0.0.1: Serials: 0x4000005F; 
+2023-03-18 21:45:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:45:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1035, 1394, 7) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:45:32: 127.0.0.1: Serials: 0x40000060; 
+2023-03-18 21:45:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:45:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor NorthCCW'
+2023-03-18 21:45:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1036, 1392, 25) in Felucca: "StrongWoodDoor" "NorthCCW"
+2023-03-18 21:45:44: 127.0.0.1: Serials: 0x40000061; 
+2023-03-18 21:45:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:45:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:45:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1040, 1386, 9) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:45:48: 127.0.0.1: Serials: 0x40000062; 
+2023-03-18 21:45:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodGate WestCW'
+2023-03-18 21:46:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1047, 1393, 0) in Felucca: "DarkWoodGate" "WestCW"
+2023-03-18 21:46:00: 127.0.0.1: Serials: 0x40000063; 
+2023-03-18 21:46:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:46:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1051, 1394, 5) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:46:12: 127.0.0.1: Serials: 0x40000064; 
+2023-03-18 21:46:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor EastCCW'
+2023-03-18 21:46:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor WestCW'
+2023-03-18 21:46:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1052, 1387, 5) in Felucca: "DarkWoodDoor" "WestCW"
+2023-03-18 21:46:19: 127.0.0.1: Serials: 0x40000065; 
+2023-03-18 21:46:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor NorthCCW'
+2023-03-18 21:46:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1054, 1387, 25) in Felucca: "DarkWoodDoor" "NorthCCW"
+2023-03-18 21:46:27: 127.0.0.1: Serials: 0x40000066; 
+2023-03-18 21:46:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor NorthCCW'
+2023-03-18 21:46:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1054, 1390, 25) in Felucca: "DarkWoodDoor" "NorthCCW"
+2023-03-18 21:46:31: 127.0.0.1: Serials: 0x40000067; 
+2023-03-18 21:46:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor NorthCCW'
+2023-03-18 21:46:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1054, 1393, 25) in Felucca: "DarkWoodDoor" "NorthCCW"
+2023-03-18 21:46:35: 127.0.0.1: Serials: 0x40000068; 
+2023-03-18 21:46:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:46:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1057, 1407, 6) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:46:45: 127.0.0.1: Serials: 0x40000069; 
+2023-03-18 21:46:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add MetalDoor EastCCW'
+2023-03-18 21:46:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1070, 1402, 14) in Felucca: "MetalDoor" "EastCCW"
+2023-03-18 21:46:51: 127.0.0.1: Serials: 0x4000006A; 
+2023-03-18 21:46:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add MetalDoor WestCW'
+2023-03-18 21:46:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1069, 1402, 14) in Felucca: "MetalDoor" "WestCW"
+2023-03-18 21:46:53: 127.0.0.1: Serials: 0x4000006B; 
+2023-03-18 21:46:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'link '
+2023-03-18 21:47:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor SouthCW'
+2023-03-18 21:47:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1074, 1399, 14) in Felucca: "DarkWoodDoor" "SouthCW"
+2023-03-18 21:47:08: 127.0.0.1: Serials: 0x4000006C; 
+2023-03-18 21:47:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add IronGate NorthCCW'
+2023-03-18 21:47:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1074, 1396, 14) in Felucca: "IronGate" "NorthCCW"
+2023-03-18 21:47:21: 127.0.0.1: Serials: 0x4000006D; 
+2023-03-18 21:47:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:47:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:47:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:47:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1067, 1423, 5) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:47:38: 127.0.0.1: Serials: 0x4000006E; 
+2023-03-18 21:47:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:47:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1080, 1419, 5) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:47:47: 127.0.0.1: Serials: 0x4000006F; 
+2023-03-18 21:47:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor NorthCCW'
+2023-03-18 21:47:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1076, 1418, 5) in Felucca: "DarkWoodDoor" "NorthCCW"
+2023-03-18 21:47:57: 127.0.0.1: Serials: 0x40000070; 
+2023-03-18 21:48:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:48:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1092, 1395, 7) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:48:08: 127.0.0.1: Serials: 0x40000071; 
+2023-03-18 21:48:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:48:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1095, 1386, 5) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:48:12: 127.0.0.1: Serials: 0x40000072; 
+2023-03-18 21:48:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:48:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1102, 1384, 4) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:48:17: 127.0.0.1: Serials: 0x40000073; 
+2023-03-18 21:48:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor SouthCW'
+2023-03-18 21:48:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1101, 1403, 7) in Felucca: "StrongWoodDoor" "SouthCW"
+2023-03-18 21:48:24: 127.0.0.1: Serials: 0x40000074; 
+2023-03-18 21:48:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor NorthCCW'
+2023-03-18 21:48:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1105, 1382, 4) in Felucca: "DarkWoodDoor" "NorthCCW"
+2023-03-18 21:48:37: 127.0.0.1: Serials: 0x40000075; 
+2023-03-18 21:48:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor NorthCCW'
+2023-03-18 21:48:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:48:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:48:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1092, 1372, 9) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:48:53: 127.0.0.1: Serials: 0x40000076; 
+2023-03-18 21:48:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:48:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1086, 1378, 8) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:48:56: 127.0.0.1: Serials: 0x40000077; 
+2023-03-18 21:49:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:49:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:49:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1079, 1379, 5) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:49:04: 127.0.0.1: Serials: 0x40000078; 
+2023-03-18 21:49:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor SouthCW'
+2023-03-18 21:49:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1076, 1376, 5) in Felucca: "DarkWoodDoor" "SouthCW"
+2023-03-18 21:49:15: 127.0.0.1: Serials: 0x40000079; 
+2023-03-18 21:49:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:49:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1067, 1369, 9) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:49:27: 127.0.0.1: Serials: 0x4000007A; 
+2023-03-18 21:49:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:49:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:49:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1065, 1375, 5) in Felucca: "StrongWoodDoor" "WestCW"
+2023-03-18 21:49:33: 127.0.0.1: Serials: 0x4000007B; 
+2023-03-18 21:49:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor NorthCCW'
+2023-03-18 21:49:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor NorthCCW'
+2023-03-18 21:49:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1058, 1370, 9) in Felucca: "StrongWoodDoor" "NorthCCW"
+2023-03-18 21:49:36: 127.0.0.1: Serials: 0x4000007C; 
+2023-03-18 21:49:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:49:58: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor WestCW'
+2023-03-18 21:49:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add StrongWoodDoor EastCCW'
+2023-03-18 21:50:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1115, 1401, 9) in Felucca: "StrongWoodDoor" "EastCCW"
+2023-03-18 21:50:01: 127.0.0.1: Serials: 0x4000007D; 
+2023-03-18 21:50:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner carpenter'
+2023-03-18 21:50:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1103, 1403, 7) in Felucca: "xmlspawner" "carpenter"
+2023-03-18 21:50:11: 127.0.0.1: Serials: 0x4000007F; 
+2023-03-18 21:50:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner banker'
+2023-03-18 21:50:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1071, 1396, 14) in Felucca: "xmlspawner" "banker"
+2023-03-18 21:50:56: 127.0.0.1: Serials: 0x400000A7; 
+2023-03-18 21:51:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:51:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0x7 "Tryon" (no account) to (1071, 1396, 14)
+2023-03-18 21:51:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set locked true'
+2023-03-18 21:51:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'locked' of 0x4000006D (IronGate) to 'True'
+2023-03-18 21:51:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner butcher'
+2023-03-18 21:51:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1053, 1418, 7) in Felucca: "xmlspawner" "butcher"
+2023-03-18 21:51:34: 127.0.0.1: Serials: 0x400000B3; 
+2023-03-18 21:51:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'adddoor '
+2023-03-18 21:51:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'Add DarkWoodDoor EastCCW'
+2023-03-18 21:51:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1055, 1416, 7) in Felucca: "DarkWoodDoor" "EastCCW"
+2023-03-18 21:51:52: 127.0.0.1: Serials: 0x400000C7; 
+2023-03-18 21:52:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner cook'
+2023-03-18 21:52:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-18 21:52:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner blacksmith'
+2023-03-18 21:52:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1025, 1403, 6) in Felucca: "xmlspawner" "blacksmith"
+2023-03-18 21:52:34: 127.0.0.1: Serials: 0x400000C8; 
+2023-03-18 21:52:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:52:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0x9 "Safiya" (no account) to (1019, 1400, 23)
+2023-03-18 21:52:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:52:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0x9 "Safiya" (no account) to (1024, 1403, 6)
+2023-03-18 21:53:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner bowyer'
+2023-03-18 21:53:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1034, 1393, 25) in Felucca: "xmlspawner" "bowyer"
+2023-03-18 21:53:22: 127.0.0.1: Serials: 0x40000121; 
+2023-03-18 21:53:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:53:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0xA "Mika" (no account) to (1035, 1391, 25)
+2023-03-18 21:54:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner stabler'
+2023-03-18 21:54:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1045, 1390, 0) in Felucca: "xmlspawner" "stabler"
+2023-03-18 21:54:09: 127.0.0.1: Serials: 0x40000135; 
+2023-03-18 21:54:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') changed XmlSpawner 0x40000135 'Spawner' [1045, 1390] (Felucca) : stabler to petkeeper
+2023-03-18 21:54:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add stab'
+2023-03-18 21:54:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add pet'
+2023-03-18 21:54:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1044, 1391, 0) in Felucca: "PetParrot"
+2023-03-18 21:54:53: 127.0.0.1: Serials: 0xB; 
+2023-03-18 21:55:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-18 21:55:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xB "a pet parrot" (no account)
+2023-03-18 21:55:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') changed XmlSpawner 0x40000135 'Spawner' [1045, 1390] (Felucca) : petkeeper to animaltrainer
+2023-03-18 21:55:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') added to XmlSpawner 0x40000135 'Spawner' [1045, 1390] (Felucca) : veterinarian
+2023-03-18 21:55:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:55:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0xE "Helaku" (no account) to (1047, 1387, -1)
+2023-03-18 21:55:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:55:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0xD "Season" (no account) to (1045, 1390, 0)
+2023-03-18 21:55:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:55:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0xE "Helaku" (no account) to (1047, 1388, -1)
+2023-03-18 21:56:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner barkeeper'
+2023-03-18 21:56:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1052, 1389, 5) in Felucca: "xmlspawner" "barkeeper"
+2023-03-18 21:56:12: 127.0.0.1: Serials: 0x40000155; 
+2023-03-18 21:56:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:56:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0x1A "Ridgley" (no account) to (1052, 1389, 5)
+2023-03-18 21:56:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add xmlspawner cook'
+2023-03-18 21:56:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1052, 1385, 5) in Felucca: "xmlspawner" "cook"
+2023-03-18 21:56:28: 127.0.0.1: Serials: 0x4000015E; 
+2023-03-18 21:56:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-18 21:56:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0x1B "Bruno" (no account) to (1052, 1385, 5)
+2023-03-18 21:56:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'save '

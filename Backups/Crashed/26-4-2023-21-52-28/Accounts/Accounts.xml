@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="9">
+	<account>
+		<username>Nucca</username>
+		<newCryptPassword>D1-4C-CD-59-9F-A4-CD-59-D3-35-80-AE-78-49-11-EA-04-2B-AC-B9</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T20:48:56.5744585Z</created>
+		<lastLogin>2023-04-26T21:34:19.756722Z</lastLogin>
+		<totalGameTime>PT36M12.95314S</totalGameTime>
+		<chars>
+			<char index="0">63</char>
+		</chars>
+		<addressList count="2">
+			<ip>192.168.2.1</ip>
+			<ip>192.168.2.17</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Artist</username>
+		<newCryptPassword>03-04-04-BA-E2-F0-29-DB-EE-34-65-C4-8C-C1-CB-B0-E5-28-C8-3C</newCryptPassword>
+		<created>2023-04-26T20:48:57.9843447Z</created>
+		<lastLogin>2023-04-26T20:48:57.9843447Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>74.59.151.130</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>vive2</username>
+		<newCryptPassword>47-BF-40-BA-4D-64-FF-34-01-3E-9F-D3-2D-AA-46-05-8F-BA-28-52</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-04-26T20:48:58.2542819Z</created>
+		<lastLogin>2023-04-26T21:09:43.651408Z</lastLogin>
+		<totalGameTime>PT1H2M25.1306913S</totalGameTime>
+		<chars>
+			<char index="0">33</char>
+		</chars>
+		<addressList count="1">
+			<ip>184.160.109.184</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>allo123</username>
+		<newCryptPassword>CD-7F-54-75-A7-EA-A4-63-3D-7E-D2-CD-EC-A2-6B-94-59-59-79-7B</newCryptPassword>
+		<created>2023-04-26T20:49:41.6908048Z</created>
+		<lastLogin>2023-04-26T20:49:51.5097238Z</lastLogin>
+		<totalGameTime>PT1H1M50.7676401S</totalGameTime>
+		<chars>
+			<char index="0">72</char>
+		</chars>
+		<addressList count="1">
+			<ip>104.163.181.236</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>aemulos</username>
+		<newCryptPassword>50-C3-A9-51-41-C4-EC-4D-09-9C-71-3F-8C-E7-D3-B4-F1-8F-EC-63</newCryptPassword>
+		<created>2023-04-26T20:55:04.2579657Z</created>
+		<lastLogin>2023-04-26T20:55:52.4534466Z</lastLogin>
+		<totalGameTime>PT25M9.8914516S</totalGameTime>
+		<chars>
+			<char index="0">83</char>
+		</chars>
+		<addressList count="1">
+			<ip>174.164.192.197</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Crayo</username>
+		<newCryptPassword>5D-15-58-83-AA-82-E2-64-79-8C-F1-04-E4-6E-D7-16-02-06-6E-40</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T21:17:27.8863394Z</created>
+		<lastLogin>2023-04-26T21:32:59.2997303Z</lastLogin>
+		<totalGameTime>PT23M49.9778702S</totalGameTime>
+		<chars>
+			<char index="0">110</char>
+		</chars>
+		<addressList count="1">
+			<ip>144.172.181.188</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Chatchat</username>
+		<newCryptPassword>63-C6-9E-3B-91-29-72-B2-18-C1-D6-E1-3F-12-9A-F1-A8-BE-5D-08</newCryptPassword>
+		<created>2023-04-26T21:19:04.6565614Z</created>
+		<lastLogin>2023-04-26T21:25:12.1171258Z</lastLogin>
+		<totalGameTime>PT30M42.8094485S</totalGameTime>
+		<chars>
+			<char index="0">119</char>
+		</chars>
+		<addressList count="1">
+			<ip>24.202.187.234</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Mig</username>
+		<newCryptPassword>63-DD-19-2C-74-57-6E-00-85-26-E4-0D-6A-12-7A-F5-C7-74-98-F5</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T21:26:15.8148547Z</created>
+		<lastLogin>2023-04-26T21:26:22.0908416Z</lastLogin>
+		<totalGameTime>PT25M20.1855106S</totalGameTime>
+		<chars>
+			<char index="0">5022</char>
+		</chars>
+		<addressList count="1">
+			<ip>70.55.144.167</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>GHelmet</username>
+		<newCryptPassword>60-3D-7D-F5-13-8A-94-7A-8A-54-EE-4A-E8-68-60-F7-11-C2-7B-0A</newCryptPassword>
+		<created>2023-04-26T21:33:04.9496064Z</created>
+		<lastLogin>2023-04-26T21:33:30.5457374Z</lastLogin>
+		<totalGameTime>PT18M11.7306148S</totalGameTime>
+		<chars>
+			<char index="0">5024</char>
+		</chars>
+		<addressList count="1">
+			<ip>70.54.163.132</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+</accounts>

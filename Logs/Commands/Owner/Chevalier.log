@@ -1,0 +1,19 @@
+2023-07-14 03:36:49: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'move '
+2023-07-14 03:36:51: 74.15.141.240: Owner 0x94B "Chevalier" (no account) moving 0xF25 "Appoline du Lys" ('Jonimue') to (2275, 83, 0)
+2023-07-14 03:37:15: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'delete '
+2023-07-14 03:37:16: 74.15.141.240: Owner 0x94B "Chevalier" (no account) deleting 0x4000DB1A (Shirt)
+2023-07-14 03:37:17: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'delete '
+2023-07-14 03:37:18: 74.15.141.240: Owner 0x94B "Chevalier" (no account) deleting 0x4000DB1D (LongPants)
+2023-07-14 03:37:19: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'delete '
+2023-07-14 03:37:20: 74.15.141.240: Owner 0x94B "Chevalier" (no account) deleting 0x4000DB1B (Shoes)
+2023-07-14 03:37:22: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'delete '
+2023-07-14 03:37:30: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'bank '
+2023-07-14 03:37:31: 74.15.141.240: Owner 0x94B "Chevalier" (no account) opening bank box of 0x94B "Chevalier" (no account)
+2023-07-14 03:38:24: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'add '
+2023-07-14 03:38:33: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'add barberscissors'
+2023-07-14 03:38:34: 74.15.141.240: Owner 0x94B "Chevalier" (no account) building at (2275, 89, 0) in Felucca: "barberscissors"
+2023-07-14 03:38:34: 74.15.141.240: Serials: 0x4000DB4D; 
+2023-07-14 03:39:00: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'setallskills 100'
+2023-07-14 03:39:01: 74.15.141.240: Owner 0x94B "Chevalier" (no account) set property 'EverySkill.Base' of 0x94B "Chevalier" (no account) to '100'
+2023-07-14 03:39:07: 74.15.141.240: Owner 0x94B "Chevalier" (no account) used command 'props '
+2023-07-14 03:39:23: 74.15.141.240: Owner 0x94B "Chevalier" (no account) set property 'RawName' of 0x94B "Chevalier" (no account) to 'Jericho Stout'

@@ -1,0 +1,20 @@
+##############################
+Exception log started on 2023-07-17 23:37:54
+
+Exception Caught: 2023-07-17 23:37:54
+System.Reflection.TargetInvocationException: Une exception a été levée par la cible d'un appel. ---> System.ArgumentOutOfRangeException: L'index était hors limites. Il ne doit pas être négatif et doit être inférieur à la taille de la collection.
+Nom du paramètre : startIndex
+   à System.String.LastIndexOfAny(Char[] anyOf, Int32 startIndex, Int32 count)
+   à Server.Items.BaseBook.BuildBookFromString(String content) dans C:\LeRefuge\LeRefugeServer\Scripts\Items\Books\BaseBook.cs:ligne 201
+   à Server.Items.BaseBook.set_BookString(String value) dans C:\LeRefuge\LeRefugeServer\Scripts\Items\Books\BaseBook.cs:ligne 112
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   à System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   à System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   à System.Reflection.RuntimePropertyInfo.SetValue(Object obj, Object value, Object[] index)
+   à Server.Commands.Dupe.CopyProperties(Object src, Object dest) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Dupe.cs:ligne 350
+
+Exception Caught: 2023-07-18 01:42:54
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+

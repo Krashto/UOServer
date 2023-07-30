@@ -1,0 +1,11 @@
+##############################
+Exception log started on 2023-04-29 13:00:27
+
+Exception Caught: 2023-04-29 13:00:27
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+

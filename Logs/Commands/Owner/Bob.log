@@ -1,0 +1,22 @@
+2023-04-28 15:33:00: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'go '
+2023-04-28 15:33:04: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'qui '
+2023-04-28 15:33:07: 142.169.16.11: Owner 0x40 "Riri" ('Bob') se dirige sur 0x3F "Nucca" ('Nucca'), Localisation (1149, 1371, 0), Map Felucca
+2023-04-28 15:33:35: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'add unicorn'
+2023-04-28 15:33:37: 142.169.16.11: Owner 0x40 "Riri" ('Bob') building at (1144, 1353, 1) in Felucca: "unicorn"
+2023-04-28 15:33:37: 142.169.16.11: Serials: 0x41; 
+2023-04-28 15:33:54: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'gm '
+2023-04-28 15:33:57: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'remove '
+2023-04-28 15:33:58: 142.169.16.11: Owner 0x40 "Riri" ('Bob') deleting 0x41 " Licorne" (no account)
+2023-04-28 15:34:06: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'add gmrobe'
+2023-04-28 15:34:07: 142.169.16.11: Owner 0x40 "Riri" ('Bob') building at (1143, 1356, 1) in Felucca: "gmrobe"
+2023-04-28 15:34:07: 142.169.16.11: Serials: 0x40001686; 
+2023-04-28 15:34:32: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'add horse'
+2023-04-28 15:34:32: 142.169.16.11: Owner 0x40 "Riri" ('Bob') building at (1145, 1355, -1) in Felucca: "horse"
+2023-04-28 15:34:32: 142.169.16.11: Serials: 0x42; 
+2023-04-28 15:35:23: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'viewhue '
+2023-04-28 15:35:31: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'Set Hue 2889'
+2023-04-28 15:35:32: 142.169.16.11: Owner 0x40 "Riri" ('Bob') set property 'Hue' of 0x40001686 (GMRobe) to '2889'
+2023-04-28 15:36:46: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'gm '
+2023-04-28 15:36:59: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'admin '
+2023-04-28 15:37:50: 142.169.16.11: Owner 0x40 "Riri" ('Bob') changing access level of account Bob to GameMaster
+2023-04-28 15:37:57: 142.169.16.11: Owner 0x40 "Riri" ('Bob') used command 'admin '

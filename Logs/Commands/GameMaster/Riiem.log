@@ -1,0 +1,282 @@
+2023-04-26 15:21:39: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'gm '
+2023-04-26 15:22:06: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'add backpack'
+2023-04-26 15:22:08: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') building at (1066, 1410, -1) in Felucca: "backpack"
+2023-04-26 15:22:08: 142.169.16.168: Serials: 0x40005A91; 
+2023-04-26 15:22:53: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'decoration '
+2023-04-26 15:23:25: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'kill '
+2023-04-26 15:23:26: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') killing 0x96A "Jondick" ('allo123')
+2023-04-26 15:23:49: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'add gmrobe'
+2023-04-26 15:23:50: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') building at (1065, 1411, -1) in Felucca: "gmrobe"
+2023-04-26 15:23:50: 142.169.16.168: Serials: 0x40005A94; 
+2023-04-26 15:24:03: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'viewhue '
+2023-04-26 15:24:19: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'Set Hue 2889'
+2023-04-26 15:24:20: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') set property 'Hue' of 0x40005A94 (GMRobe) to '2889'
+2023-04-26 15:24:24: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'Set Hue 2889'
+2023-04-26 15:24:25: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') set property 'Hue' of 0x40005A91 (Backpack) to '2889'
+2023-04-26 15:25:22: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'm tele'
+2023-04-26 15:28:43: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'who '
+2023-04-26 15:28:47: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') se dirige sur 0x73E "Mig" ('Mig'), Localisation (1054, 1387, 25), Map Felucca
+2023-04-26 15:28:59: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'tele '
+2023-04-26 15:33:32: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'gm '
+2023-04-26 15:33:37: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'invul '
+2023-04-26 15:33:39: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') set property 'blessed' of 0xA43 "Riiem" ('Riiem') to 'True'
+2023-04-26 15:34:53: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'gm '
+2023-04-26 15:35:43: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'gm '
+2023-04-26 15:35:54: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') used command 'remove '
+2023-04-26 15:35:55: 142.169.16.168: GameMaster 0xA43 "Riiem" ('Riiem') deleting 0x4000316A (ToqueBouffon)
+2023-04-28 15:14:52: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-04-28 15:15:02: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'invul '
+2023-04-28 15:15:04: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') set property 'blessed' of 0xC9 "Riri" ('Riiem') to 'True'
+2023-04-28 15:15:37: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'qui '
+2023-04-28 15:17:22: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'help '
+2023-04-28 15:17:39: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'm tele'
+2023-04-28 15:21:11: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'add gmrobe'
+2023-04-28 15:21:13: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') building at (1139, 1383, 8) in Felucca: "gmrobe"
+2023-04-28 15:21:14: 142.169.16.11: Serials: 0x40001096; 
+2023-04-28 15:21:41: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'add gmrobe'
+2023-04-28 15:21:43: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') building at (1140, 1383, 15) in Felucca: "gmrobe"
+2023-04-28 15:21:43: 142.169.16.11: Serials: 0x400010A8; 
+2023-04-28 15:22:17: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'tele '
+2023-04-28 15:22:36: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'add gmrobe'
+2023-04-28 15:22:38: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') building at (1149, 1385, 0) in Felucca: "gmrobe"
+2023-04-28 15:22:38: 142.169.16.11: Serials: 0x400010C0; 
+2023-04-28 15:22:43: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'add gmrobe'
+2023-04-28 15:22:45: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') building at (1151, 1384, 2) in Felucca: "gmrobe"
+2023-04-28 15:22:45: 142.169.16.11: Serials: 0x400010C7; 
+2023-04-28 15:22:50: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'add '
+2023-04-28 15:23:11: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'Add DeathRobe'
+2023-04-28 15:23:13: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') building at (1151, 1384, 2) in Felucca: "DeathRobe"
+2023-04-28 15:23:13: 142.169.16.11: Serials: 0x400010DB; 
+2023-04-28 15:25:57: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-04-28 15:26:11: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'tele '
+2023-04-28 15:26:25: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'tele '
+2023-04-28 15:26:34: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-04-28 15:27:37: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-04-28 15:27:56: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-04-28 15:28:24: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'add unicorn'
+2023-04-28 15:28:25: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') building at (1150, 1383, 2) in Felucca: "unicorn"
+2023-04-28 15:28:25: 142.169.16.11: Serials: 0x3D; 
+2023-04-28 15:29:12: 142.169.16.11: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-04-28 15:46:37: 142.169.16.21: GameMaster 0xC9 "Riri" ('Riiem') used command 'gm '
+2023-05-08 15:29:47: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-08 15:29:51: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add gmrobe'
+2023-05-08 15:29:53: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') building at (949, 1331, 1) in Felucca: "gmrobe"
+2023-05-08 15:29:53: 142.169.16.37: Serials: 0x40003E85; 
+2023-05-08 15:30:07: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set hue 8908'
+2023-05-08 15:30:09: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'hue' of 0x40003E85 (GMRobe) to '8908'
+2023-05-08 15:30:17: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'viewhue '
+2023-05-08 15:30:56: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'Set Hue 2889'
+2023-05-08 15:30:57: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'Hue' of 0x40003E85 (GMRobe) to '2889'
+2023-05-08 15:31:06: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 15:32:16: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-08 15:33:23: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'flip '
+2023-05-08 15:33:29: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'props '
+2023-05-08 15:33:52: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'CustomDirection' of 0xC8A "Kern" (no account) to 'South'
+2023-05-08 15:35:22: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'Direction' of 0xC8A "Kern" (no account) to 'South'
+2023-05-08 15:35:31: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction south'
+2023-05-08 15:35:32: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xC8B "Pembroke" (no account) to 'South'
+2023-05-08 15:35:46: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 15:36:59: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction south'
+2023-05-08 15:37:01: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xC8C "Phillippe" (no account) to 'South'
+2023-05-08 15:37:02: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction south'
+2023-05-08 15:37:03: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xCA6 "Einar" (no account) to 'South'
+2023-05-08 15:37:47: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction east'
+2023-05-08 15:37:48: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xC61 "Osmond" (no account) to 'East'
+2023-05-08 15:37:50: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction east'
+2023-05-08 15:37:51: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xC62 "Theron" (no account) to 'East'
+2023-05-08 15:38:05: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction south'
+2023-05-08 15:38:07: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xC81 "Tano" (no account) to 'South'
+2023-05-08 15:38:08: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set direction south'
+2023-05-08 15:38:09: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') set property 'direction' of 0xC80 "Killian" (no account) to 'South'
+2023-05-08 15:39:19: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'anim 21'
+2023-05-08 15:40:33: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 15:40:39: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 15:40:43: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 15:41:01: 142.169.16.37: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 16:20:09: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 16:20:36: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 16:20:42: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 16:20:55: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 16:25:22: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add gold 1000'
+2023-05-08 16:25:24: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (3731, 864, 25) in Felucca: "gold" "1000"
+2023-05-08 16:25:24: 142.169.16.51: Serials: 0x40003E98; 
+2023-05-08 16:26:08: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'm tele'
+2023-05-08 16:38:39: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add spawner'
+2023-05-08 16:38:41: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1824, 1911, 0) in Felucca: "spawner"
+2023-05-08 16:38:41: 142.169.16.51: Serials: 0x40003E9C; 
+2023-05-08 16:38:54: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-08 16:38:56: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') deleting 0x40003E9C (Spawner)
+2023-05-08 16:39:00: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add menu'
+2023-05-08 16:39:12: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1824, 1911, 0) in Felucca: "XmlSpawner"
+2023-05-08 16:39:12: 142.169.16.51: Serials: 0x40003E9D; 
+2023-05-08 16:39:45: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003E9D 'Spawner' [1824, 1911] (Felucca) : brigand
+2023-05-08 16:40:37: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'dupe '
+2023-05-08 16:40:39: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') duping 0x40003E9D (XmlSpawner) (inBag=False; amount=1)
+2023-05-08 16:40:39: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') duped 0x40003E9D (XmlSpawner) creating 0x40003EBA (XmlSpawner)
+2023-05-08 16:41:10: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'move '
+2023-05-08 16:41:13: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') moving 0x40003EBA (XmlSpawner) to (1824, 1882, 1)
+2023-05-08 16:41:41: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xmlspawner'
+2023-05-08 16:41:42: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1799, 1896, 1) in Felucca: "xmlspawner"
+2023-05-08 16:41:42: 142.169.16.51: Serials: 0x40003ED6; 
+2023-05-08 16:41:48: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003ED6 'Spawner' [1799, 1896] (Felucca) : brigand
+2023-05-08 16:42:36: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xmlspawner'
+2023-05-08 16:42:37: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1842, 1876, 1) in Felucca: "xmlspawner"
+2023-05-08 16:42:37: 142.169.16.51: Serials: 0x40003EF2; 
+2023-05-08 16:42:43: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003EF2 'Spawner' [1842, 1876] (Felucca) : brigand
+2023-05-08 16:43:02: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xmlspawner'
+2023-05-08 16:43:03: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1841, 1845, 0) in Felucca: "xmlspawner"
+2023-05-08 16:43:03: 142.169.16.51: Serials: 0x40003F17; 
+2023-05-08 16:43:09: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003F17 'Spawner' [1841, 1845] (Felucca) : Brigand
+2023-05-08 16:43:41: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xmlspawner'
+2023-05-08 16:43:43: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1872, 1837, 5) in Felucca: "xmlspawner"
+2023-05-08 16:43:43: 142.169.16.51: Serials: 0x40003F3C; 
+2023-05-08 16:43:48: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003F3C 'Spawner' [1872, 1837] (Felucca) : brigand
+2023-05-08 16:44:16: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xmlspawner'
+2023-05-08 16:44:17: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1856, 1812, 0) in Felucca: "xmlspawner"
+2023-05-08 16:44:17: 142.169.16.51: Serials: 0x40003F86; 
+2023-05-08 16:44:23: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003F86 'Spawner' [1856, 1812] (Felucca) : brigand
+2023-05-08 16:44:50: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xmlspawner'
+2023-05-08 16:44:51: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1884, 1819, 5) in Felucca: "xmlspawner"
+2023-05-08 16:44:51: 142.169.16.51: Serials: 0x40003FCF; 
+2023-05-08 16:44:58: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x40003FCF 'Spawner' [1884, 1819] (Felucca) : brigand
+2023-05-08 16:46:29: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-08 16:46:38: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'tele '
+2023-05-08 16:46:45: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'invul '
+2023-05-08 16:46:46: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') set property 'blessed' of 0xD25 "Riiem" ('Riiem') to 'True'
+2023-05-08 16:46:54: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'tele '
+2023-05-08 16:48:00: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-08 16:48:04: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-08 16:48:11: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'kill '
+2023-05-08 16:48:24: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-08 16:48:25: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') deleting 0x40003FCF (XmlSpawner)
+2023-05-08 16:48:37: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-08 16:48:54: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add xml spawner'
+2023-05-08 16:48:58: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') building at (1884, 1819, 5) in Felucca: "XmlSpawner"
+2023-05-08 16:48:58: 142.169.16.51: Serials: 0x4000433E; 
+2023-05-08 16:49:17: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-08 16:49:25: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') added to XmlSpawner 0x4000433E 'Spawner' [1884, 1819] (Felucca) : brigand
+2023-05-08 16:49:37: 142.169.16.51: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-09 18:53:42: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add dragonboat'
+2023-05-09 18:53:46: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') building at (1857, 1806, -5) in Felucca: "SmallDragonBoatDeed"
+2023-05-09 18:53:46: 74.14.172.191: Serials: 0x40002342; 
+2023-05-09 18:53:47: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') building at (1858, 1805, -5) in Felucca: "SmallDragonBoatDeed"
+2023-05-09 18:53:47: 74.14.172.191: Serials: 0x40002344; 
+2023-05-09 18:54:05: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'hide '
+2023-05-09 18:54:06: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') hiding 0xD25 "Riiem" ('Riiem')
+2023-05-09 18:54:15: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-09 18:55:17: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-09 18:55:20: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'tele '
+2023-05-09 18:55:31: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-09 18:55:37: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-09 18:55:38: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') deleting 0x40002344 (SmallDragonBoatDeed)
+2023-05-09 18:55:49: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-09 18:55:56: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-09 18:56:11: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'remove '
+2023-05-09 18:57:00: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'qui '
+2023-05-09 18:57:30: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'unhide '
+2023-05-09 18:57:31: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') unhiding 0xD25 "Riiem" ('Riiem')
+2023-05-09 18:58:00: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-09 18:58:10: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'set cooking 100'
+2023-05-09 18:58:28: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'tele '
+2023-05-09 23:00:22: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'add robe'
+2023-05-09 23:00:23: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') building at (1857, 1810, 0) in Felucca: "robe"
+2023-05-09 23:00:23: 74.14.172.191: Serials: 0x40001640; 
+2023-05-09 23:00:35: 74.14.172.191: GameMaster 0xD25 "Riiem" ('Riiem') used command 'gm '
+2023-05-10 12:01:05: 142.169.16.214: GameMaster 0x12F "Riiem" ('Riiem') used command 'go '
+2023-05-10 12:01:17: 142.169.16.214: GameMaster 0x12F "Riiem" ('Riiem') used command 'add robe'
+2023-05-10 12:01:17: 142.169.16.214: GameMaster 0x12F "Riiem" ('Riiem') building at (2261, 92, 0) in Felucca: "robe"
+2023-05-10 12:01:17: 142.169.16.214: Serials: 0x40000266; 
+2023-05-10 12:35:38: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'gm '
+2023-05-10 12:35:43: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add robe'
+2023-05-10 12:35:44: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2266, 91, 0) in Felucca: "robe"
+2023-05-10 12:35:44: 142.169.16.214: Serials: 0x400004AA; 
+2023-05-10 12:37:26: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'go '
+2023-05-10 12:37:38: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add robe'
+2023-05-10 12:37:39: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2263, 89, 0) in Felucca: "robe"
+2023-05-10 12:37:39: 142.169.16.214: Serials: 0x40000711; 
+2023-05-10 12:38:05: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add horse'
+2023-05-10 12:38:06: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2266, 89, 0) in Felucca: "horse"
+2023-05-10 12:38:06: 142.169.16.214: Serials: 0x29F; 
+2023-05-10 12:39:37: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'props '
+2023-05-10 12:40:57: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add kilt'
+2023-05-10 12:40:58: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2281, 129, 0) in Felucca: "kilt"
+2023-05-10 12:40:58: 142.169.16.214: Serials: 0x40000723; 
+2023-05-10 12:41:13: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'viewhue '
+2023-05-10 12:41:48: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2886'
+2023-05-10 12:41:49: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '2886'
+2023-05-10 12:42:57: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2869'
+2023-05-10 12:42:58: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '2869'
+2023-05-10 12:43:02: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2863'
+2023-05-10 12:43:03: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '2863'
+2023-05-10 12:43:12: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2820'
+2023-05-10 12:43:13: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '2820'
+2023-05-10 12:43:46: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'props '
+2023-05-10 12:43:56: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'viewhue '
+2023-05-10 12:44:04: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2125'
+2023-05-10 12:44:05: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '2125'
+2023-05-10 12:44:17: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add shirt'
+2023-05-10 12:44:18: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2270, 124, 0) in Felucca: "shirt"
+2023-05-10 12:44:18: 142.169.16.214: Serials: 0x40000B9E; 
+2023-05-10 12:44:23: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2125'
+2023-05-10 12:44:24: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000B9E (Shirt) to '2125'
+2023-05-10 12:44:33: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add '
+2023-05-10 12:44:59: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Add FancyShirt'
+2023-05-10 12:45:02: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2271, 123, 0) in Felucca: "FancyShirt"
+2023-05-10 12:45:02: 142.169.16.214: Serials: 0x40000BA1; 
+2023-05-10 12:45:14: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2118'
+2023-05-10 12:45:15: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '2118'
+2023-05-10 12:45:38: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1999'
+2023-05-10 12:45:39: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '1999'
+2023-05-10 12:45:44: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1975'
+2023-05-10 12:45:45: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1975'
+2023-05-10 12:45:47: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1966'
+2023-05-10 12:45:48: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1966'
+2023-05-10 12:45:54: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1922'
+2023-05-10 12:45:55: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1922'
+2023-05-10 12:45:58: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1920'
+2023-05-10 12:45:59: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1920'
+2023-05-10 12:46:02: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1912'
+2023-05-10 12:46:03: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1912'
+2023-05-10 12:46:04: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1911'
+2023-05-10 12:46:05: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1911'
+2023-05-10 12:46:19: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1779'
+2023-05-10 12:46:20: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1779'
+2023-05-10 12:46:22: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 1777'
+2023-05-10 12:46:23: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000BA1 (FancyShirt) to '1777'
+2023-05-10 12:46:33: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2886'
+2023-05-10 12:46:34: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000723 (Kilt) to '2886'
+2023-05-10 12:46:42: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add bandana'
+2023-05-10 12:46:44: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2271, 123, 0) in Felucca: "bandana"
+2023-05-10 12:46:44: 142.169.16.214: Serials: 0x40000DE9; 
+2023-05-10 12:47:14: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2886'
+2023-05-10 12:47:15: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40000DE9 (Bandana) to '2886'
+2023-05-10 12:55:33: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add hairstylist'
+2023-05-10 12:55:40: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add barber'
+2023-05-10 12:55:46: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add robe'
+2023-05-10 12:56:24: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add robe'
+2023-05-10 12:56:24: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2276, 125, 0) in Felucca: "robe"
+2023-05-10 12:56:24: 142.169.16.214: Serials: 0x400015FB; 
+2023-05-10 12:56:30: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add barber'
+2023-05-10 12:56:41: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add hairstylist'
+2023-05-10 12:56:42: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2272, 127, 0) in Felucca: "hairstylist"
+2023-05-10 12:56:42: 142.169.16.214: Serials: 0x33A; 
+2023-05-10 13:21:59: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add stylist'
+2023-05-10 13:22:04: 142.169.16.214: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2269, 128, 0) in Felucca: "CustomHairstylist"
+2023-05-10 13:22:04: 142.169.16.214: Serials: 0x75D; 
+2023-05-12 04:16:02: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add book'
+2023-05-12 04:16:14: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2274, 130, 0) in Felucca: "BlueBook"
+2023-05-12 04:16:14: 74.14.172.191: Serials: 0x40001651; 
+2023-05-12 04:23:44: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add chess'
+2023-05-12 04:23:53: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2263, 135, 0) in Felucca: "Chessboard"
+2023-05-12 04:23:53: 74.14.172.191: Serials: 0x4000165A; 
+2023-05-12 04:24:07: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2261, 137, 0) in Felucca: "KnightChessPieceGuildstone"
+2023-05-12 04:24:07: 74.14.172.191: Serials: 0x4000175F; 
+2023-05-12 04:24:10: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2259, 136, 0) in Felucca: "KnightChessPieceGuildstone"
+2023-05-12 04:24:10: 74.14.172.191: Serials: 0x40001760; 
+2023-05-12 04:24:21: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'gm '
+2023-05-12 04:24:28: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'add gmrobe'
+2023-05-12 04:24:29: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') building at (2261, 136, 0) in Felucca: "gmrobe"
+2023-05-12 04:24:29: 74.14.172.191: Serials: 0x40001761; 
+2023-05-12 04:25:24: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'viewhue '
+2023-05-12 04:26:17: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') used command 'Set Hue 2889'
+2023-05-12 04:26:19: 74.14.172.191: GameMaster 0x1A9 "Riiem" ('Riiem') set property 'Hue' of 0x40001761 (GMRobe) to '2889'

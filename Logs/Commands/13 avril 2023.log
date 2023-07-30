@@ -1,0 +1,1506 @@
+##############################
+Log started on 2023-04-13 01:53:04
+
+##############################
+Log started on 2023-04-13 01:55:48
+
+2023-04-13 11:54:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-04-13 11:54:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2270, 107, 0) to (2282, 116, 0) in Felucca (Items, Mobiles)
+2023-04-13 11:54:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'wipe '
+2023-04-13 11:54:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') wiping from (2274, 118, 0) to (2276, 120, 0) in Felucca (Items, Mobiles)
+2023-04-13 11:55:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'who '
+2023-04-13 12:11:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add static 0xA435'
+2023-04-13 12:11:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2270, 113, 0) in Felucca: "static" "0xA435"
+2023-04-13 12:11:55: 127.0.0.1: Serials: 0x400000BE; 
+2023-04-13 12:12:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set itemid 0xA435'
+2023-04-13 12:12:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'itemid' of 0x40000856 (PlateChest) to '42037'
+2023-04-13 12:13:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set itemid'
+2023-04-13 12:13:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set itemid 0xA436'
+2023-04-13 12:13:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'itemid' of 0x40000856 (PlateChest) to '42038'
+2023-04-13 12:13:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set itemid 0xA438'
+2023-04-13 12:13:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'itemid' of 0x40000856 (PlateChest) to '42040'
+2023-04-13 12:28:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-04-13 12:28:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x107 "Sachi" (no account)
+2023-04-13 12:28:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-04-13 12:28:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-04-13 12:28:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'go '
+2023-04-13 12:28:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-04-13 12:29:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-04-13 12:59:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add newspellbook'
+2023-04-13 12:59:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (1065, 1380, -1) in Felucca: "newspellbook"
+2023-04-13 12:59:01: 127.0.0.1: Serials: 0x400000F3; 
+2023-04-13 12:59:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'allspells '
+2023-04-13 13:01:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-04-13 13:01:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'go '
+2023-04-13 13:02:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-04-13 13:15:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+##############################
+Log started on 2023-04-13 13:50:13
+
+2023-04-13 13:52:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add daedric'
+2023-04-13 13:52:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add plastron'
+2023-04-13 13:52:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (1132, 1381, 1) in Felucca: "PlastronDedric"
+2023-04-13 13:52:47: 127.0.0.1: Serials: 0x40000031; 
+2023-04-13 13:53:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'props '
+2023-04-13 13:53:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (1132, 1382, 1) in Felucca: "PlastronDragon"
+2023-04-13 13:53:42: 127.0.0.1: Serials: 0x4000003B; 
+2023-04-13 13:53:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'viewequip '
+2023-04-13 13:54:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') viewing equipment of 0x1 "Nucca" ('admin')
+2023-04-13 14:16:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') viewing equipment of 0x1 "Nucca" ('admin')
+2023-04-13 14:16:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add renfor'
+2023-04-13 14:16:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (1133, 1378, 1) in Felucca: "BrassardMaillerRenforce"
+2023-04-13 14:16:14: 127.0.0.1: Serials: 0x40000043; 
+2023-04-13 14:17:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set race human'
+2023-04-13 14:17:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'race' of 0x1 "Nucca" ('admin') to 'Elvolus'
+2023-04-13 23:46:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'staticstool '
+2023-04-13 23:46:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'qui '
+2023-04-13 23:46:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 20'
+2023-04-13 23:46:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:47:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-13 23:47:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-13 23:47:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 1457'
+2023-04-13 23:47:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000D7F (Static) to '1457'
+2023-04-13 23:47:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 1457'
+2023-04-13 23:47:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000D7E (Static) to '1457'
+2023-04-13 23:47:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000D4A (Static) to (1138, 1384, 6)
+2023-04-13 23:47:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 20'
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000863 (Static) (inBag=False; amount=20)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x400000E5 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x400000ED (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x400000EE (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x400000EF (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x400000FA (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000126 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x4000012A (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000140 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000149 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000154 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x4000015F (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000177 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000195 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000250 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000365 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000369 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x4000037D (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000383 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x400003B1 (Static)
+2023-04-13 23:47:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000863 (Static) creating 0x40000401 (Static)
+2023-04-13 23:47:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400000FA (Static) to (1139, 1381, 6)
+2023-04-13 23:47:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400000E5 (Static) to (1140, 1381, 6)
+2023-04-13 23:47:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000126 (Static) to (1141, 1381, 6)
+2023-04-13 23:47:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000149 (Static) to (1142, 1381, 6)
+2023-04-13 23:47:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400000ED (Static) to (1143, 1381, 6)
+2023-04-13 23:47:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000154 (Static) to (1144, 1381, 6)
+2023-04-13 23:47:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400000EE (Static) to (1145, 1381, 6)
+2023-04-13 23:47:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000177 (Static) to (1146, 1381, 6)
+2023-04-13 23:47:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:47:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400000EF (Static) to (1147, 1381, 6)
+2023-04-13 23:48:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm set hue 0'
+2023-04-13 23:48:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000FA (Static) to '0'
+2023-04-13 23:48:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000E5 (Static) to '0'
+2023-04-13 23:48:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000E5 (Static) to '0'
+2023-04-13 23:48:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000149 (Static) to '0'
+2023-04-13 23:48:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000ED (Static) to '0'
+2023-04-13 23:48:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000E5 (Static) to '0'
+2023-04-13 23:48:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000126 (Static) to '0'
+2023-04-13 23:48:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000154 (Static) to '0'
+2023-04-13 23:48:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000177 (Static) to '0'
+2023-04-13 23:48:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000177 (Static) to '0'
+2023-04-13 23:48:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000EE (Static) to '0'
+2023-04-13 23:48:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400000EF (Static) to '0'
+2023-04-13 23:48:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000383 (Static) to (1139, 1390, 8)
+2023-04-13 23:48:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000250 (Static) to (1140, 1390, 8)
+2023-04-13 23:48:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400003B1 (Static) to (1141, 1390, 8)
+2023-04-13 23:48:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x4000012A (Static) to (1142, 1390, 8)
+2023-04-13 23:48:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000140 (Static) to (1144, 1390, 8)
+2023-04-13 23:48:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x4000015F (Static) to (1145, 1390, 8)
+2023-04-13 23:48:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000195 (Static) to (1146, 1390, 8)
+2023-04-13 23:48:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:48:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000365 (Static) to (1147, 1390, 8)
+2023-04-13 23:48:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm set hue 0'
+2023-04-13 23:48:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000365 (Static) to '0'
+2023-04-13 23:48:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000195 (Static) to '0'
+2023-04-13 23:48:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x4000015F (Static) to '0'
+2023-04-13 23:48:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000140 (Static) to '0'
+2023-04-13 23:48:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x4000012A (Static) to '0'
+2023-04-13 23:48:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x400003B1 (Static) to '0'
+2023-04-13 23:48:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000250 (Static) to '0'
+2023-04-13 23:48:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000383 (Static) to '0'
+2023-04-13 23:48:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-13 23:48:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm set z 6'
+2023-04-13 23:48:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400000FA (Static) to '6'
+2023-04-13 23:48:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400000E5 (Static) to '6'
+2023-04-13 23:48:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000149 (Static) to '6'
+2023-04-13 23:48:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000154 (Static) to '6'
+2023-04-13 23:48:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400000EE (Static) to '6'
+2023-04-13 23:48:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000177 (Static) to '6'
+2023-04-13 23:48:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400000EF (Static) to '6'
+2023-04-13 23:48:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000365 (Static) to '6'
+2023-04-13 23:48:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000195 (Static) to '6'
+2023-04-13 23:48:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000140 (Static) to '6'
+2023-04-13 23:48:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000140 (Static) to '6'
+2023-04-13 23:48:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000D4B (Static) to '6'
+2023-04-13 23:48:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x4000012A (Static) to '6'
+2023-04-13 23:48:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400003B1 (Static) to '6'
+2023-04-13 23:48:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000250 (Static) to '6'
+2023-04-13 23:48:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000383 (Static) to '6'
+2023-04-13 23:48:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000D4A (Static) to '6'
+2023-04-13 23:49:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:49:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 20'
+2023-04-13 23:49:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:49:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000D4A (Static) (inBag=False; amount=1)
+2023-04-13 23:49:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000D4A (Static) creating 0x40000420 (Static)
+2023-04-13 23:49:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:49:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000420 (Static) to (1138, 1387, 6)
+2023-04-13 23:49:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:49:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400007C2 (Static) (inBag=False; amount=1)
+2023-04-13 23:49:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400007C2 (Static) creating 0x400004B5 (Static)
+2023-04-13 23:49:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:49:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400004B5 (Static) to (1147, 1382, 8)
+2023-04-13 23:49:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:49:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:49:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000776 (Static) (inBag=False; amount=1)
+2023-04-13 23:49:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000776 (Static) creating 0x400004B6 (Static)
+2023-04-13 23:49:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:49:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400004B6 (Static) to (1147, 1382, 8)
+2023-04-13 23:49:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'staticstool '
+2023-04-13 23:49:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-13 23:49:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:49:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-13 23:50:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 7'
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400006F5 (Static) (inBag=False; amount=7)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005A6 (Static)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005BC (Static)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005BD (Static)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005BE (Static)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005BF (Static)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005C0 (Static)
+2023-04-13 23:50:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400006F5 (Static) creating 0x400005C2 (Static)
+2023-04-13 23:50:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005A6 (Static) to (1147, 1383, 8)
+2023-04-13 23:50:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005BC (Static) to (1147, 1384, 8)
+2023-04-13 23:50:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:50:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005BC (Static)
+2023-04-13 23:50:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:50:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005C9 (Static) (inBag=False; amount=1)
+2023-04-13 23:50:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005C9 (Static) creating 0x400005C4 (Static)
+2023-04-13 23:50:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005C4 (Static) to (1147, 1384, 8)
+2023-04-13 23:50:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:50:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000707 (Static) (inBag=False; amount=1)
+2023-04-13 23:50:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000707 (Static) creating 0x400005C5 (Static)
+2023-04-13 23:50:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005BE (Static) to (1147, 1384, 8)
+2023-04-13 23:50:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:50:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000707 (Static) (inBag=False; amount=1)
+2023-04-13 23:50:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000707 (Static) creating 0x400005C6 (Static)
+2023-04-13 23:50:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:50:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005C4 (Static)
+2023-04-13 23:50:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:50:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005BE (Static)
+2023-04-13 23:50:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005C6 (Static) to (1147, 1384, 8)
+2023-04-13 23:50:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:50:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005DA (Static) (inBag=False; amount=1)
+2023-04-13 23:50:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005DA (Static) creating 0x400005C7 (Static)
+2023-04-13 23:50:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:50:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005C7 (Static) to (1147, 1384, 8)
+2023-04-13 23:50:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:50:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005C7 (Static)
+2023-04-13 23:51:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:51:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005C9 (Static) (inBag=False; amount=1)
+2023-04-13 23:51:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005C9 (Static) creating 0x400005CA (Static)
+2023-04-13 23:51:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:51:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005CA (Static) to (1147, 1384, 8)
+2023-04-13 23:51:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:51:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000776 (Static) (inBag=False; amount=1)
+2023-04-13 23:51:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000776 (Static) creating 0x400005CB (Static)
+2023-04-13 23:51:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:51:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005CB (Static) to (1146, 1384, 8)
+2023-04-13 23:51:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:51:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005C0 (Static) to (1146, 1385, 8)
+2023-04-13 23:51:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:51:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005C0 (Static)
+2023-04-13 23:51:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:51:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:51:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005CB (Static) (inBag=False; amount=1)
+2023-04-13 23:51:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005CB (Static) creating 0x400005CC (Static)
+2023-04-13 23:51:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:51:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005CC (Static) to (1146, 1386, 8)
+2023-04-13 23:51:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:52:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005CA (Static) (inBag=False; amount=1)
+2023-04-13 23:52:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005CA (Static) creating 0x400005CE (Static)
+2023-04-13 23:52:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:52:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:52:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000986 (Static) (inBag=False; amount=1)
+2023-04-13 23:52:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000986 (Static) creating 0x400005CF (Static)
+2023-04-13 23:52:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:52:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005CF (Static) to (1147, 1387, 8)
+2023-04-13 23:52:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-13 23:52:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:52:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400000F8 (Static)
+2023-04-13 23:52:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:52:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005CF (Static)
+2023-04-13 23:52:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:52:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-13 23:52:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-13 23:52:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:52:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:52:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005CC (Static)
+2023-04-13 23:52:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:52:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000776 (Static) (inBag=False; amount=1)
+2023-04-13 23:52:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000776 (Static) creating 0x400005D0 (Static)
+2023-04-13 23:52:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:52:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005D0 (Static) to (1146, 1386, 8)
+2023-04-13 23:52:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-13 23:52:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-13 23:53:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-13 23:53:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:53:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005C5 (Static) to (1146, 1386, 8)
+2023-04-13 23:53:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:53:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005CE (Static) to (1147, 1387, 8)
+2023-04-13 23:53:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-13 23:53:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:53:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005C2 (Static) to (1147, 1387, 8)
+2023-04-13 23:53:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:53:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005BD (Static) to (1147, 1388, 8)
+2023-04-13 23:53:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:53:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005BF (Static) to (1147, 1389, 8)
+2023-04-13 23:53:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:53:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000707 (Static) (inBag=False; amount=1)
+2023-04-13 23:53:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000707 (Static) creating 0x400005D1 (Static)
+2023-04-13 23:53:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:53:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005D1 (Static) to (1147, 1390, 8)
+2023-04-13 23:53:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 5'
+2023-04-13 23:53:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000365 (Static) to '5'
+2023-04-13 23:53:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 5'
+2023-04-13 23:53:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400000EF (Static) to '5'
+2023-04-13 23:54:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-13 23:54:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005CA (Static) (inBag=False; amount=2)
+2023-04-13 23:54:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005CA (Static) creating 0x400005D2 (Static)
+2023-04-13 23:54:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005CA (Static) creating 0x400005D3 (Static)
+2023-04-13 23:54:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-13 23:54:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005D1 (Static) (inBag=False; amount=2)
+2023-04-13 23:54:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005D1 (Static) creating 0x400005D4 (Static)
+2023-04-13 23:54:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005D1 (Static) creating 0x400005D5 (Static)
+2023-04-13 23:54:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:54:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005D4 (Static) to (1138, 1383, 6)
+2023-04-13 23:54:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:54:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005D5 (Static) to (1138, 1386, 6)
+2023-04-13 23:54:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 6'
+2023-04-13 23:54:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400005D4 (Static) to '6'
+2023-04-13 23:54:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 6'
+2023-04-13 23:54:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400005D5 (Static) to '6'
+2023-04-13 23:54:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-13 23:54:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-13 23:54:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005C2 (Static) (inBag=False; amount=2)
+2023-04-13 23:54:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005C2 (Static) creating 0x400005D7 (Static)
+2023-04-13 23:54:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005C2 (Static) creating 0x400005E5 (Static)
+2023-04-13 23:54:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:54:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005D7 (Static) to (1138, 1382, 6)
+2023-04-13 23:54:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:54:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005E5 (Static) to (1138, 1385, 6)
+2023-04-13 23:54:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:54:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:54:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005CB (Static) (inBag=False; amount=1)
+2023-04-13 23:54:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005CB (Static) creating 0x400005EB (Static)
+2023-04-13 23:54:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:54:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005EB (Static) to (1139, 1382, 8)
+2023-04-13 23:54:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-13 23:54:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:55:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:55:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400008FD (Static) (inBag=False; amount=1)
+2023-04-13 23:55:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400008FD (Static) creating 0x400005FA (Static)
+2023-04-13 23:55:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:55:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005FA (Static) to (1139, 1388, 8)
+2023-04-13 23:55:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:55:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:55:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-13 23:55:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-13 23:55:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-13 23:55:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 6'
+2023-04-13 23:55:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x400005FA (Static) to '6'
+2023-04-13 23:55:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-13 23:55:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000929 (Static) (inBag=False; amount=2)
+2023-04-13 23:55:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000929 (Static) creating 0x400005FC (Static)
+2023-04-13 23:55:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000929 (Static) creating 0x400005FE (Static)
+2023-04-13 23:55:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:55:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005FC (Static) to (1138, 1388, 6)
+2023-04-13 23:55:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:55:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-13 23:55:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-13 23:55:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:55:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:55:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005E5 (Static)
+2023-04-13 23:56:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:56:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005C2 (Static) (inBag=False; amount=1)
+2023-04-13 23:56:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005C2 (Static) creating 0x400005FF (Static)
+2023-04-13 23:56:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:56:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:56:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005CE (Static) (inBag=False; amount=1)
+2023-04-13 23:56:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005CE (Static) creating 0x40000600 (Static)
+2023-04-13 23:56:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:56:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400004B5 (Static) (inBag=False; amount=1)
+2023-04-13 23:56:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400004B5 (Static) creating 0x40000602 (Static)
+2023-04-13 23:56:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:56:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000602 (Static) to (1138, 1385, 6)
+2023-04-13 23:56:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:56:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:56:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:56:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000776 (Static) (inBag=False; amount=1)
+2023-04-13 23:56:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000776 (Static) creating 0x40000604 (Static)
+2023-04-13 23:56:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:56:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000604 (Static) to (1139, 1384, 8)
+2023-04-13 23:56:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:56:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:56:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x400005FF (Static) to (1139, 1388, 8)
+2023-04-13 23:56:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-13 23:56:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-13 23:56:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-13 23:56:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-13 23:56:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-13 23:56:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:56:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000776 (Static) (inBag=False; amount=1)
+2023-04-13 23:56:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000776 (Static) creating 0x40000605 (Static)
+2023-04-13 23:57:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:58:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:58:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005BD (Static)
+2023-04-13 23:58:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-13 23:58:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400008D3 (Static) (inBag=False; amount=1)
+2023-04-13 23:58:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400008D3 (Static) creating 0x40000607 (Static)
+2023-04-13 23:58:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-13 23:58:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000607 (Static) to (1147, 1388, 8)
+2023-04-13 23:58:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'addstair '
+2023-04-13 23:59:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'add ladder'
+2023-04-13 23:59:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1143, 1391, 1) in Felucca: "HouseLadderDeed"
+2023-04-13 23:59:13: 24.142.86.128: Serials: 0x40000609; 
+2023-04-13 23:59:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1143, 1391, 1) in Felucca: "HouseLadderDeed"
+2023-04-13 23:59:13: 24.142.86.128: Serials: 0x4000060B; 
+2023-04-13 23:59:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-13 23:59:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-13 23:59:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000609 (HouseLadderDeed)
+2023-04-13 23:59:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'qui '
+2023-04-14 00:00:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:00:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000367 (Backpack)
+2023-04-14 00:00:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'add backpack'
+2023-04-14 00:00:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1147, 1378, -1) in Felucca: "backpack"
+2023-04-14 00:00:38: 24.142.86.128: Serials: 0x40000652; 
+2023-04-14 00:00:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'staticstool '
+2023-04-14 00:00:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'addfloor '
+2023-04-14 00:00:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'addfloorpt1 '
+2023-04-14 00:00:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Tile Static 1205'
+2023-04-14 00:00:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building from (1138, 1381, 28) to (1147, 1390, 28) in Felucca: "Static" "1205"
+2023-04-14 00:00:58: 24.142.86.128: Serials: 0x40000659; 0x4000065C; 0x4000066D; 0x40000675; 0x40000676; 0x40000677; 0x40000678; 0x40000679; 0x4000067A; 0x4000067D; 0x4000067F; 0x40000689; 0x40000690; 0x4000069B; 0x4000069C; 0x4000069D; 0x400006C5; 0x400006D4; 0x400006E9; 0x40000700; 0x40000712; 0x40000719; 0x40000721; 0x40000728; 0x4000072E; 0x4000075D; 0x40000760; 0x400007C7; 0x400007C8; 0x4000081D; 0x4000081E; 0x40000821; 0x40000822; 0x40000825; 0x40000827; 0x40000828; 0x4000082A; 0x4000082C; 0x40000832; 0x40000869; 0x40000A41; 0x40000A5B; 0x40000A76; 0x40000A78; 0x40000A84; 0x40000A85; 0x40000A89; 0x40000AAD; 0x40000AAE; 0x40000AAF; 0x40000AB0; 0x40000ABC; 0x40000AC0; 0x40000AC4; 0x40000AC5; 0x40000AD0; 0x40000AFC; 0x40000B05; 0x40000B0C; 0x40000B0D; 0x40000B1A; 0x40000B1D; 0x40000B1E; 0x40000B43; 0x40000B61; 0x40000B62; 0x40000B64; 0x40000B65; 0x40000B66; 0x40000B67; 0x40000B68; 0x40000B6A; 0x40000B6B; 0x40000B6C; 0x40000B6E; 0x40000B6F; 0x40000B70; 0x40000B71; 0x40000B72; 0x40000B73; 0x40000B74; 0x40000B76; 0x40000B77; 0x40000B79; 0x40000B7A; 0x40000B7B; 0x40000B7C; 0x40000B7D; 0x40000B7E; 0x40000B7F; 0x40000B80; 0x40000B81; 0x40000B82; 0x40000B83; 0x40000B84; 0x40000B88; 0x40000B89; 0x40000B8B; 0x40000B97; 0x40000BAD; 
+2023-04-14 00:01:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Tile Static 1205'
+2023-04-14 00:01:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building from (1142, 1371, 26) to (1147, 1381, 28) in Felucca: "Static" "1205"
+2023-04-14 00:01:06: 24.142.86.128: Serials: 0x40000BB2; 0x40000BB5; 0x40000BB6; 0x40000BB7; 0x40000BB9; 0x40000BBC; 0x40000BBD; 0x40000BBE; 0x40000BC4; 0x40000BC6; 0x40000BCA; 0x40000BCB; 0x40000BCC; 0x40000BCD; 0x40000BEE; 0x40000BF2; 0x40000BF3; 0x40000BF4; 0x40000BF5; 0x40000BF6; 0x40000BF7; 0x40000BF8; 0x40000BF9; 0x40000BFA; 0x40000BFC; 0x40000C01; 0x40000C08; 0x40000C09; 0x40000C0C; 0x40000C0D; 0x40000C18; 0x40000C1A; 0x40000C1B; 0x40000C1C; 0x40000C1D; 0x40000C1E; 0x40000C1F; 0x40000C20; 0x40000C21; 0x40000C22; 0x40000C23; 0x40000C24; 0x40000C25; 0x40000C26; 0x40000C27; 0x40000C28; 0x40000C29; 0x40000C2A; 0x40000C2B; 0x40000C2C; 0x40000C2D; 0x40000C2E; 0x40000C2F; 0x40000C30; 0x40000C31; 0x40000C32; 0x40000C34; 0x40000C35; 0x40000C3A; 0x40000C3F; 0x40000C41; 0x40000C43; 0x40000C44; 0x40000C45; 0x40000C46; 0x40000C47; 
+2023-04-14 00:01:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-14 00:01:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-14 00:01:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm remove'
+2023-04-14 00:01:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BB2 (Static)
+2023-04-14 00:01:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BCB (Static)
+2023-04-14 00:01:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BF9 (Static)
+2023-04-14 00:01:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C1C (Static)
+2023-04-14 00:01:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C27 (Static)
+2023-04-14 00:01:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C32 (Static)
+2023-04-14 00:01:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C34 (Static)
+2023-04-14 00:01:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C35 (Static)
+2023-04-14 00:01:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C3A (Static)
+2023-04-14 00:01:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C3F (Static)
+2023-04-14 00:01:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C41 (Static)
+2023-04-14 00:01:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C43 (Static)
+2023-04-14 00:01:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C44 (Static)
+2023-04-14 00:01:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C45 (Static)
+2023-04-14 00:01:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C46 (Static)
+2023-04-14 00:01:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C30 (Static)
+2023-04-14 00:01:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BC6 (Static)
+2023-04-14 00:01:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BBD (Static)
+2023-04-14 00:01:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BBE (Static)
+2023-04-14 00:01:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BC4 (Static)
+2023-04-14 00:01:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C2F (Static)
+2023-04-14 00:01:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C2E (Static)
+2023-04-14 00:01:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C2D (Static)
+2023-04-14 00:01:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000B80 (Static)
+2023-04-14 00:01:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000B81 (Static)
+2023-04-14 00:01:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C47 (Static)
+2023-04-14 00:01:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C31 (Static)
+2023-04-14 00:01:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-14 00:01:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000B76 (Static) (inBag=False; amount=2)
+2023-04-14 00:01:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000B76 (Static) creating 0x40000C89 (Static)
+2023-04-14 00:01:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000B76 (Static) creating 0x40000C8B (Static)
+2023-04-14 00:01:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:01:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C8B (Static) to (1147, 1381, 28)
+2023-04-14 00:01:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:02:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C89 (Static) to (1147, 1382, 28)
+2023-04-14 00:02:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C8B (Static)
+2023-04-14 00:02:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000B74 (Static)
+2023-04-14 00:02:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000A41 (Static)
+2023-04-14 00:02:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x4000081E (Static)
+2023-04-14 00:02:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BCA (Static)
+2023-04-14 00:02:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000AB0 (Static)
+2023-04-14 00:02:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000B68 (Static)
+2023-04-14 00:02:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000B1A (Static)
+2023-04-14 00:02:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BF8 (Static)
+2023-04-14 00:02:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C1B (Static)
+2023-04-14 00:02:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C26 (Static)
+2023-04-14 00:02:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 3'
+2023-04-14 00:02:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000BF7 (Static) (inBag=False; amount=3)
+2023-04-14 00:02:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000BF7 (Static) creating 0x40000C91 (Static)
+2023-04-14 00:02:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000BF7 (Static) creating 0x40000C92 (Static)
+2023-04-14 00:02:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000BF7 (Static) creating 0x40000C93 (Static)
+2023-04-14 00:02:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:02:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C91 (Static) to (1143, 1381, 26)
+2023-04-14 00:02:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:02:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C92 (Static) to (1144, 1381, 26)
+2023-04-14 00:02:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:02:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C93 (Static) to (1145, 1381, 26)
+2023-04-14 00:02:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:02:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:02:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:02:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C91 (Static)
+2023-04-14 00:02:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C92 (Static)
+2023-04-14 00:02:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:02:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C93 (Static)
+2023-04-14 00:03:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'addstair '
+2023-04-14 00:03:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'M Add Static 1981'
+2023-04-14 00:03:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1143, 1381, 26) in Felucca: "Static" "1981"
+2023-04-14 00:03:11: 24.142.86.128: Serials: 0x40000C95; 
+2023-04-14 00:03:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1144, 1381, 26) in Felucca: "Static" "1981"
+2023-04-14 00:03:12: 24.142.86.128: Serials: 0x40000C96; 
+2023-04-14 00:03:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1145, 1381, 26) in Felucca: "Static" "1981"
+2023-04-14 00:03:13: 24.142.86.128: Serials: 0x40000C97; 
+2023-04-14 00:03:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:03:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:03:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:03:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:03:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:03:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 1457'
+2023-04-14 00:03:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000C95 (Static) to '1457'
+2023-04-14 00:03:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 1457'
+2023-04-14 00:03:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000C96 (Static) to '1457'
+2023-04-14 00:03:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 1457'
+2023-04-14 00:03:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000C97 (Static) to '1457'
+2023-04-14 00:03:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:03:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 9'
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000C97 (Static) (inBag=False; amount=9)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C98 (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C9A (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C9B (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C9C (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C9D (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C9E (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000C9F (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000CA0 (Static)
+2023-04-14 00:03:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000C97 (Static) creating 0x40000CA1 (Static)
+2023-04-14 00:03:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C9A (Static) to (1143, 1380, 26)
+2023-04-14 00:04:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C9C (Static) to (1144, 1380, 26)
+2023-04-14 00:04:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C9B (Static) to (1145, 1380, 26)
+2023-04-14 00:04:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C9E (Static) to (1145, 1379, 26)
+2023-04-14 00:04:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CA0 (Static) to (1144, 1379, 26)
+2023-04-14 00:04:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CA1 (Static) to (1143, 1379, 26)
+2023-04-14 00:04:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C9D (Static) to (1143, 1378, 26)
+2023-04-14 00:04:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C9F (Static) to (1145, 1378, 26)
+2023-04-14 00:04:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000C98 (Static) to (1144, 1378, 26)
+2023-04-14 00:04:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 3'
+2023-04-14 00:04:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000CA1 (Static) (inBag=False; amount=3)
+2023-04-14 00:04:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CA1 (Static) creating 0x40000CA3 (Static)
+2023-04-14 00:04:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CA1 (Static) creating 0x40000CA6 (Static)
+2023-04-14 00:04:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CA1 (Static) creating 0x40000CAA (Static)
+2023-04-14 00:04:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CA3 (Static) to (1145, 1377, 26)
+2023-04-14 00:04:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CAA (Static) to (1144, 1377, 26)
+2023-04-14 00:04:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:04:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CA6 (Static) to (1143, 1377, 26)
+2023-04-14 00:04:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:04:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm set z 26'
+2023-04-14 00:04:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9A (Static) to '26'
+2023-04-14 00:04:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9C (Static) to '26'
+2023-04-14 00:04:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9B (Static) to '26'
+2023-04-14 00:04:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9F (Static) to '26'
+2023-04-14 00:04:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C97 (Static) to '26'
+2023-04-14 00:04:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:04:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:04:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm set z 27'
+2023-04-14 00:04:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9B (Static) to '27'
+2023-04-14 00:04:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9C (Static) to '27'
+2023-04-14 00:04:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9A (Static) to '27'
+2023-04-14 00:04:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9E (Static) to '27'
+2023-04-14 00:04:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CA0 (Static) to '27'
+2023-04-14 00:04:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CA1 (Static) to '27'
+2023-04-14 00:04:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9D (Static) to '27'
+2023-04-14 00:04:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C98 (Static) to '27'
+2023-04-14 00:04:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000C9F (Static) to '27'
+2023-04-14 00:04:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CA3 (Static) to '27'
+2023-04-14 00:04:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CAA (Static) to '27'
+2023-04-14 00:04:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CA6 (Static) to '27'
+2023-04-14 00:04:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm remove'
+2023-04-14 00:04:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C25 (Static)
+2023-04-14 00:05:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C24 (Static)
+2023-04-14 00:05:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C23 (Static)
+2023-04-14 00:05:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C22 (Static)
+2023-04-14 00:05:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'addstair '
+2023-04-14 00:05:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'M Add Static 1893'
+2023-04-14 00:05:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1144, 1377, 1) in Felucca: "Static" "1893"
+2023-04-14 00:05:44: 24.142.86.128: Serials: 0x40000CAB; 
+2023-04-14 00:05:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1144, 1377, 3) in Felucca: "Static" "1893"
+2023-04-14 00:05:44: 24.142.86.128: Serials: 0x40000CAC; 
+2023-04-14 00:05:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:05:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:05:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CAB (Static)
+2023-04-14 00:05:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:05:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 5'
+2023-04-14 00:05:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 5'
+2023-04-14 00:05:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 5'
+2023-04-14 00:06:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:06:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:06:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:06:07: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'qui '
+2023-04-14 00:06:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 2101'
+2023-04-14 00:06:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000CAC (Static) to '2101'
+2023-04-14 00:06:13: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'hide '
+2023-04-14 00:06:14: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') hiding 0x2AB "Mig" ('Mig')
+2023-04-14 00:06:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:06:20: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:06:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'm tele'
+2023-04-14 00:06:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:06:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:06:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'unhide '
+2023-04-14 00:06:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') unhiding 0x2AB "Mig" ('Mig')
+2023-04-14 00:06:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'addstair '
+2023-04-14 00:06:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'M Add Static 1896'
+2023-04-14 00:06:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1144, 1378, 0) in Felucca: "Static" "1896"
+2023-04-14 00:06:42: 24.142.86.128: Serials: 0x40000CAE; 
+2023-04-14 00:06:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1144, 1378, 2) in Felucca: "Static" "1896"
+2023-04-14 00:06:42: 24.142.86.128: Serials: 0x40000CB0; 
+2023-04-14 00:06:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:06:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 22'
+2023-04-14 00:06:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CB0 (Static) to '22'
+2023-04-14 00:06:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-14 00:07:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:07:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CAE (Static)
+2023-04-14 00:07:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-14 00:07:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:07:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:07:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:07:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-14 00:07:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-14 00:07:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:07:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm remove'
+2023-04-14 00:07:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BF5 (Static)
+2023-04-14 00:07:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C0D (Static)
+2023-04-14 00:07:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C18 (Static)
+2023-04-14 00:07:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BF6 (Static)
+2023-04-14 00:07:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000BF7 (Static)
+2023-04-14 00:07:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000C1A (Static)
+2023-04-14 00:07:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:07:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:07:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:07:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:07:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:07:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:07:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:08:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:08:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 2101'
+2023-04-14 00:08:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000CB0 (Static) to '2101'
+2023-04-14 00:08:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set hue 2101'
+2023-04-14 00:08:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'hue' of 0x40000177 (Static) to '2101'
+2023-04-14 00:08:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-14 00:09:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000CAC (Static) (inBag=False; amount=2)
+2023-04-14 00:09:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CAC (Static) creating 0x40000CB1 (Static)
+2023-04-14 00:09:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CAC (Static) creating 0x40000CB2 (Static)
+2023-04-14 00:09:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:09:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB2 (Static) to (1143, 1377, -1)
+2023-04-14 00:09:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:09:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB1 (Static) to (1142, 1377, 1)
+2023-04-14 00:09:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 22'
+2023-04-14 00:09:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CB2 (Static) to '22'
+2023-04-14 00:09:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 22'
+2023-04-14 00:09:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CB1 (Static) to '22'
+2023-04-14 00:09:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:09:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:09:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-14 00:09:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000CB0 (Static) (inBag=False; amount=2)
+2023-04-14 00:09:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CB0 (Static) creating 0x40000CB3 (Static)
+2023-04-14 00:09:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CB0 (Static) creating 0x40000CB4 (Static)
+2023-04-14 00:09:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:09:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB3 (Static) to (1145, 1382, 28)
+2023-04-14 00:09:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:09:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB4 (Static) to (1144, 1382, 28)
+2023-04-14 00:09:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 22'
+2023-04-14 00:09:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CB3 (Static) to '22'
+2023-04-14 00:09:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 22'
+2023-04-14 00:09:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CB4 (Static) to '22'
+2023-04-14 00:09:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:09:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:09:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:09:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:09:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:09:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:09:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:09:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:10:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-14 00:10:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 6'
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x400005B4 (Static) (inBag=False; amount=6)
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005B4 (Static) creating 0x40000CB5 (Static)
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005B4 (Static) creating 0x40000CB6 (Static)
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005B4 (Static) creating 0x40000CB7 (Static)
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005B4 (Static) creating 0x40000CB8 (Static)
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005B4 (Static) creating 0x40000CB9 (Static)
+2023-04-14 00:10:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x400005B4 (Static) creating 0x40000CBA (Static)
+2023-04-14 00:10:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:10:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CBA (Static) to (1145, 1381, 28)
+2023-04-14 00:10:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:10:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:10:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:10:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:10:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB5 (Static) to (1145, 1379, 28)
+2023-04-14 00:10:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:10:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB6 (Static) to (1145, 1378, 28)
+2023-04-14 00:10:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:10:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB9 (Static) to (1145, 1381, 28)
+2023-04-14 00:10:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:10:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB8 (Static) to (1145, 1377, 28)
+2023-04-14 00:10:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-14 00:10:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:10:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CB7 (Static) to (1143, 1381, 28)
+2023-04-14 00:10:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:11:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 4'
+2023-04-14 00:11:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000CB5 (Static) (inBag=False; amount=4)
+2023-04-14 00:11:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CB5 (Static) creating 0x40000CBB (Static)
+2023-04-14 00:11:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CB5 (Static) creating 0x40000CBC (Static)
+2023-04-14 00:11:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CB5 (Static) creating 0x40000CDD (Static)
+2023-04-14 00:11:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CB5 (Static) creating 0x40000CE9 (Static)
+2023-04-14 00:11:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:11:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CBB (Static) to (1143, 1380, 28)
+2023-04-14 00:11:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:11:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:11:09: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CBC (Static) to (1143, 1379, 28)
+2023-04-14 00:11:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:11:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:11:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CDD (Static) to (1143, 1378, 28)
+2023-04-14 00:11:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:11:16: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:11:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CE9 (Static) to (1143, 1377, 28)
+2023-04-14 00:11:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:11:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm remove'
+2023-04-14 00:11:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x4000067D (Static)
+2023-04-14 00:11:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000679 (Static)
+2023-04-14 00:11:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x4000067A (Static)
+2023-04-14 00:12:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000678 (Static)
+2023-04-14 00:12:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000677 (Static)
+2023-04-14 00:12:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000676 (Static)
+2023-04-14 00:12:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000675 (Static)
+2023-04-14 00:12:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x4000066D (Static)
+2023-04-14 00:12:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x4000065C (Static)
+2023-04-14 00:12:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000659 (Static)
+2023-04-14 00:12:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x4000067F (Static)
+2023-04-14 00:12:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000712 (Static)
+2023-04-14 00:12:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:12:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005EA (Static)
+2023-04-14 00:12:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:12:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400009FF (Static)
+2023-04-14 00:12:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:12:31: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x400005DA (Static)
+2023-04-14 00:12:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 3'
+2023-04-14 00:12:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000154 (Static) (inBag=False; amount=3)
+2023-04-14 00:12:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000154 (Static) creating 0x40000CEC (Static)
+2023-04-14 00:12:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000154 (Static) creating 0x40000CEE (Static)
+2023-04-14 00:12:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000154 (Static) creating 0x40000CEF (Static)
+2023-04-14 00:12:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:12:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CEF (Static) to (1143, 1376, 8)
+2023-04-14 00:12:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:12:37: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CEE (Static) to (1144, 1376, 8)
+2023-04-14 00:12:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:12:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CEC (Static) to (1145, 1376, 8)
+2023-04-14 00:12:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:12:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:12:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:13:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:13:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:13:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-14 00:13:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:38: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:13:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:13:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:13:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:13:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:14:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:14:11: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:14:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:14:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:14:50: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000D4B (Static)
+2023-04-14 00:14:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-14 00:14:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000195 (Static) (inBag=False; amount=1)
+2023-04-14 00:14:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000195 (Static) creating 0x40000CF1 (Static)
+2023-04-14 00:14:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:14:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CF1 (Static) to (1143, 1390, 8)
+2023-04-14 00:14:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:15:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'set z 6'
+2023-04-14 00:15:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') set property 'z' of 0x40000CF1 (Static) to '6'
+2023-04-14 00:16:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:16:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:16:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:16:19: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:16:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:16:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:16:46: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-14 00:16:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000604 (Static) (inBag=False; amount=1)
+2023-04-14 00:16:48: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000604 (Static) creating 0x40000CF2 (Static)
+2023-04-14 00:16:49: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:16:51: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CF2 (Static) to (1139, 1387, 8)
+2023-04-14 00:16:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:16:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:16:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'tele '
+2023-04-14 00:17:03: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:17:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:17:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-14 00:17:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:17:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'go '
+2023-04-14 00:17:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add daedric'
+2023-04-14 00:17:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2267, 110, 0) in Felucca: "JambiereDaedric"
+2023-04-14 00:17:20: 127.0.0.1: Serials: 0x40000CF4; 
+2023-04-14 00:17:22: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-14 00:17:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000CF2 (Static) (inBag=False; amount=2)
+2023-04-14 00:17:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CF2 (Static) creating 0x40000CF5 (Static)
+2023-04-14 00:17:24: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CF2 (Static) creating 0x40000D14 (Static)
+2023-04-14 00:17:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:17:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000D14 (Static) to (1142, 1382, 8)
+2023-04-14 00:17:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:17:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:17:32: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:17:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:17:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000CF5 (Static) to (1145, 1382, 8)
+2023-04-14 00:17:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:17:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:17:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:17:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:10: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:12: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y 1'
+2023-04-14 00:18:14: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:18:18: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CEF (Static)
+2023-04-14 00:18:21: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:18:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-14 00:18:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000986 (Static) (inBag=False; amount=1)
+2023-04-14 00:18:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000986 (Static) creating 0x40000D15 (Static)
+2023-04-14 00:18:36: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:18:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000D15 (Static) to (1143, 1376, 8)
+2023-04-14 00:18:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:18:42: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:18:45: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:18:54: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe 2'
+2023-04-14 00:18:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duping 0x40000CF2 (Static) (inBag=False; amount=2)
+2023-04-14 00:18:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CF2 (Static) creating 0x40000D16 (Static)
+2023-04-14 00:18:56: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') duped 0x40000CF2 (Static) creating 0x40000D17 (Static)
+2023-04-14 00:18:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:18:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000D16 (Static) to (1142, 1382, 8)
+2023-04-14 00:19:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:19:01: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:19:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'move '
+2023-04-14 00:19:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 110, 0) in Felucca: "GorgetDaedric"
+2023-04-14 00:19:05: 127.0.0.1: Serials: 0x40000D1C; 
+2023-04-14 00:19:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') moving 0x40000D17 (Static) to (1145, 1382, 8)
+2023-04-14 00:19:07: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:19:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2245, 116, 0) in Felucca: "BrassardDaedric"
+2023-04-14 00:19:14: 127.0.0.1: Serials: 0x40000D48; 
+2023-04-14 00:19:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2265, 110, 0) in Felucca: "BrassardDaedric"
+2023-04-14 00:19:14: 127.0.0.1: Serials: 0x40000D49; 
+2023-04-14 00:19:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm remove'
+2023-04-14 00:19:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CB3 (Static)
+2023-04-14 00:19:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add mask'
+2023-04-14 00:19:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CB4 (Static)
+2023-04-14 00:19:26: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CB0 (Static)
+2023-04-14 00:19:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CB1 (Static)
+2023-04-14 00:19:27: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CB2 (Static)
+2023-04-14 00:19:28: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000CAC (Static)
+2023-04-14 00:19:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add masque'
+2023-04-14 00:19:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2264, 109, 0) in Felucca: "Masque18"
+2023-04-14 00:19:33: 127.0.0.1: Serials: 0x40000D4B; 
+2023-04-14 00:19:33: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm tele'
+2023-04-14 00:19:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'dupe '
+2023-04-14 00:19:47: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:19:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2266, 108, 0) in Felucca: "Masque13"
+2023-04-14 00:19:54: 127.0.0.1: Serials: 0x40000D65; 
+2023-04-14 00:19:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'add static 708'
+2023-04-14 00:19:55: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1107, 1389, -1) in Felucca: "static" "708"
+2023-04-14 00:19:55: 24.142.86.128: Serials: 0x40000D66; 
+2023-04-14 00:19:58: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:19:59: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000D66 (Static)
+2023-04-14 00:20:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:20:05: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'add static 146'
+2023-04-14 00:20:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1107, 1390, -1) in Felucca: "static" "146"
+2023-04-14 00:20:06: 24.142.86.128: Serials: 0x40000D67; 
+2023-04-14 00:20:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:20:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000D67 (Static)
+2023-04-14 00:20:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'props '
+2023-04-14 00:20:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'add static 732'
+2023-04-14 00:20:40: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1042, 1411, -1) in Felucca: "static" "732"
+2023-04-14 00:20:40: 24.142.86.128: Serials: 0x40000D68; 
+2023-04-14 00:20:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:20:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000D68 (Static)
+2023-04-14 00:20:44: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'm tele'
+2023-04-14 00:20:52: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'add static 732'
+2023-04-14 00:20:53: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') building at (1145, 1381, 28) in Felucca: "static" "732"
+2023-04-14 00:20:53: 24.142.86.128: Serials: 0x40000D80; 
+2023-04-14 00:20:57: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:00: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:02: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:04: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:06: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:08: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:13: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x 1'
+2023-04-14 00:21:15: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc y -1'
+2023-04-14 00:21:17: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc x -1'
+2023-04-14 00:21:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'fiche '
+2023-04-14 00:21:23: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:21:25: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z -1'
+2023-04-14 00:21:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add chapeauplu'
+2023-04-14 00:21:29: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'remove '
+2023-04-14 00:21:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2264, 114, 0) in Felucca: "ChapeauPlume1"
+2023-04-14 00:21:29: 127.0.0.1: Serials: 0x40000D81; 
+2023-04-14 00:21:30: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') deleting 0x40000D80 (Static)
+2023-04-14 00:21:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2265, 115, 0) in Felucca: "ChapeauPlume2"
+2023-04-14 00:21:31: 127.0.0.1: Serials: 0x40000D82; 
+2023-04-14 00:21:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2265, 115, 1) in Felucca: "ChapeauPlume2"
+2023-04-14 00:21:31: 127.0.0.1: Serials: 0x40000D88; 
+2023-04-14 00:21:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2265, 114, 0) in Felucca: "ChapeauPlume3"
+2023-04-14 00:21:33: 127.0.0.1: Serials: 0x40000D8B; 
+2023-04-14 00:21:34: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:21:35: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:21:39: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:21:41: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:21:43: 24.142.86.128: Administrator 0x23 "Flynn" ('Flynn') used command 'Inc z 1'
+2023-04-14 00:29:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'who '
+2023-04-14 00:29:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'go '
+2023-04-14 00:29:16: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm tele'
+2023-04-14 00:35:11: 142.126.35.114: Owner 0x2AB "Je m'appel Groot" ('Mig') used command 'fiche '
+2023-04-14 00:35:43: 142.126.35.114: Owner 0x105 "GG" ('Mig') used command 'fiche '
+2023-04-14 00:36:46: 142.126.35.114: Owner 0x105 "GG" ('Mig') used command 'fiche '
+2023-04-14 00:39:12: 142.126.35.114: Owner 0x105 "Je m'appels Groot" ('Mig') used command 'fiche '
+2023-04-14 00:42:59: 142.126.35.114: Player 0x2AB "Je m'appel Groot" ('Mig') used command 'gm '
+2023-04-14 00:43:00: 142.126.35.114: Owner 0x2AB "Je m'appel Groot" ('Mig') used command 'gm '
+2023-04-14 00:43:03: 142.126.35.114: Owner 0x2AB "Je m'appel Groot" ('Mig') used command 'props '
+2023-04-14 00:43:14: 142.126.35.114: Owner 0x2AB "Je m'appel Groot" ('Mig') set property 'Name' of 0x2AB "Je m'appel Groot" ('Mig') to 'Mig'
+2023-04-14 00:43:20: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'qui '
+2023-04-14 00:43:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:26: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:38: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:54: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:54: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:54: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:55: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:43:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 00:44:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'unhide '
+2023-04-14 00:44:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') unhiding 0x2AB "Mig" ('Mig')
+2023-04-14 00:44:11: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'hide '
+2023-04-14 00:44:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') hiding 0x2AB "Mig" ('Mig')
+2023-04-14 00:51:18: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:51:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:54:42: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:54:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 95'
+2023-04-14 00:54:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '95'
+2023-04-14 00:54:49: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:54:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 100'
+2023-04-14 00:54:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '100'
+2023-04-14 00:55:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:55:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 51'
+2023-04-14 00:55:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '51'
+2023-04-14 00:55:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:55:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 55'
+2023-04-14 00:55:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '55'
+2023-04-14 00:55:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:55:42: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 55.1'
+2023-04-14 00:55:42: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '0'
+2023-04-14 00:55:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 00:55:49: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 55.1'
+2023-04-14 00:55:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '0'
+2023-04-14 00:55:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 56'
+2023-04-14 00:55:52: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '56'
+2023-04-14 00:55:54: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:06:48: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 01:11:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 60'
+2023-04-14 01:11:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '60'
+2023-04-14 01:11:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:11:37: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 61'
+2023-04-14 01:11:38: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '61'
+2023-04-14 01:11:39: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:11:44: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 65'
+2023-04-14 01:11:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '65'
+2023-04-14 01:11:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:11:49: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 66'
+2023-04-14 01:11:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '66'
+2023-04-14 01:11:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:11:55: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 70'
+2023-04-14 01:11:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '70'
+2023-04-14 01:11:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:11:59: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 71'
+2023-04-14 01:12:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '71'
+2023-04-14 01:12:01: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:12:06: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 75'
+2023-04-14 01:12:07: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '75'
+2023-04-14 01:12:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:12:17: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 76'
+2023-04-14 01:12:17: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '76'
+2023-04-14 01:12:20: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:12:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 89'
+2023-04-14 01:12:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 80'
+2023-04-14 01:12:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '80'
+2023-04-14 01:12:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:12:36: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 81'
+2023-04-14 01:12:37: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '81'
+2023-04-14 01:12:38: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:12:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 85'
+2023-04-14 01:12:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '85'
+2023-04-14 01:12:53: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:12:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 86'
+2023-04-14 01:12:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '86'
+2023-04-14 01:13:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:13:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 90'
+2023-04-14 01:13:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '90'
+2023-04-14 01:13:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:13:14: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 91'
+2023-04-14 01:13:15: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '91'
+2023-04-14 01:13:16: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:13:52: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 96'
+2023-04-14 01:13:53: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '96'
+2023-04-14 01:13:55: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:14:01: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 99'
+2023-04-14 01:14:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '99'
+2023-04-14 01:14:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:25:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 01:31:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'add memoi'
+2023-04-14 01:33:53: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'fiche '
+2023-04-14 01:55:06: 142.126.35.114: Player 0x2AB "Mig" ('Mig') used command 'gm '
+2023-04-14 01:55:08: 142.126.35.114: Player 0x2AB "Mig" ('Mig') used command 'help '
+2023-04-14 01:56:02: 142.126.35.114: Player 0x2AB "Mig" ('Mig') used command 'anonyme '
+2023-04-14 01:56:35: 142.126.35.114: Player 0x2AB "Mig" ('Mig') used command 'chasseur 1'
+2023-04-14 01:57:18: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'gm '
+2023-04-14 01:57:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'deshabiller '
+2023-04-14 02:03:59: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'anonyme '
+2023-04-14 02:05:32: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'statut '
+2023-04-14 02:06:14: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'infoclasses '
+2023-04-14 02:06:16: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'gm '
+2023-04-14 02:06:18: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'infoclasses '
+2023-04-14 02:06:20: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'infoclasses '
+2023-04-14 02:07:08: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'gm '
+2023-04-14 02:07:08: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:08: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:08: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:09: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:09: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:09: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:10: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'tele '
+2023-04-14 02:07:12: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'frapper '
+2023-04-14 02:07:27: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'foulard '
+2023-04-14 02:08:36: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'reveler '
+2023-04-14 02:08:41: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'reveler '
+2023-04-14 02:09:11: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'signaler '
+2023-04-14 02:09:54: 142.126.35.114: Owner 0x2AB "Anonyme" ('Mig') used command 'help '
+2023-04-14 02:09:57: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'gm '
+2023-04-14 02:10:00: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'help '
+2023-04-14 02:11:54: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'help '
+2023-04-14 02:12:52: 142.126.35.114: Player 0x2AB "Anonyme" ('Mig') used command 'qui '
+2023-04-14 02:13:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'gm '
+2023-04-14 02:13:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 02:13:16: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 02:26:17: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 100'
+2023-04-14 02:26:18: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '100'
+2023-04-14 02:26:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 02:26:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 02:26:38: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:39: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:39: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:39: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:39: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:39: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:26:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:21: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'remove '
+2023-04-14 02:29:21: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') deleting 0x15F "Un Cochon" (no account)
+2023-04-14 02:29:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:29:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'add bandage'
+2023-04-14 02:29:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') building at (1069, 1411, -1) in Felucca: "bandage"
+2023-04-14 02:29:57: 142.126.35.114: Serials: 0x40000E98; 
+2023-04-14 02:30:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 0'
+2023-04-14 02:30:11: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '0'
+2023-04-14 02:30:18: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 100'
+2023-04-14 02:30:18: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '100'
+2023-04-14 02:30:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 0'
+2023-04-14 02:30:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '0'
+2023-04-14 02:35:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'setallskills 100'
+2023-04-14 02:35:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') set property 'EverySkill.Base' of 0x2AB "Mig" ('Mig') to '100'
+2023-04-14 02:41:07: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'move '
+2023-04-14 02:41:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') moving 0x108 "Rosalinda" (no account) to (1056, 1418, 25)
+2023-04-14 02:41:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'move '
+2023-04-14 02:41:14: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') moving 0x108 "Rosalinda" (no account) to (1054, 1418, 7)
+2023-04-14 02:41:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:36: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'move '
+2023-04-14 02:41:37: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') moving 0x109 "Madelaine" (no account) to (1028, 1418, 25)
+2023-04-14 02:41:38: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'move '
+2023-04-14 02:41:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') moving 0x109 "Madelaine" (no account) to (1026, 1417, 7)
+2023-04-14 02:41:49: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:52: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:53: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:55: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:41:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:42:20: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:42:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:43:19: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:43:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:43:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:43:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:43:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:07: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:44:59: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:22: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'move '
+2023-04-14 02:45:36: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') moving 0x384 "Janis" (no account) to (1065, 1375, 25)
+2023-04-14 02:45:40: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'move '
+2023-04-14 02:45:41: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') moving 0x384 "Janis" (no account) to (1064, 1372, 5)
+2023-04-14 02:45:43: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:43: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:45:51: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:46:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:46:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:46:05: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:42: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:43: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:43: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:44: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:44: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:44: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 02:58:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:01:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 03:01:52: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:01:54: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:02:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:02:13: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:02:14: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:03:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:05: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:05: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:06: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:06: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:13: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:25: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:26: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:26: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:26: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:26: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:30: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:32: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:34: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:35: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:36: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:36: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:37: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:37: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:56: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:57: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:58: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:59: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:59: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:59: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:04:59: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:23: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:24: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:26: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:27: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:28: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:29: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:31: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:33: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:45: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:46: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:47: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:48: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:48: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:49: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:05:52: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:00: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:01: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:01: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:01: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:01: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:04: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:37: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:38: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:41: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:06:43: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:02: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:03: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:05: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:06: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:07: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:08: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:09: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:10: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:11: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:11: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:11: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:11: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:12: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:13: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:14: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:15: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:16: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:17: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:07:18: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '
+2023-04-14 03:08:17: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'm tele'
+2023-04-14 03:08:50: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'go '
+2023-04-14 03:08:54: 142.126.35.114: Owner 0x2AB "Mig" ('Mig') used command 'tele '

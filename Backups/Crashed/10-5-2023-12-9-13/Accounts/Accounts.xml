@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="6">
+	<account>
+		<username>Nucca</username>
+		<newCryptPassword>F0-04-80-9B-89-19-A0-A0-00-07-0B-DE-1D-A4-42-13-67-A7-82-AA</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-05-10T11:57:30.2722876Z</created>
+		<lastLogin>2023-05-10T11:57:58.5996278Z</lastLogin>
+		<totalGameTime>PT7M46.6280206S</totalGameTime>
+		<chars>
+			<char index="0">86</char>
+		</chars>
+		<addressList count="2">
+			<ip>192.168.2.1</ip>
+			<ip>192.168.2.17</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Riiem</username>
+		<newCryptPassword>E2-34-98-63-B3-BA-1B-82-2A-99-32-4E-8B-C0-5B-AF-87-9D-86-82</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-05-10T12:02:36.6203467Z</created>
+		<lastLogin>2023-05-10T12:08:50.2202479Z</lastLogin>
+		<totalGameTime>PT3M44.9716467S</totalGameTime>
+		<chars>
+			<char index="0">425</char>
+		</chars>
+		<addressList count="3">
+			<ip>142.169.16.214</ip>
+			<ip>192.168.2.1</ip>
+			<ip>192.168.2.17</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Siren</username>
+		<newCryptPassword>23-E0-88-27-F7-BD-F3-95-6D-43-EA-C3-C9-2F-A9-23-D4-0A-1C-C8</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-05-10T12:00:17.203742Z</created>
+		<lastLogin>2023-05-10T12:00:17.203742Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Mig</username>
+		<newCryptPassword>63-DD-19-2C-74-57-6E-00-85-26-E4-0D-6A-12-7A-F5-C7-74-98-F5</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-05-10T12:00:41.2302349Z</created>
+		<lastLogin>2023-05-10T12:00:41.2302349Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Crayolla</username>
+		<newCryptPassword>8E-86-8B-36-D6-24-25-A5-69-26-07-B6-B5-BE-16-50-7D-A0-2E-2A</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-05-10T12:00:58.7205944Z</created>
+		<lastLogin>2023-05-10T12:00:58.7205944Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Snow</username>
+		<newCryptPassword>14-36-BB-D1-67-57-48-87-5C-E7-29-A4-F4-92-24-55-76-CC-56-F1</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-05-10T12:01:14.5901776Z</created>
+		<lastLogin>2023-05-10T12:01:14.5901776Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+</accounts>

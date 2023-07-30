@@ -1,0 +1,69 @@
+##############################
+Log started on 2023-03-11 03:51:41
+
+2023-03-11 03:52:21: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'set hidden false'
+2023-03-11 03:52:22: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') set property 'hidden' of 0x4 "Eowymos" ('Eowymos') to 'False'
+2023-03-11 03:52:50: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'add fishingpole'
+2023-03-11 03:52:51: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') building at (1198, 1545, 0) in Felucca: "fishingpole"
+2023-03-11 03:52:51: 24.200.37.227: Serials: 0x40000012; 
+2023-03-11 03:53:11: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'add hook'
+2023-03-11 03:53:25: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') building at (1197, 1543, 2) in Felucca: "JunkProofHook"
+2023-03-11 03:53:25: 24.200.37.227: Serials: 0x40000014; 
+2023-03-11 03:53:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add bait'
+2023-03-11 03:53:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add bai'
+2023-03-11 03:53:38: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'add bait'
+2023-03-11 03:53:40: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') building at (1198, 1542, -1) in Felucca: "bait"
+2023-03-11 03:53:40: 24.200.37.227: Serials: 0x40000019; 
+2023-03-11 03:54:03: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'set bodyvalue 400'
+2023-03-11 03:54:04: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') set property 'bodyvalue' of 0x4 "Eowymos" ('Eowymos') to '400'
+2023-03-11 03:54:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'dupe '
+2023-03-11 03:54:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') duping 0x40000012 (FishingPole) (inBag=False; amount=1)
+2023-03-11 03:54:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') duped 0x40000012 (FishingPole) creating 0x4000002C (FishingPole)
+2023-03-11 03:54:21: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'm tele'
+2023-03-11 03:54:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-11 03:54:42: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'kill '
+2023-03-11 03:54:45: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'admin '
+2023-03-11 03:54:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-11 03:54:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x4 "Eowymos" ('Eowymos'), Localisation (1159, 1600, -5), Map Felucca
+2023-03-11 03:54:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'kill '
+2023-03-11 03:54:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x6 "a sea serpent" (no account)
+2023-03-11 03:55:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-11 03:55:27: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'm tele'
+2023-03-11 03:56:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-11 03:58:01: 24.200.37.227: Owner 0x4 "Eowymos" ('Eowymos') used command 'props '
+2023-03-11 03:58:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'speedboost '
+2023-03-11 03:59:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'speedboost '
+2023-03-11 04:00:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-11 04:01:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'Roublardise' of ... to '10'
+2023-03-11 04:13:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-11 04:13:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-11 04:13:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x3 "Nucca" ('admin') to '100'
+2023-03-11 04:22:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add stonef'
+2023-03-11 04:22:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1220, 1539, 0) in Felucca: "StoneFootwear"
+2023-03-11 04:22:37: 127.0.0.1: Serials: 0x40000054; 
+2023-03-11 04:31:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add repair'
+2023-03-11 04:31:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add repairb'
+2023-03-11 04:31:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (1214, 1540, 0) in Felucca: "RepairBenchDeed"
+2023-03-11 04:31:36: 127.0.0.1: Serials: 0x40000055; 
+2023-03-11 04:32:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-11 04:32:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x4000006B (RepairBenchComponent)
+##############################
+Log started on 2023-03-11 13:28:39
+
+2023-03-11 13:28:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-11 13:29:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 1375 663'
+2023-03-11 13:29:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-11 13:29:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000011 (ArenaExitBanner)
+2023-03-11 13:29:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-11 13:29:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x40000010 (ArenaExitBanner)
+2023-03-11 13:29:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set season hiver'
+2023-03-11 13:30:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set saison hiver'
+2023-03-11 13:30:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'helpinfo '
+2023-03-11 13:30:28: 127.0.0.1: Player 0x3 "Nucca" ('admin') used command 'gm '
+2023-03-11 13:30:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'gm '
+2023-03-11 13:30:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'ChangerSaison Winter'
+2023-03-11 13:30:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'ChangerSaison Hiver'
+2023-03-11 13:31:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'ChangerSaison ete'
+2023-03-11 13:31:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'ChangerSaison Hiver'
+2023-03-11 13:31:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'changersaison printemps'
+2023-03-11 13:31:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'save '

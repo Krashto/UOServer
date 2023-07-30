@@ -1,0 +1,1234 @@
+2023-04-26 20:50:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:50:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 20:50:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:50:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 20:50:10: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:50:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:50:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 20:50:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add gm'
+2023-04-26 20:51:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1079, 1414, 0) in Felucca: "GMRobe"
+2023-04-26 20:51:01: 184.160.109.184: Serials: 0x40000248; 
+2023-04-26 20:51:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-26 20:51:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2726'
+2023-04-26 20:51:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2726'
+2023-04-26 20:52:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 20:52:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (2295, 407, 5), Map Felucca
+2023-04-26 20:52:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:52:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:52:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 20:52:44: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:52:44: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 20:52:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:53:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add platearms'
+2023-04-26 20:53:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (2333, 167, 0) in Felucca: "platearms"
+2023-04-26 20:53:01: 184.160.109.184: Serials: 0x4000025C; 
+2023-04-26 20:53:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:53:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:53:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 20:53:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-26 20:53:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x4000025C (PlateArms)
+2023-04-26 20:53:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:53:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 20:53:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 20:53:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1063, 1409, 0), Map Felucca
+2023-04-26 20:54:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:54:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 20:54:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 20:55:09: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 20:55:11: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1040, 1423, 0), Map Felucca
+2023-04-26 20:55:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:55:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 20:55:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:55:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 20:55:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:55:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 20:55:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 20:55:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 20:55:56: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 20:59:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-26 20:59:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x400002DD (Robe)
+2023-04-26 21:03:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add dragon'
+2023-04-26 21:03:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1074, 1420, 0) in Felucca: "dragon"
+2023-04-26 21:03:18: 184.160.109.184: Serials: 0x55; 
+2023-04-26 21:03:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-26 21:03:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x55 "Un Dragon" (no account)
+2023-04-26 21:03:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:03:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x53 "Dracaliss" ('aemulos'), Localisation (1033, 1409, -1), Map Felucca
+2023-04-26 21:06:55: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add lingot'
+2023-04-26 21:07:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1037, 1420, 0) in Felucca: "MytherilIngot"
+2023-04-26 21:07:01: 184.160.109.184: Serials: 0x40000504; 
+2023-04-26 21:07:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:07:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:07:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:07:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:07:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:07:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1016, 1481, 8), Map Felucca
+2023-04-26 21:08:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-26 21:08:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duping 0x40000FE4 (Saw) (inBag=False; amount=1)
+2023-04-26 21:08:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duped 0x40000FE4 (Saw) creating 0x40000505 (Saw)
+2023-04-26 21:09:03: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-26 21:09:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duping 0x400004C4 (BarrelStaves) (inBag=False; amount=1)
+2023-04-26 21:09:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duped 0x400004C4 (BarrelStaves) creating 0x40000507 (BarrelStaves)
+2023-04-26 21:09:09: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-26 21:09:10: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duping 0x40004628 (HousePlacementTool) (inBag=False; amount=1)
+2023-04-26 21:09:10: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duped 0x40004628 (HousePlacementTool) creating 0x40000508 (HousePlacementTool)
+2023-04-26 21:09:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:09:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:09:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:09:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:09:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:09:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:10:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:11:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add eterfer'
+2023-04-26 21:11:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1039, 1552, 8) in Felucca: "eterfer"
+2023-04-26 21:11:34: 184.160.109.184: Serials: 0x4000058A; 
+2023-04-26 21:11:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:12:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:20:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:20:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:20:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:20:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:20:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:20:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:20:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:20:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:20:50: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:20:50: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:20:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:20:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:20:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:21:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x77 "Phoxie" ('Chatchat'), Localisation (1066, 1408, 0), Map Felucca
+2023-04-26 21:21:08: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:21:14: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:21:56: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:21:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:22:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:22:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:22:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:22:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:22:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:22:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:22:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:22:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:22:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:22:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:22:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:22:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:25:03: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-26 21:25:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x40000504 (MytherilIngot)
+2023-04-26 21:25:13: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:25:16: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1019, 1475, 8), Map Felucca
+2023-04-26 21:25:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:25:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x6E "Crayo" ('Crayo'), Localisation (1094, 1414, 0), Map Felucca
+2023-04-26 21:25:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:25:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x77 "Phoxie" ('Chatchat'), Localisation (1063, 1408, 0), Map Felucca
+2023-04-26 21:28:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:29:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set allskills 100'
+2023-04-26 21:29:10: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set allskill 100'
+2023-04-26 21:29:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set all skill 100'
+2023-04-26 21:29:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set skill 100'
+2023-04-26 21:29:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set skills 100'
+2023-04-26 21:29:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'props '
+2023-04-26 21:31:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'SetAllSkills 100'
+2023-04-26 21:31:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'EverySkill.Base' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:31:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'fiche '
+2023-04-26 21:32:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:32:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:32:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:32:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:32:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:32:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:33:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 99999'
+2023-04-26 21:33:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '99999'
+2023-04-26 21:34:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 199'
+2023-04-26 21:34:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '199'
+2023-04-26 21:34:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 199'
+2023-04-26 21:34:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '199'
+2023-04-26 21:34:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 21:34:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:35:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 's Classique'
+2023-04-26 21:35:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:35:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:37:08: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:38:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:38:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:38:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'fiche '
+2023-04-26 21:39:08: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:39:09: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:39:19: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:39:19: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:39:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:39:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:40:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:40:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:40:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 21:40:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1074, 1244, 1) in Felucca: "chicken"
+2023-04-26 21:40:32: 184.160.109.184: Serials: 0x13A1; 
+2023-04-26 21:40:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:40:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:41:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:41:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:41:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 21:41:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1074, 1237, 0) in Felucca: "chicken"
+2023-04-26 21:41:43: 184.160.109.184: Serials: 0x13A2; 
+2023-04-26 21:42:15: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:42:15: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:42:15: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:42:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:42:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:42:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'fiche '
+2023-04-26 21:42:50: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:42:50: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:43:11: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:43:11: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:43:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 21:43:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1079, 1213, 1) in Felucca: "chicken"
+2023-04-26 21:43:24: 184.160.109.184: Serials: 0x13A4; 
+2023-04-26 21:43:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 100'
+2023-04-26 21:43:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-26 21:43:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-26 21:43:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x40003681 (InternalItem)
+2023-04-26 21:44:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-26 21:44:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x13AA "Totem de feu" (no account)
+2023-04-26 21:45:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:48:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:49:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:49:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:49:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:49:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:49:02: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:49:02: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:51:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 's Ya tu un spell qui fait un TP pour tout le monde ou ya seulement le spell Totémique qui le fait'
+2023-04-26 21:51:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 's pour une personne?'
+2023-04-26 21:52:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 's J'ai fouillé mais je semble pas trouver'
+2023-04-26 21:52:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 21:52:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:52:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:52:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 21:53:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'fiche '
+2023-04-26 21:53:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:53:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 21:54:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 21:54:19: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1095, 1220, -1) in Felucca: "chicken"
+2023-04-26 21:54:19: 184.160.109.184: Serials: 0x2; 
+2023-04-26 21:54:19: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 21:54:19: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1093, 1219, 0) in Felucca: "chicken"
+2023-04-26 21:54:19: 184.160.109.184: Serials: 0x3; 
+2023-04-26 21:54:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 21:54:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1094, 1219, 0) in Felucca: "chicken"
+2023-04-26 21:54:21: 184.160.109.184: Serials: 0x4; 
+2023-04-26 21:55:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 1999'
+2023-04-26 21:55:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '1999'
+2023-04-26 21:55:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 1999'
+2023-04-26 21:55:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '1999'
+2023-04-26 21:55:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set mana 1999'
+2023-04-26 21:55:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'mana' of 0x21 "Dyzee" ('vive2') to '1999'
+2023-04-26 21:55:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 21:55:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:20:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:20:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:20:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:20:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:20:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:20:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:20:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:20:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:20:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:20:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:20:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:20:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1060, 1412, 0), Map Felucca
+2023-04-26 22:21:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:21:02: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:21:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 22:21:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1226, 1572, 2) in Felucca: "chicken"
+2023-04-26 22:21:27: 184.160.109.184: Serials: 0x3; 
+2023-04-26 22:21:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 22:21:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1226, 1572, 2) in Felucca: "chicken"
+2023-04-26 22:21:29: 184.160.109.184: Serials: 0x4; 
+2023-04-26 22:21:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 22:21:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1226, 1571, 2) in Felucca: "chicken"
+2023-04-26 22:21:31: 184.160.109.184: Serials: 0x5; 
+2023-04-26 22:21:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-26 22:21:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1227, 1571, 0) in Felucca: "chicken"
+2023-04-26 22:21:32: 184.160.109.184: Serials: 0x6; 
+2023-04-26 22:21:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:21:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:21:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'fiche '
+2023-04-26 22:23:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:23:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:23:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:23:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:24:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 's Si je vois dequoi de louche, voulez-vous que je le call sur le discord dans suggestions?'
+2023-04-26 22:24:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:24:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:24:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:24:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:24:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:24:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:24:44: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:25:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'fiche '
+2023-04-26 22:26:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'kill '
+2023-04-26 22:26:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') killing 0x8 "Une Liche" (no account)
+2023-04-26 22:26:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'kill '
+2023-04-26 22:26:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') killing 0x9 "a death adder" (no account)
+2023-04-26 22:26:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'kill '
+2023-04-26 22:26:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') killing 0xA "Un Cheval Squelettique" (no account)
+2023-04-26 22:26:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'kill '
+2023-04-26 22:26:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') killing 0xB "a horde minion" (no account)
+2023-04-26 22:26:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm delete'
+2023-04-26 22:26:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x400001C3 (Corpse)
+2023-04-26 22:26:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x400001F5 (Corpse)
+2023-04-26 22:26:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x4000023A (Corpse)
+2023-04-26 22:26:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add lama'
+2023-04-26 22:26:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1230, 1549, 0) in Felucca: "Llama"
+2023-04-26 22:26:59: 184.160.109.184: Serials: 0xC; 
+2023-04-26 22:27:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm delete'
+2023-04-26 22:27:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') deleting 0xC "Un Llama" (no account)
+2023-04-26 22:27:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add lama'
+2023-04-26 22:27:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1230, 1549, 0) in Felucca: "RidableLlama"
+2023-04-26 22:27:25: 184.160.109.184: Serials: 0x10; 
+2023-04-26 22:27:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:27:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:27:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:27:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:27:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:27:56: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:27:56: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:27:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:27:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:28:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'res '
+2023-04-26 22:28:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'add ridinglama'
+2023-04-26 22:28:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') building at (1209, 1523, 1) in Felucca: "RidableLlama"
+2023-04-26 22:28:37: 184.160.109.184: Serials: 0x13; 
+2023-04-26 22:29:12: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:29:12: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:29:14: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:29:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:29:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:29:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'pages '
+2023-04-26 22:29:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:29:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x7 "Rohan Horscroft" ('joelcarl'), Localisation (1019, 1486, 1), Map Felucca
+2023-04-26 22:29:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:29:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:31:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:37:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:37:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:37:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:37:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:38:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:38:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:38:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:39:03: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'pages '
+2023-04-26 22:39:11: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:39:14: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x77 "Phoxie" ('Chatchat'), Localisation (1121, 306, 0), Map Felucca
+2023-04-26 22:39:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:39:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1023, 1473, 28), Map Felucca
+2023-04-26 22:39:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:39:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:39:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:39:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:39:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:39:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-26 22:39:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1060, 1412, 0), Map Felucca
+2023-04-26 22:40:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:40:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-26 22:40:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-26 22:40:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-26 22:40:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:40:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x77 "Phoxie" ('Chatchat'), Localisation (1091, 300, 1), Map Felucca
+2023-04-26 22:41:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:41:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-26 22:41:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:41:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1026, 1478, 48), Map Felucca
+2023-04-26 22:41:54: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-26 22:41:55: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 11:13:13: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'qui '
+2023-04-27 11:13:15: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 11:13:20: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xC3 "Roland" ('bftmpat'), Localisation (1064, 1408, 0), Map Felucca
+2023-04-27 11:13:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 11:13:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x3C "Achara" ('Evrard'), Localisation (2298, 408, 5), Map Felucca
+2023-04-27 11:13:35: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 11:13:37: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xC3 "Roland" ('bftmpat'), Localisation (1064, 1408, 0), Map Felucca
+2023-04-27 11:14:49: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 11:14:52: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xC3 "Roland" ('bftmpat'), Localisation (1026, 1406, 0), Map Felucca
+2023-04-27 11:15:05: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-27 11:15:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duping 0x4000104A (SmithHammer) (inBag=False; amount=1)
+2023-04-27 11:15:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duped 0x4000104A (SmithHammer) creating 0x40003BD6 (SmithHammer)
+2023-04-27 11:15:23: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'add nostalgium'
+2023-04-27 11:15:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1040, 1436, 0) in Felucca: "NostalgiumIngot"
+2023-04-27 11:15:28: 76.65.253.137: Serials: 0x40003BDA; 
+2023-04-27 11:16:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 11:16:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 11:16:42: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2389'
+2023-04-27 11:16:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x4000058A (Eterfer) to '2389'
+2023-04-27 11:16:57: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2389'
+2023-04-27 11:16:58: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x13 "Nuage" (no account) to '2389'
+2023-04-27 11:17:16: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 11:17:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 11:17:34: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2389'
+2023-04-27 11:17:34: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2389'
+2023-04-27 11:17:41: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2725'
+2023-04-27 11:17:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2725'
+2023-04-27 11:17:45: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2728'
+2023-04-27 11:17:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2728'
+2023-04-27 11:17:50: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2727'
+2023-04-27 11:17:51: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2727'
+2023-04-27 11:17:54: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2729'
+2023-04-27 11:17:55: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2729'
+2023-04-27 11:18:03: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'unhide '
+2023-04-27 11:18:03: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 11:18:06: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'hide '
+2023-04-27 11:18:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 11:18:12: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'add foulard'
+2023-04-27 11:18:13: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1041, 1429, 0) in Felucca: "foulard"
+2023-04-27 11:18:13: 76.65.253.137: Serials: 0x40003BDE; 
+2023-04-27 11:18:19: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-27 11:18:20: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x40003BDE (Foulard)
+2023-04-27 11:18:25: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 0'
+2023-04-27 11:18:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x21 "Dyzee" ('vive2') to '0'
+2023-04-27 11:18:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'add cache-visage'
+2023-04-27 11:18:54: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1041, 1429, 0) in Felucca: "TatouVisage"
+2023-04-27 11:18:54: 76.65.253.137: Serials: 0x40003BE6; 
+2023-04-27 11:19:20: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 11:19:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 11:19:35: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 11:19:40: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 11:19:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 12:57:21: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 12:57:24: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x3C "Achara" ('Evrard'), Localisation (2298, 408, 5), Map Felucca
+2023-04-27 12:57:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 12:58:11: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:18: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:34: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:40: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:46: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:49: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:58:59: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:59:02: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:59:14: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 12:59:32: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 12:59:37: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 13:00:02: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 13:00:09: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go fortin de colognan'
+2023-04-27 13:00:11: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 13:43:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'pages '
+2023-04-27 13:43:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 13:43:34: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x3C "Achara" ('Evrard'), Localisation (2298, 408, 5), Map Felucca
+2023-04-27 13:43:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 14:04:51: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 14:37:49: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 14:37:59: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get uhe'
+2023-04-27 14:38:02: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 14:38:09: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 1194'
+2023-04-27 14:38:13: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x4000058A (Eterfer) to '1194'
+2023-04-27 14:38:25: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 14:38:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2729'
+2023-04-27 14:38:33: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40003BDA (NostalgiumIngot) to '2729'
+2023-04-27 14:38:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 1194'
+2023-04-27 14:38:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '1194'
+2023-04-27 15:25:29: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 15:25:33: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xC9 "Riri" ('Riiem'), Localisation (1034, 1409, 0), Map Felucca
+2023-04-27 15:26:09: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 15:26:15: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 17:15:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:15:52: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1029, 1532, 8), Map Felucca
+2023-04-27 17:16:04: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:16:06: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x2F "Laydee" ('Artist'), Localisation (1061, 1411, 0), Map Felucca
+2023-04-27 17:16:17: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-27 17:16:18: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duping 0x40004889 (Masque17) (inBag=False; amount=1)
+2023-04-27 17:16:18: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duped 0x40004889 (Masque17) creating 0x400044F7 (Masque17)
+2023-04-27 17:16:25: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-27 17:16:25: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duping 0x400047FF (Toge8) (inBag=False; amount=1)
+2023-04-27 17:16:25: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duped 0x400047FF (Toge8) creating 0x400044F8 (Toge8)
+2023-04-27 17:17:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 234324324'
+2023-04-27 17:17:14: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40003BE6 (TatouVisage) to '234324324'
+2023-04-27 17:17:16: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2343243'
+2023-04-27 17:17:17: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40003BE6 (TatouVisage) to '2343243'
+2023-04-27 17:17:25: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2343243'
+2023-04-27 17:17:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x400044F8 (Toge8) to '2343243'
+2023-04-27 17:17:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 23432433'
+2023-04-27 17:17:32: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x400044F8 (Toge8) to '23432433'
+2023-04-27 17:17:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 23432433'
+2023-04-27 17:17:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x21 "Dyzee" ('vive2') to '23432433'
+2023-04-27 17:17:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 23432433'
+2023-04-27 17:17:44: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000194 (CorpsNomade) to '23432433'
+2023-04-27 17:18:37: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-27 17:18:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x40003BE6 (TatouVisage)
+2023-04-27 17:18:49: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:18:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x2F "Anonyme" ('Artist'), Localisation (1060, 1408, 1), Map Felucca
+2023-04-27 17:19:27: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 17:23:23: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:23:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1029, 1532, 8), Map Felucca
+2023-04-27 17:24:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 17:25:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:25:10: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x2F "Anonyme" ('Artist'), Localisation (1060, 1408, 1), Map Felucca
+2023-04-27 17:53:05: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:53:09: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1021, 1526, 8), Map Felucca
+2023-04-27 17:53:22: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 17:53:24: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x2F "Anonyme" ('Artist'), Localisation (1065, 1409, 0), Map Felucca
+2023-04-27 17:53:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'bank '
+2023-04-27 17:53:29: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') opening bank box of 0x2F "Anonyme" ('Artist')
+2023-04-27 17:53:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'bank '
+2023-04-27 17:53:32: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') opening bank box of 0x21 "Dyzee" ('vive2')
+2023-04-27 17:53:48: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'bank '
+2023-04-27 17:53:48: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') opening bank box of 0x21 "Dyzee" ('vive2')
+2023-04-27 17:54:37: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:08:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:08:53: 76.65.253.137: GameMaster 0x21 "Anonyme" ('vive2') used command 'anonyme '
+2023-04-27 18:08:56: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'anonyme '
+2023-04-27 18:09:21: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'bank '
+2023-04-27 18:09:22: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') opening bank box of 0x21 "Dyzee" ('vive2')
+2023-04-27 18:11:02: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:11:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 18:26:35: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:26:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x77 "Phoxie" ('Chatchat'), Localisation (1050, 1440, 1), Map Felucca
+2023-04-27 18:26:42: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:26:45: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xD3 "Tiger" ('tiger1'), Localisation (2286, 397, 0), Map Felucca
+2023-04-27 18:26:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:26:51: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1021, 1526, 8), Map Felucca
+2023-04-27 18:26:56: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:27:00: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x2F "Anonyme" ('Artist'), Localisation (1065, 1409, 0), Map Felucca
+2023-04-27 18:27:04: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:27:06: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1021, 1526, 8), Map Felucca
+2023-04-27 18:27:17: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 18:27:21: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x77 "Phoxie" ('Chatchat'), Localisation (1028, 1508, 1), Map Felucca
+2023-04-27 18:27:33: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-27 18:27:34: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1025, 1507, 2) in Felucca: "chicken"
+2023-04-27 18:27:34: 76.65.253.137: Serials: 0xD4; 
+2023-04-27 18:28:07: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'add chicken'
+2023-04-27 18:28:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1032, 1502, 1) in Felucca: "chicken"
+2023-04-27 18:28:08: 76.65.253.137: Serials: 0xD6; 
+2023-04-27 18:28:17: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm add chicken'
+2023-04-27 18:28:19: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1024, 1505, 1) in Felucca: "chicken"
+2023-04-27 18:28:19: 76.65.253.137: Serials: 0xD7; 
+2023-04-27 18:28:27: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1022, 1501, 2) in Felucca: "chicken"
+2023-04-27 18:28:27: 76.65.253.137: Serials: 0xD8; 
+2023-04-27 18:28:27: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1031, 1493, 1) in Felucca: "chicken"
+2023-04-27 18:28:27: 76.65.253.137: Serials: 0xD9; 
+2023-04-27 18:28:27: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1034, 1494, 1) in Felucca: "chicken"
+2023-04-27 18:28:27: 76.65.253.137: Serials: 0xDA; 
+2023-04-27 18:28:27: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1034, 1500, 1) in Felucca: "chicken"
+2023-04-27 18:28:27: 76.65.253.137: Serials: 0xDB; 
+2023-04-27 18:28:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1025, 1496, 2) in Felucca: "chicken"
+2023-04-27 18:28:28: 76.65.253.137: Serials: 0xDC; 
+2023-04-27 18:28:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1023, 1503, 1) in Felucca: "chicken"
+2023-04-27 18:28:30: 76.65.253.137: Serials: 0xDD; 
+2023-04-27 18:28:44: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get bodyid'
+2023-04-27 18:28:49: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'get body'
+2023-04-27 18:29:08: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-27 18:29:11: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 18:29:24: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 23:26:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 23:50:55: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 23:51:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xFC "Phoxie" ('Chatchat'), Localisation (1069, 1414, 0), Map Felucca
+2023-04-27 23:51:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 23:51:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 23:51:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:51:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:52:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 0'
+2023-04-27 23:52:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x13 "Nuage" (no account) to '0'
+2023-04-27 23:52:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-27 23:52:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:52:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:52:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2591'
+2023-04-27 23:52:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2591'
+2023-04-27 23:52:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:53:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 1365'
+2023-04-27 23:53:02: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '1365'
+2023-04-27 23:53:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:53:11: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2130'
+2023-04-27 23:53:12: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2130'
+2023-04-27 23:53:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:53:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 1755'
+2023-04-27 23:53:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '1755'
+2023-04-27 23:53:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:53:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 1779'
+2023-04-27 23:53:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '1779'
+2023-04-27 23:53:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:53:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:53:56: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2656'
+2023-04-27 23:53:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2656'
+2023-04-27 23:54:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 23:54:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2654'
+2023-04-27 23:54:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2654'
+2023-04-27 23:54:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2235'
+2023-04-27 23:54:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2235'
+2023-04-27 23:54:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2674'
+2023-04-27 23:54:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2674'
+2023-04-27 23:54:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2787'
+2023-04-27 23:54:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2787'
+2023-04-27 23:54:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'get hue'
+2023-04-27 23:54:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2724'
+2023-04-27 23:54:48: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2724'
+2023-04-27 23:54:50: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 27278'
+2023-04-27 23:54:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2727'
+2023-04-27 23:54:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2727'
+2023-04-27 23:54:56: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2729'
+2023-04-27 23:54:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2729'
+2023-04-27 23:55:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2730'
+2023-04-27 23:55:01: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2730'
+2023-04-27 23:55:03: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2731'
+2023-04-27 23:55:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2731'
+2023-04-27 23:55:06: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2732'
+2023-04-27 23:55:08: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2732'
+2023-04-27 23:55:10: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2733'
+2023-04-27 23:55:16: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2733'
+2023-04-27 23:55:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2734'
+2023-04-27 23:55:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2734'
+2023-04-27 23:55:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2735'
+2023-04-27 23:55:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2735'
+2023-04-27 23:55:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2736'
+2023-04-27 23:55:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2736'
+2023-04-27 23:55:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2737'
+2023-04-27 23:55:31: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2737'
+2023-04-27 23:55:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 2738'
+2023-04-27 23:55:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x40000248 (GMRobe) to '2738'
+2023-04-27 23:55:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:44: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:44: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:45: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-27 23:55:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xFC "Phoxie" ('Chatchat'), Localisation (1099, 1346, 0), Map Felucca
+2023-04-27 23:55:55: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-27 23:55:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:57: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:55:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-27 23:56:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-27 23:56:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 00:18:53: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'pages '
+2023-04-28 00:18:58: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 00:53:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 00:53:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 00:53:47: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'move '
+2023-04-28 00:53:50: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') moving 0xB01 "Kenelm" (no account) to (1071, 1396, 15)
+2023-04-28 00:53:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 00:53:52: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:09:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:09:20: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:09:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:09:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:09:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:09:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:09:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:09:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:09:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:09:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:09:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:09:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:09:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 01:09:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1062, 1408, 0), Map Felucca
+2023-04-28 01:22:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 01:22:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1120, 1323, -20), Map Felucca
+2023-04-28 01:23:09: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 01:23:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:23:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:26: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:23:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:29: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:23:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:30: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:32: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:23:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:34: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:23:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:40: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:42: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:23:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:23:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:24:02: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'props '
+2023-04-28 01:25:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') set property 'Mana' of 0x21 "Dyzee" ('vive2') to '59999'
+2023-04-28 01:25:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set manamax 999'
+2023-04-28 01:25:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'set namef'
+2023-04-28 01:26:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:26:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:26:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:26:07: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:26:10: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:26:15: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:26:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 01:26:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:26:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:26:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:26:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:26:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:26:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:26:28: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 01:26:33: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'pages '
+2023-04-28 01:29:38: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:29:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 01:29:51: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1120, 1323, -20), Map Felucca
+2023-04-28 01:29:55: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 01:29:59: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') moving 0x13A0 "Ganelon" ('GHelmet') to (1120, 1323, -20)
+2023-04-28 01:30:03: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 01:30:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:30:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:30:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 01:30:05: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 01:30:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 02:22:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 02:22:04: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 02:22:06: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 02:22:11: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1060, 1381, -1), Map Felucca
+2023-04-28 02:22:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 02:22:23: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xFC "Phoxie" ('Chatchat'), Localisation (1258, 967, 7), Map Felucca
+2023-04-28 02:22:25: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 02:22:27: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1065, 1381, -1), Map Felucca
+2023-04-28 02:33:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 02:41:41: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 02:41:49: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 02:42:39: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'flip '
+2023-04-28 02:48:18: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 02:59:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 03:16:21: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 03:16:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x13A0 "Ganelon" ('GHelmet'), Localisation (1065, 1381, -1), Map Felucca
+2023-04-28 03:16:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-28 03:16:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duping 0x40003513 (Lunettes) (inBag=False; amount=1)
+2023-04-28 03:16:36: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') duped 0x40003513 (Lunettes) creating 0x4000013E (Lunettes)
+2023-04-28 03:25:00: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 03:25:03: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1017, 1475, 8), Map Felucca
+2023-04-28 11:26:06: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 11:26:29: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 14:27:14: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 15:07:40: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 15:07:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x3C "Achara" ('Evrard'), Localisation (1066, 1377, 0), Map Felucca
+2023-04-28 15:07:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 15:07:50: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCA "Vaelena" ('Vaelena'), Localisation (1027, 1408, -1), Map Felucca
+2023-04-28 15:27:43: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 15:27:51: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 15:29:50: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 15:29:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x35 "PsyDoubt" ('PsyDoubt'), Localisation (1067, 1408, 0), Map Felucca
+2023-04-28 15:52:20: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 16:11:10: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 16:31:03: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 16:31:14: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-28 16:31:23: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-28 16:31:24: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duping 0x4000013D (CorpsMontagnard) (inBag=False; amount=1)
+2023-04-28 16:31:24: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duped 0x4000013D (CorpsMontagnard) creating 0x4000194C (CorpsMontagnard)
+2023-04-28 16:31:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'props '
+2023-04-28 16:31:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'Movable' of 0x4000194C (CorpsMontagnard) to 'True'
+2023-04-28 16:31:55: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'delete '
+2023-04-28 16:31:57: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') deleting 0x40000194 (CorpsNomade)
+2023-04-28 16:32:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'dupe '
+2023-04-28 16:32:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duping 0x4000013D (CorpsMontagnard) (inBag=False; amount=1)
+2023-04-28 16:32:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') duped 0x4000013D (CorpsMontagnard) creating 0x40001959 (CorpsMontagnard)
+2023-04-28 16:32:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set movable true'
+2023-04-28 16:32:42: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'movable' of 0x40001959 (CorpsMontagnard) to 'True'
+2023-04-28 16:32:52: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set hue 1'
+2023-04-28 16:32:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'hue' of 0x21 "Dyzee" ('vive2') to '1'
+2023-04-28 16:33:04: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 16:33:04: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 16:33:27: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'add race'
+2023-04-28 16:33:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') building at (1060, 1377, 0) in Felucca: "race"
+2023-04-28 16:33:33: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'go '
+2023-04-28 16:34:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 16:34:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 16:35:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'set allskills 100'
+2023-04-28 16:35:37: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'setallskills 100'
+2023-04-28 16:35:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'EverySkill.Base' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-28 16:35:42: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'setallskills 1999'
+2023-04-28 16:35:44: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'EverySkill.Base' of 0x21 "Dyzee" ('vive2') to '1999'
+2023-04-28 16:35:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'setallskills 100'
+2023-04-28 16:35:48: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') set property 'EverySkill.Base' of 0x21 "Dyzee" ('vive2') to '100'
+2023-04-28 16:35:58: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:25:17: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:25:20: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1031, 1532, 8), Map Felucca
+2023-04-28 17:25:28: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:25:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1023, 1478, 8), Map Felucca
+2023-04-28 17:25:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-28 17:25:59: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-04-28 17:25:59: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-04-28 17:28:00: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:28:07: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') hiding 0x21 "Dyzee" ('vive2')
+2023-04-28 17:28:07: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'self hide'
+2023-04-28 17:28:10: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-04-28 17:29:34: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:29:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1031, 1532, 8), Map Felucca
+2023-04-28 17:29:38: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:29:42: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1023, 1478, 8), Map Felucca
+2023-04-28 17:30:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-28 17:30:41: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-28 17:32:48: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:32:53: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1029, 1531, 8), Map Felucca
+2023-04-28 17:34:31: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:39:47: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:39:54: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "poq" ('allo123'), Localisation (1023, 1478, 8), Map Felucca
+2023-04-28 17:39:58: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-28 17:39:59: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1035, 1535, 8), Map Felucca
+2023-04-28 17:42:01: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-28 17:42:33: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'tele '
+2023-04-28 19:41:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-29 14:05:35: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-29 14:05:37: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x6C "Targ" ('Targrak'), Localisation (1070, 1405, 6), Map Felucca
+2023-04-29 16:29:13: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-29 16:29:17: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x48 "groslaid" ('allo123'), Localisation (1023, 1478, 28), Map Felucca
+2023-04-29 18:17:09: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-29 18:17:12: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x87 "Johnny Bravo" ('Adax'), Localisation (1186, 1161, 2), Map Felucca
+2023-04-29 18:17:22: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-29 18:17:24: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x26 "Nebula" ('Nebelpfade'), Localisation (1066, 1383, 0), Map Felucca
+2023-04-30 15:03:43: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-04-30 15:03:46: 184.160.109.184: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0xCB "Hebius" ('Hebius'), Localisation (1072, 1411, 0), Map Felucca
+2023-05-01 11:07:29: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm 3tele'
+2023-05-01 11:07:36: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-05-01 11:07:40: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'm tele'
+2023-05-01 11:08:41: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') unhiding 0x21 "Dyzee" ('vive2')
+2023-05-01 11:08:41: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'self unhide'
+2023-05-01 11:17:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'posseder '
+2023-05-01 11:17:41: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'qui '
+2023-05-01 11:17:46: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'invul '
+2023-05-01 11:17:48: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') set property 'blessed' of 0x21 " Ecureuil" ('vive2') to 'True'
+2023-05-01 11:18:16: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'flip '
+2023-05-01 13:30:50: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'who '
+2023-05-01 13:30:55: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') hiding 0x21 " Ecureuil" ('vive2')
+2023-05-01 13:30:55: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'self hide'
+2023-05-01 13:31:00: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') hiding 0x21 " Ecureuil" ('vive2')
+2023-05-01 13:31:00: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'self hide'
+2023-05-01 13:31:07: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'posseder '
+2023-05-01 13:31:13: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'posseder '
+2023-05-01 13:31:16: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'kill '
+2023-05-01 13:31:20: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'mortal '
+2023-05-01 13:31:20: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') set property 'blessed' of 0x21 " Ecureuil" ('vive2') to 'False'
+2023-05-01 13:31:21: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') used command 'kill '
+2023-05-01 13:31:22: 76.65.253.137: GameMaster 0x21 " Ecureuil" ('vive2') killing 0x21 " Ecureuil" ('vive2')
+2023-05-01 13:31:26: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-05-01 13:31:30: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') se dirige sur 0x87 "Johnny Bravo" ('Adax'), Localisation (1084, 1402, 0), Map Felucca
+2023-05-01 13:31:55: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-05-02 12:57:16: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-05-02 13:51:39: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-05-02 14:45:22: 76.65.253.137: GameMaster 0x21 "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:01:15: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:01:15: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:01:19: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add gmrobe'
+2023-05-02 23:01:20: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1070, 1399, 14) in Felucca: "gmrobe"
+2023-05-02 23:01:20: 184.160.109.184: Serials: 0x400021AC; 
+2023-05-02 23:01:27: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:01:32: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') se dirige sur 0xB0A "Phoxie" ('Chatchat'), Localisation (1262, 926, 1), Map Felucca
+2023-05-02 23:01:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:01:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:02:05: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add lama'
+2023-05-02 23:02:08: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1262, 929, 1) in Felucca: "RidableLlama"
+2023-05-02 23:02:08: 184.160.109.184: Serials: 0xB16; 
+2023-05-02 23:02:34: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:02:34: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:02:34: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:03:55: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:03:59: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:04:01: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:04:05: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:04:29: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'setallskills 100'
+2023-05-02 23:04:30: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'EverySkill.Base' of 0xB0F "Dyzee" ('vive2') to '100'
+2023-05-02 23:06:34: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'setallskills 100'
+2023-05-02 23:06:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'EverySkill.Base' of 0xB0F "Dyzee" ('vive2') to '100'
+2023-05-02 23:13:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add dragon'
+2023-05-02 23:13:41: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1255, 927, -1) in Felucca: "dragon"
+2023-05-02 23:13:41: 184.160.109.184: Serials: 0xB47; 
+2023-05-02 23:13:44: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'delete '
+2023-05-02 23:13:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'kill '
+2023-05-02 23:13:53: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'res '
+2023-05-02 23:13:54: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') resurrecting 0xB08 "Zizi" ('allo123')
+2023-05-02 23:14:04: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'res '
+2023-05-02 23:14:05: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') resurrecting 0xB08 "Zizi" ('allo123')
+2023-05-02 23:14:19: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'set hit 999'
+2023-05-02 23:15:14: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'res '
+2023-05-02 23:15:15: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') resurrecting 0xB08 "Zizi" ('allo123')
+2023-05-02 23:15:36: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'res '
+2023-05-02 23:15:44: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'res '
+2023-05-02 23:15:45: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') resurrecting 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:17:28: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add lunette'
+2023-05-02 23:17:30: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1261, 924, 0) in Felucca: "Lunettes"
+2023-05-02 23:17:30: 184.160.109.184: Serials: 0x40002484; 
+2023-05-02 23:21:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add baton'
+2023-05-02 23:21:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1261, 925, 3) in Felucca: "BatonVagabond"
+2023-05-02 23:21:38: 184.160.109.184: Serials: 0x40002486; 
+2023-05-02 23:21:47: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add chapeau'
+2023-05-02 23:21:55: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1261, 924, 0) in Felucca: "ChapeauToc"
+2023-05-02 23:21:55: 184.160.109.184: Serials: 0x4000248C; 
+2023-05-02 23:22:02: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1261, 925, 3) in Felucca: "ChapeauPlume1"
+2023-05-02 23:22:02: 184.160.109.184: Serials: 0x4000249C; 
+2023-05-02 23:28:08: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'SET HEAL 11111'
+2023-05-02 23:28:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'SET HIT 99'
+2023-05-02 23:28:17: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'SET HITS 99'
+2023-05-02 23:28:18: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'HITS' of 0xB0F "Dyzee" ('vive2') to '99'
+2023-05-02 23:28:23: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'invul '
+2023-05-02 23:28:24: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'blessed' of 0xB0F "Dyzee" ('vive2') to 'True'
+2023-05-02 23:29:18: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:29:23: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:29:25: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:31:41: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add mount'
+2023-05-02 23:32:00: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'delete '
+2023-05-02 23:32:03: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add mount'
+2023-05-02 23:32:06: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1259, 921, 1) in Felucca: "TigerMount"
+2023-05-02 23:32:06: 184.160.109.184: Serials: 0xB5D; 
+2023-05-02 23:32:08: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'delete '
+2023-05-02 23:32:11: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x40002179 (Arrow)
+2023-05-02 23:34:33: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:35:00: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'kill '
+2023-05-02 23:35:06: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'mortal '
+2023-05-02 23:35:07: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'blessed' of 0xB0F "Dyzee" ('vive2') to 'False'
+2023-05-02 23:35:15: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'delete '
+2023-05-02 23:35:18: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'kill '
+2023-05-02 23:35:19: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') killing 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:35:21: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'res '
+2023-05-02 23:35:22: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') resurrecting 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:36:00: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:36:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-02 23:37:18: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm delete'
+2023-05-02 23:37:19: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x40001370 (Pantalon6)
+2023-05-02 23:37:20: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x40001371 (Pantalon8)
+2023-05-02 23:37:21: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x4000149F (Dagger)
+2023-05-02 23:37:21: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x40001375 (Dagger)
+2023-05-02 23:37:22: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x4000106F (LivreVierge)
+2023-05-02 23:37:23: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x40001070 (LivreVierge)
+2023-05-02 23:37:23: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') deleting 0x40000F75 (PlainoisLeather)
+2023-05-02 23:38:20: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:43:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:45:03: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:46:55: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:49:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:51:11: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:51:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:51:16: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:52:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:52:20: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'ADD PAGN'
+2023-05-02 23:52:24: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'ADD PA'
+2023-05-02 23:52:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add sewing'
+2023-05-02 23:52:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1044, 1411, 0) in Felucca: "SewingKit"
+2023-05-02 23:52:37: 184.160.109.184: Serials: 0x40002706; 
+2023-05-02 23:53:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add toque'
+2023-05-02 23:53:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1043, 1411, -1) in Felucca: "toque"
+2023-05-02 23:53:50: 184.160.109.184: Serials: 0x4000272A; 
+2023-05-02 23:54:19: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add petit carquois'
+2023-05-02 23:54:28: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1044, 1411, 0) in Felucca: "Carquois"
+2023-05-02 23:54:28: 184.160.109.184: Serials: 0x40002730; 
+2023-05-02 23:54:42: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add tablier'
+2023-05-02 23:54:52: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1044, 1411, 0) in Felucca: "Apron"
+2023-05-02 23:54:52: 184.160.109.184: Serials: 0x40002732; 
+2023-05-02 23:54:53: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1044, 1410, 0) in Felucca: "Apron"
+2023-05-02 23:54:53: 184.160.109.184: Serials: 0x40002734; 
+2023-05-02 23:55:10: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'invul '
+2023-05-02 23:55:11: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'blessed' of 0xB0F "Dyzee" ('vive2') to 'True'
+2023-05-02 23:55:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:55:30: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:55:32: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:32: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:33: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:33: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:36: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:36: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'mortal '
+2023-05-02 23:55:41: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') set property 'blessed' of 0xB0F "Dyzee" ('vive2') to 'False'
+2023-05-02 23:55:42: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:42: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:42: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:42: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:43: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:43: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:47: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:47: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:48: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:48: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:49: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:50: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-02 23:55:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-02 23:56:01: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:56:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-02 23:56:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go jail'
+2023-05-02 23:56:54: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-02 23:57:51: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go '
+2023-05-02 23:57:57: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-02 23:57:58: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-02 23:57:59: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go '
+2023-05-02 23:58:02: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-02 23:58:04: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go '
+2023-05-02 23:58:22: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-02 23:58:28: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go '
+2023-05-02 23:59:29: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go fellucia'
+2023-05-02 23:59:32: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go felluca'
+2023-05-02 23:59:48: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go felucca'
+2023-05-02 23:59:53: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'go '
+2023-05-03 00:00:02: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:13: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:02:58: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:03:07: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add lunette'
+2023-05-03 00:03:09: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1069, 1411, -1) in Felucca: "Lunettes1"
+2023-05-03 00:03:09: 184.160.109.184: Serials: 0x40002738; 
+2023-05-03 00:03:10: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add lunette'
+2023-05-03 00:03:12: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1070, 1411, -1) in Felucca: "Lunettes2"
+2023-05-03 00:03:12: 184.160.109.184: Serials: 0x4000273A; 
+2023-05-03 00:03:14: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'add lunette'
+2023-05-03 00:03:15: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') building at (1070, 1410, 0) in Felucca: "Lunettes3"
+2023-05-03 00:03:15: 184.160.109.184: Serials: 0x4000273C; 
+2023-05-03 00:03:59: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:04:53: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 00:04:53: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-03 00:04:53: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-03 00:04:59: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-03 00:12:44: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 20:50:09: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 20:50:09: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') unhiding 0xB0F "Dyzee" ('vive2')
+2023-05-03 20:50:09: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self unhide'
+2023-05-03 21:34:23: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 21:34:25: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-03 21:34:25: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-03 21:34:27: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-03 21:34:33: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 21:34:34: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') se dirige sur 0xC3D "GHelmet" ('GHelmet'), Localisation (2295, 406, 2), Map Felucca
+2023-05-03 21:34:36: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 21:34:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') se dirige sur 0xB08 "Zizi" ('allo123'), Localisation (1104, 1404, 7), Map Felucca
+2023-05-03 22:01:29: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 22:01:31: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') se dirige sur 0xB08 "Zizi" ('allo123'), Localisation (1103, 1400, -1), Map Felucca
+2023-05-03 22:13:56: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-03 22:13:59: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') se dirige sur 0xB08 "Zizi" ('allo123'), Localisation (1103, 1400, -1), Map Felucca
+2023-05-03 23:36:21: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 00:54:40: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 01:01:34: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 01:01:35: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'm tele'
+2023-05-04 01:01:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:01:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:37: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:38: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:01:39: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') hiding 0xB0F "Dyzee" ('vive2')
+2023-05-04 01:01:39: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'self hide'
+2023-05-04 01:32:31: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 12:06:20: 76.65.253.137: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 13:16:43: 76.65.253.137: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 13:48:40: 76.65.253.137: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 23:16:56: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-04 23:17:05: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-05 03:33:06: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '
+2023-05-05 03:33:10: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') se dirige sur 0xB0A "Phoxie" ('Chatchat'), Localisation (1062, 1410, 0), Map Felucca
+2023-05-05 03:33:18: 184.160.109.184: GameMaster 0xB0F "Dyzee" ('vive2') used command 'who '

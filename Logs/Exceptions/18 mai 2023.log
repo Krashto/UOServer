@@ -1,0 +1,14 @@
+##############################
+Exception log started on 2023-05-18 02:49:24
+
+Exception Caught: 2023-05-18 02:49:24
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-05-18 22:51:15
+
+Exception Caught: 2023-05-18 22:51:15
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+

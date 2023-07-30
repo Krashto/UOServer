@@ -1,0 +1,37 @@
+##############################
+Exception log started on 2023-06-04 00:44:40
+
+Exception Caught: 2023-06-04 00:44:40
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-06-04 13:28:18
+
+Exception Caught: 2023-06-04 13:28:18
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-06-04 14:30:26
+
+Exception Caught: 2023-06-04 14:30:26
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+Exception Caught: 2023-06-04 19:11:18
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-06-04 19:11:29
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+

@@ -1,0 +1,168 @@
+##############################
+Log started on 2023-07-30 7:12:38 PM
+
+##############################
+Log started on 2023-07-30 7:13:06 PM
+
+##############################
+Log started on 2023-07-30 7:14:24 PM
+
+##############################
+Log started on 2023-07-30 7:15:38 PM
+
+##############################
+Log started on 2023-07-30 7:18:05 PM
+
+##############################
+Log started on 2023-07-30 7:20:00 PM
+
+##############################
+Log started on 2023-07-30 7:23:56 PM
+
+##############################
+Log started on 2023-07-30 7:26:55 PM
+
+##############################
+Log started on 2023-07-30 7:29:51 PM
+
+2023-07-30 7:31:07 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') used command 'add stone'
+2023-07-30 7:31:10 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') building at (2296, 407, 5) in Felucca: "CreationStone2"
+2023-07-30 7:31:10 PM: 127.0.0.1: Serials: 0x40000012; 
+2023-07-30 7:31:14 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') building at (2296, 407, 5) in Felucca: "CreationStone"
+2023-07-30 7:31:14 PM: 127.0.0.1: Serials: 0x40000013; 
+2023-07-30 7:31:15 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') building at (2294, 404, 0) in Felucca: "CreationStone"
+2023-07-30 7:31:15 PM: 127.0.0.1: Serials: 0x40000014; 
+2023-07-30 7:31:16 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') building at (2292, 403, 0) in Felucca: "CreationStone"
+2023-07-30 7:31:16 PM: 127.0.0.1: Serials: 0x40000015; 
+2023-07-30 7:31:22 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') building at (2292, 404, 0) in Felucca: "Lodestone"
+2023-07-30 7:31:22 PM: 127.0.0.1: Serials: 0x40000016; 
+2023-07-30 7:31:23 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') building at (2298, 400, 0) in Felucca: "Lodestone"
+2023-07-30 7:31:23 PM: 127.0.0.1: Serials: 0x40000017; 
+2023-07-30 7:31:48 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') used command 'props '
+2023-07-30 7:32:04 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:32:12 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') set property 'BaseRace' of 0x2 "Krash" ('KrashAdmin') to 'Elfe sombre'
+2023-07-30 7:32:17 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') set property 'BaseRace' of 0x2 "Krash" ('KrashAdmin') to 'Haut-Elfe'
+2023-07-30 7:32:22 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') set property 'Beaute' of 0x2 "Krash" ('KrashAdmin') to 'Elegant'
+2023-07-30 7:32:30 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') used command 'set Name Namalae'
+2023-07-30 7:32:31 PM: 127.0.0.1: Owner 0x2 "Krash" ('KrashAdmin') set property 'Name' of 0x2 "Krash" ('KrashAdmin') to 'Namalae'
+2023-07-30 7:32:39 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') used command 'set IsFemale True'
+2023-07-30 7:32:54 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') used command 'set Female True'
+2023-07-30 7:32:55 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') set property 'Female' of 0x2 "Namalae" ('KrashAdmin') to 'True'
+2023-07-30 7:33:09 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') used command 'remove '
+2023-07-30 7:33:09 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') deleting 0x40000016 (Lodestone)
+2023-07-30 7:33:12 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') used command 'delete '
+2023-07-30 7:33:13 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') deleting 0x40000014 (CreationStone)
+2023-07-30 7:33:14 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') used command 'delete '
+2023-07-30 7:33:14 PM: 127.0.0.1: Owner 0x2 "Namalae" ('KrashAdmin') deleting 0x40000015 (CreationStone)
+2023-07-30 7:34:26 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add stone'
+2023-07-30 7:34:27 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (935, 1551, 0) in Felucca: "CreationStone"
+2023-07-30 7:34:27 PM: 127.0.0.1: Serials: 0x40000022; 
+2023-07-30 7:34:29 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add stone'
+2023-07-30 7:34:30 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (935, 1548, 0) in Felucca: "CreationStone2"
+2023-07-30 7:34:30 PM: 127.0.0.1: Serials: 0x40000023; 
+2023-07-30 7:35:45 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add stone'
+2023-07-30 7:35:47 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (3718, 868, 30) in Felucca: "CreationStone2"
+2023-07-30 7:35:47 PM: 127.0.0.1: Serials: 0x4000002D; 
+2023-07-30 7:37:20 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'm tele'
+2023-07-30 7:38:06 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add gmrobe'
+2023-07-30 7:38:07 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1062, 1410, 0) in Felucca: "gmrobe"
+2023-07-30 7:38:07 PM: 127.0.0.1: Serials: 0x40000030; 
+2023-07-30 7:38:24 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add tub'
+2023-07-30 7:38:26 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add dye'
+2023-07-30 7:38:36 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1062, 1408, 0) in Felucca: "CitronAbrasifDyeTub"
+2023-07-30 7:38:36 PM: 127.0.0.1: Serials: 0x40000031; 
+2023-07-30 7:38:49 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'get hue'
+2023-07-30 7:38:53 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'set hue 3942'
+2023-07-30 7:38:56 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'set hue 2943'
+2023-07-30 7:38:57 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'hue' of 0x40000030 (GMRobe) to '2943'
+2023-07-30 7:39:43 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'm tele'
+2023-07-30 7:39:56 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'm tele'
+2023-07-30 7:41:36 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'm tele'
+2023-07-30 7:48:07 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'restart '
+2023-07-30 7:48:18 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+##############################
+Log started on 2023-07-30 7:48:53 PM
+
+2023-07-30 7:49:06 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'props '
+2023-07-30 7:49:13 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'BaseAeromancie' of ... to '10'
+2023-07-30 7:49:16 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:49:21 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'set xp 50000'
+2023-07-30 7:49:23 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:49:24 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'props '
+2023-07-30 7:49:37 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'Exp' of Server.CustomScripts.Systems.Experience.ExperienceSystem to '49800'
+2023-07-30 7:49:41 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:49:51 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 7:49:52 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+2023-07-30 7:49:57 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add spell'
+2023-07-30 7:49:59 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add pse'
+2023-07-30 7:50:08 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1064, 1383, -1) in Felucca: "NewSpellbook"
+2023-07-30 7:50:08 PM: 127.0.0.1: Serials: 0x40000011; 
+2023-07-30 7:50:16 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add vortexscroll'
+2023-07-30 7:50:17 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1064, 1382, -1) in Felucca: "vortexscroll"
+2023-07-30 7:50:17 PM: 127.0.0.1: Serials: 0x40000014; 
+2023-07-30 7:50:24 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add EssenceAeromancie 100'
+2023-07-30 7:50:25 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1064, 1383, -1) in Felucca: "EssenceAeromancie" "100"
+2023-07-30 7:50:25 PM: 127.0.0.1: Serials: 0x40000015; 
+2023-07-30 7:50:28 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:50:40 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'set niveau 50'
+2023-07-30 7:50:43 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'props '
+2023-07-30 7:50:49 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'Niveau' of Server.CustomScripts.Systems.Experience.ExperienceSystem to '50'
+2023-07-30 7:50:53 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'props '
+2023-07-30 7:50:54 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:51:00 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 7:51:01 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+2023-07-30 7:51:02 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:52:37 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'save '
+2023-07-30 7:52:39 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'restart '
+##############################
+Log started on 2023-07-30 7:55:16 PM
+
+2023-07-30 7:56:38 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'restart '
+##############################
+Log started on 2023-07-30 7:56:53 PM
+
+2023-07-30 7:57:10 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:57:17 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'fiche '
+2023-07-30 7:57:19 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'props '
+2023-07-30 7:57:35 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 7:57:35 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+##############################
+Log started on 2023-07-30 7:58:18 PM
+
+2023-07-30 7:58:27 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 7:58:28 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+##############################
+Log started on 2023-07-30 7:59:17 PM
+
+2023-07-30 7:59:25 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 7:59:26 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+2023-07-30 7:59:47 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'invul '
+2023-07-30 7:59:48 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'blessed' of 0x3 "Hedley" ('KrashAdmin') to 'True'
+2023-07-30 7:59:50 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add orc'
+2023-07-30 7:59:51 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1060, 1386, 0) in Felucca: "orc"
+2023-07-30 7:59:51 PM: 127.0.0.1: Serials: 0x2; 
+2023-07-30 7:59:54 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add '
+2023-07-30 8:00:06 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'Add Eagle'
+2023-07-30 8:00:06 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1062, 1386, 0) in Felucca: "Eagle"
+2023-07-30 8:00:06 PM: 127.0.0.1: Serials: 0x4; 
+2023-07-30 8:00:30 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 8:00:30 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+2023-07-30 8:00:41 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'delete '
+2023-07-30 8:00:41 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') deleting 0x2 " Orc" (no account)
+2023-07-30 8:00:42 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'delete '
+2023-07-30 8:00:43 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') deleting 0x4 " Aigle" (no account)
+##############################
+Log started on 2023-07-30 8:01:23 PM
+
+2023-07-30 8:01:45 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'add orc'
+2023-07-30 8:01:46 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') building at (1061, 1385, 0) in Felucca: "orc"
+2023-07-30 8:01:46 PM: 127.0.0.1: Serials: 0x2; 
+2023-07-30 8:01:50 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 8:01:51 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'
+2023-07-30 8:02:16 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'kill '
+2023-07-30 8:02:17 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') killing 0x2 " Orc" (no account)
+##############################
+Log started on 2023-07-30 8:03:21 PM
+
+2023-07-30 8:03:32 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') used command 'setskill spiritspeak 100'
+2023-07-30 8:03:33 PM: 127.0.0.1: Owner 0x3 "Hedley" ('KrashAdmin') set property 'SpiritSpeak.Base' of 0x3 "Hedley" ('KrashAdmin') to '100'

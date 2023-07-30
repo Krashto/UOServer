@@ -1,0 +1,1923 @@
+##############################
+Log started on 2023-03-17 12:07:49
+
+2023-03-17 12:08:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add mummy'
+2023-03-17 12:08:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2280, 113, 0) in Felucca: "mummy"
+2023-03-17 12:08:51: 127.0.0.1: Serials: 0x6; 
+2023-03-17 12:08:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'allspells '
+2023-03-17 12:09:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add newspellbook'
+2023-03-17 12:09:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2283, 105, 0) in Felucca: "newspellbook"
+2023-03-17 12:09:02: 127.0.0.1: Serials: 0x40000007; 
+2023-03-17 12:09:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'allspells '
+2023-03-17 12:09:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-17 12:09:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 12:09:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-17 12:10:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'unhide '
+2023-03-17 12:10:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') unhiding 0x2 "Mig" ('Mig')
+2023-03-17 12:10:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'unhide '
+2023-03-17 12:10:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') unhiding 0x3 "Nucca" ('admin')
+2023-03-17 12:11:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-17 12:11:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 12:11:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hit 200'
+2023-03-17 12:11:51: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 12:11:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 300'
+2023-03-17 12:11:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x6 "a mummy" (no account) to '300'
+2023-03-17 12:12:26: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'fiche '
+2023-03-17 12:12:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 12:12:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 12:12:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 12:13:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-17 12:14:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'fiche '
+2023-03-17 12:14:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-17 12:15:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add mummy'
+2023-03-17 12:15:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2272, 105, 0) in Felucca: "mummy"
+2023-03-17 12:15:47: 127.0.0.1: Serials: 0x7; 
+2023-03-17 12:15:49: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 12:16:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 12:16:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x5F "Un Tigre" (no account)
+2023-03-17 12:16:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 12:16:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 12:16:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 12:16:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x27 "an ant lion" (no account)
+2023-03-17 12:16:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 12:16:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 12:16:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add magi'
+2023-03-17 12:17:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 107, 0) in Felucca: "BoneMagi"
+2023-03-17 12:17:01: 127.0.0.1: Serials: 0x8; 
+2023-03-17 12:17:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set bodyvalue 478'
+2023-03-17 12:17:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'bodyvalue' of 0x82 "a wraith" (no account) to '478'
+2023-03-17 12:18:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set bodyvalue 476'
+2023-03-17 12:18:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'bodyvalue' of 0x82 "a wraith" (no account) to '476'
+2023-03-17 12:18:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set bodyvalue 477'
+2023-03-17 12:18:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'bodyvalue' of 0x82 "a wraith" (no account) to '477'
+2023-03-17 12:18:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boneknight'
+2023-03-17 12:18:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2269, 110, 0) in Felucca: "boneknight"
+2023-03-17 12:18:22: 127.0.0.1: Serials: 0x9; 
+2023-03-17 12:19:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add bonedemon'
+2023-03-17 12:19:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2272, 116, 0) in Felucca: "bonedemon"
+2023-03-17 12:19:21: 127.0.0.1: Serials: 0xA; 
+2023-03-17 12:19:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 12:19:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 12:19:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 12:19:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xA "a bone demon" (no account)
+2023-03-17 12:19:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 10'
+2023-03-17 12:19:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 12:19:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 12:20:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add skel'
+2023-03-17 12:20:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2270, 112, 0) in Felucca: "Skeleton"
+2023-03-17 12:20:17: 127.0.0.1: Serials: 0xB; 
+2023-03-17 12:24:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 12:24:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add alligator'
+2023-03-17 12:24:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2275, 118, 0) in Felucca: "alligator"
+2023-03-17 12:24:07: 70.55.171.10: Serials: 0xC; 
+2023-03-17 12:24:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add rune'
+2023-03-17 12:24:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 12:24:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 12:24:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0xC "an alligator" (no account)
+2023-03-17 12:25:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add lich'
+2023-03-17 12:25:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2269, 113, 0) in Felucca: "lich"
+2023-03-17 12:25:41: 127.0.0.1: Serials: 0xD; 
+2023-03-17 12:25:51: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 12:26:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boura'
+2023-03-17 12:26:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 107, 0) in Felucca: "RuddyBoura"
+2023-03-17 12:26:38: 127.0.0.1: Serials: 0xE; 
+2023-03-17 12:27:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 12:27:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 12:27:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 12:27:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bandage'
+2023-03-17 12:27:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 108, 0) in Felucca: "bandage"
+2023-03-17 12:27:50: 70.55.171.10: Serials: 0x40000144; 
+2023-03-17 12:27:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 12:27:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000144 (Bandage) to '100'
+2023-03-17 12:28:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add ratman'
+2023-03-17 12:28:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 106, 0) in Felucca: "ratman"
+2023-03-17 12:28:15: 127.0.0.1: Serials: 0xF; 
+2023-03-17 12:28:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 12:28:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xE "a ruddy boura" (no account)
+2023-03-17 12:32:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 50'
+2023-03-17 12:32:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x3 "Nucca" ('admin') to '50'
+##############################
+Log started on 2023-03-17 13:20:31
+
+2023-03-17 13:20:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add zombie'
+2023-03-17 13:20:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2279, 116, 0) in Felucca: "zombie"
+2023-03-17 13:20:52: 127.0.0.1: Serials: 0x6; 
+2023-03-17 13:20:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm add zombie'
+2023-03-17 13:20:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2280, 115, 0) in Felucca: "zombie"
+2023-03-17 13:20:55: 127.0.0.1: Serials: 0x7; 
+2023-03-17 13:20:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2280, 115, 0) in Felucca: "zombie"
+2023-03-17 13:20:55: 127.0.0.1: Serials: 0x8; 
+2023-03-17 13:20:58: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'kill '
+2023-03-17 13:20:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x7 "Un zombie" (no account)
+2023-03-17 13:21:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'kill '
+2023-03-17 13:21:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x8 "Un zombie" (no account)
+2023-03-17 13:21:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'kill '
+2023-03-17 13:21:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x6 "Un zombie" (no account)
+2023-03-17 13:21:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm add zombie'
+2023-03-17 13:21:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2280, 113, 0) in Felucca: "zombie"
+2023-03-17 13:21:18: 127.0.0.1: Serials: 0x9; 
+2023-03-17 13:21:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2281, 113, 0) in Felucca: "zombie"
+2023-03-17 13:21:19: 127.0.0.1: Serials: 0xA; 
+2023-03-17 13:21:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2281, 113, 0) in Felucca: "zombie"
+2023-03-17 13:21:19: 127.0.0.1: Serials: 0xB; 
+2023-03-17 13:21:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2281, 113, 0) in Felucca: "zombie"
+2023-03-17 13:21:19: 127.0.0.1: Serials: 0xC; 
+2023-03-17 13:21:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2282, 114, 0) in Felucca: "zombie"
+2023-03-17 13:21:19: 127.0.0.1: Serials: 0xD; 
+2023-03-17 13:21:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2282, 114, 0) in Felucca: "zombie"
+2023-03-17 13:21:19: 127.0.0.1: Serials: 0xE; 
+2023-03-17 13:21:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2282, 114, 0) in Felucca: "zombie"
+2023-03-17 13:21:19: 127.0.0.1: Serials: 0xF; 
+2023-03-17 13:21:22: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'area kill'
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0xF "Un zombie" (no account)
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0xE "Un zombie" (no account)
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0xD "Un zombie" (no account)
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0xC "Un zombie" (no account)
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0xB "Un zombie" (no account)
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0xA "Un zombie" (no account)
+2023-03-17 13:21:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x9 "Un zombie" (no account)
+2023-03-17 14:46:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bogle'
+2023-03-17 14:46:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2271, 109, 0) in Felucca: "bogle"
+2023-03-17 14:46:45: 70.55.171.10: Serials: 0x10; 
+2023-03-17 14:46:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:46:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 14:46:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 14:46:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 14:47:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:47:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x10 "a bogle" (no account)
+2023-03-17 14:50:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add wight'
+2023-03-17 14:50:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2271, 109, 0) in Felucca: "wight"
+2023-03-17 14:50:47: 70.55.171.10: Serials: 0x11; 
+2023-03-17 14:50:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 14:50:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'kill '
+2023-03-17 14:50:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') killing 0x11 "a Wight" (no account)
+2023-03-17 14:51:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add wight'
+2023-03-17 14:51:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2271, 111, 0) in Felucca: "wight"
+2023-03-17 14:51:09: 70.55.171.10: Serials: 0x12; 
+2023-03-17 14:51:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add dream'
+2023-03-17 14:51:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2268, 111, 0) in Felucca: "DreamWraith"
+2023-03-17 14:51:50: 70.55.171.10: Serials: 0x13; 
+2023-03-17 14:51:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 14:51:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:51:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400000DE (Corpse)
+2023-03-17 14:51:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 14:52:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:52:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x13 "a dream wraith" (no account)
+2023-03-17 14:53:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:53:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400000ED (Corpse)
+2023-03-17 14:54:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add skeletallich'
+2023-03-17 14:54:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2273, 108, 0) in Felucca: "skeletallich"
+2023-03-17 14:54:23: 70.55.171.10: Serials: 0x14; 
+2023-03-17 14:54:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:54:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x14 "a skeletal lich" (no account)
+2023-03-17 14:54:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add sketetallich'
+2023-03-17 14:55:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2268, 111, 0) in Felucca: "SkeletalCat"
+2023-03-17 14:55:03: 70.55.171.10: Serials: 0x15; 
+2023-03-17 14:55:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:55:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x15 "Skeletal Cat" (no account)
+2023-03-17 14:55:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add sketetallich'
+2023-03-17 14:55:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2270, 113, 0) in Felucca: "SkeletalDragon"
+2023-03-17 14:55:12: 70.55.171.10: Serials: 0x16; 
+2023-03-17 14:55:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:55:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x16 "a skeletal dragon" (no account)
+2023-03-17 14:56:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add vampirebat'
+2023-03-17 14:56:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2270, 104, 0) in Felucca: "vampirebat"
+2023-03-17 14:56:20: 70.55.171.10: Serials: 0x17; 
+2023-03-17 14:56:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 14:56:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:56:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x17 "a vampire bat" (no account)
+2023-03-17 14:58:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bonemagi'
+2023-03-17 14:59:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2271, 108, 0) in Felucca: "bonemagi"
+2023-03-17 14:59:00: 70.55.171.10: Serials: 0x18; 
+2023-03-17 14:59:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:59:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x18 "a bone mage" (no account)
+2023-03-17 14:59:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add skeletalmage'
+2023-03-17 14:59:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2270, 107, 0) in Felucca: "skeletalmage"
+2023-03-17 14:59:06: 70.55.171.10: Serials: 0x19; 
+2023-03-17 14:59:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 14:59:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:59:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x19 "a skeletal mage" (no account)
+2023-03-17 14:59:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bonemagie'
+2023-03-17 14:59:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 108, 0) in Felucca: "BoneMagi"
+2023-03-17 14:59:23: 70.55.171.10: Serials: 0x1A; 
+2023-03-17 14:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 14:59:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 14:59:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 14:59:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x1A "a bone mage" (no account)
+2023-03-17 14:59:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add spectr'
+2023-03-17 14:59:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2268, 110, 0) in Felucca: "SpectralArmour"
+2023-03-17 14:59:56: 70.55.171.10: Serials: 0x1B; 
+2023-03-17 15:00:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 15:00:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x1B "spectral armour" (no account)
+2023-03-17 15:00:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add sketela'
+2023-03-17 15:01:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2268, 110, 0) in Felucca: "SkeletalDrake"
+2023-03-17 15:01:06: 70.55.171.10: Serials: 0x1C; 
+2023-03-17 15:01:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:01:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 15:01:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'kill '
+2023-03-17 15:01:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') killing 0x1C "a skeletal drake" (no account)
+2023-03-17 15:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 15:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000012B (Corpse)
+2023-03-17 15:02:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bonedemon'
+2023-03-17 15:02:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2271, 116, 0) in Felucca: "bonedemon"
+2023-03-17 15:02:56: 70.55.171.10: Serials: 0x1D; 
+2023-03-17 15:02:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 15:03:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 15:03:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x1D "a bone demon" (no account)
+2023-03-17 15:03:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add fleshgolem'
+2023-03-17 15:03:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 115, 0) in Felucca: "fleshgolem"
+2023-03-17 15:03:20: 70.55.171.10: Serials: 0x1E; 
+2023-03-17 15:03:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 15:03:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 15:03:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x1E "a flesh golem" (no account)
+2023-03-17 15:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add lady'
+2023-03-17 15:03:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 112, 0) in Felucca: "LadyOfTheSnow"
+2023-03-17 15:03:50: 70.55.171.10: Serials: 0x1F; 
+2023-03-17 15:03:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 15:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x1F "a lady of the snow" (no account)
+2023-03-17 15:04:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add madde'
+2023-03-17 15:04:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 111, 0) in Felucca: "MaddeningHorror"
+2023-03-17 15:04:34: 70.55.171.10: Serials: 0x21; 
+2023-03-17 15:04:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 15:04:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x21 "a maddening horror" (no account)
+2023-03-17 15:04:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:05:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:06:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 15:07:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 15:25:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:25:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 15:26:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 15:27:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 15:27:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 15:28:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 15:28:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (409, 1430, -5), Map Felucca
+2023-03-17 15:28:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 15:30:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 15:30:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (378, 1422, -5), Map Felucca
+2023-03-17 15:30:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (379, 1413, 1), Map Felucca
+2023-03-17 15:30:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (376, 1438, 0), Map Felucca
+2023-03-17 15:30:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (377, 1435, 2), Map Felucca
+2023-03-17 15:30:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (383, 1413, 1), Map Felucca
+2023-03-17 15:30:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (384, 1412, -1), Map Felucca
+2023-03-17 15:30:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (386, 1412, -1), Map Felucca
+2023-03-17 15:30:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (399, 1408, 1), Map Felucca
+2023-03-17 15:30:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (416, 1406, -23), Map Felucca
+2023-03-17 15:30:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (416, 1405, -23), Map Felucca
+2023-03-17 15:30:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (416, 1405, -23), Map Felucca
+2023-03-17 15:30:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (411, 1403, 0), Map Felucca
+2023-03-17 15:30:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (412, 1402, 0), Map Felucca
+2023-03-17 15:30:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (431, 1403, 1), Map Felucca
+2023-03-17 15:30:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (431, 1403, 1), Map Felucca
+2023-03-17 15:30:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (440, 1400, 0), Map Felucca
+2023-03-17 15:30:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1397, -11), Map Felucca
+2023-03-17 15:30:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1397, -11), Map Felucca
+2023-03-17 15:30:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1397, -11), Map Felucca
+2023-03-17 15:30:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1397, -11), Map Felucca
+2023-03-17 15:30:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1403, 0), Map Felucca
+2023-03-17 15:30:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1403, 0), Map Felucca
+2023-03-17 15:30:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1403, 0), Map Felucca
+2023-03-17 15:30:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1404, 0), Map Felucca
+2023-03-17 15:30:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1406, 1), Map Felucca
+2023-03-17 15:30:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (448, 1406, 1), Map Felucca
+2023-03-17 15:30:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (449, 1407, -1), Map Felucca
+2023-03-17 15:30:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (449, 1407, -1), Map Felucca
+2023-03-17 15:31:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 15:31:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go '
+2023-03-17 15:37:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'qui '
+2023-03-17 15:37:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (2268, 155, 0), Map Felucca
+2023-03-17 16:02:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add saliva'
+2023-03-17 16:02:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2267, 138, 0) in Felucca: "saliva"
+2023-03-17 16:02:49: 70.55.171.10: Serials: 0x27; 
+2023-03-17 16:02:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:02:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:02:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x27 "Saliva" (no account)
+2023-03-17 16:02:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:03:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:04:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add triton'
+2023-03-17 16:04:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2323, 132, 0) in Felucca: "triton"
+2023-03-17 16:04:13: 70.55.171.10: Serials: 0x2D; 
+2023-03-17 16:04:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:04:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:04:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x2D "Triton" (no account)
+2023-03-17 16:04:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add hydra'
+2023-03-17 16:04:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2325, 132, 0) in Felucca: "hydra"
+2023-03-17 16:04:36: 70.55.171.10: Serials: 0x30; 
+2023-03-17 16:04:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:04:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x30 "a hydra" (no account)
+2023-03-17 16:05:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Ophidia'
+2023-03-17 16:05:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2320, 131, 0) in Felucca: "OphidianArchmage"
+2023-03-17 16:05:51: 70.55.171.10: Serials: 0x31; 
+2023-03-17 16:05:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:05:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 16:05:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:05:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:05:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x31 "an ophidian justicar" (no account)
+2023-03-17 16:06:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Ophidia'
+2023-03-17 16:06:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2317, 130, 0) in Felucca: "OphidianKnight"
+2023-03-17 16:06:44: 70.55.171.10: Serials: 0x32; 
+2023-03-17 16:06:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:06:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:06:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x32 "an ophidian knight-errant" (no account)
+2023-03-17 16:07:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Ophidia'
+2023-03-17 16:07:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2318, 130, 0) in Felucca: "OphidianMage"
+2023-03-17 16:07:06: 70.55.171.10: Serials: 0x33; 
+2023-03-17 16:07:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:07:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:07:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:07:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x33 "an ophidian apprentice mage" (no account)
+2023-03-17 16:07:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Ophidia'
+2023-03-17 16:07:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2315, 130, 0) in Felucca: "OphidianMatriarch"
+2023-03-17 16:07:43: 70.55.171.10: Serials: 0x34; 
+2023-03-17 16:07:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:07:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:07:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:08:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x34 "an ophidian matriarch" (no account)
+2023-03-17 16:08:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Ophidian'
+2023-03-17 16:08:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2316, 129, 0) in Felucca: "OphidianWarrior"
+2023-03-17 16:08:06: 70.55.171.10: Serials: 0x36; 
+2023-03-17 16:08:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:08:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:08:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:08:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x36 "an ophidian warrior" (no account)
+2023-03-17 16:08:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Chikk'
+2023-03-17 16:09:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2314, 134, 0) in Felucca: "Chiikkaha"
+2023-03-17 16:09:03: 70.55.171.10: Serials: 0x39; 
+2023-03-17 16:09:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:09:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:09:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:09:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x39 "Chiikkaha l'édenté" (no account)
+2023-03-17 16:10:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Navre'
+2023-03-17 16:10:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2303, 137, 0) in Felucca: "EyeOfNavrey"
+2023-03-17 16:10:18: 70.55.171.10: Serials: 0x400001DD; 
+2023-03-17 16:10:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:10:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400001DD (EyeOfNavrey)
+2023-03-17 16:10:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Nav'
+2023-03-17 16:10:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:10:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Oris'
+2023-03-17 16:11:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2272, 108, 0) in Felucca: "Osiredon"
+2023-03-17 16:11:14: 70.55.171.10: Serials: 0x3A; 
+2023-03-17 16:11:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:11:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:11:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x3A "osiredon the scalis enforcer" (no account)
+2023-03-17 16:11:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Stygian'
+2023-03-17 16:11:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2270, 119, 0) in Felucca: "StygianDragon"
+2023-03-17 16:11:51: 70.55.171.10: Serials: 0x3E; 
+2023-03-17 16:11:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:11:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x3E "Stygian Dragon" (no account)
+2023-03-17 16:11:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:11:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:11:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:11:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:11:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:11:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Stygian'
+2023-03-17 16:12:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2282, 160, 0) in Felucca: "StygianDrake"
+2023-03-17 16:12:01: 70.55.171.10: Serials: 0x3F; 
+2023-03-17 16:12:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:12:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x3F "Stygian Drake" (no account)
+2023-03-17 16:12:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Stygian'
+2023-03-17 16:12:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2276, 162, 0) in Felucca: "StygianDragon"
+2023-03-17 16:12:06: 70.55.171.10: Serials: 0x40; 
+2023-03-17 16:12:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:12:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:12:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40 "Stygian Dragon" (no account)
+2023-03-17 16:12:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:12:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Sir'
+2023-03-17 16:12:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2275, 160, 0) in Felucca: "SirPatrick"
+2023-03-17 16:12:37: 70.55.171.10: Serials: 0x43; 
+2023-03-17 16:12:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:12:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'kill '
+2023-03-17 16:12:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') killing 0x43 "Sir Patrick" (no account)
+2023-03-17 16:12:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:12:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400001F6 (Corpse)
+2023-03-17 16:13:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Irk'
+2023-03-17 16:13:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2279, 160, 0) in Felucca: "Irk"
+2023-03-17 16:13:05: 70.55.171.10: Serials: 0x4C; 
+2023-03-17 16:13:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:13:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:13:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'kill '
+2023-03-17 16:13:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') killing 0x4C "Irk" (no account)
+2023-03-17 16:13:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:13:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000020E (Corpse)
+2023-03-17 16:13:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Guile'
+2023-03-17 16:13:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2277, 157, 0) in Felucca: "Guile"
+2023-03-17 16:13:36: 70.55.171.10: Serials: 0x4F; 
+2023-03-17 16:13:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'kill '
+2023-03-17 16:13:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') killing 0x4F "Guile" (no account)
+2023-03-17 16:13:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:13:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000224 (Corpse)
+2023-03-17 16:14:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Lysander'
+2023-03-17 16:14:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2275, 161, 0) in Felucca: "LysanderGathenwale"
+2023-03-17 16:14:15: 70.55.171.10: Serials: 0x50; 
+2023-03-17 16:14:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:14:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:14:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x50 "Lysander Gathenwale" (no account)
+2023-03-17 16:14:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Swoop'
+2023-03-17 16:14:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2277, 160, 0) in Felucca: "Swoop"
+2023-03-17 16:14:42: 70.55.171.10: Serials: 0x51; 
+2023-03-17 16:14:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'kill '
+2023-03-17 16:14:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') killing 0x51 "Swoop" (no account)
+2023-03-17 16:14:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:14:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000247 (Corpse)
+2023-03-17 16:15:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Myx'
+2023-03-17 16:15:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Shadow'
+2023-03-17 16:15:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2267, 120, 0) in Felucca: "ShadowKnight"
+2023-03-17 16:15:46: 70.55.171.10: Serials: 0x52; 
+2023-03-17 16:15:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:15:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x52 "Nelokhiel" (no account)
+2023-03-17 16:15:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:15:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add ShadowKnight'
+2023-03-17 16:16:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2267, 113, 0) in Felucca: "ShadowKnight"
+2023-03-17 16:16:03: 70.55.171.10: Serials: 0x53; 
+2023-03-17 16:16:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 16:16:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:16:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x53 "Marth'Fador" (no account)
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:16:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:17:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Harrower'
+2023-03-17 16:17:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2272, 117, 0) in Felucca: "Harrower"
+2023-03-17 16:17:03: 70.55.171.10: Serials: 0x57; 
+2023-03-17 16:17:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:17:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x57 "the harrower" (no account)
+2023-03-17 16:17:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:17:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:19:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Enraged'
+2023-03-17 16:19:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2273, 117, 0) in Felucca: "EnragedColossus"
+2023-03-17 16:19:34: 70.55.171.10: Serials: 0x5B; 
+2023-03-17 16:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x5B "Rising Colossus" (no account)
+2023-03-17 16:20:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Eternal'
+2023-03-17 16:20:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2270, 116, 0) in Felucca: "EternalGazer"
+2023-03-17 16:20:02: 70.55.171.10: Serials: 0x5E; 
+2023-03-17 16:20:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:20:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x5E "an eternal gazer" (no account)
+2023-03-17 16:21:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add tailoring'
+2023-03-17 16:21:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2266, 118, 0) in Felucca: "LivreSkillsTailoring"
+2023-03-17 16:21:18: 70.55.171.10: Serials: 0x4000024D; 
+2023-03-17 16:21:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:21:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add sewing'
+2023-03-17 16:21:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2266, 118, 0) in Felucca: "SewingKit"
+2023-03-17 16:21:31: 70.55.171.10: Serials: 0x4000024E; 
+2023-03-17 16:21:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:26:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 16:26:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 16:26:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (2267, 117, 0), Map Trammel
+2023-03-17 16:26:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 16:27:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:27:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 16:27:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1870, 908, -1), Map Trammel
+2023-03-17 16:27:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:28:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go ilshenar'
+2023-03-17 16:28:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-17 16:28:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 16:28:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (3624, 1265, 0), Map Trammel
+2023-03-17 16:28:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:28:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go tokuno'
+2023-03-17 16:28:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 1000 1000'
+2023-03-17 16:28:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:28:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:28:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 16:28:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 16:28:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400002C4 (Spear)
+2023-03-17 16:28:57: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-17 16:28:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 16:29:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (3656, 1250, 0), Map Tokuno
+2023-03-17 16:29:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 16:29:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 16:29:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 16:29:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1000, 1000, -5), Map Tokuno
+2023-03-17 16:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (988, 1000, -5), Map Tokuno
+2023-03-17 16:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (976, 1000, -5), Map Tokuno
+2023-03-17 16:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (952, 1000, -5), Map Tokuno
+2023-03-17 16:29:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (941, 1000, -5), Map Tokuno
+2023-03-17 16:29:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (930, 999, -5), Map Tokuno
+2023-03-17 16:29:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (912, 999, 18), Map Tokuno
+2023-03-17 16:29:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (904, 1000, 42), Map Tokuno
+2023-03-17 16:29:10: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (896, 999, 52), Map Tokuno
+2023-03-17 16:29:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (864, 992, 71), Map Tokuno
+2023-03-17 16:29:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (864, 992, 71), Map Tokuno
+2023-03-17 16:29:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (852, 991, 67), Map Tokuno
+2023-03-17 16:29:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (841, 991, 89), Map Tokuno
+2023-03-17 16:29:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (802, 979, 13), Map Tokuno
+2023-03-17 16:29:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:29:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go felucca'
+2023-03-17 16:29:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go ter'mur'
+2023-03-17 16:29:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go ilshenar'
+2023-03-17 16:29:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go malas'
+2023-03-17 16:29:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:29:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go malas'
+2023-03-17 16:31:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'qui '
+2023-03-17 16:31:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') se dirige sur 0x3 "Nucca" ('admin'), Localisation (159, 1899, 0), Map Malas
+2023-03-17 16:31:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'props '
+2023-03-17 16:31:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:32:29: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go '
+2023-03-17 16:32:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'qui '
+2023-03-17 16:32:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') se dirige sur 0x3 "Nucca" ('admin'), Localisation (25, 33, 11), Map Malas
+2023-03-17 16:32:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go '
+2023-03-17 16:33:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go felucca'
+2023-03-17 16:33:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 16:33:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:33:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 16:34:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go feluca'
+2023-03-17 16:34:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go felucca'
+2023-03-17 16:35:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go felucca'
+2023-03-17 16:38:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 3000 3000'
+2023-03-17 16:38:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'm tele'
+2023-03-17 16:38:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 5000 5000'
+2023-03-17 16:38:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 4000 4000'
+2023-03-17 16:38:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 3000 3000'
+2023-03-17 16:38:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 3700 3000'
+2023-03-17 16:38:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 3000 3000'
+2023-03-17 16:38:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 1000 3000'
+2023-03-17 16:39:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go -3000 3000'
+2023-03-17 16:39:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go -3000 -3000'
+2023-03-17 16:39:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go 2000 2000'
+2023-03-17 16:39:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 0'
+2023-03-17 16:39:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '0'
+2023-03-17 16:39:55: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go trammel'
+2023-03-17 16:39:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 16:40:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-17 16:40:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 16:40:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (983, 1006, -1), Map Felucca
+2023-03-17 16:44:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 16:44:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 16:46:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 16:46:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go felucca'
+2023-03-17 16:59:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 17:00:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 17:00:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go malas'
+2023-03-17 17:01:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go illshenar'
+2023-03-17 17:01:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go Ilshenar'
+2023-03-17 17:01:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go tokuno'
+2023-03-17 17:01:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 17:01:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go termur'
+2023-03-17 17:01:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 17:02:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 17:02:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 17:02:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 17:12:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go trammel'
+2023-03-17 17:12:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 17:12:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go felucca'
+2023-03-17 17:12:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add anvil'
+2023-03-17 17:12:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (992, 1005, -1) in Felucca: "anvil"
+2023-03-17 17:12:49: 70.55.171.10: Serials: 0x4000025D; 
+2023-03-17 17:12:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add forge'
+2023-03-17 17:12:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (993, 1005, 0) in Felucca: "forge"
+2023-03-17 17:12:52: 70.55.171.10: Serials: 0x4000025E; 
+2023-03-17 17:12:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:12:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000025E (Forge)
+2023-03-17 17:12:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:12:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000025D (Anvil)
+2023-03-17 17:12:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go '
+2023-03-17 17:15:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 50'
+2023-03-17 17:15:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '50'
+##############################
+Log started on 2023-03-17 17:16:37
+
+2023-03-17 17:16:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 17:16:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'go '
+2023-03-17 17:16:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-17 17:17:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:17:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 50'
+2023-03-17 17:17:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '50'
+2023-03-17 17:17:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add mummy'
+2023-03-17 17:17:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 111, 0) in Felucca: "mummy"
+2023-03-17 17:17:09: 127.0.0.1: Serials: 0x6; 
+2023-03-17 17:17:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 17:18:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add zombie'
+2023-03-17 17:18:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2269, 110, 0) in Felucca: "zombie"
+2023-03-17 17:18:50: 127.0.0.1: Serials: 0x7; 
+2023-03-17 17:21:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add mumm'
+2023-03-17 17:21:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2274, 104, 0) in Felucca: "Mummy"
+2023-03-17 17:21:49: 127.0.0.1: Serials: 0x8; 
+2023-03-17 17:21:51: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:23:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boneknight'
+2023-03-17 17:23:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add succubus'
+2023-03-17 17:23:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2272, 109, 0) in Felucca: "succubus"
+2023-03-17 17:23:13: 127.0.0.1: Serials: 0x9; 
+2023-03-17 17:23:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 17:23:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:23:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 17:23:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 17:23:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 17:23:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 17:23:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x9 "a succubus" (no account)
+2023-03-17 17:24:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:24:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'set hits 200'
+2023-03-17 17:24:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 17:24:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'allspells '
+2023-03-17 17:26:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'fiche '
+2023-03-17 17:27:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add smith'
+2023-03-17 17:27:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2275, 109, 0) in Felucca: "SmithHammer"
+2023-03-17 17:27:47: 70.55.171.10: Serials: 0x4000007E; 
+2023-03-17 17:27:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 17:27:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add iron'
+2023-03-17 17:28:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2273, 112, 0) in Felucca: "IronIngot"
+2023-03-17 17:28:01: 70.55.171.10: Serials: 0x40000081; 
+2023-03-17 17:28:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 17:28:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 17:28:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000081 (IronIngot) to '100'
+2023-03-17 17:28:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000013 (PlateLegs)
+2023-03-17 17:28:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000000B (PlateChest)
+2023-03-17 17:28:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000012 (PlateHelm)
+2023-03-17 17:28:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000015 (HeaterShield)
+2023-03-17 17:28:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000000A (PlateArms)
+2023-03-17 17:28:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000011 (PlateGorget)
+2023-03-17 17:28:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:28:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000010 (PlateGloves)
+2023-03-17 17:28:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-17 17:28:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:29:01: 70.55.171.10: Crafting 0x40000086 (PlateArms) with craft system DefBlacksmithy
+2023-03-17 17:29:07: 70.55.171.10: Crafting 0x40000088 (PlateGloves) with craft system DefBlacksmithy
+2023-03-17 17:29:14: 70.55.171.10: Crafting 0x4000008A (PlateGorget) with craft system DefBlacksmithy
+2023-03-17 17:29:23: 70.55.171.10: Crafting 0x4000008C (PlateLegs) with craft system DefBlacksmithy
+2023-03-17 17:29:31: 70.55.171.10: Crafting 0x4000008E (PlateChest) with craft system DefBlacksmithy
+2023-03-17 17:29:39: 70.55.171.10: Crafting 0x40000090 (CasqueChaos) with craft system DefBlacksmithy
+2023-03-17 17:29:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add iron'
+2023-03-17 17:29:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2276, 110, 0) in Felucca: "IronOre"
+2023-03-17 17:29:50: 70.55.171.10: Serials: 0x40000091; 
+2023-03-17 17:29:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:29:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000091 (IronOre)
+2023-03-17 17:29:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add iron'
+2023-03-17 17:29:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2276, 110, 0) in Felucca: "IronIngot"
+2023-03-17 17:29:54: 70.55.171.10: Serials: 0x40000092; 
+2023-03-17 17:29:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 17:29:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000092 (IronIngot) (inBag=False; amount=1)
+2023-03-17 17:29:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000092 (IronIngot) creating 0x40000093 (IronIngot)
+2023-03-17 17:29:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 17:29:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x40000092 (IronIngot) (inBag=False; amount=1)
+2023-03-17 17:29:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x40000092 (IronIngot) creating 0x40000094 (IronIngot)
+2023-03-17 17:30:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 17:30:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000092 (IronIngot) to '100'
+2023-03-17 17:30:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'dupe '
+2023-03-17 17:30:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duping 0x400002EF (Forge) (inBag=False; amount=1)
+2023-03-17 17:30:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') duped 0x400002EF (Forge) creating 0x40000095 (Forge)
+2023-03-17 17:30:44: 70.55.171.10: Crafting 0x40000098 (Pavois2) with craft system DefBlacksmithy
+2023-03-17 17:32:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add mytheril'
+2023-03-17 17:32:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2275, 110, 0) in Felucca: "MytherilIngot"
+2023-03-17 17:32:40: 70.55.171.10: Serials: 0x40000099; 
+2023-03-17 17:32:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 17:32:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000099 (MytherilIngot) to '300'
+2023-03-17 17:32:57: 70.55.171.10: Crafting 0x4000009A (Pavois2) with craft system DefBlacksmithy
+2023-03-17 17:33:04: 70.55.171.10: Crafting 0x4000009B (Pavois2) with craft system DefBlacksmithy
+2023-03-17 17:33:22: 70.55.171.10: Crafting 0x4000009E (PlateArms) with craft system DefBlacksmithy
+2023-03-17 17:33:27: 70.55.171.10: Crafting 0x4000009F (PlateGloves) with craft system DefBlacksmithy
+2023-03-17 17:33:33: 70.55.171.10: Crafting 0x400000A0 (PlateGorget) with craft system DefBlacksmithy
+2023-03-17 17:33:40: 70.55.171.10: Crafting 0x400000A1 (PlateLegs) with craft system DefBlacksmithy
+2023-03-17 17:33:44: 70.55.171.10: Crafting 0x400000A2 (PlateChest) with craft system DefBlacksmithy
+2023-03-17 17:33:56: 70.55.171.10: Crafting 0x400000A3 (CasqueChaos) with craft system DefBlacksmithy
+2023-03-17 17:34:26: 70.55.171.10: Crafting 0x400000A9 (HacheDoublePiques) with craft system DefBlacksmithy
+2023-03-17 17:35:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add succubus'
+2023-03-17 17:35:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2269, 107, 0) in Felucca: "succubus"
+2023-03-17 17:35:42: 70.55.171.10: Serials: 0xA; 
+2023-03-17 17:35:44: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:37:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:37:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:37:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000009A (Pavois2)
+2023-03-17 17:38:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000095 (Forge)
+2023-03-17 17:38:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000090 (CasqueChaos)
+2023-03-17 17:38:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000008C (PlateLegs)
+2023-03-17 17:38:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000008E (PlateChest)
+2023-03-17 17:38:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000098 (Pavois2)
+2023-03-17 17:38:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000008A (PlateGorget)
+2023-03-17 17:38:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000086 (PlateArms)
+2023-03-17 17:38:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000088 (PlateGloves)
+2023-03-17 17:38:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000037F (HacheDoublePiques)
+2023-03-17 17:38:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400003C1 (HacheDoubleNaine)
+2023-03-17 17:38:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400002A2 (BatWing)
+2023-03-17 17:38:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000381 (MarteauPointes)
+2023-03-17 17:38:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400002FB (Bardiche)
+2023-03-17 17:38:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400002FA (JavelotLuxe)
+2023-03-17 17:38:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000014 (Wakizashi)
+2023-03-17 17:38:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000094 (IronIngot)
+2023-03-17 17:38:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:38:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000093 (IronIngot)
+##############################
+Log started on 2023-03-17 17:38:57
+
+2023-03-17 17:39:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add zombie'
+2023-03-17 17:39:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2269, 107, 0) in Felucca: "zombie"
+2023-03-17 17:39:14: 127.0.0.1: Serials: 0x6; 
+2023-03-17 17:39:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add mummy'
+2023-03-17 17:39:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2269, 106, 0) in Felucca: "mummy"
+2023-03-17 17:39:28: 127.0.0.1: Serials: 0x7; 
+2023-03-17 17:39:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 50'
+2023-03-17 17:39:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '50'
+2023-03-17 17:39:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 50'
+2023-03-17 17:39:59: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:40:01: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add succubus'
+2023-03-17 17:40:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2266, 105, 0) in Felucca: "succubus"
+2023-03-17 17:40:03: 127.0.0.1: Serials: 0x8; 
+2023-03-17 17:40:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 17:40:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 17:40:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 17:40:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 17:40:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 17:40:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:41:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 17:41:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 17:41:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x8 "a succubus" (no account)
+2023-03-17 17:41:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add succubus'
+2023-03-17 17:41:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 109, 0) in Felucca: "succubus"
+2023-03-17 17:41:16: 127.0.0.1: Serials: 0x9; 
+2023-03-17 17:41:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 17:41:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 17:41:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:41:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-17 17:41:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:42:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 17:42:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:42:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add succubus'
+2023-03-17 17:42:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2301, 107, 0) in Felucca: "succubus"
+2023-03-17 17:42:12: 127.0.0.1: Serials: 0xA; 
+2023-03-17 17:42:20: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'wap '
+2023-03-17 17:42:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'was '
+2023-03-17 17:42:29: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:43:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add zombie'
+2023-03-17 17:43:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2268, 109, 0) in Felucca: "zombie"
+2023-03-17 17:43:07: 127.0.0.1: Serials: 0xB; 
+2023-03-17 17:43:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add zombie'
+2023-03-17 17:43:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:43:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 109, 0) in Felucca: "zombie"
+2023-03-17 17:43:20: 127.0.0.1: Serials: 0xC; 
+2023-03-17 17:43:20: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:43:23: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 50'
+2023-03-17 17:43:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '50'
+2023-03-17 17:43:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add zombie'
+2023-03-17 17:43:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 110, 0) in Felucca: "zombie"
+2023-03-17 17:43:36: 127.0.0.1: Serials: 0xD; 
+2023-03-17 17:47:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:47:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 17:47:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000092 (IronIngot) to '300'
+2023-03-17 17:47:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-17 17:47:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:47:35: 70.55.171.10: Crafting 0x40000140 (PlateArms) with craft system DefBlacksmithy
+2023-03-17 17:47:39: 70.55.171.10: Crafting 0x40000142 (PlateGloves) with craft system DefBlacksmithy
+2023-03-17 17:47:42: 70.55.171.10: Crafting 0x40000145 (PlateGorget) with craft system DefBlacksmithy
+2023-03-17 17:47:45: 70.55.171.10: Crafting 0x40000147 (PlateLegs) with craft system DefBlacksmithy
+2023-03-17 17:47:55: 70.55.171.10: Crafting 0x40000149 (PlateChest) with craft system DefBlacksmithy
+2023-03-17 17:48:02: 70.55.171.10: Crafting 0x4000014B (CasqueChaos) with craft system DefBlacksmithy
+2023-03-17 17:48:11: 70.55.171.10: Crafting 0x4000014E (Pavois2) with craft system DefBlacksmithy
+2023-03-17 17:48:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add succubus'
+2023-03-17 17:48:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2271, 107, 0) in Felucca: "succubus"
+2023-03-17 17:48:17: 70.55.171.10: Serials: 0xE; 
+2023-03-17 17:48:19: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:49:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:49:03: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 17:49:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'skills '
+2023-03-17 17:49:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property '[Resisting Spells: 0].Base' of 0x2 "Mig" ('Mig') to '0'
+2023-03-17 17:49:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add succubus'
+2023-03-17 17:49:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2268, 108, 0) in Felucca: "succubus"
+2023-03-17 17:49:22: 70.55.171.10: Serials: 0xF; 
+2023-03-17 17:49:23: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:51:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:51:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'skills '
+2023-03-17 17:51:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property '[Resisting Spells: 100].Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:51:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:51:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000173 (Corpse)
+2023-03-17 17:51:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 17:51:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000019B (Corpse)
+2023-03-17 17:52:14: 70.55.171.10: Crafting 0x4000019F (HacheDoublePiques) with craft system DefBlacksmithy
+##############################
+Log started on 2023-03-17 17:57:34
+
+2023-03-17 17:57:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add wyvern'
+2023-03-17 17:57:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 107, 0) in Felucca: "wyvern"
+2023-03-17 17:57:51: 127.0.0.1: Serials: 0x6; 
+2023-03-17 17:57:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 17:57:54: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:57:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 17:58:15: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 17:58:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x6 "a wyvern" (no account)
+2023-03-17 17:58:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:58:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 17:58:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 17:58:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 17:58:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'set hits 100'
+2023-03-17 17:58:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 17:58:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:58:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:58:27: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 17:58:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add wyvern'
+2023-03-17 17:58:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2272, 107, 0) in Felucca: "wyvern"
+2023-03-17 17:58:37: 127.0.0.1: Serials: 0x7; 
+2023-03-17 17:59:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 17:59:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 17:59:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add drake'
+2023-03-17 17:59:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2271, 105, 0) in Felucca: "drake"
+2023-03-17 17:59:54: 127.0.0.1: Serials: 0x8; 
+2023-03-17 18:00:06: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:00:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:00:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 18:00:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 18:00:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set rawhits 200'
+2023-03-17 18:01:13: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'kill '
+2023-03-17 18:01:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') killing 0x8 "a drake" (no account)
+2023-03-17 18:01:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:01:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:01:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 18:01:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:01:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:01:43: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:01:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add dragon'
+2023-03-17 18:01:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2275, 106, 0) in Felucca: "dragon"
+2023-03-17 18:01:47: 127.0.0.1: Serials: 0x9; 
+2023-03-17 18:01:50: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:01:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:02:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:02:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:02:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:02:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:02:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 18:02:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x9 "a dragon" (no account)
+2023-03-17 18:02:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:02:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:02:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 18:02:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:03:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:04:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:04:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'FireBonus' of 0x4000009B (Pavois2) to '50'
+2023-03-17 18:04:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 18:04:12: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 18:04:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:04:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set str 150'
+2023-03-17 18:04:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'str' of 0x2 "Mig" ('Mig') to '150'
+2023-03-17 18:04:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'ColdBonus' of 0x4000009B (Pavois2) to '60'
+2023-03-17 18:04:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 150'
+2023-03-17 18:04:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '150'
+2023-03-17 18:04:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:04:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set str 200'
+2023-03-17 18:04:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'ColdBonus' of 0x4000009B (Pavois2) to '75'
+2023-03-17 18:04:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'str' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 18:04:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 200'
+2023-03-17 18:04:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 18:04:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:04:38: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add dragon'
+2023-03-17 18:04:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2273, 106, 0) in Felucca: "dragon"
+2023-03-17 18:04:39: 127.0.0.1: Serials: 0xA; 
+2023-03-17 18:04:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'ColdBonus' of 0x4000009B (Pavois2) to '100'
+2023-03-17 18:04:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:04:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 18:04:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xA "a dragon" (no account)
+2023-03-17 18:04:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'FireBonus' of 0x400000A1 (PlateLegs) to '15'
+2023-03-17 18:05:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:05:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EnergyBonus' of 0x400000A1 (PlateLegs) to '60'
+2023-03-17 18:05:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:05:17: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills .add boura'
+2023-03-17 18:05:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boura'
+2023-03-17 18:05:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2270, 103, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:05:21: 127.0.0.1: Serials: 0xB; 
+2023-03-17 18:05:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EnergyBonus' of 0x400000A1 (PlateLegs) to '75'
+2023-03-17 18:05:24: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:05:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:05:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'PoisonBonus' of 0x4000009F (PlateGloves) to '200'
+2023-03-17 18:05:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 18:05:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:05:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'PhysicalBonus' of 0x400000A3 (CasqueChaos) to '100'
+2023-03-17 18:05:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:05:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add dragon'
+2023-03-17 18:05:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2282, 106, 0) in Felucca: "dragon"
+2023-03-17 18:05:51: 127.0.0.1: Serials: 0xC; 
+2023-03-17 18:05:59: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:06:11: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 18:07:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add dragon'
+2023-03-17 18:07:30: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2274, 106, 0) in Felucca: "dragon"
+2023-03-17 18:07:30: 127.0.0.1: Serials: 0xD; 
+2023-03-17 18:07:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:07:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:07:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:07:58: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:07:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 18:07:58: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:08:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:08:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:08:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:08:21: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:08:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'PhysicalBonus' of 0x4000014E (Pavois2) to '35'
+2023-03-17 18:08:41: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:08:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:08:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:08:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 100'
+2023-03-17 18:08:47: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:08:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set hits 150'
+2023-03-17 18:08:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'hits' of 0x2 "Mig" ('Mig') to '150'
+2023-03-17 18:09:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:09:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:09:28: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:16:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:16:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:16:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:16:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:16:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:16:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:17:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:27: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:17:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add medusa'
+2023-03-17 18:17:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2315, 105, 0) in Felucca: "medusa"
+2023-03-17 18:17:40: 70.55.171.10: Serials: 0xE; 
+2023-03-17 18:17:41: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:17:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:17:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 18:17:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:18:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:18:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0xE "Medusa" (no account)
+2023-03-17 18:19:34: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:19:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:23:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add Chry'
+##############################
+Log started on 2023-03-17 18:25:08
+
+2023-03-17 18:25:19: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 18:25:21: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xD "a dragon" (no account)
+2023-03-17 18:26:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add medusa'
+2023-03-17 18:26:05: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2270, 109, 0) in Felucca: "medusa"
+2023-03-17 18:26:05: 127.0.0.1: Serials: 0x6; 
+2023-03-17 18:26:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 18:26:34: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add regstone'
+2023-03-17 18:26:36: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2283, 108, 0) in Felucca: "regstone"
+2023-03-17 18:26:36: 127.0.0.1: Serials: 0x40000009; 
+2023-03-17 18:26:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-17 18:26:56: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'EverySkill.Base' of 0x3 "Nucca" ('admin') to '100'
+2023-03-17 18:27:15: 70.55.171.10: Crafting 0x4000002C (ChainChest) with craft system DefBlacksmithy
+2023-03-17 18:27:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:27:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x3 "Nucca" ('admin')
+2023-03-17 18:27:28: 70.55.171.10: Crafting 0x4000002F (RingmailChest) with craft system DefBlacksmithy
+2023-03-17 18:27:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:27:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boura'
+2023-03-17 18:27:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2277, 103, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:27:39: 127.0.0.1: Serials: 0x8; 
+2023-03-17 18:27:39: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2277, 102, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:27:39: 127.0.0.1: Serials: 0x9; 
+2023-03-17 18:27:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:27:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:28:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set cantwalk false'
+2023-03-17 18:28:02: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'cantwalk' of 0xD3 "a ruddy boura" (no account) to 'False'
+2023-03-17 18:29:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'set cantwalk false'
+2023-03-17 18:29:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'cantwalk' of 0xD3 "a ruddy boura" (no account) to 'False'
+2023-03-17 18:29:08: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'mortal '
+2023-03-17 18:29:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') set property 'blessed' of 0xD3 "a ruddy boura" (no account) to 'False'
+2023-03-17 18:29:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 18:29:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0xA "a dragon" (no account)
+##############################
+Log started on 2023-03-17 18:40:36
+
+2023-03-17 18:40:48: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 18:40:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x6 "Medusa" (no account)
+2023-03-17 18:40:59: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add medusa'
+2023-03-17 18:41:00: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2267, 113, 0) in Felucca: "medusa"
+2023-03-17 18:41:00: 127.0.0.1: Serials: 0x6; 
+2023-03-17 18:41:14: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boura'
+2023-03-17 18:41:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2269, 104, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:41:16: 127.0.0.1: Serials: 0x7; 
+2023-03-17 18:41:16: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2270, 106, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:41:16: 127.0.0.1: Serials: 0x8; 
+2023-03-17 18:41:18: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:41:20: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:41:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 100<'
+2023-03-17 18:41:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '0'
+2023-03-17 18:41:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-17 18:41:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 18:41:28: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:42:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:42:27: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x3 "Nucca" ('admin')
+2023-03-17 18:42:30: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:42:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 18:42:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 18:42:32: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:42:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'get hits'
+2023-03-17 18:42:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 18:42:51: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:52: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:42:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:43:00: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:43:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:43:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0xC "an ophidian zealot" (no account)
+2023-03-17 18:43:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:43:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000006B (Corpse)
+2023-03-17 18:43:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:43:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000091 (Corpse)
+2023-03-17 18:43:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:43:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400000AE (Corpse)
+2023-03-17 18:43:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:43:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x6 "Medusa" (no account)
+2023-03-17 18:45:41: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'save '
+##############################
+Log started on 2023-03-17 18:47:32
+
+2023-03-17 18:47:47: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:48: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:49: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:50: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:47:52: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:47:53: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add medusa'
+2023-03-17 18:47:54: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2279, 112, 0) in Felucca: "medusa"
+2023-03-17 18:47:54: 127.0.0.1: Serials: 0x6; 
+2023-03-17 18:48:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:48:13: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:49:25: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-17 18:49:26: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2275, 112, 0) to (2278, 113, 0) in Felucca (Items, Mobiles)
+2023-03-17 18:49:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'wipe '
+2023-03-17 18:49:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') wiping from (2280, 106, 0) to (2280, 106, 0) in Felucca (Items, Mobiles)
+2023-03-17 18:49:33: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add bourra'
+2023-03-17 18:49:35: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add boura'
+2023-03-17 18:49:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:49:37: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2275, 105, 0) in Felucca: "LowlandBoura"
+2023-03-17 18:49:37: 127.0.0.1: Serials: 0xC; 
+2023-03-17 18:49:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'set hits 200'
+2023-03-17 18:49:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'hits' of 0x2 "Mig" ('Mig') to '200'
+2023-03-17 18:49:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2276, 106, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:49:40: 127.0.0.1: Serials: 0xD; 
+2023-03-17 18:49:40: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2277, 107, 0) in Felucca: "RuddyBoura"
+2023-03-17 18:49:40: 127.0.0.1: Serials: 0xE; 
+2023-03-17 18:49:40: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:49:42: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:49:44: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:49:45: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:49:46: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'shrink '
+2023-03-17 18:49:49: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'add medusa'
+2023-03-17 18:49:50: 127.0.0.1: Owner 0x3 "Nucca" ('admin') building at (2266, 111, 0) in Felucca: "medusa"
+2023-03-17 18:49:50: 127.0.0.1: Serials: 0xF; 
+2023-03-17 18:57:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 18:57:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'res '
+2023-03-17 18:57:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') resurrecting 0x2 "Mig" ('Mig')
+2023-03-17 18:57:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 18:57:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:57:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0xF "Medusa" (no account)
+2023-03-17 18:57:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 18:57:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x10 "an ophidian justicar" (no account)
+2023-03-17 19:24:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-17 19:25:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 19:28:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'm tele'
+2023-03-17 19:38:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:41:07: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'who '
+2023-03-17 19:41:09: 127.0.0.1: Owner 0x3 "Nucca" ('admin') se dirige sur 0x2 "Mig" ('Mig'), Localisation (1103, 934, 0), Map Felucca
+2023-03-17 19:43:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:43:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:45:03: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'res '
+2023-03-17 19:45:04: 127.0.0.1: Owner 0x3 "Nucca" ('admin') resurrecting 0x3 "Nucca" ('admin')
+2023-03-17 19:46:51: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'remove '
+2023-03-17 19:46:52: 127.0.0.1: Owner 0x3 "Nucca" ('admin') deleting 0x8 "a ruddy boura" (no account)
+2023-03-17 19:50:29: 127.0.0.1: Owner 0x3 "Nucca" ('admin') used command 'move '
+2023-03-17 19:50:31: 127.0.0.1: Owner 0x3 "Nucca" ('admin') moving 0x40000235 (BouraSkin) to (1103, 912, 0)
+2023-03-17 19:56:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 19:56:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000235 (BouraSkin)
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:57: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:56:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:05: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:08: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:14: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:15: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:16: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:57:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:37: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:39: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:40: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:41: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:42: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:43: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:44: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:45: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:58:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:23: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:26: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 19:59:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-17 19:59:32: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'EverySkill.Base' of 0x2 "Mig" ('Mig') to '100'
+2023-03-17 19:59:35: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'set str 150'
+2023-03-17 19:59:36: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'str' of 0x2 "Mig" ('Mig') to '150'
+2023-03-17 20:00:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go green'
+2023-03-17 20:00:02: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'go '
+2023-03-17 20:00:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:00:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:00:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:00:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:00:06: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:00:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:00:07: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 20:01:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add bardiche'
+2023-03-17 20:01:18: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2275, 111, 0) in Felucca: "bardiche"
+2023-03-17 20:01:18: 70.55.171.10: Serials: 0x40000241; 
+2023-03-17 20:01:28: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add myther'
+2023-03-17 20:01:31: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2274, 114, 0) in Felucca: "MytherilIngot"
+2023-03-17 20:01:31: 70.55.171.10: Serials: 0x40000242; 
+2023-03-17 20:01:33: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 20:01:38: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property 'Amount' of 0x40000242 (MytherilIngot) to '200'
+2023-03-17 20:01:46: 70.55.171.10: Crafting 0x40000244 (DoubleHachette) with craft system DefBlacksmithy
+2023-03-17 20:01:57: 70.55.171.10: Crafting 0x40000245 (DoubleHachette) with craft system DefBlacksmithy
+2023-03-17 20:02:06: 70.55.171.10: Crafting 0x40000248 (OrnateAxe) with craft system DefBlacksmithy
+2023-03-17 21:10:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:10:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:11:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'skills '
+2023-03-17 21:11:17: 70.55.171.10: Owner 0x2 "Mig" ('Mig') set property '[Resisting Spells: 0].Base' of 0x2 "Mig" ('Mig') to '0'
+2023-03-17 21:23:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'wap '
+2023-03-17 21:24:01: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'was '
+2023-03-17 21:24:09: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000149 (PlateChest)
+2023-03-17 21:24:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:10: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000002C (ChainChest)
+2023-03-17 21:24:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000147 (PlateLegs)
+2023-03-17 21:24:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:11: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000002F (RingmailChest)
+2023-03-17 21:24:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:12: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x40000142 (PlateGloves)
+2023-03-17 21:24:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:13: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x4000014B (CasqueChaos)
+2023-03-17 21:24:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:24:19: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x400001E8 (Torso)
+2023-03-17 21:27:46: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'fiche '
+2023-03-17 21:27:56: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'fe '
+2023-03-17 21:27:58: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'addfe '
+2023-03-17 21:27:59: 70.55.171.10: Owner 0x2 "Mig" ('Mig') a donné une FE rp à 0x2 "Mig" ('Mig').
+2023-03-17 21:34:22: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'add paro'
+2023-03-17 21:34:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') building at (2274, 119, 0) in Felucca: "ChiefParoxysmus"
+2023-03-17 21:34:24: 70.55.171.10: Serials: 0x13; 
+2023-03-17 21:34:25: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'tele '
+2023-03-17 21:34:28: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 21:35:09: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'wap '
+2023-03-17 21:35:10: 70.55.171.10: Player 0x2 "Mig" ('Mig') used command 'was '
+2023-03-17 21:35:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'gm '
+2023-03-17 21:35:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x13 "a chief paroxysmus" (no account)
+2023-03-17 21:35:53: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x16 "a bulbous putrification" (no account)
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x14 "a bulbous putrification" (no account)
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:54: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'remove '
+2023-03-17 21:35:55: 70.55.171.10: Owner 0x2 "Mig" ('Mig') deleting 0x15 "a bulbous putrification" (no account)
+2023-03-17 21:42:24: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '
+2023-03-17 21:43:04: 70.55.171.10: Owner 0x2 "Mig" ('Mig') used command 'props '

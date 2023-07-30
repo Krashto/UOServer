@@ -1,0 +1,126 @@
+##############################
+Exception log started on 2023-04-28 02:18:30
+
+Exception Caught: 2023-04-28 02:18:30
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 02:18:36
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 02:18:39
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 02:18:45
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+##############################
+Exception log started on 2023-04-28 03:04:33
+
+Exception Caught: 2023-04-28 03:04:33
+System.MemberAccessException: Impossible de créer une instance de Server.Custom.Items.Spells.BaseTrainingWand, car il s'agit d'une classe abstraite.
+   à System.Reflection.RuntimeConstructorInfo.CheckCanCreateInstance(Type declaringType, Boolean isVarArg)
+   à System.Reflection.RuntimeConstructorInfo.ThrowNoInvokeException()
+   à System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   à System.Reflection.ConstructorInfo.Invoke(Object[] parameters)
+   à Server.Commands.Add.Build(Mobile from, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, Boolean& sendError) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 287
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 384
+
+Exception Caught: 2023-04-28 03:04:41
+System.MemberAccessException: Impossible de créer une instance de Server.Custom.Items.Spells.BaseTrainingWand, car il s'agit d'une classe abstraite.
+   à System.Reflection.RuntimeConstructorInfo.CheckCanCreateInstance(Type declaringType, Boolean isVarArg)
+   à System.Reflection.RuntimeConstructorInfo.ThrowNoInvokeException()
+   à System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   à System.Reflection.ConstructorInfo.Invoke(Object[] parameters)
+   à Server.Commands.Add.Build(Mobile from, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, Boolean& sendError) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 287
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 384
+
+##############################
+Exception log started on 2023-04-28 04:31:16
+
+Exception Caught: 2023-04-28 04:31:16
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 04:31:19
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 04:31:24
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 07:53:26
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 07:53:47
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+##############################
+Exception log started on 2023-04-28 19:03:10
+
+Exception Caught: 2023-04-28 19:03:10
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 19:03:47
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-28 19:04:10
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+

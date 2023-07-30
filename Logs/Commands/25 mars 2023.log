@@ -1,0 +1,1906 @@
+##############################
+Log started on 2023-03-25 02:08:08
+
+##############################
+Log started on 2023-03-25 02:08:28
+
+2023-03-25 02:10:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-25 02:10:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 167, 0) in Felucca: "sewingkit"
+2023-03-25 02:10:22: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-25 02:10:31
+
+##############################
+Log started on 2023-03-25 02:11:29
+
+##############################
+Log started on 2023-03-25 02:14:38
+
+##############################
+Log started on 2023-03-25 02:15:54
+
+2023-03-25 02:15:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-25 02:16:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000138 (Backpack)
+2023-03-25 02:16:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add backpack'
+2023-03-25 02:16:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 166, 0) in Felucca: "backpack"
+2023-03-25 02:16:03: 127.0.0.1: Serials: 0x40000005; 
+2023-03-25 02:16:09: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add sewingkit'
+2023-03-25 02:16:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 167, 0) in Felucca: "sewingkit"
+2023-03-25 02:16:10: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-25 02:16:18
+
+##############################
+Log started on 2023-03-25 02:16:54
+
+2023-03-25 02:17:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'remove '
+2023-03-25 02:17:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 0'
+2023-03-25 02:17:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '0'
+##############################
+Log started on 2023-03-25 02:18:06
+
+##############################
+Log started on 2023-03-25 02:19:51
+
+##############################
+Log started on 2023-03-25 02:22:42
+
+##############################
+Log started on 2023-03-25 02:23:00
+
+##############################
+Log started on 2023-03-25 02:25:06
+
+2023-03-25 02:25:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm add pipe'
+2023-03-25 02:25:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm add pipecourte'
+2023-03-25 02:25:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:34: 127.0.0.1: Serials: 0x40000008; 
+2023-03-25 02:25:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:34: 127.0.0.1: Serials: 0x4000000D; 
+2023-03-25 02:25:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:34: 127.0.0.1: Serials: 0x40000026; 
+2023-03-25 02:25:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:34: 127.0.0.1: Serials: 0x40000027; 
+2023-03-25 02:25:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:34: 127.0.0.1: Serials: 0x40000039; 
+2023-03-25 02:25:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:35: 127.0.0.1: Serials: 0x4000003A; 
+2023-03-25 02:25:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:35: 127.0.0.1: Serials: 0x4000003B; 
+2023-03-25 02:25:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:35: 127.0.0.1: Serials: 0x4000003C; 
+2023-03-25 02:25:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:35: 127.0.0.1: Serials: 0x4000003D; 
+2023-03-25 02:25:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:35: 127.0.0.1: Serials: 0x4000003E; 
+2023-03-25 02:25:36: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 162, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:36: 127.0.0.1: Serials: 0x4000003F; 
+2023-03-25 02:25:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:37: 127.0.0.1: Serials: 0x40000040; 
+2023-03-25 02:25:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:37: 127.0.0.1: Serials: 0x40000041; 
+2023-03-25 02:25:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:37: 127.0.0.1: Serials: 0x40000042; 
+2023-03-25 02:25:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:38: 127.0.0.1: Serials: 0x40000043; 
+2023-03-25 02:25:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:38: 127.0.0.1: Serials: 0x40000044; 
+2023-03-25 02:25:38: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2278, 164, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:38: 127.0.0.1: Serials: 0x40000045; 
+2023-03-25 02:25:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:39: 127.0.0.1: Serials: 0x40000046; 
+2023-03-25 02:25:40: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 164, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:40: 127.0.0.1: Serials: 0x40000047; 
+2023-03-25 02:25:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 164, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:41: 127.0.0.1: Serials: 0x40000048; 
+2023-03-25 02:25:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2277, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:41: 127.0.0.1: Serials: 0x40000049; 
+2023-03-25 02:25:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2290, 159, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:46: 127.0.0.1: Serials: 0x4000004A; 
+2023-03-25 02:25:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2291, 158, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:47: 127.0.0.1: Serials: 0x4000004B; 
+2023-03-25 02:25:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 157, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:48: 127.0.0.1: Serials: 0x4000004C; 
+2023-03-25 02:25:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 159, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:48: 127.0.0.1: Serials: 0x4000004D; 
+2023-03-25 02:25:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2293, 160, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:49: 127.0.0.1: Serials: 0x4000004E; 
+2023-03-25 02:25:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2294, 161, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:49: 127.0.0.1: Serials: 0x40000053; 
+2023-03-25 02:25:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2293, 162, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:50: 127.0.0.1: Serials: 0x40000054; 
+2023-03-25 02:25:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2292, 163, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:52: 127.0.0.1: Serials: 0x40000055; 
+2023-03-25 02:25:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2291, 162, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:53: 127.0.0.1: Serials: 0x40000056; 
+2023-03-25 02:25:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 155, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:56: 127.0.0.1: Serials: 0x40000071; 
+2023-03-25 02:25:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 156, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:57: 127.0.0.1: Serials: 0x40000072; 
+2023-03-25 02:25:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 157, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:57: 127.0.0.1: Serials: 0x4000007E; 
+2023-03-25 02:25:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 158, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:58: 127.0.0.1: Serials: 0x40000087; 
+2023-03-25 02:25:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 159, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:58: 127.0.0.1: Serials: 0x40000088; 
+2023-03-25 02:25:59: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2295, 160, 0) in Felucca: "pipecourte"
+2023-03-25 02:25:59: 127.0.0.1: Serials: 0x4000008A; 
+2023-03-25 02:26:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 155, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:01: 127.0.0.1: Serials: 0x4000008B; 
+2023-03-25 02:26:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 155, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:01: 127.0.0.1: Serials: 0x4000008C; 
+2023-03-25 02:26:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2298, 155, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:02: 127.0.0.1: Serials: 0x4000008D; 
+2023-03-25 02:26:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 155, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:02: 127.0.0.1: Serials: 0x4000008E; 
+2023-03-25 02:26:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 155, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:03: 127.0.0.1: Serials: 0x4000008F; 
+2023-03-25 02:26:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2297, 156, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:04: 127.0.0.1: Serials: 0x40000090; 
+2023-03-25 02:26:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2296, 157, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:04: 127.0.0.1: Serials: 0x400000FC; 
+2023-03-25 02:26:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2298, 151, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:06: 127.0.0.1: Serials: 0x400000FD; 
+2023-03-25 02:26:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2299, 152, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:07: 127.0.0.1: Serials: 0x400000FE; 
+2023-03-25 02:26:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 153, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:07: 127.0.0.1: Serials: 0x40000100; 
+2023-03-25 02:26:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2301, 154, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:08: 127.0.0.1: Serials: 0x40000101; 
+2023-03-25 02:26:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 149, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:10: 127.0.0.1: Serials: 0x40000133; 
+2023-03-25 02:26:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2301, 150, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:11: 127.0.0.1: Serials: 0x40000134; 
+2023-03-25 02:26:11: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 151, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:11: 127.0.0.1: Serials: 0x40000137; 
+2023-03-25 02:26:12: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 152, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:12: 127.0.0.1: Serials: 0x40000171; 
+2023-03-25 02:26:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 152, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:13: 127.0.0.1: Serials: 0x40000177; 
+2023-03-25 02:26:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2300, 151, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:14: 127.0.0.1: Serials: 0x40000195; 
+2023-03-25 02:26:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2301, 148, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:17: 127.0.0.1: Serials: 0x400001A0; 
+2023-03-25 02:26:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 149, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:18: 127.0.0.1: Serials: 0x400001A1; 
+2023-03-25 02:26:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 150, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:18: 127.0.0.1: Serials: 0x400001A2; 
+2023-03-25 02:26:19: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 151, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:19: 127.0.0.1: Serials: 0x400001A7; 
+2023-03-25 02:26:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2302, 147, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:20: 127.0.0.1: Serials: 0x400001BA; 
+2023-03-25 02:26:20: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 146, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:20: 127.0.0.1: Serials: 0x400001CE; 
+2023-03-25 02:26:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 151, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:22: 127.0.0.1: Serials: 0x400001D0; 
+2023-03-25 02:26:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 150, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:24: 127.0.0.1: Serials: 0x400001D1; 
+2023-03-25 02:26:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 149, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:25: 127.0.0.1: Serials: 0x400001ED; 
+2023-03-25 02:26:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 149, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:26: 127.0.0.1: Serials: 0x400001EE; 
+2023-03-25 02:26:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2303, 149, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:26: 127.0.0.1: Serials: 0x400001EF; 
+2023-03-25 02:26:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2304, 148, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:27: 127.0.0.1: Serials: 0x400001F0; 
+2023-03-25 02:26:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 147, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:27: 127.0.0.1: Serials: 0x400001F1; 
+2023-03-25 02:26:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm remove'
+2023-03-25 02:26:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x400001EE (PipeCourte)
+2023-03-25 02:26:37: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000171 (PipeCourte)
+2023-03-25 02:26:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm add pipecourte'
+2023-03-25 02:26:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2305, 144, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:45: 127.0.0.1: Serials: 0x400001F2; 
+2023-03-25 02:26:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 145, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:46: 127.0.0.1: Serials: 0x400001F3; 
+2023-03-25 02:26:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 146, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:47: 127.0.0.1: Serials: 0x400001FB; 
+2023-03-25 02:26:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 147, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:47: 127.0.0.1: Serials: 0x400001FC; 
+2023-03-25 02:26:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2306, 144, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:50: 127.0.0.1: Serials: 0x400001FD; 
+2023-03-25 02:26:50: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 144, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:50: 127.0.0.1: Serials: 0x400001FE; 
+2023-03-25 02:26:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 143, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:51: 127.0.0.1: Serials: 0x400001FF; 
+2023-03-25 02:26:51: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 142, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:51: 127.0.0.1: Serials: 0x40000200; 
+2023-03-25 02:26:53: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2307, 141, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:53: 127.0.0.1: Serials: 0x40000203; 
+2023-03-25 02:26:54: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 142, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:54: 127.0.0.1: Serials: 0x40000205; 
+2023-03-25 02:26:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2308, 142, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:55: 127.0.0.1: Serials: 0x40000217; 
+2023-03-25 02:26:55: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2309, 143, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:55: 127.0.0.1: Serials: 0x40000218; 
+2023-03-25 02:26:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2310, 144, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:56: 127.0.0.1: Serials: 0x40000219; 
+2023-03-25 02:26:56: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2311, 145, 0) in Felucca: "pipecourte"
+2023-03-25 02:26:56: 127.0.0.1: Serials: 0x4000021A; 
+2023-03-25 02:27:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2310, 139, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:00: 127.0.0.1: Serials: 0x4000021B; 
+2023-03-25 02:27:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2311, 140, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:00: 127.0.0.1: Serials: 0x4000021D; 
+2023-03-25 02:27:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 141, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:01: 127.0.0.1: Serials: 0x40000234; 
+2023-03-25 02:27:01: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2313, 141, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:01: 127.0.0.1: Serials: 0x40000235; 
+2023-03-25 02:27:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2313, 142, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:02: 127.0.0.1: Serials: 0x40000236; 
+2023-03-25 02:27:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2314, 143, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:02: 127.0.0.1: Serials: 0x40000242; 
+2023-03-25 02:27:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2315, 142, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:03: 127.0.0.1: Serials: 0x40000243; 
+2023-03-25 02:27:03: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2316, 141, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:03: 127.0.0.1: Serials: 0x40000244; 
+2023-03-25 02:27:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2313, 144, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:04: 127.0.0.1: Serials: 0x40000256; 
+2023-03-25 02:27:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 145, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:05: 127.0.0.1: Serials: 0x40000259; 
+2023-03-25 02:27:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2309, 140, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:06: 127.0.0.1: Serials: 0x4000025A; 
+2023-03-25 02:27:06: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2311, 138, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:06: 127.0.0.1: Serials: 0x40000265; 
+2023-03-25 02:27:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm remove'
+2023-03-25 02:27:13: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000235 (PipeCourte)
+2023-03-25 02:27:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000244 (PipeCourte)
+2023-03-25 02:27:18: 127.0.0.1: Owner 0x1 "Nucca" ('admin') deleting 0x40000259 (PipeCourte)
+2023-03-25 02:27:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm add pipecourte'
+2023-03-25 02:27:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2312, 136, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:25: 127.0.0.1: Serials: 0x40000266; 
+2023-03-25 02:27:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2313, 137, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:25: 127.0.0.1: Serials: 0x40000274; 
+2023-03-25 02:27:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2314, 138, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:26: 127.0.0.1: Serials: 0x400002AB; 
+2023-03-25 02:27:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2315, 139, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:26: 127.0.0.1: Serials: 0x400002AC; 
+2023-03-25 02:27:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2316, 140, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:27: 127.0.0.1: Serials: 0x400002AD; 
+2023-03-25 02:27:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2317, 139, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:27: 127.0.0.1: Serials: 0x400002AE; 
+2023-03-25 02:27:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2318, 138, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:28: 127.0.0.1: Serials: 0x400002AF; 
+2023-03-25 02:27:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2319, 137, 0) in Felucca: "pipecourte"
+2023-03-25 02:27:29: 127.0.0.1: Serials: 0x400002B0; 
+##############################
+Log started on 2023-03-25 02:50:52
+
+2023-03-25 02:51:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-25 02:51:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '100'
+##############################
+Log started on 2023-03-25 03:01:51
+
+2023-03-25 03:02:27: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 0'
+2023-03-25 03:02:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '0'
+##############################
+Log started on 2023-03-25 03:08:36
+
+##############################
+Log started on 2023-03-25 03:31:36
+
+2023-03-25 03:32:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 0'
+2023-03-25 03:32:49: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '0'
+2023-03-25 03:33:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 30'
+2023-03-25 03:33:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '30'
+2023-03-25 03:34:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add bonesewing'
+2023-03-25 03:34:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2269, 121, 0) in Felucca: "BoneSewingKit"
+2023-03-25 03:34:10: 127.0.0.1: Serials: 0x400002B1; 
+2023-03-25 03:34:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 75'
+2023-03-25 03:34:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '75'
+2023-03-25 03:36:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'save '
+##############################
+Log started on 2023-03-25 03:37:22
+
+##############################
+Log started on 2023-03-25 03:39:09
+
+##############################
+Log started on 2023-03-25 03:40:14
+
+##############################
+Log started on 2023-03-25 03:42:50
+
+##############################
+Log started on 2023-03-25 03:49:33
+
+2023-03-25 03:50:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 30'
+2023-03-25 03:50:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '30'
+##############################
+Log started on 2023-03-25 03:55:23
+
+##############################
+Log started on 2023-03-25 03:57:44
+
+##############################
+Log started on 2023-03-25 04:18:14
+
+2023-03-25 04:18:33: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add smithhammer'
+2023-03-25 04:18:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 119, 0) in Felucca: "smithhammer"
+2023-03-25 04:18:34: 127.0.0.1: Serials: 0x40000171; 
+2023-03-25 04:19:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 100'
+2023-03-25 04:19:26: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '100'
+##############################
+Log started on 2023-03-25 04:37:57
+
+##############################
+Log started on 2023-03-25 05:12:44
+
+2023-03-25 05:13:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add sacrecyclage'
+2023-03-25 05:13:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recy'
+2023-03-25 05:13:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 126, 0) in Felucca: "RecyclingBag"
+2023-03-25 05:13:10: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 05:16:18
+
+2023-03-25 05:16:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 05:16:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 125, 0) in Felucca: "RecyclingBag"
+2023-03-25 05:16:30: 127.0.0.1: Serials: 0x400001EE; 
+2023-03-25 05:16:39: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'save '
+2023-03-25 05:16:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add marchandise'
+2023-03-25 05:16:52: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 126, 0) in Felucca: "marchandise"
+2023-03-25 05:16:52: 127.0.0.1: Serials: 0x40000235; 
+##############################
+Log started on 2023-03-25 05:21:50
+
+2023-03-25 05:22:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'm remove'
+2023-03-25 05:24:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add forge'
+2023-03-25 05:24:25: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 126, 0) in Felucca: "forge"
+2023-03-25 05:24:25: 127.0.0.1: Serials: 0x40000097; 
+2023-03-25 05:24:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 05:24:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 127, 0) in Felucca: "RecyclingBag"
+2023-03-25 05:24:47: 127.0.0.1: Serials: 0x40000235; 
+2023-03-25 05:25:27: 127.0.0.1: Player 0x1 "Nucca" ('admin') used command 'gm '
+2023-03-25 05:26:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'gm '
+2023-03-25 05:26:16: 127.0.0.1: Player 0x1 "Nucca" ('admin') used command 'gm '
+2023-03-25 05:26:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'gm '
+##############################
+Log started on 2023-03-25 05:27:52
+
+##############################
+Log started on 2023-03-25 06:48:56
+
+2023-03-25 06:49:17: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recly'
+2023-03-25 06:49:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 126, 0) in Felucca: "RecycleBag"
+2023-03-25 06:49:23: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 06:53:29
+
+2023-03-25 06:53:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recy'
+2023-03-25 06:53:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 126, 0) in Felucca: "RecycleBag"
+2023-03-25 06:53:45: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 06:57:19
+
+2023-03-25 06:57:30: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recy'
+2023-03-25 06:57:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 125, 0) in Felucca: "RecycleBag"
+2023-03-25 06:57:32: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 06:59:55
+
+2023-03-25 07:00:05: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recy'
+2023-03-25 07:00:07: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 127, 0) in Felucca: "RecycleBag"
+2023-03-25 07:00:07: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 07:05:49
+
+2023-03-25 07:06:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recy'
+2023-03-25 07:06:02: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 125, 0) in Felucca: "RecycleBag"
+2023-03-25 07:06:02: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 07:07:15
+
+2023-03-25 07:07:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 07:07:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2274, 125, 0) in Felucca: "RecycleBag"
+2023-03-25 07:07:24: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 07:10:39
+
+2023-03-25 07:10:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 07:10:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 126, 0) in Felucca: "RecycleBag"
+2023-03-25 07:10:48: 127.0.0.1: Serials: 0x400001EE; 
+##############################
+Log started on 2023-03-25 07:12:24
+
+2023-03-25 12:51:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'allspells '
+2023-03-25 12:52:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add news'
+2023-03-25 12:52:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (2302, 108, 0) in Felucca: "NewSpellbook"
+2023-03-25 12:52:23: 70.55.171.10: Serials: 0x40000008; 
+2023-03-25 12:52:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 12:52:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-25 12:52:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x40000008 (NewSpellbook)
+2023-03-25 13:21:41: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'who '
+2023-03-25 13:21:43: 127.0.0.1: Owner 0x1 "Nucca" ('admin') se dirige sur 0x3 "Mig" ('Mig'), Localisation (2303, 107, 0), Map Felucca
+##############################
+Log started on 2023-03-25 13:29:19
+
+2023-03-25 13:29:31: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 13:29:34: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2275, 126, 0) in Felucca: "RecycleBag"
+2023-03-25 13:29:34: 127.0.0.1: Serials: 0x40000008; 
+##############################
+Log started on 2023-03-25 13:33:19
+
+2023-03-25 13:33:32: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 13:33:35: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 125, 0) in Felucca: "RecycleBag"
+2023-03-25 13:33:35: 127.0.0.1: Serials: 0x40000008; 
+2023-03-25 13:34:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add gold 2000'
+2023-03-25 13:34:23: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2276, 127, 0) in Felucca: "gold" "2000"
+2023-03-25 13:34:23: 127.0.0.1: Serials: 0x4000003D; 
+##############################
+Log started on 2023-03-25 13:36:30
+
+2023-03-25 13:36:45: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 13:36:47: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2273, 128, 0) in Felucca: "RecycleBag"
+2023-03-25 13:36:47: 127.0.0.1: Serials: 0x40000008; 
+2023-03-25 13:47:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 13:47:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 13:47:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:47:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:47:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:47:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:47:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:47:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:47:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 13:48:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:48:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 13:55:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 13:55:06: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 13:57:42: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 13:58:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 13:58:36: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:00:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:00:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-25 14:00:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'BaseRace' of 0x3 "Mig" ('Mig') to 'Kroise'
+2023-03-25 14:00:17: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:01:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:01:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-25 14:01:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '100'
+2023-03-25 14:01:57: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:05:53: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:05:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:05:59: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:06:38: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:07:01: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:07:30: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:07:45: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:08:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:08:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 50'
+2023-03-25 14:08:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '50'
+2023-03-25 14:08:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:08:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 14:08:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+##############################
+Log started on 2023-03-25 14:47:29
+
+2023-03-25 14:50:04: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:50:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:50:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-25 14:50:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '100'
+2023-03-25 14:50:22: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:51:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:51:18: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:51:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:51:28: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:51:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:51:56: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:52:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:52:26: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:53:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:53:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-25 14:53:48: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:54:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 14:54:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'go '
+2023-03-25 14:54:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:54:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:55:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-25 14:55:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400000F1 (HouseSign)
+2023-03-25 14:55:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'qui '
+2023-03-25 14:57:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:57:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 14:59:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:02:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:03:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:05:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:12:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-25 15:34:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-25 15:34:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:34:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:35:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'm tele'
+2023-03-25 15:36:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 15:36:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:02:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:04:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:05:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:05:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:05:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:05:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:05:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:05:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:06:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:33: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:07:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-25 16:07:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-25 16:09:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:30: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:09:31: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:27: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:13:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:14:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:10: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:13: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:14: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:15: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:23: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:24: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:25: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:26: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:50: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:15:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:04: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:05: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:06: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:07: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:08: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:09: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:12: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:17: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:21: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:16:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:36: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:37: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:38: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:39: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:40: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:41: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:42: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:48: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:52: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:54: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:55: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:58: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:17:59: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:00: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:01: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:02: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:18:03: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'm tele'
+2023-03-25 16:18:22: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'go 1000 1000'
+2023-03-25 16:20:51: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:21:28: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:21:29: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:21:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add nostalg'
+2023-03-25 16:21:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1027, 1403, 6) in Felucca: "NostalgiumIngot"
+2023-03-25 16:21:46: 70.55.171.10: Serials: 0x400005C9; 
+2023-03-25 16:21:46: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:21:49: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'props '
+2023-03-25 16:21:53: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'Amount' of 0x400005C9 (NostalgiumIngot) to '100'
+2023-03-25 16:21:56: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'setallskills 100'
+2023-03-25 16:21:57: 70.55.171.10: Owner 0x3 "Mig" ('Mig') set property 'EverySkill.Base' of 0x3 "Mig" ('Mig') to '100'
+2023-03-25 16:22:00: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 16:22:02: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'fiche '
+2023-03-25 16:22:32: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 16:22:34: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add anvil'
+2023-03-25 16:22:35: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1027, 1402, 6) in Felucca: "anvil"
+2023-03-25 16:22:35: 70.55.171.10: Serials: 0x400005CA; 
+2023-03-25 16:22:43: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add anvil'
+2023-03-25 16:22:44: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1029, 1402, 6) in Felucca: "anvil"
+2023-03-25 16:22:44: 70.55.171.10: Serials: 0x400005CB; 
+2023-03-25 16:22:45: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'remove '
+2023-03-25 16:22:47: 70.55.171.10: Owner 0x3 "Mig" ('Mig') deleting 0x400005CA (Anvil)
+2023-03-25 16:22:51: 70.55.171.10: Crafting 0x400005CC (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:22:54: 70.55.171.10: Player 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 16:24:11: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'gm '
+2023-03-25 16:24:17: 70.55.171.10: Crafting 0x400005CE (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:25:05: 70.55.171.10: Crafting 0x400005CF (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:25:08: 70.55.171.10: Crafting 0x400005D0 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:25:10: 70.55.171.10: Crafting 0x400005D1 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:25:12: 70.55.171.10: Crafting 0x400005D2 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:25:16: 70.55.171.10: Crafting 0x400005D3 (RingmailGloves) with craft system DefBlacksmithy
+2023-03-25 16:25:18: 70.55.171.10: Crafting 0x400005D4 (RingmailGloves) with craft system DefBlacksmithy
+##############################
+Log started on 2023-03-25 16:52:05
+
+2023-03-25 16:58:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add annea'
+2023-03-25 16:58:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1028, 1403, 6) in Felucca: "AnneauxCombat"
+2023-03-25 16:58:20: 70.55.171.10: Serials: 0x40000055; 
+2023-03-25 16:58:20: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+2023-03-25 16:59:16: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'add griff'
+2023-03-25 16:59:18: 70.55.171.10: Owner 0x3 "Mig" ('Mig') building at (1027, 1402, 6) in Felucca: "GriffesCombat"
+2023-03-25 16:59:18: 70.55.171.10: Serials: 0x40000072; 
+2023-03-25 16:59:19: 70.55.171.10: Owner 0x3 "Mig" ('Mig') used command 'tele '
+##############################
+Log started on 2023-03-25 17:00:38
+
+2023-03-25 17:16:42: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recyc'
+2023-03-25 17:16:44: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2281, 113, 0) in Felucca: "RecycleBag"
+2023-03-25 17:16:44: 127.0.0.1: Serials: 0x400000F3; 
+##############################
+Log started on 2023-03-25 17:22:13
+
+##############################
+Log started on 2023-03-25 17:23:38
+
+2023-03-25 17:23:46: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add recycl'
+2023-03-25 17:23:48: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 115, 0) in Felucca: "RecycleBag"
+2023-03-25 17:23:48: 127.0.0.1: Serials: 0x40000008; 
+2023-03-25 17:24:24: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add chestplate'
+2023-03-25 17:24:28: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add platechest'
+2023-03-25 17:24:29: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2279, 115, 0) in Felucca: "platechest"
+2023-03-25 17:24:29: 127.0.0.1: Serials: 0x40000023; 
+2023-03-25 17:25:04: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'move '
+2023-03-25 17:25:08: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'set movable true'
+2023-03-25 17:25:10: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'movable' of 0x40000138 (Backpack) to 'True'
+2023-03-25 17:25:14: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'move '
+2023-03-25 17:25:15: 127.0.0.1: Owner 0x1 "Nucca" ('admin') moving 0x40000138 (Backpack) to (2280, 115, 0)
+2023-03-25 17:25:21: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'add backpack'
+2023-03-25 17:25:22: 127.0.0.1: Owner 0x1 "Nucca" ('admin') building at (2280, 115, 0) in Felucca: "backpack"
+2023-03-25 17:25:22: 127.0.0.1: Serials: 0x4000003A; 
+2023-03-25 17:25:57: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 50'
+2023-03-25 17:25:58: 127.0.0.1: Owner 0x1 "Nucca" ('admin') used command 'setallskills 54'
+2023-03-25 17:26:00: 127.0.0.1: Owner 0x1 "Nucca" ('admin') set property 'EverySkill.Base' of 0x1 "Nucca" ('admin') to '54'

@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="36">
+	<account>
+		<username>Nucca</username>
+		<newCryptPassword>D1-4C-CD-59-9F-A4-CD-59-D3-35-80-AE-78-49-11-EA-04-2B-AC-B9</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T20:48:56.5744585Z</created>
+		<lastLogin>2023-04-30T22:10:55.3656534Z</lastLogin>
+		<totalGameTime>P1DT4H36M24.4742058S</totalGameTime>
+		<chars>
+			<char index="0">63</char>
+		</chars>
+		<addressList count="2">
+			<ip>192.168.2.1</ip>
+			<ip>192.168.2.17</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Artist</username>
+		<newCryptPassword>03-04-04-BA-E2-F0-29-DB-EE-34-65-C4-8C-C1-CB-B0-E5-28-C8-3C</newCryptPassword>
+		<created>2023-04-26T20:48:57.9843447Z</created>
+		<lastLogin>2023-04-27T16:45:37.6693585Z</lastLogin>
+		<totalGameTime>PT6H42M34.6832631S</totalGameTime>
+		<chars>
+			<char index="0">47</char>
+		</chars>
+		<addressList count="1">
+			<ip>74.59.151.130</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>vive2</username>
+		<newCryptPassword>47-BF-40-BA-4D-64-FF-34-01-3E-9F-D3-2D-AA-46-05-8F-BA-28-52</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-04-26T20:48:58.2542819Z</created>
+		<lastLogin>2023-04-30T15:03:39.5257359Z</lastLogin>
+		<totalGameTime>PT3H35M25.5953643S</totalGameTime>
+		<chars>
+			<char index="0">33</char>
+		</chars>
+		<addressList count="2">
+			<ip>184.160.109.184</ip>
+			<ip>76.65.253.137</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>allo123</username>
+		<newCryptPassword>CD-7F-54-75-A7-EA-A4-63-3D-7E-D2-CD-EC-A2-6B-94-59-59-79-7B</newCryptPassword>
+		<created>2023-04-26T20:49:41.6908048Z</created>
+		<lastLogin>2023-04-30T20:50:54.3180024Z</lastLogin>
+		<totalGameTime>P1DT6H29M54.378452S</totalGameTime>
+		<chars>
+			<char index="0">72</char>
+		</chars>
+		<addressList count="1">
+			<ip>104.163.181.236</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>aemulos</username>
+		<newCryptPassword>50-C3-A9-51-41-C4-EC-4D-09-9C-71-3F-8C-E7-D3-B4-F1-8F-EC-63</newCryptPassword>
+		<created>2023-04-26T20:55:04.2579657Z</created>
+		<lastLogin>2023-04-29T01:48:54.2139997Z</lastLogin>
+		<totalGameTime>PT1H50M27.449358S</totalGameTime>
+		<chars>
+			<char index="0">83</char>
+		</chars>
+		<addressList count="1">
+			<ip>174.164.192.197</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Crayo</username>
+		<newCryptPassword>5D-15-58-83-AA-82-E2-64-79-8C-F1-04-E4-6E-D7-16-02-06-6E-40</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T21:17:27.8863394Z</created>
+		<lastLogin>2023-04-30T19:12:27.7614996Z</lastLogin>
+		<totalGameTime>PT3H17M30.9795943S</totalGameTime>
+		<chars>
+			<char index="0">110</char>
+		</chars>
+		<addressList count="1">
+			<ip>144.172.181.188</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Chatchat</username>
+		<newCryptPassword>63-C6-9E-3B-91-29-72-B2-18-C1-D6-E1-3F-12-9A-F1-A8-BE-5D-08</newCryptPassword>
+		<created>2023-04-26T21:19:04.6565614Z</created>
+		<lastLogin>2023-04-30T22:22:59.9544993Z</lastLogin>
+		<totalGameTime>PT10H2.4281543S</totalGameTime>
+		<chars>
+			<char index="0">252</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-04-27T21:17:39.943885Z">Character #1 0x77 "Phoxie" deleted by 24.202.187.234</comment>
+		</comments>
+		<addressList count="1">
+			<ip>24.202.187.234</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="1">
+			<Transfert>
+				<Serial>0</Serial>
+				<Name>Phoxie</Name>
+				<Experience>50000</Experience>
+			</Transfert>
+		</Transferts>
+	</account>
+	<account>
+		<username>Mig</username>
+		<newCryptPassword>63-DD-19-2C-74-57-6E-00-85-26-E4-0D-6A-12-7A-F5-C7-74-98-F5</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T21:26:15.8148547Z</created>
+		<lastLogin>2023-04-30T21:11:47.6683332Z</lastLogin>
+		<totalGameTime>PT9H46M40.7669579S</totalGameTime>
+		<chars>
+			<char index="0">5022</char>
+		</chars>
+		<addressList count="1">
+			<ip>70.55.144.167</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>GHelmet</username>
+		<newCryptPassword>60-3D-7D-F5-13-8A-94-7A-8A-54-EE-4A-E8-68-60-F7-11-C2-7B-0A</newCryptPassword>
+		<created>2023-04-26T21:33:04.9496064Z</created>
+		<lastLogin>2023-05-01T01:10:28.8166703Z</lastLogin>
+		<totalGameTime>PT11H37M17.3438059S</totalGameTime>
+		<chars>
+			<char index="0">5024</char>
+		</chars>
+		<addressList count="1">
+			<ip>70.54.163.132</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>joelcarl</username>
+		<newCryptPassword>9E-4D-02-93-E5-E8-AD-10-DB-9C-A0-80-0A-B3-97-4B-ED-5C-3B-19</newCryptPassword>
+		<created>2023-04-26T22:21:43.8861021Z</created>
+		<lastLogin>2023-04-30T23:26:01.0545459Z</lastLogin>
+		<totalGameTime>PT4H52M7.8158935S</totalGameTime>
+		<chars>
+			<char index="0">679</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2023-04-30T21:18:08.803413Z">Character #1 0x7 "Rohan Horscroft" deleted by 74.15.128.29</comment>
+		</comments>
+		<addressList count="1">
+			<ip>74.15.128.29</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="1">
+			<Transfert>
+				<Serial>0</Serial>
+				<Name>Rohan Horscroft</Name>
+				<Experience>50000</Experience>
+			</Transfert>
+		</Transferts>
+	</account>
+	<account>
+		<username>karlysun</username>
+		<newCryptPassword>92-C0-8F-5E-4D-DE-68-03-09-D3-FB-09-BA-78-66-FE-09-08-01-15</newCryptPassword>
+		<created>2023-04-26T23:21:13.9379817Z</created>
+		<lastLogin>2023-04-27T00:11:20.3265309Z</lastLogin>
+		<totalGameTime>PT1H50M15.4919906S</totalGameTime>
+		<chars>
+			<char index="0">37</char>
+		</chars>
+		<addressList count="1">
+			<ip>198.16.162.140</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Nebelpfade</username>
+		<newCryptPassword>A5-B6-45-97-3E-87-05-67-37-13-C4-B9-BE-A8-B4-8E-A7-D8-32-DA</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<created>2023-04-26T23:22:06.4951846Z</created>
+		<lastLogin>2023-05-01T01:09:44.1429338Z</lastLogin>
+		<totalGameTime>PT10H48M13.7991699S</totalGameTime>
+		<chars>
+			<char index="0">38</char>
+		</chars>
+		<addressList count="2">
+			<ip>184.161.174.38</ip>
+			<ip>207.253.47.36</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>rotxsane</username>
+		<newCryptPassword>D9-61-5F-9A-1D-AA-73-91-A8-34-56-D9-71-9B-7B-90-FD-88-FF-C8</newCryptPassword>
+		<created>2023-04-27T00:27:12.3870634Z</created>
+		<lastLogin>2023-04-27T02:38:19.4398097Z</lastLogin>
+		<totalGameTime>PT2H12M18.4621372S</totalGameTime>
+		<chars>
+			<char index="0">57</char>
+		</chars>
+		<addressList count="1">
+			<ip>96.21.250.47</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Lionheart</username>
+		<newCryptPassword>BF-DA-CE-C2-B6-22-1E-A3-E5-48-F2-F2-E0-A7-05-53-03-98-1E-B0</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-04-27T01:00:12.0563178Z</created>
+		<lastLogin>2023-04-27T02:57:13.8723657Z</lastLogin>
+		<totalGameTime>PT33M34.8990001S</totalGameTime>
+		<chars>
+			<char index="0">92</char>
+		</chars>
+		<addressList count="1">
+			<ip>142.127.0.3</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Adax</username>
+		<newCryptPassword>53-E3-01-5A-8B-A6-34-BB-F8-15-4F-F1-56-5F-62-ED-6C-F8-8E-39</newCryptPassword>
+		<created>2023-04-27T01:52:17.1260082Z</created>
+		<lastLogin>2023-04-30T00:32:48.6428708Z</lastLogin>
+		<totalGameTime>PT3H28M20.1194024S</totalGameTime>
+		<chars>
+			<char index="0">135</char>
+		</chars>
+		<addressList count="1">
+			<ip>142.116.220.101</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Valerus01</username>
+		<newCryptPassword>13-34-69-00-0E-D1-1B-2E-D7-DB-52-B2-E2-B7-D7-9C-DC-3B-7C-87</newCryptPassword>
+		<created>2023-04-27T02:28:00.783151Z</created>
+		<lastLogin>2023-04-29T03:36:14.1297946Z</lastLogin>
+		<totalGameTime>PT2H19M17.1004653S</totalGameTime>
+		<chars>
+			<char index="0">5</char>
+		</chars>
+		<addressList count="1">
+			<ip>209.52.17.174</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Evrard</username>
+		<newCryptPassword>58-DE-21-D7-BF-7D-71-22-A3-45-0A-00-C7-BF-23-F2-9B-82-E7-93</newCryptPassword>
+		<created>2023-04-27T04:40:33.4034608Z</created>
+		<lastLogin>2023-04-30T22:01:46.20352Z</lastLogin>
+		<totalGameTime>PT12H49M51.8133995S</totalGameTime>
+		<chars>
+			<char index="0">60</char>
+		</chars>
+		<addressList count="1">
+			<ip>88.127.123.145</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Miaw</username>
+		<newCryptPassword>27-AE-68-63-B4-A3-A0-BD-89-9B-8A-DD-58-86-D4-06-E2-18-F5-9E</newCryptPassword>
+		<created>2023-04-27T04:59:49.9093519Z</created>
+		<lastLogin>2023-05-01T01:13:31.8378863Z</lastLogin>
+		<totalGameTime>PT10H2M39.2514399S</totalGameTime>
+		<chars>
+			<char index="0">62</char>
+		</chars>
+		<addressList count="2">
+			<ip>184.162.192.140</ip>
+			<ip>24.157.206.171</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>bftmpat</username>
+		<newCryptPassword>A9-02-33-FD-53-CE-D9-39-C8-7B-31-82-BE-70-85-64-1E-7B-96-F3</newCryptPassword>
+		<created>2023-04-27T11:02:41.9182157Z</created>
+		<lastLogin>2023-04-30T20:35:34.3497955Z</lastLogin>
+		<totalGameTime>PT41M13.5909249S</totalGameTime>
+		<chars>
+			<char index="0">195</char>
+		</chars>
+		<addressList count="1">
+			<ip>70.50.156.179</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Islena</username>
+		<newCryptPassword>82-D5-86-1D-C2-D3-CA-72-71-88-7A-8E-F4-77-90-BB-A5-87-F1-40</newCryptPassword>
+		<created>2023-04-27T12:28:10.533487Z</created>
+		<lastLogin>2023-04-27T12:28:10.533487Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>173.176.122.230</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>bbq</username>
+		<newCryptPassword>21-84-02-21-4C-C6-B4-63-30-4F-DC-FD-06-FE-59-57-34-B8-31-91</newCryptPassword>
+		<created>2023-04-27T13:53:02.0464683Z</created>
+		<lastLogin>2023-04-30T12:21:54.5605201Z</lastLogin>
+		<totalGameTime>PT5H7M7.8600998S</totalGameTime>
+		<chars>
+			<char index="0">200</char>
+		</chars>
+		<addressList count="1">
+			<ip>173.176.122.230</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Riiem</username>
+		<newCryptPassword>9A-7B-1D-32-29-1F-33-B6-64-75-93-1A-20-21-D7-D1-71-45-DA-53</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-04-27T15:16:40.4243683Z</created>
+		<lastLogin>2023-04-28T15:46:10.8886175Z</lastLogin>
+		<totalGameTime>PT1H4M28.1939425S</totalGameTime>
+		<chars>
+			<char index="0">201</char>
+		</chars>
+		<addressList count="5">
+			<ip>142.169.16.117</ip>
+			<ip>142.169.16.72</ip>
+			<ip>142.169.16.174</ip>
+			<ip>142.169.16.11</ip>
+			<ip>142.169.16.21</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Vaelena</username>
+		<newCryptPassword>C0-FC-C6-82-B1-C6-EE-89-8B-46-89-E4-FF-E1-C4-3A-81-65-58-46</newCryptPassword>
+		<created>2023-04-27T15:45:37.5460555Z</created>
+		<lastLogin>2023-04-29T18:55:02.2934036Z</lastLogin>
+		<totalGameTime>PT4H51M0.0999837S</totalGameTime>
+		<chars>
+			<char index="0">202</char>
+		</chars>
+		<addressList count="1">
+			<ip>104.221.125.240</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Hebius</username>
+		<newCryptPassword>FF-1F-6D-2F-99-D3-54-F1-65-EE-81-40-44-2D-6D-8A-26-DB-2B-22</newCryptPassword>
+		<created>2023-04-27T16:13:43.0462328Z</created>
+		<lastLogin>2023-04-30T20:51:20.0574132Z</lastLogin>
+		<totalGameTime>PT22H12M41.2434539S</totalGameTime>
+		<chars>
+			<char index="0">203</char>
+		</chars>
+		<addressList count="4">
+			<ip>176.129.9.147</ip>
+			<ip>176.167.164.126</ip>
+			<ip>176.183.179.38</ip>
+			<ip>176.167.70.91</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>tiger1</username>
+		<newCryptPassword>7A-0A-7C-B1-47-67-2D-0B-9B-D3-55-3F-AF-EE-2B-41-83-AB-87-6B</newCryptPassword>
+		<created>2023-04-27T18:25:55.7040228Z</created>
+		<lastLogin>2023-04-27T18:26:30.1229314Z</lastLogin>
+		<totalGameTime>PT12M20.3038361S</totalGameTime>
+		<chars>
+			<char index="0">211</char>
+		</chars>
+		<addressList count="1">
+			<ip>69.173.135.226</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>patatepoils</username>
+		<newCryptPassword>A6-DE-AA-2D-79-76-64-69-15-6D-66-C8-D0-DA-7D-24-BB-24-E8-AE</newCryptPassword>
+		<created>2023-04-27T18:50:33.4789489Z</created>
+		<lastLogin>2023-04-27T18:50:33.4789489Z</lastLogin>
+		<totalGameTime>PT0S</totalGameTime>
+		<chars />
+		<addressList count="1">
+			<ip>142.113.20.149</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Daedalus</username>
+		<newCryptPassword>C5-CD-E4-24-51-93-8F-7F-5B-B1-3D-5A-DA-E7-55-CC-F7-6B-28-7F</newCryptPassword>
+		<created>2023-04-27T21:04:47.9237889Z</created>
+		<lastLogin>2023-04-27T21:05:04.4798098Z</lastLogin>
+		<totalGameTime>PT14M53.3028119S</totalGameTime>
+		<chars>
+			<char index="0">251</char>
+		</chars>
+		<addressList count="1">
+			<ip>69.157.122.246</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Targrak</username>
+		<newCryptPassword>C6-44-36-A6-05-55-92-81-27-F4-87-2F-4B-03-B8-A3-D7-D3-69-DD</newCryptPassword>
+		<created>2023-04-28T06:21:34.3237108Z</created>
+		<lastLogin>2023-04-29T09:24:16.8237295Z</lastLogin>
+		<totalGameTime>PT10H49M58.5315738S</totalGameTime>
+		<chars>
+			<char index="0">108</char>
+		</chars>
+		<addressList count="1">
+			<ip>24.225.231.13</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Snow</username>
+		<newCryptPassword>14-36-BB-D1-67-57-48-87-5C-E7-29-A4-F4-92-24-55-76-CC-56-F1</newCryptPassword>
+		<created>2023-04-28T14:45:12.9279765Z</created>
+		<lastLogin>2023-04-28T14:45:28.3742331Z</lastLogin>
+		<totalGameTime>PT7M46.5391116S</totalGameTime>
+		<chars>
+			<char index="0">35</char>
+		</chars>
+		<addressList count="1">
+			<ip>174.92.185.202</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>OmgSauceBbq</username>
+		<newCryptPassword>26-F8-93-96-3B-59-E7-35-57-99-B0-C8-4A-96-3F-95-C8-54-82-FE</newCryptPassword>
+		<created>2023-04-28T15:24:22.0100513Z</created>
+		<lastLogin>2023-04-29T21:51:29.3549903Z</lastLogin>
+		<totalGameTime>PT55M4.8840929S</totalGameTime>
+		<chars>
+			<char index="0">50</char>
+		</chars>
+		<addressList count="1">
+			<ip>173.176.229.91</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>PsyDoubt</username>
+		<newCryptPassword>6B-A1-F7-00-C7-9B-4B-C1-47-12-74-30-25-46-BF-F7-EF-D0-42-0F</newCryptPassword>
+		<created>2023-04-28T15:26:18.3967017Z</created>
+		<lastLogin>2023-04-29T02:41:35.4644971Z</lastLogin>
+		<totalGameTime>PT4H25M43.0019279S</totalGameTime>
+		<chars>
+			<char index="0">53</char>
+		</chars>
+		<addressList count="1">
+			<ip>104.221.125.240</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Bob</username>
+		<newCryptPassword>FD-2E-07-3A-2B-1B-64-11-F3-7E-C4-75-E2-BE-B5-5E-8D-97-E7-10</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-04-28T15:31:47.2060701Z</created>
+		<lastLogin>2023-04-29T10:52:17.7106566Z</lastLogin>
+		<totalGameTime>PT1H47M46.5684508S</totalGameTime>
+		<chars>
+			<char index="0">64</char>
+		</chars>
+		<addressList count="4">
+			<ip>142.169.16.11</ip>
+			<ip>142.169.16.21</ip>
+			<ip>142.169.16.2</ip>
+			<ip>74.14.172.191</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Rezael</username>
+		<newCryptPassword>C9-64-DB-2A-C0-5C-E5-BE-0D-10-87-62-80-BA-24-31-82-DC-99-76</newCryptPassword>
+		<created>2023-04-28T21:01:01.6823738Z</created>
+		<lastLogin>2023-04-28T23:45:50.8207902Z</lastLogin>
+		<totalGameTime>PT19M16.5128652S</totalGameTime>
+		<chars>
+			<char index="0">159</char>
+		</chars>
+		<addressList count="1">
+			<ip>142.170.62.150</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Swindy</username>
+		<newCryptPassword>01-26-FB-C4-C1-4B-0A-B8-ED-1C-FB-92-81-49-D0-DE-9E-62-2D-CB</newCryptPassword>
+		<created>2023-04-29T02:51:59.330022Z</created>
+		<lastLogin>2023-04-29T02:55:57.2647282Z</lastLogin>
+		<totalGameTime>PT1H52M45.9873732S</totalGameTime>
+		<chars>
+			<char index="0">58</char>
+		</chars>
+		<addressList count="1">
+			<ip>209.52.17.174</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Phoenix</username>
+		<newCryptPassword>30-4C-73-5C-61-A0-F1-9D-C4-10-13-B5-F9-E9-E8-B0-08-05-71-B2</newCryptPassword>
+		<created>2023-04-29T12:42:46.580019Z</created>
+		<lastLogin>2023-04-30T20:55:45.9581266Z</lastLogin>
+		<totalGameTime>PT1H47M54.7233745S</totalGameTime>
+		<chars>
+			<char index="0">468</char>
+		</chars>
+		<addressList count="1">
+			<ip>70.81.225.49</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+	<account>
+		<username>Trouba</username>
+		<newCryptPassword>0A-BC-8F-57-C2-70-5E-B7-FD-BC-36-57-B1-6F-58-AA-43-21-FA-4F</newCryptPassword>
+		<accessLevel>GameMaster</accessLevel>
+		<created>2023-04-29T21:48:17.2831739Z</created>
+		<lastLogin>2023-04-30T17:28:09.276358Z</lastLogin>
+		<totalGameTime>PT19M6.0880504S</totalGameTime>
+		<chars>
+			<char index="0">305</char>
+		</chars>
+		<addressList count="1">
+			<ip>207.253.145.100</ip>
+		</addressList>
+		<totalCurrency>0</totalCurrency>
+		<sovereigns>0</sovereigns>
+		<Transferts count="0" />
+	</account>
+</accounts>

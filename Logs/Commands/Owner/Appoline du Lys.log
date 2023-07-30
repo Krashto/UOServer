@@ -1,0 +1,67 @@
+2023-06-02 00:24:55: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'm tele'
+2023-06-02 00:25:00: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'unhide '
+2023-06-02 00:25:01: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) unhiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 00:25:03: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'move '
+2023-06-02 00:25:05: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) moving 0x163B "Keli Etoile-Rugissante" ('Jonimue') to (2273, 81, 0)
+2023-06-02 00:25:43: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'props '
+2023-06-02 00:25:54: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'CantWalk' of 0x1505 "Godrick de Colognan" ('Lionheart') to 'False'
+2023-06-02 00:26:29: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'add ostrich'
+2023-06-02 00:26:38: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'add horse'
+2023-06-02 00:26:39: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) building at (2290, 90, 0) in Felucca: "horse"
+2023-06-02 00:26:39: 142.113.73.130: Serials: 0x1977; 
+2023-06-02 00:26:41: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'add horse'
+2023-06-02 00:26:42: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) building at (2291, 90, 0) in Felucca: "horse"
+2023-06-02 00:26:42: 142.113.73.130: Serials: 0x1979; 
+2023-06-02 00:26:47: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'delete '
+2023-06-02 00:26:48: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) deleting 0x1977 " Cheval" (no account)
+2023-06-02 00:26:49: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'hide '
+2023-06-02 00:26:50: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) hiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 00:26:54: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'qui '
+2023-06-02 00:26:58: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) se dirige sur 0x1505 "Godrick de Colognan" ('Lionheart'), Localisation (992, 1389, 1), Map Felucca
+2023-06-02 00:27:10: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'props '
+2023-06-02 00:27:17: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'Beaute' of 0x94B "Appoline du Lys" (no account) to 'Fascinant'
+2023-06-02 00:27:24: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'Grandeur' of 0x94B "Appoline du Lys" (no account) to 'PlutotGrand'
+2023-06-02 00:27:33: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'props '
+2023-06-02 00:27:38: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'Grandeur' of 0x94B "Appoline du Lys" (no account) to 'PlutotGrand'
+2023-06-02 00:27:48: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'props '
+2023-06-02 00:27:52: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'BaseRace' of 0x94B "Appoline du Lys" (no account) to 'Riverain'
+2023-06-02 00:27:57: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'BaseRace' of 0x94B "Appoline du Lys" (no account) to 'Riverain'
+2023-06-02 00:28:00: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'BaseRace' of 0x94B "Appoline du Lys" (no account) to 'Riverain'
+2023-06-02 00:28:04: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'BaseRace' of 0x94B "Appoline du Lys" (no account) to 'Riverain'
+2023-06-02 00:28:29: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'unhide '
+2023-06-02 00:28:30: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) unhiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 00:31:58: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'set cantwalk true'
+2023-06-02 00:31:58: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'cantwalk' of 0x1979 " Cheval" (no account) to 'True'
+2023-06-02 00:44:26: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's hahaha'
+2023-06-02 00:44:31: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'delete '
+2023-06-02 00:44:32: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) deleting 0x4000EE6A (Static)
+2023-06-02 01:02:45: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's log delog'
+2023-06-02 01:02:52: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's quoi que non tu es en posseder'
+2023-06-02 01:02:56: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's tu veux quoi?'
+2023-06-02 01:03:21: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'delete '
+2023-06-02 01:03:54: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's je suis pas sure de comprendre'
+2023-06-02 01:07:13: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'set cantwalk false'
+2023-06-02 01:07:17: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'cantwalk' of 0x1979 " Cheval" (no account) to 'False'
+2023-06-02 01:07:37: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'delete '
+2023-06-02 01:07:44: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'hide '
+2023-06-02 01:07:46: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) hiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 01:08:31: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's c'est quoi ce viarge de page...'
+2023-06-02 01:08:41: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's Hyara ca?'
+2023-06-02 01:08:45: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'm tele'
+2023-06-02 01:09:01: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'set cantwalk true'
+2023-06-02 01:09:03: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) set property 'cantwalk' of 0x1979 " Cheval" (no account) to 'True'
+2023-06-02 01:09:05: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'move '
+2023-06-02 01:09:07: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) moving 0x1979 " Cheval" (no account) to (1020, 1396, 24)
+2023-06-02 01:09:10: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'move '
+2023-06-02 01:09:12: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) moving 0x1979 " Cheval" (no account) to (1020, 1397, 23)
+2023-06-02 01:09:39: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'unhide '
+2023-06-02 01:09:41: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) unhiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 01:09:59: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's je vais te l'arranger'
+2023-06-02 01:10:09: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's quand j'aurai un moment, en faisant l'autre'
+2023-06-02 01:14:12: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's non c'est barré'
+2023-06-02 01:14:17: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'hide '
+2023-06-02 01:14:20: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) hiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 01:14:21: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'm tele'
+2023-06-02 01:14:30: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 'unhide '
+2023-06-02 01:14:32: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) unhiding 0x94B "Appoline du Lys" (no account)
+2023-06-02 01:21:49: 142.113.73.130: Owner 0x94B "Appoline du Lys" (no account) used command 's non :S'

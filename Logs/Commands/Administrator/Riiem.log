@@ -1,0 +1,524 @@
+2023-04-18 01:51:47: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'gm '
+2023-04-18 01:52:00: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'tele '
+2023-04-18 01:52:07: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'm tele'
+2023-04-18 01:53:03: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'speedboost '
+2023-04-18 01:55:59: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'help '
+2023-04-18 01:56:26: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'speedboost '
+2023-04-18 23:51:18: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'speedboost '
+2023-04-18 23:53:26: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setskill animal taming 99'
+2023-04-18 23:53:42: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setskill all 100'
+2023-04-18 23:54:08: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setskill animaltaming 100'
+2023-04-18 23:54:10: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'AnimalTaming.Base' of 0x233 "Zahid Ra'Zak" ('Riiem') to '100'
+2023-04-18 23:54:59: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setskill animaltaming 999'
+2023-04-18 23:55:00: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'AnimalTaming.Base' of 0x233 "Zahid Ra'Zak" ('Riiem') to '999'
+2023-04-18 23:58:26: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'set followers 99'
+2023-04-18 23:58:27: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'followers' of 0x233 "Zahid Ra'Zak" ('Riiem') to '99'
+2023-04-18 23:58:38: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'set followers 0'
+2023-04-18 23:58:39: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'followers' of 0x233 "Zahid Ra'Zak" ('Riiem') to '0'
+2023-04-18 23:59:03: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setskill peacemaking 999'
+2023-04-18 23:59:04: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'Peacemaking.Base' of 0x233 "Zahid Ra'Zak" ('Riiem') to '999'
+2023-04-19 00:02:39: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setskill animaltaming 999'
+2023-04-19 00:02:42: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'AnimalTaming.Base' of 0x233 "Zahid Ra'Zak" ('Riiem') to '999'
+2023-04-19 00:13:21: 184.146.233.152: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'speedboost '
+2023-04-19 15:44:02: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'setallskills 999'
+2023-04-19 15:44:04: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'EverySkill.Base' of 0x233 "Zahid Ra'Zak" ('Riiem') to '999'
+2023-04-19 15:44:44: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'm tele'
+2023-04-19 15:45:12: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'set followers 0'
+2023-04-19 15:45:13: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'followers' of 0x233 "Zahid Ra'Zak" ('Riiem') to '0'
+2023-04-19 15:45:58: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'm tele'
+2023-04-19 15:51:46: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'm tele'
+2023-04-19 15:52:17: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'props '
+2023-04-19 15:54:13: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'm tele'
+2023-04-19 15:54:42: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') used command 'props '
+2023-04-19 15:55:23: 142.169.16.85: Administrator 0x233 "Zahid Ra'Zak" ('Riiem') set property 'Name' of 0x233 "Zahid Ra'Zak" ('Riiem') to 'Riiem'
+2023-04-19 15:55:35: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'add gm robe'
+2023-04-19 15:55:50: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') building at (1013, 295, 1) in Felucca: "GMRobe"
+2023-04-19 15:55:50: 142.169.16.85: Serials: 0x40003525; 
+2023-04-19 15:56:21: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'viewhue '
+2023-04-19 15:56:46: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 72'
+2023-04-19 15:56:48: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '72'
+2023-04-19 15:57:23: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 562'
+2023-04-19 15:57:24: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '562'
+2023-04-19 15:57:28: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 0'
+2023-04-19 15:57:31: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '0'
+2023-04-19 15:57:32: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 562'
+2023-04-19 15:57:33: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '562'
+2023-04-19 15:57:43: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 877'
+2023-04-19 15:57:44: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '877'
+2023-04-19 15:57:49: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'fiche '
+2023-04-19 15:58:36: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'viewhue '
+2023-04-19 15:59:08: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2461'
+2023-04-19 15:59:10: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '2461'
+2023-04-19 15:59:12: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2462'
+2023-04-19 15:59:13: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '2462'
+2023-04-19 15:59:19: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2460'
+2023-04-19 15:59:20: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '2460'
+2023-04-19 15:59:22: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2459'
+2023-04-19 15:59:23: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40003525 (GMRobe) to '2459'
+2023-04-19 15:59:53: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:01:08: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:02:30: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'set allskills 999'
+2023-04-19 16:02:51: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'set allskills 999'
+2023-04-19 16:03:02: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'setallskills 999'
+2023-04-19 16:03:04: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'EverySkill.Base' of 0x233 "Riiem" ('Riiem') to '999'
+2023-04-19 16:03:34: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:04:28: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'speedboost '
+2023-04-19 16:07:22: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:07:52: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'setallskills 999'
+2023-04-19 16:07:54: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'EverySkill.Base' of 0x86D "Un Phenix" (no account) to '999'
+2023-04-19 16:08:02: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'kill '
+2023-04-19 16:08:03: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') killing 0x86D "Un Phenix" (no account)
+2023-04-19 16:08:17: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 16:08:18: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40003539 (Corpse)
+2023-04-19 16:08:35: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'setallskills 999'
+2023-04-19 16:08:37: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'EverySkill.Base' of 0x233 "Riiem" ('Riiem') to '999'
+2023-04-19 16:10:13: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'set followers 0'
+2023-04-19 16:10:15: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'followers' of 0x233 "Riiem" ('Riiem') to '0'
+2023-04-19 16:15:24: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 16:18:14: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'setallskills 999'
+2023-04-19 16:18:16: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'EverySkill.Base' of 0x847 "Un Scarabee de feu" (no account) to '999'
+2023-04-19 16:18:29: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'kill '
+2023-04-19 16:18:30: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') killing 0x847 "Un Scarabee de feu" (no account)
+2023-04-19 16:18:46: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'setallskills 999'
+2023-04-19 16:18:48: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'EverySkill.Base' of 0x233 "Riiem" ('Riiem') to '999'
+2023-04-19 16:19:30: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'fiche '
+2023-04-19 16:19:45: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:20:49: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:22:06: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'tele '
+2023-04-19 16:22:34: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 16:24:39: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:25:31: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 16:26:19: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:28:53: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:30:45: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:33:07: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 16:33:28: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'set hue 2517'
+2023-04-19 16:33:29: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'hue' of 0xA74 "Ordano" (no account) to '2517'
+2023-04-19 16:33:36: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'set hue 2517'
+2023-04-19 16:33:38: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') set property 'hue' of 0x40000CF4 (CorpsElvolus) to '2517'
+2023-04-19 16:34:29: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:35:58: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:36:08: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:49:01: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:49:47: 142.169.16.85: Administrator 0x233 "Riiem" ('Riiem') used command 'add '
+2023-04-19 16:54:02: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'add '
+2023-04-19 16:54:22: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Add SummoningAltar'
+2023-04-19 16:55:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'add smole'
+2023-04-19 16:55:37: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1451, 0) in Felucca: "SmokeBomb"
+2023-04-19 16:55:37: 142.169.16.194: Serials: 0x4000368B; 
+2023-04-19 16:55:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1452, 0) in Felucca: "SmokeBomb"
+2023-04-19 16:55:52: 142.169.16.194: Serials: 0x4000368D; 
+2023-04-19 16:56:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1040, 1451, 0) in Felucca: "SmokeBomb"
+2023-04-19 16:56:03: 142.169.16.194: Serials: 0x40003690; 
+2023-04-19 16:56:04: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1451, 0) in Felucca: "SmokeBomb"
+2023-04-19 16:56:04: 142.169.16.194: Serials: 0x40003691; 
+2023-04-19 16:56:04: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1451, 0) in Felucca: "SmokeBomb"
+2023-04-19 16:56:04: 142.169.16.194: Serials: 0x40003692; 
+2023-04-19 16:57:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1453, 0) in Felucca: "SmokeBomb"
+2023-04-19 16:57:27: 142.169.16.194: Serials: 0x40003694; 
+2023-04-19 16:57:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 16:58:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1450, 0) in Felucca: "BBQSmokerDeed"
+2023-04-19 16:58:28: 142.169.16.194: Serials: 0x4000369A; 
+2023-04-19 16:58:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'add steam'
+2023-04-19 16:59:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'add '
+2023-04-19 16:59:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'add '
+2023-04-19 17:02:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'staticstool '
+2023-04-19 17:02:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addcustomsstatic '
+2023-04-19 17:02:25: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimationstatic '
+2023-04-19 17:02:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addlightsstatic '
+2023-04-19 17:02:34: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addfence '
+2023-04-19 17:02:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscstatic1 '
+2023-04-19 17:02:40: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt1 '
+2023-04-19 17:02:44: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt3 '
+2023-04-19 17:02:45: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt2 '
+2023-04-19 17:02:46: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt4 '
+2023-04-19 17:02:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt6 '
+2023-04-19 17:02:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt5 '
+2023-04-19 17:02:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt7 '
+2023-04-19 17:02:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt8 '
+2023-04-19 17:02:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt10 '
+2023-04-19 17:02:56: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt9 '
+2023-04-19 17:02:59: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt11 '
+2023-04-19 17:03:00: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt12 '
+2023-04-19 17:03:02: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt14 '
+2023-04-19 17:03:05: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt13 '
+2023-04-19 17:03:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt15 '
+2023-04-19 17:03:12: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt14 '
+2023-04-19 17:03:14: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt16 '
+2023-04-19 17:03:15: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt18 '
+2023-04-19 17:03:17: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt17 '
+2023-04-19 17:03:19: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt18 '
+2023-04-19 17:03:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt20 '
+2023-04-19 17:03:21: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt19 '
+2023-04-19 17:03:22: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt19 '
+2023-04-19 17:03:24: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscstatic2 '
+2023-04-19 17:03:26: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt1 '
+2023-04-19 17:03:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt2 '
+2023-04-19 17:03:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt4 '
+2023-04-19 17:03:38: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt5 '
+2023-04-19 17:03:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt7 '
+2023-04-19 17:03:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt9 '
+2023-04-19 17:03:44: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt10 '
+2023-04-19 17:03:46: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt12 '
+2023-04-19 17:03:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt11 '
+2023-04-19 17:04:19: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 14106'
+2023-04-19 17:04:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1040, 1450, 0) in Felucca: "Static" "14106"
+2023-04-19 17:04:23: 142.169.16.194: Serials: 0x400036A7; 
+2023-04-19 17:04:40: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 17:04:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 17:05:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036A7 (Static) to '1001'
+2023-04-19 17:05:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'viewhue '
+2023-04-19 17:06:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 931'
+2023-04-19 17:06:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 931'
+2023-04-19 17:06:14: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036A7 (Static) to '931'
+2023-04-19 17:06:32: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 1153'
+2023-04-19 17:06:34: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036A7 (Static) to '1153'
+2023-04-19 17:06:46: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 1150'
+2023-04-19 17:06:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '1150'
+2023-04-19 17:06:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 1153'
+2023-04-19 17:06:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '1153'
+2023-04-19 17:07:26: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 1781'
+2023-04-19 17:07:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '1781'
+2023-04-19 17:07:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2040'
+2023-04-19 17:07:42: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2040'
+2023-04-19 17:07:46: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2041'
+2023-04-19 17:07:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2041'
+2023-04-19 17:07:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2089'
+2023-04-19 17:07:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2089'
+2023-04-19 17:08:00: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2090'
+2023-04-19 17:08:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2090'
+2023-04-19 17:08:04: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2092'
+2023-04-19 17:08:05: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2092'
+2023-04-19 17:08:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2093'
+2023-04-19 17:08:07: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2093'
+2023-04-19 17:08:09: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2094'
+2023-04-19 17:08:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2094'
+2023-04-19 17:08:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2058'
+2023-04-19 17:08:17: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2058'
+2023-04-19 17:08:22: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2042'
+2023-04-19 17:08:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2042'
+2023-04-19 17:08:30: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:08:32: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400036A7 (Static)
+2023-04-19 17:08:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:08:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x400036AB (Static) (inBag=False; amount=1)
+2023-04-19 17:08:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x400036AB (Static) creating 0x400036B4 (Static)
+2023-04-19 17:09:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2498'
+2023-04-19 17:09:29: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2498'
+2023-04-19 17:09:48: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2738'
+2023-04-19 17:09:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2738'
+2023-04-19 17:09:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2790'
+2023-04-19 17:09:55: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2790'
+2023-04-19 17:09:59: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2796'
+2023-04-19 17:10:00: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2796'
+2023-04-19 17:10:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2929'
+2023-04-19 17:10:12: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2929'
+2023-04-19 17:10:22: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2973'
+2023-04-19 17:10:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400036AB (Static) to '2973'
+2023-04-19 17:10:46: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:11:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscstatic2 '
+2023-04-19 17:11:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt1 '
+2023-04-19 17:11:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt14 '
+2023-04-19 17:11:14: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt16 '
+2023-04-19 17:11:14: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt18 '
+2023-04-19 17:11:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt15 '
+2023-04-19 17:11:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt17 '
+2023-04-19 17:11:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt19 '
+2023-04-19 17:11:19: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt20 '
+2023-04-19 17:11:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt18 '
+2023-04-19 17:11:22: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt16 '
+2023-04-19 17:11:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt15 '
+2023-04-19 17:11:25: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt13 '
+2023-04-19 17:11:26: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt14 '
+2023-04-19 17:11:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt12 '
+2023-04-19 17:11:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt11 '
+2023-04-19 17:12:09: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt13 '
+2023-04-19 17:14:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'staticstool '
+2023-04-19 17:14:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimationstatic '
+2023-04-19 17:14:09: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt1 '
+2023-04-19 17:14:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 2317'
+2023-04-19 17:14:19: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1452, 0) in Felucca: "Static" "2317"
+2023-04-19 17:14:19: 142.169.16.194: Serials: 0x4000003B; 
+2023-04-19 17:14:25: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1452, 0) in Felucca: "Static" "2317"
+2023-04-19 17:14:25: 142.169.16.194: Serials: 0x40000051; 
+2023-04-19 17:14:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1037, 1453, 0) in Felucca: "Static" "2317"
+2023-04-19 17:14:27: 142.169.16.194: Serials: 0x40000066; 
+2023-04-19 17:14:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1453, 0) in Felucca: "Static" "2317"
+2023-04-19 17:14:28: 142.169.16.194: Serials: 0x40000067; 
+2023-04-19 17:14:45: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:14:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x4000003B (Static)
+2023-04-19 17:14:48: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:14:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000066 (Static)
+2023-04-19 17:14:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:14:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000067 (Static)
+2023-04-19 17:14:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:14:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000051 (Static)
+2023-04-19 17:14:56: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt1 '
+2023-04-19 17:15:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt2 '
+2023-04-19 17:15:21: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 6582'
+2023-04-19 17:15:21: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1452, 0) in Felucca: "Static" "6582"
+2023-04-19 17:15:21: 142.169.16.194: Serials: 0x40000068; 
+2023-04-19 17:15:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:15:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000068 (Static)
+2023-04-19 17:15:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt3 '
+2023-04-19 17:15:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt4 '
+2023-04-19 17:16:05: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 14122'
+2023-04-19 17:16:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1040, 1451, 0) in Felucca: "Static" "14122"
+2023-04-19 17:16:06: 142.169.16.194: Serials: 0x40000078; 
+2023-04-19 17:16:15: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:16:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000078 (Static)
+2023-04-19 17:16:40: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 14240'
+2023-04-19 17:16:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1451, 0) in Felucca: "Static" "14240"
+2023-04-19 17:16:41: 142.169.16.194: Serials: 0x40000096; 
+2023-04-19 17:16:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:16:48: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000096 (Static)
+2023-04-19 17:16:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 14232'
+2023-04-19 17:16:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1451, 0) in Felucca: "Static" "14232"
+2023-04-19 17:16:51: 142.169.16.194: Serials: 0x40000098; 
+2023-04-19 17:19:38: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt5 '
+2023-04-19 17:19:48: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 22300'
+2023-04-19 17:19:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1450, 0) in Felucca: "Static" "22300"
+2023-04-19 17:19:49: 142.169.16.194: Serials: 0x400000D8; 
+2023-04-19 17:19:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:19:59: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400000D8 (Static)
+2023-04-19 17:20:12: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimstpt4 '
+2023-04-19 17:20:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addcustomsstatic '
+2023-04-19 17:20:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addanimationstatic '
+2023-04-19 17:20:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscstatic1 '
+2023-04-19 17:20:36: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscstatic1 '
+2023-04-19 17:20:37: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt20 '
+2023-04-19 17:20:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt1 '
+2023-04-19 17:21:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt2 '
+2023-04-19 17:21:09: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscpt12 '
+2023-04-19 17:21:19: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 5779'
+2023-04-19 17:21:21: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1450, 0) in Felucca: "Static" "5779"
+2023-04-19 17:21:21: 142.169.16.194: Serials: 0x400000EE; 
+2023-04-19 17:21:26: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:21:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400000EE (Static)
+2023-04-19 17:21:37: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmiscstatic2 '
+2023-04-19 17:21:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addmisc2pt12 '
+2023-04-19 17:21:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 17:22:05: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 17:22:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'add blood'
+2023-04-19 17:22:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1039, 1452, 0) in Felucca: "blood"
+2023-04-19 17:22:20: 142.169.16.194: Serials: 0x400000EF; 
+2023-04-19 17:22:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'viewhue '
+2023-04-19 17:22:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2041'
+2023-04-19 17:22:55: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '2041'
+2023-04-19 17:23:29: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2489'
+2023-04-19 17:23:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2489'
+2023-04-19 17:23:32: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '2489'
+2023-04-19 17:23:38: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2498'
+2023-04-19 17:23:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '2498'
+2023-04-19 17:23:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2738'
+2023-04-19 17:23:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '2738'
+2023-04-19 17:24:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2929'
+2023-04-19 17:24:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '2929'
+2023-04-19 17:25:00: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2040'
+2023-04-19 17:25:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '2040'
+2023-04-19 17:25:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 1154'
+2023-04-19 17:25:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '1154'
+2023-04-19 17:25:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 1153'
+2023-04-19 17:25:55: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x40000098 (Static) to '1153'
+2023-04-19 17:26:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:26:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000098 (Static) to (1030, 1451, 0)
+2023-04-19 17:26:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:26:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:26:24: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000098 (Static) to (1021, 1447, 0)
+2023-04-19 17:26:36: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:26:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000098 (Static) to (1021, 1449, 0)
+2023-04-19 17:26:42: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:26:44: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000098 (Static) to (1021, 1447, 0)
+2023-04-19 17:26:45: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:26:48: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000098 (Static) to (1021, 1448, 0)
+2023-04-19 17:26:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:26:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000098 (Static) to (1023, 1452, 0)
+2023-04-19 17:26:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:26:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x40000098 (Static) (inBag=False; amount=1)
+2023-04-19 17:26:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x40000098 (Static) creating 0x40000140 (Static)
+2023-04-19 17:27:04: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:27:07: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000140 (Static) to (1027, 1456, 0)
+2023-04-19 17:27:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:27:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000140 (Static) to (1027, 1456, 0)
+2023-04-19 17:27:22: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:27:24: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x40000140 (Static) (inBag=False; amount=1)
+2023-04-19 17:27:24: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x40000140 (Static) creating 0x40000151 (Static)
+2023-04-19 17:27:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:27:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x40000151 (Static) (inBag=False; amount=1)
+2023-04-19 17:27:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x40000151 (Static) creating 0x4000015D (Static)
+2023-04-19 17:27:30: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:27:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x40000151 (Static) (inBag=False; amount=1)
+2023-04-19 17:27:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x40000151 (Static) creating 0x40000160 (Static)
+2023-04-19 17:27:33: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:27:35: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000160 (Static) to (1030, 1451, 0)
+2023-04-19 17:27:40: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:27:42: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000151 (Static) to (1033, 1454, 0)
+2023-04-19 17:27:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:27:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x4000015D (Static) to (1023, 1450, 20)
+2023-04-19 17:28:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:28:12: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x40000160 (Static) (inBag=False; amount=1)
+2023-04-19 17:28:12: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x40000160 (Static) creating 0x40000161 (Static)
+2023-04-19 17:28:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:28:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000161 (Static) to (1030, 1451, 0)
+2023-04-19 17:28:24: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Area Inc z -1'
+2023-04-19 17:28:32: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:28:35: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:28:38: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z 1'
+2023-04-19 17:28:40: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z 1'
+2023-04-19 17:28:44: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z 1'
+2023-04-19 17:29:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:41:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addplants '
+2023-04-19 17:41:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addplantpt1 '
+2023-04-19 17:42:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'M Add Static 3304'
+2023-04-19 17:42:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1029, 1453, 0) in Felucca: "Static" "3304"
+2023-04-19 17:42:20: 142.169.16.194: Serials: 0x400001AE; 
+2023-04-19 17:42:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1030, 1453, 0) in Felucca: "Static" "3304"
+2023-04-19 17:42:23: 142.169.16.194: Serials: 0x400001B2; 
+2023-04-19 17:42:24: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1026, 1454, 0) in Felucca: "Static" "3304"
+2023-04-19 17:42:24: 142.169.16.194: Serials: 0x400001B3; 
+2023-04-19 17:42:25: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1028, 1454, 0) in Felucca: "Static" "3304"
+2023-04-19 17:42:25: 142.169.16.194: Serials: 0x400001C4; 
+2023-04-19 17:42:26: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1032, 1456, 20) in Felucca: "Static" "3304"
+2023-04-19 17:42:26: 142.169.16.194: Serials: 0x400001EA; 
+2023-04-19 17:42:27: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building at (1030, 1453, 0) in Felucca: "Static" "3304"
+2023-04-19 17:42:27: 142.169.16.194: Serials: 0x400001F2; 
+2023-04-19 17:42:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:42:45: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400001F2 (Static)
+2023-04-19 17:42:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:42:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400001B2 (Static)
+2023-04-19 17:42:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:42:59: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400001C4 (Static)
+2023-04-19 17:43:00: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:43:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400001B3 (Static)
+2023-04-19 17:43:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 17:43:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400001AE (Static) to '1001'
+2023-04-19 17:44:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'viewhue '
+2023-04-19 17:44:16: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2038'
+2023-04-19 17:44:17: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400001AE (Static) to '2038'
+2023-04-19 17:44:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2032'
+2023-04-19 17:44:28: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400001AE (Static) to '2032'
+2023-04-19 17:44:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2034'
+2023-04-19 17:44:33: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Set Hue 2036'
+2023-04-19 17:44:34: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') set property 'Hue' of 0x400001AE (Static) to '2036'
+2023-04-19 17:45:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-19 17:46:02: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:46:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'tele '
+2023-04-19 17:46:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:46:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400001EA (Static)
+2023-04-19 17:47:07: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:47:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:47:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:47:17: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:47:20: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:47:23: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:47:29: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -5'
+2023-04-19 17:47:39: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:47:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x400001AE (Static) (inBag=False; amount=1)
+2023-04-19 17:47:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x400001AE (Static) creating 0x40000259 (Static)
+2023-04-19 17:47:46: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:47:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x400001AE (Static) (inBag=False; amount=1)
+2023-04-19 17:47:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x400001AE (Static) creating 0x4000025A (Static)
+2023-04-19 17:47:48: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:47:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x400001AE (Static) (inBag=False; amount=1)
+2023-04-19 17:47:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x400001AE (Static) creating 0x4000025C (Static)
+2023-04-19 17:47:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'dupe '
+2023-04-19 17:47:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duping 0x400001AE (Static) (inBag=False; amount=1)
+2023-04-19 17:47:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') duped 0x400001AE (Static) creating 0x4000025D (Static)
+2023-04-19 17:47:55: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:47:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x4000025D (Static) to (1030, 1453, 0)
+2023-04-19 17:48:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:48:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x4000025C (Static) to (1033, 1453, 0)
+2023-04-19 17:48:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:48:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x4000025A (Static) to (1025, 1454, 0)
+2023-04-19 17:49:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'set transparency yes'
+2023-04-19 17:50:31: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'set '
+2023-04-19 17:50:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-19 17:53:44: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'set gold 1000000'
+2023-04-19 17:55:04: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'move '
+2023-04-19 17:55:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') moving 0x40000259 (Static) to (1157, 1382, -4)
+2023-04-19 17:55:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:55:15: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x40000259 (Static)
+2023-04-19 17:55:26: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'staticstool '
+2023-04-19 17:55:30: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addgroundst '
+2023-04-19 17:55:33: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addgroundstpt1 '
+2023-04-19 17:55:41: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Tile Static 4890'
+2023-04-19 17:55:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building from (1158, 1382, -5) to (1158, 1383, -5) in Felucca: "Static" "4890"
+2023-04-19 17:55:43: 142.169.16.194: Serials: 0x400018B8; 0x400018B9; 
+2023-04-19 17:55:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Tile Static 4890'
+2023-04-19 17:56:00: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building from (1157, 1384, -5) to (1158, 1384, -4) in Felucca: "Static" "4890"
+2023-04-19 17:56:00: 142.169.16.194: Serials: 0x400018BE; 0x400018BF; 
+2023-04-19 17:56:09: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:56:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018B8 (Static)
+2023-04-19 17:56:12: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:56:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018B9 (Static)
+2023-04-19 17:56:14: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:56:15: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018BF (Static)
+2023-04-19 17:56:18: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addwall '
+2023-04-19 17:56:19: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'addwallpt1 '
+2023-04-19 17:56:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Tile Static 555'
+2023-04-19 17:56:58: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building from (1157, 1381, -4) to (1157, 1386, -4) in Felucca: "Static" "555"
+2023-04-19 17:56:58: 142.169.16.194: Serials: 0x400018C0; 0x400018C1; 0x400018C2; 0x400018C3; 0x400018C4; 0x400018C5; 
+2023-04-19 17:57:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Tile Static 555'
+2023-04-19 17:57:13: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') building from (1157, 1375, -1) to (1157, 1378, 0) in Felucca: "Static" "555"
+2023-04-19 17:57:13: 142.169.16.194: Serials: 0x400018C8; 0x400018C9; 0x400018CA; 0x400018CB; 
+2023-04-19 17:57:37: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'Inc z -1'
+2023-04-19 17:57:43: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:57:47: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:57:49: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018CA (Static)
+2023-04-19 17:57:50: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:57:51: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018CB (Static)
+2023-04-19 17:57:52: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:57:54: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C9 (Static)
+2023-04-19 17:57:55: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:57:57: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C8 (Static)
+2023-04-19 17:57:59: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:58:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C5 (Static)
+2023-04-19 17:58:01: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:58:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C4 (Static)
+2023-04-19 17:58:03: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:58:05: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C3 (Static)
+2023-04-19 17:58:06: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:58:07: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C2 (Static)
+2023-04-19 17:58:08: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:58:09: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C1 (Static)
+2023-04-19 17:58:10: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'remove '
+2023-04-19 17:58:11: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') deleting 0x400018C0 (Static)
+2023-04-19 18:00:42: 142.169.16.194: Administrator 0x233 "Riiem" ('Riiem') used command 'tele '
+2023-04-19 18:22:26: 142.169.16.181: Administrator 0x233 "Riiem" ('Riiem') used command 'qui '
+2023-04-19 18:22:36: 142.169.16.181: Administrator 0x233 "Riiem" ('Riiem') used command 'gm '
+2023-04-19 18:22:48: 142.169.16.181: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-20 16:00:55: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'tele '
+2023-04-20 16:00:59: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'tele '
+2023-04-20 16:01:02: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-20 16:04:41: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'add daggere'
+2023-04-20 16:04:47: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') building at (1037, 1411, 0) in Felucca: "Dagger"
+2023-04-20 16:04:47: 142.169.16.226: Serials: 0x40000ADF; 
+2023-04-20 16:05:21: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') building at (1038, 1411, 0) in Felucca: "FletcherTools"
+2023-04-20 16:05:21: 142.169.16.226: Serials: 0x40000AE1; 
+2023-04-20 16:06:41: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-20 16:10:32: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'kill '
+2023-04-20 16:10:37: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'kill '
+2023-04-20 16:10:39: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') killing 0x590 "Une Poule" (no account)
+2023-04-20 16:14:57: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'kill '
+2023-04-20 16:15:32: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') killing 0x5CA "a thrush" (no account)
+2023-04-20 16:39:12: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-20 16:43:58: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-20 16:56:46: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'props '
+2023-04-20 16:57:12: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') set property 'RawName' of 0xA64 "Emilio" (no account) to 'Zahid'
+2023-04-20 16:57:31: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') set property 'Race' of 0xA64 "Zahid" (no account) to 'Azudois'
+2023-04-20 16:57:42: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'add scissors'
+2023-04-20 16:57:44: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') building at (1097, 1419, 0) in Felucca: "scissors"
+2023-04-20 16:57:44: 142.169.16.226: Serials: 0x40000B37; 
+2023-04-20 16:57:56: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'add barber'
+2023-04-20 16:57:59: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') building at (1096, 1419, -1) in Felucca: "BarberScissors"
+2023-04-20 16:57:59: 142.169.16.226: Serials: 0x40000B3A; 
+2023-04-20 16:58:02: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') building at (1096, 1420, -1) in Felucca: "BarberScissors"
+2023-04-20 16:58:02: 142.169.16.226: Serials: 0x40000B3B; 
+2023-04-20 17:00:30: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'setallskills 999'
+2023-04-20 17:00:32: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') set property 'EverySkill.Base' of 0x233 "Riiem" ('Riiem') to '999'
+2023-04-20 17:01:32: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'set name Emilio'
+2023-04-20 17:01:33: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') set property 'name' of 0x10 "Burr" (no account) to 'Emilio'
+2023-04-20 17:06:46: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'
+2023-04-20 17:07:45: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'gm '
+2023-04-20 17:11:18: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'set yellowhealthbar true'
+2023-04-20 17:11:19: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') set property 'yellowhealthbar' of 0x233 "Riiem" ('Riiem') to 'True'
+2023-04-20 17:13:54: 142.169.16.226: Administrator 0x233 "Riiem" ('Riiem') used command 'm tele'

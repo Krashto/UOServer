@@ -1,0 +1,19 @@
+##############################
+Exception log started on 2023-03-15 11:54:39
+
+Exception Caught: 2023-03-15 11:54:39
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Engines.Craft.CraftItem.ItemIDOf(Type type) dans D:\KaldeniaServer\Scripts\Services\Craft\Core\CraftItem.cs:ligne 234
+
+Exception Caught: 2023-03-15 11:54:42
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Engines.Craft.CraftItem.ItemIDOf(Type type) dans D:\KaldeniaServer\Scripts\Services\Craft\Core\CraftItem.cs:ligne 234
+

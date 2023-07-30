@@ -1,0 +1,43 @@
+D:\KaldeniaServer\Application\obj\Debug\ServUO.csproj.AssemblyReference.cache
+D:\KaldeniaServer\Application\obj\Debug\ServUO.csproj.SuggestedBindingRedirects.cache
+D:\KaldeniaServer\Application\obj\Debug\ServUO.GeneratedMSBuildEditorConfig.editorconfig
+D:\KaldeniaServer\Application\obj\Debug\ServUO.csproj.CoreCompileInputs.cache
+D:\KaldeniaServer\Application\obj\Debug\ServUO.csproj.CopyComplete
+D:\KaldeniaServer\ServUO.exe.config
+D:\KaldeniaServer\Application\obj\Debug\ServUO.exe
+D:\KaldeniaServer\Application\obj\Debug\ServUO.pdb
+D:\KaldeniaServer\ServUO.exe
+D:\KaldeniaServer\ServUO.pdb
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.csproj.AssemblyReference.cache
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.csproj.SuggestedBindingRedirects.cache
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.GeneratedMSBuildEditorConfig.editorconfig
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.csproj.CoreCompileInputs.cache
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.csproj.CopyComplete
+C:\LeRefuge\LeRefugeServer\ServUO.exe.config
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.exe
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.pdb
+C:\LeRefuge\LeRefugeServer\ServUO.exe
+C:\LeRefuge\LeRefugeServer\ServUO.pdb
+C:\LeRefuge\LeRefugeServer\Application\obj\Debug\ServUO.exe.config
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.csproj.AssemblyReference.cache
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.csproj.SuggestedBindingRedirects.cache
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.exe.config
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.GeneratedMSBuildEditorConfig.editorconfig
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.csproj.CoreCompileInputs.cache
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.csproj.CopyComplete
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\ServUO.exe.config
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.exe
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Application\obj\Debug\ServUO.pdb
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\ServUO.exe
+D:\LeRefuge_Server&Client\LeRefugeServer - Copie\ServUO.pdb
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.csproj.AssemblyReference.cache
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.csproj.SuggestedBindingRedirects.cache
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.exe.config
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.GeneratedMSBuildEditorConfig.editorconfig
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.csproj.CoreCompileInputs.cache
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.csproj.CopyComplete
+D:\LeRefuge_Data\LeRefugeServer\ServUO.exe.config
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.exe
+D:\LeRefuge_Data\LeRefugeServer\Application\obj\Debug\ServUO.pdb
+D:\LeRefuge_Data\LeRefugeServer\ServUO.exe
+D:\LeRefuge_Data\LeRefugeServer\ServUO.pdb

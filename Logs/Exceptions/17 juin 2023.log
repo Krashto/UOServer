@@ -1,0 +1,37 @@
+##############################
+Exception log started on 2023-06-17 02:03:28
+
+Exception Caught: 2023-06-17 02:03:28
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+
+##############################
+Exception log started on 2023-06-17 15:12:48
+
+Exception Caught: 2023-06-17 15:12:48
+System.Reflection.TargetInvocationException: Une exception a été levée par la cible d'un appel. ---> System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Items.BaseArmor.OnAdded(Object parent) dans C:\LeRefuge\LeRefugeServer\Scripts\Items\Equipment\Armor\BaseArmor.cs:ligne 1312
+   à Server.Mobile.AddItem(Item item) dans C:\LeRefuge\LeRefugeServer\Server\Mobile.cs:ligne 6605
+   à Server.Engines.Quests.Agralem.InitOutfit() dans C:\LeRefuge\LeRefugeServer\Scripts\Mobiles\NPCs\Unused\Agralem.cs:ligne 79
+   à Server.Mobiles.BaseVendor..ctor(String title) dans C:\LeRefuge\LeRefugeServer\Scripts\Mobiles\NPCs\Unused\BaseVendor.cs:ligne 349
+   à Server.Engines.Quests.MondainQuester..ctor(String name, String title) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\MondainsLegacyQuests\MondainQuester.cs:ligne 23
+   à Server.Engines.Quests.Agralem..ctor() dans C:\LeRefuge\LeRefugeServer\Scripts\Mobiles\NPCs\Unused\Agralem.cs:ligne 42
+   --- Fin de la trace de la pile d'exception interne ---
+   à System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   à System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   à System.Reflection.ConstructorInfo.Invoke(Object[] parameters)
+   à Server.Commands.Add.Build(Mobile from, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, Boolean& sendError) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 287
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 384
+
+Exception Caught: 2023-06-18 20:20:51
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-06-18 22:20:35
+System.IndexOutOfRangeException: L'index se trouve en dehors des limites du tableau.
+   à Server.Engines.BulkOrders.SmallBulkEntry.LoadEntries(String path) dans C:\LeRefuge\LeRefugeServer\Scripts\Services\BulkOrders\SmallBODs\SmallBulkEntry.cs:ligne 106
+

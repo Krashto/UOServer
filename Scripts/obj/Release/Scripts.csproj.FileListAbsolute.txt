@@ -1,0 +1,11 @@
+C:\Kaldenia\Serveur\Scripts\bin\Release\Scripts.dll
+C:\Kaldenia\Serveur\Scripts\bin\Release\Scripts.pdb
+C:\Kaldenia\Serveur\Scripts\bin\Release\System.Drawing.Common.dll
+C:\Kaldenia\Serveur\Scripts\bin\Release\Server.dll
+C:\Kaldenia\Serveur\Scripts\bin\Release\Server.pdb
+C:\Kaldenia\Serveur\Scripts\obj\Release\Scripts.csproj.AssemblyReference.cache
+C:\Kaldenia\Serveur\Scripts\obj\Release\Scripts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Kaldenia\Serveur\Scripts\obj\Release\Scripts.csproj.CoreCompileInputs.cache
+C:\Kaldenia\Serveur\Scripts\obj\Release\Scripts.csproj.CopyComplete
+C:\Kaldenia\Serveur\Scripts\obj\Release\Scripts.dll
+C:\Kaldenia\Serveur\Scripts\obj\Release\Scripts.pdb

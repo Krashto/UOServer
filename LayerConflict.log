@@ -1,0 +1,1314 @@
+# 2023-03-10 21:51:48
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x5 "Crayolla"]
+Offending Item: 0x40000257 "Item" [Server.Item]
+Equipped Item: 0x40000219 "DeathShroud" [Server.Items.DeathShroud]
+Layer: OuterTorso
+
+# 2023-03-14 23:34:44
+Offending Mobile: Server.Mobiles.TigersClawThief [0xC "Black Order Thief"]
+Offending Item: 0x40000175 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000172 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-15 17:07:46
+Offending Mobile: Server.Mobiles.TigersClawThief [0xA0 "Black Order Thief"]
+Offending Item: 0x4000080F "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4000080D "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:56:07
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0xCD "Crispin"]
+Offending Item: 0x40000727 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000724 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:57:19
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0xDE "Jethro"]
+Offending Item: 0x400007A7 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400007A4 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:58:47
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0xF6 "Alvin"]
+Offending Item: 0x40000935 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000932 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:59:21
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0xFB "Huntley"]
+Offending Item: 0x4000095A "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000957 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:59:37
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0x100 "Jelani"]
+Offending Item: 0x4000097E "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x4000097B "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:59:40
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0x120 "Ravi"]
+Offending Item: 0x400009C0 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400009BD "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:59:47
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0x12C "Sebastian"]
+Offending Item: 0x40000A0A "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000A07 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 00:59:49
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0x137 "Enoch"]
+Offending Item: 0x40000A69 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000A66 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 02:02:24
+Offending Mobile: Server.Mobiles.BeerBrewer [0xB "Kineta"]
+Offending Item: 0x40000421 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x4000041E "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-23 02:02:24
+Offending Mobile: Server.Mobiles.BeerBrewer [0xB "Kineta"]
+Offending Item: 0x40000422 "LongPants" [Server.Items.LongPants]
+Equipped Item: 0x40000420 "ShortPants" [Server.Items.ShortPants]
+Layer: Pants
+
+# 2023-03-23 02:02:24
+Offending Mobile: Server.Mobiles.BeerBrewer [0xB "Kineta"]
+Offending Item: 0x40000423 "Boots" [Server.Items.Boots]
+Equipped Item: 0x4000041F "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-03-26 18:16:40
+Offending Mobile: Server.Engines.Quests.Emilio [0x10 ""]
+Offending Item: 0x400001FB "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400001F2 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Despise.AdrianTheGloriousLord [0xF8 "Adrian"]
+Offending Item: 0x400004BB "Doublet" [Server.Items.Doublet]
+Equipped Item: 0x400004BA "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Despise.AndrosTheDreadLord [0xF9 "Andros"]
+Offending Item: 0x400004C2 "Doublet" [Server.Items.Doublet]
+Equipped Item: 0x400004C1 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Andros [0x130 ""]
+Offending Item: 0x4000053E "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x4000053D "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Dallid [0x172 ""]
+Offending Item: 0x40000661 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000660 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Danoel [0x174 ""]
+Offending Item: 0x4000066B "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000668 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Emilio [0x17B ""]
+Offending Item: 0x400006AE "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400006AC "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.NewHavenMerchant [0x17E "Orrin"]
+Offending Item: 0x400006C7 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400006C5 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.NewHavenSeekerOfAdventure [0x183 "Abraham"]
+Offending Item: 0x400006E6 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400006E3 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Gervis [0x18F ""]
+Offending Item: 0x4000075C "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x4000075B "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Lohn [0x1AB ""]
+Offending Item: 0x4000090F "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x4000090D "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Nedrick [0x1B7 ""]
+Offending Item: 0x40000981 "Tunic" [Server.Items.Tunic]
+Equipped Item: 0x40000980 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Nibbet [0x1BA ""]
+Offending Item: 0x4000099F "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x4000099D "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Nillaen [0x1BB ""]
+Offending Item: 0x400009A8 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400009A6 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Olla [0x1BD ""]
+Offending Item: 0x400009BA "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x400009B8 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Sleen [0x1D1 ""]
+Offending Item: 0x40000A83 "ElvenShirt" [Server.Items.ElvenShirt]
+Equipped Item: 0x40000A80 "FullApron" [Server.Items.FullApron]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Tholef [0x1DB ""]
+Offending Item: 0x40000ACE "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000ACD "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Gareth [0x1EC ""]
+Offending Item: 0x40000B6D "FancyShirt" [Server.Items.FancyShirt]
+Equipped Item: 0x40000B6C "BodySash" [Server.Items.BodySash]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0x1F2 "Titus"]
+Offending Item: 0x40000BAC "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000BA9 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Collector.AlbertaGiacco [0x213 "Alberta Giacco"]
+Offending Item: 0x40000CAA "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000CA6 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Collector.ElwoodMcCarrin [0x214 "Elwood McCarrin"]
+Offending Item: 0x40000CB2 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000CAE "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Collector.TomasONeerlan [0x217 "Tomas O'Neerlan"]
+Offending Item: 0x40000CE1 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000CDE "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Engines.Quests.Hag.Blackheart [0x21A "Captain Blackheart"]
+Offending Item: 0x40000CF5 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000CF1 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Mobiles.BeerBrewer [0x24A "Megara"]
+Offending Item: 0x40000D42 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x40000D3F "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Mobiles.BeerBrewer [0x24A "Megara"]
+Offending Item: 0x40000D44 "Boots" [Server.Items.Boots]
+Equipped Item: 0x40000D40 "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Mobiles.Kuya [0x26F "Ukita"]
+Offending Item: 0x40000DC6 "LeatherSuneate" [Server.Items.LeatherSuneate]
+Equipped Item: 0x40000DC4 "ShortPants" [Server.Items.ShortPants]
+Layer: Pants
+
+# 2023-03-27 02:25:44
+Offending Mobile: Server.Mobiles.KuyaBard [0x271 "Zannia"]
+Offending Item: 0x40000DD2 "Hakama" [Server.Items.Hakama]
+Equipped Item: 0x40000DD0 "Skirt" [Server.Items.Skirt]
+Layer: OuterLegs
+
+# 2023-03-27 02:25:45
+Offending Mobile: Server.Mobiles.SerpentsFangAssassin [0x49B "Black Order Assassin"]
+Offending Item: 0x40000F29 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F27 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:45
+Offending Mobile: Server.Mobiles.SerpentsFangHighExecutioner [0x49C "Black Order Assassin"]
+Offending Item: 0x40000F33 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F31 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:45
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x4A5 "Black Order Thief"]
+Offending Item: 0x40000F40 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F3E "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:25:45
+Offending Mobile: Server.Mobiles.TigersClawThief [0x4A6 "Black Order Thief"]
+Offending Item: 0x40000F4A "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F48 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Despise.AdrianTheGloriousLord [0xF8 "Adrian"]
+Offending Item: 0x400004D3 "Doublet" [Server.Items.Doublet]
+Equipped Item: 0x400004D2 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Despise.AndrosTheDreadLord [0xF9 "Andros"]
+Offending Item: 0x400004DA "Doublet" [Server.Items.Doublet]
+Equipped Item: 0x400004D9 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Andros [0x130 ""]
+Offending Item: 0x40000556 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000555 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Dallid [0x172 ""]
+Offending Item: 0x40000679 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000678 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Danoel [0x174 ""]
+Offending Item: 0x40000683 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000680 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Emilio [0x17B ""]
+Offending Item: 0x400006C6 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400006C4 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.NewHavenMerchant [0x17E "Sevilin"]
+Offending Item: 0x400006DF "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400006DD "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.NewHavenSeekerOfAdventure [0x183 "Charlton"]
+Offending Item: 0x400006FE "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400006FB "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.NewHavenNoble [0x184 "Lunt"]
+Offending Item: 0x4000070C "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000709 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Gervis [0x18F ""]
+Offending Item: 0x4000078C "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x4000078B "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Lohn [0x1AB ""]
+Offending Item: 0x40000929 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000927 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Nedrick [0x1B7 ""]
+Offending Item: 0x4000099B "Tunic" [Server.Items.Tunic]
+Equipped Item: 0x4000099A "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Nibbet [0x1BA ""]
+Offending Item: 0x400009B9 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x400009B8 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Nillaen [0x1BB ""]
+Offending Item: 0x400009C3 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400009C1 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Olla [0x1BD ""]
+Offending Item: 0x400009D5 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x400009D3 "ElvenShirt" [Server.Items.ElvenShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Sleen [0x1D1 ""]
+Offending Item: 0x40000A9D "ElvenShirt" [Server.Items.ElvenShirt]
+Equipped Item: 0x40000A9A "FullApron" [Server.Items.FullApron]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Tholef [0x1DB ""]
+Offending Item: 0x40000AE8 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000AE7 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Gareth [0x1EC ""]
+Offending Item: 0x40000B87 "FancyShirt" [Server.Items.FancyShirt]
+Equipped Item: 0x40000B86 "BodySash" [Server.Items.BodySash]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.EscortableSeekerOfAdventure [0x1F2 "Gannon"]
+Offending Item: 0x40000BC6 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000BC3 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Collector.AlbertaGiacco [0x213 "Alberta Giacco"]
+Offending Item: 0x40000CE0 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000CD8 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Collector.ElwoodMcCarrin [0x214 "Elwood McCarrin"]
+Offending Item: 0x40000CE8 "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000CE4 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Collector.TomasONeerlan [0x217 "Tomas O'Neerlan"]
+Offending Item: 0x40000CFB "FullApron" [Server.Items.FullApron]
+Equipped Item: 0x40000CF8 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Engines.Quests.Hag.Blackheart [0x21A "Captain Blackheart"]
+Offending Item: 0x40000D0F "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40000D0B "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.BeerBrewer [0x24A "Kenelm"]
+Offending Item: 0x40000D5C "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x40000D59 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.BeerBrewer [0x24A "Kenelm"]
+Offending Item: 0x40000D5D "LongPants" [Server.Items.LongPants]
+Equipped Item: 0x40000D5B "ShortPants" [Server.Items.ShortPants]
+Layer: Pants
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.BeerBrewer [0x24A "Kenelm"]
+Offending Item: 0x40000D5E "Boots" [Server.Items.Boots]
+Equipped Item: 0x40000D5A "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.SerpentsFangAssassin [0x49B "Black Order Assassin"]
+Offending Item: 0x40000F42 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F40 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.SerpentsFangHighExecutioner [0x49C "Black Order Assassin"]
+Offending Item: 0x40000F4C "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F4A "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x4A5 "Black Order Thief"]
+Offending Item: 0x40000F59 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F57 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-27 02:32:59
+Offending Mobile: Server.Mobiles.TigersClawThief [0x4A6 "Black Order Thief"]
+Offending Item: 0x40000F63 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40000F61 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-03-29 21:30:17
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1 "Nucca"]
+Offending Item: 0x40000194 "Robe" [Server.Items.Robe]
+Equipped Item: 0x400004BB "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-04-01 13:38:27
+Offending Mobile: Server.Mobiles.Ranger [0x2E2 "Gilen"]
+Offending Item: 0x40000695 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x40000692 "Doublet" [Server.Items.Doublet]
+Layer: MiddleTorso
+
+# 2023-04-01 13:38:27
+Offending Mobile: Server.Mobiles.Ranger [0x2E2 "Gilen"]
+Offending Item: 0x40000696 "LongPants" [Server.Items.LongPants]
+Equipped Item: 0x40000694 "ShortPants" [Server.Items.ShortPants]
+Layer: Pants
+
+# 2023-04-01 13:38:27
+Offending Mobile: Server.Mobiles.Ranger [0x2E2 "Gilen"]
+Offending Item: 0x4000069A "ThighBoots" [Server.Items.ThighBoots]
+Equipped Item: 0x40000693 "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-04-02 21:34:42
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0x4FC "Odin"]
+Offending Item: 0x4000088E "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x4000088B "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-04-02 21:35:27
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0x501 "Olaf"]
+Offending Item: 0x400008FF "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400008FC "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-04-04 16:41:01
+Offending Mobile: Server.Mobiles.Dragon [0x1C "Un Dragon"]
+Offending Item: 0x400000ED "Gold" [Server.Items.Gold]
+Equipped Item: 0x40000007 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 16:41:20
+Offending Mobile: Server.Mobiles.Skeleton [0x23 "Un Squelette"]
+Offending Item: 0x40000195 "Gold" [Server.Items.Gold]
+Equipped Item: 0x400000F6 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 16:44:19
+Offending Mobile: Server.Mobiles.Dragon [0x1C "Un Dragon"]
+Offending Item: 0x400002DC "Gold" [Server.Items.Gold]
+Equipped Item: 0x40000007 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 16:46:38
+Offending Mobile: Server.Mobiles.Dragon [0x1C "Un Dragon"]
+Offending Item: 0x400002DA "Gold" [Server.Items.Gold]
+Equipped Item: 0x40000007 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 16:46:56
+Offending Mobile: Server.Mobiles.PatchworkSkeleton [0x23 "Un Squelette Rapiece"]
+Offending Item: 0x400002E0 "Gold" [Server.Items.Gold]
+Equipped Item: 0x400002DD "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 16:47:14
+Offending Mobile: Server.Mobiles.Zombie [0x1E1 "Un zombie"]
+Offending Item: 0x40000305 "Gold" [Server.Items.Gold]
+Equipped Item: 0x400002F1 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 21:02:26
+Offending Mobile: Server.Mobiles.Dragon [0x1E5 "Un Dragon"]
+Offending Item: 0x40000362 "Gold" [Server.Items.Gold]
+Equipped Item: 0x4000030C "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-04 21:19:24
+Offending Mobile: Server.Mobiles.Zombie [0x2AD "Un zombie"]
+Offending Item: 0x4000037A "Gold" [Server.Items.Gold]
+Equipped Item: 0x40000369 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-11 00:23:31
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x2AB "Mig"]
+Offending Item: 0x400010C3 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40000249 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-04-11 00:38:36
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x2AB "Mig"]
+Offending Item: 0x40000071 "Robe" [Server.Items.Robe]
+Equipped Item: 0x400010C3 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-04-14 15:04:35
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x2AB "Mig"]
+Offending Item: 0x4000014D "Robe" [Server.Items.Robe]
+Equipped Item: 0x40000D9A "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-04-16 13:30:56
+Offending Mobile: Server.Mobiles.GiantRat [0x2C1 "Un Rat Geant"]
+Offending Item: 0x40001DD5 "Gold" [Server.Items.Gold]
+Equipped Item: 0x40000CE1 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:11:38
+Offending Mobile: Server.Mobiles.Dragon [0x2 "Un Dragon"]
+Offending Item: 0x40000151 "LeftArm" [Server.Items.LeftArm]
+Equipped Item: 0x4000014B "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:11:38
+Offending Mobile: Server.Mobiles.Dragon [0x2 "Un Dragon"]
+Offending Item: 0x40000154 "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x4000014B "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:11:38
+Offending Mobile: Server.Mobiles.Dragon [0x2 "Un Dragon"]
+Offending Item: 0x40000156 "Bandage" [Server.Items.Bandage]
+Equipped Item: 0x4000014B "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:12:34
+Offending Mobile: Server.Mobiles.Dragon [0x3 "Un Dragon"]
+Offending Item: 0x400002CB "TreasureLevel3" [Server.Items.TreasureLevel3]
+Equipped Item: 0x400002CA "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:12:34
+Offending Mobile: Server.Mobiles.Dragon [0x3 "Un Dragon"]
+Offending Item: 0x400002D2 "PlumesAigle" [Server.Items.PlumesAigle]
+Equipped Item: 0x400002CA "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:12:34
+Offending Mobile: Server.Mobiles.Dragon [0x3 "Un Dragon"]
+Offending Item: 0x400002D3 "RightArm" [Server.Items.RightArm]
+Equipped Item: 0x400002CA "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 18:12:34
+Offending Mobile: Server.Mobiles.Dragon [0x3 "Un Dragon"]
+Offending Item: 0x400002D4 "Bolt" [Server.Items.Bolt]
+Equipped Item: 0x400002CA "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-16 20:51:02
+Offending Mobile: Server.Mobiles.GiantToad [0x7B0 "Une Grenouille Geante"]
+Offending Item: 0x40000444 "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x40000442 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-17 00:47:28
+Offending Mobile: Server.Mobiles.Troglodyte [0x347 "un troglodyte"]
+Offending Item: 0x40001249 "LeftArm" [Server.Items.LeftArm]
+Equipped Item: 0x40001236 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-17 00:47:53
+Offending Mobile: Server.Mobiles.Troll [0x9E4 "Troll"]
+Offending Item: 0x40001278 "Torso" [Server.Items.Torso]
+Equipped Item: 0x40001277 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-17 00:49:40
+Offending Mobile: Server.Mobiles.Troglodyte [0x9DF "un troglodyte"]
+Offending Item: 0x40001342 "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x4000133F "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:49
+Offending Mobile: Server.Mobiles.Dragon [0x24B "Un Dragon"]
+Offending Item: 0x4000328D "TreasureLevel3" [Server.Items.TreasureLevel3]
+Equipped Item: 0x4000328C "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:49
+Offending Mobile: Server.Mobiles.Dragon [0x24B "Un Dragon"]
+Offending Item: 0x40003292 "PlumesHarpie" [Server.Items.PlumesHarpie]
+Equipped Item: 0x4000328C "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:49
+Offending Mobile: Server.Mobiles.Dragon [0x24B "Un Dragon"]
+Offending Item: 0x40003293 "Bolt" [Server.Items.Bolt]
+Equipped Item: 0x4000328C "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:59
+Offending Mobile: Server.Mobiles.Dragon [0x24C "Un Dragon"]
+Offending Item: 0x400032A7 "TreasureLevel1" [Server.Items.TreasureLevel1]
+Equipped Item: 0x400032A6 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:59
+Offending Mobile: Server.Mobiles.Dragon [0x24C "Un Dragon"]
+Offending Item: 0x400032AD "EcorceArbreMaudit" [Server.Items.EcorceArbreMaudit]
+Equipped Item: 0x400032A6 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:59
+Offending Mobile: Server.Mobiles.Dragon [0x24C "Un Dragon"]
+Offending Item: 0x400032AE "LeftArm" [Server.Items.LeftArm]
+Equipped Item: 0x400032A6 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 02:38:59
+Offending Mobile: Server.Mobiles.Dragon [0x24C "Un Dragon"]
+Offending Item: 0x400032AF "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x400032A6 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 13:36:06
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x247 "Nebula"]
+Offending Item: 0x4000334C "Robe" [Server.Items.Robe]
+Equipped Item: 0x400030E5 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-04-19 15:46:33
+Offending Mobile: Server.Mobiles.BakeKitsune [0x6F3 "a bake kitsune"]
+Offending Item: 0x400034BB "MandrakeRoot" [Server.Items.MandrakeRoot]
+Equipped Item: 0x400034B8 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 15:46:33
+Offending Mobile: Server.Mobiles.BakeKitsune [0x6F3 "a bake kitsune"]
+Offending Item: 0x400034BC "RightArm" [Server.Items.RightArm]
+Equipped Item: 0x400034B8 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 15:46:33
+Offending Mobile: Server.Mobiles.BakeKitsune [0x6F3 "a bake kitsune"]
+Offending Item: 0x400034BD "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x400034B8 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 15:47:49
+Offending Mobile: Server.Mobiles.Gorilla [0x79F "Un Gorille"]
+Offending Item: 0x40003521 "Torso" [Server.Items.Torso]
+Equipped Item: 0x4000351F "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 15:47:49
+Offending Mobile: Server.Mobiles.Gorilla [0x79F "Un Gorille"]
+Offending Item: 0x40003522 "Bolt" [Server.Items.Bolt]
+Equipped Item: 0x4000351F "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 16:08:03
+Offending Mobile: Server.Mobiles.Phoenix [0x86D "Un Phenix"]
+Offending Item: 0x40003538 "MandrakeRoot" [Server.Items.MandrakeRoot]
+Equipped Item: 0x40003536 "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 16:11:37
+Offending Mobile: Server.Mobiles.Phoenix [0x87A "Un Phenix"]
+Offending Item: 0x40003621 "EssencePyromancie" [Server.Items.EssencePyromancie]
+Equipped Item: 0x4000361E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:04
+Offending Mobile: Server.Mobiles.Slith [0x88F "Une Slith"]
+Offending Item: 0x400003EC "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x400003EA "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:36
+Offending Mobile: Server.Mobiles.Phoenix [0x882 "Un Phenix"]
+Offending Item: 0x400004A0 "Arrow" [Server.Items.Arrow]
+Equipped Item: 0x4000042E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:36
+Offending Mobile: Server.Mobiles.Phoenix [0x882 "Un Phenix"]
+Offending Item: 0x400005DE "Gold" [Server.Items.Gold]
+Equipped Item: 0x4000042E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:36
+Offending Mobile: Server.Mobiles.Phoenix [0x882 "Un Phenix"]
+Offending Item: 0x400005E2 "SpidersSilk" [Server.Items.SpidersSilk]
+Equipped Item: 0x4000042E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:36
+Offending Mobile: Server.Mobiles.Phoenix [0x882 "Un Phenix"]
+Offending Item: 0x400005E3 "PieceArgent" [Server.Items.PieceArgent]
+Equipped Item: 0x4000042E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:36
+Offending Mobile: Server.Mobiles.Phoenix [0x882 "Un Phenix"]
+Offending Item: 0x40000624 "Gold" [Server.Items.Gold]
+Equipped Item: 0x4000042E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-19 20:44:36
+Offending Mobile: Server.Mobiles.Phoenix [0x882 "Un Phenix"]
+Offending Item: 0x40000625 "RightArm" [Server.Items.RightArm]
+Equipped Item: 0x4000042E "Gold" [Server.Items.Gold]
+Layer: Invalid
+
+# 2023-04-20 12:03:39
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x232 "Sirendenvel"]
+Offending Item: 0x40000847 "Robe" [Server.Items.Robe]
+Equipped Item: 0x400004A9 "Robe18" [Server.Items.Robe18]
+Layer: OuterTorso
+
+# 2023-04-20 17:08:20
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x233 "Riiem"]
+Offending Item: 0x40000B54 "Item" [Server.Item]
+Equipped Item: 0x40003525 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-21 20:34:36
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x92E "Nucca"]
+Offending Item: 0x40000145 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40000008 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-22 03:56:40
+Offending Mobile: Server.Engines.Quests.Hag.Blackheart [0xBCD "Captain Blackheart"]
+Offending Item: 0x400074B4 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400074B0 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-04-23 02:51:33
+Offending Mobile: Server.Poker.PokerDealer [0x36F "Rorie"]
+Offending Item: 0x400018E2 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x400018DC "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-04-25 18:34:44
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0xA43 "Riiem"]
+Offending Item: 0x40005C32 "Item" [Server.Item]
+Equipped Item: 0x400054EE "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-25 18:56:08
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0xA43 "Riiem"]
+Offending Item: 0x40005D15 "Item" [Server.Item]
+Equipped Item: 0x400054EE "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-25 18:58:38
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0xA43 "Riiem"]
+Offending Item: 0x40005D22 "Item" [Server.Item]
+Equipped Item: 0x400054EE "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-25 22:32:13
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x960 "Nebula"]
+Offending Item: 0x400018B2 "Item" [Server.Item]
+Equipped Item: 0x40002178 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-26 00:03:28
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x20D "Crayo"]
+Offending Item: 0x40003EF2 "Item" [Server.Item]
+Equipped Item: 0x40001BC1 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-26 02:17:51
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C4 "Crayo"]
+Offending Item: 0x40003E79 "Item" [Server.Item]
+Equipped Item: 0x40001B41 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-26 02:17:57
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C4 "Crayo"]
+Offending Item: 0x40003E7D "Item" [Server.Item]
+Equipped Item: 0x40001B41 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-04-27 02:43:08
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x139E "Mig"]
+Offending Item: 0x40000303 "Robe" [Server.Items.Robe]
+Equipped Item: 0x4000283A "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-02 22:13:55
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x247 "Ishkur Roshann"]
+Offending Item: 0x4000068D "Robe" [Server.Items.Robe]
+Equipped Item: 0x40003354 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-02 23:15:42
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0xB0F "Dyzee"]
+Offending Item: 0x400023D0 "Item" [Server.Item]
+Equipped Item: 0x400021AC "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-04 03:51:12
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x23B "Snow"]
+Offending Item: 0x400021B4 "Robe" [Server.Items.Robe]
+Equipped Item: 0x400004AA "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-05 02:27:06
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1 "Nucca"]
+Offending Item: 0x400000AB "Robe" [Server.Items.Robe]
+Equipped Item: 0x4000345B "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-05 02:28:31
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1 "Nucca"]
+Offending Item: 0x400001AA "Robe" [Server.Items.Robe]
+Equipped Item: 0x4000345B "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-05 02:28:39
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x17 "Crayo"]
+Offending Item: 0x40000251 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40000109 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-05 02:34:34
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1A "ftu"]
+Offending Item: 0x40000180 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40000122 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-05 21:54:05
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x66C "Santana"]
+Offending Item: 0x40003DC8 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40003DBE "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-07 03:32:30
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x23B "Snow"]
+Offending Item: 0x400034B3 "Robe" [Server.Items.Robe]
+Equipped Item: 0x400021B4 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-07 11:54:25
+Offending Mobile: Server.Mobiles.BeerBrewer [0xB0B "Chatha"]
+Offending Item: 0x400006A2 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x4000068E "Doublet" [Server.Items.Doublet]
+Layer: MiddleTorso
+
+# 2023-05-07 11:54:25
+Offending Mobile: Server.Mobiles.BeerBrewer [0xB0B "Chatha"]
+Offending Item: 0x40000710 "LongPants" [Server.Items.LongPants]
+Equipped Item: 0x40000692 "LongPants" [Server.Items.LongPants]
+Layer: Pants
+
+# 2023-05-07 11:54:25
+Offending Mobile: Server.Mobiles.BeerBrewer [0xB0B "Chatha"]
+Offending Item: 0x4000071A "Boots" [Server.Items.Boots]
+Equipped Item: 0x4000068F "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-05-07 20:53:13
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x17 "Crayo"]
+Offending Item: 0x400001AE "Robe" [Server.Items.Robe]
+Equipped Item: 0x400033CF "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-08 01:25:19
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x17 "Crayo"]
+Offending Item: 0x40002493 "Item" [Server.Item]
+Equipped Item: 0x400033CF "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-08 20:22:21
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C7 "Mig"]
+Offending Item: 0x40004521 "Item" [Server.Item]
+Equipped Item: 0x40003407 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-08 20:22:55
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C7 "Mig"]
+Offending Item: 0x40004523 "Item" [Server.Item]
+Equipped Item: 0x40003407 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-08 20:27:37
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C7 "Mig"]
+Offending Item: 0x4000453E "Item" [Server.Item]
+Equipped Item: 0x40003407 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-09 00:54:13
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C7 "Mig"]
+Offending Item: 0x4000536C "Item" [Server.Item]
+Equipped Item: 0x40003407 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-09 00:54:22
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1C7 "Mig"]
+Offending Item: 0x4000536E "Item" [Server.Item]
+Equipped Item: 0x40003407 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-10 22:24:22
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x94A "Mig"]
+Offending Item: 0x400015F9 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40001373 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-11 13:36:05
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x9D9 "Sirendenvel"]
+Offending Item: 0x4000187C "Robe" [Server.Items.Robe]
+Equipped Item: 0x40001744 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-13 03:43:37
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x40000A46 "Robe" [Server.Items.Robe]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-13 14:39:30
+Offending Mobile: Server.Mobiles.MadelineHarte [0xD83 "Madeline Harte"]
+Offending Item: 0x4000124A "FancyShirt" [Server.Items.FancyShirt]
+Equipped Item: 0x40001247 "FullApron" [Server.Items.FullApron]
+Layer: MiddleTorso
+
+# 2023-05-13 23:14:05
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x40003A6B "Robe" [Server.Items.Robe]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-14 00:32:02
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x94B "Nimue"]
+Offending Item: 0x40004698 "Item" [Server.Item]
+Equipped Item: 0x4000272E "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-14 00:53:18
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0xEE4 "Melkior Poings d'Acier "]
+Offending Item: 0x40004E84 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40004356 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-14 02:25:12
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0xB29 "Khaum Thur"]
+Offending Item: 0x40006047 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40005990 "Robe9" [Server.Items.Robe9]
+Layer: OuterTorso
+
+# 2023-05-15 02:25:52
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x16D2 "Elwen Azaitas"]
+Offending Item: 0x4000E579 "Robe" [Server.Items.Robe]
+Equipped Item: 0x4000E34E "Robe9" [Server.Items.Robe9]
+Layer: OuterTorso
+
+# 2023-05-19 01:38:32
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x94D "Dyzee"]
+Offending Item: 0x4000AD6C "Robe" [Server.Items.Robe]
+Equipped Item: 0x40001739 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-21 13:32:28
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x40004248 "Item" [Server.Item]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-05-22 01:02:12
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x1788 "Glorfindel Gwindo"]
+Offending Item: 0x4001354F "Robe" [Server.Items.Robe]
+Equipped Item: 0x400134F2 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-05-27 04:38:30
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0xD55 "Bogart"]
+Offending Item: 0x4001283A "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40012837 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:30
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0xD68 "Burl"]
+Offending Item: 0x40012862 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x4001285F "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Poker.PokerDealer [0xD98 "Rosalinde"]
+Offending Item: 0x4001A474 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x4001A471 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.BeerBrewer [0xDA2 "Bentley"]
+Offending Item: 0x4001A480 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x4001A47D "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.BeerBrewer [0xDA2 "Bentley"]
+Offending Item: 0x4001A481 "LongPants" [Server.Items.LongPants]
+Equipped Item: 0x4001A47F "ShortPants" [Server.Items.ShortPants]
+Layer: Pants
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.BeerBrewer [0xDA2 "Bentley"]
+Offending Item: 0x4001A482 "Boots" [Server.Items.Boots]
+Equipped Item: 0x4001A47E "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.Kuya [0xDDE "Gakudai"]
+Offending Item: 0x4001A4FC "PlateSuneate" [Server.Items.PlateSuneate]
+Equipped Item: 0x4001A4FA "ShortPants" [Server.Items.ShortPants]
+Layer: Pants
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.KuyaBard [0xDE1 "Ruri"]
+Offending Item: 0x4001A50B "MaleKimono" [Server.Items.MaleKimono]
+Equipped Item: 0x4001A508 "HakamaShita" [Server.Items.HakamaShita]
+Layer: OuterTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.KuyaBardArcher [0xDE2 "Suni"]
+Offending Item: 0x4001A513 "MaleKimono" [Server.Items.MaleKimono]
+Equipped Item: 0x4001A510 "FemaleKimono" [Server.Items.FemaleKimono]
+Layer: OuterTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.SerpentsFangAssassin [0x16B6 "Black Order Assassin"]
+Offending Item: 0x4001A670 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4001A66E "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.SerpentsFangHighExecutioner [0x16B7 "Black Order Assassin"]
+Offending Item: 0x4001A67A "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4001A678 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x16C1 "Black Order Thief"]
+Offending Item: 0x4001A687 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4001A685 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-27 04:38:32
+Offending Mobile: Server.Mobiles.TigersClawThief [0x16C2 "Black Order Thief"]
+Offending Item: 0x4001A691 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4001A68F "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-30 15:54:37
+Offending Mobile: Server.Items.CEOBlackJack [0x34 "Solomon"]
+Offending Item: 0x40003945 "Sash" [Server.Items.Sash]
+Equipped Item: 0x4000393D "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-05-31 01:20:46
+Offending Mobile: Server.Mobiles.BeerBrewer [0x718 "Arista"]
+Offending Item: 0x4000F087 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x4000F084 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-05-31 01:20:46
+Offending Mobile: Server.Mobiles.BeerBrewer [0x718 "Arista"]
+Offending Item: 0x4000F089 "Boots" [Server.Items.Boots]
+Equipped Item: 0x4000F085 "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-05-31 20:17:43
+Offending Mobile: Server.Mobiles.BeerBrewer [0x734 "Alessa"]
+Offending Item: 0x400088F9 "Shirt" [Server.Items.Shirt]
+Equipped Item: 0x400088F4 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-05-31 20:17:43
+Offending Mobile: Server.Mobiles.BeerBrewer [0x734 "Alessa"]
+Offending Item: 0x400088FB "Boots" [Server.Items.Boots]
+Equipped Item: 0x400088F6 "Shoes" [Server.Items.Shoes]
+Layer: Shoes
+
+# 2023-06-02 13:13:00
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x2F3 "Colinus Bartelot"]
+Offending Item: 0x40004BA4 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40004A07 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-06-03 03:00:11
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x174A "Marcora"]
+Offending Item: 0x40013330 "Robe" [Server.Items.Robe]
+Equipped Item: 0x4001327E "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-06-14 12:06:50
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x400215B5 "Item" [Server.Item]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-06-14 12:11:14
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x94A "Mig"]
+Offending Item: 0x40021657 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40022797 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-06-14 12:12:07
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x94A "Mig"]
+Offending Item: 0x40021672 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40021657 "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-06-16 01:40:37
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x40010A3C "Robe" [Server.Items.Robe]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-06-16 22:05:11
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x40008D7E "Item" [Server.Item]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-06-17 11:47:16
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x56 "Nucca"]
+Offending Item: 0x4000A2FC "Robe" [Server.Items.Robe]
+Equipped Item: 0x400001A8 "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-06-17 12:31:39
+Offending Mobile: Server.Items.CEOBlackJack [0x10B "Georgiana"]
+Offending Item: 0x40002E44 "Sash" [Server.Items.Sash]
+Equipped Item: 0x40002E35 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-06-17 12:33:29
+Offending Mobile: Server.Items.CEOBlackJack [0x11E "Kanda"]
+Offending Item: 0x40003468 "Sash" [Server.Items.Sash]
+Equipped Item: 0x4000345A "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-06-17 12:35:22
+Offending Mobile: Server.Poker.PokerDealer [0x12E "Mandisa"]
+Offending Item: 0x40003555 "Sash" [Server.Items.Sash]
+Equipped Item: 0x4000354E "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-06-17 12:35:24
+Offending Mobile: Server.Poker.PokerDealer [0x134 "Shanley"]
+Offending Item: 0x40003562 "Sash" [Server.Items.Sash]
+Equipped Item: 0x40003556 "Shirt" [Server.Items.Shirt]
+Layer: MiddleTorso
+
+# 2023-06-17 19:08:25
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0x625 "Beaumont"]
+Offending Item: 0x40008B2A "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40008B24 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-06-17 19:09:15
+Offending Mobile: Server.Engines.Quests.EscortableNoble [0x63D "Uriah"]
+Offending Item: 0x40008BC0 "BodySash" [Server.Items.BodySash]
+Equipped Item: 0x40008BBB "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-07 03:13:46
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x37CE "Rezzah"]
+Offending Item: 0x400354EC "Robe" [Server.Items.Robe]
+Equipped Item: 0x4003549E "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-07-07 03:46:04
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x37CE "Rezzah"]
+Offending Item: 0x40035654 "Robe" [Server.Items.Robe]
+Equipped Item: 0x4003549E "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+
+# 2023-07-07 22:13:10
+Offending Mobile: Server.Mobiles.TigersClawThief [0x3DCF "Black Order Thief"]
+Offending Item: 0x4003AB9E "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4003AB9B "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-07 23:02:09
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x3E21 "Black Order Thief"]
+Offending Item: 0x4003B00A "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x4003B008 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 16:29:11
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x94B "Nimue"]
+Offending Item: 0x400407E8 "Item" [Server.Item]
+Equipped Item: 0x4001C97B "GMRobe" [Server.Items.GMRobe]
+Layer: OuterTorso
+
+# 2023-07-08 21:55:09
+Offending Mobile: Server.Mobiles.SerpentsFangAssassin [0x44C4 "Black Order Assassin"]
+Offending Item: 0x40041C0B "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C09 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 21:56:32
+Offending Mobile: Server.Mobiles.TigersClawThief [0x44C6 "Black Order Thief"]
+Offending Item: 0x40041C18 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C16 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 21:59:22
+Offending Mobile: Server.Mobiles.TigersClawThief [0x44CB "Black Order Thief"]
+Offending Item: 0x40041C23 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C21 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 21:59:29
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x44CC "Black Order Thief"]
+Offending Item: 0x40041C2E "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C2B "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:01:23
+Offending Mobile: Server.Mobiles.TigersClawThief [0x44CF "Black Order Thief"]
+Offending Item: 0x40041C42 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C40 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:04:27
+Offending Mobile: Server.Mobiles.TigersClawThief [0x44D6 "Black Order Thief"]
+Offending Item: 0x40041C72 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C70 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:04:28
+Offending Mobile: Server.Mobiles.TigersClawThief [0x44D7 "Black Order Thief"]
+Offending Item: 0x40041C7C "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C7A "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:04:28
+Offending Mobile: Server.Mobiles.TigersClawThief [0x44D8 "Black Order Thief"]
+Offending Item: 0x40041C86 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C84 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:05:06
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x44DC "Black Order Thief"]
+Offending Item: 0x40041C92 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C90 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:05:06
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x44DD "Black Order Thief"]
+Offending Item: 0x40041C9C "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041C9A "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-08 22:09:02
+Offending Mobile: Server.Mobiles.TigersClawMaster [0x44EE "Black Order Thief"]
+Offending Item: 0x40041D38 "JinBaori" [Server.Items.JinBaori]
+Equipped Item: 0x40041D36 "FancyShirt" [Server.Items.FancyShirt]
+Layer: MiddleTorso
+
+# 2023-07-22 17:33:43
+Offending Mobile: Server.Mobiles.CustomPlayerMobile [0x3587 "Ambre Rosed'Or"]
+Offending Item: 0x40028F34 "Robe" [Server.Items.Robe]
+Equipped Item: 0x40028EFF "Robe" [Server.Items.Robe]
+Layer: OuterTorso
+

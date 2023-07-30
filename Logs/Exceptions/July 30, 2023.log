@@ -1,0 +1,19 @@
+##############################
+Exception log started on 2023-07-30 7:09:57 PM
+
+Exception Caught: 2023-07-30 7:09:57 PM
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.TypeInitializationException: The type initializer for 'Server.TileData' threw an exception. ---> System.Exception: TileData:  not found
+   at Server.TileData.Load() in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Server\Assets\TileData.cs:line 379
+   at Server.TileData..cctor() in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Server\Assets\TileData.cs:line 245
+   --- End of inner exception stack trace ---
+   at Server.TileData.get_MaxItemValue()
+   at Server.Item.get_DefaultWeight() in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Server\Item.cs:line 3685
+   at Server.Item.get_Weight() in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Server\Item.cs:line 3713
+   at Server.Item.set_Weight(Double value) in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Server\Item.cs:line 3717
+   at Server.Items.PersonalBlessDeed..ctor(Serial serial) in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Scripts\Items\Consumables\PersonalBlessDeed.cs:line 30
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.ConstructorInfo.Invoke(Object[] parameters)
+   at Server.World.Load() in D:\LeRefuge_Server&Client\LeRefugeServer - Copie\Server\World.cs:line 428
+

@@ -1,0 +1,36 @@
+##############################
+Exception log started on 2023-04-21 00:15:56
+
+Exception Caught: 2023-04-21 00:15:56
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Items.BaseWeapon.AddNameProperties(ObjectPropertyList list) dans C:\LeRefuge\LeRefugeServer\Scripts\Items\Equipment\Weapons\BaseWeapon.cs:ligne 4291
+   à Server.Item.GetProperties(ObjectPropertyList list) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 1409
+   à Server.Item.get_PropertyList() dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2190
+   à Server.Item.InvalidateProperties() dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2237
+   à Server.Item.set_Map(Map value) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2423
+   à Server.Item.MoveToWorld(Point3D location, Map map) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 1833
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 391
+
+##############################
+Exception log started on 2023-04-21 00:17:34
+
+Exception Caught: 2023-04-21 00:17:34
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Items.BaseWeapon.AddNameProperties(ObjectPropertyList list) dans C:\LeRefuge\LeRefugeServer\Scripts\Items\Equipment\Weapons\BaseWeapon.cs:ligne 4291
+   à Server.Item.GetProperties(ObjectPropertyList list) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 1409
+   à Server.Item.get_PropertyList() dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2190
+   à Server.Item.InvalidateProperties() dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2237
+   à Server.Item.set_Map(Map value) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2423
+   à Server.Item.MoveToWorld(Point3D location, Map map) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 1833
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 391
+
+Exception Caught: 2023-04-21 00:17:49
+System.NullReferenceException: La référence d'objet n'est pas définie à une instance d'un objet.
+   à Server.Items.BaseWeapon.AddNameProperties(ObjectPropertyList list) dans C:\LeRefuge\LeRefugeServer\Scripts\Items\Equipment\Weapons\BaseWeapon.cs:ligne 4291
+   à Server.Item.GetProperties(ObjectPropertyList list) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 1409
+   à Server.Item.get_PropertyList() dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2190
+   à Server.Item.InvalidateProperties() dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2237
+   à Server.Item.set_Map(Map value) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 2423
+   à Server.Item.MoveToWorld(Point3D location, Map map) dans C:\LeRefuge\LeRefugeServer\Server\Item.cs:ligne 1833
+   à Server.Commands.Add.Build(Mobile from, Point3D start, Point3D end, ConstructorInfo ctor, Object[] values, String[,] props, PropertyInfo[] realProps, List`1 packs, Boolean outline, Boolean mapAvg) dans C:\LeRefuge\LeRefugeServer\Scripts\Commands\Add.cs:ligne 391
+

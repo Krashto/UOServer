@@ -1,0 +1,347 @@
+##############################
+Exception log started on 2023-04-26 11:21:42
+
+Exception Caught: 2023-04-26 11:21:42
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 11:37:40
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 11:52:46
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 12:08:32
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 12:24:34
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 12:39:34
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 12:55:24
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 13:11:10
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 13:27:14
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 13:42:19
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 13:58:07
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 14:13:10
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 14:29:07
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 14:44:50
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 15:00:03
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 15:15:28
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 15:30:46
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 15:46:23
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 16:02:25
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 16:17:54
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 16:33:51
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 16:49:07
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 17:04:36
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 17:20:02
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 17:35:31
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 17:50:58
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 18:06:28
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 18:21:44
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 18:37:02
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 18:52:20
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 19:07:51
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 19:23:14
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 19:38:44
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 19:54:10
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 20:09:34
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 20:25:00
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 20:40:20
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 20:47:28
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+##############################
+Exception log started on 2023-04-26 21:20:17
+
+Exception Caught: 2023-04-26 21:20:17
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 21:36:15
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 21:51:42
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+##############################
+Exception log started on 2023-04-26 22:34:29
+
+Exception Caught: 2023-04-26 22:34:29
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 22:50:18
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 23:06:05
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 23:22:01
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 23:37:57
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-26 23:53:50
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 00:09:43
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 00:12:01
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 00:12:03
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 01:32:09
+System.MissingMethodException: Impossible de créer une classe abstraite.
+   à System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   à System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   à System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   à System.Activator.CreateInstance(Type type)
+   à Server.Loot.Construct(Type type) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\Loot.cs:ligne 772
+
+Exception Caught: 2023-04-27 02:01:00
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 02:16:43
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 02:21:44
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 02:21:47
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+
+Exception Caught: 2023-04-27 02:21:53
+System.IO.IOException: L'accès au chemin d'accès 'C:\LeRefuge\LeRefugeServer\Saves' est refusé.
+   à System.IO.Directory.InternalMove(String sourceDirName, String destDirName, Boolean checkHost)
+   à Server.Misc.AutoSave.Backup() dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 164
+   à Server.Misc.AutoSave.Save(Boolean permitBackgroundWrite) dans C:\LeRefuge\LeRefugeServer\Scripts\Misc\AutoSave.cs:ligne 69
+

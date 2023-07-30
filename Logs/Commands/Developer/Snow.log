@@ -1,0 +1,254 @@
+2023-04-25 13:56:04: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1066, 1409, 1) in Felucca: "LivreClasseGuerisseur"
+2023-04-25 13:56:04: 173.178.192.100: Serials: 0x40001FBE; 
+2023-04-25 13:56:10: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-25 13:56:12: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40001FBC (LivreClasseGuerisseur)
+2023-04-25 13:56:18: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add polymo'
+2023-04-25 13:58:10: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-25 13:58:23: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add poly'
+2023-04-25 13:59:30: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1065, 1409, 0) in Felucca: "LivreClasseDiversiforme"
+2023-04-25 13:59:30: 173.178.192.100: Serials: 0x4000204C; 
+2023-04-25 13:59:41: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-25 14:00:19: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'props '
+2023-04-25 14:01:22: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'props '
+2023-04-25 14:01:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'props '
+2023-04-25 14:05:50: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-25 14:07:34: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-25 14:10:02: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add vielli'
+2023-04-25 14:10:10: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1411, 0) in Felucca: "PlastronViellit"
+2023-04-25 14:10:10: 173.178.192.100: Serials: 0x400020C2; 
+2023-04-25 14:10:15: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1410, 0) in Felucca: "JambiereViellit"
+2023-04-25 14:10:15: 173.178.192.100: Serials: 0x400020C3; 
+2023-04-25 14:10:22: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'm delete'
+2023-04-25 14:10:31: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400020C2 (PlastronViellit)
+2023-04-25 14:10:35: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400020C3 (JambiereViellit)
+2023-04-25 14:10:43: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add daedri'
+2023-04-25 14:10:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1411, 0) in Felucca: "BrassardDaedric"
+2023-04-25 14:10:46: 173.178.192.100: Serials: 0x400020CB; 
+2023-04-25 14:10:49: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1411, 0) in Felucca: "CasqueDaedric"
+2023-04-25 14:10:49: 173.178.192.100: Serials: 0x400020F0; 
+2023-04-25 14:10:51: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1061, 1412, 0) in Felucca: "GantsDaedric"
+2023-04-25 14:10:51: 173.178.192.100: Serials: 0x400020F1; 
+2023-04-25 14:10:53: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1061, 1411, 0) in Felucca: "GorgetDaedric"
+2023-04-25 14:10:53: 173.178.192.100: Serials: 0x400020F9; 
+2023-04-25 14:10:56: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1410, 0) in Felucca: "JambiereDaedric"
+2023-04-25 14:10:56: 173.178.192.100: Serials: 0x4000213A; 
+2023-04-25 14:10:58: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1410, 0) in Felucca: "PlastronDaedric"
+2023-04-25 14:10:58: 173.178.192.100: Serials: 0x40002140; 
+2023-04-25 14:11:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add draconi'
+2023-04-25 14:11:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add plaque'
+2023-04-25 14:12:18: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set ressources nostalgium'
+2023-04-25 14:12:27: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'props '
+2023-04-25 14:12:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'Quality' of 0x40002140 (PlastronDaedric) to 'Legendary'
+2023-04-25 14:12:55: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'Resource' of 0x40002140 (PlastronDaedric) to 'Nostalgium'
+2023-04-25 14:13:10: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set resource nostalgium'
+2023-04-25 14:13:12: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'resource' of 0x4000213A (JambiereDaedric) to 'Nostalgium'
+2023-04-25 14:13:30: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set ressources nostalgium'
+2023-04-25 14:13:39: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set ressource nostalgium'
+2023-04-25 14:13:49: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set resource nostalgium'
+2023-04-25 14:13:51: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'resource' of 0x400020F1 (GantsDaedric) to 'Nostalgium'
+2023-04-25 14:13:53: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set resource nostalgium'
+2023-04-25 14:13:54: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'resource' of 0x400020CB (BrassardDaedric) to 'Nostalgium'
+2023-04-25 14:13:56: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set resource nostalgium'
+2023-04-25 14:13:57: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'resource' of 0x400020F9 (GorgetDaedric) to 'Nostalgium'
+2023-04-25 14:13:59: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set resource nostalgium'
+2023-04-25 14:14:00: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'resource' of 0x400020F0 (CasqueDaedric) to 'Nostalgium'
+2023-04-25 14:14:08: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:11: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x400020F0 (CasqueDaedric) to 'Legendary'
+2023-04-25 14:14:13: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:15: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x400020F9 (GorgetDaedric) to 'Legendary'
+2023-04-25 14:14:16: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:18: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x400020CB (BrassardDaedric) to 'Legendary'
+2023-04-25 14:14:20: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:22: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x400020F1 (GantsDaedric) to 'Legendary'
+2023-04-25 14:14:25: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:26: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x4000213A (JambiereDaedric) to 'Legendary'
+2023-04-25 14:14:30: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:33: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x400020CB (BrassardDaedric) to 'Legendary'
+2023-04-25 14:14:35: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set quality legendary'
+2023-04-25 14:14:37: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'quality' of 0x400020F1 (GantsDaedric) to 'Legendary'
+2023-04-25 14:16:23: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add muraille'
+2023-04-25 14:16:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'm delete'
+2023-04-25 14:16:40: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40002140 (PlastronDaedric)
+2023-04-25 14:16:41: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400020F0 (CasqueDaedric)
+2023-04-25 14:16:42: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40003D75 (CorpsRiverain)
+2023-04-25 14:16:43: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400020CB (BrassardDaedric)
+2023-04-25 14:16:43: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400020F1 (GantsDaedric)
+2023-04-25 14:16:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x4000213A (JambiereDaedric)
+2023-04-25 14:17:04: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'ADD GMROBE'
+2023-04-25 14:17:06: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1068, 1409, 0) in Felucca: "GMROBE"
+2023-04-25 14:17:06: 173.178.192.100: Serials: 0x40002177; 
+2023-04-26 03:37:18: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 03:37:31: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 03:37:37: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400020F9 (GorgetDaedric)
+2023-04-26 03:37:52: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add classe'
+2023-04-26 03:37:55: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add livre'
+2023-04-26 03:38:06: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1065, 1409, 0) in Felucca: "LivreClasseGardien"
+2023-04-26 03:38:06: 173.178.192.100: Serials: 0x40004C61; 
+2023-04-26 03:38:13: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'm delete'
+2023-04-26 03:38:14: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x4000204C (LivreClasseDiversiforme)
+2023-04-26 03:38:16: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40001FBE (LivreClasseGuerisseur)
+2023-04-26 03:38:21: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add  protecteu'
+2023-04-26 03:38:24: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1065, 1410, -1) in Felucca: "LivreClasseProtecteur"
+2023-04-26 03:38:24: 173.178.192.100: Serials: 0x40004C79; 
+2023-04-26 03:38:29: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 03:52:06: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 03:53:39: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 03:56:22: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 03:58:48: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add sword'
+2023-04-26 03:58:51: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1066, 1410, -1) in Felucca: "Broadsword"
+2023-04-26 03:58:51: 173.178.192.100: Serials: 0x40004C8E; 
+2023-04-26 03:59:33: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 04:01:16: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'fiche '
+2023-04-26 04:02:39: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'hide '
+2023-04-26 04:02:40: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') hiding 0x9DA "Snow" ('Snow')
+2023-04-26 13:35:45: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set huemod 0'
+2023-04-26 13:35:52: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'huemod' of 0x9DA "Snow" ('Snow') to '0'
+2023-04-26 13:35:57: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'set hue 0'
+2023-04-26 13:36:02: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') set property 'hue' of 0x9DA "Snow" ('Snow') to '0'
+2023-04-26 13:36:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add tabar'
+2023-04-26 13:36:41: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add taba'
+2023-04-26 13:36:45: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1421, -25) in Felucca: "Tabar"
+2023-04-26 13:36:45: 173.178.192.100: Serials: 0x400058C6; 
+2023-04-26 13:36:48: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1421, -25) in Felucca: "Tabar10"
+2023-04-26 13:36:48: 173.178.192.100: Serials: 0x400058C7; 
+2023-04-26 13:36:51: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "Tabar11"
+2023-04-26 13:36:51: 173.178.192.100: Serials: 0x400058C8; 
+2023-04-26 13:36:54: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1422, -25) in Felucca: "Tabar2"
+2023-04-26 13:36:54: 173.178.192.100: Serials: 0x400058C9; 
+2023-04-26 13:36:57: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1423, -25) in Felucca: "Tabar3"
+2023-04-26 13:36:57: 173.178.192.100: Serials: 0x400058CA; 
+2023-04-26 13:37:00: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1424, -25) in Felucca: "Tabar4"
+2023-04-26 13:37:00: 173.178.192.100: Serials: 0x400058CB; 
+2023-04-26 13:37:03: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1423, -25) in Felucca: "Tabar5"
+2023-04-26 13:37:03: 173.178.192.100: Serials: 0x400058CC; 
+2023-04-26 13:37:05: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1424, -25) in Felucca: "Tabar6"
+2023-04-26 13:37:05: 173.178.192.100: Serials: 0x400058CD; 
+2023-04-26 13:37:10: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:37:13: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058C6 (Tabar)
+2023-04-26 13:37:28: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:37:28: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058C8 (Tabar11)
+2023-04-26 13:37:45: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:37:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058CC (Tabar5)
+2023-04-26 13:37:53: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:37:54: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058CD (Tabar6)
+2023-04-26 13:38:01: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:38:02: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058CB (Tabar4)
+2023-04-26 13:38:05: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add taba'
+2023-04-26 13:38:08: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1421, -25) in Felucca: "Tabar7"
+2023-04-26 13:38:08: 173.178.192.100: Serials: 0x400058F1; 
+2023-04-26 13:38:12: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1421, -25) in Felucca: "Tabar8"
+2023-04-26 13:38:12: 173.178.192.100: Serials: 0x400058F2; 
+2023-04-26 13:38:14: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1422, -25) in Felucca: "Tabar9"
+2023-04-26 13:38:14: 173.178.192.100: Serials: 0x400058F3; 
+2023-04-26 13:38:54: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add manteau'
+2023-04-26 13:38:57: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add matea'
+2023-04-26 13:39:10: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1421, -25) in Felucca: "Manteau"
+2023-04-26 13:39:10: 173.178.192.100: Serials: 0x400058F6; 
+2023-04-26 13:39:14: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1421, -25) in Felucca: "Manteau2"
+2023-04-26 13:39:14: 173.178.192.100: Serials: 0x400058F7; 
+2023-04-26 13:39:16: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1423, -25) in Felucca: "ManteauDore"
+2023-04-26 13:39:16: 173.178.192.100: Serials: 0x400058F8; 
+2023-04-26 13:39:26: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:39:28: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058F8 (ManteauDore)
+2023-04-26 13:39:32: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:39:34: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058F7 (Manteau2)
+2023-04-26 13:40:15: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add propr'
+2023-04-26 13:40:27: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add unifrome'
+2023-04-26 13:40:36: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add uniforme'
+2023-04-26 13:40:37: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "uniforme"
+2023-04-26 13:40:37: 173.178.192.100: Serials: 0x400058FF; 
+2023-04-26 13:40:43: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:40:47: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058FF (Uniforme)
+2023-04-26 13:41:07: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:41:09: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058C9 (Tabar2)
+2023-04-26 13:42:11: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add pantalo'
+2023-04-26 13:42:14: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1050, 1421, -25) in Felucca: "Pantalon1"
+2023-04-26 13:42:14: 173.178.192.100: Serials: 0x4000590F; 
+2023-04-26 13:42:18: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1421, -25) in Felucca: "Pantalon10"
+2023-04-26 13:42:18: 173.178.192.100: Serials: 0x40005910; 
+2023-04-26 13:42:20: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1421, -25) in Felucca: "Pantalon11"
+2023-04-26 13:42:20: 173.178.192.100: Serials: 0x40005911; 
+2023-04-26 13:42:23: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "Pantalon12"
+2023-04-26 13:42:23: 173.178.192.100: Serials: 0x40005912; 
+2023-04-26 13:42:25: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1422, -25) in Felucca: "Pantalon2"
+2023-04-26 13:42:25: 173.178.192.100: Serials: 0x40005913; 
+2023-04-26 13:42:27: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1049, 1423, -25) in Felucca: "Pantalon3"
+2023-04-26 13:42:27: 173.178.192.100: Serials: 0x40005914; 
+2023-04-26 13:42:30: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1050, 1423, -25) in Felucca: "Pantalon4"
+2023-04-26 13:42:30: 173.178.192.100: Serials: 0x40005915; 
+2023-04-26 13:42:33: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1423, -25) in Felucca: "Pantalon5"
+2023-04-26 13:42:33: 173.178.192.100: Serials: 0x40005916; 
+2023-04-26 13:42:35: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1423, -25) in Felucca: "Pantalon6"
+2023-04-26 13:42:35: 173.178.192.100: Serials: 0x40005917; 
+2023-04-26 13:42:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1424, -25) in Felucca: "Pantalon7"
+2023-04-26 13:42:38: 173.178.192.100: Serials: 0x40005918; 
+2023-04-26 13:42:42: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1424, -25) in Felucca: "Pantalon8"
+2023-04-26 13:42:42: 173.178.192.100: Serials: 0x40005919; 
+2023-04-26 13:42:55: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:42:56: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005910 (Pantalon10)
+2023-04-26 13:43:01: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:43:03: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005911 (Pantalon11)
+2023-04-26 13:43:07: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:43:09: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005912 (Pantalon12)
+2023-04-26 13:43:13: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:43:15: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005913 (Pantalon2)
+2023-04-26 13:43:24: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:43:25: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005914 (Pantalon3)
+2023-04-26 13:43:31: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:43:32: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005915 (Pantalon4)
+2023-04-26 13:43:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:43:51: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005919 (Pantalon8)
+2023-04-26 13:43:58: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add pantalo'
+2023-04-26 13:44:02: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "Pantalon9"
+2023-04-26 13:44:02: 173.178.192.100: Serials: 0x4000591F; 
+2023-04-26 13:44:07: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:44:09: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x4000591F (Pantalon9)
+2023-04-26 13:44:20: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:44:21: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005916 (Pantalon5)
+2023-04-26 13:45:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add coiff'
+2023-04-26 13:45:50: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "CoiffeColore"
+2023-04-26 13:45:50: 173.178.192.100: Serials: 0x4000592D; 
+2023-04-26 13:45:53: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1421, -25) in Felucca: "CoiffeEgypte"
+2023-04-26 13:45:53: 173.178.192.100: Serials: 0x4000592E; 
+2023-04-26 13:45:57: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1422, -25) in Felucca: "CoiffeLion"
+2023-04-26 13:45:57: 173.178.192.100: Serials: 0x4000592F; 
+2023-04-26 13:46:20: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add plume'
+2023-04-26 13:46:26: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "ChapeauPlume1"
+2023-04-26 13:46:26: 173.178.192.100: Serials: 0x40005931; 
+2023-04-26 13:46:33: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add plume'
+2023-04-26 13:46:35: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1051, 1422, -25) in Felucca: "ChapeauPlume2"
+2023-04-26 13:46:35: 173.178.192.100: Serials: 0x40005932; 
+2023-04-26 13:46:38: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1052, 1422, -25) in Felucca: "ChapeauPlume3"
+2023-04-26 13:46:38: 173.178.192.100: Serials: 0x40005933; 
+2023-04-26 13:46:58: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:47:00: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x4000592E (CoiffeEgypte)
+2023-04-26 13:47:04: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:47:05: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x4000592F (CoiffeLion)
+2023-04-26 13:47:12: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'm delete'
+2023-04-26 13:47:15: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058F3 (Tabar9)
+2023-04-26 13:47:16: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40003D77 (Robe)
+2023-04-26 13:47:20: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x4000592D (CoiffeColore)
+2023-04-26 13:47:36: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005931 (ChapeauPlume1)
+2023-04-26 13:47:45: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005933 (ChapeauPlume3)
+2023-04-26 13:47:58: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x400058F1 (Tabar7)
+2023-04-26 13:48:06: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40004C8E (Broadsword)
+2023-04-26 13:51:00: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'qui '
+2023-04-26 13:51:01: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'who '
+2023-04-26 13:52:43: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add bott'
+2023-04-26 13:52:49: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1060, 1409, 1) in Felucca: "Bottes"
+2023-04-26 13:52:49: 173.178.192.100: Serials: 0x40005962; 
+2023-04-26 13:52:54: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:52:57: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005962 (Bottes)
+2023-04-26 13:53:08: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'add bottes11'
+2023-04-26 13:53:19: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1062, 1410, 0) in Felucca: "BottesBarbare"
+2023-04-26 13:53:19: 173.178.192.100: Serials: 0x40005963; 
+2023-04-26 13:53:37: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') building at (1060, 1410, 0) in Felucca: "BottesPoils"
+2023-04-26 13:53:37: 173.178.192.100: Serials: 0x40005964; 
+2023-04-26 13:53:46: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'delete '
+2023-04-26 13:53:47: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') deleting 0x40005963 (BottesBarbare)
+2023-04-26 13:54:05: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'qui '
+2023-04-26 13:54:09: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') se dirige sur 0xA43 "Riiem" ('Riiem'), Localisation (793, 1122, 1), Map Felucca
+2023-04-26 13:54:24: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'qui '
+2023-04-26 13:54:28: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') se dirige sur 0xAA8 "Hakuna Matata" ('Islena'), Localisation (430, 913, 5), Map Felucca
+2023-04-26 13:54:41: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') used command 'qui '
+2023-04-26 13:54:48: 173.178.192.100: Developer 0x9DA "Snow" ('Snow') se dirige sur 0xBA3 "Mergez" ('bbq'), Localisation (1028, 1409, -1), Map Felucca
