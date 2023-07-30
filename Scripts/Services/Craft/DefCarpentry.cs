@@ -414,6 +414,9 @@ namespace Server.Engines.Craft
 
 			index = AddCraft(typeof(PoteauChaine), "Décorations", "Poteau avec Chaine", 90.0, 115.0, typeof(RegularBoard), 1044041, 10, 1044351);
 			AddRes(index, typeof(IronIngot), "Lingot de fer", 3, "Vous n'avez pas suffisament de lingot de fer");
+			index = AddCraft(typeof(FountainDeed), "Décorations", "Fontaine d'eau", 90.0, 115.0, typeof(RegularBoard), 1044041, 100, 1044351);
+			AddRes(index, typeof(IronIngot), "Lingot de fer", 50, "Vous n'avez pas suffisament de lingot de fer");
+		
 			#endregion Decoration
 
 			#region Statues et Trophées

@@ -1147,8 +1147,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(TribalPaint), "Teinture", "Peinture tribale", 80.0, 99.0, typeof(SackFlourOpen), "Sac de farine", 1, 1151092);
 			AddRes(index, typeof(TribalBerry), "Baies tribales", 1, 1044253);
 			index = AddCraft(typeof(EggBomb), "Teinture", "Bombe à oeuf", 80.0, 99.0, typeof(Eggs), "Oeufs", 1, 1044253);
-			index = AddCraft(typeof(ColorFixative), "Teinture", "Fixateur de couleur", 75.0, 100.0, typeof(Pitcher), 1022503, 1, 1044253);
-			AddRes(index, typeof(SilverSerpentVenom), "Venin de serpent argenté", 1, 1044253);
+			index = AddCraft(typeof(ColorFixative), "Teinture", "Fixateur de couleur", 75.0, 100.0, typeof(Pitcher), "Pichet de Vin", 1, 1044253);
 			SetBeverageType(index, BeverageType.Wine);
 			AddRes(index, typeof(SackFlourOpen), "Sac de farine", 3, 1151092);
 			index = AddCraft(typeof(PlantPigment), "Teinture", "Pigment de plante", 80.0, 99.0, typeof(PlantClippings), "Plante coupée", 1, 1044253);

@@ -1,7 +1,367 @@
 [
   {
-    "Id": "7a556e81-6ace-4b3c-b941-b9fe35cb8356",
+    "Id": "12f68245-6ca8-403b-b0f2-37d4ff7cac78",
     "Visible": true,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 2/2 - Kathya",
+    "Content": "Golem d'Abysses // Des épreuves peuvent surgir, mais restez fort. Affrontez-les avec courage et apprenez de chaque défi pour grandir et surmonter.// Nombre chanceux: 9, 55// Couleur du mois: Vert forêt",
+    "DateCreated": "2023-07-23T19:31:23.6107707-04:00"
+  },
+  {
+    "Id": "a2c37dfa-e24f-4a84-ad6c-fce4f001cb81",
+    "Visible": true,
+    "WriterName": "Samalek Avasarala",
+    "Title": "Ne soiyez pas crédule - Samalek Avasarala",
+    "Content": "Citoyens, amis, les derniers temps furent remplis de moments très difficiles, pour tous. Les feux ont ravagé notre maison, le fortin. J’appelle ici à l’entraide et l’harmonie.\n\r\n\rGardez vos yeux concentrés sur l'objectif principal, cela vous aide à ne pas voir la destruction sur le chemin. Un groupe de personnes sans remords apparents veut nous monter les uns contres les autres.\n\r\n\rOn veut se jouer de nous, de nos valeurs profondes. Ne les laissons pas gagner et soutenons-nous encore plus qu’avant. Il n’y a pas d’Impériaux terroristes et encore moins d’elfe machiavéliques.\n\r\n\rPeu importe d'où vous venez, tout ce qui compte, c’est où vous allez. Et tous ensemble, nous avons décidé de venir en Colognan pour la même raison: rebâtir nos vies.Ensemble nous avons connu des difficultés et c’est ensemble que nous passe",
+    "DateCreated": "2023-07-21T16:54:06.6011094-04:00"
+  },
+  {
+    "Id": "931079db-8bd1-417a-adde-97cd4db84b6f",
+    "Visible": true,
+    "WriterName": "Nyssa",
+    "Title": "Cacophonie explosive - Nyssa Lac-aux-Roseaux",
+    "Content": "Quelques jours après l’incendie de la banque, revendiqué par la xénophobe Légion impériale, le monastère fut ravagé par les flammes à la suite d’une explosion. Un texte trouvé sur les lieux était anonyme.\n\r\n\rCe texte n’a pas été partagé avec le public. Sur les lieux, le conseiller militaire Tom Luthel a déclaré que tous les symboles riverains étaient menacés, mais n’a rien dit sur la motivation ou l’identité possible du coupable.\n\r\n\rLe conseiller a cependant affirmé que l’enquête serait bientôt conclue. D’autres gardes disent étudier plusieurs possibilités, notamment que les attentats soient liés. Ou celui-ci serait-il en réponse à la banque?\n\r\n\rDes tensions existent en Colognan; des personnes se sentent acculées au mur. Il est douteux que la solution soit d’attiser le feu, alors que nous pouvons jeter de la terre par-dessus pour bâtir ensemble un nouveau royaume.",
+    "DateCreated": "2023-07-19T17:20:56.8544831-04:00"
+  },
+  {
+    "Id": "57f5028f-cc63-420e-9842-eba0dd28bd65",
+    "Visible": true,
+    "WriterName": "Nyssa",
+    "Title": "Union et division en Colognan - Nyssa Lac-aux-roseaux",
+    "Content": "Le groupe se désignant sans ironie la Légion impériale s’est encore manifesté. Ses affiches opposent au supposé sang doré des descendants de feu l’empire les « oreilles pointues » des elfes, qui prennent trop de place à leurs yeux.\n\r\n\rLa légion aimerait s’isoler des elfes et sans doute des autres peuples non riverains, mais s’isole en fait de Colognan, dont le gouvernement, y compris Sa Majesté nouvellement couronnée Godrick de Colognan, prône l’union.\n\r\n\rNotre roi promet à tous, « réunis sous une bannière », l’occasion de s’épanouir au sein de son royaume. « Nous devons éviter les erreurs de notre passé. Dans la cohésion, viendra notre salut et la reconstruction. »\n\r\n\rLe codex suit l’exemple du roi, codifiant une tolérance zéro envers la discrimination. Ensemble, ces voix officielles se joignent à celle de la population diverse du royaume pour dire à la légion d’abandonner sa haine, fruit du passé.",
+    "DateCreated": "2023-07-18T00:31:08.8428076-04:00"
+  },
+  {
+    "Id": "d4f2f196-c9f1-4c19-b7a2-3b0be7256603",
+    "Visible": false,
+    "WriterName": "Nyssa",
+    "Title": "Union et division en Colognan - Nyssa Lac-aux-roseaux",
+    "Content": "Le groupe xénophobe se désignant sans ironie la Légion impériale s’est encore manifesté. Ses affiches opposent au supposé sang doré des descendants de feu l’empire les « oreilles pointues » des elfes, qui prennent trop de place à leurs yeu\n\r\n\rLa légion aimerait s’isoler des elfes et sans doute des autres peuples distincts de son héritage riverain, mais s’isole en fait de Colognan, dont le gouvernement, y compris Sa Majesté nouvellement couronnée Godrick de Colognan, prône l’uni\n\r\n\rDans sa « capitale des peuples civilisés en leur ensemble, réunis sous une bannière », le roi promet à tous l’occasion de s’épanouir au sein du royaume. « Nous devons éviter les erreurs de notre passé. Dans la cohésion, viendra notre salut\n\r\n\rLe nouveau codex suit l’exemple du roi, codifiant une tolérance zéro envers discrimination et harcèlement. Ensemble, ces voix officielles se joignent à celle de la population diverse du royaume pour dire à la légion d'abandonner la haine, ",
+    "DateCreated": "2023-07-18T00:25:58.7157021-04:00"
+  },
+  {
+    "Id": "7ff56076-7f75-4dd2-8b3c-daa0d7698218",
+    "Visible": true,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 1/2 - Kathya",
+    "Content": "Fée du Printemps // Les liens se brisent, laissant place à de nouvelles opportunités. Prenez le temps de guérir et faites confiance au processus de reconstruction.// Nombre chanceux: 1, 45 // Couleur du mois: Rouge obscure\n\r\n\rTigre d'Été // Des changements se profilent à l'horizon. Soyez ouvert(e) aux nouvelles idées, adaptez-vous aux circonstances changeantes et embrassez les opportunités de croissance.// Nombre chanceux: 8, 15 // Couleur du mois: Gris\n\r\n\rKi-Rin d'Automne // Les fruits de vos efforts se concrétisent. Profitez des résultats, récoltez les bénéfices et préparez-vous à de nouvelles opportunités florissantes. // Nombre chanceux: 10, 54// Couleur du mois: Jaune canari\n\r\n\rDragon d'Hiver // Les décisions cruciales se profilent. Suivez votre intuition et faites un choix éclairé pour avancer vers un avenir prometteur. // Nombre chanceux: 9, 34 // Couleur du mois: Brun arachide",
+    "DateCreated": "2023-07-16T15:09:59.6369836-04:00"
+  },
+  {
+    "Id": "cfc567cf-e78b-4643-b5be-5200d030af87",
+    "Visible": true,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 2/2 - Kathya",
+    "Content": "Golem d'Abysses // Des défis se présentent, mais restez fort(e) et persévérant(e). Les épreuves sont des occasions d'apprentissage et de croissance personnelle.// Nombre chanceux: 5, 56// Couleur du mois: Bleu clair",
+    "DateCreated": "2023-07-16T15:09:30.256018-04:00"
+  },
+  {
+    "Id": "42ae3c82-d572-4da9-8bb0-db6c18b38c4b",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "La chaude caserne - L'encrier",
+    "Content": "Notre chaud lapin Tom c'est rapidement trouver une nouvelle flamme. Après avoir été vue en pleur devant la c aserne, suite au départ de la nomade, il se serait tournée vers les criminelles. \n\r\n\rEn effet, non seulement a-t-il recruter l'ancienne accusée de tentative de meurtre Hyara au sein de la garde, il couche aussi avec celle-ci, malgré le grand désapointement de la race elfique entière envers cette dernière. \n\r\n\rOn savais l'Homme en peine d'amour, mais de là à tomber si bas, c'est à si croire s'il ne tenterait pas de ruiner sa réputation. \n\r\n\r On s'attend a voir bientôt l'elfe enceinte a ce rythme.",
+    "DateCreated": "2023-07-11T22:08:21.1502143-04:00"
+  },
+  {
+    "Id": "c5753878-136f-459d-9e53-ba54ddf9d755",
+    "Visible": false,
+    "WriterName": "Hyara Farren",
+    "Title": "Bestialité dans le Fortin - Isadora Conspira ",
+    "Content": "La nomade Kathya a un nouvel amant: Razkkar le peeko. \n\r\n\rEst-ce juste moi, ou c'est complètement déviant? \n\r\n\rL'artisane a toujours eu des goûts discutables, c'est vrai. Mais la, ça dépasse l'entendement.\n\r\n\rEst-ce que quelqu'un l'aime suffisemment pour lui dire d'arrêter ça tout de suite? ",
+    "DateCreated": "2023-07-11T13:53:51.6110454-04:00"
+  },
+  {
+    "Id": "ac0bbf00-aade-48dc-a2b2-1ec0d8f71cdc",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Au dragon noir-La Dragonne",
+    "Content": "Mon ami, ta joie résonne encore à mes oreilles. Toi si joyeux et si amusant, mon coeur est attristé que tu sois parti..,loin, loin des tiens. \n\r\n\rTu as gardé ce secret jusqu'à la fin, qui semblait si lourd te peser, dans ce torse si fier.  Je le sais, maintenant, j'en suis profondément chagriné.\n\r\n\rAu dragon noir, mon érudit, ton âme est maintenant allé. Je garderai pour toi non point la rancune, mais une profonde affection.\n\r\n\rPrend soin d'Aya et de mon petit. Soit en paix et sache que je ne t'oublierai jamais...jamais. ",
+    "DateCreated": "2023-07-10T20:40:14.2130773-04:00"
+  },
+  {
+    "Id": "b78dd54c-7ec6-4301-8b85-dc271b1a1f9a",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Chante-la ta chanson - Kathya",
+    "Content": "Nous avons eu ce soir la chance d'entendre la merveilleuse voix de bien des membres du fortins. L'ambiance agréable a bien aidé a faire remonter le moral du fortin et à dévierger la scène qui accueuillera notre futur roi. \n\r\n\rEn troisième position vint la controversée chanson de Hyara Farren, dont on apprit, après coup, grâce a un elfe de la foule qu'elle parlait vouloit tuer les sous-race. \n\r\n\rEn seconde position se retrouve la chanson émouvante de Astrée Skyelas, raccontant la bravour d'un chevalier pour sa douce, mourrant en combattant un dragon pour elle.  \n\r\n\rEn première position, le merveilleux Orléans Renart avec la chanson sur la bière et la chanson très triste sur la fin des fées. Nous le reverrons lors de la soirée du couronnement du roi pour un spectacle complet! Félicitations!  ",
+    "DateCreated": "2023-07-09T21:34:42.4220146-04:00"
+  },
+  {
+    "Id": "7dfbf5af-e865-464e-ab79-67a0453d2859",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 1/2 - Kathya",
+    "Content": "Fée du Printemps // Les nuages de l'incertitude obscurcissent votre chemin. Restez fort(e), maintenez la foi et cherchez la lumière intérieure pour naviguer à travers cette obscurité. Nombre chanceux: 6, 12 // Couleur du mois: Gris\n\r\n\rTigre d'Été // Les défis testent votre résilience. Restez courageux(se), apprenez de ces épreuves et grandissez en force et en sagesse.  Nombre chanceux: 3, 12 // Couleur du mois: Cuivre\n\r\n\rKi-Rin d'Automne // Les forces vacillent, les doutes émergent. Prenez soin de vous et prenez le tempsà de vous renforcer. La faiblesse d'aujourd'hui peut devenir la force de demain. Nombre chanceux: 1, 78// Couleur du mois: Jaune blé\n\r\n\rDragon d'Hiver // L'isolement pèse. Cherchez l'équilibre en vous-même, trouvez la beauté dans la tranquillité. De nouvelles connexions réconfortantes émergeront bientôt. Nombre chanceux: 2, 32// Couleur du mois: Noir encre",
+    "DateCreated": "2023-07-09T00:02:35.2682475-04:00"
+  },
+  {
+    "Id": "01854291-52b9-4624-9f5a-8f0651bbcf3d",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 2/2 - Kathya",
+    "Content": "Golem d'Abysses // Soyez prêt(e) à embrasser l'inconnu, que ce soit une transformation bienvenue ou un défi. Votre adaptabilité vous guidera vers de nouveaux horizons. Nombre chanceux: 2, 13// Couleur du mois: Rouge-brunâtre ",
+    "DateCreated": "2023-07-09T00:02:10.99163-04:00"
+  },
+  {
+    "Id": "58c7331c-e015-4a60-adf3-9dbd420b2694",
+    "Visible": false,
+    "WriterName": "Samalek Avasarala",
+    "Title": "Prière Hebdomadaire - Samalek Avasarala, Évêque",
+    "Content": "Saints Ancêtres, délivre-nous de la puissance nécromantique, de la puissance du démon et de tous nos ennemis. Ne permettez pas que nous, servants de des Anciens, soyons attaqués en quoi que ce soit par aucun démon de l’heure de midi ou de \n\r\n\rSi l’angoisse, la peur, l’anxiété ou le stress menacent notre quotidien et nous empêchent de vivre libre et paisible, donnez-nous, Ancêtres, votre paix et votre sérénité. Nous avons confiance en vous, contre ce mal, nous vous prions, déliv\n\r\n\rQue les Ancêtres nous viennent en aide.",
+    "DateCreated": "2023-07-05T14:31:44.5208287-04:00"
+  },
+  {
+    "Id": "acca9f89-9d2e-43b2-87d7-1c4397143db9",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "L'Ordre des dragons- Astrée Skyelas",
+    "Content": "Je tiens à vous informer que mon livre sur l'Ordre des dragons a été déposer à la bibliothèque de Colognan. \n\r\n\rCe livre explique en profondeur notre ordre, nos valeurs, ce pourquoi nous nous battons. L'ignorance est une chose dangereuse, alors je me devais de vous éclaicir. \n\r\n\rÀ toi, fouteuse de trouble qui a calomnié le nom de ma famille dans ce journal, le roulant dans la boue, sache que je me souviens de tout. ",
+    "DateCreated": "2023-07-04T18:53:12.7252289-04:00"
+  },
+  {
+    "Id": "ca893e87-3522-451c-b95c-359df0596b06",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Les Skyelas - Par Isadora Conspira",
+    "Content": "Nous avons un magistrat du nom de Seth Skyelas, qui consacre plus de temps à gérer sa sœur névrosée qu'à s'occuper des véritables enjeux du fortin. \n\r\n\rMais sérieusement, d'où vient ce parvenu ? Qui est l'individu fantasque qui a élu une telle personne au sein d'une institution aussi importante que la magistrature ? \n\r\n\rEn ce qui concerne sa prétendue sœur, Astrée, il est grand temps de trouver une solution. Elle inquiète la population entière avec sa secte lézard. \n\r\n\rLe fortin appelle à l'aide.",
+    "DateCreated": "2023-07-04T14:43:48.8596477-04:00"
+  },
+  {
+    "Id": "278c3106-00fa-47ce-b29c-98bf14e81276",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Horoscope de Kathya 1/2",
+    "Content": "Fée du Printemps // Votre énergie sensuelle s'éveille, embrasez le plaisir et la passion. Explorez vos désirs, vivez des moments intenses et libérez votre potentiel érotique. // Nombre chanceux: 5, 26// Couleur du mois: Brun \n\r\n\rTigre d'Été // Les ténèbres pèsent sur votre cœur. Cherchez un soutien bienveillant, prenez soin de vous et trouvez des moments de lumière pour guérir et retrouver l'espoir. // Nombre chanceux: 4, 36// Couleur du mois: Vert herbe \n\r\n\rKi-Rin d'Automne // Votre force intérieure s'éveille. Faites confiance à votre potentiel, utilisez votre énergie avec sagesse et surmontez tous les défis qui se présentent à vous.// Nombre chanceux: 1, 25// Couleur du mois: Bleu Mer ",
+    "DateCreated": "2023-07-04T14:41:59.6557238-04:00"
+  },
+  {
+    "Id": "baca46e9-4619-43d3-a344-157c4e9fd214",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Horoscope de Kathya 2/2",
+    "Content": "Dragon d'Hiver // Les étoiles vous inspirent, votre potentiel est immense. Osez briller, affirmez-vous et utilisez votre force intérieure pour accomplir de grandes choses. // Nombre chanceux: 10, 63// Couleur du mois: Jaune-gris \n\r\n\rGolem d'Abysses // Les ombres de la solitude vous entourent. Prenez le temps de vous guérir et de cultiver l'amour-propre. Bientôt, de nouvelles connexions illumineront votre chemin.// Nombre chanceux: 3, 12// Couleur du mois: Orange ",
+    "DateCreated": "2023-07-04T14:40:46.7110125-04:00"
+  },
+  {
+    "Id": "e0d15af9-5c13-44b5-a62a-b8e0dbb030fa",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Les Skyelas - Par Isadora Conspira",
+    "Content": "Nous avons un magistrat du nom de Seth Skyelas, qui consacre plus de temps à gérer sa sœur névrosée qu'à s'occuper des véritables enjeux du fortin.  \n\r\n\rMais sérieusement, d'où vient ce parvenu ? Qui est l'individu fantasque qui a élu une telle personne au sein d'une institution aussi importante que la magistrature ? \n\r\n\rEn ce qui concerne sa prétendue sœur, Astrée, il est grand temps de trouver une solution. Elle inquiète la population entière avec sa secte lézard. \n\r\n\rLe fortin appelle à l'aide.  ",
+    "DateCreated": "2023-07-03T13:39:14.625558-04:00"
+  },
+  {
+    "Id": "c17eb052-05c3-4d1a-b678-3760d4973093",
+    "Visible": false,
+    "WriterName": "Hyara Farren",
+    "Title": "Les Skyelas - Anonyme",
+    "Content": "Nous avons un magistrat du nom de Seth Skyelas, qui consacre plus de temps à gérer sa sœur névrosée qu'à s'occuper des véritables enjeux du fortin.\n\r\n\rMais sérieusement, d'ou vient ce parvenu ? Qui est le fantasque qui a élu une telle personne au sein d'une institution aussi importante que la magistrature ?\n\r\n\rEn ce qui concerne sa prétendue sœur, Astrée, il est grand temps de trouver une solution. Elle inquiete la population entiere avec sa secte lézard.\n\r\n\rLe fortin appelle à l'aide. ",
+    "DateCreated": "2023-07-02T23:02:52.9190047-04:00"
+  },
+  {
+    "Id": "efc6fb65-1cba-40ad-8e98-d6ab391efc14",
+    "Visible": false,
+    "WriterName": "Hyara Farren",
+    "Title": "Les Skyelas - Hyara Farren ",
+    "Content": "Nous avons un magistrat du nom de Seth Skyelas, qui consacre plus de temps à gérer sa sœur névrosée qu'à s'occuper des véritables enjeux du fortin..\n\r\n\rMais sérieusement, d'où vient ce prétentieux ? Qui est l'individu fantasque qui a élu une telle personne au sein d'une institution aussi importante que la magistrature ?\n\r\n\rIl est impératif de trouver une solution concernant sa prétendue sœur, Astrée, qui suscite une inquiétude grandissante au sein de la population avec sa secte lézard, .\n\r\n\rÀ l'aide. ",
+    "DateCreated": "2023-07-02T22:59:50.5149007-04:00"
+  },
+  {
+    "Id": "2b8a89bb-806c-458c-bb8c-923fd5444547",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Le rituel mystérieux-Astrée Skyelas",
+    "Content": "L'on raconte que lors des nuits de pleine lune, l'Ordre des dragons feraient vivre un mystérieux rituel à ses initiés. Certains prétendent qu'ils se mettent à nu et doivent offrir leur virginité. \n\r\n\rL'on raconte que cela doit durer toute la nuit, jusqu'aux lueurs du jour. Après cela, le Dragonneau doit revêtir son uniforme,ayant été préléablement mis à nu. \n\r\n\rL'on racont bien des choses....bien des fantasmes....bien des envies....L'on raconte...\n\r\n\rL'on raconte.. un mensonge. L'on raconte une vérité. L'on raconte qu'il faut devenir dragon pour savoir le tout. ",
+    "DateCreated": "2023-07-02T18:38:15.1255809-04:00"
+  },
+  {
+    "Id": "58cd64be-7133-42b4-ac73-097e55733596",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 1/2 - Kathya",
+    "Content": "Fée du Printemps // Votre énergie sensuelle s'éveille, embrasez le plaisir et la passion. Explorez vos désirs, vivez des moments intenses et libérez votre potentiel érotique. // Nombre chanceux: 5, 26// Couleur du mois: Brun\n\r\n\rTigre d'Été // Les ténèbres pèsent sur votre cœur. Cherchez un soutien bienveillant, prenez soin de vous et trouvez des moments de lumière pour guérir et retrouver l'espoir. // Nombre chanceux: 4, 36// Couleur du mois: Vert herbe\n\r\n\rKi-Rin d'Automne // Votre force intérieure s'éveille. Faites confiance à votre potentiel, utilisez votre énergie avec sagesse et surmontez tous les défis qui se présentent à vous.// Nombre chanceux: 1, 25// Couleur du mois: Bleu Mer\n\r\n\rDragon d'Hiver // Les étoiles vous inspirent, votre potentiel est immense. Osez briller, affirmez-vous et utilisez votre force intérieure pour accomplir de grandes choses. // Nombre chanceux: 10, 63// Couleur du mois: Jaune-gris",
+    "DateCreated": "2023-06-30T00:01:08.7429188-04:00"
+  },
+  {
+    "Id": "2c5c2cc0-5a54-41c7-81c6-41e45fd22e68",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 2/2 - Kathya",
+    "Content": "Golem d'Abysses // Les ombres de la solitude vous entourent. Prenez le temps de vous guérir et de cultiver l'amour-propre. Bientôt, de nouvelles connexions illumineront votre chemin.// Nombre chanceux: 3, 12// Couleur du mois: Orange",
+    "DateCreated": "2023-06-30T00:00:38.9648574-04:00"
+  },
+  {
+    "Id": "c07a82b8-0fb1-45cf-87c7-7413ab575030",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Plongez dans l'action : Le Kraken Assoiffé dévoile son Casino – Par Torgah Poings d’Acier",
+    "Content": "Vient vivre une expérience de jeu avec un buffet somptueux et un accueil chaleureux pour tous au Kraken Assoiffé. Si tu as déjà succombé au charme de l’établissement, tu ne pourras pas manquer la soirée Casino qui s'en vient ! \n\r\n\rApporte tes pièces d'or, prépare-toi à parier. Tables de blackjack, poker pour un divertissement inoubliable. Pour les personnes ayant un budget plus restreint, on t’attend quand même, la taverne reste ouverte même pour toi. \n\r\n\rIl y aura un festin digne des palais les plus exigeants pour satisfaire tes papilles pendant la soirée. Des mets raffinés, des plats exotiques et des desserts succulents seront servis pour combler ton appétit.\n\r\n\rLa soirée est ouverte à tous ! On vous attend !",
+    "DateCreated": "2023-06-26T18:19:15.8583394-04:00"
+  },
+  {
+    "Id": "014ea977-0706-4e32-b9d8-e628d70abff4",
+    "Visible": false,
+    "WriterName": "Samalek Avasarala",
+    "Title": "Prière hebdomadaire",
+    "Content": "Va, reste calme au milieu du bruit et de l'impatience et souviens-toi de la paix qui découle du silence.  Si tu le peux, mais sans renoncement, sois en bons termes avec tout le monde. \n\r\n\rDis ce que tu penses, clairement, simplement ; et écoute les autres, même les sots et les ignorants, car eux aussi ont quelque chose à dire. \n\r\n\rÉvite les gens grossiers et violents car ils ne sont que tourments pour l'esprit.  Sois fier de ce que tu as fait et de ce que tu veux faire.   Sois fort pour faire face aux malheurs de la vie. \n\r\n\rDis-toi qu'en dépit de ses faussetés, de ses ingratitudes, de ses rêves brisés, le monde est tout de même merveilleux.  Sois prudent. Et tâche d'être heureux. ",
+    "DateCreated": "2023-06-26T12:57:21.0026344-04:00"
+  },
+  {
+    "Id": "3add4edb-e780-4da6-a387-3252459b6b1d",
+    "Visible": false,
+    "WriterName": "Samalek Avasarala",
+    "Title": "Titre",
+    "Content": "Paragraphe 1\n\r\n\rParagraphe 2\n\r\n\rParagraphe 3\n\r\n\rParagraphe 4",
+    "DateCreated": "2023-06-26T11:48:48.9345624-04:00"
+  },
+  {
+    "Id": "9bc8204b-31d2-49e8-ac7d-4360939de060",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "La fusion de l'Ordre des dragons--Astrée Skyelas",
+    "Content": "Surprise générale! Les Insatiables ont fusionné avec les Dragons rouges devenant une compagnie majeur, celle de l'Ordre des Dragons.\n\r\n\rVisiblement, Uggyard Vifvent, ayant abandonné ses hommes pour un morceau de jambon, s'est fait prendre de court. Or, on sent un vent nouveau et une réorganisation irréprochable de la part des Dragons.\n\r\n\rMagnifiques dans leurs uniformes rouge obscure et noir profond, les Dragons sont rendus plus nombreux que la garde. Ils auraient même eu le feu vert du gouverneur pour construire un village sous leur gouvernance, extension du futur royaume\n\r\n\rAttendez-vous à des raids contre les orcs de leur part pour protéger le village des petis gens, ayant subi à plusieurs reprises des attaques. ",
+    "DateCreated": "2023-06-26T09:28:59.6221477-04:00"
+  },
+  {
+    "Id": "cab3ed98-8795-46fa-9378-dd7f19d6606c",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "La fusion--L'Ordre des dragons --Astrée Skyelas",
+    "Content": "Surprise générale! Les Insatiables ont finalement fusionné avec les Dragons rouges devant une compagnie majeur portant maintenant le nom de l'Ordre des Dragons.\n\r\n\rVisiblement, Uggyard Vifvent, ayant abandonné ses hommes pour un morceau de jambon, s'est fait prendre de court par la Chef dragonne, son ancienne nemesis. On sent un vent de réorganiser irréprochable.\n\r\n\rMagnifiques dans leurs uniformes d'un rouge sombre et de noir, les Dragons sont rendus plus nombreux que la garde. On raconte même que le gouverneur leur a donné le feu vert pour construire leur propre village.\n\r\n\rAttendez-vous qu'il y est des raids de leurt part pour protéger le village des petits gens contre les Ors. Les choses vont bougées  en leur présence. ",
+    "DateCreated": "2023-06-26T09:20:03.938355-04:00"
+  },
+  {
+    "Id": "a2862cc9-9447-4ad2-96c7-8863d101211b",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "La victime imaginaire – Par Mademoiselle D",
+    "Content": "Hyara, haute-elfe différente, dissimulait un tempérament amer malgré son apparence enchanteresse. Elle feignit de changer grâce à un rituel, espérant gagner la sympathie des autres.\n\r\n\rLa Ruche a prétendu que Hyara était malade, mais ce n'était qu'une façade pour protéger leur réputation. En réalité, cette haute-elfe est désagréable en permanence, et certains ont été trompés par leur soi-disant rituel.\n\r\n\rLes spectateurs du rituel se rendent compte que c'était un mensonge ou un échec, car la prétendue malade reste aussi mal en point qu'avant. Maintenant ils nous demandent de qualifier cette personne de victime et que NOUS la traitons mal. \n\r\n\rC’est nous les gens du fortin qui sommes les victimes lorsque son arrogance, ses critiques, son ironie et ses comportements passifs agressifs sont constants sur nous et qu’elle ne nous lâche plus d’une semelle. C’EST NOUS LES VICTIMES. ",
+    "DateCreated": "2023-06-26T07:37:49.5624238-04:00"
+  },
+  {
+    "Id": "8d6bc90f-bc31-4e2b-96a3-103d8e756c90",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Exil ou Bannissement : Le fortin confronté à un dilemme éthique – Mademoiselle D.",
+    "Content": "Un dilemme énigmatique : Demextria exilée ou bannie ? La vérité s'effrite, la garde commet des erreurs. Suppositions, contradictions. Prudence, vos dires pourrait être un crime. \n\r\n\rLa garde a prétendu bannir Demextria pour avoir mis une prime sur la tête d'Hyara. Des preuves existent-elles ? Qui est impliqué ? \n\r\n\rTransparence nécessaire pour informer le fortin et éclaircir les actions de la garde.\n\r\n\rLes paroles d'Achara prétendent que Demextria s'est exilée, mais les raisons restent inconnues. Les mensonges créent confusion, et dans ce cas-ci, nous sommes perdus. Combien de tromperies encore dissimulées ?",
+    "DateCreated": "2023-06-25T21:51:14.0531053-04:00"
+  },
+  {
+    "Id": "3d0adcd0-ac4e-4869-99f0-df76d650137c",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 1/2 - Kathya",
+    "Content": "Fée du Printemps // Les vents du destin soufflent avec force, apportant des transformations rapides et inattendues. Soyez adaptable et prêt(e) à faire face à l'inconnu avec courage. Nombre chanceux: 6, 11 // Couleur du mois: Bleu Lilas\n\r\n\rTigre d'Été // De nouvelles opportunités surgissent, apportant un souffle frais et revitalisant. Embrassez le changement et laissez votre créativité s'épanouir. // Nombre chanceux: 3, 16 // Couleur du mois: Perle\n\r\n\rKi-Rin d'Automne // Méfiez-vous des apparences trompeuses. Les illusions obscurcissent la réalité. Soyez prudent(e) dans vos choix et faites preuve de discernement. // Nombre chanceux: 5, 42 // Couleur du mois: Jaune Sable\n\r\n\rDragon d'Hiver // Les énergies cosmiques ouvrent la voie à une transformation radicale. Soyez ouvert(e) à de nouvelles possibilités et saisissez les opportunités. // Nombre chanceux: 9, 22 // Couleur du mois: Gris granite",
+    "DateCreated": "2023-06-24T19:27:55.0026823-04:00"
+  },
+  {
+    "Id": "38c3063c-7002-443a-a6d7-6811e8844145",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 2/2 - Kathya",
+    "Content": "Golem d'Abysses // Les chaînes du passé se brisent, laissant place à une nouvelle liberté. Embrassez votre pouvoir intérieur et libérez-vous des limitations qui vous retiennent. // Nombre chanceux: 4, 51 // Couleur du mois: Bleu Capri",
+    "DateCreated": "2023-06-24T19:27:02.1009965-04:00"
+  },
+  {
+    "Id": "f8504ff4-81e0-4a87-8d47-a7f55edc67cd",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Vandalisme et diffamation - Astrée Skyelas",
+    "Content": "Ce matin une ambiance lourde régnait. La peur, la provocation et la révolte à l'endroit de la SAGA se fait sentir. Les récents évènements ont soulevé une noire colère.\n\r\n\rAu courant de la nuit, quelqu'un a aspergé la caserne  de sang et a décapité trois têtes de cochons laisser au sol. Une vision d'horreur et de désolation. \n\r\n\rNous avons l'impression de revenir en arrière, quand nos  différents peuples se battaient entre elles. Le cataclysme nous unie sur une même bannière, mais pour combien de temps?\n\r\n\rLa paix est si fragile, il est facile de céder à la vengeance et à la haine. Meurtres, attaques, vandalismes...jusqu'où cela va mener? À quel prix?",
+    "DateCreated": "2023-06-22T10:05:56.6382226-04:00"
+  },
+  {
+    "Id": "2bde5dc7-a4ce-467b-8240-510e7b370f98",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Comment plaire aux dames (suite) - Astrée Skyelas",
+    "Content": "Enfin, si vous voulez les séduire, prière de ne  pas asperger le mur de leur maisonnée de sang de cochon. Ceci est dégoûtant, peu sensuelle, ni invitant. \n\r\n\rOffrez leur plutôt des roses rouges en leur préparant leur plat préférée. Évitez de décorer votre table de tête de cochons. Priorisé les chandelles et une bouteille de vin.\n\r\n\rSi après cela, vous n,arrivez pas à la conquérir, alors peut-être devriez-vous devenir moine? ",
+    "DateCreated": "2023-06-22T09:58:48.6428164-04:00"
+  },
+  {
+    "Id": "d3c2a52d-96c8-4ea7-8b4b-8ae1792e73d9",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Diffamation et vandalisme- Astrée Skyelas",
+    "Content": "Ce matin, une ambiance lourde régnait inspirant la peur, la provocation et la révolte à l'endroit de la SAGA. Les récents événements ont  soulevé une noire colère.\n\r\n\rAu courant de la nuit.  quelqu'un a aspergé la caserne de la garde de sang et à décapiter plusieurs cochons laisser au sol. Vision d'horreur et désolation. \n\r\n\rNous avons l'impression de revenir en arrière, quand les différentes races se battaient entre elles. Le cataclysme nous a uni  sous une même bannière, mais pour combien de temps? \n\r\n\rLa paix est si fragile, il est facile de céder à la vengeance et à la haine. Meurtres, attaques, vandalismes...jusqu'où cela va mener? Et à quel prix?",
+    "DateCreated": "2023-06-22T08:49:38.4831272-04:00"
+  },
+  {
+    "Id": "3ddf50fb-e389-49bf-83d7-afbe979d015d",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Comment plaire aux dames -Astrée Skyelas",
+    "Content": "Messieurs, et mesdames intéressées, je vais vous révéler dans cet article des astuces pour gagner le coeur d'une femme. Que vous soyez un montagnard obèse ou un nain manchot, elle tombera en amour avec vous. \n\r\n\rD'abord, les femmes n'aiment point se faire trop coller. Cela les étouffe. Laissez-les s'intéresser à vous. En outre, la séduction est de mise, mais subtilement. \n\r\n\rUne femme trop belle et trop charmeuse est habituée à ce que les hommes lui tournent autour. Alors, jouer votre indépendant, mais juste ce qu'il faut. Cela ajoutera une touche de mystère et l'intriguera. \n\r\n\rFinalement, ne croyez pas que c'est en la couvrant de cadeaux qu'elle vous tombera dans vos bras. Cela serait de mauvais goût, car on n'achète pas l'amour, on le mérite. Soyez surtout là pour elle.",
+    "DateCreated": "2023-06-22T07:49:47.4707048-04:00"
+  },
+  {
+    "Id": "5aeb5e79-96c3-4ec1-b8bf-73df92dd5c5b",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Comment plaire aux dames - Astrée Skyelas",
+    "Content": "Messieurs, et mesdames intéressées, je vais vous révéler dans cet article des astuces pour conquérir la femme de votre coeur. Que vous soyez un obèse montagnard ou un nain manchot, elle tombera en amour avec vous. \n\r\n\rD'abord, les femmes n'aiment point se faire trop coller. Cela les étouffe. Laissez-les s'intéresser à vous. En outre, la séduction est de mise, mais tout en étant subtile. Trop directe elle aura l'impression que vous êtes un coureur de jup\n\r\n\rUne femme trop belle et trop charmeuse est habituée que les hommes lui tournent autour. Alors jouer l'indépendant, mais juste un peu. Cela amènera une touche de mystère. \n\r\n\rFinalement, ne croyez pas que c'est en achetant une montagne de cadeaux qu'elle vous tombera dans les bras. Cela serait de mauvais, on n'achète pas l'amour, on le mérite. Alors, soyez surtout là pour elle. ",
+    "DateCreated": "2023-06-22T07:44:40.0048982-04:00"
+  },
+  {
+    "Id": "71744068-3b37-40d0-84a4-199265ca0e51",
+    "Visible": false,
+    "WriterName": "Astree Skyelas",
+    "Title": "Comment plaire aux dames -Astrée Skyelas",
+    "Content": "Messieurs, et mesdames intéressées, je vais vous révéler dans cet article des astuces de comment conquérir une femme dont vous êtes éperdument amoureux. Que vous soyez un montagnard obèse ou un nain manchot, celle que vous désirez tombera \n\r\n\rD'abord, les femmes n'aiment point se faire trop coller. Cela les étouffe. Laissez-les s'intéresser à vous. \n\r\n\rUne femme trop belle et trop charmeuse est habituée que les hommes lui tournent autour. Alors, jouer l'indépendant, mais juste ce qu'il faut. Cela amènera une touche de mystère qui captera son attention. \n\r\n\rFinalement, ne croyez pas que c'est en achetant une montagne de cadeaux qu'elle tombera dans vos bras. Cela serait de mauvais goût, car elle aura l'impression que vous achetez son amour. Soyez surtout là pour elle. ",
+    "DateCreated": "2023-06-22T07:37:46.2145704-04:00"
+  },
+  {
+    "Id": "0267e619-5e80-4fe5-9bb4-8b34f34478e6",
+    "Visible": false,
+    "WriterName": "Hyara Farren",
+    "Title": "Nous Aurons du Ginseng - Isadora Conspiria ",
+    "Content": "J'ai vu Sam, l'engrossée, travailler d'arrache pieds a planter du ginseng dans le champs. Pas mal pour une estropiée! \n\r\n\rCe n'est qu'après une bonne heure de jardinage que ses sbires, Achara et Kathya, sont venus la rejoindre. Un moment opportun pour s'écraser par terre comme une martyre.\n\r\n\rUne elfe aurait avoué son crime dans des circonstances nébuleuses, inconnues de tous. Voilà qu'elle ne peut plus entrer dans une taverne sans se faire briser le nez!\n\r\n\rIl y a de quoi se poser des questions... Peuple de Colognan, ne soyez pas des moutons!  ",
+    "DateCreated": "2023-06-20T09:05:07.4565266-04:00"
+  },
+  {
+    "Id": "b9de35e7-a0ea-44f8-b7e4-f5350e42cb08",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Couronne racheté aux elfes par le gouverneur - Kathya",
+    "Content": "La couronne fut aujourd'hui remise au mystérieux et peu vue Gouverneur du refuge de Colognan, grand brunet aux airs typique des nobles. En échange d'un pesant sac d'or pour le peuple elfique bien entendue. \n\r\n\rLe transfert de celle-ci depuis les elfe vers les riverain fut paisible. Les riverains présent se mettèrent a genoux devant le futur roi et promettèrent allégeance avec allégresse.  \n\r\n\rLa couronne, rouge du minerais de Bloodirium et sertie d'ambre es un joyaux de création s'ageanceant bien au rouge du manteau du futur Roi. Le métal quelque peu terni par les années aura besoin d'un bon polissage. \n\r\n\rLe Futur Roi promi ordre, paix et un avenir glorieux au peuple du Fortin. L'homme ayant des vues de grandeur promet l'édification d'un Royaume véritable.",
+    "DateCreated": "2023-06-19T22:42:46.1425514-04:00"
+  },
+  {
+    "Id": "d5f20168-7394-4dce-a238-7a333f211778",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "L’ouverture du Kraken Assoiffé – Par Mademoiselle D.",
+    "Content": "La soirée battait son plein à la taverne, les discussions allaient bon train et l'ambiance était animée. Tout semblait se dérouler sans accroc, jusqu'à ce que la présumée meurtrière, Hyara, fasse son apparition. \n\r\n\rMême Saga, qui était de garde et avait reçu l'ordre de la faire sortir, n'avait pas levé le petit doigt. Finalement, l'un des propriétaires, Melkior, décida d'intervenir en l'assommant. \n\r\n\rElle refusé de partir malgré les demandes et les avertissements. Malgré cet incident, la soirée se poursuivit et resta tout de même agréable pour les autres convives. \n\r\n\rIl y avait encore beaucoup à faire à la taverne, un deuxième étage n’avait pas été dévoilé selon Torgah. ",
+    "DateCreated": "2023-06-17T23:24:58.9448896-04:00"
+  },
+  {
+    "Id": "fc609188-3002-4f25-8000-ef721e579eb9",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "Potins-tirons : Les commérages se cultivent – Par Mademoiselle D.",
+    "Content": "Une église a surgi au beau milieu des champs, troublant la tranquillité des quais. Beaucoup ont cru à un monastère, mais il s'agit en réalité du quartier général de la C.E.M.\n\r\n\rLes interrogations fusent : comment ont-ils obtenu ces matériaux ? Même les forts semblent moins solides que leurs immenses bâtiments. \n\r\n\rMême si certains membres de la C.E.M. considèrent ces critiques comme de la simple jalousie, il semblerait que l'ensemble des habitants du fortin partage l'opinion\n\r\n\rComment ont-ils réussi à ériger cette chose effrayante en si peu de temps ? Il est probable que la magie soit impliquée peut-être même la magie noire. Nous devrions mettre la Cellule sur l’enquête pour démêler ce sinistre mystère.",
+    "DateCreated": "2023-06-17T18:11:59.2809404-04:00"
+  },
+  {
+    "Id": "f612f669-564b-4968-9c32-6841ec93b1b3",
+    "Visible": false,
+    "WriterName": "Torgah Poings d'Acier",
+    "Title": "L'affaire Hyära Farren - Par Mademoiselle D. ",
+    "Content": "Cher lecteur, aujourd'hui a était le jour de la sentence de Hyära Farren, et laissez-moi vous dire que cela a suscité des opinions divergentes.\n\r\n\rQui a pris cette décision absurde de la condamner à dix coups de fouet ? Les rumeurs circulent, et il semble que Tom soit à l'origine de cette décision. \n\r\n\rNous savons tous que Tom est un séducteur impénitent, ayant charmé de nombreuses dames, y compris Hyära.\n\r\n\rQuoi qu'il en soit, la Reine de la Ruche a rassemblé ses fidèles ouvrières et a emmené la \"Belle\" au dispensaire. Mais croyez-moi ou non, je pense que cette affaire ne s'arrêtera pas là.",
+    "DateCreated": "2023-06-17T17:28:23.6102522-04:00"
+  },
+  {
+    "Id": "0e2f2ecc-ddbe-4172-b6a1-a24acf057a41",
+    "Visible": false,
+    "WriterName": "Kathya",
+    "Title": "Horoscope 1/2 - Kathya",
+    "Content": "Fée du Printemps // Les énergies cosmiques favorisent la guérison des relations. Le pardon et la compréhension mutuelle sont les clés d'une réconciliation harmonieuse. // Nombre chanceux: 4, 46 // Couleur du mois: Orange\n\r\n\rTigre d'Été // Les efforts que vous avez déployés commencent à porter leurs fruits. Soyez persévérant(e), car des développements positifs sont en vue. // Nombre chanceux: 10, 64 // Couleur du mois: Vert sombre\n\r\n\rKi-Rin d'Automne // Une opportunité inattendue se présente, apportant joie ou défi. Soyez ouvert(e) à l'inconnu et prêt(e) à saisir les possibilités qui se présentent à vous. // Nombre chanceux: 8, 32 // Couleur du mois: Vert Olive\n\r\n\rDragon d'Hiver // Les apparences sont trompeuses. Méfiez-vous des mensonges et des trahisons. Prenez des décisions éclairées pour protéger votre bien-être émotionnel. // Nombre chanceux: 6, 24 // Couleur du mois: Bleu ciel",
+    "DateCreated": "2023-06-16T19:20:12.184005-04:00"
+  },
+  {
+    "Id": "7a556e81-6ace-4b3c-b941-b9fe35cb8356",
+    "Visible": false,
     "WriterName": "Kathya",
     "Title": "Horoscope 2/2 - Kathya",
     "Content": "Golem d'Abysses // Une situation intolérable atteint son point de rupture. Un changement radical vous permettra de retrouver votre équilibre et votre paix intérieure. // Nombre chanceux: 2, 45 // Couleur du mois: Brun-gris",
@@ -9,7 +369,7 @@
   },
   {
     "Id": "6d4cbb79-62cf-4fd1-80bd-18505ca26e91",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Basile Sonnet",
     "Title": "Le vent libérateur - Par Basile Sonnet",
     "Content": "Dans les méandres de l'intestin, Un mal enserre un gras festin. Un ventre crispé et tourmenté. Espère en vain sa liberté. \n\r\n\rMais soudainement, bruit salvateur! Les cors résonnent au dur labeur. Les anges entament tous en coeur, Le chant du pet libérateur!\n\r\n\rTel un souffle de délivrance, Il brise les chaînes de la souffrance. Un rire éclate, un soulagement, Gloire au pruneaux triomphants!",
@@ -17,7 +377,7 @@
   },
   {
     "Id": "caefe70b-02d2-4dd0-aecc-eee9e0f6c2f8",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Hyara Farren",
     "Title": "Garde-à-vous - Anonyme",
     "Content": "La garde semble avoir le membre droit, et on ne parle pas du dos. Le rouge impérial que son chef arborerait fièrement ne serait autre que celui d’un chibre ardent.  \n\r\n\rSemblerait que notre sécurité locale préfère les affaires de fesses aux affaires de méfaits, et lorsqu’on entend parler de Tom Luthel, ce serait pour sa vie sentimentale.  \n\r\n\rLe bourreau des cœurs est-il conscient que pendant que des fluides se répandent à qui mieux-mieux, le genre elfique est saigné à blanc?\n\r\n\rPeut-on vraiment faire confiance à SAGA, pour aller au plus profond d’un dossier qui n’aie rien à voir avec l’anatomie du beau sexe?",
@@ -25,7 +385,7 @@
   },
   {
     "Id": "fafc24bb-46ec-4247-b2b8-06e085686752",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Basile Sonnet",
     "Title": "Ode aux mamelons, par Basile Sonnet",
     "Content": "Téton de satin blanc tout neuf. Téton qui fait honte à la rose. Téton plus beau que nulle chose. Téton dur, pas que téton, -voir- Une splendeur d'Ivoire! \n\r\n\rAu milieu duquel est assise une fraise, une cerise. Que nul ne voit, ne touche aussi. Mais je gage qu'il est ainsi. Téton, donc, au petit bout rouge. Téton qui avec l'âge bouge. Téton gauche, téton mignon, Toujours loin de son compagnon.\n\r\n\rO Tétons, grands et petits, Téton maigrichon, téton d'appétit. Téton qui nuit et jour s'écrie: \"Il est temps qu'on me marie!\" Et qui enfle et qui repousse, Un gorgerin de deux bons pouces. \n\r\n\rMais le plus beau, -on le chantera-, Est celui qui de lait s'emplira. Faisant d'un téton de pucelle, Téton de femme entiere et belle. ",
@@ -41,7 +401,7 @@
   },
   {
     "Id": "cc4f5732-e164-4617-9d96-6a4e05376605",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Astree Skyelas",
     "Title": "Le coeur a ses raisons- Astrée Skyelas",
     "Content": "Le printemps amène toutes sortes de stimulations agréables. Cela sent bon l'agrume, la lavande et le chèvrefeuille. Est-ce l'odeur des fleurs? Eh non! C'est l'odeur de l'amour et de la séduction!\n\r\n\rNotre magnifique chef de la garde, Tom Luthel, semble cessé d'être un croqueur de femmes. Le bellâtre aurait porté son dévolu sur Kathya, la belle capitaine vivant dans une tente nommée: L'Oasis torride.\n\r\n\rSinon, nous avons Thelom Forgefaim semble épris d'amour pour Torgah Poinds D'Acier. Le pauvre serait-il capable de gagner son coeur? Hélas, la jolie naine est si farouche et si indépendante. \n\r\n\rOr, une rumeur des plus croustillantes circule. Celui d'un grand évènement: un mariage! Qui sera le couple de l'heure? Est-ce moi et mon Ianros? Nous nous aimons beaucoup, mais non. Alors qui? Ah....quel romantique suspense...",
@@ -81,7 +441,7 @@
   },
   {
     "Id": "236b3645-6eb8-4d42-8130-4043fe4a130b",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Astree Skyelas",
     "Title": "Oh mon cochon- Astrée Skyelas",
     "Content": "Il était une fois un petit porcelet roux. La seule chose qu'il aimait c'était de manger, manger et encore manger. Plus qu'il grandissait, plus le petit porcelet devient un cochon imposant.\n\r\n\rTous les animaux de la forêt avaient peur de lui, car contrairement aux autres porcs, il mangeait autant les loups que les panthères. Un jour, il devient si obèse qu'il ne pouvait plus courir.\n\r\n\rC'est ainsi qu'il revient en ville pour aller se faire nourrir par les humains. Malheureusement, ceux-ci vivaient une grosse famine. Ils tuèrent donc le cochon pour le manger en méchoui.\n\r\n\r-Oh mon cochon! S'exclama le chef du village trouvant délicieux le tas de graisse qu'était devenu le porcelet. La morale de cette histoire est: pour être bon chasseur, il faut être moins gras. ",
@@ -89,7 +449,7 @@
   },
   {
     "Id": "5ade2e91-9431-4d1f-b000-174dbde1d1bc",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Astree Skyelas",
     "Title": "Campagne de sensibilisation- Astrée Skyelas",
     "Content": "En ce printemps, nous vous invitons de moins consommer de prédateurs afin de les laisser s'accoupler.  N'oubliez pas que manger trop de viandes ce n'est pas bon pour les artères ni le coeur. Risque d'obésité morbide sur le long terme. \n\r\n\rL'été va apporté son lot de fruits et de légumes. Nos abeilles s'ont justement entrain de boutiner pour vous offrir du bon miel. Je vous rappel de ne pas couper vos pissenlits cette semaine pour les laisser boutiner. \n\r\n\rSinon, n'oubliez pas que la Panthère d'eau est présente pour recevoir des plaintes concernant vos animaux domestiques s'ils se font maltraités. \n\r\n\rFinalement, je cherche des personnes qui seraient intéressées que j'étudie leurs montures. Des espèces rares sont prioriées. Veuillez me contacter par missive.",
@@ -105,7 +465,7 @@
   },
   {
     "Id": "a5996340-af33-4f70-b743-2bd67f2029e8",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Kathya",
     "Title": "Un travail de maître - Kathya",
     "Content": "Un bon matin de printemps, un grand nomade partie à l'aventure, saluant Orléans Renart pour la chance. Allant travailler ardamment dans la foret savanne il revint vers Orléans rapidement. \n\r\n\rLe bois parfait, la température extérieur parfaite et les mouvements parfaits: Un arc de maître est née en les terres de Colognan aux mains du maître Artisan Kaan. \n\r\n\rL'excitation entre les deux hommes était tel que ça attira le regards des curieux, et évidemment d'acheteurs potentiel. L'arc quitta ainsi rapidement les mains du maître pour une somme modeste. \n\r\n\rPour tout désire d'observer cet oeuvre d'art, veuillez surveiller l'entrainement de Razkkar le Peeko à la zone d'entrainement. Pour la chance, saluez Orléans. ",
@@ -145,7 +505,7 @@
   },
   {
     "Id": "330892d2-640b-4a35-a701-d316dce7f822",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Melkior Poings D'Acier",
     "Title": "Nouveur Servicement au Fortinage - Melkior Poing d'Acier",
     "Content": "Le Kraken Assoiffé accueillerationnera, une fois sont ouvertation complétée, un servicement d'aide à la rencontrerie, pour ceuses qui, comme le Nain esseulouillé que Melkior est, recherchationnent l'amouraillement et la compagnerie.\n\r\n\rCeuses qui aimerouillerait bénifiçailler du futur servicement de rencontrage peuvisent envoyater une missiverie à Melkior Poing d'Acier pour une servicerie discrèteur garantitionnée.\n\r\n\rFraises à déterminailler selon la personnalisationnement du serviceurs et des concessionneries désirées.",
@@ -169,7 +529,7 @@
   },
   {
     "Id": "8967332c-8029-470d-bbd7-2faac8019f1a",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Kathya",
     "Title": "Une fête réussie - L'encrier",
     "Content": "Bon petits mets, excellent alcool, musique parfaite et bien rythmée tout était au rendez-vous pour la fête de fin des contrats. La ruche a délivré une soirée mémorable. \n\r\n\rNous avons pu constater leur succès avec ceux-ci qui ont terminés premier dans le premier tour des contrats. Heureusement, le Kraken a aussi remporté la seconde position, mais la première en tant que brasseur d'alcool par excellence. \n\r\n\rAutrement il pu être apperçu de nouvelles amourettes naissante. Ianros et Astrée se tenaient la main ensemble et se fesaient des yeux doux. Parlant de yeux doux, Tom, dit le beau, semble en avoir aussi fait a bien des dames.  \n\r\n\rUne mystérieuse femme masquée se révéla être nul autre que la couturière renommée Kathya. Tout prêt on pu aussi constater des elfes noirs qui jettaient de la nourriture sur le passage dans l'espoir de faire tombé le séducteur Tom. ",
@@ -177,7 +537,7 @@
   },
   {
     "Id": "da8aafe3-883b-4d4c-aa86-e67e3672071a",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Un concours de...concours - Garance Renart",
     "Content": "On voit une rude compétition poindre, quand il s’agit de concours. Mais pouvait-on croire, qu’un jour des compétitions similaires se mesureraient?\n\r\n\rEn effet, la compétition culinaire du gouverneur demandant aux participants de lui soumettre un quatre services a une rivale écrasante, ce n’est pas peu dire.\n\r\n\rLa grande quête des Insatiables pour trouver le meilleur chef cuisinier de tout-Colognan avant le 11 du mois serait bien plus demandante, avec ses 11 services, plus chanson. \n\r\n\rLe concours lancé par Uggvard Vifvent, réputé pour être le plus fin gourmet de notre Fortin, écrasera-t-il celui du gouverneur de tout son poids?",
@@ -185,7 +545,7 @@
   },
   {
     "Id": "66bd83aa-df6b-4edb-ae30-0b5ba3d529d1",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "La morte-vivante - Garance Renart",
     "Content": "La conseillère Chrimationis va à merveille, hurlaient les crieurs le matin. La conseillère économique est morte, vive la conseillère économique, criait-on le soir.\n\r\n\rIl faut se faire une idée. Pourquoi mentir avec tant d’aplomb, et affirmer la conseillère pimpante de santé dans son odeur de nécrose? À vivre dans le déni, on creuse sa propre tombe. \n\r\n\rPas besoin d’avoir goûté le soi-disant grand buffet  aux odeurs de décomposition pour tirer la moue. Nous qui avons survécu aux feux du ciel, pouvons encaisser la vérité.\n\r\n\rDès lors, les condoléances de mise dites, il importe de penser à l’après. La sécurité de ceux qui restent, et aussi au bon maintien des charges de la défunte dame.",
@@ -193,7 +553,7 @@
   },
   {
     "Id": "abe50031-e2f4-4dcc-8934-b5f5e02035e6",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Le chant du cygne du Madrigal - Garance Renart",
     "Content": "Grand spectacle dit aussi grand scandale. La tête d’affiche Tristan Madrigal se serait présenté non pas pour jouer sur scène, mais injurier à la remise des prix. \n\r\n\rE effet, le barde fit une apparition tardive et surprenante tandis que les numéros musicaux grandioses de Basile Sonnet et Gault avaient eu cours...\n\r\n\rIl ouvrit la bouche devant la conseillère culturelle non pas pour chanter... mais pour la traiter de plus grande manipulatrice de Colognan, et même pire encore.\n\r\n\rTristan Madrigal aura gagné sa célébrité au prix fort. On peut se questionner, quel sort lui réservera le Conseil s’il revenait au Fortin après ces invectives? ",
@@ -201,7 +561,7 @@
   },
   {
     "Id": "af0887e2-f0e3-49d3-8d50-aa6a30a5b281",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "- Avis de Recherches - Melkior Poings d'Acier",
     "Content": "La Compagnie du Kraken d'Or, en chargerie de la recherchettée de Masque Noireau, demandouille l'aidement de tout habitanteur du Fortinage qui aurait des informationnements sur le \"dangereux Masque Noir\". \n\r\n\rIl affectionneraitiserait particulièrement les beaux objetements et les richesseries de compagneries. Il rôderouillerait entre le fortinage et des catacombetées... Gare-à-vousez vous!\n\r\n\rMerci de contactasser Melkior, responsabilisateur des projetteries de la Compagnie Kraken d'Or et enquêtateur sur cette affairement des plus loucheuses. ",
@@ -209,7 +569,7 @@
   },
   {
     "Id": "150e4015-bf84-4ec4-861f-e26895a171d7",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Pour contourner les prix des essences - Namalae Dhimuldrae Dhumarlih Xes’Dilistyn",
     "Content": "Les mages de tout acabit et de tout niveau de compétence sont en proie à la détresse face aux galopants prix des essences.\n\r\n\rLa Ruche, en conséquence, aura entrepris des recherches afin de venir à bout de cet épineux problème et aura trouvé une solution.\n\r\n\rEn explorant des hypothèses liées tant au domaine alchimique qu’au domaine organique, dont nous passerons les détails...\n\r\n\rNous aurons déduit que certaines plantes propices, en réduction avec des matériaux épaississants, pouvaient générer les cristaux si prisés. Un chaudron et de la volonté suffisent.",
@@ -217,7 +577,7 @@
   },
   {
     "Id": "6dadbdbb-7bf6-43b9-9413-f4f0a44f22f3",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Rétrospective d’un événement de la Ligue des champions de Colognan – Par Torgah Poings d’Acier",
     "Content": "Selon le point de vue de plusieurs, ç'a été un tournoi fantastique, mais y en a d'autres qui trouvent que ç'aurait pu être mieux. Faut dire, y a eu un évènement qui a fait surtout jaser, mais pas longtemps.\n\r\n\rLa compagnie responsable de surveiller l'affaire n’a pas fait leur travail.  Après la soirée, y en a qui ont goûté au buffet pis y ont failli y passer. Ça mérite pas d’avoir la sécurité de Colognan.\n\r\n\rLe pire, c’est que ça se parle en douce, comme si c'était normal d'avoir d’la bouffe pourrie, voire empoisonnée. Y en a même qui sont devenus tout verts après l'avoir avalée. Heureusement, y avait une soigneuse sur place.\n\r\n\rIl faut parler et arrêter de chuchoter, il s’passera quoi au prochain évènement ? J’vais l’dire haut et fort si vous n’êtes pas capables: Moi j’ai pu confiance en SAGA pour la sécurité d’la ville.",
@@ -225,7 +585,7 @@
   },
   {
     "Id": "d4ca6096-08b1-4bd8-9440-d6530e9a0929",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Vicem Alteram n’est plus que cendres - Garance Renart",
     "Content": "Une discrète compagnie s’en est allée comme elle est venue à Colognan, et du jour au lendemain nous avons vu le grand phénix du tableau des compagnies n’être plus que cendre, fumée, et simple souvenir.\n\r\n\rLa rumeur court quant aux raisons de cette dissolution survenue avant la fin du premier cycle de contrats. Quelques troubles au sein du Fortin , et même en dehors, semblaient impliquer les membres de cette compagnie avant leur disparition.\n\r\n\rRudesses, grossièretés, absences mentales, et même mise en danger des autres. Traînée de scandales semblaient suivre ceux qui en fort peu de temps se sont retrouvés au cœur de moult altercations et cibles de la colère de leurs concitoyens.\n\r\n\rAuraient-ils disparus pour avoir vexé une personne de trop? La légende veut que les phénix tendent à renaître de leurs cendres, mais en ce cas-ci ce qui se faisait passer pour un phénix n’était peut-être qu’un dindon qui avait pris feu. ",
@@ -257,7 +617,7 @@
   },
   {
     "Id": "2c1c03f9-9685-4f3b-9e91-74bd2e12218a",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Une mélodie digne de risquer sa vie ? - Hyara Farren",
     "Content": "Les Braves et la Ruche ont retrouvé la Mélodie Perdue! Ces veinards furent graciés par la présence du barde Tristan Madrigal. Ce dernier s'est plaint sans relâche. On se demande encore quelle était la pertinence de sa présence.\n\r\n\rSuite au chaos, un fantôme moustachu leur a partagé sa partition. Réjouissez-vous, tout Colognan aura l'occasion d'entendre cette mélodie, interprétée par nul autre que Madrigal. \n\r\n\rIl est souhaité par tous les survivants que celle-ci sera moindrement agréable pour les oreilles. Nous recommandons vivement au nouveau détenteur de la mélodie de ne plus la perdre.\n\r\n\rUne question intrigue encore tous les esprits : Était-il judicieux de traîner quatre immenses tigres dans un espace exigu ? Le doute subsiste.",
@@ -265,7 +625,7 @@
   },
   {
     "Id": "b4be84ba-94d3-40b7-a27e-c234017b8e4d",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "La conseillère économique.... morte? - Arvud Vieilsouche",
     "Content": "En passant près de la villa de la conseillère, on est frappé d’une violente odeur, pareille à celle d’une marmotte qui aurait crevé sous un perron. \n\r\n\rÇa laisse à présager le pire, mais la dame avait quand même atteint un âge vénérable, c’était à s’y attendre.  \n\r\n\rCe qui étonne, c’est qu’à cet âge la femme aurait eu si peu de proches et d’amis pour aller la visiter avant qu’elle en vienne à nécroser. \n\r\n\rSi elle laisse bien ce monde sans descendants, ça reste à tous d’honorer sa mémoire en gardant le marché animé et vivant.",
@@ -289,7 +649,7 @@
   },
   {
     "Id": "e422d3a9-5d75-4354-8bb1-44cc1b51d5e3",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "La SAGA de l’arba-laide - Garance Renart",
     "Content": "Une arme aura semé bien du remous et du ravage à Colognan récemment. Non pas pour avoir été portée en ville ou bien ses capacités meurtrières, mais pour un litige commercial. \n\r\n\rHyara, archère elfique, aura voulu dépanner un maître nain arbalétrier se plaignant de ne pas trouver arme convenable. Fournissant donc une arbalète commune, là où le nain espérait de l’épique.\n\r\n\rSAGA se sera trouvée mêlée au litige suite aux plaintes du maître nain, traitant ce dossier comme une fin de non-recevoir et comme simple malentendu marchand. \n\r\n\rUne question demeure. Que deviendra donc la fameuse arba-laide, cette arme qui aura fait couler plus d’encre que de sang? Sera-t-elle mise aux enchères?",
@@ -305,7 +665,7 @@
   },
   {
     "Id": "3edb47b5-203d-4d65-9c5c-e196f181aece",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Le Kraken Assoiffé : Une Taverne Impatiente d'Ouvrir ses Portes! - Torgah Poings d’Acier",
     "Content": "Les amateurs de bonnes bières auront bientôt un nouvel endroit incontournable pour aller se détendre après leur dur labeur. Le Kraken Assoiffé, une taverne unique en son genre, est sur le point d'ouvrir ses portes sous peu, grâce à la Cie.\n\r\n\rLa taverne aura une sélection de bières, tantôt d'icitte, tantôt d'ailleurs, toutes choisies avec soin pour combler les goûts. Y vont même brasser leur propre bière sur place, pour te donner une dégustation ben authentique et rafraîchissan\n\r\n\rAttends-toi à passer du bon temps au Kraken Assoiffé. Viens faire le plein de bières délicieuses, participe à des concours débiles et laisse-toi charmer par l'ambiance hors de l'ordinaire. \n\r\n\rPrépare-toé à vivre des soirées de fou, à rigoler pis à t'en rappeler pour le restant d'tes jours. La date d'ouverture officielle va être annoncée bientôt, sois-y attentif! ",
@@ -329,7 +689,7 @@
   },
   {
     "Id": "dd03b89b-817e-451f-b9e2-a6a82e692ba3",
-    "Visible": true,
+    "Visible": false,
     "WriterName": "Nimue",
     "Title": "Ça bourdonne près de la Savane - Orléans Renart",
     "Content": "L’auberge sous-colline des plaines, voisine de la Savane, sera bientôt animée d’une vie nouvelle car sa taverne se trouvera sous une nouvelle administration. \n\r\n\rCelle de la Ruche et de votre humble serviteur, moi-même comme tavernier. Expériences ont cours pour créer les plats les plus fins et les bières les plus merveilleuses.\n\r\n\rUn événement d’ouverture officiel sera bientôt organisé, alors gardez les yeux ouverts et prêtez oreille, nous promettons du divertissement signé Orléans. \n\r\n\rSachant bien que le port ouvrira bientôt sa taverne n’oubliez pas la force du krabeille, notée au tournoi. Nous saurons partager les soirs, pour amuser et enivrer.",
@@ -624,11 +984,11 @@
     "DateCreated": "2023-03-23T12:34:56.789Z"
   },
   {
-    "Id": "0e2f2ecc-ddbe-4172-b6a1-a24acf057a41",
+    "Id": "88f9ee12-b63f-4a22-af2d-72bf735407da",
     "Visible": true,
     "WriterName": "Kathya",
     "Title": "Horoscope 1/2 - Kathya",
-    "Content": "Fée du Printemps // Les énergies cosmiques favorisent la guérison des relations. Le pardon et la compréhension mutuelle sont les clés d'une réconciliation harmonieuse. // Nombre chanceux: 4, 46 // Couleur du mois: Orange\n\r\n\rTigre d'Été // Les efforts que vous avez déployés commencent à porter leurs fruits. Soyez persévérant(e), car des développements positifs sont en vue. // Nombre chanceux: 10, 64 // Couleur du mois: Vert sombre\n\r\n\rKi-Rin d'Automne // Une opportunité inattendue se présente, apportant joie ou défi. Soyez ouvert(e) à l'inconnu et prêt(e) à saisir les possibilités qui se présentent à vous. // Nombre chanceux: 8, 32 // Couleur du mois: Vert Olive\n\r\n\rDragon d'Hiver // Les apparences sont trompeuses. Méfiez-vous des mensonges et des trahisons. Prenez des décisions éclairées pour protéger votre bien-être émotionnel. // Nombre chanceux: 6, 24 // Couleur du mois: Bleu ciel",
-    "DateCreated": "2023-06-16T19:20:12.184005-04:00"
+    "Content": "Fée du Printemps // Des bouleversements approchent. Acceptez les défis avec courage, car chaque changement apporte croissance et nouvelles opportunités.// Nombre chanceux: 3, 52// Couleur du mois: Rouge fraise\n\r\n\rTigre d'Été // Une aventure prometteuse vous attend au loin. Explorez, découvrez et ouvrez votre cœur aux cultures inconnues.// Nombre chanceux: 10, 61// Couleur du mois: Jaune soleil\n\r\n\rKi-Rin d'Automne // Trouver le juste milieu entre vos responsabilités et vos désirs vous apportera harmonie et paix intérieure. Équilibrez votre vie avec sagesse.// Nombre chanceux: 4, 14// Couleur du mois: Ivoire\n\r\n\rDragon d'Hiver // Vos efforts et votre persévérance seront récompensés. Des opportunités se présentent, saisissez-les avec confiance et succès vous attend.// Nombre chanceux: 5, 16// Couleur du mois: Bleu acier",
+    "DateCreated": "2023-07-23T19:31:55.5544635-04:00"
   }
 ]

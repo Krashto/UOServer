@@ -44,12 +44,12 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 				var bTargets = new ArrayList();
 				var hTargets = new ArrayList();
-
+				int range = 5;
 				var map = Caster.Map;
 
 				if (map != null)
 				{
-					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 2 + Caster.Skills[CastSkill].Value / 50, Aptitude.Guerison));
+					IPooledEnumerable eable = map.GetMobilesInRange(new Point3D(p), range);
 
 					foreach (Mobile m in eable)
 						if (SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeBeneficial(m, false) && CustomPlayerMobile.IsInEquipe(Caster, m))
@@ -57,7 +57,7 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 					eable.Free();
 
-					eable = map.GetMobilesInRange(new Point3D(p), (int)SpellHelper.AdjustValue(Caster, 2 + Caster.Skills[CastSkill].Value / 50, Aptitude.Guerison));
+					eable = map.GetMobilesInRange(new Point3D(p), range);
 
 					foreach (Mobile m in eable)
 						if (Caster != m && SpellHelper.ValidIndirectTarget(Caster, m) && Caster.CanBeHarmful(m, false) && Caster.InLOS(m) && !CustomPlayerMobile.IsInEquipe(Caster, m))
@@ -99,23 +99,23 @@ namespace Server.Custom.Spells.NewSpells.Guerison
 
 						SpellHelper.CheckReflect((int)this.Circle, Caster, ref m);
 
-						double damage = Utility.RandomMinMax(14, 20);
+						double damage = Utility.RandomMinMax(15, 30);
 
 						damage = SpellHelper.AdjustValue(Caster, damage, Aptitude.Guerison);
 
 						if (CheckResisted(m))
 						{
-							damage *= 0.75;
+							damage *= 0.95;
 							m.SendLocalizedMessage(501783); // You feel yourself resisting magical energy.
 						}
 
-						damage *= GetDamageScalar(m);
+						//damage *= GetDamageScalar(m);
 
 						CustomUtility.ApplySimpleSpellEffect(m, "Lumiere sacree", AptitudeColor.Guerison, SpellEffectType.Damage);
 
 						m.BoltEffect(0);
 
-						SpellHelper.Damage(this, m, damage, 0, 0, 0, 0, 100);
+						SpellHelper.Damage(this, m, damage, 0, 0, 0, 0, 20);
 					}
 				}
 			}

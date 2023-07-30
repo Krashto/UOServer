@@ -8,15 +8,16 @@ namespace Server.Misc
 {
     public class DataPath
     {
-        /* If you have not installed Ultima Online,
+		/* If you have not installed Ultima Online,
         * or wish the server to use a separate set of datafiles,
         * change the 'CustomPath' value.
         * Example:
         *  private static string CustomPath = @"C:\Program Files\Ultima Online";
         */
-        private static readonly string CustomPath = Config.Get(@"DataPath.CustomPath", default(string));
+		private static readonly string CustomPath = "D:\\LeRefuge_Data\\LeRefugeClient";
+		//private static readonly string CustomPath = Config.Get(@"DataPath.CustomPath", default(string));
 
-        static DataPath()
+		static DataPath()
         {
             string path;
 
@@ -26,7 +27,7 @@ namespace Server.Misc
             }
             else if (!Core.Unix)
             {
-                path = GetPath(@"Electronic Arts\EA Games\Ultima Online Classic", "InstallDir");
+                path = GetPath(@"D:\LeRefuge_Data\LeRefugeClient", "InstallDir");
             }
             else
             {

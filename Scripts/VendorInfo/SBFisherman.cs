@@ -18,8 +18,14 @@ namespace Server.Mobiles
                 
 
                 Add(new GenericBuyInfo(typeof(FishingPole), 15, 20, 0xDC0, 0));
-			///	Add(new GenericBuyInfo(typeof(), 3, 100, 0xDCF, 0));
-				
+				Add(new GenericBuyInfo(typeof(AquariumFood), 50, 50, 0xEFC, 0));
+				Add(new GenericBuyInfo(typeof(FishBowl), 100, 50, 0x241C, 0x482));
+				Add(new GenericBuyInfo(typeof(VacationWafer), 500, 20, 0x971, 0));
+				Add(new GenericBuyInfo(typeof(AquariumNorthDeed), 10000, 20, 0x14F0, 0));
+				Add(new GenericBuyInfo(typeof(AquariumEastDeed), 10000, 20, 0x14F0, 0));
+				Add(new GenericBuyInfo(typeof(AquariumFishNet), 50, 50, 0xDC8, 0x240));
+				///	Add(new GenericBuyInfo(typeof(), 3, 100, 0xDCF, 0));
+
 				Add(new GenericBuyInfo("Cage à Homards Vide", typeof(LobsterTrap), 10, 50, 17615, 0));
             }
         }

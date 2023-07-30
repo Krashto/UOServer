@@ -205,7 +205,7 @@ namespace Server.Engines.Craft
 
 
 			index = AddCraft(typeof(AutoResPotion), "Autres", "Potion d'auto résurrection", 70.0, 120.0, typeof(Bottle), "Bouteille Vide", 1, "Vous n'avez pas de Bouteille Vide");
-			AddRes(index, typeof(SangDragon), "Sang de Dragon", 5, "Vous n'avez pas suffisament de Sang de Dragon");
+			AddRes(index, typeof(DragonBlood), "Sang de Wyrm", 5, "Vous n'avez pas suffisament de Sang de Wyrm");
 			AddRes(index, typeof(MucusDemon), "Mucus de Démon", 5, "Vous n'avez pas suffisament de Mucus de Démon");
 
 

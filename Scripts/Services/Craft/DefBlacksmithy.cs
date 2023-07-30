@@ -493,7 +493,7 @@ namespace Server.Engines.Craft
 			#region "Haches"
 			AddCraft(typeof(Axe), "Haches", "Hache simple", 10.0, 35.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(BattleAxe), "Haches", "Hache de guerre", 10.0, 35.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
-			AddCraft(typeof(DoubleAxe), "Haches", "Hache double", 10.0, 35.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
+			//AddCraft(typeof(DoubleAxe), "Haches", "Hache double", 10.0, 35.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(ExecutionersAxe), "Haches", "Hachette", 30.0, 55.0, typeof(IronIngot), "Fer", 14, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(LargeBattleAxe), "Haches", "Hache de bataille", 30.0, 55.0, typeof(IronIngot), "Fer", 12, "Vous n'avez pas suffisament de lingot de Fer");
 			AddCraft(typeof(TwoHandedAxe), "Haches", "Hache à deux mains", 30.0, 55.0, typeof(IronIngot), "Fer", 16, "Vous n'avez pas suffisament de lingot de Fer");
@@ -607,7 +607,7 @@ namespace Server.Engines.Craft
 			index = AddCraft(typeof(OceanisIngot), "Alliages", "Lingot d'Océanis", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough iron ingots to make that.");
 			AddRes(index, typeof(CopperIngot), "Lingot de Cuivre", 3, "You do not have enough Cuivre ingot to make that.");
 			AddRes(index, typeof(BorealeIngot), "Lingot de Boréale", 2, "You do not have enough Boreale ingot to make that.");
-			AddRes(index, typeof(JolinarIngot), "Lingot de Équilibrum", 1, "You do not have enough Equilibrum ingot to make that.");
+			AddRes(index, typeof(EquilibrumIngot), "Lingot de Équilibrum", 1, "You do not have enough Equilibrum ingot to make that.");
 		
 			index = AddCraft(typeof(BraziumIngot), "Alliages", "Lingot de Brazium", 80, 110, typeof(IronIngot), "Lingot de Fer", 4, "You do not have enough bloodirium ingots to make that.");
 			AddRes(index, typeof(BronzeIngot), "Lingot de Bronze", 3, "You do not have enough Bronze ingot to make that.");

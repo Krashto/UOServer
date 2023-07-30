@@ -466,6 +466,11 @@ namespace Server.Engines.Craft
 			ForceNonExceptional(index);
 			index = AddCraft(typeof(AdvancedTrainingDummyEastDeed), "Assemblages", "Mannequin d'entrainement avancé (E)", 80.0, 110.0, typeof(TrainingDummyEastDeed), 1044335, 1, 1044253);
 			ForceNonExceptional(index);
+			index = AddCraft(typeof(SteamPoweredBeverageMakerDeed), "Assemblages", "Machine à café", 50.0, 80.0, typeof(IronIngot), "lingots", 30, "Vous n'avez pas assez de lingots.");
+			AddRes(index, typeof(Gears), 1044254, 5, 1044253);
+			AddRes(index, typeof(Axle), "Essieu", 5, 1044253);
+
+			ForceNonExceptional(index);
 			#endregion
 
 			#region Ustensiles
